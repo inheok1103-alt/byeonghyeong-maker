@@ -259,7 +259,7 @@
       var others = phrases.filter(function (p) { if (p.si === correct.si) return false; for (var x in p.words) if (correct.words[x]) return false; return true; });
       var seen = {}, ds = [];
       shuffleDet(others, seed ^ 0x9).forEach(function (p) { if (ds.length < 4 && !seen[p.text.toLowerCase()]) { seen[p.text.toLowerCase()] = 1; ds.push(p); } });
-      shuffleDet(K.ABSTRACT_PHRASES.slice(), seed ^ 0x55).forEach(function (ph) { if (ds.length < 4 && !seen[ph.toLowerCase()]) { seen[ph.toLowerCase()] = 1; ds.push({ text: ph }); } });
+      shuffleDet(K.ABSTRACT_PHRASES.concat(K.COLLOCATIONS || []), seed ^ 0x55).forEach(function (ph) { if (ds.length < 4 && !seen[ph.toLowerCase()]) { seen[ph.toLowerCase()] = 1; ds.push({ text: ph }); } });
       if (ds.length === 4) {
         var opt = shuffleDet([correct].concat(ds), seed ^ 0x8), repl = {};
         repl[correct.tis[0]] = "______________"; correct.tis.slice(1).forEach(function (ti) { repl[ti] = ""; });
