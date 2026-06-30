@@ -419,6 +419,8 @@
   var ALL_TYPES = Object.keys(GEN);
 
   function makeQuestions(passages, types, opts) {
+    opts = opts || {};
+    var seedSalt = opts.seedSalt ? hash(String(opts.seedSalt)) : 0;
     var docs = passages.filter(function (p) { return p.text && p.text.trim(); }).map(function (p, i) { return new Doc(p.id || ("P" + (i + 1)), p.text); });
     buildGlobal(docs);
     var items = [], skipped = [], no = 0;
@@ -426,7 +428,7 @@
       types.forEach(function (t) {
         var fn = GEN[t]; if (!fn) return; var made = null;
         for (var a = 0; a < 6; a++) {
-          var seed = (hash(doc.text) ^ (pi * 0x9e37) ^ (hash(t) & 0xffff) ^ (a * 0x2b2b)) >>> 0;
+          var seed = (hash(doc.text) ^ seedSalt ^ (pi * 0x9e37) ^ (hash(t) & 0xffff) ^ (a * 0x2b2b)) >>> 0;
           try { var q = fn(doc, seed); } catch (e) { q = null; }
           if (q) { made = q; break; }
         }

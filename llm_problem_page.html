@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>변형문제 생성기 - 데이터형 페이지</title>
+<style>
+  :root {
+    --bg: #eef2f6;
+    --panel: #ffffff;
+    --panel-2: #f7f9fb;
+    --ink: #111827;
+    --muted: #5d6675;
+    --line: #d4dbe5;
+    --accent: #0f766e;
+    --accent-2: #1d4ed8;
+    --warn: #b45309;
+    --danger: #b91c1c;
+    --ok: #047857;
+    --shadow: 0 12px 30px rgba(15, 23, 42, .08);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+    letter-spacing: 0;
+  }
+
+  button, input, select, textarea {
+    font: inherit;
+  }
+
+  button {
+    border: 0;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 800;
+    padding: 9px 12px;
+    cursor: pointer;
+  }
+
+  button.secondary { background: var(--accent-2); }
+  button.warning { background: var(--warn); }
+  button.ghost {
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  button.small { padding: 6px 8px; font-size: 12px; }
+  button:disabled { opacity: .55; cursor: wait; }
+
+  .app {
+    display: grid;
+    grid-template-columns: minmax(320px, 410px) minmax(0, 1fr);
+    min-height: 100vh;
+  }
+
+  .controls {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: auto;
+    background: #fbfcfd;
+    border-right: 1px solid var(--line);
+    padding: 18px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .mini {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.45;
+    margin-top: 4px;
+  }
+
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 13px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, .03);
+  }
+
+  .panel h2 {
+    margin: 0 0 10px;
+    font-size: 14px;
+    color: #0f172a;
+  }
+
+  .stack-card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel-2);
+    padding: 10px;
+    margin-bottom: 9px;
+  }
+
+  .stack-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 7px;
+  }
+
+  .stack-title {
+    font-size: 13px;
+    font-weight: 900;
+  }
+
+  .stack-actions {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 130px;
+    resize: vertical;
+    border: 1px solid #bcc7d6;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fff;
+    color: var(--ink);
+    line-height: 1.55;
+    font-family: Consolas, "Malgun Gothic", monospace;
+    font-size: 12.5px;
+  }
+
+  .meter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 11.5px;
+    margin-top: 6px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #273244;
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    border: 1px solid #bcc7d6;
+    border-radius: 8px;
+    background: #fff;
+    color: var(--ink);
+    padding: 8px 9px;
+  }
+
+  .check-row {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-height: 30px;
+    color: #273244;
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+
+  .type-tools, .actions {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 9px;
+  }
+
+  .type-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    max-height: 260px;
+    overflow: auto;
+    padding-right: 3px;
+  }
+
+  .type-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 7px 8px;
+    background: #fff;
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+
+  .type-item input { margin: 0; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .stat {
+    background: #f8fafc;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 8px;
+  }
+
+  .stat b {
+    display: block;
+    font-size: 16px;
+  }
+
+  .stat span {
+    color: var(--muted);
+    font-size: 11.5px;
+  }
+
+  .progress {
+    height: 8px;
+    border-radius: 99px;
+    background: #dbe4ef;
+    overflow: hidden;
+    margin-top: 9px;
+  }
+
+  .progress div {
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transition: width .18s ease;
+  }
+
+  .status {
+    min-height: 19px;
+    color: #273244;
+    font-size: 12.5px;
+    font-weight: 800;
+    margin-top: 8px;
+  }
+
+  .workspace {
+    min-width: 0;
+    padding: 22px;
+  }
+
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .topbar h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .output-tools {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+  }
+
+  .paper {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    min-height: calc(100vh - 92px);
+    padding: 22px;
+  }
+
+  .empty {
+    min-height: 420px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: var(--muted);
+    border: 1px dashed #b9c5d3;
+    border-radius: 8px;
+    background: #f8fafc;
+    padding: 24px;
+  }
+
+  .empty-art {
+    width: min(320px, 80%);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid #d5dde8;
+    border-radius: 8px;
+    margin: 0 auto 14px;
+    display: block;
+  }
+
+  .empty strong {
+    display: block;
+    color: #243044;
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .cover {
+    border-bottom: 2px solid #111827;
+    padding-bottom: 13px;
+    margin-bottom: 16px;
+  }
+
+  .cover h1 {
+    font-size: 23px;
+    margin-bottom: 6px;
+  }
+
+  .cover-meta {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: #fff;
+    color: #273244;
+    padding: 3px 8px;
+    font-size: 11.5px;
+    font-weight: 800;
+  }
+
+  .round {
+    margin-top: 18px;
+    break-before: auto;
+  }
+
+  .round h2 {
+    margin: 0 0 11px;
+    color: #0f172a;
+    font-size: 17px;
+    border-bottom: 1.5px solid #111827;
+    padding-bottom: 5px;
+  }
+
+  .passage-label {
+    margin: 14px 0 8px;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 900;
+  }
+
+  .question-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .question {
+    border: 1px solid #cfd8e4;
+    border-radius: 8px;
+    background: #fff;
+    overflow: visible;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .question.long {
+    grid-column: 1 / -1;
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .q-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    border-bottom: 1px solid #d7dee8;
+    background: #f7f9fb;
+    border-radius: 8px 8px 0 0;
+    padding: 8px 10px;
+    font-size: 12.5px;
+    font-weight: 900;
+  }
+
+  .q-type { color: #0f172a; }
+  .q-meta {
+    color: var(--muted);
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .q-body {
+    padding: 10px;
+    font-size: 12.7px;
+    line-height: 1.72;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  .instruction {
+    font-weight: 900;
+    margin-bottom: 7px;
+  }
+
+  .problem-line {
+    white-space: normal;
+    margin: 0 0 7px;
+  }
+
+  .speaker {
+    display: inline-block;
+    min-width: 54px;
+    color: #0f766e;
+    font-weight: 900;
+  }
+
+  u {
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+  }
+
+  .answer {
+    margin-top: 8px;
+    border-top: 1px dashed #b8c3d1;
+    padding-top: 7px;
+    color: #064e3b;
+    font-size: 12.3px;
+    font-weight: 800;
+  }
+
+  .guideline, .audit {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 11.5px;
+    line-height: 1.45;
+  }
+
+  .audit .warn {
+    display: inline-block;
+    margin: 3px 4px 0 0;
+    border-radius: 999px;
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+    color: #9a3412;
+    padding: 2px 7px;
+    font-weight: 800;
+  }
+
+  .answer-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+
+  .answer-table th, .answer-table td {
+    border: 1px solid #cfd8e4;
+    padding: 7px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .answer-table th {
+    background: #f1f5f9;
+  }
+
+  .mode-exam .answer,
+  .mode-exam .guideline,
+  .mode-student .answer,
+  .mode-student .guideline {
+    display: none;
+  }
+
+  .mode-pamphlet .question-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mode-single .question-grid,
+  .mode-answer .question-grid {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 1050px) {
+    .app { grid-template-columns: 1fr; }
+    .controls {
+      position: relative;
+      height: auto;
+      border-right: 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .question-grid { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    @page { size: A4; margin: 12mm; }
+    body { background: #fff; }
+    .noprint, .controls, .topbar { display: none !important; }
+    .app { display: block; }
+    .workspace { padding: 0; }
+    .paper {
+      border: 0;
+      box-shadow: none;
+      padding: 0;
+      min-height: auto;
+    }
+    .round { break-before: page; }
+    .round:first-of-type { break-before: auto; }
+    .question {
+      break-inside: avoid-page;
+      page-break-inside: avoid;
+      box-shadow: none;
+    }
+    .question.long {
+      break-inside: auto;
+      page-break-inside: auto;
+    }
+    .q-head {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="controls noprint">
+    <div class="brand">
+      <div>
+        <h1>변형문제 생성기</h1>
+        <div class="mini">데이터 레이어 기반 배부용 페이지</div>
+      </div>
+      <span class="badge" id="engineBadge">엔진 확인 중</span>
+    </div>
+
+    <section class="panel">
+      <h2>지문 스택</h2>
+      <div id="passageStack"></div>
+      <div class="actions">
+        <button class="ghost small" id="addPassageBtn" type="button">지문 추가</button>
+        <button class="ghost small" id="splitPassagesBtn" type="button">빈칸 기준 분리</button>
+        <button class="ghost small" id="clearPassagesBtn" type="button">비우기</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>출력 설정</h2>
+      <div class="grid-2">
+        <div class="field">
+          <label for="paperTitle">제목</label>
+          <input id="paperTitle" type="text" value="실전 변형문제">
+        </div>
+        <div class="field">
+          <label for="roundCount">회차</label>
+          <select id="roundCount">
+            <option value="1">1회</option>
+            <option value="3">3회</option>
+            <option value="6">6회</option>
+            <option value="9">9회</option>
+            <option value="12" selected>12회</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="paperMode">형식</label>
+          <select id="paperMode">
+            <option value="pamphlet" selected>팸플릿형</option>
+            <option value="single">시험지형</option>
+            <option value="exam">학생용</option>
+            <option value="answer">정답지만</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="answerMode">정답</label>
+          <select id="answerMode">
+            <option value="teacher" selected>정답 포함</option>
+            <option value="student">정답 제외</option>
+          </select>
+        </div>
+      </div>
+      <label class="check-row">
+        <input id="useApi" type="checkbox">
+        온라인 어휘 보강
+      </label>
+      <div class="actions">
+        <button id="generateBtn" type="button">생성</button>
+        <button class="secondary" id="downloadBtn" type="button">Word 저장</button>
+        <button class="ghost" id="printBtn" type="button">PDF 인쇄</button>
+      </div>
+      <div class="status" id="status"></div>
+      <div class="progress"><div id="progressBar"></div></div>
+    </section>
+
+    <section class="panel">
+      <h2>유형 선택</h2>
+      <div class="type-tools">
+        <button class="ghost small" id="selectAllBtn" type="button">전체</button>
+        <button class="ghost small" id="selectCoreBtn" type="button">핵심</button>
+        <button class="ghost small" id="selectNoneBtn" type="button">해제</button>
+      </div>
+      <div class="type-grid" id="typeGrid"></div>
+    </section>
+
+    <section class="panel">
+      <h2>데이터 레이어</h2>
+      <div class="stats" id="dataStats"></div>
+    </section>
+  </aside>
+
+  <main class="workspace">
+    <div class="topbar noprint">
+      <div>
+        <h2>미리보기</h2>
+        <div class="mini" id="previewMeta">생성 전</div>
+      </div>
+      <div class="output-tools">
+        <button class="ghost small" id="copyBtn" type="button">HTML 복사</button>
+        <button class="ghost small" id="answerBtn" type="button">정답표</button>
+      </div>
+    </div>
+    <article class="paper mode-pamphlet" id="paper">
+      <div class="empty">
+        <div>
+          <img class="empty-art" src="assets/workbook-ai-thumbnail-gpt.png" alt="">
+          <strong>지문을 넣고 생성하세요</strong>
+          <span>모든 유형을 회차별로 반복 생성합니다.</span>
+        </div>
+      </div>
+    </article>
+  </main>
+</div>
+
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var $ = function (sel, root) { return (root || document).querySelector(sel); };
+  var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
+  var state = { items: [], skipped: [], enrich: {}, renderedMode: "pamphlet" };
+
+  var SAMPLE_TEXT =
+    "Host: Welcome back to Today's Health. Today we are going to talk about exercise. Dr. Hill is here to share useful tips. When people exercise right after eating, blood moves away from the digestive system toward the muscles. As a result, digestion can pause for a while and cause discomfort. However, exercising on a completely empty stomach can also be harmful because the body needs energy. Doctors recommend eating carbohydrates after exercise to replace lost glycogen.";
+
+  function esc(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  function status(text) {
+    $("#status").textContent = text || "";
+  }
+
+  function progress(value) {
+    $("#progressBar").style.width = Math.max(0, Math.min(100, value * 100)) + "%";
+  }
+
+  function countWords(text) {
+    var m = String(text || "").match(/[A-Za-z]+(?:['-][A-Za-z]+)?|\d+/g);
+    return m ? m.length : 0;
+  }
+
+  function countSentences(text) {
+    var m = String(text || "").match(/[.!?](?=\s|$)/g);
+    return m ? m.length : 0;
+  }
+
+  function refreshPassageLabels() {
+    $$(".stack-card").forEach(function (card, i) {
+      var text = $("textarea", card).value;
+      $(".stack-title", card).textContent = "지문 " + (i + 1);
+      $(".meter", card).textContent = countWords(text) + " words / " + countSentences(text) + " sentences";
+    });
+  }
+
+  function movePassage(card, direction) {
+    var stack = $("#passageStack");
+    if (direction < 0 && card.previousElementSibling) stack.insertBefore(card, card.previousElementSibling);
+    if (direction > 0 && card.nextElementSibling) stack.insertBefore(card.nextElementSibling, card);
+    refreshPassageLabels();
+  }
+
+  function addPassage(text) {
+    var card = document.createElement("div");
+    card.className = "stack-card";
+    card.innerHTML =
+      '<div class="stack-head">' +
+      '<div class="stack-title">지문</div>' +
+      '<div class="stack-actions">' +
+      '<button class="ghost small" type="button" data-act="up">위</button>' +
+      '<button class="ghost small" type="button" data-act="down">아래</button>' +
+      '<button class="ghost small" type="button" data-act="sample">샘플</button>' +
+      '<button class="ghost small" type="button" data-act="delete">삭제</button>' +
+      '</div></div>' +
+      '<textarea spellcheck="false" placeholder="영어 지문 또는 대화문"></textarea>' +
+      '<div class="meter">0 words / 0 sentences</div>';
+    $("textarea", card).value = text || "";
+    $("textarea", card).addEventListener("input", refreshPassageLabels);
+    card.addEventListener("click", function (event) {
+      var act = event.target.getAttribute("data-act");
+      if (!act) return;
+      if (act === "up") movePassage(card, -1);
+      if (act === "down") movePassage(card, 1);
+      if (act === "sample") $("textarea", card).value = SAMPLE_TEXT;
+      if (act === "delete" && $$(".stack-card").length > 1) card.remove();
+      refreshPassageLabels();
+    });
+    $("#passageStack").appendChild(card);
+    refreshPassageLabels();
+  }
+
+  function clearPassages() {
+    $("#passageStack").innerHTML = "";
+    addPassage("");
+  }
+
+  function splitPassages() {
+    var combined = $$(".stack-card textarea").map(function (ta) { return ta.value.trim(); }).filter(Boolean).join("\n\n");
+    var parts = combined.split(/\n\s*\n\s*\n+/).map(function (part) { return part.trim(); }).filter(Boolean);
+    if (parts.length <= 1) {
+      status("세 줄 이상 빈칸으로 나뉜 지문이 없습니다.");
+      return;
+    }
+    $("#passageStack").innerHTML = "";
+    parts.forEach(addPassage);
+    status(parts.length + "개 지문으로 분리했습니다.");
+  }
+
+  function renderTypes() {
+    var grid = $("#typeGrid");
+    grid.innerHTML = "";
+    var types = window.ENGINE ? ENGINE.ALL_TYPES || [] : [];
+    types.forEach(function (type) {
+      var label = document.createElement("label");
+      label.className = "type-item";
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.value = type;
+      input.checked = true;
+      label.appendChild(input);
+      label.appendChild(document.createTextNode(type));
+      grid.appendChild(label);
+    });
+  }
+
+  function setTypes(mode) {
+    var core = /빈칸|어법|어휘|순서|삽입|무관|요약|제목|주제|함의|의미/;
+    $$("#typeGrid input").forEach(function (input) {
+      if (mode === "all") input.checked = true;
+      if (mode === "none") input.checked = false;
+      if (mode === "core") input.checked = core.test(input.value);
+    });
+  }
+
+  function renderStats() {
+    var box = $("#dataStats");
+    var k = window.K || {};
+    var fields = Object.keys(k.FIELD_EXAMPLES || {}).reduce(function (n, key) {
+      return n + ((k.FIELD_EXAMPLES[key] || []).length);
+    }, 0);
+    var rows = [
+      ["심경", Object.keys(k.SENTIMENT || {}).length],
+      ["목적", Object.keys(k.PURPOSE || {}).length],
+      ["숙어", Object.keys(k.IDIOMS || {}).length],
+      ["연어", (k.COLLOCATIONS || []).length],
+      ["분야 예문", fields],
+      ["유형", window.ENGINE ? (ENGINE.ALL_TYPES || []).length : 0]
+    ];
+    box.innerHTML = rows.map(function (row) {
+      return '<div class="stat"><b>' + esc(row[1]) + '</b><span>' + esc(row[0]) + '</span></div>';
+    }).join("");
+  }
+
+  function collectPassages() {
+    return $$(".stack-card textarea").map(function (ta, i) {
+      return { id: "P" + (i + 1), text: ta.value.trim() };
+    }).filter(function (p) {
+      return p.text && countWords(p.text) >= 12;
+    });
+  }
+
+  function collectTypes() {
+    return $$("#typeGrid input:checked").map(function (input) { return input.value; });
+  }
+
+  async function datamuse(word, rel) {
+    try {
+      var res = await fetch("https://api.datamuse.com/words?rel_" + rel + "=" + encodeURIComponent(word) + "&max=8");
+      var json = await res.json();
+      return json.map(function (x) { return x.word; }).filter(function (w) { return /^[a-z]+$/.test(w) && w.length >= 4; });
+    } catch (err) {
+      return [];
+    }
+  }
+
+  async function dictionary(word) {
+    try {
+      var res = await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + encodeURIComponent(word));
+      if (!res.ok) return null;
+      var json = await res.json();
+      var found = { def: "", examples: [] };
+      (json[0].meanings || []).forEach(function (meaning) {
+        (meaning.definitions || []).forEach(function (d) {
+          if (!found.def && d.definition) found.def = d.definition;
+          if (d.example && found.examples.length < 2) found.examples.push(d.example);
+        });
+      });
+      return found;
+    } catch (err) {
+      return null;
+    }
+  }
+
+  async function enrich(passages) {
+    if (!window.ENGINE) return {};
+    var docs = ENGINE._docsFor(passages);
+    ENGINE.buildGlobal(docs);
+    var words = [];
+    var seen = {};
+    docs.forEach(function (doc) {
+      ENGINE.keywords(doc, 8).forEach(function (word) {
+        if (!seen[word]) {
+          seen[word] = 1;
+          words.push(word);
+        }
+      });
+    });
+    var data = { ant: {}, syn: {}, examples: {} };
+    for (var i = 0; i < words.length; i++) {
+      var word = words[i];
+      var result = await Promise.all([datamuse(word, "ant"), datamuse(word, "syn"), dictionary(word)]);
+      if (result[0].length) data.ant[word] = result[0];
+      if (result[1].length) data.syn[word] = result[1];
+      if (result[2] && (result[2].def || result[2].examples.length)) data.examples[word] = result[2];
+      progress((i + 1) / Math.max(1, words.length));
+      status("온라인 보강 " + (i + 1) + "/" + words.length);
+    }
+    return data;
+  }
+
+  function signature(q) {
+    return [
+      q.type,
+      q.passageNo,
+      (q.problem || []).join(" "),
+      q.answer || ""
+    ].join("|").replace(/\s+/g, " ").trim().toLowerCase();
+  }
+
+  function restoreDialogue(text) {
+    return String(text || "")
+      .replace(/\s+(Host|Interviewer|Narrator|Teacher|Student|Doctor|Dr\.?\s*[A-Z][A-Za-z]*|Mr\.?\s*[A-Z][A-Za-z]*|Ms\.?\s*[A-Z][A-Za-z]*|Mrs\.?\s*[A-Z][A-Za-z]*):/g, "\n$1:")
+      .replace(/\s+(Speaker\s*[A-Z0-9]|Person\s*[A-Z0-9]):/g, "\n$1:");
+  }
+
+  function fmt(text) {
+    return esc(restoreDialogue(text))
+      .replace(/&lt;&lt;(.+?)&gt;&gt;/g, "<u>$1</u>")
+      .replace(/^([A-Z][A-Za-z .0-9'-]{1,34}:)/gm, '<strong class="speaker">$1</strong>')
+      .replace(/\n/g, "<br>");
+  }
+
+  function guidelineText(q) {
+    var g = q.guideline || {};
+    return ["의도", "변형", "오답", "주의"].filter(function (key) {
+      return g[key] && g[key] !== "-";
+    }).map(function (key) {
+      return key + ": " + g[key];
+    }).join(" / ");
+  }
+
+  function audit(q) {
+    var text = ((q.problem || []).join(" ") + " " + (q.instruction || "")).replace(/\s+/g, " ");
+    var type = q.type || "";
+    var warnings = [];
+    if (text.length > 2200) warnings.push("긴 지문");
+    if (/문장\s*삽입|삽입/.test(type) && !/[①②③④⑤]/.test(text)) warnings.push("삽입 위치 확인");
+    if (/어순|배열/.test(type) && !/뜻|의미|한국어/.test(text)) warnings.push("한국어 뜻 보강");
+    if (/Host:|Interviewer:|Dr\.?\s*[A-Z][A-Za-z]*:/.test(text)) warnings.push("대화문 줄분리");
+    if (!q.answer) warnings.push("정답 확인");
+    return warnings;
+  }
+
+  function classifyLength(q) {
+    var length = ((q.problem || []).join(" ") + " " + (q.instruction || "")).length;
+    return length > 1300 ? " long" : "";
+  }
+
+  function renderQuestion(q, showAnswer) {
+    var warnings = audit(q);
+    var guide = guidelineText(q);
+    var body = (q.problem || []).map(function (line) {
+      return '<p class="problem-line">' + fmt(line) + '</p>';
+    }).join("");
+    return '' +
+      '<article class="question' + classifyLength(q) + '">' +
+      '<div class="q-head"><span class="q-type">' + esc(q.globalNo || q.no) + '. ' + esc(q.type) + '</span><span class="q-meta">지문 ' + esc(q.passageNo) + '</span></div>' +
+      '<div class="q-body">' +
+      '<div class="instruction">지시문: ' + esc(q.instruction || "") + '</div>' +
+      body +
+      (showAnswer ? '<div class="answer">정답: ' + fmt(q.answer || "") + (q.explain ? '<br>해설: ' + esc(q.explain) : '') + '</div>' : '') +
+      (showAnswer && guide ? '<div class="guideline">' + esc(guide) + '</div>' : '') +
+      (warnings.length ? '<div class="audit">' + warnings.map(function (w) { return '<span class="warn">' + esc(w) + '</span>'; }).join("") + '</div>' : '') +
+      '</div></article>';
+  }
+
+  function answerSheet(items) {
+    var rows = items.map(function (q) {
+      return '<tr><td>' + esc(q.globalNo || q.no) + '</td><td>' + esc(q.round || 1) + '회</td><td>' + esc(q.type) + '</td><td>' + fmt(q.answer || "") + '</td></tr>';
+    }).join("");
+    return '<table class="answer-table"><thead><tr><th>번호</th><th>회차</th><th>유형</th><th>정답</th></tr></thead><tbody>' + rows + '</tbody></table>';
+  }
+
+  function render() {
+    var paper = $("#paper");
+    var mode = $("#paperMode").value;
+    var answerMode = $("#answerMode").value;
+    var showAnswer = answerMode === "teacher" && mode !== "exam";
+    state.renderedMode = mode;
+    paper.className = "paper mode-" + mode + (answerMode === "student" ? " mode-student" : "");
+
+    if (!state.items.length) {
+      paper.innerHTML = '<div class="empty"><div><img class="empty-art" src="assets/workbook-ai-thumbnail-gpt.png" alt=""><strong>생성된 문항이 없습니다</strong><span>지문 길이와 유형 선택을 확인하세요.</span></div></div>';
+      return;
+    }
+
+    var title = $("#paperTitle").value.trim() || "실전 변형문제";
+    var meta = [
+      state.items.length + "문항",
+      Array.from(new Set(state.items.map(function (q) { return q.round || 1; }))).length + "회",
+      collectPassages().length + "지문",
+      collectTypes().length + "유형"
+    ];
+
+    var html =
+      '<section class="cover">' +
+      '<h1>' + esc(title) + '</h1>' +
+      '<div class="cover-meta">' + meta.map(function (x) { return '<span class="badge">' + esc(x) + '</span>'; }).join("") + '</div>' +
+      '</section>';
+
+    if (mode === "answer") {
+      html += answerSheet(state.items);
+      paper.innerHTML = html;
+      return;
+    }
+
+    var rounds = {};
+    state.items.forEach(function (q) {
+      var r = q.round || 1;
+      if (!rounds[r]) rounds[r] = [];
+      rounds[r].push(q);
+    });
+
+    Object.keys(rounds).sort(function (a, b) { return Number(a) - Number(b); }).forEach(function (round) {
+      html += '<section class="round"><h2>' + esc(round) + '회</h2><div class="question-grid">';
+      var currentPassage = null;
+      rounds[round].forEach(function (q) {
+        if (q.passageNo !== currentPassage) {
+          currentPassage = q.passageNo;
+          html += '<div class="passage-label" style="grid-column:1/-1;">지문 ' + esc(currentPassage) + '</div>';
+        }
+        html += renderQuestion(q, showAnswer);
+      });
+      html += '</div></section>';
+    });
+
+    if (state.skipped.length) {
+      html += '<section class="round"><h2>생성 제외</h2><p class="mini">' +
+        esc(state.skipped.map(function (s) { return (s.round || 1) + "회 지문 " + s.passageNo + " " + s.type; }).join(" / ")) +
+        '</p></section>';
+    }
+
+    paper.innerHTML = html;
+    $("#previewMeta").textContent = meta.join(" / ");
+  }
+
+  async function generate() {
+    if (!window.ENGINE) {
+      status("engine.js를 불러오지 못했습니다.");
+      return;
+    }
+    var passages = collectPassages();
+    var types = collectTypes();
+    var rounds = Number($("#roundCount").value || 1);
+    if (!passages.length) {
+      status("12단어 이상 지문을 1개 이상 넣어주세요.");
+      return;
+    }
+    if (!types.length) {
+      status("유형을 1개 이상 선택하세요.");
+      return;
+    }
+
+    $("#generateBtn").disabled = true;
+    progress(0);
+    status("생성 준비 중");
+    try {
+      if ($("#useApi").checked) {
+        state.enrich = await enrich(passages);
+        ENGINE.setEnrich(state.enrich);
+      } else {
+        ENGINE.setEnrich({ ant: {}, syn: {}, examples: {} });
+      }
+
+      var seen = {};
+      var items = [];
+      var skipped = [];
+      for (var r = 1; r <= rounds; r++) {
+        status(r + "회차 생성 중");
+        var result = ENGINE.makeQuestions(passages, types, { seedSalt: "round-" + r + "-" + titleSalt() });
+        var unique = [];
+        result.items.forEach(function (q) {
+          var sig = signature(q);
+          if (!seen[sig]) {
+            seen[sig] = 1;
+            q.round = r;
+            unique.push(q);
+            items.push(q);
+          }
+        });
+        (result.skipped || []).forEach(function (s) {
+          s.round = r;
+          skipped.push(s);
+        });
+        progress(r / rounds);
+        if (!unique.length) {
+          alert(r + "회차에서 새 문항이 더 이상 나오지 않아 중단했습니다.");
+          break;
+        }
+      }
+      items.forEach(function (q, i) { q.globalNo = i + 1; });
+      state.items = items;
+      state.skipped = skipped;
+      render();
+      status(items.length + "문항 생성 완료");
+    } catch (err) {
+      console.error(err);
+      status("생성 중 오류: " + (err && err.message ? err.message : err));
+    } finally {
+      $("#generateBtn").disabled = false;
+    }
+  }
+
+  function titleSalt() {
+    return ($("#paperTitle").value || "workbook").replace(/\s+/g, "-");
+  }
+
+  function downloadDoc() {
+    if (!state.items.length) {
+      status("저장할 문항이 없습니다.");
+      return;
+    }
+    var title = ($("#paperTitle").value || "변형문제").replace(/[\\/:*?"<>|]+/g, "_");
+    var html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><style>' +
+      'body{font-family:Malgun Gothic,Arial,sans-serif;color:#111827;} .question{border:1px solid #cfd8e4;border-radius:6px;margin:0 0 8px;page-break-inside:avoid;} .q-head{background:#f1f5f9;font-weight:700;padding:6px;border-bottom:1px solid #cfd8e4;} .q-body{padding:8px;font-size:10.5pt;line-height:1.55;} .answer{color:#064e3b;border-top:1px dashed #aaa;margin-top:6px;padding-top:5px;} .round{page-break-before:always;} .round:first-of-type{page-break-before:auto;} table{border-collapse:collapse;width:100%;}td,th{border:1px solid #999;padding:5px;}' +
+      '</style></head><body>' + $("#paper").innerHTML + '</body></html>';
+    var blob = new Blob(["\ufeff", html], { type: "application/msword;charset=utf-8" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = title + ".doc";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+  }
+
+  async function copyHtml() {
+    if (!state.items.length) {
+      status("복사할 출력물이 없습니다.");
+      return;
+    }
+    await navigator.clipboard.writeText($("#paper").innerHTML);
+    status("HTML을 복사했습니다.");
+  }
+
+  function showAnswersOnly() {
+    if (!state.items.length) return;
+    $("#paperMode").value = "answer";
+    render();
+  }
+
+  function bind() {
+    $("#addPassageBtn").addEventListener("click", function () { addPassage(""); });
+    $("#clearPassagesBtn").addEventListener("click", clearPassages);
+    $("#splitPassagesBtn").addEventListener("click", splitPassages);
+    $("#selectAllBtn").addEventListener("click", function () { setTypes("all"); });
+    $("#selectCoreBtn").addEventListener("click", function () { setTypes("core"); });
+    $("#selectNoneBtn").addEventListener("click", function () { setTypes("none"); });
+    $("#generateBtn").addEventListener("click", generate);
+    $("#downloadBtn").addEventListener("click", downloadDoc);
+    $("#printBtn").addEventListener("click", function () { window.print(); });
+    $("#copyBtn").addEventListener("click", copyHtml);
+    $("#answerBtn").addEventListener("click", showAnswersOnly);
+    $("#paperMode").addEventListener("change", render);
+    $("#answerMode").addEventListener("change", render);
+  }
+
+  function init() {
+    if (window.ENGINE) {
+      $("#engineBadge").textContent = (ENGINE.ALL_TYPES || []).length + "유형";
+      $("#engineBadge").style.color = "#064e3b";
+    } else {
+      $("#engineBadge").textContent = "엔진 없음";
+      $("#engineBadge").style.color = "#b91c1c";
+    }
+    addPassage("");
+    addPassage("");
+    addPassage("");
+    renderTypes();
+    renderStats();
+    bind();
+    status("준비 완료");
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>
