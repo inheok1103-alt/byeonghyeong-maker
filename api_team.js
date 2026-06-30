@@ -16,7 +16,7 @@
   ];
   var BEST_TYPES = ["어법", "어휘", "빈칸", "주제", "제목", "함의", "요약", "내용불일치", "서술형"];
   // 자기개선 레이어 상태
-  var RUNHINT = "", STANDING = "", ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {};
+  var RUNHINT = "", STANDING = "", TYPERULE = "", ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {};
 
   function withTimeout(ms) { var c = new AbortController(); var t = setTimeout(function () { c.abort(); }, ms || 45000); return { signal: c.signal, done: function () { clearTimeout(t); } }; }
   async function getJSON(url, ms) { var to = withTimeout(ms); try { return await (await fetch(url, { signal: to.signal })).json(); } finally { to.done(); } }
@@ -59,11 +59,14 @@
   }
   var _llmQ = Promise.resolve();
   function llm(messages, opts) {
+    var sysadd = "";
+    if (TYPERULE) sysadd += "\n[이 유형의 수능 출제 규칙 — 반드시 준수] " + TYPERULE;
     var extra = [STANDING, RUNHINT].filter(Boolean).join(" / ");
-    if (extra) {
+    if (extra) sysadd += "\n[누적·회의 개선지침] " + extra;
+    if (sysadd) {
       var hasSys = messages.some(function (m) { return m.role === "system"; });
-      messages = hasSys ? messages.map(function (m) { return m.role === "system" ? { role: "system", content: m.content + "\n[누적·회의 개선지침] " + extra } : m; })
-        : [{ role: "system", content: "[개선지침] " + extra }].concat(messages);
+      messages = hasSys ? messages.map(function (m) { return m.role === "system" ? { role: "system", content: m.content + sysadd } : m; })
+        : [{ role: "system", content: sysadd.trim() }].concat(messages);
     }
     var p = _llmQ.then(function () { return llmWithRetry(messages, opts); }, function () { return llmWithRetry(messages, opts); });
     _llmQ = p.then(function () { return delay(500); }, function () { return delay(500); });
@@ -300,7 +303,7 @@
   };
 
   // ===== 내신 유형 DB (외부 JSON에서 실시간 로드) =====
-  var TYPE_INSTR = {}, TYPE_BUILDER_HINT = {}, TYPE_DB_INFO = { source: "내장 기본", count: BEST_TYPES.length, at: "" };
+  var TYPE_GUIDE = {}, TYPE_INSTR = {}, TYPE_BUILDER_HINT = {}, TYPE_DB_INFO = { source: "내장 기본", count: BEST_TYPES.length, at: "" };
   var BUILDER_BY_KEY = {
     inference: function (p, o, t) { return buildInference(p, t, o); },
     vocab: function (p, o) { return buildVocab(p, o); }, grammar: function (p, o) { return buildGrammar(p, o); },
@@ -364,7 +367,7 @@
     log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…");
     for (var i = 0; i < types.length; i++) {
       var t = types[i], b = builderFor(t), got = null;
-      RUNHINT = "";
+      RUNHINT = ""; TYPERULE = TYPE_GUIDE[t] || "";
       for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
         log(onP, "[" + (i + 1) + "/" + types.length + "] " + t + (attempt > 1 ? " (개선 재시도 " + attempt + ")" : "") + " 출제 중…");
         try { var q = await b(passage, bopts); if (q && q.instruction) got = q; } catch (e) {}
@@ -376,7 +379,7 @@
           if (mt.hint) log(onP, "   ↳ 합의 개선지시: " + mt.hint);
         }
       }
-      RUNHINT = "";
+      RUNHINT = ""; TYPERULE = "";
       if (got) { if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; out.push(got); } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
     }
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
@@ -387,7 +390,9 @@
   async function generateOne(passage, type, opts) {
     opts = opts || {};
     var ctx = opts.ctx || await prepContext(passage).catch(function () { return {}; });
+    TYPERULE = TYPE_GUIDE[type] || "";
     var q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast });
+    TYPERULE = "";
     if (q && TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type];
     return q;
   }
