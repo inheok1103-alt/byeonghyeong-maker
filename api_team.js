@@ -16,7 +16,7 @@
   ];
   var BEST_TYPES = ["어법", "어휘", "빈칸", "주제", "제목", "함의", "요약", "내용불일치", "서술형"];
   // 자기개선 레이어 상태
-  var RUNHINT = "", STANDING = "", TYPERULE = "", ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {};
+  var RUNHINT = "", STANDING = "", TYPERULE = "", LEVELRULE = "", DIFF = null, ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {};
 
   function withTimeout(ms) { var c = new AbortController(); var t = setTimeout(function () { c.abort(); }, ms || 45000); return { signal: c.signal, done: function () { clearTimeout(t); } }; }
   async function getJSON(url, ms) { var to = withTimeout(ms); try { return await (await fetch(url, { signal: to.signal })).json(); } finally { to.done(); } }
@@ -61,6 +61,7 @@
   function llm(messages, opts) {
     var sysadd = "";
     if (TYPERULE) sysadd += "\n[이 유형의 수능 출제 규칙 — 반드시 준수] " + TYPERULE;
+    if (LEVELRULE) sysadd += "\n" + LEVELRULE;
     var extra = [STANDING, RUNHINT].filter(Boolean).join(" / ");
     if (extra) sysadd += "\n[누적·회의 개선지침] " + extra;
     if (sysadd) {
@@ -109,6 +110,16 @@
     var rec = { type: type, when: attemptInfo, discussion: (m && m.discussion) || [], hint: (m && m.hint) || "" };
     MEETINGS.push(rec); try { if (CB.onMeeting) CB.onMeeting(rec); } catch (_) {} postGoogle(Object.assign({ kind: "meeting" }, rec));
     return rec;
+  }
+  // 난이도 DB 로드 + 유형·레벨별 난이도 규칙 주입
+  async function loadDifficultyDB(url) {
+    try { var r = await fetch(url, { cache: "no-store" }); DIFF = await r.json(); return { ok: true, levels: DIFF.levels ? Object.keys(DIFF.levels) : [] }; } catch (e) { return { ok: false, error: String(e) }; }
+  }
+  function setLevelRule(type, level) {
+    if (!level || !DIFF) { LEVELRULE = ""; return; }
+    var lv = (DIFF.levels && DIFF.levels[level]) || "";
+    var pt = (DIFF.perType && DIFF.perType[type] && DIFF.perType[type][level]) || "";
+    LEVELRULE = "[목표 난이도: " + level + " — " + lv + "] 난이도는 '추론단계 × 패러프레이즈거리 × 오답매력도'로 조절하고(어휘만 어렵게 하는 값싼 난도 금지), 오답 설계가 변별의 핵심이다. " + pt;
   }
   // 공유 DB(또는 patterns.json)에서 누적 개선지침/기출 분석을 불러와 모든 출제에 반영
   async function loadSharedHints(url) {
@@ -383,7 +394,7 @@
     log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…");
     for (var i = 0; i < types.length; i++) {
       var t = types[i], b = builderFor(t), got = null;
-      RUNHINT = ""; TYPERULE = TYPE_GUIDE[t] || "";
+      RUNHINT = ""; TYPERULE = TYPE_GUIDE[t] || ""; setLevelRule(t, opts.level);
       for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
         log(onP, "[" + (i + 1) + "/" + types.length + "] " + t + (attempt > 1 ? " (개선 재시도 " + attempt + ")" : "") + " 출제 중…");
         try { var q = await b(passage, bopts); if (q && q.instruction) got = q; } catch (e) {}
@@ -395,8 +406,8 @@
           if (mt.hint) log(onP, "   ↳ 합의 개선지시: " + mt.hint);
         }
       }
-      RUNHINT = ""; TYPERULE = "";
-      if (got) { if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; out.push(got); } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
+      RUNHINT = ""; TYPERULE = ""; LEVELRULE = "";
+      if (got) { if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; got.level = opts.level || ""; out.push(got); } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
     }
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
@@ -406,10 +417,11 @@
   async function generateOne(passage, type, opts) {
     opts = opts || {};
     var ctx = opts.ctx || await prepContext(passage).catch(function () { return {}; });
-    TYPERULE = TYPE_GUIDE[type] || "";
+    TYPERULE = TYPE_GUIDE[type] || ""; setLevelRule(type, opts.level);
     var q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast });
-    TYPERULE = "";
-    if (q && TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type];
+    TYPERULE = ""; LEVELRULE = "";
+    if (q && TYPE_INSTR[type]) { if (TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type]; }
+    if (q) q.level = opts.level || "";
     return q;
   }
 
@@ -473,7 +485,7 @@
 
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
-    loadTypeDB: loadTypeDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
+    loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,

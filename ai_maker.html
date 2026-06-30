@@ -74,6 +74,13 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
       <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="1" onchange="onSpeed()"> 빠른(라인 절반·2배↑)</label>
       <span class="note" id="estimate"></span>
     </div>
+    <div class="row" style="margin-top:8px">
+      <span style="font-size:9.5pt;font-weight:700">🎚 난이도</span>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="하" onchange="saveState()"> 하(기본)</label>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="중" checked onchange="saveState()"> 중(표준)</label>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="상" onchange="saveState()"> 상(킬러)</label>
+      <span class="note" id="lvstat"></span>
+    </div>
     <div class="row" style="margin-top:10px">
       <button class="go" id="go" onclick="run()">🚀 고품질 출제</button>
       <button class="ghost" onclick="toggleAns()">정답·해설 보기</button>
@@ -210,6 +217,7 @@ function loadSample(){ document.getElementById("passage").value=SAMPLE; onPassag
 function clearPassage(){ document.getElementById("passage").value=""; onPassage(); }
 function onPassage(){ var w=(document.getElementById("passage").value.match(/[A-Za-z]+/g)||[]).length; document.getElementById("charcount").textContent=w+" 단어"; updateEstimate(); saveState(); }
 function getFast(){ var r=document.querySelector('input[name=speed]:checked'); return !!(r&&r.value==="1"); }
+function getLevel(){ var r=document.querySelector('input[name=level]:checked'); return r?r.value:"중"; }
 function onSpeed(){ updateEstimate(); saveState(); }
 function updateEstimate(){ var n=chosen().length, fast=getFast(), per=fast?20:45; var el=document.getElementById("estimate"); el.textContent=n?("⏱ 예상 약 "+Math.max(1,Math.ceil(n*per/60))+"분 ("+(fast?"빠른":"정밀")+"·"+n+"유형)"):""; }
 function saveState(){ try{ localStorage.setItem("ai_state",JSON.stringify({p:document.getElementById("passage").value,t:chosen(),f:getFast()})); }catch(e){} }
@@ -226,7 +234,7 @@ function run(){
   document.getElementById("log").textContent=""; document.getElementById("out").innerHTML="";
   document.getElementById("meet").innerHTML=""; document.getElementById("meetCard").style.display="none";
   document.getElementById("bar").style.display="block"; document.getElementById("barfill").style.width="3%";
-  T.generateExam(passage, types, {onProgress:logln, fast:getFast()}).then(function(items){
+  T.generateExam(passage, types, {onProgress:logln, fast:getFast(), level:getLevel()}).then(function(items){
     LASTITEMS=items||[]; document.getElementById("barfill").style.width="100%"; render(items);
     go.disabled=false; go.textContent="🚀 고품질 출제"; setTimeout(function(){ document.getElementById("bar").style.display="none"; },900);
   }).catch(function(e){ logln("오류: "+e.message); go.disabled=false; go.textContent="🚀 고품질 출제"; });
@@ -248,7 +256,7 @@ function render(items){
 function regenOne(i){
   var q=LASTITEMS[i]; if(!q||!LASTPASSAGE) return;
   var el=document.getElementById("q_"+i); el.style.opacity=.4;
-  T.generateOne(LASTPASSAGE, q.type, {fast:getFast()}).then(function(nq){ if(nq){ LASTITEMS[i]=nq; el.outerHTML=qHtml(nq,i); } else el.style.opacity=1; }).catch(function(){ el.style.opacity=1; });
+  T.generateOne(LASTPASSAGE, q.type, {fast:getFast(), level:getLevel()}).then(function(nq){ if(nq){ LASTITEMS[i]=nq; el.outerHTML=qHtml(nq,i); } else el.style.opacity=1; }).catch(function(){ el.style.opacity=1; });
 }
 function plain(){ return LASTITEMS.map(function(q,i){ var s=(i+1)+". ["+q.type+"] "+q.instruction+"\n"; if(q.passage) s+=q.passage.replace(/<\/?u>/g,"")+"\n"; (q.choices||[]).forEach(function(c,j){ s+="  "+(CIRC[j]||(j+1))+" "+c+"\n"; }); s+="  [정답] "+(q.answer?(CIRC[q.answer-1]):"서술형")+" — "+q.explanation+"\n"; return s; }).join("\n"); }
 function copyResult(){ navigator.clipboard.writeText(plain()).then(function(){ alert("결과를 클립보드에 복사했습니다."); },function(){ alert("복사 실패 — 브라우저 권한을 확인하세요."); }); }
@@ -292,6 +300,7 @@ function loadResearch(){
     renderResearch(entries);
   });
 }
+T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=document.getElementById("lvstat"); if(s) s.textContent=(r&&r.ok)?"✓ 난이도 규칙 로드됨(요인 기반)":"내장 기본"; });
 restoreState(); refreshDB(); loadResearch();
 </script>
 </body>
