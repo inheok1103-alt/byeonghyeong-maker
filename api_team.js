@@ -240,11 +240,11 @@
   }
   // 빈칸: ① 핵심어구 비우기 → ② 정답 → ③ 역할별 오답
   async function buildBlank(passage) {
-    var o = await llmJSON([{ role: "system", content: "빈칸추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 '핵심 논지'를 담은 어구 한 곳을 골라 ____ 로 비워라. JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"빈칸에 들어갈 영어 어구\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
+    var o = await llmJSON([{ role: "system", content: "수능 빈칸추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 핵심 논지를 담은 어구 한 곳(3~10단어)을 골라 ____ 로 비워라. 정답은 그 어구를 '본문 표현 그대로가 아니라 상위어·동의어로 패러프레이즈'한 간결한 영어 어구로 하라(완성 문장 아님, 다른 선택지와 길이·형태를 맞춤). JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"패러프레이즈한 정답 어구\",\"orig\":\"본문에서 비운 원래 어구\"}.\n\n" + passage }], { temperature: 0.45, timeout: 60000 });
     if (!o || !o.answer || !o.blanked) return null;
-    var dis = await makeDistractors(o.answer, "영어 어구", "빈칸 추론. 핵심을 묻는 자리.");
+    var dis = await makeDistractors(o.answer, "빈칸에 들어갈 간결한 영어 어구(완성 문장 아님, 정답과 길이·형태 통일)", "빈칸 추론. 오답은 본문 단어를 재활용하되 논리가 어긋나게(정반대/부분일치/무관/과장).");
     var a = shuffleAnswer(o.answer, dis);
-    return { type: "빈칸", instruction: "다음 빈칸에 들어갈 말로 가장 적절한 것은?", passage: o.blanked, choices: a.choices, answer: a.answer, explanation: "빈칸에는 '" + o.answer + "'가 들어가 글의 논지를 완성한다." };
+    return { type: "빈칸", instruction: "다음 빈칸에 들어갈 말로 가장 적절한 것은?", passage: o.blanked, choices: a.choices, answer: a.answer, explanation: "빈칸에는 '" + o.answer + "'가 들어가 글의 논지를 완성한다" + (o.orig ? (" (본문 '" + o.orig + "'의 패러프레이즈)") : "") + "." };
   }
   // 함의: ① 밑줄 구절+의미 → ② 역할별 오답
   async function buildImplication(passage) {
