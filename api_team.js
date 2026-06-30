@@ -101,10 +101,15 @@
       { key: "dict_pron", name: "발음", group: "입력", api: "Free Dictionary" }, { key: "wikt_ety", name: "어원", group: "입력", api: "Wiktionary" },
       { key: "wiki_bg", name: "배경지식", group: "입력", api: "Wikipedia" }, { key: "gbooks", name: "실제용례", group: "입력", api: "Google Books" },
       { key: "trans_ko", name: "한국어뜻", group: "입력", api: "MyMemory" },
+      { key: "ds_bga", name: "앞연어", group: "입력", api: "Datamuse" }, { key: "ds_bgb", name: "뒤연어", group: "입력", api: "Datamuse" },
+      { key: "ds_jjb", name: "형용사연상", group: "입력", api: "Datamuse" }, { key: "ds_sp", name: "철자변형", group: "입력", api: "Datamuse" },
+      { key: "wiki_rel", name: "관련주제", group: "입력", api: "Wikipedia" }, { key: "wikidata", name: "구조화사실", group: "입력", api: "Wikidata" },
+      { key: "openlib", name: "도서정보", group: "입력", api: "OpenLibrary" }, { key: "poetry", name: "문학용례", group: "입력", api: "PoetryDB" },
       { key: "llm_main", name: "핵심논지", group: "이해", api: "Pollinations" }, { key: "llm_ans", name: "정답작성", group: "생성", api: "Pollinations" },
       { key: "llm_dis", name: "오답설계", group: "생성", api: "Pollinations" },
       { key: "critic", name: "선지검수관", group: "검증", api: "Pollinations" }, { key: "grammar", name: "어법검수", group: "검증", api: "LanguageTool" },
       { key: "ds_dup", name: "중복차단", group: "검증", api: "Datamuse" }, { key: "trans_chk", name: "번역검증", group: "검증", api: "MyMemory" },
+      { key: "colloc_chk", name: "연어검증", group: "검증", api: "Datamuse" },
       { key: "meeting", name: "API회의", group: "피드백", api: "Pollinations" }, { key: "image", name: "삽화", group: "출력", api: "Pollinations Image" }
     ];
     var inputs = N.filter(function (n) { return n.group === "입력"; }).map(function (n) { return n.key; });
@@ -117,6 +122,9 @@
     S.push(["critic", "grammar"], ["grammar", "critic"], ["llm_ans", "trans_chk"], ["trans_chk", "critic"]);
     S.push(["grammar", "meeting"], ["ds_dup", "meeting"], ["critic", "meeting"], ["meeting", "llm_main"], ["meeting", "llm_dis"]);
     S.push(["llm_main", "image"], ["wiki_bg", "image"]);
+    // 신규 뉴런 시냅스: 연어→어법/연어검증→검수, 지식→정답/오답/삽화
+    S.push(["ds_bga", "grammar"], ["ds_bgb", "grammar"], ["ds_bga", "colloc_chk"], ["ds_bgb", "colloc_chk"], ["colloc_chk", "critic"], ["colloc_chk", "llm_ans"], ["colloc_chk", "meeting"]);
+    S.push(["wiki_rel", "llm_ans"], ["wiki_rel", "image"], ["wikidata", "llm_ans"], ["wikidata", "llm_dis"], ["openlib", "llm_dis"], ["poetry", "llm_dis"], ["poetry", "llm_ans"]);
     return { neurons: N, synapses: S, groups: ["입력", "이해", "생성", "검증", "피드백", "출력"], roster: ROSTER };
   })();
   function topology() {
@@ -169,8 +177,9 @@
     } catch (_) { return []; } finally { to.done(); }
   }
   async function datamuse(word, rel, max) {
-    var map = { syn: "rel_syn", ant: "rel_ant", trg: "rel_trg", spc: "rel_spc", gen: "rel_gen", ml: "ml" };
-    try { var d = await getJSON("https://api.datamuse.com/words?" + (map[rel] || "ml") + "=" + encodeURIComponent(word) + "&max=" + (max || 10), 12000); return (d || []).map(function (x) { return x.word; }); }
+    var map = { syn: "rel_syn", ant: "rel_ant", trg: "rel_trg", spc: "rel_spc", gen: "rel_gen", jja: "rel_jja", jjb: "rel_jjb", hom: "rel_hom", bga: "rel_bga", bgb: "rel_bgb", cns: "rel_cns", par: "rel_par", ml: "ml" };
+    var q = rel === "sp" ? ("sp=" + encodeURIComponent(word)) : ((map[rel] || "ml") + "=" + encodeURIComponent(word));
+    try { var d = await getJSON("https://api.datamuse.com/words?" + q + "&max=" + (max || 10), 12000); return (d || []).map(function (x) { return x.word; }); }
     catch (_) { return []; }
   }
   async function dict(word) {
@@ -192,6 +201,11 @@
     try { var d = await getJSON("https://www.googleapis.com/books/v1/volumes?q=" + encodeURIComponent('"' + phrase + '"') + "&maxResults=2&country=US", 12000);
       var it = (d.items || [])[0]; return (it && it.searchInfo && it.searchInfo.textSnippet) || (it && it.volumeInfo && it.volumeInfo.description) || ""; } catch (_) { return ""; }
   }
+  // 신규 무료·무키·CORS API (실측 검증 완료)
+  async function wikiSearch(query) { try { var d = await getJSON("https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=" + encodeURIComponent(query) + "&srlimit=6&format=json&origin=*", 12000); return ((d.query && d.query.search) || []).map(function (x) { return x.title; }); } catch (_) { return []; } }
+  async function wikidata(query) { try { var d = await getJSON("https://www.wikidata.org/w/api.php?action=wbsearchentities&search=" + encodeURIComponent(query) + "&language=en&format=json&origin=*&limit=4", 12000); return ((d.search) || []).map(function (x) { return { label: x.label, desc: x.description || "" }; }).filter(function (x) { return x.desc; }); } catch (_) { return []; } }
+  async function openLibrary(query) { try { var d = await getJSON("https://openlibrary.org/search.json?q=" + encodeURIComponent(query) + "&limit=2&fields=title,author_name,first_sentence,subject", 12000); var it = (d.docs || [])[0]; if (!it) return null; var fs = it.first_sentence; return { title: it.title, author: (it.author_name || [])[0] || "", sentence: (fs && (fs.value || fs[0])) || "", subjects: (it.subject || []).slice(0, 6) }; } catch (_) { return null; } }
+  async function poetry(topic) { try { var d = await getJSON("https://poetrydb.org/lines/" + encodeURIComponent(topic), 12000); if (!Array.isArray(d)) return []; var lines = []; d.slice(0, 3).forEach(function (p) { (p.lines || []).forEach(function (l) { if (l && l.trim().length > 20) lines.push(l.trim()); }); }); return lines.slice(0, 5); } catch (_) { return []; } }
 
   /* ---------- 공통 보조 ---------- */
   function englishWords(s) { return (String(s).match(/[A-Za-z][A-Za-z'\-]{2,}/g) || []); }
@@ -214,17 +228,25 @@
   /* ====================== 미분화 빌더(유형별) ====================== */
   // ===== 컨텍스트 사전수집: 모든 비-LLM API 병렬 (반의어·동의어·정의·배경지식) =====
   async function prepContext(passage, onP) {
-    log(onP, "· 자료 수집반(Datamuse 동의/반의/연상 + 사전·위키·Google Books) 병렬 가동…");
-    var cw = contentWords(passage).slice(0, 8), ant = {}, syn = {}, trg = {}, defs = {};
+    log(onP, "· 자료 수집반(Datamuse 동의/반의/연상/연어 + 사전·위키·관련검색·Google Books) 병렬 가동…");
+    var cw = contentWords(passage).slice(0, 8), ant = {}, syn = {}, trg = {}, colloc = {}, defs = {};
     await Promise.all(cw.map(async function (w) {
       try { var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; } catch (_) {}
       try { var s = await datamuse(w, "syn", 5); if (s.length) syn[w] = s; } catch (_) {}
       try { var t = await datamuse(w, "trg", 4); if (t.length) trg[w] = t; } catch (_) {}
     }));
-    await Promise.all(cw.slice(0, 5).map(async function (w) { try { var d = await dict(w); if (d && d.meanings[0]) defs[w] = d.meanings[0].def; } catch (_) {} }));
-    var bg = null, topic = await ask("다음 글의 핵심 주제를 영어 1~3단어(명사)로. 단어만.\n\n" + passage.slice(0, 500)).catch(function () { return ""; });
-    if (topic) { try { bg = await wiki(topic); } catch (_) {} }
-    return { cw: cw, ant: ant, syn: syn, trg: trg, defs: defs, bg: bg, topic: topic };
+    await Promise.all(cw.slice(0, 5).map(async function (w) {
+      try { var d = await dict(w); if (d && d.meanings[0]) defs[w] = d.meanings[0].def; } catch (_) {}
+      try { var b = await datamuse(w, "bgb", 3); if (b.length) colloc[w] = b; } catch (_) {}
+    }));
+    var topic = await ask("다음 글의 핵심 주제를 영어 1~3단어(명사)로. 단어만.\n\n" + passage.slice(0, 500)).catch(function () { return ""; });
+    var bg = null, related = [], facts = [];
+    if (topic) {
+      try { bg = await wiki(topic); } catch (_) {}
+      try { related = await wikiSearch(topic); } catch (_) {}
+      try { facts = await wikidata(topic); } catch (_) {}
+    }
+    return { cw: cw, ant: ant, syn: syn, trg: trg, colloc: colloc, defs: defs, bg: bg, topic: topic, related: related, facts: facts };
   }
   function synOverlap(answer, distractor, ctx) {
     var pool = {}; englishWords(answer).forEach(function (w) { (ctx.syn && ctx.syn[w.toLowerCase()] || []).forEach(function (s) { pool[s] = 1; }); });
@@ -268,7 +290,7 @@
     var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["글과 무관", "글에 없는 다른 주제로"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
     var steps = [
       { api: "wiki", label: "배경지식 조회", run: function (s) { return Promise.resolve({ bg: (ctx && ctx.bg) || null }); } },
-      { api: "llm", label: "핵심 논지 추출", run: async function (s) { var h = s.bg && s.bg.extract ? ("\n(참고 배경: " + s.bg.extract.slice(0, 160) + ")") : ""; return { main: await ask("다음 글의 핵심 논지를 영어 한 문장으로(답만)." + h + "\n\n" + passage, "핵심 한 문장. 답만.") }; } },
+      { api: "llm", label: "핵심 논지 추출", run: async function (s) { var h = s.bg && s.bg.extract ? ("\n(참고 배경: " + s.bg.extract.slice(0, 160) + ")") : ""; if (ctx && ctx.related && ctx.related.length) h += "\n(관련 주제: " + ctx.related.slice(0, 4).join(", ") + ")"; if (ctx && ctx.facts && ctx.facts.length) h += "\n(사실: " + ctx.facts.slice(0, 2).map(function (f) { return f.label + "—" + f.desc; }).join("; ") + ")"; return { main: await ask("다음 글의 핵심 논지를 영어 한 문장으로(답만)." + h + "\n\n" + passage, "핵심 한 문장. 답만.") }; } },
       { api: "llm", label: "정답 보기 작성", run: async function (s) { if (!s.main) throw new Error("no main"); return { answer: await ask("글 핵심: \"" + s.main + "\"\n이를 담은 " + type + " 정답을 " + kind + "로 간결히. 보기 텍스트만.") }; } }
     ];
     if (fast) {
@@ -575,6 +597,7 @@
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
+    wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
