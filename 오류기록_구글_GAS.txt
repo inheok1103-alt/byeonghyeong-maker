@@ -1,21 +1,25 @@
-// === AI 제작기 오류·회의 기록용 Google Apps Script ===
-// 사용법:
-// 1) 구글 시트 새로 만들기 → 메뉴 [확장 프로그램] → [Apps Script]
-// 2) 아래 코드 전체 붙여넣기 → 저장
-// 3) 우상단 [배포] → [새 배포] → 유형: 웹 앱
-//    - 실행: 나 / 액세스 권한: "모든 사용자" → 배포 → 웹앱 URL 복사
-// 4) 제작기 주소 뒤에 ?log=<복사한URL> 을 붙여 접속하면 오류·회의가 시트에 자동 기록됩니다.
-//    예: https://inheok1103-alt.github.io/byeonghyeong-maker/ai_maker.html?log=https://script.google.com/macros/s/XXXX/exec
-
-function doPost(e) {
-  try {
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var sh = ss.getSheetByName('log') || ss.insertSheet('log');
-    if (sh.getLastRow() === 0) sh.appendRow(['시각','종류','유형','단계','상세','개선지시','회의']);
-    var d = JSON.parse(e.postData.contents);
+// === AI 제작기 '공유' 오류·회의 DB (Google Apps Script) ===
+// 모든 사용자의 오류·회의가 하나의 구글시트에 누적되고, 누적 개선지침을 다시 내려줍니다.
+// 1) 구글 시트 새로 만들기 → [확장] → [Apps Script] → 아래 코드 붙여넣기
+// 2) [배포] → [새 배포] → 웹 앱 → 실행: 나 / 액세스: "모든 사용자" → URL 복사
+// 3) 레포의 config.json 의 "logUrl" 에 그 URL 을 넣고 커밋 → 모두에게 공유됨
+function doPost(e){
+  try{
+    var ss=SpreadsheetApp.getActiveSpreadsheet();
+    var sh=ss.getSheetByName('log')||ss.insertSheet('log');
+    if(sh.getLastRow()===0) sh.appendRow(['시각','종류','유형','단계','상세','개선지침','회의']);
+    var d=JSON.parse(e.postData.contents);
     sh.appendRow([new Date(), d.kind||'', d.type||'', d.t||'', d.detail||'', d.hint||'', JSON.stringify(d.discussion||'')]);
     return ContentService.createTextOutput('ok');
-  } catch (err) {
-    return ContentService.createTextOutput('err: ' + err);
-  }
+  }catch(err){ return ContentService.createTextOutput('err: '+err); }
+}
+// hints=1 로 GET 하면 최근 회의 개선지침을 JSON으로 반환 → 모두의 출제에 반영
+function doGet(e){
+  try{
+    var sh=SpreadsheetApp.getActiveSpreadsheet().getSheetByName('log');
+    var hints=[];
+    if(sh){ var v=sh.getDataRange().getValues();
+      for(var i=v.length-1;i>0 && hints.length<10;i--){ if(v[i][1]==='meeting' && v[i][5]) hints.push(String(v[i][5])); } }
+    return ContentService.createTextOutput(JSON.stringify({hints:hints})).setMimeType(ContentService.MimeType.JSON);
+  }catch(err){ return ContentService.createTextOutput(JSON.stringify({hints:[],error:String(err)})).setMimeType(ContentService.MimeType.JSON); }
 }

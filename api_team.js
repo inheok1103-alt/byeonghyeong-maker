@@ -16,7 +16,7 @@
   ];
   var BEST_TYPES = ["어법", "어휘", "빈칸", "주제", "제목", "함의", "요약", "내용불일치", "서술형"];
   // 자기개선 레이어 상태
-  var RUNHINT = "", ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {};
+  var RUNHINT = "", STANDING = "", ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {};
 
   function withTimeout(ms) { var c = new AbortController(); var t = setTimeout(function () { c.abort(); }, ms || 45000); return { signal: c.signal, done: function () { clearTimeout(t); } }; }
   async function getJSON(url, ms) { var to = withTimeout(ms); try { return await (await fetch(url, { signal: to.signal })).json(); } finally { to.done(); } }
@@ -59,10 +59,11 @@
   }
   var _llmQ = Promise.resolve();
   function llm(messages, opts) {
-    if (RUNHINT) {
+    var extra = [STANDING, RUNHINT].filter(Boolean).join(" / ");
+    if (extra) {
       var hasSys = messages.some(function (m) { return m.role === "system"; });
-      messages = hasSys ? messages.map(function (m) { return m.role === "system" ? { role: "system", content: m.content + "\n[직전 오류에 대한 회의 개선지시] " + RUNHINT } : m; })
-        : [{ role: "system", content: "[개선지시] " + RUNHINT }].concat(messages);
+      messages = hasSys ? messages.map(function (m) { return m.role === "system" ? { role: "system", content: m.content + "\n[누적·회의 개선지침] " + extra } : m; })
+        : [{ role: "system", content: "[개선지침] " + extra }].concat(messages);
     }
     var p = _llmQ.then(function () { return llmWithRetry(messages, opts); }, function () { return llmWithRetry(messages, opts); });
     _llmQ = p.then(function () { return delay(500); }, function () { return delay(500); });
@@ -105,6 +106,16 @@
     var rec = { type: type, when: attemptInfo, discussion: (m && m.discussion) || [], hint: (m && m.hint) || "" };
     MEETINGS.push(rec); try { if (CB.onMeeting) CB.onMeeting(rec); } catch (_) {} postGoogle(Object.assign({ kind: "meeting" }, rec));
     return rec;
+  }
+  // 공유 DB(또는 patterns.json)에서 누적 개선지침/기출 분석을 불러와 모든 출제에 반영
+  async function loadSharedHints(url) {
+    try {
+      var r = await fetch(url, { cache: "no-store" }); var d = await r.json();
+      var arr = Array.isArray(d) ? d : (d.hints || d.rules || []);
+      arr = arr.map(function (x) { return typeof x === "string" ? x : (x && (x.hint || x.rule)); }).filter(Boolean);
+      if (arr.length) STANDING = arr.slice(-10).join(" / ").slice(0, 800);
+      return { ok: true, count: arr.length };
+    } catch (e) { return { ok: false, error: String(e) }; }
   }
 
   /* ---------- 비-LLM API (병렬 가능) ---------- */
@@ -288,6 +299,39 @@
     "어휘": buildVocab, "어법": buildGrammar, "서술형": buildEssay
   };
 
+  // ===== 내신 유형 DB (외부 JSON에서 실시간 로드) =====
+  var TYPE_INSTR = {}, TYPE_BUILDER_HINT = {}, TYPE_DB_INFO = { source: "내장 기본", count: BEST_TYPES.length, at: "" };
+  var BUILDER_BY_KEY = {
+    inference: function (p, o, t) { return buildInference(p, t, o); },
+    vocab: function (p, o) { return buildVocab(p, o); }, grammar: function (p, o) { return buildGrammar(p, o); },
+    blank: function (p, o) { return buildBlank(p, o); }, implication: function (p, o) { return buildImplication(p, o); },
+    summary: function (p, o) { return buildSummary(p, o); }, factcheck0: function (p, o) { return buildFactCheck(p, false, o); },
+    factcheck1: function (p, o) { return buildFactCheck(p, true, o); }, essay: function (p, o) { return buildEssay(p, o); }
+  };
+  function builderFor(t) {
+    var hint = TYPE_BUILDER_HINT[t];
+    if (hint && BUILDER_BY_KEY[hint]) return function (p, o) { return BUILDER_BY_KEY[hint](p, o, t); };
+    return BUILDERS[t] || function (p, o) { return buildInference(p, t, o); };
+  }
+  // 외부 유형 DB(JSON 배열 [{type,guide,instruction,builder,on}]) 로드 → 실시간 반영
+  async function loadTypeDB(url) {
+    try {
+      var r = await fetch(url, { cache: "no-store" }); var data = await r.json();
+      var arr = Array.isArray(data) ? data : (data.types || []);
+      var active = [];
+      arr.forEach(function (it) {
+        if (!it || !it.type) return;
+        if (it.guide) TYPE_GUIDE[it.type] = it.guide;
+        if (it.instruction) TYPE_INSTR[it.type] = it.instruction;
+        if (it.builder) TYPE_BUILDER_HINT[it.type] = it.builder;
+        if (it.on !== false) active.push(it.type);
+      });
+      if (active.length) { BEST_TYPES.length = 0; active.forEach(function (t) { BEST_TYPES.push(t); }); }
+      TYPE_DB_INFO = { source: url, count: active.length, at: "" };
+      return { ok: true, count: active.length, types: active };
+    } catch (e) { return { ok: false, error: String(e), types: BEST_TYPES.slice() }; }
+  }
+
   // ===== 지문 분석 → 예상 출제 유형 판단(적합도+근거) =====
   async function suggestTypes(passage, opts) {
     opts = opts || {}; var onP = opts.onProgress;
@@ -319,7 +363,7 @@
     var maxTry = opts.fast ? 2 : 3;
     log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…");
     for (var i = 0; i < types.length; i++) {
-      var t = types[i], b = BUILDERS[t] || (function (tt) { return function (p, o) { return buildInference(p, tt, o); }; })(t), got = null;
+      var t = types[i], b = builderFor(t), got = null;
       RUNHINT = "";
       for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
         log(onP, "[" + (i + 1) + "/" + types.length + "] " + t + (attempt > 1 ? " (개선 재시도 " + attempt + ")" : "") + " 출제 중…");
@@ -333,7 +377,7 @@
         }
       }
       RUNHINT = "";
-      if (got) out.push(got); else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
+      if (got) { if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; out.push(got); } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
     }
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
@@ -343,8 +387,9 @@
   async function generateOne(passage, type, opts) {
     opts = opts || {};
     var ctx = opts.ctx || await prepContext(passage).catch(function () { return {}; });
-    var b = BUILDERS[type] || function (p, o) { return buildInference(p, type, o); };
-    return b(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast });
+    var q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast });
+    if (q && TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type];
+    return q;
   }
 
   async function transformPassage(passage, mode, opts) {
@@ -407,6 +452,7 @@
 
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
+    loadTypeDB: loadTypeDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     generateExam: generateExam, generateOne: generateOne, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,

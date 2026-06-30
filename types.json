@@ -1,0 +1,60 @@
+{
+  "updated": "2026-06-29",
+  "note": "내신 유형 DB — 이 파일을 GitHub에서 수정·커밋하면 제작기에 실시간 반영됩니다. builder는 inference/vocab/grammar/blank/implication/summary/factcheck0/essay 중 하나.",
+  "types": [
+    {
+      "type": "어법",
+      "builder": "grammar",
+      "on": true,
+      "guide": "밑줄 ⓐ~ⓔ 중 어법상 틀린 것 (5곳 밑줄, 1곳만 오류)"
+    },
+    {
+      "type": "어휘",
+      "builder": "vocab",
+      "on": true,
+      "guide": "밑줄 ⓐ~ⓔ 중 문맥상 부적절 낱말 (1곳 반의어 교체)"
+    },
+    {
+      "type": "빈칸",
+      "builder": "blank",
+      "on": true,
+      "guide": "빈칸에 들어갈 말 (영어 5개)"
+    },
+    {
+      "type": "주제",
+      "builder": "inference",
+      "on": true,
+      "guide": "글의 주제 (영어 명사구 5개)"
+    },
+    {
+      "type": "제목",
+      "builder": "inference",
+      "on": true,
+      "guide": "글의 제목 (영어 5개)"
+    },
+    {
+      "type": "함의",
+      "builder": "implication",
+      "on": true,
+      "guide": "밑줄의 함축 의미 (영어 5개)"
+    },
+    {
+      "type": "요약",
+      "builder": "summary",
+      "on": true,
+      "guide": "요약문 빈칸 (A),(B) (영어)"
+    },
+    {
+      "type": "내용불일치",
+      "builder": "factcheck0",
+      "on": true,
+      "guide": "내용과 일치하지 않는 것 (한국어 5개)"
+    },
+    {
+      "type": "서술형",
+      "builder": "essay",
+      "on": true,
+      "guide": "내신 서술형(우리말해석/조건영작/요약완성)"
+    }
+  ]
+}
