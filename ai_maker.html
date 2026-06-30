@@ -56,19 +56,30 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
 
   <div class="card noprint">
     <h2>① 영어 지문 붙여넣기</h2>
-    <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요..."></textarea>
+    <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요..." oninput="onPassage()"></textarea>
+    <div class="row" style="margin-top:6px">
+      <button class="ghost" onclick="loadSample()">📄 샘플 지문</button>
+      <button class="ghost" onclick="clearPassage()">지우기</button>
+      <span class="note" id="charcount">0 단어</span>
+    </div>
     <div class="row" style="margin-top:8px"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
     <div id="suggest"></div>
     <h2 style="margin-top:12px">② 출제 유형 <span style="font-size:9pt;color:#888;font-weight:400">(분석하면 추천 유형이 자동 선택됩니다)</span></h2>
     <div class="types" id="types"></div>
     <div class="row" style="margin-top:8px"><button class="ghost" onclick="showPipes()">🧪 파이프라인 설계도 보기</button><span class="note">선택 유형의 라인별 처리 + 담당 API (하네스가 라인 순서대로 실행)</span></div>
     <div id="pipes"></div>
-    <div class="row" style="margin-top:12px">
+    <div class="row" style="margin-top:11px">
+      <span style="font-size:9.5pt;font-weight:700">⚡ 속도</span>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="0" checked onchange="onSpeed()"> 정밀(최고품질)</label>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="1" onchange="onSpeed()"> 빠른(라인 절반·2배↑)</label>
+      <span class="note" id="estimate"></span>
+    </div>
+    <div class="row" style="margin-top:10px">
       <button class="go" id="go" onclick="run()">🚀 고품질 출제</button>
       <button class="ghost" onclick="toggleAns()">정답·해설 보기</button>
       <button class="ghost noprint" onclick="window.print()">인쇄/PDF</button>
-      <span class="note">초미분화 직렬 처리 — 유형당 약 20~40초. 진행 로그·뉴런 점등을 보세요.</span>
     </div>
+    <div id="bar" style="display:none;height:8px;background:#e3eae7;border-radius:5px;margin-top:11px;overflow:hidden"><div id="barfill" style="height:100%;width:0;background:linear-gradient(90deg,#0f766e,#2dd4bf);transition:width .35s"></div></div>
     <div class="log" id="log"></div>
   </div>
 
@@ -183,6 +194,61 @@ function render(items){
   document.getElementById("out").innerHTML=h+'</div>';
 }
 function toggleAns(){ [].forEach.call(document.querySelectorAll(".ans"),function(a){a.classList.toggle("show");}); }
+</script>
+<script>
+/* ===== UX 보강: 속도·진행률·샘플·자동저장·복사/Word·개별 재생성 ===== */
+var LASTPASSAGE="", LASTITEMS=[];
+var SAMPLE="When our actions clash with our beliefs, we feel an uncomfortable tension that the mind is eager to remove. Instead of admitting we were wrong, we quietly reshape our beliefs until they fit what we have already done. For example, a person who pays a high price for a course they find dull may convince themselves that it is secretly valuable, simply because they have committed their money to it. However, this comfort comes at a cost: by changing our thoughts rather than our behavior, we drift further from the truth. Therefore, resolving inner conflict is often not a movement toward accuracy but a clever defense of our past choices.";
+function loadSample(){ document.getElementById("passage").value=SAMPLE; onPassage(); }
+function clearPassage(){ document.getElementById("passage").value=""; onPassage(); }
+function onPassage(){ var w=(document.getElementById("passage").value.match(/[A-Za-z]+/g)||[]).length; document.getElementById("charcount").textContent=w+" 단어"; updateEstimate(); saveState(); }
+function getFast(){ var r=document.querySelector('input[name=speed]:checked'); return !!(r&&r.value==="1"); }
+function onSpeed(){ updateEstimate(); saveState(); }
+function updateEstimate(){ var n=chosen().length, fast=getFast(), per=fast?20:45; var el=document.getElementById("estimate"); el.textContent=n?("⏱ 예상 약 "+Math.max(1,Math.ceil(n*per/60))+"분 ("+(fast?"빠른":"정밀")+"·"+n+"유형)"):""; }
+function saveState(){ try{ localStorage.setItem("ai_state",JSON.stringify({p:document.getElementById("passage").value,t:chosen(),f:getFast()})); }catch(e){} }
+function restoreState(){ try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); if(s.p) document.getElementById("passage").value=s.p; if(s.f){ var r=document.querySelector('input[name=speed][value="1"]'); if(r)r.checked=true; } if(s.t&&s.t.length){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=s.t.indexOf(i.value)>=0; i.parentNode.classList.toggle("on",i.checked); }); } }catch(e){} onPassage(); }
+
+function logln(m){ var L=document.getElementById("log"); L.style.display="block"; L.textContent+=(L.textContent?"\n":"")+m; L.scrollTop=L.scrollHeight; var mm=m.match(/\[(\d+)\/(\d+)\]/); if(mm){ document.getElementById("barfill").style.width=Math.round((+mm[1]-1)/(+mm[2])*100)+"%"; } pulseFromMsg(m); }
+
+function run(){
+  var passage=document.getElementById("passage").value.trim(), types=chosen();
+  if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
+  if(!types.length){ alert("출제 유형을 1개 이상 선택하세요."); return; }
+  LASTPASSAGE=passage; saveState();
+  var go=document.getElementById("go"); go.disabled=true; go.textContent="출제 중…";
+  document.getElementById("log").textContent=""; document.getElementById("out").innerHTML="";
+  document.getElementById("meet").innerHTML=""; document.getElementById("meetCard").style.display="none";
+  document.getElementById("bar").style.display="block"; document.getElementById("barfill").style.width="3%";
+  T.generateExam(passage, types, {onProgress:logln, fast:getFast()}).then(function(items){
+    LASTITEMS=items||[]; document.getElementById("barfill").style.width="100%"; render(items);
+    go.disabled=false; go.textContent="🚀 고품질 출제"; setTimeout(function(){ document.getElementById("bar").style.display="none"; },900);
+  }).catch(function(e){ logln("오류: "+e.message); go.disabled=false; go.textContent="🚀 고품질 출제"; });
+}
+function qHtml(q,i){
+  var h='<div class="q" id="q_'+i+'"><div class="h">'+(i+1)+'. '+esc(q.type)+' <span class="chip">AI</span> <button class="ghost noprint" style="font-size:8pt;padding:3px 9px;margin-left:6px" onclick="regenOne('+i+')">🔄 재생성</button></div><div class="ins">'+esc(q.instruction)+'</div>';
+  if(q.passage) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
+  if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
+  var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
+  h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(q.explanation)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+'</div></div>';
+  return h;
+}
+function render(items){
+  if(!items||!items.length){ document.getElementById("out").innerHTML='<div class="card">생성된 문항이 없습니다. 다시 시도해 주세요.</div>'; return; }
+  var h='<div class="card"><div class="row" style="align-items:center"><h2 style="margin:0;flex:1">📝 결과 — '+items.length+'문항</h2><button class="ghost noprint" onclick="copyResult()">📋 복사</button><button class="ghost noprint" onclick="downloadDoc()">⬇ Word 저장</button></div><div id="qlist">';
+  items.forEach(function(q,i){ h+=qHtml(q,i); });
+  document.getElementById("out").innerHTML=h+'</div></div>';
+}
+function regenOne(i){
+  var q=LASTITEMS[i]; if(!q||!LASTPASSAGE) return;
+  var el=document.getElementById("q_"+i); el.style.opacity=.4;
+  T.generateOne(LASTPASSAGE, q.type, {fast:getFast()}).then(function(nq){ if(nq){ LASTITEMS[i]=nq; el.outerHTML=qHtml(nq,i); } else el.style.opacity=1; }).catch(function(){ el.style.opacity=1; });
+}
+function plain(){ return LASTITEMS.map(function(q,i){ var s=(i+1)+". ["+q.type+"] "+q.instruction+"\n"; if(q.passage) s+=q.passage.replace(/<\/?u>/g,"")+"\n"; (q.choices||[]).forEach(function(c,j){ s+="  "+(CIRC[j]||(j+1))+" "+c+"\n"; }); s+="  [정답] "+(q.answer?(CIRC[q.answer-1]):"서술형")+" — "+q.explanation+"\n"; return s; }).join("\n"); }
+function copyResult(){ navigator.clipboard.writeText(plain()).then(function(){ alert("결과를 클립보드에 복사했습니다."); },function(){ alert("복사 실패 — 브라우저 권한을 확인하세요."); }); }
+function downloadDoc(){ var inner=document.getElementById("qlist").innerHTML.replace(/<button[\s\S]*?<\/button>/g,""); var html="<html><head><meta charset='utf-8'></head><body style=\"font-family:sans-serif\">"+inner+"</body></html>"; var blob=new Blob(["﻿",html],{type:"application/msword"}); var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="변형문제.doc"; a.click(); }
+
+[].forEach.call(document.querySelectorAll("#types input"),function(i){ i.addEventListener("change",function(){ updateEstimate(); saveState(); }); });
+restoreState(); updateEstimate();
 </script>
 </body>
 </html>

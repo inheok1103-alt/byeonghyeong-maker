@@ -192,7 +192,7 @@
       kind: { "주제": "영어 명사구", "제목": "영어 제목구", "요지": "한국어 한 문장" }[type] || "영어 명사구" };
   }
   // 추론형 파이프라인: 각 라인이 명시적 API에 연결됨
-  function inferenceSteps(passage, type, ctx) {
+  function inferenceSteps(passage, type, ctx, fast) {
     var kind = infMeta(type).kind;
     var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["글과 무관", "글에 없는 다른 주제로"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
     var steps = [
@@ -200,10 +200,15 @@
       { api: "llm", label: "핵심 논지 추출", run: async function (s) { var h = s.bg && s.bg.extract ? ("\n(참고 배경: " + s.bg.extract.slice(0, 160) + ")") : ""; return { main: await ask("다음 글의 핵심 논지를 영어 한 문장으로(답만)." + h + "\n\n" + passage, "핵심 한 문장. 답만.") }; } },
       { api: "llm", label: "정답 보기 작성", run: async function (s) { if (!s.main) throw new Error("no main"); return { answer: await ask("글 핵심: \"" + s.main + "\"\n이를 담은 " + type + " 정답을 " + kind + "로 간결히. 보기 텍스트만.") }; } }
     ];
-    roles.forEach(function (r, idx) {
-      steps.push({ api: "llm", label: "오답" + (idx + 1) + " (" + r[0] + ") 설계", run: async function (s) { if (!s.answer) throw new Error("no answer"); var d = await ask("정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n이 정답과 의미가 분명히 다른 '" + r[0] + "' 오답 1개를 " + kind + "로 만들되 " + r[1] + ", 정답 재진술 금지. 보기 텍스트만."); s._last = d; s.dis = (s.dis || []).concat(d ? [d] : []); return { dis: s.dis }; } });
-      steps.push({ api: "thesaurus", label: "오답" + (idx + 1) + " 동의어중복 검사", run: async function (s) { var d = s._last; if (d && ctx && synOverlap(s.answer, d, ctx)) { var d2 = await ask("정답 \"" + s.answer + "\"과 단어·의미가 겹치지 않는 '" + r[0] + "' 오답 1개를 " + kind + "로. 보기만."); if (d2) s.dis[s.dis.length - 1] = d2; } return { dis: s.dis }; } });
-    });
+    if (fast) {
+      steps.push({ api: "llm", label: "오답 4개 일괄 설계", run: async function (s) { if (!s.answer) throw new Error("no answer"); var j = await llmJSON([{ role: "system", content: "오답 설계 전문가. JSON 배열만." }, { role: "user", content: "정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n정답과 의미가 분명히 다른 " + kind + " 오답 4개를 각각 다른 방식(①부분적 ②정반대 ③무관 ④포괄)으로. 정답 재진술 금지. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 }); return { dis: (Array.isArray(j) ? j.map(clean1).filter(Boolean) : []).slice(0, 4) }; } });
+      steps.push({ api: "thesaurus", label: "오답 동의어중복 일괄검사", run: function (s) { return Promise.resolve({ dis: (s.dis || []).filter(function (d) { return !(d && ctx && synOverlap(s.answer, d, ctx)); }) }); } });
+    } else {
+      roles.forEach(function (r, idx) {
+        steps.push({ api: "llm", label: "오답" + (idx + 1) + " (" + r[0] + ") 설계", run: async function (s) { if (!s.answer) throw new Error("no answer"); var d = await ask("정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n이 정답과 의미가 분명히 다른 '" + r[0] + "' 오답 1개를 " + kind + "로 만들되 " + r[1] + ", 정답 재진술 금지. 보기 텍스트만."); s._last = d; s.dis = (s.dis || []).concat(d ? [d] : []); return { dis: s.dis }; } });
+        steps.push({ api: "thesaurus", label: "오답" + (idx + 1) + " 동의어중복 검사", run: async function (s) { var d = s._last; if (d && ctx && synOverlap(s.answer, d, ctx)) { var d2 = await ask("정답 \"" + s.answer + "\"과 단어·의미가 겹치지 않는 '" + r[0] + "' 오답 1개를 " + kind + "로. 보기만."); if (d2) s.dis[s.dis.length - 1] = d2; } return { dis: s.dis }; } });
+      });
+    }
     steps.push({ api: "grammar", label: "보기 어법 검수(LanguageTool)", run: async function (s) { var gi = []; try { gi = await grammar([s.answer].concat(s.dis || []).filter(function (c) { return /[A-Za-z]\s[A-Za-z]/.test(c); }).join("\n")); } catch (_) {} return { gi: gi }; } });
     steps.push({ api: "trans", label: "정답 한국어 교차검증(MyMemory)", run: async function (s) { var ko = ""; try { ko = await translate(s.answer, "en|ko"); } catch (_) {} return { ko: ko }; } });
     steps.push({ api: "core", label: "보기 배치·정답 확정", run: function (s) { var a = shuffleAnswer(s.answer, s.dis || []); return Promise.resolve({ choices: a.choices, answerIdx: a.answer }); } });
@@ -211,7 +216,7 @@
   }
   async function buildInference(passage, type, opts) {
     opts = opts || {}; var onP = opts.onProgress, ctx = opts.ctx || {};
-    var st = await runHarness(inferenceSteps(passage, type, ctx), { passage: passage, ctx: ctx, dis: [] },
+    var st = await runHarness(inferenceSteps(passage, type, ctx, opts.fast), { passage: passage, ctx: ctx, dis: [] },
       function (ev) { log(onP, "  ┃라인 " + ev.line + "/" + ev.total + " [" + ev.api + "] " + ev.label + "…"); });
     if (!st.answer || !st.choices) return null;
     var meta = infMeta(type);
@@ -310,12 +315,13 @@
     log(onP, "■ 1단계: 자료 수집반 가동(전 API)…");
     var ctx = await prepContext(passage, onP).catch(function () { return {}; });
     if (ctx.topic) log(onP, "   주제어=" + ctx.topic + (ctx.bg ? " · 위키 배경 확보" : "") + " · 반의어 " + Object.keys(ctx.ant || {}).length + "쌍");
-    var bopts = { onProgress: onP, ctx: ctx };
-    log(onP, "■ 2단계: 유형별 초미분화 출제…");
+    var bopts = { onProgress: onP, ctx: ctx, fast: opts.fast };
+    var maxTry = opts.fast ? 2 : 3;
+    log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…");
     for (var i = 0; i < types.length; i++) {
       var t = types[i], b = BUILDERS[t] || (function (tt) { return function (p, o) { return buildInference(p, tt, o); }; })(t), got = null;
       RUNHINT = "";
-      for (var attempt = 1; attempt <= 3 && !got; attempt++) {
+      for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
         log(onP, "[" + (i + 1) + "/" + types.length + "] " + t + (attempt > 1 ? " (개선 재시도 " + attempt + ")" : "") + " 출제 중…");
         try { var q = await b(passage, bopts); if (q && q.instruction) got = q; } catch (e) {}
         if (!got && attempt === 1) {
@@ -331,6 +337,14 @@
     }
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
+  }
+
+  // 단일 문항 재생성(개별 문항 🔄용)
+  async function generateOne(passage, type, opts) {
+    opts = opts || {};
+    var ctx = opts.ctx || await prepContext(passage).catch(function () { return {}; });
+    var b = BUILDERS[type] || function (p, o) { return buildInference(p, type, o); };
+    return b(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast });
   }
 
   async function transformPassage(passage, mode, opts) {
@@ -395,7 +409,7 @@
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
-    generateExam: generateExam, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
+    generateExam: generateExam, generateOne: generateOne, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
 })();
