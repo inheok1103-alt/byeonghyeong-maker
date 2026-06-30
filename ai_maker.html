@@ -88,6 +88,13 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
     <div id="meet"></div>
   </div>
 
+  <div class="card noprint" id="researchCard">
+    <h2>🔬 자체 연구·학습 로그 <span style="font-size:9pt;color:#888;font-weight:400">(관찰 전용 · 출제방식을 스스로 연구할 때마다 누적)</span>
+      <button class="ghost" style="font-size:8.5pt;padding:3px 9px;float:right" onclick="loadResearch()">🔄 새로고침</button></h2>
+    <div style="font-size:9pt;color:#5f6b66;margin-bottom:6px" id="rstat">불러오는 중…</div>
+    <div id="research" style="max-height:280px;overflow:auto"></div>
+  </div>
+
   <div id="out"></div>
 </div>
 
@@ -257,8 +264,35 @@ function buildTypeChips(){
 }
 var DBURL=new URLSearchParams(location.search).get("db")||"https://raw.githubusercontent.com/inheok1103-alt/byeonghyeong-maker/master/types.json";
 function refreshDB(){ var st=document.getElementById("dbstat"); if(st)st.textContent="유형 DB 불러오는 중…"; T.loadTypeDB(DBURL+(DBURL.indexOf("?")>=0?"&":"?")+"_t="+Date.now()).then(function(r){ if(r&&r.ok&&r.count){ buildTypeChips(); if(st)st.textContent="✓ 유형 DB "+r.count+"종 · "+new Date().toLocaleTimeString(); } else if(st) st.textContent="유형 DB: 내장 기본"; }); }
-fetch("config.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(c){ if(c&&c.logUrl){ T.configure({logUrl:c.logUrl}); var hu=c.hintsUrl||c.logUrl; T.loadSharedHints(hu+(hu.indexOf("?")>=0?"&":"?")+"hints=1&_t="+Date.now()); } }).catch(function(){});
-restoreState(); refreshDB();
+var FEEDURL="";
+fetch("config.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(c){ if(c&&c.logUrl){ FEEDURL=c.logUrl; T.configure({logUrl:c.logUrl}); var hu=c.hintsUrl||c.logUrl; T.loadSharedHints(hu+(hu.indexOf("?")>=0?"&":"?")+"hints=1&_t="+Date.now()); loadResearch(); } }).catch(function(){});
+
+/* ===== 🔬 자체 연구·학습 로그 (관찰 전용) ===== */
+var RLOG_URL=new URLSearchParams(location.search).get("rlog")||"https://raw.githubusercontent.com/inheok1103-alt/byeonghyeong-maker/master/research_log.json";
+function catColor(c){ return /서술형/.test(c)?"#1d6fa5":(/수능|객관/.test(c)?"#0f766e":(/회의|오류/.test(c)?"#b03a2e":"#b45309")); }
+function renderResearch(entries){
+  var R=document.getElementById("research"), S=document.getElementById("rstat");
+  if(!entries.length){ R.innerHTML='<div style="color:#999;font-size:9.3pt">아직 기록이 없습니다.</div>'; S.textContent=""; return; }
+  var h=""; entries.forEach(function(e){ var col=catColor(e.category||e.kind||"");
+    h+='<div style="border-left:3px solid '+col+';padding:5px 0 5px 10px;margin:7px 0;font-size:9.3pt">'+
+      '<span style="background:'+col+';color:#fff;border-radius:7px;padding:1px 7px;font-size:8pt">'+esc(e.category||e.kind||"")+'</span> '+
+      '<b>'+esc(e.topic||"")+'</b> <span style="color:#999;font-size:8pt">'+esc(e.date||"")+'</span>'+
+      (e.summary?('<div style="color:#566;margin-top:2px">'+esc(e.summary)+'</div>'):'')+
+      (e.rule?('<div style="color:#0f766e;font-size:8.6pt;margin-top:2px">규칙: '+esc(e.rule)+'…</div>'):'')+'</div>'; });
+  R.innerHTML=h; S.textContent="누적 "+entries.length+"건 · "+new Date().toLocaleTimeString()+" 갱신 (읽기 전용)";
+}
+function loadResearch(){
+  var S=document.getElementById("rstat"); S.textContent="불러오는 중…";
+  var jobs=[ fetch(RLOG_URL+"?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){return (d&&d.entries)||[];}).catch(function(){return [];}) ];
+  // 공유 GAS 피드(있으면) + 이번 세션 회의 병합
+  Promise.all(jobs).then(function(parts){
+    var entries=parts[0]||[];
+    var meets=(T.meetings&&T.meetings())||[];
+    meets.slice().reverse().forEach(function(m){ entries.unshift({date:"이번 세션",kind:"meeting",category:"오류 회의",topic:(m.type||"")+" 출제 개선",summary:(m.hint||"")}); });
+    renderResearch(entries);
+  });
+}
+restoreState(); refreshDB(); loadResearch();
 </script>
 </body>
 </html>
