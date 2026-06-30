@@ -1,0 +1,21 @@
+// === AI 제작기 오류·회의 기록용 Google Apps Script ===
+// 사용법:
+// 1) 구글 시트 새로 만들기 → 메뉴 [확장 프로그램] → [Apps Script]
+// 2) 아래 코드 전체 붙여넣기 → 저장
+// 3) 우상단 [배포] → [새 배포] → 유형: 웹 앱
+//    - 실행: 나 / 액세스 권한: "모든 사용자" → 배포 → 웹앱 URL 복사
+// 4) 제작기 주소 뒤에 ?log=<복사한URL> 을 붙여 접속하면 오류·회의가 시트에 자동 기록됩니다.
+//    예: https://inheok1103-alt.github.io/byeonghyeong-maker/ai_maker.html?log=https://script.google.com/macros/s/XXXX/exec
+
+function doPost(e) {
+  try {
+    var ss = SpreadsheetApp.getActiveSpreadsheet();
+    var sh = ss.getSheetByName('log') || ss.insertSheet('log');
+    if (sh.getLastRow() === 0) sh.appendRow(['시각','종류','유형','단계','상세','개선지시','회의']);
+    var d = JSON.parse(e.postData.contents);
+    sh.appendRow([new Date(), d.kind||'', d.type||'', d.t||'', d.detail||'', d.hint||'', JSON.stringify(d.discussion||'')]);
+    return ContentService.createTextOutput('ok');
+  } catch (err) {
+    return ContentService.createTextOutput('err: ' + err);
+  }
+}

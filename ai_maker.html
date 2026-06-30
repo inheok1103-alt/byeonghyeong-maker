@@ -111,7 +111,9 @@ function addMeeting(rec){
   if(rec.hint) h+='<div class="hint">→ 합의 개선지시: '+esc(rec.hint)+'</div>';
   h+='</div>'; document.getElementById("meet").insertAdjacentHTML("beforeend",h);
 }
-T.configure({ onMeeting:addMeeting, onError:function(e){ pulse("llm"); } });
+var LOGURL=new URLSearchParams(location.search).get("log")||"";
+T.configure({ logUrl:LOGURL, onMeeting:addMeeting, onError:function(e){ pulse("llm"); } });
+if(LOGURL){ var n=document.createElement("div"); n.className="note"; n.style.color="#0f766e"; n.textContent="✓ 구글 오류기록 연결됨 (회의·오류가 시트에 자동 기록)"; document.querySelector(".sub").after(n); }
 
 /* ===== 유형 칩 ===== */
 var TYPES=(T&&T.BEST_TYPES)||["어법","어휘","빈칸","주제","제목","함의","요약","내용불일치","서술형"];
