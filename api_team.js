@@ -175,33 +175,49 @@
     return englishWords(distractor).some(function (w) { return pool[w.toLowerCase()]; });
   }
 
-  // 추론형(주제/제목/요지) — 초미분화: 배경지식→논지→정답→역할별 오답 개별생성→Datamuse 중복검사→어법·번역
+  // ===== 하네스: 파이프라인(라인=API+동작)을 순차 실행하며 트레이스 기록 =====
+  async function runHarness(steps, state, onStep) {
+    var trace = [];
+    for (var i = 0; i < steps.length; i++) {
+      var s = steps[i], t0 = Date.now();
+      if (onStep) onStep({ line: i + 1, total: steps.length, api: s.api, label: s.label });
+      var patch = null; try { patch = await s.run(state); } catch (e) { patch = { __err: String((e && e.message) || e) }; }
+      if (patch && !patch.__err) Object.assign(state, patch);
+      trace.push({ line: i + 1, api: s.api, label: s.label, ms: Date.now() - t0, ok: !(patch && patch.__err) });
+    }
+    state._trace = trace; return state;
+  }
+  function infMeta(type) {
+    return { instr: { "주제": "다음 글의 주제로 가장 적절한 것은?", "제목": "다음 글의 제목으로 가장 적절한 것은?", "요지": "다음 글의 요지로 가장 적절한 것은?" }[type] || "다음 글의 주제로 가장 적절한 것은?",
+      kind: { "주제": "영어 명사구", "제목": "영어 제목구", "요지": "한국어 한 문장" }[type] || "영어 명사구" };
+  }
+  // 추론형 파이프라인: 각 라인이 명시적 API에 연결됨
+  function inferenceSteps(passage, type, ctx) {
+    var kind = infMeta(type).kind;
+    var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["글과 무관", "글에 없는 다른 주제로"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
+    var steps = [
+      { api: "wiki", label: "배경지식 조회", run: function (s) { return Promise.resolve({ bg: (ctx && ctx.bg) || null }); } },
+      { api: "llm", label: "핵심 논지 추출", run: async function (s) { var h = s.bg && s.bg.extract ? ("\n(참고 배경: " + s.bg.extract.slice(0, 160) + ")") : ""; return { main: await ask("다음 글의 핵심 논지를 영어 한 문장으로(답만)." + h + "\n\n" + passage, "핵심 한 문장. 답만.") }; } },
+      { api: "llm", label: "정답 보기 작성", run: async function (s) { if (!s.main) throw new Error("no main"); return { answer: await ask("글 핵심: \"" + s.main + "\"\n이를 담은 " + type + " 정답을 " + kind + "로 간결히. 보기 텍스트만.") }; } }
+    ];
+    roles.forEach(function (r, idx) {
+      steps.push({ api: "llm", label: "오답" + (idx + 1) + " (" + r[0] + ") 설계", run: async function (s) { if (!s.answer) throw new Error("no answer"); var d = await ask("정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n이 정답과 의미가 분명히 다른 '" + r[0] + "' 오답 1개를 " + kind + "로 만들되 " + r[1] + ", 정답 재진술 금지. 보기 텍스트만."); s._last = d; s.dis = (s.dis || []).concat(d ? [d] : []); return { dis: s.dis }; } });
+      steps.push({ api: "thesaurus", label: "오답" + (idx + 1) + " 동의어중복 검사", run: async function (s) { var d = s._last; if (d && ctx && synOverlap(s.answer, d, ctx)) { var d2 = await ask("정답 \"" + s.answer + "\"과 단어·의미가 겹치지 않는 '" + r[0] + "' 오답 1개를 " + kind + "로. 보기만."); if (d2) s.dis[s.dis.length - 1] = d2; } return { dis: s.dis }; } });
+    });
+    steps.push({ api: "grammar", label: "보기 어법 검수(LanguageTool)", run: async function (s) { var gi = []; try { gi = await grammar([s.answer].concat(s.dis || []).filter(function (c) { return /[A-Za-z]\s[A-Za-z]/.test(c); }).join("\n")); } catch (_) {} return { gi: gi }; } });
+    steps.push({ api: "trans", label: "정답 한국어 교차검증(MyMemory)", run: async function (s) { var ko = ""; try { ko = await translate(s.answer, "en|ko"); } catch (_) {} return { ko: ko }; } });
+    steps.push({ api: "core", label: "보기 배치·정답 확정", run: function (s) { var a = shuffleAnswer(s.answer, s.dis || []); return Promise.resolve({ choices: a.choices, answerIdx: a.answer }); } });
+    return steps;
+  }
   async function buildInference(passage, type, opts) {
     opts = opts || {}; var onP = opts.onProgress, ctx = opts.ctx || {};
-    var instr = { "주제": "다음 글의 주제로 가장 적절한 것은?", "제목": "다음 글의 제목으로 가장 적절한 것은?", "요지": "다음 글의 요지로 가장 적절한 것은?" };
-    var kind = { "주제": "영어 명사구", "제목": "영어 제목구", "요지": "한국어 한 문장" };
-    var bgHint = ctx.bg && ctx.bg.extract ? ("\n(참고 배경지식: " + ctx.bg.extract.slice(0, 180) + ")") : "";
-    log(onP, "  · 핵심 논지 추출(LLM+위키 컨텍스트)…");
-    var main = await ask("다음 글의 핵심 논지를 영어 한 문장으로(답만)." + bgHint + "\n\n" + passage, "핵심 한 문장. 답만.");
-    if (!main) return null;
-    log(onP, "  · 정답 보기 작성…");
-    var answer = await ask("글의 핵심 논지: \"" + main + "\"\n이를 담은 " + type + " 정답을 " + kind[type] + "로 간결히. 보기 텍스트만.");
-    if (!answer) return null;
-    var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["글과 무관", "글에 없는 다른 주제로"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
-    var dis = [];
-    for (var r = 0; r < roles.length; r++) {
-      log(onP, "  · 오답 " + (r + 1) + "/4 (" + roles[r][0] + ") 개별 설계…");
-      var d = await ask("정답: \"" + answer + "\"\n글 핵심: " + main + "\n이 정답과 의미가 분명히 다른 '" + roles[r][0] + "' 오답 1개를 " + kind[type] + "로 만들되 " + roles[r][1] + ", 정답을 재진술하지 마라. 보기 텍스트만.");
-      if (d && synOverlap(answer, d, ctx)) { log(onP, "    · Datamuse 동의어 중복 → 재설계…"); var d2 = await ask("정답 \"" + answer + "\"과 단어·의미가 겹치지 않는 '" + roles[r][0] + "' 오답 1개를 " + kind[type] + "로. 보기만."); if (d2) d = d2; }
-      if (d) dis.push(d);
-    }
-    var a = shuffleAnswer(answer, dis);
-    log(onP, "  · 어법 검수(LanguageTool) + 한국어 교차검증(MyMemory)…");
-    var gi = []; try { gi = await grammar([answer].concat(dis).filter(function (c) { return /[A-Za-z]\s[A-Za-z]/.test(c); }).join("\n")); } catch (_) {}
-    var ko = ""; try { ko = await translate(answer, "en|ko"); } catch (_) {}
-    return { type: type, instruction: instr[type], passage: "", choices: a.choices, answer: a.answer,
-      explanation: "글의 핵심 논지는 '" + main + "'이며 정답" + (ko ? (" (" + ko + ")") : "") + "이 이를 정확히 반영한다.",
-      _audit: gi.length ? ("어법 의심 " + gi.length + "건") : "어법·중복 검증 통과" };
+    var st = await runHarness(inferenceSteps(passage, type, ctx), { passage: passage, ctx: ctx, dis: [] },
+      function (ev) { log(onP, "  ┃라인 " + ev.line + "/" + ev.total + " [" + ev.api + "] " + ev.label + "…"); });
+    if (!st.answer || !st.choices) return null;
+    var meta = infMeta(type);
+    return { type: type, instruction: meta.instr, passage: "", choices: st.choices, answer: st.answerIdx,
+      explanation: "글의 핵심 논지는 '" + st.main + "'이며 정답" + (st.ko ? (" (" + st.ko + ")") : "") + "이 이를 반영한다.",
+      _audit: (st.gi && st.gi.length) ? ("어법 의심 " + st.gi.length + "건") : "검증 통과", _trace: st._trace };
   }
   // 빈칸: ① 핵심어구 비우기 → ② 정답 → ③ 역할별 오답
   async function buildBlank(passage) {
@@ -360,8 +376,23 @@
     return ROSTER.map(function (m) { return Object.assign({}, m, res[m.key]); });
   }
 
+  // ===== 명시적 파이프라인 정의(라인=담당 API). UI 표시·문서용 =====
+  var PIPE_STATIC = {
+    "어휘": [{ api: "core", label: "핵심어 5개 추출" }, { api: "thesaurus", label: "반의어 수집(Datamuse)" }, { api: "llm", label: "ⓐ~ⓔ 밑줄+1곳 반의어 교체" }, { api: "grammar", label: "교체 적절성 검증" }, { api: "core", label: "정답 확정" }],
+    "어법": [{ api: "llm", label: "ⓐ~ⓔ 밑줄+1곳 어법오류 주입" }, { api: "grammar", label: "LanguageTool 오류 검증" }, { api: "core", label: "정답 확정" }],
+    "빈칸": [{ api: "llm", label: "핵심어구 빈칸화" }, { api: "llm", label: "정답 어구 확정" }, { api: "llm", label: "오답①~④ 역할별 설계" }, { api: "thesaurus", label: "동의어중복 검사" }, { api: "core", label: "보기 배치" }],
+    "함의": [{ api: "llm", label: "밑줄 구절+함의 도출" }, { api: "llm", label: "오답①~④ 설계" }, { api: "thesaurus", label: "중복 검사" }, { api: "core", label: "보기 배치" }],
+    "요약": [{ api: "llm", label: "(A)(B) 빈칸 요약문" }, { api: "llm", label: "정답 쌍 확정" }, { api: "llm", label: "오답 쌍 4개" }, { api: "core", label: "보기 배치" }],
+    "내용불일치": [{ api: "llm", label: "진술 5개(1개 모순)" }, { api: "core", label: "정답 확정" }],
+    "서술형": [{ api: "llm", label: "서술형 발문 작성" }, { api: "llm", label: "모범답안 작성" }]
+  };
+  function pipelineOf(type) {
+    if (["주제", "제목", "요지"].indexOf(type) >= 0) return inferenceSteps("", type, {}).map(function (s) { return { api: s.api, label: s.label }; });
+    return PIPE_STATIC[type] || [];
+  }
+
   window.APITEAM = {
-    roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, configure: configure, provider: provider, convene: convene,
+    roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     generateExam: generateExam, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,

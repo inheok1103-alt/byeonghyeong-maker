@@ -61,6 +61,8 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
     <div id="suggest"></div>
     <h2 style="margin-top:12px">② 출제 유형 <span style="font-size:9pt;color:#888;font-weight:400">(분석하면 추천 유형이 자동 선택됩니다)</span></h2>
     <div class="types" id="types"></div>
+    <div class="row" style="margin-top:8px"><button class="ghost" onclick="showPipes()">🧪 파이프라인 설계도 보기</button><span class="note">선택 유형의 라인별 처리 + 담당 API (하네스가 라인 순서대로 실행)</span></div>
+    <div id="pipes"></div>
     <div class="row" style="margin-top:12px">
       <button class="go" id="go" onclick="run()">🚀 고품질 출제</button>
       <button class="ghost" onclick="toggleAns()">정답·해설 보기</button>
@@ -125,6 +127,18 @@ TYPES.forEach(function(t){ var l=document.createElement("label"); l.className=DE
   l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); }; tdiv.appendChild(l); });
 function chosen(){ return [].slice.call(document.querySelectorAll("#types input:checked")).map(function(i){return i.value;}); }
 
+var APICOL={ llm:"#2dd4bf", grammar:"#ff8fa3", thesaurus:"#ffd166", dict:"#7ee8c0", wikt:"#b794f6", wiki:"#72a7ff", trans:"#f6ad55", image:"#cbd5e1", core:"#94a3b8" };
+function apiBadge(a){ return '<span style="background:'+(APICOL[a]||"#94a3b8")+';color:#0d1b17;border-radius:6px;padding:1px 6px;font-size:8pt;font-weight:700">'+esc(a)+'</span>'; }
+function showPipes(){
+  var ts=chosen(); if(!ts.length){ alert("유형을 1개 이상 선택하세요."); return; }
+  var h=''; ts.forEach(function(t){
+    var p=T.pipeline(t)||[];
+    h+='<div style="background:#fff;border:1px solid #e0e6e3;border-radius:9px;padding:9px 12px;margin:8px 0"><b style="color:#0f766e">'+esc(t)+' 파이프라인</b> <span style="color:#888;font-size:8.5pt">('+p.length+'라인 · 라인마다 담당 API)</span>';
+    p.forEach(function(s,i){ h+='<div style="font-size:9.3pt;margin:2px 0;padding-left:6px;border-left:2px solid #eef0ef">라인 '+(i+1)+' &nbsp;'+apiBadge(s.api)+' &nbsp;'+esc(s.label)+'</div>'; });
+    h+='</div>';
+  });
+  document.getElementById("pipes").innerHTML=h;
+}
 function badge(f){ var c=f==="상"?"#0f766e":(f==="중"?"#b45309":"#999"); return '<span style="background:'+c+';color:#fff;border-radius:8px;padding:1px 8px;font-size:8.5pt;font-weight:700">'+esc(f||"?")+'</span>'; }
 function analyze(){
   var passage=document.getElementById("passage").value.trim();
