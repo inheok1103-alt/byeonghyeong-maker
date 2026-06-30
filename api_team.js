@@ -267,6 +267,27 @@
     "어휘": buildVocab, "어법": buildGrammar, "서술형": buildEssay
   };
 
+  // ===== 지문 분석 → 예상 출제 유형 판단(적합도+근거) =====
+  async function suggestTypes(passage, opts) {
+    opts = opts || {}; var onP = opts.onProgress;
+    log(onP, "· 지문 신호 분석(길이·구문)…");
+    var words = (passage.match(/[A-Za-z]+/g) || []).length;
+    var sents = (passage.match(/[.!?]/g) || []).length;
+    var hasQuote = /["'“”]/.test(passage), hasConn = /\b(however|therefore|thus|moreover|in contrast|for example|on the other hand)\b/i.test(passage);
+    var stat = "단어 " + words + "개, 문장 약 " + sents + "개" + (hasConn ? ", 연결사 풍부" : "") + (hasQuote ? ", 인용/대화 포함" : "");
+    log(onP, "· 출제 유형 판단(LLM)…");
+    var j = await llmJSON([
+      { role: "system", content: "한국 수능·고교 내신 영어 출제 분석가. 주어진 지문의 논지 구조·추상도·서사성·어휘 수준을 보고 어떤 유형이 잘 출제될지 판단한다. JSON 배열만." },
+      { role: "user", content: "다음 지문(" + stat + ")을 분석해, 아래 유형 중 출제 가능성이 높은 순으로 평가하라: " + BEST_TYPES.join(", ") +
+        ".\n각 항목 {\"type\":\"유형\",\"fit\":\"상|중|하\",\"reason\":\"한 줄 근거(한국어)\"}. 가능성 높은 순으로 6~8개. JSON 배열만.\n\n[지문]\n" + passage }
+    ], { temperature: 0.4, timeout: 60000 });
+    var arr = Array.isArray(j) ? j : (j && j.types) || [];
+    arr = arr.filter(function (x) { return x && x.type; });
+    var order = { "상": 0, "중": 1, "하": 2 };
+    arr.sort(function (a, b) { return (order[a.fit] == null ? 3 : order[a.fit]) - (order[b.fit] == null ? 3 : order[b.fit]); });
+    return { stat: stat, types: arr };
+  }
+
   // 메인: ① 모든 API로 컨텍스트 사전수집 → ② 유형마다 초미분화 직렬 생성(유형별 3회 재시도)
   async function generateExam(passage, types, opts) {
     opts = opts || {}; var onP = opts.onProgress, out = [];
@@ -343,7 +364,7 @@
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, configure: configure, provider: provider, convene: convene,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
-    generateExam: generateExam, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
+    generateExam: generateExam, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
 })();

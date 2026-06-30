@@ -57,7 +57,9 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
   <div class="card noprint">
     <h2>① 영어 지문 붙여넣기</h2>
     <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요..."></textarea>
-    <h2 style="margin-top:12px">② 출제 유형 (메시가 가장 잘하는 유형)</h2>
+    <div class="row" style="margin-top:8px"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
+    <div id="suggest"></div>
+    <h2 style="margin-top:12px">② 출제 유형 <span style="font-size:9pt;color:#888;font-weight:400">(분석하면 추천 유형이 자동 선택됩니다)</span></h2>
     <div class="types" id="types"></div>
     <div class="row" style="margin-top:12px">
       <button class="go" id="go" onclick="run()">🚀 고품질 출제</button>
@@ -122,6 +124,22 @@ var tdiv=document.getElementById("types");
 TYPES.forEach(function(t){ var l=document.createElement("label"); l.className=DEF[t]?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(DEF[t]?" checked":"")+'>'+t;
   l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); }; tdiv.appendChild(l); });
 function chosen(){ return [].slice.call(document.querySelectorAll("#types input:checked")).map(function(i){return i.value;}); }
+
+function badge(f){ var c=f==="상"?"#0f766e":(f==="중"?"#b45309":"#999"); return '<span style="background:'+c+';color:#fff;border-radius:8px;padding:1px 8px;font-size:8.5pt;font-weight:700">'+esc(f||"?")+'</span>'; }
+function analyze(){
+  var passage=document.getElementById("passage").value.trim();
+  if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
+  var b=document.getElementById("anbtn"); b.disabled=true; b.textContent="분석 중…"; document.getElementById("anote").textContent="";
+  T.suggestTypes(passage).then(function(r){
+    document.getElementById("anote").textContent=r.stat||"";
+    var h='<div style="background:#f4f9f7;border:1px solid #d6e6e0;border-radius:9px;padding:10px 13px;margin:8px 0;font-size:9.6pt"><b style="color:#0f766e">📊 예상 출제 유형</b> <span style="color:#888">(상·중은 자동 선택)</span>';
+    (r.types||[]).forEach(function(x){ h+='<div style="margin:4px 0">'+badge(x.fit)+' <b>'+esc(x.type)+'</b> — '+esc(x.reason)+'</div>'; });
+    h+='</div>'; document.getElementById("suggest").innerHTML=h;
+    var rec={}; (r.types||[]).forEach(function(x){ if(x.fit==="상"||x.fit==="중") rec[x.type]=1; });
+    [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=!!rec[i.value]; i.parentNode.classList.toggle("on",i.checked); });
+    b.disabled=false; b.textContent="🔍 예상 출제 유형 분석";
+  }).catch(function(e){ document.getElementById("anote").textContent="분석 오류: "+e.message; b.disabled=false; b.textContent="🔍 예상 출제 유형 분석"; });
+}
 
 document.getElementById("mesh").onclick=function(){ T.healthCheck().then(function(l){ l.forEach(function(m){ if(m.ok) pulse(m.key); else { var g=document.getElementById("nu_"+m.key); if(g) g.querySelector("circle").setAttribute("fill","#555"); } }); }); };
 
