@@ -54,16 +54,19 @@
     } finally { to.done(); }
   }
   async function llmWithRetry(messages, opts) {
-    for (var i = 0; i < 3; i++) { var s = await llmRaw(messages, opts).catch(function () { return ""; }); if (s && s.trim()) return s; await delay(900 * (i + 1)); }
+    for (var i = 0; i < 4; i++) { var s = await llmRaw(messages, opts).catch(function () { return ""; }); if (s && s.trim()) return s; await delay(1200 * (i + 1)); }
     return "";
   }
   var _llmQ = Promise.resolve();
   function llm(messages, opts) {
+    opts = opts || {};
     var sysadd = "";
-    if (TYPERULE) sysadd += "\n[이 유형의 수능 출제 규칙 — 반드시 준수] " + TYPERULE;
-    if (LEVELRULE) sysadd += "\n" + LEVELRULE;
-    var extra = [STANDING, RUNHINT].filter(Boolean).join(" / ");
-    if (extra) sysadd += "\n[누적·회의 개선지침] " + extra;
+    if (!opts.noRule) {
+      if (TYPERULE) sysadd += "\n[이 유형의 수능 출제 규칙 — 반드시 준수] " + TYPERULE;
+      if (LEVELRULE) sysadd += "\n" + LEVELRULE;
+      var extra = [STANDING, RUNHINT].filter(Boolean).join(" / ");
+      if (extra) sysadd += "\n[누적·회의 개선지침] " + extra;
+    }
     if (sysadd) {
       var hasSys = messages.some(function (m) { return m.role === "system"; });
       messages = hasSys ? messages.map(function (m) { return m.role === "system" ? { role: "system", content: m.content + sysadd } : m; })
@@ -344,20 +347,64 @@
   }
   // 서술형
   function essayResult(type, instruction, answer) { return { type: type, instruction: instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (answer || "") }; }
+  // 서술형 파싱: [발문]…[정답] 구획(따옴표·목록·여러 줄에 안 깨짐) → 발문:/정답: 라벨 → JSON 순으로 견고하게
+  function parseEssayText(raw) {
+    raw = String(raw || "").replace(/```[a-z]*\n?/gi, "").trim();
+    var m = raw.match(/\[\s*발문\s*\]\s*([\s\S]*?)\s*\[\s*정답\s*\]\s*([\s\S]*)$/);
+    if (m && m[1].trim()) return { instruction: m[1].trim(), answer: (m[2] || "").trim() };
+    var im = (raw.match(/발문\s*[:：]\s*([\s\S]*?)(?:\n\s*정답\s*[:：])/) || [])[1];
+    var am = (raw.match(/정답\s*[:：]\s*([\s\S]*)$/) || [])[1];
+    if (im && im.trim()) return { instruction: im.trim(), answer: (am || "").trim() };
+    return null;
+  }
   async function buildEssay(passage, opts, type) {
     type = type || "서술형";
-    var sys = "고교 내신 영어 서술형 출제자. 주입된 출제 규칙을 반드시 따른다. 반드시 '유효한 JSON 한 개'만 출력하고, JSON 문자열 값 안에서는 큰따옴표 대신 작은따옴표(')만 쓴다.";
-    var user = "다음 지문으로 '" + type + "' 유형의 내신 서술형 1문항을 만들어라. 발문에 제시문(밑줄 문장/조건/주어진 단어 등)을 포함하라. JSON: {\"instruction\":\"한국어 발문(내부 인용은 작은따옴표)\",\"answer\":\"모범 답안\"}. JSON만.\n\n[지문]\n" + passage;
-    for (var i = 0; i < 3; i++) {
-      var o = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { temperature: i ? 0.8 : 0.5, timeout: 60000 });
-      if (o && o.instruction) return essayResult(type, o.instruction, o.answer);
+    // 무거운 규칙을 system에 주입하면 소형모델이 빈 응답을 내므로, 규칙은 user에 짧게만 넣고 noRule로 호출
+    var ess = (TYPERULE || "").replace(/\s+/g, " ").trim().slice(0, 130);
+    var sys = "너는 고교 내신 영어 서술형 출제자다. 출력은 아래 두 구획 형식만 쓴다(JSON·마크다운·여분 설명 금지).";
+    var fmt = "정확히 이 형식만 출력:\n[발문]\n(제시문·조건·주어진 단어/어구를 포함한 한국어 발문, 여러 줄 가능)\n[정답]\n(모범답안 — 영작형은 영어 문장, 해석형은 우리말)";
+    for (var i = 0; i < 4; i++) {
+      var hint = (i < 2 && ess) ? ("\n(출제 지침 요약: " + ess + ")") : ""; // 1~2차만 지침, 이후 무지침으로 출제 보장
+      var user = "다음 지문으로 '" + type + "' 유형의 내신 서술형 1문항을 만들어라." + hint + "\n" + fmt + "\n\n[지문]\n" + passage;
+      var raw = await llm([{ role: "system", content: sys }, { role: "user", content: user }], { noRule: true, temperature: i ? 0.85 : 0.55, timeout: 60000 });
+      var p = parseEssayText(raw);
+      if (p) return essayResult(type, p.instruction, p.answer);
     }
-    // 폴백: 평문 두 줄 파싱(공격적)
-    var raw = await llm([{ role: "system", content: "고교 영어 서술형 출제자. 주입된 규칙을 따른다." }, { role: "user", content: "다음 지문으로 '" + type + "' 서술형 1문항.\n정확히 아래 두 줄 형식으로만:\n발문: <한국어 발문(제시문 포함)>\n정답: <모범답안>\n\n[지문]\n" + passage }], { temperature: 0.6, timeout: 60000 });
-    var im = (String(raw).match(/발문\s*[:：]\s*([\s\S]*?)(?:\n+\s*정답|$)/) || [])[1];
-    var am = (String(raw).match(/정답\s*[:：]\s*([\s\S]*)$/) || [])[1];
-    if (im && im.trim()) return essayResult(type, im.trim(), (am || "").trim());
+    // 최후 폴백: JSON 강제(무규칙)
+    var o = await llmJSON([{ role: "system", content: "고교 영어 서술형 출제자. 유효한 JSON 한 개만, 문자열 값 안에서는 큰따옴표 대신 작은따옴표(')." }, { role: "user", content: "다음 지문으로 '" + type + "' 서술형 1문항. JSON: {\"instruction\":\"한국어 발문\",\"answer\":\"모범답안\"}. JSON만.\n\n[지문]\n" + passage }], { noRule: true, temperature: 0.7, timeout: 60000 });
+    if (o && o.instruction) return essayResult(type, o.instruction, o.answer);
     return null;
+  }
+  // ===== 배열영작: LLM(정답문장) → MyMemory(번역) → 코드(셔플) → LanguageTool(검증) 다중 API 협업 =====
+  async function buildArrange(passage) {
+    var sent = await ask("다음 글의 핵심을 담은, 어법상 완전한 영어 문장 하나(8~14단어). 문장만 출력.\n\n" + passage, "영어 문장 하나만. 번호·따옴표·설명 금지.", { noRule: true, temperature: 0.5 });
+    sent = String(sent || "").replace(/^["'·\-\s]+|["'\s]+$/g, "").split("\n")[0].trim();
+    var words = sent.replace(/[.?!]+$/, "").split(/\s+/).filter(Boolean);
+    if (words.length < 4 || words.length > 18) return null;
+    var ko = await translate(sent.replace(/[.?!]+$/, ""), "en|ko").catch(function () { return ""; });
+    var sh = words.slice();
+    for (var i = sh.length - 1; i > 0; i--) { var j = rint(i + 1), t = sh[i]; sh[i] = sh[j]; sh[j] = t; }
+    if (sh.join(" ") === words.join(" ") && words.length > 1) { var a = sh[0]; sh[0] = sh[1]; sh[1] = a; }
+    var gi = []; try { gi = await grammar(sent); } catch (_) {}
+    var instr = "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: " + (ko || "(번역 생략)") + "\n주어진 단어: ( " + sh.join(" / ") + " )";
+    return { type: "배열영작", instruction: instr, passage: "", choices: [], answer: 0,
+      explanation: "[모범답안] " + sent.replace(/[.?!]*$/, "."),
+      _audit: gi.length ? ("어법 의심 " + gi.length + "건") : "어법 검증 통과",
+      _trace: [{ line: 1, api: "llm", label: "정답문장 생성", ok: !!sent }, { line: 2, api: "trans", label: "MyMemory 번역", ok: !!ko }, { line: 3, api: "code", label: "단어 셔플", ok: true }, { line: 4, api: "grammar", label: "LanguageTool 검증", ok: true }] };
+  }
+  // ===== 조건영작: LLM(정답문장) → 코드(핵심어 추출) → MyMemory(번역) → 코드(조건박스) 다중 API 협업 =====
+  async function buildConditional(passage) {
+    var sent = await ask("다음 글의 핵심을 담은 어법상 완전한 영어 문장 하나(7~14단어). 문장만 출력.\n\n" + passage, "영어 문장 하나만. 번호·따옴표·설명 금지.", { noRule: true, temperature: 0.5 });
+    sent = String(sent || "").replace(/^["'·\-\s]+|["'\s]+$/g, "").split("\n")[0].trim();
+    var words = sent.replace(/[.?!]+$/, "").split(/\s+/).filter(Boolean);
+    if (words.length < 4) return null;
+    var cws = contentWords(sent);
+    var key = cws[0] || (words.filter(function (w) { return w.length >= 4; })[0]) || words[0];
+    var ko = await translate(sent.replace(/[.?!]+$/, ""), "en|ko").catch(function () { return ""; });
+    var instr = "다음 우리말과 일치하도록 주어진 단어를 활용하여 영작하시오.\n〈조건〉 필요시 어형을 바꿀 수 있고, 다른 단어를 추가할 수 있음. 한 문장으로 쓸 것.\n우리말: " + (ko || "(번역 생략)") + "\n주어진 단어: ( " + key + " )";
+    return { type: "조건영작", instruction: instr, passage: "", choices: [], answer: 0,
+      explanation: "[모범답안] " + sent.replace(/[.?!]*$/, "."),
+      _trace: [{ line: 1, api: "llm", label: "정답문장 생성", ok: !!sent }, { line: 2, api: "code", label: "핵심어 추출", ok: !!key }, { line: 3, api: "trans", label: "MyMemory 번역", ok: !!ko }, { line: 4, api: "code", label: "조건박스 조립", ok: true }] };
   }
 
   var BUILDERS = {
@@ -377,6 +424,8 @@
     factcheck1: function (p, o) { return buildFactCheck(p, true, o); }, essay: function (p, o, t) { return buildEssay(p, o, t); }
   };
   function builderFor(t) {
+    if (t === "배열영작") return function (p, o) { return buildArrange(p, o); };
+    if (t === "조건영작") return function (p, o) { return buildConditional(p, o); };
     var hint = TYPE_BUILDER_HINT[t];
     if (hint && BUILDER_BY_KEY[hint]) return function (p, o) { return BUILDER_BY_KEY[hint](p, o, t); };
     return BUILDERS[t] || function (p, o) { return buildInference(p, t, o); };
@@ -435,7 +484,7 @@
       RUNHINT = ""; TYPERULE = TYPE_GUIDE[t] || ""; setLevelRule(t, opts.level);
       for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
         log(onP, "[" + (i + 1) + "/" + types.length + "] " + t + (attempt > 1 ? " (개선 재시도 " + attempt + ")" : "") + " 출제 중…");
-        try { var q = await b(passage, bopts); if (q && q.instruction) got = q; } catch (e) {}
+        try { var q = await b(passage, bopts, t); if (q && q.instruction) got = q; } catch (e) {}
         if (!got && attempt === 1) {
           record("출제실패", t, "1차 시도 실패");
           log(onP, "   ⚑ API 회의 소집(" + t + ") — 오류 토론·개선…");
@@ -456,7 +505,7 @@
     opts = opts || {};
     var ctx = opts.ctx || await prepContext(passage).catch(function () { return {}; });
     TYPERULE = TYPE_GUIDE[type] || ""; setLevelRule(type, opts.level);
-    var q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast });
+    var q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type);
     TYPERULE = ""; LEVELRULE = "";
     if (q && TYPE_INSTR[type]) { if (TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type]; }
     if (q) q.level = opts.level || "";
