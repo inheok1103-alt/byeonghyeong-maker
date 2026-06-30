@@ -189,6 +189,21 @@
     return englishWords(distractor).some(function (w) { return pool[w.toLowerCase()]; });
   }
 
+  // ===== 선지 제작 팀: 5개 선지를 최종 검수·정리(형태통일·정답유일·어법·어구화) =====
+  async function reviewOptions(answer, dis, ctx) {
+    ctx = ctx || {};
+    var sys = "너는 대한민국 수능 영어 '선지(보기) 검수관'이다. 5개 선택지를 최종 점검·정리한다: ①정답은 글을 정확히 반영하는 '단 하나' ②오답 4개는 서로 및 정답과 의미가 겹치지 않게, '부분일치/정반대/글과무관/과장·일반화' 등 서로 다른 방식으로 분명히 틀리되 매력적으로(본문 단어 일부 재활용) ③5개의 길이·문법 형태를 서로 통일 ④어법 오류 수정 ⑤빈칸/요약형이면 완성 문장이 아니라 끼워지는 '어구/절'로 ⑥정답은 본문 표현을 그대로 베끼지 말고 패러프레이즈. JSON만.";
+    var user = "유형: " + (ctx.type || "") + "\n정답 선지: \"" + answer + "\"\n오답 초안: " + JSON.stringify(dis || []) + (ctx.main ? ("\n글 핵심: " + ctx.main) : "") + "\n위 기준대로 5개 선지를 다듬어 JSON으로: {\"choices\":[\"5개 문자열\"],\"answer\":정답의 1~5 위치(정수)}. JSON만.";
+    var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { temperature: 0.4, timeout: 60000 });
+    if (r && Array.isArray(r.choices) && r.choices.length >= 4) {
+      var ch = r.choices.map(clean1).filter(Boolean).slice(0, 5);
+      while (ch.length < 5) ch.push("(보기)");
+      var ai = parseInt(r.answer, 10); if (!(ai >= 1 && ai <= 5)) ai = 1;
+      return { choices: ch, answer: ai };
+    }
+    return shuffleAnswer(answer, dis || []);
+  }
+
   // ===== 하네스: 파이프라인(라인=API+동작)을 순차 실행하며 트레이스 기록 =====
   async function runHarness(steps, state, onStep) {
     var trace = [];
@@ -225,7 +240,7 @@
     }
     steps.push({ api: "grammar", label: "보기 어법 검수(LanguageTool)", run: async function (s) { var gi = []; try { gi = await grammar([s.answer].concat(s.dis || []).filter(function (c) { return /[A-Za-z]\s[A-Za-z]/.test(c); }).join("\n")); } catch (_) {} return { gi: gi }; } });
     steps.push({ api: "trans", label: "정답 한국어 교차검증(MyMemory)", run: async function (s) { var ko = ""; try { ko = await translate(s.answer, "en|ko"); } catch (_) {} return { ko: ko }; } });
-    steps.push({ api: "core", label: "보기 배치·정답 확정", run: function (s) { var a = shuffleAnswer(s.answer, s.dis || []); return Promise.resolve({ choices: a.choices, answerIdx: a.answer }); } });
+    steps.push({ api: "team", label: "선지 제작 팀 — 최종 검수(형태통일·정답유일·어법·어구화)", run: async function (s) { var r = await reviewOptions(s.answer, s.dis || [], { type: type, main: s.main }); return { choices: r.choices, answerIdx: r.answer }; } });
     return steps;
   }
   async function buildInference(passage, type, opts) {
@@ -243,7 +258,7 @@
     var o = await llmJSON([{ role: "system", content: "수능 빈칸추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 핵심 논지를 담은 어구 한 곳(3~10단어)을 골라 ____ 로 비워라. 정답은 그 어구를 '본문 표현 그대로가 아니라 상위어·동의어로 패러프레이즈'한 간결한 영어 어구로 하라(완성 문장 아님, 다른 선택지와 길이·형태를 맞춤). JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"패러프레이즈한 정답 어구\",\"orig\":\"본문에서 비운 원래 어구\"}.\n\n" + passage }], { temperature: 0.45, timeout: 60000 });
     if (!o || !o.answer || !o.blanked) return null;
     var dis = await makeDistractors(o.answer, "빈칸에 들어갈 간결한 영어 어구(완성 문장 아님, 정답과 길이·형태 통일)", "빈칸 추론. 오답은 본문 단어를 재활용하되 논리가 어긋나게(정반대/부분일치/무관/과장).");
-    var a = shuffleAnswer(o.answer, dis);
+    var a = await reviewOptions(o.answer, dis, { type: "빈칸" });
     return { type: "빈칸", instruction: "다음 빈칸에 들어갈 말로 가장 적절한 것은?", passage: o.blanked, choices: a.choices, answer: a.answer, explanation: "빈칸에는 '" + o.answer + "'가 들어가 글의 논지를 완성한다" + (o.orig ? (" (본문 '" + o.orig + "'의 패러프레이즈)") : "") + "." };
   }
   // 함의: ① 밑줄 구절+의미 → ② 역할별 오답
@@ -251,7 +266,7 @@
     var o = await llmJSON([{ role: "system", content: "함의추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 함축 의미가 풍부한 '원문 구절' 하나와 그 문맥상 의미를 정하라. JSON: {\"phrase\":\"원문 그대로의 구절\",\"meaning\":\"그 함축 의미를 풀어쓴 영어 한 문장\"}.\n\n" + passage }], { temperature: 0.4, timeout: 55000 });
     if (!o || !o.meaning) return null;
     var dis = await makeDistractors(o.meaning, "영어 한 문장", "밑줄 구절 '" + (o.phrase || "") + "'의 함의");
-    var a = shuffleAnswer(o.meaning, dis);
+    var a = await reviewOptions(o.meaning, dis, { type: "함의" });
     var pg = o.phrase && passage.indexOf(o.phrase) >= 0 ? passage.replace(o.phrase, "<u>" + o.phrase + "</u>") : passage;
     return { type: "함의", instruction: "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?", passage: pg, choices: a.choices, answer: a.answer, explanation: "밑줄 친 부분은 '" + o.meaning + "'을 함의한다." };
   }
@@ -262,7 +277,7 @@
     var dj = await llmJSON([{ role: "system", content: "오답 설계자. JSON만." }, { role: "user", content: "정답 (A)=" + o.A + ", (B)=" + o.B + " 와 의미가 다른 (A)/(B) 쌍 오답 4개. JSON 배열 [{\"A\":\"..\",\"B\":\"..\"}, ...] 만." }], { temperature: 0.7, timeout: 50000 });
     var ans = "(A) " + o.A + " … (B) " + o.B;
     var dis = (Array.isArray(dj) ? dj : []).slice(0, 4).map(function (x) { return "(A) " + x.A + " … (B) " + x.B; });
-    var a = shuffleAnswer(ans, dis);
+    var a = await reviewOptions(ans, dis, { type: "요약" });
     return { type: "요약", instruction: "다음 요약문의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: o.summary, choices: a.choices, answer: a.answer, explanation: "(A) " + o.A + " / (B) " + o.B + " 가 글의 요지를 정확히 요약한다." };
   }
   // 내용불일치/일치
@@ -461,7 +476,7 @@
     loadTypeDB: loadTypeDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
-    generateExam: generateExam, generateOne: generateOne, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
+    generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
 })();
