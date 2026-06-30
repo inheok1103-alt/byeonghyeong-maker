@@ -87,18 +87,41 @@
   function clean1(s) { return String(s || "").replace(/```/g, "").replace(/^\s*[-*\d.]+\s*/, "").replace(/^["'\s]+|["'\s]+$/g, "").split("\n")[0].trim(); }
   async function ask(prompt, sys, opts) { return clean1(await llm([{ role: "system", content: sys || "간결하게 답만 출력. 설명·따옴표·마크다운 금지." }, { role: "user", content: prompt }], Object.assign({ temperature: 0.4, timeout: 50000 }, opts || {}))); }
 
-  /* ===== 뉴럴 메시: 뉴런=API, 시냅스=데이터 흐름(최대 상호연결) ===== */
-  var MESH = {
-    neurons: ROSTER,
-    layers: [
-      { name: "감각층(입력)", keys: ["wiki", "dict", "wikt", "thesaurus"], role: "지문→배경·정의·어원·연관어 신호 추출" },
-      { name: "연합층(이해)", keys: ["llm"], role: "신호 종합→핵심 논지·정답 도출" },
-      { name: "생성층(발화)", keys: ["llm", "thesaurus"], role: "역할별 오답 개별 발화(+반의어)" },
-      { name: "억제층(검증)", keys: ["grammar", "thesaurus", "trans"], role: "어법·의미중복·번역 교차 억제" },
-      { name: "피드백(회의)", keys: ["llm"], role: "오류→회의→개선지시 재발화" }
-    ],
-    synapses: [["wiki", "llm"], ["dict", "llm"], ["wikt", "llm"], ["thesaurus", "llm"], ["llm", "thesaurus"], ["llm", "grammar"], ["grammar", "llm"], ["trans", "llm"], ["llm", "trans"], ["image", "llm"]]
-  };
+  /* ===== 뉴럴 메시: 뉴런=API/모드, 시냅스=데이터 흐름(극한 상호연결) ===== */
+  var MESH = (function () {
+    var N = [
+      { key: "ds_syn", name: "동의어", group: "입력", api: "Datamuse" }, { key: "ds_ant", name: "반의어", group: "입력", api: "Datamuse" },
+      { key: "ds_trg", name: "연상어", group: "입력", api: "Datamuse" }, { key: "ds_gen", name: "상위어", group: "입력", api: "Datamuse" },
+      { key: "ds_spc", name: "하위어", group: "입력", api: "Datamuse" }, { key: "ds_jja", name: "수식형용사", group: "입력", api: "Datamuse" },
+      { key: "ds_hom", name: "동음이의", group: "입력", api: "Datamuse" }, { key: "ds_bg", name: "앞뒤연어", group: "입력", api: "Datamuse" },
+      { key: "dict_def", name: "정의", group: "입력", api: "Free Dictionary" }, { key: "dict_ex", name: "예문", group: "입력", api: "Free Dictionary" },
+      { key: "dict_pron", name: "발음", group: "입력", api: "Free Dictionary" }, { key: "wikt_ety", name: "어원", group: "입력", api: "Wiktionary" },
+      { key: "wiki_bg", name: "배경지식", group: "입력", api: "Wikipedia" }, { key: "gbooks", name: "실제용례", group: "입력", api: "Google Books" },
+      { key: "trans_ko", name: "한국어뜻", group: "입력", api: "MyMemory" },
+      { key: "llm_main", name: "핵심논지", group: "이해", api: "Pollinations" }, { key: "llm_ans", name: "정답작성", group: "생성", api: "Pollinations" },
+      { key: "llm_dis", name: "오답설계", group: "생성", api: "Pollinations" },
+      { key: "critic", name: "선지검수관", group: "검증", api: "Pollinations" }, { key: "grammar", name: "어법검수", group: "검증", api: "LanguageTool" },
+      { key: "ds_dup", name: "중복차단", group: "검증", api: "Datamuse" }, { key: "trans_chk", name: "번역검증", group: "검증", api: "MyMemory" },
+      { key: "meeting", name: "API회의", group: "피드백", api: "Pollinations" }, { key: "image", name: "삽화", group: "출력", api: "Pollinations Image" }
+    ];
+    var inputs = N.filter(function (n) { return n.group === "입력"; }).map(function (n) { return n.key; });
+    var S = [];
+    inputs.forEach(function (k) { S.push([k, "llm_main"]); });                       // 모든 입력 → 핵심논지
+    inputs.forEach(function (k) { if (/^ds_|^dict_|gbooks/.test(k)) S.push([k, "llm_dis"]); }); // 어휘성 입력 → 오답설계
+    ["ds_syn", "ds_ant", "ds_trg", "dict_def", "gbooks", "wiki_bg"].forEach(function (k) { S.push([k, "llm_ans"]); }); // 정답작성 보강
+    S.push(["llm_main", "llm_ans"], ["llm_ans", "llm_dis"]);
+    S.push(["llm_dis", "ds_dup"], ["llm_dis", "critic"], ["llm_ans", "critic"]);
+    S.push(["critic", "grammar"], ["grammar", "critic"], ["llm_ans", "trans_chk"], ["trans_chk", "critic"]);
+    S.push(["grammar", "meeting"], ["ds_dup", "meeting"], ["critic", "meeting"], ["meeting", "llm_main"], ["meeting", "llm_dis"]);
+    S.push(["llm_main", "image"], ["wiki_bg", "image"]);
+    return { neurons: N, synapses: S, groups: ["입력", "이해", "생성", "검증", "피드백", "출력"], roster: ROSTER };
+  })();
+  function topology() {
+    var deg = {}; MESH.neurons.forEach(function (n) { deg[n.key] = 0; });
+    MESH.synapses.forEach(function (e) { deg[e[0]] = (deg[e[0]] || 0) + 1; deg[e[1]] = (deg[e[1]] || 0) + 1; });
+    return { neurons: MESH.neurons.length, synapses: MESH.synapses.length,
+      byNeuron: MESH.neurons.map(function (n) { return { key: n.key, name: n.name, api: n.api, group: n.group, degree: deg[n.key] }; }).sort(function (a, b) { return b.degree - a.degree; }) };
+  }
 
   /* ===== 자기개선: 오류기록(+구글) + API 회의 ===== */
   function postGoogle(entry) { if (!LOGURL) return; try { fetch(LOGURL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(entry) }); } catch (_) {} }
@@ -162,6 +185,10 @@
   async function wiki(topic) { try { var d = await getJSON("https://en.wikipedia.org/api/rest_v1/page/summary/" + encodeURIComponent(String(topic).replace(/\s+/g, "_")), 12000); return { title: d.title, extract: d.extract }; } catch (_) { return null; } }
   async function translate(text, pair) { try { var d = await getJSON("https://api.mymemory.translated.net/get?q=" + encodeURIComponent(text) + "&langpair=" + (pair || "en|ko"), 12000); return (d.responseData && d.responseData.translatedText) || ""; } catch (_) { return ""; } }
   function image(prompt, w, h) { return "https://image.pollinations.ai/prompt/" + encodeURIComponent(prompt) + "?width=" + (w || 640) + "&height=" + (h || 480) + "&nologo=true&model=flux"; }
+  async function googleBooks(phrase) {
+    try { var d = await getJSON("https://www.googleapis.com/books/v1/volumes?q=" + encodeURIComponent('"' + phrase + '"') + "&maxResults=2&country=US", 12000);
+      var it = (d.items || [])[0]; return (it && it.searchInfo && it.searchInfo.textSnippet) || (it && it.volumeInfo && it.volumeInfo.description) || ""; } catch (_) { return ""; }
+  }
 
   /* ---------- 공통 보조 ---------- */
   function englishWords(s) { return (String(s).match(/[A-Za-z][A-Za-z'\-]{2,}/g) || []); }
@@ -184,16 +211,17 @@
   /* ====================== 미분화 빌더(유형별) ====================== */
   // ===== 컨텍스트 사전수집: 모든 비-LLM API 병렬 (반의어·동의어·정의·배경지식) =====
   async function prepContext(passage, onP) {
-    log(onP, "· 자료 수집반(Datamuse·Dictionary·Wikipedia) 병렬 가동…");
-    var cw = contentWords(passage).slice(0, 8), ant = {}, syn = {}, defs = {};
+    log(onP, "· 자료 수집반(Datamuse 동의/반의/연상 + 사전·위키·Google Books) 병렬 가동…");
+    var cw = contentWords(passage).slice(0, 8), ant = {}, syn = {}, trg = {}, defs = {};
     await Promise.all(cw.map(async function (w) {
       try { var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; } catch (_) {}
       try { var s = await datamuse(w, "syn", 5); if (s.length) syn[w] = s; } catch (_) {}
+      try { var t = await datamuse(w, "trg", 4); if (t.length) trg[w] = t; } catch (_) {}
     }));
     await Promise.all(cw.slice(0, 5).map(async function (w) { try { var d = await dict(w); if (d && d.meanings[0]) defs[w] = d.meanings[0].def; } catch (_) {} }));
     var bg = null, topic = await ask("다음 글의 핵심 주제를 영어 1~3단어(명사)로. 단어만.\n\n" + passage.slice(0, 500)).catch(function () { return ""; });
     if (topic) { try { bg = await wiki(topic); } catch (_) {} }
-    return { cw: cw, ant: ant, syn: syn, defs: defs, bg: bg, topic: topic };
+    return { cw: cw, ant: ant, syn: syn, trg: trg, defs: defs, bg: bg, topic: topic };
   }
   function synOverlap(answer, distractor, ctx) {
     var pool = {}; englishWords(answer).forEach(function (w) { (ctx.syn && ctx.syn[w.toLowerCase()] || []).forEach(function (s) { pool[s] = 1; }); });
@@ -315,11 +343,21 @@
     return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: o.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(o.answer, 10) || 1, explanation: "'" + (o.error || "") + "'는 '" + (o.correct || "") + "'로 고쳐야 한다." + verified };
   }
   // 서술형
+  function essayResult(type, instruction, answer) { return { type: type, instruction: instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (answer || "") }; }
   async function buildEssay(passage, opts, type) {
     type = type || "서술형";
-    var o = await llmJSON([{ role: "system", content: "고교 내신 영어 서술형 출제자. 시스템에 주입된 [수능 출제 규칙]을 반드시 따른다. JSON만." }, { role: "user", content: "다음 지문으로 '" + type + "' 유형의 내신 서술형 1문항을 만들어라. 발문에 필요한 제시문(밑줄 문장/조건/주어진 단어 등)을 포함하라. JSON: {\"instruction\":\"한국어 발문(제시문·조건 포함)\",\"answer\":\"모범 답안\"}.\n\n[지문]\n" + passage }], { temperature: 0.5, timeout: 60000 });
-    if (!o || !o.instruction) return null;
-    return { type: type, instruction: o.instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (o.answer || "") };
+    var sys = "고교 내신 영어 서술형 출제자. 주입된 출제 규칙을 반드시 따른다. 반드시 '유효한 JSON 한 개'만 출력하고, JSON 문자열 값 안에서는 큰따옴표 대신 작은따옴표(')만 쓴다.";
+    var user = "다음 지문으로 '" + type + "' 유형의 내신 서술형 1문항을 만들어라. 발문에 제시문(밑줄 문장/조건/주어진 단어 등)을 포함하라. JSON: {\"instruction\":\"한국어 발문(내부 인용은 작은따옴표)\",\"answer\":\"모범 답안\"}. JSON만.\n\n[지문]\n" + passage;
+    for (var i = 0; i < 3; i++) {
+      var o = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { temperature: i ? 0.8 : 0.5, timeout: 60000 });
+      if (o && o.instruction) return essayResult(type, o.instruction, o.answer);
+    }
+    // 폴백: 평문 두 줄 파싱(공격적)
+    var raw = await llm([{ role: "system", content: "고교 영어 서술형 출제자. 주입된 규칙을 따른다." }, { role: "user", content: "다음 지문으로 '" + type + "' 서술형 1문항.\n정확히 아래 두 줄 형식으로만:\n발문: <한국어 발문(제시문 포함)>\n정답: <모범답안>\n\n[지문]\n" + passage }], { temperature: 0.6, timeout: 60000 });
+    var im = (String(raw).match(/발문\s*[:：]\s*([\s\S]*?)(?:\n+\s*정답|$)/) || [])[1];
+    var am = (String(raw).match(/정답\s*[:：]\s*([\s\S]*)$/) || [])[1];
+    if (im && im.trim()) return essayResult(type, im.trim(), (am || "").trim());
+    return null;
   }
 
   var BUILDERS = {
@@ -390,7 +428,7 @@
     var ctx = await prepContext(passage, onP).catch(function () { return {}; });
     if (ctx.topic) log(onP, "   주제어=" + ctx.topic + (ctx.bg ? " · 위키 배경 확보" : "") + " · 반의어 " + Object.keys(ctx.ant || {}).length + "쌍");
     var bopts = { onProgress: onP, ctx: ctx, fast: opts.fast };
-    var maxTry = opts.fast ? 2 : 3;
+    var maxTry = opts.fast ? 3 : 4;
     log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…");
     for (var i = 0; i < types.length; i++) {
       var t = types[i], b = builderFor(t), got = null;
@@ -484,7 +522,7 @@
   }
 
   window.APITEAM = {
-    roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
+    roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,

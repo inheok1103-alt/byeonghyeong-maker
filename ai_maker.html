@@ -112,25 +112,38 @@ function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"
 function pgHtml(s){ return esc(s).replace(/&lt;u&gt;/g,"<u>").replace(/&lt;\/u&gt;/g,"</u>"); }
 var CIRC=["①","②","③","④","⑤"];
 
-/* ===== 뉴럴 메시 시각화 ===== */
-var POS={ wiki:[70,55], dict:[70,135], wikt:[70,215], thesaurus:[205,45], llm:[240,140], grammar:[400,55], trans:[400,140], image:[400,220] };
-var COL={ wiki:"#72a7ff", dict:"#7ee8c0", wikt:"#b794f6", thesaurus:"#ffd166", llm:"#2dd4bf", grammar:"#ff8fa3", trans:"#f6ad55", image:"#cbd5e1" };
+/* ===== 뉴럴 메시 시각화 (자동배치 · 토폴로지) ===== */
+var GCOL={ "입력":"#72a7ff","이해":"#2dd4bf","생성":"#ffd166","검증":"#ff8fa3","피드백":"#b794f6","출력":"#cbd5e1" };
+var GX={ "입력":52, "이해":175, "생성":255, "검증":360, "피드백":435, "출력":435 };
+var NPOS={};
+function layoutMesh(){
+  var m=T.mesh, byG={}; m.neurons.forEach(function(n){ (byG[n.group]=byG[n.group]||[]).push(n); });
+  Object.keys(byG).forEach(function(g){ var arr=byG[g], x=GX[g]||240, n=arr.length;
+    arr.forEach(function(nu,i){ var y= g==="피드백"?70 : g==="출력"?215 : 26+238*(i+0.5)/n; NPOS[nu.key]=[ g==="입력"?(x+(i%2)*44):x, y ]; }); });
+}
 function drawMesh(){
-  var m=T.mesh, svg=document.getElementById("mesh"), s="";
-  m.synapses.forEach(function(e){ var a=POS[e[0]],b=POS[e[1]]; if(a&&b) s+='<line x1="'+a[0]+'" y1="'+a[1]+'" x2="'+b[0]+'" y2="'+b[1]+'" stroke="#1f4d42" stroke-width="1.3"/>'; });
-  m.neurons.forEach(function(n){ var p=POS[n.key]||[240,135], big=n.key==="llm"?20:13;
-    s+='<g class="neuron" id="nu_'+n.key+'"><circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+big+'" fill="'+(COL[n.key]||"#9ad")+'" opacity="0.85"/>'+
-       '<text x="'+p[0]+'" y="'+(p[1]+big+11)+'" text-anchor="middle" font-size="8.5" fill="#cfe">'+esc(n.name)+'</text></g>'; });
+  var m=T.mesh; layoutMesh(); var svg=document.getElementById("mesh"), s="";
+  m.synapses.forEach(function(e){ var a=NPOS[e[0]],b=NPOS[e[1]]; if(a&&b) s+='<line x1="'+a[0]+'" y1="'+a[1]+'" x2="'+b[0]+'" y2="'+b[1]+'" stroke="#1f4d42" stroke-width="0.7" opacity="0.65"/>'; });
+  m.neurons.forEach(function(n){ var p=NPOS[n.key]||[240,135], big=/이해|생성|검증/.test(n.group)?8:5, col=GCOL[n.group]||"#9ad";
+    s+='<g class="neuron" id="nu_'+n.key+'"><circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+big+'" fill="'+col+'" opacity="0.9"/>'+
+       '<text x="'+p[0]+'" y="'+(p[1]-big-1.5)+'" text-anchor="middle" font-size="6" fill="#bfe">'+esc(n.name)+'</text></g>'; });
   svg.innerHTML=s;
-  document.getElementById("legend").innerHTML=m.neurons.map(function(n){ return '<div class="it"><span class="d" style="background:'+(COL[n.key]||"#9ad")+'"></span><b>'+esc(n.member)+'</b> — '+esc(n.role)+'</div>'; }).join("");
+  var t=T.topology(), top=t.byNeuron.slice(0,6).map(function(n){return n.name+'('+n.degree+')';}).join(' · ');
+  document.getElementById("legend").innerHTML='<div style="font-size:11pt;font-weight:800;color:#0f766e">🧠 '+t.neurons+' 뉴런 · '+t.synapses+' 시냅스</div>'+
+    '<div style="font-size:8.4pt;color:#566;margin-top:4px"><b>최다 연결</b> '+esc(top)+'</div>'+
+    '<div style="font-size:8.2pt;margin-top:6px;line-height:1.7">'+Object.keys(GCOL).map(function(g){ var c=t.byNeuron.filter(function(n){return n.group===g;}).length; return c?('<span style="display:inline-block;margin-right:9px"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+GCOL[g]+';vertical-align:middle"></span> '+g+' '+c+'개</span>'):''; }).join('')+'</div>'+
+    '<div style="font-size:8pt;color:#888;margin-top:5px">입력 15뉴런(Datamuse 8모드·사전 3·위키·어원·Google Books·번역) → LLM 종합 → 검수·회의 피드백</div>';
 }
 drawMesh();
-var PULSE={ "LLM":"llm","논지":"llm","정답":"llm","오답":"llm","편집장":"llm","회의":"llm","개선":"llm","요약":"llm","함의":"llm",
-  "LanguageTool":"grammar","어법":"grammar","Datamuse":"thesaurus","반의어":"thesaurus","동의어":"thesaurus","중복":"thesaurus",
-  "Dictionary":"dict","사전":"dict","정의":"dict","Wiktionary":"wikt","어원":"wikt","Wikipedia":"wiki","위키":"wiki","배경":"wiki",
-  "MyMemory":"trans","번역":"trans","한국어":"trans" };
-function pulse(key){ var g=document.getElementById("nu_"+key); if(!g)return; var c=g.querySelector("circle"); c.setAttribute("opacity","1"); c.setAttribute("r",(key==="llm"?26:18)); setTimeout(function(){ c.setAttribute("opacity","0.85"); c.setAttribute("r",(key==="llm"?20:13)); },450); }
-function pulseFromMsg(m){ for(var k in PULSE){ if(m.indexOf(k)>=0){ pulse(PULSE[k]); } } }
+function pulse(key){ var c=document.querySelector('#nu_'+key+' circle'); if(!c)return; var r=+c.getAttribute('r'); c.setAttribute('opacity','1'); c.setAttribute('r',r+4); setTimeout(function(){ c.setAttribute('opacity','0.9'); c.setAttribute('r',r); },450); }
+function pulseGroup(g){ T.mesh.neurons.forEach(function(n){ if(n.group===g) pulse(n.key); }); }
+function pulseFromMsg(m){
+  if(/Datamuse|반의|동의|연상|배경|위키|사전|정의|용례|어원|수집/.test(m)) pulseGroup("입력");
+  if(/논지|정답|오답|작성|LLM|요약|함의/.test(m)) pulseGroup("생성");
+  if(/검수|선지|회의|개선/.test(m)){ pulseGroup("검증"); pulse("meeting"); }
+  if(/어법|LanguageTool/.test(m)) pulse("grammar");
+  if(/번역|한국어|MyMemory/.test(m)) pulse("trans_chk");
+}
 
 /* ===== 회의록·오류 콜백 ===== */
 function addMeeting(rec){
