@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 고품질 변형문제 제작기 — 무료 API 뉴럴 메시</title>
+<style>
+*{box-sizing:border-box}
+:root{--ink:#16201d;--mut:#5f6b66;--ac:#0f766e;--ac2:#b45309;--soft:#eef5f2;--line:#cbd5cf;--blue:#1d6fa5}
+body{margin:0;font-family:'Noto Sans KR',system-ui,-apple-system,sans-serif;background:#f4f6f5;color:var(--ink);line-height:1.55}
+.wrap{max-width:980px;margin:0 auto;padding:20px}
+h1{font-size:20pt;color:var(--ac);margin:0 0 2px}
+.sub{color:var(--mut);font-size:10.5pt;margin-bottom:14px}
+.card{background:#fff;border:1px solid #e0e6e3;border-radius:12px;padding:15px 17px;margin:12px 0;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.card h2{font-size:12.5pt;margin:0 0 9px;color:var(--ink)}
+textarea{width:100%;min-height:130px;border:1px solid var(--line);border-radius:8px;padding:11px;font-size:11pt;line-height:1.6;resize:vertical;font-family:inherit}
+.types{display:flex;flex-wrap:wrap;gap:7px;margin:4px 0}
+.types label{font-size:10pt;border:1.5px solid var(--line);border-radius:18px;padding:5px 12px;cursor:pointer;user-select:none;background:#fafbfb}
+.types input{display:none}.types label.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button{cursor:pointer;border:none;border-radius:9px;font-weight:700;font-family:inherit}
+.go{background:var(--ac);color:#fff;font-size:12pt;padding:11px 26px}.go:disabled{background:#9bb5ae;cursor:wait}
+.ghost{background:#eef2f1;color:#333;font-size:9.5pt;padding:7px 12px}
+.mesh-wrap{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start}
+svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
+.legend{font-size:8.8pt;color:#445;min-width:200px}
+.legend .it{display:flex;gap:6px;align-items:center;padding:2px 0}
+.legend .d{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
+.neuron{transition:all .25s}
+.log{font-size:9.3pt;background:#0d1b17;color:#a8e8d2;border-radius:8px;padding:10px 12px;min-height:30px;white-space:pre-wrap;font-family:Consolas,monospace;display:none;max-height:230px;overflow:auto}
+.mt{border-left:3px solid var(--blue);padding:7px 0 7px 12px;margin:9px 0;font-size:9.4pt}
+.mt .h{font-weight:800;color:#10405f}.mt .o{color:#445;margin:2px 0}.mt .hint{background:var(--soft);border-radius:6px;padding:5px 9px;margin-top:4px;color:#0f766e;font-weight:600}
+.q{border-left:3px solid var(--line);padding:8px 0 8px 13px;margin:13px 0}
+.q .h{font-weight:800;font-size:11pt}.q .chip{font-size:8pt;color:#fff;background:var(--ac2);border-radius:9px;padding:1px 8px;margin-left:6px}
+.q .ins{font-weight:700;font-size:10.5pt;margin:5px 0}
+.q .pg{font-family:'Noto Serif KR',serif;font-size:10.5pt;line-height:1.85;background:#fcfdfc;border:1px solid var(--line);border-radius:7px;padding:10px 13px;margin:6px 0}
+.q .pg u{text-decoration-color:var(--ac2);text-underline-offset:2px;font-weight:600}
+.q .ch{font-size:10pt;line-height:1.85}.q .ch div{margin:1px 0}
+.ans{display:none;margin-top:6px;background:var(--soft);border-radius:7px;padding:8px 11px;font-size:9.7pt}.ans.show{display:block}.ans b{color:var(--ac)}
+.note{font-size:9pt;color:var(--mut);margin-top:5px}
+@media print{.noprint{display:none!important}.card{box-shadow:none;border:none}body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🧠 AI 고품질 변형문제 제작기</h1>
+  <div class="sub">무료·<b>무(無)키</b> API들을 <b>뇌의 뉴런·시냅스처럼 상호연결</b>한 메시가, 한 문항도 여러 단계로 초미분화해 출제합니다. 오류가 나면 <b>API들이 회의</b>해 스스로 개선합니다. 키 입력 없이 0원.</div>
+
+  <div class="card noprint">
+    <h2>🧬 무료 API 뉴럴 메시 <span style="font-size:9pt;color:#888;font-weight:400">(클릭 시 상태 점검 · 작동 중 뉴런이 점등)</span></h2>
+    <div class="mesh-wrap">
+      <svg class="mesh" id="mesh" viewBox="0 0 480 270" width="100%"></svg>
+      <div class="legend" id="legend"></div>
+    </div>
+  </div>
+
+  <div class="card noprint">
+    <h2>① 영어 지문 붙여넣기</h2>
+    <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요..."></textarea>
+    <h2 style="margin-top:12px">② 출제 유형 (메시가 가장 잘하는 유형)</h2>
+    <div class="types" id="types"></div>
+    <div class="row" style="margin-top:12px">
+      <button class="go" id="go" onclick="run()">🚀 고품질 출제</button>
+      <button class="ghost" onclick="toggleAns()">정답·해설 보기</button>
+      <button class="ghost noprint" onclick="window.print()">인쇄/PDF</button>
+      <span class="note">초미분화 직렬 처리 — 유형당 약 20~40초. 진행 로그·뉴런 점등을 보세요.</span>
+    </div>
+    <div class="log" id="log"></div>
+  </div>
+
+  <div class="card noprint" id="meetCard" style="display:none">
+    <h2>🛠 API 회의록 <span style="font-size:9pt;color:#888;font-weight:400">(오류 발생 시 자동 소집·개선)</span></h2>
+    <div id="meet"></div>
+  </div>
+
+  <div id="out"></div>
+</div>
+
+<script src="api_team.js"></script>
+<script>
+var T = window.APITEAM;
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function pgHtml(s){ return esc(s).replace(/&lt;u&gt;/g,"<u>").replace(/&lt;\/u&gt;/g,"</u>"); }
+var CIRC=["①","②","③","④","⑤"];
+
+/* ===== 뉴럴 메시 시각화 ===== */
+var POS={ wiki:[70,55], dict:[70,135], wikt:[70,215], thesaurus:[205,45], llm:[240,140], grammar:[400,55], trans:[400,140], image:[400,220] };
+var COL={ wiki:"#72a7ff", dict:"#7ee8c0", wikt:"#b794f6", thesaurus:"#ffd166", llm:"#2dd4bf", grammar:"#ff8fa3", trans:"#f6ad55", image:"#cbd5e1" };
+function drawMesh(){
+  var m=T.mesh, svg=document.getElementById("mesh"), s="";
+  m.synapses.forEach(function(e){ var a=POS[e[0]],b=POS[e[1]]; if(a&&b) s+='<line x1="'+a[0]+'" y1="'+a[1]+'" x2="'+b[0]+'" y2="'+b[1]+'" stroke="#1f4d42" stroke-width="1.3"/>'; });
+  m.neurons.forEach(function(n){ var p=POS[n.key]||[240,135], big=n.key==="llm"?20:13;
+    s+='<g class="neuron" id="nu_'+n.key+'"><circle cx="'+p[0]+'" cy="'+p[1]+'" r="'+big+'" fill="'+(COL[n.key]||"#9ad")+'" opacity="0.85"/>'+
+       '<text x="'+p[0]+'" y="'+(p[1]+big+11)+'" text-anchor="middle" font-size="8.5" fill="#cfe">'+esc(n.name)+'</text></g>'; });
+  svg.innerHTML=s;
+  document.getElementById("legend").innerHTML=m.neurons.map(function(n){ return '<div class="it"><span class="d" style="background:'+(COL[n.key]||"#9ad")+'"></span><b>'+esc(n.member)+'</b> — '+esc(n.role)+'</div>'; }).join("");
+}
+drawMesh();
+var PULSE={ "LLM":"llm","논지":"llm","정답":"llm","오답":"llm","편집장":"llm","회의":"llm","개선":"llm","요약":"llm","함의":"llm",
+  "LanguageTool":"grammar","어법":"grammar","Datamuse":"thesaurus","반의어":"thesaurus","동의어":"thesaurus","중복":"thesaurus",
+  "Dictionary":"dict","사전":"dict","정의":"dict","Wiktionary":"wikt","어원":"wikt","Wikipedia":"wiki","위키":"wiki","배경":"wiki",
+  "MyMemory":"trans","번역":"trans","한국어":"trans" };
+function pulse(key){ var g=document.getElementById("nu_"+key); if(!g)return; var c=g.querySelector("circle"); c.setAttribute("opacity","1"); c.setAttribute("r",(key==="llm"?26:18)); setTimeout(function(){ c.setAttribute("opacity","0.85"); c.setAttribute("r",(key==="llm"?20:13)); },450); }
+function pulseFromMsg(m){ for(var k in PULSE){ if(m.indexOf(k)>=0){ pulse(PULSE[k]); } } }
+
+/* ===== 회의록·오류 콜백 ===== */
+function addMeeting(rec){
+  document.getElementById("meetCard").style.display="block";
+  var h='<div class="mt"><div class="h">⚑ \''+esc(rec.type)+'\' 회의 — '+esc(rec.when)+'</div>';
+  (rec.discussion||[]).forEach(function(d){ h+='<div class="o">• <b>'+esc(d.role)+'</b>: '+esc(d.opinion)+'</div>'; });
+  if(rec.hint) h+='<div class="hint">→ 합의 개선지시: '+esc(rec.hint)+'</div>';
+  h+='</div>'; document.getElementById("meet").insertAdjacentHTML("beforeend",h);
+}
+T.configure({ onMeeting:addMeeting, onError:function(e){ pulse("llm"); } });
+
+/* ===== 유형 칩 ===== */
+var TYPES=(T&&T.BEST_TYPES)||["어법","어휘","빈칸","주제","제목","함의","요약","내용불일치","서술형"];
+var DEF={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1};
+var tdiv=document.getElementById("types");
+TYPES.forEach(function(t){ var l=document.createElement("label"); l.className=DEF[t]?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(DEF[t]?" checked":"")+'>'+t;
+  l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); }; tdiv.appendChild(l); });
+function chosen(){ return [].slice.call(document.querySelectorAll("#types input:checked")).map(function(i){return i.value;}); }
+
+document.getElementById("mesh").onclick=function(){ T.healthCheck().then(function(l){ l.forEach(function(m){ if(m.ok) pulse(m.key); else { var g=document.getElementById("nu_"+m.key); if(g) g.querySelector("circle").setAttribute("fill","#555"); } }); }); };
+
+function logln(m){ var L=document.getElementById("log"); L.style.display="block"; L.textContent+=(L.textContent?"\n":"")+m; L.scrollTop=L.scrollHeight; pulseFromMsg(m); }
+
+function run(){
+  var passage=document.getElementById("passage").value.trim(), types=chosen();
+  if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
+  if(!types.length){ alert("출제 유형을 1개 이상 선택하세요."); return; }
+  var go=document.getElementById("go"); go.disabled=true; go.textContent="출제 중…";
+  document.getElementById("log").textContent=""; document.getElementById("out").innerHTML="";
+  document.getElementById("meet").innerHTML=""; document.getElementById("meetCard").style.display="none";
+  T.generateExam(passage, types, {onProgress:logln}).then(function(items){
+    render(items); go.disabled=false; go.textContent="🚀 고품질 출제";
+  }).catch(function(e){ logln("오류: "+e.message); go.disabled=false; go.textContent="🚀 고품질 출제"; });
+}
+function render(items){
+  if(!items||!items.length){ document.getElementById("out").innerHTML='<div class="card">생성된 문항이 없습니다. 다시 시도해 주세요.</div>'; return; }
+  var h='<div class="card"><h2>📝 결과 — '+items.length+'문항</h2>';
+  items.forEach(function(q,i){
+    h+='<div class="q"><div class="h">'+(i+1)+'. '+esc(q.type)+' <span class="chip">AI</span></div><div class="ins">'+esc(q.instruction)+'</div>';
+    if(q.passage) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
+    if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
+    var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
+    h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(q.explanation)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+'</div></div>';
+  });
+  document.getElementById("out").innerHTML=h+'</div>';
+}
+function toggleAns(){ [].forEach.call(document.querySelectorAll(".ans"),function(a){a.classList.toggle("show");}); }
+</script>
+</body>
+</html>
