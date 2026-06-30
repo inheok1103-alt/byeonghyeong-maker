@@ -289,10 +289,11 @@
     return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: o.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(o.answer, 10) || 1, explanation: "'" + (o.error || "") + "'는 '" + (o.correct || "") + "'로 고쳐야 한다." + verified };
   }
   // 서술형
-  async function buildEssay(passage) {
-    var o = await llmJSON([{ role: "system", content: "고교 내신 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문으로 내신 서술형 1문항을 만들어라(우리말 해석 / 조건 영작 / 요약문 빈칸 중 하나). JSON: {\"instruction\":\"한국어 발문(지문에서 인용할 문장/조건 포함)\",\"answer\":\"모범 답안\"}.\n\n" + passage }], { temperature: 0.5, timeout: 60000 });
+  async function buildEssay(passage, opts, type) {
+    type = type || "서술형";
+    var o = await llmJSON([{ role: "system", content: "고교 내신 영어 서술형 출제자. 시스템에 주입된 [수능 출제 규칙]을 반드시 따른다. JSON만." }, { role: "user", content: "다음 지문으로 '" + type + "' 유형의 내신 서술형 1문항을 만들어라. 발문에 필요한 제시문(밑줄 문장/조건/주어진 단어 등)을 포함하라. JSON: {\"instruction\":\"한국어 발문(제시문·조건 포함)\",\"answer\":\"모범 답안\"}.\n\n[지문]\n" + passage }], { temperature: 0.5, timeout: 60000 });
     if (!o || !o.instruction) return null;
-    return { type: "서술형", instruction: o.instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (o.answer || "") };
+    return { type: type, instruction: o.instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (o.answer || "") };
   }
 
   var BUILDERS = {
@@ -309,7 +310,7 @@
     vocab: function (p, o) { return buildVocab(p, o); }, grammar: function (p, o) { return buildGrammar(p, o); },
     blank: function (p, o) { return buildBlank(p, o); }, implication: function (p, o) { return buildImplication(p, o); },
     summary: function (p, o) { return buildSummary(p, o); }, factcheck0: function (p, o) { return buildFactCheck(p, false, o); },
-    factcheck1: function (p, o) { return buildFactCheck(p, true, o); }, essay: function (p, o) { return buildEssay(p, o); }
+    factcheck1: function (p, o) { return buildFactCheck(p, true, o); }, essay: function (p, o, t) { return buildEssay(p, o, t); }
   };
   function builderFor(t) {
     var hint = TYPE_BUILDER_HINT[t];
