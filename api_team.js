@@ -450,11 +450,19 @@
   }
   // 어법: LLM이 1곳 오류 주입 → LanguageTool로 검증
   async function buildGrammar(passage) {
-    var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 포인트 5곳을 골라 각 앞에 ⓐⓑⓒⓓⓔ를 붙이고 <u>밑줄</u>하라. 그 중 정확히 1곳에만 어법 오류를 넣어라(나머지 4곳은 정확). JSON: {\"passage\":\"ⓐ<u>..</u> 표시 지문\",\"answer\":1~5,\"error\":\"틀린 표현\",\"correct\":\"올바른 표현\"}.\n\n" + passage }], { temperature: 0.45, timeout: 60000 });
-    if (!o || !o.passage) return null;
-    var verified = "";
-    try { var g = await grammar(String(o.passage).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); if (g.length) verified = " (LanguageTool 확인: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + ")"; } catch (_) {}
-    return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: o.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(o.answer, 10) || 1, explanation: "'" + (o.error || "") + "'는 '" + (o.correct || "") + "'로 고쳐야 한다." + verified };
+    var gecEx = gecExamples(2), last = null;
+    for (var attempt = 0; attempt < 3; attempt++) {
+      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 포인트 5곳을 골라 각 앞에 ⓐⓑⓒⓓⓔ를 붙이고 <u>밑줄</u>하라. 그 중 정확히 1곳에만 '실제' 어법 오류를 주입하라(나머지 4곳은 정확). 정상 표현을 오류로 지목하지 마라(예: 동명사는 오류 아님)." + (gecEx ? (" 실제 오류 유형 예: " + gecEx) : "") + " JSON: {\"passage\":\"ⓐ<u>..</u> 표시 지문(오류 주입됨)\",\"answer\":1~5,\"error\":\"지문에 실제로 넣은 틀린 표현\",\"correct\":\"올바른 표현\"}.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.35 : 0.45, timeout: 60000 });
+      if (!o || !o.passage || !o.error || !o.correct || String(o.error).trim() === String(o.correct).trim()) continue;
+      last = o;
+      var g = []; try { g = await grammar(String(o.passage).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); } catch (_) {}
+      // LanguageTool이 오류를 하나도 못 잡으면 '거짓 오류' 의심 → 재시도
+      if (!g.length && attempt < 2) continue;
+      var verified = g.length ? (" (LanguageTool 확인: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + ")") : "";
+      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: o.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(o.answer, 10) || 1, explanation: "'" + o.error + "'는 '" + o.correct + "'로 고쳐야 한다." + verified };
+    }
+    if (last) return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: last.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(last.answer, 10) || 1, explanation: "'" + (last.error || "") + "'는 '" + (last.correct || "") + "'로 고쳐야 한다." };
+    return null;
   }
   // 서술형
   function essayResult(type, instruction, answer) { return { type: type, instruction: instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (answer || "") }; }
