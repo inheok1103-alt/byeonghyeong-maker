@@ -74,6 +74,8 @@
       messages = hasSys ? messages.map(function (m) { return m.role === "system" ? { role: "system", content: m.content + sysadd } : m; })
         : [{ role: "system", content: sysadd.trim() }].concat(messages);
     }
+    // Pollinations는 동시성 불가 → 직렬 큐(안전). Groq/Gemini는 동시 호출 지원 → 병렬(신경다발을 병렬로 엮음).
+    if (provider() !== "pollinations") { return llmWithRetry(messages, opts); }
     var p = _llmQ.then(function () { return llmWithRetry(messages, opts); }, function () { return llmWithRetry(messages, opts); });
     _llmQ = p.then(function () { return delay(500); }, function () { return delay(500); });
     return p;
@@ -139,6 +141,35 @@
     return { neurons: MESH.neurons.length, synapses: MESH.synapses.length,
       byNeuron: MESH.neurons.map(function (n) { return { key: n.key, name: n.name, api: n.api, group: n.group, degree: deg[n.key] }; }).sort(function (a, b) { return b.degree - a.degree; }) };
   }
+  // ===== 뇌 구조 + 역할 분담: 각 뉴런/기능을 실제 뇌 영역으로 매핑(조직도·3D 시각화용) =====
+  var BRAIN = [
+    { region: "감각·지각 피질", anat: "Sensory Cortex", fn: "외부 지식을 받아들여 지각", group: "입력", pos: [0, 1.1, 0.2],
+      roles: ["자료조사관 — Datamuse(동의·반의·연상·상하위·수식·연어·철자·운율)", "사전관 — Free Dictionary(정의·예문·발음)", "어원관 — Wiktionary", "배경지식관 — Wikipedia·Wikidata·OpenLibrary·PoetryDB·Wikiquote·Wikisource", "난이도지각관 — CEFR·코퍼스 빈도", "한국어뜻관 — MyMemory"] },
+    { region: "베르니케 영역", anat: "Wernicke's Area", fn: "언어 이해 — 글의 핵심 논지 파악", group: "이해", pos: [-1.0, 0.1, 0.4],
+      roles: ["논지분석관 — 핵심 논지 한 문장 추출"] },
+    { region: "브로카 영역", anat: "Broca's Area", fn: "언어 생성 — 정답·오답·발문 산출", group: "생성", pos: [1.0, 0.2, 0.5],
+      roles: ["정답작성관 — 정답 보기/정답문", "오답설계관 — 역할별 매력적 오답 4개"] },
+    { region: "전전두엽", anat: "Prefrontal Cortex", fn: "고등 판단·검증·의사결정", group: "검증", pos: [0, 0.5, 1.2],
+      roles: ["선지검수관 — 형태통일·정답유일·어구화", "어법검수관 — LanguageTool", "중복차단관 — Datamuse", "번역검증관 — MyMemory", "연어검증관 — Datamuse"] },
+    { region: "변연계", anat: "Limbic System", fn: "피드백·동기·자기개선", group: "피드백", pos: [0, -0.3, 0.1],
+      roles: ["회의진행관 — 오류 시 API 회의 소집", "요청심의관 — 사용자 요청 교사회의 심의"] },
+    { region: "운동 피질", anat: "Motor Cortex", fn: "산출·표현", group: "출력", pos: [0, 0.9, -0.9],
+      roles: ["삽화주문관 — Pollinations Image"] },
+    { region: "연합 피질 · 교사군집", anat: "Association Cortex", fn: "통합 고등사고 — 교사 다관점 합성", group: "창발", pos: [0, -0.1, -1.1],
+      roles: ["교사군집 — 전공·성향별 표집(무한)", "회의의장 — 합의 판정(반영/반려)", "앙상블 — 다관점 초안 합성"] }
+  ];
+  var BRAIN_EXTRA = [
+    { region: "해마", anat: "Hippocampus", fn: "기억·학습 저장", roles: ["코퍼스 — 원서 어휘·지문·CEFR", "24h 연구 누적 아카이브", "공유 개선지침"] },
+    { region: "소뇌", anat: "Cerebellum", fn: "반복 미세조정·정교화", roles: ["재귀 상호작용 루프 — 검수↔재작성 수렴", "단계별 지문 변형(단어→구문→문장→주제)"] },
+    { region: "뇌량", anat: "Corpus Callosum", fn: "영역 간 연결", roles: ["시냅스 — 다중 API 엮음(개별 API는 멍청 → 항상 엮기)"] },
+    { region: "전뇌 통합 · brain()", anat: "Whole-brain", fn: "분해→검색→다관점→자기비판→개선 총괄", roles: ["통합 추론 엔진 — 최종 합성(weaving)은 최강 모델이 담당"] }
+  ];
+  function brainStructure() {
+    var m = topology();
+    var regions = BRAIN.map(function (b) { var ns = m.byNeuron.filter(function (n) { return n.group === b.group; }); return { region: b.region, anat: b.anat, fn: b.fn, group: b.group, pos: b.pos, roles: b.roles, neurons: ns.map(function (n) { return { name: n.name, degree: n.degree, key: n.key }; }), count: ns.length }; });
+    return { regions: regions, extra: BRAIN_EXTRA, totalNeurons: m.neurons, totalSynapses: m.synapses, teachers: (typeof TEACHER_POP !== "undefined" ? TEACHER_POP : 0) };
+  }
+  function regionOf(group) { for (var i = 0; i < BRAIN.length; i++) if (BRAIN[i].group === group) return BRAIN[i]; return null; }
 
   /* ===== 자기개선: 오류기록(+구글) + API 회의 ===== */
   function postGoogle(entry) { if (!LOGURL) return; try { fetch(LOGURL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(entry) }); } catch (_) {} }
@@ -502,8 +533,8 @@
     n = Math.max(1, n || 1);
     if (n === 1) return await critiqueQ(q, passage);
     var teachers = sampleTeachers(n, (String(q.type || "") + String(q.instruction || "")).length);
-    var crits = [];
-    for (var i = 0; i < teachers.length; i++) { var c = await critiqueQ(q, passage, teachers[i].sys); if (c) crits.push(c); }
+    var critResults = await Promise.all(teachers.map(function (t) { return critiqueQ(q, passage, t.sys).catch(function () { return null; }); }));
+    var crits = critResults.filter(Boolean);
     if (!crits.length) return { score: 0, issues: ["평가 실패"], fix: "" };
     var issues = []; crits.forEach(function (c) { (c.issues || []).forEach(function (x) { if (issues.indexOf(x) < 0) issues.push(x); }); });
     var score = Math.round(crits.reduce(function (s, c) { return s + (c.score || 0); }, 0) / crits.length);
@@ -545,8 +576,11 @@
     opts = opts || {}; var onP = opts.onProgress;
     var personas = opts.personas || sampleTeachers(opts.teachers || 3, opts.seed || (prompt ? String(prompt).length : 1));
     log(onP, "  🧬 교사군집 " + TEACHER_POP.toLocaleString() + "명 중 " + personas.length + "명 소집 → 사유·상호비평·합성…");
-    var drafts = [];
-    for (var i = 0; i < personas.length; i++) { var d = await llm([{ role: "system", content: personas[i].sys }, { role: "user", content: prompt }], { noRule: true, temperature: 0.55 + 0.12 * i, timeout: 60000 }); if (d && d.trim()) drafts.push({ who: personas[i].name, text: d.trim() }); }
+    var draftResults = await Promise.all(personas.map(function (p, i) {
+      return llm([{ role: "system", content: p.sys }, { role: "user", content: prompt }], { noRule: true, temperature: 0.55 + 0.12 * i, timeout: 60000 })
+        .then(function (d) { return (d && d.trim()) ? { who: p.name, text: d.trim() } : null; }, function () { return null; });
+    }));
+    var drafts = draftResults.filter(Boolean);
     if (!drafts.length) return { answer: "", drafts: [] };
     if (drafts.length === 1) return { answer: drafts[0].text, drafts: drafts };
     var body = drafts.map(function (x, i) { return "초안" + (i + 1) + " [" + x.who + "]:\n" + x.text; }).join("\n\n");
@@ -908,6 +942,7 @@
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
     refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain, deliberate: deliberate,
     teacherCount: teacherCount, sampleTeachers: sampleTeachers, makeTeacher: makeTeacher, buildExplanation: buildExplanation,
+    brainStructure: brainStructure, regionOf: regionOf,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
