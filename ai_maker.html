@@ -38,15 +38,46 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
 .q .ch{font-size:10pt;line-height:1.85}.q .ch div{margin:1px 0}
 .ans{display:none;margin-top:6px;background:var(--soft);border-radius:7px;padding:8px 11px;font-size:9.7pt}.ans.show{display:block}.ans b{color:var(--ac)}
 .note{font-size:9pt;color:var(--mut);margin-top:5px}
-@media print{.noprint{display:none!important}.card{box-shadow:none;border:none}body{background:#fff}}
+/* ===== UX 개선 ===== */
+.banner{background:linear-gradient(120deg,#0f766e 0%,#0e7490 55%,#7c3aed 100%);color:#fff;border-radius:18px;padding:20px 24px;margin:4px 0 14px;box-shadow:0 6px 22px rgba(15,118,110,.28);position:relative;overflow:hidden}
+.banner:after{content:"🧠";position:absolute;right:16px;top:-10px;font-size:64pt;opacity:.13}
+.banner h1{color:#fff;font-size:21pt;margin:0 0 3px}
+.banner .sub{color:#e3f7f2;font-size:10pt;margin:0}
+.banner .pills{margin-top:9px;display:flex;gap:6px;flex-wrap:wrap}
+.pill{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:8.4pt;font-weight:700;border-radius:20px;padding:3px 10px}
+button{transition:transform .12s,box-shadow .12s,background .15s,filter .15s}
+button:hover{transform:translateY(-1px);box-shadow:0 3px 10px rgba(0,0,0,.13)}
+button:active{transform:translateY(0)}
+.go:hover{filter:brightness(1.06);box-shadow:0 6px 20px rgba(15,118,110,.4)}
+.ghost:hover{background:#e2ebe8}
+.card{transition:box-shadow .18s,transform .12s}
+.card:hover{box-shadow:0 4px 16px rgba(0,0,0,.09)}
+.foldh{cursor:pointer;user-select:none;display:flex;align-items:center;gap:6px}
+.foldh:hover{color:var(--ac)}
+.foldarrow{display:inline-block;width:15px;color:var(--ac);font-size:11pt;transition:transform .15s}
+.stepbar{display:flex;gap:8px;margin:10px 0 4px;flex-wrap:wrap}
+.step{flex:1;min-width:120px;background:var(--soft);border-radius:10px;padding:8px 11px;font-size:9pt;color:var(--mut);border-left:3px solid var(--line)}
+.step b{color:var(--ink);font-size:10pt}
+.step.on{border-left-color:var(--ac);background:#e8f6f2}
+@media print{.noprint{display:none!important}.card{box-shadow:none;border:none}body{background:#fff}.foldarrow{display:none}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <h1>🧠 AI 고품질 변형문제 제작기</h1>
-  <div class="sub">무료·<b>무(無)키</b> API들을 <b>뇌의 뉴런·시냅스처럼 상호연결</b>한 메시가, 한 문항도 여러 단계로 초미분화해 출제합니다. 오류가 나면 <b>API들이 회의</b>해 스스로 개선합니다. 키 입력 없이 0원.</div>
+  <div class="banner">
+    <h1>🧠 출제자 뇌 — AI 변형문제 제작기</h1>
+    <div class="sub">최상위 영어교사 <b>9만 6천 명</b>이 신경다발처럼 엮여, 스스로 만들고·회의하고·학습하는 출제 두뇌. 무키·0원으로 작동.</div>
+    <div class="pills">
+      <span class="pill">18유형 자동출제</span><span class="pill">해설·단어장·변형</span><span class="pill">교사 회의·자가학습</span><span class="pill">3D 뇌 시각화</span><span class="pill" id="pillGroq">Groq 키 넣으면 초고속</span>
+    </div>
+  </div>
+  <div class="stepbar">
+    <div class="step on"><b>① 지문 붙여넣기</b><br>영어 지문 입력 또는 📚원서/샘플</div>
+    <div class="step"><b>② 유형 고르기</b><br>원하는 문항 유형 선택</div>
+    <div class="step"><b>③ 🚀 출제</b><br>버튼 한 번 → 문항·정답·해설</div>
+  </div>
 
-  <div class="card noprint">
+  <div class="card noprint" id="meshCard">
     <h2>🧬 무료 API 뉴럴 메시 <span style="font-size:9pt;color:#888;font-weight:400">(클릭 시 상태 점검 · 작동 중 뉴런이 점등)</span></h2>
     <div class="mesh-wrap">
       <svg class="mesh" id="mesh" viewBox="0 0 480 270" width="100%"></svg>
@@ -564,6 +595,17 @@ T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=doc
 T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s&&c&&c.vocab) s.textContent="📚 학습DB: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 반의어 "+(c.synant||0)+" · 구동사 "+(c.phrasal||0)+" · 어법오류 "+(c.gec||0)+" · 교재 "+(c.books||0)+"종 · 연구 "+c.research; }).catch(function(){});
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
+// UX: 고급 카드를 접이식(▸)으로 — 제목 클릭 시 펼침/접기
+function foldify(ids, collapsed){
+  ids.forEach(function(id){ var c=document.getElementById(id); if(!c) return; var h=c.querySelector("h2"); if(!h||h.dataset.fold) return; h.dataset.fold="1"; h.classList.add("foldh");
+    var arrow=document.createElement("span"); arrow.className="foldarrow"; h.insertBefore(arrow,h.firstChild);
+    var bodies=[]; var n=h.nextElementSibling; while(n){ bodies.push(n); n=n.nextElementSibling; }
+    function set(open){ bodies.forEach(function(el){ el.style.display=open?"":"none"; }); arrow.textContent=open?"▾":"▸"; c.dataset.open=open?"1":"0"; }
+    set(!collapsed);
+    h.addEventListener("click",function(e){ if(e.target&&(e.target.tagName==="BUTTON"||e.target.tagName==="INPUT"))return; set(c.dataset.open!=="1"); });
+  });
+}
+foldify(["meshCard","xformCard","brainCard","govCard","archiveCard","researchCard"], true);
 initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
 // 로드되면 교사 회의가 실시간으로 자동 시작(탭 열려 있는 동안 계속)
 setTimeout(function(){ try{ if(!LIVE.on) toggleLive(); }catch(e){} }, 2500);
