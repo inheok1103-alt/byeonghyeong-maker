@@ -163,7 +163,8 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
   </div>
 
   <div class="card noprint" id="liveCard">
-    <h2>🔴 실시간 회의 로그 <span style="font-size:9pt;color:#888;font-weight:400">교사군집이 회의하는 과정을 실시간으로 표시 (탭이 열려 있는 동안 계속)</span>
+    <h2>🔴 실시간 회의 &amp; 자가학습 <span style="font-size:9pt;color:#888;font-weight:400">교사군집이 스스로 만들고·비평하고·규칙을 학습 (탭이 열린 동안 계속) <span id="learnStat" style="color:#0f766e"></span></span>
+      <button class="ghost noprint" id="learnBtn" style="font-size:8.5pt;padding:2px 10px;float:right;margin-left:6px" onclick="toggleLearn()">🧠 자가학습 시작</button>
       <button class="ghost noprint" id="liveBtn" style="font-size:8.5pt;padding:2px 10px;float:right" onclick="toggleLive()">▶ 실시간 회의 시작</button></h2>
     <div id="liveLog" style="max-height:340px;overflow:auto;font-size:8.6pt;line-height:1.55;background:#08161d;color:#cfe;border-radius:8px;padding:10px;font-family:ui-monospace,Menlo,Consolas,monospace;margin-top:6px">▶ '실시간 회의 시작'을 누르면 교사군집이 주제를 돌아가며 실시간으로 토론합니다.</div>
   </div>
@@ -411,6 +412,32 @@ function liveLoop(){
     if(LIVE.on) setTimeout(liveLoop, 4500);
   }).catch(function(e){ liveLine('<div style="color:#f88">오류: '+esc(e.message)+'</div>'); if(LIVE.on) setTimeout(liveLoop, 9000); });
 }
+var LEARN={on:false,i:0,types:["빈칸","함의","주제","어법","어휘","요약","제목","내용불일치","조건영작","어법수정","배열영작","영영풀이"]};
+function toggleLearn(){ LEARN.on=!LEARN.on; var b=document.getElementById("learnBtn"); if(b) b.textContent=LEARN.on?"■ 자가학습 중지":"🧠 자가학습 시작"; if(LEARN.on){ liveLine('<div style="color:#8cf">🧠 자가학습 시작 — 스스로 출제→교사 자가비평→일반화 규칙 학습→즉시 반영</div>'); learnLoop(); } else liveLine('<div style="color:#f88">■ 자가학습 중지</div>'); }
+function learnLoop(){
+  if(!LEARN.on||!window.T) return;
+  var type=LEARN.types[LEARN.i%LEARN.types.length]; LEARN.i++;
+  var pg=(document.getElementById("passage").value||"").trim();
+  if(pg.length<40){ var cp=(T.corpusPassage?T.corpusPassage({}):null); pg=cp?cp.text:"Happiness is culturally constructed rather than a universal personal achievement, deeply shaped by whether a culture prioritizes individual success or collective harmony."; }
+  liveLine('<div style="color:#ffd166;margin-top:6px">━━ 자가학습 #'+LEARN.i+' · '+esc(type)+' 출제→자가비평… <span style="color:#789">('+new Date().toLocaleTimeString()+')</span></div>');
+  T.selfLearnStep(pg,type,{teachers:2}).then(function(r){
+    if(!r){ if(LEARN.on) setTimeout(learnLoop,5000); return; }
+    if(r.learned){ liveLine('<div style="color:#6f6">✔ 규칙 학습(검수 '+r.score+'점): '+esc(r.learned)+'</div>'); saveLearned(); }
+    else if(r.fail){ liveLine('<div style="color:#f88">· 생성 실패(재시도)</div>'); }
+    else { liveLine('<div style="color:#9ab">· 검수 '+r.score+'점 — 학습할 결함 없음(양호)</div>'); }
+    if(LEARN.on) setTimeout(learnLoop, r.learned?3500:2500);
+  }).catch(function(e){ liveLine('<div style="color:#f88">오류: '+esc(e.message)+'</div>'); if(LEARN.on) setTimeout(learnLoop,8000); });
+}
+function saveLearned(){ try{ localStorage.setItem("learnedRules",JSON.stringify(T.learnedRules())); }catch(e){} var el=document.getElementById("learnStat"); if(el) el.textContent="· 누적 학습규칙 "+T.learnedRules().length+"개(생성에 반영중)"; }
+function initLearned(){
+  var local=[]; try{ local=JSON.parse(localStorage.getItem("learnedRules")||"[]"); }catch(e){}
+  // 서버(클라우드 루틴)가 탭과 무관하게 누적한 학습규칙도 로드해 병합 → 모든 사용자에 반영
+  fetch("corpus/learned_rules.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+    var server=(d&&d.rules)||[];
+    var all=server.concat(local.filter(function(x){return server.indexOf(x)<0;}));
+    if(all.length&&T.applyLearned){ T.applyLearned(all); var el=document.getElementById("learnStat"); if(el) el.textContent="· 학습규칙 "+all.length+"개(서버 "+server.length+"+로컬, 적용됨)"; }
+  }).catch(function(){ if(local.length&&T.applyLearned){ T.applyLearned(local); var el=document.getElementById("learnStat"); if(el) el.textContent="· 학습규칙 "+local.length+"개(적용됨)"; } });
+}
 function viewMeeting(name){
   var v=document.getElementById("meetView"); if(!v) return; v.innerHTML='<span class="note">불러오는 중…</span>';
   fetch(RAWBASE+"archive/meetings/"+encodeURIComponent(name)+"?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.text();}).then(function(md){
@@ -537,7 +564,7 @@ T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=doc
 T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s&&c&&c.vocab) s.textContent="📚 학습DB: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 반의어 "+(c.synant||0)+" · 구동사 "+(c.phrasal||0)+" · 어법오류 "+(c.gec||0)+" · 교재 "+(c.books||0)+"종 · 연구 "+c.research; }).catch(function(){});
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
-initGroqKey(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
+initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>

@@ -30,7 +30,7 @@
    * 키 미입력 → Pollinations(무키). Gemini/Groq '무료키' 입력 시 그쪽으로 라우팅.
    * 키는 사용자 브라우저(localStorage)에만 저장 — 공개 코드엔 절대 안 들어감. */
   var CFG = { geminiKey: "", groqKey: "", geminiModel: "gemini-2.0-flash", groqModel: "llama-3.3-70b-versatile" };
-  function configure(c) { c = c || {}; Object.assign(CFG, c); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; }
+  function configure(c) { c = c || {}; Object.assign(CFG, c); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; if (c.onLearn) CB.onLearn = c.onLearn; }
   function provider() { return CFG.geminiKey ? "gemini" : (CFG.groqKey ? "groq" : "pollinations"); }
   async function llmRaw(messages, opts) {
     opts = opts || {}; var prov = provider(); var to = withTimeout(opts.timeout || 70000);
@@ -616,6 +616,22 @@
     best._refine = { rounds: rounds, finalScore: bestScore }; return best;
   }
 
+  /* ===== 자가학습: 스스로 만들고 → 교사 패널 자가비평 → 결함에서 일반화 규칙 학습 → STANDING에 반영 ===== */
+  var LEARNED = [];
+  function learnedRules() { return LEARNED.slice(); }
+  function applyLearned(rules) { LEARNED = (rules || []).slice(-60); STANDING = LEARNED.slice(-12).join(" / ").slice(0, 900); return LEARNED.length; }
+  async function selfLearnStep(passage, type, opts) {
+    opts = opts || {}; var onP = opts.onProgress;
+    var q = await generateOne(passage, type, { fast: true }).catch(function () { return null; });
+    if (!q) return { type: type, score: 0, learned: null, fail: true };
+    var c = await panelCritique(q, passage, opts.teachers || 2);
+    if (!c || c.score >= (opts.target || 88) || !(c.issues && c.issues.length)) return { type: type, score: c ? c.score : 0, learned: null };
+    var rule = await ask("다음 '" + type + "' 문항의 결함으로부터, 앞으로 모든 출제에 적용할 '일반화된 개선 규칙' 한 문장을 한국어로 도출하라(구체적·실행가능, 특정 지문에 국한 금지).\n결함: " + JSON.stringify((c.issues || []).slice(0, 3)) + "\n개선지시: " + (c.fix || ""), "규칙 한 문장만.", { noRule: true, temperature: 0.4 });
+    rule = String(rule || "").trim();
+    if (rule.length > 8 && LEARNED.indexOf(rule) < 0) { LEARNED.push(rule); if (LEARNED.length > 60) LEARNED = LEARNED.slice(-60); STANDING = LEARNED.slice(-12).join(" / ").slice(0, 900); try { if (CB.onLearn) CB.onLearn({ type: type, score: c.score, rule: rule }); } catch (_) {} return { type: type, score: c.score, learned: rule, issues: (c.issues || []).slice(0, 2) }; }
+    return { type: type, score: c.score, learned: null };
+  }
+
   /* ===== 창발: 뉴런망 위에서 새 LLM을 창조(동적 뉴런) + 앙상블 메타-LLM ===== */
   var SPAWNED = [];
   function spawnLLM(name, persona) {
@@ -1012,6 +1028,7 @@
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
     refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain, deliberate: deliberate,
+    selfLearnStep: selfLearnStep, learnedRules: learnedRules, applyLearned: applyLearned,
     teacherCount: teacherCount, sampleTeachers: sampleTeachers, makeTeacher: makeTeacher, buildExplanation: buildExplanation,
     brainStructure: brainStructure, regionOf: regionOf,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
