@@ -17,6 +17,8 @@
   var BEST_TYPES = ["어법", "어휘", "빈칸", "주제", "제목", "함의", "요약", "내용불일치", "서술형"];
   // 자기개선 레이어 상태
   var RUNHINT = "", STANDING = "", TYPERULE = "", LEVELRULE = "", DIFF = null, ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {}, USE_ENSEMBLE = false;
+  // 목표 정체성: '한 명의 출제자 뇌' — 최상위권 대학 영어교육과 졸업 + 임용고시 통과 + 수능/내신 출제 전문가
+  var EXPERT_ID = "너는 대한민국 최상위권 대학 영어교육과를 졸업하고 임용고시를 통과한, 수능·모의고사·최상위 내신 출제 경험이 풍부한 최상위권 고등학교 영어 교사이자 출제 전문가다. 영어학(통사·의미·화용·어휘), 영어교육학, 평가·측정(변별도·타당도·공정성), 수능/평가원 출제 원칙(오답 매력도·함정 설계·패러프레이즈·성취기준)에 정통하다.";
 
   function withTimeout(ms) { var c = new AbortController(); var t = setTimeout(function () { c.abort(); }, ms || 45000); return { signal: c.signal, done: function () { clearTimeout(t); } }; }
   async function getJSON(url, ms) { var to = withTimeout(ms); try { return await (await fetch(url, { signal: to.signal })).json(); } finally { to.done(); } }
@@ -471,7 +473,7 @@
   async function critiqueQ(q, passage) {
     var isMCQ = q.choices && q.choices.length >= 4;
     var pg = String(q.passage || passage || "");
-    var sys = "너는 대한민국 수능·최상위 내신 영어 문항 심사위원단(정답검수·오답설계·어법·난이도 4인)이다. 문항을 0~100점으로 냉정히 평가하고 구체적 결함을 짚는다. JSON만.";
+    var sys = EXPERT_ID + " 지금은 문항 심사위원으로서 아래 루브릭으로 0~100점 채점한다: 90+ 실제 출제 가능 수준, 80~89 소폭 수정 필요, 65~79 결함 있음, 65 미만 재작성. 관대하지도 가혹하지도 않게 '실제 수능/내신 기준'으로 매기고 구체적 결함을 짚는다. JSON만.";
     var body = isMCQ
       ? ("유형:" + q.type + "\n발문:" + q.instruction + "\n지문:" + (pg ? pg.slice(0, 800) : "(지문 없음)") + "\n선지:" + JSON.stringify(q.choices) + "\n정답번호:" + q.answer)
       : ("유형:" + q.type + "\n발문:" + q.instruction + "\n(원지문: " + pg.slice(0, 500) + ")\n정답:" + String(q.explanation || "").replace("[모범답안] ", ""));
@@ -528,22 +530,40 @@
   // 앙상블 메타-LLM: N개 페르소나가 각자 사유 → 상호 비평·통합 → 하나의 상위 답(창발적 '새 LLM')
   async function ensemble(prompt, opts) {
     opts = opts || {}; var onP = opts.onProgress;
-    var personas = opts.personas || [
-      { name: "창의출제자", sys: "너는 창의적이고 대담한 영어 출제자다. 신선한 관점으로 답한다." },
-      { name: "엄격검수자", sys: "너는 정확성을 최우선하는 보수적 검수자다. 오류 없는 답만 낸다." },
-      { name: "논리분석가", sys: "너는 논리 구조·근거를 중시하는 분석가다. 단계적으로 사고해 답한다." }
-    ];
-    log(onP, "  🧬 앙상블 메타-LLM 창발 — 페르소나 " + personas.length + "인 사유·비평·합성…");
+    var personas = opts.personas || sampleTeachers(opts.teachers || 3, opts.seed || (task ? task.length : 1));
+    log(onP, "  🧬 교사군집 " + TEACHER_POP.toLocaleString() + "명 중 " + personas.length + "명 소집 → 사유·상호비평·합성…");
     var drafts = [];
     for (var i = 0; i < personas.length; i++) { var d = await ask(prompt, personas[i].sys, { noRule: true, temperature: 0.55 + 0.12 * i }); if (d) drafts.push({ who: personas[i].name, text: d }); }
     if (!drafts.length) return { answer: "", drafts: [] };
     var synth = await ask("아래는 같은 과제에 대한 " + drafts.length + "개 초안이다. 서로의 장점을 통합하고 오류를 제거해 '가장 정확하고 우수한 최종답 하나'만 출력하라.\n\n" + drafts.map(function (x) { return "[" + x.who + "] " + x.text; }).join("\n"), "여러 관점을 통합하는 종합 지성. 최종 결론만 간결히 출력.", { noRule: true, temperature: 0.3 });
     return { answer: synth || drafts[0].text, drafts: drafts };
   }
-  // 기본 창발 LLM 3인을 뉴런망에 창조(런타임에 spawnLLM으로 추가 생성 가능)
-  spawnLLM("창의출제자", "너는 창의적이고 대담한 영어 출제자다.");
-  spawnLLM("엄격검수자", "너는 정확성을 최우선하는 검수자다.");
-  spawnLLM("논리분석가", "너는 논리·근거 중심 분석가다.");
+  // ===== 무한 교사군집: 각 교사=1뉴런. 인덱스→결정론적 고유 페르소나(개념상 수억·수조) =====
+  var T_SPECIAL = ["통사·어법", "어휘·연어", "독해·논리", "화용·함의", "작문·서술형", "듣기·구어체", "영미문학", "언어학 이론", "평가·측정", "교육과정·성취기준", "논증 구조", "담화·응집성"];
+  var T_STYLE = ["평가원 수능형", "최상위 내신형", "EBS 연계형", "논리독해 심화형", "어법 킬러형", "빈칸 추론 심화형", "함정 설계형", "실용·상황형", "패러프레이즈 정교형", "서술형 채점 정밀형"];
+  var T_TRAIT = ["엄정·보수적", "창의·도전적", "학생 눈높이", "변별 극대화", "공정성 최우선", "간결·명료", "고전적 정석", "실험적"];
+  var T_ALMA = ["사범대 영어교육", "영문학", "언어학", "영어영문 교육대학원"];
+  function makeTeacher(i) {
+    i = Math.abs(i | 0);
+    var a = T_SPECIAL[i % T_SPECIAL.length];
+    var b = T_STYLE[Math.floor(i / T_SPECIAL.length) % T_STYLE.length];
+    var c = T_TRAIT[Math.floor(i / (T_SPECIAL.length * T_STYLE.length)) % T_TRAIT.length];
+    var d = T_ALMA[Math.floor(i / (T_SPECIAL.length * T_STYLE.length * T_TRAIT.length)) % T_ALMA.length];
+    var yrs = 8 + (i % 25); // 경력 8~32년 — 인덱스마다 달라 사실상 무한 변주
+    var name = "교사#" + (i + 1) + " (" + a + "·" + b + ")";
+    var sys = EXPERT_ID + " 너의 세부 전공은 '" + a + "', 출제 성향은 '" + b + "', 태도는 '" + c + "', 배경은 '" + d + "', 출제경력 " + yrs + "년이다. 이 관점을 일관되게 견지해 판단·출제한다.";
+    return { idx: i, name: name, special: a, style: b, trait: c, alma: d, years: yrs, sys: sys };
+  }
+  // 조합 공간 = 12×10×8×4×25 = 96,000 고유 페르소나(차원 확장·인덱스 확대로 사실상 무한: makeTeacher(임의 큰 수))
+  var TEACHER_POP = 96000;
+  function teacherCount() { return TEACHER_POP; }
+  function sampleTeachers(k, seed) {
+    k = Math.max(1, k || 5); seed = Math.abs((seed | 0)) || 1; var out = [], used = {};
+    for (var j = 0; j < k; j++) { var idx = (seed * 2654435761 + j * 40503 + j * j * 733) % TEACHER_POP; idx = Math.abs(idx); while (used[idx]) idx = (idx + 1) % TEACHER_POP; used[idx] = 1; out.push(makeTeacher(idx)); }
+    return out;
+  }
+  // 뉴런망에 대표 교사 3인 상시 배치(런타임에 sampleTeachers로 수백~수천 명 소집 가능)
+  [7, 314, 2718].forEach(function (i) { var t = makeTeacher(i); spawnLLM(t.name, t.sys); });
 
   // ===== brain: 무료 API 신경다발을 '나(Claude)처럼' 엮은 범용 추론 엔진 =====
   // 분해 → 지식검색(API 뉴런) → 다관점 사유(앙상블) → 자기비판 → 개선(수렴) → 기억
@@ -568,7 +588,7 @@
     var scores = [];
     for (var r = 1; r <= maxR; r++) {
       log(onP, "🧠 [4/5] 자기비판 라운드 " + r + "…");
-      var crit = await llmJSON([{ role: "system", content: "너는 엄격한 검토자다. JSON만." }, { role: "user", content: "과제: " + task + "\n현재 답:\n" + answer + ctx + "\n\n이 답의 결함·누락·사실오류를 지적하고 0~100으로 채점하라. JSON: {\"score\":정수,\"issues\":[\"결함\"],\"fix\":\"개선지시 한 문장\"}. JSON만." }], { noRule: true, temperature: 0.3, timeout: 55000 });
+      var crit = await llmJSON([{ role: "system", content: EXPERT_ID + " 지금은 검토자로서 루브릭(90+ 우수, 80~89 소폭수정, 65~79 결함, 65미만 재작성)으로 채점한다. JSON만." }, { role: "user", content: "과제: " + task + "\n현재 답:\n" + answer + ctx + "\n\n이 답의 결함·누락·사실오류를 지적하고 위 루브릭으로 채점하라. JSON: {\"score\":정수,\"issues\":[\"결함\"],\"fix\":\"개선지시 한 문장\"}. JSON만." }], { noRule: true, temperature: 0.3, timeout: 55000 });
       scores.push(crit && crit.score); trace.steps.push({ step: "비판" + r, data: crit });
       if (!crit || (crit.score || 0) >= 90 || !(crit.issues && crit.issues.length)) break;
       log(onP, "🧠 [5/5] 개선 라운드 " + r + "…");
@@ -837,6 +857,7 @@
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
     refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain,
+    teacherCount: teacherCount, sampleTeachers: sampleTeachers, makeTeacher: makeTeacher,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
