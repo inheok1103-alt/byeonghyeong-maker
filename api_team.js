@@ -267,7 +267,7 @@
   async function reviewOptions(answer, dis, ctx) {
     ctx = ctx || {};
     var sys = "너는 대한민국 수능 영어 '선지(보기) 검수관'이다. 5개 선택지를 최종 점검·정리한다: ①정답은 글을 정확히 반영하는 '단 하나' ②오답 4개는 서로 및 정답과 의미가 겹치지 않게, '부분일치/정반대/글과무관/과장·일반화' 등 서로 다른 방식으로 분명히 틀리되 매력적으로(본문 단어 일부 재활용) ③5개의 길이·문법 형태를 서로 통일 ④어법 오류 수정 ⑤빈칸/요약형이면 완성 문장이 아니라 끼워지는 '어구/절'로 ⑥정답은 본문 표현을 그대로 베끼지 말고 패러프레이즈. JSON만.";
-    var user = "유형: " + (ctx.type || "") + "\n정답 선지: \"" + answer + "\"\n오답 초안: " + JSON.stringify(dis || []) + (ctx.main ? ("\n글 핵심: " + ctx.main) : "") + "\n위 기준대로 5개 선지를 다듬어 JSON으로: {\"choices\":[\"5개 문자열\"],\"answer\":정답의 1~5 위치(정수)}. JSON만.";
+    var user = "유형: " + (ctx.type || "") + "\n정답 선지: \"" + answer + "\"\n오답 초안: " + JSON.stringify(dis || []) + (ctx.main ? ("\n글 핵심: " + ctx.main) : "") + (ctx.slot ? ("\n빈칸 프레임(모든 선지는 이 '____' 자리에 문법적으로 그대로 들어가야 함, 완성문장 금지): " + ctx.slot) : "") + "\n위 기준대로 5개 선지를 다듬어 JSON으로: {\"choices\":[\"5개 문자열\"],\"answer\":정답의 1~5 위치(정수)}. JSON만.";
     var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { temperature: 0.4, timeout: 60000 });
     if (r && Array.isArray(r.choices) && r.choices.length >= 4) {
       var ch = r.choices.map(clean1).filter(Boolean).slice(0, 5);
@@ -327,13 +327,16 @@
       explanation: "글의 핵심 논지는 '" + st.main + "'이며 정답" + (st.ko ? (" (" + st.ko + ")") : "") + "이 이를 반영한다.",
       _audit: (st.gi && st.gi.length) ? ("어법 의심 " + st.gi.length + "건") : "검증 통과", _trace: st._trace };
   }
-  // 빈칸: ① 핵심어구 비우기 → ② 정답 → ③ 역할별 오답
+  // 빈칸: ① 핵심 논지 자리에 어구 비우기(도입부 회피) → ② 프레임 맞춤 어구형 정답 → ③ 역할별 오답
   async function buildBlank(passage) {
-    var o = await llmJSON([{ role: "system", content: "수능 빈칸추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 핵심 논지를 담은 어구 한 곳(3~10단어)을 골라 ____ 로 비워라. 정답은 그 어구를 '본문 표현 그대로가 아니라 상위어·동의어로 패러프레이즈'한 간결한 영어 어구로 하라(완성 문장 아님, 다른 선택지와 길이·형태를 맞춤). JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"패러프레이즈한 정답 어구\",\"orig\":\"본문에서 비운 원래 어구\"}.\n\n" + passage }], { temperature: 0.45, timeout: 60000 });
+    var o = await llmJSON([{ role: "system", content: "수능 빈칸추론 출제자. 빈칸은 필자의 핵심 주장·결론을 담은 자리에 두고 도입부 정의문·예시·부연은 피한다. JSON만." }, { role: "user", content: "다음 글에서 필자의 핵심 주장/결론을 담은 문장을 고르고, 그 문장에서 논지의 핵심 어구(3~8단어)를 ____ 로 비워라(도입부 첫 문장은 피할 것). 정답은 빈칸에 '문법적으로 그대로 들어맞는 간결한 영어 어구(완성 문장 절대 아님)'로, 본문 표현이 아니라 상위어·동의어로 패러프레이즈하라. JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"빈칸에 들어갈 정답 어구\",\"orig\":\"비운 원래 어구\",\"frame\":\"빈칸이 든 문장만(____ 포함)\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
     if (!o || !o.answer || !o.blanked) return null;
-    var dis = await makeDistractors(o.answer, "빈칸에 들어갈 간결한 영어 어구(완성 문장 아님, 정답과 길이·형태 통일)", "빈칸 추론. 오답은 본문 단어를 재활용하되 논리가 어긋나게(정반대/부분일치/무관/과장).");
-    var a = await reviewOptions(o.answer, dis, { type: "빈칸" });
-    return { type: "빈칸", instruction: "다음 빈칸에 들어갈 말로 가장 적절한 것은?", passage: o.blanked, choices: a.choices, answer: a.answer, explanation: "빈칸에는 '" + o.answer + "'가 들어가 글의 논지를 완성한다" + (o.orig ? (" (본문 '" + o.orig + "'의 패러프레이즈)") : "") + "." };
+    var frame = o.frame || "";
+    var dis = await makeDistractors(o.answer, "빈칸 '____'에 그대로 끼워지는 간결한 영어 어구(완성 문장 아님, 정답과 품사·길이 통일)", "빈칸 프레임: " + (frame || "(문장 일부)") + "\n오답은 본문 어휘를 재활용하되 이 자리에 넣으면 논리가 어긋나게(정반대/부분일치/무관/과장).");
+    var a = await reviewOptions(o.answer, dis, { type: "빈칸", slot: frame, main: o.answer });
+    // 형태 가드: 완성문장형(주어+be/조동사 시작) 선지를 어구형으로 축약
+    var ch = (a.choices || []).map(function (c) { return String(c).replace(/^\s*(happiness|it|one|people|the individual|this|they|we|society)\s+(is|are|was|were|has|have|can|will|becomes?)\s+/i, "").trim(); });
+    return { type: "빈칸", instruction: "다음 빈칸에 들어갈 말로 가장 적절한 것은?", passage: o.blanked, choices: ch, answer: a.answer, explanation: "빈칸에는 '" + o.answer + "'가 들어가 글의 논지를 완성한다" + (o.orig ? (" (본문 '" + o.orig + "'의 패러프레이즈)") : "") + "." };
   }
   // 함의: ① 밑줄 구절+의미 → ② 역할별 오답
   async function buildImplication(passage) {
@@ -581,6 +584,26 @@
   }
 
   // 메인: ① 모든 API로 컨텍스트 사전수집 → ② 유형마다 초미분화 직렬 생성(유형별 3회 재시도)
+  // 출제의도(정답지 필수): 유형별 평가 목표 + 구체 논지
+  function intentFor(q) {
+    var type = q.type || "", core = "";
+    var m = /핵심 논지는 '([^']+)'/.exec(q.explanation || ""); if (m) core = m[1];
+    var base = {
+      "주제": "글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다.",
+      "제목": "글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다.",
+      "요지": "필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다.",
+      "빈칸": "문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다.",
+      "함의": "밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다.",
+      "요약": "글의 요지를 한 문장으로 압축하며 두 핵심어(A·B)를 정확히 채우는 능력을 평가한다.",
+      "어법": "문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.",
+      "어휘": "문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.",
+      "내용불일치": "세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다.",
+      "내용일치": "세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+    }[type] || "지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함).";
+    return base + (core ? (" [핵심 논지: " + core + "]") : "");
+  }
+  function stampIntent(q) { if (!q) return q; q.intent = intentFor(q); if (String(q.explanation || "").indexOf("【출제의도】") < 0) q.explanation = String(q.explanation || "") + "\n【출제의도】 " + q.intent; return q; }
+
   async function generateExam(passage, types, opts) {
     opts = opts || {}; var onP = opts.onProgress, out = []; USE_ENSEMBLE = !!opts.ensemble;
     log(onP, "■ 1단계: 자료 수집반 가동(전 API)…");
@@ -607,6 +630,7 @@
       if (got) {
         if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
         if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage }); }
+        stampIntent(got);
         out.push(got);
       } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
     }
@@ -624,6 +648,7 @@
     if (q && TYPE_INSTR[type]) { if (TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type]; }
     if (q) q.level = opts.level || "";
     if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage });
+    stampIntent(q);
     return q;
   }
 
@@ -637,6 +662,66 @@
     var g = await grammar(String(o.variant).replace(/<[^>]+>/g, " ").replace(/_{2,}/g, " x "));
     if (g.length) { log(onP, "③ 어법 " + g.length + "건 수정…"); var fix = await llmJSON([{ role: "system", content: "영어 교정." }, { role: "user", content: "어법만 고쳐라(의미·표시 유지). 지적: " + g.slice(0, 6).map(function (x) { return '"' + x.bad + '"' + (x.fix ? "→" + x.fix : ""); }).join(", ") + "\n\n" + o.variant + "\n\n출력 JSON: {\"variant\":\"...\"}. JSON만." }], { temperature: 0.2, timeout: 50000 }); if (fix && fix.variant) o.variant = fix.variant; }
     log(onP, "✓ 완료"); return o;
+  }
+
+  // ===== 단계별 지문 변형(세분화): 단어→구문→문장→주제유지, 단계마다 다중 API 협업 =====
+  var STAGE_INFO = {
+    word: { name: "1단계 단어 변형", desc: "문장 구조·어순·길이는 그대로 두고 내용어만 동의어로 교체(의미 100% 보존)" },
+    phrase: { name: "2단계 구문 변형", desc: "어휘는 대부분 유지하되 절 순서·태(수동/능동)·연결사·구 구조를 바꿈" },
+    sentence: { name: "3단계 문장 재구성", desc: "각 문장을 새 구조+새 어휘로 다시 쓰되 내용(정보)은 동일하게" },
+    theme: { name: "4단계 주제만 유지", desc: "주제/논지만 남기고 예시·전개·문장을 전부 새로 써서 완전히 새 지문 생성" }
+  };
+  async function transformStaged(passage, level, opts) {
+    opts = opts || {}; var onP = opts.onProgress; level = level || "word";
+    var trace = [], variant = "", changed = [];
+    if (level === "word") {
+      log(onP, "① 내용어 동의어 수집(Datamuse syn)…");
+      var cw = contentWords(passage).slice(0, 14), syn = {};
+      await Promise.all(cw.map(async function (w) { try { var s = await datamuse(w, "syn", 3); if (s.length) syn[w] = s; } catch (_) {} }));
+      trace.push({ line: 1, api: "datamuse", label: "동의어 " + Object.keys(syn).length + "어 수집", ok: true });
+      var hint = Object.keys(syn).map(function (w) { return w + "→" + syn[w].join("/"); }).join(", ");
+      log(onP, "② LLM 어휘 치환(구조 유지)…");
+      var o = await llmJSON([{ role: "system", content: "영어 교재 편집자. 문장 구조·어순·길이는 '그대로' 두고 내용어만 동의어로 교체한다. 의미 보존. JSON만." }, { role: "user", content: "아래 동의어 후보를 참고해 지문의 구조는 유지하고 핵심 내용어만 자연스러운 동의어로 바꿔라. 후보(강제 아님): " + (hint || "-") + "\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"어휘만 바뀐 지문\",\"changed\":[\"바뀐 단어쌍 예: happiness→well-being 5개\"]}. JSON만." }], { noRule: true, temperature: 0.5, timeout: 60000 });
+      trace.push({ line: 2, api: "llm", label: "어휘 치환", ok: !!(o && o.variant) });
+      if (o) { variant = o.variant || ""; changed = o.changed || []; }
+    } else if (level === "phrase") {
+      log(onP, "① 연어 확인(Datamuse bgb)…");
+      var cw2 = contentWords(passage).slice(0, 6), col = {};
+      await Promise.all(cw2.map(async function (w) { try { var b = await datamuse(w, "bgb", 3); if (b.length) col[w] = b; } catch (_) {} }));
+      trace.push({ line: 1, api: "datamuse", label: "연어 확인", ok: true });
+      log(onP, "② LLM 구문 재구성(어휘 유지)…");
+      var o2 = await llmJSON([{ role: "system", content: "영어 문장 구조 변형가. 어휘는 대부분 유지하되 절 순서·태·연결사·구 구조를 바꿔 같은 의미를 다른 구문으로 표현한다. JSON만." }, { role: "user", content: "지문의 각 문장을 '어휘는 최대한 유지'하되 구문(능동↔수동, 절 순서, 분사구문, 연결사)만 바꿔라. 의미 동일.\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"구문이 바뀐 지문\",\"changed\":[\"바꾼 구문 기법 few개\"]}. JSON만." }], { noRule: true, temperature: 0.55, timeout: 60000 });
+      trace.push({ line: 2, api: "llm", label: "구문 재구성", ok: !!(o2 && o2.variant) });
+      if (o2) { variant = o2.variant || ""; changed = o2.changed || []; }
+    } else if (level === "sentence") {
+      log(onP, "① LLM 문장 재구성(구조+어휘 새로, 내용 동일)…");
+      var o3 = await llmJSON([{ role: "system", content: "영어 리라이팅 전문가. 각 문장을 새 구조·새 어휘로 다시 쓰되 담긴 정보·논지는 동일하게 보존한다. JSON만." }, { role: "user", content: "지문을 문장 단위로 완전히 새로 써라(구조·표현·어휘 모두 새롭게, 그러나 정보·논리 흐름은 동일). 원문 표현 복사 금지.\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"재구성 지문\",\"changed\":[\"핵심 변화 few개\"]}. JSON만." }], { noRule: true, temperature: 0.6, timeout: 60000 });
+      trace.push({ line: 1, api: "llm", label: "문장 재구성", ok: !!(o3 && o3.variant) });
+      if (o3) { variant = o3.variant || ""; changed = o3.changed || []; }
+    } else { // theme
+      log(onP, "① 주제·논지 추출…");
+      var theme = await ask("이 글의 주제와 핵심 논지를 영어 한 문장으로(답만).\n\n" + passage, "한 문장. 답만.", { noRule: true });
+      trace.push({ line: 1, api: "llm", label: "주제 추출", ok: !!theme });
+      log(onP, "② 관련 배경 조회(Wikipedia)…");
+      var kw = await ask("이 글의 핵심 주제어를 영어 1~2단어로(답만).\n\n" + passage.slice(0, 300), "단어만.", { noRule: true }).catch(function () { return ""; });
+      var bg = kw ? await wiki(kw).catch(function () { return null; }) : null;
+      trace.push({ line: 2, api: "wiki", label: "배경 조회", ok: !!bg });
+      log(onP, "③ 주제 유지·전면 재창작…");
+      var o4 = await llmJSON([{ role: "system", content: "영어 지문 작가. 주어진 주제/논지만 유지하고 예시·전개·문장은 전부 새로 써서 완전히 다른 지문을 만든다(길이 유사, 수능 지문체). JSON만." }, { role: "user", content: "주제/논지: " + (theme || "") + (bg && bg.extract ? ("\n참고 배경: " + bg.extract.slice(0, 200)) : "") + "\n\n이 주제만 유지하고 새로운 예시·근거·전개로 완전히 새 지문(원문과 문장 겹침 금지, 100~140단어)을 써라.\n\nJSON: {\"variant\":\"새 지문\",\"changed\":[\"유지한 주제 1개\",\"새로 넣은 요소 few개\"]}. JSON만." }], { noRule: true, temperature: 0.7, timeout: 60000 });
+      trace.push({ line: 3, api: "llm", label: "주제유지 재창작", ok: !!(o4 && o4.variant) });
+      if (o4) { variant = o4.variant || ""; changed = o4.changed || []; }
+    }
+    if (!variant) return { variant: "", level: level, note: (STAGE_INFO[level] || {}).name + " 생성 실패", changed: [], _trace: trace };
+    // 공통 검증: LanguageTool 어법 + (주제단계) 원문 비중복 확인
+    log(onP, "④ 어법 검증(LanguageTool)…");
+    var gi = []; try { gi = await grammar(String(variant).replace(/<[^>]+>/g, " ")); } catch (_) {}
+    trace.push({ line: trace.length + 1, api: "grammar", label: "어법 검증 " + (gi.length ? (gi.length + "건") : "통과"), ok: true });
+    if (gi.length) {
+      var fix = await llmJSON([{ role: "system", content: "영어 교정. 의미 유지, 어법만." }, { role: "user", content: "어법만 고쳐라. 지적: " + gi.slice(0, 6).map(function (x) { return '"' + x.bad + '"' + (x.fix ? "→" + x.fix : ""); }).join(", ") + "\n\n" + variant + "\n\nJSON: {\"variant\":\"...\"}. JSON만." }], { noRule: true, temperature: 0.2, timeout: 50000 });
+      if (fix && fix.variant) variant = fix.variant;
+    }
+    log(onP, "✓ " + (STAGE_INFO[level] || {}).name + " 완료");
+    return { variant: variant, level: level, stage: (STAGE_INFO[level] || {}).name, note: (STAGE_INFO[level] || {}).desc, changed: changed, audit: gi.length ? ("어법 " + gi.length + "건 교정") : "어법 통과", _trace: trace };
   }
 
   async function buildVocabList(passage, opts) {
@@ -692,7 +777,7 @@
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
     refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; },
-    generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
+    generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
 })();
