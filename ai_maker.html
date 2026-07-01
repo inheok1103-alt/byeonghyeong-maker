@@ -188,7 +188,9 @@ button:active{transform:translateY(0)}
     <div class="row" style="margin-top:6px;border-bottom:1px solid #eee;padding-bottom:6px">
       <button class="ghost" id="tabProj" onclick="archiveTab('proj')" style="font-weight:700">📋 프로젝트</button>
       <button class="ghost" id="tabRules" onclick="archiveTab('rules')">📏 실사용 규칙</button>
-      <button class="ghost" id="tabMeet" onclick="archiveTab('meet')">🗣 회의 대화문</button>
+      <button class="ghost" id="tabMeet" onclick="archiveTab('meet')">🗣 서버 회의록</button>
+      <button class="ghost" id="tabLearn" onclick="archiveTab('mylearn')">🧬 학습규칙 DB</button>
+      <button class="ghost" id="tabMymeet" onclick="archiveTab('mymeet')">🔴 실시간 회의기록</button>
       <span class="note" id="archStat"></span>
     </div>
     <div id="archBody" style="margin-top:8px;font-size:9pt"></div>
@@ -421,7 +423,7 @@ function loadArchive(){
   });
 }
 function archiveTab(t){
-  ARCH.cur=t; [["proj","tabProj"],["rules","tabRules"],["meet","tabMeet"]].forEach(function(p){ var b=document.getElementById(p[1]); if(b) b.style.fontWeight=(p[0]===t?"700":"400"); });
+  ARCH.cur=t; [["proj","tabProj"],["rules","tabRules"],["meet","tabMeet"],["mylearn","tabLearn"],["mymeet","tabMymeet"]].forEach(function(p){ var b=document.getElementById(p[1]); if(b) b.style.fontWeight=(p[0]===t?"800":"400"); });
   var el=document.getElementById("archBody"); if(!el) return;
   if(t==="proj"){
     var ps=(ARCH.proj&&ARCH.proj.projects)||[];
@@ -429,10 +431,18 @@ function archiveTab(t){
     el.innerHTML=ps.slice(0,40).map(function(p){ var c=(p.status==="완료")?"#0f766e":"#b45309"; return '<div style="border-left:3px solid '+c+';padding:5px 0 5px 10px;margin:6px 0"><span style="background:'+c+';color:#fff;border-radius:6px;padding:1px 7px;font-size:8pt">'+esc(p.status||"진행중")+'</span> <b>'+esc(p.title||p.focus||"")+'</b> <span style="color:#999;font-size:8pt">'+esc(String(p.time||"").slice(0,16).replace("T"," "))+((p.teachers&&p.teachers.length)?(" · 교사 "+p.teachers.length+"명"):"")+'</span>'+(p.summary?('<div style="color:#566;margin-top:2px">'+esc(p.summary)+'</div>'):'')+'</div>'; }).join("");
   } else if(t==="rules"){
     el.innerHTML=ARCH.rules?('<div style="white-space:pre-wrap;font-size:8.8pt;line-height:1.55;background:#f8fafb;padding:10px;border-radius:8px;max-height:500px;overflow:auto">'+esc(ARCH.rules)+'</div>'):'<div class="note">아직 규칙이 비어 있습니다.</div>';
-  } else {
+  } else if(t==="meet"){
     var ms=ARCH.meetList||[];
-    if(!ms.length){ el.innerHTML='<div class="note">아직 회의 대화문이 없습니다.</div>'; return; }
+    if(!ms.length){ el.innerHTML='<div class="note">아직 서버 회의록이 없습니다.</div>'; return; }
     el.innerHTML=ms.slice().reverse().slice(0,30).map(function(f){ return '<button class="ghost noprint" style="font-size:8.4pt;margin:2px 4px 2px 0" onclick="viewMeeting(\''+esc(f.name)+'\')">🗣 '+esc(f.name.replace(/\.md$/,""))+'</button>'; }).join("")+'<div id="meetView" style="margin-top:7px"></div>';
+  } else if(t==="mylearn"){
+    var rules=(window.T&&T.learnedRules)?T.learnedRules():[]; if(!rules.length){ try{ rules=JSON.parse(localStorage.getItem("learnedRules")||"[]"); }catch(e){} }
+    if(!rules.length){ el.innerHTML='<div class="note">아직 학습한 규칙이 없습니다. 상단 🧠 <b>자가학습 시작</b>을 켜면 교사군집이 스스로 결함을 찾아 규칙을 쌓고, 여기에 DB로 누적됩니다(생성에 즉시 반영).</div>'; return; }
+    el.innerHTML='<div class="note" style="margin-bottom:6px">🧬 누적 학습규칙 <b>'+rules.length+'개</b> — 문제제작 시 STANDING으로 즉시 반영됨 · 브라우저에 영구 저장</div>'+rules.slice().reverse().map(function(r){ return '<div style="border-left:3px solid #7c3aed;padding:5px 0 5px 10px;margin:5px 0;font-size:9pt;color:#334">'+esc(r)+'</div>'; }).join("");
+  } else if(t==="mymeet"){
+    var lm=[]; try{ lm=JSON.parse(localStorage.getItem("liveMeetings")||"[]"); }catch(e){}
+    if(!lm.length){ el.innerHTML='<div class="note">아직 실시간 회의 기록이 없습니다. 🔴 <b>실시간 회의</b>가 돌면 회의록(대화문·판정)이 여기 DB로 쌓입니다.</div>'; return; }
+    el.innerHTML='<div class="note" style="margin-bottom:6px">🔴 누적 회의 <b>'+lm.length+'건</b> · 각 항목 클릭 시 대화문 열람</div>'+lm.map(function(m){ var c={"반영":"#0f766e","부분반영":"#b45309","보류":"#6b7280","반려":"#b03a2e"}[m.verdict]||"#555"; return '<details style="margin:5px 0"><summary style="cursor:pointer;font-size:9pt"><span style="background:'+c+';color:#fff;border-radius:6px;padding:1px 7px;font-size:8pt">'+esc(m.verdict||"")+'</span> <b>'+esc(m.topic||"")+'</b> <span style="color:#999;font-size:8pt">'+esc(m.t||"")+'</span></summary><div style="font-size:8.6pt;background:#f8fafb;padding:8px;border-radius:6px;margin-top:3px;line-height:1.55">'+(m.dialogue||[]).map(function(d){return '<b style="color:#0f766e">'+esc(d.speaker)+':</b> '+esc(d.text);}).join('<br>')+(m.reason?('<div style="margin-top:5px;color:#0f766e">▷ 합의: '+esc(m.reason)+'</div>'):'')+'</div></details>'; }).join("");
   }
 }
 var LIVE={on:false, i:0, topics:["빈칸 유형의 매력적 오답 설계 기법을 정교화","함의 유형의 함정(표면의미 오답) 설계","어법 유형 난이도 상향(준동사·수일치 함정)","주제/제목 오답의 상호 비중복 확보","서술형 채점 기준(부분점수) 정교화","어휘 유형 반의어 오답 선정 원칙","요약 빈칸 정답어 선정과 오답 쌍 설계","내용불일치 오답의 미묘한 왜곡 기법","조건영작 조건(어형변화·단어수) 설정 원칙","지문 난이도(CEFR)별 문항 배치 전략"]};
