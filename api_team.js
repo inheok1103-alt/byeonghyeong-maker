@@ -114,6 +114,7 @@
       { key: "gh_cefr", name: "CEFR등급", group: "학습DB", api: "CEFR-J(GitHub)" }, { key: "gh_synant", name: "유의반의", group: "학습DB", api: "Fernald(GitHub)" },
       { key: "gh_phrasal", name: "구동사", group: "학습DB", api: "phrasal-verbs(GitHub)" }, { key: "gh_gec", name: "어법오류패턴", group: "학습DB", api: "JFLEG(GitHub)" },
       { key: "gh_freq", name: "상용어빈도", group: "학습DB", api: "google-10k(GitHub)" }, { key: "gh_corpus", name: "원서코퍼스", group: "학습DB", api: "원서·카톡(로컬)" },
+      { key: "gh_books", name: "교재DB582", group: "학습DB", api: "이인혁 마스터DB" },
       { key: "llm_main", name: "핵심논지", group: "이해", api: "Pollinations" }, { key: "llm_ans", name: "정답작성", group: "생성", api: "Pollinations" },
       { key: "llm_dis", name: "오답설계", group: "생성", api: "Pollinations" },
       { key: "critic", name: "선지검수관", group: "검증", api: "Pollinations" }, { key: "grammar", name: "어법검수", group: "검증", api: "LanguageTool" },
@@ -144,6 +145,7 @@
     S.push(["gh_phrasal", "llm_ans"], ["gh_phrasal", "llm_dis"], ["gh_phrasal", "dict_def"]);
     S.push(["gh_gec", "grammar"], ["gh_gec", "critic"], ["gh_gec", "llm_ans"]);
     S.push(["gh_corpus", "llm_main"], ["gh_corpus", "image"], ["gh_corpus", "wiki_bg"]);
+    S.push(["gh_books", "llm_main"], ["gh_books", "critic"], ["gh_books", "meeting"]);
     return { neurons: N, synapses: S, groups: ["입력", "학습DB", "이해", "생성", "검증", "피드백", "출력"], roster: ROSTER };
   })();
   function topology() {
@@ -169,7 +171,7 @@
     { region: "연합 피질 · 교사군집", anat: "Association Cortex", fn: "통합 고등사고 — 교사 다관점 합성", group: "창발", pos: [0, -0.1, -1.1],
       roles: ["교사군집 — 전공·성향별 표집(무한)", "회의의장 — 합의 판정(반영/반려)", "앙상블 — 다관점 초안 합성"] },
     { region: "해마 · 학습DB", anat: "Hippocampus", fn: "기억·학습 저장 — GitHub·원서 데이터를 API와 엮음", group: "학습DB", pos: [0, -1.0, 0.35],
-      roles: ["CEFR등급(GitHub) — 난이도 판정", "유의반의(GitHub) — 오답·중복차단", "구동사(GitHub) — 어법/어휘/단어장", "어법오류패턴 JFLEG(GitHub) — 어법 실오류", "상용어빈도 google-10k(GitHub)", "원서 코퍼스(로컬) — 지문·배경"] }
+      roles: ["CEFR등급(GitHub) — 난이도 판정", "유의반의(GitHub) — 오답·중복차단", "구동사(GitHub) — 어법/어휘/단어장", "어법오류패턴 JFLEG(GitHub) — 어법 실오류", "상용어빈도 google-10k(GitHub)", "원서 코퍼스(로컬) — 지문·배경", "교재DB 582종(마스터) — 출판사·영역·단계·약점별 추천"] }
   ];
   var BRAIN_EXTRA = [
     { region: "해마", anat: "Hippocampus", fn: "기억·학습 저장", roles: ["코퍼스 — 원서 어휘·지문·CEFR", "24h 연구 누적 아카이브", "공유 개선지침"] },
@@ -200,10 +202,11 @@
     try { var r = await fetch(url, { cache: "no-store" }); DIFF = await r.json(); return { ok: true, levels: DIFF.levels ? Object.keys(DIFF.levels) : [] }; } catch (e) { return { ok: false, error: String(e) }; }
   }
   // 원서 코퍼스 런타임 학습: 어휘난이도밴드·콜로케이션·등급별 지문 로드 → 난이도/어휘 판정에 반영
-  var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null, synant: null, phrasal: null, gec: null };
+  var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null, synant: null, phrasal: null, gec: null, books: null };
   function synAnt(word) { return (CORPUS.synant && CORPUS.synant[String(word || "").toLowerCase()]) || null; }
   function phrasalVerbs() { return CORPUS.phrasal || []; }
   function gecExamples(k) { var g = CORPUS.gec || []; if (!g.length) return ""; var out = []; for (var i = 0; i < (k || 2); i++) { var e = g[rint(g.length)]; if (e) out.push("'" + e.err + "' → '" + e.fix + "'"); } return out.join(" | "); }
+  function recommendBooks(opts) { opts = opts || {}; var bs = CORPUS.books || []; var r = bs.filter(function (b) { return (!opts.skill || (b.skill || "").indexOf(opts.skill) >= 0) && (!opts.grade || (b.grade || "").indexOf(opts.grade) >= 0) && (!opts.weak || (b.weak || []).some(function (w) { return w.indexOf(opts.weak) >= 0; })); }); return (r.length ? r : bs).slice(0, opts.n || 8); }
   var CEFR_BAND = { A1: "기초", A2: "쉬움", B1: "보통", B2: "보통", C1: "고급", C2: "희귀" };
   async function loadCorpus(base) {
     base = base || "corpus/"; var t = "?_t=" + (new Date()).getTime();
@@ -215,7 +218,8 @@
     try { var sa = await getJSON(base + "synant.json" + t, 15000); if (sa && sa.map) CORPUS.synant = sa.map; } catch (_) {}
     try { var pv = await getJSON(base + "phrasal_verbs.json" + t, 15000); if (pv && pv.verbs) CORPUS.phrasal = pv.verbs; } catch (_) {}
     try { var gc = await getJSON(base + "gec_pairs.json" + t, 15000); if (gc && gc.pairs) CORPUS.gec = gc.pairs; } catch (_) {}
-    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0, synant: CORPUS.synant ? Object.keys(CORPUS.synant).length : 0, phrasal: (CORPUS.phrasal || []).length, gec: (CORPUS.gec || []).length };
+    try { var bk = await getJSON(base + "book_db.json" + t, 20000); if (bk && bk.books) CORPUS.books = bk.books; } catch (_) {}
+    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0, synant: CORPUS.synant ? Object.keys(CORPUS.synant).length : 0, phrasal: (CORPUS.phrasal || []).length, gec: (CORPUS.gec || []).length, books: (CORPUS.books || []).length };
   }
   function cefrOf(word) { return (CORPUS.cefr && CORPUS.cefr[String(word || "").toLowerCase()]) || ""; }
   function corpusInfo() { return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0 }; }
@@ -1003,7 +1007,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
-    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples,
+    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
