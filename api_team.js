@@ -861,6 +861,10 @@
       : "위 서술형의 상세 해설을 작성하라. JSON: {\"correct\":\"모범답안 해설·핵심 포인트\",\"rubric\":[\"채점 포인트 몇 개\"],\"vocab\":[\"핵심 어휘·구문(영어-뜻)\"],\"intent\":\"출제의도 한 줄\"}. JSON만.";
     var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: head + "\n\n" + spec }], { noRule: true, temperature: 0.4, timeout: 60000 });
     if (!r) return null;
+    function toStr(v) { return typeof v === "string" ? v : (v && (v.word || v.term || v.phrase || v.expression) ? ((v.word || v.term || v.phrase || v.expression) + (v.meaning || v.def || v.뜻 ? (" — " + (v.meaning || v.def || v.뜻)) : "")) : (v && v.point ? v.point : (v ? JSON.stringify(v) : ""))); }
+    if (Array.isArray(r.vocab)) r.vocab = r.vocab.map(toStr).filter(Boolean);
+    if (Array.isArray(r.rubric)) r.rubric = r.rubric.map(toStr).filter(Boolean);
+    if (Array.isArray(r.distractors)) r.distractors = r.distractors.map(function (d) { return typeof d === "string" ? { n: "", why: d } : { n: d.n != null ? d.n : "", why: d.why || d.reason || toStr(d) }; });
     r.type = q.type; r.isMCQ = isMCQ; return r;
   }
 
