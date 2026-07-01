@@ -426,9 +426,21 @@
     var cw = contentWords(passage).slice(0, 8), ant = {};
     await Promise.all(cw.map(async function (w) { var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; }));
     var brief = Object.keys(ant).map(function (w) { return w + "↔" + ant[w]; }).join(", ");
-    var o = await llmJSON([{ role: "system", content: "어휘(문맥상 부적절) 출제자. JSON만." }, { role: "user", content: "다음 지문에서 핵심 단어 5개를 골라 각 단어 앞에 ⓐⓑⓒⓓⓔ를 붙이고 <u>밑줄</u>하라. 그 중 정확히 1개만 '문맥상 부적절한 반의어'로 바꿔라. 참고 반의어쌍: " + (brief || "-") + ". JSON: {\"passage\":\"ⓐ<u>..</u> 5곳 표시한 지문\",\"answer\":1~5,\"wrong\":\"바꿔 넣은 부적절 단어\",\"correct\":\"원래 맞는 단어\"}.\n\n" + passage }], { temperature: 0.45, timeout: 60000 });
-    if (!o || !o.passage) return null;
-    return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: o.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(o.answer, 10) || 1, explanation: "정답 자리는 '" + (o.wrong || "") + "' 대신 '" + (o.correct || "") + "'가 맞다." };
+    var pl = " " + passage.toLowerCase().replace(/[^a-z\s]/g, " ") + " ";
+    var last = null;
+    for (var attempt = 0; attempt < 3; attempt++) {
+      var o = await llmJSON([{ role: "system", content: "어휘(문맥상 부적절) 출제자. JSON만." }, { role: "user", content: "다음 지문에서 핵심 단어 5개를 골라 각 단어 앞에 ⓐⓑⓒⓓⓔ를 붙이고 <u>밑줄</u>하라. 그 중 '오직 1개'만 문맥상 부적절한 반의어로 바꾸고, 나머지 4개는 반드시 원문 단어 '그대로' 둘 것(절대 바꾸지 마라). 참고 반의어쌍: " + (brief || "-") + ". JSON: {\"passage\":\"ⓐ<u>..</u> 5곳 표시한 지문\",\"answer\":1~5,\"wrong\":\"바꿔 넣은 부적절 단어\",\"correct\":\"원래 맞는 단어\"}.\n\n" + passage }], { temperature: attempt ? 0.3 : 0.45, timeout: 60000 });
+      if (!o || !o.passage) continue;
+      last = o;
+      // 가드: ⓐ~ⓔ 밑줄 5개가 있고, 그 중 '원문에 없는'(=변조된) 단어가 '정확히 1개'여야 통과(포맷·복수정답 동시 방지)
+      var marks = (String(o.passage).match(/<u>([^<]+)<\/u>/g) || []).map(function (m) { return m.replace(/<\/?u>/g, "").toLowerCase().replace(/[^a-z]/g, ""); }).filter(function (w) { return w.length > 2; });
+      var altered = marks.filter(function (w) { return pl.indexOf(" " + w + " ") < 0; });
+      if (marks.length >= 5 && altered.length === 1) {
+        return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: o.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(o.answer, 10) || 1, explanation: "정답 자리는 '" + (o.wrong || "") + "' 대신 '" + (o.correct || "") + "'가 맞다." };
+      } // 밑줄 부족 or 변조 0/2개+ → 재시도
+    }
+    if (last && last.passage) return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: last.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(last.answer, 10) || 1, explanation: "정답 자리는 '" + (last.wrong || "") + "' 대신 '" + (last.correct || "") + "'가 맞다." };
+    return null;
   }
   // 어법: LLM이 1곳 오류 주입 → LanguageTool로 검증
   async function buildGrammar(passage) {
@@ -499,6 +511,18 @@
       explanation: "[모범답안] " + sent.replace(/[.?!]*$/, "."),
       _trace: [{ line: 1, api: "llm", label: "정답문장 생성", ok: !!sent }, { line: 2, api: "code", label: "핵심어 추출", ok: !!key }, { line: 3, api: "trans", label: "MyMemory 번역", ok: !!ko }, { line: 4, api: "code", label: "조건박스 조립", ok: true }] };
   }
+  // ===== 어법수정(서술형): 오류 1곳 주입 → LanguageTool 검증 (오류 없는 지문 방지) =====
+  async function buildGrammarEdit(passage) {
+    for (var attempt = 0; attempt < 2; attempt++) {
+      var o = await llmJSON([{ role: "system", content: "고교 어법 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 포인트 5곳을 골라 각 앞에 ⓐⓑⓒⓓⓔ를 붙이고 <u>밑줄</u>하라. 그 중 '정확히 1곳'에만 실제 어법 오류를 넣어라(수일치·시제·태·준동사·관계사 등, 나머지 4곳은 정확). 오류가 없는 지문은 금지. JSON: {\"passage\":\"ⓐ<u>..</u> 5곳 표시 지문\",\"mark\":\"오류가 든 기호(ⓐ~ⓔ 중 하나)\",\"error\":\"틀린 표현\",\"correct\":\"올바른 표현\"}.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.3 : 0.45, timeout: 60000 });
+      if (o && o.passage && o.error && o.correct && String(o.error).trim() !== String(o.correct).trim()) {
+        var verified = ""; try { var g = await grammar(String(o.passage).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); if (g.length) verified = " (LanguageTool: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + " 확인)"; } catch (_) {}
+        return { type: "어법수정", instruction: "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.", passage: o.passage, choices: [], answer: 0,
+          explanation: "[모범답안] " + (o.mark || "") + ": '" + o.error + "' → '" + o.correct + "'" + verified };
+      }
+    }
+    return null;
+  }
 
   /* ===== 재귀 상호작용: 검수 뉴런 ↔ 재작성 뉴런이 수렴까지 반복(recurrent refinement) ===== */
   async function critiqueQ(q, passage, personaSys) {
@@ -516,6 +540,9 @@
     var isMCQ = q.choices && q.choices.length >= 4;
     var pg = String(q.passage || passage || "");
     if (isMCQ) {
+      // ⓐ~ⓔ 라벨형(어법·어휘)은 선지가 지문의 밑줄 위치와 묶여 있어, 선지를 재작성하면 포맷이 깨진다 → 원본 유지
+      var isLabel = q.choices.every(function (c) { return String(c).trim().length <= 3; });
+      if (isLabel) return null;
       var sys = "너는 수능 영어 선지 개선 전문가다. 지적된 결함을 모두 해소해 5개 선지를 다시 다듬는다(정답의 '내용'은 지문에 맞게 유지, 위치는 바뀌어도 됨). JSON만.";
       var user = "유형:" + q.type + (pg ? ("\n지문:" + pg.slice(0, 800)) : "") + "\n발문:" + q.instruction + "\n현재 선지:" + JSON.stringify(q.choices) + "\n정답번호:" + q.answer + "\n지적 결함:" + JSON.stringify(crit.issues || []) + "\n개선지시:" + (crit.fix || "") + "\nJSON: {\"choices\":[\"5개\"],\"answer\":정답위치(정수)}. JSON만.";
       var rr = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { noRule: true, temperature: 0.5, timeout: 55000 });
@@ -656,7 +683,10 @@
     var dialogue = [];
     for (var i = 0; i < teachers.length; i++) {
       var prev = dialogue.map(function (d) { return d.speaker + ": " + d.text; }).join("\n");
-      var v = await llm([{ role: "system", content: teachers[i].sys + " 지금은 시스템 개선 회의 중이다. 사용자 요청에 대해 찬반·근거·구현 방법을 한국어 대화체로 짧게 말한다." }, { role: "user", content: "[사용자 요청]\n" + request + (prev ? ("\n\n[지금까지 회의]\n" + prev) : "") + "\n\n너의 의견을 1~3문장으로 말하라(앞 발언도 반영해 토론하듯)." }], { noRule: true, temperature: 0.6, timeout: 55000 });
+      var stance = i === 0 ? "너는 이 요청을 처음 검토한다. 찬반 입장을 정하고 근거와 '구체적 구현 방법'을 제시하라."
+        : i === 1 ? "너는 비판적 검토자 역할이다. 반드시 '우려·반박·리스크'를 최소 한 가지 제기하라(앞 발언에 그냥 동의만 하지 마라)."
+          : "너는 앞 발언들을 절충·보완하거나 '새로운 관점/조건'을 추가하라. 이미 나온 말의 반복은 금지.";
+      var v = await llm([{ role: "system", content: teachers[i].sys + " 지금은 시스템 개선 회의 중이다. 한국어 대화체로 짧고 구체적으로, 전문가답게 말한다." }, { role: "user", content: "[사용자 요청]\n" + request + (prev ? ("\n\n[지금까지 회의]\n" + prev) : "") + "\n\n" + stance + " 1~3문장." }], { noRule: true, temperature: 0.72, timeout: 55000 });
       if (v && v.trim()) { dialogue.push({ speaker: teachers[i].name, text: v.trim() }); log(onP, "  💬 " + teachers[i].name + ": " + v.trim().slice(0, 60)); }
     }
     var vr = await llmJSON([{ role: "system", content: EXPERT_ID + " 회의 의장으로서 합의를 종합해 판정한다. JSON만." }, { role: "user", content: "[요청]\n" + request + "\n\n[회의록]\n" + dialogue.map(function (d) { return d.speaker + ": " + d.text; }).join("\n") + "\n\n합의 판정을 JSON으로: {\"verdict\":\"반영|부분반영|보류|반려 중 하나\",\"reason\":\"핵심 이유 1~2문장\",\"how\":\"반영한다면 구체적 방법/변경점\",\"priority\":\"상|중|하\"}. JSON만." }], { noRule: true, temperature: 0.3, timeout: 55000 });
@@ -684,6 +714,7 @@
   function builderFor(t) {
     if (t === "배열영작") return function (p, o) { return buildArrange(p, o); };
     if (t === "조건영작") return function (p, o) { return buildConditional(p, o); };
+    if (t === "어법수정") return function (p, o) { return buildGrammarEdit(p, o); };
     var hint = TYPE_BUILDER_HINT[t];
     if (hint && BUILDER_BY_KEY[hint]) return function (p, o) { return BUILDER_BY_KEY[hint](p, o, t); };
     return BUILDERS[t] || function (p, o) { return buildInference(p, t, o); };
@@ -856,7 +887,16 @@
       trace.push({ line: 3, api: "llm", label: "주제유지 재창작", ok: !!(o4 && o4.variant) });
       if (o4) { variant = o4.variant || ""; changed = o4.changed || []; }
     }
-    if (!variant) return { variant: "", level: level, note: (STAGE_INFO[level] || {}).name + " 생성 실패", changed: [], _trace: trace };
+    // 플레이스홀더/빈약 변형 방어: variant가 실제 영어 지문이 아니면(예시문구 복사·짧음) 평문으로 직접 재요청
+    function _bad(v) { v = String(v || "").trim(); return v.length < 40 || (v.match(/[A-Za-z]{2,}/g) || []).length < 8 || /^(어휘만|구문이|재구성|새 지문|변형|<)/.test(v); }
+    if (_bad(variant)) {
+      var fb = { word: "지문의 문장 구조·어순은 그대로 두고 '내용어만 동의어로 교체'한 영어 지문 전문을 출력하라.", phrase: "어휘는 유지하되 구문(태·절 순서·연결사·분사구문)만 바꾼 영어 지문 전문을 출력하라.", sentence: "각 문장을 새 구조·새 어휘로 다시 쓴(정보 동일) 영어 지문 전문을 출력하라.", theme: "이 지문의 주제만 유지하고 예시·전개를 전부 새로 쓴 새 영어 지문(100~140단어)을 출력하라." }[level] || "지문을 자연스럽게 변형한 영어 지문 전문을 출력하라.";
+      log(onP, "  ↻ 변형 결과 보강(평문 재요청)…");
+      var raw = await llm([{ role: "system", content: "영어 교재 편집자. '영어 지문 본문만' 출력한다(JSON·설명·머리말·따옴표 금지)." }, { role: "user", content: fb + "\n\n[원문]\n" + passage }], { noRule: true, temperature: 0.5, timeout: 60000 });
+      raw = String(raw || "").replace(/```/g, "").trim();
+      if (!_bad(raw)) { variant = raw; if (!changed.length) changed = ["평문 재생성"]; }
+    }
+    if (!variant || _bad(variant)) return { variant: "", level: level, note: (STAGE_INFO[level] || {}).name + " 생성 실패", changed: [], _trace: trace };
     // 공통 검증: LanguageTool 어법 + (주제단계) 원문 비중복 확인
     log(onP, "④ 어법 검증(LanguageTool)…");
     var gi = []; try { gi = await grammar(String(variant).replace(/<[^>]+>/g, " ")); } catch (_) {}
@@ -876,11 +916,12 @@
     var base = Array.isArray(pick) ? pick : (pick && pick.words) || [];
     log(onP, "② 사전·어원·유의어·번역 동시 보강…");
     return await Promise.all(base.slice(0, n).map(async function (it) {
-      var word = (it.word || "").toLowerCase().split(/\s+/)[0], d = null, wk = null, syn = [], mm = "";
-      try { d = await dict(word); } catch (_) {} try { wk = await wiktionary(word); } catch (_) {} try { syn = await datamuse(word, "syn", 4); } catch (_) {} try { mm = await translate(it.word, "en|ko"); } catch (_) {}
-      var ex = d && d.meanings.find(function (m) { return m.example; }), pos = (d && d.meanings[0] && d.meanings[0].pos) || (wk && wk[0] && wk[0].pos) || "";
-      var alt = (mm && it.meaning && mm.replace(/\s/g, "") !== it.meaning.replace(/\s/g, "")) ? mm : "";
-      return { word: it.word, meaning: it.meaning, pos: pos, phonetic: (d && d.phonetic) || "", cefr: cefrOf(word), en_def: (d && d.meanings[0] && d.meanings[0].def) || (wk && wk[0] && wk[0].defs[0]) || "", example: ex ? ex.example : "", synonyms: syn, alt_ko: alt };
+      var full = (it.word || "").trim(), isMulti = /\s/.test(full), head = full.toLowerCase().split(/\s+/)[0];
+      var d = null, wk = null, syn = [];
+      // 다단어 표제어(예: social harmony)는 첫 단어만 조회하면 엉뚱한 뜻/예문 → 사전조회 생략(LLM 뜻 사용)
+      if (!isMulti && head) { try { d = await dict(head); } catch (_) {} try { wk = await wiktionary(head); } catch (_) {} try { syn = await datamuse(head, "syn", 4); } catch (_) {} }
+      var ex = d && d.meanings.find(function (m) { return m.example; }), pos = isMulti ? "phrase" : ((d && d.meanings[0] && d.meanings[0].pos) || (wk && wk[0] && wk[0].pos) || "");
+      return { word: it.word, meaning: it.meaning, pos: pos, phonetic: (!isMulti && d && d.phonetic) || "", cefr: cefrOf(full) || (isMulti ? "" : cefrOf(head)), en_def: isMulti ? "" : ((d && d.meanings[0] && d.meanings[0].def) || (wk && wk[0] && wk[0].defs[0]) || ""), example: ex ? ex.example : "", synonyms: syn };
     }));
   }
   // ===== 해설지 생성기(해설작성관 뉴런): 정답근거·오답별 근거·핵심어휘·출제의도 =====

@@ -162,6 +162,12 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
     <div id="archBody" style="margin-top:8px;font-size:9pt"></div>
   </div>
 
+  <div class="card noprint" id="liveCard">
+    <h2>🔴 실시간 회의 로그 <span style="font-size:9pt;color:#888;font-weight:400">교사군집이 회의하는 과정을 실시간으로 표시 (탭이 열려 있는 동안 계속)</span>
+      <button class="ghost noprint" id="liveBtn" style="font-size:8.5pt;padding:2px 10px;float:right" onclick="toggleLive()">▶ 실시간 회의 시작</button></h2>
+    <div id="liveLog" style="max-height:340px;overflow:auto;font-size:8.6pt;line-height:1.55;background:#08161d;color:#cfe;border-radius:8px;padding:10px;font-family:ui-monospace,Menlo,Consolas,monospace;margin-top:6px">▶ '실시간 회의 시작'을 누르면 교사군집이 주제를 돌아가며 실시간으로 토론합니다.</div>
+  </div>
+
   <div class="card noprint" id="meetCard" style="display:none">
     <h2>🛠 API 회의록 <span style="font-size:9pt;color:#888;font-weight:400">(오류 발생 시 자동 소집·개선)</span></h2>
     <div id="meet"></div>
@@ -389,6 +395,22 @@ function archiveTab(t){
     el.innerHTML=ms.slice().reverse().slice(0,30).map(function(f){ return '<button class="ghost noprint" style="font-size:8.4pt;margin:2px 4px 2px 0" onclick="viewMeeting(\''+esc(f.name)+'\')">🗣 '+esc(f.name.replace(/\.md$/,""))+'</button>'; }).join("")+'<div id="meetView" style="margin-top:7px"></div>';
   }
 }
+var LIVE={on:false, i:0, topics:["빈칸 유형의 매력적 오답 설계 기법을 정교화","함의 유형의 함정(표면의미 오답) 설계","어법 유형 난이도 상향(준동사·수일치 함정)","주제/제목 오답의 상호 비중복 확보","서술형 채점 기준(부분점수) 정교화","어휘 유형 반의어 오답 선정 원칙","요약 빈칸 정답어 선정과 오답 쌍 설계","내용불일치 오답의 미묘한 왜곡 기법","조건영작 조건(어형변화·단어수) 설정 원칙","지문 난이도(CEFR)별 문항 배치 전략"]};
+function liveLine(html){ var el=document.getElementById("liveLog"); if(!el)return; if(el.childNodes.length===1&&el.firstChild.nodeType===3) el.innerHTML=""; var d=document.createElement("div"); d.innerHTML=html; el.appendChild(d); el.scrollTop=el.scrollHeight; while(el.childNodes.length>500) el.removeChild(el.firstChild); }
+function toggleLive(){ LIVE.on=!LIVE.on; var b=document.getElementById("liveBtn"); if(b) b.textContent=LIVE.on?"■ 중지":"▶ 실시간 회의 시작"; if(LIVE.on){ liveLine('<div style="color:#6f6">▶ 실시간 회의 시작 · '+new Date().toLocaleTimeString()+'</div>'); liveLoop(); } else { liveLine('<div style="color:#f88">■ 중지 · '+new Date().toLocaleTimeString()+'</div>'); } }
+function liveLoop(){
+  if(!LIVE.on||!window.T) return;
+  var topic=LIVE.topics[LIVE.i % LIVE.topics.length]; LIVE.i++;
+  liveLine('<div style="color:#ffd166;margin-top:7px;font-weight:700">━━ 회의 #'+LIVE.i+' · '+esc(topic)+' <span style="color:#789;font-weight:400">('+new Date().toLocaleTimeString()+')</span></div>');
+  T.deliberate(topic, {teachers:3, onProgress:function(m){ if(/💬/.test(m)) liveLine('<div>'+esc(m)+'</div>'); }}).then(function(r){
+    if(!r){ if(LIVE.on) setTimeout(liveLoop,6000); return; }
+    (r.dialogue||[]).forEach(function(d){ liveLine('<div style="margin-left:4px"><b style="color:#7fd">'+esc(d.speaker)+'</b>: '+esc(d.text)+'</div>'); });
+    var c={"반영":"#6f6","부분반영":"#fd6","보류":"#9ab","반려":"#f88"}[r.verdict]||"#9ad";
+    liveLine('<div style="color:'+c+';font-weight:700">▷ 합의: '+esc(r.verdict)+' — '+esc((r.reason||"").slice(0,90))+'</div>');
+    try{ var arr=JSON.parse(localStorage.getItem("liveMeetings")||"[]"); arr.unshift({t:new Date().toISOString().slice(0,16).replace("T"," "),topic:topic,verdict:r.verdict,reason:r.reason,dialogue:r.dialogue}); localStorage.setItem("liveMeetings",JSON.stringify(arr.slice(0,40))); }catch(e){}
+    if(LIVE.on) setTimeout(liveLoop, 4500);
+  }).catch(function(e){ liveLine('<div style="color:#f88">오류: '+esc(e.message)+'</div>'); if(LIVE.on) setTimeout(liveLoop, 9000); });
+}
 function viewMeeting(name){
   var v=document.getElementById("meetView"); if(!v) return; v.innerHTML='<span class="note">불러오는 중…</span>';
   fetch(RAWBASE+"archive/meetings/"+encodeURIComponent(name)+"?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.text();}).then(function(md){
@@ -399,8 +421,10 @@ function askBrain(){
   var q=document.getElementById("brainq").value.trim();
   if(q.length<5){ alert("질문/과제를 입력하세요."); return; }
   var k=Math.max(1,Math.min(9,parseInt(document.getElementById("tk").value,10)||3));
-  var out=document.getElementById("brainout"); out.innerHTML='<div class="note" id="bnote">🧠 사고 중… (여러 교사·API를 엮는 중)</div>';
-  T.brain(q, {rounds:2, teachers:k, onProgress:function(m){ var n=document.getElementById("bnote"); if(n) n.textContent=m; }}).then(function(r){
+  var pg=(document.getElementById("passage").value||"").trim();
+  var task=(pg.length>=40)?("[지문]\n"+pg+"\n\n[질문/과제]\n"+q):q;  // 현재 지문이 있으면 자동 포함('이 지문' 질의 대응)
+  var out=document.getElementById("brainout"); out.innerHTML='<div class="note" id="bnote">🧠 사고 중… (여러 교사·API를 엮는 중'+(pg.length>=40?' · 현재 지문 포함':'')+')</div>';
+  T.brain(task, {rounds:2, teachers:k, onProgress:function(m){ var n=document.getElementById("bnote"); if(n) n.textContent=m; }}).then(function(r){
     if(!r||!r.answer){ out.innerHTML='<div class="note">응답 실패 — 다시 시도하세요</div>'; return; }
     var facts=(r.facts&&r.facts.length)?('<div class="note" style="margin-top:6px">📚 참고 지식 '+r.facts.length+'건 · 교사 '+k+'명 소집</div>'):('<div class="note" style="margin-top:6px">교사 '+k+'명 소집</div>');
     var sc=(r.scores&&r.scores.length)?(' <span class="chip">자기검토 '+r.scores.join("→")+'점</span>'):'';
