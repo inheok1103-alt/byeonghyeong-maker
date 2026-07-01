@@ -470,10 +470,10 @@
   }
 
   /* ===== 재귀 상호작용: 검수 뉴런 ↔ 재작성 뉴런이 수렴까지 반복(recurrent refinement) ===== */
-  async function critiqueQ(q, passage) {
+  async function critiqueQ(q, passage, personaSys) {
     var isMCQ = q.choices && q.choices.length >= 4;
     var pg = String(q.passage || passage || "");
-    var sys = EXPERT_ID + " 지금은 문항 심사위원으로서 아래 루브릭으로 0~100점 채점한다: 90+ 실제 출제 가능 수준, 80~89 소폭 수정 필요, 65~79 결함 있음, 65 미만 재작성. 관대하지도 가혹하지도 않게 '실제 수능/내신 기준'으로 매기고 구체적 결함을 짚는다. JSON만.";
+    var sys = (personaSys || EXPERT_ID) + " 지금은 문항 심사위원으로서 아래 루브릭으로 0~100점 채점한다: 90+ 실제 출제 가능 수준, 80~89 소폭 수정 필요, 65~79 결함 있음, 65 미만 재작성. 관대하지도 가혹하지도 않게 '실제 수능/내신 기준'으로 매기고 구체적 결함을 짚는다. JSON만.";
     var body = isMCQ
       ? ("유형:" + q.type + "\n발문:" + q.instruction + "\n지문:" + (pg ? pg.slice(0, 800) : "(지문 없음)") + "\n선지:" + JSON.stringify(q.choices) + "\n정답번호:" + q.answer)
       : ("유형:" + q.type + "\n발문:" + q.instruction + "\n(원지문: " + pg.slice(0, 500) + ")\n정답:" + String(q.explanation || "").replace("[모범답안] ", ""));
@@ -497,14 +497,27 @@
     var p = parseEssayText(raw); if (p) return Object.assign({}, q, { instruction: p.instruction, explanation: "[모범답안] " + p.answer });
     return null;
   }
+  // 교사 검토단: N명 교사가 각자 채점 → 결함 합집합·평균점수(엮음)
+  async function panelCritique(q, passage, n) {
+    n = Math.max(1, n || 1);
+    if (n === 1) return await critiqueQ(q, passage);
+    var teachers = sampleTeachers(n, (String(q.type || "") + String(q.instruction || "")).length);
+    var crits = [];
+    for (var i = 0; i < teachers.length; i++) { var c = await critiqueQ(q, passage, teachers[i].sys); if (c) crits.push(c); }
+    if (!crits.length) return { score: 0, issues: ["평가 실패"], fix: "" };
+    var issues = []; crits.forEach(function (c) { (c.issues || []).forEach(function (x) { if (issues.indexOf(x) < 0) issues.push(x); }); });
+    var score = Math.round(crits.reduce(function (s, c) { return s + (c.score || 0); }, 0) / crits.length);
+    var fix = (crits.filter(function (c) { return c.fix; })[0] || {}).fix || "";
+    return { score: score, issues: issues.slice(0, 6), fix: fix, panel: crits.length };
+  }
   // 수렴까지(또는 목표점수·최대라운드까지) 재귀 반복. best(최고점 버전)를 반환.
   async function refineLoop(q, opts) {
-    if (!q) return q; opts = opts || {}; var target = opts.target || 88, maxR = opts.maxRounds || 4, onP = opts.onProgress, passage = opts.passage || "";
+    if (!q) return q; opts = opts || {}; var target = opts.target || 88, maxR = opts.maxRounds || 4, onP = opts.onProgress, passage = opts.passage || "", panel = opts.panel || 1;
     var best = q, bestScore = -1, cur = q, stale = 0, rounds = [];
     for (var r = 1; r <= maxR; r++) {
-      var c = await critiqueQ(cur, passage);
+      var c = await panelCritique(cur, passage, panel);
       rounds.push({ round: r, score: c.score, issues: (c.issues || []).slice(0, 3) });
-      log(onP, "  🔁 상호작용 라운드 " + r + " — 검수 " + c.score + "점" + ((c.issues && c.issues.length) ? (" · " + c.issues.slice(0, 2).join("; ")) : " · 결함 없음"));
+      log(onP, "  🔁 상호작용 라운드 " + r + " — 검수 " + c.score + "점" + (c.panel ? (" (교사 " + c.panel + "명 합의)") : "") + ((c.issues && c.issues.length) ? (" · " + c.issues.slice(0, 2).join("; ")) : " · 결함 없음"));
       try { if (CB.onRefine) CB.onRefine({ round: r, score: c.score, type: q.type }); } catch (_) {}
       if (c.score > bestScore) { bestScore = c.score; best = cur; stale = 0; } else { stale++; }
       if (c.score >= target) break;
@@ -599,6 +612,23 @@
     }
     log(onP, "🧠 완료");
     return { answer: answer, facts: facts, scores: scores, reasoning: trace };
+  }
+
+  // ===== 거버넌스: 사용자 요청을 '교사 회의(대화문)'로 심의 → 반영/반려 판정(공지용) =====
+  async function deliberate(request, opts) {
+    opts = opts || {}; var onP = opts.onProgress, n = opts.teachers || 4;
+    var teachers = sampleTeachers(n, String(request || "").length);
+    log(onP, "🗣 교사 회의 소집 — " + teachers.length + "명 심의…");
+    var dialogue = [];
+    for (var i = 0; i < teachers.length; i++) {
+      var prev = dialogue.map(function (d) { return d.speaker + ": " + d.text; }).join("\n");
+      var v = await llm([{ role: "system", content: teachers[i].sys + " 지금은 시스템 개선 회의 중이다. 사용자 요청에 대해 찬반·근거·구현 방법을 한국어 대화체로 짧게 말한다." }, { role: "user", content: "[사용자 요청]\n" + request + (prev ? ("\n\n[지금까지 회의]\n" + prev) : "") + "\n\n너의 의견을 1~3문장으로 말하라(앞 발언도 반영해 토론하듯)." }], { noRule: true, temperature: 0.6, timeout: 55000 });
+      if (v && v.trim()) { dialogue.push({ speaker: teachers[i].name, text: v.trim() }); log(onP, "  💬 " + teachers[i].name + ": " + v.trim().slice(0, 60)); }
+    }
+    var vr = await llmJSON([{ role: "system", content: EXPERT_ID + " 회의 의장으로서 합의를 종합해 판정한다. JSON만." }, { role: "user", content: "[요청]\n" + request + "\n\n[회의록]\n" + dialogue.map(function (d) { return d.speaker + ": " + d.text; }).join("\n") + "\n\n합의 판정을 JSON으로: {\"verdict\":\"반영|부분반영|보류|반려 중 하나\",\"reason\":\"핵심 이유 1~2문장\",\"how\":\"반영한다면 구체적 방법/변경점\",\"priority\":\"상|중|하\"}. JSON만." }], { noRule: true, temperature: 0.3, timeout: 55000 });
+    var res = vr || { verdict: "보류", reason: "판정 실패", how: "", priority: "중" };
+    res.dialogue = dialogue; res.request = request; res.teachers = teachers.length;
+    return res;
   }
 
   var BUILDERS = {
@@ -710,7 +740,7 @@
       RUNHINT = ""; TYPERULE = ""; LEVELRULE = "";
       if (got) {
         if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
-        if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage }); }
+        if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 }); }
         stampIntent(got);
         out.push(got);
       } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
@@ -728,7 +758,7 @@
     TYPERULE = ""; LEVELRULE = "";
     if (q && TYPE_INSTR[type]) { if (TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type]; }
     if (q) q.level = opts.level || "";
-    if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage });
+    if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 });
     stampIntent(q);
     return q;
   }
@@ -816,8 +846,22 @@
       try { d = await dict(word); } catch (_) {} try { wk = await wiktionary(word); } catch (_) {} try { syn = await datamuse(word, "syn", 4); } catch (_) {} try { mm = await translate(it.word, "en|ko"); } catch (_) {}
       var ex = d && d.meanings.find(function (m) { return m.example; }), pos = (d && d.meanings[0] && d.meanings[0].pos) || (wk && wk[0] && wk[0].pos) || "";
       var alt = (mm && it.meaning && mm.replace(/\s/g, "") !== it.meaning.replace(/\s/g, "")) ? mm : "";
-      return { word: it.word, meaning: it.meaning, pos: pos, en_def: (d && d.meanings[0] && d.meanings[0].def) || (wk && wk[0] && wk[0].defs[0]) || "", example: ex ? ex.example : "", synonyms: syn, alt_ko: alt };
+      return { word: it.word, meaning: it.meaning, pos: pos, phonetic: (d && d.phonetic) || "", cefr: cefrOf(word), en_def: (d && d.meanings[0] && d.meanings[0].def) || (wk && wk[0] && wk[0].defs[0]) || "", example: ex ? ex.example : "", synonyms: syn, alt_ko: alt };
     }));
+  }
+  // ===== 해설지 생성기(해설작성관 뉴런): 정답근거·오답별 근거·핵심어휘·출제의도 =====
+  async function buildExplanation(q, passage, opts) {
+    opts = opts || {}; if (!q) return null;
+    var isMCQ = q.choices && q.choices.length >= 4;
+    var pg = String(q.passage || passage || "");
+    var sys = EXPERT_ID + " 지금은 학생용 상세 해설을 집필한다. 지문 근거를 인용하고 명료하게. JSON만.";
+    var head = "유형: " + q.type + "\n발문: " + q.instruction + (pg ? ("\n지문: " + pg.slice(0, 900)) : "") + (isMCQ ? ("\n선지: " + JSON.stringify(q.choices) + "\n정답번호: " + q.answer) : ("\n모범답안: " + String(q.explanation || "").replace(/【출제의도】[\s\S]*$/, "").replace("[모범답안] ", "")));
+    var spec = isMCQ
+      ? "위 문항의 상세 해설을 작성하라. JSON: {\"correct\":\"정답이 옳은 이유(지문 근거 인용)\",\"distractors\":[{\"n\":오답번호(정수),\"why\":\"이 선지가 틀린 구체적 이유\"}],\"vocab\":[\"핵심 어휘·구문 몇 개(영어-뜻)\"],\"intent\":\"출제의도 한 줄\"}. JSON만."
+      : "위 서술형의 상세 해설을 작성하라. JSON: {\"correct\":\"모범답안 해설·핵심 포인트\",\"rubric\":[\"채점 포인트 몇 개\"],\"vocab\":[\"핵심 어휘·구문(영어-뜻)\"],\"intent\":\"출제의도 한 줄\"}. JSON만.";
+    var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: head + "\n\n" + spec }], { noRule: true, temperature: 0.4, timeout: 60000 });
+    if (!r) return null;
+    r.type = q.type; r.isMCQ = isMCQ; return r;
   }
 
   async function healthCheck() {
@@ -858,8 +902,8 @@
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
-    refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain,
-    teacherCount: teacherCount, sampleTeachers: sampleTeachers, makeTeacher: makeTeacher,
+    refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain, deliberate: deliberate,
+    teacherCount: teacherCount, sampleTeachers: sampleTeachers, makeTeacher: makeTeacher, buildExplanation: buildExplanation,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };

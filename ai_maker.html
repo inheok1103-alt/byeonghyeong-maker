@@ -108,6 +108,11 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
       <span class="note" id="xfnote">입력한 지문(①)을 변형합니다</span>
     </div>
     <div id="xfout" style="margin-top:8px"></div>
+    <div class="row" style="margin-top:10px;border-top:1px dashed #dbe6e2;padding-top:9px">
+      <button class="ghost" onclick="makeVocab()">📓 단어장 제작</button>
+      <span class="note">지문 핵심어휘 → 사전·CEFR·발음·유의어·번역·예문 (다중 API 엮음)</span>
+    </div>
+    <div id="vocabOut"></div>
   </div>
 
   <div class="card" id="brainCard">
@@ -118,6 +123,17 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
       <button class="ghost" onclick="askBrain()">🧠 사고 실행</button>
     </div>
     <div id="brainout" style="margin-top:8px"></div>
+  </div>
+
+  <div class="card" id="govCard">
+    <h2>📢 요청사항 &amp; 공지 <span class="note">요청 → 교사 회의(대화문) 심의 → 반영/반려 공지 · 즉시 반영이 아니라 회의를 거칩니다</span></h2>
+    <div class="row" style="margin-top:8px;flex-wrap:wrap">
+      <input id="reqInput" placeholder="예: 빈칸 유형 오답을 더 매력적으로 / 순서배열 유형 추가해줘 / 해설을 더 자세히" style="flex:1;min-width:300px;padding:7px 10px;border:1px solid #cfe3de;border-radius:8px;font-size:9.5pt">
+      <button class="ghost" onclick="submitRequest()">🗣 회의 상정</button>
+    </div>
+    <div id="reqStat" class="note" style="margin-top:5px"></div>
+    <h3 style="margin:12px 0 4px;font-size:10.5pt;color:#0f766e">📢 공지사항</h3>
+    <div id="notices"></div>
   </div>
 
   <div class="card noprint" id="meetCard" style="display:none">
@@ -285,6 +301,34 @@ function run(){
 function getRefine(){ var c=document.getElementById("refineChk"); return !!(c&&c.checked); }
 function getRounds(){ var r=document.getElementById("rounds"); return r?Math.max(1,Math.min(8,parseInt(r.value,10)||3)):3; }
 function getEnsemble(){ var c=document.getElementById("ensembleChk"); return !!(c&&c.checked); }
+var VERDICT_COLOR={"반영":"#0f766e","부분반영":"#b45309","보류":"#6b7280","반려":"#b03a2e"};
+function submitRequest(){
+  var q=document.getElementById("reqInput").value.trim();
+  if(q.length<5){ alert("요청사항을 입력하세요."); return; }
+  var st=document.getElementById("reqStat"); st.textContent="🗣 교사 회의 심의 중… (즉시 반영이 아니라 회의를 거칩니다)";
+  T.deliberate(q,{teachers:4,onProgress:function(m){ st.textContent=m; }}).then(function(r){
+    st.textContent="심의 완료 — 판정: "+r.verdict;
+    var n={date:new Date().toISOString().slice(0,16).replace("T"," "),request:q,verdict:r.verdict,reason:r.reason,how:r.how,priority:r.priority,dialogue:r.dialogue,local:true};
+    try{ var arr=JSON.parse(localStorage.getItem("notices")||"[]"); arr.unshift(n); localStorage.setItem("notices",JSON.stringify(arr.slice(0,50))); }catch(e){}
+    document.getElementById("reqInput").value=""; renderNotices();
+  }).catch(function(e){ st.textContent="오류: "+e.message; });
+}
+function localNotices(){ try{ return JSON.parse(localStorage.getItem("notices")||"[]"); }catch(e){ return []; } }
+var OFFICIAL_NOTICES=[];
+function renderNotices(){
+  var el=document.getElementById("notices"); var arr=OFFICIAL_NOTICES.concat(localNotices());
+  if(!arr.length){ el.innerHTML='<div class="note">아직 공지가 없습니다. 요청을 상정하면 교사 회의를 거쳐 여기에 반영/반려가 공지됩니다.</div>'; return; }
+  el.innerHTML=arr.slice(0,30).map(function(n){ var c=VERDICT_COLOR[n.verdict]||"#555";
+    var dlg=(n.dialogue&&n.dialogue.length)?('<details style="margin-top:4px"><summary style="cursor:pointer;font-size:8.6pt;color:#0f766e">🗣 회의 대화문 열람 ('+n.dialogue.length+'명)</summary><div style="font-size:8.8pt;background:#f8fafb;padding:7px;border-radius:6px;margin-top:3px;line-height:1.55">'+n.dialogue.map(function(d){return '<b>'+esc(d.speaker)+':</b> '+esc(d.text);}).join('<br>')+'</div></details>'):'';
+    return '<div style="border-left:3px solid '+c+';padding:6px 0 7px 10px;margin:8px 0">'+
+      '<span style="background:'+c+';color:#fff;border-radius:7px;padding:1px 8px;font-size:8pt">'+esc(n.verdict||"")+'</span> '+
+      (n.local?'<span style="font-size:7.5pt;color:#aaa">(내 세션)</span> ':'<span style="font-size:7.5pt;color:#0f766e">(공식)</span> ')+
+      '<b>'+esc(n.request||"")+'</b> <span style="color:#999;font-size:8pt">'+esc(n.date||"")+(n.priority?(" · 우선 "+esc(n.priority)):"")+'</span>'+
+      '<div style="color:#566;font-size:9pt;margin-top:3px">사유: '+esc(n.reason||"")+'</div>'+
+      (n.how?('<div style="color:#0f766e;font-size:8.8pt;margin-top:2px">반영방법: '+esc(n.how)+'</div>'):'')+dlg+'</div>';
+  }).join("");
+}
+function loadNotices(){ fetch("corpus/announcements.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){ OFFICIAL_NOTICES=(d&&d.notices)||[]; renderNotices(); }).catch(function(){ renderNotices(); }); }
 function askBrain(){
   var q=document.getElementById("brainq").value.trim();
   if(q.length<5){ alert("질문/과제를 입력하세요."); return; }
@@ -311,15 +355,40 @@ function doTransform(level){
   }).catch(function(e){ note.textContent="오류: "+e.message; });
 }
 function qHtml(q,i){
-  var h='<div class="q" id="q_'+i+'"><div class="h">'+(i+1)+'. '+esc(q.type)+' <span class="chip">AI</span> <button class="ghost noprint" style="font-size:8pt;padding:3px 9px;margin-left:6px" onclick="regenOne('+i+')">🔄 재생성</button></div><div class="ins">'+esc(q.instruction)+'</div>';
+  var h='<div class="q" id="q_'+i+'"><div class="h">'+(i+1)+'. '+esc(q.type)+' <span class="chip">AI</span> <button class="ghost noprint" style="font-size:8pt;padding:3px 9px;margin-left:6px" onclick="regenOne('+i+')">🔄 재생성</button> <button class="ghost noprint" style="font-size:8pt;padding:3px 9px" onclick="showExplain('+i+')">📖 해설지</button></div><div class="ins">'+esc(q.instruction)+'</div>';
   if(q.passage) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
   if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
   var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
   var exp=String(q.explanation||""), intent=""; var mi=exp.indexOf("【출제의도】"); if(mi>=0){ intent=exp.slice(mi+6).trim(); exp=exp.slice(0,mi).trim(); }
   var rf=(q._refine&&q._refine.rounds&&q._refine.rounds.length)?(' <span class="chip" title="재귀 상호작용 점수">🔁 '+q._refine.rounds.map(function(r){return r.score;}).join("→")+'점</span>'):'';
   h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(exp)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+rf+
-     (intent?('<div style="margin-top:5px;padding:5px 8px;background:#f0fdfa;border-left:3px solid #0f766e;color:#0f766e;font-size:9pt">🎯 <b>출제의도</b> '+esc(intent)+'</div>'):'')+'</div></div>';
+     (intent?('<div style="margin-top:5px;padding:5px 8px;background:#f0fdfa;border-left:3px solid #0f766e;color:#0f766e;font-size:9pt">🎯 <b>출제의도</b> '+esc(intent)+'</div>'):'')+'</div><div id="exp_'+i+'"></div></div>';
   return h;
+}
+function showExplain(i){
+  var q=LASTITEMS[i]; if(!q) return; var el=document.getElementById("exp_"+i); if(!el) return;
+  el.innerHTML='<span class="note">📖 교사가 해설 작성 중… (지문 근거·오답 분석)</span>';
+  T.buildExplanation(q, LASTPASSAGE, {}).then(function(r){
+    if(!r){ el.innerHTML='<span class="note">해설 생성 실패 — 다시 시도</span>'; return; }
+    var h='<div style="background:#fffdf5;border:1px solid #e8dcae;border-radius:8px;padding:9px;margin-top:7px;font-size:9pt;line-height:1.55">';
+    h+='<div><b>✅ 정답 해설</b> '+esc(r.correct||"")+'</div>';
+    if(r.distractors&&r.distractors.length){ h+='<div style="margin-top:5px"><b>❌ 오답 근거</b><ul style="margin:2px 0 0 16px;padding:0">'+r.distractors.map(function(d){return '<li>'+esc(String(d.n))+') '+esc(d.why)+'</li>';}).join("")+'</ul></div>'; }
+    if(r.rubric&&r.rubric.length){ h+='<div style="margin-top:5px"><b>📝 채점 포인트</b> '+esc(r.rubric.join(" · "))+'</div>'; }
+    if(r.vocab&&r.vocab.length){ h+='<div style="margin-top:5px"><b>🔑 핵심 어휘·구문</b> '+esc(r.vocab.join(" · "))+'</div>'; }
+    if(r.intent){ h+='<div style="margin-top:5px;color:#0f766e"><b>🎯 출제의도</b> '+esc(r.intent)+'</div>'; }
+    h+='</div>'; el.innerHTML=h;
+  }).catch(function(e){ el.innerHTML='<span class="note">오류: '+esc(e.message)+'</span>'; });
+}
+function makeVocab(){
+  var passage=(LASTPASSAGE||document.getElementById("passage").value||"").trim();
+  if(passage.length<40){ alert("영어 지문을 입력하세요(40자 이상)."); return; }
+  var out=document.getElementById("vocabOut"); out.innerHTML='<span class="note">📓 단어장 제작 중… (사전·CEFR·유의어·번역 엮음)</span>';
+  T.buildVocabList(passage,{n:12}).then(function(list){
+    if(!list||!list.length){ out.innerHTML='<span class="note">단어장 생성 실패</span>'; return; }
+    var h='<table style="width:100%;border-collapse:collapse;font-size:9pt;margin-top:6px"><tr style="background:#e9f4f1"><th style="padding:4px;text-align:left">단어</th><th>품사</th><th>CEFR</th><th style="text-align:left">뜻</th><th style="text-align:left">예문</th></tr>';
+    list.forEach(function(v){ h+='<tr style="border-bottom:1px solid #eee"><td style="padding:4px"><b>'+esc(v.word)+'</b>'+(v.phonetic?(' <span style="color:#999;font-size:8pt">'+esc(v.phonetic)+'</span>'):'')+'</td><td style="text-align:center;color:#666">'+esc(v.pos||"")+'</td><td style="text-align:center;color:#0f766e;font-weight:700">'+esc(v.cefr||"")+'</td><td>'+esc(v.meaning||v.alt_ko||"")+(v.synonyms&&v.synonyms.length?('<div style="color:#999;font-size:8pt">≈ '+esc(v.synonyms.slice(0,3).join(", "))+'</div>'):'')+'</td><td style="color:#555;font-size:8.5pt">'+esc(v.example||"")+'</td></tr>'; });
+    h+='</table>'; out.innerHTML=h;
+  }).catch(function(e){ out.innerHTML='<span class="note">오류: '+esc(e.message)+'</span>'; });
 }
 function render(items){
   if(!items||!items.length){ document.getElementById("out").innerHTML='<div class="card">생성된 문항이 없습니다. 다시 시도해 주세요.</div>'; return; }
@@ -378,7 +447,7 @@ T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=doc
 T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s) s.textContent=c&&c.vocab?("📚 코퍼스 학습: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 연구누적 "+c.research):""; }).catch(function(){});
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
-restoreState(); refreshDB(); loadResearch();
+restoreState(); refreshDB(); loadResearch(); loadNotices();
 </script>
 </body>
 </html>
