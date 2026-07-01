@@ -156,32 +156,51 @@
   }
   // ===== 뇌 구조 + 역할 분담: 각 뉴런/기능을 실제 뇌 영역으로 매핑(조직도·3D 시각화용) =====
   var BRAIN = [
+    { region: "간뇌 · 시상(라우팅)", anat: "Diencephalon/Thalamus", fn: "감각 입력 라우팅·주의 게이팅·항상성(자가학습 트리거)", group: "간뇌", pos: [0, 0.35, 0.05],
+      roles: ["입력 라우팅관 — 어떤 자료 API를 활성화할지 결정", "게이팅관 — 속도(빠른/정밀)·유형별 필요 자료 선택", "항상성관 — 유휴 시 자가학습 루프 기동"],
+      harness: ["① 지문 수신·토큰화·내용어 추출", "② 유형별 필요 자료 결정(라우팅 테이블)", "③ 감각피질 API군 활성화 신호", "④ 대뇌피질(이해)로 전달"] },
     { region: "감각·지각 피질", anat: "Sensory Cortex", fn: "외부 지식을 받아들여 지각", group: "입력", pos: [0, 1.1, 0.2],
-      roles: ["자료조사관 — Datamuse(동의·반의·연상·상하위·수식·연어·철자·운율)", "사전관 — Free Dictionary(정의·예문·발음)", "어원관 — Wiktionary", "배경지식관 — Wikipedia·Wikidata·OpenLibrary·PoetryDB·Wikiquote·Wikisource", "난이도지각관 — CEFR·코퍼스 빈도", "한국어뜻관 — MyMemory"] },
-    { region: "베르니케 영역", anat: "Wernicke's Area", fn: "언어 이해 — 글의 핵심 논지 파악", group: "이해", pos: [-1.0, 0.1, 0.4],
-      roles: ["논지분석관 — 핵심 논지 한 문장 추출"] },
-    { region: "브로카 영역", anat: "Broca's Area", fn: "언어 생성 — 정답·오답·발문 산출", group: "생성", pos: [1.0, 0.2, 0.5],
-      roles: ["정답작성관 — 정답 보기/정답문", "오답설계관 — 역할별 매력적 오답 4개"] },
+      roles: ["자료조사관 — Datamuse(동의·반의·연상·상하위·수식·연어·철자·운율)", "사전관 — Free Dictionary(정의·예문·발음)", "어원관 — Wiktionary", "배경지식관 — Wikipedia·Wikidata·OpenLibrary·PoetryDB·Wikiquote·Wikisource", "난이도지각관 — CEFR·코퍼스 빈도", "한국어뜻관 — MyMemory"],
+      harness: ["① 내용어 8개 선별", "② Datamuse 12모드 병렬 호출(동의/반의/연상/상하위/연어/철자/운율…)", "③ 사전·어원·발음 병렬", "④ 위키·Wikidata·도서·인용 배경 병렬", "⑤ CEFR·빈도 난이도 태깅", "⑥ ctx 컨텍스트 조립"] },
+    { region: "대뇌피질 · 베르니케 영역", anat: "Wernicke's Area", fn: "언어 이해 — 글의 핵심 논지 파악", group: "이해", pos: [-1.0, 0.1, 0.4],
+      roles: ["논지분석관 — 핵심 논지 한 문장 추출"],
+      harness: ["① 배경·관련주제·사실 결합", "② 지문 논지 구조 파악(대조·인과)", "③ 핵심 논지 영어 1문장 산출", "④ 브로카로 전달"] },
+    { region: "대뇌피질 · 브로카 영역", anat: "Broca's Area", fn: "언어 생성 — 정답·오답·발문 산출", group: "생성", pos: [1.0, 0.2, 0.5],
+      roles: ["정답작성관 — 정답 보기/정답문", "오답설계관 — 역할별 매력적 오답 4개"],
+      harness: ["① 핵심논지→정답 보기 작성", "② 역할별 오답 4개 설계(부분/정반대/무관/과장)", "③ 유의반의·연어로 오답 정교화", "④ 발문 조립→전전두엽으로"] },
     { region: "전전두엽", anat: "Prefrontal Cortex", fn: "고등 판단·검증·의사결정", group: "검증", pos: [0, 0.5, 1.2],
-      roles: ["선지검수관 — 형태통일·정답유일·어구화", "어법검수관 — LanguageTool", "중복차단관 — Datamuse", "번역검증관 — MyMemory", "연어검증관 — Datamuse"] },
+      roles: ["선지검수관 — 형태통일·정답유일·어구화", "어법검수관 — LanguageTool", "중복차단관 — Datamuse", "번역검증관 — MyMemory", "연어검증관 — Datamuse"],
+      harness: ["① 5선지 형태·길이 통일", "② 정답 유일성 검사", "③ 어법 검수(LanguageTool)", "④ 동의어 중복 차단(Datamuse)", "⑤ 정답 한국어 교차검증(MyMemory)", "⑥ 최종 선지 확정"] },
+    { region: "중뇌 · 각성(주의)", anat: "Midbrain", fn: "각성·주의 배분 — 활성 뉴런 선택·속도 조절", group: "중뇌", pos: [0, -0.55, 0.6],
+      roles: ["주의관 — 이번 과제에 필요한 뉴런/API만 활성", "속도관 — fast/정밀·재귀 라운드 수 조절"],
+      harness: ["① 과제 난이도·유형 감지", "② 활성 뉴런셋 선택", "③ 재귀/앙상블 on·off·라운드 결정", "④ 소뇌 정교화 위임"] },
+    { region: "소뇌 · 정교화", anat: "Cerebellum", fn: "반복 미세조정 — 재귀 상호작용 수렴", pos: [0, -0.8, -0.5],
+      roles: ["재귀개선관 — 검수↔재작성 수렴", "단계변형관 — 단어→구문→문장→주제"],
+      harness: ["① 교사 패널 채점(N인 합의)", "② 결함 목록 도출", "③ 결함 기반 재작성", "④ 점수 수렴/목표 도달까지 반복", "⑤ 최고점 버전 채택"] },
     { region: "변연계", anat: "Limbic System", fn: "피드백·동기·자기개선", group: "피드백", pos: [0, -0.3, 0.1],
-      roles: ["회의진행관 — 오류 시 API 회의 소집", "요청심의관 — 사용자 요청 교사회의 심의"] },
-    { region: "운동 피질", anat: "Motor Cortex", fn: "산출·표현", group: "출력", pos: [0, 0.9, -0.9],
-      roles: ["삽화주문관 — Pollinations Image"] },
+      roles: ["회의진행관 — 오류 시 API 회의 소집", "요청심의관 — 사용자 요청 교사회의 심의", "자가학습관 — 결함→일반화 규칙 학습→STANDING"],
+      harness: ["① 오류/요청 감지", "② 교사 회의 소집(대화문)", "③ 합의 판정·개선지시", "④ 규칙 학습·누적(learned_rules)"] },
+    { region: "운동 피질 · 출력", anat: "Motor Cortex", fn: "산출·표현", group: "출력", pos: [0, 0.9, -0.9],
+      roles: ["삽화주문관 — Pollinations Image", "정답지·출제의도 기재관", "해설지·단어장 산출관"],
+      harness: ["① 문항 조립(발문·지문·선지·정답)", "② 출제의도 기재", "③ 해설지·단어장 산출(요청 시)", "④ 삽화 주문(선택)"] },
     { region: "연합 피질 · 교사군집", anat: "Association Cortex", fn: "통합 고등사고 — 교사 다관점 합성", group: "창발", pos: [0, -0.1, -1.1],
-      roles: ["교사군집 — 전공·성향별 표집(무한)", "회의의장 — 합의 판정(반영/반려)", "앙상블 — 다관점 초안 합성"] },
-    { region: "해마 · 학습DB", anat: "Hippocampus", fn: "기억·학습 저장 — GitHub·원서 데이터를 API와 엮음", group: "학습DB", pos: [0, -1.0, 0.35],
-      roles: ["CEFR등급(GitHub) — 난이도 판정", "유의반의(GitHub) — 오답·중복차단", "구동사(GitHub) — 어법/어휘/단어장", "어법오류패턴 JFLEG(GitHub) — 어법 실오류", "상용어빈도 google-10k(GitHub)", "원서 코퍼스(로컬) — 지문·배경", "교재DB 582종(마스터) — 출판사·영역·단계·약점별 추천"] }
+      roles: ["교사군집 — 전공·성향별 표집(96,000)", "회의의장 — 합의 판정", "앙상블 — 다관점 초안 합성"],
+      harness: ["① 교사 K명 표집(전공×성향×경력)", "② 각 교사 하네스: 초안→자기점검·보완", "③ 상호 비평", "④ 종합 편집자가 최종 합성"] },
+    { region: "해마 · 학습DB", anat: "Hippocampus", fn: "기억·학습 저장 — GitHub·원서를 API와 엮음", group: "학습DB", pos: [0, -1.0, 0.35],
+      roles: ["CEFR등급·유의반의·구동사·JFLEG어법·상용어(GitHub)", "원서 코퍼스·교재DB 582종(로컬/마스터)", "24h 연구·자가학습 규칙 누적"],
+      harness: ["① 코퍼스·GitHub DB 로드", "② 어휘 인출(CEFR·유의반의·구동사)", "③ 지문·교재 추천 인출", "④ 학습규칙(STANDING) 적용", "⑤ 신규 규칙 기억 저장"] }
   ];
   var BRAIN_EXTRA = [
-    { region: "해마", anat: "Hippocampus", fn: "기억·학습 저장", roles: ["코퍼스 — 원서 어휘·지문·CEFR", "24h 연구 누적 아카이브", "공유 개선지침"] },
-    { region: "소뇌", anat: "Cerebellum", fn: "반복 미세조정·정교화", roles: ["재귀 상호작용 루프 — 검수↔재작성 수렴", "단계별 지문 변형(단어→구문→문장→주제)"] },
-    { region: "뇌량", anat: "Corpus Callosum", fn: "영역 간 연결", roles: ["시냅스 — 다중 API 엮음(개별 API는 멍청 → 항상 엮기)"] },
-    { region: "전뇌 통합 · brain()", anat: "Whole-brain", fn: "분해→검색→다관점→자기비판→개선 총괄", roles: ["통합 추론 엔진 — 최종 합성(weaving)은 최강 모델이 담당"] }
+    { region: "뇌량 · 시냅스", anat: "Corpus Callosum", fn: "영역 간 연결(신경다발)", roles: ["시냅스 — 다중 API 엮음(개별 API는 멍청 → 항상 엮기)"],
+      harness: ["① 영역 산출물 전달", "② 다중 API 결과 병합", "③ 다음 영역 입력으로 라우팅"] },
+    { region: "전뇌 통합 · brain()", anat: "Whole-brain", fn: "분해→검색→다관점→자기비판→개선 총괄", roles: ["통합 추론 엔진 — 최종 합성은 최강 모델이 담당"],
+      harness: ["① 과제 분해(하위질문·키워드)", "② 지식 검색(위키·사전·Datamuse)", "③ 다관점 사유(앙상블)", "④ 자기비판(교사 패널)", "⑤ 개선·최종 합성"] },
+    { region: "24시간 항상성 · 서버 루틴", anat: "Autonomic (24/7)", fn: "PC 꺼져도 항시 사고·회의·학습·자료 연결", roles: ["자가학습 실행기(매시간)", "교사군집 브레인(매시간)", "일일 리포트·유형연구", "실시간 API·GitHub 동적 연결"],
+      harness: ["① 저장소 pull", "② 스스로 출제·회의·연구", "③ 필요 시 API·GitHub 자료 연결·import", "④ learned_rules·아카이브 커밋", "⑤ 브라우저가 로드해 반영"] }
   ];
   function brainStructure() {
     var m = topology();
-    var regions = BRAIN.map(function (b) { var ns = m.byNeuron.filter(function (n) { return n.group === b.group; }); return { region: b.region, anat: b.anat, fn: b.fn, group: b.group, pos: b.pos, roles: b.roles, neurons: ns.map(function (n) { return { name: n.name, degree: n.degree, key: n.key }; }), count: ns.length }; });
+    var regions = BRAIN.map(function (b) { var ns = m.byNeuron.filter(function (n) { return n.group === b.group; }); return { region: b.region, anat: b.anat, fn: b.fn, group: b.group, pos: b.pos, roles: b.roles, harness: b.harness || [], neurons: ns.map(function (n) { return { name: n.name, degree: n.degree, key: n.key }; }), count: ns.length }; });
     return { regions: regions, extra: BRAIN_EXTRA, totalNeurons: m.neurons, totalSynapses: m.synapses, teachers: (typeof TEACHER_POP !== "undefined" ? TEACHER_POP : 0) };
   }
   function regionOf(group) { for (var i = 0; i < BRAIN.length; i++) if (BRAIN[i].group === group) return BRAIN[i]; return null; }
@@ -645,13 +664,24 @@
     fn.neuron = neuron; return fn;
   }
   // 앙상블 메타-LLM: N개 페르소나가 각자 사유 → 상호 비평·통합 → 하나의 상위 답(창발적 '새 LLM')
+  // 각 교사별 하네스 파이프라인: 라인1 초안 → 라인2 자기점검·보완 (라인별 트레이스)
+  async function teacherHarness(teacher, prompt, temp) {
+    var trace = [];
+    var draft = await llm([{ role: "system", content: teacher.sys }, { role: "user", content: prompt }], { noRule: true, temperature: temp || 0.6, timeout: 55000 }).catch(function () { return ""; });
+    draft = String(draft || "").trim();
+    trace.push({ line: 1, api: "llm", label: "초안 작성(" + (teacher.special || "") + ")", ok: !!draft });
+    if (!draft) return { who: teacher.name, output: "", draft: "", steps: trace, teacher: teacher };
+    var checked = await llm([{ role: "system", content: teacher.sys + " 너의 초안을 스스로 점검해 오류·약점을 보완한다." }, { role: "user", content: "과제:\n" + prompt + "\n\n내 초안:\n" + draft + "\n\n오류·약점을 보완한 '개선된 최종 기여'만 출력(설명 없이)." }], { noRule: true, temperature: 0.4, timeout: 55000 }).catch(function () { return ""; });
+    checked = String(checked || "").trim();
+    trace.push({ line: 2, api: "llm", label: "자기 점검·보완", ok: !!checked });
+    return { who: teacher.name, special: teacher.special, output: checked || draft, draft: draft, steps: trace, teacher: teacher };
+  }
   async function ensemble(prompt, opts) {
     opts = opts || {}; var onP = opts.onProgress;
     var personas = opts.personas || sampleTeachers(opts.teachers || 3, opts.seed || (prompt ? String(prompt).length : 1));
-    log(onP, "  🧬 교사군집 " + TEACHER_POP.toLocaleString() + "명 중 " + personas.length + "명 소집 → 사유·상호비평·합성…");
+    log(onP, "  🧬 교사군집 " + TEACHER_POP.toLocaleString() + "명 중 " + personas.length + "명 소집 → 각자 하네스(초안→자기점검) → 합성…");
     var draftResults = await Promise.all(personas.map(function (p, i) {
-      return llm([{ role: "system", content: p.sys }, { role: "user", content: prompt }], { noRule: true, temperature: 0.55 + 0.12 * i, timeout: 60000 })
-        .then(function (d) { return (d && d.trim()) ? { who: p.name, text: d.trim() } : null; }, function () { return null; });
+      return teacherHarness(p, prompt, 0.55 + 0.12 * i).then(function (h) { return (h && h.output) ? { who: p.name, text: h.output, steps: h.steps, draft: h.draft, special: h.special } : null; }, function () { return null; });
     }));
     var drafts = draftResults.filter(Boolean);
     if (!drafts.length) return { answer: "", drafts: [] };
@@ -1028,7 +1058,7 @@
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
     refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain, deliberate: deliberate,
-    selfLearnStep: selfLearnStep, learnedRules: learnedRules, applyLearned: applyLearned,
+    selfLearnStep: selfLearnStep, learnedRules: learnedRules, applyLearned: applyLearned, teacherHarness: teacherHarness,
     teacherCount: teacherCount, sampleTeachers: sampleTeachers, makeTeacher: makeTeacher, buildExplanation: buildExplanation,
     brainStructure: brainStructure, regionOf: regionOf,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,

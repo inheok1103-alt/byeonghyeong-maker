@@ -68,7 +68,7 @@ button:active{transform:translateY(0)}
     <h1>🧠 출제자 뇌 — AI 변형문제 제작기</h1>
     <div class="sub">최상위 영어교사 <b>9만 6천 명</b>이 신경다발처럼 엮여, 스스로 만들고·회의하고·학습하는 출제 두뇌. 무키·0원으로 작동.</div>
     <div class="pills">
-      <span class="pill">18유형 자동출제</span><span class="pill">해설·단어장·변형</span><span class="pill">교사 회의·자가학습</span><span class="pill">3D 뇌 시각화</span><span class="pill" id="pillGroq">Groq 키 넣으면 초고속</span>
+      <span class="pill" id="pillEvo">🧬 진화 Lv.1</span><span class="pill">18유형 자동출제</span><span class="pill">해설·단어장·변형</span><span class="pill">교사 회의·자가학습</span><span class="pill">3D 뇌 시각화</span><span class="pill" id="pillGroq">Groq 키 넣으면 초고속</span>
     </div>
   </div>
   <div class="stepbar">
@@ -89,6 +89,7 @@ button:active{transform:translateY(0)}
     <h2>🧠 3D 뇌 연결 지도 <span style="font-size:9pt;color:#888;font-weight:400">(드래그 회전 · 휠 확대 · 뇌 영역별 역할 분담)</span></h2>
     <div id="brain3d" style="width:100%;height:420px;background:radial-gradient(circle at 50% 40%,#0b1f2a,#050d12);border-radius:12px;position:relative;overflow:hidden">
       <div id="brain3dMsg" style="position:absolute;top:12px;left:14px;color:#9fd;font-size:9pt">3D 뇌 로딩 중…</div>
+      <div id="brain3dAct" style="position:absolute;bottom:12px;left:14px;right:14px;color:#fff;background:rgba(6,20,26,.6);border:1px solid rgba(120,220,200,.35);border-radius:9px;padding:5px 11px;font-size:9pt;display:none">🧠 대기 중 — 출제하면 뇌 영역이 순차 점등됩니다</div>
     </div>
     <div id="brainLegend3d" style="margin-top:8px;font-size:8.6pt"></div>
     <div id="roleChart" style="margin-top:10px"></div>
@@ -247,12 +248,19 @@ function drawMesh(){
 drawMesh();
 function pulse(key){ var c=document.querySelector('#nu_'+key+' circle'); if(!c)return; var r=+c.getAttribute('r'); c.setAttribute('opacity','1'); c.setAttribute('r',r+4); setTimeout(function(){ c.setAttribute('opacity','0.9'); c.setAttribute('r',r); },450); }
 function pulseGroup(g){ T.mesh.neurons.forEach(function(n){ if(n.group===g) pulse(n.key); }); }
+function p3(g,label){ try{ if(window.pulse3D) window.pulse3D(g,label); }catch(e){} }
 function pulseFromMsg(m){
-  if(/Datamuse|반의|동의|연상|배경|위키|사전|정의|용례|어원|수집/.test(m)) pulseGroup("입력");
-  if(/논지|정답|오답|작성|LLM|요약|함의/.test(m)) pulseGroup("생성");
-  if(/검수|선지|회의|개선/.test(m)){ pulseGroup("검증"); pulse("meeting"); }
-  if(/어법|LanguageTool/.test(m)) pulse("grammar");
-  if(/번역|한국어|MyMemory/.test(m)) pulse("trans_chk");
+  // 2D 메시 + 3D 뇌 동시 점등(인지 과정 시각화)
+  if(/자료 수집|Datamuse|반의|동의|연상|배경|위키|사전|정의|용례|어원|수집|연어/.test(m)){ pulseGroup("입력"); p3("간뇌"); p3("입력","감각·지각 피질 — 자료 수집·병렬 지각"); p3("학습DB"); }
+  if(/논지|이해|핵심/.test(m)){ p3("이해","대뇌피질(베르니케) — 핵심 논지 이해"); }
+  if(/정답|오답|작성|보기|설계|생성|요약|함의|발문/.test(m)){ pulseGroup("생성"); p3("생성","대뇌피질(브로카) — 정답·오답 생성"); }
+  if(/검수|선지|형태통일|정답유일|중복|번역검증/.test(m)){ pulseGroup("검증"); p3("검증","전전두엽 — 선지 검증·정답 유일성"); }
+  if(/어법|LanguageTool/.test(m)){ pulse("grammar"); p3("검증","전전두엽 — 어법 검수(LanguageTool)"); }
+  if(/번역|한국어|MyMemory/.test(m)){ pulse("trans_chk"); }
+  if(/라운드|재귀|수렴|검수 [0-9]|상호작용/.test(m)){ p3("검증"); p3("중뇌"); document.getElementById("brain3dAct")&&(document.getElementById("brain3dAct").innerHTML="🧠 <b>지금</b>: 소뇌 — 재귀 정교화(검수↔재작성 수렴)"); }
+  if(/회의|개선|합의|소집/.test(m)){ pulseGroup("피드백"); p3("피드백","변연계 — 교사 회의·자기개선"); p3("창발","연합피질 — 교사군집 합성"); }
+  if(/교사|앙상블|하네스|초안|자기점검/.test(m)){ p3("창발","연합피질(교사군집) — 다관점 사유·합성"); }
+  if(/완료|삽화|출제의도/.test(m)){ p3("출력","운동피질 — 문항 산출·출제의도 기재"); }
 }
 
 /* ===== 회의록·오류 콜백 ===== */
@@ -459,15 +467,16 @@ function learnLoop(){
     if(LEARN.on) setTimeout(learnLoop, r.learned?3500:2500);
   }).catch(function(e){ liveLine('<div style="color:#f88">오류: '+esc(e.message)+'</div>'); if(LEARN.on) setTimeout(learnLoop,8000); });
 }
-function saveLearned(){ try{ localStorage.setItem("learnedRules",JSON.stringify(T.learnedRules())); }catch(e){} var el=document.getElementById("learnStat"); if(el) el.textContent="· 누적 학습규칙 "+T.learnedRules().length+"개(생성에 반영중)"; }
+function evoLabel(n){ return "🧬 진화 Lv."+(Math.floor(n/5)+1)+" · 학습규칙 "+n+"개(생성에 반영중)"; }
+function saveLearned(){ try{ localStorage.setItem("learnedRules",JSON.stringify(T.learnedRules())); }catch(e){} var el=document.getElementById("learnStat"); if(el) el.textContent="· "+evoLabel(T.learnedRules().length); var p=document.getElementById("pillEvo"); if(p) p.textContent="🧬 진화 Lv."+(Math.floor(T.learnedRules().length/5)+1); }
 function initLearned(){
   var local=[]; try{ local=JSON.parse(localStorage.getItem("learnedRules")||"[]"); }catch(e){}
   // 서버(클라우드 루틴)가 탭과 무관하게 누적한 학습규칙도 로드해 병합 → 모든 사용자에 반영
   fetch("corpus/learned_rules.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
     var server=(d&&d.rules)||[];
     var all=server.concat(local.filter(function(x){return server.indexOf(x)<0;}));
-    if(all.length&&T.applyLearned){ T.applyLearned(all); var el=document.getElementById("learnStat"); if(el) el.textContent="· 학습규칙 "+all.length+"개(서버 "+server.length+"+로컬, 적용됨)"; }
-  }).catch(function(){ if(local.length&&T.applyLearned){ T.applyLearned(local); var el=document.getElementById("learnStat"); if(el) el.textContent="· 학습규칙 "+local.length+"개(적용됨)"; } });
+    if(all.length&&T.applyLearned){ T.applyLearned(all); var el=document.getElementById("learnStat"); if(el) el.textContent="· "+evoLabel(all.length).replace("(생성에 반영중)"," (서버"+server.length+"+로컬, 반영중)"); var p=document.getElementById("pillEvo"); if(p) p.textContent="🧬 진화 Lv."+(Math.floor(all.length/5)+1); }
+  }).catch(function(){ if(local.length&&T.applyLearned){ T.applyLearned(local); var el=document.getElementById("learnStat"); if(el) el.textContent="· "+evoLabel(local.length); } });
 }
 function viewMeeting(name){
   var v=document.getElementById("meetView"); if(!v) return; v.innerHTML='<span class="note">불러오는 중…</span>';
@@ -620,9 +629,11 @@ function renderRoleChart(){
   var bs=APITEAM.brainStructure();
   var h='<div style="font-size:9.2pt;color:#0f766e;font-weight:800;margin-bottom:5px">🗂 뇌 영역별 역할 분담 — 총 '+bs.totalNeurons+'뉴런 · '+bs.totalSynapses+'시냅스 · 교사 '+bs.teachers.toLocaleString()+'명</div>';
   h+='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:8px">';
-  var all=bs.regions.concat(bs.extra.map(function(e){return {region:e.region,anat:e.anat,fn:e.fn,roles:e.roles,count:null};}));
+  var all=bs.regions.concat(bs.extra.map(function(e){return {region:e.region,anat:e.anat,fn:e.fn,roles:e.roles,harness:e.harness,count:null};}));
+  h+='<div style="font-size:8.3pt;color:#888;margin-bottom:6px">각 뇌 영역이 <b>하네스(단계별 파이프라인)</b>를 갖고 시냅스로 통합됩니다 — 간뇌→대뇌피질→전전두엽→소뇌→운동피질</div>';
   all.forEach(function(r){ var c=REGCOL[r.region]!=null?hex6(REGCOL[r.region]):"#0f766e";
-    h+='<div style="border:1px solid #dbe6e2;border-left:4px solid '+c+';border-radius:8px;padding:7px 9px"><div style="font-weight:800;color:#0f766e">'+esc3(r.region)+(r.count!=null?(' <span style="font-size:7.5pt;color:#999">'+r.count+'뉴런</span>'):'')+'</div><div style="font-size:7.8pt;color:#aaa">'+esc3(r.anat||"")+'</div><div style="font-size:8.4pt;color:#666;margin:3px 0">'+esc3(r.fn||"")+'</div><ul style="margin:2px 0 0 14px;padding:0;font-size:8.3pt;color:#445;line-height:1.5">'+(r.roles||[]).map(function(x){return '<li>'+esc3(x)+'</li>';}).join("")+'</ul></div>';
+    var hn=(r.harness&&r.harness.length)?('<div style="margin-top:5px;display:flex;flex-wrap:wrap;gap:3px">'+r.harness.map(function(s){return '<span style="font-size:7.6pt;background:'+c+'18;color:#334;border:1px solid '+c+'44;border-radius:6px;padding:1px 6px">'+esc3(s)+'</span>';}).join('')+'</div>'):'';
+    h+='<div style="border:1px solid #dbe6e2;border-left:4px solid '+c+';border-radius:8px;padding:8px 10px"><div style="font-weight:800;color:#0f766e">'+esc3(r.region)+(r.count!=null&&r.count>0?(' <span style="font-size:7.5pt;color:#999">'+r.count+'뉴런</span>'):'')+'</div><div style="font-size:7.8pt;color:#aaa">'+esc3(r.anat||"")+'</div><div style="font-size:8.4pt;color:#666;margin:3px 0">'+esc3(r.fn||"")+'</div><div style="font-size:7.6pt;color:#0f766e;font-weight:700;margin-top:3px">🔧 하네스 파이프라인</div>'+hn+'<ul style="margin:4px 0 0 14px;padding:0;font-size:8.1pt;color:#556;line-height:1.5">'+(r.roles||[]).map(function(x){return '<li>'+esc3(x)+'</li>';}).join("")+'</ul></div>';
   });
   h+='</div>'; el.innerHTML=h;
 }
@@ -646,14 +657,19 @@ function build3DBrain(){
   var verts=[]; mesh.synapses.forEach(function(e){ var a=pos[e[0]],b=pos[e[1]]; if(a&&b) verts.push(a.x,a.y,a.z,b.x,b.y,b.z); });
   var lgeo=new THREE.BufferGeometry(); lgeo.setAttribute("position",new THREE.Float32BufferAttribute(verts,3));
   g.add(new THREE.LineSegments(lgeo,new THREE.LineBasicMaterial({color:0x2dd4bf,transparent:true,opacity:0.3})));
-  mesh.neurons.forEach(function(n){ var r=regByGroup[n.group]||bs.regions[bs.regions.length-1]; var col=REGCOL[r.region]!=null?REGCOL[r.region]:0x9ad; var big=(n.degree>15?0.09:0.055); var s=new THREE.Mesh(new THREE.SphereGeometry(big,14,14),new THREE.MeshBasicMaterial({color:col})); s.position.copy(pos[n.key]); g.add(s); });
+  var N3D={}, pulsed=[], WHITE=new THREE.Color(0xffffff);
+  mesh.neurons.forEach(function(n){ var r=regByGroup[n.group]||bs.regions[bs.regions.length-1]; var col=REGCOL[r.region]!=null?REGCOL[r.region]:0x9ad; var big=(n.degree>15?0.09:0.055); var mat=new THREE.MeshBasicMaterial({color:col}); var s=new THREE.Mesh(new THREE.SphereGeometry(big,14,14),mat); s.position.copy(pos[n.key]); g.add(s); (N3D[n.group]=N3D[n.group]||[]).push({mesh:s,mat:mat,col:col,s:0}); });
+  // 인지 과정 시각화: 영역(그룹) 점등 + 단계 라벨
+  window.pulse3D=function(group,label){ var arr=N3D[group]; if(arr){ arr.forEach(function(o){ o.s=1; if(pulsed.indexOf(o)<0)pulsed.push(o); }); } if(label){ var a=document.getElementById("brain3dAct"); if(a){ a.innerHTML="🧠 <b>지금</b>: "+label; a.style.display="block"; } } };
   var rot={x:0,y:0}, drag=false, lx=0, ly=0;
   rend.domElement.style.cursor="grab";
   rend.domElement.addEventListener("pointerdown",function(e){drag=true;lx=e.clientX;ly=e.clientY;rend.domElement.style.cursor="grabbing";});
   window.addEventListener("pointerup",function(){drag=false;rend.domElement.style.cursor="grab";});
   window.addEventListener("pointermove",function(e){ if(!drag)return; rot.y+=(e.clientX-lx)*0.008; rot.x+=(e.clientY-ly)*0.008; rot.x=Math.max(-1.2,Math.min(1.2,rot.x)); lx=e.clientX;ly=e.clientY; });
   rend.domElement.addEventListener("wheel",function(e){ e.preventDefault(); cam.position.z=Math.max(3.2,Math.min(9,cam.position.z+e.deltaY*0.0022)); },{passive:false});
-  function animate(){ requestAnimationFrame(animate); if(!drag) rot.y+=0.0022; g.rotation.y=rot.y; g.rotation.x=rot.x; rend.render(scene,cam); }
+  function animate(){ requestAnimationFrame(animate); if(!drag) rot.y+=0.0022; g.rotation.y=rot.y; g.rotation.x=rot.x;
+    for(var i=pulsed.length-1;i>=0;i--){ var o=pulsed[i]; o.s-=0.014; if(o.s<=0){ o.s=0; o.mesh.scale.setScalar(1); o.mat.color.setHex(o.col); pulsed.splice(i,1); } else { o.mesh.scale.setScalar(1+2.6*o.s); o.mat.color.copy(new THREE.Color(o.col)).lerp(WHITE,o.s); } }
+    rend.render(scene,cam); }
   animate();
   window.addEventListener("resize",function(){ var w=host.clientWidth||600; rend.setSize(w,H); cam.aspect=w/H; cam.updateProjectionMatrix(); });
   var lg=document.getElementById("brainLegend3d");
