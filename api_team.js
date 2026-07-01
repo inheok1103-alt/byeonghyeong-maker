@@ -153,6 +153,24 @@
   async function loadDifficultyDB(url) {
     try { var r = await fetch(url, { cache: "no-store" }); DIFF = await r.json(); return { ok: true, levels: DIFF.levels ? Object.keys(DIFF.levels) : [] }; } catch (e) { return { ok: false, error: String(e) }; }
   }
+  // 원서 코퍼스 런타임 학습: 어휘난이도밴드·콜로케이션·등급별 지문 로드 → 난이도/어휘 판정에 반영
+  var CORPUS = { vocab: null, passages: [], colloc: [], research: null };
+  async function loadCorpus(base) {
+    base = base || "corpus/"; var t = "?_t=" + (new Date()).getTime();
+    try { var v = await getJSON(base + "vocab_db.json" + t, 15000); if (v && v.db) CORPUS.vocab = v.db; } catch (_) {}
+    try { var p = await getJSON(base + "passage_db.json" + t, 20000); if (p && p.passages) CORPUS.passages = p.passages; } catch (_) {}
+    try { var c = await getJSON(base + "collocation_db.json" + t, 15000); if (c && c.collocations) CORPUS.colloc = c.collocations; } catch (_) {}
+    try { var rr = await getJSON(base + "corpus_research.json" + t, 15000); if (rr) CORPUS.research = rr; } catch (_) {}
+    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0 };
+  }
+  function corpusInfo() { return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0 }; }
+  function corpusPassage(opts) {
+    opts = opts || {}; var arr = CORPUS.passages || [];
+    if (opts.level) { var f = arr.filter(function (p) { return p.difficulty === opts.level; }); if (f.length) arr = f; }
+    if (opts.category) { var g = arr.filter(function (p) { return p.category === opts.category; }); if (g.length) arr = g; }
+    if (!arr.length) return null;
+    return arr[rint(arr.length)];
+  }
   function setLevelRule(type, level) {
     if (!level || !DIFF) { LEVELRULE = ""; return; }
     var lv = (DIFF.levels && DIFF.levels[level]) || "";
@@ -211,7 +229,10 @@
   async function openLibrary(query) { try { var d = await getJSON("https://openlibrary.org/search.json?q=" + encodeURIComponent(query) + "&limit=2&fields=title,author_name,first_sentence,subject", 12000); var it = (d.docs || [])[0]; if (!it) return null; var fs = it.first_sentence; return { title: it.title, author: (it.author_name || [])[0] || "", sentence: (fs && (fs.value || fs[0])) || "", subjects: (it.subject || []).slice(0, 6) }; } catch (_) { return null; } }
   async function poetry(topic) { try { var d = await getJSON("https://poetrydb.org/lines/" + encodeURIComponent(topic), 12000); if (!Array.isArray(d)) return []; var lines = []; d.slice(0, 3).forEach(function (p) { (p.lines || []).forEach(function (l) { if (l && l.trim().length > 20) lines.push(l.trim()); }); }); return lines.slice(0, 5); } catch (_) { return []; } }
   // Datamuse 메타데이터: 빈도(백만당)·품사·음절 → 어휘 난이도 산정
-  async function wordInfo(word) { try { var d = await getJSON("https://api.datamuse.com/words?sp=" + encodeURIComponent(word) + "&md=fps&max=1", 12000); var it = (d || [])[0]; if (!it) return null; var f = 0, pos = ""; (it.tags || []).forEach(function (t) { if (t.indexOf("f:") === 0) f = parseFloat(t.slice(2)) || 0; else if (/^[a-z]+$/.test(t)) pos = pos || t; }); return { word: it.word, freq: f, syll: it.numSyllables || 0, pos: pos, level: f > 20 ? "쉬움" : f > 3 ? "보통" : "어려움" }; } catch (_) { return null; } }
+  async function wordInfo(word) {
+    var wl = String(word || "").toLowerCase();
+    if (CORPUS.vocab && CORPUS.vocab[wl]) { var e = CORPUS.vocab[wl]; return { word: wl, freq: e.pm, syll: 0, pos: "", level: e.level, docs: e.docs, source: "corpus" }; }
+    try { var d = await getJSON("https://api.datamuse.com/words?sp=" + encodeURIComponent(word) + "&md=fps&max=1", 12000); var it = (d || [])[0]; if (!it) return null; var f = 0, pos = ""; (it.tags || []).forEach(function (t) { if (t.indexOf("f:") === 0) f = parseFloat(t.slice(2)) || 0; else if (/^[a-z]+$/.test(t)) pos = pos || t; }); return { word: it.word, freq: f, syll: it.numSyllables || 0, pos: pos, level: f > 20 ? "쉬움" : f > 3 ? "보통" : "어려움", source: "datamuse" }; } catch (_) { return null; } }
   async function wikiquote(topic) { try { var d = await getJSON("https://en.wikiquote.org/api/rest_v1/page/summary/" + encodeURIComponent(String(topic).replace(/\s+/g, "_")), 12000); return d.extract || ""; } catch (_) { return ""; } }
   async function wikisource(topic) { try { var d = await getJSON("https://en.wikisource.org/api/rest_v1/page/summary/" + encodeURIComponent(String(topic).replace(/\s+/g, "_")), 12000); return d.extract || ""; } catch (_) { return ""; } }
 
@@ -773,6 +794,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
+    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,

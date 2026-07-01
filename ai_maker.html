@@ -59,8 +59,10 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
     <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요..." oninput="onPassage()"></textarea>
     <div class="row" style="margin-top:6px">
       <button class="ghost" onclick="loadSample()">📄 샘플 지문</button>
+      <button class="ghost" onclick="loadCorpusPassage()" title="업로드된 원서 코퍼스에서 난이도에 맞는 지문을 가져옵니다">📚 원서 지문</button>
       <button class="ghost" onclick="clearPassage()">지우기</button>
       <span class="note" id="charcount">0 단어</span>
+      <span class="note" id="corpusStat"></span>
     </div>
     <div class="row" style="margin-top:8px"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
     <div id="suggest"></div>
@@ -351,6 +353,8 @@ function loadResearch(){
   });
 }
 T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=document.getElementById("lvstat"); if(s) s.textContent=(r&&r.ok)?"✓ 난이도 규칙 로드됨(요인 기반)":"내장 기본"; });
+T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s) s.textContent=c&&c.vocab?("📚 코퍼스 학습: 어휘 "+c.vocab.toLocaleString()+" · 지문 "+c.passages+" · 연구누적 "+c.research):""; }).catch(function(){});
+function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
 restoreState(); refreshDB(); loadResearch();
 </script>
 </body>
