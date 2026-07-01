@@ -891,7 +891,7 @@
     var sys = EXPERT_ID + " 지금은 학생용 상세 해설을 집필한다. 지문 근거를 인용하고 명료하게. JSON만.";
     var head = "유형: " + q.type + "\n발문: " + q.instruction + (pg ? ("\n지문: " + pg.slice(0, 900)) : "") + (isMCQ ? ("\n선지: " + JSON.stringify(q.choices) + "\n정답번호: " + q.answer) : ("\n모범답안: " + String(q.explanation || "").replace(/【출제의도】[\s\S]*$/, "").replace("[모범답안] ", "")));
     var spec = isMCQ
-      ? "위 문항의 상세 해설을 작성하라. JSON: {\"correct\":\"정답이 옳은 이유(지문 근거 인용)\",\"distractors\":[{\"n\":오답번호(정수),\"why\":\"이 선지가 틀린 구체적 이유\"}],\"vocab\":[\"핵심 어휘·구문 몇 개(영어-뜻)\"],\"intent\":\"출제의도 한 줄\"}. JSON만."
+      ? "위 문항의 상세 해설을 작성하라. distractors에는 '정답 번호를 제외한 나머지 오답 선지 전부'를 각각 하나씩(빠짐없이) 넣어라. JSON: {\"correct\":\"정답이 옳은 이유(지문 근거 인용)\",\"distractors\":[{\"n\":오답번호(정수),\"why\":\"이 선지가 틀린 구체적 이유\"}],\"vocab\":[\"핵심 어휘·구문 몇 개(영어-뜻)\"],\"intent\":\"출제의도 한 줄\"}. JSON만."
       : "위 서술형의 상세 해설을 작성하라. JSON: {\"correct\":\"모범답안 해설·핵심 포인트\",\"rubric\":[\"채점 포인트 몇 개\"],\"vocab\":[\"핵심 어휘·구문(영어-뜻)\"],\"intent\":\"출제의도 한 줄\"}. JSON만.";
     var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: head + "\n\n" + spec }], { noRule: true, temperature: 0.4, timeout: 60000 });
     if (!r) return null;
