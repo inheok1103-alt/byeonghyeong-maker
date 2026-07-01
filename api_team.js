@@ -187,7 +187,9 @@
     try { var r = await fetch(url, { cache: "no-store" }); DIFF = await r.json(); return { ok: true, levels: DIFF.levels ? Object.keys(DIFF.levels) : [] }; } catch (e) { return { ok: false, error: String(e) }; }
   }
   // 원서 코퍼스 런타임 학습: 어휘난이도밴드·콜로케이션·등급별 지문 로드 → 난이도/어휘 판정에 반영
-  var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null };
+  var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null, synant: null, phrasal: null };
+  function synAnt(word) { return (CORPUS.synant && CORPUS.synant[String(word || "").toLowerCase()]) || null; }
+  function phrasalVerbs() { return CORPUS.phrasal || []; }
   var CEFR_BAND = { A1: "기초", A2: "쉬움", B1: "보통", B2: "보통", C1: "고급", C2: "희귀" };
   async function loadCorpus(base) {
     base = base || "corpus/"; var t = "?_t=" + (new Date()).getTime();
@@ -196,7 +198,9 @@
     try { var c = await getJSON(base + "collocation_db.json" + t, 15000); if (c && c.collocations) CORPUS.colloc = c.collocations; } catch (_) {}
     try { var rr = await getJSON(base + "corpus_research.json" + t, 15000); if (rr) CORPUS.research = rr; } catch (_) {}
     try { var ce = await getJSON(base + "cefr_db.json" + t, 15000); if (ce && ce.level) { CORPUS.cefr = ce.level; CORPUS.common = {}; (ce.common || []).forEach(function (w, i) { CORPUS.common[w] = i + 1; }); } } catch (_) {}
-    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0 };
+    try { var sa = await getJSON(base + "synant.json" + t, 15000); if (sa && sa.map) CORPUS.synant = sa.map; } catch (_) {}
+    try { var pv = await getJSON(base + "phrasal_verbs.json" + t, 15000); if (pv && pv.verbs) CORPUS.phrasal = pv.verbs; } catch (_) {}
+    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0, synant: CORPUS.synant ? Object.keys(CORPUS.synant).length : 0, phrasal: (CORPUS.phrasal || []).length };
   }
   function cefrOf(word) { return (CORPUS.cefr && CORPUS.cefr[String(word || "").toLowerCase()]) || ""; }
   function corpusInfo() { return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0 }; }
@@ -424,7 +428,7 @@
   // 어휘(문맥상 부적절): Datamuse 반의어를 재료로 LLM이 1곳 교체
   async function buildVocab(passage) {
     var cw = contentWords(passage).slice(0, 8), ant = {};
-    await Promise.all(cw.map(async function (w) { var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; }));
+    await Promise.all(cw.map(async function (w) { var sa = synAnt(w); if (sa && sa.ant && sa.ant.length) { ant[w] = sa.ant[0]; return; } var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; }));
     var brief = Object.keys(ant).map(function (w) { return w + "↔" + ant[w]; }).join(", ");
     var pl = " " + passage.toLowerCase().replace(/[^a-z\s]/g, " ") + " ";
     var last = null;
@@ -977,7 +981,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
-    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf,
+    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
