@@ -534,7 +534,7 @@ function loadResearch(){
   });
 }
 T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=document.getElementById("lvstat"); if(s) s.textContent=(r&&r.ok)?"✓ 난이도 규칙 로드됨(요인 기반)":"내장 기본"; });
-T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s) s.textContent=c&&c.vocab?("📚 코퍼스 학습: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 연구누적 "+c.research):""; }).catch(function(){});
+T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s&&c&&c.vocab) s.textContent="📚 학습DB: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 반의어 "+(c.synant||0)+" · 구동사 "+(c.phrasal||0)+" · 어법오류 "+(c.gec||0)+" · 연구 "+c.research; }).catch(function(){});
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
 initGroqKey(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();

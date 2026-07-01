@@ -187,9 +187,10 @@
     try { var r = await fetch(url, { cache: "no-store" }); DIFF = await r.json(); return { ok: true, levels: DIFF.levels ? Object.keys(DIFF.levels) : [] }; } catch (e) { return { ok: false, error: String(e) }; }
   }
   // 원서 코퍼스 런타임 학습: 어휘난이도밴드·콜로케이션·등급별 지문 로드 → 난이도/어휘 판정에 반영
-  var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null, synant: null, phrasal: null };
+  var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null, synant: null, phrasal: null, gec: null };
   function synAnt(word) { return (CORPUS.synant && CORPUS.synant[String(word || "").toLowerCase()]) || null; }
   function phrasalVerbs() { return CORPUS.phrasal || []; }
+  function gecExamples(k) { var g = CORPUS.gec || []; if (!g.length) return ""; var out = []; for (var i = 0; i < (k || 2); i++) { var e = g[rint(g.length)]; if (e) out.push("'" + e.err + "' → '" + e.fix + "'"); } return out.join(" | "); }
   var CEFR_BAND = { A1: "기초", A2: "쉬움", B1: "보통", B2: "보통", C1: "고급", C2: "희귀" };
   async function loadCorpus(base) {
     base = base || "corpus/"; var t = "?_t=" + (new Date()).getTime();
@@ -200,7 +201,8 @@
     try { var ce = await getJSON(base + "cefr_db.json" + t, 15000); if (ce && ce.level) { CORPUS.cefr = ce.level; CORPUS.common = {}; (ce.common || []).forEach(function (w, i) { CORPUS.common[w] = i + 1; }); } } catch (_) {}
     try { var sa = await getJSON(base + "synant.json" + t, 15000); if (sa && sa.map) CORPUS.synant = sa.map; } catch (_) {}
     try { var pv = await getJSON(base + "phrasal_verbs.json" + t, 15000); if (pv && pv.verbs) CORPUS.phrasal = pv.verbs; } catch (_) {}
-    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0, synant: CORPUS.synant ? Object.keys(CORPUS.synant).length : 0, phrasal: (CORPUS.phrasal || []).length };
+    try { var gc = await getJSON(base + "gec_pairs.json" + t, 15000); if (gc && gc.pairs) CORPUS.gec = gc.pairs; } catch (_) {}
+    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0, synant: CORPUS.synant ? Object.keys(CORPUS.synant).length : 0, phrasal: (CORPUS.phrasal || []).length, gec: (CORPUS.gec || []).length };
   }
   function cefrOf(word) { return (CORPUS.cefr && CORPUS.cefr[String(word || "").toLowerCase()]) || ""; }
   function corpusInfo() { return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0 }; }
@@ -518,7 +520,8 @@
   // ===== 어법수정(서술형): 오류 1곳 주입 → LanguageTool 검증 (오류 없는 지문 방지) =====
   async function buildGrammarEdit(passage) {
     for (var attempt = 0; attempt < 2; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "고교 어법 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 포인트 5곳을 골라 각 앞에 ⓐⓑⓒⓓⓔ를 붙이고 <u>밑줄</u>하라. 그 중 '정확히 1곳'에만 실제 어법 오류를 넣어라(수일치·시제·태·준동사·관계사 등, 나머지 4곳은 정확). 오류가 없는 지문은 금지. JSON: {\"passage\":\"ⓐ<u>..</u> 5곳 표시 지문\",\"mark\":\"오류가 든 기호(ⓐ~ⓔ 중 하나)\",\"error\":\"틀린 표현\",\"correct\":\"올바른 표현\"}.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.3 : 0.45, timeout: 60000 });
+      var gecEx = gecExamples(2);
+      var o = await llmJSON([{ role: "system", content: "고교 어법 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 포인트 5곳을 골라 각 앞에 ⓐⓑⓒⓓⓔ를 붙이고 <u>밑줄</u>하라. 그 중 '정확히 1곳'에만 실제 어법 오류를 넣어라(수일치·시제·태·준동사·관계사 등, 나머지 4곳은 정확). 오류가 없는 지문은 금지." + (gecEx ? (" 실제 학습자 오류 예시: " + gecEx) : "") + " JSON: {\"passage\":\"ⓐ<u>..</u> 5곳 표시 지문\",\"mark\":\"오류가 든 기호(ⓐ~ⓔ 중 하나)\",\"error\":\"틀린 표현\",\"correct\":\"올바른 표현\"}.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.3 : 0.45, timeout: 60000 });
       if (o && o.passage && o.error && o.correct && String(o.error).trim() !== String(o.correct).trim()) {
         var verified = ""; try { var g = await grammar(String(o.passage).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); if (g.length) verified = " (LanguageTool: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + " 확인)"; } catch (_) {}
         return { type: "어법수정", instruction: "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.", passage: o.passage, choices: [], answer: 0,
@@ -981,7 +984,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
-    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs,
+    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
