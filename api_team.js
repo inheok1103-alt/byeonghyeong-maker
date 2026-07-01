@@ -16,7 +16,7 @@
   ];
   var BEST_TYPES = ["어법", "어휘", "빈칸", "주제", "제목", "함의", "요약", "내용불일치", "서술형"];
   // 자기개선 레이어 상태
-  var RUNHINT = "", STANDING = "", TYPERULE = "", LEVELRULE = "", DIFF = null, ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {};
+  var RUNHINT = "", STANDING = "", TYPERULE = "", LEVELRULE = "", DIFF = null, ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {}, USE_ENSEMBLE = false;
 
   function withTimeout(ms) { var c = new AbortController(); var t = setTimeout(function () { c.abort(); }, ms || 45000); return { signal: c.signal, done: function () { clearTimeout(t); } }; }
   async function getJSON(url, ms) { var to = withTimeout(ms); try { return await (await fetch(url, { signal: to.signal })).json(); } finally { to.done(); } }
@@ -105,6 +105,8 @@
       { key: "ds_jjb", name: "형용사연상", group: "입력", api: "Datamuse" }, { key: "ds_sp", name: "철자변형", group: "입력", api: "Datamuse" },
       { key: "wiki_rel", name: "관련주제", group: "입력", api: "Wikipedia" }, { key: "wikidata", name: "구조화사실", group: "입력", api: "Wikidata" },
       { key: "openlib", name: "도서정보", group: "입력", api: "OpenLibrary" }, { key: "poetry", name: "문학용례", group: "입력", api: "PoetryDB" },
+      { key: "ds_rhy", name: "운율", group: "입력", api: "Datamuse" }, { key: "word_freq", name: "빈도난이도", group: "입력", api: "Datamuse" },
+      { key: "wikiquote", name: "인용문", group: "입력", api: "Wikiquote" }, { key: "wikisrc", name: "문학원문", group: "입력", api: "Wikisource" },
       { key: "llm_main", name: "핵심논지", group: "이해", api: "Pollinations" }, { key: "llm_ans", name: "정답작성", group: "생성", api: "Pollinations" },
       { key: "llm_dis", name: "오답설계", group: "생성", api: "Pollinations" },
       { key: "critic", name: "선지검수관", group: "검증", api: "Pollinations" }, { key: "grammar", name: "어법검수", group: "검증", api: "LanguageTool" },
@@ -125,6 +127,8 @@
     // 신규 뉴런 시냅스: 연어→어법/연어검증→검수, 지식→정답/오답/삽화
     S.push(["ds_bga", "grammar"], ["ds_bgb", "grammar"], ["ds_bga", "colloc_chk"], ["ds_bgb", "colloc_chk"], ["colloc_chk", "critic"], ["colloc_chk", "llm_ans"], ["colloc_chk", "meeting"]);
     S.push(["wiki_rel", "llm_ans"], ["wiki_rel", "image"], ["wikidata", "llm_ans"], ["wikidata", "llm_dis"], ["openlib", "llm_dis"], ["poetry", "llm_dis"], ["poetry", "llm_ans"]);
+    // 운율·빈도난이도·인용문·문학원문
+    S.push(["ds_rhy", "llm_dis"], ["word_freq", "critic"], ["word_freq", "llm_dis"], ["wikiquote", "llm_ans"], ["wikiquote", "llm_main"], ["wikisrc", "llm_dis"]);
     return { neurons: N, synapses: S, groups: ["입력", "이해", "생성", "검증", "피드백", "출력"], roster: ROSTER };
   })();
   function topology() {
@@ -177,7 +181,7 @@
     } catch (_) { return []; } finally { to.done(); }
   }
   async function datamuse(word, rel, max) {
-    var map = { syn: "rel_syn", ant: "rel_ant", trg: "rel_trg", spc: "rel_spc", gen: "rel_gen", jja: "rel_jja", jjb: "rel_jjb", hom: "rel_hom", bga: "rel_bga", bgb: "rel_bgb", cns: "rel_cns", par: "rel_par", ml: "ml" };
+    var map = { syn: "rel_syn", ant: "rel_ant", trg: "rel_trg", spc: "rel_spc", gen: "rel_gen", jja: "rel_jja", jjb: "rel_jjb", hom: "rel_hom", bga: "rel_bga", bgb: "rel_bgb", cns: "rel_cns", par: "rel_par", rhy: "rel_rhy", ml: "ml" };
     var q = rel === "sp" ? ("sp=" + encodeURIComponent(word)) : ((map[rel] || "ml") + "=" + encodeURIComponent(word));
     try { var d = await getJSON("https://api.datamuse.com/words?" + q + "&max=" + (max || 10), 12000); return (d || []).map(function (x) { return x.word; }); }
     catch (_) { return []; }
@@ -206,6 +210,10 @@
   async function wikidata(query) { try { var d = await getJSON("https://www.wikidata.org/w/api.php?action=wbsearchentities&search=" + encodeURIComponent(query) + "&language=en&format=json&origin=*&limit=4", 12000); return ((d.search) || []).map(function (x) { return { label: x.label, desc: x.description || "" }; }).filter(function (x) { return x.desc; }); } catch (_) { return []; } }
   async function openLibrary(query) { try { var d = await getJSON("https://openlibrary.org/search.json?q=" + encodeURIComponent(query) + "&limit=2&fields=title,author_name,first_sentence,subject", 12000); var it = (d.docs || [])[0]; if (!it) return null; var fs = it.first_sentence; return { title: it.title, author: (it.author_name || [])[0] || "", sentence: (fs && (fs.value || fs[0])) || "", subjects: (it.subject || []).slice(0, 6) }; } catch (_) { return null; } }
   async function poetry(topic) { try { var d = await getJSON("https://poetrydb.org/lines/" + encodeURIComponent(topic), 12000); if (!Array.isArray(d)) return []; var lines = []; d.slice(0, 3).forEach(function (p) { (p.lines || []).forEach(function (l) { if (l && l.trim().length > 20) lines.push(l.trim()); }); }); return lines.slice(0, 5); } catch (_) { return []; } }
+  // Datamuse 메타데이터: 빈도(백만당)·품사·음절 → 어휘 난이도 산정
+  async function wordInfo(word) { try { var d = await getJSON("https://api.datamuse.com/words?sp=" + encodeURIComponent(word) + "&md=fps&max=1", 12000); var it = (d || [])[0]; if (!it) return null; var f = 0, pos = ""; (it.tags || []).forEach(function (t) { if (t.indexOf("f:") === 0) f = parseFloat(t.slice(2)) || 0; else if (/^[a-z]+$/.test(t)) pos = pos || t; }); return { word: it.word, freq: f, syll: it.numSyllables || 0, pos: pos, level: f > 20 ? "쉬움" : f > 3 ? "보통" : "어려움" }; } catch (_) { return null; } }
+  async function wikiquote(topic) { try { var d = await getJSON("https://en.wikiquote.org/api/rest_v1/page/summary/" + encodeURIComponent(String(topic).replace(/\s+/g, "_")), 12000); return d.extract || ""; } catch (_) { return ""; } }
+  async function wikisource(topic) { try { var d = await getJSON("https://en.wikisource.org/api/rest_v1/page/summary/" + encodeURIComponent(String(topic).replace(/\s+/g, "_")), 12000); return d.extract || ""; } catch (_) { return ""; } }
 
   /* ---------- 공통 보조 ---------- */
   function englishWords(s) { return (String(s).match(/[A-Za-z][A-Za-z'\-]{2,}/g) || []); }
@@ -229,7 +237,7 @@
   // ===== 컨텍스트 사전수집: 모든 비-LLM API 병렬 (반의어·동의어·정의·배경지식) =====
   async function prepContext(passage, onP) {
     log(onP, "· 자료 수집반(Datamuse 동의/반의/연상/연어 + 사전·위키·관련검색·Google Books) 병렬 가동…");
-    var cw = contentWords(passage).slice(0, 8), ant = {}, syn = {}, trg = {}, colloc = {}, defs = {};
+    var cw = contentWords(passage).slice(0, 8), ant = {}, syn = {}, trg = {}, colloc = {}, defs = {}, freq = {};
     await Promise.all(cw.map(async function (w) {
       try { var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; } catch (_) {}
       try { var s = await datamuse(w, "syn", 5); if (s.length) syn[w] = s; } catch (_) {}
@@ -238,15 +246,17 @@
     await Promise.all(cw.slice(0, 5).map(async function (w) {
       try { var d = await dict(w); if (d && d.meanings[0]) defs[w] = d.meanings[0].def; } catch (_) {}
       try { var b = await datamuse(w, "bgb", 3); if (b.length) colloc[w] = b; } catch (_) {}
+      try { var fi = await wordInfo(w); if (fi) freq[w] = fi.level; } catch (_) {}
     }));
     var topic = await ask("다음 글의 핵심 주제를 영어 1~3단어(명사)로. 단어만.\n\n" + passage.slice(0, 500)).catch(function () { return ""; });
-    var bg = null, related = [], facts = [];
+    var bg = null, related = [], facts = [], quote = "";
     if (topic) {
       try { bg = await wiki(topic); } catch (_) {}
       try { related = await wikiSearch(topic); } catch (_) {}
       try { facts = await wikidata(topic); } catch (_) {}
+      try { quote = await wikiquote(topic); } catch (_) {}
     }
-    return { cw: cw, ant: ant, syn: syn, trg: trg, colloc: colloc, defs: defs, bg: bg, topic: topic, related: related, facts: facts };
+    return { cw: cw, ant: ant, syn: syn, trg: trg, colloc: colloc, defs: defs, freq: freq, bg: bg, topic: topic, related: related, facts: facts, quote: quote };
   }
   function synOverlap(answer, distractor, ctx) {
     var pool = {}; englishWords(answer).forEach(function (w) { (ctx.syn && ctx.syn[w.toLowerCase()] || []).forEach(function (s) { pool[s] = 1; }); });
@@ -290,7 +300,7 @@
     var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["글과 무관", "글에 없는 다른 주제로"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
     var steps = [
       { api: "wiki", label: "배경지식 조회", run: function (s) { return Promise.resolve({ bg: (ctx && ctx.bg) || null }); } },
-      { api: "llm", label: "핵심 논지 추출", run: async function (s) { var h = s.bg && s.bg.extract ? ("\n(참고 배경: " + s.bg.extract.slice(0, 160) + ")") : ""; if (ctx && ctx.related && ctx.related.length) h += "\n(관련 주제: " + ctx.related.slice(0, 4).join(", ") + ")"; if (ctx && ctx.facts && ctx.facts.length) h += "\n(사실: " + ctx.facts.slice(0, 2).map(function (f) { return f.label + "—" + f.desc; }).join("; ") + ")"; return { main: await ask("다음 글의 핵심 논지를 영어 한 문장으로(답만)." + h + "\n\n" + passage, "핵심 한 문장. 답만.") }; } },
+      { api: USE_ENSEMBLE ? "ensemble" : "llm", label: USE_ENSEMBLE ? "핵심 논지 추출(앙상블 메타-LLM)" : "핵심 논지 추출", run: async function (s) { var h = s.bg && s.bg.extract ? ("\n(참고 배경: " + s.bg.extract.slice(0, 160) + ")") : ""; if (ctx && ctx.related && ctx.related.length) h += "\n(관련 주제: " + ctx.related.slice(0, 4).join(", ") + ")"; if (ctx && ctx.facts && ctx.facts.length) h += "\n(사실: " + ctx.facts.slice(0, 2).map(function (f) { return f.label + "—" + f.desc; }).join("; ") + ")"; var pr = "다음 글의 핵심 논지를 영어 한 문장으로(답만)." + h + "\n\n" + passage; return { main: USE_ENSEMBLE ? ((await ensemble(pr)).answer || "") : await ask(pr, "핵심 한 문장. 답만.") }; } },
       { api: "llm", label: "정답 보기 작성", run: async function (s) { if (!s.main) throw new Error("no main"); return { answer: await ask("글 핵심: \"" + s.main + "\"\n이를 담은 " + type + " 정답을 " + kind + "로 간결히. 보기 텍스트만.") }; } }
     ];
     if (fast) {
@@ -429,6 +439,84 @@
       _trace: [{ line: 1, api: "llm", label: "정답문장 생성", ok: !!sent }, { line: 2, api: "code", label: "핵심어 추출", ok: !!key }, { line: 3, api: "trans", label: "MyMemory 번역", ok: !!ko }, { line: 4, api: "code", label: "조건박스 조립", ok: true }] };
   }
 
+  /* ===== 재귀 상호작용: 검수 뉴런 ↔ 재작성 뉴런이 수렴까지 반복(recurrent refinement) ===== */
+  async function critiqueQ(q, passage) {
+    var isMCQ = q.choices && q.choices.length >= 4;
+    var pg = String(q.passage || passage || "");
+    var sys = "너는 대한민국 수능·최상위 내신 영어 문항 심사위원단(정답검수·오답설계·어법·난이도 4인)이다. 문항을 0~100점으로 냉정히 평가하고 구체적 결함을 짚는다. JSON만.";
+    var body = isMCQ
+      ? ("유형:" + q.type + "\n발문:" + q.instruction + "\n지문:" + (pg ? pg.slice(0, 800) : "(지문 없음)") + "\n선지:" + JSON.stringify(q.choices) + "\n정답번호:" + q.answer)
+      : ("유형:" + q.type + "\n발문:" + q.instruction + "\n(원지문: " + pg.slice(0, 500) + ")\n정답:" + String(q.explanation || "").replace("[모범답안] ", ""));
+    var user = body + "\n\n[평가기준] ①정답의 유일성·타당성 ②오답의 매력도와 상호 비중복 ③선지 형태·길이 통일 ④어법 정확성 ⑤발문 명료성·조건 충분성 ⑥난이도 적정(추론단계·패러프레이즈거리). JSON: {\"score\":0~100,\"issues\":[\"결함 한 줄씩(없으면 빈 배열)\"],\"fix\":\"가장 중요한 개선지시 한 문장\"}. JSON만.";
+    var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { noRule: true, temperature: 0.3, timeout: 55000 });
+    return (r && typeof r.score !== "undefined") ? { score: parseInt(r.score, 10) || 0, issues: r.issues || [], fix: r.fix || "" } : { score: 0, issues: ["평가 실패"], fix: "" };
+  }
+  async function applyFix(q, crit, passage) {
+    var isMCQ = q.choices && q.choices.length >= 4;
+    var pg = String(q.passage || passage || "");
+    if (isMCQ) {
+      var sys = "너는 수능 영어 선지 개선 전문가다. 지적된 결함을 모두 해소해 5개 선지를 다시 다듬는다(정답의 '내용'은 지문에 맞게 유지, 위치는 바뀌어도 됨). JSON만.";
+      var user = "유형:" + q.type + (pg ? ("\n지문:" + pg.slice(0, 800)) : "") + "\n발문:" + q.instruction + "\n현재 선지:" + JSON.stringify(q.choices) + "\n정답번호:" + q.answer + "\n지적 결함:" + JSON.stringify(crit.issues || []) + "\n개선지시:" + (crit.fix || "") + "\nJSON: {\"choices\":[\"5개\"],\"answer\":정답위치(정수)}. JSON만.";
+      var rr = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { noRule: true, temperature: 0.5, timeout: 55000 });
+      if (rr && Array.isArray(rr.choices) && rr.choices.length >= 4) { var ch = rr.choices.map(clean1).filter(Boolean).slice(0, 5); while (ch.length < 5) ch.push("(보기)"); var ai = parseInt(rr.answer, 10); if (!(ai >= 1 && ai <= 5)) ai = 1; return Object.assign({}, q, { choices: ch, answer: ai }); }
+      return null;
+    }
+    var sys2 = "너는 내신 영어 서술형 개선 전문가다. 지적 결함을 반영해 발문/정답을 다듬는다. 아래 두 구획 형식만.";
+    var user2 = "유형:" + q.type + "\n현재 발문:" + q.instruction + "\n현재 정답:" + String(q.explanation || "").replace("[모범답안] ", "") + "\n지적 결함:" + JSON.stringify(crit.issues || []) + "\n개선지시:" + (crit.fix || "") + "\n\n[발문]\n(개선된 발문)\n[정답]\n(개선된 정답)";
+    var raw = await llm([{ role: "system", content: sys2 }, { role: "user", content: user2 }], { noRule: true, temperature: 0.5, timeout: 55000 });
+    var p = parseEssayText(raw); if (p) return Object.assign({}, q, { instruction: p.instruction, explanation: "[모범답안] " + p.answer });
+    return null;
+  }
+  // 수렴까지(또는 목표점수·최대라운드까지) 재귀 반복. best(최고점 버전)를 반환.
+  async function refineLoop(q, opts) {
+    if (!q) return q; opts = opts || {}; var target = opts.target || 88, maxR = opts.maxRounds || 4, onP = opts.onProgress, passage = opts.passage || "";
+    var best = q, bestScore = -1, cur = q, stale = 0, rounds = [];
+    for (var r = 1; r <= maxR; r++) {
+      var c = await critiqueQ(cur, passage);
+      rounds.push({ round: r, score: c.score, issues: (c.issues || []).slice(0, 3) });
+      log(onP, "  🔁 상호작용 라운드 " + r + " — 검수 " + c.score + "점" + ((c.issues && c.issues.length) ? (" · " + c.issues.slice(0, 2).join("; ")) : " · 결함 없음"));
+      try { if (CB.onRefine) CB.onRefine({ round: r, score: c.score, type: q.type }); } catch (_) {}
+      if (c.score > bestScore) { bestScore = c.score; best = cur; stale = 0; } else { stale++; }
+      if (c.score >= target) break;
+      if (stale >= 2) { log(onP, "  · 수렴(추가 개선 없음) — 반복 종료"); break; }
+      var improved = await applyFix(cur, c, passage); if (!improved) { stale++; continue; }
+      cur = improved;
+    }
+    best._refine = { rounds: rounds, finalScore: bestScore }; return best;
+  }
+
+  /* ===== 창발: 뉴런망 위에서 새 LLM을 창조(동적 뉴런) + 앙상블 메타-LLM ===== */
+  var SPAWNED = [];
+  function spawnLLM(name, persona) {
+    var key = "llm_spawn_" + (SPAWNED.length + 1);
+    var neuron = { key: key, name: name || ("창발LLM" + (SPAWNED.length + 1)), group: "창발", api: "Pollinations", persona: persona || "" };
+    MESH.neurons.push(neuron);
+    MESH.synapses.push([key, "llm_main"], ["llm_main", key], [key, "critic"], [key, "llm_ans"], [key, "llm_dis"]);
+    if (MESH.groups.indexOf("창발") < 0) MESH.groups.splice(2, 0, "창발");
+    SPAWNED.push(neuron);
+    var fn = function (prompt, o) { return ask(prompt, persona || "간결하게 답만 출력.", Object.assign({ noRule: true }, o || {})); };
+    fn.neuron = neuron; return fn;
+  }
+  // 앙상블 메타-LLM: N개 페르소나가 각자 사유 → 상호 비평·통합 → 하나의 상위 답(창발적 '새 LLM')
+  async function ensemble(prompt, opts) {
+    opts = opts || {}; var onP = opts.onProgress;
+    var personas = opts.personas || [
+      { name: "창의출제자", sys: "너는 창의적이고 대담한 영어 출제자다. 신선한 관점으로 답한다." },
+      { name: "엄격검수자", sys: "너는 정확성을 최우선하는 보수적 검수자다. 오류 없는 답만 낸다." },
+      { name: "논리분석가", sys: "너는 논리 구조·근거를 중시하는 분석가다. 단계적으로 사고해 답한다." }
+    ];
+    log(onP, "  🧬 앙상블 메타-LLM 창발 — 페르소나 " + personas.length + "인 사유·비평·합성…");
+    var drafts = [];
+    for (var i = 0; i < personas.length; i++) { var d = await ask(prompt, personas[i].sys, { noRule: true, temperature: 0.55 + 0.12 * i }); if (d) drafts.push({ who: personas[i].name, text: d }); }
+    if (!drafts.length) return { answer: "", drafts: [] };
+    var synth = await ask("아래는 같은 과제에 대한 " + drafts.length + "개 초안이다. 서로의 장점을 통합하고 오류를 제거해 '가장 정확하고 우수한 최종답 하나'만 출력하라.\n\n" + drafts.map(function (x) { return "[" + x.who + "] " + x.text; }).join("\n"), "여러 관점을 통합하는 종합 지성. 최종 결론만 간결히 출력.", { noRule: true, temperature: 0.3 });
+    return { answer: synth || drafts[0].text, drafts: drafts };
+  }
+  // 기본 창발 LLM 3인을 뉴런망에 창조(런타임에 spawnLLM으로 추가 생성 가능)
+  spawnLLM("창의출제자", "너는 창의적이고 대담한 영어 출제자다.");
+  spawnLLM("엄격검수자", "너는 정확성을 최우선하는 검수자다.");
+  spawnLLM("논리분석가", "너는 논리·근거 중심 분석가다.");
+
   var BUILDERS = {
     "주제": function (p, o) { return buildInference(p, "주제", o); }, "제목": function (p, o) { return buildInference(p, "제목", o); }, "요지": function (p, o) { return buildInference(p, "요지", o); },
     "빈칸": buildBlank, "함의": buildImplication, "요약": buildSummary,
@@ -494,7 +582,7 @@
 
   // 메인: ① 모든 API로 컨텍스트 사전수집 → ② 유형마다 초미분화 직렬 생성(유형별 3회 재시도)
   async function generateExam(passage, types, opts) {
-    opts = opts || {}; var onP = opts.onProgress, out = [];
+    opts = opts || {}; var onP = opts.onProgress, out = []; USE_ENSEMBLE = !!opts.ensemble;
     log(onP, "■ 1단계: 자료 수집반 가동(전 API)…");
     var ctx = await prepContext(passage, onP).catch(function () { return {}; });
     if (ctx.topic) log(onP, "   주제어=" + ctx.topic + (ctx.bg ? " · 위키 배경 확보" : "") + " · 반의어 " + Object.keys(ctx.ant || {}).length + "쌍");
@@ -516,7 +604,11 @@
         }
       }
       RUNHINT = ""; TYPERULE = ""; LEVELRULE = "";
-      if (got) { if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; got.level = opts.level || ""; out.push(got); } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
+      if (got) {
+        if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
+        if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage }); }
+        out.push(got);
+      } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
     }
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
@@ -524,13 +616,14 @@
 
   // 단일 문항 재생성(개별 문항 🔄용)
   async function generateOne(passage, type, opts) {
-    opts = opts || {};
+    opts = opts || {}; USE_ENSEMBLE = !!opts.ensemble;
     var ctx = opts.ctx || await prepContext(passage).catch(function () { return {}; });
     TYPERULE = TYPE_GUIDE[type] || ""; setLevelRule(type, opts.level);
     var q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type);
     TYPERULE = ""; LEVELRULE = "";
     if (q && TYPE_INSTR[type]) { if (TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type]; }
     if (q) q.level = opts.level || "";
+    if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage });
     return q;
   }
 
@@ -597,7 +690,8 @@
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
-    wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry,
+    wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
+    refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; },
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
