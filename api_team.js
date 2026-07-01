@@ -154,15 +154,18 @@
     try { var r = await fetch(url, { cache: "no-store" }); DIFF = await r.json(); return { ok: true, levels: DIFF.levels ? Object.keys(DIFF.levels) : [] }; } catch (e) { return { ok: false, error: String(e) }; }
   }
   // 원서 코퍼스 런타임 학습: 어휘난이도밴드·콜로케이션·등급별 지문 로드 → 난이도/어휘 판정에 반영
-  var CORPUS = { vocab: null, passages: [], colloc: [], research: null };
+  var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null };
+  var CEFR_BAND = { A1: "기초", A2: "쉬움", B1: "보통", B2: "보통", C1: "고급", C2: "희귀" };
   async function loadCorpus(base) {
     base = base || "corpus/"; var t = "?_t=" + (new Date()).getTime();
     try { var v = await getJSON(base + "vocab_db.json" + t, 15000); if (v && v.db) CORPUS.vocab = v.db; } catch (_) {}
     try { var p = await getJSON(base + "passage_db.json" + t, 20000); if (p && p.passages) CORPUS.passages = p.passages; } catch (_) {}
     try { var c = await getJSON(base + "collocation_db.json" + t, 15000); if (c && c.collocations) CORPUS.colloc = c.collocations; } catch (_) {}
     try { var rr = await getJSON(base + "corpus_research.json" + t, 15000); if (rr) CORPUS.research = rr; } catch (_) {}
-    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0 };
+    try { var ce = await getJSON(base + "cefr_db.json" + t, 15000); if (ce && ce.level) { CORPUS.cefr = ce.level; CORPUS.common = {}; (ce.common || []).forEach(function (w, i) { CORPUS.common[w] = i + 1; }); } } catch (_) {}
+    return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0 };
   }
+  function cefrOf(word) { return (CORPUS.cefr && CORPUS.cefr[String(word || "").toLowerCase()]) || ""; }
   function corpusInfo() { return { vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, research: (CORPUS.research && CORPUS.research.count) || 0 }; }
   function corpusPassage(opts) {
     opts = opts || {}; var arr = CORPUS.passages || [];
@@ -231,6 +234,7 @@
   // Datamuse 메타데이터: 빈도(백만당)·품사·음절 → 어휘 난이도 산정
   async function wordInfo(word) {
     var wl = String(word || "").toLowerCase();
+    if (CORPUS.cefr && CORPUS.cefr[wl]) { var cf = CORPUS.cefr[wl]; return { word: wl, cefr: cf, level: CEFR_BAND[cf] || "보통", freq: (CORPUS.common && CORPUS.common[wl]) || 0, syll: 0, pos: "", source: "cefr" }; }
     if (CORPUS.vocab && CORPUS.vocab[wl]) { var e = CORPUS.vocab[wl]; return { word: wl, freq: e.pm, syll: 0, pos: "", level: e.level, docs: e.docs, source: "corpus" }; }
     try { var d = await getJSON("https://api.datamuse.com/words?sp=" + encodeURIComponent(word) + "&md=fps&max=1", 12000); var it = (d || [])[0]; if (!it) return null; var f = 0, pos = ""; (it.tags || []).forEach(function (t) { if (t.indexOf("f:") === 0) f = parseFloat(t.slice(2)) || 0; else if (/^[a-z]+$/.test(t)) pos = pos || t; }); return { word: it.word, freq: f, syll: it.numSyllables || 0, pos: pos, level: f > 20 ? "쉬움" : f > 3 ? "보통" : "어려움", source: "datamuse" }; } catch (_) { return null; } }
   async function wikiquote(topic) { try { var d = await getJSON("https://en.wikiquote.org/api/rest_v1/page/summary/" + encodeURIComponent(String(topic).replace(/\s+/g, "_")), 12000); return d.extract || ""; } catch (_) { return ""; } }
@@ -541,6 +545,40 @@
   spawnLLM("엄격검수자", "너는 정확성을 최우선하는 검수자다.");
   spawnLLM("논리분석가", "너는 논리·근거 중심 분석가다.");
 
+  // ===== brain: 무료 API 신경다발을 '나(Claude)처럼' 엮은 범용 추론 엔진 =====
+  // 분해 → 지식검색(API 뉴런) → 다관점 사유(앙상블) → 자기비판 → 개선(수렴) → 기억
+  async function brain(task, opts) {
+    opts = opts || {}; var onP = opts.onProgress, maxR = opts.rounds || 2, trace = { steps: [] };
+    log(onP, "🧠 [1/5] 작업 이해·분해…");
+    var plan = await llmJSON([{ role: "system", content: "너는 복잡한 과제를 분해하는 분석가다. JSON만." }, { role: "user", content: "다음 과제 수행을 위해 (a)핵심 하위질문 2~4개, (b)조사가 필요한 영어 키워드 1~3개를 정하라.\n과제: " + task + "\nJSON: {\"subquestions\":[..],\"keywords\":[..]}. JSON만." }], { noRule: true, temperature: 0.4, timeout: 55000 });
+    var kws = (plan && plan.keywords) || []; trace.steps.push({ step: "분해", data: plan });
+    log(onP, "🧠 [2/5] 지식 검색(Wikipedia·Wikidata·사전·Datamuse)…");
+    var facts = [];
+    for (var i = 0; i < Math.min(kws.length, 3); i++) {
+      var k = kws[i];
+      try { var w = await wiki(k); if (w && w.extract) facts.push("[" + k + "] " + w.extract.slice(0, 220)); } catch (_) {}
+      try { var wd = await wikidata(k); if (wd && wd.length) facts.push("[" + k + " 정의] " + wd[0].desc); } catch (_) {}
+      try { var dd = await dict(k); if (dd && dd.meanings[0]) facts.push("[" + k + " 뜻] " + dd.meanings[0].def); } catch (_) {}
+    }
+    trace.steps.push({ step: "검색", data: facts });
+    var ctx = facts.length ? ("\n\n[조사된 배경지식]\n" + facts.join("\n")) : "";
+    log(onP, "🧠 [3/5] 다관점 사유(앙상블 페르소나 합성)…");
+    var en = await ensemble(task + ctx, { onProgress: onP }); var answer = en.answer || "";
+    trace.steps.push({ step: "앙상블", drafts: en.drafts });
+    var scores = [];
+    for (var r = 1; r <= maxR; r++) {
+      log(onP, "🧠 [4/5] 자기비판 라운드 " + r + "…");
+      var crit = await llmJSON([{ role: "system", content: "너는 엄격한 검토자다. JSON만." }, { role: "user", content: "과제: " + task + "\n현재 답:\n" + answer + ctx + "\n\n이 답의 결함·누락·사실오류를 지적하고 0~100으로 채점하라. JSON: {\"score\":정수,\"issues\":[\"결함\"],\"fix\":\"개선지시 한 문장\"}. JSON만." }], { noRule: true, temperature: 0.3, timeout: 55000 });
+      scores.push(crit && crit.score); trace.steps.push({ step: "비판" + r, data: crit });
+      if (!crit || (crit.score || 0) >= 90 || !(crit.issues && crit.issues.length)) break;
+      log(onP, "🧠 [5/5] 개선 라운드 " + r + "…");
+      var imp = await ask("과제: " + task + "\n기존 답:\n" + answer + "\n지적: " + JSON.stringify(crit.issues) + "\n개선지시: " + (crit.fix || "") + ctx + "\n\n결함을 모두 해소한 '개선된 최종답'만 출력하라(설명 없이 답만).", "개선된 최종답만 간결·정확히.", { noRule: true, temperature: 0.5, timeout: 60000 });
+      if (imp && imp.length > 10) answer = imp;
+    }
+    log(onP, "🧠 완료");
+    return { answer: answer, facts: facts, scores: scores, reasoning: trace };
+  }
+
   var BUILDERS = {
     "주제": function (p, o) { return buildInference(p, "주제", o); }, "제목": function (p, o) { return buildInference(p, "제목", o); }, "요지": function (p, o) { return buildInference(p, "요지", o); },
     "빈칸": buildBlank, "함의": buildImplication, "요약": buildSummary,
@@ -794,11 +832,11 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
-    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage,
+    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf,
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
-    refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; },
+    refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
   };
