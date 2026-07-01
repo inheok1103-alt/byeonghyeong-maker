@@ -123,6 +123,12 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
       <button class="ghost" onclick="askBrain()">🧠 사고 실행</button>
     </div>
     <div id="brainout" style="margin-top:8px"></div>
+    <div style="margin-top:8px;font-size:8.6pt;color:#888;border-top:1px dashed #dbe6e2;padding-top:8px">
+      🔑 <b>개인 Groq 키</b>(선택) — 내 브라우저에만 저장·서버/깃허브에 <b>절대 안 올라감</b>. 넣으면 뇌가 llama-3.3-70b로 강력·빠르게 작동:
+      <input type="password" id="groqKey" placeholder="gsk_..." style="width:210px;padding:2px 6px;font-size:8.5pt" onchange="saveGroqKey()">
+      <button class="ghost" style="font-size:8pt;padding:2px 8px" onclick="clearGroqKey()">지우기</button>
+      <span id="groqStat" style="color:#0f766e;font-weight:700"></span>
+    </div>
   </div>
 
   <div class="card" id="govCard">
@@ -301,6 +307,9 @@ function run(){
 function getRefine(){ var c=document.getElementById("refineChk"); return !!(c&&c.checked); }
 function getRounds(){ var r=document.getElementById("rounds"); return r?Math.max(1,Math.min(8,parseInt(r.value,10)||3)):3; }
 function getEnsemble(){ var c=document.getElementById("ensembleChk"); return !!(c&&c.checked); }
+function saveGroqKey(){ var k=(document.getElementById("groqKey").value||"").trim(); var s=document.getElementById("groqStat"); try{ if(k) localStorage.setItem("groqKey",k); else localStorage.removeItem("groqKey"); }catch(e){} if(k){ T.configure({groqKey:k}); s.textContent="✓ 적용됨 (llama-3.3-70b · 강력·빠름)"; } else { T.configure({groqKey:""}); s.textContent=""; } }
+function clearGroqKey(){ document.getElementById("groqKey").value=""; try{ localStorage.removeItem("groqKey"); }catch(e){} T.configure({groqKey:""}); document.getElementById("groqStat").textContent="지움 (무키 Pollinations로 복귀)"; }
+function initGroqKey(){ try{ var gk=localStorage.getItem("groqKey"); if(gk){ var el=document.getElementById("groqKey"); if(el) el.value=gk; T.configure({groqKey:gk}); var s=document.getElementById("groqStat"); if(s) s.textContent="✓ 적용됨 (llama-3.3-70b)"; } }catch(e){} }
 var VERDICT_COLOR={"반영":"#0f766e","부분반영":"#b45309","보류":"#6b7280","반려":"#b03a2e"};
 function submitRequest(){
   var q=document.getElementById("reqInput").value.trim();
@@ -447,7 +456,7 @@ T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=doc
 T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s) s.textContent=c&&c.vocab?("📚 코퍼스 학습: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 연구누적 "+c.research):""; }).catch(function(){});
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
-restoreState(); refreshDB(); loadResearch(); loadNotices();
+initGroqKey(); restoreState(); refreshDB(); loadResearch(); loadNotices();
 </script>
 </body>
 </html>
