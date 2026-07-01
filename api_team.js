@@ -17,8 +17,8 @@
   var BEST_TYPES = ["어법", "어휘", "빈칸", "주제", "제목", "함의", "요약", "내용불일치", "서술형"];
   // 자기개선 레이어 상태
   var RUNHINT = "", STANDING = "", TYPERULE = "", LEVELRULE = "", DIFF = null, ERRLOG = [], MEETINGS = [], LOGURL = "", CB = {}, USE_ENSEMBLE = false;
-  // 목표 정체성: '한 명의 출제자 뇌' — 최상위권 대학 영어교육과 졸업 + 임용고시 통과 + 수능/내신 출제 전문가
-  var EXPERT_ID = "너는 대한민국 최상위권 대학 영어교육과를 졸업하고 임용고시를 통과한, 수능·모의고사·최상위 내신 출제 경험이 풍부한 최상위권 고등학교 영어 교사이자 출제 전문가다. 영어학(통사·의미·화용·어휘), 영어교육학, 평가·측정(변별도·타당도·공정성), 수능/평가원 출제 원칙(오답 매력도·함정 설계·패러프레이즈·성취기준)에 정통하다.";
+  // 목표 정체성: '한 명의 출제자 뇌' — 임용 통과 최상위 영어교사(짧게: 긴 한국어 system은 소형모델 빈응답 유발)
+  var EXPERT_ID = "너는 임용고시를 통과한 최상위권 고등학교 영어 교사이자 수능·내신 출제 전문가다.";
 
   function withTimeout(ms) { var c = new AbortController(); var t = setTimeout(function () { c.abort(); }, ms || 45000); return { signal: c.signal, done: function () { clearTimeout(t); } }; }
   async function getJSON(url, ms) { var to = withTimeout(ms); try { return await (await fetch(url, { signal: to.signal })).json(); } finally { to.done(); } }
@@ -530,13 +530,15 @@
   // 앙상블 메타-LLM: N개 페르소나가 각자 사유 → 상호 비평·통합 → 하나의 상위 답(창발적 '새 LLM')
   async function ensemble(prompt, opts) {
     opts = opts || {}; var onP = opts.onProgress;
-    var personas = opts.personas || sampleTeachers(opts.teachers || 3, opts.seed || (task ? task.length : 1));
+    var personas = opts.personas || sampleTeachers(opts.teachers || 3, opts.seed || (prompt ? String(prompt).length : 1));
     log(onP, "  🧬 교사군집 " + TEACHER_POP.toLocaleString() + "명 중 " + personas.length + "명 소집 → 사유·상호비평·합성…");
     var drafts = [];
-    for (var i = 0; i < personas.length; i++) { var d = await ask(prompt, personas[i].sys, { noRule: true, temperature: 0.55 + 0.12 * i }); if (d) drafts.push({ who: personas[i].name, text: d }); }
+    for (var i = 0; i < personas.length; i++) { var d = await llm([{ role: "system", content: personas[i].sys }, { role: "user", content: prompt }], { noRule: true, temperature: 0.55 + 0.12 * i, timeout: 60000 }); if (d && d.trim()) drafts.push({ who: personas[i].name, text: d.trim() }); }
     if (!drafts.length) return { answer: "", drafts: [] };
-    var synth = await ask("아래는 같은 과제에 대한 " + drafts.length + "개 초안이다. 서로의 장점을 통합하고 오류를 제거해 '가장 정확하고 우수한 최종답 하나'만 출력하라.\n\n" + drafts.map(function (x) { return "[" + x.who + "] " + x.text; }).join("\n"), "여러 관점을 통합하는 종합 지성. 최종 결론만 간결히 출력.", { noRule: true, temperature: 0.3 });
-    return { answer: synth || drafts[0].text, drafts: drafts };
+    if (drafts.length === 1) return { answer: drafts[0].text, drafts: drafts };
+    var body = drafts.map(function (x, i) { return "초안" + (i + 1) + " [" + x.who + "]:\n" + x.text; }).join("\n\n");
+    var synth = await llm([{ role: "system", content: "너는 여러 전문가의 초안을 통합해 하나의 최고 최종답을 만드는 종합 편집자다." }, { role: "user", content: "같은 과제에 대한 " + drafts.length + "개 전문가 초안이다. 장점을 통합하고 오류·중복을 제거해 '하나의 최종답'만 작성하라(초안 언급 없이 완성된 답만).\n\n" + body }], { noRule: true, temperature: 0.3, timeout: 60000 });
+    return { answer: (synth && synth.trim()) || drafts[0].text, drafts: drafts };
   }
   // ===== 무한 교사군집: 각 교사=1뉴런. 인덱스→결정론적 고유 페르소나(개념상 수억·수조) =====
   var T_SPECIAL = ["통사·어법", "어휘·연어", "독해·논리", "화용·함의", "작문·서술형", "듣기·구어체", "영미문학", "언어학 이론", "평가·측정", "교육과정·성취기준", "논증 구조", "담화·응집성"];
@@ -551,7 +553,7 @@
     var d = T_ALMA[Math.floor(i / (T_SPECIAL.length * T_STYLE.length * T_TRAIT.length)) % T_ALMA.length];
     var yrs = 8 + (i % 25); // 경력 8~32년 — 인덱스마다 달라 사실상 무한 변주
     var name = "교사#" + (i + 1) + " (" + a + "·" + b + ")";
-    var sys = EXPERT_ID + " 너의 세부 전공은 '" + a + "', 출제 성향은 '" + b + "', 태도는 '" + c + "', 배경은 '" + d + "', 출제경력 " + yrs + "년이다. 이 관점을 일관되게 견지해 판단·출제한다.";
+    var sys = "너는 " + a + "·" + b + " 전문의 베테랑 영어 출제교사다(경력 " + yrs + "년, 성향 " + c + "). 수능·내신 출제 원칙에 정통하며 이 관점을 견지한다.";
     return { idx: i, name: name, special: a, style: b, trait: c, alma: d, years: yrs, sys: sys };
   }
   // 조합 공간 = 12×10×8×4×25 = 96,000 고유 페르소나(차원 확장·인덱스 확대로 사실상 무한: makeTeacher(임의 큰 수))
@@ -592,8 +594,8 @@
       scores.push(crit && crit.score); trace.steps.push({ step: "비판" + r, data: crit });
       if (!crit || (crit.score || 0) >= 90 || !(crit.issues && crit.issues.length)) break;
       log(onP, "🧠 [5/5] 개선 라운드 " + r + "…");
-      var imp = await ask("과제: " + task + "\n기존 답:\n" + answer + "\n지적: " + JSON.stringify(crit.issues) + "\n개선지시: " + (crit.fix || "") + ctx + "\n\n결함을 모두 해소한 '개선된 최종답'만 출력하라(설명 없이 답만).", "개선된 최종답만 간결·정확히.", { noRule: true, temperature: 0.5, timeout: 60000 });
-      if (imp && imp.length > 10) answer = imp;
+      var imp = await llm([{ role: "system", content: "너는 지적사항을 반영해 답을 개선하는 편집자다. 개선된 최종답만 출력." }, { role: "user", content: "과제: " + task + "\n기존 답:\n" + answer + "\n지적: " + JSON.stringify(crit.issues) + "\n개선지시: " + (crit.fix || "") + ctx + "\n\n결함을 모두 해소한 '개선된 최종답'만 출력하라(설명·머리말 없이 답만)." }], { noRule: true, temperature: 0.5, timeout: 60000 });
+      if (imp && imp.trim().length > 10) answer = imp.trim();
     }
     log(onP, "🧠 완료");
     return { answer: answer, facts: facts, scores: scores, reasoning: trace };
