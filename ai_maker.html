@@ -54,6 +54,15 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
     </div>
   </div>
 
+  <div class="card noprint" id="brain3dCard">
+    <h2>🧠 3D 뇌 연결 지도 <span style="font-size:9pt;color:#888;font-weight:400">(드래그 회전 · 휠 확대 · 뇌 영역별 역할 분담)</span></h2>
+    <div id="brain3d" style="width:100%;height:420px;background:radial-gradient(circle at 50% 40%,#0b1f2a,#050d12);border-radius:12px;position:relative;overflow:hidden">
+      <div id="brain3dMsg" style="position:absolute;top:12px;left:14px;color:#9fd;font-size:9pt">3D 뇌 로딩 중…</div>
+    </div>
+    <div id="brainLegend3d" style="margin-top:8px;font-size:8.6pt"></div>
+    <div id="roleChart" style="margin-top:10px"></div>
+  </div>
+
   <div class="card noprint">
     <h2>① 영어 지문 붙여넣기</h2>
     <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요..." oninput="onPassage()"></textarea>
@@ -457,6 +466,57 @@ T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusS
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
 initGroqKey(); restoreState(); refreshDB(); loadResearch(); loadNotices();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+function esc3(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+var REGCOL={ "감각·지각 피질":0x72a7ff, "베르니케 영역":0x2dd4bf, "브로카 영역":0xffd166, "전전두엽":0xff8fa3, "변연계":0xb794f6, "운동 피질":0xcbd5e1, "연합 피질 · 교사군집":0xff7e5f };
+function hex6(n){ return "#"+(n>>>0).toString(16).slice(-6).padStart(6,"0"); }
+function renderRoleChart(){
+  var el=document.getElementById("roleChart"); if(!el||!window.APITEAM||!APITEAM.brainStructure) return;
+  var bs=APITEAM.brainStructure();
+  var h='<div style="font-size:9.2pt;color:#0f766e;font-weight:800;margin-bottom:5px">🗂 뇌 영역별 역할 분담 — 총 '+bs.totalNeurons+'뉴런 · '+bs.totalSynapses+'시냅스 · 교사 '+bs.teachers.toLocaleString()+'명</div>';
+  h+='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:8px">';
+  var all=bs.regions.concat(bs.extra.map(function(e){return {region:e.region,anat:e.anat,fn:e.fn,roles:e.roles,count:null};}));
+  all.forEach(function(r){ var c=REGCOL[r.region]!=null?hex6(REGCOL[r.region]):"#0f766e";
+    h+='<div style="border:1px solid #dbe6e2;border-left:4px solid '+c+';border-radius:8px;padding:7px 9px"><div style="font-weight:800;color:#0f766e">'+esc3(r.region)+(r.count!=null?(' <span style="font-size:7.5pt;color:#999">'+r.count+'뉴런</span>'):'')+'</div><div style="font-size:7.8pt;color:#aaa">'+esc3(r.anat||"")+'</div><div style="font-size:8.4pt;color:#666;margin:3px 0">'+esc3(r.fn||"")+'</div><ul style="margin:2px 0 0 14px;padding:0;font-size:8.3pt;color:#445;line-height:1.5">'+(r.roles||[]).map(function(x){return '<li>'+esc3(x)+'</li>';}).join("")+'</ul></div>';
+  });
+  h+='</div>'; el.innerHTML=h;
+}
+function build3DBrain(){
+  var host=document.getElementById("brain3d"); if(!host||!window.THREE||!window.APITEAM) return;
+  var msg=document.getElementById("brain3dMsg"); if(msg) msg.style.display="none";
+  var W=host.clientWidth||600, H=420;
+  var scene=new THREE.Scene();
+  var cam=new THREE.PerspectiveCamera(50,W/H,0.1,100); cam.position.set(0,0,5.4);
+  var rend; try{ rend=new THREE.WebGLRenderer({antialias:true,alpha:true}); }catch(e){ if(msg){msg.style.display="block";msg.textContent="이 브라우저는 WebGL 3D를 지원하지 않습니다.";} return; }
+  rend.setSize(W,H); rend.setPixelRatio(Math.min(2,window.devicePixelRatio||1));
+  host.innerHTML=""; host.appendChild(rend.domElement);
+  var g=new THREE.Group(); scene.add(g);
+  var shell=new THREE.Mesh(new THREE.SphereGeometry(1.75,32,24), new THREE.MeshBasicMaterial({color:0x2dd4bf,wireframe:true,transparent:true,opacity:0.09}));
+  shell.scale.set(1.08,0.9,1.28); g.add(shell);
+  var bs=APITEAM.brainStructure(), mesh=APITEAM.mesh;
+  var regByGroup={}; bs.regions.forEach(function(r){ regByGroup[r.group]=r; });
+  function jitter(i){ var a=i*2.399963; return new THREE.Vector3(Math.cos(a)*0.34+((i%3)-1)*0.14, Math.sin(a*1.7)*0.27, Math.cos(a*0.7)*0.33); }
+  var pos={}, cnt={};
+  mesh.neurons.forEach(function(n){ var r=regByGroup[n.group]||bs.regions[bs.regions.length-1]; cnt[r.group]=(cnt[r.group]||0)+1; var base=new THREE.Vector3(r.pos[0],r.pos[1],r.pos[2]).multiplyScalar(0.98); pos[n.key]=base.add(jitter(cnt[r.group]*2+n.name.length)); });
+  var verts=[]; mesh.synapses.forEach(function(e){ var a=pos[e[0]],b=pos[e[1]]; if(a&&b) verts.push(a.x,a.y,a.z,b.x,b.y,b.z); });
+  var lgeo=new THREE.BufferGeometry(); lgeo.setAttribute("position",new THREE.Float32BufferAttribute(verts,3));
+  g.add(new THREE.LineSegments(lgeo,new THREE.LineBasicMaterial({color:0x2dd4bf,transparent:true,opacity:0.3})));
+  mesh.neurons.forEach(function(n){ var r=regByGroup[n.group]||bs.regions[bs.regions.length-1]; var col=REGCOL[r.region]!=null?REGCOL[r.region]:0x9ad; var big=(n.degree>15?0.09:0.055); var s=new THREE.Mesh(new THREE.SphereGeometry(big,14,14),new THREE.MeshBasicMaterial({color:col})); s.position.copy(pos[n.key]); g.add(s); });
+  var rot={x:0,y:0}, drag=false, lx=0, ly=0;
+  rend.domElement.style.cursor="grab";
+  rend.domElement.addEventListener("pointerdown",function(e){drag=true;lx=e.clientX;ly=e.clientY;rend.domElement.style.cursor="grabbing";});
+  window.addEventListener("pointerup",function(){drag=false;rend.domElement.style.cursor="grab";});
+  window.addEventListener("pointermove",function(e){ if(!drag)return; rot.y+=(e.clientX-lx)*0.008; rot.x+=(e.clientY-ly)*0.008; rot.x=Math.max(-1.2,Math.min(1.2,rot.x)); lx=e.clientX;ly=e.clientY; });
+  rend.domElement.addEventListener("wheel",function(e){ e.preventDefault(); cam.position.z=Math.max(3.2,Math.min(9,cam.position.z+e.deltaY*0.0022)); },{passive:false});
+  function animate(){ requestAnimationFrame(animate); if(!drag) rot.y+=0.0022; g.rotation.y=rot.y; g.rotation.x=rot.x; rend.render(scene,cam); }
+  animate();
+  window.addEventListener("resize",function(){ var w=host.clientWidth||600; rend.setSize(w,H); cam.aspect=w/H; cam.updateProjectionMatrix(); });
+  var lg=document.getElementById("brainLegend3d");
+  if(lg) lg.innerHTML=bs.regions.map(function(r){ return '<span style="display:inline-block;margin:2px 10px 2px 0"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:'+hex6(REGCOL[r.region]||0x9ad)+';vertical-align:middle"></span> '+esc3(r.region)+' <span style="color:#999">('+r.count+')</span></span>'; }).join("");
+}
+(function wait3d(t){ if(window.THREE&&window.APITEAM){ try{ build3DBrain(); }catch(e){ var m=document.getElementById("brain3dMsg"); if(m)m.textContent="3D 로드 오류: "+e.message; } renderRoleChart(); } else if(t<40){ setTimeout(function(){wait3d(t+1);},300); } else { var m=document.getElementById("brain3dMsg"); if(m)m.textContent="3D 라이브러리를 불러오지 못했습니다(오프라인?). 역할 조직도만 표시합니다."; renderRoleChart(); } })(0);
 </script>
 </body>
 </html>
