@@ -151,6 +151,17 @@ svg.mesh{flex:1;min-width:420px;background:#0d1b17;border-radius:10px}
     <div id="notices"></div>
   </div>
 
+  <div class="card" id="archiveCard">
+    <h2>📚 연구 아카이브 <span class="note">교사군집이 매시간 서버에서 연구·회의한 기록 (열람 가능) <button class="ghost noprint" style="font-size:8pt;padding:2px 8px" onclick="loadArchive()">🔄 새로고침</button></span></h2>
+    <div class="row" style="margin-top:6px;border-bottom:1px solid #eee;padding-bottom:6px">
+      <button class="ghost" id="tabProj" onclick="archiveTab('proj')" style="font-weight:700">📋 프로젝트</button>
+      <button class="ghost" id="tabRules" onclick="archiveTab('rules')">📏 실사용 규칙</button>
+      <button class="ghost" id="tabMeet" onclick="archiveTab('meet')">🗣 회의 대화문</button>
+      <span class="note" id="archStat"></span>
+    </div>
+    <div id="archBody" style="margin-top:8px;font-size:9pt"></div>
+  </div>
+
   <div class="card noprint" id="meetCard" style="display:none">
     <h2>🛠 API 회의록 <span style="font-size:9pt;color:#888;font-weight:400">(오류 발생 시 자동 소집·개선)</span></h2>
     <div id="meet"></div>
@@ -347,6 +358,43 @@ function renderNotices(){
   }).join("");
 }
 function loadNotices(){ fetch("corpus/announcements.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){ OFFICIAL_NOTICES=(d&&d.notices)||[]; renderNotices(); }).catch(function(){ renderNotices(); }); }
+var ARCH={proj:null,rules:"",meetList:[],cur:"proj"};
+var RAWBASE="https://raw.githubusercontent.com/inheok1103-alt/byeonghyeong-maker/master/";
+var GHAPI="https://api.github.com/repos/inheok1103-alt/byeonghyeong-maker/contents/";
+function loadArchive(){
+  var st=document.getElementById("archStat"); if(st) st.textContent="불러오는 중…";
+  Promise.all([
+    fetch(RAWBASE+"corpus/teacher_projects.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}),
+    fetch(RAWBASE+"USABLE_RULES.md?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.text():"";}).catch(function(){return "";}),
+    fetch(GHAPI+"archive/meetings?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():[];}).catch(function(){return [];})
+  ]).then(function(a){
+    ARCH.proj=a[0]; ARCH.rules=a[1]||""; ARCH.meetList=Array.isArray(a[2])?a[2].filter(function(f){return /\.md$/i.test(f.name);}):[];
+    var np=((ARCH.proj&&ARCH.proj.projects)||[]).length;
+    if(st) st.textContent="프로젝트 "+np+" · 회의 "+ARCH.meetList.length+" · "+new Date().toLocaleTimeString();
+    archiveTab(ARCH.cur);
+  });
+}
+function archiveTab(t){
+  ARCH.cur=t; [["proj","tabProj"],["rules","tabRules"],["meet","tabMeet"]].forEach(function(p){ var b=document.getElementById(p[1]); if(b) b.style.fontWeight=(p[0]===t?"700":"400"); });
+  var el=document.getElementById("archBody"); if(!el) return;
+  if(t==="proj"){
+    var ps=(ARCH.proj&&ARCH.proj.projects)||[];
+    if(!ps.length){ el.innerHTML='<div class="note">아직 프로젝트가 없습니다. 교사군집이 매시간 서버에서 연구하면 여기에 쌓입니다(다음 정시 실행 후).</div>'; return; }
+    el.innerHTML=ps.slice(0,40).map(function(p){ var c=(p.status==="완료")?"#0f766e":"#b45309"; return '<div style="border-left:3px solid '+c+';padding:5px 0 5px 10px;margin:6px 0"><span style="background:'+c+';color:#fff;border-radius:6px;padding:1px 7px;font-size:8pt">'+esc(p.status||"진행중")+'</span> <b>'+esc(p.title||p.focus||"")+'</b> <span style="color:#999;font-size:8pt">'+esc(String(p.time||"").slice(0,16).replace("T"," "))+((p.teachers&&p.teachers.length)?(" · 교사 "+p.teachers.length+"명"):"")+'</span>'+(p.summary?('<div style="color:#566;margin-top:2px">'+esc(p.summary)+'</div>'):'')+'</div>'; }).join("");
+  } else if(t==="rules"){
+    el.innerHTML=ARCH.rules?('<div style="white-space:pre-wrap;font-size:8.8pt;line-height:1.55;background:#f8fafb;padding:10px;border-radius:8px;max-height:500px;overflow:auto">'+esc(ARCH.rules)+'</div>'):'<div class="note">아직 규칙이 비어 있습니다.</div>';
+  } else {
+    var ms=ARCH.meetList||[];
+    if(!ms.length){ el.innerHTML='<div class="note">아직 회의 대화문이 없습니다.</div>'; return; }
+    el.innerHTML=ms.slice().reverse().slice(0,30).map(function(f){ return '<button class="ghost noprint" style="font-size:8.4pt;margin:2px 4px 2px 0" onclick="viewMeeting(\''+esc(f.name)+'\')">🗣 '+esc(f.name.replace(/\.md$/,""))+'</button>'; }).join("")+'<div id="meetView" style="margin-top:7px"></div>';
+  }
+}
+function viewMeeting(name){
+  var v=document.getElementById("meetView"); if(!v) return; v.innerHTML='<span class="note">불러오는 중…</span>';
+  fetch(RAWBASE+"archive/meetings/"+encodeURIComponent(name)+"?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.text();}).then(function(md){
+    v.innerHTML='<div style="white-space:pre-wrap;font-size:8.8pt;line-height:1.55;background:#f8fafb;padding:10px;border-radius:8px;max-height:460px;overflow:auto">'+esc(md)+'</div>';
+  }).catch(function(e){ v.innerHTML='<span class="note">열기 실패: '+esc(e.message)+'</span>'; });
+}
 function askBrain(){
   var q=document.getElementById("brainq").value.trim();
   if(q.length<5){ alert("질문/과제를 입력하세요."); return; }
@@ -465,7 +513,7 @@ T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=doc
 T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s) s.textContent=c&&c.vocab?("📚 코퍼스 학습: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 연구누적 "+c.research):""; }).catch(function(){});
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
-initGroqKey(); restoreState(); refreshDB(); loadResearch(); loadNotices();
+initGroqKey(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
