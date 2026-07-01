@@ -336,7 +336,7 @@ function getRounds(){ var r=document.getElementById("rounds"); return r?Math.max
 function getEnsemble(){ var c=document.getElementById("ensembleChk"); return !!(c&&c.checked); }
 function saveGroqKey(){ var k=(document.getElementById("groqKey").value||"").trim(); var s=document.getElementById("groqStat"); try{ if(k) localStorage.setItem("groqKey",k); else localStorage.removeItem("groqKey"); }catch(e){} if(k){ T.configure({groqKey:k}); s.textContent="✓ 적용됨 (llama-3.3-70b · 강력·빠름)"; } else { T.configure({groqKey:""}); s.textContent=""; } }
 function clearGroqKey(){ document.getElementById("groqKey").value=""; try{ localStorage.removeItem("groqKey"); }catch(e){} T.configure({groqKey:""}); document.getElementById("groqStat").textContent="지움 (무키 Pollinations로 복귀)"; }
-function initGroqKey(){ try{ var gk=localStorage.getItem("groqKey"); if(gk){ var el=document.getElementById("groqKey"); if(el) el.value=gk; T.configure({groqKey:gk}); var s=document.getElementById("groqStat"); if(s) s.textContent="✓ 적용됨 (llama-3.3-70b)"; } }catch(e){} }
+function initGroqKey(){ var gk=""; try{ gk=localStorage.getItem("groqKey")||""; }catch(e){} if(gk){ try{ var el=document.getElementById("groqKey"); if(el) el.value=gk; T.configure({groqKey:gk}); var s=document.getElementById("groqStat"); if(s) s.textContent="✓ 적용됨 (llama-3.3-70b)"; }catch(e){} } else { var s2=document.getElementById("groqStat"); if(s2) s2.textContent="키 미입력 — 무료 Pollinations로 작동(느림). 위 칸에 Groq 키를 한 번 넣으면 영구 적용."; } }
 var VERDICT_COLOR={"반영":"#0f766e","부분반영":"#b45309","보류":"#6b7280","반려":"#b03a2e"};
 function submitRequest(){
   var q=document.getElementById("reqInput").value.trim();
@@ -565,6 +565,8 @@ T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusS
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
 initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
+// 로드되면 교사 회의가 실시간으로 자동 시작(탭 열려 있는 동안 계속)
+setTimeout(function(){ try{ if(!LIVE.on) toggleLive(); }catch(e){} }, 2500);
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
