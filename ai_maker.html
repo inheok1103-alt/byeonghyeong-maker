@@ -191,8 +191,8 @@ function pgHtml(s){ return esc(s).replace(/&lt;u&gt;/g,"<u>").replace(/&lt;\/u&g
 var CIRC=["①","②","③","④","⑤"];
 
 /* ===== 뉴럴 메시 시각화 (자동배치 · 토폴로지) ===== */
-var GCOL={ "입력":"#72a7ff","이해":"#2dd4bf","생성":"#ffd166","검증":"#ff8fa3","피드백":"#b794f6","출력":"#cbd5e1" };
-var GX={ "입력":52, "이해":175, "생성":255, "검증":360, "피드백":435, "출력":435 };
+var GCOL={ "입력":"#72a7ff","학습DB":"#f6a5c0","이해":"#2dd4bf","생성":"#ffd166","검증":"#ff8fa3","피드백":"#b794f6","출력":"#cbd5e1" };
+var GX={ "입력":52, "학습DB":110, "이해":190, "생성":265, "검증":365, "피드백":438, "출력":438 };
 var NPOS={};
 function layoutMesh(){
   var m=T.mesh, byG={}; m.neurons.forEach(function(n){ (byG[n.group]=byG[n.group]||[]).push(n); });
@@ -542,7 +542,7 @@ initGroqKey(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadA
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 function esc3(s){ return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
-var REGCOL={ "감각·지각 피질":0x72a7ff, "베르니케 영역":0x2dd4bf, "브로카 영역":0xffd166, "전전두엽":0xff8fa3, "변연계":0xb794f6, "운동 피질":0xcbd5e1, "연합 피질 · 교사군집":0xff7e5f };
+var REGCOL={ "감각·지각 피질":0x72a7ff, "해마 · 학습DB":0xf6a5c0, "베르니케 영역":0x2dd4bf, "브로카 영역":0xffd166, "전전두엽":0xff8fa3, "변연계":0xb794f6, "운동 피질":0xcbd5e1, "연합 피질 · 교사군집":0xff7e5f };
 function hex6(n){ return "#"+(n>>>0).toString(16).slice(-6).padStart(6,"0"); }
 function renderRoleChart(){
   var el=document.getElementById("roleChart"); if(!el||!window.APITEAM||!APITEAM.brainStructure) return;

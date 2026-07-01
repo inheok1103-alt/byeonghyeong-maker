@@ -111,6 +111,9 @@
       { key: "openlib", name: "도서정보", group: "입력", api: "OpenLibrary" }, { key: "poetry", name: "문학용례", group: "입력", api: "PoetryDB" },
       { key: "ds_rhy", name: "운율", group: "입력", api: "Datamuse" }, { key: "word_freq", name: "빈도난이도", group: "입력", api: "Datamuse" },
       { key: "wikiquote", name: "인용문", group: "입력", api: "Wikiquote" }, { key: "wikisrc", name: "문학원문", group: "입력", api: "Wikisource" },
+      { key: "gh_cefr", name: "CEFR등급", group: "학습DB", api: "CEFR-J(GitHub)" }, { key: "gh_synant", name: "유의반의", group: "학습DB", api: "Fernald(GitHub)" },
+      { key: "gh_phrasal", name: "구동사", group: "학습DB", api: "phrasal-verbs(GitHub)" }, { key: "gh_gec", name: "어법오류패턴", group: "학습DB", api: "JFLEG(GitHub)" },
+      { key: "gh_freq", name: "상용어빈도", group: "학습DB", api: "google-10k(GitHub)" }, { key: "gh_corpus", name: "원서코퍼스", group: "학습DB", api: "원서·카톡(로컬)" },
       { key: "llm_main", name: "핵심논지", group: "이해", api: "Pollinations" }, { key: "llm_ans", name: "정답작성", group: "생성", api: "Pollinations" },
       { key: "llm_dis", name: "오답설계", group: "생성", api: "Pollinations" },
       { key: "critic", name: "선지검수관", group: "검증", api: "Pollinations" }, { key: "grammar", name: "어법검수", group: "검증", api: "LanguageTool" },
@@ -133,7 +136,15 @@
     S.push(["wiki_rel", "llm_ans"], ["wiki_rel", "image"], ["wikidata", "llm_ans"], ["wikidata", "llm_dis"], ["openlib", "llm_dis"], ["poetry", "llm_dis"], ["poetry", "llm_ans"]);
     // 운율·빈도난이도·인용문·문학원문
     S.push(["ds_rhy", "llm_dis"], ["word_freq", "critic"], ["word_freq", "llm_dis"], ["wikiquote", "llm_ans"], ["wikiquote", "llm_main"], ["wikisrc", "llm_dis"]);
-    return { neurons: N, synapses: S, groups: ["입력", "이해", "생성", "검증", "피드백", "출력"], roster: ROSTER };
+    // GitHub 학습DB를 API 뉴런과 엮음(신경다발)
+    var learndb = N.filter(function (n) { return n.group === "학습DB"; }).map(function (n) { return n.key; });
+    learndb.forEach(function (k) { S.push([k, "llm_main"]); });
+    S.push(["gh_cefr", "critic"], ["gh_cefr", "word_freq"], ["gh_freq", "gh_cefr"]);
+    S.push(["gh_synant", "llm_dis"], ["gh_synant", "ds_dup"], ["gh_synant", "critic"], ["gh_synant", "ds_ant"]);
+    S.push(["gh_phrasal", "llm_ans"], ["gh_phrasal", "llm_dis"], ["gh_phrasal", "dict_def"]);
+    S.push(["gh_gec", "grammar"], ["gh_gec", "critic"], ["gh_gec", "llm_ans"]);
+    S.push(["gh_corpus", "llm_main"], ["gh_corpus", "image"], ["gh_corpus", "wiki_bg"]);
+    return { neurons: N, synapses: S, groups: ["입력", "학습DB", "이해", "생성", "검증", "피드백", "출력"], roster: ROSTER };
   })();
   function topology() {
     var deg = {}; MESH.neurons.forEach(function (n) { deg[n.key] = 0; });
@@ -156,7 +167,9 @@
     { region: "운동 피질", anat: "Motor Cortex", fn: "산출·표현", group: "출력", pos: [0, 0.9, -0.9],
       roles: ["삽화주문관 — Pollinations Image"] },
     { region: "연합 피질 · 교사군집", anat: "Association Cortex", fn: "통합 고등사고 — 교사 다관점 합성", group: "창발", pos: [0, -0.1, -1.1],
-      roles: ["교사군집 — 전공·성향별 표집(무한)", "회의의장 — 합의 판정(반영/반려)", "앙상블 — 다관점 초안 합성"] }
+      roles: ["교사군집 — 전공·성향별 표집(무한)", "회의의장 — 합의 판정(반영/반려)", "앙상블 — 다관점 초안 합성"] },
+    { region: "해마 · 학습DB", anat: "Hippocampus", fn: "기억·학습 저장 — GitHub·원서 데이터를 API와 엮음", group: "학습DB", pos: [0, -1.0, 0.35],
+      roles: ["CEFR등급(GitHub) — 난이도 판정", "유의반의(GitHub) — 오답·중복차단", "구동사(GitHub) — 어법/어휘/단어장", "어법오류패턴 JFLEG(GitHub) — 어법 실오류", "상용어빈도 google-10k(GitHub)", "원서 코퍼스(로컬) — 지문·배경"] }
   ];
   var BRAIN_EXTRA = [
     { region: "해마", anat: "Hippocampus", fn: "기억·학습 저장", roles: ["코퍼스 — 원서 어휘·지문·CEFR", "24h 연구 누적 아카이브", "공유 개선지침"] },
@@ -456,8 +469,6 @@
       if (!o || !o.passage || !o.error || !o.correct || String(o.error).trim() === String(o.correct).trim()) continue;
       last = o;
       var g = []; try { g = await grammar(String(o.passage).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); } catch (_) {}
-      // LanguageTool이 오류를 하나도 못 잡으면 '거짓 오류' 의심 → 재시도
-      if (!g.length && attempt < 2) continue;
       var verified = g.length ? (" (LanguageTool 확인: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + ")") : "";
       return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: o.passage, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: parseInt(o.answer, 10) || 1, explanation: "'" + o.error + "'는 '" + o.correct + "'로 고쳐야 한다." + verified };
     }
