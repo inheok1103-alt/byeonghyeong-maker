@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-02T21:46:23.202Z",
+ "updated": "2026-07-02T23:42:25.521Z",
  "samples": [
+  {
+   "ts": "2026-07-02T23:36:40.234Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "ⓐ<u>On the first cycles</u>, in implementing the Authentic Materials, the ⓑ<u>students were taken into</u> an enjoyable teaching and learning process of ⓒ<u>reading. The materials successfully kept</u> the students’ willingness, ⓓ<u>yet not quite successful in their aware</u>. They ⓔ<u>did every their work</u> but not in time. It showed that they still lacked of awareness. Therefore, it was decided to solve the awareness problem in the next cycle. From the first cycle, the English teacher, as a collaborator, argued that in solving the remaining problem, the exercises should be enhanced by varying them in many ways. Furthermore, she also argued that the researcher himself should specify his explanation to the students and maintain his composure. Therefore, in the second cycle, the exercises were varied into many ways and every instruction was explained instead of waiting the students to ask. The students were also motivated by giving tip in effective reading. Those gave good result considering",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 2,
+    "explanation": "틀린 곳은 ⓐ(On the first cycles → On the first cycle), ⓓ(yet not quite successful in their aware → yet not quite successful in their awareness) — 총 2개.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-02T21:41:28.862Z",
    "type": "요지",
@@ -243,25 +267,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Educating college students to manage binge‑drinking risks is essential to curb its harmful costs.'이며 정답 (MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  03 HOURS 32 MINUTES 16 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE)이 이를 반영한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Educating college students to manage binge‑drinking risks is essential to curb its harmful costs.]"
-   }
-  },
-  {
-   "ts": "2026-07-02T04:32:35.389Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 모두 코드처리) · 어휘 위치검증 통과",
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "Alcohol has been a big part of ⓐ<u>college</u> life . . . ⓑ<u>drink</u> hard. ⓒ<u>unshared</u> context But a new kind of drinking known as “ⓓ<u>binge</u>” drinking is spreading . . . kills and injures not just drinkers but those around them. problem We may not be able to stop bingeing entirely, but we must try to ­control its worst costs by educating students in how to manage its risks. solution/main point/claim Part 1: Establishing a Shared Context Most pieces of writing open with a shared context, as does (1b): Alcohol has been a big part of college life for hundreds of years. From football weekends to fraternity parties, college students drink and often drink hard. shared context But a new kind of drinking ⓔ<u>known</u> as “binge” . . . That shared context offers historical background, but it might have been a recent event, a common belief, or anything else that reminds readers of what they know, have experienced, or readily accept.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ는 'unshared'인데 문맥상 원래의 'shared'가 적절하다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
