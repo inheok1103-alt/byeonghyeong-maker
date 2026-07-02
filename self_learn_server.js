@@ -1,6 +1,7 @@
 // 서버(GitHub Actions/클라우드)가 실행: 스스로 출제→자가비평→규칙 학습 + 교사 회의 1건 → DB 갱신. 탭/PC 무관.
 global.window = {}; require("./api_team.js"); var T = window.APITEAM; var fs = require("fs");
-if (process.env.GROQ_API_KEY) { T.configure({ groqKey: process.env.GROQ_API_KEY }); console.log("Groq 키 적용됨(병렬·고속)"); } else { console.log("Groq 키 없음 — Pollinations(무키)로 작동"); }
+var _cfg = {}; if (process.env.GEMINI_API_KEY) _cfg.geminiKey = process.env.GEMINI_API_KEY; if (process.env.GROQ_API_KEY) _cfg.groqKey = process.env.GROQ_API_KEY;
+if (Object.keys(_cfg).length) { T.configure(_cfg); console.log("키 적용:", Object.keys(_cfg).join(",") + " (폴백체인: Gemini→Groq→Pollinations)"); } else { console.log("키 없음 — Pollinations(무키)로 작동"); }
 var RAW = "https://raw.githubusercontent.com/inheok1103-alt/byeonghyeong-maker/master/";
 function pick(a, n) { var o = a.slice(); for (var i = o.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = o[i]; o[i] = o[j]; o[j] = t; } return o.slice(0, n); }
 function readJSON(p, d) { try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch (e) { return d; } }

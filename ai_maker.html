@@ -165,10 +165,15 @@ button:active{transform:translateY(0)}
     </div>
     <div id="brainout" style="margin-top:8px"></div>
     <div style="margin-top:8px;font-size:8.6pt;color:#888;border-top:1px dashed #dbe6e2;padding-top:8px">
-      🔑 <b>개인 Groq 키</b>(선택) — 내 브라우저에만 저장·서버/깃허브에 <b>절대 안 올라감</b>. 넣으면 뇌가 llama-3.3-70b로 강력·빠르게 작동:
+      🔑 <b>개인 Groq 키</b>(선택) — 내 브라우저에만 저장·서버/깃허브에 <b>절대 안 올라감</b>. llama-3.3-70b로 강력·빠름. <span style="color:#b45309">무료 한도 10만토큰/일(소진 시 자동으로 Gemini→Pollinations 폴백)</span>:
       <input type="password" id="groqKey" placeholder="gsk_..." style="width:210px;padding:2px 6px;font-size:8.5pt" onchange="saveGroqKey()">
       <button class="ghost" style="font-size:8pt;padding:2px 8px" onclick="clearGroqKey()">지우기</button>
       <span id="groqStat" style="color:#0f766e;font-weight:700"></span>
+      <div style="margin-top:6px">🔑 <b>개인 Gemini 키</b>(선택·권장) — 무료 한도가 훨씬 커서 24시간 회의·대량 출제에 적합(gemini-2.0-flash). <a href="https://aistudio.google.com/apikey" target="_blank" style="color:#0f766e">키 발급</a>:
+      <input type="password" id="geminiKey" placeholder="AIza..." style="width:210px;padding:2px 6px;font-size:8.5pt" onchange="saveGeminiKey()">
+      <button class="ghost" style="font-size:8pt;padding:2px 8px" onclick="clearGeminiKey()">지우기</button>
+      <span id="geminiStat" style="color:#0f766e;font-weight:700"></span></div>
+      <div class="note" style="margin-top:5px">우선순위: <b>Gemini → Groq → Pollinations(무키·무료)</b>. 앞 공급자가 한도 초과면 자동으로 다음으로 넘어가 <b>출제가 완전히 멈추지 않음</b>.</div>
     </div>
   </div>
 
@@ -380,6 +385,9 @@ function getEnsemble(){ var c=document.getElementById("ensembleChk"); return !!(
 function saveGroqKey(){ var k=(document.getElementById("groqKey").value||"").trim(); var s=document.getElementById("groqStat"); try{ if(k) localStorage.setItem("groqKey",k); else localStorage.removeItem("groqKey"); }catch(e){} if(k){ T.configure({groqKey:k}); s.textContent="✓ 적용됨 (llama-3.3-70b · 강력·빠름)"; } else { T.configure({groqKey:""}); s.textContent=""; } }
 function clearGroqKey(){ document.getElementById("groqKey").value=""; try{ localStorage.removeItem("groqKey"); }catch(e){} T.configure({groqKey:""}); document.getElementById("groqStat").textContent="지움 (무키 Pollinations로 복귀)"; }
 function initGroqKey(){ var gk=""; try{ gk=localStorage.getItem("groqKey")||""; }catch(e){} if(gk){ try{ var el=document.getElementById("groqKey"); if(el) el.value=gk; T.configure({groqKey:gk}); var s=document.getElementById("groqStat"); if(s) s.textContent="✓ 적용됨 (llama-3.3-70b)"; }catch(e){} } else { var s2=document.getElementById("groqStat"); if(s2) s2.textContent="키 미입력 — 무료 Pollinations로 작동(느림). 위 칸에 Groq 키를 한 번 넣으면 영구 적용."; } }
+function saveGeminiKey(){ var k=(document.getElementById("geminiKey").value||"").trim(); var s=document.getElementById("geminiStat"); try{ if(k) localStorage.setItem("geminiKey",k); else localStorage.removeItem("geminiKey"); }catch(e){} if(k){ T.configure({geminiKey:k}); s.textContent="✓ 적용됨 (gemini-2.0-flash · 최우선)"; } else { T.configure({geminiKey:""}); s.textContent=""; } }
+function clearGeminiKey(){ document.getElementById("geminiKey").value=""; try{ localStorage.removeItem("geminiKey"); }catch(e){} T.configure({geminiKey:""}); document.getElementById("geminiStat").textContent="지움"; }
+function initGeminiKey(){ var gk=""; try{ gk=localStorage.getItem("geminiKey")||""; }catch(e){} if(gk){ try{ var el=document.getElementById("geminiKey"); if(el) el.value=gk; T.configure({geminiKey:gk}); var s=document.getElementById("geminiStat"); if(s) s.textContent="✓ 적용됨 (gemini-2.0-flash · 최우선)"; }catch(e){} } }
 var VERDICT_COLOR={"반영":"#0f766e","부분반영":"#b45309","보류":"#6b7280","반려":"#b03a2e"};
 function submitRequest(){
   var q=document.getElementById("reqInput").value.trim();
@@ -630,10 +638,10 @@ function foldify(ids, collapsed){
   });
 }
 foldify(["meshCard","xformCard","brainCard","govCard","archiveCard","researchCard"], true);
-initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
+initGeminiKey(); initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
 // 로드되면 교사 회의가 실시간으로 자동 시작(탭 열려 있는 동안 계속)
 // 실시간 회의 자동시작: Groq 키가 있을 때만(병렬·고속). 무키(Pollinations 직렬)면 출제 큐를 비워두기 위해 수동 시작.
-setTimeout(function(){ try{ var gk=(document.getElementById("groqKey").value||"").trim(); if(!LIVE.on && gk) toggleLive(); else if(!gk){ var b=document.getElementById("liveBtn"); if(b) b.title="Groq 키를 넣으면 자동 시작됩니다(무키에선 출제 속도 보호를 위해 수동)"; } }catch(e){} }, 2500);
+setTimeout(function(){ try{ var gk=(document.getElementById("groqKey").value||"").trim(); var gm=(document.getElementById("geminiKey").value||"").trim(); if(!LIVE.on && (gk||gm)) toggleLive(); else if(!gk&&!gm){ var b=document.getElementById("liveBtn"); if(b) b.title="Gemini/Groq 키를 넣으면 자동 시작됩니다(무키에선 출제 속도 보호를 위해 수동)"; } }catch(e){} }, 2500);
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
