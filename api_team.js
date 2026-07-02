@@ -1487,6 +1487,46 @@
     log(onP, "🤖 에이전트 완료 — " + out.length + "/" + plan.types.length + "문항 · 전 문항 검수 게이트 통과분만 납품");
     return { items: out, plan: plan };
   }
+  // 에이전트 피드백 반영: 작성자 피드백 해석 → 대상 문항 수정/재생성/유형교체 → 검수 게이트 재통과
+  async function agentFeedback(items, feedback, passage, opts) {
+    opts = opts || {}; var onP = opts.onProgress;
+    var brief = items.map(function (q, i) { return (i + 1) + ". [" + q.type + "] " + String(q.instruction).split("\n")[0].slice(0, 55); }).join("\n");
+    var o = await llmJSON([{ role: "system", content: "너는 출제 피드백 해석기다. JSON만." }, { role: "user", content: "현재 문항 목록:\n" + brief + "\n\n작성자 피드백: \"" + feedback + "\"\n\n해석해서 JSON으로: {\"targets\":[적용할 문항 번호 배열 — '전부/다/모두'면 모든 번호],\"mode\":\"revise(문항 다듬기)|regenerate(새로 생성)\",\"newType\":\"유형 교체 요구 시 유형명(없으면 빈문자)\",\"hint\":\"수정/생성에 주입할 구체 지시 한두 문장(한국어)\"}. JSON만." }], { noRule: true, temperature: 0.3, timeout: 60000 });
+    if (!o || !Array.isArray(o.targets) || !o.targets.length) return null;
+    var report = [];
+    for (var k = 0; k < o.targets.length && k < items.length; k++) {
+      var no = parseInt(o.targets[k], 10); var i = no - 1; var cur = items[i];
+      if (!cur) { report.push(no + "번: 없는 문항"); continue; }
+      log(onP, "🔧 " + no + "번(" + cur.type + ") 피드백 반영 중 — " + (o.hint || feedback).slice(0, 50));
+      if (o.mode === "regenerate" || o.newType) {
+        RUNHINT = "작성자 피드백(반드시 반영): " + (o.hint || feedback);
+        var t = o.newType || cur.type;
+        var nq = await generateOne(passage, t, { fast: true, onProgress: onP }).catch(function () { return null; });
+        RUNHINT = "";
+        if (nq) {
+          var rv1 = await reviewItem(nq, passage, {}).catch(function () { return null; });
+          if (!(rv1 && /불가/.test(String(rv1.verdict)))) { nq._verdict = rv1 ? rv1.verdict : "검수 보류"; items[i] = nq; report.push(no + "번: " + (o.newType ? ("유형 교체 → " + t) : "재생성") + " 완료 · 검수 " + nq._verdict); continue; }
+        }
+        report.push(no + "번: 재생성이 검수를 통과하지 못해 원본 유지");
+      } else {
+        var rj = await llmJSON([{ role: "system", content: "너는 문항 수정 전문가다. 피드백'만' 반영하고 나머지는 유지한다. JSON만." }, { role: "user", content: "[지문]\n" + String(passage).slice(0, 1200) + "\n\n[현재 문항]\n발문: " + cur.instruction + (cur.choices && cur.choices.length ? ("\n선지:\n" + cur.choices.map(function (c, j) { return (j + 1) + ". " + c; }).join("\n")) : "") + "\n정답: " + (cur.answer || "(서술형)") + "\n해설: " + String(cur.explanation).slice(0, 300) + "\n\n[작성자 피드백]\n" + (o.hint || feedback) + "\n\n피드백을 반영해 수정하라. 바뀌는 필드만 채우고 안 바뀌면 null: {\"instruction\":null,\"choices\":null,\"answer\":0,\"explanation\":null}. JSON만." }], { noRule: true, temperature: 0.45, timeout: 75000 });
+        if (rj && (rj.instruction || (rj.choices && rj.choices.length) || rj.answer || rj.explanation)) {
+          var trial = JSON.parse(JSON.stringify(cur));
+          if (rj.instruction) trial.instruction = String(rj.instruction);
+          if (rj.choices && rj.choices.length >= 4) trial.choices = rj.choices.slice(0, 5).map(String);
+          if (rj.answer >= 1 && rj.answer <= 5) trial.answer = parseInt(rj.answer, 10);
+          if (rj.explanation) trial.explanation = String(rj.explanation);
+          var rv2 = await reviewItem(trial, passage, {}).catch(function () { return null; });
+          if (!(rv2 && /불가/.test(String(rv2.verdict)))) {
+            trial._verdict = rv2 ? rv2.verdict : "검수 보류"; trial._audit = ((cur._audit ? cur._audit + " · " : "") + "피드백 반영됨");
+            items[i] = trial; report.push(no + "번: 피드백 반영 완료 · 검수 " + trial._verdict); continue;
+          }
+          report.push(no + "번: 수정본이 검수 '사용 불가' — 원본 유지(사유: " + String((rv2 && (rv2.multi || (rv2.errors && rv2.errors[0] && rv2.errors[0].issue))) || "").slice(0, 60) + ")");
+        } else report.push(no + "번: 수정안 생성 실패 — 원본 유지");
+      }
+    }
+    return { items: items, report: report, hint: o.hint || "" };
+  }
   // 단일 문항 재생성(개별 문항 🔄용)
   async function generateOne(passage, type, opts) {
     opts = opts || {}; USE_ENSEMBLE = !!opts.ensemble;
@@ -1650,7 +1690,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
-    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan,
+    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,

@@ -91,6 +91,12 @@ textarea{border-radius:14px}
 .pdot.ok{background:#16a34a}.pdot.bad{background:#dc2626}
 @keyframes spin{to{transform:rotate(360deg)}}
 #prog{background:#fff;border:1px solid #e7e4dc;border-radius:14px;padding:9px 13px;margin:6px 0}
+#agentChat{max-height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:6px;padding:4px 2px;margin-bottom:8px}
+.abub{max-width:88%;padding:8px 12px;border-radius:14px;font-size:9.4pt;line-height:1.55;white-space:pre-wrap}
+.abub.bot{background:#f1efff;border:1px solid #e2ddfa;align-self:flex-start;border-bottom-left-radius:4px}
+.abub.user{background:var(--ac);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.abub.err{background:#fdf1f0;border:1px solid #f3d5d2;color:#8a3a32;align-self:flex-start}
+.abub .tip{display:block;margin-top:4px;color:#0f766e;font-weight:600}
 body.simple .expert{display:none!important}
 .uimode{position:absolute;right:16px;bottom:12px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:8.6pt;padding:4px 11px;border-radius:14px}
 .uimode:hover{background:rgba(255,255,255,.28)}
@@ -207,11 +213,12 @@ body.simple .expert{display:none!important}
   </div><!--/workLayout-->
 
   <div class="card" id="agentCard" style="display:none">
-    <h2>🤖 출제 에이전트 <span class="note">목표만 말하면 계획→생성→검수→자가수정까지 스스로. 검수 통과분만 납품</span></h2>
-    <textarea id="agentGoal" style="min-height:64px" placeholder="예: 상 난이도로 6문항 만들어줘. 서술형 2개 포함, 빈칸이랑 어법은 꼭 넣고.&#10;예: 이 지문으로 내신 기출 스타일 4문항, 전부 객관식으로."></textarea>
-    <div class="row" style="margin-top:7px">
-      <button onclick="runAgent()" id="agentGo">🤖 에이전트에게 맡기기</button>
-      <span class="note">문항마다 검수관(코드검증+선지판정+솔버 3표)을 통과해야 결과에 실립니다 — 일반 출제보다 느리지만 확실합니다</span>
+    <h2>🤖 출제 에이전트 <span class="note">대화로 출제 — 오류는 해결책과 함께, 피드백은 문항에 반영</span>
+      <button class="ghost noprint" style="font-size:8pt;padding:2px 9px;float:right" onclick="agentReset()">↺ 새 대화</button></h2>
+    <div id="agentChat"></div>
+    <div class="row">
+      <input id="agentInput" style="flex:1;padding:10px 13px;border:1.5px solid var(--line);border-radius:12px;font-size:10pt;font-family:inherit" placeholder="목표를 말해보세요 — 예: 상 난이도 5문항, 서술형 2개 포함" onkeydown="if(event.key==='Enter')agentSend()">
+      <button onclick="agentSend()" id="agentGo">보내기</button>
     </div>
   </div>
 
@@ -318,8 +325,8 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260703a"></script>
-<script src="addon_key_guard.js?v=20260703a"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
+<script src="api_team.js?v=20260703b"></script>
+<script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
@@ -513,29 +520,59 @@ function modeInit(){
   var lp=document.getElementById("leftPane");
   ["agentCard","mockCard","xformCard"].forEach(function(id){ var el=document.getElementById(id); if(el&&lp){ lp.appendChild(el); el.style.display="none"; } });
 }
-/* ===== 출제 에이전트 실행 ===== */
-function runAgent(){
-  var passage=document.getElementById("passage").value.trim();
-  var goal=(document.getElementById("agentGoal").value||"").trim();
-  if(passage.length<40){ alert("지문을 먼저 입력하세요(40자 이상)."); return; }
-  if(goal.length<5){ alert("목표를 입력하세요. 예: 상 난이도 6문항, 서술형 2개 포함"); return; }
-  var pgs=parsePassages(); if(pgs.length>1){ alert("에이전트 모드는 한 번에 한 지문을 다룹니다(다중 지문은 일반 출제에서)."); return; }
-  var go=document.getElementById("agentGo"); go.disabled=true; go.textContent="🤖 작업 중…"; GENERATING=true;
-  LASTPASSAGE=passage;
-  document.getElementById("log").textContent=""; document.getElementById("log").style.display="block";
-  document.getElementById("out").innerHTML='<div class="skel"></div><div class="skel"></div>';
-  var STREAMN=0;
-  function onItemLive(q){ STREAMN++; var out=document.getElementById("out");
-    if(STREAMN===1) out.innerHTML='<div class="card"><h2>🤖 에이전트 결과 <span class="note">(검수 통과분이 완성되는 대로 표시)</span></h2><div id="liveItems"></div><div class="skel"></div></div>';
-    var li=document.getElementById("liveItems"); if(li) li.insertAdjacentHTML("beforeend", qHtml(q, STREAMN-1, STREAMN, false));
-  }
-  T.agentRun(passage, goal, {onProgress:logln, onType:progMark, onItem:onItemLive, onPlanned:function(plan){ progInit(plan.types); }})
-  .then(function(r){
-    if(!r||!r.items||!r.items.length){ document.getElementById("out").innerHTML='<div class="card">에이전트가 검수를 통과한 문항을 만들지 못했습니다. 목표를 조금 바꿔 다시 시도해 주세요.</div>'; }
-    else { LASTITEMS=r.items; render(r.items); r.items.forEach(function(q){ if(q._ms) recTime(q.type,q._ms); }); }
-    go.disabled=false; go.textContent="🤖 에이전트에게 맡기기"; GENERATING=false;
-  }).catch(function(e){ logln("에이전트 오류: "+e.message); go.disabled=false; go.textContent="🤖 에이전트에게 맡기기"; GENERATING=false; });
+/* ===== 출제 에이전트: 챗봇 대화(목표→작업, 이후 메시지=피드백 반영, 오류=원인+해결책) ===== */
+var AGENTC={has:false,busy:false};
+function abub(kind,txt,tip){ var c=document.getElementById("agentChat"); if(!c) return; var d=document.createElement("div"); d.className="abub "+kind; d.textContent=txt; if(tip){ var t=document.createElement("span"); t.className="tip"; t.textContent="💡 해결책: "+tip; d.appendChild(t); } c.appendChild(d); c.scrollTop=c.scrollHeight; }
+function agentAdvice(msg){
+  if(/rate|429|quota|exhaust|한도|limited/i.test(msg)) return "무료 API 한도입니다. ①1~2분 후 다시 보내기 ②전문가 모드에서 Gemini 키 등록(고속·안정) 중 하나면 됩니다.";
+  if(/계획 수립 실패/.test(msg)) return "목표를 조금 더 구체적으로 — 예: '상 난이도 5문항, 서술형 2개, 빈칸·어법 포함'처럼 문항 수·난이도·유형을 적어주세요.";
+  if(/포기|3차 시도/.test(msg)) return "이 지문과 해당 유형의 궁합 문제일 수 있어요. ①입력카드의 📈 지문 늘리기 후 재시도 ②'OO 대신 XX 유형으로 바꿔줘'라고 말해보세요.";
+  if(/40자|짧/.test(msg)) return "지문이 짧습니다. 60단어 이상을 넣거나 📈 지문 늘리기를 먼저 쓰세요.";
+  return "";
 }
+function agentReset(){ AGENTC={has:false,busy:false}; var c=document.getElementById("agentChat"); if(c) c.innerHTML=""; abub("bot","안녕하세요! 지문을 입력하고 출제 목표를 말씀해 주세요.\n납품 후엔 피드백(예: '2번 오답 더 매력적으로', '3번을 어법으로 교체')을 주시면 바로 반영합니다."); }
+function agentSend(){
+  var inp=document.getElementById("agentInput"); var msg=(inp.value||"").trim(); if(!msg) return;
+  if(AGENTC.busy){ abub("err","아직 작업 중이에요 — 끝나면 이어서 처리할게요."); return; }
+  abub("user",msg); inp.value="";
+  var passage=document.getElementById("passage").value.trim();
+  if(passage.length<40){ abub("err","지문이 없거나 너무 짧아요.",agentAdvice("40자")); return; }
+  if(!AGENTC.has){ agentGoalRun(passage,msg); } else { agentFeedbackRun(passage,msg); }
+}
+function agentGoalRun(passage,goal){
+  var pgs=parsePassages(); if(pgs.length>1){ abub("err","에이전트는 한 번에 한 지문을 다뤄요. 다중 지문은 🚀 일반 출제를 쓰세요."); return; }
+  AGENTC.busy=true; GENERATING=true; LASTPASSAGE=passage;
+  abub("bot","접수! 지문을 분석하고 계획을 세울게요…");
+  document.getElementById("log").textContent=""; document.getElementById("out").innerHTML='<div class="skel"></div><div class="skel"></div>';
+  var STREAMN=0;
+  T.agentRun(passage, goal, {
+    onProgress:logln,
+    onType:progMark,
+    onPlanned:function(plan){ progInit(plan.types); abub("bot","📋 계획: "+plan.types.join(", ")+" · 난이도 "+(plan.level||"중")+(plan.note?("\n근거: "+plan.note):"")); },
+    onItem:function(q){ STREAMN++; var out=document.getElementById("out");
+      if(STREAMN===1) out.innerHTML='<div class="card"><h2>🤖 에이전트 결과 <span class="note">(검수 통과분부터 표시)</span></h2><div id="liveItems"></div><div class="skel"></div></div>';
+      var li=document.getElementById("liveItems"); if(li) li.insertAdjacentHTML("beforeend", qHtml(q, STREAMN-1, STREAMN, false));
+      abub("bot","✅ "+STREAMN+"번 ["+q.type+"] 완성 — 검수: "+(q._verdict||"통과")); }
+  }).then(function(r){
+    AGENTC.busy=false; GENERATING=false;
+    if(!r||!r.items||!r.items.length){ abub("err","검수를 통과한 문항을 만들지 못했어요.",agentAdvice("계획 수립 실패")); document.getElementById("out").innerHTML=""; return; }
+    AGENTC.has=true; LASTITEMS=r.items; render(r.items);
+    r.items.forEach(function(q){ if(q._ms) recTime(q.type,q._ms); });
+    var failN=(r.plan&&r.plan.types?r.plan.types.length:r.items.length)-r.items.length;
+    abub("bot","🤖 완료! "+r.items.length+"문항 납품(전부 검수 통과)."+(failN>0?("\n"+failN+"개 유형은 3차 시도에도 검수를 못 넘겨 뺐어요."):"")+"\n\n수정하고 싶은 게 있으면 말로 해주세요 — 예: '2번 오답을 더 어렵게', '1번을 어법수정으로 교체', '전부 난이도 올려'." , failN>0?agentAdvice("포기"):"" );
+  }).catch(function(e){ AGENTC.busy=false; GENERATING=false; abub("err","오류: "+e.message, agentAdvice(e.message)); });
+}
+function agentFeedbackRun(passage,msg){
+  AGENTC.busy=true; GENERATING=true;
+  abub("bot","피드백 접수 — 해당 문항을 수정하고 검수를 다시 통과시킬게요…");
+  T.agentFeedback(LASTITEMS, msg, passage, {onProgress:logln}).then(function(r){
+    AGENTC.busy=false; GENERATING=false;
+    if(!r){ abub("err","피드백을 해석하지 못했어요.","'2번을 ~하게 바꿔줘'처럼 문항 번호와 원하는 변화를 함께 적어주세요."); return; }
+    LASTITEMS=r.items; render(r.items);
+    abub("bot","🔧 반영 결과:\n"+r.report.join("\n")+"\n\n더 고칠 게 있으면 계속 말씀해 주세요.");
+  }).catch(function(e){ AGENTC.busy=false; GENERATING=false; abub("err","오류: "+e.message, agentAdvice(e.message)); });
+}
+
 /* ===== 다중 지문 파서(무제한): === 줄 또는 빈 줄 2개로 구분 ===== */
 function parsePassages(){
   var raw=document.getElementById("passage").value;
@@ -1010,7 +1047,7 @@ function foldify(ids, collapsed){
     h.addEventListener("click",function(e){ if(e.target&&(e.target.tagName==="BUTTON"||e.target.tagName==="INPUT"))return; set(c.dataset.open!=="1"); });
   });
 }
-modeInit(); obsInit(); obsShow("meshCard");
+modeInit(); obsInit(); obsShow("meshCard"); agentReset();
 /* 간단 모드: 출제자가 몰라도 되는 내부 요소를 전문가 모드로 이동 */
 (function(){
   var ids=["obsCard","obsWrap","meetCard"];
