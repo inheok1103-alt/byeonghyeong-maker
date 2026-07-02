@@ -140,17 +140,20 @@ body.simple .expert{display:none!important}
   </div>
   <div class="card noprint">
     <h2>① 영어 지문 붙여넣기</h2>
-    <textarea id="passage" placeholder="여기에 변형하고 싶은 영어 지문을 복사해 붙여넣으세요. AI가 유형·난이도·변형도를 반영해 학습 흐름을 설계합니다." oninput="onPassage()"></textarea>
+    <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요. 여러 지문을 한 번에 내려면 지문 사이에 === 한 줄(또는 빈 줄 2개)로 구분 — 개수 제한 없음." oninput="onPassage()"></textarea>
     <div class="row" style="margin-top:6px">
       <button class="ghost" onclick="loadSample()">📄 샘플 지문</button>
       <button class="ghost" onclick="loadCorpusPassage()" title="업로드된 원서 코퍼스에서 난이도에 맞는 지문을 가져옵니다">📚 원서 지문</button>
       <button class="ghost" onclick="bankSave()" title="현재 지문을 내 지문뱅크에 누적 저장(브라우저 영구)">💾 뱅크 저장</button>
       <button class="ghost" onclick="bankToggle()" title="누적된 지문 목록 열기/닫기">🗂 지문뱅크 <span id="bankCnt"></span></button>
+      <button class="ghost" onclick="extendCur()" id="extBtn" title="AI가 논지·문체를 유지하며 예시·부연 문장을 추가해 지문을 늘립니다(원문 보존 코드검증)">📈 지문 늘리기</button>
+      <button class="ghost" onclick="qbToggle()" title="생성한 문제를 계속 쌓아두는 문제은행">🗃 문제뱅크 <span id="qbCnt"></span></button>
       <button class="ghost" onclick="clearPassage()">지우기</button>
       <span class="note" id="charcount">0 단어</span>
       <span class="note" id="corpusStat"></span>
     </div>
     <div id="bankList" style="display:none;margin-top:6px;border:1px dashed #cfdad6;border-radius:8px;padding:7px;font-size:8.8pt;max-height:180px;overflow:auto"></div>
+    <div id="qbList" style="display:none;margin-top:6px;border:1px dashed #cdd2e8;border-radius:8px;padding:7px;font-size:8.8pt;max-height:220px;overflow:auto"></div>
     <div class="row" style="margin-top:8px"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
     <div id="suggest"></div>
     <h2 style="margin-top:12px">② 출제 유형 <button class="ghost noprint" style="font-size:8.5pt;padding:3px 9px" onclick="refreshDB()">🔄 유형 DB 새로고침</button> <span class="note" id="dbstat"></span></h2>
@@ -418,7 +421,7 @@ function renderOneQ(q,no,ri){
 }
 function render(items){
   if(!items||!items.length){ document.getElementById("out").innerHTML='<div class="card">생성된 문항이 없습니다. 다시 시도해 주세요.</div>'; return; }
-  var no=0, key=[]; var h='<div class="card"><h2>📝 결과</h2>';
+  var no=0, key=[]; var h='<div class="card"><div class="row"><h2 style="margin:0;flex:1">📝 결과</h2><button class="ghost noprint" onclick="qbSaveAll()">🗃 뱅크에 누적</button></div>';
   // 인쇄물 완결성: 지문 없는 유형이 있으면 원지문을 상단에 1회 인쇄(세트 제외)
   if(items.some(function(q){ return !q.passage&&!q.subItems; }) && typeof LASTPASSAGE==="string" && LASTPASSAGE.length>40){
     h+='<div style="font-weight:700;margin:4px 0 3px">[지문]</div><div class="pg">'+pgHtml(LASTPASSAGE)+'</div>';
@@ -517,6 +520,79 @@ function modeInit(){
   var lp=document.getElementById("leftPane");
   ["mockCard","xformCard"].forEach(function(id){ var el=document.getElementById(id); if(el&&lp){ lp.appendChild(el); el.style.display="none"; } });
 }
+/* ===== 다중 지문 파서(무제한): === 줄 또는 빈 줄 2개로 구분 ===== */
+function parsePassages(){
+  var raw=document.getElementById("passage").value;
+  return raw.split(/\n\s*={3,}\s*\n|\n[ \t]*\n[ \t]*\n+/).map(function(s){ return s.trim(); }).filter(function(s){ return s.length>=60; });
+}
+/* ===== 문제뱅크: 생성 문항 누적(브라우저 영구, 500개) ===== */
+function qbAll(){ try{ return JSON.parse(localStorage.getItem("qBank")||"[]"); }catch(e){ return []; } }
+function qbPut(a){ try{ localStorage.setItem("qBank",JSON.stringify(a.slice(0,500))); }catch(e){} qbBadge(); }
+function qbBadge(){ var el=document.getElementById("qbCnt"); if(el) el.textContent="("+qbAll().length+")"; }
+function qbSaveAll(){
+  var flat=[]; (LASTITEMS||[]).forEach(function(q){ if(q.subItems){ q.subItems.forEach(function(sq){ var c=JSON.parse(JSON.stringify(sq)); c.passage=c.passage||q.passage; flat.push(c); }); } else flat.push(q); });
+  if(!flat.length){ alert("저장할 문항이 없습니다. 먼저 출제하세요."); return; }
+  var a=qbAll(); var added=0;
+  flat.forEach(function(q){ var sig=q.type+"|"+String(q.instruction).slice(0,40)+"|"+String(q.explanation).slice(0,30); if(a.some(function(x){return x.sig===sig;})) return; a.unshift({sig:sig,ts:new Date().toISOString().slice(0,10),type:q.type,q:q}); added++; });
+  qbPut(a); qbRender(); var el=document.getElementById("qbList"); if(el) el.style.display="";
+  alert("문제뱅크에 "+added+"문항 저장(중복 제외). 누적 "+qbAll().length+"문항");
+}
+function qbDel(i){ var a=qbAll(); a.splice(i,1); qbPut(a); qbRender(); }
+function qbClear(){ if(!confirm("문제뱅크를 비울까요?")) return; qbPut([]); qbRender(); }
+function qbLoadAll(){
+  var a=qbAll(); if(!a.length){ alert("문제뱅크가 비어 있습니다."); return; }
+  // 지문별 그룹으로 재구성해 시험지 렌더
+  var byPg={}, order=[];
+  a.slice().reverse().forEach(function(x){ var p=x.q.passage||"(지문 없음)"; if(!byPg[p]){ byPg[p]=[]; order.push(p); } var c=JSON.parse(JSON.stringify(x.q)); c.passage=""; byPg[p].push(c); });
+  var groups=order.map(function(p){ return (byPg[p].length>1&&p!=="(지문 없음)")?{type:"세트",passage:p,subItems:byPg[p],instruction:"",choices:[],answer:0,explanation:""}:Object.assign(byPg[p][0],{passage:p==="(지문 없음)"?"":p}); });
+  LASTITEMS=groups; LASTPASSAGE=""; render(groups); window.scrollTo(0,0);
+}
+function qbRender(){
+  var el=document.getElementById("qbList"); if(!el) return; var a=qbAll();
+  el.innerHTML=(a.length?('<div class="row" style="margin-bottom:5px"><b style="font-size:9pt">🗃 문제뱅크 '+a.length+'문항</b><button class="ghost" style="font-size:8pt;padding:2px 8px" onclick="qbLoadAll()">전체 시험지로 불러오기</button><button class="ghost" style="font-size:8pt;padding:2px 8px;color:#b03a2e" onclick="qbClear()">비우기</button></div>'):'')+
+    (a.length?a.map(function(x,i){ return '<div style="display:flex;gap:6px;align-items:center;margin:2px 0"><span style="flex:1;color:#345">'+(i+1)+'. ['+esc(x.type)+'] '+esc(String(x.q.instruction||"").slice(0,42))+'… <span style="color:#9ab;font-size:7.5pt">'+esc(x.ts)+'</span></span><button class="ghost" style="font-size:8pt;padding:1px 7px;color:#b03a2e" onclick="qbDel('+i+')">삭제</button></div>'; }).join(""):'<div class="note">아직 저장된 문항이 없습니다. 출제 후 결과 상단 [🗃 뱅크에 누적]을 누르면 쌓입니다.</div>');
+}
+function qbToggle(){ var el=document.getElementById("qbList"); if(!el) return; qbRender(); el.style.display=(el.style.display==="none")?"":"none"; }
+qbBadge();
+/* ===== 지문 늘리기(AI 증편 + 원문 보존 코드검증) ===== */
+function extendCur(){
+  var p=document.getElementById("passage").value.trim();
+  if(p.length<60){ alert("늘릴 지문을 먼저 입력하세요(60자 이상)."); return; }
+  if(parsePassages().length>1){ alert("지문 늘리기는 한 번에 한 지문만 지원합니다(구분선 없이 입력)."); return; }
+  var b=document.getElementById("extBtn"); b.disabled=true; b.textContent="📈 늘리는 중…"; GENERATING=true;
+  T.extendPassage(p,{addSentences:3}).then(function(r){
+    GENERATING=false; b.disabled=false; b.textContent="📈 지문 늘리기";
+    if(!r){ alert("증편 실패 — 다시 시도해 주세요."); return; }
+    document.getElementById("passage").value=r.extended; onPassage(); saveState();
+    var note=document.getElementById("anote"); if(note) note.textContent="📈 문장 "+r.added.length+"개 추가"+(r.preserved?" · 원문 전체 보존 검증됨 ✓":" · ⚠ 원문 "+r.lostCount+"문장 변형 감지(확인 필요)");
+  }).catch(function(e){ GENERATING=false; b.disabled=false; b.textContent="📈 지문 늘리기"; alert("오류: "+e.message); });
+}
+/* ===== 다중 지문 출제(무제한): 지문별 유형 세트 생성 → 지문 그룹 시험지 ===== */
+function runMulti(pgs, types){
+  GENERATING=true;
+  var go=document.getElementById("go"); go.disabled=true;
+  document.getElementById("log").textContent=""; document.getElementById("bar").style.display="block";
+  document.getElementById("out").innerHTML='<div class="skel"></div><div class="skel"></div>';
+  var groups=[], gi=0;
+  function next(){
+    if(gi>=pgs.length){
+      LASTITEMS=groups; LASTPASSAGE=""; render(groups);
+      go.disabled=false; go.textContent="🚀 고품질 출제"; GENERATING=false;
+      document.getElementById("bar").style.display="none"; return;
+    }
+    var pg=pgs[gi++];
+    go.textContent="출제 중… (지문 "+gi+"/"+pgs.length+")";
+    logln("━━ 지문 "+gi+"/"+pgs.length+" ━━");
+    progInit(types);
+    T.generateExam(pg, types, {onProgress:logln, onType:progMark, fast:getFast(), level:getLevel()}).then(function(items){
+      var subs=[]; (items||[]).forEach(function(q){ if(q.subItems) subs=subs.concat(q.subItems); else { q.passage=""; subs.push(q); } });
+      if(subs.length) groups.push({type:"지문"+gi, passage:pg, subItems:subs, instruction:"", choices:[], answer:0, explanation:""});
+      document.getElementById("out").innerHTML='<div class="card noprint"><b>지문 '+gi+'/'+pgs.length+' 완료</b> — 누적 '+groups.reduce(function(s,g){return s+g.subItems.length;},0)+'문항 <div class="skel"></div></div>';
+      next();
+    }).catch(function(e){ logln("지문 "+gi+" 오류: "+e.message); next(); });
+  }
+  next();
+}
 /* ===== 지문 누적 뱅크(브라우저 영구): 쌓을수록 '우리 학교 범위' 동형 모의고사가 됨 ===== */
 function bankAll(){ try{ return JSON.parse(localStorage.getItem("passageBank")||"[]"); }catch(e){ return []; } }
 function bankPut(arr){ try{ localStorage.setItem("passageBank",JSON.stringify(arr.slice(0,200))); }catch(e){} bankBadge(); }
@@ -601,7 +677,7 @@ var GENERATING=false;   // 출제/변형 진행 중 표시 — 회의·자가학
 var SAMPLE="When our actions clash with our beliefs, we feel an uncomfortable tension that the mind is eager to remove. Instead of admitting we were wrong, we quietly reshape our beliefs until they fit what we have already done. For example, a person who pays a high price for a course they find dull may convince themselves that it is secretly valuable, simply because they have committed their money to it. However, this comfort comes at a cost: by changing our thoughts rather than our behavior, we drift further from the truth. Therefore, resolving inner conflict is often not a movement toward accuracy but a clever defense of our past choices.";
 function loadSample(){ document.getElementById("passage").value=SAMPLE; onPassage(); }
 function clearPassage(){ document.getElementById("passage").value=""; onPassage(); }
-function onPassage(){ var w=(document.getElementById("passage").value.match(/[A-Za-z]+/g)||[]).length; document.getElementById("charcount").textContent=w+" 단어"; updateEstimate(); saveState(); }
+function onPassage(){ var w=(document.getElementById("passage").value.match(/[A-Za-z]+/g)||[]).length; var np=parsePassages().length; document.getElementById("charcount").textContent=w+" 단어"+(np>1?(" · 지문 "+np+"개"):""); updateEstimate(); saveState(); }
 function getFast(){ var r=document.querySelector('input[name=speed]:checked'); return !!(r&&r.value==="1"); }
 function getLevel(){ var r=document.querySelector('input[name=level]:checked'); return r?r.value:"중"; }
 function onSpeed(){ updateEstimate(); saveState(); }
@@ -615,6 +691,8 @@ function run(){
   var passage=document.getElementById("passage").value.trim(), types=chosen();
   if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
   if(!types.length){ alert("출제 유형을 1개 이상 선택하세요."); return; }
+  var pgs=parsePassages();
+  if(pgs.length>1){ runMulti(pgs, types); return; }   // 다중 지문(무제한): 지문별 그룹 시험지
   saveState();
   GENERATING=true;   // 회의·자가학습 루프가 큐를 양보하도록
   var go=document.getElementById("go"); go.disabled=true; go.textContent="출제 중…";

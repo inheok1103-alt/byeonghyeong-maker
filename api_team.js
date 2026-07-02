@@ -1207,6 +1207,20 @@
     var blanked = passage.slice(0, m.index) + w.charAt(0) + "_".repeat(Math.max(3, w.length - 1)) + passage.slice(m.index + m[0].length);
     return { type: "첫글자어휘", instruction: "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)", passage: blanked, choices: [], answer: 0, explanation: "[모범답안] " + m[0] + " — 문단의 논지상 이 자리에는 '" + m[0] + "'가 유일하게 자연스럽다.", _audit: "정답 코드생성됨(빈칸·첫글자 힌트를 코드가 구성)" };
   }
+  // 지문 늘리기(증편): 논지·문체 유지 + 부연·예시 추가, 원문 문장 보존을 '코드로' 검증
+  async function extendPassage(passage, opts) {
+    opts = opts || {};
+    var addN = opts.addSentences || 3;
+    for (var attempt = 0; attempt < 2; attempt++) {
+      var o = await llmJSON([{ role: "system", content: "영어 지문 증편 편집자. 원문 문장은 한 단어도 바꾸지 않고 그대로 유지한다. JSON만." }, { role: "user", content: "다음 글의 논지·문체·시제를 유지하면서, 자연스러운 위치에 부연·예시·근거 문장 " + addN + "개를 추가해 지문을 확장하라. 원문 문장은 삭제·수정 금지(모두 그대로 포함). 추가 문장은 글 주제에 대한 사실적 상식 범위로. JSON: {\"extended\":\"확장된 지문 전체\",\"added\":[\"추가한 문장들\"]}. JSON만.\n\n" + passage }], { temperature: attempt ? 0.65 : 0.5, timeout: 75000 });
+      if (!o || !o.extended || String(o.extended).length < passage.length) continue;
+      var extNorm = normTok(o.extended);
+      var lost = splitSentences(passage).filter(function (s2) { return extNorm.indexOf(normTok(s2)) < 0; });
+      if (lost.length && attempt === 0) continue;   // 원문 훼손 → 1회 재시도
+      return { extended: String(o.extended).trim(), added: (o.added || []).map(String), preserved: lost.length === 0, lostCount: lost.length };
+    }
+    return null;
+  }
   // 장문세트: 1지문 2~3문항(동형 모의고사용) — 기존 빌더 재사용, subItems로 반환
   async function buildLongSet(passage, opts) {
     opts = opts || {};
@@ -1546,7 +1560,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
-    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB,
+    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage,
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
