@@ -26,7 +26,8 @@ jobs:
 
       - name: 자가학습 + 교사 회의 실행
         env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}   # 암호화 Secret에서 주입(공개 레포엔 노출 안 됨)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}   # 우선(무료 한도 큼) — 암호화 Secret에서 주입
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}       # 보조 — 암호화 Secret에서 주입(공개 레포엔 노출 안 됨)
         run: node self_learn_server.js || true
 
       - name: 결과 커밋
