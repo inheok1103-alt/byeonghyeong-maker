@@ -697,7 +697,7 @@
   /* ===== 자가학습: 스스로 만들고 → 교사 패널 자가비평 → 결함에서 일반화 규칙 학습 → STANDING에 반영 ===== */
   var LEARNED = [];
   function learnedRules() { return LEARNED.slice(); }
-  function applyLearned(rules) { LEARNED = (rules || []).slice(-60); STANDING = LEARNED.slice(-12).join(" / ").slice(0, 900); return LEARNED.length; }
+  function applyLearned(rules) { LEARNED = (rules || []).map(function (r) { return (r && r.rule) || r; }).filter(function (r) { return typeof r === "string" && r; }).slice(-60); STANDING = LEARNED.slice(-12).join(" / ").slice(0, 900); return LEARNED.length; }
   async function selfLearnStep(passage, type, opts) {
     opts = opts || {}; var onP = opts.onProgress;
     var q = await generateOne(passage, type, { fast: true }).catch(function () { return null; });

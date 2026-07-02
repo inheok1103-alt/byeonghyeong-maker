@@ -488,7 +488,8 @@ function initLearned(){
   var local=[]; try{ local=JSON.parse(localStorage.getItem("learnedRules")||"[]"); }catch(e){}
   // 서버(클라우드 루틴)가 탭과 무관하게 누적한 학습규칙도 로드해 병합 → 모든 사용자에 반영
   fetch("corpus/learned_rules.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).then(function(d){
-    var server=(d&&d.rules)||[];
+    // 서버 규칙은 {rule,src,score,ts} 객체 또는 문자열 — 문자열로 정규화(객체 그대로 넣으면 프롬프트에 [object Object] 오염)
+    var server=((d&&d.rules)||[]).map(function(r){ return (r&&r.rule)||r; }).filter(function(r){ return typeof r==="string"&&r; });
     var all=server.concat(local.filter(function(x){return server.indexOf(x)<0;}));
     if(all.length&&T.applyLearned){ T.applyLearned(all); var el=document.getElementById("learnStat"); if(el) el.textContent="· "+evoLabel(all.length).replace("(생성에 반영중)"," (서버"+server.length+"+로컬, 반영중)"); var p=document.getElementById("pillEvo"); if(p) p.textContent="🧬 진화 Lv."+(Math.floor(all.length/5)+1); }
   }).catch(function(){ if(local.length&&T.applyLearned){ T.applyLearned(local); var el=document.getElementById("learnStat"); if(el) el.textContent="· "+evoLabel(local.length); } });
