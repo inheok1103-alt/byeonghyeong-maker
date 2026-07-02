@@ -1124,11 +1124,17 @@
       var cands = [w0]; if (/ies$/.test(w0)) cands.push(w0.replace(/ies$/, "y")); if (/es$/.test(w0)) cands.push(w0.replace(/es$/, "")); if (/s$/.test(w0)) cands.push(w0.replace(/s$/, "")); if (/ed$/.test(w0)) cands.push(w0.replace(/ed$/, ""), w0.replace(/d$/, "")); if (/ing$/.test(w0)) cands.push(w0.replace(/ing$/, ""), w0.replace(/ing$/, "e"));
       for (var c = 0; c < cands.length; c++) {
         if (seen[cands[c]]) continue; seen[cands[c]] = 1;
-        try { var d = await dict(cands[c]); if (d && d.def && d.def.length > 12) { defs.push({ w: cw[i], def: d.def }); break; } } catch (_) {}
+        try { var d = await dict(cands[c]); var dd = d && (d.def || (d.meanings && d.meanings[0] && d.meanings[0].def)); if (dd && dd.length > 12) { defs.push({ w: cw[i], def: dd }); break; } } catch (_) {}
       }
     }
     if (defs.length < 6) return null;
-    var five = defs.slice(0, 5), spare = defs[5];
+    // markWords는 '등장순' 매칭 — contentWords는 빈도순이므로 지문 내 첫 등장 위치로 정렬
+    var pl2 = passage.toLowerCase();
+    defs.forEach(function (x) { x.at = pl2.indexOf(String(x.w).toLowerCase()); });
+    defs = defs.filter(function (x) { return x.at >= 0; }).sort(function (a, b) { return a.at - b.at; });
+    if (defs.length < 6) return null;
+    var spare = defs.pop();                                   // 마지막 등장 단어를 스왑용 예비로
+    var five = defs.slice(0, 5);
     var swap = rint(5);
     var shown = five.map(function (x, i) { return { w: x.w, def: (i === swap ? spare.def : x.def) }; });
     var mk = markWords(passage, five.map(function (x) { return x.w; }), -1, "");
