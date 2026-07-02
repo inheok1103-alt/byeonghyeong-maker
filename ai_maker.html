@@ -169,7 +169,7 @@ button:active{transform:translateY(0)}
       <input type="password" id="groqKey" placeholder="gsk_..." style="width:210px;padding:2px 6px;font-size:8.5pt" onchange="saveGroqKey()">
       <button class="ghost" style="font-size:8pt;padding:2px 8px" onclick="clearGroqKey()">지우기</button>
       <span id="groqStat" style="color:#0f766e;font-weight:700"></span>
-      <div style="margin-top:6px">🔑 <b>개인 Gemini 키</b>(선택·권장) — 무료 한도가 훨씬 커서 24시간 회의·대량 출제에 적합(gemini-2.0-flash). <a href="https://aistudio.google.com/apikey" target="_blank" style="color:#0f766e">키 발급</a>:
+      <div style="margin-top:6px">🔑 <b>개인 Gemini 키</b>(선택·권장) — 무료 한도가 훨씬 커서 24시간 회의·대량 출제에 적합(gemini-2.5-flash). <a href="https://aistudio.google.com/apikey" target="_blank" style="color:#0f766e">키 발급</a>:
       <input type="password" id="geminiKey" placeholder="AIza..." style="width:210px;padding:2px 6px;font-size:8.5pt" onchange="saveGeminiKey()">
       <button class="ghost" style="font-size:8pt;padding:2px 8px" onclick="clearGeminiKey()">지우기</button>
       <span id="geminiStat" style="color:#0f766e;font-weight:700"></span></div>
@@ -224,6 +224,7 @@ button:active{transform:translateY(0)}
 </div>
 
 <script src="api_team.js"></script>
+<script src="addon_key_guard.js"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
@@ -385,9 +386,9 @@ function getEnsemble(){ var c=document.getElementById("ensembleChk"); return !!(
 function saveGroqKey(){ var k=(document.getElementById("groqKey").value||"").trim(); var s=document.getElementById("groqStat"); try{ if(k) localStorage.setItem("groqKey",k); else localStorage.removeItem("groqKey"); }catch(e){} if(k){ T.configure({groqKey:k}); s.textContent="✓ 적용됨 (llama-3.3-70b · 강력·빠름)"; } else { T.configure({groqKey:""}); s.textContent=""; } }
 function clearGroqKey(){ document.getElementById("groqKey").value=""; try{ localStorage.removeItem("groqKey"); }catch(e){} T.configure({groqKey:""}); document.getElementById("groqStat").textContent="지움 (무키 Pollinations로 복귀)"; }
 function initGroqKey(){ var gk=""; try{ gk=localStorage.getItem("groqKey")||""; }catch(e){} if(gk){ try{ var el=document.getElementById("groqKey"); if(el) el.value=gk; T.configure({groqKey:gk}); var s=document.getElementById("groqStat"); if(s) s.textContent="✓ 적용됨 (llama-3.3-70b)"; }catch(e){} } else { var s2=document.getElementById("groqStat"); if(s2) s2.textContent="키 미입력 — 무료 Pollinations로 작동(느림). 위 칸에 Groq 키를 한 번 넣으면 영구 적용."; } }
-function saveGeminiKey(){ var k=(document.getElementById("geminiKey").value||"").trim(); var s=document.getElementById("geminiStat"); try{ if(k) localStorage.setItem("geminiKey",k); else localStorage.removeItem("geminiKey"); }catch(e){} if(k){ T.configure({geminiKey:k}); s.textContent="✓ 적용됨 (gemini-2.0-flash · 최우선)"; } else { T.configure({geminiKey:""}); s.textContent=""; } }
+function saveGeminiKey(){ var k=(document.getElementById("geminiKey").value||"").trim(); var s=document.getElementById("geminiStat"); try{ if(k) localStorage.setItem("geminiKey",k); else localStorage.removeItem("geminiKey"); }catch(e){} if(k){ T.configure({geminiKey:k}); s.textContent="✓ 적용됨 (gemini-2.5-flash · 최우선)"; } else { T.configure({geminiKey:""}); s.textContent=""; } }
 function clearGeminiKey(){ document.getElementById("geminiKey").value=""; try{ localStorage.removeItem("geminiKey"); }catch(e){} T.configure({geminiKey:""}); document.getElementById("geminiStat").textContent="지움"; }
-function initGeminiKey(){ var gk=""; try{ gk=localStorage.getItem("geminiKey")||""; }catch(e){} if(gk){ try{ var el=document.getElementById("geminiKey"); if(el) el.value=gk; T.configure({geminiKey:gk}); var s=document.getElementById("geminiStat"); if(s) s.textContent="✓ 적용됨 (gemini-2.0-flash · 최우선)"; }catch(e){} } }
+function initGeminiKey(){ var gk=""; try{ gk=localStorage.getItem("geminiKey")||""; }catch(e){} if(gk){ try{ var el=document.getElementById("geminiKey"); if(el) el.value=gk; T.configure({geminiKey:gk}); var s=document.getElementById("geminiStat"); if(s) s.textContent="✓ 적용됨 (gemini-2.5-flash · 최우선)"; }catch(e){} } }
 var VERDICT_COLOR={"반영":"#0f766e","부분반영":"#b45309","보류":"#6b7280","반려":"#b03a2e"};
 function submitRequest(){
   var q=document.getElementById("reqInput").value.trim();
@@ -593,7 +594,7 @@ function buildTypeChips(){
   list.forEach(function(t){ var on=hasSel?!!sel[t]:!!DEFL[t]; var l=document.createElement("label"); l.className=on?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(on?" checked":"")+'>'+t; l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); updateEstimate(); saveState(); }; tdiv.appendChild(l); });
   updateEstimate();
 }
-var DBURL=new URLSearchParams(location.search).get("db")||"https://raw.githubusercontent.com/inheok1103-alt/byeonghyeong-maker/master/types.json";
+var DBURL=new URLSearchParams(location.search).get("db")||"knowledge/types_v2.json";
 function refreshDB(){ var st=document.getElementById("dbstat"); if(st)st.textContent="유형 DB 불러오는 중…"; T.loadTypeDB(DBURL+(DBURL.indexOf("?")>=0?"&":"?")+"_t="+Date.now()).then(function(r){ if(r&&r.ok&&r.count){ buildTypeChips(); if(st)st.textContent="✓ 유형 DB "+r.count+"종 · "+new Date().toLocaleTimeString(); } else if(st) st.textContent="유형 DB: 내장 기본"; }); }
 var FEEDURL="";
 fetch("config.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(c){ if(c&&c.logUrl){ FEEDURL=c.logUrl; T.configure({logUrl:c.logUrl}); var hu=c.hintsUrl||c.logUrl; T.loadSharedHints(hu+(hu.indexOf("?")>=0?"&":"?")+"hints=1&_t="+Date.now()); loadResearch(); } }).catch(function(){});

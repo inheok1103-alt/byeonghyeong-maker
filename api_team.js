@@ -29,7 +29,7 @@
   /* ---------- LLM 공급자 (키리스 기본 + 선택 무료키 업그레이드) ----------
    * 키 미입력 → Pollinations(무키). Gemini/Groq '무료키' 입력 시 그쪽으로 라우팅.
    * 키는 사용자 브라우저(localStorage)에만 저장 — 공개 코드엔 절대 안 들어감. */
-  var CFG = { geminiKey: "", groqKey: "", geminiModel: "gemini-2.0-flash", groqModel: "llama-3.3-70b-versatile" };
+  var CFG = { geminiKey: "", groqKey: "", geminiModel: "gemini-2.5-flash", groqModel: "llama-3.3-70b-versatile" };
   function configure(c) { c = c || {}; Object.assign(CFG, c); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; if (c.onLearn) CB.onLearn = c.onLearn; }
   function provider() { return CFG.geminiKey ? "gemini" : (CFG.groqKey ? "groq" : "pollinations"); }
   var LAST_LIMITED = false;   // 직전 호출이 레이트리밋이었는지(진단·UI용)
