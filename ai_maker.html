@@ -345,6 +345,7 @@ function toggleAns(){ [].forEach.call(document.querySelectorAll(".ans"),function
 <script>
 /* ===== UX 보강: 속도·진행률·샘플·자동저장·복사/Word·개별 재생성 ===== */
 var LASTPASSAGE="", LASTITEMS=[];
+var GENERATING=false;   // 출제/변형 진행 중 표시 — 회의·자가학습 루프가 직렬 큐를 양보하게 함
 var SAMPLE="When our actions clash with our beliefs, we feel an uncomfortable tension that the mind is eager to remove. Instead of admitting we were wrong, we quietly reshape our beliefs until they fit what we have already done. For example, a person who pays a high price for a course they find dull may convince themselves that it is secretly valuable, simply because they have committed their money to it. However, this comfort comes at a cost: by changing our thoughts rather than our behavior, we drift further from the truth. Therefore, resolving inner conflict is often not a movement toward accuracy but a clever defense of our past choices.";
 function loadSample(){ document.getElementById("passage").value=SAMPLE; onPassage(); }
 function clearPassage(){ document.getElementById("passage").value=""; onPassage(); }
@@ -363,6 +364,7 @@ function run(){
   if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
   if(!types.length){ alert("출제 유형을 1개 이상 선택하세요."); return; }
   LASTPASSAGE=passage; saveState();
+  GENERATING=true;   // 회의·자가학습 루프가 큐를 양보하도록
   var go=document.getElementById("go"); go.disabled=true; go.textContent="출제 중…";
   document.getElementById("log").textContent=""; document.getElementById("out").innerHTML="";
   document.getElementById("meet").innerHTML=""; document.getElementById("meetCard").style.display="none";
@@ -370,7 +372,7 @@ function run(){
   T.generateExam(passage, types, {onProgress:logln, fast:getFast(), level:getLevel(), refine:getRefine(), rounds:getRounds(), ensemble:getEnsemble()}).then(function(items){
     LASTITEMS=items||[]; document.getElementById("barfill").style.width="100%"; render(items);
     go.disabled=false; go.textContent="🚀 고품질 출제"; setTimeout(function(){ document.getElementById("bar").style.display="none"; },900);
-  }).catch(function(e){ logln("오류: "+e.message); go.disabled=false; go.textContent="🚀 고품질 출제"; });
+  }).catch(function(e){ logln("오류: "+e.message); go.disabled=false; go.textContent="🚀 고품질 출제"; }).then(function(){ GENERATING=false; });
 }
 function getRefine(){ var c=document.getElementById("refineChk"); return !!(c&&c.checked); }
 function getRounds(){ var r=document.getElementById("rounds"); return r?Math.max(1,Math.min(8,parseInt(r.value,10)||3)):3; }
@@ -450,6 +452,7 @@ function liveLine(html){ var el=document.getElementById("liveLog"); if(!el)retur
 function toggleLive(){ LIVE.on=!LIVE.on; var b=document.getElementById("liveBtn"); if(b) b.textContent=LIVE.on?"■ 중지":"▶ 실시간 회의 시작"; if(LIVE.on){ liveLine('<div style="color:#6f6">▶ 실시간 회의 시작 · '+new Date().toLocaleTimeString()+'</div>'); liveLoop(); } else { liveLine('<div style="color:#f88">■ 중지 · '+new Date().toLocaleTimeString()+'</div>'); } }
 function liveLoop(){
   if(!LIVE.on||!window.T) return;
+  if(GENERATING){ setTimeout(liveLoop, 3000); return; }   // 출제/변형 중엔 회의를 미뤄 큐를 양보
   var topic=LIVE.topics[LIVE.i % LIVE.topics.length]; LIVE.i++;
   liveLine('<div style="color:#ffd166;margin-top:7px;font-weight:700">━━ 회의 #'+LIVE.i+' · '+esc(topic)+' <span style="color:#789;font-weight:400">('+new Date().toLocaleTimeString()+')</span></div>');
   T.deliberate(topic, {teachers:3, onProgress:function(m){ if(/💬/.test(m)) liveLine('<div>'+esc(m)+'</div>'); }}).then(function(r){
@@ -465,6 +468,7 @@ var LEARN={on:false,i:0,types:["빈칸","함의","주제","어법","어휘","요
 function toggleLearn(){ LEARN.on=!LEARN.on; var b=document.getElementById("learnBtn"); if(b) b.textContent=LEARN.on?"■ 자가학습 중지":"🧠 자가학습 시작"; if(LEARN.on){ liveLine('<div style="color:#8cf">🧠 자가학습 시작 — 스스로 출제→교사 자가비평→일반화 규칙 학습→즉시 반영</div>'); learnLoop(); } else liveLine('<div style="color:#f88">■ 자가학습 중지</div>'); }
 function learnLoop(){
   if(!LEARN.on||!window.T) return;
+  if(GENERATING){ setTimeout(learnLoop, 3000); return; }   // 출제/변형 중엔 자가학습을 미뤄 큐를 양보
   var type=LEARN.types[LEARN.i%LEARN.types.length]; LEARN.i++;
   var pg=(document.getElementById("passage").value||"").trim();
   if(pg.length<40){ var cp=(T.corpusPassage?T.corpusPassage({}):null); pg=cp?cp.text:"Happiness is culturally constructed rather than a universal personal achievement, deeply shaped by whether a culture prioritizes individual success or collective harmony."; }
@@ -513,13 +517,14 @@ function doTransform(level){
   if(passage.length<40){ alert("영어 지문을 입력하세요(40자 이상)."); return; }
   var note=document.getElementById("xfnote"); note.textContent="변형 중… (다중 API 협업)";
   var out=document.getElementById("xfout"); out.innerHTML="";
+  GENERATING=true;
   T.transformStaged(passage, level, {onProgress:function(m){ note.textContent=m; }}).then(function(r){
     if(!r||!r.variant){ note.textContent="변형 실패 — 다시 시도하세요"; return; }
     note.textContent=(r.stage||"")+" · "+(r.audit||"");
     var ch=(r.changed&&r.changed.length)?('<div class="note" style="margin-top:5px">바뀐 점: '+esc(r.changed.join(" · "))+'</div>'):'';
     out.innerHTML='<div class="card" style="background:#f8fafb;box-shadow:none;border:1px solid #d7e3e0"><div style="font-weight:700;color:#0f766e;margin-bottom:5px">'+esc(r.stage||"변형")+' <span class="note" style="font-weight:400">'+esc(r.note||"")+'</span></div><div class="pg">'+esc(r.variant)+'</div>'+ch+'<button class="ghost noprint" style="margin-top:7px" id="usevar">↑ 이 변형을 입력 지문으로</button></div>';
     var b=document.getElementById("usevar"); if(b){ b.__v=r.variant; b.onclick=function(){ document.getElementById("passage").value=this.__v; onPassage(); saveState(); window.scrollTo(0,0); }; }
-  }).catch(function(e){ note.textContent="오류: "+e.message; });
+  }).catch(function(e){ note.textContent="오류: "+e.message; }).then(function(){ GENERATING=false; });
 }
 function qHtml(q,i){
   var h='<div class="q" id="q_'+i+'"><div class="h">'+(i+1)+'. '+esc(q.type)+' <span class="chip">AI</span> <button class="ghost noprint" style="font-size:8pt;padding:3px 9px;margin-left:6px" onclick="regenOne('+i+')">🔄 재생성</button> <button class="ghost noprint" style="font-size:8pt;padding:3px 9px" onclick="showExplain('+i+')">📖 해설지</button></div><div class="ins">'+esc(q.instruction)+'</div>';
@@ -627,7 +632,8 @@ function foldify(ids, collapsed){
 foldify(["meshCard","xformCard","brainCard","govCard","archiveCard","researchCard"], true);
 initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
 // 로드되면 교사 회의가 실시간으로 자동 시작(탭 열려 있는 동안 계속)
-setTimeout(function(){ try{ if(!LIVE.on) toggleLive(); }catch(e){} }, 2500);
+// 실시간 회의 자동시작: Groq 키가 있을 때만(병렬·고속). 무키(Pollinations 직렬)면 출제 큐를 비워두기 위해 수동 시작.
+setTimeout(function(){ try{ var gk=(document.getElementById("groqKey").value||"").trim(); if(!LIVE.on && gk) toggleLive(); else if(!gk){ var b=document.getElementById("liveBtn"); if(b) b.title="Groq 키를 넣으면 자동 시작됩니다(무키에선 출제 속도 보호를 위해 수동)"; } }catch(e){} }, 2500);
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
