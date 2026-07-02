@@ -334,11 +334,39 @@ function render(items){
     if(q.passage) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
     if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
     var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
-    h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(q.explanation)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+'</div></div>';
+    h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(q.explanation)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+'</div>';
+    h+='<div class="noprint" style="margin-top:4px"><button class="ghost" style="font-size:8.4pt;padding:2px 9px" onclick="reviewOne('+i+')">🔍 정밀검수</button> <span id="rvs_'+i+'" class="note"></span></div><div id="rvb_'+i+'" class="noprint"></div></div>';
   });
   document.getElementById("out").innerHTML=h+'</div>';
 }
 function toggleAns(){ [].forEach.call(document.querySelectorAll(".ans"),function(a){a.classList.toggle("show");}); }
+/* ===== 정밀검수(검수관): 코드검증→유형별 LLM 검수→3판정 + 수정안 원클릭 반영 ===== */
+function reviewOne(i){
+  var q=(typeof LASTITEMS!=="undefined")&&LASTITEMS[i]; if(!q){ alert("먼저 문제를 출제하세요."); return; }
+  var s=document.getElementById("rvs_"+i), b=document.getElementById("rvb_"+i);
+  if(s) s.textContent="검수관 가동 중… (코드검증→선지별 판정)"; GENERATING=true;
+  T.reviewItem(q, LASTPASSAGE, {}).then(function(r){
+    GENERATING=false; if(!r){ if(s) s.textContent="검수 실패"; return; } if(s) s.textContent="";
+    var col={"사용 가능":"#0f766e","수정 후 사용 가능":"#b45309","사용 불가":"#b03a2e"}[r.verdict]||"#556";
+    var h='<div style="border:1px solid #e2e8ef;border-left:4px solid '+col+';border-radius:8px;padding:8px 10px;margin:6px 0;font-size:8.8pt;background:#fbfcfd">';
+    h+='<b style="color:'+col+'">🔍 검수 판정: '+esc(r.verdict)+'</b>';
+    if(r.unique===false||String(r.multi||"").length>2) h+='<div style="color:#b03a2e;font-weight:700;margin-top:2px">⚠ 복수 정답 가능: '+esc(r.multi||"정답 유일성 미충족")+'</div>';
+    if((r._code||[]).length) h+='<div style="color:#b45309;margin-top:3px">코드검증: '+esc(r._code.join(" · "))+'</div>';
+    if((r.errors||[]).length) h+='<div style="margin-top:4px">'+r.errors.map(function(e){ return '<div>• <b>'+esc(e.at||"")+'</b> ['+esc(e.type||"")+'] '+esc(e.issue||"")+(e.fix?(' → <span style="color:#0f766e">'+esc(e.fix)+'</span>'):'')+'</div>'; }).join("")+'</div>';
+    if((r.choices||[]).length) h+='<details style="margin-top:4px"><summary style="cursor:pointer;color:#456">선지별 독립 검토 ('+r.choices.length+')</summary>'+r.choices.map(function(c){ return '<div style="margin:2px 0 2px 6px">'+(CIRC[(c.n||1)-1]||c.n)+' <b style="color:'+(c.ok==="정답"?"#0f766e":"#667")+'">'+esc(c.ok||"")+'</b> — '+esc(c.evi||"")+(c.note?(' <span style="color:#b45309">('+esc(c.note)+')</span>'):'')+'</div>'; }).join("")+'</details>';
+    var hasFix=(r.fixChoices&&r.fixChoices.length>=4)||(r.fixExp&&String(r.fixExp).length>5)||(r.fixAnswer>=1);
+    if(hasFix){ window["_rvfix"+i]=r; h+='<button class="ghost noprint" style="margin-top:5px;font-size:8.4pt" onclick="applyReview('+i+')">✏ 수정안 반영(선지·정답·해설)</button>'; }
+    h+='</div>'; if(b) b.innerHTML=h;
+  }).catch(function(e){ GENERATING=false; if(s) s.textContent="검수 오류: "+e.message; });
+}
+function applyReview(i){
+  var r=window["_rvfix"+i], q=LASTITEMS[i]; if(!r||!q) return;
+  if(r.fixChoices&&r.fixChoices.length>=4) q.choices=r.fixChoices.slice(0,5).map(String);
+  if(r.fixAnswer>=1&&r.fixAnswer<=5) q.answer=r.fixAnswer;
+  if(r.fixExp&&String(r.fixExp).length>5) q.explanation=String(r.fixExp);
+  q._audit=((q._audit?q._audit+" · ":"")+"검수관 수정 반영");
+  render(LASTITEMS);
+}
 </script>
 <script>
 /* ===== UX 보강: 속도·진행률·샘플·자동저장·복사/Word·개별 재생성 ===== */
@@ -639,6 +667,7 @@ function initKeyFromHash(){ try{ var h=location.hash.replace(/^#/,""); if(!h) re
   if(got) history.replaceState(null,"",location.pathname+location.search);
 }catch(e){} }
 initKeyFromHash(); initGeminiKey(); initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
+try{ if(T.loadReviewDB) T.loadReviewDB("knowledge/review_core_v2.json"); }catch(e){}   // 검수관 지식DB(15절차 계승·발전)
 // 로드되면 교사 회의가 실시간으로 자동 시작(탭 열려 있는 동안 계속)
 // 실시간 회의 자동시작: Groq 키가 있을 때만(병렬·고속). 무키(Pollinations 직렬)면 출제 큐를 비워두기 위해 수동 시작.
 setTimeout(function(){ try{ var gk=(document.getElementById("groqKey").value||"").trim(); var gm=(document.getElementById("geminiKey").value||"").trim(); if(!LIVE.on && (gk||gm)) toggleLive(); else if(!gk&&!gm){ var b=document.getElementById("liveBtn"); if(b) b.title="Gemini/Groq 키를 넣으면 자동 시작됩니다(무키에선 출제 속도 보호를 위해 수동)"; } }catch(e){} }, 2500);

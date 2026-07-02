@@ -240,6 +240,107 @@
   async function loadDifficultyDB(url) {
     try { var r = await fetch(url, { cache: "no-store" }); DIFF = await r.json(); return { ok: true, levels: DIFF.levels ? Object.keys(DIFF.levels) : [] }; } catch (e) { return { ok: false, error: String(e) }; }
   }
+
+  // ===== 검수관(사용자 검수프롬프트 15절차 계승·발전): 코드검증 선행 → 유형별 LLM 검수 → 구조화 판정 =====
+  var REVIEWDB = null;
+  async function loadReviewDB(url) {
+    try { var r = await fetch(url || "knowledge/review_core_v2.json", { cache: "no-store" }); REVIEWDB = await r.json(); return { ok: true, version: (REVIEWDB.meta && REVIEWDB.meta.version) || "?" }; } catch (e) { return { ok: false, error: String(e) }; }
+  }
+  function reviewSectionFor(type) {
+    var s = (REVIEWDB && REVIEWDB.sections) || {}; var t = String(type || "");
+    if (/어법|전환|도치|강조/.test(t)) return s["어법"] || "";
+    if (/어휘|영영|낱말|첫글자/.test(t)) return s["어휘"] || "";
+    if (/빈칸|요약문|요약/.test(t)) return s["빈칸"] || "";
+    if (/순서/.test(t)) return s["순서"] || "";
+    if (/삽입/.test(t)) return s["삽입"] || "";
+    if (/영작|서술|해석|주제문|명시|수정/.test(t)) return s["서술형"] || "";
+    return s["공통훅"] || "";
+  }
+  // ① 코드 결정론 검증: 원문 보존 diff·형식·정답번호·선지 중복/길이 불균형(정답 노출)
+  function reviewCode(q, original) {
+    var f = [];
+    var isLabel = q.choices && q.choices.length >= 4 && q.choices.every(function (c) { return String(c).trim().length <= 3; });
+    if (q.choices && q.choices.length >= 4) {
+      if (!(q.answer >= 1 && q.answer <= q.choices.length)) f.push("정답번호 무효(" + q.answer + ")");
+      var seen = {};
+      q.choices.forEach(function (c, i) { var k = normTok(c); if (k && seen[k] != null) f.push("선지 " + (seen[k] + 1) + "·" + (i + 1) + "번 중복(동일 의미 표기)"); if (k) seen[k] = i; });
+      if (!isLabel) {
+        var lens = q.choices.map(function (c) { return String(c).length; });
+        var mx = Math.max.apply(null, lens), mn = Math.min.apply(null, lens);
+        if (mn > 0 && mx / mn > 1.8) f.push("선지 길이 불균형(최장/최단 " + (mx / mn).toFixed(1) + "배)");
+        if (mn > 0 && String(q.choices[q.answer - 1] || "").length === mx && mx / mn > 1.5) f.push("정답 선지가 가장 긺(정답 노출 위험)");
+      }
+    }
+    if (!String(q.explanation || "").trim()) f.push("해설 누락");
+    if (q.passage && original) {
+      var plain = String(q.passage).replace(/<[^>]+>/g, "").replace(/[ⓐ-ⓔ]/g, "").replace(/\s+/g, " ").trim();
+      var orig = String(original).replace(/\s+/g, " ").trim();
+      if (plain && orig && normTok(plain) !== normTok(orig) && plain.length > orig.length * 0.5) {
+        var setA = {}; orig.split(" ").forEach(function (w) { var k = normTok(w); if (k) setA[k] = (setA[k] || 0) + 1; });
+        var added = []; plain.split(" ").forEach(function (w) { var k = normTok(w); if (!k) return; if (setA[k]) setA[k]--; else added.push(w); });
+        var removed = []; for (var k2 in setA) { for (var c2 = 0; c2 < setA[k2]; c2++) removed.push(k2); }
+        if (added.length || removed.length) {
+          var intended = /어법|어휘|빈칸|낱말|수정/.test(String(q.type || ""));   // 이 유형들은 원문 변형이 정상 출제장치
+          f.push("원문 변형 " + (intended ? "확인(이 유형의 정상 출제장치)" : "감지(의도적 출제장치인지 확인 필요)") + " — 추가어[" + added.slice(0, 6).join(",") + "] 소실어[" + removed.slice(0, 6).join(",") + "]");
+        }
+      }
+    }
+    return f;
+  }
+  // ② 솔버 교차검증(발전분): 검수관과 독립적으로 문제를 3회 풀어 다수결 → 기록 정답과 대조(정답키 오류 탐지)
+  async function reviewSolve(q, original) {
+    if (!(q.choices && q.choices.length >= 4)) return null;
+    var CIRC = ["①", "②", "③", "④", "⑤"];
+    var pg = String(q.passage || original || "").slice(0, 1400);
+    if (!pg) return null;
+    var user = q.instruction + "\n\n[지문]\n" + pg + "\n\n" + q.choices.map(function (c, i) { return CIRC[i] + " " + c; }).join("\n") + "\n\n정답 번호만 출력(1~5).";
+    var votes = [];
+    for (var i = 0; i < 3; i++) {
+      var r = await llm([{ role: "system", content: "너는 대한민국 고등학교 영어 수석 교사다. 발문과 지문·선지를 근거로 정답 '번호만'(1~5) 출력한다. 설명 금지." }, { role: "user", content: user }], { noRule: true, temperature: [0.2, 0.5, 0.8][i], timeout: 45000 }).catch(function () { return ""; });
+      var d = (String(r).match(/[1-5]/) || [])[0]; if (d) votes.push(+d);
+    }
+    if (!votes.length) return null;
+    var tally = {}; votes.forEach(function (v) { tally[v] = (tally[v] || 0) + 1; });
+    var maj = +Object.keys(tally).sort(function (a, b) { return tally[b] - tally[a]; })[0];
+    return { votes: votes, majority: maj, count: tally[maj] };
+  }
+  // ③ LLM 검수(v2: LITE 규칙 시스템 + 유형별 섹션 + 분석 먼저·판정 마지막) → ④ 판정 기준표 코드 집행
+  async function reviewItem(q, original, opts) {
+    opts = opts || {};
+    if (!q) return null;
+    var code = reviewCode(q, original || "");
+    var R = REVIEWDB || {};
+    var sec = reviewSectionFor(q.type);
+    var sys = (R.identity || "너는 고등학교 영어 내신·수능형 문항 검수자다. 실제 출제 시 정답 시비가 없는지를 기준으로 점검한다.") +
+      "\n[규칙] " + ((R.rules || []).join(" / ") || "판단 근거는 지문 축자 인용, 근거 없으면 그 선지는 정답 불인정 / 발문 극성과 정답 방향 일치 확인 / 각 오답마다 '그것이 정답'이라는 최선의 논증을 세우고 지문 근거로 반박 — 반박 불가면 복수정답 / 허용 가능한 어법을 오답 처리 금지 / 판단 불가면 지어내지 말고 보류") +
+      (sec ? ("\n[" + q.type + " 검수] " + sec.slice(0, 380)) : "") +
+      "\n[민감쌍] " + (R.paraphrase_pairs || "may/must, some/all, often/invariably, contribute to/cause, not necessarily/never, if/only if, suggest/prove") +
+      "\n[판정표] 사용 불가=" + ((R.verdict_table && R.verdict_table["사용 불가"]) || "정답 오류·복수 정답·정답 없음·극성 반전·유령 오류/근거") + " / 수정 후 사용 가능=그 외 오류 존재 / 사용 가능=오류 없음." +
+      "\n★분석을 전부 마친 뒤 verdict를 '마지막에' 결정하라. 판정을 먼저 정하고 정당화하지 마라.";
+    var CIRC = ["①", "②", "③", "④", "⑤"];
+    var user = "[유형] " + q.type + "\n[발문] " + q.instruction +
+      "\n[원문]\n" + String(original || "(원문 미제공 — 기억 대조 금지, 지문 내적 결함만)").slice(0, 1500) +
+      (q.passage && q.passage !== original ? ("\n\n[지문(문항용·변형 표기 포함)]\n" + String(q.passage).slice(0, 1500)) : "") +
+      (q.choices && q.choices.length ? ("\n\n[선택지]\n" + q.choices.map(function (c, i) { return CIRC[i] + " " + c; }).join("\n")) : "") +
+      "\n\n[정답] " + (q.answer || "(서술형)") + "\n[해설] " + String(q.explanation || "").slice(0, 600) +
+      (code.length ? ("\n\n[코드 사전검증 소견 — 판단에 반영]\n- " + code.join("\n- ")) : "") +
+      "\n\n검수 후 JSON만 출력(키 순서 = 분석 순서, verdict는 반드시 마지막에 결정): {\"choices\":[{\"n\":1,\"ok\":\"정답|오답|보류\",\"evi\":\"본문 축자 근거(없으면 '본문 근거 없음')\",\"advocacy\":\"이 선지가 정답이라는 최선 논증→반박(오답만)\",\"note\":\"모호성(없으면 빈문자)\"}],\"errors\":[{\"at\":\"위치\",\"type\":\"유형\",\"issue\":\"문제점\",\"fix\":\"수정방법\"}],\"presented\":" + (q.answer || 0) + ",\"realAnswer\":실제정답번호(서술형은 0),\"unique\":true,\"multi\":\"복수정답 가능성(없으면 빈문자)\",\"fixExp\":\"보완 해설(불필요시 빈문자)\",\"fixChoices\":null,\"fixAnswer\":0,\"verdict\":\"사용 가능|수정 후 사용 가능|사용 불가\"}. 서술형이면 choices는 빈 배열.";
+    // LLM 검수와 솔버 교차검증을 병렬 수행(서로 독립)
+    var pair = await Promise.all([
+      llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { noRule: true, temperature: 0.2, timeout: 90000 }).catch(function () { return null; }),
+      reviewSolve(q, original).catch(function () { return null; })
+    ]);
+    var v = pair[0], sv = pair[1];
+    if (!v || !v.verdict) v = { verdict: (code.length ? "수정 후 사용 가능" : "검수 실패(LLM 무응답)"), errors: code.map(function (c) { return { at: "코드검증", type: "형식/원문", issue: c, fix: "" }; }), choices: [], unique: null, multi: "", fail: !code.length };
+    if (!/사용 가능|수정 후|사용 불가/.test(String(v.verdict))) v.verdict = (code.length || (v.errors || []).length) ? "수정 후 사용 가능" : "사용 가능";
+    v._code = code; v.solver = sv;
+    // ④ 판정 기준표 코드 집행(LLM이 관대해도 코드가 격상)
+    var ra = parseInt(v.realAnswer, 10);
+    if (q.answer >= 1 && ra >= 1 && ra <= 5 && ra !== q.answer) { v.verdict = "사용 불가"; v.unique = false; v.multi = (v.multi ? v.multi + " / " : "") + "검수관 판정 실제 정답 " + ra + "번(기록 " + q.answer + "번) — 정답 키 오류"; if (!(v.fixAnswer >= 1)) v.fixAnswer = ra; }
+    if (sv && sv.count >= 2 && q.answer >= 1 && sv.majority !== q.answer) { v.verdict = "사용 불가"; v.unique = false; v.multi = (v.multi ? v.multi + " / " : "") + "독립 솔버 " + sv.count + "/" + sv.votes.length + "표가 " + sv.majority + "번 선택(기록 " + q.answer + "번) — 정답 키 오류 의심"; if (!(v.fixAnswer >= 1)) v.fixAnswer = sv.majority; }
+    if ((v.unique === false || String(v.multi || "").length > 2) && !/불가/.test(v.verdict)) v.verdict = "사용 불가";   // 기준표: 복수정답=사용 불가
+    return v;
+  }
   // 원서 코퍼스 런타임 학습: 어휘난이도밴드·콜로케이션·등급별 지문 로드 → 난이도/어휘 판정에 반영
   var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null, synant: null, phrasal: null, gec: null, books: null };
   function synAnt(word) { return (CORPUS.synant && CORPUS.synant[String(word || "").toLowerCase()]) || null; }
@@ -515,7 +616,8 @@
     var circ = "ⓐⓑⓒⓓⓔ", out = "", rest = passage, count = 0, placed = "";
     for (var i = 0; i < words.length && i < 5; i++) {
       var w = String(words[i] || "").trim(); if (!w) return null;
-      var re = new RegExp("\\b" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i");
+      // \b는 단어문자 옆에서만 성립 — 구절이 문장부호로 시작/끝나면 경계 생략(마침표 끝 구절 매칭 실패 방지)
+      var re = new RegExp((/^[A-Za-z0-9]/.test(w) ? "\\b" : "") + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + (/[A-Za-z0-9]$/.test(w) ? "\\b" : ""), "i");
       var m = re.exec(rest); if (!m) return null;              // 등장순으로 못 찾으면 실패 → 재시도
       var shown = (i === corruptIdx) ? wrongWord : m[0];
       if (i === corruptIdx) placed = m[0];                     // 원래 단어 기록
@@ -543,10 +645,15 @@
   async function buildGrammar(passage) {
     var gecEx = gecExamples(2);
     for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 구절(등장 순서, 원문 그대로 복사)'로 고르고, 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★철자 오타 금지 — 수일치·시제·태(능/수동)·준동사(to부정사/동명사/분사)·관계사·병렬·전치사 등 문법 오류만. JSON: {\"phrases\":[\"지문 구절 5개(등장순, 원문 그대로)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 문법적으로 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases의 해당 항목)\"}. JSON만." + (gecEx ? (" 오류 유형 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 짧은 구절(각 2~7단어, 문장 전체 복사 금지, 등장 순서)'로 고르고, 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★철자 오타 금지 — 수일치·시제·태(능/수동)·준동사(to부정사/동명사/분사)·관계사·병렬·전치사 등 문법 오류만. JSON: {\"phrases\":[\"짧은 구절 5개(등장순, 원문 그대로)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 문법적으로 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases의 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 유형 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.phrases) || o.phrases.length < 5 || !o.error || String(o.error).trim() === String(o.correct || "").trim()) continue;
-      var wi = parseInt(o.wrongIndex, 10); if (!(wi >= 1 && wi <= 5)) wi = 1;
-      var mk = markWords(passage, o.phrases.slice(0, 5), wi - 1, String(o.error).trim());   // 코드가 밑줄+오류주입
+      var phr = o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); });
+      if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 8; })) continue;   // 문장통째 구절 → 짧은 어구로 재시도(마지막 시도는 수용)
+      // wrongIndex 자기보고 불신: correct와 동일한 구절을 코드로 탐색(0-기준 응답 등 오류 방어)
+      var wi = -1;
+      for (var pi = 0; pi < phr.length; pi++) { if (normTok(phr[pi]) === normTok(o.correct)) { wi = pi + 1; break; } }
+      if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
+      var mk = markWords(passage, phr, wi - 1, String(o.error).trim());   // 코드가 밑줄+오류주입
       if (!mk || mk.count < 5) continue;
       var g = []; try { g = await grammar(String(mk.text).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); } catch (_) {}
       var verified = g.length ? (" (LanguageTool 확인: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + ")") : "";
@@ -1112,6 +1219,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
+    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode,
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,

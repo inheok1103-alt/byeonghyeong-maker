@@ -75,6 +75,7 @@ async function main() {
   try { await T.loadTypeDB("knowledge/types_v2.json"); console.log("유형DB: knowledge/types_v2.json"); }
   catch (_) { try { await T.loadTypeDB("types.json"); console.log("유형DB: types.json(폴백)"); } catch (_) {} }
   try { await T.loadDifficultyDB("difficulty.json"); } catch (_) {}
+  try { if (T.loadReviewDB) await T.loadReviewDB("knowledge/review_core_v2.json"); } catch (_) {}
   try { const ci = await T.loadCorpus("corpus/"); console.log("코퍼스:", JSON.stringify(ci)); } catch (_) {}
 
   const learnedFile = J("corpus/learned_rules.json", { updated: "", count: 0, rules: [] });
@@ -103,10 +104,20 @@ async function main() {
       });
       if (!r || !r.fail) {
         const q = await T.generateOne(pg, t.type, { fast: true }).catch(() => null); // 키가드 자동 적용
-        if (q) samples.push({
-          ts: ts(), type: t.type, level: q.level || "중", audit: q._audit || "",
-          q: { instruction: q.instruction, passage: q.passage, choices: q.choices, answer: q.answer, explanation: q.explanation }
-        });
+        if (q) {
+          // 검수관(15절차 계승·발전): 예산 여유 시 정밀검수 → '사용 불가'는 폐기, 판정은 샘플에 부착
+          let rv = null;
+          if (T.reviewItem && used < BUDGET - 6) rv = await T.reviewItem(q, pg, {}).catch(() => null);
+          if (rv && /불가/.test(String(rv.verdict || ""))) {
+            research.push({ date: day(), category: "검수", topic: t.type, summary: "검수관 '사용 불가' → 샘플 폐기: " + (((rv.errors || [])[0] || {}).issue || rv.multi || ""), rule: "" });
+          } else {
+            samples.push({
+              ts: ts(), type: t.type, level: q.level || "중", audit: q._audit || "",
+              review: rv ? { verdict: rv.verdict, errors: (rv.errors || []).length, multi: rv.multi || "" } : null,
+              q: { instruction: q.instruction, passage: q.passage, choices: q.choices, answer: q.answer, explanation: q.explanation }
+            });
+          }
+        }
       }
     }
   } catch (e) { console.log("Phase A 오류:", e.message); }
