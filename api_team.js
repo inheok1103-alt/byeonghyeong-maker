@@ -1223,6 +1223,26 @@
     }
     return null;
   }
+  // 문장전환(통합): 지문을 스캔해 '이 지문에 맞는' 전환 유형을 자동 선택 → buildConvert 위임
+  async function buildConvertAuto(passage) {
+    var ss = splitSentences(passage), cand = [];
+    var hasRel = ss.some(function (s) { return /\b(who|whose|whom|which|that)\b/i.test(s) && s.split(" ").length >= 8; });
+    var hasPassiveable = ss.some(function (s) { return /\b(is|are|was|were|has|have|had)\b/i.test(s) && /\b\w+(ed|en)\b/.test(s); });
+    var hasAdvCl = ss.some(function (s) { return /\b(Because|Although|While|When|After|Before|Since|As)\b/i.test(s); });
+    var hasIf = ss.some(function (s) { return /\bif\b/i.test(s); });
+    if (hasPassiveable) cand.push("태");
+    if (hasAdvCl) cand.push("분사구문");
+    if (hasRel) cand.push("관계사");
+    if (hasIf) cand.push("가정법");
+    cand.push("강조도치");                                     // 어떤 지문이든 가능(It~that 강조)
+    // 지문 특징에 맞는 후보 중 무작위 1개 → 실패 시 다음 후보로 폴백
+    cand.sort(function () { return Math.random() - 0.5; });
+    for (var i = 0; i < cand.length; i++) {
+      var q = await buildConvert(passage, cand[i]).catch(function () { return null; });
+      if (q) { q.type = "문장전환"; q._audit = (q._audit || "") + " · 지문 분석으로 '" + cand[i] + "' 전환 자동 선택"; return q; }
+    }
+    return null;
+  }
   // 장문세트: 1지문 2~3문항(동형 모의고사용) — 기존 빌더 재사용, subItems로 반환
   async function buildLongSet(passage, opts) {
     opts = opts || {};
@@ -1262,6 +1282,7 @@
     if (t === "조건영작") return function (p, o) { return buildConditional(p, o); };
     if (t === "어법수정") return function (p, o) { return buildGrammarEdit(p, o); };
     // 신규 유형(정답 코드제어) 특례 — 유형DB의 builder 키보다 우선
+    if (t === "문장전환") return function (p) { return buildConvertAuto(p); };   // 통합형: 지문에 맞는 전환을 자동 선택
     var cm = String(t).match(/^문장전환\((태|분사구문|관계사|가정법)\)/); if (cm) return function (p) { return buildConvert(p, cm[1]); };
     if (/강조|도치/.test(t) && /전환/.test(t)) return function (p) { return buildConvert(p, "강조도치"); };
     if (/글의\s*순서|^순서$/.test(t)) return function (p) { return Promise.resolve(buildOrder(p)); };
