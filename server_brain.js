@@ -18,11 +18,13 @@ const path = require("path");
 const ROOT = __dirname;
 const BUDGET = parseInt(process.env.BUDGET || "60", 10);
 const GAS = (process.env.GAS_URL || "").trim();
+/* 시간 예산: 마감 도달 시 LLM만 즉시 차단 → 마무리(Phase C 아카이브·커밋)는 반드시 잡 타임아웃 안에 실행됨 */
+const DEADLINE = Date.now() + parseInt(process.env.TIME_BUDGET_MIN || "11", 10) * 60 * 1000;
 
 let used = 0, blocked = 0;
 const realFetch = global.fetch.bind(global);
 
-/* fetch 심: ① 상대경로 → 저장소 파일 ② LLM 호스트 → 예산 카운트 */
+/* fetch 심: ① 상대경로 → 저장소 파일 ② LLM 호스트 → 예산(콜 수+시간) 카운트 */
 global.fetch = async function (url, init) {
   const u = String((url && url.url) || url);
   if (!/^https?:\/\//.test(u)) {
@@ -31,9 +33,10 @@ global.fetch = async function (url, init) {
     return new Response(fs.readFileSync(p, "utf8"), { status: 200, headers: { "content-type": "application/json" } });
   }
   if (/pollinations\.ai|api\.groq\.com|generativelanguage\.googleapis/.test(u)) {
-    if (used >= BUDGET) {
+    if (used >= BUDGET || Date.now() > DEADLINE) {
       blocked++;
-      return new Response(JSON.stringify({ choices: [{ message: { content: "" } }], candidates: [{ content: { parts: [{ text: "" }] } }] }),
+      // 429 형태로 반환 → 엔진의 LAST_LIMITED 감지로 재시도·지연 없이 즉시 다음 단계(마무리)로
+      return new Response(JSON.stringify({ error: { code: 429, message: "local budget/time exhausted (rate limit)" } }),
         { status: 200, headers: { "content-type": "application/json" } });
     }
     used++;

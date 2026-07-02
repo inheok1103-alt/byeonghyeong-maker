@@ -16,7 +16,7 @@ concurrency:
 jobs:
   think:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,6 +28,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }} # 선택(설정 시 gemini 우선)
           GAS_URL:       ${{ secrets.GAS_URL }}         # 선택(사용자 요청 큐)
           BUDGET: '120'
+          TIME_BUDGET_MIN: '11'   # 11분 지나면 LLM 차단 → 아카이브·커밋은 반드시 실행
         run: node server_brain.js
       - name: Commit results
         run: |

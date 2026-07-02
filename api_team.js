@@ -59,6 +59,7 @@
       var pbody = { model: "openai", messages: messages, temperature: opts.temperature == null ? 0.6 : opts.temperature, seed: opts.seed, private: true };
       var r = await fetch("https://text.pollinations.ai/openai", { method: "POST", headers: { "Content-Type": "application/json" }, signal: to.signal, body: JSON.stringify(pbody) });
       var d = await r.json();
+      if (d && d.error) { var pm = String((d.error && d.error.message) || d.error); if (/rate|quota|429|exhausted|budget|time/i.test(pm)) LAST_LIMITED = true; throw new Error("pollinations: " + pm.slice(0, 80)); }
       return (d.choices && d.choices[0] && d.choices[0].message && d.choices[0].message.content) || "";
     } finally { to.done(); }
   }
