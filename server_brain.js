@@ -76,6 +76,7 @@ async function main() {
   catch (_) { try { await T.loadTypeDB("types.json"); console.log("유형DB: types.json(폴백)"); } catch (_) {} }
   try { await T.loadDifficultyDB("difficulty.json"); } catch (_) {}
   try { if (T.loadReviewDB) await T.loadReviewDB("knowledge/review_core_v2.json"); } catch (_) {}
+  try { if (T.loadRaysKB) await T.loadRaysKB("knowledge/rays_drill_kb.json"); } catch (_) {}
   try { if (T.loadExaminerKB) { const kb = await T.loadExaminerKB("knowledge/examiner_kb_v1.json"); console.log("지식베이스:", JSON.stringify(kb)); } } catch (_) {}
   try { const ci = await T.loadCorpus("corpus/"); console.log("코퍼스:", JSON.stringify(ci)); } catch (_) {}
 
@@ -159,7 +160,8 @@ async function main() {
       projects.push({ ts: ts(), title: a.text, kind: a.kind, status: "완료", verdict: v.verdict, teachers: v.teachers || 4 });
       research.push({ date: day(), category: a.kind === "사용자요청" ? "사용자 요청 심의" : "자동 연구 회의", topic: a.text, summary: v.reason, rule: /반영/.test(v.verdict) ? (v.how || "") : "" });
       if (/반영/.test(v.verdict) && v.how) newRules.push({ rule: v.how, src: "회의:" + a.kind, ts: ts() });
-      if (a.kind === "사용자요청" && GAS) {
+      var validVerdict = v && v.verdict && !/보류|실패/.test(String(v.verdict));
+      if (a.kind === "사용자요청" && GAS && validVerdict) {
         try { await realFetch(GAS, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: "resolve", row: a.row, verdict: v.verdict, reason: v.reason }) }); }
         catch (_) {}
       }

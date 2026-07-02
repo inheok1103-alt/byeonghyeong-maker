@@ -101,10 +101,13 @@ button:active{transform:translateY(0)}
     <div class="row" style="margin-top:6px">
       <button class="ghost" onclick="loadSample()">📄 샘플 지문</button>
       <button class="ghost" onclick="loadCorpusPassage()" title="업로드된 원서 코퍼스에서 난이도에 맞는 지문을 가져옵니다">📚 원서 지문</button>
+      <button class="ghost" onclick="bankSave()" title="현재 지문을 내 지문뱅크에 누적 저장(브라우저 영구)">💾 뱅크 저장</button>
+      <button class="ghost" onclick="bankToggle()" title="누적된 지문 목록 열기/닫기">🗂 지문뱅크 <span id="bankCnt"></span></button>
       <button class="ghost" onclick="clearPassage()">지우기</button>
       <span class="note" id="charcount">0 단어</span>
       <span class="note" id="corpusStat"></span>
     </div>
+    <div id="bankList" style="display:none;margin-top:6px;border:1px dashed #cfdad6;border-radius:8px;padding:7px;font-size:8.8pt;max-height:180px;overflow:auto"></div>
     <div class="row" style="margin-top:8px"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
     <div id="suggest"></div>
     <h2 style="margin-top:12px">② 출제 유형 <button class="ghost noprint" style="font-size:8.5pt;padding:3px 9px" onclick="refreshDB()">🔄 유형 DB 새로고침</button> <span class="note" id="dbstat"></span></h2>
@@ -137,6 +140,25 @@ button:active{transform:translateY(0)}
     </div>
     <div id="bar" style="display:none;height:8px;background:#e3eae7;border-radius:5px;margin-top:11px;overflow:hidden"><div id="barfill" style="height:100%;width:0;background:linear-gradient(90deg,#0f766e,#2dd4bf);transition:width .35s"></div></div>
     <div class="log" id="log"></div>
+  </div>
+
+  <div class="card" id="mockCard">
+    <h2>📋 동형 모의고사 <span class="note">Ray's Drill 원칙: 지문당 1~3문항 · 객관+서술 혼합 · 조작은 공통지문에 반영 · 1지문 다문항 세트 포함</span></h2>
+    <div class="row" style="font-size:9pt">
+      문항 수:
+      <label><input type="radio" name="mockN" value="8" checked> 8(약식)</label>
+      <label><input type="radio" name="mockN" value="13"> 13(하프)</label>
+      <label><input type="radio" name="mockN" value="26"> 26(풀세트)</label>
+      &nbsp;·&nbsp; <label><input type="checkbox" id="mockSet" checked> 1지문 2~3문항 세트 포함</label>
+      &nbsp;·&nbsp; <label><input type="checkbox" id="mockEssay" checked> 서술형 25% 혼합</label>
+    </div>
+    <div class="row" style="font-size:9pt;margin-top:4px">
+      지문 소스: <label><input type="checkbox" id="srcBank" checked> 내 지문뱅크</label>
+      <label><input type="checkbox" id="srcCorpus" checked> 원서 코퍼스</label>
+      <label><input type="checkbox" id="srcCur" checked> 현재 입력 지문</label>
+      <span class="note">(뱅크에 지문을 쌓을수록 '우리 학교 범위' 동형이 됩니다)</span>
+    </div>
+    <div class="row" style="margin-top:7px"><button onclick="runMock()" id="mockGo">📋 동형 모의고사 생성</button><span class="note" id="mockStat"></span></div>
   </div>
 
   <div class="card" id="xformCard">
@@ -322,21 +344,32 @@ function analyze(){
 document.getElementById("mesh").onclick=function(){ T.healthCheck().then(function(l){ l.forEach(function(m){ if(m.ok) pulse(m.key); else { var g=document.getElementById("nu_"+m.key); if(g) g.querySelector("circle").setAttribute("fill","#555"); } }); }); };
 
 /* (구버전 logln/run은 삭제 — 아래 UX 블록의 최신판이 유일본) */
+function renderOneQ(q,no,ri){
+  var h='<div class="q"><div class="h">'+no+'. '+esc(q.type)+' <span class="chip">AI</span></div><div class="ins">'+esc(q.instruction)+'</div>';
+  if(q.passage&&!q._setChild) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
+  if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
+  var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
+  h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(q.explanation)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+'</div>';
+  if(ri!=null) h+='<div class="noprint" style="margin-top:4px"><button class="ghost" style="font-size:8.4pt;padding:2px 9px" onclick="reviewOne('+ri+')">🔍 정밀검수</button> <span id="rvs_'+ri+'" class="note"></span></div><div id="rvb_'+ri+'" class="noprint"></div>';
+  return h+'</div>';
+}
 function render(items){
   if(!items||!items.length){ document.getElementById("out").innerHTML='<div class="card">생성된 문항이 없습니다. 다시 시도해 주세요.</div>'; return; }
-  var h='<div class="card"><h2>📝 결과 — '+items.length+'문항</h2>';
-  // 인쇄물 완결성: 지문이 문항에 포함되지 않는 유형(주제·제목·요지·일치 등)이 있으면 원지문을 상단에 1회 인쇄
-  if(items.some(function(q){ return !q.passage; }) && typeof LASTPASSAGE==="string" && LASTPASSAGE.length>40){
+  var no=0, key=[]; var h='<div class="card"><h2>📝 결과</h2>';
+  // 인쇄물 완결성: 지문 없는 유형이 있으면 원지문을 상단에 1회 인쇄(세트 제외)
+  if(items.some(function(q){ return !q.passage&&!q.subItems; }) && typeof LASTPASSAGE==="string" && LASTPASSAGE.length>40){
     h+='<div style="font-weight:700;margin:4px 0 3px">[지문]</div><div class="pg">'+pgHtml(LASTPASSAGE)+'</div>';
   }
   items.forEach(function(q,i){
-    h+='<div class="q"><div class="h">'+(i+1)+'. '+esc(q.type)+' <span class="chip">AI</span></div><div class="ins">'+esc(q.instruction)+'</div>';
-    if(q.passage) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
-    if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
-    var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
-    h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(q.explanation)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+'</div>';
-    h+='<div class="noprint" style="margin-top:4px"><button class="ghost" style="font-size:8.4pt;padding:2px 9px" onclick="reviewOne('+i+')">🔍 정밀검수</button> <span id="rvs_'+i+'" class="note"></span></div><div id="rvb_'+i+'" class="noprint"></div></div>';
+    if(q.subItems&&q.subItems.length){
+      // 1지문 다문항 세트(Rays 원칙: 공통 지문 1회 + 하위 문항, 별도 지문 중복 금지)
+      var s=no+1, e=no+q.subItems.length;
+      h+='<div style="font-weight:800;margin:12px 0 3px">['+s+'~'+e+'] 다음 글을 읽고, 물음에 답하시오.</div><div class="pg">'+pgHtml(q.passage)+'</div>';
+      q.subItems.forEach(function(sq){ no++; sq._setChild=true; key.push({no:no,a:sq.answer,t:sq.type}); h+=renderOneQ(sq,no,null); });
+    } else { no++; key.push({no:no,a:q.answer,t:q.type}); h+=renderOneQ(q,no,i); }
   });
+  // 정답표(빠른답지)
+  h+='<div style="margin-top:12px;border-top:2px solid #223;padding-top:7px"><b>[정답표]</b> '+key.map(function(k){ return k.no+'.'+(k.a?(CIRC[k.a-1]||k.a):'서술'); }).join('  ')+'</div>';
   document.getElementById("out").innerHTML=h+'</div>';
 }
 function toggleAns(){ [].forEach.call(document.querySelectorAll(".ans"),function(a){a.classList.toggle("show");}); }
@@ -358,6 +391,74 @@ function reviewOne(i){
     if(hasFix){ window["_rvfix"+i]=r; h+='<button class="ghost noprint" style="margin-top:5px;font-size:8.4pt" onclick="applyReview('+i+')">✏ 수정안 반영(선지·정답·해설)</button>'; }
     h+='</div>'; if(b) b.innerHTML=h;
   }).catch(function(e){ GENERATING=false; if(s) s.textContent="검수 오류: "+e.message; });
+}
+/* ===== 지문 누적 뱅크(브라우저 영구): 쌓을수록 '우리 학교 범위' 동형 모의고사가 됨 ===== */
+function bankAll(){ try{ return JSON.parse(localStorage.getItem("passageBank")||"[]"); }catch(e){ return []; } }
+function bankPut(arr){ try{ localStorage.setItem("passageBank",JSON.stringify(arr.slice(0,200))); }catch(e){} bankBadge(); }
+function bankBadge(){ var el=document.getElementById("bankCnt"); if(el) el.textContent="("+bankAll().length+")"; }
+function bankSave(){
+  var p=document.getElementById("passage").value.trim();
+  if(p.length<60){ alert("지문을 60자 이상 입력 후 저장하세요."); return; }
+  var arr=bankAll();
+  if(arr.some(function(x){ return x.p===p; })){ alert("이미 뱅크에 있는 지문입니다."); return; }
+  arr.unshift({t:p.slice(0,52).replace(/\s+/g," ")+"…",p:p,ts:new Date().toISOString().slice(0,10)});
+  bankPut(arr); bankRender(); var b=document.getElementById("bankList"); if(b) b.style.display="";
+}
+function bankDel(i){ var arr=bankAll(); arr.splice(i,1); bankPut(arr); bankRender(); }
+function bankLoad(i){ var x=bankAll()[i]; if(!x) return; document.getElementById("passage").value=x.p; onPassage(); saveState(); window.scrollTo(0,0); }
+function bankRender(){
+  var el=document.getElementById("bankList"); if(!el) return; var arr=bankAll();
+  el.innerHTML=arr.length?arr.map(function(x,i){ return '<div style="display:flex;gap:6px;align-items:center;margin:2px 0"><span style="flex:1;color:#345">'+(i+1)+'. '+esc(x.t)+' <span style="color:#9ab;font-size:7.5pt">'+esc(x.ts||"")+' · '+(x.p.match(/[A-Za-z]+/g)||[]).length+'단어</span></span><button class="ghost" style="font-size:8pt;padding:1px 7px" onclick="bankLoad('+i+')">불러오기</button><button class="ghost" style="font-size:8pt;padding:1px 7px;color:#b03a2e" onclick="bankDel('+i+')">삭제</button></div>'; }).join(""):'<div class="note">아직 저장된 지문이 없습니다. 지문 입력 후 💾 뱅크 저장을 누르면 누적됩니다.</div>';
+}
+function bankToggle(){ var el=document.getElementById("bankList"); if(!el) return; bankRender(); el.style.display=(el.style.display==="none")?"":"none"; }
+bankBadge();
+/* ===== 동형 모의고사(Rays Drill 원칙): 지문당 1~3문항·객관+서술 혼합·세트 포함·유형/정답 분산 ===== */
+var MOCK_OBJ=["주제","제목","요지","빈칸(어구)","어법(밑줄)","어휘(밑줄)","내용불일치","밑줄함의","글의순서","문장삽입","무관문장","연결어빈칸","요약문AB","네모어법ABC","목적"];
+var MOCK_SUBJ=["조건영작","문장전환(태)","우리말해석","어법수정","첫글자어휘","이어쓰기영작","의견영작","요약빈칸영작"];
+function mockPassages(need){
+  var pool=[];
+  if(document.getElementById("srcBank").checked) bankAll().forEach(function(x){ pool.push(x.p); });
+  if(document.getElementById("srcCur").checked){ var cur=document.getElementById("passage").value.trim(); if(cur.length>=60&&pool.indexOf(cur)<0) pool.unshift(cur); }
+  if(document.getElementById("srcCorpus").checked){ var guard=0; while(pool.length<need&&guard++<need*4){ var cp=T.corpusPassage?T.corpusPassage({level:getLevel()}):null; if(cp&&cp.text&&cp.text.length>200&&pool.indexOf(cp.text)<0) pool.push(cp.text); } }
+  return pool.slice(0,need);
+}
+async function runMock(){
+  var N=+(document.querySelector('input[name=mockN]:checked')||{}).value||8;
+  var useSet=document.getElementById("mockSet").checked, useEssay=document.getElementById("mockEssay").checked;
+  var st=document.getElementById("mockStat"), go=document.getElementById("mockGo");
+  // 배정: 세트(3문항) 1개(13+에선 2개) + 나머지 지문당 1~2문항
+  var plan=[], remain=N;
+  var nSets=useSet?(N>=13?2:1):0;
+  for(var s=0;s<nSets&&remain>=3;s++){ plan.push({kind:"set",n:3}); remain-=3; }
+  while(remain>0){ var take=remain>=2&&Math.random()<0.4?2:1; plan.push({kind:"solo",n:take}); remain-=take; }
+  var pgs=mockPassages(plan.length);
+  if(pgs.length<plan.length){ alert("지문이 부족합니다("+pgs.length+"/"+plan.length+"). 지문뱅크에 지문을 저장하거나 원서 코퍼스를 켜세요."); return; }
+  go.disabled=true; go.textContent="생성 중…"; GENERATING=true;
+  document.getElementById("log").textContent=""; document.getElementById("log").style.display="block";
+  var items=[], objBag=MOCK_OBJ.slice().sort(function(){return Math.random()-0.5;}), subjBag=MOCK_SUBJ.slice().sort(function(){return Math.random()-0.5;});
+  var essayQuota=useEssay?Math.round(N*0.25):0, oi=0, si=0, done=0;
+  function nextObj(){ var t=objBag[oi++%objBag.length]; return t; }
+  function nextSubj(){ var t=subjBag[si++%subjBag.length]; return t; }
+  try{
+    for(var p=0;p<plan.length;p++){
+      var pg=pgs[p], pl=plan[p];
+      st.textContent="지문 "+(p+1)+"/"+plan.length+" 출제 중… ("+done+"/"+N+"문항)";
+      if(pl.kind==="set"){
+        logln("["+(p+1)+"] 1지문 3문항 세트 생성…");
+        var setQ=await T.generateOne(pg,"장문세트",{fast:true}).catch(function(){return null;});
+        if(setQ&&setQ.subItems&&setQ.subItems.length>=2){ items.push(setQ); done+=setQ.subItems.length; continue; }
+        pl={kind:"solo",n:2}; // 세트 실패 → 단독 2문항으로 강등
+      }
+      var types=[];
+      for(var k=0;k<pl.n;k++){ types.push((essayQuota>0&&(done+k)%4===3)?(essayQuota--,nextSubj()):nextObj()); }
+      var got=await T.generateExam(pg,types,{fast:true,onProgress:function(m){ if(/생성 실패|출제 중/.test(m)) logln("  "+m); }}).catch(function(){return [];});
+      (got||[]).forEach(function(q){ q.passage=q.passage||pg; items.push(q); done++; });
+    }
+    LASTITEMS=items; LASTPASSAGE="";
+    render(items);
+    st.textContent="완료 — "+done+"문항 (지문 "+plan.length+"개)";
+  }catch(e){ st.textContent="오류: "+e.message; }
+  GENERATING=false; go.disabled=false; go.textContent="📋 동형 모의고사 생성";
 }
 function applyReview(i){
   var r=window["_rvfix"+i], q=LASTITEMS[i]; if(!r||!q) return;
@@ -671,7 +772,8 @@ function initKeyFromHash(){ try{ var h=location.hash.replace(/^#/,""); if(!h) re
 }catch(e){} }
 initKeyFromHash(); initGeminiKey(); initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
 try{ if(T.loadReviewDB) T.loadReviewDB("knowledge/review_core_v2.json"); }catch(e){}   // 검수관 지식DB(15절차 계승·발전)
-try{ if(T.loadExaminerKB) T.loadExaminerKB("knowledge/examiner_kb_v1.json"); }catch(e){}   // 출제자 지식베이스(대원칙·유형별 KB → 모든 생성에 주입)
+try{ if(T.loadExaminerKB) T.loadExaminerKB("knowledge/examiner_kb_v1.json"); }catch(e){}
+try{ if(T.loadRaysKB) T.loadRaysKB("knowledge/rays_drill_kb.json"); }catch(e){}   // Rays Drill(오답DNA·금지패턴·동형모고 스펙)   // 출제자 지식베이스(대원칙·유형별 KB → 모든 생성에 주입)
 // 로드되면 교사 회의가 실시간으로 자동 시작(탭 열려 있는 동안 계속)
 // 실시간 회의 자동시작: Groq 키가 있을 때만(병렬·고속). 무키(Pollinations 직렬)면 출제 큐를 비워두기 위해 수동 시작.
 setTimeout(function(){ try{ var gk=(document.getElementById("groqKey").value||"").trim(); var gm=(document.getElementById("geminiKey").value||"").trim(); if(!LIVE.on && (gk||gm)) toggleLive(); else if(!gk&&!gm){ var b=document.getElementById("liveBtn"); if(b) b.title="Gemini/Groq 키를 넣으면 자동 시작됩니다(무키에선 출제 속도 보호를 위해 수동)"; } }catch(e){} }, 2500);
