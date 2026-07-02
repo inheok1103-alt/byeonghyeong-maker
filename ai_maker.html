@@ -60,6 +60,25 @@ button:active{transform:translateY(0)}
 .step b{color:var(--ink);font-size:10pt}
 .step.on{border-left-color:var(--ac);background:#e8f6f2}
 @media print{.noprint{display:none!important}.card{box-shadow:none;border:none}body{background:#fff}.foldarrow{display:none}}
+/* ===== Fable 개편(교육 중심 3법칙): 웜크림·뮤트 인디고·둥근 모서리·좌우 분할·스켈레톤·인사이트 ===== */
+:root{--ac:#4f46e5;--soft:#eef0fb;--sage:#5f8d6d}
+body{background:#faf8f4}
+.wrap{max-width:1380px}
+.card{border-radius:18px;border-color:#e7e4dc}
+button{border-radius:12px}
+textarea{border-radius:14px}
+.go:hover{box-shadow:0 6px 20px rgba(79,70,229,.35)}
+.types label.on{background:var(--ac);border-color:var(--ac)}
+#workLayout{display:grid;grid-template-columns:5fr 6fr;gap:14px;align-items:start}
+#leftPane,#rightPane{min-width:0}
+#rightPane{position:sticky;top:10px;max-height:calc(100vh - 20px);overflow-y:auto;padding:0 3px 30px 0}
+@media(max-width:1100px){#workLayout{display:block}#rightPane{position:static;max-height:none;overflow:visible}}
+@media print{#workLayout{display:block}#rightPane{position:static;max-height:none;overflow:visible}}
+.skel{height:78px;border-radius:14px;margin:10px 0;background:linear-gradient(90deg,#ecebe6 25%,#f8f7f3 50%,#ecebe6 75%);background-size:200% 100%;animation:sk 1.15s infinite}
+@keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
+.insight{margin-top:6px;background:#f4f3ff;border-left:3px solid var(--ac);border-radius:9px;padding:7px 11px;font-size:9.2pt;color:#3d3a72}
+.insight b{color:var(--ac)}
+.rp-head{font-size:10pt;font-weight:800;color:#4f46e5;margin:2px 0 4px;display:flex;align-items:center;gap:6px}
 </style>
 </head>
 <body>
@@ -95,9 +114,11 @@ button:active{transform:translateY(0)}
     <div id="roleChart" style="margin-top:10px"></div>
   </div>
 
+  <div id="workLayout">
+  <div id="leftPane">
   <div class="card noprint">
     <h2>① 영어 지문 붙여넣기</h2>
-    <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요..." oninput="onPassage()"></textarea>
+    <textarea id="passage" placeholder="여기에 변형하고 싶은 영어 지문을 복사해 붙여넣으세요. AI가 유형·난이도·변형도를 반영해 학습 흐름을 설계합니다." oninput="onPassage()"></textarea>
     <div class="row" style="margin-top:6px">
       <button class="ghost" onclick="loadSample()">📄 샘플 지문</button>
       <button class="ghost" onclick="loadCorpusPassage()" title="업로드된 원서 코퍼스에서 난이도에 맞는 지문을 가져옵니다">📚 원서 지문</button>
@@ -126,6 +147,12 @@ button:active{transform:translateY(0)}
       <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="중" checked onchange="saveState()"> 중(표준)</label>
       <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="상" onchange="saveState()"> 상(킬러)</label>
       <span class="note" id="lvstat"></span>
+      &nbsp;·&nbsp;<span style="font-size:9.5pt;font-weight:700" title="문제를 만들기 전에 본문 자체를 얼마나 바꿀지 정합니다">🧬 본문 변형도</span>
+      <select id="xformLevel" onchange="saveState()" style="padding:4px 8px;border:1.5px solid var(--line);border-radius:9px;font-size:9.5pt;font-family:inherit">
+        <option value="none">원본 유지</option>
+        <option value="word" title="핵심 어휘를 유의어로 교체(의미 보존)">유의어 변형</option>
+        <option value="sentence" title="문장 구조 재해석 — 태 전환·복문화(고난도)">구조적 재해석</option>
+      </select>
     </div>
     <div class="row" style="margin-top:8px">
       <span style="font-size:9.5pt;font-weight:700">🔁 상호작용</span>
@@ -138,9 +165,19 @@ button:active{transform:translateY(0)}
       <button class="ghost" onclick="toggleAns()">정답·해설 보기</button>
       <button class="ghost noprint" onclick="window.print()">인쇄/PDF</button>
     </div>
-    <div id="bar" style="display:none;height:8px;background:#e3eae7;border-radius:5px;margin-top:11px;overflow:hidden"><div id="barfill" style="height:100%;width:0;background:linear-gradient(90deg,#0f766e,#2dd4bf);transition:width .35s"></div></div>
-    <div class="log" id="log"></div>
   </div>
+  </div><!--/leftPane-->
+  <div id="rightPane">
+    <div class="rp-head noprint"><span style="width:9px;height:9px;background:#4f46e5;border-radius:50%;display:inline-block"></span> Fable 결과 워크스페이스 <span class="note" style="font-weight:400">원본 지문을 보면서 검토하세요(좌우 대조)</span></div>
+    <div id="bar" class="noprint" style="display:none;height:8px;background:#e8e6f8;border-radius:5px;margin:6px 0;overflow:hidden"><div id="barfill" style="height:100%;width:0;background:linear-gradient(90deg,#4f46e5,#8b7cf6);transition:width .35s"></div></div>
+    <div class="log noprint" id="log"></div>
+    <div class="card noprint" id="meetCard" style="display:none">
+      <h2>🛠 API 회의록 <span style="font-size:9pt;color:#888;font-weight:400">(오류 발생 시 자동 소집·개선)</span></h2>
+      <div id="meet"></div>
+    </div>
+    <div id="out"><div class="card noprint" style="text-align:center;color:#8a86a8;padding:34px 15px">✨ 왼쪽에서 지문과 문제 설계를 마치면, 이곳에 문항이 구성됩니다.<div class="note" style="margin-top:4px">생성 중에도 원본 지문이 왼쪽에 그대로 남아 검토가 쉽습니다.</div></div></div>
+  </div>
+  </div><!--/workLayout-->
 
   <div class="card" id="mockCard">
     <h2>📋 동형 모의고사 <span class="note">Ray's Drill 원칙: 지문당 1~3문항 · 객관+서술 혼합 · 조작은 공통지문에 반영 · 1지문 다문항 세트 포함</span></h2>
@@ -230,11 +267,6 @@ button:active{transform:translateY(0)}
     <div id="liveLog" style="max-height:340px;overflow:auto;font-size:8.6pt;line-height:1.55;background:#08161d;color:#cfe;border-radius:8px;padding:10px;font-family:ui-monospace,Menlo,Consolas,monospace;margin-top:6px">▶ '실시간 회의 시작'을 누르면 교사군집이 주제를 돌아가며 실시간으로 토론합니다.</div>
   </div>
 
-  <div class="card noprint" id="meetCard" style="display:none">
-    <h2>🛠 API 회의록 <span style="font-size:9pt;color:#888;font-weight:400">(오류 발생 시 자동 소집·개선)</span></h2>
-    <div id="meet"></div>
-  </div>
-
   <div class="card noprint" id="researchCard">
     <h2>🔬 자체 연구·학습 로그 <span style="font-size:9pt;color:#888;font-weight:400">(관찰 전용 · 출제방식을 스스로 연구할 때마다 누적)</span>
       <button class="ghost" style="font-size:8.5pt;padding:3px 9px;float:right" onclick="loadResearch()">🔄 새로고침</button></h2>
@@ -242,7 +274,6 @@ button:active{transform:translateY(0)}
     <div id="research" style="max-height:280px;overflow:auto"></div>
   </div>
 
-  <div id="out"></div>
 </div>
 
 <script src="api_team.js"></script>
@@ -349,7 +380,10 @@ function renderOneQ(q,no,ri){
   if(q.passage&&!q._setChild) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
   if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
   var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
-  h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(q.explanation)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+'</div>';
+  var exp=String(q.explanation||""), intent=""; var ix=exp.indexOf("【출제의도】");
+  if(ix>=0){ intent=exp.slice(ix+6).trim(); exp=exp.slice(0,ix).trim(); }
+  h+='<div class="ans"><b>정답: '+a+'</b> — '+esc(exp)+(q._audit?('  <span style="color:#888">['+esc(q._audit)+']</span>'):'')+'</div>';
+  if(intent) h+='<div class="insight">💡 <b>AI 출제 인사이트</b> — '+esc(intent)+'</div>';
   if(ri!=null) h+='<div class="noprint" style="margin-top:4px"><button class="ghost" style="font-size:8.4pt;padding:2px 9px" onclick="reviewOne('+ri+')">🔍 정밀검수</button> <span id="rvs_'+ri+'" class="note"></span></div><div id="rvb_'+ri+'" class="noprint"></div>';
   return h+'</div>';
 }
@@ -481,8 +515,8 @@ function getFast(){ var r=document.querySelector('input[name=speed]:checked'); r
 function getLevel(){ var r=document.querySelector('input[name=level]:checked'); return r?r.value:"중"; }
 function onSpeed(){ updateEstimate(); saveState(); }
 function updateEstimate(){ var n=chosen().length, fast=getFast(), per=fast?20:45; var el=document.getElementById("estimate"); el.textContent=n?("⏱ 예상 약 "+Math.max(1,Math.ceil(n*per/60))+"분 ("+(fast?"빠른":"정밀")+"·"+n+"유형)"):""; }
-function saveState(){ try{ localStorage.setItem("ai_state",JSON.stringify({p:document.getElementById("passage").value,t:chosen(),f:getFast(),l:getLevel()})); }catch(e){} }
-function restoreState(){ try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); if(s.p) document.getElementById("passage").value=s.p; if(s.f){ var r=document.querySelector('input[name=speed][value="1"]'); if(r)r.checked=true; } if(s.l){ var rl=document.querySelector('input[name=level][value="'+s.l+'"]'); if(rl)rl.checked=true; } if(s.t&&s.t.length){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=s.t.indexOf(i.value)>=0; i.parentNode.classList.toggle("on",i.checked); }); } }catch(e){} onPassage(); }
+function saveState(){ try{ localStorage.setItem("ai_state",JSON.stringify({p:document.getElementById("passage").value,t:chosen(),f:getFast(),l:getLevel(),x:(document.getElementById("xformLevel")||{}).value||"none"})); }catch(e){} }
+function restoreState(){ try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); if(s.p) document.getElementById("passage").value=s.p; if(s.f){ var r=document.querySelector('input[name=speed][value="1"]'); if(r)r.checked=true; } if(s.l){ var rl=document.querySelector('input[name=level][value="'+s.l+'"]'); if(rl)rl.checked=true; } if(s.x){ var xs=document.getElementById("xformLevel"); if(xs)xs.value=s.x; } if(s.t&&s.t.length){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=s.t.indexOf(i.value)>=0; i.parentNode.classList.toggle("on",i.checked); }); } }catch(e){} onPassage(); }
 
 function logln(m){ var L=document.getElementById("log"); L.style.display="block"; L.textContent+=(L.textContent?"\n":"")+m; L.scrollTop=L.scrollHeight; var mm=m.match(/\[(\d+)\/(\d+)\]/); if(mm){ document.getElementById("barfill").style.width=Math.round((+mm[1]-1)/(+mm[2])*100)+"%"; } pulseFromMsg(m); }
 
@@ -490,16 +524,24 @@ function run(){
   var passage=document.getElementById("passage").value.trim(), types=chosen();
   if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
   if(!types.length){ alert("출제 유형을 1개 이상 선택하세요."); return; }
-  LASTPASSAGE=passage; saveState();
+  saveState();
   GENERATING=true;   // 회의·자가학습 루프가 큐를 양보하도록
   var go=document.getElementById("go"); go.disabled=true; go.textContent="출제 중…";
-  document.getElementById("log").textContent=""; document.getElementById("out").innerHTML="";
+  document.getElementById("log").textContent="";
+  document.getElementById("out").innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   document.getElementById("meet").innerHTML=""; document.getElementById("meetCard").style.display="none";
   document.getElementById("bar").style.display="block"; document.getElementById("barfill").style.width="3%";
-  T.generateExam(passage, types, {onProgress:logln, fast:getFast(), level:getLevel(), refine:getRefine(), rounds:getRounds(), ensemble:getEnsemble()}).then(function(items){
+  var xl=(document.getElementById("xformLevel")||{}).value||"none";
+  var pre = (xl!=="none") ? (logln("🧬 본문 변형("+(xl==="word"?"유의어":"구조 재해석")+") 적용 중…"),
+      T.transformStaged(passage, xl, {}).then(function(x){ var v=(x&&x.variant&&x.variant.length>60)?x.variant:passage; if(v!==passage) logln("   ↳ 변형 본문으로 출제합니다"); return v; }).catch(function(){ return passage; }))
+    : Promise.resolve(passage);
+  pre.then(function(pg){
+    LASTPASSAGE=pg;
+    return T.generateExam(pg, types, {onProgress:logln, fast:getFast(), level:getLevel(), refine:getRefine(), rounds:getRounds(), ensemble:getEnsemble()});
+  }).then(function(items){
     LASTITEMS=items||[]; document.getElementById("barfill").style.width="100%"; render(items);
     go.disabled=false; go.textContent="🚀 고품질 출제"; setTimeout(function(){ document.getElementById("bar").style.display="none"; },900);
-  }).catch(function(e){ logln("오류: "+e.message); go.disabled=false; go.textContent="🚀 고품질 출제"; }).then(function(){ GENERATING=false; });
+  }).catch(function(e){ logln("오류: "+e.message); document.getElementById("out").innerHTML=""; go.disabled=false; go.textContent="🚀 고품질 출제"; }).then(function(){ GENERATING=false; });
 }
 function getRefine(){ var c=document.getElementById("refineChk"); return !!(c&&c.checked); }
 function getRounds(){ var r=document.getElementById("rounds"); return r?Math.max(1,Math.min(8,parseInt(r.value,10)||3)):3; }
