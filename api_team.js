@@ -751,18 +751,22 @@
       explanation: "[모범답안] " + sent.replace(/[.?!]*$/, "."),
       _trace: [{ line: 1, api: "llm", label: "정답문장 생성", ok: !!sent }, { line: 2, api: "code", label: "핵심어 추출", ok: !!key }, { line: 3, api: "trans", label: "MyMemory 번역", ok: !!ko }, { line: 4, api: "code", label: "조건박스 조립", ok: true }] };
   }
-  // ===== 어법수정(서술형): 오류 1곳 주입 → LanguageTool 검증 (오류 없는 지문 방지) =====
+  // ===== 어법수정(서술형): 어법(밑줄) 성공 패턴과 동일한 '코드 주입' — LLM은 구절·오형태만, 밑줄·주입·위치는 코드가 =====
   async function buildGrammarEdit(passage) {
-    for (var attempt = 0; attempt < 2; attempt++) {
+    for (var attempt = 0; attempt < 3; attempt++) {
       var gecEx = gecExamples(2);
-      var o = await llmJSON([{ role: "system", content: "고교 어법 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 포인트 5곳을 골라 각 앞에 ⓐⓑⓒⓓⓔ를 붙이고 <u>밑줄</u>하라. 그 중 '정확히 1곳'에만 실제 어법 오류를 넣어라(수일치·시제·태·준동사·관계사 등, 나머지 4곳은 정확). 오류가 없는 지문은 금지." + (gecEx ? (" 실제 학습자 오류 예시: " + gecEx) : "") + " JSON: {\"passage\":\"ⓐ<u>..</u> 5곳 표시 지문\",\"mark\":\"오류가 든 기호(ⓐ~ⓔ 중 하나)\",\"error\":\"틀린 표현\",\"correct\":\"올바른 표현\"}.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.3 : 0.45, timeout: 60000 });
-      if (o && o.passage && o.error && o.correct && String(o.error).trim() !== String(o.correct).trim()) {
-        var gb = uBlocks(o.passage), gi2 = idxContaining(gb, o.error);
-        if (gb.length >= 5 && gi2 < 0) continue;             // 오류가 밑줄 안에 실제로 없음(거짓오류) → 재시도
-        var gmark = (gi2 >= 0) ? CIRC5(gi2 + 1) : (o.mark || "");
-        var verified = ""; try { var g = await grammar(String(o.passage).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); if (g.length) verified = " (LanguageTool: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + " 확인)"; } catch (_) {}
-        return { type: "어법수정", instruction: "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.", passage: o.passage, choices: [], answer: 0,
-          explanation: "[모범답안] " + gmark + ": '" + o.error + "' → '" + o.correct + "'" + verified, _audit: (gi2 >= 0) ? "정답위치 코드검증됨" : "" };
+      var o = await llmJSON([{ role: "system", content: "고교 어법 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 짧은 구절(각 2~7단어, 문장 전체 복사 금지, 등장 순서)'로 고르고, 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법 오류만." + (gecEx ? (" 오류 유형 예: " + gecEx) : "") + " JSON: {\"phrases\":[\"짧은 구절 5개(등장순, 원문 그대로)\"],\"wrongIndex\":1~5,\"error\":\"그 구절의 틀린 형태\",\"correct\":\"원래 올바른 구절(=phrases의 해당 항목과 동일)\"}. JSON만.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
+      if (o && Array.isArray(o.phrases) && o.phrases.length >= 5 && o.error && String(o.error).trim() !== String(o.correct || "").trim()) {
+        var phr = o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); });
+        if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 8; })) continue;   // 문장통째 → 짧은 어구로 재시도
+        var wi = -1;
+        for (var pi = 0; pi < phr.length; pi++) { if (normTok(phr[pi]) === normTok(o.correct)) { wi = pi + 1; break; } }
+        if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
+        var mk = markWords(passage, phr, wi - 1, String(o.error).trim());
+        if (!mk || mk.count < 5) continue;
+        var verified = ""; try { var g = await grammar(String(mk.text).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); if (g.length) verified = " (LanguageTool: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + " 확인)"; } catch (_) {}
+        return { type: "어법수정", instruction: "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.", passage: mk.text, choices: [], answer: 0,
+          explanation: "[모범답안] " + CIRC5(wi) + ": '" + o.error + "' → '" + (o.correct || mk.orig) + "'" + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 모두 코드처리)" };
       }
     }
     return null;
@@ -1028,8 +1032,12 @@
   async function buildIrrelevant(passage) {
     var ss = splitSentences(passage);
     if (ss.length < 5) return null;
-    var o = await llmJSON([{ role: "system", content: "무관문장 출제자. JSON만." }, { role: "user", content: "다음 글의 소재·핵심 명사는 재사용하되 글의 논지에서는 벗어난 '그럴듯한 무관 문장' 1개를 영어로 만들어라(너무 무관하면 쉬워짐 — 미세하게 이탈). JSON: {\"sentence\":\"영어 한 문장\"}.\n\n" + passage }], { temperature: 0.6, timeout: 55000 });
-    if (!o || !o.sentence || String(o.sentence).split(" ").length < 6) return null;
+    var o = null;
+    for (var att = 0; att < 3 && !o; att++) {   // 내부 재시도(LLM 1콜짜리 재료 수급의 변동성 흡수)
+      var r0 = await llmJSON([{ role: "system", content: "무관문장 출제자. JSON만." }, { role: "user", content: "다음 글의 소재·핵심 명사는 재사용하되 글의 논지에서는 벗어난 '그럴듯한 무관 문장' 1개를 영어로 만들어라(너무 무관하면 쉬워짐 — 미세하게 이탈). JSON: {\"sentence\":\"영어 한 문장\"}.\n\n" + passage }], { temperature: att ? 0.75 : 0.6, timeout: 55000 });
+      if (r0 && r0.sentence && String(r0.sentence).split(" ").length >= 5) o = r0;
+    }
+    if (!o) return null;
     var body = ss.slice(1, 5); if (body.length < 4) return null;
     var pos = 1 + rint(4);   // 1~4번째 사이 + 삽입 후 ①~⑤
     var withIt = body.slice(0, pos).concat([String(o.sentence).trim()]).concat(body.slice(pos));
@@ -1108,10 +1116,16 @@
   }
   // 영영풀이 일치: Free Dictionary 정의 4개 정상 + 1개는 다른 단어 정의로 스왑(코드 제어)
   async function buildEngdefMatch(passage) {
-    var cw = contentWords(passage).filter(function (w) { return w.length >= 4; }).slice(0, 10);
-    var defs = [];
+    var cw = contentWords(passage).filter(function (w) { return w.length >= 4; }).slice(0, 16);
+    var defs = [], seen = {};
     for (var i = 0; i < cw.length && defs.length < 6; i++) {
-      try { var d = await dict(cw[i]); if (d && d.def && d.def.length > 12) defs.push({ w: cw[i], def: d.def }); } catch (_) {}
+      var w0 = String(cw[i]).toLowerCase();
+      // 굴절형 정규화 시도: 원형 우선 조회(사전 적중률↑)
+      var cands = [w0]; if (/ies$/.test(w0)) cands.push(w0.replace(/ies$/, "y")); if (/es$/.test(w0)) cands.push(w0.replace(/es$/, "")); if (/s$/.test(w0)) cands.push(w0.replace(/s$/, "")); if (/ed$/.test(w0)) cands.push(w0.replace(/ed$/, ""), w0.replace(/d$/, "")); if (/ing$/.test(w0)) cands.push(w0.replace(/ing$/, ""), w0.replace(/ing$/, "e"));
+      for (var c = 0; c < cands.length; c++) {
+        if (seen[cands[c]]) continue; seen[cands[c]] = 1;
+        try { var d = await dict(cands[c]); if (d && d.def && d.def.length > 12) { defs.push({ w: cw[i], def: d.def }); break; } } catch (_) {}
+      }
     }
     if (defs.length < 6) return null;
     var five = defs.slice(0, 5), spare = defs[5];
