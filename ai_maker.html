@@ -137,6 +137,7 @@ body.simple .expert{display:none!important}
     <button class="mtab on" id="mtab_gen" onclick="setMode('gen')">🚀 일반 출제</button>
     <button class="mtab" id="mtab_mock" onclick="setMode('mock')">📋 동형 모의고사</button>
     <button class="mtab" id="mtab_xf" onclick="setMode('xf')">🔄 지문 변형</button>
+    <button class="mtab" id="mtab_agent" onclick="setMode('agent')">🤖 에이전트</button>
   </div>
   <div class="card noprint">
     <h2>① 영어 지문 붙여넣기</h2>
@@ -204,6 +205,15 @@ body.simple .expert{display:none!important}
     <div id="out"><div class="card noprint" style="text-align:center;color:#8a86a8;padding:34px 15px">✨ 왼쪽에서 지문과 문제 설계를 마치면, 이곳에 문항이 구성됩니다.<div class="note" style="margin-top:4px">생성 중에도 원본 지문이 왼쪽에 그대로 남아 검토가 쉽습니다.</div></div></div>
   </div>
   </div><!--/workLayout-->
+
+  <div class="card" id="agentCard" style="display:none">
+    <h2>🤖 출제 에이전트 <span class="note">목표만 말하면 계획→생성→검수→자가수정까지 스스로. 검수 통과분만 납품</span></h2>
+    <textarea id="agentGoal" style="min-height:64px" placeholder="예: 상 난이도로 6문항 만들어줘. 서술형 2개 포함, 빈칸이랑 어법은 꼭 넣고.&#10;예: 이 지문으로 내신 기출 스타일 4문항, 전부 객관식으로."></textarea>
+    <div class="row" style="margin-top:7px">
+      <button onclick="runAgent()" id="agentGo">🤖 에이전트에게 맡기기</button>
+      <span class="note">문항마다 검수관(코드검증+선지판정+솔버 3표)을 통과해야 결과에 실립니다 — 일반 출제보다 느리지만 확실합니다</span>
+    </div>
+  </div>
 
   <div class="card" id="mockCard">
     <h2>📋 동형 모의고사 <span class="note">Ray's Drill 원칙: 지문당 1~3문항 · 객관+서술 혼합 · 조작은 공통지문에 반영 · 1지문 다문항 세트 포함</span></h2>
@@ -308,8 +318,8 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260702e"></script>
-<script src="addon_key_guard.js?v=20260702e"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
+<script src="api_team.js?v=20260703a"></script>
+<script src="addon_key_guard.js?v=20260703a"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
@@ -480,10 +490,11 @@ function progMark(t,st,d){
 }
 /* 모드 탭: 일반/동형모고/지문변형 — 카드 통폐합 */
 function setMode(m){
-  ["gen","mock","xf"].forEach(function(k){ var b=document.getElementById("mtab_"+k); if(b) b.classList.toggle("on",k===m); });
-  var mc=document.getElementById("mockCard"), xc=document.getElementById("xformCard");
+  ["gen","mock","xf","agent"].forEach(function(k){ var b=document.getElementById("mtab_"+k); if(b) b.classList.toggle("on",k===m); });
+  var mc=document.getElementById("mockCard"), xc=document.getElementById("xformCard"), ac=document.getElementById("agentCard");
   if(mc) mc.style.display=(m==="mock")?"":"none";
   if(xc) xc.style.display=(m==="xf")?"":"none";
+  if(ac) ac.style.display=(m==="agent")?"":"none";
 }
 /* 뇌 관찰실: 관찰카드 7종을 탭 하나로 */
 var OBS=[["meshCard","🕸 신경망"],["brain3dCard","🧠 3D 뇌"],["brainCard","💭 브레인"],["govCard","🏛 운영"],["archiveCard","📚 아카이브"],["liveCard","🔴 실시간 회의"],["researchCard","🔬 연구 로그"]];
@@ -500,7 +511,30 @@ function obsInit(){
 /* 좌측 모드 카드 이동(동형모고·지문변형을 컨트롤러 아래로) */
 function modeInit(){
   var lp=document.getElementById("leftPane");
-  ["mockCard","xformCard"].forEach(function(id){ var el=document.getElementById(id); if(el&&lp){ lp.appendChild(el); el.style.display="none"; } });
+  ["agentCard","mockCard","xformCard"].forEach(function(id){ var el=document.getElementById(id); if(el&&lp){ lp.appendChild(el); el.style.display="none"; } });
+}
+/* ===== 출제 에이전트 실행 ===== */
+function runAgent(){
+  var passage=document.getElementById("passage").value.trim();
+  var goal=(document.getElementById("agentGoal").value||"").trim();
+  if(passage.length<40){ alert("지문을 먼저 입력하세요(40자 이상)."); return; }
+  if(goal.length<5){ alert("목표를 입력하세요. 예: 상 난이도 6문항, 서술형 2개 포함"); return; }
+  var pgs=parsePassages(); if(pgs.length>1){ alert("에이전트 모드는 한 번에 한 지문을 다룹니다(다중 지문은 일반 출제에서)."); return; }
+  var go=document.getElementById("agentGo"); go.disabled=true; go.textContent="🤖 작업 중…"; GENERATING=true;
+  LASTPASSAGE=passage;
+  document.getElementById("log").textContent=""; document.getElementById("log").style.display="block";
+  document.getElementById("out").innerHTML='<div class="skel"></div><div class="skel"></div>';
+  var STREAMN=0;
+  function onItemLive(q){ STREAMN++; var out=document.getElementById("out");
+    if(STREAMN===1) out.innerHTML='<div class="card"><h2>🤖 에이전트 결과 <span class="note">(검수 통과분이 완성되는 대로 표시)</span></h2><div id="liveItems"></div><div class="skel"></div></div>';
+    var li=document.getElementById("liveItems"); if(li) li.insertAdjacentHTML("beforeend", qHtml(q, STREAMN-1, STREAMN, false));
+  }
+  T.agentRun(passage, goal, {onProgress:logln, onType:progMark, onItem:onItemLive, onPlanned:function(plan){ progInit(plan.types); }})
+  .then(function(r){
+    if(!r||!r.items||!r.items.length){ document.getElementById("out").innerHTML='<div class="card">에이전트가 검수를 통과한 문항을 만들지 못했습니다. 목표를 조금 바꿔 다시 시도해 주세요.</div>'; }
+    else { LASTITEMS=r.items; render(r.items); r.items.forEach(function(q){ if(q._ms) recTime(q.type,q._ms); }); }
+    go.disabled=false; go.textContent="🤖 에이전트에게 맡기기"; GENERATING=false;
+  }).catch(function(e){ logln("에이전트 오류: "+e.message); go.disabled=false; go.textContent="🤖 에이전트에게 맡기기"; GENERATING=false; });
 }
 /* ===== 다중 지문 파서(무제한): === 줄 또는 빈 줄 2개로 구분 ===== */
 function parsePassages(){

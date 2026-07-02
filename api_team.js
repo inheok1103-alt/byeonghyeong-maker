@@ -300,6 +300,7 @@
       }
     }
     if (!String(q.explanation || "").trim()) f.push("해설 누락");
+    if (/[一-鿿぀-ヿ]/.test(String(q.instruction || "") + String(q.explanation || ""))) f.push("발문/해설에 중국어·일본어 문자 혼입(한국어로 교체 필요)");
     if (q.passage && original) {
       var plain = String(q.passage).replace(/<[^>]+>/g, "").replace(/[ⓐ-ⓔ]/g, "").replace(/\s+/g, " ").trim();
       var orig = String(original).replace(/\s+/g, " ").trim();
@@ -711,7 +712,7 @@
     type = type || "서술형";
     // 무거운 규칙을 system에 주입하면 소형모델이 빈 응답을 내므로, 규칙은 user에 짧게만 넣고 noRule로 호출
     var ess = (TYPERULE || "").replace(/\s+/g, " ").trim().slice(0, 130);
-    var sys = "너는 고교 내신 영어 서술형 출제자다. 출력은 아래 두 구획 형식만 쓴다(JSON·마크다운·여분 설명 금지).";
+    var sys = "너는 고교 내신 영어 서술형 출제자다. 발문은 순수 한국어(+영어 인용)로만 쓴다 — 중국어·일본어 문자 금지. 출력은 아래 두 구획 형식만 쓴다(JSON·마크다운·여분 설명 금지).";
     var fmt = "정확히 이 형식만 출력:\n[발문]\n(제시문·조건·주어진 단어/어구를 포함한 한국어 발문, 여러 줄 가능)\n[정답]\n(모범답안 — 영작형은 영어 문장, 해석형은 우리말)";
     for (var i = 0; i < 4; i++) {
       var hint = (i < 2 && ess) ? ("\n(출제 지침 요약: " + ess + ")") : ""; // 1~2차만 지침, 이후 무지침으로 출제 보장
@@ -1442,6 +1443,50 @@
     return out;
   }
 
+  // ===== 출제 에이전트(무료 스택 에이전틱 루프): 목표 → 계획 → 생성 → 검수 → 자가수정 → 납품 =====
+  async function agentPlan(goal, passage) {
+    var PENDING = ["도표일치", "지칭추론", "어법복수선택", "유의어대치부적절", "혼합통합형", "문장전환(태)", "문장전환(분사구문)", "문장전환(관계사)", "문장전환(가정법)", "강조·도치전환"];
+    var avail = Object.keys(TYPE_INSTR).filter(function (t) { return PENDING.indexOf(t) < 0; }); if (!avail.length) avail = BEST_TYPES.slice();
+    var o = await llmJSON([{ role: "system", content: "너는 고교 영어 출제 계획 수립자다. JSON만." }, { role: "user", content: "사용 가능 유형: " + avail.join(", ") + "\n\n지문(특성 판단용):\n" + String(passage).slice(0, 900) + "\n\n출제 목표: \"" + goal + "\"\n\n목표를 해석해 계획을 세워라. 유형은 반드시 '사용 가능 유형' 목록에서 고르고, 목표에 유형·문항수 지정이 없으면 지문 특성에 맞게 4~6문항을 선정하라(서술형 요구 시 서술 계열 포함). JSON: {\"types\":[\"유형명 배열\"],\"level\":\"하|중|상\",\"note\":\"선정 근거 한 줄\"}. JSON만." }], { noRule: true, temperature: 0.3, timeout: 60000 });
+    if (!o || !Array.isArray(o.types) || !o.types.length) return null;
+    o.types = o.types.map(String).filter(function (t) { return avail.indexOf(t) >= 0; }).slice(0, 26);
+    if (!o.types.length) return null;
+    return o;
+  }
+  async function agentRun(passage, goal, opts) {
+    opts = opts || {}; var onP = opts.onProgress, onT = opts.onType || function () {};
+    log(onP, "🤖 에이전트 가동 — 목표: " + goal);
+    log(onP, "① 계획 수립 중(지문 분석 + 목표 해석)…");
+    var plan = await agentPlan(goal, passage);
+    if (!plan) { log(onP, "   ✗ 계획 수립 실패 — 목표를 조금 더 구체적으로 적어주세요"); return null; }
+    log(onP, "📋 계획: " + plan.types.join(", ") + " · 난이도 " + (plan.level || "중") + (plan.note ? (" — " + plan.note) : ""));
+    if (opts.onPlanned) try { opts.onPlanned(plan); } catch (_) {}
+    var out = [];
+    for (var i = 0; i < plan.types.length; i++) {
+      var t = plan.types[i], q = null, verdict = "", t0 = Date.now();
+      onT(t, "start");
+      for (var att = 0; att < 3 && !q; att++) {
+        if (att > 0) onT(t, "retry", att + 1);
+        var cand = await generateOne(passage, t, { fast: opts.fast !== false, level: plan.level, onProgress: onP }).catch(function () { return null; });
+        if (!cand) { log(onP, "   ✗ " + t + " 생성 실패(" + (att + 1) + "차) — 재시도"); continue; }
+        log(onP, "   🔍 검수관 투입(" + t + ") — 코드검증→선지 독립판정→솔버 교차…");
+        var rv = await reviewItem(cand, passage, {}).catch(function () { return null; });
+        verdict = rv ? rv.verdict : "검수 불가(그대로 납품 보류)";
+        if (rv && /불가/.test(String(rv.verdict))) {
+          var fixed = false;
+          if (rv.fixAnswer >= 1 && rv.fixAnswer <= 5 && cand.choices && cand.choices.length >= 4) { cand.answer = rv.fixAnswer; fixed = true; }
+          if (rv.fixChoices && rv.fixChoices.length >= 4) { cand.choices = rv.fixChoices.slice(0, 5).map(String); fixed = true; }
+          if (rv.fixExp && String(rv.fixExp).length > 5) { cand.explanation = String(rv.fixExp); fixed = true; }
+          if (fixed) { cand._audit = ((cand._audit ? cand._audit + " · " : "") + "에이전트: 검수 수정안 적용 후 통과"); verdict = "수정 후 사용 가능(수정 적용됨)"; q = cand; log(onP, "   ✏ 검수 수정안 적용 → 통과"); }
+          else { log(onP, "   ♻ 검수 '사용 불가'(" + String(rv.multi || (rv.errors && rv.errors[0] && rv.errors[0].issue) || "").slice(0, 50) + ") → 재생성"); continue; }
+        } else { q = cand; }
+      }
+      if (q) { q._verdict = verdict; q._ms = Date.now() - t0; if (opts.onItem) try { opts.onItem(q, i); } catch (_) {} out.push(q); onT(t, "done", q._ms); log(onP, "   ✅ " + t + " 확정 — 검수 판정: " + verdict); }
+      else { onT(t, "fail"); log(onP, "   ✗ " + t + " 3차 시도 후 포기(불량 문항은 납품하지 않음)"); }
+    }
+    log(onP, "🤖 에이전트 완료 — " + out.length + "/" + plan.types.length + "문항 · 전 문항 검수 게이트 통과분만 납품");
+    return { items: out, plan: plan };
+  }
   // 단일 문항 재생성(개별 문항 🔄용)
   async function generateOne(passage, type, opts) {
     opts = opts || {}; USE_ENSEMBLE = !!opts.ensemble;
@@ -1605,7 +1650,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
-    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage,
+    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan,
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
