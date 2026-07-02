@@ -72,7 +72,7 @@
   function pollSerial(messages, opts) {
     var o = Object.assign({}, opts, { forceProvider: "pollinations" });
     var p = _llmQ.then(function () { return llmWithRetry(messages, o); }, function () { return llmWithRetry(messages, o); });
-    _llmQ = p.then(function () { return delay(400); }, function () { return delay(400); });
+    _llmQ = p.then(function () { return delay(300); }, function () { return delay(300); });
     return p;
   }
   // 연결된 공급자 폴백 체인: Gemini(키) → Groq(키) → Pollinations(무료). 앞이 실패/레이트리밋이면 다음으로.
@@ -1313,36 +1313,66 @@
   }
   function stampIntent(q) { if (!q) return q; q.intent = intentFor(q); if (String(q.explanation || "").indexOf("【출제의도】") < 0) q.explanation = String(q.explanation || "") + "\n【출제의도】 " + q.intent; return q; }
 
+  // 자료수집 캐시: 같은 지문이면 재수집 생략(유형 여러 번 출제 시 10~15초 절약)
+  var CTXCACHE = {};
+  async function cachedContext(passage, onP) {
+    var k = passage.length + ":" + passage.slice(0, 64);
+    if (CTXCACHE[k]) { log(onP, "■ 자료 수집: 캐시 재사용(같은 지문)"); return CTXCACHE[k]; }
+    var c = await prepContext(passage, onP).catch(function () { return {}; });
+    CTXCACHE[k] = c; var ks = Object.keys(CTXCACHE); if (ks.length > 4) delete CTXCACHE[ks[0]];
+    return c;
+  }
   async function generateExam(passage, types, opts) {
-    opts = opts || {}; var onP = opts.onProgress, out = []; USE_ENSEMBLE = !!opts.ensemble;
+    opts = opts || {}; var onP = opts.onProgress, onT = opts.onType || function () {}, USE = null; USE_ENSEMBLE = !!opts.ensemble;
     log(onP, "■ 1단계: 자료 수집반 가동(전 API)…");
-    var ctx = await prepContext(passage, onP).catch(function () { return {}; });
+    var ctx = await cachedContext(passage, onP);
     if (ctx.topic) log(onP, "   주제어=" + ctx.topic + (ctx.bg ? " · 위키 배경 확보" : "") + " · 반의어 " + Object.keys(ctx.ant || {}).length + "쌍");
     var bopts = { onProgress: onP, ctx: ctx, fast: opts.fast };
     var maxTry = opts.fast ? 3 : 4;
-    log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…");
-    for (var i = 0; i < types.length; i++) {
-      var t = types[i], b = builderFor(t), got = null;
-      RUNHINT = ""; var kbT = kbFor(t); TYPERULE = ((TYPE_GUIDE[t] || "") + (kbT ? (" [KB지침] " + kbT) : "")).slice(0, 950); setLevelRule(t, opts.level);
-      for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
-        log(onP, "[" + (i + 1) + "/" + types.length + "] " + t + (attempt > 1 ? " (개선 재시도 " + attempt + ")" : "") + " 출제 중…");
-        try { var q = await b(passage, bopts, t); if (q && q.instruction) got = q; } catch (e) {}
-        if (!got && attempt === 1) {
-          record("출제실패", t, "1차 시도 실패");
-          log(onP, "   ⚑ API 회의 소집(" + t + ") — 오류 토론·개선…");
-          var mt = await convene(t, "1차 시도 실패").catch(function () { return { hint: "" }; });
-          RUNHINT = mt.hint || "";
-          if (mt.hint) log(onP, "   ↳ 합의 개선지시: " + mt.hint);
+    // 병렬: 키 공급자(Gemini/Groq)는 동시 3유형, 무키(Pollinations 직렬큐)는 1유형
+    var PAR = (provider() !== "pollinations") ? Math.min(3, types.length) : 1;
+    log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…" + (PAR > 1 ? (" ⚡병렬 " + PAR + "유형 동시") : ""));
+    var idx = 0, results = new Array(types.length);
+    async function work() {
+      while (true) {
+        var i = idx++; if (i >= types.length) return;
+        var t = types[i], b = builderFor(t), got = null, t0 = Date.now();
+        if (PAR === 1) { RUNHINT = ""; var kbT = kbFor(t); TYPERULE = ((TYPE_GUIDE[t] || "") + (kbT ? (" [KB지침] " + kbT) : "")).slice(0, 950); setLevelRule(t, opts.level); }
+        onT(t, "start");
+        for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
+          if (attempt > 1) onT(t, "retry", attempt);
+          log(onP, "〔" + t + "〕" + (attempt > 1 ? "재시도 " + attempt + " " : "") + "출제 중…");
+          try { var q = await b(passage, bopts, t); if (q && q.instruction) got = q; } catch (e) {}
+          if (!got && attempt === 1 && !opts.fast) {   // 빠른 모드에선 회의 생략(즉시 재시도) — 속도
+            record("출제실패", t, "1차 시도 실패");
+            log(onP, "   ⚑ API 회의 소집(" + t + ") — 오류 토론·개선…");
+            var mt = await convene(t, "1차 시도 실패").catch(function () { return { hint: "" }; });
+            RUNHINT = mt.hint || "";
+            if (mt.hint) log(onP, "   ↳ 합의 개선지시: " + mt.hint);
+          }
         }
+        if (PAR === 1) { RUNHINT = ""; TYPERULE = ""; LEVELRULE = ""; }
+        if (got) {
+          if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
+          if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 }); }
+          stampIntent(got); got._ms = Date.now() - t0;
+          results[i] = got;
+          onT(t, "done", got._ms);
+          log(onP, "   ✓ " + t + " 완료(" + Math.round(got._ms / 1000) + "s)");
+        } else { record("최종실패", t, "재시도 실패"); onT(t, "fail"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
       }
-      RUNHINT = ""; TYPERULE = ""; LEVELRULE = "";
-      if (got) {
-        if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
-        if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 }); }
-        stampIntent(got);
-        out.push(got);
-      } else { record("최종실패", t, "3회 실패"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
     }
+    if (PAR > 1) {
+      // 병렬 그룹: 전역 TYPERULE 레이스 방지 — 선택 유형들의 규칙을 결합해 한 번에 주입(각 빌더 프롬프트가 자기 유형만 사용)
+      TYPERULE = types.map(function (tt) { var kb = kbFor(tt); return "〔" + tt + "〕" + (TYPE_GUIDE[tt] || "").slice(0, 200) + (kb ? (" " + kb.slice(0, 140)) : ""); }).join(" / ").slice(0, 1900);
+      setLevelRule(types[0], opts.level);
+      var workers = []; for (var w = 0; w < PAR; w++) workers.push(work());
+      await Promise.all(workers);
+      TYPERULE = ""; LEVELRULE = ""; RUNHINT = "";
+    } else {
+      await work();
+    }
+    var out = results.filter(Boolean);
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
   }
@@ -1350,7 +1380,7 @@
   // 단일 문항 재생성(개별 문항 🔄용)
   async function generateOne(passage, type, opts) {
     opts = opts || {}; USE_ENSEMBLE = !!opts.ensemble;
-    var ctx = opts.ctx || await prepContext(passage).catch(function () { return {}; });
+    var ctx = opts.ctx || await cachedContext(passage, opts.onProgress);
     var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 950); setLevelRule(type, opts.level);
     var q = null; for (var _try = 0; _try < 3 && !q; _try++) { try { q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type); } catch (_e) { q = null; } }
     TYPERULE = ""; LEVELRULE = "";

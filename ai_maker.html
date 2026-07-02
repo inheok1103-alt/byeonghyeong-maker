@@ -78,6 +78,19 @@ textarea{border-radius:14px}
 @keyframes sk{0%{background-position:200% 0}100%{background-position:-200% 0}}
 .insight{margin-top:6px;background:#f4f3ff;border-left:3px solid var(--ac);border-radius:9px;padding:7px 11px;font-size:9.2pt;color:#3d3a72}
 .insight b{color:var(--ac)}
+.modes{display:flex;gap:6px;margin:0 0 10px}
+.mtab{flex:1;padding:10px 8px;font-size:10pt;border-radius:14px;background:#fff;border:1.5px solid #e2ddd2;color:#666}
+.mtab.on{background:var(--ac);color:#fff;border-color:var(--ac);box-shadow:0 4px 12px rgba(79,70,229,.25)}
+.obstabs{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px}
+.otab{font-size:8.8pt;padding:6px 11px;border-radius:16px;background:#f2f0ea;color:#555;border:1px solid #e4dfd4}
+.otab.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.prow{display:flex;align-items:center;gap:7px;font-size:9.2pt;padding:3px 2px;color:#444}
+.prow .pst{color:#8a86a8;font-size:8.6pt;margin-left:auto}
+.pdot{width:10px;height:10px;border-radius:50%;flex:0 0 auto;background:#d7d2c6}
+.pdot.run{background:conic-gradient(var(--ac) 0 70%,#ddd 70% 100%);animation:spin 1s linear infinite}
+.pdot.ok{background:#16a34a}.pdot.bad{background:#dc2626}
+@keyframes spin{to{transform:rotate(360deg)}}
+#prog{background:#fff;border:1px solid #e7e4dc;border-radius:14px;padding:9px 13px;margin:6px 0}
 .rp-head{font-size:10pt;font-weight:800;color:#4f46e5;margin:2px 0 4px;display:flex;align-items:center;gap:6px}
 </style>
 </head>
@@ -116,6 +129,11 @@ textarea{border-radius:14px}
 
   <div id="workLayout">
   <div id="leftPane">
+  <div class="modes noprint">
+    <button class="mtab on" id="mtab_gen" onclick="setMode('gen')">🚀 일반 출제</button>
+    <button class="mtab" id="mtab_mock" onclick="setMode('mock')">📋 동형 모의고사</button>
+    <button class="mtab" id="mtab_xf" onclick="setMode('xf')">🔄 지문 변형</button>
+  </div>
   <div class="card noprint">
     <h2>① 영어 지문 붙여넣기</h2>
     <textarea id="passage" placeholder="여기에 변형하고 싶은 영어 지문을 복사해 붙여넣으세요. AI가 유형·난이도·변형도를 반영해 학습 흐름을 설계합니다." oninput="onPassage()"></textarea>
@@ -137,8 +155,8 @@ textarea{border-radius:14px}
     <div id="pipes"></div>
     <div class="row" style="margin-top:11px">
       <span style="font-size:9.5pt;font-weight:700">⚡ 속도</span>
-      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="0" checked onchange="onSpeed()"> 정밀(최고품질)</label>
-      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="1" onchange="onSpeed()"> 빠른(라인 절반·2배↑)</label>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="1" checked onchange="onSpeed()"> ⚡빠른(권장·병렬)</label>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="0" onchange="onSpeed()"> 정밀(라인 2배·느림)</label>
       <span class="note" id="estimate"></span>
     </div>
     <div class="row" style="margin-top:8px">
@@ -170,6 +188,7 @@ textarea{border-radius:14px}
   <div id="rightPane">
     <div class="rp-head noprint"><span style="width:9px;height:9px;background:#4f46e5;border-radius:50%;display:inline-block"></span> Fable 결과 워크스페이스 <span class="note" style="font-weight:400">원본 지문을 보면서 검토하세요(좌우 대조)</span></div>
     <div id="bar" class="noprint" style="display:none;height:8px;background:#e8e6f8;border-radius:5px;margin:6px 0;overflow:hidden"><div id="barfill" style="height:100%;width:0;background:linear-gradient(90deg,#4f46e5,#8b7cf6);transition:width .35s"></div></div>
+    <div id="prog" class="noprint" style="display:none"></div>
     <div class="log noprint" id="log"></div>
     <div class="card noprint" id="meetCard" style="display:none">
       <h2>🛠 API 회의록 <span style="font-size:9pt;color:#888;font-weight:400">(오류 발생 시 자동 소집·개선)</span></h2>
@@ -266,6 +285,12 @@ textarea{border-radius:14px}
       <button class="ghost noprint" id="liveBtn" style="font-size:8.5pt;padding:2px 10px;float:right" onclick="toggleLive()">▶ 실시간 회의 시작</button></h2>
     <div id="liveLog" style="max-height:340px;overflow:auto;font-size:8.6pt;line-height:1.55;background:#08161d;color:#cfe;border-radius:8px;padding:10px;font-family:ui-monospace,Menlo,Consolas,monospace;margin-top:6px">▶ '실시간 회의 시작'을 누르면 교사군집이 주제를 돌아가며 실시간으로 토론합니다.</div>
   </div>
+
+  <div class="card noprint" id="obsCard">
+    <h2>🧠 뇌 관찰실 <span class="note">신경망 · 3D 뇌 · 교사 브레인 · 운영 · 아카이브 · 회의 · 연구를 한곳에서</span></h2>
+    <div class="obstabs" id="obstabs"></div>
+  </div>
+  <div id="obsWrap"></div>
 
   <div class="card noprint" id="researchCard">
     <h2>🔬 자체 연구·학습 로그 <span style="font-size:9pt;color:#888;font-weight:400">(관찰 전용 · 출제방식을 스스로 연구할 때마다 누적)</span>
@@ -426,6 +451,64 @@ function reviewOne(i){
     h+='</div>'; if(b) b.innerHTML=h;
   }).catch(function(e){ GENERATING=false; if(s) s.textContent="검수 오류: "+e.message; });
 }
+/* ===== 실측 예상시간(EMA)·진행 패널·모드 탭·뇌 관찰실 ===== */
+function provKey(){ try{ return T.provider?T.provider():"pollinations"; }catch(e){ return "pollinations"; } }
+function timesDB(){ try{ return JSON.parse(localStorage.getItem("typeTimes")||"{}"); }catch(e){ return {}; } }
+function recTime(t,ms){ try{ var db=timesDB(),k=provKey()+":"+(getFast()?1:0)+":"+t; db[k]=db[k]?Math.round(db[k]*0.55+ms*0.45):Math.round(ms); localStorage.setItem("typeTimes",JSON.stringify(db)); }catch(e){} }
+function estFor(t){ var db=timesDB(),k=provKey()+":"+(getFast()?1:0)+":"+t; if(db[k]) return db[k]/1000; return provKey()==="pollinations"?(getFast()?35:70):(getFast()?12:30); }
+function parN(){ return provKey()!=="pollinations"?3:1; }
+var PROG={t0:0,types:[],done:{},timer:null};
+function pid(t){ return t.replace(/[^A-Za-z0-9가-힣]/g,"_"); }
+function progInit(types){
+  PROG={t0:Date.now(),types:types.slice(),done:{},timer:PROG.timer};
+  var el=document.getElementById("prog"); if(!el) return; el.style.display="";
+  el.innerHTML='<div style="font-weight:800;font-size:9.5pt;margin-bottom:3px;color:#4f46e5">⚙ 출제 과정'+(parN()>1?' <span class="note">병렬 '+parN()+'유형 동시</span>':'')+'</div>'
+    +types.map(function(t){ return '<div class="prow" id="pr_'+pid(t)+'"><span class="pdot"></span><span>'+esc(t)+'</span><span class="pst">대기</span></div>'; }).join("")
+    +'<div class="note" id="progEta" style="margin-top:4px"></div>';
+  if(PROG.timer) clearInterval(PROG.timer);
+  PROG.timer=setInterval(progEta,1000); progEta();
+}
+function progEta(){
+  var el=document.getElementById("progEta"); if(!el) return;
+  var remain=PROG.types.filter(function(t){ return !PROG.done[t]; });
+  if(!remain.length){ el.textContent="✓ 전 유형 완료 · 총 "+Math.round((Date.now()-PROG.t0)/1000)+"초"; clearInterval(PROG.timer); return; }
+  var est=Math.ceil(remain.reduce(function(s,t){ return s+estFor(t); },0)/parN());
+  var gone=Math.round((Date.now()-PROG.t0)/1000);
+  el.textContent="경과 "+gone+"초 · 남은 예상 약 "+(est>=60?(Math.floor(est/60)+"분 "+(est%60)+"초"):(est+"초"))+" (실측 학습 기반)";
+}
+function progMark(t,st,d){
+  var row=document.getElementById("pr_"+pid(t)); if(!row) return;
+  var dot=row.querySelector(".pdot"), lab=row.querySelector(".pst");
+  if(st==="start"){ dot.className="pdot run"; lab.textContent="생성 중…"; }
+  else if(st==="retry"){ dot.className="pdot run"; lab.textContent="재시도 "+d+"…"; }
+  else if(st==="done"){ dot.className="pdot ok"; lab.textContent="완료 "+Math.round(d/1000)+"s"; PROG.done[t]=1; recTime(t,d); }
+  else if(st==="fail"){ dot.className="pdot bad"; lab.textContent="실패"; PROG.done[t]=1; }
+  progEta();
+}
+/* 모드 탭: 일반/동형모고/지문변형 — 카드 통폐합 */
+function setMode(m){
+  ["gen","mock","xf"].forEach(function(k){ var b=document.getElementById("mtab_"+k); if(b) b.classList.toggle("on",k===m); });
+  var mc=document.getElementById("mockCard"), xc=document.getElementById("xformCard");
+  if(mc) mc.style.display=(m==="mock")?"":"none";
+  if(xc) xc.style.display=(m==="xf")?"":"none";
+}
+/* 뇌 관찰실: 관찰카드 7종을 탭 하나로 */
+var OBS=[["meshCard","🕸 신경망"],["brain3dCard","🧠 3D 뇌"],["brainCard","💭 브레인"],["govCard","🏛 운영"],["archiveCard","📚 아카이브"],["liveCard","🔴 실시간 회의"],["researchCard","🔬 연구 로그"]];
+function obsShow(id){
+  OBS.forEach(function(o){ var el=document.getElementById(o[0]); if(el) el.style.display=(o[0]===id)?"":"none";
+    var b=document.getElementById("ot_"+o[0]); if(b) b.classList.toggle("on",o[0]===id); });
+}
+function obsInit(){
+  var wrap=document.getElementById("obsWrap"), tabs=document.getElementById("obstabs");
+  if(!wrap||!tabs) return;
+  tabs.innerHTML=OBS.map(function(o){ return '<button class="otab" id="ot_'+o[0]+'" onclick="obsShow(\''+o[0]+'\')">'+o[1]+'</button>'; }).join("");
+  OBS.forEach(function(o){ var el=document.getElementById(o[0]); if(el){ wrap.appendChild(el); el.style.display="none"; } });
+}
+/* 좌측 모드 카드 이동(동형모고·지문변형을 컨트롤러 아래로) */
+function modeInit(){
+  var lp=document.getElementById("leftPane");
+  ["mockCard","xformCard"].forEach(function(id){ var el=document.getElementById(id); if(el&&lp){ lp.appendChild(el); el.style.display="none"; } });
+}
 /* ===== 지문 누적 뱅크(브라우저 영구): 쌓을수록 '우리 학교 범위' 동형 모의고사가 됨 ===== */
 function bankAll(){ try{ return JSON.parse(localStorage.getItem("passageBank")||"[]"); }catch(e){ return []; } }
 function bankPut(arr){ try{ localStorage.setItem("passageBank",JSON.stringify(arr.slice(0,200))); }catch(e){} bankBadge(); }
@@ -514,7 +597,7 @@ function onPassage(){ var w=(document.getElementById("passage").value.match(/[A-
 function getFast(){ var r=document.querySelector('input[name=speed]:checked'); return !!(r&&r.value==="1"); }
 function getLevel(){ var r=document.querySelector('input[name=level]:checked'); return r?r.value:"중"; }
 function onSpeed(){ updateEstimate(); saveState(); }
-function updateEstimate(){ var n=chosen().length, fast=getFast(), per=fast?20:45; var el=document.getElementById("estimate"); el.textContent=n?("⏱ 예상 약 "+Math.max(1,Math.ceil(n*per/60))+"분 ("+(fast?"빠른":"정밀")+"·"+n+"유형)"):""; }
+function updateEstimate(){ var ts=chosen(); var el=document.getElementById("estimate"); if(!ts.length){ el.textContent=""; return; } var sec=Math.ceil(ts.reduce(function(s,t){ return s+estFor(t); },0)/parN()); var txt=sec>=60?(Math.floor(sec/60)+"분 "+(sec%60)+"초"):(sec+"초"); el.textContent="⏱ 예상 약 "+txt+" ("+(getFast()?"빠른":"정밀")+"·"+ts.length+"유형"+(parN()>1?"·병렬":"")+"·실측 학습)"; }
 function saveState(){ try{ localStorage.setItem("ai_state",JSON.stringify({p:document.getElementById("passage").value,t:chosen(),f:getFast(),l:getLevel(),x:(document.getElementById("xformLevel")||{}).value||"none"})); }catch(e){} }
 function restoreState(){ try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); if(s.p) document.getElementById("passage").value=s.p; if(s.f){ var r=document.querySelector('input[name=speed][value="1"]'); if(r)r.checked=true; } if(s.l){ var rl=document.querySelector('input[name=level][value="'+s.l+'"]'); if(rl)rl.checked=true; } if(s.x){ var xs=document.getElementById("xformLevel"); if(xs)xs.value=s.x; } if(s.t&&s.t.length){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=s.t.indexOf(i.value)>=0; i.parentNode.classList.toggle("on",i.checked); }); } }catch(e){} onPassage(); }
 
@@ -535,9 +618,10 @@ function run(){
   var pre = (xl!=="none") ? (logln("🧬 본문 변형("+(xl==="word"?"유의어":"구조 재해석")+") 적용 중…"),
       T.transformStaged(passage, xl, {}).then(function(x){ var v=(x&&x.variant&&x.variant.length>60)?x.variant:passage; if(v!==passage) logln("   ↳ 변형 본문으로 출제합니다"); return v; }).catch(function(){ return passage; }))
     : Promise.resolve(passage);
+  progInit(types);
   pre.then(function(pg){
     LASTPASSAGE=pg;
-    return T.generateExam(pg, types, {onProgress:logln, fast:getFast(), level:getLevel(), refine:getRefine(), rounds:getRounds(), ensemble:getEnsemble()});
+    return T.generateExam(pg, types, {onProgress:logln, onType:progMark, fast:getFast(), level:getLevel(), refine:getRefine(), rounds:getRounds(), ensemble:getEnsemble()});
   }).then(function(items){
     LASTITEMS=items||[]; document.getElementById("barfill").style.width="100%"; render(items);
     go.disabled=false; go.textContent="🚀 고품질 출제"; setTimeout(function(){ document.getElementById("bar").style.display="none"; },900);
@@ -805,7 +889,7 @@ function foldify(ids, collapsed){
     h.addEventListener("click",function(e){ if(e.target&&(e.target.tagName==="BUTTON"||e.target.tagName==="INPUT"))return; set(c.dataset.open!=="1"); });
   });
 }
-foldify(["meshCard","xformCard","brainCard","govCard","archiveCard","researchCard"], true);
+modeInit(); obsInit(); obsShow("meshCard");
 // URL 해시로 개인키 1회 주입: ai_maker.html#gk=Gemini키 / #qk=Groq키 (해시는 서버 전송·레포 저장 안 됨. 저장 즉시 주소창에서 제거)
 function initKeyFromHash(){ try{ var h=location.hash.replace(/^#/,""); if(!h) return; var p=new URLSearchParams(h); var gk=p.get("gk"), qk=p.get("qk"), got=false;
   if(gk&&gk.length>10){ localStorage.setItem("geminiKey",gk); got=true; }
