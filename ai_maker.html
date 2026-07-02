@@ -410,12 +410,15 @@ function saveGeminiKey(){ var k=(document.getElementById("geminiKey").value||"")
 function clearGeminiKey(){ document.getElementById("geminiKey").value=""; try{ localStorage.removeItem("geminiKey"); }catch(e){} T.configure({geminiKey:""}); document.getElementById("geminiStat").textContent="지움"; }
 function initGeminiKey(){ var gk=""; try{ gk=localStorage.getItem("geminiKey")||""; }catch(e){} if(gk){ try{ var el=document.getElementById("geminiKey"); if(el) el.value=gk; T.configure({geminiKey:gk}); var s=document.getElementById("geminiStat"); if(s) s.textContent="✓ 적용됨 (gemini-2.5-flash · 최우선)"; }catch(e){} } }
 var VERDICT_COLOR={"반영":"#0f766e","부분반영":"#b45309","보류":"#6b7280","반려":"#b03a2e"};
+var GASURL="https://script.google.com/macros/s/AKfycbyJObr-0XOVLUFalwEJ-aNi5QdZ5ynEMpmfKw1fmSmzh5ZHuleKfqh2hjorpSMgHis6Uw/exec";   // GAS 웹앱(공개 엔드포인트) — 요청이 공식 큐로 접수 → 매시 17분 서버 교사회의가 심의·커밋
 function submitRequest(){
   var q=document.getElementById("reqInput").value.trim();
   if(q.length<5){ alert("요청사항을 입력하세요."); return; }
   var st=document.getElementById("reqStat"); st.textContent="🗣 교사 회의 심의 중… (즉시 반영이 아니라 회의를 거칩니다)";
+  // 공식 큐 접수(서버 뇌가 다음 정시에 심의) — 로컬 즉시 심의와 병행
+  if(GASURL){ try{ fetch(GASURL,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify({kind:"request",request:q,user:"web"})}).catch(function(){}); }catch(e){} }
   T.deliberate(q,{teachers:4,onProgress:function(m){ st.textContent=m; }}).then(function(r){
-    st.textContent="심의 완료 — 판정: "+r.verdict;
+    st.textContent="심의 완료 — 판정: "+r.verdict+(GASURL?" · 공식 큐에도 접수됨(다음 정시 서버 회의가 재심의)":"");
     var n={date:new Date().toISOString().slice(0,16).replace("T"," "),request:q,verdict:r.verdict,reason:r.reason,how:r.how,priority:r.priority,dialogue:r.dialogue,local:true};
     try{ var arr=JSON.parse(localStorage.getItem("notices")||"[]"); arr.unshift(n); localStorage.setItem("notices",JSON.stringify(arr.slice(0,50))); }catch(e){}
     document.getElementById("reqInput").value=""; renderNotices();
