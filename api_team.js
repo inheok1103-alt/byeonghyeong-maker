@@ -749,12 +749,14 @@
     var words = sent.replace(/[.?!]+$/, "").split(/\s+/).filter(Boolean);
     if (words.length < 4) return null;
     var cws = contentWords(sent);
-    var key = cws[0] || (words.filter(function (w) { return w.length >= 4; })[0]) || words[0];
+    var keys = cws.slice(0, 3); if (!keys.length) keys = words.filter(function (w) { return w.length >= 4; }).slice(0, 3);
     var ko = await translate(sent.replace(/[.?!]+$/, ""), "en|ko").catch(function () { return ""; });
-    var instr = "다음 우리말과 일치하도록 주어진 단어를 활용하여 영작하시오.\n〈조건〉 필요시 어형을 바꿀 수 있고, 다른 단어를 추가할 수 있음. 한 문장으로 쓸 것.\n우리말: " + (ko || "(번역 생략)") + "\n주어진 단어: ( " + key + " )";
+    // KB 원칙(정답 폐쇄성): 조건 3개(제시어 전부 사용·어형 변화 허용·총 단어 수)로 정답의 경우의 수를 닫는다 — 단어 수는 모범답안에서 '코드가' 계산
+    var instr = "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 " + words.length + "단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: " + (ko || "(번역 참조 불가 — 모범답안 기준 채점)") + "\n주어진 단어: ( " + keys.join(" / ") + " )";
     return { type: "조건영작", instruction: instr, passage: "", choices: [], answer: 0,
-      explanation: "[모범답안] " + sent.replace(/[.?!]*$/, "."),
-      _trace: [{ line: 1, api: "llm", label: "정답문장 생성", ok: !!sent }, { line: 2, api: "code", label: "핵심어 추출", ok: !!key }, { line: 3, api: "trans", label: "MyMemory 번역", ok: !!ko }, { line: 4, api: "code", label: "조건박스 조립", ok: true }] };
+      explanation: "[모범답안] " + sent.replace(/[.?!]*$/, ".") + " (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)",
+      _audit: "조건 3종 코드조립(단어 수 " + words.length + " 검산됨)",
+      _trace: [{ line: 1, api: "llm", label: "정답문장 생성", ok: !!sent }, { line: 2, api: "code", label: "제시어 3개 추출", ok: !!keys.length }, { line: 3, api: "trans", label: "MyMemory 번역", ok: !!ko }, { line: 4, api: "code", label: "조건 3종 조립(단어수 검산)", ok: true }] };
   }
   // ===== 어법수정(서술형): 어법(밑줄) 성공 패턴과 동일한 '코드 주입' — LLM은 구절·오형태만, 밑줄·주입·위치는 코드가 =====
   async function buildGrammarEdit(passage) {
@@ -1248,6 +1250,13 @@
     summary: function (p, o) { return buildSummary(p, o); }, factcheck0: function (p, o) { return buildFactCheck(p, false, o); },
     factcheck1: function (p, o) { return buildFactCheck(p, true, o); }, essay: function (p, o, t) { return buildEssay(p, o, t); }
   };
+  // 빌더 발문이 '내용'(조건·원문·우리말·제시어·다행)을 담고 있으면 유형DB 표준 발문으로 덮지 않는다(서술형 조건 소실 방지)
+  function hasRichInstr(instr, stem) {
+    var s2 = String(instr || "");
+    if (!s2) return false;
+    if (/〈조건〉|\[원문\]|우리말\s*:|주어진 단어|제시어|괄호 안|첫 글자|\n/.test(s2)) return true;
+    return s2.length > String(stem || "").length + 25;
+  }
   function builderFor(t) {
     if (t === "배열영작") return function (p, o) { return buildArrange(p, o); };
     if (t === "조건영작") return function (p, o) { return buildConditional(p, o); };
@@ -1372,7 +1381,7 @@
         }
         if (PAR === 1) { RUNHINT = ""; TYPERULE = ""; LEVELRULE = ""; }
         if (got) {
-          if (TYPE_INSTR[t]) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
+          if (TYPE_INSTR[t] && !hasRichInstr(got.instruction, TYPE_INSTR[t])) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
           if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 }); }
           stampIntent(got); got._ms = Date.now() - t0;
           results[i] = got;
@@ -1404,7 +1413,7 @@
     var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 950); setLevelRule(type, opts.level);
     var q = null; for (var _try = 0; _try < 3 && !q; _try++) { try { q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type); } catch (_e) { q = null; } }
     TYPERULE = ""; LEVELRULE = "";
-    if (q && TYPE_INSTR[type]) { if (TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type]; }
+    if (q && TYPE_INSTR[type] && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];
     if (q) q.level = opts.level || "";
     if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 });
     stampIntent(q);
