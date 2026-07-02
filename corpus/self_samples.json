@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-02T20:05:24.306Z",
+ "updated": "2026-07-02T21:46:23.202Z",
  "samples": [
+  {
+   "ts": "2026-07-02T21:41:28.862Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 3/3 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "to 부정사는 결함이 있는 프로브로서 목표의 가치를 평가할 수 있다.",
+     "to 부정사는 결함이 있는 프로브로서 무가치 사건을 삭제할 수 있다.",
+     "to 부정사는 문법적으로 불가사의한 구조를 형성하며, 이는 시제와 무관하다.",
+     "to 부정사는 언어에서 가장 흔한 구조이며, 모든 문장에서 일치 현상을 일으킨다.",
+     "to 부정사는 결함이 있는 프로브로서 목표의 가치를 평가하거나 무가치 사건을 삭제할 수 없으며, 이는 일부 부정사 구조가 일치 현상을 일으키지 못하는 이유이다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Infinitival to, as a defective probe, cannot value or delete unvalued case features on its goals, which explains why certain infinitival constructions fail to trigger agreement.'이며 정답 (에서부정사는 결함이 있는 프로브로서 목표의 가치를 평가하거나 무가치 사건을 삭제할 수 없으며, 까지이는 일부 부정사 구조가 일치 현상을 일으키지 못하는 이유이다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Infinitival to, as a defective probe, cannot value or delete unvalued case features on its goals, which explains why certain infinitival constructions fail to trigger agreement.]"
+   }
+  },
   {
    "ts": "2026-07-02T18:11:06.604Z",
    "type": "목적",
@@ -239,13 +263,6 @@
     "answer": 3,
     "explanation": "정답 ⓒ는 'unshared'인데 문맥상 원래의 'shared'가 적절하다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
-  },
-  {
-   "type": "배열영작",
-   "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: CG는 TradG를 따라 명확한 시작과 끝이 불완전한 완벽한 행동을 구별합니다.\n주어진 단어: ( and / ends / clear / distinguishing / with / CG / TradG, / from / beginnings / perfective / follows / imperfective / actions )",
-   "choices": [],
-   "answer": 0,
-   "explanation": "[모범답안] CG follows TradG, distinguishing perfective actions with clear beginnings and ends from imperfective.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
   }
  ]
 }
