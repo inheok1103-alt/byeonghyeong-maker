@@ -1223,6 +1223,20 @@
     }
     return null;
   }
+  // 영영풀이 단어쓰기: 정의를 Free Dictionary에서 '코드가' 확보해 발문에 조립(정의 부재·순환정의 차단)
+  async function buildEngdefWrite(passage) {
+    var cw = contentWords(passage).filter(function (w) { return w.length >= 5 && /^[a-z]+$/i.test(w); }).slice(0, 12);
+    for (var i = 0; i < cw.length; i++) {
+      var w = String(cw[i]).toLowerCase();
+      try {
+        var d = await dict(w); var dd = d && (d.def || (d.meanings && d.meanings[0] && d.meanings[0].def));
+        if (!dd || dd.length < 15) continue;
+        if (normTok(dd).indexOf(normTok(w)) >= 0) continue;   // 순환정의(정의에 정답 노출) 차단 — 검수 v2 지적사항
+        return { type: "영영풀이단어쓰기", instruction: "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: " + w.charAt(0) + ")\n[영영풀이] " + String(dd).slice(0, 160), passage: "", choices: [], answer: 0, explanation: "[모범답안] " + w + " (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)", _audit: "정의 실제사전 확보·순환정의 차단·첫글자 코드조립" };
+      } catch (_) {}
+    }
+    return null;
+  }
   // 문장전환(통합): 지문을 스캔해 '이 지문에 맞는' 전환 유형을 자동 선택 → buildConvert 위임
   async function buildConvertAuto(passage) {
     var ss = splitSentences(passage), cand = [];
@@ -1293,6 +1307,7 @@
     if (/네모어법/.test(t)) return function (p) { return buildBoxABC(p, "grammar"); };
     if (/네모어휘/.test(t)) return function (p) { return buildBoxABC(p, "vocab"); };
     if (/영영풀이일치/.test(t)) return function (p) { return buildEngdefMatch(p); };
+    if (/영영풀이단어|영영풀이.*쓰기/.test(t)) return function (p) { return buildEngdefWrite(p); };
     if (/빈칸\(문장\)/.test(t)) return function (p) { return buildBlankSentence(p); };
     if (/장문세트|복합세트/.test(t)) return function (p, o) { return buildLongSet(p, o); };
     if (/우리말해석|해석/.test(t)) return function (p) { return buildTranslateKo(p); };
