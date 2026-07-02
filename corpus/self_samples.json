@@ -1,6 +1,63 @@
 {
- "updated": "2026-07-02T04:35:21.922Z",
+ "updated": "2026-07-02T07:56:03.522Z",
  "samples": [
+  {
+   "ts": "2026-07-02T07:46:11.662Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 3/3 일치",
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "",
+    "choices": [
+     "D-구조는 의미 역할(thematic relations)의 순수한 표현으로 간주된다.",
+     "어떤 요소가 표면 구조(S-structure)에서 어디에 위치하든, D-구조에서는 해당 요소가 특정 서술어의 주어나 목적으로 해석되는 경우 그 서술어의 주어나 목적어 자리에 놓인다.",
+     "D-구조 위치를 결정하는 원칙들은 의미 관계와 관련이 있어야 한다.",
+     "서술어의 어휘 항목에 인코딩된 세타 역할은 문장 내 논항에 할당되는 방식으로 전달된다.",
+     "예시 문장에서 Ken은 D-구조에서 'confused'의 목적어로 해석되는 것이 아니라 주어로 해석된다."
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 모순한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-02T07:50:24.586Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "솔버 3/3 일치",
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은? (원지문 동반 필수)",
+    "passage": "In D‑structure, the elements interpreted as the subject or object of a predicate are placed in the corresponding subject or object positions, illustrating the (A) of the predicate to its arguments and the resulting (B) at D‑structure.",
+    "choices": [
+     "(A) thematic relations … (B) role assignment",
+     "(A) thematic relations … (B) lexical semantics",
+     "(A) pragmatic relations … (B) role assignment",
+     "(A) role assignment … (B) thematic relations",
+     "(A) semantic similarity … (B) syntactic complexity"
+    ],
+    "answer": 1,
+    "explanation": "(A) thematic relations / (B) role assignment 가 글의 요지를 정확히 요약한다.\n【출제의도】 글의 요지를 한 문장으로 압축하며 두 핵심어(A·B)를 정확히 채우는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-02T07:55:57.105Z",
+   "type": "필자주장",
+   "level": "중",
+   "audit": "어법 의심 1건 · ⚠ 솔버 응답 없음(판정 보류)",
+   "q": {
+    "instruction": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "a purely syntactic representation of predicates ignoring thematic roles",
+     "a purely historical account of predicate usage",
+     "a comprehensive model of predicates, arguments, syntax, semantics, and discourse",
+     "a representation of predicates assigning arguments",
+     "a purely thematic representation of predicates assigning roles to arguments"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'D‑structure is a purely thematic representation in which predicates assign thematic roles to arguments, determining their subject or object positions regardless of their surface syntactic positions.'이며 정답 (인수에 역할을 할당하는 술어의 순전히 주제별 표현)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: D‑structure is a purely thematic representation in which predicates assign thematic roles to arguments, determining their subject or object positions regardless of their surface syntactic positions.]"
+   }
+  },
   {
    "ts": "2026-07-02T04:29:00.308Z",
    "type": "제목",
