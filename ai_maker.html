@@ -91,6 +91,9 @@ textarea{border-radius:14px}
 .pdot.ok{background:#16a34a}.pdot.bad{background:#dc2626}
 @keyframes spin{to{transform:rotate(360deg)}}
 #prog{background:#fff;border:1px solid #e7e4dc;border-radius:14px;padding:9px 13px;margin:6px 0}
+body.simple .expert{display:none!important}
+.uimode{position:absolute;right:16px;bottom:12px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:8.6pt;padding:4px 11px;border-radius:14px}
+.uimode:hover{background:rgba(255,255,255,.28)}
 .rp-head{font-size:10pt;font-weight:800;color:#4f46e5;margin:2px 0 4px;display:flex;align-items:center;gap:6px}
 </style>
 </head>
@@ -98,7 +101,8 @@ textarea{border-radius:14px}
 <div class="wrap">
   <div class="banner">
     <h1>🧠 출제자 뇌 — AI 변형문제 제작기</h1>
-    <div class="sub">최상위 영어교사 <b>9만 6천 명</b>이 신경다발처럼 엮여, 스스로 만들고·회의하고·학습하는 출제 두뇌. 무키·0원으로 작동.</div>
+    <div class="sub">지문을 붙여넣고 유형만 고르면, 검수까지 마친 시험지 품질의 변형문제가 나옵니다.</div>
+    <button class="uimode noprint" id="uimodeBtn" onclick="toggleUIMode()">⚙ 전문가 모드</button>
     <div class="pills">
       <span class="pill" id="pillEvo">🧬 진화 Lv.1</span><span class="pill">18유형 자동출제</span><span class="pill">해설·단어장·변형</span><span class="pill">교사 회의·자가학습</span><span class="pill">3D 뇌 시각화</span><span class="pill" id="pillGroq">Groq 키 넣으면 초고속</span>
     </div>
@@ -451,6 +455,10 @@ function reviewOne(i){
     h+='</div>'; if(b) b.innerHTML=h;
   }).catch(function(e){ GENERATING=false; if(s) s.textContent="검수 오류: "+e.message; });
 }
+/* ===== 간단/전문가 모드 ===== */
+function isExpert(){ try{ return localStorage.getItem("uiMode")==="expert"; }catch(e){ return false; } }
+function applyUIMode(){ document.body.classList.toggle("simple", !isExpert()); var b=document.getElementById("uimodeBtn"); if(b) b.textContent=isExpert()?"✨ 간단 모드로":"⚙ 전문가 모드"; }
+function toggleUIMode(){ try{ localStorage.setItem("uiMode", isExpert()?"simple":"expert"); }catch(e){} applyUIMode(); }
 /* ===== 실측 예상시간(EMA)·진행 패널·모드 탭·뇌 관찰실 ===== */
 function provKey(){ try{ return T.provider?T.provider():"pollinations"; }catch(e){ return "pollinations"; } }
 function timesDB(){ try{ return JSON.parse(localStorage.getItem("typeTimes")||"{}"); }catch(e){ return {}; } }
@@ -619,9 +627,14 @@ function run(){
       T.transformStaged(passage, xl, {}).then(function(x){ var v=(x&&x.variant&&x.variant.length>60)?x.variant:passage; if(v!==passage) logln("   ↳ 변형 본문으로 출제합니다"); return v; }).catch(function(){ return passage; }))
     : Promise.resolve(passage);
   progInit(types);
+  var STREAMN=0;
+  function onItemLive(q){ STREAMN++; var out=document.getElementById("out");
+    if(STREAMN===1) out.innerHTML='<div class="card"><h2>📝 결과 <span class="note">(완성되는 대로 표시 중…)</span></h2><div id="liveItems"></div><div class="skel"></div></div>';
+    var li=document.getElementById("liveItems"); if(li){ q._setChild=false; li.insertAdjacentHTML("beforeend", renderOneQ(q, STREAMN, null)); }
+  }
   pre.then(function(pg){
     LASTPASSAGE=pg;
-    return T.generateExam(pg, types, {onProgress:logln, onType:progMark, fast:getFast(), level:getLevel(), refine:getRefine(), rounds:getRounds(), ensemble:getEnsemble()});
+    return T.generateExam(pg, types, {onProgress:logln, onType:progMark, onItem:onItemLive, fast:getFast(), level:getLevel(), refine:getRefine(), rounds:getRounds(), ensemble:getEnsemble()});
   }).then(function(items){
     LASTITEMS=items||[]; document.getElementById("barfill").style.width="100%"; render(items);
     go.disabled=false; go.textContent="🚀 고품질 출제"; setTimeout(function(){ document.getElementById("bar").style.display="none"; },900);
@@ -890,6 +903,21 @@ function foldify(ids, collapsed){
   });
 }
 modeInit(); obsInit(); obsShow("meshCard");
+/* 간단 모드: 출제자가 몰라도 되는 내부 요소를 전문가 모드로 이동 */
+(function(){
+  var ids=["obsCard","obsWrap","meetCard"];
+  ids.forEach(function(id){ var el=document.getElementById(id); if(el) el.classList.add("expert"); });
+  var sb=document.querySelector(".stepbar"); if(sb) sb.classList.add("expert");
+  var pills=document.querySelector(".banner .pills"); if(pills) pills.classList.add("expert");
+  var rc=document.getElementById("refineChk"); if(rc&&rc.closest(".row")) rc.closest(".row").classList.add("expert");   // 재귀·앙상블(기술 옵션)
+  [].forEach.call(document.querySelectorAll("button"),function(b){
+    var t=b.textContent||"";
+    if(/파이프라인 설계도|유형 DB 새로고침/.test(t)){ var row=b.closest(".row"); (row||b).classList.add("expert"); if(!row) b.classList.add("expert"); if(/유형 DB/.test(t)) b.classList.add("expert"); }
+  });
+  var cs=document.getElementById("corpusStat"); if(cs) cs.classList.add("expert");
+  var ds=document.getElementById("dbstat"); if(ds) ds.classList.add("expert");
+  applyUIMode();
+})();
 // URL 해시로 개인키 1회 주입: ai_maker.html#gk=Gemini키 / #qk=Groq키 (해시는 서버 전송·레포 저장 안 됨. 저장 즉시 주소창에서 제거)
 function initKeyFromHash(){ try{ var h=location.hash.replace(/^#/,""); if(!h) return; var p=new URLSearchParams(h); var gk=p.get("gk"), qk=p.get("qk"), got=false;
   if(gk&&gk.length>10){ localStorage.setItem("geminiKey",gk); got=true; }

@@ -583,15 +583,20 @@
     var st = await runHarness(inferenceSteps(passage, type, ctx, opts.fast), { passage: passage, ctx: ctx, dis: [] },
       function (ev) { log(onP, "  ┃라인 " + ev.line + "/" + ev.total + " [" + ev.api + "] " + ev.label + "…"); });
     if (!st.answer || !st.choices) return null;
+    log(onP, '   ↳ 핵심 논지: "' + String(st.main || "").slice(0, 72) + '"');
+    log(onP, '   ↳ 정답 초안: "' + String(st.answer || "").slice(0, 64) + '" · 오답 ' + (st.dis || []).length + '개 설계');
     var meta = infMeta(type);
     return { type: type, instruction: meta.instr, passage: "", choices: st.choices, answer: st.answerIdx,
       explanation: "글의 핵심 논지는 '" + st.main + "'이며 정답" + (st.ko ? (" (" + st.ko + ")") : "") + "이 이를 반영한다.",
       _audit: (st.gi && st.gi.length) ? ("어법 의심 " + st.gi.length + "건") : "검증 통과", _trace: st._trace };
   }
   // 빈칸: ① 핵심 논지 자리에 어구 비우기(도입부 회피) → ② 프레임 맞춤 어구형 정답 → ③ 역할별 오답
-  async function buildBlank(passage) {
+  async function buildBlank(passage, opts) {
+    var onP2 = opts && opts.onProgress;
     var o = await llmJSON([{ role: "system", content: "수능 빈칸추론 출제자. 빈칸은 필자의 핵심 주장·결론을 담은 자리에 두고 도입부 정의문·예시·부연은 피한다. JSON만." }, { role: "user", content: "다음 글에서 필자의 핵심 주장/결론을 담은 문장을 고르고, 그 문장에서 논지의 핵심 어구(3~8단어)를 ____ 로 비워라(도입부 첫 문장은 피할 것). 정답은 빈칸에 '문법적으로 그대로 들어맞는 간결한 영어 어구(완성 문장 절대 아님)'로, 본문 표현이 아니라 상위어·동의어로 패러프레이즈하라. JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"빈칸에 들어갈 정답 어구\",\"orig\":\"비운 원래 어구\",\"frame\":\"빈칸이 든 문장만(____ 포함)\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
     if (!o || !o.answer || !o.blanked) return null;
+    log(onP2, '   ↳ 빈칸 프레임: "' + String(o.frame || "").slice(0, 70) + '"');
+    log(onP2, '   ↳ 정답 어구: "' + String(o.answer).slice(0, 50) + '"' + (o.orig ? (' (원문 "' + String(o.orig).slice(0, 30) + '" 패러프레이즈)') : ''));
     var frame = o.frame || "";
     var dis = await makeDistractors(o.answer, "빈칸 '____'에 그대로 끼워지는 간결한 영어 어구(완성 문장 아님, 정답과 품사·길이 통일)", "빈칸 프레임: " + (frame || "(문장 일부)") + "\n오답은 본문 어휘를 재활용하되 이 자리에 넣으면 논리가 어긋나게(정반대/부분일치/무관/과장).");
     var a = await reviewOptions(o.answer, dis, { type: "빈칸", slot: frame, main: o.answer }); if (!a) return null;
@@ -1357,6 +1362,7 @@
           if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 }); }
           stampIntent(got); got._ms = Date.now() - t0;
           results[i] = got;
+          if (opts.onItem) try { opts.onItem(got, i); } catch (_) {}   // 완성 즉시 UI로 스트리밍
           onT(t, "done", got._ms);
           log(onP, "   ✓ " + t + " 완료(" + Math.round(got._ms / 1000) + "s)");
         } else { record("최종실패", t, "재시도 실패"); onT(t, "fail"); log(onP, "   · " + t + " 생성 실패(건너뜀)"); }
