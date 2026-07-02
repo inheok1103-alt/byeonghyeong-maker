@@ -44,6 +44,7 @@
         if (sys) body.systemInstruction = { parts: [{ text: sys }] };
         var rg = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + CFG.geminiModel + ":generateContent?key=" + encodeURIComponent(CFG.geminiKey), { method: "POST", headers: { "Content-Type": "application/json" }, signal: to.signal, body: JSON.stringify(body) });
         var dg = await rg.json();
+        if (dg.error) { var gm = String((dg.error && dg.error.message) || ""); if (/quota|rate|429|exhausted|high demand|503/i.test(gm) || dg.error.code === 429 || dg.error.code === 503) LAST_LIMITED = true; throw new Error("gemini: " + gm.slice(0, 80)); }
         return (dg.candidates && dg.candidates[0] && dg.candidates[0].content && dg.candidates[0].content.parts && dg.candidates[0].content.parts[0].text) || "";
       }
       if (prov === "groq") {
