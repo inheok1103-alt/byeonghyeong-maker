@@ -321,22 +321,14 @@ function analyze(){
 
 document.getElementById("mesh").onclick=function(){ T.healthCheck().then(function(l){ l.forEach(function(m){ if(m.ok) pulse(m.key); else { var g=document.getElementById("nu_"+m.key); if(g) g.querySelector("circle").setAttribute("fill","#555"); } }); }); };
 
-function logln(m){ var L=document.getElementById("log"); L.style.display="block"; L.textContent+=(L.textContent?"\n":"")+m; L.scrollTop=L.scrollHeight; pulseFromMsg(m); }
-
-function run(){
-  var passage=document.getElementById("passage").value.trim(), types=chosen();
-  if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
-  if(!types.length){ alert("출제 유형을 1개 이상 선택하세요."); return; }
-  var go=document.getElementById("go"); go.disabled=true; go.textContent="출제 중…";
-  document.getElementById("log").textContent=""; document.getElementById("out").innerHTML="";
-  document.getElementById("meet").innerHTML=""; document.getElementById("meetCard").style.display="none";
-  T.generateExam(passage, types, {onProgress:logln}).then(function(items){
-    render(items); go.disabled=false; go.textContent="🚀 고품질 출제";
-  }).catch(function(e){ logln("오류: "+e.message); go.disabled=false; go.textContent="🚀 고품질 출제"; });
-}
+/* (구버전 logln/run은 삭제 — 아래 UX 블록의 최신판이 유일본) */
 function render(items){
   if(!items||!items.length){ document.getElementById("out").innerHTML='<div class="card">생성된 문항이 없습니다. 다시 시도해 주세요.</div>'; return; }
   var h='<div class="card"><h2>📝 결과 — '+items.length+'문항</h2>';
+  // 인쇄물 완결성: 지문이 문항에 포함되지 않는 유형(주제·제목·요지·일치 등)이 있으면 원지문을 상단에 1회 인쇄
+  if(items.some(function(q){ return !q.passage; }) && typeof LASTPASSAGE==="string" && LASTPASSAGE.length>40){
+    h+='<div style="font-weight:700;margin:4px 0 3px">[지문]</div><div class="pg">'+pgHtml(LASTPASSAGE)+'</div>';
+  }
   items.forEach(function(q,i){
     h+='<div class="q"><div class="h">'+(i+1)+'. '+esc(q.type)+' <span class="chip">AI</span></div><div class="ins">'+esc(q.instruction)+'</div>';
     if(q.passage) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
@@ -360,8 +352,8 @@ function getFast(){ var r=document.querySelector('input[name=speed]:checked'); r
 function getLevel(){ var r=document.querySelector('input[name=level]:checked'); return r?r.value:"중"; }
 function onSpeed(){ updateEstimate(); saveState(); }
 function updateEstimate(){ var n=chosen().length, fast=getFast(), per=fast?20:45; var el=document.getElementById("estimate"); el.textContent=n?("⏱ 예상 약 "+Math.max(1,Math.ceil(n*per/60))+"분 ("+(fast?"빠른":"정밀")+"·"+n+"유형)"):""; }
-function saveState(){ try{ localStorage.setItem("ai_state",JSON.stringify({p:document.getElementById("passage").value,t:chosen(),f:getFast()})); }catch(e){} }
-function restoreState(){ try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); if(s.p) document.getElementById("passage").value=s.p; if(s.f){ var r=document.querySelector('input[name=speed][value="1"]'); if(r)r.checked=true; } if(s.t&&s.t.length){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=s.t.indexOf(i.value)>=0; i.parentNode.classList.toggle("on",i.checked); }); } }catch(e){} onPassage(); }
+function saveState(){ try{ localStorage.setItem("ai_state",JSON.stringify({p:document.getElementById("passage").value,t:chosen(),f:getFast(),l:getLevel()})); }catch(e){} }
+function restoreState(){ try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); if(s.p) document.getElementById("passage").value=s.p; if(s.f){ var r=document.querySelector('input[name=speed][value="1"]'); if(r)r.checked=true; } if(s.l){ var rl=document.querySelector('input[name=level][value="'+s.l+'"]'); if(rl)rl.checked=true; } if(s.t&&s.t.length){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=s.t.indexOf(i.value)>=0; i.parentNode.classList.toggle("on",i.checked); }); } }catch(e){} onPassage(); }
 
 function logln(m){ var L=document.getElementById("log"); L.style.display="block"; L.textContent+=(L.textContent?"\n":"")+m; L.scrollTop=L.scrollHeight; var mm=m.match(/\[(\d+)\/(\d+)\]/); if(mm){ document.getElementById("barfill").style.width=Math.round((+mm[1]-1)/(+mm[2])*100)+"%"; } pulseFromMsg(m); }
 
