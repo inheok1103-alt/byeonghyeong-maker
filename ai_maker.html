@@ -632,7 +632,13 @@ function foldify(ids, collapsed){
   });
 }
 foldify(["meshCard","xformCard","brainCard","govCard","archiveCard","researchCard"], true);
-initGeminiKey(); initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
+// URL 해시로 개인키 1회 주입: ai_maker.html#gk=Gemini키 / #qk=Groq키 (해시는 서버 전송·레포 저장 안 됨. 저장 즉시 주소창에서 제거)
+function initKeyFromHash(){ try{ var h=location.hash.replace(/^#/,""); if(!h) return; var p=new URLSearchParams(h); var gk=p.get("gk"), qk=p.get("qk"), got=false;
+  if(gk&&gk.length>10){ localStorage.setItem("geminiKey",gk); got=true; }
+  if(qk&&qk.length>10){ localStorage.setItem("groqKey",qk); got=true; }
+  if(got) history.replaceState(null,"",location.pathname+location.search);
+}catch(e){} }
+initKeyFromHash(); initGeminiKey(); initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
 // 로드되면 교사 회의가 실시간으로 자동 시작(탭 열려 있는 동안 계속)
 // 실시간 회의 자동시작: Groq 키가 있을 때만(병렬·고속). 무키(Pollinations 직렬)면 출제 큐를 비워두기 위해 수동 시작.
 setTimeout(function(){ try{ var gk=(document.getElementById("groqKey").value||"").trim(); var gm=(document.getElementById("geminiKey").value||"").trim(); if(!LIVE.on && (gk||gm)) toggleLive(); else if(!gk&&!gm){ var b=document.getElementById("liveBtn"); if(b) b.title="Gemini/Groq 키를 넣으면 자동 시작됩니다(무키에선 출제 속도 보호를 위해 수동)"; } }catch(e){} }, 2500);
