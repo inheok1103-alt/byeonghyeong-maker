@@ -90,6 +90,7 @@
     if (!opts.noRule) {
       if (TYPERULE) sysadd += "\n[이 유형의 수능 출제 규칙 — 반드시 준수] " + TYPERULE;
       if (LEVELRULE) sysadd += "\n" + LEVELRULE;
+      if (KB && KB.core) sysadd += "\n[출제 대원칙(지식베이스)] " + KB.core;   // 5대 대원칙 + 매력적 오답 설계 원리
       var extra = [STANDING, RUNHINT].filter(Boolean).join(" / ");
       if (extra) sysadd += "\n[누적·회의 개선지침] " + extra;
     }
@@ -245,6 +246,21 @@
   var REVIEWDB = null;
   async function loadReviewDB(url) {
     try { var r = await fetch(url || "knowledge/review_core_v2.json", { cache: "no-store" }); REVIEWDB = await r.json(); return { ok: true, version: (REVIEWDB.meta && REVIEWDB.meta.version) || "?" }; } catch (e) { return { ok: false, error: String(e) }; }
+  }
+  // ===== 출제자 지식베이스(사용자 매뉴얼 v1 증류): 대원칙은 생성 전반에, 유형별 KB는 TYPERULE에 병합 =====
+  var KB = null, KB_GUIDES = [];
+  async function loadExaminerKB(url) {
+    try {
+      var r = await fetch(url || "knowledge/examiner_kb_v1.json", { cache: "no-store" }); KB = await r.json();
+      KB_GUIDES = (KB.guides || []).map(function (g) { return { re: new RegExp(g.match), rule: g.rule }; });
+      return { ok: true, guides: KB_GUIDES.length, version: (KB.meta && KB.meta.version) || "?" };
+    } catch (e) { return { ok: false, error: String(e) }; }
+  }
+  function kbFor(type) {
+    var t = String(type || ""), out = "";
+    for (var i = 0; i < KB_GUIDES.length; i++) { if (KB_GUIDES[i].re.test(t)) { out = KB_GUIDES[i].rule; break; } }
+    if (KB && KB.subjective && /영작|서술|전환|해석|명시|쓰기|완성|수정|어형|첫글자|도치|강조/.test(t)) out += (out ? " " : "") + "[채점원리] " + KB.subjective;
+    return out;
   }
   function reviewSectionFor(type) {
     var s = (REVIEWDB && REVIEWDB.sections) || {}; var t = String(type || "");
@@ -1032,7 +1048,7 @@
     log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…");
     for (var i = 0; i < types.length; i++) {
       var t = types[i], b = builderFor(t), got = null;
-      RUNHINT = ""; TYPERULE = TYPE_GUIDE[t] || ""; setLevelRule(t, opts.level);
+      RUNHINT = ""; var kbT = kbFor(t); TYPERULE = ((TYPE_GUIDE[t] || "") + (kbT ? (" [KB지침] " + kbT) : "")).slice(0, 950); setLevelRule(t, opts.level);
       for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
         log(onP, "[" + (i + 1) + "/" + types.length + "] " + t + (attempt > 1 ? " (개선 재시도 " + attempt + ")" : "") + " 출제 중…");
         try { var q = await b(passage, bopts, t); if (q && q.instruction) got = q; } catch (e) {}
@@ -1060,7 +1076,7 @@
   async function generateOne(passage, type, opts) {
     opts = opts || {}; USE_ENSEMBLE = !!opts.ensemble;
     var ctx = opts.ctx || await prepContext(passage).catch(function () { return {}; });
-    TYPERULE = TYPE_GUIDE[type] || ""; setLevelRule(type, opts.level);
+    var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 950); setLevelRule(type, opts.level);
     var q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type);
     TYPERULE = ""; LEVELRULE = "";
     if (q && TYPE_INSTR[type]) { if (TYPE_INSTR[type]) q.instruction = TYPE_INSTR[type]; }
@@ -1219,7 +1235,7 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
-    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode,
+    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor,
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,

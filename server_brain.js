@@ -76,6 +76,7 @@ async function main() {
   catch (_) { try { await T.loadTypeDB("types.json"); console.log("유형DB: types.json(폴백)"); } catch (_) {} }
   try { await T.loadDifficultyDB("difficulty.json"); } catch (_) {}
   try { if (T.loadReviewDB) await T.loadReviewDB("knowledge/review_core_v2.json"); } catch (_) {}
+  try { if (T.loadExaminerKB) { const kb = await T.loadExaminerKB("knowledge/examiner_kb_v1.json"); console.log("지식베이스:", JSON.stringify(kb)); } } catch (_) {}
   try { const ci = await T.loadCorpus("corpus/"); console.log("코퍼스:", JSON.stringify(ci)); } catch (_) {}
 
   const learnedFile = J("corpus/learned_rules.json", { updated: "", count: 0, rules: [] });

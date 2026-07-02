@@ -671,6 +671,7 @@ function initKeyFromHash(){ try{ var h=location.hash.replace(/^#/,""); if(!h) re
 }catch(e){} }
 initKeyFromHash(); initGeminiKey(); initGroqKey(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive();
 try{ if(T.loadReviewDB) T.loadReviewDB("knowledge/review_core_v2.json"); }catch(e){}   // 검수관 지식DB(15절차 계승·발전)
+try{ if(T.loadExaminerKB) T.loadExaminerKB("knowledge/examiner_kb_v1.json"); }catch(e){}   // 출제자 지식베이스(대원칙·유형별 KB → 모든 생성에 주입)
 // 로드되면 교사 회의가 실시간으로 자동 시작(탭 열려 있는 동안 계속)
 // 실시간 회의 자동시작: Groq 키가 있을 때만(병렬·고속). 무키(Pollinations 직렬)면 출제 큐를 비워두기 위해 수동 시작.
 setTimeout(function(){ try{ var gk=(document.getElementById("groqKey").value||"").trim(); var gm=(document.getElementById("geminiKey").value||"").trim(); if(!LIVE.on && (gk||gm)) toggleLive(); else if(!gk&&!gm){ var b=document.getElementById("liveBtn"); if(b) b.title="Gemini/Groq 키를 넣으면 자동 시작됩니다(무키에선 출제 속도 보호를 위해 수동)"; } }catch(e){} }, 2500);
