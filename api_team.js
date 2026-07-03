@@ -1269,6 +1269,39 @@
     return { type: "장문세트", instruction: "[" + subs.length + "문항 세트] 다음 글을 읽고, 물음에 답하시오.", passage: setPg, choices: [], answer: 0, explanation: "세트 문항 " + subs.length + "개(각 문항 해설 참조).", subItems: subs, _audit: "세트 " + subs.length + "문항(" + subs.map(function (s) { return s.type; }).join("·") + ")" + (setPg !== passage ? " · 조작 공통지문 반영" : "") };
   }
 
+  // ===== 분석지: 문장별 해석·구문(기능색) + 논리 흐름 + 암기 카드 — 코드가 문장 분할·검증, LLM이 내용 =====
+  async function analysisSheet(passage, opts) {
+    opts = opts || {};
+    var sents = splitSentences(passage);
+    if (sents.length < 2) return null;
+    var listed = sents.map(function (s, i) { return (i + 1) + ". " + s; }).join("\n");
+    var o = await llmJSON([
+      { role: "system", content: "너는 한국 고등학교 영어 내신 분석지를 만드는 수석 교사다. 반드시 JSON만 출력." },
+      { role: "user", content: "다음 지문의 분석지 데이터를 만들어라. 문장 번호별로 빠짐없이.\n[문장 목록]\n" + listed + "\n\nJSON 형식: {\"topic_ko\":\"주제 한 줄(한국어)\",\"thesis_ko\":\"필자 주장 한 줄\",\"flow\":[{\"n\":문장번호,\"role\":\"도입|주장|근거|예시|대조|재진술|결론\"}],\"sents\":[{\"n\":1,\"ko\":\"자연스러운 해석\",\"syntax\":\"구문 포인트 1개(짧게, 없으면 빈 문자열)\",\"fn\":\"core|evidence|logic|grammar|claim|aux\"}],\"vocab\":[{\"w\":\"단어\",\"ko\":\"뜻\",\"syn\":\"유의어 1개\"}],\"points\":[\"내신 출제 포인트(최대 3개, 한국어)\"]}\n규칙: sents는 문장 수(" + sents.length + "개)와 정확히 같아야 함. vocab은 시험에 나올 5개만. fn은 그 문장의 독해 기능." }
+    ], { noRule: true }).catch(function () { return null; });
+    if (!o || !o.sents || !o.sents.length) return null;
+    var map = {}; (o.sents || []).forEach(function (x) { if (x && x.n >= 1) map[x.n] = x; });
+    var rows = sents.map(function (en, i) {
+      var m = map[i + 1] || {};
+      return { n: i + 1, en: en, ko: String(m.ko || ""), syntax: String(m.syntax || ""), fn: /^(core|evidence|logic|grammar|claim|aux)$/.test(m.fn) ? m.fn : "aux" };
+    });
+    var flow = (o.flow || []).filter(function (x) { return x && x.n >= 1 && x.n <= sents.length && x.role; });
+    return { topic: String(o.topic_ko || ""), thesis: String(o.thesis_ko || ""), flow: flow, sents: rows, vocab: (o.vocab || []).slice(0, 5), points: (o.points || []).slice(0, 3) };
+  }
+  // ===== 키워드 추출(출제 축): 어휘·구문·개념·연결어 — LLM + 빈도 폴백, 지문 실존 검증 =====
+  async function extractKeywords(passage, opts) {
+    opts = opts || {};
+    var o = await llmJSON([
+      { role: "system", content: "한국 고교 영어 내신 출제자. 반드시 JSON만 출력." },
+      { role: "user", content: "지문에서 변형문제 출제의 축이 되는 키워드를 뽑아라.\n지문:\n" + passage + "\n\nJSON: {\"keywords\":[{\"k\":\"지문 속 표현 그대로\",\"kind\":\"어휘|구문|개념|연결어\",\"why\":\"출제 포인트 한 줄(한국어)\"}]}\n규칙: 4~8개. 어휘 2~3, 구문 1~2(예: not A but B 병렬), 개념 1~2(주제어), 연결어 1개 이상(Conversely 등). k는 반드시 지문에 실제로 있는 문자열." }
+    ], { noRule: true }).catch(function () { return null; });
+    var low = passage.toLowerCase();
+    var ks = ((o && o.keywords) || []).filter(function (x) { return x && x.k && low.indexOf(String(x.k).toLowerCase()) >= 0; })
+      .map(function (x) { return { k: String(x.k), kind: /어휘|구문|개념|연결어/.test(x.kind) ? x.kind : "어휘", why: String(x.why || "") }; }).slice(0, 8);
+    if (ks.length >= 3) return ks;
+    return contentWords(passage).slice(0, 5).map(function (w) { return { k: w, kind: "어휘", why: "빈도 상위 핵심어" }; });
+  }
+
   var BUILDERS = {
     "주제": function (p, o) { return buildInference(p, "주제", o); }, "제목": function (p, o) { return buildInference(p, "제목", o); }, "요지": function (p, o) { return buildInference(p, "요지", o); },
     "빈칸": buildBlank, "함의": buildImplication, "요약": buildSummary,
@@ -1530,10 +1563,11 @@
   // 단일 문항 재생성(개별 문항 🔄용)
   async function generateOne(passage, type, opts) {
     opts = opts || {}; USE_ENSEMBLE = !!opts.ensemble;
+    var _hint0 = RUNHINT; if (opts.hint) RUNHINT = String(opts.hint);   // 키워드 중심 출제 등 1회성 지시
     var ctx = opts.ctx || await cachedContext(passage, opts.onProgress);
     var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 950); setLevelRule(type, opts.level);
     var q = null; for (var _try = 0; _try < 3 && !q; _try++) { try { q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type); } catch (_e) { q = null; } }
-    TYPERULE = ""; LEVELRULE = "";
+    TYPERULE = ""; LEVELRULE = ""; if (opts.hint) RUNHINT = _hint0;
     if (q && TYPE_INSTR[type] && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];
     if (q) q.level = opts.level || "";
     if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 });
@@ -1691,6 +1725,7 @@
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
+    analysisSheet: analysisSheet, extractKeywords: extractKeywords,
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,

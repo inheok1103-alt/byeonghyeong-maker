@@ -87,6 +87,26 @@ textarea{border-radius:14px}
 .modes{display:flex;gap:6px;margin:0 0 10px}
 .mtab{flex:1;padding:10px 8px;font-size:10pt;border-radius:14px;background:#fff;border:1.5px solid #e2ddd2;color:#666}
 .mtab.on{background:var(--ac);color:#fff;border-color:var(--ac);box-shadow:0 4px 12px rgba(79,70,229,.25)}
+/* ===== 2026-07 디자인 폴리시: 계층·포커스·문항카드·스크롤바·모바일 ===== */
+.card{box-shadow:0 1px 3px rgba(23,20,50,.06)}
+.card h2{letter-spacing:-.01em;font-weight:800}
+textarea:focus,input:focus,select:focus{outline:2.5px solid #c9c4f4;outline-offset:1px;border-color:var(--ac)}
+.ghost{border:1px solid #e6e2d8;background:#fff}
+.ghost:hover{background:#f3f1fb;border-color:#cfc9ee;color:#3f3a8f}
+.go{background:linear-gradient(135deg,#4f46e5,#7261ee);padding:12px 30px;font-size:12.5pt;letter-spacing:.02em;box-shadow:0 4px 14px rgba(79,70,229,.28)}
+.mtab{font-weight:700}
+.q{border:1px solid #efece3;border-left:4px solid #ddd8f2;border-radius:0 12px 12px 0;background:#fffefb;padding:10px 13px 10px 14px;transition:border-color .15s}
+.q:hover{border-left-color:var(--ac)}
+.q .chip{vertical-align:1px}
+.types label:hover{border-color:var(--ac);color:var(--ac)}
+.types label.on:hover{color:#fff}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-thumb{background:#d9d5c9;border-radius:8px}
+::-webkit-scrollbar-thumb:hover{background:#c4bfae}
+::-webkit-scrollbar-track{background:transparent}
+#workLog div{border-left:2px solid #e6e2f8;padding-left:7px}
+#agentChat{scroll-behavior:smooth}
+@media(max-width:760px){.wrap{padding:10px}.card{padding:12px 13px}.modes{flex-wrap:wrap}.mtab{min-width:44%}}
 .obstabs{display:flex;gap:5px;flex-wrap:wrap;margin-top:4px}
 .otab{font-size:8.8pt;padding:6px 11px;border-radius:16px;background:#f2f0ea;color:#555;border:1px solid #e4dfd4}
 .otab.on{background:var(--ac);color:#fff;border-color:var(--ac)}
@@ -186,6 +206,13 @@ body.simple .expert{display:none!important}
     <div id="workChips" style="margin-top:4px"></div>
     <div id="wxfout" style="margin-top:6px"></div>
     <div id="workLog" style="display:none;margin-top:6px;border-top:1px dashed #ddd6f5;padding-top:5px;max-height:150px;overflow:auto;font-size:8.6pt"></div>
+    <div class="row" style="margin-top:8px;border-top:1px dashed #ddd6f5;padding-top:7px">
+      <button class="ghost" onclick="makeAnalysis()" title="A4 가로 2쪽 분석지 — 문장별 해석·구문(기능색 6색) + 논리흐름·암기카드(1-3-5)">📑 분석지</button>
+      <button class="ghost" onclick="kwExtract()" id="kwBtn" title="AI가 출제 축 키워드(어휘·구문·개념·연결어)를 추출합니다 — 칩에서 추가·삭제 가능">🔑 키워드 추출</button>
+      <input id="kwInput" placeholder="키워드 직접 추가 후 Enter" style="flex:1;min-width:130px;padding:6px 10px;border:1.5px solid var(--line);border-radius:10px;font-size:9pt;font-family:inherit" onkeydown="if(event.key==='Enter')kwAdd()">
+    </div>
+    <div id="kwChips" style="margin-top:4px"></div>
+    <div id="kwMatrix" style="margin-top:5px;overflow-x:auto"></div>
   </div><!-- /② 작업대 -->
 
   <div class="card noprint" style="border-left:4px solid #4f46e5">
@@ -352,7 +379,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260703c"></script>
+<script src="api_team.js?v=20260703d"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -669,10 +696,18 @@ function qbLoadAll(){
   var groups=order.map(function(p){ return (byPg[p].length>1&&p!=="(지문 없음)")?{type:"세트",passage:p,subItems:byPg[p],instruction:"",choices:[],answer:0,explanation:""}:Object.assign(byPg[p][0],{passage:p==="(지문 없음)"?"":p}); });
   LASTITEMS=groups; LASTPASSAGE=""; render(groups); window.scrollTo(0,0);
 }
+function qbLoadKw(k){
+  var a=qbAll().filter(function(x){ return x.q&&x.q._kw===k; });
+  if(!a.length){ alert("해당 키워드 문항이 없습니다."); return; }
+  var items=a.slice().reverse().map(function(x){ return JSON.parse(JSON.stringify(x.q)); });
+  LASTITEMS=items; LASTPASSAGE=""; render(items); window.scrollTo(0,0);
+}
 function qbRender(){
   var el=document.getElementById("qbList"); if(!el) return; var a=qbAll();
-  el.innerHTML=(a.length?('<div class="row" style="margin-bottom:5px"><b style="font-size:9pt">🗃 문제뱅크 '+a.length+'문항</b><button class="ghost" style="font-size:8pt;padding:2px 8px" onclick="qbLoadAll()">전체 시험지로 불러오기</button><button class="ghost" style="font-size:8pt;padding:2px 8px;color:#b03a2e" onclick="qbClear()">비우기</button></div>'):'')+
-    (a.length?a.map(function(x,i){ return '<div style="display:flex;gap:6px;align-items:center;margin:2px 0"><span style="flex:1;color:#345">'+(i+1)+'. ['+esc(x.type)+'] '+esc(String(x.q.instruction||"").slice(0,42))+'… <span style="color:#9ab;font-size:7.5pt">'+esc(x.ts)+'</span></span><button class="ghost" style="font-size:8pt;padding:1px 7px;color:#b03a2e" onclick="qbDel('+i+')">삭제</button></div>'; }).join(""):'<div class="note">아직 저장된 문항이 없습니다. 출제 후 결과 상단 [🗃 뱅크에 누적]을 누르면 쌓입니다.</div>');
+  var kws={}; a.forEach(function(x){ var k=x.q&&x.q._kw; if(k) kws[k]=(kws[k]||0)+1; });
+  var kwRow=Object.keys(kws).length?('<div style="margin:3px 0 5px"><span class="note" style="margin-right:4px">🔑 키워드 색인:</span>'+Object.keys(kws).map(function(k){ return '<button class="ghost" style="font-size:8pt;padding:1px 8px;margin:1px 3px 1px 0;color:#4a3fa5" onclick="qbLoadKw(\''+esc(k).replace(/'/g,"&#39;")+'\')" title="이 키워드 문항만 모아 시험지로">#'+esc(k)+' ('+kws[k]+')</button>'; }).join("")+'</div>'):'';
+  el.innerHTML=(a.length?('<div class="row" style="margin-bottom:5px"><b style="font-size:9pt">🗃 문제뱅크 '+a.length+'문항</b><button class="ghost" style="font-size:8pt;padding:2px 8px" onclick="qbLoadAll()">전체 시험지로 불러오기</button><button class="ghost" style="font-size:8pt;padding:2px 8px;color:#b03a2e" onclick="qbClear()">비우기</button></div>'+kwRow):'')+
+    (a.length?a.map(function(x,i){ return '<div style="display:flex;gap:6px;align-items:center;margin:2px 0"><span style="flex:1;color:#345">'+(i+1)+'. ['+esc(x.type)+']'+((x.q&&x.q._kw)?(' <b style="color:#6D45B8">#'+esc(x.q._kw)+'</b>'):'')+' '+esc(String(x.q.instruction||"").slice(0,42))+'… <span style="color:#9ab;font-size:7.5pt">'+esc(x.ts)+'</span></span><button class="ghost" style="font-size:8pt;padding:1px 7px;color:#b03a2e" onclick="qbDel('+i+')">삭제</button></div>'; }).join(""):'<div class="note">아직 저장된 문항이 없습니다. 출제 후 결과 상단 [🗃 뱅크에 누적]을 누르면 쌓입니다.</div>');
 }
 function qbToggle(){ var el=document.getElementById("qbList"); if(!el) return; qbRender(); el.style.display=(el.style.display==="none")?"":"none"; }
 qbBadge();
@@ -1026,7 +1061,9 @@ function doTransform(level){
 function qHtml(q,i,no,isChild){
   if(no==null) no=i+1;
   var tools=isChild?'':(' <button class="ghost noprint" style="font-size:8pt;padding:3px 9px;margin-left:6px" onclick="regenOne('+i+')">🔄 재생성</button> <button class="ghost noprint" style="font-size:8pt;padding:3px 9px" onclick="showExplain('+i+')">📖 해설지</button> <button class="ghost noprint" style="font-size:8pt;padding:3px 9px" onclick="reviewOne('+i+')">🔍 정밀검수</button>');
-  var h='<div class="q" id="q_'+(isChild?('c_'+no):i)+'"><div class="h">'+no+'. '+esc(q.type)+' <span class="chip">AI</span>'+tools+'</div><div class="ins">'+esc(q.instruction)+'</div>';
+  var kwtag=q._kw?(' <span class="chip noprint" style="background:#ece9ff;color:#4a3fa5;cursor:pointer" onclick="kwHighlight(\''+esc(q._kw).replace(/'/g,"&#39;")+'\')" title="키워드 태그 — 클릭하면 같은 키워드 문항을 연결 표시">#'+esc(q._kw)+'</span>'):'';
+  var chk=''; try{ if(window.T&&T.reviewCode){ var _fl=T.reviewCode(q, q.passage||LASTPASSAGE)||[]; chk=_fl.length?(' <span class="chip noprint" style="background:#fdece9;color:#a03a2e" title="코드 검증 지적: '+esc(_fl.join(" / "))+'">⚠ 형식'+_fl.length+'</span>'):(' <span class="chip noprint" style="background:#e7f5ee;color:#0f766e" title="코드 검증(정답 범위·선지 중복·형식) 통과">✓</span>'); } }catch(_e){}
+  var h='<div class="q" id="q_'+(isChild?('c_'+no):i)+'"><div class="h">'+no+'. '+esc(q.type)+' <span class="chip">AI</span>'+kwtag+chk+tools+'</div><div class="ins">'+esc(q.instruction)+'</div>';
   if(q.passage&&!isChild) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
   if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
   var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
@@ -1081,7 +1118,7 @@ function render(items){
   });
   h+='</div><div style="margin-top:12px;border-top:2px solid #223;padding-top:7px"><b>[정답표]</b> '+key.map(function(k){ return k.no+'.'+(k.a?(CIRC[k.a-1]||k.a):'서술'); }).join('  ')+'</div>';
   h+='</div>';
-  h+='<div class="row noprint" style="margin-top:10px;border-top:1px dashed #ccc;padding-top:8px"><b style="font-size:9.5pt">🗂 정리</b><button class="ghost" onclick="qbSaveAll()">🗃 문제뱅크 누적</button><button class="ghost" onclick="bankSave(\'work\')">💾 지문뱅크 저장</button><button class="ghost" onclick="copyResult()">📋 복사</button><button class="ghost" onclick="previewWorkbook()">👁 미리보기</button><button class="ghost" onclick="downloadWorkbook()">📘 워크북 Word</button><button class="ghost" onclick="printWorkbook()">📘 워크북 PDF</button><button class="ghost" onclick="downloadDoc()">⬇ Word(시험지)</button><button class="ghost" onclick="window.print()">🖨 인쇄</button><span class="note">누적한 문제는 ① 카드 🗃 문제뱅크에서 언제든 합본 시험지로</span></div>';
+  h+='<div class="row noprint" style="margin-top:10px;border-top:1px dashed #ccc;padding-top:8px"><b style="font-size:9.5pt">🗂 정리</b><button class="ghost" onclick="qbSaveAll()">🗃 문제뱅크 누적</button><button class="ghost" onclick="bankSave(\'work\')">💾 지문뱅크 저장</button><button class="ghost" onclick="copyResult()">📋 복사</button><button class="ghost" onclick="previewWorkbook()">👁 미리보기</button><button class="ghost" onclick="downloadWorkbook()">📘 워크북 Word</button><button class="ghost" onclick="printWorkbook()">📘 워크북 PDF</button><button class="ghost" onclick="makeAnalysis()">📑 분석지</button><button class="ghost" onclick="downloadDoc()">⬇ Word(시험지)</button><button class="ghost" onclick="window.print()">🖨 인쇄</button><span class="note">누적한 문제는 ① 카드 🗃 문제뱅크에서 언제든 합본 시험지로</span></div>';
   document.getElementById("out").innerHTML=h+'</div>';
 }
 function regenOne(i){
@@ -1137,6 +1174,119 @@ function previewWorkbook(){
   document.getElementById("wbFrame").srcdoc=html;
   box.scrollIntoView({behavior:"smooth",block:"start"});
 }
+/* ===== 📑 분석지: A4 가로 2쪽 · 기능색 6색 · 1-3-5(1쪽 1목적, 핵심블록 3, 암기 5) ===== */
+var ANFN={core:["핵심개념","#2563EB"],evidence:["근거·조건","#16845B"],logic:["논리·전환","#B45309"],grammar:["문법·구문","#C0265A"],claim:["주장·출제핵심","#6D45B8"],aux:["보조","#59616E"]};
+function buildAnalysisHtml(d){
+  var lg=Object.keys(ANFN).map(function(k){return '<span style="display:inline-flex;align-items:center;gap:4px;margin-right:9px;font-size:8pt;color:#444"><span style="width:9px;height:9px;border-radius:50%;background:'+ANFN[k][1]+'"></span>'+ANFN[k][0]+'</span>';}).join("");
+  var rows=d.sents.map(function(s){ var c=ANFN[s.fn]||ANFN.aux;
+    return '<tr><td style="width:24px;color:#889;font-weight:800;vertical-align:top;padding:5px 4px;font-size:9pt">'+s.n+'</td><td style="border-left:3.5px solid '+c[1]+';padding:4px 9px 6px;vertical-align:top"><div style="font-size:10pt;line-height:1.55">'+esc(s.en)+'</div><div style="color:#374151;font-size:9pt;margin-top:2px">'+esc(s.ko)+'</div>'+(s.syntax?('<div style="margin-top:2px"><span style="background:#fdf2f6;color:'+ANFN.grammar[1]+';border-radius:7px;padding:1px 7px;font-size:7.8pt;font-weight:700">구문</span> <span style="font-size:8.6pt;color:#555">'+esc(s.syntax)+'</span></div>'):'')+'</td></tr>';
+  }).join("");
+  var flow=(d.flow||[]).map(function(f){return '<span style="background:#fff7ed;border:1px solid #fed7aa;color:#B45309;border-radius:9px;padding:3px 9px;font-size:8.6pt;font-weight:700;white-space:nowrap">'+f.n+' '+esc(f.role)+'</span>';}).join(' <span style="color:#c9c2b4">→</span> ');
+  var voc=(d.vocab||[]).map(function(v){return '<tr style="border-bottom:1px solid #eee"><td style="padding:5px 8px;font-weight:800">'+esc(v.w)+'</td><td style="padding:5px 8px">'+esc(v.ko||"")+'</td><td style="padding:5px 8px;color:#567">'+esc(v.syn||"")+'</td></tr>';}).join("");
+  var pts=(d.points||[]).map(function(p,i){return '<div style="margin:6px 0;padding:7px 10px;border-left:3.5px solid '+ANFN.claim[1]+';background:#f7f4fd;font-size:9.4pt;line-height:1.5">'+(i+1)+'. '+esc(p)+'</div>';}).join("");
+  var gsyn=d.sents.filter(function(s){return s.fn==="grammar"&&s.syntax;}).slice(0,3).map(function(s){return '<div style="margin:5px 0;font-size:9pt"><b style="color:'+ANFN.grammar[1]+'">'+s.n+'번</b> '+esc(s.syntax)+'</div>';}).join("");
+  return '<html><head><meta charset="utf-8"><title>지문 분석지</title><style>@page{size:A4 landscape;margin:9mm} body{font-family:\'Malgun Gothic\',sans-serif;color:#1f2937;margin:0} table{border-collapse:collapse;width:100%}</style></head><body>'
+   +'<div style="page-break-after:always;padding:3mm 2mm"><div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2.5px solid #1f2937;padding-bottom:6px;margin-bottom:7px;gap:10px;flex-wrap:wrap"><div><b style="font-size:13pt">📖 지문 분석지 · Page 1 — 정독</b><div style="font-size:9pt;color:#445;margin-top:3px"><b style="color:'+ANFN.core[1]+'">주제</b> '+esc(d.topic)+' &nbsp;&nbsp;<b style="color:'+ANFN.claim[1]+'">주장</b> '+esc(d.thesis)+'</div></div><div style="padding-top:2px">'+lg+'</div></div><table>'+rows+'</table></div>'
+   +'<div style="padding:3mm 2mm"><div style="border-bottom:2.5px solid #1f2937;padding-bottom:6px;margin-bottom:10px"><b style="font-size:13pt">🧠 지문 분석지 · Page 2 — 암기·출제</b> <span style="font-size:8.6pt;color:#889">핵심블록 3 · 암기 5</span></div>'
+   +'<div style="margin-bottom:12px"><b style="color:'+ANFN.logic[1]+';font-size:10.5pt">① 논리 흐름</b><div style="margin-top:6px;line-height:2.1">'+flow+'</div></div>'
+   +'<div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap"><div style="flex:1;min-width:280px"><b style="color:'+ANFN.evidence[1]+';font-size:10.5pt">② 암기 어휘 5</b><table style="margin-top:6px;font-size:9.4pt">'+voc+'</table></div>'
+   +'<div style="flex:1;min-width:280px"><b style="color:'+ANFN.claim[1]+';font-size:10.5pt">③ 출제 포인트</b>'+pts+(gsyn?('<div style="margin-top:8px"><b style="color:'+ANFN.grammar[1]+';font-size:9.5pt">구문 포인트</b>'+gsyn+'</div>'):'')+'</div></div></div>'
+   +'</body></html>';
+}
+function makeAnalysis(){
+  var pgs0=parsePassages(); if(pgs0.length>1){ alert("분석지는 한 번에 한 지문 — 작업대 칩에서 하나만 남기세요."); return; }
+  var p=pgs0[0]||srcPassage();
+  if(p.length<60){ alert("분석할 지문을 먼저 입력하세요(60자 이상)."); return; }
+  var box=document.getElementById("wbPrev"); if(!box) return;
+  box.style.display="";
+  box.innerHTML='<div class="card" style="border:1.5px solid #cfc9ee"><b>📑 분석지 제작 중…</b> <span class="note">문장 분할 → AI 문장별 해석·구문·기능 분석 → 기능색 조판(A4 가로 2쪽)</span><div class="skel"></div></div>';
+  box.scrollIntoView({behavior:"smooth",block:"start"}); GENERATING=true;
+  T.analysisSheet(p,{}).then(function(d){
+    GENERATING=false;
+    if(!d){ box.innerHTML='<div class="card">분석지 생성 실패 — 잠시 후 다시 시도해 주세요(무료 한도일 수 있습니다).</div>'; return; }
+    window.__ANHTML=buildAnalysisHtml(d);
+    box.innerHTML='<div class="card" style="border:1.5px solid #cfc9ee"><div class="row" style="align-items:center"><b style="flex:1">📑 분석지 <span class="note">A4 가로 2쪽 · 기능색 6색 · Page1 정독 → Page2 암기(1-3-5)</span></b><button class="ghost" onclick="downloadAnalysis()">📑 Word</button><button class="ghost" onclick="printAnalysis()">📑 PDF(인쇄)</button><button class="ghost" onclick="document.getElementById(\'wbPrev\').style.display=\'none\'">닫기</button></div><iframe id="anFrame" style="width:100%;height:560px;border:1px solid #d5d0ee;border-radius:9px;background:#fff;margin-top:6px"></iframe></div>';
+    document.getElementById("anFrame").srcdoc=window.__ANHTML;
+    workLog("📑 분석지 생성 — "+d.sents.length+"문장 분석·암기 어휘 "+(d.vocab||[]).length+"개");
+  }).catch(function(e){ GENERATING=false; box.innerHTML='<div class="card">분석지 오류: '+esc(e.message)+'</div>'; });
+}
+function downloadAnalysis(){ if(!window.__ANHTML){ alert("먼저 분석지를 만드세요."); return; } var blob=new Blob(["﻿",window.__ANHTML],{type:"application/msword"}); var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="지문_분석지_"+new Date().toISOString().slice(0,10)+".doc"; a.click(); }
+function printAnalysis(){ if(!window.__ANHTML){ alert("먼저 분석지를 만드세요."); return; } var w=window.open("","_blank"); if(!w){ alert("팝업 허용이 필요합니다."); return; } w.document.write(window.__ANHTML); w.document.close(); setTimeout(function(){ w.print(); },300); }
+/* ===== 🔑 키워드 조합 시스템: AI 추출+직접 수정 → 키워드×유형 조합표 → 생성·태그·연결 ===== */
+var KW=[], KWDONE={};
+var KINDCOL={"어휘":"#16845B","구문":"#C0265A","개념":"#2563EB","연결어":"#B45309"};
+function kwRender(){
+  var el=document.getElementById("kwChips"); if(!el) return;
+  el.innerHTML=KW.map(function(x,i){ return '<span class="wchip" style="border-color:'+(KINDCOL[x.kind]||"#d9d2f5")+'55"><b style="color:'+(KINDCOL[x.kind]||"#4a3fa5")+'">'+esc(x.k)+'</b> <span style="color:#98a">'+esc(x.kind)+'</span>'+(x.why?(' · <span title="'+esc(x.why)+'">'+esc(x.why.slice(0,16))+(x.why.length>16?"…":"")+'</span>'):'')+' <button class="wx" onclick="kwDel('+i+')">✕</button></span>'; }).join("");
+  kwMatrixRender();
+}
+function kwAdd(){ var inp=document.getElementById("kwInput"); var v=(inp.value||"").trim(); if(!v) return; if(KW.some(function(x){return x.k===v;})){ inp.value=""; return; } KW.push({k:v,kind:"어휘",why:"직접 추가"}); inp.value=""; kwRender(); workLog("🔑 키워드 추가: "+esc(v)); }
+function kwDel(i){ KW.splice(i,1); kwRender(); }
+function kwExtract(){
+  var pgs0=parsePassages(); if(pgs0.length>1){ alert("키워드 추출은 지문 1개일 때 지원합니다 — 칩에서 하나만 남기세요."); return; }
+  var p=pgs0[0]||srcPassage(); if(p.length<60){ alert("지문을 먼저 입력하세요(60자 이상)."); return; }
+  var b=document.getElementById("kwBtn"); b.disabled=true; b.textContent="🔑 추출 중…"; GENERATING=true;
+  T.extractKeywords(p,{}).then(function(ks){
+    GENERATING=false; b.disabled=false; b.textContent="🔑 키워드 추출";
+    if(!ks||!ks.length){ alert("키워드 추출 실패 — 다시 시도해 주세요."); return; }
+    KW=ks; kwRender();
+    workLog("🔑 키워드 "+ks.length+"개 추출 — 조합표에서 ◯를 눌러 키워드 중심 문항을 뽑으세요");
+  }).catch(function(e){ GENERATING=false; b.disabled=false; b.textContent="🔑 키워드 추출"; alert("오류: "+e.message); });
+}
+function kwMatrixRender(){
+  var el=document.getElementById("kwMatrix"); if(!el) return;
+  if(!KW.length){ el.innerHTML=""; return; }
+  var types=chosen();
+  if(!types.length){ el.innerHTML='<span class="note">③에서 출제 유형을 선택하면 [키워드 × 유형] 조합표가 나타납니다.</span>'; return; }
+  var h='<table style="border-collapse:collapse;font-size:8.6pt;min-width:60%"><tr><th style="text-align:left;padding:3px 6px;color:#667;font-weight:700">키워드 ＼ 유형</th>'+types.map(function(t){ return '<th style="padding:3px 6px;color:#667;font-weight:700;white-space:nowrap">'+esc(t)+'</th>'; }).join("")+'</tr>';
+  KW.forEach(function(x,ki){
+    h+='<tr style="border-top:1px solid #eee"><td style="padding:3px 6px;white-space:nowrap"><b style="color:'+(KINDCOL[x.kind]||"#556")+'">'+esc(x.k)+'</b></td>';
+    types.forEach(function(t){
+      var done=KWDONE[x.k+"|"+t];
+      h+='<td style="text-align:center;padding:2px 4px">'+(done!=null
+        ?'<span title="생성됨 — 클릭하면 해당 문항으로 이동" style="cursor:pointer;color:#0f766e;font-weight:800;font-size:10pt" onclick="kwGoto('+done+')">◉</span>'
+        :'<button class="ghost" style="font-size:8pt;padding:1px 8px" title="'+esc(x.k)+' × '+esc(t)+' 조합 생성" onclick="kwGen('+ki+',this.getAttribute(\'data-t\'))" data-t="'+esc(t)+'">◯</button>')+'</td>';
+    });
+    h+='</tr>';
+  });
+  var remain=0; KW.forEach(function(x){ types.forEach(function(t){ if(KWDONE[x.k+"|"+t]==null) remain++; }); });
+  h+='</table><div class="row" style="margin-top:4px"><button class="ghost" style="font-size:8.6pt" onclick="kwGenAll()">⚡ 빈 조합 전체 생성 ('+remain+'개)</button><span class="note">◯=생성 가능 · ◉=생성됨(클릭 이동) — 모든 경우의 수를 채우면 지문 하나로 완전 커버</span></div>';
+  el.innerHTML=h;
+}
+async function kwGen(ki,type){
+  var x=KW[ki]; if(!x||!type) return;
+  var pgs0=parsePassages(); if(pgs0.length>1){ alert("조합 생성은 지문 1개일 때 지원합니다."); return; }
+  var p=pgs0[0]||srcPassage(); if(p.length<40){ alert("지문을 먼저 작업대에 추가하세요."); return; }
+  if(GENERATING){ alert("다른 작업이 진행 중입니다 — 잠시 후 시도하세요."); return; }
+  GENERATING=true; logln("🔑 ["+x.k+" × "+type+"] 키워드 중심 생성…");
+  try{
+    var q=await T.generateOne(p, type, {fast:getFast(), level:getLevel(), hint:"이 문항은 반드시 키워드 '"+x.k+"'("+x.kind+(x.why?(" · "+x.why):"")+")를 중심 출제 포인트로 삼아라. 정답 근거가 이 키워드와 직결되어야 한다."});
+    if(q){
+      q._kw=x.k;
+      if(!LASTPASSAGE) LASTPASSAGE=p; else if(LASTPASSAGE!==p&&!q.passage) q.passage=p;
+      LASTITEMS=LASTITEMS||[]; LASTITEMS.push(q);
+      KWDONE[x.k+"|"+type]=LASTITEMS.length-1;
+      render(LASTITEMS); kwMatrixRender();
+      logln("   ↳ 완성 ("+LASTITEMS.length+"번 문항, #"+x.k+")");
+    } else logln("   ↳ 생성 실패 — 다른 유형과의 조합을 시도해 보세요");
+  }catch(e){ logln("   ↳ 오류: "+e.message); }
+  GENERATING=false;
+}
+async function kwGenAll(){
+  var types=chosen(); var todo=[];
+  KW.forEach(function(x,ki){ types.forEach(function(t){ if(KWDONE[x.k+"|"+t]==null) todo.push([ki,t]); }); });
+  if(!todo.length) return;
+  if(todo.length>12&&!confirm("빈 조합이 "+todo.length+"개입니다. 시간이 걸릴 수 있어요(조합당 수십 초). 진행할까요?")) return;
+  for(var i=0;i<todo.length;i++){ logln("⚡ 조합 "+(i+1)+"/"+todo.length); await kwGen(todo[i][0],todo[i][1]); }
+  logln("⚡ 조합 생성 종료 — 조합표에서 ◉를 눌러 문항으로 이동할 수 있습니다");
+}
+function kwGoto(idx){ var el=document.getElementById("q_"+idx); if(!el){ alert("해당 문항이 화면에 없습니다(재생성 등으로 번호가 바뀌었을 수 있음)."); return; } el.scrollIntoView({behavior:"smooth",block:"center"}); el.style.outline="2.5px solid #6D45B8"; el.style.outlineOffset="3px"; setTimeout(function(){ el.style.outline=""; },2500); }
+function kwHighlight(k){
+  [].forEach.call(document.querySelectorAll(".q"),function(el){ el.style.outline=""; });
+  var n=0; (LASTITEMS||[]).forEach(function(q,i){ if(q._kw===k){ var el=document.getElementById("q_"+i); if(el){ el.style.outline="2.5px solid #6D45B8"; el.style.outlineOffset="3px"; n++; } } });
+  logln("🔗 #"+k+" 연결 문항 "+n+"개 강조(2.5초)");
+  setTimeout(function(){ [].forEach.call(document.querySelectorAll(".q"),function(el){ el.style.outline=""; }); },2500);
+}
 function downloadDoc(){
   var src=document.getElementById("paper")||document.getElementById("qlist"); if(!src){ alert("먼저 문제를 만드세요."); return; }
   var cl=src.cloneNode(true);
@@ -1152,7 +1302,7 @@ function buildTypeChips(){
   var sel={}; try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); (s.t||[]).forEach(function(x){sel[x]=1;}); }catch(e){}
   var hasSel=Object.keys(sel).length, DEFL={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1};
   tdiv.innerHTML="";
-  list.forEach(function(t){ var on=hasSel?!!sel[t]:!!DEFL[t]; var l=document.createElement("label"); l.className=on?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(on?" checked":"")+'>'+t; l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); updateEstimate(); saveState(); }; tdiv.appendChild(l); });
+  list.forEach(function(t){ var on=hasSel?!!sel[t]:!!DEFL[t]; var l=document.createElement("label"); l.className=on?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(on?" checked":"")+'>'+t; l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); }; tdiv.appendChild(l); });
   updateEstimate();
 }
 var DBURL=new URLSearchParams(location.search).get("db")||"knowledge/types_v2.json";
@@ -1200,6 +1350,12 @@ function foldify(ids, collapsed){
   });
 }
 modeInit(); obsInit(); obsShow("meshCard"); agentReset();
+/* Ctrl+Enter = 바로 출제 (지문/작업대 입력 중) */
+document.addEventListener("keydown",function(e){
+  if((e.ctrlKey||e.metaKey)&&e.key==="Enter"&&!GENERATING){
+    var t=e.target; if(t&&(t.id==="passage"||t.id==="workPassage")){ e.preventDefault(); run(); }
+  }
+});
 /* 간단 모드: 출제자가 몰라도 되는 내부 요소를 전문가 모드로 이동 */
 (function(){
   var ids=["obsCard","obsWrap","meetCard"];
