@@ -1,6 +1,48 @@
 {
- "updated": "2026-07-03T04:22:18.893Z",
+ "updated": "2026-07-03T07:51:07.900Z",
  "samples": [
+  {
+   "ts": "2026-07-03T07:47:55.175Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 3/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "문장 논증은 문맥 속에서 주어와 목적어를 연결하는 역할을 한다.",
+     "문장 논증은 주동사의 두 번째 논증으로서 말하거나 믿는 내용을 표현하며, 때로는 술어의 유일한 논증이 될 수 있다.",
+     "문장 논증은 말한 내용이 아니라 행동의 결과를 설명한다.",
+     "문장 논증은 모든 문법적 요소를 통합해 문장을 완성한다.",
+     "문장 논증은 주동사의 첫 번째 논증으로서 의미를 전달한다."
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'In grammatical analysis, a sentential argument functions as the second argument of a main verb, expressing what is said or believed, and can even serve as the sole argument of the predicate.'이며 정답 (문장 논증은 주동사의 두 번째 논증으로서 말하거나 믿는 내용을 표현하며, 때로는 술어의 유일한 논증이 될 수 있다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: In grammatical analysis, a sentential argument functions as the second argument of a main verb, expressing what is said or believed, and can even serve as the sole argument of the predicate.]"
+   }
+  },
+  {
+   "ts": "2026-07-03T07:51:03.879Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트를 코드가 구성)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Page 41 In (41b, c) the p__________ expressed by the embedded sentence is the second argument of the main verb – the proposition is what is said or what is believed. (Sentences about thinking and believing are discussed in Section 5.5.) The clearest examples of sentential arguments are found with verbs, but plausibly members of other word classes can also have sentential arguments. In (42a) it seems that the new car, the source of Shirley’s pride, is the second argument of proud. In (42b, c) the embedded sentence also expresses the source of pride, the second argument of proud, and so the propositions can be represented as in (43). A sentential argument may also be the only argument of the main predicate in a sentence, for example: For a review of this section, see the exercises in Part B at the end of the chapter. 2.4 THE LOGICAL QUANTIFIERS 2.4.1 The Universal Quantifier The atomic propositions we have discussed so far have had individual arguments, referred to by names or noun phrases like the dog, with logical forms like these: < previous page page_41 next page >",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] proposition — 문단의 논지상 이 자리에는 'proposition'가 유일하게 자연스럽다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-03T04:21:41.853Z",
    "type": "밑줄함의",
@@ -234,44 +276,6 @@
     ],
     "answer": 5,
     "explanation": "정답 진술만 글과 모순한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-02T07:50:24.586Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "솔버 3/3 일치",
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은? (원지문 동반 필수)",
-    "passage": "In D‑structure, the elements interpreted as the subject or object of a predicate are placed in the corresponding subject or object positions, illustrating the (A) of the predicate to its arguments and the resulting (B) at D‑structure.",
-    "choices": [
-     "(A) thematic relations … (B) role assignment",
-     "(A) thematic relations … (B) lexical semantics",
-     "(A) pragmatic relations … (B) role assignment",
-     "(A) role assignment … (B) thematic relations",
-     "(A) semantic similarity … (B) syntactic complexity"
-    ],
-    "answer": 1,
-    "explanation": "(A) thematic relations / (B) role assignment 가 글의 요지를 정확히 요약한다.\n【출제의도】 글의 요지를 한 문장으로 압축하며 두 핵심어(A·B)를 정확히 채우는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-02T07:55:57.105Z",
-   "type": "필자주장",
-   "level": "중",
-   "audit": "어법 의심 1건 · ⚠ 솔버 응답 없음(판정 보류)",
-   "q": {
-    "instruction": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "a purely syntactic representation of predicates ignoring thematic roles",
-     "a purely historical account of predicate usage",
-     "a comprehensive model of predicates, arguments, syntax, semantics, and discourse",
-     "a representation of predicates assigning arguments",
-     "a purely thematic representation of predicates assigning roles to arguments"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'D‑structure is a purely thematic representation in which predicates assign thematic roles to arguments, determining their subject or object positions regardless of their surface syntactic positions.'이며 정답 (인수에 역할을 할당하는 술어의 순전히 주제별 표현)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: D‑structure is a purely thematic representation in which predicates assign thematic roles to arguments, determining their subject or object positions regardless of their surface syntactic positions.]"
    }
   }
  ]
