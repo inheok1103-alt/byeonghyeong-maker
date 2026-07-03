@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-03T07:51:07.900Z",
+ "updated": "2026-07-03T11:12:38.381Z",
  "samples": [
+  {
+   "ts": "2026-07-03T11:07:57.982Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "EXERCISE 28b — Write three sentences using the objects in parentheses. Be sure to put the objects in the right place. 1. ⓐ<u>The White House beefed uped.</u> (security, it) 2. ⓑ<u>The police are breaking up.</u> (the protest, it) 3. ⓒ<u>A trained technician ought to carry outed.</u> (the experiment, it) 4. ⓓ<u>The foundation gave away.</u> (the money, it) 5. ⓔ<u>Susie always messes ups.</u> (the bathroom, it) 6. Todd stood up. (Heather, her) EXERCISE 28c — Write answers to the questions using phrasal verbs and participle adjectives from this unit. Make all the phrasal verbs passive. 1. Dr. Wood will do the test of the new drug. What will happen to the test? 2. The statue was smashed by thieves. What happened to the gold statue? 3. The children made the house dirty and disorganized. What happened to the house? 4. In Question 3, how would you describe the house? 5. Mike’s friend promised to come to his house, but he didn’t. What happened to Mike? 6. Karen called Sarah, but Sarah was at school. Sarah didn’t call Karen later. What didn’t happen to Karen?",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 3,
+    "explanation": "틀린 곳은 ⓐ(The White House beefed uped. → The White House beefed up.), ⓒ(A trained technician ought to carry outed. → A trained technician ought to carry out.), ⓔ(Susie always messes ups. → Susie always messes up.) — 총 3개.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-03T07:47:55.175Z",
    "type": "요지",
@@ -257,25 +281,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Markedness bias in language causing gendered misperception.'이며 정답 (성별에 따른 잘못된 인식으로 이어지는 언어의 현저함 편향)이 이를 반영한다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Markedness bias in language causing gendered misperception.]"
-   }
-  },
-  {
-   "ts": "2026-07-02T07:46:11.662Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 3/3 일치",
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "",
-    "choices": [
-     "D-구조는 의미 역할(thematic relations)의 순수한 표현으로 간주된다.",
-     "어떤 요소가 표면 구조(S-structure)에서 어디에 위치하든, D-구조에서는 해당 요소가 특정 서술어의 주어나 목적으로 해석되는 경우 그 서술어의 주어나 목적어 자리에 놓인다.",
-     "D-구조 위치를 결정하는 원칙들은 의미 관계와 관련이 있어야 한다.",
-     "서술어의 어휘 항목에 인코딩된 세타 역할은 문장 내 논항에 할당되는 방식으로 전달된다.",
-     "예시 문장에서 Ken은 D-구조에서 'confused'의 목적어로 해석되는 것이 아니라 주어로 해석된다."
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 모순한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
