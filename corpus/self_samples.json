@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-03T18:00:36.741Z",
+ "updated": "2026-07-03T20:02:44.462Z",
  "samples": [
+  {
+   "ts": "2026-07-03T19:58:57.784Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 3/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "",
+    "choices": [
+     "동사 believe와 같은 동사의 비유한 보어절은 IP 상태이며 완전한 CP가 아니다.",
+     "동사 believe와 같은 동사의 비유한 보어절은 CP 상태이며 완전한 CP이다.",
+     "동사 believe와 같은 동사의 비유한 보어절은 CP이며 IP가 아니다.",
+     "동사 believe와 같은 동사의 비유한 보어절은 완전한 CP로 간주된다.",
+     "동사 believe와 같은 동사의 비유한 보어절은 CP이며 IP가 아니라는 것이 사실이다."
+    ],
+    "answer": 1,
+    "explanation": "정답 진술만 글과 일치한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-03T17:59:56.365Z",
    "type": "요지",
@@ -251,30 +275,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The passage argues that strings appearing as constituents in coordinated structures cannot be true constituents under the proposed sentence architecture, necessitating a reevaluation of constituent status and the treatment of adjective phrases within the VP.'이며 정답 (A. 구성 지위 재평가 및 VP 내 형용사 구문 처리)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: The passage argues that strings appearing as constituents in coordinated structures cannot be true constituents under the proposed sentence architecture, necessitating a reevaluation of constituent status and the treatment of adjective phrases within the VP.]"
-   }
-  },
-  {
-   "ts": "2026-07-02T15:40:33.983Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "English Question Construction with Auxiliary Subject Verb",
-     "Passive Voice Formation Using Auxiliary Verbs",
-     "Subject–Verb Order in Declarative Sentences Usage",
-     "Historical Development of the English Language Grammar",
-     "Comprehensive Overview of English Grammar Rules"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'English question formation with auxiliary + subject + verb order'이며 정답 (보조 주제 동사 영어로 질문 형성)이 이를 반영한다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: English question formation with auxiliary + subject + verb order]"
    }
   }
  ]
