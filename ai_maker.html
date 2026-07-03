@@ -369,6 +369,20 @@ body.simple .expert{display:none!important}
       <div style="font-size:10.5pt;font-weight:800;color:#4a3fa5;margin-bottom:2px">♾ 무한 모드 <span class="note" style="font-weight:400">— 무료 한도를 사실상 무제한으로</span></div>
       <div id="infStat" class="note" style="margin:2px 0 8px">현재: 확인 중…</div>
 
+      <details class="fold" style="margin:0 0 8px">
+        <summary style="cursor:pointer;font-weight:700;color:#4a3fa5">📖 각 키 발급·무료 사용법 (클릭해서 펼치기)</summary>
+        <div style="font-size:8.6pt;line-height:1.6;background:#f6f6fc;border-radius:8px;padding:8px 11px;margin-top:5px">
+          <div style="color:#889;margin-bottom:5px">공통: 아래 링크에서 구글/이메일로 <b>무료 가입</b> → API Key 생성 → 복사해 아래 칸에 붙여넣기. 계정을 여러 개 만들면 키도 여러 개(한도 N배). 모든 키는 <b>내 브라우저에만</b> 저장됩니다.</div>
+          <div style="margin:4px 0"><b>① Gemini</b> <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a><br>구글 로그인 → <b>Create API key</b> → <code>AIza…</code> 복사. 무료 한도가 가장 큼(권장 1순위). 구글 계정마다 키 1개.</div>
+          <div style="margin:4px 0"><b>② Groq</b> <a href="https://console.groq.com/keys" target="_blank">console.groq.com/keys</a><br>가입 → API Keys → <b>Create API Key</b> → <code>gsk_…</code>. llama-3.3-70b 초고속, 하루 토큰 한도.</div>
+          <div style="margin:4px 0"><b>③ Cerebras</b> <a href="https://cloud.cerebras.ai" target="_blank">cloud.cerebras.ai</a><br>가입 → API Keys → 생성 → <code>csk-…</code>. 매우 빠른 추론(무료 티어).</div>
+          <div style="margin:4px 0"><b>④ Mistral</b> <a href="https://console.mistral.ai/api-keys" target="_blank">console.mistral.ai/api-keys</a><br>가입(휴대폰 인증 가능) → API Keys → 생성. 무료 Experiment 플랜.</div>
+          <div style="margin:4px 0"><b>⑤ OpenRouter</b> <a href="https://openrouter.ai/keys" target="_blank">openrouter.ai/keys</a><br>가입 → Keys → 생성 → <code>sk-or-…</code>. 여러 무료 모델(<code>:free</code>) 사용, 분당·일일 제한.</div>
+          <div style="margin:4px 0"><b>⑥ Pollinations</b> — <b>키 불필요</b>. 아무 것도 안 넣어도 자동 작동(느림). 위 키들이 다 소진되면 최후 폴백.</div>
+          <div style="color:#889;margin-top:5px">가장 추천: <b>Gemini 2~3개 + Groq + Cerebras</b>만 넣어도 이 PC에서 하루 종일 넉넉합니다.</div>
+        </div>
+      </details>
+
       <details class="fold" style="border-top:1px dashed #ddd6f5;padding-top:7px;margin-top:2px" open>
         <summary style="cursor:pointer;font-weight:700;color:#0f766e">① 무료 클라우드 키 회전 = 한도 N배 <span class="note" style="font-weight:400">(이 PC에 가장 적합 · 설치 불필요)</span></summary>
         <div class="note" style="margin:4px 0 6px">여러 줄에 키를 하나씩 붙여넣으면 소진 시 <b>자동으로 다음 키·다음 제공자로 회전</b>. 내 브라우저에만 저장, 공개 안 됨. 제공자를 많이 넣을수록 사실상 무제한.</div>
@@ -454,7 +468,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704c"></script>
+<script src="api_team.js?v=20260704d"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
