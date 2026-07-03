@@ -1,6 +1,48 @@
 {
- "updated": "2026-07-03T13:24:50.169Z",
+ "updated": "2026-07-03T15:38:19.146Z",
  "samples": [
+  {
+   "ts": "2026-07-03T15:34:30.793Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 3/3 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Adjusting Pronouns in Reported Speech",
+     "Adapting Pronouns, Tense, Place in Reported Speech",
+     "Managing Speech in Communication",
+     "Preserving Original Pronouns, Tense, and Place in Reported Speech",
+     "Translating Idiomatic Expressions in Reported Speech"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Reported speech must adjust pronouns, tense, and time/place references to fit the reporter’s context.'이며 정답 (신고된 발화에서 대명사, 시제, 자리 바꾸기)이 이를 반영한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Reported speech must adjust pronouns, tense, and time/place references to fit the reporter’s context.]"
+   }
+  },
+  {
+   "ts": "2026-07-03T15:38:14.228Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 다른 사람이 말한 것을 신고하거나 다른 장소 또는 다른 시간에 신고할 때 변경해야 할 수 있습니다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-03T13:22:34.198Z",
    "type": "안내문불일치",
@@ -233,54 +275,6 @@
     ],
     "answer": 1,
     "explanation": "원문 전개 순서는 (A) - (C) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-02T13:17:49.127Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the challenge to the conventional Germanic tree model",
-     "the support for the conventional Germanic tree model",
-     "the debate over the structure of West Germanic languages",
-     "the detailed history of Shakespeare's plays and their adaptations",
-     "the discussion surrounding various linguistic classification systems worldwide"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The conventional tree model of Germanic languages is contested because linguistic evidence suggests alternative branching patterns, especially concerning the West Germanic group.'이며 정답 (기존 게르만 트리 모델의 경합)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: The conventional tree model of Germanic languages is contested because linguistic evidence suggests alternative branching patterns, especially concerning the West Germanic group.]"
-   }
-  },
-  {
-   "ts": "2026-07-02T11:13:10.756Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "베르펜트 잉글리시에서 'there'는 일반적으로 서술어의 관형사 역할을 한다.",
-     "베르펜트 잉글리시에서 'there'는 보조동사의 specifier에 위치한다.",
-     "베르펜트 잉글리시에서 'there'는 보조동사의 specifier에 위치하며, 질문문에서 보조동사와 함께 이동함으로써 그 문법적 기능을 보여준다.",
-     "베르펜트 잉글리시에서 'there'는 문장 전체에서 어떤 위치든 자유롭게 이동할 수 있다.",
-     "베르펜트 잉글리시에서 'there'는 보조동사의 specifier에 없으며 질문문에서도 이동하지 않는다."
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'In Belfast English, the expletive pronoun “there” occupies the specifier of the auxiliary (spec‑T) and can move with the auxiliary in questions, demonstrating its syntactic role.'이며 정답 (베르펜트 잉글리시에서 'there'는 보조동사의 지정자에 위치하며, 질문문에서 보조동사와 함께 이동함으로써 그 문법적 기능을 보여준다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: In Belfast English, the expletive pronoun “there” occupies the specifier of the auxiliary (spec‑T) and can move with the auxiliary in questions, demonstrating its syntactic role.]"
    }
   }
  ]
