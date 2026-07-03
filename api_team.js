@@ -1377,6 +1377,22 @@
     if (ks.length >= 3) return ks;
     return contentWords(passage).slice(0, 5).map(function (w) { return { k: w, kind: "어휘", why: "빈도 상위 핵심어" }; });
   }
+  // 원문 출처 추정: LLM이 저자·작품·출판물을 추정 + Google Books 실검색 → UI가 검색 링크와 함께 표시
+  async function findSource(passage, opts) {
+    opts = opts || {};
+    var snip = String(passage || "").slice(0, 500);
+    var o = await llmJSON([
+      { role: "system", content: "너는 영어 지문의 출처를 식별하는 전문가다(교과서·수능/모의고사·기사·원서·연설 등). 한국어로 답하되 JSON만." },
+      { role: "user", content: "다음 영어 지문의 출처를 최대한 추정하라. 확실하지 않으면 가장 그럴듯한 후보와 유형을 제시. JSON: {\"source\":\"추정 출처 설명(한국어)\",\"author\":\"저자(모르면 빈칸)\",\"title\":\"작품/글 제목(모르면 빈칸)\",\"kind\":\"원서|기사|수능/모의고사|교과서|연설|기타\",\"confidence\":\"상|중|하\"}\n\n지문:\n" + snip }
+    ], { noRule: true, temperature: 0.2, timeout: 45000 }).catch(function () { return null; });
+    var books = [];
+    try {
+      var q = (o && o.title) ? o.title : snip.split(/[.!?]/)[0];
+      var d = await getJSON("https://www.googleapis.com/books/v1/volumes?q=" + encodeURIComponent('"' + q.slice(0, 120) + '"') + "&maxResults=3&country=US", 12000);
+      books = ((d && d.items) || []).map(function (it) { var v = it.volumeInfo || {}; return { title: v.title || "", authors: (v.authors || []).join(", "), link: v.infoLink || v.canonicalVolumeLink || "" }; }).filter(function (b) { return b.title; });
+    } catch (_) {}
+    return { guess: o || null, books: books, query: snip.split(/\s+/).slice(0, 14).join(" ") };
+  }
 
   var BUILDERS = {
     "주제": function (p, o) { return buildInference(p, "주제", o); }, "제목": function (p, o) { return buildInference(p, "제목", o); }, "요지": function (p, o) { return buildInference(p, "요지", o); },
@@ -1673,6 +1689,10 @@
   async function transformStaged(passage, level, opts) {
     opts = opts || {}; var onP = opts.onProgress; level = level || "word";
     var trace = [], variant = "", changed = [];
+    // 매번 다르게: 온도 지터 + 변주 논스(같은 지문·같은 버튼을 다시 눌러도 다른 결과)
+    function _vt() { return 0.75 + Math.random() * 0.22; }
+    var _vn = (opts.nonce != null ? opts.nonce : Math.floor(Math.random() * 99999));
+    var _vd = " 여러 자연스러운 대안 중 이번엔(변주 #" + _vn + ") 직전 시도와 다른 어휘·구문을 선택하라.";
     if (level === "word") {
       log(onP, "① 내용어 동의어 수집(Datamuse syn)…");
       var cw = contentWords(passage).slice(0, 14), syn = {};
@@ -1680,7 +1700,7 @@
       trace.push({ line: 1, api: "datamuse", label: "동의어 " + Object.keys(syn).length + "어 수집", ok: true });
       var hint = Object.keys(syn).map(function (w) { return w + "→" + syn[w].join("/"); }).join(", ");
       log(onP, "② LLM 어휘 치환(구조 유지)…");
-      var o = await llmJSON([{ role: "system", content: "영어 교재 편집자. 문장 구조·어순·길이는 '그대로' 두고 내용어만 동의어로 교체한다. 의미 보존. JSON만." }, { role: "user", content: "아래 동의어 후보를 참고해 지문의 구조는 유지하고 핵심 내용어만 자연스러운 동의어로 바꿔라. 후보(강제 아님): " + (hint || "-") + "\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"어휘만 바뀐 지문\",\"changed\":[\"바뀐 단어쌍 예: happiness→well-being 5개\"]}. JSON만." }], { noRule: true, temperature: 0.5, timeout: 60000 });
+      var o = await llmJSON([{ role: "system", content: "영어 교재 편집자. 문장 구조·어순·길이는 '그대로' 두고 내용어만 동의어로 교체한다. 의미 보존. JSON만." }, { role: "user", content: "아래 동의어 후보를 참고해 지문의 구조는 유지하고 핵심 내용어만 자연스러운 동의어로 바꿔라." + _vd + " 후보(강제 아님): " + (hint || "-") + "\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"어휘만 바뀐 지문\",\"changed\":[\"바뀐 단어쌍 예: happiness→well-being 5개\"]}. JSON만." }], { noRule: true, temperature: _vt(), timeout: 60000 });
       trace.push({ line: 2, api: "llm", label: "어휘 치환", ok: !!(o && o.variant) });
       if (o) { variant = o.variant || ""; changed = o.changed || []; }
     } else if (level === "phrase") {
@@ -1689,12 +1709,12 @@
       await Promise.all(cw2.map(async function (w) { try { var b = await datamuse(w, "bgb", 3); if (b.length) col[w] = b; } catch (_) {} }));
       trace.push({ line: 1, api: "datamuse", label: "연어 확인", ok: true });
       log(onP, "② LLM 구문 재구성(어휘 유지)…");
-      var o2 = await llmJSON([{ role: "system", content: "영어 문장 구조 변형가. 어휘는 대부분 유지하되 절 순서·태·연결사·구 구조를 바꿔 같은 의미를 다른 구문으로 표현한다. JSON만." }, { role: "user", content: "지문의 각 문장을 '어휘는 최대한 유지'하되 구문(능동↔수동, 절 순서, 분사구문, 연결사)만 바꿔라. 의미 동일.\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"구문이 바뀐 지문\",\"changed\":[\"바꾼 구문 기법 few개\"]}. JSON만." }], { noRule: true, temperature: 0.55, timeout: 60000 });
+      var o2 = await llmJSON([{ role: "system", content: "영어 문장 구조 변형가. 어휘는 대부분 유지하되 절 순서·태·연결사·구 구조를 바꿔 같은 의미를 다른 구문으로 표현한다. JSON만." }, { role: "user", content: "지문의 각 문장을 '어휘는 최대한 유지'하되 구문(능동↔수동, 절 순서, 분사구문, 연결사)만 바꿔라. 의미 동일." + _vd + "\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"구문이 바뀐 지문\",\"changed\":[\"바꾼 구문 기법 few개\"]}. JSON만." }], { noRule: true, temperature: _vt(), timeout: 60000 });
       trace.push({ line: 2, api: "llm", label: "구문 재구성", ok: !!(o2 && o2.variant) });
       if (o2) { variant = o2.variant || ""; changed = o2.changed || []; }
     } else if (level === "sentence") {
       log(onP, "① LLM 문장 재구성(구조+어휘 새로, 내용 동일)…");
-      var o3 = await llmJSON([{ role: "system", content: "영어 리라이팅 전문가. 각 문장을 새 구조·새 어휘로 다시 쓰되 담긴 정보·논지는 동일하게 보존한다. JSON만." }, { role: "user", content: "지문을 문장 단위로 완전히 새로 써라(구조·표현·어휘 모두 새롭게, 그러나 정보·논리 흐름은 동일). 원문 표현 복사 금지.\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"재구성 지문\",\"changed\":[\"핵심 변화 few개\"]}. JSON만." }], { noRule: true, temperature: 0.6, timeout: 60000 });
+      var o3 = await llmJSON([{ role: "system", content: "영어 리라이팅 전문가. 각 문장을 새 구조·새 어휘로 다시 쓰되 담긴 정보·논지는 동일하게 보존한다. JSON만." }, { role: "user", content: "지문을 문장 단위로 완전히 새로 써라(구조·표현·어휘 모두 새롭게, 그러나 정보·논리 흐름은 동일). 원문 표현 복사 금지." + _vd + "\n\n[원문]\n" + passage + "\n\nJSON: {\"variant\":\"재구성 지문\",\"changed\":[\"핵심 변화 few개\"]}. JSON만." }], { noRule: true, temperature: _vt(), timeout: 60000 });
       trace.push({ line: 1, api: "llm", label: "문장 재구성", ok: !!(o3 && o3.variant) });
       if (o3) { variant = o3.variant || ""; changed = o3.changed || []; }
     } else { // theme
@@ -1706,7 +1726,7 @@
       var bg = kw ? await wiki(kw).catch(function () { return null; }) : null;
       trace.push({ line: 2, api: "wiki", label: "배경 조회", ok: !!bg });
       log(onP, "③ 주제 유지·전면 재창작…");
-      var o4 = await llmJSON([{ role: "system", content: "영어 지문 작가. 주어진 주제/논지만 유지하고 예시·전개·문장은 전부 새로 써서 완전히 다른 지문을 만든다(길이 유사, 수능 지문체). JSON만." }, { role: "user", content: "주제/논지: " + (theme || "") + (bg && bg.extract ? ("\n참고 배경: " + bg.extract.slice(0, 200)) : "") + "\n\n이 주제만 유지하고 새로운 예시·근거·전개로 완전히 새 지문(원문과 문장 겹침 금지, 100~140단어)을 써라.\n\nJSON: {\"variant\":\"새 지문\",\"changed\":[\"유지한 주제 1개\",\"새로 넣은 요소 few개\"]}. JSON만." }], { noRule: true, temperature: 0.7, timeout: 60000 });
+      var o4 = await llmJSON([{ role: "system", content: "영어 지문 작가. 주어진 주제/논지만 유지하고 예시·전개·문장은 전부 새로 써서 완전히 다른 지문을 만든다(길이 유사, 수능 지문체). JSON만." }, { role: "user", content: "주제/논지: " + (theme || "") + (bg && bg.extract ? ("\n참고 배경: " + bg.extract.slice(0, 200)) : "") + "\n\n이 주제만 유지하고 새로운 예시·근거·전개로 완전히 새 지문(원문과 문장 겹침 금지, 100~140단어)을 써라." + _vd + "\n\nJSON: {\"variant\":\"새 지문\",\"changed\":[\"유지한 주제 1개\",\"새로 넣은 요소 few개\"]}. JSON만." }], { noRule: true, temperature: _vt(), timeout: 60000 });
       trace.push({ line: 3, api: "llm", label: "주제유지 재창작", ok: !!(o4 && o4.variant) });
       if (o4) { variant = o4.variant || ""; changed = o4.changed || []; }
     }
@@ -1801,7 +1821,7 @@
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
-    analysisSheet: analysisSheet, extractKeywords: extractKeywords, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
+    analysisSheet: analysisSheet, extractKeywords: extractKeywords, findSource: findSource, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
     ollamaModels: async function (url) { try { var d = await getJSON(String(url || CFG.ollamaUrl).replace(/\/+$/, "") + "/api/tags", 4000); return (d && d.models || []).map(function (m) { return m.name; }); } catch (e) { return null; } },
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
