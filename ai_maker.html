@@ -66,6 +66,14 @@ details.fold[open]>summary::before{content:"▾ "}
 .xfpg{height:calc(100% - 20px);white-space:pre-wrap}
 mark.xfm{background:#fff2b8;border-radius:3px;padding:0 1px;box-shadow:inset 0 -1px 0 #f0d878}
 @media(max-width:640px){.xfcmp{flex-direction:column}}
+/* 완성본을 실제 시험지처럼 */
+#paper.exampaper{background:#fff;border:1px solid #d7d7d7;box-shadow:0 1px 7px rgba(0,0,0,.08);padding:18px 22px;border-radius:2px;font-family:'Malgun Gothic',sans-serif}
+#paper.exampaper .q{border:0;border-left:0;background:transparent;border-radius:0;padding:2px 0 9px;break-inside:avoid}
+#paper.exampaper .q .h{font-size:10.5pt}
+#paper.exampaper .pg{font-family:'Noto Serif KR',serif;background:#fff;border:1px solid #b8b8b8}
+#paper.cols2 #qlist{column-count:2;column-gap:9mm;column-rule:1px solid #e3e3e3}
+#paper.cols2 .q{break-inside:avoid;-webkit-column-break-inside:avoid}
+#paper.exampaper.hidebtn .q .h button,#paper.exampaper.hidebtn .ins~span,#paper.exampaper.hidebtn [id^=rvs_],#paper.exampaper.hidebtn [id^=rvb_],#paper.exampaper.hidebtn [id^=exp_]{display:none!important}
 .stepbar{display:flex;gap:8px;margin:10px 0 4px;flex-wrap:wrap}
 .step{flex:1;min-width:120px;background:var(--soft);border-radius:10px;padding:8px 11px;font-size:9pt;color:var(--mut);border-left:3px solid var(--line)}
 .step b{color:var(--ink);font-size:10pt}
@@ -239,6 +247,11 @@ body.simple .expert{display:none!important}
     <div class="row"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
     <div id="suggest"></div>
     <h2 style="margin-top:8px">③ 출제 유형 <button class="ghost noprint" style="font-size:8.5pt;padding:3px 9px" onclick="refreshDB()">🔄 유형 DB 새로고침</button> <span class="note" id="dbstat"></span></h2>
+    <div class="row" style="margin:2px 0 5px;gap:5px">
+      <button class="ghost" style="font-size:8.4pt;font-weight:700;color:#0f766e" onclick="selectAllTypes(true)" title="가능한 모든 유형 선택">✅ 전체 선택 <span id="typeCnt" class="note" style="font-weight:400"></span></button>
+      <button class="ghost" style="font-size:8.4pt" onclick="selectAllTypes(false)" title="전체 해제">⬜ 전체 해제</button>
+      <button class="ghost" style="font-size:8.4pt" onclick="selectRecommendedTypes()" title="자주 쓰는 핵심 유형만">⭐ 추천만</button>
+    </div>
     <div class="types" id="types"></div>
     <div class="row" style="margin-top:8px"><button class="ghost" onclick="showPipes()">🧪 파이프라인 설계도 보기</button><span class="note">선택 유형의 라인별 처리 + 담당 API (하네스가 라인 순서대로 실행)</span></div>
     <div id="pipes"></div>
@@ -345,11 +358,38 @@ body.simple .expert{display:none!important}
       <button class="ghost" onclick="composeDownloadDoc()">📘 Word 저장</button>
       <button class="ghost" onclick="composePrint()">🖨 PDF/인쇄</button>
     </div>
+    <div style="margin-top:9px;border-top:2px solid #e3d9f5;padding-top:8px;background:#faf8ff;border-radius:9px;padding:9px 11px">
+      <b style="font-size:9.6pt;color:#4a3fa5">📦 전체 세트 조립 <span class="note" style="font-weight:400">— 시험지 + 정답·해설지(분석 포함)를 하나로</span></b>
+      <div class="row" style="margin-top:5px">
+        <label style="font-size:9pt"><input type="checkbox" id="setAnswers" checked> 정답·해설지</label>
+        <label style="font-size:9pt" title="지문별 우리말 해석·구문 분석을 해설지에 추가(지문마다 AI 생성 — 다소 느림)"><input type="checkbox" id="setAnalysis"> 지문 분석(해석) 포함</label>
+        <span class="note" id="setStat"></span>
+      </div>
+      <div class="row" style="margin-top:6px">
+        <button class="go" style="font-size:10.5pt;padding:8px 16px;background:linear-gradient(135deg,#6d45b8,#8b5fd6)" onclick="composeSetPreview()">📦 세트 미리보기</button>
+        <button class="ghost" onclick="composeSetDoc()">📘 세트 Word</button>
+        <button class="ghost" onclick="composeSetPrint()">🖨 세트 PDF</button>
+        <span class="note">한 파일에 [시험지 → 정답·해설 → 지문분석] 순서로 조립됩니다</span>
+      </div>
+    </div>
     <div id="composePrev" style="margin-top:10px"></div>
   </div>
 
   <div class="card" id="mockCard">
     <h2>📋 동형 모의고사 <span class="note">Ray's Drill 원칙: 지문당 1~3문항 · 객관+서술 혼합 · 조작은 공통지문에 반영 · 1지문 다문항 세트 포함</span></h2>
+    <div style="background:#f7f9fc;border:1px solid #dde4ee;border-radius:10px;padding:8px 11px;margin-bottom:8px">
+      <b style="font-size:9.3pt;color:#345">🏫 시험지 머리표</b>
+      <div class="row" style="margin-top:5px;gap:6px">
+        <input id="mkSchool" placeholder="학교명 (예: OO고등학교)" style="flex:1;min-width:140px;padding:5px 8px;font-size:9pt">
+        <input id="mkExam" placeholder="시험명 (예: 3월 학력평가 대비)" style="flex:1;min-width:150px;padding:5px 8px;font-size:9pt">
+      </div>
+      <div class="row" style="margin-top:5px;gap:6px">
+        <input id="mkGrade" placeholder="학년 (예: 고2)" style="width:96px;padding:5px 8px;font-size:9pt">
+        <input id="mkSem" placeholder="학기 (예: 1학기)" style="width:110px;padding:5px 8px;font-size:9pt">
+        <input id="mkRound" placeholder="회차 (예: 3회)" style="width:100px;padding:5px 8px;font-size:9pt">
+        <input id="mkTime" placeholder="시간 (예: 70분)" style="width:100px;padding:5px 8px;font-size:9pt">
+      </div>
+    </div>
     <div class="row" style="font-size:9pt">
       문항 수: <input type="number" id="mockNum" min="4" max="40" value="28" style="width:58px;padding:3px 6px;border:1.5px solid var(--line);border-radius:8px;font-family:inherit"> <span class="note">(4~40 · 정식 동형 28~40 · 지문이 모자라면 가능한 만큼만)</span>
       &nbsp;·&nbsp; <label><input type="checkbox" id="mockSet" checked> 1지문 2~3문항 세트 포함</label>
@@ -492,7 +532,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704f"></script>
+<script src="api_team.js?v=20260704g"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -560,6 +600,10 @@ var tdiv=document.getElementById("types");
 TYPES.forEach(function(t){ var l=document.createElement("label"); l.className=DEF[t]?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(DEF[t]?" checked":"")+'>'+t;
   l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); }; tdiv.appendChild(l); });
 function chosen(){ return [].slice.call(document.querySelectorAll("#types input:checked")).map(function(i){return i.value;}); }
+function selectAllTypes(on){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=!!on; i.parentNode.classList.toggle("on",!!on); }); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }
+function selectRecommendedTypes(){ var REC={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1,"내용불일치":1,"요약":1,"빈칸(어구)":1,"어법(밑줄)":1,"어휘(밑줄)":1,"밑줄함의":1,"글의순서":1,"문장삽입":1,"무관문장":1}; [].forEach.call(document.querySelectorAll("#types input"),function(i){ var on=!!REC[i.value]; i.checked=on; i.parentNode.classList.toggle("on",on); }); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }
+function typeCntUpdate(){ var el=document.getElementById("typeCnt"); if(!el) return; var all=document.querySelectorAll("#types input").length, sel=chosen().length; el.textContent=all?("("+sel+"/"+all+")"):""; }
+function examCols(btn){ var p=document.getElementById("paper"); if(!p) return; var on=!p.classList.contains("cols2"); p.classList.toggle("cols2",on); p.classList.toggle("hidebtn",on); if(btn) btn.textContent=on?"📄 1단(편집) 보기":"🔳 2단 시험지 보기"; }
 
 var APICOL={ llm:"#2dd4bf", grammar:"#ff8fa3", thesaurus:"#ffd166", dict:"#7ee8c0", wikt:"#b794f6", wiki:"#72a7ff", trans:"#f6ad55", image:"#cbd5e1", core:"#94a3b8" };
 function apiBadge(a){ return '<span style="background:'+(APICOL[a]||"#94a3b8")+';color:#0d1b17;border-radius:6px;padding:1px 6px;font-size:8pt;font-weight:700">'+esc(a)+'</span>'; }
@@ -913,6 +957,66 @@ function composePreview(){
 }
 function composeDownloadDoc(){ var html=buildSheetHtml(); if(!html){ alert("담은 문제가 없습니다."); return; } var blob=new Blob(["﻿",html],{type:"application/msword"}); var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="시험지_"+new Date().toISOString().slice(0,10)+".doc"; a.click(); }
 function composePrint(){ var html=buildSheetHtml(); if(!html){ alert("담은 문제가 없습니다."); return; } var w=window.open("","_blank"); if(!w){ alert("팝업 허용이 필요합니다."); return; } w.document.write(html); w.document.close(); setTimeout(function(){ w.print(); },350); }
+/* ===== 📦 전체 세트 조립: 시험지 + 정답·해설지(+지문 분석) 하나의 문서로 ===== */
+function setUniquePassages(){
+  var seen={}, list=[]; composeAll().forEach(function(x){ var q=x.q; var ps=(q.subItems&&q.subItems.length)?[q.passage]:[q.passage]; ps.forEach(function(p){ p=String(p||"").replace(/<\/?u>/g,"").trim(); if(p.length>=40&&!seen[p.slice(0,80)]){ seen[p.slice(0,80)]=1; list.push(p); } }); }); return list;
+}
+function buildSetHtml(analysisMap){
+  var a=composeAll(); if(!a.length) return null;
+  var hd=composeHeader(); var wantAns=(document.getElementById("setAnswers")||{}).checked; var wantAn=analysisMap&&Object.keys(analysisMap).length;
+  // Part Ⅰ: 시험지(2단)
+  var examDoc=buildSheetHtml(); if(!examDoc) return null;
+  var examBody=examDoc.replace(/^[\s\S]*?<body>/,'').replace(/<\/body>[\s\S]*$/,'');
+  var out='<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><title>'+esc(hd.exam||"시험 자료 세트")+'</title>'+
+    '<style>@page{size:A4;margin:12mm} body{font-family:\'Malgun Gothic\',sans-serif;color:#111;font-size:10pt;line-height:1.55;margin:0}'+
+    '.setsec{page-break-before:always} .seth{font-size:14pt;font-weight:800;border-bottom:2.5px double #222;padding-bottom:5px;margin:0 0 10px}'+
+    '.ansrow{margin:7px 0;padding:6px 9px;border-left:3px solid #0f766e;background:#f6faf8;break-inside:avoid} .ansrow .no{font-weight:800;color:#0f766e}'+
+    '.anpg{border:1px solid #999;padding:8px 10px;margin:5px 0;line-height:1.8;font-size:9.5pt} '+
+    '.ansent{margin:4px 0;padding:3px 0 3px 9px;border-left:3px solid #B45309} .ansent .en{font-size:9.6pt} .ansent .ko{color:#374151;font-size:9pt}'+
+    '.cpg{border:1px solid #999;padding:8px 10px;margin:4px 0 6px;line-height:1.75;font-size:9.6pt} .cq{break-inside:avoid;margin:0 0 9px}'+
+    '.cq .ci{font-weight:600}.cq .cc div{margin:1px 0}'+
+    ((((document.getElementById("shCols")||{}).value||hd.cols||"2")==="2")?'.cbody{column-count:2;column-gap:9mm;column-rule:1px solid #eee}':'')+
+    '</style></head><body>';
+  out+=examBody;   // Part Ⅰ 시험지(이미 Section1 래핑)
+  // Part Ⅱ: 정답·해설지
+  if(wantAns){
+    var no=0, ans='';
+    a.forEach(function(x){ var q=x.q; var list=(q.subItems&&q.subItems.length)?q.subItems:[q];
+      list.forEach(function(sq){ no++; var an=sq.answer?(CIRC[sq.answer-1]||sq.answer):"서술형";
+        ans+='<div class="ansrow"><span class="no">'+no+'.</span> <b>정답 '+an+'</b>'+(x.pts?(' <span style="color:#889">['+x.pts+'점]</span>'):'')+'<div style="margin-top:2px">'+esc(String(sq.explanation||"").replace(/【출제의도】[\s\S]*$/,"")).replace(/\n/g,"<br>")+'</div></div>';
+      });
+    });
+    out+='<div class="setsec"><div class="seth">Ⅱ. 정답 및 해설</div>'+ans+'</div>';
+  }
+  // Part Ⅲ: 지문 분석(해석)
+  if(wantAn){
+    var an3='';
+    Object.keys(analysisMap).forEach(function(k,pi){ var d=analysisMap[k]; if(!d) return;
+      an3+='<div style="break-inside:avoid;margin-bottom:12px"><div style="font-weight:800;color:#2563EB;margin-bottom:3px">■ 지문 '+(pi+1)+' 분석'+(d.topic?(' <span style="font-weight:400;font-size:9pt;color:#556">— 주제: '+esc(d.topic)+'</span>'):'')+'</div>';
+      (d.sents||[]).forEach(function(s){ an3+='<div class="ansent"><div class="en">'+s.n+'. '+esc(s.en)+'</div><div class="ko">→ '+esc(s.ko)+(s.syntax?(' <span style="color:#C0265A">[구문: '+esc(s.syntax)+']</span>'):'')+'</div></div>'; });
+      if(d.vocab&&d.vocab.length) an3+='<div style="margin-top:4px;font-size:9pt"><b>핵심 어휘:</b> '+d.vocab.map(function(v){return esc(v.w)+"("+esc(v.ko||"")+")";}).join(", ")+'</div>';
+      an3+='</div>';
+    });
+    out+='<div class="setsec"><div class="seth">Ⅲ. 지문 분석 (해석·구문)</div>'+an3+'</div>';
+  }
+  out+='</body></html>'; return out;
+}
+async function composeSetAssemble(){
+  var a=composeAll(); if(!a.length){ alert("담은 문제가 없습니다. 먼저 문제를 담으세요."); return null; }
+  var wantAn=(document.getElementById("setAnalysis")||{}).checked;
+  var map={};
+  if(wantAn){
+    var ps=setUniquePassages(); var st=document.getElementById("setStat");
+    if(GENERATING){ alert("다른 작업이 진행 중입니다."); return null; }
+    GENERATING=true;
+    for(var i=0;i<ps.length;i++){ if(st) st.textContent="📑 지문 분석 생성 "+(i+1)+"/"+ps.length+"…"; try{ map[ps[i].slice(0,80)]=await T.analysisSheet(ps[i],{}); }catch(e){ map[ps[i].slice(0,80)]=null; } }
+    GENERATING=false; if(st) st.textContent="✓ 분석 "+ps.length+"지문 완료";
+  }
+  return buildSetHtml(map);
+}
+function composeSetPreview(){ var box=document.getElementById("composePrev"); box.innerHTML='<div class="card"><span class="note">📦 세트 조립 중…'+((document.getElementById("setAnalysis")||{}).checked?' (지문 분석 생성 — 다소 걸릴 수 있어요)':'')+'</span><div class="skel"></div></div>'; composeSetAssemble().then(function(html){ if(!html){ box.innerHTML=""; return; } box.innerHTML='<div class="card" style="border:1.5px solid #cfc9ee"><div class="row"><b style="flex:1">📦 전체 세트 미리보기 <span class="note">시험지 → 정답·해설 → 지문분석</span></b><button class="ghost" onclick="composeSetDoc()">📘 Word</button><button class="ghost" onclick="composeSetPrint()">🖨 PDF</button></div><iframe style="width:100%;height:620px;border:1px solid #d5d0ee;border-radius:9px;background:#fff;margin-top:6px" srcdoc="'+html.replace(/"/g,"&quot;")+'"></iframe></div>'; box.scrollIntoView({behavior:"smooth",block:"nearest"}); }); }
+function composeSetDoc(){ composeSetAssemble().then(function(html){ if(!html) return; var blob=new Blob(["﻿",html],{type:"application/msword"}); var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="시험자료세트_"+new Date().toISOString().slice(0,10)+".doc"; a.click(); toast("📦 세트 Word 저장됨"); }); }
+function composeSetPrint(){ composeSetAssemble().then(function(html){ if(!html) return; var w=window.open("","_blank"); if(!w){ alert("팝업 허용이 필요합니다."); return; } w.document.write(html); w.document.close(); setTimeout(function(){ w.print(); },400); }); }
 /* ===== 시험지(문제 세트) 저장/불러오기 — 이름별 보관 + JSON 파일 백업 ===== */
 function sheetsAll(){ try{ return JSON.parse(localStorage.getItem("composeSaved")||"{}"); }catch(e){ return {}; } }
 function sheetsPut(o){ try{ localStorage.setItem("composeSaved",JSON.stringify(o)); }catch(e){ alert("저장 공간이 부족합니다 — 오래된 시험지를 지워주세요."); } sheetBadge(); }
@@ -1083,6 +1187,7 @@ function mockPassages(need){
 }
 async function runMock(){
   var N=Math.max(4,Math.min(40,parseInt((document.getElementById("mockNum")||{}).value,10)||28));
+  window.EXAMHEAD={school:val("mkSchool"),exam:val("mkExam")||"동형 모의고사",grade:val("mkGrade"),sem:val("mkSem"),round:val("mkRound"),time:val("mkTime")};   // 동형 머리표 반영
   var useSet=document.getElementById("mockSet").checked, useEssay=document.getElementById("mockEssay").checked;
   var st=document.getElementById("mockStat"), go=document.getElementById("mockGo");
   // 배정: 세트(3문항) 1개(13+에선 2개) + 나머지 지문당 1~2문항
@@ -1168,6 +1273,7 @@ function restoreState(){ try{ var s=JSON.parse(localStorage.getItem("ai_state")|
 function logln(m){ var L=document.getElementById("log"); L.style.display="block"; L.textContent+=(L.textContent?"\n":"")+m; L.scrollTop=L.scrollHeight; var mm=m.match(/\[(\d+)\/(\d+)\]/); if(mm){ document.getElementById("barfill").style.width=Math.round((+mm[1]-1)/(+mm[2])*100)+"%"; } pulseFromMsg(m); }
 
 function run(){
+  window.EXAMHEAD=null;   // 일반 출제는 기본 제목(동형 머리표는 동형 모드에서만)
   var passage=srcPassage(), types=chosen();
   if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
   if(!types.length){ alert("출제 유형을 1개 이상 선택하세요."); return; }
@@ -1459,9 +1565,13 @@ function render(items){
   if(!items||!items.length){ document.getElementById("out").innerHTML='<div class="card">생성된 문항이 없습니다. 다시 시도해 주세요.</div>'; return; }
   var no=0, key=[], total=0;
   items.forEach(function(q){ total+=(q.subItems&&q.subItems.length)?q.subItems.length:1; });
-  var h='<div class="card"><div class="row noprint" style="align-items:center"><h2 style="margin:0;flex:1">📝 완성본</h2><button class="ghost" style="color:#4a3fa5;font-weight:800" onclick="composeAddAll()" title="이 결과 전체를 시험지 편집기에 담기">📄 시험지에 전체 담기</button><button class="ghost" onclick="qbSaveAll()">🗃 문제뱅크 누적</button><button class="ghost" onclick="copyResult()">📋 복사</button><button class="ghost" onclick="previewWorkbook()" title="Word/PDF로 저장될 실제 모습을 화면에서 미리 봅니다">👁 미리보기</button><button class="ghost" onclick="downloadWorkbook()" title="Ⅰ.문제편(서술형 답란 포함)+Ⅱ.정답·해설편으로 나뉜 워크북 Word 파일">📘 워크북 Word</button><button class="ghost" onclick="printWorkbook()" title="워크북 형태로 인쇄 화면을 열어 PDF로 저장">📘 워크북 PDF</button><button class="ghost" onclick="downloadDoc()">⬇ Word(시험지)</button><button class="ghost" onclick="window.print()">🖨 인쇄</button></div>';
-  h+='<div id="paper">';
-  h+='<div style="text-align:center;border-bottom:2.5px solid #223;padding-bottom:9px;margin-bottom:11px"><div style="font-size:14.5pt;font-weight:800;letter-spacing:.06em">영어 변형문제</div><div style="font-size:9pt;color:#667;margin-top:3px">'+new Date().toISOString().slice(0,10)+' · 총 '+total+'문항 &nbsp;&nbsp;|&nbsp;&nbsp; 학년 ____ 반 ____ 이름 ________ &nbsp; 점수 ____</div></div>';
+  var h='<div class="card"><div class="row noprint" style="align-items:center"><h2 style="margin:0;flex:1">📝 완성본</h2><button class="ghost" style="color:#4a3fa5;font-weight:800" onclick="composeAddAll()" title="이 결과 전체를 시험지 편집기에 담기">📄 시험지에 전체 담기</button><button class="ghost" onclick="qbSaveAll()">🗃 문제뱅크 누적</button><button class="ghost" onclick="copyResult()">📋 복사</button><button class="ghost" onclick="examCols(this)" id="examColsBtn" title="화면 결과를 실제 시험지처럼 2단으로 보기">🔳 2단 시험지 보기</button><button class="ghost" onclick="previewWorkbook()" title="Word/PDF로 저장될 실제 모습을 화면에서 미리 봅니다">👁 미리보기</button><button class="ghost" onclick="downloadWorkbook()" title="Ⅰ.문제편(서술형 답란 포함)+Ⅱ.정답·해설편으로 나뉜 워크북 Word 파일">📘 워크북 Word</button><button class="ghost" onclick="printWorkbook()" title="워크북 형태로 인쇄 화면을 열어 PDF로 저장">📘 워크북 PDF</button><button class="ghost" onclick="downloadDoc()">⬇ Word(시험지)</button><button class="ghost" onclick="window.print()">🖨 인쇄</button></div>';
+  h+='<div id="paper" class="exampaper">';
+  var eh=window.EXAMHEAD||null;
+  var title=eh?((eh.school?esc(eh.school)+" ":"")+(eh.exam||"영어 모의고사")):"영어 변형문제";
+  var subBits=[]; if(eh){ if(eh.grade) subBits.push(esc(eh.grade)); if(eh.sem) subBits.push(esc(eh.sem)); if(eh.round) subBits.push(esc(eh.round)); if(eh.time) subBits.push(esc(eh.time)); }
+  subBits.push(new Date().toISOString().slice(0,10)); subBits.push("총 "+total+"문항");
+  h+='<div style="text-align:center;border-bottom:2.5px solid #223;padding-bottom:9px;margin-bottom:11px"><div style="font-size:14.5pt;font-weight:800;letter-spacing:.04em">'+esc(title)+'</div><div style="font-size:9pt;color:#556;margin-top:3px">'+subBits.join(" · ")+'</div><div style="font-size:9pt;color:#556;margin-top:3px">학년 ____ 반 ____ 번호 ____ 이름 __________ &nbsp; 점수 ______</div></div>';
   if(items.some(function(q){ return !q.passage&&!q.subItems; }) && typeof LASTPASSAGE==="string" && LASTPASSAGE.length>40){
     h+='<div style="font-weight:700;margin:4px 0 3px">[지문] 다음 글을 읽고, 물음에 답하시오.</div><div class="pg">'+pgHtml(LASTPASSAGE)+'</div>';
   }
@@ -1664,8 +1774,8 @@ function buildTypeChips(){
   var sel={}; try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); (s.t||[]).forEach(function(x){sel[x]=1;}); }catch(e){}
   var hasSel=Object.keys(sel).length, DEFL={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1};
   tdiv.innerHTML="";
-  list.forEach(function(t){ var on=hasSel?!!sel[t]:!!DEFL[t]; var l=document.createElement("label"); l.className=on?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(on?" checked":"")+'>'+t; l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); }; tdiv.appendChild(l); });
-  updateEstimate();
+  list.forEach(function(t){ var on=hasSel?!!sel[t]:!!DEFL[t]; var l=document.createElement("label"); l.className=on?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(on?" checked":"")+'>'+t; l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }; tdiv.appendChild(l); });
+  updateEstimate(); typeCntUpdate();
 }
 var DBURL=new URLSearchParams(location.search).get("db")||"knowledge/types_v2.json";
 function refreshDB(){ var st=document.getElementById("dbstat"); if(st)st.textContent="유형 DB 불러오는 중…"; T.loadTypeDB(DBURL+(DBURL.indexOf("?")>=0?"&":"?")+"_t="+Date.now()).then(function(r){ if(r&&r.ok&&r.count){ buildTypeChips(); if(st)st.textContent="✓ 유형 DB "+r.count+"종 · "+new Date().toLocaleTimeString(); } else if(st) st.textContent="유형 DB: 내장 기본"; }); }
