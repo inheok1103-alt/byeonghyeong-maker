@@ -29,19 +29,30 @@
   /* ---------- LLM 공급자 (키리스 기본 + 선택 무료키 업그레이드) ----------
    * 키 미입력 → Pollinations(무키). Gemini/Groq '무료키' 입력 시 그쪽으로 라우팅.
    * 키는 사용자 브라우저(localStorage)에만 저장 — 공개 코드엔 절대 안 들어감. */
-  var CFG = { geminiKey: "", groqKey: "", geminiModel: "gemini-2.5-flash", groqModel: "llama-3.3-70b-versatile", ollamaModel: "", ollamaUrl: "http://localhost:11434" };
-  // 무료 키 회전 풀: geminiKey/groqKey에 여러 키를 콤마·줄바꿈·공백으로 넣으면 한도 소진 시 자동으로 다음 키로 넘어감(= 한도 N배)
-  var POOL = { gemini: [], groq: [] }, PDEAD = { gemini: {}, groq: {} };
+  var CFG = { geminiKey: "", groqKey: "", cerebrasKey: "", mistralKey: "", openrouterKey: "",
+    geminiModel: "gemini-2.5-flash", groqModel: "llama-3.3-70b-versatile", cerebrasModel: "llama-3.3-70b", mistralModel: "mistral-small-latest", openrouterModel: "meta-llama/llama-3.3-70b-instruct:free",
+    ollamaModel: "", ollamaUrl: "http://localhost:11434" };
+  // OpenAI 호환 무료 제공자(Bearer + /chat/completions) — 회전 목록에 추가해 무료 용량을 몇 배로
+  var OAI = {
+    groq:       { url: "https://api.groq.com/openai/v1/chat/completions",  model: function () { return CFG.groqModel; } },
+    cerebras:   { url: "https://api.cerebras.ai/v1/chat/completions",       model: function () { return CFG.cerebrasModel; } },
+    mistral:    { url: "https://api.mistral.ai/v1/chat/completions",        model: function () { return CFG.mistralModel; } },
+    openrouter: { url: "https://openrouter.ai/api/v1/chat/completions",     model: function () { return CFG.openrouterModel; } }
+  };
+  // 키드 제공자 우선순위: Gemini(무료 한도 큼) → Groq(초고속) → Cerebras(초고속) → Mistral → OpenRouter(무료모델)
+  var KEYED = ["gemini", "groq", "cerebras", "mistral", "openrouter"];
+  // 무료 키 회전 풀: 각 *Key에 여러 키(콤마·줄바꿈·공백)를 넣으면 한도 소진 시 자동으로 다음 키로 = 한도 N배
+  var POOL = {}, PDEAD = {}; KEYED.forEach(function (p) { POOL[p] = []; PDEAD[p] = {}; });
   function parseKeys(s) { return String(s || "").split(/[\s,]+/).map(function (x) { return x.trim(); }).filter(Boolean); }
-  function rebuildPools() { POOL.gemini = parseKeys(CFG.geminiKey); POOL.groq = parseKeys(CFG.groqKey); PDEAD.gemini = {}; PDEAD.groq = {}; }
+  function rebuildPools() { KEYED.forEach(function (p) { POOL[p] = parseKeys(CFG[p + "Key"]); PDEAD[p] = {}; }); }
   function liveKeys(prov) { return (POOL[prov] || []).filter(function (k) { return !PDEAD[prov][k]; }); }
   function curKey(prov) { var live = liveKeys(prov); return live.length ? live[0] : ""; }   // 항상 살아있는 첫 키(dead는 스킵)
   function markDead(prov) { var k = curKey(prov); if (k) PDEAD[prov][k] = 1; }
   function hasLive(prov) { return liveKeys(prov).length > 0; }
-  function keyStats() { return { gemini: { total: POOL.gemini.length, live: liveKeys("gemini").length }, groq: { total: POOL.groq.length, live: liveKeys("groq").length }, ollama: !!CFG.ollamaModel }; }
-  function configure(c) { c = c || {}; Object.assign(CFG, c); if (c.geminiKey != null || c.groqKey != null) rebuildPools(); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; if (c.onLearn) CB.onLearn = c.onLearn; }
-  // Ollama(로컬·무한) 최우선 → Gemini(살아있는 키) → Groq(살아있는 키) → Pollinations(무키)
-  function provider() { return CFG.ollamaModel ? "ollama" : (hasLive("gemini") ? "gemini" : (hasLive("groq") ? "groq" : "pollinations")); }
+  function keyStats() { var o = { ollama: !!CFG.ollamaModel }; KEYED.forEach(function (p) { o[p] = { total: POOL[p].length, live: liveKeys(p).length }; }); return o; }
+  function configure(c) { c = c || {}; Object.assign(CFG, c); if (KEYED.some(function (p) { return c[p + "Key"] != null; })) rebuildPools(); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; if (c.onLearn) CB.onLearn = c.onLearn; }
+  // Ollama(로컬) 최우선(설정 시) → 살아있는 키드 제공자 순서 → Pollinations(무키)
+  function provider() { if (CFG.ollamaModel) return "ollama"; for (var i = 0; i < KEYED.length; i++) { if (hasLive(KEYED[i])) return KEYED[i]; } return "pollinations"; }
   var LAST_LIMITED = false;   // 직전 호출이 레이트리밋이었는지(진단·UI용)
   async function llmRaw(messages, opts) {
     opts = opts || {}; var prov = opts.forceProvider || provider(); var to = withTimeout(opts.timeout || 70000);
@@ -67,13 +78,16 @@
         if (dg.error) { var gm = String((dg.error && dg.error.message) || ""); if (/quota|rate|429|exhausted|high demand|503/i.test(gm) || dg.error.code === 429 || dg.error.code === 503) { LAST_LIMITED = true; markDead("gemini"); } throw new Error("gemini: " + gm.slice(0, 80)); }
         return (dg.candidates && dg.candidates[0] && dg.candidates[0].content && dg.candidates[0].content.parts && dg.candidates[0].content.parts[0].text) || "";
       }
-      if (prov === "groq") {
-        var qk = curKey("groq"); if (!qk) throw new Error("groq: no live key");
-        var gbody = { model: CFG.groqModel, messages: messages, temperature: opts.temperature == null ? 0.6 : opts.temperature };
-        if (opts.json) gbody.response_format = { type: "json_object" };   // 유효 JSON 강제 → 파싱실패·빈응답 격감
-        var rq = await fetch("https://api.groq.com/openai/v1/chat/completions", { method: "POST", headers: { "Content-Type": "application/json", "Authorization": "Bearer " + qk }, signal: to.signal, body: JSON.stringify(gbody) });
+      if (OAI[prov]) {   // Groq/Cerebras/Mistral/OpenRouter 공통(OpenAI 호환)
+        var pk = curKey(prov); if (!pk) throw new Error(prov + ": no live key");
+        var cf = OAI[prov];
+        var gbody = { model: cf.model(), messages: messages, temperature: opts.temperature == null ? 0.6 : opts.temperature };
+        if (opts.json) gbody.response_format = { type: "json_object" };   // 유효 JSON 강제
+        var hd = { "Content-Type": "application/json", "Authorization": "Bearer " + pk };
+        if (prov === "openrouter") { hd["HTTP-Referer"] = "https://inheok1103-alt.github.io"; hd["X-Title"] = "chuljae-brain"; }
+        var rq = await fetch(cf.url, { method: "POST", headers: hd, signal: to.signal, body: JSON.stringify(gbody) });
         var dq = await rq.json();
-        if (dq.error) { var em = String((dq.error && dq.error.message) || ""); if (/rate limit|quota|too many|429/i.test(em)) { LAST_LIMITED = true; markDead("groq"); } throw new Error("groq: " + em.slice(0, 80)); }
+        if (dq.error) { var em = String((dq.error && dq.error.message) || dq.error || ""); if (/rate|limit|quota|too many|429|exceed|credit|insufficient/i.test(em)) { LAST_LIMITED = true; markDead(prov); } throw new Error(prov + ": " + em.slice(0, 80)); }
         return (dq.choices && dq.choices[0] && dq.choices[0].message && dq.choices[0].message.content) || "";
       }
       // Pollinations는 response_format 미지원(보내면 오류) → 프롬프트의 'JSON만' 지시에 의존
@@ -90,7 +104,7 @@
       LAST_LIMITED = false;
       var s = await llmRaw(messages, opts).catch(function () { return ""; });
       if (s && s.trim()) return s;
-      if (LAST_LIMITED) { if ((prov === "gemini" || prov === "groq") && hasLive(prov)) continue; break; }   // 소진된 키는 llmRaw가 dead 표시 → 살아있는 다음 키로 즉시 재시도
+      if (LAST_LIMITED) { if (KEYED.indexOf(prov) >= 0 && hasLive(prov)) continue; break; }   // 소진된 키는 llmRaw가 dead 표시 → 살아있는 다음 키로 즉시 재시도
       await delay(1200 * (i + 1));
     }
     return "";
@@ -104,7 +118,7 @@
     return p;
   }
   // 연결된 공급자 폴백 체인: Gemini(키) → Groq(키) → Pollinations(무료). 앞이 실패/레이트리밋이면 다음으로.
-  function providerChain() { var c = []; if (CFG.ollamaModel) c.push("ollama"); if (hasLive("gemini")) c.push("gemini"); if (hasLive("groq")) c.push("groq"); c.push("pollinations"); return c; }
+  function providerChain() { var c = []; if (CFG.ollamaModel) c.push("ollama"); KEYED.forEach(function (p) { if (hasLive(p)) c.push(p); }); c.push("pollinations"); return c; }
   async function tryChain(messages, opts, chain, i) {
     if (i >= chain.length) return "";
     var prov = chain[i], o = Object.assign({}, opts, { forceProvider: prov });

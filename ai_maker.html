@@ -55,6 +55,11 @@ button:active{transform:translateY(0)}
 .foldh{cursor:pointer;user-select:none;display:flex;align-items:center;gap:6px}
 .foldh:hover{color:var(--ac)}
 .foldarrow{display:inline-block;width:15px;color:var(--ac);font-size:11pt;transition:transform .15s}
+details.fold{margin:0}
+details.fold>summary{list-style:none;padding:3px 0;outline:none}
+details.fold>summary::-webkit-details-marker{display:none}
+details.fold>summary::before{content:"▸ ";color:var(--ac);font-weight:700}
+details.fold[open]>summary::before{content:"▾ "}
 .stepbar{display:flex;gap:8px;margin:10px 0 4px;flex-wrap:wrap}
 .step{flex:1;min-width:120px;background:var(--soft);border-radius:10px;padding:8px 11px;font-size:9pt;color:var(--mut);border-left:3px solid var(--line)}
 .step b{color:var(--ink);font-size:10pt}
@@ -324,29 +329,41 @@ body.simple .expert{display:none!important}
       <div style="font-size:10.5pt;font-weight:800;color:#4a3fa5;margin-bottom:2px">♾ 무한 모드 <span class="note" style="font-weight:400">— 무료 한도를 사실상 무제한으로</span></div>
       <div id="infStat" class="note" style="margin:2px 0 8px">현재: 확인 중…</div>
 
-      <div style="border-top:1px dashed #ddd6f5;padding-top:7px"><b>① 로컬 AI (Ollama) — 진짜 무한·무료</b> <span class="note">내 PC에서 도는 모델. 한도·비용 영원히 없음. <a href="https://ollama.com/download" target="_blank" style="color:#0f766e">Ollama 설치</a> 후 모델 하나 받기(예: <code>ollama pull llama3.1:8b</code>)</span>
+      <details class="fold" style="border-top:1px dashed #ddd6f5;padding-top:7px;margin-top:2px" open>
+        <summary style="cursor:pointer;font-weight:700;color:#0f766e">① 무료 클라우드 키 회전 = 한도 N배 <span class="note" style="font-weight:400">(이 PC에 가장 적합 · 설치 불필요)</span></summary>
+        <div class="note" style="margin:4px 0 6px">여러 줄에 키를 하나씩 붙여넣으면 소진 시 <b>자동으로 다음 키·다음 제공자로 회전</b>. 내 브라우저에만 저장, 공개 안 됨. 제공자를 많이 넣을수록 사실상 무제한.</div>
+        <div style="margin-top:4px">🔑 <b>Gemini</b> <a href="https://aistudio.google.com/apikey" target="_blank" style="color:#0f766e">발급</a> — 무료 한도 큼. 계정마다 키 1개:
+          <textarea id="geminiKey" placeholder="AIza...키1&#10;AIza...키2 (한 줄에 하나)" style="width:100%;min-height:38px;padding:5px 8px;font-size:8.5pt;font-family:monospace" onchange="saveGeminiKey()"></textarea>
+          <span id="geminiStat" style="color:#0f766e;font-weight:700"></span></div>
+        <div style="margin-top:5px">🔑 <b>Groq</b> <a href="https://console.groq.com/keys" target="_blank" style="color:#0f766e">발급</a> — llama-3.3-70b 초고속:
+          <textarea id="groqKey" placeholder="gsk_...키1&#10;gsk_...키2" style="width:100%;min-height:32px;padding:5px 8px;font-size:8.5pt;font-family:monospace" onchange="saveGroqKey()"></textarea>
+          <span id="groqStat" style="color:#0f766e;font-weight:700"></span></div>
+        <div style="margin-top:5px">🔑 <b>Cerebras</b> <a href="https://cloud.cerebras.ai" target="_blank" style="color:#0f766e">발급</a> — 무료·초고속(라마 70b):
+          <textarea id="cerebrasKey" placeholder="csk-...키1&#10;csk-...키2" style="width:100%;min-height:32px;padding:5px 8px;font-size:8.5pt;font-family:monospace" onchange="saveCerebrasKey()"></textarea>
+          <span id="cerebrasStat" style="color:#0f766e;font-weight:700"></span></div>
+        <div style="margin-top:5px">🔑 <b>Mistral</b> <a href="https://console.mistral.ai/api-keys" target="_blank" style="color:#0f766e">발급</a> — 무료 티어:
+          <textarea id="mistralKey" placeholder="...키1&#10;...키2" style="width:100%;min-height:32px;padding:5px 8px;font-size:8.5pt;font-family:monospace" onchange="saveMistralKey()"></textarea>
+          <span id="mistralStat" style="color:#0f766e;font-weight:700"></span></div>
+        <div style="margin-top:5px">🔑 <b>OpenRouter</b> <a href="https://openrouter.ai/keys" target="_blank" style="color:#0f766e">발급</a> — 무료 모델(:free) 다수:
+          <textarea id="openrouterKey" placeholder="sk-or-...키1&#10;sk-or-...키2" style="width:100%;min-height:32px;padding:5px 8px;font-size:8.5pt;font-family:monospace" onchange="saveOpenrouterKey()"></textarea>
+          <span id="openrouterStat" style="color:#0f766e;font-weight:700"></span></div>
+      </details>
+
+      <details class="fold" style="border-top:1px dashed #ddd6f5;padding-top:7px;margin-top:8px">
+        <summary style="cursor:pointer;font-weight:700;color:#8a6d3b">② 로컬 AI (Ollama) — ⚠ 고사양 PC 전용 <span class="note" style="font-weight:400">(이 PC엔 사양 부족 — 펼치지 않아도 됩니다)</span></summary>
+        <div class="note" style="margin:4px 0;background:#fdf6ec;border:1px solid #f0e0c0;border-radius:8px;padding:6px 9px;color:#8a6d3b">권장 사양: <b>RAM 16GB+ · 전용 GPU(NVIDIA) · 디스크 여유 10GB+</b>. 현재 PC(RAM 7.7GB·내장그래픽·디스크 여유 부족)에서는 매우 느리거나 멈출 수 있어 <b>위 ① 클라우드 회전을 권장</b>합니다. 고사양 PC로 옮기면 그때 진짜 무한(무료·무제한)으로 씁니다.</div>
+        <div class="note">내 PC에서 도는 모델. <a href="https://ollama.com/download" target="_blank" style="color:#0f766e">Ollama 설치</a> 후 <code>ollama pull llama3.1:8b</code></div>
         <div class="row" style="margin-top:4px">
-          <input id="ollamaModel" placeholder="모델명 예: llama3.1:8b" style="width:200px;padding:3px 7px;font-size:8.6pt" onchange="saveOllama()">
-          <input id="ollamaUrl" placeholder="http://localhost:11434" value="http://localhost:11434" style="width:180px;padding:3px 7px;font-size:8.6pt" onchange="saveOllama()">
+          <input id="ollamaModel" placeholder="모델명 예: llama3.1:8b" style="width:190px;padding:3px 7px;font-size:8.6pt" onchange="saveOllama()">
+          <input id="ollamaUrl" placeholder="http://localhost:11434" value="http://localhost:11434" style="width:170px;padding:3px 7px;font-size:8.6pt" onchange="saveOllama()">
           <button class="ghost" style="font-size:8pt;padding:2px 9px" onclick="detectOllama()">🔍 감지</button>
           <button class="ghost" style="font-size:8pt;padding:2px 9px" onclick="clearOllama()">끄기</button>
           <span id="ollamaStat" style="color:#0f766e;font-weight:700"></span>
         </div>
-        <div class="note" id="ollamaHint" style="margin-top:3px">⚠ 로컬 AI는 브라우저 보안상 <b>사이트를 내 PC에서 실행</b>해야 켜집니다 — 아래 [🚀 로컬 실행 파일 받기]로 원클릭 실행하세요.</div>
+        <div class="note" id="ollamaHint" style="margin-top:3px">브라우저 보안상 <b>사이트를 내 PC에서 실행</b>해야 켜집니다 — [🚀 로컬 실행 파일]로 원클릭.</div>
         <button class="ghost" style="font-size:8pt;padding:2px 9px;margin-top:3px" onclick="downloadLauncher()">🚀 로컬 실행 파일(.bat) 받기</button>
-      </div>
-
-      <div style="border-top:1px dashed #ddd6f5;padding-top:7px;margin-top:8px"><b>② 무료 키 여러 개 = 한도 N배</b> <span class="note">여러 줄에 키를 하나씩 붙여넣으면 소진 시 자동으로 다음 키로 회전. 내 브라우저에만 저장, 공개 안 됨.</span>
-        <div style="margin-top:4px">🔑 <b>Gemini 키(여러 개)</b> <a href="https://aistudio.google.com/apikey" target="_blank" style="color:#0f766e">발급</a> — 계정마다 무료 키 1개:
-          <textarea id="geminiKey" placeholder="AIza...키1&#10;AIza...키2&#10;AIza...키3 (한 줄에 하나)" style="width:100%;min-height:44px;padding:5px 8px;font-size:8.5pt;font-family:monospace" onchange="saveGeminiKey()"></textarea>
-          <span id="geminiStat" style="color:#0f766e;font-weight:700"></span>
-        </div>
-        <div style="margin-top:5px">🔑 <b>Groq 키(여러 개)</b> — llama-3.3-70b 초고속:
-          <textarea id="groqKey" placeholder="gsk_...키1&#10;gsk_...키2 (한 줄에 하나)" style="width:100%;min-height:38px;padding:5px 8px;font-size:8.5pt;font-family:monospace" onchange="saveGroqKey()"></textarea>
-          <span id="groqStat" style="color:#0f766e;font-weight:700"></span>
-        </div>
-      </div>
-      <div class="note" style="margin-top:6px">우선순위: <b>Ollama(로컬·무한) → Gemini(키 회전) → Groq(키 회전) → Pollinations(무키)</b>. 앞이 한도·실패면 자동으로 다음 — <b>출제가 멈추지 않음</b>.</div>
+      </details>
+      <div class="note" style="margin-top:6px">우선순위: <b>로컬(설정 시) → Gemini → Groq → Cerebras → Mistral → OpenRouter → Pollinations(무키)</b>. 앞이 한도·실패면 자동으로 다음 — <b>출제가 멈추지 않음</b>.</div>
     </div>
     </div>
   </div>
@@ -397,7 +414,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704a"></script>
+<script src="api_team.js?v=20260704b"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -930,12 +947,15 @@ function getRefine(){ var c=document.getElementById("refineChk"); return !!(c&&c
 function getRounds(){ var r=document.getElementById("rounds"); return r?Math.max(1,Math.min(8,parseInt(r.value,10)||3)):3; }
 function getEnsemble(){ var c=document.getElementById("ensembleChk"); return !!(c&&c.checked); }
 function keyCount(v){ return String(v||"").split(/[\s,]+/).map(function(x){return x.trim();}).filter(Boolean).length; }
-function saveGroqKey(){ var k=(document.getElementById("groqKey").value||"").trim(); var s=document.getElementById("groqStat"); try{ if(k) localStorage.setItem("groqKey",k); else localStorage.removeItem("groqKey"); }catch(e){} T.configure({groqKey:k}); var n=keyCount(k); s.textContent=n?("✓ "+n+"개 키 회전 적용"):""; updateInfStat(); }
-function clearGroqKey(){ document.getElementById("groqKey").value=""; try{ localStorage.removeItem("groqKey"); }catch(e){} T.configure({groqKey:""}); document.getElementById("groqStat").textContent="지움"; updateInfStat(); }
-function initGroqKey(){ var gk=""; try{ gk=localStorage.getItem("groqKey")||""; }catch(e){} var el=document.getElementById("groqKey"); if(gk){ if(el) el.value=gk; T.configure({groqKey:gk}); var s=document.getElementById("groqStat"); if(s) s.textContent="✓ "+keyCount(gk)+"개 키 회전 적용"; } }
-function saveGeminiKey(){ var k=(document.getElementById("geminiKey").value||"").trim(); var s=document.getElementById("geminiStat"); try{ if(k) localStorage.setItem("geminiKey",k); else localStorage.removeItem("geminiKey"); }catch(e){} T.configure({geminiKey:k}); var n=keyCount(k); s.textContent=n?("✓ "+n+"개 키 회전 적용 (한도 "+n+"배)"):""; updateInfStat(); }
-function clearGeminiKey(){ document.getElementById("geminiKey").value=""; try{ localStorage.removeItem("geminiKey"); }catch(e){} T.configure({geminiKey:""}); document.getElementById("geminiStat").textContent="지움"; updateInfStat(); }
-function initGeminiKey(){ var gk=""; try{ gk=localStorage.getItem("geminiKey")||""; }catch(e){} var el=document.getElementById("geminiKey"); if(gk){ if(el) el.value=gk; T.configure({geminiKey:gk}); var s=document.getElementById("geminiStat"); if(s) s.textContent="✓ "+keyCount(gk)+"개 키 회전 적용 (한도 "+keyCount(gk)+"배)"; } }
+var KEYPROV=["gemini","groq","cerebras","mistral","openrouter"];
+function saveKeyProv(prov){ var el=document.getElementById(prov+"Key"); if(!el) return; var v=(el.value||"").trim(); try{ if(v) localStorage.setItem(prov+"Key",v); else localStorage.removeItem(prov+"Key"); }catch(e){} var cfg={}; cfg[prov+"Key"]=v; T.configure(cfg); var st=document.getElementById(prov+"Stat"); var n=keyCount(v); if(st) st.textContent=n?("✓ "+n+"개 키 회전"):""; updateInfStat(); }
+function initKeyProv(prov){ var v=""; try{ v=localStorage.getItem(prov+"Key")||""; }catch(e){} var el=document.getElementById(prov+"Key"); if(v){ if(el) el.value=v; var cfg={}; cfg[prov+"Key"]=v; T.configure(cfg); var st=document.getElementById(prov+"Stat"); if(st) st.textContent="✓ "+keyCount(v)+"개 키 회전"; } }
+function initAllKeys(){ KEYPROV.forEach(initKeyProv); }
+function saveGeminiKey(){ saveKeyProv("gemini"); }
+function saveGroqKey(){ saveKeyProv("groq"); }
+function saveCerebrasKey(){ saveKeyProv("cerebras"); }
+function saveMistralKey(){ saveKeyProv("mistral"); }
+function saveOpenrouterKey(){ saveKeyProv("openrouter"); }
 /* ===== ♾ 무한 모드: 로컬 Ollama + 상태 표시 + 원클릭 로컬 실행 ===== */
 function saveOllama(){ var m=(document.getElementById("ollamaModel").value||"").trim(); var u=(document.getElementById("ollamaUrl").value||"http://localhost:11434").trim(); try{ if(m){ localStorage.setItem("ollamaModel",m); localStorage.setItem("ollamaUrl",u); } else localStorage.removeItem("ollamaModel"); }catch(e){} T.configure({ollamaModel:m,ollamaUrl:u}); updateInfStat(); }
 function clearOllama(){ document.getElementById("ollamaModel").value=""; try{ localStorage.removeItem("ollamaModel"); }catch(e){} T.configure({ollamaModel:""}); document.getElementById("ollamaStat").textContent="꺼짐"; updateInfStat(); }
@@ -952,10 +972,12 @@ function detectOllama(){
 }
 function initOllama(){ var m="",u="http://localhost:11434"; try{ m=localStorage.getItem("ollamaModel")||""; u=localStorage.getItem("ollamaUrl")||u; }catch(e){} var em=document.getElementById("ollamaModel"),eu=document.getElementById("ollamaUrl"); if(eu) eu.value=u; if(m){ if(em) em.value=m; T.configure({ollamaModel:m,ollamaUrl:u}); var s=document.getElementById("ollamaStat"); if(s){ s.textContent="✓ "+m+" 적용(무한·무료)"; } } }
 function updateInfStat(){ var el=document.getElementById("infStat"); if(!el||!window.T||!T.keyStats) return; var k=T.keyStats(); var prov=T.provider();
-  var provName={ollama:"로컬 Ollama(무한)",gemini:"Gemini",groq:"Groq",pollinations:"무키 Pollinations(느림)"}[prov]||prov;
-  var bits=[]; if(k.ollama) bits.push("로컬 AI ✓"); if(k.gemini.total) bits.push("Gemini 키 "+k.gemini.live+"/"+k.gemini.total); if(k.groq.total) bits.push("Groq 키 "+k.groq.live+"/"+k.groq.total);
-  var inf=k.ollama||k.gemini.total>=3;
-  el.innerHTML='현재 출제 엔진: <b style="color:'+(prov==="pollinations"?"#b45309":"#0f766e")+'">'+esc(provName)+'</b>'+(bits.length?(" · "+bits.join(" · ")):" · 무료 무키")+(inf?' <span style="color:#4a3fa5;font-weight:700">— 사실상 무한 ♾</span>':'');
+  var NAMES={ollama:"로컬 Ollama(무한)",gemini:"Gemini",groq:"Groq",cerebras:"Cerebras",mistral:"Mistral",openrouter:"OpenRouter",pollinations:"무키 Pollinations(느림)"};
+  var LBL={gemini:"Gemini",groq:"Groq",cerebras:"Cerebras",mistral:"Mistral",openrouter:"OpenRouter"};
+  var bits=[], totalKeys=0; if(k.ollama) bits.push("로컬 AI ✓");
+  Object.keys(LBL).forEach(function(p){ if(k[p]&&k[p].total){ bits.push(LBL[p]+" "+k[p].live+"/"+k[p].total); totalKeys+=k[p].total; } });
+  var inf=k.ollama||totalKeys>=3;
+  el.innerHTML='현재 출제 엔진: <b style="color:'+(prov==="pollinations"?"#b45309":"#0f766e")+'">'+esc(NAMES[prov]||prov)+'</b>'+(bits.length?(" · "+bits.join(" · ")):" · 무료 무키")+(inf?' <span style="color:#4a3fa5;font-weight:700">— 사실상 무한 ♾</span>':'');
 }
 function downloadLauncher(){
   var bat='@echo off\r\nREM 출제자 뇌 로컬 실행 — Ollama(무한 무료 AI)와 함께 쓰기 위한 런처\r\ntitle 출제자 뇌 (로컬)\r\ncd /d "%~dp0"\r\necho ============================================\r\necho  출제자 뇌 - 로컬 실행 (무한 모드)\r\necho ============================================\r\necho.\r\necho [1] Ollama가 설치돼 있어야 합니다: https://ollama.com/download\r\necho     모델 받기(최초 1회): ollama pull llama3.1:8b\r\necho.\r\necho [2] 이 창을 켠 채로 두면 브라우저가 열립니다.\r\necho.\r\nwhere python >nul 2>nul\r\nif %errorlevel%==0 (\r\n  start "" http://localhost:8765/ai_maker.html\r\n  python -m http.server 8765\r\n) else (\r\n  echo Python이 없어 파일을 직접 엽니다(로컬 AI는 http 서버가 필요할 수 있음).\r\n  start "" ai_maker.html\r\n  pause\r\n)\r\n';
@@ -1403,17 +1425,25 @@ try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textCon
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
 // UX: 고급 카드를 접이식(▸)으로 — 제목 클릭 시 펼침/접기
 function foldify(ids, collapsed){
-  ids.forEach(function(id){ var c=document.getElementById(id); if(!c) return; var h=c.querySelector("h2"); if(!h||h.dataset.fold) return; h.dataset.fold="1"; h.classList.add("foldh");
+  ids.forEach(function(id){ var c=document.getElementById(id); if(!c) return; var h=c.querySelector("h2"); if(!h||h.dataset.fold) return; if(h.parentNode!==c) return;   // h2가 카드의 직접 자식일 때만(중첩 헤더 카드는 레이아웃 보호 위해 제외)
+    h.dataset.fold="1"; h.classList.add("foldh");
     var arrow=document.createElement("span"); arrow.className="foldarrow"; h.insertBefore(arrow,h.firstChild);
     var bodies=[]; var n=h.nextElementSibling; while(n){ bodies.push(n); n=n.nextElementSibling; }
     function set(open){ bodies.forEach(function(el){ el.style.display=open?"":"none"; }); arrow.textContent=open?"▾":"▸"; c.dataset.open=open?"1":"0"; }
     set(!collapsed);
-    h.addEventListener("click",function(e){ if(e.target&&(e.target.tagName==="BUTTON"||e.target.tagName==="INPUT"))return; set(c.dataset.open!=="1"); });
+    h.addEventListener("click",function(e){ if(e.target&&(e.target.tagName==="BUTTON"||e.target.tagName==="INPUT"||e.target.tagName==="A"||e.target.tagName==="SELECT"))return; set(c.dataset.open!=="1"); });
   });
+}
+// 모든 상세창(카드)에 펼치기/접기 — h2 제목 클릭으로 토글(기본 펼침). 동적 렌더 결과 카드도 포함.
+function foldifyAll(root){
+  var scope=root||document; var cards=scope.querySelectorAll(".card");
+  [].forEach.call(cards,function(c){ if(!c.id){ c.id="fold_"+(foldifyAll._n=(foldifyAll._n||0)+1); } });
+  foldify([].map.call(cards,function(c){return c.id;}), false);
 }
 /* ♾ 무한 모드 카드를 brainCard(전문가 전용) 밖으로 꺼내 항상 보이게 — leftPane 상단에 배치 */
 (function(){ var im=document.getElementById("infModeCard"); var host=document.getElementById("leftPane"); if(im&&host){ var wrap=document.createElement("div"); wrap.className="card noprint"; wrap.style.cssText="padding:0;border:0;box-shadow:none;background:transparent;margin:10px 0"; im.parentNode.removeChild(im); wrap.appendChild(im); host.insertBefore(wrap, host.children[1]||null); } })();
 modeInit(); obsInit(); obsShow("meshCard"); agentReset();
+try{ foldifyAll(); }catch(e){}   // 모든 상세창(카드) 제목 클릭으로 펼치기/접기(기본 펼침)
 /* Ctrl+Enter = 바로 출제 (지문/작업대 입력 중) */
 document.addEventListener("keydown",function(e){
   if((e.ctrlKey||e.metaKey)&&e.key==="Enter"&&!GENERATING){
@@ -1441,7 +1471,7 @@ function initKeyFromHash(){ try{ var h=location.hash.replace(/^#/,""); if(!h) re
   if(qk&&qk.length>10){ localStorage.setItem("groqKey",qk); got=true; }
   if(got) history.replaceState(null,"",location.pathname+location.search);
 }catch(e){} }
-initKeyFromHash(); initGeminiKey(); initGroqKey(); initOllama(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive(); updateInfStat();
+initKeyFromHash(); initAllKeys(); initOllama(); initLearned(); restoreState(); refreshDB(); loadResearch(); loadNotices(); loadArchive(); updateInfStat();
 try{ if(T.loadReviewDB) T.loadReviewDB("knowledge/review_core_v2.json"); }catch(e){}   // 검수관 지식DB(15절차 계승·발전)
 try{ if(T.loadExaminerKB) T.loadExaminerKB("knowledge/examiner_kb_v1.json"); }catch(e){}
 try{ if(T.loadRaysKB) T.loadRaysKB("knowledge/rays_drill_kb.json"); }catch(e){}   // Rays Drill(오답DNA·금지패턴·동형모고 스펙)   // 출제자 지식베이스(대원칙·유형별 KB → 모든 생성에 주입)
