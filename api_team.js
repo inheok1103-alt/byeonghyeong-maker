@@ -606,12 +606,37 @@
     return { type: "빈칸", instruction: "다음 빈칸에 들어갈 말로 가장 적절한 것은?", passage: o.blanked, choices: ch, answer: a.answer, explanation: "빈칸에는 '" + o.answer + "'가 들어가 글의 논지를 완성한다" + (o.orig ? (" (본문 '" + o.orig + "'의 패러프레이즈)") : "") + "." };
   }
   // 함의: ① 밑줄 구절+의미 → ② 역할별 오답
+  // 구절을 원문에서 강건하게 찾아 밑줄(대소문자·스마트따옴표·끝문장부호 차이 허용). 실패 시 대표 절 폴백 → 밑줄 없는 함의 문항 방지
+  function underlineIn(passage, phrase) {
+    function norm(s) { return String(s || "").replace(/[‘’‛′]/g, "'").replace(/[“”″]/g, '"').replace(/\s+/g, " "); }
+    if (phrase) {
+      var p = passage.indexOf(phrase);
+      if (p >= 0) return passage.slice(0, p) + "<u>" + phrase + "</u>" + passage.slice(p + phrase.length);
+      var np = norm(passage), nq = norm(phrase).replace(/[.,;:!?]+$/, "").trim();
+      if (nq.length >= 6) {
+        var idx = np.toLowerCase().indexOf(nq.toLowerCase());
+        if (idx >= 0) {
+          // 정규화 인덱스를 원문 인덱스로 재사상(공백 축약만 되돌림) — 근사 매칭
+          var words = nq.split(" "); var re = new RegExp(words.map(function (w) { return w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); }).join("\\s+"), "i");
+          var m = re.exec(passage);
+          if (m) return passage.slice(0, m.index) + "<u>" + m[0] + "</u>" + passage.slice(m.index + m[0].length);
+        }
+      }
+    }
+    // 폴백: 가장 긴 절(콤마/세미콜론 분할)에 밑줄 — 항상 밑줄이 존재하도록
+    var clauses = passage.split(/[,;:]/).map(function (s) { return s.trim(); }).filter(function (s) { return s.split(" ").length >= 4; });
+    clauses.sort(function (a, b) { return b.length - a.length; });
+    var cl = clauses[0];
+    if (cl) { var ci = passage.indexOf(cl); if (ci >= 0) return passage.slice(0, ci) + "<u>" + cl + "</u>" + passage.slice(ci + cl.length); }
+    return passage;
+  }
   async function buildImplication(passage) {
-    var o = await llmJSON([{ role: "system", content: "함의추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 함축 의미가 풍부한 '원문 구절' 하나와 그 문맥상 의미를 정하라. JSON: {\"phrase\":\"원문 그대로의 구절\",\"meaning\":\"그 함축 의미를 풀어쓴 영어 한 문장\"}.\n\n" + passage }], { temperature: 0.4, timeout: 55000 });
+    var o = await llmJSON([{ role: "system", content: "함의추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 함축 의미가 풍부한 '원문 구절' 하나와 그 문맥상 의미를 정하라. phrase는 반드시 지문에 있는 문자열 그대로. JSON: {\"phrase\":\"원문 그대로의 구절\",\"meaning\":\"그 함축 의미를 풀어쓴 영어 한 문장\"}.\n\n" + passage }], { temperature: 0.4, timeout: 55000 });
     if (!o || !o.meaning) return null;
     var dis = await makeDistractors(o.meaning, "영어 한 문장", "밑줄 구절 '" + (o.phrase || "") + "'의 함의");
     var a = await reviewOptions(o.meaning, dis, { type: "함의" }); if (!a) return null;
-    var pg = o.phrase && passage.indexOf(o.phrase) >= 0 ? passage.replace(o.phrase, "<u>" + o.phrase + "</u>") : passage;
+    var pg = underlineIn(passage, o.phrase);
+    if (pg.indexOf("<u>") < 0) return null;   // 밑줄이 없으면 문항 성립 불가 → 실패 처리(재시도)
     return { type: "함의", instruction: "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?", passage: pg, choices: a.choices, answer: a.answer, explanation: "밑줄 친 부분은 '" + o.meaning + "'을 함의한다." };
   }
   // 요약: ① (A)(B) 빈칸 요약문+정답 → ② 오답 쌍
@@ -643,8 +668,7 @@
       }
       // 복수정답/검증불가 → 재시도
     }
-    if (last && last.st) return factResult(wantMatch, last.st, (last.answer >= 1 && last.answer <= 5) ? last.answer : 1, "미검증");
-    return null;
+    return null;   // 3회 검증 실패 시 '미검증(복수정답 소지)' 문항을 학생에게 내보내지 않음 — 상위에서 재시도/스킵
   }
   // 지문 속 단어 5개를 등장순으로 ⓐ~ⓔ<u>밑줄</u> 표시하고, corruptIdx 자리는 wrongWord로 '코드가' 치환
   function markWords(passage, words, corruptIdx, wrongWord) {
@@ -982,6 +1006,9 @@
   function splitSentences(p) {
     var s = String(p || "").replace(/\s+/g, " ").trim();
     var out = s.match(/[^.!?]+[.!?]+(?:["')\]]+)?/g) || [];
+    // 종결부호 없이 끝나는 마지막 조각(붙여넣기 시 흔한 마침표 누락)도 포함 — 문장 소실 방지
+    var consumed = out.join("").length, tail = s.slice(consumed).trim();
+    if (tail && tail.split(" ").length >= 3) out.push(tail);
     return out.map(function (x) { return x.trim(); }).filter(function (x) { return x.split(" ").length >= 3; });
   }
   var CIRCN = ["①", "②", "③", "④", "⑤"];
@@ -1204,11 +1231,17 @@
   function buildInitialVocab(passage) {
     var cw = contentWords(passage).filter(function (w) { return w.length >= 5 && /^[a-z]+$/i.test(w); });
     if (!cw.length) return null;
-    var w = cw[rint(Math.min(cw.length, 8))];
-    var re = new RegExp("\\b" + w + "\\b", "i");
-    var m = re.exec(passage); if (!m) return null;
-    var blanked = passage.slice(0, m.index) + w.charAt(0) + "_".repeat(Math.max(3, w.length - 1)) + passage.slice(m.index + m[0].length);
-    return { type: "첫글자어휘", instruction: "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)", passage: blanked, choices: [], answer: 0, explanation: "[모범답안] " + m[0] + " — 문단의 논지상 이 자리에는 '" + m[0] + "'가 유일하게 자연스럽다.", _audit: "정답 코드생성됨(빈칸·첫글자 힌트를 코드가 구성)" };
+    // 정답 노출 방지: 지문에 1회만 등장하는 단어를 우선 선택(여러 번 나오면 다른 위치에 정답이 그대로 남음)
+    var uniq = cw.filter(function (x) { return (passage.match(new RegExp("\\b" + x + "\\b", "gi")) || []).length === 1; });
+    var pool = uniq.length ? uniq : cw;
+    var w = pool[rint(Math.min(pool.length, 8))];
+    var reAll = new RegExp("\\b" + w + "\\b", "gi");
+    var m = reAll.exec(passage); if (!m) return null;
+    var first = m[0], hint = first.charAt(0) + "_".repeat(Math.max(3, first.length - 1));
+    // 같은 단어의 모든 등장을 빈칸 처리(첫 등장만 첫글자 힌트, 나머지는 완전 빈칸) — 정답 유출 차단
+    var n = 0;
+    var blanked = passage.replace(new RegExp("\\b" + w + "\\b", "gi"), function (mm) { n++; return n === 1 ? hint : "_".repeat(Math.max(3, mm.length)); });
+    return { type: "첫글자어휘", instruction: "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)", passage: blanked, choices: [], answer: 0, explanation: "[모범답안] " + first + " — 문단의 논지상 이 자리에는 '" + first + "'가 유일하게 자연스럽다.", _audit: "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)" };
   }
   // 지문 늘리기(증편): 논지·문체 유지 + 부연·예시 추가, 원문 문장 보존을 '코드로' 검증
   async function extendPassage(passage, opts) {
@@ -1261,12 +1294,13 @@
   // 장문세트: 1지문 2~3문항(동형 모의고사용) — 기존 빌더 재사용, subItems로 반환
   async function buildLongSet(passage, opts) {
     opts = opts || {};
-    var subs = [], setPg = passage, plan = [["제목", function () { return buildInference(passage, "제목", { fast: true }); }], ["어휘", function () { return buildVocab(passage); }], ["내용불일치", function () { return buildFactCheck(passage, false); }]];
+    // 공통지문 세트: 지문을 '변형하지 않는' 유형만 사용(밑줄·빈칸·치환형은 공통지문을 오염시켜 제외) → 하나의 깨끗한 원문을 모든 하위문항이 공유
+    var subs = [], plan = [["제목", function () { return buildInference(passage, "제목", { fast: true }); }], ["요지", function () { return buildInference(passage, "요지", { fast: true }); }], ["내용불일치", function () { return buildFactCheck(passage, false); }]];
     for (var i = 0; i < plan.length && subs.length < (opts.n || 3); i++) {
-      try { var q = await plan[i][1](); if (q) { if (q.passage && q.passage !== passage) setPg = q.passage; q.passage = ""; subs.push(q); } } catch (_) {}
+      try { var q = await plan[i][1](); if (q) { q.passage = ""; subs.push(q); } } catch (_) {}
     }
     if (subs.length < 2) return null;
-    return { type: "장문세트", instruction: "[" + subs.length + "문항 세트] 다음 글을 읽고, 물음에 답하시오.", passage: setPg, choices: [], answer: 0, explanation: "세트 문항 " + subs.length + "개(각 문항 해설 참조).", subItems: subs, _audit: "세트 " + subs.length + "문항(" + subs.map(function (s) { return s.type; }).join("·") + ")" + (setPg !== passage ? " · 조작 공통지문 반영" : "") };
+    return { type: "장문세트", instruction: "[" + subs.length + "문항 세트] 다음 글을 읽고, 물음에 답하시오.", passage: passage, choices: [], answer: 0, explanation: "세트 문항 " + subs.length + "개(각 문항 해설 참조).", subItems: subs, _audit: "세트 " + subs.length + "문항(" + subs.map(function (s) { return s.type; }).join("·") + ") · 공통지문 원문 보존" };
   }
 
   // ===== 분석지: 문장별 해석·구문(기능색) + 논리 흐름 + 암기 카드 — 코드가 문장 분할·검증, LLM이 내용 =====
@@ -1725,7 +1759,7 @@
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
-    analysisSheet: analysisSheet, extractKeywords: extractKeywords,
+    analysisSheet: analysisSheet, extractKeywords: extractKeywords, lastLimited: function () { return LAST_LIMITED; },
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
