@@ -1261,12 +1261,12 @@
   // 장문세트: 1지문 2~3문항(동형 모의고사용) — 기존 빌더 재사용, subItems로 반환
   async function buildLongSet(passage, opts) {
     opts = opts || {};
-    var subs = [], plan = [["제목", function () { return buildInference(passage, "제목", { fast: true }); }], ["어휘", function () { return buildVocab(passage); }], ["내용불일치", function () { return buildFactCheck(passage, false); }]];
+    var subs = [], setPg = passage, plan = [["제목", function () { return buildInference(passage, "제목", { fast: true }); }], ["어휘", function () { return buildVocab(passage); }], ["내용불일치", function () { return buildFactCheck(passage, false); }]];
     for (var i = 0; i < plan.length && subs.length < (opts.n || 3); i++) {
-      try { var q = await plan[i][1](); if (q) { q.passage = ""; subs.push(q); } } catch (_) {}
+      try { var q = await plan[i][1](); if (q) { if (q.passage && q.passage !== passage) setPg = q.passage; q.passage = ""; subs.push(q); } } catch (_) {}
     }
     if (subs.length < 2) return null;
-    return { type: "장문세트", instruction: "[" + subs.length + "문항 세트] 다음 글을 읽고, 물음에 답하시오.", passage: passage, choices: [], answer: 0, explanation: "세트 문항 " + subs.length + "개(각 문항 해설 참조).", subItems: subs, _audit: "세트 " + subs.length + "문항(" + subs.map(function (s) { return s.type; }).join("·") + ")" };
+    return { type: "장문세트", instruction: "[" + subs.length + "문항 세트] 다음 글을 읽고, 물음에 답하시오.", passage: setPg, choices: [], answer: 0, explanation: "세트 문항 " + subs.length + "개(각 문항 해설 참조).", subItems: subs, _audit: "세트 " + subs.length + "문항(" + subs.map(function (s) { return s.type; }).join("·") + ")" + (setPg !== passage ? " · 조작 공통지문 반영" : "") };
   }
 
   var BUILDERS = {
