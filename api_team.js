@@ -29,30 +29,51 @@
   /* ---------- LLM 공급자 (키리스 기본 + 선택 무료키 업그레이드) ----------
    * 키 미입력 → Pollinations(무키). Gemini/Groq '무료키' 입력 시 그쪽으로 라우팅.
    * 키는 사용자 브라우저(localStorage)에만 저장 — 공개 코드엔 절대 안 들어감. */
-  var CFG = { geminiKey: "", groqKey: "", geminiModel: "gemini-2.5-flash", groqModel: "llama-3.3-70b-versatile" };
-  function configure(c) { c = c || {}; Object.assign(CFG, c); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; if (c.onLearn) CB.onLearn = c.onLearn; }
-  function provider() { return CFG.geminiKey ? "gemini" : (CFG.groqKey ? "groq" : "pollinations"); }
+  var CFG = { geminiKey: "", groqKey: "", geminiModel: "gemini-2.5-flash", groqModel: "llama-3.3-70b-versatile", ollamaModel: "", ollamaUrl: "http://localhost:11434" };
+  // 무료 키 회전 풀: geminiKey/groqKey에 여러 키를 콤마·줄바꿈·공백으로 넣으면 한도 소진 시 자동으로 다음 키로 넘어감(= 한도 N배)
+  var POOL = { gemini: [], groq: [] }, PDEAD = { gemini: {}, groq: {} };
+  function parseKeys(s) { return String(s || "").split(/[\s,]+/).map(function (x) { return x.trim(); }).filter(Boolean); }
+  function rebuildPools() { POOL.gemini = parseKeys(CFG.geminiKey); POOL.groq = parseKeys(CFG.groqKey); PDEAD.gemini = {}; PDEAD.groq = {}; }
+  function liveKeys(prov) { return (POOL[prov] || []).filter(function (k) { return !PDEAD[prov][k]; }); }
+  function curKey(prov) { var live = liveKeys(prov); return live.length ? live[0] : ""; }   // 항상 살아있는 첫 키(dead는 스킵)
+  function markDead(prov) { var k = curKey(prov); if (k) PDEAD[prov][k] = 1; }
+  function hasLive(prov) { return liveKeys(prov).length > 0; }
+  function keyStats() { return { gemini: { total: POOL.gemini.length, live: liveKeys("gemini").length }, groq: { total: POOL.groq.length, live: liveKeys("groq").length }, ollama: !!CFG.ollamaModel }; }
+  function configure(c) { c = c || {}; Object.assign(CFG, c); if (c.geminiKey != null || c.groqKey != null) rebuildPools(); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; if (c.onLearn) CB.onLearn = c.onLearn; }
+  // Ollama(로컬·무한) 최우선 → Gemini(살아있는 키) → Groq(살아있는 키) → Pollinations(무키)
+  function provider() { return CFG.ollamaModel ? "ollama" : (hasLive("gemini") ? "gemini" : (hasLive("groq") ? "groq" : "pollinations")); }
   var LAST_LIMITED = false;   // 직전 호출이 레이트리밋이었는지(진단·UI용)
   async function llmRaw(messages, opts) {
     opts = opts || {}; var prov = opts.forceProvider || provider(); var to = withTimeout(opts.timeout || 70000);
     try {
+      if (prov === "ollama") {
+        // 로컬 Ollama(무한·무료). https 페이지에선 mixed-content로 막히므로 사이트를 로컬(localhost)에서 실행해야 함.
+        var obody = { model: CFG.ollamaModel, messages: messages, temperature: opts.temperature == null ? 0.6 : opts.temperature, stream: false };
+        if (opts.json) obody.response_format = { type: "json_object" };
+        var ro = await fetch(String(CFG.ollamaUrl).replace(/\/+$/, "") + "/v1/chat/completions", { method: "POST", headers: { "Content-Type": "application/json" }, signal: to.signal, body: JSON.stringify(obody) });
+        var doo = await ro.json();
+        if (doo.error) throw new Error("ollama: " + String((doo.error && doo.error.message) || doo.error).slice(0, 80));
+        return (doo.choices && doo.choices[0] && doo.choices[0].message && doo.choices[0].message.content) || "";
+      }
       if (prov === "gemini") {
+        var gk = curKey("gemini"); if (!gk) throw new Error("gemini: no live key");
         var sys = messages.filter(function (m) { return m.role === "system"; }).map(function (m) { return m.content; }).join("\n");
         var rest = messages.filter(function (m) { return m.role !== "system"; }).map(function (m) { return { role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content }] }; });
         var body = { contents: rest, generationConfig: { temperature: opts.temperature == null ? 0.6 : opts.temperature } };
         if (opts.json) body.generationConfig.responseMimeType = "application/json";
         if (sys) body.systemInstruction = { parts: [{ text: sys }] };
-        var rg = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + CFG.geminiModel + ":generateContent?key=" + encodeURIComponent(CFG.geminiKey), { method: "POST", headers: { "Content-Type": "application/json" }, signal: to.signal, body: JSON.stringify(body) });
+        var rg = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + CFG.geminiModel + ":generateContent?key=" + encodeURIComponent(gk), { method: "POST", headers: { "Content-Type": "application/json" }, signal: to.signal, body: JSON.stringify(body) });
         var dg = await rg.json();
-        if (dg.error) { var gm = String((dg.error && dg.error.message) || ""); if (/quota|rate|429|exhausted|high demand|503/i.test(gm) || dg.error.code === 429 || dg.error.code === 503) LAST_LIMITED = true; throw new Error("gemini: " + gm.slice(0, 80)); }
+        if (dg.error) { var gm = String((dg.error && dg.error.message) || ""); if (/quota|rate|429|exhausted|high demand|503/i.test(gm) || dg.error.code === 429 || dg.error.code === 503) { LAST_LIMITED = true; markDead("gemini"); } throw new Error("gemini: " + gm.slice(0, 80)); }
         return (dg.candidates && dg.candidates[0] && dg.candidates[0].content && dg.candidates[0].content.parts && dg.candidates[0].content.parts[0].text) || "";
       }
       if (prov === "groq") {
+        var qk = curKey("groq"); if (!qk) throw new Error("groq: no live key");
         var gbody = { model: CFG.groqModel, messages: messages, temperature: opts.temperature == null ? 0.6 : opts.temperature };
         if (opts.json) gbody.response_format = { type: "json_object" };   // 유효 JSON 강제 → 파싱실패·빈응답 격감
-        var rq = await fetch("https://api.groq.com/openai/v1/chat/completions", { method: "POST", headers: { "Content-Type": "application/json", "Authorization": "Bearer " + CFG.groqKey }, signal: to.signal, body: JSON.stringify(gbody) });
+        var rq = await fetch("https://api.groq.com/openai/v1/chat/completions", { method: "POST", headers: { "Content-Type": "application/json", "Authorization": "Bearer " + qk }, signal: to.signal, body: JSON.stringify(gbody) });
         var dq = await rq.json();
-        if (dq.error) { var em = String((dq.error && dq.error.message) || ""); if (/rate limit|quota|too many|429/i.test(em)) { LAST_LIMITED = true; } throw new Error("groq: " + em.slice(0, 80)); }
+        if (dq.error) { var em = String((dq.error && dq.error.message) || ""); if (/rate limit|quota|too many|429/i.test(em)) { LAST_LIMITED = true; markDead("groq"); } throw new Error("groq: " + em.slice(0, 80)); }
         return (dq.choices && dq.choices[0] && dq.choices[0].message && dq.choices[0].message.content) || "";
       }
       // Pollinations는 response_format 미지원(보내면 오류) → 프롬프트의 'JSON만' 지시에 의존
@@ -64,7 +85,14 @@
     } finally { to.done(); }
   }
   async function llmWithRetry(messages, opts) {
-    for (var i = 0; i < 4; i++) { LAST_LIMITED = false; var s = await llmRaw(messages, opts).catch(function () { return ""; }); if (s && s.trim()) return s; if (LAST_LIMITED) break; await delay(1200 * (i + 1)); }
+    opts = opts || {}; var prov = opts.forceProvider || provider();
+    for (var i = 0; i < 6; i++) {
+      LAST_LIMITED = false;
+      var s = await llmRaw(messages, opts).catch(function () { return ""; });
+      if (s && s.trim()) return s;
+      if (LAST_LIMITED) { if ((prov === "gemini" || prov === "groq") && hasLive(prov)) continue; break; }   // 소진된 키는 llmRaw가 dead 표시 → 살아있는 다음 키로 즉시 재시도
+      await delay(1200 * (i + 1));
+    }
     return "";
   }
   var _llmQ = Promise.resolve();
@@ -76,7 +104,7 @@
     return p;
   }
   // 연결된 공급자 폴백 체인: Gemini(키) → Groq(키) → Pollinations(무료). 앞이 실패/레이트리밋이면 다음으로.
-  function providerChain() { var c = []; if (CFG.geminiKey) c.push("gemini"); if (CFG.groqKey) c.push("groq"); c.push("pollinations"); return c; }
+  function providerChain() { var c = []; if (CFG.ollamaModel) c.push("ollama"); if (hasLive("gemini")) c.push("gemini"); if (hasLive("groq")) c.push("groq"); c.push("pollinations"); return c; }
   async function tryChain(messages, opts, chain, i) {
     if (i >= chain.length) return "";
     var prov = chain[i], o = Object.assign({}, opts, { forceProvider: prov });
@@ -1759,7 +1787,8 @@
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
-    analysisSheet: analysisSheet, extractKeywords: extractKeywords, lastLimited: function () { return LAST_LIMITED; },
+    analysisSheet: analysisSheet, extractKeywords: extractKeywords, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
+    ollamaModels: async function (url) { try { var d = await getJSON(String(url || CFG.ollamaUrl).replace(/\/+$/, "") + "/api/tags", 4000); return (d && d.models || []).map(function (m) { return m.name; }); } catch (e) { return null; } },
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
