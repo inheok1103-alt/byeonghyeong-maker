@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-02T23:42:25.521Z",
+ "updated": "2026-07-03T04:22:18.893Z",
  "samples": [
+  {
+   "ts": "2026-07-03T04:21:41.853Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 3/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as DIRECT OBJECT. The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them. By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper. (Sharpen, cut and wrap are transitive verbs.) Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP. ‘INtransitive’ means ‘has (and needs) no complement’. Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs. Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right. Intransitive VPs are the simplest VPs. So a sentence like Omar sighed is represented as in [17]. Note the [intrans] feature on the V node.",
+    "choices": [
+     "the object that is acted upon by the verb and is figuratively conquered",
+     "the participant that performs the action and emerges victorious over the verb",
+     "the central idea that drives the entire narrative",
+     "any entity involved in the action regardless of its role",
+     "the subject that initiates the action and is never defeated"
+    ],
+    "answer": 1,
+    "explanation": "밑줄 친 부분은 'the element that receives the action of the verb and is metaphorically defeated'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-02T23:36:40.234Z",
    "type": "어법개수형",
@@ -248,25 +272,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'D‑structure is a purely thematic representation in which predicates assign thematic roles to arguments, determining their subject or object positions regardless of their surface syntactic positions.'이며 정답 (인수에 역할을 할당하는 술어의 순전히 주제별 표현)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: D‑structure is a purely thematic representation in which predicates assign thematic roles to arguments, determining their subject or object positions regardless of their surface syntactic positions.]"
-   }
-  },
-  {
-   "ts": "2026-07-02T04:29:00.308Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 3/3 일치",
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Curbing Binge Drinking Through College Education",
-     "Reducing College Alcohol Use Across Campus",
-     "Eliminating All Alcohol Consumption on Campus",
-     "Managing Binge Drinking Within Dormitory Settings",
-     "Enhancing Physics Laboratory Safety Standards Globally"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Educating college students to manage binge‑drinking risks is essential to curb its harmful costs.'이며 정답 (MYMEMORY WARNING: YOU USED ALL AVAILABLE FREE TRANSLATIONS FOR TODAY. NEXT AVAILABLE IN  03 HOURS 32 MINUTES 16 SECONDS VISIT HTTPS://MYMEMORY.TRANSLATED.NET/DOC/USAGELIMITS.PHP TO TRANSLATE MORE)이 이를 반영한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Educating college students to manage binge‑drinking risks is essential to curb its harmful costs.]"
    }
   }
  ]
