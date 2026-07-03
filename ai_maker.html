@@ -60,6 +60,12 @@ details.fold>summary{list-style:none;padding:3px 0;outline:none}
 details.fold>summary::-webkit-details-marker{display:none}
 details.fold>summary::before{content:"▸ ";color:var(--ac);font-weight:700}
 details.fold[open]>summary::before{content:"▾ "}
+.xfcmp{display:flex;gap:10px;align-items:stretch}
+.xfcol{flex:1;min-width:0}
+.xfh{font-weight:700;font-size:9.2pt;margin-bottom:3px}
+.xfpg{height:calc(100% - 20px);white-space:pre-wrap}
+mark.xfm{background:#fff2b8;border-radius:3px;padding:0 1px;box-shadow:inset 0 -1px 0 #f0d878}
+@media(max-width:640px){.xfcmp{flex-direction:column}}
 .stepbar{display:flex;gap:8px;margin:10px 0 4px;flex-wrap:wrap}
 .step{flex:1;min-width:120px;background:var(--soft);border-radius:10px;padding:8px 11px;font-size:9pt;color:var(--mut);border-left:3px solid var(--line)}
 .step b{color:var(--ink);font-size:10pt}
@@ -468,7 +474,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704d"></script>
+<script src="api_team.js?v=20260704e"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -1302,6 +1308,12 @@ function askBrain(){
     out.innerHTML='<div class="card" style="background:#f0fdfa;box-shadow:none;border:1px solid #99e0d5"><div style="font-weight:700;color:#0f766e">답변'+sc+'</div><div style="margin-top:5px;white-space:pre-wrap;line-height:1.5">'+esc(r.answer)+'</div>'+facts+'</div>';
   }).catch(function(e){ out.innerHTML='<div class="note">오류: '+esc(e.message)+'</div>'; });
 }
+/* 변형본에서 원문에 없던 단어를 강조(유의어·구조 변경 시각화) */
+function xfMark(orig, variant){
+  var oset={}; (String(orig).toLowerCase().match(/[a-z']+/g)||[]).forEach(function(w){ oset[w]=1; });
+  return pgHtml(variant).replace(/[A-Za-z][A-Za-z']*/g, function(w){ return oset[w.toLowerCase()]?w:('<mark class="xfm">'+w+'</mark>'); });
+}
+function copyXf(btn){ var t=btn.getAttribute("data-t")||""; navigator.clipboard.writeText(t).then(function(){ toast("변형본을 복사했습니다"); },function(){ alert("복사 실패 — 권한 확인"); }); }
 function doTransform(level){
   var pgs0=parsePassages();
   if(pgs0.length>1){ alert("변형은 한 번에 한 지문만 지원합니다. 작업대의 지문 칩에서 하나만 남기고 시도하세요."); return; }
@@ -1313,8 +1325,14 @@ function doTransform(level){
   T.transformStaged(passage, level, {onProgress:function(m){ note.textContent=m; }}).then(function(r){
     if(!r||!r.variant){ note.textContent="변형 실패 — 다시 시도하세요"; return; }
     note.textContent=(r.stage||"")+" · "+(r.audit||"");
-    var ch=(r.changed&&r.changed.length)?('<div class="note" style="margin-top:5px">바뀐 점: '+esc(r.changed.join(" · "))+'</div>'):'';
-    out.innerHTML='<div class="card" style="background:#f8fafb;box-shadow:none;border:1px solid #d7e3e0"><div style="font-weight:700;color:#0f766e;margin-bottom:5px">'+esc(r.stage||"변형")+' <span class="note" style="font-weight:400">'+esc(r.note||"")+'</span></div><div class="pg">'+esc(r.variant)+'</div>'+ch+'<div class="note" style="margin-top:6px;color:#0f766e">✓ ② 작업대에 자동으로 올라갔습니다 — 원문(①)은 보존</div><button class="ghost noprint" style="margin-top:5px" onclick="setMode(\'gen\');window.scrollTo(0,0)">🚀 이 지문으로 출제하러 가기</button></div>';
+    var ch=(r.changed&&r.changed.length)?('<div class="note" style="margin-top:7px">바뀐 점: '+esc(r.changed.join(" · "))+'</div>'):'';
+    out.innerHTML='<div class="card" style="background:#f8fafb;box-shadow:none;border:1px solid #d7e3e0">'+
+      '<div style="font-weight:700;color:#0f766e;margin-bottom:6px">'+esc(r.stage||"변형")+' <span class="note" style="font-weight:400">'+esc(r.note||"")+'</span> <span class="note">— 노란 표시가 바뀐 부분</span></div>'+
+      '<div class="xfcmp">'+
+        '<div class="xfcol"><div class="xfh">📄 원문</div><div class="pg xfpg">'+pgHtml(passage)+'</div></div>'+
+        '<div class="xfcol"><div class="xfh" style="color:#0f766e">🔄 변형본 <span class="note" style="font-weight:400">(작업대에 올라감)</span></div><div class="pg xfpg" style="border-color:#bcdcd0;background:#fbfffd">'+xfMark(passage, r.variant)+'</div></div>'+
+      '</div>'+ch+
+      '<div class="row" style="margin-top:8px"><button class="ghost noprint" onclick="setMode(\'gen\');window.scrollTo(0,0)">🚀 이 변형본으로 출제하러 가기</button><button class="ghost noprint" onclick="copyXf(this)" data-t="'+escAttr(r.variant)+'">📋 변형본 복사</button><span class="note">원문(①)은 그대로 보존됩니다</span></div></div>';
     workSet(r.variant, (r.stage||"지문 변형")+(r.audit?(" · "+r.audit):""));
   }).catch(function(e){ note.textContent="오류: "+e.message; }).then(function(){ GENERATING=false; });
 }
