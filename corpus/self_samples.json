@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-04T15:44:11.073Z",
+ "updated": "2026-07-04T17:40:23.932Z",
  "samples": [
+  {
+   "ts": "2026-07-04T17:38:24.203Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 3/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "from confusion to understanding",
+     "from confusion to clarity",
+     "from clarity to confusion",
+     "from confusion to complete clarity",
+     "from silence to noise"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Phrasal verbs function as single semantic units composed of a verb and particle, and their usage and acquisition can be examined through learner English corpora.'이며 정답 (혼란에서 명확성으로)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: Phrasal verbs function as single semantic units composed of a verb and particle, and their usage and acquisition can be examined through learner English corpora.]"
+   }
+  },
   {
    "ts": "2026-07-04T15:40:02.487Z",
    "type": "주제",
@@ -251,30 +275,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 다른 사람이 말한 것을 신고하거나 다른 장소 또는 다른 시간에 신고할 때 변경해야 할 수 있습니다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-03T13:22:34.198Z",
-   "type": "안내문불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
-    "passage": "",
-    "choices": [
-     "문장의 구성 요소를 식별하기 위해서는 단어들이 일렬로 나열된 단순한 개념을 넘어 계층적 구조를 인정해야 한다.",
-     "필자는 현재 다이어그램 [5]가 왜 잘못되었는지 정확히 보여줄 필요가 있다고 언급한다.",
-     "문장이 숫자 배열과 같은 구조라면, 끝에서 단어를 잘라내도 항상 좋은 문장이 남을 것이라고 가정한다.",
-     "문장 [4]에서 단어를 하나씩 제거하여 최종적으로 한 단어만 남을 때까지 작업을 진행해야 한다.",
-     "완전하고 문법적인 문장을 구성하는 것으로 보이는 단어열에만 별표를 표시해야 한다."
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 모순한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
