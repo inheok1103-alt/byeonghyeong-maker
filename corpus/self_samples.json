@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-04T09:44:33.178Z",
+ "updated": "2026-07-04T11:58:15.094Z",
  "samples": [
+  {
+   "ts": "2026-07-04T11:50:37.598Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 3/3 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "WEEK 4 DAY 5 REVIEW Let’s see how many of the new words studied during the course of this week you (A) [forget / remember]. Incidentally, try to (B) [keep / discard] a record of the many times you find your new words in magazines, newspapers, and books. Before you knew the meanings of those words you probably (C) [skipped / focused on] right over them. In the following quiz, match the best possible definition with the word you have studied. *Reminder: Record answers on a sheet of paper. REVIEW WORDS DEFINITIONS 1.alacrity a. scorn 2.aspirant b. to make afraid 3.belligerent c. frantic outburst 4.belittle d. person of eighty 5.brash e. to mock 6.castigate f. make public, proclaim 7.disdain g. pretense, sham 8.dregs h. combative 9.feint i. candidate for better job 10.frenzy j. seeking war, hostile 11.intimidate k. speak of as unimportant 12.laceration l. vulgar, using indecent language 13.octogenarian m. insolent 14.promulgate n. punish, chastise 15.pugnacious o. comfort 16.scoff p. most worthless part 17.scurrilous q. able to be touched 18.solace r. rough cut 19.sordid s. filthy, ignoble 20.tangible t. quick willingness",
+    "choices": [
+     "(A) forget - (B) keep - (C) skipped",
+     "(A) remember - (B) keep - (C) skipped",
+     "(A) forget - (B) discard - (C) skipped",
+     "(A) remember - (B) discard - (C) skipped",
+     "(A) forget - (B) discard - (C) focused on"
+    ],
+    "answer": 2,
+    "explanation": "정답 조합: (A) remember - (B) keep - (C) skipped. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-04T09:35:11.093Z",
    "type": "어법(밑줄)",
@@ -251,30 +275,6 @@
     ],
     "answer": 3,
     "explanation": "틀린 곳은 ⓐ(The White House beefed uped. → The White House beefed up.), ⓒ(A trained technician ought to carry outed. → A trained technician ought to carry out.), ⓔ(Susie always messes ups. → Susie always messes up.) — 총 3개.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-03T07:47:55.175Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "문장 논증은 문맥 속에서 주어와 목적어를 연결하는 역할을 한다.",
-     "문장 논증은 주동사의 두 번째 논증으로서 말하거나 믿는 내용을 표현하며, 때로는 술어의 유일한 논증이 될 수 있다.",
-     "문장 논증은 말한 내용이 아니라 행동의 결과를 설명한다.",
-     "문장 논증은 모든 문법적 요소를 통합해 문장을 완성한다.",
-     "문장 논증은 주동사의 첫 번째 논증으로서 의미를 전달한다."
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'In grammatical analysis, a sentential argument functions as the second argument of a main verb, expressing what is said or believed, and can even serve as the sole argument of the predicate.'이며 정답 (문장 논증은 주동사의 두 번째 논증으로서 말하거나 믿는 내용을 표현하며, 때로는 술어의 유일한 논증이 될 수 있다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: In grammatical analysis, a sentential argument functions as the second argument of a main verb, expressing what is said or believed, and can even serve as the sole argument of the predicate.]"
    }
   }
  ]
