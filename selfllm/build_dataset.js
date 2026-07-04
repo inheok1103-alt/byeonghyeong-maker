@@ -88,6 +88,8 @@ function ok(q, type) { if (!q || !q.instruction) return false; if (type !== "첫
       .replace(/\s+/g, " ").trim();
   }
   var passages = (pdb.passages || pdb).map(function (x) { var t = typeof x === "string" ? x : (x.text || ""); return cleanPassage(t); }).filter(isProse);
+  // 벤치마크 홀드아웃 제외(누수 방지): evolve.js가 시험용으로 떼둔 지문은 학습에서 뺀다
+  try { var hold = JSON.parse(fs.readFileSync(ROOT + "/selfllm/benchmark_holdout.json", "utf8")).holdout || {}; var before = passages.length; passages = passages.filter(function (p) { return !hold[String(p).slice(0, 60)]; }); if (before !== passages.length) console.log("(벤치마크 홀드아웃 " + (before - passages.length) + "지문 학습 제외)"); } catch (e) {}
   for (var s = passages.length - 1; s > 0; s--) { var r = Math.floor(Math.random() * (s + 1)); var tmp = passages[s]; passages[s] = passages[r]; passages[r] = tmp; }   // 셔플: 실행마다 다른 지문
   var TARGET = N * (ONLINE ? 1 : 4), CAP = Math.ceil(TARGET / (ONLINE ? 6 : 3));   // 유형 균형 캡
   // 기존 train.jsonl 서명 로드 → 실행 간 중복 제거(밀도 누적 안전)

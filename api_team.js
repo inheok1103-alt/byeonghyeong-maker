@@ -141,7 +141,7 @@
       messages = hasSys ? messages.map(function (m) { return m.role === "system" ? { role: "system", content: m.content + sysadd } : m; })
         : [{ role: "system", content: sysadd.trim() }].concat(messages);
     }
-    return tryChain(messages, opts, providerChain(), 0);
+    return tryChain(messages, opts, opts.forceProvider ? [opts.forceProvider] : providerChain(), 0);   // forceProvider 시 해당 모델만(신경다발 앙상블용)
   }
   async function llmJSON(messages, opts) { opts = opts || {}; opts.json = true; return extractJSON(await llm(messages, opts)); }
   function extractJSON(raw) {
@@ -1872,7 +1872,7 @@
     topCollocations: function (n) { return (CORPUS.colloc || []).slice(0, n || 12).map(function (c) { return { phrase: (c && c[0] != null) ? c[0] : c, count: (c && c[1]) || 0 }; }); },
     corpusResearch: function () { return (CORPUS.research && CORPUS.research.notes) || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
-    llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, tatoeba: tatoeba, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
+    llm: llm, llmRaw: llmRaw, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, tatoeba: tatoeba, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
     refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain, deliberate: deliberate,
     selfLearnStep: selfLearnStep, learnedRules: learnedRules, applyLearned: applyLearned, teacherHarness: teacherHarness,

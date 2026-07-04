@@ -41,6 +41,32 @@ node selfllm/build_dataset.js 300 2 --online
 - **출제자 뇌 앱에 연결**: 무한모드 → 로컬 AI(Ollama)에 위 모델명 입력 → 우리 모델로 출제
 - **HuggingFace 무료 추론**: Inference API/Spaces로 호스팅
 
+## 진화 엔진 + 무료 신경다발 (점점 완벽해지는 루프)
+
+한 번 만든 모델로 끝이 아니라, **절대 나빠지지 않으면서 매번 올라가는** 자기개선 루프.
+
+```bash
+# 1) 데이터 성장 + 벤치마크 보장(한 방)  — 생성→흡수→홀드아웃 gold 고정
+node selfllm/evolve.js
+#    · build_dataset(코드 4유형, 홀드아웃 자동제외) + ingest_github(실제시험 빈칸)
+#    · benchmark.jsonl(정답 아는 시험셋, 학습에 안 섞임) + evolve_log.json 기록
+
+# 2) (무료 증류) 분야별 신경다발 = 무료모델 여러 개를 제안→집계(MoA)→검증
+node selfllm/neural_bundle.js --list          # 유형별 전담 파이프라인 보기
+node selfllm/neural_bundle.js --online 주제 3  # 무료키로 앙상블 가동(추론형)
+
+# 3) GitHub/HF 오픈 시험데이터 더 흡수(도메인 보강, 정답100%)
+node selfllm/ingest_github.js 500             # CLOTH 실제 영어시험 빈칸
+
+# 4) 재학습 후 승격 게이트(퇴화 차단) — 오를 때만 새 모델 채택
+python selfllm/eval_model.py --ollama ray-english-exam-3b   # 또는 Colab에서 evaluate_colab(model,tokenizer)
+```
+
+- **기계형(순서·삽입·연결어·첫글자)** → 코드가 정답 100% 보증(앙상블 불필요)
+- **추론형(빈칸·어법·주제·제목·함의…)** → 무료 신경다발(MoA)로 프론티어급 근접 → 우리 모델에 **증류**
+- **퇴화 차단** → benchmark.jsonl 점수가 오를 때만 승격(`benchmark_scores.json`에 기록)
+- 24시간 뇌(GitHub Actions)에 `evolve.js`를 걸면 자동으로 데이터가 계속 성장
+
 ## 참고
 - 베이스 3B는 무료 T4에 맞춘 선택. 더 좋은 품질은 7B(T4 빠듯) 또는 유료 GPU에서 14B.
 - 이 PC(RAM 7.7GB·GPU 없음)에선 학습·구동 불가 → 학습은 Colab, 구동은 HF/고사양기기.
