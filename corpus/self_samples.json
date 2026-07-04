@@ -1,6 +1,54 @@
 {
- "updated": "2026-07-04T21:25:52.912Z",
+ "updated": "2026-07-04T22:25:37.622Z",
  "samples": [
+  {
+   "ts": "2026-07-04T22:20:07.635Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 3/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "",
+    "choices": [
+     "신체 신호 범주는 제스처 범주와 체형 범주로 나뉜다.",
+     "제스처 범주의 신호는 화자의 몸 부위가 의도적으로 움직이거나 구성되는 것으로 이루어진다.",
+     "체형 범주의 신호는 화자 또는 청자의 전체 몸의 위치만을 포함한다.",
+     "신체 신호 범주는 화자의 몸이 정보를 제공하는 일반적인 출처이다.",
+     "신체 신호 범주는 화자와 청자의 얼굴 표정에 대한 정보를 포함한다."
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 모순한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-04T22:25:28.727Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "Presented ­here in part II is the second group of two cue categories, the “bodily cue categories.\n\n(A) But cues of the corporal category consist simply of the location of the speaker’s or hearer’s ­whole body. Both the bodily cue categories are more elaborate where the target is speech-­external. Accordingly, analy­sis of their use for speech-­external targets begins and occupies most of the next two chapters, while analy­sis of their use for speech-­internal targets follows more briefly.\n\n(B) But each category represents a more specific source of information. Cues of the gestural category consist of movements or configurations of parts of the speaker’s body produced volitionally.\n\n(C) ” This group consists of the category of gestural cues and the category of corporal cues, treated respectively in the next two chapters. As the general source of information common to both ­these categories, the body of one of the speech participants provides the cues to the target.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 5,
+    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-04T19:50:14.902Z",
    "type": "밑줄함의",
@@ -233,54 +281,6 @@
     ],
     "answer": 1,
     "explanation": "정답 진술만 글과 일치한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-03T17:59:56.365Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 3/3 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "명확한 글은 지나치게 단순하고 짧은 문장을 피하고 성숙한 사상을 충실히 전달하는 복잡한 구조를 사용해야 한다.",
-     "명확한 글은 조리법을 정확히 따라야 한다.",
-     "명확한 글은 모든 글쓰기 상황에서 가장 중요한 원칙이다.",
-     "명확한 글은 지나치게 단순하고 짧은 문장을 사용하며 성숙한 사상을 흐리게 전달해야 한다.",
-     "명확한 글은 성숙한 사상을 충실히 전달해야 한다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Clear writing must avoid overly simplistic, short sentences and instead employ complex structures that faithfully convey mature ideas.'이며 정답 (명확한 글은 지나치게 단순하고 짧은 문장을 피하고 성숙한 사상을 충실히 전달하는 복잡한 구조를 사용해야 한다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Clear writing must avoid overly simplistic, short sentences and instead employ complex structures that faithfully convey mature ideas.]"
-   }
-  },
-  {
-   "ts": "2026-07-03T15:34:30.793Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 3/3 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Adjusting Pronouns in Reported Speech",
-     "Adapting Pronouns, Tense, Place in Reported Speech",
-     "Managing Speech in Communication",
-     "Preserving Original Pronouns, Tense, and Place in Reported Speech",
-     "Translating Idiomatic Expressions in Reported Speech"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Reported speech must adjust pronouns, tense, and time/place references to fit the reporter’s context.'이며 정답 (신고된 발화에서 대명사, 시제, 자리 바꾸기)이 이를 반영한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Reported speech must adjust pronouns, tense, and time/place references to fit the reporter’s context.]"
    }
   }
  ]
