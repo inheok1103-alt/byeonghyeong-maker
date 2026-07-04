@@ -593,12 +593,15 @@ body.simple .expert{display:none!important}
   </div>
 
   <div class="card" id="govCard">
-    <h2>📢 요청사항 &amp; 공지 <span class="note">요청 → 교사 회의(대화문) 심의 → 반영/반려 공지 · 즉시 반영이 아니라 회의를 거칩니다</span></h2>
+    <h2>🧠 뇌와 상호작용 — 개선 제안 &amp; 반영 <span class="note">원하는 개선을 말하면 뇌가 규칙을 제안 → <b>내가 승인하면</b> 다음 출제부터 즉시 반영</span></h2>
     <div class="row" style="margin-top:8px;flex-wrap:wrap">
-      <input id="reqInput" placeholder="예: 빈칸 유형 오답을 더 매력적으로 / 순서배열 유형 추가해줘 / 해설을 더 자세히" style="flex:1;min-width:300px;padding:7px 10px;border:1px solid #cfe3de;border-radius:8px;font-size:9.5pt">
-      <button class="ghost" onclick="submitRequest()">🗣 회의 상정</button>
+      <input id="reqInput" placeholder="예: 빈칸 오답을 본문 어휘로 더 어렵게 / 해설에 배경지식 꼭 넣기 / 서술형 채점포인트 3개로" style="flex:1;min-width:280px;padding:7px 10px;border-radius:9px;font-size:9.5pt" onkeydown="if(event.key==='Enter')brainPropose()">
+      <button class="go" style="font-size:10pt;padding:8px 16px" onclick="brainPropose()">🧠 개선안 만들기</button>
+      <button class="ghost" onclick="submitRequest()" title="즉시 반영 대신 서버 교사회의에 상정(다음 정시 심의)">🗣 회의 상정</button>
     </div>
+    <div id="brainProposal" style="display:none;margin-top:8px"></div>
     <div id="reqStat" class="note" style="margin-top:5px"></div>
+    <div class="note" id="learnStatGov" style="margin-top:2px"></div>
     <h3 style="margin:12px 0 4px;font-size:10.5pt;color:#0f766e">📢 공지사항</h3>
     <div id="notices"></div>
   </div>
@@ -638,7 +641,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704l"></script>
+<script src="api_team.js?v=20260704m"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -1525,6 +1528,40 @@ function downloadLauncher(){
 }
 var VERDICT_COLOR={"반영":"#0f766e","부분반영":"#b45309","보류":"#6b7280","반려":"#b03a2e"};
 var GASURL="https://script.google.com/macros/s/AKfycbyJObr-0XOVLUFalwEJ-aNi5QdZ5ynEMpmfKw1fmSmzh5ZHuleKfqh2hjorpSMgHis6Uw/exec";   // GAS 웹앱(공개 엔드포인트) — 요청이 공식 큐로 접수 → 매시 17분 서버 교사회의가 심의·커밋
+/* ===== 🧠 뇌 상호작용 → 승인 후 학습규칙 반영(출제에 즉시 주입) ===== */
+function brainPropose(){
+  var q=document.getElementById("reqInput").value.trim();
+  if(q.length<4){ alert("원하는 개선을 입력하세요. 예: 빈칸 오답을 본문 어휘로 더 어렵게"); return; }
+  var box=document.getElementById("brainProposal"); box.style.display="";
+  box.innerHTML='<div class="card" style="margin:0"><span class="note"><span class="pcdot"></span>🧠 뇌가 개선안을 만들고 있어요…</span></div>';
+  GENERATING=true;
+  T.llmJSON([
+    {role:"system",content:"너는 한국 고교 영어 출제 시스템의 개선 담당 뇌다. 사용자의 개선 요청을 '출제할 때마다 항상 지킬 한 문장 규칙(STANDING rule)'으로 바꾼다. 반드시 JSON만."},
+    {role:"user",content:"개선 요청: "+q+"\n\nJSON: {\"summary\":\"무엇이 어떻게 바뀌는지 한 줄(한국어)\",\"rule\":\"출제 시 항상 지킬 구체적 규칙 한 문장(한국어, 명령형)\",\"example\":\"적용 전→후 짧은 예시\",\"scope\":\"적용 범위(예: 빈칸/해설/전체)\"}. rule은 실제 출제 프롬프트에 주입될 지침이므로 구체적이고 실행가능하게."}
+  ],{noRule:true,temperature:0.3,timeout:45000}).then(function(o){
+    GENERATING=false;
+    if(!o||!o.rule){ box.innerHTML='<div class="card" style="margin:0">개선안 생성 실패 — 다시 시도해 주세요(무료 한도일 수 있어요).</div>'; return; }
+    window.__PROPRULE=o.rule;
+    box.innerHTML='<div class="card" style="margin:0;border:1.5px solid rgba(200,169,106,.4)">'+
+      '<div style="font-weight:800;color:var(--rg-gold,#C8A96A)">🧠 개선 제안</div>'+
+      '<div style="margin-top:5px;font-size:9.5pt"><b>바뀌는 점</b> '+esc(o.summary||"")+'</div>'+
+      '<div style="margin-top:4px;font-size:9.3pt;background:rgba(84,208,180,.08);border:1px solid rgba(84,208,180,.25);border-radius:7px;padding:6px 9px"><b style="color:var(--rg-mint,#54D0B4)">반영될 규칙</b> '+esc(o.rule)+'</div>'+
+      (o.example?('<div class="note" style="margin-top:4px">예: '+esc(o.example)+'</div>'):'')+
+      '<div class="row" style="margin-top:8px"><button class="go" style="font-size:10pt;padding:7px 16px" onclick="brainApply()">✅ 반영할게요</button><button class="ghost" onclick="brainCancel()">✕ 취소</button><span class="note">승인하면 다음 출제부터 이 규칙이 적용됩니다(내 브라우저 저장)</span></div></div>';
+  }).catch(function(e){ GENERATING=false; box.innerHTML='<div class="card" style="margin:0">오류: '+esc(e.message)+'</div>'; });
+}
+function brainApply(){
+  var rule=window.__PROPRULE; if(!rule||!T.applyLearned){ brainCancel(); return; }
+  var cur=(T.learnedRules?T.learnedRules():[]).slice(); cur.push(rule);
+  T.applyLearned(cur); if(typeof saveLearned==="function") saveLearned();
+  // 서버 뇌에도 접수(선택) — 영구 반영·타 기기 공유
+  if(GASURL){ try{ fetch(GASURL,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify({kind:"request",request:"[승인반영] "+rule,user:"web"})}).catch(function(){}); }catch(e){} }
+  var box=document.getElementById("brainProposal"); box.innerHTML='<div class="card" style="margin:0;border:1.5px solid rgba(84,208,180,.4)"><b style="color:var(--rg-mint,#54D0B4)">✅ 반영 완료</b> — 다음 출제부터 이 규칙이 적용됩니다. <span class="note">(현재 학습규칙 '+(T.learnedRules?T.learnedRules().length:0)+'개)</span></div>';
+  document.getElementById("reqInput").value=""; window.__PROPRULE=null;
+  if(typeof toast==="function") toast("🧠 개선 규칙을 출제에 반영했어요");
+  setTimeout(function(){ var b=document.getElementById("brainProposal"); if(b) b.style.display="none"; },4000);
+}
+function brainCancel(){ window.__PROPRULE=null; var b=document.getElementById("brainProposal"); if(b){ b.style.display="none"; b.innerHTML=""; } }
 function submitRequest(){
   var q=document.getElementById("reqInput").value.trim();
   if(q.length<5){ alert("요청사항을 입력하세요."); return; }
@@ -1824,6 +1861,8 @@ function buildAnalysisHtml(d){
   var flow=(d.flow||[]).map(function(f){return '<span style="background:#fff7ed;border:1px solid #fed7aa;color:#B45309;border-radius:9px;padding:3px 9px;font-size:8.6pt;font-weight:700;white-space:nowrap">'+f.n+' '+esc(f.role)+'</span>';}).join(' <span style="color:#c9c2b4">→</span> ');
   var voc=(d.vocab||[]).map(function(v){return '<tr style="border-bottom:1px solid #eee"><td style="padding:5px 8px;font-weight:800">'+esc(v.w)+(v.pos?(' <span style="color:#8a8a8a;font-size:7.6pt;font-weight:400">'+esc(v.pos)+'</span>'):'')+'</td><td style="padding:5px 8px">'+esc(v.ko||"")+'</td><td style="padding:5px 8px;color:#567;font-size:8.6pt">≈ '+esc(v.syn||"")+'</td></tr>';}).join("");
   var pts=(d.points||[]).map(function(p,i){return '<div style="margin:6px 0;padding:7px 10px;border-left:3.5px solid '+ANFN.claim[1]+';background:#f7f4fd;font-size:9.4pt;line-height:1.5">'+(i+1)+'. '+esc(p)+'</div>';}).join("");
+  var FITCOL={"상":"#C0265A","중":"#B45309","하":"#59616E"};
+  var etH=(d.examTypes&&d.examTypes.length)?('<div style="margin-top:9px"><b style="color:'+ANFN.claim[1]+';font-size:10pt">🎯 예상 출제 유형</b><div style="margin-top:4px">'+d.examTypes.map(function(t){var c=FITCOL[t.fit]||"#59616E";return '<div style="margin:3px 0;font-size:8.9pt"><span style="background:'+c+';color:#fff;border-radius:6px;padding:1px 7px;font-size:7.6pt;font-weight:700">'+esc(t.fit||"")+'</span> <b>'+esc(t.type||"")+'</b> <span style="color:#667">'+esc(t.reason||"")+'</span></div>';}).join("")+'</div></div>'):'';
   var exprH=(d.expr&&d.expr.length)?('<b style="color:'+ANFN.grammar[1]+';font-size:10.5pt">③ 주요 구문·표현</b><table style="margin-top:6px;font-size:9pt;width:100%">'+d.expr.map(function(x){return '<tr style="border-bottom:1px solid #f0f0f0"><td style="padding:4px 8px;font-weight:700;color:'+ANFN.grammar[1]+';white-space:nowrap;vertical-align:top">'+esc(x.e||"")+'</td><td style="padding:4px 8px">'+esc(x.ko||"")+'</td></tr>';}).join("")+'</table>'):'';
   var connH=(d.connect&&d.connect.length)?('<div style="margin-top:9px"><b style="color:'+ANFN.logic[1]+';font-size:10pt">④ 연결어·담화표지</b> <span style="font-size:8.8pt">'+d.connect.map(function(c){return '<span style="background:#fff7ed;border:1px solid #fed7aa;border-radius:7px;padding:1px 8px;margin:2px 3px 2px 0;display:inline-block;color:#B45309"><b>'+esc(c.w||"")+'</b> <span style="color:#8a6d3b">'+esc(c.role||"")+'</span></span>';}).join("")+'</span></div>'):'';
   var bgH=(d.background)?('<div style="margin-top:9px;background:#f0f9ff;border:1px solid #bae0f5;border-radius:8px;padding:8px 11px"><b style="color:#1d6fa5;font-size:9.8pt">🌐 배경지식</b> <span style="font-size:8.9pt;color:#334;line-height:1.55">'+esc(d.background)+'</span></div>'):'';
@@ -1832,7 +1871,7 @@ function buildAnalysisHtml(d){
    +'<div style="padding:3mm 2mm"><div style="border-bottom:2.5px solid #1f2937;padding-bottom:6px;margin-bottom:10px"><b style="font-size:13pt">🧠 지문 분석지 · Page 2 — 어휘·구문·배경·출제</b></div>'
    +'<div style="margin-bottom:11px"><b style="color:'+ANFN.logic[1]+';font-size:10.5pt">① 논리 흐름</b><div style="margin-top:6px;line-height:2.1">'+flow+'</div></div>'
    +'<div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap"><div style="flex:1;min-width:300px"><b style="color:'+ANFN.evidence[1]+';font-size:10.5pt">② 핵심 어휘</b><table style="margin-top:6px;font-size:9.4pt">'+voc+'</table>'+exprH+'</div>'
-   +'<div style="flex:1;min-width:300px"><b style="color:'+ANFN.claim[1]+';font-size:10.5pt">⑤ 출제 포인트</b>'+pts+connH+bgH+'</div></div></div>'
+   +'<div style="flex:1;min-width:300px"><b style="color:'+ANFN.claim[1]+';font-size:10.5pt">⑤ 예상 출제 포인트</b>'+pts+etH+connH+bgH+'</div></div></div>'
    +'</div></body></html>';
 }
 function makeAnalysis(){
@@ -1843,9 +1882,11 @@ function makeAnalysis(){
   box.style.display="";
   box.innerHTML='<div class="card" style="border:1.5px solid #cfc9ee"><b>📑 분석지 제작 중…</b> <span class="note">문장 분할 → AI 문장별 해석·구문·기능 분석 → 기능색 조판(A4 가로 2쪽)</span><div class="skel"></div></div>';
   box.scrollIntoView({behavior:"smooth",block:"start"}); GENERATING=true;
-  T.analysisSheet(p,{}).then(function(d){
+  Promise.all([T.analysisSheet(p,{}), (T.suggestTypes?T.suggestTypes(p).catch(function(){return null;}):Promise.resolve(null))]).then(function(res){
+    var d=res[0], sug=res[1];
     GENERATING=false;
     if(!d){ box.innerHTML='<div class="card">분석지 생성 실패 — 잠시 후 다시 시도해 주세요(무료 한도일 수 있습니다).</div>'; return; }
+    if(sug&&sug.types) d.examTypes=sug.types.slice(0,6);
     window.__ANHTML=buildAnalysisHtml(d);
     box.innerHTML='<div class="card" style="border:1.5px solid #cfc9ee"><div class="row" style="align-items:center"><b style="flex:1">📑 분석지 <span class="note">A4 가로 2쪽 · 기능색 6색 · Page1 정독 → Page2 암기(1-3-5)</span></b><button class="ghost" onclick="downloadAnalysis()">📑 Word</button><button class="ghost" onclick="printAnalysis()">📑 PDF(인쇄)</button><button class="ghost" onclick="document.getElementById(\'wbPrev\').style.display=\'none\'">닫기</button></div><iframe id="anFrame" style="width:100%;height:560px;border:1px solid #d5d0ee;border-radius:9px;background:#fff;margin-top:6px"></iframe></div>';
     document.getElementById("anFrame").srcdoc=window.__ANHTML;
