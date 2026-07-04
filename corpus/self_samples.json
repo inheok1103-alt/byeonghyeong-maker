@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-04T17:40:23.932Z",
+ "updated": "2026-07-04T19:50:21.877Z",
  "samples": [
+  {
+   "ts": "2026-07-04T19:50:14.902Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "WEEK 25 DAY 5 REVIEW Week by week your word-power is being built. It’s <u>like putting money in the bank</u>. Remember, in our language there may be many synonyms and related meanings for each word. Knowing one synonym is good, but you will reap greater benefits from knowing several. Below is the matching review for this week. REVIEW WORDS DEFINITIONS 1.aegis a. trembling, shaking with old age 2.awesome b. regret 3.conflagration c. bursting out 4.congenial d. infirm, weak as a result of old age 5.debris e. wise man, philosopher 6.deplorable f. ruins, fragments 7.detriment g. weak, unimportant 8.dispersed h. protection, sponsorship, shield 9.doddering i. agreeable, sympathetic 10.eruption j. broken up, scattered, spread 11.hoard k. sad, pitiable 12.imbibe l. hurt, damage, injury 13.initiate m. drink 14.longevity n. great fire 15.obliterate o. manly, masterful 16.puny p. inspiring terror, weird 17.rue q. set going, start 18.sage r. accumulate, save, store up 19.senile s. long duration of life 20.virile t. wipe out, erase",
+    "choices": [
+     "It means that any form of persistent effort tends to produce rewards eventually.",
+     "It means that a savings account serves as a metaphor for financial discipline, separate from language acquisition.",
+     "It means that gradually building vocabulary is similar to saving money, as it accumulates over time and yields benefits later.",
+     "It suggests that adding words is like taking money out of a bank, reducing your linguistic reservoir.",
+     "It implies that learning new words is like depositing money, which immediately boosts your communication skills."
+    ],
+    "answer": 3,
+    "explanation": "밑줄 친 부분은 'It means that gradually building vocabulary is similar to saving money, as it accumulates over time and yields benefits later.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-04T17:38:24.203Z",
    "type": "심경변화",
@@ -257,24 +281,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'Reported speech must adjust pronouns, tense, and time/place references to fit the reporter’s context.'이며 정답 (신고된 발화에서 대명사, 시제, 자리 바꾸기)이 이를 반영한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Reported speech must adjust pronouns, tense, and time/place references to fit the reporter’s context.]"
-   }
-  },
-  {
-   "ts": "2026-07-03T15:38:14.228Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 다른 사람이 말한 것을 신고하거나 다른 장소 또는 다른 시간에 신고할 때 변경해야 할 수 있습니다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
