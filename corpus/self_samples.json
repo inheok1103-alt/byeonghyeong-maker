@@ -1,6 +1,54 @@
 {
- "updated": "2026-07-04T22:25:37.622Z",
+ "updated": "2026-07-04T23:27:39.996Z",
  "samples": [
+  {
+   "ts": "2026-07-04T23:21:48.401Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 모두 코드처리) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 35번 무관한 문장 · I R R E L E V A N T 디지털 미니멀리즘 무관 ③ 무관: 주제는 ‘디지털 미니멀리즘→정신건강 개선’인데 ③은 ‘구매 결정 위해 SNS 의존’(주제 이탈). 소재 디지털 미니멀리즘과 정신건강 Digital minimalism and mental health 주제 디지털 사용을 줄이면 정신 건강이 좋아진다 Less digital use improves mental health 제목 디지털 미니멀리즘의 효과 Digital Minimalism Improves Mental Health 한눈에 디지털 미니멀리즘(디지털 사용을 의도적으로 줄이기)이 정신 건강을 개선한다는 글이다. 스탠퍼드 연구의 스트레스 감소, 알림 축소로 인한 의미 있는 교류, 번아웃 직장인의 회복 사례가 주제를 뒷받침한다. (‘구매 위해 SNS 의존’은 주제와 어긋난 무관 문장.) 지문 전문 — 시험지 원문 It is evident through various case studies that ⓐ<u>adopting digital minimalism</u> can lead to improved mental health outcomes. ① For instance, a study conducted by researchers at Stanford University found that participants who limited their use of social media and digital devices reported ⓑ<u>lower levels of stress</u>, anxiety, and depression. ② By reducing the constant stream of information and notifications, individuals were able to focus more on ⓒ<u>meaningful interaction and activities</u> that promoted well-being. ③ Additionally, participants reported relying on social media to get information for their ⓓ<u>purchasing decisions</u>. ④In another case, a corporate professional struggling with burnout and insomnia implemented digital minimalism techniques, such as setting boundaries for phone usage and practicing mindfulness. ⑤ As a result, he experienced ⓔ<u>improved sleep quality</u>, reduced stress levels, and a newfound sense of calm and clarity. * insomnia: 불면증 지문 전문 · 원문 그대로",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ의 'meaningful interaction and activities'는 'meaningful interactions and activities'로 고쳐야 어법상 옳다. (LanguageTool 확인: ‘)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-04T23:27:30.868Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답 재검토 권고 — 솔버 1/2가 3번 선택(기록 1번 유지)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "Ray English 지문 전문 · 원문 그대로 35번 무관한 문장 · I R R E L E V A N T 디지털 미니멀리즘 무관 ③ 무관: 주제는 ‘디지털 미니멀리즘→정신건강 개선’인데 ③은 ‘구매 결정 위해 SNS 의존’(주제 이탈). 소재 디지털 미니멀리즘과 정신건강 Digital minimalism and mental health 주제 디지털 사용을 줄이면 정신 건강이 좋아진다 Less digital use improves mental health 제목 디지털 미니멀리즘의 효과 Digital Minimalism Improves Mental Health 한눈에 디지털 미니멀리즘(디지털 사용을 의도적으로 줄이기)이 정신 건강을 개선한다는 글이다. 스탠퍼드 연구의 스트레스 감소, 알림 축소로 인한 의미 있는 교류, 번아웃 직장인의 회복 사례가 주제를 뒷받침한다. (‘구매 위해 SNS 의존’은 주제와 어긋난 무관 문장.) 지문 전문 — 시험지 원문 It is evident through various case studies that adopting digital minimalism can lead to improved mental health outcomes. ① For instance, a study conducted by researchers at Stanford University found that participants who limited their use of social media and digital devices reported lower levels of stress, anxiety, and depression. ② By reducing the constant stream of information and notifications, individuals were able to focus more on meaningful interactions and activities that promoted well-being. ③ Additionally, participants reported relying on social media to get information for their purchasing decisions. ④In another case, a corporate professional struggling with burnout and insomnia implemented digital minimalism techniques, such as setting boundaries for phone usage and practicing mindfulness. ⑤ As a result, he experienced improved sleep quality, reduced stress levels, and a newfound sense of calm and clarity. [                         ]",
+    "choices": [
+     "불면증: 불면증에 관한 전문, 원문 그대로",
+     "불면증: 불면증에 관한 전문, 내용 수정",
+     "불면증: 불면증에 관한 전문, 원문 삭제",
+     "불면증: 불면증에 관한 전문, 주제 변경",
+     "불면증: 불면증에 관한 전문, 완전한 진실"
+    ],
+    "answer": 1,
+    "explanation": "빈칸에는 원문 '* insomnia: 불면증 지문 전문 · 원문 그대로'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-04T22:20:07.635Z",
    "type": "내용불일치",
@@ -239,48 +287,6 @@
     ],
     "answer": 4,
     "explanation": "정답 ⓓ의 'you must analyze it more objective'는 'you must analyze it more objectively'로 고쳐야 어법상 옳다. (LanguageTool 확인: What, you)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-04T04:15:15.935Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "Such r______ no one could have predicted. Quick Tip:  When you start to read a passage whose ideas you expect to be difficult, skim it quickly to find its main characters. Then think about those characters before you begin reading carefully. What do you know about them? What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily you will ­understand stories about them. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because you know it too well. You must analyze it more objectively. This passage feels choppy, out of focus, even disorganized:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] results — 문단의 논지상 이 자리에는 'results'가 유일하게 자연스럽다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-03T19:58:57.784Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "",
-    "choices": [
-     "동사 believe와 같은 동사의 비유한 보어절은 IP 상태이며 완전한 CP가 아니다.",
-     "동사 believe와 같은 동사의 비유한 보어절은 CP 상태이며 완전한 CP이다.",
-     "동사 believe와 같은 동사의 비유한 보어절은 CP이며 IP가 아니다.",
-     "동사 believe와 같은 동사의 비유한 보어절은 완전한 CP로 간주된다.",
-     "동사 believe와 같은 동사의 비유한 보어절은 CP이며 IP가 아니라는 것이 사실이다."
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 일치한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
