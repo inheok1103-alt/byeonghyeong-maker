@@ -51,7 +51,38 @@ function ok(q, type) { if (!q || !q.instruction) return false; if (type !== "첫
   await T.loadTypeDB("knowledge/types_v2.json").catch(function () {});
   if (ONLINE) { await T.loadExaminerKB("knowledge/examiner_kb_v1.json").catch(function () {}); await T.loadRaysKB("knowledge/rays_drill_kb.json").catch(function () {}); await T.loadReviewDB("knowledge/review_core_v2.json").catch(function () {}); }
   var pdb = JSON.parse(fs.readFileSync(ROOT + "/corpus/passage_db.json", "utf8"));
-  var passages = (pdb.passages || pdb).map(function (x) { return typeof x === "string" ? x : (x.text || ""); }).filter(function (t) { var w = (t.match(/[A-Za-z]+/g) || []).length; return w >= 70 && w <= 220 && (t.match(/[.!?]/g) || []).length >= 4; });
+  // 산문 필터: 어휘리스트·연습문제·목차·발음기호 조각 등 '비산문'을 배제 → 실제 내신 지문급만
+  function isProse(t) {
+    var w = (t.match(/[A-Za-z]+/g) || []).length; if (w < 70 || w > 220) return false;
+    var sents = (t.match(/[.!?]/g) || []).length; if (sents < 4) return false;
+    if (/_{3,}/.test(t)) return false;                                   // 빈칸 연습문제
+    if (/\b(NEW WORDS|Sample Sentences|Definitions|Match the|Exercises?|Fill in|Chapter \d|Volume \d|Unit \d|WEEK \d|DAY \d|Table of Contents|Bibliography|References|Index|Copyright|ISBN|Figure \d|Table \d)\b/i.test(t)) return false;
+    if (/\b(Preface|Foreword|Acknowledge?ment|List of|typographical|conventions|invaluable|grateful|indebted|thank(s| you)|colleagues|this (book|volume|chapter|series)|the (author|editor|publisher)s?|cited|et al|ibid|op\. cit|footnote|abbreviations)\b/i.test(t)) return false;  // 책 앞부분·인용·메타
+    if (/\b(VII|VIII|IX|XI|XII|XIII|XIV|xvi|xvii)\b/.test(t)) return false;   // 로마숫자 페이지(앞부분)
+    if (/[a-z]´|[ˈˌː]|\b[a-z]{1,2}´\b/.test(t)) return false;            // 발음기호 조각
+    if (!/^[A-Z"“']/.test(t.trim()) || !/[.!?]["'”]?\s*$/.test(t.trim())) return false;   // 문장으로 시작·끝(온전한 단락)
+    if ((t.match(/\(\s*\d{4}\s*\)/g) || []).length >= 2) return false;   // (연도) 인용 과다 → 학술 참고문헌투
+    if ((t.match(/\b\d+\./g) || []).length >= 3) return false;           // 번호 목록(1. 2. 3.)
+    if ((t.match(/\d/g) || []).length > w * 0.12) return false;          // 숫자 과다(표·색인)
+    var avg = w / Math.max(1, sents); if (avg < 7 || avg > 42) return false;   // 문장 평균 길이(단편·초장문 배제)
+    var caps = (t.match(/\b[A-Z]{2,}\b/g) || []).length; if (caps > 6) return false;  // 대문자 약어·헤더 과다
+    if (!/\b(the|a|an|is|are|was|were|has|have|that|which|because|however|therefore|although|while|when)\b/i.test(t)) return false; // 산문 기능어 확인
+    if (/\b(Conjunctive adverbs|Adverbs? of (Reason|Manner|Position|Direction)|Prepositional Expression|commonly used with|the following sentences?:|as in \(\d|see section|see [A-Z]-|Compare the following|Word\/)/i.test(t)) return false;  // 문법참조·예문 나열
+    if ((t.match(/\([\dA-Za-z]{1,3}\)\s/g) || []).length >= 2) return false;   // (7) a. (23) 예문 표지
+    if ((t.match(/(^|\s)[a-z]\.\s/g) || []).length >= 2) return false;         // a. b. c. 항목 나열
+    var letters = (t.replace(/[^A-Za-z]/g, "").length), tot = t.length; if (letters / Math.max(1, tot) < 0.55) return false;   // 기호·공백 과다
+    return true;
+  }
+  // 원서 스캔 잡티 제거 + 공백 정규화
+  function cleanPassage(t) {
+    return String(t)
+      .replace(/\uFB01/g, "fi").replace(/\uFB02/g, "fl").replace(/\uFB00/g, "ff").replace(/\uFB03/g, "ffi").replace(/\uFB04/g, "ffl")
+      .replace(/[\u00AD\u200B\u200C\u2060\uFEFF\u00A0\u0008]/g, " ")
+      .replace(/[\u2018\u2019\u201B\u2032]/g, "'").replace(/[\u201C\u201D\u2033]/g, '"').replace(/[\u2013\u2014]/g, "-")
+      .replace(/[\u2020\u2021\u2713\u2198\u2225\u2217]/g, " ").replace(/\(fict\S*\)/gi, " ").replace(/\b\d{1,3}\.\d(\.\d)*\b/g, " ")
+      .replace(/\s+/g, " ").trim();
+  }
+  var passages = (pdb.passages || pdb).map(function (x) { var t = typeof x === "string" ? x : (x.text || ""); return cleanPassage(t); }).filter(isProse);
   for (var s = passages.length - 1; s > 0; s--) { var r = Math.floor(Math.random() * (s + 1)); var tmp = passages[s]; passages[s] = passages[r]; passages[r] = tmp; }   // 셔플: 실행마다 다른 지문
   var TARGET = N * (ONLINE ? 1 : 4), CAP = Math.ceil(TARGET / (ONLINE ? 6 : 3));   // 유형 균형 캡
   // 기존 train.jsonl 서명 로드 → 실행 간 중복 제거(밀도 누적 안전)
@@ -62,20 +93,27 @@ function ok(q, type) { if (!q || !q.instruction) return false; if (type !== "첫
   var made = 0, byType = {}, seen = {}, types = ONLINE ? CODE_TYPES.concat(LLM_TYPES) : CODE_TYPES;
   function add(pg, t, q) { if (!ok(q, t)) return false; var s = sig(pg, t, q); if (seen[s]) return false; if ((byType[t] || 0) + (existType[t] || 0) >= CAP) return false; var pk = String(pg).slice(0, 50) + "|" + t; if ((existSig[pk] || 0) >= 4) return false; seen[s] = 1; buf.push(JSON.stringify(recQ(pg, t, q))); made++; byType[t] = (byType[t] || 0) + 1; return true; }
 
+  function fmtWorkbook(pg, qs) {
+    var no = 0, prob = "", ans = "";
+    qs.forEach(function (q) { no++; prob += no + ". [" + q.type + "] " + String(q.instruction || "").replace(/\n/g, " ") + "\n"; if (q.passage) prob += String(q.passage).replace(/<\/?u>/g, "") + "\n"; if (q.choices && q.choices.length) q.choices.forEach(function (c, i) { prob += (CIRC[i] || (i + 1)) + " " + c + "\n"; }); prob += "\n"; ans += no + ". 정답 " + (q.answer ? (CIRC[q.answer - 1] || q.answer) : "서술형") + " — " + String(q.explanation || "").replace(/【출제의도】[\s\S]*$/, "").trim() + "\n"; });
+    return "Ⅰ. 문제편\n[지문 안내] 각 문항의 지문에 표시(밑줄·빈칸·순서·삽입위치)가 반영되어 있습니다.\n" + prob + "Ⅱ. 정답 및 해설\n" + ans.trim();
+  }
   for (var i = 0; i < passages.length && made < TARGET; i++) {
-    var pg = passages[i];
+    var pg = passages[i], pgQs = [];
     for (var j = 0; j < types.length; j++) {
       var t = types[j];
       var reps = (CODE_TYPES.indexOf(t) >= 0) ? VAR : 1;   // 코드유형은 변형 여러 개(밀도), LLM유형은 1개(비용)
-      var seen = {};
       for (var v = 0; v < reps; v++) {
         // 오프라인: 빈 ctx를 넘겨 cachedContext(LLM 시도·백오프)를 건너뜀 → 코드 빌더만 즉시 실행
         var opts = ONLINE ? { fast: true } : { fast: true, ctx: {} };
         var q = null; try { q = await T.generateOne(pg, t, opts); } catch (e) { q = null; }
+        if (q) q.type = q.type || t;
         if (ONLINE && q && T.reviewItem) { try { var rv = await T.reviewItem(q, q.passage || pg, {}); if (rv && /불가/.test(String(rv.verdict || ""))) q = null; } catch (e) {} }   // 검수 통과분만
-        if (q) add(pg, t, q);
+        if (q && add(pg, t, q)) pgQs.push(q);
       }
     }
+    // 워크북 태스크 학습(코드형 문항 2개↑ 모이면): 문제편+해설편 출력 형식을 학습
+    if (pgQs.length >= 2 && (byType["워크북"] || 0) < CAP) { var _st = {}, wq = []; pgQs.forEach(function (q) { if (!_st[q.type] && wq.length < 4) { _st[q.type] = 1; wq.push(q); } }); if (wq.length < 2) { var w2 = []; pgQs.forEach(function (q) { if (w2.length < 3) w2.push(q); }); wq = w2; } buf.push(JSON.stringify({ messages: [{ role: "system", content: SYS }, { role: "user", content: "[지문]\n" + pg + "\n\n위 지문으로 " + wq.length + "문항짜리 워크북(Ⅰ.문제편 + Ⅱ.정답·해설)을 만들어라." }, { role: "assistant", content: fmtWorkbook(pg, wq) }] })); made++; byType["워크북"] = (byType["워크북"] || 0) + 1; }
     // 온라인: 워크북·분석 태스크도 학습(가끔)
     if (ONLINE && i % 8 === 0 && T.analysisSheet) {
       try { var d = await T.analysisSheet(pg, {}); if (d && d.sents) { var body = d.sents.map(function (s) { return s.n + ". " + s.en + " → " + s.ko + (s.syntax ? (" [구문: " + s.syntax + "]") : ""); }).join("\n"); buf.push(JSON.stringify({ messages: [{ role: "system", content: SYS }, { role: "user", content: "[지문]\n" + pg + "\n\n위 지문을 문장별로 해석하고 구문을 분석하라(분석지)." }, { role: "assistant", content: "[주제] " + (d.topic || "") + "\n[문장 분석]\n" + body }] })); made++; byType["분석지"] = (byType["분석지"] || 0) + 1; }
@@ -83,10 +121,16 @@ function ok(q, type) { if (!q || !q.instruction) return false; if (type !== "첫
     }
     if (i % 25 === 0) process.stdout.write("\r지문 " + i + "/" + passages.length + " · 샘플 " + made + " …   ");
   }
-  if (!APPEND || made) { try { var ss = JSON.parse(fs.readFileSync(ROOT + "/corpus/self_samples.json", "utf8")).samples || []; ss.forEach(function (s) { if (s && s.q && s.q.instruction) add(s.q.passage || "(지문 생략)", s.type, s.q); }); } catch (e) {} }
-  var payload = buf.join("\n") + (buf.length ? "\n" : "");
+  // self_samples: 산문 필터 통과분만(연습문제형 배제), 지문도 공백 정규화
+  if (!APPEND || made) { try { var ss = JSON.parse(fs.readFileSync(ROOT + "/corpus/self_samples.json", "utf8")).samples || []; ss.forEach(function (s) { if (!s || !s.q || !s.q.instruction) return; var spg = String(s.q.passage || "").replace(/\s+/g, " ").trim(); if (spg && !isProse(spg)) return; if (spg) s.q.passage = spg; add(spg || "(지문 생략)", s.type, s.q); }); } catch (e) {} }
+  // 최종 안전: 각 줄을 JSON 왕복검증해 손상 줄 제거(원시 줄바꿈 등으로 깨진 줄 방어)
+  var clean = [];
+  buf.forEach(function (line) { line.split("\n").forEach(function (piece) { if (!piece) return; try { JSON.parse(piece); clean.push(piece); } catch (e) {} }); });
+  var payload = clean.join("\n") + (clean.length ? "\n" : "");
   if (APPEND) fs.appendFileSync(ROOT + "/selfllm/train.jsonl", payload); else fs.writeFileSync(ROOT + "/selfllm/train.jsonl", payload);
+  var dropped = buf.length + (0) - clean.length;
   var total = 0; try { total = fs.readFileSync(ROOT + "/selfllm/train.jsonl", "utf8").split("\n").filter(Boolean).length; } catch (e) {}
+  if (dropped > 0) console.log("(손상/중복 줄 " + dropped + "개 자동 제거)");
   console.log("\n\n===== 학습 데이터 " + (ONLINE ? "고밀도(온라인)" : "무료(오프라인)") + " 생성 완료 =====");
   console.log("이번 생성 " + made + "샘플 · 유형별: " + Object.keys(byType).map(function (k) { return k + " " + byType[k]; }).join(" · "));
   console.log("누적 train.jsonl 총 " + total + "샘플 (여러 번 돌리면 밀도 계속 상승)");
