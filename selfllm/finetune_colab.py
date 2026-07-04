@@ -74,6 +74,7 @@ trainer = SFTTrainer(
         fp16 = not torch.cuda.is_bf16_supported(), bf16 = torch.cuda.is_bf16_supported(),
         logging_steps = 10, optim = "adamw_8bit", weight_decay = 0.01,
         lr_scheduler_type = "linear", seed = 3407, output_dir = "outputs",
+        save_strategy = "no", report_to = "none",   # 중간 체크포인트 저장 끔(trl SFTConfig pickle 버그 회피)
     ),
 )
 if _mask:  # 발문/지문(질문)은 손실에서 제외 → 정답 생성력만 강화
