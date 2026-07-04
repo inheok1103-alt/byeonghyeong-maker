@@ -478,9 +478,11 @@
   // Tatoeba 예문 코퍼스(무료·무키·CORS) — 단어의 실제 사용 예문을 코퍼스에서 가져옴
   async function tatoeba(word, n) {
     try {
-      var d = await getJSON("https://tatoeba.org/en/api_v0/search?from=eng&query=" + encodeURIComponent('"' + word + '"') + "&sort=relevance&limit=" + (n || 5), 12000);
+      var to = withTimeout(12000);
+      var r = await fetch("https://tatoeba.org/en/api_v0/search?from=eng&query=" + encodeURIComponent('"' + word + '"') + "&sort=relevance&limit=" + (n || 5), { signal: to.signal });
+      to.done(); var d = await r.json();
       var res = (d && (d.results || d.data)) || [];
-      return res.map(function (s) { return String(s.text || ""); }).filter(function (t) { var w = t.split(/\s+/).length; return w >= 4 && w <= 24 && /[.!?]$/.test(t); }).slice(0, n || 5);
+      return res.map(function (s) { return String(s.text || "").trim(); }).filter(function (t) { var w = t.split(/\s+/).length; return t && w >= 3 && w <= 26; }).slice(0, n || 5);
     } catch (_) { return []; }
   }
   async function dict(word) {
