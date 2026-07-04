@@ -1,6 +1,48 @@
 {
- "updated": "2026-07-03T23:31:06.588Z",
+ "updated": "2026-07-04T04:15:19.872Z",
  "samples": [
+  {
+   "ts": "2026-07-04T04:09:56.773Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 모두 코드처리) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "ⓐ<u>Such results no one could have predicted</u>. Quick Tip:  ⓑ<u>When you start to read</u> a passage whose ideas you expect to be difficult, skim it quickly to ⓒ<u>find its main characters</u>. Then think about those characters before you begin reading carefully. What do you know about them? What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily you will ­understand stories about them. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because you know it too well. ⓓ<u>you must analyze it more objective</u>. ⓔ<u>This passage feels choppy</u>, out of focus, even disorganized:",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 4,
+    "explanation": "정답 ⓓ의 'you must analyze it more objective'는 'you must analyze it more objectively'로 고쳐야 어법상 옳다. (LanguageTool 확인: What, you)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-04T04:15:15.935Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Such r______ no one could have predicted. Quick Tip:  When you start to read a passage whose ideas you expect to be difficult, skim it quickly to find its main characters. Then think about those characters before you begin reading carefully. What do you know about them? What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily you will ­understand stories about them. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because you know it too well. You must analyze it more objectively. This passage feels choppy, out of focus, even disorganized:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] results — 문단의 논지상 이 자리에는 'results'가 유일하게 자연스럽다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-03T19:58:57.784Z",
    "type": "안내문일치",
@@ -227,54 +269,6 @@
     ],
     "answer": 2,
     "explanation": "틀린 곳은 ⓐ(On the first cycles → On the first cycle), ⓓ(yet not quite successful in their aware → yet not quite successful in their awareness) — 총 2개.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-02T21:41:28.862Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 3/3 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "to 부정사는 결함이 있는 프로브로서 목표의 가치를 평가할 수 있다.",
-     "to 부정사는 결함이 있는 프로브로서 무가치 사건을 삭제할 수 있다.",
-     "to 부정사는 문법적으로 불가사의한 구조를 형성하며, 이는 시제와 무관하다.",
-     "to 부정사는 언어에서 가장 흔한 구조이며, 모든 문장에서 일치 현상을 일으킨다.",
-     "to 부정사는 결함이 있는 프로브로서 목표의 가치를 평가하거나 무가치 사건을 삭제할 수 없으며, 이는 일부 부정사 구조가 일치 현상을 일으키지 못하는 이유이다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Infinitival to, as a defective probe, cannot value or delete unvalued case features on its goals, which explains why certain infinitival constructions fail to trigger agreement.'이며 정답 (에서부정사는 결함이 있는 프로브로서 목표의 가치를 평가하거나 무가치 사건을 삭제할 수 없으며, 까지이는 일부 부정사 구조가 일치 현상을 일으키지 못하는 이유이다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Infinitival to, as a defective probe, cannot value or delete unvalued case features on its goals, which explains why certain infinitival constructions fail to trigger agreement.]"
-   }
-  },
-  {
-   "ts": "2026-07-02T18:11:06.604Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "reassessing constituent status along with handling adjective phrases in the VP",
-     "reassessing adjective phrases within the VP while ignoring constituent status",
-     "confirming constituent status and excluding adjective phrases from the VP",
-     "analyzing verb tense usage in subordinate clauses to improve clarity",
-     "reassessing constituent status, handling adjective phrases in the VP, and restructuring architecture"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The passage argues that strings appearing as constituents in coordinated structures cannot be true constituents under the proposed sentence architecture, necessitating a reevaluation of constituent status and the treatment of adjective phrases within the VP.'이며 정답 (A. 구성 지위 재평가 및 VP 내 형용사 구문 처리)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: The passage argues that strings appearing as constituents in coordinated structures cannot be true constituents under the proposed sentence architecture, necessitating a reevaluation of constituent status and the treatment of adjective phrases within the VP.]"
    }
   }
  ]
