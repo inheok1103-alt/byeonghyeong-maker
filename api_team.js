@@ -475,6 +475,14 @@
     try { var d = await getJSON("https://api.datamuse.com/words?" + q + "&max=" + (max || 10), 12000); return (d || []).map(function (x) { return x.word; }); }
     catch (_) { return []; }
   }
+  // Tatoeba 예문 코퍼스(무료·무키·CORS) — 단어의 실제 사용 예문을 코퍼스에서 가져옴
+  async function tatoeba(word, n) {
+    try {
+      var d = await getJSON("https://tatoeba.org/en/api_v0/search?from=eng&query=" + encodeURIComponent('"' + word + '"') + "&sort=relevance&limit=" + (n || 5), 12000);
+      var res = (d && (d.results || d.data)) || [];
+      return res.map(function (s) { return String(s.text || ""); }).filter(function (t) { var w = t.split(/\s+/).length; return w >= 4 && w <= 24 && /[.!?]$/.test(t); }).slice(0, n || 5);
+    } catch (_) { return []; }
+  }
   async function dict(word) {
     try {
       var d = await getJSON("https://api.dictionaryapi.dev/api/v2/entries/en/" + encodeURIComponent(word), 12000);
@@ -1787,7 +1795,9 @@
       // 다단어 표제어(예: social harmony)는 첫 단어만 조회하면 엉뚱한 뜻/예문 → 사전조회 생략(LLM 뜻 사용)
       if (!isMulti && head) { try { d = await dict(head); } catch (_) {} try { wk = await wiktionary(head); } catch (_) {} try { syn = await datamuse(head, "syn", 4); } catch (_) {} }
       var ex = d && d.meanings.find(function (m) { return m.example; }), pos = isMulti ? "phrase" : ((d && d.meanings[0] && d.meanings[0].pos) || (wk && wk[0] && wk[0].pos) || "");
-      return { word: it.word, meaning: it.meaning, pos: pos, phonetic: (!isMulti && d && d.phonetic) || "", cefr: cefrOf(full) || (isMulti ? "" : cefrOf(head)), en_def: isMulti ? "" : ((d && d.meanings[0] && d.meanings[0].def) || (wk && wk[0] && wk[0].defs[0]) || ""), example: ex ? ex.example : "", synonyms: syn };
+      var example = ex ? ex.example : "";
+      if (!example) { try { var tt = await tatoeba(full, 1); if (tt.length) example = tt[0]; } catch (_) {} }   // 예문 없으면 Tatoeba 코퍼스에서 실제 예문
+      return { word: it.word, meaning: it.meaning, pos: pos, phonetic: (!isMulti && d && d.phonetic) || "", cefr: cefrOf(full) || (isMulti ? "" : cefrOf(head)), en_def: isMulti ? "" : ((d && d.meanings[0] && d.meanings[0].def) || (wk && wk[0] && wk[0].defs[0]) || ""), example: example, synonyms: syn };
     }));
   }
   // ===== 해설지 생성기(해설작성관 뉴런): 정답근거·오답별 근거·핵심어휘·출제의도 =====
@@ -1858,7 +1868,7 @@
     topCollocations: function (n) { return (CORPUS.colloc || []).slice(0, n || 12).map(function (c) { return { phrase: (c && c[0] != null) ? c[0] : c, count: (c && c[1]) || 0 }; }); },
     corpusResearch: function () { return (CORPUS.research && CORPUS.research.notes) || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
-    llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
+    llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, tatoeba: tatoeba, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
     refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain, deliberate: deliberate,
     selfLearnStep: selfLearnStep, learnedRules: learnedRules, applyLearned: applyLearned, teacherHarness: teacherHarness,

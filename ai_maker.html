@@ -433,10 +433,13 @@ body.simple .expert{display:none!important}
         <label style="font-size:9pt"><input type="checkbox" id="shSection" checked onchange="composeRender()"> 객관/서술 구획 분리</label>
       </div>
     </div>
-    <div class="row" style="margin-bottom:4px">
-      <b style="font-size:9.5pt;flex:1">📋 담은 문제 <span id="composeInfo" class="note"></span></b>
-      <label style="font-size:9pt" title="시험지 배치 단수">배치:
-        <select id="shCols" onchange="composeSaveHeader()" style="padding:3px 6px;font-size:9pt"><option value="2" selected>2단(내신 스타일)</option><option value="1">1단(넓게)</option></select></label>
+    <div class="row" style="margin-bottom:4px"><b style="font-size:9.5pt;flex:1">📋 담은 문제 <span id="composeInfo" class="note"></span></b></div>
+    <div class="row" style="margin-bottom:6px;gap:8px;font-size:8.7pt;flex-wrap:wrap">
+      <label title="시험지 용지 크기(내신은 보통 B4)">🖨 용지 <select id="shPaper" onchange="composeSaveHeader();composeAutoPrev()" style="padding:2px 5px;font-size:8.6pt"><option value="B4" selected>B4</option><option value="A4">A4</option><option value="A3">A3</option></select></label>
+      <label title="단수">단 <select id="shCols" onchange="composeSaveHeader();composeAutoPrev()" style="padding:2px 5px;font-size:8.6pt"><option value="2" selected>2단</option><option value="1">1단</option></select></label>
+      <label title="발문/선지 서체(지문은 대비 서체)">글꼴 <select id="shFont" onchange="composeSaveHeader();composeAutoPrev()" style="padding:2px 5px;font-size:8.6pt"><option value="gothic" selected>고딕</option><option value="myeongjo">명조</option></select></label>
+      <label title="글씨 크기">크기 <select id="shScale" onchange="composeSaveHeader();composeAutoPrev()" style="padding:2px 5px;font-size:8.6pt"><option value="0.85">아주작게</option><option value="0.92">작게</option><option value="1" selected>보통</option><option value="1.1">크게</option><option value="1.2">아주크게</option></select></label>
+      <label title="줄 간격">줄간격 <select id="shLineH" onchange="composeSaveHeader();composeAutoPrev()" style="padding:2px 5px;font-size:8.6pt"><option value="1.35">좁게</option><option value="1.5" selected>보통</option><option value="1.7">넓게</option></select></label>
     </div>
     <div class="row" style="margin-bottom:6px;gap:5px">
       <span class="note" style="font-weight:700">정렬:</span>
@@ -460,7 +463,8 @@ body.simple .expert{display:none!important}
     </div>
     <div id="sheetList" style="display:none;margin-top:5px;border:1px dashed #cdd2e8;border-radius:8px;padding:6px;font-size:8.7pt;max-height:160px;overflow:auto"></div>
     <div class="row" style="margin-top:9px">
-      <button class="go" onclick="composePreview()" style="font-size:11pt;padding:9px 20px">👁 시험지 미리보기</button>
+      <button class="go" onclick="composePreview()" style="font-size:11pt;padding:9px 20px">👁 미리보기</button>
+      <button class="ghost" onclick="composePreviewWin()" title="실제 크기로 새 창에서 보기">🔍 새 창</button>
       <button class="ghost" onclick="composeDownloadDoc()">📘 Word 저장</button>
       <button class="ghost" onclick="composePrint()">🖨 PDF/인쇄</button>
     </div>
@@ -647,7 +651,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704n"></script>
+<script src="api_team.js?v=20260704o"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -1061,8 +1065,9 @@ function composeShuffle(){
   composePut(a); composeRender(); toast("🔀 랜덤 섞기 완료");
 }
 function composeHeader(){ try{ return JSON.parse(localStorage.getItem("composeHeader")||"{}"); }catch(e){ return {}; } }
-function composeSaveHeader(){ var h={school:val("shSchool"),exam:val("shExam"),subject:val("shSubject"),grade:val("shGrade"),date:val("shDate"),cols:val("shCols")}; try{ localStorage.setItem("composeHeader",JSON.stringify(h)); }catch(e){} composeInfoUpdate(); }
-function composeLoadHeader(){ var h=composeHeader(); setVal("shSchool",h.school); setVal("shExam",h.exam); setVal("shSubject",h.subject||"영어"); setVal("shGrade",h.grade); setVal("shDate",h.date); if(document.getElementById("shCols")&&h.cols) document.getElementById("shCols").value=h.cols; }
+function composeSaveHeader(){ var h={school:val("shSchool"),exam:val("shExam"),subject:val("shSubject"),grade:val("shGrade"),sem:val("shSem"),round:val("shRound"),date:val("shDate"),cols:val("shCols"),paper:val("shPaper"),fontFam:val("shFont"),fontScale:val("shScale"),lineH:val("shLineH")}; try{ localStorage.setItem("composeHeader",JSON.stringify(h)); }catch(e){} composeInfoUpdate(); }
+function composeLoadHeader(){ var h=composeHeader(); setVal("shSchool",h.school); setVal("shExam",h.exam); setVal("shSubject",h.subject||"영어"); setVal("shGrade",h.grade); setVal("shDate",h.date); ["cols","paper","fontFam:shFont","fontScale:shScale","lineH:shLineH"].forEach(function(p){ var pr=p.split(":"),key=pr[0],id=pr[1]||("sh"+key.charAt(0).toUpperCase()+key.slice(1)); var el=document.getElementById(id); if(el&&h[key]) el.value=h[key]; }); }
+function composeAutoPrev(){ var f=document.getElementById("cmpFrame"); if(f){ var html=buildSheetHtml(); if(html) f.srcdoc=html; } }
 function val(id){ var e=document.getElementById(id); return e?e.value:""; }
 function setVal(id,v){ var e=document.getElementById(id); if(e&&v!=null) e.value=v; }
 function composeInfoUpdate(){ var a=composeAll(); var tot=a.reduce(function(s,x){return s+(x.pts||0);},0); var el=document.getElementById("composeInfo"); if(el) el.textContent="· "+a.length+"문항 · 총 "+tot+"점"; composeBadge(); }
@@ -1098,43 +1103,55 @@ function composeDnd(){
 /* 2단(또는 1단) 실제 시험지 HTML 조립 — 배점·객관/서술 구획·머리표 */
 function buildSheetHtml(){
   var a=composeAll(); if(!a.length) return null;
-  var hd=composeHeader(); var cols=(document.getElementById("shCols")||{}).value||hd.cols||"2";
+  var hd=composeHeader();
+  var cols=(document.getElementById("shCols")||{}).value||hd.cols||"2";
   var sectionOn=(document.getElementById("shSection")||{}).checked;
+  var paper=(document.getElementById("shPaper")||{}).value||hd.paper||"B4";
+  var fam=(document.getElementById("shFont")||{}).value||hd.fontFam||"gothic";
+  var scale=parseFloat((document.getElementById("shScale")||{}).value||hd.fontScale||"1")||1;
+  var lh=parseFloat((document.getElementById("shLineH")||{}).value||hd.lineH||"1.5")||1.5;
   var tot=a.reduce(function(s,x){return s+(x.pts||0);},0);
-  var head='<div style="text-align:center;border-bottom:3px double #222;padding-bottom:7px;margin-bottom:10px">'+
-    '<div style="font-size:14pt;font-weight:800;letter-spacing:.04em">'+esc(hd.school||"　")+' &nbsp; '+esc(hd.exam||"평가 문제지")+'</div>'+
-    '<div style="font-size:10pt;margin-top:3px">'+esc(hd.subject||"영어")+(hd.grade?(" · "+esc(hd.grade)):"")+(hd.date?(" · "+esc(hd.date)):"")+' &nbsp;|&nbsp; 총 '+a.length+'문항 · '+tot+'점</div>'+
-    '<div style="font-size:9.5pt;margin-top:5px;color:#333">학년 ____ 반 ____ 번호 ____ 이름 __________ &nbsp;&nbsp; 점수 ______</div></div>';
-  // 구획 분리: 객관식 먼저, 서술형 뒤
+  var famQ=(fam==="myeongjo")?"'Batang','Noto Serif KR',serif":"'Malgun Gothic','Noto Sans KR','Apple SD Gothic Neo',sans-serif";
+  var famP=(fam==="gothic")?"'Malgun Gothic','Noto Sans KR',sans-serif":"'Batang','Noto Serif KR',serif";  // 지문은 반대 서체로 대비
+  function z(pt){ return (pt*scale).toFixed(1)+"pt"; }
+  var head='<div style="text-align:center;border-bottom:2px solid #222;padding-bottom:5px;margin-bottom:8px">'+
+    '<div style="font-size:'+z(13)+';font-weight:800;letter-spacing:.03em">'+esc(hd.school||"")+(hd.school?" ":"")+esc(hd.exam||"평가 문제지")+'</div>'+
+    '<div style="font-size:'+z(8.6)+';margin-top:2px;color:#333">'+esc(hd.subject||"영어")+(hd.grade?(" · "+esc(hd.grade)):"")+(hd.sem?(" · "+esc(hd.sem)):"")+(hd.round?(" · "+esc(hd.round)):"")+(hd.date?(" · "+esc(hd.date)):"")+' &nbsp;|&nbsp; 총 '+a.length+'문항 '+tot+'점</div>'+
+    '<div style="font-size:'+z(8.4)+';margin-top:3px;color:#333">학년 ___ 반 ___ 번호 ___ 이름 ________ 점수 ____</div></div>';
   var order=a.map(function(x,i){return {x:x,i:i};});
   function isSubj(x){ var q=x.q; return !(q.subItems)&&!(q.choices&&q.choices.length); }
   if(sectionOn){ order.sort(function(p,r){ return (isSubj(p.x)?1:0)-(isSubj(r.x)?1:0); }); }
   var no=0, body="", curSec=null;
   order.forEach(function(o){
     var x=o.x, q=x.q; var subj=isSubj(x);
-    if(sectionOn){ var sec=subj?"subj":"obj"; if(sec!==curSec){ curSec=sec; body+='<div style="break-inside:avoid;font-weight:800;font-size:10.5pt;background:#f0f0f5;border-left:4px solid #556;padding:4px 9px;margin:9px 0 5px">'+(subj?"【 서술형 】":"【 객관식 】")+'</div>'; } }
+    if(sectionOn){ var sec=subj?"subj":"obj"; if(sec!==curSec){ curSec=sec; body+='<div class="csec">'+(subj?"【 서술형 】":"【 객관식 】")+'</div>'; } }
     if(q.subItems&&q.subItems.length){
       var s=no+1, e=no+q.subItems.length;
-      body+='<div style="break-inside:avoid;margin:8px 0 3px;font-weight:800">['+s+'~'+e+'] 다음 글을 읽고 물음에 답하시오.</div>'+(q.passage?('<div class="cpg">'+pgHtml(q.passage)+'</div>'):'');
+      body+='<div class="cset">['+s+'~'+e+'] 다음 글을 읽고 물음에 답하시오.</div>'+(q.passage?('<div class="cpg">'+pgHtml(q.passage)+'</div>'):'');
       q.subItems.forEach(function(sq){ no++; body+=sheetQ(sq,no,x.pts); });
     } else { no++; body+=sheetQ(q,no,x.pts,true); }
   });
-  var colCss=(cols==="2")?"column-count:2;column-gap:9mm;":"";
-  var wordCols=(cols==="2")?"mso-columns:2 even 9mm;":"";
+  var colCss=(cols==="2")?"column-count:2;column-gap:7mm;column-rule:0.5pt solid #ccc;":"";
+  var wordCols=(cols==="2")?"mso-columns:2 even 7mm;":"";
+  var psz=(paper==="A4")?"210mm 297mm":(paper==="A3"?"297mm 420mm":"257mm 364mm");   // 기본 B4
   return '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><title>'+esc(hd.exam||"시험지")+'</title><style>'+
-    '@page Section1{size:A4;margin:12mm;'+wordCols+'} div.Section1{page:Section1;'+wordCols+'} @page{size:A4;margin:12mm}'+
-    'body{font-family:\'Malgun Gothic\',sans-serif;color:#111;font-size:10pt;line-height:1.5;margin:0}'+
-    '.cbody{'+colCss+'}'+
-    '.cq{break-inside:avoid;margin:0 0 9px}.cq .ci{font-weight:600}.cq .cc div{margin:1px 0}'+
-    '.cpg{border:1px solid #999;padding:8px 10px;margin:4px 0 6px;line-height:1.75;break-inside:avoid;font-size:9.6pt}'+
+    '@page Section1{size:'+psz+';margin:13mm 12mm;'+wordCols+'} div.Section1{page:Section1;'+wordCols+'} @page{size:'+psz+';margin:13mm 12mm}'+
+    'body{font-family:'+famQ+';color:#111;font-size:'+z(9)+';line-height:'+lh+';margin:0}'+
+    '.cbody{'+colCss+'text-align:justify}'+
+    '.cq{break-inside:avoid;margin:0 0 '+(7*scale).toFixed(0)+'px}'+
+    '.cq .ci{font-weight:700;font-size:'+z(9)+';margin-bottom:2px}'+
+    '.cq .cc{font-size:'+z(8.8)+'}.cq .cc div{margin:0.5px 0}'+
+    '.csec{break-inside:avoid;font-weight:800;font-size:'+z(9.5)+';border-bottom:1.2pt solid #333;padding-bottom:2px;margin:8px 0 5px}'+
+    '.cset{break-inside:avoid;margin:6px 0 2px;font-weight:700;font-size:'+z(9)+'}'+
+    '.cpg{font-family:'+famP+';border:0.6pt solid #888;padding:'+(6*scale).toFixed(0)+'px '+(8*scale).toFixed(0)+'px;margin:3px 0 5px;line-height:'+(lh+0.1).toFixed(2)+';break-inside:avoid;font-size:'+z(8.8)+';background:#fff}'+
     '.cpg u{text-underline-offset:2px}'+
     '</style></head><body><div class="Section1">'+head+'<div class="cbody">'+body+'</div></div></body></html>';
 }
 function sheetQ(q,no,pts,ownPg){
-  var h='<div class="cq"><div class="ci">'+no+'. '+esc(String(q.instruction||"")).replace(/\n/g,"<br>")+(pts?(' <b>['+pts+'점]</b>'):'')+'</div>';
+  var h='<div class="cq"><div class="ci">'+no+'. '+esc(String(q.instruction||"")).replace(/\n/g,"<br>")+(pts?(' <span style="font-weight:600;font-size:.86em">['+pts+'점]</span>'):'')+'</div>';
   if(ownPg&&q.passage) h+='<div class="cpg">'+pgHtml(q.passage)+'</div>';
   if(q.choices&&q.choices.length){ h+='<div class="cc">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
-  else h+='<div style="border-bottom:1px solid #bbb;height:26px;margin:8px 0 3px"></div><div style="border-bottom:1px solid #bbb;height:26px;margin:7px 0"></div>';
+  else h+='<div style="border-bottom:0.5pt solid #bbb;height:1.4em;margin:5px 0 3px"></div><div style="border-bottom:0.5pt solid #bbb;height:1.4em;margin:5px 0"></div>';
   h+='</div>'; return h;
 }
 function composePreview(){
@@ -1145,6 +1162,7 @@ function composePreview(){
 }
 function composeDownloadDoc(){ var html=buildSheetHtml(); if(!html){ alert("담은 문제가 없습니다."); return; } var blob=new Blob(["﻿",html],{type:"application/msword"}); var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="시험지_"+new Date().toISOString().slice(0,10)+".doc"; a.click(); }
 function composePrint(){ var html=buildSheetHtml(); if(!html){ alert("담은 문제가 없습니다."); return; } var w=window.open("","_blank"); if(!w){ alert("팝업 허용이 필요합니다."); return; } w.document.write(html); w.document.close(); setTimeout(function(){ w.print(); },350); }
+function composePreviewWin(){ var html=buildSheetHtml(); if(!html){ alert("담은 문제가 없습니다."); return; } var w=window.open("","_blank"); if(!w){ alert("팝업 허용이 필요합니다(주소창 오른쪽에서 허용)."); return; } w.document.write(html+'<div style="text-align:center;padding:10px" class="noprint"><button onclick="print()" style="padding:8px 20px;font-size:11pt">🖨 인쇄/PDF</button></div>'); w.document.close(); }
 /* ===== 📦 전체 세트 조립: 시험지 + 정답·해설지(+지문 분석) 하나의 문서로 ===== */
 function setUniquePassages(){
   var seen={}, list=[]; composeAll().forEach(function(x){ var q=x.q; var ps=(q.subItems&&q.subItems.length)?[q.passage]:[q.passage]; ps.forEach(function(p){ p=String(p||"").replace(/<\/?u>/g,"").trim(); if(p.length>=40&&!seen[p.slice(0,80)]){ seen[p.slice(0,80)]=1; list.push(p); } }); }); return list;
