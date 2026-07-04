@@ -1158,7 +1158,9 @@
     while (ch.length < 5 && guard++ < 40) { var w = (rint(2) ? A.c : wrongOf(A.g)) + " …… " + (ch.length % 2 ? wrongOf(B.g) : (rint(2) ? wrongOf(B.g) : B.c)); if (w !== correct && !set[w]) { set[w] = 1; ch.push(w); } }
     if (ch.length < 5) return null;
     ch.sort(function () { return Math.random() - 0.5; });
-    return { type: "연결어빈칸", instruction: "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: pg, choices: ch, answer: ch.indexOf(correct) + 1, explanation: "(A)에는 " + A.c + "(" + A.g + "), (B)에는 " + B.c + "(" + B.g + ")가 앞뒤 문장의 논리 관계와 일치한다.", _audit: "정답 코드생성됨(원문 연결어 탐지·빈칸화)" };
+    var RAT = { 대조: "앞뒤 내용이 서로 상반되므로", 인과: "앞이 원인·뒤가 결과이므로", 예시: "앞의 일반 진술을 구체적 예로 뒷받침하므로", 첨가: "앞 내용에 같은 방향의 정보를 더하므로", 전환: "앞과 다른 방향으로 논지를 돌리므로" };
+    var exp = "(A)는 앞 문장에 이어 " + RAT[A.g] + " '" + A.g + "'의 " + A.c + "가, (B)는 " + RAT[B.g] + " '" + B.g + "'의 " + B.c + "가 알맞다. 나머지 선지는 이 논리 관계와 맞지 않아 오답이다.";
+    return { type: "연결어빈칸", instruction: "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: pg, choices: ch, answer: ch.indexOf(correct) + 1, explanation: exp, _audit: "정답 코드생성됨(원문 연결어 탐지·빈칸화)" };
   }
   // 어법 개수형: 코드가 k개(2~3)를 지정, LLM은 각 자리 오형태만 제공 → 개수 정답을 코드가 안다
   async function buildGrammarCount(passage) {

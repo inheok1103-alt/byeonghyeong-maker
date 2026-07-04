@@ -71,6 +71,8 @@ function ok(q, type) { if (!q || !q.instruction) return false; if (type !== "첫
     if (!/\b(the|a|an|is|are|was|were|has|have|that|which|because|however|therefore|although|while|when)\b/i.test(t)) return false; // 산문 기능어 확인
     if (/\b(Conjunctive adverbs|Adverbs? of (Reason|Manner|Position|Direction)|Prepositional Expression|commonly used with|the following sentences?:|as in \(\d|see section|see [A-Z]-|Compare the following|Word\/)/i.test(t)) return false;  // 문법참조·예문 나열
     if ((t.match(/\([\dA-Za-z]{1,3}\)\s/g) || []).length >= 2) return false;   // (7) a. (23) 예문 표지
+    if (/\((modal|progressive|perfect|passive|simple|continuous|past|present|future|gerund|infinitive|subjunctive|auxiliary|participle|imperative|active|transitive|intransitive)\b/i.test(t)) return false;   // 문법 주석 괄호(문법 드릴 지문)
+    if (/\b(could've|couldn't have|would've|should've|might have|mustn't have)\b/i.test(t) && (t.match(/[.!?]/g) || []).length >= 5 && (t.match(/[A-Za-z]+/g) || []).length < 130) return false;   // 조동사 활용 드릴(짧은 문장 나열)
     if ((t.match(/(^|\s)[a-z]\.\s/g) || []).length >= 2) return false;         // a. b. c. 항목 나열
     var letters = (t.replace(/[^A-Za-z]/g, "").length), tot = t.length; if (letters / Math.max(1, tot) < 0.55) return false;   // 기호·공백 과다
     return true;
@@ -82,6 +84,7 @@ function ok(q, type) { if (!q || !q.instruction) return false; if (type !== "첫
       .replace(/[\u00AD\u200B\u200C\u2060\uFEFF\u00A0\u0008]/g, " ")
       .replace(/[\u2018\u2019\u201B\u2032]/g, "'").replace(/[\u201C\u201D\u2033]/g, '"').replace(/[\u2013\u2014]/g, "-")
       .replace(/[\u2020\u2021\u2713\u2198\u2225\u2217]/g, " ").replace(/\(fict\S*\)/gi, " ").replace(/\b\d{1,3}\.\d(\.\d)*\b/g, " ")
+      .replace(/([a-zA-Z])- ([A-Z])/g, "$1-$2").replace(/([a-z])- ([a-z])/g, "$1$2")   // \uc904\ubc14\uafc8 \ud558\uc774\ud508 \ubcf5\uc6d0(Rock- Scissors\u2192Rock-Scissors, sub- categories\u2192subcategories)
       .replace(/\s+/g, " ").trim();
   }
   var passages = (pdb.passages || pdb).map(function (x) { var t = typeof x === "string" ? x : (x.text || ""); return cleanPassage(t); }).filter(isProse);
