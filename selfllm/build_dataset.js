@@ -57,8 +57,10 @@ function ok(q, type) { if (!q || !q.instruction) return false; if (type !== "첫
     var sents = (t.match(/[.!?]/g) || []).length; if (sents < 4) return false;
     if (/_{3,}/.test(t)) return false;                                   // 빈칸 연습문제
     if (/\b(NEW WORDS|Sample Sentences|Definitions|Match the|Exercises?|Fill in|Chapter \d|Volume \d|Unit \d|WEEK \d|DAY \d|Table of Contents|Bibliography|References|Index|Copyright|ISBN|Figure \d|Table \d)\b/i.test(t)) return false;
-    if (/\b(Preface|Foreword|Acknowledge?ment|List of|typographical|conventions|invaluable|grateful|indebted|thank(s| you)|colleagues|this (book|volume|chapter|series)|the (author|editor|publisher)s?|cited|et al|ibid|op\. cit|footnote|abbreviations)\b/i.test(t)) return false;  // 책 앞부분·인용·메타
-    if (/\b(VII|VIII|IX|XI|XII|XIII|XIV|xvi|xvii)\b/.test(t)) return false;   // 로마숫자 페이지(앞부분)
+    if (/\b(Preface|Foreword|Acknowledge?ments?|List of|typographical|conventions|invaluable|grateful|indebted|thank(s| you)|colleagues|this (book|volume|chapter|series)|the (author|editor|publisher)s?|cited|et al|ibid|op\. cit|footnote|abbreviations)\b/i.test(t)) return false;  // 책 앞부분·인용·메타
+    if (/\b(VII|VIII|IX|XI|XII|XIII|XIV|xvi|xvii)\b/i.test(t)) return false;   // 로마숫자 페이지(앞부분, 대소문자 무관)
+    if (/\b(ACKNOWLEDG|BIBLIOGRAPH|CONTENTS|PREFACE|FOREWORD|APPENDIX|GLOSSAR|INDEX|CHAPTER|COPYRIGHT)\w*/.test(t)) return false;   // 대문자 구조 헤더(서지·목차 조각)
+    if (/\b[A-Z][a-z]+ [A-Z][a-z]+(ed|ic|al|ous|ing), [a-z]+\./.test(t)) return false;   // 사전 표제어+정의 조각(예: "Dionysian Frenzied, delirious.")
     if (/[a-z]´|[ˈˌː]|\b[a-z]{1,2}´\b/.test(t)) return false;            // 발음기호 조각
     if (!/^[A-Z"“']/.test(t.trim()) || !/[.!?]["'”]?\s*$/.test(t.trim())) return false;   // 문장으로 시작·끝(온전한 단락)
     if ((t.match(/\(\s*\d{4}\s*\)/g) || []).length >= 2) return false;   // (연도) 인용 과다 → 학술 참고문헌투

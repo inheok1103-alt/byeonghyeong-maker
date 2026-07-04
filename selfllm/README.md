@@ -26,12 +26,15 @@ node selfllm/build_dataset.js 300 2 --online
 ```
 → `selfllm/train.jsonl` 생성(누적). 최소 500~1000줄이면 학습 시작 가능, 많을수록 좋음.
 
-### 2) 무료 GPU에서 학습 (Colab)
+### 2) 무료 GPU에서 학습 (Colab) — 턴키
+> 데이터(`train.jsonl`)는 저장소에 포함되어 있어 **노트북이 자동 다운로드**합니다. 업로드 불필요.
+> 직접 만든 데이터로 학습하려면 1)에서 만든 `train.jsonl`을 업로드하면 자동다운로드를 건너뜁니다.
+
 1. https://colab.research.google.com → 새 노트북 → **런타임 유형: GPU(T4)**
 2. `selfllm/finetune_colab.py` 내용을 셀에 붙여넣기(또는 셀별 실행)
-3. 왼쪽 폴더 아이콘 → `train.jsonl` **업로드**
-4. `HF_REPO`(본인 HuggingFace 계정), `HF_TOKEN`(쓰기 토큰, huggingface.co/settings/tokens) 입력
-5. 순서대로 실행 → 30~60분 후 **내 모델이 HuggingFace에 업로드**(파일 소유)
+3. `[2] 설정`의 `HF_USERNAME`만 본인 HuggingFace 아이디로 변경(`MODEL_SIZE`는 3B 권장, 7B 선택)
+4. 순서대로 실행 → `[7]`에서 **쓰기 토큰**을 물어보면 붙여넣기(huggingface.co/settings/tokens)
+5. 30~60분 후 **내 모델이 HuggingFace에 업로드**(파일 소유) — 3B 병합모델 + GGUF(Ollama용)
 
 ### 3) 우리 모델 쓰기
 - **고사양 PC/서버(Ollama)**: `ollama run hf.co/<내계정>/ray-english-exam-3b-gguf` → 무제한·무료
