@@ -1427,6 +1427,7 @@
     if (/강조|도치/.test(t) && /전환/.test(t)) return function (p) { return buildConvert(p, "강조도치"); };
     if (/글의\s*순서|^순서$/.test(t)) return function (p) { return Promise.resolve(buildOrder(p)); };
     if (/문장삽입/.test(t)) return function (p) { return Promise.resolve(buildInsertion(p)); };
+    if (/안내문/.test(t)) return function (p) { return buildFactCheck(p, !/불일치/.test(t)); };   // 안내문 일치/불일치 → 사실검증 빌더(일치/불일치 문항) 연결(주제 폴백 방지)
     if (/무관/.test(t)) return function (p) { return buildIrrelevant(p); };
     if (/연결어/.test(t)) return function (p) { return Promise.resolve(buildConnective(p)); };
     if (/어법개수/.test(t)) return function (p) { return buildGrammarCount(p); };
