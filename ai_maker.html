@@ -639,9 +639,15 @@ body.simple .expert{display:none!important}
     <div id="research" style="max-height:280px;overflow:auto"></div>
   </div>
 
+  <div class="card noprint" id="corpusCard">
+    <h2>📚 원서 코퍼스 기반 <span style="font-size:9pt;color:#888;font-weight:400">(개인 소장 영어 원서에서 추출한 영어학 DB — 출제·검증의 근거)
+      <button class="ghost" style="font-size:8.5pt;padding:3px 9px;float:right" onclick="renderCorpus()">🔄 새로고침</button></span></h2>
+    <div id="corpusBody"><div class="note">불러오는 중…</div></div>
+  </div>
+
 </div>
 
-<script src="api_team.js?v=20260704m"></script>
+<script src="api_team.js?v=20260704n"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -862,7 +868,21 @@ function setMode(m){
   if(m==="compose"){ composeLoadHeader(); composeRender(); sheetBadge(); }
 }
 /* 뇌 관찰실: 관찰카드 7종을 탭 하나로 */
-var OBS=[["meshCard","🕸 신경망"],["brain3dCard","🧠 3D 뇌"],["brainCard","💭 브레인"],["govCard","🏛 운영"],["archiveCard","📚 아카이브"],["liveCard","🔴 실시간 회의"],["researchCard","🔬 연구 로그"]];
+var OBS=[["meshCard","🕸 신경망"],["brain3dCard","🧠 3D 뇌"],["brainCard","💭 브레인"],["govCard","🧠 상호작용"],["corpusCard","📚 원서 코퍼스"],["archiveCard","📚 아카이브"],["liveCard","🔴 실시간 회의"],["researchCard","🔬 연구 로그"]];
+function renderCorpus(){
+  var el=document.getElementById("corpusBody"); if(!el||!window.T||!T.corpusStat) return;
+  var s=T.corpusStat();
+  function stat(lab,v,unit){ return '<div style="flex:1;min-width:90px;background:rgba(200,169,106,.08);border:1px solid rgba(200,169,106,.22);border-radius:9px;padding:7px 10px"><div style="font-size:14pt;font-weight:800;color:var(--rg-gold,#C8A96A)">'+(v||0).toLocaleString()+'<span style="font-size:8pt;color:#9a9db0;font-weight:400"> '+(unit||"")+'</span></div><div class="note">'+lab+'</div></div>'; }
+  var h='<div style="display:flex;gap:8px;flex-wrap:wrap">'+stat("원서",s.books,"권")+stat("어휘",s.vocab)+stat("CEFR",s.cefr)+stat("연어",s.colloc)+stat("유의/반의",s.synant)+stat("문법오류쌍",s.gec)+stat("구동사",s.phrasal)+stat("지문",s.passages)+'</div>';
+  var tc=(T.topCollocations?T.topCollocations(14):[]);
+  if(tc.length){ h+='<div style="margin-top:10px"><b style="font-size:9.5pt;color:var(--rg-mint,#54D0B4)">📊 최빈 연어(원서 실측)</b><div style="margin-top:4px;display:flex;flex-wrap:wrap;gap:5px">'+tc.map(function(c){ return '<span style="font-size:8.6pt;background:rgba(84,208,180,.1);border:1px solid rgba(84,208,180,.25);border-radius:7px;padding:2px 8px"><b>'+esc(c.phrase)+'</b> <span style="color:#9a9db0">'+c.count+'</span></span>'; }).join("")+'</div></div>'; }
+  var notes=(T.corpusResearch?T.corpusResearch():[]);
+  h+='<div style="margin-top:10px"><b style="font-size:9.5pt">🔬 코퍼스 연구 노트</b> <span class="note">'+(notes.length?(notes.length+"건 누적"):"아직 없음 — 24h 뇌가 코퍼스를 연구하면 여기에 쌓입니다")+'</span>';
+  if(notes.length) h+='<div style="margin-top:4px;max-height:160px;overflow:auto">'+notes.slice(0,12).map(function(n){ return '<div style="font-size:8.7pt;border-left:2px solid var(--rg-line2,#363B4D);padding:2px 0 2px 8px;margin:3px 0">'+esc(typeof n==="string"?n:(n.note||n.rule||JSON.stringify(n).slice(0,120)))+'</div>'; }).join("")+'</div>';
+  h+='</div>';
+  h+='<div class="note" style="margin-top:8px">이 DB는 <b>출제(오답=실제 연어, 어법=실제 오류쌍, 난이도=CEFR)</b>와 <b>검증</b>의 근거로 쓰입니다.</div>';
+  el.innerHTML=h;
+}
 function obsShow(id){
   OBS.forEach(function(o){ var el=document.getElementById(o[0]); if(el) el.style.display=(o[0]===id)?"":"none";
     var b=document.getElementById("ot_"+o[0]); if(b) b.classList.toggle("on",o[0]===id); });
@@ -2021,7 +2041,7 @@ function loadResearch(){
   });
 }
 T.loadDifficultyDB("difficulty.json?_t="+Date.now()).then(function(r){ var s=document.getElementById("lvstat"); if(s) s.textContent=(r&&r.ok)?"✓ 난이도 규칙 로드됨(요인 기반)":"내장 기본"; });
-T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s&&c&&c.vocab) s.textContent="📚 학습DB: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 반의어 "+(c.synant||0)+" · 구동사 "+(c.phrasal||0)+" · 어법오류 "+(c.gec||0)+" · 교재 "+(c.books||0)+"종 · 연구 "+c.research; }).catch(function(){});
+T.loadCorpus("corpus/").then(function(c){ var s=document.getElementById("corpusStat"); if(s&&c&&c.vocab) s.textContent="📚 학습DB: 어휘 "+c.vocab.toLocaleString()+" · CEFR "+(c.cefr||0).toLocaleString()+" · 지문 "+c.passages+" · 반의어 "+(c.synant||0)+" · 구동사 "+(c.phrasal||0)+" · 어법오류 "+(c.gec||0)+" · 교재 "+(c.books||0)+"종 · 연구 "+c.research; try{ renderCorpus(); }catch(e){} }).catch(function(){});
 try{ var tc=document.getElementById("tcount"); if(tc&&T.teacherCount) tc.textContent=T.teacherCount().toLocaleString(); }catch(e){}
 function loadCorpusPassage(){ var p=T.corpusPassage({level:getLevel()}); if(!p){ alert("코퍼스 지문을 아직 불러오지 못했습니다. 잠시 후 다시 시도하세요."); return; } document.getElementById("passage").value=p.text; onPassage(); saveState(); var n=document.getElementById("charcount"); }
 // UX: 고급 카드를 접이식(▸)으로 — 제목 클릭 시 펼침/접기

@@ -415,6 +415,7 @@
   // 원서 코퍼스 런타임 학습: 어휘난이도밴드·콜로케이션·등급별 지문 로드 → 난이도/어휘 판정에 반영
   var CORPUS = { vocab: null, passages: [], colloc: [], research: null, cefr: null, common: null, synant: null, phrasal: null, gec: null, books: null };
   function synAnt(word) { return (CORPUS.synant && CORPUS.synant[String(word || "").toLowerCase()]) || null; }
+  function collocation(word) { var c = CORPUS.colloc || []; var w = String(word || "").toLowerCase(); if (!w) return []; var out = []; for (var i = 0; i < c.length && out.length < 6; i++) { var ph = (c[i] && c[i][0] != null) ? c[i][0] : c[i]; if (typeof ph === "string" && (" " + ph + " ").indexOf(" " + w) >= 0) out.push(ph); } return out; }
   function phrasalVerbs() { return CORPUS.phrasal || []; }
   function gecExamples(k) { var g = CORPUS.gec || []; if (!g.length) return ""; var out = []; for (var i = 0; i < (k || 2); i++) { var e = g[rint(g.length)]; if (e) out.push("'" + e.err + "' → '" + e.fix + "'"); } return out.join(" | "); }
   function recommendBooks(opts) { opts = opts || {}; var bs = CORPUS.books || []; var r = bs.filter(function (b) { return (!opts.skill || (b.skill || "").indexOf(opts.skill) >= 0) && (!opts.grade || (b.grade || "").indexOf(opts.grade) >= 0) && (!opts.weak || (b.weak || []).some(function (w) { return w.indexOf(opts.weak) >= 0; })); }); return (r.length ? r : bs).slice(0, opts.n || 8); }
@@ -519,10 +520,20 @@
   }
   // 역할별 오답 4개 (미분화: 정답과 의미가 겹치지 않게)
   async function makeDistractors(answer, kind, context) {
-    var j = await llmJSON([{ role: "system", content: "오답 설계 전문가. 정답과 의미가 분명히 다른 매력적 오답을 만든다. JSON 배열만." },
-      { role: "user", content: "정답 보기: \"" + answer + "\"\n맥락: " + context + "\n위 정답과 '의미가 겹치지 않는' " + kind + " 오답 4개를 만들어라. 서로 다른 방식으로 틀리게: ①부분적·지엽적 ②정반대 ③글과 무관 ④지나치게 포괄적. 정답을 재진술·패러프레이즈 하지 말 것. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 });
+    // 원서 코퍼스 직결: 정답 속 핵심어의 실제 연어(collocation)·유의/반의어를 뽑아 '그럴듯하지만 틀린' 오답의 재료로 제공
+    var corpusHint = "";
+    try {
+      var kws = englishWords(answer).filter(function (w) { return w.length >= 4 && !STOP[w.toLowerCase()]; }).slice(0, 3);
+      var bits = [];
+      kws.forEach(function (w) {
+        var col = collocation(w); if (col && col.length) bits.push(w + "의 실제 연어: " + col.slice(0, 3).join(", "));
+        var sa = synAnt(w); if (sa && (sa.ant || sa.syn)) bits.push(w + "의 반의/유의: " + [].concat(sa.ant || [], sa.syn || []).slice(0, 3).join(", "));
+      });
+      if (bits.length) corpusHint = "\n[원서 코퍼스 재료 — 오답을 자연스럽게 만들되 정답과 뜻이 겹치지 않게] " + bits.join(" / ");
+    } catch (_) {}
+    var j = await llmJSON([{ role: "system", content: "오답 설계 전문가. 정답과 의미가 분명히 다른 매력적 오답을 만든다. 원서 코퍼스의 실제 연어를 활용해 표현은 자연스럽게. JSON 배열만." },
+      { role: "user", content: "정답 보기: \"" + answer + "\"\n맥락: " + context + corpusHint + "\n위 정답과 '의미가 겹치지 않는' " + kind + " 오답 4개를 만들어라. 서로 다른 방식으로 틀리게: ①부분적·지엽적 ②정반대 ③글과 무관 ④지나치게 포괄적. 정답을 재진술·패러프레이즈 하지 말 것. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 });
     var arr = Array.isArray(j) ? j.map(clean1).filter(Boolean) : [];
-    // Datamuse 중복 차단: 정답 동의어와 겹치는 오답 1차 제거(미세 보강)
     return arr.slice(0, 4);
   }
 
@@ -1842,7 +1853,10 @@
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
     analysisSheet: analysisSheet, extractKeywords: extractKeywords, findSource: findSource, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
     ollamaModels: async function (url) { try { var d = await getJSON(String(url || CFG.ollamaUrl).replace(/\/+$/, "") + "/api/tags", 4000); return (d && d.models || []).map(function (m) { return m.name; }); } catch (e) { return null; } },
-    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
+    loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, collocation: collocation, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
+    corpusStat: function () { return { books: (CORPUS.books || []).length, vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, synant: CORPUS.synant ? Object.keys(CORPUS.synant).length : 0, gec: (CORPUS.gec || []).length, phrasal: (CORPUS.phrasal || []).length, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0, research: (CORPUS.research && CORPUS.research.count) || 0 }; },
+    topCollocations: function (n) { return (CORPUS.colloc || []).slice(0, n || 12).map(function (c) { return { phrase: (c && c[0] != null) ? c[0] : c, count: (c && c[1]) || 0 }; }); },
+    corpusResearch: function () { return (CORPUS.research && CORPUS.research.notes) || []; },
     errlog: function () { return ERRLOG; }, meetings: function () { return MEETINGS; },
     llm: llm, llmJSON: llmJSON, ask: ask, grammar: grammar, datamuse: datamuse, dict: dict, wiktionary: wiktionary, wiki: wiki, translate: translate, image: image,
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,

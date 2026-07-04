@@ -124,6 +124,30 @@ async function main() {
     }
   } catch (e) { console.log("Phase A 오류:", e.message); }
 
+  /* ── Phase A2 코퍼스 연구(원서 197권 기반 영어학 규칙 지속 도출) ── */
+  const corpusNotes = [];
+  try {
+    if (used < BUDGET - 2) {
+      const cols = (T.topCollocations ? T.topCollocations(20) : []).map(c => c.phrase);
+      const gec = T.gecExamples ? T.gecExamples(3) : "";
+      const cstat = T.corpusStat ? T.corpusStat() : {};
+      const h2 = new Date().getUTCHours();
+      const focus = ["연어(collocation)를 활용한 오답 설계", "실제 문법오류쌍(gec)을 활용한 어법 문항", "CEFR 밴드를 활용한 난이도 조정", "원서 문체 패턴을 활용한 변형"][h2 % 4];
+      const seed = "연구 초점: " + focus + "\n원서 코퍼스 표본 — 최빈 연어: " + cols.slice(0, 12).join(", ") + "\n실제 문법오류쌍: " + gec;
+      const cr = await T.llmJSON([
+        { role: "system", content: "너는 코퍼스언어학·영어학 기반 출제 연구자다. 원서 코퍼스의 실제 패턴에서 '내신 변형문제 출제에 바로 쓸' 일반화 규칙 1개를 도출한다. JSON만." },
+        { role: "user", content: seed + "\n\nJSON: {\"note\":\"이 코퍼스 패턴에서 배운 점(한국어 1~2문장)\",\"rule\":\"출제 시 항상 적용할 규칙 한 문장(한국어, 실행가능·구체적)\"}" }
+      ], { noRule: true, temperature: 0.4 }).catch(() => null);
+      used += 1;
+      if (cr && cr.rule) {
+        newRules.push({ rule: cr.rule, src: "코퍼스연구:" + focus, score: 72, ts: ts() });
+        corpusNotes.push({ ts: ts(), focus: focus, note: cr.note || "", rule: cr.rule, sample: cols.slice(0, 6) });
+        research.push({ date: day(), category: "코퍼스연구", topic: "원서 " + (cstat.books || 0) + "권 · " + focus, summary: cr.note || "", rule: cr.rule });
+        console.log("코퍼스연구 규칙 도출:", cr.rule.slice(0, 60));
+      }
+    }
+  } catch (e) { console.log("Phase A2 코퍼스연구 오류:", e.message); }
+
   /* ── Phase B 교사 회의(사용자 요청 + 연구 시드 회전) ── */
   try {
     let queue = [];
@@ -177,6 +201,13 @@ async function main() {
     const lr = { updated: ts(), count: merged.length, rules: merged };
     W("corpus/learned_rules.json", lr);
     W("learned_rules.json", lr);
+
+    // 코퍼스 연구 노트 누적(브라우저 관측 패널 로드용)
+    const cres = J("corpus/corpus_research.json", { updated: "", count: 0, notes: [] });
+    cres.notes = corpusNotes.concat(cres.notes || []).slice(0, 60);
+    cres.count = cres.notes.length; cres.updated = ts();
+    cres.note = "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출";
+    W("corpus/corpus_research.json", cres);
 
     const ann = J("corpus/announcements.json", { notices: [] });
     ann.updated = ts(); ann.notices = [...notices, ...(ann.notices || [])].slice(0, 50);
