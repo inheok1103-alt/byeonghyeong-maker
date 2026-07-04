@@ -638,7 +638,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704k"></script>
+<script src="api_team.js?v=20260704l"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -1708,12 +1708,15 @@ function showExplain(i){
   el.innerHTML='<span class="note">📖 교사가 해설 작성 중… (지문 근거·오답 분석)</span>';
   T.buildExplanation(q, q.passage||LASTPASSAGE, {}).then(function(r){
     if(!r){ el.innerHTML='<span class="note">해설 생성 실패 — 다시 시도</span>'; return; }
-    var h='<div style="background:#fffdf5;border:1px solid #e8dcae;border-radius:8px;padding:9px;margin-top:7px;font-size:9pt;line-height:1.55">';
-    h+='<div><b>✅ 정답 해설</b> '+esc(r.correct||"")+'</div>';
-    if(r.distractors&&r.distractors.length){ h+='<div style="margin-top:5px"><b>❌ 오답 근거</b><ul style="margin:2px 0 0 16px;padding:0">'+r.distractors.map(function(d){return '<li>'+esc(String(d.n))+') '+esc(d.why)+'</li>';}).join("")+'</ul></div>'; }
-    if(r.rubric&&r.rubric.length){ h+='<div style="margin-top:5px"><b>📝 채점 포인트</b> '+esc(r.rubric.join(" · "))+'</div>'; }
-    if(r.vocab&&r.vocab.length){ h+='<div style="margin-top:5px"><b>🔑 핵심 어휘·구문</b> '+esc(r.vocab.join(" · "))+'</div>'; }
-    if(r.intent){ h+='<div style="margin-top:5px;color:#0f766e"><b>🎯 출제의도</b> '+esc(r.intent)+'</div>'; }
+    var h='<div style="background:#fffdf5;border:1px solid #e8dcae;border-radius:8px;padding:10px 11px;margin-top:7px;font-size:9pt;line-height:1.6;color:#2a2620">';
+    h+='<div><b style="color:#0a7a55">✅ 정답 해설</b><div style="margin-top:2px">'+esc(r.correct||"")+'</div></div>';
+    if(r.distractors&&r.distractors.length){ h+='<div style="margin-top:7px"><b style="color:#a03a2e">❌ 오답 근거</b><ul style="margin:3px 0 0 16px;padding:0">'+r.distractors.map(function(d){return '<li style="margin:2px 0">'+esc(String(d.n))+') '+esc(d.why)+'</li>';}).join("")+'</ul></div>'; }
+    if(r.syntax){ h+='<div style="margin-top:7px"><b style="color:#C0265A">🧩 구문 분석</b> '+esc(r.syntax)+'</div>'; }
+    if(r.rubric&&r.rubric.length){ h+='<div style="margin-top:7px"><b>📝 채점 포인트</b><ul style="margin:3px 0 0 16px;padding:0">'+r.rubric.map(function(x){return '<li style="margin:2px 0">'+esc(x)+'</li>';}).join("")+'</ul></div>'; }
+    if(r.vocab&&r.vocab.length){ h+='<div style="margin-top:7px"><b>🔑 핵심 어휘·구문</b> '+esc(r.vocab.join(" · "))+'</div>'; }
+    if(r.concept){ h+='<div style="margin-top:7px;background:#f4f8ff;border:1px solid #cadff2;border-radius:7px;padding:7px 9px"><b style="color:#1d6fa5">📚 알아야 할 개념</b><div style="margin-top:2px">'+esc(r.concept)+'</div></div>'; }
+    if(r.background){ h+='<div style="margin-top:5px;background:#f0f9ff;border:1px solid #bae0f5;border-radius:7px;padding:7px 9px"><b style="color:#1d6fa5">🌐 배경지식</b> <span style="color:#334">'+esc(r.background)+'</span></div>'; }
+    if(r.intent){ h+='<div style="margin-top:7px;color:#0f766e"><b>🎯 출제의도</b> '+esc(r.intent)+'</div>'; }
     h+='</div>'; el.innerHTML=h;
   }).catch(function(e){ el.innerHTML='<span class="note">오류: '+esc(e.message)+'</span>'; });
 }
@@ -1819,15 +1822,17 @@ function buildAnalysisHtml(d){
     return '<tr><td style="width:24px;color:#889;font-weight:800;vertical-align:top;padding:5px 4px;font-size:9pt">'+s.n+'</td><td style="border-left:3.5px solid '+c[1]+';padding:4px 9px 6px;vertical-align:top"><div style="font-size:10pt;line-height:1.55">'+esc(s.en)+' <span style="border:1px solid '+c[1]+';color:'+c[1]+';border-radius:6px;padding:0 5px;font-size:7.2pt;font-weight:700;white-space:nowrap">'+esc(c[0])+'</span></div><div style="color:#374151;font-size:9pt;margin-top:2px">'+esc(s.ko)+'</div>'+(s.syntax?('<div style="margin-top:2px"><span style="background:#fdf2f6;color:'+ANFN.grammar[1]+';border-radius:7px;padding:1px 7px;font-size:7.8pt;font-weight:700">구문</span> <span style="font-size:8.6pt;color:#555">'+esc(s.syntax)+'</span></div>'):'')+'</td></tr>';
   }).join("");
   var flow=(d.flow||[]).map(function(f){return '<span style="background:#fff7ed;border:1px solid #fed7aa;color:#B45309;border-radius:9px;padding:3px 9px;font-size:8.6pt;font-weight:700;white-space:nowrap">'+f.n+' '+esc(f.role)+'</span>';}).join(' <span style="color:#c9c2b4">→</span> ');
-  var voc=(d.vocab||[]).map(function(v){return '<tr style="border-bottom:1px solid #eee"><td style="padding:5px 8px;font-weight:800">'+esc(v.w)+'</td><td style="padding:5px 8px">'+esc(v.ko||"")+'</td><td style="padding:5px 8px;color:#567">'+esc(v.syn||"")+'</td></tr>';}).join("");
+  var voc=(d.vocab||[]).map(function(v){return '<tr style="border-bottom:1px solid #eee"><td style="padding:5px 8px;font-weight:800">'+esc(v.w)+(v.pos?(' <span style="color:#8a8a8a;font-size:7.6pt;font-weight:400">'+esc(v.pos)+'</span>'):'')+'</td><td style="padding:5px 8px">'+esc(v.ko||"")+'</td><td style="padding:5px 8px;color:#567;font-size:8.6pt">≈ '+esc(v.syn||"")+'</td></tr>';}).join("");
   var pts=(d.points||[]).map(function(p,i){return '<div style="margin:6px 0;padding:7px 10px;border-left:3.5px solid '+ANFN.claim[1]+';background:#f7f4fd;font-size:9.4pt;line-height:1.5">'+(i+1)+'. '+esc(p)+'</div>';}).join("");
-  var gsyn=d.sents.filter(function(s){return s.fn==="grammar"&&s.syntax;}).slice(0,3).map(function(s){return '<div style="margin:5px 0;font-size:9pt"><b style="color:'+ANFN.grammar[1]+'">'+s.n+'번</b> '+esc(s.syntax)+'</div>';}).join("");
+  var exprH=(d.expr&&d.expr.length)?('<b style="color:'+ANFN.grammar[1]+';font-size:10.5pt">③ 주요 구문·표현</b><table style="margin-top:6px;font-size:9pt;width:100%">'+d.expr.map(function(x){return '<tr style="border-bottom:1px solid #f0f0f0"><td style="padding:4px 8px;font-weight:700;color:'+ANFN.grammar[1]+';white-space:nowrap;vertical-align:top">'+esc(x.e||"")+'</td><td style="padding:4px 8px">'+esc(x.ko||"")+'</td></tr>';}).join("")+'</table>'):'';
+  var connH=(d.connect&&d.connect.length)?('<div style="margin-top:9px"><b style="color:'+ANFN.logic[1]+';font-size:10pt">④ 연결어·담화표지</b> <span style="font-size:8.8pt">'+d.connect.map(function(c){return '<span style="background:#fff7ed;border:1px solid #fed7aa;border-radius:7px;padding:1px 8px;margin:2px 3px 2px 0;display:inline-block;color:#B45309"><b>'+esc(c.w||"")+'</b> <span style="color:#8a6d3b">'+esc(c.role||"")+'</span></span>';}).join("")+'</span></div>'):'';
+  var bgH=(d.background)?('<div style="margin-top:9px;background:#f0f9ff;border:1px solid #bae0f5;border-radius:8px;padding:8px 11px"><b style="color:#1d6fa5;font-size:9.8pt">🌐 배경지식</b> <span style="font-size:8.9pt;color:#334;line-height:1.55">'+esc(d.background)+'</span></div>'):'';
   return '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><title>지문 분석지</title><style>@page WordSection1{size:841.9pt 595.3pt;mso-page-orientation:landscape;margin:9mm} div.WordSection1{page:WordSection1} @page{size:A4 landscape;margin:9mm} body{font-family:\'Malgun Gothic\',sans-serif;color:#1f2937;margin:0} table{border-collapse:collapse;width:100%}</style></head><body><div class="WordSection1">'
-   +'<div style="page-break-after:always;padding:3mm 2mm"><div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2.5px solid #1f2937;padding-bottom:6px;margin-bottom:7px;gap:10px;flex-wrap:wrap"><div><b style="font-size:13pt">📖 지문 분석지 · Page 1 — 정독</b><div style="font-size:9pt;color:#445;margin-top:3px"><b style="color:'+ANFN.core[1]+'">주제</b> '+esc(d.topic)+' &nbsp;&nbsp;<b style="color:'+ANFN.claim[1]+'">주장</b> '+esc(d.thesis)+'</div></div><div style="padding-top:2px">'+lg+'</div></div><table>'+rows+'</table></div>'
-   +'<div style="padding:3mm 2mm"><div style="border-bottom:2.5px solid #1f2937;padding-bottom:6px;margin-bottom:10px"><b style="font-size:13pt">🧠 지문 분석지 · Page 2 — 암기·출제</b> <span style="font-size:8.6pt;color:#889">핵심블록 3 · 암기 5</span></div>'
-   +'<div style="margin-bottom:12px"><b style="color:'+ANFN.logic[1]+';font-size:10.5pt">① 논리 흐름</b><div style="margin-top:6px;line-height:2.1">'+flow+'</div></div>'
-   +'<div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap"><div style="flex:1;min-width:280px"><b style="color:'+ANFN.evidence[1]+';font-size:10.5pt">② 암기 어휘 5</b><table style="margin-top:6px;font-size:9.4pt">'+voc+'</table></div>'
-   +'<div style="flex:1;min-width:280px"><b style="color:'+ANFN.claim[1]+';font-size:10.5pt">③ 출제 포인트</b>'+pts+(gsyn?('<div style="margin-top:8px"><b style="color:'+ANFN.grammar[1]+';font-size:9.5pt">구문 포인트</b>'+gsyn+'</div>'):'')+'</div></div></div>'
+   +'<div style="page-break-after:always;padding:3mm 2mm"><div style="display:flex;justify-content:space-between;align-items:flex-start;border-bottom:2.5px solid #1f2937;padding-bottom:6px;margin-bottom:7px;gap:10px;flex-wrap:wrap"><div><b style="font-size:13pt">📖 지문 분석지 · Page 1 — 정독·구문</b><div style="font-size:9pt;color:#445;margin-top:3px"><b style="color:'+ANFN.core[1]+'">주제</b> '+esc(d.topic)+' &nbsp;&nbsp;<b style="color:'+ANFN.claim[1]+'">주장</b> '+esc(d.thesis)+'</div></div><div style="padding-top:2px">'+lg+'</div></div><table>'+rows+'</table></div>'
+   +'<div style="padding:3mm 2mm"><div style="border-bottom:2.5px solid #1f2937;padding-bottom:6px;margin-bottom:10px"><b style="font-size:13pt">🧠 지문 분석지 · Page 2 — 어휘·구문·배경·출제</b></div>'
+   +'<div style="margin-bottom:11px"><b style="color:'+ANFN.logic[1]+';font-size:10.5pt">① 논리 흐름</b><div style="margin-top:6px;line-height:2.1">'+flow+'</div></div>'
+   +'<div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap"><div style="flex:1;min-width:300px"><b style="color:'+ANFN.evidence[1]+';font-size:10.5pt">② 핵심 어휘</b><table style="margin-top:6px;font-size:9.4pt">'+voc+'</table>'+exprH+'</div>'
+   +'<div style="flex:1;min-width:300px"><b style="color:'+ANFN.claim[1]+';font-size:10.5pt">⑤ 출제 포인트</b>'+pts+connH+bgH+'</div></div></div>'
    +'</div></body></html>';
 }
 function makeAnalysis(){

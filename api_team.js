@@ -1351,10 +1351,11 @@
     var sents = splitSentences(passage);
     if (sents.length < 2) return null;
     var listed = sents.map(function (s, i) { return (i + 1) + ". " + s; }).join("\n");
+    // 본문 분석 + 심화(구문 상세·주요표현·연결어)를 한 번에 요청
     var o = await llmJSON([
-      { role: "system", content: "너는 한국 고등학교 영어 내신 분석지를 만드는 수석 교사다. 반드시 JSON만 출력." },
-      { role: "user", content: "다음 지문의 분석지 데이터를 만들어라. 문장 번호별로 빠짐없이.\n[문장 목록]\n" + listed + "\n\nJSON 형식: {\"topic_ko\":\"주제 한 줄(한국어)\",\"thesis_ko\":\"필자 주장 한 줄\",\"flow\":[{\"n\":문장번호,\"role\":\"도입|주장|근거|예시|대조|재진술|결론\"}],\"sents\":[{\"n\":1,\"ko\":\"자연스러운 해석\",\"syntax\":\"구문 포인트 1개(짧게, 없으면 빈 문자열)\",\"fn\":\"core|evidence|logic|grammar|claim|aux\"}],\"vocab\":[{\"w\":\"단어\",\"ko\":\"뜻\",\"syn\":\"유의어 1개\"}],\"points\":[\"내신 출제 포인트(최대 3개, 한국어)\"]}\n규칙: sents는 문장 수(" + sents.length + "개)와 정확히 같아야 함. vocab은 시험에 나올 5개만. fn은 그 문장의 독해 기능." }
-    ], { noRule: true }).catch(function () { return null; });
+      { role: "system", content: "너는 임용을 통과한 최상위 고등학교 영어 교사다. 정교한 내신 분석지 데이터를 만든다. 반드시 JSON만 출력." },
+      { role: "user", content: "다음 지문을 문장 번호별로 빠짐없이 분석하라.\n[문장 목록]\n" + listed + "\n\nJSON:\n{\"topic_ko\":\"주제 한 줄\",\"thesis_ko\":\"필자 주장 한 줄\",\"flow\":[{\"n\":문장번호,\"role\":\"도입|주장|근거|예시|대조|재진술|결론\"}],\"sents\":[{\"n\":1,\"ko\":\"자연스러운 직역+의역\",\"syntax\":\"이 문장의 핵심 문법 구조를 구체적으로(예: 'which 관계대명사절이 주어를 수식', 'not A but B 병렬', '분사구문 = 부대상황'). 특별한 구문 없으면 빈 문자열\",\"fn\":\"core|evidence|logic|grammar|claim|aux\"}],\"vocab\":[{\"w\":\"단어\",\"pos\":\"품사(n/v/adj/adv)\",\"ko\":\"뜻\",\"syn\":\"유의어 1~2개\"}],\"expr\":[{\"e\":\"지문 속 주요 구문·숙어·연어\",\"ko\":\"뜻·쓰임\"}],\"connect\":[{\"w\":\"연결어/담화표지\",\"role\":\"대조|인과|예시|첨가|결론 등 기능\"}],\"points\":[\"내신 출제 포인트(최대 4개)\"]}\n규칙: sents 개수=문장 수(" + sents.length + "). vocab 5개(품사 포함). expr 3~5개(지문에 실제 있는 표현). connect는 지문의 연결어. syntax는 구체적으로." }
+    ], { noRule: true, timeout: 75000 }).catch(function () { return null; });
     if (!o || !o.sents || !o.sents.length) return null;
     var map = {}; (o.sents || []).forEach(function (x) { if (x && x.n >= 1) map[x.n] = x; });
     var rows = sents.map(function (en, i) {
@@ -1362,7 +1363,17 @@
       return { n: i + 1, en: en, ko: String(m.ko || ""), syntax: String(m.syntax || ""), fn: /^(core|evidence|logic|grammar|claim|aux)$/.test(m.fn) ? m.fn : "aux" };
     });
     var flow = (o.flow || []).filter(function (x) { return x && x.n >= 1 && x.n <= sents.length && x.role; });
-    return { topic: String(o.topic_ko || ""), thesis: String(o.thesis_ko || ""), flow: flow, sents: rows, vocab: (o.vocab || []).slice(0, 5), points: (o.points || []).slice(0, 3) };
+    // 배경지식: 주제어로 위키 요약 1문단(있으면). 실패해도 분석지는 나옴
+    var background = "";
+    try {
+      var kw = await ask("이 글의 핵심 주제어를 영어 1~2단어로(답만).\n\n" + passage.slice(0, 300), "단어만.", { noRule: true }).catch(function () { return ""; });
+      if (kw) { var bg = await wiki(String(kw).replace(/[^A-Za-z ]/g, "").trim()).catch(function () { return null; }); if (bg && bg.extract) background = bg.extract.slice(0, 260); }
+    } catch (_) {}
+    return {
+      topic: String(o.topic_ko || ""), thesis: String(o.thesis_ko || ""), flow: flow, sents: rows,
+      vocab: (o.vocab || []).slice(0, 6), expr: (o.expr || []).slice(0, 6), connect: (o.connect || []).slice(0, 6),
+      points: (o.points || []).slice(0, 4), background: background
+    };
   }
   // ===== 키워드 추출(출제 축): 어휘·구문·개념·연결어 — LLM + 빈도 폴백, 지문 실존 검증 =====
   async function extractKeywords(passage, opts) {
@@ -1773,17 +1784,24 @@
     opts = opts || {}; if (!q) return null;
     var isMCQ = q.choices && q.choices.length >= 4;
     var pg = String(q.passage || passage || "");
-    var sys = EXPERT_ID + " 지금은 학생용 상세 해설을 집필한다. 지문 근거를 인용하고 명료하게. JSON만.";
-    var head = "유형: " + q.type + "\n발문: " + q.instruction + (pg ? ("\n지문: " + pg.slice(0, 900)) : "") + (isMCQ ? ("\n선지: " + JSON.stringify(q.choices) + "\n정답번호: " + q.answer) : ("\n모범답안: " + String(q.explanation || "").replace(/【출제의도】[\s\S]*$/, "").replace("[모범답안] ", "")));
+    var sys = EXPERT_ID + " 지금은 학생용 '정확하고 자세한' 해설을 집필한다. 지문을 직접 인용해 근거를 대고, 정답 도출 과정을 단계적으로 설명하며, 학생이 몰랐을 개념·배경지식까지 친절히 풀어준다. 추측이 아니라 지문에 근거해 정확히. JSON만.";
+    var head = "유형: " + q.type + "\n발문: " + q.instruction + (pg ? ("\n지문: " + pg.slice(0, 1100)) : "") + (isMCQ ? ("\n선지: " + JSON.stringify(q.choices) + "\n정답번호: " + q.answer) : ("\n모범답안: " + String(q.explanation || "").replace(/【출제의도】[\s\S]*$/, "").replace("[모범답안] ", "")));
     var spec = isMCQ
-      ? "위 문항의 상세 해설을 작성하라. distractors에는 '정답 번호를 제외한 나머지 오답 선지 전부'를 각각 하나씩(빠짐없이) 넣어라. JSON: {\"correct\":\"정답이 옳은 이유(지문 근거 인용)\",\"distractors\":[{\"n\":오답번호(정수),\"why\":\"이 선지가 틀린 구체적 이유\"}],\"vocab\":[\"핵심 어휘·구문 몇 개(영어-뜻)\"],\"intent\":\"출제의도 한 줄\"}. JSON만."
-      : "위 서술형의 상세 해설을 작성하라. JSON: {\"correct\":\"모범답안 해설·핵심 포인트\",\"rubric\":[\"채점 포인트 몇 개\"],\"vocab\":[\"핵심 어휘·구문(영어-뜻)\"],\"intent\":\"출제의도 한 줄\"}. JSON만.";
-    var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: head + "\n\n" + spec }], { noRule: true, temperature: 0.4, timeout: 60000 });
+      ? "위 문항의 정확하고 자세한 해설을 작성하라. distractors에는 '정답 번호를 제외한 나머지 오답 선지 전부'를 빠짐없이. JSON: {\"correct\":\"정답이 옳은 이유 — 지문의 해당 문장을 큰따옴표로 직접 인용하고, 왜 그것이 근거가 되는지 2~3문장으로 단계적으로 설명\",\"distractors\":[{\"n\":오답번호(정수),\"why\":\"이 선지가 틀린 구체적 이유(지문의 어느 부분과 어긋나는지)\"}],\"syntax\":\"정답 판단에 관련된 핵심 구문·문법 분석(있으면)\",\"vocab\":[\"핵심 어휘·구문(영어 — 뜻)\"],\"concept\":\"이 문제를 풀기 위해 알아야 할 개념·배경지식을 학생 눈높이로 3~4문장 설명(글의 소재가 낯설면 그 소재 자체도 쉽게 풀어줌)\",\"intent\":\"출제의도 한 줄\"}. JSON만."
+      : "위 서술형의 정확하고 자세한 해설을 작성하라. JSON: {\"correct\":\"모범답안 해설 — 왜 이렇게 써야 하는지 단계적으로, 지문 근거 인용\",\"rubric\":[\"채점 포인트(구체적으로)\"],\"syntax\":\"필요한 핵심 구문·문법\",\"vocab\":[\"핵심 어휘·구문(영어 — 뜻)\"],\"concept\":\"이 문제 관련 개념·배경지식을 학생 눈높이로 3~4문장\",\"intent\":\"출제의도 한 줄\"}. JSON만.";
+    var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: head + "\n\n" + spec }], { noRule: true, temperature: 0.35, timeout: 65000 });
     if (!r) return null;
     function toStr(v) { return typeof v === "string" ? v : (v && (v.word || v.term || v.phrase || v.expression) ? ((v.word || v.term || v.phrase || v.expression) + (v.meaning || v.def || v.뜻 ? (" — " + (v.meaning || v.def || v.뜻)) : "")) : (v && v.point ? v.point : (v ? JSON.stringify(v) : ""))); }
     if (Array.isArray(r.vocab)) r.vocab = r.vocab.map(toStr).filter(Boolean);
     if (Array.isArray(r.rubric)) r.rubric = r.rubric.map(toStr).filter(Boolean);
     if (Array.isArray(r.distractors)) r.distractors = r.distractors.map(function (d) { return typeof d === "string" ? { n: "", why: d } : { n: d.n != null ? d.n : "", why: d.why || d.reason || toStr(d) }; });
+    // 배경지식 보강: 소재 주제어로 위키 요약을 덧붙여 개념 설명을 뒷받침(검색 활용)
+    if (!opts.noBg && pg) {
+      try {
+        var kw = await ask("이 글의 소재를 나타내는 영어 키워드 1~2단어(답만).\n\n" + pg.slice(0, 260), "단어만.", { noRule: true }).catch(function () { return ""; });
+        if (kw) { var bg = await wiki(String(kw).replace(/[^A-Za-z ]/g, "").trim()).catch(function () { return null; }); if (bg && bg.extract) r.background = bg.extract.slice(0, 240); }
+      } catch (_) {}
+    }
     r.type = q.type; r.isMCQ = isMCQ; return r;
   }
 
