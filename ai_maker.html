@@ -160,6 +160,22 @@ textarea:focus,input:focus,select:focus{outline:2px solid rgba(200,169,106,.35)!
 .foldarrow{color:var(--rg-gold)}
 .foldh:hover{color:var(--rg-gold)!important}
 details.fold>summary::before{color:var(--rg-gold)}
+/* 진행 챗봇(출제 과정 친절 안내) */
+#progChat{background:linear-gradient(180deg,var(--rg-panel),var(--rg-ink2));border:1px solid var(--rg-line);border-radius:14px;padding:12px 14px;margin:6px 0}
+.pchead{display:flex;align-items:center;gap:8px;font-weight:800;font-size:12pt;color:#f2f0f8;margin-bottom:8px}
+.pchead .av{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:linear-gradient(145deg,#2a2d3a,#15171f);border:1px solid var(--rg-line2);color:var(--rg-gold);font-family:Georgia,serif;font-weight:700;font-size:14px}
+.pcbar{height:6px;border-radius:4px;background:#0E1017;overflow:hidden;margin:2px 0 9px}
+.pcbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--rg-gold),var(--rg-mint));transition:width .4s}
+#pcbody{display:flex;flex-direction:column;gap:6px;max-height:320px;overflow-y:auto}
+.pcb{max-width:92%;padding:7px 11px;border-radius:12px;font-size:9.6pt;line-height:1.5;animation:pcin .25s ease}
+.pcb.bot{align-self:flex-start;background:#20232f;border:1px solid var(--rg-line2);color:#e6e4f0;border-bottom-left-radius:4px}
+.pcb.step{align-self:flex-start;background:rgba(200,169,106,.1);border:1px solid rgba(200,169,106,.28);color:#e9dcc0}
+.pcb.done{align-self:flex-start;background:rgba(84,208,180,.1);border:1px solid rgba(84,208,180,.28);color:#c9efe4}
+.pcb.err{align-self:flex-start;background:rgba(224,114,138,.12);border:1px solid rgba(224,114,138,.3);color:#f0b9c4}
+.pcb b{color:#fff}
+.pcb .sub{display:block;color:var(--rg-mut);font-size:8.6pt;margin-top:2px}
+@keyframes pcin{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.pcdot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--rg-mint);margin-right:5px;animation:pulse 1.3s infinite}
 /* 인쇄 시 다크 배경 제거(문서만) */
 @media print{body{background:#fff!important}.card{background:#fff!important;color:#111!important;box-shadow:none!important;border:none!important}.mtab,.modes,.banner{background:#fff!important}}
 .stepbar{display:flex;gap:8px;margin:10px 0 4px;flex-wrap:wrap}
@@ -378,8 +394,9 @@ body.simple .expert{display:none!important}
   </div>
   </div><!--/leftPane-->
   <div id="rightPane">
-    <div class="rp-head noprint"><span style="width:9px;height:9px;background:#4f46e5;border-radius:50%;display:inline-block"></span> Fable 결과 워크스페이스 <span class="note" style="font-weight:400">원본 지문을 보면서 검토하세요(좌우 대조)</span></div>
+    <div class="rp-head noprint"><span style="width:9px;height:9px;background:var(--rg-gold,#C8A96A);border-radius:50%;display:inline-block"></span> Ray English 결과 워크스페이스 <span class="note" style="font-weight:400">원본 지문을 보면서 검토하세요(좌우 대조)</span></div>
     <div id="bar" class="noprint" style="display:none;height:8px;background:#e8e6f8;border-radius:5px;margin:6px 0;overflow:hidden"><div id="barfill" style="height:100%;width:0;background:linear-gradient(90deg,#4f46e5,#8b7cf6);transition:width .35s"></div></div>
+    <div id="progChat" class="noprint" style="display:none"></div>
     <div id="prog" class="noprint" style="display:none"></div>
     <div class="log noprint" id="log"></div>
     <div class="card noprint" id="meetCard" style="display:none">
@@ -621,7 +638,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704j"></script>
+<script src="api_team.js?v=20260704k"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -771,7 +788,40 @@ function estFor(t){ var db=timesDB(),k=provKey()+":"+(getFast()?1:0)+":"+t; if(d
 function parN(){ return provKey()!=="pollinations"?3:1; }
 var PROG={t0:0,types:[],done:{},timer:null};
 function pid(t){ return t.replace(/[^A-Za-z0-9가-힣]/g,"_"); }
+/* ===== 진행 챗봇: 출제 과정을 친절하게 하나하나 설명 ===== */
+var PCHAT={on:false,done:0,total:0};
+function friendlyType(t){
+  if(/빈칸/.test(t)) return "핵심 어구를 빈칸으로 만들고, 헷갈리는 오답을 설계하는 중";
+  if(/어법/.test(t)) return "문장의 어법 포인트에 밑줄을 치고, 한 곳에만 오류를 심는 중";
+  if(/어휘|네모어휘/.test(t)) return "핵심 단어에 밑줄을 치고, 한 곳을 반대말로 바꾸는 중";
+  if(/주제|제목|요지|요약|필자|목적/.test(t)) return "글의 핵심을 뽑아 정답과 그럴듯한 오답을 만드는 중";
+  if(/함의/.test(t)) return "함축이 풍부한 구절을 골라 밑줄 치는 중";
+  if(/내용|안내문/.test(t)) return "지문과 맞는·틀린 진술을 만들고, 정답을 코드로 검증하는 중";
+  if(/순서/.test(t)) return "지문을 (A)(B)(C)로 나눠 순서 맞추기 문제를 만드는 중";
+  if(/삽입/.test(t)) return "문장 하나를 빼서 들어갈 자리를 찾는 문제를 만드는 중";
+  if(/무관/.test(t)) return "흐름에 어긋나는 문장을 슬쩍 심는 중";
+  if(/영작|서술|해석|첫글자|영영|지칭/.test(t)) return "서술형 문항과 모범답안·채점 포인트를 만드는 중";
+  if(/전환|강조|도치|연결어/.test(t)) return "문장을 다른 구문으로 바꾸는 문제를 만드는 중";
+  return "이 유형에 맞게 문항을 설계하고 정답을 검증하는 중";
+}
+function pchat(kind,html,sub){ var b=document.getElementById("pcbody"); if(!b) return; var d=document.createElement("div"); d.className="pcb "+kind; d.innerHTML=html+(sub?('<span class="sub">'+sub+'</span>'):''); b.appendChild(d); b.scrollTop=b.scrollHeight; }
+function pchatProg(){ var el=document.querySelector("#progChat .pcbar i"); if(el) el.style.width=(PCHAT.total?Math.round(PCHAT.done/PCHAT.total*100):0)+"%"; }
+function pchatStart(types){
+  PCHAT={on:true,done:0,total:types.length};
+  var el=document.getElementById("progChat"); if(!el) return; el.style.display="";
+  el.innerHTML='<div class="pchead"><span class="av">R</span>Ray 출제 도우미</div><div class="pcbar"><i></i></div><div id="pcbody"></div>';
+  pchat("bot","<b>출제를 시작할게요!</b> 지문을 꼼꼼히 읽고, 아래 <b>"+types.length+"개 유형</b>을 하나씩 만들면서 정답 검증까지 할게요.", esc(types.slice(0,8).join(" · "))+(types.length>8?" 외":""));
+}
+function pchatMark(t,st,d){
+  if(!PCHAT.on) return;
+  if(st==="start") pchat("step","<span class='pcdot'></span>지금 <b>"+esc(t)+"</b> 만드는 중", friendlyType(t));
+  else if(st==="retry") pchat("step","<b>"+esc(t)+"</b> 더 좋은 문항으로 다시 시도 중이에요 ("+d+"차)");
+  else if(st==="done"){ PCHAT.done++; pchat("done","✅ <b>"+esc(t)+"</b> 완성! <span style='color:var(--rg-mut)'>("+Math.round(d/1000)+"초)</span> 정답 검증 통과", "지금까지 "+PCHAT.done+"/"+PCHAT.total+" 완료"); pchatProg(); if(PCHAT.done>=PCHAT.total) pchat("bot","🎉 <b>다 만들었어요!</b> 오른쪽 완성본을 확인하고, 마음에 들면 <b>📄 담기</b>로 시험지에 모으세요."); }
+  else if(st==="fail"){ PCHAT.done++; pchat("err","⚠ <b>"+esc(t)+"</b>는 이 지문과 잘 안 맞아 건너뛰었어요. 다른 유형은 계속 만들고 있어요.", "지문을 늘리거나 다른 유형을 곁들이면 성공률이 올라가요"); pchatProg(); }
+}
+function pchatEnd(items){ if(!PCHAT.on) return; PCHAT.on=false; if(!items||!items.length){ pchat("err","<b>완성된 문항이 없어요.</b> 무료 한도이거나 지문·유형 궁합 문제일 수 있어요.","1~2분 후 재시도하거나, 무한 모드에 키를 넣어 주세요"); } }
 function progInit(types){
+  pchatStart(types);
   PROG={t0:Date.now(),types:types.slice(),done:{},timer:PROG.timer};
   var el=document.getElementById("prog"); if(!el) return; el.style.display="";
   el.innerHTML='<div style="font-weight:800;font-size:9.5pt;margin-bottom:3px;color:#4f46e5">⚙ 출제 과정'+(parN()>1?' <span class="note">병렬 '+parN()+'유형 동시</span>':'')+'</div>'
@@ -789,6 +839,7 @@ function progEta(){
   el.textContent="경과 "+gone+"초 · 남은 예상 약 "+(est>=60?(Math.floor(est/60)+"분 "+(est%60)+"초"):(est+"초"))+" (실측 학습 기반)";
 }
 function progMark(t,st,d){
+  pchatMark(t,st,d);
   var row=document.getElementById("pr_"+pid(t)); if(!row) return;
   var dot=row.querySelector(".pdot"), lab=row.querySelector(".pst");
   if(st==="start"){ dot.className="pdot run"; lab.textContent="생성 중…"; }
@@ -1236,7 +1287,7 @@ function runMulti(pgs, types){
   var groups=[], gi=0;
   function next(){
     if(gi>=pgs.length){
-      LASTITEMS=groups; LASTPASSAGE=""; render(groups); kwMatrixRender();
+      LASTITEMS=groups; LASTPASSAGE=""; render(groups); kwMatrixRender(); pchatEnd(groups);
       go.disabled=false; go.textContent="🚀 고품질 출제"; GENERATING=false;
       document.getElementById("bar").style.display="none"; return;
     }
@@ -1418,7 +1469,7 @@ function run(){
     LASTPASSAGE=pg;
     return T.generateExam(pg, types, {onProgress:logln, onType:progMark, onItem:onItemLive, fast:getFast(), level:getLevel(), refine:getRefine(), rounds:getRounds(), ensemble:getEnsemble()});
   }).then(function(items){
-    LASTITEMS=items||[]; document.getElementById("barfill").style.width="100%";
+    LASTITEMS=items||[]; document.getElementById("barfill").style.width="100%"; pchatEnd(items);
     if(!items||!items.length){
       var limited=(window.T&&T.lastLimited&&T.lastLimited());
       document.getElementById("out").innerHTML='<div class="card">'+(limited
