@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#12141C">
+<title>Ray English · 출제 (모바일)</title>
+<style>
+:root{--ink:#12141C;--ink2:#171A24;--panel:#1A1D28;--line:#2B2F3E;--line2:#363B4D;--tx:#ECEAF2;--mut:#9A9DB0;--dim:#6E7285;--gold:#C8A96A;--gold2:#EAD199;--mint:#54D0B4;--mintd:#2FA88C;--rose:#E0728A}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{background:radial-gradient(900px 500px at 80% -10%,rgba(200,169,106,.09),transparent 60%),var(--ink);color:var(--tx);
+  font-family:'Pretendard','Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;line-height:1.55;font-size:16px;-webkit-text-size-adjust:100%}
+.wrap{max-width:820px;margin:0 auto;padding:0 14px 90px}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(18,20,28,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:11px;padding:11px 14px;margin:0 -14px 12px}
+.seal{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;flex:0 0 auto;font-family:Georgia,serif;font-weight:700;font-size:18px;color:var(--gold);background:linear-gradient(145deg,#2a2d3a,#15171f);border:1px solid var(--line2)}
+.wm{display:flex;flex-direction:column;line-height:1.1;flex:1}
+.wm b{font-size:17px;font-weight:800;letter-spacing:.03em}.wm b i{color:var(--gold);font-style:normal}
+.wm span{font-size:9.5px;color:var(--mut);letter-spacing:.13em;text-transform:uppercase}
+.gear{background:rgba(255,255,255,.06);border:1px solid var(--line2);color:var(--gold);border-radius:10px;font-size:18px;width:40px;height:40px}
+.card{background:linear-gradient(180deg,var(--panel),var(--ink2));border:1px solid var(--line);border-radius:16px;padding:14px;margin:12px 0;box-shadow:0 8px 24px rgba(0,0,0,.24)}
+.lbl{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:800;margin-bottom:9px}
+.lbl .n{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;font-size:12px;font-weight:800;color:var(--gold);border:1px solid rgba(200,169,106,.4);background:rgba(200,169,106,.08)}
+.lbl .note{margin-left:auto;font-size:11px;color:var(--dim);font-weight:400}
+textarea,input,select{width:100%;background:#0E1017;border:1px solid var(--line2);border-radius:12px;color:var(--tx);font-family:inherit;font-size:16px;padding:12px 13px}
+textarea{min-height:120px;line-height:1.6;resize:vertical}
+textarea:focus,input:focus{outline:2px solid rgba(200,169,106,.35);border-color:var(--gold)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:9px}
+.btn{font-family:inherit;font-size:14px;font-weight:700;padding:11px 15px;border-radius:12px;background:#1D2130;border:1px solid var(--line2);color:#C6C9D6;min-height:44px}
+.btn:active{transform:scale(.97)}
+.btn.mint{color:var(--mint);border-color:rgba(84,208,180,.3)}
+.btn.sm{font-size:12.5px;padding:8px 12px;min-height:38px}
+.go{width:100%;font-family:inherit;font-size:18px;font-weight:800;letter-spacing:.02em;padding:16px;border-radius:14px;border:0;color:#1a1508;
+  background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:0 8px 22px rgba(200,169,106,.3)}
+.go:active{filter:brightness(.96)}
+.go:disabled{background:#3a3a44;color:#8a8a95;box-shadow:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13.5px;padding:9px 14px;border-radius:999px;border:1px solid var(--line2);color:var(--mut);background:rgba(255,255,255,.015);user-select:none;min-height:40px;display:inline-flex;align-items:center}
+.chip.on{background:rgba(84,208,180,.13);border-color:var(--mintd);color:var(--mint)}
+.seg{display:inline-flex;border:1px solid var(--line2);border-radius:11px;overflow:hidden}
+.seg span{padding:10px 16px;font-size:14px}.seg span.on{background:rgba(200,169,106,.16);color:var(--gold);font-weight:700}
+.note{font-size:12px;color:var(--mut)}
+.pchat{margin-top:10px}
+.pcb{max-width:94%;padding:9px 13px;border-radius:13px;font-size:13.5px;line-height:1.5;margin:6px 0;animation:pin .25s}
+.pcb.bot{background:#20232f;border:1px solid var(--line2)}.pcb.step{background:rgba(200,169,106,.1);border:1px solid rgba(200,169,106,.28);color:#e9dcc0}
+.pcb.done{background:rgba(84,208,180,.1);border:1px solid rgba(84,208,180,.28);color:#c9efe4}.pcb.err{background:rgba(224,114,138,.12);border:1px solid rgba(224,114,138,.3);color:#f0b9c4}
+.pcbar{height:6px;border-radius:4px;background:#0E1017;overflow:hidden;margin:6px 0}.pcbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--mint));transition:width .4s}
+@keyframes pin{from{opacity:0;transform:translateY(3px)}to{opacity:1}}
+.q{border:1px solid var(--line);border-left:4px solid var(--line2);border-radius:0 12px 12px 0;background:#fffefb;color:#16181d;padding:12px 13px;margin:11px 0}
+.q .h{font-weight:800;font-size:14px;color:#222}
+.q .chip2{font-size:10px;background:var(--gold);color:#1a1508;border-radius:6px;padding:1px 7px;font-weight:700;margin-left:5px}
+.q .ins{font-weight:600;font-size:14px;margin:5px 0}
+.q .pg{font-family:'Noto Serif KR',serif;font-size:13.5px;line-height:1.8;background:#faf9f5;border:1px solid #d8d5cc;border-radius:8px;padding:10px;margin:6px 0}
+.q .pg u{text-decoration-color:var(--gold);text-underline-offset:2px;font-weight:700}
+.q .ch div{font-size:13.5px;margin:3px 0}
+.q .ans{display:none;margin-top:8px;background:#eef4ff;border:1px solid #cfe;border-radius:8px;padding:8px 10px;font-size:12.5px;color:#25324a}
+.q .ans.show{display:block}
+.drawer{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.55);display:none}
+.drawer.open{display:block}
+.drawer .panel{position:absolute;right:0;top:0;bottom:0;width:min(90%,420px);background:var(--ink2);border-left:1px solid var(--line);padding:16px;overflow:auto}
+.drawer h3{margin:4px 0 10px;font-size:16px}
+.drawer .close{float:right;background:none;border:0;color:var(--mut);font-size:22px}
+.drawer label{display:block;font-size:12.5px;color:var(--mint);margin:11px 0 3px;font-weight:700}
+.drawer textarea{min-height:52px;font-size:13px;font-family:monospace}
+a{color:var(--gold)}
+.stat{font-size:11.5px;color:var(--dim);text-align:center;margin-top:4px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#2d2a4a;color:#fff;padding:11px 18px;border-radius:22px;font-size:14px;z-index:99;opacity:0;transition:opacity .2s}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="seal">R</span>
+  <span class="wm"><b>Ray <i>English</i></b><span>Exam · Mobile</span></span>
+  <button class="gear" onclick="openSettings()">⚙</button>
+</div>
+<div class="wrap">
+
+  <div class="card">
+    <div class="lbl"><span class="n">1</span>영어 지문 <span class="note" id="wc">0 단어</span></div>
+    <textarea id="passage" placeholder="영어 지문을 붙여넣으세요." oninput="wcUpd()"></textarea>
+    <div class="row">
+      <button class="btn sm" onclick="loadSample()">📄 샘플</button>
+      <button class="btn sm" onclick="loadCorpus()">📚 원서 지문</button>
+      <button class="btn sm" onclick="document.getElementById('passage').value='';wcUpd()">지우기</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="lbl"><span class="n">2</span>출제 유형 <span class="note" id="tc"></span></div>
+    <div class="row" style="margin:0 0 9px">
+      <button class="btn sm mint" onclick="selType('all')">✅ 전체</button>
+      <button class="btn sm" onclick="selType('rec')">⭐ 추천</button>
+      <button class="btn sm" onclick="selType('none')">해제</button>
+    </div>
+    <div class="chips" id="types"></div>
+  </div>
+
+  <div class="card">
+    <div class="lbl"><span class="n">3</span>난이도 · 출제</div>
+    <div class="row">
+      <div class="seg" id="lvSeg"><span data-v="하">하</span><span data-v="중" class="on">중</span><span data-v="상">상</span></div>
+      <span class="note" id="engineNote" style="margin-left:auto"></span>
+    </div>
+    <div class="row" style="margin-top:13px"><button class="go" id="go" onclick="run()">🖋 고품질 출제</button></div>
+    <div class="stat" id="estimate"></div>
+    <div class="pchat" id="progChat" style="display:none"></div>
+  </div>
+
+  <div id="out"></div>
+</div>
+
+<div class="drawer" id="drawer" onclick="if(event.target===this)closeSettings()">
+  <div class="panel">
+    <button class="close" onclick="closeSettings()">✕</button>
+    <h3>⚙ 설정 · 무한 모드</h3>
+    <div class="note" id="infStat">확인 중…</div>
+    <div class="note" style="margin-top:8px">무료 키를 한 줄에 하나씩 넣으면 소진 시 자동 회전(내 브라우저에만 저장). 발급: 아래 링크.</div>
+    <label>🔑 Gemini <a href="https://aistudio.google.com/apikey" target="_blank">발급</a></label>
+    <textarea id="geminiKey" placeholder="AIza...키1&#10;AIza...키2" onchange="saveKey('gemini')"></textarea>
+    <label>🔑 Groq <a href="https://console.groq.com/keys" target="_blank">발급</a></label>
+    <textarea id="groqKey" placeholder="gsk_..." onchange="saveKey('groq')"></textarea>
+    <label>🔑 Cerebras <a href="https://cloud.cerebras.ai" target="_blank">발급</a></label>
+    <textarea id="cerebrasKey" placeholder="csk-..." onchange="saveKey('cerebras')"></textarea>
+    <label>🔑 Mistral <a href="https://console.mistral.ai/api-keys" target="_blank">발급</a></label>
+    <textarea id="mistralKey" placeholder="..." onchange="saveKey('mistral')"></textarea>
+    <label>🔑 OpenRouter <a href="https://openrouter.ai/keys" target="_blank">발급</a></label>
+    <textarea id="openrouterKey" placeholder="sk-or-..." onchange="saveKey('openrouter')"></textarea>
+    <div class="note" style="margin-top:12px">PC 정밀 편집(시험지 2단 배치·분석지·세트 조립)은 <a href="ai_maker.html">PC용 사이트</a>에서.</div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="api_team.js?v=20260704p"></script>
+<script src="addon_key_guard.js?v=20260704p"></script>
+<script>
+var T=window.APITEAM, LASTITEMS=[], LASTPASSAGE="", GENERATING=false, ANSSHOWN=false;
+var SAMPLE="When our actions clash with our beliefs, we feel an uncomfortable tension that the mind is eager to remove. Instead of admitting we were wrong, we quietly reshape our beliefs until they fit what we have already done. For example, a person who pays a high price for a course they find dull may convince themselves that it is secretly valuable, simply because they have committed their money to it. However, this comfort comes at a cost: by changing our thoughts rather than our behavior, we drift further from the truth.";
+var KEYPROV=["gemini","groq","cerebras","mistral","openrouter"];
+var CIRC=["①","②","③","④","⑤"];
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function pgHtml(s){return esc(s).replace(/&lt;u&gt;/g,"<u>").replace(/&lt;\/u&gt;/g,"</u>").replace(/\n/g,"<br>");}
+function toast(m){var t=document.getElementById("toast");t.textContent=m;t.classList.add("show");setTimeout(function(){t.classList.remove("show");},1700);}
+function wcUpd(){var w=(document.getElementById("passage").value.match(/[A-Za-z]+/g)||[]).length;document.getElementById("wc").textContent=w+" 단어";updateEst();}
+function loadSample(){document.getElementById("passage").value=SAMPLE;wcUpd();}
+function loadCorpus(){var p=T.corpusPassage?T.corpusPassage({level:getLevel()}):null;if(!p){toast("원서 지문 로딩 중 — 잠시 후");return;}document.getElementById("passage").value=p.text;wcUpd();}
+function getLevel(){var s=document.querySelector("#lvSeg span.on");return s?s.getAttribute("data-v"):"중";}
+document.getElementById("lvSeg").addEventListener("click",function(e){var s=e.target.closest("span");if(!s)return;[].forEach.call(this.children,function(c){c.classList.toggle("on",c===s);});updateEst();});
+function chosen(){return [].slice.call(document.querySelectorAll("#types .chip.on")).map(function(c){return c.getAttribute("data-t");});}
+function buildTypes(){
+  var tdiv=document.getElementById("types");var list=(T&&T.BEST_TYPES)||["어법(밑줄)","어휘(밑줄)","빈칸(어구)","주제","제목","밑줄함의","내용불일치","글의순서"];
+  var def={"어법(밑줄)":1,"어휘(밑줄)":1,"빈칸(어구)":1,"주제":1,"제목":1,"밑줄함의":1};
+  tdiv.innerHTML=list.map(function(t){return '<span class="chip'+(def[t]?" on":"")+'" data-t="'+esc(t)+'" onclick="this.classList.toggle(\'on\');tcUpd()">'+esc(t)+'</span>';}).join("");
+  tcUpd();
+}
+function selType(m){var rec={"어법(밑줄)":1,"어휘(밑줄)":1,"빈칸(어구)":1,"주제":1,"제목":1,"밑줄함의":1,"내용불일치":1,"글의순서":1,"문장삽입":1,"무관문장":1};
+  [].forEach.call(document.querySelectorAll("#types .chip"),function(c){var t=c.getAttribute("data-t");c.classList.toggle("on",m==="all"?true:m==="none"?false:!!rec[t]);});tcUpd();}
+function tcUpd(){document.getElementById("tc").textContent="("+chosen().length+"/"+document.querySelectorAll("#types .chip").length+")";updateEst();}
+function updateEst(){var n=chosen().length;var el=document.getElementById("estimate");el.textContent=n?("⏱ 예상 약 "+Math.max(8,n*10)+"초 · "+n+"유형"):"";}
+/* 진행 챗봇 */
+var PC={on:false,done:0,total:0};
+function friendly(t){if(/빈칸/.test(t))return "핵심 어구를 빈칸으로, 매력적 오답 설계 중";if(/어법/.test(t))return "어법 포인트에 밑줄, 한 곳 오류 심는 중";if(/어휘/.test(t))return "핵심어 밑줄, 한 곳 반의어 치환 중";if(/주제|제목|요지/.test(t))return "핵심 뽑아 정답·오답 만드는 중";if(/함의/.test(t))return "함축 구절 골라 밑줄 치는 중";if(/내용/.test(t))return "일치·불일치 진술 만들고 코드 검증 중";if(/순서|삽입|무관/.test(t))return "문장 나눠 배열/삽입 문제 만드는 중";return "문항 설계하고 정답 검증 중";}
+function pc(k,html){var b=document.getElementById("pcbody");if(!b)return;var d=document.createElement("div");d.className="pcb "+k;d.innerHTML=html;b.appendChild(d);b.scrollTop=b.scrollHeight;}
+function pcStart(types){PC={on:true,done:0,total:types.length};var el=document.getElementById("progChat");el.style.display="";el.innerHTML='<div class="pcbar"><i></i></div><div id="pcbody"></div>';pc("bot","<b>출제 시작!</b> "+types.length+"개 유형을 하나씩 만들고 정답을 검증할게요.");}
+function pcMark(t,st,d){if(!PC.on)return;if(st==="start")pc("step","🟡 <b>"+esc(t)+"</b> — "+friendly(t));else if(st==="done"){PC.done++;pc("done","✅ <b>"+esc(t)+"</b> 완성! ("+Math.round(d/1000)+"초) · "+PC.done+"/"+PC.total);var i=document.querySelector("#progChat .pcbar i");if(i)i.style.width=Math.round(PC.done/PC.total*100)+"%";if(PC.done>=PC.total)pc("bot","🎉 완료! 아래에서 확인하세요.");}else if(st==="fail"){PC.done++;pc("err","⚠ <b>"+esc(t)+"</b> 건너뜀(지문 궁합/한도)");}}
+function run(){
+  var passage=(document.getElementById("passage").value||"").trim(),types=chosen();
+  if(passage.length<40){toast("영어 지문을 40자 이상 입력하세요");return;}
+  if(!types.length){toast("유형을 1개 이상 선택하세요");return;}
+  var go=document.getElementById("go");go.disabled=true;go.textContent="출제 중…";GENERATING=true;ANSSHOWN=false;
+  LASTPASSAGE=passage;document.getElementById("out").innerHTML="";pcStart(types);
+  T.generateExam(passage,types,{level:getLevel(),fast:true,onType:pcMark}).then(function(items){
+    LASTITEMS=items||[];render(items);
+    if(!items||!items.length){var lim=(T.lastLimited&&T.lastLimited());pc("err",lim?"⏳ 무료 한도 도달 — ⚙ 설정에 키를 넣거나 1~2분 후 재시도":"문항이 없어요. 지문/유형을 바꿔 다시.");}
+    go.disabled=false;go.textContent="🖋 고품질 출제";GENERATING=false;
+  }).catch(function(e){pc("err","오류: "+esc(e.message));go.disabled=false;go.textContent="🖋 고품질 출제";GENERATING=false;});
+}
+function render(items){
+  var out=document.getElementById("out");if(!items||!items.length){out.innerHTML="";return;}
+  var no=0,key=[];
+  var h='<div class="card"><div class="lbl">📝 완성본 <span class="note">'+items.reduce(function(s,q){return s+(q.subItems?q.subItems.length:1);},0)+'문항</span></div>';
+  h+='<div class="row" style="margin:0 0 10px"><button class="btn sm" onclick="toggleAns()" id="ansBtn">정답·해설 보기</button><button class="btn sm mint" onclick="dlSheet()">📘 시험지 Word</button><button class="btn sm" onclick="copyR()">📋 복사</button></div>';
+  if(items.some(function(q){return !q.passage&&!q.subItems;})&&LASTPASSAGE.length>40) h+='<div class="q" style="border-left-color:var(--gold)"><div class="pg">'+pgHtml(LASTPASSAGE)+'</div></div>';
+  items.forEach(function(q){
+    if(q.subItems&&q.subItems.length){var s=no+1,e=no+q.subItems.length;h+='<div class="q"><div class="h">['+s+'~'+e+'] 다음 글을 읽고 물음에 답하시오.</div><div class="pg">'+pgHtml(q.passage)+'</div>';q.subItems.forEach(function(sq){no++;key.push({no:no,a:sq.answer});h+=qHtml(sq,no,true);});h+='</div>';}
+    else{no++;key.push({no:no,a:q.answer});h+='<div class="q">'+qHtml(q,no,false)+'</div>';}
+  });
+  h+='<div class="q ans" style="border-left-color:#223"><b>[정답표]</b> '+key.map(function(k){return k.no+"."+(k.a?(CIRC[k.a-1]||k.a):"서술");}).join("  ")+'</div>';
+  h+='</div>';out.innerHTML=h;
+}
+function qHtml(q,no,child){
+  var h='<div class="h">'+no+'. '+esc(q.type)+'<span class="chip2">AI</span></div><div class="ins">'+esc(q.instruction).replace(/\n/g,"<br>")+'</div>';
+  if(q.passage&&!child)h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
+  if(q.choices&&q.choices.length){h+='<div class="ch">';q.choices.forEach(function(c,j){h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>';});h+='</div>';}
+  var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
+  h+='<div class="ans'+(ANSSHOWN?' show':'')+'"><b>정답: '+a+'</b> — '+esc(String(q.explanation||"").split("【출제의도】")[0])+'</div>';
+  return h;
+}
+function toggleAns(){ANSSHOWN=!ANSSHOWN;[].forEach.call(document.querySelectorAll("#out .ans"),function(a){a.classList.toggle("show",ANSSHOWN);});document.getElementById("ansBtn").textContent=ANSSHOWN?"정답·해설 숨기기":"정답·해설 보기";}
+function copyR(){var out=[];if(LASTPASSAGE.length>40&&LASTITEMS.some(function(q){return !q.passage&&!q.subItems;}))out.push("[지문]\n"+LASTPASSAGE.replace(/<\/?u>/g,""));var no=0;LASTITEMS.forEach(function(g){var list=g.subItems&&g.subItems.length?g.subItems:[g];list.forEach(function(q){no++;var s=no+". ["+q.type+"] "+q.instruction+"\n";if(q.passage&&!g.subItems)s+=q.passage.replace(/<\/?u>/g,"")+"\n";(q.choices||[]).forEach(function(c,j){s+="  "+(CIRC[j]||(j+1))+" "+c+"\n";});s+="  [정답] "+(q.answer?CIRC[q.answer-1]:"서술형")+" — "+q.explanation;out.push(s);});});navigator.clipboard.writeText(out.join("\n\n")).then(function(){toast("복사됨");},function(){toast("복사 실패");});}
+function dlSheet(){
+  if(!LASTITEMS.length){toast("먼저 출제하세요");return;}
+  var no=0,body="";
+  if(LASTPASSAGE.length>40&&LASTITEMS.some(function(q){return !q.passage&&!q.subItems;}))body+='<div style="font-weight:700">[지문]</div><div class="pg">'+pgHtml(LASTPASSAGE)+'</div>';
+  LASTITEMS.forEach(function(g){var list=g.subItems&&g.subItems.length?g.subItems:[g];if(g.subItems&&g.passage)body+='<div class="pg">'+pgHtml(g.passage)+'</div>';list.forEach(function(q){no++;body+='<div class="q"><b>'+no+'.</b> '+esc(q.instruction).replace(/\n/g,"<br>")+(q.passage&&!g.subItems?('<div class="pg">'+pgHtml(q.passage)+'</div>'):'');if(q.choices&&q.choices.length){q.choices.forEach(function(c,j){body+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>';});}else body+='<div style="border-bottom:1px solid #aaa;height:22px;margin:6px 0"></div>';body+='</div>';});});
+  var html='<html><head><meta charset="utf-8"><style>@page{size:B4;margin:13mm}body{font-family:sans-serif;font-size:9pt;line-height:1.5} .q{margin:8px 0;break-inside:avoid} .pg{border:1px solid #888;padding:8px;margin:4px 0;line-height:1.7;font-size:8.8pt}</style></head><body><div style="text-align:center;font-size:13pt;font-weight:800;border-bottom:2px solid #222;padding-bottom:5px;margin-bottom:8px">Ray English 변형문제</div>'+body+'</body></html>';
+  var blob=new Blob(["﻿",html],{type:"application/msword"});var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="변형문제_"+new Date().toISOString().slice(0,10)+".doc";a.click();toast("Word 저장됨");
+}
+/* 설정·키 */
+function openSettings(){document.getElementById("drawer").classList.add("open");}
+function closeSettings(){document.getElementById("drawer").classList.remove("open");}
+function saveKey(p){var v=(document.getElementById(p+"Key").value||"").trim();try{if(v)localStorage.setItem(p+"Key",v);else localStorage.removeItem(p+"Key");}catch(e){}var c={};c[p+"Key"]=v;T.configure(c);infStat();}
+function initKeys(){KEYPROV.forEach(function(p){var v="";try{v=localStorage.getItem(p+"Key")||"";}catch(e){}if(v){var el=document.getElementById(p+"Key");if(el)el.value=v;var c={};c[p+"Key"]=v;T.configure(c);}});
+  try{var m=location.hash.match(/gk=([^&]+)/);if(m){var k=decodeURIComponent(m[1]);localStorage.setItem("geminiKey",k);document.getElementById("geminiKey").value=k;T.configure({geminiKey:k});history.replaceState(null,"",location.pathname);}}catch(e){}}
+function infStat(){var el=document.getElementById("infStat"),el2=document.getElementById("engineNote");if(!T.keyStats)return;var k=T.keyStats(),prov=T.provider();var bits=[];["gemini","groq","cerebras","mistral","openrouter"].forEach(function(p){if(k[p]&&k[p].total)bits.push(p+" "+k[p].live+"/"+k[p].total);});
+  var nm={gemini:"Gemini",groq:"Groq",cerebras:"Cerebras",mistral:"Mistral",openrouter:"OpenRouter",pollinations:"무키(느림)"}[prov]||prov;
+  var s="엔진: "+nm+(bits.length?(" · "+bits.join(" · ")):" · 무료 무키");if(el)el.textContent=s;if(el2)el2.textContent=prov==="pollinations"?"⚠ 무키(느림)":"⚡ "+nm;}
+/* 부트스트랩 */
+(function(){
+  T.configure({});initKeys();
+  var db=new URLSearchParams(location.search).get("db")||"knowledge/types_v2.json";
+  Promise.resolve()
+    .then(function(){return T.loadTypeDB(db+"?_t="+Date.now()).catch(function(){});})
+    .then(function(){buildTypes();})
+    .then(function(){return T.loadExaminerKB&&T.loadExaminerKB("knowledge/examiner_kb_v1.json").catch(function(){});})
+    .then(function(){return T.loadRaysKB&&T.loadRaysKB("knowledge/rays_drill_kb.json").catch(function(){});})
+    .then(function(){return T.loadReviewDB&&T.loadReviewDB("knowledge/review_core_v2.json").catch(function(){});});
+  T.loadCorpus&&T.loadCorpus("corpus/").catch(function(){});
+  var cfg;try{cfg=fetch("config.json?_t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(c){if(c&&c.logUrl){T.configure({logUrl:c.logUrl});}}).catch(function(){});}catch(e){}
+  try{var l=JSON.parse(localStorage.getItem("learnedRules")||"[]");if(l.length&&T.applyLearned)T.applyLearned(l.map(function(r){return (r&&r.rule)||r;}).filter(Boolean));}catch(e){}
+  buildTypes();infStat();wcUpd();
+})();
+</script>
+</body>
+</html>
