@@ -649,9 +649,16 @@ body.simple .expert{display:none!important}
     <div id="corpusBody"><div class="note">불러오는 중…</div></div>
   </div>
 
+  <div class="card noprint" id="harnessCard">
+    <h2>🧬 유형별 파이프라인 &amp; 데이터 하네스 <span style="font-size:9pt;color:#888;font-weight:400">(유형마다 재료→생성→검증→조립 파이프라인 + 출제할수록 쌓이는 데이터)
+      <button class="ghost" style="font-size:8.5pt;padding:3px 9px;float:right" onclick="renderHarness()">🔄 새로고침</button>
+      <button class="ghost" style="font-size:8.5pt;padding:3px 9px;float:right;color:#b03a2e" onclick="thClear()">데이터 비우기</button></span></h2>
+    <div id="harnessBody"><div class="note">불러오는 중…</div></div>
+  </div>
+
 </div>
 
-<script src="api_team.js?v=20260704o"></script>
+<script src="api_team.js?v=20260704p"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -853,6 +860,7 @@ function progEta(){
 }
 function progMark(t,st,d){
   pchatMark(t,st,d);
+  try{ if(st==="done") thRecord(t,true,d,getLevel()); else if(st==="fail") thRecord(t,false,d,getLevel()); }catch(e){}
   var row=document.getElementById("pr_"+pid(t)); if(!row) return;
   var dot=row.querySelector(".pdot"), lab=row.querySelector(".pst");
   if(st==="start"){ dot.className="pdot run"; lab.textContent="생성 중…"; }
@@ -872,7 +880,68 @@ function setMode(m){
   if(m==="compose"){ composeLoadHeader(); composeRender(); sheetBadge(); }
 }
 /* 뇌 관찰실: 관찰카드 7종을 탭 하나로 */
-var OBS=[["meshCard","🕸 신경망"],["brain3dCard","🧠 3D 뇌"],["brainCard","💭 브레인"],["govCard","🧠 상호작용"],["corpusCard","📚 원서 코퍼스"],["archiveCard","📚 아카이브"],["liveCard","🔴 실시간 회의"],["researchCard","🔬 연구 로그"]];
+var OBS=[["meshCard","🕸 신경망"],["brain3dCard","🧠 3D 뇌"],["brainCard","💭 브레인"],["govCard","🧠 상호작용"],["corpusCard","📚 원서 코퍼스"],["harnessCard","🧬 유형 하네스"],["archiveCard","📚 아카이브"],["liveCard","🔴 실시간 회의"],["researchCard","🔬 연구 로그"]];
+/* ===== 🧬 유형별 파이프라인 + 데이터 축적 하네스 ===== */
+function typePipeline(t){
+  var P=function(step,api,detail){ return {step:step,api:api,detail:detail}; };
+  if(/주제|제목|요지|필자|목적|심경/.test(t)) return [P("지문 논지·구조 분석","llm","주제문·요지 파악"),P("정답 선지 생성","llm","핵심을 압축한 정답"),P("오답 4개 설계","llm+코퍼스","실제 연어로 매력적 오답"),P("선지 검증·정답 확정","code","중복·길이·정답위치")];
+  if(/어휘|네모어휘/.test(t)) return [P("핵심어 추출","code+CEFR","난이도 밴드 고려"),P("ⓐ~ⓔ 밑줄","code","등장순 표시"),P("한 곳 반의어 치환","코퍼스 synant","실제 반의어"),P("정답위치 확정","code","치환 지점=정답")];
+  if(/어법/.test(t)) return [P("문법 포인트 선정","llm+gec","실제 오류쌍 참조"),P("오류 주입","code","한 곳 오형태"),P("밑줄 배치","code","ⓐ~ⓔ/밑줄"),P("wrongIndex 재계산","code","자기보고 불신·코드탐색")];
+  if(/빈칸/.test(t)) return [P("핵심 어구 선정","llm","논지 핵심"),P("빈칸 처리","code","____ 치환"),P("오답 설계","llm+코퍼스","연어 기반"),P("검증","code","정답 유일성")];
+  if(/함의/.test(t)) return [P("함축 구절 선정","llm","다의적 구절"),P("밑줄","code","강건 매칭·폴백"),P("의미 선지","llm","함의 4~5지"),P("검증","code+solver","정답 교차확인")];
+  if(/내용|안내문/.test(t)) return [P("진술 5개 생성","llm","일치/불일치 혼합"),P("모순 검증","llm 2차","각 진술 대조"),P("정답 코드확정","code","모순 1개=정답"),P("복수정답 차단","code","미검증 폐기")];
+  if(/요약/.test(t)) return [P("요약문+(A)(B)","llm","한 문장 요약"),P("오답 쌍 설계","llm","의미 다른 쌍"),P("검증","code","정답 확정")];
+  if(/순서|삽입|무관/.test(t)) return [P("문장 분할","code","경계 탐지"),P("재배열/제거","code","정답 배열 산출"),P("정답 확정","code","위치 코드계산")];
+  if(/연결어/.test(t)) return [P("연결어 자리 탐지","code","담화표지"),P("(A)(B) 후보","llm","기능별 후보"),P("조합","code","선지 구성")];
+  if(/전환|강조|도치/.test(t)) return [P("전환 가능 문장 탐지","code","관계사/태/가정법"),P("구문 변환","llm","의미 보존 변환"),P("원문 실존 검증","code","조작 마커 확인")];
+  if(/장문세트|복합세트/.test(t)) return [P("공통지문 확정","code","원문 보존"),P("하위 3문항","llm+code","제목·요지·불일치"),P("subItems 조립","code","세트 구성")];
+  if(/영영/.test(t)) return [P("사전 정의 수집","dict API","영영풀이"),P("매칭 조립","code","단어↔정의")];
+  if(/영작|서술|해석|첫글자|지칭|주제문완성/.test(t)) return [P("발문·조건 구성","code+llm","조건·제시어"),P("모범답안","llm","채점 기준안"),P("채점포인트","llm","루브릭")];
+  return [P("재료 수집","llm+코퍼스","유형별 신호"),P("문항 생성","llm","초안"),P("검증","code","형식·정답"),P("조립","code","최종")];
+}
+function thAll(){ try{ return JSON.parse(localStorage.getItem("typeHarness")||"{}"); }catch(e){ return {}; } }
+function thPut(o){ try{ localStorage.setItem("typeHarness",JSON.stringify(o)); }catch(e){} }
+function thRecord(type,ok,ms,level){
+  if(!type) return; var o=thAll(); var d=o[type]||{n:0,ok:0,ms:0,lv:{},ts:""};
+  d.n++; if(ok) d.ok++; if(ms) d.ms=Math.round((d.ms*(d.n-1)+ms)/d.n); if(level) d.lv[level]=(d.lv[level]||0)+1; d.ts=new Date().toISOString().slice(0,16).replace("T"," ");
+  o[type]=d; thPut(o);
+}
+function thClear(){ if(!confirm("유형별 축적 데이터를 비울까요?")) return; thPut({}); renderHarness(); }
+function typeRules(t){ var rs=(window.T&&T.learnedRules)?T.learnedRules():[]; var o=thAll(); var local=(o[t]&&o[t].rules)||[]; var srcHit=rs.filter(function(r){ return typeof r==="string" && false; }); return local.slice(); }  // 유형 전담 규칙(로컬 축적)
+function thImprove(t){
+  var pgs0=parsePassages(); var p=pgs0[0]||srcPassage();
+  if(p.length<40){ p=SAMPLE; }   // 지문 없으면 샘플로 이 유형을 연습
+  if(GENERATING){ alert("다른 작업 중입니다 — 잠시 후."); return; }
+  var st=document.getElementById("thimp_"+pid(t)); if(st){ st.textContent="🧠 "+t+" 전담팀이 출제→자가비평→개선 규칙 도출 중…"; }
+  GENERATING=true;
+  T.selfLearnStep(p,t,{teachers:3,target:88}).then(function(r){
+    GENERATING=false;
+    if(!r){ if(st) st.textContent="개선 실패 — 다시 시도(무료 한도일 수 있어요)"; return; }
+    if(r.learned){ var o=thAll(); var d=o[t]||{n:0,ok:0,ms:0,lv:{},ts:"",rules:[]}; d.rules=(d.rules||[]); if(d.rules.indexOf(r.learned)<0) d.rules.unshift(r.learned); d.rules=d.rules.slice(0,8); o[t]=d; thPut(o);
+      // 전역 STANDING에도 반영(다음 출제부터)
+      if(T.applyLearned&&T.learnedRules){ var cur=T.learnedRules().slice(); cur.push(r.learned); T.applyLearned(cur); if(typeof saveLearned==="function") saveLearned(); } }
+    if(st) st.textContent=r.learned?("✅ 개선 규칙 도출·반영: "+r.learned.slice(0,60)+"…"):("기준 통과(점수 "+r.score+") — 이미 좋은 상태");
+    renderHarness();
+  }).catch(function(e){ GENERATING=false; if(st) st.textContent="오류: "+e.message; });
+}
+function renderHarness(){
+  var el=document.getElementById("harnessBody"); if(!el) return;
+  var TL=(window.T&&T.BEST_TYPES)||TYPES; var data=thAll();
+  var rules=(window.T&&T.learnedRules)?T.learnedRules():[];
+  var totalN=Object.keys(data).reduce(function(s,k){return s+(data[k].n||0);},0);
+  var h='<div class="note" style="margin-bottom:6px">활성 <b style="color:var(--rg-gold,#C8A96A)">'+TL.length+'유형</b> · 각 유형이 <b>자기 전담팀·자기 파이프라인·자기 학습규칙</b>을 가짐 · 누적 출제 <b>'+totalN+'</b>회 · 전역 학습규칙 '+rules.length+'개</div>';
+  h+=TL.map(function(t){
+    var d=data[t]; var n=d?d.n:0, ok=d?d.ok:0, ms=d?d.ms:0; var rate=n?Math.round(ok/n*100):0;
+    var lv=d&&d.lv?Object.keys(d.lv).map(function(k){return k+" "+d.lv[k];}).join("·"):"";
+    var trules=(d&&d.rules)||[];
+    var bar=n?('<span style="display:inline-block;width:38px;height:5px;background:#2b2f3e;border-radius:3px;vertical-align:middle;overflow:hidden"><span style="display:block;height:100%;width:'+rate+'%;background:'+(rate>=70?"var(--rg-mint,#54D0B4)":rate>=40?"#B45309":"#b03a2e")+'"></span></span>'):'';
+    var pipe=typePipeline(t).map(function(p,i){ return '<span style="display:inline-flex;align-items:center;gap:3px;font-size:8pt;background:rgba(255,255,255,.03);border:1px solid var(--rg-line2,#363B4D);border-radius:6px;padding:2px 7px;margin:2px 3px 2px 0"><b style="color:var(--rg-gold,#C8A96A)">'+(i+1)+'</b> '+esc(p.step)+' <span style="color:var(--rg-mint,#54D0B4);font-size:7pt">'+esc(p.api)+'</span></span>'; }).join(" ");
+    var rulesH=trules.length?('<div style="margin-top:5px"><span class="note" style="font-weight:700;color:var(--rg-mint,#54D0B4)">이 유형 전담 규칙 '+trules.length+'개</span>'+trules.map(function(r){return '<div style="font-size:8.3pt;border-left:2px solid var(--rg-mintd,#2FA88C);padding:1px 0 1px 7px;margin:2px 0">'+esc(r)+'</div>';}).join("")+'</div>'):'';
+    return '<details style="border-top:1px solid var(--rg-line,#2b2f3e);padding:4px 0"><summary style="cursor:pointer;display:flex;align-items:center;gap:8px;font-size:9pt;list-style:none"><b style="min-width:130px">'+esc(t)+'</b>'+(n?('<span class="note">'+n+'회 · 성공 '+rate+'% '+bar+(ms?(' · 평균 '+(ms/1000).toFixed(0)+'초'):'')+(trules.length?(' · <span style="color:var(--rg-mint,#54D0B4)">규칙 '+trules.length+'</span>'):'')+'</span>'):'<span class="note" style="color:#6e7285">아직 데이터 없음</span>')+'</summary>'+
+      '<div style="margin:5px 0 3px;padding-left:4px"><span class="note" style="font-weight:700">파이프라인</span> <button class="ghost" style="font-size:7.8pt;padding:1px 8px" onclick="thImprove(\''+esc(t).replace(/\x27/g,"&#39;")+'\')">🧠 이 유형 전담팀이 개선</button><div id="thimp_'+pid(t)+'" class="note" style="margin:2px 0"></div><br>'+pipe+rulesH+'</div></details>';
+  }).join("");
+  el.innerHTML=h;
+}
 function renderCorpus(){
   var el=document.getElementById("corpusBody"); if(!el||!window.T||!T.corpusStat) return;
   var s=T.corpusStat();
@@ -2084,6 +2153,7 @@ function foldifyAll(root){
 modeInit(); obsInit(); obsShow("meshCard"); agentReset();
 try{ foldifyAll(); }catch(e){}   // 모든 상세창(카드) 제목 클릭으로 펼치기/접기(기본 펼침)
 try{ composeBadge(); }catch(e){}   // 시험지 편집기 담긴 문항 수 배지
+try{ renderHarness(); }catch(e){}   // 유형별 하네스 초기 렌더
 /* Ctrl+Enter = 바로 출제 (지문/작업대 입력 중) */
 document.addEventListener("keydown",function(e){
   if((e.ctrlKey||e.metaKey)&&e.key==="Enter"&&!GENERATING){
