@@ -1,6 +1,54 @@
 {
- "updated": "2026-07-04T04:15:19.872Z",
+ "updated": "2026-07-04T07:28:05.383Z",
  "samples": [
+  {
+   "ts": "2026-07-04T07:22:31.627Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "어법 의심 6건 · 솔버 3/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "모든 구에서 동사가 머리 역할을 하지 않으며, 문법적·의미적 특성은 주어가 결정된다.",
+     "‘help you’에서 ‘you’가 머리 역할을 하여 문법적·의미적 특성을 결정한다.",
+     "‘help you’에서 ‘help’가 문법적 특성을 일부만 결정하고 ‘you’가 의미를 결정한다.",
+     "‘help you’는 문장 구조와 관련이 없으며 문법적·의미적 특성을 결정하지 않는다.",
+     "‘help you’와 같은 구에서 동사 ‘help’가 머리 역할을 하여 문법적·의미적 특성을 결정한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'In a phrase such as “help you,” the verb “help” functions as the head, determining the phrase’s grammatical and semantic properties.'이며 정답 (‘help you’와 같은 구에서 동사 ‘help’가 머리 역할을 하여 문법적·의미적 특성을 결정한다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: In a phrase such as “help you,” the verb “help” functions as the head, determining the phrase’s grammatical and semantic properties.]"
+   }
+  },
+  {
+   "ts": "2026-07-04T07:27:53.902Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 3/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "So, it seems clear that the grammatical properties of a phrase like <u>help you</u> are determined by the verb help, and not by the pronoun you. Much the same can be said about the semantic properties of the expression, since the phrase help you describes an act of help, not a kind of person. Using the appropriate technical terminology, we can say that the verb help is the head of the phrase help you, and hence that help you is a verb phrase: and in the same way as we abbreviate category labels like verb to V, so too we can abbreviate the category label verb phrase to VP. If we use the traditional labelled bracketing technique to represent the category of the overall verb phrase help you and of its constituent words (the verb help and the pronoun you), we can represent the structure of the resulting phrase as in (4) below:",
+    "choices": [
+     "It signifies a gesture of help offered to the person being addressed.",
+     "It implies an invitation for the individual to join a social gathering.",
+     "It conveys a discouragement of the person from seeking assistance again today.",
+     "It refers to the director's selection of camera angles for the production.",
+     "It expresses a readiness to support anyone in need at all times."
+    ],
+    "answer": 1,
+    "explanation": "밑줄 친 부분은 'It denotes an act of offering aid to the addressed individual.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-04T04:09:56.773Z",
    "type": "어법(밑줄)",
@@ -221,54 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] proposition — 문단의 논지상 이 자리에는 'proposition'가 유일하게 자연스럽다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-03T04:21:41.853Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as DIRECT OBJECT. The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them. By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper. (Sharpen, cut and wrap are transitive verbs.) Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP. ‘INtransitive’ means ‘has (and needs) no complement’. Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs. Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right. Intransitive VPs are the simplest VPs. So a sentence like Omar sighed is represented as in [17]. Note the [intrans] feature on the V node.",
-    "choices": [
-     "the object that is acted upon by the verb and is figuratively conquered",
-     "the participant that performs the action and emerges victorious over the verb",
-     "the central idea that drives the entire narrative",
-     "any entity involved in the action regardless of its role",
-     "the subject that initiates the action and is never defeated"
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'the element that receives the action of the verb and is metaphorically defeated'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-02T23:36:40.234Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "ⓐ<u>On the first cycles</u>, in implementing the Authentic Materials, the ⓑ<u>students were taken into</u> an enjoyable teaching and learning process of ⓒ<u>reading. The materials successfully kept</u> the students’ willingness, ⓓ<u>yet not quite successful in their aware</u>. They ⓔ<u>did every their work</u> but not in time. It showed that they still lacked of awareness. Therefore, it was decided to solve the awareness problem in the next cycle. From the first cycle, the English teacher, as a collaborator, argued that in solving the remaining problem, the exercises should be enhanced by varying them in many ways. Furthermore, she also argued that the researcher himself should specify his explanation to the students and maintain his composure. Therefore, in the second cycle, the exercises were varied into many ways and every instruction was explained instead of waiting the students to ask. The students were also motivated by giving tip in effective reading. Those gave good result considering",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 2,
-    "explanation": "틀린 곳은 ⓐ(On the first cycles → On the first cycle), ⓓ(yet not quite successful in their aware → yet not quite successful in their awareness) — 총 2개.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
