@@ -74,6 +74,94 @@ mark.xfm{background:#fff2b8;border-radius:3px;padding:0 1px;box-shadow:inset 0 -
 #paper.cols2 #qlist{column-count:2;column-gap:9mm;column-rule:1px solid #e3e3e3}
 #paper.cols2 .q{break-inside:avoid;-webkit-column-break-inside:avoid}
 #paper.exampaper.hidebtn .q .h button,#paper.exampaper.hidebtn .ins~span,#paper.exampaper.hidebtn [id^=rvs_],#paper.exampaper.hidebtn [id^=rvb_],#paper.exampaper.hidebtn [id^=exp_]{display:none!important}
+
+/* ============================================================
+   Ray English — 프리미엄 다크 테마 (다크 셸 · 브라스 골드 · 민트 / 문서=흰색)
+   ============================================================ */
+:root{--rg-ink:#12141C;--rg-ink2:#171A24;--rg-panel:#1A1D28;--rg-line:#2B2F3E;--rg-line2:#363B4D;
+  --rg-tx:#ECEAF2;--rg-mut:#9A9DB0;--rg-dim:#6E7285;--rg-gold:#C8A96A;--rg-gold2:#EAD199;--rg-mint:#54D0B4;--rg-mintd:#2FA88C;--rg-rose:#E0728A}
+body{background:
+  radial-gradient(1100px 560px at 80% -10%, rgba(200,169,106,.09), transparent 60%),
+  radial-gradient(820px 460px at 6% 110%, rgba(84,208,180,.06), transparent 55%),
+  var(--rg-ink)!important;color:var(--rg-tx)}
+.wrap{max-width:1320px}
+/* 배너 → 브랜드 헤더 */
+.banner{background:linear-gradient(160deg,#1c2030,#12141c 60%)!important;border:1px solid var(--rg-line);box-shadow:0 12px 34px rgba(0,0,0,.4)!important}
+.banner:after{opacity:.05!important}
+.brandmark{display:flex;align-items:center;gap:13px}
+.brandmark .seal{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex:0 0 auto;font-family:Georgia,serif;font-size:22px;font-weight:700;color:var(--rg-gold);background:linear-gradient(145deg,#2a2d3a,#15171f);border:1px solid var(--rg-line2);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 16px rgba(0,0,0,.4)}
+.brandmark .wm{display:flex;flex-direction:column;line-height:1.15}
+.brandmark .wm1{font-size:21px;font-weight:800;letter-spacing:.04em;color:#fff}
+.brandmark .wm1 b{color:var(--rg-gold);font-weight:800}
+.brandmark .wm2{font-size:10.5px;color:var(--rg-mut);letter-spacing:.16em;text-transform:uppercase;margin-top:2px}
+.banner .sub{color:#cfd2e0!important}
+.banner .pill{background:rgba(255,255,255,.05);border:1px solid var(--rg-line2);color:#cdd0dd}
+.uimode{background:rgba(255,255,255,.06);border:1px solid var(--rg-line2);color:var(--rg-gold)}
+/* 카드 → 다크 패널 */
+.card{background:linear-gradient(180deg,var(--rg-panel),var(--rg-ink2))!important;border:1px solid var(--rg-line)!important;color:var(--rg-tx);box-shadow:0 1px 0 rgba(255,255,255,.03) inset,0 10px 28px rgba(0,0,0,.26)!important}
+.card:hover{box-shadow:0 1px 0 rgba(255,255,255,.04) inset,0 14px 34px rgba(0,0,0,.34)!important}
+.card h2,.card h3,.q .h{color:#f2f0f8}
+/* 입력 필드 */
+textarea,input[type=text],input[type=password],input[type=number],input:not([type]),select,#agentInput,.tf{background:#0E1017!important;border:1px solid var(--rg-line2)!important;color:var(--rg-tx)!important}
+textarea::placeholder,input::placeholder{color:#565A6C!important}
+textarea:focus,input:focus,select:focus{outline:2px solid rgba(200,169,106,.35)!important;border-color:var(--rg-gold)!important}
+/* 버튼 */
+.ghost{background:#1D2130!important;border:1px solid var(--rg-line2)!important;color:#C6C9D6!important}
+.ghost:hover{background:#242939!important;border-color:var(--rg-gold)!important;color:#fff!important}
+.go{background:linear-gradient(180deg,var(--rg-gold2),var(--rg-gold))!important;color:#1a1508!important;border:0!important;box-shadow:0 8px 22px rgba(200,169,106,.3),inset 0 1px 0 rgba(255,255,255,.4)!important}
+.go:hover{filter:brightness(1.05)}
+.go:disabled{background:#3a3a44!important;color:#8a8a95!important;box-shadow:none!important}
+/* 모드 탭 세그먼트 */
+.modes{background:var(--rg-ink2);border:1px solid var(--rg-line);border-radius:13px;padding:4px;gap:2px}
+.mtab{background:transparent!important;border:0!important;color:var(--rg-mut)!important;font-weight:600}
+.mtab:hover{color:#fff!important;background:rgba(255,255,255,.04)!important}
+.mtab.on{background:linear-gradient(180deg,var(--rg-gold2),var(--rg-gold))!important;color:#1a1508!important;border:0!important;font-weight:800;box-shadow:0 4px 14px rgba(200,169,106,.28)!important}
+/* 유형 칩 */
+.types label{background:rgba(255,255,255,.015)!important;border:1px solid var(--rg-line2)!important;color:var(--rg-mut)!important}
+.types label:hover{border-color:var(--rg-gold)!important;color:#fff!important}
+.types label.on{background:rgba(84,208,180,.12)!important;border-color:var(--rg-mintd)!important;color:var(--rg-mint)!important}
+/* 스텝바·필 */
+.stepbar .step{background:var(--rg-ink2)!important;border-left:3px solid var(--rg-line2)!important;color:var(--rg-mut)}
+.stepbar .step.on{border-left-color:var(--rg-gold)!important;background:rgba(200,169,106,.08)!important}
+.stepbar .step b{color:#e8e6f2}
+.pill{background:rgba(255,255,255,.04);border:1px solid var(--rg-line2);color:#cdd0dd}
+/* 스크롤바 */
+::-webkit-scrollbar-thumb{background:#333749}::-webkit-scrollbar-thumb:hover{background:#414659}
+/* 어두운 인라인 텍스트 → 밝게 재매핑 (단, #paper 문서와 .pg 지문블록·iframe은 제외) */
+[style*="color:#111"]:not(#paper):not(#paper *):not(.pg):not(.pg *),[style*="color:#123"]:not(#paper):not(#paper *),[style*="color:#333"]:not(#paper):not(#paper *):not(.pg *),[style*="color:#334"]:not(#paper):not(#paper *),[style*="color:#345"]:not(#paper):not(#paper *):not(.pg *),[style*="color:#374151"]:not(#paper):not(#paper *){color:#d3d6e2!important}
+[style*="color:#444"]:not(#paper):not(#paper *),[style*="color:#445"]:not(#paper):not(#paper *),[style*="color:#455"]:not(#paper):not(#paper *),[style*="color:#555"]:not(#paper):not(#paper *),[style*="color:#556"]:not(#paper):not(#paper *),[style*="color:#566"]:not(#paper):not(#paper *),[style*="color:#334455"]:not(#paper):not(#paper *){color:#c2c6d3!important}
+[style*="color:#666"]:not(#paper):not(#paper *),[style*="color:#667"]:not(#paper):not(#paper *),[style*="color:#789"]:not(#paper):not(#paper *),[style*="color:#888"]:not(#paper):not(#paper *),[style*="color:#889"]:not(#paper):not(#paper *),[style*="color:#999"]:not(#paper):not(#paper *),[style*="color:#9ab"]:not(#paper):not(#paper *),[style*="color:#aaa"]:not(#paper):not(#paper *),[style*="color:#8a86a8"]:not(#paper):not(#paper *){color:#9296a8!important}
+/* 강조색 재매핑: 티ール→민트, 퍼플→라벤더 (문서 제외) */
+[style*="color:#0f766e"]:not(#paper):not(#paper *),.note[style*="color:#0f766e"]{color:var(--rg-mint)!important}
+[style*="color:#4a3fa5"]:not(#paper):not(#paper *),[style*="color:#5a4fb0"]:not(#paper):not(#paper *),[style*="color:#4f46e5"]:not(#paper):not(#paper *),[style*="color:#6d45b8"]:not(#paper):not(#paper *){color:#b0a4f2!important}
+.note{color:var(--rg-mut)!important}
+/* 문서(흰 종이)·지문 블록은 어두운 글씨 유지 */
+#paper.exampaper{color:#16181d!important}
+.pg,.q .pg,.xfpg,.cpg{color:#1a1c22!important;background:#fbfbf9!important;border-color:#c9c9c4!important}
+.pg u{text-decoration-color:var(--rg-gold)!important}
+.ans{background:#eef0fb!important;color:#2a2740!important}
+.q{border-left-color:var(--rg-line2)}
+.q .chip{background:var(--rg-gold)!important;color:#1a1508!important}
+.log{background:#0b0d13!important}
+/* 밝은 인라인 배경 박스 → 은은한 다크 패널 (문서·지문블록 제외) */
+[style*="background:#f"]:not(#paper):not(#paper *):not(.pg):not(.xfpg):not(.cpg),
+[style*="background:#e"]:not(#paper):not(#paper *):not(.pg):not(.xfpg):not(.cpg){background:rgba(255,255,255,.035)!important;border-color:var(--rg-line2)!important}
+[style*="background:#fff2b8"],[style*="background:#fff7ed"]{background:rgba(200,169,106,.14)!important}
+/* 클래스 기반 밝은 요소 */
+.insight{background:rgba(84,208,180,.08)!important;border-left-color:var(--rg-mint)!important;color:#cfe8e0!important}
+.insight b{color:var(--rg-mint)!important}
+.mt .hint{background:rgba(200,169,106,.1)!important;color:var(--rg-gold)!important}
+.abub.bot{background:#20232f!important;border:1px solid var(--rg-line2)!important;color:#e6e4f0!important}
+.abub.user{background:linear-gradient(180deg,var(--rg-gold2),var(--rg-gold))!important;color:#1a1508!important}
+.abub.err{background:rgba(224,114,138,.12)!important;border:1px solid rgba(224,114,138,.3)!important;color:#f0b9c4!important}
+.abub .tip{color:var(--rg-mint)!important}
+.wchip{background:rgba(180,150,240,.12)!important;border-color:rgba(180,150,240,.3)!important;color:#c8bdf5!important}
+#workLog div{color:#b9bccf!important}
+.foldarrow{color:var(--rg-gold)}
+.foldh:hover{color:var(--rg-gold)!important}
+details.fold>summary::before{color:var(--rg-gold)}
+/* 인쇄 시 다크 배경 제거(문서만) */
+@media print{body{background:#fff!important}.card{background:#fff!important;color:#111!important;box-shadow:none!important;border:none!important}.mtab,.modes,.banner{background:#fff!important}}
 .stepbar{display:flex;gap:8px;margin:10px 0 4px;flex-wrap:wrap}
 .step{flex:1;min-width:120px;background:var(--soft);border-radius:10px;padding:8px 11px;font-size:9pt;color:var(--mut);border-left:3px solid var(--line)}
 .step b{color:var(--ink);font-size:10pt}
@@ -151,11 +239,11 @@ body.simple .expert{display:none!important}
 <body>
 <div class="wrap">
   <div class="banner">
-    <h1>🧠 출제자 뇌 — AI 변형문제 제작기</h1>
+    <div class="brandmark"><span class="seal">R</span><span class="wm"><span class="wm1">Ray <b>English</b></span><span class="wm2">Exam Studio · 출제 스튜디오</span></span></div>
     <div class="sub">지문을 붙여넣고 유형만 고르면, 검수까지 마친 시험지 품질의 변형문제가 나옵니다.</div>
     <button class="uimode noprint" id="uimodeBtn" onclick="toggleUIMode()">⚙ 전문가 모드</button>
     <div class="pills">
-      <span class="pill" id="pillEvo">🧬 진화 Lv.1</span><span class="pill">18유형 자동출제</span><span class="pill">해설·단어장·변형</span><span class="pill">교사 회의·자가학습</span><span class="pill">3D 뇌 시각화</span><span class="pill" id="pillGroq">Groq 키 넣으면 초고속</span>
+      <span class="pill" id="pillEvo">🧬 진화 Lv.1</span><span class="pill">40유형 코드검증</span><span class="pill">분석지·세트조립</span><span class="pill">무한 모드 ♾</span><span class="pill" id="pillGroq">뇌 가동 · 자가학습</span>
     </div>
   </div>
   <div class="stepbar">
@@ -532,7 +620,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704h"></script>
+<script src="api_team.js?v=20260704i"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
