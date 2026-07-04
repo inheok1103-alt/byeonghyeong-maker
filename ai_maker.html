@@ -316,8 +316,9 @@ body.simple .expert{display:none!important}
       <span style="font-size:9pt;font-weight:700;color:#5a4fb0">🧩 여러 지문:</span>
       <button class="ghost" onclick="workShuffle()" title="작업대 지문들의 순서를 무작위로 섞기">🔀 순서 섞기</button>
       <button class="ghost" onclick="workMerge()" title="작업대의 모든 지문을 하나로 이어붙여 조합(한 지문으로 출제·변형)">🔗 이어붙여 조합</button>
-      <span class="note">뱅크·원문에서 지문을 여러 개 담아 섞거나 하나로 합쳐 출제할 수 있어요</span>
+      <button class="ghost" onclick="togglePgTypes()" id="pgTypeBtn" title="지문마다 각각 다른 출제 유형을 배정합니다(지문 2개 이상)">🎯 지문별 유형 배정</button>
     </div>
+    <div id="pgTypePanel" style="display:none;margin-top:6px;border:1px solid var(--line2,#363B4D);border-radius:10px;padding:8px 10px"></div>
     <div class="row" style="margin-top:3px"><span class="note" id="workNote">비어 있음 — ①에서 지문 입력 후 [⬇ 작업대에 추가]</span><span class="note" id="workCnt"></span></div>
     <div id="workChips" style="margin-top:4px"></div>
     <div id="wxfout" style="margin-top:6px"></div>
@@ -620,7 +621,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704i"></script>
+<script src="api_team.js?v=20260704j"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -883,7 +884,7 @@ function srcRaw(){ var w=workEl(); if(w&&w.value.trim().length>=40) return w.val
 function srcPassage(){ return srcRaw().trim(); }
 function workNoteSet(t){ var n=document.getElementById("workNote"); if(n) n.textContent=t; }
 function workParse(){ var w=workEl(); var v=w?w.value:""; if(!v.trim()) return []; return v.split(/\n\s*={3,}\s*\n|\n[ \t]*\n[ \t]*\n+/).map(function(s){return s.trim();}).filter(function(s){return s.length>=40;}); }
-function workCount(){ var el=document.getElementById("workCnt"); if(!el) return; var w=workEl(); var v=w?w.value:""; var words=(v.match(/[A-Za-z]+/g)||[]).length; var np=workParse().length; el.textContent=v.trim()?("· 지문 "+Math.max(np,1)+"개 · "+words+" 단어"):""; workChips(); }
+function workCount(){ var el=document.getElementById("workCnt"); if(!el) return; var w=workEl(); var v=w?w.value:""; var words=(v.match(/[A-Za-z]+/g)||[]).length; var np=workParse().length; el.textContent=v.trim()?("· 지문 "+Math.max(np,1)+"개 · "+words+" 단어"):""; workChips(); if(typeof renderPgTypes==="function") renderPgTypes(); }
 function workChips(){ var el=document.getElementById("workChips"); if(!el) return; var ps=workParse();
   el.innerHTML=ps.map(function(p,i){ var wc=(p.match(/[A-Za-z]+/g)||[]).length; return '<span class="wchip"><b>지문'+(i+1)+'</b> '+wc+'단어 · '+esc(p.slice(0,24).replace(/\s+/g," "))+'… <button class="wx" onclick="workRemove('+i+')" title="이 지문만 작업대에서 빼기">✕</button></span>'; }).join("");
 }
@@ -919,7 +920,32 @@ function workSet(text,label){ var w=workEl(); if(!w) return; w.value=text; workN
 function workEdited(){ workNoteSet("✍ 직접 수정됨 — 원문(①) 보존"); workCount(); saveState(); }
 function workClear(){ var w=workEl(); if(w&&w.value.trim()&&!confirm("작업대를 비울까요? 누적한 지문·늘리기·변형 결과가 사라지며 되돌릴 수 없습니다.")) return; if(w) w.value=""; workNoteSet("비어 있음 — ①에서 지문 입력 후 [⬇ 작업대에 추가]"); workLog("🗑 작업대 비움"); var xo=document.getElementById("wxfout"); if(xo) xo.innerHTML=""; workCount(); saveState(); }
 function workShuffle(){ var ps=workParse(); if(ps.length<2){ alert("섞을 지문이 2개 이상이어야 합니다(작업대에 여러 지문 추가)."); return; } for(var i=ps.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=ps[i]; ps[i]=ps[j]; ps[j]=t; } var w=workEl(); if(w) w.value=ps.join(WORKSEP); workCount(); saveState(); workNoteSet("🔀 지문 순서 섞음 — "+ps.length+"개"); workLog("🔀 지문 순서 섞기("+ps.length+"개)"); }
-function workMerge(){ var ps=workParse(); if(ps.length<2){ alert("이어붙일 지문이 2개 이상이어야 합니다."); return; } if(!confirm(ps.length+"개 지문을 하나로 이어붙여 조합할까요? (개별 지문 구분이 없어지고 한 지문이 됩니다)")) return; var merged=ps.join("\n\n"); var w=workEl(); if(w) w.value=merged; workCount(); saveState(); workNoteSet("🔗 "+ps.length+"개 지문을 하나로 조합 — 이 지문으로 출제·변형"); workLog("🔗 지문 조합(이어붙이기 "+ps.length+"개 → 1개)"); }
+function workMerge(){ var ps=workParse(); if(ps.length<2){ alert("이어붙일 지문이 2개 이상이어야 합니다."); return; } if(!confirm(ps.length+"개 지문을 하나로 이어붙여 조합할까요? (개별 지문 구분이 없어지고 한 지문이 됩니다)")) return; var merged=ps.join("\n\n"); var w=workEl(); if(w) w.value=merged; workCount(); saveState(); workNoteSet("🔗 "+ps.length+"개 지문을 하나로 조합 — 이 지문으로 출제·변형"); workLog("🔗 지문 조합(이어붙이기 "+ps.length+"개 → 1개)"); window.PGTYPES=null; renderPgTypes(); }
+/* ===== 🎯 지문별 유형 배정: 각 지문마다 다른 출제 유형 ===== */
+window.PGTYPES=null;
+function togglePgTypes(){
+  var ps=workParse();
+  if(ps.length<2){ alert("지문별 유형 배정은 작업대에 지문이 2개 이상일 때 씁니다. [⬇ 작업대에 추가]로 지문을 더 담으세요."); return; }
+  var el=document.getElementById("pgTypePanel"); var showing=el.style.display!=="none";
+  if(showing){ el.style.display="none"; return; }
+  if(!window.PGTYPES||window.PGTYPES.length!==ps.length){ var base=chosen(); if(!base.length) base=["빈칸(어구)","어법(밑줄)"]; window.PGTYPES=ps.map(function(){ return base.slice(); }); }
+  el.style.display=""; renderPgTypes();
+}
+function renderPgTypes(){
+  var el=document.getElementById("pgTypePanel"); if(!el) return; var ps=workParse();
+  if(el.style.display==="none") return;
+  if(ps.length<2||!window.PGTYPES){ el.style.display="none"; return; }
+  if(window.PGTYPES.length!==ps.length){ var base=chosen(); if(!base.length) base=["빈칸(어구)","어법(밑줄)"]; window.PGTYPES=ps.map(function(){ return base.slice(); }); }
+  var TL=(window.T&&T.BEST_TYPES)||TYPES;
+  var h='<div class="note" style="margin-bottom:5px">🎯 <b style="color:var(--rg-gold,#C8A96A)">지문별 유형 배정</b> — 지문마다 원하는 유형을 켜세요. 🚀 출제하면 지문별로 배정 유형이 나옵니다.</div>';
+  ps.forEach(function(p,i){
+    var sel=window.PGTYPES[i]||[]; var wc=(p.match(/[A-Za-z]+/g)||[]).length;
+    h+='<div style="border-top:1px dashed var(--line2,#363B4D);padding:6px 0"><div style="font-weight:700;font-size:9pt;margin-bottom:3px">지문 '+(i+1)+' <span class="note" style="font-weight:400">'+wc+'단어 · '+esc(p.slice(0,30).replace(/\s+/g," "))+'…</span> <span style="color:var(--rg-mint,#54D0B4)">('+sel.length+'유형)</span></div>';
+    h+='<div style="display:flex;flex-wrap:wrap;gap:4px">'+TL.map(function(t){ var on=sel.indexOf(t)>=0; return '<span onclick="pgTypeToggle('+i+',this.getAttribute(\'data-t\'))" data-t="'+escAttr(t)+'" style="cursor:pointer;font-size:8.4pt;padding:2px 8px;border-radius:999px;border:1px solid '+(on?"var(--rg-mintd,#2FA88C)":"var(--line2,#363B4D)")+';background:'+(on?"rgba(84,208,180,.14)":"transparent")+';color:'+(on?"var(--rg-mint,#54D0B4)":"var(--rg-mut,#9A9DB0)")+'">'+(on?"✓ ":"")+esc(t)+'</span>'; }).join("")+'</div></div>';
+  });
+  el.innerHTML=h;
+}
+function pgTypeToggle(i,t){ if(!window.PGTYPES||!window.PGTYPES[i]) return; var a=window.PGTYPES[i]; var k=a.indexOf(t); if(k>=0) a.splice(k,1); else a.push(t); renderPgTypes(); }
 /* ===== 📄 시험지 편집기: 문제 누적 담기 → 순서·배점·구획 편집 → 2단 실제 시험지 배치 → Word/PDF ===== */
 function composeAll(){ try{ return JSON.parse(localStorage.getItem("composeSheet")||"[]"); }catch(e){ return []; } }
 function composePut(a){ try{ localStorage.setItem("composeSheet",JSON.stringify(a.slice(0,300))); }catch(e){} composeBadge(); }
@@ -1215,10 +1241,11 @@ function runMulti(pgs, types){
       document.getElementById("bar").style.display="none"; return;
     }
     var pg=pgs[gi++];
+    var ptypes=(window.PGTYPES&&window.PGTYPES[gi-1]&&window.PGTYPES[gi-1].length)?window.PGTYPES[gi-1]:types;   // 지문별 배정 유형(없으면 공통)
     go.textContent="출제 중… (지문 "+gi+"/"+pgs.length+")";
-    logln("━━ 지문 "+gi+"/"+pgs.length+" ━━");
-    progInit(types);
-    T.generateExam(pg, types, {onProgress:logln, onType:progMark, fast:getFast(), level:getLevel()}).then(function(items){
+    logln("━━ 지문 "+gi+"/"+pgs.length+" · 유형 "+ptypes.length+"종"+((window.PGTYPES&&window.PGTYPES[gi-1]&&window.PGTYPES[gi-1].length)?"(지문별 배정)":"")+" ━━");
+    progInit(ptypes);
+    T.generateExam(pg, ptypes, {onProgress:logln, onType:progMark, fast:getFast(), level:getLevel()}).then(function(items){
       var subs=[], solo=[];
       (items||[]).forEach(function(q){
         if(q.subItems){ groups.push(q); }                                    // 세트는 그대로
@@ -1364,9 +1391,10 @@ function run(){
   window.EXAMHEAD=null;   // 일반 출제는 기본 제목(동형 머리표는 동형 모드에서만)
   var passage=srcPassage(), types=chosen();
   if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
-  if(!types.length){ alert("출제 유형을 1개 이상 선택하세요."); return; }
   var pgs=parsePassages();
-  if(pgs.length>1){ runMulti(pgs, types); return; }   // 다중 지문(무제한): 지문별 그룹 시험지
+  var hasPg=(pgs.length>1&&window.PGTYPES&&window.PGTYPES.length===pgs.length&&window.PGTYPES.some(function(a){return a&&a.length;}));
+  if(!types.length&&!hasPg){ alert("출제 유형을 1개 이상 선택하세요(또는 🎯 지문별 유형 배정)."); return; }
+  if(pgs.length>1){ runMulti(pgs, types); return; }   // 다중 지문(무제한): 지문별 그룹 시험지(지문별 배정 유형 우선)
   if(pgs.length===1) passage=pgs[0];   // 구분선·메모가 섞인 블롭 대신 깨끗한 단일 지문
   saveState();
   GENERATING=true;   // 회의·자가학습 루프가 큐를 양보하도록
