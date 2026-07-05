@@ -1,6 +1,48 @@
 {
- "updated": "2026-07-05T18:29:02.711Z",
+ "updated": "2026-07-05T20:42:59.985Z",
  "samples": [
+  {
+   "ts": "2026-07-05T20:42:46.728Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "‘putative’는 모든 상황에서 사실이라고 확정적으로 설명할 수 있다.",
+     "‘putative’라는 용어는 사실이지만 아직 입증되지 않은 것으로 여겨지는 것을 가리킨다.",
+     "‘putative’는 보통 사실이 아니라 가정에 근거한 허위 정보를 의미한다.",
+     "‘putative’는 과학적 연구와 전혀 관련이 없다.",
+     "‘putative’는 이미 증명된 사실을 가리키는 용어이다."
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'The term “putative” is used to describe something that is supposedly true but has not yet been proven.'이며 정답 (‘추정’라는 용어는 사실이지만 아직 입증되지 않은 것으로 여겨지는 것을 가리킨다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The term “putative” is used to describe something that is supposedly true but has not yet been proven.]"
+   }
+  },
+  {
+   "ts": "2026-07-05T20:42:55.542Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] PUTATIVE (PYOO tuh tiv) adj commonly accepted; supposed; reputed • The putative reason for placing the monument downtown is that nobody had wanted it uptown.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] PUTATIVE (PYOO tuh tiv) adj commonly accepted; supposed; reputed • 기념비를 시내에 놓은 이유는 아무도 그것을 원하지 않았기 때문입니다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-05T18:28:50.577Z",
    "type": "목적",
@@ -221,54 +263,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] marvel (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-05T08:30:42.671Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>Lesson</u> 3: The Past 41 7. When the fire ⓑ<u>breaked</u> out, the ⓒ<u>alarm</u> was ⓓ<u>sounding</u> so all of the ⓔ<u>children</u> exited the building. Fortunately, no one was being hurt. 8. Yesterday the boss didn’t knew what time he was going to arrive at the meeting. He came from Montreal and was stuck in traffic on the highway. 9. He is not alive anymore but my uncle Dan was coming from Texas and was having a thick American accent. 10. At the post office the clerk was weighing the package and calculating the postage. Then I was paying and was leaving. EXERCISE 3: TRANSLATION Translate each sentence using the correct form of the verb in parentheses. 1. Quand j’étais jeune j’avais une tante qui sentait le tabac. (be, have, smell like) \b 2. Pourquoi faisais-tu l’idiot hier? (be) \b 3. Il m’en a parlé ce matin. (talk about) \b 4. Il m’en parlait avant la réunion. (talk about) \b 5. Elle avait l’air mieux quand je l’ai vue. (look, see) \b",
-    "choices": [
-     "lesson: A section of learning or teaching into which a wider learning content is divided",
-     "breaked: An instance of breaking something into two or more pieces.",
-     "alarm: A summons to arms, as on the approach of an enemy.",
-     "sounding: To produce a sound.",
-     "children: To go out or go away from a place or situation; to depart, to leave."
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ의 풀이는 'exited'의 정의이다. 'children'의 올바른 풀이: A person who has not yet reached adulthood, whether natural (puberty), cultural \n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-05T04:45:56.424Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Fig. 1. The traditional English family tree. guages on that particular branch. For example, two of the characteristics that set the Germanic family off from all other Indo-European family branches are the abovementioned accent shift to initial syllables and the changes known as Grimm’s and Verner’s Laws. Objections have frequently been raised both to the tree method of representing relationships and to this particular Germanic tree. Some scholars have argued that more branches should be put in (for example, by grouping North and East Germanic together against West Germanic). Other scholars have argued for fewer branchings, or for different branchings. In this regard, the West Germanic branch is <u>especially embarrassing</u>, since in some cases the languages show similarities not to each other, as this branching would suggest, but to languages in entirely different groups. For example, certain similarities between Old High German and Gothic set them apart from all the The Germanic language family 11",
-    "choices": [
-     "The West Germanic branch is generally problematic across all Germanic languages.",
-     "The West Germanic branch is notably problematic.",
-     "The West Germanic branch is remarkably commendable.",
-     "The West Germanic branch is predominantly associated with western Europe.",
-     "The West Saxon branch is somewhat noteworthy."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'The West Germanic branch is notably problematic.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
