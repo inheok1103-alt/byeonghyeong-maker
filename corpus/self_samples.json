@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-05T16:31:05.190Z",
+ "updated": "2026-07-05T18:29:02.711Z",
  "samples": [
+  {
+   "ts": "2026-07-05T18:28:50.577Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 만장일치 2번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the prevention of the T node c‑complementing the polarity item",
+     "the prevention of the T node c‑commanding the polarity item in the clause",
+     "the prevention of the T node c‑commanding the polarity item across the entire discourse",
+     "the facilitation of the T node c‑commanding the polarity item",
+     "the prevention of the T node c‑commanding the polarity item"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'In this sentence, the T node with the negative auxiliary “mustn’t” does not c‑command the polarity item “anyone” because that item is contained in a descendant of the T node’s sister VP.'이며 정답 (극성 항목을 명령하는 T 노드 c의 방지)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: In this sentence, the T node with the negative auxiliary “mustn’t” does not c‑command the polarity item “anyone” because that item is contained in a descendant of the T node’s sister VP.]"
+   }
+  },
   {
    "ts": "2026-07-05T16:30:52.766Z",
    "type": "밑줄함의",
@@ -245,30 +269,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'The West Germanic branch is notably problematic.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-04T23:21:48.401Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 모두 코드처리) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "Ray English 지문 전문 · 원문 그대로 35번 무관한 문장 · I R R E L E V A N T 디지털 미니멀리즘 무관 ③ 무관: 주제는 ‘디지털 미니멀리즘→정신건강 개선’인데 ③은 ‘구매 결정 위해 SNS 의존’(주제 이탈). 소재 디지털 미니멀리즘과 정신건강 Digital minimalism and mental health 주제 디지털 사용을 줄이면 정신 건강이 좋아진다 Less digital use improves mental health 제목 디지털 미니멀리즘의 효과 Digital Minimalism Improves Mental Health 한눈에 디지털 미니멀리즘(디지털 사용을 의도적으로 줄이기)이 정신 건강을 개선한다는 글이다. 스탠퍼드 연구의 스트레스 감소, 알림 축소로 인한 의미 있는 교류, 번아웃 직장인의 회복 사례가 주제를 뒷받침한다. (‘구매 위해 SNS 의존’은 주제와 어긋난 무관 문장.) 지문 전문 — 시험지 원문 It is evident through various case studies that ⓐ<u>adopting digital minimalism</u> can lead to improved mental health outcomes. ① For instance, a study conducted by researchers at Stanford University found that participants who limited their use of social media and digital devices reported ⓑ<u>lower levels of stress</u>, anxiety, and depression. ② By reducing the constant stream of information and notifications, individuals were able to focus more on ⓒ<u>meaningful interaction and activities</u> that promoted well-being. ③ Additionally, participants reported relying on social media to get information for their ⓓ<u>purchasing decisions</u>. ④In another case, a corporate professional struggling with burnout and insomnia implemented digital minimalism techniques, such as setting boundaries for phone usage and practicing mindfulness. ⑤ As a result, he experienced ⓔ<u>improved sleep quality</u>, reduced stress levels, and a newfound sense of calm and clarity. * insomnia: 불면증 지문 전문 · 원문 그대로",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ의 'meaningful interaction and activities'는 'meaningful interactions and activities'로 고쳐야 어법상 옳다. (LanguageTool 확인: ‘)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
