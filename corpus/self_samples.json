@@ -1,6 +1,54 @@
 {
- "updated": "2026-07-05T20:42:59.985Z",
+ "updated": "2026-07-05T22:25:57.708Z",
  "samples": [
+  {
+   "ts": "2026-07-05T22:25:38.290Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "In the younger, western dialects we find no -ar or -er, but -a and -an or -en. Possibly because of the texts in which it is transmitted, Old Frisian shows no dual pronouns, though modern North Frisian dialects have them. As in Old English, in Old Frisian we find third person personal pronouns beginning with h- throughout: 5. Old Frisian does not distinguish the dative and accusative cases in the first and second person singular personal pronouns: 6. Old Frisian has no reflexive pronoun, but does show sîn as a possessive form for the masculine and neuter singular: alle sîne sîthar ‘all his colleagues’. Like all the Germanic languages except Gothic, Old Frisian shows an intensified demonstrative pronoun: OF masc. thi and this opposite Goth. tham and thissem opposite Goth. þaim Verbs 1. [                         ] Instead we find either a new vowel alternation, or reassignment to the weak class: OF Goth.",
+    "choices": [
+     "Old Frisian distinguishes a reduplicating class of verbs in grammar.",
+     "Old Frisian features a complex system of vowel harmony today.",
+     "Old Frisian possesses an extensive class of reduplicated verbs today.",
+     "Old Frisian shows a class of reduplicated verbs in system.",
+     "Old Frisian lacks a class of reduplicated verbs in grammar."
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 원문 'Old Frisian does not show a reduplicating class of verbs.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
+  {
+   "ts": "2026-07-05T22:25:41.596Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "In the younger, western dialects we find no -ar or -er, but -a and -an or -en.\n\n(A) Old Frisian has no reflexive pronoun, but does show sîn as a possessive form for the masculine and neuter singular: alle sîne sîthar ‘all his colleagues’. Like all the Germanic languages except Gothic, Old Frisian shows an intensified demonstrative pronoun: OF masc. thi and this opposite Goth.\n\n(B) Possibly because of the texts in which it is transmitted, Old Frisian shows no dual pronouns, though modern North Frisian dialects have them. As in Old English, in Old Frisian we find third person personal pronouns beginning with h- throughout: 5. Old Frisian does not distinguish the dative and accusative cases in the first and second person singular personal pronouns: 6.\n\n(C) tham and thissem opposite Goth. þaim Verbs 1. Old Frisian does not show a reduplicating class of verbs. Instead we find either a new vowel alternation, or reassignment to the weak class: OF Goth.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 2,
+    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-05T20:42:46.728Z",
    "type": "요지",
@@ -221,48 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] readers (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-05T11:20:52.401Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "1 thus ____ in (i) below, with the dotted arrow indicating movement of the verb marvel from V to T:",
-    "choices": [
-     "shows the simplified form only",
-     "introduces a new conceptual framework",
-     "rejects the complex syntactic structure",
-     "provides a comprehensive overview",
-     "exhibits the simplified syntactic structure"
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 'exhibits the simplified syntactic structure'가 들어가 글의 논지를 완성한다 (본문 'has the syntactic structure shown in simplified form'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-05T11:25:59.187Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: m)\n[영영풀이] That which causes wonder; a prodigy; a miracle.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] marvel (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
