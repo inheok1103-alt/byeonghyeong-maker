@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-05T04:47:14.227Z",
+ "updated": "2026-07-05T08:30:49.904Z",
  "samples": [
+  {
+   "ts": "2026-07-05T08:30:42.671Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "ⓐ<u>Lesson</u> 3: The Past 41 7. When the fire ⓑ<u>breaked</u> out, the ⓒ<u>alarm</u> was ⓓ<u>sounding</u> so all of the ⓔ<u>children</u> exited the building. Fortunately, no one was being hurt. 8. Yesterday the boss didn’t knew what time he was going to arrive at the meeting. He came from Montreal and was stuck in traffic on the highway. 9. He is not alive anymore but my uncle Dan was coming from Texas and was having a thick American accent. 10. At the post office the clerk was weighing the package and calculating the postage. Then I was paying and was leaving. EXERCISE 3: TRANSLATION Translate each sentence using the correct form of the verb in parentheses. 1. Quand j’étais jeune j’avais une tante qui sentait le tabac. (be, have, smell like) \b 2. Pourquoi faisais-tu l’idiot hier? (be) \b 3. Il m’en a parlé ce matin. (talk about) \b 4. Il m’en parlait avant la réunion. (talk about) \b 5. Elle avait l’air mieux quand je l’ai vue. (look, see) \b",
+    "choices": [
+     "lesson: A section of learning or teaching into which a wider learning content is divided",
+     "breaked: An instance of breaking something into two or more pieces.",
+     "alarm: A summons to arms, as on the approach of an enemy.",
+     "sounding: To produce a sound.",
+     "children: To go out or go away from a place or situation; to depart, to leave."
+    ],
+    "answer": 5,
+    "explanation": "정답 ⓔ의 풀이는 'exited'의 정의이다. 'children'의 올바른 풀이: A person who has not yet reached adulthood, whether natural (puberty), cultural \n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-05T04:45:56.424Z",
    "type": "밑줄함의",
@@ -263,30 +287,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'In a phrase such as “help you,” the verb “help” functions as the head, determining the phrase’s grammatical and semantic properties.'이며 정답 (‘help you’와 같은 구에서 동사 ‘help’가 머리 역할을 하여 문법적·의미적 특성을 결정한다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: In a phrase such as “help you,” the verb “help” functions as the head, determining the phrase’s grammatical and semantic properties.]"
-   }
-  },
-  {
-   "ts": "2026-07-04T07:27:53.902Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "So, it seems clear that the grammatical properties of a phrase like <u>help you</u> are determined by the verb help, and not by the pronoun you. Much the same can be said about the semantic properties of the expression, since the phrase help you describes an act of help, not a kind of person. Using the appropriate technical terminology, we can say that the verb help is the head of the phrase help you, and hence that help you is a verb phrase: and in the same way as we abbreviate category labels like verb to V, so too we can abbreviate the category label verb phrase to VP. If we use the traditional labelled bracketing technique to represent the category of the overall verb phrase help you and of its constituent words (the verb help and the pronoun you), we can represent the structure of the resulting phrase as in (4) below:",
-    "choices": [
-     "It signifies a gesture of help offered to the person being addressed.",
-     "It implies an invitation for the individual to join a social gathering.",
-     "It conveys a discouragement of the person from seeking assistance again today.",
-     "It refers to the director's selection of camera angles for the production.",
-     "It expresses a readiness to support anyone in need at all times."
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'It denotes an act of offering aid to the addressed individual.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
