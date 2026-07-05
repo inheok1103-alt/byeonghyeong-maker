@@ -658,7 +658,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704r"></script>
+<script src="api_team.js?v=20260704s"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script>
 var T = window.APITEAM;
@@ -716,7 +716,9 @@ function addMeeting(rec){
   h+='</div>'; document.getElementById("meet").insertAdjacentHTML("beforeend",h);
 }
 var LOGURL=new URLSearchParams(location.search).get("log")||"";
-T.configure({ logUrl:LOGURL, onMeeting:addMeeting, onError:function(e){ pulse("llm"); } });
+/* ▼▼ 키 없이 누구나 무한모드로 쓰게 하려면, 배포한 Cloudflare Worker 주소를 여기 넣으세요(키는 서버에 숨겨짐, 이 주소는 비밀 아님). 배포법: cf_proxy/README.md ▼▼ */
+var RAY_PROXY = "";   // 예: "https://ray-proxy.내계정.workers.dev"
+T.configure({ logUrl:LOGURL, proxyUrl:RAY_PROXY, onMeeting:addMeeting, onError:function(e){ pulse("llm"); } });
 if(LOGURL){ var n=document.createElement("div"); n.className="note"; n.style.color="#0f766e"; n.textContent="✓ 구글 오류기록 연결됨 (회의·오류가 시트에 자동 기록)"; document.querySelector(".sub").after(n); }
 
 /* ===== 유형 칩 ===== */

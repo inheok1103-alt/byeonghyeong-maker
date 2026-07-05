@@ -52,7 +52,7 @@
   function keyStats() { var o = { ollama: !!CFG.ollamaModel }; KEYED.forEach(function (p) { o[p] = { total: POOL[p].length, live: liveKeys(p).length }; }); return o; }
   function configure(c) { c = c || {}; Object.assign(CFG, c); if (KEYED.some(function (p) { return c[p + "Key"] != null; })) rebuildPools(); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; if (c.onLearn) CB.onLearn = c.onLearn; }
   // Ollama(로컬) 최우선(설정 시) → 살아있는 키드 제공자 순서 → Pollinations(무키)
-  function provider() { if (CFG.ollamaModel) return "ollama"; for (var i = 0; i < KEYED.length; i++) { if (hasLive(KEYED[i])) return KEYED[i]; } return "pollinations"; }
+  function provider() { if (CFG.ollamaModel) return "ollama"; for (var i = 0; i < KEYED.length; i++) { if (hasLive(KEYED[i])) return KEYED[i]; } if (CFG.proxyUrl) return "proxy"; return "pollinations"; }
   var LAST_LIMITED = false;   // 직전 호출이 레이트리밋이었는지(진단·UI용)
   async function llmRaw(messages, opts) {
     opts = opts || {}; var prov = opts.forceProvider || provider(); var to = withTimeout(opts.timeout || 70000);
@@ -65,6 +65,13 @@
         var doo = await ro.json();
         if (doo.error) throw new Error("ollama: " + String((doo.error && doo.error.message) || doo.error).slice(0, 80));
         return (doo.choices && doo.choices[0] && doo.choices[0].message && doo.choices[0].message.content) || "";
+      }
+      if (prov === "proxy") {
+        // 키를 서버(Cloudflare Worker)에 숨긴 프록시. 브라우저엔 키가 없음 → 안전. 프록시가 서버측 폴백·키회전 수행.
+        var rp = await fetch(CFG.proxyUrl, { method: "POST", headers: { "Content-Type": "application/json" }, signal: to.signal, body: JSON.stringify({ messages: messages, temperature: opts.temperature, json: !!opts.json }) });
+        var dp = await rp.json();
+        if (dp && dp.error) { var xm = String(dp.error && dp.error.message || dp.error); if (/rate|quota|429|limit|exhaust/i.test(xm)) LAST_LIMITED = true; throw new Error("proxy: " + xm.slice(0, 80)); }
+        return dp.content || (dp.choices && dp.choices[0] && dp.choices[0].message && dp.choices[0].message.content) || "";
       }
       if (prov === "gemini") {
         var gk = curKey("gemini"); if (!gk) throw new Error("gemini: no live key");
@@ -118,7 +125,7 @@
     return p;
   }
   // 연결된 공급자 폴백 체인: Gemini(키) → Groq(키) → Pollinations(무료). 앞이 실패/레이트리밋이면 다음으로.
-  function providerChain() { var c = []; if (CFG.ollamaModel) c.push("ollama"); KEYED.forEach(function (p) { if (hasLive(p)) c.push(p); }); c.push("pollinations"); return c; }
+  function providerChain() { var c = []; if (CFG.ollamaModel) c.push("ollama"); KEYED.forEach(function (p) { if (hasLive(p)) c.push(p); }); if (CFG.proxyUrl) c.push("proxy"); c.push("pollinations"); return c; }
   async function tryChain(messages, opts, chain, i) {
     if (i >= chain.length) return "";
     var prov = chain[i], o = Object.assign({}, opts, { forceProvider: prov });

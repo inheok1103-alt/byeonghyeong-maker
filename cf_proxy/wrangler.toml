@@ -1,0 +1,19 @@
+# Cloudflare Worker 설정 — Wrangler CLI로 배포할 때 사용
+# 배포:  npx wrangler deploy      (키는 아래 secret로 따로 넣음, 여기 안 박음)
+name = "ray-proxy"
+main = "worker.js"
+compatibility_date = "2024-11-01"
+
+# 공개 변수(비밀 아님). 키는 여기 넣지 말 것 — 반드시 secret으로.
+[vars]
+ALLOWED_ORIGINS = "https://inheok1103-alt.github.io,http://localhost,http://127.0.0.1"
+# 모델 바꾸고 싶으면 주석 해제해서 지정(선택)
+# GEMINI_MODEL = "gemini-2.0-flash"
+# GROQ_MODEL = "llama-3.3-70b-versatile"
+
+# ── 키는 secret으로(코드/설정에 안 남음). 배포 후 아래처럼:
+#   npx wrangler secret put GEMINI_KEY      (여러 개면 콤마로: key1,key2,key3)
+#   npx wrangler secret put GROQ_KEY
+#   npx wrangler secret put CEREBRAS_KEY
+#   npx wrangler secret put MISTRAL_KEY
+#   npx wrangler secret put OPENROUTER_KEY

@@ -134,7 +134,7 @@ a{color:var(--gold)}
 
 <div class="toast" id="toast"></div>
 
-<script src="api_team.js?v=20260704r"></script>
+<script src="api_team.js?v=20260704s"></script>
 <script src="addon_key_guard.js?v=20260704p"></script>
 <script>
 var T=window.APITEAM, LASTITEMS=[], LASTPASSAGE="", GENERATING=false, ANSSHOWN=false;
@@ -220,7 +220,8 @@ function infStat(){var el=document.getElementById("infStat"),el2=document.getEle
   var s="엔진: "+nm+(bits.length?(" · "+bits.join(" · ")):" · 무료 무키");if(el)el.textContent=s;if(el2)el2.textContent=prov==="pollinations"?"⚠ 무키(느림)":"⚡ "+nm;}
 /* 부트스트랩 */
 (function(){
-  T.configure({});initKeys();
+  var RAY_PROXY = "";   // 키 없이 누구나 무한모드: 배포한 Cloudflare Worker 주소 넣기(cf_proxy/README.md). 이 주소는 비밀 아님.
+  T.configure({ proxyUrl:RAY_PROXY });initKeys();
   var db=new URLSearchParams(location.search).get("db")||"knowledge/types_v2.json";
   Promise.resolve()
     .then(function(){return T.loadTypeDB(db+"?_t="+Date.now()).catch(function(){});})
