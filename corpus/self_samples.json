@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-06T04:52:33.307Z",
+ "updated": "2026-07-06T09:23:04.562Z",
  "samples": [
+  {
+   "ts": "2026-07-06T09:20:14.652Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 3/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "THE SKY IS BLUE AND BREEZY",
+     "THANKS TO ALL WHO HELPED",
+     "WE ARE GRATEFUL FOR HUMANITY",
+     "THANKFUL FOR EVERY ASSISTANT",
+     "NO THANKS TO ANYONE"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'The authors express gratitude to all who helped create the book.'이며 정답 (도움을 주신 모든 분들께 감사드립니다.)이 이를 반영한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The authors express gratitude to all who helped create the book.]"
+   }
+  },
   {
    "ts": "2026-07-05T22:25:38.290Z",
    "type": "빈칸(문장)",
@@ -251,24 +275,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'Readers can identify unfamiliar words using subsequent semantic context, so regressive eye movements are not limited to beginners.'이며 정답 (후속 의미 맥락을 사용하여 익숙하지 않은 단어를 식별하는 독자의 능력.)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: Readers can identify unfamiliar words using subsequent semantic context, so regressive eye movements are not limited to beginners.]"
-   }
-  },
-  {
-   "ts": "2026-07-05T12:54:33.249Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: r)\n[영영풀이] A person who reads",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] readers (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
