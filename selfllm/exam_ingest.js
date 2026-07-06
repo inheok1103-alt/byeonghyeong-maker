@@ -44,10 +44,13 @@ var TYPEMAP = [
   [/무관한\s*문장|흐름과\s*무관/, "무관 문장", "L07"],
   [/영작|조건에\s*맞게/, "서술형(조건 영작)", "L08"]
 ];
-function topErrorsFor(logic) {   // DB 예시에서 같은 로직의 흔한 오답코드
-  var g = {}; DB.items.forEach(function (it) { if (it.logic_type === logic) (it.common_wrong_reasons || []).forEach(function (e) { g[e] = (g[e] || 0) + 1; }); });
+function topFieldFor(field, logic) {   // DB 예시에서 같은 로직의 상위 코드(field 일반화)
+  var g = {}; DB.items.forEach(function (it) { if (it.logic_type === logic) (it[field] || []).forEach(function (e) { g[e] = (g[e] || 0) + 1; }); });
   return Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }).slice(0, 3);
 }
+function topErrorsFor(logic) { return topFieldFor("common_wrong_reasons", logic); }
+// PI(패러프레이즈 지수) 로직별 전형값: PI0 원문 · PI1 어휘치환 · PI2 구문전환 · PI3 의미재진술
+var PI_BY_LOGIC = { L01: "PI0", L05: "PI0", L06: "PI0", L08: "PI0", L09: "PI0", L07: "PI1", L11: "PI1", L03: "PI2", L04: "PI2", L02: "PI3", L10: "PI3", L12: "PI3" };
 function drillsFor(logic) { var g = {}; DB.items.forEach(function (it) { if (it.logic_type === logic) (it.teaching_drill || []).forEach(function (d) { g[d] = (g[d] || 0) + 1; }); }); return Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }).slice(0, 2); }
 function quickClassify(itemText, meta, no) {
   var type = "미분류", logic = "";
@@ -57,7 +60,9 @@ function quickClassify(itemText, meta, no) {
     exam_id: meta.school + "_" + meta.year + "_" + meta.exam, school: meta.school, year: +meta.year || 0, exam_name: meta.exam, item_no: no,
     score: (itemText.match(/\[(\d(?:\.\d)?)\s*점\]/) || [])[1] ? +(itemText.match(/\[(\d(?:\.\d)?)\s*점\]/)[1]) : null,
     type_surface: type, logic_type: logic + (lr ? ": " + lr.name : ""), intent_core: lr ? lr.core : "",
-    trap_type: lr ? lr.test : "", common_wrong_reasons: topErrorsFor(logic), teaching_drill: drillsFor(logic),
+    paraphrase_index: PI_BY_LOGIC[logic] || "PI1",
+    trap_type: lr ? lr.test : "", semantic_trap_codes: topFieldFor("semantic_trap_codes", logic), syntactic_trap_codes: topFieldFor("syntactic_trap_codes", logic),
+    common_wrong_reasons: topErrorsFor(logic), teaching_drill: drillsFor(logic),
     _method: "quick(규칙기반)", _stub: itemText.slice(0, 90).replace(/\n/g, " ")
   };
 }
@@ -81,7 +86,7 @@ function ingest(text, meta) {
 /* ---------- ④ 리포트 ---------- */
 function stats(items) {
   function dist(field) { var g = {}; items.forEach(function (x) { var v = Array.isArray(x[field]) ? x[field] : [x[field]]; v.forEach(function (k) { if (k) g[k] = (g[k] || 0) + 1; }); }); return Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }).map(function (k) { return k + " " + g[k]; }); }
-  return { 유형분포: dist("type_surface"), 로직분포: dist("logic_type"), 흔한오답: dist("common_wrong_reasons") };
+  return { 유형분포: dist("type_surface"), 로직분포: dist("logic_type"), 변형지수: dist("paraphrase_index"), 함정분포: dist("semantic_trap_codes").concat(dist("syntactic_trap_codes")), 흔한오답: dist("common_wrong_reasons") };
 }
 
 (async () => {
@@ -97,7 +102,7 @@ function stats(items) {
     if (!sc) return console.log("'" + school + "' 누적 없음. 먼저 --add 로 시험지를 넣으세요.");
     console.log("=== " + school + " (" + sc.items.length + "문항) ===");
     var s = stats(sc.items);
-    console.log("유형분포: " + s.유형분포.join(" · ") + "\n로직분포: " + s.로직분포.join(" · ") + "\n흔한오답: " + s.흔한오답.join(" · "));
+    console.log("유형분포: " + s.유형분포.join(" · ") + "\n로직분포: " + s.로직분포.join(" · ") + "\n변형지수(PI): " + s.변형지수.join(" · ") + "\n함정(SM/SY): " + s.함정분포.join(" · ") + "\n흔한오답: " + s.흔한오답.join(" · "));
     console.log("\n문항:"); sc.items.forEach(function (x) { console.log("  " + x.item_no + ". [" + x.type_surface + "/" + x.logic_type + "] " + (x._stub || "")); });
     return;
   }

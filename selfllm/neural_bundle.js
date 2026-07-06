@@ -64,12 +64,13 @@ function liveProviders() {
 /* ------- 분야 특화 프롬프트(파이프라인 1단계: 제안) ------- */
 function proposePrompt(passage, field, cfg) {
   var ch = cfg.choices || 5;
+  // ExamLogic 체계: pi=정답 선지의 패러프레이즈 지수(PI0 원문~PI3 의미재진술), distractors=오답별 함정코드(의미 SM01~13/구문 SY01~07)+why_wrong
   var spec = /요약|해석|서술|영작/.test(field)
-    ? '{"instruction":"발문(한국어)","passage":"조작된 지문(필요시)","choices":["①..","..."],"answer":정답번호(1~' + ch + '),"explanation":"정답근거+오답이유(한국어, 3문장↑)"}'
-    : '{"instruction":"발문(한국어)","passage":"필요시 표시된 지문(밑줄·빈칸 등)","choices":["선지1",".."],"answer":정답번호(1~' + ch + '),"explanation":"정답근거+각 오답이 틀린 이유(한국어, 3문장↑)"}';
-  var sys = "너는 임용을 통과한 한국 고등학교 영어 내신 변형문제 출제 전문가다. 반드시 정확한 정답과 매력적 오답을 만든다. JSON만 출력.";
+    ? '{"instruction":"발문(한국어)","passage":"조작된 지문(필요시)","choices":["①..","..."],"answer":정답번호(1~' + ch + '),"pi":"PI0|PI1|PI2|PI3","distractors":[{"n":오답번호,"trap":"SM01~SM13|SY01~SY07","why":"왜 틀렸는지 한 줄"}],"explanation":"정답근거+[변형지수]+[오답분석](한국어, 3문장↑)"}'
+    : '{"instruction":"발문(한국어)","passage":"필요시 표시된 지문(밑줄·빈칸 등)","choices":["선지1",".."],"answer":정답번호(1~' + ch + '),"pi":"PI0|PI1|PI2|PI3","distractors":[{"n":오답번호,"trap":"SM01~SM13|SY01~SY07","why":"왜 틀렸는지 한 줄"}],"explanation":"정답근거+[변형지수]+[오답분석](한국어, 3문장↑)"}';
+  var sys = "너는 임용을 통과한 한국 고등학교 영어 내신 변형문제 출제 전문가다. 반드시 정확한 정답과, 서로 다른 함정(의미 SM/구문 SY)을 하나씩 쓴 매력적 오답을 만든다. JSON만 출력.";
   var user = "[유형] " + field + "\n[분야 지침] " + (cfg.hint || "") + "\n[지문]\n" + passage +
-    "\n\n위 지문으로 '" + field + "' " + ch + "지선다 변형문항 1개를 만들어라. 선지 " + ch + "개, 정답 1개.\nJSON 형식(이것만 출력):\n" + spec;
+    "\n\n위 지문으로 '" + field + "' " + ch + "지선다 변형문항 1개를 만들어라. 선지 " + ch + "개, 정답 1개. 각 오답엔 서로 다른 함정코드와 why를 붙여라.\nJSON 형식(이것만 출력):\n" + spec;
   return [{ role: "system", content: sys }, { role: "user", content: user }];
 }
 function parseQ(raw) {
@@ -87,7 +88,7 @@ async function aggregate(passage, field, cands, providers) {
   var listed = cands.map(function (q, i) { return "후보" + (i + 1) + ": " + JSON.stringify(q); }).join("\n");
   var msgs = [
     { role: "system", content: "너는 내신 영어 출제 검수 심판이다. 여러 후보 문항 중 정답이 명백히 옳고 오답이 가장 매력적인 것을 골라, 필요하면 다듬어 최종 1개로 통합한다. JSON만 출력." },
-    { role: "user", content: "[유형] " + field + "\n[지문]\n" + passage + "\n\n[후보들]\n" + listed + "\n\n가장 정확·매력적인 최종 문항 1개를 JSON으로만 출력(instruction,passage?,choices,answer,explanation)." }
+    { role: "user", content: "[유형] " + field + "\n[지문]\n" + passage + "\n\n[후보들]\n" + listed + "\n\n가장 정확·매력적인 최종 문항 1개를 JSON으로만 출력(instruction,passage?,choices,answer,pi,distractors,explanation). pi(PI0~3)와 오답별 trap/why를 유지·보정하라." }
   ];
   try { var r = await T.llmRaw(msgs, { forceProvider: judge, json: true, temperature: 0.2, timeout: 60000 }); var q = parseQ(r); if (q) return q; } catch (e) {}
   return cands[0];   // 집계 실패 시 첫 후보

@@ -67,19 +67,21 @@ function sql(field, filterFn) {
 /* ---------- ④ Graph/Ontology: L↔E↔D↔type 관계 ---------- */
 function graph(node) {
   node = String(node).toUpperCase();
-  var nb = { logic: {}, errors: {}, drills: {}, types: {} };
+  var nb = { logic: {}, errors: {}, drills: {}, types: {}, traps: {} };
   DB.items.forEach(function (it) {
     var L = it.logic_type, Es = it.common_wrong_reasons || [], Ds = it.teaching_drill || [], ty = it.type_surface;
-    var hit = (L === node) || Es.indexOf(node) >= 0 || Ds.indexOf(node) >= 0 || (ty && ty.toUpperCase().indexOf(node) >= 0);
+    var Tr = (it.semantic_trap_codes || []).concat(it.syntactic_trap_codes || []);
+    var hit = (L === node) || Es.indexOf(node) >= 0 || Ds.indexOf(node) >= 0 || Tr.indexOf(node) >= 0 || (ty && ty.toUpperCase().indexOf(node) >= 0);
     if (!hit) return;
     if (L && L !== node) nb.logic[L] = (nb.logic[L] || 0) + 1;
     Es.forEach(function (e) { if (e !== node) nb.errors[e] = (nb.errors[e] || 0) + 1; });
     Ds.forEach(function (d) { if (d !== node) nb.drills[d] = (nb.drills[d] || 0) + 1; });
+    Tr.forEach(function (t) { if (t !== node) nb.traps[t] = (nb.traps[t] || 0) + 1; });
     if (ty) nb.types[ty] = (nb.types[ty] || 0) + 1;
   });
-  function name(code) { var r = (DB.logic_rules.find(function (x) { return x.code === code; }) || DB.error_codes.find(function (x) { return x.code === code; }) || DB.drills.find(function (x) { return x.code === code; })); return r ? (r.name || r.goal || "") : ""; }
+  function name(code) { var r = (DB.logic_rules.find(function (x) { return x.code === code; }) || DB.error_codes.find(function (x) { return x.code === code; }) || DB.drills.find(function (x) { return x.code === code; }) || (DB.semantic_traps || []).find(function (x) { return x.code === code; }) || (DB.syntactic_traps || []).find(function (x) { return x.code === code; })); return r ? (r.name || r.goal || "") : ""; }
   function top(o) { return Object.keys(o).sort(function (a, b) { return o[b] - o[a]; }).map(function (k) { return k + (name(k) ? "(" + name(k) + ")" : "") + "×" + o[k]; }); }
-  return { node: node, name: name(node), 연결_로직: top(nb.logic), 연결_오답: top(nb.errors), 연결_드릴: top(nb.drills), 연결_유형: top(nb.types) };
+  return { node: node, name: name(node), 연결_로직: top(nb.logic), 연결_오답: top(nb.errors), 연결_함정: top(nb.traps), 연결_드릴: top(nb.drills), 연결_유형: top(nb.types) };
 }
 
 /* ---------- ⑤ API: 실시간·최신 ---------- */
@@ -95,7 +97,7 @@ async function api(q) {
 /* ---------- 라우터: 질문 성격 → 백엔드 ---------- */
 function route(q) {
   if (/집계|비율|몇\s*[%개]|평균|분포|통계|count|avg|per/i.test(q)) return "sql";
-  if (/관계|연결|엮|반의|유의|온톨|graph|L\d\d|E\d\d|D\d\d/i.test(q)) return "graph";
+  if (/관계|연결|엮|반의|유의|온톨|graph|L\d\d|E\d\d|D\d\d|S[MY]\d\d|PI\d/i.test(q)) return "graph";
   if (/유사|비슷|semantic|의미/i.test(q)) return "vector";
   if (/최신|실시간|출처|검색|위키|뜻|정의/i.test(q)) return "api";
   if (/"|정확|원문|구문|phrase/i.test(q)) return "keyword";
@@ -115,7 +117,7 @@ function route(q) {
   if (!q) { console.log("사용: rag.js \"질문\"  |  --kw/--sql/--graph/--vector/--online --api  <값>"); console.log("데이터: 지문 " + PASSAGES.length + " · 항목 " + DB.items.length + " · 벡터 " + (VECS ? "있음" : "없음(embed_corpus.py)")); return; }
   var b = route(q); console.log("[라우터] → " + b + " 백엔드\n");
   var r = b === "sql" ? sql(/type|유형/.test(q) ? "type_surface" : (/school|학교/.test(q) ? "school" : (/logic|로직/.test(q) ? "logic_type" : (/오답|error/.test(q) ? "common_wrong_reasons" : null))))
-    : b === "graph" ? graph((q.match(/[LED]\d\d/i) || [q])[0])
+    : b === "graph" ? graph((q.match(/S[MY]\d\d|[LED]\d\d/i) || [q])[0])
       : b === "keyword" ? keyword(q, 6)
         : b === "api" ? await api(q)
           : await vector(q, 6);

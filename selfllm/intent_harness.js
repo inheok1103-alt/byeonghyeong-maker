@@ -38,7 +38,9 @@ function parseJSON(raw) { if (!raw) return null; var s = String(raw).replace(/``
 function logicBrief() { return DB.logic_rules.map(function (l) { return l.code + " " + l.name + "(" + l.core + ")"; }).join("; "); }
 function errorBrief() { return DB.error_codes.map(function (e) { return e.code + " " + e.name; }).join("; "); }
 var SCHEMA_KEYS = Object.keys(DB.schema);
-var SYS = "너는 한국 고1 영어 내신 출제·분석 전문가다. 출제의도 로직(L01~L12)과 오답코드(E01~E20)를 알고, 정확한 JSON만 출력한다.";
+function trapBrief() { return "의미함정 SM01~SM13(" + (DB.semantic_traps || []).map(function (t) { return t.code + " " + t.name; }).join("; ") + ") / 구문함정 SY01~SY07(" + (DB.syntactic_traps || []).map(function (t) { return t.code + " " + t.name; }).join("; ") + ")"; }
+function piBrief() { return (DB.pi_index || []).map(function (p) { return p.code + " " + p.name; }).join("·"); }
+var SYS = "너는 한국 고1 영어 내신 출제·분석 전문가다. 출제의도 로직(L01~L12)·오답코드(E01~E20)·의미함정(SM01~13)·구문함정(SY01~07)·변형지수(PI0~3)를 알고, 정확한 JSON만 출력한다.";
 
 /* ===================== 토론 엔진: 제안→비평→합의 ===================== */
 async function propose(provider, userPrompt) {
@@ -66,7 +68,8 @@ async function debate(userPromptFor, critiqueFor, synthFor) {
 async function classify(itemText) {
   var up = function () {
     return "[문항]\n" + itemText + "\n\n위 문항을 다음 스키마로 분류하라. logic_type은 " + logicBrief() +
-      " 중 하나(코드). common_wrong_reasons는 " + errorBrief() + " 중 해당 코드들.\nJSON 키: " + SCHEMA_KEYS.join(", ") + "\nJSON만 출력.";
+      " 중 하나(코드). common_wrong_reasons는 " + errorBrief() + " 중 해당 코드들. paraphrase_index는 " + piBrief() +
+      " 중 하나. 함정은 " + trapBrief() + " 에서 골라 semantic_trap_codes/syntactic_trap_codes로 분리. distractor_analysis는 각 오답 {n,trap,pi,why_wrong}.\nJSON 키: " + SCHEMA_KEYS.join(", ") + "\nJSON만 출력.";
   };
   var crit = function (r1) {
     return "[문항]\n" + itemText + "\n\n[다른 분석가들의 분류]\n" + r1.map(function (x, i) { return (i + 1) + ") " + JSON.stringify(x.v); }).join("\n") +
@@ -80,10 +83,10 @@ async function classify(itemText) {
 }
 
 /* ===================== (B) 문항 생성 ===================== */
-function genTemplate(type) { var g = DB.gen_prompts.find(function (p) { return type.indexOf(p.type) >= 0 || p.type.indexOf(type) >= 0; }); return g ? g.template : ("'" + type + "' 유형의 정확한 변형문항을 JSON{instruction,passage,choices,answer,explanation}으로 만들라."); }
+function genTemplate(type) { var g = DB.gen_prompts.find(function (p) { return type.indexOf(p.type) >= 0 || p.type.indexOf(type) >= 0; }); return g ? g.template : ("'" + type + "' 유형의 정확한 변형문항을 JSON{instruction,passage,choices,answer,pi,distractors:[{n,trap,why}],explanation}으로 만들라. 각 오답에 SM/SY 함정코드와 why를 붙이고 정답의 변형지수 pi(PI0~3)를 명시."); }
 async function generate(passage, type) {
   var tmpl = genTemplate(type);
-  var up = function () { return "[유형] " + type + "\n[지문]\n" + passage + "\n\n[생성 지침] " + tmpl + "\n정답 근거와 각 오답의 결함코드(E..)를 explanation에 넣어라. JSON만."; };
+  var up = function () { return "[유형] " + type + "\n[지문]\n" + passage + "\n\n[생성 지침] " + tmpl + "\n정답 근거, 변형지수 pi(PI0~3), 각 오답의 함정코드(SM/SY)+why_wrong을 JSON에 넣어라(distractors 배열). JSON만."; };
   var crit = function (r1) {
     return "[지문]\n" + passage + "\n\n[다른 출제자들의 '" + type + "' 문항 초안]\n" + r1.map(function (x, i) { return (i + 1) + ") " + JSON.stringify(x.v); }).join("\n") +
       "\n\n정답 정확성·오답 매력도·발문 명료성을 비평하고, 더 나은 문항을 같은 JSON으로 다시 출력하라.";
@@ -106,9 +109,11 @@ var _logs = []; function log(m) { _logs.push(m); process.stdout.write("  · " + 
   var a = process.argv;
   if (a.indexOf("--list") >= 0) {
     console.log("=== 출제의도 로직 DB ===");
-    console.log("로직 " + DB.logic_rules.length + " · 오답코드 " + DB.error_codes.length + " · 예시항목 " + DB.items.length + " · 루브릭 " + DB.essay_rubrics.length + " · 생성프롬프트 " + DB.gen_prompts.length + " · 드릴 " + DB.drills.length);
+    console.log("로직 " + DB.logic_rules.length + " · 오답코드 " + DB.error_codes.length + " · 의미함정 " + (DB.semantic_traps || []).length + " · 구문함정 " + (DB.syntactic_traps || []).length + " · PI " + (DB.pi_index || []).length + " · 예시항목 " + DB.items.length + " · 루브릭 " + DB.essay_rubrics.length + " · 생성프롬프트 " + DB.gen_prompts.length + " · 드릴 " + DB.drills.length);
     console.log("\n로직: " + DB.logic_rules.map(function (l) { return l.code; }).join(" "));
     console.log("오답: " + DB.error_codes.map(function (e) { return e.code; }).join(" "));
+    console.log("함정: " + (DB.semantic_traps || []).map(function (t) { return t.code; }).join(" ") + " | " + (DB.syntactic_traps || []).map(function (t) { return t.code; }).join(" "));
+    console.log("변형지수: " + (DB.pi_index || []).map(function (p) { return p.code + "(" + p.name + ")"; }).join(" "));
     console.log("살아있는 제공자(토론): " + (liveProviders().join(", ") || "없음(--online+키 필요)"));
     return;
   }

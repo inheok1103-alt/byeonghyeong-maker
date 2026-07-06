@@ -33,6 +33,8 @@
     return parts.map(function (s) { return s.trim(); }).filter(function (s) { var m = s.match(/[A-Za-z]/g); return s.length > 20 && m && m.length > 12; });
   }
   function coFrom(field, logic) { var g = {}; (DB.items || []).forEach(function (it) { if (it.logic_type === logic || (it.logic_type || "").indexOf(logic) === 0) (it[field] || []).forEach(function (e) { g[e] = (g[e] || 0) + 1; }); }); return Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }).slice(0, 3); }
+  // PI(패러프레이즈 지수) 기본값: 로직별 전형값 — PI0 원문 그대로 · PI1 어휘치환 · PI2 구문전환 · PI3 의미재진술
+  var PI_BY_LOGIC = { L01: "PI0", L05: "PI0", L06: "PI0", L08: "PI0", L09: "PI0", L07: "PI1", L11: "PI1", L03: "PI2", L04: "PI2", L02: "PI3", L10: "PI3", L12: "PI3" };
   function classify(itemText, meta, no) {
     var type = "미분류", logic = "";
     for (var i = 0; i < TYPEMAP.length; i++) { if (TYPEMAP[i][0].test(itemText)) { type = TYPEMAP[i][1]; logic = TYPEMAP[i][2]; break; } }
@@ -40,7 +42,9 @@
     var sc = (itemText.match(/\[(\d(?:\.\d)?)\s*점\]/) || [])[1];
     return { exam_id: meta.school + "_" + meta.year + "_" + meta.exam, school: meta.school, year: +meta.year || 0, exam_name: meta.exam, item_no: no,
       score: sc ? +sc : null, type_surface: type, logic_type: logic + (lr ? ": " + lr.name : ""), intent_core: lr ? lr.core : "",
-      trap_type: lr ? lr.test : "", common_wrong_reasons: coFrom("common_wrong_reasons", logic), teaching_drill: coFrom("teaching_drill", logic),
+      paraphrase_index: PI_BY_LOGIC[logic] || "PI1",
+      trap_type: lr ? lr.test : "", semantic_trap_codes: coFrom("semantic_trap_codes", logic), syntactic_trap_codes: coFrom("syntactic_trap_codes", logic),
+      common_wrong_reasons: coFrom("common_wrong_reasons", logic), teaching_drill: coFrom("teaching_drill", logic),
       stub: itemText.slice(0, 90).replace(/\n/g, " ") };
   }
   function loadStore() { try { return JSON.parse(localStorage.getItem(STORE_KEY)) || { schools: {} }; } catch (e) { return { schools: {} }; } }
@@ -54,7 +58,7 @@
   function examReport(school) {
     var store = loadStore();
     function dist(items, field) { var g = {}; items.forEach(function (x) { var v = Array.isArray(x[field]) ? x[field] : [x[field]]; v.forEach(function (k) { if (k) g[k] = (g[k] || 0) + 1; }); }); return Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }).map(function (k) { return k + " " + g[k]; }); }
-    if (school) { var sc = store.schools[school]; if (!sc) return null; return { school: school, n: sc.items.length, 유형분포: dist(sc.items, "type_surface"), 로직분포: dist(sc.items, "logic_type"), 흔한오답: dist(sc.items, "common_wrong_reasons"), items: sc.items }; }
+    if (school) { var sc = store.schools[school]; if (!sc) return null; return { school: school, n: sc.items.length, 유형분포: dist(sc.items, "type_surface"), 로직분포: dist(sc.items, "logic_type"), 변형지수: dist(sc.items, "paraphrase_index"), 함정분포: dist(sc.items, "semantic_trap_codes").concat(dist(sc.items, "syntactic_trap_codes")), 흔한오답: dist(sc.items, "common_wrong_reasons"), items: sc.items }; }
     return Object.keys(store.schools).map(function (k) { return { school: k, n: store.schools[k].items.length, 유형: dist(store.schools[k].items, "type_surface").slice(0, 4) }; });
   }
 
@@ -70,16 +74,18 @@
     return Object.keys(g).map(function (k) { return { key: k, count: g[k], pct: +(g[k] / items.length * 100).toFixed(1) }; }).sort(function (a, b) { return b.count - a.count; });
   }
   async function ragGraph(node) {
-    await loadDB(); node = String(node).toUpperCase(); var nb = { logic: {}, errors: {}, drills: {}, types: {} };
+    await loadDB(); node = String(node).toUpperCase(); var nb = { logic: {}, errors: {}, drills: {}, types: {}, traps: {} };
     (DB.items || []).forEach(function (it) {
       var L = it.logic_type || "", Es = it.common_wrong_reasons || [], Ds = it.teaching_drill || [], ty = it.type_surface;
-      if (!(L.indexOf(node) === 0 || Es.indexOf(node) >= 0 || Ds.indexOf(node) >= 0)) return;
+      var Tr = (it.semantic_trap_codes || []).concat(it.syntactic_trap_codes || []);
+      if (!(L.indexOf(node) === 0 || Es.indexOf(node) >= 0 || Ds.indexOf(node) >= 0 || Tr.indexOf(node) >= 0)) return;
       if (L && L.indexOf(node) !== 0) nb.logic[L] = (nb.logic[L] || 0) + 1;
-      Es.forEach(function (e) { if (e !== node) nb.errors[e] = (nb.errors[e] || 0) + 1; }); Ds.forEach(function (d) { if (d !== node) nb.drills[d] = (nb.drills[d] || 0) + 1; }); if (ty) nb.types[ty] = (nb.types[ty] || 0) + 1;
+      Es.forEach(function (e) { if (e !== node) nb.errors[e] = (nb.errors[e] || 0) + 1; }); Ds.forEach(function (d) { if (d !== node) nb.drills[d] = (nb.drills[d] || 0) + 1; });
+      Tr.forEach(function (t) { if (t !== node) nb.traps[t] = (nb.traps[t] || 0) + 1; }); if (ty) nb.types[ty] = (nb.types[ty] || 0) + 1;
     });
-    function nm(c) { var r = (DB.logic_rules || []).find(function (x) { return x.code === c; }) || (DB.error_codes || []).find(function (x) { return x.code === c; }) || (DB.drills || []).find(function (x) { return x.code === c; }); return r ? (r.name || r.goal || "") : ""; }
+    function nm(c) { var r = (DB.logic_rules || []).find(function (x) { return x.code === c; }) || (DB.error_codes || []).find(function (x) { return x.code === c; }) || (DB.drills || []).find(function (x) { return x.code === c; }) || (DB.semantic_traps || []).find(function (x) { return x.code === c; }) || (DB.syntactic_traps || []).find(function (x) { return x.code === c; }); return r ? (r.name || r.goal || "") : ""; }
     function top(o) { return Object.keys(o).sort(function (a, b) { return o[b] - o[a]; }).map(function (k) { return k + (nm(k) ? "(" + nm(k) + ")" : "") + "×" + o[k]; }); }
-    return { node: node, name: nm(node), 오답: top(nb.errors), 드릴: top(nb.drills), 유형: top(nb.types) };
+    return { node: node, name: nm(node), 오답: top(nb.errors), 함정: top(nb.traps), 드릴: top(nb.drills), 유형: top(nb.types) };
   }
 
   /* ---------- ③ 출제의도 로직 → 생성 힌트 ---------- */
@@ -88,8 +94,9 @@
     await loadDB(); var code = null; Object.keys(TYPE2LOGIC).forEach(function (k) { if (type && type.indexOf(k) >= 0 && !code) code = TYPE2LOGIC[k]; });
     if (!code) return "";
     var lr = (DB.logic_rules || []).find(function (l) { return l.code === code; }); if (!lr) return "";
-    var errs = coFrom2("common_wrong_reasons", code), drills = coFrom2("teaching_drill", code);
-    return "[출제의도 " + code + " " + lr.name + "] " + lr.core + ". 검증: " + lr.test + ". 매력적 오답은 흔한 오류(" + errs.join("·") + ")를 유발하도록 설계. 해설에 정답 근거와 각 오답의 결함을 명시.";
+    var errs = coFrom2("common_wrong_reasons", code), sms = coFrom2("semantic_trap_codes", code), sys = coFrom2("syntactic_trap_codes", code);
+    var pi = { L01: "PI0", L05: "PI0", L06: "PI0", L08: "PI0", L09: "PI0", L07: "PI1", L11: "PI1", L03: "PI2", L04: "PI2", L02: "PI3", L10: "PI3", L12: "PI3" }[code] || "PI1";
+    return "[출제의도 " + code + " " + lr.name + "] " + lr.core + ". 검증: " + lr.test + ". 정답 선지는 " + pi + " 수준 패러프레이즈, 각 오답은 서로 다른 함정코드(" + (sms.concat(sys).join("·") || "SM01·SM02") + " 등 의미SM/구문SY)를 하나씩 쓰고, 해설에 [변형지수 " + pi + "]와 [오답분석] ①코드-왜 틀림 형식을 명시.";
   }
   function coFrom2(field, logic) { var g = {}; (DB.items || []).forEach(function (it) { if ((it.logic_type || "").indexOf(logic) === 0) (it[field] || []).forEach(function (e) { g[e] = (g[e] || 0) + 1; }); }); return Object.keys(g).sort(function (a, b) { return g[b] - g[a]; }).slice(0, 3); }
 

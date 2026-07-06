@@ -1795,7 +1795,9 @@
       if (fix && fix.variant) variant = fix.variant;
     }
     log(onP, "✓ " + (STAGE_INFO[level] || {}).name + " 완료");
-    return { variant: variant, level: level, stage: (STAGE_INFO[level] || {}).name, note: (STAGE_INFO[level] || {}).desc, changed: changed, audit: gi.length ? ("어법 " + gi.length + "건 교정") : "어법 통과", _trace: trace };
+    // PI 지수(패러프레이즈 인덱스): 원문→변형 정도의 표준 라벨. word=어휘치환, phrase=구문전환, sentence/theme=의미재진술
+    var PI_OF = { word: "PI1(어휘 치환)", phrase: "PI2(구문 전환)", sentence: "PI3(의미 재진술)", theme: "PI3(의미 재진술·재창작)" };
+    return { variant: variant, level: level, pi: PI_OF[level] || "", stage: (STAGE_INFO[level] || {}).name, note: (STAGE_INFO[level] || {}).desc, changed: changed, audit: gi.length ? ("어법 " + gi.length + "건 교정") : "어법 통과", _trace: trace };
   }
 
   async function buildVocabList(passage, opts) {

@@ -688,9 +688,9 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704u"></script>
+<script src="api_team.js?v=20260704v"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
-<script src="raytools.js?v=20260705a"></script><!-- 시험지 누적·RAG검색·출제의도 로직 -->
+<script src="raytools.js?v=20260705b"></script><!-- 시험지 누적·RAG검색·출제의도 로직 -->
 <script>
 /* ===== 🎯 시험지·검색·출제의도 UI 배선 ===== */
 async function rtIngest(){
@@ -708,7 +708,7 @@ async function rtReport(school){
   if(!rep){ out.textContent='누적된 시험지가 없습니다. 먼저 누적하세요.'; return; }
   if(Array.isArray(rep)){ if(!rep.length){out.textContent='누적된 학교가 없습니다.';return;}
     out.innerHTML='<b>학교별 누적</b><br>'+rep.map(function(s){return '· <a href="javascript:rtReport(\''+s.school+'\')">'+s.school+'</a> '+s.n+'문항 — '+s.유형.join(', ');}).join('<br>'); return; }
-  out.innerHTML='<b>'+rep.school+' ('+rep.n+'문항)</b><br>유형: '+rep.유형분포.join(' · ')+'<br>로직: '+rep.로직분포.join(' · ')+'<br>흔한오답: '+rep.흔한오답.join(' · ')+'<br><br>'+rep.items.map(function(x){return x.item_no+'. ['+x.type_surface+'/'+x.logic_type+'] '+(x.stub||'');}).join('<br>');
+  out.innerHTML='<b>'+rep.school+' ('+rep.n+'문항)</b><br>유형: '+rep.유형분포.join(' · ')+'<br>로직: '+rep.로직분포.join(' · ')+'<br>변형지수(PI): '+(rep.변형지수||[]).join(' · ')+'<br>함정(SM/SY): '+(rep.함정분포||[]).join(' · ')+'<br>흔한오답: '+rep.흔한오답.join(' · ')+'<br><br>'+rep.items.map(function(x){return x.item_no+'. ['+x.type_surface+'/'+x.logic_type+(x.paraphrase_index?'/'+x.paraphrase_index:'')+'] '+(x.stub||'');}).join('<br>');
 }
 async function rtRag(kind){
   var q=(document.getElementById('rtQuery').value||'').trim(); var out=document.getElementById('rtRagOut'); out.textContent='검색 중…';
@@ -716,7 +716,7 @@ async function rtRag(kind){
     if(kind==='kw'){ r=await RAYTOOLS.ragKeyword(q,6); out.textContent=r.length?r.map(function(x){return '['+x.score+'] '+x.text;}).join('\n\n'):'일치 없음'; }
     else if(kind==='sqlType'){ r=await RAYTOOLS.ragSQL('type_surface'); out.textContent='유형 분포:\n'+r.map(function(x){return '  '+x.key+' — '+x.count+'건 ('+x.pct+'%)';}).join('\n'); }
     else if(kind==='sqlErr'){ r=await RAYTOOLS.ragSQL('common_wrong_reasons'); out.textContent='오답코드 분포:\n'+r.map(function(x){return '  '+x.key+' — '+x.count+'건';}).join('\n'); }
-    else { var node=(q.match(/[LED]\d\d/i)||['L01'])[0]; r=await RAYTOOLS.ragGraph(node); out.textContent=r.node+' '+r.name+'\n  오답: '+r.오답.join(', ')+'\n  드릴: '+r.드릴.join(', ')+'\n  유형: '+r.유형.join(', '); }
+    else { var node=(q.match(/S[MY]\d\d|[LED]\d\d/i)||['L01'])[0]; r=await RAYTOOLS.ragGraph(node); out.textContent=r.node+' '+r.name+'\n  오답: '+r.오답.join(', ')+'\n  함정(SM/SY): '+(r.함정||[]).join(', ')+'\n  드릴: '+r.드릴.join(', ')+'\n  유형: '+r.유형.join(', '); }
   }catch(e){ out.textContent='오류: '+e.message; }
 }
 async function rtLogicView(){ var ty=document.getElementById('rtLogicType').value; var h=await RAYTOOLS.logicHint(ty); document.getElementById('rtLogicOut').textContent=h||'해당 유형 로직 없음'; }
@@ -1888,7 +1888,7 @@ function doTransform(level){
   window.__XFN=(window.__XFN||0)+1;
   T.transformStaged(passage, level, {nonce:window.__XFN+"_"+Math.floor(Math.random()*99999), strength:(document.getElementById("xfStrength")||{}).value||"중", onProgress:function(m){ note.textContent=m; }}).then(function(r){
     if(!r||!r.variant){ note.textContent="변형 실패 — 다시 시도하세요"; return; }
-    note.textContent=(r.stage||"")+" · "+(r.audit||"");
+    note.textContent=(r.stage||"")+(r.pi?" · 변형지수 "+r.pi:"")+" · "+(r.audit||"");
     var ch=(r.changed&&r.changed.length)?('<div class="note" style="margin-top:7px">바뀐 점: '+esc(r.changed.join(" · "))+'</div>'):'';
     out.innerHTML='<div class="card" style="background:#f8fafb;box-shadow:none;border:1px solid #d7e3e0">'+
       '<div style="font-weight:700;color:#0f766e;margin-bottom:6px">'+esc(r.stage||"변형")+' <span class="note" style="font-weight:400">'+esc(r.note||"")+'</span> <span class="note">— 노란 표시가 바뀐 부분</span></div>'+
