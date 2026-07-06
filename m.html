@@ -220,7 +220,7 @@ function infStat(){var el=document.getElementById("infStat"),el2=document.getEle
   var s="엔진: "+nm+(bits.length?(" · "+bits.join(" · ")):" · 무료 무키");if(el)el.textContent=s;if(el2)el2.textContent=prov==="pollinations"?"⚠ 무키(느림)":"⚡ "+nm;}
 /* 부트스트랩 */
 (function(){
-  var RAY_PROXY = "";   // 키 없이 누구나 무한모드: 배포한 Cloudflare Worker 주소 넣기(cf_proxy/README.md). 이 주소는 비밀 아님.
+  var RAY_PROXY = "https://ray-proxy.gen1103.workers.dev";   // 키 없이 누구나 무한모드: 배포한 Cloudflare Worker 주소 넣기(cf_proxy/README.md). 이 주소는 비밀 아님.
   T.configure({ proxyUrl:RAY_PROXY });initKeys();
   var db=new URLSearchParams(location.search).get("db")||"knowledge/types_v2.json";
   Promise.resolve()
