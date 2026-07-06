@@ -465,6 +465,8 @@
       return { ok: true, count: arr.length };
     } catch (e) { return { ok: false, error: String(e) }; }
   }
+  var LOGICHINT = "";   // 출제의도 로직 반영(raytools 토글) — 켜지면 STANDING 뒤에 붙어 전 생성에 반영
+  function setLogicStanding(text) { LOGICHINT = String(text || "").slice(0, 500); var base = STANDING.replace(/\s*\[출제의도 로직 반영\][\s\S]*$/, ""); STANDING = LOGICHINT ? (base + " [출제의도 로직 반영] " + LOGICHINT) : base; return LOGICHINT; }
 
   /* ---------- 비-LLM API (병렬 가능) ---------- */
   async function grammar(text) {
@@ -1870,7 +1872,7 @@
 
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
-    loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints,
+    loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints, setLogicStanding: setLogicStanding,
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
     analysisSheet: analysisSheet, extractKeywords: extractKeywords, findSource: findSource, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
     ollamaModels: async function (url) { try { var d = await getJSON(String(url || CFG.ollamaUrl).replace(/\/+$/, "") + "/api/tags", 4000); return (d && d.models || []).map(function (m) { return m.name; }); } catch (e) { return null; } },

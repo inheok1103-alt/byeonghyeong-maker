@@ -50,6 +50,22 @@ async function callOAI(env, prov, key, messages, temperature, json) {
   if (d.error) { const m = String(d.error.message || d.error || ""); throw { limited: /rate|limit|quota|too many|429|exceed|credit|insufficient/i.test(m), msg: prov + ": " + m.slice(0, 80) }; }
   return (d.choices && d.choices[0] && d.choices[0].message && d.choices[0].message.content) || "";
 }
+// 우리 자체모델(HF 추론) — HF_TOKEN secret 있으면 1순위로 시도
+async function callOwnModel(env, messages, temperature) {
+  const model = env.HF_MODEL || "Picolo1103/ray-english-exam-3b";
+  let prompt = "";
+  for (const m of messages) prompt += "<|im_start|>" + m.role + "\n" + m.content + "<|im_end|>\n";
+  prompt += "<|im_start|>assistant\n";
+  const r = await fetch("https://api-inference.huggingface.co/models/" + model, {
+    method: "POST",
+    headers: { "Authorization": "Bearer " + env.HF_TOKEN, "Content-Type": "application/json" },
+    body: JSON.stringify({ inputs: prompt, parameters: { max_new_tokens: 512, temperature: temperature || 0.5, return_full_text: false, do_sample: true }, options: { wait_for_model: true, use_cache: false } }),
+  });
+  const d = await r.json();
+  if (d.error) throw { limited: /loading|rate|429|503|busy/i.test(String(d.error)), msg: "own: " + String(d.error).slice(0, 90) };
+  const txt = Array.isArray(d) ? (d[0] && d[0].generated_text) : (d.generated_text || "");
+  return String(txt || "").replace(/<\|im_end\|>[\s\S]*$/, "").trim();
+}
 async function callPollinations(messages, temperature) {
   const r = await fetch("https://text.pollinations.ai/openai", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ model: "openai", messages, temperature, private: true }) });
   const d = await r.json();
@@ -59,6 +75,11 @@ async function callPollinations(messages, temperature) {
 
 async function generate(env, messages, temperature, json) {
   let lastErr = "no provider";
+  // 자체모델 우선(HF_TOKEN secret 있을 때). 실패/로딩중이면 아래 프론티어 체인으로 폴백.
+  if (env.HF_TOKEN && env.USE_OWN_MODEL !== "0") {
+    try { const t = await callOwnModel(env, messages, temperature); if (t && t.trim()) return { content: t, provider: "own-model" }; }
+    catch (e) { lastErr = (e && e.msg) || String(e); }
+  }
   for (const prov of CHAIN) {
     try {
       if (prov === "pollinations") { const t = await callPollinations(messages, temperature); if (t && t.trim()) return { content: t, provider: prov }; continue; }

@@ -656,10 +656,80 @@ body.simple .expert{display:none!important}
     <div id="harnessBody"><div class="note">불러오는 중…</div></div>
   </div>
 
+  <div class="card" id="rayToolsCard">
+    <h2>🎯 시험지 · 검색 · 출제의도 <span class="note">시험지→로직 누적(학교별) · RAG 검색 · 출제의도 로직 반영</span></h2>
+    <details class="fold" open><summary>📥 시험지 → 로직 누적 (학교별)</summary>
+      <textarea id="rtExam" placeholder="시험지 텍스트를 붙여넣으세요 (문항 여러 개). 문항은 &quot;1. … 2. …&quot; 번호로 구분됩니다." style="min-height:90px"></textarea>
+      <div class="row" style="margin-top:6px">
+        <input id="rtSchool" placeholder="학교(예: 구리고)" style="width:140px;padding:6px 9px;border:1px solid var(--line);border-radius:7px">
+        <input id="rtYear" placeholder="연도" style="width:70px;padding:6px 9px;border:1px solid var(--line);border-radius:7px">
+        <input id="rtName" placeholder="시험(예: 기말)" style="width:120px;padding:6px 9px;border:1px solid var(--line);border-radius:7px">
+        <button class="go" style="font-size:9.5pt;padding:7px 16px" onclick="rtIngest()">누적</button>
+        <button class="ghost" onclick="rtReport()">전체 학교</button>
+      </div>
+      <div id="rtExamOut" style="margin-top:8px;font-size:9pt"></div>
+    </details>
+    <details class="fold"><summary>🔎 RAG 검색 (정확문구·집계·관계)</summary>
+      <div class="row" style="margin-top:6px">
+        <input id="rtQuery" placeholder="검색어 또는 L01 / E03" style="flex:1;min-width:170px;padding:6px 9px;border:1px solid var(--line);border-radius:7px">
+        <button class="ghost" onclick="rtRag('kw')">정확문구</button>
+        <button class="ghost" onclick="rtRag('sqlType')">유형집계</button>
+        <button class="ghost" onclick="rtRag('sqlErr')">오답집계</button>
+        <button class="ghost" onclick="rtRag('graph')">관계</button>
+      </div>
+      <div id="rtRagOut" style="margin-top:8px;white-space:pre-wrap;font-family:ui-monospace,Consolas,monospace;font-size:8.7pt;color:#334;max-height:260px;overflow:auto"></div>
+    </details>
+    <details class="fold"><summary>🎯 출제의도 로직 반영 (생성·해설에)</summary>
+      <label style="font-size:9.5pt;display:block;margin:6px 0"><input type="checkbox" id="rtLogicOn" onchange="rtLogicToggle()"> 생성 시 <b>출제의도 로직·오답 설계</b>를 자동 반영</label>
+      <div class="row">
+        <select id="rtLogicType" style="width:160px;padding:5px 8px;border:1px solid var(--line);border-radius:7px" onchange="if(document.getElementById('rtLogicOn').checked)rtLogicToggle()">
+          <option>글의순서</option><option>문장삽입</option><option>연결어빈칸</option><option>빈칸</option><option>주제</option><option>제목</option><option>요지</option><option>어법</option><option>어휘</option><option>함의</option><option>내용불일치</option><option>요약</option><option>무관</option></select>
+        <button class="ghost" onclick="rtLogicView()">이 유형 로직 보기</button>
+      </div>
+      <div id="rtLogicOut" style="margin-top:8px;font-size:9pt;color:#334"></div>
+    </details>
+  </div>
+
 </div>
 
-<script src="api_team.js?v=20260704s"></script>
+<script src="api_team.js?v=20260704t"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
+<script src="raytools.js?v=20260705a"></script><!-- 시험지 누적·RAG검색·출제의도 로직 -->
+<script>
+/* ===== 🎯 시험지·검색·출제의도 UI 배선 ===== */
+async function rtIngest(){
+  var t=(document.getElementById('rtExam').value||'').trim(); var out=document.getElementById('rtExamOut');
+  if(!t){ out.textContent='시험지 텍스트를 붙여넣으세요.'; return; }
+  out.textContent='분석·누적 중…';
+  try{ var m={school:(document.getElementById('rtSchool').value||'미상').trim(),year:(document.getElementById('rtYear').value||'').trim(),exam:(document.getElementById('rtName').value||'시험').trim()};
+    var r=await RAYTOOLS.examAdd(t,m);
+    out.innerHTML='✅ <b>'+r.school+'</b> +'+r.added+'문항 → 이 학교 '+r.schoolTotal+'문항 (전체 '+r.total+') · <a href="javascript:rtReport(\''+r.school+'\')">이 학교 리포트</a>';
+  }catch(e){ out.textContent='오류: '+e.message; }
+}
+async function rtReport(school){
+  var out=document.getElementById('rtExamOut');
+  var rep=RAYTOOLS.examReport(school);
+  if(!rep){ out.textContent='누적된 시험지가 없습니다. 먼저 누적하세요.'; return; }
+  if(Array.isArray(rep)){ if(!rep.length){out.textContent='누적된 학교가 없습니다.';return;}
+    out.innerHTML='<b>학교별 누적</b><br>'+rep.map(function(s){return '· <a href="javascript:rtReport(\''+s.school+'\')">'+s.school+'</a> '+s.n+'문항 — '+s.유형.join(', ');}).join('<br>'); return; }
+  out.innerHTML='<b>'+rep.school+' ('+rep.n+'문항)</b><br>유형: '+rep.유형분포.join(' · ')+'<br>로직: '+rep.로직분포.join(' · ')+'<br>흔한오답: '+rep.흔한오답.join(' · ')+'<br><br>'+rep.items.map(function(x){return x.item_no+'. ['+x.type_surface+'/'+x.logic_type+'] '+(x.stub||'');}).join('<br>');
+}
+async function rtRag(kind){
+  var q=(document.getElementById('rtQuery').value||'').trim(); var out=document.getElementById('rtRagOut'); out.textContent='검색 중…';
+  try{ var r;
+    if(kind==='kw'){ r=await RAYTOOLS.ragKeyword(q,6); out.textContent=r.length?r.map(function(x){return '['+x.score+'] '+x.text;}).join('\n\n'):'일치 없음'; }
+    else if(kind==='sqlType'){ r=await RAYTOOLS.ragSQL('type_surface'); out.textContent='유형 분포:\n'+r.map(function(x){return '  '+x.key+' — '+x.count+'건 ('+x.pct+'%)';}).join('\n'); }
+    else if(kind==='sqlErr'){ r=await RAYTOOLS.ragSQL('common_wrong_reasons'); out.textContent='오답코드 분포:\n'+r.map(function(x){return '  '+x.key+' — '+x.count+'건';}).join('\n'); }
+    else { var node=(q.match(/[LED]\d\d/i)||['L01'])[0]; r=await RAYTOOLS.ragGraph(node); out.textContent=r.node+' '+r.name+'\n  오답: '+r.오답.join(', ')+'\n  드릴: '+r.드릴.join(', ')+'\n  유형: '+r.유형.join(', '); }
+  }catch(e){ out.textContent='오류: '+e.message; }
+}
+async function rtLogicView(){ var ty=document.getElementById('rtLogicType').value; var h=await RAYTOOLS.logicHint(ty); document.getElementById('rtLogicOut').textContent=h||'해당 유형 로직 없음'; }
+async function rtLogicToggle(){
+  var on=document.getElementById('rtLogicOn').checked, out=document.getElementById('rtLogicOut');
+  try{ if(on){ var ty=document.getElementById('rtLogicType').value; var h=await RAYTOOLS.logicHint(ty); if(window.T&&T.setLogicStanding)T.setLogicStanding(h); out.innerHTML='🟢 반영 ON — 이제 모든 생성에 반영됩니다:<br><span style="color:#0f766e">'+h+'</span>'; }
+    else { if(window.T&&T.setLogicStanding)T.setLogicStanding(''); out.textContent='⚪ 반영 OFF'; } }catch(e){ out.textContent='오류: '+e.message; }
+}
+</script>
 <script>
 var T = window.APITEAM;
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
