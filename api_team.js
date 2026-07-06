@@ -1736,7 +1736,9 @@
     // 매번 다르게: 온도 지터 + 변주 논스(같은 지문·같은 버튼을 다시 눌러도 다른 결과)
     function _vt() { return 0.75 + Math.random() * 0.22; }
     var _vn = (opts.nonce != null ? opts.nonce : Math.floor(Math.random() * 99999));
-    var _vd = " 여러 자연스러운 대안 중 이번엔(변주 #" + _vn + ") 직전 시도와 다른 어휘·구문을 선택하라.";
+    var _STR = { "하": " 난이도는 '하'로: 평이한 고빈도 어휘·단순한 구조로 쉽게.", "중": "", "상": " 난이도는 '상'로: 수능 킬러급으로 어려운 어휘(저빈도·추상어)·복잡한 구문(도치·분사·복문)으로 끌어올려라." };
+    var _sd = (opts.strength && _STR[opts.strength]) ? _STR[opts.strength] : "";
+    var _vd = " 여러 자연스러운 대안 중 이번엔(변주 #" + _vn + ") 직전 시도와 다른 어휘·구문을 선택하라." + _sd;
     if (level === "word") {
       log(onP, "① 내용어 동의어 수집(Datamuse syn)…");
       var cw = contentWords(passage).slice(0, 14), syn = {};

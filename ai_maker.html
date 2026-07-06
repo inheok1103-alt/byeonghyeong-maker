@@ -321,6 +321,7 @@ body.simple .expert{display:none!important}
     <div class="row" style="margin-top:6px">
       <button class="ghost" onclick="extendCur()" id="extBtn" title="AI가 논지·문체를 유지하며 예시·부연 문장을 추가해 작업대 지문을 늘립니다(원문 보존 코드검증)">📈 지문 늘리기</button>
       <span style="font-size:9pt;font-weight:700;color:#5a4fb0">🔄 변형:</span>
+      <select id="xfStrength" title="변형 난이도(하=평이·상=킬러급)" style="padding:3px 6px;border:1px solid var(--line);border-radius:7px;font-size:8.6pt;font-family:inherit"><option value="하">난이도 하</option><option value="중" selected>난이도 중</option><option value="상">난이도 상</option></select>
       <button class="ghost" onclick="doTransform('word')">①단어</button>
       <button class="ghost" onclick="doTransform('phrase')">②구문</button>
       <button class="ghost" onclick="doTransform('sentence')">③문장 재구성</button>
@@ -332,7 +333,7 @@ body.simple .expert{display:none!important}
       <span style="font-size:9pt;font-weight:700;color:#5a4fb0">🧩 여러 지문:</span>
       <button class="ghost" onclick="workShuffle()" title="작업대 지문들의 순서를 무작위로 섞기">🔀 순서 섞기</button>
       <button class="ghost" onclick="workMerge()" title="작업대의 모든 지문을 하나로 이어붙여 조합(한 지문으로 출제·변형)">🔗 이어붙여 조합</button>
-      <button class="ghost" onclick="togglePgTypes()" id="pgTypeBtn" title="지문마다 각각 다른 출제 유형을 배정합니다(지문 2개 이상)">🎯 지문별 유형 배정</button>
+      <button class="ghost" onclick="togglePgTypes()" id="pgTypeBtn" title="지문마다 원하는 유형을 배정 — 1지문에 여러 유형을 고르면 다문항 세트가 됩니다">🎯 유형 배정(1지문 다문항)</button>
     </div>
     <div id="pgTypePanel" style="display:none;margin-top:6px;border:1px solid var(--line2,#363B4D);border-radius:10px;padding:8px 10px"></div>
     <div class="row" style="margin-top:3px"><span class="note" id="workNote">비어 있음 — ①에서 지문 입력 후 [⬇ 작업대에 추가]</span><span class="note" id="workCnt"></span></div>
@@ -373,12 +374,7 @@ body.simple .expert{display:none!important}
       <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="중" checked onchange="saveState()"> 중(표준)</label>
       <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="상" onchange="saveState()"> 상(킬러)</label>
       <span class="note" id="lvstat"></span>
-      &nbsp;·&nbsp;<span style="font-size:9.5pt;font-weight:700" title="문제를 만들기 전에 본문 자체를 얼마나 바꿀지 정합니다">🧬 본문 변형도</span>
-      <select id="xformLevel" onchange="saveState()" style="padding:4px 8px;border:1.5px solid var(--line);border-radius:9px;font-size:9.5pt;font-family:inherit">
-        <option value="none">원본 유지</option>
-        <option value="word" title="핵심 어휘를 유의어로 교체(의미 보존)">유의어 변형</option>
-        <option value="sentence" title="문장 구조 재해석 — 태 전환·복문화(고난도)">구조적 재해석</option>
-      </select>
+      <span class="note" style="color:#8a86a8">· 지문 변형은 ② 작업대에서(난이도 포함)</span>
     </div>
     <div class="row" style="margin-top:8px">
       <span style="font-size:9.5pt;font-weight:700">🔁 상호작용</span>
@@ -692,7 +688,7 @@ body.simple .expert{display:none!important}
 
 </div>
 
-<script src="api_team.js?v=20260704t"></script>
+<script src="api_team.js?v=20260704u"></script>
 <script src="addon_key_guard.js?v=20260703b"></script><!-- 정답키 3중 가드: 코드검증→솔버3회 다수결→위생필터 -->
 <script src="raytools.js?v=20260705a"></script><!-- 시험지 누적·RAG검색·출제의도 로직 -->
 <script>
@@ -1144,7 +1140,7 @@ function workMerge(){ var ps=workParse(); if(ps.length<2){ alert("이어붙일 �
 window.PGTYPES=null;
 function togglePgTypes(){
   var ps=workParse();
-  if(ps.length<2){ alert("지문별 유형 배정은 작업대에 지문이 2개 이상일 때 씁니다. [⬇ 작업대에 추가]로 지문을 더 담으세요."); return; }
+  if(ps.length<1){ alert("작업대에 지문을 먼저 추가하세요([⬇ 작업대에 추가]). 1지문이면 여러 유형을 골라 다문항 세트가 나옵니다."); return; }
   var el=document.getElementById("pgTypePanel"); var showing=el.style.display!=="none";
   if(showing){ el.style.display="none"; return; }
   if(!window.PGTYPES||window.PGTYPES.length!==ps.length){ var base=chosen(); if(!base.length) base=["빈칸(어구)","어법(밑줄)"]; window.PGTYPES=ps.map(function(){ return base.slice(); }); }
@@ -1153,7 +1149,7 @@ function togglePgTypes(){
 function renderPgTypes(){
   var el=document.getElementById("pgTypePanel"); if(!el) return; var ps=workParse();
   if(el.style.display==="none") return;
-  if(ps.length<2||!window.PGTYPES){ el.style.display="none"; return; }
+  if(ps.length<1||!window.PGTYPES){ el.style.display="none"; return; }
   if(window.PGTYPES.length!==ps.length){ var base=chosen(); if(!base.length) base=["빈칸(어구)","어법(밑줄)"]; window.PGTYPES=ps.map(function(){ return base.slice(); }); }
   var TL=(window.T&&T.BEST_TYPES)||TYPES;
   var h='<div class="note" style="margin-bottom:5px">🎯 <b style="color:var(--rg-gold,#C8A96A)">지문별 유형 배정</b> — 지문마다 원하는 유형을 켜세요. 🚀 출제하면 지문별로 배정 유형이 나옵니다.</div>';
@@ -1625,9 +1621,9 @@ function run(){
   var passage=srcPassage(), types=chosen();
   if(passage.length<40){ alert("영어 지문을 충분히 입력하세요(40자 이상)."); return; }
   var pgs=parsePassages();
-  var hasPg=(pgs.length>1&&window.PGTYPES&&window.PGTYPES.length===pgs.length&&window.PGTYPES.some(function(a){return a&&a.length;}));
+  var hasPg=(pgs.length>=1&&window.PGTYPES&&window.PGTYPES.length===pgs.length&&window.PGTYPES.some(function(a){return a&&a.length;}));
   if(!types.length&&!hasPg){ alert("출제 유형을 1개 이상 선택하세요(또는 🎯 지문별 유형 배정)."); return; }
-  if(pgs.length>1){ runMulti(pgs, types); return; }   // 다중 지문(무제한): 지문별 그룹 시험지(지문별 배정 유형 우선)
+  if(pgs.length>1||hasPg){ runMulti(pgs, types); return; }   // 다중 지문 또는 지문별 유형 배정(1지문 다문항 포함)
   if(pgs.length===1) passage=pgs[0];   // 구분선·메모가 섞인 블롭 대신 깨끗한 단일 지문
   saveState();
   GENERATING=true;   // 회의·자가학습 루프가 큐를 양보하도록
@@ -1890,7 +1886,7 @@ function doTransform(level){
   var out=document.getElementById("wxfout")||document.getElementById("xfout"); out.innerHTML="";
   GENERATING=true;
   window.__XFN=(window.__XFN||0)+1;
-  T.transformStaged(passage, level, {nonce:window.__XFN+"_"+Math.floor(Math.random()*99999), onProgress:function(m){ note.textContent=m; }}).then(function(r){
+  T.transformStaged(passage, level, {nonce:window.__XFN+"_"+Math.floor(Math.random()*99999), strength:(document.getElementById("xfStrength")||{}).value||"중", onProgress:function(m){ note.textContent=m; }}).then(function(r){
     if(!r||!r.variant){ note.textContent="변형 실패 — 다시 시도하세요"; return; }
     note.textContent=(r.stage||"")+" · "+(r.audit||"");
     var ch=(r.changed&&r.changed.length)?('<div class="note" style="margin-top:7px">바뀐 점: '+esc(r.changed.join(" · "))+'</div>'):'';
