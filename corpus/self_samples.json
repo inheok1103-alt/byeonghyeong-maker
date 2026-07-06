@@ -1,6 +1,24 @@
 {
- "updated": "2026-07-06T09:23:04.562Z",
+ "updated": "2026-07-06T13:11:04.267Z",
  "samples": [
+  {
+   "ts": "2026-07-06T13:10:59.113Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: w)\n[영영풀이] The smallest unit of language that has a particular meaning and can be expressed by itself; the smallest discrete, meaningful unit of language. (contrast morphe",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] words (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-06T09:20:14.652Z",
    "type": "제목",
@@ -251,30 +269,6 @@
     ],
     "answer": 2,
     "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-05T12:50:17.271Z",
-   "type": "필자주장",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 3/3 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Readers' inability to identify familiar words using prior semantic context",
-     "Readers' ability to identify unfamiliar words using subsequent semantic context.",
-     "Readers' overall reading comprehension skills",
-     "Readers' use of contextual clues for word meaning",
-     "Readers' ability to comprehend sentence syntax"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Readers can identify unfamiliar words using subsequent semantic context, so regressive eye movements are not limited to beginners.'이며 정답 (후속 의미 맥락을 사용하여 익숙하지 않은 단어를 식별하는 독자의 능력.)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: Readers can identify unfamiliar words using subsequent semantic context, so regressive eye movements are not limited to beginners.]"
    }
   }
  ]
