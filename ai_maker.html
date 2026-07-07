@@ -808,7 +808,7 @@ var DEF={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1};
 var tdiv=document.getElementById("types");
 TYPES.forEach(function(t){ var l=document.createElement("label"); l.className=DEF[t]?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(DEF[t]?" checked":"")+'>'+t;
   l.querySelector("input").onchange=function(){ tselChipChange(this,l); }; tdiv.appendChild(l); });
-(function(){ var mt=document.getElementById("multiTypes"); if(mt) mt.checked=TSEL.multi; if(typeof tselUpdate==="function") setTimeout(tselUpdate,300); })();
+setTimeout(function(){ var mt=document.getElementById("multiTypes"); if(mt&&typeof TSEL!=="undefined") mt.checked=TSEL.multi; if(typeof tselUpdate==="function") tselUpdate(); },300);   // TSEL 정의 이후(다음 틱)에 초기화 — 정의 전 접근으로 스크립트 전체가 죽던 버그 수정
 /* 🎯 지문별 배정: 유형 칩 중 하나(맨 앞) — 누르면 유형 칩 아래에 지문별 배정판이 열림(1지문 다문항 포함) */
 (function(){ var pgl=document.createElement("label"); pgl.id="pgTypeChip"; pgl.style.cssText="border-color:#7c6ee6;color:#5a4fb0;font-weight:700";
   pgl.textContent="🎯 지문별 배정"; pgl.title="지문마다 유형을 따로 배정 — 1지문에 여러 유형을 고르면 다문항 세트";
@@ -866,6 +866,7 @@ function tselShowDis(nm,sig){
 }
 function tselForce(nm){ TSEL.forced[nm]=1; document.getElementById("disHelp").style.display="none"; tselUpdate(); tselPick(nm); toast("⚠ 부적합 경고를 무시하고 선택 — 결과를 꼭 검수하세요"); }
 function tselChipChange(inp,l){ var nm=inp.value;
+  if(typeof TSEL==="undefined"||!TSEL){ l.classList.toggle("on",inp.checked); return true; }   // 안전판: 로직 상태가 어떤 이유로든 없어도 선택은 항상 동작
   if(inp.checked&&!TSEL.multi){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ if(i!==inp){ i.checked=false; i.parentNode.classList.remove("on"); } }); }
   l.classList.toggle("on",inp.checked);
   // DIS(부적합)여도 선택은 자유 — 안내 바만 띄움(차단 없음)
