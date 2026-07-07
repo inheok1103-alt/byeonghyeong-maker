@@ -116,10 +116,17 @@ body.showAns .q .ans{display:block}
     <div class="step"><span class="n">2</span> 유형 고르기 <span class="hint">여러 개 = 다문항 · 회색은 이 지문에 부적합(클릭하면 이유)</span></div>
     <div class="note" id="recTitle" style="color:var(--mint);font-weight:700;display:none">● 이 지문에 잘 맞는 유형</div>
     <div class="recs" id="recs"></div>
-    <details class="all" open><summary>전체 유형 (내신 50종)</summary>
+    <div class="row" style="margin-top:10px">
+      <span class="note" style="font-weight:700;color:var(--gold2)">⚡ 원클릭 세트:</span>
+      <button class="gh warm" onclick="preset('std')" title="내신 시험지 표준 — 객관식 6 + 서술형 2 (로직 자동 배정)">🎯 내신 표준 8문항</button>
+      <button class="gh warm" onclick="preset('gram')" title="어법(밑줄)·네모어법·어법개수형·어휘·어형변형·어법수정">✏️ 어법·어휘 집중 6</button>
+      <button class="gh warm" onclick="preset('sr')" title="조건영작·배열영작·어형변형·요약빈칸·우리말해석·서술형(자유=창의회전)">📝 서술형 세트 6</button>
+      <button class="gh warm" onclick="preset('mock')" title="객관식 9 + 서술형 3 — 실전 균형">🌀 실전 균형 12</button>
+    </div>
+    <details class="all"><summary>전체 유형 직접 고르기 (53종)</summary>
       <div class="row" style="margin-top:8px">
         <button class="gh" onclick="selAll(true)">✅ 전체</button><button class="gh" onclick="selAll(false)">해제</button>
-        <label class="note" style="cursor:pointer"><input type="checkbox" id="csrChk" checked> ✍️ 서술형은 창의과제 회전(반박·관점전환·제목창작…)</label>
+        <label class="note" style="cursor:pointer"><input type="checkbox" id="csrChk" checked> ✍️ 자유서술형은 창의과제 회전</label>
       </div>
       <div class="pills" id="pills"></div>
     </details>
@@ -157,6 +164,9 @@ body.showAns .q .ans{display:block}
 var T=window.APITEAM; T.configure({proxyUrl:RAY_PROXY});
 T.loadTypeDB("knowledge/types_v2.json").then(function(){ buildPills(); });
 T.loadReviewDB&&T.loadReviewDB("knowledge/review_core_v2.json").catch(function(){});
+/* 연구 로직 전역 적용: 모든 생성에 ExamLogic 오답설계 표준(SM/SY 함정·PI 변형지수·오답분석) 주입 */
+if(T.setLogicStanding) T.setLogicStanding("각 오답은 서로 다른 함정코드(의미 SM01~13/구문 SY01~07)를 하나씩 쓰고, 해설에 [변형지수 PI0~3]과 [오답분석] ①코드-왜 틀렸는지를 반드시 명시.");
+if(window.RAYTOOLS&&RAYTOOLS.loadDB) RAYTOOLS.loadDB();
 
 /* ---------- 상태 ---------- */
 var SEL={}, LEVEL="중", ITEMS=[], FORCED={};
@@ -176,13 +186,12 @@ var DISR=[["short",/순서|삽입|무관/,"지문이 짧아(120단어↓) 분할
   ["noNarr",/심경|분위기|일화/,"서사·감정 어휘가 없음",null,null],
   ["noPrac",/안내문|실용|목적/,"안내문·광고 형식이 아님",null,null]];
 function judge(nm,sig){ for(var i=0;i<DISR.length;i++){ if(sig[DISR[i][0]]&&DISR[i][1].test(nm)&&!FORCED[nm]) return {j:"DIS",r:DISR[i]}; }
-  if(/요지|주제|제목/.test(nm)) return {j:"REC",why:"모든 지문의 기본 추천 — 핵심 파악"};
-  if(/어법\(밑줄\)|네모어법/.test(nm)) return {j:"REC",why:"내신 단골 — 어법 변형(밑줄·네모)"};
-  if(/빈칸\(어구\)/.test(nm)) return {j:"REC",why:"내신·수능 공통 최다 빈출"};
-  if(/조건영작|요약빈칸영작/.test(nm)) return {j:"REC",why:"내신 서술형 대표 — 창의과제 회전 적용"};
-  if(!sig.noContrast&&/요약|빈칸/.test(nm)) return {j:"REC",why:"대조 구조 → 요약·빈칸이 잘 걸림"};
-  if(!sig.noNarr&&/심경|함의/.test(nm)) return {j:"REC",why:"서사 지문 → 심경·함의 적합"};
-  if(!sig.short&&/순서|삽입/.test(nm)) return {j:"REC",why:"충분한 길이 → 순서·삽입 가능"};
+  if(nm==="요지") return {j:"REC",why:"핵심 파악 — L03 주제·요지 로직"};
+  if(nm==="빈칸(어구)") return {j:"REC",why:"최다 빈출 — L04 핵심어구 복원"};
+  if(nm==="어법(밑줄)") return {j:"REC",why:"내신 단골 — L08 + SY 구문함정 설계"};
+  if(nm==="조건영작") return {j:"REC",why:"서술형 대표 — 루브릭·감점기준 자동"};
+  if(!sig.noNarr&&/심경변화|밑줄함의/.test(nm)) return {j:"REC",why:"서사 지문 — L10 함의 로직"};
+  if(!sig.noContrast&&nm==="요약문AB") return {j:"REC",why:"대조 구조 — L12 패러프레이즈(PI3)"};
   return {j:"OK"}; }
 
 /* ---------- 렌더 ---------- */
@@ -230,6 +239,15 @@ function showDis(t,rule){ var d=document.getElementById("disbar"); d.style.displ
 function hideDis(){ document.getElementById("disbar").style.display="none"; }
 function hideDisIfOk(){ }
 function selAll(on){ SEL={}; if(on) types().forEach(function(t){ SEL[t]=1; }); refresh(); }
+/* ⚡ 원클릭 세트 — 내신 시험지 구성 그대로(존재하는 유형만 자동 필터) */
+var PRESETS={
+  std:["요지","제목","빈칸(어구)","어법(밑줄)","내용불일치","글의순서","조건영작","어형변형(괄호)"],
+  gram:["어법(밑줄)","네모어법ABC","어법개수형","어휘(밑줄)","어형변형(괄호)","어법수정"],
+  sr:["조건영작","배열영작","어형변형(괄호)","요약빈칸영작","우리말해석","서술형(자유)"],
+  mock:["목적","요지","제목","밑줄함의","빈칸(어구)","어법(밑줄)","내용불일치","글의순서","문장삽입","조건영작","요약빈칸영작","어형변형(괄호)"]};
+function preset(k){ var all={}; types().forEach(function(t){ all[t]=1; });
+  SEL={}; (PRESETS[k]||[]).forEach(function(t){ if(all[t]) SEL[t]=1; });
+  refresh(); toast("⚡ 세트 적용 — "+Object.keys(SEL).length+"문항 (로직 자동 배정)"); }
 document.getElementById("lv").addEventListener("click",function(e){ var v=e.target&&e.target.dataset&&e.target.dataset.v; if(!v)return;
   LEVEL=v; document.querySelectorAll("#lv span").forEach(function(s){ s.classList.toggle("on",s.dataset.v===v); }); refresh(); });
 
@@ -266,9 +284,15 @@ async function run(){ var p=val(); if(p.length<40) return toast("지문을 먼�
   // 4개 병렬 처리
   var queue=list.slice();
   async function worker(){ while(queue.length){ var t=queue.shift(); var t0=Date.now();
-      try{ var opts={fast:true,level:LEVEL};
-        if(document.getElementById("csrChk").checked&&/서술|영작/.test(t)&&window.RAYTOOLS&&RAYTOOLS.logicHint){ var h=await RAYTOOLS.logicHint("서술형"); if(h) opts.hint=h; }
+      try{ var opts={fast:true,level:LEVEL}, h="";
+        // 연구 로직 자동 주입: 자유서술형=창의과제 회전(CSR), 그 외=출제의도 로직(L코드·SM/SY 오답설계·PI)
+        if(window.RAYTOOLS&&RAYTOOLS.logicHint){
+          if(document.getElementById("csrChk").checked&&/서술형\(자유\)|의견영작|이어쓰기영작/.test(t)) h=await RAYTOOLS.logicHint("서술형");
+          else h=await RAYTOOLS.logicHint(t);
+          if(h) opts.hint=h;
+        }
         var q=await T.generateOne(p,t,opts);
+        if(q&&h){ var lm=h.match(/\[(출제의도 (L\d\d)[^\]]*|창의 서술형 (CSR\d\d)[^\]]*)\]/); q._logic=lm?(lm[2]||lm[3]||"").trim():""; if(!q._logic&&/창의 서술형/.test(h)) q._logic="CSR"; }
         if(q){ q.type=q.type||t; ITEMS.push(q); renderOne(q); done++; plog("✅ "+t+" 완성 ("+Math.round((Date.now()-t0)/1000)+"초)"); prov=T.provider(); }
         else plog("✗ "+t+" 실패(지문 조건) — 다른 유형으로 시도해보세요");
       }catch(e){ plog("✗ "+t+": "+(e&&e.message||e).slice(0,60)); } } }
@@ -280,7 +304,8 @@ async function run(){ var p=val(); if(p.length<40) return toast("지문을 먼�
   else toast("생성 실패 — 지문을 조금 늘리거나 다른 유형으로");
 }
 function renderOne(q){ var i=ITEMS.length-1, no=ITEMS.length;
-  var h='<div class="q"><div class="h">'+no+'. '+esc(q.type)
+  var lg=q._logic?'<span style="font-size:10px;background:#ece9ff;color:#4a3fa5;border-radius:7px;padding:2px 7px;font-weight:700" title="이 문항에 적용된 연구 로직(출제의도·오답설계·PI)">🧠 '+esc(q._logic)+'</span>':'';
+  var h='<div class="q"><div class="h">'+no+'. '+esc(q.type)+lg
     +'<span class="tools"><button onclick="addOne('+i+')">📄 담기</button><button onclick="regen('+i+',this)">🔄 재생성</button></span></div>'
     +'<div class="ins">'+esc(q.instruction||"")+'</div>';
   if(q.passage) h+='<div class="pg">'+String(q.passage).replace(/</g,"&lt;").replace(/&lt;u&gt;/g,"<u>").replace(/&lt;\/u&gt;/g,"</u>").replace(/\n/g,"<br>")+'</div>';
