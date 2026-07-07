@@ -345,9 +345,7 @@ body.simple .expert{display:none!important}
       <span style="font-size:9pt;font-weight:700;color:#5a4fb0">🧩 여러 지문:</span>
       <button class="ghost" onclick="workShuffle()" title="작업대 지문들의 순서를 무작위로 섞기">🔀 순서 섞기</button>
       <button class="ghost" onclick="workMerge()" title="작업대의 모든 지문을 하나로 이어붙여 조합(한 지문으로 출제·변형)">🔗 이어붙여 조합</button>
-      <button class="ghost" onclick="togglePgTypes()" id="pgTypeBtn" title="지문마다 원하는 유형을 배정 — 1지문에 여러 유형을 고르면 다문항 세트가 됩니다">🎯 유형 배정(1지문 다문항)</button>
     </div>
-    <div id="pgTypePanel" style="display:none;margin-top:6px;border:1px solid var(--line2,#363B4D);border-radius:10px;padding:8px 10px"></div>
     <div class="row" style="margin-top:3px"><span class="note" id="workNote">비어 있음 — ①에서 지문 입력 후 [⬇ 작업대에 추가]</span><span class="note" id="workCnt"></span></div>
     <div id="workChips" style="margin-top:4px"></div>
     <div id="wxfout" style="margin-top:6px"></div>
@@ -373,6 +371,7 @@ body.simple .expert{display:none!important}
       <button class="ghost" style="font-size:8.4pt" onclick="selectRecommendedTypes()" title="자주 쓰는 핵심 유형만">⭐ 추천만</button>
     </div>
     <div class="types" id="types"></div>
+    <div id="pgTypePanel" style="display:none;margin-top:6px;border:1px solid var(--line2,#363B4D);border-radius:10px;padding:8px 10px"></div>
     <div class="row" style="margin-top:8px"><button class="ghost" onclick="showPipes()">🧪 파이프라인 설계도 보기</button><span class="note">선택 유형의 라인별 처리 + 담당 API (하네스가 라인 순서대로 실행)</span></div>
     <div id="pipes"></div>
     <h2 style="margin-top:12px">④ 문제 제작</h2>
@@ -790,6 +789,10 @@ var DEF={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1};
 var tdiv=document.getElementById("types");
 TYPES.forEach(function(t){ var l=document.createElement("label"); l.className=DEF[t]?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(DEF[t]?" checked":"")+'>'+t;
   l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); }; tdiv.appendChild(l); });
+/* 🎯 지문별 배정: 유형 칩 중 하나(맨 앞) — 누르면 유형 칩 아래에 지문별 배정판이 열림(1지문 다문항 포함) */
+(function(){ var pgl=document.createElement("label"); pgl.id="pgTypeChip"; pgl.style.cssText="border-color:#7c6ee6;color:#5a4fb0;font-weight:700";
+  pgl.textContent="🎯 지문별 배정"; pgl.title="지문마다 유형을 따로 배정 — 1지문에 여러 유형을 고르면 다문항 세트";
+  pgl.onclick=function(){ togglePgTypes(); }; tdiv.insertBefore(pgl, tdiv.firstChild); })();
 function chosen(){ return [].slice.call(document.querySelectorAll("#types input:checked")).map(function(i){return i.value;}); }
 function selectAllTypes(on){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=!!on; i.parentNode.classList.toggle("on",!!on); }); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }
 function selectRecommendedTypes(){ var REC={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1,"내용불일치":1,"요약":1,"빈칸(어구)":1,"어법(밑줄)":1,"어휘(밑줄)":1,"밑줄함의":1,"글의순서":1,"문장삽입":1,"무관문장":1}; [].forEach.call(document.querySelectorAll("#types input"),function(i){ var on=!!REC[i.value]; i.checked=on; i.parentNode.classList.toggle("on",on); }); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }
@@ -1147,9 +1150,10 @@ function togglePgTypes(){
   var ps=workParse();
   if(ps.length<1){ alert("작업대에 지문을 먼저 추가하세요([⬇ 작업대에 추가]). 1지문이면 여러 유형을 골라 다문항 세트가 나옵니다."); return; }
   var el=document.getElementById("pgTypePanel"); var showing=el.style.display!=="none";
-  if(showing){ el.style.display="none"; return; }
+  var chip=document.getElementById("pgTypeChip");
+  if(showing){ el.style.display="none"; if(chip) chip.classList.remove("on"); return; }
   if(!window.PGTYPES||window.PGTYPES.length!==ps.length){ var base=chosen(); if(!base.length) base=["빈칸(어구)","어법(밑줄)"]; window.PGTYPES=ps.map(function(){ return base.slice(); }); }
-  el.style.display=""; renderPgTypes();
+  el.style.display=""; if(chip) chip.classList.add("on"); renderPgTypes();
 }
 function renderPgTypes(){
   var el=document.getElementById("pgTypePanel"); if(!el) return; var ps=workParse();
