@@ -1,4 +1,29 @@
 {
- "updated": "2026-07-07T19:28:43.790Z",
- "samples": []
+ "updated": "2026-07-07T20:28:30.840Z",
+ "samples": [
+  {
+   "ts": "2026-07-07T20:28:21.905Z",
+   "type": "지칭추론",
+   "level": "중",
+   "audit": "어법 의심 1건 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+    "passage": "",
+    "choices": [
+     "short fragments",
+     "rhetorical strategies",
+     "short sentence fragments",
+     "long complete sentences",
+     "formal written prose"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Despite traditional grammar rules deeming them wrong, skilled writers deliberately use short sentence fragments to convey a spontaneous, mind‑at‑work voice.'이며 정답 (짧은 문장 조각)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: Despite traditional grammar rules deeming them wrong, skilled writers deliberately use short sentence fragments to convey a spontaneous, mind‑at‑work voice.]"
+   }
+  }
+ ]
 }
