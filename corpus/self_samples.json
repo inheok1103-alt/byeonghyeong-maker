@@ -1,6 +1,48 @@
 {
- "updated": "2026-07-07T01:19:39.980Z",
+ "updated": "2026-07-07T05:20:06.479Z",
  "samples": [
+  {
+   "ts": "2026-07-07T05:19:57.992Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "어법 의심 4건 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "PP는 문장 내에서 주어와 동사 사이에 위치해야 한다.",
+     "PP는 이탤릭체 DP의 가장 높은 복사본에서 추출돼야 한다.",
+     "PP는 이탤릭체 DP의 가장 낮은 복사본에서만 추출돼야 한다.",
+     "PP는 모든 DP의 복사본에서 자유롭게 추출돼야 한다.",
+     "PP는 이탤릭체 DP의 중간 복사본에서만 추출돼야 하며, 이는 가장 낮은 복사본에서 추출하면 Specifier Condition을 위반하고 가장 높은 복사본에서 추출하면 Invisibility Condition을 위반하기 때문이다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The PP must be subextracted from the intermediate copy of the italicised DP, because subextraction from the lowest copy violates the Specifier Condition and from the highest copy violates the Invisibility Condition.'이며 정답 (PP 는 이탤릭체 DP의 중간 복사본에서만 추출돼야 하며, 이는 가장 낮은 복사본에서 추출하면 Specifier Condition을 위반하고 가장 높은 복사본에서 추출하면 Invisibility Condition을 위반하기 때문이다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The PP must be subextracted from the intermediate copy of the italicised DP, because subextraction from the lowest copy violates the Specifier Condition and from the highest copy violates the Invisibility Condition.]"
+   }
+  },
+  {
+   "ts": "2026-07-07T05:20:01.769Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: i)\n[영영풀이] To put into italics.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] italicised (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-06T21:13:41.089Z",
    "type": "복합세트",
@@ -215,54 +257,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] PUTATIVE (PYOO tuh tiv) adj commonly accepted; supposed; reputed • 기념비를 시내에 놓은 이유는 아무도 그것을 원하지 않았기 때문입니다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-05T18:28:50.577Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 만장일치 2번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the prevention of the T node c‑complementing the polarity item",
-     "the prevention of the T node c‑commanding the polarity item in the clause",
-     "the prevention of the T node c‑commanding the polarity item across the entire discourse",
-     "the facilitation of the T node c‑commanding the polarity item",
-     "the prevention of the T node c‑commanding the polarity item"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'In this sentence, the T node with the negative auxiliary “mustn’t” does not c‑command the polarity item “anyone” because that item is contained in a descendant of the T node’s sister VP.'이며 정답 (극성 항목을 명령하는 T 노드 c의 방지)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: In this sentence, the T node with the negative auxiliary “mustn’t” does not c‑command the polarity item “anyone” because that item is contained in a descendant of the T node’s sister VP.]"
-   }
-  },
-  {
-   "ts": "2026-07-05T16:30:52.766Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 3/3 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "This then is the heritage of the pioneer experience—a passionate belief that a democracy was possible which should leave the individual a part to play in a free society and not make him <u>a cog in a machine operated from above</u>; which trusted in the common man, in his ­tolerance, his ability to adjust differences with good humor, and to work out an American type from the contributions of all nations— a type for which he would fight against those who challenged it in arms, and for which in time of war he would make sacrifices, even the temporary sacrifice of his individual freedom and his life, lest that freedom be lost forever. Note the following: • the summative modifier in the opening segment: a passionate belief that . . . • the increased length and weight of the second element in each coordination, even the coordinations inside coordinations • the two resumptive modifiers beginning with type and sacrifice That may be over the top, especially the quadruple chiasmus in the last sixteen words:",
-    "choices": [
-     "a person who is treated as a small, replaceable component within a system controlled by higher authorities.",
-     "He is regarded as the central, indispensable pillar guiding the entire organization.",
-     "Everyone in the community participates actively in local governance.",
-     "The new software update reduces the battery consumption by 15 percent.",
-     "She often feels like a fleeting spark in a bustling crowd."
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'a person who is treated as a small, replaceable component within a system controlled by higher authorities.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
