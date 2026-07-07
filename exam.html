@@ -116,7 +116,7 @@ body.showAns .q .ans{display:block}
     <div class="step"><span class="n">2</span> 유형 고르기 <span class="hint">여러 개 = 다문항 · 회색은 이 지문에 부적합(클릭하면 이유)</span></div>
     <div class="note" id="recTitle" style="color:var(--mint);font-weight:700;display:none">● 이 지문에 잘 맞는 유형</div>
     <div class="recs" id="recs"></div>
-    <details class="all"><summary>전체 유형 보기</summary>
+    <details class="all" open><summary>전체 유형 (내신 50종)</summary>
       <div class="row" style="margin-top:8px">
         <button class="gh" onclick="selAll(true)">✅ 전체</button><button class="gh" onclick="selAll(false)">해제</button>
         <label class="note" style="cursor:pointer"><input type="checkbox" id="csrChk" checked> ✍️ 서술형은 창의과제 회전(반박·관점전환·제목창작…)</label>
@@ -177,6 +177,9 @@ var DISR=[["short",/순서|삽입|무관/,"지문이 짧아(120단어↓) 분할
   ["noPrac",/안내문|실용|목적/,"안내문·광고 형식이 아님",null,null]];
 function judge(nm,sig){ for(var i=0;i<DISR.length;i++){ if(sig[DISR[i][0]]&&DISR[i][1].test(nm)&&!FORCED[nm]) return {j:"DIS",r:DISR[i]}; }
   if(/요지|주제|제목/.test(nm)) return {j:"REC",why:"모든 지문의 기본 추천 — 핵심 파악"};
+  if(/어법\(밑줄\)|네모어법/.test(nm)) return {j:"REC",why:"내신 단골 — 어법 변형(밑줄·네모)"};
+  if(/빈칸\(어구\)/.test(nm)) return {j:"REC",why:"내신·수능 공통 최다 빈출"};
+  if(/조건영작|요약빈칸영작/.test(nm)) return {j:"REC",why:"내신 서술형 대표 — 창의과제 회전 적용"};
   if(!sig.noContrast&&/요약|빈칸/.test(nm)) return {j:"REC",why:"대조 구조 → 요약·빈칸이 잘 걸림"};
   if(!sig.noNarr&&/심경|함의/.test(nm)) return {j:"REC",why:"서사 지문 → 심경·함의 적합"};
   if(!sig.short&&/순서|삽입/.test(nm)) return {j:"REC",why:"충분한 길이 → 순서·삽입 가능"};
@@ -184,8 +187,22 @@ function judge(nm,sig){ for(var i=0;i<DISR.length;i++){ if(sig[DISR[i][0]]&&DISR
 
 /* ---------- 렌더 ---------- */
 function types(){ return (T&&T.BEST_TYPES)||["요지","주제","제목","빈칸","어법","어휘","함의","요약","내용불일치","서술형"]; }
+/* 내신 카테고리 그룹 — 교사가 시험지 짜는 순서대로 */
+var GROUPS=[["📖 독해 이해",/요지|주제|제목|주장|목적|심경|함의|일치$|불일치|안내문|도표|영영풀이일치|지칭추론/],
+  ["🔀 흐름·구조",/순서|삽입|무관|요약문|연결어/],
+  ["✏️ 어법·어휘 변형",/어법|어휘|네모|첫글자|유의어|본문어변형|빈칸/],
+  ["🧩 세트·통합",/장문|복합|혼합/],
+  ["📝 서술형",/영작|서술|해석|전환|완성|수정|영영풀이단어|요약빈칸|지칭명시|강조/]];
 function buildPills(){ var el=document.getElementById("pills"); el.innerHTML="";
-  types().forEach(function(t){ var b=document.createElement("button"); b.className="pill"; b.textContent=t; b.onclick=function(){ pick(t,b); }; b.dataset.t=t; el.appendChild(b); });
+  var all=types().slice(), used={};
+  GROUPS.forEach(function(g){
+    var mine=all.filter(function(t){ return !used[t]&&g[1].test(t); }); if(!mine.length) return;
+    var h=document.createElement("div"); h.style.cssText="width:100%;font-size:11px;font-weight:800;letter-spacing:.05em;color:var(--mute);margin:8px 0 2px"; h.textContent=g[0]+" ("+mine.length+")"; el.appendChild(h);
+    mine.forEach(function(t){ used[t]=1; var b=document.createElement("button"); b.className="pill"; b.textContent=t; b.onclick=function(){ pick(t,b); }; b.dataset.t=t; el.appendChild(b); });
+  });
+  var rest=all.filter(function(t){ return !used[t]; });
+  if(rest.length){ var h2=document.createElement("div"); h2.style.cssText="width:100%;font-size:11px;font-weight:800;color:var(--mute);margin:8px 0 2px"; h2.textContent="기타 ("+rest.length+")"; el.appendChild(h2);
+    rest.forEach(function(t){ var b=document.createElement("button"); b.className="pill"; b.textContent=t; b.onclick=function(){ pick(t,b); }; b.dataset.t=t; el.appendChild(b); }); }
   refresh(); }
 function refresh(){ var p=val(), sig=signals(p);
   // 추천 카드
