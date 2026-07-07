@@ -327,6 +327,7 @@ body.simple .expert{display:none!important}
   <div class="card noprint" id="workCard" style="border:1.5px solid #cfc9ee;border-left:4px solid #7c6ee6;background:#fdfcff">
     <h2><span style="width:8px;height:8px;background:#7c6ee6;border-radius:50%;display:inline-block;margin-right:2px"></span>🧪 ② 작업대 · 출제 <span class="note">지문 누적·변형부터 유형 선택·문제 제작까지 한 곳에서. 원문(①)은 보존</span></h2>
     <textarea id="workPassage" style="min-height:110px;background:#fbfbff" oninput="workEdited()" placeholder="①에서 지문을 입력하고 [⬇ 작업대에 추가]를 누르면 여기에 쌓입니다. 여러 개를 추가하면 지문별로 문제가 출제되고, 늘리기·변형·직접 수정도 여기서 하세요."></textarea>
+    <details class="fold" style="margin-top:6px"><summary><b style="font-size:9.5pt;color:#5a4fb0">🔧 지문 도구</b> <span class="note">늘리기 · 변형(난이도) · ⛓겹치기 · 여러 지문</span></summary>
     <div class="row" style="margin-top:6px">
       <button class="ghost" onclick="extendCur()" id="extBtn" title="AI가 논지·문체를 유지하며 예시·부연 문장을 추가해 작업대 지문을 늘립니다(원문 보존 코드검증)">📈 지문 늘리기</button>
       <span style="font-size:9pt;font-weight:700;color:#5a4fb0">🔄 변형:</span>
@@ -353,11 +354,13 @@ body.simple .expert{display:none!important}
       <button class="ghost" onclick="workShuffle()" title="작업대 지문들의 순서를 무작위로 섞기">🔀 순서 섞기</button>
       <button class="ghost" onclick="workMerge()" title="작업대의 모든 지문을 하나로 이어붙여 조합(한 지문으로 출제·변형)">🔗 이어붙여 조합</button>
     </div>
+    </details>
     <div class="row" style="margin-top:3px"><span class="note" id="workNote">비어 있음 — ①에서 지문 입력 후 [⬇ 작업대에 추가]</span><span class="note" id="workCnt"></span></div>
     <div id="workChips" style="margin-top:4px"></div>
     <div id="wxfout" style="margin-top:6px"></div>
     <div id="workLog" style="display:none;margin-top:6px;border-top:1px dashed #ddd6f5;padding-top:5px;max-height:150px;overflow:auto;font-size:8.6pt"></div>
-    <div class="row" style="margin-top:8px;border-top:1px dashed #ddd6f5;padding-top:7px">
+    <details class="fold" style="margin-top:8px;border-top:1px dashed #ddd6f5;padding-top:7px"><summary><b style="font-size:9.5pt;color:#5a4fb0">📑 분석지 · 단어장 · 키워드</b> <span class="note">해석·구문 분석지, 어휘장, 출제축 키워드</span></summary>
+    <div class="row" style="margin-top:6px">
       <button class="ghost" onclick="makeAnalysis()" title="A4 가로 2쪽 분석지 — 문장별 해석·구문(기능색 6색) + 논리흐름·암기카드(1-3-5)">📑 분석지</button>
       <button class="ghost" onclick="makeVocab()" title="지문 핵심어휘 → 사전·CEFR·발음·유의어·번역·예문(다중 API 엮음)">📓 단어장</button>
       <button class="ghost" onclick="kwExtract()" id="kwBtn" title="AI가 출제 축 키워드(어휘·구문·개념·연결어)를 추출합니다 — 칩에서 추가·삭제 가능">🔑 키워드 추출</button>
@@ -366,11 +369,14 @@ body.simple .expert{display:none!important}
     <div id="kwChips" style="margin-top:4px"></div>
     <div id="kwMatrix" style="margin-top:5px;overflow-x:auto"></div>
     <div id="vocabOut"></div>
+    </details>
   </div><!-- /② 작업대 -->
 
   <div class="card noprint" id="ctrlCard" style="border-left:4px solid #4f46e5">
-    <div class="row"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
+    <details class="fold"><summary><b style="font-size:9.5pt;color:#0f766e">🔍 AI 유형 분석</b> <span class="note">지문을 읽고 예상 출제 유형·포인트 제안</span></summary>
+    <div class="row" style="margin-top:6px"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
     <div id="suggest"></div>
+    </details>
     <h2 style="margin-top:8px">③ 출제 유형 <button class="ghost noprint" style="font-size:8.5pt;padding:3px 9px" onclick="refreshDB()">🔄 유형 DB 새로고침</button> <span class="note" id="dbstat"></span></h2>
     <div class="row" style="margin:2px 0 5px;gap:5px">
       <button class="ghost" style="font-size:8.4pt;font-weight:700;color:#0f766e" onclick="selectAllTypes(true)" title="가능한 모든 유형 선택">✅ 전체 선택 <span id="typeCnt" class="note" style="font-weight:400"></span></button>
@@ -382,29 +388,30 @@ body.simple .expert{display:none!important}
     <div class="types" id="types"></div>
     <div id="disHelp" style="display:none;margin-top:6px;background:#fff8ec;border:1px solid #e2b95e;border-radius:9px;padding:8px 11px;font-size:9pt;color:#7a5b17"></div>
     <div id="pgTypePanel" style="display:none;margin-top:6px;border:1px solid var(--line2,#363B4D);border-radius:10px;padding:8px 10px"></div>
-    <div class="row" style="margin-top:8px"><button class="ghost" onclick="showPipes()">🧪 파이프라인 설계도 보기</button><span class="note">선택 유형의 라인별 처리 + 담당 API (하네스가 라인 순서대로 실행)</span></div>
-    <div id="pipes"></div>
     <h2 style="margin-top:12px">④ 문제 제작</h2>
-    <div class="row" style="margin-top:5px">
-      <span style="font-size:9.5pt;font-weight:700">⚡ 속도</span>
-      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="1" checked onchange="onSpeed()"> ⚡빠른(권장·병렬)</label>
-      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="0" onchange="onSpeed()"> 정밀(라인 2배·느림)</label>
-      <span class="note" id="estimate"></span>
-    </div>
     <div class="row" style="margin-top:8px">
       <span style="font-size:9.5pt;font-weight:700">🎚 난이도</span>
       <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="하" onchange="saveState()"> 하(기본)</label>
       <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="중" checked onchange="saveState()"> 중(표준)</label>
       <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="level" value="상" onchange="saveState()"> 상(킬러)</label>
       <span class="note" id="lvstat"></span>
-      <span class="note" style="color:#8a86a8">· 지문 변형은 ② 작업대에서(난이도 포함)</span>
+      <span class="note" id="estimate"></span>
     </div>
-    <div class="row" style="margin-top:8px">
+    <details class="fold" style="margin-top:4px"><summary><b style="font-size:9.5pt;color:#666">⚙ 세부 설정</b> <span class="note">속도 · 재귀검수 · 앙상블 · 파이프라인 설계도</span></summary>
+    <div class="row" style="margin-top:6px">
+      <span style="font-size:9.5pt;font-weight:700">⚡ 속도</span>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="1" checked onchange="onSpeed()"> ⚡빠른(권장·병렬)</label>
+      <label style="font-size:9.5pt;cursor:pointer"><input type="radio" name="speed" value="0" onchange="onSpeed()"> 정밀(라인 2배·느림)</label>
+    </div>
+    <div class="row" style="margin-top:6px">
       <span style="font-size:9.5pt;font-weight:700">🔁 상호작용</span>
       <label style="font-size:9.5pt;cursor:pointer" title="검수↔재작성을 점수 수렴/목표까지 반복(뉴런 무한 상호작용)"><input type="checkbox" id="refineChk" onchange="saveState()"> 재귀 반복(수렴까지)</label>
       <label style="font-size:9pt;color:#566">라운드 <input type="number" id="rounds" value="3" min="1" max="8" style="width:46px;padding:2px 4px"></label>
       <label style="font-size:9.5pt;cursor:pointer" title="창의·검수·논리 페르소나가 합성하는 창발 메타-LLM"><input type="checkbox" id="ensembleChk"> 🧬 앙상블 메타-LLM</label>
     </div>
+    <div class="row" style="margin-top:6px"><button class="ghost" onclick="showPipes()">🧪 파이프라인 설계도 보기</button><span class="note">선택 유형의 라인별 처리 + 담당 API</span></div>
+    <div id="pipes"></div>
+    </details>
     <div class="row" style="margin-top:10px">
       <button class="go" id="go" onclick="run()">🚀 고품질 출제</button>
       <button class="ghost" onclick="toggleAns()">정답·해설 보기</button>
