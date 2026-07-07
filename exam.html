@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ray English · 출제 — 최종판</title>
+<style>
+/* ============================================================
+   Ray English 최종판 — 사용자 최적화 원칙
+   1) 화면에 3단계만: 지문 → 유형(추천 크게) → 출제
+   2) 파워 기능(변형·겹치기·창의서술형)은 지문 아래 한 줄 도구로
+   3) 부적합 유형은 회색+이유+해결버튼(차단 없음)
+   4) 결과는 문항 카드 + [담기·실물보기·Word·PDF] — 편집은 실험실과 공유
+   엔진: 기존 api_team(40유형·검수가드·프록시 내장키) 그대로 재사용
+   ============================================================ */
+:root{--bg:#0f1117;--card:#171a22;--card2:#1c202b;--line:#2a2f3d;--ink:#e9ebf2;--soft:#9aa1b2;--mute:#6b7385;
+  --gold:#C8A96A;--gold2:#EAD199;--mint:#43c59e;--mintS:#12291f;--accent:#7c8cf8;--warn:#e0a548;--warnS:#2b2416;
+  --s2:6px;--s3:8px;--s4:12px;--s5:16px;--s6:20px;--s7:24px;
+  --fs-xs:.8rem;--fs-sm:.875rem;--fs-base:.95rem;--fs-md:1.05rem;--fs-lg:1.3rem}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(900px 480px at 85% -10%,rgba(200,169,106,.08),transparent 60%),var(--bg);color:var(--ink);
+  font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55;padding:22px 14px 90px}
+.wrap{max-width:820px;margin:0 auto}
+.top{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.seal{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:19px;color:var(--gold);background:linear-gradient(145deg,#262a38,#141721);border:1px solid var(--line)}
+.top b{font-size:17px}.top b i{color:var(--gold);font-style:normal}
+.top .sub{font-size:10.5px;color:var(--mute);letter-spacing:.1em;text-transform:uppercase}
+.top a{margin-left:auto;font-size:12px;color:var(--soft);text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:6px 11px}
+.top a:hover{color:var(--gold);border-color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:var(--s5);margin:var(--s4) 0}
+.step{display:flex;align-items:center;gap:8px;font-weight:800;font-size:var(--fs-md);margin-bottom:var(--s3)}
+.step .n{width:24px;height:24px;border-radius:8px;display:grid;place-items:center;font-size:13px;color:#1a1508;background:linear-gradient(180deg,var(--gold2),var(--gold))}
+.step .hint{margin-left:auto;font-size:var(--fs-xs);color:var(--mute);font-weight:400}
+textarea{width:100%;min-height:120px;background:#0d0f16;border:1px solid var(--line);border-radius:11px;color:var(--ink);
+  font-size:var(--fs-base);line-height:1.6;padding:var(--s4);resize:vertical;font-family:inherit}
+textarea:focus{outline:2px solid rgba(200,169,106,.35);border-color:var(--gold)}
+.row{display:flex;gap:var(--s3);align-items:center;flex-wrap:wrap;margin-top:var(--s3)}
+button{font-family:inherit;cursor:pointer}
+.gh{background:var(--card2);border:1px solid var(--line);color:#c7cbd8;border-radius:9px;font-size:var(--fs-xs);font-weight:600;padding:7px 12px}
+.gh:hover{border-color:var(--accent);color:#fff}
+.gh.warm:hover{border-color:var(--gold);color:var(--gold2)}
+select{background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:8px;font-size:var(--fs-xs);padding:6px 8px;font-family:inherit}
+.note{font-size:var(--fs-xs);color:var(--mute)}
+/* 추천 카드 */
+.recs{display:grid;grid-template-columns:repeat(auto-fit,minmax(146px,1fr));gap:8px;margin-top:var(--s3)}
+.rec{background:var(--card2);border:1.5px solid var(--line);border-radius:11px;padding:11px 12px;text-align:left;color:var(--ink);transition:.12s}
+.rec:hover{border-color:var(--mint)}
+.rec.sel{border-color:var(--mint);background:var(--mintS);box-shadow:0 0 0 1px var(--mint)}
+.rec .nm{font-weight:800;font-size:var(--fs-base)}
+.rec .why{font-size:11px;color:var(--soft);margin-top:2px;line-height:1.4}
+/* 전체 유형 */
+details.all{margin-top:var(--s4)}
+details.all>summary{cursor:pointer;list-style:none;display:inline-flex;gap:6px;align-items:center;font-size:var(--fs-xs);font-weight:700;color:var(--soft);border:1px solid var(--line);border-radius:9px;padding:6px 11px;user-select:none}
+details.all>summary::before{content:"▸";font-size:11px;transition:.15s}
+details.all[open]>summary::before{transform:rotate(90deg)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:var(--s3)}
+.pill{background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:6px 13px;font-size:var(--fs-xs);font-weight:600;color:var(--ink)}
+.pill:hover{border-color:var(--accent)}
+.pill.sel{background:var(--accent);border-color:var(--accent);color:#fff}
+.pill.dis{opacity:.4;border-style:dashed}
+.disbar{display:none;margin-top:var(--s3);background:var(--warnS);border:1px solid var(--warn);border-radius:10px;padding:9px 12px;font-size:var(--fs-xs);color:#f0d49a}
+.disbar button{margin-left:8px}
+/* 하단 실행바 */
+.bar{position:sticky;bottom:12px;background:rgba(18,20,28,.95);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:14px;
+  padding:var(--s4);display:flex;gap:var(--s3);align-items:center;flex-wrap:wrap;box-shadow:0 -6px 30px rgba(0,0,0,.35)}
+.sum{flex:1;min-width:180px;font-size:var(--fs-sm)}.sum b{color:var(--gold2)}
+.lv{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.lv span{padding:7px 13px;font-size:var(--fs-xs);cursor:pointer;color:var(--soft)}
+.lv span.on{background:rgba(200,169,106,.18);color:var(--gold2);font-weight:800}
+.go{background:linear-gradient(180deg,var(--gold2),var(--gold));border:0;color:#1a1508;font-weight:800;font-size:var(--fs-base);border-radius:11px;padding:12px 24px}
+.go:disabled{filter:grayscale(.7);opacity:.6;cursor:wait}
+/* 결과 */
+.q{background:#fffefb;color:#191d17;border-radius:12px;padding:var(--s4) var(--s5);margin:var(--s4) 0;border-left:4px solid var(--gold)}
+.q .h{font-weight:800;font-size:var(--fs-base);display:flex;gap:6px;align-items:center;flex-wrap:wrap;color:#111}
+.q .h .tools{margin-left:auto;display:flex;gap:5px}
+.q .h .tools button{font-size:11px;padding:4px 9px;border-radius:7px;border:1px solid #d9d4c6;background:#f6f4ec;color:#5a4fb0}
+.q .ins{font-weight:700;margin:6px 0;font-size:var(--fs-sm);white-space:pre-wrap;color:#222}
+.q .pg{font-family:"Noto Serif KR",serif;background:#faf8f2;border:1px solid #e2ddcf;border-radius:9px;padding:10px 12px;font-size:var(--fs-sm);line-height:1.8;margin:6px 0;color:#1c1c1c}
+.q .pg u{text-decoration-color:#b45309;font-weight:700}
+.q .ch div{font-size:var(--fs-sm);margin:2px 0;color:#222}
+.q .ans{display:none;background:#eef6f0;border:1px solid #cfe3d4;border-radius:9px;padding:8px 11px;margin-top:8px;font-size:var(--fs-xs);color:#23402e}
+body.showAns .q .ans{display:block}
+.prog{font-size:var(--fs-xs);color:var(--mint);margin-top:var(--s3);white-space:pre-wrap}
+.toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);background:#2d2a4a;color:#fff;padding:10px 17px;border-radius:20px;font-size:13px;z-index:99;opacity:0;transition:.2s}
+.toast.on{opacity:1}
+@media(max-width:560px){.recs{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <span class="seal">R</span>
+    <span><b>Ray <i>English</i></b><div class="sub">Exam Maker · Final</div></span>
+    <a href="ai_maker.html" title="전체 기능(작업대·동형모고·에이전트·뇌 관찰실)">🧪 실험실(전체 기능) →</a>
+  </div>
+
+  <!-- ① 지문 -->
+  <div class="card">
+    <div class="step"><span class="n">1</span> 지문 붙여넣기 <span class="hint" id="wc">0 단어</span></div>
+    <textarea id="passage" placeholder="영어 지문을 붙여넣으세요 — 붙여넣는 순간 아래에 '잘 맞는 유형'이 자동 표시됩니다." oninput="onEdit()"></textarea>
+    <div class="row">
+      <button class="gh warm" onclick="loadSample()">📄 샘플 지문</button>
+      <span class="note">지문 도구:</span>
+      <select id="xfLv"><option value="하">난이도 하</option><option value="중" selected>난이도 중</option><option value="상">난이도 상</option></select>
+      <button class="gh" onclick="xform('word')" title="어휘를 유의어로(PI1)">①단어</button>
+      <button class="gh" onclick="xform('phrase')" title="구문 전환(PI2)">②구문</button>
+      <button class="gh" onclick="xform('sentence')" title="문장 재구성(PI3)">③문장</button>
+      <button class="gh" onclick="extend()" title="논지 유지 +3문장">📈 늘리기</button>
+      <span class="note" id="xfNote"></span>
+    </div>
+  </div>
+
+  <!-- ② 유형 -->
+  <div class="card">
+    <div class="step"><span class="n">2</span> 유형 고르기 <span class="hint">여러 개 = 다문항 · 회색은 이 지문에 부적합(클릭하면 이유)</span></div>
+    <div class="note" id="recTitle" style="color:var(--mint);font-weight:700;display:none">● 이 지문에 잘 맞는 유형</div>
+    <div class="recs" id="recs"></div>
+    <details class="all"><summary>전체 유형 보기</summary>
+      <div class="row" style="margin-top:8px">
+        <button class="gh" onclick="selAll(true)">✅ 전체</button><button class="gh" onclick="selAll(false)">해제</button>
+        <label class="note" style="cursor:pointer"><input type="checkbox" id="csrChk" checked> ✍️ 서술형은 창의과제 회전(반박·관점전환·제목창작…)</label>
+      </div>
+      <div class="pills" id="pills"></div>
+    </details>
+    <div class="disbar" id="disbar"></div>
+  </div>
+
+  <!-- 실행 바 -->
+  <div class="bar">
+    <div class="sum" id="sum">유형을 선택하세요</div>
+    <div class="lv" id="lv"><span data-v="하">하</span><span data-v="중" class="on">중</span><span data-v="상">상</span></div>
+    <button class="go" id="go" onclick="run()">🚀 출제</button>
+  </div>
+
+  <!-- ③ 결과 -->
+  <div id="progWrap" class="card" style="display:none"><div class="step"><span class="n">3</span> 만드는 중…</div><div class="prog" id="prog"></div></div>
+  <div id="outHead" class="card" style="display:none">
+    <div class="step"><span class="n">3</span> 완성 <span class="hint" id="engine"></span></div>
+    <div class="row">
+      <button class="gh" onclick="document.body.classList.toggle('showAns')">👁 정답·해설 토글</button>
+      <button class="gh" onclick="addAll()" style="color:#a9b4ff">📄 전부 담기</button>
+      <button class="gh" onclick="previewDoc()">🖨 실물 미리보기</button>
+      <button class="gh" onclick="saveDoc()">⬇ Word</button>
+      <a class="gh" style="text-decoration:none" href="ai_maker.html" title="담은 문제의 순서·배점 편집은 실험실의 시험지 편집에서">🗂 시험지 편집 →</a>
+    </div>
+  </div>
+  <div id="out"></div>
+
+</div>
+
+<script>var RAY_PROXY="https://ray-proxy.gen1103.workers.dev";</script>
+<script src="api_team.js?v=20260704w"></script>
+<script src="addon_key_guard.js?v=20260707a"></script>
+<script src="raytools.js?v=20260707b"></script>
+<script>
+var T=window.APITEAM; T.configure({proxyUrl:RAY_PROXY});
+T.loadTypeDB("knowledge/types_v2.json").then(function(){ buildPills(); });
+T.loadReviewDB&&T.loadReviewDB("knowledge/review_core_v2.json").catch(function(){});
+
+/* ---------- 상태 ---------- */
+var SEL={}, LEVEL="중", ITEMS=[], FORCED={};
+function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function toast(m){ var d=document.createElement("div"); d.className="toast on"; d.textContent=m; document.body.appendChild(d); setTimeout(function(){ d.classList.remove("on"); setTimeout(function(){ d.remove(); },250); },1600); }
+
+/* ---------- 지문 신호 → 추천/부적합 (OP_TYPE_SELECT 로직) ---------- */
+function signals(p){ var w=(p.match(/[A-Za-z]+/g)||[]).length;
+  return { words:w, short:w>0&&w<120,
+    noNum:!/\b\d{2,}(\.\d+)?%?|percent|million|\$|₩/.test(p),
+    noContrast:!/\b(however|in contrast|whereas|while|unlike|but)\b/i.test(p),
+    noNarr:!/\b(I|he|she)\s+(felt|smiled|cried|sighed|trembled|laughed)|heart (sank|raced)/i.test(p),
+    noPrac:!/\b(dear|notice|schedule|fee|register|p\.?m\.?|a\.?m\.?)\b/i.test(p) }; }
+var DISR=[["short",/순서|삽입|무관/,"지문이 짧아(120단어↓) 분할 공간 부족","📈 늘리기로 해결","extend()"],
+  ["noNum",/도표|계산/,"수치·도표 데이터가 없음",null,null],
+  ["noContrast",/대비|대조/,"대조(A/B) 구조가 아님",null,null],
+  ["noNarr",/심경|분위기|일화/,"서사·감정 어휘가 없음",null,null],
+  ["noPrac",/안내문|실용|목적/,"안내문·광고 형식이 아님",null,null]];
+function judge(nm,sig){ for(var i=0;i<DISR.length;i++){ if(sig[DISR[i][0]]&&DISR[i][1].test(nm)&&!FORCED[nm]) return {j:"DIS",r:DISR[i]}; }
+  if(/요지|주제|제목/.test(nm)) return {j:"REC",why:"모든 지문의 기본 추천 — 핵심 파악"};
+  if(!sig.noContrast&&/요약|빈칸/.test(nm)) return {j:"REC",why:"대조 구조 → 요약·빈칸이 잘 걸림"};
+  if(!sig.noNarr&&/심경|함의/.test(nm)) return {j:"REC",why:"서사 지문 → 심경·함의 적합"};
+  if(!sig.short&&/순서|삽입/.test(nm)) return {j:"REC",why:"충분한 길이 → 순서·삽입 가능"};
+  return {j:"OK"}; }
+
+/* ---------- 렌더 ---------- */
+function types(){ return (T&&T.BEST_TYPES)||["요지","주제","제목","빈칸","어법","어휘","함의","요약","내용불일치","서술형"]; }
+function buildPills(){ var el=document.getElementById("pills"); el.innerHTML="";
+  types().forEach(function(t){ var b=document.createElement("button"); b.className="pill"; b.textContent=t; b.onclick=function(){ pick(t,b); }; b.dataset.t=t; el.appendChild(b); });
+  refresh(); }
+function refresh(){ var p=val(), sig=signals(p);
+  // 추천 카드
+  var recs=[]; document.querySelectorAll("#pills .pill").forEach(function(b){ var t=b.dataset.t, r=judge(t,sig);
+    b.classList.toggle("dis", r.j==="DIS"); b.title=r.j==="DIS"?r.r[2]:"";
+    if(r.j==="REC") recs.push({t:t,why:r.why}); });
+  var rg=document.getElementById("recs"), rt=document.getElementById("recTitle");
+  if(p.length>=40&&recs.length){ rt.style.display="";
+    rg.innerHTML=recs.slice(0,6).map(function(r){ return '<button class="rec'+(SEL[r.t]?" sel":"")+'" onclick="pick(\''+r.t.replace(/'/g,"\\'")+'\',this)"><div class="nm">'+esc(r.t)+'</div><div class="why">'+esc(r.why)+'</div></button>'; }).join("");
+  } else { rt.style.display="none"; rg.innerHTML=""; }
+  // 선택 동기화
+  document.querySelectorAll("#pills .pill").forEach(function(b){ b.classList.toggle("sel", !!SEL[b.dataset.t]); });
+  var n=Object.keys(SEL).length;
+  document.getElementById("sum").innerHTML=n?("<b>"+Object.keys(SEL).join(" · ")+"</b> — "+n+"문항 · 난이도 "+LEVEL):"유형을 선택하세요";
+  document.getElementById("go").disabled=!n;
+}
+function pick(t,el){ var sig=signals(val()); var r=judge(t,sig);
+  if(r.j==="DIS"&&!SEL[t]){ showDis(t,r.r); }
+  if(SEL[t]) delete SEL[t]; else SEL[t]=1;
+  hideDisIfOk(); refresh(); }
+function showDis(t,rule){ var d=document.getElementById("disbar"); d.style.display="block";
+  d.innerHTML='<b>'+esc(t)+'</b> — '+esc(rule[2])+'. 선택은 유지돼요(품질 주의). '
+    +(rule[3]?'<button class="gh" onclick="'+rule[4]+';hideDis()">'+rule[3]+'</button>':'')
+    +'<button class="gh" onclick="FORCED[\''+t.replace(/'/g,"\\'")+'\']=1;hideDis();refresh()">경고 끄기</button>'; }
+function hideDis(){ document.getElementById("disbar").style.display="none"; }
+function hideDisIfOk(){ }
+function selAll(on){ SEL={}; if(on) types().forEach(function(t){ SEL[t]=1; }); refresh(); }
+document.getElementById("lv").addEventListener("click",function(e){ var v=e.target&&e.target.dataset&&e.target.dataset.v; if(!v)return;
+  LEVEL=v; document.querySelectorAll("#lv span").forEach(function(s){ s.classList.toggle("on",s.dataset.v===v); }); refresh(); });
+
+/* ---------- 지문 ---------- */
+function val(){ return document.getElementById("passage").value.trim(); }
+function onEdit(){ var w=(val().match(/[A-Za-z]+/g)||[]).length; document.getElementById("wc").textContent=w+" 단어"; refresh(); try{localStorage.setItem("exam_passage",val());}catch(e){} }
+function loadSample(){ document.getElementById("passage").value="The pursuit of happiness is a deeply personal endeavor, yet its meaning is profoundly shaped by cultural context. In Western societies, happiness is often framed as a personal accomplishment, a byproduct of self-reliant striving and individual success. In contrast, many East Asian cultures view happiness as arising from harmony within relationships and the fulfillment of shared obligations. Because of this difference, the same event can produce very different emotional responses. However, researchers warn that treating one model as universal leads to flawed conclusions about human motivation. Understanding cultural variation in how joy is defined is therefore essential for anyone who hopes to study, teach, or promote well-being across diverse populations."; onEdit(); toast("샘플 지문 로드"); }
+try{ var sp=localStorage.getItem("exam_passage"); if(sp){ document.getElementById("passage").value=sp; } }catch(e){}
+setTimeout(onEdit,50);
+
+/* ---------- 지문 도구 ---------- */
+function busyNote(m){ document.getElementById("xfNote").textContent=m; }
+function xform(stage){ var p=val(); if(p.length<40) return toast("지문을 먼저 넣으세요");
+  busyNote("🔄 변형 중…");
+  T.transformStaged(p,stage,{strength:document.getElementById("xfLv").value,onProgress:busyNote}).then(function(r){
+    if(!r||!r.variant) return busyNote("변형 실패 — 다시 시도");
+    document.getElementById("passage").value=r.variant; onEdit();
+    busyNote("✓ "+(r.stage||"변형")+(r.pi?" · "+r.pi:"")+" 적용됨(이어 누르면 겹침)"); }).catch(function(e){ busyNote("오류: "+e.message); }); }
+function extend(){ var p=val(); if(p.length<60) return toast("지문을 먼저 넣으세요");
+  busyNote("📈 늘리는 중…");
+  T.extendPassage(p,{addSentences:3}).then(function(r){ if(!r) return busyNote("실패 — 다시 시도");
+    document.getElementById("passage").value=r.extended; onEdit(); busyNote("✓ +"+r.added.length+"문장 (원문 보존"+(r.preserved?"✓":"⚠")+")"); })
+    .catch(function(e){ busyNote("오류: "+e.message); }); }
+
+/* ---------- 출제 ---------- */
+var CIRC=["①","②","③","④","⑤"];
+async function run(){ var p=val(); if(p.length<40) return toast("지문을 먼저 넣으세요(40자↑)");
+  var list=Object.keys(SEL); if(!list.length) return toast("유형을 선택하세요");
+  var go=document.getElementById("go"); go.disabled=true; go.textContent="출제 중…";
+  ITEMS=[]; document.getElementById("out").innerHTML=""; document.getElementById("outHead").style.display="none";
+  var pw=document.getElementById("progWrap"), pr=document.getElementById("prog"); pw.style.display=""; pr.textContent="";
+  var done=0, prov="";
+  function plog(m){ pr.textContent+=m+"\n"; }
+  // 4개 병렬 처리
+  var queue=list.slice();
+  async function worker(){ while(queue.length){ var t=queue.shift(); var t0=Date.now();
+      try{ var opts={fast:true,level:LEVEL};
+        if(document.getElementById("csrChk").checked&&/서술|영작/.test(t)&&window.RAYTOOLS&&RAYTOOLS.logicHint){ var h=await RAYTOOLS.logicHint("서술형"); if(h) opts.hint=h; }
+        var q=await T.generateOne(p,t,opts);
+        if(q){ q.type=q.type||t; ITEMS.push(q); renderOne(q); done++; plog("✅ "+t+" 완성 ("+Math.round((Date.now()-t0)/1000)+"초)"); prov=T.provider(); }
+        else plog("✗ "+t+" 실패(지문 조건) — 다른 유형으로 시도해보세요");
+      }catch(e){ plog("✗ "+t+": "+(e&&e.message||e).slice(0,60)); } } }
+  await Promise.all([worker(),worker(),worker(),worker()]);
+  pw.style.display="none"; go.disabled=false; go.textContent="🚀 출제";
+  if(ITEMS.length){ document.getElementById("outHead").style.display="";
+    document.getElementById("engine").textContent="엔진: "+(prov==="proxy"?"🔐 내장":prov)+" · "+ITEMS.length+"문항";
+    toast("🎉 "+ITEMS.length+"문항 완성"); window.scrollTo({top:document.getElementById("outHead").offsetTop-10,behavior:"smooth"}); }
+  else toast("생성 실패 — 지문을 조금 늘리거나 다른 유형으로");
+}
+function renderOne(q){ var i=ITEMS.length-1, no=ITEMS.length;
+  var h='<div class="q"><div class="h">'+no+'. '+esc(q.type)
+    +'<span class="tools"><button onclick="addOne('+i+')">📄 담기</button><button onclick="regen('+i+',this)">🔄 재생성</button></span></div>'
+    +'<div class="ins">'+esc(q.instruction||"")+'</div>';
+  if(q.passage) h+='<div class="pg">'+String(q.passage).replace(/</g,"&lt;").replace(/&lt;u&gt;/g,"<u>").replace(/&lt;\/u&gt;/g,"</u>").replace(/\n/g,"<br>")+'</div>';
+  if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||j+1)+' '+esc(c)+'</div>'; }); h+='</div>'; }
+  h+='<div class="ans"><b>정답</b> '+(q.answer?(CIRC[q.answer-1]||q.answer):"서술형")+' · '+esc(String(q.explanation||"").slice(0,600))+'</div></div>';
+  document.getElementById("out").insertAdjacentHTML("beforeend",h); }
+async function regen(i,btn){ btn.textContent="…"; try{ var q=await T.generateOne(val(),ITEMS[i].type,{fast:true,level:LEVEL,hint:"직전과 다른 각도로"}); if(q){ q.type=q.type||ITEMS[i].type; ITEMS[i]=q; redraw(); toast("🔄 재생성 완료"); } }catch(e){ toast("재생성 실패"); } btn.textContent="🔄 재생성"; }
+function redraw(){ document.getElementById("out").innerHTML=""; var a=ITEMS; ITEMS=[]; a.forEach(function(q){ ITEMS.push(q); renderOne(q); }); }
+
+/* ---------- 담기(실험실 시험지 편집과 공유 저장소) ---------- */
+function bank(){ try{ return JSON.parse(localStorage.getItem("composeSheet")||"[]"); }catch(e){ return []; } }
+function addOne(i){ var q=ITEMS[i]; var a=bank();
+  var sig=(q.instruction||"")+(q.answer||"");
+  if(a.some(function(x){ return ((x.instruction||"")+(x.answer||""))===sig; })) return toast("이미 담긴 문제");
+  a.push(q); try{ localStorage.setItem("composeSheet",JSON.stringify(a.slice(0,300))); }catch(e){}
+  toast("📄 담김 — 시험지에 "+a.length+"문항"); }
+function addAll(){ ITEMS.forEach(function(_,i){ addOne(i); }); }
+
+/* ---------- 실물 미리보기 / Word ---------- */
+function docHtml(){ var showAns=document.body.classList.contains("showAns");
+  var body=ITEMS.map(function(q,i){ var s='<div class="q"><div class="h">'+(i+1)+'. ['+esc(q.type)+'] </div><div class="ins">'+esc(q.instruction||"")+'</div>';
+    if(q.passage) s+='<div class="pg">'+esc(String(q.passage).replace(/<\/?u>/g,""))+'</div>';
+    if(q.choices&&q.choices.length) s+='<div class="ch">'+q.choices.map(function(c,j){ return '<div>'+(CIRC[j]||j+1)+' '+esc(c)+'</div>'; }).join("")+'</div>';
+    if(showAns) s+='<div class="ans">정답 '+(q.answer?(CIRC[q.answer-1]||q.answer):"서술형")+' — '+esc(q.explanation||"")+'</div>';
+    return s+'</div>'; }).join("");
+  return "<html><head><meta charset='utf-8'><style>body{font-family:'Malgun Gothic',sans-serif;font-size:10.5pt;line-height:1.6;color:#111;padding:12mm} .pg{border:1px solid #888;padding:10px;margin:8px 0;line-height:1.8} .q{margin:14px 0} .h{font-weight:700} .ins{font-weight:700;margin:4px 0} .ch div{margin:2px 0} .ans{background:#f4f8f5;border:1px solid #d8e4dc;padding:6px 9px;margin-top:6px;font-size:9.5pt}</style></head><body>"+body+"</body></html>"; }
+function previewDoc(){ if(!ITEMS.length) return toast("먼저 출제하세요");
+  var ov=document.getElementById("pv"); if(!ov){ ov=document.createElement("div"); ov.id="pv";
+    ov.style.cssText="position:fixed;inset:0;background:rgba(8,10,16,.85);z-index:999;display:flex;flex-direction:column;padding:14px";
+    ov.innerHTML='<div style="display:flex;gap:8px;margin-bottom:8px;align-items:center;flex-wrap:wrap"><b style="color:#fff">👁 실물 — Word/PDF에 이대로 저장</b><span style="flex:1"></span><button class="gh" onclick="saveDoc()">⬇ Word</button><button class="gh" onclick="var f=document.getElementById(\'pvIf\');f.contentWindow.print()">🖨 인쇄/PDF</button><button class="gh" onclick="document.getElementById(\'pv\').style.display=\'none\'">✕ 닫기</button></div><iframe id="pvIf" style="flex:1;background:#fff;border:0;border-radius:11px"></iframe>';
+    document.body.appendChild(ov); }
+  ov.style.display="flex"; document.getElementById("pvIf").srcdoc=docHtml(); }
+function saveDoc(){ if(!ITEMS.length) return toast("먼저 출제하세요");
+  var blob=new Blob(["﻿"+docHtml()],{type:"application/msword"}); var a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download="RayEnglish_시험지.doc"; a.click(); toast("⬇ Word 저장"); }
+</script>
+</body>
+</html>
