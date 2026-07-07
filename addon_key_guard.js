@@ -52,12 +52,10 @@
     var CIRC = ["①", "②", "③", "④", "⑤"];
     var user = q.instruction + "\n\n[지문]\n" + pg + "\n\n" + q.choices.map(function (c, i) { return CIRC[i] + " " + c; }).join("\n") + "\n\n정답 번호만 출력.";
     var sys = "너는 한국 고등학교 영어 시험 응시자다. 지문과 선지를 근거로 정답의 '번호만'(1~5) 출력한다. 설명 금지.";
-    var votes = [];
-    for (var i = 0; i < 3; i++) {
-      var r = await T.llm([{ role: "system", content: sys }, { role: "user", content: user }],
-        { noRule: true, temperature: [0.2, 0.6, 0.9][i], timeout: 45000 }).catch(function () { return ""; });
-      var d = (String(r).match(/[1-5]/) || [])[0]; if (d) votes.push(+d);
-    }
+    // 속도 최적화: 2표 '병렬' 선실행 → 2표 일치 & 기록정답과 동일하면 즉시 통과(3번째 생략). 아니면 타이브레이크 1표만 추가.
+    function vote(temp) { return T.llm([{ role: "system", content: sys }, { role: "user", content: user }], { noRule: true, temperature: temp, timeout: 45000 }).then(function (r) { return +((String(r).match(/[1-5]/) || [])[0] || 0); }).catch(function () { return 0; }); }
+    var votes = (await Promise.all([vote(0.2), vote(0.7)])).filter(Boolean);
+    if (!(votes.length === 2 && votes[0] === votes[1] && votes[0] === q.answer)) { var t3 = await vote(0.9); if (t3) votes.push(t3); }
     if (!votes.length) return { flag: "솔버 응답 없음(판정 보류)" };
     var tally = {}; votes.forEach(function (v) { tally[v] = (tally[v] || 0) + 1; });
     var maj = +Object.keys(tally).sort(function (a, b) { return tally[b] - tally[a]; })[0], cnt = tally[maj];

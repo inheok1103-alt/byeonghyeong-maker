@@ -30,7 +30,7 @@
    * 키 미입력 → Pollinations(무키). Gemini/Groq '무료키' 입력 시 그쪽으로 라우팅.
    * 키는 사용자 브라우저(localStorage)에만 저장 — 공개 코드엔 절대 안 들어감. */
   var CFG = { geminiKey: "", groqKey: "", cerebrasKey: "", mistralKey: "", openrouterKey: "",
-    geminiModel: "gemini-2.5-flash", groqModel: "llama-3.3-70b-versatile", cerebrasModel: "llama-3.3-70b", mistralModel: "mistral-small-latest", openrouterModel: "meta-llama/llama-3.3-70b-instruct:free",
+    geminiModel: "gemini-2.5-flash", groqModel: "llama-3.3-70b-versatile", cerebrasModel: "llama3.3-70b", mistralModel: "mistral-small-latest", openrouterModel: "meta-llama/llama-3.3-70b-instruct:free",
     ollamaModel: "", ollamaUrl: "http://localhost:11434" };
   // OpenAI 호환 무료 제공자(Bearer + /chat/completions) — 회전 목록에 추가해 무료 용량을 몇 배로
   var OAI = {
@@ -107,7 +107,7 @@
   }
   async function llmWithRetry(messages, opts) {
     opts = opts || {}; var prov = opts.forceProvider || provider();
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 3; i++) {   // 죽은 제공자에 낭비 최소화(6→3) — 폴백 체인이 다음 제공자로 빠르게 이동
       LAST_LIMITED = false;
       var s = await llmRaw(messages, opts).catch(function () { return ""; });
       if (s && s.trim()) return s;
@@ -125,12 +125,16 @@
     return p;
   }
   // 연결된 공급자 폴백 체인: Gemini(키) → Groq(키) → Pollinations(무료). 앞이 실패/레이트리밋이면 다음으로.
-  function providerChain() { var c = []; if (CFG.ollamaModel) c.push("ollama"); KEYED.forEach(function (p) { if (hasLive(p)) c.push(p); }); if (CFG.proxyUrl) c.push("proxy"); c.push("pollinations"); return c; }
+  var LASTGOOD = "";   // 직전에 성공한 제공자 — 다음 호출은 여기부터(죽은 앞순위에 시간 낭비 방지)
+  function providerChain() { var c = []; if (CFG.ollamaModel) c.push("ollama"); KEYED.forEach(function (p) { if (hasLive(p)) c.push(p); }); if (CFG.proxyUrl) c.push("proxy"); c.push("pollinations");
+    var base = (c[0] === "ollama") ? 1 : 0; var gi = c.indexOf(LASTGOOD);
+    if (LASTGOOD && gi > base) { c.splice(gi, 1); c.splice(base, 0, LASTGOOD); }
+    return c; }
   async function tryChain(messages, opts, chain, i) {
     if (i >= chain.length) return "";
     var prov = chain[i], o = Object.assign({}, opts, { forceProvider: prov });
     var s = (prov === "pollinations") ? await pollSerial(messages, o) : await llmWithRetry(messages, o).catch(function () { return ""; });
-    if (s && s.trim()) return s;
+    if (s && s.trim()) { LASTGOOD = prov; return s; }
     return tryChain(messages, opts, chain, i + 1);   // 다음 공급자로 폴백
   }
   function llm(messages, opts) {
@@ -1564,7 +1568,7 @@
     var bopts = { onProgress: onP, ctx: ctx, fast: opts.fast };
     var maxTry = opts.fast ? 3 : 4;
     // 병렬: 키 공급자(Gemini/Groq)는 동시 3유형, 무키(Pollinations 직렬큐)는 1유형
-    var PAR = (provider() !== "pollinations") ? Math.min(3, types.length) : 1;
+    var PAR = (provider() !== "pollinations") ? Math.min(4, types.length) : 1;
     log(onP, "■ 2단계: 유형별 " + (opts.fast ? "빠른" : "초미분화") + " 출제…" + (PAR > 1 ? (" ⚡병렬 " + PAR + "유형 동시") : ""));
     var idx = 0, results = new Array(types.length);
     async function work() {

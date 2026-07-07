@@ -10,7 +10,7 @@
 const DEFAULT_MODELS = {
   gemini: "gemini-2.0-flash",
   groq: "llama-3.3-70b-versatile",
-  cerebras: "llama-3.3-70b",
+  cerebras: "llama3.3-70b",
   mistral: "mistral-small-latest",
   openrouter: "meta-llama/llama-3.3-70b-instruct:free",
 };
@@ -21,7 +21,14 @@ const OAI = {
   openrouter: "https://openrouter.ai/api/v1/chat/completions",
 };
 // 폴백 순서: 무료 한도 큰 순 → 무키 폴백
-const CHAIN = ["gemini", "groq", "cerebras", "mistral", "openrouter", "pollinations"];
+const CHAIN = ["groq", "gemini", "cerebras", "mistral", "openrouter", "pollinations"];   // 실측: groq가 가장 빠르고 안정 → 선두
+let LASTGOOD = "";            // 직전 성공 제공자 — 다음 요청은 여기부터
+const COOL = {};              // 실패 제공자 쿨다운(ms epoch) — 죽은 키에 반복 낭비 방지
+function orderedChain() {
+  const base = CHAIN.filter(p => p !== "pollinations").filter(p => !(COOL[p] && COOL[p] > Date.now()));
+  const o = (LASTGOOD && base.includes(LASTGOOD)) ? [LASTGOOD, ...base.filter(p => p !== LASTGOOD)] : base;
+  return [...o, "pollinations"];
+}
 
 function keysOf(env, prov) {
   return String(env[prov.toUpperCase() + "_KEY"] || "").split(/[\s,]+/).map(s => s.trim()).filter(Boolean);
@@ -79,7 +86,7 @@ async function generate(env, messages, temperature, json) {
     try { const t = await callOwnModel(env, messages, temperature); if (t && t.trim()) return { content: t, provider: "own-model" }; }
     catch (e) { lastErr = (e && e.msg) || String(e); }
   }
-  for (const prov of CHAIN) {
+  for (const prov of orderedChain()) {
     // 기본 모드: 키 제공자들이 모두 실패하면 무키 폴백(pollinations) 직전에 자체모델 시도
     if (prov === "pollinations" && ownMode === "fallback") {
       try { const t = await callOwnModel(env, messages, temperature); if (t && t.trim()) return { content: t, provider: "own-model" }; }
@@ -88,12 +95,14 @@ async function generate(env, messages, temperature, json) {
     try {
       if (prov === "pollinations") { const t = await callPollinations(messages, temperature); if (t && t.trim()) return { content: t, provider: prov }; continue; }
       const keys = keysOf(env, prov); if (!keys.length) continue;
+      let allLimited = true;
       for (const k of keys) {
         try {
           const t = prov === "gemini" ? await callGemini(env, k, messages, temperature, json) : await callOAI(env, prov, k, messages, temperature, json);
-          if (t && t.trim()) return { content: t, provider: prov };
-        } catch (e) { lastErr = e.msg || String(e); if (!e.limited) break; /* 레이트리밋이면 다음 키 시도 */ }
+          if (t && t.trim()) { LASTGOOD = prov; return { content: t, provider: prov }; }
+        } catch (e) { lastErr = e.msg || String(e); if (!e.limited) { allLimited = false; break; } /* 레이트리밋이면 다음 키 시도 */ }
       }
+      COOL[prov] = Date.now() + (allLimited ? 5 : 15) * 60 * 1000;   // 429=5분 · 인증/모델오류=15분 건너뜀
     } catch (e) { lastErr = (e && e.msg) || String(e); }
   }
   throw new Error(lastErr);
