@@ -114,7 +114,11 @@ body.showAns .q .ans{display:block}
   <!-- ② 유형 -->
   <div class="card">
     <div class="step"><span class="n">2</span> 유형 고르기 <span class="hint">여러 개 = 다문항 · 회색은 이 지문에 부적합(클릭하면 이유)</span></div>
-    <div class="note" id="recTitle" style="color:var(--mint);font-weight:700;display:none">● 이 지문에 잘 맞는 유형</div>
+    <div class="row" style="margin-top:2px">
+      <button class="gh warm" id="anBtn" onclick="analyzeRecs()" style="font-weight:800">🔍 지문 분석 → 맞춤 추천</button>
+      <span class="note" id="anStat">지문을 실제로 읽고 구조(TS)를 판정해, 본문 문장을 근거로 유형을 추천합니다</span>
+    </div>
+    <div class="note" id="tsLine" style="display:none;margin-top:8px;padding:8px 11px;background:var(--card2);border:1px solid var(--line);border-radius:9px;color:var(--soft)"></div>
     <div class="recs" id="recs"></div>
     <div class="row" style="margin-top:10px">
       <span class="note" style="font-weight:700;color:var(--gold2)">⚡ 원클릭 세트:</span>
@@ -213,15 +217,13 @@ function buildPills(){ var el=document.getElementById("pills"); el.innerHTML="";
   if(rest.length){ var h2=document.createElement("div"); h2.style.cssText="width:100%;font-size:11px;font-weight:800;color:var(--mute);margin:8px 0 2px"; h2.textContent="기타 ("+rest.length+")"; el.appendChild(h2);
     rest.forEach(function(t){ var b=document.createElement("button"); b.className="pill"; b.textContent=t; b.onclick=function(){ pick(t,b); }; b.dataset.t=t; el.appendChild(b); }); }
   refresh(); }
+var RECS=[];   // 분석 결과(지문 근거 포함) — 🔍 버튼으로 채워짐
 function refresh(){ var p=val(), sig=signals(p);
-  // 추천 카드
-  var recs=[]; document.querySelectorAll("#pills .pill").forEach(function(b){ var t=b.dataset.t, r=judge(t,sig);
-    b.classList.toggle("dis", r.j==="DIS"); b.title=r.j==="DIS"?r.r[2]:"";
-    if(r.j==="REC") recs.push({t:t,why:r.why}); });
-  var rg=document.getElementById("recs"), rt=document.getElementById("recTitle");
-  if(p.length>=40&&recs.length){ rt.style.display="";
-    rg.innerHTML=recs.slice(0,6).map(function(r){ return '<button class="rec'+(SEL[r.t]?" sel":"")+'" onclick="pick(\''+r.t.replace(/'/g,"\\'")+'\',this)"><div class="nm">'+esc(r.t)+'</div><div class="why">'+esc(r.why)+'</div></button>'; }).join("");
-  } else { rt.style.display="none"; rg.innerHTML=""; }
+  // 부적합(회색)만 즉시 신호로 — 추천은 실제 분석(analyzeRecs) 결과 사용
+  document.querySelectorAll("#pills .pill").forEach(function(b){ var t=b.dataset.t, r=judge(t,sig);
+    b.classList.toggle("dis", r.j==="DIS"); b.title=r.j==="DIS"?r.r[2]:""; });
+  var rg=document.getElementById("recs");
+  rg.innerHTML=RECS.map(function(r){ return '<button class="rec'+(SEL[r.t]?" sel":"")+'" onclick="pick(\''+r.t.replace(/'/g,"\\'")+'\',this)"><div class="nm">'+esc(r.t)+(r.logic?' <span style="font-size:10px;color:var(--mint)">'+esc(r.logic)+'</span>':'')+'</div><div class="why">'+esc(r.why)+'</div></button>'; }).join("");
   // 선택 동기화
   document.querySelectorAll("#pills .pill").forEach(function(b){ b.classList.toggle("sel", !!SEL[b.dataset.t]); });
   var n=Object.keys(SEL).length;
@@ -239,6 +241,36 @@ function showDis(t,rule){ var d=document.getElementById("disbar"); d.style.displ
 function hideDis(){ document.getElementById("disbar").style.display="none"; }
 function hideDisIfOk(){ }
 function selAll(on){ SEL={}; if(on) types().forEach(function(t){ SEL[t]=1; }); refresh(); }
+/* 🔍 진짜 본문 분석 추천 — AI가 지문을 읽고 TS 구조 판정 + 본문 문장 인용 근거로 유형 추천 (OP_TYPE_SELECT 결정테이블 참조) */
+var ANCACHE={};
+async function analyzeRecs(){
+  var p=val(); if(p.length<40) return toast("지문을 먼저 넣으세요(40자↑)");
+  var key=p.slice(0,80)+p.length;
+  var btn=document.getElementById("anBtn"), st=document.getElementById("anStat"), tl=document.getElementById("tsLine");
+  if(ANCACHE[key]){ applyAn(ANCACHE[key]); return; }
+  btn.disabled=true; btn.textContent="🔍 분석 중…"; st.textContent="지문 구조·근거 문장 판독 중(수 초)";
+  var TSREF="TS01 주장-근거→요지·필자주장·제목 / TS02 통념-반박→제목·요지·빈칸(어구) / TS03 문제-해결→주제·제목·요약문AB / TS04 원인-결과→빈칸(어구)·글의순서 / TS05 비교-대조→요약문AB·제목·내용불일치 / TS06 사례-일반화→요지·빈칸(어구) / TS07 장점-한계→어휘(밑줄)·제목 / TS09 과정-절차→글의순서·문장삽입 / TS10 실험-해석→빈칸(어구)·내용일치·요약문AB / TS11 현상-분석→빈칸(어구)·요지 / TS12 반전-전환→문장삽입·빈칸(어구)·제목 / TS14 서사-일화→심경변화·밑줄함의";
+  try{
+    var o=await T.llmJSON([
+      {role:"system",content:"너는 한국 고등 내신 영어 출제 전문가다. 지문을 실제로 분석해 구조(TS)를 판정하고, '본문 문장을 직접 인용'한 근거로 출제 유형을 추천한다. JSON만 출력."},
+      {role:"user",content:"[지문]\n"+p.slice(0,2200)+"\n\n[TS→유형 참고표] "+TSREF+"\n[선택 가능한 유형 목록] "+types().join(", ")
+        +"\n\n분석해서 JSON으로만: {\"ts\":\"TS코드 이름\",\"ts_evidence\":\"구조 판정의 근거가 된 본문 표현 인용(영어 원문 그대로 1~2개)\",\"recommends\":[{\"type\":\"목록에 있는 유형명 그대로\",\"why\":\"이 지문의 어떤 문장/표현 때문에 이 유형이 잘 걸리는지 — 본문 인용 포함 한 문장(한국어)\",\"logic\":\"L01~L12 중\"} 5~6개, 객관식4+서술형1~2 섞어서],\"unfit\":[{\"type\":\"유형명\",\"why\":\"본문 근거로 부적합 이유\"} 2개]}"}
+      ],{temperature:0.3,timeout:90000});
+    if(!o||!o.recommends) throw new Error("분석 응답 형식 오류");
+    var all={}; types().forEach(function(t){ all[t]=1; });
+    o.recommends=o.recommends.filter(function(r){ return r&&all[r.type]; }).slice(0,6);
+    ANCACHE[key]=o; applyAn(o);
+  }catch(e){ st.textContent="분석 실패("+String(e.message||e).slice(0,40)+") — 다시 눌러보세요"; }
+  btn.disabled=false; btn.textContent="🔍 지문 분석 → 맞춤 추천";
+}
+function applyAn(o){
+  var tl=document.getElementById("tsLine"), st=document.getElementById("anStat");
+  tl.style.display=""; tl.innerHTML="<b style='color:var(--gold2)'>구조 "+esc(o.ts||"?")+"</b> — 근거: <i>“"+esc(String(o.ts_evidence||"").slice(0,160))+"”</i>"
+    +((o.unfit&&o.unfit.length)?('<div style="margin-top:4px;color:var(--mute)">부적합: '+o.unfit.map(function(u){ return esc(u.type)+"("+esc(String(u.why||"").slice(0,50))+")"; }).join(" · ")+'</div>'):"");
+  RECS=(o.recommends||[]).map(function(r){ return {t:r.type, why:String(r.why||"").slice(0,110), logic:r.logic||""}; });
+  st.textContent="✓ 분석 완료 — 카드를 눌러 선택하세요 (근거는 본문 인용)";
+  refresh();
+}
 /* ⚡ 원클릭 세트 — 내신 시험지 구성 그대로(존재하는 유형만 자동 필터) */
 var PRESETS={
   std:["요지","제목","빈칸(어구)","어법(밑줄)","내용불일치","글의순서","조건영작","어형변형(괄호)"],
