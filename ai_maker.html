@@ -404,6 +404,7 @@ body.simple .expert{display:none!important}
     <div class="row" style="margin-top:10px">
       <button class="go" id="go" onclick="run()">🚀 고품질 출제</button>
       <button class="ghost" onclick="toggleAns()">정답·해설 보기</button>
+      <button class="ghost noprint" onclick="composeAddAll()" title="이번에 만든 문제 전부를 시험지 편집기에 담기(누적)" style="color:#4a3fa5;font-weight:700">📄 전부 담기</button>
       <button class="ghost noprint" onclick="previewDoc()" title="Word/PDF에 저장되는 실제 모습 그대로 미리보기">👁 실물 미리보기</button>
       <button class="ghost noprint" onclick="window.print()">인쇄/PDF</button>
     </div>
@@ -837,8 +838,10 @@ function analyze(){
 document.getElementById("mesh").onclick=function(){ T.healthCheck().then(function(l){ l.forEach(function(m){ if(m.ok) pulse(m.key); else { var g=document.getElementById("nu_"+m.key); if(g) g.querySelector("circle").setAttribute("fill","#555"); } }); }); };
 
 /* (구버전 logln/run은 삭제 — 아래 UX 블록의 최신판이 유일본) */
+function composeAddLive(k){ var q=(window.LIVEQ||[])[k]; if(!q){ toast("문항을 찾지 못했습니다"); return; } var r=composeAdd(q); if(r==="dup"){ toast("이미 시험지에 담긴 문제입니다"); } else if(r){ toast("📄 시험지에 담김 — 현재 "+composeAll().length+"문항"); } }
 function renderOneQ(q,no,ri){
-  var h='<div class="q"><div class="h">'+no+'. '+esc(q.type)+' <span class="chip">AI</span></div><div class="ins">'+esc(q.instruction)+'</div>';
+  var tool=(ri!=null)?(' <button class="ghost noprint" style="font-size:8pt;padding:3px 9px;margin-left:6px;color:#4a3fa5" onclick="composeAddLive('+ri+')" title="이 문제를 시험지 편집기에 담기(누적)">📄 담기</button>'):'';
+  var h='<div class="q"><div class="h">'+no+'. '+esc(q.type)+' <span class="chip">AI</span>'+tool+'</div><div class="ins">'+esc(q.instruction)+'</div>';
   if(q.passage&&!q._setChild) h+='<div class="pg">'+pgHtml(q.passage)+'</div>';
   if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||(j+1))+' '+esc(c)+'</div>'; }); h+='</div>'; }
   var a=q.answer?(CIRC[q.answer-1]||q.answer):"서술형";
@@ -1657,7 +1660,7 @@ function run(){
   var STREAMN=0;
   function onItemLive(q){ STREAMN++; var out=document.getElementById("out");
     if(STREAMN===1) out.innerHTML='<div class="card"><h2>📝 결과 <span class="note">(완성되는 대로 표시 중…)</span></h2><div id="liveItems"></div><div class="skel"></div></div>';
-    var li=document.getElementById("liveItems"); if(li){ q._setChild=false; li.insertAdjacentHTML("beforeend", renderOneQ(q, STREAMN, null)); }
+    var li=document.getElementById("liveItems"); if(li){ q._setChild=false; window.LIVEQ=window.LIVEQ||[]; window.LIVEQ.push(q); li.insertAdjacentHTML("beforeend", renderOneQ(q, STREAMN, window.LIVEQ.length-1)); }
   }
   pre.then(function(pg){
     LASTPASSAGE=pg;
