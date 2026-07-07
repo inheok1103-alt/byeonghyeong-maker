@@ -1,6 +1,30 @@
 {
- "updated": "2026-07-07T08:56:02.322Z",
+ "updated": "2026-07-07T12:21:56.725Z",
  "samples": [
+  {
+   "ts": "2026-07-07T12:20:03.588Z",
+   "type": "필자주장",
+   "level": "중",
+   "audit": "어법 의심 4건 · 솔버 3/3 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Students avoiding group discussion and individual work to ignore new vocabulary meanings and neglect reviewing understanding.",
+     "Students using group discussion to infer new vocabulary meanings from context.",
+     "Students using group discussion and individual work to infer new vocabulary meanings from context and review understanding to measure progress.",
+     "Students using group discussion, individual work, and whole‑class lectures to infer new vocabulary meanings, review understanding, and assess learning outcomes.",
+     "Students using group discussion and individual work to practice math problem solving and review their progress."
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Students should use group discussion and individual work to infer new vocabulary meanings from context and then review their understanding to measure progress.'이며 정답 (그룹 토론과 개별 작업을 사용하여 맥락에서 새로운 어휘 의미를 추론하고 이해를 검토하여 진행 상황을 측정합니다.)이 이를 반영한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함). [핵심 논지: Students should use group discussion and individual work to infer new vocabulary meanings from context and then review their understanding to measure progress.]"
+   }
+  },
   {
    "ts": "2026-07-07T08:52:16.019Z",
    "type": "내용일치",
@@ -239,30 +263,6 @@
     ],
     "answer": 2,
     "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-05T20:42:46.728Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "‘putative’는 모든 상황에서 사실이라고 확정적으로 설명할 수 있다.",
-     "‘putative’라는 용어는 사실이지만 아직 입증되지 않은 것으로 여겨지는 것을 가리킨다.",
-     "‘putative’는 보통 사실이 아니라 가정에 근거한 허위 정보를 의미한다.",
-     "‘putative’는 과학적 연구와 전혀 관련이 없다.",
-     "‘putative’는 이미 증명된 사실을 가리키는 용어이다."
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'The term “putative” is used to describe something that is supposedly true but has not yet been proven.'이며 정답 (‘추정’라는 용어는 사실이지만 아직 입증되지 않은 것으로 여겨지는 것을 가리킨다.)이 이를 반영한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The term “putative” is used to describe something that is supposedly true but has not yet been proven.]"
    }
   }
  ]
