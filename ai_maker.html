@@ -253,6 +253,12 @@ body.simple .expert{display:none!important}
 .uimode{position:absolute;right:16px;bottom:12px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;font-size:8.6pt;padding:4px 11px;border-radius:14px}
 .uimode:hover{background:rgba(255,255,255,.28)}
 .rp-head{font-size:10pt;font-weight:800;color:#4f46e5;margin:2px 0 4px;display:flex;align-items:center;gap:6px}
+/* 결과 문항(.q) 가독성: 흰 문항지 위 글자는 항상 진하게 — 다크 스킨 상속 차단 */
+#out .q,#out .q .ins,#out .q .ch,#out .q .ch div,#out .q .pg,#paper .q,#paper .q .ins,#paper .q .ch div,#paper .q .pg{color:#16201d!important}
+#out .q .h,#paper .q .h{color:#111!important}
+#out .q .note,#paper .q .note{color:#5f6b66!important}
+#out .ans,#paper .ans{color:#1c2a24!important}
+#out .q{background:#fffefd}
 </style>
 </head>
 <body>
@@ -398,6 +404,7 @@ body.simple .expert{display:none!important}
     <div class="row" style="margin-top:10px">
       <button class="go" id="go" onclick="run()">🚀 고품질 출제</button>
       <button class="ghost" onclick="toggleAns()">정답·해설 보기</button>
+      <button class="ghost noprint" onclick="previewDoc()" title="Word/PDF에 저장되는 실제 모습 그대로 미리보기">👁 실물 미리보기</button>
       <button class="ghost noprint" onclick="window.print()">인쇄/PDF</button>
     </div>
   </div>
@@ -1990,7 +1997,7 @@ function render(items){
   });
   h+='</div><div class="ans'+(ANSSHOWN?' show':'')+'" style="margin-top:12px;border-top:2px solid #223;padding-top:7px"><b>[정답표]</b> '+key.map(function(k){ return k.no+'.'+(k.a?(CIRC[k.a-1]||k.a):'서술'); }).join('  ')+'</div>';
   h+='</div>';
-  h+='<div class="row noprint" style="margin-top:10px;border-top:1px dashed #ccc;padding-top:8px"><b style="font-size:9.5pt">🗂 정리</b><button class="ghost" onclick="qbSaveAll()">🗃 문제뱅크 누적</button><button class="ghost" onclick="bankSave(\'work\')">💾 지문뱅크 저장</button><button class="ghost" onclick="copyResult()">📋 복사</button><button class="ghost" onclick="previewWorkbook()">👁 미리보기</button><button class="ghost" onclick="downloadWorkbook()">📘 워크북 Word</button><button class="ghost" onclick="printWorkbook()">📘 워크북 PDF</button><button class="ghost" onclick="makeAnalysis()">📑 분석지</button><button class="ghost" onclick="downloadDoc()">⬇ Word(시험지)</button><button class="ghost" onclick="window.print()">🖨 인쇄</button><span class="note">누적한 문제는 ① 카드 🗃 문제뱅크에서 언제든 합본 시험지로</span></div>';
+  h+='<div class="row noprint" style="margin-top:10px;border-top:1px dashed #ccc;padding-top:8px"><b style="font-size:9.5pt">🗂 정리</b><button class="ghost" onclick="qbSaveAll()">🗃 문제뱅크 누적</button><button class="ghost" onclick="bankSave(\'work\')">💾 지문뱅크 저장</button><button class="ghost" onclick="copyResult()">📋 복사</button><button class="ghost" onclick="previewDoc()">👁 시험지 실물</button><button class="ghost" onclick="previewWorkbook()">👁 워크북 미리보기</button><button class="ghost" onclick="downloadWorkbook()">📘 워크북 Word</button><button class="ghost" onclick="printWorkbook()">📘 워크북 PDF</button><button class="ghost" onclick="makeAnalysis()">📑 분석지</button><button class="ghost" onclick="downloadDoc()">⬇ Word(시험지)</button><button class="ghost" onclick="window.print()">🖨 인쇄</button><span class="note">누적한 문제는 ① 카드 🗃 문제뱅크에서 언제든 합본 시험지로</span></div>';
   document.getElementById("out").innerHTML=h+'</div>';
   if(ANSSHOWN) [].forEach.call(document.querySelectorAll("#out .ans"),function(a){ a.classList.add("show"); });   // 재렌더 후 정답 표시 상태 보존(내보내기 정합)
 }
@@ -2169,6 +2176,21 @@ function kwHighlight(k){
   var n=0; (LASTITEMS||[]).forEach(function(q,i){ if(q._kw===k){ var el=document.getElementById("q_"+i); if(el){ el.style.outline="2.5px solid #6D45B8"; el.style.outlineOffset="3px"; n++; } } });
   logln("🔗 #"+k+" 연결 문항 "+n+"개 강조(2.5초)");
   setTimeout(function(){ [].forEach.call(document.querySelectorAll(".q"),function(el){ el.style.outline=""; }); },2500);
+}
+/* 👁 실물 미리보기: Word(.doc)/PDF에 저장되는 것과 '같은 HTML'을 그대로 보여줌(오버레이 iframe) */
+function previewDoc(){
+  var src=document.getElementById("paper")||document.getElementById("qlist"); if(!src){ alert("먼저 문제를 만드세요."); return; }
+  var cl=src.cloneNode(true);
+  [].forEach.call(cl.querySelectorAll("button, .noprint, [id^=exp_], [id^=rvb_], [id^=rvs_]"),function(n){ if(n.parentNode) n.parentNode.removeChild(n); });
+  var shown=!!document.querySelector("#paper .ans.show");
+  if(!shown) [].forEach.call(cl.querySelectorAll(".ans"),function(n){ if(n.parentNode) n.parentNode.removeChild(n); });
+  var html="<html><head><meta charset='utf-8'><style>body{font-family:'Malgun Gothic',sans-serif;font-size:10.5pt;line-height:1.6;color:#111;background:#fff;padding:14mm} .pg{border:1px solid #888;padding:10px;margin:8px 0;line-height:1.8} .ins{white-space:pre-wrap} .q{margin:13px 0} .h{font-weight:700} .ch div{margin:2px 0} .ans{background:#f4f8f5;border:1px solid #d8e4dc;padding:6px 9px;margin-top:6px}</style></head><body>"+cl.innerHTML+"</body></html>";
+  var ov=document.getElementById("docPrevOv");
+  if(!ov){ ov=document.createElement("div"); ov.id="docPrevOv"; ov.className="noprint"; ov.style.cssText="position:fixed;inset:0;background:rgba(8,10,18,.82);z-index:999;display:flex;flex-direction:column;padding:16px";
+    ov.innerHTML='<div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;flex-wrap:wrap"><b style="color:#fff;font-size:11pt">👁 실물 미리보기 <span style="font-weight:400;font-size:9pt;color:#cbd">— Word(.doc)·PDF에 이 모습 그대로 저장됩니다</span></b><span style="flex:1"></span><button class="ghost" onclick="downloadDoc()">⬇ Word 저장</button><button class="ghost" onclick="var f=document.getElementById(\'docPrevIf\');f.contentWindow.focus();f.contentWindow.print()">🖨 PDF/인쇄</button><button class="ghost" onclick="document.getElementById(\'docPrevOv\').style.display=\'none\'">✕ 닫기</button></div><iframe id="docPrevIf" style="flex:1;background:#fff;border:0;border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.5)"></iframe>';
+    document.body.appendChild(ov); }
+  ov.style.display="flex";
+  document.getElementById("docPrevIf").srcdoc=html;
 }
 function downloadDoc(){
   var src=document.getElementById("paper")||document.getElementById("qlist"); if(!src){ alert("먼저 문제를 만드세요."); return; }
