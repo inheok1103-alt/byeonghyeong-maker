@@ -20,6 +20,7 @@ textarea{width:100%;min-height:130px;border:1px solid var(--line);border-radius:
 .types{display:flex;flex-wrap:wrap;gap:var(--s2);margin:var(--s1) 0}
 .types label{font-size:var(--fs-sm);border:1.5px solid var(--line);border-radius:18px;padding:var(--s1) var(--s4);cursor:pointer;user-select:none;background:#fafbfb}
 .types input{display:none}.types label.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.types label.dis{opacity:.4;border-style:dashed}.types label.dis:hover{opacity:.7;border-color:#e2b95e}
 .row{display:flex;gap:var(--s3);align-items:center;flex-wrap:wrap}
 button{cursor:pointer;border:none;border-radius:9px;font-weight:700;font-family:inherit}
 .go{background:var(--ac);color:#fff;font-size:var(--fs-md);padding:var(--s3) var(--s7)}.go:disabled{background:#9bb5ae;cursor:wait}
@@ -375,8 +376,11 @@ body.simple .expert{display:none!important}
       <button class="ghost" style="font-size:8.4pt;font-weight:700;color:#0f766e" onclick="selectAllTypes(true)" title="가능한 모든 유형 선택">✅ 전체 선택 <span id="typeCnt" class="note" style="font-weight:400"></span></button>
       <button class="ghost" style="font-size:8.4pt" onclick="selectAllTypes(false)" title="전체 해제">⬜ 전체 해제</button>
       <button class="ghost" style="font-size:8.4pt" onclick="selectRecommendedTypes()" title="자주 쓰는 핵심 유형만">⭐ 추천만</button>
+      <label style="margin-left:auto;font-size:8.8pt;cursor:pointer;color:#5a4fb0;font-weight:700" title="끄면 단일 유형(라디오처럼 하나만), 켜면 여러 유형 동시 선택"><input type="checkbox" id="multiTypes" onchange="tselMulti(this.checked)"> 다문항 모드</label>
     </div>
+    <div id="recRow" style="display:none;margin:2px 0 6px;font-size:9pt"></div>
     <div class="types" id="types"></div>
+    <div id="disHelp" style="display:none;margin-top:6px;background:#fff8ec;border:1px solid #e2b95e;border-radius:9px;padding:8px 11px;font-size:9pt;color:#7a5b17"></div>
     <div id="pgTypePanel" style="display:none;margin-top:6px;border:1px solid var(--line2,#363B4D);border-radius:10px;padding:8px 10px"></div>
     <div class="row" style="margin-top:8px"><button class="ghost" onclick="showPipes()">🧪 파이프라인 설계도 보기</button><span class="note">선택 유형의 라인별 처리 + 담당 API (하네스가 라인 순서대로 실행)</span></div>
     <div id="pipes"></div>
@@ -796,14 +800,71 @@ var TYPES=(T&&T.BEST_TYPES)||["어법","어휘","빈칸","주제","제목","함�
 var DEF={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1};
 var tdiv=document.getElementById("types");
 TYPES.forEach(function(t){ var l=document.createElement("label"); l.className=DEF[t]?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(DEF[t]?" checked":"")+'>'+t;
-  l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); }; tdiv.appendChild(l); });
+  l.querySelector("input").onchange=function(){ tselChipChange(this,l); }; tdiv.appendChild(l); });
+(function(){ var mt=document.getElementById("multiTypes"); if(mt) mt.checked=TSEL.multi; if(typeof tselUpdate==="function") setTimeout(tselUpdate,300); })();
 /* 🎯 지문별 배정: 유형 칩 중 하나(맨 앞) — 누르면 유형 칩 아래에 지문별 배정판이 열림(1지문 다문항 포함) */
 (function(){ var pgl=document.createElement("label"); pgl.id="pgTypeChip"; pgl.style.cssText="border-color:#7c6ee6;color:#5a4fb0;font-weight:700";
   pgl.textContent="🎯 지문별 배정"; pgl.title="지문마다 유형을 따로 배정 — 1지문에 여러 유형을 고르면 다문항 세트";
   pgl.onclick=function(){ togglePgTypes(); }; tdiv.insertBefore(pgl, tdiv.firstChild); })();
 function chosen(){ return [].slice.call(document.querySelectorAll("#types input:checked")).map(function(i){return i.value;}); }
-function selectAllTypes(on){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=!!on; i.parentNode.classList.toggle("on",!!on); }); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }
-function selectRecommendedTypes(){ var REC={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1,"내용불일치":1,"요약":1,"빈칸(어구)":1,"어법(밑줄)":1,"어휘(밑줄)":1,"밑줄함의":1,"글의순서":1,"문장삽입":1,"무관문장":1}; [].forEach.call(document.querySelectorAll("#types input"),function(i){ var on=!!REC[i.value]; i.checked=on; i.parentNode.classList.toggle("on",on); }); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }
+/* ===== 유형 선택 로직 (OP_TYPE_SELECT v1.0 반영) =====
+   지문 신호를 코드로 스캔 → 유형별 REC(추천)/OK/DIS(부적합) 판정.
+   DIS는 회색+클릭 시 이유·해결버튼(막다른 길 금지, TSEL-R22 강행 허용+경고).
+   다문항 모드 OFF(기본)면 단일 선택(TSEL-R01/R04). */
+var TSEL={multi:(function(){try{return localStorage.getItem("multiTypes")==="1";}catch(e){return false;}})(),forced:{}};   // 기본=단일 선택(TSEL-R01)
+function tselSignals(p){
+  var w=(p.match(/[A-Za-z]+/g)||[]).length;
+  return { words:w, short:w>0&&w<120,
+    noNum:!/\b\d{2,}(\.\d+)?%?|percent|million|billion|\$|₩/.test(p),
+    noContrast:!/\b(however|in contrast|whereas|while|on the other hand|unlike|but)\b/i.test(p),
+    noNarrative:!/\b(I|he|she)\s+(felt|smiled|cried|shouted|sighed|trembled|laughed)|\bheart (sank|raced|pounded)/i.test(p),
+    noPractical:!/\b(dear|notice|schedule|admission|fee|register|p\.?m\.?|a\.?m\.?|RSVP|onwards?)\b/i.test(p),
+    fewGrammar:((p.match(/\b(which|that|who|whom|whose|being|to \w+|having|been|is|are|was|were)\b/gi)||[]).length)<8 };
+}
+var TSEL_DIS=[ // [신호키, 유형명 패턴, 이유, 해결{label,fn}]
+  ["short", /순서|삽입|무관/, "지문이 짧아(120단어 미만) 분할·삽입 공간이 부족해요", {label:"📈 지문 늘리기로 해결", fn:"extendCur()"}],
+  ["noNum", /도표|계산/, "지문에 수치·도표 데이터가 없어요", null],
+  ["fewGrammar", /어법/, "밑줄 걸 문법 포인트가 부족해요", {label:"🔄 ②구문 변형으로 해결", fn:"doTransform('phrase')"}],
+  ["noContrast", /대비|대조/, "대조(A/B) 구조가 아니에요", null],
+  ["noNarrative", /심경|분위기|일화/, "서사·감정 어휘가 없는 지문이에요", null],
+  ["noPractical", /안내문|실용|목적/, "안내문·광고 형식이 아니에요", null]
+];
+function tselJudge(name,sig){ // 'DIS'|'REC'|'OK'
+  for(var i=0;i<TSEL_DIS.length;i++){ var r=TSEL_DIS[i]; if(sig[r[0]]&&r[1].test(name)&&!TSEL.forced[name]) return "DIS"; }
+  if(/요지|주제|제목/.test(name)) return "REC";                              // TSEL-R21 기본 추천
+  if(!sig.noContrast&&/요약|빈칸/.test(name)) return "REC";                   // 대조 구조 → 요약·빈칸
+  if(!sig.noNarrative&&/심경|함의/.test(name)) return "REC";                  // 서사 → 심경·함의
+  if(!sig.short&&/순서|삽입/.test(name)) return "OK";
+  return "OK";
+}
+function tselUpdate(){
+  var p=(typeof srcPassage==="function"?srcPassage():"")||""; var sig=tselSignals(p);
+  var labs=[].slice.call(document.querySelectorAll("#types label")); var recs=[];
+  labs.forEach(function(l){ var inp=l.querySelector("input"); if(!inp) return; var nm=inp.value;
+    var j=p.length<40?"OK":tselJudge(nm,sig);
+    l.classList.toggle("dis", j==="DIS"); l.title=(j==="DIS")?(tselDisReason(nm,sig)+" — 클릭해 해결 방법 보기"):"";
+    if(j==="REC") recs.push(nm); });
+  var rr=document.getElementById("recRow");
+  if(rr){ if(p.length>=40&&recs.length){ rr.style.display=""; rr.innerHTML='<b style="color:#0f766e">🎯 이 지문 추천:</b> '+recs.slice(0,5).map(function(n){return '<a href="javascript:tselPick(\''+n.replace(/'/g,"\\'")+'\')" style="color:#0f766e;font-weight:700;margin-right:8px">'+esc(n)+'</a>';}).join("")+'<span class="note">— 지문 구조 신호 기반(자동)</span>'; } else rr.style.display="none"; }
+}
+function tselDisReason(nm,sig){ for(var i=0;i<TSEL_DIS.length;i++){ var r=TSEL_DIS[i]; if(sig[r[0]]&&r[1].test(nm)) return r[2]; } return "이 지문 구조에는 부적합해요"; }
+function tselPick(nm){ var inp=document.querySelector('#types input[value="'+nm+'"]'); if(!inp) return; if(!TSEL.multi){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=false; i.parentNode.classList.remove("on"); }); } inp.checked=true; inp.parentNode.classList.add("on"); typeCntUpdate(); updateEstimate(); saveState(); }
+function tselMulti(on){ TSEL.multi=on; try{localStorage.setItem("multiTypes",on?"1":"0");}catch(e){} if(!on){ var c=chosen(); if(c.length>1){ tselPick(c[c.length-1]); } } }
+function tselShowDis(nm,sig){
+  var box=document.getElementById("disHelp"); if(!box) return; var reason=tselDisReason(nm,sig); var fix=null;
+  for(var i=0;i<TSEL_DIS.length;i++){ var r=TSEL_DIS[i]; if(sig[r[0]]&&r[1].test(nm)){ fix=r[3]; break; } }
+  box.style.display=""; box.innerHTML='<b>'+esc(nm)+'</b> — '+esc(reason)+'. '
+    +(fix?('<button class="ghost" style="font-size:8.6pt;color:#0f766e;font-weight:700" onclick="document.getElementById(\'disHelp\').style.display=\'none\';'+fix.fn+'">'+fix.label+'</button> '):'')
+    +'<button class="ghost" style="font-size:8.6pt" onclick="tselForce(\''+nm.replace(/'/g,"\\'")+'\')">그래도 이 유형으로(품질 낮을 수 있음)</button>';
+}
+function tselForce(nm){ TSEL.forced[nm]=1; document.getElementById("disHelp").style.display="none"; tselUpdate(); tselPick(nm); toast("⚠ 부적합 경고를 무시하고 선택 — 결과를 꼭 검수하세요"); }
+function tselChipChange(inp,l){ var nm=inp.value;
+  if(inp.checked&&l.classList.contains("dis")&&!TSEL.forced[nm]){ inp.checked=false; l.classList.remove("on"); tselShowDis(nm,tselSignals((typeof srcPassage==="function"?srcPassage():"")||"")); return false; }
+  if(inp.checked&&!TSEL.multi){ [].forEach.call(document.querySelectorAll("#types input"),function(i){ if(i!==inp){ i.checked=false; i.parentNode.classList.remove("on"); } }); }
+  l.classList.toggle("on",inp.checked); return true;
+}
+function selectAllTypes(on){ if(on){ TSEL.multi=true; var mt=document.getElementById("multiTypes"); if(mt) mt.checked=true; try{localStorage.setItem("multiTypes","1");}catch(e){} } [].forEach.call(document.querySelectorAll("#types input"),function(i){ i.checked=!!on; i.parentNode.classList.toggle("on",!!on); }); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }
+function selectRecommendedTypes(){ TSEL.multi=true; var mt=document.getElementById("multiTypes"); if(mt) mt.checked=true; try{localStorage.setItem("multiTypes","1");}catch(e){} var REC={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1,"내용불일치":1,"요약":1,"빈칸(어구)":1,"어법(밑줄)":1,"어휘(밑줄)":1,"밑줄함의":1,"글의순서":1,"문장삽입":1,"무관문장":1}; [].forEach.call(document.querySelectorAll("#types input"),function(i){ var on=!!REC[i.value]; i.checked=on; i.parentNode.classList.toggle("on",on); }); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }
 function typeCntUpdate(){ var el=document.getElementById("typeCnt"); if(!el) return; var all=document.querySelectorAll("#types input").length, sel=chosen().length; el.textContent=all?("("+sel+"/"+all+")"):""; }
 function examCols(btn){ var p=document.getElementById("paper"); if(!p) return; var on=!p.classList.contains("cols2"); p.classList.toggle("cols2",on); p.classList.toggle("hidebtn",on); if(btn) btn.textContent=on?"📄 1단(편집) 보기":"🔳 2단 시험지 보기"; }
 
@@ -1117,7 +1178,7 @@ function srcRaw(){ var w=workEl(); if(w&&w.value.trim().length>=40) return w.val
 function srcPassage(){ return srcRaw().trim(); }
 function workNoteSet(t){ var n=document.getElementById("workNote"); if(n) n.textContent=t; }
 function workParse(){ var w=workEl(); var v=w?w.value:""; if(!v.trim()) return []; return v.split(/\n\s*={3,}\s*\n|\n[ \t]*\n[ \t]*\n+/).map(function(s){return s.trim();}).filter(function(s){return s.length>=40;}); }
-function workCount(){ var el=document.getElementById("workCnt"); if(!el) return; var w=workEl(); var v=w?w.value:""; var words=(v.match(/[A-Za-z]+/g)||[]).length; var np=workParse().length; el.textContent=v.trim()?("· 지문 "+Math.max(np,1)+"개 · "+words+" 단어"):""; workChips(); if(typeof renderPgTypes==="function") renderPgTypes(); }
+function workCount(){ var el=document.getElementById("workCnt"); if(!el) return; var w=workEl(); var v=w?w.value:""; var words=(v.match(/[A-Za-z]+/g)||[]).length; var np=workParse().length; el.textContent=v.trim()?("· 지문 "+Math.max(np,1)+"개 · "+words+" 단어"):""; workChips(); if(typeof renderPgTypes==="function") renderPgTypes(); if(typeof tselUpdate==="function") tselUpdate(); }
 function workChips(){ var el=document.getElementById("workChips"); if(!el) return; var ps=workParse();
   el.innerHTML=ps.map(function(p,i){ var wc=(p.match(/[A-Za-z]+/g)||[]).length; return '<span class="wchip"><b>지문'+(i+1)+'</b> '+wc+'단어 · '+esc(p.slice(0,24).replace(/\s+/g," "))+'… <button class="wx" onclick="workRemove('+i+')" title="이 지문만 작업대에서 빼기">✕</button></span>'; }).join("");
 }
@@ -1625,7 +1686,7 @@ function findSource(){
     box.innerHTML=h;
   }).catch(function(e){ GENERATING=false; b.disabled=false; b.textContent="🔎 원문 출처"; box.innerHTML='<div class="note">오류: '+esc(e.message)+' — 아래 링크로 직접 검색하세요. <a href="https://www.google.com/search?q='+gq+'" target="_blank">🔗 구글 검색</a></div>'; });
 }
-function onPassage(){ var v=document.getElementById("passage").value; var w=(v.match(/[A-Za-z]+/g)||[]).length; var np=v.split(/\n\s*={3,}\s*\n|\n[ \t]*\n[ \t]*\n+/).map(function(s){return s.trim();}).filter(function(s){return s.length>=40;}).length; document.getElementById("charcount").textContent=w+" 단어"+(np>1?(" · 지문 "+np+"개"):""); updateEstimate(); saveState(); }
+function onPassage(){ var v=document.getElementById("passage").value; var w=(v.match(/[A-Za-z]+/g)||[]).length; var np=v.split(/\n\s*={3,}\s*\n|\n[ \t]*\n[ \t]*\n+/).map(function(s){return s.trim();}).filter(function(s){return s.length>=40;}).length; document.getElementById("charcount").textContent=w+" 단어"+(np>1?(" · 지문 "+np+"개"):""); updateEstimate(); saveState(); if(typeof tselUpdate==="function") tselUpdate(); }
 function getFast(){ var r=document.querySelector('input[name=speed]:checked'); return !!(r&&r.value==="1"); }
 function getLevel(){ var r=document.querySelector('input[name=level]:checked'); return r?r.value:"중"; }
 function onSpeed(){ updateEstimate(); saveState(); }
@@ -2210,8 +2271,8 @@ function buildTypeChips(){
   var sel={}; try{ var s=JSON.parse(localStorage.getItem("ai_state")||"{}"); (s.t||[]).forEach(function(x){sel[x]=1;}); }catch(e){}
   var hasSel=Object.keys(sel).length, DEFL={"어법":1,"어휘":1,"빈칸":1,"주제":1,"제목":1,"함의":1};
   tdiv.innerHTML="";
-  list.forEach(function(t){ var on=hasSel?!!sel[t]:!!DEFL[t]; var l=document.createElement("label"); l.className=on?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(on?" checked":"")+'>'+t; l.querySelector("input").onchange=function(){ l.classList.toggle("on",this.checked); updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }; tdiv.appendChild(l); });
-  updateEstimate(); typeCntUpdate();
+  list.forEach(function(t){ var on=hasSel?!!sel[t]:!!DEFL[t]; var l=document.createElement("label"); l.className=on?"on":""; l.innerHTML='<input type="checkbox" value="'+t+'"'+(on?" checked":"")+'>'+t; l.querySelector("input").onchange=function(){ if(!tselChipChange(this,l)) return; updateEstimate(); saveState(); if(typeof kwMatrixRender==="function") kwMatrixRender(); typeCntUpdate(); }; tdiv.appendChild(l); });
+  updateEstimate(); typeCntUpdate(); if(typeof tselUpdate==="function") tselUpdate();
 }
 var DBURL=new URLSearchParams(location.search).get("db")||"knowledge/types_v2.json";
 function refreshDB(){ var st=document.getElementById("dbstat"); if(st)st.textContent="유형 DB 불러오는 중…"; T.loadTypeDB(DBURL+(DBURL.indexOf("?")>=0?"&":"?")+"_t="+Date.now()).then(function(r){ if(r&&r.ok&&r.count){ buildTypeChips(); if(st)st.textContent="✓ 유형 DB "+r.count+"종 · "+new Date().toLocaleTimeString(); } else if(st) st.textContent="유형 DB: 내장 기본"; }); }
