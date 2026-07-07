@@ -1745,7 +1745,7 @@ function run(){
     go.disabled=false; go.textContent="🚀 고품질 출제"; setTimeout(function(){ document.getElementById("bar").style.display="none"; },900);
   }).catch(function(e){ logln("오류: "+e.message); document.getElementById("out").innerHTML='<div class="card">오류: '+esc(e.message)+'</div>'; go.disabled=false; go.textContent="🚀 고품질 출제"; }).then(function(){ GENERATING=false; });
 }
-function noKeyHint(){ try{ return !(localStorage.getItem("geminiKey")||localStorage.getItem("groqKey")||localStorage.getItem("ollamaModel")); }catch(e){ return false; } }
+function noKeyHint(){ try{ if(typeof RAY_PROXY!=="undefined"&&RAY_PROXY) return false; return !(localStorage.getItem("geminiKey")||localStorage.getItem("groqKey")||localStorage.getItem("ollamaModel")); }catch(e){ return false; } }
 function getRefine(){ var c=document.getElementById("refineChk"); return !!(c&&c.checked); }
 function getRounds(){ var r=document.getElementById("rounds"); return r?Math.max(1,Math.min(8,parseInt(r.value,10)||3)):3; }
 function getEnsemble(){ var c=document.getElementById("ensembleChk"); return !!(c&&c.checked); }
@@ -1775,11 +1775,12 @@ function detectOllama(){
 }
 function initOllama(){ var m="",u="http://localhost:11434"; try{ m=localStorage.getItem("ollamaModel")||""; u=localStorage.getItem("ollamaUrl")||u; }catch(e){} var em=document.getElementById("ollamaModel"),eu=document.getElementById("ollamaUrl"); if(eu) eu.value=u; if(m){ if(em) em.value=m; T.configure({ollamaModel:m,ollamaUrl:u}); var s=document.getElementById("ollamaStat"); if(s){ s.textContent="✓ "+m+" 적용(무한·무료)"; } } }
 function updateInfStat(){ var el=document.getElementById("infStat"); if(!el||!window.T||!T.keyStats) return; var k=T.keyStats(); var prov=T.provider();
-  var NAMES={ollama:"로컬 Ollama(무한)",gemini:"Gemini",groq:"Groq",cerebras:"Cerebras",mistral:"Mistral",openrouter:"OpenRouter",pollinations:"무키 Pollinations(느림)"};
+  var NAMES={ollama:"로컬 Ollama(무한)",gemini:"Gemini",groq:"Groq",cerebras:"Cerebras",mistral:"Mistral",openrouter:"OpenRouter",proxy:"내장 엔진(프록시)",pollinations:"무키 Pollinations(느림)"};
   var LBL={gemini:"Gemini",groq:"Groq",cerebras:"Cerebras",mistral:"Mistral",openrouter:"OpenRouter"};
   var bits=[], totalKeys=0; if(k.ollama) bits.push("로컬 AI ✓");
   Object.keys(LBL).forEach(function(p){ if(k[p]&&k[p].total){ bits.push(LBL[p]+" "+k[p].live+"/"+k[p].total); totalKeys+=k[p].total; } });
-  var inf=k.ollama||totalKeys>=3;
+  var inf=k.ollama||totalKeys>=3||prov==="proxy";
+  if(prov==="proxy"){ el.innerHTML='현재 출제 엔진: <b style="color:#0f766e">🔐 내장 엔진</b> · 키가 서버에 내장되어 있어 <b>입력 없이 무한모드</b>로 동작합니다 <span style="color:#4a3fa5;font-weight:700">— 사실상 무한 ♾</span> <span class="note">(직결이 더 빠르길 원할 때만 아래에 본인 키 입력)</span>'; return; }
   el.innerHTML='현재 출제 엔진: <b style="color:'+(prov==="pollinations"?"#b45309":"#0f766e")+'">'+esc(NAMES[prov]||prov)+'</b>'+(bits.length?(" · "+bits.join(" · ")):" · 무료 무키")+(inf?' <span style="color:#4a3fa5;font-weight:700">— 사실상 무한 ♾</span>':'');
 }
 function downloadLauncher(){
