@@ -318,7 +318,7 @@ body.simple .expert{display:none!important}
   </div><!-- /① 지문 입력(원문 보관함) -->
 
   <div class="card noprint" id="workCard" style="border:1.5px solid #cfc9ee;border-left:4px solid #7c6ee6;background:#fdfcff">
-    <h2><span style="width:8px;height:8px;background:#7c6ee6;border-radius:50%;display:inline-block;margin-right:2px"></span>🧪 ② 작업대 <span class="note">추가한 지문이 누적되는 별도 제작 창 — 여러 지문이면 지문별로 출제. 원문(①)은 보존</span></h2>
+    <h2><span style="width:8px;height:8px;background:#7c6ee6;border-radius:50%;display:inline-block;margin-right:2px"></span>🧪 ② 작업대 · 출제 <span class="note">지문 누적·변형부터 유형 선택·문제 제작까지 한 곳에서. 원문(①)은 보존</span></h2>
     <textarea id="workPassage" style="min-height:110px;background:#fbfbff" oninput="workEdited()" placeholder="①에서 지문을 입력하고 [⬇ 작업대에 추가]를 누르면 여기에 쌓입니다. 여러 개를 추가하면 지문별로 문제가 출제되고, 늘리기·변형·직접 수정도 여기서 하세요."></textarea>
     <div class="row" style="margin-top:6px">
       <button class="ghost" onclick="extendCur()" id="extBtn" title="AI가 논지·문체를 유지하며 예시·부연 문장을 추가해 작업대 지문을 늘립니다(원문 보존 코드검증)">📈 지문 늘리기</button>
@@ -330,6 +330,16 @@ body.simple .expert{display:none!important}
       <button class="ghost" onclick="doTransform('theme')">④주제만 유지</button>
       <button class="ghost" onclick="bankSave('work')" title="작업대 지문을 지문뱅크에 누적 저장">💾 뱅크 저장</button>
       <button class="ghost" onclick="workClear()" title="작업대를 비웁니다(원문·뱅크는 그대로)">🗑 비우기</button>
+    </div>
+    <div class="row" style="margin-top:4px">
+      <span style="font-size:9pt;font-weight:700;color:#5a4fb0" title="체크한 단계를 순서대로 연속 적용 — 각 결과가 작업대에 쌓여 겹쳐집니다">⛓ 겹치기:</span>
+      <label style="font-size:8.8pt;cursor:pointer"><input type="checkbox" class="xch" value="extend"> 📈늘리기</label>
+      <label style="font-size:8.8pt;cursor:pointer"><input type="checkbox" class="xch" value="word"> ①단어</label>
+      <label style="font-size:8.8pt;cursor:pointer"><input type="checkbox" class="xch" value="phrase"> ②구문</label>
+      <label style="font-size:8.8pt;cursor:pointer"><input type="checkbox" class="xch" value="sentence"> ③문장</label>
+      <label style="font-size:8.8pt;cursor:pointer"><input type="checkbox" class="xch" value="theme"> ④주제</label>
+      <button class="ghost" onclick="doChain()" title="예: 늘리기+①단어+③문장을 체크하면 늘린 지문에 어휘·문장 변형이 차례로 겹쳐 적용">▶ 겹쳐 실행</button>
+      <span class="note" id="chainNote">단일 버튼도 이어 누르면 결과 위에 겹쳐집니다</span>
     </div>
     <div class="row" style="margin-top:5px;border-top:1px dashed #eee6fb;padding-top:5px">
       <span style="font-size:9pt;font-weight:700;color:#5a4fb0">🧩 여러 지문:</span>
@@ -927,10 +937,10 @@ function progMark(t,st,d){
 /* 모드 탭: 일반/동형모고/지문변형 — 카드 통폐합 */
 /* 모드 = 섹션: 탭마다 그 작업에 필요한 카드만 보인다. 숨겨도 입력값은 유지(지문·키 등 안전) */
 var MODE_LAYOUT={
-  gen:    { inCard:1, workCard:1, ctrlCard:1, mockCard:0, agentCard:0, composeCard:0, rayToolsCard:1 },   // 문제 제작: 입력→작업대(변형 포함)→유형·난이도→출제→시험지·검색 도구
-  mock:   { inCard:1, workCard:0, ctrlCard:0, mockCard:1, agentCard:0, composeCard:0, rayToolsCard:0 },   // 동형모고: 지문 소스 + 머리표·문항구성
-  agent:  { inCard:1, workCard:1, ctrlCard:0, mockCard:0, agentCard:1, composeCard:0, rayToolsCard:0 },   // 에이전트: 목표만 말하면 유형·구성은 AI가
-  compose:{ inCard:0, workCard:0, ctrlCard:0, mockCard:0, agentCard:0, composeCard:1, rayToolsCard:0 }    // 시험지 편집: 편집기에 집중
+  gen:    { inCard:1, workCard:1, mockCard:0, agentCard:0, composeCard:0, rayToolsCard:1 },   // 문제 제작: 입력→[작업대·출제 통합카드]→시험지·검색 도구
+  mock:   { inCard:1, workCard:0, mockCard:1, agentCard:0, composeCard:0, rayToolsCard:0 },   // 동형모고: 지문 소스 + 머리표·문항구성
+  agent:  { inCard:1, workCard:0, mockCard:0, agentCard:1, composeCard:0, rayToolsCard:0 },   // 에이전트: 목표만 말하면 AI가 알아서(작업대 값은 유지됨)
+  compose:{ inCard:0, workCard:0, mockCard:0, agentCard:0, composeCard:1, rayToolsCard:0 }    // 시험지 편집: 편집기에 집중
 };
 function setMode(m){
   ["gen","mock","agent","compose"].forEach(function(k){ var b=document.getElementById("mtab_"+k); if(b) b.classList.toggle("on",k===m); });
@@ -1030,6 +1040,9 @@ function modeInit(){
   var lp=document.getElementById("leftPane");
   ["agentCard","mockCard","composeCard"].forEach(function(id){ var el=document.getElementById(id); if(el&&lp){ lp.appendChild(el); el.style.display="none"; } });
   var rt=document.getElementById("rayToolsCard"); if(rt&&lp) lp.appendChild(rt);   // 시험지·검색·출제의도 → 출제 섹션(왼쪽 컬럼) 소속
+  // 작업대(②)와 ③출제유형·④문제제작을 한 카드로 병합 — 지문 도구와 출제가 한 흐름
+  var cc=document.getElementById("ctrlCard"), wc=document.getElementById("workCard");
+  if(cc&&wc){ var hr=document.createElement("div"); hr.style.cssText="margin:14px 0 10px;border-top:2px dashed #cfc9ee"; wc.appendChild(hr); while(cc.firstChild) wc.appendChild(cc.firstChild); cc.parentNode.removeChild(cc); }
 }
 /* ===== 출제 에이전트: 챗봇 대화(목표→작업, 이후 메시지=피드백 반영, 오류=원인+해결책) ===== */
 var AGENTC={has:false,busy:false};
@@ -1440,7 +1453,7 @@ function extendCur(){
   var p=pgs0[0]||srcPassage();
   if(p.length<60){ alert("늘릴 지문을 먼저 입력하세요(60자 이상)."); return; }
   var b=document.getElementById("extBtn"); b.disabled=true; b.textContent="📈 늘리는 중…"; GENERATING=true;
-  T.extendPassage(p,{addSentences:3}).then(function(r){
+  return T.extendPassage(p,{addSentences:3}).then(function(r){
     GENERATING=false; b.disabled=false; b.textContent="📈 지문 늘리기";
     if(!r){ alert("증편 실패 — 다시 시도해 주세요."); return; }
     workSet(r.extended, "📈 문장 "+r.added.length+"개 추가"+(r.preserved?" · 원문 전체 보존 검증 ✓":" · ⚠ 원문 "+r.lostCount+"문장 변형 감지(확인 필요)"));
@@ -1869,6 +1882,20 @@ function xfMark(orig, variant){
   return pgHtml(variant).replace(/[A-Za-z][A-Za-z']*/g, function(w){ return oset[w.toLowerCase()]?w:('<mark class="xfm">'+w+'</mark>'); });
 }
 function copyXf(btn){ var t=btn.getAttribute("data-t")||""; navigator.clipboard.writeText(t).then(function(){ toast("변형본을 복사했습니다"); },function(){ alert("복사 실패 — 권한 확인"); }); }
+/* ⛓ 겹치기: 체크한 단계(늘리기·변형)를 순서대로 연속 적용 — 각 결과가 작업대에 반영돼 다음 단계의 입력이 됨 */
+async function doChain(){
+  var seq=[].slice.call(document.querySelectorAll('.xch:checked')).map(function(c){return c.value;});
+  var note=document.getElementById('chainNote');
+  if(!seq.length){ if(note) note.textContent='겹칠 단계를 먼저 체크하세요 (예: 늘리기+①단어+③문장)'; return; }
+  var NM={extend:'📈늘리기',word:'①단어',phrase:'②구문',sentence:'③문장',theme:'④주제'};
+  for(var i=0;i<seq.length;i++){
+    if(note) note.textContent='⛓ '+(i+1)+'/'+seq.length+' 적용 중: '+(NM[seq[i]]||seq[i]);
+    try{ if(seq[i]==='extend'){ await extendCur(); } else { await doTransform(seq[i]); } }
+    catch(e){ if(note) note.textContent='⛓ 중단('+(NM[seq[i]]||seq[i])+'): '+(e&&e.message||e); return; }
+  }
+  if(note) note.textContent='⛓ 완료 — '+seq.map(function(s){return NM[s]||s;}).join('→')+' 겹쳐 적용됨(작업대 반영)';
+  workLog('⛓ 겹치기: '+seq.map(function(s){return NM[s]||s;}).join('→'));
+}
 function doTransform(level){
   var pgs0=parsePassages();
   if(pgs0.length>1){ alert("변형은 한 번에 한 지문만 지원합니다. 작업대의 지문 칩에서 하나만 남기고 시도하세요."); return; }
@@ -1878,7 +1905,7 @@ function doTransform(level){
   var out=document.getElementById("wxfout")||document.getElementById("xfout"); out.innerHTML="";
   GENERATING=true;
   window.__XFN=(window.__XFN||0)+1;
-  T.transformStaged(passage, level, {nonce:window.__XFN+"_"+Math.floor(Math.random()*99999), strength:(document.getElementById("xfStrength")||{}).value||"중", onProgress:function(m){ note.textContent=m; }}).then(function(r){
+  return T.transformStaged(passage, level, {nonce:window.__XFN+"_"+Math.floor(Math.random()*99999), strength:(document.getElementById("xfStrength")||{}).value||"중", onProgress:function(m){ note.textContent=m; }}).then(function(r){
     if(!r||!r.variant){ note.textContent="변형 실패 — 다시 시도하세요"; return; }
     note.textContent=(r.stage||"")+(r.pi?" · 변형지수 "+r.pi:"")+" · "+(r.audit||"");
     var ch=(r.changed&&r.changed.length)?('<div class="note" style="margin-top:7px">바뀐 점: '+esc(r.changed.join(" · "))+'</div>'):'';
@@ -1886,7 +1913,7 @@ function doTransform(level){
       '<div style="font-weight:700;color:#0f766e;margin-bottom:6px">'+esc(r.stage||"변형")+' <span class="note" style="font-weight:400">'+esc(r.note||"")+'</span> <span class="note">— 노란 표시가 바뀐 부분</span></div>'+
       '<div class="xfcmp">'+
         '<div class="xfcol"><div class="xfh">📄 원문</div><div class="pg xfpg">'+pgHtml(passage)+'</div></div>'+
-        '<div class="xfcol"><div class="xfh" style="color:#0f766e">🔄 변형본 <span class="note" style="font-weight:400">(작업대에 올라감)</span></div><div class="pg xfpg" style="border-color:#bcdcd0;background:#fbfffd">'+xfMark(passage, r.variant)+'</div></div>'+
+        '<div class="xfcol"><div class="xfh" style="color:#0f766e">🔄 변형본 <span class="note" style="font-weight:400">(작업대 반영 — 이어서 변형·늘리기를 누르면 이 위에 겹쳐집니다)</span></div><div class="pg xfpg" style="border-color:#bcdcd0;background:#fbfffd">'+xfMark(passage, r.variant)+'</div></div>'+
       '</div>'+ch+
       '<div class="row" style="margin-top:8px"><button class="ghost noprint" onclick="setMode(\'gen\');window.scrollTo(0,0)">🚀 이 변형본으로 출제하러 가기</button><button class="ghost noprint" onclick="copyXf(this)" data-t="'+escAttr(r.variant)+'">📋 변형본 복사</button><span class="note">원문(①)은 그대로 보존됩니다</span></div></div>';
     workSet(r.variant, (r.stage||"지문 변형")+(r.audit?(" · "+r.audit):""));
