@@ -294,11 +294,10 @@ body.simple .expert{display:none!important}
   <div class="modes noprint">
     <button class="mtab on" id="mtab_gen" onclick="setMode('gen')">🚀 일반 출제</button>
     <button class="mtab" id="mtab_mock" onclick="setMode('mock')">📋 동형 모의고사</button>
-    <button class="mtab" id="mtab_xf" onclick="setMode('xf')">🔄 지문 변형</button>
     <button class="mtab" id="mtab_agent" onclick="setMode('agent')">🤖 에이전트</button>
     <button class="mtab" id="mtab_compose" onclick="setMode('compose')">📄 시험지 편집 <span id="composeCnt" style="font-size:8pt"></span></button>
   </div>
-  <div class="card noprint" style="border-left:4px solid #0f766e">
+  <div class="card noprint" id="inCard" style="border-left:4px solid #0f766e">
     <h2>① 지문 입력 <span class="note">원문 보관함 — [⬇ 작업대에 추가]를 누르면 ② 작업대에 누적됩니다. 원문은 보존</span></h2>
     <textarea id="passage" placeholder="여기에 영어 지문을 붙여넣으세요. 여러 지문을 한 번에 내려면 지문 사이에 === 한 줄(또는 빈 줄 2개)로 구분 — 개수 제한 없음." oninput="onPassage()"></textarea>
     <div class="row" style="margin-top:6px">
@@ -345,14 +344,16 @@ body.simple .expert{display:none!important}
     <div id="workLog" style="display:none;margin-top:6px;border-top:1px dashed #ddd6f5;padding-top:5px;max-height:150px;overflow:auto;font-size:8.6pt"></div>
     <div class="row" style="margin-top:8px;border-top:1px dashed #ddd6f5;padding-top:7px">
       <button class="ghost" onclick="makeAnalysis()" title="A4 가로 2쪽 분석지 — 문장별 해석·구문(기능색 6색) + 논리흐름·암기카드(1-3-5)">📑 분석지</button>
+      <button class="ghost" onclick="makeVocab()" title="지문 핵심어휘 → 사전·CEFR·발음·유의어·번역·예문(다중 API 엮음)">📓 단어장</button>
       <button class="ghost" onclick="kwExtract()" id="kwBtn" title="AI가 출제 축 키워드(어휘·구문·개념·연결어)를 추출합니다 — 칩에서 추가·삭제 가능">🔑 키워드 추출</button>
       <input id="kwInput" placeholder="키워드 직접 추가 후 Enter" style="flex:1;min-width:130px;padding:6px 10px;border:1.5px solid var(--line);border-radius:10px;font-size:9pt;font-family:inherit" onkeydown="if(event.key==='Enter')kwAdd()">
     </div>
     <div id="kwChips" style="margin-top:4px"></div>
     <div id="kwMatrix" style="margin-top:5px;overflow-x:auto"></div>
+    <div id="vocabOut"></div>
   </div><!-- /② 작업대 -->
 
-  <div class="card noprint" style="border-left:4px solid #4f46e5">
+  <div class="card noprint" id="ctrlCard" style="border-left:4px solid #4f46e5">
     <div class="row"><button class="ghost" onclick="analyze()" id="anbtn">🔍 예상 출제 유형 분석</button><span class="note" id="anote"></span></div>
     <div id="suggest"></div>
     <h2 style="margin-top:8px">③ 출제 유형 <button class="ghost noprint" style="font-size:8.5pt;padding:3px 9px" onclick="refreshDB()">🔄 유형 DB 새로고침</button> <span class="note" id="dbstat"></span></h2>
@@ -511,23 +512,6 @@ body.simple .expert{display:none!important}
       <span class="note">(뱅크에 지문을 쌓을수록 '우리 학교 범위' 동형이 됩니다)</span>
     </div>
     <div class="row" style="margin-top:7px"><button onclick="runMock()" id="mockGo">📋 동형 모의고사 생성</button><span class="note" id="mockStat"></span></div>
-  </div>
-
-  <div class="card" id="xformCard">
-    <h2>🔄 단계별 지문 변형 <span class="note">원문을 세분화 단계로 변형 — 각 단계 다중 API 협업(Datamuse·위키·LanguageTool)</span></h2>
-    <div class="row" style="margin-top:8px;flex-wrap:wrap">
-      <button class="ghost" onclick="doTransform('word')">① 단어 변형</button>
-      <button class="ghost" onclick="doTransform('phrase')">② 구문 변형</button>
-      <button class="ghost" onclick="doTransform('sentence')">③ 문장 재구성</button>
-      <button class="ghost" onclick="doTransform('theme')">④ 주제만 유지</button>
-      <span class="note" id="xfnote">작업대(②) 지문을 변형해 다시 작업대에 올립니다 — 원문(①) 보존</span>
-    </div>
-    <div id="xfout" style="margin-top:8px"></div>
-    <div class="row" style="margin-top:10px;border-top:1px dashed #dbe6e2;padding-top:9px">
-      <button class="ghost" onclick="makeVocab()">📓 단어장 제작</button>
-      <span class="note">지문 핵심어휘 → 사전·CEFR·발음·유의어·번역·예문 (다중 API 엮음)</span>
-    </div>
-    <div id="vocabOut"></div>
   </div>
 
   <div class="card" id="brainCard">
@@ -941,13 +925,17 @@ function progMark(t,st,d){
   progEta();
 }
 /* 모드 탭: 일반/동형모고/지문변형 — 카드 통폐합 */
+/* 모드 = 섹션: 탭마다 그 작업에 필요한 카드만 보인다. 숨겨도 입력값은 유지(지문·키 등 안전) */
+var MODE_LAYOUT={
+  gen:    { inCard:1, workCard:1, ctrlCard:1, mockCard:0, agentCard:0, composeCard:0, rayToolsCard:1 },   // 문제 제작: 입력→작업대(변형 포함)→유형·난이도→출제→시험지·검색 도구
+  mock:   { inCard:1, workCard:0, ctrlCard:0, mockCard:1, agentCard:0, composeCard:0, rayToolsCard:0 },   // 동형모고: 지문 소스 + 머리표·문항구성
+  agent:  { inCard:1, workCard:1, ctrlCard:0, mockCard:0, agentCard:1, composeCard:0, rayToolsCard:0 },   // 에이전트: 목표만 말하면 유형·구성은 AI가
+  compose:{ inCard:0, workCard:0, ctrlCard:0, mockCard:0, agentCard:0, composeCard:1, rayToolsCard:0 }    // 시험지 편집: 편집기에 집중
+};
 function setMode(m){
-  ["gen","mock","xf","agent","compose"].forEach(function(k){ var b=document.getElementById("mtab_"+k); if(b) b.classList.toggle("on",k===m); });
-  var mc=document.getElementById("mockCard"), xc=document.getElementById("xformCard"), ac=document.getElementById("agentCard"), cc=document.getElementById("composeCard");
-  if(mc) mc.style.display=(m==="mock")?"":"none";
-  if(xc) xc.style.display=(m==="xf")?"":"none";
-  if(ac) ac.style.display=(m==="agent")?"":"none";
-  if(cc) cc.style.display=(m==="compose")?"":"none";
+  ["gen","mock","agent","compose"].forEach(function(k){ var b=document.getElementById("mtab_"+k); if(b) b.classList.toggle("on",k===m); });
+  var lay=MODE_LAYOUT[m]||MODE_LAYOUT.gen;
+  Object.keys(lay).forEach(function(id){ var el=document.getElementById(id); if(el) el.style.display=lay[id]?"":"none"; });
   if(m==="compose"){ composeLoadHeader(); composeRender(); sheetBadge(); }
 }
 /* 뇌 관찰실: 관찰카드 7종을 탭 하나로 */
@@ -1040,7 +1028,8 @@ function obsInit(){
 /* 좌측 모드 카드 이동(동형모고·지문변형을 컨트롤러 아래로) */
 function modeInit(){
   var lp=document.getElementById("leftPane");
-  ["agentCard","mockCard","xformCard","composeCard"].forEach(function(id){ var el=document.getElementById(id); if(el&&lp){ lp.appendChild(el); el.style.display="none"; } });
+  ["agentCard","mockCard","composeCard"].forEach(function(id){ var el=document.getElementById(id); if(el&&lp){ lp.appendChild(el); el.style.display="none"; } });
+  var rt=document.getElementById("rayToolsCard"); if(rt&&lp) lp.appendChild(rt);   // 시험지·검색·출제의도 → 출제 섹션(왼쪽 컬럼) 소속
 }
 /* ===== 출제 에이전트: 챗봇 대화(목표→작업, 이후 메시지=피드백 반영, 오류=원인+해결책) ===== */
 var AGENTC={has:false,busy:false};
