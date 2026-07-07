@@ -45,10 +45,11 @@ def main():
         print("이어하기: %d/%d 이미 완료 → 이어서 진행" % (done, len(passages)))
     print("지문 %d개 임베딩 (bge-m3, CPU 가능·최초 모델 다운로드 ~2GB)…" % len(passages))
     model = SentenceTransformer("BAAI/bge-m3")
+    model.max_seq_length = 512   # 지문은 220단어 이하 → 512토큰이면 무손실. 활성화 메모리 대폭 절감(저RAM PC 대응)
     CHUNK = 64
     for i in range(done, len(passages), CHUNK):
         batch = passages[i:i + CHUNK]
-        e = model.encode(batch, batch_size=8, normalize_embeddings=True, show_progress_bar=False)
+        e = model.encode(batch, batch_size=4, normalize_embeddings=True, show_progress_bar=False)
         e = np.asarray(e, dtype="float32")
         parts = e if parts is None else np.vstack([parts, e])
         np.save(TMP, parts)
