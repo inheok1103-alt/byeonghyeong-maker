@@ -1,6 +1,54 @@
 {
- "updated": "2026-07-07T15:28:18.402Z",
+ "updated": "2026-07-07T17:40:02.132Z",
  "samples": [
+  {
+   "ts": "2026-07-07T17:36:44.158Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Arrested's Internal Argument, Police as External",
+     "Arrested's Internal Argument, Police as Subject",
+     "Police's Internal Argument, Arrested as External",
+     "Arrested's External Argument, Police as Internal",
+     "Police's External Argument, Arrested as Internal"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'In “The police have arrested the suspect,” the complement “the suspect” is the internal argument of *arrested*, while “the police” is the external argument that moves to satisfy the EPP.'이며 정답 (체포된 외부 경찰의 내부 논쟁)이 이를 반영한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: In “The police have arrested the suspect,” the complement “the suspect” is the internal argument of *arrested*, while “the police” is the external argument that moves to satisfy the EPP.]"
+   }
+  },
+  {
+   "ts": "2026-07-07T17:39:50.868Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "In a structure such as (15), (A) [the complement the suspect / the complement suspect] is said to be the internal argument of the verb arrested (in the sense that it is the argument contained within the immediate V-bar projection of the verb, and hence is a sister of the verb), whereas (B) [the subject the police / the subject police] is the external argument of the verb arrested (in that it occupies a position external to the V-bar constituent which is the immediate projection of the verb arrested). The VP in (15) is then merged with the present tense auxiliary [T have], forming the T-bar have the police arrested the suspect. Since a finite T has an [EPP] feature requiring it to have a subject of its own, (C) [the DP the police / the DP police] moves from being the subject of arrested to becoming the subject of [T have], forming The police have the police arrested the suspect. Merging the resulting TP with a null declarative complementiser in turn derives the structure shown in simplified form in (16) below:",
+    "choices": [
+     "(A) the complement suspect - (B) the subject the police - (C) the DP the police",
+     "(A) the complement the suspect - (B) the subject police - (C) the DP police",
+     "(A) the complement the suspect - (B) the subject police - (C) the DP the police",
+     "(A) the complement the suspect - (B) the subject the police - (C) the DP police",
+     "(A) the complement the suspect - (B) the subject the police - (C) the DP the police"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) the complement the suspect - (B) the subject the police - (C) the DP the police. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-07T15:28:04.485Z",
    "type": "제목",
@@ -215,54 +263,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] words (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-06T09:20:14.652Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 3/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "THE SKY IS BLUE AND BREEZY",
-     "THANKS TO ALL WHO HELPED",
-     "WE ARE GRATEFUL FOR HUMANITY",
-     "THANKFUL FOR EVERY ASSISTANT",
-     "NO THANKS TO ANYONE"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'The authors express gratitude to all who helped create the book.'이며 정답 (도움을 주신 모든 분들께 감사드립니다.)이 이를 반영한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The authors express gratitude to all who helped create the book.]"
-   }
-  },
-  {
-   "ts": "2026-07-05T22:25:38.290Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "In the younger, western dialects we find no -ar or -er, but -a and -an or -en. Possibly because of the texts in which it is transmitted, Old Frisian shows no dual pronouns, though modern North Frisian dialects have them. As in Old English, in Old Frisian we find third person personal pronouns beginning with h- throughout: 5. Old Frisian does not distinguish the dative and accusative cases in the first and second person singular personal pronouns: 6. Old Frisian has no reflexive pronoun, but does show sîn as a possessive form for the masculine and neuter singular: alle sîne sîthar ‘all his colleagues’. Like all the Germanic languages except Gothic, Old Frisian shows an intensified demonstrative pronoun: OF masc. thi and this opposite Goth. tham and thissem opposite Goth. þaim Verbs 1. [                         ] Instead we find either a new vowel alternation, or reassignment to the weak class: OF Goth.",
-    "choices": [
-     "Old Frisian distinguishes a reduplicating class of verbs in grammar.",
-     "Old Frisian features a complex system of vowel harmony today.",
-     "Old Frisian possesses an extensive class of reduplicated verbs today.",
-     "Old Frisian shows a class of reduplicated verbs in system.",
-     "Old Frisian lacks a class of reduplicated verbs in grammar."
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 원문 'Old Frisian does not show a reduplicating class of verbs.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
