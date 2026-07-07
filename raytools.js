@@ -91,7 +91,13 @@
   /* ---------- ③ 출제의도 로직 → 생성 힌트 ---------- */
   var TYPE2LOGIC = { "글의순서": "L05", "문장삽입": "L06", "연결어빈칸": "L01", "빈칸": "L04", "제목": "L02", "주제": "L03", "요지": "L03", "어법": "L08", "어휘": "L09", "함의": "L10", "내용불일치": "L11", "내용일치": "L11", "요약": "L12", "무관": "L07" };
   async function logicHint(type) {
-    await loadDB(); var code = null; Object.keys(TYPE2LOGIC).forEach(function (k) { if (type && type.indexOf(k) >= 0 && !code) code = TYPE2LOGIC[k]; });
+    await loadDB();
+    // 창의 서술형(CSR01~10): 서술형 계열이면 회전 배정 — 매번 다른 창의 과제(반박·관점전환·제목창작·연결복원…)
+    if (/서술형|영작|창의/.test(type || "") && DB.creative_sr && DB.creative_sr.length) {
+      var pick = DB.creative_sr[Math.floor(Math.random() * DB.creative_sr.length)];
+      return "[창의 서술형 " + pick.code + " " + pick.name + "] 과제: " + pick.task + ". 조건: " + (pick.conditions || []).join(" · ") + ". 루브릭: " + (pick.rubric || []).map(function (r) { return r.c + " " + r.p + "점"; }).join(", ") + ". 흔한 감점: " + (pick.errors || []).join("·") + ". " + (pick.gen || "");
+    }
+    var code = null; Object.keys(TYPE2LOGIC).forEach(function (k) { if (type && type.indexOf(k) >= 0 && !code) code = TYPE2LOGIC[k]; });
     if (!code) return "";
     var lr = (DB.logic_rules || []).find(function (l) { return l.code === code; }); if (!lr) return "";
     var errs = coFrom2("common_wrong_reasons", code), sms = coFrom2("semantic_trap_codes", code), sys = coFrom2("syntactic_trap_codes", code);
