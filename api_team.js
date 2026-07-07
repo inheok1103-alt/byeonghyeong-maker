@@ -1464,10 +1464,25 @@
     if (/〈조건〉|\[원문\]|우리말\s*:|주어진 단어|제시어|괄호 안|첫 글자|\n/.test(s2)) return true;
     return s2.length > String(stem || "").length + 25;
   }
+  // 어형변형(괄호): 내신 서술형 최다 빈출 — 본문 문장의 동사/준동사를 괄호 원형으로, 정답이 유일 결정되게
+  async function buildInflect(passage) {
+    var o = await llmJSON([
+      { role: "system", content: "한국 고등 내신 서술형 출제자. 지문에서 어법 판단이 필요한 문장 1~2개를 골라 동사·준동사·형용사 1~3곳을 괄호(원형)으로 바꾼다. 각 괄호의 정답은 시제·태·수일치·준동사 규칙으로 '유일하게' 결정되어야 한다. JSON만." },
+      { role: "user", content: "[지문]\n" + passage + "\n\nJSON: {\"passage\":\"괄호 처리된 문장(들) — 예: The number of students (be) increasing.\",\"answers\":[{\"n\":1,\"base\":\"be\",\"correct\":\"is\",\"why\":\"주어 The number 단수 — 수일치\"}],\"instruction\":\"괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.\"} 괄호 1~3곳. JSON만." }
+    ], { temperature: 0.4, timeout: 60000 });
+    if (!o || !o.passage || !/\(/.test(o.passage) || !Array.isArray(o.answers) || !o.answers.length) return null;
+    if (o.answers.some(function (a) { return !a.correct || String(a.correct).trim().toLowerCase() === String(a.base || "").trim().toLowerCase(); })) return null;   // 원형=정답 금지
+    return { type: "어형변형(괄호)", instruction: o.instruction || "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.", passage: o.passage, choices: [], answer: null,
+      answerText: o.answers.map(function (a) { return (a.n ? a.n + ") " : "") + a.base + " → " + a.correct; }).join("  "),
+      explanation: o.answers.map(function (a) { return (a.n ? a.n + ") " : "") + a.base + "→" + a.correct + " [" + (a.why || "") + "]"; }).join(" · "), _audit: "서술형(괄호 어형변형) — 정답 유일성 검증" };
+  }
   function builderFor(t) {
     if (t === "배열영작") return function (p, o) { return buildArrange(p, o); };
     if (t === "조건영작") return function (p, o) { return buildConditional(p, o); };
     if (t === "어법수정") return function (p, o) { return buildGrammarEdit(p, o); };
+    if (/어형변형/.test(t)) return function (p) { return buildInflect(p); };
+    if (/틀린문장|고쳐쓰기/.test(t)) return function (p, o) { return buildGrammarEdit(p, o); };
+    if (/본문찾아쓰기/.test(t)) return function (p) { return buildEngdefWrite(p); };
     // 신규 유형(정답 코드제어) 특례 — 유형DB의 builder 키보다 우선
     if (t === "문장전환") return function (p) { return buildConvertAuto(p); };   // 통합형: 지문에 맞는 전환을 자동 선택
     var cm = String(t).match(/^문장전환\((태|분사구문|관계사|가정법)\)/); if (cm) return function (p) { return buildConvert(p, cm[1]); };
@@ -1707,6 +1722,10 @@
     var ctx = opts.ctx || await cachedContext(passage, opts.onProgress);
     var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 950); setLevelRule(type, opts.level);
     var q = null; for (var _try = 0; _try < 3 && !q; _try++) { try { q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type); } catch (_e) { q = null; } }
+    // 태그 위생: LLM이 &lt;u&gt;로 이스케이프해 뱉으면 화면에 <u>가 글자로 노출됨 → 실태그로 복원 + u/b 외 태그 제거
+    if (q) { var _tg = function (s) { return String(s).replace(/&lt;(\/?)(u|b)&gt;/gi, "<$1$2>").replace(/<(?!\/?[ub]>)[^>]{1,40}>/g, ""); };
+      ["passage", "instruction", "explanation", "answerText"].forEach(function (k) { if (q[k]) q[k] = _tg(q[k]); });
+      if (q.choices && q.choices.length) q.choices = q.choices.map(_tg); }
     TYPERULE = ""; LEVELRULE = ""; if (opts.hint) RUNHINT = _hint0;
     if (q && TYPE_INSTR[type] && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];
     if (q) q.level = opts.level || "";
