@@ -22,11 +22,11 @@ const OAI = {
 };
 // 폴백 순서: 무료 한도 큰 순 → 무키 폴백
 const CHAIN = ["groq", "gemini", "cerebras", "mistral", "openrouter", "pollinations"];   // 실측: groq가 가장 빠르고 안정 → 선두
-let LASTGOOD = "";            // 직전 성공 제공자 — 다음 요청은 여기부터
-const COOL = {};              // 실패 제공자 쿨다운(ms epoch) — 죽은 키에 반복 낭비 방지
+// 상태는 globalThis에 명시 보관 — 편집기 부분 붙여넣기·격리체 재사용 어떤 경우에도 ReferenceError 불가
+const ST = globalThis.__RAYST = globalThis.__RAYST || { last: "", cool: {} };
 function orderedChain() {
-  const base = CHAIN.filter(p => p !== "pollinations").filter(p => !(COOL[p] && COOL[p] > Date.now()));
-  const o = (LASTGOOD && base.includes(LASTGOOD)) ? [LASTGOOD, ...base.filter(p => p !== LASTGOOD)] : base;
+  const base = CHAIN.filter(p => p !== "pollinations").filter(p => !(ST.cool[p] && ST.cool[p] > Date.now()));
+  const o = (ST.last && base.includes(ST.last)) ? [ST.last, ...base.filter(p => p !== ST.last)] : base;
   return [...o, "pollinations"];
 }
 
@@ -99,10 +99,10 @@ async function generate(env, messages, temperature, json) {
       for (const k of keys) {
         try {
           const t = prov === "gemini" ? await callGemini(env, k, messages, temperature, json) : await callOAI(env, prov, k, messages, temperature, json);
-          if (t && t.trim()) { LASTGOOD = prov; return { content: t, provider: prov }; }
+          if (t && t.trim()) { ST.last = prov; return { content: t, provider: prov }; }
         } catch (e) { lastErr = e.msg || String(e); if (!e.limited) { allLimited = false; break; } /* 레이트리밋이면 다음 키 시도 */ }
       }
-      COOL[prov] = Date.now() + (allLimited ? 5 : 15) * 60 * 1000;   // 429=5분 · 인증/모델오류=15분 건너뜀
+      ST.cool[prov] = Date.now() + (allLimited ? 5 : 15) * 60 * 1000;   // 429=5분 · 인증/모델오류=15분 건너뜀
     } catch (e) { lastErr = (e && e.msg) || String(e); }
   }
   throw new Error(lastErr);
@@ -125,7 +125,7 @@ export default {
     const allowed = String(env.ALLOWED_ORIGINS || "https://inheok1103-alt.github.io,http://localhost,http://127.0.0.1").split(",").map(s => s.trim()).filter(Boolean);
     const { ok, h } = cors(origin, allowed);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: h });
-    if (request.method === "GET") return new Response(JSON.stringify({ ok: true, service: "ray-proxy", v: "20260708c", providers: CHAIN }), { headers: { ...h, "Content-Type": "application/json" } });
+    if (request.method === "GET") return new Response(JSON.stringify({ ok: true, service: "ray-proxy", v: "20260708d", providers: CHAIN }), { headers: { ...h, "Content-Type": "application/json" } });
     if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: h });
     // 오리진 잠금: 내 사이트에서 온 요청만(남이 자기 사이트에 내 프록시를 못 쓰게). 더 강한 남용방지는 대시보드 Rate Limiting Rule.
     if (!ok && origin) return new Response(JSON.stringify({ error: "origin not allowed" }), { status: 403, headers: { ...h, "Content-Type": "application/json" } });

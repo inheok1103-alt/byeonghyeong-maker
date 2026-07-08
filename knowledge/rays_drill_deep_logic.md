@@ -2321,3 +2321,61 @@ function validateClarity(item) {
 - 단어 수 미검증
 - 채점 기준 없는 서술형
 ```
+---
+
+## 37. AI 영문법 교육 모델: Core Logic System
+
+Tag: `AI_GRAMMAR_CORE_LOGIC_V1`
+
+어법 문항과 해설은 단순 암기 규칙으로 만들지 않는다. 모든 문법 현상은 다음 3대 공리로 설명한다.
+
+### 37.1 3대 절대 공리
+
+1. `AXIOM_POSITION`: 영어는 형태보다 자리가 품사와 역할을 결정한다. 주어 자리의 데이터는 명사처럼 처리된다.
+2. `AXIOM_ECONOMY`: 영어는 반복되는 명사, 뻔한 주어, 예측 가능한 접속사/be동사 같은 저정보값 데이터를 압축한다.
+3. `AXIOM_DATA_PRESERVATION`: 압축해도 의미 해석에 필수적인 주체 차이, 시제 차이, 이동 흔적은 반드시 형태로 보존된다.
+
+### 37.2 어법 해설 출력 순서
+
+어법 해설은 반드시 다음 순서로 쓴다.
+
+1. `Rule Definition`: 암기 규칙이 아니라 작동 원리로 정의한다. 예: 관계사는 중복 명사 데이터를 하이퍼링크로 연결하는 장치다.
+2. `Data Process`: 원문 데이터가 결과 형태로 바뀌는 과정을 IF-THEN으로 보여준다.
+3. `Validation`: 학생이 틀리는 함정을 데이터 보존 법칙으로 방어한다.
+4. `Terminology Translation`: 마지막에는 한국 교육과정 용어로 매칭한다. 예: valency -> 5형식, object movement -> 수동태.
+
+### 37.3 모듈별 출제 적용
+
+| module | 출제 초점 | 오답 설계 |
+|---|---|---|
+| `GRAMMAR_MODULE_VALENCY` | 동사의 데이터 요구량, 5형식, 수동태 | 목적어가 필요 없는 자동사 뒤 명사 삽입, 수동태 뒤 원목적어 잔류 |
+| `GRAMMAR_MODULE_TENSE_SUBJUNCTIVE` | 시제의 fact/distance, 완료의 arrow, 가정법 backshift | 과거형을 단순 시간으로만 오해하게 만들기 |
+| `GRAMMAR_MODULE_CLAUSE_REDUCTION` | 준동사 압축, 의미상 주어, 완료 준동사 | 주어가 다른데 삭제, 더 과거인데 having p.p./to have p.p. 누락 |
+| `GRAMMAR_MODULE_RELATIVIZATION` | 관계대명사/관계부사, that/what | 선행사 있는 자리의 what, 불완전절 뒤 관계부사 |
+| `GRAMMAR_MODULE_MOVEMENT_ELLIPSIS` | 도치, 생략, 주격관계대명사+be 삭제 | 도치 유발어를 놓치거나 삭제된 데이터 복원 실패 |
+
+### 37.4 어법 문항 필수 메타
+
+어법 문항은 export 전에 다음 필드를 가져야 한다.
+
+```json
+{
+  "grammarCoreTag": "AI_GRAMMAR_CORE_LOGIC_V1",
+  "axiomTrace": ["AXIOM_POSITION", "AXIOM_ECONOMY", "AXIOM_DATA_PRESERVATION"],
+  "grammarModule": "GRAMMAR_MODULE_CLAUSE_REDUCTION",
+  "positionSlotAnalysis": "...",
+  "economyCompressionTrace": "...",
+  "dataPreservationCheck": "...",
+  "dataProcessSteps": ["IF ... THEN ..."],
+  "validationTrap": "...",
+  "curriculumTermMapping": ["분사구문", "의미상 주어", "완료 분사구문"]
+}
+```
+
+### 37.5 금지
+
+- "그냥 외워야 한다"식 해설
+- "이게 자연스럽다"만 말하고 자리/데이터 검증을 생략하는 해설
+- 한국 학교문법 용어로 최종 매칭하지 않는 해설
+- 주체 차이와 시제 차이를 지워버리는 준동사 문항
+- 관계사 뒤 절의 완전/불완전 검사를 하지 않는 문항
