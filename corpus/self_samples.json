@@ -1,4 +1,53 @@
 {
- "updated": "2026-07-08T16:28:19.871Z",
- "samples": []
+ "updated": "2026-07-08T17:03:10.514Z",
+ "samples": [
+  {
+   "ts": "2026-07-08T16:55:41.502Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "The dolphin is faster. 3. \u0007Motion is relative because it is always described in relation to a reference point. For example, we don’t see the earth rotating because everything around us is moving with it (including us). 4. The speed and the direction of motion 5. \u0007Your (A) [inertia / velocity] changes four times (because you are walking in a different direction on each side of the block). You are going at the same pace the entire time, so your (B) [speed / stability] doesn’t change. 6. \u0007The driver’s velocity changed because the driver changed directions. The driver’s speed did not change. 7. \u0007Yes, the bee is accelerating. Because (C) [acceleration / constant velocity] is the change in velocity per unit of time, and the bee is constantly changing direction, the bee is also constantly changing velocity and is therefore accelerating. 8. \u0007When something speeds up, slows down, or changes direction change in distance change in time 56 m 8 s 30 m 6 s #3 has more than one correct answer.",
+    "choices": [
+     "(A) velocity - (B) speed - (C) acceleration",
+     "(A) inertia - (B) stability - (C) constant velocity",
+     "(A) velocity - (B) speed - (C) constant velocity",
+     "(A) velocity - (B) stability - (C) acceleration",
+     "(A) inertia - (B) speed - (C) acceleration"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) velocity - (B) speed - (C) acceleration. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
+  {
+   "ts": "2026-07-08T17:00:41.100Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 모두 코드처리) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "The dolphin is faster. 3. \u0007ⓐ<u>Motion</u> is relative because it is always described in relation to a reference point. For example, we don’t see the earth rotating because everything around us is moving with it (including us). 4. The ⓑ<u>retard</u> and the direction of motion 5. \u0007Your ⓒ<u>velocity</u> changes four times (because you are walking in a different direction on each side of the block). You are going at the same pace the entire time, so your speed doesn’t change. 6. \u0007The ⓓ<u>driver</u>’s velocity changed because the driver changed directions. The driver’s speed did not ⓔ<u>change</u>. 7. \u0007Yes, the bee is accelerating. Because acceleration is the change in velocity per unit of time, and the bee is constantly changing direction, the bee is also constantly changing velocity and is therefore accelerating. 8. \u0007When something speeds up, slows down, or changes direction change in distance change in time 56 m 8 s 30 m 6 s #3 has more than one correct answer.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 2,
+    "explanation": "정답 ⓑ는 'retard'인데 문맥상 원래의 'speed'가 적절하다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  }
+ ]
 }
