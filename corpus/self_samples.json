@@ -1,4 +1,53 @@
 {
- "updated": "2026-07-08T14:28:10.353Z",
- "samples": []
+ "updated": "2026-07-08T14:53:24.725Z",
+ "samples": [
+  {
+   "ts": "2026-07-08T14:45:08.573Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 1/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "Denotative ⓐ<u>meaning</u> 6.1 If we had to think of a list of features or criteria that defined both the ⓑ<u>words</u> ⓒ<u>woman</u> and lady, one might suggest that they include being human, female and adult. A definition based on these lines would be the DENOTATIVE MEANING of the two words. But there must be more to meaning than this, since we know that there is a difference between these two words – we know they can be used to mean ⓓ<u>different</u> things. Consider these words placed in the context of the sentences below. She’s only ⓔ<u>thirteen</u>, but she’s a woman already She’s only thirteen, but she’s a lady already Connotations What differences in meaning – what different associations or CONNOTATIONS – do the words have? One way in which dictionaries try to give us clues about usage is by providing quotations where the word is used. However, even the dictionaries that do contain quotations cannot, for practical reasons, contain every usage of a word. It becomes a matter of selection and",
+    "choices": [
+     "meaning: (of words or symbols) The entity, perception, feeling or concept thereby represe",
+     "words: The smallest unit of language that has a particular meaning and can be expressed",
+     "woman: Prior to some specified time, either past, present, or future; by this time; pre",
+     "different: The different ideal.",
+     "thirteen: The cardinal number occurring after twelve and before fourteen, represented in R"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ의 풀이는 'already'의 정의이다. 'woman'의 올바른 풀이: An adult female human.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
+  {
+   "ts": "2026-07-08T14:53:15.878Z",
+   "type": "안내문불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
+    "passage": "",
+    "choices": [
+     "여자와 여성은 인간이며 여성이고 성인이라는 공통된 특성을 가진다.",
+     "두 단어는 모두 성인 여성인 인간을 가리킨다.",
+     "사전은 단어의 사용 예시를 인용해 의미를 설명한다.",
+     "사전은 단어가 사용되는 문장을 제공해 의미를 파악하는 데 도움을 준다.",
+     "사전은 모든 사용 예시를 포함하고 있어 단어의 의미를 완전히 알 수 있다."
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 모순한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  }
+ ]
 }
