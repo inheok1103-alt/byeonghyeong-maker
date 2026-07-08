@@ -1590,7 +1590,7 @@
       while (true) {
         var i = idx++; if (i >= types.length) return;
         var t = types[i], b = builderFor(t), got = null, t0 = Date.now();
-        if (PAR === 1) { RUNHINT = ""; var kbT = kbFor(t); TYPERULE = ((TYPE_GUIDE[t] || "") + (kbT ? (" [KB지침] " + kbT) : "")).slice(0, 950); setLevelRule(t, opts.level); }
+        if (PAR === 1) { RUNHINT = ""; var kbT = kbFor(t); TYPERULE = ((TYPE_GUIDE[t] || "") + (kbT ? (" [KB지침] " + kbT) : "")).slice(0, 2600); setLevelRule(t, opts.level); }
         onT(t, "start");
         for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
           if (attempt > 1) onT(t, "retry", attempt);
@@ -1618,7 +1618,7 @@
     }
     if (PAR > 1) {
       // 병렬 그룹: 전역 TYPERULE 레이스 방지 — 선택 유형들의 규칙을 결합해 한 번에 주입(각 빌더 프롬프트가 자기 유형만 사용)
-      TYPERULE = types.map(function (tt) { var kb = kbFor(tt); return "〔" + tt + "〕" + (TYPE_GUIDE[tt] || "").slice(0, 200) + (kb ? (" " + kb.slice(0, 140)) : ""); }).join(" / ").slice(0, 1900);
+      TYPERULE = types.map(function (tt) { var kb = kbFor(tt); return "〔" + tt + "〕" + (TYPE_GUIDE[tt] || "").slice(0, 380) + (kb ? (" " + kb.slice(0, 140)) : ""); }).join(" / ").slice(0, 2800);
       setLevelRule(types[0], opts.level);
       var workers = []; for (var w = 0; w < PAR; w++) workers.push(work());
       await Promise.all(workers);
@@ -1720,12 +1720,17 @@
     opts = opts || {}; USE_ENSEMBLE = !!opts.ensemble;
     var _hint0 = RUNHINT; if (opts.hint) RUNHINT = String(opts.hint);   // 키워드 중심 출제 등 1회성 지시
     var ctx = opts.ctx || await cachedContext(passage, opts.onProgress);
-    var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 950); setLevelRule(type, opts.level);
+    var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 2600); setLevelRule(type, opts.level);
     var q = null; for (var _try = 0; _try < 3 && !q; _try++) { try { q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type); } catch (_e) { q = null; } }
     // 태그 위생: LLM이 &lt;u&gt;로 이스케이프해 뱉으면 화면에 <u>가 글자로 노출됨 → 실태그로 복원 + u/b 외 태그 제거
     if (q) { var _tg = function (s) { return String(s).replace(/&lt;(\/?)(u|b)&gt;/gi, "<$1$2>").replace(/<(?!\/?[ub]>)[^>]{1,40}>/g, ""); };
       ["passage", "instruction", "explanation", "answerText"].forEach(function (k) { if (q[k]) q[k] = _tg(q[k]); });
-      if (q.choices && q.choices.length) q.choices = q.choices.map(_tg); }
+      if (q.choices && q.choices.length) q.choices = q.choices.map(_tg);
+      // 서술형 단어수는 모범답안 실측 기준(Ray) — 발문의 "N단어"가 실측과 2 이상 어긋나면 실측으로 교정
+      if (q.answerText && q.instruction && /\d+\s*단어/.test(q.instruction) && !/~/.test(q.instruction)) {
+        var _wc = String(q.answerText).trim().split(/\s+/).filter(Boolean).length;
+        if (_wc >= 5) q.instruction = q.instruction.replace(/\d+(?=\s*단어)/, function (m) { return Math.abs(parseInt(m, 10) - _wc) > 1 ? String(_wc) : m; });
+      } }
     TYPERULE = ""; LEVELRULE = ""; if (opts.hint) RUNHINT = _hint0;
     if (q && TYPE_INSTR[type] && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];
     if (q) q.level = opts.level || "";
