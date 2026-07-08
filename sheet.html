@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ray English · 분석지 생성기</title>
+<style>
+/* ===== Ray English 분석지 생성기 — 정본 디자인(A4 가로 2쪽 · 색=기능 6색 · 1-3-5) 웹 이식 =====
+   입력 UI는 다크, 결과물은 정본 분석지 그대로. 엔진: api_team(프록시 내장키). */
+:root{
+  --blue:#2563EB; --green:#16845B; --amber:#B45309; --rose:#C0265A; --purple:#6D45B8;
+  --gray:#59616E; --navy:#142A63; --line:#D8DEE8; --paper:#FBFAF7; --warn:#FBEAEC; --ok:#EAF5EF;
+  --bgblue:#EAF1FF; --bggreen:#E5F3EC; --bgamber:#FBEFE1; --bgrose:#FBE7EE; --bgpurple:#EFE9FB;
+  --dbg:#0f1117; --dcard:#171a22; --dline:#2a2f3d; --dink:#e9ebf2; --dsoft:#9aa1b2; --gold:#C8A96A; --gold2:#EAD199;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--dbg);color:var(--dink);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;font-size:15px;line-height:1.55;padding:20px 12px 60px}
+.wrap{max-width:1160px;margin:0 auto}
+.top{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.seal{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:19px;color:var(--gold);background:linear-gradient(145deg,#262a38,#141721);border:1px solid var(--dline)}
+.top b{font-size:17px}.top b i{color:var(--gold);font-style:normal}
+.top .sub{font-size:10.5px;color:var(--dsoft);letter-spacing:.1em;text-transform:uppercase}
+.top a{margin-left:auto;font-size:12px;color:var(--dsoft);text-decoration:none;border:1px solid var(--dline);border-radius:9px;padding:6px 11px}
+.top a:hover{color:var(--gold);border-color:var(--gold)}
+.card{background:var(--dcard);border:1px solid var(--dline);border-radius:14px;padding:16px;margin:12px 0}
+textarea{width:100%;min-height:130px;background:#0d0f16;border:1px solid var(--dline);border-radius:11px;color:var(--dink);font-size:.95rem;line-height:1.6;padding:12px;resize:vertical;font-family:inherit}
+textarea:focus{outline:2px solid rgba(200,169,106,.35);border-color:var(--gold)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:8px}
+button{font-family:inherit;cursor:pointer}
+.gh{background:#1c202b;border:1px solid var(--dline);color:#c7cbd8;border-radius:9px;font-size:.8rem;font-weight:600;padding:7px 12px}
+.gh:hover{border-color:var(--gold);color:var(--gold2)}
+input[type=text]{background:#1c202b;border:1px solid var(--dline);color:var(--dink);border-radius:8px;font-size:.8rem;padding:6px 9px;font-family:inherit}
+.go{background:linear-gradient(180deg,var(--gold2),var(--gold));border:0;color:#1a1508;font-weight:800;font-size:.95rem;border-radius:11px;padding:12px 24px}
+.go:disabled{filter:grayscale(.7);opacity:.6;cursor:wait}
+.prog{font-size:.8rem;color:#43c59e;margin-top:8px;white-space:pre-wrap}
+.note{font-size:.8rem;color:var(--dsoft)}
+/* ===== 분석지(정본) ===== */
+@page{size:A4 landscape;margin:0}
+.page{width:297mm;min-height:210mm;background:var(--paper);color:#1d2430;margin:8mm auto;padding:11mm 12mm 9mm;position:relative;overflow:hidden;page-break-after:always;box-shadow:0 2px 14px rgba(0,0,0,.35)}
+.en{font-family:"Source Serif 4","Times New Roman",serif;font-size:10.4pt;line-height:1.5}
+.ko{font-size:8.7pt;color:var(--gray);line-height:1.35}
+h1.title{font-size:15pt;font-weight:700;color:var(--navy);letter-spacing:-.2px}
+h2.sec{font-size:9.6pt;font-weight:700;color:var(--navy);margin-bottom:1.5mm;padding-bottom:.6mm;border-bottom:1.4px solid var(--navy);display:flex;gap:2mm;align-items:center}
+h2.sec small{font-weight:500;color:var(--gray);font-size:7.6pt}
+.head{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--navy);padding-bottom:2mm}
+.head .meta{font-size:7.6pt;color:var(--gray);letter-spacing:.3px}
+.head .brand{font-size:8pt;font-weight:700;color:var(--navy);text-align:right}
+.head .brand b{color:var(--rose)}
+.thesis{margin-top:2mm;font-size:8.8pt;background:var(--ok);border-left:3px solid var(--green);padding:1.6mm 3mm;border-radius:0 2mm 2mm 0;color:#1d2430}
+.thesis b{color:var(--navy)}
+.key{display:flex;gap:3mm;margin:2mm 0 2.5mm;flex-wrap:wrap;font-size:7.5pt;color:#1d2430}
+.key span{display:inline-flex;align-items:center;gap:1.3mm}
+.dot{width:3mm;height:3mm;border-radius:50%;display:inline-block}
+.hl{padding:0 .6mm;border-radius:1px;font-weight:600}
+.c-blue{color:var(--blue);background:var(--bgblue)} .c-green{color:var(--green);background:var(--bggreen)}
+.c-amber{color:var(--amber);background:var(--bgamber)} .c-rose{color:var(--rose);background:var(--bgrose)}
+.c-purple{color:var(--purple);background:var(--bgpurple)}
+.sents{margin-top:1mm}
+.srow{display:grid;grid-template-columns:6mm 1fr 52mm;gap:2.4mm;padding:1.5mm 0;border-bottom:.5px dashed var(--line)}
+.num{font-weight:700;color:#fff;background:var(--navy);border-radius:50%;width:5mm;height:5mm;display:flex;align-items:center;justify-content:center;font-size:7.6pt}
+.srow .mid .ko{margin-top:.6mm}
+.srow .side{font-size:7.6pt;color:#2b3340}
+.role{display:inline-block;font-weight:700;color:var(--navy);font-size:7.4pt;border:1px solid var(--line);border-radius:2mm;padding:.2mm 1.4mm;margin-bottom:.5mm}
+.side .pt b{color:var(--rose)}
+.strip{display:grid;grid-template-columns:1fr 86mm;gap:3mm;margin-top:2.5mm}
+.box{border:1px solid var(--line);border-radius:2mm;padding:2mm 2.6mm;background:#fff;color:#1d2430}
+.flow{display:flex;flex-direction:column;gap:1mm}
+.flow .step{font-size:7.5pt;padding:.9mm 2mm;border-radius:1.5mm;line-height:1.25}
+.flow .arrow{text-align:center;color:var(--gray);font-size:6.5pt;line-height:.6}
+.exam4{display:grid;grid-template-columns:1fr 1fr;gap:1.6mm}
+.exam4 .cell{border:1px solid var(--line);border-radius:1.5mm;padding:1.4mm 2mm;font-size:7.4pt;line-height:1.3}
+.exam4 .cell .ty{font-weight:700;color:var(--purple);display:block;margin-bottom:.4mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:2mm;color:#1d2430}
+.sum li{list-style:none;font-size:8.4pt;line-height:1.42;margin-bottom:1.1mm;padding-left:18mm;position:relative}
+.sum li b{position:absolute;left:0;width:16mm;color:var(--navy);font-size:7.8pt}
+.titlecand{margin-top:1mm;font-size:7.8pt;color:var(--purple);font-weight:600}
+table.vocab{width:100%;border-collapse:collapse;font-size:7.5pt;color:#1d2430}
+table.vocab th,table.vocab td{border:.5px solid var(--line);padding:1mm 1.6mm;text-align:left;vertical-align:top;line-height:1.3}
+table.vocab th{background:#f3f1ec;color:var(--navy);font-weight:700;font-size:7.2pt}
+table.vocab td .s{font-family:"Source Serif 4",serif;font-weight:600}
+table.vocab td .t{color:var(--green)}
+.tag{font-size:6.8pt;color:#fff;background:var(--gray);border-radius:1mm;padding:.1mm 1mm}
+.loop .item{font-size:7.7pt;line-height:1.35;margin-bottom:1.3mm;padding:1.3mm 2mm;border-left:2.5px solid var(--purple);background:var(--bgpurple);border-radius:0 1.5mm 1.5mm 0;color:#1d2430}
+.loop .item b{color:var(--purple)}
+.review{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2mm;margin-top:1mm}
+.review .rcard{border-radius:1.5mm;padding:1.4mm 2mm;font-size:7.5pt;line-height:1.32}
+.review .memo{background:var(--ok);border:1px solid #bfe3cf}
+.review .key2{background:#fff;border:1px solid var(--line)}
+.review .trap{background:var(--warn);border:1px solid #f0cdd3}
+.review .rcard .h{font-weight:700;font-size:7.2pt;display:block;margin-bottom:.6mm}
+.review .memo .h{color:var(--green)} .review .trap .h{color:var(--rose)} .review .key2 .h{color:var(--blue)}
+.folio{position:absolute;bottom:4mm;right:12mm;font-size:7pt;color:var(--gray)}
+.folioL{position:absolute;bottom:4mm;left:12mm;font-size:7pt;color:var(--gray)}
+@media print{ body{background:#fff;padding:0} .noprint{display:none!important} .page{margin:0;box-shadow:none} }
+@media(max-width:900px){ .page{transform-origin:top left;transform:scale(.55);margin-bottom:calc(-210mm*.45)} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top noprint">
+    <span class="seal">R</span>
+    <span><b>Ray <i>English</i></b><div class="sub">Analysis Sheet Maker</div></span>
+    <a href="exam.html">📝 출제(최종판)</a>
+    <a href="ai_maker.html">🧪 실험실</a>
+  </div>
+
+  <div class="card noprint">
+    <div style="font-weight:800;margin-bottom:6px">① 지문 붙여넣기 <span class="note">— 붙여넣고 [분석지 생성]을 누르면 A4 가로 2쪽 정본 분석지가 만들어집니다 (색=독해 기능 6색 · 1-3-5 인지부하)</span></div>
+    <textarea id="passage" placeholder="영어 지문을 붙여넣으세요 (5~10문장 권장)"></textarea>
+    <div class="row">
+      <input type="text" id="srcMeta" placeholder="출처 표기(선택) 예: 공통영어1 3과 · 올림포스 5강" style="min-width:240px">
+      <button class="gh" onclick="loadSample()">📄 샘플</button>
+      <button class="go" id="goBtn" onclick="makeSheet()">📊 분석지 생성</button>
+      <button class="gh" id="prBtn" onclick="window.print()" style="display:none">🖨 인쇄 / PDF 저장</button>
+      <span class="note">인쇄 대화상자에서 '가로 방향·여백 없음·배경 그래픽'을 켜면 실물과 동일하게 나옵니다</span>
+    </div>
+    <div class="prog" id="prog"></div>
+  </div>
+
+  <div id="out"></div>
+</div>
+
+<script src="api_team.js?v=20260708b"></script>
+<script src="raytools.js?v=20260707b"></script>
+<script>
+var RAY_PROXY="https://ray-proxy.gen1103.workers.dev";
+var T=window.APITEAM; T.configure({proxyUrl:RAY_PROXY});
+function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function P(m){document.getElementById("prog").textContent=m;}
+function loadSample(){document.getElementById("passage").value="What are the relations between social determinations and subjective aesthetic experience? If every author comes out with his own set of values and personal history, how is this subjective vision of the world influenced by the society in which the author lives? The inner world of the writer necessarily meets the social world outside of him or her. Pierre Bourdieu tries to answer this question from a materialistic point of view, saying that the analysis of this relation must go back to the earliest stage of a child's life when he experiences pleasure and aversion. But children are already part of a social group thanks to their family, and therefore the pleasure and the aversion they experience are class-specific, so that the purest pleasures are rooted in these socially conditioned experiences. In other words, for Bourdieu, from the beginning of life, every experience is already conditioned by the world outside, and this influence manifests itself in literary works too.";}
+
+/* ── 하이라이트: LLM이 준 구절을 문장 안에서 찾아 기능색 span으로 감쌈(없으면 무시 — 검증 게이트) ── */
+function applyHl(en, hls){
+  var html=esc(en);
+  (hls||[]).forEach(function(h){
+    if(!h||!h.t||!/^(blue|green|amber|rose|purple)$/.test(h.c||"")) return;
+    var t=esc(h.t).trim(); if(t.length<2) return;
+    var i=html.indexOf(t); if(i<0) return;                       // 원문에 실존하는 구절만
+    if(/class="hl/.test(html.slice(Math.max(0,i-40),i))) return; // 중첩 방지(근사)
+    html=html.slice(0,i)+'<span class="hl c-'+h.c+'">'+t+'</span>'+html.slice(i+t.length);
+  });
+  return html;
+}
+var STAR="★★☆☆|★★★☆|★★★★"; function diffStar(d){d=parseInt(d,10)||3;return ["★☆☆☆","★★☆☆","★★★☆","★★★★"][Math.min(4,Math.max(1,d))-1];}
+
+async function makeSheet(){
+  var pg=document.getElementById("passage").value.trim();
+  if(pg.split(/\s+/).length<30){alert("지문이 너무 짧습니다(30단어 이상).");return;}
+  var btn=document.getElementById("goBtn");btn.disabled=true;P("🧠 분석 중… (문장분석 + 시험정리 2엔진 병렬)");
+  var SYS=[{role:"system",content:"너는 한국 고등 영어 내신 1타 분석가다. 지문을 문장 단위로 해부해 '분석지' 데이터를 만든다. 색은 독해 기능이다: blue=핵심개념, green=조건·근거·배경, amber=논리신호·전환, rose=문법·구문, purple=주장·출제핵심. 반드시 JSON만 출력."}];
+  try{
+    var sentsP=T.llmJSON(SYS.concat([{role:"user",content:"[지문]\n"+pg+"\n\n문장별 분석 JSON: {\"title\":\"한국어 제목(소재—논지)\",\"issue\":\"핵심 쟁점 1문장(한국어, 굵힐 곳은 **표시**)\",\"genre\":\"지문 성격(예: 사회과학 설명문)\",\"diff\":1~4,\"sents\":[{\"en\":\"원문 문장 그대로\",\"ko\":\"자연스러운 해석\",\"role\":\"담화 역할(질문 제기/중심 명제/근거/예시/역접 전환/재진술·결론 등 2~5자)\",\"pt\":\"출제 포인트 한 줄(어법·빈칸·함정, 굵힐 곳 **표시**)\",\"hl\":[{\"t\":\"문장 속 원문 구절 그대로\",\"c\":\"blue|green|amber|rose|purple\"}]}],\"flow\":[{\"t\":\"① 단계 요약\",\"c\":\"blue|green|amber|purple\"}](3~4단계),\"exam4\":[{\"ty\":\"주제·제목\",\"body\":\"..근거 문장번호+함정\"},{\"ty\":\"빈칸\",\"body\":\"..\"},{\"ty\":\"순서·삽입\",\"body\":\"..\"},{\"ty\":\"어법\",\"body\":\"..\"}]} — sents는 지문 문장수와 동일, hl 구절은 반드시 그 문장에 실존하는 원문 그대로. JSON만."}]),{temperature:0.3,timeout:90000});
+    var wrapP=T.llmJSON(SYS.concat([{role:"user",content:"[지문]\n"+pg+"\n\n시험정리 JSON: {\"summary\":{\"주제\":\"..\",\"목적\":\"..\",\"요지\":\"..\",\"주장\":\"..\"},\"titles\":[\"영어 제목 후보1\",\"후보2\"],\"loop\":[{\"k\":\"빈칸\",\"task\":\"서술형 전환 과제\",\"rubric\":\"채점 기준\"},{\"k\":\"어법\",\"task\":\"..\",\"rubric\":\"..\"},{\"k\":\"서술형\",\"task\":\"..\",\"rubric\":\"..\"}],\"review\":{\"memo\":\"암기할 원문 핵심 문장 1개(영어)\",\"keys\":\"핵심어 4개(· 구분)\",\"traps\":\"함정 2개(① ② 형식)\"},\"para\":[{\"s\":\"원문 표현\",\"t\":\"시험 치환 패러프레이즈(영어)\",\"tag\":\"주제·빈칸 등\"}](6~7행),\"trapwords\":[{\"w\":\"단어 (품사)\",\"mean\":\"지문에서의 뜻\",\"trap\":\"오답 함정어\"}](3~4행),\"anchor\":\"정답 근거 한 줄: 어느 문장(S번호)으로 수렴하는지(한국어, 굵힐 곳 **표시**)\"} — 전부 이 지문 근거로만. JSON만."}]),{temperature:0.3,timeout:90000});
+    var r=await Promise.all([sentsP,wrapP]); var A=r[0],B=r[1];
+    if(!A||!A.sents||!A.sents.length||!B||!B.summary) throw new Error("분석 결과 불완전 — 다시 시도해주세요");
+    render(A,B,pg); P("✅ 완료 — 인쇄/PDF 저장 버튼으로 실물 출력");
+    document.getElementById("prBtn").style.display="";
+  }catch(e){ P("⚠ "+(e&&e.message||e)); }
+  btn.disabled=false;
+}
+function bold(s){return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");}
+function render(A,B,pg){
+  var meta=esc(A.genre||"")+" · 난도 "+diffStar(A.diff)+" · "+A.sents.length+"문장"+(document.getElementById("srcMeta").value?" · "+esc(document.getElementById("srcMeta").value):"");
+  var h="";
+  /* ── PAGE 1: 본문 분석 ── */
+  h+='<section class="page"><div class="head"><div><div class="meta">'+meta+'</div><h1 class="title">'+esc(A.title||"본문 분석")+'</h1></div><div class="brand">Ray\'s <b>English</b><br><span style="font-weight:500;color:var(--gray)">본문 분석 · Page 1 / 2</span></div></div>';
+  h+='<div class="thesis"><b>핵심 쟁점</b> &nbsp;'+bold(A.issue||"")+'</div>';
+  h+='<div class="key"><span><i class="dot" style="background:var(--blue)"></i>핵심개념</span><span><i class="dot" style="background:var(--green)"></i>조건·근거</span><span><i class="dot" style="background:var(--amber)"></i>논리·전환</span><span><i class="dot" style="background:var(--rose)"></i>문법·구문</span><span><i class="dot" style="background:var(--purple)"></i>주장·출제핵심</span><span style="color:var(--gray)">※ 색은 <b>독해 기능</b> 표시</span></div>';
+  h+='<div class="sents">';
+  A.sents.forEach(function(s,i){
+    h+='<div class="srow"><div class="num">'+(i+1)+'</div><div class="mid"><div class="en">'+applyHl(s.en,s.hl)+'</div><div class="ko">'+esc(s.ko||"")+'</div></div><div class="side"><span class="role">'+esc(s.role||"")+'</span><div class="pt">'+bold(s.pt||"")+'</div></div></div>';
+  });
+  h+='</div>';
+  var FLOWBG={blue:"var(--bgblue)",green:"var(--bggreen)",amber:"var(--bgamber)",purple:"var(--bgpurple)"};
+  h+='<div class="strip"><div class="box"><h2 class="sec">본문 전개 <small>discourse flow</small></h2><div class="flow">';
+  (A.flow||[]).forEach(function(f,i){ if(i)h+='<div class="arrow">▼</div>'; h+='<div class="step c-'+esc(f.c||"blue")+'" style="background:'+(FLOWBG[f.c]||"var(--bgblue)")+'">'+esc(f.t||"")+'</div>'; });
+  h+='</div></div><div class="box"><h2 class="sec">출제 핵심 <small>exam focus</small></h2><div class="exam4">';
+  (A.exam4||[]).slice(0,4).forEach(function(c){ h+='<div class="cell"><span class="ty">'+esc(c.ty||"")+'</span>'+esc(c.body||"")+'</div>'; });
+  h+='</div></div></div><div class="folio">Ray\'s English · 분석지</div></section>';
+  /* ── PAGE 2: 시험 정리 ── */
+  h+='<section class="page"><div class="head"><div><div class="meta">'+meta+'</div><h1 class="title">시험 정리 — 요약 · 어휘 · 변형 루프</h1></div><div class="brand">Ray\'s <b>English</b><br><span style="font-weight:500;color:var(--gray)">시험 정리 · Page 2 / 2</span></div></div>';
+  h+='<div class="two"><div>';
+  h+='<h2 class="sec" style="margin-top:2mm">한눈 요약 <small>topic · gist · claim</small></h2><ul class="sum">';
+  ["주제","목적","요지","주장"].forEach(function(k){ if(B.summary[k]) h+='<li><b>'+k+'</b>'+esc(B.summary[k])+'</li>'; });
+  h+='</ul><div class="titlecand">제목 후보 ▸ '+(B.titles||[]).map(esc).join(" · ")+'</div>';
+  h+='<h2 class="sec" style="margin-top:3mm">MCQ → 서술형 전환 루프 <small>출력 학습</small></h2><div class="loop">';
+  (B.loop||[]).forEach(function(l){ h+='<div class="item"><b>'+esc(l.k||"")+'</b> '+esc(l.task||"")+' <span style="color:var(--gray)">채점: '+esc(l.rubric||"")+'</span></div>'; });
+  h+='</div><h2 class="sec" style="margin-top:3mm">복습 카드 <small>30초 회독</small></h2><div class="review">';
+  h+='<div class="rcard memo"><span class="h">암기 문장</span>'+esc((B.review||{}).memo||"")+'</div>';
+  h+='<div class="rcard key2"><span class="h">핵심어</span>'+esc((B.review||{}).keys||"")+'</div>';
+  h+='<div class="rcard trap"><span class="h">함정</span>'+esc((B.review||{}).traps||"")+'</div>';
+  h+='</div></div><div>';
+  h+='<h2 class="sec" style="margin-top:2mm">핵심 어휘 · 패러프레이즈 <small>same-meaning swap</small></h2><table class="vocab"><thead><tr><th style="width:34%">원문 표현</th><th>같은 의미 (시험 치환형)</th><th style="width:20%">출제</th></tr></thead><tbody>';
+  (B.para||[]).forEach(function(p){ h+='<tr><td><span class="s">'+esc(p.s||"")+'</span></td><td><span class="t">'+esc(p.t||"")+'</span></td><td><span class="tag">'+esc(p.tag||"")+'</span></td></tr>'; });
+  h+='</tbody></table><h2 class="sec" style="margin-top:3mm">헷갈리면 안 되는 말 <small>trap words</small></h2><table class="vocab"><thead><tr><th style="width:24%">단어</th><th style="width:30%">지문에서의 뜻</th><th>오답 함정어</th></tr></thead><tbody>';
+  (B.trapwords||[]).forEach(function(w){ h+='<tr><td><span class="s">'+esc(w.w||"")+'</span></td><td>'+esc(w.mean||"")+'</td><td><span style="color:var(--rose)">'+esc(w.trap||"")+'</span></td></tr>'; });
+  h+='</tbody></table><div class="box" style="margin-top:3mm;background:var(--ok);border-color:#bfe3cf"><h2 class="sec" style="border-color:var(--green);color:var(--green)">정답 근거 한 줄 <small>answer anchor</small></h2><div style="font-size:8pt;line-height:1.4">'+bold(B.anchor||"")+'</div></div>';
+  h+='</div></div><div class="folioL">© Ray\'s English — 색=기능 · 1페이지 1목적 · 1-3-5 준수</div><div class="folio">분석지 생성기 v1</div></section>';
+  document.getElementById("out").innerHTML=h;
+}
+</script>
+</body>
+</html>
