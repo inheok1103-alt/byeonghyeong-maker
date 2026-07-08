@@ -1,0 +1,58 @@
+{
+ "grammar": {
+  "passage": "Many people believe that talent alone determines success. However, research on expert performers tells a different story. When psychologists studied musicians who had reached the <u>highest levels</u>, they found that the amount of deliberate practice, not natural gift, separated the best from the rest. The students who practiced with clear goals and immediate feedback improved far more quickly than <u>those who simply repeated familiar pieces</u>. Deliberate practice is demanding because it forces learners to work at the edge of their current abilities. In other words, the path to excellence is built not on what we are born with but on how we choose to train.",
+  "instruction": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+  "answer": 2,
+  "explanation": {
+   "원리_정의": {
+    "①_위치공리": "'highest levels'는 'highest level'의 복수 형태가 맞습니다. 'levels'는 복수 명사로, '최고의 수준들'로 해석되어야 하며, 문맥상 복수 개별 수준을 가리키므로 복수형이 필요합니다.",
+    "②_경제성공리": "해당 부분은 문법적으로 오류가 없습니다. 'those who simply repeated familiar pieces'는 복수 대명사 'those'와 관계절 'who repeated...'로 구성된 정상적인 구조입니다.",
+    "③_데이터보존공리": "해당 부분은 문법적으로 오류가 없습니다. 'those'은 복수 대명사로, 'the students'를 대체하여 복수형을 유지합니다.",
+    "④_위치공리": "해당 부분은 문법적으로 오류가 없습니다. 'the edge of their current abilities'는 복수 명사 'abilities'가 문맥상 적절하며, 복수형을 요구합니다.",
+    "⑤_경제성공리": "해당 부분은 문법적으로 오류가 없습니다. 'the path to excellence is built'는 수동태로, 문맥상 자연스럽습니다."
+   },
+   "IF_THEN_데이터_과정": {
+    "①_오류_판정": "IF: 'highest level'이 단수라면 THEN: 'the highest level'이 되어야 하지만, 문맥상 복수 개별 수준을 가리키므로 'levels'가 필요합니다. ELSE: 오류 없음.",
+    "②_정상_판정": "IF: 'those who simply repeated familiar pieces' THEN: 복수 대명사와 관계절이 정상적으로 결합되어 문법적으로 옳습니다.",
+    "③_정상_판정": "IF: 'those' THEN: 복수 대명사로, 'the students'를 대체하여 복수형을 유지하므로 문법적으로 옳습니다.",
+    "④_정상_판정": "IF: 'the edge of their current abilities' THEN: 복수 명사 'abilities'가 문맥상 적절하며, 복수형을 요구합니다.",
+    "⑤_정상_판정": "IF: 'the path to excellence is built' THEN: 수동태로, 문맥상 자연스럽습니다."
+   },
+   "학생_함정_방어": {
+    "①_함정": "학생들은 'level'을 단수로 오해할 수 있으나, 문맥상 복수 개별 수준을 가리키므로 'levels'가 필요합니다. 또한, 'highest levels'는 '최고의 수준들'로 해석되어 복수형이 필수입니다.",
+    "②_함정": "학생들은 'those'을 단수로 오해할 수 있으나, 'those'은 복수 대명사로, 'the students'를 대체합니다.",
+    "③_함정": "학생들은 'those'을 단수로 오해할 수 있으나, 'those'은 복수 대명사로, 복수형을 유지합니다.",
+    "④_함정": "학생들은 'ability'를 단수로 오해할 수 있으나, 'abilities'는 복수형으로, 문맥상 적절합니다.",
+    "⑤_함정": "학생들은 수동태를 오해할 수 있으나, 문맥상 수동태가 자연스럽습니다."
+   },
+   "교육과정_용어_매칭": {
+    "①_용어": "복수 명사(명사 형태 변화) - 'level' → 'levels'",
+    "②_용어": "복수 대명사(대명사 기능) - 'those'이 복수 대명사로 기능",
+    "③_용어": "복수 대명사(대명사 기능) - 'those'이 복수 대명사로 기능",
+    "④_용어": "복수 명사(명사 형태 변화) - 'ability' → 'abilities'",
+    "⑤_용어": "수동태(태 변화) - 'is built'가 수동태로 기능"
+   }
+  }
+ },
+ "order": {
+  "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+  "passage": "Many people believe that talent alone determines success. However, research on expert performers tells a different story. When psychologists studied musicians who had reached the highest levels, they found that the amount of deliberate practice, not natural gift, separated the best from the rest. The students who practiced with clear goals and immediate feedback improved far more quickly than those who simply repeated familiar pieces. Deliberate practice is demanding because it forces learners to work at the edge of their current abilities. In other words, the path to excellence is built not on what we are born with but on how we choose to train.",
+  "choices": [
+   "①. Many people believe that talent alone determines success. ②. When psychologists studied musicians who had reached the highest levels, they found that the amount of deliberate practice, not natural gift, separated the best from the rest. ③. However, research on expert performers tells a different story. ④. The students who practiced with clear goals and immediate feedback improved far more quickly than those who simply repeated familiar pieces. ⑤. Deliberate practice is demanding because it forces learners to work at the edge of their current abilities. ⑥. In other words, the path to excellence is built not on what we are born with but on how we choose to train.",
+   "①. Many people believe that talent alone determines success. ②. However, research on expert performers tells a different story. ③. When psychologists studied musicians who had reached the highest levels, they found that the amount of deliberate practice, not natural gift, separated the best from the rest. ④. The students who practiced with clear goals and immediate feedback improved far more quickly than those who simply repeated familiar pieces. ⑤. Deliberate practice is demanding because it forces learners to work at the edge of their current abilities. ⑥. In other words, the path to excellence is built not on what we are born with but on how we choose to train.",
+   "①. Many people believe that talent alone determines success. ②. When psychologists studied musicians who had reached the highest levels, they found that the amount of deliberate practice, not natural gift, separated the best from the rest. ③. The students who practiced with clear goals and immediate feedback improved far more quickly than those who simply repeated familiar pieces. ④. However, research on expert performers tells a different story. ⑤. Deliberate practice is demanding because it forces learners to work at the edge of their current abilities. ⑥. In other words, the path to excellence is built not on what we are born with but on how we choose to train.",
+   "①. Many people believe that talent alone determines success. ②. However, research on expert performers tells a different story. ③. The students who practiced with clear goals and immediate feedback improved far more quickly than those who simply repeated familiar pieces. ④. When psychologists studied musicians who had reached the highest levels, they found that the amount of deliberate practice, not natural gift, separated the best from the rest. ⑤. Deliberate practice is demanding because it forces learners to work at the edge of their current abilities. ⑥. In other words, the path to excellence is built not on what we are born with but on how we choose to train.",
+   "①. Many people believe that talent alone determines success. ②. When psychologists studied musicians who had reached the highest levels, they found that the amount of deliberate practice, not natural gift, separated the best from the rest. ③. However, research on expert performers tells a different story. ④. Deliberate practice is demanding because it forces learners to work at the edge of their current abilities. ⑤. The students who practiced with clear goals and immediate feedback improved far more quickly than those who simply repeated familiar pieces. ⑥. In other words, the path to excellence is built not on what we are born with but on how we choose to train."
+  ],
+  "answer": 2,
+  "shuffle_map": {
+   "1": "S1",
+   "2": "S2",
+   "3": "S3",
+   "4": "S4",
+   "5": "S5",
+   "6": "S6"
+  },
+  "explanation": "However, research on expert performers tells a different story. 연결 고리 단서어를 순서대로 인용: However, When, The, Deliberate, In other words"
+ }
+}

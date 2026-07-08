@@ -162,7 +162,7 @@ body.showAns .q .ans{display:block}
 </div>
 
 <script>var RAY_PROXY="https://ray-proxy.gen1103.workers.dev";</script>
-<script src="api_team.js?v=20260708b"></script>
+<script src="api_team.js?v=20260708c"></script>
 <script src="addon_key_guard.js?v=20260707a"></script>
 <script src="raytools.js?v=20260707b"></script>
 <script>
@@ -203,7 +203,7 @@ function judge(nm,sig){ for(var i=0;i<DISR.length;i++){ if(sig[DISR[i][0]]&&DISR
 function types(){ return (T&&T.BEST_TYPES)||["요지","주제","제목","빈칸","어법","어휘","함의","요약","내용불일치","서술형"]; }
 /* 내신 카테고리 그룹 — 교사가 시험지 짜는 순서대로 */
 var GROUPS=[["📖 독해 이해",/요지|주제|제목|주장|목적|심경|함의|일치$|불일치|안내문|도표|영영풀이일치|지칭추론/],
-  ["🔀 흐름·구조",/순서|삽입|무관|요약문|연결어/],
+  ["🔀 흐름·구조",/순서|삽입|무관|요약문|연결어|전체문장/],
   ["✏️ 어법·어휘 변형",/어법|어휘|네모|첫글자|유의어|본문어변형|빈칸/],
   ["🧩 세트·통합",/장문|복합|혼합/],
   ["📝 서술형",/영작|서술|해석|전환|완성|수정|영영풀이단어|요약빈칸|지칭명시|강조/]];

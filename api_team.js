@@ -1100,6 +1100,34 @@
     }
     return { text: out + rest, count: count };
   }
+  // 전체문장배열(ORDER_ALL_SENTENCES_MODE): 모든 문장 번호화 배열 — 셔플·선지·정답 전부 코드 생성(LLM 불필요)
+  function buildOrderAll(passage) {
+    var ss = splitSentences(passage);
+    if (ss.length < 5) return null;
+    if (ss.length > 9) ss = ss.slice(0, 9);   // 규격: 5~9문장(넘치면 앞 9문장)
+    var n = ss.length, C = "①②③④⑤⑥⑦⑧⑨";
+    var idx = ss.map(function (_, i) { return i; }), sh, g0 = 0;
+    do { sh = idx.slice().sort(function () { return Math.random() - 0.5; }); } while ((sh[0] === 0 || sh.join() === idx.join()) && g0++ < 40);
+    if (sh[0] === 0) { var sw = sh[0]; sh[0] = sh[1]; sh[1] = sw; }   // 첫 자리에 원문 첫 문장 금지(사소화 방지)
+    var pos = []; sh.forEach(function (orig, k) { pos[orig] = k; });
+    var key = idx.map(function (i) { return C[pos[i]]; });
+    var correct = key.join("-"), set = {}; set[correct] = 1; var chs = [correct];
+    var guard = 0;
+    while (chs.length < 5 && guard++ < 80) {
+      var a = key.slice(), r = Math.random();
+      if (r < 0.4) { var i2 = 1 + rint(n - 2), t = a[i2]; a[i2] = a[i2 + 1]; a[i2 + 1] = t; }                      // 인접 교환(국소 응집 함정)
+      else if (r < 0.7) { var t2 = a[0]; a[0] = a[1]; a[1] = t2; }                                                   // 도입 교란
+      else { a = key.slice(0, 1).concat(key.slice(1).sort(function () { return Math.random() - 0.5; })); }          // 후반 셔플
+      var v = a.join("-"); if (!set[v]) { set[v] = 1; chs.push(v); }
+    }
+    if (chs.length < 5) return null;
+    chs.sort(function () { return Math.random() - 0.5; });
+    var pg = sh.map(function (orig, k) { return C[k] + " " + ss[orig]; }).join("\n");
+    var cues = ss.map(function (s, i) { var m = s.match(/^(However|Therefore|Thus|For example|For instance|In other words|In addition|Moreover|As a result|In contrast|Similarly|Instead|Finally|But|So|Then)\b/i) || s.match(/^\s*(This|These|Such|It|They)\b/i); return C[pos[i]] + (m ? "(" + m[1] + ")" : ""); });
+    return { type: "전체문장배열", instruction: "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?", passage: pg, choices: chs, answer: chs.indexOf(correct) + 1,
+      explanation: "정답 배열은 " + correct + ". 흐름: " + cues.join(" → ") + " — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.",
+      _audit: "정답 코드생성됨(셔플·선지·정답 전부 코드 제어)" };
+  }
   // 글의순서: 코드가 지문을 도입+3덩이로 분할·셔플 → 정답 배열을 코드가 안다(LLM 불요)
   function buildOrder(passage) {
     var ss = splitSentences(passage);
@@ -1487,6 +1515,7 @@
     if (t === "문장전환") return function (p) { return buildConvertAuto(p); };   // 통합형: 지문에 맞는 전환을 자동 선택
     var cm = String(t).match(/^문장전환\((태|분사구문|관계사|가정법)\)/); if (cm) return function (p) { return buildConvert(p, cm[1]); };
     if (/강조|도치/.test(t) && /전환/.test(t)) return function (p) { return buildConvert(p, "강조도치"); };
+    if (/전체문장|문장배열/.test(t)) return function (p) { return Promise.resolve(buildOrderAll(p)); };
     if (/글의\s*순서|^순서$/.test(t)) return function (p) { return Promise.resolve(buildOrder(p)); };
     if (/문장삽입/.test(t)) return function (p) { return Promise.resolve(buildInsertion(p)); };
     if (/안내문/.test(t)) return function (p) { return buildFactCheck(p, !/불일치/.test(t)); };   // 안내문 일치/불일치 → 사실검증 빌더(일치/불일치 문항) 연결(주제 폴백 방지)
