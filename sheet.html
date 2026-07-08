@@ -56,7 +56,8 @@ h2.sec small{font-weight:500;color:var(--gray);font-size:7.6pt}
 .c-amber{color:var(--amber);background:var(--bgamber)} .c-rose{color:var(--rose);background:var(--bgrose)}
 .c-purple{color:var(--purple);background:var(--bgpurple)}
 .sents{margin-top:1mm}
-.srow{display:grid;grid-template-columns:6mm 1fr 52mm;gap:2.4mm;padding:1.5mm 0;border-bottom:.5px dashed var(--line)}
+.srow{display:grid;grid-template-columns:6mm 1fr 52mm;gap:2.4mm;padding:1.5mm 0;border-bottom:.5px dashed var(--line);break-inside:avoid;page-break-inside:avoid}
+.dense .srow{padding:1mm 0}.dense .en{font-size:9.4pt;line-height:1.42}.dense .ko{font-size:8pt}.dense .side{font-size:7.2pt}
 .num{font-weight:700;color:#fff;background:var(--navy);border-radius:50%;width:5mm;height:5mm;display:flex;align-items:center;justify-content:center;font-size:7.6pt}
 .srow .mid .ko{margin-top:.6mm}
 .srow .side{font-size:7.6pt;color:#2b3340}
@@ -126,6 +127,12 @@ table.vocab td .t{color:var(--green)}
 var RAY_PROXY="https://ray-proxy.gen1103.workers.dev";
 var T=window.APITEAM; T.configure({proxyUrl:RAY_PROXY});
 function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+/* 위생: 깨진 문자(U+FFFD)·키릴 혼입·제어문자 제거 — 전 문자열 깊이 청소 */
+function clean(o){ if(typeof o==="string") return o.replace(/[\uFFFD\u0400-\u04FF]/g,"").replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g,"");
+  if(Array.isArray(o)) return o.map(clean); if(o&&typeof o==="object"){var r={};Object.keys(o).forEach(function(k){r[k]=clean(o[k]);});return r;} return o; }
+/* 문장 분리(코드가 진실원본 — LLM 분할·중복 오류 차단) */
+function splitSents(pg){ var m=String(pg).replace(/\s+/g," ").trim().match(/[^.!?]+[.!?]+["')\]]*/g)||[String(pg)];
+  var out=[]; m.forEach(function(s){ s=s.trim(); if(out.length&&(s.split(/\s+/).length<3||/^[a-z]/.test(s))) out[out.length-1]+=" "+s; else out.push(s); }); return out; }
 function P(m){document.getElementById("prog").textContent=m;}
 function loadSample(){document.getElementById("passage").value="What are the relations between social determinations and subjective aesthetic experience? If every author comes out with his own set of values and personal history, how is this subjective vision of the world influenced by the society in which the author lives? The inner world of the writer necessarily meets the social world outside of him or her. Pierre Bourdieu tries to answer this question from a materialistic point of view, saying that the analysis of this relation must go back to the earliest stage of a child's life when he experiences pleasure and aversion. But children are already part of a social group thanks to their family, and therefore the pleasure and the aversion they experience are class-specific, so that the purest pleasures are rooted in these socially conditioned experiences. In other words, for Bourdieu, from the beginning of life, every experience is already conditioned by the world outside, and this influence manifests itself in literary works too.";}
 
@@ -147,28 +154,32 @@ async function makeSheet(){
   var pg=document.getElementById("passage").value.trim();
   if(pg.split(/\s+/).length<30){alert("지문이 너무 짧습니다(30단어 이상).");return;}
   var btn=document.getElementById("goBtn");btn.disabled=true;P("🧠 분석 중… (문장분석 + 시험정리 2엔진 병렬)");
+  var SENTS=splitSents(pg);
+  var NUM=SENTS.map(function(s,i){return "S"+(i+1)+": "+s;}).join("\n");
   var SYS=[{role:"system",content:"너는 한국 고등 영어 내신 1타 분석가다. 지문을 문장 단위로 해부해 '분석지' 데이터를 만든다. 색은 독해 기능이다: blue=핵심개념, green=조건·근거·배경, amber=논리신호·전환, rose=문법·구문, purple=주장·출제핵심. 반드시 JSON만 출력."}];
   try{
-    var sentsP=T.llmJSON(SYS.concat([{role:"user",content:"[지문]\n"+pg+"\n\n문장별 분석 JSON: {\"title\":\"한국어 제목(소재—논지)\",\"issue\":\"핵심 쟁점 1문장(한국어, 굵힐 곳은 **표시**)\",\"genre\":\"지문 성격(예: 사회과학 설명문)\",\"diff\":1~4,\"sents\":[{\"en\":\"원문 문장 그대로\",\"ko\":\"자연스러운 해석\",\"role\":\"담화 역할(질문 제기/중심 명제/근거/예시/역접 전환/재진술·결론 등 2~5자)\",\"pt\":\"출제 포인트 한 줄(어법·빈칸·함정, 굵힐 곳 **표시**)\",\"hl\":[{\"t\":\"문장 속 원문 구절 그대로\",\"c\":\"blue|green|amber|rose|purple\"}]}],\"flow\":[{\"t\":\"① 단계 요약\",\"c\":\"blue|green|amber|purple\"}](3~4단계),\"exam4\":[{\"ty\":\"주제·제목\",\"body\":\"..근거 문장번호+함정\"},{\"ty\":\"빈칸\",\"body\":\"..\"},{\"ty\":\"순서·삽입\",\"body\":\"..\"},{\"ty\":\"어법\",\"body\":\"..\"}]} — sents는 지문 문장수와 동일, hl 구절은 반드시 그 문장에 실존하는 원문 그대로. JSON만."}]),{temperature:0.3,timeout:90000});
-    var wrapP=T.llmJSON(SYS.concat([{role:"user",content:"[지문]\n"+pg+"\n\n시험정리 JSON: {\"summary\":{\"주제\":\"..\",\"목적\":\"..\",\"요지\":\"..\",\"주장\":\"..\"},\"titles\":[\"영어 제목 후보1\",\"후보2\"],\"loop\":[{\"k\":\"빈칸\",\"task\":\"서술형 전환 과제\",\"rubric\":\"채점 기준\"},{\"k\":\"어법\",\"task\":\"..\",\"rubric\":\"..\"},{\"k\":\"서술형\",\"task\":\"..\",\"rubric\":\"..\"}],\"review\":{\"memo\":\"암기할 원문 핵심 문장 1개(영어)\",\"keys\":\"핵심어 4개(· 구분)\",\"traps\":\"함정 2개(① ② 형식)\"},\"para\":[{\"s\":\"원문 표현\",\"t\":\"시험 치환 패러프레이즈(영어)\",\"tag\":\"주제·빈칸 등\"}](6~7행),\"trapwords\":[{\"w\":\"단어 (품사)\",\"mean\":\"지문에서의 뜻\",\"trap\":\"오답 함정어\"}](3~4행),\"anchor\":\"정답 근거 한 줄: 어느 문장(S번호)으로 수렴하는지(한국어, 굵힐 곳 **표시**)\"} — 전부 이 지문 근거로만. JSON만."}]),{temperature:0.3,timeout:90000});
-    var r=await Promise.all([sentsP,wrapP]); var A=r[0],B=r[1];
+    var sentsP=T.llmJSON(SYS.concat([{role:"user",content:"[지문 문장 — 번호 고정]\n"+NUM+"\n\n문장별 분석 JSON: {\"title\":\"한국어 제목(소재—논지)\",\"issue\":\"핵심 쟁점 1문장(한국어, 굵힐 곳은 **표시**)\",\"genre\":\"지문 성격(예: 사회과학 설명문)\",\"diff\":1~4,\"sents\":[{\"n\":1,\"ko\":\"자연스러운 해석\",\"role\":\"담화 역할(질문 제기/중심 명제/근거/예시/역접 전환/재진술·결론 등 2~6자)\",\"pt\":\"출제 포인트 한 줄(어법·빈칸·함정, 굵힐 곳 **표시**)\",\"hl\":[{\"t\":\"그 문장에 실제로 있는 원문 구절 그대로(2~6단어)\",\"c\":\"blue|green|amber|rose|purple\"}]}],\"flow\":[{\"t\":\"① 단계 요약\",\"c\":\"blue|green|amber|purple\"}](정확히 3~4단계),\"exam4\":[{\"ty\":\"주제·제목\",\"body\":\"근거 S번호+예상 함정\"},{\"ty\":\"빈칸\",\"body\":\"..\"},{\"ty\":\"순서·삽입\",\"body\":\"..\"},{\"ty\":\"어법\",\"body\":\"..\"}]} — sents는 S1~S"+SENTS.length+"과 정확히 1:1("+SENTS.length+"개, n 오름차순), hl은 문장당 1~3개·해당 문장에 실존하는 구절만. JSON만."}]),{temperature:0.3,timeout:90000});
+    var wrapP=T.llmJSON(SYS.concat([{role:"user",content:"[지문]\n"+pg+"\n\n시험정리 JSON: {\"summary\":{\"주제\":\"..\",\"목적\":\"..\",\"요지\":\"..\",\"주장\":\"..\"},\"titles\":[\"영어 제목 후보1\",\"후보2\"],\"loop\":[{\"k\":\"빈칸\",\"task\":\"서술형 전환 과제\",\"rubric\":\"채점 기준\"},{\"k\":\"어법\",\"task\":\"..\",\"rubric\":\"..\"},{\"k\":\"서술형\",\"task\":\"..\",\"rubric\":\"..\"}],\"review\":{\"memo\":\"암기할 원문 핵심 문장 1개(영어)\",\"keys\":\"핵심어 4개(· 구분)\",\"traps\":\"함정 2개(① ② 형식)\"},\"para\":[{\"s\":\"원문 어구 그대로(3~6단어, 문장 전체 금지)\",\"t\":\"영어 치환 표현\",\"tag\":\"주제|제목|요지|빈칸|어법|어휘|함축 중\"}](6~7행, 예: {\"s\":\"social determinations\",\"t\":\"external social forces\",\"tag\":\"주제·빈칸\"}),\"trapwords\":[{\"w\":\"단어 (품사)\",\"mean\":\"지문에서의 뜻(한국어)\",\"trap\":\"혼동 단어·오독(한국어/영어)\"}](3~4행),\"anchor\":\"정답 근거 한 줄 — 반드시 S번호 포함(예: 주제·요지·빈칸의 정답은 모두 **S6**으로 수렴한다...)\"} — 전부 이 지문 근거로만. loop의 task는 구체적으로(예: \"S6의 핵심 개념을 영어 10~15단어로 바꿔 쓰시오\"), rubric은 채점 포인트(예: \"shaped by external society 의미 유지 시 만점, 시제 오류 -1\"). JSON만."}]),{temperature:0.3,timeout:90000});
+    var r=await Promise.all([sentsP,wrapP]); var A=clean(r[0]),B=clean(r[1]);
     if(!A||!A.sents||!A.sents.length||!B||!B.summary) throw new Error("분석 결과 불완전 — 다시 시도해주세요");
-    render(A,B,pg); P("✅ 완료 — 인쇄/PDF 저장 버튼으로 실물 출력");
+    A.sents=A.sents.slice(0,SENTS.length); while(A.sents.length<SENTS.length)A.sents.push({});  // 코드 분리가 진실원본
+    render(A,B,SENTS,pg); P("✅ 완료 — 인쇄/PDF 저장 버튼으로 실물 출력");
     document.getElementById("prBtn").style.display="";
   }catch(e){ P("⚠ "+(e&&e.message||e)); }
   btn.disabled=false;
 }
 function bold(s){return esc(s).replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>");}
-function render(A,B,pg){
-  var meta=esc(A.genre||"")+" · 난도 "+diffStar(A.diff)+" · "+A.sents.length+"문장"+(document.getElementById("srcMeta").value?" · "+esc(document.getElementById("srcMeta").value):"");
+function render(A,B,SENTS,pg){
+  var meta=esc(A.genre||"")+" · 난도 "+diffStar(A.diff)+" · "+SENTS.length+"문장"+(document.getElementById("srcMeta").value?" · "+esc(document.getElementById("srcMeta").value):"");
   var h="";
   /* ── PAGE 1: 본문 분석 ── */
   h+='<section class="page"><div class="head"><div><div class="meta">'+meta+'</div><h1 class="title">'+esc(A.title||"본문 분석")+'</h1></div><div class="brand">Ray\'s <b>English</b><br><span style="font-weight:500;color:var(--gray)">본문 분석 · Page 1 / 2</span></div></div>';
   h+='<div class="thesis"><b>핵심 쟁점</b> &nbsp;'+bold(A.issue||"")+'</div>';
   h+='<div class="key"><span><i class="dot" style="background:var(--blue)"></i>핵심개념</span><span><i class="dot" style="background:var(--green)"></i>조건·근거</span><span><i class="dot" style="background:var(--amber)"></i>논리·전환</span><span><i class="dot" style="background:var(--rose)"></i>문법·구문</span><span><i class="dot" style="background:var(--purple)"></i>주장·출제핵심</span><span style="color:var(--gray)">※ 색은 <b>독해 기능</b> 표시</span></div>';
-  h+='<div class="sents">';
-  A.sents.forEach(function(s,i){
-    h+='<div class="srow"><div class="num">'+(i+1)+'</div><div class="mid"><div class="en">'+applyHl(s.en,s.hl)+'</div><div class="ko">'+esc(s.ko||"")+'</div></div><div class="side"><span class="role">'+esc(s.role||"")+'</span><div class="pt">'+bold(s.pt||"")+'</div></div></div>';
+  h+='<div class="sents'+(SENTS.length>=7?" dense":"")+'">';
+  SENTS.forEach(function(en,i){
+    var s=A.sents[i]||{};
+    h+='<div class="srow"><div class="num">'+(i+1)+'</div><div class="mid"><div class="en">'+applyHl(en,s.hl)+'</div><div class="ko">'+esc(s.ko||"")+'</div></div><div class="side"><span class="role">'+esc(s.role||"")+'</span><div class="pt">'+bold(s.pt||"")+'</div></div></div>';
   });
   h+='</div>';
   var FLOWBG={blue:"var(--bgblue)",green:"var(--bggreen)",amber:"var(--bgamber)",purple:"var(--bgpurple)"};
@@ -191,7 +202,11 @@ function render(A,B,pg){
   h+='<div class="rcard trap"><span class="h">함정</span>'+esc((B.review||{}).traps||"")+'</div>';
   h+='</div></div><div>';
   h+='<h2 class="sec" style="margin-top:2mm">핵심 어휘 · 패러프레이즈 <small>same-meaning swap</small></h2><table class="vocab"><thead><tr><th style="width:34%">원문 표현</th><th>같은 의미 (시험 치환형)</th><th style="width:20%">출제</th></tr></thead><tbody>';
-  (B.para||[]).forEach(function(p){ h+='<tr><td><span class="s">'+esc(p.s||"")+'</span></td><td><span class="t">'+esc(p.t||"")+'</span></td><td><span class="tag">'+esc(p.tag||"")+'</span></td></tr>'; });
+  var pgL=pg.toLowerCase();
+  var paraOK=(B.para||[]).filter(function(p){ var s=String(p.s||"").trim(); return s&&s.split(/\s+/).length<=8&&pgL.indexOf(s.toLowerCase().slice(0,28))>=0&&/[a-z]/i.test(p.t||""); });
+  if(!paraOK.length)paraOK=(B.para||[]).slice(0,7);                     // 게이트 전멸 시 원본 유지
+  paraOK.forEach(function(p){ var tg=/주제|제목|요지|주장|빈칸|어법|어휘|함축|순서|삽입|일치|결론|목적/.test(p.tag||"")?p.tag:"출제";
+    h+='<tr><td><span class="s">'+esc(p.s||"")+'</span></td><td><span class="t">'+esc(p.t||"")+'</span></td><td><span class="tag">'+esc(tg)+'</span></td></tr>'; });
   h+='</tbody></table><h2 class="sec" style="margin-top:3mm">헷갈리면 안 되는 말 <small>trap words</small></h2><table class="vocab"><thead><tr><th style="width:24%">단어</th><th style="width:30%">지문에서의 뜻</th><th>오답 함정어</th></tr></thead><tbody>';
   (B.trapwords||[]).forEach(function(w){ h+='<tr><td><span class="s">'+esc(w.w||"")+'</span></td><td>'+esc(w.mean||"")+'</td><td><span style="color:var(--rose)">'+esc(w.trap||"")+'</span></td></tr>'; });
   h+='</tbody></table><div class="box" style="margin-top:3mm;background:var(--ok);border-color:#bfe3cf"><h2 class="sec" style="border-color:var(--green);color:var(--green)">정답 근거 한 줄 <small>answer anchor</small></h2><div style="font-size:8pt;line-height:1.4">'+bold(B.anchor||"")+'</div></div>';

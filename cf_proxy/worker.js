@@ -125,7 +125,7 @@ export default {
     const allowed = String(env.ALLOWED_ORIGINS || "https://inheok1103-alt.github.io,http://localhost,http://127.0.0.1").split(",").map(s => s.trim()).filter(Boolean);
     const { ok, h } = cors(origin, allowed);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: h });
-    if (request.method === "GET") return new Response(JSON.stringify({ ok: true, service: "ray-proxy", providers: CHAIN }), { headers: { ...h, "Content-Type": "application/json" } });
+    if (request.method === "GET") return new Response(JSON.stringify({ ok: true, service: "ray-proxy", v: "20260708c", providers: CHAIN }), { headers: { ...h, "Content-Type": "application/json" } });
     if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: h });
     // 오리진 잠금: 내 사이트에서 온 요청만(남이 자기 사이트에 내 프록시를 못 쓰게). 더 강한 남용방지는 대시보드 Rate Limiting Rule.
     if (!ok && origin) return new Response(JSON.stringify({ error: "origin not allowed" }), { status: 403, headers: { ...h, "Content-Type": "application/json" } });
