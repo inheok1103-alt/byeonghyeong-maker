@@ -665,11 +665,11 @@
   async function designChoiceSet(thesis, type, kind, passage, ctx) {
     var pg = String(passage || "").replace(/<[^>]+>/g, " ").slice(0, 760);
     var j = await llmJSON([{ role: "system", content: "너는 대한민국 수능 영어 '선지 세트' 설계자다. 문항의 변별력은 선지에 있으므로 정답과 오답 4개를 '하나의 균형 잡힌 세트'로 함께 설계한다. JSON만." },
-      { role: "user", content: "[지문]\n" + pg + "\n\n글의 핵심 논지: \"" + thesis + "\"\n유형: " + type + " · 정답 형식: " + kind + "\n\n아래 5-선지 세트를 한 번에 설계하라(선지 우선):\n- correct: 핵심 논지를 담은 정답. ★본문 표현을 그대로 베끼지 말고 상위어·재구조화로 '전 지문 종합형 추상어'로 쓴다.\n- distractors: 오답 4개, 각 DNA를 다르게 — 부분(지엽만)·전도(정반대)·초점이탈(지문 소재·어휘는 유지하되 논점에서 벗어남)·과장(과잉일반화). 각 오답은 지문 소재·어휘를 재활용해 매력적으로(딴 분야 금지), 정답과 의미가 겹치지 않게(복수정답 금지).\n★★5개 선지의 길이·구문·구체성을 반드시 비슷하게 — 정답만 길거나 완결적이면 실패다.\nJSON: {\"correct\":\"정답 선지\",\"distractors\":[{\"dna\":\"부분\",\"text\":\"..\"},{\"dna\":\"전도\",\"text\":\"..\"},{\"dna\":\"초점이탈\",\"text\":\"..\"},{\"dna\":\"과장\",\"text\":\"..\"}]}. JSON만." }], { temperature: 0.55, timeout: 60000 }).catch(function () { return null; });
+      { role: "user", content: "[지문]\n" + pg + "\n\n글의 핵심 논지: \"" + thesis + "\"\n유형: " + type + " · 정답 형식: " + kind + "\n\n아래 5-선지 세트를 한 번에 설계하라(선지 우선):\n- correct: 핵심 논지를 담은 정답. ★본문 표현을 그대로 베끼지 말고 상위어·재구조화로 '전 지문 종합형 추상어'로 쓴다.\n- distractors: 오답 4개 — 정답과 '헷갈리도록' 설계한다. 각 오답은 지문의 핵심 소재·어휘를 그대로 담아 정답과 매우 비슷해 보이되, 딱 한 군데 논리가 어긋나게(그 어긋난 지점이 오답의 근거다). 아래 '논리 오류' 메뉴에서 서로 다른 4가지를 골라 적용:\n  ①인과 전도(원인↔결과를 뒤바꿈) ②범위 축소(정답의 일부만 담음) ③과잉 일반화(지나치게 확대) ④정도·빈도 왜곡(항상↔가끔·전부↔일부) ⑤조건·전제 누락(핵심 조건을 빼 성립 안 되게) ⑥주체·대상 교체 ⑦상관을 인과로 혼동 ⑧초점 이탈(소재는 유지, 논점은 벗어남).\n  각 오답은 정답과 '의미가 동일하면 안 됨'(복수정답 금지), 딴 분야로 튀지 말 것.\n★★5개 선지의 길이·구문·구체성을 반드시 비슷하게 — 정답만 길거나 완결적이면 실패다.\nJSON: {\"correct\":\"정답 선지\",\"distractors\":[{\"error\":\"적용한 논리오류명\",\"text\":\"오답선지\"}, ...4개]}. JSON만." }], { temperature: 0.6, timeout: 60000 }).catch(function () { return null; });
     if (!j || !j.correct || !Array.isArray(j.distractors)) return null;
     var ans = clean1(j.correct), dis = j.distractors.map(function (d) { return clean1(d && d.text); }).filter(Boolean);
     if (!ans || dis.length < 4) return null;
-    return { answer: ans, dis: dis.slice(0, 4), dna: j.distractors.map(function (d) { return (d && d.dna) || ""; }).slice(0, 4) };
+    return { answer: ans, dis: dis.slice(0, 4), dna: j.distractors.map(function (d) { return (d && (d.error || d.dna)) || ""; }).slice(0, 4) };
   }
   function inferenceSteps(passage, type, ctx, fast) {
     var kind = infMeta(type).kind;
@@ -714,8 +714,10 @@
     log(onP, '   ↳ 핵심 논지: "' + String(st.main || "").slice(0, 72) + '"');
     log(onP, '   ↳ 정답 초안: "' + String(st.answer || "").slice(0, 64) + '" · 오답 ' + (st.dis || []).length + '개 설계');
     var meta = infMeta(type);
+    var dnaList = (st.dna || []).filter(Boolean);
+    var dnaLine = dnaList.length ? (" 오답은 서로 다른 논리 오류(" + dnaList.slice(0, 4).join("·") + ")로 설계되어, 각기 한 지점에서만 논지와 어긋난다.") : "";
     return { type: type, instruction: meta.instr, passage: "", choices: st.choices, answer: st.answerIdx,
-      explanation: "글의 핵심 논지는 '" + st.main + "'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 지문에 없는 내용(무관)이라 오답이다.",
+      explanation: "글의 핵심 논지는 '" + st.main + "'이며, 정답 선지가 이를 정확히 반영한다." + (dnaLine || " 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다."),
       _audit: (st.gi && st.gi.length) ? ("어법 의심 " + st.gi.length + "건") : "검증 통과", _trace: st._trace };
   }
   // 빈칸: ① 핵심 논지 자리에 어구 비우기(도입부 회피) → ② 프레임 맞춤 어구형 정답 → ③ 역할별 오답
