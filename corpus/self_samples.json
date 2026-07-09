@@ -1,4 +1,109 @@
 {
- "updated": "2026-07-09T21:28:38.883Z",
- "samples": []
+ "updated": "2026-07-09T21:54:18.778Z",
+ "samples": [
+  {
+   "ts": "2026-07-09T21:47:56.262Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "시험을 치르려고 Ottaw 를 방문하기로 결정하려고",
+     "시험 일정을 확인하려고 Ottaw 를 방문하기로",
+     "시험을 놓쳤던 이유를 설명하려고",
+     "모든 학생이 Ottaw 를 방문한 후 시험을 놓치려고",
+     "시험을 치르려고 Ottaw 에서 놀다 오려고"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'To explain why they missed the final exam.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To explain why they missed the final exam.]"
+   }
+  },
+  {
+   "ts": "2026-07-09T21:48:11.200Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "The Grammar Geek 46 10. a) Everyone ate one. b) Everyone was eating one. \b \b \b \b \b \b EXERCISE 5: EDITING Edit the following passage for past tense mistakes. You have to love this prof At McGill University, four second-year students took Organic Chemistry. Everything went so well for them on the quizzes, mid­ terms and labs, and they each were having an A so far in the course. They were so confident that on the weekend before their final exams, they decide to go to Ottawa University and party with some friends there. They were having a great time, but after an intense night of partying, they sleep all day Sunday and didn’t made it back to McGill until early Monday morning. Rather than taking the final then, they decided to track down their professor after the final and give him an explanation as to why they were missing it. They explained to him that they had gone to Ottawa for the weekend with the intention to come back in time\n\n─────────\n[요약문] Students' overconfidence in their (A) led to their (B) of the final exam, forcing them to justify their absence to the professor.",
+    "choices": [
+     "(A) confidence … (B) failure",
+     "(A) preparation … (B) regret",
+     "(A) studies … (B) excuses",
+     "(A) grades … (B) absence",
+     "(A) performance … (B) missing"
+    ],
+    "answer": 4,
+    "explanation": "(A) performance / (B) missing 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-09T21:48:33.332Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Past Tense: Completed Actions in Grammar",
+     "Past Tense: Why Completed Actions Define Grammar",
+     "Past Tense Errors: Editing Rules for Past Tense",
+     "Past Tense: Completed Actions Are Always Marked in All Contexts",
+     "Past Tense: Mistakes in Usage Across All Tenses"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The past tense marks completed actions in the past.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The past tense marks completed actions in the past.]"
+   }
+  }
+ ]
 }
