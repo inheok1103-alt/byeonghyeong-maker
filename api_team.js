@@ -660,20 +660,33 @@
       kind: { "주제": "영어 명사구", "제목": "영어 제목구", "요지": "한국어 한 문장", "필자주장": "한국어 한 문장('~해야 한다' 당위형)", "목적": "한국어 한 문장('~하려고' 화행형)" }[type] || "영어 명사구" };
   }
   // 추론형 파이프라인: 각 라인이 명시적 API에 연결됨
+  // ===== 선지 우선(choice-first) 설계 — 문항의 변별력은 선지에 있다. 정답+오답4를 '하나의 균형 세트'로 함께 생성:
+  //   추상화(verbatim 금지)·DNA 분산·길이 통일을 '설계 단계'에서 강제(사후 패치 아님). =====
+  async function designChoiceSet(thesis, type, kind, passage, ctx) {
+    var pg = String(passage || "").replace(/<[^>]+>/g, " ").slice(0, 760);
+    var j = await llmJSON([{ role: "system", content: "너는 대한민국 수능 영어 '선지 세트' 설계자다. 문항의 변별력은 선지에 있으므로 정답과 오답 4개를 '하나의 균형 잡힌 세트'로 함께 설계한다. JSON만." },
+      { role: "user", content: "[지문]\n" + pg + "\n\n글의 핵심 논지: \"" + thesis + "\"\n유형: " + type + " · 정답 형식: " + kind + "\n\n아래 5-선지 세트를 한 번에 설계하라(선지 우선):\n- correct: 핵심 논지를 담은 정답. ★본문 표현을 그대로 베끼지 말고 상위어·재구조화로 '전 지문 종합형 추상어'로 쓴다.\n- distractors: 오답 4개, 각 DNA를 다르게 — 부분(지엽만)·전도(정반대)·초점이탈(지문 소재·어휘는 유지하되 논점에서 벗어남)·과장(과잉일반화). 각 오답은 지문 소재·어휘를 재활용해 매력적으로(딴 분야 금지), 정답과 의미가 겹치지 않게(복수정답 금지).\n★★5개 선지의 길이·구문·구체성을 반드시 비슷하게 — 정답만 길거나 완결적이면 실패다.\nJSON: {\"correct\":\"정답 선지\",\"distractors\":[{\"dna\":\"부분\",\"text\":\"..\"},{\"dna\":\"전도\",\"text\":\"..\"},{\"dna\":\"초점이탈\",\"text\":\"..\"},{\"dna\":\"과장\",\"text\":\"..\"}]}. JSON만." }], { temperature: 0.55, timeout: 60000 }).catch(function () { return null; });
+    if (!j || !j.correct || !Array.isArray(j.distractors)) return null;
+    var ans = clean1(j.correct), dis = j.distractors.map(function (d) { return clean1(d && d.text); }).filter(Boolean);
+    if (!ans || dis.length < 4) return null;
+    return { answer: ans, dis: dis.slice(0, 4), dna: j.distractors.map(function (d) { return (d && d.dna) || ""; }).slice(0, 4) };
+  }
   function inferenceSteps(passage, type, ctx, fast) {
     var kind = infMeta(type).kind;
     var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["초점 이탈", "글의 소재·어휘는 그대로 쓰되 핵심 논점에서 살짝 벗어나(딴 분야로 튀지 말 것)"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
     var steps = [
       { api: "wiki", label: "배경지식 조회", run: function (s) { return Promise.resolve({ bg: (ctx && ctx.bg) || null }); } },
       { api: USE_ENSEMBLE ? "ensemble" : "llm", label: USE_ENSEMBLE ? "핵심 논지 추출(앙상블 메타-LLM)" : "핵심 논지 추출", run: async function (s) { var h = s.bg && s.bg.extract ? ("\n(참고 배경: " + s.bg.extract.slice(0, 160) + ")") : ""; if (ctx && ctx.related && ctx.related.length) h += "\n(관련 주제: " + ctx.related.slice(0, 4).join(", ") + ")"; if (ctx && ctx.facts && ctx.facts.length) h += "\n(사실: " + ctx.facts.slice(0, 2).map(function (f) { return f.label + "—" + f.desc; }).join("; ") + ")"; var pr = "다음 글의 핵심 논지를 영어 한 문장으로(답만)." + h + "\n\n" + passage; return { main: USE_ENSEMBLE ? ((await ensemble(pr)).answer || "") : await ask(pr, "핵심 한 문장. 답만.") }; } },
-      { api: "llm", label: "정답 보기 작성", run: async function (s) { if (!s.main) throw new Error("no main"); return { answer: await ask("글 핵심: \"" + s.main + "\"\n이를 담은 " + type + " 정답을 " + kind + "로 간결히. 보기 텍스트만.") }; } }
+      // ★선지 우선: 정답+오답4를 한 세트로 통합 설계(변별력=선지). 성공하면 이후 개별 생성 스킵.
+      { api: "llm", label: "선지 세트 통합 설계(선지 우선)", run: async function (s) { if (!s.main) throw new Error("no main"); var cs = await designChoiceSet(s.main, type, kind, passage, ctx); return cs ? { answer: cs.answer, dis: cs.dis, dna: cs.dna } : {}; } },
+      { api: "llm", label: "[폴백] 정답 보기 작성", run: async function (s) { if (s.answer) return {}; if (!s.main) throw new Error("no main"); return { answer: await ask("글 핵심: \"" + s.main + "\"\n이를 담은 " + type + " 정답을 " + kind + "로 간결히(본문 표현 베끼지 말고 상위어로 추상화). 보기 텍스트만.") }; } }
     ];
     if (fast) {
-      steps.push({ api: "llm", label: "오답 4개 일괄 설계", run: async function (s) { if (!s.answer) throw new Error("no answer"); var j = await llmJSON([{ role: "system", content: "오답 설계 전문가. JSON 배열만." }, { role: "user", content: "정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n정답과 의미가 분명히 다른 " + kind + " 오답 4개를 각각 다른 방식(①부분적 ②정반대 ③초점이탈-소재는 유지 ④포괄)으로. 오답도 지문 소재·어휘를 재활용해 그럴듯하게(딴 분야 금지), 정답 재진술 금지. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 }); return { dis: (Array.isArray(j) ? j.map(clean1).filter(Boolean) : []).slice(0, 4) }; } });
-      steps.push({ api: "thesaurus", label: "오답 동의어중복 일괄검사", run: function (s) { return Promise.resolve({ dis: (s.dis || []).filter(function (d) { return !(d && ctx && synOverlap(s.answer, d, ctx)); }) }); } });
+      steps.push({ api: "llm", label: "[폴백] 오답 4개 일괄 설계", run: async function (s) { if (s.dis && s.dis.length >= 4) return {}; if (!s.answer) throw new Error("no answer"); var j = await llmJSON([{ role: "system", content: "오답 설계 전문가. JSON 배열만." }, { role: "user", content: "정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n정답과 의미가 분명히 다른 " + kind + " 오답 4개를 각각 다른 방식(①부분적 ②정반대 ③초점이탈-소재는 유지 ④포괄)으로. 오답도 지문 소재·어휘를 재활용해 그럴듯하게(딴 분야 금지), 정답 재진술 금지. 5개 선지 길이 통일. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 }); return { dis: (Array.isArray(j) ? j.map(clean1).filter(Boolean) : []).slice(0, 4) }; } });
+      steps.push({ api: "thesaurus", label: "오답 동의어중복 검사", run: function (s) { return Promise.resolve({ dis: (s.dis || []).filter(function (d) { return !(d && ctx && synOverlap(s.answer, d, ctx)); }) }); } });
     } else {
       roles.forEach(function (r, idx) {
-        steps.push({ api: "llm", label: "오답" + (idx + 1) + " (" + r[0] + ") 설계", run: async function (s) { if (!s.answer) throw new Error("no answer"); var d = await ask("정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n이 정답과 의미가 분명히 다른 '" + r[0] + "' 오답 1개를 " + kind + "로 만들되 " + r[1] + ", 정답 재진술 금지. 보기 텍스트만."); s._last = d; s.dis = (s.dis || []).concat(d ? [d] : []); return { dis: s.dis }; } });
+        steps.push({ api: "llm", label: "[폴백] 오답" + (idx + 1) + " (" + r[0] + ") 설계", run: async function (s) { if (s.dna && s.dis && s.dis.length >= 4) return {}; if (!s.answer) throw new Error("no answer"); var d = await ask("정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n이 정답과 의미가 분명히 다른 '" + r[0] + "' 오답 1개를 " + kind + "로 만들되 " + r[1] + ", 정답 재진술 금지. 보기 텍스트만."); s._last = d; s.dis = (s.dis || []).concat(d ? [d] : []); return { dis: s.dis }; } });
         steps.push({ api: "thesaurus", label: "오답" + (idx + 1) + " 동의어중복 검사", run: async function (s) { var d = s._last; if (d && ctx && synOverlap(s.answer, d, ctx)) { var d2 = await ask("정답 \"" + s.answer + "\"과 단어·의미가 겹치지 않는 '" + r[0] + "' 오답 1개를 " + kind + "로. 보기만."); if (d2) s.dis[s.dis.length - 1] = d2; } return { dis: s.dis }; } });
       });
     }
@@ -1034,8 +1047,44 @@
     if (im && im.trim()) return { instruction: im.trim(), answer: (am || "").trim() };
     return null;
   }
+  // ===== 답안 우선(answer-first) 서술형 파이프라인 — '쓸 문장(모범답안)'을 먼저 정하고 조건·루브릭을 역산 조립.
+  //   ① 모범답안 문장 설계 → ② 조건 역산(필수어·단어수) → ③ 발문 조립 → ④ 루브릭(essayResult). =====
+  async function buildEssayAnswerFirst(passage, type) {
+    var t = String(type || "");
+    var isWrite = /영작|이어|의견|요약|주제문|전환|주장|핵심|쓰|write/i.test(t) && !/해석|우리말 ?로 ?해석|국역/.test(t);
+    // 유형별 답안 성격
+    var task = /의견/.test(t) ? "글의 주제에 대한 '당신의 의견'을" : /요약/.test(t) ? "글 전체를" : "글의 핵심(필자의 주장·요지)을";
+    // ① 모범답안 문장 먼저 (쓸 문장이 먼저다)
+    var ap = isWrite
+      ? ("다음 지문을 읽고 " + task + " 담은 '영어 한 문장'을 써라 — 12~22단어, 어법 완전, 본문 문장을 통째로 복사하지 말고 재구성. 문장만 출력.")
+      : ("다음 지문을 읽고 " + task + " 담은 '한국어 한 문장'으로 써라(자연스럽게). 문장만 출력.");
+    var ans = await ask(ap + "\n\n" + passage, "문장 하나만. 번호·따옴표·설명 금지.", { noRule: true, temperature: 0.5 });
+    ans = String(ans || "").replace(/^["'·\-\s]+|["'\s]+$/g, "").split(/\n/)[0].trim();
+    if (!ans || ans.split(/\s+/).length < 4) return null;
+    // ② 조건 역산(영작형): 필수어(답안 핵심 내용어) + 단어수 밴드
+    var conds = [];
+    if (isWrite) {
+      var wc = essayWordCount(ans);
+      var keys = (ans.match(/[A-Za-z][A-Za-z\-]{3,}/g) || []).filter(function (w) { return !STOP[w.toLowerCase()]; });
+      var seen = {}, uniq = []; keys.forEach(function (w) { var k = w.toLowerCase(); if (!seen[k]) { seen[k] = 1; uniq.push(w); } });
+      uniq.sort(function (a, b) { return b.length - a.length; });
+      var picks = uniq.slice(0, 3);
+      if (picks.length >= 2) conds.push("다음 단어를 반드시 포함할 것: " + picks.map(function (w) { return "'" + w + "'"; }).join(", "));
+      conds.push(Math.max(3, wc - 2) + "~" + (wc + 2) + "단어로 쓸 것");
+    }
+    // ③ 발문 조립
+    var stem = isWrite
+      ? (/의견/.test(t) ? "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오." : /요약/.test(t) ? "다음 글의 내용을 영어 한 문장으로 요약하여 서술하시오." : "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.")
+      : "다음 글의 핵심 내용(필자의 주장·요지)을 우리말 한 문장으로 서술하시오.";
+    var instr = stem + (conds.length ? ("\n〈조건〉 " + conds.join(" / ")) : "");
+    // ④ 루브릭은 essayResult가 발문·답안에서 역산(단어수 동기화 포함)
+    return essayResult(type, instr, ans);
+  }
   async function buildEssay(passage, opts, type) {
     type = type || "서술형";
+    // ★답안 우선: 모범답안 문장을 먼저 정하고 조건·루브릭을 역산(서술형은 쓸 문장이 먼저다). 실패 시 기존 동시생성 폴백.
+    var af = await buildEssayAnswerFirst(passage, type).catch(function () { return null; });
+    if (af && af.instruction && af.explanation) return af;
     // 무거운 규칙을 system에 주입하면 소형모델이 빈 응답을 내므로, 규칙은 user에 짧게만 넣고 noRule로 호출
     var ess = (TYPERULE || "").replace(/\s+/g, " ").trim().slice(0, 130);
     var sys = "너는 고교 내신 영어 서술형 출제자다. 발문은 순수 한국어(+영어 인용)로만 쓴다 — 중국어·일본어 문자 금지. 출력은 아래 두 구획 형식만 쓴다(JSON·마크다운·여분 설명 금지). ★영작형: '필수 포함 단어'를 제시하면 반드시 영어 단어로 쓰고, 모범답안(정답)이 그 단어를 실제로 포함해야 한다. 발문에 '단어 수' 조건을 적으면 모범답안이 그 범위를 충족해야 한다. 빈칸(____) 클로즈와 자유 이어쓰기를 섞지 마라(한 형식만).";
