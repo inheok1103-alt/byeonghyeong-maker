@@ -1,4 +1,39 @@
 {
- "updated": "2026-07-09T14:28:50.158Z",
- "samples": []
+ "updated": "2026-07-09T15:40:12.706Z",
+ "samples": [
+  {
+   "ts": "2026-07-09T15:39:16.699Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "From this perspective, then, the analysis of the passive involves replacing the agentive light verb with a non-agentive passive light verb, most of the other aspects of the passive construction follow straightforwardly from this. ① A crucial point to make at this point is that this analysis of the passive would simply be unavailable if we supposed that the structure of the active were to be (76) and not (74). ② Inasmuch as this analysis helps us to understand the passivisation process any better, then, it can be used as evidence in favour of the assumption of (74). ③ The passive construction, however, does not merely omit the agent but often introduces new thematic roles that were absent in the active counterpart. ④ 2 Extended projections Yet if this is so, we still face the problem that the subject of an active transitive verb is interpreted as the subject of that verb and not of some independent abstract light verb. ⑤ To understand this, it is essential to understand the relationship between light verbs and thematic verbs in general. Recall that the semantic contribution of a light verb to a construction is somewhat reduced from its full thematic usage: (82) a I gave Charlotte chocolates",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  }
+ ]
 }
