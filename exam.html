@@ -80,13 +80,34 @@ details.all[open]>summary::before{transform:rotate(90deg)}
 .q .h{font-weight:800;font-size:var(--fs-base);display:flex;gap:6px;align-items:center;flex-wrap:wrap;color:#111}
 .q .h .tools{margin-left:auto;display:flex;gap:5px}
 .q .h .tools button{font-size:11px;padding:4px 9px;border-radius:7px;border:1px solid #d9d4c6;background:#f6f4ec;color:#5a4fb0}
-.q .ins{font-weight:700;margin:6px 0;font-size:var(--fs-sm);white-space:pre-wrap;color:#222}
-.q .pg{font-family:"Noto Serif KR",serif;background:#faf8f2;border:1px solid #e2ddcf;border-radius:9px;padding:10px 12px;font-size:var(--fs-sm);line-height:1.8;margin:6px 0;color:#1c1c1c}
+.q .ins{font-weight:700;margin:6px 0;font-size:var(--fs-sm);white-space:pre-wrap;color:#222;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere;letter-spacing:-.1px}
+.q .pg{font-family:"Noto Serif KR",serif;background:#faf8f2;border:1px solid #e2ddcf;border-radius:9px;padding:11px 13px;font-size:var(--fs-sm);line-height:1.85;margin:6px 0;color:#1c1c1c;white-space:pre-wrap;word-break:keep-all;overflow-wrap:anywhere;letter-spacing:-.1px}
 .q .pg u{text-decoration-color:#b45309;font-weight:700}
-.q .ch div{font-size:var(--fs-sm);margin:2px 0;color:#222}
-.q .ans{display:none;background:#eef6f0;border:1px solid #cfe3d4;border-radius:9px;padding:8px 11px;margin-top:8px;font-size:var(--fs-xs);color:#23402e}
+.q .ch div{font-size:var(--fs-sm);margin:3px 0;color:#222;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}
+.q .ans{display:none;background:#eef6f0;border:1px solid #cfe3d4;border-radius:9px;padding:9px 12px;margin-top:8px;font-size:var(--fs-sm);color:#23402e;line-height:1.7;word-break:keep-all;overflow-wrap:anywhere;white-space:pre-wrap}
 body.showAns .q .ans{display:block}
-.prog{font-size:var(--fs-xs);color:var(--mint);margin-top:var(--s3);white-space:pre-wrap}
+.prog{font-size:11px;color:var(--soft);margin-top:var(--s3);white-space:pre-wrap;max-height:120px;overflow-y:auto;background:#0d0f16;border:1px solid var(--line);border-radius:8px;padding:8px 10px;line-height:1.5}
+/* 생성 과정 시각화 */
+.proc{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.ptask{background:#12151d;border:1px solid var(--line);border-radius:11px;padding:10px 12px;transition:.2s}
+.ptask.done{border-color:#2a5f4a;background:#111a16}
+.ptask.fail{border-color:#6b3a3a}
+.ptask .pt-h{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--ink)}
+.ptask .pt-h .ic{font-size:15px}
+.ptask .pt-h .nm{flex:1}
+.ptask .pt-h .st{font-size:11.5px;color:var(--gold2);font-weight:600}
+.ptask.done .pt-h .st{color:var(--mint)}
+.ptask .pt-h .tm{font-size:10px;color:var(--mute);min-width:30px;text-align:right}
+.pdots{display:flex;gap:4px;margin-top:8px}
+.pdot{flex:1;height:5px;border-radius:3px;background:#2a2f3d;transition:.35s}
+.pdot.on{background:linear-gradient(90deg,var(--gold2),var(--gold))}
+.pdot.cur{background:var(--mint);animation:ppulse 1s ease-in-out infinite}
+@keyframes ppulse{50%{opacity:.35}}
+.plabels{display:flex;gap:4px;margin-top:4px}
+.plabels span{flex:1;text-align:center;font-size:8.5px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.plabels span.at{color:var(--mint);font-weight:700}
+.proc-toggle{font-size:11px;color:var(--soft);cursor:pointer;margin-top:8px;user-select:none}
+.proc-toggle:hover{color:var(--gold2)}
 .toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%);background:#2d2a4a;color:#fff;padding:10px 17px;border-radius:20px;font-size:13px;z-index:99;opacity:0;transition:.2s}
 .toast.on{opacity:1}
 @media(max-width:560px){.recs{grid-template-columns:1fr 1fr}}
@@ -156,7 +177,10 @@ body.showAns .q .ans{display:block}
   </div>
 
   <!-- ③ 결과 -->
-  <div id="progWrap" class="card" style="display:none"><div class="step"><span class="n">3</span> 만드는 중…</div><div class="prog" id="prog"></div></div>
+  <div id="progWrap" class="card" style="display:none"><div class="step"><span class="n">3</span> 만드는 중… <span class="hint" id="procHint">각 유형의 생성 단계를 실시간 표시</span></div>
+    <div class="proc" id="proc"></div>
+    <div class="proc-toggle" id="logToggle" onclick="var l=document.getElementById('prog');l.style.display=l.style.display==='none'?'block':'none';">▸ 상세 로그 보기</div>
+    <div class="prog" id="prog" style="display:none"></div></div>
   <div id="outHead" class="card" style="display:none">
     <div class="step"><span class="n">3</span> 완성 <span class="hint" id="engine"></span></div>
     <div class="row">
@@ -172,7 +196,7 @@ body.showAns .q .ans{display:block}
 </div>
 
 <script>var RAY_PROXY="https://ray-proxy.gen1103.workers.dev";</script>
-<script src="api_team.js?v=20260709b"></script>
+<script src="api_team.js?v=20260709c"></script>
 <script src="addon_key_guard.js?v=20260709a"></script>
 <script src="raytools.js?v=20260707b"></script>
 <script>
@@ -317,17 +341,60 @@ function extend(){ var p=val(); if(p.length<60) return toast("지문을 먼저 �
 
 /* ---------- 출제 ---------- */
 var CIRC=["①","②","③","④","⑤"];
+/* ── 생성 과정 시각화 ── */
+var STAGES=["📥 자료수집","🧠 논지분석","✍️ 정답설계","🎭 오답설계","🔍 선지검수","🛡 정답검증"];
+var PROC={};
+function stageOf(m){
+  if(/키가드|솔버|정답 검증|코드검증|위치검증|어법 오류어|번역 교차|한국어 교차/.test(m)) return 5;
+  if(/검수|선지 제작|팀|리뷰|형태통일|정답유일/.test(m)) return 4;
+  if(/오답/.test(m)) return 3;
+  if(/정답 보기|정답 초안|정답 어구|빈칸 프레임|정답문|정답 쌍|어구화/.test(m)) return 2;
+  if(/논지|핵심|추출|주제문|필자|당위/.test(m)) return 1;
+  if(/자료 수집|배경|반의어|위키|연어|사전|수집반/.test(m)) return 0;
+  return -1;
+}
+function procInit(types){
+  var wrap=document.getElementById("proc"); wrap.innerHTML=""; PROC={};
+  types.forEach(function(t){
+    var d=document.createElement("div"); d.className="ptask"; PROC[t]={el:d,stage:-1,t0:0,done:false};
+    d.innerHTML='<div class="pt-h"><span class="ic">⏳</span><span class="nm">'+esc(t)+'</span><span class="st">대기 중</span><span class="tm"></span></div>'
+      +'<div class="pdots">'+STAGES.map(function(){return '<div class="pdot"></div>';}).join("")+'</div>'
+      +'<div class="plabels">'+STAGES.map(function(s){return '<span>'+esc(s)+'</span>';}).join("")+'</div>';
+    wrap.appendChild(d);
+  });
+}
+function procUpdate(t,m){
+  var P=PROC[t]; if(!P||P.done) return; if(!P.t0) P.t0=Date.now();
+  var si=stageOf(String(m));
+  if(si>=0&&si>P.stage){ P.stage=si;
+    var dots=P.el.querySelectorAll(".pdot"), labs=P.el.querySelectorAll(".plabels span");
+    dots.forEach(function(d,k){ d.className="pdot"+(k<si?" on":k===si?" cur":""); });
+    labs.forEach(function(l,k){ l.className=(k===si?"at":""); });
+    P.el.querySelector(".st").textContent=STAGES[si].replace(/^\S+\s/,""); P.el.querySelector(".ic").textContent="⚙️";
+  }
+  P.el.querySelector(".tm").textContent=Math.round((Date.now()-P.t0)/1000)+"초";
+}
+function procDone(t,ok,sec){
+  var P=PROC[t]; if(!P) return; P.done=true;
+  P.el.querySelectorAll(".pdot").forEach(function(d){ d.className="pdot on"; });
+  P.el.querySelectorAll(".plabels span").forEach(function(l){ l.className=""; });
+  P.el.className="ptask "+(ok?"done":"fail");
+  P.el.querySelector(".ic").textContent=ok?"✅":"⚠";
+  P.el.querySelector(".st").textContent=ok?"완성":"실패 — 다른 유형 권장";
+  P.el.querySelector(".tm").textContent=sec+"초";
+}
 async function run(){ var p=val(); if(p.length<40) return toast("지문을 먼저 넣으세요(40자↑)");
   var list=Object.keys(SEL); if(!list.length) return toast("유형을 선택하세요");
   var go=document.getElementById("go"); go.disabled=true; go.textContent="출제 중…";
   ITEMS=[]; document.getElementById("out").innerHTML=""; document.getElementById("outHead").style.display="none";
   var pw=document.getElementById("progWrap"), pr=document.getElementById("prog"); pw.style.display=""; pr.textContent="";
+  procInit(list);
   var done=0, prov="";
-  function plog(m){ pr.textContent+=m+"\n"; }
+  function plog(m){ pr.textContent+=m+"\n"; pr.scrollTop=pr.scrollHeight; }
   // 4개 병렬 처리
   var queue=list.slice();
   async function worker(){ while(queue.length){ var t=queue.shift(); var t0=Date.now();
-      try{ var opts={fast:true,level:LEVEL}, h="";
+      try{ var opts={fast:true,level:LEVEL,onProgress:(function(ty){ return function(m){ procUpdate(ty,m); plog("["+ty+"] "+m); }; })(t)}, h="";
         // 연구 로직 자동 주입: 자유서술형=창의과제 회전(CSR), 그 외=출제의도 로직(L코드·SM/SY 오답설계·PI)
         if(window.RAYTOOLS&&RAYTOOLS.logicHint){
           if(document.getElementById("csrChk").checked&&/서술형\(자유\)|의견영작|이어쓰기영작/.test(t)) h=await RAYTOOLS.logicHint("서술형");
@@ -336,11 +403,13 @@ async function run(){ var p=val(); if(p.length<40) return toast("지문을 먼�
         }
         var q=await T.generateOne(p,t,opts);
         if(q&&h){ var lm=h.match(/\[(출제의도 (L\d\d)[^\]]*|창의 서술형 (CSR\d\d)[^\]]*)\]/); q._logic=lm?(lm[2]||lm[3]||"").trim():""; if(!q._logic&&/창의 서술형/.test(h)) q._logic="CSR"; }
-        if(q){ q.type=q.type||t; ITEMS.push(q); renderOne(q); done++; plog("✅ "+t+" 완성 ("+Math.round((Date.now()-t0)/1000)+"초)"); prov=T.provider(); }
-        else plog("✗ "+t+" 실패(지문 조건) — 다른 유형으로 시도해보세요");
-      }catch(e){ plog("✗ "+t+": "+(e&&e.message||e).slice(0,60)); } } }
+        var sec=Math.round((Date.now()-t0)/1000);
+        if(q){ q.type=q.type||t; ITEMS.push(q); renderOne(q); done++; procDone(t,true,sec); plog("✅ "+t+" 완성 ("+sec+"초)"); prov=T.provider(); }
+        else { procDone(t,false,sec); plog("✗ "+t+" 실패(지문 조건) — 다른 유형으로 시도해보세요"); }
+      }catch(e){ procDone(t,false,Math.round((Date.now()-t0)/1000)); plog("✗ "+t+": "+(e&&e.message||e).slice(0,60)); } } }
   await Promise.all([worker(),worker(),worker(),worker()]);
-  pw.style.display="none"; go.disabled=false; go.textContent="🚀 출제";
+  go.disabled=false; go.textContent="🚀 출제";
+  setTimeout(function(){ if(ITEMS.length) pw.style.display="none"; },1400);   // 완료 상태 잠깐 보여준 뒤 숨김
   if(ITEMS.length){ document.getElementById("outHead").style.display="";
     document.getElementById("engine").textContent="엔진: "+(prov==="proxy"?"🔐 내장":prov)+" · "+ITEMS.length+"문항";
     toast("🎉 "+ITEMS.length+"문항 완성"); window.scrollTo({top:document.getElementById("outHead").offsetTop-10,behavior:"smooth"}); }
@@ -353,7 +422,7 @@ function renderOne(q){ var i=ITEMS.length-1, no=ITEMS.length;
     +'<div class="ins">'+esc(q.instruction||"")+'</div>';
   if(q.passage) h+='<div class="pg">'+String(q.passage).replace(/</g,"&lt;").replace(/&lt;u&gt;/g,"<u>").replace(/&lt;\/u&gt;/g,"</u>").replace(/\n/g,"<br>")+'</div>';
   if(q.choices&&q.choices.length){ h+='<div class="ch">'; q.choices.forEach(function(c,j){ h+='<div>'+(CIRC[j]||j+1)+' '+esc(c)+'</div>'; }); h+='</div>'; }
-  h+='<div class="ans"><b>정답</b> '+(q.answer?(CIRC[q.answer-1]||q.answer):"서술형")+' · '+esc(String(q.explanation||"").slice(0,600))+'</div></div>';
+  h+='<div class="ans"><b>정답</b> '+(q.answer?(CIRC[q.answer-1]||q.answer):"서술형")+' · '+esc(String(q.explanation||""))+(q._audit?'<div style="margin-top:5px;font-size:11px;color:#6a7a6f">🔎 '+esc(q._audit)+'</div>':'')+'</div></div>';   // 해설 전문(잘림 없음) + 검수 근거
   document.getElementById("out").insertAdjacentHTML("beforeend",h); }
 async function regen(i,btn){ btn.textContent="…"; try{ var q=await T.generateOne(val(),ITEMS[i].type,{fast:true,level:LEVEL,hint:"직전과 다른 각도로"}); if(q){ q.type=q.type||ITEMS[i].type; ITEMS[i]=q; redraw(); toast("🔄 재생성 완료"); } }catch(e){ toast("재생성 실패"); } btn.textContent="🔄 재생성"; }
 function redraw(){ document.getElementById("out").innerHTML=""; var a=ITEMS; ITEMS=[]; a.forEach(function(q){ ITEMS.push(q); renderOne(q); }); }

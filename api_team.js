@@ -819,9 +819,10 @@
       var wrongW = String(dmAnt || o.wrong).replace(/[^A-Za-z\- ]/g, "").trim();
       // 정답 교체어가 지문에 이미 존재하면 자기모순(deliberate practice, not deliberate gift)·즉시 노출 → 재시도
       if (!wrongW || new RegExp("\\b" + wrongW.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i").test(passage)) continue;
+      if (!spreadOK(passage, o.words.slice(0, 5), attempt)) continue;   // 밑줄 5곳 문장 분산(한 문장 몰림 방지)
       var mk = markWords(passage, o.words.slice(0, 5), wi - 1, wrongW);  // 코드가 밑줄+치환
       if (!mk || mk.count < 5) continue;                       // 5개 다 못 찾으면 재시도
-      return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "는 '" + o.wrong + "'인데 문맥상 원래의 '" + (o.correct || mk.orig) + "'가 적절하다.", _audit: "정답위치 코드생성됨(치환·밑줄 모두 코드처리)" };
+      return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "는 '" + o.wrong + "'인데 문맥상 원래의 '" + (o.correct || mk.orig) + "'가 적절하다.", _audit: "정답위치 코드생성됨(치환·밑줄 모두 코드처리·문장분산 검증)" };
     }
     return null;
   }
@@ -829,10 +830,12 @@
   async function buildGrammar(passage) {
     var gecEx = gecExamples(2);
     for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 짧은 구절(각 2~7단어, 문장 전체 복사 금지, 등장 순서)'로 고르고, 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★철자 오타 금지 — 수일치·시제·태(능/수동)·준동사(to부정사/동명사/분사)·관계사·병렬·전치사 등 문법 오류만. JSON: {\"phrases\":[\"짧은 구절 5개(등장순, 원문 그대로)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 문법적으로 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases의 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 유형 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 짧은 구절(각 2~7단어, 문장 전체 복사 금지, 등장 순서)'로 고르고, 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★수능 원칙: 5곳은 반드시 '서로 다른 문장'에 배치하고(한 문장에 2곳 이상 금지) '서로 다른 문법 범주'여야 한다. ★철자 오타 금지 — 수일치·시제·태(능/수동)·준동사(to부정사/동명사/분사)·관계사·병렬·전치사 등 문법 오류만. JSON: {\"phrases\":[\"짧은 구절 5개(등장순, 원문 그대로, 서로 다른 문장)\"],\"cats\":[\"각 구절 문법범주 5개(수일치|시제|태|준동사|분사|관계사|병렬|전치사|형용사부사|비교|가정법)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 문법적으로 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases의 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 유형 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.phrases) || o.phrases.length < 5 || !o.error || String(o.error).trim() === String(o.correct || "").trim()) continue;
       var phr = o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); });
       if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 8; })) continue;   // 문장통째 구절 → 짧은 어구로 재시도(마지막 시도는 수용)
+      if (!spreadOK(passage, phr, attempt)) continue;   // 밑줄 분산: 한 문장 몰림 방지(수능 원칙)
+      if (attempt < 2 && Array.isArray(o.cats)) { var uc = {}; o.cats.slice(0, 5).forEach(function (c) { uc[normTok(c)] = 1; }); if (Object.keys(uc).length < 4) continue; }   // 문법 범주 다양성(4종↑)
       // wrongIndex 자기보고 불신: correct와 동일한 구절을 코드로 탐색(0-기준 응답 등 오류 방어)
       var wi = -1;
       for (var pi = 0; pi < phr.length; pi++) { if (normTok(phr[pi]) === normTok(o.correct)) { wi = pi + 1; break; } }
@@ -934,6 +937,7 @@
         var wi = -1;
         for (var pi = 0; pi < phr.length; pi++) { if (normTok(phr[pi]) === normTok(o.correct)) { wi = pi + 1; break; } }
         if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
+        if (!spreadOK(passage, phr, attempt)) continue;   // 밑줄 5곳 문장 분산
         var mk = markWords(passage, phr, wi - 1, String(o.error).trim());
         if (!mk || mk.count < 5) continue;
         // 오류주입 검증 게이트(서술형은 키가드 미적용 → 여기서 필수): 주입 후 문법오류가 원문보다 늘지 않으면 무오류 주입 → 재시도
@@ -1183,6 +1187,27 @@
     if (w === c + "s" && /(?:al|ate|ous|ful|ly|ary|ic|less|ish)$/.test(c)) return true;
     return false;
   }
+  // 밑줄 구절이 몇 개 문장에 분산됐는지 — 한 문장에 밑줄 몰림(수능은 5곳을 서로 다른 문장에 배치) 방지용
+  function markSpread(passage, phrases) {
+    var sents = splitSentences(passage);
+    var counts = {};
+    phrases.forEach(function (p) {
+      var pp = String(p || "").trim(); if (!pp) return;
+      var si = -1;
+      for (var i = 0; i < sents.length; i++) { if (sents[i].indexOf(pp) >= 0) { si = i; break; } }
+      if (si < 0) { var np = pp.toLowerCase(); for (var j = 0; j < sents.length; j++) { if (sents[j].toLowerCase().indexOf(np) >= 0) { si = j; break; } } }
+      if (si >= 0) counts[si] = (counts[si] || 0) + 1;
+    });
+    var ks = Object.keys(counts);
+    return { distinct: ks.length, maxInOne: Math.max.apply(null, ks.map(function (k) { return counts[k]; }).concat([0])), sents: sents.length };
+  }
+  // 어법/어휘 밑줄 분산 게이트: 문장이 넉넉하면(≥5) 5곳이 최소 4개 문장에 흩어지고 한 문장에 3개↑ 몰리지 않아야 함
+  function spreadOK(passage, phrases, attempt) {
+    var sp = markSpread(passage, phrases);
+    if (sp.sents >= 5 && (sp.distinct < 4 || sp.maxInOne >= 3) && attempt < 2) return false;   // 최종 시도(2)는 수용
+    if (sp.sents >= 5 && sp.maxInOne >= 3) return false;   // 한 문장 3개 몰림은 최종에도 거부
+    return true;
+  }
   // 전체문장배열(ORDER_ALL_SENTENCES_MODE): 모든 문장 번호화 배열 — 셔플·선지·정답 전부 코드 생성(LLM 불필요)
   function buildOrderAll(passage) {
     var ss = splitSentences(passage);
@@ -1314,6 +1339,7 @@
       var map = {}, ok = true, used = {};
       o.errors.slice(0, k).forEach(function (e) { var i = parseInt(e.index, 10); if (!(i >= 1 && i <= 5) || used[i] || !e.wrong || normTok(e.wrong) === normTok(phr[i - 1]) || badInflect(phr[i - 1], e.wrong)) { ok = false; return; } used[i] = 1; map[i] = String(e.wrong).trim(); });   // 비단어(deliberate→deliberates) 오형태 차단
       if (!ok || Object.keys(map).length !== k) continue;
+      if (!spreadOK(passage, phr, attempt)) continue;   // 밑줄 5곳 문장 분산
       var mk = markWordsMulti(passage, phr, map);
       if (!mk || mk.count < 5) continue;
       return { type: "어법개수형", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것의 개수는?", passage: mk.text, choices: ["1개", "2개", "3개", "4개", "5개"], answer: k, explanation: "틀린 곳은 " + Object.keys(map).map(function (i) { return CIRC5(+i) + "(" + map[i] + " → " + phr[i - 1] + ")"; }).join(", ") + " — 총 " + k + "개.", _audit: "정답 코드생성됨(오류 " + k + "개를 코드가 주입)" };
