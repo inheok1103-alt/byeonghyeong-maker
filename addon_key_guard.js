@@ -24,6 +24,8 @@
   /* ── 게이트① 코드 결정론 검증 ── */
   function codeGate(q, original) {
     if (!isLabelMCQ(q)) return null;
+    // 위치표식형(문장삽입·무관문장·글의순서 등: ①~⑤ 슬롯 사용, 밑줄 없음) — 정답을 코드가 결정론 생성하므로 밑줄검사 면제·통과
+    if (/삽입|무관|순서|배열|전체문장|문장배열/.test(q.type)) return { ok: "코드 생성 정답(위치표식형)" };
     var ms = marks(q.passage);
     if (ms.length < q.choices.length) return { drop: "밑줄 개수(" + ms.length + ") 부족" };
     if (/어휘/.test(q.type)) {
