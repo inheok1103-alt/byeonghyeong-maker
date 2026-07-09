@@ -857,7 +857,7 @@
       // 오류주입 검증: 주입 후 문법 오류가 원문보다 늘지 않으면(무오류 주입) 재시도 — '틀린 곳이 없는' 문항 방지
       if (g.length <= g0.length && attempt < 2) continue;
       var verified = g.length ? (" (LanguageTool 확인: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + ")") : "";
-      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)" };
+      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)", _gram: { error: String(o.error).trim(), correct: String(o.correct || mk.orig).trim(), wi: wi, verified: !!verified } };
     }
     return null;
   }
@@ -962,30 +962,17 @@
       _audit: "조건 3종 코드조립(단어 수 " + words.length + " 검산됨)",
       _trace: [{ line: 1, api: "llm", label: "정답문장 생성", ok: !!sent }, { line: 2, api: "code", label: "제시어 3개 추출", ok: !!keys.length }, { line: 3, api: "trans", label: "MyMemory 번역", ok: !!ko }, { line: 4, api: "code", label: "조건 3종 조립(단어수 검산)", ok: true }] };
   }
-  // ===== 어법수정(서술형): 어법(밑줄) 성공 패턴과 동일한 '코드 주입' — LLM은 구절·오형태만, 밑줄·주입·위치는 코드가 =====
+  // ===== 어법수정(서술형): 검증된 buildGrammar(어법 밑줄) 경로를 재사용해 동일 품질 보장 후 '고쳐쓰기' 형식으로 재구성 =====
+  //   과거엔 별도 프롬프트로 돌려 '뜻만 바꾸기·오교정(they are smart→smartly)' 오답이 잦았음 → 단일 검증경로로 통일.
   async function buildGrammarEdit(passage) {
-    for (var attempt = 0; attempt < 3; attempt++) {
-      var gecEx = gecExamples(2);
-      var o = await llmJSON([{ role: "system", content: "고교 어법 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 고르고 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★밑줄 최소단위: 판단이 걸리는 부분만 1~4단어로 짧게(긴 구·절 금지, 예: have unearthed·which·to enhance). ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법만." + (gecEx ? (" 오류 예: " + gecEx) : "") + " JSON: {\"phrases\":[\"판단지점 구절 5개(각 1~4단어, 등장순, 원문 그대로)\"],\"wrongIndex\":1~5,\"error\":\"그 구절의 틀린 형태\",\"correct\":\"원래 올바른 구절(=phrases 해당 항목과 동일)\"}. JSON만.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
-      if (o && Array.isArray(o.phrases) && o.phrases.length >= 5 && o.error && String(o.error).trim() !== String(o.correct || "").trim()) {
-        var phr = o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); });
-        if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 5; })) continue;   // 밑줄 최소단위(≤5단어)
-        var wi = -1;
-        for (var pi = 0; pi < phr.length; pi++) { if (normTok(phr[pi]) === normTok(o.correct)) { wi = pi + 1; break; } }
-        if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
-        if (!spreadOK(passage, phr, attempt)) continue;   // 밑줄 5곳 문장 분산
-        var mk = markWords(passage, phr, wi - 1, String(o.error).trim());
-        if (!mk || mk.count < 5) continue;
-        // 오류주입 검증 게이트(서술형은 키가드 미적용 → 여기서 필수): 주입 후 문법오류가 원문보다 늘지 않으면 무오류 주입 → 재시도
-        var g0 = []; try { g0 = await grammar(passage.replace(/<[^>]+>/g, " ")); } catch (_) {}
-        var g = []; try { g = await grammar(String(mk.text).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); } catch (_) {}
-        if (g.length <= g0.length && attempt < 2) continue;
-        var verified = g.length ? (" (LanguageTool: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + " 확인)") : "";
-        return { type: "어법수정", instruction: "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.", passage: mk.text, choices: [], answer: 0,
-          explanation: "[모범답안] " + CIRC5(wi) + ": '" + o.error + "' → '" + (o.correct || mk.orig) + "'" + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)" };
-      }
-    }
-    return null;
+    var q = null;
+    for (var a = 0; a < 2 && !q; a++) { try { q = await buildGrammar(passage); } catch (_) {} }
+    if (!q || !q._gram) return null;
+    var err = q._gram.error, cor = q._gram.correct, wi = q._gram.wi;
+    if (!err || !cor || normTok(err) === normTok(cor)) return null;   // 오류≠교정 정합
+    var verified = q._gram.verified ? " (LanguageTool 확인)" : "";
+    return { type: "어법수정", instruction: "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.", passage: q.passage, choices: [], answer: 0,
+      explanation: "[모범답안] " + CIRC5(wi) + ": '" + err + "' → '" + cor + "'" + verified, _audit: "정답위치 코드생성됨(buildGrammar 검증경로 재사용)" };
   }
 
   /* ===== 재귀 상호작용: 검수 뉴런 ↔ 재작성 뉴런이 수렴까지 반복(recurrent refinement) ===== */
