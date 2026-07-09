@@ -69,6 +69,25 @@
     return { ok: "솔버 " + cnt + "/" + votes.length + " 일치" };
   }
 
+  /* ── 게이트②.5 정답 유일성(복수정답 차단) — 텍스트 MCQ에서 오답이 정답의 근접 패러프레이즈면 복수정답 ── */
+  var UGSTOP = { "the": 1, "a": 1, "an": 1, "of": 1, "to": 1, "in": 1, "on": 1, "for": 1, "and": 1, "or": 1, "is": 1, "are": 1, "be": 1, "that": 1, "this": 1, "it": 1, "as": 1, "by": 1, "with": 1, "we": 1, "our": 1, "they": 1, "their": 1, "not": 1, "수": 1, "것": 1, "등": 1, "및": 1, "이": 1, "그": 1, "저": 1, "때": 1, "더": 1 };
+  function ugToks(s) { return String(s || "").toLowerCase().replace(/[^a-z가-힣0-9 ]/g, " ").split(/\s+/).filter(function (w) { return w.length >= 2 && !UGSTOP[w]; }); }
+  function ugOverlap(a, b) { var A = ugToks(a); if (!A.length) return 0; var B = {}; ugToks(b).forEach(function (w) { B[w] = 1; }); var hit = A.filter(function (w) { return B[w]; }).length; return hit / A.length; }
+  function uniquenessGate(q) {
+    if (!q || !q.choices || q.choices.length < 4 || isLabelMCQ(q)) return null;
+    if (!(q.answer >= 1 && q.answer <= q.choices.length)) return null;
+    var ans = q.choices[q.answer - 1]; if (!ans || ugToks(ans).length < 2) return null;
+    var maxOv = 0, worst = -1;
+    for (var i = 0; i < q.choices.length; i++) {
+      if (i === q.answer - 1) continue;
+      var ov = Math.min(ugOverlap(ans, q.choices[i]), ugOverlap(q.choices[i], ans));   // 양방향 최소 = 서로 근접해야 높음(주제어 편중 완화)
+      if (ov > maxOv) { maxOv = ov; worst = i; }
+    }
+    if (maxOv >= 0.8) return { drop: "복수정답 소지 — 오답 " + (worst + 1) + "번이 정답과 핵심어 " + Math.round(maxOv * 100) + "% 중복(근접 패러프레이즈)" };
+    if (maxOv >= 0.62) return { flag: "정답-오답 근접(" + Math.round(maxOv * 100) + "%) — 복수정답 재검 권고" };
+    return null;
+  }
+
   /* ── 게이트③ 위생 필터 ── */
   function hygiene(q) {
     if (q.choices && q.choices.some(function (c) { return /\(보기/.test(String(c)); })) return { drop: "플레이스홀더 선지 노출" };
@@ -91,6 +110,11 @@
       else if (g.flag) { STATS.flagged++; annotate(q, "⚠ " + g.flag); log("[" + q.type + "] " + g.flag); }
       else annotate(q, g.ok);
       return { item: q, status: "ok" };
+    }
+    var u = uniquenessGate(q);
+    if (u) {
+      if (u.drop) { STATS.dropped++; log("[" + q.type + "] 폐기 — " + u.drop); return { item: null, status: "dropped", why: u.drop }; }
+      if (u.flag) { STATS.flagged++; annotate(q, "⚠ " + u.flag); log("[" + q.type + "] " + u.flag); }
     }
     var s = await solverGate(q, original, T);
     if (s) {
