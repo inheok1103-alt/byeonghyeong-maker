@@ -1,0 +1,573 @@
+{
+  "summary": "49개 전 유형을 장르 맞춤 수능지문으로 실엔진 생성 → 규격 검수(모든 경우의수)",
+  "agentCount": 9,
+  "logs": [
+    "검수 완료: 9/9 에이전트"
+  ],
+  "result": {
+    "tested": 49,
+    "ok": 26,
+    "failed": 23,
+    "critical": 12,
+    "major": 22,
+    "minor": 24,
+    "defects": [
+      {
+        "type": "내용일치",
+        "sev": "critical",
+        "what": "생성 실패 — q=null, 문항이 전혀 산출되지 않음.",
+        "evidence": "buildFactCheck(일치) 경로가 2회 연속 q=null 반환(1차 28.5s, 2차 141.7s). bio 지문(세부정보 부족)에서 '일치 1개 + 서로 다른 R규칙 모순 4개' 검증을 3회 재시도 모두 통과 못해 실패. 같은 지문·같은 유형에서 사용자는 문항을 받지 못함."
+      },
+      {
+        "type": "지칭추론",
+        "sev": "critical",
+        "what": "지칭추론 구조 붕괴 — 발문은 '밑줄 친 (a)~(e)'를 요구하는데 지문에 밑줄 슬롯이 0개이고, 선지가 지시어가 아닌 개체 설명이라 학생이 풀 수 없음.",
+        "evidence": "builderFor('지칭추론')이 전용 빌더 없이(types_v2 builder=none) buildInference로 폴백. 결과: passage='' 이며 ⓐ~ⓔ 밑줄 0개(선지 5개와 슬롯 수 불일치), 선지=['the modern environmental movement','a critic of DDT use','Jane Goodall','an environmental activist','Rachel Carson']로 전부 개체명(지시어 아님)이고 'Jane Goodall'은 지문에 없는 날조. 정답=5의 근거도 '핵심 논지 반영'이라는 주제문 논리라 '넷과 다른 지시대상' 로직이 부재. 이 유형은 라우팅상 항상 이렇게 깨짐(재현성 있음)."
+      },
+      {
+        "type": "복합세트",
+        "sev": "critical",
+        "what": "내용불일치 하위문항이 무정답(오답 키). 발문은 '내용과 일치하지 않는 것은?'인데 선지 5개가 전부 지문과 일치한다.",
+        "evidence": "정답표시 5번 '1964년 암으로 사망·결혼한 적 없음'은 지문(Carson died of cancer in 1964 / She never married)과 일치. 1~4번(출생1907·영문학→동물학·1932석사후 어류청 작가·1962 Silent Spring 살충제 경고)도 모두 일치 → 모순 진술 0개인데 _audit는 '모순 진술 정확히 1개 확인'이라 오검증. 학생이 고를 정답이 없음."
+      },
+      {
+        "type": "요지",
+        "sev": "critical",
+        "what": "정답 극성 반전(오답 키)이며 동시에 복수정답. 표시된 정답이 지문 논지의 정반대다.",
+        "evidence": "정답표시 5번 '노력이 아닌 타고난 재능에 대한 칭찬이 아이들의 회복력과 성장 마인드를 기른다'는 지문 논지(praise effort, not intelligence, builds resilience)의 정반대. 지문과 실제로 일치하는 것은 2번('타고난 재능보다 노력을 칭찬받아야 회복력·성장 마인드가 생긴다')이고 3번('재능 칭찬이 회복력을 약화시킨다')도 일치. 즉 정답이 틀렸고 진짜 정답은 채점상 오답 처리됨."
+      },
+      {
+        "type": "필자주장",
+        "sev": "critical",
+        "what": "복수정답(정답 비유일). 5개 중 4개가 같은 올바른 주장을 반복해 오답이 오답 구실을 못 한다.",
+        "evidence": "1번(결과가 아닌 과정에 집중)·2번(인격 아닌 과정에 둠)·4번(과정 집중이 중요)이 모두 '칭찬을 과정에 두라'는 동일 주장. 지문 'focus praise on the process rather than the person'의 직역은 오히려 2번인데 표시된 정답은 1번. 3번(결과보다 노력 중시)도 지문과 일치. 유일 정답이 성립하지 않음."
+      },
+      {
+        "type": "안내문일치",
+        "sev": "critical",
+        "what": "생성 실패 — generateOne이 q=null 반환(2회 재현). 사용자가 '안내문일치' 선택 시 문항이 생성되지 않고 UI에 '생성 실패' 경고가 뜸(ai_maker.html:2236).",
+        "evidence": "harness 2회 모두 {q:null} (ms 216474, 35879). builder factcheck1=buildFactCheck(p,true). 동일 지문·짝인 factcheck0(안내문불일치)는 정상 생성됨 → '일치' 버전만 솔버/검증 게이트에서 탈락하는 재현성 실패."
+      },
+      {
+        "type": "어법복수선택",
+        "sev": "critical",
+        "what": "미구현 유형이 노출되어 완전 무관한(자기모순) 문항 생성. 발문은 '밑줄 친 ⓐ~ⓔ 중 어법상 옳은 것끼리 짝지어진 것은?'인데 산출물엔 밑줄(ⓐ~ⓔ)이 전무하고, 선지는 어법 조합이 아니라 글의 요지 영어문장. 응답 불가.",
+        "evidence": "q.passage=''(밑줄 없음), choices=['Praising effort rather than intelligence fosters children's resilience and growth mindset','Children's resilience and growth mindset foster praising effort...','Criticizing intelligence rather than effort undermines...','Children's academic achievements depend on parental encouragement.','Children's resilience and growth mindset'(문장조각)], answer=1, explanation='핵심 논지...'. _trace가 '핵심 논지 추출/정답 보기 작성/오답 설계'=요지 파이프라인. types_v2: 어법복수선택 _impl='builder-needed', builder=''(빈값). api_team.js:1738 PENDING 목록에 '어법복수선택' 포함인데 on:true로 노출."
+      },
+      {
+        "type": "유의어대치부적절 (pg_expl.txt)",
+        "sev": "critical",
+        "what": "passage가 빈 문자열인데 발문은 '밑줄 친 ⓐ~ⓔ'를 지시 — 밑줄·지문이 없어 풀 수 없는 문항",
+        "evidence": "passage:\"\" (2회 모두 재현). instruction:'밑줄 친 ⓐ~ⓔ를 바꿔 쓴 것으로 적절하지 않은 것은?' 하지만 지문·ⓐ~ⓔ 밑줄이 전혀 존재하지 않음."
+      },
+      {
+        "type": "요약빈칸영작",
+        "sev": "critical",
+        "what": "요약빈칸 문항이 성립하지 않음 — (A)(B)가 들어갈 요약 문장이 없이 빈칸만 매달려 있고, 영어 요약이어야 할 내용이 지문 전체의 한국어 번역으로 대체됨(학생이 무엇을 쓸지 판단 불가)",
+        "evidence": "instruction 말미=\"...다음은 꿀벌의 舞蹈에 관한 요약이다. \\n(A) ______ (B) ______\" — 요약 문장 자체가 없음. 앞부분은 지문 요약이 아니라 전문(全文)의 한국어 번역."
+      },
+      {
+        "type": "혼합통합형",
+        "sev": "critical",
+        "what": "발문 '어법상 옳은 문장은?'인데 선지 5개가 모두 문장이 아니라 명사구 조각 → 어법 판단 대상이 없어 문항이 성립하지 않음",
+        "evidence": "instruction=\"윗글의 내용과 일치하며 어법상 옳은 문장은?\" / choices=[\"children's effort praise\",\"children's intelligence praise\",\"intelligence praise\",\"intelligence test scores\",\"praise for children\"] — 어느 것도 완전한 문장이 아님(어법 정오 판정 불가)."
+      },
+      {
+        "type": "도표일치",
+        "sev": "critical",
+        "what": "도표/지문이 전혀 없음 — passage가 빈 문자열이라 학생에게 대조할 자료가 하나도 표시되지 않음",
+        "evidence": "instruction='다음 도표의 내용과 일치하지 않는 것은?' 인데 passage=\"\"(0단어, 원지문 136단어의 0%). 유형 스펙(types_v2.json '도표일치', _id:chart, _impl:'builder-needed', builder:\"\")은 자체창작 그래프+수치 5개 이상('The graph shows~')을 요구하나, _trace를 보면 도표 빌더가 아니라 일반 '핵심 논지 추출→정답 보기 작성→오답 설계' 폴백으로 생성됨. 도표도 지문도 없어 발문 자체가 성립 불가."
+      },
+      {
+        "type": "도표일치",
+        "sev": "critical",
+        "what": "정답 극성 반전 — '일치하지 않는 것'을 물었는데 지문과 일치하는 보기를 정답으로 지정(오답키). 게다가 실제 불일치 보기가 여러 개라 복수정답",
+        "evidence": "answer=5, 보기5='Honeybees communicate the location and quality of food sources through a complex dance language'는 원지문(elaborate/complex dance로 위치+풍부함 전달) 논지와 정확히 일치. explanation도 '정답(복잡한 춤 언어)이 이를 반영한다'고 명시 → 일치문을 정답으로 찍음. 실제 '일치하지 않는' 보기는 ②'ancient city architecture', ③'animal behavior patterns'(지문 무관)와 ①④'simple'(elaborate와 모순)로 다수 존재. 즉 정답키는 정반대이고 진짜 정답은 복수."
+      },
+      {
+        "type": "서술형(자유)",
+        "sev": "major",
+        "what": "모범답안에 깨진 혼종 토큰 '제Raport' 노출(한국어+영문 깨짐, 의미 불명).",
+        "evidence": "explanation [모범답안] '…발표를 시작하며 제Raport를 응원해 주는 친구들의 얼굴을 발견했습니다…' — '제Raport'는 정상 한국어가 아닌 깨진 문자열."
+      },
+      {
+        "type": "서술형(자유)",
+        "sev": "major",
+        "what": "발문 요구 자수(300~400자)와 모범답안 실측이 대폭 불일치 — 모범답안이 자기 조건 미달.",
+        "evidence": "모범답안 실측 175자(공백제외)/228자(공백포함) ≪ 발문 '300~400자 내외'. api_team.js:1832 자수 자동교정은 '\\d+단어' 패턴+비범위만 처리해 '자'·'~' 범위 발문은 미보정."
+      },
+      {
+        "type": "이어쓰기영작",
+        "sev": "major",
+        "what": "모범답안이 발문의 필수 포함 단어 'confident'를 충족하지 못함(형용사 'confident' 대신 명사 'confidence' 사용) — 답안키가 자기 조건과 모순.",
+        "evidence": "발문 필수 포함 단어=('applause','confident'). 모범답안 'I felt a surge of confidence as the warm applause filled the room…'은 applause는 있으나 'confident' 미포함. 가이드 QC가 '코드 검산 가능(포함어)'로 명시한 조건인데 위반. (단어수 20개는 15~20 범위 충족)"
+      },
+      {
+        "type": "복합세트",
+        "sev": "major",
+        "what": "요지 하위문항의 정답만 유독 길고 포괄적(길이 단서로 정답 노출).",
+        "evidence": "정답 1번은 '창시자로 기억+화학 살충제 경고+현대 환경운동 촉발'을 한 문장에 다 담아 오답 2~5번보다 확연히 길다. guide 금지항목 '정답만 유독 길거나 구체적' 위반."
+      },
+      {
+        "type": "제목",
+        "sev": "major",
+        "what": "복수정답 소지: 정답과 한 오답이 사실상 동의어여서 변별 불가.",
+        "evidence": "정답 1번 \"EFFORT'S TRIUMPH OVER INTELLIGENCE\"와 5번 \"WHY EFFORT MATTERS MORE THAN INTELLIGENCE\"는 둘 다 '노력>지능'을 뜻해 모두 타당한 제목. 학생이 하나로 좁힐 근거가 없음."
+      },
+      {
+        "type": "의견영작",
+        "sev": "major",
+        "what": "발문 조건이 중간에 잘려 불완전하게 노출된다.",
+        "evidence": "지시문이 '...영어 문장으로 제시하시오. (총 2문장, 각 문장)'으로 끝남 — guide의 '각 문장 6단어 이상' 같은 단어수 조건이 잘려 '각 문장)'으로 마감. 학생이 조건을 알 수 없음."
+      },
+      {
+        "type": "주제문완성",
+        "sev": "major",
+        "what": "발문 조건 표기(한국어)와 요구 산출물(영어 주제문)이 어긋나 모호하고, 모범답안이 자기 조건을 문자대로 충족하지 않는다.",
+        "evidence": "조건이 한국어 모달('~해야 한다'/'~하는 것이 바람직하다')과 한국어 표현 포함('한계/한계를 드러내다','도전/도전 과제')을 요구하는데 모범답안은 영어('Parents should focus... so that children do not avoid challenges that might reveal their limits'). 학생이 한국어를 쓸지 영어를 쓸지 알 수 없고, 모범답안은 조건에 적힌 한국어 표현을 문자대로 포함하지 않음."
+      },
+      {
+        "type": "네모어법ABC",
+        "sev": "major",
+        "what": "복수정답 소지 — (B)/(C) 네모가 어법으로 결정되지 않는 명사 수(number) 선택이라 정답이 유일하지 않음. (B) 'the angle of the food' vs 'the angles of the food', (C) 'the dancer' vs 'the dancers'는 둘 다 어법상 적법(의미 차이일 뿐). A=movements인 선지 3·4·5가 모두 어법상 성립 → 정답 5는 '원문 형태' 일치일 뿐 어법 근거로 유일하지 않음.",
+        "evidence": "네모: (A)[a series of movement / a series of movements] (B)[the angle of the food / the angles of the food] (C)[the dancers / the dancer]. 선지4=(movements-angles-dancer)와 정답 선지5=(movements-angle-dancer)는 (B)만 다르고 둘 다 문법상 정상. 가이드 위반: 'each 네모=문법 기능이 갈리는 이형태 쌍만·의미 무관 쌍 금지·세 네모 서로 다른 범주'인데 3네모 전부 명사 수 범주로 중복."
+      },
+      {
+        "type": "어법수정 (pg_arg.txt)",
+        "sev": "major",
+        "what": "발문 템플릿 변수 {N} 미치환 — 학생에게 리터럴 '{N}'가 그대로 노출",
+        "evidence": "instruction: '윗글에서 어법상 틀린 부분을 {N}개 찾아 기호를 쓰고 바르게 고치시오.' — 2회 모두 재현. 몇 개를 찾아야 하는지 알 수 없음."
+      },
+      {
+        "type": "어법수정 (pg_arg.txt)",
+        "sev": "major",
+        "what": "오류주입이 실제 어법오류를 생성하지 못하는 경우 발생(간헐, 1/3회) — 정답 위치에 찾을 오류가 없음",
+        "evidence": "run1 explanation: \"ⓒ: 'they avoid difficult tasks' → 'they tend to avoid difficult tasks'\". 원문 ⓒ='they avoid difficult tasks'는 어법상 정상이며 'tend to' 추가는 어법 교정이 아닌 의역. 지문에 틀린 부분이 존재하지 않아 풀 수 없음(반면 재실행 시엔 'they gives up'→'give'로 정상 주입됨)."
+      },
+      {
+        "type": "어휘(밑줄) (pg_expl.txt)",
+        "sev": "major",
+        "what": "정답 단어 치환 시 동사 'communicate'를 비동사(형용사/명사)로 교체해 비문 생성 — 의미판단이 아닌 어법 tell로 변질",
+        "evidence": "passage: 'Honeybees ⓐ<u>simple</u> the location of food'(run1) / 'Honeybees ⓐ<u>stillness</u> the location of food'(run3). 둘 다 'communicate'(동사) 자리에 simple(형용사)/stillness(명사) → 영어 비문. 2회 재현."
+      },
+      {
+        "type": "어휘(밑줄) (pg_expl.txt)",
+        "sev": "major",
+        "what": "해설이 치환 전 원단어를 오기 — 답지의 '올바른 단어'가 실제 원문과 불일치",
+        "evidence": "run1 explanation: \"정답 ⓐ는 'simple'인데 문맥상 원래의 'elaborate'가 적절하다\"; run3: \"...원래의 'dance'가 적절하다\". 그러나 ⓐ 자리의 실제 원단어는 'communicate'(‘elaborate’/‘dance’는 ⓑ 등 다른 슬롯 단어). 교사·학생 오도."
+      },
+      {
+        "type": "유의어대치부적절 (pg_expl.txt)",
+        "sev": "major",
+        "what": "정답 인덱스와 해설 내용 모순 + 선지가 ⓐ~ⓔ에 대응되지 않는 독립 어구(중복 포함)",
+        "evidence": "run3 answer=3='imprecise communication methods'인데 explanation은 \"정답 (정확한 의사소통 방법)이 이를 반영한다\"(=accurate, 선지1과 대응)로 불일치; 또 '적절하지 않은 것'을 물으면서 '정답이 논지를 반영한다'는 논리 역전. run1은 선지 'elaborate system'/'elaborate performance' 유사중복."
+      },
+      {
+        "type": "영영풀이일치 (pg_bio.txt)",
+        "sev": "major",
+        "what": "선지(영영풀이)가 약 87자에서 문장 중간 잘림 — 미완성 텍스트 노출",
+        "evidence": "choice: 'child: A person who has not yet reached adulthood, whether natural (puberty), cultural '(87자, 끝 잘림), 'woods: ...branches of a tree. Us'(=Used... 잘림). 2회 모두 87자 캡에서 절단 재현."
+      },
+      {
+        "type": "본문찾아쓰기 (pg_expl.txt)",
+        "sev": "major",
+        "what": "영영풀이 정의가 지문 내 'dance'의 의미와 불일치(다의어 오적용)",
+        "evidence": "정의 'A sequence of rhythmic steps or movements usually performed to music, for pleasure or as a form of social interaction'는 인간 사교댄스 뜻. 그러나 지문의 dance는 꿀벌의 의사소통 행동('the dance is a genuine language of movement', '음악·즐거움·사교' 아님). 가이드가 요구하는 정의-문맥 의미 일치 실패."
+      },
+      {
+        "type": "본문어변형빈칸 (pg_expl.txt)",
+        "sev": "major",
+        "what": "요청한 어형이 인용 원문 슬롯에 문법적으로 안 맞음(실제 빈칸 부재)",
+        "evidence": "(A) communicate→명사형 'communication'을 'Honeybees communicate the location of food…'에 넣으면 'Honeybees communication…' 비문. (C) genuine→부사형 'genuinely'를 'the dance is a genuine language of movement'에 넣으면 'a genuinely language' 비문. '문맥에 맞게 빈칸을 완성' 전제가 성립하지 않는 탈맥락 어형 드릴."
+      },
+      {
+        "type": "본문어변형빈칸 (pg_expl.txt)",
+        "sev": "major",
+        "what": "해설에 어법 근거·채점 루브릭 전무",
+        "evidence": "explanation이 '1. communication / 2. described / 3. genuinely' 정답 나열만. 각 변형의 어법 근거(수일치·시제·태·품사)·부분점수 기준 없음. 체크리스트 G(해설 어법근거·루브릭) 및 가이드 위반. intent도 '문맥의 논리적 흐름으로 핵심 어구를 추론'(빈칸추론 문구)로 어형변형 유형과 불일치."
+      },
+      {
+        "type": "문장전환",
+        "sev": "major",
+        "what": "해설의 어법근거가 실제 모범답안과 불일치 — 답은 It~that 강조구문(도치 없음)인데 해설은 '주어-조동사 도치를 적용'이라 서술",
+        "evidence": "모범답안=\"It is only when children are praised for their effort that they learn to view challenges as opportunities to grow.\" (도치 없음, It-cleft) / 해설 포인트=\"Only를 강조어로 사용하여 주어-조동사 도치를 적용.\" — 답에는 어떤 도치도 없음."
+      },
+      {
+        "type": "문장전환",
+        "sev": "major",
+        "what": "모범답안이 원문에 없는 'only'를 삽입해 배타성(필요조건) 의미를 추가 — 조건 '의미·시제 유지'(의미보존 유일해) 위반",
+        "evidence": "원문=\"...children who are praised for their effort learn to view challenges...\"(단순 서술) → 답 \"It is only when ... that ...\"는 '오직 ~할 때만'이라는 필요조건 의미를 새로 부여함."
+      },
+      {
+        "type": "요약빈칸영작",
+        "sev": "major",
+        "what": "한자 다수 노출로 한국어 텍스트 오염(E)",
+        "evidence": "\"복잡한舞蹈\", \"각 摇摆 동작\", \"舞蹈자의 振动\", \"일벌들을 ...招集\", \"如此 작은 뇌가 如此 정확한\", \"慎重한 실험\" 등 舞蹈/摇摆/振动/招集/如此/慎重 반복 노출."
+      },
+      {
+        "type": "요약빈칸영작",
+        "sev": "major",
+        "what": "모범답안이 유형 스펙('빈칸 각 1단어 / 본문어 어형 변형')과 불일치 → 채점 불가",
+        "evidence": "모범답안 (A)=\"intricate dance patterns\"(3단어), (B)=\"convey precise information about food location\"(6단어). 유형 instruction은 \"...본문에서 찾아 변형하여 쓰시오. (각 1단어 / 어형 변화 조건 명시)\"."
+      },
+      {
+        "type": "혼합통합형",
+        "sev": "major",
+        "what": "정답 선지 자체가 비관용적 명사나열(어법상 어색)이며, 조각형 선지들로는 '내용일치×어법' 2축 유일 정답 근거가 성립하지 않음",
+        "evidence": "정답=① \"children's effort praise\"(관용상 'praise for children's effort'가 옳음), 해설=\"정답 (어린이 노력 찬양)이 이를 반영한다\". 나머지 선지도 조각형이라 상호배타·어법 축이 공허함. (선지 5개·answer 1~5·한자 없음은 정상)"
+      },
+      {
+        "type": "심경변화",
+        "sev": "minor",
+        "what": "해설이 빈약 — 본문 직접 인용 없음, 오답 4개별 왜 틀린지 설명 없음(가이드 QC 해설 필수요소 미충족). 시험지/모바일/복사 출력엔 이 기본 해설이 그대로 노출.",
+        "evidence": "explanation='글의 핵심 논지는 Stage fright → relief이며 정답(불안 → 완화)이 이를 반영한다' + 출제의도뿐. 'legs began to tremble/warm calm spread' 같은 전·후 근거 인용도, 오답별 이유도 없음."
+      },
+      {
+        "type": "서술형(자유)",
+        "sev": "minor",
+        "what": "출제의도가 과제 언어와 모순 — 과제는 한국어 300~400자 서술인데 intent는 '영어로 산출/해석'이라 명시.",
+        "evidence": "intent='지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다' — 한국어 자유서술 과제에 부적합한 상투 문구."
+      },
+      {
+        "type": "내용불일치",
+        "sev": "minor",
+        "what": "정답 선지 ④가 나머지보다 길고 구체적 — 선지 길이 균형(가이드 ±10%) 이탈로 미세한 정답 단서.",
+        "evidence": "④ '…《침묵의 봄》은 화학 농약의 위험성을 경고한 책으로, 출간 후 2년 만에 미국 전역에서 DDT 사용 금지 조치가 이뤄졌다.'(≈55자)가 최장. '2년 만에·미국 전역에서'라는 추가 한정어가 오직 정답에만 붙어 길이·구체성이 두드러짐(정답 로직 자체는 정확: 지문의 '2년 후 사망'을 DDT 금지 시점으로 왜곡한 유일 모순, answer=4 정답·유일)."
+      },
+      {
+        "type": "내용불일치",
+        "sev": "minor",
+        "what": "해설이 빈약 — 선지별 근거 문장·본문 인용 없음(가이드 해설 필수요소 미충족). 시험지/모바일/복사 출력엔 이 기본 해설이 그대로 노출.",
+        "evidence": "explanation='정답 진술만 글과 모순한다' + 출제의도뿐. 어느 문장이 근거인지, 오답 4개가 왜 일치인지 설명 없음."
+      },
+      {
+        "type": "제목",
+        "sev": "minor",
+        "what": "선지 5개가 전부 ALL CAPS 표기.",
+        "evidence": "모든 제목이 대문자(EFFORT'S TRIUMPH OVER INTELLIGENCE 등)로, 실제 시험 제목 표기(Title Case) 관행과 다름. 통일돼 있어 경미."
+      },
+      {
+        "type": "의견영작",
+        "sev": "minor",
+        "what": "서술형 채점 루브릭 부재.",
+        "evidence": "explanation에 [모범답안] 2문장만 있고 채점기준(입장/근거/조건·어법 배점, 허용답안 3층)이 없음. 모범답안 자체는 intelligence·resilience 포함 2문장으로 조건 충족."
+      },
+      {
+        "type": "주제문완성",
+        "sev": "minor",
+        "what": "type 규격의 '단어 수 명시'가 발문에 없고 루브릭도 없음.",
+        "evidence": "주제문완성 규격은 '단어 수 명시'를 요구하나 발문에 단어수 조건이 없어 서술형 채점 기준 부재. 채점 루브릭도 미제공."
+      },
+      {
+        "type": "주제",
+        "sev": "minor",
+        "what": "해설의 정답 한국어 대역이 원 선지 의미를 뒤틀어 옮김",
+        "evidence": "explanation: \"정답 (와글댄스를 통한 꿀벌과 교감하기)\" — 선지 1 'honeybee communication through the waggle dance'는 '꿀벌들의 의사소통'인데 '꿀벌과 교감하기(사람이 벌과 교감)'로 오역된 MyMemory 역번역이 그대로 노출. 정답성엔 영향 없으나 사용자에게 부정확하게 보임."
+      },
+      {
+        "type": "빈칸(어구)",
+        "sev": "minor",
+        "what": "생성 지연이 운영 타임아웃(170초)을 크게 초과",
+        "evidence": "ms=249532(약 4분9초). 문항 자체는 정상 생성(answer=3 'convey precise information', 유일정답·선지5개·형태단서 없음). 다만 실사용 앱 타임아웃 하에서는 결과 미표시로 이어질 수 있는 신뢰성 리스크. 내용 결함 아님."
+      },
+      {
+        "type": "요약문AB",
+        "sev": "minor",
+        "what": "(A) 오답 다수가 문법상 성립 불가라 의미가 아닌 어법으로 소거 가능 → 변별력 저하",
+        "evidence": "요약문 'Honeybees use an intricate (A) to convey...'에서 (A) 오답 perform/compose/ascend는 명사가 아니라 'an intricate perform/compose/ascend'가 비문. 선지 1·2·4를 어법만으로 제거 가능해 실질 2지선다(정답 dance/recruitment)로 축소. 정답 유일성은 유지."
+      },
+      {
+        "type": "요약문AB",
+        "sev": "minor",
+        "what": "출제의도(인사이트)가 유형 특화가 아닌 범용 보일러플레이트",
+        "evidence": "intent: \"지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\" — 다른 5개 유형(주제·빈칸·함의·순서)은 모두 유형별 구체 인사이트가 나오는데 요약문AB만 일반 폴백 문구가 노출됨."
+      },
+      {
+        "type": "장문세트",
+        "sev": "minor",
+        "what": "내용불일치 하위문항 정답(⑤)이 명확한 사실 모순이 아니라 원문에 없는 절대어 '반드시' 추가에만 근거한 약한 함정",
+        "evidence": "원문 'When a scout bee returns to the hive after finding flowers, it performs a series of movements' 는 일반 서술인데, 선지⑤ '정찰 벌이 꽃을 찾은 후 벌통으로 돌아오면 반드시 춤을 춘다'는 '반드시'만 덧붙임. 선지①~④는 원문과 축자적으로 일치하므로 소거로 ⑤가 유일답이 되긴 하나, '반드시'가 원문의 습관적 서술과 사실상 상충하지 않아 불일치 근거가 다소 논쟁적. 코드 감사는 '모순 정확히 1개'로 통과 표시."
+      },
+      {
+        "type": "틀린문장 고쳐쓰기 (pg_arg.txt)",
+        "sev": "minor",
+        "what": "생성 지연(약 108초)으로 170초 컷오프에 근접 — 신뢰성 리스크",
+        "evidence": "ms=108492. 내용은 정상: 진짜 수일치 오류 'they gives up quickly'→'they give up quickly' 주입, 지문 전문 유지, 모범답안 정확."
+      },
+      {
+        "type": "네모어휘ABC (pg_expl.txt)",
+        "sev": "minor",
+        "what": "1회 생성 타임아웃(>170초, q 미산출) 발생 후 재시도 시 정상 — 프록시 지연에 따른 간헐적 실패 리스크",
+        "evidence": "1차 exit124(무출력), 재실행 4356ms 정상. 재실행 문항은 정상: (A)[simplistic/elaborate] (B)[stillness/waggle] (C)[genuine/counterfeit], 정답=1 '(A)elaborate-(B)waggle-(C)genuine'가 유일 정답 조합으로 정확."
+      },
+      {
+        "type": "영영풀이일치 (pg_bio.txt)",
+        "sev": "minor",
+        "what": "'woods'의 '올바른 풀이'로 'wood'(목재) 정의를 제시 — 지문 문맥(‘the woods’=숲)과 어의 불일치로 복수정답 소지",
+        "evidence": "explanation/choice: woods def = 'The substance making up the central part of the trunk and branches of a tree'(목재 wood의 정의). 지문 'exploring the woods and streams'는 ‘숲’ 뜻이라 이 풀이도 부적절로 볼 여지."
+      },
+      {
+        "type": "본문찾아쓰기 (pg_expl.txt)",
+        "sev": "minor",
+        "what": "유형 라벨 불일치(요청≠생성 type)",
+        "evidence": "요청 유형 '본문찾아쓰기'인데 생성 q.type='영영풀이단어쓰기'(buildEngdefWrite 공유, api_team.js:1564→1426). q.type이 문항 헤더에 그대로 노출됨(ai_maker.html:2014)."
+      },
+      {
+        "type": "첫글자어휘 (pg_expl.txt)",
+        "sev": "minor",
+        "what": "빈칸이 기능어(전치사)라 어휘 변별력 약함·해설 과장",
+        "evidence": "빈칸='through' ('communicate the location of food t______ an elaborate dance'). 가이드 '단순 연어 회피·문단 논지로 결정되는 내용어 선정' 위반. 해설은 '문단의 논지상 이 자리에는 through가 유일하게 자연스럽다'라 주장하나 실제로는 문법/연어로 결정되는 자리."
+      },
+      {
+        "type": "본문어변형빈칸 (pg_expl.txt)",
+        "sev": "minor",
+        "what": "(A) 명사형 정답 복수해",
+        "evidence": "'communicate의 명사형'은 communication/communicator 등 복수 가능 → 정답 유일성 미확보."
+      },
+      {
+        "type": "조건영작 (pg_arg.txt)",
+        "sev": "minor",
+        "what": "우리말 발문이 비문/기계번역투",
+        "evidence": "'칭찬 노력은 아이들이 회복력과 자신감을 키우는 데 도움이 됩니다' — 주어부 조사 결손(→'노력을 칭찬하는 것은'). _trace상 MyMemory 번역 산출. 단어은행(praising/effort/helps)으로 의미 추정은 가능. 단어수 조건(8단어)·모범답안 실측(8)·루브릭은 정상."
+      },
+      {
+        "type": "배열영작 (pg_arg.txt)",
+        "sev": "minor",
+        "what": "복수 배열 소지(등위 명사 교환 가능)",
+        "evidence": "정답 'Praising effort helps children develop resilience and confidence'에서 'resilience and confidence'↔'confidence and resilience' 둘 다 문법적으로 완전(같은 8단어 전수 사용). 우리말 어순(회복력과 자신감)으로만 완화될 뿐 배열 유일성 미보장(LanguageTool 검증은 문법만 확인, 유일성 미검)."
+      },
+      {
+        "type": "배열영작 (pg_arg.txt)",
+        "sev": "minor",
+        "what": "해설에 어순 결정 근거·채점 루브릭 없음",
+        "evidence": "explanation이 모범답안+일반 intent만. 가이드 요구 '어순 결정 근거(문형·수식 관계)'·감점 규정 부재. 우리말 발문도 조건영작과 동일한 기계번역투('칭찬 노력은…')."
+      },
+      {
+        "type": "우리말해석",
+        "sev": "minor",
+        "what": "intent(출제의도)가 유형과 다소 불일치 — 과제는 영어→한국어 해석인데 범용 문구 사용",
+        "evidence": "intent=\"지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다\" (과제는 우리말 해석). 모범답안 \"정찰벌은 꽃을 찾은 후 벌집으로 돌아오면, 벌집의 수직 표면에서 일련의 움직임을 수행합니다.\"는 원문과 정확히 대응, 구문 포인트(when절)·모범답안·출제의도 모두 존재."
+      },
+      {
+        "type": "어형변형(괄호)",
+        "sev": "minor",
+        "what": "intent가 유형(어법/어형 변형) 특화가 아닌 범용 문구",
+        "evidence": "intent=\"...영어로 산출/해석하는 표현력·정확성...\". 정답은 정확·유일: (tell)→are told(수동태 필요), (shape)→shapes(주어 What we praise=단수) — 원문 \"are told\"/\"shapes\"와 일치, 해설 어법근거(수동태·단수 수일치) 정확."
+      },
+      {
+        "type": "지칭명시",
+        "sev": "minor",
+        "what": "발문은 '밑줄 친 지시어'라 하나 표시 지문에 밑줄이 없고 대상을 괄호로 제시하며, 대상이 대명사가 아닌 서술 명사구이고 지시어 1곳만(가이드는 서로 다른 대상 2곳 요구)",
+        "evidence": "instruction=\"...밑줄 친 지시어의 지시 대상을 본문에서 찾아 쓰시오... - \\\"이것(her most famous book)\\\"이 가리키는 대상\". 정답 \"her most famous book → Silent Spring\"은 지문(\"...published Silent Spring... two years after her most famous book appeared\") 대조 시 정확·유일. 원지문은 상단 공통지문으로 표시되어 답 도출 가능."
+      }
+    ],
+    "clean": [
+      "빈칸(문장)",
+      "밑줄함의",
+      "글의순서",
+      "문장삽입",
+      "무관문장",
+      "연결어빈칸",
+      "전체문장배열",
+      "목적",
+      "안내문불일치",
+      "어법(밑줄)",
+      "어법개수형",
+      "영영풀이단어쓰기 (pg_bio.txt)"
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "전유형 생성·검수"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "종합"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "sim:1",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "ac98036d7a9acf0cb",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559759316,
+      "queuedAt": 1783559754239,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"심경변화\"  지문:selfllm/pg_narr.txt\n- \"서술형(자유)\"  지문:selfllm/pg_narr.txt\n- \"이어쓰기영작\"  지문:selfllm/pg_narr.txt\n- \"내용일치\"  지문:selfllm/pg_bio.txt\n- \"내용불일치\"  지문:selfllm/pg_bio.txt\n- \"지칭추론\"  지문:selfllm/pg_bio.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임아웃 170초). …",
+      "lastProgressAt": 1783560536928,
+      "tokens": 83517,
+      "toolCalls": 17,
+      "durationMs": 777612,
+      "resultPreview": "{\"results\":[{\"type\":\"심경변화\",\"ok\":true,\"ms\":12381,\"defects\":[{\"sev\":\"minor\",\"what\":\"해설이 빈약 — 본문 직접 인용 없음, 오답 4개별 왜 틀린지 설명 없음(가이드 QC 해설 필수요소 미충족). 시험지/모바일/복사 출력엔 이 기본 해설이 그대로 노출.\",\"evidence\":\"explanation='글의 핵심 논지는 Stage fright → relief이며 정답(불안 → 완화)이 이를 반영한다' + 출제의도뿐. 'legs began to tremble/warm calm spread' 같은 전·후 근거 인용도, 오답별 이유도 없음.\"}]},{\"type\":\"서술형(자유)\",\"ok\":false,\"ms\":5541,\"defects\":[{\"sev\":\"maj…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "sim:2",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "ad70ee1d099c3a711",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559766529,
+      "queuedAt": 1783559754240,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"복합세트\"  지문:selfllm/pg_bio.txt\n- \"요지\"  지문:selfllm/pg_arg.txt\n- \"필자주장\"  지문:selfllm/pg_arg.txt\n- \"제목\"  지문:selfllm/pg_arg.txt\n- \"의견영작\"  지문:selfllm/pg_arg.txt\n- \"주제문완성\"  지문:selfllm/pg_arg.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임아웃 170초). 출력 JSON의 q가 …",
+      "lastProgressAt": 1783560623175,
+      "tokens": 65153,
+      "toolCalls": 14,
+      "durationMs": 856646,
+      "resultPreview": "{\"results\":[{\"type\":\"복합세트\",\"ok\":false,\"ms\":134194,\"defects\":[{\"sev\":\"critical\",\"what\":\"내용불일치 하위문항이 무정답(오답 키). 발문은 '내용과 일치하지 않는 것은?'인데 선지 5개가 전부 지문과 일치한다.\",\"evidence\":\"정답표시 5번 '1964년 암으로 사망·결혼한 적 없음'은 지문(Carson died of cancer in 1964 / She never married)과 일치. 1~4번(출생1907·영문학→동물학·1932석사후 어류청 작가·1962 Silent Spring 살충제 경고)도 모두 일치 → 모순 진술 0개인데 _audit는 '모순 진술 정확히 1개 확인'이라 오검증. 학생이 고를 정답이 없음.\"},{\"sev\":\"m…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "sim:3",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "a2b6912802e6c9b1e",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559758023,
+      "queuedAt": 1783559754241,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"주제\"  지문:selfllm/pg_expl.txt\n- \"빈칸(어구)\"  지문:selfllm/pg_expl.txt\n- \"빈칸(문장)\"  지문:selfllm/pg_expl.txt\n- \"밑줄함의\"  지문:selfllm/pg_expl.txt\n- \"요약문AB\"  지문:selfllm/pg_expl.txt\n- \"글의순서\"  지문:selfllm/pg_expl.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임아웃 170초). …",
+      "lastProgressAt": 1783560519904,
+      "tokens": 65235,
+      "toolCalls": 24,
+      "durationMs": 761881,
+      "resultPreview": "{\"results\":[{\"type\":\"주제\",\"ok\":true,\"ms\":9507,\"defects\":[{\"sev\":\"minor\",\"what\":\"해설의 정답 한국어 대역이 원 선지 의미를 뒤틀어 옮김\",\"evidence\":\"explanation: \\\"정답 (와글댄스를 통한 꿀벌과 교감하기)\\\" — 선지 1 'honeybee communication through the waggle dance'는 '꿀벌들의 의사소통'인데 '꿀벌과 교감하기(사람이 벌과 교감)'로 오역된 MyMemory 역번역이 그대로 노출. 정답성엔 영향 없으나 사용자에게 부정확하게 보임.\"}]},{\"type\":\"빈칸(어구)\",\"ok\":true,\"ms\":249532,\"defects\":[{\"sev\":\"minor\",\"what\":\"생성 지연이 운영 타…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "sim:4",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "a17a0cc8ee3c4e59b",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559756714,
+      "queuedAt": 1783559754241,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"문장삽입\"  지문:selfllm/pg_expl.txt\n- \"무관문장\"  지문:selfllm/pg_expl.txt\n- \"연결어빈칸\"  지문:selfllm/pg_arg.txt\n- \"전체문장배열\"  지문:selfllm/pg_expl.txt\n- \"장문세트\"  지문:selfllm/pg_expl.txt\n- \"목적\"  지문:selfllm/pg_letter.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임아웃 170초). 출…",
+      "lastProgressAt": 1783560480591,
+      "tokens": 69986,
+      "toolCalls": 24,
+      "durationMs": 723877,
+      "resultPreview": "{\"results\":[{\"type\":\"문장삽입\",\"ok\":true,\"ms\":3283,\"defects\":[]},{\"type\":\"무관문장\",\"ok\":true,\"ms\":4177,\"defects\":[]},{\"type\":\"연결어빈칸\",\"ok\":true,\"ms\":2951,\"defects\":[]},{\"type\":\"전체문장배열\",\"ok\":true,\"ms\":2707,\"defects\":[]},{\"type\":\"장문세트\",\"ok\":true,\"ms\":466059,\"defects\":[{\"sev\":\"minor\",\"what\":\"내용불일치 하위문항 정답(⑤)이 명확한 사실 모순이 아니라 원문에 없는 절대어 '반드시' 추가에만 근거한 약한 함정\",\"evidence\":\"원문 'When a scout bee returns to the hive…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "sim:5",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "a0fc6f51c6946b86b",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559756901,
+      "queuedAt": 1783559754241,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"안내문일치\"  지문:selfllm/pg_letter.txt\n- \"안내문불일치\"  지문:selfllm/pg_letter.txt\n- \"어법(밑줄)\"  지문:selfllm/pg_arg.txt\n- \"어법개수형\"  지문:selfllm/pg_arg.txt\n- \"어법복수선택\"  지문:selfllm/pg_arg.txt\n- \"네모어법ABC\"  지문:selfllm/pg_expl.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임아…",
+      "lastProgressAt": 1783560486707,
+      "tokens": 62060,
+      "toolCalls": 32,
+      "durationMs": 729806,
+      "resultPreview": "{\"results\":[{\"type\":\"안내문일치\",\"ok\":false,\"ms\":216474,\"defects\":[{\"sev\":\"critical\",\"what\":\"생성 실패 — generateOne이 q=null 반환(2회 재현). 사용자가 '안내문일치' 선택 시 문항이 생성되지 않고 UI에 '생성 실패' 경고가 뜸(ai_maker.html:2236).\",\"evidence\":\"harness 2회 모두 {q:null} (ms 216474, 35879). builder factcheck1=buildFactCheck(p,true). 동일 지문·짝인 factcheck0(안내문불일치)는 정상 생성됨 → '일치' 버전만 솔버/검증 게이트에서 탈락하는 재현성 실패.\"}]},{\"type\":\"안내문불일치\",\"ok\":true,\"m…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "sim:6",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "a776fa634eb09d852",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559756679,
+      "queuedAt": 1783559754241,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"어법수정\"  지문:selfllm/pg_arg.txt\n- \"틀린문장 고쳐쓰기\"  지문:selfllm/pg_arg.txt\n- \"어휘(밑줄)\"  지문:selfllm/pg_expl.txt\n- \"네모어휘ABC\"  지문:selfllm/pg_expl.txt\n- \"유의어대치부적절\"  지문:selfllm/pg_expl.txt\n- \"영영풀이일치\"  지문:selfllm/pg_bio.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임…",
+      "lastProgressAt": 1783560495423,
+      "tokens": 44113,
+      "toolCalls": 16,
+      "durationMs": 738743,
+      "resultPreview": "{\"results\":[{\"type\":\"어법수정 (pg_arg.txt)\",\"ok\":false,\"ms\":4496,\"defects\":[{\"sev\":\"major\",\"what\":\"발문 템플릿 변수 {N} 미치환 — 학생에게 리터럴 '{N}'가 그대로 노출\",\"evidence\":\"instruction: '윗글에서 어법상 틀린 부분을 {N}개 찾아 기호를 쓰고 바르게 고치시오.' — 2회 모두 재현. 몇 개를 찾아야 하는지 알 수 없음.\"},{\"sev\":\"major\",\"what\":\"오류주입이 실제 어법오류를 생성하지 못하는 경우 발생(간헐, 1/3회) — 정답 위치에 찾을 오류가 없음\",\"evidence\":\"run1 explanation: \\\"ⓒ: 'they avoid difficult tasks' → 'they ten…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "sim:7",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "a715b316919d2eb45",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559759968,
+      "queuedAt": 1783559754242,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"영영풀이단어쓰기\"  지문:selfllm/pg_bio.txt\n- \"본문찾아쓰기\"  지문:selfllm/pg_expl.txt\n- \"첫글자어휘\"  지문:selfllm/pg_expl.txt\n- \"본문어변형빈칸\"  지문:selfllm/pg_expl.txt\n- \"조건영작\"  지문:selfllm/pg_arg.txt\n- \"배열영작\"  지문:selfllm/pg_arg.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임아웃 170…",
+      "lastProgressAt": 1783560410059,
+      "tokens": 77567,
+      "toolCalls": 19,
+      "durationMs": 650090,
+      "resultPreview": "{\"results\":[{\"type\":\"영영풀이단어쓰기 (pg_bio.txt)\",\"ok\":true,\"ms\":4650,\"defects\":[]},{\"type\":\"본문찾아쓰기 (pg_expl.txt)\",\"ok\":false,\"ms\":3493,\"defects\":[{\"sev\":\"major\",\"what\":\"영영풀이 정의가 지문 내 'dance'의 의미와 불일치(다의어 오적용)\",\"evidence\":\"정의 'A sequence of rhythmic steps or movements usually performed to music, for pleasure or as a form of social interaction'는 인간 사교댄스 뜻. 그러나 지문의 dance는 꿀벌의 의사소통 행동('the dance is a genui…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "sim:8",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "a862bc67304f4a964",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559756911,
+      "queuedAt": 1783559754242,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"우리말해석\"  지문:selfllm/pg_expl.txt\n- \"문장전환\"  지문:selfllm/pg_arg.txt\n- \"어형변형(괄호)\"  지문:selfllm/pg_arg.txt\n- \"요약빈칸영작\"  지문:selfllm/pg_expl.txt\n- \"지칭명시\"  지문:selfllm/pg_bio.txt\n- \"혼합통합형\"  지문:selfllm/pg_arg.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임아웃 170초).…",
+      "lastProgressAt": 1783560554530,
+      "tokens": 56994,
+      "toolCalls": 19,
+      "durationMs": 797619,
+      "resultPreview": "{\"results\":[{\"type\":\"우리말해석\",\"ok\":true,\"ms\":5726,\"defects\":[{\"sev\":\"minor\",\"what\":\"intent(출제의도)가 유형과 다소 불일치 — 과제는 영어→한국어 해석인데 범용 문구 사용\",\"evidence\":\"intent=\\\"지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다\\\" (과제는 우리말 해석). 모범답안 \\\"정찰벌은 꽃을 찾은 후 벌집으로 돌아오면, 벌집의 수직 표면에서 일련의 움직임을 수행합니다.\\\"는 원문과 정확히 대응, 구문 포인트(when절)·모범답안·출제의도 모두 존재.\"}]},{\"type\":\"문장전환\",\"ok\":false,\"ms\":107037,\"defects\":[{\"sev\":\"major\",\"what\":\"해설의…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "sim:9",
+      "phaseIndex": 1,
+      "phaseTitle": "전유형 생성·검수",
+      "agentId": "afa19d104392d0149",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1783559761140,
+      "queuedAt": 1783559754242,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA다. 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n각 유형을 실엔진으로 생성·감사하라(유형→지문 지정):\n- \"도표일치\"  지문:selfllm/pg_expl.txt\n실행: 각 유형마다 Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형>\" <지문파일> (타임아웃 170초). 출력 JSON의 q가 문항.\n필요시 knowledge/types_v2.json에서 해당 유형 guide/instruction을 Read로 대조.\n감사 체크리스트:\nA) 생성 실패(q=null/HARNESS_ERR)=critical.\nB) passage 단어수 — 원지문(약 120~135단어)의 60%…",
+      "lastProgressAt": 1783559900141,
+      "tokens": 25121,
+      "toolCalls": 5,
+      "durationMs": 139001,
+      "resultPreview": "{\"results\":[{\"type\":\"도표일치\",\"ok\":false,\"ms\":14135,\"defects\":[{\"sev\":\"critical\",\"what\":\"도표/지문이 전혀 없음 — passage가 빈 문자열이라 학생에게 대조할 자료가 하나도 표시되지 않음\",\"evidence\":\"instruction='다음 도표의 내용과 일치하지 않는 것은?' 인데 passage=\\\"\\\"(0단어, 원지문 136단어의 0%). 유형 스펙(types_v2.json '도표일치', _id:chart, _impl:'builder-needed', builder:\\\"\\\")은 자체창작 그래프+수치 5개 이상('The graph shows~')을 요구하나, _trace를 보면 도표 빌더가 아니라 일반 '핵심 논지 추출→정답 보기 작성→오답 …"
+    }
+  ],
+  "totalTokens": 549746,
+  "totalToolCalls": 170
+}

@@ -61,7 +61,8 @@
     var maj = +Object.keys(tally).sort(function (a, b) { return tally[b] - tally[a]; })[0], cnt = tally[maj];
     var keyBad = !(q.answer >= 1 && q.answer <= q.choices.length);
     if (keyBad && cnt >= 2) return { fix: maj, why: "무효 정답키 → 솔버 " + cnt + "/" + votes.length + " 다수결 " + maj + "번 적용" };
-    if (cnt === 3 && maj !== q.answer) return { fix: maj, why: "솔버 3/3 만장일치 " + maj + "번(기록 " + q.answer + "번 교정)" };
+    // 다수(2/3 이상)가 기록정답과 다르면 교정 — 극성반전·오답키 방어(과거 3/3만 교정해 2/3 오류가 통과하던 결함 수정)
+    if (maj !== q.answer && cnt >= 2) return { fix: maj, why: "솔버 " + cnt + "/" + votes.length + " 다수결 " + maj + "번(기록 " + q.answer + "번 교정)" };
     if (maj !== q.answer) return { flag: "정답 재검토 권고 — 솔버 " + cnt + "/" + votes.length + "가 " + maj + "번 선택(기록 " + q.answer + "번 유지)" };
     return { ok: "솔버 " + cnt + "/" + votes.length + " 일치" };
   }

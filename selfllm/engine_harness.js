@@ -16,6 +16,7 @@ global.fetch = function (url, opts) {
   return realFetch(url, opts);
 };
 eval(fs.readFileSync(path.join(__dirname, "../api_team.js"), "utf8"));
+try { eval(fs.readFileSync(path.join(__dirname, "../addon_key_guard.js"), "utf8")); } catch (e) { console.error("guard 로드 경고:", e.message); }   // 라이브와 동일하게 키가드 장착
 var T = global.window.APITEAM;
 if (!T) { console.error("HARNESS_ERR APITEAM 미노출"); process.exit(1); }
 

@@ -724,6 +724,15 @@
     if (pg.indexOf("<u>") < 0) return null;   // 밑줄이 없으면 문항 성립 불가 → 실패 처리(재시도)
     return { type: "함의", instruction: "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?", passage: pg, choices: a.choices, answer: a.answer, explanation: "밑줄 친 부분은 '" + o.meaning + "'을 함의한다." };
   }
+  // 지칭추론: 동성 2인 구도에서 대명사 5곳 밑줄(4=A, 1=B) — 부적합 지문이면 null(폴백금지)
+  async function buildReference(passage) {
+    var o = await llmJSON([{ role: "system", content: "지칭추론 출제자. JSON만." }, { role: "user", content: "다음 글에 같은 성(性)의 인물/대상이 둘 이상 있고 대명사(he/his/him·she/her·they/them·it/its)가 여러 번 나오면, 대명사가 실제로 등장한 부분 5곳을 '원문 그대로의 짧은 구절(대명사 포함, 등장순, 각 2~6단어)'로 고르되 4곳은 같은 대상 A를, 1곳만 다른 대상 B를 가리키게 하라. 지칭 대상이 하나뿐이거나 5곳을 못 만들면 반드시 {\"ok\":false}. JSON: {\"ok\":true,\"phrases\":[\"대명사 포함 짧은 구절 5개(원문 그대로, 등장순)\"],\"oddIndex\":1~5,\"A\":\"공통 지칭 대상(한국어)\",\"B\":\"다른 지칭 대상(한국어)\"} 또는 {\"ok\":false}. JSON만.\n\n" + passage }], { temperature: 0.4, timeout: 55000 });
+    if (!o || o.ok === false || !Array.isArray(o.phrases) || o.phrases.length < 5) return null;
+    var oi = parseInt(o.oddIndex, 10); if (!(oi >= 1 && oi <= 5)) return null;
+    var mk = markWords(passage, o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); }), -1, "");   // 치환 없이 밑줄만
+    if (!mk || mk.count < 5) return null;
+    return { type: "지칭추론", instruction: "밑줄 친 부분 중, 가리키는 대상이 나머지 넷과 다른 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: oi, explanation: "정답 " + CIRC5(oi) + "는 '" + (o.B || "다른 대상") + "'를 가리키고, 나머지 넷은 '" + (o.A || "주 대상") + "'를 가리킨다.", _audit: "밑줄·정답 코드검증(대명사 구절 원문 매칭)" };
+  }
   // 요약: ① (A)(B) 빈칸 요약문+정답 → ② 오답 쌍
   async function buildSummary(passage) {
     var o = await llmJSON([{ role: "system", content: "요약문완성 출제자. JSON만." }, { role: "user", content: "다음 글을 한 문장으로 요약하되 핵심어 두 곳을 (A),(B)로 비워라. 요약문·(A)·(B)는 반드시 영어 단어여야 한다(한국어 금지). (A)(B)는 서로 다른 핵심 개념. JSON: {\"summary\":\"... (A) ... (B) ... 형태의 영어 요약문(빈칸엔 실제 단어 대신 (A)/(B) 표기만)\",\"A\":\"정답 A 영어단어\",\"B\":\"정답 B 영어단어\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
@@ -781,10 +790,13 @@
     await Promise.all(cw.map(async function (w) { var sa = synAnt(w); if (sa && sa.ant && sa.ant.length) { ant[w] = sa.ant[0]; return; } var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; }));
     var brief = Object.keys(ant).map(function (w) { return w + "↔" + ant[w]; }).join(", ");
     for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "어휘(문맥상 부적절) 출제자. JSON만." }, { role: "user", content: "다음 지문에서 서로 다른 핵심 단어 5개를 '지문에 나온 그대로(등장 순서)' 고르고, 그 중 1개를 문맥상 명백히 부적절한 반의어로 바꿀지 정하라. 참고 반의어쌍: " + (brief || "-") + ". JSON: {\"words\":[\"지문에 실제로 있는 단어 5개(등장순)\"],\"wrongIndex\":1~5,\"wrong\":\"그 자리에 넣을 부적절 반의어(한 단어)\",\"correct\":\"원래 맞는 단어\"}. JSON만.\n\n" + passage }], { temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: "어휘(문맥상 부적절) 출제자. JSON만." }, { role: "user", content: "다음 지문에서 서로 다른 핵심 단어 5개를 '지문에 나온 그대로(등장 순서)' 고르고, 그 중 1개를 문맥상 명백히 부적절한 반의어로 바꿀지 정하라. ★교체어는 원래 단어와 반드시 같은 품사(동사↔동사, 형용사↔형용사, 명사↔명사)여야 하고, 그 자리에 넣어도 문법적으로 성립해야 한다. 품사가 다른 반의어(예: communicate(동사)→simple(형용사)) 절대 금지. 참고 반의어쌍(같은 품사): " + (brief || "-") + ". JSON: {\"words\":[\"지문에 실제로 있는 단어 5개(등장순)\"],\"wrongIndex\":1~5,\"wrong\":\"그 자리에 넣을 부적절 반의어(원단어와 같은 품사, 한 단어)\",\"correct\":\"원래 맞는 단어\"}. JSON만.\n\n" + passage }], { temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
       if (!o || !Array.isArray(o.words) || o.words.length < 5 || !o.wrong) continue;
       var wi = parseInt(o.wrongIndex, 10); if (!(wi >= 1 && wi <= 5)) wi = 1;
-      var wrongW = String(o.wrong).replace(/[^A-Za-z\- ]/g, "").trim();
+      // 같은 품사 datamuse 반의어가 있으면 그걸 우선(품사 안전) — 없으면 LLM 제안
+      var tgtW = String(o.words[wi - 1] || "").toLowerCase();
+      var dmAnt = ant[tgtW] || (synAnt(tgtW) && synAnt(tgtW).ant && synAnt(tgtW).ant[0]);
+      var wrongW = String(dmAnt || o.wrong).replace(/[^A-Za-z\- ]/g, "").trim();
       // 정답 교체어가 지문에 이미 존재하면 자기모순(deliberate practice, not deliberate gift)·즉시 노출 → 재시도
       if (!wrongW || new RegExp("\\b" + wrongW.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i").test(passage)) continue;
       var mk = markWords(passage, o.words.slice(0, 5), wi - 1, wrongW);  // 코드가 밑줄+치환
@@ -1567,6 +1579,9 @@
     var cm = String(t).match(/^문장전환\((태|분사구문|관계사|가정법)\)/); if (cm) return function (p) { return buildConvert(p, cm[1]); };
     if (/강조|도치/.test(t) && /전환/.test(t)) return function (p) { return buildConvert(p, "강조도치"); };
     if (/전체문장|문장배열/.test(t)) return function (p) { return Promise.resolve(buildOrderAll(p)); };
+    if (/지칭추론/.test(t)) return function (p) { return buildReference(p); };   // 전용 빌더(미구현 폴백→요지파이프라인 붕괴 차단)
+    if (/혼합통합형/.test(t)) return function (p, o) { return buildLongSet(p, o); };
+    if (/본문어변형빈칸/.test(t)) return function (p) { return buildInflect(p); };
     if (/글의\s*순서|^순서$/.test(t)) return function (p) { return Promise.resolve(buildOrder(p)); };
     if (/문장삽입/.test(t)) return function (p) { return Promise.resolve(buildInsertion(p)); };
     if (/안내문/.test(t)) return function (p) { return buildFactCheck(p, !/불일치/.test(t)); };   // 안내문 일치/불일치 → 사실검증 빌더(일치/불일치 문항) 연결(주제 폴백 방지)
@@ -1834,7 +1849,7 @@
         if (_wc >= 5) q.instruction = q.instruction.replace(/\d+(?=\s*단어)/, function (m) { return Math.abs(parseInt(m, 10) - _wc) > 1 ? String(_wc) : m; });
       } }
     TYPERULE = ""; LEVELRULE = ""; if (opts.hint) RUNHINT = _hint0;
-    if (q && TYPE_INSTR[type] && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];
+    if (q && TYPE_INSTR[type] && !/\{[A-Za-z0-9가-힣]+\}/.test(TYPE_INSTR[type]) && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];   // 미치환 템플릿({N}) 발문은 적용 안 함(빌더 자체 발문 유지)
     if (q) q.level = opts.level || "";
     if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 });
     stampIntent(q);
