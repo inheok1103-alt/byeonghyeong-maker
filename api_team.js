@@ -731,11 +731,34 @@
     if (cl) { var ci = passage.indexOf(cl); if (ci >= 0) return passage.slice(0, ci) + "<u>" + cl + "</u>" + passage.slice(ci + cl.length); }
     return passage;
   }
+  // 함의 전용 오답축(범위축소·인과전도·정도빈도치환·표면직역) — 정답과 의미가 겹치지 않게 구조적으로 설계
+  async function implicationDistractors(meaning, phrase) {
+    var j = await llmJSON([{ role: "system", content: "함의 오답 설계자. JSON 배열만." },
+      { role: "user", content: "밑줄 구절: \"" + (phrase || "") + "\"\n정답(함의): \"" + meaning + "\"\n\n정답과 '의미가 절대 겹치지 않는' 매력적 오답 4개를 서로 다른 축으로: ①범위축소(정답의 일부·지엽만) ②인과전도(원인·결과를 뒤바꿈) ③정도/빈도 치환(항상↔때때로·전부↔일부·강↔약) ④표면직역(밑줄 글자 그대로 뜻, 함의 아님). 각 오답 영어 한 문장, 정답을 재진술·패러프레이즈 금지. JSON: [\"오답1\",\"오답2\",\"오답3\",\"오답4\"]." }], { temperature: 0.6, timeout: 55000 });
+    return Array.isArray(j) ? j.map(clean1).filter(Boolean).slice(0, 4) : [];
+  }
+  // 의미 동치 교차질의(1콜) — 정답과 '양방향 함의(사실상 같은 뜻)'인 오답을 제거해 복수정답 차단
+  async function flagEquivalents(meaning, distractors) {
+    if (!distractors.length) return [];
+    var body = distractors.map(function (d, i) { return (i + 1) + ". " + d; }).join("\n");
+    var r = await llmJSON([{ role: "system", content: "의미 동치 판정관. JSON만." },
+      { role: "user", content: "정답 문장: \"" + meaning + "\"\n\n아래 선지 중 '정답과 사실상 같은 뜻'(양방향 함의: 하나가 참이면 다른 하나도 반드시 참)인 것의 번호를 모두 골라라. 표현이 달라도 뜻이 같으면 동치다.\n" + body + "\n\nJSON: {\"equivalent\":[번호]}." }], { temperature: 0.1, timeout: 45000 }).catch(function () { return null; });
+    var eq = (r && Array.isArray(r.equivalent)) ? r.equivalent.map(Number) : [];
+    return distractors.filter(function (_, i) { return eq.indexOf(i + 1) < 0; });
+  }
   async function buildImplication(passage) {
     var o = await llmJSON([{ role: "system", content: "함의추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 함축 의미가 풍부한 '원문 구절' 하나와 그 문맥상 의미를 정하라. phrase는 반드시 지문에 있는 문자열 그대로. JSON: {\"phrase\":\"원문 그대로의 구절\",\"meaning\":\"그 함축 의미를 풀어쓴 영어 한 문장\"}.\n\n" + passage }], { temperature: 0.4, timeout: 55000 });
     if (!o || !o.meaning) return null;
-    var dis = await makeDistractors(o.meaning, "영어 한 문장", "밑줄 구절 '" + (o.phrase || "") + "'의 함의");
-    var a = await reviewOptions(o.meaning, dis, { type: "함의" }); if (!a) return null;
+    var dis = await implicationDistractors(o.meaning, o.phrase);
+    if (dis.length < 3) dis = dis.concat(await makeDistractors(o.meaning, "영어 한 문장", "밑줄 구절 '" + (o.phrase || "") + "'의 함의"));
+    var clean = await flagEquivalents(o.meaning, dis.slice(0, 6));   // 의미동치 오답 제거(복수정답 차단)
+    for (var rg = 0; rg < 2 && clean.length < 4; rg++) {             // 부족하면 재생성(최대 2회)
+      var more = await implicationDistractors(o.meaning, o.phrase), seen = {};
+      var merged = clean.concat(more).filter(function (d) { var k = normTok(d); if (!d || seen[k]) return false; seen[k] = 1; return true; });
+      clean = await flagEquivalents(o.meaning, merged.slice(0, 6));
+    }
+    if (clean.length < 4) return null;   // 의미 유일성 확보 실패 → 폐기(복수정답 방지)
+    var a = await reviewOptions(o.meaning, clean.slice(0, 4), { type: "함의" }); if (!a) return null;
     var pg = underlineIn(passage, o.phrase);
     if (pg.indexOf("<u>") < 0) return null;   // 밑줄이 없으면 문항 성립 불가 → 실패 처리(재시도)
     return { type: "함의", instruction: "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?", passage: pg, choices: a.choices, answer: a.answer, explanation: "밑줄 친 부분은 '" + o.meaning + "'을 함의한다." };
@@ -814,13 +837,21 @@
     }
     return { text: out + rest, count: count, orig: placed };
   }
+  // 특정 단어가 든 지문 문장(호스트 문장)을 반환 — 어휘 해설의 담화근거 코드 폴백(lookbehind 미사용, 구엔진 호환)
+  function hostCtx(passage, word) {
+    if (!word) return "";
+    var w = String(word).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    var sents = String(passage).match(/[^.!?]+[.!?]+/g) || [String(passage)];
+    for (var i = 0; i < sents.length; i++) { if (new RegExp("\\b" + w + "\\b", "i").test(sents[i])) return sents[i].trim().replace(/\s+/g, " ").slice(0, 150); }
+    return "";
+  }
   // 어휘(문맥상 부적절): LLM은 '어느 단어를 무엇으로' 정하고, 밑줄·치환은 코드가 수행 → 정답위치 100% 정합
   async function buildVocab(passage) {
     var cw = contentWords(passage).slice(0, 8), ant = {};
     await Promise.all(cw.map(async function (w) { var sa = synAnt(w); if (sa && sa.ant && sa.ant.length) { ant[w] = sa.ant[0]; return; } var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; }));
     var brief = Object.keys(ant).map(function (w) { return w + "↔" + ant[w]; }).join(", ");
     for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "어휘(문맥상 부적절) 출제자. JSON만." }, { role: "user", content: "다음 지문에서 서로 다른 핵심 단어 5개를 '지문에 나온 그대로(등장 순서)' 고르고, 그 중 1개를 문맥상 명백히 부적절한 반의어로 바꿀지 정하라. ★교체어는 원래 단어와 반드시 같은 품사(동사↔동사, 형용사↔형용사, 명사↔명사)여야 하고, 그 자리에 넣어도 문법적으로 성립해야 한다. 품사가 다른 반의어(예: communicate(동사)→simple(형용사)) 절대 금지. 참고 반의어쌍(같은 품사): " + (brief || "-") + ". JSON: {\"words\":[\"지문에 실제로 있는 단어 5개(등장순)\"],\"wrongIndex\":1~5,\"wrong\":\"그 자리에 넣을 부적절 반의어(원단어와 같은 품사, 한 단어)\",\"correct\":\"원래 맞는 단어\"}. JSON만.\n\n" + passage }], { temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: "어휘(문맥상 부적절) 출제자. JSON만." }, { role: "user", content: "다음 지문에서 서로 다른 핵심 단어 5개를 '지문에 나온 그대로(등장 순서)' 고르고, 그 중 1개를 문맥상 명백히 부적절한 반의어로 바꿀지 정하라. ★교체어는 원래 단어와 반드시 같은 품사(동사↔동사, 형용사↔형용사, 명사↔명사)여야 하고, 그 자리에 넣어도 문법적으로 성립해야 한다. 품사가 다른 반의어(예: communicate(동사)→simple(형용사)) 절대 금지. 참고 반의어쌍(같은 품사): " + (brief || "-") + ". ★해설 근거는 사전 뜻풀이·유의/반의 나열이 아니라 '앞뒤 문장의 방향·인과·대조 관계'로만 판단하라. JSON: {\"words\":[\"지문에 실제로 있는 단어 5개(등장순)\"],\"wrongIndex\":1~5,\"wrong\":\"그 자리에 넣을 부적절 반의어(원단어와 같은 품사, 한 단어)\",\"correct\":\"원래 맞는 단어\",\"reason\":\"왜 correct가 와야 하는지 앞뒤 문장의 방향/인과/대조 단서로 1문장(사전뜻풀이 금지)\",\"polarity\":\"정답어 vs 오답어의 문맥 극성 차이 한 구절(예: 정답=협력/증가 ↔ 오답=경쟁/감소)\"}. JSON만.\n\n" + passage }], { temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
       if (!o || !Array.isArray(o.words) || o.words.length < 5 || !o.wrong) continue;
       var wi = parseInt(o.wrongIndex, 10); if (!(wi >= 1 && wi <= 5)) wi = 1;
       // 같은 품사 datamuse 반의어가 있으면 그걸 우선(품사 안전) — 없으면 LLM 제안
@@ -832,7 +863,11 @@
       if (!spreadOK(passage, o.words.slice(0, 5), attempt)) continue;   // 밑줄 5곳 문장 분산(한 문장 몰림 방지)
       var mk = markWords(passage, o.words.slice(0, 5), wi - 1, wrongW);  // 코드가 밑줄+치환
       if (!mk || mk.count < 5) continue;                       // 5개 다 못 찾으면 재시도
-      return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "는 '" + o.wrong + "'인데 문맥상 원래의 '" + (o.correct || mk.orig) + "'가 적절하다.", _audit: "정답위치 코드생성됨(치환·밑줄 모두 코드처리·문장분산 검증)" };
+      // 해설: 사전식 치환 메타가 아니라 담화근거(앞뒤 문장 방향/인과/대조)로. LLM reason 없으면 host 문장 인용 폴백.
+      var corr = o.correct || mk.orig;
+      var why = (o.reason && String(o.reason).trim()) ? String(o.reason).trim() : (function () { var h = hostCtx(passage, o.words[wi - 1] || corr); return h ? ("해당 문장 “" + h + "”의 논리 흐름상 " + corr + "가 맞고 " + o.wrong + "는 방향이 어긋난다") : "앞뒤 문장의 논리 흐름상 " + corr + "가 맞다"; })();
+      var polLine = (o.polarity && String(o.polarity).trim()) ? (" [극성] " + String(o.polarity).trim()) : "";
+      return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + ": 문맥상 '" + corr + "'가 와야 하는데 '" + o.wrong + "'가 쓰여 부적절하다 — " + why + "." + polLine, _audit: "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설)" };
     }
     return null;
   }
@@ -918,7 +953,23 @@
     var minus = isWrite ? "감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2." : "감점: 오역·누락 부분점.";
     return "\n[채점 루브릭] " + body.join(" · ") + "\n[0점 트리거] " + zero.join(" / ") + "\n" + minus;
   }
-  function essayResult(type, instruction, answer) { return { type: type, instruction: instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (answer || "") + essayRubric(type, instruction, answer) }; }
+  // 서술형 단어수 실측 역산(Ray 원칙: 모범답안이 진리원천) — 발문·루브릭의 단어밴드를 답 실측 N으로 동기화
+  function essayWordCount(ans) { return String(ans || "").trim().split(/\s+/).filter(Boolean).length; }
+  function isEnglishAnswer(ans) { var s = String(ans || ""); return (s.match(/[A-Za-z]/g) || []).length > (s.match(/[가-힣]/g) || []).length; }
+  function syncEssayWords(instr, answer) {
+    if (!isEnglishAnswer(answer)) return instr;                       // 영작형만(해석형 제외)
+    var n = essayWordCount(answer); if (n < 3) return instr;
+    var lo = Math.max(1, n - 2), hi = n + 2, s = String(instr), did = false;
+    s = s.replace(/(\d+)\s*[~\-–]\s*(\d+)\s*단어/, function () { did = true; return lo + "~" + hi + "단어"; });   // RANGE 우선(배타)
+    if (!did) s = s.replace(/(\d+)\s*단어\s*(이내|내외|이하|정도|안팎)/, function (m, num, suf) { return n + "단어 " + suf; });   // LIMIT(길이 큐 있을 때만; '제시어 N단어'는 불변)
+    return s;
+  }
+  function essayResult(type, instruction, answer) {
+    var instr = syncEssayWords(instruction, answer);   // 답 실측으로 발문 밴드 동기화 → essayRubric도 동일 발문을 읽어 자동 일치(단일 진리원천)
+    return { type: type, instruction: instr, passage: "", choices: [], answer: 0, answerText: (isEnglishAnswer(answer) ? String(answer || "") : ""),
+      explanation: "[모범답안] " + (answer || "") + essayRubric(type, instr, answer),
+      _audit: isEnglishAnswer(answer) ? ("서술형 단어수 " + essayWordCount(answer) + " 실측·발문 동기화") : "" };
+  }
   // 서술형 파싱: [발문]…[정답] 구획(따옴표·목록·여러 줄에 안 깨짐) → 발문:/정답: 라벨 → JSON 순으로 견고하게
   function parseEssayText(raw) {
     raw = String(raw || "").replace(/```[a-z]*\n?/gi, "").trim();
@@ -1994,10 +2045,10 @@
         .replace(/[�぀-ヿ㐀-䶿一-鿿]+/g, "").replace(/  +/g, " "); };   // 번역기 혼입 한자·가나·깨진문자 제거(卓越·这样·力·を 등)
       ["passage", "instruction", "explanation", "answerText"].forEach(function (k) { if (q[k]) q[k] = _tg(q[k]); });
       if (q.choices && q.choices.length) q.choices = q.choices.map(_tg);
-      // 서술형 단어수는 모범답안 실측 기준(Ray) — 발문의 "N단어"가 실측과 2 이상 어긋나면 실측으로 교정
-      if (q.answerText && q.instruction && /\d+\s*단어/.test(q.instruction) && !/~/.test(q.instruction)) {
+      // 서술형 단어수 실측 교정(Ray) — 길이 큐(이내/내외/이하/정도) 있는 단일 ' N단어'만 교정(제시어 개수 'N단어'는 불변, 범위형은 essayResult가 이미 동기화)
+      if (q.answerText && q.instruction && /\d+\s*단어\s*(?:이내|내외|이하|정도|안팎)/.test(q.instruction) && !/~/.test(q.instruction)) {
         var _wc = String(q.answerText).trim().split(/\s+/).filter(Boolean).length;
-        if (_wc >= 5) q.instruction = q.instruction.replace(/\d+(?=\s*단어)/, function (m) { return Math.abs(parseInt(m, 10) - _wc) > 1 ? String(_wc) : m; });
+        if (_wc >= 5) q.instruction = q.instruction.replace(/\d+(?=\s*단어\s*(?:이내|내외|이하|정도|안팎))/, function (m) { return Math.abs(parseInt(m, 10) - _wc) > 1 ? String(_wc) : m; });
       } }
     TYPERULE = ""; LEVELRULE = ""; if (opts.hint) RUNHINT = _hint0;
     if (q && TYPE_INSTR[type] && !/\{[A-Za-z0-9가-힣]+\}/.test(TYPE_INSTR[type]) && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];   // 미치환 템플릿({N}) 발문은 적용 안 함(빌더 자체 발문 유지)
