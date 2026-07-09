@@ -1780,6 +1780,35 @@
     CTXCACHE[k] = c; var ks = Object.keys(CTXCACHE); if (ks.length > 4) delete CTXCACHE[ks[0]];
     return c;
   }
+  // 정답위치 균등 분산(조립단계 — Haladyna/임용 원칙 §7: 위치편향=추측이득 CIV).
+  //   텍스트선지형(요지·주제·제목·함의·빈칸·요약·내용일치·연결어…)만 선지순서를 스왑해 정답위치를 최소빈도 자리로 이동, 동일위치 3연속 차단.
+  //   위치표식형(어법ⓐ~ⓔ·순서·삽입·무관·배열)은 정답이 지문구조에 고정 → 제외. 설명은 내용 인용이라 위치이동에 안전(방어적으로 '정답 ①~⑤'만 갱신).
+  function isShuffleableQ(q) {
+    if (!q || !Array.isArray(q.choices) || q.choices.length < 4 || !(q.answer >= 1)) return false;
+    if (q.choices.some(function (c) { return /^\s*[ⓐ-ⓔ①-⑤]\s*$/.test(String(c)); })) return false;   // 밑줄기호 선지
+    if (/\([A-C]\)\s*[-–]/.test(String(q.choices[0]))) return false;   // (A)-(B)-(C) 배열형
+    return true;
+  }
+  function rebalanceAnswers(list) {
+    var CN = ["①", "②", "③", "④", "⑤"], pos = {}, p1 = 0, p2 = 0;
+    for (var i = 0; i < list.length; i++) {
+      var q = list[i];
+      if (!q || !(q.answer >= 1)) { p2 = p1; p1 = 0; continue; }
+      if (!isShuffleableQ(q)) { pos[q.answer] = (pos[q.answer] || 0) + 1; p2 = p1; p1 = q.answer; continue; }
+      var n = q.choices.length, best = q.answer, bestS = Infinity;
+      for (var p = 1; p <= n; p++) {
+        if (p1 === p && p2 === p) continue;   // 동일위치 3연속 차단
+        var s = (pos[p] || 0); if (s < bestS) { bestS = s; best = p; }
+      }
+      if (best !== q.answer) {
+        var old = q.answer, tmp = q.choices[old - 1]; q.choices[old - 1] = q.choices[best - 1]; q.choices[best - 1] = tmp;
+        if (q.explanation && old <= 5 && best <= 5) q.explanation = String(q.explanation).replace("정답 " + CN[old - 1], "정답 " + CN[best - 1]);
+        q.answer = best;
+      }
+      pos[q.answer] = (pos[q.answer] || 0) + 1; p2 = p1; p1 = q.answer;
+    }
+    return list;
+  }
   async function generateExam(passage, types, opts) {
     opts = opts || {}; var onP = opts.onProgress, onT = opts.onType || function () {}, USE = null; USE_ENSEMBLE = !!opts.ensemble;
     log(onP, "■ 1단계: 자료 수집반 가동(전 API)…");
@@ -1832,6 +1861,7 @@
       await work();
     }
     var out = results.filter(Boolean);
+    if (out.length >= 3) { rebalanceAnswers(out); log(onP, "   ↳ 정답위치 균등 분산(조립단계) 적용"); }   // Haladyna: 위치편향 제거
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
   }
@@ -2126,6 +2156,7 @@
     teacherCount: teacherCount, sampleTeachers: sampleTeachers, makeTeacher: makeTeacher, buildExplanation: buildExplanation,
     brainStructure: brainStructure, regionOf: regionOf,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
-    buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank
+    buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank,
+    rebalanceAnswers: rebalanceAnswers
   };
 })();
