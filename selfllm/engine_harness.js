@@ -25,8 +25,9 @@ if (!T) { console.error("HARNESS_ERR APITEAM 미노출"); process.exit(1); }
   try { await T.loadTypeDB("knowledge/types_v2.json"); } catch (e) { console.error("typeDB 로드 실패:", e.message); }
   var type = process.argv[2] || "전체문장배열";
   var pgFile = process.argv[3] || path.join(__dirname, "test_passage.txt");
+  var level = process.argv[4] || "";   // 하/중/상/킬러 — 난이도 규칙 주입 검증용
   var pg = fs.readFileSync(pgFile, "utf8").trim();
   var t0 = Date.now();
-  var q = await T.generateOne(pg, type, {});
+  var q = await T.generateOne(pg, type, level ? { level: level } : {});
   console.log(JSON.stringify({ ms: Date.now() - t0, q: q }, null, 1));
 })().catch(function (e) { console.error("HARNESS_ERR", (e && e.stack || e).toString().slice(0, 400)); process.exit(1); });

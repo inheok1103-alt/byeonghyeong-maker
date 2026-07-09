@@ -861,8 +861,34 @@
     }
     return null;
   }
-  // 서술형
-  function essayResult(type, instruction, answer) { return { type: type, instruction: instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (answer || "") }; }
+  // 서술형 — 채점 루브릭 코드생성(내신은 '쓰기·검수 게임': 조건 미충족·철자·어형 하나로 등급이 갈림).
+  // 근거: special_exams_longitudinal.md(조건 슬롯화·0점트리거) + exam_core_v1 subjective_scoring(내용40·형식35·어법철자25).
+  function essayRubric(type, instruction, answer) {
+    var I = String(instruction || ""), A = String(answer || "");
+    // 영작형 판정: 유형 라벨이 generic("서술형")일 수 있으므로 모범답안이 영어 위주인지로 견고하게 판단
+    var eng = (A.match(/[A-Za-z]/g) || []).length, kor = (A.match(/[가-힣]/g) || []).length;
+    var isWrite = eng > kor || /영작|영어로|write|in English/i.test(I);
+    var cond = [], zero = ["무응답·백지", "주제 완전 이탈(지문 무관)"];
+    // 조건 슬롯 추출 — 발문에서 실제 제약을 감지해 채점 조건으로 승격
+    var mw = I.match(/(\d+)\s*[~-]\s*(\d+)\s*단어/) || I.match(/(\d+)\s*단어\s*(?:이내|내외|내로|이상)?/);
+    if (mw) { cond.push("단어 수 " + mw[0] + " 충족(WORDLIMIT)"); zero.push("단어 수 조건 심각 위반"); }
+    var req = (I.match(/["“]([A-Za-z][A-Za-z\- ]{1,24})["”]/g) || []).map(function (s) { return s.replace(/["“”]/g, "").trim(); });
+    if (req.length && /필수|포함|모두|주어진/.test(I)) { cond.push("필수어 사용: " + req.slice(0, 6).join(", ") + " (ALLWORDS)"); zero.push("필수어 전면 미사용"); }
+    if (/어형|형태\s*변(형|화)|바꿔|바꾸어|알맞은 형태/.test(I)) cond.push("제시어 어형 변형 정확(TRANSFORM: 시제·수·태·품사)");
+    if (/그대로|어형은? 그대로|변형하지/.test(I)) cond.push("제시어 어형 그대로 사용(고정)");
+    if (/금지|쓰지 ?마|사용하지 ?마|바꿔 ?쓰|패러프레이즈/.test(I)) cond.push("본문 표현 그대로 베끼기 금지 / 패러프레이즈 강제(PARAPHRASE)");
+    if (/관계(사|절)|분사|가정법|수동|능동|도치|구조|구문/.test(I)) cond.push("지정 구문 사용(STRUCTURE)");
+    if (/틀린|어법상 오류|오류를? 찾|고쳐|바르게 고/.test(I)) { cond.push("지정 오류 정확히 색출·수정(개수 일치)"); zero.push("오류 미발견 또는 오수정"); }
+    if (/첫 ?글자|initial|주어진 철자/.test(I)) cond.push("제시 철자로 시작하는 정답어 산출");
+    var body = isWrite
+      ? [ "① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영",
+          "② 조건·형식 35% — " + (cond.length ? cond.join(" / ") : "제시 조건 충족·형식 준수"),
+          "③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점, 누적 시 형식점 소실)" ]
+      : [ "① 정확성 60% — 우리말 뜻·핵심 정보 정확", "② 완결성 40% — 조건 충족·표현 자연스러움" ];
+    var minus = isWrite ? "감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2." : "감점: 오역·누락 부분점.";
+    return "\n[채점 루브릭] " + body.join(" · ") + "\n[0점 트리거] " + zero.join(" / ") + "\n" + minus;
+  }
+  function essayResult(type, instruction, answer) { return { type: type, instruction: instruction, passage: "", choices: [], answer: 0, explanation: "[모범답안] " + (answer || "") + essayRubric(type, instruction, answer) }; }
   // 서술형 파싱: [발문]…[정답] 구획(따옴표·목록·여러 줄에 안 깨짐) → 발문:/정답: 라벨 → JSON 순으로 견고하게
   function parseEssayText(raw) {
     raw = String(raw || "").replace(/```[a-z]*\n?/gi, "").trim();
