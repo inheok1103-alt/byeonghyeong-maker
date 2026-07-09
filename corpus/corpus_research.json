@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-09T01:15:07.591Z",
+ "updated": "2026-07-09T05:14:03.872Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
- "count": 1,
+ "count": 2,
  "notes": [
+  {
+   "ts": "2026-07-09T05:13:40.054Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'be동사 + 형용사' 구문에서 동사 생략 오류가 빈발하며, 특히 'could sustain and active'처럼 동사+형용사 병렬 구조에서 동사 생략이 자주 발생한다. 또한 'explain about that'처럼 전치사+접속사 혼용 오류가 'explain what'으로 수정되는 패턴이 관찰된다.",
+   "rule": "'be동사 + 형용사' 구문에서 동사 생략 오류를 방지하기 위해, 'could/should/will + 동사원형 + and + 형용사' 구조에서는 반드시 동사를 병렬 형태로 삽입하여 'could sustain and be active'와 같이 완전한 동사구로 작성하도록 문항을 설계한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-08T04:00:19.728Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
