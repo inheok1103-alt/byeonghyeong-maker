@@ -83,8 +83,11 @@
       var ov = Math.min(ugOverlap(ans, q.choices[i]), ugOverlap(q.choices[i], ans));   // 양방향 최소 = 서로 근접해야 높음(주제어 편중 완화)
       if (ov > maxOv) { maxOv = ov; worst = i; }
     }
-    if (maxOv >= 0.8) return { drop: "복수정답 소지 — 오답 " + (worst + 1) + "번이 정답과 핵심어 " + Math.round(maxOv * 100) + "% 중복(근접 패러프레이즈)" };
-    if (maxOv >= 0.62) return { flag: "정답-오답 근접(" + Math.round(maxOv * 100) + "%) — 복수정답 재검 권고" };
+    // 짧은 명사구형(제목·주제·목적)은 핵심어(고유명사)를 정상 공유 → 임계 완화(오탐 방지). 완결문형은 엄격.
+    var shortNP = /제목|주제|목적/.test(String(q.type || "")) || (q.choices.every(function (c) { return !/[가-힣]/.test(String(c)) && ugToks(c).length <= 8; }));
+    var dropT = shortNP ? 0.85 : 0.8, flagT = shortNP ? 0.74 : 0.62;
+    if (maxOv >= dropT) return { drop: "복수정답 소지 — 오답 " + (worst + 1) + "번이 정답과 핵심어 " + Math.round(maxOv * 100) + "% 중복(근접 패러프레이즈)" };
+    if (maxOv >= flagT) return { flag: "정답-오답 근접(" + Math.round(maxOv * 100) + "%) — 복수정답 재검 권고" };
     return null;
   }
 

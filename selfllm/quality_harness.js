@@ -28,10 +28,11 @@ function auditMCQ(q, pg, type){
   var vb = vbStrict ? verbatim(ans, pg) : false;
   var anchored = korCh ? -1 : dis.filter(function(d){return overlap(d, pg) > 0;}).length;
   var anchorOk = korCh ? true : anchored >= dis.length-1;
+  var uniqT = /제목|주제|목적/.test(String(type||"")) ? 0.74 : 0.6;   // 짧은 명사구형은 핵심어 공유 정상 → 임계 완화
   return {
     cue: f.cue, cv: f.cv, rank: f.answerRank,
     uniq: +uniq.toFixed(2), verbatim: vb, anchored: korCh ? "n/a" : (anchored+"/"+dis.length),
-    pass: (!f.cue) && uniq < 0.6 && !vb && anchorOk
+    pass: (!f.cue) && uniq < uniqT && !vb && anchorOk
   };
 }
 function auditEssay(q){
