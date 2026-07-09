@@ -147,6 +147,7 @@
           var r = await guardItem(items[i], passage, T, opts.onProgress);
           if (r.item) out.push(r.item);
         }
+        out.forEach(function (it) { if (T.stampWork && (it.answer !== undefined)) { delete it._work; T.stampWork(it); } });   // 가드가 정답 교정한 뒤 워크북 재스탬프(reveal 정답 desync 방지)
         try { if (opts.onProgress) opts.onProgress("🛡 키가드 요약 — 점검 " + STATS.checked + " · 코드교정 " + STATS.codeFixed + " · 솔버교정 " + STATS.solverFixed + " · 플래그 " + STATS.flagged + " · 폐기 " + STATS.dropped); } catch (_) {}
         return out;
       } finally { resume(); }
@@ -156,6 +157,7 @@
       try {
         var q = await oG1.call(T, passage, type, opts);
         var r = await guardItem(q, passage, T, opts.onProgress);
+        if (r.item && T.stampWork) { delete r.item._work; T.stampWork(r.item); }   // 가드 정답교정 후 워크북 재스탬프
         return r.item;
       } finally { resume(); }
     };

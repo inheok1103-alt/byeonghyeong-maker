@@ -819,8 +819,8 @@
     return { type: "요약문AB", instruction: "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: passage + "\n\n─────────\n[요약문]  " + summ, choices: pool, answer: apos, explanation: "(A) " + o.A + " / (B) " + o.B + " 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.", _audit: "정답 코드생성됨((A)(B) 쌍 코드 셔플)" };
   }
   // 내용불일치/일치
-  function factResult(wantMatch, st, ans, mode) {
-    return { type: wantMatch ? "내용일치" : "내용불일치", instruction: "다음 글의 내용과 " + (wantMatch ? "일치하는" : "일치하지 않는") + " 것은?", passage: "", choices: st, answer: ans, explanation: "정답 진술만 글과 " + (wantMatch ? "일치" : "모순") + "한다.", _audit: (mode === "검증") ? "정답 코드검증됨(모순 진술 정확히 1개 확인)" : "⚠ 정답 미검증 — 복수정답 소지, 재확인 필요" };
+  function factResult(wantMatch, st, ans, mode, passage) {
+    return { type: wantMatch ? "내용일치" : "내용불일치", instruction: "다음 글의 내용과 " + (wantMatch ? "일치하는" : "일치하지 않는") + " 것은?", passage: String(passage || ""), choices: st, answer: ans, explanation: "정답 진술만 글과 " + (wantMatch ? "일치" : "모순") + "한다.", _audit: (mode === "검증") ? "정답 코드검증됨(모순 진술 정확히 1개 확인)" : "⚠ 정답 미검증 — 복수정답 소지, 재확인 필요" };
   }
   async function buildFactCheck(passage, wantMatch) {
     // 통제 생성: ①지문에서 참인 사실진술 5개 추출 → ②코드가 정답 1개 지정 → ③나머지를 '세부 한 곳 뒤집기'로 거짓화 → ④검증
@@ -843,8 +843,8 @@
       var v = await llmJSON([{ role: "system", content: "사실검증관. JSON만." }, { role: "user", content: "지문:\n" + passage + "\n\n진술:\n" + st.map(function (s, i2) { return (i2 + 1) + ". " + s; }).join("\n") + "\n\n각 진술을 지문과 대조. JSON: {\"support\":[일치 번호],\"contradict\":[모순 번호]}. JSON만." }], { temperature: 0.12, timeout: 50000 });
       var contra = (v && Array.isArray(v.contradict)) ? v.contradict.map(Number).filter(function (x) { return x >= 1 && x <= 5; }) : [];
       var supp = (v && Array.isArray(v.support)) ? v.support.map(Number).filter(function (x) { return x >= 1 && x <= 5; }) : [];
-      if (wantMatch && supp.length === 1 && supp[0] === ansPos) return factResult(true, st, ansPos, "검증");
-      if (!wantMatch && contra.length === 1 && contra[0] === ansPos) return factResult(false, st, ansPos, "검증");
+      if (wantMatch && supp.length === 1 && supp[0] === ansPos) return factResult(true, st, ansPos, "검증", passage);
+      if (!wantMatch && contra.length === 1 && contra[0] === ansPos) return factResult(false, st, ansPos, "검증", passage);
       // 검증 불일치 → 재시도(다음 attempt)
     }
     return null;   // 검증 실패 시 미검증 문항 미납품(상위 재시도/스킵)
@@ -2016,6 +2016,7 @@
     }
     var out = results.filter(Boolean);
     if (out.length >= 3) { rebalanceAnswers(out); log(onP, "   ↳ 정답위치 균등 분산(조립단계) 적용"); }   // Haladyna: 위치편향 제거
+    out.forEach(function (it) { delete it._work; stampWork(it); });   // 정답 재배치 후 워크북 재스탬프(reveal 정답번호 desync 방지)
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
   }
@@ -2311,6 +2312,6 @@
     brainStructure: brainStructure, regionOf: regionOf,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank,
-    rebalanceAnswers: rebalanceAnswers
+    rebalanceAnswers: rebalanceAnswers, stampWork: stampWork
   };
 })();
