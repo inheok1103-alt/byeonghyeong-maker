@@ -602,7 +602,7 @@
   // ===== 선지 제작 팀: 5개 선지를 최종 검수·정리(형태통일·정답유일·어법·어구화) =====
   async function reviewOptions(answer, dis, ctx) {
     ctx = ctx || {};
-    var sys = "너는 대한민국 수능 영어 '선지(보기) 검수관'이다. 5개 선택지를 최종 점검·정리한다: ①정답은 글을 정확히 반영하는 '단 하나' ②오답 4개는 서로 및 정답과 의미가 겹치지 않게, 각 오답에 오답 DNA(부분참·전도·과잉·축소·초점이동·태도왜곡·조건누락 중 1)를 부여해 매력적으로(본문 단어 일부 재활용) ③5개의 길이·문법 형태를 서로 통일(정답만 길거나 구체적 금지) ④어법 오류 수정 ⑤빈칸/요약형이면 완성 문장이 아니라 끼워지는 '어구/절'로 ⑥정답은 본문 표현을 그대로 베끼지 말고 패러프레이즈 ⑦메타 표현(본문은/글은/사전적/문자적/원문보다) 금지. JSON만.";
+    var sys = "너는 대한민국 수능 영어 '선지(보기) 검수관'이다. 5개 선택지를 최종 점검·정리한다: ①정답은 글을 정확히 반영하는 '단 하나' ②★오답 4개는 정답과 '핵심 주장이 겹치지 않아야' 한다 — 정답의 근접 패러프레이즈·유의어 반복 금지(복수정답 방지). 각 오답에 서로 다른 오답 DNA(부분참·전도·과잉·축소·초점이동·태도왜곡·조건누락 중 1) ③오답은 정답과 반대이거나 지문 일부만 담거나 지문에 없는 내용이어야 하되, 지문 소재·어휘를 재활용해 그럴듯하게(엉뚱한 딴 분야 금지) ④5개의 길이·문법 형태 통일(정답만 길거나 구체적 금지) ⑤빈칸/요약형이면 완성 문장이 아니라 끼워지는 '어구/절'로 ⑥정답은 본문 표현을 그대로 베끼지 말고 패러프레이즈 ⑦메타 표현(본문은/글은/사전적/문자적/원문보다) 금지. JSON만.";
     var user = "유형: " + (ctx.type || "") + "\n정답 선지: \"" + answer + "\"\n오답 초안: " + JSON.stringify(dis || []) + (ctx.main ? ("\n글 핵심: " + ctx.main) : "") + (ctx.slot ? ("\n빈칸 프레임(모든 선지는 이 '____' 자리에 문법적으로 그대로 들어가야 함, 완성문장 금지): " + ctx.slot) : "") + "\n위 기준대로 5개 선지를 다듬어 JSON으로: {\"choices\":[\"5개 문자열\"],\"answer\":정답의 1~5 위치(정수)}. JSON만.";
     var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { temperature: 0.4, timeout: 60000 });
     if (r && Array.isArray(r.choices) && r.choices.length >= 5) {
@@ -629,8 +629,8 @@
     state._trace = trace; return state;
   }
   function infMeta(type) {
-    return { instr: { "주제": "다음 글의 주제로 가장 적절한 것은?", "제목": "다음 글의 제목으로 가장 적절한 것은?", "요지": "다음 글의 요지로 가장 적절한 것은?" }[type] || "다음 글의 주제로 가장 적절한 것은?",
-      kind: { "주제": "영어 명사구", "제목": "영어 제목구", "요지": "한국어 한 문장" }[type] || "영어 명사구" };
+    return { instr: { "주제": "다음 글의 주제로 가장 적절한 것은?", "제목": "다음 글의 제목으로 가장 적절한 것은?", "요지": "다음 글의 요지로 가장 적절한 것은?", "필자주장": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?", "목적": "다음 글의 목적으로 가장 적절한 것은?" }[type] || "다음 글의 주제로 가장 적절한 것은?",
+      kind: { "주제": "영어 명사구", "제목": "영어 제목구", "요지": "한국어 한 문장", "필자주장": "한국어 한 문장('~해야 한다' 당위형)", "목적": "한국어 한 문장('~하려고' 화행형)" }[type] || "영어 명사구" };
   }
   // 추론형 파이프라인: 각 라인이 명시적 API에 연결됨
   function inferenceSteps(passage, type, ctx, fast) {
@@ -664,7 +664,7 @@
     log(onP, '   ↳ 정답 초안: "' + String(st.answer || "").slice(0, 64) + '" · 오답 ' + (st.dis || []).length + '개 설계');
     var meta = infMeta(type);
     return { type: type, instruction: meta.instr, passage: "", choices: st.choices, answer: st.answerIdx,
-      explanation: "글의 핵심 논지는 '" + st.main + "'이며 정답" + (st.ko ? (" (" + st.ko + ")") : "") + "이 이를 반영한다.",
+      explanation: "글의 핵심 논지는 '" + st.main + "'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 지문에 없는 내용(무관)이라 오답이다.",
       _audit: (st.gi && st.gi.length) ? ("어법 의심 " + st.gi.length + "건") : "검증 통과", _trace: st._trace };
   }
   // 빈칸: ① 핵심 논지 자리에 어구 비우기(도입부 회피) → ② 프레임 맞춤 어구형 정답 → ③ 역할별 오답
@@ -729,6 +729,10 @@
     var o = await llmJSON([{ role: "system", content: "지칭추론 출제자. JSON만." }, { role: "user", content: "다음 글에 같은 성(性)의 인물/대상이 둘 이상 있고 대명사(he/his/him·she/her·they/them·it/its)가 여러 번 나오면, 대명사가 실제로 등장한 부분 5곳을 '원문 그대로의 짧은 구절(대명사 포함, 등장순, 각 2~6단어)'로 고르되 4곳은 같은 대상 A를, 1곳만 다른 대상 B를 가리키게 하라. 지칭 대상이 하나뿐이거나 5곳을 못 만들면 반드시 {\"ok\":false}. JSON: {\"ok\":true,\"phrases\":[\"대명사 포함 짧은 구절 5개(원문 그대로, 등장순)\"],\"oddIndex\":1~5,\"A\":\"공통 지칭 대상(한국어)\",\"B\":\"다른 지칭 대상(한국어)\"} 또는 {\"ok\":false}. JSON만.\n\n" + passage }], { temperature: 0.4, timeout: 55000 });
     if (!o || o.ok === false || !Array.isArray(o.phrases) || o.phrases.length < 5) return null;
     var oi = parseInt(o.oddIndex, 10); if (!(oi >= 1 && oi <= 5)) return null;
+    if (!o.A || !o.B || normTok(o.A) === normTok(o.B)) return null;                    // 두 지칭 대상이 실제로 달라야 함
+    // 검증: 지문에 같은 성 인물/대상이 2명 이상이고 지목한 홀수 대명사가 정말 다른 대상을 가리키는지 독립 확인(단일 인물 지문에서 날조 차단)
+    var vr = await llmJSON([{ role: "system", content: "지칭 검증관. JSON만." }, { role: "user", content: "지문:\n" + passage + "\n\n이 지문에 같은 성(性)의 서로 다른 인물/대상이 2개 이상 있고, 대명사가 그 둘을 각각 가리키는가? 아래 5개 구절 중 " + oi + "번만 나머지와 다른 대상을 가리키는가? 구절:\n" + o.phrases.slice(0, 5).map(function (p, i) { return (i + 1) + ". " + p; }).join("\n") + "\n\nJSON: {\"twoRefs\":true/false,\"oddIsDifferent\":true/false}. JSON만." }], { temperature: 0.1, timeout: 45000 });
+    if (!vr || vr.twoRefs !== true || vr.oddIsDifferent !== true) return null;         // 부적합 지문이면 null(폴백/날조 금지)
     var mk = markWords(passage, o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); }), -1, "");   // 치환 없이 밑줄만
     if (!mk || mk.count < 5) return null;
     return { type: "지칭추론", instruction: "밑줄 친 부분 중, 가리키는 대상이 나머지 넷과 다른 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: oi, explanation: "정답 " + CIRC5(oi) + "는 '" + (o.B || "다른 대상") + "'를 가리키고, 나머지 넷은 '" + (o.A || "주 대상") + "'를 가리킨다.", _audit: "밑줄·정답 코드검증(대명사 구절 원문 매칭)" };
@@ -758,12 +762,13 @@
       var o = await llmJSON([{ role: "system", content: "내용일치 출제자. JSON만." }, { role: "user", content: "다음 글의 세부 정보(수치·시간·주체·행위·조건)에 관한 한국어 진술 5개를 만들어라. " + (wantMatch ? "정확히 1개만 지문 문장을 그대로 바꿔 쓴 '참', 나머지 4개는 세부 한 곳을 뒤집은 '거짓'." : "4개는 지문 문장을 그대로 바꿔 쓴 '참', 정확히 1개만 세부 한 곳(주체·시점·수치·긍부정)을 뒤집은 '거짓'.") + " 각 진술은 지문에 실제로 언급된 내용에만 근거하고, 지문에 없는 정보는 쓰지 마라. 진술끼리 서로 겹치거나 모순되지 않게. JSON: {\"statements\":[\"진술 5개\"],\"answer\":정답번호1~5}.\n\n" + passage }], { temperature: attempt ? 0.55 : 0.4, timeout: 60000 });
       if (!o || !Array.isArray(o.statements) || o.statements.length < 5) continue;
       var st = o.statements.slice(0, 5); last = { st: st, answer: parseInt(o.answer, 10) };
-      // 검증: 각 진술이 지문과 모순되는지 별도 LLM으로 판정 → 정답을 코드로 도출(복수정답 차단)
-      var v = await llmJSON([{ role: "system", content: "너는 냉정한 사실검증관이다. 각 진술이 '지문 내용'과 논리적으로 모순되는지만 본다. JSON만." }, { role: "user", content: "지문:\n" + passage + "\n\n진술:\n" + st.map(function (s, i) { return (i + 1) + ". " + s; }).join("\n") + "\n\n지문과 '모순되는(불일치)' 진술 번호만 배열로. JSON: {\"contradict\":[번호]}. JSON만." }], { temperature: 0.15, timeout: 55000 });
+      // 검증: 각 진술을 지문과 대조해 일치(support)/모순(contradict)을 직접 판정 → 정답을 코드로 도출(복수정답 차단)
+      var v = await llmJSON([{ role: "system", content: "너는 냉정한 사실검증관이다. 각 진술을 '지문 내용'과 대조해 일치(지문이 명시적으로 뒷받침)·모순(지문과 어긋남)·불명(지문에 근거 없음)으로 분류한다. JSON만." }, { role: "user", content: "지문:\n" + passage + "\n\n진술:\n" + st.map(function (s, i) { return (i + 1) + ". " + s; }).join("\n") + "\n\nJSON: {\"support\":[지문과 일치하는 번호],\"contradict\":[지문과 모순되는 번호]}. 불명은 어느 배열에도 넣지 마라. JSON만." }], { temperature: 0.15, timeout: 55000 });
       var contra = (v && Array.isArray(v.contradict)) ? v.contradict.map(function (x) { return parseInt(x, 10); }).filter(function (x) { return x >= 1 && x <= 5; }) : null;
-      if (contra) {
-        if (!wantMatch && contra.length === 1) return factResult(false, st, contra[0], "검증");                 // 불일치 1개
-        if (wantMatch) { var m = [1, 2, 3, 4, 5].filter(function (n) { return contra.indexOf(n) < 0; }); if (m.length === 1) return factResult(true, st, m[0], "검증"); }  // 일치(=비모순) 1개
+      var supp = (v && Array.isArray(v.support)) ? v.support.map(function (x) { return parseInt(x, 10); }).filter(function (x) { return x >= 1 && x <= 5; }) : null;
+      if (contra || supp) {
+        if (!wantMatch && contra && contra.length === 1) return factResult(false, st, contra[0], "검증");         // 불일치: 모순 정확히 1개
+        if (wantMatch && supp && supp.length === 1) return factResult(true, st, supp[0], "검증");                 // 일치: 일치 정확히 1개(직접 판정 — '4개 모순' 요구 완화)
       }
       // 복수정답/검증불가 → 재시도
     }
@@ -819,9 +824,12 @@
       if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
       var mk = markWords(passage, phr, wi - 1, String(o.error).trim());   // 코드가 밑줄+오류주입
       if (!mk || mk.count < 5) continue;
+      var g0 = []; try { g0 = await grammar(passage.replace(/<[^>]+>/g, " ")); } catch (_) {}
       var g = []; try { g = await grammar(String(mk.text).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); } catch (_) {}
+      // 오류주입 검증: 주입 후 문법 오류가 원문보다 늘지 않으면(무오류 주입) 재시도 — '틀린 곳이 없는' 문항 방지
+      if (g.length <= g0.length && attempt < 2) continue;
       var verified = g.length ? (" (LanguageTool 확인: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + ")") : "";
-      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 모두 코드처리)" };
+      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)" };
     }
     return null;
   }
@@ -1840,7 +1848,8 @@
     var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 2600); setLevelRule(type, opts.level);
     var q = null; for (var _try = 0; _try < 3 && !q; _try++) { try { q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type); } catch (_e) { q = null; } }
     // 태그 위생: LLM이 &lt;u&gt;로 이스케이프해 뱉으면 화면에 <u>가 글자로 노출됨 → 실태그로 복원 + u/b 외 태그 제거
-    if (q) { var _tg = function (s) { return String(s).replace(/&lt;(\/?)(u|b)&gt;/gi, "<$1$2>").replace(/<(?!\/?[ub]>)\/?[A-Za-z][^<>]{0,38}>/g, ""); };   // 태그꼴만 제거 — 'a < b and c > d' 같은 수식 오탐 방지
+    if (q) { var _tg = function (s) { return String(s).replace(/&lt;(\/?)(u|b)&gt;/gi, "<$1$2>").replace(/<(?!\/?[ub]>)\/?[A-Za-z][^<>]{0,38}>/g, "")   // 태그꼴만 제거 — 'a < b and c > d' 같은 수식 오탐 방지
+        .replace(/[�぀-ヿ㐀-䶿一-鿿]+/g, "").replace(/  +/g, " "); };   // 번역기 혼입 한자·가나·깨진문자 제거(卓越·这样·力·を 등)
       ["passage", "instruction", "explanation", "answerText"].forEach(function (k) { if (q[k]) q[k] = _tg(q[k]); });
       if (q.choices && q.choices.length) q.choices = q.choices.map(_tg);
       // 서술형 단어수는 모범답안 실측 기준(Ray) — 발문의 "N단어"가 실측과 2 이상 어긋나면 실측으로 교정
