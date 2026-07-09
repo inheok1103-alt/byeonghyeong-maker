@@ -800,7 +800,14 @@
     return distractors.filter(function (_, i) { return eq.indexOf(i + 1) < 0; });
   }
   async function buildImplication(passage) {
-    var o = await llmJSON([{ role: "system", content: "함의추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 함축 의미가 풍부한 '원문 구절' 하나와 그 문맥상 의미를 정하라. phrase는 반드시 지문에 있는 문자열 그대로. JSON: {\"phrase\":\"원문 그대로의 구절\",\"meaning\":\"그 함축 의미를 풀어쓴 영어 한 문장\"}.\n\n" + passage }], { temperature: 0.4, timeout: 55000 });
+    // 함의는 '비유·함축이 담긴 구절'을 고르고 그 '추상적 시사점'을 답으로 — 단순 사실문의 재진술은 함의가 아님.
+    var o = null;
+    for (var iatt = 0; iatt < 3; iatt++) {
+      var oo = await llmJSON([{ role: "system", content: "함의추론 출제자. JSON만." }, { role: "user", content: "다음 글에서 '함축 의미가 풍부한(은유·상징·역설·일반화가 담긴)' 원문 구절 하나를 고르고, 그 구절이 글 전체 맥락에서 '함축하는 더 깊은 의미'를 영어 한 문장으로 풀어써라.\n★단순 사실 서술문(예: 'This system allows a single scout to...')은 고르지 마라 — 비유·상징·함축이 담긴 구절만.\n★meaning은 구절을 단어만 바꾼 '재진술'이 아니라, 그것이 시사하는 '추상적 의미'여야 한다(구절의 어휘를 그대로 반복 금지).\nphrase는 반드시 지문에 있는 문자열 그대로. JSON: {\"phrase\":\"원문 그대로의 구절\",\"meaning\":\"그 함축을 풀어쓴 영어 한 문장\"}.\n\n" + passage }], { temperature: iatt ? 0.6 : 0.4, timeout: 55000 });
+      if (oo && oo.meaning && oo.phrase) {
+        if (!blankVerbatim(oo.meaning, oo.phrase) || iatt === 2) { o = oo; break; }   // meaning이 구절의 재진술(어휘 80%↑ 반복)이면 재시도
+      }
+    }
     if (!o || !o.meaning) return null;
     var dis = await implicationDistractors(o.meaning, o.phrase);
     if (dis.length < 3) dis = dis.concat(await makeDistractors(o.meaning, "영어 한 문장", "밑줄 구절 '" + (o.phrase || "") + "'의 함의"));
