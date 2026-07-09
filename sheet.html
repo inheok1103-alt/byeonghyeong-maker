@@ -22,6 +22,11 @@ body{background:var(--dbg);color:var(--dink);font-family:"Pretendard","Noto Sans
 .top .sub{font-size:10.5px;color:var(--dsoft);letter-spacing:.1em;text-transform:uppercase}
 .top a{margin-left:auto;font-size:12px;color:var(--dsoft);text-decoration:none;border:1px solid var(--dline);border-radius:9px;padding:6px 11px}
 .top a:hover{color:var(--gold);border-color:var(--gold)}
+.raynav{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}
+.raynav a{flex:1 1 auto;min-width:76px;text-align:center;text-decoration:none;font-size:13.5px;font-weight:700;color:#9aa1b2;background:#1c202b;border:1px solid #2a2f3d;border-radius:11px;padding:10px 8px;transition:.12s;white-space:nowrap}
+.raynav a:hover{border-color:#C8A96A;color:#EAD199}
+.raynav a.active{background:linear-gradient(180deg,#EAD199,#C8A96A);color:#1a1508;border-color:#C8A96A;box-shadow:0 2px 10px rgba(200,169,106,.25)}
+.raynav a small{display:block;font-size:9.5px;font-weight:500;opacity:.72;margin-top:1px}
 .card{background:var(--dcard);border:1px solid var(--dline);border-radius:14px;padding:16px;margin:12px 0}
 textarea{width:100%;min-height:130px;background:#0d0f16;border:1px solid var(--dline);border-radius:11px;color:var(--dink);font-size:.95rem;line-height:1.6;padding:12px;resize:vertical;font-family:inherit}
 textarea:focus{outline:2px solid rgba(200,169,106,.35);border-color:var(--gold)}
@@ -101,9 +106,13 @@ table.vocab td .t{color:var(--green)}
   <div class="top noprint">
     <span class="seal">R</span>
     <span><b>Ray <i>English</i></b><div class="sub">Analysis Sheet Maker</div></span>
-    <a href="exam.html">📝 출제(최종판)</a>
-    <a href="ai_maker.html">🧪 실험실</a>
   </div>
+  <nav class="raynav noprint">
+    <a href="exam.html">📝 출제<small>문제 만들기</small></a>
+    <a href="sheet.html" class="active">📊 분석지<small>지문 분석</small></a>
+    <a href="ai_maker.html">🧪 실험실<small>전체 기능</small></a>
+    <a href="report.html">📱 뇌 보고<small>학습 현황</small></a>
+  </nav>
 
   <div class="card noprint">
     <div style="font-weight:800;margin-bottom:6px">① 지문 붙여넣기 <span class="note">— 붙여넣고 [분석지 생성]을 누르면 A4 가로 2쪽 정본 분석지가 만들어집니다 (색=독해 기능 6색 · 1-3-5 인지부하)</span></div>

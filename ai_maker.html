@@ -92,6 +92,11 @@ body{background:
 /* 배너 → 브랜드 헤더 */
 .banner{background:linear-gradient(160deg,#1c2030,#12141c 60%)!important;border:1px solid var(--rg-line);box-shadow:0 12px 34px rgba(0,0,0,.4)!important}
 .banner:after{opacity:.05!important}
+.raynav{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.raynav a{flex:1 1 auto;min-width:76px;text-align:center;text-decoration:none;font-size:13.5px;font-weight:700;color:#9aa1b2;background:#1c202b;border:1px solid #2a2f3d;border-radius:11px;padding:10px 8px;transition:.12s;white-space:nowrap}
+.raynav a:hover{border-color:#C8A96A;color:#EAD199}
+.raynav a.active{background:linear-gradient(180deg,#EAD199,#C8A96A);color:#1a1508;border-color:#C8A96A;box-shadow:0 2px 10px rgba(200,169,106,.25)}
+.raynav a small{display:block;font-size:9.5px;font-weight:500;opacity:.72;margin-top:1px}
 .brandmark{display:flex;align-items:center;gap:13px}
 .brandmark .seal{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex:0 0 auto;font-family:Georgia,serif;font-size:22px;font-weight:700;color:var(--rg-gold);background:linear-gradient(145deg,#2a2d3a,#15171f);border:1px solid var(--rg-line2);box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 6px 16px rgba(0,0,0,.4)}
 .brandmark .wm{display:flex;flex-direction:column;line-height:1.15}
@@ -264,11 +269,16 @@ body.simple .expert{display:none!important}
 </head>
 <body>
 <div class="wrap">
+  <nav class="raynav noprint">
+    <a href="exam.html">📝 출제<small>문제 만들기</small></a>
+    <a href="sheet.html">📊 분석지<small>지문 분석</small></a>
+    <a href="ai_maker.html" class="active">🧪 실험실<small>전체 기능</small></a>
+    <a href="report.html">📱 뇌 보고<small>학습 현황</small></a>
+  </nav>
   <div class="banner">
     <div class="brandmark"><span class="seal">R</span><span class="wm"><span class="wm1">Ray <b>English</b></span><span class="wm2">Exam Studio · 출제 스튜디오</span></span></div>
     <div class="sub">지문을 붙여넣고 유형만 고르면, 검수까지 마친 시험지 품질의 변형문제가 나옵니다.</div>
     <button class="uimode noprint" id="uimodeBtn" onclick="toggleUIMode()">⚙ 전문가 모드</button>
-    <a class="uimode noprint" href="sheet.html" style="text-decoration:none;display:inline-block;margin-left:6px" title="지문 → A4 가로 2쪽 정본 분석지">📊 분석지</a>
     <div class="pills">
       <span class="pill" id="pillEvo">🧬 진화 Lv.1</span><span class="pill">40유형 코드검증</span><span class="pill">분석지·세트조립</span><span class="pill">무한 모드 ♾</span><span class="pill" id="pillGroq">뇌 가동 · 자가학습</span>
     </div>

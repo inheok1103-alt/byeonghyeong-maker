@@ -29,6 +29,11 @@ body{background:var(--bg);color:var(--ink);font-family:"Pretendard","Noto Sans K
 .muted{color:var(--soft);font-size:12.5px}
 .refresh{position:fixed;right:14px;bottom:14px;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1a1508;border:0;font-weight:800;border-radius:50%;width:48px;height:48px;font-size:20px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
 a.nav{color:var(--soft);font-size:12px;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 9px}
+.raynav{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 14px}
+.raynav a{flex:1 1 auto;min-width:76px;text-align:center;text-decoration:none;font-size:13.5px;font-weight:700;color:#9aa1b2;background:#1c202b;border:1px solid #2a2f3d;border-radius:11px;padding:10px 8px;transition:.12s;white-space:nowrap}
+.raynav a:hover{border-color:#C8A96A;color:#EAD199}
+.raynav a.active{background:linear-gradient(180deg,#EAD199,#C8A96A);color:#1a1508;border-color:#C8A96A;box-shadow:0 2px 10px rgba(200,169,106,.25)}
+.raynav a small{display:block;font-size:9.5px;font-weight:500;opacity:.72;margin-top:1px}
 .hist{font-size:12px;color:var(--soft);line-height:1.7}
 .err{color:var(--rose);font-size:13px}
 </style>
@@ -37,8 +42,13 @@ a.nav{color:var(--soft);font-size:12px;text-decoration:none;border:1px solid var
 <div class="top">
   <span class="seal">R</span>
   <span style="flex:1"><b>Ray <i>English</i></b> · 뇌 보고<div class="sub">24h Brain · Hourly Report</div></span>
-  <a class="nav" href="exam.html">출제 →</a>
 </div>
+<nav class="raynav">
+  <a href="exam.html">📝 출제<small>문제 만들기</small></a>
+  <a href="sheet.html">📊 분석지<small>지문 분석</small></a>
+  <a href="ai_maker.html">🧪 실험실<small>전체 기능</small></a>
+  <a href="report.html" class="active">📱 뇌 보고<small>학습 현황</small></a>
+</nav>
 <div id="app"><div class="muted">불러오는 중…</div></div>
 <button class="refresh" onclick="load()" title="새로고침">↻</button>
 <script>
