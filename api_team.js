@@ -837,8 +837,35 @@
     return null;
   }
   // 어법: LLM은 '어느 구절을 어떻게 틀리게'만 정하고, 밑줄·오류주입은 코드가 수행 → 정답위치 100% 정합
+  // 어법 범주를 오류↔정답 diff에서 결정론적으로 추론(LLM cats 라벨이 자주 틀려 오도하므로 코드가 우선).
+  function inferGramCat(err, cor) {
+    var e = " " + String(err).toLowerCase() + " ", c = " " + String(cor).toLowerCase() + " ";
+    var REL = /\b(which|that|who|whom|whose|where|when|why|what)\b/;
+    if (REL.test(e) !== REL.test(c) || (REL.test(e) && REL.test(c) && (e.match(REL) || [])[0] !== (c.match(REL) || [])[0])) return "관계사";
+    var ew = e.trim().split(/\s+/), cw = c.trim().split(/\s+/), d = [];
+    for (var i = 0; i < Math.max(ew.length, cw.length); i++) if ((ew[i] || "") !== (cw[i] || "")) d.push((ew[i] || "") + "→" + (cw[i] || ""));
+    var ds = d.join(" ");
+    if ((/\bto\b|→to\b|\bto→|ing→|→ing\b/.test(ds)) && !/\b(is|are|was|were|been|being)\b/.test(ds)) return "준동사";   // to부정사·동명사(to/ing 관여)
+    if (/\b(been|being|be)\b|\bby\b|\w+ed→\w+ing|\w+ing→\w+ed/.test(ds)) return "태";
+    if (/\b(is|are|was|were|has|have|had|does|do|did)\b/.test(ds)) return "수일치";
+    if (/\w+ed→\w+\b|\b\w+→\w+ed\b/.test(ds)) return "시제";   // 순수 굴절(과거↔현재)
+    if (/\w+s→\w+\b|\b\w+→\w+s\b|goes|go|says|say/.test(ds)) return "수일치";
+    if (/\w+ly→\w+\b|\b\w+→\w+ly\b/.test(ds)) return "형용사부사";
+    if (/\ber→|→\w+er\b|est→|→\w+est\b|\bmore\b|\bmost\b|\bthan\b/.test(ds)) return "비교";
+    if (/\b(in|on|at|to|for|of|with|from|by|about|into)\b/.test(ds)) return "전치사";
+    return "";
+  }
   async function buildGrammar(passage) {
     var gecEx = gecExamples(2);
+    // 결정론적 오교정(inversion) 차단 — LanguageTool이 못 잡는 뒤바뀜(정문을 '틀렸다'며 비문으로 고치라는 0점 정답키) 폐기.
+    //   대표: 계사(be/seem/look…)+형용사(정문)를 -ly부사(비문)로 '교정'하라는 지시(they are smart→they are smartly).
+    var COP = /\b(is|are|was|were|be|been|being|becomes?|became|seems?|feels?|felt|looks?|looked|appears?|remains?|stays?|grows?|grew|sounds?)\b/i;
+    function invertedPair(err, cor) {
+      var e = String(err || "").trim(), c = String(cor || "").trim();
+      if (!e || !c || normTok(e) === normTok(c)) return true;                                  // 무변화·빈값
+      if (COP.test(e) && COP.test(c) && !/\w{3,}ly\b/.test(e) && /\w{3,}ly\b/.test(c)) return true;  // 계사+형용사(정문 error) ↔ 계사+부사(비문 correct)=뒤바뀜
+      return false;
+    }
     for (var attempt = 0; attempt < 3; attempt++) {
       var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 고르고 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★밑줄 최소단위: 각 구절은 '문법 판단이 걸리는 바로 그 부분만 1~4단어'로 짧게 — 긴 구·절 통째 금지. 실제 수능/사관 예: have unearthed(수일치)·containing(분사)·which(관계사)·to enhance(부정사)·sound(형용사보어)처럼 판단 지점만. ★5곳은 반드시 서로 다른 문장·서로 다른 문법 범주. ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법만. JSON: {\"phrases\":[\"판단지점 구절 5개(각 1~4단어, 등장순, 원문 그대로, 서로 다른 문장)\"],\"cats\":[\"각 문법범주 5개(수일치|시제|태|준동사|분사|관계사|병렬|전치사|형용사부사|비교|가정법)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.phrases) || o.phrases.length < 5 || !o.error || String(o.error).trim() === String(o.correct || "").trim()) continue;
@@ -850,14 +877,17 @@
       var wi = -1;
       for (var pi = 0; pi < phr.length; pi++) { if (normTok(phr[pi]) === normTok(o.correct)) { wi = pi + 1; break; } }
       if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
+      if (invertedPair(o.error, o.correct)) continue;   // 정답키 correctness 하드게이트(LT 독립): 뒤바뀜·무변화면 폐기
       var mk = markWords(passage, phr, wi - 1, String(o.error).trim());   // 코드가 밑줄+오류주입
       if (!mk || mk.count < 5) continue;
       var g0 = []; try { g0 = await grammar(passage.replace(/<[^>]+>/g, " ")); } catch (_) {}
       var g = []; try { g = await grammar(String(mk.text).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); } catch (_) {}
       // 오류주입 검증: 주입 후 문법 오류가 원문보다 늘지 않으면(무오류 주입) 재시도 — '틀린 곳이 없는' 문항 방지
       if (g.length <= g0.length && attempt < 2) continue;
-      var verified = g.length ? (" (LanguageTool 확인: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + ")") : "";
-      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)", _gram: { error: String(o.error).trim(), correct: String(o.correct || mk.orig).trim(), wi: wi, verified: !!verified } };
+      var verified = g.length;   // 내부 boolean만 유지(도구명 explanation 비노출 — §10)
+      var cat = inferGramCat(o.error, o.correct || mk.orig) || ((Array.isArray(o.cats) && o.cats[wi - 1]) ? String(o.cats[wi - 1]).replace(/[^가-힣]/g, "") : "") || "어법";   // diff 결정론 우선, LLM 라벨은 한글만, 최후 generic
+      var slotTag = "[어법: " + cat + "] ";   // 물어보는 slot(문법 범주) 선언 — §10 '어법 메타 없음' 회피
+      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: slotTag + "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + (verified ? " (어법 오류 확인됨)" : ""), _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)", _gram: { error: String(o.error).trim(), correct: String(o.correct || mk.orig).trim(), wi: wi, verified: !!verified, cat: cat } };
     }
     return null;
   }
@@ -970,9 +1000,11 @@
     if (!q || !q._gram) return null;
     var err = q._gram.error, cor = q._gram.correct, wi = q._gram.wi;
     if (!err || !cor || normTok(err) === normTok(cor)) return null;   // 오류≠교정 정합
-    var verified = q._gram.verified ? " (LanguageTool 확인)" : "";
-    return { type: "어법수정", instruction: "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.", passage: q.passage, choices: [], answer: 0,
-      explanation: "[모범답안] " + CIRC5(wi) + ": '" + err + "' → '" + cor + "'" + verified, _audit: "정답위치 코드생성됨(buildGrammar 검증경로 재사용)" };
+    var slot = q._gram.cat ? ("[" + q._gram.cat + "] ") : "";           // 물어보는 어법 slot 선언(§10 메타)
+    var instr = "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.";
+    var ans = CIRC5(wi) + ": '" + err + "' → '" + cor + "'";
+    return { type: "어법수정", instruction: instr, passage: q.passage, choices: [], answer: 0,
+      explanation: "[모범답안] " + slot + ans + (q._gram.verified ? " (어법 오류 확인됨)" : "") + essayRubric("어법수정", instr, ans), _audit: "정답위치 코드생성됨(buildGrammar 검증경로 재사용)" };
   }
 
   /* ===== 재귀 상호작용: 검수 뉴런 ↔ 재작성 뉴런이 수렴까지 반복(recurrent refinement) ===== */
