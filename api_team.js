@@ -1773,16 +1773,24 @@
       return { n: i + 1, en: en, ko: String(m.ko || ""), syntax: String(m.syntax || ""), fn: /^(core|evidence|logic|grammar|claim|aux)$/.test(m.fn) ? m.fn : "aux" };
     });
     var flow = (o.flow || []).filter(function (x) { return x && x.n >= 1 && x.n <= sents.length && x.role; });
+    // 성분분석 + 출제예상 플로우(별도 호출 — 메인 분석 안정성 유지). 배경지식과 병렬.
+    var extraP = llmJSON([
+      { role: "system", content: "고교 영어 구문·출제 분석가. JSON만." },
+      { role: "user", content: "[문장]\n" + listed + "\n\nJSON:\n{\"components\":[{\"n\":문장번호,\"parse\":\"성분 분해 — 각 성분을 [S 주어]/[V 동사]/[O 목적어]/[C 보어]/[M 수식어]/[관계절]/[분사구] 형태로 대괄호+역할표시\",\"skeleton\":\"군더더기 뺀 문장 골격(S+V+O)\"}],\"exam_flow\":[{\"feature\":\"지문 특징(문장번호 포함, 예: 관계사 which(3))\",\"type\":\"예상 출제유형(어법|어휘|빈칸|순서|삽입|무관|요지|주제|제목|함의|어법수정 중)\",\"trap\":\"함정·출제 포인트 한 줄\"}]}\n규칙: components=문법적으로 복잡·핵심인 문장 2~3개만. exam_flow=지문 특징→예상유형→함정을 4~6개(구문·어휘·연결어·주제문 근거로). 한국어." }
+    ], { noRule: true, timeout: 60000 }).catch(function () { return null; });
     // 배경지식: 주제어로 위키 요약 1문단(있으면). 실패해도 분석지는 나옴
     var background = "";
     try {
       var kw = await ask("이 글의 핵심 주제어를 영어 1~2단어로(답만).\n\n" + passage.slice(0, 300), "단어만.", { noRule: true }).catch(function () { return ""; });
       if (kw) { var bg = await wiki(String(kw).replace(/[^A-Za-z ]/g, "").trim()).catch(function () { return null; }); if (bg && bg.extract) background = bg.extract.slice(0, 260); }
     } catch (_) {}
+    var extra = await extraP;
     return {
       topic: String(o.topic_ko || ""), thesis: String(o.thesis_ko || ""), flow: flow, sents: rows,
       vocab: (o.vocab || []).slice(0, 6), expr: (o.expr || []).slice(0, 6), connect: (o.connect || []).slice(0, 6),
-      points: (o.points || []).slice(0, 4), background: background
+      points: (o.points || []).slice(0, 4), background: background,
+      components: ((extra && extra.components) || []).filter(function (c) { return c && c.parse; }).slice(0, 3),
+      examFlow: ((extra && extra.exam_flow) || []).filter(function (f) { return f && f.feature && f.type; }).slice(0, 6)
     };
   }
   // ===== 키워드 추출(출제 축): 어휘·구문·개념·연결어 — LLM + 빈도 폴백, 지문 실존 검증 =====
