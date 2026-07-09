@@ -660,6 +660,12 @@
     var st = await runHarness(inferenceSteps(passage, type, ctx, opts.fast), { passage: passage, ctx: ctx, dis: [] },
       function (ev) { log(onP, "  ┃라인 " + ev.line + "/" + ev.total + " [" + ev.api + "] " + ev.label + "…"); });
     if (!st.answer || !st.choices) return null;
+    // 언어 일관성 게이트: 한국어 선지 유형(요지·주장·목적)에 영어 선지·한영 깨진토큰(모thers)이 섞이면 재시도
+    if (/한국어/.test(infMeta(type).kind)) {
+      st.choices = st.choices.map(function (c) { return String(c).replace(/([가-힣])([A-Za-z]{2,})/g, "$1 $2").replace(/([A-Za-z]{2,})([가-힣])/g, "$1 $2").trim(); });   // 글자붙은 한영토큰 분리
+      var mixed = st.choices.some(function (c) { var lat = (String(c).match(/[A-Za-z]/g) || []).length, ko = (String(c).match(/[가-힣]/g) || []).length; return lat > 6 && lat > ko; });
+      if (mixed) return null;   // 한국어 유형인데 영어 선지 → 상위 재시도(다른 시드로 재생성)
+    }
     log(onP, '   ↳ 핵심 논지: "' + String(st.main || "").slice(0, 72) + '"');
     log(onP, '   ↳ 정답 초안: "' + String(st.answer || "").slice(0, 64) + '" · 오답 ' + (st.dis || []).length + '개 설계');
     var meta = infMeta(type);
@@ -858,14 +864,26 @@
     type = type || "서술형";
     // 무거운 규칙을 system에 주입하면 소형모델이 빈 응답을 내므로, 규칙은 user에 짧게만 넣고 noRule로 호출
     var ess = (TYPERULE || "").replace(/\s+/g, " ").trim().slice(0, 130);
-    var sys = "너는 고교 내신 영어 서술형 출제자다. 발문은 순수 한국어(+영어 인용)로만 쓴다 — 중국어·일본어 문자 금지. 출력은 아래 두 구획 형식만 쓴다(JSON·마크다운·여분 설명 금지).";
+    var sys = "너는 고교 내신 영어 서술형 출제자다. 발문은 순수 한국어(+영어 인용)로만 쓴다 — 중국어·일본어 문자 금지. 출력은 아래 두 구획 형식만 쓴다(JSON·마크다운·여분 설명 금지). ★영작형: '필수 포함 단어'를 제시하면 반드시 영어 단어로 쓰고, 모범답안(정답)이 그 단어를 실제로 포함해야 한다. 발문에 '단어 수' 조건을 적으면 모범답안이 그 범위를 충족해야 한다. 빈칸(____) 클로즈와 자유 이어쓰기를 섞지 마라(한 형식만).";
     var fmt = "정확히 이 형식만 출력:\n[발문]\n(제시문·조건·주어진 단어/어구를 포함한 한국어 발문, 여러 줄 가능)\n[정답]\n(모범답안 — 영작형은 영어 문장, 해석형은 우리말)";
+    // 발문 조건과 모범답안 정합성 검사(영작형): 필수 영어단어 포함·단어수 범위 충족
+    function essayConsistent(instr, ans) {
+      var isWrite = /영작|이어|의견|요약|주제문|쓰시오|write/i.test(type) && /[A-Za-z]/.test(ans);
+      if (!isWrite) return true;
+      var req = (instr.match(/["“]([A-Za-z][A-Za-z\- ]{1,20})["”]/g) || []).map(function (s) { return s.replace(/["“”]/g, "").trim().toLowerCase(); });
+      var alow = String(ans).toLowerCase();
+      if (req.length && /필수|포함/.test(instr) && !req.every(function (w) { return alow.indexOf(w) >= 0; })) return false;   // 필수 영어단어 미포함
+      var m = instr.match(/(\d+)\s*[~-]\s*(\d+)\s*단어/); var wc = String(ans).trim().split(/\s+/).filter(Boolean).length;
+      if (m && (wc < +m[1] - 2 || wc > +m[2] + 2)) return false;                                                          // 단어수 범위 벗어남
+      var m2 = instr.match(/(\d+)\s*단어\s*(?:이내|내외|내로)?/); if (m2 && !m && Math.abs(wc - +m2[1]) > 4) return false;
+      return true;
+    }
     for (var i = 0; i < 4; i++) {
       var hint = (i < 2 && ess) ? ("\n(출제 지침 요약: " + ess + ")") : ""; // 1~2차만 지침, 이후 무지침으로 출제 보장
       var user = "다음 지문으로 '" + type + "' 유형의 내신 서술형 1문항을 만들어라." + hint + "\n" + fmt + "\n\n[지문]\n" + passage;
       var raw = await llm([{ role: "system", content: sys }, { role: "user", content: user }], { noRule: true, temperature: i ? 0.85 : 0.55, timeout: 60000 });
       var p = parseEssayText(raw);
-      if (p) return essayResult(type, p.instruction, p.answer);
+      if (p && (essayConsistent(p.instruction, p.answer) || i === 3)) return essayResult(type, p.instruction, p.answer);
     }
     // 최후 폴백: JSON 강제(무규칙)
     var o = await llmJSON([{ role: "system", content: "고교 영어 서술형 출제자. 유효한 JSON 한 개만, 문자열 값 안에서는 큰따옴표 대신 작은따옴표(')." }, { role: "user", content: "다음 지문으로 '" + type + "' 서술형 1문항. JSON: {\"instruction\":\"한국어 발문\",\"answer\":\"모범답안\"}. JSON만.\n\n[지문]\n" + passage }], { noRule: true, temperature: 0.7, timeout: 60000 });
@@ -918,9 +936,13 @@
         if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
         var mk = markWords(passage, phr, wi - 1, String(o.error).trim());
         if (!mk || mk.count < 5) continue;
-        var verified = ""; try { var g = await grammar(String(mk.text).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); if (g.length) verified = " (LanguageTool: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + " 확인)"; } catch (_) {}
+        // 오류주입 검증 게이트(서술형은 키가드 미적용 → 여기서 필수): 주입 후 문법오류가 원문보다 늘지 않으면 무오류 주입 → 재시도
+        var g0 = []; try { g0 = await grammar(passage.replace(/<[^>]+>/g, " ")); } catch (_) {}
+        var g = []; try { g = await grammar(String(mk.text).replace(/<[^>]+>/g, " ").replace(/[ⓐ-ⓔ]/g, "")); } catch (_) {}
+        if (g.length <= g0.length && attempt < 2) continue;
+        var verified = g.length ? (" (LanguageTool: " + g.slice(0, 2).map(function (x) { return x.bad; }).join(", ") + " 확인)") : "";
         return { type: "어법수정", instruction: "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 찾아 기호를 쓰고 바르게 고쳐 쓰시오.", passage: mk.text, choices: [], answer: 0,
-          explanation: "[모범답안] " + CIRC5(wi) + ": '" + o.error + "' → '" + (o.correct || mk.orig) + "'" + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 모두 코드처리)" };
+          explanation: "[모범답안] " + CIRC5(wi) + ": '" + o.error + "' → '" + (o.correct || mk.orig) + "'" + verified, _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)" };
       }
     }
     return null;
