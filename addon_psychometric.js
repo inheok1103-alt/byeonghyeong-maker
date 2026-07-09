@@ -68,7 +68,21 @@
     return { ok: true, leak: +leak.toFixed(2), pass: leak <= 0.5, summary: "누출 " + Math.round(leak * 100) + "%" + (leak > 0.5 ? " ⚠지문없이 풀림(구인무관)" : " ✅") };
   }
 
-  var api = { panel: panel, leakTest: leakTest };
+  // 형태단서(form cue) 감사 — 정답이 길이/형태로 새는지 계량(Haladyna). LLM 불필요·결정론.
+  function formCue(q) {
+    if (!isMCQ(q)) return { ok: false, why: "객관식 아님" };
+    var ch = q.choices;
+    if (ch.every(function (c) { return /^[ⓐ-ⓔ①-⑤]\s*$/.test(String(c)); })) return { ok: true, cue: false, summary: "위치표식형(길이 무관)" };
+    var L = ch.map(function (c) { return String(c).replace(/\s+/g, " ").trim().length; });
+    var a = L[q.answer - 1], sorted = L.slice().sort(function (x, y) { return y - x; }), rank = sorted.indexOf(a) + 1;
+    var mean = L.reduce(function (s, x) { return s + x; }, 0) / L.length;
+    var sd = Math.sqrt(L.reduce(function (s, x) { return s + (x - mean) * (x - mean); }, 0) / L.length), cv = mean ? sd / mean : 0;
+    var oth = L.filter(function (_, i) { return i !== q.answer - 1; }), maxO = Math.max.apply(null, oth);
+    var cue = a >= maxO && a > maxO * 1.3 && (a - maxO) >= 6;   // 정답 최장 + 2등比 30%↑ = 형태단서
+    return { ok: true, cue: cue, answerRank: rank, cv: +cv.toFixed(2), answerLen: a, lens: L,
+      summary: "길이CV=" + cv.toFixed(2) + " 정답길이순위=" + rank + "/" + L.length + (cue ? " ⚠정답이 최장(형태단서 누설)" : " ✅형태단서 없음") };
+  }
+  var api = { panel: panel, leakTest: leakTest, formCue: formCue };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   if (root) root.PSYCHOMETRIC = api;
 })(typeof window !== "undefined" ? window : (typeof globalThis !== "undefined" ? globalThis : this));

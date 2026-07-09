@@ -610,6 +610,15 @@
   function bestMatchIdx(choices, target) { var bi = -1, bs = 0, sec = 0; for (var i = 0; i < choices.length; i++) { var s = tokOverlap(target, choices[i]); if (s > bs) { sec = bs; bs = s; bi = i; } else if (s > sec) sec = s; } return (bs >= 0.5 && bs >= sec + 0.25) ? bi : -1; }
 
   // ===== 선지 제작 팀: 5개 선지를 최종 검수·정리(형태통일·정답유일·어법·어구화) =====
+  // 형태단서(length cue) 측정 — 정답만 유독 길면 '제일 긴 것=정답'으로 답이 샌다(Haladyna 형태단서 제거 원칙)
+  function choiceLen(s) { return String(s || "").replace(/\s+/g, " ").trim().length; }
+  function answerIsLongCued(ch, ai) {
+    if (!(ch && ch.length >= 4 && ai >= 1 && ai <= ch.length)) return false;
+    if (ch.every(function (c) { return /^[ⓐ-ⓔ①-⑤]$/.test(String(c).trim()); })) return false;   // 밑줄/위치형 제외
+    var L = ch.map(choiceLen), a = L[ai - 1], oth = L.filter(function (_, i) { return i !== ai - 1; });
+    var maxO = Math.max.apply(null, oth), meanO = oth.reduce(function (s, x) { return s + x; }, 0) / oth.length;
+    return a >= maxO && (a > maxO * 1.3 || a > meanO * 1.5) && (a - maxO) >= 6;   // 최장 + 2등比 30%↑ 또는 평균比 50%↑
+  }
   async function reviewOptions(answer, dis, ctx) {
     ctx = ctx || {};
     var sys = "너는 대한민국 수능 영어 '선지(보기) 검수관'이다. 5개 선택지를 최종 점검·정리한다: ①정답은 글을 정확히 반영하는 '단 하나' ②★오답 4개는 정답과 '핵심 주장이 겹치지 않아야' 한다 — 정답의 근접 패러프레이즈·유의어 반복 금지(복수정답 방지). 각 오답에 서로 다른 오답 DNA(부분참·전도·과잉·축소·초점이동·태도왜곡·조건누락 중 1) ③오답은 정답과 반대이거나 지문 일부만 담거나 지문에 없는 내용이어야 하되, 지문 소재·어휘를 재활용해 그럴듯하게(엉뚱한 딴 분야 금지) ④5개의 길이·문법 형태 통일(정답만 길거나 구체적 금지) ⑤빈칸/요약형이면 완성 문장이 아니라 끼워지는 '어구/절'로 ⑥정답은 본문 표현을 그대로 베끼지 말고 패러프레이즈 ⑦메타 표현(본문은/글은/사전적/문자적/원문보다) 금지. JSON만.";
@@ -621,6 +630,14 @@
       var ai = parseInt(r.answer, 10); if (!(ai >= 1 && ai <= 5)) ai = 0;
       var bm = bestMatchIdx(ch, answer);   // 정답 텍스트 위치를 코드로 도출(자기보고보다 우선)
       if (bm >= 0) ai = bm + 1; else if (!ai) ai = 1;
+      // 형태단서 게이트: 정답만 유독 길면 오답을 정답 밀도로 확장해 균질화(정답 텍스트·위치 보존 → 정합 안전)
+      if (answerIsLongCued(ch, ai)) {
+        var ansT = ch[ai - 1], others = ch.filter(function (_, i) { return i !== ai - 1; });
+        var rr = await llmJSON([{ role: "system", content: "선지 균질화 검수관. JSON 배열만." },
+          { role: "user", content: "정답(고정·수정 금지): \"" + ansT + "\"\n아래 오답 4개가 정답보다 짧아 '제일 긴 것 = 정답'이라는 형태 단서가 노출된다. 정답과 비슷한 길이·구문·구체성으로 오답 4개를 다시 써라 — 각자 틀린 이유(부분·전도·초점이탈·과장)는 유지하고, 정답과 의미가 겹치지 않게(복수정답 금지), 지문 소재·어휘를 재활용해 그럴듯하게. 유형:" + (ctx.type || "") + "\n오답: " + JSON.stringify(others) + "\nJSON 문자열 배열 4개만." }], { temperature: 0.5, timeout: 50000 }).catch(function () { return null; });
+        var nd = Array.isArray(rr) ? rr.map(clean1).filter(function (c) { return c && !badChoice(c); }) : [];
+        if (nd.length >= 4) { var merged = [], di = 0; for (var mi = 0; mi < 5; mi++) merged.push(mi === ai - 1 ? ansT : nd[di++]); ch = merged; }
+      }
       return { choices: ch, answer: ai };
     }
     return shuffleAnswer(answer, dis || []);
@@ -645,14 +662,14 @@
   // 추론형 파이프라인: 각 라인이 명시적 API에 연결됨
   function inferenceSteps(passage, type, ctx, fast) {
     var kind = infMeta(type).kind;
-    var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["글과 무관", "글에 없는 다른 주제로"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
+    var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["초점 이탈", "글의 소재·어휘는 그대로 쓰되 핵심 논점에서 살짝 벗어나(딴 분야로 튀지 말 것)"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
     var steps = [
       { api: "wiki", label: "배경지식 조회", run: function (s) { return Promise.resolve({ bg: (ctx && ctx.bg) || null }); } },
       { api: USE_ENSEMBLE ? "ensemble" : "llm", label: USE_ENSEMBLE ? "핵심 논지 추출(앙상블 메타-LLM)" : "핵심 논지 추출", run: async function (s) { var h = s.bg && s.bg.extract ? ("\n(참고 배경: " + s.bg.extract.slice(0, 160) + ")") : ""; if (ctx && ctx.related && ctx.related.length) h += "\n(관련 주제: " + ctx.related.slice(0, 4).join(", ") + ")"; if (ctx && ctx.facts && ctx.facts.length) h += "\n(사실: " + ctx.facts.slice(0, 2).map(function (f) { return f.label + "—" + f.desc; }).join("; ") + ")"; var pr = "다음 글의 핵심 논지를 영어 한 문장으로(답만)." + h + "\n\n" + passage; return { main: USE_ENSEMBLE ? ((await ensemble(pr)).answer || "") : await ask(pr, "핵심 한 문장. 답만.") }; } },
       { api: "llm", label: "정답 보기 작성", run: async function (s) { if (!s.main) throw new Error("no main"); return { answer: await ask("글 핵심: \"" + s.main + "\"\n이를 담은 " + type + " 정답을 " + kind + "로 간결히. 보기 텍스트만.") }; } }
     ];
     if (fast) {
-      steps.push({ api: "llm", label: "오답 4개 일괄 설계", run: async function (s) { if (!s.answer) throw new Error("no answer"); var j = await llmJSON([{ role: "system", content: "오답 설계 전문가. JSON 배열만." }, { role: "user", content: "정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n정답과 의미가 분명히 다른 " + kind + " 오답 4개를 각각 다른 방식(①부분적 ②정반대 ③무관 ④포괄)으로. 정답 재진술 금지. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 }); return { dis: (Array.isArray(j) ? j.map(clean1).filter(Boolean) : []).slice(0, 4) }; } });
+      steps.push({ api: "llm", label: "오답 4개 일괄 설계", run: async function (s) { if (!s.answer) throw new Error("no answer"); var j = await llmJSON([{ role: "system", content: "오답 설계 전문가. JSON 배열만." }, { role: "user", content: "정답: \"" + s.answer + "\"\n글 핵심: " + s.main + "\n정답과 의미가 분명히 다른 " + kind + " 오답 4개를 각각 다른 방식(①부분적 ②정반대 ③초점이탈-소재는 유지 ④포괄)으로. 오답도 지문 소재·어휘를 재활용해 그럴듯하게(딴 분야 금지), 정답 재진술 금지. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 }); return { dis: (Array.isArray(j) ? j.map(clean1).filter(Boolean) : []).slice(0, 4) }; } });
       steps.push({ api: "thesaurus", label: "오답 동의어중복 일괄검사", run: function (s) { return Promise.resolve({ dis: (s.dis || []).filter(function (d) { return !(d && ctx && synOverlap(s.answer, d, ctx)); }) }); } });
     } else {
       roles.forEach(function (r, idx) {
@@ -667,6 +684,11 @@
   }
   async function buildInference(passage, type, opts) {
     opts = opts || {}; var onP = opts.onProgress, ctx = opts.ctx || {};
+    // 유형-소재 적합성 게이트: 필자주장은 '당위(~해야 한다)'가 있는 논설문에서만. 설명·서사문이면 억지 당위 생성 대신 폐기.
+    if (type === "필자주장") {
+      var fit = await llmJSON([{ role: "system", content: "글 유형 판정관. JSON만." }, { role: "user", content: "다음 글이 '필자의 당위적 주장(무엇을 해야/하지 말아야 한다)'을 담은 논설문인가? 사실을 전달·설명하거나 이야기를 서술할 뿐 당위가 없으면 false. JSON: {\"argumentative\":true/false}.\n\n" + String(passage).slice(0, 1200) }], { temperature: 0.1, timeout: 40000 }).catch(function () { return null; });
+      if (fit && fit.argumentative === false) { log(onP, "   ⚠ 필자주장 부적합 지문(당위 없음) — 미출제"); return null; }
+    }
     var st = await runHarness(inferenceSteps(passage, type, ctx, opts.fast), { passage: passage, ctx: ctx, dis: [] },
       function (ev) { log(onP, "  ┃라인 " + ev.line + "/" + ev.total + " [" + ev.api + "] " + ev.label + "…"); });
     if (!st.answer || !st.choices) return null;
