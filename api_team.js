@@ -801,11 +801,22 @@
     // 요약문에 정답이 그대로 노출되지 않도록 (A)/(B) 자리 정규화
     var summ = String(o.summary);
     if (summ.indexOf("(A)") < 0) summ = summ.replace(o.A, "(A)"); if (summ.indexOf("(B)") < 0) summ = summ.replace(o.B, "(B)");
-    var dj = await llmJSON([{ role: "system", content: "오답 설계자. JSON만." }, { role: "user", content: "정답 (A)=" + o.A + ", (B)=" + o.B + " 와 의미가 다른 (A)/(B) 영어 단어쌍 오답 4개(한국어 금지, 반의·부분·무관·과장 각1). JSON 배열 [{\"A\":\"..\",\"B\":\"..\"}, ...] 만." }], { temperature: 0.7, timeout: 50000 });
-    var ans = "(A) " + o.A + " … (B) " + o.B;
-    var dis = (Array.isArray(dj) ? dj : []).slice(0, 4).filter(function (x) { return x && x.A && x.B && !/[가-힣]/.test(x.A + x.B); }).map(function (x) { return "(A) " + x.A + " … (B) " + x.B; });
-    var a = await reviewOptions(ans, dis, { type: "요약" }); if (!a) return null;
-    return { type: "요약문AB", instruction: "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: passage + "\n\n─────────\n[요약문]  " + summ, choices: a.choices, answer: a.answer, explanation: "(A) " + o.A + " / (B) " + o.B + " 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다." };
+    var ans = "(A) " + o.A + " … (B) " + o.B, dis = [], seenAB = {};
+    // 오답쌍은 '지문 소재 안에서' 만들어야 온토픽(과거엔 지문 미제공 → 무관한 한국어 선지 날조). 4개 확보까지 재시도.
+    for (var dt = 0; dt < 3 && dis.length < 4; dt++) {
+      var dj = await llmJSON([{ role: "system", content: "요약문 오답 설계자. JSON 배열만." }, { role: "user", content: "[지문]\n" + String(passage).slice(0, 900) + "\n\n요약문: " + summ + "\n정답 (A)=" + o.A + ", (B)=" + o.B + "\n\n위 지문·요약문에 근거하되 '정답과 의미가 다른' (A)/(B) 영어 단어쌍 오답 4개(한국어 금지, 지문 소재 안에서 반의·부분·범위과장·인과전도 각1, 정답 재사용 금지). JSON 배열 [{\"A\":\"..\",\"B\":\"..\"}] 만." }], { temperature: 0.6 + dt * 0.15, timeout: 50000 }).catch(function () { return null; });
+      (Array.isArray(dj) ? dj : []).forEach(function (x) {
+        if (!x || !x.A || !x.B || /[가-힣]/.test(x.A + x.B)) return;
+        var k = normTok(x.A + x.B); if (k === normTok(o.A + o.B) || seenAB[k]) return;
+        seenAB[k] = 1; dis.push("(A) " + x.A + " … (B) " + x.B);
+      });
+    }
+    if (dis.length < 4) return null;   // 유효 오답쌍 4개 미확보 → 요약 문항 폐기(날조·혼입 방지)
+    // (A)(B) 쌍은 구조가 명확하므로 코드가 직접 셔플·정답위치 결정(LLM 선지 날조 방지)
+    var pool = [ans].concat(dis.slice(0, 4));
+    for (var si = pool.length - 1; si > 0; si--) { var sj = rint(si + 1), stmp = pool[si]; pool[si] = pool[sj]; pool[sj] = stmp; }
+    var apos = pool.indexOf(ans) + 1;
+    return { type: "요약문AB", instruction: "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: passage + "\n\n─────────\n[요약문]  " + summ, choices: pool, answer: apos, explanation: "(A) " + o.A + " / (B) " + o.B + " 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.", _audit: "정답 코드생성됨((A)(B) 쌍 코드 셔플)" };
   }
   // 내용불일치/일치
   function factResult(wantMatch, st, ans, mode) {
@@ -920,6 +931,11 @@
     for (var attempt = 0; attempt < 3; attempt++) {
       var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 고르고 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★밑줄 최소단위: 각 구절은 '문법 판단이 걸리는 바로 그 부분만 1~4단어'로 짧게 — 긴 구·절 통째 금지. 실제 수능/사관 예: have unearthed(수일치)·containing(분사)·which(관계사)·to enhance(부정사)·sound(형용사보어)처럼 판단 지점만. ★5곳은 반드시 서로 다른 문장·서로 다른 문법 범주. ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법만. JSON: {\"phrases\":[\"판단지점 구절 5개(각 1~4단어, 등장순, 원문 그대로, 서로 다른 문장)\"],\"cats\":[\"각 문법범주 5개(수일치|시제|태|준동사|분사|관계사|병렬|전치사|형용사부사|비교|가정법)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.phrases) || o.phrases.length < 5 || !o.error || String(o.error).trim() === String(o.correct || "").trim()) continue;
+      // 스키마 설명문 에코 방어: 소형모델이 'error'/'correct'에 한글 설명("원문 그대로"·"틀리게 바꾼 형태" 등)이나 문장 통째를 넣는 실패 폐기
+      if (/[가-힣]/.test(o.error) || /[가-힣]/.test(String(o.correct || "")) || /그대로|형태|구절|문장|단서/.test(o.error + " " + o.correct)) continue;
+      if (String(o.error).split(/\s+/).length > 6 || String(o.correct || "").split(/\s+/).length > 6) continue;   // 정답/오답 어구는 최소단위(문장 통째 금지)
+      // phrases에도 한글·설명문이 섞이면 폐기
+      if (o.phrases.slice(0, 5).some(function (p) { return /[가-힣]/.test(String(p)) || /그대로|형태|구절/.test(String(p)); })) continue;
       var phr = o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); });
       if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 5; })) continue;   // 밑줄 최소단위(≤5단어) — 긴 구·절이면 재시도(실제 기출 밑줄은 1~3단어)
       if (!spreadOK(passage, phr, attempt)) continue;   // 밑줄 분산: 한 문장 몰림 방지(수능 원칙)
