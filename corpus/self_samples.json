@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-09T21:54:18.778Z",
+ "updated": "2026-07-09T23:37:36.509Z",
  "samples": [
+  {
+   "ts": "2026-07-09T23:36:35.739Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① 1 He/She certainly looks his/her age.\n② 6 He/She has a warm smile.\n③ Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page.\n④ 5 He/She has a very abrasive manner.\n⑤ 3 He/She’s bursting with energy.\n⑥ blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments?\n⑦ Then match them to 1–6 below.\n⑧ 7 He/She’s full of pent-up anger.\n⑨ 2 He/She’s downright rude.",
+    "choices": [
+     "③-⑦-⑥-①-④-⑨-②-⑤-⑧",
+     "③-⑦-⑥-①-④-②-⑨-⑤-⑧",
+     "③-⑦-⑥-④-①-⑨-②-⑤-⑧",
+     "⑦-③-⑥-①-④-⑨-②-⑤-⑧",
+     "③-①-⑦-②-⑥-⑤-⑧-④-⑨"
+    ],
+    "answer": 3,
+    "explanation": "정답 배열은 ③-⑦-⑥-①-④-⑨-②-⑤-⑧. 흐름: ③ → ⑦(Then) → ⑥ → ① → ④ → ⑨ → ② → ⑤ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-09T23:36:57.471Z",
+   "type": "어형변형(괄호)",
+   "level": "중",
+   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "괄호 안의 동사를 어법에 맞게 고쳐 쓰시오.",
+    "passage": "Complete this conversation using collocations from the box in the appropriate form so that Nell always (agree) with Zoë.",
+    "choices": [],
+    "answer": null,
+    "explanation": "1) agree→agrees [주어 Nell(3인칭 단수) — 수일치] · 2) bear→bears [주어 Nell(3인칭 단수) — 수일치]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-09T21:47:56.262Z",
    "type": "목적",
