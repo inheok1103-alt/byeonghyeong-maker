@@ -684,10 +684,25 @@
       _audit: (st.gi && st.gi.length) ? ("어법 의심 " + st.gi.length + "건") : "검증 통과", _trace: st._trace };
   }
   // 빈칸: ① 핵심 논지 자리에 어구 비우기(도입부 회피) → ② 프레임 맞춤 어구형 정답 → ③ 역할별 오답
+  // 빈칸 정답이 원문 표현 그대로(verbatim)인지 — recall화 방어. 내용어 시퀀스가 원문에 연속/대부분 존재하면 verbatim.
+  function blankVerbatim(ans, passage) {
+    var a = String(ans || "").toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter(function (w) { return w.length >= 3 && !STOP[w]; });
+    if (a.length < 2) return false;
+    var pl = " " + String(passage || "").toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ") + " ";
+    if (pl.indexOf(" " + a.join(" ") + " ") >= 0) return true;                      // 연속 일치
+    return a.filter(function (w) { return pl.indexOf(" " + w + " ") >= 0; }).length / a.length >= 0.8;   // 내용어 80%+ 원문 존재
+  }
   async function buildBlank(passage, opts) {
     var onP2 = opts && opts.onProgress;
     var o = await llmJSON([{ role: "system", content: "수능 빈칸추론 출제자. 빈칸은 필자의 핵심 주장·결론을 담은 자리에 두고 도입부 정의문·예시·부연은 피한다. JSON만." }, { role: "user", content: "다음 글에서 필자의 핵심 주장/결론을 담은 문장을 고르고, 그 문장에서 논지의 핵심 어구(3~8단어)를 ____ 로 비워라(도입부 첫 문장은 피할 것). 정답은 빈칸에 '문법적으로 그대로 들어맞는 간결한 영어 어구(완성 문장 절대 아님)'로, 본문 표현이 아니라 상위어·동의어로 패러프레이즈하라. JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"빈칸에 들어갈 정답 어구\",\"orig\":\"비운 원래 어구\",\"frame\":\"빈칸이 든 문장만(____ 포함)\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
     if (!o || !o.answer || !o.blanked) return null;
+    // verbatim recall 방어(실전기출: 빈칸은 담화추론이지 원문 눈찾기가 아님) — 정답이 원문 표현 그대로면 상위어·동의어로 1회 재작성, 실패 시 폐기
+    if (blankVerbatim(o.answer, passage)) {
+      var rw = await ask("다음 어구를 '뜻은 같지만 본문 표현을 그대로 쓰지 않는' 상위어·동의어 어구로 바꿔라(3~8단어, 완성 문장 아님). 어구만 출력.\n어구: " + o.answer, "패러프레이즈된 어구만 출력. 설명·따옴표 금지.", { noRule: true, temperature: 0.6 }).catch(function () { return ""; });
+      rw = String(rw || "").replace(/^["'·\-\s]+|["'\s]+$/g, "").split("\n")[0].trim();
+      if (rw && rw.split(/\s+/).length >= 2 && !blankVerbatim(rw, passage)) { o.answer = rw; }
+      else return null;   // 패러프레이즈 실패 → recall 문항 폐기(상위 재시도)
+    }
     // 지문 축약 방어: blanked가 지문 대부분을 담지 않으면(LLM이 빈칸 문장만 반환) 원문에서 orig를 ____로 치환해 전체 지문 복원
     var blanked = String(o.blanked);
     var pw = passage.split(/\s+/).length, bw = blanked.split(/\s+/).length;
@@ -704,6 +719,7 @@
     var a = await reviewOptions(o.answer, dis, { type: "빈칸", slot: frame, main: o.answer }); if (!a) return null;
     // 형태 가드: 완성문장형(주어+be/조동사 시작) 선지를 어구형으로 축약
     var ch = (a.choices || []).map(function (c) { return String(c).replace(/^\s*(happiness|it|one|people|the individual|this|they|we|society)\s+(is|are|was|were|has|have|can|will|becomes?)\s+/i, "").trim(); });
+    if (blankVerbatim(ch[a.answer - 1] || o.answer, passage)) return null;   // 최종 선지 verbatim 재검(reviewOptions가 원문어구로 복원했을 가능성 차단)
     return { type: "빈칸", instruction: "다음 빈칸에 들어갈 말로 가장 적절한 것은?", passage: o.blanked, choices: ch, answer: a.answer, explanation: "빈칸에는 '" + o.answer + "'가 들어가 글의 논지를 완성한다" + (o.orig ? (" (본문 '" + o.orig + "'의 패러프레이즈)") : "") + "." };
   }
   // 함의: ① 밑줄 구절+의미 → ② 역할별 오답
