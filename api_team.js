@@ -455,9 +455,19 @@
   }
   function setLevelRule(type, level) {
     if (!level || !DIFF) { LEVELRULE = ""; return; }
-    var lv = (DIFF.levels && DIFF.levels[level]) || "";
-    var pt = (DIFF.perType && DIFF.perType[type] && DIFF.perType[type][level]) || "";
-    LEVELRULE = "[목표 난이도: " + level + " — " + lv + "] 난이도는 '추론단계 × 패러프레이즈거리 × 오답매력도'로 조절하고(어휘만 어렵게 하는 값싼 난도 금지), 오답 설계가 변별의 핵심이다. " + pt;
+    // 레벨 정규화: 하/중/상/킬러(초킬러) → low/mid/high 키. (perType 키가 영문이라 기존엔 매칭 실패 = 규칙 미주입 버그)
+    var LVMAP = { "하": "low", "중": "mid", "상": "high", "킬러": "high", "초킬러": "high" };
+    var lkey = LVMAP[level] || (/^(low|mid|high)$/.test(level) ? level : "mid");
+    var lv = (DIFF.levels && (DIFF.levels[level] || DIFF.levels[{ low: "하", mid: "중", high: "상" }[lkey]])) || "";
+    // 유형명 정규화: "어법(밑줄)"·"빈칸(어구)" 등 풀네임 → perType 기준키(빈칸/어법/어휘/주제/함의/요약)로 접두 매칭
+    var pt = "";
+    if (DIFF.perType) {
+      var pk = DIFF.perType[type] ? type : Object.keys(DIFF.perType).filter(function (k) { return String(type).indexOf(k) >= 0; })[0];
+      if (pk) pt = DIFF.perType[pk][lkey] || DIFF.perType[pk][level] || "";
+    }
+    // 초킬러(경찰대/사관 대역): 상 규칙 + 제4 변별축(통사밀도·어휘루어·원전급 렉사일) 가산 — special_exams_longitudinal 근거
+    var killer = (level === "킬러" || level === "초킬러") ? " ★초킬러(경찰대/사관 대역): 위 '상' 사양에 더해 — 제4 변별축 '통사밀도/파싱부하'를 얹어라(문장 30어+·내포절 다중 중첩·삽입절로 진주어·목적어 관계 추적을 강제해 파싱 자체가 변별점이 되게). 오답에는 지문 실제어휘를 재조합한 '어휘루어'를 2개 이상 배치. 소재는 원전급(철학원전·과학사·성인 논픽션)으로 렉사일을 상향. 단 공정성 가드는 유지(정답은 본문 단서로 유일 도출, 배경지식 비의존)." : "";
+    LEVELRULE = "[목표 난이도: " + level + " — " + lv + "] 난이도는 '추론단계 × 패러프레이즈거리 × 오답매력도'로 조절하고(어휘만 어렵게 하는 값싼 난도 금지), 오답 설계가 변별의 핵심이다. " + pt + killer;
   }
   // 공유 DB(또는 patterns.json)에서 누적 개선지침/기출 분석을 불러와 모든 출제에 반영
   async function loadSharedHints(url) {
@@ -555,7 +565,7 @@
       if (bits.length) corpusHint = "\n[원서 코퍼스 재료 — 오답을 자연스럽게 만들되 정답과 뜻이 겹치지 않게] " + bits.join(" / ");
     } catch (_) {}
     var j = await llmJSON([{ role: "system", content: "오답 설계 전문가. 정답과 의미가 분명히 다른 매력적 오답을 만든다. 원서 코퍼스의 실제 연어를 활용해 표현은 자연스럽게. JSON 배열만." },
-      { role: "user", content: "정답 보기: \"" + answer + "\"\n맥락: " + context + corpusHint + "\n위 정답과 '의미가 겹치지 않는' " + kind + " 오답 4개를 만들어라. 서로 다른 방식으로 틀리게: ①부분적·지엽적 ②정반대 ③글과 무관 ④지나치게 포괄적. 정답을 재진술·패러프레이즈 하지 말 것. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 });
+      { role: "user", content: "정답 보기: \"" + answer + "\"\n맥락: " + context + corpusHint + "\n위 정답과 '핵심 주장이 겹치지 않는' " + kind + " 오답 4개를 만들어라. 서로 다른 방식으로 틀리게: ①부분적·지엽적 ②정반대 ③글과 무관 ④지나치게 포괄적. ★오답 매력도 위계(임용/측정학): 지문 소재·어휘를 재활용해 '같은 의미장에서 그럴듯하게'(semantic) 만들되, 딴 분야 엉뚱오답은 피하고, 정답의 근접 패러프레이즈·유의어 반복은 금지(복수정답 방지). 4개 중 강한 매력 오답은 1~2개로 제한(난도 폭주 방지), 나머지는 명백 오답. ★표면단서 제거: 정답만 유독 길거나 구체적이지 않게 4개의 길이·형태를 통일. 정답을 재진술·패러프레이즈 하지 말 것. JSON 문자열 배열 4개만." }], { temperature: 0.75, timeout: 55000 });
     var arr = Array.isArray(j) ? j.map(clean1).filter(Boolean) : [];
     return arr.slice(0, 4);
   }
