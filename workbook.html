@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ray English · 과정 워크북 — 출제자처럼 생각하기</title>
+<style>
+:root{--bg:#0f1117;--card:#171a22;--card2:#1c202b;--line:#2a2f3d;--ink:#e9ebf2;--soft:#9aa1b2;--mute:#6b7385;
+  --gold:#C8A96A;--gold2:#EAD199;--mint:#43c59e;--mintS:#12291f;--accent:#7c8cf8;--warn:#e0a548}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(900px 480px at 85% -10%,rgba(200,169,106,.08),transparent 60%),var(--bg);color:var(--ink);
+  font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.55;padding:22px 14px 90px}
+.wrap{max-width:840px;margin:0 auto}
+.top{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.seal{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:19px;color:var(--gold);background:linear-gradient(145deg,#262a38,#141721);border:1px solid var(--line)}
+.top b{font-size:17px}.top b i{color:var(--gold);font-style:normal}
+.top .sub{font-size:10.5px;color:var(--mute);letter-spacing:.1em;text-transform:uppercase}
+.raynav{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 16px}
+.raynav a{flex:1 1 auto;min-width:72px;text-align:center;text-decoration:none;font-size:13px;font-weight:700;color:#9aa1b2;background:#1c202b;border:1px solid #2a2f3d;border-radius:11px;padding:10px 8px;transition:.12s;white-space:nowrap}
+.raynav a:hover{border-color:#C8A96A;color:#EAD199}
+.raynav a.active{background:linear-gradient(180deg,#EAD199,#C8A96A);color:#1a1508;border-color:#C8A96A;box-shadow:0 2px 10px rgba(200,169,106,.25)}
+.raynav a small{display:block;font-size:9px;font-weight:500;opacity:.72;margin-top:1px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.intro{background:linear-gradient(180deg,#1a1e29,#161922);border-color:#33384a}
+.intro h2{font-size:15px;color:var(--gold2);margin-bottom:6px}
+.intro p{font-size:12.5px;color:var(--soft);line-height:1.6}
+.intro .flow{font-size:11.5px;color:var(--mute);margin-top:8px}
+.intro .flow b{color:var(--mint)}
+textarea{width:100%;min-height:110px;background:#0d0f16;border:1px solid var(--line);border-radius:11px;color:var(--ink);font-size:14.5px;line-height:1.6;padding:12px;resize:vertical;font-family:inherit}
+textarea:focus{outline:2px solid rgba(200,169,106,.35);border-color:var(--gold)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+button{font-family:inherit;cursor:pointer}
+select{background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:8px;font-size:13px;padding:8px 10px;font-family:inherit}
+.btn{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1a1508;border:none;border-radius:10px;font-size:14px;font-weight:800;padding:10px 18px}
+.btn:disabled{opacity:.5}
+.gh{background:var(--card2);border:1px solid var(--line);color:#c7cbd8;border-radius:9px;font-size:12px;font-weight:600;padding:8px 12px}
+.gh:hover{border-color:var(--accent);color:#fff}
+.note{font-size:11.5px;color:var(--mute)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.seg button{background:var(--card2);color:var(--soft);border:none;font-size:12px;font-weight:700;padding:8px 12px}
+.seg button.on{background:var(--mint);color:#06110c}
+/* 워크시트 */
+.ws{margin-top:18px}
+.ws-head{display:flex;align-items:center;gap:10px;border-bottom:2px solid var(--gold);padding-bottom:8px;margin-bottom:4px}
+.ws-head .no{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;font-size:13px;font-weight:800;color:#1a1508;background:linear-gradient(180deg,var(--gold2),var(--gold))}
+.ws-head .ty{font-weight:800;font-size:15px}
+.ws-head .lv{font-size:11px;color:var(--mute);margin-left:auto}
+.passage{background:#0d0f16;border:1px solid var(--line);border-radius:11px;padding:14px;font-size:14.5px;line-height:1.85;margin:10px 0;white-space:pre-wrap}
+.passage u{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--gold);color:var(--gold2)}
+.step{border:1px solid var(--line);border-radius:12px;padding:13px 14px;margin:10px 0;background:var(--card2)}
+.step .sh{display:flex;align-items:center;gap:8px;margin-bottom:7px}
+.step .stage{font-size:11px;font-weight:800;color:#06110c;background:var(--mint);border-radius:6px;padding:2px 8px}
+.step .ask{font-weight:700;font-size:13.8px;color:var(--ink)}
+.choices{list-style:none;margin:8px 0 4px}
+.choices li{padding:6px 10px;border:1px solid var(--line);border-radius:8px;margin:5px 0;font-size:13.5px;background:#0d0f16}
+.fill{border:none;border-bottom:1.5px dashed var(--mute);background:transparent;min-height:38px;padding:6px 2px;color:var(--ink);font-size:13.5px;width:100%;font-family:inherit;resize:vertical}
+.fill:focus{outline:none;border-bottom-color:var(--gold)}
+.reveal{margin-top:9px;border-left:3px solid var(--gold);background:rgba(200,169,106,.07);border-radius:0 8px 8px 0;padding:8px 11px;font-size:13px}
+.reveal .lab{font-size:10px;font-weight:800;color:var(--gold);letter-spacing:.05em}
+.reveal .why{color:var(--soft);font-size:12px;margin-top:4px}
+.reveal .src{color:var(--mute);font-size:10.5px;margin-top:5px;font-style:italic}
+.reveal.is-hidden{display:none}
+.rbtn{margin-top:8px;background:transparent;border:1px dashed var(--gold);color:var(--gold2);border-radius:8px;font-size:11.5px;font-weight:700;padding:5px 11px}
+.trace{margin-top:12px;font-size:11.5px;color:var(--mute)}
+.trace summary{cursor:pointer;color:var(--soft);font-weight:600}
+.trace .tl{padding:5px 0 2px 10px;border-left:2px solid var(--line);margin-top:6px}
+.err{color:var(--warn);font-size:12.5px;margin-top:8px}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,.25);border-top-color:var(--gold);border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+/* 학생/교사 모드 */
+body[data-mode="student"] .reveal{display:none}
+body[data-mode="student"] .rbtn{display:none}
+/* 인쇄 A4 */
+@page{size:A4;margin:14mm}
+@media print{
+  body{background:#fff;color:#000;padding:0;font-size:11.5pt}
+  .noprint,.raynav,.top a,.rbtn{display:none!important}
+  .card.controls,.intro{display:none!important}
+  .ws{page-break-inside:auto}
+  .step,.ws-head,.passage{break-inside:avoid}
+  .passage{background:#f6f6f2;border-color:#ccc}
+  .step{background:#fafafa;border-color:#ccc}
+  .reveal{background:#f3efe4;border-left-color:#a80}
+  body[data-mode="student"] .reveal{display:none!important}
+  body[data-mode="teacher"] .reveal{display:block!important}
+  .fill{border-bottom-color:#999}
+}
+</style>
+</head>
+<body data-mode="student">
+<div class="wrap">
+  <div class="top">
+    <div class="seal">R</div>
+    <div><b>Ray English · <i>과정 워크북</i></b><div class="sub">Think like the examiner</div></div>
+    <a href="index.html" style="margin-left:auto;font-size:12px;color:var(--soft);text-decoration:none;border:1px solid var(--line);border-radius:9px;padding:6px 11px">← 홈</a>
+  </div>
+  <nav class="raynav">
+    <a href="exam.html">📝 출제<small>문제 만들기</small></a>
+    <a href="sheet.html">📊 분석지<small>지문 분석</small></a>
+    <a href="workbook.html" class="active">📒 과정 워크북<small>출제과정 학습</small></a>
+    <a href="ai_maker.html">🧪 실험실<small>전체 기능</small></a>
+    <a href="report.html">📱 뇌 보고<small>학습 현황</small></a>
+  </nav>
+
+  <div class="card intro noprint">
+    <h2>📒 출제자가 문제를 만드는 '전 과정'을 학생이 거꾸로 밟습니다</h2>
+    <p>정답을 고르기만 하는 대신, 출제자가 정답을 만들며 거친 판단(어법 slot 선정 → 오답 설계 → 근거 → 함정)을 <b style="color:var(--gold2)">단계별로 직접 재구성</b>합니다. 역설계·자기설명 학습으로 "왜 이게 정답이고 저건 오답인지"를 몸에 익힙니다.</p>
+    <div class="flow">과정: <b>관찰</b> → <b>분류</b> → <b>판정</b> → <b>근거</b> → <b>메타(함정 간파)</b> · 어법·어휘는 5단계, 그 외 유형은 3단계(이해→판정→검증)</div>
+  </div>
+
+  <div class="card controls">
+    <div style="font-weight:800;font-size:14px;margin-bottom:8px">① 지문 붙여넣기</div>
+    <textarea id="passage" placeholder="영어 지문을 붙여넣으세요."></textarea>
+    <div class="row">
+      <span style="font-size:12px;color:var(--soft)">유형</span>
+      <select id="type">
+        <option value="어법">어법(밑줄) · 5단계</option>
+        <option value="어휘">어휘(문맥) · 5단계</option>
+        <option value="빈칸">빈칸추론</option>
+        <option value="요지">요지</option>
+        <option value="주제">주제</option>
+        <option value="제목">제목</option>
+        <option value="함의">함의추론</option>
+        <option value="글의순서">글의 순서</option>
+        <option value="문장삽입">문장 삽입</option>
+        <option value="무관문장">무관한 문장</option>
+        <option value="내용일치">내용 일치</option>
+        <option value="요약문AB">요약문 완성</option>
+        <option value="서술형">서술형</option>
+      </select>
+      <select id="level"><option value="중">난이도 중</option><option value="하">하</option><option value="상">상(킬러)</option></select>
+      <button class="btn" id="go" onclick="gen()">📒 워크북 생성</button>
+      <span id="status" class="note"></span>
+    </div>
+    <div class="row" style="margin-top:12px">
+      <span style="font-size:12px;color:var(--soft)">모드</span>
+      <span class="seg" id="modeSeg">
+        <button class="on" data-m="student" onclick="setMode('student')">학생용(빈칸)</button>
+        <button data-m="teacher" onclick="setMode('teacher')">교사용(정답)</button>
+      </span>
+      <button class="gh" onclick="revealAll(true)">전체 정답 보기</button>
+      <button class="gh" onclick="revealAll(false)">전체 숨기기</button>
+      <button class="gh" onclick="window.print()">🖨 인쇄</button>
+      <button class="gh" onclick="clearAll()">비우기</button>
+    </div>
+    <div class="note" style="margin-top:8px">💡 여러 번 생성하면 워크시트가 아래로 쌓여 한 부의 워크북이 됩니다. 인쇄는 현재 모드(학생용/교사용)로 출력됩니다.</div>
+  </div>
+
+  <div id="out"></div>
+</div>
+
+<script>var RAY_PROXY="https://ray-proxy.gen1103.workers.dev";</script>
+<script src="api_team.js?v=20260709k"></script>
+<script src="addon_key_guard.js?v=20260709b"></script>
+<script>
+var T=window.APITEAM; if(T&&T.configure)T.configure({proxyUrl:RAY_PROXY});
+var COUNT=0;
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function passageHtml(p){ // <u>밑줄</u>만 허용, 나머지 이스케이프
+  return esc(p).replace(/&lt;u&gt;/g,"<u>").replace(/&lt;\/u&gt;/g,"</u>");
+}
+function setMode(m){document.body.setAttribute("data-mode",m);var seg=document.getElementById("modeSeg");[].forEach.call(seg.children,function(b){b.classList.toggle("on",b.getAttribute("data-m")===m);});}
+function revealAll(on){[].forEach.call(document.querySelectorAll(".reveal"),function(r){r.classList.toggle("is-hidden",!on);});}
+function clearAll(){document.getElementById("out").innerHTML="";COUNT=0;}
+
+function stepHtml(s){
+  var h='<div class="step"><div class="sh"><span class="stage">'+esc(s.stage||"")+'</span><span class="ask">'+esc(s.ask||"")+'</span></div>';
+  if(s.show&&s.show.passage){h+='<div class="passage">'+passageHtml(s.show.passage)+'</div>';}
+  if(s.show&&s.show.choices&&s.show.choices.length){
+    h+='<ul class="choices">'+s.show.choices.map(function(c,i){return '<li>'+["①","②","③","④","⑤"][i]+' '+passageHtml(c)+'</li>';}).join("")+'</ul>';
+  }
+  // 입력 위젯
+  if(s.input==="pick"){h+='<div class="note" style="margin:4px 0">고른 답: <input class="fill" style="display:inline-block;width:80px;min-height:0" placeholder="번호"></div>';}
+  else{h+='<textarea class="fill" placeholder="여기에 직접 써 보세요…"></textarea>';}
+  // 리빌
+  var rv=s.reveal||{};
+  h+='<button class="rbtn noprint" onclick="var r=this.nextElementSibling;r.classList.toggle(\'is-hidden\')">정답·근거 확인 ▾</button>';
+  h+='<div class="reveal is-hidden"><span class="lab">✔ 정답</span> '+passageHtml(rv.answer||"")+
+     (rv.why?'<div class="why">'+esc(rv.why)+'</div>':'')+
+     (rv.source?'<div class="src">근거원: '+esc(rv.source)+'</div>':'')+'</div>';
+  h+='</div>';
+  return h;
+}
+function traceHtml(q){
+  var t=q._trace||[];
+  var body="";
+  if(t.length){body=t.map(function(x){return '<div class="tl">'+(x.line?('['+x.line+'] '):'')+esc(x.label||x.api||"")+(x.ok===false?' ✗':' ✓')+'</div>';}).join("");}
+  else if(q._audit){body='<div class="tl">'+esc(q._audit)+'</div>';}
+  if(!body)return"";
+  return '<details class="trace noprint"><summary>🔧 엔진이 실제로 밟은 경로</summary>'+body+'</details>';
+}
+function render(q){
+  COUNT++;
+  var wsp=(q._work&&q._work.steps)||[];
+  var typeName=q.type||"문항";
+  var lv=q.level?(" · 난이도 "+q.level):"";
+  var h='<div class="ws">';
+  h+='<div class="ws-head"><span class="no">'+COUNT+'</span><span class="ty">'+esc(typeName)+' 워크시트</span><span class="lv">출제자처럼 생각하기'+esc(lv)+'</span></div>';
+  h+='<div class="note" style="margin:4px 0 2px">발문: '+esc(q.instruction||"")+'</div>';
+  h+=wsp.map(stepHtml).join("");
+  h+=traceHtml(q);
+  h+='</div>';
+  var out=document.getElementById("out");
+  out.insertAdjacentHTML("beforeend",h);
+}
+
+async function gen(){
+  var pg=(document.getElementById("passage").value||"").trim();
+  var type=document.getElementById("type").value, level=document.getElementById("level").value;
+  var st=document.getElementById("status"), go=document.getElementById("go");
+  if(pg.split(/\s+/).length<20){st.textContent="지문을 20단어 이상 붙여넣어 주세요."; return;}
+  if(!T||!T.generateOne){st.textContent="엔진 로드 실패(api_team.js)"; return;}
+  go.disabled=true; st.innerHTML='<span class="spin"></span> 출제 과정 생성 중… (10~30초)';
+  try{
+    var q=await T.generateOne(pg, type, {level:level});
+    if(!q){st.textContent="이 지문·유형으로 생성 실패 — 다른 지문/유형을 시도해 보세요."; go.disabled=false; return;}
+    render(q);
+    st.textContent="✓ "+COUNT+"번 워크시트 생성 완료";
+  }catch(e){st.textContent="오류: "+(e&&e.message||e);}
+  go.disabled=false;
+}
+</script>
+</body>
+</html>

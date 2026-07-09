@@ -883,7 +883,7 @@
       var corr = o.correct || mk.orig;
       var why = (o.reason && String(o.reason).trim()) ? String(o.reason).trim() : (function () { var h = hostCtx(passage, o.words[wi - 1] || corr); return h ? ("해당 문장 “" + h + "”의 논리 흐름상 " + corr + "가 맞고 " + o.wrong + "는 방향이 어긋난다") : "앞뒤 문장의 논리 흐름상 " + corr + "가 맞다"; })();
       var polLine = (o.polarity && String(o.polarity).trim()) ? (" [극성] " + String(o.polarity).trim()) : "";
-      return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + ": 문맥상 '" + corr + "'가 와야 하는데 '" + o.wrong + "'가 쓰여 부적절하다 — " + why + "." + polLine, _audit: "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설)" };
+      return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + ": 문맥상 '" + corr + "'가 와야 하는데 '" + o.wrong + "'가 쓰여 부적절하다 — " + why + "." + polLine, _audit: "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설)", _vocab: { words: o.words.slice(0, 5), wrong: o.wrong, correct: corr, wi: wi, why: why, polarity: (o.polarity ? String(o.polarity).trim() : "") } };
     }
     return null;
   }
@@ -938,7 +938,7 @@
       var verified = g.length;   // 내부 boolean만 유지(도구명 explanation 비노출 — §10)
       var cat = inferGramCat(o.error, o.correct || mk.orig) || ((Array.isArray(o.cats) && o.cats[wi - 1]) ? String(o.cats[wi - 1]).replace(/[^가-힣]/g, "") : "") || "어법";   // diff 결정론 우선, LLM 라벨은 한글만, 최후 generic
       var slotTag = "[어법: " + cat + "] ";   // 물어보는 slot(문법 범주) 선언 — §10 '어법 메타 없음' 회피
-      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: slotTag + "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + (verified ? " (어법 오류 확인됨)" : ""), _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)", _gram: { error: String(o.error).trim(), correct: String(o.correct || mk.orig).trim(), wi: wi, verified: !!verified, cat: cat } };
+      return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: slotTag + "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + (verified ? " (어법 오류 확인됨)" : ""), _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)", _gram: { error: String(o.error).trim(), correct: String(o.correct || mk.orig).trim(), wi: wi, verified: !!verified, cat: cat, phrases: phr.slice(0, 5), cats: (Array.isArray(o.cats) ? o.cats.slice(0, 5).map(function (c) { return String(c || "").replace(/[^가-힣A-Za-z]/g, ""); }) : []) } };
     }
     return null;
   }
@@ -1869,6 +1869,45 @@
     return base + (core ? (" [핵심 논지: " + core + "]") : "");
   }
   function stampIntent(q) { if (!q) return q; q.intent = intentFor(q); if (String(q.explanation || "").indexOf("【출제의도】") < 0) q.explanation = String(q.explanation || "") + "\n【출제의도】 " + q.intent; return q; }
+  // ===== 과정 워크북: 출제 파이프라인의 중간산출물을 '학생이 밟는 단계'로 노출(_work). 빌더가 안 만든 유형은 범용 3스텝으로 합성 =====
+  function stampWork(q) {
+    if (!q || q._work) return q;
+    var CIRC = ["①", "②", "③", "④", "⑤"], MARK = "ⓐⓑⓒⓓⓔ";
+    var isMCQ = q.choices && q.choices.length >= 4 && q.answer >= 1 && q.answer <= q.choices.length;
+    function markLine(arr, cats) { return (arr || []).map(function (p, i) { return MARK[i] + " " + p + (cats && cats[i] ? (" (" + cats[i] + ")") : ""); }).join(" / "); }
+    // 어법 5스텝 — _gram.phrases/cats/error/correct/wi 재사용
+    if (q.type === "어법" && q._gram && q._gram.phrases && q._gram.phrases.length >= 5) {
+      var g = q._gram, gcats = (g.cats || []).slice(); if (g.cat && g.wi >= 1) gcats[g.wi - 1] = g.cat;   // 정답 위치는 결정론 범주(g.cat)로 교정(LLM cats 오라벨 방지)
+      q._work = { steps: [
+        { id: 1, stage: "관찰", ask: "밑줄 친 ⓐ~ⓔ 각각이 '어떤 문법 요소'를 판단하게 하는지 적어보세요.", show: { passage: q.passage }, input: "text", reveal: { answer: markLine(g.phrases, gcats), why: "각 밑줄은 서로 다른 문법 범주의 판단 지점입니다.", source: "엔진: 밑줄 5지점" } },
+        { id: 2, stage: "분류", ask: "5개 밑줄의 문법 범주(수일치·시제·태·준동사·관계사·병렬·전치사·형용사부사 등)를 각각 분류하세요.", show: {}, input: "text", reveal: { answer: (g.phrases || []).map(function (p, i) { return MARK[i] + "=" + (gcats[i] || "어법"); }).join(", "), source: "엔진: 범주 분류" } },
+        { id: 3, stage: "판정", ask: "5개 중 '어법상 틀린' 것 하나를 고르세요.", show: { choices: q.choices }, input: "pick", reveal: { answer: "정답 " + MARK[g.wi - 1], source: "코드 정답" } },
+        { id: 4, stage: "근거", ask: "틀린 부분을 바르게 고치고, 왜 틀렸는지 문법적으로 설명하세요.", show: {}, input: "text", reveal: { answer: "'" + g.error + "' → '" + g.correct + "'" + (g.cat ? (" [" + g.cat + "]") : ""), why: q.explanation, source: "엔진: error→correct" } },
+        { id: 5, stage: "메타", ask: "출제자는 왜 이 지점을 함정으로 골랐을까요? 나머지 4개는 왜 옳은가요?", show: {}, input: "text", reveal: { answer: "나머지 4개는 문법적으로 옳습니다. 출제자는 " + (g.cat || "핵심 문법") + " 판단을 수식어·거리로 흐리게 해 변별합니다.", source: "출제 로직" } }
+      ] };
+      return q;
+    }
+    // 어휘 5스텝 — _vocab.words/wrong/correct/wi/why 재사용
+    if (q.type === "어휘" && q._vocab && q._vocab.words && q._vocab.words.length >= 5) {
+      var v = q._vocab;
+      q._work = { steps: [
+        { id: 1, stage: "관찰", ask: "밑줄 친 ⓐ~ⓔ가 든 문장의 논리 방향(긍정/부정·원인/결과·강화/대조)을 표시하세요.", show: { passage: q.passage }, input: "text", reveal: { answer: "각 문장의 문맥 방향을 잡으면 어울리지 않는 낱말이 드러납니다.", source: "담화 방향" } },
+        { id: 2, stage: "분류", ask: "밑줄 낱말들이 문맥과 '순접(어울림)'인지 '역접(어긋남)'인지 판정하세요.", show: {}, input: "text", reveal: { answer: "4개는 순접(문맥 일치), 1개는 역접(문맥 충돌).", source: "극성 대조" } },
+        { id: 3, stage: "판정", ask: "문맥상 쓰임이 부적절한 낱말 하나를 고르세요.", show: { choices: q.choices }, input: "pick", reveal: { answer: "정답 " + MARK[v.wi - 1] + " ('" + v.wrong + "')", source: "코드 정답" } },
+        { id: 4, stage: "근거", ask: "그 자리에 원래 와야 할 낱말은 무엇이고, 왜 그런가요?", show: {}, input: "text", reveal: { answer: "'" + v.wrong + "' → '" + v.correct + "'. " + (v.why || ""), why: (v.polarity ? ("극성: " + v.polarity) : ""), source: "엔진: correct·담화근거" } },
+        { id: 5, stage: "메타", ask: "출제자는 왜 '" + v.wrong + "'를 오답으로 심었을까요? (반의어/혼동어 중 무엇?)", show: {}, input: "text", reveal: { answer: "'" + v.wrong + "'는 '" + v.correct + "'의 반대 방향 낱말이라 문맥과 충돌합니다. 형태·품사는 자연스러워 눈에 잘 안 띕니다.", source: "오답 설계" } }
+      ] };
+      return q;
+    }
+    // 범용 3스텝(전 유형) — 기존 필드만으로 합성
+    var last = isMCQ ? ("정답 " + CIRC[q.answer - 1] + (q.choices[q.answer - 1] && String(q.choices[q.answer - 1]).length > 2 ? (" — " + q.choices[q.answer - 1]) : "")) : (q.answerText ? ("모범답안: " + q.answerText) : String(q.explanation || "").replace(/\[모범답안\]\s*/, ""));
+    q._work = { steps: [
+      { id: 1, stage: "이해", ask: "지문을 읽고 '무엇을 묻는 문제'인지, 글의 핵심 논지를 한 문장으로 예측해 쓰세요.", show: { passage: q.passage }, input: "text", reveal: { answer: (q.instruction || ""), why: "먼저 발문 유형과 글의 핵심을 잡습니다.", source: "발문·지문" } },
+      { id: 2, stage: (isMCQ ? "판정" : "작성"), ask: (q.instruction || "정답을 고르거나 작성하세요."), show: (isMCQ ? { choices: q.choices } : {}), input: (isMCQ ? "pick" : "text"), reveal: { answer: last, source: "코드/모범답안" } },
+      { id: 3, stage: "검증", ask: "왜 이것이 정답이고 다른 선지는 왜 오답인지(또는 답안의 조건 충족)를 설명하세요.", show: {}, input: "text", reveal: { answer: String(q.explanation || ""), why: (q.intent ? ("출제의도: " + q.intent) : ""), source: "해설·출제의도" } }
+    ] };
+    return q;
+  }
 
   // 자료수집 캐시: 같은 지문이면 재수집 생략(유형 여러 번 출제 시 10~15초 절약)
   var CTXCACHE = {};
@@ -1941,7 +1980,7 @@
         if (got) {
           if (TYPE_INSTR[t] && !hasRichInstr(got.instruction, TYPE_INSTR[t])) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
           if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 }); }
-          stampIntent(got); got._ms = Date.now() - t0;
+          stampIntent(got); stampWork(got); got._ms = Date.now() - t0;
           results[i] = got;
           if (opts.onItem) try { opts.onItem(got, i); } catch (_) {}   // 완성 즉시 UI로 스트리밍
           onT(t, "done", got._ms);
@@ -2070,7 +2109,7 @@
     if (q && TYPE_INSTR[type] && !/\{[A-Za-z0-9가-힣]+\}/.test(TYPE_INSTR[type]) && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];   // 미치환 템플릿({N}) 발문은 적용 안 함(빌더 자체 발문 유지)
     if (q) q.level = opts.level || "";
     if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 });
-    stampIntent(q);
+    stampIntent(q); stampWork(q);
     return q;
   }
 
