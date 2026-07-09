@@ -757,22 +757,31 @@
     return { type: wantMatch ? "내용일치" : "내용불일치", instruction: "다음 글의 내용과 " + (wantMatch ? "일치하는" : "일치하지 않는") + " 것은?", passage: "", choices: st, answer: ans, explanation: "정답 진술만 글과 " + (wantMatch ? "일치" : "모순") + "한다.", _audit: (mode === "검증") ? "정답 코드검증됨(모순 진술 정확히 1개 확인)" : "⚠ 정답 미검증 — 복수정답 소지, 재확인 필요" };
   }
   async function buildFactCheck(passage, wantMatch) {
-    var last = null;
+    // 통제 생성: ①지문에서 참인 사실진술 5개 추출 → ②코드가 정답 1개 지정 → ③나머지를 '세부 한 곳 뒤집기'로 거짓화 → ④검증
     for (var attempt = 0; attempt < 4; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "내용일치 출제자. JSON만." }, { role: "user", content: "다음 글의 세부 정보(수치·시간·주체·행위·조건)에 관한 한국어 진술 5개를 만들어라. " + (wantMatch ? "정확히 1개만 지문 문장을 그대로 바꿔 쓴 '참', 나머지 4개는 세부 한 곳을 뒤집은 '거짓'." : "4개는 지문 문장을 그대로 바꿔 쓴 '참', 정확히 1개만 세부 한 곳(주체·시점·수치·긍부정)을 뒤집은 '거짓'.") + " 각 진술은 지문에 실제로 언급된 내용에만 근거하고, 지문에 없는 정보는 쓰지 마라. 진술끼리 서로 겹치거나 모순되지 않게. JSON: {\"statements\":[\"진술 5개\"],\"answer\":정답번호1~5}.\n\n" + passage }], { temperature: attempt ? 0.55 : 0.4, timeout: 60000 });
-      if (!o || !Array.isArray(o.statements) || o.statements.length < 5) continue;
-      var st = o.statements.slice(0, 5); last = { st: st, answer: parseInt(o.answer, 10) };
-      // 검증: 각 진술을 지문과 대조해 일치(support)/모순(contradict)을 직접 판정 → 정답을 코드로 도출(복수정답 차단)
-      var v = await llmJSON([{ role: "system", content: "너는 냉정한 사실검증관이다. 각 진술을 '지문 내용'과 대조해 일치(지문이 명시적으로 뒷받침)·모순(지문과 어긋남)·불명(지문에 근거 없음)으로 분류한다. JSON만." }, { role: "user", content: "지문:\n" + passage + "\n\n진술:\n" + st.map(function (s, i) { return (i + 1) + ". " + s; }).join("\n") + "\n\nJSON: {\"support\":[지문과 일치하는 번호],\"contradict\":[지문과 모순되는 번호]}. 불명은 어느 배열에도 넣지 마라. JSON만." }], { temperature: 0.15, timeout: 55000 });
-      var contra = (v && Array.isArray(v.contradict)) ? v.contradict.map(function (x) { return parseInt(x, 10); }).filter(function (x) { return x >= 1 && x <= 5; }) : null;
-      var supp = (v && Array.isArray(v.support)) ? v.support.map(function (x) { return parseInt(x, 10); }).filter(function (x) { return x >= 1 && x <= 5; }) : null;
-      if (contra || supp) {
-        if (!wantMatch && contra && contra.length === 1) return factResult(false, st, contra[0], "검증");         // 불일치: 모순 정확히 1개
-        if (wantMatch && supp && supp.length === 1) return factResult(true, st, supp[0], "검증");                 // 일치: 일치 정확히 1개(직접 판정 — '4개 모순' 요구 완화)
-      }
-      // 복수정답/검증불가 → 재시도
+      var ext = await llmJSON([{ role: "system", content: "사실추출관. JSON만." }, { role: "user", content: "다음 글에서 '지문이 명시적으로 뒷받침하는' 서로 다른 사실 진술 5개를 한국어로 뽑아라(수치·시간·주체·행위·조건 중심, 각 진술은 서로 다른 문장 근거, 지문에 없는 정보 금지). JSON: {\"facts\":[\"참인 진술 5개\"]}. JSON만.\n\n" + passage }], { temperature: attempt ? 0.5 : 0.35, timeout: 55000 });
+      if (!ext || !Array.isArray(ext.facts) || ext.facts.length < 5) continue;
+      var facts = ext.facts.slice(0, 5).map(function (s) { return String(s || "").trim(); });
+      var keep = rint(5);   // 정답(참으로 남길) 진술 위치 — 코드가 지정
+      var toFlip = facts.filter(function (_, i) { return i !== keep; });
+      var flip = await llmJSON([{ role: "system", content: "오답(거짓 진술) 설계자. JSON만." }, { role: "user", content: "다음 참인 진술 4개 각각에서 '세부 한 곳(주체·시점·수치·장소·긍부정 중 하나)'만 지문과 어긋나게 바꿔 '거짓 진술'로 만들어라(문장 구조·길이는 유지, 지문과 명백히 모순되게). JSON: {\"false\":[\"거짓 진술 4개(입력 순서 유지)\"]}. JSON만.\n\n[지문]\n" + passage + "\n\n[참 진술 4개]\n" + toFlip.map(function (s, i) { return (i + 1) + ". " + s; }).join("\n") }], { temperature: 0.5, timeout: 55000 });
+      if (!flip || !Array.isArray(flip.false) || flip.false.length < 4) continue;
+      var falses = flip.false.slice(0, 4).map(function (s) { return String(s || "").trim(); });
+      // 조립: keep 위치엔 참(정답=wantMatch일 때) / 나머지엔 거짓
+      var st = [], fi = 0;
+      for (var i = 0; i < 5; i++) st.push(i === keep ? facts[keep] : falses[fi++]);
+      var ansPos = keep + 1;
+      // 불일치형: 참 4개 + 거짓 1개(keep 위치) → 거짓이 정답
+      if (!wantMatch) { st = facts.slice(); st[keep] = falses[0]; }
+      // 검증: 정답 위치가 실제로 (일치/모순) 유일한지 확인
+      var v = await llmJSON([{ role: "system", content: "사실검증관. JSON만." }, { role: "user", content: "지문:\n" + passage + "\n\n진술:\n" + st.map(function (s, i2) { return (i2 + 1) + ". " + s; }).join("\n") + "\n\n각 진술을 지문과 대조. JSON: {\"support\":[일치 번호],\"contradict\":[모순 번호]}. JSON만." }], { temperature: 0.12, timeout: 50000 });
+      var contra = (v && Array.isArray(v.contradict)) ? v.contradict.map(Number).filter(function (x) { return x >= 1 && x <= 5; }) : [];
+      var supp = (v && Array.isArray(v.support)) ? v.support.map(Number).filter(function (x) { return x >= 1 && x <= 5; }) : [];
+      if (wantMatch && supp.length === 1 && supp[0] === ansPos) return factResult(true, st, ansPos, "검증");
+      if (!wantMatch && contra.length === 1 && contra[0] === ansPos) return factResult(false, st, ansPos, "검증");
+      // 검증 불일치 → 재시도(다음 attempt)
     }
-    return null;   // 3회 검증 실패 시 '미검증(복수정답 소지)' 문항을 학생에게 내보내지 않음 — 상위에서 재시도/스킵
+    return null;   // 검증 실패 시 미검증 문항 미납품(상위 재시도/스킵)
   }
   // 지문 속 단어 5개를 등장순으로 ⓐ~ⓔ<u>밑줄</u> 표시하고, corruptIdx 자리는 wrongWord로 '코드가' 치환
   function markWords(passage, words, corruptIdx, wrongWord) {
