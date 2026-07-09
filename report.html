@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ray English · 뇌 시간별 보고</title>
+<style>
+:root{--bg:#0f1117;--card:#171a22;--line:#2a2f3d;--ink:#e9ebf2;--soft:#9aa1b2;--gold:#C8A96A;--gold2:#EAD199;--mint:#43c59e;--rose:#e0748a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"Pretendard","Noto Sans KR",-apple-system,system-ui,sans-serif;font-size:15px;line-height:1.55;padding:16px 12px 40px;max-width:560px;margin:0 auto}
+.top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.seal{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:17px;color:var(--gold);background:linear-gradient(145deg,#262a38,#141721);border:1px solid var(--line)}
+.top b{font-size:15px}.top b i{color:var(--gold);font-style:normal}
+.top .sub{font-size:10px;color:var(--soft);letter-spacing:.08em;text-transform:uppercase}
+.hl{background:linear-gradient(135deg,#1c2130,#171a22);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;padding:13px 15px;margin:10px 0}
+.hl .t{font-size:12px;color:var(--gold2);font-weight:700;margin-bottom:3px}
+.hl .h{font-size:15px;font-weight:700;line-height:1.4}
+.hl .when{font-size:11px;color:var(--soft);margin-top:5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:10px 0}
+.card h2{font-size:12.5px;color:var(--mint);font-weight:800;letter-spacing:.03em;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.li{font-size:13.5px;line-height:1.5;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.li:last-child{border-bottom:0}
+.li .tag{display:inline-block;font-size:10.5px;font-weight:700;color:#1a1508;background:linear-gradient(180deg,var(--gold2),var(--gold));border-radius:5px;padding:1px 6px;margin-right:6px}
+.li .src{font-size:11px;color:var(--soft)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stat{background:#12151d;border:1px solid var(--line);border-radius:9px;padding:9px 11px}
+.stat .n{font-size:20px;font-weight:800;color:var(--gold2)}
+.stat .l{font-size:11px;color:var(--soft);margin-top:1px}
+.muted{color:var(--soft);font-size:12.5px}
+.refresh{position:fixed;right:14px;bottom:14px;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1a1508;border:0;font-weight:800;border-radius:50%;width:48px;height:48px;font-size:20px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+a.nav{color:var(--soft);font-size:12px;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 9px}
+.hist{font-size:12px;color:var(--soft);line-height:1.7}
+.err{color:var(--rose);font-size:13px}
+</style>
+</head>
+<body>
+<div class="top">
+  <span class="seal">R</span>
+  <span style="flex:1"><b>Ray <i>English</i></b> · 뇌 보고<div class="sub">24h Brain · Hourly Report</div></span>
+  <a class="nav" href="exam.html">출제 →</a>
+</div>
+<div id="app"><div class="muted">불러오는 중…</div></div>
+<button class="refresh" onclick="load()" title="새로고침">↻</button>
+<script>
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function ago(iso){ try{var d=(Date.now()-new Date(iso).getTime())/60000; if(d<1)return "방금"; if(d<60)return Math.floor(d)+"분 전"; return Math.floor(d/60)+"시간 "+Math.floor(d%60)+"분 전"; }catch(e){return "";} }
+async function load(){
+  var app=document.getElementById("app");
+  try{
+    var r=await fetch("corpus/hourly_report.json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok) throw new Error("보고서 파일 없음("+r.status+")");
+    var d=await r.json(); var R=d.latest;
+    if(!R){ app.innerHTML='<div class="card err">아직 생성된 보고가 없습니다. 뇌가 다음 정각(매시 17분)에 첫 보고를 올립니다.</div>'; return; }
+    var h="";
+    h+='<div class="hl"><div class="t">📱 이번 시간 보고</div><div class="h">'+esc(R.headline)+'</div><div class="when">'+esc(R.atKST||R.at)+' · '+ago(R.at)+'</div></div>';
+    // 통계
+    var T=R.totals||{};
+    h+='<div class="stats">'+
+      '<div class="stat"><div class="n">'+(T.rules||0)+'</div><div class="l">누적 학습 규칙</div></div>'+
+      '<div class="stat"><div class="n">'+(R.newRules?R.newRules.length:0)+'</div><div class="l">이번 신규 규칙</div></div>'+
+      '<div class="stat"><div class="n">'+(T.corpusBooks||0)+'</div><div class="l">원서 코퍼스(권)</div></div>'+
+      '<div class="stat"><div class="n">'+(T.samplesStored||0)+'</div><div class="l">검증 샘플 보관</div></div>'+
+    '</div>';
+    // 신규 규칙
+    if(R.newRules&&R.newRules.length){ h+='<div class="card"><h2>🆕 이번 시간 새로 배운 규칙</h2>'+R.newRules.map(function(x){return '<div class="li">'+esc(x.rule)+'<div class="src">출처: '+esc(x.src)+'</div></div>';}).join("")+'</div>'; }
+    // 코퍼스 연구
+    if(R.corpusResearch&&R.corpusResearch.length){ h+='<div class="card"><h2>📚 원서 코퍼스 연구</h2>'+R.corpusResearch.map(function(x){return '<div class="li"><span class="tag">'+esc(x.focus).slice(0,14)+'</span>'+esc(x.rule)+'</div>';}).join("")+'</div>'; }
+    // 회의
+    if(R.meetings&&R.meetings.length){ h+='<div class="card"><h2>🧑‍🏫 교사 회의 결정</h2>'+R.meetings.map(function(x){return '<div class="li"><span class="tag">'+esc(x.verdict)+'</span>'+esc(x.topic)+(x.how?'<div class="src">반영: '+esc(x.how)+'</div>':'')+'</div>';}).join("")+'</div>'; }
+    // 연구 로그
+    if(R.research&&R.research.length){ h+='<div class="card"><h2>🔬 연구·업데이트 내역</h2>'+R.research.map(function(x){return '<div class="li"><span class="tag">'+esc(x.cat)+'</span>'+esc(x.topic)+(x.summary?'<div class="src">'+esc(x.summary)+'</div>':'')+'</div>';}).join("")+'</div>'; }
+    // 샘플
+    if(R.sample&&R.sample.instruction){ h+='<div class="card"><h2>✏️ 이번 시간 생성·검증한 문항</h2><div class="li"><span class="tag">'+esc(R.sample.type)+'</span>'+esc(R.sample.instruction)+' <span class="src">(정답 '+esc(R.sample.answer)+')</span></div></div>'; }
+    // 최근 이력
+    if(d.history&&d.history.length>1){ h+='<div class="card"><h2>🕐 최근 시간별 헤드라인</h2><div class="hist">'+d.history.slice(0,12).map(function(x){return '· '+ago(x.at)+' — '+esc(x.headline);}).join("<br>")+'</div></div>'; }
+    h+='<div class="muted" style="text-align:center;margin-top:14px">매시 17분 자동 갱신 · 당겨서 새로고침 또는 ↻</div>';
+    app.innerHTML=h;
+  }catch(e){ app.innerHTML='<div class="card err">'+esc(e.message)+'<br><span class="muted">뇌(GitHub Actions)가 아직 첫 보고를 올리지 않았을 수 있습니다.</span></div>'; }
+}
+load(); setInterval(load, 5*60*1000);   // 5분마다 자동 재확인
+</script>
+</body>
+</html>

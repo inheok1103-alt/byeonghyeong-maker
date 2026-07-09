@@ -35,6 +35,7 @@ jobs:
           git config user.name  "brain-bot"
           git config user.email "actions@users.noreply.github.com"
           git add corpus archive/meetings research_log.json USABLE_RULES.md learned_rules.json || true
+          git add -A corpus/hourly_report.json || true
           git diff --cached --quiet && echo "변경 없음" && exit 0
           git commit -m "🧠 24h brain $(date -u +%FT%TZ) [skip ci]"
           # 실행 중 다른 커밋이 먼저 올라와도 밀리지 않게: rebase 후 push, 3회 재시도

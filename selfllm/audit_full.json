@@ -1,0 +1,667 @@
+{
+  "summary": "실엔진 하네스로 20개 유형 실제 생성 → 결함 사냥 + 정적 QA",
+  "agentCount": 6,
+  "logs": [
+    "감사 완료: 6/6 에이전트"
+  ],
+  "result": {
+    "tested": 24,
+    "failed": 14,
+    "defects": [
+      {
+        "type": "빈칸(어구)",
+        "sev": "critical",
+        "what": "passage가 원지문 전체가 아니라 빈칸이 든 마지막 1문장만 출력됨(guide의 '지문 축약 절대 금지' 위반). 문맥 단서가 전무해 문항이 성립하지 않음",
+        "evidence": "\"passage\": \"In other words, the path to excellence is built not on what we are born with but on ____ .\""
+      },
+      {
+        "type": "연결어빈칸",
+        "sev": "critical",
+        "what": "생성 실패 — q가 null(2회 재실행 모두 재현). 원인: api_team.js buildConnective(1192~1208행)가 하드코딩 사전 15개 연결어가 지문에 2개 이상 있어야 작동하는데, 테스트 지문엔 'However' 1개뿐이고 'In other words'(재진술)는 사전에 없어 found.length<2로 null 반환, LLM 폴백 없음",
+        "evidence": "{\"ms\": 3050, \"q\": null} / api_team.js:1197 \"if (found.length < 2) return null;\""
+      },
+      {
+        "type": "내용일치",
+        "sev": "critical",
+        "what": "내용일치 문항 생성 실패 — generateOne이 null 반환(검증 게이트 3회 시도 소진). 실사용자는 이 유형 문항을 아예 받지 못함",
+        "evidence": "{ \"ms\": 92676, \"q\": null } / 재시도 { \"ms\": 24570, \"q\": null }"
+      },
+      {
+        "type": "어형변형(괄호)",
+        "sev": "critical",
+        "what": "정답 비유일: 제시문 단독으로는 시제 단서가 없어 separates(3인칭 단수 현재, 일반 진술)도 완전한 정답인데 답안은 separated만 인정 — 채점 시 정답자를 오답 처리하게 됨(guide '복수해 발생 시 재선정' 위반)",
+        "evidence": "passage: \"…not natural gift, (separate) the best from the rest.\" / answerText: \"1) separate → separated\""
+      },
+      {
+        "type": "요지",
+        "sev": "major",
+        "what": "정답 선지(②)와 해설에 한자 '卓越' 노출 + 조사 붙여쓰기 오류 — 한글 문장 내 이상 문자(체크리스트 9)",
+        "evidence": "타고난 재능이 없더라도 꾸준한 노력과 의식적인 연습으로卓越한 성과를 낼 수 있다."
+      },
+      {
+        "type": "요지",
+        "sev": "major",
+        "what": "정답 유일성 훼손: 선지 ①③⑤가 모두 핵심 논지(연습>재능)와 같은 방향의 진술이라 복수 정답 소지. 트레이스는 '오답2(정반대) 설계 ok'라지만 정반대·무관 오답이 실제로 없음",
+        "evidence": "① 의식적인 연습의 질과 노력이 뛰어난 성과를 이끈다는… / ⑤ 의식적인 연습의 중요성이 재능보다 앞선다는…"
+      },
+      {
+        "type": "제목",
+        "sev": "major",
+        "what": "복수 정답 소지: ③은 '재능이 탁월함을 낳는다는 신화를 반박'으로 읽혀 글이 하는 일 그대로이고, ④(재능은 제한적 요인)도 논지 부합 — 금지선지 규칙 '두 개 정답 가능' 위반",
+        "evidence": "③ INNATE TALENT BEGETS EXCELLENCE: DEBUNKING THE MYTH / ④ THE ROLE OF INNATE TALENT…: A LIMITED FACTOR"
+      },
+      {
+        "type": "밑줄함의",
+        "sev": "major",
+        "what": "유형 성립 실패: 밑줄이 비유·관용구가 아닌 직설 주제문(가이드 '비유·역설·관용 구절만 밑줄, 직설 문장 금지' 위반)이고, 정답이 밑줄 어휘(train→training) 재사용한 축자 환언이라 '함축 추론'이 아닌 단순 바꿔쓰기 문제가 됨",
+        "evidence": "밑줄: the path to excellence is built not on what we are born with but on how we choose to train → 정답: …the training choices we make…"
+      },
+      {
+        "type": "밑줄함의",
+        "sev": "major",
+        "what": "정답 선지(②)만 유독 김(21어 vs 오답 8~13어) — 지식DB 금지선지 규칙('정답만 유독 길거나 구체적') 직접 위반, 요령만으로 정답 식별 가능",
+        "evidence": "② The journey to achieving greatness is constructed based on the training choices we make, rather than the innate abilities…"
+      },
+      {
+        "type": "빈칸(어구)",
+        "sev": "major",
+        "what": "출력된 지문 기준 정답 유일성 붕괴 — 'not on what we are born with but on ~' 구문에 ② 'the luck of favorable circumstances'도 문법·논리상 성립(원지문의 deliberate practice 근거가 잘려나가 ⑤만 유일하지 않음)",
+        "evidence": "choices: \"the luck of favorable circumstances\" … answer: 5 (\"how we choose to train\")"
+      },
+      {
+        "type": "빈칸(문장)",
+        "sev": "major",
+        "what": "영어 지문의 문장 빈칸 [ ]에 들어갈 선지 5개가 전부 한국어 문장 — 기출 정형(33~34번형, 영어 절/문장 선지)과 불일치하며 영어 지문에 한국어 문장이 삽입되는 비정상 문항",
+        "evidence": "choices[1]: \"다시 말해, 탁월한 경지에 이르는 길은 타고난 재능이 아니라 우리가 어떻게 훈련을 선택하느냐에 달려 있다.\""
+      },
+      {
+        "type": "요약문AB",
+        "sev": "major",
+        "what": "빈칸 (A)(B)가 실제로 비워지지 않음 — 요약문에 정답 어구(innate ability / sustained, goal-driven training)가 영어로 그대로 노출되어 정답이 유출됨(Ray원칙 '조작은 지문 본문에 실제 반영' 위반)",
+        "evidence": "passage: \"…belief that (A) innate ability determines success, studies show that (B) sustained, goal-driven training…\""
+      },
+      {
+        "type": "요약문AB",
+        "sev": "major",
+        "what": "원지문 미동반 — 발문이 '다음 글의 내용을 한 문장으로 요약'+'(원지문 동반 필수)'인데 passage에는 요약문 1문장뿐, 요약 대상 원지문이 출력에 없음(guide QC '원지문 첨부 확인' 위반)",
+        "evidence": "passage 전체가 요약문 한 문장뿐: \"Despite the common belief that (A)…the true driver of excellence.\""
+      },
+      {
+        "type": "요약문AB",
+        "sev": "major",
+        "what": "선지가 한국어 어구 쌍 — 기출 40번 정형은 영어 (A)/(B) 단어 쌍. 요약문에 영어 정답이 보이는 상태라 사실상 번역 대조 문제로 변질",
+        "evidence": "choices[0]: \"(A) 타고난 재능 … (B) 계획적인 연습\""
+      },
+      {
+        "type": "어법(밑줄)",
+        "sev": "major",
+        "what": "오류 주입 시 문장 첫머리 대문자 소실 — ⓓ 밑줄이 문장 시작인데 소문자 'the'로 시작해 문법 외적 단서로 정답이 노출됨(원문 'The students who practiced'를 교체하며 대문자 미복원)",
+        "evidence": "separated the best from the rest. ⓓ<u>the student who practice with clear goals</u> and immediate feedback improved"
+      },
+      {
+        "type": "네모어법ABC",
+        "sev": "major",
+        "what": "(A) 네모가 어법 대립쌍이 아닌 비단어 철자쌍 — 'alonee'는 존재하지 않는 단어. guide 명시 금지('대소문자·철자만 다른 쌍, 의미 무관 쌍 금지', '문법 기능이 갈리는 이형태 쌍만') 위반",
+        "evidence": "(A) [talent alone / talent alonee] determines success"
+      },
+      {
+        "type": "네모어법ABC",
+        "sev": "major",
+        "what": "(B) 네모도 비단어 철자쌍 — 형용사 natural에 -s를 붙인 'naturals'는 어법 포인트가 아님. 3개 네모 중 (C)만 유효(this+수일치)해 '세 네모=서로 다른 문법 범주' 설계 자체가 붕괴",
+        "evidence": "(B) [not natural / not naturals] gift, separated the best from the rest"
+      },
+      {
+        "type": "어법개수형",
+        "sev": "major",
+        "what": "ⓒ의 주입 오류가 어법 포인트가 아닌 비단어 — 형용사 deliberate에 -s를 붙인 'deliberates'는 28포인트 출제범위(수일치·태·준동사 등) 밖의 단순 철자 조작으로 실제 학생 오류 패턴이 아님",
+        "evidence": "they found that ⓒ<u>the amount of deliberates practice</u>, not natural gift"
+      },
+      {
+        "type": "어휘(밑줄)",
+        "sev": "major",
+        "what": "정답 교체어 'deliberate'가 같은 문장 안에 이미 존재해 'deliberate practice, not deliberate gift'라는 자기모순 대조가 됨 — guide '정답 단어가 지문 다른 곳에 그대로 노출 금지' 위반이며 정답이 즉시 노출됨(원문 natural→deliberate 교체)",
+        "evidence": "the amount of deliberate practice, not ⓒ<u>deliberate</u> gift, separated the best from the rest"
+      },
+      {
+        "type": "문장삽입",
+        "sev": "major",
+        "what": "선지는 ①~⑤ 5개인데 지문에는 삽입 위치 표기가 ( ① )~( ④ ) 4곳뿐 — 선지 ⑤가 가리키는 위치가 지문에 존재하지 않아 실사용 시 성립 불가한 선지가 노출됨",
+        "evidence": "( ④ )  In other words, the path to excellence is built not on what we are born with but on how we choose to train.\" ← 지문 끝, ( ⑤ ) 없음"
+      },
+      {
+        "type": "조건영작",
+        "sev": "major",
+        "what": "우리말 제시문이 비문(이중주어 기계번역체)이고 모범답안 의미('재능이 아니라 연습이 성공을 결정')를 정확히 전달하지 못해 학생이 목표 문장을 복원할 수 없음",
+        "evidence": "우리말: 고의적인 연습이 성공을 결정하는 것은 천부적인 재능만이 아닙니다."
+      },
+      {
+        "type": "어형변형(괄호)",
+        "sev": "major",
+        "what": "해설의 어법 근거가 틀림 — 능동 단순과거(separated)를 '수동태 과거 시제 필요', '과거 분사(능동 의미의 수동태)'로 설명해 학생을 오도(어법게이트 '기능 기반 근거' 위반)",
+        "evidence": "「수동태 과거 시제 필요 — …'separated'는 …과거 분사(능동 의미의 수동태)로 …3형식 동사로 사용됨」"
+      },
+      {
+        "type": "문장전환",
+        "sev": "major",
+        "what": "모범답안이 원문 의미 미보존 — 원문은 '연습량이 the best와 the rest를 갈랐다'인데 답안은 목적어를 'they(연구 대상 음악가 전체)'로 치환해 '그들이 나머지와 분리되었다'로 의미 변형, 'they' 지시도 모호(원문 they=psychologists). 발문 조건 '의미 유지' 자체를 모범답안이 위반",
+        "evidence": "they were found to be separated from the rest not by natural gift but by the amount of deliberate practice."
+      },
+      {
+        "type": "장문세트",
+        "sev": "major",
+        "what": "세트 발문과 실제 구성 불일치 — 발문은 '(제목 / 어휘 2문항)'인데 실제 subItems는 제목·요지·내용불일치(어휘 문항 0개)",
+        "evidence": "instruction: \"[세트] …(제목 / 어휘 2문항)\" vs subItems type: 제목·요지·내용불일치"
+      },
+      {
+        "type": "장문세트",
+        "sev": "major",
+        "what": "요지 문항 선지 5개 전부 한국어 문장 안에 영어 'excellence'가 미번역 상태로 노출(번역 파이프라인 누락) — 기출 정형(요지 선지=완전한 우리말) 위반",
+        "evidence": "① 재능이 excellence에 미치는 영향은 제한적이다. … ⑤ excellence를 위해선 재능뿐 아니라 의도적 연습이 필수적이다."
+      },
+      {
+        "type": "장문세트",
+        "sev": "major",
+        "what": "요지 ④·⑤ 상호배타성 부족 — 둘 다 '재능을 전제하면서 연습이 결정적/필수적'이라는 사실상 동일 명제여서 이중정답 소지(금지선지 '두 개 정답 가능' 해당)",
+        "evidence": "④ 재능 못지않게 연습의 질이 excellence에 결정적 영향을 미친다 / ⑤ 재능뿐 아니라 의도적 연습이 필수적이다"
+      },
+      {
+        "type": "요지",
+        "sev": "minor",
+        "what": "해설에 오답별 왜 틀림 없음(지식DB 해설 필수요소 위반). 또한 해설 속 정답 인용문이 실제 ② 선지 문구와 불일치",
+        "evidence": "해설: 정답 (卓越한 성과는 타고난 재능이 아니라 의식적인 연습의 질과 노력이 결정한다.) ↔ 실제 ②는 '타고난 재능이 없더라도…'"
+      },
+      {
+        "type": "주제",
+        "sev": "minor",
+        "what": "해설의 기계번역 오역 — deliberate practice를 '고의적 관행'으로 번역해 학생에게 오개념 유발 소지",
+        "evidence": "정답 (고의적 관행의 중요성)이 이를 반영한다."
+      },
+      {
+        "type": "주제",
+        "sev": "minor",
+        "what": "정답 명사구가 4어로 가이드([정답] 6~10어) 미달이며 5개 중 최단(4어 vs 5~7어) — 길이로 정답 단서화 소지",
+        "evidence": "Importance of deliberate practice (핵심 논지의 'in achieving excellence' 탈락)"
+      },
+      {
+        "type": "주제",
+        "sev": "minor",
+        "what": "해설에 오답별 왜 틀림 없음(지식DB '해설 필수요소: 오답별 왜 틀림' 위반)",
+        "evidence": "explanation 전문이 핵심 논지+출제의도만으로 구성, 오답 ①~⑤ 언급 없음"
+      },
+      {
+        "type": "제목",
+        "sev": "minor",
+        "what": "해설의 기계번역 문체 오류 — 경어체('낳습니다')와 오역('고의적인 연습')이 해설 톤과 불일치",
+        "evidence": "정답 (고의적인 연습은 탁월함을 낳습니다)이 이를 반영한다."
+      },
+      {
+        "type": "제목",
+        "sev": "minor",
+        "what": "해설에 오답별 왜 틀림 없음(지식DB 해설 필수요소 위반)",
+        "evidence": "explanation이 핵심 논지+출제의도만 포함, ①~⑤ 오답 근거 부재"
+      },
+      {
+        "type": "밑줄함의",
+        "sev": "minor",
+        "what": "순환 해설: 정답 선지 전문을 그대로 반복할 뿐 앞뒤 문장 근거 인용(가이드 필수)·오답 이유가 전무",
+        "evidence": "밑줄 친 부분은 'The journey to achieving greatness is constructed…'을 함의한다."
+      },
+      {
+        "type": "빈칸(어구)",
+        "sev": "minor",
+        "what": "정답 ⑤가 원문 표현 그대로(verbatim)인데 해설은 '패러프레이즈'라고 서술 — guide '정답은 원문 표현의 상위어 패러프레이즈, 정답 재진술 금지'와 배치되고 해설도 부정확",
+        "evidence": "explanation: \"'how we choose to train'가 들어가…(본문 'how we choose to train'의 패러프레이즈)\""
+      },
+      {
+        "type": "빈칸(어구)",
+        "sev": "minor",
+        "what": "explanation에 오답별 오답 이유가 전혀 없음(해설 필수요소 '오답별 왜 틀림' 누락)",
+        "evidence": "explanation 전문에 정답 근거+출제의도만 있고 ①~④ 언급 없음"
+      },
+      {
+        "type": "빈칸(문장)",
+        "sev": "minor",
+        "what": "intent 오분류 — 객관식 빈칸추론인데 서술형 영작용 출제의도('영어로 산출…표현력·조건 준수')가 붙음(체크리스트 10 해당)",
+        "evidence": "intent: \"지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함).\""
+      },
+      {
+        "type": "빈칸(문장)",
+        "sev": "minor",
+        "what": "explanation에 오답별 이유 없음(정답 재진술 근거만 제시)",
+        "evidence": "explanation: \"…재진술인 정답이 들어가야 글의 결론이 완성된다.\" 이후 오답 언급 없음"
+      },
+      {
+        "type": "빈칸(문장)",
+        "sev": "minor",
+        "what": "발문에 내부 태그 '(문장형)' 노출 — DB instruction과는 일치하나 ◆기출은 '동일 발문'(어구형과 같음)이라 실제 시험 발문에 없는 표기",
+        "evidence": "instruction: \"다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)\""
+      },
+      {
+        "type": "요약문AB",
+        "sev": "minor",
+        "what": "해설의 정답 표기가 실제 정답 선지 ①과 어휘 불일치('선천적 능력/목표 지향적 훈련' vs 선지의 '타고난 재능/계획적인 연습'), 조사 오류('훈련 가'), 오답쌍별 이유 없음",
+        "evidence": "explanation: \"(A) 선천적 능력 / (B) 목표 지향적 훈련 가 글의 요지를 정확히 요약한다.\""
+      },
+      {
+        "type": "어법(밑줄)",
+        "sev": "minor",
+        "what": "해설에 내부 검증 디버그 문구가 그대로 노출됨",
+        "evidence": "어법상 옳다. (LanguageTool 확인: the)"
+      },
+      {
+        "type": "어법(밑줄)",
+        "sev": "minor",
+        "what": "해설이 정답 수정만 제시하고 ⓐⓑⓒⓔ가 옳은 이유(오답 근거) 전무 — guide 요구('각 밑줄 전부 정오+규칙 근거+본문 단서어 인용') 미충족. 또한 제시 수정('the students who practiced')이 밑줄 내 유일 수정이 아님(practices로도 정문)",
+        "evidence": "정답 ⓓ의 'the student who practice with clear goals'는 'the students who practiced'로 고쳐야 어법상 옳다."
+      },
+      {
+        "type": "네모어법ABC",
+        "sev": "minor",
+        "what": "intent(출제의도) 오분류 — 어법 유형에 영작·서술형용 문구가 배정되었고 해설 【출제의도】에도 그대로 노출됨",
+        "evidence": "지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)"
+      },
+      {
+        "type": "네모어법ABC",
+        "sev": "minor",
+        "what": "해설이 네모별 결정 단서(주어·시제어·선행사) 없이 동어반복 — guide '해설에 각 선택의 결정 단서 인용' 미충족",
+        "evidence": "각 네모에서 문법 규칙상 원문 형태만 성립한다."
+      },
+      {
+        "type": "어법개수형",
+        "sev": "minor",
+        "what": "오류 ⓑ(research...tell)와 ⓔ(the paths...is)가 둘 다 수일치 범주 — guide '오류끼리 같은 범주 금지' 위반",
+        "evidence": "ⓑ<u>expert performers tell</u> ... ⓔ<u>the paths to excellence</u> is built"
+      },
+      {
+        "type": "어법개수형",
+        "sev": "minor",
+        "what": "해설에 정상 밑줄 ⓐⓓ의 정오 근거 없음, ⓑ 수정 근거(진짜 주어가 research임) 미제시 — 밑줄만 인용한 'expert performers tells' 표기가 학생에게 오히려 혼란 유발",
+        "evidence": "틀린 곳은 ⓑ(expert performers tell → expert performers tells), ⓒ(...), ⓔ(...) — 총 3개."
+      },
+      {
+        "type": "어휘(밑줄)",
+        "sev": "minor",
+        "what": "해설의 한국어 조사 오류('natural가'→'natural이') 및 정답 근거(대조 구문에서 왜 부적절한지)·오답 이유 부재 — guide '해설에 문맥 기능(대조/인과/재진술) 포함' 미충족",
+        "evidence": "정답 ⓒ는 'deliberate'인데 문맥상 원래의 'natural'가 적절하다."
+      },
+      {
+        "type": "글의순서",
+        "sev": "minor",
+        "what": "intent/출제의도가 배열 유형인데 영작·서술형용 문구로 오분류됨(체크리스트 10 해당). types_v2.json의 해당 유형 intent가 undefined라 잘못된 기본값으로 폴백된 것으로 보임 — 4유형 공통 버그",
+        "evidence": "\"intent\": \"지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함).\""
+      },
+      {
+        "type": "글의순서",
+        "sev": "minor",
+        "what": "explanation이 보일러플레이트 — guide가 요구하는 '단서 3개 각각 인용'과 '각 오답 배열의 단절 지점 명시'가 전혀 없음(오답 이유 부재)",
+        "evidence": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다."
+      },
+      {
+        "type": "문장삽입",
+        "sev": "minor",
+        "what": "explanation에 오답 위치가 안 되는 이유가 없음 — guide는 '선행사·연결 장치 인용, 오답 위치가 안 되는 이유 1개 이상' 요구",
+        "evidence": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치)."
+      },
+      {
+        "type": "문장삽입",
+        "sev": "minor",
+        "what": "intent/출제의도 오분류(영작 표현력 문구) — 글의순서와 동일한 폴백 버그",
+        "evidence": "\"intent\": \"지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함).\""
+      },
+      {
+        "type": "무관문장",
+        "sev": "minor",
+        "what": "무관문장 삽입 위치가 ⑤ — knowledge guide 자체 규정('삽입 위치는 ②~④ 중') 위반. 또한 ⑤ 뒤에 번호 없는 문장 2개가 남아 번호 구간이 지문 끝과 어긋나는 비정형 배치",
+        "evidence": "⑤ Some also argue that innate talent matters more in creative fields like art or writing... (뒤에 무번호 문장 2개 잔존)"
+      },
+      {
+        "type": "무관문장",
+        "sev": "minor",
+        "what": "explanation이 범용 문구 — guide가 요구하는 '삽입문이 깨뜨리는 앞뒤 연결'의 구체적 인용 없음",
+        "evidence": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다."
+      },
+      {
+        "type": "무관문장",
+        "sev": "minor",
+        "what": "intent/출제의도 오분류(영작 표현력 문구) — 공통 폴백 버그",
+        "evidence": "\"intent\": \"지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함).\""
+      },
+      {
+        "type": "조건영작",
+        "sev": "minor",
+        "what": "모범답안 영어가 어색함 — 삽입구 콤마 누락으로 'success not natural talent alone'이 한 덩어리로 읽힘(표준형: 'Deliberate practice, not natural talent alone, determines success.')",
+        "evidence": "[모범답안] Deliberate practice determines success not natural talent alone."
+      },
+      {
+        "type": "조건영작",
+        "sev": "minor",
+        "what": "서술형인데 answerText 필드 부재 — 모범답안이 explanation 문자열 안에만 존재(체크리스트 6 위반)",
+        "evidence": "\"choices\": [], \"answer\": 0  (answerText 키 없음)"
+      },
+      {
+        "type": "어형변형(괄호)",
+        "sev": "minor",
+        "what": "intent 오분류 — 어법 형태 결정(수일치·시제·태) 유형에 조건영작용 '영작 표현력·조건 준수' 문구가 그대로 붙음",
+        "evidence": "intent: \"지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함).\""
+      },
+      {
+        "type": "문장전환",
+        "sev": "minor",
+        "what": "발문 오탈자·조건 불완전 — 조사 '로' 누락, '(또는 능동태)'로 전환 방향 미확정, 흡수 전 유형 스펙의 'by구 처리 조건 명시'도 없음",
+        "evidence": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오."
+      },
+      {
+        "type": "문장전환",
+        "sev": "minor",
+        "what": "해설에 채점 루브릭·감점 포인트(시제·수일치·어순) 부재 — guide는 '감점 포인트 명시' 요구, 한 줄 포인트만 존재",
+        "evidence": "(포인트: 능동 문장(they found)을 수동 문장으로 전환(by구 명시))"
+      },
+      {
+        "type": "문장전환",
+        "sev": "minor",
+        "what": "서술형인데 answerText 필드 부재 — 모범답안이 explanation 안에만 존재",
+        "evidence": "\"choices\": [], \"answer\": 0  (answerText 키 없음)"
+      },
+      {
+        "type": "장문세트",
+        "sev": "minor",
+        "what": "내용불일치 선지 문자열에 자체 번호 '1.~5.'가 포함되어 렌더링 시 '① 1. …'처럼 번호가 중복 표기됨(다른 두 문항과 형식 불일치)",
+        "evidence": "\"1. 성공은 타고난 재능에 의해 결정된다는 믿음이 널리 퍼져 있다.\""
+      },
+      {
+        "type": "장문세트",
+        "sev": "minor",
+        "what": "해설 부실 — 세 문항 모두 오답별 이유 없음, 내용불일치 해설은 본문 인용 없는 한 줄(해설 필수요소 '정답근거+오답별 왜 틀림' 미충족)",
+        "evidence": "내용불일치 explanation: \"정답 진술만 글과 모순한다.\""
+      },
+      {
+        "type": "장문세트",
+        "sev": "minor",
+        "what": "해설 내 한국어 번역 오류·선지 원문 불일치 — 제목 해설 'Talent'를 '인재'로 오역, 요지 해설의 정답 인용문이 실제 ⑤ 선지 문면과 다름, 세트 내 용어 흔들림(의도적/의식적 연습)",
+        "evidence": "정답 (인재 vs. 신중한 연습: 성공의 원동력은 무엇일까요?) / 정답 (재능만이 아니라 의도적 연습이 탁월함의 핵심이다.)"
+      },
+      {
+        "type": "장문세트",
+        "sev": "minor",
+        "what": "세트 intent 오분류 — 객관식 독해 세트(제목·요지·불일치)에 조건영작용 '영작 표현력·조건 준수' 문구가 부착됨",
+        "evidence": "intent: \"지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함).\""
+      }
+    ],
+    "perType": [
+      {
+        "type": "요지",
+        "ok": false,
+        "ms": 11121,
+        "n": 3
+      },
+      {
+        "type": "주제",
+        "ok": true,
+        "ms": 8179,
+        "n": 3
+      },
+      {
+        "type": "제목",
+        "ok": false,
+        "ms": 10266,
+        "n": 3
+      },
+      {
+        "type": "밑줄함의",
+        "ok": false,
+        "ms": 60376,
+        "n": 3
+      },
+      {
+        "type": "빈칸(어구)",
+        "ok": false,
+        "ms": 5904,
+        "n": 4
+      },
+      {
+        "type": "빈칸(문장)",
+        "ok": false,
+        "ms": 5551,
+        "n": 4
+      },
+      {
+        "type": "연결어빈칸",
+        "ok": false,
+        "ms": 3050,
+        "n": 1
+      },
+      {
+        "type": "요약문AB",
+        "ok": false,
+        "ms": 5819,
+        "n": 4
+      },
+      {
+        "type": "어법(밑줄)",
+        "ok": true,
+        "ms": 4700,
+        "n": 3
+      },
+      {
+        "type": "네모어법ABC",
+        "ok": false,
+        "ms": 56781,
+        "n": 4
+      },
+      {
+        "type": "어법개수형",
+        "ok": true,
+        "ms": 2973,
+        "n": 3
+      },
+      {
+        "type": "어휘(밑줄)",
+        "ok": true,
+        "ms": 3496,
+        "n": 2
+      },
+      {
+        "type": "글의순서",
+        "ok": true,
+        "ms": 2749,
+        "n": 2
+      },
+      {
+        "type": "문장삽입",
+        "ok": false,
+        "ms": 1917,
+        "n": 3
+      },
+      {
+        "type": "무관문장",
+        "ok": true,
+        "ms": 4063,
+        "n": 3
+      },
+      {
+        "type": "내용일치",
+        "ok": false,
+        "ms": 92676,
+        "n": 1
+      },
+      {
+        "type": "조건영작",
+        "ok": false,
+        "ms": 4618,
+        "n": 3
+      },
+      {
+        "type": "어형변형(괄호)",
+        "ok": false,
+        "ms": 4430,
+        "n": 3
+      },
+      {
+        "type": "문장전환",
+        "ok": false,
+        "ms": 4014,
+        "n": 4
+      },
+      {
+        "type": "장문세트",
+        "ok": false,
+        "ms": 16969,
+        "n": 7
+      },
+      {
+        "type": "script-parse",
+        "ok": true,
+        "n": 0
+      },
+      {
+        "type": "api-crossref",
+        "ok": true,
+        "n": 0
+      },
+      {
+        "type": "types_v2-lint",
+        "ok": true,
+        "n": 0
+      },
+      {
+        "type": "api_team-version",
+        "ok": true,
+        "n": 0
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "가상 생성·감사"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "종합"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "audit:대의파악",
+      "phaseIndex": 1,
+      "phaseTitle": "가상 생성·감사",
+      "agentId": "ac9796e8d7e199f46",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1783536836370,
+      "queuedAt": 1783536834451,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA 엔지니어다. 작업 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n다음 유형들을 실엔진으로 생성하고 감사하라: 요지, 주제, 제목, 밑줄함의\n각 유형마다: Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형명>\" 실행(타임아웃 180초). 출력 JSON의 q가 실제 문항이다.\n감사 체크리스트(각 유형 공통):\n1) 생성 실패(null/HARNESS_ERR)=critical.\n2) 발문(instruction)이 기출 정형과 일치하는가(knowledge/types_v2.json 해당 유형의 instruction·◆기출 참조).\n3) 객관식이면 choices 정확히 5개, an…",
+      "lastProgressAt": 1783537159818,
+      "tokens": 47795,
+      "toolCalls": 13,
+      "durationMs": 323448,
+      "resultPreview": "{\"results\":[{\"type\":\"요지\",\"ok\":false,\"ms\":11121,\"note\":\"생성 성공, 발문 기출 정형 일치, passage:\\\"\\\"는 프런트(ai_maker.html:1657)가 원문 부착하는 설계상 정상. 그러나 정답 선지에 한자 깨짐 노출 + 정답 유일성 훼손.\",\"defects\":[{\"sev\":\"major\",\"what\":\"정답 선지(②)와 해설에 한자 '卓越' 노출 + 조사 붙여쓰기 오류 — 한글 문장 내 이상 문자(체크리스트 9)\",\"evidence\":\"타고난 재능이 없더라도 꾸준한 노력과 의식적인 연습으로卓越한 성과를 낼 수 있다.\"},{\"sev\":\"major\",\"what\":\"정답 유일성 훼손: 선지 ①③⑤가 모두 핵심 논지(연습>재능)와 같은 방향의 진술이라 복수 정답 소…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "audit:빈칸·요약",
+      "phaseIndex": 1,
+      "phaseTitle": "가상 생성·감사",
+      "agentId": "aeceda715f6780fc6",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1783536836165,
+      "queuedAt": 1783536834451,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA 엔지니어다. 작업 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n다음 유형들을 실엔진으로 생성하고 감사하라: 빈칸(어구), 빈칸(문장), 연결어빈칸, 요약문AB\n각 유형마다: Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형명>\" 실행(타임아웃 180초). 출력 JSON의 q가 실제 문항이다.\n감사 체크리스트(각 유형 공통):\n1) 생성 실패(null/HARNESS_ERR)=critical.\n2) 발문(instruction)이 기출 정형과 일치하는가(knowledge/types_v2.json 해당 유형의 instruction·◆기출 참조).\n3) 객관식이면 choice…",
+      "lastProgressAt": 1783537065716,
+      "tokens": 38625,
+      "toolCalls": 15,
+      "durationMs": 229550,
+      "resultPreview": "{\"results\":[{\"type\":\"빈칸(어구)\",\"ok\":false,\"ms\":5904,\"defects\":[{\"sev\":\"critical\",\"what\":\"passage가 원지문 전체가 아니라 빈칸이 든 마지막 1문장만 출력됨(guide의 '지문 축약 절대 금지' 위반). 문맥 단서가 전무해 문항이 성립하지 않음\",\"evidence\":\"\\\"passage\\\": \\\"In other words, the path to excellence is built not on what we are born with but on ____ .\\\"\"},{\"sev\":\"major\",\"what\":\"출력된 지문 기준 정답 유일성 붕괴 — 'not on what we are born with but on ~' 구문에 ② 'the luck …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "audit:어법·어휘",
+      "phaseIndex": 1,
+      "phaseTitle": "가상 생성·감사",
+      "agentId": "aaa94b0d8a883c389",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1783536836535,
+      "queuedAt": 1783536834451,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA 엔지니어다. 작업 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n다음 유형들을 실엔진으로 생성하고 감사하라: 어법(밑줄), 네모어법ABC, 어법개수형, 어휘(밑줄)\n각 유형마다: Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형명>\" 실행(타임아웃 180초). 출력 JSON의 q가 실제 문항이다.\n감사 체크리스트(각 유형 공통):\n1) 생성 실패(null/HARNESS_ERR)=critical.\n2) 발문(instruction)이 기출 정형과 일치하는가(knowledge/types_v2.json 해당 유형의 instruction·◆기출 참조).\n3) 객관식이면 choi…",
+      "lastProgressAt": 1783537169858,
+      "tokens": 40097,
+      "toolCalls": 8,
+      "durationMs": 333323,
+      "resultPreview": "{\"results\":[{\"type\":\"어법(밑줄)\",\"ok\":true,\"ms\":4700,\"note\":\"발문 정형 일치, 선지 5개, 정답 ⓓ 유일 오류(수일치) 확인. 문항 성립하나 표기·해설 결함 존재.\",\"defects\":[{\"sev\":\"major\",\"what\":\"오류 주입 시 문장 첫머리 대문자 소실 — ⓓ 밑줄이 문장 시작인데 소문자 'the'로 시작해 문법 외적 단서로 정답이 노출됨(원문 'The students who practiced'를 교체하며 대문자 미복원)\",\"evidence\":\"separated the best from the rest. ⓓ<u>the student who practice with clear goals</u> and immediate feedback improved\"},{…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "audit:흐름·세부",
+      "phaseIndex": 1,
+      "phaseTitle": "가상 생성·감사",
+      "agentId": "ad3831898257addd4",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1783536836852,
+      "queuedAt": 1783536834451,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA 엔지니어다. 작업 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n다음 유형들을 실엔진으로 생성하고 감사하라: 글의순서, 문장삽입, 무관문장, 내용일치\n각 유형마다: Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형명>\" 실행(타임아웃 180초). 출력 JSON의 q가 실제 문항이다.\n감사 체크리스트(각 유형 공통):\n1) 생성 실패(null/HARNESS_ERR)=critical.\n2) 발문(instruction)이 기출 정형과 일치하는가(knowledge/types_v2.json 해당 유형의 instruction·◆기출 참조).\n3) 객관식이면 choices 정확히 …",
+      "lastProgressAt": 1783537199585,
+      "tokens": 35681,
+      "toolCalls": 13,
+      "durationMs": 362733,
+      "resultPreview": "{\"results\":[{\"type\":\"글의순서\",\"ok\":true,\"ms\":2749,\"note\":\"발문 정형 일치(types_v2.json instruction과 동일). 선지 5개, answer=5 '(C)-(B)-(A)'는 원문 순서와 대조해 유일 정답 확인((C) However가 통념 반박, (B) The students가 (C)의 연구를 지시, (A) Such training이 (B)의 demanding practice를 지시). 금지선지·<u> 노출·U+FFFD 없음.\",\"defects\":[{\"sev\":\"minor\",\"what\":\"intent/출제의도가 배열 유형인데 영작·서술형용 문구로 오분류됨(체크리스트 10 해당). types_v2.json의 해당 유형 intent가 undefined라 잘못된…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "audit:서술형·세트",
+      "phaseIndex": 1,
+      "phaseTitle": "가상 생성·감사",
+      "agentId": "a1d3a8f94a777e8fc",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1783536837122,
+      "queuedAt": 1783536834451,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 출제 시스템 QA 엔지니어다. 작업 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\n다음 유형들을 실엔진으로 생성하고 감사하라: 조건영작, 어형변형(괄호), 문장전환, 장문세트\n각 유형마다: Bash로 cd \"C:/Users/이인혁/Desktop/변형문제생성기/web\" && node selfllm/engine_harness.js \"<유형명>\" 실행(타임아웃 180초). 출력 JSON의 q가 실제 문항이다.\n감사 체크리스트(각 유형 공통):\n1) 생성 실패(null/HARNESS_ERR)=critical.\n2) 발문(instruction)이 기출 정형과 일치하는가(knowledge/types_v2.json 해당 유형의 instruction·◆기출 참조).\n3) 객관식이면 choices …",
+      "lastProgressAt": 1783537182433,
+      "tokens": 61480,
+      "toolCalls": 8,
+      "durationMs": 345310,
+      "resultPreview": "{\"results\":[{\"type\":\"조건영작\",\"ok\":false,\"ms\":4618,\"note\":\"생성 성공. 조건 3종·8단어 검산 일치(모범답안 실측 8단어), 금지패턴·<u>·U+FFFD 없음, 루브릭 존재. ok=false 사유: 학생에게 직접 보이는 우리말 자극문이 기계번역 비문이라 수정 없이는 출제 불가. intent는 유형 성격과 부합.\",\"defects\":[{\"sev\":\"major\",\"what\":\"우리말 제시문이 비문(이중주어 기계번역체)이고 모범답안 의미('재능이 아니라 연습이 성공을 결정')를 정확히 전달하지 못해 학생이 목표 문장을 복원할 수 없음\",\"evidence\":\"우리말: 고의적인 연습이 성공을 결정하는 것은 천부적인 재능만이 아닙니다.\"},{\"sev\":\"minor\",\"what\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "audit:정적QA",
+      "phaseIndex": 1,
+      "phaseTitle": "가상 생성·감사",
+      "agentId": "aed01db7d5aa4b1a9",
+      "model": "claude-fable-5",
+      "state": "done",
+      "startedAt": 1783536840216,
+      "queuedAt": 1783536834452,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "너는 프론트엔드 QA다. 작업 폴더: C:/Users/이인혁/Desktop/변형문제생성기/web\nLLM 호출 없이 정적 검사만 하라:\n1) exam.html·ai_maker.html·sheet.html 각각의 <script> 블록이 파싱되는가 — node로 new Function(스크립트내용) 검사(외부 src 제외, 인라인만).\n2) exam.html·sheet.html이 호출하는 T.xxx / RAYTOOLS.xxx 함수가 api_team.js(window.APITEAM={...} 익스포트부)·raytools.js에 실제 존재하는가(grep 대조).\n3) knowledge/types_v2.json 린트: on:true 유형 전부에 type·instruction 존재, guide 2600자 초과, 중복 t…",
+      "lastProgressAt": 1783536972063,
+      "tokens": 34015,
+      "toolCalls": 8,
+      "durationMs": 131847,
+      "resultPreview": "{\"results\":[{\"type\":\"script-parse\",\"ok\":true,\"defects\":[],\"note\":\"인라인 <script> 전수 파싱(new Function/vm.Script): exam.html 2블록(164행 1줄, 168행~ 210줄), ai_maker.html 4블록(710·745·1674·2382행, 최대 929줄), sheet.html 1블록(126행~ 91줄) 모두 SyntaxError 없음. 나머지 <script>는 전부 외부 src(api_team.js·addon_key_guard.js·raytools.js·three.js CDN)라 대상 제외.\"},{\"type\":\"api-crossref\",\"ok\":true,\"defects\":[],\"note\":\"exam.html: var T…"
+    }
+  ],
+  "totalTokens": 257693,
+  "totalToolCalls": 65
+}

@@ -71,6 +71,8 @@ async function main() {
   console.log("🧠 server_brain 시작 " + ts() + " | provider: " + prov + " | LLM 예산 " + BUDGET + "콜" + (GAS ? " | GAS 연동" : " | GAS 미설정"));
   if (process.env.GROQ_API_KEY) T.configure({ groqKey: process.env.GROQ_API_KEY });
   if (process.env.GEMINI_API_KEY) T.configure({ geminiKey: process.env.GEMINI_API_KEY });
+  // 직접 키 소진(Groq 일일 토큰 429)돼도 학습이 멈추지 않도록 프록시 전체 폴백 체인 연결(서버측 호출은 Origin 없어 오리진잠금 통과)
+  T.configure({ proxyUrl: process.env.RAY_PROXY || "https://ray-proxy.gen1103.workers.dev" });
 
   try { await T.loadTypeDB("knowledge/types_v2.json"); console.log("유형DB: knowledge/types_v2.json"); }
   catch (_) { try { await T.loadTypeDB("types.json"); console.log("유형DB: types.json(폴백)"); } catch (_) {} }
@@ -224,6 +226,29 @@ async function main() {
     const ss = J("corpus/self_samples.json", { samples: [] });
     ss.updated = ts(); ss.samples = [...samples, ...(ss.samples || [])].slice(0, 12);
     W("corpus/self_samples.json", ss);
+
+    /* ── 시간별 보고서(핸드폰 열람용) ── */
+    try {
+      const cstat2 = T.corpusStat ? T.corpusStat() : {};
+      const sample0 = samples[0];
+      const report = {
+        at: ts(), atKST: new Date(Date.now() + 9 * 3600 * 1000).toISOString().replace("T", " ").slice(0, 16) + " KST",
+        headline: "이번 시간: 유형 " + (new Set(research.filter(r => r.category === "자가학습").map(r => r.topic)).size) +
+          "개 연습 · 신규 규칙 " + newRules.length + "개 · 검증샘플 " + samples.length + "개 · 회의 " + meetingsMd.length + "건",
+        newRules: newRules.map(r => ({ rule: r.rule, src: r.src })),
+        research: research.slice(0, 8).map(r => ({ cat: r.category, topic: r.topic, summary: String(r.summary || "").slice(0, 120) })),
+        corpusResearch: corpusNotes.map(c => ({ focus: c.focus, rule: c.rule })),
+        meetings: notices.slice(0, 4).map(n => ({ topic: n.topic, verdict: n.verdict, how: String(n.how || "").slice(0, 100) })),
+        totals: { rules: merged.length, corpusBooks: cstat2.books || 0, colloc: cstat2.colloc || 0, samplesStored: ss.samples.length },
+        sample: sample0 ? { type: sample0.type, instruction: (sample0.q || {}).instruction, answer: (sample0.q || {}).answer } : null
+      };
+      const rh = J("corpus/hourly_report.json", { history: [] });
+      rh.latest = report; rh.updated = ts(); rh.history = [{ at: report.at, headline: report.headline }].concat(rh.history || []).slice(0, 168);   // 최근 7일
+      W("corpus/hourly_report.json", rh);
+      // GAS(사용자 채널)로 푸시 — 설정 시 핸드폰 알림
+      if (GAS) { try { await realFetch(GAS, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ kind: "report", report: report }) }); console.log("보고서 GAS 푸시 완료"); } catch (_) {} }
+      console.log("📱 시간별 보고서 생성: " + report.headline);
+    } catch (e) { console.log("보고서 생성 오류:", e.message); }
 
     if (newRules.length) {
       const add = "\n## " + ts() + " 자동 반영 규칙\n" + newRules.map(r => "- " + r.rule + "  _(출처: " + r.src + ")_").join("\n") + "\n";

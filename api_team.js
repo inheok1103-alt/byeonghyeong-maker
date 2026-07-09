@@ -672,6 +672,15 @@
     var onP2 = opts && opts.onProgress;
     var o = await llmJSON([{ role: "system", content: "수능 빈칸추론 출제자. 빈칸은 필자의 핵심 주장·결론을 담은 자리에 두고 도입부 정의문·예시·부연은 피한다. JSON만." }, { role: "user", content: "다음 글에서 필자의 핵심 주장/결론을 담은 문장을 고르고, 그 문장에서 논지의 핵심 어구(3~8단어)를 ____ 로 비워라(도입부 첫 문장은 피할 것). 정답은 빈칸에 '문법적으로 그대로 들어맞는 간결한 영어 어구(완성 문장 절대 아님)'로, 본문 표현이 아니라 상위어·동의어로 패러프레이즈하라. JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"빈칸에 들어갈 정답 어구\",\"orig\":\"비운 원래 어구\",\"frame\":\"빈칸이 든 문장만(____ 포함)\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
     if (!o || !o.answer || !o.blanked) return null;
+    // 지문 축약 방어: blanked가 지문 대부분을 담지 않으면(LLM이 빈칸 문장만 반환) 원문에서 orig를 ____로 치환해 전체 지문 복원
+    var blanked = String(o.blanked);
+    var pw = passage.split(/\s+/).length, bw = blanked.split(/\s+/).length;
+    if (bw < pw * 0.6 || blanked.indexOf("____") < 0) {
+      var origP = String(o.orig || "").trim();
+      if (origP && passage.indexOf(origP) >= 0) blanked = passage.replace(origP, "____");
+      else return null;   // 복원 불가 → 실패 처리(상위 재시도)
+    }
+    o.blanked = blanked;
     log(onP2, '   ↳ 빈칸 프레임: "' + String(o.frame || "").slice(0, 70) + '"');
     log(onP2, '   ↳ 정답 어구: "' + String(o.answer).slice(0, 50) + '"' + (o.orig ? (' (원문 "' + String(o.orig).slice(0, 30) + '" 패러프레이즈)') : ''));
     var frame = o.frame || "";
@@ -717,13 +726,18 @@
   }
   // 요약: ① (A)(B) 빈칸 요약문+정답 → ② 오답 쌍
   async function buildSummary(passage) {
-    var o = await llmJSON([{ role: "system", content: "요약문완성 출제자. JSON만." }, { role: "user", content: "다음 글을 한 문장으로 요약하되 핵심어 두 곳을 (A),(B)로 비워라. JSON: {\"summary\":\"... (A) ... (B) ... 형태의 영어 요약문\",\"A\":\"정답 A 단어\",\"B\":\"정답 B 단어\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
+    var o = await llmJSON([{ role: "system", content: "요약문완성 출제자. JSON만." }, { role: "user", content: "다음 글을 한 문장으로 요약하되 핵심어 두 곳을 (A),(B)로 비워라. 요약문·(A)·(B)는 반드시 영어 단어여야 한다(한국어 금지). (A)(B)는 서로 다른 핵심 개념. JSON: {\"summary\":\"... (A) ... (B) ... 형태의 영어 요약문(빈칸엔 실제 단어 대신 (A)/(B) 표기만)\",\"A\":\"정답 A 영어단어\",\"B\":\"정답 B 영어단어\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
     if (!o || !o.A || !o.B) return null;
-    var dj = await llmJSON([{ role: "system", content: "오답 설계자. JSON만." }, { role: "user", content: "정답 (A)=" + o.A + ", (B)=" + o.B + " 와 의미가 다른 (A)/(B) 쌍 오답 4개. JSON 배열 [{\"A\":\"..\",\"B\":\"..\"}, ...] 만." }], { temperature: 0.7, timeout: 50000 });
+    // 영어 강제: (A)/(B)가 한글이면 실패(번역 대조 문항으로 변질 방지)
+    if (/[가-힣]/.test(String(o.A) + String(o.B))) return null;
+    // 요약문에 정답이 그대로 노출되지 않도록 (A)/(B) 자리 정규화
+    var summ = String(o.summary);
+    if (summ.indexOf("(A)") < 0) summ = summ.replace(o.A, "(A)"); if (summ.indexOf("(B)") < 0) summ = summ.replace(o.B, "(B)");
+    var dj = await llmJSON([{ role: "system", content: "오답 설계자. JSON만." }, { role: "user", content: "정답 (A)=" + o.A + ", (B)=" + o.B + " 와 의미가 다른 (A)/(B) 영어 단어쌍 오답 4개(한국어 금지, 반의·부분·무관·과장 각1). JSON 배열 [{\"A\":\"..\",\"B\":\"..\"}, ...] 만." }], { temperature: 0.7, timeout: 50000 });
     var ans = "(A) " + o.A + " … (B) " + o.B;
-    var dis = (Array.isArray(dj) ? dj : []).slice(0, 4).map(function (x) { return "(A) " + x.A + " … (B) " + x.B; });
+    var dis = (Array.isArray(dj) ? dj : []).slice(0, 4).filter(function (x) { return x && x.A && x.B && !/[가-힣]/.test(x.A + x.B); }).map(function (x) { return "(A) " + x.A + " … (B) " + x.B; });
     var a = await reviewOptions(ans, dis, { type: "요약" }); if (!a) return null;
-    return { type: "요약", instruction: "다음 요약문의 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: o.summary, choices: a.choices, answer: a.answer, explanation: "(A) " + o.A + " / (B) " + o.B + " 가 글의 요지를 정확히 요약한다." };
+    return { type: "요약문AB", instruction: "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: passage + "\n\n─────────\n[요약문]  " + summ, choices: a.choices, answer: a.answer, explanation: "(A) " + o.A + " / (B) " + o.B + " 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다." };
   }
   // 내용불일치/일치
   function factResult(wantMatch, st, ans, mode) {
@@ -731,8 +745,8 @@
   }
   async function buildFactCheck(passage, wantMatch) {
     var last = null;
-    for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "내용일치 출제자. JSON만." }, { role: "user", content: "다음 글의 내용에 관한 한국어 진술 5개를 만들어라. 정확히 1개만 글과 '" + (wantMatch ? "일치" : "불일치(모순)") + "'하고 나머지 4개는 그 반대가 되게 하라. 서로 모순되지 않도록(오답끼리도 지문과 " + (wantMatch ? "모순" : "일치") + ") 주의. JSON: {\"statements\":[\"진술 5개\"],\"answer\":정답번호1~5}.\n\n" + passage }], { temperature: attempt ? 0.5 : 0.4, timeout: 60000 });
+    for (var attempt = 0; attempt < 4; attempt++) {
+      var o = await llmJSON([{ role: "system", content: "내용일치 출제자. JSON만." }, { role: "user", content: "다음 글의 세부 정보(수치·시간·주체·행위·조건)에 관한 한국어 진술 5개를 만들어라. " + (wantMatch ? "정확히 1개만 지문 문장을 그대로 바꿔 쓴 '참', 나머지 4개는 세부 한 곳을 뒤집은 '거짓'." : "4개는 지문 문장을 그대로 바꿔 쓴 '참', 정확히 1개만 세부 한 곳(주체·시점·수치·긍부정)을 뒤집은 '거짓'.") + " 각 진술은 지문에 실제로 언급된 내용에만 근거하고, 지문에 없는 정보는 쓰지 마라. 진술끼리 서로 겹치거나 모순되지 않게. JSON: {\"statements\":[\"진술 5개\"],\"answer\":정답번호1~5}.\n\n" + passage }], { temperature: attempt ? 0.55 : 0.4, timeout: 60000 });
       if (!o || !Array.isArray(o.statements) || o.statements.length < 5) continue;
       var st = o.statements.slice(0, 5); last = { st: st, answer: parseInt(o.answer, 10) };
       // 검증: 각 진술이 지문과 모순되는지 별도 LLM으로 판정 → 정답을 코드로 도출(복수정답 차단)
@@ -755,7 +769,7 @@
       var re = new RegExp((/^[A-Za-z0-9]/.test(w) ? "\\b" : "") + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + (/[A-Za-z0-9]$/.test(w) ? "\\b" : ""), "i");
       var m = re.exec(rest); if (!m) return null;              // 등장순으로 못 찾으면 실패 → 재시도
       var shown = (i === corruptIdx) ? wrongWord : m[0];
-      if (i === corruptIdx) placed = m[0];                     // 원래 단어 기록
+      if (i === corruptIdx) { placed = m[0]; if (/^[A-Z]/.test(m[0]) && /^[a-z]/.test(shown)) shown = shown.charAt(0).toUpperCase() + shown.slice(1); }  // 문장 첫머리 대문자 보존(오류주입이 소문자 단서로 노출되던 버그)
       out += rest.slice(0, m.index) + circ.charAt(i) + "<u>" + shown + "</u>";
       rest = rest.slice(m.index + m[0].length); count++;
     }
@@ -770,7 +784,10 @@
       var o = await llmJSON([{ role: "system", content: "어휘(문맥상 부적절) 출제자. JSON만." }, { role: "user", content: "다음 지문에서 서로 다른 핵심 단어 5개를 '지문에 나온 그대로(등장 순서)' 고르고, 그 중 1개를 문맥상 명백히 부적절한 반의어로 바꿀지 정하라. 참고 반의어쌍: " + (brief || "-") + ". JSON: {\"words\":[\"지문에 실제로 있는 단어 5개(등장순)\"],\"wrongIndex\":1~5,\"wrong\":\"그 자리에 넣을 부적절 반의어(한 단어)\",\"correct\":\"원래 맞는 단어\"}. JSON만.\n\n" + passage }], { temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
       if (!o || !Array.isArray(o.words) || o.words.length < 5 || !o.wrong) continue;
       var wi = parseInt(o.wrongIndex, 10); if (!(wi >= 1 && wi <= 5)) wi = 1;
-      var mk = markWords(passage, o.words.slice(0, 5), wi - 1, String(o.wrong).replace(/[^A-Za-z\- ]/g, "").trim());  // 코드가 밑줄+치환
+      var wrongW = String(o.wrong).replace(/[^A-Za-z\- ]/g, "").trim();
+      // 정답 교체어가 지문에 이미 존재하면 자기모순(deliberate practice, not deliberate gift)·즉시 노출 → 재시도
+      if (!wrongW || new RegExp("\\b" + wrongW.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i").test(passage)) continue;
+      var mk = markWords(passage, o.words.slice(0, 5), wi - 1, wrongW);  // 코드가 밑줄+치환
       if (!mk || mk.count < 5) continue;                       // 5개 다 못 찾으면 재시도
       return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + "는 '" + o.wrong + "'인데 문맥상 원래의 '" + (o.correct || mk.orig) + "'가 적절하다.", _audit: "정답위치 코드생성됨(치환·밑줄 모두 코드처리)" };
     }
@@ -1081,11 +1098,15 @@
   // ===== 신규 유형 빌더군: 정답을 '코드가' 알거나 검증하는 설계 =====
   function splitSentences(p) {
     var s = String(p || "").replace(/\s+/g, " ").trim();
+    // 약어의 마침표를 문장 경계로 오인하지 않게 보호(Dr./e.g./U.S. 등에서 문장이 잘리고 소실되던 버그 수정)
+    var AB = /\b(Dr|Mr|Mrs|Ms|Prof|Sr|Jr|St|Mt|vs|etc|e\.g|i\.e|cf|approx|Fig|No|Vol|pp|U\.S|U\.K|Ph\.D|a\.m|p\.m)\./gi;
+    s = s.replace(AB, function (m) { return m.split(".").join("␟"); });
     var out = s.match(/[^.!?]+[.!?]+(?:["')\]]+)?/g) || [];
     // 종결부호 없이 끝나는 마지막 조각(붙여넣기 시 흔한 마침표 누락)도 포함 — 문장 소실 방지
     var consumed = out.join("").length, tail = s.slice(consumed).trim();
     if (tail && tail.split(" ").length >= 3) out.push(tail);
-    return out.map(function (x) { return x.trim(); }).filter(function (x) { return x.split(" ").length >= 3; });
+    out = out.map(function (x) { return x.replace(/␟/g, ".").trim(); });
+    return out.filter(function (x) { return x.split(" ").length >= 3; });
   }
   var CIRCN = ["①", "②", "③", "④", "⑤"];
   // 여러 자리를 동시에 오형태로 치환하는 markWords 확장(어법 개수형·네모형)
@@ -1095,10 +1116,21 @@
       var w = String(words[i] || "").trim(); if (!w) return null;
       var re = new RegExp((/^[A-Za-z0-9]/.test(w) ? "\\b" : "") + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + (/[A-Za-z0-9]$/.test(w) ? "\\b" : ""), "i");
       var m = re.exec(rest); if (!m) return null;
-      out += rest.slice(0, m.index) + circ.charAt(i) + "<u>" + (corruptMap && corruptMap[i + 1] ? corruptMap[i + 1] : m[0]) + "</u>";
+      var shown = (corruptMap && corruptMap[i + 1]) ? corruptMap[i + 1] : m[0];
+      if (corruptMap && corruptMap[i + 1] && /^[A-Z]/.test(m[0]) && /^[a-z]/.test(shown)) shown = shown.charAt(0).toUpperCase() + shown.slice(1);   // 대문자 보존
+      out += rest.slice(0, m.index) + circ.charAt(i) + "<u>" + shown + "</u>";
       rest = rest.slice(m.index + m[0].length); count++;
     }
     return { text: out + rest, count: count };
+  }
+  // 비단어/무의미 오형태 판별 — 형용사·부사·명사에 -s, 또는 어미에 -e/-ee 덧붙인 가짜 오류(alone→alonee, natural→naturals) 차단
+  function badInflect(c, w) {
+    c = String(c || "").trim().toLowerCase(); w = String(w || "").trim().toLowerCase();
+    if (!c || !w || c === w) return true;
+    if (w === c + "e" || w === c + "ee") return true;
+    // -s를 형용사/부사에 붙인 가짜(natural→naturals, deliberate→deliberates). 동사(give→gives)는 -ive라 통과
+    if (w === c + "s" && /(?:al|ate|ous|ful|ly|ary|ic|less|ish)$/.test(c)) return true;
+    return false;
   }
   // 전체문장배열(ORDER_ALL_SENTENCES_MODE): 모든 문장 번호화 배열 — 셔플·선지·정답 전부 코드 생성(LLM 불필요)
   function buildOrderAll(passage) {
@@ -1158,13 +1190,14 @@
     var given = ss[pick];
     var rest2 = ss.slice(0, pick).concat(ss.slice(pick + 1));
     // 삽입 슬롯 5개: 정답(pick 위치=rest2에서 pick 앞 경계) 포함 연속 5경계
-    var slotStart = Math.max(1, Math.min(pick - 2, rest2.length - 4));   // 경계 인덱스(문장 j 앞) j=slotStart..slotStart+4
+    var slotStart = Math.max(1, Math.min(pick - 2, rest2.length - 4));   // 마지막 슬롯이 문미(j=rest2.length)까지 허용
     var ansSlot = pick - slotStart + 1; if (!(ansSlot >= 1 && ansSlot <= 5)) return null;
     var pg = "", n = 0;
-    for (var j = 0; j < rest2.length; j++) {
-      if (j >= slotStart && j < slotStart + 5) { n++; pg += " ( " + CIRCN[n - 1] + " ) "; }
-      pg += (j ? " " : "") + rest2[j];
+    for (var j = 0; j <= rest2.length; j++) {                            // j=rest2.length: 마지막 문장 뒤 슬롯도 배치 → 항상 5개 보장
+      if (j >= slotStart && n < 5) { n++; pg += " ( " + CIRCN[n - 1] + " ) "; }
+      if (j < rest2.length) pg += (j ? " " : "") + rest2[j];
     }
+    if (n < 5) return null;                                             // 슬롯 5개 미확보 시 실패(선지 개수 불일치 방지)
     return { type: "문장삽입", instruction: "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?", passage: "[주어진 문장] " + given + "\n\n" + pg.trim(), choices: CIRCN.slice(), answer: ansSlot, explanation: "주어진 문장의 연결 단서가 " + CIRCN[ansSlot - 1] + " 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).", _audit: "정답 코드생성됨(추출·슬롯 배치를 코드가 수행)" };
   }
   // 무관문장: LLM이 '소재는 같지만 논지 이탈' 문장 1개 작성 → 코드가 삽입 위치를 정한다
@@ -1185,12 +1218,29 @@
   }
   // 연결어빈칸: 지문 속 연결어를 코드가 탐지·빈칸화 → 정답 쌍을 코드가 안다
   var CONNECTIVES = { 대조: ["However", "In contrast", "Nevertheless", "On the other hand"], 인과: ["Therefore", "Thus", "As a result", "Consequently"], 예시: ["For example", "For instance"], 첨가: ["In addition", "Moreover", "Furthermore", "Similarly"], 전환: ["Instead", "Meanwhile", "Otherwise"] };
-  function buildConnective(passage) {
+  // 연결어 폴백: 코드 사전에 없는 담화표지(In other words·In fact 등)만 있는 지문 → LLM이 두 곳을 지정, 빈칸화·선지는 코드가
+  async function connectiveLLM(passage) {
+    var BANK = { 대조: ["However", "In contrast", "Nevertheless"], 인과: ["Therefore", "As a result", "Consequently"], 예시: ["For example", "For instance"], 첨가: ["In addition", "Moreover", "Similarly"], 재진술: ["In other words", "That is", "To put it simply"], 강조: ["In fact", "Indeed", "Above all"] };
+    var o = await llmJSON([{ role: "system", content: "연결어 출제자. JSON만." }, { role: "user", content: "다음 글에서 문장 첫머리 담화 연결 표현 두 곳(앞쪽 A, 뒤쪽 B)을 찾아라. 각각 지문에 실제로 있는 표현 그대로와 그 논리 관계(대조/인과/예시/첨가/재진식/강조 중 하나)를 답하라. JSON: {\"A\":\"앞쪽 연결어(원문 그대로)\",\"Ag\":\"관계\",\"B\":\"뒤쪽 연결어(원문 그대로)\",\"Bg\":\"관계\"}. JSON만.\n\n" + passage }], { temperature: 0.3, timeout: 55000 });
+    if (!o || !o.A || !o.B) return null;
+    function findAt(term) { var re = new RegExp("(^|[.!?]\\s+)" + String(term).replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+"), "i"); var m = re.exec(passage); return m ? { at: m.index + m[1].length, len: m[0].length - m[1].length } : null; }
+    var pa = findAt(o.A), pb = findAt(o.B);
+    if (!pa || !pb || pb.at <= pa.at) return null;                        // 원문 위치 확인·순서 보장(환각 차단)
+    var Ac = passage.substr(pa.at, pa.len), Bc = passage.substr(pb.at, pb.len);
+    var pg = passage.slice(0, pa.at) + "___(A)___" + passage.slice(pa.at + pa.len, pb.at) + "___(B)___" + passage.slice(pb.at + pb.len);
+    function wrongOf(g) { var ks = Object.keys(BANK).filter(function (k) { return k !== g; }); var k = ks[rint(ks.length)]; return BANK[k][rint(BANK[k].length)]; }
+    var correct = Ac + " …… " + Bc, set = {}, ch = [correct], ig = 0; set[correct] = 1;
+    while (ch.length < 5 && ig++ < 40) { var w = (rint(2) ? Ac : wrongOf(o.Ag)) + " …… " + wrongOf(o.Bg); if (w !== correct && !set[w]) { set[w] = 1; ch.push(w); } }
+    if (ch.length < 5) return null;
+    ch.sort(function () { return Math.random() - 0.5; });
+    return { type: "연결어빈칸", instruction: "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?", passage: pg, choices: ch, answer: ch.indexOf(correct) + 1, explanation: "(A)는 앞 내용과 '" + (o.Ag || "") + "' 관계로 " + Ac + ", (B)는 '" + (o.Bg || "") + "' 관계로 " + Bc + "가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.", _audit: "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화)" };
+  }
+  async function buildConnective(passage) {
     var all = []; Object.keys(CONNECTIVES).forEach(function (g) { CONNECTIVES[g].forEach(function (c) { all.push({ c: c, g: g }); }); });
     var found = [];
     all.forEach(function (x) { var re = new RegExp("(^|[.!?]\\s+)" + x.c.replace(/ /g, "\\s+") + "\\b", "g"); var m; while ((m = re.exec(passage))) found.push({ c: x.c, g: x.g, at: m.index + m[1].length }); });
     found.sort(function (a, b) { return a.at - b.at; });
-    if (found.length < 2) return null;
+    if (found.length < 2) return await connectiveLLM(passage);   // 하드코딩 사전에 없는 연결어(In other words 등)만 있으면 LLM 폴백
     var A = found[0], B = found[found.length - 1];
     var pg = passage.slice(0, A.at) + "___(A)___" + passage.slice(A.at + A.c.length, B.at) + "___(B)___" + passage.slice(B.at + B.c.length);
     function wrongOf(g) { var ks = Object.keys(CONNECTIVES).filter(function (k) { return k !== g; }); var k = ks[rint(ks.length)]; return CONNECTIVES[k][rint(CONNECTIVES[k].length)]; }
@@ -1207,11 +1257,11 @@
   async function buildGrammarCount(passage) {
     var k = 2 + rint(2);
     for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 짧은 구절(각 2~6단어, 등장순)'로 고르고, 그 중 정확히 " + k + "곳의 '문법 오형태'를 만들어라(철자 오타 금지 — 수일치·태·준동사·관계사·병렬 등). JSON: {\"phrases\":[\"구절 5개(등장순, 원문 그대로)\"],\"errors\":[{\"index\":1~5,\"wrong\":\"그 구절의 틀린 형태\"} " + k + "개]}. JSON만.\n\n" + passage }], { noRule: true, temperature: 0.5, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 짧은 구절(각 2~6단어, 등장순)'로 고르고, 그 중 정확히 " + k + "곳의 '문법 오형태'를 만들어라. ★실제 어법 오류만(수일치 is↔are, 태 given↔giving, 준동사 shape↔shaping, 관계사 which↔where, 병렬). 절대 금지: 없는 단어(alonee), 형용사·부사에 -s(naturals·deliberates), 단순 철자 변형. JSON: {\"phrases\":[\"구절 5개(등장순, 원문 그대로)\"],\"errors\":[{\"index\":1~5,\"wrong\":\"그 구절의 틀린 형태\"} " + k + "개]}. JSON만.\n\n" + passage }], { noRule: true, temperature: 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.phrases) || o.phrases.length < 5 || !Array.isArray(o.errors)) continue;
       var phr = o.phrases.slice(0, 5).map(String);
       var map = {}, ok = true, used = {};
-      o.errors.slice(0, k).forEach(function (e) { var i = parseInt(e.index, 10); if (!(i >= 1 && i <= 5) || used[i] || !e.wrong || normTok(e.wrong) === normTok(phr[i - 1])) { ok = false; return; } used[i] = 1; map[i] = String(e.wrong).trim(); });
+      o.errors.slice(0, k).forEach(function (e) { var i = parseInt(e.index, 10); if (!(i >= 1 && i <= 5) || used[i] || !e.wrong || normTok(e.wrong) === normTok(phr[i - 1]) || badInflect(phr[i - 1], e.wrong)) { ok = false; return; } used[i] = 1; map[i] = String(e.wrong).trim(); });   // 비단어(deliberate→deliberates) 오형태 차단
       if (!ok || Object.keys(map).length !== k) continue;
       var mk = markWordsMulti(passage, phr, map);
       if (!mk || mk.count < 5) continue;
@@ -1223,10 +1273,10 @@
   async function buildBoxABC(passage, mode) {
     var isVocab = mode === "vocab";
     for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: (isVocab ? "어휘" : "어법") + " 출제자. JSON만." }, { role: "user", content: "다음 지문에서 " + (isVocab ? "문맥 판단이 필요한 핵심 단어" : "어법 판단 지점(짧은 구절 2~4단어)") + " 3곳을 '지문에 나온 그대로(등장순)' 고르고, 각각의 " + (isVocab ? "문맥상 부적절한 반의어" : "문법 오형태(철자 오타 금지)") + "를 만들어라. JSON: {\"items\":[{\"correct\":\"원문 그대로\",\"wrong\":\"틀린 형태\"} 3개(등장순)]}. JSON만.\n\n" + passage }], { noRule: true, temperature: 0.5, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: (isVocab ? "어휘" : "어법") + " 출제자. JSON만." }, { role: "user", content: "다음 지문에서 " + (isVocab ? "문맥 판단이 필요한 핵심 단어" : "어법 판단 지점(짧은 구절 2~4단어)") + " 3곳을 '지문에 나온 그대로(등장순)' 고르고, 각각의 " + (isVocab ? "문맥상 부적절한 반의어" : "문법 오형태") + "를 만들어라. " + (isVocab ? "" : "★오형태는 반드시 '문법 범주가 바뀌는 실제 어법 오류'여야 한다. 좋은 예: is↔are(수일치), shape↔shaping(준동사), which↔where(관계사), given↔giving(태), to raise↔raising(부정사/동명사). 절대 금지: 없는 단어 만들기(alone→alonee ✗), 형용사·부사에 -s 붙이기(natural→naturals ✗, deliberate→deliberates ✗), 단순 철자 변형. 각 correct는 그 오류가 실제로 성립하는 구절이어야 한다. ") + "JSON: {\"items\":[{\"correct\":\"원문 그대로\",\"wrong\":\"틀린 형태\"} 3개(등장순)]}. JSON만.\n\n" + passage }], { noRule: true, temperature: 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.items) || o.items.length < 3) continue;
       var items = o.items.slice(0, 3).map(function (x) { return { c: String(x.correct || "").trim(), w: String(x.wrong || "").trim() }; });
-      if (items.some(function (x) { return !x.c || !x.w || normTok(x.c) === normTok(x.w); })) continue;
+      if (items.some(function (x) { return !x.c || !x.w || normTok(x.c) === normTok(x.w) || (!isVocab && badInflect(x.c, x.w)); })) continue;   // 비단어 철자쌍(alone→alonee, natural→naturals) 차단
       // 코드가 순서대로 (A)(B)(C) 네모 삽입 + 각 네모의 [좌/우] 배열 랜덤
       var rest = passage, out = "", okAll = true, keyArr = [];
       var LBL = ["(A)", "(B)", "(C)"];
@@ -1289,8 +1339,9 @@
     var idx = ss.length - 1 - rint(2);   // 마지막 또는 그 앞 문장
     var target = ss[idx];
     var pg = ss.map(function (s, i) { return i === idx ? "[                         ]" : s; }).join(" ");
-    var o = await llmJSON([{ role: "system", content: "빈칸(문장형) 출제자. JSON만." }, { role: "user", content: "빈칸 자리의 원문 문장: \"" + target + "\"\n이 문장을 의미 동일하게 패러프레이즈한 '정답 문장' 1개와, 글의 논지와 어긋나는 오답 문장 4개(부분일치·정반대·무관·과장 각 1)를 만들어라. 길이·형태 통일. JSON: {\"answer\":\"정답 문장\",\"wrong\":[\"오답 4개\"]}. JSON만.\n\n[전체 지문]\n" + passage }], { temperature: 0.5, timeout: 60000 });
+    var o = await llmJSON([{ role: "system", content: "빈칸(문장형) 출제자. JSON만." }, { role: "user", content: "빈칸 자리의 원문 문장: \"" + target + "\"\n이 문장을 의미 동일하게 패러프레이즈한 '정답 문장' 1개와, 글의 논지와 어긋나는 오답 문장 4개(부분일치·정반대·무관·과장 각 1)를 만들어라. ★모든 선지는 반드시 영어 문장(한국어 절대 금지). 길이·형태 통일. JSON: {\"answer\":\"영어 정답 문장\",\"wrong\":[\"영어 오답 4개\"]}. JSON만.\n\n[전체 지문]\n" + passage }], { temperature: 0.5, timeout: 60000 });
     if (!o || !o.answer || !Array.isArray(o.wrong) || o.wrong.length < 4) return null;
+    if (/[가-힣]/.test(String(o.answer) + o.wrong.join(""))) return null;   // 한국어 선지면 실패(영어 지문에 한글 삽입 방지)
     var ch = [String(o.answer)].concat(o.wrong.slice(0, 4).map(String));
     ch.sort(function () { return Math.random() - 0.5; });
     var ai = ch.indexOf(String(o.answer)) + 1;
@@ -1590,7 +1641,29 @@
       "어휘": "문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.",
       "내용불일치": "세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다.",
       "내용일치": "세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-    }[type] || "지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함).";
+    }[type];
+    if (!base) {   // 사전 미등재 유형: 정규식 매핑(과거엔 전부 영작 문구로 오분류되던 결함 수정)
+      var RX = [
+        [/목적/, "글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다."],
+        [/심경|분위기/, "행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다."],
+        [/주장/, "필자의 당위 주장을 근거와 함께 파악하는 능력을 평가한다."],
+        [/전체문장|순서/, "응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."],
+        [/삽입/, "주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."],
+        [/무관/, "글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."],
+        [/연결어/, "앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."],
+        [/지칭/, "대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."],
+        [/어법/, "문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."],
+        [/어휘|유의어/, "문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."],
+        [/안내문|도표/, "실용 정보를 지문과 대조해 진위를 판별하는 능력을 평가한다."],
+        [/영영풀이/, "영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."],
+        [/장문|복합|혼합/, "한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."],
+        [/빈칸/, "문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."]
+      ];
+      for (var ri = 0; ri < RX.length; ri++) if (RX[ri][0].test(type)) { base = RX[ri][1]; break; }
+    }
+    if (!base) base = /영작|서술|전환|해석|고쳐|완성|변형|수정|쓰기|첫글자/.test(type)
+      ? "지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+      : "지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.";
     return base + (core ? (" [핵심 논지: " + core + "]") : "");
   }
   function stampIntent(q) { if (!q) return q; q.intent = intentFor(q); if (String(q.explanation || "").indexOf("【출제의도】") < 0) q.explanation = String(q.explanation || "") + "\n【출제의도】 " + q.intent; return q; }
@@ -1752,7 +1825,7 @@
     var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 2600); setLevelRule(type, opts.level);
     var q = null; for (var _try = 0; _try < 3 && !q; _try++) { try { q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type); } catch (_e) { q = null; } }
     // 태그 위생: LLM이 &lt;u&gt;로 이스케이프해 뱉으면 화면에 <u>가 글자로 노출됨 → 실태그로 복원 + u/b 외 태그 제거
-    if (q) { var _tg = function (s) { return String(s).replace(/&lt;(\/?)(u|b)&gt;/gi, "<$1$2>").replace(/<(?!\/?[ub]>)[^>]{1,40}>/g, ""); };
+    if (q) { var _tg = function (s) { return String(s).replace(/&lt;(\/?)(u|b)&gt;/gi, "<$1$2>").replace(/<(?!\/?[ub]>)\/?[A-Za-z][^<>]{0,38}>/g, ""); };   // 태그꼴만 제거 — 'a < b and c > d' 같은 수식 오탐 방지
       ["passage", "instruction", "explanation", "answerText"].forEach(function (k) { if (q[k]) q[k] = _tg(q[k]); });
       if (q.choices && q.choices.length) q.choices = q.choices.map(_tg);
       // 서술형 단어수는 모범답안 실측 기준(Ray) — 발문의 "N단어"가 실측과 2 이상 어긋나면 실측으로 교정
