@@ -48,6 +48,7 @@ global.window = global.window || {};
 require("./api_team.js");
 const T = window.APITEAM;
 require("./addon_key_guard.js"); // generateOne/generateExam에 정답키 3중 가드 자동 장착
+var PSY = null; try { PSY = require("./addon_psychometric.js"); } catch (e) { }   // 측정 하네스(변별도·난이도·오답효율)
 
 /* ── 유틸 ── */
 const J = (rel, def) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, rel), "utf8")); } catch (_) { return def; } };
@@ -115,9 +116,16 @@ async function main() {
           if (rv && /불가/.test(String(rv.verdict || ""))) {
             research.push({ date: day(), category: "검수", topic: t.type, summary: "검수관 '사용 불가' → 샘플 폐기: " + (((rv.errors || [])[0] || {}).issue || rv.multi || ""), rule: "" });
           } else {
+            // 측정 하네스: 능력계층 솔버로 변별도·난이도·오답효율 추정(예산 여유 시)
+            let psy = null;
+            if (PSY && PSY.panel && q.choices && q.choices.length >= 4 && used < BUDGET - 12) {
+              psy = await PSY.panel(q, pg, T).catch(() => null); used += 3;
+              if (psy && psy.ok) research.push({ date: day(), category: "측정검수", topic: t.type, summary: psy.summary, rule: "" });
+            }
             samples.push({
               ts: ts(), type: t.type, level: q.level || "중", audit: q._audit || "",
               review: rv ? { verdict: rv.verdict, errors: (rv.errors || []).length, multi: rv.multi || "" } : null,
+              psychometric: (psy && psy.ok) ? { P: psy.P, D: psy.D, distractorEff: psy.distractorEff, pass: psy.pass, flags: psy.flags } : null,
               q: { instruction: q.instruction, passage: q.passage, choices: q.choices, answer: q.answer, explanation: q.explanation }
             });
           }
