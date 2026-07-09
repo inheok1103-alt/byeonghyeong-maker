@@ -830,10 +830,10 @@
   async function buildGrammar(passage) {
     var gecEx = gecExamples(2);
     for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 짧은 구절(각 2~7단어, 문장 전체 복사 금지, 등장 순서)'로 고르고, 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★수능 원칙: 5곳은 반드시 '서로 다른 문장'에 배치하고(한 문장에 2곳 이상 금지) '서로 다른 문법 범주'여야 한다. ★철자 오타 금지 — 수일치·시제·태(능/수동)·준동사(to부정사/동명사/분사)·관계사·병렬·전치사 등 문법 오류만. JSON: {\"phrases\":[\"짧은 구절 5개(등장순, 원문 그대로, 서로 다른 문장)\"],\"cats\":[\"각 구절 문법범주 5개(수일치|시제|태|준동사|분사|관계사|병렬|전치사|형용사부사|비교|가정법)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 문법적으로 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases의 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 유형 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 고르고 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★밑줄 최소단위: 각 구절은 '문법 판단이 걸리는 바로 그 부분만 1~4단어'로 짧게 — 긴 구·절 통째 금지. 실제 수능/사관 예: have unearthed(수일치)·containing(분사)·which(관계사)·to enhance(부정사)·sound(형용사보어)처럼 판단 지점만. ★5곳은 반드시 서로 다른 문장·서로 다른 문법 범주. ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법만. JSON: {\"phrases\":[\"판단지점 구절 5개(각 1~4단어, 등장순, 원문 그대로, 서로 다른 문장)\"],\"cats\":[\"각 문법범주 5개(수일치|시제|태|준동사|분사|관계사|병렬|전치사|형용사부사|비교|가정법)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.phrases) || o.phrases.length < 5 || !o.error || String(o.error).trim() === String(o.correct || "").trim()) continue;
       var phr = o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); });
-      if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 8; })) continue;   // 문장통째 구절 → 짧은 어구로 재시도(마지막 시도는 수용)
+      if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 5; })) continue;   // 밑줄 최소단위(≤5단어) — 긴 구·절이면 재시도(실제 기출 밑줄은 1~3단어)
       if (!spreadOK(passage, phr, attempt)) continue;   // 밑줄 분산: 한 문장 몰림 방지(수능 원칙)
       if (attempt < 2 && Array.isArray(o.cats)) { var uc = {}; o.cats.slice(0, 5).forEach(function (c) { uc[normTok(c)] = 1; }); if (Object.keys(uc).length < 4) continue; }   // 문법 범주 다양성(4종↑)
       // wrongIndex 자기보고 불신: correct와 동일한 구절을 코드로 탐색(0-기준 응답 등 오류 방어)
@@ -930,10 +930,10 @@
   async function buildGrammarEdit(passage) {
     for (var attempt = 0; attempt < 3; attempt++) {
       var gecEx = gecExamples(2);
-      var o = await llmJSON([{ role: "system", content: "고교 어법 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 '지문에 나온 그대로의 짧은 구절(각 2~7단어, 문장 전체 복사 금지, 등장 순서)'로 고르고, 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법 오류만." + (gecEx ? (" 오류 유형 예: " + gecEx) : "") + " JSON: {\"phrases\":[\"짧은 구절 5개(등장순, 원문 그대로)\"],\"wrongIndex\":1~5,\"error\":\"그 구절의 틀린 형태\",\"correct\":\"원래 올바른 구절(=phrases의 해당 항목과 동일)\"}. JSON만.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: "고교 어법 서술형 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 고르고 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★밑줄 최소단위: 판단이 걸리는 부분만 1~4단어로 짧게(긴 구·절 금지, 예: have unearthed·which·to enhance). ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법만." + (gecEx ? (" 오류 예: " + gecEx) : "") + " JSON: {\"phrases\":[\"판단지점 구절 5개(각 1~4단어, 등장순, 원문 그대로)\"],\"wrongIndex\":1~5,\"error\":\"그 구절의 틀린 형태\",\"correct\":\"원래 올바른 구절(=phrases 해당 항목과 동일)\"}. JSON만.\n\n" + passage }], { noRule: true, temperature: attempt ? 0.5 : 0.4, timeout: 55000 });
       if (o && Array.isArray(o.phrases) && o.phrases.length >= 5 && o.error && String(o.error).trim() !== String(o.correct || "").trim()) {
         var phr = o.phrases.slice(0, 5).map(function (p) { return String(p || "").trim(); });
-        if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 8; })) continue;   // 문장통째 → 짧은 어구로 재시도
+        if (attempt < 2 && phr.some(function (p) { return p.split(/\s+/).length > 5; })) continue;   // 밑줄 최소단위(≤5단어)
         var wi = -1;
         for (var pi = 0; pi < phr.length; pi++) { if (normTok(phr[pi]) === normTok(o.correct)) { wi = pi + 1; break; } }
         if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
