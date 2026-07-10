@@ -775,6 +775,12 @@
       else return null;   // 복원 불가 → 실패 처리(상위 재시도)
     }
     o.blanked = blanked;
+    // 오설(malformed) 빈칸 방어: ____가 단어 글자에 붙어(mid-word 'd____tance') 있으면 원문 어구로 재구성, 여전하면 폐기
+    if (/[A-Za-z]____|____[A-Za-z]/.test(o.blanked)) {
+      var op2 = String(o.orig || "").trim();
+      if (op2 && passage.indexOf(op2) >= 0) o.blanked = passage.replace(op2, "____");
+      if (/[A-Za-z]____|____[A-Za-z]/.test(o.blanked)) return null;
+    }
     log(onP2, '   ↳ 빈칸 프레임: "' + String(o.frame || "").slice(0, 70) + '"');
     log(onP2, '   ↳ 정답 어구: "' + String(o.answer).slice(0, 50) + '"' + (o.orig ? (' (원문 "' + String(o.orig).slice(0, 30) + '" 패러프레이즈)') : ''));
     var frame = o.frame || "";
@@ -783,6 +789,10 @@
     // 형태 가드: 완성문장형(주어+be/조동사 시작) 선지를 어구형으로 축약
     var ch = (a.choices || []).map(function (c) { return String(c).replace(/^\s*(happiness|it|one|people|the individual|this|they|we|society)\s+(is|are|was|were|has|have|can|will|becomes?)\s+/i, "").trim(); });
     if (blankVerbatim(ch[a.answer - 1] || o.answer, passage)) return null;   // 최종 선지 verbatim 재검(reviewOptions가 원문어구로 복원했을 가능성 차단)
+    // 동의어 복수정답 방어: 오답이 정답과 의미상 동치(functions as/acts as/works as 류)면 유일해 붕괴 → 폐기(리롤)
+    var disFin = ch.filter(function (_, i) { return i !== a.answer - 1; });
+    var uniqDis = await flagEquivalents(ch[a.answer - 1] || o.answer, disFin).catch(function () { return disFin; });
+    if (uniqDis.length < disFin.length) return null;
     return { type: "빈칸", instruction: "다음 빈칸에 들어갈 말로 가장 적절한 것은?", passage: o.blanked, choices: ch, answer: a.answer, explanation: "빈칸에는 '" + o.answer + "'가 들어가 글의 논지를 완성한다" + (o.orig ? (" (본문 '" + o.orig + "'의 패러프레이즈)") : "") + "." };
   }
   // 함의: ① 밑줄 구절+의미 → ② 역할별 오답
