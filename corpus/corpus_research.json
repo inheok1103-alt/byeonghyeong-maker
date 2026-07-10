@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-10T20:45:58.333Z",
+ "updated": "2026-07-10T22:19:50.926Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
- "count": 16,
+ "count": 17,
  "notes": [
+  {
+   "ts": "2026-07-10T22:19:23.526Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사구 내의 복수 명사 결합 시 콤마(,) 삽입이 누락되어 오류가 발생하며, 특히 'self-confidence'와 같이 하이픈으로 연결된 복합명사는 오류 발생 가능성이 높다.",
+   "rule": "복수 명사나 복합명사가 나열된 경우, 각 항목 사이에 콤마(,)를 반드시 삽입하여 명사구 구조를 명확히 한다. 예: 'self-confidence' → 'self confidence' 또는 'inefficient heating and decaying plumbing' → 'inefficient heating, and decaying plumbing'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-10T20:45:31.393Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
