@@ -1009,6 +1009,22 @@
       if (COP.test(e) && COP.test(c) && !/\w{3,}ly\b/.test(e) && /\w{3,}ly\b/.test(c)) return true;  // 계사+형용사(정문 error) ↔ 계사+부사(비문 correct)=뒤바뀜
       return false;
     }
+    // 비오류(문법상 양쪽 다 옳음) 차단 — '오류 없는데 고치라'는 문항 방지(적대감사 HIGH: angles/optional copula)
+    function nonError(err, cor) {
+      var e = " " + String(err || "").toLowerCase().trim() + " ", c = " " + String(cor || "").toLowerCase().trim() + " ";
+      var strip = function (s, re) { return s.replace(re, " ").replace(/\s+/g, " ").trim(); };
+      // ① 상관비교급 선택적 계사: 'the more … is' ↔ 'the more …'(is 생략은 문체 선택)
+      if (/\bthe (more|less|greater|higher|lower|bigger)\b/.test(e + c) && strip(e, /\bis\b/) === strip(c, /\bis\b/)) return true;
+      // ② that 생략(선택): 'say/think/know that X' ↔ 'say/think/know X'
+      if (strip(e, /\bthat\b/) === strip(c, /\bthat\b/) && e !== c) return true;
+      // ③ 정관사+가산명사 단복수 'the Xs of' ↔ 'the X of'(둘 다 문법 성립)
+      var ew = e.trim().split(/\s+/), cw = c.trim().split(/\s+/);
+      if (ew.length === cw.length) {
+        var di = [], k; for (k = 0; k < ew.length; k++) if (ew[k] !== cw[k]) di.push([ew[k], cw[k]]);
+        if (di.length === 1) { var a = di[0][0], b = di[0][1]; if ((a === b + "s" || b === a + "s") && /\b(the|its|their|his|her|our|your)\b/.test(e) && /\bof\b/.test(e + c)) return true; }
+      }
+      return false;
+    }
     for (var attempt = 0; attempt < 3; attempt++) {
       var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 고르고 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★밑줄 최소단위: 각 구절은 '문법 판단이 걸리는 바로 그 부분만 1~4단어'로 짧게 — 긴 구·절 통째 금지. 실제 수능/사관 예: have unearthed(수일치)·containing(분사)·which(관계사)·to enhance(부정사)·sound(형용사보어)처럼 판단 지점만. ★5곳은 반드시 서로 다른 문장·서로 다른 문법 범주. ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법만. JSON: {\"phrases\":[\"판단지점 구절 5개(각 1~4단어, 등장순, 원문 그대로, 서로 다른 문장)\"],\"cats\":[\"각 문법범주 5개(수일치|시제|태|준동사|분사|관계사|병렬|전치사|형용사부사|비교|가정법)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.phrases) || o.phrases.length < 5 || !o.error || String(o.error).trim() === String(o.correct || "").trim()) continue;
@@ -1026,6 +1042,7 @@
       for (var pi = 0; pi < phr.length; pi++) { if (normTok(phr[pi]) === normTok(o.correct)) { wi = pi + 1; break; } }
       if (wi < 0) { var win = parseInt(o.wrongIndex, 10); wi = (win >= 1 && win <= 5) ? win : 1; }
       if (invertedPair(o.error, o.correct)) continue;   // 정답키 correctness 하드게이트(LT 독립): 뒤바뀜·무변화면 폐기
+      if (nonError(o.error, o.correct)) continue;        // 비오류(양쪽 다 정문: 선택적 계사·that생략·가산명사 단복수) 폐기
       var mk = markWords(passage, phr, wi - 1, String(o.error).trim());   // 코드가 밑줄+오류주입
       if (!mk || mk.count < 5) continue;
       var g0 = []; try { g0 = await grammar(passage.replace(/<[^>]+>/g, " ")); } catch (_) {}
@@ -1104,12 +1121,18 @@
     var ap = isWrite
       ? ("다음 지문을 읽고 " + task + " 담은 '영어 한 문장'을 써라 — 12~22단어, 어법 완전, 본문 문장을 통째로 복사하지 말고 재구성. 문장만 출력.")
       : ("다음 지문을 읽고 " + task + " 담은 '한국어 한 문장'으로 써라(자연스럽게). 문장만 출력.");
-    var ans = await ask(ap + "\n\n" + passage, "문장 하나만. 번호·따옴표·설명 금지.", { noRule: true, temperature: 0.5 });
-    ans = String(ans || "").replace(/^["'·\-\s]+|["'\s]+$/g, "").split(/\n/)[0].trim();
+    function langOf(s) { return (String(s).match(/[A-Za-z]/g) || []).length > (String(s).match(/[가-힣]/g) || []).length; }
+    var ans = "";
+    for (var la = 0; la < 2; la++) {   // 언어 불일치 시 1회 재시도(발문·답 언어 일치 강제)
+      var raw = await ask(ap + (la ? ("\n★반드시 " + (isWrite ? "영어" : "한국어") + "로만 쓸 것.") : "") + "\n\n" + passage, "문장 하나만. 번호·따옴표·설명 금지.", { noRule: true, temperature: la ? 0.55 : 0.5 });
+      ans = String(raw || "").replace(/^["'·\-\s]+|["'\s]+$/g, "").split(/\n/)[0].trim();
+      if (ans && ans.split(/\s+/).length >= 4 && langOf(ans) === isWrite) break;
+    }
     if (!ans || ans.split(/\s+/).length < 4) return null;
+    var eng = langOf(ans);   // ★발문·조건은 '실제 답안 언어'에 맞춰 조립(발문-답 언어 불일치 근절)
     // ② 조건 역산(영작형): 필수어(답안 핵심 내용어) + 단어수 밴드
     var conds = [];
-    if (isWrite) {
+    if (eng) {
       var wc = essayWordCount(ans);
       var keys = (ans.match(/[A-Za-z][A-Za-z\-]{3,}/g) || []).filter(function (w) { return !STOP[w.toLowerCase()]; });
       var seen = {}, uniq = []; keys.forEach(function (w) { var k = w.toLowerCase(); if (!seen[k]) { seen[k] = 1; uniq.push(w); } });
@@ -1118,8 +1141,8 @@
       if (picks.length >= 2) conds.push("다음 단어를 반드시 포함할 것: " + picks.map(function (w) { return "'" + w + "'"; }).join(", "));
       conds.push(Math.max(3, wc - 2) + "~" + (wc + 2) + "단어로 쓸 것");
     }
-    // ③ 발문 조립
-    var stem = isWrite
+    // ③ 발문 조립 — 실제 답안 언어(eng) 기준
+    var stem = eng
       ? (/의견/.test(t) ? "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오." : /요약/.test(t) ? "다음 글의 내용을 영어 한 문장으로 요약하여 서술하시오." : "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.")
       : "다음 글의 핵심 내용(필자의 주장·요지)을 우리말 한 문장으로 서술하시오.";
     var instr = stem + (conds.length ? ("\n〈조건〉 " + conds.join(" / ")) : "");
