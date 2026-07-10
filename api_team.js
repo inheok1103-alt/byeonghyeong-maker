@@ -2034,7 +2034,9 @@
   async function rxFeedback(q, passage) {
     try {
       if (!q || !q.choices || q.choices.length < 4 || !(q.answer >= 1 && q.answer <= q.choices.length)) return q;
-      if (String(q.explanation || "").indexOf("[오답 진단·처방]") >= 0) return q;
+      // 재생성 계약: 기존 [오답 진단·처방]/_rx가 있으면 지우고 '현재 정답' 기준으로 다시 만든다(정답 변경 후 스테일 방지)
+      q.explanation = String(q.explanation || "").replace(/\n?\[오답 진단·처방\][\s\S]*?(?=\n【출제의도】|$)/, "");
+      q._rx = null;
       var CIRC = ["①", "②", "③", "④", "⑤"];
       var isMark = q.choices.every(function (c) { return /^[ⓐ-ⓔ①-⑤]$/.test(String(c).trim()); });
       var chTxt = isMark ? "선지는 지문 속 표식 " + q.choices.join(" ") + " 이다(지문에서 해당 위치를 보라)." : q.choices.map(function (c, i) { return CIRC[i] + " " + c; }).join("\n");
@@ -2143,6 +2145,20 @@
     }
     return list;
   }
+  // 정답이 바뀐 뒤(rebalance/솔버) 선지별 분석을 현재 정답에 재동기화 — '정답 칸을 오답으로 기술'하는 자기모순 차단
+  function pruneStaleAnalysis(q) {
+    if (!q || !q.choices || !(q.answer >= 1)) return q;
+    var CN = ["①", "②", "③", "④", "⑤"], ans = q.answer, ex = String(q.explanation || "");
+    if (q._choiceNotes && q._choiceNotes.length) {
+      q._choiceNotes.forEach(function (nt) { nt.correct = (nt.n === ans); if (nt.correct) nt.dna = ""; });   // 정답=현재 answer로 재지정, 새 정답의 오답DNA 제거
+      var anal = q._choiceNotes.map(function (nt) { return CN[nt.n - 1] + " " + (nt.correct ? "정답 — 핵심 논지 반영" : ("오답 — " + dnaWhy(nt.dna))); }).join(" · ");
+      if (/\[선지 분석\]/.test(ex)) ex = ex.replace(/\[선지 분석\][^\n]*/, "[선지 분석] " + anal);
+    }
+    // 해설 첫머리 '정답 ⓝ/①~⑤' 마커를 현재 정답으로 교정
+    ex = ex.replace(/정답\s*[①②③④⑤]/, "정답 " + CN[ans - 1]);
+    q.explanation = ex;
+    return q;
+  }
   async function generateExam(passage, types, opts) {
     opts = opts || {}; var onP = opts.onProgress, onT = opts.onType || function () {}, USE = null; USE_ENSEMBLE = !!opts.ensemble;
     log(onP, "■ 1단계: 자료 수집반 가동(전 API)…");
@@ -2176,7 +2192,7 @@
         if (got) {
           if (TYPE_INSTR[t] && !hasRichInstr(got.instruction, TYPE_INSTR[t])) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
           if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 }); }
-          await rxFeedback(got, passage); stampIntent(got); stampWork(got); got._ms = Date.now() - t0;
+          stampIntent(got); stampWork(got); got._ms = Date.now() - t0;   // rxFeedback은 rebalance 후로 이동(정답 확정 후 생성)
           results[i] = got;
           if (opts.onItem) try { opts.onItem(got, i); } catch (_) {}   // 완성 즉시 UI로 스트리밍
           onT(t, "done", got._ms);
@@ -2196,7 +2212,8 @@
     }
     var out = results.filter(Boolean);
     if (out.length >= 3) { rebalanceAnswers(out); log(onP, "   ↳ 정답위치 균등 분산(조립단계) 적용"); }   // Haladyna: 위치편향 제거
-    out.forEach(function (it) { delete it._work; stampWork(it); });   // 정답 재배치 후 워크북 재스탬프(reveal 정답번호 desync 방지)
+    out.forEach(function (it) { pruneStaleAnalysis(it); delete it._work; stampWork(it); });   // 재배치 후 선지분석 재동기화 + 워크북 재스탬프
+    await Promise.all(out.map(function (it) { return rxFeedback(it, passage).catch(function () { return it; }); }));   // 정답 확정 후 오답 진단·처방 생성(rebalance 뒤)
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
   }
@@ -2493,6 +2510,6 @@
     brainStructure: brainStructure, regionOf: regionOf,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank,
-    rebalanceAnswers: rebalanceAnswers, stampWork: stampWork, rxFeedback: rxFeedback
+    rebalanceAnswers: rebalanceAnswers, stampWork: stampWork, rxFeedback: rxFeedback, pruneStaleAnalysis: pruneStaleAnalysis
   };
 })();

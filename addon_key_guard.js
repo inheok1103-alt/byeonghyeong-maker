@@ -50,6 +50,8 @@
   /* ── 게이트② 블라인드 솔버 3표 다수결 ── */
   async function solverGate(q, original, T) {
     if (!q || !q.choices || q.choices.length < 4 || isLabelMCQ(q)) return null;
+    // 순서·배열형은 코드가 원문 순서로 정답을 결정(권위) — 솔버 다수결이 정답을 덮어쓰지 못하게(글의순서 2→3 훼손 방지). 플래그만.
+    if (/순서|배열|문장배열|전체문장/.test(q.type || "")) return { ok: "코드권위 정답(순서·배열형) — 솔버 교정 비활성" };
     var pg = String(q.passage || original || "").slice(0, 1400);
     var CIRC = ["①", "②", "③", "④", "⑤"];
     var user = q.instruction + "\n\n[지문]\n" + pg + "\n\n" + q.choices.map(function (c, i) { return CIRC[i] + " " + c; }).join("\n") + "\n\n정답 번호만 출력.";
@@ -99,6 +101,14 @@
   }
 
   function annotate(q, tag) { q._audit = ((q._audit ? q._audit + " · " : "") + tag).slice(0, 220); }
+  // 가드가 정답을 바꾼 뒤 파생 필드(선지분석·오답진단·워크북)를 새 정답에 재동기화 — 자기모순 해설 차단
+  async function resyncAfterKeyChange(q, passage, T) {
+    try {
+      if (T.pruneStaleAnalysis) T.pruneStaleAnalysis(q);       // _choiceNotes·[선지 분석]·정답마커 재정렬
+      if (T.rxFeedback) await T.rxFeedback(q, passage);        // [오답 진단·처방] 새 정답 기준 재생성(계약상 기존 것 지우고 다시)
+    } catch (_) {}
+    return q;
+  }
 
   async function guardItem(q, original, T, onP) {
     if (!q) return { item: null, status: "empty" };
@@ -147,10 +157,11 @@
       try {
         var items = await oGX.call(T, passage, types, opts), out = [];
         for (var i = 0; i < (items || []).length; i++) {
+          var oldA = items[i] && items[i].answer;
           var r = await guardItem(items[i], passage, T, opts.onProgress);
-          if (r.item) out.push(r.item);
+          if (r.item) { out.push(r.item); if (r.item.answer !== oldA) await resyncAfterKeyChange(r.item, passage, T); }   // 가드가 정답 바꾸면 파생(선지분석·오답진단·워크북) 재동기화
         }
-        out.forEach(function (it) { if (T.stampWork && (it.answer !== undefined)) { delete it._work; T.stampWork(it); } });   // 가드가 정답 교정한 뒤 워크북 재스탬프(reveal 정답 desync 방지)
+        out.forEach(function (it) { if (T.stampWork && (it.answer !== undefined)) { delete it._work; T.stampWork(it); } });
         try { if (opts.onProgress) opts.onProgress("🛡 키가드 요약 — 점검 " + STATS.checked + " · 코드교정 " + STATS.codeFixed + " · 솔버교정 " + STATS.solverFixed + " · 플래그 " + STATS.flagged + " · 폐기 " + STATS.dropped); } catch (_) {}
         return out;
       } finally { resume(); }
@@ -159,8 +170,9 @@
       opts = opts || {}; var resume = pauseLoops();
       try {
         var q = await oG1.call(T, passage, type, opts);
+        var oldA = q && q.answer;
         var r = await guardItem(q, passage, T, opts.onProgress);
-        if (r.item && T.stampWork) { delete r.item._work; T.stampWork(r.item); }   // 가드 정답교정 후 워크북 재스탬프
+        if (r.item) { if (r.item.answer !== oldA) await resyncAfterKeyChange(r.item, passage, T); if (T.stampWork) { delete r.item._work; T.stampWork(r.item); } }
         return r.item;
       } finally { resume(); }
     };
