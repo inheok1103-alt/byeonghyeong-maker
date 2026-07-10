@@ -612,12 +612,14 @@
   // ===== 선지 제작 팀: 5개 선지를 최종 검수·정리(형태통일·정답유일·어법·어구화) =====
   // 형태단서(length cue) 측정 — 정답만 유독 길면 '제일 긴 것=정답'으로 답이 샌다(Haladyna 형태단서 제거 원칙)
   function choiceLen(s) { return String(s || "").replace(/\s+/g, " ").trim().length; }
-  function answerIsLongCued(ch, ai) {
+  function answerIsLongCued(ch, ai) {   // 정답이 길이 이상치(최장 OR 최단)면 형태단서 — 양방향
     if (!(ch && ch.length >= 4 && ai >= 1 && ai <= ch.length)) return false;
     if (ch.every(function (c) { return /^[ⓐ-ⓔ①-⑤]$/.test(String(c).trim()); })) return false;   // 밑줄/위치형 제외
     var L = ch.map(choiceLen), a = L[ai - 1], oth = L.filter(function (_, i) { return i !== ai - 1; });
-    var maxO = Math.max.apply(null, oth), meanO = oth.reduce(function (s, x) { return s + x; }, 0) / oth.length;
-    return a >= maxO && (a > maxO * 1.3 || a > meanO * 1.5) && (a - maxO) >= 6;   // 최장 + 2등比 30%↑ 또는 평균比 50%↑
+    var maxO = Math.max.apply(null, oth), minO = Math.min.apply(null, oth);
+    var longCue = a >= maxO && a > maxO * 1.3 && (a - maxO) >= 6;    // 정답 최장
+    var shortCue = a <= minO && minO > a * 1.3 && (minO - a) >= 6;   // 정답 최단(짧은 게 정답)
+    return longCue || shortCue;
   }
   async function reviewOptions(answer, dis, ctx) {
     ctx = ctx || {};
@@ -634,7 +636,7 @@
       if (answerIsLongCued(ch, ai)) {
         var ansT = ch[ai - 1], others = ch.filter(function (_, i) { return i !== ai - 1; });
         var rr = await llmJSON([{ role: "system", content: "선지 균질화 검수관. JSON 배열만." },
-          { role: "user", content: "정답(고정·수정 금지): \"" + ansT + "\"\n아래 오답 4개가 정답보다 짧아 '제일 긴 것 = 정답'이라는 형태 단서가 노출된다. 정답과 비슷한 길이·구문·구체성으로 오답 4개를 다시 써라 — 각자 틀린 이유(부분·전도·초점이탈·과장)는 유지하고, 정답과 의미가 겹치지 않게(복수정답 금지), 지문 소재·어휘를 재활용해 그럴듯하게. 유형:" + (ctx.type || "") + "\n오답: " + JSON.stringify(others) + "\nJSON 문자열 배열 4개만." }], { temperature: 0.5, timeout: 50000 }).catch(function () { return null; });
+          { role: "user", content: "정답(고정·수정 금지, 길이 " + ansT.replace(/\s+/g, " ").length + "자): \"" + ansT + "\"\n정답만 유독 길거나 짧아 '길이로 정답이 티나는' 형태 단서가 있다. 오답 4개를 '정답과 비슷한 길이·구문·구체성'으로 다시 써라(정답이 짧으면 오답도 짧게, 길면 길게 맞춰라) — 각자 틀린 이유(부분·전도·초점이탈·과장)는 유지하고, 정답과 의미가 겹치지 않게(복수정답 금지), 지문 소재·어휘를 재활용해 그럴듯하게. 유형:" + (ctx.type || "") + "\n오답: " + JSON.stringify(others) + "\nJSON 문자열 배열 4개만." }], { temperature: 0.5, timeout: 50000 }).catch(function () { return null; });
         var nd = Array.isArray(rr) ? rr.map(clean1).filter(function (c) { return c && !badChoice(c); }) : [];
         if (nd.length >= 4) { var merged = [], di = 0; for (var mi = 0; mi < 5; mi++) merged.push(mi === ai - 1 ? ansT : nd[di++]); ch = merged; }
       }
