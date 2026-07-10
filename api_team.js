@@ -709,7 +709,9 @@
     if (/한국어/.test(infMeta(type).kind)) {
       st.choices = st.choices.map(function (c) { return String(c).replace(/([가-힣])([A-Za-z]{2,})/g, "$1 $2").replace(/([A-Za-z]{2,})([가-힣])/g, "$1 $2").trim(); });   // 글자붙은 한영토큰 분리
       var mixed = st.choices.some(function (c) { var lat = (String(c).match(/[A-Za-z]/g) || []).length, ko = (String(c).match(/[가-힣]/g) || []).length; return lat > 6 && lat > ko; });
-      if (mixed) return null;   // 한국어 유형인데 영어 선지 → 상위 재시도(다른 시드로 재생성)
+      // 한영 혼용 붕괴: 영어 어구에 조사가 직접 붙는 선지("their ability 을") — 문장 성립 안 됨 → 폐기
+      var broken = st.choices.some(function (c) { return /[A-Za-z]{2,}\s*[을를이가은는의도]\s/.test(String(c) + " "); });
+      if (mixed || broken) return null;   // 한국어 유형인데 영어 선지/혼용 붕괴 → 상위 재시도
     }
     log(onP, '   ↳ 핵심 논지: "' + String(st.main || "").slice(0, 72) + '"');
     log(onP, '   ↳ 정답 초안: "' + String(st.answer || "").slice(0, 64) + '" · 오답 ' + (st.dis || []).length + '개 설계');
@@ -1785,11 +1787,31 @@
       if (kw) { var bg = await wiki(String(kw).replace(/[^A-Za-z ]/g, "").trim()).catch(function () { return null; }); if (bg && bg.extract) background = bg.extract.slice(0, 260); }
     } catch (_) {}
     var extra = await extraP;
+    // 성분 parse 정규화: 대괄호 누락("S xxx,V yyy")도 [S xxx] [V yyy]로 복원, 라벨 없으면 폐기
+    function normComp(c) {
+      if (!c || !c.parse || !(c.n >= 1)) return null;
+      var p = String(c.parse).trim();
+      if (!/\[[SVOCM]\s/.test(p) && /(^|,)\s*[SVOCM]\s+/.test(p)) {
+        p = p.split(/,(?=\s*[SVOCM]\s+)/).map(function (seg) { var m = seg.trim().match(/^([SVOCM])\s+([\s\S]+)$/); return m ? ("[" + m[1] + " " + m[2].trim() + "]") : seg.trim(); }).join(" ");
+      }
+      return /\[[SVOCM]\s/.test(p) ? { n: c.n, parse: p } : null;
+    }
+    var comps = ((extra && extra.components) || []).map(normComp).filter(Boolean);
+    // 커버리지 보강: 빠진 문장은 1회 추가 요청(전 문장 S/V/O/C/M 보장)
+    var have = {}; comps.forEach(function (c) { have[c.n] = 1; });
+    var missing = sents.map(function (_, i) { return i + 1; }).filter(function (n) { return !have[n]; });
+    if (missing.length) {
+      var miss = missing.map(function (n) { return n + ". " + sents[n - 1]; }).join("\n");
+      var ex2 = await llmJSON([{ role: "system", content: "영어 문장 성분 분석가. JSON만." },
+        { role: "user", content: "각 문장을 성분 청크로 빠짐없이 분해하라. 각 청크는 반드시 [라벨 원문어구] 대괄호 형식, 라벨은 S/V/O/C/M만(예: [S Honeybees] [V communicate] [O the location] [M through a dance]).\n" + miss + "\n\nJSON: {\"components\":[{\"n\":문장번호,\"parse\":\"[S ...] [V ...] ...\"}]}. JSON만." }], { noRule: true, timeout: 60000 }).catch(function () { return null; });
+      ((ex2 && ex2.components) || []).map(normComp).filter(Boolean).forEach(function (c) { if (!have[c.n]) { have[c.n] = 1; comps.push(c); } });
+    }
+    comps.sort(function (a, b) { return a.n - b.n; });
     return {
       topic: String(o.topic_ko || ""), thesis: String(o.thesis_ko || ""), flow: flow, sents: rows,
       vocab: (o.vocab || []).slice(0, 6), expr: (o.expr || []).slice(0, 6), connect: (o.connect || []).slice(0, 6),
       points: (o.points || []).slice(0, 4), background: background,
-      components: ((extra && extra.components) || []).filter(function (c) { return c && c.parse; }).slice(0, 3),
+      components: comps,
       examFlow: ((extra && extra.exam_flow) || []).filter(function (f) { return f && f.feature && f.type; }).slice(0, 6)
     };
   }
@@ -1982,9 +2004,12 @@
       var isMark = q.choices.every(function (c) { return /^[ⓐ-ⓔ①-⑤]$/.test(String(c).trim()); });
       var chTxt = isMark ? "선지는 지문 속 표식 " + q.choices.join(" ") + " 이다(지문에서 해당 위치를 보라)." : q.choices.map(function (c, i) { return CIRC[i] + " " + c; }).join("\n");
       var pg = String(q.passage || passage || "").slice(0, 1100);
-      var j = await llmJSON([{ role: "system", content: "너는 학생 오답 클리닉 교사다. 골랐던 오답에서 사고 과정의 결함을 짚고 교정 행동을 처방한다. JSON만." },
-        { role: "user", content: "[지문]\n" + pg + "\n\n[발문] " + String(q.instruction).split("\n")[0] + "\n[선지]\n" + chTxt + "\n[정답] " + q.answer + "번\n\n정답을 제외한 각 선지에 대해: 학생이 '그 선지를 골랐다면' ①무엇을 어떻게 오독·혼동했는지(진단 — 지문 근거 인용) ②다음부터 어떻게 풀어야 하는지(처방 — 행동지침 1개)를 각 1줄로. JSON: {\"rx\":[{\"n\":선지번호,\"diag\":\"진단\",\"fix\":\"처방\"}]} — 정답(" + q.answer + "번) 제외 " + (q.choices.length - 1) + "개. JSON만." }], { noRule: true, temperature: 0.35, timeout: 55000 }).catch(function () { return null; });
-      var rx = (j && Array.isArray(j.rx)) ? j.rx.filter(function (x) { return x && x.n >= 1 && x.n <= q.choices.length && x.n !== q.answer && (x.diag || x.fix); }) : [];
+      var rx = [];
+      for (var ra = 0; ra < 2 && rx.length < 3; ra++) {   // 1회 재시도(일시 실패 흡수)
+        var j = await llmJSON([{ role: "system", content: "너는 학생 오답 클리닉 교사다. 골랐던 오답에서 사고 과정의 결함을 짚고 교정 행동을 처방한다. JSON만." },
+          { role: "user", content: "[지문]\n" + pg + "\n\n[발문] " + String(q.instruction).split("\n")[0] + "\n[선지]\n" + chTxt + "\n[정답] " + q.answer + "번\n\n정답을 제외한 각 선지에 대해: 학생이 '그 선지를 골랐다면' ①무엇을 어떻게 오독·혼동했는지(진단 — 지문 근거 인용) ②다음부터 어떻게 풀어야 하는지(처방 — 행동지침 1개)를 각 1줄로. JSON: {\"rx\":[{\"n\":선지번호,\"diag\":\"진단\",\"fix\":\"처방\"}]} — 정답(" + q.answer + "번) 제외 " + (q.choices.length - 1) + "개. JSON만." }], { noRule: true, temperature: ra ? 0.55 : 0.35, timeout: 55000 }).catch(function () { return null; });
+        rx = (j && Array.isArray(j.rx)) ? j.rx.filter(function (x) { return x && x.n >= 1 && x.n <= q.choices.length && x.n !== q.answer && (x.diag || x.fix); }) : [];
+      }
       if (rx.length < 3) return q;   // 3개 미만이면 미부착(불완전 처방 방지)
       var lines = rx.slice(0, 4).map(function (x) { return CIRC[x.n - 1] + " 진단: " + String(x.diag || "").trim() + " → 처방: " + String(x.fix || "").trim(); });
       q.explanation = String(q.explanation || "") + "\n[오답 진단·처방]\n" + lines.join("\n");
@@ -2421,6 +2446,6 @@
     brainStructure: brainStructure, regionOf: regionOf,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank,
-    rebalanceAnswers: rebalanceAnswers, stampWork: stampWork
+    rebalanceAnswers: rebalanceAnswers, stampWork: stampWork, rxFeedback: rxFeedback
   };
 })();
