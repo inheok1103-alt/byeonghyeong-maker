@@ -664,8 +664,11 @@
   //   추상화(verbatim 금지)·DNA 분산·길이 통일을 '설계 단계'에서 강제(사후 패치 아님). =====
   async function designChoiceSet(thesis, type, kind, passage, ctx) {
     var pg = String(passage || "").replace(/<[^>]+>/g, " ").slice(0, 760);
+    // 서식 통일 규칙(유형별) — 정답만 서식이 튀어 형태로 답이 새는 것 방지
+    var fmtRule = /제목/.test(type) ? "\n★서식: 5선지 전부 'Title Case 헤드라인 명사구'(각 주요 단어 첫 글자 대문자, 정형동사·완결문 금지)로 통일 — 정답만 명사구고 오답이 완결문이면 실패." :
+      /주제/.test(type) ? "\n★서식: 5선지 전부 소문자 명사구(동일 품사·구조)로 통일." : "";
     var j = await llmJSON([{ role: "system", content: "너는 대한민국 수능 영어 '선지 세트' 설계자다. 문항의 변별력은 선지에 있으므로 정답과 오답 4개를 '하나의 균형 잡힌 세트'로 함께 설계한다. JSON만." },
-      { role: "user", content: "[지문]\n" + pg + "\n\n글의 핵심 논지: \"" + thesis + "\"\n유형: " + type + " · 정답 형식: " + kind + "\n\n아래 5-선지 세트를 한 번에 설계하라(선지 우선):\n- correct: 핵심 논지를 담은 정답. ★본문 표현을 그대로 베끼지 말고 상위어·재구조화로 '전 지문 종합형 추상어'로 쓴다.\n- distractors: 오답 4개 — ★★가장 중요: '오답 매력도'. 각 오답은 '정답 선지를 기준으로 딱 한 요소만 비튼 near-miss'로 만든다. 정답의 핵심어를 2개 이상 그대로 공유하고 첫 읽기엔 그럴듯해서, 지문을 정확히 이해해야만 걸러지게 하라. 'always/never/only/모두/결코' 같은 극단어로 대놓고 티내거나 딴 소재로 튀는 '죽은 오답(아무도 안 고르는)'은 실패다. 각 오답의 어긋난 그 한 지점이 근거다. 아래 '논리 오류' 메뉴에서 서로 다른 4가지를 골라 각 오답에 하나씩 적용:\n  ①인과 전도(원인↔결과를 뒤바꿈) ②범위 축소(정답의 일부만 담음) ③과잉 일반화(지나치게 확대) ④정도·빈도 왜곡(항상↔가끔·전부↔일부) ⑤조건·전제 누락(핵심 조건을 빼 성립 안 되게) ⑥주체·대상 교체 ⑦상관을 인과로 혼동 ⑧초점 이탈(소재는 유지, 논점은 벗어남).\n  각 오답은 정답과 '의미가 동일하면 안 됨'(복수정답 금지).\n★★5개 선지의 길이·구문·구체성을 반드시 비슷하게 — 정답만 길거나 완결적이면 실패다.\nJSON: {\"correct\":\"정답 선지\",\"distractors\":[{\"error\":\"적용한 논리오류명\",\"text\":\"오답선지\"}, ...4개]}. JSON만." }], { temperature: 0.6, timeout: 60000 }).catch(function () { return null; });
+      { role: "user", content: "[지문]\n" + pg + "\n\n글의 핵심 논지: \"" + thesis + "\"\n유형: " + type + " · 정답 형식: " + kind + "\n\n아래 5-선지 세트를 한 번에 설계하라(선지 우선):\n- correct: 핵심 논지를 담은 정답. ★본문 표현을 그대로 베끼지 말고 상위어·재구조화로 '전 지문 종합형 추상어'로 쓴다.\n- distractors: 오답 4개 — ★★가장 중요: '오답 매력도'. 각 오답은 '정답 선지를 기준으로 딱 한 요소만 비튼 near-miss'로 만든다. 정답의 핵심어를 2개 이상 그대로 공유하고 첫 읽기엔 그럴듯해서, 지문을 정확히 이해해야만 걸러지게 하라. 'always/never/only/모두/결코' 같은 극단어로 대놓고 티내거나 딴 소재로 튀는 '죽은 오답(아무도 안 고르는)'은 실패다. 각 오답의 어긋난 그 한 지점이 근거다. 아래 '논리 오류' 메뉴에서 서로 다른 4가지를 골라 각 오답에 하나씩 적용:\n  ①인과 전도(원인↔결과를 뒤바꿈) ②범위 축소(정답의 일부만 담음) ③과잉 일반화(지나치게 확대) ④정도·빈도 왜곡(항상↔가끔·전부↔일부) ⑤조건·전제 누락(핵심 조건을 빼 성립 안 되게) ⑥주체·대상 교체 ⑦상관을 인과로 혼동 ⑧초점 이탈(소재는 유지, 논점은 벗어남).\n  각 오답은 정답과 '의미가 동일하면 안 됨'(복수정답 금지)." + fmtRule + "\n★★5개 선지의 길이·구문·구체성을 반드시 비슷하게 — 정답만 길거나 완결적이면 실패다.\nJSON: {\"correct\":\"정답 선지\",\"distractors\":[{\"error\":\"적용한 논리오류명\",\"text\":\"오답선지\"}, ...4개]}. JSON만." }], { temperature: 0.6, timeout: 60000 }).catch(function () { return null; });
     if (!j || !j.correct || !Array.isArray(j.distractors)) return null;
     var ans = clean1(j.correct), dis = j.distractors.map(function (d) { return clean1(d && d.text); }).filter(Boolean);
     if (!ans || dis.length < 4) return null;
@@ -686,6 +689,14 @@
     // 미배정 오답(원본 부족 등)은 남은 DNA 순서대로 채움
     var leftD = dna.map(function (_, i) { return i; }).filter(function (i) { return !usedD[i]; });
     notes.forEach(function (nt) { if (!nt.correct && !nt.dna && leftD.length) nt.dna = dna[leftD.shift()] || ""; });
+    // 내용 기반 결정론 보정: 라벨이 선지 표면 표지와 어긋나면 표지 우선(라벨=실결함 일치 — 적대감사 rank6)
+    notes.forEach(function (nt) {
+      if (nt.correct || !nt.text) return;
+      var t = " " + String(nt.text).toLowerCase() + " ";
+      if (/\b(all|every|always|never|any)\b/.test(t) || /모든|전부|항상|결코|어떤 .{0,6}도/.test(t)) nt.dna = "과잉 일반화";
+      else if (/\b(only|solely|merely|just)\b/.test(t) || /오직|뿐|만 /.test(t)) nt.dna = "범위 축소";
+      else if (/\b(opposite|contrary|reverse|instead)\b/.test(t)) nt.dna = "인과 전도";
+    });
     return notes.map(function (nt) { return nt.correct ? { n: nt.n, correct: true } : { n: nt.n, correct: false, dna: nt.dna }; });
   }
   function inferenceSteps(passage, type, ctx, fast) {
@@ -729,6 +740,13 @@
       // 한영 혼용 붕괴: 영어 어구에 조사가 직접 붙는 선지("their ability 을") — 문장 성립 안 됨 → 폐기
       var broken = st.choices.some(function (c) { return /[A-Za-z]{2,}\s*[을를이가은는의도]\s/.test(String(c) + " "); });
       if (mixed || broken) return null;   // 한국어 유형인데 영어 선지/혼용 붕괴 → 상위 재시도
+    }
+    // 제목 서식 통일: 5선지 전부 Title Case로 정규화(정답만 대문자 헤드라인·오답만 소문자완결문 = 형태단서 제거)
+    if (/제목/.test(type)) {
+      var MIN = { a: 1, an: 1, the: 1, of: 1, to: 1, in: 1, on: 1, for: 1, and: 1, or: 1, but: 1, as: 1, at: 1, by: 1, with: 1, from: 1, "vs": 1 };
+      st.choices = st.choices.map(function (c) {
+        return String(c).replace(/[.]+\s*$/, "").split(/\s+/).map(function (w, i) { var lw = w.toLowerCase(); return (i > 0 && MIN[lw]) ? lw : w.charAt(0).toUpperCase() + w.slice(1); }).join(" ").trim();
+      });
     }
     log(onP, '   ↳ 핵심 논지: "' + String(st.main || "").slice(0, 72) + '"');
     log(onP, '   ↳ 정답 초안: "' + String(st.answer || "").slice(0, 64) + '" · 오답 ' + (st.dis || []).length + '개 설계');
@@ -874,10 +892,16 @@
   }
   // 요약: ① (A)(B) 빈칸 요약문+정답 → ② 오답 쌍
   async function buildSummary(passage) {
-    var o = await llmJSON([{ role: "system", content: "요약문완성 출제자. JSON만." }, { role: "user", content: "다음 글을 한 문장으로 요약하되 핵심어 두 곳을 (A),(B)로 비워라. 요약문·(A)·(B)는 반드시 영어 단어여야 한다(한국어 금지). (A)(B)는 서로 다른 핵심 개념. JSON: {\"summary\":\"... (A) ... (B) ... 형태의 영어 요약문(빈칸엔 실제 단어 대신 (A)/(B) 표기만)\",\"A\":\"정답 A 영어단어\",\"B\":\"정답 B 영어단어\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
+    function inPg(w) { var t = String(w || "").trim(); return t && new RegExp("\\b" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b", "i").test(passage); }
+    var o = null;
+    for (var sa = 0; sa < 3; sa++) {   // (A)(B) 상위어 패러프레이즈 강제 — 본문 원어 그대로면 재시도(요약=키워드빙고 방지)
+      o = await llmJSON([{ role: "system", content: "요약문완성 출제자. JSON만." }, { role: "user", content: "다음 글을 한 문장으로 요약하되 핵심어 두 곳을 (A),(B)로 비워라. 요약문·(A)·(B)는 반드시 영어 단어여야 한다(한국어 금지). ★(A)(B)는 지문에 나온 단어를 '그대로' 쓰지 말고 상위어·동의어로 패러프레이즈(예: dance→nonverbal signaling, location→whereabouts, gave money and time→resources). (A)(B)는 서로 다른 핵심 개념. JSON: {\"summary\":\"... (A) ... (B) ... 형태의 영어 요약문(빈칸엔 (A)/(B) 표기만)\",\"A\":\"정답 A(본문 원어 아닌 상위어)\",\"B\":\"정답 B(본문 원어 아닌 상위어)\"}.\n\n" + passage }], { temperature: 0.4 + sa * 0.15, timeout: 60000 });
+      if (!o || !o.A || !o.B) { o = null; continue; }
+      if (/[가-힣]/.test(String(o.A) + String(o.B))) { o = null; continue; }   // 영어 강제
+      if (sa < 2 && (inPg(o.A) || inPg(o.B))) { o = null; continue; }          // 본문 원어 verbatim → 재시도
+      break;
+    }
     if (!o || !o.A || !o.B) return null;
-    // 영어 강제: (A)/(B)가 한글이면 실패(번역 대조 문항으로 변질 방지)
-    if (/[가-힣]/.test(String(o.A) + String(o.B))) return null;
     // 요약문에 정답이 그대로 노출되지 않도록 (A)/(B) 자리 정규화
     var summ = String(o.summary);
     if (summ.indexOf("(A)") < 0) summ = summ.replace(o.A, "(A)"); if (summ.indexOf("(B)") < 0) summ = summ.replace(o.B, "(B)");
