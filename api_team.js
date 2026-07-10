@@ -748,6 +748,15 @@
         return String(c).replace(/[.]+\s*$/, "").split(/\s+/).map(function (w, i) { var lw = w.toLowerCase(); return (i > 0 && MIN[lw]) ? lw : w.charAt(0).toUpperCase() + w.slice(1); }).join(" ").trim();
       });
     }
+    // 논지형 정답 품질 게이트(제목·주제·요지·주장): 정답에 절대어(Solely/Only/Always/모든…)가 있으면 열등·왜곡 정답 → 재시도.
+    //   + 오답 절대어는 세트당 최대 2개(4개 전부 극단어면 메타게임 소거 → 변별 붕괴).
+    if (/제목|주제|요지|주장/.test(type)) {
+      var ABS = /\b(solely|only|exclusively|always|never|all|every|none|entirely|purely)\b/i, ABSK = /오직|모든|결코|전혀|반드시|항상/;
+      var ansC = st.choices[st.answerIdx - 1] || "";
+      if (ABS.test(ansC) || ABSK.test(ansC)) return null;   // 정답에 절대어 → 열등 정답, 재생성
+      var absN = st.choices.filter(function (c, i) { return i !== st.answerIdx - 1 && (ABS.test(c) || ABSK.test(c)); }).length;
+      if (absN > 2) return null;                            // 오답 절대어 과다 → 소거 쉬움, 재생성
+    }
     log(onP, '   ↳ 핵심 논지: "' + String(st.main || "").slice(0, 72) + '"');
     log(onP, '   ↳ 정답 초안: "' + String(st.answer || "").slice(0, 64) + '" · 오답 ' + (st.dis || []).length + '개 설계');
     var meta = infMeta(type);
@@ -2085,17 +2094,23 @@
       ];
       for (var ri = 0; ri < RX.length; ri++) if (RX[ri][0].test(type)) { base = RX[ri][1]; break; }
     }
-    if (!base) base = /영작|서술|전환|해석|고쳐|완성|변형|수정|쓰기|첫글자/.test(type)
-      ? "지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-      : "지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.";
+    if (!base) {
+      if (/영작|서술|전환|해석|고쳐|완성|변형|수정|쓰기|첫글자/.test(type)) {
+        var mans = /\[모범답안\]\s*([^\n]+)/.exec(q.explanation || "");   // 모범답안 언어에 맞춰 출제의도 언어 정합(발문-답-의도 3자 일치)
+        var atxt = q.answerText || (mans ? mans[1] : "");
+        base = ((String(atxt).match(/[A-Za-z]/g) || []).length > (String(atxt).match(/[가-힣]/g) || []).length)
+          ? "지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+          : "지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다.";
+      } else base = "지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.";
+    }
     return base + (core ? (" [핵심 논지: " + core + "]") : "");
   }
-  // 해설 텍스트 위생 — 이질 스크립트(키릴·그리스) 제거 + 한·영 융합토큰('을Literal') 분리. 개행 보존.
+  // 해설 텍스트 위생 — 이질 스크립트(키릴·그리스·한자/CJK·가나) 제거 + 한·영 융합토큰('을Literal') 분리. 개행 보존.
   function koHygiene(s) {
     return String(s || "")
-      .replace(/[Ͱ-ϿЀ-ԯ]+/g, "")
+      .replace(/[Ͱ-ϿЀ-ԯ㐀-䶿一-鿿぀-ヿ]+/g, "")   // 그리스·키릴·CJK한자·가나 제거(舞蹈·振動 등 중국어 누출 차단)
       .replace(/([가-힣])([A-Za-z])/g, "$1 $2").replace(/([A-Za-z])([가-힣])/g, "$1 $2")
-      .replace(/[^\S\n]+/g, " ").trim();
+      .replace(/\(\s*\)|\[\s*\]/g, "").replace(/[^\S\n]+/g, " ").replace(/\s+([,.·)])/g, "$1").trim();
   }
   // ═══ 오답 진단·처방(Rx) 파이프라인 — 해설 구체화: 각 오답을 '골랐다면' 무엇을 오독했고(진단) 어떻게 교정할지(처방) ═══
   //   로직: 선지우선 설계의 오답 DNA를 학생 관점으로 뒤집음. 하네스: comprehensive_audit가 [오답 진단·처방] 존재·구성 전수검사.
@@ -2111,7 +2126,7 @@
       var pg = String(q.passage || passage || "").slice(0, 1100);
       var rx = [];
       for (var ra = 0; ra < 2 && rx.length < 3; ra++) {   // 1회 재시도(일시 실패 흡수)
-        var j = await llmJSON([{ role: "system", content: "너는 학생 오답 클리닉 교사다. 골랐던 오답에서 사고 과정의 결함을 짚고 교정 행동을 처방한다. JSON만." },
+        var j = await llmJSON([{ role: "system", content: "너는 학생 오답 클리닉 교사다. 골랐던 오답에서 사고 과정의 결함을 짚고 교정 행동을 처방한다. 진단·처방은 '순한글'로만 쓴다(한자·중국어·의성어 금지, 영어는 인용 시에만). JSON만." },
           { role: "user", content: "[지문]\n" + pg + "\n\n[발문] " + String(q.instruction).split("\n")[0] + "\n[선지]\n" + chTxt + "\n[정답] " + q.answer + "번\n\n정답을 제외한 각 선지에 대해: 학생이 '그 선지를 골랐다면' ①무엇을 어떻게 오독·혼동했는지(진단 — 지문 근거 인용) ②다음부터 어떻게 풀어야 하는지(처방 — 행동지침 1개)를 각 1줄로. JSON: {\"rx\":[{\"n\":선지번호,\"diag\":\"진단\",\"fix\":\"처방\"}]} — 정답(" + q.answer + "번) 제외 " + (q.choices.length - 1) + "개. JSON만." }], { noRule: true, temperature: ra ? 0.55 : 0.35, timeout: 55000 }).catch(function () { return null; });
         rx = (j && Array.isArray(j.rx)) ? j.rx.filter(function (x) { return x && x.n >= 1 && x.n <= q.choices.length && x.n !== q.answer && (x.diag || x.fix); }) : [];
       }
