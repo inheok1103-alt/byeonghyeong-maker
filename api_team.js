@@ -671,6 +671,23 @@
     if (!ans || dis.length < 4) return null;
     return { answer: ans, dis: dis.slice(0, 4), dna: j.distractors.map(function (d) { return (d && (d.error || d.dna)) || ""; }).slice(0, 4) };
   }
+  // 오답 논리오류(DNA) → 학생용 짧은 '왜 틀렸는지'
+  var DNA_WHY = { "인과 전도": "원인과 결과를 뒤바꿈", "인과전도": "원인과 결과를 뒤바꿈", "범위 축소": "정답의 일부만 담아 지엽적", "범위축소": "정답의 일부만 담아 지엽적", "부분": "정답의 일부만 담아 지엽적", "과잉 일반화": "지나치게 확대 해석", "과잉일반화": "지나치게 확대 해석", "과장": "지나치게 확대 해석", "정도·빈도 왜곡": "정도·빈도를 왜곡", "정도빈도왜곡": "정도·빈도를 왜곡", "조건·전제 누락": "핵심 조건·전제를 빠뜨림", "조건누락": "핵심 조건·전제를 빠뜨림", "주체·대상 교체": "주체나 대상을 바꿔치기", "주체교체": "주체나 대상을 바꿔치기", "상관을 인과로 혼동": "상관관계를 인과로 오인", "초점 이탈": "소재는 같으나 논점에서 벗어남", "초점이탈": "소재는 같으나 논점에서 벗어남", "전도": "논지와 정반대", "정반대": "논지와 정반대" };
+  function dnaWhy(dna) { var k = String(dna || "").trim(); return DNA_WHY[k] || k || "논지에서 어긋남"; }
+  // 최종 선지에 오답 DNA를 재결합 — 그리디 1:1 배정(reviewOptions가 순서·표현을 바꿔도 각 오답이 원본 오답 하나에만 매핑)
+  function dnaNotes(choices, ai, dis, dna) {
+    if (!dna || !dna.length || !choices || !choices.length) return null;
+    var notes = choices.map(function (c, i) { return { n: i + 1, correct: i + 1 === ai, text: c, dna: "" }; });
+    var cand = [];
+    notes.forEach(function (nt) { if (nt.correct) return; (dis || []).forEach(function (d, di) { cand.push({ n: nt.n, di: di, ov: tokOverlap(nt.text, d) }); }); });
+    cand.sort(function (a, b) { return b.ov - a.ov; });   // 중첩 높은 쌍부터 배정
+    var usedN = {}, usedD = {};
+    cand.forEach(function (x) { if (usedN[x.n] || usedD[x.di]) return; usedN[x.n] = 1; usedD[x.di] = 1; var nn = notes[x.n - 1]; if (nn) nn.dna = dna[x.di] || ""; });
+    // 미배정 오답(원본 부족 등)은 남은 DNA 순서대로 채움
+    var leftD = dna.map(function (_, i) { return i; }).filter(function (i) { return !usedD[i]; });
+    notes.forEach(function (nt) { if (!nt.correct && !nt.dna && leftD.length) nt.dna = dna[leftD.shift()] || ""; });
+    return notes.map(function (nt) { return nt.correct ? { n: nt.n, correct: true } : { n: nt.n, correct: false, dna: nt.dna }; });
+  }
   function inferenceSteps(passage, type, ctx, fast) {
     var kind = infMeta(type).kind;
     var roles = [["부분적·지엽적", "글의 사소한 일부만 담아"], ["정반대", "핵심과 반대 의미로"], ["초점 이탈", "글의 소재·어휘는 그대로 쓰되 핵심 논점에서 살짝 벗어나(딴 분야로 튀지 말 것)"], ["지나치게 포괄적", "너무 일반적이라 핵심을 못 짚게"]];
@@ -692,7 +709,7 @@
     }
     steps.push({ api: "grammar", label: "보기 어법 검수(LanguageTool)", run: async function (s) { var gi = []; try { gi = await grammar([s.answer].concat(s.dis || []).filter(function (c) { return /[A-Za-z]\s[A-Za-z]/.test(c); }).join("\n")); } catch (_) {} return { gi: gi }; } });
     steps.push({ api: "trans", label: "정답 한국어 교차검증(MyMemory)", run: async function (s) { var ko = ""; try { ko = await translate(s.answer, "en|ko"); } catch (_) {} return { ko: ko }; } });
-    steps.push({ api: "team", label: "선지 제작 팀 — 최종 검수(형태통일·정답유일·어법·어구화)", run: async function (s) { var r = await reviewOptions(s.answer, s.dis || [], { type: type, main: s.main }); if (!r) throw new Error("선지 부족"); return { choices: r.choices, answerIdx: r.answer }; } });
+    steps.push({ api: "team", label: "선지 제작 팀 — 최종 검수(형태통일·정답유일·어법·어구화)", run: async function (s) { var r = await reviewOptions(s.answer, s.dis || [], { type: type, main: s.main }); if (!r) throw new Error("선지 부족"); return { choices: r.choices, answerIdx: r.answer, notes: dnaNotes(r.choices, r.answer, s.dis, s.dna) }; } });
     return steps;
   }
   async function buildInference(passage, type, opts) {
@@ -716,10 +733,17 @@
     log(onP, '   ↳ 핵심 논지: "' + String(st.main || "").slice(0, 72) + '"');
     log(onP, '   ↳ 정답 초안: "' + String(st.answer || "").slice(0, 64) + '" · 오답 ' + (st.dis || []).length + '개 설계');
     var meta = infMeta(type);
+    var CN = ["①", "②", "③", "④", "⑤"];
+    // 선지별 분석: 정답=핵심 반영, 오답=DNA별 '왜 틀렸는지'(reviewOptions 재결합)
+    var perChoice = "";
+    if (st.notes && st.notes.length) {
+      perChoice = "\n[선지 분석] " + st.notes.map(function (nt) { return nt.correct ? (CN[nt.n - 1] + " 정답 — 핵심 논지 반영") : (CN[nt.n - 1] + " 오답 — " + dnaWhy(nt.dna)); }).join(" · ");
+    }
     var dnaList = (st.dna || []).filter(Boolean);
     var dnaLine = dnaList.length ? (" 오답은 서로 다른 논리 오류(" + dnaList.slice(0, 4).join("·") + ")로 설계되어, 각기 한 지점에서만 논지와 어긋난다.") : "";
     return { type: type, instruction: meta.instr, passage: "", choices: st.choices, answer: st.answerIdx,
-      explanation: "글의 핵심 논지는 '" + st.main + "'이며, 정답 선지가 이를 정확히 반영한다." + (dnaLine || " 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다."),
+      explanation: "글의 핵심 논지는 '" + st.main + "'이며, 정답 선지가 이를 정확히 반영한다." + (dnaLine || " 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.") + perChoice,
+      _choiceNotes: st.notes || null,
       _audit: (st.gi && st.gi.length) ? ("어법 의심 " + st.gi.length + "건") : "검증 통과", _trace: st._trace };
   }
   // 빈칸: ① 핵심 논지 자리에 어구 비우기(도입부 회피) → ② 프레임 맞춤 어구형 정답 → ③ 역할별 오답
@@ -2053,8 +2077,13 @@
     q._work = { steps: [
       { id: 1, stage: "이해", ask: "지문을 읽고 '무엇을 묻는 문제'인지, 글의 핵심 논지를 한 문장으로 예측해 쓰세요.", show: { passage: q.passage }, input: "text", reveal: { answer: (q.instruction || ""), why: "먼저 발문 유형과 글의 핵심을 잡습니다.", source: "발문·지문" } },
       { id: 2, stage: (isMCQ ? "판정" : "작성"), ask: (q.instruction || "정답을 고르거나 작성하세요."), show: (isMCQ ? { choices: q.choices } : {}), input: (isMCQ ? "pick" : "text"), reveal: { answer: last, source: "코드/모범답안" } },
-      { id: 3, stage: "검증", ask: "왜 이것이 정답이고 다른 선지는 왜 오답인지(또는 답안의 조건 충족)를 설명하세요.", show: {}, input: "text", reveal: { answer: String(q.explanation || ""), why: (q.intent ? ("출제의도: " + q.intent) : ""), source: "해설·출제의도" } }
+      { id: 3, stage: "검증", ask: "왜 이것이 정답이고 다른 선지는 왜 오답인지(또는 답안의 조건 충족)를 설명하세요.", show: {}, input: "text", reveal: { answer: String(q.explanation || "").replace(/\n\[선지 분석\][\s\S]*/, ""), why: (q.intent ? ("출제의도: " + q.intent) : ""), source: "해설·출제의도" } }
     ] };
+    // 선지 DNA 있으면(추론형) 오답 분석 단계 추가 — 학생이 오답마다 논리 오류를 짚는다(출제자 사고 역설계)
+    if (isMCQ && q._choiceNotes && q._choiceNotes.length) {
+      q._work.steps.push({ id: 4, stage: "오답분석", ask: "각 오답이 '어디서' 논지와 어긋나는지(범위축소·인과전도·과장·정도왜곡·초점이탈 등) 하나씩 짚어보세요.", show: { choices: q.choices }, input: "text",
+        reveal: { answer: q._choiceNotes.map(function (nt) { return CIRC[nt.n - 1] + " " + (nt.correct ? "정답(핵심 반영)" : ("오답 — " + dnaWhy(nt.dna))); }).join(" · "), why: "출제자는 오답마다 서로 다른 논리 오류를 심습니다. 그 지점을 찾는 게 오답 소거의 핵심입니다.", source: "선지 DNA" } });
+    }
     return q;
   }
 
