@@ -1773,11 +1773,11 @@
       return { n: i + 1, en: en, ko: String(m.ko || ""), syntax: String(m.syntax || ""), fn: /^(core|evidence|logic|grammar|claim|aux)$/.test(m.fn) ? m.fn : "aux" };
     });
     var flow = (o.flow || []).filter(function (x) { return x && x.n >= 1 && x.n <= sents.length && x.role; });
-    // 성분분석 + 출제예상 플로우(별도 호출 — 메인 분석 안정성 유지). 배경지식과 병렬.
+    // 성분분석(전 문장 S/V/O/C/M) + 출제예상 플로우(별도 호출 — 메인 분석 안정성 유지). 배경지식과 병렬.
     var extraP = llmJSON([
       { role: "system", content: "고교 영어 구문·출제 분석가. JSON만." },
-      { role: "user", content: "[문장]\n" + listed + "\n\nJSON:\n{\"components\":[{\"n\":문장번호,\"parse\":\"성분 분해 — 각 성분을 [S 주어]/[V 동사]/[O 목적어]/[C 보어]/[M 수식어]/[관계절]/[분사구] 형태로 대괄호+역할표시\",\"skeleton\":\"군더더기 뺀 문장 골격(S+V+O)\"}],\"exam_flow\":[{\"feature\":\"지문 특징(문장번호 포함, 예: 관계사 which(3))\",\"type\":\"예상 출제유형(어법|어휘|빈칸|순서|삽입|무관|요지|주제|제목|함의|어법수정 중)\",\"trap\":\"함정·출제 포인트 한 줄\"}]}\n규칙: components=문법적으로 복잡·핵심인 문장 2~3개만. exam_flow=지문 특징→예상유형→함정을 4~6개(구문·어휘·연결어·주제문 근거로). 한국어." }
-    ], { noRule: true, timeout: 60000 }).catch(function () { return null; });
+      { role: "user", content: "[문장]\n" + listed + "\n\nJSON:\n{\"components\":[{\"n\":문장번호,\"parse\":\"문장 전체를 성분 청크로 빠짐없이 분해 — 각 청크를 [라벨 원문어구] 형태로. 라벨은 S(주어)/V(동사)/O(목적어)/C(보어)/M(수식어·부사구·전치사구) 5개만 사용, 접속사·관계사가 이끄는 절은 통째로 M 또는 O로. 예: [S Honeybees] [V communicate] [O the location of food] [M through an elaborate dance]\"}],\"exam_flow\":[{\"feature\":\"지문 특징(문장번호 포함)\",\"type\":\"예상 출제유형(어법|어휘|빈칸|순서|삽입|무관|요지|주제|제목|함의|어법수정 중)\",\"trap\":\"함정·출제 포인트 한 줄\"}]}\n규칙: components=모든 문장(" + sents.length + "개, 빠짐없이). parse의 어구는 원문 그대로(생략·의역 금지). exam_flow 4~6개. 한국어 라벨 금지 — S/V/O/C/M만." }
+    ], { noRule: true, timeout: 75000 }).catch(function () { return null; });
     // 배경지식: 주제어로 위키 요약 1문단(있으면). 실패해도 분석지는 나옴
     var background = "";
     try {
@@ -1972,6 +1972,26 @@
       : "지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.";
     return base + (core ? (" [핵심 논지: " + core + "]") : "");
   }
+  // ═══ 오답 진단·처방(Rx) 파이프라인 — 해설 구체화: 각 오답을 '골랐다면' 무엇을 오독했고(진단) 어떻게 교정할지(처방) ═══
+  //   로직: 선지우선 설계의 오답 DNA를 학생 관점으로 뒤집음. 하네스: comprehensive_audit가 [오답 진단·처방] 존재·구성 전수검사.
+  async function rxFeedback(q, passage) {
+    try {
+      if (!q || !q.choices || q.choices.length < 4 || !(q.answer >= 1 && q.answer <= q.choices.length)) return q;
+      if (String(q.explanation || "").indexOf("[오답 진단·처방]") >= 0) return q;
+      var CIRC = ["①", "②", "③", "④", "⑤"];
+      var isMark = q.choices.every(function (c) { return /^[ⓐ-ⓔ①-⑤]$/.test(String(c).trim()); });
+      var chTxt = isMark ? "선지는 지문 속 표식 " + q.choices.join(" ") + " 이다(지문에서 해당 위치를 보라)." : q.choices.map(function (c, i) { return CIRC[i] + " " + c; }).join("\n");
+      var pg = String(q.passage || passage || "").slice(0, 1100);
+      var j = await llmJSON([{ role: "system", content: "너는 학생 오답 클리닉 교사다. 골랐던 오답에서 사고 과정의 결함을 짚고 교정 행동을 처방한다. JSON만." },
+        { role: "user", content: "[지문]\n" + pg + "\n\n[발문] " + String(q.instruction).split("\n")[0] + "\n[선지]\n" + chTxt + "\n[정답] " + q.answer + "번\n\n정답을 제외한 각 선지에 대해: 학생이 '그 선지를 골랐다면' ①무엇을 어떻게 오독·혼동했는지(진단 — 지문 근거 인용) ②다음부터 어떻게 풀어야 하는지(처방 — 행동지침 1개)를 각 1줄로. JSON: {\"rx\":[{\"n\":선지번호,\"diag\":\"진단\",\"fix\":\"처방\"}]} — 정답(" + q.answer + "번) 제외 " + (q.choices.length - 1) + "개. JSON만." }], { noRule: true, temperature: 0.35, timeout: 55000 }).catch(function () { return null; });
+      var rx = (j && Array.isArray(j.rx)) ? j.rx.filter(function (x) { return x && x.n >= 1 && x.n <= q.choices.length && x.n !== q.answer && (x.diag || x.fix); }) : [];
+      if (rx.length < 3) return q;   // 3개 미만이면 미부착(불완전 처방 방지)
+      var lines = rx.slice(0, 4).map(function (x) { return CIRC[x.n - 1] + " 진단: " + String(x.diag || "").trim() + " → 처방: " + String(x.fix || "").trim(); });
+      q.explanation = String(q.explanation || "") + "\n[오답 진단·처방]\n" + lines.join("\n");
+      q._rx = rx.slice(0, 4);
+    } catch (_) {}
+    return q;
+  }
   function stampIntent(q) { if (!q) return q; q.intent = intentFor(q); if (String(q.explanation || "").indexOf("【출제의도】") < 0) q.explanation = String(q.explanation || "") + "\n【출제의도】 " + q.intent; return q; }
   // ===== 과정 워크북: 출제 파이프라인의 중간산출물을 '학생이 밟는 단계'로 노출(_work). 빌더가 안 만든 유형은 범용 3스텝으로 합성 =====
   function stampWork(q) {
@@ -2084,7 +2104,7 @@
         if (got) {
           if (TYPE_INSTR[t] && !hasRichInstr(got.instruction, TYPE_INSTR[t])) got.instruction = TYPE_INSTR[t]; got.level = opts.level || "";
           if (opts.refine) { log(onP, "  ↻ 재귀 상호작용 개선(" + t + ") — 검수↔재작성 수렴까지…"); got = await refineLoop(got, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: onP, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 }); }
-          stampIntent(got); stampWork(got); got._ms = Date.now() - t0;
+          await rxFeedback(got, passage); stampIntent(got); stampWork(got); got._ms = Date.now() - t0;
           results[i] = got;
           if (opts.onItem) try { opts.onItem(got, i); } catch (_) {}   // 완성 즉시 UI로 스트리밍
           onT(t, "done", got._ms);
@@ -2214,6 +2234,7 @@
     if (q && TYPE_INSTR[type] && !/\{[A-Za-z0-9가-힣]+\}/.test(TYPE_INSTR[type]) && !hasRichInstr(q.instruction, TYPE_INSTR[type])) q.instruction = TYPE_INSTR[type];   // 미치환 템플릿({N}) 발문은 적용 안 함(빌더 자체 발문 유지)
     if (q) q.level = opts.level || "";
     if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 });
+    if (q) await rxFeedback(q, passage);   // 오답 진단·처방(각 오답을 골랐다면 → 진단+교정 처방) 해설 구체화
     stampIntent(q); stampWork(q);
     return q;
   }

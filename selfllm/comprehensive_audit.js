@@ -34,6 +34,10 @@ s.items.forEach(function(q){
     if(/내용일치|어법|어휘|함의|순서|삽입|무관|배열|요약/.test(q.type)&&!(q.passage&&q.passage.length>50))r.notes.push("지문누락");
     // placeholder 잔존
     if(/원문 그대로|틀리게 바꾼 형태|판단지점/.test(q.explanation||""))r.notes.push("placeholder잔존");
+    // 오답 진단·처방(Rx) 구성: 존재 + 오답 3~4개 각각 진단·처방 라인
+    var rxm=String(q.explanation||"").match(/\[오답 진단·처방\]\n([\s\S]*?)(\n【|$)/);
+    if(!rxm)r.notes.push("오답처방없음");
+    else{var rlines=rxm[1].split("\n").filter(function(l){return /^[①②③④⑤] 진단:.*→ 처방:/.test(l.trim());});if(rlines.length<3)r.notes.push("오답처방불완전("+rlines.length+"/4)");r.rx=rlines.length;}
   } else {
     // 서술형
     var ex=String(q.explanation||"");
