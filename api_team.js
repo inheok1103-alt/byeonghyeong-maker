@@ -1015,6 +1015,8 @@
       if (!spreadOK(passage, o.words.slice(0, 5), attempt)) continue;   // 밑줄 5곳 문장 분산(한 문장 몰림 방지)
       var mk = markWords(passage, o.words.slice(0, 5), wi - 1, wrongW);  // 코드가 밑줄+치환
       if (!mk || mk.count < 5) continue;                       // 5개 다 못 찾으면 재시도
+      // a/an 동기화: 주입어 앞 관사가 첫 글자와 안 맞으면 교정('an simplistic'→'a simplistic') — 어법 tell로 정답 누설 방지
+      mk.text = mk.text.replace(/\b(an?)(\s+[ⓐ-ⓔ]<u>)([A-Za-z])/i, function (m, art, mid, fc) { var want = /[aeiou]/i.test(fc) ? "an" : "a"; if (/^[A-Z]/.test(art)) want = want.charAt(0).toUpperCase() + want.slice(1); return want + mid + fc; });
       // 해설: 사전식 치환 메타가 아니라 담화근거(앞뒤 문장 방향/인과/대조)로. LLM reason 없으면 host 문장 인용 폴백.
       var corr = o.correct || mk.orig;
       // 담화근거: LLM reason이 한국어일 때만 사용(영어 문장이 그대로 오는 코드혼용 방지) — 아니면 호스트 문장 인용 폴백
