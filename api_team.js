@@ -1068,7 +1068,12 @@
       var ew = e.trim().split(/\s+/), cw = c.trim().split(/\s+/);
       if (ew.length === cw.length) {
         var di = [], k; for (k = 0; k < ew.length; k++) if (ew[k] !== cw[k]) di.push([ew[k], cw[k]]);
-        if (di.length === 1) { var a = di[0][0], b = di[0][1]; if ((a === b + "s" || b === a + "s") && /\b(the|its|their|his|her|our|your)\b/.test(e) && /\bof\b/.test(e + c)) return true; }
+        if (di.length === 1) {
+          var a = di[0][0], b = di[0][1];
+          if ((a === b + "s" || b === a + "s") && /\b(the|its|their|his|her|our|your)\b/.test(e) && /\bof\b/.test(e + c)) return true;   // 가산명사 단복수
+          // ④ 감정분사 -ing↔-ed 교체(the-비교급 문맥) — 의미선택이지 확정 어법오류 아님(exciting↔excited)
+          if (/\bthe (more|less)\b/.test(e + c)) { var st1 = a.replace(/(ing|ed)$/, ""), st2 = b.replace(/(ing|ed)$/, ""); if (st1 === st2 && /(ing|ed)$/.test(a) && /(ing|ed)$/.test(b)) return true; }
+        }
       }
       return false;
     }
@@ -1122,12 +1127,22 @@
     if (/관계(사|절)|분사|가정법|수동|능동|도치|구조|구문/.test(I)) cond.push("지정 구문 사용(STRUCTURE)");
     if (/틀린|어법상 오류|오류를? 찾|고쳐|바르게 고/.test(I)) { cond.push("지정 오류 정확히 색출·수정(개수 일치)"); zero.push("오류 미발견 또는 오수정"); }
     if (/첫 ?글자|initial|주어진 철자/.test(I)) cond.push("제시 철자로 시작하는 정답어 산출");
-    var body = isWrite
-      ? [ "① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영",
-          "② 조건·형식 35% — " + (cond.length ? cond.join(" / ") : "제시 조건 충족·형식 준수"),
-          "③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점, 누적 시 형식점 소실)" ]
-      : [ "① 정확성 60% — 우리말 뜻·핵심 정보 정확", "② 완결성 40% — 조건 충족·표현 자연스러움" ];
-    var minus = isWrite ? "감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2." : "감점: 오역·누락 부분점.";
+    // 유형별 전용 루브릭 — 어법수정(오류색출·수정)에 서술형 보일러플레이트(내용40·단어수) 이식 금지, 조건 없으면 조건감점도 없음
+    var isErrorFix = /어법수정|오류.?수정/.test(String(type)) || /틀린.*(찾|고쳐)|기호.*고쳐|바르게 고쳐 ?쓰/.test(I);
+    var body, minus;
+    if (isErrorFix) {
+      if (zero.indexOf("오류 미발견 또는 오수정") < 0) zero.push("오류 미발견 또는 오수정");
+      body = [ "① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목", "② 수정 정확 40% — 어법에 맞게 바르게 고침", "③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확" ];
+      minus = "감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.";
+    } else if (isWrite) {
+      body = [ "① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영",
+        "② 조건·형식 35% — " + (cond.length ? cond.join(" / ") : "형식·표현 준수"),
+        "③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)" ];
+      minus = "감점: 철자·어형 오류 1개당 −1(형식점 내)" + (cond.length ? ", 조건 부분충족 −2" : "") + (mw ? ", 단어 수 초과·미달 −2" : "") + ".";
+    } else {
+      body = [ "① 정확성 60% — 우리말 뜻·핵심 정보 정확", "② 완결성 40% — 표현 자연스러움" + (cond.length ? "·조건 충족" : "") ];
+      minus = "감점: 오역·누락 부분점.";
+    }
     return "\n[채점 루브릭] " + body.join(" · ") + "\n[0점 트리거] " + zero.join(" / ") + "\n" + minus;
   }
   // 서술형 단어수 실측 역산(Ray 원칙: 모범답안이 진리원천) — 발문·루브릭의 단어밴드를 답 실측 N으로 동기화
