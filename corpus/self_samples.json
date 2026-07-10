@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-10T11:23:41.354Z",
+ "updated": "2026-07-10T15:08:37.606Z",
  "samples": [
+  {
+   "ts": "2026-07-10T15:04:48.803Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 1/1가 2번 선택(기록 5번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.8,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Page 56 Logical modality is the simplest modality, in that it deals with all the possible worlds without distinction. Epistemic modality is defined in terms of epistemically possible worlds. An epistemically possible world is one in which everything we know about the actual world also holds - we don’t know of any differences between the actual world and any epistemically possible world (even though there might be differences) - for all we know, any epistemically possible world IS reality. In the definitions below the variable we ranges over epistemically possible worlds. Epistemic must conveys that all the evidence we have about some real situation leads to an inescapable conclusion, but it is far weaker than logical necessity. The gods must be crazy may be true interpreted epistemically, but even if it is, there are infinitely many logically possible worlds where the gods are sane and wise, and thus The gods must be crazy interpreted as logical necessity is false. ____ < previous page page_56 next page >",
+    "choices": [
+     "certainty",
+     "impossibility",
+     "scientific accuracy",
+     "experimental evidence",
+     "possibility"
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 'possibility'가 들어가 글의 논지를 완성한다 (본문 'Epistemic possibility is analysed as in (12).'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 학생은 'must'가 certainty(확신)을 의미한다고 오독했다. 지문에서 'Epistemic must conveys that all the evidence... leads to an inescapable conclusion'라고 설명하지만, 이는 certainty 가 아니라 evidence 에 기반한 필연적 결론임을 인지하지 못했다. → 처방: 지문에서 'Epistemic must'는 evidence 에 기반한 필연적 결론임을 강조하며, certainty(확신)보다는 evidence 와 연결된 'possibility(가능성)' 개념을 우선적으로 고려해야 한다.\n② 진단: 학생은 'must'가 impossibility(불가능성)을 의미한다고 혼동했다. 지문에서 'Epistemic must'는 evidence 에 기반한 필연적 결론을 의미하지, 불가능성을 의미하지 않음을 간과했다. → 처방: 지문에서 'Epistemic must'는 evidence 에 기반한 필연적 결론임을 명확히 구분하고, possibility(가능성) 개념과 연결지어 해석해야 한다.\n③ 진단: 학생은 'must'가 scientific accuracy(과학적 정확성)을 의미한다고 오독했다. 지문은 logical/epistemic modality 와 관련한 개념을 다루며, 과학적 정확성과는 무관함을 간과했다. → 처방: 지문에서 다루는 modality(논리적/인식론적 가능성) 개념을 정확히 이해하고, 과학적 accuracy 보다는 possibility(가능성) 개념을 우선적으로 고려해야 한다.\n④ 진단: 학생은 'must'가 experimental evidence(실험적 증거)를 의미한다고 혼동했다. 지문은 evidence(증거)를 언급하지만, experimental evidence(실험적 증거)보다는 epistemic possibility(인식론적 가능성) 개념을 다루고 있음을 간과했다. → 처방: 지문에서 'Epistemic must'는 evidence(증거)에 기반한 필연적 결론을 의미하며, possibility(가능성) 개념과 연결지어 해석해야 experimental evidence 에 치우치지 않는다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-10T15:08:12.208Z",
+   "type": "본문어변형빈칸",
+   "level": "중",
+   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
+    "passage": "An epistemically possible world is one in which everything we know about the actual world also holds - we don’t know of any differences between the actual world and any epistemically possible world (even though there might be differences) - for all we know, any epistemically possible world (be) reality.",
+    "choices": [],
+    "answer": null,
+    "explanation": "1) be→is [주어 any epistemically possible world(단수) — 수일치]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-10T11:21:30.045Z",
    "type": "요약문AB",
@@ -311,72 +363,6 @@
     ],
     "answer": 5,
     "explanation": "빈칸에는 'their meanings'가 들어가 글의 논지를 완성한다 (본문 'their meanings'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-09T23:40:47.545Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "WEEK 33 DAY 5 REVIEW While each day’s story has five new words, there are many others that are repeated from previous weeks. These words are placed within the stories so that you might practice your grasp of their meanings. Repetition will help guarantee that these words will be firmly fixed as part of your ever-expanding vocabulary. REVIEW WORDS DEFINITIONS 1.abjure a. stir up, instigate 2.allay b. disorderly, carelessly 3.complacent c. regretful, confessing guilt 4.connoisseur d. abstain from, renounce 5.debilitate e. weaken 6.deter f. self-satisfied 7.discreet g. discourage, hinder 8.evanescent h. bent, inclination, disposition 9.foment i. sad, gloomy 10.glean j. identical, equivalent 11.impetuous k. something hunted or pursued 12.occult l. watchful, shrewd 13.penitent m. supernatural, mysterious, secret 14.propensity n. impulsive 15.quarry o. rebuke, reprimand* 16.reproach p. momentary, passing, fleeting 17.slovenly q. prudent,* careful, cautious 18.somber r. collect, gather 19.tantamount s. expert 20.wary t. soothe, calm\n\n─────────\n[요약문] Daily vocabulary practice through contextual (A) reinforces retention and expands (B) via repetition.",
-    "choices": [
-     "(A) repetition … (B) vocabulary",
-     "(A) repetition … (B) grammar rules",
-     "(A) definitions … (B) vocabulary",
-     "(A) definitions … (B) pronunciation",
-     "(A) contextual stories … (B) grammar rules"
-    ],
-    "answer": 1,
-    "explanation": "(A) repetition / (B) vocabulary 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-09T23:36:35.739Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① 1 He/She certainly looks his/her age.\n② 6 He/She has a warm smile.\n③ Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page.\n④ 5 He/She has a very abrasive manner.\n⑤ 3 He/She’s bursting with energy.\n⑥ blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments?\n⑦ Then match them to 1–6 below.\n⑧ 7 He/She’s full of pent-up anger.\n⑨ 2 He/She’s downright rude.",
-    "choices": [
-     "③-⑦-⑥-①-④-⑨-②-⑤-⑧",
-     "③-⑦-⑥-①-④-②-⑨-⑤-⑧",
-     "③-⑦-⑥-④-①-⑨-②-⑤-⑧",
-     "⑦-③-⑥-①-④-⑨-②-⑤-⑧",
-     "③-①-⑦-②-⑥-⑤-⑧-④-⑨"
-    ],
-    "answer": 3,
-    "explanation": "정답 배열은 ③-⑦-⑥-①-④-⑨-②-⑤-⑧. 흐름: ③ → ⑦(Then) → ⑥ → ① → ④ → ⑨ → ② → ⑤ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
