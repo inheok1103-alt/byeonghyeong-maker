@@ -970,7 +970,10 @@
       if (!mk || mk.count < 5) continue;                       // 5개 다 못 찾으면 재시도
       // 해설: 사전식 치환 메타가 아니라 담화근거(앞뒤 문장 방향/인과/대조)로. LLM reason 없으면 host 문장 인용 폴백.
       var corr = o.correct || mk.orig;
-      var why = (o.reason && String(o.reason).trim()) ? String(o.reason).trim() : (function () { var h = hostCtx(passage, o.words[wi - 1] || corr); return h ? ("해당 문장 “" + h + "”의 논리 흐름상 " + corr + "가 맞고 " + o.wrong + "는 방향이 어긋난다") : "앞뒤 문장의 논리 흐름상 " + corr + "가 맞다"; })();
+      // 담화근거: LLM reason이 한국어일 때만 사용(영어 문장이 그대로 오는 코드혼용 방지) — 아니면 호스트 문장 인용 폴백
+      var rz = String(o.reason || "").trim();
+      var rzKo = rz && (rz.match(/[가-힣]/g) || []).length >= (rz.match(/[A-Za-z]/g) || []).length;
+      var why = rzKo ? rz : (function () { var h = hostCtx(passage, o.words[wi - 1] || corr); return h ? ("해당 문장 “" + h + "”의 논리 흐름상 " + corr + "가 맞고 " + o.wrong + "는 방향이 어긋난다") : "앞뒤 문장의 논리 흐름상 " + corr + "가 맞다"; })();
       var polLine = (o.polarity && String(o.polarity).trim()) ? (" [극성] " + String(o.polarity).trim()) : "";
       return { type: "어휘", instruction: "밑줄 친 ⓐ~ⓔ 중 문맥상 낱말의 쓰임이 적절하지 않은 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: "정답 " + CIRC5(wi) + ": 문맥상 '" + corr + "'가 와야 하는데 '" + o.wrong + "'가 쓰여 부적절하다 — " + why + "." + polLine, _audit: "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설)", _vocab: { words: o.words.slice(0, 5), wrong: o.wrong, correct: corr, wi: wi, why: why, polarity: (o.polarity ? String(o.polarity).trim() : "") } };
     }
