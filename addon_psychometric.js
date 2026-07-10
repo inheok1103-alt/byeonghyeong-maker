@@ -77,10 +77,13 @@
     var a = L[q.answer - 1], sorted = L.slice().sort(function (x, y) { return y - x; }), rank = sorted.indexOf(a) + 1;
     var mean = L.reduce(function (s, x) { return s + x; }, 0) / L.length;
     var sd = Math.sqrt(L.reduce(function (s, x) { return s + (x - mean) * (x - mean); }, 0) / L.length), cv = mean ? sd / mean : 0;
-    var oth = L.filter(function (_, i) { return i !== q.answer - 1; }), maxO = Math.max.apply(null, oth);
-    var cue = a >= maxO && a > maxO * 1.3 && (a - maxO) >= 6;   // 정답 최장 + 2등比 30%↑ = 형태단서
-    return { ok: true, cue: cue, answerRank: rank, cv: +cv.toFixed(2), answerLen: a, lens: L,
-      summary: "길이CV=" + cv.toFixed(2) + " 정답길이순위=" + rank + "/" + L.length + (cue ? " ⚠정답이 최장(형태단서 누설)" : " ✅형태단서 없음") };
+    var oth = L.filter(function (_, i) { return i !== q.answer - 1; }), maxO = Math.max.apply(null, oth), minO = Math.min.apply(null, oth);
+    var longCue = a >= maxO && a > maxO * 1.3 && (a - maxO) >= 6;    // 정답 최장(긴 게 정답)
+    var shortCue = a <= minO && minO > a * 1.3 && (minO - a) >= 6;   // 정답 최단(짧은 게 정답 — 역방향 단서)
+    var cue = longCue || shortCue;
+    var why = longCue ? " ⚠정답이 최장(형태단서 누설)" : shortCue ? " ⚠정답이 최단(형태단서 누설)" : " ✅형태단서 없음";
+    return { ok: true, cue: cue, longCue: longCue, shortCue: shortCue, answerRank: rank, cv: +cv.toFixed(2), answerLen: a, lens: L,
+      summary: "길이CV=" + cv.toFixed(2) + " 정답길이순위=" + rank + "/" + L.length + why };
   }
   var api = { panel: panel, leakTest: leakTest, formCue: formCue };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
