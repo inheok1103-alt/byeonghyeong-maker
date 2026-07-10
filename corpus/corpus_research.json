@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-10T04:19:53.677Z",
+ "updated": "2026-07-10T08:11:18.765Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
- "count": 10,
+ "count": 11,
  "notes": [
+  {
+   "ts": "2026-07-10T08:10:51.131Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서 'that' 생략 오류와 부사 위치 오류가 빈번하며, 특히 'say' 동사 뒤의 명사절에서 'that' 생략이 두드러진다. 또한 'in today's world'와 같은 연어 패턴이 문법적 정확성을 요구함을 확인할 수 있다.",
+   "rule": "'say', 'think', 'believe' 등 보고·사고 동사 뒤의 명사절에서는 'that'을 생략하지 않도록 하며, 부사(very soon 등)는 조동사(will) 뒤에 위치하도록 문장 구조를 점검하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-10T04:17:44.009Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
