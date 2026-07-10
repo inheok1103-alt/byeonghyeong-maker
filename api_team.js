@@ -917,6 +917,10 @@
       var _L = st.map(function (x) { return x.length; }), _a = _L[ansPos - 1], _o = _L.filter(function (_, i) { return i !== ansPos - 1; });
       var _mn = Math.min.apply(null, _o), _mx = Math.max.apply(null, _o);
       if (attempt < 3 && ((_a < _mn && _mn - _a >= 8) || (_a > _mx && _a - _mx >= 10))) continue;
+      // 극성단서 게이트: 정답만 부정극성이 다르면(정답 긍정 vs 오답 다수 부정, 또는 그 반대) '부정 든 것/안 든 것' 표면단서로 무독해 식별 → 재시도
+      var _neg = st.map(function (x) { return /않|못하|아니|없|안\s|하지\s*않/.test(x); });
+      var _an = _neg[ansPos - 1], _onCnt = _neg.filter(function (v, i) { return i !== ansPos - 1 && v; }).length;
+      if (attempt < 3 && ((_an && _onCnt === 0) || (!_an && _onCnt >= 3))) continue;
       // 검증: 정답 위치가 실제로 (일치/모순) 유일한지 확인
       var v = await llmJSON([{ role: "system", content: "사실검증관. JSON만." }, { role: "user", content: "지문:\n" + passage + "\n\n진술:\n" + st.map(function (s, i2) { return (i2 + 1) + ". " + s; }).join("\n") + "\n\n각 진술을 지문과 대조. JSON: {\"support\":[일치 번호],\"contradict\":[모순 번호]}. JSON만." }], { temperature: 0.12, timeout: 50000 });
       var contra = (v && Array.isArray(v.contradict)) ? v.contradict.map(Number).filter(function (x) { return x >= 1 && x <= 5; }) : [];
@@ -2052,6 +2056,13 @@
       : "지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.";
     return base + (core ? (" [핵심 논지: " + core + "]") : "");
   }
+  // 해설 텍스트 위생 — 이질 스크립트(키릴·그리스) 제거 + 한·영 융합토큰('을Literal') 분리. 개행 보존.
+  function koHygiene(s) {
+    return String(s || "")
+      .replace(/[Ͱ-ϿЀ-ԯ]+/g, "")
+      .replace(/([가-힣])([A-Za-z])/g, "$1 $2").replace(/([A-Za-z])([가-힣])/g, "$1 $2")
+      .replace(/[^\S\n]+/g, " ").trim();
+  }
   // ═══ 오답 진단·처방(Rx) 파이프라인 — 해설 구체화: 각 오답을 '골랐다면' 무엇을 오독했고(진단) 어떻게 교정할지(처방) ═══
   //   로직: 선지우선 설계의 오답 DNA를 학생 관점으로 뒤집음. 하네스: comprehensive_audit가 [오답 진단·처방] 존재·구성 전수검사.
   async function rxFeedback(q, passage) {
@@ -2071,9 +2082,10 @@
         rx = (j && Array.isArray(j.rx)) ? j.rx.filter(function (x) { return x && x.n >= 1 && x.n <= q.choices.length && x.n !== q.answer && (x.diag || x.fix); }) : [];
       }
       if (rx.length < 3) return q;   // 3개 미만이면 미부착(불완전 처방 방지)
-      var lines = rx.slice(0, 4).map(function (x) { return CIRC[x.n - 1] + " 진단: " + String(x.diag || "").trim() + " → 처방: " + String(x.fix || "").trim(); });
-      q.explanation = String(q.explanation || "") + "\n[오답 진단·처방]\n" + lines.join("\n");
-      q._rx = rx.slice(0, 4);
+      rx = rx.slice(0, 4).map(function (x) { return { n: x.n, diag: koHygiene(x.diag), fix: koHygiene(x.fix) }; });   // 키릴·한영융합 위생
+      var lines = rx.map(function (x) { return CIRC[x.n - 1] + " 진단: " + x.diag + " → 처방: " + x.fix; });
+      q.explanation = koHygiene(String(q.explanation || "") + "\n[오답 진단·처방]\n" + lines.join("\n"));
+      q._rx = rx;
     } catch (_) {}
     return q;
   }
