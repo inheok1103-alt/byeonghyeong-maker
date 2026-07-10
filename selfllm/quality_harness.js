@@ -29,10 +29,16 @@ function auditMCQ(q, pg, type){
   var anchored = korCh ? -1 : dis.filter(function(d){return overlap(d, pg) > 0;}).length;
   var anchorOk = korCh ? true : anchored >= dis.length-1;
   var uniqT = /제목|주제|목적/.test(String(type||"")) ? 0.74 : 0.6;   // 짧은 명사구형은 핵심어 공유 정상 → 임계 완화
+  // DNA 커버리지: 오답 4개가 서로 다른 논리 오류인가(선지 우선 설계의 핵심)
+  var dn = (q._choiceNotes||[]).filter(function(nt){return !nt.correct && nt.dna;});
+  var dset = {}; dn.forEach(function(nt){dset[String(nt.dna).replace(/[\s·]/g,"")]=1;});
+  var dnaCov = dn.length ? Object.keys(dset).length : null;   // 서로 다른 DNA 수(4 이상적)
+  var dnaOk = (dnaCov===null) || dnaCov >= 3;
   return {
     cue: f.cue, cv: f.cv, rank: f.answerRank,
     uniq: +uniq.toFixed(2), verbatim: vb, anchored: korCh ? "n/a" : (anchored+"/"+dis.length),
-    pass: (!f.cue) && uniq < uniqT && !vb && anchorOk
+    dnaCov: dnaCov===null ? "-" : (dnaCov+"/4"),
+    pass: (!f.cue) && uniq < uniqT && !vb && anchorOk && dnaOk
   };
 }
 function auditEssay(q){
@@ -52,15 +58,18 @@ function auditEssay(q){
   await T.loadTypeDB("knowledge/types_v2.json").catch(function(){});
   var pg = fs.readFileSync(process.argv[2] || path.join(__dirname,"pg_arg.txt"), "utf8").trim();
   var reps = +(process.argv[3]||2);
+  var DEEP = process.argv.indexOf("--deep") >= 0;   // 오답 매력도(측정하네스 능력계층 솔버 패널) — 비쌈
   var MCQ = ["요지","주제","제목","함의"], ESSAY = ["서술형","주제문완성"];
   var mres=[], eres=[];
-  console.error("■ 선지우선 MCQ 검수");
+  console.error("■ 선지우선 MCQ 검수" + (DEEP ? " (--deep: 오답 매력도 패널 포함)" : ""));
   for (var r=0;r<reps;r++) for (var mi=0;mi<MCQ.length;mi++){
     var q=await T.generateOne(pg, MCQ[mi], {level:"상"}).catch(function(){return null;});
     if(!q){console.error("  "+MCQ[mi]+" null");continue;}
     var a=auditMCQ(q, q.passage||pg, MCQ[mi]); if(a.skip){continue;}
+    var deepS="";
+    if(DEEP){ try{ var pan=await PSY.panel(q, q.passage||pg, T); if(pan.ok) deepS=" | 오답효율="+pan.distractorEff+"% P̂="+pan.P+" D̂="+pan.D+(pan.dead&&pan.dead.length?(" 死"+pan.dead.join("")):""); }catch(_){} }
     mres.push(a);
-    console.error("  "+(a.pass?"✅":"⚠ ")+MCQ[mi].padEnd(4)+" CV="+a.cv+" 정답순위="+a.rank+"/5 유일성="+a.uniq+" verbatim="+(a.verbatim?"Y":"n")+" 오답앵커="+a.anchored);
+    console.error("  "+(a.pass?"✅":"⚠ ")+MCQ[mi].padEnd(4)+" CV="+a.cv+" 정답순위="+a.rank+"/5 유일성="+a.uniq+" verbatim="+(a.verbatim?"Y":"n")+" 오답앵커="+a.anchored+" DNA="+a.dnaCov+deepS);
   }
   console.error("\n■ 답안우선 서술형 검수");
   for (var r2=0;r2<reps;r2++) for (var ei=0;ei<ESSAY.length;ei++){
@@ -74,5 +83,8 @@ function auditEssay(q){
   console.error("MCQ 합격 "+mp+"/"+mres.length+" (형태단서없음·유일·비verbatim·오답앵커)");
   console.error("서술형 합격 "+ep+"/"+eres.length+" (답안정합·단어수·루브릭)");
   var cued=mres.filter(function(x){return x.cue;}).length, vb=mres.filter(function(x){return x.verbatim;}).length;
+  var dnaVals=mres.map(function(x){return x.dnaCov;}).filter(function(v){return v&&v!=="-";}).map(function(v){return +String(v).split("/")[0];});
+  var dnaFull=dnaVals.filter(function(v){return v>=4;}).length;
   console.error("형태단서(정답최장) "+cued+"/"+mres.length+" · verbatim "+vb+"/"+mres.length+" · 평균 길이CV "+(mres.reduce(function(s,x){return s+x.cv;},0)/(mres.length||1)).toFixed(2));
+  console.error("DNA 4종 완전분산 "+dnaFull+"/"+dnaVals.length+" · 평균 DNA "+(dnaVals.reduce(function(s,x){return s+x;},0)/(dnaVals.length||1)).toFixed(1)+"/4");
 })().catch(function(e){console.error("HARNESS_ERR", (e&&e.stack||e).toString().slice(0,400));});

@@ -2119,6 +2119,13 @@
       if (best !== q.answer) {
         var old = q.answer, tmp = q.choices[old - 1]; q.choices[old - 1] = q.choices[best - 1]; q.choices[best - 1] = tmp;
         if (q.explanation && old <= 5 && best <= 5) q.explanation = String(q.explanation).replace("정답 " + CN[old - 1], "정답 " + CN[best - 1]);
+        // 선지 DNA 노트도 위치 동기화 + [선지 분석] 블록 재생성(위치 스왑 후 라벨 어긋남 방지)
+        if (q._choiceNotes && q._choiceNotes.length >= Math.max(old, best)) {
+          var nt2 = q._choiceNotes[old - 1]; q._choiceNotes[old - 1] = q._choiceNotes[best - 1]; q._choiceNotes[best - 1] = nt2;
+          q._choiceNotes.forEach(function (nt, idx) { nt.n = idx + 1; });
+          var anal = q._choiceNotes.map(function (nt) { return CN[nt.n - 1] + " " + (nt.correct ? "정답 — 핵심 논지 반영" : ("오답 — " + dnaWhy(nt.dna))); }).join(" · ");
+          q.explanation = String(q.explanation).replace(/\[선지 분석\][^\n]*/, "[선지 분석] " + anal);
+        }
         q.answer = best;
       }
       pos[q.answer] = (pos[q.answer] || 0) + 1; p2 = p1; p1 = q.answer;
