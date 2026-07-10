@@ -1,6 +1,76 @@
 {
- "updated": "2026-07-10T17:17:41.916Z",
+ "updated": "2026-07-10T18:52:40.161Z",
  "samples": [
+  {
+   "ts": "2026-07-10T18:47:05.487Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Acknowledgments Creating and publishing a reference guide and workbook that is popular, easy to understand, and tempting to use requires the input of many. My thanks go to the following: my parents who, as immigrants to the United States, passed their meticulousness about speaking and writing well along to me; Gary Klehr for helping to name the book many years ago and for tireless structural editing; my husband, Lester Kaufman, for catching so many mistakes before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, help shape every rule, example, and quiz. xiii\n\n─────────\n[요약문] The author expresses gratitude to contributors who provided (A) and (B) essential for crafting an accessible and engaging reference guide.",
+    "choices": [
+     "(A) inspiration … (B) correction",
+     "(A) feedback … (B) publishing",
+     "(A) guidance … (B) support",
+     "(A) criticism … (B) publicity",
+     "(A) assistance … (B) funding"
+    ],
+    "answer": 3,
+    "explanation": "(A) guidance / (B) support 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ①번 선지를 고른 학생은 'inspiration(영감)'과 'correction(수정)'이 저자의 감사의 대상이라는 오해를 한 것으로 보입니다. 그러나 지문에서 언급된 'meticulousness(세심함)', 'structural editing(구조 편집)', 'catching mistakes(실수 잡기)' 등은 'correction'보다는 'guidance(지도)'에 가깝습니다. → 처방: 감사의 대상이 '영감'보다는 '실질적인 도움'임을 인식하고, 지문에서 구체적으로 언급된 활동(예: 실수 잡기, 구조 편집)을 'correction'이 아닌 'support(지지)'로 해석하는 연습을 하세요.\n② 진단: ②번 선지를 고른 학생은 'feedback(피드백)'과 'publishing(출판)'이 저자의 감사의 대상이라고 오독했습니다. 그러나 지문에서 'feedback'은 'thousands of loyal readers'가 제공한 Daily input'으로 언급되며, 'publishing'은 감사의 대상이 아니라 결과물에 해당합니다. → 처방: 지문의 구조를 파악하고, 'feedback'은 '지속적인 도움', 'publishing'은 '결과'임을 구분하여 요약하는 연습을 하세요. 특히 'publishing'은 감사의 대상이 아니라 과정임을 주의하세요.\n④ 진단: ④번 선지를 고른 학생은 'criticism(비판)'과 'publicity(홍보)'가 저자의 감사의 대상이라고 혼동했습니다. 그러나 지문에서 'criticism'은 언급되지 않으며, 'publicity'는 'Marjorie McAneny 가 enthusiastic 하게 지원한 것'으로 해석될 수 있으나, 이는 'support'의 한 부분에 불과합니다. → 처방: 지문에서 'criticism'이 언급되지 않음을 확인하고, 'publicity'는 '홍보'가 아니라 '지지와 지원'으로 해석할 수 있음을 기억하세요. '감사'의 대상이 '비판'이나 '홍보'가 아님을 명확히 하세요.\n⑤ 진단: ⑤번 선지를 고른 학생은 'assistance(도움)'과 'funding(자금)'이 저자의 감사의 대상이라고 오독했습니다. 그러나 지문에서 'funding'은 언급되지 않으며, 'assistance'는 '도움'으로 해석될 수 있으나, 'funding'은 '지원'의 한 부분이 아닐 가능성이 높습니다. → 처방: 지문에서 'funding'이 언급되지 않음을 확인하고, 'assistance'는 '실질적인 도움'으로 해석하되, 'funding'은 '자금'이 아닌 '지지'로 오해하지 않도록 주의하세요. '감사'의 대상이 '자금'이 아님을 명확히 하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-10T18:47:35.505Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Acknowledgments Creating and publishing a reference guide and workbook that is popular, ____, and tempting to use requires the input of many. My thanks go to the following: my parents who, as immigrants to the United States, passed their meticulousness about speaking and writing well along to me; Gary Klehr for helping to name the book many years ago and for tireless structural editing; my husband, Lester Kaufman, for catching so many mistakes before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, help shape every rule, example, and quiz. xiii",
+    "choices": [
+     "be ignored",
+     "be harmful",
+     "be colorful",
+     "be widely recognized",
+     "be accessible"
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 'be accessible'가 들어가 글의 논지를 완성한다 (본문 'easy to understand'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: be ignored 는 '무시받다'라는 뜻으로, 지문에서 '많은 사람의 도움이 필요하다는' 맥락과 맞지 않으며, 'popular(인기 있는)'과 대조되는 의미가 아님. → 처방: 빈칸 앞의 'popular(인기 있는)'과 'tempting to use(사용하기에 매력적인)'와 함께 '접근 가능하고 사용하기 쉬운' 의미를 나타내는 'be accessible'을 떠올려야 함.\n② 진단: be harmful 은 '해로운'이라는 뜻으로, 지문에서 긍정적인 평가를 받는 'popular'과 'tempting to use'와 어울리지 않으며, '많은 사람의 도움이 필요하다는' 맥락과도 부합하지 않음. → 처방: 빈칸 앞의 'popular'과 'tempting to use'가 긍정적인 의미를 지녔으므로, 이와 유사한 긍정적 의미를 가진 'be widely recognized(널리 인정받는)'를 고려해야 함.\n③ 진단: be colorful 은 '다채로운'이라는 뜻으로, 지문에서 '많은 사람의 도움이 필요하다는' 맥락과 직접적인 관련이 없으며, 'popular'이나 'tempting to use'와도 연관성이 떨어짐. → 처방: 빈칸 앞의 'popular'과 'tempting to use'가 '사용성과 접근성'을 강조한다는 점을 고려하여, 'be accessible(접근 가능함)'을 떠올려야 함.\n④ 진단: be widely recognized 는 '널리 인정받는'이라는 뜻으로, 지문에서 '많은 사람의 도움이 필요하다는' 맥락은 맞지만, 'popular(인기 있는)'과 'tempting to use(사용하기에 매력적인)'의 의미를 더 구체적으로 보완하지는 않음. → 처방: 빈칸 앞의 'popular'과 'tempting to use'가 '접근성과 사용 용이성'을 강조한다는 점을 고려하여, 'be accessible(접근 가능함)'을 선택해야 함.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-10T17:11:31.769Z",
    "type": "복합세트",
@@ -282,72 +352,6 @@
     ],
     "answer": 3,
     "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-10T04:17:10.656Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "서술보어의 대체 가능성을 예외 없이 금지하려고",
-     "서술보어의 동의어 범위를 완전히 배제하려고",
-     "서술보어의 대체 가능성을 완전히 배제하려고",
-     "서술보어의 대체 가능성을 측정하려고",
-     "서술보어 구문의 한정성을 규제하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'To restrict substitutions for predicate adjectives in verb + object + adjective phrases.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To restrict substitutions for predicate adjectives in verb + object + adjective phrases.]"
-   }
-  },
-  {
-   "ts": "2026-07-09T23:38:42.416Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 1,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "REPETITION: THE ROOT OF VOCABULARY RETENTION",
-     "REPETITION: A RESULT OF VOCABULARY MASTERY",
-     "REPETITION: THE BEST WAY TO LEARN NEW WORDS",
-     "REPETITION: THE ONLY SOLUTION FOR ALL VOCABULARY GROWTH",
-     "REPETITION: ALWAYS THE MOST EFFECTIVE VOCABULARY TECHNIQUE"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Repetition cements vocabulary retention.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Repetition cements vocabulary retention.]"
    }
   }
  ]
