@@ -1,6 +1,25 @@
 {
- "updated": "2026-07-10T15:08:37.606Z",
+ "updated": "2026-07-10T17:17:41.916Z",
  "samples": [
+  {
+   "ts": "2026-07-10T17:11:31.769Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "Stations and airports; important buildings We do not use the with most stations and airports; with religious, educational and official buildings or with palaces and houses. to Waterloo (Station) at Orly (Airport) near St Mary's Church Merton College Norwich Museum Lambeth Palace Ashdown House Exceptions are names with of or with a noun (science) or adjective (open). at the University of York in the Palace of Westminster the Science Museum the Open University past the White House Theatres, cinemas, hotels, galleries and centres A possessive form ('s) is without the. St Martin's (Theatre) at Durrant's (Hotel) In the US, names with center are without the. near Lincoln Center But usually theatres, cinemas, etc have the. at the Globe (Theatre) the Plaza (Cinema) outside the Dorchester (Hotel) in the Tate (Gallery) the Brunei shopping centre",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-10T15:04:48.803Z",
    "type": "빈칸(어구)",
@@ -329,40 +348,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Repetition cements vocabulary retention.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Repetition cements vocabulary retention.]"
-   }
-  },
-  {
-   "ts": "2026-07-09T23:38:55.710Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "WEEK 33 DAY 5 REVIEW While each day’s story has five new words, there are many others that are repeated from previous weeks. These words are placed within the stories so that you might practice your grasp of ____. Repetition will help guarantee that these words will be firmly fixed as part of your ever-expanding vocabulary. REVIEW WORDS DEFINITIONS 1.abjure a. stir up, instigate 2.allay b. disorderly, carelessly 3.complacent c. regretful, confessing guilt 4.connoisseur d. abstain from, renounce 5.debilitate e. weaken 6.deter f. self-satisfied 7.discreet g. discourage, hinder 8.evanescent h. bent, inclination, disposition 9.foment i. sad, gloomy 10.glean j. identical, equivalent 11.impetuous k. something hunted or pursued 12.occult l. watchful, shrewd 13.penitent m. supernatural, mysterious, secret 14.propensity n. impulsive 15.quarry o. rebuke, reprimand* 16.reproach p. momentary, passing, fleeting 17.slovenly q. prudent,* careful, cautious 18.somber r. collect, gather 19.tantamount s. expert 20.wary t. soothe, calm",
-    "choices": [
-     "the story's structure",
-     "unrelated symbols",
-     "simpler words",
-     "exact translations",
-     "their meanings"
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 'their meanings'가 들어가 글의 논지를 완성한다 (본문 'their meanings'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
