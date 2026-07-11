@@ -1,6 +1,109 @@
 {
- "updated": "2026-07-11T15:19:05.145Z",
+ "updated": "2026-07-11T17:18:58.126Z",
  "samples": [
+  {
+   "ts": "2026-07-11T17:17:30.459Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.63,
+    "D": 0.17,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.17)",
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Professor Struik has achieved the (A) [obviously / seemingly] impossible task of compressing the history of mathematics into less than three hundred pages. By stressing the unfolding of a few main ideas and by (B) [minimizing / emphasizing] references to other developments, the author has been able to follow Egyptian, Babylonian, Chinese, Indian, Greek, Arabian, and Western mathematics from the earliest records to the beginning of the present century. He has based his account of nineteenth century advances on persons and schools rather than on subjects as the treatment by subjects has already been used in existing books. Important mathematicians whose work is analysed in detail are Euclid, Archimedes, Diophantos, Hammurabi, Bernoulli, Fermat, Euler, Newton, Leibniz, Laplace, Lagrange, Gauss, Jacobi, Riemann, Cremona, Betti, and others. Among the 47 illustrations arc portraits ofmany ofthese great figures. Each chapter is followed by a (C) [select / random] bibliography. CHARLES WILSON",
+    "choices": [
+     "(A) seemingly - (B) minimizing - (C) select",
+     "(A) obviously - (B) minimizing - (C) random",
+     "(A) seemingly - (B) minimizing - (C) random",
+     "(A) seemingly - (B) emphasizing - (C) select",
+     "(A) obviously - (B) minimizing - (C) select"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) seemingly - (B) minimizing - (C) select. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: 문맥에 맞지 않게 'obviously'와 'minimizing'을 선택하여 Professor Struik 의 업적이 쉽게 이루어진 것으로 오독했으며, 또한 'random'을 선택하여 참고문헌의 선택이 무작위로 이루어진 것으로 혼동했다. → 처방: 문맥을 주의깊게 읽고, 각 단어가 문장 전체에 미치는 영향을 고려하여 선택해야 한다.\n③ 진단: 문맥에 맞지 않게 'seemingly'와 'minimizing'을 선택하여 Professor Struik 의 업적이 어려워 보이지만 실제로는 쉽게 이루어진 것으로 오독했으며, 또한 'random'을 선택하여 참고문헌의 선택이 무작위로 이루어진 것으로 혼동했다. → 처방: 문맥을 주의깊게 읽고, 각 단어가 문장 전체에 미치는 영향을 고려하여 선택해야 한다.\n④ 진단: 문맥에 맞지 않게 'emphasizing'을 선택하여 참고문헌의 선택이 강조된 것으로 오독했으며, 또한 'select'을 선택하여 참고문헌의 선택이 선택된 것으로 혼동했다. → 처방: 문맥을 주의깊게 읽고, 각 단어가 문장 전체에 미치는 영향을 고려하여 선택해야 한다.\n⑤ 진단: 문맥에 맞지 않게 'obviously'를 선택하여 Professor Struik 의 업적이 쉽게 이루어진 것으로 오독했다. → 처방: 문맥을 주의깊게 읽고, 각 단어가 문장 전체에 미치는 영향을 고려하여 선택해야 한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-11T17:17:56.793Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Professor Struik has achieved the seemingly impossible task of compressing the history of mathematics into less than three hundred pages. By stressing the unfolding of a few main ideas and by minimizing references to other developments, the author has been able to follow Egyptian, Babylonian, Chinese, Indian, Greek, Arabian, and Western mathematics from the earliest records to the beginning of the present century. He has based his account of nineteenth century advances on persons and schools rather than on subjects as the treatment by subjects has already been used in existing books. Important mathematicians whose work is analysed in detail are Euclid, Archimedes, Diophantos, Hammurabi, Bernoulli, Fermat, Euler, Newton, Leibniz, Laplace, Lagrange, Gauss, Jacobi, Riemann, Cremona, Betti, and others. Among the 47 illustrations arc portraits ofmany ofthese great figures. Each chapter is followed by a select bibliography. CHARLES WILSON\n\n─────────\n[요약문] Professor Struik's work demonstrates how (A) synthesis of mathematical history and (B) selective focus on key figures enable comprehensive yet concise historical narration.",
+    "choices": [
+     "(A) expansion … (B) exhaustive documentation",
+     "(A) condensation … (B) curated emphasis",
+     "(A) chronological ordering … (B) arbitrary exclusion",
+     "(A) fragmentation … (B) random selection",
+     "(A) elaboration … (B) omission of crucial figures"
+    ],
+    "answer": 2,
+    "explanation": "(A) condensation / (B) curated emphasis 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘expansion(확장)’은 지문에서 ‘압축(compressing)’과 반대 의미이며, ‘exhaustive documentation(철저한 기록)’은 ‘minimizing references(참조 최소화)’와 배치됩니다. ‘확장’과 ‘철저한 기록’이 모두 지문 내용과 맞지 않습니다. → 처방: ‘압축’과 ‘선택적 집중’이 핵심임을 기억하고, 지문에서 ‘compressing’과 ‘minimizing references’를 다시 확인하세요.\n③ 진단: ‘chronological ordering(연대순 배열)’은 지문에서 ‘unfolding of a few main ideas(몇 가지 핵심 아이디어의 전개)’로 설명되지 않으며, ‘arbitrary exclusion(임의적 배제)’은 ‘selective focus(선택적 집중)’과 반대입니다. → 처방: ‘unfolding’이 ‘연대순’이 아니라 ‘주요 아이디어의 발전 과정’을 뜻함을 떠올리고, ‘선택적’과 ‘임의적’의 차이를 비교하세요.\n④ 진단: ‘fragmentation(파편화)’은 지문에서 ‘compressing(압축)’과 ‘synthesis(종합)’으로 설명된 것과 반대이며, ‘random selection(무작위 선택)’은 ‘curated emphasis(선별적 강조)’와 다릅니다. → 처방: ‘종합’과 ‘선별’이 지문의 핵심임을 떠올리고, ‘파편화’와 ‘무작위’는 지문 내용과 맞지 않음을 확인하세요.\n⑤ 진단: ‘elaboration(상세 설명)’은 지문에서 ‘minimizing references(참조 최소화)’로 설명된 것과 반대이며, ‘omission of crucial figures(중요 인물 생략)’은 ‘analysed in detail(자세히 분석됨)’과 배치됩니다. → 처방: ‘압축’과 ‘중요 인물 분석’이 지문의 핵심임을 떠올리고, ‘상세 설명’과 ‘생략’이 지문과 맞지 않음을 확인하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-11T17:18:27.246Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "a concise overview of major mathematical developments across ancient and modern civilizations",
+     "an exhaustive study of every mathematical discovery from ancient times to the present",
+     "a detailed analysis of only a few key mathematical figures and their contributions",
+     "a universal history covering all mathematical traditions without exception",
+     "a brief mention of occasional mathematical advancements in various civilizations"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Struik's book concisely traces the evolution of key mathematical ideas and notations from ancient to modern civilizations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 'less than three hundred pages'와 'stressing the unfolding of a few main ideas'라는 표현을 무시하고, 'exhaustive study'라는 말이 '모든 발견'을 다룬다고 오해한 것 같습니다. → 처방: 지문에서 'few main ideas'와 'minimizing references'를 강조한 부분을 다시 읽고, 'exhaustive'가 아닌 '주요 아이디어 위주'라는 의미를 정확히 파악하세요.\n③ 진단: 지문에서 'a few main ideas'와 'persons and schools'를 'detailed analysis of only a few key figures'로 오해한 것 같습니다. 그러나 지문은 '주요 아이디어'와 '문명 전체'를 다루고 있습니다. → 처방: 지문에서 'Egyptian, Babylonian, Chinese, Indian, Greek, Arabian, and Western mathematics'와 같은 문명 전체를 언급한 부분을 집중해서 읽고, 'few figures'가 아니라 '문명 전체'임을 확인하세요.\n④ 진단: 지문에서 'without exception'이라는 말이 없음에도, 'universal history'라는 말이 모든 전통을 빠짐없이 다룬다고 오해한 것 같습니다. → 처방: 지문에서 'a few main ideas'와 'minimizing references'를 다시 확인하고, 'universal'이 아니라 '주요 아이디어 위주'라는 의미를 정확히 이해하세요.\n⑤ 진단: 지문에서 'a few main ideas'와 'stressing'을 무시하고, 'occasional'이라는 말이 'brief mention'을 뜻한다고 오해한 것 같습니다. 그러나 지문은 문명 전체의 흐름을 다루고 있습니다. → 처방: 지문에서 'from the earliest records to the beginning of the present century'와 같은 문장을 다시 읽고, 'occasional'이 아니라 '문명 전체의 흐름'임을 확인하세요.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Struik]"
+   }
+  },
   {
    "ts": "2026-07-11T15:18:18.286Z",
    "type": "안내문불일치",
@@ -263,95 +366,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T09:02:18.952Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 정부가 기술 혁신이 빠른 시장 간섭을 왜곡하고 제품 개발 능력을 방해할 때 문제가 생긴다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T03:44:39.841Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.25,
-    "D": -0.5,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.25)",
-     "변별도 낮음(D̂=-0.50)",
-     "역변별(정답키 의심)",
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "SENTENCE STRUCTURE: CATEGORIES 52 ⓐ<u>With co-​ordinate NPs</u> it’s usual to find that ⓑ<u>the NP as a whole are plural</u> regard­ less of whether the heads are singular or plural. Hence, although Max and Adrian are individually singular, the NP as a whole can be replaced by the plural pronoun they. What, then, is the structure of these phrases? Look again at ⓒ<u>the subject NP of [20b]</u>. Clearly it is a co-​ordination of [the clowns] and [the acrobats], both of which are themselves NPs. And the same goes for [Max] and [Adrian] in [Max and Adrian]. As names, they are each full NPs. Each could be replaced by a pro­ noun that can only replace a full NP. In short, ⓓ<u>the subject NP of [20a] and [20b]</u> are co-​ordinations of NPs. ⓔ<u>The whole co-​ordinate phrase</u> and the elements that are co-​ordinated in them have the same distribution and so are of the same category. They can be represented as in [21] and [22]:",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 2,
-    "explanation": "틀린 곳은 ⓑ(the NP as a whole are plural → the NP as a whole is plural), ⓓ(the subject NP of [20a] and [20b] → the subject NPs of [20a] and [20b]) — 총 2개.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T03:45:49.758Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "SENTENCE STRUCTURE: CATEGORIES 52 With co-​ordinate NPs it’s usual to find that the NP as a whole is plural regard­ less of whether the heads are singular or plural. Hence, although Max and Adrian are individually singular, the NP as a whole can be replaced by the plural pronoun they. What, then, is the structure of these phrases? Look again at the subject NP of [20b]. Clearly it is a co-​ordination of [the clowns] and [the acrobats], both of which are themselves NPs. And the same goes for [Max] and [Adrian] in [Max and Adrian]. As names, they are each full NPs. Each could be replaced by a pro­ noun that can only replace a full NP. In short, the subject NPs of [20a] and [20b] are co-​ordinations of NPs. The whole co-​ordinate phrase and the elements that are co-​ordinated in them have the same distribution and so are of the same category. They can be represented as in [21] and [22]:",
-    "choices": [
-     "‘맥스와 에이드리안’은 각각 개별적으로 단수 명사구로 볼 수 있다",
-     "‘광대들’과 ‘곡예사들’은 각각 개별적으로 **단수** 명사구로 구성된다",
-     "‘맥스와 에이드리안’은 전체적으로 **단수** 대명사로 대체할 수 있다",
-     "‘광대들’과 ‘곡예사들’의 조합은 전체적으로 **단수** 명사구로 기능한다",
-     "조합된 명사구는 조합된 요소들과 **다른** 문법적 범주를 지닌다"
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: ‘광대들’과 ‘곡예사들’은 각각 복수 명사구로, 지문에서 ‘the clowns’와 ‘the acrobats’는 ‘themselves NPs’로 복수임을 분명히 밝히지만, 학생은 ‘단수’라는 오해를 했다. → 처방: 복수 명사구는 ‘-s’나 ‘the’를 확인하고, 지문에서 ‘plural’이라는 단어를 찾아 복수임을 확인하는 습관을 들인다.\n③ 진단: ‘맥스와 에이드리안’이 전체적으로 ‘they’라는 복수 대명사로 대체된다는 지문 내용을 무시하고, ‘단수 대명사’로 오해했다. → 처방: 조합된 명사구가 전체적으로 어떤 대명사로 대체되는지 확인하고, 지문에서 ‘plural pronoun they’라고 쓴 부분을 반드시 읽는다.\n④ 진단: ‘광대들’과 ‘곡예사들’의 조합이 전체적으로 ‘단수’ 명사구로 기능한다고 오해했는데, 지문은 ‘the NP as a whole is plural’라고 명시한다. → 처방: ‘as a whole’이라는 표현이 나오면 전체의 수를 확인하고, 지문에서 ‘plural’이라는 단어를 놓치지 않도록 주의한다.\n⑤ 진단: 조합된 명사구가 조합된 요소들과 ‘다른’ 문법적 범주를 지닌다고 오해했는데, 지문은 ‘same category’라고 명확히 말한다. → 처방: ‘same distribution’이라는 표현이 나오면 요소와 전체가 같은 범주임을 떠올리고, ‘different’라는 단어가 없음을 확인한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
