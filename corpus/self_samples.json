@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-10T22:19:50.931Z",
+ "updated": "2026-07-11T00:13:04.668Z",
  "samples": [
+  {
+   "ts": "2026-07-11T00:11:29.725Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Word Categories 7 Although some of these may sound strange concepts, they are perfectly acceptable forms. The idea–ideas case is the most straightforward. The distinction between these two words is that while the first refers to a single thing, the second refers to more than one of them. This is the distinction between singular and plural and in general this distinction can apply to virtually all nouns. Consider a more strange case: friendliness– friendlinesses. What is strange here is not the grammatical concepts of singular or plural, but that the semantic distinction is not one typically made. However, it is perfectly possible to conceptualise different types of friendliness: one can be friendly by saying good morning to someone as you pass in the street, without necessarily entering into a deeper relationship with them; other forms of friendliness may demand more of an emotional commitment. Therefore we can talk about different friendlinesses. By contrast, consider the following, based on the words in (9): (11) conceptualises\n\n─────────\n[요약문] The distinction between singular and plural forms can apply to most nouns, and even abstract concepts like (A) can be pluralized to denote different types, resulting in multiple (B).",
+    "choices": [
+     "(A) morphological rules … (B) grammatical errors",
+     "(A) concrete objects … (B) variants",
+     "(A) typical nouns … (B) semantic opposites",
+     "(A) countable entities … (B) exceptions",
+     "(A) abstract qualities … (B) instances"
+    ],
+    "answer": 5,
+    "explanation": "(A) abstract qualities / (B) instances 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘morphological rules’는 지문에서 ‘단수/복수’를 가리키는 말이며, ‘grammatical errors’는 오류를 뜻하는데 지문은 ‘허용 가능한 형태’라고만 말하고 오류는 언급하지 않음. → 처방: 지문에서 ‘허용 가능한 형태’를 ‘morphological rules’로 오해하지 말고, ‘허용 가능하다는 말’이 ‘오류가 아니다’라는 뜻임을 기억하기.\n② 진단: ‘concrete objects’는 ‘구체적인 물건’을 뜻하지만 지문은 ‘친절함(friendliness)’처럼 추상적인 개념도 ‘다양한 종류’로 볼 수 있음을 설명함. → 처방: ‘concrete objects’가 ‘단수/복수’를 설명하는 말이 아님을 알고, 지문에서 ‘추상적 개념도 종류가 나뉠 수 있다’는 점을 떠올리기.\n③ 진단: ‘typical nouns’는 ‘일반적인 명사’를 뜻하지만 지문은 ‘친절함’처럼 추상명사도 ‘다양한 종류’로 볼 수 있음을 강조함. ‘semantic opposites’는 ‘의미상 반대’인데 지문은 반대 관계가 아님. → 처방: ‘typical nouns’가 ‘단수/복수’를 설명하는 말이 아님을 알고, ‘의미상 반대’가 아니라 ‘다양한 종류’를 뜻함을 기억하기.\n④ 진단: ‘countable entities’는 ‘셀 수 있는 대상’을 뜻하지만 지문은 ‘친절함’처럼 셀 수 없는 추상명사도 ‘다양한 종류’로 볼 수 있음을 설명함. ‘exceptions’는 ‘예외’를 뜻하는데 지문은 예외가 아니라 ‘허용 가능한 경우’를 설명함. → 처방: ‘셀 수 있는 대상’이 아니라 ‘추상적 개념도 종류가 나뉠 수 있다’는 지문의 핵심을 떠올리기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-11T00:12:34.447Z",
+   "type": "본문어변형빈칸",
+   "level": "중",
+   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
+    "passage": "Consider a more strange case: friendliness– friendlinesses. What is strange here is not the grammatical concepts of singular or plural, but that the semantic distinction is not one typically (make).",
+    "choices": [],
+    "answer": null,
+    "explanation": "1) make→made [수동태 과거시제(passive voice: is/was + p.p.)]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-10T22:18:41.897Z",
    "type": "틀린문장 고쳐쓰기",
@@ -284,75 +338,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장과 정확히 일치하여 오독·혼동한 것이 아니라면, '간단히 설명하였다'는 표현을 '충분히 설명하지 않았다'로 오해했을 가능성이 있음. (지문: 'instructions were generally explained for every group briefly' vs 선지: '간단히 지시사항을 설명하였다'는 사실과 동일). → 처방: 지문에서 'briefly'는 '간단히'를 의미함을 인지하고, 지시사항 설명 여부를 '충분히 설명하지 않았다'로 왜곡하지 않도록 주의할 것.\n② 진단: 지문에서 'no one was apparently interested in asking the researcher'는 '호기심 있는 학생 몇 명이 묻고자 했지만 아무도 질문하지 않았다'는 사실과 동일함을 오해했을 가능성이 있음. (지문: 'no one was apparently interested in asking' vs 선지: '호기심 있는 학생 몇 명이 ... 아무도 연구자에게 질문하지 않았다'). → 처방: 지문에서 'no one'의 의미를 정확히 파악하고, '호기심 있는 학생 몇 명이'라는 표현이 지문에 없음을 확인할 것.\n③ 진단: 지문에서 'their missions were explained thoroughly through involving in every group discussion'는 '연구자가 모든 조의 토론에 참여하며 미션을 상세히 설명하였다'는 사실과 동일함을 오해했을 가능성이 있음. (지문: 'explained thoroughly through involving in every group discussion' vs 선지: '연구자는 모든 조의 토론에 참여하며 미션을 상세히 설명하였다'). → 처방: 지문에서 'explained thoroughly'와 'involving in every group discussion'의 관계를 정확히 이해하고, '연구자가 직접 설명하였다'는 의미를 왜곡하지 않도록 할 것.\n⑤ 진단: 지문에서 'The students should match some words appeared in the text with the provided definitions which was in English'는 '학생들은 영어 정의가 제공된 단어와 본문에 등장한 단어를 짝짓는 연습을 하였다'는 사실과 동일함을 오해했을 가능성이 있음. (지문: 'match some words ... with the provided definitions which was in English' vs 선지: '영어 정의가 제공된 단어와 본문에 등장한 단어를 짝짓는 연습을 하였다'). → 처방: 지문에서 'definitions which was in English'의 의미를 정확히 파악하고, '영어 정의가 제공되었다'는 사실을 왜곡하지 않도록 할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-10T07:58:08.575Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(70%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 5번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "형태소가 적절한 형태로 발현되면 어간의 부착을 지원하는 조건이 충족된다.",
-     "어간의 부착을 지원하는 조건이 충족되지 않으면 형태소가 발현될 수 없다.",
-     "어간의 부착을 지원하는 조건이 일부만 충족되어도 형태소가 적절한 형태로 발현될 수 없다.",
-     "어간의 부착을 지원하는 조건이 충족되지 않으면 형태소가 부적절한 형태로 발현된다.",
-     "어간의 부착을 지원하는 조건이 충족되지 않으면 형태소의 발현 자체가 불가능하다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The tense affix in the C constituent undergoes DO Support instead of Affix Hopping because the complement of the C constituent is not headed by an overt verb.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈 · ② 정답 — 핵심 논지 반영 · ③ 오답 — 정답의 일부만 담아 지엽적 · ④ 오답 — 지나치게 확대 해석 · ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n① 진단: 형태소의 발현(affix realization)과 어간의 부착(host attachment) 조건을 혼동. 지문은 '적절한 형태의 발현'(spelled out as did) 조건이 '어간의 부착'(Affix Attachment/Hopping) 가능성에 달려 있음을 강조하지만, 선지는 이를 반대로 기술. → 처방: 형태소 발현 조건과 어간 부착 조건의 관계를 명확히 구분하고, 지문에서 제시된 'Affix Attachment/Hopping'의 적용 가능성을 우선적으로 확인할 것.\n③ 진단: 조건의 '일부만 충족' 여부를 오해. 지문은 'Affix Hopping'이 불가능한 경우 'DO Support'가 대체로 적용됨을 설명하지만, 선지는 '일부만 충족' 시에도 형태소 발현이 불가능하다고 과장. → 처방: 조건의 충족 여부를 '전부' 또는 '전혀'로 나누어 판단하지 말고, 지문에서 제시된 대체 메커니즘(DO Support 등)을 고려할 것.\n④ 진단: '부적절한 형태로 발현'이라는 표현을 오해. 지문은 'Affix Hopping'이 불가능할 때 'did'로 대체 발현됨을 설명하지만, 선지는 '부적절'이라는 단어를 부정확하게 사용. → 처방: '부적절한 형태'보다는 지문에서 설명된 '대체 발현'(spelled out as did)의 메커니즘을 정확히 이해하고, 조건 불충족 시 발생하는 현상을 기술할 것.\n⑤ 진단: '형태소의 발현 자체가 불가능'이라는 극단적 표현을 오해. 지문은 조건 불충족 시 대체 메커니즘(DO Support)으로 형태소가 발현됨을 설명하지만, 선지는 발현 자체를 불가능하다고 단정. → 처방: 조건 불충족 시에도 대체 메커니즘이 존재함을 인식하고, 지문에서 제시된 'DO Support'와 같은 대체 과정을 반드시 확인할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The tense affix in the C constituent undergoes DO Support instead of Affix Hopping because the complement of the C constituent is not headed by an overt verb.]"
-   }
-  },
-  {
-   "ts": "2026-07-10T08:06:40.601Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "The resulting syntactic structure is then sent to the PF component to undergo morphological and phonological processing. Since the tense affix in T gets deleted, it does not undergo Affix Hopping. By contrast, the tense affix (Af) in C is not deleted and is unhosted (in the sense that it is not attached to the kind of verbal host that it requires), and hence must undergo Affix Attachment (61). However, since the complement of the C constituent which contains the tense affix is not headed by an overt verb (but rather is a TP headed by a null T), Affix Hopping (61i) cannot apply; consequently, DO Support (61ii) applies instead, with the result that the affix is spelled out as the appropriate inflected form of DO, namely did. Now, consider the negative question (62e) Didn’t he win the race? In keeping with the NEGP analysis of negation outlined in the previous section, let’s suppose that after the VP win the race has been formed,",
-    "choices": [
-     "문법적 구조가 PF 구성 요소로 전송되어 형태소 및 음운 처리를 거치지 않는다.",
-     "T의 시제 접미사가 삭제되어도 Affix Hopping이 수행된다.",
-     "C의 시제 접미사(Af)는 삭제되지 않고 미결속 상태로 남아 Affix Attachment가 수행된다.",
-     "C의 보충 구성체의 머리가 명시적 동사로 headed되어 Affix Hopping이 적용된다.",
-     "부정 의문문 ‘Didn’t he win the race?’에서 시제 접미사가 ‘did’로 실현되지 않는다."
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘형태소 및 음운 처리를 거치지 않는다’는 지문의 ‘PF 구성 요소로 전송되어 morphological and phonological processing을 undergo한다’는 내용을 오독하여 문법적 구조의 PF 전송 후 처리를 부정적으로 오해함. → 처방: PF 구성 요소의 역할을 정확히 이해하고, 지문에서 언급된 ‘ undergo morphological and phonological processing’을 기억할 것.\n② 진단: ‘T의 시제 접미사가 삭제되어도 Affix Hopping이 수행된다’는 지문의 ‘Since the tense affix in T gets deleted, it does not undergo Affix Hopping’을 오독하여 삭제 여부가 Affix Hopping 수행 여부를 결정짓는 조건임을 혼동함. → 처방: Affix Hopping의 조건(시제 접미사의 삭제/미삭제)을 정확히 구분하고, 삭제 시 Affix Hopping이 불가능하다는 규칙을 적용할 것.\n④ 진단: ‘C의 보충 구성체의 머리가 명시적 동사로 headed되어 Affix Hopping이 적용된다’는 지문의 ‘the complement of the C constituent which contains the tense affix is not headed by an overt verb (but rather is a TP headed by a null T)’를 오독하여 보충 구성체의 heads가 동사일 경우 Affix Hopping이 가능하다고 오해함. → 처방: C의 보충 구성체가 TP로 headed되어 overt verb가 아닌 경우, Affix Hopping이 불가능하다는 규칙을 정확히 적용할 것.\n⑤ 진단: ‘Didn’t he win the race?’에서 시제 접미사가 ‘did’로 실현되지 않는다는 오해를 지문의 ‘the affix is spelled out as the appropriate inflected form of DO, namely did’를 오독하여 DO Support의 결과로 ‘did’가 실현됨을 간과함. → 처방: DO Support의 결과로 시제 접미사가 ‘did’로 실현된다는 규칙을 기억하고, 부정 의문문의 형태를 분석할 때 이를 적용할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
