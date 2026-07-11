@@ -1,6 +1,94 @@
 {
- "updated": "2026-07-11T09:02:52.968Z",
+ "updated": "2026-07-11T10:39:28.753Z",
  "samples": [
+  {
+   "ts": "2026-07-11T10:37:48.120Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "형용사의 의미와 수식 범위는 사용되는 문맥과 수식 대상의 구조에 따라 다양하게 결정된다.",
+     "모든 형용사는 문맥에 따라 그 의미가 완전히 달라지므로, 고유한 사전적 의미는 무의미하다.",
+     "형용사의 의미와 수식 범위는 대부분 고정되어 있으며, 문맥이나 구조에 따른 변화는 극히 예외적이다.",
+     "형용사의 의미 변화는 주로 문맥에 의해 발생하며, 수식 대상의 구조는 그 영향력이 미미하다.",
+     "형용사는 명사를 수식하지만, 그 의미와 범위는 수식 대상의 특성이나 문맥과 무관하게 본질적으로 결정된다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Adjectives modify nouns and noun phrases in diverse ways, with their specific meaning and scope often determined by context and the structure of the modified phrase.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 학생은 지문에서 형용사의 의미가 문맥에 따라 달라지는 여러 예시를 보았으나, 이를 '고유한 사전적 의미가 무의미하다'는 극단적인 주장으로 확대 해석했습니다. 지문은 의미의 '변화'와 '다양성'을 말할 뿐, 사전적 의미의 '무의미함'을 주장하지 않습니다. → 처방: 지문의 내용을 바탕으로 추론하되, 지문에 없는 극단적인 주장이나 일반화는 피해야 합니다.\n③ 진단: 학생은 지문이 형용사의 의미와 수식 범위가 문맥과 구조에 따라 '다양하게 결정된다'는 점을 수많은 예시로 설명하고 있음에도 불구하고, 이를 '대부분 고정되어 있고 변화는 예외적'이라는 반대 주장으로 오해했습니다. 지문은 'An early dinner. An early riser.' 등 수많은 변화 예시를 제시합니다. → 처방: 지문의 핵심 내용을 파악하고, 지문이 제시하는 예시들이 어떤 주장을 뒷받침하는지 주의 깊게 살펴야 합니다.\n④ 진단: 학생은 지문에서 형용사의 의미 변화에 문맥의 중요성을 인식했으나, 'A deaf-and-dumb teacher'나 'Everyday speech'와 같이 수식 대상의 구조에 따라 의미와 수식 범위가 크게 달라지는 예시들을 '영향력이 미미하다'고 잘못 판단했습니다. 지문 9.4는 복합 명사에서 인접한 명사만 수식하는 경우를 명시하며 구조의 중요성을 강조합니다. → 처방: 지문에서 여러 요소를 설명할 때, 특정 요소의 중요성을 과소평가하거나 배제하지 말고 모든 설명 요소를 종합적으로 고려해야 합니다.\n⑤ 진단: 학생은 지문이 형용사의 의미와 수식 범위가 문맥과 수식 대상의 구조에 따라 '다양하게 결정된다'는 핵심 내용을 완전히 반대로 이해했습니다. 지문의 모든 예시 ('An early dinner. An early riser.' 등)는 형용사의 의미가 문맥과 무관하지 않음을 보여줍니다. → 처방: 지문의 핵심 주장과 결론을 파악할 때, 지문이 제시하는 증거와 예시들이 무엇을 뒷받침하는지 명확히 연결하여 이해해야 합니다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Adjectives modify nouns and noun phrases in diverse ways, with their specific meaning and scope often determined by context and the structure of the modified phrase.]"
+   }
+  },
+  {
+   "ts": "2026-07-11T10:38:17.085Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the semantic function of adjectives in noun phrase modification",
+     "the universal impact of adjectives on all linguistic structures",
+     "the grammatical role of adjectives in noun phrase formation",
+     "the influence of nouns on the semantic interpretation of adjectives",
+     "the semantic precision required for adjectives to modify nouns"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The semantic role of adjectives in modifying nouns or noun phrases.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·범위 축소·인과 전도·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: 형용사가 모든 언어 구조에 영향을 미친다는 과장된 해석을 한 것 같다. 지문은 명사구 안에서의 형용사의 의미를 다루었을 뿐, 언어 구조 전체에 대한 보편적 영향을 언급하지 않았다. → 처방: 지문의 예시와 설명을 꼼꼼히 읽고, 형용사의 역할이 한정된 범위(명사구 내)에 있는지 확인하기.\n③ 진단: 형용사의 문법적 역할(명사구 형성)이 아니라, 명사구가 형성되는 과정 자체에 초점을 맞춘 것 같다. 지문은 형용사가 명사구를 어떻게 수식하는지(의미적 기능)를 설명하고 있다. → 처방: 형용사가 명사구를 '어떻게' 수식하는지(의미 변화)를 찾기 위해 지문 속 예시(early dinner, criminal neglect 등)를 다시 읽고 비교하기.\n④ 진단: 명사가 형용사의 의미를 결정한다는 오해. 지문은 형용사가 명사를 수식해 의미를 구체화하는 방식을 설명하고 있으며, 명사가 형용사를 제어하지 않는다. → 처방: 형용사와 명사의 관계를 반대로 생각하지 말고, '형용사가 명사를 설명하는 방식'에 집중해서 읽기.\n⑤ 진단: 형용사의 의미가 명사에 따라 달라질 수 있다는 착각. 지문은 형용사가 명사를 수식할 때의 의미 변화(예: early dinner vs. early riser)를 보여주지만, '정밀성'보다는 '의미 기능'에 초점을 둔다. → 처방: 형용사의 의미가 명사에 따라 달라지는 것이 아니라, 형용사가 명사를 어떤 방식으로 설명하는지(예: 시간, 상태, 정도 등)를 찾기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The semantic role of adjectives in modifying nouns or noun phrases.]"
+   }
+  },
+  {
+   "ts": "2026-07-11T10:39:02.586Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 5 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 5단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 그녀는 완벽하게 편하게 말했다.\n주어진 단어: ( spoke / perfect )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] She spoke with perfect ease. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-11T09:00:25.192Z",
    "type": "어법개수형",
@@ -234,96 +322,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [수일치] ⓑ: 'they must be circumstantial' → 'they must be circumstantials' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-10T22:19:07.363Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.17,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.17)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] And these may be indirect evidence for lexicalisation of the complex as a transitive verb governing the accusative as its direct object, as represented in (50) and (51).\n\nWhat positions fit in? 93 (49) V loc Ν abs loc Ν Ν Him bij) fyr ongean The representations in (47) — (49) each contain two locative arguments, given that, unlike fram, which realises ablative, ongean realises locative. Given the \"one-case-per-clause\" constraint, then, as long as the datives me and him are interpreted as locative, they must be circumstantials. ( ① ) For (16) — (19), the datives might be taken as governed by prefixed verbs (e. ( ② ) cefterridan, aftercliopan), and therefore participant arguments thereof. ( ③ ) Although there is no direct evidence for lexicalisation of the prefix + verb complex, we may recall instances of accusative co-occurring with cefter + verb, only when the formative immediately precedes the verb (cf. above). ( ④ ) After (50) V erg abs/loc A Ν Ν Hig öa sona aefterridon ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘circumstantials’(상황어)가 ‘locative’(장소격)로 해석된다는 점은 인정하지만, 이 문장이 ‘dative’(여격)가 ‘locative’(장소격)로 해석될 때 circumstantial(상황어)로 간주된다는 설명과 이어지므로, 주어진 문장은 이 논의와 직접 연결되지 않음. → 처방: ‘circumstantials’가 ‘locative’로 해석된다는 설명 다음에 오는 문장임을 확인하고, 주어진 문장이 ‘lexicalisation’(어휘화) 논의와 관련이 있는지 다시 한 번 점검할 것.\n② 진단: ‘prefixed verbs’(접두사가 붙은 동사)와 ‘participant arguments’(참여자 논항)의 관계가 주어진 문장의 ‘lexicalisation’(어휘화) 논의와 맞지 않음. 학생은 ‘prefixed verbs’가 ‘lexicalisation’의 예시로 오해했을 가능성이 큼. → 처방: ‘lexicalisation’이란 ‘접두사와 동사가로 쓰여 새로운 동사로 Lexicalised(어휘화)되는 것’을 뜻한다는 점을 기억하고, 주어진 문장이 ‘접두사+동사’가 ‘transitive verb’(타동사)로 Lexicalised(어휘화)되었다는 주장을 담고 있는지 확인할 것.\n③ 진단: ‘direct evidence’(직접 증거)가 없다는 점은 인정하지만, 이 문장은 ‘lexicalisation’의 증거를 찾는 논의와 이어지지 않음. 학생은 ‘evidence’(증거)의 종류와 ‘lexicalisation’의 관계를 혼동했을 수 있음. → 처방: ‘lexicalisation’이란 ‘단어 자체가 하나의 동사로 굳어지는 것’을 뜻한다는 점을 떠올리고, 주어진 문장이 ‘어휘화된 동사’가 ‘accusative’를 지배한다는 주장을 담고 있는지 다시 읽어볼 것.\n⑤ 진단: ‘V erg abs/loc A ’과 같은 표기법이 나오면 ‘ergative’(능격)이나 ‘absolutive’(절대격) 논의가 나올 수 있지만, 주어진 문장은 ‘lexicalisation’의 증거를 찾는 논의와 맞지 않음. 학생은 ‘표기법’이 주는 힌트를 오해했을 가능성이 큼. → 처방: ‘V’(동사), ‘N’(명사), ‘A’(능격), ‘abs’(절대격) 등 표기법의 의미를 정확히 숙지하고, 주어진 문장이 ‘동사가 명사를 지배하는’(타동사) 구조를 설명하는지 확인할 것.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-10T20:45:29.528Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] But they can also be useful, because they signal how well you balance caution and confidence and therefore influence how readers judge your character.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 그러나 그 글들은 신중과 자신감의 균형을 얼마나 잘 맞추고 있는지를 보여주며, 이로 인해 독자들이 여러분의 인격을 판단하는 방식에도 영향을 미치기 때문에 유용할 수 있습니다. (구문 포인트: 관계사절(how well you balance caution and confidence) + 결과의 부사절(therefore influence how readers judge your character) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-10T18:47:05.487Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Acknowledgments Creating and publishing a reference guide and workbook that is popular, easy to understand, and tempting to use requires the input of many. My thanks go to the following: my parents who, as immigrants to the United States, passed their meticulousness about speaking and writing well along to me; Gary Klehr for helping to name the book many years ago and for tireless structural editing; my husband, Lester Kaufman, for catching so many mistakes before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, help shape every rule, example, and quiz. xiii\n\n─────────\n[요약문] The author expresses gratitude to contributors who provided (A) and (B) essential for crafting an accessible and engaging reference guide.",
-    "choices": [
-     "(A) inspiration … (B) correction",
-     "(A) feedback … (B) publishing",
-     "(A) guidance … (B) support",
-     "(A) criticism … (B) publicity",
-     "(A) assistance … (B) funding"
-    ],
-    "answer": 3,
-    "explanation": "(A) guidance / (B) support 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ①번 선지를 고른 학생은 'inspiration(영감)'과 'correction(수정)'이 저자의 감사의 대상이라는 오해를 한 것으로 보입니다. 그러나 지문에서 언급된 'meticulousness(세심함)', 'structural editing(구조 편집)', 'catching mistakes(실수 잡기)' 등은 'correction'보다는 'guidance(지도)'에 가깝습니다. → 처방: 감사의 대상이 '영감'보다는 '실질적인 도움'임을 인식하고, 지문에서 구체적으로 언급된 활동(예: 실수 잡기, 구조 편집)을 'correction'이 아닌 'support(지지)'로 해석하는 연습을 하세요.\n② 진단: ②번 선지를 고른 학생은 'feedback(피드백)'과 'publishing(출판)'이 저자의 감사의 대상이라고 오독했습니다. 그러나 지문에서 'feedback'은 'thousands of loyal readers'가 제공한 Daily input'으로 언급되며, 'publishing'은 감사의 대상이 아니라 결과물에 해당합니다. → 처방: 지문의 구조를 파악하고, 'feedback'은 '지속적인 도움', 'publishing'은 '결과'임을 구분하여 요약하는 연습을 하세요. 특히 'publishing'은 감사의 대상이 아니라 과정임을 주의하세요.\n④ 진단: ④번 선지를 고른 학생은 'criticism(비판)'과 'publicity(홍보)'가 저자의 감사의 대상이라고 혼동했습니다. 그러나 지문에서 'criticism'은 언급되지 않으며, 'publicity'는 'Marjorie McAneny 가 enthusiastic 하게 지원한 것'으로 해석될 수 있으나, 이는 'support'의 한 부분에 불과합니다. → 처방: 지문에서 'criticism'이 언급되지 않음을 확인하고, 'publicity'는 '홍보'가 아니라 '지지와 지원'으로 해석할 수 있음을 기억하세요. '감사'의 대상이 '비판'이나 '홍보'가 아님을 명확히 하세요.\n⑤ 진단: ⑤번 선지를 고른 학생은 'assistance(도움)'과 'funding(자금)'이 저자의 감사의 대상이라고 오독했습니다. 그러나 지문에서 'funding'은 언급되지 않으며, 'assistance'는 '도움'으로 해석될 수 있으나, 'funding'은 '지원'의 한 부분이 아닐 가능성이 높습니다. → 처방: 지문에서 'funding'이 언급되지 않음을 확인하고, 'assistance'는 '실질적인 도움'으로 해석하되, 'funding'은 '자금'이 아닌 '지지'로 오해하지 않도록 주의하세요. '감사'의 대상이 '자금'이 아님을 명확히 하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
