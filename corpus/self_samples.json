@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-11T10:39:28.753Z",
+ "updated": "2026-07-11T12:09:19.415Z",
  "samples": [
+  {
+   "ts": "2026-07-11T12:07:27.552Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 2번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The Hidden Gaps in American and British English Vocabularies",
+     "Common Words Shared by American and British English",
+     "How Major Martin’s Vocabulary Shaped Modern English Usage",
+     "Not All Differences Between American and British English Are Unbridgeable",
+     "American and British English Often Use Identical Words"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'DIFFERENCES BETWEEN AMERICAN AND BRITISH ENGLISH VOCABULARIES'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: DIFFERENCES BETWEEN AMERICAN AND BRITISH ENGLISH VOCABULARIES]\n[오답 진단·처방]\n① 진단: ‘American 과 British English 의 어휘 격차’를 ‘숨은'으로 오해했는데, 지문은 ‘차이'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘gap(격차)'는 차이를 강조하는 말이지만 ‘hidden(숨은)'은 불필요한 강조임. → 처방: ‘gap’이란 단어의 의미를 정확히 기억하고, 지문에서 ‘differences’를 찾도록 연습하기.\n③ 진단: ‘Major Martin 의 어휘가 현대 영어 사용을 ‘형성했다'고 오해했는데, 지문은 그의 어휘가 ‘American 과 British English 의 차이'를 보여주는 예시일 뿐, 현대 영어 사용에 영향을 미쳤다는 내용은 없음. → 처방: ‘shape(형성하다)'와 ‘difference(차이)'의 의미를 명확히 구분하고, 지문에서 ‘would have used(사용했을 것이다)'와 같은 조건문을 주의 깊게 읽기.\n④ 진단: ‘극복할 수 없는 차이'가 없다고 오해했는데, 지문은 ‘differences'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘unbridgeable(극복할 수 없는)'은 과도한 강조임. → 처방: ‘unbridgeable’이란 단어가 ‘극복 불가능한'을 뜻한다는 점을 기억하고, 지문에서 ‘differences’를 ‘극복 가능한'으로 오해하지 않도록 주의하기.\n⑤ 진단: ‘American 과 British English 가 ‘동일한 단어'를 자주 쓴다고 오해했는데, 지문은 ‘differences'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘often(자주)'는 지문의 내용과 맞지 않음. → 처방: ‘often’이란 단어가 ‘자주'를 뜻한다는 점을 기억하고, 지문에서 ‘differences’를 ‘자주 같은'으로 오해하지 않도록 주의하기."
+   }
+  },
   {
    "ts": "2026-07-11T10:37:48.120Z",
    "type": "요지",
@@ -303,25 +338,6 @@
     "choices": [],
     "answer": null,
     "explanation": "1) make→made [수동태 과거시제(passive voice: is/was + p.p.)]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-10T22:18:41.897Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "What positions fit in? 93 (49) V loc Ν abs loc Ν Ν Him bij) fyr ongean The representations in (47) — (49) each contain two locative arguments, ⓐ<u>given that, unlike fram, which realises ablative</u>, ongean realises locative. Given the \"one-case-per-clause\" constraint, then, as long as the datives me and him are interpreted as locative, ⓑ<u>they must be circumstantial</u>. For (16) — (19), ⓒ<u>the datives might be taken as governed by prefixed verbs</u> (e. g. cefterridan, aftercliopan), and therefore participant arguments thereof. Although there is no direct evidence for lexicalisation of the prefix + verb complex, ⓓ<u>we may recall instances of accusative co-occurring with cefter + verb</u>, ⓔ<u>only when the formative immediately precedes the verb</u> (cf. above). And these may be indirect evidence for lexicalisation of the complex as a transitive verb governing the accusative as its direct object, as represented in (50) and (51). After (50) V erg abs/loc A Ν Ν Hig öa sona aefterridon",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓑ: 'they must be circumstantial' → 'they must be circumstantials' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
