@@ -1,6 +1,39 @@
 {
- "updated": "2026-07-11T22:11:58.772Z",
+ "updated": "2026-07-11T23:18:54.649Z",
  "samples": [
+  {
+   "ts": "2026-07-11T23:13:56.155Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 지문 축소 의심(64%) — 정보 손실 여부 확인 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.43,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "So, it seems clear that the grammatical properties of a phrase like help you are determined by the verb help, and not by the pronoun you. Much the same can be said about the semantic properties of the expression, since the phrase help you describes an act of help, not a kind of person. [ ] If we use the traditional labelled bracketing technique to represent the category of the overall verb phrase help you and of its constituent words (the verb help and the pronoun you), we can represent the structure of the resulting phrase as in (4) below:",
+    "choices": [
+     "By applying standard linguistic abbreviations, we can classify the verb help as the syntactic head of the phrase help you, thereby identifying the entire construction as a verb phrase (VP), just as we shorten noun to N or verb to V.",
+     "Using technical terms, the phrase help you is classified as an adjective phrase (AP) because it describes a state rather than an action, despite the presence of the verb help.",
+     "The abbreviation VP stands for 'verb property,' not 'verb phrase,' as the head of the phrase help you is the pronoun you, not the verb help.",
+     "The phrase help you functions grammatically as a noun phrase because the pronoun you determines its category, not the verb help.",
+     "While the verb help is part of the phrase help you, it does not serve as the head, since the pronoun you carries the primary semantic role in the expression."
+    ],
+    "answer": 1,
+    "explanation": "빈칸에는 원문 'Using the appropriate technical terminology, we can say that the verb help is the head of the phrase help you, and hence that help you is a verb phrase: and in the same way as we abbreviate category labels like verb to V, so too we can abbreviate the category label verb phrase to VP.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘adjective phrase(AP)’로 분류했다는 점에서 ‘help you’가 형용사구처럼 ‘상태’를 나타낸다고 오해했는데, 지문은 ‘help you’가 ‘도움의 행위’를 묘사한다고 설명함. → 처방: 동사구가 동사(help)에 의해 결정된다는 지문 내용을 떠올리며, 동사구가 동사구임을 분명히 기억하기.\n③ 진단: ‘VP’의 약자가 ‘verb property’가 아니라 ‘verb phrase’라고 잘못 이해했는데, 지문은 ‘help’를 동사의 ‘head’로 보고 ‘VP’라고 표시했다고 설명함. → 처방: 표준 언어학 약어는 ‘N’(명사), ‘V’(동사), ‘VP’(동사구)임을 기억하고, 약어의 뜻을 정확히 암기하기.\n④ 진단: ‘you’의 역할이 크다고 생각해 ‘noun phrase’로 오판했는데, 지문은 ‘help’의 문법적 성격을 강조하며 ‘VP’라고 설명함. → 처방: 문장의 구조는 동사가 중심이 된다는 점을 기억하고, 주어/목적어의 역할과 문법적 범주를 혼동하지 않기.\n⑤ 진단: ‘you’의 의미적 역할이 크다고 생각해 ‘head’가 아니라고 오해했는데, 지문은 ‘help’를 ‘head’로 명시했다고 설명함. → 처방: ‘head’의 개념을 정확히 이해하고, 문법적 구조에서 동사가 중심 역할을 한다는 점을 기억하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-11T22:10:31.155Z",
    "type": "주제",
@@ -344,41 +377,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓑ의 풀이는 'rates'의 정의이다. 'together'의 올바른 풀이: Coherent; well organized.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘relationships’를 ‘연결이나 연관성’으로만 오독한 듯함. 지문에서 ‘men-women relationships’는 ‘남녀 관계’를 뜻하며, ‘연결’이란 뜻은 ‘association’이란 단어에 가깝지 ‘relationships’에 직접 연결되지 않음. → 처방: ‘relationships’를 ‘관계’라는 뜻으로만 생각하고, ‘연결’이란 뜻과 혼동하지 않도록 ‘관계’를 떠올리며 풀기.\n② 진단: ‘together’를 ‘가치’라는 뜻으로 오해한 듯함. ‘together’는 ‘함께’라는 뜻이며, 지문에서도 ‘how they work together’(함께 일하는 방법)으로 쓰임. → 처방: ‘together’를 ‘함께’라는 뜻으로만 기억하고, ‘가치’라는 뜻은 ‘worth’라고 생각하도록 하기.\n④ 진단: ‘observed’를 ‘주목하다’로만 오독한 듯함. 지문에서 ‘observed’는 ‘관찰하다’라는 뜻으로 쓰였으며, ‘주목하다’는 ‘notice’에 가깝지 ‘observed’에 직접 연결되지 않음. → 처방: ‘observed’를 ‘관찰하다’라는 뜻으로만 생각하고, ‘주목하다’는 ‘notice’라고 생각하도록 하기.\n⑤ 진단: ‘divorce’를 ‘이혼’이라는 뜻으로만 오독한 듯함. 지문에서도 ‘divorce’는 ‘이혼’을 뜻하며, ‘법적 해체’라는 뜻은 ‘divorce’라는 단어에 직접 포함됨. → 처방: ‘divorce’를 ‘이혼’이라는 뜻으로만 생각하고, ‘법적 해체’라는 뜻도 ‘이혼’이라는 뜻에 포함된다는 점 기억하기."
-   }
-  },
-  {
-   "ts": "2026-07-11T12:07:27.552Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 2번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The Hidden Gaps in American and British English Vocabularies",
-     "Common Words Shared by American and British English",
-     "How Major Martin’s Vocabulary Shaped Modern English Usage",
-     "Not All Differences Between American and British English Are Unbridgeable",
-     "American and British English Often Use Identical Words"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'DIFFERENCES BETWEEN AMERICAN AND BRITISH ENGLISH VOCABULARIES'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: DIFFERENCES BETWEEN AMERICAN AND BRITISH ENGLISH VOCABULARIES]\n[오답 진단·처방]\n① 진단: ‘American 과 British English 의 어휘 격차’를 ‘숨은'으로 오해했는데, 지문은 ‘차이'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘gap(격차)'는 차이를 강조하는 말이지만 ‘hidden(숨은)'은 불필요한 강조임. → 처방: ‘gap’이란 단어의 의미를 정확히 기억하고, 지문에서 ‘differences’를 찾도록 연습하기.\n③ 진단: ‘Major Martin 의 어휘가 현대 영어 사용을 ‘형성했다'고 오해했는데, 지문은 그의 어휘가 ‘American 과 British English 의 차이'를 보여주는 예시일 뿐, 현대 영어 사용에 영향을 미쳤다는 내용은 없음. → 처방: ‘shape(형성하다)'와 ‘difference(차이)'의 의미를 명확히 구분하고, 지문에서 ‘would have used(사용했을 것이다)'와 같은 조건문을 주의 깊게 읽기.\n④ 진단: ‘극복할 수 없는 차이'가 없다고 오해했는데, 지문은 ‘differences'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘unbridgeable(극복할 수 없는)'은 과도한 강조임. → 처방: ‘unbridgeable’이란 단어가 ‘극복 불가능한'을 뜻한다는 점을 기억하고, 지문에서 ‘differences’를 ‘극복 가능한'으로 오해하지 않도록 주의하기.\n⑤ 진단: ‘American 과 British English 가 ‘동일한 단어'를 자주 쓴다고 오해했는데, 지문은 ‘differences'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘often(자주)'는 지문의 내용과 맞지 않음. → 처방: ‘often’이란 단어가 ‘자주'를 뜻한다는 점을 기억하고, 지문에서 ‘differences’를 ‘자주 같은'으로 오해하지 않도록 주의하기."
    }
   }
  ]
