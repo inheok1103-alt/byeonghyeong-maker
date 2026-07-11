@@ -1,6 +1,95 @@
 {
- "updated": "2026-07-11T00:13:04.668Z",
+ "updated": "2026-07-11T03:46:26.622Z",
  "samples": [
+  {
+   "ts": "2026-07-11T03:44:39.841Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.25,
+    "D": -0.5,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.25)",
+     "변별도 낮음(D̂=-0.50)",
+     "역변별(정답키 의심)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "SENTENCE STRUCTURE: CATEGORIES 52 ⓐ<u>With co-​ordinate NPs</u> it’s usual to find that ⓑ<u>the NP as a whole are plural</u> regard­ less of whether the heads are singular or plural. Hence, although Max and Adrian are individually singular, the NP as a whole can be replaced by the plural pronoun they. What, then, is the structure of these phrases? Look again at ⓒ<u>the subject NP of [20b]</u>. Clearly it is a co-​ordination of [the clowns] and [the acrobats], both of which are themselves NPs. And the same goes for [Max] and [Adrian] in [Max and Adrian]. As names, they are each full NPs. Each could be replaced by a pro­ noun that can only replace a full NP. In short, ⓓ<u>the subject NP of [20a] and [20b]</u> are co-​ordinations of NPs. ⓔ<u>The whole co-​ordinate phrase</u> and the elements that are co-​ordinated in them have the same distribution and so are of the same category. They can be represented as in [21] and [22]:",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 2,
+    "explanation": "틀린 곳은 ⓑ(the NP as a whole are plural → the NP as a whole is plural), ⓓ(the subject NP of [20a] and [20b] → the subject NPs of [20a] and [20b]) — 총 2개.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-11T03:45:49.758Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "SENTENCE STRUCTURE: CATEGORIES 52 With co-​ordinate NPs it’s usual to find that the NP as a whole is plural regard­ less of whether the heads are singular or plural. Hence, although Max and Adrian are individually singular, the NP as a whole can be replaced by the plural pronoun they. What, then, is the structure of these phrases? Look again at the subject NP of [20b]. Clearly it is a co-​ordination of [the clowns] and [the acrobats], both of which are themselves NPs. And the same goes for [Max] and [Adrian] in [Max and Adrian]. As names, they are each full NPs. Each could be replaced by a pro­ noun that can only replace a full NP. In short, the subject NPs of [20a] and [20b] are co-​ordinations of NPs. The whole co-​ordinate phrase and the elements that are co-​ordinated in them have the same distribution and so are of the same category. They can be represented as in [21] and [22]:",
+    "choices": [
+     "‘맥스와 에이드리안’은 각각 개별적으로 단수 명사구로 볼 수 있다",
+     "‘광대들’과 ‘곡예사들’은 각각 개별적으로 **단수** 명사구로 구성된다",
+     "‘맥스와 에이드리안’은 전체적으로 **단수** 대명사로 대체할 수 있다",
+     "‘광대들’과 ‘곡예사들’의 조합은 전체적으로 **단수** 명사구로 기능한다",
+     "조합된 명사구는 조합된 요소들과 **다른** 문법적 범주를 지닌다"
+    ],
+    "answer": 1,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: ‘광대들’과 ‘곡예사들’은 각각 복수 명사구로, 지문에서 ‘the clowns’와 ‘the acrobats’는 ‘themselves NPs’로 복수임을 분명히 밝히지만, 학생은 ‘단수’라는 오해를 했다. → 처방: 복수 명사구는 ‘-s’나 ‘the’를 확인하고, 지문에서 ‘plural’이라는 단어를 찾아 복수임을 확인하는 습관을 들인다.\n③ 진단: ‘맥스와 에이드리안’이 전체적으로 ‘they’라는 복수 대명사로 대체된다는 지문 내용을 무시하고, ‘단수 대명사’로 오해했다. → 처방: 조합된 명사구가 전체적으로 어떤 대명사로 대체되는지 확인하고, 지문에서 ‘plural pronoun they’라고 쓴 부분을 반드시 읽는다.\n④ 진단: ‘광대들’과 ‘곡예사들’의 조합이 전체적으로 ‘단수’ 명사구로 기능한다고 오해했는데, 지문은 ‘the NP as a whole is plural’라고 명시한다. → 처방: ‘as a whole’이라는 표현이 나오면 전체의 수를 확인하고, 지문에서 ‘plural’이라는 단어를 놓치지 않도록 주의한다.\n⑤ 진단: 조합된 명사구가 조합된 요소들과 ‘다른’ 문법적 범주를 지닌다고 오해했는데, 지문은 ‘same category’라고 명확히 말한다. → 처방: ‘same distribution’이라는 표현이 나오면 요소와 전체가 같은 범주임을 떠올리고, ‘different’라는 단어가 없음을 확인한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-11T03:45:59.746Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] SENTENCE STRUCTURE: CATEGORIES 52 With co-​ordinate NPs it’s usual to find that the NP as a whole is plural regard­ less of whether the heads are singular or plural.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 대등한 NPs(명사구)에서는 heads(핵심어)가 단수든 복수든 상관없이 NPs 전체가 복수임을 흔히 볼 수 있습니다. (구문 포인트: 수량 표현(plural regard­less of whether the heads are singular or plural) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-11T00:11:29.725Z",
    "type": "요약문AB",
@@ -249,95 +338,6 @@
     ],
     "answer": 5,
     "explanation": "빈칸에는 'possibility'가 들어가 글의 논지를 완성한다 (본문 'Epistemic possibility is analysed as in (12).'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 학생은 'must'가 certainty(확신)을 의미한다고 오독했다. 지문에서 'Epistemic must conveys that all the evidence... leads to an inescapable conclusion'라고 설명하지만, 이는 certainty 가 아니라 evidence 에 기반한 필연적 결론임을 인지하지 못했다. → 처방: 지문에서 'Epistemic must'는 evidence 에 기반한 필연적 결론임을 강조하며, certainty(확신)보다는 evidence 와 연결된 'possibility(가능성)' 개념을 우선적으로 고려해야 한다.\n② 진단: 학생은 'must'가 impossibility(불가능성)을 의미한다고 혼동했다. 지문에서 'Epistemic must'는 evidence 에 기반한 필연적 결론을 의미하지, 불가능성을 의미하지 않음을 간과했다. → 처방: 지문에서 'Epistemic must'는 evidence 에 기반한 필연적 결론임을 명확히 구분하고, possibility(가능성) 개념과 연결지어 해석해야 한다.\n③ 진단: 학생은 'must'가 scientific accuracy(과학적 정확성)을 의미한다고 오독했다. 지문은 logical/epistemic modality 와 관련한 개념을 다루며, 과학적 정확성과는 무관함을 간과했다. → 처방: 지문에서 다루는 modality(논리적/인식론적 가능성) 개념을 정확히 이해하고, 과학적 accuracy 보다는 possibility(가능성) 개념을 우선적으로 고려해야 한다.\n④ 진단: 학생은 'must'가 experimental evidence(실험적 증거)를 의미한다고 혼동했다. 지문은 evidence(증거)를 언급하지만, experimental evidence(실험적 증거)보다는 epistemic possibility(인식론적 가능성) 개념을 다루고 있음을 간과했다. → 처방: 지문에서 'Epistemic must'는 evidence(증거)에 기반한 필연적 결론을 의미하며, possibility(가능성) 개념과 연결지어 해석해야 experimental evidence 에 치우치지 않는다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-10T15:08:12.208Z",
-   "type": "본문어변형빈칸",
-   "level": "중",
-   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
-    "passage": "An epistemically possible world is one in which everything we know about the actual world also holds - we don’t know of any differences between the actual world and any epistemically possible world (even though there might be differences) - for all we know, any epistemically possible world (be) reality.",
-    "choices": [],
-    "answer": null,
-    "explanation": "1) be→is [주어 any epistemically possible world(단수) — 수일치]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출/해석하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-10T11:21:30.045Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "After the materials and the exercise had been distributed to each group, the instructions were generally explained for every group briefly. It was expected that some curious students were willing to ask the detail of the instruction. Yet, no one was apparently interested in asking the researcher. Thus, their missions were explained thoroughly through involving in every group discussion. There were five exercises dealing with the text. Two exercises were about the content of the text and its social function. Those two exercises’ answers needed to be presented by the representative of each group. Then, there was an exercise dealing with the vocabulary. The students should match some words appeared in the text with the provided definitions which was in English. They were not allowed to open their dictionary. The following exercise was about reference. And the last exercise was about finding topic and main idea.\n\n─────────\n[요약문] After distributing materials and exercises, researchers (A) clarified tasks through group discussions, leading to students’ (B) completion of varied text-based tasks without direct questioning.",
-    "choices": [
-     "(A) task assignment … (B) task assessment",
-     "(A) task explanation … (B) task imitation",
-     "(A) task confusion … (B) task avoidance",
-     "(A) task clarification … (B) task execution",
-     "(A) task demonstration … (B) task compliance"
-    ],
-    "answer": 4,
-    "explanation": "(A) task clarification / (B) task execution 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 학생은 'task assignment'와 'task assessment'를 오해하여, 연구자의 역할을 '과제 부여'로, 학생의 역할을 '과제 평가'로 오독한 것으로 보임. (지문: 'instructions were explained', 'missions were explained'로 연구자의 설명 역할 강조). → 처방: 요약문의 핵심은 연구자의 '설명'과 학생의 '수행'임을 인식하고, 'assignment'/'assessment'가 아닌 'explanation'/'execution'을 떠올릴 것.\n② 진단: 학생은 'task imitation'을 선택하여, 연구자의 설명을 학생이 단순히 '모방'하는 것으로 오독한 것으로 보임. (지문: 'involving in every group discussion'은 학생의 능동적 참여를 의미). → 처방: 요약문의 'leading to'는 학생의 능동적 '수행'을 강조함을 인지하고, 'imitation'이 아닌 'execution'을 선택할 것.\n③ 진단: 학생은 'task confusion'과 'task avoidance'를 선택하여, 연구자의 설명이 학생에게 혼란을 일으키거나 학생이 과제를 회피했다고 오독한 것으로 보임. (지문: 'no one was apparently interested in asking'은 학생의 참여 부족을 설명하는 것일 뿐, 회피가 아님). → 처방: 요약문의 긍정적 흐름('completion of varied text-based tasks')을 고려하고, 'confusion'/'avoidance'가 아닌 'clarification'/'execution'을 떠올릴 것.\n⑤ 진단: 학생은 'task demonstration'을 선택하여, 연구자의 설명을 '시범'으로 오독한 것으로 보임. (지문: 'instructions were explained'는 설명이지 시범이 아님). → 처방: 요약문의 'clarified tasks'는 '설명'을 의미함을 인지하고, 'demonstration'이 아닌 'clarification'을 선택할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-10T11:22:32.557Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "After the materials and the exercise had been distributed to each group, the instructions were generally explained for every group briefly. It was expected that some curious students were willing to ask the detail of the instruction. Yet, no one was apparently interested in asking the researcher. Thus, their missions were explained thoroughly through involving in every group discussion. There were five exercises dealing with the text. Two exercises were about the content of the text and its social function. Those two exercises’ answers needed to be presented by the representative of each group. Then, there was an exercise dealing with the vocabulary. The students should match some words appeared in the text with the provided definitions which was in English. They were not allowed to open their dictionary. The following exercise was about reference. And the last exercise was about finding topic and main idea.",
-    "choices": [
-     "연구자는 각 조에 자료와 연습문을 배부한 후 간단히 지시사항을 설명하였다",
-     "호기심 있는 학생 몇 명이 지시사항의 세부 내용을 묻고자 했지만 아무도 연구자에게 질문하지 않았다",
-     "연구자는 모든 조의 토론에 참여하며 미션을 상세히 설명하였다",
-     "연구자는 각 조에 자료와 연습문을 배부한 후 간단히 지시사항을 설명하지 않았다",
-     "학생들은 영어 정의가 제공된 단어와 본문에 등장한 단어를 짝짓는 연습을 하였다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장과 정확히 일치하여 오독·혼동한 것이 아니라면, '간단히 설명하였다'는 표현을 '충분히 설명하지 않았다'로 오해했을 가능성이 있음. (지문: 'instructions were generally explained for every group briefly' vs 선지: '간단히 지시사항을 설명하였다'는 사실과 동일). → 처방: 지문에서 'briefly'는 '간단히'를 의미함을 인지하고, 지시사항 설명 여부를 '충분히 설명하지 않았다'로 왜곡하지 않도록 주의할 것.\n② 진단: 지문에서 'no one was apparently interested in asking the researcher'는 '호기심 있는 학생 몇 명이 묻고자 했지만 아무도 질문하지 않았다'는 사실과 동일함을 오해했을 가능성이 있음. (지문: 'no one was apparently interested in asking' vs 선지: '호기심 있는 학생 몇 명이 ... 아무도 연구자에게 질문하지 않았다'). → 처방: 지문에서 'no one'의 의미를 정확히 파악하고, '호기심 있는 학생 몇 명이'라는 표현이 지문에 없음을 확인할 것.\n③ 진단: 지문에서 'their missions were explained thoroughly through involving in every group discussion'는 '연구자가 모든 조의 토론에 참여하며 미션을 상세히 설명하였다'는 사실과 동일함을 오해했을 가능성이 있음. (지문: 'explained thoroughly through involving in every group discussion' vs 선지: '연구자는 모든 조의 토론에 참여하며 미션을 상세히 설명하였다'). → 처방: 지문에서 'explained thoroughly'와 'involving in every group discussion'의 관계를 정확히 이해하고, '연구자가 직접 설명하였다'는 의미를 왜곡하지 않도록 할 것.\n⑤ 진단: 지문에서 'The students should match some words appeared in the text with the provided definitions which was in English'는 '학생들은 영어 정의가 제공된 단어와 본문에 등장한 단어를 짝짓는 연습을 하였다'는 사실과 동일함을 오해했을 가능성이 있음. (지문: 'match some words ... with the provided definitions which was in English' vs 선지: '영어 정의가 제공된 단어와 본문에 등장한 단어를 짝짓는 연습을 하였다'). → 처방: 지문에서 'definitions which was in English'의 의미를 정확히 파악하고, '영어 정의가 제공되었다'는 사실을 왜곡하지 않도록 할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
