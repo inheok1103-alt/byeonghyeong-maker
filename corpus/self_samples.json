@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-11T12:09:19.415Z",
+ "updated": "2026-07-11T13:57:57.938Z",
  "samples": [
+  {
+   "ts": "2026-07-11T13:56:46.375Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: r)\n[영영풀이] Connection or association; the condition of being related.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] relationships (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-11T13:57:16.028Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "The greatest changes in men-women ⓐ<u>relationships</u> have occurred in how they work ⓑ<u>together</u>. Now that we see what the ⓒ<u>sentence</u> says, we can make it still more direct: ✓ Men and women have changed their relationships most in how they work together. How writers use metadiscourse varies by field, but you can usually cut these two types: 1. Metadiscourse That Attributes Your Ideas to a Source Don’t announce that something has been ⓓ<u>observed</u>, noticed, noted, and so on; just state the fact: High ⓔ<u>divorce</u> rates have been observed to occur in areas that have been determined to have low population density. ✓ High divorce rates occur in areas with low population density. 2. Metadiscourse That Announces Your Topic The boldface phrases tell your reader what your sentence is “about”: This section introduces another problem, that of noise pollution. The first thing to say about it is that noise pollution exists not only . . .",
+    "choices": [
+     "relationships: Connection or association; the condition of being related.",
+     "together: The worth of something; value.",
+     "sentence: The decision or judgement of a jury or court; a verdict.",
+     "observed: To notice or view, especially carefully or with attention to detail.",
+     "divorce: The legal dissolution of a marriage."
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓑ의 풀이는 'rates'의 정의이다. 'together'의 올바른 풀이: Coherent; well organized.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘relationships’를 ‘연결이나 연관성’으로만 오독한 듯함. 지문에서 ‘men-women relationships’는 ‘남녀 관계’를 뜻하며, ‘연결’이란 뜻은 ‘association’이란 단어에 가깝지 ‘relationships’에 직접 연결되지 않음. → 처방: ‘relationships’를 ‘관계’라는 뜻으로만 생각하고, ‘연결’이란 뜻과 혼동하지 않도록 ‘관계’를 떠올리며 풀기.\n② 진단: ‘together’를 ‘가치’라는 뜻으로 오해한 듯함. ‘together’는 ‘함께’라는 뜻이며, 지문에서도 ‘how they work together’(함께 일하는 방법)으로 쓰임. → 처방: ‘together’를 ‘함께’라는 뜻으로만 기억하고, ‘가치’라는 뜻은 ‘worth’라고 생각하도록 하기.\n④ 진단: ‘observed’를 ‘주목하다’로만 오독한 듯함. 지문에서 ‘observed’는 ‘관찰하다’라는 뜻으로 쓰였으며, ‘주목하다’는 ‘notice’에 가깝지 ‘observed’에 직접 연결되지 않음. → 처방: ‘observed’를 ‘관찰하다’라는 뜻으로만 생각하고, ‘주목하다’는 ‘notice’라고 생각하도록 하기.\n⑤ 진단: ‘divorce’를 ‘이혼’이라는 뜻으로만 오독한 듯함. 지문에서도 ‘divorce’는 ‘이혼’을 뜻하며, ‘법적 해체’라는 뜻은 ‘divorce’라는 단어에 직접 포함됨. → 처방: ‘divorce’를 ‘이혼’이라는 뜻으로만 생각하고, ‘법적 해체’라는 뜻도 ‘이혼’이라는 뜻에 포함된다는 점 기억하기."
+   }
+  },
   {
    "ts": "2026-07-11T12:07:27.552Z",
    "type": "제목",
@@ -284,60 +337,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 대등한 NPs(명사구)에서는 heads(핵심어)가 단수든 복수든 상관없이 NPs 전체가 복수임을 흔히 볼 수 있습니다. (구문 포인트: 수량 표현(plural regard­less of whether the heads are singular or plural) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-11T00:11:29.725Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Word Categories 7 Although some of these may sound strange concepts, they are perfectly acceptable forms. The idea–ideas case is the most straightforward. The distinction between these two words is that while the first refers to a single thing, the second refers to more than one of them. This is the distinction between singular and plural and in general this distinction can apply to virtually all nouns. Consider a more strange case: friendliness– friendlinesses. What is strange here is not the grammatical concepts of singular or plural, but that the semantic distinction is not one typically made. However, it is perfectly possible to conceptualise different types of friendliness: one can be friendly by saying good morning to someone as you pass in the street, without necessarily entering into a deeper relationship with them; other forms of friendliness may demand more of an emotional commitment. Therefore we can talk about different friendlinesses. By contrast, consider the following, based on the words in (9): (11) conceptualises\n\n─────────\n[요약문] The distinction between singular and plural forms can apply to most nouns, and even abstract concepts like (A) can be pluralized to denote different types, resulting in multiple (B).",
-    "choices": [
-     "(A) morphological rules … (B) grammatical errors",
-     "(A) concrete objects … (B) variants",
-     "(A) typical nouns … (B) semantic opposites",
-     "(A) countable entities … (B) exceptions",
-     "(A) abstract qualities … (B) instances"
-    ],
-    "answer": 5,
-    "explanation": "(A) abstract qualities / (B) instances 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘morphological rules’는 지문에서 ‘단수/복수’를 가리키는 말이며, ‘grammatical errors’는 오류를 뜻하는데 지문은 ‘허용 가능한 형태’라고만 말하고 오류는 언급하지 않음. → 처방: 지문에서 ‘허용 가능한 형태’를 ‘morphological rules’로 오해하지 말고, ‘허용 가능하다는 말’이 ‘오류가 아니다’라는 뜻임을 기억하기.\n② 진단: ‘concrete objects’는 ‘구체적인 물건’을 뜻하지만 지문은 ‘친절함(friendliness)’처럼 추상적인 개념도 ‘다양한 종류’로 볼 수 있음을 설명함. → 처방: ‘concrete objects’가 ‘단수/복수’를 설명하는 말이 아님을 알고, 지문에서 ‘추상적 개념도 종류가 나뉠 수 있다’는 점을 떠올리기.\n③ 진단: ‘typical nouns’는 ‘일반적인 명사’를 뜻하지만 지문은 ‘친절함’처럼 추상명사도 ‘다양한 종류’로 볼 수 있음을 강조함. ‘semantic opposites’는 ‘의미상 반대’인데 지문은 반대 관계가 아님. → 처방: ‘typical nouns’가 ‘단수/복수’를 설명하는 말이 아님을 알고, ‘의미상 반대’가 아니라 ‘다양한 종류’를 뜻함을 기억하기.\n④ 진단: ‘countable entities’는 ‘셀 수 있는 대상’을 뜻하지만 지문은 ‘친절함’처럼 셀 수 없는 추상명사도 ‘다양한 종류’로 볼 수 있음을 설명함. ‘exceptions’는 ‘예외’를 뜻하는데 지문은 예외가 아니라 ‘허용 가능한 경우’를 설명함. → 처방: ‘셀 수 있는 대상’이 아니라 ‘추상적 개념도 종류가 나뉠 수 있다’는 지문의 핵심을 떠올리기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T00:12:34.447Z",
-   "type": "본문어변형빈칸",
-   "level": "중",
-   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
-    "passage": "Consider a more strange case: friendliness– friendlinesses. What is strange here is not the grammatical concepts of singular or plural, but that the semantic distinction is not one typically (make).",
-    "choices": [],
-    "answer": null,
-    "explanation": "1) make→made [수동태 과거시제(passive voice: is/was + p.p.)]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
