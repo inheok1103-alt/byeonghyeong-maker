@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-11T21:09:29.149Z",
+ "updated": "2026-07-11T22:11:58.772Z",
  "samples": [
+  {
+   "ts": "2026-07-11T22:10:31.155Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/2 다수결 4번(기록 1번 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 7,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the role of vocabulary in defining and distinguishing concepts",
+     "how pronunciation variations reflect social hierarchy",
+     "why definitions often alter the original meanings of words",
+     "the misuse of vocabulary to justify systemic discrimination",
+     "the need to memorize extensive vocabularies for academic achievement"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'Words and their definitions as vocabulary'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Words and their definitions as vocabulary]\n[오답 진단·처방]\n① 진단: ‘개념을 구별하는 데 어휘의 역할’(①)을 오독한 이유는 지문에서 ‘ANTITHESIS’와 ‘APARTHEID’의 의미를 설명한 부분을 ‘개념 구별’로만 좁게 해석하고, ‘차별’을 정당화하는 사례(‘educational apartheid’)까지 보지 못한 탓이다. 지문은 ‘개념 정의’와 ‘사회적 차별’을 모두 다루고 있다. → 처방: ‘개념 정의’뿐 아니라 ‘사회적 차별’까지도 함께 떠올리며 읽기.\n② 진단: ‘발음 변이가 사회적 계층을 반영’(②)을 오독한 이유는 지문에서 ‘Note carefully the pronunciation’을 ‘사회적 계층’과 연결 짓지 못하고, 단지 ‘발음 주의’로만 받아들였기 때문이다. 지문은 발음보다 ‘정의’와 ‘차별’에 초점을 둔다. → 처방: ‘발음’ 언급은 ‘정의’나 ‘차별’ 설명을 위한 배경일 뿐임을 기억하기.\n③ 진단: ‘정의가 원래 meanings 을 바꾼다’(③)를 오독한 이유는 ‘APARTHEID’가 ‘apart’에서 유래했다는 설명을 ‘정의가 meanings 을 바꾼다’로 오해했기 때문이다. 지문은 ‘정의’가 ‘차별’을 설명하는 데 쓰였다는 점을 강조한다. → 처방: ‘정의’가 ‘차별’을 설명하는 수단으로 쓰였다는 점을 먼저 확인하기.\n⑤ 진단: ‘어휘 암기 필요성’(⑤)을 오독한 이유는 지문에서 ‘Quick Quiz’를 ‘어휘 암기’로만 해석하고, ‘차별’을 정당화하는 사례(‘educational apartheid’)를 무시했기 때문이다. 지문은 ‘사회적 문제’를 다룬다. → 처방: ‘어휘 암기’보다는 ‘사회적 차별’이라는 주제를 먼저 떠올리며 읽기."
+   }
+  },
   {
    "ts": "2026-07-11T21:08:25.604Z",
    "type": "문장삽입",
@@ -344,41 +379,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'DIFFERENCES BETWEEN AMERICAN AND BRITISH ENGLISH VOCABULARIES'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: DIFFERENCES BETWEEN AMERICAN AND BRITISH ENGLISH VOCABULARIES]\n[오답 진단·처방]\n① 진단: ‘American 과 British English 의 어휘 격차’를 ‘숨은'으로 오해했는데, 지문은 ‘차이'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘gap(격차)'는 차이를 강조하는 말이지만 ‘hidden(숨은)'은 불필요한 강조임. → 처방: ‘gap’이란 단어의 의미를 정확히 기억하고, 지문에서 ‘differences’를 찾도록 연습하기.\n③ 진단: ‘Major Martin 의 어휘가 현대 영어 사용을 ‘형성했다'고 오해했는데, 지문은 그의 어휘가 ‘American 과 British English 의 차이'를 보여주는 예시일 뿐, 현대 영어 사용에 영향을 미쳤다는 내용은 없음. → 처방: ‘shape(형성하다)'와 ‘difference(차이)'의 의미를 명확히 구분하고, 지문에서 ‘would have used(사용했을 것이다)'와 같은 조건문을 주의 깊게 읽기.\n④ 진단: ‘극복할 수 없는 차이'가 없다고 오해했는데, 지문은 ‘differences'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘unbridgeable(극복할 수 없는)'은 과도한 강조임. → 처방: ‘unbridgeable’이란 단어가 ‘극복 불가능한'을 뜻한다는 점을 기억하고, 지문에서 ‘differences’를 ‘극복 가능한'으로 오해하지 않도록 주의하기.\n⑤ 진단: ‘American 과 British English 가 ‘동일한 단어'를 자주 쓴다고 오해했는데, 지문은 ‘differences'가 있음을 알리며 ‘identical(동일한)'과 반대되는 뜻을 강조하지 않음. ‘often(자주)'는 지문의 내용과 맞지 않음. → 처방: ‘often’이란 단어가 ‘자주'를 뜻한다는 점을 기억하고, 지문에서 ‘differences’를 ‘자주 같은'으로 오해하지 않도록 주의하기."
-   }
-  },
-  {
-   "ts": "2026-07-11T10:37:48.120Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "형용사의 의미와 수식 범위는 사용되는 문맥과 수식 대상의 구조에 따라 다양하게 결정된다.",
-     "모든 형용사는 문맥에 따라 그 의미가 완전히 달라지므로, 고유한 사전적 의미는 무의미하다.",
-     "형용사의 의미와 수식 범위는 대부분 고정되어 있으며, 문맥이나 구조에 따른 변화는 극히 예외적이다.",
-     "형용사의 의미 변화는 주로 문맥에 의해 발생하며, 수식 대상의 구조는 그 영향력이 미미하다.",
-     "형용사는 명사를 수식하지만, 그 의미와 범위는 수식 대상의 특성이나 문맥과 무관하게 본질적으로 결정된다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Adjectives modify nouns and noun phrases in diverse ways, with their specific meaning and scope often determined by context and the structure of the modified phrase.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 학생은 지문에서 형용사의 의미가 문맥에 따라 달라지는 여러 예시를 보았으나, 이를 '고유한 사전적 의미가 무의미하다'는 극단적인 주장으로 확대 해석했습니다. 지문은 의미의 '변화'와 '다양성'을 말할 뿐, 사전적 의미의 '무의미함'을 주장하지 않습니다. → 처방: 지문의 내용을 바탕으로 추론하되, 지문에 없는 극단적인 주장이나 일반화는 피해야 합니다.\n③ 진단: 학생은 지문이 형용사의 의미와 수식 범위가 문맥과 구조에 따라 '다양하게 결정된다'는 점을 수많은 예시로 설명하고 있음에도 불구하고, 이를 '대부분 고정되어 있고 변화는 예외적'이라는 반대 주장으로 오해했습니다. 지문은 'An early dinner. An early riser.' 등 수많은 변화 예시를 제시합니다. → 처방: 지문의 핵심 내용을 파악하고, 지문이 제시하는 예시들이 어떤 주장을 뒷받침하는지 주의 깊게 살펴야 합니다.\n④ 진단: 학생은 지문에서 형용사의 의미 변화에 문맥의 중요성을 인식했으나, 'A deaf-and-dumb teacher'나 'Everyday speech'와 같이 수식 대상의 구조에 따라 의미와 수식 범위가 크게 달라지는 예시들을 '영향력이 미미하다'고 잘못 판단했습니다. 지문 9.4는 복합 명사에서 인접한 명사만 수식하는 경우를 명시하며 구조의 중요성을 강조합니다. → 처방: 지문에서 여러 요소를 설명할 때, 특정 요소의 중요성을 과소평가하거나 배제하지 말고 모든 설명 요소를 종합적으로 고려해야 합니다.\n⑤ 진단: 학생은 지문이 형용사의 의미와 수식 범위가 문맥과 수식 대상의 구조에 따라 '다양하게 결정된다'는 핵심 내용을 완전히 반대로 이해했습니다. 지문의 모든 예시 ('An early dinner. An early riser.' 등)는 형용사의 의미가 문맥과 무관하지 않음을 보여줍니다. → 처방: 지문의 핵심 주장과 결론을 파악할 때, 지문이 제시하는 증거와 예시들이 무엇을 뒷받침하는지 명확히 연결하여 이해해야 합니다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Adjectives modify nouns and noun phrases in diverse ways, with their specific meaning and scope often determined by context and the structure of the modified phrase.]"
    }
   }
  ]
