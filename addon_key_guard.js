@@ -93,6 +93,20 @@
     return null;
   }
 
+  /* ── 게이트②.7 변형 보존(Codex ⑤/truncation): 전체지문형은 원문을 온전히 변형해야 함 — 잘린 부분집합(subset) 차단 ── */
+  function wc(s) { return (String(s || "").replace(/<[^>]+>/g, " ").match(/[A-Za-z]+/g) || []).length; }
+  function transformGate(q, original) {
+    if (!q || !q.passage || !original) return null;
+    // 지문을 정당하게 조각내는 유형(순서·삽입·요약·전체배열)은 길이 축소가 정상 → 면제
+    if (/순서|삽입|배열|요약|전체문장|문장배열/.test(String(q.type || ""))) return null;
+    var op = wc(original), vp = wc(q.passage);
+    if (op < 40) return null;   // 원문이 짧으면 비율 판정 무의미
+    var ratio = vp / op;
+    if (ratio < 0.5) return { drop: "지문 잘림(부분집합) — 변형 지문이 원문의 " + Math.round(ratio * 100) + "%(전체지문형은 원문 온전 변형 필요)" };
+    if (ratio < 0.72) return { flag: "지문 축소 의심(" + Math.round(ratio * 100) + "%) — 정보 손실 여부 확인 권고" };
+    return null;
+  }
+
   /* ── 게이트③ 위생 필터 ── */
   function hygiene(q) {
     if (q.choices && q.choices.some(function (c) { return /\(보기/.test(String(c)); })) return { drop: "플레이스홀더 선지 노출" };
@@ -128,6 +142,11 @@
     if (u) {
       if (u.drop) { STATS.dropped++; log("[" + q.type + "] 폐기 — " + u.drop); return { item: null, status: "dropped", why: u.drop }; }
       if (u.flag) { STATS.flagged++; annotate(q, "⚠ " + u.flag); log("[" + q.type + "] " + u.flag); }
+    }
+    var tf = transformGate(q, original);
+    if (tf) {
+      if (tf.drop) { STATS.dropped++; log("[" + q.type + "] 폐기 — " + tf.drop); return { item: null, status: "dropped", why: tf.drop }; }
+      if (tf.flag) { STATS.flagged++; annotate(q, "⚠ " + tf.flag); log("[" + q.type + "] " + tf.flag); }
     }
     var s = await solverGate(q, original, T);
     if (s) {
@@ -181,7 +200,7 @@
     return T;
   }
 
-  var api = { installKeyGuard: installKeyGuard, guardItem: guardItem, stats: function () { return Object.assign({}, STATS); } };
+  var api = { installKeyGuard: installKeyGuard, guardItem: guardItem, stats: function () { return Object.assign({}, STATS); }, transformGate: transformGate };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   if (root && root.APITEAM) { installKeyGuard(root.APITEAM, root); root.KEYGUARD = api; }
 })(typeof window !== "undefined" ? window : (typeof global !== "undefined" ? global : this));

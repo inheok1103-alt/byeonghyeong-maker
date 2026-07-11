@@ -91,6 +91,7 @@ async function main() {
   const act = (typesV2.types || []).filter(r => r.on);
 
   const newRules = [], projects = [], research = [], notices = [], samples = [], meetingsMd = [];
+  const quarantined = [];   // Codex ③: 자가학습 규칙은 자동 활성 금지 → 격리 큐(사람 검토·승인 대상)로만 적재
 
   /* ── Phase A 자가학습 ── */
   try {
@@ -101,11 +102,12 @@ async function main() {
     for (const t of picks) {
       if (used >= BUDGET) { console.log("예산 도달 — Phase A 조기 종료"); break; }
       const r = await T.selfLearnStep(pg, t.type, { teachers: 3, target: 88 }).catch(() => null);
-      if (r && r.learned) newRules.push({ rule: r.learned, src: "자가학습:" + t.type, score: r.score, ts: ts() });
+      // Codex ③: 즉시 활성(learned_rules) 금지. selfLearnStep이 규칙을 격리하면 격리 큐에만 기록해 사람 승인 대기.
+      if (r && r.quarantined) quarantined.push({ rule: r.quarantined, src: "자가학습:" + t.type, score: r.score, status: r.status || "quarantined", hits: r.hits || 1, ts: ts() });
       research.push({
         date: day(), category: "자가학습", topic: t.type,
-        summary: r ? (r.fail ? "생성 실패(키가드 폐기 포함)" : "패널 점수 " + r.score + (r.learned ? " · 개선 규칙 1건 도출" : " · 기준 통과")) : "오류",
-        rule: (r && r.learned) || ""
+        summary: r ? (r.fail ? "생성 실패(키가드 폐기 포함)" : "패널 점수 " + r.score + (r.quarantined ? " · 규칙 1건 격리(" + (r.status || "quarantined") + ", 사람 승인 대기)" : " · 기준 통과")) : "오류",
+        rule: (r && r.quarantined) || ""
       });
       if (!r || !r.fail) {
         const q = await T.generateOne(pg, t.type, { fast: true }).catch(() => null); // 키가드 자동 적용
@@ -206,11 +208,21 @@ async function main() {
   try {
     for (const m of meetingsMd) { const p = path.join(ROOT, m.file); fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, m.md); }
 
-    const prev = (learnedFile.rules || []).map(r => (typeof r === "string" ? { rule: r } : r));
-    const merged = [...newRules, ...prev].filter((r, i, arr) => r && r.rule && arr.findIndex(x => x.rule === r.rule) === i).slice(0, 60);
-    const lr = { updated: ts(), count: merged.length, rules: merged };
+    // learned_rules.json = 사람 승인 완료 규칙만. 뇌는 자동 추가하지 않음(newRules는 사람이 격리에서 승격한 것만 포함될 수 있음).
+    const prev = (learnedFile.rules || []).map(r => (typeof r === "string" ? { rule: r } : r))
+      .filter(r => r && typeof r.rule === "string" && r.rule.trim());   // rule이 객체인 오염 항목 제거(LLM이 dict 반환 → [object Object] 오염·60캡 잠식)
+    const merged = [...newRules, ...prev].filter((r, i, arr) => r && typeof r.rule === "string" && arr.findIndex(x => x.rule === r.rule) === i).slice(0, 60);
+    const lr = { updated: ts(), count: merged.length, rules: merged, note: "사람 승인 완료 규칙만 활성. 자동 학습 규칙은 quarantine_rules.json에서 검토·승인 후 이곳으로 이동." };
     W("corpus/learned_rules.json", lr);
     W("learned_rules.json", lr);
+
+    // Codex ③: 자가학습 규칙 격리 큐 — 사람이 검토·승인(promote)하기 전까지 절대 활성화되지 않음.
+    const qFile = J("corpus/quarantine_rules.json", { updated: "", count: 0, rules: [] });
+    const approvedSet = new Set(merged.map(r => r.rule));
+    const qMerged = [...quarantined, ...(qFile.rules || [])]
+      .filter((r, i, arr) => r && r.rule && !approvedSet.has(r.rule) && arr.findIndex(x => x.rule === r.rule) === i)
+      .slice(0, 200);
+    W("corpus/quarantine_rules.json", { updated: ts(), count: qMerged.length, rules: qMerged, note: "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고." });
 
     // 코퍼스 연구 노트 누적(브라우저 관측 패널 로드용)
     const cres = J("corpus/corpus_research.json", { updated: "", count: 0, notes: [] });

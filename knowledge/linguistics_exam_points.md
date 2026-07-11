@@ -30,7 +30,7 @@
 - 25) 분사구문 현수 판정: 문두 분사구의 의미상 주어=주절 주어 검증(Having hiked all day, my backpack~ 오답), Having p.p. 완료 시제 표시, 원위치 복원 진단법을 해설 논리로 (Strunk&White, ESL Grammar Handbook, Williams)
 - 26) 가산성·한정사: 의미 따라 가산 전환(a coffee=잔/coffee=물질, paper·room 다의), fewer/less·much/many, a few/a little 구 한정사, all the men 어순(*the all men), the number of=단수/a number of=복수 (Scrivener, ESL Grammar Handbook, Aarts, Strunk&White, Radford)
 - 27) 병렬 동일범주 제약: A, B, and C에서 C만 범주 이탈(동명사~동명사~to부정사)이 오답, not only/but also·both/and·prefer A to B 뒤 구조 일치, 병렬 축 시작점 오인 함정 (Aarts, Williams, Strunk&White, Kearns)
-- 28) 4형식 전환·가주어 외치: to형(tell/show)/for형(make/buy) 선택, say 4형식 불가(*said me)·cost/wish 전환 불가, that절 주어는 that 생략 불가, 전치사+that절 금지(depend on the fact that/on whether로 교정) (ESL Grammar Handbook, Biber, Jespersen, Radford)
+- 28) 4형식 전환·가주어 외치: to형(tell/show)/for형(make/buy) 선택, say 4형식 불가(*said me)·cost/wish 전환 불가. **that 생략은 범위 제한 규칙**: 주어 that절·동격/전치사 뒤 that절에서는 생략 불가(depend on the fact that/on whether로 교정), 그러나 목적어 that절(say/think/know/believe 등 뒤)에서는 생략이 표준 용법 — 목적어절 that 생략 자체를 어법 오류로 출제 금지. 마찬가지로 불가산명사도 의미 전환 시 가산 복수 가능(a coffee/two coffees, waters=수역) — '불가산=항상 복수불가'로 오류 출제 금지. (ESL Grammar Handbook, Biber, Jespersen, Radford; Huddleston & Pullum CGEL that-omission·count/mass coercion)
 
 ## 2. 구문 로직 (순서·삽입·전환·재작문)
 - 1) 구정보→신정보 사슬: 앞 문장 문미(stress)의 신정보가 다음 문장 주어(topic·구정보)로 이어지는 사슬을 순서배열 정답 근거로, 신정보가 문두에 튀는 배열을 오답으로 설계 — 태 선택(수동)도 이 정보구조가 결정 (Williams, Biber, Oxford Practice Grammar)

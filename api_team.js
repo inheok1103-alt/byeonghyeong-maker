@@ -31,7 +31,26 @@
    * 키는 사용자 브라우저(localStorage)에만 저장 — 공개 코드엔 절대 안 들어감. */
   var CFG = { geminiKey: "", groqKey: "", cerebrasKey: "", mistralKey: "", openrouterKey: "",
     geminiModel: "gemini-2.5-flash", groqModel: "llama-3.3-70b-versatile", cerebrasModel: "llama3.3-70b", mistralModel: "mistral-small-latest", openrouterModel: "meta-llama/llama-3.3-70b-instruct:free",
-    ollamaModel: "", ollamaUrl: "http://localhost:11434" };
+    ollamaModel: "", ollamaUrl: "http://localhost:11434",
+    // 데이터계약(Codex 지적 ②): 지문이 제3자 LLM 제공자로 나가는지 제어.
+    //  "open"(기본)=외부 LLM 허용(지문 전송) · "local-only"=Ollama(로컬)만, 없으면 LLM 미사용(코드빌더로만 생성, 지문 미전송)
+    dataContract: "open" };
+  // 지문이 기기 밖으로 나가는(egress) 제공자 = ollama(로컬) 외 전부. proxy도 CF Worker→상용 API로 지문을 전달하므로 egress.
+  var LOCAL_ONLY_PROVIDERS = { ollama: 1 };
+  function isEgress(prov) { return !LOCAL_ONLY_PROVIDERS[prov]; }
+  function contractAllows(prov) { return CFG.dataContract === "local-only" ? !isEgress(prov) : true; }
+  var _egressWarned = false;
+  function noteEgress(prov) {
+    if (!isEgress(prov)) return;
+    if (!_egressWarned) { _egressWarned = true;
+      try { console.warn("[데이터계약] 지문이 외부 LLM 제공자(" + prov + ")로 전송됩니다. 로컬 전용을 원하면 configure({dataContract:'local-only'}) + Ollama 설정."); } catch (_) {}
+    }
+  }
+  function dataEgressInfo() {
+    return { contract: CFG.dataContract, localAvailable: !!CFG.ollamaModel,
+      // 현재 계약에서 실제 사용 가능한 제공자(지문이 어디로 가는지 투명 공개)
+      activeProviders: providerChain(), egressed: _egressWarned };
+  }
   // OpenAI 호환 무료 제공자(Bearer + /chat/completions) — 회전 목록에 추가해 무료 용량을 몇 배로
   var OAI = {
     groq:       { url: "https://api.groq.com/openai/v1/chat/completions",  model: function () { return CFG.groqModel; } },
@@ -52,10 +71,16 @@
   function keyStats() { var o = { ollama: !!CFG.ollamaModel }; KEYED.forEach(function (p) { o[p] = { total: POOL[p].length, live: liveKeys(p).length }; }); return o; }
   function configure(c) { c = c || {}; Object.assign(CFG, c); if (KEYED.some(function (p) { return c[p + "Key"] != null; })) rebuildPools(); if (c.logUrl != null) LOGURL = c.logUrl; if (c.onMeeting) CB.onMeeting = c.onMeeting; if (c.onError) CB.onError = c.onError; if (c.onLearn) CB.onLearn = c.onLearn; }
   // Ollama(로컬) 최우선(설정 시) → 살아있는 키드 제공자 순서 → Pollinations(무키)
-  function provider() { if (CFG.ollamaModel) return "ollama"; for (var i = 0; i < KEYED.length; i++) { if (hasLive(KEYED[i])) return KEYED[i]; } if (CFG.proxyUrl) return "proxy"; return "pollinations"; }
+  function provider() { if (CFG.ollamaModel) return "ollama";
+    if (CFG.dataContract === "local-only") return "none";   // 로컬 모델 없고 로컬전용 계약 → LLM 미사용(코드빌더로 폴백)
+    for (var i = 0; i < KEYED.length; i++) { if (hasLive(KEYED[i])) return KEYED[i]; } if (CFG.proxyUrl) return "proxy"; return "pollinations"; }
   var LAST_LIMITED = false;   // 직전 호출이 레이트리밋이었는지(진단·UI용)
   async function llmRaw(messages, opts) {
-    opts = opts || {}; var prov = opts.forceProvider || provider(); var to = withTimeout(opts.timeout || 70000);
+    opts = opts || {}; var prov = opts.forceProvider || provider();
+    if (prov === "none") return "";   // 로컬전용 계약 + 로컬모델 없음 → 지문 전송 없이 빈 응답(코드빌더 폴백)
+    if (!contractAllows(prov)) return "";   // 계약 위반 제공자로의 강제 호출 차단(지문 egress 방지)
+    noteEgress(prov);
+    var to = withTimeout(opts.timeout || 70000);
     try {
       if (prov === "ollama") {
         // 로컬 Ollama(무한·무료). https 페이지에선 mixed-content로 막히므로 사이트를 로컬(localhost)에서 실행해야 함.
@@ -127,6 +152,7 @@
   // 연결된 공급자 폴백 체인: Gemini(키) → Groq(키) → Pollinations(무료). 앞이 실패/레이트리밋이면 다음으로.
   var LASTGOOD = "";   // 직전에 성공한 제공자 — 다음 호출은 여기부터(죽은 앞순위에 시간 낭비 방지)
   function providerChain() { var c = []; if (CFG.ollamaModel) c.push("ollama"); KEYED.forEach(function (p) { if (hasLive(p)) c.push(p); }); if (CFG.proxyUrl) c.push("proxy"); c.push("pollinations");
+    if (CFG.dataContract === "local-only") c = c.filter(contractAllows);   // 로컬전용 계약: egress 제공자 전부 제거(지문 미전송)
     var base = (c[0] === "ollama") ? 1 : 0; var gi = c.indexOf(LASTGOOD);
     if (LASTGOOD && gi > base) { c.splice(gi, 1); c.splice(base, 0, LASTGOOD); }
     return c; }
@@ -999,7 +1025,7 @@
     for (var i = 0; i < sents.length; i++) { if (new RegExp("\\b" + w + "\\b", "i").test(sents[i])) return sents[i].trim().replace(/\s+/g, " ").slice(0, 150); }
     return "";
   }
-  // 어휘(문맥상 부적절): LLM은 '어느 단어를 무엇으로' 정하고, 밑줄·치환은 코드가 수행 → 정답위치 100% 정합
+  // 어휘(문맥상 부적절): LLM은 '어느 단어를 무엇으로' 정하고, 밑줄·치환은 코드가 수행 → 정답'위치'는 코드가 보장(내용 적절성은 별도 게이트로 검증 — 100% 정확성 주장 아님)
   async function buildVocab(passage) {
     var cw = contentWords(passage).slice(0, 8), ant = {};
     await Promise.all(cw.map(async function (w) { var sa = synAnt(w); if (sa && sa.ant && sa.ant.length) { ant[w] = sa.ant[0]; return; } var a = await datamuse(w, "ant", 2); if (a.length) ant[w] = a[0]; }));
@@ -1030,7 +1056,7 @@
     }
     return null;
   }
-  // 어법: LLM은 '어느 구절을 어떻게 틀리게'만 정하고, 밑줄·오류주입은 코드가 수행 → 정답위치 100% 정합
+  // 어법: LLM은 '어느 구절을 어떻게 틀리게'만 정하고, 밑줄·오류주입은 코드가 수행 → 정답'위치'는 코드가 보장(오류의 언어학적 타당성은 nonError·codeGate로 검증 — 100% 정확성 주장 아님)
   // 어법 범주를 오류↔정답 diff에서 결정론적으로 추론(LLM cats 라벨이 자주 틀려 오도하므로 코드가 우선).
   function inferGramCat(err, cor) {
     var e = " " + String(err).toLowerCase() + " ", c = " " + String(cor).toLowerCase() + " ";
@@ -1358,10 +1384,43 @@
     best._refine = { rounds: rounds, finalScore: bestScore }; return best;
   }
 
-  /* ===== 자가학습: 스스로 만들고 → 교사 패널 자가비평 → 결함에서 일반화 규칙 학습 → STANDING에 반영 ===== */
-  var LEARNED = [];
+  /* ===== 자가학습 격리(Codex ③): 스스로 만들고 → 자가비평 → 규칙 도출 → [격리]. 즉시 반영 금지.
+     격리 → 독립 증거 누적 + 반례 검사 통과 → '승인 대기(eligible)' → 사람 승인(promoteRule)해야만 활성(STANDING). ===== */
+  var LEARNED = [];        // 활성 규칙(사람 승인 완료) — STANDING에 반영되는 유일한 소스
+  var QUAR = [];           // 격리 규칙: {rule, type, score, evidence:[], hits, status:'quarantined'|'eligible'|'rejected', counterex}
+  var EVIDENCE_MIN = 2;    // 자동 승격(eligible)에 필요한 독립 재관찰 최소 횟수 — 1회 관찰로는 절대 승격 불가
   function learnedRules() { return LEARNED.slice(); }
-  function applyLearned(rules) { LEARNED = (rules || []).map(function (r) { return (r && r.rule) || r; }).filter(function (r) { return typeof r === "string" && r; }).slice(-60); STANDING = LEARNED.slice(-12).join(" / ").slice(0, 900); return LEARNED.length; }
+  function quarantinedRules() { return QUAR.map(function (q) { return Object.assign({}, q); }); }
+  function quarantineStats() { var s = { quarantined: 0, eligible: 0, rejected: 0, approved: LEARNED.length }; QUAR.forEach(function (q) { s[q.status] = (s[q.status] || 0) + 1; }); return s; }
+  function rebuildStanding() { STANDING = LEARNED.slice(-12).join(" / ").slice(0, 900); return STANDING; }
+  // 반례 휴리스틱: 범위 없는 절대 일반화·비구체 규칙은 자동 승격 차단(사람이 직접 판단해야 함)
+  function counterexampleFlag(rule) {
+    var r = String(rule || "");
+    if (/(항상|모든|반드시|절대|무조건|언제나|\bnever\b|\balways\b|\ball \b|\bevery \b)/i.test(r) && !/(경우|한정|단,|except|unless|일 때|목적어|주어절|~에서만)/.test(r)) return "무범위 절대 일반화(반례 가능)";
+    if (r.length < 12) return "규칙이 너무 짧음(비구체)";
+    return null;
+  }
+  // 학습된 규칙을 격리에 등록(증거 누적). 이미 활성이면 무시. 증거 충분+반례없음 → eligible(사람 승인 대기).
+  function quarantineRule(rule, ev) {
+    rule = String(rule || "").trim(); if (rule.length < 9) return null;
+    if (LEARNED.indexOf(rule) >= 0) return null;
+    var q = QUAR.filter(function (x) { return x.rule === rule; })[0];
+    if (!q) { q = { rule: rule, type: (ev && ev.type) || "", score: (ev && ev.score) || 0, evidence: [], hits: 0, status: "quarantined", counterex: counterexampleFlag(rule) }; QUAR.push(q); if (QUAR.length > 200) QUAR = QUAR.slice(-200); }
+    q.hits += 1; if (ev) q.evidence.push({ type: ev.type, score: ev.score, issues: (ev.issues || []).slice(0, 2) });
+    if (q.status === "quarantined" && q.hits >= EVIDENCE_MIN && !q.counterex) q.status = "eligible";
+    try { if (CB.onLearn) CB.onLearn({ type: q.type, score: q.score, rule: rule, status: q.status, hits: q.hits, quarantined: true }); } catch (_) {}
+    return q;
+  }
+  // 사람 승인 — 규칙을 활성화하는 '유일한' 경로. 자동 승격(eligible)은 여기까지만이고 활성은 사람이 결정.
+  function promoteRule(rule) {
+    rule = String(rule || "").trim(); if (rule.length < 9) return { approved: LEARNED.length, error: "규칙 너무 짧음" };
+    QUAR = QUAR.filter(function (x) { return x.rule !== rule; });
+    if (LEARNED.indexOf(rule) < 0) { LEARNED.push(rule); if (LEARNED.length > 60) LEARNED = LEARNED.slice(-60); rebuildStanding(); }
+    return { approved: LEARNED.length };
+  }
+  function rejectRule(rule) { rule = String(rule || "").trim(); var q = QUAR.filter(function (x) { return x.rule === rule; })[0]; if (q) q.status = "rejected"; return !!q; }
+  // 승인된 규칙 집합을 직접 적재(사람이 큐레이션한 영속 저장 채널). '승인됨' 전제이므로 격리 우회 허용.
+  function applyLearned(rules) { LEARNED = (rules || []).map(function (r) { return (r && r.rule) || r; }).filter(function (r) { return typeof r === "string" && r; }).slice(-60); rebuildStanding(); return LEARNED.length; }
   async function selfLearnStep(passage, type, opts) {
     opts = opts || {}; var onP = opts.onProgress;
     var q = await generateOne(passage, type, { fast: true }).catch(function () { return null; });
@@ -1370,7 +1429,10 @@
     if (!c || c.score >= (opts.target || 88) || !(c.issues && c.issues.length)) return { type: type, score: c ? c.score : 0, learned: null };
     var rule = await ask("다음 '" + type + "' 문항의 결함으로부터, 앞으로 모든 출제에 적용할 '일반화된 개선 규칙' 한 문장을 한국어로 도출하라(구체적·실행가능, 특정 지문에 국한 금지).\n결함: " + JSON.stringify((c.issues || []).slice(0, 3)) + "\n개선지시: " + (c.fix || ""), "규칙 한 문장만.", { noRule: true, temperature: 0.4 });
     rule = String(rule || "").trim();
-    if (rule.length > 8 && LEARNED.indexOf(rule) < 0) { LEARNED.push(rule); if (LEARNED.length > 60) LEARNED = LEARNED.slice(-60); STANDING = LEARNED.slice(-12).join(" / ").slice(0, 900); try { if (CB.onLearn) CB.onLearn({ type: type, score: c.score, rule: rule }); } catch (_) {} return { type: type, score: c.score, learned: rule, issues: (c.issues || []).slice(0, 2) }; }
+    if (rule.length > 8) {   // 즉시 STANDING 반영 금지 — 격리 등록만. 활성화는 사람 승인(promoteRule) 필요.
+      var qr = quarantineRule(rule, { type: type, score: c.score, issues: c.issues });
+      return { type: type, score: c.score, learned: null, quarantined: rule, status: qr ? qr.status : "quarantined", hits: qr ? qr.hits : 0, issues: (c.issues || []).slice(0, 2) };
+    }
     return { type: type, score: c.score, learned: null };
   }
 
@@ -2262,6 +2324,43 @@
     q.explanation = ex;
     return q;
   }
+  /* ===== 정본 지문 그래프 provenance(Codex ④): 각 문항에 출처ID·전체지문(무잘림)·선지 위치결박 메타 부착 =====
+     추적성: 어떤 원 지문에서 왔는지(sourceId), 어떤 변형 지문을 썼는지(variantId), 마커(ⓐ~ⓔ/①~⑤/(A)(B)(C)/____)가 지문 어디에 결박되는지. */
+  function passageId(text) {   // 결정론 FNV-1a 32bit — 같은 지문이면 항상 같은 ID(공백 정규화)
+    var s = String(text || "").replace(/\s+/g, " ").trim(); if (!s) return "pg_00000000";
+    var h = 0x811c9dc5 >>> 0;
+    for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = (h + ((h << 1) + (h << 4) + (h << 7) + (h << 8) + (h << 24))) >>> 0; }
+    return "pg_" + ("00000000" + h.toString(16)).slice(-8);
+  }
+  function markerSpans(passage) {   // 위치결박: 지문 내 마커 문자 위치(정답 위치·삽입 위치 검증에 사용)
+    var spans = [], rx = /ⓐ|ⓑ|ⓒ|ⓓ|ⓔ|①|②|③|④|⑤|\([A-C]\)|_{2,}/g, m;
+    while ((m = rx.exec(String(passage || "")))) { spans.push({ marker: m[0], at: m.index }); if (spans.length > 40) break; }
+    return spans;
+  }
+  function provenanceOf(q, passage, type) {
+    if (!q) return q;
+    var src = q.passage || passage || "";               // 문항이 자체 변형지문을 가지면 그것이 이 문항의 정본 소스
+    var spans = markerSpans(src);
+    var prov = {
+      sourceId: passageId(passage || src),              // 원 지문 기준 안정 ID
+      variantId: (q.passage && q.passage !== passage) ? passageId(q.passage) : null,   // 변형 지문 ID(있을 때만)
+      fullPassage: src,                                  // 전체 지문(잘림 없이 — full_passage_map_missing 해소)
+      origPassage: String(passage || ""),                // 원본 전체 지문
+      lang: /[가-힣]/.test(src) ? "mixed" : "en",
+      wordCount: (String(src).match(/[A-Za-z]+/g) || []).length,
+      type: type || q.type || ""
+    };
+    if (spans.length) prov.markerSpans = spans;          // 표식형: 위치결박 메타(position_bound_choice_metadata 해소)
+    if (q.choices && q.choices.length) {
+      prov.choiceMeta = q.choices.map(function (ch, i) {
+        return { idx: i + 1, isAnswer: (q.answer === (i + 1)), marker: (spans[i] && spans[i].marker) || null, len: (String(ch).match(/[A-Za-z]+/g) || []).length };
+      });
+    } else if (q.answer != null) {
+      prov.modelAnswer = String(q.answer || q.answerText || "");   // 서술형: 모범답안을 provenance에 명시
+    }
+    q._prov = prov;
+    return q;
+  }
   async function generateExam(passage, types, opts) {
     opts = opts || {}; var onP = opts.onProgress, onT = opts.onType || function () {}, USE = null; USE_ENSEMBLE = !!opts.ensemble;
     log(onP, "■ 1단계: 자료 수집반 가동(전 API)…");
@@ -2317,6 +2416,7 @@
     if (out.length >= 3) { rebalanceAnswers(out); log(onP, "   ↳ 정답위치 균등 분산(조립단계) 적용"); }   // Haladyna: 위치편향 제거
     out.forEach(function (it) { pruneStaleAnalysis(it); delete it._work; stampWork(it); });   // 재배치 후 선지분석 재동기화 + 워크북 재스탬프
     await Promise.all(out.map(function (it) { return rxFeedback(it, passage).catch(function () { return it; }); }));   // 정답 확정 후 오답 진단·처방 생성(rebalance 뒤)
+    out.forEach(function (it) { provenanceOf(it, passage, it.type); });   // 정본 지문 그래프: 정답 확정 후 출처ID·전체지문·선지 위치결박 메타 부착
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
     return out;
   }
@@ -2428,6 +2528,7 @@
     if (q && opts.refine) q = await refineLoop(q, { target: opts.refineTarget || 88, maxRounds: opts.rounds || 4, onProgress: opts.onProgress, passage: passage, panel: opts.ensemble ? (opts.teachers || 3) : 1 });
     if (q) await rxFeedback(q, passage);   // 오답 진단·처방(각 오답을 골랐다면 → 진단+교정 처방) 해설 구체화
     stampIntent(q); stampWork(q);
+    if (q) provenanceOf(q, passage, type);   // 정본 지문 그래프: 출처ID·전체지문·선지 위치결박 메타 부착
     return q;
   }
 
@@ -2599,6 +2700,7 @@
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints, setLogicStanding: setLogicStanding,
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
     analysisSheet: analysisSheet, extractKeywords: extractKeywords, findSource: findSource, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
+    dataEgressInfo: dataEgressInfo, setDataContract: function (mode) { CFG.dataContract = (mode === "local-only") ? "local-only" : "open"; return CFG.dataContract; },
     ollamaModels: async function (url) { try { var d = await getJSON(String(url || CFG.ollamaUrl).replace(/\/+$/, "") + "/api/tags", 4000); return (d && d.models || []).map(function (m) { return m.name; }); } catch (e) { return null; } },
     loadCorpus: loadCorpus, corpusInfo: corpusInfo, corpusPassage: corpusPassage, cefrOf: cefrOf, synAnt: synAnt, collocation: collocation, phrasalVerbs: phrasalVerbs, gecExamples: gecExamples, recommendBooks: recommendBooks, books: function () { return CORPUS.books || []; },
     corpusStat: function () { return { books: (CORPUS.books || []).length, vocab: CORPUS.vocab ? Object.keys(CORPUS.vocab).length : 0, passages: (CORPUS.passages || []).length, colloc: (CORPUS.colloc || []).length, synant: CORPUS.synant ? Object.keys(CORPUS.synant).length : 0, gec: (CORPUS.gec || []).length, phrasal: (CORPUS.phrasal || []).length, cefr: CORPUS.cefr ? Object.keys(CORPUS.cefr).length : 0, research: (CORPUS.research && CORPUS.research.count) || 0 }; },
@@ -2609,10 +2711,12 @@
     wikiSearch: wikiSearch, wikidata: wikidata, openLibrary: openLibrary, poetry: poetry, wordInfo: wordInfo, wikiquote: wikiquote, wikisource: wikisource,
     refineLoop: refineLoop, critiqueQ: critiqueQ, ensemble: ensemble, spawnLLM: spawnLLM, spawned: function () { return SPAWNED; }, brain: brain, deliberate: deliberate,
     selfLearnStep: selfLearnStep, learnedRules: learnedRules, applyLearned: applyLearned, teacherHarness: teacherHarness,
+    quarantinedRules: quarantinedRules, quarantineStats: quarantineStats, promoteRule: promoteRule, rejectRule: rejectRule,
     teacherCount: teacherCount, sampleTeachers: sampleTeachers, makeTeacher: makeTeacher, buildExplanation: buildExplanation,
     brainStructure: brainStructure, regionOf: regionOf,
     generateExam: generateExam, generateOne: generateOne, reviewOptions: reviewOptions, suggestTypes: suggestTypes, transformPassage: transformPassage, transformStaged: transformStaged, stageInfo: function () { return STAGE_INFO; }, buildVocabList: buildVocabList, healthCheck: healthCheck,
     buildInference: buildInference, buildVocab: buildVocab, buildGrammar: buildGrammar, buildBlank: buildBlank,
-    rebalanceAnswers: rebalanceAnswers, stampWork: stampWork, rxFeedback: rxFeedback, pruneStaleAnalysis: pruneStaleAnalysis
+    rebalanceAnswers: rebalanceAnswers, stampWork: stampWork, rxFeedback: rxFeedback, pruneStaleAnalysis: pruneStaleAnalysis,
+    provenanceOf: provenanceOf, passageId: passageId, markerSpans: markerSpans
   };
 })();

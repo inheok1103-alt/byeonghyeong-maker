@@ -197,11 +197,16 @@ body.showAns .q .ans{display:block}
 </div>
 
 <script>var RAY_PROXY="https://ray-proxy.gen1103.workers.dev";</script>
-<script src="api_team.js?v=20260711a"></script>
-<script src="addon_key_guard.js?v=20260709d"></script>
+<script src="api_team.js?v=20260711b"></script>
+<script src="addon_key_guard.js?v=20260711b"></script>
 <script src="raytools.js?v=20260707b"></script>
 <script>
-var T=window.APITEAM; T.configure({proxyUrl:RAY_PROXY});
+var T=window.APITEAM;
+/* 데이터계약(Codex ② 지문 egress): 저장된 설정 존중. 기본 open(외부 LLM로 지문 전송 허용).
+   localStorage.exam_dataContract='local-only'이면 Ollama(로컬)만 사용, 없으면 코드빌더로만 생성해 지문을 기기 밖으로 보내지 않음. */
+var _dc="open"; try{ _dc=localStorage.getItem("exam_dataContract")||"open"; }catch(e){}
+if(_dc==="local-only"){ T.setDataContract&&T.setDataContract("local-only"); /* 로컬전용: 공개 프록시 미설정 */ }
+else { T.configure({proxyUrl:RAY_PROXY}); }
 T.loadTypeDB("knowledge/types_v2.json").then(function(){ buildPills(); });
 T.loadReviewDB&&T.loadReviewDB("knowledge/review_core_v2.json").catch(function(){});
 /* 연구 로직 전역 적용: 모든 생성에 ExamLogic 오답설계 표준(SM/SY 함정·PI 변형지수·오답분석) 주입 */
