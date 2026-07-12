@@ -1,6 +1,113 @@
 {
- "updated": "2026-07-12T15:19:14.506Z",
+ "updated": "2026-07-12T17:21:14.138Z",
  "samples": [
+  {
+   "ts": "2026-07-12T17:19:31.238Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "II. READING COMPREHENSION Reading is not merely a process of exact identification of letters, words, and ultimately sentences ⓐ<u>leading to comprehension</u> built from letter to word to phrase to sentence [1]. Readers make use of their existing background knowledge (schemata) to make predictions about what is coming next in the text and about how some new, unfamiliar piece of information relates to what is already known, ⓑ<u>as in [2] and [3]</u>. It is clear that basic decoding processes are important for comprehension and ⓒ<u>are using by readers</u> in interaction with the more complex processes of meaning generation, as referred in [4], [5], and [6]. However, it is equally clear that readers engage in reading ⓓ<u>in order to gain</u> information. Reading purpose is a central concern of English for Specific Purposes (ESP), and purpose resides in the language learner's relationship to the learning task. The purpose is assumed to be comprehension of the message. Comprehension in instructional settings is translated into some product, ⓔ<u>such as completion</u> of comprehension questions, a written summary, or an oral report [7].",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [준동사] ⓒ: 'are using by readers' → 'are used by readers'\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-12T17:20:06.315Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the role of background knowledge in decoding for reading comprehension",
+     "how decoding processes determine the use of background knowledge in reading",
+     "the importance of background knowledge in reading comprehension",
+     "the universal necessity of background knowledge for all reading tasks",
+     "the occasional use of background knowledge alongside decoding skills in reading"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The integration of background knowledge with decoding skills in achieving reading comprehension'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The integration of background knowledge with decoding skills in achieving reading comprehension]\n[오답 진단·처방]\n① 진단: 글에서 배경지식(background knowledge)이 '예측'과 '관련짓기'에 쓰인다고만 말하고 '디코딩(decoding)'의 역할은 언급하지 않았으므로, '디코딩의 역할'을 강조한 이 선지는 지문과 맞지 않음. → 처방: 지문에서 '디코딩'이 중요하다고 언급한 부분을 다시 읽고, 배경지식이 '디코딩과 어떻게 상호작용하는지'를 확인하기.\n② 진단: 글에서 '디코딩'이 '의미 생성'과 상호작용한다고 했지만, '배경지식이 디코딩을 결정한다'는 인과관계는 없음. 지문은 배경지식과 디코딩이 '모두 중요'하다고만 설명함. → 처방: 지문에서 '디코딩'과 '배경지식'의 관계를 '상호작용'으로 설명한 부분을 찾고, 인과관계가 아님을 기억하기.\n④ 진단: 글은 '모든 읽기 과제에 배경지식이 필요하다고' 말하지 않았고, '특정 목적(ESP)'의 읽기에서 배경지식이 중요하다고만 언급함. '모든'이라는 절대적 표현은 과장됨. → 처방: 지문에서 '목적'과 'ESP'가 언급된 부분을 확인하고, '보편적 필요성'이 아님을 기억하기.\n⑤ 진단: 글은 배경지식이 '때때로'가 아니라 '항상' 읽기에서 사용된다고 설명함. '때때로'는 지문의 내용을 축소하거나 오해한 것임. → 처방: 지문에서 배경지식이 '예측'과 '관련짓기'에 '항상' 쓰인다고 설명한 부분을 다시 읽고, '필수성'을 강조하기."
+   }
+  },
+  {
+   "ts": "2026-07-12T17:20:28.943Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] It is clear that basic decoding processes are important for comprehension and are used by readers in interaction with the more complex processes of meaning generation, as referred in [4], [5], and [6].\n\nREADING COMPREHENSION Reading is not merely a process of exact identification of letters, words, and ultimately sentences leading to comprehension built from letter to word to phrase to sentence [1]. ( ① ) Readers make use of their existing background knowledge (schemata) to make predictions about what is coming next in the text and about how some new, unfamiliar piece of information relates to what is already known, as in [2] and [3]. ( ② ) However, it is equally clear that readers engage in reading in order to gain information. ( ③ ) Reading purpose is a central concern of English for Specific Purposes (ESP), and purpose resides in the language learner's relationship to the learning task. ( ④ ) The purpose is assumed to be comprehension of the message. ( ⑤ ) Comprehension in instructional settings is translated into some product, such as completion of comprehension questions, a written summary, or an oral report [7].",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 2,
+    "explanation": "주어진 문장의 연결 단서가 ② 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: 학생은 ①이 '글자 → 단어 → 문장'의 단계적 흐름을 설명하는 부분이라 착각해 주어진 문장이 '기본 디코딩 과정'을 다루는 줄 알았다. 그러나 ①은 '단어와 문장'의 구조적 관계만 언급할 뿐, 디코딩과 의미 생성의 상호작용은 없다. → 처방: 지문의 주제(디코딩과 의미 생성의 관계)를 먼저 확인하고, 각 선지가 다루는 내용을 '키워드(예: 배경 지식, 읽기 목적)'로 요약해 비교해라.\n③ 진단: 학생은 ③이 '정보 습득'을 강조하는 부분이라 생각해 주어진 문장이 '읽기의 목적'을 설명한다고 오해했다. 그러나 ③은 '읽기 목적'의 중요성을 언급할 뿐, 디코딩과 의미 생성의 관계를 설명하지 않는다. → 처방: 주어진 문장의 핵심어('basic decoding processes', 'meaning generation')가 어떤 선지에 가장 알맞은지 '문장 구조'로 분석해라(예: 'A 는 B 에 중요하다' → A 와 B 가 모두 언급된 곳).\n④ 진단: 학생은 ④가 'ESP(특정 목적 영어)'라는 학문적 용어를 포함해 '읽기의 목적'을 다룬다고 생각해 주어진 문장이 '읽기 목적'과 관련 있다고 생각했다. 그러나 ④는 '목적'의 '위치'(ESP 와 학습자 관계)만 설명할 뿐, 디코딩 과정은 언급하지 않는다. → 처방: 지문의 '주제문'을 찾고, 주어진 문장이 그 주제문을 '지원'하는지 확인해라. 주제문이 '디코딩과 의미 생성의 관계'라면, 그 관계가 드러나는 곳에 넣어야 한다.\n⑤ 진단: 학생은 ⑤가 '이해'를 '문제 해결'로 번역하는 부분이라 생각해 주어진 문장이 '이해 과정'을 설명한다고 오해했다. 그러나 ⑤는 '이해의 결과물'(예: 문제 풀이)을 다룰 뿐, '이해 과정'(디코딩과 의미 생성의 관계)은 언급하지 않는다. → 처방: 지문의 '흐름'을 '원인과 결과'로 나누고, 주어진 문장이 '원인'(디코딩)과 '결과'(의미 생성)의 관계를 설명하는지 확인해라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-12T17:20:41.617Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 읽기는 단순히 글자를 식별해 문장을 이해하는 과정이 아니라 배경지식을 활용해 텍스트의 의미를 능동적으로 구성하는 과정이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-12T15:17:43.902Z",
    "type": "전체문장배열",
@@ -241,142 +348,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'A pristine antique is unspoiled, while prodigal means wastefully extravagant.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 순수한 아름다움이 낭비에서 나온다는 오해. 'pristine'은 '손대지 않은' 상태를 뜻하지, '아름다움'과는 직접 연결되지 않음. → 처방: 단어의 뜻을 정확히 짚고, 'pristine'이 '오염되지 않음'이나 '원래 상태'를 가리킨다는 점을 기억할 것.\n③ 진단: 'pristine'의 뜻을 '오염되지 않은 상태'로만 좁게 해석해, '대상'에만 적용된다고 오독. 'pristine condition'이 '원래 상태'를 뜻함을 놓침. → 처방: 단어의 의미를 넓은 범위로 이해하고, 'condition'이 '상태'뿐 아니라 '원래 모습'을 포함한다는 점을 확인할 것.\n④ 진단: 인간의 모든 행동에 낭비가 있다고 일반화. 'prodigal'은 '특정 행동'에만 적용된다는 지문을 무시함. → 처방: 문맥에서 'prodigal'이 사용된 부분을 정확히 짚고, '모든 행동'이 아니라는 점을 기억할 것.\n⑤ 진단: '항상 낭비만 한다'는 과장된 해석. 'prodigal'은 '특정 상황에서 낭비하는' 상태를 뜻함을 놓침. → 처방: 단어의 의미를 '항상'이 아니라 '특정 경우'로 좁혀 이해하고, 문맥을 꼼꼼히 읽을 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: A pristine antique is unspoiled, while prodigal means wastefully extravagant.]"
-   }
-  },
-  {
-   "ts": "2026-07-12T00:12:48.724Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "An antique in pristine condition is one that (A) [haven’t been / hasn’t been] tampered with over the years. It’s still in its original condition. A pristine mountain stream is a stream that hasn’t been polluted. PRODIGAL (PRAHD uh gul) adj wastefully extravagant • The chef was prodigal with her employer’s money, (B) [spent thousands / spending thousands] of dollars on ingredients for what was supposed to be (C) [simple meal / a simple meal]. • The young artist was prodigal with his talents: he wasted time and energy on greeting cards that might have been devoted to serious paintings. • The prodigal gambler soon found that she couldn’t afford even a two-dollar bet. To be prodigal is to be characterized by prodigality. Quick Quiz #66 Match each word in the first column with its definition in the second column. Check your answers here. 1. preclude a. outstanding 2. precursor b. triumph 3. predilection c. seize by prior right 4. preeminent d. wastefully extravagant 5. preempt e. unspoiled 6. premise f. natural preference 7. prepossess g. preoccupy 8. prerogative h. right or privilege 9. prevail i. assumption 10. pristine j. forerunner 11. prodigal k. prevent",
-    "choices": [
-     "(A) hasn’t been - (B) spending thousands - (C) a simple meal",
-     "(A) hasn’t been - (B) spent thousands - (C) simple meal",
-     "(A) hasn’t been - (B) spent thousands - (C) a simple meal",
-     "(A) haven’t been - (B) spent thousands - (C) a simple meal",
-     "(A) haven’t been - (B) spending thousands - (C) a simple meal"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) hasn’t been - (B) spending thousands - (C) a simple meal. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘pristine antique’는 단수 주체라 ‘hasn’t been’이 맞지만, 학생은 ‘years’(복수)를 보고 ‘have’를 쓴 듯. 지문 첫 문장 ‘an antique’(단수)를 보지 못한 오독. → 처방: 지문에서 단수/복수 주체를 정확히 짚고, 동사 일치 규칙을 다시 확인하라.\n② 진단: ‘prodigal with her money’는 ‘~을 낭비하다’라는 뜻이므로 ‘spent’를 써야 하는데, 학생은 ‘with’이 이끄는 동명사 구문으로 오해해 ‘spending’을 썼다. 지문 예문 ‘wasted time and energy on greeting cards’를 보지 못한 듯. → 처방: ‘prodigal with’를 ‘~을 낭비하다’로 기억하고, 동명사 vs 과거분사 구별 규칙을 다시 공부하라.\n④ 진단: ‘pristine antique’는 단수 주체라 ‘hasn’t been’이 맞지만, 학생은 ‘years’를 보고 ‘have’를 썼다. 또한 ‘simple meal’은 관사가 필요한데, 학생은 ‘a’를 빼고 썼다. 지문 ‘a stream that hasn’t been polluted’와 ‘a simple meal’을 보지 못한 듯. → 처방: 관사와 동사 일치를 동시에 확인하는 습관을 들여라. 지문에서 예시 문장을 꼼꼼히 읽고, 문법 규칙을 적용하라.\n⑤ 진단: ‘prodigal with’를 ‘~을 낭비하다’로 오해해 ‘spending’을 썼고, ‘simple meal’의 ‘a’를 빼먹었다. 지문 예문 ‘spent thousands of dollars’를 보지 못한 듯. → 처방: ‘prodigal with’의 뜻을 정확히 기억하고, 관사 사용 규칙을 다시 확인하라. 지문 예문을 꼼꼼히 읽고, 문법 규칙을 적용하는 연습을 하라."
-   }
-  },
-  {
-   "ts": "2026-07-11T23:13:56.155Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 지문 축소 의심(64%) — 정보 손실 여부 확인 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.43,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "So, it seems clear that the grammatical properties of a phrase like help you are determined by the verb help, and not by the pronoun you. Much the same can be said about the semantic properties of the expression, since the phrase help you describes an act of help, not a kind of person. [ ] If we use the traditional labelled bracketing technique to represent the category of the overall verb phrase help you and of its constituent words (the verb help and the pronoun you), we can represent the structure of the resulting phrase as in (4) below:",
-    "choices": [
-     "By applying standard linguistic abbreviations, we can classify the verb help as the syntactic head of the phrase help you, thereby identifying the entire construction as a verb phrase (VP), just as we shorten noun to N or verb to V.",
-     "Using technical terms, the phrase help you is classified as an adjective phrase (AP) because it describes a state rather than an action, despite the presence of the verb help.",
-     "The abbreviation VP stands for 'verb property,' not 'verb phrase,' as the head of the phrase help you is the pronoun you, not the verb help.",
-     "The phrase help you functions grammatically as a noun phrase because the pronoun you determines its category, not the verb help.",
-     "While the verb help is part of the phrase help you, it does not serve as the head, since the pronoun you carries the primary semantic role in the expression."
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 원문 'Using the appropriate technical terminology, we can say that the verb help is the head of the phrase help you, and hence that help you is a verb phrase: and in the same way as we abbreviate category labels like verb to V, so too we can abbreviate the category label verb phrase to VP.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘adjective phrase(AP)’로 분류했다는 점에서 ‘help you’가 형용사구처럼 ‘상태’를 나타낸다고 오해했는데, 지문은 ‘help you’가 ‘도움의 행위’를 묘사한다고 설명함. → 처방: 동사구가 동사(help)에 의해 결정된다는 지문 내용을 떠올리며, 동사구가 동사구임을 분명히 기억하기.\n③ 진단: ‘VP’의 약자가 ‘verb property’가 아니라 ‘verb phrase’라고 잘못 이해했는데, 지문은 ‘help’를 동사의 ‘head’로 보고 ‘VP’라고 표시했다고 설명함. → 처방: 표준 언어학 약어는 ‘N’(명사), ‘V’(동사), ‘VP’(동사구)임을 기억하고, 약어의 뜻을 정확히 암기하기.\n④ 진단: ‘you’의 역할이 크다고 생각해 ‘noun phrase’로 오판했는데, 지문은 ‘help’의 문법적 성격을 강조하며 ‘VP’라고 설명함. → 처방: 문장의 구조는 동사가 중심이 된다는 점을 기억하고, 주어/목적어의 역할과 문법적 범주를 혼동하지 않기.\n⑤ 진단: ‘you’의 의미적 역할이 크다고 생각해 ‘head’가 아니라고 오해했는데, 지문은 ‘help’를 ‘head’로 명시했다고 설명함. → 처방: ‘head’의 개념을 정확히 이해하고, 문법적 구조에서 동사가 중심 역할을 한다는 점을 기억하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T22:10:31.155Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/2 다수결 4번(기록 1번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 7,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the role of vocabulary in defining and distinguishing concepts",
-     "how pronunciation variations reflect social hierarchy",
-     "why definitions often alter the original meanings of words",
-     "the misuse of vocabulary to justify systemic discrimination",
-     "the need to memorize extensive vocabularies for academic achievement"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'Words and their definitions as vocabulary'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Words and their definitions as vocabulary]\n[오답 진단·처방]\n① 진단: ‘개념을 구별하는 데 어휘의 역할’(①)을 오독한 이유는 지문에서 ‘ANTITHESIS’와 ‘APARTHEID’의 의미를 설명한 부분을 ‘개념 구별’로만 좁게 해석하고, ‘차별’을 정당화하는 사례(‘educational apartheid’)까지 보지 못한 탓이다. 지문은 ‘개념 정의’와 ‘사회적 차별’을 모두 다루고 있다. → 처방: ‘개념 정의’뿐 아니라 ‘사회적 차별’까지도 함께 떠올리며 읽기.\n② 진단: ‘발음 변이가 사회적 계층을 반영’(②)을 오독한 이유는 지문에서 ‘Note carefully the pronunciation’을 ‘사회적 계층’과 연결 짓지 못하고, 단지 ‘발음 주의’로만 받아들였기 때문이다. 지문은 발음보다 ‘정의’와 ‘차별’에 초점을 둔다. → 처방: ‘발음’ 언급은 ‘정의’나 ‘차별’ 설명을 위한 배경일 뿐임을 기억하기.\n③ 진단: ‘정의가 원래 meanings 을 바꾼다’(③)를 오독한 이유는 ‘APARTHEID’가 ‘apart’에서 유래했다는 설명을 ‘정의가 meanings 을 바꾼다’로 오해했기 때문이다. 지문은 ‘정의’가 ‘차별’을 설명하는 데 쓰였다는 점을 강조한다. → 처방: ‘정의’가 ‘차별’을 설명하는 수단으로 쓰였다는 점을 먼저 확인하기.\n⑤ 진단: ‘어휘 암기 필요성’(⑤)을 오독한 이유는 지문에서 ‘Quick Quiz’를 ‘어휘 암기’로만 해석하고, ‘차별’을 정당화하는 사례(‘educational apartheid’)를 무시했기 때문이다. 지문은 ‘사회적 문제’를 다룬다. → 처방: ‘어휘 암기’보다는 ‘사회적 차별’이라는 주제를 먼저 떠올리며 읽기."
-   }
-  },
-  {
-   "ts": "2026-07-11T21:08:25.604Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.43,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] • They are intended to reflect a mind at work, as if the writer were speaking to you, finishing a sentence, then immediately expanding and qualifying it.\n\nMost fragments occur when you write a sentence that goes on so long and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence. Which is why you must understand how to write a long but clearly constructed sentence that readers can follow easily. Traditionally, a punctuated sentence that fails to include an independent main clause is wrong. At least in theory. ( ① ) In fact, experienced writers often write fragments deliberately, as I just did. ( ② ) When intended, those fragments typically have two characteristics: • They are relatively short, fewer than ten or so words. ( ③ ) Almost as an afterthought, often ironically. ( ④ ) In this passage, Mark Twain uses sentence fragments (along with sentences beginning with conjunctions) to capture the element of chance in the circumstances that made him an author (fragments are boldfaced): ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-12T15:19:14.502Z",
+ "updated": "2026-07-12T17:21:14.133Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
- "count": 38,
+ "count": 39,
  "notes": [
+  {
+   "ts": "2026-07-12T17:20:43.857Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "원서 코퍼스에서 'possession'과 'possess'의 오류가 반복되며, 소유·소지 관련 동사/명사의 형태가 일관되지 않음을 확인할 수 있다. 또한 'offer'와 'offered'의 시제 불일치, 'choose'와 'chose'의 시제 변환 오류가 빈번히 발생한다.",
+   "rule": "소유·소지·제공·선택 관련 동사(possess, offer, choose 등)는 문맥에 따라 시제(present/past) 및 단수/복수 형태를 반드시 일치시켜야 한다. 예를 들어, 'He possess' → 'He possesses', 'He offert' → 'He offered', 'He chose' → 'He choose'로 수정해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-12T15:18:51.807Z",
    "focus": "원서 문체 패턴을 활용한 변형",
