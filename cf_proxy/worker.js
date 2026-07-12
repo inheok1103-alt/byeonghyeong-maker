@@ -119,18 +119,38 @@ function cors(origin, allowed) {
   return { ok, h };
 }
 
+/* ── 학생 아카이브: Notion 통로(CORS 우회) ──
+   브라우저는 Notion API를 직접 못 부름(CORS 차단) → 워커가 대신 전달.
+   토큰은 워커 시크릿 NOTION_TOKEN에 저장(브라우저에 노출 안 됨). 오리진 잠금으로 내 사이트에서만 사용 가능.
+   요청: POST { notion: { method, path, body } }  예) {method:"POST", path:"pages", body:{...}} */
+async function notionProxy(env, spec, h) {
+  const token = (spec && spec.token) || env.NOTION_TOKEN;
+  if (!token) return new Response(JSON.stringify({ error: "no NOTION_TOKEN" }), { status: 400, headers: { ...h, "Content-Type": "application/json" } });
+  const path = String((spec && spec.path) || "").replace(/^\/+/, "").replace(/^v1\//, "");
+  if (!/^(pages|databases|blocks|users|search|comments)\b/.test(path)) return new Response(JSON.stringify({ error: "path not allowed" }), { status: 400, headers: { ...h, "Content-Type": "application/json" } });
+  const method = (spec.method || "GET").toUpperCase();
+  const r = await fetch("https://api.notion.com/v1/" + path, {
+    method,
+    headers: { "Authorization": "Bearer " + token, "Notion-Version": env.NOTION_VERSION || "2022-06-28", "Content-Type": "application/json" },
+    body: (method === "GET" || method === "DELETE") ? undefined : JSON.stringify(spec.body || {}),
+  });
+  const text = await r.text();
+  return new Response(text, { status: r.status, headers: { ...h, "Content-Type": "application/json" } });
+}
+
 export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
     const allowed = String(env.ALLOWED_ORIGINS || "https://inheok1103-alt.github.io,http://localhost,http://127.0.0.1").split(",").map(s => s.trim()).filter(Boolean);
     const { ok, h } = cors(origin, allowed);
     if (request.method === "OPTIONS") return new Response(null, { status: 204, headers: h });
-    if (request.method === "GET") return new Response(JSON.stringify({ ok: true, service: "ray-proxy", v: "20260708d", providers: CHAIN }), { headers: { ...h, "Content-Type": "application/json" } });
+    if (request.method === "GET") return new Response(JSON.stringify({ ok: true, service: "ray-proxy", v: "20260712n", providers: CHAIN }), { headers: { ...h, "Content-Type": "application/json" } });
     if (request.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: h });
     // 오리진 잠금: 내 사이트에서 온 요청만(남이 자기 사이트에 내 프록시를 못 쓰게). 더 강한 남용방지는 대시보드 Rate Limiting Rule.
     if (!ok && origin) return new Response(JSON.stringify({ error: "origin not allowed" }), { status: 403, headers: { ...h, "Content-Type": "application/json" } });
     let body;
     try { body = await request.json(); } catch (e) { return new Response(JSON.stringify({ error: "bad json" }), { status: 400, headers: { ...h, "Content-Type": "application/json" } }); }
+    if (body.notion) { try { return await notionProxy(env, body.notion, h); } catch (e) { return new Response(JSON.stringify({ error: "notion: " + String(e.message || e).slice(0, 120) }), { status: 502, headers: { ...h, "Content-Type": "application/json" } }); } }
     const messages = body.messages;
     if (!Array.isArray(messages) || !messages.length) return new Response(JSON.stringify({ error: "messages required" }), { status: 400, headers: { ...h, "Content-Type": "application/json" } });
     const temperature = body.temperature == null ? 0.6 : body.temperature;

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ray English · 스튜디오(개인)</title>
+<style>
+  :root{--bg:#0f131c;--card:#161c28;--card2:#1c2330;--line:#2a3242;--ink:#e9ecf2;--soft:#98a2b6;--mute:#69748a;
+    --gold:#C8A96A;--gold2:#EAD199;--mint:#43c59e;--mintS:#12291f;--navy:#16233F;--warn:#e0a548;--danger:#e0665c;
+    --up:#5fbf8f;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--ink);font-family:"Pretendard","Malgun Gothic",system-ui,sans-serif;font-size:14px;line-height:1.5;padding:22px 16px 60px}
+  .wrap{max-width:1080px;margin:0 auto}
+  .top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .mk{width:40px;height:40px;border-radius:11px;background:linear-gradient(150deg,var(--gold2),var(--gold));display:grid;place-items:center;color:var(--navy);font-weight:900;font-family:Georgia,serif;font-size:20px}
+  .top b{font-size:17px}.top b i{color:var(--gold);font-style:normal}
+  .top .sub{font-size:11px;color:var(--mute);letter-spacing:.14em;text-transform:uppercase}
+  .top .lock{margin-left:auto;font-size:11px;color:var(--mute)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+  .card h2{font-size:13px;color:var(--gold);letter-spacing:.02em;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+  .tool{display:block;text-decoration:none;background:var(--card2);border:1px solid var(--line);border-radius:11px;padding:14px;color:var(--ink);transition:.12s}
+  .tool:hover{border-color:var(--gold);transform:translateY(-1px)}
+  .tool .tn{font-weight:800;font-size:14.5px}.tool .td{font-size:11.5px;color:var(--soft);margin-top:3px}
+  .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+  select,input,textarea{background:var(--card2);border:1px solid var(--line);color:var(--ink);border-radius:8px;font-size:13px;padding:7px 9px;font-family:inherit}
+  input::placeholder,textarea::placeholder{color:var(--mute)}
+  button{font-family:inherit;cursor:pointer;border:0;border-radius:8px;font-weight:700;font-size:13px;padding:8px 14px}
+  .btn{background:linear-gradient(180deg,var(--gold2),var(--gold));color:var(--navy)}
+  .btn.ghost{background:var(--card2);border:1px solid var(--line);color:var(--soft)}
+  .btn.mint{background:var(--mint);color:#08130d}
+  .btn:disabled{opacity:.5;cursor:wait}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--mute);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  tr.stu{cursor:pointer}tr.stu:hover{background:var(--card2)}tr.stu.sel{background:var(--mintS)}
+  .chip{display:inline-block;font-size:11px;font-weight:700;border-radius:999px;padding:2px 9px}
+  .lv-상{background:#3a1c22;color:#f0a5a5}.lv-중{background:#3a2c16;color:#f0c48a}.lv-하{background:#153021;color:#8ee0b0}
+  .tag{display:inline-block;font-size:10.5px;background:#242c3a;color:#c7cbd8;border-radius:6px;padding:1px 7px;margin:1px}
+  .muted{color:var(--mute);font-size:12px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr}}
+  .frm{display:flex;flex-direction:column;gap:8px}
+  .frm .row{display:flex;gap:8px;flex-wrap:wrap}.frm .row>*{flex:1;min-width:90px}
+  .note{font-size:11.5px;color:var(--mute);margin-top:6px}
+  .toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;border:1px solid var(--gold);border-radius:10px;padding:10px 18px;font-size:13px;z-index:99;opacity:0;transition:.25s;pointer-events:none}
+  .toast.on{opacity:1}
+  .toast.err{border-color:var(--danger)}
+  /* gate */
+  #gate{position:fixed;inset:0;background:var(--bg);display:grid;place-items:center;z-index:50}
+  #gate .box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;width:min(340px,90vw);text-align:center}
+  #gate .mk{margin:0 auto 14px}
+  #gate h3{font-size:16px;margin-bottom:6px}#gate p{font-size:12px;color:var(--soft);margin-bottom:16px}
+  #gate input{width:100%;text-align:center;font-size:18px;letter-spacing:.3em;padding:12px;margin-bottom:10px}
+  #gate button{width:100%}
+  .setup{background:var(--warnS,#2b2416);border:1px solid var(--warn);border-radius:10px;padding:12px 14px;font-size:12px;color:#f0d49a;margin-bottom:12px;display:none}
+  .setup.show{display:block} .setup code{background:#0d0f16;padding:1px 5px;border-radius:4px;color:#e9d9a8}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="box">
+    <div class="mk">R</div>
+    <h3>Ray English 스튜디오</h3>
+    <p>개인용 · 비밀번호를 입력하세요<br>(처음이면 새 비밀번호로 설정됩니다)</p>
+    <input id="pin" type="password" inputmode="numeric" placeholder="••••" autocomplete="off">
+    <button class="btn" onclick="unlock()">들어가기</button>
+  </div>
+</div>
+
+<div class="wrap" id="app" style="display:none">
+  <div class="top">
+    <div class="mk">R</div>
+    <div><b>이인혁 <i>스튜디오</i></b><div class="sub">Ray English · Personal Studio</div></div>
+    <div class="lock">🔒 개인 전용 · <a href="index.html" style="color:var(--mute)">공공 페이지</a> · <a href="#" onclick="lock();return false" style="color:var(--mute)">잠금</a></div>
+  </div>
+
+  <div class="setup" id="setup">
+    ⚙ <b>아카이브를 켜려면 1회 설정이 필요합니다.</b> ① Notion에서 내부 통합(secret_ 토큰) 생성 → ② <a href="https://app.notion.com/p/39ba4120ea2481049c93d3238c564d9d" target="_blank" style="color:#e6c67a">아카이브 페이지</a>를 그 통합과 공유 → ③ CF 워커에 <code>NOTION_TOKEN</code> 시크릿 등록 후 재배포. 자세한 순서는 아래 <b>설정 안내</b> 참고.
+  </div>
+
+  <div class="card">
+    <h2>🛠 출제 도구</h2>
+    <div class="tools">
+      <a class="tool" href="exam.html"><div class="tn">출제 (최종판)</div><div class="td">지문→유형→시험지·해설</div></a>
+      <a class="tool" href="ai_maker.html"><div class="tn">실험실</div><div class="td">전 기능·편집·검수</div></a>
+      <a class="tool" href="sheet.html"><div class="tn">분석지</div><div class="td">문장별 구문·출제 포인트</div></a>
+      <a class="tool" href="workbook.html"><div class="tn">워크북</div><div class="td">과정 학습지</div></a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📚 학생 아카이브 <span class="muted" id="archStat" style="margin-left:auto"></span></h2>
+    <div class="filters">
+      <select id="fSchool" onchange="renderStudents()"><option value="">전체 학교</option></select>
+      <select id="fClass" onchange="renderStudents()"><option value="">전체 반</option></select>
+      <select id="fLevel" onchange="renderStudents()"><option value="">전체 수준</option><option>상</option><option>중</option><option>하</option></select>
+      <button class="btn ghost" onclick="loadStudents()">↻ 새로고침</button>
+      <button class="btn ghost" onclick="toggleAdd()">＋ 학생 추가</button>
+    </div>
+
+    <div id="addStu" class="card" style="display:none;background:var(--card2)">
+      <div class="frm">
+        <div class="row">
+          <input id="nName" placeholder="이름">
+          <input id="nSchool" placeholder="학교 (예: 동화고)">
+          <input id="nClass" placeholder="반 (예: 1-3)">
+        </div>
+        <div class="row">
+          <select id="nLevel"><option value="">수준</option><option>상</option><option>중</option><option>하</option></select>
+          <select id="nGrade"><option value="">학년</option><option>고1</option><option>고2</option><option>고3</option></select>
+          <input id="nGoal" placeholder="목표 (예: 기말 1등급)">
+        </div>
+        <div class="row" style="flex:0"><button class="btn" onclick="addStudent()">저장</button></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <table><thead><tr><th>이름</th><th>학교·반</th><th>수준</th></tr></thead><tbody id="stuBody"><tr><td colspan="3" class="muted">불러오는 중…</td></tr></tbody></table>
+      </div>
+      <div id="detail">
+        <p class="muted">학생을 선택하면 학습 기록이 여기에 표시됩니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <details class="card">
+    <summary style="cursor:pointer;color:var(--gold);font-size:13px;font-weight:700">⚙ 아카이브 설정 안내 (1회)</summary>
+    <ol style="margin:12px 0 0 18px;font-size:12.5px;color:var(--soft);line-height:1.9">
+      <li>Notion → <b>Settings → Connections → Develop or manage integrations</b> → <b>New integration</b>(Internal) 생성 → <code>secret_...</code> 토큰 복사</li>
+      <li><a href="https://app.notion.com/p/39ba4120ea2481049c93d3238c564d9d" target="_blank" style="color:#e6c67a">Ray English 학생 아카이브</a> 페이지 우상단 <b>⋯ → Connections → (통합 이름)</b>으로 공유</li>
+      <li>Cloudflare 대시보드 → Workers → ray-proxy → <b>Settings → Variables → Add secret</b>: 이름 <code>NOTION_TOKEN</code>, 값 = 토큰 → 저장 후 <b>Deploy</b></li>
+      <li>이 페이지 새로고침 → 아카이브가 활성화됩니다.</li>
+    </ol>
+    <p class="note">토큰은 CF 워커 시크릿에만 저장됩니다(브라우저·공개코드에 절대 안 들어감). DB ID는 코드에 있으나 토큰 없이는 접근 불가.</p>
+  </details>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ── 설정 상수 ── */
+var RAY_PROXY = "https://ray-proxy.gen1103.workers.dev";
+var DB_STUDENT = "686388722f5f48409131b62740df681f";   // 학생 마스터
+var DB_RECORD  = "39498912df2a4fa791ef7669be6859c6";   // 학습 기록
+var TYPES = ["어법","어휘","빈칸","순서","삽입","함의","요약","서술형"];
+
+/* ── PIN 게이트(로컬 전용, 서버 인증 아님 — 화면 가림용) ── */
+function unlock(){
+  var v=document.getElementById("pin").value.trim(); if(!v) return;
+  var saved=localStorage.getItem("ray_studio_pin");
+  if(!saved){ localStorage.setItem("ray_studio_pin", btoa(v)); enter(); }
+  else if(btoa(v)===saved){ enter(); }
+  else { toast("비밀번호가 다릅니다","err"); }
+}
+function enter(){ sessionStorage.setItem("ray_studio_open","1"); document.getElementById("gate").style.display="none"; document.getElementById("app").style.display="block"; boot(); }
+function lock(){ sessionStorage.removeItem("ray_studio_open"); location.reload(); }
+document.getElementById("pin").addEventListener("keydown",function(e){if(e.key==="Enter")unlock();});
+if(sessionStorage.getItem("ray_studio_open")==="1"){ enter(); }
+
+/* ── Notion 호출(워커 경유) ── */
+async function notion(method, path, body){
+  var r = await fetch(RAY_PROXY, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({notion:{method:method, path:path, body:body}})});
+  var d = await r.json().catch(function(){return {}});
+  if(!r.ok || d.error || d.object==="error"){ throw new Error((d.error||d.message||("HTTP "+r.status))); }
+  return d;
+}
+/* Notion 속성 파서 */
+function txt(p){ if(!p)return""; if(p.title)return(p.title[0]||{}).plain_text||""; if(p.rich_text)return(p.rich_text[0]||{}).plain_text||""; if(p.select)return(p.select||{}).name||""; if(p.number!=null)return String(p.number); if(p.date)return(p.date||{}).start||""; if(p.phone_number)return p.phone_number||""; if(p.multi_select)return p.multi_select.map(function(x){return x.name}).join(","); return ""; }
+
+var STUDENTS=[], SEL=null;
+
+async function loadStudents(){
+  var stat=document.getElementById("archStat"); stat.textContent="불러오는 중…";
+  try{
+    var d=await notion("POST","databases/"+DB_STUDENT+"/query",{page_size:100});
+    STUDENTS=(d.results||[]).map(function(p){var P=p.properties||{};return{id:p.id, name:txt(P["이름"]), school:txt(P["학교"]), cls:txt(P["반"]), level:txt(P["수준"]), grade:txt(P["학년"]), goal:txt(P["목표"])};});
+    document.getElementById("setup").classList.remove("show");
+    fillFilters(); renderStudents();
+    stat.textContent=STUDENTS.length+"명";
+  }catch(e){
+    stat.textContent="";
+    document.getElementById("setup").classList.add("show");
+    document.getElementById("stuBody").innerHTML='<tr><td colspan="3" class="muted">아카이브 미연결 — 아래 설정 안내를 따라주세요. ('+String(e.message).slice(0,60)+')</td></tr>';
+  }
+}
+function fillFilters(){
+  var sc={}, cl={};
+  STUDENTS.forEach(function(s){if(s.school)sc[s.school]=1; if(s.cls)cl[s.cls]=1;});
+  function opt(sel,items,label){var el=document.getElementById(sel);var cur=el.value;el.innerHTML='<option value="">'+label+'</option>'+Object.keys(items).sort().map(function(k){return'<option>'+k+'</option>'}).join('');el.value=cur;}
+  opt("fSchool",sc,"전체 학교"); opt("fClass",cl,"전체 반");
+}
+function renderStudents(){
+  var fs=document.getElementById("fSchool").value, fc=document.getElementById("fClass").value, fl=document.getElementById("fLevel").value;
+  var rows=STUDENTS.filter(function(s){return(!fs||s.school===fs)&&(!fc||s.cls===fc)&&(!fl||s.level===fl);});
+  var b=document.getElementById("stuBody");
+  if(!rows.length){b.innerHTML='<tr><td colspan="3" class="muted">해당 학생 없음</td></tr>';return;}
+  b.innerHTML=rows.map(function(s){return'<tr class="stu'+(SEL&&SEL.id===s.id?' sel':'')+'" onclick="selectStudent(\''+s.id+'\')"><td><b>'+esc(s.name)+'</b> <span class="muted">'+esc(s.grade||"")+'</span></td><td>'+esc(s.school)+' '+esc(s.cls)+'</td><td>'+(s.level?'<span class="chip lv-'+s.level+'">'+s.level+'</span>':'')+'</td></tr>';}).join('');
+}
+function selectStudent(id){ SEL=STUDENTS.filter(function(s){return s.id===id})[0]; renderStudents(); loadRecords(); }
+
+async function loadRecords(){
+  var d=document.getElementById("detail");
+  d.innerHTML='<p class="muted">기록 불러오는 중…</p>';
+  var s=SEL;
+  try{
+    var res=await notion("POST","databases/"+DB_RECORD+"/query",{page_size:50, filter:{property:"학생", relation:{contains:s.id}}, sorts:[{property:"날짜",direction:"descending"}]});
+    var recs=(res.results||[]).map(function(p){var P=p.properties||{};return{name:txt(P["기록명"]), date:txt(P["날짜"]), set:txt(P["세트/회차"]), kind:txt(P["구분"]), score:txt(P["점수"]), wrong:(P["오답유형"]&&P["오답유형"].multi_select||[]).map(function(x){return x.name}), fb:txt(P["피드백"])};});
+    d.innerHTML=
+      '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><b style="font-size:15px">'+esc(s.name)+'</b>'+
+      (s.level?'<span class="chip lv-'+s.level+'">'+s.level+'</span>':'')+
+      '<span class="muted">'+esc(s.school)+' '+esc(s.cls)+(s.goal?' · '+esc(s.goal):'')+'</span>'+
+      '<button class="btn mint" style="margin-left:auto;padding:5px 10px" onclick="toggleRec()">＋ 기록</button></div>'+
+      recForm()+
+      (recs.length?recs.map(recCard).join(''):'<p class="muted">아직 기록이 없습니다.</p>');
+  }catch(e){ d.innerHTML='<p class="muted">기록 로드 실패: '+esc(String(e.message).slice(0,80))+'</p>'; }
+}
+function recCard(r){
+  return '<div class="card" style="background:var(--card2);margin:8px 0;padding:11px 13px">'+
+    '<div style="display:flex;gap:8px;align-items:baseline"><b>'+esc(r.name||r.set||"기록")+'</b>'+
+    (r.score!==""?'<span class="chip lv-중" style="background:#16283a;color:#8fc7f0">'+esc(r.score)+'점</span>':'')+
+    '<span class="muted" style="margin-left:auto">'+esc(r.date||"")+(r.kind?' · '+esc(r.kind):'')+'</span></div>'+
+    (r.wrong&&r.wrong.length?'<div style="margin:5px 0">'+r.wrong.map(function(w){return'<span class="tag">'+esc(w)+'</span>'}).join('')+'</div>':'')+
+    (r.fb?'<div class="muted" style="color:#b9c0d0">'+esc(r.fb)+'</div>':'')+'</div>';
+}
+function recForm(){
+  return '<div id="recForm" class="card" style="display:none;background:#12202b;border-color:var(--mint);margin:8px 0"><div class="frm">'+
+    '<div class="row"><input id="rName" placeholder="기록명 (예: 3과 변형세트)"><input id="rSet" placeholder="세트/회차"></div>'+
+    '<div class="row"><input id="rDate" type="date"><select id="rKind"><option value="">구분</option><option>수업</option><option>과제</option><option>모의고사</option><option>중간</option><option>기말</option></select><input id="rScore" type="number" placeholder="점수"></div>'+
+    '<div class="row" style="flex-wrap:wrap;gap:4px" id="rWrong">'+TYPES.map(function(t){return'<label class="tag" style="cursor:pointer;padding:3px 8px"><input type="checkbox" value="'+t+'" style="margin-right:3px">'+t+'</label>'}).join('')+'</div>'+
+    '<textarea id="rFb" placeholder="피드백 (오답 진단·다음 처방)"></textarea>'+
+    '<div class="row" style="flex:0"><button class="btn mint" onclick="addRecord()">기록 저장</button></div></div></div>';
+}
+function toggleRec(){var f=document.getElementById("recForm");f.style.display=f.style.display==="none"?"block":"none";}
+function toggleAdd(){var a=document.getElementById("addStu");a.style.display=a.style.display==="none"?"block":"none";}
+
+function P_title(v){return{title:[{text:{content:v||""}}]};}
+function P_text(v){return{rich_text:v?[{text:{content:v}}]:[]};}
+function P_sel(v){return v?{select:{name:v}}:{select:null};}
+function P_num(v){return v!==""&&v!=null?{number:Number(v)}:{number:null};}
+
+async function addStudent(){
+  var name=val("nName"); if(!name){toast("이름을 입력하세요","err");return;}
+  var props={"이름":P_title(name),"학교":P_sel(val("nSchool")),"반":P_text(val("nClass")),"수준":P_sel(val("nLevel")),"학년":P_sel(val("nGrade")),"목표":P_text(val("nGoal"))};
+  try{ await notion("POST","pages",{parent:{database_id:DB_STUDENT},properties:props}); toast("학생 추가됨"); ["nName","nSchool","nClass","nGoal"].forEach(function(i){document.getElementById(i).value="";}); toggleAdd(); loadStudents(); }
+  catch(e){ toast("실패: "+String(e.message).slice(0,50),"err"); }
+}
+async function addRecord(){
+  if(!SEL)return;
+  var wrong=[].slice.call(document.querySelectorAll("#rWrong input:checked")).map(function(c){return{name:c.value};});
+  var props={"기록명":P_title(val("rName")||val("rSet")||"기록"),"학생":{relation:[{id:SEL.id}]},"세트/회차":P_text(val("rSet")),"구분":P_sel(val("rKind")),"점수":P_num(val("rScore")),"오답유형":{multi_select:wrong},"피드백":P_text(val("rFb"))};
+  var dt=val("rDate"); if(dt)props["날짜"]={date:{start:dt}};
+  try{ await notion("POST","pages",{parent:{database_id:DB_RECORD},properties:props}); toast("기록 저장됨"); loadRecords(); }
+  catch(e){ toast("실패: "+String(e.message).slice(0,50),"err"); }
+}
+
+function val(id){return document.getElementById(id).value.trim();}
+function esc(s){return String(s==null?"":s).replace(/[&<>]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;"}[c];});}
+function toast(m,cls){var t=document.getElementById("toast");t.textContent=m;t.className="toast on"+(cls==="err"?" err":"");setTimeout(function(){t.className="toast";},2200);}
+function boot(){ loadStudents(); }
+</script>
+</body>
+</html>

@@ -3,238 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>변형문제 생성기 (웹)</title>
+<title>이인혁 영어 · 동화고 내신 시스템</title>
+<meta name="description" content="AI 출제 시스템으로 준비하는 동화고 내신 — 이인혁 영어(Ray English)">
 <style>
-  :root{--accent:#0f766e;--accent2:#b45309;--ink:#16201d;--soft:#eef5f2;--line:#cbd5cf;}
-  *{box-sizing:border-box;}
-  body{margin:0;background:#f3f6f8;color:var(--ink);font-family:"Malgun Gothic","맑은 고딕",system-ui,sans-serif;}
-  header{background:var(--accent);color:#fff;padding:14px 20px;}
-  header h1{margin:0;font-size:19px;} header .sub{font-size:12px;opacity:.9;margin-top:3px;}
-  .wrap{max-width:1000px;margin:0 auto;padding:16px;}
-  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,.05);}
-  .card h2{margin:0 0 10px;font-size:14px;color:var(--accent);}
-  label{font-size:13px;font-weight:700;}
-  textarea{width:100%;min-height:90px;margin-top:6px;font-family:Consolas,monospace;font-size:12.5px;border:1px solid #b6c0d8;border-radius:7px;padding:9px;resize:vertical;}
-  .pass{margin-bottom:8px;}
-  .types{display:grid;grid-template-columns:repeat(4,1fr);gap:5px 10px;}
-  .types label{font-weight:400;font-size:12.5px;display:flex;align-items:center;gap:5px;}
-  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:8px;}
-  input[type=text]{padding:6px;border:1px solid #b6c0d8;border-radius:5px;font-size:13px;}
-  select{padding:6px;border:1px solid #b6c0d8;border-radius:5px;}
-  button{background:var(--accent);color:#fff;border:0;border-radius:7px;padding:9px 14px;font-weight:800;font-size:13px;cursor:pointer;}
-  button.alt{background:var(--accent2);} button.ghost{background:#fff;color:var(--accent);border:1.4px solid var(--accent);}
-  .hint{font-size:11.5px;color:#5f6b66;background:#f3f7f5;border-left:3px solid var(--accent);padding:7px 10px;border-radius:5px;margin-top:8px;line-height:1.6;}
-  .q{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:10px;break-inside:avoid;}
-  .q .head{font-weight:800;color:#14201d;background:var(--soft);margin:-10px -12px 8px;padding:6px 12px;border-bottom:1px solid var(--line);border-radius:8px 8px 0 0;font-size:13px;}
-  .q .chip{float:right;font-size:11px;font-weight:700;color:#fff;background:var(--accent2);border-radius:10px;padding:1px 8px;}
-  .q .inst{font-weight:700;font-size:13px;margin-bottom:6px;}
-  .q .body{font-size:13px;line-height:1.7;white-space:pre-wrap;}
-  .q .ans{margin-top:7px;font-size:12.5px;color:#0a5;background:#eafaf3;border-radius:5px;padding:5px 9px;}
-  .q .gl{margin-top:5px;font-size:11.5px;color:#666;}
-  u{text-underline-offset:2px;}
-  #output.two-col{column-count:2;column-gap:9mm;column-rule:0.6px solid var(--line);}
-  #output.two-col .q{break-inside:avoid;-webkit-column-break-inside:avoid;page-break-inside:avoid;font-size:11.5px;}
-  #output.two-col .q .body{font-size:11px;line-height:1.55;}
-  #output.two-col .q.long{column-span:all;break-inside:auto;-webkit-column-break-inside:auto;}
-  #output.two-col h3{column-span:all;}
-  .q .body, .q .ans{overflow-wrap:break-word;word-break:break-word;}
-  @page{size:A4;margin:12mm;}
-  .ex{font-size:12px;line-height:1.7;}
-  .ex b{color:var(--accent);}
-  .status{font-size:12.5px;font-weight:700;margin-top:8px;min-height:18px;}
-  .bar{height:8px;background:#e3eae7;border-radius:5px;overflow:hidden;margin-top:8px;}
-  .bar > div{height:100%;width:0;background:var(--accent);transition:width .2s;}
-  @media print{header,.noprint{display:none!important;}.wrap{max-width:100%;}.card{box-shadow:none;border:0;}}
+  :root{--paper:#FAF8F3;--ink:#1A2030;--soft:#5A6478;--line:#E6E0D4;--navy:#16233F;--navy2:#20324F;
+    --gold:#B4842A;--goldl:#C8A96A;--mint:#2E9E82;--card:#fff;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.sub,.lead,.card .t{word-break:keep-all}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+  .eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:9px}
+  .eyebrow::before{content:"";width:24px;height:2px;background:var(--gold)}
+  nav{position:sticky;top:0;background:rgba(250,248,243,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  nav .wrap{display:flex;align-items:center;gap:12px;padding:12px 22px}
+  .mk{width:36px;height:36px;border-radius:10px;background:linear-gradient(150deg,var(--goldl),var(--gold));display:grid;place-items:center;color:var(--navy);font-weight:900;font-family:Georgia,serif;font-size:17px}
+  nav b{font-size:15px}nav b i{color:var(--gold);font-style:normal}
+  nav .cta{margin-left:auto;background:var(--navy);color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:8px 16px;border-radius:9px}
+  .hero{background:radial-gradient(900px 500px at 82% -10%,rgba(200,169,106,.16),transparent 60%),var(--navy);color:#fff;padding:64px 0 72px}
+  .hero h1{font-size:clamp(1.9rem,5.2vw,3.4rem);font-weight:800;line-height:1.16;letter-spacing:-.02em;margin:18px 0;text-wrap:balance}
+  .hero h1 .hl{color:var(--goldl)}
+  .hero .sub{font-size:clamp(1rem,2.2vw,1.35rem);color:#B9C2D6;max-width:36ch}
+  .hero .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+  .btn{text-decoration:none;font-weight:800;font-size:15px;padding:13px 24px;border-radius:11px}
+  .btn.gold{background:linear-gradient(180deg,var(--goldl),var(--gold));color:var(--navy)}
+  .btn.line{border:1px solid rgba(255,255,255,.3);color:#fff}
+  section{padding:56px 0}
+  section h2{font-size:clamp(1.5rem,3.6vw,2.2rem);font-weight:800;color:var(--navy);margin:14px 0 8px;text-wrap:balance}
+  .lead{font-size:1.05rem;color:var(--soft);max-width:56ch}
+  .grid{display:grid;gap:16px;margin-top:28px}
+  .g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:720px){.g3,.g4{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 2px 14px rgba(20,25,40,.05)}
+  .card .n{font-size:1.9rem;font-weight:800;color:var(--goldl);line-height:1;font-variant-numeric:tabular-nums}
+  .card .t{font-size:1.2rem;font-weight:800;color:var(--navy);margin:10px 0 6px}
+  .card .d{color:var(--soft);font-size:.98rem}
+  .off{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--mint);border-radius:12px;padding:18px}
+  .off .em{font-size:1.7rem}.off .ot{font-weight:800;color:var(--navy)}.off .od{font-size:.9rem;color:var(--soft);margin-top:3px}
+  .dark{background:var(--navy);color:#fff}
+  .dark h2{color:#fff}.dark .fact{border-color:rgba(255,255,255,.14)}
+  .facts{margin-top:24px;display:flex;flex-direction:column;gap:0}
+  .fact{display:flex;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line);font-size:1.02rem}
+  .fact .fk{flex:0 0 130px;font-weight:800;color:var(--goldl)}
+  .dark .fact .fv{color:#E7ECF6}
+  .note{font-size:.85rem;color:var(--soft);margin-top:16px}
+  .final{text-align:center;padding:64px 0}
+  .final h2{margin-bottom:10px}
+  .pills{display:inline-flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:22px}
+  .pill{background:var(--navy);color:#fff;border-radius:999px;padding:12px 22px;font-size:1.05rem;font-weight:800;display:flex;gap:10px;align-items:center}
+  .pill .pk{color:var(--goldl);font-size:.8em;letter-spacing:.08em}
+  footer{border-top:1px solid var(--line);padding:22px;text-align:center;font-size:.82rem;color:var(--soft)}
 </style>
 </head>
 <body>
-<div style="position:sticky;top:0;z-index:9999;background:#0f766e;color:#fff;text-align:center;padding:9px;font-family:sans-serif;font-size:14px">🧠 NEW: <a href="ai_maker.html" style="color:#fff;font-weight:bold;text-decoration:underline">AI 고품질 제작기 (무료 API 뉴럴 메시)</a> — 훨씬 정교한 문항 생성</div>
-<header>
-  <h1>변형문제 생성기 <span style="font-size:12px;font-weight:400;">· 웹버전</span></h1>
-  <div class="sub">어떤 영어 지문이든 → 17유형 변형문제. 무료 API(무료사전·Datamuse)로 예문·어휘 보강. 키 불필요.</div>
-</header>
-<div class="wrap">
 
-  <div class="card noprint">
-    <h2>1. 지문 입력</h2>
-    <div id="passages"></div>
-    <div class="row">
-      <button class="ghost" onclick="addPassage()">+ 지문 추가</button>
-      <button class="ghost" onclick="delPassage()">− 마지막 삭제</button>
-      <span class="hint" style="margin:0;flex:1;">지문당 15단어 이상. 무관한 문장 유형은 지문 2개 이상일 때 가장 잘 만들어집니다.</span>
-    </div>
+<nav><div class="wrap">
+  <div class="mk">R</div><b>이인혁 <i>영어</i></b>
+  <a class="cta" href="#contact">상담 문의</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="eyebrow" style="color:var(--goldl)">동화고 1학년 내신 대비 · Ray English</span>
+  <h1>학교가 낼 문제를,<br><span class="hl">시스템</span>으로 미리 다 풀어봅니다</h1>
+  <p class="sub">AI 출제 시스템이 학교 유형을 무한 변형해, 자녀가 시험 전에 모든 각도를 겪게 합니다.</p>
+  <div class="row">
+    <a class="btn gold" href="#how">어떻게 준비하나요</a>
+    <a class="btn line" href="#contact">여름특강 문의</a>
   </div>
+</div></header>
 
-  <div class="card noprint">
-    <h2>2. 출제 유형</h2>
-    <div class="types" id="types"></div>
-    <div class="row">
-      <button class="ghost" onclick="setAll(true)">전체 선택</button>
-      <button class="ghost" onclick="setAll(false)">전체 해제</button>
-    </div>
+<section id="how"><div class="wrap">
+  <span class="eyebrow">우리의 방법</span>
+  <h2>선생님의 출제 뇌를 시스템으로</h2>
+  <p class="lead">내신은 '학교 문제'를 얼마나 겪었느냐로 갈립니다. 한 지문에서 전 유형을 무한 반복하고, 여러 단계로 검수합니다.</p>
+  <div class="grid g3">
+    <div class="card"><div class="n">01</div><div class="t">학교 기출·교재 분석</div><div class="d">동화고 교재(YBM·Supreme)와 출제 스타일을 먼저 읽습니다.</div></div>
+    <div class="card"><div class="n">02</div><div class="t">AI 무한 변형 출제</div><div class="d">같은 지문으로 어법·어휘·빈칸·서술형까지 전 유형을 생성합니다.</div></div>
+    <div class="card"><div class="n">03</div><div class="t">다중 검수·정답 검증</div><div class="d">정답을 코드가 검증하고, 검수 단계를 통과한 문항만 씁니다.</div></div>
   </div>
+</div></section>
 
-  <div class="card noprint">
-    <h2>3. 설정 · 생성</h2>
-    <div class="row">
-      <label>제목 <input type="text" id="title" value="변형문제" size="20"></label>
-      <label>해설/정답
-        <select id="showans"><option value="1">정답·해설 포함</option><option value="0">숨김</option></select>
-      </label>
-      <label>보기
-        <select id="layout" onchange="applyLayout()"><option value="1">1단</option><option value="2">2단(시험지)</option></select>
-      </label>
-      <label><input type="checkbox" id="useapi" checked> 무료 API로 예문·어휘 보강(온라인)</label>
-    </div>
-    <div class="row">
-      <button onclick="generate()">변형문제 생성</button>
-      <button class="alt" onclick="downloadDoc()">Word(.doc) 다운로드</button>
-      <button class="ghost" onclick="window.print()">인쇄 / PDF</button>
-    </div>
-    <div class="status" id="status"></div>
-    <div class="bar"><div id="prog"></div></div>
-    <div class="hint">API 보강은 인터넷이 필요합니다. 꺼두거나 오프라인이면 내장 데이터로 동작합니다(품질 약간 낮아짐). 정답·해설에는 유형별 출제 가이드라인이 포함됩니다.</div>
+<section style="background:#fff"><div class="wrap">
+  <span class="eyebrow">자녀가 받는 자료</span>
+  <h2>문제 한 장이 아니라, 학습 전 과정</h2>
+  <div class="grid g4">
+    <div class="off"><div class="em">📝</div><div><div class="ot">실전동형 모의고사</div><div class="od">학교 시험 형태 그대로의 실전 세트</div></div></div>
+    <div class="off"><div class="em">🔑</div><div><div class="ot">유형별 문제지 + 해설</div><div class="od">틀린 이유·풀이 절차까지 짚는 해설</div></div></div>
+    <div class="off"><div class="em">🔍</div><div><div class="ot">문장 분석지</div><div class="od">문장별 해석·구문·출제 포인트</div></div></div>
+    <div class="off"><div class="em">📘</div><div><div class="ot">과정 워크북</div><div class="od">정독→어휘→요지→풀이절차→오답복기</div></div></div>
   </div>
+</div></section>
 
-  <div class="card" id="exwrap" style="display:none;">
-    <h2 class="noprint">예문 자료 (무료 사전 API)</h2>
-    <div class="ex" id="examples"></div>
+<section class="dark"><div class="wrap">
+  <span class="eyebrow" style="color:var(--goldl)">동화고 맞춤</span>
+  <h2>다른 학교가 아니라, 동화고에 맞춥니다</h2>
+  <div class="facts">
+    <div class="fact"><span class="fk">교재 정합</span><span class="fv">공통영어2 · YBM(김은형) · Supreme 유형독해 기준</span></div>
+    <div class="fact"><span class="fk">출제 스타일</span><span class="fv">유의어 치환 변형 · 조건 영작 · 외부 연계지문 · 서술형</span></div>
+    <div class="fact"><span class="fk">학생 관리</span><span class="fv">반·수준별로 오답·성장을 기록해 맞춤 피드백</span></div>
   </div>
+  <p class="note" style="color:#8B97AE">완벽을 주장하지 않습니다 — 매 문항을 검수하고, 발견된 오류는 즉시 고쳐 시스템을 계속 개선합니다.</p>
+</div></section>
 
-  <div class="card" id="outwrap" style="display:none;">
-    <h2 class="noprint">생성 결과</h2>
-    <div id="output"></div>
+<section class="final" id="contact"><div class="wrap">
+  <span class="eyebrow">여름특강 · 상담 문의</span>
+  <h2>기말 대비, 지금 시작합니다</h2>
+  <p class="lead" style="margin:0 auto">대상 동화고 1학년 · 기간 7/24~8/17 · 학교 유형 반복과 서술형·조건영작 집중</p>
+  <div class="pills">
+    <div class="pill"><span class="pk">전화</span> 031-551-1131</div>
+    <div class="pill"><span class="pk">Threads</span> @english_ray_t</div>
   </div>
-</div>
+</div></section>
 
-<script src="data.js"></script>
-<script src="engine.js"></script>
-<script>
-const TYPES = ENGINE.ALL_TYPES;
-const DEFAULT_ON = {"빈칸 추론":1,"어법 추론":1,"어휘 추론":1,"순서 추론":1,"무관한 문장":1,"요약문 완성하기":1,"주제 추론":1,"내용 불일치":1,"함의 추론":1};
-const DIFF = {"어법 추론":["상",4],"어휘 추론":["상",4],"빈칸 추론":["상",4],"순서 추론":["킬러",4],"문장 삽입":["킬러",4],"무관한 문장":["상",4],"지칭 추론":["중",3],"내용 일치":["중",3],"내용 불일치":["중",3],"주제 추론":["중",3],"제목 추론":["중",3],"요약문 완성하기":["상",4],"심경 추론":["중",3],"목적 추론":["중",3],"주장 추론":["상",4],"함의 추론":["상",4],"요지 추론":["상",4]};
-let lastItems = [];
-
-const PH = "여기에 영어 지문을 붙여넣으세요. 여러 문단도 그대로 입력하면 됩니다.";
-function addPassage(){
-  const n = document.querySelectorAll(".pass").length + 1;
-  const d = document.createElement("div"); d.className="pass";
-  d.innerHTML = '<label>지문 '+n+'</label><textarea placeholder="'+PH+'"></textarea>';
-  document.getElementById("passages").appendChild(d);
-}
-function delPassage(){ const ps=document.querySelectorAll(".pass"); if(ps.length>1) ps[ps.length-1].remove(); }
-for(let i=0;i<3;i++) addPassage();
-
-const tBox = document.getElementById("types");
-TYPES.forEach(t=>{
-  const l=document.createElement("label");
-  l.innerHTML='<input type="checkbox" value="'+t+'" '+(DEFAULT_ON[t]?"checked":"")+'> '+t;
-  tBox.appendChild(l);
-});
-function setAll(v){ document.querySelectorAll('#types input').forEach(c=>c.checked=v); }
-
-function collect(){
-  const passages=[];
-  document.querySelectorAll(".pass textarea").forEach((t,i)=>{
-    const s=t.value.trim(); if(s && s.split(/\s+/).length>=15) passages.push({id:"P"+(i+1), text:s});
-  });
-  const types=[...document.querySelectorAll('#types input:checked')].map(c=>c.value);
-  return {passages, types};
-}
-function setStatus(s){ document.getElementById("status").textContent=s; }
-function setProg(p){ document.getElementById("prog").style.width=(p*100)+"%"; }
-
-// ---------- 무료 API ----------
-async function datamuse(word, rel){
-  try{
-    const r=await fetch("https://api.datamuse.com/words?rel_"+rel+"="+encodeURIComponent(word)+"&max=8");
-    const j=await r.json();
-    return j.map(x=>x.word).filter(w=>/^[a-z]+$/.test(w) && w.length>=4);
-  }catch(e){ return []; }
-}
-async function dictLookup(word){
-  try{
-    const r=await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/"+encodeURIComponent(word));
-    if(!r.ok) return null;
-    const j=await r.json(); const ex=[]; let def=null;
-    (j[0].meanings||[]).forEach(m=>(m.definitions||[]).forEach(d=>{ if(!def) def=d.definition; if(d.example) ex.push(d.example); }));
-    return {def, examples:ex.slice(0,2)};
-  }catch(e){ return null; }
-}
-async function enrich(passages){
-  const docs = ENGINE._docsFor(passages); ENGINE.buildGlobal(docs);
-  const words=new Set(); docs.forEach(d=>ENGINE.keywords(d,8).forEach(w=>words.add(w)));
-  const list=[...words]; const E={ant:{},syn:{},examples:{}}; let done=0;
-  for(const w of list){
-    const [ant,syn,dict]=await Promise.all([datamuse(w,"ant"),datamuse(w,"syn"),dictLookup(w)]);
-    if(ant.length) E.ant[w]=ant; if(syn.length) E.syn[w]=syn;
-    if(dict && (dict.examples.length||dict.def)) E.examples[w]=dict;
-    done++; setProg(done/list.length); setStatus("API 보강 중… "+done+"/"+list.length+" 단어");
-  }
-  ENGINE.setEnrich(E); return E;
-}
-
-function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
-function fmt(line){ return esc(line).replace(/&lt;&lt;(.*?)&gt;&gt;/g,"<u>$1</u>").replace(/\n/g,"<br>"); }
-
-function render(items, showAns){
-  let h="";
-  let curP=0;
-  items.forEach(q=>{
-    if(q.passageNo!==curP){ curP=q.passageNo; h+='<h3 style="color:#0f766e;border-bottom:2px solid #cbd5cf;padding-bottom:3px;">［지문 '+curP+'］</h3>'; }
-    const d=DIFF[q.type]||["중",3];
-    const blen=Math.max.apply(null,q.problem.map(function(l){return l.length;}));  // 긴 지문 문항은 2단을 가로질러 전체폭
-    h+='<div class="'+(blen>1300?"q long":"q")+'"><div class="head">'+q.no+'. '+esc(q.type)+'<span class="chip">'+d[0]+'·'+d[1]+'점</span></div>';
-    h+='<div class="inst">지시문  '+esc(q.instruction)+'</div>';
-    h+='<div class="body">'+q.problem.map(fmt).join("<br>")+'</div>';
-    if(showAns){
-      h+='<div class="ans">정답  '+fmt(q.answer)+(q.explain?'　|　해설  '+esc(q.explain):'')+'</div>';
-      const g=q.guideline||{};
-      const gl=["의도","변형","오답","유의"].filter(k=>g[k]&&g[k]!=="—").map(k=>(k==="의도"?"출제의도":k)+": "+g[k]).join(" / ");
-      if(gl) h+='<div class="gl">▸ '+esc(gl)+'</div>';
-    }
-    h+='</div>';
-  });
-  return h;
-}
-function renderExamples(E){
-  const ks=Object.keys(E.examples||{}); if(!ks.length){ document.getElementById("exwrap").style.display="none"; return; }
-  let h=""; ks.forEach(w=>{ const e=E.examples[w]; h+='<div style="margin-bottom:6px;"><b>'+esc(w)+'</b>'+(e.def?' — '+esc(e.def):'')+(e.examples&&e.examples.length?'<br><span style="color:#555;">예문: '+e.examples.map(esc).join(" / ")+'</span>':'')+'</div>'; });
-  document.getElementById("examples").innerHTML=h; document.getElementById("exwrap").style.display="";
-}
-
-function applyLayout(){
-  const o=document.getElementById("output");
-  o.className = document.getElementById("layout").value==="2" ? "two-col" : "";
-}
-async function generate(){
-  const {passages,types}=collect();
-  if(!passages.length){ setStatus("유효한 지문이 없습니다(지문당 15단어 이상)."); return; }
-  if(!types.length){ setStatus("출제 유형을 1개 이상 선택하세요."); return; }
-  setProg(0); setStatus("생성 준비 중…");
-  let E={ant:{},syn:{},examples:{}};
-  if(document.getElementById("useapi").checked){
-    try{ E=await enrich(passages); }catch(e){ ENGINE.setEnrich({ant:{},syn:{},examples:{}}); }
-  } else ENGINE.setEnrich({ant:{},syn:{},examples:{}});
-  renderExamples(E);
-  const showAns=document.getElementById("showans").value==="1";
-  const r=ENGINE.makeQuestions(passages, types, {});
-  lastItems=r.items;
-  document.getElementById("output").innerHTML=render(r.items, showAns);
-  applyLayout();
-  document.getElementById("outwrap").style.display="";
-  setProg(1); setStatus("완료: "+r.items.length+"문항 생성 (생략 "+r.skipped.length+"). "+(Object.keys(E.examples).length?"예문 "+Object.keys(E.examples).length+"개 보강.":""));
-}
-
-function downloadDoc(){
-  if(!lastItems.length){ setStatus("먼저 [변형문제 생성]을 누르세요."); return; }
-  const showAns=document.getElementById("showans").value==="1";
-  const title=document.getElementById("title").value||"변형문제";
-  const body='<h1 style="text-align:center;">'+esc(title)+'</h1>'+render(lastItems, showAns);
-  const html='<html xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><style>body{font-family:Malgun Gothic;} .q{border:1px solid #ccc;padding:8px;margin-bottom:8px;} u{text-decoration:underline;}</style></head><body>'+body+'</body></html>';
-  const blob=new Blob(['﻿'+html],{type:"application/msword"});
-  const a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=title+".doc"; document.body.appendChild(a); a.click(); a.remove();
-}
-</script>
+<footer>이인혁 영어 · Ray English · 남양주 다산 &nbsp;|&nbsp; 이 페이지는 이인혁 영어가 제공하는 학습 안내입니다.</footer>
 </body>
 </html>
