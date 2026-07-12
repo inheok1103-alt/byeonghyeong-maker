@@ -1,6 +1,78 @@
 {
- "updated": "2026-07-12T14:01:24.445Z",
+ "updated": "2026-07-12T15:19:14.506Z",
  "samples": [
+  {
+   "ts": "2026-07-12T15:17:43.902Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Mark doesn't have his suits cleaned at Fastclean.\n② We must have another key made.\n③ C Get something done We can also use get something done.\n④ Where did you have your hair cut?\n⑤ Note that we can use the perfect or the continuous (have had, are having).\n⑥ Is Melanie having a new cooker installed?\n⑦ We didn't have new windows put in because it was too expensive.\n⑧ Do you have your car serviced regularly?\n⑨ In negatives and questions in simple tenses, we use a form of do.",
+    "choices": [
+     "⑤-⑥-⑨-①-⑦-⑧-④-③-②",
+     "⑥-⑤-⑨-①-④-⑦-⑧-②-③",
+     "⑥-④-⑧-⑤-⑨-②-⑦-①-③",
+     "⑥-⑤-①-⑨-⑦-⑧-④-③-②",
+     "⑥-⑤-⑨-①-⑦-⑧-④-③-②"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ⑥-⑤-⑨-①-⑦-⑧-④-③-②. 흐름: ⑥ → ⑤ → ⑨ → ① → ⑦ → ⑧ → ④ → ③ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ⑤-⑥-⑨-①-④-⑦-⑧-②-③에서 ⑤가 먼저 오는 것은 맞지만, ⑨가 ①보다 먼저 오는 것은 지문의 흐름(⑤는 설명, ⑨는 규칙)을 무시한 오독. 지문 ⑨는 '단순시제에서 do 를 쓴다'는 규칙 설명으로, ⑤(설명)와는 분리되어야 함. → 처방: 지문의 구조를 먼저 파악하자. ⑤는 'have something done'의 설명, ⑨는 '단순시제 규칙'으로 분리되어 있음을 기억하고, 설명 → 규칙 → 예시 순서로 배치하기.\n② 진단: ⑥-④-⑧-⑤-⑨-②-⑦-①-③에서 ④가 ⑧ 다음에 오는 것은 지문의 예시 순서(④는 '머리 자르기', ⑧은 '자동차 정비')를 혼동한 것. 지문은 'have something done'의 예시로 머리, 자동차, 창문 등을 나열하는데, 순서가 뒤섞임. → 처방: 'have something done'의 예시 문장은 지문의 순서(④ → ⑦ → ⑧)를 따라 배치하고, 설명(⑤)과 규칙(⑨)은 따로 분리하여 기억하기.\n③ 진단: ⑥-⑤-①-⑨-⑦-⑧-④-③-②에서 ①이 ⑤ 다음에 오는 것은 지문의 흐름을 무시한 오독. 지문 ①은 'Mark doesn't have his suits cleaned at Fastclean.'으로, ⑤(설명)와 ⑨(규칙) 사이에 배치되어서는 안 됨. 설명과 규칙은 예시보다 먼저 와야 함. → 처방: 지문의 'have something done' 설명(⑤) → 규칙(⑨) → 예시(①, ④, ⑥, ⑦, ⑧) 순서로 배치하고, ③은 마지막에 오는 보조 설명임을 기억하기.\n④ 진단: ⑥-⑤-⑨-①-④-⑦-⑧-②-③에서 ②가 ⑧ 다음에 오는 것은 지문의 흐름을 무시한 오독. 지문 ②는 'We must have another key made.'로, ③('get something done' 설명)과는 밀접한 관련이 있지만, 예시(①, ④, ⑥, ⑦, ⑧)보다 먼저 배치되어서는 안 됨. → 처방: ③은 'have something done'의 대체 표현('get something done') 설명이므로, 예시 문장(①, ④, ⑥, ⑦, ⑧) 다음에 배치하고, ②는 예시 중 하나로 포함시키기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-12T15:18:29.565Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "Is Melanie having a new cooker installed? Note that we can use the perfect or the continuous (have had, are having). In negatives and questions in simple tenses, we use a form of do. Mark doesn't have his suits cleaned at Fastclean. We didn't have new windows put in because it was too expensive. Do you have your car serviced regularly? Where did you have your hair cut? C Get something done We can also use get something done. We must have another key made. OR We must get another key made. The sentences have the same meaning, but get is more informal than have. Here are some more examples with get. Laura got her shoes repaired. We're getting the carpet cleaned. Where did you get your hair cut? Do you get your heating checked every year? D Have meaning 'experience' We can use have in this structure with the meaning 'experience something', often something unpleasant. We had all our money stolen. The car had its mirror pulled off.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-12T15:18:50.401Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "Is ⓐ<u>Melanie having</u> a new cooker installed? Note that ⓑ<u>we used</u> the perfect or the continuous (have had, are having). In negatives and questions in simple tenses, we use a form of do. Mark doesn't ⓒ<u>have his suits cleaned</u> at Fastclean. We didn't have new windows put in because it was too expensive. Do you have your car serviced regularly? Where ⓓ<u>did you have your hair cut</u>? C ⓔ<u>Get something done</u> We can also use get something done. We must have another key made. OR We must get another key made. The sentences have the same meaning, but get is more informal than have. Here are some more examples with get. Laura got her shoes repaired. We're getting the carpet cleaned. Where did you get your hair cut? Do you get your heating checked every year? D Have meaning 'experience' We can use have in this structure with the meaning 'experience something', often something unpleasant. We had all our money stolen. The car had its mirror pulled off.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [시제] ⓑ: 'we used' → 'we can use' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-12T09:19:33.265Z",
    "type": "목적",
@@ -305,93 +377,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T21:08:51.310Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① • They are intended to reflect a mind at work, as if the writer were speaking to you, finishing a sentence, then immediately expanding and qualifying it.\n② Most fragments occur when you write a sentence that goes on so long and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence.\n③ When intended, those fragments typically have two characteristics: • They are relatively short, fewer than ten or so words.\n④ In this passage, Mark Twain uses sentence fragments (along with sentences beginning with conjunctions) to capture the element of chance in the circumstances that made him an author (fragments are boldfaced):\n⑤ Traditionally, a punctuated sentence that fails to include an independent main clause is wrong.\n⑥ Almost as an afterthought, often ironically.\n⑦ In fact, experienced writers often write fragments deliberately, as I just did.\n⑧ At least in theory.\n⑨ Which is why you must understand how to write a long but clearly constructed sentence that readers can follow easily.",
-    "choices": [
-     "②-⑨-⑤-⑧-⑦-③-①-④-⑥",
-     "②-⑨-⑤-⑧-③-⑦-①-⑥-④",
-     "②-⑧-⑨-⑦-③-①-④-⑥-⑤",
-     "⑨-②-⑤-⑧-⑦-③-①-⑥-④",
-     "②-⑨-⑤-⑧-⑦-③-①-⑥-④"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ②-⑨-⑤-⑧-⑦-③-①-⑥-④. 흐름: ② → ⑨ → ⑤ → ⑧ → ⑦ → ③ → ① → ⑥ → ④ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ② 다음에 ⑨가 오는 것이 옳은데, ⑨는 '이론상으로는'이라는 의미로 문단의 주제와는 무관한 문장이라는 오해로 ⑨을 ② 다음에 배치했다고 볼 수 있다. 그러나 ⑨는 '문장 구조의 이론적 기준'을 언급하며 ⑤의 '전통적 규칙'을 뒷받침하는 문장임을 간과했다. → 처방: 글의 주제나 흐름을 먼저 살피고, 각 문장의 역할(예: 예시, 정의, 결론 등)을 확인한 뒤 순서를 정하라.\n② 진단: ⑤ 다음에 ⑧이 오는 것이 옳은데, ⑧은 '이론상으로는'이라는 의미로 ⑦의 '경험 많은 작가들도 의도적으로 문장 조각을 쓴다'는 주장에 대한 보완 설명임을 간과하고 순서를 뒤집었다. → 처방: 문장의 논리적 연결(예: '사실', '이론상으로는')을 확인하고, 앞뒤 문장이 서로 어떤 관계를 맺는지 분석하라.\n③ 진단: ② 다음에 ⑧이 오면 문단의 흐름이 끊기는데, ⑧은 '이론상으로는'이라는 말로 ⑦의 주장에 대한 한계를 지적하는 문장임을 모르고 배치했다. ⑧은 ⑦ 다음에 와야 한다. → 처방: 문단의 핵심 주제를 먼저 찾고, 각 문장이 그 주제를 어떻게 보완·반박·예시하는지 순서대로 정리하라.\n④ 진단: ⑨가 ②보다 먼저 오는 것이 옳은데, ⑨는 '문장 구조의 이론적 기준'을 언급하며 ⑤의 '전통적 규칙'을 소개하는 문장임을 모르고 ② 다음에 배치했다. ⑨는 문단의 도입부 역할을 한다. → 처방: 글의 첫 문장은 주제나 배경 설명이 오는 경우가 많으므로, 문단의 시작 부분에 오는 문장을 먼저 확인하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T19:34:00.221Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "The bracketed wh-question clause in (26) is derived as follows. The verb going is merged with its complement where to form the VP ⓐ<u>going where</u>. The present-tense T-auxiliary are is then merged with the resulting VP to form the T-bar ⓑ<u>are going where</u>. The pronoun you is in turn merged with this T-bar to form the TP ⓒ<u>you is going where</u>. A null interrogative complementiser [C ø] is subsequently merged with the resulting TP. Since English (unlike Chinese) is the kind of language ⓓ<u>which requires wh-movement</u> in non-echoic wh-questions, C also has an edge feature [EF] requiring it to have a specifier (with the specifier ⓔ<u>having to be interrogative</u> in order for the resulting structure to be interpreted as a question). Accordingly, merging C with its TP complement will form the C-bar in (27) below (with the edge-feature on C being bracketed, following the convention that features are enclosed in square brackets):",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓒ: 'you is going where' → 'you are going where' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T18:11:38.694Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "WEEK 25 DAY 5 REVIEW Week by week your word-power is being built. It’s like putting money in the bank. Remember, in our language there may be many synonyms and related meanings for each word. Knowing one synonym is good, but you will reap ____ from knowing several. Below is the matching review for this week. REVIEW WORDS DEFINITIONS 1.aegis a. trembling, shaking with old age 2.awesome b. regret 3.conflagration c. bursting out 4.congenial d. infirm, weak as a result of old age 5.debris e. wise man, philosopher 6.deplorable f. ruins, fragments 7.detriment g. weak, unimportant 8.dispersed h. protection, sponsorship, shield 9.doddering i. agreeable, sympathetic 10.eruption j. broken up, scattered, spread 11.hoard k. sad, pitiable 12.imbibe l. hurt, damage, injury 13.initiate m. drink 14.longevity n. great fire 15.obliterate o. manly, masterful 16.puny p. inspiring terror, weird 17.rue q. set going, start 18.sage r. accumulate, save, store up 19.senile s. long duration of life 20.virile t. wipe out, erase",
-    "choices": [
-     "minimal benefits",
-     "overwhelming drawbacks",
-     "some confusion",
-     "limitless possibilities",
-     "enhanced advantages"
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 'enhanced advantages'가 들어가 글의 논지를 완성한다 (본문 'greater benefits'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'reap(수확하다)'는 좋은 결과나 이익을 얻는다는 뜻인데, 'minimal benefits(최소한의 이익)'는 이 문맥에서 'reap'의 의미를 약하게 나타낸다. 학생은 'reap'이 '적은' 이익을 의미한다고 오해했을 수 있다. → 처방: 'reap'이 '많은 이익을 얻다'라는 뜻임을 기억하고, 문맥에 맞는 강도를 판단하라.\n② 진단: 지문은 'reap'이 좋은 결과(benefits)를 얻는다는 긍정적 의미를 담고 있는데, 'overwhelming drawbacks(압도적인 단점)'은 부정적 의미를 담고 있다. 학생은 'reap'을 '손해'나 '단점'과 연결했을 수 있다. → 처방: 지문의 긍정적 어조를 살피고, 'reap'이 주는 결과가 이득인지 손해인지 문맥으로 판단하라.\n③ 진단: 지문은 'reap'이 '수확하다'라는 뜻으로 여러 동사나 명사의 의미를 확장하는 데 도움을 준다는 설명을 하고 있다. 'some confusion(일부 혼란)'은 이 문맥과 전혀 맞지 않는다. 학생은 'reap'의 의미를 정확히 이해하지 못해 혼란스러웠을 수 있다. → 처방: 'reap'의 의미를 사전으로 확인하고, 문장 전체의 흐름을 파악한 후 답을 선택하라.\n④ 진단: 지문에서 'reap'은 '수확하다'라는 뜻으로, 'limitless possibilities(무한한 가능성)'는 문맥상 어울리지 않는다. 학생은 'reap'이 '무한한' 결과를 의미한다고 오해했을 수 있다. → 처방: 'reap'이 '수확하다'라는 기본 의미를 떠올리고, 문장에서 얻을 수 있는 결과의 '양'을 판단하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
