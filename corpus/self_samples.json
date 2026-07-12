@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-12T19:35:34.226Z",
+ "updated": "2026-07-12T21:11:17.669Z",
  "samples": [
+  {
+   "ts": "2026-07-12T21:08:24.929Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": -0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "A CASTLE IN THE AIR consonants. The verbal root in Semitic is not a pronounceable chunk like English 'eat' or Latin `ed-', but a group of just three consonants, like the Arabic 1-b-s, which means 'wear', or s- -m, which means 'be at peace'. But how can a vowel-less group of three consonants ever mean anything, if it cannot even stand up on its own three legs and be pronounced unaided? The answer is that such roots do not have to be spoken by themselves, because the root is an abstract notion, which comes to life only when it is superimposed on some templates: patterns of (mostly) vowels, which have three empty slots for the three consonants of the root. [ ]",
+    "choices": [
+     "All Arabic words can be formed using only two consonants and one vowel.",
+     "The Arabic root is used to form the past tense by inserting it into a template, such as OaOiOa, which results in a specific word when combined with the root s-i-m to mean 'he was at peace'.",
+     "The Arabic root s-i-m can be pronounced on its own to mean 'he was at peace'.",
+     "The template OaOiOa is used to form the future tense in Arabic, not the past tense.",
+     "The process of inserting roots into templates is unique to the English language."
+    ],
+    "answer": 2,
+    "explanation": "빈칸에는 원문 'To take one example, the Arabic template OaOiOa forms the past tense (in the third person `he'), so if you want to say 'he was at peace', you just insert the root s- i-m (`be at peace') into that template, to get: 37'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장에서 'a group of just three consonants'라고 설명된 아랍어 어근의 특징을 무시하고 2개의 자음과 1개의 모음으로 아랍어 단어가 형성된다고 오독했다. → 처방: 아랍어 어근의 정의를 다시 확인하고, 어근과 템플릿이 어떻게 단어를 형성하는지 이해하도록 한다.\n③ 진단: 아랍어 어근이 템플릿 없이도 발음될 수 있다고 생각하여, 'such roots do not have to be spoken by themselves'라는 문장의 설명을 무시한 것으로 보인다. → 처방: 아랍어 어근의 추상적인 특성과 템플릿을 통해 의미를 가지는 방식을 다시 공부한다.\n④ 진단: 문장에서 템플릿 OaOiOa 가 과거 시제를 형성하는 예시로 사용된 것을 과거 시제가 아닌 미래 시제로 오독한 것으로 보인다. → 처방: 아랍어의 시제와 템플릿의 역할을 다시 정리하고, 예시를 통해 과거 시제와 미래 시제의 차이를 이해한다.\n⑤ 진단: 문장에서 설명된 아랍어의 어근과 템플릿 시스템을 영어에만 고유한 것으로 오독한 것으로 보인다. → 처방: 다른 언어의 어근과 템플릿 시스템에 대해 공부하여, 아랍어의 고유한 특징을 이해한다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-12T21:10:50.226Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: t)\n[영영풀이] The digit/figure 3.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] three (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-12T19:34:52.231Z",
    "type": "목적",
@@ -265,75 +319,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'to trace the historical development and origins of words.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to trace the historical development and origins of words.]\n[오답 진단·처방]\n① 진단: 단어의 '역사적 발생과 변화 과정' 자체를 연구하는 것이 아니라, 특정 단어의 역사적 근거를 '제시'하는 글임을 오해했음. 지문에서 'Origins 80'과 각 단어의 유래 설명이 '근거 제시'에 집중함을 보지 못함. → 처방: 글의 목적을 찾기 위해 '무엇을 설명하는지'를 먼저 확인하고, '연구'나 '증명' 같은 행위가 아니라 '근거 제시'임을 인식할 것.\n② 진단: 단어의 역사적 발생과 변화 과정을 '전부 증명'하려고 한다고 오해했음. 지문은 일부 단어의 유래만 다루며, '증명'보다는 '설명'에 가까움을 놓침. → 처방: 글의 범위를 확인하고, '모든 변화'가 아니라 '일부 단어의 변화'임을 인식한 뒤, '증명'보다는 '설명' 또는 '근거 제시'가 목적임을 떠올릴 것.\n③ 진단: '일부만 설명'하는 것이 아니라, 지문 전체가 단어의 역사적 발생과 변화 과정을 '상세히 설명'함을 오해했음. 'Origins 80'과 각 단어의 유래 설명이 '전체'에 해당함을 보지 못함. → 처방: 글의 분량을 확인하고, '일부'가 아니라 '전체 단어의 변화 과정'을 설명하는 글임을 인식한 뒤, '일부만'이라는 표현이 부적절함을 판단할 것.\n④ 진단: '모든 언어의 역사적 변화'를 다루는 것이 아니라, 특정 단어(amazon, ambassador 등)의 역사적 변화만을 다루고 있음을 오해했음. 지문에서 '모든 언어'라는 포괄적 표현이 없음을 보지 못함. → 처방: 글의 범위를 확인하고, '모든 언어'가 아니라 '특정 단어'의 변화임을 인식한 뒤, '단적으로 설명'이라는 표현이 글의 목적과 맞지 않음을 판단할 것."
-   }
-  },
-  {
-   "ts": "2026-07-12T06:47:35.985Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "An early dinner. An early riser. The early Victorians. First class. First offenders are not punished severely. Comparative anatomy. We owed our comparative safety to the fog. A perfect copy. He spoke with perfect ease. They are perfect strangers. A young lady. In his young days. Conscientious work. Conscientious objectors. A born orator. In all their born days. A married woman. Their married life was very happy. <u>A criminal neglect of duty</u>. The criminal courts. A deaf-and-dumb teacher (one who is d.). A deaf-and-dumb teacher (one who teaches the d.). A lunatic girl. A lunatic asylum. In New Englander, Pacific Islanders the adjective qualifies only the beginning of the next word (cp. comparative safety). 9.4. With composite names the adjunct sometimes belongs to the nearest substantive only; this is the case in the following examples in spite of the different spelling: Everyday speech (speech is defined by everyday, and day by every). An all-night sitting. A public schoolboy. The dirty clothes-basket. Smith & Co., old and new booksellers. Essentials of english grammar 60",
-    "choices": [
-     "The phrase emphasizes that neglecting one's duty happens more frequently than committing an actual crime.",
-     "The phrase suggests that neglecting one's duty occasionally resembles a crime but does not equate to the same level of severity.",
-     "A criminal neglect of duty indicates that neglecting one's duty is the direct cause of a crime occurring.",
-     "The phrase implies that neglecting one's duty is so severe it should be treated with the same gravity as a crime.",
-     "A criminal neglect of duty means a person intentionally commits a crime by failing to fulfill their duty."
-    ],
-    "answer": 4,
-    "explanation": "밑줄 친 부분은 'The phrase implies that neglecting one's duty is so severe it should be treated with the same gravity as a crime.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘criminal neglect of duty’를 ‘범죄보다 더 자주 일어나는 일’로 오해. 지문에서 ‘criminal’이 ‘범죄’를 뜻하는 형용사로 쓰였음을 보지 못하고 ‘빈번한’이라는 뜻으로 잘못 해석. → 처방: 형용사 ‘criminal’이 명사 ‘neglect’를 수식할 때는 ‘범죄의’ 또는 ‘중죄의’라는 뜻임을 기억하고, 문맥에서 ‘범죄에 버금가는 심각성’을 강조하는지 확인할 것.\n② 진단: ‘criminal neglect of duty’를 ‘범죄와 비슷하지만 같은 수준은 아님’으로 오해. 지문에서 ‘criminal’이 ‘범죄’를 의미하는 형용사로 쓰였음을 보지 못하고 ‘비슷한’이라는 뜻으로 잘못 해석. → 처방: 형용사 ‘criminal’이 명사를 수식할 때는 ‘범죄에 해당하는’ 또는 ‘중죄의’라는 뜻임을 기억하고, ‘criminal courts’(범죄 법원)와 같은 예시를 떠올리며 의미를 정확히 파악할 것.\n③ 진단: ‘criminal neglect of duty’를 ‘직무 태만이 직접 범죄의 원인이 됨’으로 오해. 지문에서 ‘criminal’이 형용사로 쓰여 ‘범죄에 버금가는’ 심각성을 나타낸다는 점을 보지 못하고 인과관계로 잘못 해석. → 처방: ‘criminal’이 형용사로 쓰일 때는 ‘범죄에 해당하는’ 또는 ‘중죄의’라는 뜻임을 기억하고, ‘a criminal neglect’는 ‘범죄에 버금가는 태만’이라는 의미를 가진다는 점을 떠올릴 것.\n⑤ 진단: ‘criminal neglect of duty’를 ‘고의로 범죄를 저지르는 것’으로 오해. 지문에서 ‘criminal’이 형용사로 쓰여 ‘범죄에 버금가는’ 심각성을 나타낸다는 점을 보지 못하고 ‘고의적’이라는 뜻으로 잘못 해석. → 처방: ‘criminal’이 형용사로 쓰일 때는 ‘범죄에 해당하는’ 또는 ‘중죄의’라는 뜻임을 기억하고, ‘a criminal neglect’는 ‘범죄에 버금가는 태만’이라는 의미를 가진다는 점을 떠올릴 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T06:48:09.890Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "형용사는 명사를 묘사하는 데에만 활용되며, 특정한 대상을 가리키는 기능은 없다",
-     "명사가 형용사에 의해 특정한 대상을 가리키면, 형용사는 그 명사의 의미를 잃게 된다",
-     "형용사는 명사의 범위를 한정하거나 특정한 대상을 가리키는 데에만 사용된다",
-     "형용사가 명사의 범위를 한정하는 경우는 흔하며, 서술적 의미는 부가적인 역할에 불과하다",
-     "형용사는 명사의 범위를 한정하거나 특정한 대상을 가리키는 기능을 하며, 단순히 서술적 묘사에 그치지 않는다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Adjectives modify nouns by restricting or defining their reference rather than merely describing them.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 형용사가 명사를 묘사하는 데에만 활용된다고 오해했는데, 지문에서 'a born orator'는 '타고난 웅변가'로 명사의 범위를 한정하는 기능을 하고, 'a perfect copy'는 '완벽한 복제품'으로 서술적 의미를 넘어서 특정한 대상을 가리키고 있음. → 처방: 형용사가 명사의 범위를 한정하거나 특정한 대상을 가리키는 경우도 있다는 점을 기억하고, 서술적 의미와 한정적 의미를 구분해서 읽기.\n② 진단: 형용사가 명사의 의미를 잃는다고 오해했는데, 지문에서 'a young lady'는 '젊은 숙녀'로 'young'이 'lady'의 범위를 한정하고, 'a married woman'은 '기혼 여성'으로 'married'가 'woman'의 의미를 구체화하고 있음. → 처방: 형용사가 명사의 의미를 구체화하거나 범위를 좁히는 경우가 많다는 점을 확인하고, 명사의 의미를 잃는다는 오해를 버리기.\n③ 진단: 형용사가 명사의 범위를 한정하는 경우만 있다고 오해했는데, 지문에서 'conscientious work'는 '성실한 작업'으로 서술적 의미를 담고 있으며, 'a perfect copy'도 '완벽한'이라는 서술적 의미를 포함하고 있음. → 처방: 형용사가 서술적 의미를 가질 수도 있다는 점을 염두에 두고, 한정적 의미와 서술적 의미를 모두 고려해서 읽기.\n④ 진단: 서술적 의미가 부가적이라고 오해했는데, 지문에서 'a criminal neglect of duty'는 '범죄적인 태만'으로 'criminal'이 서술적 의미를 강하게 담고 있으며, 'a deaf-and-dumb teacher'도 '청각장애인 교사'와 '벙어리 교사'로 서술적 의미를 포함하고 있음. → 처방: 형용사가 서술적 의미를 가질 수도 있다는 점을 알고, 한정적 의미뿐 아니라 서술적 의미를 함께 생각하며 읽기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Adjectives modify nouns by restricting or defining their reference rather than merely describing them.]"
    }
   }
  ]
