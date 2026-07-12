@@ -1,6 +1,114 @@
 {
- "updated": "2026-07-12T22:10:34.530Z",
+ "updated": "2026-07-12T23:13:10.460Z",
  "samples": [
+  {
+   "ts": "2026-07-12T23:10:55.002Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "장소를 자주 바꾸는 학생이 공부를 더 잘한다는 통념이 있다",
+     "공부 장소를 바꾸면 기억력이 좋아지는 경향이 관찰된다",
+     "공부를 한 장소에만 집중하면 기억력이 전반적으로 약해진다",
+     "공부 장소를 여러 곳으로 바꾸면 기억력이 모든 유형에서 동일하게 향상된다",
+     "공부를 할 때는 장소를 바꾸는 것이 기억력을 높이기 위한 필수 조건이다"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Study in different places enhances memory recall.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: 지문은 '장소를 바꾸면 기억력이 좋아진다'는 연구 결과를 소개하지만, '통념'이라는 말은 nowhere 언급하지 않음. 학생은 지문의 '연구 결과'와 '일반적인 통념'을 혼동했을 가능성 있음. → 처방: 지문에서 주장하는 '연구 결과'에만 집중하고, '통념'이라는 말은 무시하도록 연습하기.\n③ 진단: 지문은 '장소를 바꾸면 기억력이 좋아진다'고 하지만, '장소에만 집중하면 기억력이 약해진다'는 말은 nowhere 언급하지 않음. 학생은 지문의 '장소 변화'와 '장소 집중'을 반대 개념으로 오해했을 가능성 있음. → 처방: 지문의 핵심 주장('장소 변화가 기억력 강화에 도움')을 정확히 파악한 후, 반대 개념은 배제하도록 연습하기.\n④ 진단: 지문은 '장소를 여러 곳으로 바꾸면 기억력이 좋아진다'는 경향을 언급하지만, '모든 유형에서 동일하게 향상된다'는 말은 nowhere 언급하지 않음. 학생은 '향상'의 범위를 과장해 해석했을 가능성 있음. → 처방: 지문의 '기억력 향상'이 '일반적인 경향'임을 기억하고, '모든 유형'이라는 과장된 표현은 배제하도록 연습하기.\n⑤ 진단: 지문은 '장소를 바꾸는 것이 도움이 된다'고 하지만, '필수 조건'이라는 말은 nowhere 언급하지 않음. 학생은 '도움'과 '필수'를 혼동했을 가능성 있음. → 처방: 지문의 '도움이 된다'는 표현을 정확히 이해하고, '필수 조건'이라는 절대적 표현은 배제하도록 연습하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Study in different places enhances memory recall.]"
+   }
+  },
+  {
+   "ts": "2026-07-12T23:11:37.793Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "Ray English 지문 전문 · 원문 그대로 32번 빈칸 · B L A N K 장소를 바꿔 공부하기 빈칸 빈칸 = recall the material: 장소를 옮겨 공부한 쪽이 회상을 훨씬 잘함(실험 결론). 소재 장소를 바꿔 공부하기 Studying in different places 주제 장소를 바꿔 공부하면 기억이 강화된다 Varying study places strengthens memory 제목 장소를 바꾸면 더 잘 외운다 Study in Different Places to Remember Better 한눈에 장소를 바꿔 공부하면 다양성이 생겨 학습이 강화된다는 주장을 실험으로 뒷받침한다. 같은 방에서 두 번 공부한 집단보다 두 장소로 나눠 공부한 집단이 단어를 훨씬 잘 회상했다. 다양한 맥락이 풍부한 연상을 만들기 때문이다. 지문 전문 — 시험지 원문 Do you always study in the same spot? Don’t. If you study in different places, that helps create variety, and that rich experience can reinforce what you are learning. When several college students told us they did school work in different places rather than in some favorite nook, that habit reflected the research on learning. Numerous experiments have found that if learners simply study in at least two different places, they are more likely to ＿＿＿＿＿＿＿＿. In one of the first such trials, two different groups studied a list of words. Some students returned to the same room twice while their counterparts spent the same amount of time divided between two locations. When asked to recall as many words on the list as possible, those who had moved around did far better. Variety creates rich association, even when those connections form in the background, totally outside of what we are consciously thinking. * nook: 구석진 곳 ** counterpart: 상대 지문 전문 · 원문 그대로",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-12T23:12:09.285Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 2/3 다수결 2번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 32번 빈칸 · B L A N K 장소를 바꿔 공부하기 빈칸 빈칸 = recall the material: 장소를 옮겨 공부한 쪽이 회상을 훨씬 잘함(실험 결론). 소재 장소를 바꿔 공부하기 Studying in different places 주제 장소를 바꿔 공부하면 기억이 강화된다 Varying study places strengthens memory 제목 장소를 바꾸면 더 잘 외운다 Study in Different Places to Remember Better 한눈에 장소를 바꿔 공부하면 다양성이 생겨 학습이 강화된다는 주장을 실험으로 뒷받침한다. 같은 방에서 두 번 공부한 집단보다 두 장소로 나눠 공부한 집단이 단어를 훨씬 잘 회상했다. 다양한 맥락이 풍부한 연상을 만들기 때문이다. 지문 전문 — 시험지 원문 Do you always study in the same spot? Don’t. If you study in different places, that helps create variety, and that rich experience can reinforce what you are learning. When several college students told us they did school work in different places rather than in some favorite nook, that habit reflected the research on learning. Numerous experiments have found that if learners simply study in at least two different places, they are more likely to ＿＿＿＿＿＿＿＿. In one of the first such trials, two different groups studied a list of words. Some students returned to the same room twice while their counterparts spent the same amount of time divided between two locations. When asked to recall as many words on the list as possible, those who had moved around did far better. Variety creates rich association, even when those connections form in the background, totally outside of what we are consciously thinking. * nook: 구석진 곳 ** counterpart: 상대 지문 전문 · 원문 그대로\n\n─────────\n[요약문] Studying in multiple locations (A) memory retention by generating diverse associations, as demonstrated by experiments where participants who changed (B) outperformed those who studied in the same place.",
+    "choices": [
+     "(A) delays … (B) schedules",
+     "(A) weakens … (B) environments",
+     "(A) confuses … (B) locations",
+     "(A) alters … (B) textbooks",
+     "(A) enhances … (B) environments"
+    ],
+    "answer": 2,
+    "explanation": "(A) enhances / (B) environments 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘delays’는 ‘지연시킨다’라는 뜻으로, 지문에서 ‘회상’을 ‘지연’시킨다는 내용은 전혀 언급되지 않았다. ‘schedules’는 ‘일정’이지만, 지문은 ‘장소’를 중시하므로 맥락이 맞지 않는다. → 처방: ‘회상’을 ‘강화’하거나 ‘약화’시키는지를 먼저 확인하고, 지문에서 ‘장소’를 ‘환경’으로 바꾸어 읽는 습관을 기르기.\n③ 진단: ‘confuses’는 ‘혼동시킨다’라는 뜻으로, 지문은 ‘다양한 맥락’이 ‘기억을 강화’시킨다고 설명하는데 반해, ‘혼동’이라는 부정적 의미를 사용해 오독했다. ‘locations’는 ‘장소’이지만, ‘weakens’와 짝지어져 오답을 유도했다. → 처방: ‘회상’을 ‘강화’하는지 ‘약화’하는지, 그리고 ‘장소’를 ‘환경’으로 해석하는지 확인하는 훈련을 반복하기.\n④ 진단: ‘alters’는 ‘변화시킨다’라는 뜻으로, 지문은 ‘장소’를 ‘환경’으로 바꾸어 ‘기억을 강화’한다고 설명하는데, ‘교과서’를 언급한 부분은 전혀 없다. ‘textbooks’는 지문 내용과 무관한 소재다. → 처방: 지문의 핵심 키워드(‘장소’, ‘회상’, ‘강화’)를 먼저 찾고, 선지의 단어들이 그 키워드와 연결되는지 확인하는 습관 들이기.\n⑤ 진단: ‘enhances’는 ‘강화한다’라는 뜻으로 지문과 일치하지만, ‘environments’는 ‘환경’이지만 지문에서 ‘장소’를 ‘환경’으로 해석한 것이지, ‘환경’이란 단어 자체가 지문에 직접 등장하지 않는다. ‘environments’는 ‘장소’를 포괄하는 넓은 의미로 오독할 수 있다. → 처방: ‘장소’를 ‘환경’으로 해석하는 것이 아니라, 지문에서 ‘장소’를 ‘환경’으로 설명한 이유를 정확히 이해하고, 빈칸에 ‘weakens’이 아닌 ‘enhances’를 넣어야 하는 이유를 다시 읽어보기."
+   }
+  },
+  {
+   "ts": "2026-07-12T23:12:40.608Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "Ray English 지문 전문 · 원문 그대로 32번 빈칸 · B L A N K 장소를 바꿔 공부하기 빈칸 빈칸 = recall the material: 장소를 옮겨 공부한 쪽이 회상을 훨씬 잘함(실험 결론). 소재 장소를 바꿔 공부하기 Studying in different places 주제 장소를 바꿔 공부하면 기억이 강화된다 Varying study places strengthens memory 제목 장소를 바꾸면 더 잘 외운다 Study in Different Places to Remember Better 한눈에 장소를 바꿔 공부하면 다양성이 생겨 학습이 강화된다는 주장을 실험으로 뒷받침한다. 같은 방에서 두 번 공부한 집단보다 두 장소로 나눠 공부한 집단이 단어를 훨씬 잘 회상했다. 다양한 맥락이 풍부한 연상을 만들기 때문이다. 지문 전문 — 시험지 원문 Do you always study in the same spot? Don’t. If you study in different places, ⓐ<u>that helps create variety</u>, and ⓑ<u>that rich experience can reinforced</u> what you are learning. When several college students told us they did school work in different places rather than in some favorite nook, that habit reflected the research on learning. Numerous experiments have found that ⓒ<u>if learners simply study</u> in at least two different places, ⓓ<u>they are more likely to</u> ＿＿＿＿＿＿＿＿. In one of the first such trials, two different groups studied a list of words. Some students returned to the same room twice while their counterparts spent the same amount of time divided between two locations. When asked to recall as many words on the list as possible, ⓔ<u>those who had moved around</u> did far better. Variety creates rich association, even when those connections form in the background, totally outside of what we are consciously thinking. * nook: 구석진 곳 ** counterpart: 상대 지문 전문 · 원문 그대로",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [시제] ⓑ: 'that rich experience can reinforced' → 'that rich experience can reinforce' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-12T22:09:43.848Z",
    "type": "내용불일치",
@@ -214,112 +322,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'The integration of background knowledge with decoding skills in achieving reading comprehension'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The integration of background knowledge with decoding skills in achieving reading comprehension]\n[오답 진단·처방]\n① 진단: 글에서 배경지식(background knowledge)이 '예측'과 '관련짓기'에 쓰인다고만 말하고 '디코딩(decoding)'의 역할은 언급하지 않았으므로, '디코딩의 역할'을 강조한 이 선지는 지문과 맞지 않음. → 처방: 지문에서 '디코딩'이 중요하다고 언급한 부분을 다시 읽고, 배경지식이 '디코딩과 어떻게 상호작용하는지'를 확인하기.\n② 진단: 글에서 '디코딩'이 '의미 생성'과 상호작용한다고 했지만, '배경지식이 디코딩을 결정한다'는 인과관계는 없음. 지문은 배경지식과 디코딩이 '모두 중요'하다고만 설명함. → 처방: 지문에서 '디코딩'과 '배경지식'의 관계를 '상호작용'으로 설명한 부분을 찾고, 인과관계가 아님을 기억하기.\n④ 진단: 글은 '모든 읽기 과제에 배경지식이 필요하다고' 말하지 않았고, '특정 목적(ESP)'의 읽기에서 배경지식이 중요하다고만 언급함. '모든'이라는 절대적 표현은 과장됨. → 처방: 지문에서 '목적'과 'ESP'가 언급된 부분을 확인하고, '보편적 필요성'이 아님을 기억하기.\n⑤ 진단: 글은 배경지식이 '때때로'가 아니라 '항상' 읽기에서 사용된다고 설명함. '때때로'는 지문의 내용을 축소하거나 오해한 것임. → 처방: 지문에서 배경지식이 '예측'과 '관련짓기'에 '항상' 쓰인다고 설명한 부분을 다시 읽고, '필수성'을 강조하기."
-   }
-  },
-  {
-   "ts": "2026-07-12T17:20:28.943Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] It is clear that basic decoding processes are important for comprehension and are used by readers in interaction with the more complex processes of meaning generation, as referred in [4], [5], and [6].\n\nREADING COMPREHENSION Reading is not merely a process of exact identification of letters, words, and ultimately sentences leading to comprehension built from letter to word to phrase to sentence [1]. ( ① ) Readers make use of their existing background knowledge (schemata) to make predictions about what is coming next in the text and about how some new, unfamiliar piece of information relates to what is already known, as in [2] and [3]. ( ② ) However, it is equally clear that readers engage in reading in order to gain information. ( ③ ) Reading purpose is a central concern of English for Specific Purposes (ESP), and purpose resides in the language learner's relationship to the learning task. ( ④ ) The purpose is assumed to be comprehension of the message. ( ⑤ ) Comprehension in instructional settings is translated into some product, such as completion of comprehension questions, a written summary, or an oral report [7].",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 2,
-    "explanation": "주어진 문장의 연결 단서가 ② 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: 학생은 ①이 '글자 → 단어 → 문장'의 단계적 흐름을 설명하는 부분이라 착각해 주어진 문장이 '기본 디코딩 과정'을 다루는 줄 알았다. 그러나 ①은 '단어와 문장'의 구조적 관계만 언급할 뿐, 디코딩과 의미 생성의 상호작용은 없다. → 처방: 지문의 주제(디코딩과 의미 생성의 관계)를 먼저 확인하고, 각 선지가 다루는 내용을 '키워드(예: 배경 지식, 읽기 목적)'로 요약해 비교해라.\n③ 진단: 학생은 ③이 '정보 습득'을 강조하는 부분이라 생각해 주어진 문장이 '읽기의 목적'을 설명한다고 오해했다. 그러나 ③은 '읽기 목적'의 중요성을 언급할 뿐, 디코딩과 의미 생성의 관계를 설명하지 않는다. → 처방: 주어진 문장의 핵심어('basic decoding processes', 'meaning generation')가 어떤 선지에 가장 알맞은지 '문장 구조'로 분석해라(예: 'A 는 B 에 중요하다' → A 와 B 가 모두 언급된 곳).\n④ 진단: 학생은 ④가 'ESP(특정 목적 영어)'라는 학문적 용어를 포함해 '읽기의 목적'을 다룬다고 생각해 주어진 문장이 '읽기 목적'과 관련 있다고 생각했다. 그러나 ④는 '목적'의 '위치'(ESP 와 학습자 관계)만 설명할 뿐, 디코딩 과정은 언급하지 않는다. → 처방: 지문의 '주제문'을 찾고, 주어진 문장이 그 주제문을 '지원'하는지 확인해라. 주제문이 '디코딩과 의미 생성의 관계'라면, 그 관계가 드러나는 곳에 넣어야 한다.\n⑤ 진단: 학생은 ⑤가 '이해'를 '문제 해결'로 번역하는 부분이라 생각해 주어진 문장이 '이해 과정'을 설명한다고 오해했다. 그러나 ⑤는 '이해의 결과물'(예: 문제 풀이)을 다룰 뿐, '이해 과정'(디코딩과 의미 생성의 관계)은 언급하지 않는다. → 처방: 지문의 '흐름'을 '원인과 결과'로 나누고, 주어진 문장이 '원인'(디코딩)과 '결과'(의미 생성)의 관계를 설명하는지 확인해라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T17:20:41.617Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 읽기는 단순히 글자를 식별해 문장을 이해하는 과정이 아니라 배경지식을 활용해 텍스트의 의미를 능동적으로 구성하는 과정이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T15:17:43.902Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0.67,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Mark doesn't have his suits cleaned at Fastclean.\n② We must have another key made.\n③ C Get something done We can also use get something done.\n④ Where did you have your hair cut?\n⑤ Note that we can use the perfect or the continuous (have had, are having).\n⑥ Is Melanie having a new cooker installed?\n⑦ We didn't have new windows put in because it was too expensive.\n⑧ Do you have your car serviced regularly?\n⑨ In negatives and questions in simple tenses, we use a form of do.",
-    "choices": [
-     "⑤-⑥-⑨-①-⑦-⑧-④-③-②",
-     "⑥-⑤-⑨-①-④-⑦-⑧-②-③",
-     "⑥-④-⑧-⑤-⑨-②-⑦-①-③",
-     "⑥-⑤-①-⑨-⑦-⑧-④-③-②",
-     "⑥-⑤-⑨-①-⑦-⑧-④-③-②"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ⑥-⑤-⑨-①-⑦-⑧-④-③-②. 흐름: ⑥ → ⑤ → ⑨ → ① → ⑦ → ⑧ → ④ → ③ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ⑤-⑥-⑨-①-④-⑦-⑧-②-③에서 ⑤가 먼저 오는 것은 맞지만, ⑨가 ①보다 먼저 오는 것은 지문의 흐름(⑤는 설명, ⑨는 규칙)을 무시한 오독. 지문 ⑨는 '단순시제에서 do 를 쓴다'는 규칙 설명으로, ⑤(설명)와는 분리되어야 함. → 처방: 지문의 구조를 먼저 파악하자. ⑤는 'have something done'의 설명, ⑨는 '단순시제 규칙'으로 분리되어 있음을 기억하고, 설명 → 규칙 → 예시 순서로 배치하기.\n② 진단: ⑥-④-⑧-⑤-⑨-②-⑦-①-③에서 ④가 ⑧ 다음에 오는 것은 지문의 예시 순서(④는 '머리 자르기', ⑧은 '자동차 정비')를 혼동한 것. 지문은 'have something done'의 예시로 머리, 자동차, 창문 등을 나열하는데, 순서가 뒤섞임. → 처방: 'have something done'의 예시 문장은 지문의 순서(④ → ⑦ → ⑧)를 따라 배치하고, 설명(⑤)과 규칙(⑨)은 따로 분리하여 기억하기.\n③ 진단: ⑥-⑤-①-⑨-⑦-⑧-④-③-②에서 ①이 ⑤ 다음에 오는 것은 지문의 흐름을 무시한 오독. 지문 ①은 'Mark doesn't have his suits cleaned at Fastclean.'으로, ⑤(설명)와 ⑨(규칙) 사이에 배치되어서는 안 됨. 설명과 규칙은 예시보다 먼저 와야 함. → 처방: 지문의 'have something done' 설명(⑤) → 규칙(⑨) → 예시(①, ④, ⑥, ⑦, ⑧) 순서로 배치하고, ③은 마지막에 오는 보조 설명임을 기억하기.\n④ 진단: ⑥-⑤-⑨-①-④-⑦-⑧-②-③에서 ②가 ⑧ 다음에 오는 것은 지문의 흐름을 무시한 오독. 지문 ②는 'We must have another key made.'로, ③('get something done' 설명)과는 밀접한 관련이 있지만, 예시(①, ④, ⑥, ⑦, ⑧)보다 먼저 배치되어서는 안 됨. → 처방: ③은 'have something done'의 대체 표현('get something done') 설명이므로, 예시 문장(①, ④, ⑥, ⑦, ⑧) 다음에 배치하고, ②는 예시 중 하나로 포함시키기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T15:18:29.565Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Is Melanie having a new cooker installed? Note that we can use the perfect or the continuous (have had, are having). In negatives and questions in simple tenses, we use a form of do. Mark doesn't have his suits cleaned at Fastclean. We didn't have new windows put in because it was too expensive. Do you have your car serviced regularly? Where did you have your hair cut? C Get something done We can also use get something done. We must have another key made. OR We must get another key made. The sentences have the same meaning, but get is more informal than have. Here are some more examples with get. Laura got her shoes repaired. We're getting the carpet cleaned. Where did you get your hair cut? Do you get your heating checked every year? D Have meaning 'experience' We can use have in this structure with the meaning 'experience something', often something unpleasant. We had all our money stolen. The car had its mirror pulled off.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
