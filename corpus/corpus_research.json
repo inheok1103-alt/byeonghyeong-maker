@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-12T17:21:14.133Z",
+ "updated": "2026-07-12T19:35:34.222Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
- "count": 39,
+ "count": 40,
  "notes": [
+  {
+   "ts": "2026-07-12T19:35:04.794Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'most people are unaware of it'와 같은 명사구+be 동사+형용사+전치사 구조가 빈번하게 나타나며, 한국어 오류에서 'almost people' 대신 'most people'이 표준임을 확인할 수 있다.",
+   "rule": "원서 코퍼스 패턴을 반영하여 'almost people'을 'most people'으로 수정하는 규칙을 적용하라. (예: 'almost people' → 'most people', 'almost students' → 'most students')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-12T17:20:43.857Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",

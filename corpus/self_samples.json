@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-12T17:21:14.138Z",
+ "updated": "2026-07-12T19:35:34.226Z",
  "samples": [
+  {
+   "ts": "2026-07-12T19:34:52.231Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.63,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "‘load’를 포함한 타동사의 통사적 특성을 affixal 특징으로 설명하려고",
+     "‘load’의 목적어 자동사 전환 현상을 문법적 원인으로 설명하려고",
+     "‘load’의 통사 구조에서 vP 부사 위치만을 따로 분리해 설명하려고",
+     "‘load’를 비롯한 모든 동사의 통사적 행동을 affixal 특성으로 일반화하려고",
+     "‘load’가 전치사구를 동반하는 통사적 이유를로 설명하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'to explain the syntactic behavior of transitive verbs like \"load\" through their affixal nature and DP/PP complement structure.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘load’의 목적어 자동사 전환 현상(‘The truck will load with hay’)을 문법적 원인으로 설명한다고 오해했는데, 지문은 이 현상이 *ungrammatical 하다는 점과 affixal 특성으로 설명한다고만 언급하며, 문법적 원인을 직접 설명하지 않음. → 처방: ‘load’가 affixal 하다는 특징을 먼저 확인하고, 이 특징이 문법적 현상(예: 자동사 전환의 비문법성)에 어떻게 영향을 미치는지 확인할 것.\n③ 진단: ‘load’의 통사 구조에서 vP 부사 위치만을 따로 분리해 설명한다고 오해했는데, 지문은 vP 부사와 VP 부사의 위치 차이를 *사례*로만 언급하며, 이 위치가 목적의가 아님. → 처방: 지문의 *핵심 주장*이 ‘load’의 affixal 특성임을 먼저 확인하고, 부사 위치 차이는 *증거*로만 활용됨을 기억할 것.\n④ 진단: ‘load’를 비롯한 *모든* 동사의 통사적 행동을 affixal 특성으로 일반화한다고 오해했는데, 지문은 ‘load’를 *특정* 동사로 한정해 설명하며, ‘모든 동사’를 일반화하지 않음. → 처방: 지문의 *대상 범위*가 ‘load’를 포함한 *일부* 타동사임을 확인하고, ‘모든 동사’를 일반화하지 않도록 주의할 것.\n⑤ 진단: ‘load’가 전치사구를 동반하는 통사적 이유를 설명한다고 오해했는데, 지문은 전치사구 동반 현상을 *사례*로만 언급하며, 이 현상이 목적의가 아님. → 처방: 지문의 *핵심 주장*이 ‘load’의 affixal 특성임을 먼저 확인하고, 전치사구 동반은 *증거*로만 활용됨을 기억할 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to explain the syntactic behavior of transitive verbs like \"load\" through their affixal nature and DP/PP complement structure.]"
+   }
+  },
+  {
+   "ts": "2026-07-12T19:35:03.328Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 동사 부하가 v로 올라가 목적어와 부사 앞에 옵니다.\n주어진 단어: ( raises / precedes / object )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The verb load raises to v and precedes the object and adverb. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-12T17:19:31.238Z",
    "type": "틀린문장 고쳐쓰기",
@@ -282,72 +334,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Adjectives modify nouns by restricting or defining their reference rather than merely describing them.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 형용사가 명사를 묘사하는 데에만 활용된다고 오해했는데, 지문에서 'a born orator'는 '타고난 웅변가'로 명사의 범위를 한정하는 기능을 하고, 'a perfect copy'는 '완벽한 복제품'으로 서술적 의미를 넘어서 특정한 대상을 가리키고 있음. → 처방: 형용사가 명사의 범위를 한정하거나 특정한 대상을 가리키는 경우도 있다는 점을 기억하고, 서술적 의미와 한정적 의미를 구분해서 읽기.\n② 진단: 형용사가 명사의 의미를 잃는다고 오해했는데, 지문에서 'a young lady'는 '젊은 숙녀'로 'young'이 'lady'의 범위를 한정하고, 'a married woman'은 '기혼 여성'으로 'married'가 'woman'의 의미를 구체화하고 있음. → 처방: 형용사가 명사의 의미를 구체화하거나 범위를 좁히는 경우가 많다는 점을 확인하고, 명사의 의미를 잃는다는 오해를 버리기.\n③ 진단: 형용사가 명사의 범위를 한정하는 경우만 있다고 오해했는데, 지문에서 'conscientious work'는 '성실한 작업'으로 서술적 의미를 담고 있으며, 'a perfect copy'도 '완벽한'이라는 서술적 의미를 포함하고 있음. → 처방: 형용사가 서술적 의미를 가질 수도 있다는 점을 염두에 두고, 한정적 의미와 서술적 의미를 모두 고려해서 읽기.\n④ 진단: 서술적 의미가 부가적이라고 오해했는데, 지문에서 'a criminal neglect of duty'는 '범죄적인 태만'으로 'criminal'이 서술적 의미를 강하게 담고 있으며, 'a deaf-and-dumb teacher'도 '청각장애인 교사'와 '벙어리 교사'로 서술적 의미를 포함하고 있음. → 처방: 형용사가 서술적 의미를 가질 수도 있다는 점을 알고, 한정적 의미뿐 아니라 서술적 의미를 함께 생각하며 읽기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Adjectives modify nouns by restricting or defining their reference rather than merely describing them.]"
-   }
-  },
-  {
-   "ts": "2026-07-12T03:59:52.524Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Auxiliary Movement in Question Formation",
-     "How Passive Sentences Restructure Verb Movement",
-     "Structural Positions Generated by Question Formation",
-     "Uniform Patterns in All Verb Movement Types",
-     "Fronting of Tensed Auxiliaries: a Universal Rule"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The tensed auxiliary verb moves to a specific structural position in the phrase marker when forming questions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 수동문 재구조화와 조동사 이동을 혼동. 지문에서 수동문은 'by-구'가 VP 부사어 위치로 이동하는 것이라 언급하고 있으나, 조동사 이동은 질의문 형성에서 주어 앞 위치로의 이동을 뜻함. 두 현상이 다르다는 점을 오독함. → 처방: 질의문 형성에서 조동사의 이동은 주어 앞 위치로의 'fronting'임을 분명히 하고, 수동문에서 일어나는 이동과는 구분지어 공부할 것.\n③ 진단: 질의문 형성으로 생겨나는 구조적 위치가 아니라, 이미 존재하는 구조적 위치를 이용한다는 점을 오해. 지문은 질의문에서 조동사가 이동하는 위치를 '새로운 구조적 위치'로 소개하지만, 학생은 질의문 형성 자체가 새로운 구조를 만든다고 오독함. → 처방: 질의문에서 조동사가 이동하는 위치는 '이미 구조에 존재하는 빈자리'임을 기억하고, 새로운 구조가 생성되는 것이 아님을 명확히 할 것.\n④ 진단: 모든 동사 이동 유형이 '균일한 패턴'을 따른다고 과장하여 해석. 지문은 조동사 이동에만 초점을 맞추고 있으며, 다른 동사 이동(예: 수동문)까지 포함하지 않음. 학생은 이를 일반화하여 오독함. → 처방: 특정 문법 현상(조동사 이동)에 대한 설명임을 분명히 하고, 다른 동사 이동 유형까지 확대 해석하지 않도록 주의할 것.\n⑤ 진단: 조동사의 주어 앞 이동이 '보편적 규칙'이라고 단정. 지문은 영어의 조동사 이동에 대해 설명하고 있으나, 학생은 이를 모든 언어에 적용되는 보편적 규칙으로 오독함. → 처방: 해당 설명이 특정 언어(영어)의 조동사 이동에 국한된 것임을 기억하고, 보편적 규칙으로 확대 해석하지 않도록 할 것.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The tensed auxiliary verb moves to a specific structural position in the phrase marker when forming questions.]"
-   }
-  },
-  {
-   "ts": "2026-07-12T00:12:20.379Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "unspoiled nature contrasted with wasteful extravagance",
-     "unspoiled beauty resulting from wasteful extravagance",
-     "unspoiled condition of objects",
-     "extravagance in all human behaviors",
-     "always wasteful with resources"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'A pristine antique is unspoiled, while prodigal means wastefully extravagant.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 순수한 아름다움이 낭비에서 나온다는 오해. 'pristine'은 '손대지 않은' 상태를 뜻하지, '아름다움'과는 직접 연결되지 않음. → 처방: 단어의 뜻을 정확히 짚고, 'pristine'이 '오염되지 않음'이나 '원래 상태'를 가리킨다는 점을 기억할 것.\n③ 진단: 'pristine'의 뜻을 '오염되지 않은 상태'로만 좁게 해석해, '대상'에만 적용된다고 오독. 'pristine condition'이 '원래 상태'를 뜻함을 놓침. → 처방: 단어의 의미를 넓은 범위로 이해하고, 'condition'이 '상태'뿐 아니라 '원래 모습'을 포함한다는 점을 확인할 것.\n④ 진단: 인간의 모든 행동에 낭비가 있다고 일반화. 'prodigal'은 '특정 행동'에만 적용된다는 지문을 무시함. → 처방: 문맥에서 'prodigal'이 사용된 부분을 정확히 짚고, '모든 행동'이 아니라는 점을 기억할 것.\n⑤ 진단: '항상 낭비만 한다'는 과장된 해석. 'prodigal'은 '특정 상황에서 낭비하는' 상태를 뜻함을 놓침. → 처방: 단어의 의미를 '항상'이 아니라 '특정 경우'로 좁혀 이해하고, 문맥을 꼼꼼히 읽을 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: A pristine antique is unspoiled, while prodigal means wastefully extravagant.]"
    }
   }
  ]
