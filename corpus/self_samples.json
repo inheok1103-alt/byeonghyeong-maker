@@ -1,6 +1,74 @@
 {
- "updated": "2026-07-11T23:18:54.649Z",
+ "updated": "2026-07-12T00:13:44.969Z",
  "samples": [
+  {
+   "ts": "2026-07-12T00:12:20.379Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "unspoiled nature contrasted with wasteful extravagance",
+     "unspoiled beauty resulting from wasteful extravagance",
+     "unspoiled condition of objects",
+     "extravagance in all human behaviors",
+     "always wasteful with resources"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'A pristine antique is unspoiled, while prodigal means wastefully extravagant.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 순수한 아름다움이 낭비에서 나온다는 오해. 'pristine'은 '손대지 않은' 상태를 뜻하지, '아름다움'과는 직접 연결되지 않음. → 처방: 단어의 뜻을 정확히 짚고, 'pristine'이 '오염되지 않음'이나 '원래 상태'를 가리킨다는 점을 기억할 것.\n③ 진단: 'pristine'의 뜻을 '오염되지 않은 상태'로만 좁게 해석해, '대상'에만 적용된다고 오독. 'pristine condition'이 '원래 상태'를 뜻함을 놓침. → 처방: 단어의 의미를 넓은 범위로 이해하고, 'condition'이 '상태'뿐 아니라 '원래 모습'을 포함한다는 점을 확인할 것.\n④ 진단: 인간의 모든 행동에 낭비가 있다고 일반화. 'prodigal'은 '특정 행동'에만 적용된다는 지문을 무시함. → 처방: 문맥에서 'prodigal'이 사용된 부분을 정확히 짚고, '모든 행동'이 아니라는 점을 기억할 것.\n⑤ 진단: '항상 낭비만 한다'는 과장된 해석. 'prodigal'은 '특정 상황에서 낭비하는' 상태를 뜻함을 놓침. → 처방: 단어의 의미를 '항상'이 아니라 '특정 경우'로 좁혀 이해하고, 문맥을 꼼꼼히 읽을 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: A pristine antique is unspoiled, while prodigal means wastefully extravagant.]"
+   }
+  },
+  {
+   "ts": "2026-07-12T00:12:48.724Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "An antique in pristine condition is one that (A) [haven’t been / hasn’t been] tampered with over the years. It’s still in its original condition. A pristine mountain stream is a stream that hasn’t been polluted. PRODIGAL (PRAHD uh gul) adj wastefully extravagant • The chef was prodigal with her employer’s money, (B) [spent thousands / spending thousands] of dollars on ingredients for what was supposed to be (C) [simple meal / a simple meal]. • The young artist was prodigal with his talents: he wasted time and energy on greeting cards that might have been devoted to serious paintings. • The prodigal gambler soon found that she couldn’t afford even a two-dollar bet. To be prodigal is to be characterized by prodigality. Quick Quiz #66 Match each word in the first column with its definition in the second column. Check your answers here. 1. preclude a. outstanding 2. precursor b. triumph 3. predilection c. seize by prior right 4. preeminent d. wastefully extravagant 5. preempt e. unspoiled 6. premise f. natural preference 7. prepossess g. preoccupy 8. prerogative h. right or privilege 9. prevail i. assumption 10. pristine j. forerunner 11. prodigal k. prevent",
+    "choices": [
+     "(A) hasn’t been - (B) spending thousands - (C) a simple meal",
+     "(A) hasn’t been - (B) spent thousands - (C) simple meal",
+     "(A) hasn’t been - (B) spent thousands - (C) a simple meal",
+     "(A) haven’t been - (B) spent thousands - (C) a simple meal",
+     "(A) haven’t been - (B) spending thousands - (C) a simple meal"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) hasn’t been - (B) spending thousands - (C) a simple meal. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘pristine antique’는 단수 주체라 ‘hasn’t been’이 맞지만, 학생은 ‘years’(복수)를 보고 ‘have’를 쓴 듯. 지문 첫 문장 ‘an antique’(단수)를 보지 못한 오독. → 처방: 지문에서 단수/복수 주체를 정확히 짚고, 동사 일치 규칙을 다시 확인하라.\n② 진단: ‘prodigal with her money’는 ‘~을 낭비하다’라는 뜻이므로 ‘spent’를 써야 하는데, 학생은 ‘with’이 이끄는 동명사 구문으로 오해해 ‘spending’을 썼다. 지문 예문 ‘wasted time and energy on greeting cards’를 보지 못한 듯. → 처방: ‘prodigal with’를 ‘~을 낭비하다’로 기억하고, 동명사 vs 과거분사 구별 규칙을 다시 공부하라.\n④ 진단: ‘pristine antique’는 단수 주체라 ‘hasn’t been’이 맞지만, 학생은 ‘years’를 보고 ‘have’를 썼다. 또한 ‘simple meal’은 관사가 필요한데, 학생은 ‘a’를 빼고 썼다. 지문 ‘a stream that hasn’t been polluted’와 ‘a simple meal’을 보지 못한 듯. → 처방: 관사와 동사 일치를 동시에 확인하는 습관을 들여라. 지문에서 예시 문장을 꼼꼼히 읽고, 문법 규칙을 적용하라.\n⑤ 진단: ‘prodigal with’를 ‘~을 낭비하다’로 오해해 ‘spending’을 썼고, ‘simple meal’의 ‘a’를 빼먹었다. 지문 예문 ‘spent thousands of dollars’를 보지 못한 듯. → 처방: ‘prodigal with’의 뜻을 정확히 기억하고, 관사 사용 규칙을 다시 확인하라. 지문 예문을 꼼꼼히 읽고, 문법 규칙을 적용하는 연습을 하라."
+   }
+  },
   {
    "ts": "2026-07-11T23:13:56.155Z",
    "type": "빈칸(문장)",
@@ -324,59 +392,6 @@
     ],
     "answer": 5,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '원하는'이 통제 술어라는 점은 맞지만, '지옥이 날뛸 욕망'이 문법적이지 않다는 점은 지문에서 'ungrammaticality'로 설명한 내용과 일치합니다. 학생은 이 부분을 정확히 이해했습니다. → 처방: 지문에서 '원하는'이 통제 술어라는 설명을 다시 읽고, 통제 술어의 특성과 문법성 조건을 정리해 보세요.\n② 진단: 지문에서 '지옥이 날뛸'이 '원하는'의 주어 자리에만 오는 관용적 표현이라고 설명한 부분을 학생은 옳게 이해했습니다. → 처방: 관용적 표현의 정의와 주어 자리 제한을 예문과 함께 정리하고, 다른 관용 표현도 찾아보며 비교해 보세요.\n③ 진단: 지문에서 '지옥이 날뛸'이 '~처럼 보이다'의 주어 자리에만 오는 것이 아니라, '~처럼 보이다'가 올림 술어이기 때문에 주어 이동이 가능하다는 점을 혼동한 것 같습니다. → 처방: 지문에서 '~처럼 보이다'가 올림 술어라는 설명을 다시 읽고, 올림 술어와 통제 술어의 차이를 명확히 구분해 보세요.\n④ 진단: 지문에서 '~처럼 보이다'가 올림 술어이기 때문에 주어 이동이 가능하다는 설명을 학생은 옳게 이해했습니다. → 처방: 올림 술어와 통제 술어의 차이를 예문과 함께 정리하고, 주어 이동이 일어나는 경우와 그렇지 않은 경우를 구분해 보세요.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T13:56:46.375Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: r)\n[영영풀이] Connection or association; the condition of being related.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] relationships (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T13:57:16.028Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "The greatest changes in men-women ⓐ<u>relationships</u> have occurred in how they work ⓑ<u>together</u>. Now that we see what the ⓒ<u>sentence</u> says, we can make it still more direct: ✓ Men and women have changed their relationships most in how they work together. How writers use metadiscourse varies by field, but you can usually cut these two types: 1. Metadiscourse That Attributes Your Ideas to a Source Don’t announce that something has been ⓓ<u>observed</u>, noticed, noted, and so on; just state the fact: High ⓔ<u>divorce</u> rates have been observed to occur in areas that have been determined to have low population density. ✓ High divorce rates occur in areas with low population density. 2. Metadiscourse That Announces Your Topic The boldface phrases tell your reader what your sentence is “about”: This section introduces another problem, that of noise pollution. The first thing to say about it is that noise pollution exists not only . . .",
-    "choices": [
-     "relationships: Connection or association; the condition of being related.",
-     "together: The worth of something; value.",
-     "sentence: The decision or judgement of a jury or court; a verdict.",
-     "observed: To notice or view, especially carefully or with attention to detail.",
-     "divorce: The legal dissolution of a marriage."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓑ의 풀이는 'rates'의 정의이다. 'together'의 올바른 풀이: Coherent; well organized.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘relationships’를 ‘연결이나 연관성’으로만 오독한 듯함. 지문에서 ‘men-women relationships’는 ‘남녀 관계’를 뜻하며, ‘연결’이란 뜻은 ‘association’이란 단어에 가깝지 ‘relationships’에 직접 연결되지 않음. → 처방: ‘relationships’를 ‘관계’라는 뜻으로만 생각하고, ‘연결’이란 뜻과 혼동하지 않도록 ‘관계’를 떠올리며 풀기.\n② 진단: ‘together’를 ‘가치’라는 뜻으로 오해한 듯함. ‘together’는 ‘함께’라는 뜻이며, 지문에서도 ‘how they work together’(함께 일하는 방법)으로 쓰임. → 처방: ‘together’를 ‘함께’라는 뜻으로만 기억하고, ‘가치’라는 뜻은 ‘worth’라고 생각하도록 하기.\n④ 진단: ‘observed’를 ‘주목하다’로만 오독한 듯함. 지문에서 ‘observed’는 ‘관찰하다’라는 뜻으로 쓰였으며, ‘주목하다’는 ‘notice’에 가깝지 ‘observed’에 직접 연결되지 않음. → 처방: ‘observed’를 ‘관찰하다’라는 뜻으로만 생각하고, ‘주목하다’는 ‘notice’라고 생각하도록 하기.\n⑤ 진단: ‘divorce’를 ‘이혼’이라는 뜻으로만 오독한 듯함. 지문에서도 ‘divorce’는 ‘이혼’을 뜻하며, ‘법적 해체’라는 뜻은 ‘divorce’라는 단어에 직접 포함됨. → 처방: ‘divorce’를 ‘이혼’이라는 뜻으로만 생각하고, ‘법적 해체’라는 뜻도 ‘이혼’이라는 뜻에 포함된다는 점 기억하기."
    }
   }
  ]
