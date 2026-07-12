@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-12T06:48:55.610Z",
+ "updated": "2026-07-12T09:21:41.519Z",
  "samples": [
+  {
+   "ts": "2026-07-12T09:19:33.265Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 2/3 다수결 5번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "단어의 역사적 발생과 변화 과정을 연구하려고",
+     "단어의 역사적 발생과 변화 과정을 증명하려고",
+     "단어의 역사적 발생과 변화 과정을 일부만 설명하려고",
+     "모든 언어의 역사적 변화를 단적으로 설명하려고",
+     "단어의 역사적 발생과 변화 과정의 근거를 제시하려고"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'to trace the historical development and origins of words.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to trace the historical development and origins of words.]\n[오답 진단·처방]\n① 진단: 단어의 '역사적 발생과 변화 과정' 자체를 연구하는 것이 아니라, 특정 단어의 역사적 근거를 '제시'하는 글임을 오해했음. 지문에서 'Origins 80'과 각 단어의 유래 설명이 '근거 제시'에 집중함을 보지 못함. → 처방: 글의 목적을 찾기 위해 '무엇을 설명하는지'를 먼저 확인하고, '연구'나 '증명' 같은 행위가 아니라 '근거 제시'임을 인식할 것.\n② 진단: 단어의 역사적 발생과 변화 과정을 '전부 증명'하려고 한다고 오해했음. 지문은 일부 단어의 유래만 다루며, '증명'보다는 '설명'에 가까움을 놓침. → 처방: 글의 범위를 확인하고, '모든 변화'가 아니라 '일부 단어의 변화'임을 인식한 뒤, '증명'보다는 '설명' 또는 '근거 제시'가 목적임을 떠올릴 것.\n③ 진단: '일부만 설명'하는 것이 아니라, 지문 전체가 단어의 역사적 발생과 변화 과정을 '상세히 설명'함을 오해했음. 'Origins 80'과 각 단어의 유래 설명이 '전체'에 해당함을 보지 못함. → 처방: 글의 분량을 확인하고, '일부'가 아니라 '전체 단어의 변화 과정'을 설명하는 글임을 인식한 뒤, '일부만'이라는 표현이 부적절함을 판단할 것.\n④ 진단: '모든 언어의 역사적 변화'를 다루는 것이 아니라, 특정 단어(amazon, ambassador 등)의 역사적 변화만을 다루고 있음을 오해했음. 지문에서 '모든 언어'라는 포괄적 표현이 없음을 보지 못함. → 처방: 글의 범위를 확인하고, '모든 언어'가 아니라 '특정 단어'의 변화임을 인식한 뒤, '단적으로 설명'이라는 표현이 글의 목적과 맞지 않음을 판단할 것."
+   }
+  },
   {
    "ts": "2026-07-12T06:47:35.985Z",
    "type": "밑줄함의",
@@ -357,40 +392,6 @@
     ],
     "answer": 5,
     "explanation": "빈칸에는 'enhanced advantages'가 들어가 글의 논지를 완성한다 (본문 'greater benefits'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'reap(수확하다)'는 좋은 결과나 이익을 얻는다는 뜻인데, 'minimal benefits(최소한의 이익)'는 이 문맥에서 'reap'의 의미를 약하게 나타낸다. 학생은 'reap'이 '적은' 이익을 의미한다고 오해했을 수 있다. → 처방: 'reap'이 '많은 이익을 얻다'라는 뜻임을 기억하고, 문맥에 맞는 강도를 판단하라.\n② 진단: 지문은 'reap'이 좋은 결과(benefits)를 얻는다는 긍정적 의미를 담고 있는데, 'overwhelming drawbacks(압도적인 단점)'은 부정적 의미를 담고 있다. 학생은 'reap'을 '손해'나 '단점'과 연결했을 수 있다. → 처방: 지문의 긍정적 어조를 살피고, 'reap'이 주는 결과가 이득인지 손해인지 문맥으로 판단하라.\n③ 진단: 지문은 'reap'이 '수확하다'라는 뜻으로 여러 동사나 명사의 의미를 확장하는 데 도움을 준다는 설명을 하고 있다. 'some confusion(일부 혼란)'은 이 문맥과 전혀 맞지 않는다. 학생은 'reap'의 의미를 정확히 이해하지 못해 혼란스러웠을 수 있다. → 처방: 'reap'의 의미를 사전으로 확인하고, 문장 전체의 흐름을 파악한 후 답을 선택하라.\n④ 진단: 지문에서 'reap'은 '수확하다'라는 뜻으로, 'limitless possibilities(무한한 가능성)'는 문맥상 어울리지 않는다. 학생은 'reap'이 '무한한' 결과를 의미한다고 오해했을 수 있다. → 처방: 'reap'이 '수확하다'라는 기본 의미를 떠올리고, 문장에서 얻을 수 있는 결과의 '양'을 판단하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-11T17:17:30.459Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.63,
-    "D": 0.17,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.17)",
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Professor Struik has achieved the (A) [obviously / seemingly] impossible task of compressing the history of mathematics into less than three hundred pages. By stressing the unfolding of a few main ideas and by (B) [minimizing / emphasizing] references to other developments, the author has been able to follow Egyptian, Babylonian, Chinese, Indian, Greek, Arabian, and Western mathematics from the earliest records to the beginning of the present century. He has based his account of nineteenth century advances on persons and schools rather than on subjects as the treatment by subjects has already been used in existing books. Important mathematicians whose work is analysed in detail are Euclid, Archimedes, Diophantos, Hammurabi, Bernoulli, Fermat, Euler, Newton, Leibniz, Laplace, Lagrange, Gauss, Jacobi, Riemann, Cremona, Betti, and others. Among the 47 illustrations arc portraits ofmany ofthese great figures. Each chapter is followed by a (C) [select / random] bibliography. CHARLES WILSON",
-    "choices": [
-     "(A) seemingly - (B) minimizing - (C) select",
-     "(A) obviously - (B) minimizing - (C) random",
-     "(A) seemingly - (B) minimizing - (C) random",
-     "(A) seemingly - (B) emphasizing - (C) select",
-     "(A) obviously - (B) minimizing - (C) select"
-    ],
-    "answer": 1,
-    "explanation": "정답 조합: (A) seemingly - (B) minimizing - (C) select. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: 문맥에 맞지 않게 'obviously'와 'minimizing'을 선택하여 Professor Struik 의 업적이 쉽게 이루어진 것으로 오독했으며, 또한 'random'을 선택하여 참고문헌의 선택이 무작위로 이루어진 것으로 혼동했다. → 처방: 문맥을 주의깊게 읽고, 각 단어가 문장 전체에 미치는 영향을 고려하여 선택해야 한다.\n③ 진단: 문맥에 맞지 않게 'seemingly'와 'minimizing'을 선택하여 Professor Struik 의 업적이 어려워 보이지만 실제로는 쉽게 이루어진 것으로 오독했으며, 또한 'random'을 선택하여 참고문헌의 선택이 무작위로 이루어진 것으로 혼동했다. → 처방: 문맥을 주의깊게 읽고, 각 단어가 문장 전체에 미치는 영향을 고려하여 선택해야 한다.\n④ 진단: 문맥에 맞지 않게 'emphasizing'을 선택하여 참고문헌의 선택이 강조된 것으로 오독했으며, 또한 'select'을 선택하여 참고문헌의 선택이 선택된 것으로 혼동했다. → 처방: 문맥을 주의깊게 읽고, 각 단어가 문장 전체에 미치는 영향을 고려하여 선택해야 한다.\n⑤ 진단: 문맥에 맞지 않게 'obviously'를 선택하여 Professor Struik 의 업적이 쉽게 이루어진 것으로 오독했다. → 처방: 문맥을 주의깊게 읽고, 각 단어가 문장 전체에 미치는 영향을 고려하여 선택해야 한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
