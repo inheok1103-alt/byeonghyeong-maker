@@ -647,8 +647,26 @@
     var shortCue = a <= minO && minO > a * 1.3 && (minO - a) >= 6;   // 정답 최단(짧은 게 정답)
     return longCue || shortCue;
   }
+  // 정답만 유독 길/짧을 때 오답 4개만 정답 밀도로 재작성(정답 텍스트·위치 보존). 반환 {choices,answer} 또는 원본.
+  async function homogenizeDistractors(ch, ai, type) {
+    if (!answerIsLongCued(ch, ai)) return { choices: ch, answer: ai };
+    var ansT = ch[ai - 1], others = ch.filter(function (_, i) { return i !== ai - 1; });
+    var rr = await llmJSON([{ role: "system", content: "선지 균질화 검수관. JSON 배열만." },
+      { role: "user", content: "정답(고정·수정 금지, 길이 " + ansT.replace(/\s+/g, " ").length + "자): \"" + ansT + "\"\n정답만 유독 길거나 짧아 '길이로 정답이 티나는' 형태 단서가 있다. 오답 4개를 '정답과 비슷한 길이·구문·구체성'으로 다시 써라(정답이 짧으면 오답도 짧게, 길면 길게) — 각자 틀린 이유(부분·전도·초점이탈·과장)는 유지하고, 정답과 의미가 겹치지 않게(복수정답 금지), 지문 소재·어휘를 재활용해 그럴듯하게. 유형:" + (type || "") + "\n오답: " + JSON.stringify(others) + "\nJSON 문자열 배열 4개만." }], { temperature: 0.5, timeout: 50000 }).catch(function () { return null; });
+    var nd = Array.isArray(rr) ? rr.map(clean1).filter(function (c) { return c && !badChoice(c); }) : [];
+    if (nd.length >= 4) { var merged = [], di = 0; for (var mi = 0; mi < 5; mi++) merged.push(mi === ai - 1 ? ansT : nd[di++]); return { choices: merged, answer: ai }; }
+    return { choices: ch, answer: ai };
+  }
   async function reviewOptions(answer, dis, ctx) {
     ctx = ctx || {};
+    // 정답 원문 보존형(함의·빈칸 등 정답 극성이 뒤집히면 치명적인 유형): LLM 재작성 없이 정답을 그대로 넣고 오답만 균질화.
+    //   → reviewOptions의 전면 재작성이 정답의 뜻을 뒤집어 '정답 없는 문항'이 되는 버그 차단(정답↔해설 desync 방지).
+    if (ctx.preserveAnswer) {
+      var cleanDis = (dis || []).map(clean1).filter(function (c) { return c && !badChoice(c); }).slice(0, 4);
+      var base = shuffleAnswer(answer, cleanDis);
+      if (!base) return null;
+      return await homogenizeDistractors(base.choices, base.answer, ctx.type);
+    }
     var sys = "너는 대한민국 수능 영어 '선지(보기) 검수관'이다. 5개 선택지를 최종 점검·정리한다: ①정답은 글을 정확히 반영하는 '단 하나' ②★오답 4개는 정답과 '핵심 주장이 겹치지 않아야' 한다 — 정답의 근접 패러프레이즈·유의어 반복 금지(복수정답 방지). 각 오답에 서로 다른 오답 DNA(부분참·전도·과잉·축소·초점이동·태도왜곡·조건누락 중 1) ③오답은 정답과 반대이거나 지문 일부만 담거나 지문에 없는 내용이어야 하되, 지문 소재·어휘를 재활용해 그럴듯하게(엉뚱한 딴 분야 금지) ④5개의 길이·문법 형태 통일(정답만 길거나 구체적 금지) ⑤빈칸/요약형이면 완성 문장이 아니라 끼워지는 '어구/절'로 ⑥정답은 본문 표현을 그대로 베끼지 말고 패러프레이즈 ⑦메타 표현(본문은/글은/사전적/문자적/원문보다) 금지. JSON만.";
     var user = "유형: " + (ctx.type || "") + "\n정답 선지: \"" + answer + "\"\n오답 초안: " + JSON.stringify(dis || []) + (ctx.main ? ("\n글 핵심: " + ctx.main) : "") + (ctx.slot ? ("\n빈칸 프레임(모든 선지는 이 '____' 자리에 문법적으로 그대로 들어가야 함, 완성문장 금지): " + ctx.slot) : "") + "\n위 기준대로 5개 선지를 다듬어 JSON으로: {\"choices\":[\"5개 문자열\"],\"answer\":정답의 1~5 위치(정수)}. JSON만.";
     var r = await llmJSON([{ role: "system", content: sys }, { role: "user", content: user }], { temperature: 0.4, timeout: 60000 });
@@ -658,15 +676,7 @@
       var ai = parseInt(r.answer, 10); if (!(ai >= 1 && ai <= 5)) ai = 0;
       var bm = bestMatchIdx(ch, answer);   // 정답 텍스트 위치를 코드로 도출(자기보고보다 우선)
       if (bm >= 0) ai = bm + 1; else if (!ai) ai = 1;
-      // 형태단서 게이트: 정답만 유독 길면 오답을 정답 밀도로 확장해 균질화(정답 텍스트·위치 보존 → 정합 안전)
-      if (answerIsLongCued(ch, ai)) {
-        var ansT = ch[ai - 1], others = ch.filter(function (_, i) { return i !== ai - 1; });
-        var rr = await llmJSON([{ role: "system", content: "선지 균질화 검수관. JSON 배열만." },
-          { role: "user", content: "정답(고정·수정 금지, 길이 " + ansT.replace(/\s+/g, " ").length + "자): \"" + ansT + "\"\n정답만 유독 길거나 짧아 '길이로 정답이 티나는' 형태 단서가 있다. 오답 4개를 '정답과 비슷한 길이·구문·구체성'으로 다시 써라(정답이 짧으면 오답도 짧게, 길면 길게 맞춰라) — 각자 틀린 이유(부분·전도·초점이탈·과장)는 유지하고, 정답과 의미가 겹치지 않게(복수정답 금지), 지문 소재·어휘를 재활용해 그럴듯하게. 유형:" + (ctx.type || "") + "\n오답: " + JSON.stringify(others) + "\nJSON 문자열 배열 4개만." }], { temperature: 0.5, timeout: 50000 }).catch(function () { return null; });
-        var nd = Array.isArray(rr) ? rr.map(clean1).filter(function (c) { return c && !badChoice(c); }) : [];
-        if (nd.length >= 4) { var merged = [], di = 0; for (var mi = 0; mi < 5; mi++) merged.push(mi === ai - 1 ? ansT : nd[di++]); ch = merged; }
-      }
-      return { choices: ch, answer: ai };
+      return await homogenizeDistractors(ch, ai, ctx.type);   // 형태단서 게이트: 정답만 유독 길면 오답만 균질화(정답 텍스트·위치 보존)
     }
     return shuffleAnswer(answer, dis || []);
   }
@@ -814,6 +824,9 @@
     var onP2 = opts && opts.onProgress;
     var o = await llmJSON([{ role: "system", content: "수능 빈칸추론 출제자. 빈칸은 필자의 핵심 주장·결론을 담은 자리에 두고 도입부 정의문·예시·부연은 피한다. JSON만." }, { role: "user", content: "다음 글에서 필자의 핵심 주장/결론을 담은 문장을 고르고, 그 문장에서 논지의 핵심 어구(3~8단어)를 ____ 로 비워라(도입부 첫 문장은 피할 것). 정답은 빈칸에 '문법적으로 그대로 들어맞는 간결한 영어 어구(완성 문장 절대 아님)'로, 본문 표현이 아니라 상위어·동의어로 패러프레이즈하라. JSON: {\"blanked\":\"해당 어구만 ____로 바꾼 지문 전체\",\"answer\":\"빈칸에 들어갈 정답 어구\",\"orig\":\"비운 원래 어구\",\"frame\":\"빈칸이 든 문장만(____ 포함)\"}.\n\n" + passage }], { temperature: 0.4, timeout: 60000 });
     if (!o || !o.answer || !o.blanked) return null;
+    // 관용구·고정표현 파손 방어: 원어구가 한 단어면(예: 'beside the point'의 'point'만 뚫음) 관용구 한복판을 뚫은 것 → 폐기(재시도).
+    //   빈칸은 3~8단어 핵심어구여야 하며, 단일 명사 뚫기는 'beside the ____'처럼 비문·정답불성립을 유발.
+    if (o.orig && String(o.orig).trim().split(/\s+/).filter(Boolean).length < 2) return null;
     // verbatim recall 방어(실전기출: 빈칸은 담화추론이지 원문 눈찾기가 아님) — 정답이 원문 표현 그대로면 상위어·동의어로 1회 재작성, 실패 시 폐기
     if (blankVerbatim(o.answer, passage)) {
       var rw = await ask("다음 어구를 '뜻은 같지만 본문 표현을 그대로 쓰지 않는' 상위어·동의어 어구로 바꿔라(3~8단어, 완성 문장 아님). 어구만 출력.\n어구: " + o.answer, "패러프레이즈된 어구만 출력. 설명·따옴표 금지.", { noRule: true, temperature: 0.6 }).catch(function () { return ""; });
@@ -840,7 +853,7 @@
     log(onP2, '   ↳ 정답 어구: "' + String(o.answer).slice(0, 50) + '"' + (o.orig ? (' (원문 "' + String(o.orig).slice(0, 30) + '" 패러프레이즈)') : ''));
     var frame = o.frame || "";
     var dis = await makeDistractors(o.answer, "빈칸 '____'에 그대로 끼워지는 간결한 영어 어구(완성 문장 아님, 정답과 품사·길이 통일)", "빈칸 프레임: " + (frame || "(문장 일부)") + "\n오답은 본문 어휘를 재활용하되 이 자리에 넣으면 논리가 어긋나게(정반대/부분일치/무관/과장).");
-    var a = await reviewOptions(o.answer, dis, { type: "빈칸", slot: frame, main: o.answer }); if (!a) return null;
+    var a = await reviewOptions(o.answer, dis, { type: "빈칸", slot: frame, main: o.answer, preserveAnswer: true }); if (!a) return null;   // 정답 어구 원문 보존 — 정답↔해설 desync('point of gardening' 해설인데 정답은 'heart of the soil') 차단
     // 형태 가드: 완성문장형(주어+be/조동사 시작) 선지를 어구형으로 축약
     var ch = (a.choices || []).map(function (c) { return String(c).replace(/^\s*(happiness|it|one|people|the individual|this|they|we|society)\s+(is|are|was|were|has|have|can|will|becomes?)\s+/i, "").trim(); });
     if (blankVerbatim(ch[a.answer - 1] || o.answer, passage)) return null;   // 최종 선지 verbatim 재검(reviewOptions가 원문어구로 복원했을 가능성 차단)
@@ -909,7 +922,8 @@
       clean = await flagEquivalents(o.meaning, merged.slice(0, 6));
     }
     if (clean.length < 4) return null;   // 의미 유일성 확보 실패 → 폐기(복수정답 방지)
-    var a = await reviewOptions(o.meaning, clean.slice(0, 4), { type: "함의" }); if (!a) return null;
+    var a = await reviewOptions(o.meaning, clean.slice(0, 4), { type: "함의", preserveAnswer: true }); if (!a) return null;   // 정답(함의) 원문 보존 — 재작성으로 정답 극성이 뒤집혀 '정답 없는 문항'이 되던 버그 차단
+    if (!a.choices[a.answer - 1] || tokOverlap(a.choices[a.answer - 1], o.meaning) < 0.6) return null;   // 정답 선지가 실제로 meaning인지 최종 확인(아니면 폐기)
     var pg = underlineIn(passage, o.phrase);
     if (pg.indexOf("<u>") < 0) return null;   // 밑줄이 없으면 문항 성립 불가 → 실패 처리(재시도)
     return { type: "함의", instruction: "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?", passage: pg, choices: a.choices, answer: a.answer, explanation: "밑줄 친 부분은 '" + o.meaning + "'을 함의한다." };
@@ -1955,10 +1969,12 @@
       { role: "user", content: "다음 지문을 문장 번호별로 빠짐없이 분석하라.\n[문장 목록]\n" + listed + "\n\nJSON:\n{\"topic_ko\":\"주제 한 줄\",\"thesis_ko\":\"필자 주장 한 줄\",\"flow\":[{\"n\":문장번호,\"role\":\"도입|주장|근거|예시|대조|재진술|결론\"}],\"sents\":[{\"n\":1,\"ko\":\"자연스러운 직역+의역\",\"syntax\":\"이 문장의 핵심 문법 구조를 구체적으로(예: 'which 관계대명사절이 주어를 수식', 'not A but B 병렬', '분사구문 = 부대상황'). 특별한 구문 없으면 빈 문자열\",\"fn\":\"core|evidence|logic|grammar|claim|aux\"}],\"vocab\":[{\"w\":\"단어\",\"pos\":\"품사(n/v/adj/adv)\",\"ko\":\"뜻\",\"syn\":\"유의어 1~2개\"}],\"expr\":[{\"e\":\"지문 속 주요 구문·숙어·연어\",\"ko\":\"뜻·쓰임\"}],\"connect\":[{\"w\":\"연결어/담화표지\",\"role\":\"대조|인과|예시|첨가|결론 등 기능\"}],\"points\":[\"내신 출제 포인트(최대 4개)\"]}\n규칙: sents 개수=문장 수(" + sents.length + "). vocab 5개(품사 포함). expr 3~5개(지문에 실제 있는 표현). connect는 지문의 연결어. syntax는 구체적으로." }
     ], { noRule: true, timeout: 75000 }).catch(function () { return null; });
     if (!o || !o.sents || !o.sents.length) return null;
+    // 한국어 필드 위생(Codex analysis_mojibake): 키릴·한자·가나·깨진문자 제거(LLM이 간혹 러시아어·중국어 토큰 혼입)
+    function koHy(s) { return String(s || "").replace(/[Ѐ-ӿ぀-ヿ㐀-鿿�]+/g, "").replace(/\s{2,}/g, " ").replace(/^[\s,·]+|[\s,·]+$/g, "").trim(); }
     var map = {}; (o.sents || []).forEach(function (x) { if (x && x.n >= 1) map[x.n] = x; });
     var rows = sents.map(function (en, i) {
       var m = map[i + 1] || {};
-      return { n: i + 1, en: en, ko: String(m.ko || ""), syntax: String(m.syntax || ""), fn: /^(core|evidence|logic|grammar|claim|aux)$/.test(m.fn) ? m.fn : "aux" };
+      return { n: i + 1, en: en, ko: koHy(m.ko), syntax: koHy(m.syntax), fn: /^(core|evidence|logic|grammar|claim|aux)$/.test(m.fn) ? m.fn : "aux" };
     });
     var flow = (o.flow || []).filter(function (x) { return x && x.n >= 1 && x.n <= sents.length && x.role; });
     // 성분분석(전 문장 S/V/O/C/M) + 출제예상 플로우(별도 호출 — 메인 분석 안정성 유지). 배경지식과 병렬.
