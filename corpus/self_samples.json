@@ -1,6 +1,61 @@
 {
- "updated": "2026-07-12T21:11:17.669Z",
+ "updated": "2026-07-12T22:10:34.530Z",
  "samples": [
+  {
+   "ts": "2026-07-12T22:09:43.848Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "CHAPTER 2 Markedness and Blocking Why is it odd to say *'a female nurse', while it is reasonable to say 'a male nurse'? If you point to your thumb and ask 'Is this a finger?' you will probably not get a 'Yes' answer. You can then ask 'How many fingers do you have?' and will almost certainly get an answer of 'Ten'. Is language really so illogical? Let us begin with a parody of a familiar puzzle. One day, John went shopping with his mother. On the way their car was hit by a truck and his mother was killed. John was seriously injured and taken to a hospital in an ambulance. One of the nurses in the emergency room was startled, and cried, 'Oh my God, that's my son!' Who was this nurse? This puzzle takes advantage of the fact that in our culture nurses are usually women. This assumption, however, contradicts the story that John's mother had just died. When you finally",
+    "choices": [
+     "이 이야기는 존의 어머니가 사망한 직후 병원에서 발생했다는 점",
+     "존은 사고로 심각한 부상을 입고 구급차로 병원으로 후송되었다는 점",
+     "응급실 간호사가 '맙소사, 저건 내 아들!'이라고 외쳤다는 점",
+     "이 이야기는 간호사가 보통 여자라는 문화적 편견을 이용했다는 점",
+     "이 이야기는 존의 어머니가 사망하기 전에 병원에서 발생했다는 점"
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 부분에서 'On the way their car was hit by a truck and his mother was killed.'라고 명시되어 있어 존의 어머니가 사고로 사망했다는 사실을 알 수 있는데, 이 선지를 고른 학생은 사고 직후 병원에서 일어난 일로 오해한 것으로 보임. → 처방: 지문 전체 흐름을 따라가며 시간적 순서(사고 → 병원 도착 → 응급실 상황)를 정확히 확인할 것.\n② 진단: 지문에서 'John was seriously injured and taken to a hospital in an ambulance.'라고 기술되어 있어 존이 구급차로 병원으로 후송되었다는 사실이 드러나 있는데, 이 선지를 고른 학생은 구급차 대신 다른 수단을 상상했을 가능성이 있음. → 처방: 지문에서 언급된 'ambulance'라는 단어를 놓치지 말고, 병원으로 후송된 경로를 정확히 기억할 것.\n③ 진단: 지문에서 'One of the nurses in the emergency room was startled, and cried, \"Oh my God, that's my son!\"'라고 직접적으로 기술되어 있어 이 선지가 사실임을 확인할 수 있는데, 이 선지를 고른 학생은 응급실 간호사의 대사를 잘못 기억했거나 무시했을 것임. → 처방: 지문의 직접 인용 대사나 핵심 문장을 놓치지 말고 꼼꼼히 읽을 것.\n④ 진단: 지문에서 'This puzzle takes advantage of the fact that in our culture nurses are usually women.'라고 명시되어 있어 문화적 편견(간호사=여자)을 이용했다는 사실이 드러나 있는데, 이 선지를 고른 학생은 이 부분을 간과했거나 오해했을 가능성이 있음. → 처방: 지문의 'markedness and blocking' 개념과 연결 지어, 문화적 편견이 어떻게 활용되었는지 생각해 볼 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-12T22:10:08.868Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "CHAPTER 2 Markedness and Blocking Why is it odd to say *'ⓐ<u>a female nurse</u>', while it is reasonable to say 'ⓑ<u>a female nurse</u>'? If you point to your thumb and ask 'ⓒ<u>Is this a finger?</u>' you will probably not get a 'Yes' answer. You can then ask 'How many fingers do you have?' and will almost certainly get an answer of 'Ten'. Is language really so illogical? Let us begin with a parody of a familiar puzzle. One day, John went shopping with his mother. On the way their car ⓓ<u>was hit by</u> a truck and his mother was killed. John was seriously injured and taken to a hospital in an ambulance. One of the nurses in the emergency room was startled, and cried, 'Oh my God, ⓔ<u>that's my son</u>!' Who was this nurse? This puzzle takes advantage of the fact that in our culture nurses are usually women. This assumption, however, contradicts the story that John's mother had just died. When you finally",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [형용사부사] ⓑ: 'a female nurse' → 'a male nurse' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-12T21:08:24.929Z",
    "type": "빈칸(문장)",
@@ -265,60 +320,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T15:18:50.401Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "Is ⓐ<u>Melanie having</u> a new cooker installed? Note that ⓑ<u>we used</u> the perfect or the continuous (have had, are having). In negatives and questions in simple tenses, we use a form of do. Mark doesn't ⓒ<u>have his suits cleaned</u> at Fastclean. We didn't have new windows put in because it was too expensive. Do you have your car serviced regularly? Where ⓓ<u>did you have your hair cut</u>? C ⓔ<u>Get something done</u> We can also use get something done. We must have another key made. OR We must get another key made. The sentences have the same meaning, but get is more informal than have. Here are some more examples with get. Laura got her shoes repaired. We're getting the carpet cleaned. Where did you get your hair cut? Do you get your heating checked every year? D Have meaning 'experience' We can use have in this structure with the meaning 'experience something', often something unpleasant. We had all our money stolen. The car had its mirror pulled off.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [시제] ⓑ: 'we used' → 'we can use' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T09:19:33.265Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 2/3 다수결 5번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "단어의 역사적 발생과 변화 과정을 연구하려고",
-     "단어의 역사적 발생과 변화 과정을 증명하려고",
-     "단어의 역사적 발생과 변화 과정을 일부만 설명하려고",
-     "모든 언어의 역사적 변화를 단적으로 설명하려고",
-     "단어의 역사적 발생과 변화 과정의 근거를 제시하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'to trace the historical development and origins of words.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to trace the historical development and origins of words.]\n[오답 진단·처방]\n① 진단: 단어의 '역사적 발생과 변화 과정' 자체를 연구하는 것이 아니라, 특정 단어의 역사적 근거를 '제시'하는 글임을 오해했음. 지문에서 'Origins 80'과 각 단어의 유래 설명이 '근거 제시'에 집중함을 보지 못함. → 처방: 글의 목적을 찾기 위해 '무엇을 설명하는지'를 먼저 확인하고, '연구'나 '증명' 같은 행위가 아니라 '근거 제시'임을 인식할 것.\n② 진단: 단어의 역사적 발생과 변화 과정을 '전부 증명'하려고 한다고 오해했음. 지문은 일부 단어의 유래만 다루며, '증명'보다는 '설명'에 가까움을 놓침. → 처방: 글의 범위를 확인하고, '모든 변화'가 아니라 '일부 단어의 변화'임을 인식한 뒤, '증명'보다는 '설명' 또는 '근거 제시'가 목적임을 떠올릴 것.\n③ 진단: '일부만 설명'하는 것이 아니라, 지문 전체가 단어의 역사적 발생과 변화 과정을 '상세히 설명'함을 오해했음. 'Origins 80'과 각 단어의 유래 설명이 '전체'에 해당함을 보지 못함. → 처방: 글의 분량을 확인하고, '일부'가 아니라 '전체 단어의 변화 과정'을 설명하는 글임을 인식한 뒤, '일부만'이라는 표현이 부적절함을 판단할 것.\n④ 진단: '모든 언어의 역사적 변화'를 다루는 것이 아니라, 특정 단어(amazon, ambassador 등)의 역사적 변화만을 다루고 있음을 오해했음. 지문에서 '모든 언어'라는 포괄적 표현이 없음을 보지 못함. → 처방: 글의 범위를 확인하고, '모든 언어'가 아니라 '특정 단어'의 변화임을 인식한 뒤, '단적으로 설명'이라는 표현이 글의 목적과 맞지 않음을 판단할 것."
    }
   }
  ]
