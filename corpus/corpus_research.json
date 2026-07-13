@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-13T21:15:23.469Z",
+ "updated": "2026-07-13T22:15:58.209Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
- "count": 51,
+ "count": 52,
  "notes": [
+  {
+   "ts": "2026-07-13T22:15:34.761Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'competency'와 같은 전문용어는 '-ency'로, 'transitional'은 '-ional'로 철자 오류가 빈번하다. 또한 'process'의 복수형 'processes'와 같은 세부 문법 규칙이 내신 변형에 활용 가능하다.",
+   "rule": "CEFR B1-B2 수준 내신 문항에서는 '-ency'와 '-ional' 접미사가 포함된 단어(예: competency, transitional)를 철자 오류로 제시하고, 올바른 형태(-ency → -ency, -ional → -ional)를 선택하게 하거나 직접 수정하게 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-13T21:14:55.874Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
