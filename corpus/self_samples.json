@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-13T17:26:41.574Z",
+ "updated": "2026-07-13T19:54:03.670Z",
  "samples": [
+  {
+   "ts": "2026-07-13T19:51:52.189Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "자유는 수치와 불행을 감수하게 만드는 희망의 대상일 뿐이다.",
+     "자유야말로 수치와 불행을 이겨내는 데 반드시 필요한 희망이다.",
+     "자유는 모든 수치와 불행을 무조건 정당화할 수 있는 절대적 가치를 지닌다.",
+     "자유는 때로 수치나 불행을 감수할 만큼 절실한 희망으로 작용한다.",
+     "자유는 어떤 고통도 감수할 만큼 절실한 희망의 대상이다."
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'Liberty is the ultimate hope that justifies enduring any ignominy.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Liberty is the ultimate hope that justifies enduring any ignominy.]\n[오답 진단·처방]\n① 진단: ‘자유는 수치와 불행을 감수하게 만드는 희망의 대상일 뿐이다’라는 말은 지문에서 자유가 수치와 불행을 감수할 만큼 절실한 희망이라는 점과 반대되는 의미로, 희망의 강도와 목적을 오해한 것이다. 지문은 자유를 얻기 위해 수치와 불행을 감수할 수 있음을 강조하지, 자유가 수치와 불행을 ‘만드는’ 대상이 아니라고 말한다. → 처방: ‘자유’를 ‘희망의 대상’으로만 보지 말고, 그 희망이 어떤 어려움을 감수하게 하는지를 정확히 짚어보세요. 희망의 ‘목적’과 ‘강도’를 문장에서 찾으세요.\n② 진단: ‘자유야말로 수치와 불행을 이겨내는 데 반드시 필요한 희망이다’라는 말은 자유가 수치와 불행을 ‘이겨내는’ 수단으로 오해한 것이다. 지문은 자유를 얻기 위해 수치와 불행을 감수할 수 있음을 말하고, 자유가 수치와 불행을 ‘이기는’ 대상이 아님을 혼동했다. → 처방: ‘이겨낸다’는 표현이 아니라 ‘감수한다’는 표현에 주목하세요. 희망의 ‘결과’가 아니라 ‘과정’을 읽으세요.\n③ 진단: ‘자유는 모든 수치와 불행을 무조건 정당화할 수 있는 절대적 가치를 지닌다’라는 말은 ‘무조건’, ‘절대적’이라는 말이 과장된 해석이다. 지문은 자유를 얻기 위해 수치와 불행을 감수할 수 있음을 말하고, 그 가치가 무조건적이거나 절대적임을 말하지 않는다. → 처방: ‘무조건’, ‘절대적’이라는 말이 지문에 있는지 확인하세요. 문장의 ‘한계’를 읽으세요.\n⑤ 진단: ‘자유는 어떤 고통도 감수할 만큼 절실한 희망의 대상이다’라는 말은 ‘어떤 고통’까지 포함하는 과도한 일반화다. 지문은 ‘수치와 불행을 감수할 만큼’이라는 구체적인 어려움을 말하고, ‘어떤 고통’이란 말이 없다. → 처방: ‘어떤’이라는 말이 지문에 있는지 확인하세요. 문장의 ‘범위’를 정확히 읽으세요."
+   }
+  },
+  {
+   "ts": "2026-07-13T19:53:35.347Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: n)\n[영영풀이] At no time; on no occasion; in no circumstance.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] never (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-13T17:26:14.548Z",
    "type": "서술형(자유)",
@@ -300,60 +354,6 @@
     ],
     "answer": 3,
     "explanation": "[어법: 준동사분사] 정답 ⓒ의 'a nominal which it case-mark'는 'a nominal which it case-marks'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-13T00:12:46.161Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "That is, ⓐ<u>read would have originated</u> as the head V of VP (agreeing with and assigning accusative case to its object the book), and would subsequently raise to adjoin to an affixal agentive light-verb ø, ⓑ<u>which has a meaning</u> paraphraseble as ‘perform the action of’. If we suppose that a transitive V only triggers movement of a nominal which it case-marks to the edge of VP if the nominal in question is not already the highest non-head constituent within VP, then ⓒ<u>there will be no possibility</u> of raising the DP the book in (82) to become the specifier of VP because ⓓ<u>this DP is already the highest</u> non-head constituent within VP by virtue of being the only non-head constituent within VP. Chomsky’s light-verb analysis of two-place transitive predicates can be extended in an interesting way to handle the syntax of a class of verbs ⓔ<u>which are known</u> as unergative predicates. These are verbs like those italicized in (83) below which have agentive subjects, but which appear to have no complement:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓐ: 'read would have originated' → 'read would originate' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T23:10:55.002Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "장소를 자주 바꾸는 학생이 공부를 더 잘한다는 통념이 있다",
-     "공부 장소를 바꾸면 기억력이 좋아지는 경향이 관찰된다",
-     "공부를 한 장소에만 집중하면 기억력이 전반적으로 약해진다",
-     "공부 장소를 여러 곳으로 바꾸면 기억력이 모든 유형에서 동일하게 향상된다",
-     "공부를 할 때는 장소를 바꾸는 것이 기억력을 높이기 위한 필수 조건이다"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Study in different places enhances memory recall.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: 지문은 '장소를 바꾸면 기억력이 좋아진다'는 연구 결과를 소개하지만, '통념'이라는 말은 nowhere 언급하지 않음. 학생은 지문의 '연구 결과'와 '일반적인 통념'을 혼동했을 가능성 있음. → 처방: 지문에서 주장하는 '연구 결과'에만 집중하고, '통념'이라는 말은 무시하도록 연습하기.\n③ 진단: 지문은 '장소를 바꾸면 기억력이 좋아진다'고 하지만, '장소에만 집중하면 기억력이 약해진다'는 말은 nowhere 언급하지 않음. 학생은 지문의 '장소 변화'와 '장소 집중'을 반대 개념으로 오해했을 가능성 있음. → 처방: 지문의 핵심 주장('장소 변화가 기억력 강화에 도움')을 정확히 파악한 후, 반대 개념은 배제하도록 연습하기.\n④ 진단: 지문은 '장소를 여러 곳으로 바꾸면 기억력이 좋아진다'는 경향을 언급하지만, '모든 유형에서 동일하게 향상된다'는 말은 nowhere 언급하지 않음. 학생은 '향상'의 범위를 과장해 해석했을 가능성 있음. → 처방: 지문의 '기억력 향상'이 '일반적인 경향'임을 기억하고, '모든 유형'이라는 과장된 표현은 배제하도록 연습하기.\n⑤ 진단: 지문은 '장소를 바꾸는 것이 도움이 된다'고 하지만, '필수 조건'이라는 말은 nowhere 언급하지 않음. 학생은 '도움'과 '필수'를 혼동했을 가능성 있음. → 처방: 지문의 '도움이 된다'는 표현을 정확히 이해하고, '필수 조건'이라는 절대적 표현은 배제하도록 연습하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Study in different places enhances memory recall.]"
    }
   }
  ]
