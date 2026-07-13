@@ -1,6 +1,93 @@
 {
- "updated": "2026-07-13T22:15:58.213Z",
+ "updated": "2026-07-13T23:18:31.800Z",
  "samples": [
+  {
+   "ts": "2026-07-13T23:15:25.665Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 2번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "NEW WORDS loathe lōth reprimand rep´ rə mand lackluster lak´ lus´ tər caustic kô´ stik wrest rest WEEK 3 DAY 1 THE PEP TALK “If there’s one thing I loathe,” the coach said, “it’s a quitter.” He had good reason to reprimand us at half-time, because the scoreboard revealed that we were losing, 45–20. Our lackluster performance indicated to him that we had forgotten the rudimentary* aspects of basketball. <u>His caustic remarks fired us up</u>, however, and we dashed out, determined to wrest control of the game from our rivals. Sample Sentences Use the new words in the following sentences. 1.With the help of his brothers he was able to ________________ the leadership of the company from his partner. 2.Speaking in a monotone, the politician was booed for his ________________ address. 3.In a ________________ article, the drama critic slaughtered the hapless* actors. 4.I ________________ spinach but I love other green vegetables. 5.When Ed arrived late, he knew that the grocer would ________________ him. Definitions Match the new words with their dictionary definitions. 6.loathe a. dull 7.reprimand (v.) b. to hate",
+    "choices": [
+     "His harsh and critical words motivated us to work harder and regain our confidence.",
+     "His caustic remarks were the direct result of our previous failures to meet expectations.",
+     "Because he made caustic remarks, we lost motivation and gave up on our goals entirely.",
+     "His caustic remarks made us feel angry and defensive, preventing us from working effectively.",
+     "His caustic remarks were designed to insult and demoralize us completely."
+    ],
+    "answer": 1,
+    "explanation": "밑줄 친 부분은 'His harsh and critical words motivated us to work harder and regain our confidence.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘caustic remarks’의 결과가 아니라 ‘원인’이 ‘우리의 부진’이었음을 혼동. 지문에서 ‘caustic remarks’는 ‘원인’이 아니라 ‘결과’로 ‘우리를 분발시켰다’고 서술됨. → 처방: ‘결과’를 ‘원인’으로 오해하지 말고, 지문에서 ‘결과’가 무엇인지 정확히 짚고 넘어가기.\n③ 진단: ‘caustic remarks’가 ‘의욕 상실’로 이어졌다고 오독. 지문에서 ‘caustic remarks’는 오히려 ‘우리를 불태웠다’(fired us up)고 긍정적 효과를 보임. → 처방: ‘의미’를 Context(문맥)에서 파악하기. 긍정적·부정적 효과를 지문에서 찾고 비교하기.\n④ 진단: ‘angry and defensive’로 오해. 지문에서 ‘caustic remarks’는 ‘분발’(fired us up)을 유도했다고 서술되어 있음. → 처방: ‘감정’을 지문에서 직접 인용한 표현과 일치시키기. ‘분발’·‘의욕’ 같은 긍정적 효과도 확인하기.\n⑤ 진단: ‘insult and demoralize’를 ‘완전히’로 과장. 지문에서 ‘caustic remarks’는 ‘분발’을 유도했다고 서술되어 있음. → 처방: ‘과장된 해석’을 방지하기. 지문에서 ‘완전히’라는 극단적 표현이 있는지 확인하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-13T23:17:14.981Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답-오답 근접(70%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 4번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "NEW WORDS loathe lōth reprimand rep´ rə mand lackluster lak´ lus´ tər caustic kô´ stik wrest rest WEEK 3 DAY 1 THE PEP TALK “If there’s one thing I loathe,” the coach said, “it’s a quitter. ” He had good reason to reprimand us at half-time, because the scoreboard revealed that we were losing, 45–20. Our lackluster performance indicated to him that we had forgotten the rudimentary* aspects of basketball. His caustic remarks fired us up, however, and we dashed out, determined to wrest control of the game from our rivals. Sample Sentences Use the new words in the following sentences. With the help of his brothers he was able to ________________ the leadership of the company from his partner. Speaking in a monotone, the politician was booed for his ________________ address. In a ________________ article, the drama critic slaughtered the hapless* actors. I ________________ spinach but I love other green vegetables. When Ed arrived late, he knew that the grocer would ________________ him. [ ]",
+    "choices": [
+     "Pair each new word with its corresponding dictionary definition.",
+     "Translate the new words into your own words and write them down.",
+     "Find the exact dictionary definitions for the new words and memorize them.",
+     "Match the new words to their meanings in the provided sentences.",
+     "Create new sentences using each new word and its dictionary definition."
+    ],
+    "answer": 4,
+    "explanation": "빈칸에는 원문 'Definitions Match the new words with their dictionary definitions.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 새로운 단어의 뜻을 외우는 데만 집중해서 문장 속에서 단어가 어떤 역할을 하는지 보지 못했다. 'reprimand'가 '질책하다'라는 뜻임을 알지만 문장에서는 '리더십을 빼앗다'라는 뜻으로 쓰였다는 걸 놓쳤다. → 처방: 빈칸에 들어갈 단어가 문장 안에서 어떤 의미로 쓰였는지 먼저 확인하고, 그 뜻을 가진 단어를 새 단어 목록에서 찾아 연결해 보자.\n② 진단: 단어의 뜻을 한국말로 번역하는 데만 매달려서 문장 전체의 흐름을 보지 못했다. 'lackluster'가 '활기 없는'이라는 뜻임을 알았지만 문장에서는 '활기 없는 연설'이 아니라 '활기 없는 글'로 해석해야 했다. → 처방: 문장 전체의 의미를 먼저 이해한 뒤, 빈칸에 들어갈 단어가 문장 안에서 어떤 느낌으로 쓰였는지 생각해 보자.\n③ 진단: 단어의 사전 정의를 그대로 외우려고만 해서 문장 속 단어의 실제 쓰임을 놓쳤다. 'caustic'이 '신랄한'이라는 뜻임을 알았지만 문장에서는 '신랄한 기사'가 아니라 '신랄한 글'로 해석해야 했다. → 처방: 사전 정의를 외우는 것보다 문장 속에서 단어가 어떤 역할을 하는지 먼저 파악한 뒤, 그 뜻을 가진 단어를 찾는 연습을 하자.\n⑤ 진단: 새로운 문장을 만든다는 생각에만 집중해서 빈칸에 들어갈 단어가 문장 안에서 어떤 뜻으로 쓰였는지 보지 못했다. 'wrest'가 '빼앗다'라는 뜻임을 알았지만 문장에서는 '리더십을 빼앗다'라는 뜻으로 쓰였다는 걸 놓쳤다. → 처방: 빈칸에 들어갈 단어가 문장 안에서 어떤 뜻으로 쓰였는지 먼저 확인한 뒤, 그 뜻을 가진 단어를 새 단어 목록에서 찾자."
+   }
+  },
+  {
+   "ts": "2026-07-13T23:18:05.686Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "NEW WORDS loathe lōth reprimand rep´ rə mand lackluster lak´ lus´ tər caustic kô´ stik wrest rest WEEK 3 DAY 1 THE PEP TALK “If there’s one thing I loathe,” the coach said, “it’s a q______.” He had good reason to reprimand us at half-time, because the scoreboard revealed that we were losing, 45–20. Our lackluster performance indicated to him that we had forgotten the rudimentary* aspects of basketball. His caustic remarks fired us up, however, and we dashed out, determined to wrest control of the game from our rivals. Sample Sentences Use the new words in the following sentences. 1.With the help of his brothers he was able to ________________ the leadership of the company from his partner. 2.Speaking in a monotone, the politician was booed for his ________________ address. 3.In a ________________ article, the drama critic slaughtered the hapless* actors. 4.I ________________ spinach but I love other green vegetables. 5.When Ed arrived late, he knew that the grocer would ________________ him. Definitions Match the new words with their dictionary definitions. 6.loathe a. dull 7.reprimand (v.) b. to hate",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] quitter — 문단의 논지상 이 자리에는 'quitter'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-13T22:15:21.556Z",
    "type": "내용일치",
@@ -256,95 +343,6 @@
     ],
     "answer": 2,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 읽기는 '단순한' 의미 생성 과정이 아니라 '복잡한' 의미 생성 과정임을 강조하는데, 학생은 '단순한'이라는 말을 오해해 '단순'의 의미를 '기본'으로 착각한 듯함. 지문 [1]에 'exact identification'을 넘어서는 'more complex processes'라고 명시되어 있음. → 처방: 지문에서 '단순한'이 아니라 '복잡한' 의미 생성 과정임을 기억하고, '단순'의 의미를 '기본'이 아니라 '단순함'으로 해석하지 않도록 주의할 것.\n③ 진단: 학생은 '생략'이라는 단어를 오해해 메시지의 '제외'나 '삭제'로 생각한 듯함. 지문에서 ESP 는 'comprehension of the message'에 초점을 둔다고 명확히 서술되어 있음. → 처방: '생략'이 아니라 '이해'임을 확인하고, ESP 의 목적은 메시지 이해임을 기억할 것.\n④ 진단: 학생은 '제외된다'라는 말을 오해해 읽기 목적의 중요성을 무시한 듯함. 지문에서 'Reading purpose is a central concern of English for Specific Purposes (ESP)'라고 명시되어 있음. → 처방: '제외된다'가 아니라 '중요한 관심사'임을 기억하고, 읽기 목적의 중요성을 항상 떠올릴 것.\n⑤ 진단: 학생은 '유지된다'라는 말을 오해해 읽기 이해가 '계속된다'거나 '변하지 않는다'고 생각한 듯함. 지문에서 'Comprehension in instructional settings is translated into some product'라고 서술되어 있음. → 처방: '유지된다'가 아니라 '완료 과제로 변환된다'는 의미를 기억하고, '유지'라는 단어의 의미를 정확히 해석할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-13T11:32:14.838Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "II. READING COMPREHENSION Reading is not merely a process of exact identification of letters, words, and ultimately sentences leading to comprehension built from letter to word to phrase to sentence [1]. Readers make use of their existing background knowledge (schemata) to make predictions about what is coming next in the text and about how some new, unfamiliar piece of information relates to what is already known, as in [2] and [3]. It is clear that basic decoding processes are important for comprehension and are used by readers in interaction with the more complex processes of meaning generation, as referred in [4], [5], and [6]. However, it is equally clear that readers engage in reading in order to gain information. Reading purpose is a central concern of English for Specific Purposes (ESP), and purpose resides in the language learner's relationship to the learning task. The purpose is assumed to be comprehension of the message. Comprehension in instructional settings is translated into some product, such as completion of comprehension questions, a written summary, or an oral report [7].\n\n─────────\n[요약문] Reading involves the interplay of (A) and (B) to achieve comprehension, where background knowledge aids prediction and decoding processes interact with meaning generation.",
-    "choices": [
-     "(A) prediction … (B) comprehension failure",
-     "(A) meaning generation … (B) passive reception",
-     "(A) existing background knowledge … (B) exact identification of letters",
-     "(A) decoding processes … (B) information acquisition",
-     "(A) cognitive mechanisms … (B) purposeful engagement"
-    ],
-    "answer": 4,
-    "explanation": "(A) cognitive mechanisms / (B) purposeful engagement 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문에서 'readers make use of their existing background knowledge to make predictions'라고 했지만, (A)에 'prediction'을 넣은 학생은 '배경 지식'과 '예측'을 혼동한 것으로 보임. (B)도 'comprehension failure'가 아니라 'information acquisition'이 핵심임을 오해함. → 처방: 지문에서 'purpose resides in the language learner's relationship to the learning task'와 'readers engage in reading in order to gain information'을 다시 읽고, 'comprehension'의 목표가 'information acquisition'임을 기억하기.\n② 진단: 학생은 'meaning generation'이 'comprehension'의 일부라는 점은 맞지만, (B)에 'passive reception'을 넣은 것은 '읽기의 목적'이 '정보 획득'임을 놓친 오류임. 지문에서 'purpose is assumed to be comprehension of the message'라고 명시되어 있음. → 처방: 지문에서 'purpose'과 'comprehension'의 관계를 다시 확인하고, 'passive reception'이 아니라 'information acquisition'이 읽기의 목적이란 점을 분명히 하기.\n③ 진단: 학생은 'existing background knowledge'가 중요하다는 점은 맞지만, (B)에 'exact identification of letters'를 넣은 것은 '기본적인 해독 과정'과 '정보 획득'을 혼동한 것으로 보임. 지문에서 'basic decoding processes are important for comprehension'이라고 했지만, 이는 'information acquisition'을 위한 수단일 뿐임. → 처방: 지문에서 'decoding processes'가 'comprehension'을 위한 '수단'임을 인식하고, 'information acquisition'이 '목적'임을 다시 한 번 확인하기.\n⑤ 진단: 학생은 'cognitive mechanisms'이 읽기의 일부라는 점은 맞지만, (B)에 'purposeful engagement'를 넣은 것은 '읽기의 목적'이 '정보 획득'임을 놓친 오류임. 지문에서 'purpose resides in the language learner's relationship to the learning task'라고 명시되어 있음. → 처방: 지문에서 'purpose'과 'cognitive mechanisms'의 차이를 구분하고, 'purposeful engagement'가 아니라 'information acquisition'이 읽기의 핵심 목표임을 기억하기."
-   }
-  },
-  {
-   "ts": "2026-07-13T11:32:25.662Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] Readers make use of their existing background knowledge (schemata) to make predictions about what is coming next in the text and about how some new, unfamiliar piece of information relates to what is already known, as in [2] and [3].\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Their existing background knowledge (schemata) is made use of by readers to make predictions about what is coming next in the text and about how some new, unfamiliar piece of information relates to what is already known, as in [2] and [3] (by readers). (포인트: 능동 문장의 목적어(background knowledge)를 주어로, 능동 동사(make use of)를 수동 동사(is made use of)로 전환하고, by구를 통해 행위자를 명시.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-13T07:41:42.576Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "Agreement between a transitive verb and its object is invisible in English (in the sense that it has no overt phonetic manifestation), but is visible in languages like Swahili with overt object-agreement morphology. Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.",
-    "choices": [
-     "영어에서 동사-목적어 일치가 소리로 드러나지 않지만 스와힐리어에서는 드러난다",
-     "Earliness Principle 에 따라 'them'은 동사 'arrested'와의 일치를 통해 목적격으로 처리된다",
-     "'them'은 T-사이클 시점에서 더는 격/일치 작용에 관여하지 않는다",
-     "T-사이클에서 HAVE 는 유일하게 활성화된 목적어 'he'를 찾아서 일치하고 주격 격을 부여한다",
-     "영어에서 동사-목적어 일치가 소리로 드러나지만 스와힐리어에서는 드러나지 않는다"
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장에서 '영어에서 동사-목적어 일치가 소리로 드러나지 않는다'고 명시했는데, 이를 '드러난다'고 오독한 것으로 보임. → 처방: 지문에서 'invisible'과 'visible'을 정확히 짚고, 영어는 '소리 X', 스와힐리어는 '소리 O'임을 기억할 것.\n② 진단: 'them'이 V-사이클에서 목적격으로 처리된다는 지문 내용은 맞지만, 'Earliness Principle'의 의미를 오해해 '처리된다'는 표현을 오독한 듯함. → 처방: 'Earliness Principle'이란 '가장 이른 사이클에서 격이 처리된다'는 뜻임을 명확히 이해하고, 선지 내용을 다시 확인할 것.\n③ 진단: 'them'이 T-사이클에서 더는 격/일치 작용에 관여하지 않는다는 지문 내용은 맞지만, '더는'이라는 표현을 오해해 '활성화되지 않는다'는 의미를 잘못 해석한 듯함. → 처방: 'inactive'가 '활성화되지 않는다'는 뜻임을 기억하고, 선지의 '더는'이라는 표현을 지문의 'inactive'와 연결 지어 생각할 것.\n④ 진단: 지문에서 HAVE 가 'he'를 찾아 일치하고 주격 격을 부여한다는 내용은 맞지만, '유일하게 활성화된 목적어'라는 표현을 'he'가 목적어라고 오해한 듯함. → 처방: 지문에서 'he'는 주어임을 확인하고, HAVE 가 찾는 'active goal'이란 '주어'임을 명확히 구분할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
