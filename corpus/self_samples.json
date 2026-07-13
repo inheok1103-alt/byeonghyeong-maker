@@ -1,6 +1,66 @@
 {
- "updated": "2026-07-13T19:54:03.670Z",
+ "updated": "2026-07-13T21:15:23.474Z",
  "samples": [
+  {
+   "ts": "2026-07-13T21:13:57.176Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "Page 56 ⓐ<u>Logical modality is</u> the simplest modality, in that it deals with all the possible worlds without distinction. ⓑ<u>Epistemic modality is</u> defined in terms of epistemically possible worlds. An epistemically possible world is one in which everything we know about the actual world also holds - we don’t know of any differences between the actual world and any epistemically possible world (even though there might be differences) - for all we know, any epistemically possible world IS reality. In the definitions below the variable ⓒ<u>we range over</u> epistemically possible worlds. ⓓ<u>Epistemic must convey</u> that all the evidence we have about some real situation leads to an inescapable conclusion, but it is far weaker than logical necessity. The gods must be crazy may be ⓔ<u>true interpreted epistemically</u>, but even if it is, there are infinitely many logically possible worlds where the gods are sane and wise, and thus The gods must be crazy interpreted as logical necessity is false. Epistemic possibility is analysed as in (12). < previous page page_56 next page >",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 2,
+    "explanation": "틀린 곳은 ⓒ(we range over → we ranges over), ⓓ(Epistemic must convey → Epistemic must conveys) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘ⓐLogical modality is the simplest modality, in that it deals with all the possible worlds without distinction.’는 문법상 문제없음. 학생은 ‘without distinction’이 ‘without distinguishing’이라는 오해로 틀렸다고 생각할 수 있으나, ‘without distinction’도 ‘구별 없이’라는 뜻으로 올바른 표현임. → 처방: ‘without distinction’이 ‘without distinguishing’으로 오해되지 않도록, ‘distinction’의 뜻을 정확히 기억하고 ‘without + 명사’ 형태가 옳은지 확인하기.\n③ 진단: ‘ⓒwe range over epistemically possible worlds.’는 ‘range over’라는 동사가 ‘we’를 주어로 삼아 ‘we range over’라는 구문이 문법적으로 옳음. 학생은 ‘range over’를 ‘are ranged over’로 오해했을 수 있으나, 능동태가 자연스럽고 문법적으로 문제없음. → 처방: ‘range over’는 ‘~을 대상으로 삼다’라는 뜻으로, ‘we range over’는 ‘우리는 ~을 대상으로 삼는다’라는 뜻이므로 능동태가 옳음을 기억하기.\n④ 진단: ‘ⓓEpistemic must convey that all the evidence we have about some real situation leads to an inescapable conclusion...’에서 ‘must convey’는 ‘반드시 전달하다’라는 뜻으로 문법적으로 옳음. 학생은 ‘must’가 조동사로 쓰인다는 점을 간과했을 수 있으나, 문맥상 ‘반드시’라는 의미가 자연스럽고 문법적으로 문제없음. → 처방: ‘must’는 조동사로 쓰일 때 ‘반드시 ~하다’라는 뜻임을 기억하고, 문맥에 맞게 사용했는지 확인하기.\n⑤ 진단: ‘ⓔtrue interpreted epistemically’는 ‘true’가 ‘interpreted’라는 과거분사로 수식된 형태이므로 ‘truly interpreted’로 써야 한다는 오해가 있을 수 있으나, ‘true interpreted’는 ‘진실로 해석된’이라는 뜻으로 문법적으로 옳음. ‘truly’는 부사로 ‘진실로’라는 뜻이지만, 여기서는 ‘true’가 ‘진실된’이라는 형용사로 쓰인 것이므로 문제없음. → 처방: ‘true interpreted’는 ‘진실로 해석된’이라는 뜻으로, ‘truly interpreted’는 ‘진실되게 해석된’이라는 뜻이므로 문맥에 맞게 ‘true’를 사용했는지 확인하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-13T21:14:26.400Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Page 56 Logical modality is the simplest modality, in that it deals with all the possible worlds without distinction. Epistemic modality is defined in terms of epistemically possible worlds. An epistemically possible world is one in which everything we know about the actual world also holds - we don’t know of any differences between the actual world and any epistemically possible world (even though there might be differences) - for all we know, any epistemically possible world IS reality. In the definitions below the variable we ranges over epistemically possible worlds. Epistemic must conveys that all the evidence we have about some real situation leads to an inescapable conclusion, but it is far weaker than logical necessity. The gods must be crazy may be true interpreted epistemically, but even if it is, there are infinitely many logically possible worlds where the gods are sane and wise, and thus The gods must be crazy interpreted as logical necessity is false. Epistemic possibility is analysed as in (12). < previous page page_56 next page >\n\n─────────\n[요약문] Logical modality evaluates (A) across all scenarios, whereas (B) assesses conclusions based on available evidence within epistemically constrained worlds.",
+    "choices": [
+     "(A) epistemic constraints … (B) absolute truths",
+     "(A) infinite possibilities … (B) epistemic must",
+     "(A) logical necessity … (B) observed patterns",
+     "(A) actual differences … (B) logical conclusions",
+     "(A) total possibilities … (B) inferred conclusions"
+    ],
+    "answer": 3,
+    "explanation": "(A) total possibilities / (B) inferred conclusions 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘epistemic constraints’는 지문에서 ‘epistemic possibility’로만 언급되며 ‘absolute truths’는 전혀 다루지 않음. 학생은 ‘epistemic’이 ‘절대적’과 연결된다고 오해한 듯. → 처방: ‘epistemic’이란 말은 ‘알려진 사실에 기반한’ 뜻임을 기억하고, ‘절대적’은 ‘logical necessity’와 관련 있음을 떠올리자.\n② 진단: ‘infinite possibilities’는 지문에서 ‘logically possible worlds’로 언급되지만 ‘epistemic must’와는 무관. 학생은 ‘infinite’와 ‘epistemic’을 잘못 연결한 듯. → 처방: ‘infinite’는 ‘logical modality’와 관련이 있음을 확인하고, ‘epistemic must’는 ‘증거에 따른 필연성’임을 다시 읽어보자.\n④ 진단: ‘actual differences’는 지문에서 ‘epistemically possible worlds’와 ‘actual world’의 차이를 설명하는 부분이지만, ‘logical conclusions’은 전혀 언급되지 않음. 학생은 ‘differences’와 ‘conclusions’을 혼동한 듯. → 처방: ‘differences’는 ‘가능한 세계들’의 차이를 뜻함을 기억하고, ‘conclusions’는 ‘must’의 의미와 관련 있음을 떠올리자.\n⑤ 진단: ‘total possibilities’는 ‘logical modality’(모든 가능한 세계)를 가리키지만, ‘inferred conclusions’은 ‘epistemic must’(증거에 따른 결론)와 관련. 학생은 ‘total’과 ‘inferred’를 잘못 연결한 듯. → 처방: ‘total possibilities’는 ‘logical necessity’를 뜻함을 확인하고, ‘inferred’는 ‘epistemic’의 핵심임을 다시 읽어보자."
+   }
+  },
   {
    "ts": "2026-07-13T19:51:52.189Z",
    "type": "요지",
@@ -285,75 +345,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] The pronoun \"he\" is the only active goal for HAVE in the sentence.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-13T04:03:38.932Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "어떤 표현의 의미는 그것이 속한 개념 영역의 개수에 따라 달라진다.",
-     "어떤 표현의 의미는 그것이 포함하는 개념 영역의 목록을 단순히 나열하는 것으로 분석할 수 있다.",
-     "모든 표현의 의미는 그것이 속한 모든 개념 영역의 상호작용에 의해 언제나 완전히 결정된다.",
-     "어떤 표현의 의미는 그것이 불러일으키는 개념 영역 각각의 고유한 특성에만 좌우된다.",
-     "어떤 표현의 의미는 그것이 불러일으키는 여러 개념 영역들이 상호작용하고 정신적으로 접근되는 방식에 달려 있다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The meaning of an expression depends on how multiple conceptual domains in its matrix interact and are mentally accessed.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 '개념 영역의 개수'가 아니라 '개념 영역의 상호작용과 접근 방식'이 의미를 결정한다고 강조하는데, 학생은 '개수'에만 주목해 오독한 듯함. (예: 'CONCEPTUAL MATRIX'가 복수일 때를 떠올림) → 처방: 표현의 의미를 분석할 때는 '개념 영역의 개수'가 아니라 '그 영역들이 어떻게 연결되고 접근되는지'를 먼저 살펴보기.\n② 진단: 지문은 '목록 나열만으로는 부족하다'고 명시적으로 지적하는데, 학생은 '단순히 나열하면 된다'고 오해한 듯함. (예: 'constitutive domains'를 단순히 '모아놓은 것'으로만 봄) → 처방: 개념 영역을 나열할 때 '목록'에 그치지 말고 '어떻게 연결되는지'와 '어떻게 접근되는지'를 반드시 함께 설명하기.\n③ 진단: 지문은 '항상 완전히 결정된다'는 절대적 표현을 부정하는데, 학생은 '항상 완전히'라는 강제적 어구를 오독해 '항상'에만 집중한 듯함. (예: 'always'를 '무조건'으로 해석) → 처방: '항상'이나 '완전히' 같은 절대적 표현이 나오면 지문에서 그 한계를 명시하는지 확인하기.\n④ 진단: 지문은 '개별 영역의 특성'뿐 아니라 '상호작용'도 중요하다고 강조하는데, 학생은 '고유한 특성'에만 주목한 듯함. (예: 'glass'의 '투명성' 같은 개별 특징만 떠올림) → 처방: 표현의 의미를 다룰 때는 '개별 영역의 특징'과 '그 영역들이 어떻게 엮이는지'를 동시에 검토하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The meaning of an expression depends on how multiple conceptual domains in its matrix interact and are mentally accessed.]"
-   }
-  },
-  {
-   "ts": "2026-07-13T00:12:20.440Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0.67,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "That is, ⓐ<u>read would originate</u> as the head V of VP (agreeing with and assigning accusative case to its object the book), and would subsequently raise to adjoin to an affixal agentive light-verb ø, ⓑ<u>which has a meaning</u> paraphraseble as ‘perform the action of’. If we suppose that a transitive V only triggers movement of ⓒ<u>a nominal which it case-mark</u> to the edge of VP if the nominal in question is not already ⓓ<u>the highest non-head constituent</u> within VP, then there will be no possibility of raising the DP the book in (82) to become the specifier of VP because this DP is already the highest non-head constituent within VP by virtue of being the only non-head constituent within VP. Chomsky’s light-verb analysis of two-place transitive predicates can be extended in an interesting way to handle the syntax of a class of verbs which are known as unergative predicates. These are ⓔ<u>verbs like those italicized</u> in (83) below which have agentive subjects, but which appear to have no complement:",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "[어법: 준동사분사] 정답 ⓒ의 'a nominal which it case-mark'는 'a nominal which it case-marks'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
