@@ -1,6 +1,25 @@
 {
- "updated": "2026-07-13T15:15:20.693Z",
+ "updated": "2026-07-13T17:26:41.574Z",
  "samples": [
+  {
+   "ts": "2026-07-13T17:26:14.548Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 나는 국가보안경찰을 찾아가야 했다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-13T15:14:00.606Z",
    "type": "요지",
@@ -335,25 +354,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'Study in different places enhances memory recall.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: 지문은 '장소를 바꾸면 기억력이 좋아진다'는 연구 결과를 소개하지만, '통념'이라는 말은 nowhere 언급하지 않음. 학생은 지문의 '연구 결과'와 '일반적인 통념'을 혼동했을 가능성 있음. → 처방: 지문에서 주장하는 '연구 결과'에만 집중하고, '통념'이라는 말은 무시하도록 연습하기.\n③ 진단: 지문은 '장소를 바꾸면 기억력이 좋아진다'고 하지만, '장소에만 집중하면 기억력이 약해진다'는 말은 nowhere 언급하지 않음. 학생은 지문의 '장소 변화'와 '장소 집중'을 반대 개념으로 오해했을 가능성 있음. → 처방: 지문의 핵심 주장('장소 변화가 기억력 강화에 도움')을 정확히 파악한 후, 반대 개념은 배제하도록 연습하기.\n④ 진단: 지문은 '장소를 여러 곳으로 바꾸면 기억력이 좋아진다'는 경향을 언급하지만, '모든 유형에서 동일하게 향상된다'는 말은 nowhere 언급하지 않음. 학생은 '향상'의 범위를 과장해 해석했을 가능성 있음. → 처방: 지문의 '기억력 향상'이 '일반적인 경향'임을 기억하고, '모든 유형'이라는 과장된 표현은 배제하도록 연습하기.\n⑤ 진단: 지문은 '장소를 바꾸는 것이 도움이 된다'고 하지만, '필수 조건'이라는 말은 nowhere 언급하지 않음. 학생은 '도움'과 '필수'를 혼동했을 가능성 있음. → 처방: 지문의 '도움이 된다'는 표현을 정확히 이해하고, '필수 조건'이라는 절대적 표현은 배제하도록 연습하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Study in different places enhances memory recall.]"
-   }
-  },
-  {
-   "ts": "2026-07-12T23:11:37.793Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Ray English 지문 전문 · 원문 그대로 32번 빈칸 · B L A N K 장소를 바꿔 공부하기 빈칸 빈칸 = recall the material: 장소를 옮겨 공부한 쪽이 회상을 훨씬 잘함(실험 결론). 소재 장소를 바꿔 공부하기 Studying in different places 주제 장소를 바꿔 공부하면 기억이 강화된다 Varying study places strengthens memory 제목 장소를 바꾸면 더 잘 외운다 Study in Different Places to Remember Better 한눈에 장소를 바꿔 공부하면 다양성이 생겨 학습이 강화된다는 주장을 실험으로 뒷받침한다. 같은 방에서 두 번 공부한 집단보다 두 장소로 나눠 공부한 집단이 단어를 훨씬 잘 회상했다. 다양한 맥락이 풍부한 연상을 만들기 때문이다. 지문 전문 — 시험지 원문 Do you always study in the same spot? Don’t. If you study in different places, that helps create variety, and that rich experience can reinforce what you are learning. When several college students told us they did school work in different places rather than in some favorite nook, that habit reflected the research on learning. Numerous experiments have found that if learners simply study in at least two different places, they are more likely to ＿＿＿＿＿＿＿＿. In one of the first such trials, two different groups studied a list of words. Some students returned to the same room twice while their counterparts spent the same amount of time divided between two locations. When asked to recall as many words on the list as possible, those who had moved around did far better. Variety creates rich association, even when those connections form in the background, totally outside of what we are consciously thinking. * nook: 구석진 곳 ** counterpart: 상대 지문 전문 · 원문 그대로",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
