@@ -347,6 +347,26 @@
     try { var r = await fetch(url || "knowledge/rays_drill_kb.json", { cache: "no-store" }); RAYS = await r.json(); return { ok: true, version: (RAYS.meta && RAYS.meta.version) || "?" }; } catch (e) { return { ok: false, error: String(e) }; }
   }
   function raysKB() { return RAYS; }
+  // 동화고 출제 로직 KB — 실물 기말 전수분석 기반. 로드 시 STANDING·per-type 함정을 동화고 스타일로 주입.
+  var DONGHWA = null, DONGHWA_ON = false;
+  async function loadDonghwa(url) {
+    try {
+      var r = await fetch(url || "knowledge/donghwa_exam_logic.json", { cache: "no-store" }); DONGHWA = await r.json();
+      return { ok: true, version: (DONGHWA.meta && DONGHWA.meta.version) || "?", school: DONGHWA.meta && DONGHWA.meta.school };
+    } catch (e) { return { ok: false, error: String(e) }; }
+  }
+  // 동화고 모드 on/off: STANDING에 동화고 standing 주입, 함정 규칙을 KB_GUIDES 앞에 병합(우선순위).
+  function donghwaMode(on) {
+    DONGHWA_ON = on !== false;
+    if (DONGHWA_ON && DONGHWA) {
+      if (DONGHWA.standing) setLogicStanding(String(DONGHWA.standing).slice(0, 500));
+      if (Array.isArray(DONGHWA.trap_guides)) { KB_GUIDES = DONGHWA.trap_guides.map(function (g) { return { re: new RegExp(g.match), rule: g.rule }; }).concat(KB_GUIDES || []); }
+    } else if (!DONGHWA_ON) { setLogicStanding(""); }
+    return DONGHWA_ON;
+  }
+  // 동화고 실물 기말 유형 순서(generateExam에 그대로 넣으면 동화고형 세트 생성)
+  function donghwaTypeSet() { return ["어휘", "내용일치", "빈칸", "어법", "요약문AB", "제목", "무관문장", "지시", "연결어", "글의순서", "서술형", "어법수정", "조건영작", "우리말해석", "배열영작"]; }
+  function donghwaKB() { return DONGHWA; }
   // 선지 금지패턴(메타표현·플레이스홀더) — Rays 5.4 자동 필터
   function badChoice(c) {
     var pats = (RAYS && RAYS.banned_patterns) || ["본문은", "글은", "사전적", "문자적", "원문보다", "undefined", "NaN", "(보기"];
@@ -2714,7 +2734,8 @@
   window.APITEAM = {
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints, setLogicStanding: setLogicStanding,
-    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
+    loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB,
+    loadDonghwa: loadDonghwa, donghwaMode: donghwaMode, donghwaTypeSet: donghwaTypeSet, donghwaKB: donghwaKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
     analysisSheet: analysisSheet, extractKeywords: extractKeywords, findSource: findSource, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
     dataEgressInfo: dataEgressInfo, setDataContract: function (mode) { CFG.dataContract = (mode === "local-only") ? "local-only" : "open"; return CFG.dataContract; },
     ollamaModels: async function (url) { try { var d = await getJSON(String(url || CFG.ollamaUrl).replace(/\/+$/, "") + "/api/tags", 4000); return (d && d.models || []).map(function (m) { return m.name; }); } catch (e) { return null; } },

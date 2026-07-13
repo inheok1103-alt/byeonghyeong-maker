@@ -197,7 +197,7 @@ body.showAns .q .ans{display:block}
 </div>
 
 <script>var RAY_PROXY="https://ray-proxy.gen1103.workers.dev";</script>
-<script src="api_team.js?v=20260711b"></script>
+<script src="api_team.js?v=20260713a"></script>
 <script src="addon_key_guard.js?v=20260711b"></script>
 <script src="raytools.js?v=20260707b"></script>
 <script>
@@ -209,6 +209,11 @@ if(_dc==="local-only"){ T.setDataContract&&T.setDataContract("local-only"); /* �
 else { T.configure({proxyUrl:RAY_PROXY}); }
 T.loadTypeDB("knowledge/types_v2.json").then(function(){ buildPills(); });
 T.loadReviewDB&&T.loadReviewDB("knowledge/review_core_v2.json").catch(function(){});
+/* 동화고 로직: 실물 기말 전수분석 KB 로드. localStorage.exam_school='donghwa'면 동화고 모드(함정·외부지문 스타일 주입). */
+T.loadDonghwa&&T.loadDonghwa("knowledge/donghwa_exam_logic.json").then(function(){
+  var sch=""; try{ sch=localStorage.getItem("exam_school")||""; }catch(e){}
+  if(sch==="donghwa" && T.donghwaMode){ T.donghwaMode(true); try{ if(window.RAYTOOLS) {} }catch(e){} }
+}).catch(function(){});
 /* 연구 로직 전역 적용: 모든 생성에 ExamLogic 오답설계 표준(SM/SY 함정·PI 변형지수·오답분석) 주입 */
 if(T.setLogicStanding) T.setLogicStanding("각 오답은 서로 다른 함정코드(의미 SM01~13/구문 SY01~07)를 하나씩 쓰고, 해설에 [변형지수 PI0~3]과 [오답분석] ①코드-왜 틀렸는지를 반드시 명시.");
 if(window.RAYTOOLS&&RAYTOOLS.loadDB) RAYTOOLS.loadDB();

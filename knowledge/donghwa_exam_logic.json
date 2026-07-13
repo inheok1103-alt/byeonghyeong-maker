@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "version": "20260713a",
+    "school": "동화고등학교(남양주 다산)",
+    "source": "2026학년도 1학기 2차 정기시험(공통영어1, 1학년) 실물 시험지 7장 전수분석",
+    "exam_shape": "선택형 16 + 논술형 5세트(하위 11문항) = 총 21문항 · 반영 지필35/35 수행30 · 논술형 약 39%",
+    "note": "동화고 출제 로직을 생성 엔진에 주입하기 위한 정본 KB. 실물 근거 기반."
+  },
+  "core": "너는 동화고 내신 출제자다. 동화고는 교과서 밖 학술·저널 아티클을 각색한 외부지문을 주로 쓰고, '본문을 시험 형식으로 다시 쓰는 능력'을 강하게 본다. 한 지문에서 어휘·어법·지시어·빈칸·제목·무관문·요약을 섞어 내고, 논술형은 뜻보다 '조건에 맞춰 정확한 영어로 재생산'을 채점한다(본문단어 추출·형태 변형·조건 재배열·지시어 한국어 설명·어휘+어법 동시 교정). 오답·함정은 '논지 역전어·시제 불일치·숙어 방향 반전·감정분사 능동수동·관계사 선행사·지시어 주어전환·문맥 방향'에서 낸다.",
+  "standing": "동화고 스타일: 외부 학술·저널 지문(100~150단어)을 각색해 한 지문에서 어휘·어법·지시어·빈칸·제목·무관·요약을 섞는다. 논술형은 조건형(본문단어 추출·형태변형·조건 재배열·지시어 한국어설명·어휘+어법 교정)으로, 뜻이 아니라 조건 충족을 채점한다. 함정: 논지역전어(little↔much, one of≠only)·시제불일치(back then→were)·숙어 방향(all but 거의 vs anything but 결코아님)·감정분사(disappoint→disappointed)·수동태(often use→are often used)·관계사 which 선행사 범위·지시어 주어전환·문맥 방향(terrible waste↔approve).",
+  "type_mix": {
+    "선택형(16)": {
+      "문맥상 어휘 판단": 3,
+      "어법 판단": 2,
+      "빈칸(어휘·추론)": 3,
+      "요약문 빈칸": 2,
+      "지시 대상": 1,
+      "무관한 문장": 1,
+      "제목": 1,
+      "내용 불일치": 1,
+      "연결어 빈칸": 1,
+      "어휘·숙어 (A)(B)(C)": 1
+    },
+    "논술형(5세트/11문항)": {
+      "본문 단어 추출(빈칸 채우기)": 1,
+      "조건 단어 재배열(영작)": 4,
+      "관계·서사 순서 배열": 1,
+      "지시어 한국어 의미 설명": 1,
+      "본문 단어(구) 찾아쓰기": 1,
+      "형태 변형(감정분사·수동태)": 1,
+      "어휘+어법 동시 교정": 1
+    }
+  },
+  "essay_types": [
+    { "id": "본문단어추출", "example": "AI에 대한 두 관점을 본문 단어로: (A) threat / (B) limitations", "rule": "빈칸에 들어갈 답은 '반드시 본문에 실재하는 단어(구)'. 자기 표현·유의어는 감점. 조건: 본문 표기 그대로." },
+    { "id": "조건재배열영작", "example": "allowed the Egyptians to divert their energy away from constant warfare and instead focus on advancing ...", "rule": "<보기> 단어를 모두·각 1회 사용, 어형변화·단어수·필수어 조건. 채점 내용40·조건35·어법25. 동사패턴 2개 이상(allow+O+to V, divert A away from B, focus on V-ing / let+O+동사원형, bring A down)을 한 문장에 묶음." },
+    { "id": "관계서사순서배열", "example": "Elphaba·Glinda: 만남→갈등(do not get along)→친밀→장애물→우정 승리 = (B)(E)(D)(A)(C)", "rule": "문장 첫 단어가 아니라 인물 관계·감정 변화의 시간축으로 배열. 지시어·연결어가 순서 단서." },
+    { "id": "지시어한국어설명", "example": "doing so = access information or watch the actions of another (앞 문장 행위 전체)", "rule": "doing so/do so/this는 단어 하나로 번역 금지. 앞 절 전체를 받는다는 점을 한국어로 서술. 대상 범위를 정확히." },
+    { "id": "본문단어구찾기", "example": "protect ... from visual surveillance (protect from 세트까지)", "rule": "본문에서 조건에 맞는 단어(구)를 찾아 쓰되 동사+전치사 세트(protect from)까지 정확히." },
+    { "id": "형태변형", "example": "disappoint→disappointed(감정분사) / often use→are often used(수동태)", "rule": "한국어 주어가 '실망시키는지/실망하는지'를 먼저 판단해 감정분사 능동수동 결정. 수동태는 주어-행위 관계로 be+p.p." },
+    { "id": "어휘어법동시교정", "example": "1문단 문맥상 부적절 little→much + 어법상 틀린 are→were", "rule": "(A)문맥어휘: 글 전체 논지와 반대 방향인 단어. (B)어법: 시제·수일치 등. 두 범주를 분리 표시. ※같은 문단에 잠재 표기오류(예: Egyptian's→Egyptians')가 있으면 의도 정답(시제)임을 명시하고 대비." }
+  ],
+  "traps": [
+    { "code": "논지역전어", "example": "How a civilization develops has little(→much) to do with ~ · one of the most effective(≠유일한)", "rule": "첫 문장·정답 선지의 극단어(little/much, one of, only, always)를 글 전체 논지와 대조." },
+    { "code": "시제불일치", "example": "As they are(→were) free ~ back then ~ were able", "rule": "back then·과거 주절 동사 → 부사절도 과거. 문두만 보지 말고 문장 전체 시제축." },
+    { "code": "숙어방향반전", "example": "all but(거의 ~한) vs anything but(결코 ~아닌) · derives from vs deviates from", "rule": "한국어 뜻 암기가 아니라 '문장 결과 방향'으로 숙어 선택." },
+    { "code": "감정분사", "example": "the burger is unpleasantly wet / challenging / disappoint→disappointed", "rule": "주어가 감정을 '주면 -ing, 받으면 -ed'. '사물=ing 사람=ed' 표면규칙 파훼." },
+    { "code": "관계사선행사", "example": "fast fashion 긴 문장의 which / 선행사 범위 오인", "rule": "긴 문장에서 which/that 앞 명사 범위를 먼저 끊어 선행사 확정." },
+    { "code": "지시어주어전환", "example": "e-cigarette users ↔ non-users ↔ They/their arteries", "rule": "문장 사이 주어가 바뀌면 they/their/them 대상도 새로 확인. 대상군을 색으로 고정." },
+    { "code": "문맥방향", "example": "terrible waste ↔ approve of(→disapprove) · projected/extend ↔ decline", "rule": "문법 가능성보다 전후 문맥 평가어(terrible, waste, toxic, decisive)로 방향 먼저 표시." },
+    { "code": "사역·수동", "example": "let people bring her down / allow O to V / often use→are often used", "rule": "let/make/have+O+동사원형, allow/enable+O+to V, 수동태 be+p.p. — 동사 뒤 구조 세트 암기." }
+  ],
+  "passage_profile": {
+    "origin": "선택형16+논술형5 중 8할 이상이 교과서 밖 외부지문. 교과서 직접출제는 소수, 외부 학술연구·저널 아티클 각색본이 주축(각 지문 10편 전부 '각색 추정' — 원문 verbatim 아님).",
+    "length": "원문 장문을 발췌·축약한 단락 규모(약 100~150단어)로 통일",
+    "pool_overlap": "EBS 수능특강·수능완성 + 교육청 학평(고1~고2) 풀과 최다 중첩. 수능 본시험 확정지문보다 EBS 연계교재·학평 반복 소재가 압도적. 순수 ESL 리더보다 국내 수능계 기출풀 단골.",
+    "domains_ranked": ["심리(사회·발달·행동경제 — 사후가정·nature/nurture·매몰비용) 최다 3~4편", "환경·지속가능(패스트패션·음식물쓰레기·탄소) 2편", "기술×예술(디지털몰입전시·AI이미지·창작윤리) 2편", "역사·지리·문화사(GGS 환경결정론·미들네임) 2편", "경제경영(암묵지vs명시지) 1편"],
+    "verified_sources": {
+      "olympic-medalists": "Medvec·Madey·Gilovich(1995) 'When Less Is More' — 은메달 상향비교 vs 동메달 하향비교. 수능계 최빈출 정전.",
+      "egypt-diamond": "Jared Diamond, Guns Germs and Steel(1997) 'geographic luck' — 환경결정론. 명저 발췌형.",
+      "fast-fashion": "Princeton PSCI / Earth.org(Rashmila Maiti) — 폴리에스터 60%·연 21 billion pounds 매립. 학평·EBS 단골.",
+      "middle-names": "Mental Floss(Arika Okrent, 2014) 'Why Do We Have Middle Names' — 로마 다명제→중세→이민자→WWI 표준화.",
+      "sunk-cost": "행동경제 정전(Thaler 매몰비용·Kahneman 손실회피) 영화관 30분 예화 — 기출풀 공통.",
+      "blind-babies-smile": "Freedman(1964) 시각장애아 미소 — 선천성 vs 사회적 강화(본성×양육). 발달심리 단골.",
+      "tacit-explicit": "Polanyi·Nonaka 지식경영 — 암묵지vs명시지 경쟁우위.",
+      "sell-by-date": "지속가능성 공통소재(음식물쓰레기 온실가스 8~10%·푸드마일).",
+      "klimt-museum": "2018 클림트 몰입전시 등 최신 디지털아트.",
+      "ai-image": "2023 Mauritshuis AI 페르메이르 논쟁 등 최신 AI 창작윤리."
+    },
+    "selection_pattern": [
+      "각색·패러프레이즈(통계·개념어는 유지, 문장 길이·연결어·난이도만 시험용 손질)",
+      "EBS·학평에 검증된 '기출풀 공통' 정전 소재 선호(완전 신소재보다 안정 재출제)",
+      "명확한 이항 대립/논지 축 지문 집중(상향vs하향비교, 선천성vs강화, tacit vs explicit, 원본vs디지털재현, 매몰비용 무시vs손실회피)",
+      "권위 원전·저명 연구 기반(Medvec·Thaler·Polanyi·Diamond·Freedman)",
+      "추상 개념 1개를 구체 예시로 푸는 개념설명형(영화관 30분·올림픽 표정·자전거타기)",
+      "통계·수치 포함 데이터형 환경/소비 지문 선호",
+      "정전 + 2018년 이후 최신 AI·디지털아트 논쟁형의 이원 구성"
+    ],
+    "prep_implication": [
+      "EBS 수능특강·수능완성 + 최근 3개년 고1~2 학평의 심리·환경·경제·기술 지문을 원출처 단위로 전수 학습이 적중률 핵심",
+      "정전 핵심 개념어 사전화로 빈칸 대비: counterfactual/upward-downward comparison, innate·hard-wired·social reinforcement, sunk cost·loss aversion·mental accounting, tacit·explicit·codify, environmental determinism",
+      "verbatim 대조보다 '이항 대립 논지 구조'를 빠르게 잡는 훈련(각색이라 문장은 바뀌어도 대비축·결론 패턴은 보존)",
+      "2023년 이후 AI 이미지·디지털 몰입전시 등 최신 기술×예술 시사 아티클 별도 대비"
+    ]
+  },
+  "prep_logic": "지문 해석에서 끝내지 말고 각 지문을 (1)어법 판단표 (2)서술형 조건 체크 (3)요약어 추상화 (4)지시어 대상 고정 (5)오답 패턴 리포트로 재생산. 6회 커리: 문장뼈대→동사형태→절연결→어휘지시어→서술형재배열→실전리포트.",
+  "trap_guides": [
+    { "match": "어법|어법수정|전환|도치|강조", "rule": "[동화고 함정] 시제불일치(back then→were)·수일치(civic life depends)·감정분사 능동수동·관계사 which 선행사 범위·사역/수동(let+O+동사원형, allow+O+to V, often use→are often used)을 표적으로. 긴 문장은 선행사·시제축을 먼저 끊어라." },
+    { "match": "어휘|낱말|영영|첫글자", "rule": "[동화고 함정] 문맥상 어휘는 문법 가능성이 아니라 '글 전체 논지 방향'으로 판정. 논지역전어(little↔much, one of≠only)·평가어(terrible waste↔approve, decisive↔decline)를 표시. 숙어는 방향 반전(all but 거의 vs anything but 결코아님)." },
+    { "match": "빈칸|요약", "rule": "[동화고 함정] 정답은 본문 표현 그대로가 아니라 상위 개념·추상어. 요약문은 원문 예시를 추상어로 치환. 감정어가 아니라 글 전체의 사회적·논리적 의미에서 답을 낸다." },
+    { "match": "지시|지칭", "rule": "[동화고 함정] they/their/them·doing so는 문장 사이 주어 전환을 확인해 대상군을 재확정. doing so/this는 앞 절 전체를 받는다(단어 하나 번역 금지)." },
+    { "match": "서술|영작|조건|재배열|배열|우리말|명시|찾아", "rule": "[동화고 논술형] 뜻이 아니라 '조건 충족'을 채점. 본문 단어 추출은 본문 표기 그대로, 재배열은 <보기> 전부·각 1회·어형/단어수 조건 준수, 동사패턴 세트(allow+O+to V, divert A away from B, focus on V-ing, let+O+동사원형, bring A down)와 전치사 결합(protect from)까지 정확히." }
+  ]
+}
