@@ -1,6 +1,95 @@
 {
- "updated": "2026-07-13T04:04:50.357Z",
+ "updated": "2026-07-13T07:43:32.182Z",
  "samples": [
+  {
+   "ts": "2026-07-13T07:41:42.576Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "Agreement between a transitive verb and its object is invisible in English (in the sense that it has no overt phonetic manifestation), but is visible in languages like Swahili with overt object-agreement morphology. Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.",
+    "choices": [
+     "영어에서 동사-목적어 일치가 소리로 드러나지 않지만 스와힐리어에서는 드러난다",
+     "Earliness Principle 에 따라 'them'은 동사 'arrested'와의 일치를 통해 목적격으로 처리된다",
+     "'them'은 T-사이클 시점에서 더는 격/일치 작용에 관여하지 않는다",
+     "T-사이클에서 HAVE 는 유일하게 활성화된 목적어 'he'를 찾아서 일치하고 주격 격을 부여한다",
+     "영어에서 동사-목적어 일치가 소리로 드러나지만 스와힐리어에서는 드러나지 않는다"
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장에서 '영어에서 동사-목적어 일치가 소리로 드러나지 않는다'고 명시했는데, 이를 '드러난다'고 오독한 것으로 보임. → 처방: 지문에서 'invisible'과 'visible'을 정확히 짚고, 영어는 '소리 X', 스와힐리어는 '소리 O'임을 기억할 것.\n② 진단: 'them'이 V-사이클에서 목적격으로 처리된다는 지문 내용은 맞지만, 'Earliness Principle'의 의미를 오해해 '처리된다'는 표현을 오독한 듯함. → 처방: 'Earliness Principle'이란 '가장 이른 사이클에서 격이 처리된다'는 뜻임을 명확히 이해하고, 선지 내용을 다시 확인할 것.\n③ 진단: 'them'이 T-사이클에서 더는 격/일치 작용에 관여하지 않는다는 지문 내용은 맞지만, '더는'이라는 표현을 오해해 '활성화되지 않는다'는 의미를 잘못 해석한 듯함. → 처방: 'inactive'가 '활성화되지 않는다'는 뜻임을 기억하고, 선지의 '더는'이라는 표현을 지문의 'inactive'와 연결 지어 생각할 것.\n④ 진단: 지문에서 HAVE 가 'he'를 찾아 일치하고 주격 격을 부여한다는 내용은 맞지만, '유일하게 활성화된 목적어'라는 표현을 'he'가 목적어라고 오해한 듯함. → 처방: 지문에서 'he'는 주어임을 확인하고, HAVE 가 찾는 'active goal'이란 '주어'임을 명확히 구분할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-13T07:42:08.146Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Agreement between a transitive verb and its object is invisible in English (in the sense that it has no overt phonetic manifestation), but is visible in languages like Swahili with overt object-agreement morphology. Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.\n\n─────────\n[요약문] The interaction of (A) and (B) in transitive constructions determines the overt case and agreement patterns in English and related languages.",
+    "choices": [
+     "(A) theta-role assignment … (B) morphological marking",
+     "(A) syntactic movement … (B) semantic alignment",
+     "(A) subject marking … (B) tense agreement",
+     "(A) noun phrase … (B) verb conjugation",
+     "(A) case assignment … (B) agreement mechanisms"
+    ],
+    "answer": 5,
+    "explanation": "(A) case assignment / (B) agreement mechanisms 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: theta-role assignment(역할 부여)'와 morphological marking(형태적 표시)'을 오독했는데, 지문은 case feature(격 특징)와 agreement(일치)가 어떻게 작용하는지를 설명하고 있음. 역할은 문법적 기능이 아니라 의미적 역할임. → 처방: 문장에서 'case assignment(격 부여)'와 'agreement mechanisms(일치 메커니즘)'이 핵심임을 확인하고, 역할과 형태적 표시가 아닌 문법적 구조를 찾도록 연습하기.\n② 진단: 'syntactic movement(통사적 이동)'과 'semantic alignment(의미적 정렬)'을 혼동했는데, 지문은 통사적 구조(격 부여와 일치)가 문장의 겉모습(겉보기)을 결정한다고 설명하고 있음. '의미적 정렬'은 문법적 기능이 아님. → 처방: 문장에서 '겉보기(overt phonetic manifestation)'와 '통사적 과정(syntactic operations)'을 강조하는 부분을 다시 읽고, 통사적 구조와 의미적 역할의 차이를 구분하기.\n③ 진단: 'subject marking(주어 표시)'과 'tense agreement(시제 일치)'를 오독했는데, 지문은 목적어(them)의 격(accusative)이 동사(agreement)와의 일치로 결정된다고 설명하고 있음. 주어의 격이 아니라 목적어의 격을 다룸. → 처방: 문장에서 '목적어의 격(accusative case)'과 '동사의 일치(agreement with verb)'가 어떻게 작용하는지 집중해서 읽고, 주어와 목적어의 격 차이를 명확히 이해하기.\n④ 진단: 'noun phrase(명사구)'와 'verb conjugation(동사 활용)'을 오해했는데, 지문은 명사구(pronoun them)의 격이 동사의 일치로 결정된다고 설명하고 있음. '동사 활용'은 동사의 형태 변화에 초점을 두지만, 지문은 격과 일치의 통사적 과정에 초점을 둠. → 처방: 문장에서 '격(accusative case)'과 '일치(agreement)'가 명사구와 동사 간의 관계를 설명하는 핵심임을 확인하고, 동사의 활용이 아니라 통사적 일치 과정을 이해하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-13T07:43:06.212Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 대명사 \"he\" 는 문장에서 HAVE에 대한 유일한 활성 목표입니다.\n주어진 단어: ( HAVE / The / the / only / sentence / goal / pronoun / \"he\" / in / for / the / active / is )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The pronoun \"he\" is the only active goal for HAVE in the sentence.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-13T04:03:38.932Z",
    "type": "요지",
@@ -250,93 +339,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [형용사부사] ⓑ: 'a female nurse' → 'a male nurse' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T21:08:24.929Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "A CASTLE IN THE AIR consonants. The verbal root in Semitic is not a pronounceable chunk like English 'eat' or Latin `ed-', but a group of just three consonants, like the Arabic 1-b-s, which means 'wear', or s- -m, which means 'be at peace'. But how can a vowel-less group of three consonants ever mean anything, if it cannot even stand up on its own three legs and be pronounced unaided? The answer is that such roots do not have to be spoken by themselves, because the root is an abstract notion, which comes to life only when it is superimposed on some templates: patterns of (mostly) vowels, which have three empty slots for the three consonants of the root. [ ]",
-    "choices": [
-     "All Arabic words can be formed using only two consonants and one vowel.",
-     "The Arabic root is used to form the past tense by inserting it into a template, such as OaOiOa, which results in a specific word when combined with the root s-i-m to mean 'he was at peace'.",
-     "The Arabic root s-i-m can be pronounced on its own to mean 'he was at peace'.",
-     "The template OaOiOa is used to form the future tense in Arabic, not the past tense.",
-     "The process of inserting roots into templates is unique to the English language."
-    ],
-    "answer": 2,
-    "explanation": "빈칸에는 원문 'To take one example, the Arabic template OaOiOa forms the past tense (in the third person `he'), so if you want to say 'he was at peace', you just insert the root s- i-m (`be at peace') into that template, to get: 37'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장에서 'a group of just three consonants'라고 설명된 아랍어 어근의 특징을 무시하고 2개의 자음과 1개의 모음으로 아랍어 단어가 형성된다고 오독했다. → 처방: 아랍어 어근의 정의를 다시 확인하고, 어근과 템플릿이 어떻게 단어를 형성하는지 이해하도록 한다.\n③ 진단: 아랍어 어근이 템플릿 없이도 발음될 수 있다고 생각하여, 'such roots do not have to be spoken by themselves'라는 문장의 설명을 무시한 것으로 보인다. → 처방: 아랍어 어근의 추상적인 특성과 템플릿을 통해 의미를 가지는 방식을 다시 공부한다.\n④ 진단: 문장에서 템플릿 OaOiOa 가 과거 시제를 형성하는 예시로 사용된 것을 과거 시제가 아닌 미래 시제로 오독한 것으로 보인다. → 처방: 아랍어의 시제와 템플릿의 역할을 다시 정리하고, 예시를 통해 과거 시제와 미래 시제의 차이를 이해한다.\n⑤ 진단: 문장에서 설명된 아랍어의 어근과 템플릿 시스템을 영어에만 고유한 것으로 오독한 것으로 보인다. → 처방: 다른 언어의 어근과 템플릿 시스템에 대해 공부하여, 아랍어의 고유한 특징을 이해한다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T21:10:50.226Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: t)\n[영영풀이] The digit/figure 3.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] three (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T19:34:52.231Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.63,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "‘load’를 포함한 타동사의 통사적 특성을 affixal 특징으로 설명하려고",
-     "‘load’의 목적어 자동사 전환 현상을 문법적 원인으로 설명하려고",
-     "‘load’의 통사 구조에서 vP 부사 위치만을 따로 분리해 설명하려고",
-     "‘load’를 비롯한 모든 동사의 통사적 행동을 affixal 특성으로 일반화하려고",
-     "‘load’가 전치사구를 동반하는 통사적 이유를로 설명하려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'to explain the syntactic behavior of transitive verbs like \"load\" through their affixal nature and DP/PP complement structure.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘load’의 목적어 자동사 전환 현상(‘The truck will load with hay’)을 문법적 원인으로 설명한다고 오해했는데, 지문은 이 현상이 *ungrammatical 하다는 점과 affixal 특성으로 설명한다고만 언급하며, 문법적 원인을 직접 설명하지 않음. → 처방: ‘load’가 affixal 하다는 특징을 먼저 확인하고, 이 특징이 문법적 현상(예: 자동사 전환의 비문법성)에 어떻게 영향을 미치는지 확인할 것.\n③ 진단: ‘load’의 통사 구조에서 vP 부사 위치만을 따로 분리해 설명한다고 오해했는데, 지문은 vP 부사와 VP 부사의 위치 차이를 *사례*로만 언급하며, 이 위치가 목적의가 아님. → 처방: 지문의 *핵심 주장*이 ‘load’의 affixal 특성임을 먼저 확인하고, 부사 위치 차이는 *증거*로만 활용됨을 기억할 것.\n④ 진단: ‘load’를 비롯한 *모든* 동사의 통사적 행동을 affixal 특성으로 일반화한다고 오해했는데, 지문은 ‘load’를 *특정* 동사로 한정해 설명하며, ‘모든 동사’를 일반화하지 않음. → 처방: 지문의 *대상 범위*가 ‘load’를 포함한 *일부* 타동사임을 확인하고, ‘모든 동사’를 일반화하지 않도록 주의할 것.\n⑤ 진단: ‘load’가 전치사구를 동반하는 통사적 이유를 설명한다고 오해했는데, 지문은 전치사구 동반 현상을 *사례*로만 언급하며, 이 현상이 목적의가 아님. → 처방: 지문의 *핵심 주장*이 ‘load’의 affixal 특성임을 먼저 확인하고, 전치사구 동반은 *증거*로만 활용됨을 기억할 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to explain the syntactic behavior of transitive verbs like \"load\" through their affixal nature and DP/PP complement structure.]"
    }
   }
  ]

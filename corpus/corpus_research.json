@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-13T04:04:50.353Z",
+ "updated": "2026-07-13T07:43:32.177Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
- "count": 45,
+ "count": 46,
  "notes": [
+  {
+   "ts": "2026-07-13T07:43:08.255Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 연어 패턴에서 'old english', 'middle english' 등 언어학적 용어와 'university press', 'new york' 등 고유명사가 혼용되어 나타나며, 문법 오류 수정 시에도 언어학적 정확성과 고유명사의 철자/대소문자 규정을 엄격히 적용해야 한다.",
+   "rule": "원서 코퍼스 패턴을 반영하여, 영어 문장 내 언어학적 용어(예: 'old english', 'global warming')는 소문자로, 고유명사(예: 'Jeju Island', 'New York')는 대문자로 표기하며, 문법 오류 수정 시에도 이 규칙을 우선 적용하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-13T04:04:24.257Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
