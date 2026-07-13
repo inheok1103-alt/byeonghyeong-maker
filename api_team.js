@@ -367,6 +367,19 @@
   // 동화고 실물 기말 유형 순서(generateExam에 그대로 넣으면 동화고형 세트 생성)
   function donghwaTypeSet() { return ["어휘", "내용일치", "빈칸", "어법", "요약문AB", "제목", "무관문장", "지시", "연결어", "글의순서", "서술형", "어법수정", "조건영작", "우리말해석", "배열영작"]; }
   function donghwaKB() { return DONGHWA; }
+  // 문항 유형 택소노미 KB(표면유형 100+ · 6축 분류 · 신유형 예측 · 학교 시그니처 · 태깅 체계)
+  var TAXO = null;
+  async function loadTaxonomy(url) {
+    try { var r = await fetch(url || "knowledge/exam_type_taxonomy.json", { cache: "no-store" }); TAXO = await r.json(); return { ok: true, version: (TAXO.meta && TAXO.meta.version) || "?" }; } catch (e) { return { ok: false, error: String(e) }; }
+  }
+  function taxonomy() { return TAXO; }
+  // 신유형 확장: 기존 표면유형 → 서술형 출력+지문근거+조건+수정/설명 확장형 발문 힌트
+  function futureExpand(type) {
+    if (!TAXO || !TAXO.generation_formula) return "";
+    var map = TAXO.generation_formula.확장매핑 || {}, t = String(type || "");
+    for (var k in map) { if (map.hasOwnProperty(k) && t.indexOf(k) >= 0) return map[k]; }
+    return "";
+  }
   // 선지 금지패턴(메타표현·플레이스홀더) — Rays 5.4 자동 필터
   function badChoice(c) {
     var pats = (RAYS && RAYS.banned_patterns) || ["본문은", "글은", "사전적", "문자적", "원문보다", "undefined", "NaN", "(보기"];
@@ -2735,7 +2748,8 @@
     roster: ROSTER, BEST_TYPES: BEST_TYPES, mesh: MESH, topology: topology, googleBooks: googleBooks, pipeline: pipelineOf, runHarness: runHarness, configure: configure, provider: provider, convene: convene,
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints, setLogicStanding: setLogicStanding,
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB,
-    loadDonghwa: loadDonghwa, donghwaMode: donghwaMode, donghwaTypeSet: donghwaTypeSet, donghwaKB: donghwaKB, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
+    loadDonghwa: loadDonghwa, donghwaMode: donghwaMode, donghwaTypeSet: donghwaTypeSet, donghwaKB: donghwaKB,
+    loadTaxonomy: loadTaxonomy, taxonomy: taxonomy, futureExpand: futureExpand, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
     analysisSheet: analysisSheet, extractKeywords: extractKeywords, findSource: findSource, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
     dataEgressInfo: dataEgressInfo, setDataContract: function (mode) { CFG.dataContract = (mode === "local-only") ? "local-only" : "open"; return CFG.dataContract; },
     ollamaModels: async function (url) { try { var d = await getJSON(String(url || CFG.ollamaUrl).replace(/\/+$/, "") + "/api/tags", 4000); return (d && d.models || []).map(function (m) { return m.name; }); } catch (e) { return null; } },
