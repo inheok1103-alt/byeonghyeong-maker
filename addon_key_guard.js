@@ -65,9 +65,12 @@
     var maj = +Object.keys(tally).sort(function (a, b) { return tally[b] - tally[a]; })[0], cnt = tally[maj];
     var keyBad = !(q.answer >= 1 && q.answer <= q.choices.length);
     if (keyBad && cnt >= 2) return { fix: maj, why: "무효 정답키 → 솔버 " + cnt + "/" + votes.length + " 다수결 " + maj + "번 적용" };
-    // 다수(2/3 이상)가 기록정답과 다르면 교정 — 극성반전·오답키 방어(과거 3/3만 교정해 2/3 오류가 통과하던 결함 수정)
-    if (maj !== q.answer && cnt >= 2) return { fix: maj, why: "솔버 " + cnt + "/" + votes.length + " 다수결 " + maj + "번(기록 " + q.answer + "번 교정)" };
-    if (maj !== q.answer) return { flag: "정답 재검토 권고 — 솔버 " + cnt + "/" + votes.length + "가 " + maj + "번 선택(기록 " + q.answer + "번 유지)" };
+    // 코드 파생 정답형(빈칸·요약·함의): 코드가 정답을 알고 '강력한 오답'이 의도적으로 솔버를 낚음(어려운 문제일수록 솔버가 틀림).
+    // 2/3 다수결로 뒤집으면 정답 훼손(예: 빈칸 excessive choice를 freedom of choice로) → 만장일치(3/3)일 때만 교정, 2/3은 플래그만.
+    var codeDerived = /빈칸|요약|함의/.test(q.type || "");
+    var overrideMin = codeDerived ? 3 : 2;
+    if (maj !== q.answer && cnt >= overrideMin) return { fix: maj, why: "솔버 " + cnt + "/" + votes.length + " 다수결 " + maj + "번(기록 " + q.answer + "번 교정)" };
+    if (maj !== q.answer) return { flag: "정답 재검토 권고 — 솔버 " + cnt + "/" + votes.length + "가 " + maj + "번 선택(기록 " + q.answer + "번 유지" + (codeDerived ? ", 코드파생형은 만장일치만 교정" : "") + ")" };
     return { ok: "솔버 " + cnt + "/" + votes.length + " 일치" };
   }
 
