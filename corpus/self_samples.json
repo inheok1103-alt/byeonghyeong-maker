@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-12T23:13:10.460Z",
+ "updated": "2026-07-13T00:13:21.692Z",
  "samples": [
+  {
+   "ts": "2026-07-13T00:12:20.440Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "That is, ⓐ<u>read would originate</u> as the head V of VP (agreeing with and assigning accusative case to its object the book), and would subsequently raise to adjoin to an affixal agentive light-verb ø, ⓑ<u>which has a meaning</u> paraphraseble as ‘perform the action of’. If we suppose that a transitive V only triggers movement of ⓒ<u>a nominal which it case-mark</u> to the edge of VP if the nominal in question is not already ⓓ<u>the highest non-head constituent</u> within VP, then there will be no possibility of raising the DP the book in (82) to become the specifier of VP because this DP is already the highest non-head constituent within VP by virtue of being the only non-head constituent within VP. Chomsky’s light-verb analysis of two-place transitive predicates can be extended in an interesting way to handle the syntax of a class of verbs which are known as unergative predicates. These are ⓔ<u>verbs like those italicized</u> in (83) below which have agentive subjects, but which appear to have no complement:",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "[어법: 준동사분사] 정답 ⓒ의 'a nominal which it case-mark'는 'a nominal which it case-marks'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-13T00:12:46.161Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "That is, ⓐ<u>read would have originated</u> as the head V of VP (agreeing with and assigning accusative case to its object the book), and would subsequently raise to adjoin to an affixal agentive light-verb ø, ⓑ<u>which has a meaning</u> paraphraseble as ‘perform the action of’. If we suppose that a transitive V only triggers movement of a nominal which it case-marks to the edge of VP if the nominal in question is not already the highest non-head constituent within VP, then ⓒ<u>there will be no possibility</u> of raising the DP the book in (82) to become the specifier of VP because ⓓ<u>this DP is already the highest</u> non-head constituent within VP by virtue of being the only non-head constituent within VP. Chomsky’s light-verb analysis of two-place transitive predicates can be extended in an interesting way to handle the syntax of a class of verbs ⓔ<u>which are known</u> as unergative predicates. These are verbs like those italicized in (83) below which have agentive subjects, but which appear to have no complement:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓐ: 'read would have originated' → 'read would originate' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-12T23:10:55.002Z",
    "type": "요지",
@@ -268,60 +321,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] The verb load raises to v and precedes the object and adverb. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-12T17:19:31.238Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "II. READING COMPREHENSION Reading is not merely a process of exact identification of letters, words, and ultimately sentences ⓐ<u>leading to comprehension</u> built from letter to word to phrase to sentence [1]. Readers make use of their existing background knowledge (schemata) to make predictions about what is coming next in the text and about how some new, unfamiliar piece of information relates to what is already known, ⓑ<u>as in [2] and [3]</u>. It is clear that basic decoding processes are important for comprehension and ⓒ<u>are using by readers</u> in interaction with the more complex processes of meaning generation, as referred in [4], [5], and [6]. However, it is equally clear that readers engage in reading ⓓ<u>in order to gain</u> information. Reading purpose is a central concern of English for Specific Purposes (ESP), and purpose resides in the language learner's relationship to the learning task. The purpose is assumed to be comprehension of the message. Comprehension in instructional settings is translated into some product, ⓔ<u>such as completion</u> of comprehension questions, a written summary, or an oral report [7].",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓒ: 'are using by readers' → 'are used by readers'\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-12T17:20:06.315Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the role of background knowledge in decoding for reading comprehension",
-     "how decoding processes determine the use of background knowledge in reading",
-     "the importance of background knowledge in reading comprehension",
-     "the universal necessity of background knowledge for all reading tasks",
-     "the occasional use of background knowledge alongside decoding skills in reading"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The integration of background knowledge with decoding skills in achieving reading comprehension'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The integration of background knowledge with decoding skills in achieving reading comprehension]\n[오답 진단·처방]\n① 진단: 글에서 배경지식(background knowledge)이 '예측'과 '관련짓기'에 쓰인다고만 말하고 '디코딩(decoding)'의 역할은 언급하지 않았으므로, '디코딩의 역할'을 강조한 이 선지는 지문과 맞지 않음. → 처방: 지문에서 '디코딩'이 중요하다고 언급한 부분을 다시 읽고, 배경지식이 '디코딩과 어떻게 상호작용하는지'를 확인하기.\n② 진단: 글에서 '디코딩'이 '의미 생성'과 상호작용한다고 했지만, '배경지식이 디코딩을 결정한다'는 인과관계는 없음. 지문은 배경지식과 디코딩이 '모두 중요'하다고만 설명함. → 처방: 지문에서 '디코딩'과 '배경지식'의 관계를 '상호작용'으로 설명한 부분을 찾고, 인과관계가 아님을 기억하기.\n④ 진단: 글은 '모든 읽기 과제에 배경지식이 필요하다고' 말하지 않았고, '특정 목적(ESP)'의 읽기에서 배경지식이 중요하다고만 언급함. '모든'이라는 절대적 표현은 과장됨. → 처방: 지문에서 '목적'과 'ESP'가 언급된 부분을 확인하고, '보편적 필요성'이 아님을 기억하기.\n⑤ 진단: 글은 배경지식이 '때때로'가 아니라 '항상' 읽기에서 사용된다고 설명함. '때때로'는 지문의 내용을 축소하거나 오해한 것임. → 처방: 지문에서 배경지식이 '예측'과 '관련짓기'에 '항상' 쓰인다고 설명한 부분을 다시 읽고, '필수성'을 강조하기."
    }
   }
  ]
