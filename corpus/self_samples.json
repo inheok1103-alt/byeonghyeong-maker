@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-14T15:52:34.190Z",
+ "updated": "2026-07-14T17:37:28.437Z",
  "samples": [
+  {
+   "ts": "2026-07-14T17:35:45.169Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "소유 대명사와 소유 형용사의 구별 기준을 설명하려고",
+     "형용사적 소유격을 설명하려고",
+     "소유 대명사를 형용사적 소유격으로 잘못 쓰는 오류를 지적하려고",
+     "소유 대명사와 소유 형용사의 혼동 사례를하려고",
+     "소유 대명사와 소유 형용사의 사용 범위를 한정하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'To clarify the distinction between adjectival and pronominal possessive pronouns.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 형용사적 소유격이란 말이 나오자 '형용사적 소유격'이라는 용어에만 집중해 소유 대명사와 소유 형용사의 구별 기준을 놓쳤다. 지문은 소유 대명사와 소유 형용사의 '기능'과 '형태'를 구분해 설명하는데, 이 부분을 오해했다. → 처방: 형용사적 소유격이란 말이 나오면 그 용어에만 매달리지 말고, 지문이 '기능'과 '형태'를 어떻게 설명하는지 다시 한 번 읽고 비교해보기.\n③ 진단: 소유 대명사와 소유 형용사의 '혼동 사례'가 아니라 '구별 기준'을 설명하는 글임을 파악하지 못했다. 지문은 'my'와 'mine'의 기능 차이를 예로 들며 '구분 기준'을 설명하는데, 이 부분을 '혼동 사례'로 오해했다. → 처방: 글의 목적을 찾을 때는 '무엇을 설명하려고 하는지'를 먼저 찾기. '구분 기준'과 '혼동 사례'는 다르다는 점을 기억하기.\n④ 진단: 혼동 사례를 설명하는 것이 아니라 '구별 기준'을 설명하는 글임을 이해하지 못했다. 지문은 'my'와 'mine'의 기능 차이를 설명하며 '구분 기준'을 제시하는데, 이 부분을 '혼동 사례'로 잘못 해석했다. → 처방: 글의 목적을 찾을 때는 '무엇을 설명하려고 하는지'를 먼저 찾기. '구분 기준'과 '혼동 사례'는 다르다는 점을 기억하기.\n⑤ 진단: 사용 범위를 한정하려고 한 것이 아니라 '구별 기준'을 설명하려고 한 글임을 파악하지 못했다. 지문은 'my'와 'mine'의 기능 차이를 설명하며 '구분 기준'을 제시하는데, 이 부분을 '사용 범위'로 오해했다. → 처방: 글의 목적을 찾을 때는 '무엇을 설명하려고 하는지'를 먼저 찾기. '구분 기준'과 '사용 범위'는 다르다는 점을 기억하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To clarify the distinction between adjectival and pronominal possessive pronouns.]"
+   }
+  },
+  {
+   "ts": "2026-07-14T17:36:59.745Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '관계사' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 관계사를 사용하여 한 문장으로 바꿔 쓰시오.\n[원문] Determiners 41 My father’s sister was born in India.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The sister who was born in India is my father’s sister. (포인트: 관계사절로 전환하여 'my father’s sister'를 'the sister who was born in India'로 재구성)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-14T15:51:02.649Z",
    "type": "영영풀이일치",
@@ -305,76 +357,6 @@
     ],
     "answer": 1,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n② 진단: 지문에서 '마을 경비병이 내가 시의 국가안전보장경찰 본부로 방문해야 한다고 말했다'는 내용은 있지만, '방문하지 않아도 된다'는 말은 없다. 학생은 '방문해야 한다'는 사실만 보고 '방문하지 않아도 된다'는 선지를 오독했을 수 있다. → 처방: 지문에서 말하는 '방문해야 한다'는 사실만 정확히 읽고, 반대되는 말은 없는지 다시 한 번 확인하기.\n③ 진단: 지문에서 '나는 두려움에 떨며 '나는 그들의 업무와는 아무 관계가 없다!'라고 생각했다'는 내용이 그대로 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '~라고 생각했다'는 구절이 나오면 그 내용이 사실과 일치하는지 다시 한 번 확인하기.\n④ 진단: 지문에서 '나는 아는 지인들에게 비공식적으로 연락을 시도해 내가 관련된 일이 있는지 알아보려 했다'는 내용이 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '연락을 시도했다'는 구절이 나오면 그 이유가 '알아보기 위해서'라는 점도 함께 확인하기.\n⑤ 진단: 지문에서 '나는 두려움에 떨면서도 국가안전보장경찰 본부로 직접 찾아갔다'는 내용이 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '직접 찾아갔다'는 구절이 나오면 그 이유가 '두려움에도 불구하고'라는 점도 함께 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-14T00:10:25.128Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "If we assume that help you is a VP whereas to help you is a TP, we can account for the contrasts in (7) and (8) by saying that <u>ought is the kind of word which selects (i.e. ‘takes’) an infinitival TP as its complement, whereas should is the kind of word which selects an infinitival VP as its complement</u>. Implicit in this claim is the assumption that different words like ought and should have different selectional properties which determine the range of complements they permit. The infinitive phrase to help you is formed by merging the infinitive particle to with the verb phrase help you. If (as we argued in the previous chapter) infinitival to is an infinitival tense particle (belonging to the category T) and if to is the head of the phrase to help you, the structure formed by merging to with the verb phrase/VP help you in (5) will be the TP (i.e. infinitival Tense Projection/Tense Phrase) in (9) below:",
-    "choices": [
-     "The word 'ought' literally means 'owed' in modern English, while 'should' means 'obliged,' making them historically identical in meaning.",
-     "The difference between 'ought' and 'should' lies in their frequency of usage rather than their syntactic constraints.",
-     "The modal verbs 'ought' and 'should' always take infinitival VP complements, demonstrating identical syntactic behavior in sentences.",
-     "The modal verbs 'ought' and 'should' differ in their grammatical constraints, reflecting distinct syntactic roles that shape how they interact with other elements in a sentence.",
-     "The modal verbs 'ought' and 'should' are interchangeable in all contexts because they both require infinitival complements."
-    ],
-    "answer": 4,
-    "explanation": "밑줄 친 부분은 'The modal verbs 'ought' and 'should' differ in their grammatical constraints, reflecting distinct syntactic roles that shape how they interact with other elements in a sentence.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 ought 와 should 의 의미보다는 문법적 기능(선택 범위·보충어 유형)을 다룬다는 점을 무시하고, 현대 영어에서 두 단어의 어원적 의미를 혼동한 듯함. 'owed'나 'obliged' 같은 뜻으로 오해한 것임. → 처방: 지문에서 다루는 '선택성'과 '구조적 역할'에 집중하고, 뜻보다는 문법적 제약을 우선적으로 분석할 것.\n② 진단: 지문에서 ought 와 should 의 '문법적 제약'(선택하는 보충어의 유형)이 다르다는 점을 보지 못하고, '사용 빈도'라는 의미론적·실용적 측면에만 주목한 듯함. → 처방: 문법적 제약(선택성)을 분석할 때는 문법 용어와 구조에 주목하고, 뜻이나 빈도 같은 다른 요소는 배제할 것.\n③ 진단: 지문에서 ought 는 TP(tense phrase)를, should 는 VP(verb phrase)를 보충어로 취한다는 점을 무시하고, 두 동사가 '항상 VP 를 보충어로 취한다'고 단순화한 듯함. → 처방: 지문에서 제시된 구조적 차이(TP vs VP)를 정확히 파악하고, '항상'이라는 절대적 표현을 경계할 것.\n⑤ 진단: 지문에서 ought 와 should 의 '교환 불가능성'을 강조한 부분을 보지 못하고, '둘 다 보충어로 to-부정사를 취하니 교환 가능하다'고 오해한 듯함. → 처방: 지문에서 '선택성'의 차이로 인해 교환 불가능하다는 점을 확인하고, 보충어의 유형뿐 아니라 구조적 역할까지 고려할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-14T00:10:58.086Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Ought and Should Differ in Complement Selection",
-     "All Modal Verbs Differ in Their Complement Selection Properties",
-     "Ought and Must Serve Similar Complement Selection Roles",
-     "The Choice of Complement Determines Modal Verb Meaning",
-     "Modal Verbs Rarely Affect Sentence Structure"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Ought and should differ in complement selection properties.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 ought 와 should 의 보충 선택 차이만 언급하고, 모든 조동사(modal verbs)의 보충 선택 특성이 다르다고 일반화한 오류. 'different words like ought and should'라는 한정적 표현을 무시하고 'all modal verbs'로 확대해석. → 처방: 지문에서 구체적으로 언급된 단어(ought, should)에만 초점을 맞추고, 보충 선택 특성의 차이는 '일부' 조동사 간에만 적용된다는 점을 기억하기.\n③ 진단: ought 와 must 가 보충 선택에서 비슷하다고 오독. 지문은 ought 와 should 의 차이를 설명하며, must 는 언급조차 없으므로 must 가 ought 와 비슷하다는 결론은 근거 없음. → 처방: 지문에 언급된 단어(ought, should)와 그 차이점에만 집중하고, 언급되지 않은 단어(must)는 배제하기.\n④ 진단: 보충 선택이 조동사 의미 결정에 영향을 미친다고 오해. 지문은 보충 선택이 ought 와 should 의 차이를 설명하는 '수단'일 뿐, 의미 결정의 '원인'이 아님을 명시하지 않음. → 처방: 지문에서 보충 선택이 조동사의 '형태(structure)'에 영향을 미친다는 점을 기억하고, '의미(meaning)'와 혼동하지 않기.\n⑤ 진단: 조동사가 문장 구조에 거의 영향을 미치지 않는다고 오독. 지문은 ought 와 should 가 보충 선택(즉, 문장 구조)에 영향을 미친다고 설명하고 있으므로, 'rarely'라는 극단적 표현은 지문 내용과 모순. → 처방: 지문에서 조동사가 문장 구조(보충 선택)에 영향을 미친다는 점을 분명히 이해하고, 'rarely'나 'never' 같은 극단적 단어 사용을 경계하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Ought and should differ in complement selection properties.]"
    }
   }
  ]
