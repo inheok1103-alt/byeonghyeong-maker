@@ -1,6 +1,95 @@
 {
- "updated": "2026-07-13T23:18:31.800Z",
+ "updated": "2026-07-14T00:11:32.940Z",
  "samples": [
+  {
+   "ts": "2026-07-14T00:10:25.128Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "If we assume that help you is a VP whereas to help you is a TP, we can account for the contrasts in (7) and (8) by saying that <u>ought is the kind of word which selects (i.e. ‘takes’) an infinitival TP as its complement, whereas should is the kind of word which selects an infinitival VP as its complement</u>. Implicit in this claim is the assumption that different words like ought and should have different selectional properties which determine the range of complements they permit. The infinitive phrase to help you is formed by merging the infinitive particle to with the verb phrase help you. If (as we argued in the previous chapter) infinitival to is an infinitival tense particle (belonging to the category T) and if to is the head of the phrase to help you, the structure formed by merging to with the verb phrase/VP help you in (5) will be the TP (i.e. infinitival Tense Projection/Tense Phrase) in (9) below:",
+    "choices": [
+     "The word 'ought' literally means 'owed' in modern English, while 'should' means 'obliged,' making them historically identical in meaning.",
+     "The difference between 'ought' and 'should' lies in their frequency of usage rather than their syntactic constraints.",
+     "The modal verbs 'ought' and 'should' always take infinitival VP complements, demonstrating identical syntactic behavior in sentences.",
+     "The modal verbs 'ought' and 'should' differ in their grammatical constraints, reflecting distinct syntactic roles that shape how they interact with other elements in a sentence.",
+     "The modal verbs 'ought' and 'should' are interchangeable in all contexts because they both require infinitival complements."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'The modal verbs 'ought' and 'should' differ in their grammatical constraints, reflecting distinct syntactic roles that shape how they interact with other elements in a sentence.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 ought 와 should 의 의미보다는 문법적 기능(선택 범위·보충어 유형)을 다룬다는 점을 무시하고, 현대 영어에서 두 단어의 어원적 의미를 혼동한 듯함. 'owed'나 'obliged' 같은 뜻으로 오해한 것임. → 처방: 지문에서 다루는 '선택성'과 '구조적 역할'에 집중하고, 뜻보다는 문법적 제약을 우선적으로 분석할 것.\n② 진단: 지문에서 ought 와 should 의 '문법적 제약'(선택하는 보충어의 유형)이 다르다는 점을 보지 못하고, '사용 빈도'라는 의미론적·실용적 측면에만 주목한 듯함. → 처방: 문법적 제약(선택성)을 분석할 때는 문법 용어와 구조에 주목하고, 뜻이나 빈도 같은 다른 요소는 배제할 것.\n③ 진단: 지문에서 ought 는 TP(tense phrase)를, should 는 VP(verb phrase)를 보충어로 취한다는 점을 무시하고, 두 동사가 '항상 VP 를 보충어로 취한다'고 단순화한 듯함. → 처방: 지문에서 제시된 구조적 차이(TP vs VP)를 정확히 파악하고, '항상'이라는 절대적 표현을 경계할 것.\n⑤ 진단: 지문에서 ought 와 should 의 '교환 불가능성'을 강조한 부분을 보지 못하고, '둘 다 보충어로 to-부정사를 취하니 교환 가능하다'고 오해한 듯함. → 처방: 지문에서 '선택성'의 차이로 인해 교환 불가능하다는 점을 확인하고, 보충어의 유형뿐 아니라 구조적 역할까지 고려할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-14T00:10:58.086Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Ought and Should Differ in Complement Selection",
+     "All Modal Verbs Differ in Their Complement Selection Properties",
+     "Ought and Must Serve Similar Complement Selection Roles",
+     "The Choice of Complement Determines Modal Verb Meaning",
+     "Modal Verbs Rarely Affect Sentence Structure"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Ought and should differ in complement selection properties.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 ought 와 should 의 보충 선택 차이만 언급하고, 모든 조동사(modal verbs)의 보충 선택 특성이 다르다고 일반화한 오류. 'different words like ought and should'라는 한정적 표현을 무시하고 'all modal verbs'로 확대해석. → 처방: 지문에서 구체적으로 언급된 단어(ought, should)에만 초점을 맞추고, 보충 선택 특성의 차이는 '일부' 조동사 간에만 적용된다는 점을 기억하기.\n③ 진단: ought 와 must 가 보충 선택에서 비슷하다고 오독. 지문은 ought 와 should 의 차이를 설명하며, must 는 언급조차 없으므로 must 가 ought 와 비슷하다는 결론은 근거 없음. → 처방: 지문에 언급된 단어(ought, should)와 그 차이점에만 집중하고, 언급되지 않은 단어(must)는 배제하기.\n④ 진단: 보충 선택이 조동사 의미 결정에 영향을 미친다고 오해. 지문은 보충 선택이 ought 와 should 의 차이를 설명하는 '수단'일 뿐, 의미 결정의 '원인'이 아님을 명시하지 않음. → 처방: 지문에서 보충 선택이 조동사의 '형태(structure)'에 영향을 미친다는 점을 기억하고, '의미(meaning)'와 혼동하지 않기.\n⑤ 진단: 조동사가 문장 구조에 거의 영향을 미치지 않는다고 오독. 지문은 ought 와 should 가 보충 선택(즉, 문장 구조)에 영향을 미친다고 설명하고 있으므로, 'rarely'라는 극단적 표현은 지문 내용과 모순. → 처방: 지문에서 조동사가 문장 구조(보충 선택)에 영향을 미친다는 점을 분명히 이해하고, 'rarely'나 'never' 같은 극단적 단어 사용을 경계하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Ought and should differ in complement selection properties.]"
+   }
+  },
+  {
+   "ts": "2026-07-14T00:11:03.373Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 15 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'infinitival', 'complements', 'respective' / 13~17단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] ought selects an infinitival TP while should selects an infinitival VP as their respective complements.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-13T23:15:25.665Z",
    "type": "밑줄함의",
@@ -254,95 +343,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] never (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-13T17:26:14.548Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 나는 국가보안경찰을 찾아가야 했다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-13T15:14:00.606Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(73%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어 사용을 향상하기 위해 혼동되는 단어와 유의어를 구분하는 것이 중요하다.",
-     "영어 사용에서 혼동되는 단어를 구분하는 것이 중요하지만 유의어는 중요하지 않다.",
-     "모든 영어 사용자를 위해 혼동되는 단어와 유의어를 구분하는 것이 필수적이다.",
-     "영어 사용을 항상 향상시키기 위해 혼동되는 단어와 유의어를 구분하는 것이 필요하다.",
-     "영어 사용은 혼동되는 단어와 유의어를 구분하는 것과 무관하다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The list highlights commonly misused English words, including homonyms and words with similar meanings, to help individuals avoid confusion and improve their language usage.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 유의어의 중요성을 낮게 평가하여 혼동되는 단어만 중시 → 처방: 유의어의 구분 중요성을 인식\n③ 진단: 모든 영어 사용자에게 필수적인 요소를 강조 → 처방: 영어 사용 목적과 수준에 따라 구분\n④ 진단: 영어 사용의 모든 상황에서 혼동되는 단어와 유의어를 구분하는 것을 필요로 한다고 생각 → 처방: 영어 사용의 목적과 상황에 따라 구분\n⑤ 진단: 영어 사용과 혼동되는 단어 및 유의어의 구분을 전혀 관련이 없다고 생각 → 처방: 영어 사용에서 혼동되는 단어와 유의어의 중요성을 인식\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The list highlights commonly misused English words, including homonyms and words with similar meanings, to help individuals avoid confusion and improve their language usage.]"
-   }
-  },
-  {
-   "ts": "2026-07-13T11:31:15.884Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "II. READING COMPREHENSION Reading is not merely a process of exact identification of letters, words, and ultimately sentences leading to comprehension built from letter to word to phrase to sentence [1]. Readers make use of their existing background knowledge (schemata) to make predictions about what is coming next in the text and about how some new, unfamiliar piece of information relates to what is already known, as in [2] and [3]. It is clear that basic decoding processes are important for comprehension and are used by readers in interaction with the more complex processes of meaning generation, as referred in [4], [5], and [6]. However, it is equally clear that readers engage in reading in order to gain information. Reading purpose is a central concern of English for Specific Purposes (ESP), and purpose resides in the language learner's relationship to the learning task. The purpose is assumed to be comprehension of the message. Comprehension in instructional settings is translated into some product, such as completion of comprehension questions, a written summary, or an oral report [7].",
-    "choices": [
-     "읽기는 철자와 단어의 정확한 확인 과정을 넘어서는 **단순한** 의미 생성 과정이다",
-     "읽기 과정에서 독자는 기존 배경지식을 활용해 다음 내용을 예측한다",
-     "읽기 목적은 ESP 에서 주요 관심사로 메시지의 **생략**에 초점을 둔다",
-     "읽기 목적은 학습 과제에 대한 학습자의 관계에서 **제외된다**",
-     "읽기 이해는 지침상 완료 과제(질문 답변, 요약, 구두 보고)로 **유지된다**"
-    ],
-    "answer": 2,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 읽기는 '단순한' 의미 생성 과정이 아니라 '복잡한' 의미 생성 과정임을 강조하는데, 학생은 '단순한'이라는 말을 오해해 '단순'의 의미를 '기본'으로 착각한 듯함. 지문 [1]에 'exact identification'을 넘어서는 'more complex processes'라고 명시되어 있음. → 처방: 지문에서 '단순한'이 아니라 '복잡한' 의미 생성 과정임을 기억하고, '단순'의 의미를 '기본'이 아니라 '단순함'으로 해석하지 않도록 주의할 것.\n③ 진단: 학생은 '생략'이라는 단어를 오해해 메시지의 '제외'나 '삭제'로 생각한 듯함. 지문에서 ESP 는 'comprehension of the message'에 초점을 둔다고 명확히 서술되어 있음. → 처방: '생략'이 아니라 '이해'임을 확인하고, ESP 의 목적은 메시지 이해임을 기억할 것.\n④ 진단: 학생은 '제외된다'라는 말을 오해해 읽기 목적의 중요성을 무시한 듯함. 지문에서 'Reading purpose is a central concern of English for Specific Purposes (ESP)'라고 명시되어 있음. → 처방: '제외된다'가 아니라 '중요한 관심사'임을 기억하고, 읽기 목적의 중요성을 항상 떠올릴 것.\n⑤ 진단: 학생은 '유지된다'라는 말을 오해해 읽기 이해가 '계속된다'거나 '변하지 않는다'고 생각한 듯함. 지문에서 'Comprehension in instructional settings is translated into some product'라고 서술되어 있음. → 처방: '유지된다'가 아니라 '완료 과제로 변환된다'는 의미를 기억하고, '유지'라는 단어의 의미를 정확히 해석할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
