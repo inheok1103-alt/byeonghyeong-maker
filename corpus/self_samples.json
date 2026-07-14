@@ -1,6 +1,40 @@
 {
- "updated": "2026-07-14T19:46:47.315Z",
+ "updated": "2026-07-14T21:17:42.065Z",
  "samples": [
+  {
+   "ts": "2026-07-14T21:17:03.258Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.86,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.86)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Confusing Words and Homonyms 35 Inc. abbreviation for incorporated ink ﬂuid in pens incite to prompt to action insight understanding, comprehension incredible astonishing Example: Her gymnastic moves were incredible. incredulous skeptical Example: Citizens are incredulous about the reason for the increase in the price of gas. ingenious clever ingenuous na¨ıve or simple innocence to be without guilt innocents people who are without guilt insure (see assure) irregardless no such word exists regardless in spite of, without regard isle (see aisle) it’s contraction for it is or it has Example: It’s for a good cause. its possessive pronoun Example: The cat hurt its paw. jewel gem joule in physics, a unit of work or energy karat (see carat) kernel (see colonel) key (see cay) knead work with bread dough kneed hit with one’s knee need to require knew past tense of know, to have understood new opposite of old\n\n─────────\n[요약문] Homophones and similar-sounding words often cause confusion in (A) and lead to misinterpretation of intended (B).",
+    "choices": [
+     "(A) misunderstanding … (B) pronunciation",
+     "(A) miscommunication … (B) meaning",
+     "(A) identification … (B) writing",
+     "(A) absence … (B) presence",
+     "(A) learning … (B) spelling"
+    ],
+    "answer": 2,
+    "explanation": "(A) miscommunication / (B) meaning 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘misunderstanding’을 골랐을 텐데, 이는 ‘의도한 뜻을 잘못 받아들임’을 뜻하는 말로, 지문에서 ‘의도한 의미를 잘못 해석하게 만든다’는 ‘miscommunication’이 더 정확한 표현임을 확인하지 못했음. (지문: ‘misinterpretation of intended meaning’) → 처방: ‘의도한 의미를 잘못 해석하게 만든다’는 문구에 주목해 ‘miscommunication’이 더 적합한 단어인지 다시 확인하기.\n③ 진단: ‘identification’을 골랐을 텐데, 이는 ‘단어 구별’을 뜻하는 말이 아니라 ‘식별’ 자체를 의미해, 지문의 ‘의도한 의미를 잘못 해석하게 만든다’는 맥락과 맞지 않음. (지문: ‘misinterpretation of intended meaning’) → 처방: ‘의도한 의미를 잘못 해석하게 만든다’는 문구에 ‘의미’가 핵심임을 기억하고, ‘identification’이 아닌 ‘miscommunication’을 떠올리기.\n④ 진단: ‘absence’를 골랐을 텐데, 이는 ‘부재’를 뜻하는 말로, 지문에서 ‘의도한 의미를 잘못 해석하게 만든다’는 ‘결과’를 설명하는 말이 아니라, ‘원인’을 설명하는 말이 아님. (지문: ‘often cause confusion in ~ and lead to misinterpretation’) → 처방: ‘원인이 ~를 일으키고 결과가 ~를 낳는다’는 구조를 떠올리며, ‘absence’보다는 ‘miscommunication’이 더 적합한지 다시 생각해 보기.\n⑤ 진단: ‘learning’을 골랐을 텐데, 이는 ‘배움’을 뜻하는 말로, 지문에서 ‘의도한 의미를 잘못 해석하게 만든다’는 ‘결과’를 설명하는 말이 아니라, ‘과정’을 설명하는 말이 아님. (지문: ‘often cause confusion in ~ and lead to misinterpretation’) → 처방: ‘원인이 ~를 일으키고 결과가 ~를 낳는다’는 구조를 떠올리며, ‘배움’이 아니라 ‘의도한 의미를 잘못 해석하게 만드는 상황’을 떠올리기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-14T19:45:42.308Z",
    "type": "목적",
@@ -308,39 +342,6 @@
     ],
     "answer": 4,
     "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘① Words stand for “things.”’가 전체 흐름에서 벗어난 문장이라고 오독했을 가능성이 있다. 학생은 ‘things’를 ‘물건’으로만 좁게 이해하고, ‘사물·개념·상황’을 모두 포함하는 ‘것들’이라는 넓은 의미로 보지 못했다. → 처방: ‘things’를 ‘사물·개념·상황’을 모두 아우르는 넓은 의미로 이해하고, ①~③이 ‘단어의 중요성’을 설명하는 흐름임을 확인하라.\n② 진단: ‘② The more “things” you can recognize, the better able you are to deal with the complicated and changing world.’가 ‘단어의 중요성’을 강조하는 문장인데, 이를 ‘단어의 정의’나 ‘어원’과 관련이 없다고 오해했을 수 있다. → 처방: ‘②’가 ‘단어의 중요성’을 설명하는 문장임을 확인하고, ①~③이 ‘단어와 세상의 관계’를 설명하는 흐름임을 기억하라.\n③ 진단: ‘③ New and unusual situations are more easily handled by those who can utilize the largest number of “things” we call words.’가 ‘단어의 중요성’을 강조하는 문장인데, 이를 ‘어원’이나 ‘단어의 정의’와 무관하다고 오해했을 수 있다. → 처방: ‘③’이 ‘단어의 중요성’을 설명하는 문장임을 확인하고, ①~③이 ‘단어의 역할’을 설명하는 흐름임을 기억하라.\n⑤ 진단: ‘⑤ REVIEW WORDS DEFINITIONS’가 ‘단어의 중요성’이나 ‘어원’과 관련이 없다고 오해했을 수 있다. 학생은 ‘⑤’이 ‘단어의 정의’를 나열하는 문단임을 보지 못하고, ‘흐름’을 판단하는 데 실패했다. → 처방: ‘⑤’가 ‘단어의 정의’를 나열하는 문단임을 확인하고, ①~④가 ‘단어의 중요성’을 설명하는 흐름임을 기억하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-14T06:27:23.853Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Vocabulary Expansion Boosts Adaptability to Complexity",
-     "Adaptability to Complexity Requires Vocabulary Expansion",
-     "Recognizing More Words Increases Adaptability",
-     "Every Word You Learn Guarantees Perfect Adaptability",
-     "Vocabulary Growth Always Enhances Adaptability to All Situations"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Expanding vocabulary enhances adaptability to complexity.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘adaptability’를 ‘vocabulary expansion’이 ‘필요하다’라고만 표현했는데, 지문은 ‘more words = better adaptability’로 ‘확장’이 ‘능력 향상’을 이끈다고 강조한 점을 놓쳤다. ‘requires’는 필요조건을 뜻하지만 지문은 ‘능력의 크기’가 중요하다고 설명한 것과 다르다. → 처방: ‘~가 필요하다’라는 표현 대신 ‘~가 능력을 키워준다’로 바꾸어 지문의 ‘better able’를 떠올리며 답을 고르기.\n③ 진단: ‘Recognizing More Words’는 지문의 ‘recognize things’와 비슷하지만, ‘Increases Adaptability’는 지문의 ‘better able to deal with’보다 ‘능력의 정도’를 약하게 표현했다. 지문은 ‘많은 단어 = 복잡한 세계 대처 능력’으로 ‘정도’를 강조했는데, 이 선지는 ‘단어 인식 = 적응력 증가’로 ‘원인과 결과’를 단순화했다. → 처방: ‘단어 인식’이 ‘어느 정도’ adaptability 를 높이는지 확인하고, 지문의 ‘better able’를 떠올리며 ‘정도’를 강조하는 답을 찾기.\n④ 진단: ‘Guarantees Perfect Adaptability’는 지문의 ‘better able’를 ‘완벽한 보장’으로 과장했다. 지문은 ‘많은 단어 = 더 잘 대처’이지 ‘완벽한 보장’이 아니다. ‘perfect’는 지문의 ‘complicated and changing world’를 고려하면 지나친 표현이다. → 처방: ‘Guarantees’나 ‘Perfect’를 보면 지문의 ‘better able’를 떠올리며 ‘과장된 표현’을 의심하고 정답을 다시 확인하기.\n⑤ 진단: ‘Always Enhances Adaptability to All Situations’는 ‘항상’, ‘모든 상황’을 강조했는데, 지문은 ‘많은 단어 = 복잡한 세계 대처 능력’으로 ‘특정 상황’을 전제하지 않는다. ‘Always’와 ‘All’은 지문의 ‘complicated and changing world’를 고려하면 지나친 일반화다. → 처방: ‘Always’나 ‘All’을 보면 지문의 ‘complicated and changing’이라는 ‘특정 조건’을 떠올리며 ‘과도한 일반화’를 의심하고 답을 다시 고르기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Expanding vocabulary enhances adaptability to complexity.**]"
    }
   }
  ]

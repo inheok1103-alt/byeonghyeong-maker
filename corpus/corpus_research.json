@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-14T19:46:47.311Z",
+ "updated": "2026-07-14T21:17:42.061Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-14T21:17:13.383Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "복수명사(livestocks, peoples 등)가 무의미한 복수화로 오류를 일으키는 경우가 많다. 또한, 동사 원형과 과거형/과거분사형 혼동(understend→understand, likr→like)도 빈번하다.",
+   "rule": "'복수명사 오류'는 무의미한 '-s' 접미사를 제거한 형태로 출제하며, '동사 원형 오류'는 원형동사(like/use)와 시제에 맞는 동사(liked/could use)를 구분하여 문항화한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-14T19:46:16.433Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'reason relations'와 'direct object' 패턴에서 'that' 절이 아닌 'to 부정사'가 직접 목적어로 더 자연스럽게 쓰이는 경향이 강하다는 점을 확인할 수 있다. 또한 'doubt'는 복수형 'doubts'로, 'society'는 'sosiety'처럼 철자 오류가 발생할 가능성이 높은 단어라는 특징이 있다.",
    "rule": "'~의 이유/이유가 되는 것'을 나타낼 때는 'a reason that + 절'이 아닌 'a reason to + 동사원형' 구조를 기본으로 사용하며, 'doubt'는 복수형 'doubts'로, 'society'는 철자 'society'로만 출제한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-09T08:49:52.636Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "고등학생 수준에서 흔히 틀리는 '단수/복수' 오류와 '연어(형용사+명사)'의 결합 부족이 다수 관찰된다. 특히 'energy'→'energy sources', 'subject'→'subjects'와 같이 의미적 복수화와 문법적 복수화가 동시에 요구되는 경우가 많다.",
-   "rule": "'복수 개념을 내포하는 명사(energy, subject 등)가 주어·목적어·보어로 쓰일 때는 복수형(-s)으로 표기하고, 해당 명사와 자연스럽게 결합하는 연어(energy sources, subjects better than 등)를 활용하여 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",
