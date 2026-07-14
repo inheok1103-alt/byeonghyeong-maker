@@ -367,6 +367,33 @@
   // 동화고 실물 기말 유형 순서(generateExam에 그대로 넣으면 동화고형 세트 생성)
   function donghwaTypeSet() { return ["어휘", "내용일치", "빈칸", "어법", "요약문AB", "제목", "무관문장", "지시", "연결어", "글의순서", "서술형", "어법수정", "조건영작", "우리말해석", "배열영작"]; }
   function donghwaKB() { return DONGHWA; }
+  // 동화고 유형별 구체 제작 레시피(정답설계·오답DNA·난도레버·체크리스트) — donghwaMode에서 유형규칙에 주입
+  var RECIPES = null;
+  async function loadRecipes(url) {
+    try { var r = await fetch(url || "knowledge/donghwa_construction_recipes.json", { cache: "no-store" }); RECIPES = await r.json(); return { ok: true, version: (RECIPES.meta && RECIPES.meta.version) || "?", count: (RECIPES.recipes || []).length }; } catch (e) { return { ok: false, error: String(e) }; }
+  }
+  var RECIPE_MAP = [
+    [/어법수정|어법.*교정|어휘.*어법/, "논술_어휘어법교정"], [/어형|형태변형|태\)|분사구문|관계사\)|가정법/, "논술_형태변형"],
+    [/조건영작|배열영작|재배열|영작/, "논술_조건재배열영작"], [/본문.*추출|단어.*추출/, "논술_본문단어추출"],
+    [/찾아|본문단어/, "논술_본문단어찾기"], [/순서.*배열|배열.*순서/, "논술_순서배열"],
+    [/어법/, "어법판단"], [/어휘|낱말|네모어휘/, "문맥어휘판단"], [/숙어|ABC/, "어휘숙어ABC"],
+    [/요약/, "요약문빈칸AB"], [/연결어/, "연결어빈칸"], [/빈칸/, "빈칸추론"], [/제목/, "제목"],
+    [/무관/, "무관문장"], [/내용|일치/, "내용불일치"], [/지시|지칭/, "지시대상"]
+  ];
+  function recipeFor(type) {
+    if (!DONGHWA_ON || !RECIPES || !Array.isArray(RECIPES.recipes)) return "";
+    var t = String(type || ""), key = "";
+    for (var i = 0; i < RECIPE_MAP.length; i++) { if (RECIPE_MAP[i][0].test(t)) { key = RECIPE_MAP[i][1]; break; } }
+    if (!key) return "";
+    var rc = RECIPES.recipes.filter(function (r) { return r.type === key; })[0];
+    if (!rc) return "";
+    var dna = (rc.distractor_dna || []).map(function (d) { return d.code; }).join("·");
+    var chk = (rc.checklist || []).slice(0, 3).join(" / ");
+    return ("[정답설계] " + String(rc.answer_design || "").slice(0, 260) +
+      (dna ? " [오답DNA] " + dna : "") +
+      " [난도] " + String(rc.difficulty_lever || "").slice(0, 160) +
+      (chk ? " [검증] " + chk : "")).slice(0, 750);
+  }
   // 문항 유형 택소노미 KB(표면유형 100+ · 6축 분류 · 신유형 예측 · 학교 시그니처 · 태깅 체계)
   var TAXO = null;
   async function loadTaxonomy(url) {
@@ -2428,7 +2455,7 @@
       while (true) {
         var i = idx++; if (i >= types.length) return;
         var t = types[i], b = builderFor(t), got = null, t0 = Date.now();
-        if (PAR === 1) { RUNHINT = ""; var kbT = kbFor(t); TYPERULE = ((TYPE_GUIDE[t] || "") + (kbT ? (" [KB지침] " + kbT) : "")).slice(0, 2600); setLevelRule(t, opts.level); }
+        if (PAR === 1) { RUNHINT = ""; var kbT = kbFor(t); var rcT = recipeFor(t); TYPERULE = ((TYPE_GUIDE[t] || "") + (kbT ? (" [KB지침] " + kbT) : "") + (rcT ? (" [제작레시피] " + rcT) : "")).slice(0, 3300); setLevelRule(t, opts.level); }
         onT(t, "start");
         for (var attempt = 1; attempt <= maxTry && !got; attempt++) {
           if (attempt > 1) onT(t, "retry", attempt);
@@ -2562,7 +2589,7 @@
     opts = opts || {}; USE_ENSEMBLE = !!opts.ensemble;
     var _hint0 = RUNHINT; if (opts.hint) RUNHINT = String(opts.hint);   // 키워드 중심 출제 등 1회성 지시
     var ctx = opts.ctx || await cachedContext(passage, opts.onProgress);
-    var kb1 = kbFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "")).slice(0, 2600); setLevelRule(type, opts.level);
+    var kb1 = kbFor(type); var rc1 = recipeFor(type); TYPERULE = ((TYPE_GUIDE[type] || "") + (kb1 ? (" [KB지침] " + kb1) : "") + (rc1 ? (" [제작레시피] " + rc1) : "")).slice(0, 3300); setLevelRule(type, opts.level);
     var q = null; for (var _try = 0; _try < 3 && !q; _try++) { try { q = await builderFor(type)(passage, { ctx: ctx, onProgress: opts.onProgress, fast: opts.fast }, type); } catch (_e) { q = null; } }
     // 태그 위생: LLM이 &lt;u&gt;로 이스케이프해 뱉으면 화면에 <u>가 글자로 노출됨 → 실태그로 복원 + u/b 외 태그 제거
     if (q) { var _tg = function (s) { return String(s).replace(/&lt;(\/?)(u|b)&gt;/gi, "<$1$2>").replace(/<(?!\/?[ub]>)\/?[A-Za-z][^<>]{0,38}>/g, "")   // 태그꼴만 제거 — 'a < b and c > d' 같은 수식 오탐 방지
@@ -2752,7 +2779,7 @@
     loadTypeDB: loadTypeDB, loadDifficultyDB: loadDifficultyDB, typeDBInfo: function () { return TYPE_DB_INFO; }, loadSharedHints: loadSharedHints, setLogicStanding: setLogicStanding,
     loadReviewDB: loadReviewDB, reviewItem: reviewItem, reviewCode: reviewCode, loadExaminerKB: loadExaminerKB, kbFor: kbFor, loadRaysKB: loadRaysKB, raysKB: raysKB,
     loadDonghwa: loadDonghwa, donghwaMode: donghwaMode, donghwaTypeSet: donghwaTypeSet, donghwaKB: donghwaKB,
-    loadTaxonomy: loadTaxonomy, taxonomy: taxonomy, futureExpand: futureExpand, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
+    loadTaxonomy: loadTaxonomy, taxonomy: taxonomy, futureExpand: futureExpand, loadRecipes: loadRecipes, recipeFor: recipeFor, extendPassage: extendPassage, agentRun: agentRun, agentPlan: agentPlan, agentFeedback: agentFeedback,
     analysisSheet: analysisSheet, extractKeywords: extractKeywords, findSource: findSource, lastLimited: function () { return LAST_LIMITED; }, keyStats: keyStats,
     dataEgressInfo: dataEgressInfo, setDataContract: function (mode) { CFG.dataContract = (mode === "local-only") ? "local-only" : "open"; return CFG.dataContract; },
     ollamaModels: async function (url) { try { var d = await getJSON(String(url || CFG.ollamaUrl).replace(/\/+$/, "") + "/api/tags", 4000); return (d && d.models || []).map(function (m) { return m.name; }); } catch (e) { return null; } },
