@@ -1,6 +1,109 @@
 {
- "updated": "2026-07-14T03:38:26.244Z",
+ "updated": "2026-07-14T06:29:14.543Z",
  "samples": [
+  {
+   "ts": "2026-07-14T06:26:48.752Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": -1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "WEEK 27 DAY 5 REVIEW Another week to build your vocabulary. ① Words stand for “things. ② ” The more “things” you can recognize, the better able you are to deal with the complicated and changing world. ③ New and unusual situations are more easily handled by those who can utilize the largest number of “things” we call words. ④ Mastering vocabulary also requires memorizing etymologies, as understanding roots helps decode unfamiliar words more efficiently. ⑤ REVIEW WORDS DEFINITIONS 1. reach the highest point 2. inflexible, unyielding 3. triumphant joy 4. looking backward 5. peak, crown, summit 6. a conceited, vain person 7. bind, limit, squeeze 8. biting, burning 9. insulting, abusive speech 10. system, arrangement 11. modesty, meekness, humbleness 12. phenomenon, marvel 13. stain, soil, dim the reputation 14. sharply stimulating 15. deprived of 16. bulky, large 17. hesitate, waver, stumble 18. eager, passionate 19. firmly established, habitual 20. unclear, unknown, lowly",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘① Words stand for “things.”’가 전체 흐름에서 벗어난 문장이라고 오독했을 가능성이 있다. 학생은 ‘things’를 ‘물건’으로만 좁게 이해하고, ‘사물·개념·상황’을 모두 포함하는 ‘것들’이라는 넓은 의미로 보지 못했다. → 처방: ‘things’를 ‘사물·개념·상황’을 모두 아우르는 넓은 의미로 이해하고, ①~③이 ‘단어의 중요성’을 설명하는 흐름임을 확인하라.\n② 진단: ‘② The more “things” you can recognize, the better able you are to deal with the complicated and changing world.’가 ‘단어의 중요성’을 강조하는 문장인데, 이를 ‘단어의 정의’나 ‘어원’과 관련이 없다고 오해했을 수 있다. → 처방: ‘②’가 ‘단어의 중요성’을 설명하는 문장임을 확인하고, ①~③이 ‘단어와 세상의 관계’를 설명하는 흐름임을 기억하라.\n③ 진단: ‘③ New and unusual situations are more easily handled by those who can utilize the largest number of “things” we call words.’가 ‘단어의 중요성’을 강조하는 문장인데, 이를 ‘어원’이나 ‘단어의 정의’와 무관하다고 오해했을 수 있다. → 처방: ‘③’이 ‘단어의 중요성’을 설명하는 문장임을 확인하고, ①~③이 ‘단어의 역할’을 설명하는 흐름임을 기억하라.\n⑤ 진단: ‘⑤ REVIEW WORDS DEFINITIONS’가 ‘단어의 중요성’이나 ‘어원’과 관련이 없다고 오해했을 수 있다. 학생은 ‘⑤’이 ‘단어의 정의’를 나열하는 문단임을 보지 못하고, ‘흐름’을 판단하는 데 실패했다. → 처방: ‘⑤’가 ‘단어의 정의’를 나열하는 문단임을 확인하고, ①~④가 ‘단어의 중요성’을 설명하는 흐름임을 기억하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-14T06:27:23.853Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Vocabulary Expansion Boosts Adaptability to Complexity",
+     "Adaptability to Complexity Requires Vocabulary Expansion",
+     "Recognizing More Words Increases Adaptability",
+     "Every Word You Learn Guarantees Perfect Adaptability",
+     "Vocabulary Growth Always Enhances Adaptability to All Situations"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Expanding vocabulary enhances adaptability to complexity.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘adaptability’를 ‘vocabulary expansion’이 ‘필요하다’라고만 표현했는데, 지문은 ‘more words = better adaptability’로 ‘확장’이 ‘능력 향상’을 이끈다고 강조한 점을 놓쳤다. ‘requires’는 필요조건을 뜻하지만 지문은 ‘능력의 크기’가 중요하다고 설명한 것과 다르다. → 처방: ‘~가 필요하다’라는 표현 대신 ‘~가 능력을 키워준다’로 바꾸어 지문의 ‘better able’를 떠올리며 답을 고르기.\n③ 진단: ‘Recognizing More Words’는 지문의 ‘recognize things’와 비슷하지만, ‘Increases Adaptability’는 지문의 ‘better able to deal with’보다 ‘능력의 정도’를 약하게 표현했다. 지문은 ‘많은 단어 = 복잡한 세계 대처 능력’으로 ‘정도’를 강조했는데, 이 선지는 ‘단어 인식 = 적응력 증가’로 ‘원인과 결과’를 단순화했다. → 처방: ‘단어 인식’이 ‘어느 정도’ adaptability 를 높이는지 확인하고, 지문의 ‘better able’를 떠올리며 ‘정도’를 강조하는 답을 찾기.\n④ 진단: ‘Guarantees Perfect Adaptability’는 지문의 ‘better able’를 ‘완벽한 보장’으로 과장했다. 지문은 ‘많은 단어 = 더 잘 대처’이지 ‘완벽한 보장’이 아니다. ‘perfect’는 지문의 ‘complicated and changing world’를 고려하면 지나친 표현이다. → 처방: ‘Guarantees’나 ‘Perfect’를 보면 지문의 ‘better able’를 떠올리며 ‘과장된 표현’을 의심하고 정답을 다시 확인하기.\n⑤ 진단: ‘Always Enhances Adaptability to All Situations’는 ‘항상’, ‘모든 상황’을 강조했는데, 지문은 ‘많은 단어 = 복잡한 세계 대처 능력’으로 ‘특정 상황’을 전제하지 않는다. ‘Always’와 ‘All’은 지문의 ‘complicated and changing world’를 고려하면 지나친 일반화다. → 처방: ‘Always’나 ‘All’을 보면 지문의 ‘complicated and changing’이라는 ‘특정 조건’을 떠올리며 ‘과도한 일반화’를 의심하고 답을 다시 고르기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Expanding vocabulary enhances adaptability to complexity.**]"
+   }
+  },
+  {
+   "ts": "2026-07-14T06:28:36.109Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "WEEK 27 DAY 5 REVIEW Another week to build your vocabulary. Words stand for “things.” The more “things” you can recognize, the better able you are to deal with the complicated and changing world. New and unusual situations are more easily handled by those who can utilize the largest number of “things” we call words. REVIEW WORDS DEFINITIONS 1.adamant a. reach the highest point 2.ardent b. inflexible, unyielding 3.array c. triumphant joy 4.bereft d. looking backward 5.besmirch e. peak, crown, summit 6.constrict f. a conceited, vain person 7.culminate g. bind, limit, squeeze 8.egotist h. biting, burning 9.exultation i. insulting, abusive speech 10.falter j. system, arrangement 11.humility k. modesty, meekness, humbleness 12.invective l. phenomenon, marvel 13.inveterate m. stain, soil, dim the reputation 14.obscure n. sharply stimulating 15.pinnacle o. deprived of 16.prodigy p. bulky, large 17.pungent q. hesitate, waver, stumble 18.retrospect r. eager, passionate 19.vitriolic s. firmly established, habitual 20.voluminous t. unclear, unknown, lowly",
+    "choices": [
+     "단어는 사물을 가리키는 수단이므로 어휘력이 많을수록 세상을 더 잘 다룰 수 **없다**.",
+     "새롭고 낯선 상황은 가장 많은 단어를 아는 사람들이 더 쉽게 처리할 수 **없다**.",
+     "‘adamant’는 ‘유연하지 않고 단호한’ 의미를 지닌다.",
+     "‘culminate’는 ‘정점이나 절정을 이루는’ 뜻을 지닌 **것이 아니다**.",
+     "‘invective’는 ‘모욕적이거나 욕설이 담긴 언어’를 뜻 **하지 않는다**."
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘단어는 사물을 가리키는 수단이므로 어휘력이 많을수록 세상을 더 잘 다룰 수 없다’는 문장과 정반대 내용을 담고 있음. 지문은 ‘단어는 사물을 가리키는 수단이므로 어휘력이 많을수록 세상을 더 잘 다룰 수 있다’라고 설명함. → 처방: 지문에서 ‘단어’는 ‘사물’을 가리키는 수단으로, 어휘력이 많을수록 ‘세상을 더 잘 다룰 수 있다’라고 설명했다는 점을 기억하고, 선지의 ‘없다’를 ‘있다’라고 바꿔 읽는 연습을 하세요.\n② 진단: ‘새롭고 낯선 상황은 가장 많은 단어를 아는 사람들이 더 쉽게 처리할 수 없다’는 문장과 정반대 내용을 담고 있음. 지문은 ‘새롭고 낯선 상황은 가장 많은 단어를 아는 사람들이 더 쉽게 처리할 수 있다’라고 설명함. → 처방: 지문에서 ‘새롭고 낯선 상황’을 ‘가장 많은 단어를 아는 사람들’이 ‘더 쉽게 처리할 수 있다’라고 설명했다는 점을 기억하고, 선지의 ‘없다’를 ‘있다’라고 바꿔 읽는 연습을 하세요.\n④ 진단: ‘culminate’는 ‘정점이나 절정을 이루는’ 뜻을 지닌다고 설명했는데, 지문에서 ‘culminate’는 ‘reach the highest point’로 ‘정점이나 절정을 이루는’ 뜻으로 정의됨. → 처방: ‘culminate’의 뜻을 확인할 때, 지문에서 ‘reach the highest point’라고 설명했다는 점을 기억하고, ‘정점이나 절정을 이루는’ 뜻이 맞는지 다시 한 번 확인하세요.\n⑤ 진단: ‘invective’는 ‘모욕적이거나 욕설이 담긴 언어’를 뜻하지 않는다고 설명했는데, 지문에서 ‘invective’는 ‘insulting, abusive speech’로 ‘모욕적이거나 욕설이 담긴 언어’를 뜻한다고 정의됨. → 처방: ‘invective’의 뜻을 확인할 때, 지문에서 ‘insulting, abusive speech’라고 설명했다는 점을 기억하고, ‘모욕적이거나 욕설이 담긴 언어’를 뜻한다는 사실을 떠올리세요.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-14T03:36:38.806Z",
    "type": "영영풀이일치",
@@ -281,85 +384,6 @@
     ],
     "answer": 5,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘punch’의 어원이 인도 레시피에서 ‘네 가지 재료’를 사용했다는 점에서 ‘다섯’을 뜻하는 인도어 ‘five’를 사용했다는 사실을 혼동한 것으로 보임. 지문은 ‘five’를 사용했다고 명시했으나 ‘네 가지’를 오해함. → 처방: ‘punch’의 어원이 ‘five’라는 점을 정확히 기억하고, ‘다섯’이라는 뜻임을 확인한 후 답을 고를 것.\n② 진단: ‘punch’의 어원이 인도어의 ‘여섯’을 뜻하는 단어에서 왔다고 오독했는데, 지문은 ‘five(다섯)’을 사용했다고 밝히고 있음. → 처방: 지문의 ‘five’라는 단어를 정확히 기억하고, ‘six’이 아니라는 점을 확인한 후 답을 고를 것.\n③ 진단: ‘punch’의 어원이 Proto-Indo-European 어의 ‘여섯’을 뜻하는 단어에서 시작했다고 오독했는데, 지문은 ‘five’를 통해 왔다고 설명하고 있음. → 처방: 지문의 ‘five’라는 단어를 중심으로 어원을 떠올리고, ‘six’이 아니라는 점을 확인한 후 답을 고를 것.\n④ 진단: 언어학자들이 Proto-Indo-European 어의 어원을 Proto-Germanic 어와 ‘무관하게’ 추론할 수 있다고 오해했는데, 지문은 Proto-Germanic 어가 Proto-Indo-European 어를 통해 유래했다고 설명하고 있음. → 처방: ‘via’라는 단어를 주의 깊게 읽고, Proto-Germanic 어가 Proto-Indo-European 어를 거쳐 유래했다는 점을 확인한 후 답을 고를 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-13T22:15:33.033Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 단어는 기원을 인식할 수 없을 정도로 의미를 크게 바꿀 수 있습니다.\n주어진 단어: ( that / meanings / origins / unrecognizable / drastically / so / change / can / become / Words )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Words can change meanings so drastically that origins become unrecognizable.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-13T21:13:57.176Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "Page 56 ⓐ<u>Logical modality is</u> the simplest modality, in that it deals with all the possible worlds without distinction. ⓑ<u>Epistemic modality is</u> defined in terms of epistemically possible worlds. An epistemically possible world is one in which everything we know about the actual world also holds - we don’t know of any differences between the actual world and any epistemically possible world (even though there might be differences) - for all we know, any epistemically possible world IS reality. In the definitions below the variable ⓒ<u>we range over</u> epistemically possible worlds. ⓓ<u>Epistemic must convey</u> that all the evidence we have about some real situation leads to an inescapable conclusion, but it is far weaker than logical necessity. The gods must be crazy may be ⓔ<u>true interpreted epistemically</u>, but even if it is, there are infinitely many logically possible worlds where the gods are sane and wise, and thus The gods must be crazy interpreted as logical necessity is false. Epistemic possibility is analysed as in (12). < previous page page_56 next page >",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 2,
-    "explanation": "틀린 곳은 ⓒ(we range over → we ranges over), ⓓ(Epistemic must convey → Epistemic must conveys) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘ⓐLogical modality is the simplest modality, in that it deals with all the possible worlds without distinction.’는 문법상 문제없음. 학생은 ‘without distinction’이 ‘without distinguishing’이라는 오해로 틀렸다고 생각할 수 있으나, ‘without distinction’도 ‘구별 없이’라는 뜻으로 올바른 표현임. → 처방: ‘without distinction’이 ‘without distinguishing’으로 오해되지 않도록, ‘distinction’의 뜻을 정확히 기억하고 ‘without + 명사’ 형태가 옳은지 확인하기.\n③ 진단: ‘ⓒwe range over epistemically possible worlds.’는 ‘range over’라는 동사가 ‘we’를 주어로 삼아 ‘we range over’라는 구문이 문법적으로 옳음. 학생은 ‘range over’를 ‘are ranged over’로 오해했을 수 있으나, 능동태가 자연스럽고 문법적으로 문제없음. → 처방: ‘range over’는 ‘~을 대상으로 삼다’라는 뜻으로, ‘we range over’는 ‘우리는 ~을 대상으로 삼는다’라는 뜻이므로 능동태가 옳음을 기억하기.\n④ 진단: ‘ⓓEpistemic must convey that all the evidence we have about some real situation leads to an inescapable conclusion...’에서 ‘must convey’는 ‘반드시 전달하다’라는 뜻으로 문법적으로 옳음. 학생은 ‘must’가 조동사로 쓰인다는 점을 간과했을 수 있으나, 문맥상 ‘반드시’라는 의미가 자연스럽고 문법적으로 문제없음. → 처방: ‘must’는 조동사로 쓰일 때 ‘반드시 ~하다’라는 뜻임을 기억하고, 문맥에 맞게 사용했는지 확인하기.\n⑤ 진단: ‘ⓔtrue interpreted epistemically’는 ‘true’가 ‘interpreted’라는 과거분사로 수식된 형태이므로 ‘truly interpreted’로 써야 한다는 오해가 있을 수 있으나, ‘true interpreted’는 ‘진실로 해석된’이라는 뜻으로 문법적으로 옳음. ‘truly’는 부사로 ‘진실로’라는 뜻이지만, 여기서는 ‘true’가 ‘진실된’이라는 형용사로 쓰인 것이므로 문제없음. → 처방: ‘true interpreted’는 ‘진실로 해석된’이라는 뜻으로, ‘truly interpreted’는 ‘진실되게 해석된’이라는 뜻이므로 문맥에 맞게 ‘true’를 사용했는지 확인하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-13T21:14:26.400Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Page 56 Logical modality is the simplest modality, in that it deals with all the possible worlds without distinction. Epistemic modality is defined in terms of epistemically possible worlds. An epistemically possible world is one in which everything we know about the actual world also holds - we don’t know of any differences between the actual world and any epistemically possible world (even though there might be differences) - for all we know, any epistemically possible world IS reality. In the definitions below the variable we ranges over epistemically possible worlds. Epistemic must conveys that all the evidence we have about some real situation leads to an inescapable conclusion, but it is far weaker than logical necessity. The gods must be crazy may be true interpreted epistemically, but even if it is, there are infinitely many logically possible worlds where the gods are sane and wise, and thus The gods must be crazy interpreted as logical necessity is false. Epistemic possibility is analysed as in (12). < previous page page_56 next page >\n\n─────────\n[요약문] Logical modality evaluates (A) across all scenarios, whereas (B) assesses conclusions based on available evidence within epistemically constrained worlds.",
-    "choices": [
-     "(A) epistemic constraints … (B) absolute truths",
-     "(A) infinite possibilities … (B) epistemic must",
-     "(A) logical necessity … (B) observed patterns",
-     "(A) actual differences … (B) logical conclusions",
-     "(A) total possibilities … (B) inferred conclusions"
-    ],
-    "answer": 3,
-    "explanation": "(A) total possibilities / (B) inferred conclusions 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘epistemic constraints’는 지문에서 ‘epistemic possibility’로만 언급되며 ‘absolute truths’는 전혀 다루지 않음. 학생은 ‘epistemic’이 ‘절대적’과 연결된다고 오해한 듯. → 처방: ‘epistemic’이란 말은 ‘알려진 사실에 기반한’ 뜻임을 기억하고, ‘절대적’은 ‘logical necessity’와 관련 있음을 떠올리자.\n② 진단: ‘infinite possibilities’는 지문에서 ‘logically possible worlds’로 언급되지만 ‘epistemic must’와는 무관. 학생은 ‘infinite’와 ‘epistemic’을 잘못 연결한 듯. → 처방: ‘infinite’는 ‘logical modality’와 관련이 있음을 확인하고, ‘epistemic must’는 ‘증거에 따른 필연성’임을 다시 읽어보자.\n④ 진단: ‘actual differences’는 지문에서 ‘epistemically possible worlds’와 ‘actual world’의 차이를 설명하는 부분이지만, ‘logical conclusions’은 전혀 언급되지 않음. 학생은 ‘differences’와 ‘conclusions’을 혼동한 듯. → 처방: ‘differences’는 ‘가능한 세계들’의 차이를 뜻함을 기억하고, ‘conclusions’는 ‘must’의 의미와 관련 있음을 떠올리자.\n⑤ 진단: ‘total possibilities’는 ‘logical modality’(모든 가능한 세계)를 가리키지만, ‘inferred conclusions’은 ‘epistemic must’(증거에 따른 결론)와 관련. 학생은 ‘total’과 ‘inferred’를 잘못 연결한 듯. → 처방: ‘total possibilities’는 ‘logical necessity’를 뜻함을 확인하고, ‘inferred’는 ‘epistemic’의 핵심임을 다시 읽어보자."
    }
   }
  ]
