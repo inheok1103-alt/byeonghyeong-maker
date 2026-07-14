@@ -1155,7 +1155,7 @@
       return false;
     }
     for (var attempt = 0; attempt < 3; attempt++) {
-      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 고르고 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★밑줄 최소단위: 각 구절은 '문법 판단이 걸리는 바로 그 부분만 1~4단어'로 짧게 — 긴 구·절 통째 금지. 실제 수능/사관 예: have unearthed(수일치)·containing(분사)·which(관계사)·to enhance(부정사)·sound(형용사보어)처럼 판단 지점만. ★5곳은 반드시 서로 다른 문장·서로 다른 문법 범주. ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법만. JSON: {\"phrases\":[\"판단지점 구절 5개(각 1~4단어, 등장순, 원문 그대로, 서로 다른 문장)\"],\"cats\":[\"각 문법범주 5개(수일치|시제|태|준동사|분사|관계사|병렬|전치사|형용사부사|비교|가정법)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
+      var o = await llmJSON([{ role: "system", content: "어법 출제자. JSON만." }, { role: "user", content: "다음 지문에서 어법 판단 지점 5곳을 고르고 그 중 1곳을 실제 '문법' 오류로 바꿔라. ★밑줄 최소단위: 각 구절은 '문법 판단이 걸리는 바로 그 부분만 1~4단어'로 짧게 — 긴 구·절 통째 금지. 실제 수능/사관 예: have unearthed(수일치)·containing(분사)·which(관계사)·to enhance(부정사)·sound(형용사보어)처럼 판단 지점만. ★5곳은 반드시 서로 다른 문장·서로 다른 문법 범주. ★철자 오타 금지 — 수일치·시제·태·준동사·관계사·병렬·전치사 등 문법만. ★★난도(내신 고난도·동화고형): 오류는 '첫눈에 안 보이는 미세한' 것으로 만들어라 — (a)수일치: 주어가 멀거나 수식어구/전치사구에 가려진 경우, (b)관계사: which↔that·선행사 판별·계속적용법, (c)병렬: A, B, and C에서 한 항목만 범주 이탈, (d)태·시제: 문맥상 하나만 맞는 경우. 명백한 형태 통째 뒤바꿈(예: 'unable to decide'→'unable deciding', 동명사↔부정사 교체, be+동사원형 같은 대놓고 틀린 것)은 지양. 나머지 4개 밑줄은 '틀려 보이지만 실제로는 맞는' 함정(감정분사 -ing/-ed·도치·the 비교급·분사구문 등)으로 배치해 변별력을 높여라. JSON: {\"phrases\":[\"판단지점 구절 5개(각 1~4단어, 등장순, 원문 그대로, 서로 다른 문장)\"],\"cats\":[\"각 문법범주 5개(수일치|시제|태|준동사|분사|관계사|병렬|전치사|형용사부사|비교|가정법)\"],\"wrongIndex\":1~5,\"error\":\"그 구절을 틀리게 바꾼 형태\",\"correct\":\"원래 올바른 구절(=phrases 해당 항목과 동일)\"}. JSON만." + (gecEx ? (" 오류 예: " + gecEx) : "") + "\n\n" + passage }], { noRule: true, temperature: attempt ? 0.45 : 0.5, timeout: 55000 });
       if (!o || !Array.isArray(o.phrases) || o.phrases.length < 5 || !o.error || String(o.error).trim() === String(o.correct || "").trim()) continue;
       // 스키마 설명문 에코 방어: 소형모델이 'error'/'correct'에 한글 설명("원문 그대로"·"틀리게 바꾼 형태" 등)이나 문장 통째를 넣는 실패 폐기
       if (/[가-힣]/.test(o.error) || /[가-힣]/.test(String(o.correct || "")) || /그대로|형태|구절|문장|단서/.test(o.error + " " + o.correct)) continue;
@@ -1180,6 +1180,9 @@
       if (g.length <= g0.length && attempt < 2) continue;
       var verified = g.length;   // 내부 boolean만 유지(도구명 explanation 비노출 — §10)
       var cat = inferGramCat(o.error, o.correct || mk.orig) || ((Array.isArray(o.cats) && o.cats[wi - 1]) ? String(o.cats[wi - 1]).replace(/[^가-힣]/g, "") : "") || "어법";   // diff 결정론 우선, LLM 라벨은 한글만, 최후 generic
+      // 난도 필터(내신 고난도·동화고형): 준동사·형용사부사·전치사 단순 형태교체는 첫눈에 보여 너무 쉬움 →
+      //   초기 시도(0~1)에선 거부하고 수일치·관계사·병렬·태·시제 등 '미세한' 오류를 우선 탐색. 최종 시도는 폴백 허용.
+      if (attempt < 2 && /준동사|형용사부사|전치사/.test(cat)) continue;
       var slotTag = "[어법: " + cat + "] ";   // 물어보는 slot(문법 범주) 선언 — §10 '어법 메타 없음' 회피
       return { type: "어법", instruction: "밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것은?", passage: mk.text, choices: ["ⓐ", "ⓑ", "ⓒ", "ⓓ", "ⓔ"], answer: wi, explanation: slotTag + "정답 " + CIRC5(wi) + "의 '" + o.error + "'는 '" + (o.correct || mk.orig) + "'로 고쳐야 어법상 옳다." + (verified ? " (어법 오류 확인됨)" : ""), _audit: "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조)", _gram: { error: String(o.error).trim(), correct: String(o.correct || mk.orig).trim(), wi: wi, verified: !!verified, cat: cat, phrases: phr.slice(0, 5), cats: (Array.isArray(o.cats) ? o.cats.slice(0, 5).map(function (c) { return String(c || "").replace(/[^가-힣A-Za-z]/g, ""); }) : []) } };
     }
