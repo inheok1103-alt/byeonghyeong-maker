@@ -112,7 +112,7 @@
 
   /* ── 게이트③ 위생 필터 ── */
   function hygiene(q) {
-    if (q.choices && q.choices.some(function (c) { return /\(보기/.test(String(c)); })) return { drop: "플레이스홀더 선지 노출" };
+    if (q.choices && q.choices.some(function (c) { return /\(보기|\[object/.test(String(c)); })) return { drop: "플레이스홀더/객체 선지 노출" };
     if (q.choices && q.choices.length >= 4 && !(q.answer >= 1 && q.answer <= q.choices.length)) return { flag: "정답번호 무효(솔버 게이트로 이관)" };
     return null;
   }

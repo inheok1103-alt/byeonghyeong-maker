@@ -409,7 +409,7 @@
   }
   // 선지 금지패턴(메타표현·플레이스홀더) — Rays 5.4 자동 필터
   function badChoice(c) {
-    var pats = (RAYS && RAYS.banned_patterns) || ["본문은", "글은", "사전적", "문자적", "원문보다", "undefined", "NaN", "(보기"];
+    var pats = (RAYS && RAYS.banned_patterns) || ["본문은", "글은", "사전적", "문자적", "원문보다", "undefined", "NaN", "(보기", "[object"];
     var s = String(c || "");
     return !s.trim() || pats.some(function (p) { return s.indexOf(p) >= 0; });
   }
@@ -2493,7 +2493,7 @@
     }
     var out = results.filter(Boolean);
     if (out.length >= 3) { rebalanceAnswers(out); log(onP, "   ↳ 정답위치 균등 분산(조립단계) 적용"); }   // Haladyna: 위치편향 제거
-    out.forEach(function (it) { pruneStaleAnalysis(it); delete it._work; stampWork(it); });   // 재배치 후 선지분석 재동기화 + 워크북 재스탬프
+    out.forEach(function (it) { if (it.choices && it.choices.length) it.choices = it.choices.map(function (c) { if (c && typeof c === "object") c = c.text || c.option || c.choice || c.value || c.en || ""; return String(c); }); pruneStaleAnalysis(it); delete it._work; stampWork(it); });   // 재배치 후 선지분석 재동기화 + 워크북 재스탬프
     await Promise.all(out.map(function (it) { return rxFeedback(it, passage).catch(function () { return it; }); }));   // 정답 확정 후 오답 진단·처방 생성(rebalance 뒤)
     out.forEach(function (it) { provenanceOf(it, passage, it.type); });   // 정본 지문 그래프: 정답 확정 후 출처ID·전체지문·선지 위치결박 메타 부착
     log(onP, "✓ 완료 — " + out.length + "/" + types.length + "문항");
@@ -2595,7 +2595,7 @@
     if (q) { var _tg = function (s) { return String(s).replace(/&lt;(\/?)(u|b)&gt;/gi, "<$1$2>").replace(/<(?!\/?[ub]>)\/?[A-Za-z][^<>]{0,38}>/g, "")   // 태그꼴만 제거 — 'a < b and c > d' 같은 수식 오탐 방지
         .replace(/[�぀-ヿ㐀-䶿一-鿿]+/g, "").replace(/  +/g, " "); };   // 번역기 혼입 한자·가나·깨진문자 제거(卓越·这样·力·を 등)
       ["passage", "instruction", "explanation", "answerText"].forEach(function (k) { if (q[k]) q[k] = _tg(q[k]); });
-      if (q.choices && q.choices.length) q.choices = q.choices.map(_tg);
+      if (q.choices && q.choices.length) q.choices = q.choices.map(function (c) { if (c && typeof c === "object") c = c.text || c.option || c.choice || c.value || c.en || ""; return _tg(c); });
       // 서술형 단어수 실측 교정(Ray) — 길이 큐(이내/내외/이하/정도) 있는 단일 ' N단어'만 교정(제시어 개수 'N단어'는 불변, 범위형은 essayResult가 이미 동기화)
       if (q.answerText && q.instruction && /\d+\s*단어\s*(?:이내|내외|이하|정도|안팎)/.test(q.instruction) && !/~/.test(q.instruction)) {
         var _wc = String(q.answerText).trim().split(/\s+/).filter(Boolean).length;

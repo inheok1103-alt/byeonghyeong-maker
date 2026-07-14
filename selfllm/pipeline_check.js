@@ -119,6 +119,8 @@ var G = require(path.join(ROOT, "addon_key_guard.js"));
     var S = JSON.parse(fs.readFileSync(setP, "utf8")); var items = S.items || [];
     var mcq = items.filter(function (q) { return q.choices && q.choices.length >= 4; });
     var badAns = mcq.filter(function (q) { return !(q.answer >= 1 && q.answer <= q.choices.length); });
+    var objCh = mcq.filter(function (q) { return q.choices.some(function (c) { return /\[object|\(보기|undefined/.test(String(c)); }); });
+    objCh.length ? fail("⑧품질", "객체/플레이스홀더 선지 " + objCh.length + "건") : ok("⑧품질", "선지 오염 0건([object·placeholder 없음)");
     badAns.length ? fail("⑧품질", "정답번호 무효 " + badAns.length + "건") : ok("⑧품질", "객관식 " + mcq.length + "문항 정답번호 유효");
     var essays = items.filter(function (q) { return !q.choices || q.choices.length < 4; });
     var noModel = essays.filter(function (q) { return String(q.explanation || "").indexOf("[모범답안]") < 0; });
