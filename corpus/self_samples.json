@@ -1,6 +1,50 @@
 {
- "updated": "2026-07-14T09:20:59.956Z",
+ "updated": "2026-07-14T11:48:19.757Z",
  "samples": [
+  {
+   "ts": "2026-07-14T11:46:12.183Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what.\n\n(A) This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what.\n\n(B) The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think what that she is hiding what.\n\n(C) The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think what that she is hiding what. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation):",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 2,
+    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-14T11:47:50.467Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what. The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think what that she is hiding what. This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. The TP thereby formed is merged with a null C c__________ ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think what that she is hiding what. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation):",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] constituent — 문단의 논지상 이 자리에는 'constituent'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-14T09:20:23.393Z",
    "type": "제목",
@@ -315,74 +359,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] ought selects an infinitival TP while should selects an infinitival VP as their respective complements.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-13T23:15:25.665Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 2번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.67,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "NEW WORDS loathe lōth reprimand rep´ rə mand lackluster lak´ lus´ tər caustic kô´ stik wrest rest WEEK 3 DAY 1 THE PEP TALK “If there’s one thing I loathe,” the coach said, “it’s a quitter.” He had good reason to reprimand us at half-time, because the scoreboard revealed that we were losing, 45–20. Our lackluster performance indicated to him that we had forgotten the rudimentary* aspects of basketball. <u>His caustic remarks fired us up</u>, however, and we dashed out, determined to wrest control of the game from our rivals. Sample Sentences Use the new words in the following sentences. 1.With the help of his brothers he was able to ________________ the leadership of the company from his partner. 2.Speaking in a monotone, the politician was booed for his ________________ address. 3.In a ________________ article, the drama critic slaughtered the hapless* actors. 4.I ________________ spinach but I love other green vegetables. 5.When Ed arrived late, he knew that the grocer would ________________ him. Definitions Match the new words with their dictionary definitions. 6.loathe a. dull 7.reprimand (v.) b. to hate",
-    "choices": [
-     "His harsh and critical words motivated us to work harder and regain our confidence.",
-     "His caustic remarks were the direct result of our previous failures to meet expectations.",
-     "Because he made caustic remarks, we lost motivation and gave up on our goals entirely.",
-     "His caustic remarks made us feel angry and defensive, preventing us from working effectively.",
-     "His caustic remarks were designed to insult and demoralize us completely."
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'His harsh and critical words motivated us to work harder and regain our confidence.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘caustic remarks’의 결과가 아니라 ‘원인’이 ‘우리의 부진’이었음을 혼동. 지문에서 ‘caustic remarks’는 ‘원인’이 아니라 ‘결과’로 ‘우리를 분발시켰다’고 서술됨. → 처방: ‘결과’를 ‘원인’으로 오해하지 말고, 지문에서 ‘결과’가 무엇인지 정확히 짚고 넘어가기.\n③ 진단: ‘caustic remarks’가 ‘의욕 상실’로 이어졌다고 오독. 지문에서 ‘caustic remarks’는 오히려 ‘우리를 불태웠다’(fired us up)고 긍정적 효과를 보임. → 처방: ‘의미’를 Context(문맥)에서 파악하기. 긍정적·부정적 효과를 지문에서 찾고 비교하기.\n④ 진단: ‘angry and defensive’로 오해. 지문에서 ‘caustic remarks’는 ‘분발’(fired us up)을 유도했다고 서술되어 있음. → 처방: ‘감정’을 지문에서 직접 인용한 표현과 일치시키기. ‘분발’·‘의욕’ 같은 긍정적 효과도 확인하기.\n⑤ 진단: ‘insult and demoralize’를 ‘완전히’로 과장. 지문에서 ‘caustic remarks’는 ‘분발’을 유도했다고 서술되어 있음. → 처방: ‘과장된 해석’을 방지하기. 지문에서 ‘완전히’라는 극단적 표현이 있는지 확인하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-13T23:17:14.981Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답-오답 근접(70%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 4번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "NEW WORDS loathe lōth reprimand rep´ rə mand lackluster lak´ lus´ tər caustic kô´ stik wrest rest WEEK 3 DAY 1 THE PEP TALK “If there’s one thing I loathe,” the coach said, “it’s a quitter. ” He had good reason to reprimand us at half-time, because the scoreboard revealed that we were losing, 45–20. Our lackluster performance indicated to him that we had forgotten the rudimentary* aspects of basketball. His caustic remarks fired us up, however, and we dashed out, determined to wrest control of the game from our rivals. Sample Sentences Use the new words in the following sentences. With the help of his brothers he was able to ________________ the leadership of the company from his partner. Speaking in a monotone, the politician was booed for his ________________ address. In a ________________ article, the drama critic slaughtered the hapless* actors. I ________________ spinach but I love other green vegetables. When Ed arrived late, he knew that the grocer would ________________ him. [ ]",
-    "choices": [
-     "Pair each new word with its corresponding dictionary definition.",
-     "Translate the new words into your own words and write them down.",
-     "Find the exact dictionary definitions for the new words and memorize them.",
-     "Match the new words to their meanings in the provided sentences.",
-     "Create new sentences using each new word and its dictionary definition."
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 원문 'Definitions Match the new words with their dictionary definitions.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 새로운 단어의 뜻을 외우는 데만 집중해서 문장 속에서 단어가 어떤 역할을 하는지 보지 못했다. 'reprimand'가 '질책하다'라는 뜻임을 알지만 문장에서는 '리더십을 빼앗다'라는 뜻으로 쓰였다는 걸 놓쳤다. → 처방: 빈칸에 들어갈 단어가 문장 안에서 어떤 의미로 쓰였는지 먼저 확인하고, 그 뜻을 가진 단어를 새 단어 목록에서 찾아 연결해 보자.\n② 진단: 단어의 뜻을 한국말로 번역하는 데만 매달려서 문장 전체의 흐름을 보지 못했다. 'lackluster'가 '활기 없는'이라는 뜻임을 알았지만 문장에서는 '활기 없는 연설'이 아니라 '활기 없는 글'로 해석해야 했다. → 처방: 문장 전체의 의미를 먼저 이해한 뒤, 빈칸에 들어갈 단어가 문장 안에서 어떤 느낌으로 쓰였는지 생각해 보자.\n③ 진단: 단어의 사전 정의를 그대로 외우려고만 해서 문장 속 단어의 실제 쓰임을 놓쳤다. 'caustic'이 '신랄한'이라는 뜻임을 알았지만 문장에서는 '신랄한 기사'가 아니라 '신랄한 글'로 해석해야 했다. → 처방: 사전 정의를 외우는 것보다 문장 속에서 단어가 어떤 역할을 하는지 먼저 파악한 뒤, 그 뜻을 가진 단어를 찾는 연습을 하자.\n⑤ 진단: 새로운 문장을 만든다는 생각에만 집중해서 빈칸에 들어갈 단어가 문장 안에서 어떤 뜻으로 쓰였는지 보지 못했다. 'wrest'가 '빼앗다'라는 뜻임을 알았지만 문장에서는 '리더십을 빼앗다'라는 뜻으로 쓰였다는 걸 놓쳤다. → 처방: 빈칸에 들어갈 단어가 문장 안에서 어떤 뜻으로 쓰였는지 먼저 확인한 뒤, 그 뜻을 가진 단어를 새 단어 목록에서 찾자."
    }
   }
  ]
