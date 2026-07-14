@@ -1,6 +1,77 @@
 {
- "updated": "2026-07-14T00:11:32.940Z",
+ "updated": "2026-07-14T03:38:26.244Z",
  "samples": [
+  {
+   "ts": "2026-07-14T03:36:38.806Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "One of my ⓐ<u>friends</u> said he was ⓑ<u>called</u> for by the ⓒ<u>state</u> ⓓ<u>security</u> ⓔ<u>police</u>, the most powerful police authority in Egypt. A few days later, one of the sentry guards in my village told me that I had to visit a major in the Supreme State Security Police Department in my city. I was scared to death. “I did nothing to do with their business!” I said to my self. I tried to contact some acquaintances to find about that (off the record!), and to find out how far I might have been implicated in some work at variance with their interests. But deplorably enough, nobody told me any thing that could possibly soothe my jitters. Then I said to my self, “ you have to face the music yourself!” And I did. I went to the Headquarters of the State Security Police almost dying of fear. The receptionist kept me waiting for four hours making me",
+    "choices": [
+     "friends: A person other than a family member, spouse or lover whose company one enjoys an",
+     "called: (heading) To use one's voice.",
+     "state: A condition; a set of circumstances applying at any given time.",
+     "security: Having, or capable of exerting power, potency or influence.",
+     "police: A civil force granted the legal authority for law enforcement and maintaining pu"
+    ],
+    "answer": 4,
+    "explanation": "정답 ⓓ의 풀이는 'powerful'의 정의이다. 'security'의 올바른 풀이: The condition of not being threatened, especially physically, psychologically, e\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-14T03:37:15.630Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(70%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "One of my friends said he was called for by the state security police, the most powerful police authority in Egypt. A few days later, one of the sentry guards in my village told me that I had to visit a major in the Supreme State Security Police Department in my city. I was scared to death. “I did nothing to do with their business!” I said to my self. I tried to contact some acquaintances to find about that (off the record!), and to find out how far I might have been implicated in some work at variance with their interests. But deplorably enough, nobody told me any thing that could possibly soothe my jitters. Then I said to my self, “ you have to face the music yourself!” And I did. I went to the Headquarters of the State Security Police almost dying of fear. The receptionist kept me waiting for four hours making me",
+    "choices": [
+     "몇 일 후 마을 경비병이 내가 시의 국가안전보장경찰 본부로 방문하지 않아도 된다고 말했다.",
+     "몇 일 후 마을 경비병이 내가 시의 국가안전보장경찰 본부로 방문해야 한다고 말했다.",
+     "나는 두려움에 떨며 '나는 그들의 업무와는 아무 관계가 없다!'라고 생각했다.",
+     "나는 아는 지인들에게 비공식적으로 연락을 시도해 내가 관련된 일이 있는지 알아보려 했다.",
+     "나는 두려움에 떨면서도 국가안전보장경찰 본부로 직접 찾아갔다."
+    ],
+    "answer": 1,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n② 진단: 지문에서 '마을 경비병이 내가 시의 국가안전보장경찰 본부로 방문해야 한다고 말했다'는 내용은 있지만, '방문하지 않아도 된다'는 말은 없다. 학생은 '방문해야 한다'는 사실만 보고 '방문하지 않아도 된다'는 선지를 오독했을 수 있다. → 처방: 지문에서 말하는 '방문해야 한다'는 사실만 정확히 읽고, 반대되는 말은 없는지 다시 한 번 확인하기.\n③ 진단: 지문에서 '나는 두려움에 떨며 '나는 그들의 업무와는 아무 관계가 없다!'라고 생각했다'는 내용이 그대로 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '~라고 생각했다'는 구절이 나오면 그 내용이 사실과 일치하는지 다시 한 번 확인하기.\n④ 진단: 지문에서 '나는 아는 지인들에게 비공식적으로 연락을 시도해 내가 관련된 일이 있는지 알아보려 했다'는 내용이 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '연락을 시도했다'는 구절이 나오면 그 이유가 '알아보기 위해서'라는 점도 함께 확인하기.\n⑤ 진단: 지문에서 '나는 두려움에 떨면서도 국가안전보장경찰 본부로 직접 찾아갔다'는 내용이 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '직접 찾아갔다'는 구절이 나오면 그 이유가 '두려움에도 불구하고'라는 점도 함께 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-14T00:10:25.128Z",
    "type": "밑줄함의",
@@ -289,60 +360,6 @@
     ],
     "answer": 3,
     "explanation": "(A) total possibilities / (B) inferred conclusions 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘epistemic constraints’는 지문에서 ‘epistemic possibility’로만 언급되며 ‘absolute truths’는 전혀 다루지 않음. 학생은 ‘epistemic’이 ‘절대적’과 연결된다고 오해한 듯. → 처방: ‘epistemic’이란 말은 ‘알려진 사실에 기반한’ 뜻임을 기억하고, ‘절대적’은 ‘logical necessity’와 관련 있음을 떠올리자.\n② 진단: ‘infinite possibilities’는 지문에서 ‘logically possible worlds’로 언급되지만 ‘epistemic must’와는 무관. 학생은 ‘infinite’와 ‘epistemic’을 잘못 연결한 듯. → 처방: ‘infinite’는 ‘logical modality’와 관련이 있음을 확인하고, ‘epistemic must’는 ‘증거에 따른 필연성’임을 다시 읽어보자.\n④ 진단: ‘actual differences’는 지문에서 ‘epistemically possible worlds’와 ‘actual world’의 차이를 설명하는 부분이지만, ‘logical conclusions’은 전혀 언급되지 않음. 학생은 ‘differences’와 ‘conclusions’을 혼동한 듯. → 처방: ‘differences’는 ‘가능한 세계들’의 차이를 뜻함을 기억하고, ‘conclusions’는 ‘must’의 의미와 관련 있음을 떠올리자.\n⑤ 진단: ‘total possibilities’는 ‘logical modality’(모든 가능한 세계)를 가리키지만, ‘inferred conclusions’은 ‘epistemic must’(증거에 따른 결론)와 관련. 학생은 ‘total’과 ‘inferred’를 잘못 연결한 듯. → 처방: ‘total possibilities’는 ‘logical necessity’를 뜻함을 확인하고, ‘inferred’는 ‘epistemic’의 핵심임을 다시 읽어보자."
-   }
-  },
-  {
-   "ts": "2026-07-13T19:51:52.189Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "자유는 수치와 불행을 감수하게 만드는 희망의 대상일 뿐이다.",
-     "자유야말로 수치와 불행을 이겨내는 데 반드시 필요한 희망이다.",
-     "자유는 모든 수치와 불행을 무조건 정당화할 수 있는 절대적 가치를 지닌다.",
-     "자유는 때로 수치나 불행을 감수할 만큼 절실한 희망으로 작용한다.",
-     "자유는 어떤 고통도 감수할 만큼 절실한 희망의 대상이다."
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'Liberty is the ultimate hope that justifies enduring any ignominy.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Liberty is the ultimate hope that justifies enduring any ignominy.]\n[오답 진단·처방]\n① 진단: ‘자유는 수치와 불행을 감수하게 만드는 희망의 대상일 뿐이다’라는 말은 지문에서 자유가 수치와 불행을 감수할 만큼 절실한 희망이라는 점과 반대되는 의미로, 희망의 강도와 목적을 오해한 것이다. 지문은 자유를 얻기 위해 수치와 불행을 감수할 수 있음을 강조하지, 자유가 수치와 불행을 ‘만드는’ 대상이 아니라고 말한다. → 처방: ‘자유’를 ‘희망의 대상’으로만 보지 말고, 그 희망이 어떤 어려움을 감수하게 하는지를 정확히 짚어보세요. 희망의 ‘목적’과 ‘강도’를 문장에서 찾으세요.\n② 진단: ‘자유야말로 수치와 불행을 이겨내는 데 반드시 필요한 희망이다’라는 말은 자유가 수치와 불행을 ‘이겨내는’ 수단으로 오해한 것이다. 지문은 자유를 얻기 위해 수치와 불행을 감수할 수 있음을 말하고, 자유가 수치와 불행을 ‘이기는’ 대상이 아님을 혼동했다. → 처방: ‘이겨낸다’는 표현이 아니라 ‘감수한다’는 표현에 주목하세요. 희망의 ‘결과’가 아니라 ‘과정’을 읽으세요.\n③ 진단: ‘자유는 모든 수치와 불행을 무조건 정당화할 수 있는 절대적 가치를 지닌다’라는 말은 ‘무조건’, ‘절대적’이라는 말이 과장된 해석이다. 지문은 자유를 얻기 위해 수치와 불행을 감수할 수 있음을 말하고, 그 가치가 무조건적이거나 절대적임을 말하지 않는다. → 처방: ‘무조건’, ‘절대적’이라는 말이 지문에 있는지 확인하세요. 문장의 ‘한계’를 읽으세요.\n⑤ 진단: ‘자유는 어떤 고통도 감수할 만큼 절실한 희망의 대상이다’라는 말은 ‘어떤 고통’까지 포함하는 과도한 일반화다. 지문은 ‘수치와 불행을 감수할 만큼’이라는 구체적인 어려움을 말하고, ‘어떤 고통’이란 말이 없다. → 처방: ‘어떤’이라는 말이 지문에 있는지 확인하세요. 문장의 ‘범위’를 정확히 읽으세요."
-   }
-  },
-  {
-   "ts": "2026-07-13T19:53:35.347Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: n)\n[영영풀이] At no time; on no occasion; in no circumstance.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] never (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
