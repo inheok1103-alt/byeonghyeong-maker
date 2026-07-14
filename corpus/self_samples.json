@@ -1,6 +1,96 @@
 {
- "updated": "2026-07-14T17:37:28.437Z",
+ "updated": "2026-07-14T19:46:47.315Z",
  "samples": [
+  {
+   "ts": "2026-07-14T19:45:42.308Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": -0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "문장 작성 시 문법 규칙을 엄격히 지켜 어색한 문체를 피하려고",
+     "문장 구성에서 문법 오류가 글의 품질을 결정한다고 주장하려고",
+     "글에 포함된 문법 오류를 찾아내려고",
+     "모든 문장이 문법 규칙을 엄격히 따라야만 훌륭한 글이 된다고 주장하려고",
+     "문법 규칙을 무조건 준수해야만 우아한 문체를 얻을 수 있다고 강조하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'to avoid graceless prose by following grammar rules'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘문법 규칙을 엄격히 지켜야 한다’는 지문 첫 문장과 혼동. 그러나 지문은 ‘문법 규칙을 지나치게 중시하면 어색한 문체가 된다’고 지적하며, 문법 규칙의 ‘일부’(since, that)를 설명하는 데 목적이 있음을 간과. → 처방: 지문의 핵심은 ‘문법 규칙을 무조건 따르면 좋은 글이 되는 것이 아니다’라는 점을 먼저 확인하고, 각 규칙의 ‘예외’와 ‘목적’을 따로 읽기.\n③ 진단: ‘문법 오류를 찾아낸다’는 오해. 지문은 문법 규칙의 ‘적용 방법’(since, that)을 설명하는 데 목적이 있으며, 오류를 찾는 내용은 없음. → 처방: ‘문법 오류’를 찾는 문제가 아니라 ‘문법 규칙의 올바른 사용법’을 설명하는 글임을 먼저 확인하고, 지문에서 ‘규칙’을 설명하는 부분을 집중해서 읽기.\n④ 진단: ‘모든 문장이 문법 규칙을 따라야 한다’는 과장된 주장으로 오독. 지문은 ‘일부 규칙’을 설명하며, 그 규칙도 ‘예외’가 있음을 언급하는데, 이를 무시하고 ‘모든 규칙’을 주장하는 것으로 혼동. → 처방: 지문에서 ‘일반적으로 옳다’는 단서와 ‘예외’가 있음을 확인하고, ‘모든’ 규칙을 주장하는 선지는 지문과 맞지 않음을 기억하기.\n⑤ 진단: ‘문법 규칙을 무조건 준수해야 우아한 문체를 얻는다’는 과장된 결론으로 오독. 지문은 오히려 ‘문법 규칙을 지나치게 중시하면 어색한 문체가 된다’고 지적하며, 규칙의 ‘목적’을 설명하는 데 목적이 있음을 간과. → 처방: 지문의 첫 문장과 마지막 문장을 비교해 ‘규칙의 목적’이 ‘문체의 우아함’이 아니라 ‘명확한 표현’이라는 점을 기억하고, 규칙의 ‘적절한 사용’을 중시하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to avoid graceless prose by following grammar rules]"
+   }
+  },
+  {
+   "ts": "2026-07-14T19:46:04.625Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.29,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.29)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "Because some writers are seized by the idea that ⓐ<u>writing is good only are</u> when it’s free of errors that only a grammarian can explain, ⓑ<u>they writes graceless</u> prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, ⓒ<u>it is easy for those</u> inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but ⓓ<u>it’s generally sound</u>. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation ⓔ<u>which a practiced writer corrects</u> corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 3,
+    "explanation": "틀린 곳은 ⓐ(writing is good only are → writing is good only), ⓑ(they writes graceless → they write graceless), ⓔ(which a practiced writer corrects → which a practiced writer) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘1개’라고 답했는데, ⓐ‘are’를 ‘is’로, ⓑ‘writes’를 ‘write’로, ⓒ‘it is easy for those’를 ‘those are easily’로 고치면 3개가 틀렸다고 볼 수 있다고 오해했을 수 있음. → 처방: ‘are’은 ‘is’가 아니라 ‘is’가 아닌 ‘are’를 써야 하는 이유를 찾아보고, ‘writes’를 ‘write’로, ‘it is easy for those’를 ‘those find it easy’를 써서 비교해보기.\n② 진단: ‘2개’라고 답했는데, ⓑ‘writes’를 ‘write’로, ⓓ‘it’s generally sound’를 ‘it’s generally sounds’로 고치면 2개가 틀렸다고 잘못 판단했을 수 있음. → 처방: ‘writes’를 ‘write’로, ‘sounds’를 ‘sound’로 쓰는 이유를 문법 규칙과 예문에서 찾아보기.\n④ 진단: ‘4개’라고 답했는데, ⓐ‘are’를 ‘is’로, ⓑ‘writes’를 ‘write’로, ⓒ‘it is easy for those’를 ‘those are easily’로, ⓓ‘it’s generally sound’를 ‘it’s generally sounds’로 모두 고치면 4개가 틀렸다고 잘못 생각했을 수 있음. → 처방: 각 문장의 동사 형태와 주어 일치를 따로따로 확인하고, ‘sound’가 형용사인지 동사인지 구분해보기.\n⑤ 진단: ‘5개’라고 답했는데, 모든 밑줄 친 부분을 다 틀렸다고 잘못 본 경우로, ⓐ‘are’를 ‘is’로, ⓑ‘writes’를 ‘write’로, ⓒ‘it is easy for those’를 ‘those are easily’로, ⓓ‘it’s generally sound’를 ‘it’s generally sounds’로, ⓔ‘which’를 ‘that’으로 고치면 5개가 틀렸다고 잘못 생각했을 수 있음. → 처방: ‘which’를 ‘that’으로 바꾸는 규칙을 다시 공부하고, 동사 일치와 형용사/동사 구분을 명확히 하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-14T19:46:14.439Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 어떤 작가들은 문법가만이 설명할 수 있는 오류가 전혀 없을 때에만 글쓰기가 훌륭하다는 생각에 사로잡혀서, 세련되지 못한 문체를 써내려갑니다. (구문 포인트: 관계사절(that only a grammarian can explain) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-14T17:35:45.169Z",
    "type": "목적",
@@ -251,112 +341,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Expanding vocabulary enhances adaptability to complexity.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘adaptability’를 ‘vocabulary expansion’이 ‘필요하다’라고만 표현했는데, 지문은 ‘more words = better adaptability’로 ‘확장’이 ‘능력 향상’을 이끈다고 강조한 점을 놓쳤다. ‘requires’는 필요조건을 뜻하지만 지문은 ‘능력의 크기’가 중요하다고 설명한 것과 다르다. → 처방: ‘~가 필요하다’라는 표현 대신 ‘~가 능력을 키워준다’로 바꾸어 지문의 ‘better able’를 떠올리며 답을 고르기.\n③ 진단: ‘Recognizing More Words’는 지문의 ‘recognize things’와 비슷하지만, ‘Increases Adaptability’는 지문의 ‘better able to deal with’보다 ‘능력의 정도’를 약하게 표현했다. 지문은 ‘많은 단어 = 복잡한 세계 대처 능력’으로 ‘정도’를 강조했는데, 이 선지는 ‘단어 인식 = 적응력 증가’로 ‘원인과 결과’를 단순화했다. → 처방: ‘단어 인식’이 ‘어느 정도’ adaptability 를 높이는지 확인하고, 지문의 ‘better able’를 떠올리며 ‘정도’를 강조하는 답을 찾기.\n④ 진단: ‘Guarantees Perfect Adaptability’는 지문의 ‘better able’를 ‘완벽한 보장’으로 과장했다. 지문은 ‘많은 단어 = 더 잘 대처’이지 ‘완벽한 보장’이 아니다. ‘perfect’는 지문의 ‘complicated and changing world’를 고려하면 지나친 표현이다. → 처방: ‘Guarantees’나 ‘Perfect’를 보면 지문의 ‘better able’를 떠올리며 ‘과장된 표현’을 의심하고 정답을 다시 확인하기.\n⑤ 진단: ‘Always Enhances Adaptability to All Situations’는 ‘항상’, ‘모든 상황’을 강조했는데, 지문은 ‘많은 단어 = 복잡한 세계 대처 능력’으로 ‘특정 상황’을 전제하지 않는다. ‘Always’와 ‘All’은 지문의 ‘complicated and changing world’를 고려하면 지나친 일반화다. → 처방: ‘Always’나 ‘All’을 보면 지문의 ‘complicated and changing’이라는 ‘특정 조건’을 떠올리며 ‘과도한 일반화’를 의심하고 답을 다시 고르기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Expanding vocabulary enhances adaptability to complexity.**]"
-   }
-  },
-  {
-   "ts": "2026-07-14T06:28:36.109Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "WEEK 27 DAY 5 REVIEW Another week to build your vocabulary. Words stand for “things.” The more “things” you can recognize, the better able you are to deal with the complicated and changing world. New and unusual situations are more easily handled by those who can utilize the largest number of “things” we call words. REVIEW WORDS DEFINITIONS 1.adamant a. reach the highest point 2.ardent b. inflexible, unyielding 3.array c. triumphant joy 4.bereft d. looking backward 5.besmirch e. peak, crown, summit 6.constrict f. a conceited, vain person 7.culminate g. bind, limit, squeeze 8.egotist h. biting, burning 9.exultation i. insulting, abusive speech 10.falter j. system, arrangement 11.humility k. modesty, meekness, humbleness 12.invective l. phenomenon, marvel 13.inveterate m. stain, soil, dim the reputation 14.obscure n. sharply stimulating 15.pinnacle o. deprived of 16.prodigy p. bulky, large 17.pungent q. hesitate, waver, stumble 18.retrospect r. eager, passionate 19.vitriolic s. firmly established, habitual 20.voluminous t. unclear, unknown, lowly",
-    "choices": [
-     "단어는 사물을 가리키는 수단이므로 어휘력이 많을수록 세상을 더 잘 다룰 수 **없다**.",
-     "새롭고 낯선 상황은 가장 많은 단어를 아는 사람들이 더 쉽게 처리할 수 **없다**.",
-     "‘adamant’는 ‘유연하지 않고 단호한’ 의미를 지닌다.",
-     "‘culminate’는 ‘정점이나 절정을 이루는’ 뜻을 지닌 **것이 아니다**.",
-     "‘invective’는 ‘모욕적이거나 욕설이 담긴 언어’를 뜻 **하지 않는다**."
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘단어는 사물을 가리키는 수단이므로 어휘력이 많을수록 세상을 더 잘 다룰 수 없다’는 문장과 정반대 내용을 담고 있음. 지문은 ‘단어는 사물을 가리키는 수단이므로 어휘력이 많을수록 세상을 더 잘 다룰 수 있다’라고 설명함. → 처방: 지문에서 ‘단어’는 ‘사물’을 가리키는 수단으로, 어휘력이 많을수록 ‘세상을 더 잘 다룰 수 있다’라고 설명했다는 점을 기억하고, 선지의 ‘없다’를 ‘있다’라고 바꿔 읽는 연습을 하세요.\n② 진단: ‘새롭고 낯선 상황은 가장 많은 단어를 아는 사람들이 더 쉽게 처리할 수 없다’는 문장과 정반대 내용을 담고 있음. 지문은 ‘새롭고 낯선 상황은 가장 많은 단어를 아는 사람들이 더 쉽게 처리할 수 있다’라고 설명함. → 처방: 지문에서 ‘새롭고 낯선 상황’을 ‘가장 많은 단어를 아는 사람들’이 ‘더 쉽게 처리할 수 있다’라고 설명했다는 점을 기억하고, 선지의 ‘없다’를 ‘있다’라고 바꿔 읽는 연습을 하세요.\n④ 진단: ‘culminate’는 ‘정점이나 절정을 이루는’ 뜻을 지닌다고 설명했는데, 지문에서 ‘culminate’는 ‘reach the highest point’로 ‘정점이나 절정을 이루는’ 뜻으로 정의됨. → 처방: ‘culminate’의 뜻을 확인할 때, 지문에서 ‘reach the highest point’라고 설명했다는 점을 기억하고, ‘정점이나 절정을 이루는’ 뜻이 맞는지 다시 한 번 확인하세요.\n⑤ 진단: ‘invective’는 ‘모욕적이거나 욕설이 담긴 언어’를 뜻하지 않는다고 설명했는데, 지문에서 ‘invective’는 ‘insulting, abusive speech’로 ‘모욕적이거나 욕설이 담긴 언어’를 뜻한다고 정의됨. → 처방: ‘invective’의 뜻을 확인할 때, 지문에서 ‘insulting, abusive speech’라고 설명했다는 점을 기억하고, ‘모욕적이거나 욕설이 담긴 언어’를 뜻한다는 사실을 떠올리세요.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-14T03:36:38.806Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "One of my ⓐ<u>friends</u> said he was ⓑ<u>called</u> for by the ⓒ<u>state</u> ⓓ<u>security</u> ⓔ<u>police</u>, the most powerful police authority in Egypt. A few days later, one of the sentry guards in my village told me that I had to visit a major in the Supreme State Security Police Department in my city. I was scared to death. “I did nothing to do with their business!” I said to my self. I tried to contact some acquaintances to find about that (off the record!), and to find out how far I might have been implicated in some work at variance with their interests. But deplorably enough, nobody told me any thing that could possibly soothe my jitters. Then I said to my self, “ you have to face the music yourself!” And I did. I went to the Headquarters of the State Security Police almost dying of fear. The receptionist kept me waiting for four hours making me",
-    "choices": [
-     "friends: A person other than a family member, spouse or lover whose company one enjoys an",
-     "called: (heading) To use one's voice.",
-     "state: A condition; a set of circumstances applying at any given time.",
-     "security: Having, or capable of exerting power, potency or influence.",
-     "police: A civil force granted the legal authority for law enforcement and maintaining pu"
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓓ의 풀이는 'powerful'의 정의이다. 'security'의 올바른 풀이: The condition of not being threatened, especially physically, psychologically, e\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-14T03:37:15.630Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(70%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "One of my friends said he was called for by the state security police, the most powerful police authority in Egypt. A few days later, one of the sentry guards in my village told me that I had to visit a major in the Supreme State Security Police Department in my city. I was scared to death. “I did nothing to do with their business!” I said to my self. I tried to contact some acquaintances to find about that (off the record!), and to find out how far I might have been implicated in some work at variance with their interests. But deplorably enough, nobody told me any thing that could possibly soothe my jitters. Then I said to my self, “ you have to face the music yourself!” And I did. I went to the Headquarters of the State Security Police almost dying of fear. The receptionist kept me waiting for four hours making me",
-    "choices": [
-     "몇 일 후 마을 경비병이 내가 시의 국가안전보장경찰 본부로 방문하지 않아도 된다고 말했다.",
-     "몇 일 후 마을 경비병이 내가 시의 국가안전보장경찰 본부로 방문해야 한다고 말했다.",
-     "나는 두려움에 떨며 '나는 그들의 업무와는 아무 관계가 없다!'라고 생각했다.",
-     "나는 아는 지인들에게 비공식적으로 연락을 시도해 내가 관련된 일이 있는지 알아보려 했다.",
-     "나는 두려움에 떨면서도 국가안전보장경찰 본부로 직접 찾아갔다."
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n② 진단: 지문에서 '마을 경비병이 내가 시의 국가안전보장경찰 본부로 방문해야 한다고 말했다'는 내용은 있지만, '방문하지 않아도 된다'는 말은 없다. 학생은 '방문해야 한다'는 사실만 보고 '방문하지 않아도 된다'는 선지를 오독했을 수 있다. → 처방: 지문에서 말하는 '방문해야 한다'는 사실만 정확히 읽고, 반대되는 말은 없는지 다시 한 번 확인하기.\n③ 진단: 지문에서 '나는 두려움에 떨며 '나는 그들의 업무와는 아무 관계가 없다!'라고 생각했다'는 내용이 그대로 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '~라고 생각했다'는 구절이 나오면 그 내용이 사실과 일치하는지 다시 한 번 확인하기.\n④ 진단: 지문에서 '나는 아는 지인들에게 비공식적으로 연락을 시도해 내가 관련된 일이 있는지 알아보려 했다'는 내용이 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '연락을 시도했다'는 구절이 나오면 그 이유가 '알아보기 위해서'라는 점도 함께 확인하기.\n⑤ 진단: 지문에서 '나는 두려움에 떨면서도 국가안전보장경찰 본부로 직접 찾아갔다'는 내용이 나온다. 학생은 이 부분을 정확히 읽었지만, '무엇을 어떻게 오독했는지'를 설명하기 위해 예시를 든 것이다. → 처방: 지문에서 '직접 찾아갔다'는 구절이 나오면 그 이유가 '두려움에도 불구하고'라는 점도 함께 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
