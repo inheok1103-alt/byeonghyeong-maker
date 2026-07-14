@@ -1,0 +1,42 @@
+{
+ "kind": "grammar",
+ "header": "11강 01. 어법 정확성",
+ "meta": "고3 · EBS 수능특강 11강 · 어법 · 그대로 발췌",
+ "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+ "hook": {
+  "title": "인터넷의 모든 걸 복붙하는 아이들에게",
+  "lead": "정보가 넘치는 시대, 학생들은 <<전부 복사|hl=red>>한다. 한 교사는 <<슈퍼마켓|hl=cyan>>이라는 은유 하나로 이 습관을 바꿨다.",
+  "cards": [
+   { "cl": "magenta", "head": "은유(metaphor)의 힘", "body": "추상적 개념을 익숙한 것에 빗대면 이해가 쉬워진다. ‘연구 = 쇼핑’처럼." },
+   { "cl": "cyan",    "head": "슈퍼마켓 비유", "body": "매대의 모든 게 유용해도 다 사지는 않는다. ‘쇼핑 목록’으로 필요한 것만 담듯, 필요한 정보만 고른다." },
+   { "cl": "blue",    "head": "정보 리터러시", "body": "출처를 그대로 베끼기 → 선별·요약하기. 21세기 학습의 핵심 역량." },
+   { "cl": "gold",    "head": "오늘의 어법 포인트", "body": "동명사 주어·분사·대동사·복합관계사 — ‘주어 자리엔 명사’ 원칙에 주목하라." }
+  ],
+  "bridge": "그런데 ‘Copy everything is a wasteful endeavor.’ — 이 문장, 어법상 맞을까?"
+ },
+ "passage": "Here’s an application of <<metaphors|hl=magenta>> to research papers: Below-grade-level readers in my urban middle school have a great deal of difficulty doing research. Their answer when ①<<assigned|u,cc>> to do “a report” is to come to the media center and <<copy verbatim|g=그대로 복사>> everything in the encyclopedia article or whatever source they have located, be it Internet, print, or whatever. ②<<To try|u,cc>> to get the students to understand why it isn’t necessary to copy everything in the articles, I use a <<comparison to a supermarket|hl=cyan>>. I ask them if everything in the supermarket is useful, and we discuss this, with the usual conclusion being that it ③<<is|u,cc>>, <<but|cc>> we don’t buy everything all the time. <<Then|cc>> I ask them why they don’t buy everything each time they go and how they determine what to buy when they go with their parents. Someone usually mentions that they have a list. <<From that point on|co>>, I lead a discussion about how ④<<whatever|u,cc>> their teachers have asked for is their <<“shopping list”|hl=yellow>> for their research, and they should just read for that information and write it down in note format. It sometimes helps them to understand that ⑤<<copy|u,cc>> everything is a <<wasteful endeavor|g=헛된 노력>>.",
+ "legend": [
+  { "sw": "gold",    "label": "어법 밑줄 ①~⑤" },
+  { "sw": "green",   "label": "연결어" },
+  { "sw": "cyan",    "label": "슈퍼마켓 은유" },
+  { "sw": "magenta", "label": "핵심어" }
+ ],
+ "footnotes": ["verbatim 말 그대로", "encyclopedia 백과사전", "endeavor 노력", "below-grade-level 학년 수준 이하의"],
+ "flow": [
+  { "n": 1, "role": "도입",   "cl": "magenta", "note": "은유를 연구 보고서 지도에 적용 — 학년 이하 학생들은 조사를 어려워함" },
+  { "n": 2, "role": "문제",   "cl": "red",     "note": "학생들의 해결책 = 출처의 모든 것을 ‘그대로 복사(verbatim)’" },
+  { "n": 3, "role": "전략",   "cl": "cyan",    "note": "그래서 ‘슈퍼마켓’ 비유를 사용해 이해시킴" },
+  { "n": 4, "role": "전개",   "cl": "green",   "note": "매대의 모든 게 유용해도 다 사지 않는다 → 학생들과 토론" },
+  { "n": 5, "role": "연결",   "cl": "blue",    "note": "‘쇼핑 목록’처럼, 필요한 정보만 골라 읽고 메모하라" },
+  { "n": 6, "role": "결론",   "cl": "gold",    "note": "모든 것을 베끼는 것은 ‘헛된 노력’임을 이해시킨다" }
+ ],
+ "points": [
+  { "n": 1, "underline": "assigned", "label": "분사 (수동·부사절 축약)", "verdict": "O", "why": "when (they are) assigned — 학생들이 과제를 ‘부여받는’ 수동 관계이므로 과거분사가 적절." },
+  { "n": 2, "underline": "To try", "label": "to부정사 (부사적·목적)", "verdict": "O", "why": "To try to get … , I use ~ — ‘~하기 위해’ 목적을 나타내는 부사적 to부정사. 적절." },
+  { "n": 3, "underline": "is", "label": "대동사 (be)", "verdict": "O", "why": "conclusion being that it is — 앞의 ‘everything is useful’의 be동사를 대신하는 대동사. does가 아니라 is가 옳다." },
+  { "n": 4, "underline": "whatever", "label": "복합관계대명사", "verdict": "O", "why": "whatever their teachers have asked for = anything that ~ — 절 전체가 is의 주어. however가 아니라 whatever가 적절." },
+  { "n": 5, "underline": "copy", "label": "동명사 주어", "verdict": "X", "correct": "copying", "answer": true, "why": "that ___ everything is …의 that절 주어 자리다. 뒤에 동사 is가 있으므로 정동사 copy는 주어가 될 수 없고 동명사 copying이어야 한다. → 정답" }
+ ],
+ "answer": 5,
+ "explanation_core": "밑줄 ⑤ ‘that ___ everything is a wasteful endeavor’에서 빈칸은 that절의 주어 자리다. 절 안에 이미 동사 is가 있으므로 그 앞은 주어(명사구)여야 하는데, copy는 정동사(원형)라 주어가 될 수 없다. 동명사 copying(‘모든 것을 베끼는 것’)으로 고쳐야 한다."
+}

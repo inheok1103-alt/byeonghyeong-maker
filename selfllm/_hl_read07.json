@@ -1,0 +1,58 @@
+{
+ "kind": "reading",
+ "header": "07강 04. 제목 추론",
+ "meta": "고3 · EBS 수능특강 07강 · 제목 파악 · 그대로 발췌",
+ "stem": "다음 글의 제목으로 가장 적절한 것은?",
+ "hook": {
+  "title": "애니메이션, 덜 그릴수록 예술이 된다?",
+  "lead": "디즈니는 <<모든 프레임|hl=red>>을 정교하게 그렸다. 그런데 <<Yellow Submarine|hl=yellow>> 같은 명작은 정반대 방식으로 태어났다.",
+  "cards": [
+   { "cl": "red",     "head": "풀 애니메이션 (Full)", "body": "디즈니 1930~40년대 — 프레임을 거의 다 그려 현실처럼. 정교하지만 시간·비용이 막대하다." },
+   { "cl": "cyan",    "head": "리미티드 애니메이션 (Limited)", "body": "적게 그리고 추상·상징·제한된 움직임으로 표현. 저비용 + 상상력에 기댄 새로운 미학." },
+   { "cl": "blue",    "head": "Yellow Submarine (1968)", "body": "비틀즈 애니메이션. 팝아트·초현실 색채로 애니메이션 예술사의 전환점이 되었다." },
+   { "cl": "magenta", "head": "suspension of disbelief", "body": "‘불신의 유예’ — 가짜인 줄 알면서도 이야기에 빠져드는 관객의 마음. 리미티드가 노리는 지점." }
+  ],
+  "bridge": "‘제약’은 한계일까, 아니면 새로운 예술로 들어가는 문일까?"
+ },
+ "passage": "<<Limited animation|hl=cyan>> is a process of making animated cartoons that does not follow a <<“realistic” approach|tc=magenta>>. The short cartoons and feature films of <<Walt Disney|hl=red>> from the 1930s and 1940s are widely <<acclaimed|g=격찬받는>> for depicting animated <<simulations of reality|tc=magenta>>, with <<exquisite|g=정교한>> detail in every frame. <<However|co>>, this style of animation is very <<time-consuming|tc=orange>> and <<expensive|tc=orange>>. <<“Limited” animation|hl=cyan>> creates an image that uses <<abstract art, symbolism, and limited movement|tc=cyan>> to create the same effect, <<but|cc>> at a much <<lower production cost|tc=blue>>. This style of animation depends more upon <<suspension of disbelief|g=불신의 유예>> to tell a story; the story exists more in the <<viewer’s imagination|tc=cyan>>. <<It also|cc>> encourages the animators to <<indulge in|g=몰두하다>> artistic styles that are <<not necessarily bound to|u>> the limits of the real world. <<The result|co>> is a <<new artistic style|hl=magenta>> that <<could not have developed|u,tc=yellow>> if animation was <<solely|g=오로지>> devoted to producing simulations of reality. <<Without limited animation|cc>>, such <<ground-breaking|g=획기적인>> films as Yellow Submarine, Chuck Jones’ The Dot and the Line, and many others could never have been produced.",
+ "legend": [
+  { "sw": "cyan",    "label": "Limited(리미티드)" },
+  { "sw": "red",     "label": "Disney(풀 애니)" },
+  { "sw": "magenta", "label": "핵심어·새 예술" },
+  { "sw": "green",   "label": "연결어" }
+ ],
+ "footnotes": ["acclaim 격찬하다", "exquisite 정교한", "suspension of disbelief 불신의 유예", "ground-breaking 획기적인"],
+ "choices": [
+  { "n": 1, "text": "Limited Animation: A Creative Style Freed from Realism", "correct": true },
+  { "n": 2, "text": "Why Realistic Animation Still Rules the Film Industry" },
+  { "n": 3, "text": "The Heavy Price of Highly Detailed Animation" },
+  { "n": 4, "text": "Walt Disney and the Birth of Feature-Length Cartoons" },
+  { "n": 5, "text": "Technical Limits That Hold Modern Animation Back" }
+ ],
+ "answer": 1,
+ "answer_label": "제목",
+ "answer_plain": "① Limited Animation: A Creative Style Freed from Realism  (제약에서 태어난 새로운 예술)",
+ "rationale": "요지문 (6): ‘a new artistic style that could not have developed if animation was solely devoted to producing simulations of reality.’ — 현실 모사에 얽매이지 않은 리미티드가 새 예술을 열었다. 따라서 제목은 ①.",
+ "flow": [
+  { "n": 1, "role": "도입·정의", "cl": "cyan",    "note": "리미티드 애니메이션 = 사실주의를 따르지 않는 제작 방식" },
+  { "n": 2, "role": "통념·배경", "cl": "red",     "note": "디즈니식 사실적 애니메이션이 정교함으로 널리 찬사받음" },
+  { "n": 3, "role": "전환·문제", "cl": "green",   "note": "However — 그 방식은 시간·비용이 매우 큼" },
+  { "n": 4, "role": "대안·설명", "cl": "cyan",    "note": "리미티드는 추상·상징·제한된 움직임으로 같은 효과를 저비용에" },
+  { "n": 5, "role": "심화",       "cl": "blue",    "note": "불신의 유예에 기대고, 현실의 한계에 얽매이지 않는 예술로" },
+  { "n": 6, "role": "핵심·결론", "cl": "magenta", "note": "현실에 얽매이지 않아 ‘새로운 예술 스타일’ 탄생 (= 요지)" },
+  { "n": 7, "role": "부연·예시", "cl": "gold",    "note": "리미티드 없었다면 Yellow Submarine 등 획기적 영화는 불가능" }
+ ],
+ "logic": {
+  "rows": [
+   { "arrow": "통념", "acol": "red",   "expr": "디즈니식 사실 재현이 찬사받는다", "tag": "thesis", "note": "widely acclaimed for depicting simulations of reality" },
+   { "arrow": "반전", "acol": "green", "expr": "However — 리미티드가 저비용으로 새 예술을 연다", "tag": "point", "note": "a new artistic style that could not have developed ..." }
+  ],
+  "banner": "제약(저비용·제한된 움직임)이 오히려 새로운 예술의 문을 열었다"
+ },
+ "wrong": [
+  { "n": 2, "text": "사실적 애니메이션의 우위가 아니라 오히려 그 한계(시간·비용)를 지적한다." },
+  { "n": 3, "text": "비용은 부차적 소재일 뿐 글 전체의 주제가 아니다." },
+  { "n": 4, "text": "디즈니는 대조를 위한 사례일 뿐 글의 초점이 아니다." },
+  { "n": 5, "text": "‘한계’를 부정적으로 본 글이 아니라, 제약이 오히려 예술성을 열었다고 본다." }
+ ]
+}

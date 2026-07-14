@@ -1,0 +1,45 @@
+{
+ "header": "33. 빈칸 추론",
+ "meta": "고3 공통영어 · 빈칸 완성 · [3점]",
+ "source": "수업용 33·34 · 빈칸 추론",
+ "passage": "<<In some cases|cc>>, <<behavior|hl=red>> and <<expectations|hl=magenta>> can come to be <<aligned|g=정렬되다>> through <<mutual|hl=blue>> <<self-interest|hl=cyan>>. <<For example|co>>, in the early days of motor vehicles, <<norms|tc=purple>> emerged in which everyone came to <<expect|hl=magenta>> everyone else to drive on the right (or left) side of the road. <<Whether|cc>> drivers arrived at the collective choice to drive on the right or the left mattered little, <<so|cc>> different <<norms|tc=purple>> emerged in different parts of the world. The key was to <<coordinate|hl=red>> around some norm in each area and <<not to deviate|u,tc=orange>>. <<In the case of driving|cc>>, <<deviations|u,g=벗어남>> from the <<expected|tc=magenta>> behavior are extremely <<costly|tc=cyan>>, likely resulting in <<injury|tc=red>> or <<death|tc=red>>, <<so|cc>> there are strong <<incentives|tc=blue>> to <<adopt|tc=orange>> a norm and <<follow|tc=orange>> it, making it <<self-enforcing|hl=magenta>>. For early drivers, <<empirical|it,g=경험적인>> practice of [what other people would do] played a crucial <<causal|hl=red,g=원인이 되는>> role in deciding <<which side of the road to drive on|u>>. <<At the same time|co>>, those <<expectations|hl=magenta>> were themselves ______________. <<Hence|co>> causality flowed in both directions.",
+ "choices": [
+  { "n": 1, "text": "a set of norms where people prioritized public interests" },
+  { "n": 2, "text": "social constraints based on different geographical factors" },
+  { "n": 3, "text": "patterns reinforced by legal rules and institutional control" },
+  { "n": 4, "text": "a <<product|hl=yellow,g=결과>> of <<the behavior|hl=orange>> that other individuals had chosen", "correct": true },
+  { "n": 5, "text": "individual beliefs consistently shaped by personal preferences" }
+ ],
+ "answer": 4,
+ "answer_plain": "a product of the behavior that other individuals had chosen",
+ "footnotes": ["deviate 벗어나다", "empirical 경험적인", "self-enforcing 자기강제적인", "coordinate 조율하다"],
+ "legend": [
+  { "sw": "green", "label": "연결어·담화표지" },
+  { "sw": "red", "label": "핵심개념 behavior(행동)" },
+  { "sw": "magenta", "label": "핵심개념 expectations(기대)" },
+  { "sw": "gold", "label": "구조어(양보·인과)" }
+ ],
+ "flow": [
+  { "n": 1, "role": "도입·주제", "cl": "gold",    "note": "행동과 기대가 상호 이익을 통해 서로 ‘정렬(aligned)’될 수 있다" },
+  { "n": 2, "role": "예시",       "cl": "green",   "note": "자동차 초기 — 우측(혹은 좌측) 통행 ‘규범(norms)’의 등장" },
+  { "n": 3, "role": "핵심",       "cl": "blue",    "note": "어느 쪽이든 상관없이 ‘조율(coordinate)’하고 이탈하지 않는 것이 관건" },
+  { "n": 4, "role": "부연",       "cl": "green",   "note": "이탈은 큰 대가(부상·사망) → 규범 채택 유인 → 자기강제적(self-enforcing)" },
+  { "n": 5, "role": "인과 ①",     "cl": "magenta", "note": "타인 행동에 대한 ‘기대’가 내 행동 결정의 원인(causal) 역할" },
+  { "n": 6, "role": "빈칸·인과 ②", "cl": "red",     "note": "그 ‘기대’는 다시 타인이 선택한 행동의 결과(product) ← 정답 자리" },
+  { "n": 7, "role": "결론",       "cl": "gold",    "note": "Hence — 인과가 양방향(both directions)으로 흐른다" }
+ ],
+ "logic": {
+  "rows": [
+   { "arrow": "→ 원인", "acol": "red",  "expr": "기대 → (내가 할) 행동의 원인", "tag": "causal", "note": "empirical practice of what others would do → played a crucial causal role" },
+   { "arrow": "← 결과", "acol": "blue", "expr": "기대 ← (타인이 한) 행동의 결과", "tag": "product", "note": "those expectations were themselves a product of the behavior (빈칸)" }
+  ],
+  "banner": "인과가 양방향으로 흐른다  —  Hence causality flowed in both directions"
+ },
+ "rationale": "빈칸 문장은 ‘those expectations were themselves ______.’ 이다. 앞 문장에서 기대는 내 행동을 결정하는 원인(causal)이었고, 빈칸에서는 그 기대가 다시 ‘타인이 선택한 행동의 결과(product)’가 되어야 마지막 문장 ‘Hence causality flowed in both directions(그러므로 인과는 양방향으로 흘렀다)’가 성립한다. 따라서 정답은 ④.",
+ "wrong": [
+  { "n": 1, "text": "‘공익을 우선한 규범’ — 지문은 공익 우선을 언급하지 않으며, 양방향 인과라는 논지와 무관하다." },
+  { "n": 2, "text": "‘지리적 요인에 근거한 사회적 제약’ — 지역마다 규범이 달랐다는 언급은 있으나, 빈칸은 인과의 ‘방향’이지 규범의 지리적 기원이 아니다." },
+  { "n": 3, "text": "‘법·제도적 통제로 강화된 패턴’ — 규범은 상호 기대로 ‘자기강제적(self-enforcing)’이라 했으므로 법·제도 통제와 정면으로 상충한다." },
+  { "n": 5, "text": "‘개인적 선호로 형성된 개인적 믿음’ — 기대는 ‘타인의 행동’에서 비롯된 집단적 산물이므로 개인 선호와 반대 방향이다." }
+ ]
+}

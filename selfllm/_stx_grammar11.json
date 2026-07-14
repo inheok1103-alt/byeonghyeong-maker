@@ -1,0 +1,65 @@
+{
+ "class": { "school": "RAY", "grade": "고3", "lesson": "EBS 수능특강 11강 · 어법 정확성", "date": "2026-07-14" },
+ "source": "EBS 수능특강 11강 01번 [어법] (수능 기출 아님)",
+ "passage": {
+  "title": "Using Metaphors to Teach Research Skills",
+  "topic": "은유(슈퍼마켓)를 활용한 연구 방법 지도",
+  "one_liner": "‘슈퍼마켓에서 필요한 것만 골라 담기’라는 은유로, 학생들이 모든 것을 베끼는 헛된 조사에서 벗어나 필요한 정보만 선택하게 한다.",
+  "text": [
+   "Here’s an application of metaphors to research papers: Below-grade-level readers in my urban middle school have a great deal of difficulty doing research.",
+   "Their answer when assigned to do “a report” is to come to the media center and copy verbatim everything in the encyclopedia article or whatever source they have located, be it Internet, print, or whatever.",
+   "To try to get the students to understand why it isn’t necessary to copy everything in the articles, I use a comparison to a supermarket.",
+   "I ask them if everything in the supermarket is useful, and we discuss this, with the usual conclusion being that it is, but we don’t buy everything all the time.",
+   "Then I ask them why they don’t buy everything each time they go and how they determine what to buy when they go with their parents.",
+   "Someone usually mentions that they have a list.",
+   "From that point on, I lead a discussion about how whatever their teachers have asked for is their “shopping list” for their research, and they should just read for that information and write it down in note format.",
+   "It sometimes helps them to understand that copying everything is a wasteful endeavor."
+  ],
+  "ko": [
+   "여기 은유를 조사 보고서에 적용한 한 가지 사례가 있다: 내가 다니는 도회지 중학교의 학년 수준 이하의 읽기 능력을 가진 학생들은 조사하는 데 많은 어려움을 겪는다.",
+   "‘보고서’를 작성하라는 과제를 받을 때 그들의 해결책은 미디어 센터에 와서 백과사전 글이나 인터넷, 인쇄물 등 자신이 찾은 어떠한 출처이든 말 그대로 모든 것을 그대로 복사하는 것이다.",
+   "학생들이 기사에 있는 모든 내용을 복사할 필요가 없는 이유를 이해하도록 하기 위해, 나는 슈퍼마켓에 대한 비교를 사용한다.",
+   "나는 학생들에게 슈퍼마켓에 있는 모든 것이 유용한지 묻고, 우리는 이를 토론하는데, 일반적인 결론은 그것이 유용하기는 하지만 항상 모든 것을 사지는 않는다는 것이다.",
+   "그런 다음 나는 그들이 갈 때마다 왜 모든 것을 사지 않는지와, 부모님과 함께 갈 때 무엇을 살지 어떻게 결정하는지를 묻는다.",
+   "누군가는 보통 그들에게 목록이 있다고 말한다.",
+   "그 시점부터 나는 선생님들이 요구한 것이 무엇이든 그것이 그들의 조사를 위한 ‘쇼핑 목록’이며, 그들은 그 정보만을 읽고 메모 형식으로 적어야 한다는 점에 관한 토론을 이끈다.",
+   "그것은 모든 것을 베끼는 것이 헛된 노력이라는 것을 이해하는 데 때때로 도움이 된다."
+  ]
+ },
+ "question": {
+  "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+  "marked_passage": "Here’s an application of metaphors to research papers: Below-grade-level readers in my urban middle school have a great deal of difficulty doing research. Their answer when ①<u>assigned</u> to do “a report” is to come to the media center and copy verbatim everything in the encyclopedia article or whatever source they have located, be it Internet, print, or whatever. ②<u>To try</u> to get the students to understand why it isn’t necessary to copy everything in the articles, I use a comparison to a supermarket. I ask them if everything in the supermarket is useful, and we discuss this, with the usual conclusion being that it ③<u>is</u>, but we don’t buy everything all the time. Then I ask them why they don’t buy everything each time they go and how they determine what to buy when they go with their parents. Someone usually mentions that they have a list. From that point on, I lead a discussion about how ④<u>whatever</u> their teachers have asked for is their “shopping list” for their research, and they should just read for that information and write it down in note format. It sometimes helps them to understand that ⑤<u>copy</u> everything is a wasteful endeavor.",
+  "answer": 5
+ },
+ "points": [
+  { "n": 1, "underline": "assigned", "label": "분사 (수동·부사절 축약)", "verdict": "O", "why": "when (they are) assigned — 학생들이 과제를 ‘부여받는’ 수동 관계이므로 과거분사 assigned가 적절. (시간 부사절에서 ‘주어+be’ 생략)" },
+  { "n": 2, "underline": "To try", "label": "to부정사 (부사적·목적)", "verdict": "O", "why": "To try to get … , I use ~ — ‘~하기 위해’라는 목적을 나타내는 부사적 to부정사. 적절." },
+  { "n": 3, "underline": "is", "label": "대동사 (be)", "verdict": "O", "why": "conclusion being that it is — 앞의 ‘everything is useful’의 be동사를 대신하는 대동사. do계열(does)이 아니라 is가 옳다. 적절." },
+  { "n": 4, "underline": "whatever", "label": "복합관계대명사", "verdict": "O", "why": "whatever their teachers have asked for = anything that ~ — asked for의 목적어이자 절 전체가 is의 주어. however가 아니라 whatever가 적절." },
+  { "n": 5, "underline": "copy", "label": "동명사 주어", "verdict": "X", "correct": "copying", "answer": true, "why": "that ___ everything is a wasteful endeavor — 명사절(that절)의 주어 자리다. 뒤에 동사 is가 있으므로 주어는 명사(구)여야 하는데 정동사 copy는 주어가 될 수 없다. 동명사 copying으로 고쳐야 한다. → 정답" }
+ ],
+ "answer": 5,
+ "explanation_core": "밑줄 ⑤가 있는 ‘that ___ everything is a wasteful endeavor’에서 빈칸은 명사절 that절의 주어 자리다. 절 안에 이미 동사 is가 있으므로 그 앞은 주어(명사구)여야 한다. 그런데 copy는 정동사(원형)라 주어가 될 수 없으므로, 동명사 copying(‘모든 것을 베끼는 것’)으로 고쳐야 한다. → 정답 ⑤ (copy → copying).",
+ "core3": [
+  "주어 자리엔 명사가 온다 — 정동사(copy)는 주어가 못 되므로 동명사(copying)로 바꾼다.",
+  "that절 안에 이미 동사(is)가 있으면 그 앞은 ‘주어(명사구)’다. 한 절에 정동사가 둘일 수 없다.",
+  "나머지 4점은 정문: 분사 수동(①), 목적 부정사(②), 대동사 be(③), 복합관계대명사(④)."
+ ],
+ "vocab": [
+  { "w": "application", "m": "적용, 응용" },
+  { "w": "below-grade-level", "m": "학년 수준 이하의" },
+  { "w": "verbatim", "m": "말 그대로" },
+  { "w": "encyclopedia", "m": "백과사전" },
+  { "w": "locate", "m": "(위치를) 찾아내다" },
+  { "w": "comparison", "m": "비교" },
+  { "w": "determine", "m": "결정하다" },
+  { "w": "wasteful", "m": "낭비적인, 헛된" },
+  { "w": "endeavor", "m": "노력, 시도" },
+  { "w": "note format", "m": "메모 형식" }
+ ],
+ "wrong_codes": [
+  { "code": "동명사", "miss": "정동사를 주어 자리에", "fix": "주어 자리 → 동명사(-ing)로" },
+  { "code": "대동사", "miss": "be 자리에 do 계열", "fix": "앞 동사가 be면 대동사도 be" },
+  { "code": "복합관계사", "miss": "whatever/however 혼동", "fix": "명사절 주어를 이끌면 whatever" }
+ ]
+}
