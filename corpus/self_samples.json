@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-14T06:29:14.543Z",
+ "updated": "2026-07-14T09:20:59.956Z",
  "samples": [
+  {
+   "ts": "2026-07-14T09:20:23.393Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Idiomatic Constraints on Control and Raising Predicates",
+     "Idiomatic Limits of Subject Control in Grammar",
+     "Grammatical Rules for All Idiomatic Expressions with Subjects",
+     "How Subject Choice Determines Idiomatic Usage Patterns",
+     "Why Idioms Demand Specific Subject Predicates Only"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Idiomatic constraints on control vs. raising predicates**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘Subject Control’이라는 용어와 ‘idiomatic use’의 제약이 ‘Grammar’의 한계로만 오인한 것으로 보임. 지문은 ‘control predicate’와 ‘raising predicate’의 ‘idiomatic constraint’를 비교하고 있는데, ‘Limits’나 ‘Grammar’라는 표현이 ‘idiomatic use’의 ‘제약’이 아니라 ‘전체 문법 체계’의 한계로 오해하게 함. → 처방: ‘idiomatic use’가 ‘predicate(동사)’에 따라 어떻게 제약받는지에 집중하여 선지를 읽고, ‘control’과 ‘raising’의 ‘idiomatic constraint’를 따로 떼어 생각하지 말고 문맥에서 ‘idiom’이란 단어의 역할에 주목할 것.\n③ 진단: ‘idiomatic expressions’ 전체를 ‘Grammar Rules’로 오해한 것으로 보임. 지문은 ‘all hell’이라는 특정 숙어에만 초점을 맞추고 있으며, ‘all idiomatic expressions’를 다루는 규칙이 아님을 간과함. → 처방: ‘idiom’이란 특정 숙어에 ‘제약’이 있는 경우에만 ‘Grammar Rules’를 적용한다는 점을 기억하고, 지문에서 다루는 ‘all hell’이란 특정 숙어에만 ‘idiomatic constraint’가 있음을 확인할 것.\n④ 진단: ‘Subject Choice’가 ‘idiomatic usage’를 ‘결정’한다고 오해한 것으로 보임. 지문은 ‘idiomatic use’의 ‘제약’이 ‘predicate(동사)’에 따라 달라지며, ‘subject choice’가 ‘결정’하는 것이 아니라 ‘predicate’의 성질(control vs. raising)에 따라 ‘idiomatic use’의 제약이 달라짐을 설명하고 있음. → 처방: ‘idiomatic usage’의 ‘제약’이 ‘predicate(동사)’의 성질(control vs. raising)에 따라 달라진다는 점을 기억하고, ‘subject choice’가 아니라 ‘predicate’의 역할에 주목할 것.\n⑤ 진단: ‘idioms’가 ‘specific subject predicates’를 ‘요구’한다고 오해한 것으로 보임. 지문은 ‘idiomatic use’의 ‘제약’이 ‘predicate’(동사)에 따라 달라지며, ‘subject predicate’가 아니라 ‘predicate’의 성질(control vs. raising)에 따라 ‘idiomatic use’의 제약이 달라짐을 설명하고 있음. → 처방: ‘idiomatic use’의 ‘제약’이 ‘predicate(동사)’의 성질(control vs. raising)에 따라 달라진다는 점을 기억하고, ‘subject predicate’라는 표현에 현혹되지 말고 ‘predicate’의 역할에 주목할 것.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Idiomatic constraints on control vs. raising predicates**]"
+   }
+  },
+  {
+   "ts": "2026-07-14T09:20:33.589Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 분사구문에서 의미상 주어의 제약이 통제 술어와 상승 술어에 따라 달라진다.*\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-14T06:26:48.752Z",
    "type": "무관문장",
@@ -330,60 +383,6 @@
     ],
     "answer": 4,
     "explanation": "빈칸에는 원문 'Definitions Match the new words with their dictionary definitions.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 새로운 단어의 뜻을 외우는 데만 집중해서 문장 속에서 단어가 어떤 역할을 하는지 보지 못했다. 'reprimand'가 '질책하다'라는 뜻임을 알지만 문장에서는 '리더십을 빼앗다'라는 뜻으로 쓰였다는 걸 놓쳤다. → 처방: 빈칸에 들어갈 단어가 문장 안에서 어떤 의미로 쓰였는지 먼저 확인하고, 그 뜻을 가진 단어를 새 단어 목록에서 찾아 연결해 보자.\n② 진단: 단어의 뜻을 한국말로 번역하는 데만 매달려서 문장 전체의 흐름을 보지 못했다. 'lackluster'가 '활기 없는'이라는 뜻임을 알았지만 문장에서는 '활기 없는 연설'이 아니라 '활기 없는 글'로 해석해야 했다. → 처방: 문장 전체의 의미를 먼저 이해한 뒤, 빈칸에 들어갈 단어가 문장 안에서 어떤 느낌으로 쓰였는지 생각해 보자.\n③ 진단: 단어의 사전 정의를 그대로 외우려고만 해서 문장 속 단어의 실제 쓰임을 놓쳤다. 'caustic'이 '신랄한'이라는 뜻임을 알았지만 문장에서는 '신랄한 기사'가 아니라 '신랄한 글'로 해석해야 했다. → 처방: 사전 정의를 외우는 것보다 문장 속에서 단어가 어떤 역할을 하는지 먼저 파악한 뒤, 그 뜻을 가진 단어를 찾는 연습을 하자.\n⑤ 진단: 새로운 문장을 만든다는 생각에만 집중해서 빈칸에 들어갈 단어가 문장 안에서 어떤 뜻으로 쓰였는지 보지 못했다. 'wrest'가 '빼앗다'라는 뜻임을 알았지만 문장에서는 '리더십을 빼앗다'라는 뜻으로 쓰였다는 걸 놓쳤다. → 처방: 빈칸에 들어갈 단어가 문장 안에서 어떤 뜻으로 쓰였는지 먼저 확인한 뒤, 그 뜻을 가진 단어를 새 단어 목록에서 찾자."
-   }
-  },
-  {
-   "ts": "2026-07-13T23:18:05.686Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "NEW WORDS loathe lōth reprimand rep´ rə mand lackluster lak´ lus´ tər caustic kô´ stik wrest rest WEEK 3 DAY 1 THE PEP TALK “If there’s one thing I loathe,” the coach said, “it’s a q______.” He had good reason to reprimand us at half-time, because the scoreboard revealed that we were losing, 45–20. Our lackluster performance indicated to him that we had forgotten the rudimentary* aspects of basketball. His caustic remarks fired us up, however, and we dashed out, determined to wrest control of the game from our rivals. Sample Sentences Use the new words in the following sentences. 1.With the help of his brothers he was able to ________________ the leadership of the company from his partner. 2.Speaking in a monotone, the politician was booed for his ________________ address. 3.In a ________________ article, the drama critic slaughtered the hapless* actors. 4.I ________________ spinach but I love other green vegetables. 5.When Ed arrived late, he knew that the grocer would ________________ him. Definitions Match the new words with their dictionary definitions. 6.loathe a. dull 7.reprimand (v.) b. to hate",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] quitter — 문단의 논지상 이 자리에는 'quitter'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-13T22:15:21.556Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "Or, the meanings of words can change so much over time that a ProtoGermanic word could possibly trace to a Proto-Indo-European root with a completely different meaning, such that no one would suspect the connection. The word punch, when referring to a drink, comes not from a Proto-IndoEuropean word for some kind of liquid, but from its word for five—through Hindi’s five word, used because the original recipe was developed in India and used five ingredients. Shitte happens. And besides, when scholars put their heads to it they can often figure out a Proto-Indo-European root that the Proto-Germanic words could have come from, via likenesses that no one happened to notice before. So one leading scholar of how languages change has only this to say about the issue in a recent work:",
-    "choices": [
-     "‘punch’라는 음료의 어원은 인도에서 개발된 레시피에서 네 가지 재료를 사용했기 때문이다.",
-     "‘punch’라는 단어는 인도어의 여섯을 뜻하는 단어에서 유래했다.",
-     "‘punch’라는 단어는 Proto-Indo-European 어의 여섯을 뜻하는 단어에서 시작되었다.",
-     "언어학자들은 Proto-Indo-European 어의 어원을 Proto-Germanic 어와 무관하게 추론할 수 있다.",
-     "언어의 의미는 시간이 지나면서 크게 변할 수 있어 단어의 연관성을 알아채기 어려울 수 있다."
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘punch’의 어원이 인도 레시피에서 ‘네 가지 재료’를 사용했다는 점에서 ‘다섯’을 뜻하는 인도어 ‘five’를 사용했다는 사실을 혼동한 것으로 보임. 지문은 ‘five’를 사용했다고 명시했으나 ‘네 가지’를 오해함. → 처방: ‘punch’의 어원이 ‘five’라는 점을 정확히 기억하고, ‘다섯’이라는 뜻임을 확인한 후 답을 고를 것.\n② 진단: ‘punch’의 어원이 인도어의 ‘여섯’을 뜻하는 단어에서 왔다고 오독했는데, 지문은 ‘five(다섯)’을 사용했다고 밝히고 있음. → 처방: 지문의 ‘five’라는 단어를 정확히 기억하고, ‘six’이 아니라는 점을 확인한 후 답을 고를 것.\n③ 진단: ‘punch’의 어원이 Proto-Indo-European 어의 ‘여섯’을 뜻하는 단어에서 시작했다고 오독했는데, 지문은 ‘five’를 통해 왔다고 설명하고 있음. → 처방: 지문의 ‘five’라는 단어를 중심으로 어원을 떠올리고, ‘six’이 아니라는 점을 확인한 후 답을 고를 것.\n④ 진단: 언어학자들이 Proto-Indo-European 어의 어원을 Proto-Germanic 어와 ‘무관하게’ 추론할 수 있다고 오해했는데, 지문은 Proto-Germanic 어가 Proto-Indo-European 어를 통해 유래했다고 설명하고 있음. → 처방: ‘via’라는 단어를 주의 깊게 읽고, Proto-Germanic 어가 Proto-Indo-European 어를 거쳐 유래했다는 점을 확인한 후 답을 고를 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
