@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-14T14:17:38.783Z",
+ "updated": "2026-07-14T15:52:34.190Z",
  "samples": [
+  {
+   "ts": "2026-07-14T15:51:02.649Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "The Grammar Geek 56 6. Lorsque nous rencontrerons des problèmes, nous vous le dirons. (encounter, tell) \b 7. Il arrivera quand il arrivera. (get here) \b 8. Voici l’itinéraire pour demain: on commence par le musée à 9h00. Après la visite guidée, on embarque dans l’autobus et on va au restaurant. (start, get on, go) \b \b 9. Annie vous fera signe au moment où vous entrerez dans la salle. (wave at, come in) \b 10. Je ne sais pas si Tony est dans son bureau. Je regarderai dès que j’aurai une minute. (check, get) \b EXERCISE 3: ⓐ<u>CONTEXTS</u> Choose the correct answer. Then write contexts for each one. 1. In which one is the ⓑ<u>speaker</u> on an organized group tour? a) We visit the ⓒ<u>Empire</u> ⓓ<u>State</u> ⓔ<u>Building</u> tomorrow. b) We are visiting the Empire State Building tomorrow. 2. In which one does the speaker want to know about the person’s personal plans for after breakfast? a) What are you doing after breakfast? b) What do you do after breakfast?",
+    "choices": [
+     "contexts: The first meal of the day, usually eaten in the morning.",
+     "speaker: One who speaks.",
+     "empire: (furniture) Following or imitating a style popular during the First French Empir",
+     "state: A condition; a set of circumstances applying at any given time.",
+     "building: The act or process by which something is built; construction."
+    ],
+    "answer": 1,
+    "explanation": "정답 ⓐ의 풀이는 'breakfast'의 정의이다. 'contexts'의 올바른 풀이: The surroundings, circumstances, environment, background or settings that determ\n[오답 진단·처방]\n② 진단: speaker 는 말하는 사람을 의미하는 단어로, '말하는 사람'으로 해석해야 하지만 '발표자'나 '특정한 사람'으로 오독했을 가능성이 있다. 지문에서 'speaker'는 '말하는 사람'으로 사용되었기 때문에, 이 오독으로 인해 문맥을 제대로 이해하지 못했을 수 있다. → 처방: 다음부터는 speaker 를 '말하는 사람'으로 이해하고, 문맥에 따라 적절하게 해석해야 한다.\n③ 진단: empire 는 제국을 의미하는 단어로, '제국 스타일'이나 '제국과 관련된'으로 오독했을 가능성이 있다. 지문에서 empire 는 '제국'으로 사용되지 않았기 때문에, 이 오독으로 인해 문맥을 제대로 이해하지 못했을 수 있다. → 처방: 다음부터는 empire 를 제국과 관련된 단어로 이해하고, 문맥에 따라 적절하게 해석해야 한다.\n④ 진단: state 는 상태나 조건을 의미하는 단어로, '국가'나 '지역'으로 오독했을 가능성이 있다. 지문에서 state 는 '빌딩의 이름'으로 사용되었기 때문에, 이 오독으로 인해 문맥을 제대로 이해하지 못했을 수 있다. → 처방: 다음부터는 state 를 상태나 조건으로 이해하고, 문맥에 따라 적절하게 해석해야 한다.\n⑤ 진단: building 은 건물이나 건설을 의미하는 단어로, '건물'로만 이해하고, 건설의 과정이나 행위로 오독했을 가능성이 있다. 지문에서 building 은 '건물'로 사용되었기 때문에, 이 오독으로 인해 문맥을 제대로 이해하지 못했을 수 있다. → 처방: 다음부터는 building 을 건물이나 건설의 과정으로 이해하고, 문맥에 따라 적절하게 해석해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-14T11:46:12.183Z",
    "type": "글의순서",
@@ -340,25 +375,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Ought and should differ in complement selection properties.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 ought 와 should 의 보충 선택 차이만 언급하고, 모든 조동사(modal verbs)의 보충 선택 특성이 다르다고 일반화한 오류. 'different words like ought and should'라는 한정적 표현을 무시하고 'all modal verbs'로 확대해석. → 처방: 지문에서 구체적으로 언급된 단어(ought, should)에만 초점을 맞추고, 보충 선택 특성의 차이는 '일부' 조동사 간에만 적용된다는 점을 기억하기.\n③ 진단: ought 와 must 가 보충 선택에서 비슷하다고 오독. 지문은 ought 와 should 의 차이를 설명하며, must 는 언급조차 없으므로 must 가 ought 와 비슷하다는 결론은 근거 없음. → 처방: 지문에 언급된 단어(ought, should)와 그 차이점에만 집중하고, 언급되지 않은 단어(must)는 배제하기.\n④ 진단: 보충 선택이 조동사 의미 결정에 영향을 미친다고 오해. 지문은 보충 선택이 ought 와 should 의 차이를 설명하는 '수단'일 뿐, 의미 결정의 '원인'이 아님을 명시하지 않음. → 처방: 지문에서 보충 선택이 조동사의 '형태(structure)'에 영향을 미친다는 점을 기억하고, '의미(meaning)'와 혼동하지 않기.\n⑤ 진단: 조동사가 문장 구조에 거의 영향을 미치지 않는다고 오독. 지문은 ought 와 should 가 보충 선택(즉, 문장 구조)에 영향을 미친다고 설명하고 있으므로, 'rarely'라는 극단적 표현은 지문 내용과 모순. → 처방: 지문에서 조동사가 문장 구조(보충 선택)에 영향을 미친다는 점을 분명히 이해하고, 'rarely'나 'never' 같은 극단적 단어 사용을 경계하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Ought and should differ in complement selection properties.]"
-   }
-  },
-  {
-   "ts": "2026-07-14T00:11:03.373Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 15 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'infinitival', 'complements', 'respective' / 13~17단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] ought selects an infinitival TP while should selects an infinitival VP as their respective complements.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
