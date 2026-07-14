@@ -26,6 +26,7 @@ var T = global.window.APITEAM;
   T.donghwaMode(true);
   var pgFile = process.argv[2], outFile = process.argv[3] || "selfllm/_lesson.json";
   var title = process.argv[4] || "";
+  var QTYPE = process.argv[5] || "주제", WTYPE = process.argv[6] || "조건영작";
   var pg = fs.readFileSync(pgFile, "utf8").trim();
   var t0 = Date.now();
 
@@ -42,13 +43,13 @@ var T = global.window.APITEAM;
   ], { noRule: true, timeout: 70000 });
   if (!meta) meta = {};
 
-  console.error("③ 동화고 문항(주제)…");
+  console.error("③ 동화고 문항(" + QTYPE + ")…");
   var q = null;
-  for (var a = 0; a < 2 && !q; a++) { q = await T.generateOne(pg, "주제", { fast: true }).catch(function () { return null; }); }
+  for (var a = 0; a < 2 && !q; a++) { q = await T.generateOne(pg, QTYPE, { fast: true }).catch(function () { return null; }); }
 
-  console.error("④ 조건영작…");
+  console.error("④ 서술형(" + WTYPE + ")…");
   var w = null;
-  for (var a2 = 0; a2 < 2 && !w; a2++) { w = await T.generateOne(pg, "조건영작", { fast: true }).catch(function () { return null; }); }
+  for (var a2 = 0; a2 < 2 && !w; a2++) { w = await T.generateOne(pg, WTYPE, { fast: true }).catch(function () { return null; }); }
 
   var lesson = {
     "class": { school: "동화고", grade: "1", lesson: "R08", date: new Date().toISOString().slice(0, 10) },
@@ -72,7 +73,7 @@ var T = global.window.APITEAM;
       cohesion: meta.cohesion || [],
       vocab: an.vocab || [], points: an.points || [], examFlow: an.examFlow || []
     },
-    question: q ? { type: q.type, stem: q.instruction, choices: q.choices, answer: q.answer, explanation: q.explanation } : null,
+    question: q ? { type: q.type, stem: q.instruction, passage: q.passage || "", choices: q.choices, answer: q.answer, explanation: q.explanation } : null,
     writing: w ? { instruction: w.instruction, explanation: w.explanation } : null,
     core3: meta.core3 || [], wrong_codes: meta.wrong_codes || []
   };

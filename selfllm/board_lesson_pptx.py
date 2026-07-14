@@ -69,7 +69,12 @@ def chrome(s,stage,title,page,dark=False,prompt_label=None,prompt=None):
     _,tf=box(s,0.45,7.08,4,0.3)
     para(tf,"이인혁 영어 · RAY ENGLISH",9,(RGBColor(0x6b,0x77,0x84) if dark else RGBColor(0xb9,0xb3,0xa4)),True,first=True,after=0,spc=1.4)
 
-def clip(s,n): s=str(s or ""); return s if len(s)<=n else s[:n-1]+"…"
+def wm(s):
+    s=str(s or "")
+    s=re.sub(r'\[Flow\$?\s*Edu\]\$?\s*flowedu\.tistory\.com','',s)
+    s=re.sub(r'2027\$?.*?제작용\)','',s)
+    return re.sub(r'\s+',' ',s).strip()
+def clip(s,n): s=wm(s); return s if len(s)<=n else s[:n-1]+"…"
 
 # ── 1 표지 ──
 s=newslide(NAVYD)
@@ -91,7 +96,7 @@ sz = 21 if len(P["text"])<=6 else (18 if len(P["text"])<=8 else 16)
 for i,t in enumerate(P["text"]):
     p=para(tf,"",1,INK,first=(i==0),after=8)
     setrun(p.add_run(),f"({i+1}) ",max(sz-6,12),GOLD,True,name=EN)
-    setrun(p.add_run(),t,sz,INK,name=EN); p.line_spacing=1.25
+    setrun(p.add_run(),wm(t),sz,INK,name=EN); p.line_spacing=1.25
 c,tf=rect(s,10.5,1.0,2.39,5.35,None,GRAY,1.0,nm="BOARD_AREA")
 para(tf,"판서 여백",10.5,GRAY,True,first=True,align=PP_ALIGN.CENTER)
 
@@ -111,7 +116,7 @@ for (lb,qq,ans,cl),(x,y) in zip(quads,pos):
 
 # ── 4 핵심 문장 확대 ──
 kn = int(P.get("key_sentence") or len(P["text"])); kn = min(max(kn,1),len(P["text"]))
-key_en = P["text"][kn-1]
+key_en = wm(P["text"][kn-1])
 lines = P.get("key_lines") or []
 if not lines:
     parts = re.split(r'(?<=,)\s+', key_en)
@@ -223,16 +228,35 @@ setrun(p.add_run(),"주장  ",12,GOLD,True); setrun(p.add_run(),clip(A.get("main
 
 # ── 8 실전 문제 ──
 s=newslide(IVORY); chrome(s,"QUESTION","실전 문제",f"08 / {TOTAL}",prompt="대상·범위·방향·관계·강도를 검산하라")
+def run_html(p,text,sz,color=INK):
+    ul=False
+    for tok in re.split(r'(</?u>)',str(text or "")):
+        if tok=='<u>': ul=True; continue
+        if tok=='</u>': ul=False; continue
+        if not tok: continue
+        clean=re.sub(r'<[^>]+>','',tok)
+        if clean: setrun(p.add_run(),clean,sz,(F_RED if ul else color),ul,name=EN)
 if Q:
     c,tf=rect(s,0.45,1.0,1.35,0.4,NAVY,anchor=MSO_ANCHOR.MIDDLE)
     tf.word_wrap=False; p=tf.paragraphs[0]; p.alignment=PP_ALIGN.CENTER; setrun(p.add_run(),"CORE",11,GOLDL,True,name=EN,spc=1.2)
     _,tf=box(s,1.95,0.97,10.9,0.5)
     para(tf,Q.get("stem",""),16.5,INK,True,first=True)
     c,tf=rect(s,0.45,1.62,9.7,4.75,WHITE,BORDER,1.1,nm="PASSAGE_FULL")
-    for i,o in enumerate(Q.get("choices",[])[:5]):
-        p=para(tf,"",1,INK,first=(i==0),after=12)
-        setrun(p.add_run(),CIRC[i]+"  ",15.5,INK,True,name=EN)
-        setrun(p.add_run(),str(o),15.5,INK,name=EN); p.line_spacing=1.2
+    ch=Q.get("choices",[])[:5]
+    labelish=ch and all(len(str(x).strip())<=3 for x in ch)
+    qpg=wm(Q.get("passage") or "")
+    if qpg:
+        psz = 12.5 if len(qpg)<900 else 11
+        p=para(tf,"",1,INK,first=True,after=10); p.line_spacing=1.3
+        run_html(p,qpg,psz)
+    if labelish:
+        p=tf.add_paragraph(); p.space_before=Pt(6)
+        setrun(p.add_run(),"   ".join(CIRC[i]+" "+str(o) for i,o in enumerate(ch)),14.5,INK,True,name=EN)
+    else:
+        for i,o in enumerate(ch):
+            p=para(tf,"",1,INK,first=(not qpg and i==0),after=10)
+            setrun(p.add_run(),CIRC[i]+"  ",14.5,INK,True,name=EN)
+            setrun(p.add_run(),str(o),14.5,INK,name=EN); p.line_spacing=1.2
     c,tf=rect(s,10.35,1.62,2.55,4.75,None,GRAY,1.0,nm="BOARD_AREA")
     para(tf,"검산 판서",11,GRAY,True,first=True,align=PP_ALIGN.CENTER)
 
