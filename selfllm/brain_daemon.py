@@ -108,6 +108,43 @@ def process(item):
     print(f"  · 요청 처리 {'OK' if ok else '실패'}")
     return ok
 
+# ── 매일 GPT 공동연구(하루 1개, 토큰 여유 시 추가) ──
+RESEARCH_DIR = os.path.join(HERE, "_research"); os.makedirs(RESEARCH_DIR, exist_ok=True)
+RESEARCH_AGENDA = [
+    "빈칸 문항에서 정답 상위어(패러프레이즈)와 지문 핵심어의 거리 기준",
+    "오답 매력도를 높이는 5원칙(소재재활용·복수정답위험 회피)",
+    "글의 순서 문항의 결속 신호(지시어·관사·연결어) 우선순위",
+    "어법 문항 함정 유형 분포와 수일치·분사·관계사 출제 비율",
+    "함축 의미 문항의 밑줄 선정 기준 — 은유 vs 재진술",
+    "요약문 (A)(B) 쌍의 품사 조합과 오답 설계",
+    "내용불일치 문항에서 '사실 왜곡'의 자연스러운 강도 조절",
+    "무관문장 문항 — 소재는 같고 논지만 다른 문장의 생성 공식",
+    "어휘 문항 반의어 교체 시 문맥 성립 위험(복수정답) 차단법",
+    "제목 문항 오답 4종 공식(부분소재·과잉일반화·반대방향·무관)",
+]
+def daily_research(bonus=False):
+    """GPT와 연구 1회: 주제 선정→GPT 심층 의견→핵심 정리→지식 반영. _research/에 저장."""
+    s = load_state(); idx = int(s.get("research_idx", 0)) % len(RESEARCH_AGENDA)
+    topic = RESEARCH_AGENDA[idx]
+    tag = "bonus" if bonus else "daily"
+    print(f"  · GPT 공동연구({tag}) 시작: {topic[:40]}")
+    try:
+        q = (f"너는 한국 수능·내신 영어 출제 연구자다. 주제: {topic}\n"
+             "실무에 바로 쓸 체크리스트(5~8항)와 흔한 실패사례 2개를 한국어로 간결히 정리하라.")
+        reply, prov = brain_call([{"role": "user", "content": q}], 0.5)
+        fn = os.path.join(RESEARCH_DIR, f"{today()}_{'b' if bonus else 'd'}_{idx:02d}.md")
+        io.open(fn, "w", encoding="utf-8").write(f"# {topic}\n\n({today()} · {prov} · {tag})\n\n{reply}\n")
+        s = load_state(); s["research_idx"] = idx + 1; s["research_last"] = today()
+        s["research_count"] = s.get("research_count", 0) + 1; jsave(STATE, s)
+        # 교훈으로도 요약 반영
+        try:
+            import ray_escalate; ray_escalate.learn("GPT연구", True, f"{topic[:40]} 정리 저장")
+        except Exception: pass
+        print(f"  · 연구 저장: {os.path.basename(fn)}")
+        return True
+    except Exception as e:
+        print("  · 연구 실패:", str(e)[:60]); return False
+
 # ── 수면: 매일 지식 정리(용량 축소 + 오류기억 삭제 + 압축) ──
 def sleep_consolidate():
     kb = load_kb(); before = os.path.getsize(KB) if os.path.exists(KB) else 0
@@ -150,6 +187,14 @@ def tick():
     if item:
         if paced_allow(est_tokens(item["passage"])): process(item)
         else: print("  · 예산 대기(요청 보류)"); enqueue(item["passage"], item.get("kind", "reading"))
+        return
+    # 매일 GPT 공동연구: 하루 1개 필수(9시 이후), 저녁에 예산 50%+ 남으면 보너스 1개 추가
+    if hour() >= 9 and s.get("research_last") != today() and paced_allow(3000):
+        daily_research(); return
+    if hour() >= 18 and s.get("research_last") == today() and s.get("research_bonus_last") != today() \
+       and s["tokens"] < DAILY_BUDGET * 0.5 and paced_allow(3000):
+        if daily_research(bonus=True):
+            s = load_state(); s["research_bonus_last"] = today(); jsave(STATE, s)
         return
     # 유휴: 학습으로 품질 향상(페이싱 여유 있을 때만)
     if paced_allow(2000): study(1)

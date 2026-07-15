@@ -10,7 +10,7 @@
 import sys, io, os, json, re, subprocess, time
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.expanduser(r"~/Downloads/수능특강/_RAY수업보드")
-import auto_markup, ray_llm, ray_escalate, ray_bridge
+import auto_markup, ray_llm, ray_escalate, ray_bridge, qtypes
 KB = os.path.join(HERE, "brain_knowledge.json")
 
 ROLE_COLOR = [(r"도입|정의|화제", "cyan"), (r"통념|배경|일반", "red"), (r"전환|반전|역접|대조|however", "green"),
@@ -240,7 +240,27 @@ def render(data_json, base):
 
 def make(passage, kind="reading", meta="RAY 올인원", header="RAY 수업", base="studio"):
     t0 = time.time()
-    log(f"지문 {len(passage)}자 · 종류={kind}")
+    # 유형 라우팅: kind가 연구 유형명(제목/주제/빈칸/어휘/함의…)이면 등급에 따라 경로 결정
+    qt = kind if kind in qtypes.TYPES else None
+    if qt:
+        g = qtypes.grade(qt)
+        log(f"유형 '{qt}' (등급 {g}) — {qtypes.TYPES[qt]['note']}")
+        if g == "FABLE" and qt != "어법":
+            # 어휘 등 정밀형: 페이블 브릿지로 출제 요청(어법과 동일 프로토콜)
+            rid = ray_bridge.request("author_question", {"passage": passage, "qtype": qt, "header": header},
+                instruction=f"'{qt}' 유형 문항을 출제하라. result 스키마: reading 데이터 JSON(question/choices/answer/rationale/wrong 포함) 또는 points형.")
+            fab = ray_bridge.get_response(rid)
+            if fab and fab.get("result"):
+                data = fab["result"]; data.setdefault("kind", "reading"); data.setdefault("header", header)
+                data["meta"] = meta + " · ✅페이블 출제"
+                out = render(data, base); log(f"페이블 출제 반영 완료 ({time.time()-t0:.0f}s)"); return out
+            log(f"'{qt}' 페이블 요청 접수(rid={rid}) — 이 챗에서 출제 후 재실행 시 확정")
+        kind = "grammar" if qt == "어법" else "reading"
+    log(f"지문 {len(passage)}자 · 종류={kind}" + (f" · 유형={qt}" if qt else ""))
+    global BRAIN_PROMPT
+    if qt and kind == "reading":
+        BRAIN_PROMPT = BRAIN_PROMPT.replace('"type":"제목|주제|요지|빈칸"', f'"type":"{qt}"').replace(
+            '"stem":"발문(한글)"', f'"stem":"{qtypes.stem(qt)}"')
     try:
         if kind == "grammar":
             # 1) 무료 자동: 생성 → 검증 → 실패 시 재생성 (검증은 실측상 신뢰성 있음: 가짜오류 거부/진짜오류 통과)
