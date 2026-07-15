@@ -266,9 +266,18 @@ def make(passage, kind="reading", meta="RAY 올인원", header="RAY 수업", bas
                 fab = ray_bridge.get_response(rid)
                 if fab and fab.get("result"):
                     r = fab["result"]; aw = str(r.get("answer_word", "")).strip()
-                    brain = {"grammar_points": [{"word": aw, "label": r.get("label", ""), "is_answer": True,
-                                                 "error_form": r.get("error_form"), "why": r.get("why", "")}],
-                             "glosses": {}, "explanation_core": r.get("explanation", ""), "hook": {}, "flow": [], "vocab": []}
+                    if r.get("points"):   # 페이블이 5포인트 전체를 출제한 경우(권장)
+                        pts5 = r["points"]
+                        for p in pts5:
+                            p["is_answer"] = bool(p.get("is_answer")) or (str(p.get("word", "")).strip() == aw)
+                            if p["is_answer"]: p["error_form"] = r.get("error_form") or p.get("error_form")
+                        brain = {"grammar_points": pts5, "glosses": r.get("glosses", {}),
+                                 "explanation_core": r.get("explanation", ""), "hook": r.get("hook", {}),
+                                 "flow": r.get("flow", []), "vocab": r.get("vocab", [])}
+                    else:
+                        brain = {"grammar_points": [{"word": aw, "label": r.get("label", ""), "is_answer": True,
+                                                     "error_form": r.get("error_form"), "why": r.get("why", "")}],
+                                 "glosses": {}, "explanation_core": r.get("explanation", ""), "hook": {}, "flow": [], "vocab": []}
                     data = build_grammar_json(passage, meta, header, brain)
                     data["meta"] = meta + " · ✅페이블 검수완료"
                     log(f"페이블 응답 반영 → 최종 확정 (정답 {data.get('answer')})")
