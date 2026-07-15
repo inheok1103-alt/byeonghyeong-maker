@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-15T11:53:04.964Z",
+ "updated": "2026-07-15T14:16:04.784Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-15T14:15:30.626Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사 오류(verity→variety, sosiety→society, arguement→argument)가 빈번하며, 문법적 오류가 아닌 어휘 선택 오류가 다수 관찰된다. 또한 시제 혼동(present perfect vs. simple past)도 두드러진다.",
+   "rule": "CEFR B1-B2 수준의 내신 문항에서는 '명사/동사/형용사의 철자 오류'와 '시제 혼동(present perfect vs. simple past)'을 의도적으로 삽입하여 오답 선지를 구성하라. 특히 '-ity'로 끝나는 추상명사(verity→variety)와 '-ment'로 끝나는 명사(arugment→argument), '-ce'로 끝나는 명사(sosiety→society)를 집중적으로 변형하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-15T11:52:40.983Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사구(NP) 내 명사의 수 일치 오류가 빈발하며, 전치사(介詞) 사용(affect → affects, use in → use for)도 부정확한 경우가 많다. 또한 동사의 시제(present tense vs. past tense) 혼동이 자주 발생한다.",
    "rule": "'명사구(NP)에서 복수형 명사 뒤에는 복수 동사(present tense) 또는 과거형 동사(past tense)를 일치시켜야 하며, 전치사(in/of/used)는 문맥에 맞게 'for/as/in the making of' 등으로 교정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-10T08:10:51.131Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스에서 'that' 생략 오류와 부사 위치 오류가 빈번하며, 특히 'say' 동사 뒤의 명사절에서 'that' 생략이 두드러진다. 또한 'in today's world'와 같은 연어 패턴이 문법적 정확성을 요구함을 확인할 수 있다.",
-   "rule": "'say', 'think', 'believe' 등 보고·사고 동사 뒤의 명사절에서는 'that'을 생략하지 않도록 하며, 부사(very soon 등)는 조동사(will) 뒤에 위치하도록 문장 구조를 점검하라.",
    "sample": [
     "old english",
     "university press",

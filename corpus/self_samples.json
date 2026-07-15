@@ -1,6 +1,93 @@
 {
- "updated": "2026-07-15T11:53:04.968Z",
+ "updated": "2026-07-15T14:16:04.788Z",
  "samples": [
+  {
+   "ts": "2026-07-15T14:13:49.141Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Government transformation leads to colonists' loss of autonomy",
+     "Colonists' limited freedom in government decision-making",
+     "All societies inevitably lose autonomy in government changes",
+     "Colonists always lose autonomy in every government transformation",
+     "Colonists' loss of autonomy in government transformation"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The necessity of altering the former systems of government constrains the colonists to take action, stripping them of free will and investing agency in higher forces that coerce them to act.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 학생은 지문에서 'colonists of any free will of their own'라는 문구를 전체적인 맥락과는 별개로 해석하여 정부 변이 필연적으로 자율성을 잃게 만든다는 잘못된 결론을 내렸습니다. → 처방: 학생은 지문에서 사용된 문구를 전체적인 맥락과 함께 분석하여 올바른 의미를 파악해야 합니다.\n② 진단: 학생은 지문에서 언급된 'necessity'와 'causes'를 정부 결정에 대한 일반적인 제한으로 오해하여 식민지 자유 의지의 제한을 일반화했습니다. → 처방: 학생은 지문에서 사용된 단어와 문구를 그들의 실제 의미와 맥락에 따라 해석해야 합니다.\n③ 진단: 학생은 지문에서 언급된 내용을 모든 사회와 정부 변에 일반화하여 잘못된 결론을 내렸습니다. → 처방: 학생은 지문에서 언급된 내용을 해당 지문에서 다루고 있는 특정 상황과 맥락에 따라 해석해야 합니다.\n④ 진단: 학생은 지문에서 언급된 내용을 모든 경우에 대한 일반적인 진리라고 오해하여 잘못된 결론을 내렸습니다. → 처방: 학생은 지문에서 언급된 내용을 해당 지문에서 다루고 있는 특정 상황과 맥락에 따라 해석하고, 일반화에 대한 근거를 명확히 확인해야 합니다.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The necessity of altering the former systems of government constrains the colonists to take action, stripping them of free will and investing agency in higher forces that coerce them to act.]"
+   }
+  },
+  {
+   "ts": "2026-07-15T14:15:03.816Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "constrains them to alter their former Systems of government.\n\n(A) ✓ We now must alter our former Systems of government.\n\n(B) One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked. What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]\n\n(C) Instead of writing as clearly and directly as he did in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a style so indirect and impersonal?",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 1,
+    "explanation": "원문 전개 순서는 (A) - (C) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ‘(B)’가 지문의 첫 부분(‘constrains them to alter...’)과 직접 연결된다고 오해했거나, ‘(A)’가 ‘Systems’를 ‘Systems of government’로 이어지는 문맥이라고 착각했을 수 있음. ‘(B)’는 지문 뒷부분의 분석으로, 문단의 시작이 아님. → 처방: 문단의 시작은 ‘constrains them...’이므로 ‘(B)’가 먼저 오면 안 된다는 점을 기억할 것. 문단의 흐름을 먼저 확인할 것.\n③ 진단: ‘(B)’와 ‘(C)’를 문단의 앞뒤로 연결하려고 했지만, ‘(C)’는 ‘(B)’의 분석을 이어가야 하는 부분으로, ‘(A)’가 그다음에 오는 구조를 놓쳤음. ‘(A)’가 문단의 결론이나 예시로 이어질 수 있음을 고려하지 않음. → 처방: 문단의 구조를 ‘원인(제퍼슨의 스타일) → 분석(제퍼슨의 의도) → 결과(제한된 선택)’으로 나눠서 읽을 것. 각 문단이 어떤 역할을 하는지 확인할 것.\n④ 진단: ‘(C)’가 문단의 시작이라고 오해했을 수 있음. ‘(C)’는 ‘왜 제퍼슨이 Part 1에서 그런 스타일을 썼는가?’라는 의문으로 시작하는데, 지문은 이미 ‘constrains them...’으로 시작하므로 ‘(C)’가 먼저 오면 안 됨. → 처방: 지문의 첫 문장이 문단의 주제임을 확인하고, 의문형 문장은 분석이나 반전의 시작임을 기억할 것.\n⑤ 진단: ‘(C)’가 문단의 시작이라고 생각했을 가능성이 높음. ‘(A)’는 문단의 예시로, ‘(B)’는 분석으로, ‘(C)’는 의문형으로 문단의 흐름이 맞지 않음. ‘(C)’는 문단의 끝 부분에서 나올 수 있는 의문형 문장임을 놓침. → 처방: 문단의 흐름을 ‘주장(제한) → 예시(제퍼슨의 문체) → 분석(제퍼슨의 의도) → 의문(왜 그런 스타일을 썼나?)’으로 정리해서 읽을 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-15T14:15:28.187Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "Necessity . . . ⓐ<u>constrains him</u> to ⓑ<u>alter their former Systems</u> of government. ✓ We now must alter our former Systems of government. Instead of writing ⓒ<u>as clearly and directly as he did</u> in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a style so indirect and impersonal? One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that ⓓ<u>needed more justification</u> than the colonists’ mere desire to throw off a government they disliked. What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that ⓔ<u>coerce the colonists to act</u>: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓐ: 'constrains him' → 'constrains them' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-15T11:51:50.364Z",
    "type": "요지",
@@ -231,108 +318,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] sense — 문단의 논지상 이 자리에는 'sense'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-15T00:09:14.919Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 3건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "causative constructions with 'have' and 'get' in english",
-     "passive causative sentences using 'have' in english grammar",
-     "verbs that require causative meaning to express actions in english",
-     "limited use of 'have' and 'get' for actions in english sentences",
-     "rules for forming causative sentences in simple tenses"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Causative constructions using 'have/get' in English'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 지문에서 'have'와 'get'을 모두 다루고 있지만, 'passive causative sentences using have'만으로 한정지으려 함. 'get'의 역할이 빠져 있음. → 처방: 'have'뿐 아니라 'get'도 포함된 전체 구조를 보도록 연습하기.\n③ 진단: causative meaning 을 가진 동사 자체에 집중하여 'have'와 'get'의 역할과 쓰임을 혼동함. 지문은 'have/get + something + pp' 구조를 설명하고 있음. → 처방: 동사가 아니라 '구조'에 주목하여 'have/get + 목적어 + 과거분사' 형태를 확인하기.\n④ 진단: 'have'와 'get'의 사용이 'limited(제한적)'이라고 오해. 지문은 두 동사의 사용 범위가 넓고 유사하다는 점을 강조함. → 처방: 지문에서 'more informal than have'와 같은 비교를 보며 두 동사의 사용 범위를 넓게 이해하기.\n⑤ 진단: 단순시제에만 국한된 규칙으로 오인. 지문은 단순시제뿐 아니라 완료형, 진행형 등 다양한 시제에서 사용 가능함을 예시로 들음. → 처방: 지문의 예문들을 보며 '단순시제'에만 얽매이지 말고 다양한 시제에서 'have/get + pp' 구조가 쓰이는지 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Causative constructions using ]"
-   }
-  },
-  {
-   "ts": "2026-07-14T23:15:51.277Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 2건 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "justification of construction nesting by individual construction autonomy",
-     "autonomy of constructions as a result of their nesting",
-     "justification for complex constructions in construction grammar",
-     "universal justification of grammatical nesting through autonomy",
-     "justification of construction nesting irrespective of autonomy"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The nesting of constructions in construction grammar is justified by the autonomy of individual constructions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘autonomy of constructions’는 ‘nesting’의 결과가 아니라, ‘nesting’이 정당화되는 근거로 지문에서 설명됨. ‘as a result’를 오독해 ‘결과’로 혼동한 듯. → 처방: ‘as a result’를 ‘~의 결과로’의 뜻이 아니라 ‘~의 근거로’로 바꿔 읽고, 지문에서 ‘autonomy’이 ‘justification’의 대상임을 확인하기.\n③ 진단: ‘complex constructions’의 존재 자체는 지문에서 이미 전제되어 있고, ‘justification’이 주제임. ‘complex constructions’의 ‘존재’와 ‘정당화’를 혼동한 듯. → 처방: ‘justification’이 ‘why complex constructions exist’를 묻는 것이 아니라 ‘how their nesting is justified’를 묻는다는 점을 분명히 하고, 주제를 ‘정당화’의 관점에서 다시 읽기.\n④ 진단: ‘universal justification’이란 말이 지문에 없음. ‘universal’이란 단어를 오독해 ‘모든 경우’를 포함하는 것으로 과장해 해석한 듯. → 처방: ‘universal’이란 말이 없음을 확인하고, 지문에서 ‘Radical Construction Grammar’의 ‘특정한’ giustification 에 주목하기.\n⑤ 진단: ‘irrespective of autonomy’(autonomy 과 무관하게)는 지문에서 ‘autonomy’이 ‘justification’의 핵심 조건임을 오독한 듯. → 처방: ‘irrespective’라는 말이 ‘~와 상관없이’를 뜻함을 확인하고, 지문에서 ‘autonomy’이 ‘justification’의 필수 조건임을 다시 읽기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The nesting of constructions in construction grammar is justified by the autonomy of individual constructions.]"
-   }
-  },
-  {
-   "ts": "2026-07-14T23:16:44.655Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "구성문법은 복합 구성물이 다른 구성물의 역할을 대신할 수 있도록 구성물의 자율성을 제한하는 방식으로만 설명해야 한다",
-     "구성문법에서 복합 구성물은 상대방의 역할을 대신할 수 있지만, 그 자율성은 상대방의 구성에만 제한된다",
-     "모든 문법 이론은 구성물의 자율성에 따라 복합 구성물이 역할을 대신할 수 있도록 허용해야 한다",
-     "구성문법은 복합 구성물이 다른 구성물의 역할을 반드시 대신하도록 강제해야 한다",
-     "구성문법은 각 구성의 자율성에 기초하여 복합 구성물이 다른 복합 구성물의 역할을 대신할 수 있도록 허용해야 한다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Construction grammars allow complex constructions to fill roles within other complex constructions, with their nesting justified by the autonomy of each construction.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘구성물의 자율성을 제한하는 방식으로만 설명해야 한다’는 말은 지문의 ‘자율성은 상대방 구성에만 제한되지 않는다’는 내용과 반대됩니다. 학생은 ‘자율성’과 ‘제한’의 관계를 반대로 오해했습니다. → 처방: ‘자율성’이란 구성물이 독립적으로 존재할 수 있는지를 뜻한다는 점을 기억하고, 지문에서 ‘자율성’이 ‘독립성’을 가리킨다는 점을 다시 확인하세요.\n② 진단: ‘상대방의 구성에만 제한된다’는 말은 지문의 ‘자율성은 상대방 구성에만 의존하지 않는다’는 내용을 잘못 이해한 것입니다. 학생은 ‘자율성’이 ‘의존성’으로 오인했습니다. → 처방: ‘자율성’이란 구성물이 스스로의 규칙을 가진다는 뜻임을 떠올리고, 지문에서 ‘자율성’이 ‘독립된 구성’을 가리킨다는 점을 다시 읽어보세요.\n③ 진단: ‘모든 문법 이론’이란 말이 지문에 없습니다. 학생은 ‘구성문법’만을 ‘모든 문법’으로 일반화한 오류를 범했습니다. → 처방: ‘구성문법’과 ‘다른 문법 이론’을 구분해서 읽고, 지문에 언급된 이론만으로 답을 좁혀가세요.\n④ 진단: ‘반드시 강제해야 한다’는 말은 지문의 ‘허용해야 한다’는 느슨한 표현과 반대됩니다. 학생은 ‘강제’와 ‘허용’을 혼동했습니다. → 처방: ‘허용’이라는 단어가 ‘강제’가 아니라 ‘선택적’이라는 뜻임을 기억하고, 지문의 ‘허용’ 표현을 다시 확인하세요.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Construction grammars allow complex constructions to fill roles within other complex constructions, with their nesting justified by the autonomy of each construction.]"
    }
   }
  ]
