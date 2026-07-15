@@ -1,6 +1,44 @@
 {
- "updated": "2026-07-15T03:39:24.926Z",
+ "updated": "2026-07-15T06:30:40.312Z",
  "samples": [
+  {
+   "ts": "2026-07-15T06:29:38.879Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: c)\n[영영풀이] The ability to use imagination to produce a novel idea or product that is useful to society.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] creativity (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-15T06:30:09.928Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: c)\n[영영풀이] The ability to use imagination to produce a novel idea or product that is useful to society.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] creativity (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-15T03:38:42.636Z",
    "type": "전체문장배열",
@@ -296,58 +334,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 어떤 작가들은 문법가만이 설명할 수 있는 오류가 전혀 없을 때에만 글쓰기가 훌륭하다는 생각에 사로잡혀서, 세련되지 못한 문체를 써내려갑니다. (구문 포인트: 관계사절(that only a grammarian can explain) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-14T17:35:45.169Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "소유 대명사와 소유 형용사의 구별 기준을 설명하려고",
-     "형용사적 소유격을 설명하려고",
-     "소유 대명사를 형용사적 소유격으로 잘못 쓰는 오류를 지적하려고",
-     "소유 대명사와 소유 형용사의 혼동 사례를하려고",
-     "소유 대명사와 소유 형용사의 사용 범위를 한정하려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'To clarify the distinction between adjectival and pronominal possessive pronouns.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 형용사적 소유격이란 말이 나오자 '형용사적 소유격'이라는 용어에만 집중해 소유 대명사와 소유 형용사의 구별 기준을 놓쳤다. 지문은 소유 대명사와 소유 형용사의 '기능'과 '형태'를 구분해 설명하는데, 이 부분을 오해했다. → 처방: 형용사적 소유격이란 말이 나오면 그 용어에만 매달리지 말고, 지문이 '기능'과 '형태'를 어떻게 설명하는지 다시 한 번 읽고 비교해보기.\n③ 진단: 소유 대명사와 소유 형용사의 '혼동 사례'가 아니라 '구별 기준'을 설명하는 글임을 파악하지 못했다. 지문은 'my'와 'mine'의 기능 차이를 예로 들며 '구분 기준'을 설명하는데, 이 부분을 '혼동 사례'로 오해했다. → 처방: 글의 목적을 찾을 때는 '무엇을 설명하려고 하는지'를 먼저 찾기. '구분 기준'과 '혼동 사례'는 다르다는 점을 기억하기.\n④ 진단: 혼동 사례를 설명하는 것이 아니라 '구별 기준'을 설명하는 글임을 이해하지 못했다. 지문은 'my'와 'mine'의 기능 차이를 설명하며 '구분 기준'을 제시하는데, 이 부분을 '혼동 사례'로 잘못 해석했다. → 처방: 글의 목적을 찾을 때는 '무엇을 설명하려고 하는지'를 먼저 찾기. '구분 기준'과 '혼동 사례'는 다르다는 점을 기억하기.\n⑤ 진단: 사용 범위를 한정하려고 한 것이 아니라 '구별 기준'을 설명하려고 한 글임을 파악하지 못했다. 지문은 'my'와 'mine'의 기능 차이를 설명하며 '구분 기준'을 제시하는데, 이 부분을 '사용 범위'로 오해했다. → 처방: 글의 목적을 찾을 때는 '무엇을 설명하려고 하는지'를 먼저 찾기. '구분 기준'과 '사용 범위'는 다르다는 점을 기억하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To clarify the distinction between adjectival and pronominal possessive pronouns.]"
-   }
-  },
-  {
-   "ts": "2026-07-14T17:36:59.745Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '관계사' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 관계사를 사용하여 한 문장으로 바꿔 쓰시오.\n[원문] Determiners 41 My father’s sister was born in India.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The sister who was born in India is my father’s sister. (포인트: 관계사절로 전환하여 'my father’s sister'를 'the sister who was born in India'로 재구성)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
