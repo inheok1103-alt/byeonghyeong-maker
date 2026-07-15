@@ -1,6 +1,39 @@
 {
- "updated": "2026-07-14T23:17:31.820Z",
+ "updated": "2026-07-15T00:13:09.635Z",
  "samples": [
+  {
+   "ts": "2026-07-15T00:09:14.919Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 3건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "causative constructions with 'have' and 'get' in english",
+     "passive causative sentences using 'have' in english grammar",
+     "verbs that require causative meaning to express actions in english",
+     "limited use of 'have' and 'get' for actions in english sentences",
+     "rules for forming causative sentences in simple tenses"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Causative constructions using 'have/get' in English'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 지문에서 'have'와 'get'을 모두 다루고 있지만, 'passive causative sentences using have'만으로 한정지으려 함. 'get'의 역할이 빠져 있음. → 처방: 'have'뿐 아니라 'get'도 포함된 전체 구조를 보도록 연습하기.\n③ 진단: causative meaning 을 가진 동사 자체에 집중하여 'have'와 'get'의 역할과 쓰임을 혼동함. 지문은 'have/get + something + pp' 구조를 설명하고 있음. → 처방: 동사가 아니라 '구조'에 주목하여 'have/get + 목적어 + 과거분사' 형태를 확인하기.\n④ 진단: 'have'와 'get'의 사용이 'limited(제한적)'이라고 오해. 지문은 두 동사의 사용 범위가 넓고 유사하다는 점을 강조함. → 처방: 지문에서 'more informal than have'와 같은 비교를 보며 두 동사의 사용 범위를 넓게 이해하기.\n⑤ 진단: 단순시제에만 국한된 규칙으로 오인. 지문은 단순시제뿐 아니라 완료형, 진행형 등 다양한 시제에서 사용 가능함을 예시로 들음. → 처방: 지문의 예문들을 보며 '단순시제'에만 얽매이지 말고 다양한 시제에서 'have/get + pp' 구조가 쓰이는지 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Causative constructions using ]"
+   }
+  },
   {
    "ts": "2026-07-14T23:15:51.277Z",
    "type": "주제",
@@ -323,25 +356,6 @@
     ],
     "answer": 2,
     "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-14T11:47:50.467Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what. The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think what that she is hiding what. This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. The TP thereby formed is merged with a null C c__________ ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think what that she is hiding what. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation):",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] constituent — 문단의 논지상 이 자리에는 'constituent'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

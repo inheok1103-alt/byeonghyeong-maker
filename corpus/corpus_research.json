@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-14T23:17:31.816Z",
+ "updated": "2026-07-15T00:13:09.630Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-15T00:12:45.213Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'명사 + 동사 + 관사/소유격' 구조에서 관사/소유격이 생략된 오류가 빈번하며, 특히 'a/the + 명사' 패턴이 '명사' 단독으로 잘못 사용되는 경우가 많다. 또한 문장 내 동사 시제 불일치와 콤마 오용이 연어 오류와 결합되어 나타난다.",
+   "rule": "'need + a/the + 명사' 구조에서 관사를 생략하거나 'a'를 무분별하게 삽입하는 오류를 유도하라. 예를 들어, 'students need knowledge'를 'students need a knowledge'로 오답지 항목으로 제시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-14T23:17:00.650Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "모범답안의 일반적 구조가 명확하다. 대상 문장에만 일반법을 적용해야 한다.",
    "rule": "모범답안의 일반법을 단순히 'That 's why I will not be as hard as when I am alone .'으로만 적용해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-09T20:11:18.856Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "연결어가 원문 전개를 구체화하여 문장의 논지가 명확해진다.",
-   "rule": "연어를 유일한 매개어로만 활용할 것",
    "sample": [
     "old english",
     "university press",
