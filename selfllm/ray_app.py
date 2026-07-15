@@ -3,7 +3,7 @@
 한 대시보드에서 전 도구: 문제제작·분석지·워크북·AI메이커 + 수업PPT/학생용 + 24h 뇌·검수함.
 로컬 서버가 기존 브라우저 도구(exam/sheet/workbook/ai_maker...)까지 함께 서빙 → 진짜 올인원.
 실행: python ray_app.py  (또는 RAY_제작기.bat 더블클릭) → http://127.0.0.1:8777 자동 열림."""
-import sys, io, os, json, threading, webbrowser, subprocess, time, urllib.parse
+import sys, io, os, json, threading, webbrowser, subprocess, time, urllib.parse, urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 HERE = os.path.dirname(os.path.abspath(__file__))
 WEBROOT = os.path.dirname(HERE)   # 기존 HTML 도구들이 있는 web/ 루트
@@ -67,6 +67,28 @@ button.go{background:var(--gold);color:#14151a;font-weight:700;border:0}button:h
   <div id=status></div>
 </div>
 <div class=sub>페이블(이 챗) 연동: 어법이 무료로 안 풀리면 <b>_fable/requests</b>에 요청 → VS Code의 Claude(페이블)가 검수 → 자동 확정.</div>
+
+<h3>AI 대화 (GPT 자유 호출 · 무료)</h3>
+<div class=card>
+  <div id=chat style="max-height:260px;overflow:auto;font-size:13.5px;line-height:1.5"></div>
+  <div class=row>
+    <input id=cin placeholder="GPT에게 무엇이든 물어보세요 (출제 아이디어·검수·번역·해설...)" style="flex:1;background:var(--pan2);color:var(--ink);border:1px solid var(--ln);border-radius:8px;padding:10px 12px;font-size:14px" onkeydown="if(event.key==='Enter')chat()">
+    <button class=go onclick=chat()>보내기</button>
+    <button onclick="CH=[];document.getElementById('chat').innerHTML=''">초기화</button>
+  </div>
+  <div class=sub style="margin-top:6px">모델: GPT(gpt-oss, 무료 pollinations) · Claude(페이블)는 VS Code의 이 챗에서 직접 대화하세요.</div>
+</div>
+<script>
+let CH=[];
+async function chat(){const i=document.getElementById('cin');const q=i.value.trim();if(!q)return;i.value='';
+ CH.push({role:'user',content:q});render();CH.push({role:'assistant',content:'…'});render();
+ try{const r=await fetch('/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:CH.slice(0,-1)})});
+  const d=await r.json();CH[CH.length-1]={role:'assistant',content:d.reply||('오류: '+(d.error||'응답 없음'))};}
+ catch(e){CH[CH.length-1]={role:'assistant',content:'오류: '+e};}render();}
+function render(){document.getElementById('chat').innerHTML=CH.map(m=>
+  `<div style="margin:7px 0"><b style="color:${m.role==='user'?'#d8b968':'#6fe39a'}">${m.role==='user'?'나':'GPT'}</b> ${(m.content||'').replace(/</g,'&lt;').replace(/\n/g,'<br>')}</div>`).join('');
+  const c=document.getElementById('chat');c.scrollTop=c.scrollHeight;}
+</script>
 <script>
 const L=document.getElementById('log');function log(t){L.textContent=t;}
 async function make(){const p=document.getElementById('psg').value.trim();if(!p){log('지문을 넣어주세요');return;}
@@ -131,6 +153,14 @@ class H(BaseHTTPRequestHandler):
             out = _py("ray_studio.py", "text", d.get("passage", ""), d.get("kind", "reading"), base)
             tail = "\n".join([l for l in out.splitlines() if "·" in l or "SAVED" in l][-9:])
             return self._send(200, json.dumps({"log": tail or out[-500:]}, ensure_ascii=False))
+        if self.path == "/chat":
+            d = json.loads(raw or "{}"); msgs = d.get("messages", [])
+            try:
+                import ray_llm
+                reply, prov = ray_llm.ask(msgs, temperature=0.6, timeout=60)   # 무료 체인(proxy→pollinations gpt-oss)
+                return self._send(200, json.dumps({"reply": reply, "provider": prov}, ensure_ascii=False))
+            except Exception as e:
+                return self._send(200, json.dumps({"error": str(e)[:120]}, ensure_ascii=False))
         return self._send(404, "{}")
 
 def free_port(start):
