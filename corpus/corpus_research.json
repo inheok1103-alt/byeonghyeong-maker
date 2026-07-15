@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-15T17:43:22.233Z",
+ "updated": "2026-07-15T19:39:05.658Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-15T19:38:37.151Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'old english', 'middle english' 등 역사적 언어 변천 패턴이 'present/past tense'의 혼용 오류로 이어질 가능성이 높음을 확인. 또한 'between two' 구조가 'between A and B'로 표준화되지 않은 경우 오류 발생.",
+   "rule": "원서 코퍼스 기반 'tense consistency'와 'prepositional phrase 구조'를 엄격히 적용하여, 'present/past tense 혼용'과 'between A B' → 'between A and B'로 변형하는 문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-15T17:42:55.692Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "복수형 명사('points of views')가 단수형 명사구('point of view')로 교정되는 패턴은 '복수형 오류 → 단수형 정답'으로 일반화할 수 있으며, 이는 언어학적으로 '단수 개념의 복수 표현 오류'로 설명된다.",
    "rule": "CEFR B1/B2 수준 내신에서 '복수형 명사구' 오류(예: 'points of views')를 '단수형 명사구'로 정정하는 문제를 출제할 때에는, 'of'를 포함하는 명사구(예: 'point of view')가 단수 개념을 지칭함을 강조하는 문맥(예: 'a concept', 'a flexibility')에서 오류를 발생시킨다는 규칙을 적용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-10T17:15:47.580Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "모범답안의 연결 단서가 원문과만 다르다. 예시 문장에만 적용해야 한다.",
-   "rule": "모범답안의 단어·구문만 변경하여 다른 예시 문장에 적용해야 한다.",
    "sample": [
     "old english",
     "university press",

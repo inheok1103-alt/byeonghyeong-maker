@@ -1,6 +1,40 @@
 {
- "updated": "2026-07-15T17:43:22.237Z",
+ "updated": "2026-07-15T19:39:05.663Z",
  "samples": [
+  {
+   "ts": "2026-07-15T19:38:24.738Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "(A) [connotative / Denotative] (B) [meaning / nonsense] 6.1 If we had to think of a list of features or criteria that defined both the words woman and lady, one might suggest that they include being human, female and adult. A definition based on these lines would be the DENOTATIVE MEANING of the two words. But there must be more to meaning than this, since we know that there is a difference between these two words – we know they can be used to mean different things. Consider these words placed in the context of the sentences below. She’s only thirteen, but she’s a woman already She’s only thirteen, but she’s a lady already (C) [Connotations / denotations] What differences in meaning – what different associations or CONNOTATIONS – do the words have? One way in which dictionaries try to give us clues about usage is by providing quotations where the word is used. However, even the dictionaries that do contain quotations cannot, for practical reasons, contain every usage of a word. It becomes a matter of selection and",
+    "choices": [
+     "(A) connotative - (B) nonsense - (C) Connotations",
+     "(A) connotative - (B) meaning - (C) Connotations",
+     "(A) Denotative - (B) nonsense - (C) Connotations",
+     "(A) Denotative - (B) nonsense - (C) denotations",
+     "(A) Denotative - (B) meaning - (C) Connotations"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) Denotative - (B) meaning - (C) Connotations. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 ‘connotative’를 선택했는데, 지문 6.1에서 ‘denotative meaning’이라는 문구가 나오므로 ‘denotative’를 골라야 한다. ‘(B)’에서 ‘nonsense’를 선택했는데, ‘meaning’이 있어야 문맥이 자연스럽다(‘meaning’이 있어야 ‘의미가 있다’는 말이 된다). ‘(C)’는 ‘Connotations’가 맞으나, ‘connotative’를 잘못 골라서 오답을 냈다. → 처방: ‘denotative’와 ‘meaning’의 뜻을 정확히 기억하고, 지문에서 ‘denotative meaning’이라는 단서가 나오면 ‘denotative’를, ‘의미’를 강조하는 부분에서는 ‘meaning’을 고르는 연습을 해라.\n② 진단: ‘(A)’에서 ‘connotative’를 선택했는데, 지문 6.1의 ‘DENOTATIVE MEANING’이라는 문구와 ‘정의’라는 단서를 보고도 ‘connotative’를 떠올렸다. ‘(B)’에서 ‘nonsense’를 선택했는데, ‘meaning’이 있어야 문맥이 맞다. ‘(C)’는 ‘Connotations’가 맞으나, ‘connotative’를 잘못 골라서 틀렸다. → 처방: ‘denotative’는 ‘사전적 의미’, ‘connotative’는 ‘함축적 의미’라는 뜻을 기억하고, 지문에서 ‘정의’를 언급하면 ‘denotative’를, ‘연상되는 의미’를 언급하면 ‘connotative’를 떠올려라.\n③ 진단: ‘(A)’에서 ‘Denotative’를 선택했는데, 지문 6.1의 ‘DENOTATIVE MEANING’이라는 문구는 맞지만, ‘(B)’에서 ‘nonsense’를 선택해 오답을 냈다. ‘meaning’이 있어야 문맥이 자연스럽다. ‘(C)’는 ‘Connotations’가 맞으나, ‘denotative’를 잘못 골라서 틀렸다. → 처방: ‘meaning’이 ‘의미’를 뜻한다는 점을 기억하고, 지문에서 ‘의미’를 강조하는 부분에서는 ‘meaning’을, ‘정의’를 강조하는 부분에서는 ‘denotative’를 고르는 연습을 해라.\n④ 진단: ‘(A)’에서 ‘Denotative’를 선택했는데, 지문 6.1의 ‘DENOTATIVE MEANING’이라는 문구는 맞지만, ‘(B)’에서 ‘nonsense’를 선택해 오답을 냈다. ‘meaning’이 있어야 문맥이 맞다. ‘(C)’에서 ‘denotations’를 선택했는데, 지문에서 ‘associations’라는 단서가 나오므로 ‘Connotations’를 골라야 한다. → 처방: ‘denotations’는 ‘사전적 의미’, ‘connotations’는 ‘함축적 의미’라는 뜻을 기억하고, 지문에서 ‘연상되는 의미’를 언급하면 ‘Connotations’를 떠올려라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-15T17:40:51.811Z",
    "type": "요지",
@@ -316,25 +350,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] examined — 문단의 논지상 이 자리에는 'examined'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-15T06:29:38.879Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: c)\n[영영풀이] The ability to use imagination to produce a novel idea or product that is useful to society.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] creativity (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
