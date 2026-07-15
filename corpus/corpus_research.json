@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-15T19:39:05.658Z",
+ "updated": "2026-07-15T21:18:09.790Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-15T21:17:45.171Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'focus on', 'consider', 'such a' 등 전치사·관사 오류가 빈번하며, 문장 내 논리 연결(예: therefore → and)도 오류로 자주 발생한다. 특히 전치사+명사 결합(over the weekend, on three points)이 정확하지 않은 경우가 많다.",
+   "rule": "'focus on', 'consider', 'such a' 등 전치사·관사 결합은 항상 올바른 형태로 출제(예: 'focus on', 'consider ~ing', 'such a situation')하며, 문장 내 논리 연결은 'and', 'but' 등으로 대체 가능한지 확인하는 오류 유형을 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-15T19:38:37.151Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'all'과 같은 한정사(determiner)가 'good to people' 같은 형용사구와 결합할 때, 'all'의 위치가 문법적 제약을 받는다. 또한 'have a trip'과 'take a trip'처럼 동사의 선택이 연어(collocation)에 의해 제약된다.",
    "rule": "'all'을 포함하는 한정사구에서 'all'은 명사구(NP) 내의 한정사(determiner)나 형용사(adjective) 앞에 위치해야 하며, 'have/take a trip'은 'take a trip'으로만 사용해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-10T18:47:46.158Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "복수형 명사('points of views')가 단수형 명사구('point of view')로 교정되는 패턴은 '복수형 오류 → 단수형 정답'으로 일반화할 수 있으며, 이는 언어학적으로 '단수 개념의 복수 표현 오류'로 설명된다.",
-   "rule": "CEFR B1/B2 수준 내신에서 '복수형 명사구' 오류(예: 'points of views')를 '단수형 명사구'로 정정하는 문제를 출제할 때에는, 'of'를 포함하는 명사구(예: 'point of view')가 단수 개념을 지칭함을 강조하는 문맥(예: 'a concept', 'a flexibility')에서 오류를 발생시킨다는 규칙을 적용하라.",
    "sample": [
     "old english",
     "university press",
