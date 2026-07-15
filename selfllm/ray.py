@@ -43,6 +43,11 @@ if __name__ == "__main__":
     a = sys.argv[1:] or ["status"]
     c = a[0]
     if c == "make": run("ray_studio.py", "text", a[1], a[2] if len(a) > 2 else "reading")
+    elif c == "file":   # PDF·DOCX·PPTX·HWP·PNG/JPG 파일에서 지문 추출 후 자동제작
+        import ray_ingest
+        txt = ray_ingest.ingest(a[1]); psg = ray_ingest.extract_english_passage(txt)
+        print(f"  · 파일 추출 {len(txt)}자 → 영어 지문 {len(psg)}자")
+        run("ray_studio.py", "text", psg, a[2] if len(a) > 2 else "reading", "file")
     elif c == "chapter": run("ray_studio.py", "chapter", *a[1:])
     elif c == "brain": run("brain_daemon.py", *(a[1:] or ["once"]))
     elif c == "enqueue": run("brain_daemon.py", "enqueue", a[1])

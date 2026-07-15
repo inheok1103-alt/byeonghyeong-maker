@@ -133,10 +133,20 @@ class H(BaseHTTPRequestHandler):
             return self._send(200, json.dumps({"log": tail or out[-500:]}, ensure_ascii=False))
         return self._send(404, "{}")
 
+def free_port(start):
+    import socket
+    for p in range(start, start + 30):
+        with socket.socket() as s:
+            try: s.bind(("127.0.0.1", p)); return p
+            except OSError: continue
+    return start
+
 def main():
-    srv = ThreadingHTTPServer(("127.0.0.1", PORT), H)
-    print(f"RAY 올인원 제작기 실행 → http://127.0.0.1:{PORT}  (종료 Ctrl+C)")
-    threading.Timer(1.0, lambda: webbrowser.open(f"http://127.0.0.1:{PORT}")).start()
+    port = free_port(PORT)
+    srv = ThreadingHTTPServer(("127.0.0.1", port), H)
+    url = f"http://127.0.0.1:{port}"
+    print("=" * 48); print(f" RAY 올인원 제작기 실행됨 → {url}"); print(" 브라우저가 자동으로 열립니다. (종료: 이 창에서 Ctrl+C)"); print("=" * 48)
+    threading.Timer(1.2, lambda: webbrowser.open(url)).start()
     try: srv.serve_forever()
     except KeyboardInterrupt: print("종료")
 
