@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "inputs": [
+    { "id": "passage", "type": "promptString", "description": "영어 지문을 붙여넣으세요" },
+    { "id": "kind", "type": "pickString", "description": "문항 종류",
+      "options": ["reading", "grammar"], "default": "reading" },
+    { "id": "chapter", "type": "promptString", "description": "강 번호 (예: 7)" },
+    { "id": "num", "type": "promptString", "description": "문제 번호 (예: 04 또는 GW)" }
+  ],
+  "tasks": [
+    {
+      "label": "RAY ▶ 제작기 열기 (딸깍)",
+      "type": "shell",
+      "command": "python",
+      "args": ["selfllm/ray_app.py"],
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "problemMatcher": []
+    },
+    {
+      "label": "RAY ▶ 지문으로 제작",
+      "type": "shell",
+      "command": "python",
+      "args": ["selfllm/ray.py", "make", "${input:passage}", "${input:kind}"],
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "RAY ▶ 수능특강 강·번호로 제작",
+      "type": "shell",
+      "command": "python",
+      "args": ["selfllm/ray.py", "chapter", "${input:chapter}", "${input:num}"],
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "RAY ▶ 상태 보기",
+      "type": "shell",
+      "command": "python",
+      "args": ["selfllm/ray.py", "status"],
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "RAY ▶ 페이블 검수 요청 보기",
+      "type": "shell",
+      "command": "python",
+      "args": ["selfllm/ray_bridge.py", "list"],
+      "presentation": { "reveal": "always" },
+      "problemMatcher": []
+    },
+    {
+      "label": "RAY ▶ 24시간 뇌 상주",
+      "type": "shell",
+      "command": "python",
+      "args": ["selfllm/brain_daemon.py", "loop"],
+      "isBackground": true,
+      "presentation": { "reveal": "always", "panel": "dedicated" },
+      "problemMatcher": []
+    }
+  ]
+}

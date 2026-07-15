@@ -10,7 +10,7 @@
 import sys, io, os, json, re, subprocess, time
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT_DIR = os.path.expanduser(r"~/Downloads/수능특강/_RAY수업보드")
-import auto_markup, ray_llm, ray_escalate
+import auto_markup, ray_llm, ray_escalate, ray_bridge
 KB = os.path.join(HERE, "brain_knowledge.json")
 
 ROLE_COLOR = [(r"도입|정의|화제", "cyan"), (r"통념|배경|일반", "red"), (r"전환|반전|역접|대조|however", "green"),
@@ -243,19 +243,41 @@ def make(passage, kind="reading", meta="RAY 올인원", header="RAY 수업", bas
     log(f"지문 {len(passage)}자 · 종류={kind}")
     try:
         if kind == "grammar":
-            brain = analyze_with_brain(passage, BRAIN_PROMPT_GRAMMAR, topic="어법분석")
-            data = build_grammar_json(passage, meta, header, brain)
-            ok, reason = verify_grammar(passage, data)   # 자동 사전검증(참고용)
-            # ★ 정책: 어법 오류 문항은 자동 확정하지 않는다. 항상 '관리자(Claude) 검수 대기'로 보류.
-            ans = next((p for p in data.get("points", []) if p.get("answer")), {})
-            review_enqueue({"kind": "grammar", "header": header, "answer": data.get("answer"),
-                            "error_form": ans.get("underline"), "correct": ans.get("correct"),
-                            "label": ans.get("label"), "auto_verify": ok, "reason": reason,
-                            "json": os.path.join(HERE, f"_studio_{base}.json")})
-            data["_review"] = "pending"
-            data["meta"] = meta + (" · 🕒관리자 검수대기(자동검증 통과)" if ok else " · ⚠관리자 검수필요(자동검증 미통과)")
-            log(f"어법 → 관리자 검수대기함 등록 ({'자동검증 통과' if ok else '자동검증 미통과'})")
-            ray_escalate.learn("어법검증", ok, reason)
+            # 1) 무료 자동: 생성 → 검증 → 실패 시 재생성 (검증은 실측상 신뢰성 있음: 가짜오류 거부/진짜오류 통과)
+            data = None; cand = None; tries = int(os.environ.get("RAY_GRAMMAR_TRIES", "3"))
+            for attempt in range(tries):
+                brain = analyze_with_brain(passage, BRAIN_PROMPT_GRAMMAR, topic="어법분석")
+                cand = build_grammar_json(passage, meta, header, brain)
+                ok, reason = verify_grammar(passage, cand)
+                if ok:
+                    cand["meta"] = meta + " · ✅자동검증 통과(무료)"; data = cand
+                    log(f"어법 자동검증 통과 {attempt+1}회차 → 확정 (정답 {cand.get('answer')})")
+                    ray_escalate.learn("어법검증", True, reason); break
+                log(f"어법 자동검증 미통과 {attempt+1}회차: {reason[:45]} → 재생성")
+            # 2) 무료 반복 실패 → 페이블(이 챗) 연동 요청. 페이블 응답 있으면 확정.
+            if data is None:
+                pts = (cand and cand.get("points")) or []
+                rid = ray_bridge.request("grammar_error", {
+                    "passage": passage, "header": header,
+                    "candidates": [{"word": p.get("underline"), "label": p.get("label")} for p in pts]},
+                    instruction=("무료 자동생성이 유효 오류를 못 만들었다. 어법 출제점 1곳을 명확한 오류로 지정하라. "
+                                 "result 스키마: {answer_word:원문 그대로 어구, error_form:틀린 형태, correct:올바른 형태, "
+                                 "label:문법항목, why:근거, explanation:정답해설}. that↔which 등 양쪽 허용 금지."))
+                fab = ray_bridge.get_response(rid)
+                if fab and fab.get("result"):
+                    r = fab["result"]; aw = str(r.get("answer_word", "")).strip()
+                    brain = {"grammar_points": [{"word": aw, "label": r.get("label", ""), "is_answer": True,
+                                                 "error_form": r.get("error_form"), "why": r.get("why", "")}],
+                             "glosses": {}, "explanation_core": r.get("explanation", ""), "hook": {}, "flow": [], "vocab": []}
+                    data = build_grammar_json(passage, meta, header, brain)
+                    data["meta"] = meta + " · ✅페이블 검수완료"
+                    log(f"페이블 응답 반영 → 최종 확정 (정답 {data.get('answer')})")
+                    ray_escalate.learn("어법검증", True, "페이블 검수 확정")
+                else:
+                    data = cand or build_grammar_json(passage, meta, header, {})
+                    data["_review"] = "pending"; data["meta"] = meta + " · 🕒페이블 검수대기"
+                    review_enqueue({"kind": "grammar", "header": header, "rid": rid, "json": os.path.join(HERE, f"_studio_{base}.json")})
+                    log(f"어법 무료 {tries}회 실패 → 페이블 연동 요청 (rid={rid}). 이 챗 검수 후 재실행 시 확정.")
         else:
             brain = analyze_with_brain(passage); data = build_reading_json(passage, meta, header, brain)
     except Exception as e:
