@@ -23,6 +23,23 @@ def role_color(role):
 
 def log(m): print(f"  · {m}")
 
+REVIEW_QUEUE = os.path.join(HERE, "_review_queue.jsonl")
+def review_enqueue(item):
+    import time as _t
+    item["ts"] = _t.strftime("%Y-%m-%d %H:%M"); item["status"] = "pending"
+    with io.open(REVIEW_QUEUE, "a", encoding="utf-8") as f:
+        f.write(json.dumps(item, ensure_ascii=False) + "\n")
+def review_pending():
+    if not os.path.exists(REVIEW_QUEUE): return []
+    out = []
+    for l in io.open(REVIEW_QUEUE, encoding="utf-8").read().splitlines():
+        if l.strip():
+            try:
+                d = json.loads(l)
+                if d.get("status") == "pending": out.append(d)
+            except Exception: pass
+    return out
+
 def load_kb():
     if os.path.exists(KB):
         try: return json.load(io.open(KB, encoding="utf-8"))
@@ -228,14 +245,17 @@ def make(passage, kind="reading", meta="RAY 올인원", header="RAY 수업", bas
         if kind == "grammar":
             brain = analyze_with_brain(passage, BRAIN_PROMPT_GRAMMAR, topic="어법분석")
             data = build_grammar_json(passage, meta, header, brain)
-            ok, reason = verify_grammar(passage, data)   # 검증 게이트
-            if ok:
-                log(f"어법 검증 통과 ✓ ({reason[:40]})"); ray_escalate.learn("어법검증", True, reason)
-            else:
-                log(f"어법 검증 실패 ✗ → 관리자 에스컬레이션: {reason[:50]}")
-                data["_warning"] = f"자동검증 미통과: {reason}"; data["meta"] = (meta + " · ⚠검증필요")
-                ray_escalate.to_manager(f"어법 {header} 자동생성 문항 검증 실패", reason, ["local", "verify"])
-                ray_escalate.learn("어법검증", False, reason)
+            ok, reason = verify_grammar(passage, data)   # 자동 사전검증(참고용)
+            # ★ 정책: 어법 오류 문항은 자동 확정하지 않는다. 항상 '관리자(Claude) 검수 대기'로 보류.
+            ans = next((p for p in data.get("points", []) if p.get("answer")), {})
+            review_enqueue({"kind": "grammar", "header": header, "answer": data.get("answer"),
+                            "error_form": ans.get("underline"), "correct": ans.get("correct"),
+                            "label": ans.get("label"), "auto_verify": ok, "reason": reason,
+                            "json": os.path.join(HERE, f"_studio_{base}.json")})
+            data["_review"] = "pending"
+            data["meta"] = meta + (" · 🕒관리자 검수대기(자동검증 통과)" if ok else " · ⚠관리자 검수필요(자동검증 미통과)")
+            log(f"어법 → 관리자 검수대기함 등록 ({'자동검증 통과' if ok else '자동검증 미통과'})")
+            ray_escalate.learn("어법검증", ok, reason)
         else:
             brain = analyze_with_brain(passage); data = build_reading_json(passage, meta, header, brain)
     except Exception as e:
@@ -248,7 +268,7 @@ if __name__ == "__main__":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     a = sys.argv[1:] or ["text", "This is a sample passage. However, it shows the flow."]
     if a[0] == "text":
-        make(a[1], a[2] if len(a) > 2 else "reading", header="RAY 자동제작", base="text")
+        make(a[1], a[2] if len(a) > 2 else "reading", header="RAY 자동제작", base=(a[3] if len(a) > 3 else "text"))
     elif a[0] == "file":
         make(io.open(a[1], encoding="utf-8").read(), header=os.path.basename(a[1]), base="file")
     elif a[0] == "chapter":

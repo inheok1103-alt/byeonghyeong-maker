@@ -47,6 +47,25 @@ if __name__ == "__main__":
     elif c == "brain": run("brain_daemon.py", *(a[1:] or ["once"]))
     elif c == "enqueue": run("brain_daemon.py", "enqueue", a[1])
     elif c == "collab": run("ray_collab.py", "scan")
+    elif c == "review":   # 관리자(페이블) 검수 대기 목록
+        import ray_studio
+        pend = ray_studio.review_pending()
+        print(f"═══ 어법 검수 대기함: {len(pend)}건 (페이블=이 챗에서 검수) ═══")
+        for p in pend:
+            flag = "✓자동검증통과" if p.get("auto_verify") else "⚠자동검증미통과"
+            print(f" [{p['ts']}] {p['header']} · 정답{p.get('answer')} {p.get('error_form')}→{p.get('correct')} [{p.get('label')}] {flag}")
+            print(f"      사유: {p.get('reason','')[:70]}")
+    elif c == "fable":    # 페이블(이 챗) 검수용 핸드오프 덤프
+        import ray_studio, io as _io
+        pend = ray_studio.review_pending()
+        print("=== 페이블 검수 요청 블록 (이 챗에 붙여넣기) ===")
+        for p in pend:
+            try:
+                d = json.load(_io.open(p["json"], encoding="utf-8"))
+                print(f"\n■ {p['header']} (자동검증 {'통과' if p['auto_verify'] else '미통과'})")
+                print("지문(밑줄):", d.get("passage","")[:600])
+                for pt in d.get("points", []): print(f"  {pt['n']} {pt['underline']} [{pt['label']}] {pt['verdict']}")
+            except Exception: pass
     elif c == "inbox": run("ray_escalate.py", "inbox")
     elif c == "lessons": run("ray_escalate.py", "lessons")
     elif c == "status": status()
