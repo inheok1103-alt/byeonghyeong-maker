@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-15T21:18:09.794Z",
+ "updated": "2026-07-15T22:18:58.721Z",
  "samples": [
+  {
+   "ts": "2026-07-15T22:18:13.486Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Quick Quiz #22 Match each word in the first column with its definition in the second column. Check your answers here. 1. coalesce a. perceptive 2. coalition b. unite 3. coerce c. conversational 4. cogent d. force someone to do something 5. cognitive e. proportionate 6. cognizant f. making sense 7. coherent g. group with a purpose 8. colloquial h. powerfully convincing 9. collusion i. summary 10. commensurate j. forceful 11. compelling k. conspiracy 12. compendium l. dealing with how we know our environment COMPLACENT (kum PLAY sunt) adj self-satisfied; overly pleased with oneself; contented to a fault • The complacent camper paid no attention to the poison ivy around his campsite, and ended up going to the hospital. • The football team won so many games that it became complacent, and the worst team in the league won the game. <u>To fall into complacency is to become comfortably uncaring about the world around you.</u>",
+    "choices": [
+     "Overconfidence causes people to ignore potential risks around them.",
+     "A false sense of security makes individuals neglect what is happening nearby.",
+     "Feeling too safe leads to a complete disregard for one's immediate environment.",
+     "Assuming everything is fine results in a lack of attention to surrounding dangers.",
+     "Complacency leads to a dangerous indifference toward one's surroundings."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'Complacency leads to a dangerous indifference toward one's surroundings.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘overconfidence’(과신)만 강조하고 ‘comfortably uncaring’(편안히 무관심해진 상태)의 ‘무관심’과 ‘주변 환경’(surroundings)을 직접 연결하지 않아 오독. → 처방: ‘무관심’의 대상이 ‘주변 환경’이라는 점을 반드시 확인하고, ‘과신’이 ‘무관심’을 낳는다는 흐름을 따라가기.\n② 진단: ‘false sense of security’(안심의 착각)이 ‘neglect’(소홀히 함)을 낳는다는 점은 맞지만, ‘주변에서 벌어지는 일’을 ‘무시’하는 것과 ‘무관심’이란 상태를 혼동. → 처방: ‘무관심’이란 ‘주변 환경 자체에 대한 관심 부족’이라는 의미를 정확히 짚고 넘어가기.\n③ 진단: ‘Feeling too safe’(너무 안전한 느낌)가 ‘완전한 무시’(complete disregard)로 과장되어 ‘무관심’의 정도를 잘못 해석. → 처방: ‘무관심’이란 ‘관심 부족’이지만 ‘완전한 무시’는 아니라는 점을 분명히 하고 넘어가기.\n④ 진단: ‘assuming everything is fine’(모든 게 괜찮다고 가정함)이 ‘주변 위험’(surrounding dangers)에 대한 ‘관심 부족’을 낳는다는 점은 맞지만, ‘완전한 무시’(disregard)로 이어지는 흐름을 오독. → 처방: ‘무관심’이란 ‘관심 부족’이지만 ‘완전한 무시’는 아니라는 점을 정확히 짚고 넘어가기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-15T22:18:25.809Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 각 단어를 두 번째 열의 올바른 정의와 일치시킵니다.\n주어진 단어: ( each / word / Match / from / the / definition / column / correct / its / with / second )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Match each word with its correct definition from the second column.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-15T21:17:29.358Z",
    "type": "네모어휘ABC",
@@ -312,60 +366,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'to conceptualize different types of friendliness'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 주체나 대상을 바꿔치기\n[오답 진단·처방]\n② 진단: 지문은 '단수와 복수의 개념' 자체보다는 그 개념이 적용되는 '의미적 차이'에 주목하고 있으므로, '개념을 명확히 구분 짓기 위해'라는 선지의 설명은 지문의 핵심 목적과 맞지 않음. → 처방: 문제를 풀 때는 지문의 '의미적 차이'나 '개념화'가 중심인지, 아니면 '문법적 구분'이 중심인지 먼저 확인할 것.\n③ 진단: 지문은 '친절의 유형'이 실제로 존재한다는 사실보다는 '개념화'가 가능한지를 설명하고 있으므로, '실제로 존재하기 때문에'라는 선지의 설명은 지문의 논리적 흐름과 다름. → 처방: 지문의 '개념화'가 가능한 이유(예: 다른 유형의 친절을 상상할 수 있음)를 먼저 찾은 후, 그 이유가 '실존'과 같은 것인지 확인할 것.\n④ 진단: 지문은 '항상'이 아니라 '특정한 경우'에 개념화가 가능하다는 점을 강조하고 있으므로, '항상'이라는 선지의 설명은 지문의 맥락과 반대됨. → 처방: 지문의 '항상'이나 '가능한 경우' 같은 한정어를 주의 깊게 읽고, 그 말이 문장에서 어떤 역할을 하는지 생각해 볼 것.\n⑤ 진단: 지문은 '정의'가 아니라 '개념화'를 통해 서로 다른 유형을 구분 짓는 것에 초점을 맞추고 있으므로, '정의하려고'라는 선지의 설명은 지문의 목적과 맞지 않음. → 처방: 문제의 '목적'을 물을 때는 지문이 '정의'하는지, '구분 짓는'지, '설명'하는지 등 핵심 동사를 먼저 찾고, 그 동사가 어떤 의미를 가지는지 생각해 볼 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to conceptualize different types of friendliness]"
-   }
-  },
-  {
-   "ts": "2026-07-15T11:52:38.485Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 어떤 단어는 뜻의 차이로 복수형을 쓸 수 있지만, 보통은 단수형을 쓰는 경우가 많다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-15T09:23:20.476Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>Politics</u> or ⓑ<u>Science</u>? ⓒ<u>Among</u> academics and beyond, the Sapir-Whorf ⓓ<u>hypothesis</u> has been, quite commonly, less examined than embraced. One of the reasons: what interests many about the hypothesis is less what it would imply for academic issues about ⓔ<u>human</u> psychology than its demonstration that indigenous cultures are not “primitive,” and in fact may have some things on us. This was an explicit mission of Sapir, and an invaluable one in itself. It is to him and like-minded thinkers of his time such as his mentor anthropologist Franz Boas that it is part of the warp and woof of modern Westerners to view other cultures as variations on being human rather than “savages.” Gone are the days when America could stampede into the Philippines as it did during the McKinley administration, casually assuming that the “natives” needed to be “civilized.” Whorf inherited the diversity imperative from Sapir, and it permeates his writings on Hopi. To Whorf, Hopi and the world view it supposedly conditioned was not just different, but better:",
-    "choices": [
-     "politics: To engage in political activity; politick.",
-     "science: A particular discipline or branch of learning, especially one dealing with measu",
-     "among: Denotes a mingling or intermixing with distinct or separable objects. (See Usage",
-     "hypothesis: Used loosely, a tentative conjecture explaining an observation, phenomenon or sc",
-     "human: The arts, customs, lifestyles, background, and habits that characterize a partic"
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ의 풀이는 'cultures'의 정의이다. 'human'의 올바른 풀이: A human being, whether man, woman or child.\n[오답 진단·처방]\n① 진단: 정치학을 뜻하는 politics 를 정치 활동을 뜻하는 것으로 오독 → 처방: 정확한 단어 의미를 확인\n② 진단: 과학을 뜻하는 science 를 특정 학문 분야나 측정 관련 분야로만 좁게 오독 → 처방: 단어의 의미 범위를 넓게 이해\n③ 진단: 사이에서 또는 함께를 뜻하는 among 을 섞거나하는 것으로 오독 → 처방: 단어의 의미를 문맥에 맞게 해석\n④ 진단: 가설을 뜻하는 hypothesis 를 관찰이나 현상에 대한 추측으로 오독 → 처방: 단어의 정확한 의미를 이해\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
