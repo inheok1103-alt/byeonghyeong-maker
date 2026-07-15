@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-15T06:30:40.312Z",
+ "updated": "2026-07-15T09:24:48.304Z",
  "samples": [
+  {
+   "ts": "2026-07-15T09:23:20.476Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "ⓐ<u>Politics</u> or ⓑ<u>Science</u>? ⓒ<u>Among</u> academics and beyond, the Sapir-Whorf ⓓ<u>hypothesis</u> has been, quite commonly, less examined than embraced. One of the reasons: what interests many about the hypothesis is less what it would imply for academic issues about ⓔ<u>human</u> psychology than its demonstration that indigenous cultures are not “primitive,” and in fact may have some things on us. This was an explicit mission of Sapir, and an invaluable one in itself. It is to him and like-minded thinkers of his time such as his mentor anthropologist Franz Boas that it is part of the warp and woof of modern Westerners to view other cultures as variations on being human rather than “savages.” Gone are the days when America could stampede into the Philippines as it did during the McKinley administration, casually assuming that the “natives” needed to be “civilized.” Whorf inherited the diversity imperative from Sapir, and it permeates his writings on Hopi. To Whorf, Hopi and the world view it supposedly conditioned was not just different, but better:",
+    "choices": [
+     "politics: To engage in political activity; politick.",
+     "science: A particular discipline or branch of learning, especially one dealing with measu",
+     "among: Denotes a mingling or intermixing with distinct or separable objects. (See Usage",
+     "hypothesis: Used loosely, a tentative conjecture explaining an observation, phenomenon or sc",
+     "human: The arts, customs, lifestyles, background, and habits that characterize a partic"
+    ],
+    "answer": 5,
+    "explanation": "정답 ⓔ의 풀이는 'cultures'의 정의이다. 'human'의 올바른 풀이: A human being, whether man, woman or child.\n[오답 진단·처방]\n① 진단: 정치학을 뜻하는 politics 를 정치 활동을 뜻하는 것으로 오독 → 처방: 정확한 단어 의미를 확인\n② 진단: 과학을 뜻하는 science 를 특정 학문 분야나 측정 관련 분야로만 좁게 오독 → 처방: 단어의 의미 범위를 넓게 이해\n③ 진단: 사이에서 또는 함께를 뜻하는 among 을 섞거나하는 것으로 오독 → 처방: 단어의 의미를 문맥에 맞게 해석\n④ 진단: 가설을 뜻하는 hypothesis 를 관찰이나 현상에 대한 추측으로 오독 → 처방: 단어의 정확한 의미를 이해\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-15T09:24:15.634Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Politics or Science? Among academics and beyond, the Sapir-Whorf hypothesis has been, quite commonly, less e_______ than embraced. One of the reasons: what interests many about the hypothesis is less what it would imply for academic issues about human psychology than its demonstration that indigenous cultures are not “primitive,” and in fact may have some things on us. This was an explicit mission of Sapir, and an invaluable one in itself. It is to him and like-minded thinkers of his time such as his mentor anthropologist Franz Boas that it is part of the warp and woof of modern Westerners to view other cultures as variations on being human rather than “savages.” Gone are the days when America could stampede into the Philippines as it did during the McKinley administration, casually assuming that the “natives” needed to be “civilized.” Whorf inherited the diversity imperative from Sapir, and it permeates his writings on Hopi. To Whorf, Hopi and the world view it supposedly conditioned was not just different, but better:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] examined — 문단의 논지상 이 자리에는 'examined'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-15T06:29:38.879Z",
    "type": "본문찾아쓰기",
@@ -279,61 +333,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'to avoid graceless prose by following grammar rules'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘문법 규칙을 엄격히 지켜야 한다’는 지문 첫 문장과 혼동. 그러나 지문은 ‘문법 규칙을 지나치게 중시하면 어색한 문체가 된다’고 지적하며, 문법 규칙의 ‘일부’(since, that)를 설명하는 데 목적이 있음을 간과. → 처방: 지문의 핵심은 ‘문법 규칙을 무조건 따르면 좋은 글이 되는 것이 아니다’라는 점을 먼저 확인하고, 각 규칙의 ‘예외’와 ‘목적’을 따로 읽기.\n③ 진단: ‘문법 오류를 찾아낸다’는 오해. 지문은 문법 규칙의 ‘적용 방법’(since, that)을 설명하는 데 목적이 있으며, 오류를 찾는 내용은 없음. → 처방: ‘문법 오류’를 찾는 문제가 아니라 ‘문법 규칙의 올바른 사용법’을 설명하는 글임을 먼저 확인하고, 지문에서 ‘규칙’을 설명하는 부분을 집중해서 읽기.\n④ 진단: ‘모든 문장이 문법 규칙을 따라야 한다’는 과장된 주장으로 오독. 지문은 ‘일부 규칙’을 설명하며, 그 규칙도 ‘예외’가 있음을 언급하는데, 이를 무시하고 ‘모든 규칙’을 주장하는 것으로 혼동. → 처방: 지문에서 ‘일반적으로 옳다’는 단서와 ‘예외’가 있음을 확인하고, ‘모든’ 규칙을 주장하는 선지는 지문과 맞지 않음을 기억하기.\n⑤ 진단: ‘문법 규칙을 무조건 준수해야 우아한 문체를 얻는다’는 과장된 결론으로 오독. 지문은 오히려 ‘문법 규칙을 지나치게 중시하면 어색한 문체가 된다’고 지적하며, 규칙의 ‘목적’을 설명하는 데 목적이 있음을 간과. → 처방: 지문의 첫 문장과 마지막 문장을 비교해 ‘규칙의 목적’이 ‘문체의 우아함’이 아니라 ‘명확한 표현’이라는 점을 기억하고, 규칙의 ‘적절한 사용’을 중시하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to avoid graceless prose by following grammar rules]"
-   }
-  },
-  {
-   "ts": "2026-07-14T19:46:04.625Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.29,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.29)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "Because some writers are seized by the idea that ⓐ<u>writing is good only are</u> when it’s free of errors that only a grammarian can explain, ⓑ<u>they writes graceless</u> prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, ⓒ<u>it is easy for those</u> inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but ⓓ<u>it’s generally sound</u>. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation ⓔ<u>which a practiced writer corrects</u> corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓐ(writing is good only are → writing is good only), ⓑ(they writes graceless → they write graceless), ⓔ(which a practiced writer corrects → which a practiced writer) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘1개’라고 답했는데, ⓐ‘are’를 ‘is’로, ⓑ‘writes’를 ‘write’로, ⓒ‘it is easy for those’를 ‘those are easily’로 고치면 3개가 틀렸다고 볼 수 있다고 오해했을 수 있음. → 처방: ‘are’은 ‘is’가 아니라 ‘is’가 아닌 ‘are’를 써야 하는 이유를 찾아보고, ‘writes’를 ‘write’로, ‘it is easy for those’를 ‘those find it easy’를 써서 비교해보기.\n② 진단: ‘2개’라고 답했는데, ⓑ‘writes’를 ‘write’로, ⓓ‘it’s generally sound’를 ‘it’s generally sounds’로 고치면 2개가 틀렸다고 잘못 판단했을 수 있음. → 처방: ‘writes’를 ‘write’로, ‘sounds’를 ‘sound’로 쓰는 이유를 문법 규칙과 예문에서 찾아보기.\n④ 진단: ‘4개’라고 답했는데, ⓐ‘are’를 ‘is’로, ⓑ‘writes’를 ‘write’로, ⓒ‘it is easy for those’를 ‘those are easily’로, ⓓ‘it’s generally sound’를 ‘it’s generally sounds’로 모두 고치면 4개가 틀렸다고 잘못 생각했을 수 있음. → 처방: 각 문장의 동사 형태와 주어 일치를 따로따로 확인하고, ‘sound’가 형용사인지 동사인지 구분해보기.\n⑤ 진단: ‘5개’라고 답했는데, 모든 밑줄 친 부분을 다 틀렸다고 잘못 본 경우로, ⓐ‘are’를 ‘is’로, ⓑ‘writes’를 ‘write’로, ⓒ‘it is easy for those’를 ‘those are easily’로, ⓓ‘it’s generally sound’를 ‘it’s generally sounds’로, ⓔ‘which’를 ‘that’으로 고치면 5개가 틀렸다고 잘못 생각했을 수 있음. → 처방: ‘which’를 ‘that’으로 바꾸는 규칙을 다시 공부하고, 동사 일치와 형용사/동사 구분을 명확히 하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-14T19:46:14.439Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 어떤 작가들은 문법가만이 설명할 수 있는 오류가 전혀 없을 때에만 글쓰기가 훌륭하다는 생각에 사로잡혀서, 세련되지 못한 문체를 써내려갑니다. (구문 포인트: 관계사절(that only a grammarian can explain) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

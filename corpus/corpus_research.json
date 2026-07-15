@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-15T06:30:40.307Z",
+ "updated": "2026-07-15T09:24:48.300Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-15T09:24:17.442Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "복수형 명사(people) 대신 단수형(person)으로 교정하는 오류가 빈번하며, 접속사 사용(and, so on)과 조건문 내 시제(present tense) 오류도 다수 관찰된다.",
+   "rule": "단수형 명사(예: person, science)가 요구되는 문맥에서 복수형(people, sciences)을 사용한 경우, 또는 접속사(and, but 등) 앞/뒤에 쉼표를 누락한 경우, 반드시 정정하여 문법적으로 옳은 형태로 변형하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-15T06:30:11.883Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'명사+명사' 또는 '형용사+명사' 형태의 연어에서 잘못된 명사나 관사가 사용되는 오류가 빈번하다는 점을 확인할 수 있다. 특히 'government'와 같은 고유명사나 복합명사에서 관사의 생략·오용이 두드러진다.",
    "rule": "'명사+명사' 또는 '형용사+명사' 연어에서 관사(a/the) 또는 복수형(-s) 오류를 반드시 1개 이상 포함하여 문항을 설계하라. 예를 들어, 'government'는 단수 주어로 쓰일 때 'The'가 필수이므로, 'Gouverment will try...'와 같은 오류를 정답으로 제시하거나 오답으로 활용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-09T23:40:56.602Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거형 동사가 포함된 문장에서 주어와 동사의 수 일치를 엄격히 확인해야 한다. 또한, 쉼표로 구분된 복수 주어의 경우에도 동사가 단수형으로 오용되는 패턴이 빈번하다.",
-   "rule": "복수 주어(쉼표로 연결된 경우 포함)가 포함된 문장에서 동사는 반드시 복수형(-s/-es 제외)으로 사용해야 하며, 이는 내신 변형 문제에서 오답 선지로 자주 활용된다.",
    "sample": [
     "old english",
     "university press",
