@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-16T16:44:46.673Z",
+ "updated": "2026-07-16T18:35:38.654Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-16T18:35:12.906Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "복수명사(ideas, concepts) 뒤의 동사 일치 오류와 대명사 대문자 오류가 빈번하며, 조동사 뒤 동사 원형 오류도 다수 발견된다.",
+   "rule": "CEFR B1 수준에서는 복수명사 뒤 동사 일치(are→is), 대명사 대문자(I), 조동사 뒤 동사 원형(are reduced→reduce)을 반드시 확인하는 문항을 30% 이상 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-16T16:44:22.235Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제와 현재시제가 혼용되어 문법적 오류가 발생하는 패턴이 빈번하며, 특히 'spend time ~ing' 구조와 'expect reciprocation'의 의미적 대치 관계가 오류로 이어진다.",
    "rule": "과거시제 동사(예: spent)가 현재시제 동사(예: know)와 혼용되지 않도록 하며, 'spend time in meaningful subjects' 또는 'expect reciprocation'과 같은 구문적·의미적 일관성을 유지하도록 문제를 설계한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-11T15:18:42.368Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거 시제 동사와 현재 시제 동사가 혼용된 문장은 일관된 시제를 유지해야 하며, 복수형 명사와 단수형 명사의 혼용은 문맥에 맞게 통일해야 한다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'every + 복수명사 + 동사(3인칭 단수)' 구조는 'every + 단수명사 + 동사(3인칭 단수)'로, 'lots of + 복수명사'는 'many + 복수명사'로 통일하여 오류를 수정하라.",
    "sample": [
     "old english",
     "university press",

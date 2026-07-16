@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-16T16:44:46.677Z",
+ "updated": "2026-07-16T18:35:38.658Z",
  "samples": [
+  {
+   "ts": "2026-07-16T18:34:07.750Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "For example: [75] that nuclear scientist from Germany. [B]‌ [76] an anxious applicant for the job. [A]‌ [77] structural engineers in disgrace. [B]‌ [78] the personal assistant at the door. [B]‌ [79] their secret visits to the kitchen. [A]‌ But what if we have both adjunct pre-​modifiers and adjunct post-​modifiers? Both adjuncts will need to be sisters to NOM. Here are some examples. [80] The unknown scientist from Germany. [81] That tall student at the bar. [82] The new railings in the park. With these, either analysis is possible. [80], for example, could be analysed either as (i) [unknown [scientist from Germany]] or (ii) [[unknown scientist] from Germany]. So which should we choose? Well, the analysis that associates the more permanent and/​or intrinsic property more closely with the head noun is more natural. Analysis (i) is more natural for [80], since being from Germany is more permanent/​intrinsic than being unknown. By contrast, in [81], tall is more intrinsic than at the bar, so analysis (ii) is preferable –​ [[tall student] at the bar].",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-16T18:35:03.899Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "For ⓐ<u>example</u>: [75] that nuclear ⓑ<u>scientist</u> from Germany. [B]‌ [76] an anxious applicant for the job. [A]‌ [77] structural engineers in disgrace. [B]‌ [78] the personal assistant at the door. [B]‌ [79] their secret visits to the kitchen. [A]‌ But what if we have both ⓒ<u>adjunct</u> pre-​modifiers and adjunct post-​modifiers? Both adjuncts will need to be sisters to NOM. Here are some examples. [80] The ⓓ<u>unknown</u> scientist from Germany. [81] That tall student at the bar. [82] The new railings in the park. With these, either ⓔ<u>analysis</u> is possible. [80], for example, could be analysed either as (i) [unknown [scientist from Germany]] or (ii) [[unknown scientist] from Germany]. So which should we choose? Well, the analysis that associates the more permanent and/​or intrinsic property more closely with the head noun is more natural. Analysis (i) is more natural for [80], since being from Germany is more permanent/​intrinsic than being unknown. By contrast, in [81], tall is more intrinsic than at the bar, so analysis (ii) is preferable –​ [[tall student] at the bar].",
+    "choices": [
+     "example: Something that is representative of all such things in a group.",
+     "scientist: A built-in function that is implemented directly by the compiler, without any in",
+     "adjunct: An appendage; something attached to something else in a subordinate capacity.",
+     "unknown: To undo the process of knowing, to lose knowledge of something.",
+     "analysis: Decomposition into components in order to study (a complex thing, concept, theor"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓑ의 풀이는 'intrinsic'의 정의이다. 'scientist'의 올바른 풀이: One whose activities make use of the scientific method to answer questions regar\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘example’이 ‘대표적인 예시’라는 뜻임을 지문에서 ‘For ⓐ<u>example</u>’로 제시했는데도, ‘무엇의 대표’라는 의미를 정확히 짚지 못하고 ‘예시’를 ‘표본’이나 ‘본보기’ 정도로만 이해했을 가능성이 있다. → 처방: ‘example’이 ‘~의 예시’라는 뜻임을 기억하고, 지문에서 ‘For ⓐ<u>example</u>’가 ‘예를 들어’라는 구절로 쓰였다는 점을 떠올리며 영영풀이를 읽기.\n② 진단: ‘scientist’가 ‘과학자’라는 뜻임을 알고 있지만, ‘built-in function’이라는 컴퓨터 용어와 혼동하여 ‘기능’이란 뜻을 떠올렸을 수 있다. 지문에서 ‘nuclear ⓑ<u>scientist</u>’가 사람임을 분명히 보여주는데도 ‘기능’을 떠올렸다면 개념 혼동이 있다. → 처방: ‘scientist’를 ‘과학자’라는 기본 뜻으로 먼저 떠올리고, 지문에서 ‘nuclear scientist’가 사람임을 확인한 후 영영풀이를 읽기.\n④ 진단: ‘unknown’이 ‘알려지지 않은’이라는 뜻임을 알고 있지만, ‘to undo the process of knowing’이라는 설명을 보고 ‘무지’를 뜻하는 동사 ‘unknow’의 과거형으로 오해했을 가능성이 있다. 지문에서 ‘ⓓ<u>unknown</u> scientist’가 ‘알려지지 않은 과학자’라는 뜻임을 고려하지 않았다. → 처방: ‘unknown’이 형용사임을 먼저 확인하고, 지문에서 ‘unknown scientist’가 ‘알려지지 않은’이라는 뜻으로 쓰였다는 점을 떠올리며 영영풀이를 읽기.\n⑤ 진단: ‘analysis’를 ‘분석’이라는 뜻으로 알고 있지만, ‘decomposition’이라는 단어를 보고 ‘분해’라는 뜻으로만 이해했을 수 있다. 지문에서 ‘decomposition into components’라는 설명이 ‘복잡한 것을 연구하기 위해 요소로 나누는 것’을 뜻함을 알지 못했다. → 처방: ‘analysis’를 ‘분석’이라는 뜻으로 먼저 떠올리고, 지문에서 ‘decomposition’이라는 단어가 ‘복잡한 것을 연구하기 위해 요소로 나누는 것’을 뜻함을 기억하며 영영풀이를 읽기."
+   }
+  },
   {
    "ts": "2026-07-16T16:43:32.612Z",
    "type": "문장삽입",
@@ -288,60 +340,6 @@
     ],
     "answer": 3,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘idea’는 단수형(하나의 사물), ‘ideas’는 복수형(둘 이상)으로 지문에서 분명히 설명했는데, 선지는 ‘dea’(dea 가 없음)와 ‘ideas’의 역할과 의미를 반대로 설명했음. 지문 2~3행 ‘idea–ideas’의 구분을 보면 알 수 있음. → 처방: 문제에서 ‘idea–ideas’의 뜻을 정확히 확인하고, 선지가 설명하는 단수·복수 관계를 반대로 설명하지 않았는지 다시 한 번 확인하기.\n② 진단: ‘대부분의 명사는 단수와 복수의 구분이 예외적’이라는 선지는 지문 4행 ‘in general this distinction can apply to virtually all nouns’와 반대됨. ‘예외적’이 아니라 ‘일반적’이라는 지문의 내용을 잘못 읽었음. → 처방: 지문의 ‘in general’이나 ‘virtually all nouns’를 주의 깊게 읽고, ‘예외’라는 단어가 나오면 지문과 대조해서 확인하기.\n④ 진단: ‘친절의 한 형태는 지나가면서 아침인사를 하는 복잡한 행동’이라는 선지는 지문에서 ‘friendliness’의 한 형태를 ‘간단한 인사’로 설명했는데, ‘복잡한 행동’이라고 잘못 이해했음. 지문 8~9행 ‘one can be friendly by saying good morning’를 오해한 듯함. → 처방: 지문의 ‘saying good morning’를 ‘간단한 인사’로 이해하고, ‘복잡한 행동’이라는 표현이 나오면 지문과 비교해서 맞는지 확인하기.\n⑤ 진단: ‘친절의 다른 형태는 감정적 헌신을 요구하지 않는 더 깊은 관계’라는 선지는 지문 10~11행 ‘other forms of friendliness may demand more of an emotional commitment’를 반대로 설명했음. ‘감정적 헌신을 요구하지 않는다’가 아니라 ‘요구할 수도 있다’로 지문 내용과 반대됨. → 처방: 지문의 ‘may demand’를 ‘요구할 수 있다’로 정확히 이해하고, 선지가 반대 의미를 담고 있는지 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T00:17:07.507Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Word Categories 7 Although some of these may (A) [silence / sound] (B) [familiar / strange] concepts, they are perfectly acceptable forms. The idea–ideas case is the most straightforward. The distinction between these two words is that while the first refers to a single thing, the second refers to more than one of them. This is the distinction between singular and plural and in general this distinction can apply to virtually all nouns. Consider a more strange case: friendliness– friendlinesses. What is strange here is not the grammatical concepts of singular or plural, but that the semantic distinction is not one typically made. However, it is perfectly possible to (C) [conceptualise / misunderstand] different types of friendliness: one can be friendly by saying good morning to someone as you pass in the street, without necessarily entering into a deeper relationship with them; other forms of friendliness may demand more of an emotional commitment. Therefore we can talk about different friendlinesses. By contrast, consider the following, based on the words in (9): (11) conceptualises",
-    "choices": [
-     "(A) silence - (B) strange - (C) misunderstand",
-     "(A) sound - (B) strange - (C) conceptualise",
-     "(A) sound - (B) familiar - (C) conceptualise",
-     "(A) sound - (B) strange - (C) misunderstand",
-     "(A) silence - (B) familiar - (C) misunderstand"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) sound - (B) strange - (C) conceptualise. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(A) silence’를 골랐다는 것은 ‘소리나다’가 아닌 ‘침묵하다’로만 해석해 ‘소리가 들리다’는 뜻의 ‘sound’를 놓쳤음을 의미합니다. ‘(B) familiar’를 ‘익숙한’이 아닌 ‘이상한’으로 오해했으며, ‘(C) misunderstand’를 ‘오해하다’로만 보고 ‘개념화하다’의 뜻을 가진 ‘conceptualise’를 놓쳤습니다. → 처방: ‘sound’를 ‘소리가 들리다’는 뜻으로도 쓸 수 있음을 기억하고, ‘familiar’는 ‘익숙한’이라는 뜻임을 문맥에서 확인하세요. ‘conceptualise’는 ‘개념화하다’로, ‘misunderstand’는 ‘오해하다’로 구분해 쓰임을 익히세요.\n② 진단: ‘(A) sound’를 골랐지만 ‘침묵하다’가 아닌 ‘소리가 들리다’는 뜻으로만 해석해 ‘침묵’을 뜻하는 ‘silence’를 놓쳤고, ‘(B) strange’를 ‘이상한’으로만 보고 ‘익숙한’을 뜻하는 ‘familiar’를 놓쳤으며, ‘(C) misunderstand’를 ‘오해하다’로만 보고 ‘개념화하다’를 놓쳤습니다. → 처방: ‘silence’를 ‘침묵’으로, ‘sound’를 ‘소리가 들리다’로도 쓸 수 있음을 구분해 쓰고, ‘familiar’는 ‘익숙한’이라는 뜻임을 문맥에서 확인하세요. ‘conceptualise’는 ‘개념화하다’로, ‘misunderstand’는 ‘오해하다’로 구분해 쓰임을 익히세요.\n④ 진단: ‘(A) sound’를 골랐지만 ‘침묵하다’가 아닌 ‘소리가 들리다’는 뜻으로만 해석해 ‘silence’를 놓쳤고, ‘(B) strange’를 ‘이상한’으로만 보고 ‘익숙한’을 뜻하는 ‘familiar’를 놓쳤으며, ‘(C) misunderstand’를 ‘오해하다’로만 보고 ‘개념화하다’를 놓쳤습니다. → 처방: ‘silence’를 ‘침묵’으로, ‘sound’를 ‘소리가 들리다’로도 쓸 수 있음을 구분해 쓰고, ‘familiar’는 ‘익숙한’이라는 뜻임을 문맥에서 확인하세요. ‘conceptualise’는 ‘개념화하다’로, ‘misunderstand’는 ‘오해하다’로 구분해 쓰임을 익히세요.\n⑤ 진단: ‘(A) silence’를 골랐다는 것은 ‘소리나다’가 아닌 ‘침묵하다’로만 해석해 ‘소리가 들리다’는 뜻의 ‘sound’를 놓쳤고, ‘(B) familiar’를 ‘익숙한’이 아닌 ‘이상한’으로 오해했으며, ‘(C) misunderstand’를 ‘오해하다’로만 보고 ‘개념화하다’의 뜻을 가진 ‘conceptualise’를 놓쳤습니다. → 처방: ‘sound’를 ‘소리가 들리다’는 뜻으로도 쓸 수 있음을 기억하고, ‘familiar’는 ‘익숙한’이라는 뜻임을 문맥에서 확인하세요. ‘conceptualise’는 ‘개념화하다’로, ‘misunderstand’는 ‘오해하다’로 구분해 쓰임을 익히세요."
-   }
-  },
-  {
-   "ts": "2026-07-16T00:17:18.372Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 일부 명사는 동일한 개념의 다른 유형을 나타낼 수 있습니다\n주어진 단어: ( nouns / refer / different )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Some nouns can refer to different types of the same concept. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
