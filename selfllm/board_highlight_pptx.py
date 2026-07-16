@@ -107,7 +107,7 @@ def plen(t): return len(strip_markup(t))
 
 # 페이지 계산
 NPASS = 2 if plen(L["passage"])>1500 else 1
-TOTAL = (1 if L.get("hook") else 0) + 1 + NPASS + (1 if L.get("flow") else 0) + 1
+TOTAL = (1 if L.get("hook") else 0) + 1 + NPASS + (2 if L.get("sents") and len(L["sents"])>8 else (1 if L.get("sents") else 0)) + (1 if L.get("flow") else 0) + 1
 PG=[0]
 def pg():
     PG[0]+=1; return f"{PG[0]:02d} / {TOTAL:02d}"
@@ -164,6 +164,29 @@ for pi,pgtoks in enumerate(pages):
     if L.get("footnotes"):
         tf=box(s,0.5,6.62,12.3,0.4); run(tf.paragraphs[0],"   ".join("* "+f for f in L["footnotes"]),11,MUTE,it=True,name=KO)
     foot(s,"색: 연결어(초록)·핵심개념·구조어 — 흐름을 눈으로 잡는다")
+
+# ═══ 직독직해 (문장별 en+ko + 구문) — 페이블 보강 슬롯 ═══
+if L.get("sents"):
+    sents=L["sents"]; n=len(sents)
+    ppg = 1 if n<=8 else 2
+    chunks=[sents] if ppg==1 else [sents[:(n+1)//2], sents[(n+1)//2:]]
+    for ci,chunk in enumerate(chunks):
+        s=slide(); suffix=f" ({ci+1}/{ppg})" if ppg>1 else ""
+        head(s,"PARSE","직독직해 — 문장별 해석·구문"+suffix,pg())
+        pc,ptf=rect(s,0.5,1.1,12.33,5.7,PANEL,LINE,1.0)
+        esz = 13.5 if len(chunk)<=5 else (12 if len(chunk)<=7 else 11)
+        for i,se in enumerate(chunk):
+            en=se.get("en") or se.get("svo") or ""; ko=se.get("ko",""); note=se.get("note","")
+            p=ptf.paragraphs[0] if i==0 else ptf.add_paragraph(); p.space_before=Pt(0 if i==0 else 6); p.line_spacing=1.18
+            run(p,f"{se.get('n',i+1)}. ",esz-1,GOLD,True,name=EN)
+            emit(p,en,esz,WHITE)            # en에 <<S..|tc=cyan>> 등 구문 색분해 마크업 지원
+            if ko:
+                p2=ptf.add_paragraph(); p2.space_before=Pt(1); p2.line_spacing=1.16
+                run(p2,"   ",esz,WHITE); run(p2,ko,esz-0.5,TC["cyan"],name=KO)
+            if note:
+                p3=ptf.add_paragraph(); p3.space_before=Pt(0); p3.line_spacing=1.1
+                run(p3,"   ▸ ",esz-1,GOLD); run(p3,note,esz-1.5,MUTE,name=KO)
+        foot(s,"직독직해: S(주어)·V(동사)·O/C·M(수식) 구문을 색으로 끊어 읽는다")
 
 # ═══ 글의 흐름 지도 ═══
 if L.get("flow"):
