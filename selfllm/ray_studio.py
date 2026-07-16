@@ -202,6 +202,22 @@ VERIFY_GRAMMAR_PROMPT = """엄격한 영어 어법 검증관이다. 아래 '어�
 
 JSON만: {{"valid": true|false, "reason": "판정 근거(한글 한 문장)"}}"""
 
+def validate_reading(data):
+    """무료 API 문항 품질 검증. 문제 리스트 반환(빈 리스트=합격)."""
+    import re as _re
+    ch = data.get("choices", []); ans = data.get("answer", 0)
+    passage = _re.sub(r"<<.*?>>", "", str(data.get("passage", "")))
+    txts = [_re.sub(r"<<.*?>>", "", str(c.get("text", "") if isinstance(c, dict) else c)).strip() for c in ch]
+    probs = []
+    if len(ch) < 4: probs.append(f"선지 {len(ch)}개(4개 미만)")
+    if not (isinstance(ans, int) and 1 <= ans <= max(len(ch), 1)): probs.append(f"정답번호 무효({ans})")
+    if any(_re.fullmatch(r"(기타|모두|모두\s*다|없음|정답\s*없음|all|none|etc\.?|위\s*모두)", t.lower()) for t in txts if t):
+        probs.append("필러 선지(기타/모두/none)")
+    vb = sum(1 for t in txts if len(t) > 24 and t[:40] in passage)
+    if vb >= 2: probs.append(f"선지 {vb}개가 지문 문장 복사")
+    if len([t for t in txts if t]) < len(ch): probs.append("빈 선지")
+    return probs
+
 def verify_grammar(passage, data):
     ans = next((p for p in data.get("points", []) if p.get("answer")), None)
     if not ans: return False, "정답 미지정"
@@ -309,6 +325,35 @@ def make(passage, kind="reading", meta="RAY 올인원", header="RAY 수업", bas
                     log(f"어법 무료 {tries}회 실패 → 페이블 연동 요청 (rid={rid}). 이 챗 검수 후 재실행 시 확정.")
         else:
             brain = analyze_with_brain(passage); data = build_reading_json(passage, meta, header, brain)
+            probs = validate_reading(data)
+            if probs:   # ★ 무료 문항 품질 미달 → 페이블 출제로 승격
+                log("문항 품질 미달: " + "; ".join(probs) + " → 페이블 출제 요청")
+                rid = ray_bridge.request("author_question",
+                    {"passage": passage, "qtype": qt or "제목", "header": header,
+                     "one_liner": brain.get("one_liner", ""), "issues": probs},
+                    instruction=(f"'{qt or '제목'}' 유형 문항을 출제하라. 무료 자동생성 실패({'; '.join(probs)}). "
+                                 "규칙: 선지에 지문 문장 복사 금지·필러(기타/모두) 금지, 정답 1~5 명시, 오답 4개 매력도 확보. "
+                                 "result 스키마: {stem, choices[5], answer, answer_plain, rationale, wrong[4]}"))
+                fab = ray_bridge.get_response(rid)
+                if fab and fab.get("result"):
+                    fr = fab["result"]
+                    for k in ("stem", "answer", "answer_plain", "rationale", "wrong"):
+                        if fr.get(k) is not None: data[k] = fr[k]
+                    if fr.get("choices"):
+                        data["choices"] = [{"n": i+1, "text": (c.get("text") if isinstance(c, dict) else c),
+                                            **({"correct": True} if i+1 == int(fr.get("answer", 1)) else {})}
+                                           for i, c in enumerate(fr["choices"][:5])]
+                    data["meta"] = meta + " · ✅페이블 출제"
+                    log(f"페이블 문항 반영 (정답 {data.get('answer')})")
+                    ray_escalate.learn("독해문항", True, "페이블 출제")
+                else:   # 페이블 응답 없음 → 분석은 살리고 엉터리 문항은 버림
+                    data["choices"] = []; data["answer"] = 1
+                    data["stem"] = f"[문항 준비 중 · 페이블 검수 대기] {qtypes.stem(qt) if qt else ''}"
+                    data["_review"] = "pending"; data["meta"] = meta + " · 🕒페이블 문항 대기(분석만 완성)"
+                    review_enqueue({"kind": "reading", "qtype": qt, "header": header, "rid": rid,
+                                    "issues": probs, "json": os.path.join(HERE, f"_studio_{base}.json")})
+                    log(f"엉터리 문항 폐기 → 분석 덱만 출하 + 페이블 검수요청(rid={rid})")
+                    ray_escalate.learn("독해문항", False, "; ".join(probs))
     except Exception as e:
         log(f"뇌 분석 실패({str(e)[:60]}) → 폴백"); data = offline_reading_json(passage, meta, header)
     out = render(data, base)

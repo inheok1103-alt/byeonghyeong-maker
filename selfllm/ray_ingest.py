@@ -1,17 +1,22 @@
 # -*- coding: utf-8 -*-
 """ray_ingest.py — 다양한 파일에서 지문(텍스트) 추출
-지원: PDF · DOCX · PPTX · HWP · PNG/JPG(무료 비전 OCR) · TXT
+지원: PDF · DOCX · PPTX · HWP/HWPX · XLSX · PNG/JPG(로컬 OCR) · TXT
 사용:
   python ray_ingest.py <파일경로>            # 추출 텍스트 출력
   from ray_ingest import ingest; ingest(path) # 라이브러리
-이미지/스캔PDF는 로컬 OCR이 없으면 무료 비전 LLM(pollinations)으로 인식(추가비용 0)."""
-import sys, io, os, json, re, base64, urllib.request
+이미지와 스캔 PDF는 외부 전송 없이 프로젝트 내 오프라인 OCR로 인식한다."""
+import sys, io, os, re, zipfile, hashlib
 HERE = os.path.dirname(os.path.abspath(__file__))
-_UA = "Mozilla/5.0 RAYingest/1.0"
+CACHE_DIR = os.path.join(os.environ.get("LOCALAPPDATA", os.path.expanduser("~")), "RAYEnglish", "ingest_cache")
 
 def _clean(t): return re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{3,}", "\n\n", (t or "").strip()))
 
-def read_txt(p): return io.open(p, encoding="utf-8", errors="replace").read()
+def read_txt(p):
+    raw = io.open(p, "rb").read()
+    for encoding in ("utf-8-sig", "utf-16", "cp949", "latin-1"):
+        try: return raw.decode(encoding)
+        except UnicodeDecodeError: pass
+    return raw.decode("utf-8", "replace")
 
 def read_docx(p):
     import docx
@@ -19,16 +24,35 @@ def read_docx(p):
     parts = [para.text for para in d.paragraphs]
     for tbl in d.tables:
         for row in tbl.rows: parts.append("\t".join(c.text for c in row.cells))
+    for section in d.sections:
+        parts.extend(para.text for para in section.header.paragraphs if para.text)
+        parts.extend(para.text for para in section.footer.paragraphs if para.text)
     return "\n".join(parts)
 
 def read_pptx(p):
     from pptx import Presentation
     prs = Presentation(p); out = []
-    for s in prs.slides:
+    def shape_text(sh):
+        values = []
+        if getattr(sh, "has_text_frame", False):
+            values.extend("".join(r.text for r in para.runs) or para.text for para in sh.text_frame.paragraphs)
+        if getattr(sh, "has_table", False):
+            for row in sh.table.rows:
+                values.append("\t".join(cell.text for cell in row.cells))
+        if getattr(sh, "shape_type", None) == 6:
+            for child in sh.shapes:
+                values.extend(shape_text(child))
+        return [value for value in values if value]
+    for number, s in enumerate(prs.slides, 1):
+        out.append(f"[Slide {number}]")
         for sh in s.shapes:
-            if sh.has_text_frame:
-                for para in sh.text_frame.paragraphs:
-                    out.append("".join(r.text for r in para.runs) or para.text)
+            out.extend(shape_text(sh))
+        try:
+            notes = s.notes_slide.notes_text_frame.text.strip()
+            if notes:
+                out.append("[Notes]\n" + notes)
+        except Exception:
+            pass
     return "\n".join(x for x in out if x)
 
 def read_hwp(p):
@@ -49,69 +73,97 @@ def read_hwp(p):
     finally:
         ole.close()
 
-def _shrink_png(png_bytes, max_bytes=1000000):
-    """OCR.space 무료 1MB 한도 대응: 크면 다운스케일."""
-    if len(png_bytes) <= max_bytes: return png_bytes
-    from PIL import Image
-    im = Image.open(io.BytesIO(png_bytes)).convert("RGB")
-    for scale in (0.75, 0.55, 0.4, 0.3):
-        buf = io.BytesIO(); im.resize((int(im.width * scale), int(im.height * scale))).save(buf, "JPEG", quality=80)
-        if buf.tell() <= max_bytes: return buf.getvalue(), "jpg"
-    buf = io.BytesIO(); im.resize((int(im.width * 0.25), int(im.height * 0.25))).save(buf, "JPEG", quality=70)
-    return buf.getvalue(), "jpg"
-
-def _vision_ocr(png_bytes):
-    """무료 OCR(OCR.space, 공개키 helloworld) → 실패 시 pollinations 비전 폴백. 추가비용 0."""
-    import urllib.parse
-    shr = _shrink_png(png_bytes); fmt = "png"
-    if isinstance(shr, tuple): png_bytes, fmt = shr
-    b64 = f"data:image/{fmt};base64," + base64.b64encode(png_bytes).decode()
-    try:
-        data = urllib.parse.urlencode({"apikey": os.environ.get("OCR_SPACE_KEY", "helloworld"),
-            "base64Image": b64, "language": "eng", "isOverlayRequired": "false", "OCREngine": "2",
-            "scale": "true", "detectOrientation": "true"}).encode()
-        req = urllib.request.Request("https://api.ocr.space/parse/image", data=data, headers={"User-Agent": _UA})
-        d = json.loads(urllib.request.urlopen(req, timeout=90).read().decode("utf-8", "replace"))
-        if not d.get("IsErroredOnProcessing") and d.get("ParsedResults"):
-            return d["ParsedResults"][0].get("ParsedText", "").strip()
-    except Exception:
-        pass
-    # 폴백: pollinations 비전
-    try:
-        body = {"model": "openai", "messages": [{"role": "user", "content": [
-            {"type": "text", "text": "Transcribe all text in this image exactly. Output only text."},
-            {"type": "image_url", "image_url": {"url": b64}}]}], "temperature": 0}
-        req = urllib.request.Request("https://text.pollinations.ai/openai",
-                                     data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "User-Agent": _UA})
-        d = json.loads(urllib.request.urlopen(req, timeout=90).read().decode("utf-8", "replace"))
-        return d["choices"][0]["message"]["content"]
-    except Exception as e:
-        return f"(OCR 실패: {e})"
-
 def read_image(p):
-    return _vision_ocr(io.open(p, "rb").read())
+    from ray_local_ocr import ocr_image
+    return ocr_image(p)
 
 def read_pdf(p):
     import fitz
-    d = fitz.open(p); txt = "\n".join(d[i].get_text() for i in range(d.page_count))
-    if len(txt.strip()) >= 40:
-        return txt
-    # 텍스트 거의 없음 → 스캔/이미지 PDF → 비전 OCR(앞 3쪽)
+    from ray_local_ocr import ocr_image
+
+    max_ocr_pages = max(1, min(int(os.environ.get("RAY_OCR_MAX_PDF_PAGES", "12")), 40))
     out = []
-    for i in range(min(d.page_count, 3)):
-        try: out.append(_vision_ocr(d[i].get_pixmap(dpi=150).tobytes("png")))
-        except Exception as e: out.append(f"(OCR 실패 p{i+1}: {e})")
+    document = fitz.open(p)
+    try:
+        page_count = document.page_count
+        if page_count <= max_ocr_pages:
+            ocr_pages = set(range(page_count))
+        elif max_ocr_pages == 1:
+            ocr_pages = {0}
+        else:
+            ocr_pages = {
+                round(index * (page_count - 1) / (max_ocr_pages - 1))
+                for index in range(max_ocr_pages)
+            }
+        for index, page in enumerate(document):
+            text = page.get_text("text").strip()
+            if len(text) >= 30:
+                out.append(f"[Page {index + 1}]\n{text}")
+            elif index in ocr_pages:
+                try:
+                    pixmap = page.get_pixmap(dpi=180, alpha=False)
+                    recognized = ocr_image(pixmap.tobytes("png"))
+                    if recognized:
+                        out.append(f"[Page {index + 1} · Local OCR]\n{recognized}")
+                except Exception as exc:
+                    out.append(f"[Page {index + 1} · OCR 실패] {exc}")
+        if page_count > max_ocr_pages:
+            out.append(f"[OCR 안내] 스캔 페이지는 전체 {page_count}쪽 중 {len(ocr_pages)}쪽을 고르게 표본 인식함")
+    finally:
+        document.close()
+    return "\n\n".join(out)
+
+def read_hwpx(p):
+    parts = []
+    with zipfile.ZipFile(p) as archive:
+        names = [name for name in archive.namelist() if name.lower().endswith(".xml") and "section" in name.lower()]
+        for name in sorted(names):
+            raw = archive.read(name).decode("utf-8", "replace")
+            parts.extend(re.findall(r">([^<>]+)<", raw))
+    return "\n".join(parts)
+
+def read_xlsx(p):
+    from openpyxl import load_workbook
+    workbook = load_workbook(p, read_only=True, data_only=True)
+    out = []
+    try:
+        for sheet in workbook.worksheets:
+            out.append(f"[Sheet: {sheet.title}]")
+            for row in sheet.iter_rows(values_only=True):
+                values = [str(value) for value in row if value is not None]
+                if values:
+                    out.append("\t".join(values))
+    finally:
+        workbook.close()
     return "\n".join(out)
 
-READERS = {".txt": read_txt, ".md": read_txt, ".docx": read_docx, ".pptx": read_pptx,
-           ".hwp": read_hwp, ".pdf": read_pdf, ".png": read_image, ".jpg": read_image,
-           ".jpeg": read_image, ".bmp": read_image, ".webp": read_image}
+READERS = {".txt": read_txt, ".md": read_txt, ".csv": read_txt, ".json": read_txt,
+           ".docx": read_docx, ".pptx": read_pptx, ".hwp": read_hwp,
+           ".hwpx": read_hwpx, ".xlsx": read_xlsx, ".pdf": read_pdf,
+           ".png": read_image, ".jpg": read_image, ".jpeg": read_image,
+           ".bmp": read_image, ".webp": read_image, ".tif": read_image,
+           ".tiff": read_image}
 
 def ingest(path):
+    path = os.path.abspath(path)
     ext = os.path.splitext(path)[1].lower()
     fn = READERS.get(ext)
     if not fn: raise ValueError(f"지원하지 않는 형식: {ext} (지원: {', '.join(READERS)})")
-    return _clean(fn(path))
+    stat = os.stat(path)
+    key = hashlib.sha256(f"{path}|{stat.st_size}|{stat.st_mtime_ns}|v3".encode("utf-8")).hexdigest()
+    cache_path = os.path.join(CACHE_DIR, key + ".txt")
+    try:
+        if os.path.isfile(cache_path):
+            return io.open(cache_path, encoding="utf-8").read()
+    except OSError:
+        pass
+    text = _clean(fn(path))
+    try:
+        os.makedirs(CACHE_DIR, exist_ok=True)
+        io.open(cache_path, "w", encoding="utf-8").write(text)
+    except OSError:
+        pass
+    return text
 
 def extract_english_passage(text, min_words=25):
     """추출 텍스트에서 가장 그럴듯한 '영어 지문' 한 덩어리를 고름(문항용)."""
