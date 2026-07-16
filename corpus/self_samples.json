@@ -1,6 +1,39 @@
 {
- "updated": "2026-07-16T09:41:24.820Z",
+ "updated": "2026-07-16T11:57:56.971Z",
  "samples": [
+  {
+   "ts": "2026-07-16T11:56:33.457Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0,
+    "distractorEff": 100,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Quiz 5-2 A. Fill in each blank with the correct letter: a. antedate b. protoplasm c. anterior d. protagonist e. prototype f. antecedent g. protocol h. antechamber 1. <u>The ___ of The Wizard of Oz is a Kansas farm girl named Dorothy.</u> 2. According to official ___, the Ambassador from England ranks higher than the Canadian Consul. 3. A butterfly's antennae are located on the most ___ part of its body. 4. There under the microscope we saw the cell's ___ in all its amazing complexity. 5. She was tempted to ___ the letter to make it seem that she had not forgotten to write it but only to mail it. 6. The engineers have promised to have the ___ of the new sedan finished by March. 7. Please step into the judge's ___; she'll be with you in a few minutes. 8. The British would say “The company are proud of their record,” since they treat “the company” as a plural ___. Answers",
+    "choices": [
+     "The protagonist of *The Wizard of Oz* is always a farm girl from Kansas who encounters magical challenges.",
+     "The original title of *The Wizard of Oz* refers to a specific place where a girl named Dorothy lived before her journey.",
+     "The term 'protagonist' in The Wizard of Oz refers to a specific person named Dorothy.",
+     "Because Dorothy was from Kansas, the narrative’s setting directly causes her to seek adventure in an unfamiliar world.",
+     "The central character of a narrative represents the human experience through an ordinary individual thrust into extraordinary circumstances."
+    ],
+    "answer": 3,
+    "explanation": "밑줄 친 부분은 'The central character of a narrative represents the human experience through an ordinary individual thrust into extraordinary circumstances.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘protagonist’를 ‘주인공’이 아니라 ‘주요 등장인물’로 넓게 해석해 ‘항상’(always)이라는 과장된 표현과 ‘매직 challenges’를 필요로 하는 줄 알았음. 지문엔 ‘a Kansas farm girl named Dorothy’만 나와 있음. → 처방: ‘protagonist’의 뜻을 정확히 기억하고, ‘항상’ 같은 과장된 표현이 나오면 다시 한 번 지문을 확인해 보자.\n② 진단: ‘protagonist’를 ‘원제목’(original title)으로 오해하고 ‘a specific place’를 연상했음. ‘protagonist’는 ‘주인공’이 아니라 ‘원제목’이 아님. → 처방: ‘protagonist’의 뜻을 정확히 알고 있어야 하며, unfamiliar 한 단어는 사전에서 뜻을 꼭 확인하자.\n④ 진단: ‘protagonist’를 ‘narrative 의 setting’이 ‘원인’이 되어 ‘adventure’를 하게 되는 ‘원인’(cause)으로 오해했음. 지문엔 그런 내용이 없음. → 처방: ‘protagonist’는 ‘주인공’이란 뜻임을 기억하고, 지문의 내용과 선지의 내용을 정확히 비교해 보자.\n⑤ 진단: ‘protagonist’를 ‘narrative 가 표현하는 human experience’를 뜻하는 것으로 오해했음. ‘protagonist’는 ‘주인공’이란 뜻으로, ‘human experience’를 표현하는 건 아님. → 처방: ‘protagonist’의 뜻을 정확히 알고 있어야 하며, narrative 의 ‘theme’이나 ‘message’를 묻는 문제라면 선지를 다시 한 번 확인하자."
+   }
+  },
   {
    "ts": "2026-07-16T09:38:36.514Z",
    "type": "문장삽입",
@@ -309,41 +342,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Given the Earliness Principle, the pronoun them in (44), which will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, will be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. (포인트: 원문 문장의 두 동사절을 관계사절로 결합하여 하나의 문장으로 축약)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-15T22:18:13.486Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Quick Quiz #22 Match each word in the first column with its definition in the second column. Check your answers here. 1. coalesce a. perceptive 2. coalition b. unite 3. coerce c. conversational 4. cogent d. force someone to do something 5. cognitive e. proportionate 6. cognizant f. making sense 7. coherent g. group with a purpose 8. colloquial h. powerfully convincing 9. collusion i. summary 10. commensurate j. forceful 11. compelling k. conspiracy 12. compendium l. dealing with how we know our environment COMPLACENT (kum PLAY sunt) adj self-satisfied; overly pleased with oneself; contented to a fault • The complacent camper paid no attention to the poison ivy around his campsite, and ended up going to the hospital. • The football team won so many games that it became complacent, and the worst team in the league won the game. <u>To fall into complacency is to become comfortably uncaring about the world around you.</u>",
-    "choices": [
-     "Overconfidence causes people to ignore potential risks around them.",
-     "A false sense of security makes individuals neglect what is happening nearby.",
-     "Feeling too safe leads to a complete disregard for one's immediate environment.",
-     "Assuming everything is fine results in a lack of attention to surrounding dangers.",
-     "Complacency leads to a dangerous indifference toward one's surroundings."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'Complacency leads to a dangerous indifference toward one's surroundings.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘overconfidence’(과신)만 강조하고 ‘comfortably uncaring’(편안히 무관심해진 상태)의 ‘무관심’과 ‘주변 환경’(surroundings)을 직접 연결하지 않아 오독. → 처방: ‘무관심’의 대상이 ‘주변 환경’이라는 점을 반드시 확인하고, ‘과신’이 ‘무관심’을 낳는다는 흐름을 따라가기.\n② 진단: ‘false sense of security’(안심의 착각)이 ‘neglect’(소홀히 함)을 낳는다는 점은 맞지만, ‘주변에서 벌어지는 일’을 ‘무시’하는 것과 ‘무관심’이란 상태를 혼동. → 처방: ‘무관심’이란 ‘주변 환경 자체에 대한 관심 부족’이라는 의미를 정확히 짚고 넘어가기.\n③ 진단: ‘Feeling too safe’(너무 안전한 느낌)가 ‘완전한 무시’(complete disregard)로 과장되어 ‘무관심’의 정도를 잘못 해석. → 처방: ‘무관심’이란 ‘관심 부족’이지만 ‘완전한 무시’는 아니라는 점을 분명히 하고 넘어가기.\n④ 진단: ‘assuming everything is fine’(모든 게 괜찮다고 가정함)이 ‘주변 위험’(surrounding dangers)에 대한 ‘관심 부족’을 낳는다는 점은 맞지만, ‘완전한 무시’(disregard)로 이어지는 흐름을 오독. → 처방: ‘무관심’이란 ‘관심 부족’이지만 ‘완전한 무시’는 아니라는 점을 정확히 짚고 넘어가기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
