@@ -1,6 +1,114 @@
 {
- "updated": "2026-07-16T03:43:42.970Z",
+ "updated": "2026-07-16T06:37:42.824Z",
  "samples": [
+  {
+   "ts": "2026-07-16T06:32:35.993Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "The disconnection between cultural development and grammar is also clear in that societies ⓐ<u>have turned upside down</u> over time while the grammar stayed put. As psychologist Herbert Clark has put it, if the Sapir-Whorf hypothesis “has any force historically, ⓑ<u>we should find examples</u> of beliefs failing to change over time because of the conventions that exist in the language. Such examples do not readily come to mind.” Right—take Russia. All would agree that ⓒ<u>certain changes have occurred</u> in prevailing beliefs in that country over the past thousand years—from brute feudalism under the tsars to Communism to glasnost to the queer blend of democracy and dictatorship of today. Yet ⓓ<u>Russian grammars during that time</u> has always been the marvelous nightmare that it is now. Russian has changed, to be sure, but without equivalents to the Celtic adoption and the Viking disruption, and nowhere near as dramatically as English—and ⓔ<u>in no ways that could be correlated</u> with things Peter the Great, the Romanovs, or Lenin did.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓓ: 'Russian grammars during that time' → 'Russian grammar during that time' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-16T06:33:05.536Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "문화적 믿음과 사회 구조의 급격한 변화가 문법의 변화를 이끈다.",
+     "문법은 특정 사회에서만 상대적으로 안정성을 유지할 뿐이다.",
+     "모든 언어의 문법은 역사적으로 한 번도 변한 적이 없다.",
+     "문법은 때때로 급격한 변화가 일어나기도 하지만 대부분은 안정적이다.",
+     "문화적 믿음과 사회 구조의 변화에도 불구하고 문법은 거의 변하지 않는다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Grammar remains largely unchanged despite dramatic shifts in cultural beliefs and social structures.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 문화적 믿음과 사회 구조의 변화가 문법 변화를 이끈다고 오해했는데, 지문은 문법이 변하지 않았다고 설명한다. '끌어낸다'는 표현을 문법 변화의 원인으로 오독한 듯. → 처방: 문법 변화의 원인을 찾기보다, 문법의 안정성을 먼저 확인하는 방향으로 문제를 읽기.\n② 진단: 사회 구조의 안정성을 문법의 안정성과 혼동했다. 지문은 문법이 특정 사회에서만 안정적이라는 말이 아니라, 모든 사회에서 문법이 대체로 변하지 않았다고 설명한다. → 처방: 문법의 안정성이 '특정 사회'가 아니라 '모든 사회'에서 나타난다는 점을 기억하기.\n③ 진단: '한 번도 변한 적이 없다'는 극단적 표현을 문법의 변화 가능성과 혼동했다. 지문은 문법이 '거의' 변하지 않았다고만 말하고 있다. → 처방: 문법의 변화 가능성을 인정하되, '거의 없다'는 표현에 주목하기.\n④ 진단: 문법이 때때로 급격한 변화가 일어나기도 한다고 오해했는데, 지문은 문법이 대체로 안정적이며 변화가 미미하다는 점을 강조한다. → 처방: 문법의 변화 가능성을 배제하지는 않지만, '대체로 안정적'이라는 핵심 뜻을 먼저 파악하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Grammar remains largely unchanged despite dramatic shifts in cultural beliefs and social structures.]"
+   }
+  },
+  {
+   "ts": "2026-07-16T06:33:33.323Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the persistence of grammar despite cultural changes",
+     "the influence of grammar on cultural development",
+     "the stability of grammar in Russian culture",
+     "the unchanging nature of grammar across all societies",
+     "the complete immutability of grammar over time"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The stability of grammar despite cultural shifts'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 문화 발달이 문법에 영향을 미쳤을 것이라는 선입견으로 지문의 핵심(문법의 불변성 vs 문화 변화)을 오해함. 지문은 문법이 변하지 않았다고 설명하지 문법이 문화에 영향을 주었다고 말하지 않음. → 처방: 문제에서 '주제'를 찾을 때는 지문의 핵심 주장(문법의 불변성)을 먼저 확인하고, 선지가 그 주장과 직접 연결되는지 검토할 것.\n③ 진단: 러시아 문화의 변화보다는 러시아 문법의 특징에만 초점을 맞춤. 지문은 러시아 문법이 변하지 않았다는 예시일 뿐 주제는 문법의 불변성과 문화 변화의 대조임. → 처방: 지문 전체를 읽고 '주제'가 무엇인지 한 문장으로 요약한 뒤, 각 선지가 그 요약과 맞는지 확인할 것.\n④ 진단: 모든 사회에서 문법이 변하지 않는다는 과장된 해석으로 지문의 예시(러시아, 영어)를 일반화함. 지문은 특정 사례(러시아 문법의 불변성)를 설명할 뿐 모든 사회에 적용되지 않음. → 처방: 선지가 '과도한 일반화'나 '절대화' 표현(예: '모든', '항상', '완전히')을 쓰고 있는지 확인하고, 지문에 그런 말이 있는지 재확인할 것.\n⑤ 진단: 문법이 '완전히' 변하지 않는다는 오해로 지문의 '거의 변하지 않음'을 '전혀 변하지 않음'으로 과장함. 지문은 문법이 '거의' 변하지 않았다고 설명하지 '완전히' 변하지 않았다고 말하지 않음. → 처방: 지문에서 '정도'를 나타내는 단위(예: '거의', '거의 변하지 않음')가 있는지 확인하고, 선지가 그런 단어를 오용하지 않았는지 점검할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The stability of grammar despite cultural shifts]"
+   }
+  },
+  {
+   "ts": "2026-07-16T06:33:38.513Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 언어의 문법은 사회의 변화와 무관하게 유지되어 왔다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-16T03:42:04.147Z",
    "type": "네모어휘ABC",
@@ -230,144 +338,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Match each word with its correct definition from the second column.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-15T21:17:29.358Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/1가 1번 선택(기록 5번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Confusing Words and Homonyms 35 Inc. abbreviation for incorporated ink ﬂuid in pens (A) [incite / deter] to prompt to action (B) [ignorance / insight] understanding, comprehension incredible astonishing Example: Her gymnastic moves were incredible. incredulous skeptical Example: Citizens are incredulous about the reason for the increase in the price of gas. (C) [uninventive / ingenious] clever ingenuous na¨ıve or simple innocence to be without guilt innocents people who are without guilt insure (see assure) irregardless no such word exists regardless in spite of, without regard isle (see aisle) it’s contraction for it is or it has Example: It’s for a good cause. its possessive pronoun Example: The cat hurt its paw. jewel gem joule in physics, a unit of work or energy karat (see carat) kernel (see colonel) key (see cay) knead work with bread dough kneed hit with one’s knee need to require knew past tense of know, to have understood new opposite of old",
-    "choices": [
-     "(A) incite - (B) ignorance - (C) ingenious",
-     "(A) deter - (B) insight - (C) ingenious",
-     "(A) deter - (B) insight - (C) uninventive",
-     "(A) incite - (B) ignorance - (C) uninventive",
-     "(A) incite - (B) insight - (C) ingenious"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) incite - (B) insight - (C) ingenious. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 (A) 'incite'는 '(폭력·폭동 등을) 선동하다'라는 뜻으로 부정적 상황에 쓰이는데, 학생은 'prompt to action(행동을 촉구하다)'라는 설명만 보고 긍정적·중립적 의미로 오해했을 수 있음. (B) 'ignorance'는 '무지'라는 뜻으로 부정적 의미를 담고 있는데, 학생은 '무지'보다는 '무시'로 혼동했을 수 있음. → 처방: 단어의 뜻을 정확히 기억하고, 문맥에서 긍정·부정·중립을 구분해서 선택하기. 예: 'incite'는 주로 나쁜 행동을 촉구할 때 쓰인다는 점을 기억하기.\n② 진단: (A) 'deter'는 '단념시키다, 저지하다'라는 뜻으로 부정적 상황을 막는다는 의미인데, 학생은 'prompt to action'이라는 설명을 보고 '촉구하다'라는 뜻으로 오해했을 수 있음. (C) 'uninventive'는 '창의적이지 못한'이라는 뜻으로 부정적 의미를 담고 있는데, 학생은 'ingenious(기발한)'의 반대말이라는 점을 간과했을 수 있음. → 처방: 단어의 뜻을 문장 전체와 연결해서 생각해 보기. 예: 'deter'는 '막다'라는 뜻으로, 문맥에서 '행동을 촉구하지 않는다'는 의미를 찾아보기.\n③ 진단: (A) 'deter'를 '촉구하다'라는 뜻으로 오해했을 가능성이 큼. (B) 'insight'는 '통찰력'이라는 뜻으로 긍정적 의미를 담고 있는데, 학생은 '무시'나 '무지'로 혼동했을 수 있음. (C) 'uninventive'는 '창의적이지 못한'이라는 뜻으로 부정적 의미를 담고 있는데, 학생은 '기발한'이라는 뜻의 'ingenious'와 반대라는 점을 몰랐을 수 있음. → 처방: 단어의 뜻을 예문과 함께 암기하고, 문맥에서 어울리는지 확인하기. 예: 'insight'는 '이해'라는 뜻으로, '통찰력 있는 해결책'처럼 쓰인다는 점을 기억하기.\n④ 진단: (A) 'incite'를 '촉구하다'라는 뜻으로만 보고 긍정적·중립적 상황에서도 쓰일 수 있다고 오해했을 수 있음. (B) 'ignorance'를 '무시'나 '무지'로 혼동했을 수 있음. (C) 'uninventive'는 '창의적이지 못한'이라는 뜻으로 부정적 의미를 담고 있는데, 학생은 '기발한'이라는 뜻의 'ingenious'와 반대라는 점을 몰랐을 수 있음. → 처방: 단어의 뜻을 문장 전체와 연결해서 생각해 보고, 예문을 통해 의미를 확실히 기억하기. 예: 'incite'는 '폭동을 선동하다'처럼 나쁜 상황에 쓰인다는 점을 기억하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-15T19:38:24.738Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "(A) [connotative / Denotative] (B) [meaning / nonsense] 6.1 If we had to think of a list of features or criteria that defined both the words woman and lady, one might suggest that they include being human, female and adult. A definition based on these lines would be the DENOTATIVE MEANING of the two words. But there must be more to meaning than this, since we know that there is a difference between these two words – we know they can be used to mean different things. Consider these words placed in the context of the sentences below. She’s only thirteen, but she’s a woman already She’s only thirteen, but she’s a lady already (C) [Connotations / denotations] What differences in meaning – what different associations or CONNOTATIONS – do the words have? One way in which dictionaries try to give us clues about usage is by providing quotations where the word is used. However, even the dictionaries that do contain quotations cannot, for practical reasons, contain every usage of a word. It becomes a matter of selection and",
-    "choices": [
-     "(A) connotative - (B) nonsense - (C) Connotations",
-     "(A) connotative - (B) meaning - (C) Connotations",
-     "(A) Denotative - (B) nonsense - (C) Connotations",
-     "(A) Denotative - (B) nonsense - (C) denotations",
-     "(A) Denotative - (B) meaning - (C) Connotations"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) Denotative - (B) meaning - (C) Connotations. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 ‘connotative’를 선택했는데, 지문 6.1에서 ‘denotative meaning’이라는 문구가 나오므로 ‘denotative’를 골라야 한다. ‘(B)’에서 ‘nonsense’를 선택했는데, ‘meaning’이 있어야 문맥이 자연스럽다(‘meaning’이 있어야 ‘의미가 있다’는 말이 된다). ‘(C)’는 ‘Connotations’가 맞으나, ‘connotative’를 잘못 골라서 오답을 냈다. → 처방: ‘denotative’와 ‘meaning’의 뜻을 정확히 기억하고, 지문에서 ‘denotative meaning’이라는 단서가 나오면 ‘denotative’를, ‘의미’를 강조하는 부분에서는 ‘meaning’을 고르는 연습을 해라.\n② 진단: ‘(A)’에서 ‘connotative’를 선택했는데, 지문 6.1의 ‘DENOTATIVE MEANING’이라는 문구와 ‘정의’라는 단서를 보고도 ‘connotative’를 떠올렸다. ‘(B)’에서 ‘nonsense’를 선택했는데, ‘meaning’이 있어야 문맥이 맞다. ‘(C)’는 ‘Connotations’가 맞으나, ‘connotative’를 잘못 골라서 틀렸다. → 처방: ‘denotative’는 ‘사전적 의미’, ‘connotative’는 ‘함축적 의미’라는 뜻을 기억하고, 지문에서 ‘정의’를 언급하면 ‘denotative’를, ‘연상되는 의미’를 언급하면 ‘connotative’를 떠올려라.\n③ 진단: ‘(A)’에서 ‘Denotative’를 선택했는데, 지문 6.1의 ‘DENOTATIVE MEANING’이라는 문구는 맞지만, ‘(B)’에서 ‘nonsense’를 선택해 오답을 냈다. ‘meaning’이 있어야 문맥이 자연스럽다. ‘(C)’는 ‘Connotations’가 맞으나, ‘denotative’를 잘못 골라서 틀렸다. → 처방: ‘meaning’이 ‘의미’를 뜻한다는 점을 기억하고, 지문에서 ‘의미’를 강조하는 부분에서는 ‘meaning’을, ‘정의’를 강조하는 부분에서는 ‘denotative’를 고르는 연습을 해라.\n④ 진단: ‘(A)’에서 ‘Denotative’를 선택했는데, 지문 6.1의 ‘DENOTATIVE MEANING’이라는 문구는 맞지만, ‘(B)’에서 ‘nonsense’를 선택해 오답을 냈다. ‘meaning’이 있어야 문맥이 맞다. ‘(C)’에서 ‘denotations’를 선택했는데, 지문에서 ‘associations’라는 단서가 나오므로 ‘Connotations’를 골라야 한다. → 처방: ‘denotations’는 ‘사전적 의미’, ‘connotations’는 ‘함축적 의미’라는 뜻을 기억하고, 지문에서 ‘연상되는 의미’를 언급하면 ‘Connotations’를 떠올려라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-15T17:40:51.811Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "문장은 임의로 나누어도 구문적 의미를 유지할 수 있다.",
-     "문장은 두 부분으로만 나뉘며, 그 이상 분할할 수 없다.",
-     "모든 문장은 반드시 세 부분으로만 나뉘어야 하며, 예외는 없다.",
-     "문장은 항상 두 부분으로 나뉘며, 경우에 따라 세 부분으로 나뉠 수 있다.",
-     "문장의 구성은 임의의 분할이 아닌 문법적 구조를 따라야 한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Sentence constituents must be grouped in a way that reflects their syntactic structure without arbitrary divisions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘임의로 나누어도 구문적 의미를 유지할 수 있다’를 오독한 이유는 지문에서 ‘구문적 구조’를 따라야 한다고 설명했는데, 이를 ‘구문적 의미’로 혼동했기 때문이다. 문장의 의미는 유지될 수 있지만, 구문적 구조는 임의로 나뉠 수 없다는 점을 놓쳤다. → 처방: ‘구문적 구조’와 ‘구문적 의미’를 구분해 공부하고, 지문에서 제시한 ‘구문적 구조의 중요성’을 다시 한 번 확인하라.\n② 진단: ‘두 부분으로만 나뉘며, 그 이상 분할할 수 없다’를 오독한 이유는 지문에서 (a)와 (b) 모두 두 부분으로 나뉜다고 설명했는데, (c)에서는 세 부분으로 나뉜다는 예외가 있음을 무시했기 때문이다. → 처방: 지문에서 제시된 세 가지 분할 방식(a, b, c)을 모두 정리하고, 각 방식의 차이를 명확히 이해하라.\n③ 진단: ‘모든 문장은 반드시 세 부분으로만 나뉘어야 하며, 예외는 없다’를 오독한 이유는 지문에서 (a)와 (b)처럼 두 부분으로 나뉠 수 있음을 설명했는데, 이를 ‘세 부분’으로만 한정해 오해했기 때문이다. → 처방: 지문에서 언급된 ‘두 부분’과 ‘세 부분’의 분할 방식을 비교하며, 예외가 있음을 기억하라.\n④ 진단: ‘항상 두 부분으로 나뉘며, 경우에 따라 세 부분으로 나뉠 수 있다’를 오독한 이유는 지문에서 (a)와 (b)는 두 부분, (c)는 세 부분으로 나뉜다고 설명했는데, 이를 ‘항상 두 부분’이라는 절대적인 표현으로 오해했기 때문이다. → 처방: ‘항상’이라는 절대적 표현을 주의하고, 지문에서 제시된 세 가지 분할 방식을 다시 한 번 정리하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Sentence constituents must be grouped in a way that reflects their syntactic structure without arbitrary divisions.]"
-   }
-  },
-  {
-   "ts": "2026-07-15T17:42:43.842Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "representation of sentence structure through immediate constituents",
-     "division of sentences into two immediate constituents",
-     "analysis of sentence constituents without hierarchical structure",
-     "derivation of immediate constituents from sentence meaning",
-     "classification of sentence phrases based on grammatical rules"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Representation of sentence structure into immediate constituents'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·조건·전제 누락·인과 전도·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 핵심 조건·전제를 빠뜨림· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: ‘즉시적 구성요소’를 ‘두 개로 나누기’에만 초점을 맞추어, 문장 구조의 ‘표현 방법’(phrase marker 로 분석하는 방식) 자체를 보지 못한 오독입니다. 지문에서 (a)·(b)·(c)가 ‘표현 방법’을 두고 다른 구조를 제시한다는 점을 놓쳤습니다. → 처방: ‘즉시적 구성요소’가 문장 구조를 ‘어떻게 표현하는지’를 먼저 떠올리며, phrase marker 가 ‘표현 방법’을 보여주는 도구임을 기억하세요.\n③ 진단: ‘계층적 구조’가 없다는 오해를 보였습니다. 지문에서 (a)·(b)·(c)가 ‘계층’(hierarchical structure)을 두고 서로 다른 분석을 한다는 점을 간과했습니다. → 처방: ‘계층적 구조’를 떠올리며, phrase marker 가 ‘구성요소의 묶음’(constituent)과 그 ‘계층’을 어떻게 그리는지 다시 확인하세요.\n④ 진단: ‘문장 의미’에서 ‘즉시적 구성요소’를 끌어내려는 혼동을 보였습니다. 지문은 ‘문장 구조’를 ‘구성요소’로 분석하는 방식에 초점을 두고, ‘의미’와는 무관함을 놓쳤습니다. → 처방: ‘의미’가 아니라 ‘구조’에 집중하세요. ‘의미’가 아닌 ‘문장 구성요소의 묶음’을 분석하는 phrase marker 의 역할을 떠올리세요.\n⑤ 진단: ‘문법 규칙에 따른 구 분류’를 오해했습니다. 지문은 ‘구’(phrase)가 아니라 ‘구성요소’를 ‘즉시적’으로 나누는 방식을 다룬다는 점을 간과했습니다. → 처방: ‘구’가 아니라 ‘구성요소’를 ‘즉시적’으로 나누는 phrase marker 의 역할을 떠올리며, ‘구’의 분류가 아니라 ‘구성요소 묶음’의 분석임을 기억하세요.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Representation of sentence structure into immediate constituents]"
    }
   }
  ]
