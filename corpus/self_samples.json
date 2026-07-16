@@ -1,6 +1,40 @@
 {
- "updated": "2026-07-16T00:17:53.386Z",
+ "updated": "2026-07-16T03:43:42.970Z",
  "samples": [
+  {
+   "ts": "2026-07-16T03:42:04.147Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.86,
+    "D": 1,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.86)",
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "On the first cycle, in implementing the Authentic Materials, the students were taken into an (A) [enjoyable / miserable] teaching and learning process of reading. The materials successfully kept the students’ (B) [willingness / reluctance], yet not quite successful in their awareness. They did every their work but not in time. It showed that they still lacked of awareness. Therefore, it was decided to solve the awareness problem in the next cycle. From the first cycle, the English teacher, as a collaborator, argued that in solving the remaining problem, the exercises should be enhanced by varying them in many ways. Furthermore, she also argued that the researcher himself should specify his explanation to the students and maintain his composure. Therefore, in the second cycle, the exercises were varied into many ways and every instruction was explained instead of waiting the students to ask. The students were also (C) [motivated / discouraged] by giving tip in effective reading. Those gave good result considering",
+    "choices": [
+     "(A) enjoyable - (B) willingness - (C) motivated",
+     "(A) miserable - (B) reluctance - (C) motivated",
+     "(A) enjoyable - (B) willingness - (C) discouraged",
+     "(A) miserable - (B) willingness - (C) discouraged",
+     "(A) miserable - (B) willingness - (C) motivated"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) enjoyable - (B) willingness - (C) motivated. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: 문맥에 맞지 않게 'miserable'와 'reluctance'를 선택하여 학생들의 학습 과정을 부정적으로 표현했으며, 'motivated'는 긍정적인 의미로 다른 두 단어와 어울리지 않는다. → 처방: 문맥을 다시 읽고, 학생들의 학습 과정을 긍정적으로 표현할 수 있는 단어를 선택하라.\n③ 진단: 학생들의 학습 과정을 긍정적으로 표현하는 'enjoyable'와 'willingness'를 선택했지만, 학생들이 학습에 대해 부정적으로 느끼도록 하는 'discouraged'를 선택하여 모순을 일으켰다. → 처방: 문맥에 일관된 단어를 선택하여 학생들의 학습 과정을 일관되게 표현하라.\n④ 진단: 학생들의 학습 과정을 부정적으로 표현하는 'miserable'와 'discouraged'를 선택했지만, 학생들이 학습에 대해 긍정적으로 느끼도록 하는 'willingness'를 선택하여 모순을 일으켰다. → 처방: 문맥에 일관된 단어를 선택하여 학생들의 학습 과정을 일관되게 표현하라.\n⑤ 진단: 학생들의 학습 과정을 부정적으로 표현하는 'miserable'를 선택했지만, 학생들이 학습에 대해 긍정적으로 느끼도록 하는 'willingness'와 'motivated'를 선택하여 모순을 일으켰다. → 처방: 문맥에 일관된 단어를 선택하여 학생들의 학습 과정을 일관되게 표현하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-16T00:15:39.949Z",
    "type": "안내문일치",
@@ -334,25 +368,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Representation of sentence structure into immediate constituents'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·조건·전제 누락·인과 전도·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 핵심 조건·전제를 빠뜨림· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: ‘즉시적 구성요소’를 ‘두 개로 나누기’에만 초점을 맞추어, 문장 구조의 ‘표현 방법’(phrase marker 로 분석하는 방식) 자체를 보지 못한 오독입니다. 지문에서 (a)·(b)·(c)가 ‘표현 방법’을 두고 다른 구조를 제시한다는 점을 놓쳤습니다. → 처방: ‘즉시적 구성요소’가 문장 구조를 ‘어떻게 표현하는지’를 먼저 떠올리며, phrase marker 가 ‘표현 방법’을 보여주는 도구임을 기억하세요.\n③ 진단: ‘계층적 구조’가 없다는 오해를 보였습니다. 지문에서 (a)·(b)·(c)가 ‘계층’(hierarchical structure)을 두고 서로 다른 분석을 한다는 점을 간과했습니다. → 처방: ‘계층적 구조’를 떠올리며, phrase marker 가 ‘구성요소의 묶음’(constituent)과 그 ‘계층’을 어떻게 그리는지 다시 확인하세요.\n④ 진단: ‘문장 의미’에서 ‘즉시적 구성요소’를 끌어내려는 혼동을 보였습니다. 지문은 ‘문장 구조’를 ‘구성요소’로 분석하는 방식에 초점을 두고, ‘의미’와는 무관함을 놓쳤습니다. → 처방: ‘의미’가 아니라 ‘구조’에 집중하세요. ‘의미’가 아닌 ‘문장 구성요소의 묶음’을 분석하는 phrase marker 의 역할을 떠올리세요.\n⑤ 진단: ‘문법 규칙에 따른 구 분류’를 오해했습니다. 지문은 ‘구’(phrase)가 아니라 ‘구성요소’를 ‘즉시적’으로 나누는 방식을 다룬다는 점을 간과했습니다. → 처방: ‘구’가 아니라 ‘구성요소’를 ‘즉시적’으로 나누는 phrase marker 의 역할을 떠올리며, ‘구’의 분류가 아니라 ‘구성요소 묶음’의 분석임을 기억하세요.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Representation of sentence structure into immediate constituents]"
-   }
-  },
-  {
-   "ts": "2026-07-15T17:42:53.612Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 문장은 세 가지 다른 구문 구조 분석으로 나뉠 수 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
