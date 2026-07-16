@@ -1,6 +1,40 @@
 {
- "updated": "2026-07-16T18:35:38.658Z",
+ "updated": "2026-07-16T20:15:38.170Z",
  "samples": [
+  {
+   "ts": "2026-07-16T20:14:56.017Z",
+   "type": "안내문불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
+    "passage": "Necessity . . . constrains them to alter their former Systems of government. ✓ We now must alter our former Systems of government. Instead of writing as clearly and directly as he did in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a style so indirect and impersonal? One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked. What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]",
+    "choices": [
+     "제퍼슨은 제1부에서 간접적이고 비인격적인 문체를 선택하였다",
+     "제퍼슨은 제1부에서 혁명이 특정 사례가 아닌 일반적인 혁명 원칙을 위한 철학적 근거를 마련하고자 하였다",
+     "제퍼슨은 제1부에서 직접적이고 인격적인 문체를 선택하였다",
+     "제퍼슨은 제1부에서 ‘의견 존중’이 식민지 주민의 행동을 설명하게 한다고 주장하였다",
+     "제퍼슨은 제1부에서 ‘필요’는 식민지 주민을 강제한다고 주장하였다"
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '제퍼슨은 제1부에서 간접적이고 비인격적인 문체를 선택하였다'라고 명확히 서술했는데, 학생은 이 부분을 잘못 읽거나 기억하지 못했다. → 처방: 지문을 다시 천천히 읽고, 제퍼슨의 문체에 대한 설명 부분을 정확히 짚어내기. 문장 전체를 꼼꼼히 확인할 것.\n② 진단: 지문에서 '제퍼슨은 제1부에서 혁명이 특정 사례가 아닌 일반적인 혁명 원칙을 위한 철학적 근거를 마련하고자 하였다'라고 서술했는데, 학생은 이 의미를 잘못 이해하거나 놓쳤다. → 처방: 지문에서 '철학적 기반'과 '일반적 혁명'이라는 단어를 찾아 연결 지어 읽기. '특정 사례'와 '일반적'의 차이를 명확히 구분할 것.\n④ 진단: 지문에서 'respect for opinion requires that [the colonists] explain their action'이라고 서술했는데, 학생은 이 부분을 '의견 존중'이 행동을 설명하게 한다고 오해했다. → 처방: 지문 속 문장을 그대로 따라가며 'requires that'의 의미를 정확히 이해하기. 'requires'는 '필요로 하다'라는 뜻임을 기억할 것.\n⑤ 진단: 지문에서 'necessity constrains them to alter their former Systems of government'라고 서술했는데, 학생은 'constrains'의 의미를 '강제한다'로 잘못 해석했다. → 처방: 'constrains'는 '제한하거나 강요하다'라는 뜻이니, 문맥에 맞게 '필요는 그들을 강제한다'로 이해하기. 단어의 뜻을 정확히 확인할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-16T18:34:07.750Z",
    "type": "복합세트",
@@ -305,41 +339,6 @@
     ],
     "answer": 1,
     "explanation": "정답 조합: (A) enjoyable - (B) willingness - (C) motivated. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: 문맥에 맞지 않게 'miserable'와 'reluctance'를 선택하여 학생들의 학습 과정을 부정적으로 표현했으며, 'motivated'는 긍정적인 의미로 다른 두 단어와 어울리지 않는다. → 처방: 문맥을 다시 읽고, 학생들의 학습 과정을 긍정적으로 표현할 수 있는 단어를 선택하라.\n③ 진단: 학생들의 학습 과정을 긍정적으로 표현하는 'enjoyable'와 'willingness'를 선택했지만, 학생들이 학습에 대해 부정적으로 느끼도록 하는 'discouraged'를 선택하여 모순을 일으켰다. → 처방: 문맥에 일관된 단어를 선택하여 학생들의 학습 과정을 일관되게 표현하라.\n④ 진단: 학생들의 학습 과정을 부정적으로 표현하는 'miserable'와 'discouraged'를 선택했지만, 학생들이 학습에 대해 긍정적으로 느끼도록 하는 'willingness'를 선택하여 모순을 일으켰다. → 처방: 문맥에 일관된 단어를 선택하여 학생들의 학습 과정을 일관되게 표현하라.\n⑤ 진단: 학생들의 학습 과정을 부정적으로 표현하는 'miserable'를 선택했지만, 학생들이 학습에 대해 긍정적으로 느끼도록 하는 'willingness'와 'motivated'를 선택하여 모순을 일으켰다. → 처방: 문맥에 일관된 단어를 선택하여 학생들의 학습 과정을 일관되게 표현하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T00:15:39.949Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Word Categories 7 Although some of these may sound strange concepts, they are perfectly acceptable forms. The idea–ideas case is the most straightforward. The distinction between these two words is that while the first refers to a single thing, the second refers to more than one of them. This is the distinction between singular and plural and in general this distinction can apply to virtually all nouns. Consider a more strange case: friendliness– friendlinesses. What is strange here is not the grammatical concepts of singular or plural, but that the semantic distinction is not one typically made. However, it is perfectly possible to conceptualise different types of friendliness: one can be friendly by saying good morning to someone as you pass in the street, without necessarily entering into a deeper relationship with them; other forms of friendliness may demand more of an emotional commitment. Therefore we can talk about different friendlinesses. By contrast, consider the following, based on the words in (9): (11) conceptualises",
-    "choices": [
-     "‘이 dea’는 복수형으로 하나의 사물을 가리키며 ‘ideas’는 단수형으로 둘 이상을 가리킨다.",
-     "대부분의 명사는 단수와 복수의 구분이 예외적이다.",
-     "'friendliness'는 보통 하나의 개념이지만 여러 형태의 친절을 의미할 수 있다.",
-     "친절의 한 형태는 지나가면서 아침인사를 하는 복잡한 행동일 수 있다.",
-     "친절의 다른 형태는 감정적 헌신을 요구하지 않는 더 깊은 관계일 수 있다."
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘idea’는 단수형(하나의 사물), ‘ideas’는 복수형(둘 이상)으로 지문에서 분명히 설명했는데, 선지는 ‘dea’(dea 가 없음)와 ‘ideas’의 역할과 의미를 반대로 설명했음. 지문 2~3행 ‘idea–ideas’의 구분을 보면 알 수 있음. → 처방: 문제에서 ‘idea–ideas’의 뜻을 정확히 확인하고, 선지가 설명하는 단수·복수 관계를 반대로 설명하지 않았는지 다시 한 번 확인하기.\n② 진단: ‘대부분의 명사는 단수와 복수의 구분이 예외적’이라는 선지는 지문 4행 ‘in general this distinction can apply to virtually all nouns’와 반대됨. ‘예외적’이 아니라 ‘일반적’이라는 지문의 내용을 잘못 읽었음. → 처방: 지문의 ‘in general’이나 ‘virtually all nouns’를 주의 깊게 읽고, ‘예외’라는 단어가 나오면 지문과 대조해서 확인하기.\n④ 진단: ‘친절의 한 형태는 지나가면서 아침인사를 하는 복잡한 행동’이라는 선지는 지문에서 ‘friendliness’의 한 형태를 ‘간단한 인사’로 설명했는데, ‘복잡한 행동’이라고 잘못 이해했음. 지문 8~9행 ‘one can be friendly by saying good morning’를 오해한 듯함. → 처방: 지문의 ‘saying good morning’를 ‘간단한 인사’로 이해하고, ‘복잡한 행동’이라는 표현이 나오면 지문과 비교해서 맞는지 확인하기.\n⑤ 진단: ‘친절의 다른 형태는 감정적 헌신을 요구하지 않는 더 깊은 관계’라는 선지는 지문 10~11행 ‘other forms of friendliness may demand more of an emotional commitment’를 반대로 설명했음. ‘감정적 헌신을 요구하지 않는다’가 아니라 ‘요구할 수도 있다’로 지문 내용과 반대됨. → 처방: 지문의 ‘may demand’를 ‘요구할 수 있다’로 정확히 이해하고, 선지가 반대 의미를 담고 있는지 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
