@@ -7,10 +7,28 @@ GPT(codex 구독): high(심층 리서치) · low(빠른 아이디어)
 
 route(text) -> {"executor","model","effort","reason","tier"}
 plan(text)  -> [route, ...]  (복합 요청을 단계로 분해해 각기 라우팅)"""
-import re
+import re, os, io, json
+HERE = os.path.dirname(os.path.abspath(__file__))
 
-# (정규식, executor, model/effort, tier라벨, 이유)
-RULES = [
+def _load_roles():
+    """roles.json(단일 진실)에서 라우팅 규칙 로드. 없으면 내장 RULES 사용."""
+    try:
+        d = json.load(io.open(os.path.join(HERE, "roles.json"), encoding="utf-8"))
+        rules = []
+        for r in d.get("routing_rules", []):
+            ex = r.get("executor", "claude")
+            mt = r.get("model") if ex == "claude" else r.get("effort")
+            rules.append((r["pat"], ex, mt, r.get("tier", ""), r.get("reason", "")))
+        dv = d.get("default", {})
+        default = (dv.get("executor", "claude"), dv.get("model") or dv.get("effort", "sonnet"),
+                   dv.get("tier", "고속"), dv.get("reason", ""))
+        if rules: return rules, default
+    except Exception:
+        pass
+    return None, None
+
+# (정규식, executor, model/effort, tier라벨, 이유) — 내장 폴백
+_BUILTIN = [
     # ── Claude Fable : 오류 창작·정밀 판정·최종 신뢰 ──
     (r"어법|문법|틀린|수일치|분사|관계사|어순|비문|정오|맞았|틀렸", "claude", "fable", "정밀·신뢰", "어법 정오는 최고 신뢰 필요"),
     (r"어휘\s*문항|반의어|문맥상.*낱말|낱말.*적절", "claude", "fable", "정밀·신뢰", "어휘 교체 정밀성"),
@@ -25,7 +43,9 @@ RULES = [
     # ── GPT(codex) low : 빠른 아이디어·2nd opinion ──
     (r"아이디어|브레인스토밍|다른\s*관점|2nd|세컨|반론|비판적으로|한번\s*더\s*봐", "codex", "low", "GPT아이디어", "빠른 대안·반론"),
 ]
-DEFAULT = ("claude", "sonnet", "고속", "일반 대화는 저렴·빠른 Sonnet")
+_loaded, _default = _load_roles()
+RULES = _loaded or _BUILTIN
+DEFAULT = _default or ("claude", "sonnet", "고속", "일반 대화는 저렴·빠른 Sonnet")
 
 def route(text):
     t = str(text or "")

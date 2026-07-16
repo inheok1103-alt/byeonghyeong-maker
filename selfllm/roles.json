@@ -1,0 +1,31 @@
+{
+ "_note": "RAY 역할분담 단일 진실. ray_router.py가 routing_rules를 읽고, AGENTS.md가 사람/GPT용. 여기만 고치면 전 세션 반영.",
+ "version": "1.0",
+ "executors": {
+  "fable":      { "who": "Claude · 페이블", "lane": "최고 신뢰 — 어법·어휘 오류 출제/검수, 문항 정답 확정, 애매한 정오 최종 판정, 킬러 문항", "cost": "구독" },
+  "opus":       { "who": "Claude · 오퍼스", "lane": "심화 추론 — 해설 작성, 교재·커리큘럼 구조 설계, 복잡한 논리 검증, 코드 아키텍처", "cost": "구독" },
+  "sonnet":     { "who": "Claude · Sonnet", "lane": "고속·저비용 — 번역, 요약, 정리, 포맷 변환, 대량 반복, 간단 Q&A", "cost": "구독" },
+  "gpt_high":   { "who": "GPT · Codex(high)", "lane": "외부지식 심층 — 리서치·조사·시장/사례 비교, 시스템/폴더 통합, 코드 구현·리팩터", "cost": "구독" },
+  "gpt_low":    { "who": "GPT · Codex(low)", "lane": "빠른 발상 — 아이디어·브레인스토밍, 2nd opinion·반론", "cost": "구독" },
+  "free_brain": { "who": "무료 뇌(mistral/groq)", "lane": "분석 서술 — 직독직해, 구조분석, 어휘, 흐름 (대량, 무료)", "cost": "무료" },
+  "code":       { "who": "결정적 코드", "lane": "지문 조작 — 순서·문장삽입·배열영작·빈칸찾기 (LLM 불필요)", "cost": "무료" }
+ },
+ "handoff": [
+  "문항 창작(선지·정답·오류주입)이 필요하면: 무료 뇌 초안 → 검증 게이트 → 페이블 승격",
+  "최종 정답·신뢰 판정은 항상 페이블(Claude Fable)",
+  "리서치·폴더통합·시스템/코드 작업은 GPT(Codex)",
+  "분석(직독직해·구조·어휘)은 무료 뇌가 담당(토큰 절약)",
+  "공유 버스: ray_hub (_fable 요청함 + 검수큐 + activity.log) — 어느 세션이 접수해도 동일 백로그"
+ ],
+ "routing_rules": [
+  { "pat": "어법|문법|틀린|수일치|분사|관계사|어순|비문|정오|맞았|틀렸",              "executor": "claude", "model": "fable",  "tier": "정밀·신뢰", "reason": "어법 정오는 최고 신뢰" },
+  { "pat": "어휘\\s*문항|반의어|문맥상.*낱말|낱말.*적절",                            "executor": "claude", "model": "fable",  "tier": "정밀·신뢰", "reason": "어휘 교체 정밀성" },
+  { "pat": "출제|문항\\s*만들|정답\\s*(확정|검증|판정)|오답\\s*설계|변형\\s*문제|킬러", "executor": "claude", "model": "fable",  "tier": "출제·판정", "reason": "문항 창작·정답 확정" },
+  { "pat": "검수|검증|최종\\s*확정|믿을|신뢰|리스크|위험\\s*검토",                    "executor": "claude", "model": "fable",  "tier": "검수",     "reason": "최종 신뢰 판정" },
+  { "pat": "해설|왜\\s|근거|논리|추론|분석해|구조\\s*설계|커리큘럼|교재\\s*설계|알고리즘|아키텍처|리팩터|디자인", "executor": "claude", "model": "opus", "tier": "심화추론", "reason": "복잡한 추론·설계" },
+  { "pat": "번역|요약|정리|포맷|목록|표로|간단|짧게|바꿔|정돈|맞춤법|오타|리스트",     "executor": "claude", "model": "sonnet", "tier": "고속",     "reason": "빠르고 저렴한 반복" },
+  { "pat": "리서치|조사|최신|트렌드|사례\\s*조사|비교\\s*분석|시장|경쟁|자료\\s*찾|근거\\s*수집|심층|통합|폴더|구현|배포", "executor": "codex", "effort": "high", "tier": "GPT심층", "reason": "외부지식·시스템 작업은 GPT" },
+  { "pat": "아이디어|브레인스토밍|다른\\s*관점|2nd|세컨|반론|비판적으로|한번\\s*더\\s*봐", "executor": "codex", "effort": "low", "tier": "GPT아이디어", "reason": "빠른 대안·반론" }
+ ],
+ "default": { "executor": "claude", "model": "sonnet", "tier": "고속", "reason": "일반 대화는 저렴·빠른 Sonnet" }
+}
