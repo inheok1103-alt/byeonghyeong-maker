@@ -1,6 +1,31 @@
 {
- "updated": "2026-07-16T06:37:42.824Z",
+ "updated": "2026-07-16T09:41:24.820Z",
  "samples": [
+  {
+   "ts": "2026-07-16T09:38:36.514Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] They thought I should die.\n\nEustacia’s dream had always been that, once married to Clyne, she would have the power of inducing him to return to Paris (Hardy). ( ① ) You (he) will (future) becomes I shall or I should because I will or I would would call up too strongly the idea of volition: Do you think I shall recover soon? ( ② ) She said I should please her much more if I would only press her hand and go away. ( ③ ) Notional Survey of Time-Expressions 26. ( ④ ) We have finished our examination of the tenses of the English verb and those auxiliaries which correspond more or less to the tenses of other languages (Chaps. ( ⑤ ) It will now be expedient to look at the same subject-matter from the other side, starting from the notions of time that are universal, independent of any special linguistic features, and then asking ourselves in what different ways they find expression in the English verb. Principal Divisions of Time. These may be represented in the following diagram (23.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ① 위치 앞 문장('You (he) will becomes I shall or I should...')의 미래 시제 설명과 연결해 'should'의 의미(의무·예상)를 오해하고, 문맥상 예시가 아닌 규칙 설명으로 오인했을 수 있음. ② 'They thought I should die.'는 'die'의 결과가 예상됨(예상·의무)을 나타내지만, ①은 시제 전환의 규칙 설명에 불과함. → 처방: 문맥상 'should'가 미래의 예상이나 결과로 쓰였는지, 규칙 설명인지 먼저 확인하기.\n② 진단: ② 위치 앞 문장('Do you think I shall recover soon?')의 'shall' 사용 예시와 연결해 'should'의 의미(의무·예상)를 오해했을 수 있음. ②는 'shall'의 사용 규칙을 설명하는 부분으로, 학생의 문장은 의무·예상 의미를 담고 있어 어울리지 않음. → 처방: 'should'가 의무·예상 의미를 담은 문장인지, 시제 규칙 설명인지 구별하기.\n④ 진단: ④ 위치 앞 문장('We have finished our examination of the tenses...')은 시제 설명의 마무리 부분으로, 학생의 문장은 시제 설명이 아닌 결과나 예상을 나타내는 문장임. 문맥상 어울리지 않음. → 처방: 해당 위치가 시제나 규칙 설명의 마무리인지, 결과나 예상을 담은 문장인지 먼저 확인하기.\n⑤ 진단: ⑤ 위치 앞 문장('It will now be expedient to look at the same subject-matter...')은 시제 설명의 전환 부분으로, 학생의 문장은 시제 설명이 아닌 결과나 예상을 나타내는 문장임. 문맥상 어울리지 않음. → 처방: 해당 위치가 시제 전환이나 새로운 주제 도입인지, 결과나 예상을 담은 문장인지 먼저 확인하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-16T06:32:35.993Z",
    "type": "틀린문장 고쳐쓰기",
@@ -319,25 +344,6 @@
     ],
     "answer": 5,
     "explanation": "밑줄 친 부분은 'Complacency leads to a dangerous indifference toward one's surroundings.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘overconfidence’(과신)만 강조하고 ‘comfortably uncaring’(편안히 무관심해진 상태)의 ‘무관심’과 ‘주변 환경’(surroundings)을 직접 연결하지 않아 오독. → 처방: ‘무관심’의 대상이 ‘주변 환경’이라는 점을 반드시 확인하고, ‘과신’이 ‘무관심’을 낳는다는 흐름을 따라가기.\n② 진단: ‘false sense of security’(안심의 착각)이 ‘neglect’(소홀히 함)을 낳는다는 점은 맞지만, ‘주변에서 벌어지는 일’을 ‘무시’하는 것과 ‘무관심’이란 상태를 혼동. → 처방: ‘무관심’이란 ‘주변 환경 자체에 대한 관심 부족’이라는 의미를 정확히 짚고 넘어가기.\n③ 진단: ‘Feeling too safe’(너무 안전한 느낌)가 ‘완전한 무시’(complete disregard)로 과장되어 ‘무관심’의 정도를 잘못 해석. → 처방: ‘무관심’이란 ‘관심 부족’이지만 ‘완전한 무시’는 아니라는 점을 분명히 하고 넘어가기.\n④ 진단: ‘assuming everything is fine’(모든 게 괜찮다고 가정함)이 ‘주변 위험’(surrounding dangers)에 대한 ‘관심 부족’을 낳는다는 점은 맞지만, ‘완전한 무시’(disregard)로 이어지는 흐름을 오독. → 처방: ‘무관심’이란 ‘관심 부족’이지만 ‘완전한 무시’는 아니라는 점을 정확히 짚고 넘어가기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-15T22:18:25.809Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 각 단어를 두 번째 열의 올바른 정의와 일치시킵니다.\n주어진 단어: ( each / word / Match / from / the / definition / column / correct / its / with / second )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Match each word with its correct definition from the second column.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

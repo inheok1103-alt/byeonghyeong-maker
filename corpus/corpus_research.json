@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-16T06:37:42.819Z",
+ "updated": "2026-07-16T09:41:24.815Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-16T09:41:00.885Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거형 동사(insistments, advertisments, thier)가 명사 오류로 사용된 경우, 해당 동사를 올바른 명사형(insistence, advertisements, their)으로 대체해야 한다.",
+   "rule": "과거형 동사 형태가 명사 자리에 오류로 사용된 경우, 반드시 해당 동사의 올바른 명사형(예: insist → insistence, advertise → advertisement, they → their)으로 수정하도록 문항을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-16T06:33:40.487Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거형 동사(help, subsidize, put 등)가 주제어(lecturer, policy 등)와 결합할 때 3인칭 단수 현재형(-s) 오류가 빈번하며, 'there'의 오용(there → their)도 다수 관찰된다. 또한 'to do' 뒤에 동사원형이 아닌 'to do better'와 같이 불필요한 'to'가 삽입되는 패턴이 반복된다.",
    "rule": "CEFR B1/B2 수준의 문법 오류 유형(3인칭 단수 현재형 동사, there/their 혼동, 불필요한 'to' 삽입)을 중심으로 내신 변형문제를 출제할 때에는, 주어진 문장에 3인칭 단수 주어가 포함된 경우 동사의 현재형(-s) 변형을 반드시 요구하고, 'there/their' 혼동과 'to do' 뒤의 동사원형 오용을 교정하는 선택지를 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-11T09:02:20.587Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "시제 불일치와 부정사/동명사의 혼용이 빈번하며, 주어-동사 일치와 전치사/관사 선택(예: 'at a red light')에서 오류가 자주 발생한다.",
-   "rule": "시제 불일치 오류를 방지하기 위해, 조건문(if절)과 주절의 시제가 동일하거나 논리적으로 일치하는지 확인하는 문항을 출제하라(예: 'if they start' → 'they will never give it up'로 변형).",
    "sample": [
     "old english",
     "university press",
