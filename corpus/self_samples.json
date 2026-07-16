@@ -1,6 +1,44 @@
 {
- "updated": "2026-07-16T21:22:06.900Z",
+ "updated": "2026-07-16T23:14:12.399Z",
  "samples": [
+  {
+   "ts": "2026-07-16T23:13:31.077Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "It's Friday afternoon. David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick has arrived at the flat. Now David is reporting what Tom said. So instead of Tom's words I'm having, David says he's having. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So instead of here, he says at his flat. And a day has passed since he first heard about it. It is now the day of the party. So instead of tomorrow evening, David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-16T23:13:43.106Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 데이비드는 오늘 저녁 아파트에서 파티를 한다고 말합니다.\n주어진 단어: ( david / having / party )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] David says he's having a party at his flat this evening. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-16T21:19:04.567Z",
    "type": "빈칸(어구)",
@@ -280,76 +318,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [수일치] ⓓ: 'Russian grammars during that time' → 'Russian grammar during that time' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T06:33:05.536Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "문화적 믿음과 사회 구조의 급격한 변화가 문법의 변화를 이끈다.",
-     "문법은 특정 사회에서만 상대적으로 안정성을 유지할 뿐이다.",
-     "모든 언어의 문법은 역사적으로 한 번도 변한 적이 없다.",
-     "문법은 때때로 급격한 변화가 일어나기도 하지만 대부분은 안정적이다.",
-     "문화적 믿음과 사회 구조의 변화에도 불구하고 문법은 거의 변하지 않는다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Grammar remains largely unchanged despite dramatic shifts in cultural beliefs and social structures.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 문화적 믿음과 사회 구조의 변화가 문법 변화를 이끈다고 오해했는데, 지문은 문법이 변하지 않았다고 설명한다. '끌어낸다'는 표현을 문법 변화의 원인으로 오독한 듯. → 처방: 문법 변화의 원인을 찾기보다, 문법의 안정성을 먼저 확인하는 방향으로 문제를 읽기.\n② 진단: 사회 구조의 안정성을 문법의 안정성과 혼동했다. 지문은 문법이 특정 사회에서만 안정적이라는 말이 아니라, 모든 사회에서 문법이 대체로 변하지 않았다고 설명한다. → 처방: 문법의 안정성이 '특정 사회'가 아니라 '모든 사회'에서 나타난다는 점을 기억하기.\n③ 진단: '한 번도 변한 적이 없다'는 극단적 표현을 문법의 변화 가능성과 혼동했다. 지문은 문법이 '거의' 변하지 않았다고만 말하고 있다. → 처방: 문법의 변화 가능성을 인정하되, '거의 없다'는 표현에 주목하기.\n④ 진단: 문법이 때때로 급격한 변화가 일어나기도 한다고 오해했는데, 지문은 문법이 대체로 안정적이며 변화가 미미하다는 점을 강조한다. → 처방: 문법의 변화 가능성을 배제하지는 않지만, '대체로 안정적'이라는 핵심 뜻을 먼저 파악하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Grammar remains largely unchanged despite dramatic shifts in cultural beliefs and social structures.]"
-   }
-  },
-  {
-   "ts": "2026-07-16T06:33:33.323Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the persistence of grammar despite cultural changes",
-     "the influence of grammar on cultural development",
-     "the stability of grammar in Russian culture",
-     "the unchanging nature of grammar across all societies",
-     "the complete immutability of grammar over time"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The stability of grammar despite cultural shifts'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 문화 발달이 문법에 영향을 미쳤을 것이라는 선입견으로 지문의 핵심(문법의 불변성 vs 문화 변화)을 오해함. 지문은 문법이 변하지 않았다고 설명하지 문법이 문화에 영향을 주었다고 말하지 않음. → 처방: 문제에서 '주제'를 찾을 때는 지문의 핵심 주장(문법의 불변성)을 먼저 확인하고, 선지가 그 주장과 직접 연결되는지 검토할 것.\n③ 진단: 러시아 문화의 변화보다는 러시아 문법의 특징에만 초점을 맞춤. 지문은 러시아 문법이 변하지 않았다는 예시일 뿐 주제는 문법의 불변성과 문화 변화의 대조임. → 처방: 지문 전체를 읽고 '주제'가 무엇인지 한 문장으로 요약한 뒤, 각 선지가 그 요약과 맞는지 확인할 것.\n④ 진단: 모든 사회에서 문법이 변하지 않는다는 과장된 해석으로 지문의 예시(러시아, 영어)를 일반화함. 지문은 특정 사례(러시아 문법의 불변성)를 설명할 뿐 모든 사회에 적용되지 않음. → 처방: 선지가 '과도한 일반화'나 '절대화' 표현(예: '모든', '항상', '완전히')을 쓰고 있는지 확인하고, 지문에 그런 말이 있는지 재확인할 것.\n⑤ 진단: 문법이 '완전히' 변하지 않는다는 오해로 지문의 '거의 변하지 않음'을 '전혀 변하지 않음'으로 과장함. 지문은 문법이 '거의' 변하지 않았다고 설명하지 '완전히' 변하지 않았다고 말하지 않음. → 처방: 지문에서 '정도'를 나타내는 단위(예: '거의', '거의 변하지 않음')가 있는지 확인하고, 선지가 그런 단어를 오용하지 않았는지 점검할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The stability of grammar despite cultural shifts]"
    }
   }
  ]
