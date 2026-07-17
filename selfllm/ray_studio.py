@@ -98,9 +98,25 @@ BRAIN_PROMPT_GRAMMAR = """당신은 한국 수능·내신 영어 어법(어법 �
 }}
 정확히 1개만 is_answer=true. 유효 JSON 하나만."""
 
-def analyze_with_brain(passage, template=BRAIN_PROMPT, topic="지문분석"):
+def playbook_preamble(qt):
+    """★ 되먹임: 학습된 유형 출제방식·출제의도·오답설계를 생성 프롬프트에 주입."""
+    if not qt: return ""
+    try:
+        pb = load_kb().get("type_playbook", {}).get(qt)
+        if not pb or pb.get("samples", 0) < 1: return ""
+        lines = [f"[학습된 '{qt}' 출제방식 — 표본 {pb['samples']}건]"]
+        if pb.get("distractors"):
+            top = sorted(pb["distractors"].items(), key=lambda x: -x[1])
+            lines.append("오답 5개를 다음 유형으로 다양하게 설계하라: " + ", ".join(k for k, _ in top[:5]))
+        if pb.get("intents"):
+            lines.append("검증된 출제의도 예: " + pb["intents"][-1][:120])
+        return "\n".join(lines) + "\n\n"
+    except Exception:
+        return ""
+
+def analyze_with_brain(passage, template=BRAIN_PROMPT, topic="지문분석", extra=""):
     log("뇌(API)에게 지문 분석 요청 중…")
-    prompt = ray_escalate.lessons_preamble() + template.replace("{PASSAGE}", passage)
+    prompt = ray_escalate.lessons_preamble() + extra + template.replace("{PASSAGE}", passage)
     def local():
         data, prov = ray_llm.ask_json([{"role": "user", "content": prompt}], temperature=0.35, timeout=90)
         data["_provider"] = prov; log(f"뇌 응답 (provider={prov})"); return data
@@ -256,8 +272,50 @@ def offline_reading_json(passage, meta, header):
             "rationale": "(오프라인 생성 — 뇌 미연결)", "flow": flow, "logic": {"rows": [], "banner": ""},
             "wrong": [], "vocab": []}
 
+DISTRACTOR_TAX = [
+    (r"부분|소재일 뿐|일부만|지엽", "부분소재"),
+    (r"반대|정반대|상충|우위가 아니라|오히려", "반대방향"),
+    (r"언급.*없|나오지 않|무관|초점이 아니|전혀", "무관·미언급"),
+    (r"비유|예시일 뿐|사례일 뿐|도입", "예시·비유오인"),
+    (r"과장|지나치|too|과잉|일반화", "과잉일반화"),
+]
+def learn_from_deck(data):
+    """★ 학습 동시진행: 제작된 덱에서 유형 출제방식·출제의도·오답설계를 뇌에 축적."""
+    try:
+        kb = load_kb(); pb = kb.setdefault("type_playbook", {})
+        qt = data.get("answer_label") or ("어법" if data.get("points") else "독해")
+        meta = str(data.get("meta", "")); verified = ("페이블" in meta) or ("GPT" in meta) or ("검수완료" in meta)
+        rec = pb.setdefault(qt, {"samples": 0, "verified": 0, "stems": [], "distractors": {}, "intents": [], "examples": []})
+        rec["samples"] += 1
+        if verified: rec["verified"] += 1
+        st = data.get("stem", "")
+        if st and st not in rec["stems"]: rec["stems"] = (rec["stems"] + [st])[-6:]
+        # 오답설계 분류(출제방식 학습)
+        for w in data.get("wrong", []):
+            txt = str(w.get("text", "")); cat = "기타"
+            for pat, name in DISTRACTOR_TAX:
+                if re.search(pat, txt): cat = name; break
+            rec["distractors"][cat] = rec["distractors"].get(cat, 0) + 1
+        # 출제의도(정답 근거) — 검증된 것 우선 축적
+        rat = data.get("rationale") or data.get("explanation_core") or ""
+        if rat and verified:
+            rec["intents"] = (rec["intents"] + [rat[:180]])[-5:]
+        if verified:
+            ex = {"header": data.get("header", ""), "answer": data.get("answer"),
+                  "answer_plain": (data.get("answer_plain") or "")[:80]}
+            rec["examples"] = (rec["examples"] + [ex])[-4:]
+        kb["stats"] = kb.get("stats", {}); kb["stats"]["decks_learned"] = kb["stats"].get("decks_learned", 0) + 1
+        save_kb(kb)
+        log(f"학습: '{qt}' 유형 출제방식 축적(표본 {rec['samples']}·검증 {rec['verified']}·오답유형 {list(rec['distractors'])})")
+        try:
+            import ray_hub; ray_hub.log("brain", "learn_deck", f"{qt} · verified={verified}")
+        except Exception: pass
+    except Exception as e:
+        log(f"학습 스킵({str(e)[:40]})")
+
 def render(data_json, base):
     os.makedirs(OUT_DIR, exist_ok=True)
+    learn_from_deck(data_json)   # ★ 제작과 동시에 학습
     src = os.path.join(HERE, f"_studio_{base}.json")
     json.dump(data_json, io.open(src, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     ppt = os.path.join(OUT_DIR, f"판서_{base}.pptx")
@@ -338,7 +396,7 @@ def make(passage, kind="reading", meta="RAY 올인원", header="RAY 수업", bas
                     review_enqueue({"kind": "grammar", "header": header, "rid": rid, "json": os.path.join(HERE, f"_studio_{base}.json")})
                     log(f"어법 무료 {tries}회 실패 → 페이블 연동 요청 (rid={rid}). 이 챗 검수 후 재실행 시 확정.")
         else:
-            brain = analyze_with_brain(passage); data = build_reading_json(passage, meta, header, brain)
+            brain = analyze_with_brain(passage, extra=playbook_preamble(qt)); data = build_reading_json(passage, meta, header, brain)
             probs = validate_reading(data)
             if probs:   # ★ 무료 문항 품질 미달 → 페이블 출제로 승격
                 log("문항 품질 미달: " + "; ".join(probs) + " → 페이블 출제 요청")
