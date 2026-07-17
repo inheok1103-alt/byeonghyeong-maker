@@ -25,8 +25,26 @@ def attrs(a):
         if "=" in t: k,v=t.split("=",1); d[k.strip()]=v.strip()
         else: d[t]=True
     return d
+def flatten_markup(text):
+    """중첩 마크업 방어: 바깥 태그 안의 안쪽 태그를 평문(+뜻풀이)으로 녹임."""
+    s=str(text or "")
+    for _ in range(6):
+        changed=[False]
+        def repl(m):
+            before=s[:m.start()]
+            if before.count("<<")>before.count(">>"):
+                changed[0]=True
+                a=attrs(m.group(2)); g=a.get("g")
+                return m.group(1)+(("("+str(g)+")") if g and g is not True else "")
+            return m.group(0)
+        s2=re.sub(r'<<([^<>]*?)\|([^<>]*?)>>',repl,s); s=s2
+        if not changed[0]: break
+    if s.count("<<")!=s.count(">>"): s=s.replace("<<","").replace(">>","")
+    return s
+
 def md_html(text, marked=True):
     """마크업 → HTML. marked=False면 색/하이라이트 제거(문제면용, 밑줄·번호는 유지)."""
+    text=flatten_markup(text)
     out=[]
     for tok in re.split(r'(<<.*?>>)',text):
         if not tok: continue

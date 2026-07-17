@@ -80,7 +80,27 @@ def parse_attrs(a):
         if "=" in tok: k,v=tok.split("=",1); d[k.strip()]=v.strip()
         else: d[tok]=True
     return d
+def flatten_markup(text):
+    """중첩 마크업(<<A <<B|g=뜻>>|tc=..>>) 방어: 바깥 태그 '안'에 있는 안쪽 태그를 평문(+뜻풀이)으로 녹인다."""
+    s=str(text or "")
+    for _ in range(6):
+        changed=[False]
+        def repl(m):
+            before=s[:m.start()]
+            if before.count("<<") > before.count(">>"):      # 바깥 태그 안 = 중첩
+                changed[0]=True
+                a=parse_attrs(m.group(2)); g=a.get("g")
+                return m.group(1)+(("("+str(g)+")") if g and g is not True else "")
+            return m.group(0)
+        s2=re.sub(r'<<([^<>]*?)\|([^<>]*?)>>', repl, s)
+        s=s2
+        if not changed[0]: break
+    if s.count("<<") != s.count(">>"):                        # 짝 안 맞으면 태그 제거(누수 방지)
+        s=s.replace("<<","").replace(">>","")
+    return s
+
 def emit(p,text,sz,base_c=WHITE,base_name=EN):
+    text=flatten_markup(text)
     for tok in re.split(r'(<<.*?>>)',text):
         if not tok: continue
         if tok.startswith("<<") and tok.endswith(">>"):
@@ -96,6 +116,7 @@ def emit(p,text,sz,base_c=WHITE,base_name=EN):
         else:
             run(p,tok,sz,base_c,name=base_name)
 def strip_markup(text):
+    text=flatten_markup(text)
     out=[]
     for tok in re.split(r'(<<.*?>>)',text):
         if tok.startswith("<<") and tok.endswith(">>"):
@@ -182,10 +203,10 @@ if L.get("sents"):
             emit(p,en,esz,WHITE)            # en에 <<S..|tc=cyan>> 등 구문 색분해 마크업 지원
             if ko:
                 p2=ptf.add_paragraph(); p2.space_before=Pt(1); p2.line_spacing=1.16
-                run(p2,"   ",esz,WHITE); run(p2,ko,esz-0.5,TC["cyan"],name=KO)
+                run(p2,"   ",esz,WHITE); run(p2,strip_markup(ko),esz-0.5,TC["cyan"],name=KO)
             if note:
                 p3=ptf.add_paragraph(); p3.space_before=Pt(0); p3.line_spacing=1.1
-                run(p3,"   ▸ ",esz-1,GOLD); run(p3,note,esz-1.5,MUTE,name=KO)
+                run(p3,"   ▸ ",esz-1,GOLD); run(p3,strip_markup(note),esz-1.5,MUTE,name=KO)
         foot(s,"직독직해: S(주어)·V(동사)·O/C·M(수식) 구문을 색으로 끊어 읽는다")
 
 # ═══ 글의 흐름 지도 ═══
