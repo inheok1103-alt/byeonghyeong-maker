@@ -48,14 +48,17 @@ MOCK_CYCLE = [
 def _count(p):
     return sum(len(fs) for _, _, fs in os.walk(p)) if os.path.isdir(p) else 0
 
-def _find(folder, *pats):
-    """폴더(하위 포함)에서 패턴 전부를 포함하는 파일 검색."""
-    root = os.path.join(MOCK, folder) if not folder.startswith(("00_본문", "01_", "02_", "03_", "04_", "05_", "06_", "_RAY")) \
-           else os.path.join(BASE, folder)
+def _find(folder, *pats, track="auto"):
+    """폴더(하위 포함)에서 패턴 전부를 포함하는 파일 검색. track: textbook|mock|auto(양쪽 시도)."""
+    roots = []
+    if track in ("textbook", "auto"): roots.append(os.path.join(BASE, folder))
+    if track in ("mock", "auto"): roots.append(os.path.join(MOCK, folder))
     hits = []
-    for r, _, fs in os.walk(root if os.path.isdir(root) else os.path.join(BASE, folder)):
-        for f in fs:
-            if all(re.search(p, f) for p in pats): hits.append(os.path.join(r, f))
+    for root in roots:
+        if not os.path.isdir(root): continue
+        for r, _, fs in os.walk(root):
+            for f in fs:
+                if all(re.search(p, f) for p in pats): hits.append(os.path.join(r, f))
     return sorted(hits)
 
 def inventory():
@@ -137,9 +140,9 @@ def make_textbook(lesson, sec, qtype):
 def make_mock(year, month):
     mm = str(int(month))
     # 최적 소스: 예상문제 통합본(문제+정답) → 지문분석
-    cands = _find("02_예상문제", rf"{year}년", rf"{mm}월", r"문제\+정답\)")
-    if not cands: cands = _find("02_예상문제", rf"{year}년", rf"{mm}월")
-    ana = _find("03_지문분석", rf"{year}년", rf"{mm}월")
+    cands = _find("02_예상문제", rf"{year}년", rf"{mm}월", r"문제\+정답\)", track="mock")
+    if not cands: cands = _find("02_예상문제", rf"{year}년", rf"{mm}월", track="mock")
+    ana = _find("03_지문분석", rf"{year}년", rf"{mm}월", track="mock")
     print(f"회차: {year}년 {mm}월 학평")
     print("  원문 소스(우선):", os.path.basename(cands[0]) if cands else "없음")
     print("  분석 소스(근거):", os.path.basename(ana[0]) if ana else "없음")
