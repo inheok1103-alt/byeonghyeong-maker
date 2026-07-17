@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-17T00:14:44.800Z",
+ "updated": "2026-07-17T03:42:53.238Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-17T03:42:23.091Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거형 동사와 현재형 동사가 병렬 구조로 나열될 때, 동사의 시제 일관성과 보어/부사 형태의 정확한 사용이 중요하다. 특히 'recovered good' → 'recovered well'과 같이 보어 형용사가 부사 형태로 변환되어야 하는 패턴이 빈번하다.",
+   "rule": "원서 코퍼스에서 확인된 병렬 구조의 동사 시제 일치와 보어/부사 형태 변환 규칙을 적용하여, 'A got better and recovered really good' → 'A got better and recovered really well'와 같이, 병렬 동사 뒤 보어 형용사를 부사 형태로 변환하는 오류를 교정하는 문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-17T00:14:17.786Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 연어 패턴에서 'any + 명사 + that절(주어+동사)' 구조가 빈번하며, 특히 'definitely'와 같은 부사가 동사 앞에 위치하는 경향이 강하다. 또한, 과학·학술적 맥락에서 'magnitude'와 같은 명사의 철자 오류가 자주 발생한다.",
    "rule": "'any + 단수명사 + that절(주어+동사)' 구조에서는 'that절 내 동사가 현재 시제(3인칭 단수 또는 복수)'로 통일되며, 부사(예: definitely)는 동사 바로 앞에 위치하도록 변형 문제를 설계한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-11T22:11:33.047Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거형 동사 spend가 현재완료 have spend로 잘못 사용된 패턴이 다수 관찰되며, 'many time'은 'too much time'으로 교정되는 경향이 강하다. 또한 'but not car'와 같이 부정대상을 단수 명사로 오용한 경우가 빈번하다.",
-   "rule": "과거형 동사(예: spend, take)는 현재완료 have+pp로 오용되지 않도록 하며, 'many time'은 'too much time'으로, 'but not car'는 'not personal cars'로 교정하는 문법 규칙을 내신 변형문제에 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",

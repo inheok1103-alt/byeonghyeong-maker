@@ -1,7 +1,13 @@
 {
- "updated": "2026-07-17T00:14:44.796Z",
+ "updated": "2026-07-17T03:42:53.235Z",
  "count": 60,
  "rules": [
+  {
+   "rule": "원서 코퍼스에서 확인된 병렬 구조의 동사 시제 일치와 보어/부사 형태 변환 규칙을 적용하여, 'A got better and recovered really good' → 'A got better and recovered really well'와 같이, 병렬 동사 뒤 보어 형용사를 부사 형태로 변환하는 오류를 교정하는 문제를 출제하라.",
+   "src": "코퍼스연구:원서 문체 패턴을 활용한 변형",
+   "score": 72,
+   "ts": "2026-07-17T03:42:23.091Z"
+  },
   {
    "rule": "한국어 학습자 대상 내신 변형문제에서, '명사+명사' 형태의 연어(N+N collocation)를 전치사+명사(Prep+N) 또는 동사+명사(V+N) 구조로 교정하는 오답 유형을 30% 이상 포함시켜 오류 패턴을 학습시킨다.",
    "src": "코퍼스연구:연어(collocation)를 활용한 오답 설계",
@@ -319,12 +325,6 @@
    "src": "코퍼스연구:원서 문체 패턴을 활용한 변형",
    "score": 72,
    "ts": "2026-07-15T03:38:53.410Z"
-  },
-  {
-   "rule": "'need + a/the + 명사' 구조에서 관사를 생략하거나 'a'를 무분별하게 삽입하는 오류를 유도하라. 예를 들어, 'students need knowledge'를 'students need a knowledge'로 오답지 항목으로 제시하라.",
-   "src": "코퍼스연구:연어(collocation)를 활용한 오답 설계",
-   "score": 72,
-   "ts": "2026-07-15T00:12:45.213Z"
   }
  ],
  "note": "사람 승인 완료 규칙만 활성. 자동 학습 규칙은 quarantine_rules.json에서 검토·승인 후 이곳으로 이동."

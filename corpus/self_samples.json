@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-17T00:14:44.803Z",
+ "updated": "2026-07-17T03:42:53.242Z",
  "samples": [
+  {
+   "ts": "2026-07-17T03:42:15.990Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Verbs Shape How We Perceive Actions",
+     "Verbs Control Only Visual Perception",
+     "Actions Determine Which Verbs We Use",
+     "Verbs Always Show Complete Actions",
+     "Verbs Sometimes Distort Action Perception"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Verbs govern perception of actions in both completed and ongoing states.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 'see', 'hear', 'notice' 등은 감각 동사로 시각뿐 아니라 청각·촉각도 포함한다는 점을 오해하지 않고 '시각만 통제한다'고 잘못 이해한 것 같습니다. → 처방: 지문에서 제시된 동사들이 '느끼다', '듣다', '보다' 등 감각 동사임을 떠올리며, 이들이 시각뿐 아니라 다른 감각도 포함한다는 점을 기억하세요.\n③ 진단: 동사가 '행동의 완전성'을 결정하는 것이 아니라, '행동의 인지 방식'을 결정한다는 지문 내용을 오해하여 '행동이 동사를 선택한다'고 잘못 이해한 것 같습니다. → 처방: 지문에서 'see it happen'과 'see it happening'의 차이를 보며, 동사가 '어떻게 인지하는지'를 설명한다는 점을 기억하세요.\n④ 진단: 지문에서 'see it happen'과 'see it happening'이 모두 가능한 경우가 있음을 오해하지 않고 '동사는 항상 완전한 행동을 보여준다'고 잘못 이해한 것 같습니다. → 처방: 지문에서 'When we talk about a short action, it often does not matter which structure we use.'라는 부분을 보며, '항상 완전한 행동'만은 아니라는 점을 기억하세요.\n⑤ 진단: 지문에서 동사가 '행동의 인지 방식'을 왜곡하지 않고, '행동을 어떻게 인지하는지'를 보여준다는 점을 오해하여 '왜곡한다'고 잘못 이해한 것 같습니다. → 처방: 지문에서 동사가 '행동을 인지하는 방식'을 설명한다는 점을 떠올리며, '왜곡'이라는 표현이 맞지 않음을 기억하세요.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Verbs govern perception of actions in both completed and ongoing states.**]"
+   }
+  },
+  {
+   "ts": "2026-07-17T03:42:20.974Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "VERB OBJECT ING-FORM Rachel saw D____ walking with a stick. Can you hear someone playing the piano? We found Matthew exercising in the gym. I could feel an insect crawling up my leg. We can use this structure with these verbs: feel, find, hear, listen to, notice, see, smell, watch D See it happen or see it happening? SEE IT HAPPEN SEE IT HAPPENING We saw Trevor plant the tree. We saw Trevor planting the tree. (He planted the tree. We saw him do the (He was planting the tree. We saw him in the whole job.) middle of the job.) / watched Nick light a cigarette. I watched Nick smoking a cigarette. We noticed a young man sit down and order a We noticed a young man sitting at the table meal. eating a meal. When we talk about a short action, it often does not matter which structure we use. They heard a car turn/turning the corner. I didn't see anyone leave/leaving any litter. 74 See it happen or see it happening? A Introduction",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] David — 문단의 논지상 이 자리에는 'David'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-17T00:14:09.236Z",
    "type": "요약문AB",
@@ -275,58 +328,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘Check your answers here.’는 단어 정의와는 전혀 관계없고, 단지 퀴즈의 답안을 확인하라는 지시문일 뿐이므로 주어진 문장이 들어갈 수 없다. → 처방: ‘단어 정의와 관련이 있는 문장인지 먼저 확인하기’를 행동지침으로 삼고, 지문의 주제와 연결되지 않는 문장은 제외하기.\n② 진단: ‘indirect reference’는 ‘간접적인 언급’이라는 뜻으로, 주어진 문장(‘기분 개선’)과는 뜻이 맞지 않는다. → 처방: ‘단어의 뜻과 문장의 뜻이 같은지 직접 비교하기’를 행동지침으로 삼고, 뜻이 맞지 않으면 다른 선지를 찾기.\n④ 진단: ‘AMENABLE’는 ‘순종적인’이라는 뜻으로, 주어진 문장(‘기분 개선’)과는 뜻이 맞지 않는다. → 처방: ‘단어의 뜻과 문장의 뜻이 같은지 직접 비교하기’를 행동지침으로 삼고, 뜻이 맞지 않으면 다른 선지를 찾기.\n⑤ 진단: ‘The plumber was amenable to my paying my bill with jelly beans’는 ‘배관공이 순종적이었다’는 뜻으로, 주어진 문장(‘기분 개선’)과는 뜻이 맞지 않는다. → 처방: ‘단어의 뜻과 문장의 뜻이 같은지 직접 비교하기’를 행동지침으로 삼고, 뜻이 맞지 않으면 다른 선지를 찾기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T16:44:19.632Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'conflicting', 'undecided', 'boyfriend' / 10~14단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Susan felt undecided about Alec as a boyfriend, showing her conflicting emotions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-16T11:56:33.457Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0,
-    "distractorEff": 100,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Quiz 5-2 A. Fill in each blank with the correct letter: a. antedate b. protoplasm c. anterior d. protagonist e. prototype f. antecedent g. protocol h. antechamber 1. <u>The ___ of The Wizard of Oz is a Kansas farm girl named Dorothy.</u> 2. According to official ___, the Ambassador from England ranks higher than the Canadian Consul. 3. A butterfly's antennae are located on the most ___ part of its body. 4. There under the microscope we saw the cell's ___ in all its amazing complexity. 5. She was tempted to ___ the letter to make it seem that she had not forgotten to write it but only to mail it. 6. The engineers have promised to have the ___ of the new sedan finished by March. 7. Please step into the judge's ___; she'll be with you in a few minutes. 8. The British would say “The company are proud of their record,” since they treat “the company” as a plural ___. Answers",
-    "choices": [
-     "The protagonist of *The Wizard of Oz* is always a farm girl from Kansas who encounters magical challenges.",
-     "The original title of *The Wizard of Oz* refers to a specific place where a girl named Dorothy lived before her journey.",
-     "The term 'protagonist' in The Wizard of Oz refers to a specific person named Dorothy.",
-     "Because Dorothy was from Kansas, the narrative’s setting directly causes her to seek adventure in an unfamiliar world.",
-     "The central character of a narrative represents the human experience through an ordinary individual thrust into extraordinary circumstances."
-    ],
-    "answer": 3,
-    "explanation": "밑줄 친 부분은 'The central character of a narrative represents the human experience through an ordinary individual thrust into extraordinary circumstances.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘protagonist’를 ‘주인공’이 아니라 ‘주요 등장인물’로 넓게 해석해 ‘항상’(always)이라는 과장된 표현과 ‘매직 challenges’를 필요로 하는 줄 알았음. 지문엔 ‘a Kansas farm girl named Dorothy’만 나와 있음. → 처방: ‘protagonist’의 뜻을 정확히 기억하고, ‘항상’ 같은 과장된 표현이 나오면 다시 한 번 지문을 확인해 보자.\n② 진단: ‘protagonist’를 ‘원제목’(original title)으로 오해하고 ‘a specific place’를 연상했음. ‘protagonist’는 ‘주인공’이 아니라 ‘원제목’이 아님. → 처방: ‘protagonist’의 뜻을 정확히 알고 있어야 하며, unfamiliar 한 단어는 사전에서 뜻을 꼭 확인하자.\n④ 진단: ‘protagonist’를 ‘narrative 의 setting’이 ‘원인’이 되어 ‘adventure’를 하게 되는 ‘원인’(cause)으로 오해했음. 지문엔 그런 내용이 없음. → 처방: ‘protagonist’는 ‘주인공’이란 뜻임을 기억하고, 지문의 내용과 선지의 내용을 정확히 비교해 보자.\n⑤ 진단: ‘protagonist’를 ‘narrative 가 표현하는 human experience’를 뜻하는 것으로 오해했음. ‘protagonist’는 ‘주인공’이란 뜻으로, ‘human experience’를 표현하는 건 아님. → 처방: ‘protagonist’의 뜻을 정확히 알고 있어야 하며, narrative 의 ‘theme’이나 ‘message’를 묻는 문제라면 선지를 다시 한 번 확인하자."
    }
   }
  ]
