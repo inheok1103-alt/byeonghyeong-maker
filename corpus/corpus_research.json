@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-17T19:36:09.938Z",
+ "updated": "2026-07-17T21:11:53.261Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-17T21:11:25.254Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'명사+전치사+명사' 구조에서 전치사 오용(besides of → factoring in, caused y → caused by)이 빈번하게 나타나며, 특히 'of'가 'by'로 대체되는 패턴이 다수 관찰된다. 또한 '명사+명사' 결합에서 복수형 오류(scienses → sciences)도 반복된다.",
+   "rule": "'명사+전치사+명사' 구조에서 전치사 오용을 검증하는 문항을 출제할 때는 'of'가 'by'로 대체될 가능성을 우선 고려하고, '명사+명사' 결합에서는 복수형 오류(s, es, ies 등 접미사) 여부를 반드시 점검하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-17T19:35:43.725Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "원서 코퍼스에서 'possession'과 'possess'의 오류가 반복되며, 소유·소지 관련 동사/명사의 형태가 일관되지 않음을 확인할 수 있다. 또한 'offer'와 'offered'의 시제 불일치, 'choose'와 'chose'의 시제 변환 오류가 빈번히 발생한다.",
    "rule": "소유·소지·제공·선택 관련 동사(possess, offer, choose 등)는 문맥에 따라 시제(present/past) 및 단수/복수 형태를 반드시 일치시켜야 한다. 예를 들어, 'He possess' → 'He possesses', 'He offert' → 'He offered', 'He chose' → 'He choose'로 수정해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-12T15:18:51.807Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'a/an + 단수명사'의 관용적 사용 패턴이 빈번하며, 'of + 복수명사'가 'of + 단수명사'로 단순화되는 경향이 강하다.",
-   "rule": "단수명사 앞에 관사가 필요한 경우(a/an/the) 반드시 표기하고, 'of + 복수명사'는 'of + 단수명사'로 단순화하여 오류를 방지하라.",
    "sample": [
     "old english",
     "university press",

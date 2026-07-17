@@ -1,6 +1,73 @@
 {
- "updated": "2026-07-17T19:36:09.942Z",
+ "updated": "2026-07-17T21:11:53.265Z",
  "samples": [
+  {
+   "ts": "2026-07-17T21:10:37.870Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/2 다수결 3번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "syntactic structures determining idiomatic expressions",
+     "examining syntactic roles in idiomatic expressions",
+     "the syntactic analysis of idiomatic phrases",
+     "identifying syntactic patterns behind idioms",
+     "analyzing idiomatic expressions through syntactic structures"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The analysis of idiomatic expressions through syntactic structures'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 조건 누락· ③ 정답 — 핵심 논지 반영· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The analysis of idiomatic expressions through syntactic structures]\n[오답 진단·처방]\n① 진단: ‘idiomatic expressions(관용 표현)’와 ‘syntactic structures(문법 구조)’를 분리해 ‘idiomatic expressions 를 결정하는 문법 구조’로 오해한 듯합니다. 지문은 관용 표현의 문법적 분석(‘tend 가 raise 동사’라는 분석)을 다루는데, ‘결정하는’이라는 말은 지문에 없습니다. → 처방: ‘~을 분석하다’라는 동사를 중심으로 ‘관용 표현의 문법적 분석’을 떠올리세요. ‘결정하다’는 이 글의 핵심어가 아닙니다.\n② 진단: ‘syntactic roles(문법적 역할)’와 ‘idiomatic expressions(관용 표현)’를 따로 떼어 ‘문법적 역할을 조사하는 것’으로 오해한 듯합니다. 지문은 관용 표현 안에서 문법적 역할(주어 자리)을 분석하는 것이지, 단순히 ‘조사’하는 것이 아닙니다. → 처방: ‘분석하다’라는 동사를 강조하세요. ‘조사하다’는 이 글의 목적과 맞지 않습니다. ‘문법적 역할을 분석하는 것’이 주제임을 기억하세요.\n④ 진단: ‘syntactic patterns(문법 패턴)’와 ‘idioms(관용 표현)’를 ‘뒤에 숨은 패턴을 찾아내는 것’으로 오해한 듯합니다. 지문은 관용 표현의 문법적 구조를 ‘분석’하는 것이지, 패턴을 ‘찾아내는’ 것이 아닙니다. → 처방: ‘분석하다’를 키워드로 삼으세요. ‘찾아내다’는 이 글의 접근법과 다릅니다. ‘문법적 구조를 분석하는 것’이 주제임을 기억하세요.\n⑤ 진단: ‘idiomatic expressions’를 ‘through syntactic structures(문법 구조를 통해)’로 오해한 듯합니다. 지문은 관용 표현의 문법 구조를 ‘분석’하는 것이지, ‘~을 통해 분석하는 것’이 아닙니다. → 처방: ‘~을 분석하는 것’을 주제로 삼으세요. ‘~을 통해’라는 말은 이 글의 핵심 표현이 아닙니다. ‘문법 구조로 관용 표현을 분석하는 것’이 주제임을 기억하세요."
+   }
+  },
+  {
+   "ts": "2026-07-17T21:11:05.202Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.75,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Given that all hell can serve only as the subject of (A) [stay calm / break loose] in the relevant idiom in (iv), it is clear that we could not analyse (B) [ignore / tend] as a control predicate in (iv) and claim that all hell originates as the subject of tend and PRO as the subject of break loose, since this would violate the requirement that all hell can occur only as the subject of break loose and conversely that break loose can only have the subject all hell (in the relevant idiom). By contrast, if tend is a raising predicate, we can claim that all hell originates as the subject of break loose and then (C) [raises up / drops down] to become the subject of the (null T constituent in the) tend clause. Furthermore, tend preserves truth-functional equivalence under passivisation, as we can see from the fact that (v) and (vi) are truth-functionally equivalent:",
+    "choices": [
+     "(A) break loose - (B) tend - (C) raises up",
+     "(A) stay calm - (B) tend - (C) raises up",
+     "(A) stay calm - (B) ignore - (C) drops down",
+     "(A) break loose - (B) ignore - (C) raises up",
+     "(A) break loose - (B) ignore - (C) drops down"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) break loose - (B) tend - (C) raises up. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘all hell can serve only as the subject of break loose’(지문 첫 문장)를 무시하고 ‘stay calm’이 들어가는 선지를 고름. ‘all hell break loose’는 관용구지만 ‘all hell stay calm’은 없음. → 처방: ‘all hell break loose’가 관용구임을 기억하고, 지문에서 ‘break loose’가 필수임을 확인한 뒤 선택하기.\n③ 진단: ‘tend’를 ‘ignore’로 오해하고 있음. 지문에서 ‘tend’는 ‘~하는 경향이 있다’는 뜻으로 쓰이며 ‘ignore’는 ‘무시하다’로 전혀 다른 의미임. → 처방: ‘tend’의 의미를 정확히 알고, 지문에서 ‘tend’가 쓰인 문맥(‘PRO as the subject of break loose’)을 다시 확인하기.\n④ 진단: ‘tend’를 ‘ignore’로 오해했을 뿐만 아니라, ‘raises up’를 ‘drops down’으로 잘못 골랐음. ‘tend’는 ‘올려 보내는’ RaisingPredicate 로, ‘drops down’은 내리는 의미로 반대임. → 처방: ‘tend’의 역할(‘Raising predicate’)과 ‘raises up’의 의미를 정확히 알고, 지문에서 ‘tend’는 ‘올려 보내는’ 역할을 한다는 점을 기억하기.\n⑤ 진단: ‘tend’를 ‘ignore’로 오해하고, ‘drops down’을 선택했는데, 이는 ‘tend’가 ‘Raising predicate’임을 무시한 선택임. ‘tend’는 ‘올려 보내는’ 역할로, ‘drops down’은 내리는 의미로 맞지 않음. → 처방: ‘tend’의 역할(‘Raising predicate’)을 정확히 이해하고, 지문에서 ‘tend’는 ‘all hell’이 ‘break loose’의 주제로 먼저 있고, ‘tend’의 주제가 되는 구조임을 확인하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-17T19:34:58.378Z",
    "type": "제목",
@@ -300,61 +367,6 @@
     ],
     "answer": 3,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'drink'가 명사로도 동사로도 쓰인 예가 나오므로, '동사와 명사로 동시에 사용될 수 없다'는 말은 지문의 내용과 맞지 않음. → 처방: 품사를 구별할 때는 형태뿐 아니라 문맥(말의 연결 방식)을 봐야 한다는 점을 기억하고, 지문에서 예시된 단어들을 다시 확인해보기.\n② 진단: 지문에서 'drink'의 과거형은 'drank', 과거분사는 'drunk'로 쓰인다고 나와 있는데, 'drunken'은 잘못된 과거형으로 제시됨. → 처방: 과거형과 과거분사의 기본형을 따로 정리해 외우고, 혼동하지 않도록 예문과 함께 암기하기.\n④ 진단: 지문에서 '단어의 품사 구별은 형태만으로 결정되지 않는다'고 분명히 말하고 있음. 즉, 문맥과 단어의 역할이 중요하다는 뜻임. → 처방: 품사를 판단할 때는 문장에서 그 단어가 어떤 역할을 하는지(주어, 목적어, 수식어 등)를 먼저 확인한 뒤 형태를 비교하기.\n⑤ 진단: 지문에서 'drink'의 과거분사형은 'drunk'라고 나오는데, 'drank'는 과거형으로만 쓰임. 학생은 과거형과 과거분사를 혼동한 듯함. → 처방: 과거형과 과거분사를 구분하는 규칙(예: drink-drank-drunk)을 외우고, 문장에서 실제로 쓰이는 모습을 보며 연습하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-17T11:45:42.086Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 단어의 품사는 형태만으로 정해지는 것이 아니라 문맥에서 다른 단어들과의 관계로 결정된다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-17T09:27:30.684Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": -1,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "That is, read would originate as the head V of VP (agreeing with and assigning accusative case to its object the book), and would subsequently raise to adjoin to an affixal agentive light-verb ø, which has a meaning paraphraseble as ‘perform the action of’. If we suppose that a transitive V only triggers movement of a nominal which it case-marks to the edge of VP if the nominal in question is not already the highest non-head constituent within VP, then there will be no possibility of raising the DP the book in (82) to become the specifier of VP because this DP is already the highest non-head constituent within VP by virtue of being the only non-head constituent within VP. Chomsky’s light-verb analysis of two-place transitive predicates can be extended in an interesting way to handle the syntax of a class of verbs which are known as unergative predicates. These are verbs like those italicized in (83) below which have agentive subjects, but which appear to have no complement:\n\n─────────\n[요약문] Chomskyan syntax posits that (A) movement of nominals is constrained by case-marking and VP structure, yet permits (B) extension of light-verb analysis to unergative predicates.",
-    "choices": [
-     "(A) case assignment … (B) semantic derivation",
-     "(A) DP movement … (B) adjective modification",
-     "(A) argument raising … (B) phonological reduction",
-     "(A) lexical insertion … (B) morphological fusion",
-     "(A) syntactic movement … (B) theoretical extension"
-    ],
-    "answer": 5,
-    "explanation": "(A) syntactic movement / (B) theoretical extension 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘case assignment’(A)와 ‘semantic derivation’(B)을 선택한 학생은 지문의 핵심 논제인 ‘movement’(A)와 ‘extension’(B)을 오해하고, 문법 용어의 겉모습만 보고 선택했을 가능성이 높음. 지문에서 ‘read 가 VP 의 head V 로 시작해 ø(light-verb)로 이동’(movement)하고, ‘unergative 동사의 구문론을 확장’(extension)한다고 명시되어 있음. → 처방: ‘movement’와 ‘extension’이 문장의 핵심 키워드임을 기억하고, 선지의 단어들만 보지 말고 문맥 전체를 살피기.\n② 진단: ‘DP movement’(A)와 ‘adjective modification’(B)을 선택한 학생은 ‘DP movement’를 ‘구성 요소의 이동’으로 오해하고, ‘adjective modification’을 ‘형용사 수식’으로 잘못 연결했을 수 있음. 지문은 ‘DP 의 raising’(movement)과 ‘light-verb 분석의 확장’(extension)을 다룸. → 처방: ‘DP movement’는 ‘명사구(DP)의 이동’을 뜻하며, ‘adjective modification’은 문법 용어와 무관하다는 점을 분명히 하기.\n③ 진단: ‘lexical insertion’(A)과 ‘morphological fusion’(B)을 선택한 학생은 ‘insertion’이나 ‘fusion’이 문법 구조의 변화와 관련 있다고 오해했을 수 있음. 지문은 ‘movement’(A)와 ‘extension’(B)을 다루며, ‘lexical insertion’은 단어 삽입, ‘morphological fusion’은 형태소 결합과 관련됨. → 처방: ‘lexical insertion’은 단어 삽입, ‘morphological fusion’은 형태소 결합을 뜻한다는 점을 기억하고, 문법 구조의 ‘이동’과 ‘확장’을 떠올리기.\n④ 진단: ‘syntactic movement’(A)와 ‘theoretical extension’(B)을 선택한 학생은 정답(5번)을 고르지 못한 경우, ‘syntactic movement’(A)는 맞지만 ‘theoretical extension’(B)을 ‘이론적 확장’이 아닌 다른 의미로 오해했을 수 있음. 지문은 ‘Chomskyan syntax 의 light-verb 분석을 unergative 동사로 확장’(extension)한다고 설명함. → 처방: ‘theoretical extension’은 ‘이론적 확장’을 뜻하며, 지문의 ‘확장’(extension)과 일치함을 기억하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
