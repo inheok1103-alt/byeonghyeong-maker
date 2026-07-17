@@ -8,8 +8,11 @@ os.makedirs(OUT, exist_ok=True)
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 import auto_markup
 
-SRC = json.load(io.open(os.path.join(HERE, "_batch_src.json"), encoding="utf-8"))
-W = json.load(io.open(os.path.join(HERE, "_wf_out.json"), encoding="utf-8"))
+SRC_PATH = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "_batch_src.json")
+WF_PATH  = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "_wf_out.json")
+SRC = json.load(io.open(SRC_PATH, encoding="utf-8"))
+if isinstance(SRC, list): SRC = {a["id"]: a for a in SRC}
+W = json.load(io.open(WF_PATH, encoding="utf-8"))
 KB = json.load(io.open(os.path.join(HERE, "brain_knowledge.json"), encoding="utf-8"))
 
 def blank_out(psg, blank_sentence):

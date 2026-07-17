@@ -155,8 +155,9 @@ stem=L.get("stem", "다음 글의 빈칸에 들어갈 말로 가장 적절한 �
 tf=box(s,0.55,1.36,12.2,0.5); run(tf.paragraphs[0],stem,16.5,GOLDL,True,name=KO)
 if KIND=="reading":
     pc,ptf=rect(s,0.5,1.94,12.33,3.32,PANEL,LINE,1.0)
-    psz=15 if plen(L["passage"])<1150 else 14
-    p=ptf.paragraphs[0]; p.line_spacing=1.3; emit(p,L["passage"],psz,WHITE)
+    _pl=plen(L["passage"])
+    psz=15 if _pl<1150 else (13 if _pl<1450 else (11.5 if _pl<1750 else 10.5))
+    p=ptf.paragraphs[0]; p.line_spacing=(1.3 if _pl<1450 else 1.18); emit(p,L["passage"],psz,WHITE)
     ctf=box(s,0.62,5.36,12.15,1.5)
     for i,c in enumerate(L.get("choices",[])):
         p=ctf.paragraphs[0] if i==0 else ctf.add_paragraph(); p.space_after=Pt(2); p.line_spacing=1.1
