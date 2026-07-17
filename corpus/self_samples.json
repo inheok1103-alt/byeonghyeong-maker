@@ -1,6 +1,42 @@
 {
- "updated": "2026-07-17T06:30:41.568Z",
+ "updated": "2026-07-17T09:28:40.777Z",
  "samples": [
+  {
+   "ts": "2026-07-17T09:27:30.684Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": -1,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "That is, read would originate as the head V of VP (agreeing with and assigning accusative case to its object the book), and would subsequently raise to adjoin to an affixal agentive light-verb ø, which has a meaning paraphraseble as ‘perform the action of’. If we suppose that a transitive V only triggers movement of a nominal which it case-marks to the edge of VP if the nominal in question is not already the highest non-head constituent within VP, then there will be no possibility of raising the DP the book in (82) to become the specifier of VP because this DP is already the highest non-head constituent within VP by virtue of being the only non-head constituent within VP. Chomsky’s light-verb analysis of two-place transitive predicates can be extended in an interesting way to handle the syntax of a class of verbs which are known as unergative predicates. These are verbs like those italicized in (83) below which have agentive subjects, but which appear to have no complement:\n\n─────────\n[요약문] Chomskyan syntax posits that (A) movement of nominals is constrained by case-marking and VP structure, yet permits (B) extension of light-verb analysis to unergative predicates.",
+    "choices": [
+     "(A) case assignment … (B) semantic derivation",
+     "(A) DP movement … (B) adjective modification",
+     "(A) argument raising … (B) phonological reduction",
+     "(A) lexical insertion … (B) morphological fusion",
+     "(A) syntactic movement … (B) theoretical extension"
+    ],
+    "answer": 5,
+    "explanation": "(A) syntactic movement / (B) theoretical extension 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘case assignment’(A)와 ‘semantic derivation’(B)을 선택한 학생은 지문의 핵심 논제인 ‘movement’(A)와 ‘extension’(B)을 오해하고, 문법 용어의 겉모습만 보고 선택했을 가능성이 높음. 지문에서 ‘read 가 VP 의 head V 로 시작해 ø(light-verb)로 이동’(movement)하고, ‘unergative 동사의 구문론을 확장’(extension)한다고 명시되어 있음. → 처방: ‘movement’와 ‘extension’이 문장의 핵심 키워드임을 기억하고, 선지의 단어들만 보지 말고 문맥 전체를 살피기.\n② 진단: ‘DP movement’(A)와 ‘adjective modification’(B)을 선택한 학생은 ‘DP movement’를 ‘구성 요소의 이동’으로 오해하고, ‘adjective modification’을 ‘형용사 수식’으로 잘못 연결했을 수 있음. 지문은 ‘DP 의 raising’(movement)과 ‘light-verb 분석의 확장’(extension)을 다룸. → 처방: ‘DP movement’는 ‘명사구(DP)의 이동’을 뜻하며, ‘adjective modification’은 문법 용어와 무관하다는 점을 분명히 하기.\n③ 진단: ‘lexical insertion’(A)과 ‘morphological fusion’(B)을 선택한 학생은 ‘insertion’이나 ‘fusion’이 문법 구조의 변화와 관련 있다고 오해했을 수 있음. 지문은 ‘movement’(A)와 ‘extension’(B)을 다루며, ‘lexical insertion’은 단어 삽입, ‘morphological fusion’은 형태소 결합과 관련됨. → 처방: ‘lexical insertion’은 단어 삽입, ‘morphological fusion’은 형태소 결합을 뜻한다는 점을 기억하고, 문법 구조의 ‘이동’과 ‘확장’을 떠올리기.\n④ 진단: ‘syntactic movement’(A)와 ‘theoretical extension’(B)을 선택한 학생은 정답(5번)을 고르지 못한 경우, ‘syntactic movement’(A)는 맞지만 ‘theoretical extension’(B)을 ‘이론적 확장’이 아닌 다른 의미로 오해했을 수 있음. 지문은 ‘Chomskyan syntax 의 light-verb 분석을 unergative 동사로 확장’(extension)한다고 설명함. → 처방: ‘theoretical extension’은 ‘이론적 확장’을 뜻하며, 지문의 ‘확장’(extension)과 일치함을 기억하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-17T06:29:18.315Z",
    "type": "틀린문장 고쳐쓰기",
@@ -295,25 +331,6 @@
     ],
     "answer": 3,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '제퍼슨은 제1부에서 간접적이고 비인격적인 문체를 선택하였다'라고 명확히 서술했는데, 학생은 이 부분을 잘못 읽거나 기억하지 못했다. → 처방: 지문을 다시 천천히 읽고, 제퍼슨의 문체에 대한 설명 부분을 정확히 짚어내기. 문장 전체를 꼼꼼히 확인할 것.\n② 진단: 지문에서 '제퍼슨은 제1부에서 혁명이 특정 사례가 아닌 일반적인 혁명 원칙을 위한 철학적 근거를 마련하고자 하였다'라고 서술했는데, 학생은 이 의미를 잘못 이해하거나 놓쳤다. → 처방: 지문에서 '철학적 기반'과 '일반적 혁명'이라는 단어를 찾아 연결 지어 읽기. '특정 사례'와 '일반적'의 차이를 명확히 구분할 것.\n④ 진단: 지문에서 'respect for opinion requires that [the colonists] explain their action'이라고 서술했는데, 학생은 이 부분을 '의견 존중'이 행동을 설명하게 한다고 오해했다. → 처방: 지문 속 문장을 그대로 따라가며 'requires that'의 의미를 정확히 이해하기. 'requires'는 '필요로 하다'라는 뜻임을 기억할 것.\n⑤ 진단: 지문에서 'necessity constrains them to alter their former Systems of government'라고 서술했는데, 학생은 'constrains'의 의미를 '강제한다'로 잘못 해석했다. → 처방: 'constrains'는 '제한하거나 강요하다'라는 뜻이니, 문맥에 맞게 '필요는 그들을 강제한다'로 이해하기. 단어의 뜻을 정확히 확인할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T18:34:07.750Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "For example: [75] that nuclear scientist from Germany. [B]‌ [76] an anxious applicant for the job. [A]‌ [77] structural engineers in disgrace. [B]‌ [78] the personal assistant at the door. [B]‌ [79] their secret visits to the kitchen. [A]‌ But what if we have both adjunct pre-​modifiers and adjunct post-​modifiers? Both adjuncts will need to be sisters to NOM. Here are some examples. [80] The unknown scientist from Germany. [81] That tall student at the bar. [82] The new railings in the park. With these, either analysis is possible. [80], for example, could be analysed either as (i) [unknown [scientist from Germany]] or (ii) [[unknown scientist] from Germany]. So which should we choose? Well, the analysis that associates the more permanent and/​or intrinsic property more closely with the head noun is more natural. Analysis (i) is more natural for [80], since being from Germany is more permanent/​intrinsic than being unknown. By contrast, in [81], tall is more intrinsic than at the bar, so analysis (ii) is preferable –​ [[tall student] at the bar].",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
