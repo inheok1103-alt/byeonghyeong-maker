@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-17T11:46:14.844Z",
+ "updated": "2026-07-17T14:07:18.529Z",
  "samples": [
+  {
+   "ts": "2026-07-17T14:05:39.797Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "이 글은 모든 학문 분야의 참고문헌을 망라하여 저자의 주장을 뒷받침하고 있다.",
+     "이 글의 저자는 인용된 참고문헌을 통해 새로운 주장을 제시하고 있다.",
+     "이 글은 저자의 주장을 뒷받침하는 참고문헌이 반드시 필요하다는 점을 강조하고 있다.",
+     "이 글은 저자의 주장을 뒷받침하는 주요 참고문헌 몇 가지를 간략히 소개하고 있다.",
+     "이 글은 저자의 주장을 뒷받침하는 다양한 참고문헌을 나열하고 있다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The acknowledgments list diverse references supporting the author’s argument.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘모든 학문 분야’를 ‘망라’라고 오해했는데, 지문은 저자의 주장을 뒷받침하는 참고문헌을 ‘나열’했을 뿐이고, 학문 분야가 ‘모두’ 포함된 것도 아니다. → 처방: 지문에서 인용된 참고문헌이 저자의 주장을 뒷받침하는 자료라는 점만 확인하고, ‘모든 학문 분야’를 주장하지는 않는다는 점을 기억하자.\n② 진단: ‘새로운 주장을 제시했다’라고 오해했는데, 지문은 저자의 주장을 뒷받침하는 참고문헌을 단순히 ‘나열’했을 뿐 새로운 주장을 제시하지 않았다. → 처방: 지문의 역할이 ‘주장 뒷받침’이 아니라 ‘참고문헌 소개’임을 분명히 하고, ‘새로운 주장’이란 말이 나오지 않는다는 점을 확인하자.\n③ 진단: ‘반드시 필요하다는 점을 강조했다’라고 오해했는데, 지문은 참고문헌의 ‘필요성’을 강조하지 않았고, 단지 참고문헌을 ‘나열’했을 뿐이다. → 처방: 지문이 참고문헌의 ‘필요성’을 말하지 않는다는 점을 기억하고, ‘강조’라는 단어가 나오지 않는다는 점을 확인하자.\n④ 진단: ‘간략히 소개하고 있다’라고 오해했는데, 지문은 참고문헌을 ‘나열’했을 뿐이고, ‘간략히’ 소개하지도 않았다. → 처방: 지문이 참고문헌을 ‘소개’하는 것이 아니라 ‘나열’한다는 점을 기억하고, ‘간략히’라는 말이 없음을 확인하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The acknowledgments list diverse references supporting the author’s argument.]"
+   }
+  },
+  {
+   "ts": "2026-07-17T14:06:43.217Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 이러한 책과 기사는 저자의 사고와 작업을 형성했습니다.\n주어진 단어: ( books / articles / shaped )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] These books and articles shaped the author's thinking and work. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-17T11:42:42.274Z",
    "type": "주제",
@@ -282,44 +336,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Words — 문단의 논지상 이 자리에는 'Words'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T23:13:31.077Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "It's Friday afternoon. David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick has arrived at the flat. Now David is reporting what Tom said. So instead of Tom's words I'm having, David says he's having. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So instead of here, he says at his flat. And a day has passed since he first heard about it. It is now the day of the party. So instead of tomorrow evening, David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T23:13:43.106Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 데이비드는 오늘 저녁 아파트에서 파티를 한다고 말합니다.\n주어진 단어: ( david / having / party )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] David says he's having a party at his flat this evening. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
