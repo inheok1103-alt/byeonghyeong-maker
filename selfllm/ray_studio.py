@@ -112,8 +112,22 @@ def build_reading_json(passage, meta, header, brain):
     kb = load_kb()
     # 뇌가 준 뜻풀이·연결어를 지식에 축적(품질 향상)
     kb.setdefault("glossary", {}).update({k.lower(): v for k, v in (brain.get("glosses") or {}).items()})
+    # ★ 연결어 학습 게이트: 기능어(and/or/that/if…) 오학습 차단 — 지문이 지저분해지는 원인
+    BAN = set(kb.get("banned_connectives", [])) | {
+        "and", "or", "that", "which", "who", "when", "while", "but", "if", "then", "so",
+        "including", "also", "either", "neither", "where", "because", "as", "to", "of",
+        "in", "the", "a", "an", "it", "this", "these", "rather", "indeed", "yet", "however"}
+    def _ok(c):
+        s = str(c).strip()
+        if not re.match(r"^[A-Za-z]", s): return False
+        if s.lower() in BAN: return False
+        if len(s.split()) == 1 and len(s) <= 4: return False        # 짧은 단일 기능어
+        if len(s.split()) == 1 and s.lower() not in {"however", "nevertheless", "nonetheless",
+            "therefore", "thus", "hence", "meanwhile", "moreover", "furthermore", "instead",
+            "besides", "otherwise", "consequently"}: return False   # 단일어는 화이트리스트만
+        return True
     for c in (brain.get("connectives") or []):
-        if c not in auto_markup.CONNECTIVES and c not in kb.setdefault("connectives_extra", []):
+        if _ok(c) and c not in auto_markup.CONNECTIVES and c not in kb.setdefault("connectives_extra", []):
             kb["connectives_extra"].append(c)
     kb.setdefault("stats", {})["runs"] = kb.get("stats", {}).get("runs", 0) + 1
     save_kb(kb)
