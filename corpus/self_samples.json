@@ -1,6 +1,39 @@
 {
- "updated": "2026-07-17T17:33:37.352Z",
+ "updated": "2026-07-17T19:36:09.942Z",
  "samples": [
+  {
+   "ts": "2026-07-17T19:34:58.378Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Literature: a Timeless Mirror of Human Experience",
+     "Literature: Human Experience Shaped by Time and Space",
+     "Literature: a Mirror of Past Human Creativity",
+     "Literature: the Universal Power of All Art Forms",
+     "Literature: Always the Sole Source of Human Emotion"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Literature: A Timeless Mirror of Human Experience'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Literature: A Timeless Mirror of Human Experience]\n[오답 진단·처방]\n① 진단: ‘시공을 초월해 인간 경험을 전하는 지속적 힘’을 ‘거울’이라는 표현으로 오해해 ‘인간의 경험을 비춰 주는 것’으로만 읽음. 지문에서 ‘mirror’는 ‘거울’이 아니라 ‘증거·증명’이라는 뜻으로 쓰였음. → 처방: ‘mirror’라는 단어가 지문에서 어떤 의미로 쓰였는지 확인하고, 제목이 지문의 핵심 주제(‘지속적 힘’)를 담고 있는지 먼저 점검하기.\n② 진단: ‘시간과 공간이 문학을 형성한다’는 오해를 함. 지문은 문학이 ‘시공간을 초월한다’는 내용이지, 시공간이 문학을 만든다는 내용이 아님. → 처방: ‘transcend’의 의미를 정확히 알고, 문학이 ‘시공을 넘어서’ 어떤 역할을 하는지 먼저 파악하기.\n④ 진단: ‘모든 예술 형태의 보편적 힘’을 문학의 힘으로 오독함. 지문은 ‘문학’에만 초점을 맞추고 있으며, 다른 예술 형태는 언급하지 않음. → 처방: 제목이 지문에서 다룬 ‘문학’이라는 특정 주제에 맞춰져 있는지 확인하고, 범위를 넓히지 않기.\n⑤ 진단: ‘유일한 감정의 원천’이라는 과장된 표현을 선택함. 지문은 문학이 ‘감정을 포착하고 전달하는 예술’이라는 점만 강조하며, ‘유일한’이라는 절대적 표현은 없음. → 처방: 제목에 ‘always’나 ‘sole’이라는 절대적 단어가 있는지 확인하고, 지문의 온화한 표현과 비교하기."
+   }
+  },
   {
    "ts": "2026-07-17T17:32:15.072Z",
    "type": "본문찾아쓰기",
@@ -322,25 +355,6 @@
     ],
     "answer": 5,
     "explanation": "(A) syntactic movement / (B) theoretical extension 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘case assignment’(A)와 ‘semantic derivation’(B)을 선택한 학생은 지문의 핵심 논제인 ‘movement’(A)와 ‘extension’(B)을 오해하고, 문법 용어의 겉모습만 보고 선택했을 가능성이 높음. 지문에서 ‘read 가 VP 의 head V 로 시작해 ø(light-verb)로 이동’(movement)하고, ‘unergative 동사의 구문론을 확장’(extension)한다고 명시되어 있음. → 처방: ‘movement’와 ‘extension’이 문장의 핵심 키워드임을 기억하고, 선지의 단어들만 보지 말고 문맥 전체를 살피기.\n② 진단: ‘DP movement’(A)와 ‘adjective modification’(B)을 선택한 학생은 ‘DP movement’를 ‘구성 요소의 이동’으로 오해하고, ‘adjective modification’을 ‘형용사 수식’으로 잘못 연결했을 수 있음. 지문은 ‘DP 의 raising’(movement)과 ‘light-verb 분석의 확장’(extension)을 다룸. → 처방: ‘DP movement’는 ‘명사구(DP)의 이동’을 뜻하며, ‘adjective modification’은 문법 용어와 무관하다는 점을 분명히 하기.\n③ 진단: ‘lexical insertion’(A)과 ‘morphological fusion’(B)을 선택한 학생은 ‘insertion’이나 ‘fusion’이 문법 구조의 변화와 관련 있다고 오해했을 수 있음. 지문은 ‘movement’(A)와 ‘extension’(B)을 다루며, ‘lexical insertion’은 단어 삽입, ‘morphological fusion’은 형태소 결합과 관련됨. → 처방: ‘lexical insertion’은 단어 삽입, ‘morphological fusion’은 형태소 결합을 뜻한다는 점을 기억하고, 문법 구조의 ‘이동’과 ‘확장’을 떠올리기.\n④ 진단: ‘syntactic movement’(A)와 ‘theoretical extension’(B)을 선택한 학생은 정답(5번)을 고르지 못한 경우, ‘syntactic movement’(A)는 맞지만 ‘theoretical extension’(B)을 ‘이론적 확장’이 아닌 다른 의미로 오해했을 수 있음. 지문은 ‘Chomskyan syntax 의 light-verb 분석을 unergative 동사로 확장’(extension)한다고 설명함. → 처방: ‘theoretical extension’은 ‘이론적 확장’을 뜻하며, 지문의 ‘확장’(extension)과 일치함을 기억하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-17T06:29:18.315Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "Cognitive English Grammar 52 3.3 Combining situations: Juxtaposed and complex sentences ⓐ<u>Thus far</u> we have dealt with simple situations and simple sentences. In discourse, situations and the sentences describing them ⓑ<u>do, of course, occur not</u> in isolation but form part of a coherent piece of discourse. ⓒ<u>Although</u> the scope of this book is conﬁned to the conceptualisation of simple sentences, ⓓ<u>we will conclude</u> this survey on the cognitive framework by brieﬂy touching upon the ways in which situations are combined and expressed in the structure of English. This will also give us the opportunity to introduce some of the cognitive principles that ⓔ<u>account for</u> textual coherence. 3.3.1 Conceptual and grammatical linking of situations A crucial aspect of producing and understanding texts is our ability to relate situations in a meaningful way. In discourse the conceptual link between situations may be expressed explicitly, but typically it is implicit and has to be inferred. The linguist Charles Fillmore gave the following convincing example to illustrate the importance of textual coherence: (11) a. I had trouble with the car yesterday. The carburettor was dirty.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [도치] ⓑ: 'do, of course, occur not' → 'do, of course, not occur' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

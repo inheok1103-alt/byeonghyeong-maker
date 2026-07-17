@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-17T17:33:37.348Z",
+ "updated": "2026-07-17T19:36:09.938Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-17T19:35:43.725Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스는 '명사구(NP) + 동사 + 전치사(to)' 구조에서 전치사(to)가 불필요한 경우가 빈번함을 보여준다. 특히 'study to the topics'처럼 전치사(to)가 중복 사용되는 오류가 두드러진다.",
+   "rule": "'~를 공부하다/이해하다'와 같은 동사가 전치사 없이 직접 목적어를 취할 수 있는 경우(예: study the topic, understand the ideas), 'to'를 삽입하지 않도록 명사구를 직접 연결하는 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-17T17:33:04.719Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'a/an + 단수명사'의 관용적 사용 패턴이 빈번하며, 'of + 복수명사'가 'of + 단수명사'로 단순화되는 경향이 강하다.",
    "rule": "단수명사 앞에 관사가 필요한 경우(a/an/the) 반드시 표기하고, 'of + 복수명사'는 'of + 단수명사'로 단순화하여 오류를 방지하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-12T14:00:59.037Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스 패턴은 관사(a/the), 전치사(of/to), 시제 일치, 그리고 품사 오류(형용사↔부사, 동사 원형/과거형)가 빈번히 발생함을 보여준다. 특히 'to + 명사' vs. 'to + 동사원형'의 혼동과 'of + 명사' 구조가 자주 틀어지는 경향이 강하다.",
-   "rule": "'to + 동사원형'과 'to + 명사'의 구분을 명확히 묻는 문제(예: 'to reduce' vs. 'to reduction')를 CEFR B1~B2 수준에서 2~3문항씩 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",
