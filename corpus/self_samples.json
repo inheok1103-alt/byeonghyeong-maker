@@ -1,6 +1,93 @@
 {
- "updated": "2026-07-17T09:28:40.777Z",
+ "updated": "2026-07-17T11:46:14.844Z",
  "samples": [
+  {
+   "ts": "2026-07-17T11:42:42.274Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 1,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "determining word classes by syntactic function rather than morphological form",
+     "classifying words by their form alone as the primary basis",
+     "determining word classes through their substantival and adjectival roles",
+     "word classes being fixed categories independent of their contextual behavior",
+     "word classes being identified solely by their derivational patterns"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The classification of words into different parts of speech, such as verbs, is determined by their function and behavior in a sentence rather than their form alone.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 지문에서 '단어의 형태만으로는 품사를 정할 수 없다'고 밝히며, 문맥 속 단어의 '행동'과 '연결 방식'이 중요하다고 설명했는데, 이 선지는 '형태만으로 분류한다'고 오해한 듯함. → 처방: 품사를 정할 때는 형태가 아니라 문장에서 단어의 역할(구문 기능)을 먼저 살펴야 한다는 점을 기억하기.\n③ 진단: 지문은 품사를 정할 때 '명사+형용사+동사' 역할 모두를 고려해야 한다고 설명했지만, 이 선지는 '명사와 형용사 역할만'으로 한정해 오독한 듯함. → 처방: 품사 판별 시 모든 문맥적 역할을 종합적으로 고려해야 한다는 점을 잊지 않기.\n④ 진단: 지문은 품사가 문맥에 따라 변할 수 있다고 설명했는데, 이 선지는 '품사가 고정되어 있다'고 오해한 듯함. → 처방: 품사가 문맥에 따라 달라질 수 있음을 기억하고, 문장 전체를 분석하기.\n⑤ 진단: 지문은 품사 판별 시 '파생 패턴'이 아니라 '문맥 속 역할'이 중요하다고 설명했는데, 이 선지는 '파생 패턴만'으로 오독한 듯함. → 처방: 단어의 파생 형태보다는 문장에서의 실제 쓰임(구문 기능)을 우선적으로 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The classification of words into different parts of speech, such as verbs, is determined by their function and behavior in a sentence rather than their form alone.]"
+   }
+  },
+  {
+   "ts": "2026-07-17T11:45:28.626Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Verbs Base: drink, used as (1) infinitive: I may drink, I want to drink. (2) imperative: drink this! (3) present indicative: I drink. (4) present subjunctive: if he drink. Third person indicative: drinks. Preterit: drank. Second participle: drunk. Form in -ing, drinking, used as (1) first participle. (2) gerund. Derivation of Word-Classes 7.71. The reader will have noticed that some words were given as examples both of substantives and adjectives, others as substantives and verbs, and others again as adjectives and adverbs. This shows that in order to find out what class a word belongs to it is not enough to consider its form in itself; what is decisive is the way in which the word in connected speech “behaves” towards other words, and in which other words behave towards it. If we find that one and the same form is used now as a substantive, now as an adjective or verb, this does not mean that the distinction between word-classes Word-Classes 41",
+    "choices": [
+     "‘drink’라는 단어는 동사와 명사로 동시에 사용될 수 없다.",
+     "‘drink’의 과거형은 ‘drunken’이다.",
+     "‘drinking’이라는 형태는 현재분사와 동명사로 모두 쓰인다.",
+     "단어의 품사 구별은 형태만으로 결정된다.",
+     "‘drink’의 과거분사 형태는 ‘drank’이다."
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'drink'가 명사로도 동사로도 쓰인 예가 나오므로, '동사와 명사로 동시에 사용될 수 없다'는 말은 지문의 내용과 맞지 않음. → 처방: 품사를 구별할 때는 형태뿐 아니라 문맥(말의 연결 방식)을 봐야 한다는 점을 기억하고, 지문에서 예시된 단어들을 다시 확인해보기.\n② 진단: 지문에서 'drink'의 과거형은 'drank', 과거분사는 'drunk'로 쓰인다고 나와 있는데, 'drunken'은 잘못된 과거형으로 제시됨. → 처방: 과거형과 과거분사의 기본형을 따로 정리해 외우고, 혼동하지 않도록 예문과 함께 암기하기.\n④ 진단: 지문에서 '단어의 품사 구별은 형태만으로 결정되지 않는다'고 분명히 말하고 있음. 즉, 문맥과 단어의 역할이 중요하다는 뜻임. → 처방: 품사를 판단할 때는 문장에서 그 단어가 어떤 역할을 하는지(주어, 목적어, 수식어 등)를 먼저 확인한 뒤 형태를 비교하기.\n⑤ 진단: 지문에서 'drink'의 과거분사형은 'drunk'라고 나오는데, 'drank'는 과거형으로만 쓰임. 학생은 과거형과 과거분사를 혼동한 듯함. → 처방: 과거형과 과거분사를 구분하는 규칙(예: drink-drank-drunk)을 외우고, 문장에서 실제로 쓰이는 모습을 보며 연습하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-17T11:45:42.086Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 단어의 품사는 형태만으로 정해지는 것이 아니라 문맥에서 다른 단어들과의 관계로 결정된다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-17T09:27:30.684Z",
    "type": "요약문AB",
@@ -233,104 +320,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] David says he's having a party at his flat this evening. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-16T21:19:04.567Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.33,
-    "distractorEff": 100,
-    "pass": true,
-    "flags": []
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "WEEK 17 DAY 5 REVIEW Major Martin, if he had lived, would have used the word “bonnet” to refer to the hood of his auto, and he might have referred to a truck as a “lorry.” As you can see, there are differences between American and British English. But Major Martin, undoubtedly, would have ____ below—do you? Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 13 and 20.) REVIEW WORDS DEFINITIONS 1.assiduous a. spread out in battle formation 2.attest b. a trick 3.component c. busy, attentive 4.concoct d. confirm as accurate, vouch for 5.consummate e. devise 6.deploy f. a riddle, puzzle 7.enigma g. element, part 8.evaluate h. able to meet any situation 9.exult i. perfect, complete 10.fallacious j. filled 11.fraught k. misleading, false 12.gullible l. rejoice greatly 13.hoax m. faultless 14.impeccable n. easily fooled 15.labyrinth o. winding passages 16.manifold p. find the value of, review 17.murky q. many 18.perpetrate r. deception 19.resourceful s. commit 20.subterfuge t. dark, obscure",
-    "choices": [
-     "mastered the vocabulary",
-     "memorized the definitions",
-     "ignored the spellings",
-     "comprehended the concepts",
-     "skipped the exercises"
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 'mastered the vocabulary'가 들어가 글의 논지를 완성한다 (본문 'known all the words'의 패러프레이즈).\n[오답 진단·처방]\n② 진단: ‘정의’를 ‘단어 뜻’으로만 보고 외우면 실제 쓰임에서 헷갈릴 수 있음을 몰랐을 거예요. 지문에서 ‘Match the twenty words with their meanings’(단어와 뜻 짝짓기)이라고만 했고, ‘master(완전히 익히다)’의 중요성을 놓쳤어요. → 처방: ‘단어와 뜻’을 ‘문장 속에서 실제로 쓰는 법’까지 연습하세요. 예를 들어 ‘assiduous’를 ‘그녀는 assiduous 한 학생이야(그녀는 부지런한 학생이야)’처럼 문장으로 만들어 써 보세요.\n③ 진단: ‘spellings(철자)’를 무시하면 뜻과 철자가 헷갈릴 수 있어요. 지문에서 ‘Record answers on a sheet of paper’(답안지에 기록하기)라고 했지만, 철자 실수가 오답으로 이어질 수 있음을 몰랐어요. → 처방: ‘단어와 뜻’을 적을 때 철자도 함께 써서 눈으로 확인하고, 소리 내어 읽으면서 기억하세요.\n④ 진단: ‘개념’을 ‘이해’했다고 생각했지만, ‘concepts’가 ‘단어의 실제 쓰임’까지 포함한다는 걸 몰랐어요. 지문에서 ‘Match the twenty words with their meanings’(단어와 뜻 짝짓기)라고 했지만, ‘concepts’를 ‘개념’으로만 좁게 해석했어요. → 처방: ‘단어 뜻’을 ‘문맥 속에서 어떻게 쓰이는지’까지 공부하세요. 예를 들어 ‘deploy’를 ‘군대가 진형을 펼치다’라고만 외우지 말고, ‘The general deployed his troops(장군이 병력을 배치했다)’처럼 문장으로 연습하세요.\n⑤ 진단: ‘연습’을 건너뛰면 ‘단어의 실제 쓰임’을 놓칠 수 있어요. 지문에서 ‘Match the twenty words with their meanings’(단어와 뜻 짝짓기)라고 했지만, ‘skip’을 ‘연습 없이도 풀 수 있다’고 오해했어요. → 처방: ‘단어와 뜻’을 짝짓기한 후, 그 단어를 사용한 문장을 직접 써 보세요. 예를 들어 ‘fraught’를 ‘The situation was fraught with danger(그 상황은 위험으로 가득했다)’처럼 써 보세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T21:19:35.944Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 1/3가 2번 선택(기록 4번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 1,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "WEEK 17 DAY 5 REVIEW Major Martin, if he had lived, would have used the word “bonnet” to refer to the hood of his auto, and he might have referred to a truck as a “lorry.” As you can see, <u>there are differences between American and British English</u>. But Major Martin, undoubtedly, would have known all the words below—do you? Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 13 and 20.) REVIEW WORDS DEFINITIONS 1.assiduous a. spread out in battle formation 2.attest b. a trick 3.component c. busy, attentive 4.concoct d. confirm as accurate, vouch for 5.consummate e. devise 6.deploy f. a riddle, puzzle 7.enigma g. element, part 8.evaluate h. able to meet any situation 9.exult i. perfect, complete 10.fallacious j. filled 11.fraught k. misleading, false 12.gullible l. rejoice greatly 13.hoax m. faultless 14.impeccable n. easily fooled 15.labyrinth o. winding passages 16.manifold p. find the value of, review 17.murky q. many 18.perpetrate r. deception 19.resourceful s. commit 20.subterfuge t. dark, obscure",
-    "choices": [
-     "Language variations are always temporary and frequently resolved over time.",
-     "The difference between American and British English is that they use different words.",
-     "Differences in English arise solely because of historical events like colonization.",
-     "Language variations reflect cultural and historical distinctions between nations.",
-     "The distinction between American and British English is limited to vocabulary choices."
-    ],
-    "answer": 4,
-    "explanation": "밑줄 친 부분은 'Language variations reflect cultural and historical distinctions between nations.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘언어 변이가 항상 일시적이고 시간이 지나면 해결된다’는 말은 지문에서 언급된 ‘차이’가 ‘해결’된다는 내용이 없으므로 오독. 지문은 ‘차이’를 설명만 할 뿐, 해결 여부는 다루지 않음. → 처방: 문제를 풀 때는 지문에 ‘해결’이나 ‘변화’가 언급되지 않는 한, 그런 내용이 없다고 가정하고 선지를 고르기.\n② 진단: ‘다른 단어를 사용한다’는 말은 지문에서 ‘bonnet’과 ‘lorry’를 예로 든 것처럼 ‘단어’ 차이만 강조한 것으로, ‘언어 변이’의 전체 의미를 담지 못함. 지문은 ‘차이’가 단어뿐 아니라 문화·역사까지 포함함을 암시함. → 처방: ‘차이’가 무엇인지 찾을 때는 지문에 나온 예시(단어)뿐 아니라 지문의 전체 맥락(‘cultural and historical distinctions’)을 떠올리며 풀기.\n③ 진단: ‘식민지화 같은 역사적 사건’이 유일한 원인이라는 말은 지문에서 그런 역사적 사건이 언급되지 않았으므로 오독. 지문은 ‘차이’를 설명할 뿐, 원인을 한정하지 않음. → 처방: ‘원인’을 물을 때는 지문에 언급된 내용만 근거로 삼고, 지문에 없으면 ‘모른다’고 생각하고 넘어가기.\n⑤ 진단: ‘단어 선택의 차이’로만 한정했다는 점에서 지문의 ‘differences’가 ‘단어’뿐 아니라 더 넓은 의미(문화·역사)를 담고 있음을 놓침. 지문은 ‘Major Martin’이 알고 있었을 단어들을 예로 들었지만, 그 ‘차이’가 ‘단어’에만 국한된다고 설명하지 않음. → 처방: ‘차이’의 범위를 물을 때는 지문에 나온 예시(단어)뿐 아니라 지문의 제목(‘differences between American and British English’)가 주는 전체적 의미를 떠올리며 풀기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T20:14:56.017Z",
-   "type": "안내문불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
-    "passage": "Necessity . . . constrains them to alter their former Systems of government. ✓ We now must alter our former Systems of government. Instead of writing as clearly and directly as he did in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a style so indirect and impersonal? One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked. What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]",
-    "choices": [
-     "제퍼슨은 제1부에서 간접적이고 비인격적인 문체를 선택하였다",
-     "제퍼슨은 제1부에서 혁명이 특정 사례가 아닌 일반적인 혁명 원칙을 위한 철학적 근거를 마련하고자 하였다",
-     "제퍼슨은 제1부에서 직접적이고 인격적인 문체를 선택하였다",
-     "제퍼슨은 제1부에서 ‘의견 존중’이 식민지 주민의 행동을 설명하게 한다고 주장하였다",
-     "제퍼슨은 제1부에서 ‘필요’는 식민지 주민을 강제한다고 주장하였다"
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '제퍼슨은 제1부에서 간접적이고 비인격적인 문체를 선택하였다'라고 명확히 서술했는데, 학생은 이 부분을 잘못 읽거나 기억하지 못했다. → 처방: 지문을 다시 천천히 읽고, 제퍼슨의 문체에 대한 설명 부분을 정확히 짚어내기. 문장 전체를 꼼꼼히 확인할 것.\n② 진단: 지문에서 '제퍼슨은 제1부에서 혁명이 특정 사례가 아닌 일반적인 혁명 원칙을 위한 철학적 근거를 마련하고자 하였다'라고 서술했는데, 학생은 이 의미를 잘못 이해하거나 놓쳤다. → 처방: 지문에서 '철학적 기반'과 '일반적 혁명'이라는 단어를 찾아 연결 지어 읽기. '특정 사례'와 '일반적'의 차이를 명확히 구분할 것.\n④ 진단: 지문에서 'respect for opinion requires that [the colonists] explain their action'이라고 서술했는데, 학생은 이 부분을 '의견 존중'이 행동을 설명하게 한다고 오해했다. → 처방: 지문 속 문장을 그대로 따라가며 'requires that'의 의미를 정확히 이해하기. 'requires'는 '필요로 하다'라는 뜻임을 기억할 것.\n⑤ 진단: 지문에서 'necessity constrains them to alter their former Systems of government'라고 서술했는데, 학생은 'constrains'의 의미를 '강제한다'로 잘못 해석했다. → 처방: 'constrains'는 '제한하거나 강요하다'라는 뜻이니, 문맥에 맞게 '필요는 그들을 강제한다'로 이해하기. 단어의 뜻을 정확히 확인할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
