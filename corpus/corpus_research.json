@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-17T14:07:18.524Z",
+ "updated": "2026-07-17T15:50:25.341Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-17T15:49:59.377Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'be' 동사의 오용, 복수 명사의 오용, 동사의 오용, 철자 오류가 빈번히 관찰된다. 특히 'reasons for live'와 같은 비문법적 표현이 'reasons to live'로 수정되는 패턴이 두드러진다.",
+   "rule": "원서 코퍼스에서 빈도 높은 'reasons to + 동사원형' 구문을 활용하여, 'reasons for + 동명사'로 잘못 사용된 경우를 변형 문제로 출제하라. 예: 'reasons for live' → 'reasons to live'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-17T14:06:45.458Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 'reasons'는 복수형으로 쓰이는 경우가 많으며, 'such'는 명사 앞 관사(a/the) 없이 사용되는 패턴이 일반적이다. 또한 'decrease'는 자동사로 쓰여 '-d' 형태의 과거분사가 아닌 동사원형으로 사용되는 경우가 많다.",
    "rule": "복수형 명사(reasons/situations) 앞에는 'these/those'를, 단수형 명사 앞에는 'such'를 사용하며, 자동사(decrease) 뒤에는 동사원형(-d 형태가 아닌)을 쓴다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-12T09:21:15.510Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제 동사의 오류가 빈번하며, 특히 '-ed' 접미사의 누락, 불필요한 조동사 사용, 문장 내 쉼표 오용이 두드러진다. 또한 'with' 구문과 'and' 병렬 구조에서 조동사/형용사 오류가 자주 발생한다.",
-   "rule": "과거 시제 동사(-ed)를 요구하는 문맥에서 동사 원형이나 현재 시제 동사를 사용한 경우, 반드시 '-ed' 접미사를 추가하거나 과거 시제 동사로 수정하라. 예를 들어 'startet' → 'started', 'woud' → 'would'로 수정해야 한다.",
    "sample": [
     "old english",
     "university press",
