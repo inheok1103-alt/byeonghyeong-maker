@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-17T03:42:53.242Z",
+ "updated": "2026-07-17T06:30:41.568Z",
  "samples": [
+  {
+   "ts": "2026-07-17T06:29:18.315Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Cognitive English Grammar 52 3.3 Combining situations: Juxtaposed and complex sentences ⓐ<u>Thus far</u> we have dealt with simple situations and simple sentences. In discourse, situations and the sentences describing them ⓑ<u>do, of course, occur not</u> in isolation but form part of a coherent piece of discourse. ⓒ<u>Although</u> the scope of this book is conﬁned to the conceptualisation of simple sentences, ⓓ<u>we will conclude</u> this survey on the cognitive framework by brieﬂy touching upon the ways in which situations are combined and expressed in the structure of English. This will also give us the opportunity to introduce some of the cognitive principles that ⓔ<u>account for</u> textual coherence. 3.3.1 Conceptual and grammatical linking of situations A crucial aspect of producing and understanding texts is our ability to relate situations in a meaningful way. In discourse the conceptual link between situations may be expressed explicitly, but typically it is implicit and has to be inferred. The linguist Charles Fillmore gave the following convincing example to illustrate the importance of textual coherence: (11) a. I had trouble with the car yesterday. The carburettor was dirty.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [도치] ⓑ: 'do, of course, occur not' → 'do, of course, not occur' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-17T06:30:04.667Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "상황들을 의미 있게 연결하려고",
+     "상황들이 의미 있는 연결을 유발하려고",
+     "단순한 문장들을 의미 있게 연결하려고",
+     "모든 언어 표현을 의미 있게 연결하려고",
+     "상황들을 무조건 결합하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'to relate situations in a meaningful way'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘유발하려고’는 원인과 결과가 뒤바뀌었다. 지문은 ‘상황들을 의미 있게 연결’하는 것이 목적이지만, 이 선지는 ‘연결이 상황을 유발’하는 것처럼 오해한 것이다. ‘의미 있는 연결’을 ‘상황’이 아닌 ‘연결’이 주체로 삼았다. → 처방: ‘연결’이 주체가 아니라 ‘상황’이 연결되는 것이므로, ‘상황’을 주어로 삼는 문장을 떠올리며 읽기.\n③ 진단: ‘단순한 문장들’을 ‘의미 있게 연결’한다고만 적혀 있는데, 지문은 ‘상황들’을 연결한다고 강조한다. ‘문장’이 아니라 ‘상황’이 핵심 단어라는 점을 놓쳤다. → 처방: ‘상황’이라는 단어가 나올 때마다 밑줄을 그으며, 그것이 ‘문장’과 어떻게 다른지 비교해 보기.\n④ 진단: ‘모든 언어 표현’을 너무 넓게 해석했다. 지문은 ‘단순한 상황’과 ‘단순한 문장’을 다루며, ‘모든 언어 표현’까지 확장하는 것은 과도한 일반화다. → 처방: ‘모든’이라는 말이 나오면 한계가 있는지 확인하고, 지문의 범위를 정확히 파악하기.\n⑤ 진단: ‘무조건 결합’은 ‘의미 있게’라는 조건을 무시한 것이다. 지문은 ‘의미 있는 연결’이 중요하다고 강조하는데, 이 선지는 그 조건을 빼고 ‘결합’만 강조했다. → 처방: ‘의미 있게’라는 말이 나오면 반드시 그 조건을 붙여서 생각하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to relate situations in a meaningful way]"
+   }
+  },
   {
    "ts": "2026-07-17T03:42:15.990Z",
    "type": "제목",
@@ -260,74 +314,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-16T18:35:03.899Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "For ⓐ<u>example</u>: [75] that nuclear ⓑ<u>scientist</u> from Germany. [B]‌ [76] an anxious applicant for the job. [A]‌ [77] structural engineers in disgrace. [B]‌ [78] the personal assistant at the door. [B]‌ [79] their secret visits to the kitchen. [A]‌ But what if we have both ⓒ<u>adjunct</u> pre-​modifiers and adjunct post-​modifiers? Both adjuncts will need to be sisters to NOM. Here are some examples. [80] The ⓓ<u>unknown</u> scientist from Germany. [81] That tall student at the bar. [82] The new railings in the park. With these, either ⓔ<u>analysis</u> is possible. [80], for example, could be analysed either as (i) [unknown [scientist from Germany]] or (ii) [[unknown scientist] from Germany]. So which should we choose? Well, the analysis that associates the more permanent and/​or intrinsic property more closely with the head noun is more natural. Analysis (i) is more natural for [80], since being from Germany is more permanent/​intrinsic than being unknown. By contrast, in [81], tall is more intrinsic than at the bar, so analysis (ii) is preferable –​ [[tall student] at the bar].",
-    "choices": [
-     "example: Something that is representative of all such things in a group.",
-     "scientist: A built-in function that is implemented directly by the compiler, without any in",
-     "adjunct: An appendage; something attached to something else in a subordinate capacity.",
-     "unknown: To undo the process of knowing, to lose knowledge of something.",
-     "analysis: Decomposition into components in order to study (a complex thing, concept, theor"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓑ의 풀이는 'intrinsic'의 정의이다. 'scientist'의 올바른 풀이: One whose activities make use of the scientific method to answer questions regar\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘example’이 ‘대표적인 예시’라는 뜻임을 지문에서 ‘For ⓐ<u>example</u>’로 제시했는데도, ‘무엇의 대표’라는 의미를 정확히 짚지 못하고 ‘예시’를 ‘표본’이나 ‘본보기’ 정도로만 이해했을 가능성이 있다. → 처방: ‘example’이 ‘~의 예시’라는 뜻임을 기억하고, 지문에서 ‘For ⓐ<u>example</u>’가 ‘예를 들어’라는 구절로 쓰였다는 점을 떠올리며 영영풀이를 읽기.\n② 진단: ‘scientist’가 ‘과학자’라는 뜻임을 알고 있지만, ‘built-in function’이라는 컴퓨터 용어와 혼동하여 ‘기능’이란 뜻을 떠올렸을 수 있다. 지문에서 ‘nuclear ⓑ<u>scientist</u>’가 사람임을 분명히 보여주는데도 ‘기능’을 떠올렸다면 개념 혼동이 있다. → 처방: ‘scientist’를 ‘과학자’라는 기본 뜻으로 먼저 떠올리고, 지문에서 ‘nuclear scientist’가 사람임을 확인한 후 영영풀이를 읽기.\n④ 진단: ‘unknown’이 ‘알려지지 않은’이라는 뜻임을 알고 있지만, ‘to undo the process of knowing’이라는 설명을 보고 ‘무지’를 뜻하는 동사 ‘unknow’의 과거형으로 오해했을 가능성이 있다. 지문에서 ‘ⓓ<u>unknown</u> scientist’가 ‘알려지지 않은 과학자’라는 뜻임을 고려하지 않았다. → 처방: ‘unknown’이 형용사임을 먼저 확인하고, 지문에서 ‘unknown scientist’가 ‘알려지지 않은’이라는 뜻으로 쓰였다는 점을 떠올리며 영영풀이를 읽기.\n⑤ 진단: ‘analysis’를 ‘분석’이라는 뜻으로 알고 있지만, ‘decomposition’이라는 단어를 보고 ‘분해’라는 뜻으로만 이해했을 수 있다. 지문에서 ‘decomposition into components’라는 설명이 ‘복잡한 것을 연구하기 위해 요소로 나누는 것’을 뜻함을 알지 못했다. → 처방: ‘analysis’를 ‘분석’이라는 뜻으로 먼저 떠올리고, 지문에서 ‘decomposition’이라는 단어가 ‘복잡한 것을 연구하기 위해 요소로 나누는 것’을 뜻함을 기억하며 영영풀이를 읽기."
-   }
-  },
-  {
-   "ts": "2026-07-16T16:43:32.612Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.6,
-    "D": -1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] undecided AMELIORATE (uh MEEL yuh rayt) v to make better or more tolerable • The mood of the prisoners was ameliorated when the warden gave them extra free time outside.\n\nAMBIVALENT (am BIV uh lunt) adj undecided; having opposed feelings simultaneously • Susan felt ambivalent about Alec as a boyfriend. Her frequent desire to break up with him reflected this ambivalence. Quick Quiz #6 Match each word in the first column with its definition in the second column. ( ① ) Check your answers here. ( ② ) indirect reference 6. ( ③ ) • My great-uncle’s gift of several million dollars considerably ameliorated my financial condition. ( ④ ) AMENABLE (uh MEE nuh bul) adj obedient; willing to give in to the wishes of another; agreeable • I suggested that Brad pay for my lunch as well as for his own; to my surprise, he was amenable. ( ⑤ ) • The plumber was amenable to my paying my bill with jelly beans, which was lucky because I had more jelly beans than money.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘Check your answers here.’는 단어 정의와는 전혀 관계없고, 단지 퀴즈의 답안을 확인하라는 지시문일 뿐이므로 주어진 문장이 들어갈 수 없다. → 처방: ‘단어 정의와 관련이 있는 문장인지 먼저 확인하기’를 행동지침으로 삼고, 지문의 주제와 연결되지 않는 문장은 제외하기.\n② 진단: ‘indirect reference’는 ‘간접적인 언급’이라는 뜻으로, 주어진 문장(‘기분 개선’)과는 뜻이 맞지 않는다. → 처방: ‘단어의 뜻과 문장의 뜻이 같은지 직접 비교하기’를 행동지침으로 삼고, 뜻이 맞지 않으면 다른 선지를 찾기.\n④ 진단: ‘AMENABLE’는 ‘순종적인’이라는 뜻으로, 주어진 문장(‘기분 개선’)과는 뜻이 맞지 않는다. → 처방: ‘단어의 뜻과 문장의 뜻이 같은지 직접 비교하기’를 행동지침으로 삼고, 뜻이 맞지 않으면 다른 선지를 찾기.\n⑤ 진단: ‘The plumber was amenable to my paying my bill with jelly beans’는 ‘배관공이 순종적이었다’는 뜻으로, 주어진 문장(‘기분 개선’)과는 뜻이 맞지 않는다. → 처방: ‘단어의 뜻과 문장의 뜻이 같은지 직접 비교하기’를 행동지침으로 삼고, 뜻이 맞지 않으면 다른 선지를 찾기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-17T03:42:53.238Z",
+ "updated": "2026-07-17T06:30:41.563Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-17T06:30:15.541Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "이 코퍼스 패턴은 관사·대명사의 오용(예: 'a'→'it is', 'one'→'a')과 단수·복수 혼동(예: 'fans'→'fan')이 빈번함을 보여준다. 또한 문장 내 대문자·구두점(예: 'i'→'I', 쉼표 추가) 오류도 관찰된다.",
+   "rule": "CEFR B1 수준 이하의 내신 문제에서는 관사(a/an/the), 대명사(it/they), 단수/복수 명사, 대문자, 구두점(쉼표, 마침표) 오용을 집중적으로 테스트하는 문항을 30% 이상 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-17T03:42:23.091Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'same'은 관사를 동반하는 명사구로 쓰이며, 'need'는 단수 3인칭 주어가 오면 '-s'가 붙고, 'purpose'는 복수형 'purposes'로 써야 한다. 또한 'a job', 'a car' 등 가산명사는 관사가 필수적이다.",
    "rule": "'same', 'need', 'purpose', 'job', 'car' 등 빈출 가산명사/동사 변화 패턴을 문장 내에 반드시 포함시켜, 관사 오류·단수/복수 오류·동사 시제 오류를 유도하는 문장을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-11T23:18:26.935Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 연어 패턴에서 'any + 명사 + that절(주어+동사)' 구조가 빈번하며, 특히 'definitely'와 같은 부사가 동사 앞에 위치하는 경향이 강하다. 또한, 과학·학술적 맥락에서 'magnitude'와 같은 명사의 철자 오류가 자주 발생한다.",
-   "rule": "'any + 단수명사 + that절(주어+동사)' 구조에서는 'that절 내 동사가 현재 시제(3인칭 단수 또는 복수)'로 통일되며, 부사(예: definitely)는 동사 바로 앞에 위치하도록 변형 문제를 설계한다.",
    "sample": [
     "old english",
     "university press",
