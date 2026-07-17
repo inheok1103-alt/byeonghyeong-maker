@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-17T21:11:53.261Z",
+ "updated": "2026-07-17T22:10:53.802Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-17T22:10:26.487Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "시제 일치와 문장 구조의 복잡성이 CEFR 밴드에 영향을 미친다. 특히, 접속사와 보어(compulsory to attend), 시제(owns → owned), 조건문(if not → would not be alive) 등이 난이도를 결정짓는 핵심 요소다.",
+   "rule": "CEFR B1/B2 밴드 내신 변형문제에서는 '시제 일치 오류(tense agreement error)'와 '접속사 오용(comma splice/comma error)'을 반드시 포함하여 출제하라. 예: 'She go to school every day' → 'She goes to school every day' 또는 'I like reading, and I also like swimming' → 'I like reading and swimming'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-17T21:11:25.254Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'most people are unaware of it'와 같은 명사구+be 동사+형용사+전치사 구조가 빈번하게 나타나며, 한국어 오류에서 'almost people' 대신 'most people'이 표준임을 확인할 수 있다.",
    "rule": "원서 코퍼스 패턴을 반영하여 'almost people'을 'most people'으로 수정하는 규칙을 적용하라. (예: 'almost people' → 'most people', 'almost students' → 'most students')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-12T17:20:43.857Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "원서 코퍼스에서 'possession'과 'possess'의 오류가 반복되며, 소유·소지 관련 동사/명사의 형태가 일관되지 않음을 확인할 수 있다. 또한 'offer'와 'offered'의 시제 불일치, 'choose'와 'chose'의 시제 변환 오류가 빈번히 발생한다.",
-   "rule": "소유·소지·제공·선택 관련 동사(possess, offer, choose 등)는 문맥에 따라 시제(present/past) 및 단수/복수 형태를 반드시 일치시켜야 한다. 예를 들어, 'He possess' → 'He possesses', 'He offert' → 'He offered', 'He chose' → 'He choose'로 수정해야 한다.",
    "sample": [
     "old english",
     "university press",

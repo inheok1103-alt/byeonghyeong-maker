@@ -1,6 +1,94 @@
 {
- "updated": "2026-07-17T21:11:53.265Z",
+ "updated": "2026-07-17T22:10:53.806Z",
  "samples": [
+  {
+   "ts": "2026-07-17T22:08:06.472Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 1번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "We can then say that the infinitive subject him is assigned (A) [nominative / accusative] case by the (B) [complementiser / main clause marker] for in structures like (67) in exactly the same way as the accusative subject them is assigned accusative case by the complementiser for in the bracketed complement clause in (64). (How case-marking works will be discussed in §3.9.) One way of accounting for why the complementiser isn’t overtly spelled out as for in structures like (67) is to suppose that it is given a null spellout (and thereby has its phonetic features deleted) when introducing the complement of a verb like want: we can accordingly refer to verbs like want as for-deletion verbs. For speakers of varieties of English such as mine, for-deletion is (C) [optional / obligatory] when the for-clause immediately follows a verb like want, but cannot apply when the for-clause is separated from want in some way – as the examples below illustrate:",
+    "choices": [
+     "(A) accusative - (B) complementiser - (C) obligatory",
+     "(A) accusative - (B) complementiser - (C) optional",
+     "(A) accusative - (B) main clause marker - (C) optional",
+     "(A) nominative - (B) main clause marker - (C) optional",
+     "(A) nominative - (B) main clause marker - (C) obligatory"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) accusative - (B) complementiser - (C) obligatory. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘(C) optional’을 선택한 학생은 지문 마지막 문장의 ‘for-deletion is optional’이라는 표현을 (C)에 그대로 적용한 것으로 보입니다. 그러나 (C)는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 필수인지 선택인지’를 묻는 것이지, ‘for-deletion 이 가능한지’를 묻는 것이 아닙니다. → 처방: ‘(C) optional’을 고를 때는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 가능한가’를 묻는 것이 아니라, ‘for-deletion 이 필수인지 선택인지’를 묻는다는 점을 기억하세요.\n③ 진단: ‘(B) main clause marker’를 선택한 학생은 ‘for in structures like (67)’에서 ‘for’를 ‘main clause marker’로 오해한 것으로 보입니다. 그러나 지문에서 ‘for’는 ‘complementiser’로 기능하며, ‘main clause marker’는 ‘for’가 아닌 다른 요소(예: that, whether 등)를 가리킵니다. → 처방: ‘for’를 ‘complementiser’로 이해하려면, ‘for’가 보어절을 도입한다는 점(예: for him to leave)을 떠올리세요. ‘main clause marker’는 주로 절의 시작을 표시하는 역할을 합니다.\n④ 진단: ‘(A) nominative’를 선택한 학생은 ‘him’이 ‘nominative’ case 를 받는다고 오해한 것으로 보입니다. 그러나 지문에서 ‘him’이 ‘accusative’ case 를 받는다는 것은 ‘for him to leave’에서 ‘him’이 ‘for’의 보어절 주어로 기능하며, ‘accusative’ case 를 받는다는 사실에서 확인됩니다. → 처방: ‘nominative’와 ‘accusative’를 구분하려면, 주어가 ‘nominative’(예: he), 보어가 ‘accusative’(예: him)임을 기억하세요. ‘for him to leave’에서 ‘him’이 보어임을 확인하세요.\n⑤ 진단: ‘(A) nominative’를 선택한 학생은 ‘him’이 ‘nominative’ case 를 받는다고 오해한 반면, ‘(C) obligatory’를 선택한 학생은 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 필수라는 오해를 한 것으로 보입니다. 그러나 (C)는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 선택적’이라는 의미입니다. → 처방: ‘(C) obligatory’를 고를 때는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 가능한가’를 묻는 것이 아니라, ‘for-deletion 이 필수인지 선택인지’를 묻는다는 점을 기억하세요. 지문 마지막 문장을 다시 읽어보세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-17T22:10:09.047Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(64%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어에서 보문사 'for'는 to 부정사의 주어에게 목적격 격을 부여하는 결과로 문법적 구조가 형성된다.",
+     "영어에서 보문사 'for'는 to 부정사의 주어에게 목적격 격을 부여하는 여러 역할 중 하나에 불과하다.",
+     "모든 언어에서 보문사 'for'가 to 부정사의 주어에게 목적격 격을 부여하여 문법적 구조를 형성한다는 보장은 없다.",
+     "영어에서 보문사 'for'는 to 부정사의 주어에게 목적격 격을 부여하는 경우에만 문법적 구조가 형성된다.",
+     "영어에서 보문사 'for'는 to 부정사의 주어에게 목적격 격을 부여하여 문법적 구조를 형성한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The complementiser *for* assigns accusative case to the infinitive subject in English.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 'for'가 to 부정사의 주어에게 목적격 격을 부여한다는 내용은 있지만, 이것이 '결과로 문법적 구조가 형성된다'는 표현은 지문에 없음. 학생은 '결과'라는 단어를 오해하여 문법적 구조 형성의 필수 조건으로 오독했음. → 처방: 지문에서 'for'의 역할이 격 부여에만 한정되는지 확인하고, 문법적 구조 형성의 필수 조건인지 여부를 정확히 파악할 것.\n② 진단: 지문은 'for'의 역할이 격 부여에 한정되지 않고, 'for-deletion' 현상까지 설명하고 있음. 학생은 '여러 역할 중 하나'라는 표현을 오해하여 'for'의 역할이 격 부여에 국한된다고 생각했음. → 처방: 지문의 전체 내용을 종합하여 'for'의 역할이 단순히 격 부여에만 그치지 않음을 확인할 것.\n③ 진단: 지문은 영어에 한정된 설명이며, '모든 언어'라는 보장은 없음. 학생은 '모든 언어'라는 포괄적 표현을 오해하여 보편적 사실로 오독했음. → 처방: 지문의 범위가 영어에 한정되어 있음을 정확히 파악하고, 보편적 주장인지 여부를 판단할 것.\n④ 진단: 지문은 'for'가 to 부정사의 주어에게 목적격 격을 부여하는 경우에만 문법적 구조가 형성된다고 한정하지 않음. 학생은 '경우에만'이라는 조건을 오해하여 필수 조건으로 오독했음. → 처방: 지문의 문맥에서 'for'의 역할이 필수 조건인지 여부를 정확히 분석할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The complementiser *for* assigns accusative case to the infinitive subject in English.]"
+   }
+  },
+  {
+   "ts": "2026-07-17T22:10:24.028Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 영어에서 'want' 같은 동사 뒤의 'for'절은 'for'가 생략되어야 하지만, 'want'과 떨어져 있으면 생략할 수 없다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-17T21:10:37.870Z",
    "type": "주제",
@@ -280,93 +368,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'The acknowledgments list diverse references supporting the author’s argument.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘모든 학문 분야’를 ‘망라’라고 오해했는데, 지문은 저자의 주장을 뒷받침하는 참고문헌을 ‘나열’했을 뿐이고, 학문 분야가 ‘모두’ 포함된 것도 아니다. → 처방: 지문에서 인용된 참고문헌이 저자의 주장을 뒷받침하는 자료라는 점만 확인하고, ‘모든 학문 분야’를 주장하지는 않는다는 점을 기억하자.\n② 진단: ‘새로운 주장을 제시했다’라고 오해했는데, 지문은 저자의 주장을 뒷받침하는 참고문헌을 단순히 ‘나열’했을 뿐 새로운 주장을 제시하지 않았다. → 처방: 지문의 역할이 ‘주장 뒷받침’이 아니라 ‘참고문헌 소개’임을 분명히 하고, ‘새로운 주장’이란 말이 나오지 않는다는 점을 확인하자.\n③ 진단: ‘반드시 필요하다는 점을 강조했다’라고 오해했는데, 지문은 참고문헌의 ‘필요성’을 강조하지 않았고, 단지 참고문헌을 ‘나열’했을 뿐이다. → 처방: 지문이 참고문헌의 ‘필요성’을 말하지 않는다는 점을 기억하고, ‘강조’라는 단어가 나오지 않는다는 점을 확인하자.\n④ 진단: ‘간략히 소개하고 있다’라고 오해했는데, 지문은 참고문헌을 ‘나열’했을 뿐이고, ‘간략히’ 소개하지도 않았다. → 처방: 지문이 참고문헌을 ‘소개’하는 것이 아니라 ‘나열’한다는 점을 기억하고, ‘간략히’라는 말이 없음을 확인하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The acknowledgments list diverse references supporting the author’s argument.]"
-   }
-  },
-  {
-   "ts": "2026-07-17T14:06:43.217Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 이러한 책과 기사는 저자의 사고와 작업을 형성했습니다.\n주어진 단어: ( books / articles / shaped )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] These books and articles shaped the author's thinking and work. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-17T11:42:42.274Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "determining word classes by syntactic function rather than morphological form",
-     "classifying words by their form alone as the primary basis",
-     "determining word classes through their substantival and adjectival roles",
-     "word classes being fixed categories independent of their contextual behavior",
-     "word classes being identified solely by their derivational patterns"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The classification of words into different parts of speech, such as verbs, is determined by their function and behavior in a sentence rather than their form alone.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 지문에서 '단어의 형태만으로는 품사를 정할 수 없다'고 밝히며, 문맥 속 단어의 '행동'과 '연결 방식'이 중요하다고 설명했는데, 이 선지는 '형태만으로 분류한다'고 오해한 듯함. → 처방: 품사를 정할 때는 형태가 아니라 문장에서 단어의 역할(구문 기능)을 먼저 살펴야 한다는 점을 기억하기.\n③ 진단: 지문은 품사를 정할 때 '명사+형용사+동사' 역할 모두를 고려해야 한다고 설명했지만, 이 선지는 '명사와 형용사 역할만'으로 한정해 오독한 듯함. → 처방: 품사 판별 시 모든 문맥적 역할을 종합적으로 고려해야 한다는 점을 잊지 않기.\n④ 진단: 지문은 품사가 문맥에 따라 변할 수 있다고 설명했는데, 이 선지는 '품사가 고정되어 있다'고 오해한 듯함. → 처방: 품사가 문맥에 따라 달라질 수 있음을 기억하고, 문장 전체를 분석하기.\n⑤ 진단: 지문은 품사 판별 시 '파생 패턴'이 아니라 '문맥 속 역할'이 중요하다고 설명했는데, 이 선지는 '파생 패턴만'으로 오독한 듯함. → 처방: 단어의 파생 형태보다는 문장에서의 실제 쓰임(구문 기능)을 우선적으로 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The classification of words into different parts of speech, such as verbs, is determined by their function and behavior in a sentence rather than their form alone.]"
-   }
-  },
-  {
-   "ts": "2026-07-17T11:45:28.626Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Verbs Base: drink, used as (1) infinitive: I may drink, I want to drink. (2) imperative: drink this! (3) present indicative: I drink. (4) present subjunctive: if he drink. Third person indicative: drinks. Preterit: drank. Second participle: drunk. Form in -ing, drinking, used as (1) first participle. (2) gerund. Derivation of Word-Classes 7.71. The reader will have noticed that some words were given as examples both of substantives and adjectives, others as substantives and verbs, and others again as adjectives and adverbs. This shows that in order to find out what class a word belongs to it is not enough to consider its form in itself; what is decisive is the way in which the word in connected speech “behaves” towards other words, and in which other words behave towards it. If we find that one and the same form is used now as a substantive, now as an adjective or verb, this does not mean that the distinction between word-classes Word-Classes 41",
-    "choices": [
-     "‘drink’라는 단어는 동사와 명사로 동시에 사용될 수 없다.",
-     "‘drink’의 과거형은 ‘drunken’이다.",
-     "‘drinking’이라는 형태는 현재분사와 동명사로 모두 쓰인다.",
-     "단어의 품사 구별은 형태만으로 결정된다.",
-     "‘drink’의 과거분사 형태는 ‘drank’이다."
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'drink'가 명사로도 동사로도 쓰인 예가 나오므로, '동사와 명사로 동시에 사용될 수 없다'는 말은 지문의 내용과 맞지 않음. → 처방: 품사를 구별할 때는 형태뿐 아니라 문맥(말의 연결 방식)을 봐야 한다는 점을 기억하고, 지문에서 예시된 단어들을 다시 확인해보기.\n② 진단: 지문에서 'drink'의 과거형은 'drank', 과거분사는 'drunk'로 쓰인다고 나와 있는데, 'drunken'은 잘못된 과거형으로 제시됨. → 처방: 과거형과 과거분사의 기본형을 따로 정리해 외우고, 혼동하지 않도록 예문과 함께 암기하기.\n④ 진단: 지문에서 '단어의 품사 구별은 형태만으로 결정되지 않는다'고 분명히 말하고 있음. 즉, 문맥과 단어의 역할이 중요하다는 뜻임. → 처방: 품사를 판단할 때는 문장에서 그 단어가 어떤 역할을 하는지(주어, 목적어, 수식어 등)를 먼저 확인한 뒤 형태를 비교하기.\n⑤ 진단: 지문에서 'drink'의 과거분사형은 'drunk'라고 나오는데, 'drank'는 과거형으로만 쓰임. 학생은 과거형과 과거분사를 혼동한 듯함. → 처방: 과거형과 과거분사를 구분하는 규칙(예: drink-drank-drunk)을 외우고, 문장에서 실제로 쓰이는 모습을 보며 연습하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
