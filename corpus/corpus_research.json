@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-17T15:50:25.341Z",
+ "updated": "2026-07-17T17:33:37.348Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-17T17:33:04.719Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거형 동사(choosed) 오용과 부사(lastly) 위치 오류, 또는 문장 구조의 비약적 변화(Thus in concordance with → Thus I agree with)가 빈번하다는 점에서, 문법 오류는 종종 '과거형 동사의 오용'과 '어순/구조적 조율의 실패'로 귀결됨을 확인했다.",
+   "rule": "'과거형 동사를 쓸 때, 과거분사 형태(-ed)가 아닌 단순 과거형(-ed)을 오용하지 않도록 하며, 특히 'last'는 부사(lastly)로 변환될 가능성이 높으므로 문맥에 따라 '마지막으로'라는 뜻의 부사로 재구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-17T15:49:59.377Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "이 코퍼스 패턴은 관사(a/the), 전치사(of/to), 시제 일치, 그리고 품사 오류(형용사↔부사, 동사 원형/과거형)가 빈번히 발생함을 보여준다. 특히 'to + 명사' vs. 'to + 동사원형'의 혼동과 'of + 명사' 구조가 자주 틀어지는 경향이 강하다.",
    "rule": "'to + 동사원형'과 'to + 명사'의 구분을 명확히 묻는 문제(예: 'to reduce' vs. 'to reduction')를 CEFR B1~B2 수준에서 2~3문항씩 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-12T11:34:05.901Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 'reasons'는 복수형으로 쓰이는 경우가 많으며, 'such'는 명사 앞 관사(a/the) 없이 사용되는 패턴이 일반적이다. 또한 'decrease'는 자동사로 쓰여 '-d' 형태의 과거분사가 아닌 동사원형으로 사용되는 경우가 많다.",
-   "rule": "복수형 명사(reasons/situations) 앞에는 'these/those'를, 단수형 명사 앞에는 'such'를 사용하며, 자동사(decrease) 뒤에는 동사원형(-d 형태가 아닌)을 쓴다.",
    "sample": [
     "old english",
     "university press",
