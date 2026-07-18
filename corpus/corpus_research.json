@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-18T12:13:09.720Z",
+ "updated": "2026-07-18T13:52:52.926Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-18T13:52:28.798Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'be + 형용사 + 전치사' 구문에서 'be' 동사의 오용(be useful → is useful)이 빈번하며, 'whenever' 절 내 'necessary'의 위치 오류도 다수 확인된다. 또한 과거 시제와 현재 시제의 혼용 오류가 반복적으로 발생한다.",
+   "rule": "'be + 형용사 + 전치사' 구문(예: be useful for, be familiar with)에서 'be' 동사가 생략되거나 오용된 경우, 반드시 'be' 동사를 올바르게 삽입하거나 형용사-전치사 결합을 확인하여 문장을 수정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-18T12:10:54.192Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'reasons'와 같은 추상명사를 수식하는 경우, 'some'보다 'various'가 더 자연스러운 패턴이 빈번하다. 또한, 동사 일치 오류는 복수 주어에 단수 동사가 오는 경우로, 쉼표와 접속사를 통한 병렬 구조가 원서에서 흔히 보인다.",
    "rule": "'some reasons'는 'various reasons'로 변형하거나, 'for some reasons'는 'for various reasons'로 수정하는 오류 패턴을 출제할 때 반드시 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-13T11:32:26.982Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'most + 명사'는 복수형 명사와 결합하는 패턴이 빈번하며, 'old'는 명사 앞에 올 때 'older'로 비교급 형태로 사용되는 경향이 강하다.",
-   "rule": "원서 패턴을 반영하여 'most + 명사'는 복수형 명사와 결합하고, 'old'는 비교급 'older'로 표기하도록 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",

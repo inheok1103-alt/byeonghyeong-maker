@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-18T12:13:09.723Z",
+ "updated": "2026-07-18T13:52:52.930Z",
  "samples": [
+  {
+   "ts": "2026-07-18T13:52:11.973Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "WH-MOVEMENT PROCEEDS GRADUALLY in CHILDREN'S GRAMMARS",
+     "WH-EXPRESSIONS SHIFT ONLY WITHIN MAIN CLAUSES in CHILD GRAMMARS",
+     "CHILDREN'S GRAMMARS DEMAND FULL WH-COPY POSITIONS to BE SPELLED OUT",
+     "ALL WH-MOVEMENTS in ENGLISH OCCUR in SINGLE, INSTANTANEOUS STEPS",
+     "WH-EXPRESSIONS MOVE LAYER by LAYER in ADULT GRAMMARS"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'WH-movement unfolds clause-by-clause in child grammar.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘WH-EXPRESSIONS SHIFT ONLY WITHIN MAIN CLAUSES’라는 말은 지문에서 ‘wh-word 가 보조사-C 위치로 한 번씩만 움직인다’는 설명과 혼동한 것이다. 지문은 보조사-C 위치를 여러 번 거치며 움직인다고 밝히는데, 학생은 ‘주절 안에서만’ 움직인다고 오해했다. → 처방: ‘wh-표현은 한 번에 한 단계씩 움직인다’는 개념을 기억하고, 지문에서 ‘한 절씩 움직인다’는 설명을 다시 읽어보기.\n③ 진단: ‘CHILDREN'S GRAMMARS DEMAND FULL WH-COPY POSITIONS’를 고른 학생은 지문에서 ‘아이들은 모든 보조사-C 위치에 wh-복사본이 있어야 한다고 생각한다’는 부분을 오독했다. 이는 아이들의 잘못된 가정을 설명한 것이지, 문법의 요구사항이 아님을 혼동한 것이다. → 처방: ‘아이들의 잘못된 가정을 설명한 부분’이라는 점을 분명히 하고, 문법의 실제 규칙(성인 영어에서는 가장 높은 위치의 복사본만 발음됨)을 따로 정리하기.\n④ 진단: ‘ALL WH-MOVEMENTS in ENGLISH OCCUR in SINGLE, INSTANTANEOUS STEPS’를 선택한 학생은 지문에서 ‘아이들은 한 번에 한 단계씩 움직인다’는 설명을 성인 영어의 규칙과 혼동했다. 성인 영어는 한 번에 움직이지만, 아이들은 그렇지 않다는 점을 놓쳤다. → 처방: ‘아이들의 문법’과 ‘성인 문법’을 구분하여 공부하고, 지문에서 각각의 특징을 따로 메모하기.\n⑤ 진단: ‘WH-EXPRESSIONS MOVE LAYER by LAYER in ADULT GRAMMARS’를 고른 학생은 지문에서 ‘아이들의 문법’을 설명한 부분을 성인 문법으로 잘못 적용했다. 성인 영어는 한 번에 움직이지만, 아이들은 여러 단계로 움직인다는 점을 혼동했다. → 처방: ‘아이들의 문법’과 ‘성인 문법’을 비교하는 표를 만들고, 각각의 특징을 명확히 구분하여 암기하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: WH-movement unfolds clause-by-clause in child grammar.]"
+   }
+  },
   {
    "ts": "2026-07-18T12:07:15.126Z",
    "type": "영영풀이일치",
@@ -331,41 +366,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 84쪽의 유형 (i)과 비교할 때, 이 문장들은 기술된 대상의 존재를 단순히 주장하는 것이 아니라, 그 대상이 관여하는 사태의 상태에 대한 정보를 제공합니다. (구문 포인트: 비교 구문(compared with type (i)) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-17T22:08:06.472Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 1번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "We can then say that the infinitive subject him is assigned (A) [nominative / accusative] case by the (B) [complementiser / main clause marker] for in structures like (67) in exactly the same way as the accusative subject them is assigned accusative case by the complementiser for in the bracketed complement clause in (64). (How case-marking works will be discussed in §3.9.) One way of accounting for why the complementiser isn’t overtly spelled out as for in structures like (67) is to suppose that it is given a null spellout (and thereby has its phonetic features deleted) when introducing the complement of a verb like want: we can accordingly refer to verbs like want as for-deletion verbs. For speakers of varieties of English such as mine, for-deletion is (C) [optional / obligatory] when the for-clause immediately follows a verb like want, but cannot apply when the for-clause is separated from want in some way – as the examples below illustrate:",
-    "choices": [
-     "(A) accusative - (B) complementiser - (C) obligatory",
-     "(A) accusative - (B) complementiser - (C) optional",
-     "(A) accusative - (B) main clause marker - (C) optional",
-     "(A) nominative - (B) main clause marker - (C) optional",
-     "(A) nominative - (B) main clause marker - (C) obligatory"
-    ],
-    "answer": 1,
-    "explanation": "정답 조합: (A) accusative - (B) complementiser - (C) obligatory. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘(C) optional’을 선택한 학생은 지문 마지막 문장의 ‘for-deletion is optional’이라는 표현을 (C)에 그대로 적용한 것으로 보입니다. 그러나 (C)는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 필수인지 선택인지’를 묻는 것이지, ‘for-deletion 이 가능한지’를 묻는 것이 아닙니다. → 처방: ‘(C) optional’을 고를 때는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 가능한가’를 묻는 것이 아니라, ‘for-deletion 이 필수인지 선택인지’를 묻는다는 점을 기억하세요.\n③ 진단: ‘(B) main clause marker’를 선택한 학생은 ‘for in structures like (67)’에서 ‘for’를 ‘main clause marker’로 오해한 것으로 보입니다. 그러나 지문에서 ‘for’는 ‘complementiser’로 기능하며, ‘main clause marker’는 ‘for’가 아닌 다른 요소(예: that, whether 등)를 가리킵니다. → 처방: ‘for’를 ‘complementiser’로 이해하려면, ‘for’가 보어절을 도입한다는 점(예: for him to leave)을 떠올리세요. ‘main clause marker’는 주로 절의 시작을 표시하는 역할을 합니다.\n④ 진단: ‘(A) nominative’를 선택한 학생은 ‘him’이 ‘nominative’ case 를 받는다고 오해한 것으로 보입니다. 그러나 지문에서 ‘him’이 ‘accusative’ case 를 받는다는 것은 ‘for him to leave’에서 ‘him’이 ‘for’의 보어절 주어로 기능하며, ‘accusative’ case 를 받는다는 사실에서 확인됩니다. → 처방: ‘nominative’와 ‘accusative’를 구분하려면, 주어가 ‘nominative’(예: he), 보어가 ‘accusative’(예: him)임을 기억하세요. ‘for him to leave’에서 ‘him’이 보어임을 확인하세요.\n⑤ 진단: ‘(A) nominative’를 선택한 학생은 ‘him’이 ‘nominative’ case 를 받는다고 오해한 반면, ‘(C) obligatory’를 선택한 학생은 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 필수라는 오해를 한 것으로 보입니다. 그러나 (C)는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 선택적’이라는 의미입니다. → 처방: ‘(C) obligatory’를 고를 때는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 가능한가’를 묻는 것이 아니라, ‘for-deletion 이 필수인지 선택인지’를 묻는다는 점을 기억하세요. 지문 마지막 문장을 다시 읽어보세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
