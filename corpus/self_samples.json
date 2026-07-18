@@ -1,6 +1,73 @@
 {
- "updated": "2026-07-18T19:34:44.101Z",
+ "updated": "2026-07-18T21:09:55.570Z",
  "samples": [
+  {
+   "ts": "2026-07-18T21:07:43.354Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 1/1가 5번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.67,
+    "distractorEff": 100,
+    "pass": true,
+    "flags": []
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Ask the groups to discuss each exercise first among themselves and then orally under your supervision. Evaluate your students’ competence through the use of the lesson and unit evaluation in which they have to perform individually (independent practice) In discussion, as in other methods, your role as teacher is to prepare, execute and follow up. Before the discussion begins you, the teacher must make sure that every one is properly prepared. During the class’s first experiences with real discussion you will have to act as moderator. All times you will need to act as supervisor and observer. In roles, please make sure that the problem to be discussed is properly defined. Characteristics of a good discussion: 1. A discussion is a purposeful conversation proceeding toward some goal, 2. The topic presented must be discussible, 3. Though it is informal , it is always serious , 4. The teacher is merely a moderator , who supervises rather than directs the conversation, 5. All members of the group have a chance to express an opinion.\n\n─────────\n[요약문] Teachers should (A) facilitate structured group activities and (B) assess student performance through guided evaluation methods.",
+    "choices": [
+     "(A) instructional guidance … (B) performance evaluation",
+     "(A) prepare materials … (B) assign grades",
+     "(A) observe silently … (B) enhance discussion quality",
+     "(A) define discussion topics … (B) record individual responses",
+     "(A) moderate discussions … (B) student participation"
+    ],
+    "answer": 1,
+    "explanation": "(A) instructional guidance / (B) performance evaluation 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 지문에서 'prepare, execute, follow up'은 수업 준비·진행·평가를 뜻하는데, 'prepare materials'는 '자료 준비'로 좁게 오해했고 'assign grades'는 '등급 부여'로 평가의 한 부분만 잘못 생각했음. → 처방: 평가는 '수업의 사용'을 통한 '능력 측정'이라는 큰 틀을 떠올리며, '자료 준비'나 '등급 부여'가 아닌 '수업의 구조화'와 '수행 평가'를 연결지어 생각하기.\n③ 진단: 'observe silently'는 '조용히 관찰'이 아니라 '관찰·감독·조정'을 포괄하는 역할이며, 'enhance discussion quality'는 결과가 아닌 '목표'를 설명한 것이 아님. 학생은 '조용히 관찰'만으로 오해했음. → 처방: 지문에서 'supervisor and observer'는 '조용히 관찰'이 아니라 '수업의 흐름을 관리·감독'하는 역할임을 기억하고, '질 향상'이 아닌 '구조화된 안내'를 떠올리기.\n④ 진단: 'define discussion topics'는 '주제 설정'으로 부분에 불과하며, 'record individual responses'는 '개별 수행 평가'의 한 방법일 뿐 '평가의 목적'을 설명하지 않음. 학생은 '주제 설정'과 '기록'을 '구조화'와 '평가'로 혼동했음. → 처방: 지문에서 'define the problem'은 '토론의 목적'을 세우는 것이고, 'evaluate competence'는 '개별 수행 평가'임을 구분하여, '주제 설정'과 '기록'이 아닌 '안내와 평가'를 연결지어 생각하기.\n⑤ 진단: 'moderate discussions'는 '토론 진행'으로 부분 역할에 불과하며, 'student participation'은 '참여'로 결과나 특징을 설명한 것임. 학생은 '토론 진행'과 '참여'를 '수업 구조화'와 '수행 평가'로 잘못 연결했음. → 처방: 지문에서 'moderator'는 '토론의 흐름 관리'를 뜻하지만, 'evaluate competence'는 '개별 수행 평가'로 더 큰 범위를 설명한다는 점을 기억하고, '참여'가 아닌 '능력 평가'를 떠올리기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-18T21:08:23.671Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "practice on one's own improving basic reading abilities",
+     "reading comprehension arising from structured group interaction",
+     "structured group discussions consistently boosting reading comprehension",
+     "teacher-centered lectures emphasizing group work to maximize reading comprehension",
+     "unstructured discussions failing to improve reading comprehension"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Discussion-based teaching enhances reading comprehension through structured group interaction.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 논지에서 어긋남· ③ 정답 — 핵심 논지 반영· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Discussion-based teaching enhances reading comprehension through structured group interaction.]\n[오답 진단·처방]\n① 진단: 지문에서 'I'는 그룹 토론을 통해 학생들의 읽기 이해력이 향상된다고 말하고 있지만, '혼자 연습하기'는 언급하지 않음. 학생은 '기본 읽기 능력 향상'이라는 단어만 보고 오독했을 가능성이 큼. → 처방: 지문 전체를 읽고 '토론'과 '읽기 이해력'의 관계를 정확히 연결 지어 읽기.\n② 진단: 지문은 토론이 읽기 이해력을 '향상시킨다'고 했지만, '구조화된 그룹 상호작용에서 비롯된 읽기 이해력'이라는 표현은 지문에 없음. 학생은 '구조화된'이라는 단어에만 주목했을 수 있음. → 처방: 지문에서 '목적 있는 대화'와 '읽기 이해력'이 어떻게 연결되는지 다시 확인하기.\n④ 진단: 지문은 토론에서 선생님이 '조율자' 역할을 한다고 명시했지만, '선생님 중심 강의'는 언급하지 않음. 학생은 '선생님'이라는 단어에만 반응했을 가능성이 큼. → 처방: 지문에서 선생님의 역할을 정확히 파악하고, '강의'와 '토론'을 구분해서 읽기.\n⑤ 진단: 지문은 토론이 읽기 이해력을 '향상시킨다'고 했지만, '구조화되지 않은 토론'이 실패한다는 말은 없음. 학생은 '구조화되지 않음'이라는 단어에만 주목했을 수 있음. → 처방: 지문에서 '목적 있는 대화'와 '읽기 이해력'의 관계를 다시 한 번 정리해서 읽기."
+   }
+  },
   {
    "ts": "2026-07-18T19:34:14.422Z",
    "type": "배열영작",
@@ -311,58 +378,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Infinitives as objects are restricted by verb semantics, while gerunds are more broadly permitted.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 지문은 'infinitive as object'가 동사 의미에 따라 허용 여부가 달라진다고 설명하는데, 선지는 'infinitive 가 의미와 무관하게 언제나 허용된다'고 오해하여 지문의 핵심 내용을 반대로 이해함. → 처방: 지문을 읽을 때 동사의 의미 범주를 꼼꼼히 확인하고, '허용 여부가 제한적'이라는 부분을 반드시 기억하기.\n③ 진단: 지문에서 Group 1과 2가 'infinitive as object'를 허용한다고 설명하지만, 'Group 3~6은 허용하지 않는다'는 오해를 함. 지문은 Group 3~6도 일부 허용한다고 설명함. → 처방: 지문에서 'Group 3~6'의 예시와 설명을 다시 읽고, '허용 범위'를 정확히 파악하기.\n④ 진단: 지문은 Group 3, 4, 5의 동사가 'infinitive as object'를 허용한다고 설명하지만, '항상 예외 없이 허용된다'는 오해를 함. 지문은 '일부 동사는 허용하지 않는다'고 설명함. → 처방: 지문에서 'Group 3~5의 동사'가 '항상 허용되는지'를 확인하고, '제한이 있는 경우도 있다'는 점을 기억하기.\n⑤ 진단: 지문은 'infinitive as object'가 제한적일 수 있지만, 'gerund 는 언제나 허용되지 않는다'는 오해를 함. 지문은 'gerund 는 대부분의 동사에서 허용된다'고 설명함. → 처방: 지문에서 'gerund 의 허용 범위'를 정확히 읽고, 'infinitive 와 gerund 의 차이'를 명확히 구분하기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Infinitives as objects are restricted by verb semantics, while gerunds are more broadly permitted.]"
-   }
-  },
-  {
-   "ts": "2026-07-18T10:44:50.863Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 9 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'infinitives', 'gerunds', 'objects' / 7~11단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Some verbs allow gerunds but not infinitives as objects.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 7~11단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-18T09:00:52.550Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.75,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "structural distinction of internal and external arguments",
-     "causal relationship between internal and external arguments",
-     "internal argument of a verb",
-     "universal distinction of arguments in sentences",
-     "always obligatory distinction of internal and external arguments"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The internal and external arguments of a verb are distinguished based on their structural position within the sentence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 학생은 'causal relationship'이라는 단어를 지문에서 찾지 못했음에도 불구하고 선지를 선택했을 것인데, 이는 지문에서 내부 인자와 외부 인자 간의 구조적 구분만을 다루고 있음을 무시한 것으로 보인다. → 처방: 지문에서 내부 인자와 외부 인자 간의 구조적 구분을 명확히 이해하고, 인과관계와 같은 다른 개념을 혼동하지 않도록 한다.\n③ 진단: 학생은 지문에서 내부 인자에 대한 설명을 읽었지만, 주제의 핵심은 내부 인자와 외부 인자 간의 구분이라는 점을 놓쳤을 가능성이 있다. → 처방: 지문에서 내부 인자와 외부 인자 간의 구분을 강조하는 부분을 주의 깊게 읽고, 이 구분이 주제의 핵심임을 인식한다.\n④ 진단: 학생은 지문에서 언급된 구분이 특정 상황에만 해당하는 것이 아니라, 보편적인 구분이라고 생각했을 가능성이 있다. → 처방: 지문에서 언급된 구분이 특정 상황이나 문장 구조에만 해당하는지, 아니면 보편적인지에 대해 명확히 이해한다.\n⑤ 진단: 학생은 내부 인자와 외부 인자 간의 구분이 항상 필수적이라고 생각했을 가능성이 있다. → 처방: 지문에서 내부 인자와 외부 인자 간의 구분이 항상 필요한지, 아니면 특정 상황에 따라 다르지는 않은지에 대해 명확히 이해한다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The internal and external arguments of a verb are distinguished based on their structural position within the sentence.]"
    }
   }
  ]
