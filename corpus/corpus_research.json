@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-18T15:18:22.720Z",
+ "updated": "2026-07-18T16:15:27.877Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-18T16:15:00.982Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'명사 + 전치사 + 관사 + 명사' 구조에서 관사가 생략되거나 잘못 사용되는 오류가 빈번하며, 특히 'kind of activities' → 'kinds of activities'와 같이 복수형/관사 오류가 연어 패턴과 결합된다. 또한 'possession'의 철자 오류('possetion')와 같은 기본적인 오류도 다수 관찰된다.",
+   "rule": "'명사 + 전치사 + 관사 + 명사' 구조에서 관사는 반드시 포함되어야 하며, 복수형 명사 뒤에는 'of'가 아닌 'kinds of'/'types of'와 같은 복수 표현을 사용해야 한다. 예를 들어, 'kind of activities'는 'these kinds of activities'로 수정해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-18T15:17:59.662Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 실제 패턴에서 'therefore', 'for example', 'and' 등 접속사나 부사구가 문장 중간에서 삽입되어야 하는 경우가 빈번하며, 동사 시제(과거형), 명사구(NP) 구조, 전치사구(PP) 등이 문법적 오류의 주요 원인으로 나타났다.",
    "rule": "원서 코퍼스의 실제 패턴을 반영하여, 접속사(therefore, for example 등)나 부사구가 문장 중간 삽입 시 반드시 '콤마(,)로 구분'하고, 동사 시제(과거형)나 동사구(be + 형용사) 오류 시 원서의 '시제 일관성'과 '동사-형용사 병렬 구조'를 준수하도록 변형 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-13T17:26:15.999Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "정보의 한정성·구체성 부족이 오류로 이어지며, 특히 'all information'이나 'many books' 같은 무한대 명사구는 'the', 'a', 'specific category'로 한정하거나 구체화해야 한다.",
-   "rule": "명사구가 무한대(uncountable) 또는 범용(universal)일 경우, 'the', 'a', 'specific category(예: news programs, TV shows)' 등으로 한정하거나 구체화하여 문장을 수정하라.",
    "sample": [
     "old english",
     "university press",

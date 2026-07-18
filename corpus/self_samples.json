@@ -1,6 +1,40 @@
 {
- "updated": "2026-07-18T15:18:22.724Z",
+ "updated": "2026-07-18T16:15:27.881Z",
  "samples": [
+  {
+   "ts": "2026-07-18T16:14:43.672Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0,
+    "distractorEff": 100,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=0.00)"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] 2, these are subject to Principle A of Binding Theory which requires an anaphor to be locally bound and hence to have an antecedent within the TP most immediately containing it.\n\nIn such cases, it would appear that the wh-word moves to the italicised spec-C position within the bracketed complement clause before moving into its final landing-site in the bold-printed spec-C position in the main clause. While the children concerned ‘know’ that the original occurrence of the wh-word receives a null spellout, they wrongly assume that any wh-copy in any spec-C position is overtly spelled out (whereas only the highest such copy is overtly spelled out in adult English). ( ① ) Children’s wh-copying structures thus provide evidence that wh-expressions move one clause at a time. ( ② ) A further piece of evidence leading to the same conclusion comes from the interpretation of reflexive anaphors like himself. ( ③ ) As we saw in Exercise 2. ( ④ ) This requirement can be illustrated by the contrast below: ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ①을 고른 학생은 wh-copying 구조가 wh-표현의 한 번에 한 절씩 이동한다는 증거가 된다는 문장(①)이 앞의 문장(주어진 문장)과 직접 연결된다고 오해했다. 지문에서 ①은 wh-copying 증거를 말한 뒤 '이렇게 해서'라는 말로 이어지는 문장이다. → 처방: 다음 문장을 읽기 전에 앞뒤 문장의 연결어를 확인해라. 'Thus'·'Hence'·'Therefore' 같은 말이 나오면 앞의 말이 결론임을 기억해.\n② 진단: ②를 고른 학생은 wh-copying 과 himself 해석이 같은 결론을 내린다는 점만 보고 문맥상 위치가 맞다고 생각했다. 그러나 ②는 wh-copying 증거를 말한 뒤 '더불어'라는 말로 이어지는 보충 설명이다. → 처방: 지문의 흐름을 파악할 때는 'Moreover'·'Furthermore'·'In addition' 같은 보충 설명 표시어를 찾고, 그것이 앞의 문장과 같은 수준의 설명임을 기억해.\n③ 진단: ③을 고른 학생은 himself 해석이 wh-표현의 한 번에 한 절씩 이동한다는 증거가 된다는 점만 보고 문맥상 위치가 맞다고 생각했다. 그러나 ③은 wh-copying 과 himself 가 같은 결론을 이끈다는 점에서 ②와 같은 보충 설명에 속한다. → 처방: 보충 설명은 보통 같은 결론을 뒷받침하는 다른 예시나 근거를 제시한다는 점을 기억해. 'Like'·'Similarly' 같은 말이 나오면 같은 범주임을 떠올려.\n⑤ 진단: ⑤를 고른 학생은 '이 요구는 아래의 대조로 설명할 수 있다'는 말이 주어졌으므로 주어진 문장이 그 대조 설명 전에 들어간다고 생각했다. 그러나 ⑤는 이미 언급된 요구(TP 안의 anaphor 조건)를 예시로 설명하는 문장으로, 주어진 문장(wh-표현의 이동)과는 다른 주제다. → 처방: 지문의 흐름을 읽을 때는 문장 간 연결어뿐 아니라 주제 전환 여부도 확인해. 'For example'·'To illustrate'가 나오면 그 문장이 앞의 주제를 구체화한다는 점을 기억해.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-18T15:17:14.268Z",
    "type": "제목",
@@ -345,41 +379,6 @@
     ],
     "answer": 3,
     "explanation": "밑줄 친 부분은 'Reading provides access to unlimited intellectual and imaginative possibilities that would otherwise remain locked away.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'books are your keys to knowledge'와 'no limit to the kinds of things you can learn'를 보고 'vast reservoir of ideas and creativity'가 떠올랐지만, 'hidden from most people'는 지문에 없는 과장된 표현임. → 처방: 지문에서 직접 언급한 'knowledge'와 'learn'에 집중해, 'unlimited possibilities'가 더 정확한지 확인하기.\n② 진단: 'absorb every piece of information they encounter without exception'는 지문의 'no limit to the kinds of things you can learn'을 오해해 '모든 정보 흡수'로 해석한 것임. → 처방: 지문에서 'limit'은 '한계가 없다'는 뜻이지 '모든 정보'를 의미하지 않음을 기억하기.\n④ 진단: 'guarantees a permanent increase in intelligence'는 지문의 'keys to knowledge'를 '지능 증가'로 과장해 해석한 것임. → 처방: 지문에서 'knowledge'와 'learn'을 '지능'으로 바꾸지 말고, 원래 단어의 의미를 그대로 적용하기.\n⑤ 진단: 'primarily serve as sources of entertainment'는 지문의 'adventure'나 'study' 같은 단어를 보고 '오락'으로 오해한 것임. → 처방: 지문에서 'knowledge', 'learn', 'study' 같은 단어가 반복되는지 확인해 '도구'로 이해하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-18T03:34:39.594Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "Last year, the number of employees on the first day of the year (A) [was equal to / were equal to] the number of employees on the last day of the year. Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees (B) [who leaving / who left] the company during the year (C) [dividing by / divided by] the average of the number of employees on the first day of the year and the number of employees on the last day of that year.” We are also told that the labor turnover rate last year was 25%. To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
-    "choices": [
-     "(A) was equal to - (B) who left - (C) divided by",
-     "(A) were equal to - (B) who left - (C) dividing by",
-     "(A) were equal to - (B) who leaving - (C) dividing by",
-     "(A) was equal to - (B) who leaving - (C) divided by",
-     "(A) was equal to - (B) who left - (C) dividing by"
-    ],
-    "answer": 1,
-    "explanation": "정답 조합: (A) was equal to - (B) who left - (C) divided by. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: 'were equal to'를 썼는데, 'the number of employees'는 단수 취급이라서 'was'가 맞음. 'dividing by'는 동명사라서 문맥에 맞지 않음. → 처방: 주어가 'the number of'로 시작하면 단수 동사('was')를 쓰고, 'divided by'로 수동형 표현을 써야 함.\n③ 진단: 'were equal to'는 단수 주어를 오해한 것이고, 'who leaving'은 동명사라서 문법적으로 틀림. 'dividing by'도 동명사라서 오류임. → 처방: 주어는 단수이므로 'was equal to'를 쓰고, 동사형태는 'who left'와 'divided by'로 맞춰야 함.\n④ 진단: 'who leaving'은 동명사라서 문법 오류고, 'divided by'는 수동형이지만 앞의 동사 형태가 틀렸음. → 처방: 동사 형태는 'who left'로 쓰고, 'divided by'로 수동형 표현을 써야 문법에 맞음.\n⑤ 진단: 'dividing by'는 동명사라서 문맥에 맞지 않음. 'who left'는 맞지만, 'dividing by'가 수동형이 아니라서 오류임. → 처방: 수동형 표현은 'divided by'로 써야 하고, 동사 형태는 'who left'로 맞춰야 함.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
