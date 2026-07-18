@@ -1,6 +1,40 @@
 {
- "updated": "2026-07-18T22:10:39.398Z",
+ "updated": "2026-07-18T23:14:37.814Z",
  "samples": [
+  {
+   "ts": "2026-07-18T23:13:47.196Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.63,
+    "D": 0.17,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.17)",
+     "죽은오답 ①③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The core argument of a sentence may sometimes be a proposition expressed by a sentential clause",
+     "A sentence’s core argument is not always derived from the main verb’s action",
+     "Every core argument in a sentence must be a proposition expressed by a sentential clause",
+     "A sentence’s core argument is not necessarily a proposition expressed by a sentential clause",
+     "The proposition expressed by a sentential clause can serve as the core argument of a sentence"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The core argument of a sentence can be a proposition expressed by a sentential clause.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 'The core argument of a sentence may sometimes be a proposition expressed by a sentential clause'라고 했지만, 이는 'may sometimes'로 '가끔'이라는 한계가 있음을 간과하고 '때로는'을 '항상'으로 오해했거나, 'may'의 의미를 정확히 읽지 못했음. → 처방: 지문에서 'may'와 'sometimes' 같은 한정 표현을 주의 깊게 읽고, 문장의 범위를 정확히 파악할 것.\n② 진단: 지문에서 'A sentence’s core argument is not always derived from the main verb’s action'이라는 부분이 있지만, 이는 'not always'로 '항상'이 아님을 강조한 것인데, 이를 '반드시'라는 의미로 오해했거나, 'derived from'의 의미를 잘못 이해했음. → 처방: 지문에서 'not always'와 같은 부정 표현을 주의 깊게 읽고, 문맥상 '항상'이 아님을 명확히 파악할 것.\n③ 진단: 지문에서 'Every core argument in a sentence must be a proposition expressed by a sentential clause'라는 문장은 없지만, 학생은 'must'라는 강제적 표현을 지문에서 찾으려 했거나, 'Every'가 포함된 선지를 '모든'이라는 뜻으로 오해했음. → 처방: 지문에서 'must'나 'Every' 같은 절대적 표현이 있는지 확인하고, 문맥상 '~일 필요는 없다'는 의미를 찾아낼 것.\n④ 진단: 지문에서 'A sentence’s core argument is not necessarily a proposition expressed by a sentential clause'는 'not necessarily'로 '반드시 ~은 아니다'라는 뜻이지만, 학생은 이를 '반드시 ~이 아니다'로 오해했거나, 'necessarily'의 의미를 잘못 해석했음. → 처방: 지문에서 'not necessarily'와 같은 표현을 주의 깊게 읽고, '반드시 ~은 아니다'라는 의미를 정확히 이해할 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The core argument of a sentence can be a proposition expressed by a sentential clause.]"
+   }
+  },
   {
    "ts": "2026-07-18T22:09:24.234Z",
    "type": "요지",
@@ -344,39 +378,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'WH-movement unfolds clause-by-clause in child grammar.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘WH-EXPRESSIONS SHIFT ONLY WITHIN MAIN CLAUSES’라는 말은 지문에서 ‘wh-word 가 보조사-C 위치로 한 번씩만 움직인다’는 설명과 혼동한 것이다. 지문은 보조사-C 위치를 여러 번 거치며 움직인다고 밝히는데, 학생은 ‘주절 안에서만’ 움직인다고 오해했다. → 처방: ‘wh-표현은 한 번에 한 단계씩 움직인다’는 개념을 기억하고, 지문에서 ‘한 절씩 움직인다’는 설명을 다시 읽어보기.\n③ 진단: ‘CHILDREN'S GRAMMARS DEMAND FULL WH-COPY POSITIONS’를 고른 학생은 지문에서 ‘아이들은 모든 보조사-C 위치에 wh-복사본이 있어야 한다고 생각한다’는 부분을 오독했다. 이는 아이들의 잘못된 가정을 설명한 것이지, 문법의 요구사항이 아님을 혼동한 것이다. → 처방: ‘아이들의 잘못된 가정을 설명한 부분’이라는 점을 분명히 하고, 문법의 실제 규칙(성인 영어에서는 가장 높은 위치의 복사본만 발음됨)을 따로 정리하기.\n④ 진단: ‘ALL WH-MOVEMENTS in ENGLISH OCCUR in SINGLE, INSTANTANEOUS STEPS’를 선택한 학생은 지문에서 ‘아이들은 한 번에 한 단계씩 움직인다’는 설명을 성인 영어의 규칙과 혼동했다. 성인 영어는 한 번에 움직이지만, 아이들은 그렇지 않다는 점을 놓쳤다. → 처방: ‘아이들의 문법’과 ‘성인 문법’을 구분하여 공부하고, 지문에서 각각의 특징을 따로 메모하기.\n⑤ 진단: ‘WH-EXPRESSIONS MOVE LAYER by LAYER in ADULT GRAMMARS’를 고른 학생은 지문에서 ‘아이들의 문법’을 설명한 부분을 성인 문법으로 잘못 적용했다. 성인 영어는 한 번에 움직이지만, 아이들은 여러 단계로 움직인다는 점을 혼동했다. → 처방: ‘아이들의 문법’과 ‘성인 문법’을 비교하는 표를 만들고, 각각의 특징을 명확히 구분하여 암기하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: WH-movement unfolds clause-by-clause in child grammar.]"
-   }
-  },
-  {
-   "ts": "2026-07-18T12:07:15.126Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 3/3 다수결 3번(기록 4번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "To make a ⓐ<u>cursory</u> attempt at learning French is to memorize a couple of easy words and then give up. ⓑ<u>CURTAIL</u> (kur TAYL) v to ⓒ<u>shorten</u>; to cut ⓓ<u>short</u> • The vet curtailed her effort to cut the cat’s tail with the lawn mower. That is, she stopped ⓔ<u>trying</u>. To curtail a tale is to cut it short. CYNIC (SIN ik) n one who deeply distrusts human nature; one who believes humans are motivated only by selfishness • When the pop star gave a million dollars to the museum, cynics said he was merely trying to buy himself a reputation as a cultured person. To be cynical is to be extremely suspicious of the motivations of other people. Cynicism is general grumpiness and pessimism about human nature. Quick Quiz #29 Match each word in the first column with its definition in the second column. Check your answers here. 1. culpable a. free from guilt 2. exculpate b. shorten 3. cursory c. one who distrusts humanity 4. curtail d. hasty 5. cynic e. guilty D",
-    "choices": [
-     "cursory: Hasty; superficial; careless",
-     "curtail: A scroll termination, as of a step, etc.",
-     "shorten: To make shorter; to abbreviate.",
-     "short: A person who believes that all people are motivated by selfishness.",
-     "trying: To attempt; to endeavour. Followed by infinitive."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓓ의 풀이는 'cynic'의 정의이다. 'short'의 올바른 풀이: A short circuit.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘cursory’의 뜻이 ‘hasty’(성급한)만 떠올렸고 ‘superficial’(피상적인)이나 ‘careless’(부주의한)까지 포함된 뜻을 보지 못했음. 지문에서 ‘cursory attempt’이 ‘대충 하는 시도’라는 뜻으로 ‘hasty’와 ‘superficial’이 모두 포함됨. → 처방: 영영사전에서 ‘cursory’의 뜻을 ‘hasty, superficial, careless’까지 모두 확인하고, 문맥에서 ‘대충 하는’ 의미를 떠올려보기.\n② 진단: ‘curtail’의 뜻이 ‘shorten’(줄이다)만 기억했고, ‘scroll termination’(두루마리 끝맺음)이라는 뜻은 몰랐음. 지문에서 ‘curtail’이 ‘shorten’의 동의어로 쓰였음을 확인했어야 함. → 처방: ‘curtail’이 ‘shorten’의 동의어라는 점과 ‘scroll termination’이라는 뜻도 함께 암기하기.\n④ 진단: ‘short’의 뜻이 ‘사람’을 뜻하는 명사로 쓰였다고 오해했음. 지문에서 ‘short’는 ‘shorten’의 동의어나 ‘짧은’이라는 형용사로만 쓰였음. → 처방: ‘short’를 명사로 쓸 때의 뜻(예: ‘in short’)과 형용사로 쓸 때의 뜻을 구분해서 공부하기.\n⑤ 진단: ‘trying’이 ‘시도하다’라는 뜻의 동사로만 기억했고, ‘to attempt’의 뜻만 떠올렸음. 지문에서 ‘trying’이 ‘시도’라는 뜻의 동사로 쓰였지만, ‘시도’라는 뜻만으로는 ‘trying’이란 단어를 설명하기 부족했음. → 처방: ‘trying’이란 단어가 ‘시도’라는 뜻의 동사로 쓰였을 때, ‘to attempt’를 정확하게 설명하는지 확인하고, 다른 뜻(예: ‘괴로운’)도 함께 공부하기."
    }
   }
  ]

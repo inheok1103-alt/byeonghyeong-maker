@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-18T22:10:39.395Z",
+ "updated": "2026-07-18T23:14:37.810Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-18T23:14:14.078Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'the'는 고유명사·특정 개념·고유한 대상에 한정적으로 사용되며, 일반화·범용적 표현에는 제외됨을 확인. 또한, 영어 문법에서 'reason to V' 구문이 'reason that S V'보다 자연스럽고 빈번하게 사용됨을 확인.",
+   "rule": "'the'는 고유명사(예: New York), 특정 개념(예: Persian language), 또는 이미 언급된 대상을 지칭할 때만 사용하고, 범용·일반적 대상(예: Chinese, Mongolian, wood)에는 'the'를 생략하도록 문장 구성.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-18T22:10:14.056Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'be controlled by'와 같은 수동태 패턴이 빈번히 등장하며, 한국어 학습자에게는 '~에 의해 통제되다'로 번역되는 경우가 많다. 또한 'in writing'과 같은 전치사구와 'express feelings'의 결합이 자연스러운 연어임을 확인할 수 있다.",
    "rule": "CEFR B1 수준 이상의 내신 문항에서는 수동태(be + 과거분사)나 전치사구(in writing, via action) 패턴을 포함한 문장을 출제하여, 학습자의 연어 구사 능력을 평가하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-14T03:37:56.372Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 'old English', 'university press', 'New York' 등 고유명사·명사구 패턴과 'present/past tense'의 혼용, 'between two' 구조가 한국어 학습자의 문법 오류(단수/복수 혼동, 시제 일관성 부족, 관사 오용)에 영향을 미친다.",
-   "rule": "한국어 학습자에게 변형 문제를 낼 때는 '고유명사·명사구(예: New York, old English)의 경우 복수형·관사 오용 가능성을 점검'하며, '시제 혼용(present/past tense)이 문맥상 자연스러운지 여부를 판단'하도록 유도하라. 예시: 'I visited New Yorks last year' → 'I visited New York last year'로 수정하게 하거나, 'She goes to school yesterday' → 'She went to school yesterday'로 수정하게 하라.",
    "sample": [
     "old english",
     "university press",
