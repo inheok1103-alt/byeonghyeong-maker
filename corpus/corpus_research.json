@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-18T10:45:18.158Z",
+ "updated": "2026-07-18T12:13:09.720Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-18T12:10:54.192Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "연어가 오답의 구문적 결함을 보완·완화하는 역할을 한다.",
+   "rule": "모범답안의 오답 연어를 원문에서 찾아내어 그 자리에 정답 연어를 끼워넣는다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-18T10:44:52.713Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'most + 명사'는 복수형 명사와 결합하는 패턴이 빈번하며, 'old'는 명사 앞에 올 때 'older'로 비교급 형태로 사용되는 경향이 강하다.",
    "rule": "원서 패턴을 반영하여 'most + 명사'는 복수형 명사와 결합하고, 'old'는 비교급 'older'로 표기하도록 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-13T07:43:08.255Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 연어 패턴에서 'old english', 'middle english' 등 언어학적 용어와 'university press', 'new york' 등 고유명사가 혼용되어 나타나며, 문법 오류 수정 시에도 언어학적 정확성과 고유명사의 철자/대소문자 규정을 엄격히 적용해야 한다.",
-   "rule": "원서 코퍼스 패턴을 반영하여, 영어 문장 내 언어학적 용어(예: 'old english', 'global warming')는 소문자로, 고유명사(예: 'Jeju Island', 'New York')는 대문자로 표기하며, 문법 오류 수정 시에도 이 규칙을 우선 적용하라.",
    "sample": [
     "old english",
     "university press",

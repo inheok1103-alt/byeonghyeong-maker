@@ -1,6 +1,75 @@
 {
- "updated": "2026-07-18T10:45:18.162Z",
+ "updated": "2026-07-18T12:13:09.723Z",
  "samples": [
+  {
+   "ts": "2026-07-18T12:07:15.126Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 3/3 다수결 3번(기록 4번 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "To make a ⓐ<u>cursory</u> attempt at learning French is to memorize a couple of easy words and then give up. ⓑ<u>CURTAIL</u> (kur TAYL) v to ⓒ<u>shorten</u>; to cut ⓓ<u>short</u> • The vet curtailed her effort to cut the cat’s tail with the lawn mower. That is, she stopped ⓔ<u>trying</u>. To curtail a tale is to cut it short. CYNIC (SIN ik) n one who deeply distrusts human nature; one who believes humans are motivated only by selfishness • When the pop star gave a million dollars to the museum, cynics said he was merely trying to buy himself a reputation as a cultured person. To be cynical is to be extremely suspicious of the motivations of other people. Cynicism is general grumpiness and pessimism about human nature. Quick Quiz #29 Match each word in the first column with its definition in the second column. Check your answers here. 1. culpable a. free from guilt 2. exculpate b. shorten 3. cursory c. one who distrusts humanity 4. curtail d. hasty 5. cynic e. guilty D",
+    "choices": [
+     "cursory: Hasty; superficial; careless",
+     "curtail: A scroll termination, as of a step, etc.",
+     "shorten: To make shorter; to abbreviate.",
+     "short: A person who believes that all people are motivated by selfishness.",
+     "trying: To attempt; to endeavour. Followed by infinitive."
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓓ의 풀이는 'cynic'의 정의이다. 'short'의 올바른 풀이: A short circuit.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘cursory’의 뜻이 ‘hasty’(성급한)만 떠올렸고 ‘superficial’(피상적인)이나 ‘careless’(부주의한)까지 포함된 뜻을 보지 못했음. 지문에서 ‘cursory attempt’이 ‘대충 하는 시도’라는 뜻으로 ‘hasty’와 ‘superficial’이 모두 포함됨. → 처방: 영영사전에서 ‘cursory’의 뜻을 ‘hasty, superficial, careless’까지 모두 확인하고, 문맥에서 ‘대충 하는’ 의미를 떠올려보기.\n② 진단: ‘curtail’의 뜻이 ‘shorten’(줄이다)만 기억했고, ‘scroll termination’(두루마리 끝맺음)이라는 뜻은 몰랐음. 지문에서 ‘curtail’이 ‘shorten’의 동의어로 쓰였음을 확인했어야 함. → 처방: ‘curtail’이 ‘shorten’의 동의어라는 점과 ‘scroll termination’이라는 뜻도 함께 암기하기.\n④ 진단: ‘short’의 뜻이 ‘사람’을 뜻하는 명사로 쓰였다고 오해했음. 지문에서 ‘short’는 ‘shorten’의 동의어나 ‘짧은’이라는 형용사로만 쓰였음. → 처방: ‘short’를 명사로 쓸 때의 뜻(예: ‘in short’)과 형용사로 쓸 때의 뜻을 구분해서 공부하기.\n⑤ 진단: ‘trying’이 ‘시도하다’라는 뜻의 동사로만 기억했고, ‘to attempt’의 뜻만 떠올렸음. 지문에서 ‘trying’이 ‘시도’라는 뜻의 동사로 쓰였지만, ‘시도’라는 뜻만으로는 ‘trying’이란 단어를 설명하기 부족했음. → 처방: ‘trying’이란 단어가 ‘시도’라는 뜻의 동사로 쓰였을 때, ‘to attempt’를 정확하게 설명하는지 확인하고, 다른 뜻(예: ‘괴로운’)도 함께 공부하기."
+   }
+  },
+  {
+   "ts": "2026-07-18T12:07:38.820Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.25,
+    "D": -1,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.25)",
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "To make a cursory attempt at learning French is to memorize ⓐ<u>a couple of easy words</u> and then ⓑ<u>give ups</u>. CURTAIL (kur TAYL) v to shorten; to cut short • The vet curtailed her effort to cut the cat’s tail with the lawn mower. That is, ⓒ<u>she stopped trying</u>. To curtail a tale is to cut it short. CYNIC (SIN ik) n one who deeply distrusts human nature; one who believes ⓓ<u>humans are motivated</u> only by selfishness • When the pop star gave a million dollars to the museum, cynics said he was merely trying to buy himself a reputation as a cultured person. To be cynical is to be extremely suspicious of the motivations of other people. ⓔ<u>Cynicisms is</u> grumpiness and pessimism about human nature. Quick Quiz #29 Match each word in the first column with its definition in the second column. Check your answers here. 1. culpable a. free from guilt 2. exculpate b. shorten 3. cursory c. one who distrusts humanity 4. curtail d. hasty 5. cynic e. guilty D",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 2,
+    "explanation": "틀린 곳은 ⓑ(give ups → give up), ⓔ(Cynicisms is → Cynicism is general) — 총 2개.\n[오답 진단·처방]\n① 진단: ⓐ는 'a couple of easy words'로 문법상 맞지만, ⓑ 'give ups'가 'give up'으로 바뀌어야 함을 보지 못하고 오로지 ⓐ만 보고 1개로 판단한 듯함. 지문에서 ⓑ의 오류는 'give up'의 3인칭 단수 현재형 '-s'가 빠진 것임. → 처방: 동사 'give up'의 현재형 '-s'를 붙이는 규칙을 다시 공부하고, 문장에서 주어와 동사의 수 일치를 확인하는 습관을 들인다.\n③ 진단: ⓒ 'she stopped trying'는 문법상 맞지만, ⓓ 'humans are motivated'가 'humans are motivated by'로 바뀌어야 함을 보지 못하고 오로지 ⓒ만 보고 1개로 판단한 듯함. 지문에서 ⓓ의 오류는 'by selfishness'가 빠져 'motivated only'로만 쓰인 것임. → 처방: 수동태 문장에서 'by + 동작주'가 생략되지 않았는지 확인하는 습관을 들인다. 특히 'be motivated' 뒤에는 'by'가 필수임을 기억한다.\n④ 진단: ⓓ는 문법상 틀리지만, ⓔ 'Cynicisms is'가 'Cynicism is'로 바뀌어야 함을 보지 못하고 오로지 ⓓ만 보고 1개로 판단한 듯함. 지문에서 ⓔ의 오류는 'Cynicism'이 단수 명사인데 '-s'가 붙은 'Cynicisms'로 잘못 쓰인 것임. → 처방: 단수 명사와 복수 명사의 차이를 다시 공부하고, '-ism'으로 끝나는 추상명사가 단수임을 기억한다. 문장에서 명사의 수를 꼼꼼히 확인한다.\n⑤ 진단: ⓔ의 오류('Cynicisms is')와 ⓑ의 오류('give ups')를 모두 보지 못하고, 오로지 ⓓ의 오류('humans are motivated')만 보고 1개로 판단한 듯함. 지문에서 총 2개의 오류가 있음에도 1개로만 본 것임. → 처방: 문장 전체의 동사와 명사, 동사 형태를 한 번에 확인하는 것이 아니라, 각 부분을 따로따로 꼼꼼히 검토하는 습관을 들인다. '한 번에 다 보기'보다는 '한 부분씩 집중해서 보기'를 연습한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-18T10:44:04.455Z",
    "type": "틀린문장 고쳐쓰기",
@@ -297,59 +366,6 @@
     ],
     "answer": 1,
     "explanation": "정답 조합: (A) accusative - (B) complementiser - (C) obligatory. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘(C) optional’을 선택한 학생은 지문 마지막 문장의 ‘for-deletion is optional’이라는 표현을 (C)에 그대로 적용한 것으로 보입니다. 그러나 (C)는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 필수인지 선택인지’를 묻는 것이지, ‘for-deletion 이 가능한지’를 묻는 것이 아닙니다. → 처방: ‘(C) optional’을 고를 때는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 가능한가’를 묻는 것이 아니라, ‘for-deletion 이 필수인지 선택인지’를 묻는다는 점을 기억하세요.\n③ 진단: ‘(B) main clause marker’를 선택한 학생은 ‘for in structures like (67)’에서 ‘for’를 ‘main clause marker’로 오해한 것으로 보입니다. 그러나 지문에서 ‘for’는 ‘complementiser’로 기능하며, ‘main clause marker’는 ‘for’가 아닌 다른 요소(예: that, whether 등)를 가리킵니다. → 처방: ‘for’를 ‘complementiser’로 이해하려면, ‘for’가 보어절을 도입한다는 점(예: for him to leave)을 떠올리세요. ‘main clause marker’는 주로 절의 시작을 표시하는 역할을 합니다.\n④ 진단: ‘(A) nominative’를 선택한 학생은 ‘him’이 ‘nominative’ case 를 받는다고 오해한 것으로 보입니다. 그러나 지문에서 ‘him’이 ‘accusative’ case 를 받는다는 것은 ‘for him to leave’에서 ‘him’이 ‘for’의 보어절 주어로 기능하며, ‘accusative’ case 를 받는다는 사실에서 확인됩니다. → 처방: ‘nominative’와 ‘accusative’를 구분하려면, 주어가 ‘nominative’(예: he), 보어가 ‘accusative’(예: him)임을 기억하세요. ‘for him to leave’에서 ‘him’이 보어임을 확인하세요.\n⑤ 진단: ‘(A) nominative’를 선택한 학생은 ‘him’이 ‘nominative’ case 를 받는다고 오해한 반면, ‘(C) obligatory’를 선택한 학생은 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 필수라는 오해를 한 것으로 보입니다. 그러나 (C)는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 선택적’이라는 의미입니다. → 처방: ‘(C) obligatory’를 고를 때는 ‘for-clause 가 want 바로 뒤에 올 때 for-deletion 이 가능한가’를 묻는 것이 아니라, ‘for-deletion 이 필수인지 선택인지’를 묻는다는 점을 기억하세요. 지문 마지막 문장을 다시 읽어보세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-17T22:10:09.047Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(64%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어에서 보문사 'for'는 to 부정사의 주어에게 목적격 격을 부여하는 결과로 문법적 구조가 형성된다.",
-     "영어에서 보문사 'for'는 to 부정사의 주어에게 목적격 격을 부여하는 여러 역할 중 하나에 불과하다.",
-     "모든 언어에서 보문사 'for'가 to 부정사의 주어에게 목적격 격을 부여하여 문법적 구조를 형성한다는 보장은 없다.",
-     "영어에서 보문사 'for'는 to 부정사의 주어에게 목적격 격을 부여하는 경우에만 문법적 구조가 형성된다.",
-     "영어에서 보문사 'for'는 to 부정사의 주어에게 목적격 격을 부여하여 문법적 구조를 형성한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The complementiser *for* assigns accusative case to the infinitive subject in English.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 'for'가 to 부정사의 주어에게 목적격 격을 부여한다는 내용은 있지만, 이것이 '결과로 문법적 구조가 형성된다'는 표현은 지문에 없음. 학생은 '결과'라는 단어를 오해하여 문법적 구조 형성의 필수 조건으로 오독했음. → 처방: 지문에서 'for'의 역할이 격 부여에만 한정되는지 확인하고, 문법적 구조 형성의 필수 조건인지 여부를 정확히 파악할 것.\n② 진단: 지문은 'for'의 역할이 격 부여에 한정되지 않고, 'for-deletion' 현상까지 설명하고 있음. 학생은 '여러 역할 중 하나'라는 표현을 오해하여 'for'의 역할이 격 부여에 국한된다고 생각했음. → 처방: 지문의 전체 내용을 종합하여 'for'의 역할이 단순히 격 부여에만 그치지 않음을 확인할 것.\n③ 진단: 지문은 영어에 한정된 설명이며, '모든 언어'라는 보장은 없음. 학생은 '모든 언어'라는 포괄적 표현을 오해하여 보편적 사실로 오독했음. → 처방: 지문의 범위가 영어에 한정되어 있음을 정확히 파악하고, 보편적 주장인지 여부를 판단할 것.\n④ 진단: 지문은 'for'가 to 부정사의 주어에게 목적격 격을 부여하는 경우에만 문법적 구조가 형성된다고 한정하지 않음. 학생은 '경우에만'이라는 조건을 오해하여 필수 조건으로 오독했음. → 처방: 지문의 문맥에서 'for'의 역할이 필수 조건인지 여부를 정확히 분석할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The complementiser *for* assigns accusative case to the infinitive subject in English.]"
-   }
-  },
-  {
-   "ts": "2026-07-17T22:10:24.028Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 영어에서 'want' 같은 동사 뒤의 'for'절은 'for'가 생략되어야 하지만, 'want'과 떨어져 있으면 생략할 수 없다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
