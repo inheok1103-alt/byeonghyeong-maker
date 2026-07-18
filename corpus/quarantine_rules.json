@@ -1,7 +1,15 @@
 {
- "updated": "2026-07-18T18:13:23.152Z",
+ "updated": "2026-07-18T19:34:44.095Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제에서 단어 사용 횟수, 어형 그대로 사용, 중복 단어 배제를 엄격히 준수하고, 자연스러운 영어 어순으로 재구성하라.",
+   "src": "자가학습:배열영작",
+   "score": 72,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-07-18T19:34:07.617Z"
+  },
   {
    "rule": "정답 선지의 제목은 지문의 핵심 논점(weak/strong declension의 정의와 기능)을 포괄하며, 모든 선지가 지문의 핵심 조건(article presence/absence에 따른 inflection 방식)을 정확히 반영해야 한다.",
    "src": "자가학습:제목",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-12T06:47:21.920Z"
-  },
-  {
-   "rule": "모든 선지는 정답과 논리적·어휘적으로 뚜렷한 차별성을 확보해야 하며, 지문 내 구체적 사례(예: 'comparative safety'가 형용사로 명사의 의미를 제한하는 경우)는 선지 1의 의미를 직접 뒷받침하는 방식으로 명시되어야 한다.",
-   "src": "자가학습:요지",
-   "score": 76,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-12T06:47:52.737Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

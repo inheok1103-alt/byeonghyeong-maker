@@ -1,6 +1,25 @@
 {
- "updated": "2026-07-18T18:13:23.159Z",
+ "updated": "2026-07-18T19:34:44.101Z",
  "samples": [
+  {
+   "ts": "2026-07-18T19:34:14.422Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 오즈의 마법사의 주인공은 캔자스 농장 소녀 도로시입니다.\n주어진 단어: ( Dorothy, / Wizard / girl / farm / Kansas / of / of / a / The / Oz / The / protagonist / is )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The protagonist of The Wizard of Oz is Dorothy, a Kansas farm girl.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-18T18:12:45.658Z",
    "type": "제목",
@@ -344,41 +363,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The internal and external arguments of a verb are distinguished based on their structural position within the sentence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 학생은 'causal relationship'이라는 단어를 지문에서 찾지 못했음에도 불구하고 선지를 선택했을 것인데, 이는 지문에서 내부 인자와 외부 인자 간의 구조적 구분만을 다루고 있음을 무시한 것으로 보인다. → 처방: 지문에서 내부 인자와 외부 인자 간의 구조적 구분을 명확히 이해하고, 인과관계와 같은 다른 개념을 혼동하지 않도록 한다.\n③ 진단: 학생은 지문에서 내부 인자에 대한 설명을 읽었지만, 주제의 핵심은 내부 인자와 외부 인자 간의 구분이라는 점을 놓쳤을 가능성이 있다. → 처방: 지문에서 내부 인자와 외부 인자 간의 구분을 강조하는 부분을 주의 깊게 읽고, 이 구분이 주제의 핵심임을 인식한다.\n④ 진단: 학생은 지문에서 언급된 구분이 특정 상황에만 해당하는 것이 아니라, 보편적인 구분이라고 생각했을 가능성이 있다. → 처방: 지문에서 언급된 구분이 특정 상황이나 문장 구조에만 해당하는지, 아니면 보편적인지에 대해 명확히 이해한다.\n⑤ 진단: 학생은 내부 인자와 외부 인자 간의 구분이 항상 필수적이라고 생각했을 가능성이 있다. → 처방: 지문에서 내부 인자와 외부 인자 간의 구분이 항상 필요한지, 아니면 특정 상황에 따라 다르지는 않은지에 대해 명확히 이해한다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The internal and external arguments of a verb are distinguished based on their structural position within the sentence.]"
-   }
-  },
-  {
-   "ts": "2026-07-18T06:20:32.631Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Books are your keys to knowledge, and there is no limit to the kinds of things you can learn from books. So don’t worry if the______ you’ve taken an interest in is ___. Only you seem to care about. ___ are written on almost every subject ______ person could hope to think of. _____ learn about new things , just visit favorite book store. When you buy ______ book , you read it whenever you _______. Read about a far-away place ________ pretend you are having an adventure, _________ study something you heard about in ______. You might wish to study a ________ or learn to cook different kinds _____ food. Reading a book can mean _______ differences between learning about things and _______ to wonder about them. It’s economical _____ convenient to read books. You have ________ freedom to study whenever you like. ________ from books is very easy because ______ can simply go back to a _________ if you forget something you’ve read.",
-    "choices": [
-     "책을 읽으면 새로운 지식을 잃을 수 있다.",
-     "책은 한정된 주제만 다루며 거의 모든 분야를 다룬다.",
-     "책은 특정 시간에만 읽을 수 있어 편리하다.",
-     "책을 다시 보지 않으면 잊었던 내용을 쉽게 확인할 수 있다.",
-     "책을 구매해 원하는 시간에 읽을 수 있다."
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 '책을 읽으면 새로운 지식을 얻는다(keys to knowledge)'고 했으므로 '잃을 수 있다'는 오류. '지식'과 '정보'를 혼동했을 가능성 있음. → 처방: 지문에서 'keys to knowledge'라는 표현을 떠올리며 '지식'과 '정보'의 의미를 정확히 구분하기.\n② 진단: 지문에서 '책은 거의 모든 주제(almost every subject)를 다룬다'고 했으므로 '한정된 주제'는 오류. '거의 모든'과 '한정된'을 반대로 읽었을 가능성 있음. → 처방: 지문에서 'almost every subject'라는 구절을 정확히 읽고 '거의 모든'의 의미를 파악하기.\n③ 진단: 지문에서 '책은 언제든 읽을 수 있다(whenever you like)'고 했으므로 '특정 시간에만'은 오류. '편리하다'라는 단어에만 집중해 의미를 오해했을 가능성 있음. → 처방: 지문에서 'whenever you like'라는 표현을 찾아 '언제든지'라는 의미를 확인하기.\n④ 진단: 지문에서 '책을 다시 보지 않으면 잊었던 내용을 다시 확인할 수 없다(go back to a passage if you forget)'고 했으므로 '쉽게 확인할 수 있다'는 오류. '쉽다'와 '어렵다'를 혼동했을 가능성 있음. → 처방: 지문에서 'go back to a passage'라는 표현을 찾아 '다시 확인하기는 어렵다'는 의미를 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
