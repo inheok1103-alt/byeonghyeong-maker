@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-18T00:13:14.414Z",
+ "updated": "2026-07-18T03:35:19.342Z",
  "samples": [
+  {
+   "ts": "2026-07-18T03:34:39.594Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Last year, the number of employees on the first day of the year (A) [was equal to / were equal to] the number of employees on the last day of the year. Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees (B) [who leaving / who left] the company during the year (C) [dividing by / divided by] the average of the number of employees on the first day of the year and the number of employees on the last day of that year.” We are also told that the labor turnover rate last year was 25%. To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
+    "choices": [
+     "(A) was equal to - (B) who left - (C) divided by",
+     "(A) were equal to - (B) who left - (C) dividing by",
+     "(A) were equal to - (B) who leaving - (C) dividing by",
+     "(A) was equal to - (B) who leaving - (C) divided by",
+     "(A) was equal to - (B) who left - (C) dividing by"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) was equal to - (B) who left - (C) divided by. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: 'were equal to'를 썼는데, 'the number of employees'는 단수 취급이라서 'was'가 맞음. 'dividing by'는 동명사라서 문맥에 맞지 않음. → 처방: 주어가 'the number of'로 시작하면 단수 동사('was')를 쓰고, 'divided by'로 수동형 표현을 써야 함.\n③ 진단: 'were equal to'는 단수 주어를 오해한 것이고, 'who leaving'은 동명사라서 문법적으로 틀림. 'dividing by'도 동명사라서 오류임. → 처방: 주어는 단수이므로 'was equal to'를 쓰고, 동사형태는 'who left'와 'divided by'로 맞춰야 함.\n④ 진단: 'who leaving'은 동명사라서 문법 오류고, 'divided by'는 수동형이지만 앞의 동사 형태가 틀렸음. → 처방: 동사 형태는 'who left'로 쓰고, 'divided by'로 수동형 표현을 써야 문법에 맞음.\n⑤ 진단: 'dividing by'는 동명사라서 문맥에 맞지 않음. 'who left'는 맞지만, 'dividing by'가 수동형이 아니라서 오류임. → 처방: 수동형 표현은 'divided by'로 써야 하고, 동사 형태는 'who left'로 맞춰야 함.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-18T00:11:36.591Z",
    "type": "제목",
@@ -317,41 +352,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'The dative arguments in Old English constructions with prefixed verbs may function either as participant arguments governed by the verb or as circumstantials when interpreted as locative.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The dative arguments in Old English constructions with prefixed verbs may function either as participant arguments governed by the verb or as circumstantials when interpreted as locative.]\n[오답 진단·처방]\n① 진단: 지문에서 'one-case-per-clause' 제약에 따라 여격이 장소 해석 시 circumstantial 로만 기능한다고 명시했는데, 이를 '참여자 역할로만 기능한다'고 오독하여 혼동함. → 처방: 지문의 제약을 정확히 파악하고, 여격이 장소 해석 시 circumstantial 로만 기능한다는 점을 다시 한 번 확인할 것.\n③ 진단: 지문이 '전치사 동사가 붙은 동사구'에만 한정된 설명임을 무시하고, '모든 동사구'로 과장하여 오독함. → 처방: 지문의 한정 조건('전치사 동사가 붙은 동사구')을 꼼꼼히 확인하고, 범위를 벗어나지 않도록 주의할 것.\n④ 진단: 지문에서 여격이 장소 해석 시 circumstantial 로 기능한다고 설명했는데, 이를 '장소 해석과는 무관하다'고 오해하여 혼동함. → 처방: 장소 해석과 circumstantial 의 관계를 정확히 이해하고, 지문의 논리를 따라가며 읽을 것.\n⑤ 진단: 지문이 여격이 장소 해석 시 circumstantial 로만 기능한다고 명시했는데, '참여자 역할'도 가능하다고 과장하여 오독함. → 처방: 지문의 'must be circumstantials'라는 강제 조건을 정확히 기억하고, 여격이 참여자 역할로 기능할 수 없다고 결론낼 것."
-   }
-  },
-  {
-   "ts": "2026-07-17T15:43:46.988Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "What positions fit in? 93 (49) V loc Ν abs loc Ν Ν Him bij) fyr ongean The representations in (47) — (49) each contain two locative arguments, given that, unlike fram, which realises ablative, ongean realises locative. Given the \"one-case-per-clause\" constraint, then, as long as the datives me and him are interpreted as locative, they must be circumstantials. For (16) — (19), the datives might be taken as governed by prefixed verbs (e. g. cefterridan, aftercliopan), and therefore participant arguments thereof. Although there is no direct evidence for lexicalisation of the prefix + verb complex, we may recall instances of accusative co-occurring with cefter + verb, only when the formative immediately precedes the verb (cf. above). And these may be indirect evidence for lexicalisation of the complex as a transitive verb governing the accusative as its direct object, as represented in (50) and (51). After (50) V erg abs/loc A Ν Ν Hig öa sona aefterridon\n\n─────────\n[요약문] To determine (A) in the given syntactic structure, datives must be interpreted as (B) due to the 'one-case-per-clause' constraint, while prefixed verbs may govern participant arguments.",
-    "choices": [
-     "(A) transitive verbs … (B) prefixed verbs",
-     "(A) locative expressions … (B) circumstantials",
-     "(A) accusative arguments … (B) locative expressions",
-     "(A) ablative expressions … (B) direct objects",
-     "(A) participant arguments … (B) ablative expressions"
-    ],
-    "answer": 2,
-    "explanation": "(A) locative expressions / (B) circumstantials 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 학생은 'transitive verbs(동사)'와 'prefixed verbs(접두사가 붙은 동사)'를 혼동했다. 지문에서 'one-case-per-clause' 제약에 따라 'datives(여격)'가 'locative(장소격)'로 해석되어야 한다고 설명하는데, 이는 'transitive verbs'와 직접 관련이 없다. → 처방: 지문에서 'one-case-per-clause' 제약이 언급될 때 'datives'가 'locative'로 해석되어야 한다고 강조된다는 점을 기억하고, 'transitive verbs'와 'prefixed verbs'를 구분하여 읽기.\n③ 진단: 학생은 'accusative arguments(목적격)'와 'locative expressions(장소 표현)'를 혼동했다. 지문은 'datives'가 'locative'로 해석되어야 한다고 설명하며, 'accusative'는 'cefter + verb' 복합체의 직접목적어로 언급되지만, 이 문제는 'datives'의 역할에 초점을 둔다. → 처방: 지문의 핵심은 'datives'가 'one-case-per-clause' 제약 아래에서 'locative'로 해석되어야 한다는 점임을 기억하고, 'accusative'와 'locative'를 명확히 구분하여 읽기.\n④ 진단: 학생은 'ablative expressions(탈격 표현)'와 'direct objects(직접목적어)'를 혼동했다. 지문은 'fram'이 'ablative'를 실현한다고 언급하지만, 문제는 'datives'의 'locative' 해석에 초점을 둔다. 'direct objects'는 'cefter + verb' 복합체와 관련이 있지만, 이 문제는 'one-case-per-clause' 제약에 따라 'datives'의 역할을 묻는다. → 처방: 지문의 'ablative'는 'fram'과 관련이 있으며, 문제는 'datives'의 'locative' 해석에 초점을 둔다는 점을 기억하고, 'ablative'와 'direct objects'를 명확히 구분하여 읽기.\n⑤ 진단: 학생은 'participant arguments(참여격)'와 'ablative expressions(탈격 표현)'를 혼동했다. 지문은 'datives'가 'locative'로 해석되어야 한다고 설명하며, 'participant arguments'는 'prefixed verbs'와 관련이 있지만, 이 문제는 'one-case-per-clause' 제약에 따라 'datives'의 역할을 묻는다. → 처방: 지문의 핵심은 'datives'가 'one-case-per-clause' 제약 아래에서 'locative'로 해석되어야 한다는 점임을 기억하고, 'participant arguments'와 'ablative'를 명확히 구분하여 읽기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
