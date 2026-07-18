@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-18T16:15:27.877Z",
+ "updated": "2026-07-18T17:19:21.862Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-18T17:18:55.730Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구 내 중복 관사 제거(예: 'the the')와 비교급 구조의 관사/형용사 오류(예: 'young person' → 'a younger person')가 빈번하다는 점을 확인했다.",
+   "rule": "명사구 내 중복 관사(예: 'the the')가 나타나면 오류로 처리하며, 비교급 구조에서는 'a younger person'처럼 관사와 비교급 형용사를 함께 사용하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-18T16:15:00.982Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "복수 명사 오류(workers/warker)와 한정사 오류(clear → clearly)가 빈번하며, 접속사 오류(thereby → therefore)와 어순 오류(An example that... is clear in the Chinese cars → An example that... clearly is the Chinese car)도 두드러진다.",
    "rule": "'명사 복수형 오류(예: worker→workers), 한정사 위치 오류(예: clear→clearly), 접속사 오류(예: thereby→therefore), 그리고 어순 오류(예: 'is clear in' → 'clearly is')를 포함한 문법 오류를 1문장 내에 최소 1개 이상 포함시킨 변형문제를 출제하라. 오류 유형은 원서 코퍼스의 최빈 연어 패턴(명사, 동사 시제, 접속사, 한정사)을 우선 반영하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-13T19:53:37.933Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 실제 패턴에서 'therefore', 'for example', 'and' 등 접속사나 부사구가 문장 중간에서 삽입되어야 하는 경우가 빈번하며, 동사 시제(과거형), 명사구(NP) 구조, 전치사구(PP) 등이 문법적 오류의 주요 원인으로 나타났다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 접속사(therefore, for example 등)나 부사구가 문장 중간 삽입 시 반드시 '콤마(,)로 구분'하고, 동사 시제(과거형)나 동사구(be + 형용사) 오류 시 원서의 '시제 일관성'과 '동사-형용사 병렬 구조'를 준수하도록 변형 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",
