@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-18T17:19:21.867Z",
+ "updated": "2026-07-18T18:13:23.159Z",
  "samples": [
+  {
+   "ts": "2026-07-18T18:12:45.658Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "German Adjectives: Strong Vs. Weak Declension Rules",
+     "German Adjectives: Definite Article Determines Noun Case",
+     "German Adjectives: Declension Based on Article Presence",
+     "All Germanic Languages: Definite Articles Control Adjective Forms",
+     "German Adjectives: Always Use Strong Declension Without Definite Articles"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'German adjectives use strong or weak declension based on definite article presence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: German adjectives use strong or weak declension based on definite article presence.]\n[오답 진단·처방]\n① 진단: 지문은 '강한/약한 굴절' 규칙을 설명하지만, '정관사 유무'가 결정 요인이라는 핵심 내용을 빠뜨리고 '강한 vs. 약한' 구별만 강조한 선지. → 처방: 지문에서 '정관사 유무'가 형용사 굴절을 결정한다는 점을 먼저 찾고, 그 다음에 '강한/약한' 굴절 규칙을 확인하기.\n② 진단: 지문은 '정관사'가 형용사 굴절을 결정한다고 설명하지만, '명사 격'과는 무관하다는 사실을 오해하고 '격'을 언급한 선지. → 처방: 지문에서 '정관사'와 '격'이 서로 관련이 없다는 문장('형용사의 굴절은 명사의 격·수·성 변화와 무관')을 찾아 읽고, '격'이 아닌 '정관사 유무'에 집중하기.\n④ 진단: 지문은 독일어 형용사에만 초점을 맞추지만, 선지는 '모든 게르만어'로 범위를 넓혀 오독한 경우. → 처방: 지문에서 '게르만어' 전체가 아닌 '독일어'에 한정된 설명임을 확인하고, 제목도 그 범위에 맞게 좁히기.\n⑤ 진단: 지문은 '정관사가 없을 때 강한 굴절'을 설명하지만, '항상'이라는 절대적 표현을 사용해 오독한 선지. → 처방: 지문에서 '보통(usually)'이라는 한정적 표현을 확인하고, '항상'이란 말이 과장된 표현임을 인식하기."
+   }
+  },
   {
    "ts": "2026-07-18T16:14:43.672Z",
    "type": "문장삽입",
@@ -344,41 +379,6 @@
     ],
     "answer": 5,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 '책을 읽으면 새로운 지식을 얻는다(keys to knowledge)'고 했으므로 '잃을 수 있다'는 오류. '지식'과 '정보'를 혼동했을 가능성 있음. → 처방: 지문에서 'keys to knowledge'라는 표현을 떠올리며 '지식'과 '정보'의 의미를 정확히 구분하기.\n② 진단: 지문에서 '책은 거의 모든 주제(almost every subject)를 다룬다'고 했으므로 '한정된 주제'는 오류. '거의 모든'과 '한정된'을 반대로 읽었을 가능성 있음. → 처방: 지문에서 'almost every subject'라는 구절을 정확히 읽고 '거의 모든'의 의미를 파악하기.\n③ 진단: 지문에서 '책은 언제든 읽을 수 있다(whenever you like)'고 했으므로 '특정 시간에만'은 오류. '편리하다'라는 단어에만 집중해 의미를 오해했을 가능성 있음. → 처방: 지문에서 'whenever you like'라는 표현을 찾아 '언제든지'라는 의미를 확인하기.\n④ 진단: 지문에서 '책을 다시 보지 않으면 잊었던 내용을 다시 확인할 수 없다(go back to a passage if you forget)'고 했으므로 '쉽게 확인할 수 있다'는 오류. '쉽다'와 '어렵다'를 혼동했을 가능성 있음. → 처방: 지문에서 'go back to a passage'라는 표현을 찾아 '다시 확인하기는 어렵다'는 의미를 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-18T06:21:28.125Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "<u>Books are your keys to knowledge</u>, and there is no limit to the kinds of things you can learn from books. So don’t worry if the______ you’ve taken an interest in is ___. Only you seem to care about. ___ are written on almost every subject ______ person could hope to think of. _____ learn about new things , just visit favorite book store. When you buy ______ book , you read it whenever you _______. Read about a far-away place ________ pretend you are having an adventure, _________ study something you heard about in ______. You might wish to study a ________ or learn to cook different kinds _____ food. Reading a book can mean _______ differences between learning about things and _______ to wonder about them. It’s economical _____ convenient to read books. You have ________ freedom to study whenever you like. ________ from books is very easy because ______ can simply go back to a _________ if you forget something you’ve read.",
-    "choices": [
-     "Reading unlocks a vast reservoir of ideas and creativity that would otherwise stay hidden from most people.",
-     "Those who read books absorb every piece of information they encounter without exception.",
-     "Reading provides access to unlimited intellectual and imaginative possibilities that would otherwise remain locked away.",
-     "Reading books guarantees a permanent increase in intelligence compared to non-readers.",
-     "Books primarily serve as sources of entertainment rather than tools for expanding one's mind."
-    ],
-    "answer": 3,
-    "explanation": "밑줄 친 부분은 'Reading provides access to unlimited intellectual and imaginative possibilities that would otherwise remain locked away.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'books are your keys to knowledge'와 'no limit to the kinds of things you can learn'를 보고 'vast reservoir of ideas and creativity'가 떠올랐지만, 'hidden from most people'는 지문에 없는 과장된 표현임. → 처방: 지문에서 직접 언급한 'knowledge'와 'learn'에 집중해, 'unlimited possibilities'가 더 정확한지 확인하기.\n② 진단: 'absorb every piece of information they encounter without exception'는 지문의 'no limit to the kinds of things you can learn'을 오해해 '모든 정보 흡수'로 해석한 것임. → 처방: 지문에서 'limit'은 '한계가 없다'는 뜻이지 '모든 정보'를 의미하지 않음을 기억하기.\n④ 진단: 'guarantees a permanent increase in intelligence'는 지문의 'keys to knowledge'를 '지능 증가'로 과장해 해석한 것임. → 처방: 지문에서 'knowledge'와 'learn'을 '지능'으로 바꾸지 말고, 원래 단어의 의미를 그대로 적용하기.\n⑤ 진단: 'primarily serve as sources of entertainment'는 지문의 'adventure'나 'study' 같은 단어를 보고 '오락'으로 오해한 것임. → 처방: 지문에서 'knowledge', 'learn', 'study' 같은 단어가 반복되는지 확인해 '도구'로 이해하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
