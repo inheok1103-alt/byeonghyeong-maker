@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-18T23:14:37.810Z",
+ "updated": "2026-07-19T00:13:36.314Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-19T00:13:10.836Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 연어 패턴은 'only by + -ing' 구문과 'can you'의 도치 구조가 빈번히 결합됨을 보여준다. 또한 'talkative'→'speaker', 'error'→'wrong'과 같이 어휘적 오류가 문법 오류로 이어지는 경우가 많다.",
+   "rule": "'Only by + 동명사' 구문 뒤에는 주어+조동사+동사원형 도치 구조가 필수임을 강조하며, 'talkative' 등 오용된 형용사를 'speaker'로, 'error'를 'wrong'으로 대체하는 오답 선지를 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-18T23:14:14.078Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사(knowledge, company 등)의 단수/복수 형태와 동사 시제가 일치하지 않는 오류가 빈번하며, 특히 'they'와 같은 인칭대명사가 주격/목적격으로 혼용되는 경우가 많다.",
    "rule": "단수/복수 명사 및 인칭대명사의 격(주격/목적격)과 동사 시제를 문맥에 맞게 일치시키도록 한다. 예를 들어, 'help they' → 'helps them', 'startet' → 'started', 'thinks' → 'tries' 등으로 수정하는 패턴을 연습시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-14T06:28:47.262Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'be controlled by'와 같은 수동태 패턴이 빈번히 등장하며, 한국어 학습자에게는 '~에 의해 통제되다'로 번역되는 경우가 많다. 또한 'in writing'과 같은 전치사구와 'express feelings'의 결합이 자연스러운 연어임을 확인할 수 있다.",
-   "rule": "CEFR B1 수준 이상의 내신 문항에서는 수동태(be + 과거분사)나 전치사구(in writing, via action) 패턴을 포함한 문장을 출제하여, 학습자의 연어 구사 능력을 평가하라.",
    "sample": [
     "old english",
     "university press",
