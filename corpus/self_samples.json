@@ -1,6 +1,93 @@
 {
- "updated": "2026-07-19T09:20:04.410Z",
+ "updated": "2026-07-19T11:35:49.274Z",
  "samples": [
+  {
+   "ts": "2026-07-19T11:33:40.650Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 1,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "For about a century now, many liberals have argued against ­censorship of art, and most courts have found their arguments ­(A) [persuasive enough / persuading enough] that few people may remember exactly how they were countered. As a result, today, censorship is virtually a thing of the past. Some claim that a passage (B) [hedged that much / hedging that much] is wordy and weak. Perhaps. But it does not come on like a bulldozer. It leaves room for a reasoned and equally moderate response. Quick Tip:  When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite. Here’s the point: You need some metadiscourse in everything you write, especially metadiscourse that guides readers through your text, words such as first, second, therefore, on the other hand, and so on. You also need some metadiscourse that hedges your certainty, words such as perhaps, seems, could, and so on. The risk is (C) [in using / in use] too many.",
+    "choices": [
+     "(A) persuading enough - (B) hedged that much - (C) in using",
+     "(A) persuasive enough - (B) hedged that much - (C) in using",
+     "(A) persuading enough - (B) hedging that much - (C) in using",
+     "(A) persuading enough - (B) hedging that much - (C) in use",
+     "(A) persuading enough - (B) hedged that much - (C) in use"
+    ],
+    "answer": 2,
+    "explanation": "정답 조합: (A) persuasive enough - (B) hedged that much - (C) in using. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 학생은 동사 'found' 뒤에 목적어(arguments)의 상태를 설명하는 보어를 현재분사로 선택하여, 논증이 능동적으로 설득하는 것으로 잘못 이해했습니다. 논증은 설득력을 '가진' 대상이므로 형용사가 적절합니다. → 처방: 'find + 목적어 + 목적 보어' 구문에서 목적 보어가 목적어의 상태를 나타낼 때는 형용사를 쓰고, 목적어가 능동적으로 행하는 동작을 나타낼 때만 현재분사를 씁니다.\n③ 진단: 학생은 동사 'found' 뒤에 목적어(arguments)의 상태를 설명하는 보어를 현재분사로 선택하여, 논증이 능동적으로 설득하는 것으로 잘못 이해했습니다. 논증은 설득력을 '가진' 대상이므로 형용사가 적절합니다. 또한, 'a passage'가 'hedging'이라는 동작을 능동적으로 수행하는 것으로 보아 현재분사를 선택했지만, 문맥상 구절은 '완곡하게 표현되는' 대상이므로 수동의 의미를 지닌 과거분사가 필요합니다. → 처방: 'find + 목적어 + 목적 보어' 구문에서 목적 보어가 목적어의 상태를 나타낼 때는 형용사를 쓰고, 목적어가 능동적으로 행하는 동작을 나타낼 때만 현재분사를 씁니다. 명사를 수식하는 분사 선택 시, 수식받는 명사가 동작의 주체인지 대상인지 파악하여 능동이면 현재분사, 수동이면 과거분사를 씁니다.\n④ 진단: 학생은 동사 'found' 뒤에 목적어(arguments)의 상태를 설명하는 보어를 현재분사로 선택하여, 논증이 능동적으로 설득하는 것으로 잘못 이해했습니다. 논증은 설득력을 '가진' 대상이므로 형용사가 적절합니다. 또한, 'a passage'가 'hedging'이라는 동작을 능동적으로 수행하는 것으로 보아 현재분사를 선택했지만, 문맥상 구절은 '완곡하게 표현되는' 대상이므로 수동의 의미를 지닌 과거분사가 필요합니다. 마지막으로, 'the risk is' 뒤에 'in use'를 선택하여 위험이 '사용 중인 상태'에 있다고 보았지만, 문맥상 위험은 '너무 많이 사용하는 행위'에 있으므로 동명사 형태가 적절합니다. → 처방: 'find + 목적어 + 목적 보어' 구문에서 목적 보어가 목적어의 상태를 나타낼 때는 형용사를 쓰고, 목적어가 능동적으로 행하는 동작을 나타낼 때만 현재분사를 씁니다. 명사를 수식하는 분사 선택 시, 수식받는 명사가 동작의 주체인지 대상인지 파악하여 능동이면 현재분사, 수동이면 과거분사를 씁니다. 전치사 뒤에 행위를 나타낼 때는 동명사를, 상태나 목적을 나타낼 때는 명사 또는 명사구를 씁니다.\n⑤ 진단: 학생은 동사 'found' 뒤에 목적어(arguments)의 상태를 설명하는 보어를 현재분사로 선택하여, 논증이 능동적으로 설득하는 것으로 잘못 이해했습니다. 논증은 설득력을 '가진' 대상이므로 형용사가 적절합니다. 또한, 'the risk is' 뒤에 'in use'를 선택하여 위험이 '사용 중인 상태'에 있다고 보았지만, 문맥상 위험은 '너무 많이 사용하는 행위'에 있으므로 동명사 형태가 적절합니다. → 처방: 'find + 목적어 + 목적 보어' 구문에서 목적 보어가 목적어의 상태를 나타낼 때는 형용사를 쓰고, 목적어가 능동적으로 행하는 동작을 나타낼 때만 현재분사를 씁니다. 전치사 뒤에 행위를 나타낼 때는 동명사를, 상태나 목적을 나타낼 때는 명사 또는 명사구를 씁니다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-19T11:34:40.048Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "For about a century now, many liberals have argued against ­censorship of art, and most courts have found their arguments ­persuasive enough that few people may remember exactly how they were countered. As a result, today, censorship is virtually a thing of the past. Some claim that a passage hedged that much is wordy and weak. Perhaps. But it does not come on like a bulldozer. It leaves room for a reasoned and equally moderate response. Quick Tip:  When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite. Here’s the point: You need some metadiscourse in everything you write, especially metadiscourse that guides readers through your text, words such as first, second, therefore, on the other hand, and so on. You also need some metadiscourse that hedges your certainty, words such as perhaps, seems, could, and so on. The risk is in using too many.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-19T11:35:06.966Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Quick Tip: When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite.\n② The risk is in using too many.\n③ But it does not come on like a bulldozer.\n④ Some claim that a passage hedged that much is wordy and weak.\n⑤ Here’s the point: You need some metadiscourse in everything you write, especially metadiscourse that guides readers through your text, words such as first, second, therefore, on the other hand, and so on.\n⑥ As a result, today, censorship is virtually a thing of the past.\n⑦ For about a century now, many liberals have argued against ­censorship of art, and most courts have found their arguments ­persuasive enough that few people may remember exactly how they were countered.\n⑧ You also need some metadiscourse that hedges your certainty, words such as perhaps, seems, could, and so on.\n⑨ It leaves room for a reasoned and equally moderate response.",
+    "choices": [
+     "⑦-⑥-④-③-⑨-①-⑤-②-⑧",
+     "⑦-⑥-④-③-⑨-①-⑤-⑧-②",
+     "⑦-⑥-④-⑨-③-①-⑤-⑧-②",
+     "⑦-①-③-⑨-④-②-⑧-⑤-⑥",
+     "⑦-⑥-④-③-⑨-⑤-①-⑧-②"
+    ],
+    "answer": 2,
+    "explanation": "정답 배열은 ⑦-⑥-④-③-⑨-①-⑤-⑧-②. 흐름: ⑦ → ⑥(As a result) → ④ → ③(But) → ⑨(It) → ① → ⑤ → ⑧ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①, ⑤, ⑧의 순서가 잘못됐고 ②가 마지막에 오지 않아 흐름이 맞지 않는다. 특히 ⑤(metadiscourse 필요성)와 ②(metadiscourse 사용 과도함 경고)가 떨어져 있어 논리적 연결이 끊긴다. → 처방: 글의 주제인 'metadiscourse'가 중심이 되는 문장(⑤, ⑧, ②)을 한데 모아 배치한 선지를 찾아야 한다. metadiscourse 의 역할(⑤)과 과도한 사용의 위험(②)을 짝지어 읽어야 흐름이 자연스럽다.\n③ 진단: ④ 다음에 ⑨가 오면서 'wordy and weak'라는 비판과 'moderate response'가 연결되지 않아 맥락이 끊긴다. 또한 ①이 ⑤보다 먼저 오면서 'obviously' 같은 단어가 갑자기 튀어나와 논리적 흐름이 깨진다. → 처방: metadiscourse 의 필요성(⑤)과 사용법(⑧)을 먼저 설명한 뒤, 과도한 사용의 위험(②)과 비판(④)을 차례로 배치해야 한다. ①은 metadiscourse 의 예시가 아니라 'obviously' 같은 단어가 독자에게 반감을 일으킨다는 경고이므로 중간에 넣으면 안 된다.\n④ 진단: ①이 ⑦ 바로 다음에 오면서 'obviously' 같은 단어가 갑작스럽게 등장해 흐름이 깨진다. 또한 ⑥이 중간에 끼면서 'censorship'와 'metadiscourse'가 섞여 논점이 산만해진다. → 처방: 글의 주제가 'metadiscourse'임을 먼저 인식하고, 관련 문장(⑤, ⑧, ②)을 한데 모아 배치한 선지를 선택해야 한다. ①은 metadiscourse 의 예시가 아니라 독자의 반감을 일으키는 표현이므로 중간에 넣으면 안 된다.\n⑤ 진단: ⑤가 ⑨ 다음에 오면서 metadiscourse 의 필요성 설명이 갑자기 튀어나와 흐름이 자연스럽지 않다. 또한 ①이 ⑤보다 뒤에 오면서 'obviously' 같은 단어가 갑작스럽게 등장해 논리적 연결이 약해진다. → 처방: metadiscourse 의 필요성(⑤)과 사용법(⑧)을 먼저 설명한 뒤, 과도한 사용의 위험(②)과 비판(④)을 차례로 배치해야 한다. ①은 metadiscourse 의 예시가 아니라 독자의 반감을 일으키는 표현이므로 중간에 넣으면 안 된다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-19T09:18:28.313Z",
    "type": "글의순서",
@@ -294,92 +381,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Restricted quantification in formal logic'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·조건 누락·인과 전도)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 'use of restricted quantifiers in formal logic'는 지문에서 'restricted quantifier'가 '형식논리에서 어떻게 쓰이는지'를 설명하는 것이 아니라, '형식논리에서 제한된 양화사가 무엇인지와 그 구조'를 다룬다는 점을 혼동한 것으로 보임. 지문은 'restricted quantifier'의 정의와 구성 요소(예: 'No x: DOG(x)')에 초점을 맞추고 있음. → 처방: 문제를 풀 때는 'use(사용)'보다는 'what(무엇인지)'를 묻는 선지를 우선 확인하고, 지문의 핵심 설명이 '정의와 구조'에 맞는지 확인할 것.\n③ 진단: 'general principles of formal logic quantification'는 지문이 '제한된 양화사'에만 초점을 맞추고 있어 '일반 원칙'까지 다루지 않는다는 점을 오해한 것임. 지문은 'No dogs barked.' 같은 구체적 예시와 'No x: DOG(x)' 같은 표현에만 집중하고 있음. → 처방: 문제를 풀 때는 지문의 '범위'를 확인하고, '일반 원칙'보다는 '특정 개념'에 대한 설명인지 확인할 것.\n④ 진단: 'restriction of quantifiers in logical propositions'는 지문이 '제한된 양화사'의 '정의와 구조'를 설명하는 것이지, '제한의 방법' 자체에 대한 설명은 아니라는 점을 혼동한 것임. 지문은 'No x: DOG(x)'에서 'DOG(x)'가 제한 역할을 한다는 점을 언급하지만, '제한 방법'에 대한 일반론은 없음. → 처방: 문제를 풀 때는 지문의 '주제'가 '정의와 구조'인지, '방법'인지 명확히 구분하고, 예시가 '방법'을 설명하는지 확인할 것.\n⑤ 진단: 'deriving quantifiers from propositional restrictions'는 지문이 '제한된 양화사'가 '명제 제한'에서 파생된다는 설명이 아니라, '제한된 양화사의 구조와 기능'을 설명한다는 점을 오해한 것임. 지문은 'No x: DOG(x)'가 'DOG(x)'로 제한된다는 점은 언급하지만, '파생 과정'에 대한 설명은 없음. → 처방: 문제를 풀 때는 지문의 '주제'가 '파생 과정'인지, '구조와 기능'인지 확인하고, 예시가 '파생'을 설명하는지 확인할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Restricted quantification in formal logic]"
-   }
-  },
-  {
-   "ts": "2026-07-18T22:10:11.429Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 한정사(quantifier)가 문장 전체의 의미를 제약한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-18T21:07:43.354Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 1/1가 5번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.67,
-    "distractorEff": 100,
-    "pass": true,
-    "flags": []
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Ask the groups to discuss each exercise first among themselves and then orally under your supervision. Evaluate your students’ competence through the use of the lesson and unit evaluation in which they have to perform individually (independent practice) In discussion, as in other methods, your role as teacher is to prepare, execute and follow up. Before the discussion begins you, the teacher must make sure that every one is properly prepared. During the class’s first experiences with real discussion you will have to act as moderator. All times you will need to act as supervisor and observer. In roles, please make sure that the problem to be discussed is properly defined. Characteristics of a good discussion: 1. A discussion is a purposeful conversation proceeding toward some goal, 2. The topic presented must be discussible, 3. Though it is informal , it is always serious , 4. The teacher is merely a moderator , who supervises rather than directs the conversation, 5. All members of the group have a chance to express an opinion.\n\n─────────\n[요약문] Teachers should (A) facilitate structured group activities and (B) assess student performance through guided evaluation methods.",
-    "choices": [
-     "(A) instructional guidance … (B) performance evaluation",
-     "(A) prepare materials … (B) assign grades",
-     "(A) observe silently … (B) enhance discussion quality",
-     "(A) define discussion topics … (B) record individual responses",
-     "(A) moderate discussions … (B) student participation"
-    ],
-    "answer": 1,
-    "explanation": "(A) instructional guidance / (B) performance evaluation 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 지문에서 'prepare, execute, follow up'은 수업 준비·진행·평가를 뜻하는데, 'prepare materials'는 '자료 준비'로 좁게 오해했고 'assign grades'는 '등급 부여'로 평가의 한 부분만 잘못 생각했음. → 처방: 평가는 '수업의 사용'을 통한 '능력 측정'이라는 큰 틀을 떠올리며, '자료 준비'나 '등급 부여'가 아닌 '수업의 구조화'와 '수행 평가'를 연결지어 생각하기.\n③ 진단: 'observe silently'는 '조용히 관찰'이 아니라 '관찰·감독·조정'을 포괄하는 역할이며, 'enhance discussion quality'는 결과가 아닌 '목표'를 설명한 것이 아님. 학생은 '조용히 관찰'만으로 오해했음. → 처방: 지문에서 'supervisor and observer'는 '조용히 관찰'이 아니라 '수업의 흐름을 관리·감독'하는 역할임을 기억하고, '질 향상'이 아닌 '구조화된 안내'를 떠올리기.\n④ 진단: 'define discussion topics'는 '주제 설정'으로 부분에 불과하며, 'record individual responses'는 '개별 수행 평가'의 한 방법일 뿐 '평가의 목적'을 설명하지 않음. 학생은 '주제 설정'과 '기록'을 '구조화'와 '평가'로 혼동했음. → 처방: 지문에서 'define the problem'은 '토론의 목적'을 세우는 것이고, 'evaluate competence'는 '개별 수행 평가'임을 구분하여, '주제 설정'과 '기록'이 아닌 '안내와 평가'를 연결지어 생각하기.\n⑤ 진단: 'moderate discussions'는 '토론 진행'으로 부분 역할에 불과하며, 'student participation'은 '참여'로 결과나 특징을 설명한 것임. 학생은 '토론 진행'과 '참여'를 '수업 구조화'와 '수행 평가'로 잘못 연결했음. → 처방: 지문에서 'moderator'는 '토론의 흐름 관리'를 뜻하지만, 'evaluate competence'는 '개별 수행 평가'로 더 큰 범위를 설명한다는 점을 기억하고, '참여'가 아닌 '능력 평가'를 떠올리기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-18T21:08:23.671Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "practice on one's own improving basic reading abilities",
-     "reading comprehension arising from structured group interaction",
-     "structured group discussions consistently boosting reading comprehension",
-     "teacher-centered lectures emphasizing group work to maximize reading comprehension",
-     "unstructured discussions failing to improve reading comprehension"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Discussion-based teaching enhances reading comprehension through structured group interaction.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 논지에서 어긋남· ③ 정답 — 핵심 논지 반영· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Discussion-based teaching enhances reading comprehension through structured group interaction.]\n[오답 진단·처방]\n① 진단: 지문에서 'I'는 그룹 토론을 통해 학생들의 읽기 이해력이 향상된다고 말하고 있지만, '혼자 연습하기'는 언급하지 않음. 학생은 '기본 읽기 능력 향상'이라는 단어만 보고 오독했을 가능성이 큼. → 처방: 지문 전체를 읽고 '토론'과 '읽기 이해력'의 관계를 정확히 연결 지어 읽기.\n② 진단: 지문은 토론이 읽기 이해력을 '향상시킨다'고 했지만, '구조화된 그룹 상호작용에서 비롯된 읽기 이해력'이라는 표현은 지문에 없음. 학생은 '구조화된'이라는 단어에만 주목했을 수 있음. → 처방: 지문에서 '목적 있는 대화'와 '읽기 이해력'이 어떻게 연결되는지 다시 확인하기.\n④ 진단: 지문은 토론에서 선생님이 '조율자' 역할을 한다고 명시했지만, '선생님 중심 강의'는 언급하지 않음. 학생은 '선생님'이라는 단어에만 반응했을 가능성이 큼. → 처방: 지문에서 선생님의 역할을 정확히 파악하고, '강의'와 '토론'을 구분해서 읽기.\n⑤ 진단: 지문은 토론이 읽기 이해력을 '향상시킨다'고 했지만, '구조화되지 않은 토론'이 실패한다는 말은 없음. 학생은 '구조화되지 않음'이라는 단어에만 주목했을 수 있음. → 처방: 지문에서 '목적 있는 대화'와 '읽기 이해력'의 관계를 다시 한 번 정리해서 읽기."
    }
   }
  ]

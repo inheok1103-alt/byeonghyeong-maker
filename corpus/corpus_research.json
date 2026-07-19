@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-19T09:20:04.406Z",
+ "updated": "2026-07-19T11:35:49.270Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-19T11:35:19.466Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'in my opinion'와 'in addition' 등 전치사+명사구 구문 뒤에 오는 절이 주어-동사 일치 오류를 자주 일으킨다. 또한 'on which'와 같은 관계사 절에서도 동사 수 일치가 지켜지지 않는 경우가 많다.",
+   "rule": "원서 패턴 분석 결과, 전치사구(In my opinion, In addition 등) 또는 관계사(on which) 뒤의 절은 반드시 주어와 동사의 수 일치를 확인하여, 단수 주어에는 단수 동사, 복수 주어에는 복수 동사를 사용하도록 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-19T09:19:39.080Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'and'로 연결된 복수 명사구가 주어일 때, 동사는 복수형으로 일치시켜야 하며, 'smaller'와 같이 비교급 형용사가 잘못된 경우 수정해야 한다. 또한 숫자 표기 오류('1 0th' → '10th')도 문법적 오류로 처리해야 한다.",
    "rule": "'A and B' 구조의 주어는 복수형 동사와 함께 사용하며, 비교급 형용사 오류('smallers' → 'smaller')와 숫자 표기 오류('1 0th' → '10th')는 반드시 수정하여 문장을 완성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-14T15:52:06.143Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스는 '형용사 + 명사' 구조가 문법적으로 자연스럽고, 'unmeaningful' 같은 파생어 사용보다 'not meaningful'로 명시적 표현을 선호한다.",
-   "rule": "원서 문체 패턴을 반영하여, '형용사 + 명사' 구문에서 부정어는 명사 앞에 직접 붙이기보다 'not + 형용사'로 분리하거나, 전치사구를 활용해 'that were not ~' 또는 '-ing/-ed' 수식구를 삽입하도록 변형 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",
