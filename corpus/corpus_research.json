@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-19T17:28:50.887Z",
+ "updated": "2026-07-19T19:37:04.256Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-19T19:36:38.589Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'a lot more possibilities'와 같은 복수 가산명사 뒤에는 정관사 'the'를 생략하는 패턴이 빈번하며, 'a person who is'와 같이 관계대명사 뒤의 동사는 선행사의 수에 일치해야 한다. 또한 'time after time'은 고정된 숙어 형태로, 반복 오류('timer', 'inviroment')를 유도할 수 있다.",
+   "rule": "복수 가산명사 뒤에는 정관사 'the'를 생략하는 경우가 많으므로, 'possibilities/ones'와 같은 복수명사 뒤에는 'the'를 삽입하거나 생략하는 오류를 유도하는 문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-19T17:28:23.665Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'명사 + 동사 + 관사/소유격' 구조에서 관사/소유격이 생략된 오류가 빈번하며, 특히 'a/the + 명사' 패턴이 '명사' 단독으로 잘못 사용되는 경우가 많다. 또한 문장 내 동사 시제 불일치와 콤마 오용이 연어 오류와 결합되어 나타난다.",
    "rule": "'need + a/the + 명사' 구조에서 관사를 생략하거나 'a'를 무분별하게 삽입하는 오류를 유도하라. 예를 들어, 'students need knowledge'를 'students need a knowledge'로 오답지 항목으로 제시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-14T23:17:00.650Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'no matter how + 형용사/부사 + 주어 + 동사' 구문이 빈번하며, 'may/might' 조동사가 상상력·가능성을 나타내는 관용적 표현으로 쓰인다. 또한 'even though' 절에서 'a' 관사의 생략 오류가 자주 발생하며, 'facing up with'는 'facing'으로 축약되는 경향이 있다.",
-   "rule": "'no matter how' 뒤에는 'may/might + 동사원형'을 사용하여 가능성이나 상상력을 강조하는 문장을 구성하라. 예: 'no matter how high the quality may be'.",
    "sample": [
     "old english",
     "university press",
