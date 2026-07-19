@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-19T16:16:56.693Z",
+ "updated": "2026-07-19T17:28:50.887Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-19T17:28:23.665Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'~한 상태가 과거부터 현재까지 지속된다'는 의미는 현재완료 시제(have/has + 과거분사)로 표현해야 하며, 단순 과거 시제(started, tried 등)로 오용되는 패턴이 빈번하다.",
+   "rule": "'~한 상태가 과거부터 현재까지 지속된다'는 의미는 'have/has + 과거분사'로 표현해야 하며, 단순 과거 시제(예: started, tried, is since ages)는 오류로 처리한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-19T16:16:31.689Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'no matter how + 형용사/부사 + 주어 + 동사' 구문이 빈번하며, 'may/might' 조동사가 상상력·가능성을 나타내는 관용적 표현으로 쓰인다. 또한 'even though' 절에서 'a' 관사의 생략 오류가 자주 발생하며, 'facing up with'는 'facing'으로 축약되는 경향이 있다.",
    "rule": "'no matter how' 뒤에는 'may/might + 동사원형'을 사용하여 가능성이나 상상력을 강조하는 문장을 구성하라. 예: 'no matter how high the quality may be'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-14T22:19:14.643Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어 문법 오류는 대문자 미사용, 구두점 오류, 시제 오류, 전치사 오용, 관사 오류가 복합적으로 나타나며, 특히 구두점(콤마, 콜론)과 시제 일치 문제가 빈번하다.",
-   "rule": "CEFR B1 수준 내신 변형문제에서는 주어-동사 일치, 시제(현재/과거), 구두점(콤마, 콜론) 사용, 대문자 규칙을 반드시 평가하며, 오류 유형별로 1~2개씩을 혼합하여 출제하라.",
    "sample": [
     "old english",
     "university press",
