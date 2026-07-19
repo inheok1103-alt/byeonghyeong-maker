@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-19T00:13:36.314Z",
+ "updated": "2026-07-19T03:57:44.563Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-19T03:57:19.481Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거형 동사와 현재완료형의 혼동이 빈번하며, 특히 '~한 적이 없다'는 의미에서는 현재완료가 필수적이다. 또한, 주어가 복수일 때 'life'가 'lives'로 변환되는 패턴이 관찰된다.",
+   "rule": "주어가 단수/복수에 따라 'life/lives'를 구분하되, 과거형 동사가 사용된 경우 현재완료형으로 수정하여 문맥에 맞게 시제를 일치시킨다. 예: 'He changed' → 'He has changed'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-19T00:13:10.836Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사구(NP) 내 'kind(s) of + 명사' 구조에서 'kind'는 복수/복합 명사와 결합할 때 'these/those kinds of'로 수식되어야 하며, 'do'는 명시적 목적어('the same thing')가 필요하다는 패턴이 반복됨.",
    "rule": "'kind(s) of + 복수/복합 명사' 구조는 반드시 'these/those kinds of + 복수/복합 명사'로 수식하고, 'do' 뒤에는 목적어('the same thing', 'it' 등)를 반드시 첨가하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-14T09:20:35.533Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사(knowledge, company 등)의 단수/복수 형태와 동사 시제가 일치하지 않는 오류가 빈번하며, 특히 'they'와 같은 인칭대명사가 주격/목적격으로 혼용되는 경우가 많다.",
-   "rule": "단수/복수 명사 및 인칭대명사의 격(주격/목적격)과 동사 시제를 문맥에 맞게 일치시키도록 한다. 예를 들어, 'help they' → 'helps them', 'startet' → 'started', 'thinks' → 'tries' 등으로 수정하는 패턴을 연습시킨다.",
    "sample": [
     "old english",
     "university press",

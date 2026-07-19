@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-19T00:13:36.318Z",
+ "updated": "2026-07-19T03:57:44.567Z",
  "samples": [
+  {
+   "ts": "2026-07-19T03:57:06.326Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "I don’t like. Note carefully the pronunciation of this word. ANTITHESIS (an TITH uh sis) n the direct opposite • Erin is the antithesis of Aaron: Erin is bright and beautiful; Aaron is dull and plain. Note carefully the pronunciation of this word. APARTHEID (uh PAHRT hyte) n the former policy of racial segregation and oppression in the Republic of South Africa The word apartheid is related to the word apart. Under apartheid in South Africa, blacks were kept apart from whites and denied all rights. The word apartheid is sometimes applied to less radical forms of racial injustice and to other kinds of separation. Critics have sometimes accused American public schools of practicing educational apartheid by providing substandard schooling for nonwhites. Quick Quiz #8 Match each word in the first column with its definition in the second column. Check your answers here. 1. anarchy a. resentment 2. monarchy b. racial oppression 3. anecdote c. firm dislike 4. anguish d. irregularity 5. animosity e. what went before 6. anomaly f. agonizing pain\n\n─────────\n[요약문] The word 'antithesis' refers to (A) while 'apartheid' denotes (B).",
+    "choices": [
+     "(A) resistance … (B) tolerance",
+     "(A) equality … (B) unity",
+     "(A) contradiction … (B) systematic segregation",
+     "(A) indifference … (B) division",
+     "(A) harmony … (B) integration"
+    ],
+    "answer": 3,
+    "explanation": "(A) contradiction / (B) systematic segregation 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘anarchy’(무정부 상태)와 ‘apartheid’(인종 차별 정책)을 혼동했거나, ‘antithesis’(정반대)가 ‘resistance’(저항)와 연결된다고 오해했을 수 있습니다. 지문에서 ‘antithesis’는 ‘the direct opposite’를 뜻하며, ‘apartheid’는 ‘racial segregation’이므로 전혀 다른 뜻입니다. → 처방: ‘antithesis’가 ‘정반대’라는 뜻임을 기억하고, ‘apartheid’가 ‘체계적인 분리’를 뜻한다는 점을 구분해 공부하세요.\n② 진단: ‘monarchy’(군주제)와 ‘apartheid’(인종 차별 정책)을 혼동했거나, ‘antithesis’가 ‘equality’(평등)와 관련 있다고 잘못 이해했을 수 있습니다. ‘antithesis’는 ‘정반대’를 뜻하며, ‘equality’는 이와 무관합니다. → 처방: 단어의 의미를 정확히 외우고, 유사한 단어(예: ‘monarchy’와 ‘apartheid’)는 비교하며 공부하세요.\n④ 진단: ‘indifference’(무관심)와 ‘antithesis’를 연결했거나, ‘apartheid’를 ‘division’(분리)으로만 단순하게 해석했을 수 있습니다. ‘apartheid’는 ‘체계적인 분리’와 ‘인종 차별’을 뜻하며, 단순히 ‘분리’보다 더 강한 의미를 가집니다. → 처방: ‘apartheid’가 ‘체계적이고 강제적인 분리’를 뜻한다는 점을 강조하며, 단어의 의미를 깊이 있게 공부하세요.\n⑤ 진단: ‘harmony’(조화)와 ‘antithesis’를 연결했거나, ‘apartheid’를 ‘integration’(통합)과 반대되는 뜻으로 오해했을 수 있습니다. ‘antithesis’는 ‘정반대’를 뜻하며, ‘apartheid’는 ‘체계적인 분리’를 뜻합니다. → 처방: 단어의 의미를 문맥과 함께 기억하고, 반대 개념(예: ‘harmony’ vs ‘antithesis’)을 비교하며 공부하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-19T00:13:08.741Z",
    "type": "조건영작",
@@ -328,40 +363,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'DOMESTIC: OF OR RELATING TO ONE'S OWN COUNTRY/HOME'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 정도 왜곡\n[오답 진단·처방]\n② 진단: ‘domestic’이 ‘private spheres(사적인 영역)’로만 국한된다고 오해했는데, 지문에서 ‘this country’를 뜻하는 말로도 쓰였다는 점을 놓쳤다. → 처방: ‘domestic’이 ‘국가’나 ‘집’(가정)을 뜻할 수 있음을 기억하고, 문맥에 따라 의미를 넓혀 생각해보기.\n③ 진단: ‘domestic’이 ‘국경 없는 세계 현상’이란 뜻으로 오인했는데, 지문은 ‘이 나라’의 대조 개념(imported)으로만 설명했다. → 처방: ‘domestic’이 ‘국가’와 관련 있음을 떠올리고, ‘국경 없는’은 지문에 전혀 없음을 확인하기.\n④ 진단: ‘domestic’이 ‘정부 규제’와만 연결된다고 착각했는데, 지문은 ‘이 나라’(국가 전체)나 ‘집안’의 뜻으로만 설명했다. → 처방: ‘domestic’이 ‘정부’와 무관함을 기억하고, 지문의 예시(steel industry, tranquility)를 참고해 넓은 의미로 접근하기.\n⑤ 진단: ‘domestic’이 ‘작은 공동체’에만 한정된다고 오해했는데, 지문은 ‘이 나라’(국가 전체)도 포함한다고 설명했다. → 처방: ‘domestic’이 ‘국가 전체’를 포함할 수 있음을 떠올리고, ‘작은’은 지문에 없음을 확인하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: DOMESTIC: OF OR RELATING TO ONE]"
-   }
-  },
-  {
-   "ts": "2026-07-18T15:17:39.350Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Domestic wine is wine from this country, as opposed to wine imported from, say, France. The domestic steel industry is the steel industry in this country. A country that enjoys domestic tranquility is a happy country on the homefront. Quick Quiz #34 Match each word in the first column with its definition in the second column. Check your answers here. committed to a theory 2. thin out 3. of the household 4. firmly held system of ideas 5. easily taught 6. arrogantly assertive 7. tell apart 9. spread seeds 11. disintegration DORMANT (DOR munt) adj inactive; as though asleep; asleep Dormant, like dormitory, comes from a root meaning sleep. • Mt. Vesuvius erupted violently and then fell dormant for several hundred years. [ ]",
-    "choices": [
-     "Many plants lie inactive during winter, resuming growth only when spring arrives.",
-     "The term 'dormant' originally meant 'to wake up early in the morning.'",
-     "Plants remain dormant through the winter because they store energy for summer growth.",
-     "Many plants grow actively in winter despite the cold temperatures.",
-     "Dormant plants, like those in a dormitory, never fully stop their metabolic processes."
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 원문 'Many plants remain dormant through the winter; that is, they stop growing until spring.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: 지문에서 'dormant'의 뜻은 '잠자는 것처럼 활동이 없는 상태'인데, 선지는 'dormant'의 어원이 '아침 일찍 깨어나다'라는 뜻이었다고 오해한 것 같다. → 처방: 단어의 뜻과 어원을 분리해서 공부하지 말고, 문맥에서 뜻을 먼저 확인한 뒤 어원도 참고해라.\n③ 진단: 지문에서 'dormant'은 활동이 없는 상태를 뜻하는데, 선지는 '겨울에 에너지를 저장해서 여름에 자란다'고 잘못 이해한 것 같다. → 처방: 단어의 뜻을 문장 전체에서 파악하고, 필요 없는 정보는 무시해라.\n④ 진단: 지문에서 'dormant'은 활동이 없는 상태를 뜻하는데, 선지는 '겨울에도 활발히 자란다'고 반대 뜻으로 오해한 것 같다. → 처방: 단어의 뜻을 정확히 기억하고, 선지가 뜻과 반대인지 같은지 먼저 확인해라.\n⑤ 진단: 지문에서 'dormant'은 활동이 없는 상태를 뜻하는데, 선지는 '대사 과정이 멈추지 않는다'고 잘못 해석한 것 같다. → 처방: 단어의 뜻을 문맥과 연결 지어 생각하고, 어원을 맹신하지 말고 뜻을 우선으로 삼아라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
