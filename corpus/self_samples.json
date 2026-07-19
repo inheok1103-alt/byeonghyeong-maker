@@ -1,6 +1,44 @@
 {
- "updated": "2026-07-19T11:35:49.274Z",
+ "updated": "2026-07-19T13:58:30.627Z",
  "samples": [
+  {
+   "ts": "2026-07-19T13:57:58.608Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 7,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "Error Standard X Where you are going? Where are you going? X When they will be back? When will they be back? X What they have done? What have they done? X Why he can’t come, too? Why can’t he come, too? The problem in all the erroneous examples is that the speaker was not able to handle two inversions at the same time. In order to form these wh- questions correctly, the speaker has to do two things. First, move the wh- word to the front of the sentence, and then invert the helping verb and the subject noun phrase. The speaker was able to perform the ﬁ rst task—moving the wh- word to the front of the sentence—but was not able to simultaneously perform the second task of inverting the subject and the helping verb. Clearly, it was one task too many for the speaker to manage at the same time. Here is a second group of errors of a similar nature:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-19T13:58:05.364Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "E____ Standard X Where you are going? Where are you going? X When they will be back? When will they be back? X What they have done? What have they done? X Why he can’t come, too? Why can’t he come, too? The problem in all the erroneous examples is that the speaker was not able to handle two inversions at the same time. In order to form these wh- questions correctly, the speaker has to do two things. First, move the wh- word to the front of the sentence, and then invert the helping verb and the subject noun phrase. The speaker was able to perform the ﬁ rst task—moving the wh- word to the front of the sentence—but was not able to simultaneously perform the second task of inverting the subject and the helping verb. Clearly, it was one task too many for the speaker to manage at the same time. Here is a second group of errors of a similar nature:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Error — 문단의 논지상 이 자리에는 'Error'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-19T11:33:40.650Z",
    "type": "네모어법ABC",
@@ -312,75 +350,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'The core argument of a sentence can be a proposition expressed by a sentential clause.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 'The core argument of a sentence may sometimes be a proposition expressed by a sentential clause'라고 했지만, 이는 'may sometimes'로 '가끔'이라는 한계가 있음을 간과하고 '때로는'을 '항상'으로 오해했거나, 'may'의 의미를 정확히 읽지 못했음. → 처방: 지문에서 'may'와 'sometimes' 같은 한정 표현을 주의 깊게 읽고, 문장의 범위를 정확히 파악할 것.\n② 진단: 지문에서 'A sentence’s core argument is not always derived from the main verb’s action'이라는 부분이 있지만, 이는 'not always'로 '항상'이 아님을 강조한 것인데, 이를 '반드시'라는 의미로 오해했거나, 'derived from'의 의미를 잘못 이해했음. → 처방: 지문에서 'not always'와 같은 부정 표현을 주의 깊게 읽고, 문맥상 '항상'이 아님을 명확히 파악할 것.\n③ 진단: 지문에서 'Every core argument in a sentence must be a proposition expressed by a sentential clause'라는 문장은 없지만, 학생은 'must'라는 강제적 표현을 지문에서 찾으려 했거나, 'Every'가 포함된 선지를 '모든'이라는 뜻으로 오해했음. → 처방: 지문에서 'must'나 'Every' 같은 절대적 표현이 있는지 확인하고, 문맥상 '~일 필요는 없다'는 의미를 찾아낼 것.\n④ 진단: 지문에서 'A sentence’s core argument is not necessarily a proposition expressed by a sentential clause'는 'not necessarily'로 '반드시 ~은 아니다'라는 뜻이지만, 학생은 이를 '반드시 ~이 아니다'로 오해했거나, 'necessarily'의 의미를 잘못 해석했음. → 처방: 지문에서 'not necessarily'와 같은 표현을 주의 깊게 읽고, '반드시 ~은 아니다'라는 의미를 정확히 이해할 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The core argument of a sentence can be a proposition expressed by a sentential clause.]"
-   }
-  },
-  {
-   "ts": "2026-07-18T22:09:24.234Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "한정사는 명사구의 범위를 제한하는 기능을 하지만, 그 범위는 오로지 명사구 앞에 오는 형용사에 의해 제한된다.",
-     "한정사의 역할은 명사구의 범위를 제한하는 데 있지만, 그 범위가 한정사 자체에 의해 구체화된다는 보장은 없다.",
-     "모든 한정사가 명사구의 범위를 제한하는 동시에, 수식어의 통합적 의미를 포함하여 전체 명제에 영향을 미친다.",
-     "한정사는 범위를 제한할 수 있으나, 부정 한정사를 제외한 다른 한정사는 그 범위를 직접 명시하지 않는다.",
-     "논리식에서 한정사는 명사구의 범위를 제한하는 기능을 하며, 그 범위는 명사구 자체의 내용에 의해 구체화된다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Quantification in logic involves restricting the range of a quantifier using a determiner and its modifiers to specify the type and scope of entities considered in the proposition.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘형용사’가 아니라 ‘명사구 자체의 내용(예: head noun, modifiers, relative clauses)’이 범위를 제한한다고 지문에서 분명히 밝히고 있음. 학생은 한정사의 역할만 알고 세부 조건을 오해한 듯. → 처방: 한정사가 ‘명사구 자체의 내용’을 기준으로 범위를 제한한다는 점을 기억하고, 문제에서 ‘형용사’ 같은 단어를 보면 바로 의심하기.\n② 진단: ‘한정사 자체에 의해 구체화된다’는 표현이 지문의 ‘No 는 부정 한정사로 같은 방식으로 표현된다’는 설명과 혼동됨. 학생은 한정사의 역할이 ‘불확실’하다고 오해한 듯. → 처방: ‘한정사는 범위를 제한한다’는 기본 개념을 먼저 떠올리고, ‘구체화되지 않는다’는 말은 지문에 없음을 확인하기.\n③ 진단: ‘모든 한정사가 수식어의 통합적 의미를 포함하여 전체 명제에 영향을 미친다’는 말은 지문에 없음. 학생은 한정사의 역할이 ‘복잡하다’고 과장해 해석한 듯. → 처방: 한정사가 ‘범위를 제한하는 기능’을 우선 떠올리고, ‘영향을 미친다’는 말은 지문에 없음을 확인한 후 버리기.\n④ 진단: ‘부정 한정사를 제외한 다른 한정사는 범위를 직접 명시하지 않는다’는 말은 지문에 없음. 학생은 ‘부정 한정사’만 특별하다는 점을 과장해 해석한 듯. → 처방: 한정사의 역할이 ‘범위를 제한하는 것’이라는 기본 개념을 떠올리고, ‘제외’라는 조건은 지문에 없음을 확인하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Quantification in logic involves restricting the range of a quantifier using a determiner and its modifiers to specify the type and scope of entities considered in the proposition.]"
-   }
-  },
-  {
-   "ts": "2026-07-18T22:09:59.726Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "formal logic's restricted quantification",
-     "use of restricted quantifiers in formal logic",
-     "general principles of formal logic quantification",
-     "restriction of quantifiers in logical propositions",
-     "deriving quantifiers from propositional restrictions"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Restricted quantification in formal logic'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·조건 누락·인과 전도)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 'use of restricted quantifiers in formal logic'는 지문에서 'restricted quantifier'가 '형식논리에서 어떻게 쓰이는지'를 설명하는 것이 아니라, '형식논리에서 제한된 양화사가 무엇인지와 그 구조'를 다룬다는 점을 혼동한 것으로 보임. 지문은 'restricted quantifier'의 정의와 구성 요소(예: 'No x: DOG(x)')에 초점을 맞추고 있음. → 처방: 문제를 풀 때는 'use(사용)'보다는 'what(무엇인지)'를 묻는 선지를 우선 확인하고, 지문의 핵심 설명이 '정의와 구조'에 맞는지 확인할 것.\n③ 진단: 'general principles of formal logic quantification'는 지문이 '제한된 양화사'에만 초점을 맞추고 있어 '일반 원칙'까지 다루지 않는다는 점을 오해한 것임. 지문은 'No dogs barked.' 같은 구체적 예시와 'No x: DOG(x)' 같은 표현에만 집중하고 있음. → 처방: 문제를 풀 때는 지문의 '범위'를 확인하고, '일반 원칙'보다는 '특정 개념'에 대한 설명인지 확인할 것.\n④ 진단: 'restriction of quantifiers in logical propositions'는 지문이 '제한된 양화사'의 '정의와 구조'를 설명하는 것이지, '제한의 방법' 자체에 대한 설명은 아니라는 점을 혼동한 것임. 지문은 'No x: DOG(x)'에서 'DOG(x)'가 제한 역할을 한다는 점을 언급하지만, '제한 방법'에 대한 일반론은 없음. → 처방: 문제를 풀 때는 지문의 '주제'가 '정의와 구조'인지, '방법'인지 명확히 구분하고, 예시가 '방법'을 설명하는지 확인할 것.\n⑤ 진단: 'deriving quantifiers from propositional restrictions'는 지문이 '제한된 양화사'가 '명제 제한'에서 파생된다는 설명이 아니라, '제한된 양화사의 구조와 기능'을 설명한다는 점을 오해한 것임. 지문은 'No x: DOG(x)'가 'DOG(x)'로 제한된다는 점은 언급하지만, '파생 과정'에 대한 설명은 없음. → 처방: 문제를 풀 때는 지문의 '주제'가 '파생 과정'인지, '구조와 기능'인지 확인하고, 예시가 '파생'을 설명하는지 확인할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Restricted quantification in formal logic]"
    }
   }
  ]
