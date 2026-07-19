@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-19T19:37:04.260Z",
+ "updated": "2026-07-19T21:11:34.424Z",
  "samples": [
+  {
+   "ts": "2026-07-19T21:09:33.387Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 2번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "VOLUME OF IRREGULAR SOLIDS: <u>The best way to measure the volume of an irregular solid is to place it in water and find the volume of water it displaces. The difference between the new and old volume measurements is equal to the volume of the object. (Next time you get into a bath</u>, look at the water you displace-that’s your volume!) Mass ELECTRONIC BALANCE: Just put the object on the pan and read the mass. DOUBLE PAN BALANCE: This compares the weight of objects in pans on each side of a balance. To find mass, place something of known mass in one pan, and in the other pan, place the object of unknown mass. When the pans are level, the masses are equal. For other geometric shapes, look in your math notebook. VOLUME DISPLACED SOLID If you are measuring something that needs to be in a container, weigh the empty container on its own first, and then subtract the weight of the container afterward.",
+    "choices": [
+     "One’s true worth or impact can be gauged by the noticeable yet often overlooked changes they bring about in their surroundings.",
+     "The volume of water displaced in a bath directly measures a person's physical size or weight.",
+     "When someone creates significant changes in their environment, it always results in a measurable increase in the volume of water displaced.",
+     "One's true value is always as obvious as the water displaced when they enter a bathtub.",
+     "When you take a bath, the water you push aside results from your body's density and weight."
+    ],
+    "answer": 1,
+    "explanation": "밑줄 친 부분은 'One’s true worth or impact can be gauged by the noticeable yet often overlooked changes they bring about in their surroundings.'을 함의한다.\n[오답 진단·처방]\n② 진단: 지문에서 'look at the water you displace'는 '너의 부피'를 비유한 것이고, 'that’s your volume!'은 '너의 몸 크기'를 뜻하지 않음. 학생은 '물리적 부피'와 '진정한 가치'를 혼동한 듯. → 처방: 지문에서 'volume'은 '부피'를 뜻한다는 사실에 집중하고, '진정한 가치'는 '변화'로 연결된다는 점을 기억하기.\n③ 진단: 지문은 '물 displaced'가 '객체의 부피'를 측정하는 방법일 뿐, '환경 변화'나 '측정 가능성'을 말하는 것이 아님. 학생은 '측정 방법'과 '결과'를 과장해 해석함. → 처방: 지문의 핵심은 '부피 측정 방법'이라는 점을 분명히 하고, '항상 측정 가능'하다는 보장이 없다는 사실도 확인하기.\n④ 진단: 지문은 '물 displaced'가 '객체의 부피'를 나타내는 비유일 뿐, '진정한 가치'가 '명확하다'는 뜻이 아님. 학생은 비유를 문자 그대로 받아들여 오해함. → 처방: 비유와 실제 의미를 구분하고, '진정한 가치'는 '변화'로 해석한다는 점을 기억하기.\n⑤ 진단: 지문은 '물 displaced'가 '객체의 부피'를 측정하는 방법일 뿐, '밀도와 무게'를 직접 연결하는 설명이 아님. 학생은 '밀도'와 '무게'를 과도하게 연관지음. → 처방: 지문에서 'volume displaced'는 '부피'를 측정하는 방법이라는 점에 집중하고, '밀도'나 '무게'는 별개의 개념이라는 사실 확인하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-19T21:11:05.675Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "VOLUME OF IRREGULAR S_____: The best way to measure the volume of an irregular solid is to place it in water and find the volume of water it displaces. The difference between the new and old volume measurements is equal to the volume of the object. (Next time you get into a bath, look at the water you displace-that’s your volume!) Mass ELECTRONIC BALANCE: Just put the object on the pan and read the mass. DOUBLE PAN BALANCE: This compares the weight of objects in pans on each side of a balance. To find mass, place something of known mass in one pan, and in the other pan, place the object of unknown mass. When the pans are level, the masses are equal. For other geometric shapes, look in your math notebook. VOLUME DISPLACED SOLID If you are measuring something that needs to be in a container, weigh the empty container on its own first, and then subtract the weight of the container afterward.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] SOLIDS — 문단의 논지상 이 자리에는 'SOLIDS'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-19T19:35:58.055Z",
    "type": "복합세트",
@@ -235,73 +289,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T11:35:06.966Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Quick Tip: When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite.\n② The risk is in using too many.\n③ But it does not come on like a bulldozer.\n④ Some claim that a passage hedged that much is wordy and weak.\n⑤ Here’s the point: You need some metadiscourse in everything you write, especially metadiscourse that guides readers through your text, words such as first, second, therefore, on the other hand, and so on.\n⑥ As a result, today, censorship is virtually a thing of the past.\n⑦ For about a century now, many liberals have argued against ­censorship of art, and most courts have found their arguments ­persuasive enough that few people may remember exactly how they were countered.\n⑧ You also need some metadiscourse that hedges your certainty, words such as perhaps, seems, could, and so on.\n⑨ It leaves room for a reasoned and equally moderate response.",
-    "choices": [
-     "⑦-⑥-④-③-⑨-①-⑤-②-⑧",
-     "⑦-⑥-④-③-⑨-①-⑤-⑧-②",
-     "⑦-⑥-④-⑨-③-①-⑤-⑧-②",
-     "⑦-①-③-⑨-④-②-⑧-⑤-⑥",
-     "⑦-⑥-④-③-⑨-⑤-①-⑧-②"
-    ],
-    "answer": 2,
-    "explanation": "정답 배열은 ⑦-⑥-④-③-⑨-①-⑤-⑧-②. 흐름: ⑦ → ⑥(As a result) → ④ → ③(But) → ⑨(It) → ① → ⑤ → ⑧ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①, ⑤, ⑧의 순서가 잘못됐고 ②가 마지막에 오지 않아 흐름이 맞지 않는다. 특히 ⑤(metadiscourse 필요성)와 ②(metadiscourse 사용 과도함 경고)가 떨어져 있어 논리적 연결이 끊긴다. → 처방: 글의 주제인 'metadiscourse'가 중심이 되는 문장(⑤, ⑧, ②)을 한데 모아 배치한 선지를 찾아야 한다. metadiscourse 의 역할(⑤)과 과도한 사용의 위험(②)을 짝지어 읽어야 흐름이 자연스럽다.\n③ 진단: ④ 다음에 ⑨가 오면서 'wordy and weak'라는 비판과 'moderate response'가 연결되지 않아 맥락이 끊긴다. 또한 ①이 ⑤보다 먼저 오면서 'obviously' 같은 단어가 갑자기 튀어나와 논리적 흐름이 깨진다. → 처방: metadiscourse 의 필요성(⑤)과 사용법(⑧)을 먼저 설명한 뒤, 과도한 사용의 위험(②)과 비판(④)을 차례로 배치해야 한다. ①은 metadiscourse 의 예시가 아니라 'obviously' 같은 단어가 독자에게 반감을 일으킨다는 경고이므로 중간에 넣으면 안 된다.\n④ 진단: ①이 ⑦ 바로 다음에 오면서 'obviously' 같은 단어가 갑작스럽게 등장해 흐름이 깨진다. 또한 ⑥이 중간에 끼면서 'censorship'와 'metadiscourse'가 섞여 논점이 산만해진다. → 처방: 글의 주제가 'metadiscourse'임을 먼저 인식하고, 관련 문장(⑤, ⑧, ②)을 한데 모아 배치한 선지를 선택해야 한다. ①은 metadiscourse 의 예시가 아니라 독자의 반감을 일으키는 표현이므로 중간에 넣으면 안 된다.\n⑤ 진단: ⑤가 ⑨ 다음에 오면서 metadiscourse 의 필요성 설명이 갑자기 튀어나와 흐름이 자연스럽지 않다. 또한 ①이 ⑤보다 뒤에 오면서 'obviously' 같은 단어가 갑작스럽게 등장해 논리적 연결이 약해진다. → 처방: metadiscourse 의 필요성(⑤)과 사용법(⑧)을 먼저 설명한 뒤, 과도한 사용의 위험(②)과 비판(④)을 차례로 배치해야 한다. ①은 metadiscourse 의 예시가 아니라 독자의 반감을 일으키는 표현이므로 중간에 넣으면 안 된다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T09:18:28.313Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "Ray English 지문 전문 · 원문 그대로 34번 빈칸 [ 3 점] · B L A N K 결과에 따라 행동을 바꾸기 빈칸 빈칸 = changing behaviors in light of the consequences: 결과(칭찬/무효)에 따라 행동을 바꾼다(조작적 조건화).\n\n(A) In general, we tend to do things that bring us some kind of benefit or act in ways that help us avoid some kind of problem, discomfort, or disadvantage. We also tend to do fewer things (or stop doing things) that lead to problems, discomfort, or disadvantages, and we tend to avoid acting in ways that do not bring any benefit or reward. 지문 전문 · 원문 그대로\n\n(B) 지문 전문 — 시험지 원문 A particularly powerful way in which human beings adapt and adjust to their circumstances is by ＿＿＿＿＿＿＿＿ that they yield. For instance, a child who gets praised by her teacher for doing an exercise correctly is likely to continue doing the exercise in that way. A dancer who feels that a particular conditioning exercise is not giving any results is likely to give that exercise up in favor of another one that seems more promising.\n\n(C) 소재 결과에 따른 행동 변화 Changing behavior by its consequences 주제 우리는 결과에 비추어 행동을 조정하며 적응한다 We adapt by acting on consequences 제목 결과가 행동을 바꾼다 We Adapt by Acting on Consequences 한눈에 인간은 ‘결과에 따라 행동을 바꾸며’ 적응한다는 글이다. 칭찬받은 아이는 그 행동을 계속하고, 효과 없다고 느끼는 무용 수는 그만둔다. 즉 이득이 되는 일은 하고 문제가 되는 방식은 피하는 ‘결과 기반 적응’이 핵심이다.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 5,
-    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
