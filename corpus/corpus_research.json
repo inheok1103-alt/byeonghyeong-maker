@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-19T15:17:42.055Z",
+ "updated": "2026-07-19T16:16:56.693Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-19T16:16:31.689Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거형/현재형 동사 사용 오류와 관사/형용사 위치 오류가 빈번하다는 점을 확인했다. 특히 'kind of' 뒤에는 복수명사가 오지 않으며, 'able'은 조동사 'can'으로 대체되어야 한다.",
+   "rule": "과거형/현재형 동사 오류는 'be able to' → 'can'으로, 관사/형용사 위치 오류는 'the [형용사] ones' 형태로 수정하도록 출제 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-19T15:17:15.591Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "영어 문법 오류는 대문자 미사용, 구두점 오류, 시제 오류, 전치사 오용, 관사 오류가 복합적으로 나타나며, 특히 구두점(콤마, 콜론)과 시제 일치 문제가 빈번하다.",
    "rule": "CEFR B1 수준 내신 변형문제에서는 주어-동사 일치, 시제(현재/과거), 구두점(콤마, 콜론) 사용, 대문자 규칙을 반드시 평가하며, 오류 유형별로 1~2개씩을 혼합하여 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-14T21:17:13.383Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "복수명사(livestocks, peoples 등)가 무의미한 복수화로 오류를 일으키는 경우가 많다. 또한, 동사 원형과 과거형/과거분사형 혼동(understend→understand, likr→like)도 빈번하다.",
-   "rule": "'복수명사 오류'는 무의미한 '-s' 접미사를 제거한 형태로 출제하며, '동사 원형 오류'는 원형동사(like/use)와 시제에 맞는 동사(liked/could use)를 구분하여 문항화한다.",
    "sample": [
     "old english",
     "university press",
