@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-19T21:11:34.421Z",
+ "updated": "2026-07-19T22:14:04.437Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-19T22:11:53.266Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'단수/복수 명사의 선택 오류'가 빈번하며, 특히 'the + 단수명사' vs. 'a/an + 단수명사' 또는 '복수명사'의 구분이 CEFR B1-B2 수준에서 핵심 오류 유형임을 확인할 수 있다. 또한, 전치사(예: 'to' vs. 'of')와 대명사의 일치(예: 'they' vs. 'it')도 빈번한 오류로 나타났다.",
+   "rule": "CEFR B1-B2 수준 내신 변형문제에서는 'the + 단수명사'가 불가산명사(예: 'knowledge', 'transportation')와 함께 사용될 때 오류를 유도하는 문장을 반드시 1개 이상 포함하여, 학생들이 'the + 단수명사'가 불가산명사 앞에서는 사용되지 않는다는 규칙을 적용하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-19T21:11:08.079Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "복수형 오류와 부정어의 부적절한 조합이 문법적 오류로 자주 발생함을 확인. 또한, 'every + 단수명사' 구조와 'no + 단수명사' 구조가 문법적 일관성을 위해 사용됨을 파악.",
    "rule": "CEFR B1 수준 내신 변형문제에서는 'every + 단수명사'와 'no + 단수명사'의 올바른 병행 구조를 묻는 문제를 출제하라. 특히, 부정어와 복수형 오류가 혼용되지 않도록 주의하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-15T03:38:53.410Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거 시제와 조건문(if)의 조합에서 'could not' 대신 'did not'이 과도하게 사용되며, 'old people'이 'our ancestors'로 일반화되는 경향이 강하다. 또한 'be alive'가 'live'보다 자연스러운 완화 표현으로 활용된다.",
-   "rule": "원서 영어에서 조건문(if) + 과거 시제 조합 시, 'could not + 동사원형'이 아닌 'did not + 동사원형'을 기본형으로 사용하도록 오류 유도 문제를 출제한다. (예: 'if they did not develop' → 'if they could not develop'로 변형)",
    "sample": [
     "old english",
     "university press",

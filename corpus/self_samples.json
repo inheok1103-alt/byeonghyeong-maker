@@ -1,6 +1,107 @@
 {
- "updated": "2026-07-19T21:11:34.424Z",
+ "updated": "2026-07-19T22:14:04.440Z",
  "samples": [
+  {
+   "ts": "2026-07-19T22:10:28.662Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "At the other extreme, four-word free combinations allow considerable variability and are transparent in their meanings: across the front of the green against the back of his neck at the back of the stage at the centre of the system in the back of the vehicle in the side of the neck on the far side of the track outside the front of the house to the front of the court through the middle of nesting terns As variability is a matter of degree, it is impossible to establish a clear borderline between free combinations and complex prepositions. ① 3 Overlap between prepositions and other word classes Many of the same orthographic words can function as prepositions, subordinators, adverbs, and occasionally even verbs and adjectives; for examples, see Table 2. ② 5 (cf. Table 2. ③ 7 in 2. ④ These variations in word order often reflect differences in syntactic roles rather than semantic transparency. ⑤ It is difficult to draw a clear borderline between the prepositional and subordinator use of as and than (see the discussion in 4. 2 of case variation after these words). The borderline is also blurred before ing-participles:",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①(3번 문장)과 겹치는 내용(‘prepositions 와 다른 품사 간 중복’)을 다루고 있지만, ①은 ‘overlap’이란 제목 아래 구체적 예를 제시하는 반면 3번은 ‘variability’란 제목 아래 ‘free combinations’의 특징을 설명하는 흐름에 속한다는 점을 혼동했다. → 처방: ‘제목(소제목)’과 ‘해당 문장이 속한 흐름’을 먼저 확인한 뒤, 문장 자체가 그 흐름의 핵심 주제와 맞는지 다시 한 번 점검하라.\n② 진단: ②(5번 문장)과 마찬가지로 ‘prepositions 와 다른 품사 간 중복’을 언급하지만, ②는 ‘orthographic words’의 기능적 중복을, 5번은 ‘word order’의 변화가 문법적 역할과 연관된다는 점을 다룬다는 점을 혼동했다. → 처방: ‘문장이 다루는 내용의 차이(기능 vs. 역할)’를 명확히 구분한 뒤, 해당 문장이 그 차이를 반영하는지 확인하라.\n③ 진단: ③(7번 문장)과 ⑤(마지막 문장) 모두 ‘경계선(borderline)’을 언급하지만, ③은 ‘as 와 than’의 사용 구분에, 5번은 ‘free combinations 과 complex prepositions’의 구분에 초점을 둔다는 점을 혼동했다. → 처방: ‘무엇의 경계선인지(품사 vs. 결합 형태)’를 먼저 파악한 뒤, 문장이 그 경계선에 대한 설명인지 확인하라.\n⑤ 진단: ⑤(마지막 문장)는 ‘free combinations 과 complex prepositions’의 경계선 문제를 다루지만, 4번(‘It is difficult to draw a clear borderline…’)은 ‘as 와 than’의 품사별 사용 구분에 대한 설명이라는 점을 혼동했다. → 처방: ‘해당 문장이 다루는 ‘경계선’의 대상(품사 vs. 결합 형태)’을 명확히 한 뒤, 전체 흐름에서 그 문장이 어떤 역할을 하는지 다시 확인하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-19T22:11:14.633Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "At the other extreme, four-word free combinations allow considerable variability and are transparent in their meanings: across the front of the green against the back of his neck at the back of the stage at the centre of the system in the back of the vehicle in the side of the neck on the far side of the track outside the front of the house to the front of the court through the middle of nesting terns As variability is a matter of degree, it is impossible to establish a clear borderline between free combinations and complex prepositions. 2.4.5.3 Overlap between prepositions and other word classes Many of the same orthographic words can function as prepositions, subordinators, adverbs, and occasionally even verbs and adjectives; for examples, see Table 2.5 (cf. Table 2.7 in 2.4.8.3). It is difficult to draw a clear borderline between the prepositional and subordinator use of as and than (see the discussion in 4.10.6.2 of case variation after these words). The borderline is also blurred before ing-participles:",
+    "choices": [
+     "자유로운 네 단어 조합은 의미가 투명하다는 점에서 상당한 변이성을 허용한다.",
+     "자유로운 조합과 복합 전치사의 경계는 명확히 그릴 수 있다는 점이 변이성의 특징이다.",
+     "동일한 철자 단어가 전치사, 종속사, 부사, 때로는 동사나 명사(형용사→명사)로 기능할 수 있다.",
+     "'as'와 'than'의 전치사적 사용과 종속사적 사용 사이에는 명확한 경계를 긋기 쉽다(어렵다→쉽다).",
+     "'-ing 분사 앞에서도 전치사와 종속사의 경계가 뚜렷하다는 점이 지적된다(모호하다는→뚜렷하다는)."
+    ],
+    "answer": 1,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 자유로운 조합과 복합 전치사의 경계가 '불명확하다'는 지문 2번째 문장('it is impossible to establish a clear borderline')을 '명확히 그릴 수 있다'로 반대로 오독함. → 처방: 지문에서 '불명확'하다고 말한 부분을 정확히 읽고, '경계가 모호하다'는 뜻임을 기억할 것.\n③ 진단: 전치사·종속사·부사·동사·명사(형용사→명사)로 기능할 수 있다고 한 지문 2.4.5.3의 내용을 '명사(형용사→명사)' 부분을 빼고 오독함. → 처방: 지문에 나오는 모든 기능(전치사, 종속사, 부사, 동사, 명사)을 빠짐없이 확인하고, '형용사→명사'도 포함된다는 점을 기억할 것.\n④ 진단: 'as'와 'than'의 전치사적·종속사적 사용 경계가 '어렵다'고 한 지문 4.10.6.2의 내용을 '쉽다'로 반대로 오독함. → 처방: 지문에서 '어렵다'고 한 부분을 그대로 읽고, '경계가 모호하다'는 뜻임을 기억할 것.\n⑤ 진단: '-ing 분사 앞에서도 경계가 모호하다는 점'을 지문에서 지적했다는 내용을 '뚜렷하다는 점'으로 반대로 오독함. → 처방: 지문에서 'blurred(모호하다)'라는 단어를 찾아보고, 그 뜻이 '뚜렷하지 않다'는 것임을 기억할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-19T22:11:36.470Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "At the other extreme, four-word free combinations allow considerable variability and are transparent in their meanings: across the front of the green against the back of his neck (A) [at backs / at the back] of the stage at the centre of the system in the back of the vehicle (B) [in sides / in the side] of the neck on the far side of the track outside the front of the house (C) [to fronts / to the front] of the court through the middle of nesting terns As variability is a matter of degree, it is impossible to establish a clear borderline between free combinations and complex prepositions. 2.4.5.3 Overlap between prepositions and other word classes Many of the same orthographic words can function as prepositions, subordinators, adverbs, and occasionally even verbs and adjectives; for examples, see Table 2.5 (cf. Table 2.7 in 2.4.8.3). It is difficult to draw a clear borderline between the prepositional and subordinator use of as and than (see the discussion in 4.10.6.2 of case variation after these words). The borderline is also blurred before ing-participles:",
+    "choices": [
+     "(A) at the back - (B) in sides - (C) to the front",
+     "(A) at backs - (B) in the side - (C) to the front",
+     "(A) at backs - (B) in sides - (C) to fronts",
+     "(A) at backs - (B) in the side - (C) to fronts",
+     "(A) at the back - (B) in the side - (C) to the front"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) at the back - (B) in the side - (C) to the front. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘at backs’는 ‘~의 뒤쪽들’로 복수형이 되어 의미가 맞지 않고, ‘to fronts’는 ‘~의 앞쪽들’로 복수형이 되어 ‘to the front’(~의 앞쪽)로 써야 한다. ‘in sides’는 ‘~의 옆면들’로 복수형이 되어 ‘in the side’(~의 옆면)로 써야 한다. → 처방: ‘at the back’, ‘in the side’, ‘to the front’가 각각 ‘~의 뒤쪽’, ‘~의 옆면’, ‘~의 앞쪽’이라는 뜻임을 기억하고, 복수형이 아니라 단수형을 써야 한다는 점을 떠올리자.\n② 진단: ‘at backs’는 ‘~의 뒤쪽들’로 복수형이 되어 의미가 맞지 않고, ‘to the front’는 맞지만 ‘in sides’는 ‘~의 옆면들’로 복수형이 되어 ‘in the side’로 써야 한다. → 처방: ‘at the back’(~의 뒤쪽)과 ‘in the side’(~의 옆면), ‘to the front’(~의 앞쪽)이라는 올바른 조합을 기억하고, 복수형이 아니라 단수형을 써야 한다는 점을 떠올리자.\n③ 진단: ‘at backs’는 ‘~의 뒤쪽들’로 복수형이 되어 의미가 맞지 않고, ‘in sides’는 ‘~의 옆면들’로 복수형이 되어 ‘in the side’로 써야 하며, ‘to fronts’는 ‘~의 앞쪽들’로 복수형이 되어 ‘to the front’로 써야 한다. → 처방: ‘at the back’, ‘in the side’, ‘to the front’가 각각 ‘~의 뒤쪽’, ‘~의 옆면’, ‘~의 앞쪽’이라는 뜻임을 기억하고, 복수형이 아니라 단수형을 써야 한다는 점을 떠올리자.\n④ 진단: ‘at backs’는 ‘~의 뒤쪽들’로 복수형이 되어 의미가 맞지 않고, ‘in the side’는 맞지만 ‘to fronts’는 ‘~의 앞쪽들’로 복수형이 되어 ‘to the front’로 써야 한다. → 처방: ‘at the back’, ‘in the side’, ‘to the front’가 각각 ‘~의 뒤쪽’, ‘~의 옆면’, ‘~의 앞쪽’이라는 뜻임을 기억하고, 복수형이 아니라 단수형을 써야 한다는 점을 떠올리자.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-19T21:09:33.387Z",
    "type": "밑줄함의",
@@ -214,78 +315,6 @@
    "q": {
     "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
     "passage": "Error Standard X Where you are going? Where are you going? X When they will be back? When will they be back? X What they have done? What have they done? X Why he can’t come, too? Why can’t he come, too? The problem in all the erroneous examples is that the speaker was not able to handle two inversions at the same time. In order to form these wh- questions correctly, the speaker has to do two things. First, move the wh- word to the front of the sentence, and then invert the helping verb and the subject noun phrase. The speaker was able to perform the ﬁ rst task—moving the wh- word to the front of the sentence—but was not able to simultaneously perform the second task of inverting the subject and the helping verb. Clearly, it was one task too many for the speaker to manage at the same time. Here is a second group of errors of a similar nature:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T13:58:05.364Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "E____ Standard X Where you are going? Where are you going? X When they will be back? When will they be back? X What they have done? What have they done? X Why he can’t come, too? Why can’t he come, too? The problem in all the erroneous examples is that the speaker was not able to handle two inversions at the same time. In order to form these wh- questions correctly, the speaker has to do two things. First, move the wh- word to the front of the sentence, and then invert the helping verb and the subject noun phrase. The speaker was able to perform the ﬁ rst task—moving the wh- word to the front of the sentence—but was not able to simultaneously perform the second task of inverting the subject and the helping verb. Clearly, it was one task too many for the speaker to manage at the same time. Here is a second group of errors of a similar nature:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Error — 문단의 논지상 이 자리에는 'Error'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T11:33:40.650Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 1,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "For about a century now, many liberals have argued against ­censorship of art, and most courts have found their arguments ­(A) [persuasive enough / persuading enough] that few people may remember exactly how they were countered. As a result, today, censorship is virtually a thing of the past. Some claim that a passage (B) [hedged that much / hedging that much] is wordy and weak. Perhaps. But it does not come on like a bulldozer. It leaves room for a reasoned and equally moderate response. Quick Tip:  When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite. Here’s the point: You need some metadiscourse in everything you write, especially metadiscourse that guides readers through your text, words such as first, second, therefore, on the other hand, and so on. You also need some metadiscourse that hedges your certainty, words such as perhaps, seems, could, and so on. The risk is (C) [in using / in use] too many.",
-    "choices": [
-     "(A) persuading enough - (B) hedged that much - (C) in using",
-     "(A) persuasive enough - (B) hedged that much - (C) in using",
-     "(A) persuading enough - (B) hedging that much - (C) in using",
-     "(A) persuading enough - (B) hedging that much - (C) in use",
-     "(A) persuading enough - (B) hedged that much - (C) in use"
-    ],
-    "answer": 2,
-    "explanation": "정답 조합: (A) persuasive enough - (B) hedged that much - (C) in using. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 학생은 동사 'found' 뒤에 목적어(arguments)의 상태를 설명하는 보어를 현재분사로 선택하여, 논증이 능동적으로 설득하는 것으로 잘못 이해했습니다. 논증은 설득력을 '가진' 대상이므로 형용사가 적절합니다. → 처방: 'find + 목적어 + 목적 보어' 구문에서 목적 보어가 목적어의 상태를 나타낼 때는 형용사를 쓰고, 목적어가 능동적으로 행하는 동작을 나타낼 때만 현재분사를 씁니다.\n③ 진단: 학생은 동사 'found' 뒤에 목적어(arguments)의 상태를 설명하는 보어를 현재분사로 선택하여, 논증이 능동적으로 설득하는 것으로 잘못 이해했습니다. 논증은 설득력을 '가진' 대상이므로 형용사가 적절합니다. 또한, 'a passage'가 'hedging'이라는 동작을 능동적으로 수행하는 것으로 보아 현재분사를 선택했지만, 문맥상 구절은 '완곡하게 표현되는' 대상이므로 수동의 의미를 지닌 과거분사가 필요합니다. → 처방: 'find + 목적어 + 목적 보어' 구문에서 목적 보어가 목적어의 상태를 나타낼 때는 형용사를 쓰고, 목적어가 능동적으로 행하는 동작을 나타낼 때만 현재분사를 씁니다. 명사를 수식하는 분사 선택 시, 수식받는 명사가 동작의 주체인지 대상인지 파악하여 능동이면 현재분사, 수동이면 과거분사를 씁니다.\n④ 진단: 학생은 동사 'found' 뒤에 목적어(arguments)의 상태를 설명하는 보어를 현재분사로 선택하여, 논증이 능동적으로 설득하는 것으로 잘못 이해했습니다. 논증은 설득력을 '가진' 대상이므로 형용사가 적절합니다. 또한, 'a passage'가 'hedging'이라는 동작을 능동적으로 수행하는 것으로 보아 현재분사를 선택했지만, 문맥상 구절은 '완곡하게 표현되는' 대상이므로 수동의 의미를 지닌 과거분사가 필요합니다. 마지막으로, 'the risk is' 뒤에 'in use'를 선택하여 위험이 '사용 중인 상태'에 있다고 보았지만, 문맥상 위험은 '너무 많이 사용하는 행위'에 있으므로 동명사 형태가 적절합니다. → 처방: 'find + 목적어 + 목적 보어' 구문에서 목적 보어가 목적어의 상태를 나타낼 때는 형용사를 쓰고, 목적어가 능동적으로 행하는 동작을 나타낼 때만 현재분사를 씁니다. 명사를 수식하는 분사 선택 시, 수식받는 명사가 동작의 주체인지 대상인지 파악하여 능동이면 현재분사, 수동이면 과거분사를 씁니다. 전치사 뒤에 행위를 나타낼 때는 동명사를, 상태나 목적을 나타낼 때는 명사 또는 명사구를 씁니다.\n⑤ 진단: 학생은 동사 'found' 뒤에 목적어(arguments)의 상태를 설명하는 보어를 현재분사로 선택하여, 논증이 능동적으로 설득하는 것으로 잘못 이해했습니다. 논증은 설득력을 '가진' 대상이므로 형용사가 적절합니다. 또한, 'the risk is' 뒤에 'in use'를 선택하여 위험이 '사용 중인 상태'에 있다고 보았지만, 문맥상 위험은 '너무 많이 사용하는 행위'에 있으므로 동명사 형태가 적절합니다. → 처방: 'find + 목적어 + 목적 보어' 구문에서 목적 보어가 목적어의 상태를 나타낼 때는 형용사를 쓰고, 목적어가 능동적으로 행하는 동작을 나타낼 때만 현재분사를 씁니다. 전치사 뒤에 행위를 나타낼 때는 동명사를, 상태나 목적을 나타낼 때는 명사 또는 명사구를 씁니다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T11:34:40.048Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "For about a century now, many liberals have argued against ­censorship of art, and most courts have found their arguments ­persuasive enough that few people may remember exactly how they were countered. As a result, today, censorship is virtually a thing of the past. Some claim that a passage hedged that much is wordy and weak. Perhaps. But it does not come on like a bulldozer. It leaves room for a reasoned and equally moderate response. Quick Tip:  When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite. Here’s the point: You need some metadiscourse in everything you write, especially metadiscourse that guides readers through your text, words such as first, second, therefore, on the other hand, and so on. You also need some metadiscourse that hedges your certainty, words such as perhaps, seems, could, and so on. The risk is in using too many.",
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
