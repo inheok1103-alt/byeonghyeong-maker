@@ -1,7 +1,15 @@
 {
- "updated": "2026-07-19T13:58:30.622Z",
+ "updated": "2026-07-19T15:17:42.054Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 정답 선지가 '단일 단위로서 기능 불가(예: cannot function outside the noun phrase)'를 명확히 드러내고, 오답 선지는 'my father'가 하나의 명사구로 기능함을 강조하는 구체적 표현(예: 'my'와 'father'의 결합으로 하나의 단위 형성)을 포함해야 한다.",
+   "src": "자가학습:밑줄함의",
+   "score": 75,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-07-19T15:16:49.685Z"
+  },
   {
    "rule": "원지문은 실제 수능/내신에서 볼 수 있는 자연스러운 문법 오류(예: 시제 오류, 주어-동사 불일치)를 포함하되, 학생이 스스로 오류를 찾아 수정하고 그 이유를 추론하는 방식으로 문제를 구성하라.",
    "src": "자가학습:복합세트",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-13T04:03:54.318Z"
-  },
-  {
-   "rule": "Glass encompasses domains like material, shape, and function.",
-   "src": "자가학습:조건영작",
-   "score": 75,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-13T04:04:17.908Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

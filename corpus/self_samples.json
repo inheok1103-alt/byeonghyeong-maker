@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-19T13:58:30.627Z",
+ "updated": "2026-07-19T15:17:42.059Z",
  "samples": [
+  {
+   "ts": "2026-07-19T15:17:08.538Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Determiners 41 My father’s sister was born in India. Think of the phrase <u>my father as being a single unit</u>. Inside that unit, my modiﬁ es father. My cannot jump outside its own phrase and modify sister. The sister who was born in India is my father’s sister, not my sister. Possessive Pronouns The term possessive pronoun is misleading, because there are actually two possessive forms for each pronoun. One form functions as an adjective, and the other functions as a true pronoun. To see the difference, compare the two possessive pronouns my (adjective) and mine (pronoun): Adjective function: That is my book. Pronoun function: That book is mine. The two forms are not interchangeable: X That is mine book. X That book is my. There is no standard terminology for distinguishing between the two different possessive pronoun functions. In this book we will refer to possessive pronouns functioning as adjectives as adjectival possessive pronouns. We will call possessive pronouns functioning as pronouns pronominal possessive pronouns. Here is a complete list of both types of possessive pronouns: SINGULAR",
+    "choices": [
+     "The use of 'my' before 'father' means that the speaker is expressing ownership or control over their father as a single object.",
+     "My' in the phrase 'my father' always indicates possession, showing that the father is completely owned by the speaker without any exceptions.",
+     "A possessive determiner like 'my' restricts the scope of its reference to the immediate noun phrase it modifies, preventing it from applying to broader or unrelated contexts.",
+     "Because the word 'my' is used, it implies that the father belongs exclusively to the speaker, making the relationship permanent and unchanging.",
+     "The possessive determiner 'my' always limits the noun it modifies to a singular, concrete entity."
+    ],
+    "answer": 3,
+    "explanation": "밑줄 친 부분은 'A possessive determiner like 'my' restricts the scope of its reference to the immediate noun phrase it modifies, preventing it from applying to broader or unrelated contexts.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'my'는 소유를 표현하는 것이 아니라, 'father'라는 명사구를 한 단위로 묶어 그 안의 요소로 제한한다는 뜻임을 오해한 듯함. 'ownership or control'이라는 표현이 지문의 '단위' 개념을 잘못 해석한 것임. → 처방: possessive determiner 가 명사구를 한 단위로 묶는다는 개념을 다시 공부하고, 소유의 의미와 명사구 제한의 의미를 구분해서 이해하기.\n② 진단: 'my'가 언제나 완전한 소유를 의미한다고 오해한 것. 지문은 'my'가 father 에만 적용된다는 제한적 의미를 강조하는데, 이를 '완전히 소유'로 확대 해석한 듯함. → 처방: possessive determiner 의 역할이 소유가 아니라 명사구 내에서의 제한임을 명확히 이해하고, 예문을 통해 연습하기.\n④ 진단: 'my'가 관계를 영구적이고 변하지 않게 만든다고 오해한 것. 지문은 'my'가 father 에만 적용된다는 제한적 의미를 설명하는데, 이를 관계의 영구성으로 확대 해석한 듯함. → 처방: possessive determiner 의 기능이 소유나 영구성 rather than 명사구 내 제한이라는 점을 명확히 이해하고, 예문을 통해 연습하기.\n⑤ 진단: 'my'가 명사를 단수·구체적 존재로 제한한다고 오해한 것. 지문은 'my'가 father 에만 적용된다는 제한적 의미를 설명하는데, 이를 명사의 수나 구체성에 대한 제한으로 오해한 듯함. → 처방: possessive determiner 의 역할이 명사의 수나 구체성 제한이 아니라, 명사구 내에서의 적용 범위 제한임을 명확히 이해하고, 예문을 통해 연습하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-19T13:57:58.608Z",
    "type": "복합세트",
@@ -316,40 +351,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] The White House beefed up its security. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-18T23:13:47.196Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.63,
-    "D": 0.17,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.17)",
-     "죽은오답 ①③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The core argument of a sentence may sometimes be a proposition expressed by a sentential clause",
-     "A sentence’s core argument is not always derived from the main verb’s action",
-     "Every core argument in a sentence must be a proposition expressed by a sentential clause",
-     "A sentence’s core argument is not necessarily a proposition expressed by a sentential clause",
-     "The proposition expressed by a sentential clause can serve as the core argument of a sentence"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The core argument of a sentence can be a proposition expressed by a sentential clause.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 'The core argument of a sentence may sometimes be a proposition expressed by a sentential clause'라고 했지만, 이는 'may sometimes'로 '가끔'이라는 한계가 있음을 간과하고 '때로는'을 '항상'으로 오해했거나, 'may'의 의미를 정확히 읽지 못했음. → 처방: 지문에서 'may'와 'sometimes' 같은 한정 표현을 주의 깊게 읽고, 문장의 범위를 정확히 파악할 것.\n② 진단: 지문에서 'A sentence’s core argument is not always derived from the main verb’s action'이라는 부분이 있지만, 이는 'not always'로 '항상'이 아님을 강조한 것인데, 이를 '반드시'라는 의미로 오해했거나, 'derived from'의 의미를 잘못 이해했음. → 처방: 지문에서 'not always'와 같은 부정 표현을 주의 깊게 읽고, 문맥상 '항상'이 아님을 명확히 파악할 것.\n③ 진단: 지문에서 'Every core argument in a sentence must be a proposition expressed by a sentential clause'라는 문장은 없지만, 학생은 'must'라는 강제적 표현을 지문에서 찾으려 했거나, 'Every'가 포함된 선지를 '모든'이라는 뜻으로 오해했음. → 처방: 지문에서 'must'나 'Every' 같은 절대적 표현이 있는지 확인하고, 문맥상 '~일 필요는 없다'는 의미를 찾아낼 것.\n④ 진단: 지문에서 'A sentence’s core argument is not necessarily a proposition expressed by a sentential clause'는 'not necessarily'로 '반드시 ~은 아니다'라는 뜻이지만, 학생은 이를 '반드시 ~이 아니다'로 오해했거나, 'necessarily'의 의미를 잘못 해석했음. → 처방: 지문에서 'not necessarily'와 같은 표현을 주의 깊게 읽고, '반드시 ~은 아니다'라는 의미를 정확히 이해할 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The core argument of a sentence can be a proposition expressed by a sentential clause.]"
    }
   }
  ]
