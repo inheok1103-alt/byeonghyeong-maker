@@ -1,6 +1,94 @@
 {
- "updated": "2026-07-20T11:17:35.713Z",
+ "updated": "2026-07-20T13:23:13.224Z",
  "samples": [
+  {
+   "ts": "2026-07-20T13:20:21.898Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "It is almost certainly the case that totalitarian systems cannot allow a society to have what we would define as stable social relationships. ✓ Totalitarianism prevents stable social relationships. 9. Hedges and intensifiers The only principle here is the Goldilocks rule: not too much, not too little, but just right. That’s little help, but this is a matter where you have to develop and then trust your ear. Too certain: In my research, I prove that people with a gun in their home use it to kill themselves or a family member instead of to protect themselves from an intruder. Too uncertain: Some of my recent research seems to ­imply that there may be a risk that certain people with a gun in their homes could be more prone to use it to kill themselves or a ­family member than to protect themselves from ­possible intruders. Just right? My research indicates that people with a gun in their homes are more likely to use it to kill themselves or a family member than they are to protect themselves from an intruder.\n\n─────────\n[요약문] Totalitarian systems hinder the establishment of (A) social structures, as demonstrated by researchers' struggle to achieve (B) precision in their claims.",
+    "choices": [
+     "(A) stability … (B) moderate",
+     "(A) adaptability … (B) overstatement",
+     "(A) transience … (B) certainty",
+     "(A) permanence … (B) ambiguity",
+     "(A) flexibility … (B) exaggeration"
+    ],
+    "answer": 1,
+    "explanation": "(A) stability / (B) moderate 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: ‘adaptability(적응성)’는 지문에 전혀 언급되지 않으며, ‘overstatement(과장)’는 ‘Hedges and intensifiers’에서 ‘too much’(과장)의 반대 개념으로 나온 ‘just right’이 아니라 과장된 표현을 뜻하는 단어로 오해한 듯함. → 처방: 지문에서 ‘totalitarian systems’이 ‘stable social relationships’를 막는다고 했으므로 ‘adaptability’는 관련이 없음을 확인하고, ‘moderate(적절한)’가 아니라 ‘overstatement(과장)’가 들어갈 이유가 없음을 기억하기.\n③ 진단: ‘transience(일시성)’는 지문에 없으며, ‘certainty(확신)’는 ‘too certain’이 아니라 ‘just right’의 예시로 나온 ‘too uncertain’의 반대 개념으로 오해한 듯함. → 처방: ‘transience’는 ‘안정성’의 반대 개념이 아니며, 지문에서 ‘totalitarianism’이 ‘stable’을 막는다고 했으므로 ‘permanence(영속성)’가 더 어울림을 기억하기.\n④ 진단: ‘permanence(영속성)’는 지문에 없지만 ‘stability(안정성)’의 동의어로 보았고, ‘ambiguity(모호성)’는 ‘too uncertain’의 예시로 나온 표현을 오해하여 선택한 듯함. → 처방: ‘permanence’는 ‘안정성’의 의미와 가까울 수 있지만, 지문은 ‘stable social relationships’를 막는다고 했으므로 ‘stability’가 더 직접적임을 기억하기.\n⑤ 진단: ‘flexibility(유연성)’는 지문에 없으며, ‘exaggeration(과장)’는 ‘Hedges and intensifiers’에서 ‘too much’(과장)의 반대 개념인 ‘just right’이 아니라 과장된 표현을 뜻하는 단어로 오해한 듯함. → 처방: ‘flexibility’는 ‘totalitarian systems’이 ‘stable’을 막는다는 내용과 무관하며, ‘moderate(적절한)’가 아니라 ‘exaggeration’이 들어갈 이유가 없음을 기억하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-20T13:20:54.078Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "It is almost certainly the case that totalitarian systems cannot allow a society to have what we would define as stable social relationships. ✓ Totalitarianism prevents stable social relationships. 9. Hedges and intensifiers The only principle here is the Goldilocks rule: <u>not too much, not too little, but just right</u>. That’s little help, but this is a matter where you have to develop and then trust your ear. Too certain: In my research, I prove that people with a gun in their home use it to kill themselves or a family member instead of to protect themselves from an intruder. Too uncertain: Some of my recent research seems to ­imply that there may be a risk that certain people with a gun in their homes could be more prone to use it to kill themselves or a ­family member than to protect themselves from ­possible intruders. Just right? My research indicates that people with a gun in their homes are more likely to use it to kill themselves or a family member than they are to protect themselves from an intruder.",
+    "choices": [
+     "The phrase literally means that research or judgment must not exceed a specific limit to be considered valid.",
+     "The best outcome comes from balancing too much research with too little.",
+     "The ideal balance in research or judgment lies in avoiding extremes and finding a moderate, well-considered middle ground.",
+     "The accuracy of research depends entirely on whether one avoids too much or too little, rather than on the balance itself.",
+     "Research should sometimes lean toward extremes to uncover groundbreaking insights rather than adhering strictly to moderation."
+    ],
+    "answer": 3,
+    "explanation": "밑줄 친 부분은 'The ideal balance in research or judgment lies in avoiding extremes and finding a moderate, well-considered middle ground.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Goldilocks rule'은 '적당히'가 중요하다는 뜻이지 '특정한 한계'를 말하는 게 아님. 학생은 '특정 한계'라는 말만 보고 오해한 듯. → 처방: 지문에서 'not too much, not too little, but just right'가 '적당히'를 뜻한다는 점을 떠올리며 선지를 다시 읽기.\n② 진단: 지문은 '적당히'가 중요하다고 했지만, 'too much 연구'와 'too little 연구'를 '균형'으로 보지 않음. 학생은 '균형'이라는 단어에만 집중한 듯. → 처방: 지문에서 '적당히'가 '극단 '와 '중도 찾기'를 뜻한다는 점을 기억하고, 선지의 '균형'이라는 단어를 주의 깊게 보기.\n④ 진단: 지문은 '적당히'가 중요하다고 했지만, '정확성'이 'avoid extremes'에만 달렸다고 말하지 않음. 학생은 '정확성'과 'avoid extremes'만 보고 오해한 듯. → 처방: 지문에서 '적당히'가 '정확성'의 기준이 아니라 '적당한 정도'를 찾는다는 점을 떠올리며 선지를 다시 읽기.\n⑤ 진단: 지문은 '적당히'가 중요하다고 했지만, '극단으로 기울기'를 권장하지 않음. 학생은 'groundbreaking insights'라는 말만 보고 오해한 듯. → 처방: 지문에서 '적당히'가 '극단 '를 뜻한다는 점을 기억하고, '획기적 통찰'이라는 말이 함정임을 알기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-20T13:22:43.542Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 5 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 5단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 전체주의는 안정된 사회적 관계를 막는다.\n주어진 단어: ( totalitarianism / prevents / stable )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Totalitarianism prevents stable social relationships. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-20T11:15:27.692Z",
    "type": "주제",
@@ -258,109 +346,6 @@
     ],
     "answer": 4,
     "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①(3번 문장)과 겹치는 내용(‘prepositions 와 다른 품사 간 중복’)을 다루고 있지만, ①은 ‘overlap’이란 제목 아래 구체적 예를 제시하는 반면 3번은 ‘variability’란 제목 아래 ‘free combinations’의 특징을 설명하는 흐름에 속한다는 점을 혼동했다. → 처방: ‘제목(소제목)’과 ‘해당 문장이 속한 흐름’을 먼저 확인한 뒤, 문장 자체가 그 흐름의 핵심 주제와 맞는지 다시 한 번 점검하라.\n② 진단: ②(5번 문장)과 마찬가지로 ‘prepositions 와 다른 품사 간 중복’을 언급하지만, ②는 ‘orthographic words’의 기능적 중복을, 5번은 ‘word order’의 변화가 문법적 역할과 연관된다는 점을 다룬다는 점을 혼동했다. → 처방: ‘문장이 다루는 내용의 차이(기능 vs. 역할)’를 명확히 구분한 뒤, 해당 문장이 그 차이를 반영하는지 확인하라.\n③ 진단: ③(7번 문장)과 ⑤(마지막 문장) 모두 ‘경계선(borderline)’을 언급하지만, ③은 ‘as 와 than’의 사용 구분에, 5번은 ‘free combinations 과 complex prepositions’의 구분에 초점을 둔다는 점을 혼동했다. → 처방: ‘무엇의 경계선인지(품사 vs. 결합 형태)’를 먼저 파악한 뒤, 문장이 그 경계선에 대한 설명인지 확인하라.\n⑤ 진단: ⑤(마지막 문장)는 ‘free combinations 과 complex prepositions’의 경계선 문제를 다루지만, 4번(‘It is difficult to draw a clear borderline…’)은 ‘as 와 than’의 품사별 사용 구분에 대한 설명이라는 점을 혼동했다. → 처방: ‘해당 문장이 다루는 ‘경계선’의 대상(품사 vs. 결합 형태)’을 명확히 한 뒤, 전체 흐름에서 그 문장이 어떤 역할을 하는지 다시 확인하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T22:11:14.633Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "At the other extreme, four-word free combinations allow considerable variability and are transparent in their meanings: across the front of the green against the back of his neck at the back of the stage at the centre of the system in the back of the vehicle in the side of the neck on the far side of the track outside the front of the house to the front of the court through the middle of nesting terns As variability is a matter of degree, it is impossible to establish a clear borderline between free combinations and complex prepositions. 2.4.5.3 Overlap between prepositions and other word classes Many of the same orthographic words can function as prepositions, subordinators, adverbs, and occasionally even verbs and adjectives; for examples, see Table 2.5 (cf. Table 2.7 in 2.4.8.3). It is difficult to draw a clear borderline between the prepositional and subordinator use of as and than (see the discussion in 4.10.6.2 of case variation after these words). The borderline is also blurred before ing-participles:",
-    "choices": [
-     "자유로운 네 단어 조합은 의미가 투명하다는 점에서 상당한 변이성을 허용한다.",
-     "자유로운 조합과 복합 전치사의 경계는 명확히 그릴 수 있다는 점이 변이성의 특징이다.",
-     "동일한 철자 단어가 전치사, 종속사, 부사, 때로는 동사나 명사(형용사→명사)로 기능할 수 있다.",
-     "'as'와 'than'의 전치사적 사용과 종속사적 사용 사이에는 명확한 경계를 긋기 쉽다(어렵다→쉽다).",
-     "'-ing 분사 앞에서도 전치사와 종속사의 경계가 뚜렷하다는 점이 지적된다(모호하다는→뚜렷하다는)."
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 자유로운 조합과 복합 전치사의 경계가 '불명확하다'는 지문 2번째 문장('it is impossible to establish a clear borderline')을 '명확히 그릴 수 있다'로 반대로 오독함. → 처방: 지문에서 '불명확'하다고 말한 부분을 정확히 읽고, '경계가 모호하다'는 뜻임을 기억할 것.\n③ 진단: 전치사·종속사·부사·동사·명사(형용사→명사)로 기능할 수 있다고 한 지문 2.4.5.3의 내용을 '명사(형용사→명사)' 부분을 빼고 오독함. → 처방: 지문에 나오는 모든 기능(전치사, 종속사, 부사, 동사, 명사)을 빠짐없이 확인하고, '형용사→명사'도 포함된다는 점을 기억할 것.\n④ 진단: 'as'와 'than'의 전치사적·종속사적 사용 경계가 '어렵다'고 한 지문 4.10.6.2의 내용을 '쉽다'로 반대로 오독함. → 처방: 지문에서 '어렵다'고 한 부분을 그대로 읽고, '경계가 모호하다'는 뜻임을 기억할 것.\n⑤ 진단: '-ing 분사 앞에서도 경계가 모호하다는 점'을 지문에서 지적했다는 내용을 '뚜렷하다는 점'으로 반대로 오독함. → 처방: 지문에서 'blurred(모호하다)'라는 단어를 찾아보고, 그 뜻이 '뚜렷하지 않다'는 것임을 기억할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T22:11:36.470Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "At the other extreme, four-word free combinations allow considerable variability and are transparent in their meanings: across the front of the green against the back of his neck (A) [at backs / at the back] of the stage at the centre of the system in the back of the vehicle (B) [in sides / in the side] of the neck on the far side of the track outside the front of the house (C) [to fronts / to the front] of the court through the middle of nesting terns As variability is a matter of degree, it is impossible to establish a clear borderline between free combinations and complex prepositions. 2.4.5.3 Overlap between prepositions and other word classes Many of the same orthographic words can function as prepositions, subordinators, adverbs, and occasionally even verbs and adjectives; for examples, see Table 2.5 (cf. Table 2.7 in 2.4.8.3). It is difficult to draw a clear borderline between the prepositional and subordinator use of as and than (see the discussion in 4.10.6.2 of case variation after these words). The borderline is also blurred before ing-participles:",
-    "choices": [
-     "(A) at the back - (B) in sides - (C) to the front",
-     "(A) at backs - (B) in the side - (C) to the front",
-     "(A) at backs - (B) in sides - (C) to fronts",
-     "(A) at backs - (B) in the side - (C) to fronts",
-     "(A) at the back - (B) in the side - (C) to the front"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) at the back - (B) in the side - (C) to the front. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘at backs’는 ‘~의 뒤쪽들’로 복수형이 되어 의미가 맞지 않고, ‘to fronts’는 ‘~의 앞쪽들’로 복수형이 되어 ‘to the front’(~의 앞쪽)로 써야 한다. ‘in sides’는 ‘~의 옆면들’로 복수형이 되어 ‘in the side’(~의 옆면)로 써야 한다. → 처방: ‘at the back’, ‘in the side’, ‘to the front’가 각각 ‘~의 뒤쪽’, ‘~의 옆면’, ‘~의 앞쪽’이라는 뜻임을 기억하고, 복수형이 아니라 단수형을 써야 한다는 점을 떠올리자.\n② 진단: ‘at backs’는 ‘~의 뒤쪽들’로 복수형이 되어 의미가 맞지 않고, ‘to the front’는 맞지만 ‘in sides’는 ‘~의 옆면들’로 복수형이 되어 ‘in the side’로 써야 한다. → 처방: ‘at the back’(~의 뒤쪽)과 ‘in the side’(~의 옆면), ‘to the front’(~의 앞쪽)이라는 올바른 조합을 기억하고, 복수형이 아니라 단수형을 써야 한다는 점을 떠올리자.\n③ 진단: ‘at backs’는 ‘~의 뒤쪽들’로 복수형이 되어 의미가 맞지 않고, ‘in sides’는 ‘~의 옆면들’로 복수형이 되어 ‘in the side’로 써야 하며, ‘to fronts’는 ‘~의 앞쪽들’로 복수형이 되어 ‘to the front’로 써야 한다. → 처방: ‘at the back’, ‘in the side’, ‘to the front’가 각각 ‘~의 뒤쪽’, ‘~의 옆면’, ‘~의 앞쪽’이라는 뜻임을 기억하고, 복수형이 아니라 단수형을 써야 한다는 점을 떠올리자.\n④ 진단: ‘at backs’는 ‘~의 뒤쪽들’로 복수형이 되어 의미가 맞지 않고, ‘in the side’는 맞지만 ‘to fronts’는 ‘~의 앞쪽들’로 복수형이 되어 ‘to the front’로 써야 한다. → 처방: ‘at the back’, ‘in the side’, ‘to the front’가 각각 ‘~의 뒤쪽’, ‘~의 옆면’, ‘~의 앞쪽’이라는 뜻임을 기억하고, 복수형이 아니라 단수형을 써야 한다는 점을 떠올리자.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T21:09:33.387Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 2번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "VOLUME OF IRREGULAR SOLIDS: <u>The best way to measure the volume of an irregular solid is to place it in water and find the volume of water it displaces. The difference between the new and old volume measurements is equal to the volume of the object. (Next time you get into a bath</u>, look at the water you displace-that’s your volume!) Mass ELECTRONIC BALANCE: Just put the object on the pan and read the mass. DOUBLE PAN BALANCE: This compares the weight of objects in pans on each side of a balance. To find mass, place something of known mass in one pan, and in the other pan, place the object of unknown mass. When the pans are level, the masses are equal. For other geometric shapes, look in your math notebook. VOLUME DISPLACED SOLID If you are measuring something that needs to be in a container, weigh the empty container on its own first, and then subtract the weight of the container afterward.",
-    "choices": [
-     "One’s true worth or impact can be gauged by the noticeable yet often overlooked changes they bring about in their surroundings.",
-     "The volume of water displaced in a bath directly measures a person's physical size or weight.",
-     "When someone creates significant changes in their environment, it always results in a measurable increase in the volume of water displaced.",
-     "One's true value is always as obvious as the water displaced when they enter a bathtub.",
-     "When you take a bath, the water you push aside results from your body's density and weight."
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'One’s true worth or impact can be gauged by the noticeable yet often overlooked changes they bring about in their surroundings.'을 함의한다.\n[오답 진단·처방]\n② 진단: 지문에서 'look at the water you displace'는 '너의 부피'를 비유한 것이고, 'that’s your volume!'은 '너의 몸 크기'를 뜻하지 않음. 학생은 '물리적 부피'와 '진정한 가치'를 혼동한 듯. → 처방: 지문에서 'volume'은 '부피'를 뜻한다는 사실에 집중하고, '진정한 가치'는 '변화'로 연결된다는 점을 기억하기.\n③ 진단: 지문은 '물 displaced'가 '객체의 부피'를 측정하는 방법일 뿐, '환경 변화'나 '측정 가능성'을 말하는 것이 아님. 학생은 '측정 방법'과 '결과'를 과장해 해석함. → 처방: 지문의 핵심은 '부피 측정 방법'이라는 점을 분명히 하고, '항상 측정 가능'하다는 보장이 없다는 사실도 확인하기.\n④ 진단: 지문은 '물 displaced'가 '객체의 부피'를 나타내는 비유일 뿐, '진정한 가치'가 '명확하다'는 뜻이 아님. 학생은 비유를 문자 그대로 받아들여 오해함. → 처방: 비유와 실제 의미를 구분하고, '진정한 가치'는 '변화'로 해석한다는 점을 기억하기.\n⑤ 진단: 지문은 '물 displaced'가 '객체의 부피'를 측정하는 방법일 뿐, '밀도와 무게'를 직접 연결하는 설명이 아님. 학생은 '밀도'와 '무게'를 과도하게 연관지음. → 처방: 지문에서 'volume displaced'는 '부피'를 측정하는 방법이라는 점에 집중하고, '밀도'나 '무게'는 별개의 개념이라는 사실 확인하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]

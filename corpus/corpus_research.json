@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-20T11:17:35.710Z",
+ "updated": "2026-07-20T13:23:13.220Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-20T13:22:45.687Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'for example' 뒤의 콤마는 인용 구문의 시작을 알리는 신호로, 오류 없이 사용될 때 콤마가 필수적이다. 또한 'reason'은 복수형 'reasons'로 쓰이는 경우가 많으며, 'live'는 동사가 아닌 명사로 쓰일 때 'to live' 형태로 연결된다.",
+   "rule": "'for example' 뒤의 콤마는 인용 구문 시작 시 생략하지 말고 반드시 표기하며, 'reason'은 복수형 'reasons'로, 'live'는 'to live' 형태로 동사적 의미를 연결하는지 확인하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-20T11:17:07.917Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'old english', 'middle english' 등 역사적 언어 변천 패턴이 'present/past tense'의 혼용 오류로 이어질 가능성이 높음을 확인. 또한 'between two' 구조가 'between A and B'로 표준화되지 않은 경우 오류 발생.",
    "rule": "원서 코퍼스 기반 'tense consistency'와 'prepositional phrase 구조'를 엄격히 적용하여, 'present/past tense 혼용'과 'between A B' → 'between A and B'로 변형하는 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-15T17:42:55.692Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "복수 명사·시제·관사 오류가 빈번하며, 특히 'should be + 과거분사' 구조에서 수동태 오류가 많다. 또한 'during the busy hour'처럼 시간 표현에서 단수/복수 혼동이 잦다.",
-   "rule": "'should be + 과거분사' 구조에서는 수동태가 올바르게 적용되었는지 확인하고, 복수 명사·관사·시제 일치를 반드시 점검하라. 특히 'during + the [형용사] [명사]'에서 명사의 복수형을 필수로 요구하라.",
    "sample": [
     "old english",
     "university press",
