@@ -1,6 +1,25 @@
 {
- "updated": "2026-07-20T16:04:28.050Z",
+ "updated": "2026-07-20T18:23:19.888Z",
  "samples": [
+  {
+   "ts": "2026-07-20T18:22:45.687Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Yes, he will try to get in touch with one of our senior staff.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 네, 그는 우리 선임 직원 중 한 명과 연락하려고 노력할 것입니다. (구문 포인트: to부정사의 목적어 역할(try to get in touch) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-20T16:03:11.850Z",
    "type": "요약문AB",
@@ -315,39 +334,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'to remain every hope of finding survivors'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 지문에서 'remain every hope of finding survivors'라는 구절로 보아 희망을 '포기'하는 내용이 아니라 '지속'하는 내용임을 오해한 것으로 보임. 'remain'이 '계속되다'라는 뜻임을 간과했음. → 처방: 영어 동사 'remain'의 뜻을 정확히 숙지하고, 지문에서 핵심 동사를 먼저 파악한 뒤 선지를 비교할 것.\n③ 진단: 'remain'이 '잠시만 유지'라는 뜻으로 오해한 것으로 보임. 지문에서 'remain'은 '계속하여 존재한다'는 의미를 담고 있어 '잠시'라는 제한적 의미가 없음. → 처방: 지문에서 사용된 동사의 기본 의미를 정확히 파악하고, 문맥상 시제나 양태를 고려할 것.\n④ 진단: '절대 놓지 않는다'라는 과장된 해석을 한 것으로 보임. 지문은 희망이 '계속된다'는 사실만 언급하고, 강도나 확신을 강조하지 않음. → 처방: 선지의 표현이 지문에서 사용된 어휘나 문맥과 얼마나 일치하는지 꼼꼼히 비교할 것.\n⑤ 진단: '전제로 삼는다'라는 추상적 해석을 한 것으로 보임. 지문은 희망이 '계속된다'는 사실적 서술에 그치며, 어떤 전제를 세운다는 내용은 없음. → 처방: 지문의 핵심 내용을 요약한 뒤, 선지가 그 요약과 얼마나 부합하는지 확인할 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to remain every hope of finding survivors]"
-   }
-  },
-  {
-   "ts": "2026-07-19T23:14:34.894Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "PERSISTENT HOPE AMID SURVIVAL SEARCHES",
-     "Hope Is the Key to Finding Survivors",
-     "Only Survivors Can Truly Understand Hope",
-     "Hope Alone Ensures Rescue in Survival Situations",
-     "Hope Fades When Survival Searches Drag on"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Hope remains despite search for survivors'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도 왜곡\n[오답 진단·처방]\n② 진단: ‘Hope Is the Key to Finding Survivors’는 희망의 중요성을 강조하는 표현인데, 지문은 희망의 ‘존재(there)’가 문법 구조상 어떻게 자리하는지를 설명합니다. 학생은 희망의 ‘의미’에만 초점을 맞췄고, ‘문법적 역할’은 놓쳤습니다. → 처방: 지문에서 ‘there’의 기능(문법적 자리)과 ‘every hope’의 역할(의미적·문법적)을 따로 구분해서 읽기. 문법 구조가 제목에 반영된 선지를 찾기.\n③ 진단: ‘Only Survivors Can Truly Understand Hope’는 희망의 주체를 ‘생존자’로 한정했는데, 지문은 희망의 ‘존재(there)’가 문법적으로 어떻게 처리되는지를 다룹니다. 학생은 희망의 ‘소유자’나 ‘주체’를 오해했습니다. → 처방: 지문에서 ‘there’의 문법적 기능(존재 양화사 역할)과 ‘every hope’의 의미(희망의 총체적 존재)를 분리해서 분석하기. 문법적 설명이 제목에 담긴 선지를 선택하기.\n④ 진단: ‘Hope Alone Ensures Rescue in Survival Situations’는 희망이 ‘구조’를 보장한다고 해석했는데, 지문은 희망의 ‘존재(there)’가 문법 구조상 어떻게 자리하는지를 설명합니다. 학생은 희망의 ‘결과’나 ‘영향’을 과도하게 일반화했습니다. → 처방: 지문에서 ‘there’의 문법적 역할(문법적 자리)과 ‘every hope’의 기능(의미적·문법적)을 구분해서 읽기. 문법적 설명이 제목에 반영된 선지를 찾기.\n⑤ 진단: ‘Hope Fades When Survival Searches Drag on’는 희망이 ‘사라진다’는 의미를 담았는데, 지문은 희망의 ‘존재(there)’가 문법 구조상 어떻게 자리하는지를 설명합니다. 학생은 희망의 ‘변화’나 ‘결과’를 오해했습니다. → 처방: 지문에서 ‘there’의 문법적 기능(존재 양화사 역할)과 ‘every hope’의 의미(희망의 총체적 존재)를 분리해서 분석하기. 문법적 설명이 제목에 담긴 선지를 선택하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Hope remains despite search for survivors]"
    }
   }
  ]

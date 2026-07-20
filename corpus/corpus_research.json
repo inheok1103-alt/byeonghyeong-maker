@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-20T16:04:28.046Z",
+ "updated": "2026-07-20T18:23:19.885Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-20T18:22:48.102Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 최빈 연어는 'present/past tense + noun phrase' 패턴이 두드러지며, 한국어 학습자의 문법 오류는 '과도한 직역·불필요한 보어 사용·관계사 오용'으로 집약된다. 특히 'how about if' → 'what if'와 같이 관용적 전환 오류가 빈번하다.",
+   "rule": "CEFR B1 수준 내신 변형문제에서는 'present/past tense + noun phrase' 구조의 문장을 제시하되, 한국어 학습자의 오류 패턴('직역·보어 과용·관계사 오류')을 유도할 수 있도록 'how about if', 'it's serious but almost people'와 같은 오류 유발 표현을 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-20T16:04:03.351Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거형·현재형 동사 사용 시 주어와 시제가 일치하지 않는 오류가 빈번하며, 소유·신뢰 관련 어휘( possession, trust )의 철자 오류도 다수 관찰된다.",
    "rule": "주어와 동사의 수·시제 일치 오류(예: are we living → are we really living)를 검증하는 문항을 제작할 때는, 주어(we/they/it) + 현재/과거 동사(are/living/understand) 조합을 3~4개 문장으로 구성하여 오류를 찾게 하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-15T21:17:45.171Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'focus on', 'consider', 'such a' 등 전치사·관사 오류가 빈번하며, 문장 내 논리 연결(예: therefore → and)도 오류로 자주 발생한다. 특히 전치사+명사 결합(over the weekend, on three points)이 정확하지 않은 경우가 많다.",
-   "rule": "'focus on', 'consider', 'such a' 등 전치사·관사 결합은 항상 올바른 형태로 출제(예: 'focus on', 'consider ~ing', 'such a situation')하며, 문장 내 논리 연결은 'and', 'but' 등으로 대체 가능한지 확인하는 오류 유형을 포함시킨다.",
    "sample": [
     "old english",
     "university press",
