@@ -1,6 +1,40 @@
 {
- "updated": "2026-07-20T07:34:57.738Z",
+ "updated": "2026-07-20T11:17:35.713Z",
  "samples": [
+  {
+   "ts": "2026-07-20T11:15:27.692Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "analysis of linguistic structures",
+     "cause of linguistic complexity",
+     "identification of phrase heads",
+     "study of all language components",
+     "always necessary linguistic analysis"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The analysis of APs involves identifying the heads and functions of phrases in a sentence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘원인’을 뜻하는 ‘cause’를 ‘분석’을 뜻하는 ‘analysis’와 혼동했거나, 지문에서 ‘복잡성’의 원인을 찾지 못했다. 지문은 언어 구조 분석에 집중하며 복잡성의 원인은 다루지 않음. → 처방: ‘원인’을 묻는 문제는 ‘왜?’로 시작한다는 점을 기억하고, 지문에서 그런 질문이 있는지 확인하기.\n③ 진단: ‘구(phrase) 머리(head)’를 ‘구분(phrase)’으로 오해했거나, 지문에서 ‘머리’를 찾는 과정이 ‘식별’로 보임. 지문은 ‘머리’를 찾는 것이지 ‘식별’이 주제가 아님. → 처방: ‘머리(head)’가 문법 용어라는 점을 떠올리고, 지문에서 ‘머리’를 찾는 과정이 ‘주제’가 아님을 확인하기.\n④ 진단: ‘모든 언어 구성 요소’를 뜻하는 ‘all language components’를 ‘언어 구조 분석’과 혼동했거나, 지문에서 ‘모든 구성 요소’를 다루지 않음. 지문은 ‘구조 분석’에만 초점. → 처방: ‘모든 구성 요소’를 묻는 문제는 ‘언어의 모든 부분’을 다룬다는 점을 떠올리고, 지문에서 그런 내용이 있는지 확인하기.\n⑤ 진단: ‘항상 필요한 분석’을 뜻하는 ‘always necessary’를 ‘언어 구조 분석’의 중요성으로 오해했거나, 지문에서 ‘항상’이나 ‘필요성’을 언급하지 않음. → 처방: ‘항상’이라는 말이 들어간 선지는 ‘절대적’Claims 를 의심하고, 지문에서 그런 Claims 가 있는지 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The analysis of APs involves identifying the heads and functions of phrases in a sentence.]"
+   }
+  },
   {
    "ts": "2026-07-20T07:33:20.437Z",
    "type": "제목",
@@ -327,25 +361,6 @@
     ],
     "answer": 1,
     "explanation": "밑줄 친 부분은 'One’s true worth or impact can be gauged by the noticeable yet often overlooked changes they bring about in their surroundings.'을 함의한다.\n[오답 진단·처방]\n② 진단: 지문에서 'look at the water you displace'는 '너의 부피'를 비유한 것이고, 'that’s your volume!'은 '너의 몸 크기'를 뜻하지 않음. 학생은 '물리적 부피'와 '진정한 가치'를 혼동한 듯. → 처방: 지문에서 'volume'은 '부피'를 뜻한다는 사실에 집중하고, '진정한 가치'는 '변화'로 연결된다는 점을 기억하기.\n③ 진단: 지문은 '물 displaced'가 '객체의 부피'를 측정하는 방법일 뿐, '환경 변화'나 '측정 가능성'을 말하는 것이 아님. 학생은 '측정 방법'과 '결과'를 과장해 해석함. → 처방: 지문의 핵심은 '부피 측정 방법'이라는 점을 분명히 하고, '항상 측정 가능'하다는 보장이 없다는 사실도 확인하기.\n④ 진단: 지문은 '물 displaced'가 '객체의 부피'를 나타내는 비유일 뿐, '진정한 가치'가 '명확하다'는 뜻이 아님. 학생은 비유를 문자 그대로 받아들여 오해함. → 처방: 비유와 실제 의미를 구분하고, '진정한 가치'는 '변화'로 해석한다는 점을 기억하기.\n⑤ 진단: 지문은 '물 displaced'가 '객체의 부피'를 측정하는 방법일 뿐, '밀도와 무게'를 직접 연결하는 설명이 아님. 학생은 '밀도'와 '무게'를 과도하게 연관지음. → 처방: 지문에서 'volume displaced'는 '부피'를 측정하는 방법이라는 점에 집중하고, '밀도'나 '무게'는 별개의 개념이라는 사실 확인하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T21:11:05.675Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "VOLUME OF IRREGULAR S_____: The best way to measure the volume of an irregular solid is to place it in water and find the volume of water it displaces. The difference between the new and old volume measurements is equal to the volume of the object. (Next time you get into a bath, look at the water you displace-that’s your volume!) Mass ELECTRONIC BALANCE: Just put the object on the pan and read the mass. DOUBLE PAN BALANCE: This compares the weight of objects in pans on each side of a balance. To find mass, place something of known mass in one pan, and in the other pan, place the object of unknown mass. When the pans are level, the masses are equal. For other geometric shapes, look in your math notebook. VOLUME DISPLACED SOLID If you are measuring something that needs to be in a container, weigh the empty container on its own first, and then subtract the weight of the container afterward.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] SOLIDS — 문단의 논지상 이 자리에는 'SOLIDS'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
