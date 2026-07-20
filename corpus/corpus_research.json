@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-20T13:23:13.220Z",
+ "updated": "2026-07-20T16:04:28.046Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-20T16:04:03.351Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어 문장의 어순 규칙이 엄격하다는 점을 활용하여, 부사(very soon, very delivered 등)의 위치 오류를 설계할 수 있다. 또한, 전치사(about, in)와의 연어 오류(aboue advance → about advanced)와 같은 '형용사-명사' 결합 오류도 빈번히 활용 가능하다.",
+   "rule": "문장 내 부사(very, moreover 등)는 동사(learn, run out)와의 자연스러운 연어 순서를 유지해야 하며, 전치사(about, in, with)와 결합하는 형용사/명사는 연어 규칙(advanced course material, familiar with students)에 맞게 배치해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-20T13:22:45.687Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'focus on', 'consider', 'such a' 등 전치사·관사 오류가 빈번하며, 문장 내 논리 연결(예: therefore → and)도 오류로 자주 발생한다. 특히 전치사+명사 결합(over the weekend, on three points)이 정확하지 않은 경우가 많다.",
    "rule": "'focus on', 'consider', 'such a' 등 전치사·관사 결합은 항상 올바른 형태로 출제(예: 'focus on', 'consider ~ing', 'such a situation')하며, 문장 내 논리 연결은 'and', 'but' 등으로 대체 가능한지 확인하는 오류 유형을 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-15T19:38:37.151Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'old english', 'middle english' 등 역사적 언어 변천 패턴이 'present/past tense'의 혼용 오류로 이어질 가능성이 높음을 확인. 또한 'between two' 구조가 'between A and B'로 표준화되지 않은 경우 오류 발생.",
-   "rule": "원서 코퍼스 기반 'tense consistency'와 'prepositional phrase 구조'를 엄격히 적용하여, 'present/past tense 혼용'과 'between A B' → 'between A and B'로 변형하는 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
