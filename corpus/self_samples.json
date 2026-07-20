@@ -1,6 +1,39 @@
 {
- "updated": "2026-07-20T04:09:51.592Z",
+ "updated": "2026-07-20T07:34:57.738Z",
  "samples": [
+  {
+   "ts": "2026-07-20T07:33:20.437Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Advanced English Rewriting and Collocations",
+     "English Language Skills for All Levels",
+     "Rewriting Techniques for Beginners",
+     "Mastering English Through Various Methods",
+     "Collocations in Everyday English Conversations"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Advanced English Rewriting and Collocations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 학생은 지문의 내용이 고급 영어 리라이팅과 콜로케이션에 중점을 두고 있다는 것을 오독했으며, 'All Levels'라는 단어가 모든 수준의 영어 학습자를 위한 것으로 혼동했을 것으로 보인다. ('1. Catching a bug while he was in hospital meant the old man died sooner than he would otherwise have done. (hastened)'에서 고급 리라이팅이 요구됨) → 처방: 다음부터는 지문의 주요 키워드와 문맥을 더 주의깊게 읽어야 한다.\n③ 진단: 학생은 지문의 내용이 초급 리라이팅 기술에만 집중된 것으로 오독했으며, 실제 지문은 다양한 영어 리라이팅과 콜로케이션에 대한 내용을 포함하고 있다. ('Rewrite each sentence using the word in brackets.'에서 다양한 리라이팅 기술이 요구됨) → 처방: 다음부터는 지문의 전체적인 내용과 범위를 더 잘 이해해야 한다.\n④ 진단: 학생은 지문의 내용이 영어 학습에 대한 일반적인 방법에만 집중된 것으로 오독했으며, 실제 지문은 리라이팅과 콜로케이션에 대한 구체적인 기술을 다루고 있다. ('Use a dictionary such as the Cambridge Online Dictionary to find two ways of completing each of these collocations'에서 구체적인 리라이팅 기술이 요구됨) → 처방: 다음부터는 지문의 세부 내용을 더 주의깊게 읽어야 한다.\n⑤ 진단: 학생은 지문의 내용이 일상 회화에서 사용되는 콜로케이션에만 집중된 것으로 오독했으며, 실제 지문은 다양한 리라이팅 기술과 콜로케이션을 포함하고 있다. ('1. a fit of 2. to shatter'에서 다양한 콜로케이션이 요구됨) → 처방: 다음부터는 지문의 범위와 내용을 더 잘 이해해야 한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Advanced English Rewriting and Collocations.]"
+   }
+  },
   {
    "ts": "2026-07-20T04:09:19.571Z",
    "type": "첫글자어휘",
@@ -313,25 +346,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] SOLIDS — 문단의 논지상 이 자리에는 'SOLIDS'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T19:35:58.055Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "Members of the jury No. Name Position 1 Prof. Dr. Zeinab Al Naggar Professor of Education and TEFL Methodology and Director of the Center for Developing English Language Teaching CDELT, Ain Shams Univeristy 2 Prof. Dr. David Eskey Professor of Education And Director of the Center for American Language, University of Southern California. 3 Prof. Dr. Eleanor Black Eskey Professor of Education and Director of Los Angeles- MA TESOL Program, California State University. 4 Prof. Dr. Hayat R. Ali Professor of Education and TEFL Methodology , Minia Faculty of Education. 5 Prof. Dr. Kawther Qutb Professor of Education and TEFL Methodology and Vice Dean of Minia Faculty of Education. 6 Dr. Ahmad Sokarno Associate Professor of Linguistics and Head of the English Department, Qena Faculty of Arts, South Valley University. 7 Dr. Mary Lou MacCloskey Adjunct professor , Dept. of Applied Linguistics and ESL , Georgia State University.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]

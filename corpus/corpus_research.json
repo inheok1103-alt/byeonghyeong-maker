@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-20T04:09:51.589Z",
+ "updated": "2026-07-20T07:34:57.734Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-20T07:34:24.799Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'old'와 'older'의 구분이 '연령 차이 강조'에서 비롯된다는 점을 확인했다. 또한 'most time' → 'most of the time'와 같은 시간 표현의 정확한 형태가 문체적 안정성을 높인다.",
+   "rule": "원서 코퍼스 패턴을 반영하여 '연령 비교 구문'에서는 'old' 대신 'older'를 필수적으로 사용하고, 'most time'은 'most of the time'으로 교정하라. 또한 'he/she' 대명사 사용 시 문맥상 자연스러운 대상을 명시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-20T04:09:21.599Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'give up'과 같은 구동사(phrasal verb)가 직접목적어와 함께 쓰일 때, 목적어는 'up' 사이에 끼워 넣거나 'it/them'으로 대체해야 한다. 또한 'reply'는 자동사로 직접목적어를 취하지 못하며, 'repeat'로 대체하거나 'reply to'로 구조를 수정해야 한다.",
    "rule": "구동사(phrasal verb)가 직접목적어와 함께 사용될 경우, 목적어는 동사와 부사 사이에 위치시키거나(예: 'give it up') 'it/them'으로 대체하여 문법적으로 옳은 형태로 변형하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-15T14:15:30.626Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "명사 오류(verity→variety, sosiety→society, arguement→argument)가 빈번하며, 문법적 오류가 아닌 어휘 선택 오류가 다수 관찰된다. 또한 시제 혼동(present perfect vs. simple past)도 두드러진다.",
-   "rule": "CEFR B1-B2 수준의 내신 문항에서는 '명사/동사/형용사의 철자 오류'와 '시제 혼동(present perfect vs. simple past)'을 의도적으로 삽입하여 오답 선지를 구성하라. 특히 '-ity'로 끝나는 추상명사(verity→variety)와 '-ment'로 끝나는 명사(arugment→argument), '-ce'로 끝나는 명사(sosiety→society)를 집중적으로 변형하라.",
    "sample": [
     "old english",
     "university press",
