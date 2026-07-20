@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-20T18:23:19.885Z",
+ "updated": "2026-07-20T20:44:06.429Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-20T20:43:42.057Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'inculcate'는 '가르치다·주입하다'의 의미로 '가치를 주입하다'의 연어 패턴이 강하며, 'include'는 단순히 '포함하다'의 의미로 대체할 수 없다. 또한 'give rise to'는 명사구와 함께 사용되는 고정적 연어 패턴으로, 관사 생략이 오류 유형이다.",
+   "rule": "'inculcate'는 '가치·교육·습관' 등과 고정적으로 연어(collocation)를 이루므로, 'include those values' 대신 'inculcate those values'가 옳은지 확인하는 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-20T18:22:48.102Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'However'와 'but'가 접속사로서 대조·양보 관계를 명확히 하기 위해 복잡한 문장 구조(예: with-phrase, if-clause)를 동반하는 패턴이 빈번하다.",
    "rule": "원서 스타일 변형 문제를 출제할 때, 접속사 'However' 또는 'but' 다음에는 문장 구조를 단순화하지 말고, 부가적인 구(예: with-phrase, if-clause, -ing 구)나 보조동사(예: be, have)를 포함하여 복잡한 문장 구조를 요구하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-15T22:18:27.728Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거형·현재형 동사 사용 시 주어와 시제가 일치하지 않는 오류가 빈번하며, 소유·신뢰 관련 어휘( possession, trust )의 철자 오류도 다수 관찰된다.",
-   "rule": "주어와 동사의 수·시제 일치 오류(예: are we living → are we really living)를 검증하는 문항을 제작할 때는, 주어(we/they/it) + 현재/과거 동사(are/living/understand) 조합을 3~4개 문장으로 구성하여 오류를 찾게 하라.",
    "sample": [
     "old english",
     "university press",

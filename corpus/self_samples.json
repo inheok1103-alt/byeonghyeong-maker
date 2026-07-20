@@ -1,6 +1,74 @@
 {
- "updated": "2026-07-20T18:23:19.888Z",
+ "updated": "2026-07-20T20:44:06.433Z",
  "samples": [
+  {
+   "ts": "2026-07-20T20:42:52.605Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "From this perspective, then, the analysis of the (A) [active / passive] involves replacing the (B) [non-agentive / agentive] light verb with a non-agentive passive light verb, most of the other aspects of the passive construction follow straightforwardly from this. A crucial point to make at this point is that this analysis of the passive would simply be unavailable if we supposed that the structure of the (C) [passive / active] were to be (76) and not (74). Inasmuch as this analysis helps us to understand the passivisation process any better, then, it can be used as evidence in favour of the assumption of (74). 2.4.2 Extended projections Yet if this is so, we still face the problem that the subject of an active transitive verb is interpreted as the subject of that verb and not of some independent abstract light verb. To understand this, it is essential to understand the relationship between light verbs and thematic verbs in general. Recall that the semantic contribution of a light verb to a construction is somewhat reduced from its full thematic usage: (82) a I gave Charlotte chocolates",
+    "choices": [
+     "(A) passive - (B) agentive - (C) active",
+     "(A) active - (B) non-agentive - (C) active",
+     "(A) passive - (B) non-agentive - (C) active",
+     "(A) active - (B) agentive - (C) active",
+     "(A) passive - (B) non-agentive - (C) passive"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) passive - (B) agentive - (C) active. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘(A)’에서 ‘active’를 선택했는데, 지문 첫머리에서 ‘passive’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’에서 ‘agentive’를 선택했는데, ‘non-agentive light verb’를 ‘agentive’로 오인했다. ‘(C)’는 맞게 선택했지만 앞부분 오독으로 전체 오답. → 처방: 지문 첫 문장을 다시 읽고 ‘passive’를 분석 대상으로 삼는다는 점을 확실히 확인한 후, ‘non-agentive light verb’를 ‘주체(agent)’가 아닌 ‘비주체’를 가리키는 말로 이해하기.\n③ 진단: ‘(A)’에서 ‘passive’를 선택했으나 지문에서 ‘active’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’는 ‘non-agentive’를 맞게 선택했지만 앞부분 오독으로 전체 오답. ‘(C)’는 맞게 선택했지만 앞부분 오류로 틀렸다. → 처방: 지문 첫 문장의 ‘active’를 분석 대상으로 삼는다는 점을 확실히 확인하고, ‘passive’를 분석 대상으로 삼는다는 오해를 버리기.\n④ 진단: ‘(A)’에서 ‘active’를 선택했으나 지문에서 ‘passive’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’에서 ‘agentive’를 선택했는데, ‘non-agentive’를 ‘주체(agent)’가 있는 것으로 오인했다. ‘(C)’는 맞게 선택했지만 앞부분 오독으로 전체 오답. → 처방: ‘non-agentive light verb’의 의미를 ‘주체가 없는 동사’를 가리키는 말로 정확히 이해하고, 지문에서 ‘passive’를 분석 대상으로 삼는다는 점을 다시 확인하기.\n⑤ 진단: ‘(A)’와 ‘(B)’는 맞게 선택했으나 ‘(C)’에서 ‘passive’를 선택했는데, 지문에서 ‘active’의 구조가 (74)여야 한다는 점을 보지 못했다. ‘passive’의 구조가 (74)라고 오해했다. → 처방: ‘(C)’에서 ‘active’의 구조가 (74)여야 한다는 지문 내용을 정확히 짚고, ‘passive’의 구조가 아님을 확인하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-20T20:43:29.537Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 5번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "수동태 구조를 분석하는 방법을 익히려고",
+     "수동태의 행위자를 제외하는 방법만 배우려고",
+     "모든 언어의 수동태 구문을 분석하려고",
+     "수동태 분석을 위해 능동태 구조를 가정하려고",
+     "수동태 구문 분석을 이해하려고"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'to understand the passive voice construction.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 수동태 분석 방법 자체보다는 '수동태 분석이 왜 가능한지'를 설명하는 데 초점을 맞추고 있으므로, '분석하는 방법'만 익히려 했다고 오독한 것으로 보임. (예: 'analysis of the passive involves replacing the agentive light verb' 부분만 보고 '방법'으로만 이해함) → 처방: 지문에서 수동태가 '왜' 가능한지, 어떤 가정이 필요했는지를 먼저 확인한 뒤, 그 가정이 어떤 분석에 쓰이는지 전체적으로 읽기.\n② 진단: 수동태에서 행위자를 제외하는 방법만 배우려고 했다면, 지문의 핵심 논점(수동태 분석이 가능한 구조적 가정, 즉 (74) vs (76))을 놓쳤을 가능성이 큼. (예: 'replacing the agentive light verb with a non-agentive passive light verb' 부분만 행위자 제외로 오해함) → 처방: 수동태의 '행위자 제외'가 아니라, 수동태가 '어떻게 구조적으로 분석되는지'를 먼저 파악한 뒤, 그 과정에서 행위자가 어떻게 다루어지는지 확인하기.\n③ 진단: 모든 언어의 수동태 구문을 분석하려고 했다면, 지문이 특정 구조(예: (74) vs (76))에 대한 가정을 다루고 있음을 간과했을 것임. (예: 'this analysis of the passive would simply be unavailable if we supposed that the structure of the active were to be (76)' 부분에서 '모든 언어'가 아니라 특정 구조에 대한 논의임을 놓침) → 처방: 지문의 주장이 특정 언어 현상(수동태의 구조적 가정)에 대한 것인지, 아니면 보편적 현상에 대한 것인지 먼저 구분한 뒤 읽기.\n④ 진단: 수동태 분석을 위해 능동태 구조를 가정한다고 오독했다면, 지문의 핵심 논점이 '수동태 분석이 가능한 구조적 가정을 위해 능동태 구조가 (74)여야 한다'는 점임을 놓쳤을 것임. (예: 'it can be used as evidence in favour of the assumption of (74)' 부분에서 능동태 구조의 필요성을 '가정'으로만 이해함) → 처방: 수동태 분석을 위해 '왜' 능동태 구조가 필요한지, 그 가정이 어떤 논리로 제시되는지 전체 흐름을 따라가며 읽기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to understand the passive voice construction.]"
+   }
+  },
   {
    "ts": "2026-07-20T18:22:45.687Z",
    "type": "우리말해석",
@@ -281,59 +349,6 @@
     ],
     "answer": 4,
     "explanation": "빈칸에는 'to show that predicate nominals'가 들어가 글의 논지를 완성한다 (본문 'in relation to the syntax of predicate nominals'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'PRO 주제'가 아니라 '구문 구조'를 강조하는 내용이 없음. '명사적 표현'과 '서술어 명사'의 관계를 설명하는 데 초점을 둔 글이므로 '구문 구조'를 언급한 이 선택지는 어울리지 않음. → 처방: 빈칸 앞뒤 문장을 읽고 '무엇을 설명하는지'를 먼저 찾기. 'PRO 주제'가 아니라 '서술어 명사의 수 일치'를 보여주는 예시라는 점을 확인할 것.\n② 진단: 지문은 '음운적 특징'을 다루는 내용이 전혀 없음. '서술어 명사'의 수 일치 같은 문법 규칙을 설명하는 글인데, 소리나 발음에 대한 얘기는 전혀 없음. → 처방: 문법 규칙이나 예시가 나오면 '소리'나 '발음' 같은 단어에 집중하지 말고, '문법적 특징'이나 '구조'에 주목할 것.\n③ 진단: 지문은 '역사적 발전'을 설명하는 글이 아님. '서술어 명사의 수 일치' 같은 현재 문법 규칙을 예시로 든 글이므로, 역사적 변화에 대한 얘기는 전혀 없음. → 처방: 문법 규칙이나 예시를 설명하는 글은 '과거'나 '변화' 같은 단어가 없으면 '역사적 발전'을 고르지 말 것. '현재의 규칙'에 초점을 맞추기.\n⑤ 진단: 지문은 '명사의 존재를 부정'하는 내용이 아니라, '명사 표현'의 특징을 설명하는 글임. '존재를 부정'하는 말은 전혀 언급되지 않음. → 처방: 빈칸 앞뒤 문장에 '존재'나 '부정' 같은 단어가 없으면 그 선택지는 배제하기. 문법 규칙을 설명하는 글이므로 '존재'와는 무관하다는 점을 기억할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T00:15:19.231Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] We can formulate a further argument in support of positing a PRO subject in apparently subjectless infinitive clauses in relation to the syntax of predicate nominals: these are nominal (i.e. noun-containing) expressions used as the complement of a copular (i.e. linking) verb such as be, become, remain (etc.) in expressions such as John was/became/remained my best friend, where the predicate nominal is my best friend, and the property of being/becoming/remaining my best friend is predicated of John.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Only in relation to the syntax of predicate nominals can we formulate a further argument in support of positing a PRO subject in apparently subjectless infinitive clauses (포인트: Only + 주어-조동사 도치)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-19T23:13:53.747Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "죽은오답 ②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "생존자 발견 희망을 지속하려고",
-     "생존자 발견 희망을 포기하려고",
-     "생존자 발견 희망을 잠시만 유지하려고",
-     "생존자 발견 희망을 절대 놓지 않으려고",
-     "생존자 발견 희망을 전제로 삼으려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'to remain every hope of finding survivors'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 지문에서 'remain every hope of finding survivors'라는 구절로 보아 희망을 '포기'하는 내용이 아니라 '지속'하는 내용임을 오해한 것으로 보임. 'remain'이 '계속되다'라는 뜻임을 간과했음. → 처방: 영어 동사 'remain'의 뜻을 정확히 숙지하고, 지문에서 핵심 동사를 먼저 파악한 뒤 선지를 비교할 것.\n③ 진단: 'remain'이 '잠시만 유지'라는 뜻으로 오해한 것으로 보임. 지문에서 'remain'은 '계속하여 존재한다'는 의미를 담고 있어 '잠시'라는 제한적 의미가 없음. → 처방: 지문에서 사용된 동사의 기본 의미를 정확히 파악하고, 문맥상 시제나 양태를 고려할 것.\n④ 진단: '절대 놓지 않는다'라는 과장된 해석을 한 것으로 보임. 지문은 희망이 '계속된다'는 사실만 언급하고, 강도나 확신을 강조하지 않음. → 처방: 선지의 표현이 지문에서 사용된 어휘나 문맥과 얼마나 일치하는지 꼼꼼히 비교할 것.\n⑤ 진단: '전제로 삼는다'라는 추상적 해석을 한 것으로 보임. 지문은 희망이 '계속된다'는 사실적 서술에 그치며, 어떤 전제를 세운다는 내용은 없음. → 처방: 지문의 핵심 내용을 요약한 뒤, 선지가 그 요약과 얼마나 부합하는지 확인할 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to remain every hope of finding survivors]"
    }
   }
  ]
