@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-19T23:15:09.454Z",
+ "updated": "2026-07-20T00:15:51.878Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-20T00:15:21.192Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거분사(compared, interested 등)가 전치사(to/with)와 결합해 비교 구문에서 능동적 의미를 내포하는 오류가 빈번하다. 또한, 'take upon oneself' 구문에서 'it'이 필수적임을 확인할 수 있다.",
+   "rule": "비교 구문에서 '~ing' 형태의 동사(과거분사 포함)가 전치사와 결합할 경우, 반드시 수동적 의미를 지닌 과거분사 형태('compared to', 'interested in')로 교정하는 오답을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-19T23:14:44.738Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스는 문장 내 정보 구조를 명확히 하기 위해 추가적 설명이나 보충 구문을 삽입하는 패턴이 빈번하다. 특히 인명·장소·시간 등 고유명사나 시제 전환 시 보조동사·관계사·구두점(쉼표, 대시)을 활용해 문장 흐름을 자연스럽게 만든다.",
    "rule": "원서 코퍼스의 정보 구조화 패턴을 반영하여, 문장 내 고유명사·보충 설명·시제 전환 시 반드시 쉼표(,)·관계사(which/that)·보조동사(be/is/are/was/were)를 활용한 보완 구문을 삽입하도록 지시문을 수정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-15T09:24:17.442Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "복수형 명사(people) 대신 단수형(person)으로 교정하는 오류가 빈번하며, 접속사 사용(and, so on)과 조건문 내 시제(present tense) 오류도 다수 관찰된다.",
-   "rule": "단수형 명사(예: person, science)가 요구되는 문맥에서 복수형(people, sciences)을 사용한 경우, 또는 접속사(and, but 등) 앞/뒤에 쉼표를 누락한 경우, 반드시 정정하여 문법적으로 옳은 형태로 변형하라.",
    "sample": [
     "old english",
     "university press",

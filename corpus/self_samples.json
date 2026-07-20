@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-19T23:15:09.458Z",
+ "updated": "2026-07-20T00:15:51.882Z",
  "samples": [
+  {
+   "ts": "2026-07-20T00:14:51.854Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "⚠ 지문 축소 의심(60%) — 정보 손실 여부 확인 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "We can formulate a further argument in support of positing a PRO subject in apparently subjectless infinitive clauses ____ these are nominal expressions used as the complement of a copular verb such as be, become, remain (etc.) in expressions such as John was my best friend, where the predicate nominal is my best friend, and the property of being my best friend is predicated of John. Predicate nominals of the relevant type have to agree in number with the subject of their own clause in copular constructions, as we see from examples such as the following:",
+    "choices": [
+     "to highlight the syntactic structure",
+     "to emphasize the phonetic features",
+     "to illustrate the historical development",
+     "to show that predicate nominals",
+     "to deny the existence of nominals"
+    ],
+    "answer": 4,
+    "explanation": "빈칸에는 'to show that predicate nominals'가 들어가 글의 논지를 완성한다 (본문 'in relation to the syntax of predicate nominals'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'PRO 주제'가 아니라 '구문 구조'를 강조하는 내용이 없음. '명사적 표현'과 '서술어 명사'의 관계를 설명하는 데 초점을 둔 글이므로 '구문 구조'를 언급한 이 선택지는 어울리지 않음. → 처방: 빈칸 앞뒤 문장을 읽고 '무엇을 설명하는지'를 먼저 찾기. 'PRO 주제'가 아니라 '서술어 명사의 수 일치'를 보여주는 예시라는 점을 확인할 것.\n② 진단: 지문은 '음운적 특징'을 다루는 내용이 전혀 없음. '서술어 명사'의 수 일치 같은 문법 규칙을 설명하는 글인데, 소리나 발음에 대한 얘기는 전혀 없음. → 처방: 문법 규칙이나 예시가 나오면 '소리'나 '발음' 같은 단어에 집중하지 말고, '문법적 특징'이나 '구조'에 주목할 것.\n③ 진단: 지문은 '역사적 발전'을 설명하는 글이 아님. '서술어 명사의 수 일치' 같은 현재 문법 규칙을 예시로 든 글이므로, 역사적 변화에 대한 얘기는 전혀 없음. → 처방: 문법 규칙이나 예시를 설명하는 글은 '과거'나 '변화' 같은 단어가 없으면 '역사적 발전'을 고르지 말 것. '현재의 규칙'에 초점을 맞추기.\n⑤ 진단: 지문은 '명사의 존재를 부정'하는 내용이 아니라, '명사 표현'의 특징을 설명하는 글임. '존재를 부정'하는 말은 전혀 언급되지 않음. → 처방: 빈칸 앞뒤 문장에 '존재'나 '부정' 같은 단어가 없으면 그 선택지는 배제하기. 문법 규칙을 설명하는 글이므로 '존재'와는 무관하다는 점을 기억할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-20T00:15:19.231Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] We can formulate a further argument in support of positing a PRO subject in apparently subjectless infinitive clauses in relation to the syntax of predicate nominals: these are nominal (i.e. noun-containing) expressions used as the complement of a copular (i.e. linking) verb such as be, become, remain (etc.) in expressions such as John was/became/remained my best friend, where the predicate nominal is my best friend, and the property of being/becoming/remaining my best friend is predicated of John.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Only in relation to the syntax of predicate nominals can we formulate a further argument in support of positing a PRO subject in apparently subjectless infinitive clauses (포인트: Only + 주어-조동사 도치)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-19T23:13:53.747Z",
    "type": "목적",
@@ -278,59 +332,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T17:28:21.960Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: d)\n[영영풀이] Pertaining to necessity, duty or obligation, or expressions conveying this.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] deontic (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T16:16:18.953Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "비전문가와 효과적으로 소통하기 위해 과학자들은 문장 구조에서 동사-목적어 연결을 방해하지 않도록 노력해야 한다.",
-     "비전문가와 소통이 어려운 이유는 과학자들이 객관적이고 비인격적인 문체로 글을 쓰기 때문이다.",
-     "과학자들은 비인격적인 문체를 사용해 비전문가와 소통할 기회를 잃을 수 있다.",
-     "과학자들이 모든 경우에 비전문가와 소통하지 못하는 것은 객관적이고 비인격적인 문체 때문이다.",
-     "과학자들은 비전문가와 소통하기 위해 문체뿐 아니라 내용을 단순화해야 할 필요가 있다."
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Scientists should avoid interrupting the verb-object connection in their sentences to communicate more effectively with laypeople.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Scientists should avoid interrupting the verb-object connection in their sentences to communicate more effectively with laypeople.]\n[오답 진단·처방]\n① 진단: 지문은 과학자들이 비인격적·객관적 문체로 글을 써서 비전문가와 소통이 어려워질 수 있음을 설명하지, '효과적으로 소통하기 위해 노력해야 한다'는 내용은 없다. 선지는 '노력해야 한다'로 의무·책임을 강조하지만 지문은 결과·원인에 초점을 둔다. → 처방: 지문을 읽을 때는 지문의 주제가 '원인·결과'인지 '의무·책임'인지 먼저 확인하라. 원인·결과가 주제라면 '~하기 때문에', '~할 수 있다' 같은 표현에 주목하라.\n② 진단: 선지는 '소통이 어려운 이유는 ~ 때문이다'로 원인을 설명하는 것처럼 보이나, 지문은 과학자들의 문체 때문에 소통이 어려워질 수 있음을 보여줄 뿐, '소통이 어렵다'는 사실이 선지의 전제가 아니다. 지문은 결과(소통 어려움)를 원인(문체)으로 연결하지 않는다. → 처방: 지문에서 '~할 수 있다', '~하기 때문에' 같은 표현이 원인을 설명하는지 확인하라. 원인이 아니라 가능성·결과를 나타낸다면 그 선지는 오답일 확률이 높다.\n④ 진단: 선지는 '모든 경우에 비전문가와 소통하지 못하는 것은 ~ 때문이다'로 전면적·절대적 진술을 하지만, 지문은 '어떤 경우에' 소통이 어려울 수 있음을 설명한다. 지문은 '항상', '모두' 같은 단어를 쓰지 않는다. → 처방: 지문에서 '항상', '모두', '반드시' 같은 절대적 표현이 있는지 확인하라. 그런 표현이 없다면 그 선지는 오답일 가능성이 크다.\n⑤ 진단: 선지는 '문체뿐 아니라 내용을 단순화해야 한다'고 주장하지만, 지문은 오로지 '문체'의 문제(객관적이고 비인격적인 문체)를 다룬다. '내용의 단순화'는 지문에서 언급되지 않는다. → 처방: 지문에서 다룬 주제가 무엇인지 정확히 파악하라. 지문에 없는 내용(예: 내용 단순화)을 주장하는 선지는 오답일 수밖에 없다."
    }
   }
  ]
