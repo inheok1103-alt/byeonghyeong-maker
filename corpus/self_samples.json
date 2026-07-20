@@ -1,6 +1,95 @@
 {
- "updated": "2026-07-20T22:16:13.912Z",
+ "updated": "2026-07-20T23:24:59.772Z",
  "samples": [
+  {
+   "ts": "2026-07-20T23:18:16.786Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "WEEK 18 DAY 5 REVIEW While it is true that scientists have had remarkable success in teaching chimpanzees to communicate, we can be certain that even super-monkeys would have difficulty with any of the words below. However, higher animals who apply themselves can master all of them. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 8 and 9.) REVIEW WORDS DEFINITIONS 1.abortive a. not related to the subject 2.accommodate b. thin covering 3.barometer c. fruitless, failing 4.buff (n.) d. natural 5.conjugal e. polished, civilized 6.crave f. to make fit, adjust to 7.deem g. on the spur of the moment 8.inherent h. move in a lively manner 9.innate i. to desire 10.irrelevant j. instrument for measuring change 11.itinerant k. winding 12.latent l. inborn 13.modify m. believe, to judge 14.myriad n. going from place to place 15.peregrination o. a fan, follower, enthusiast 16.romp p. travel (n.) 17.spontaneous q. relating to marriage, connubial* 18.tortuous r. countless number 19.urbane s. to change 20.veneer t. lying hidden",
+    "choices": [
+     "과학자들이 침팬지에게 의사소통을 가르치려 한 적이 없다",
+     "고등 동물이 스스로 노력해도 모든 단어를 익힐 수 없다",
+     "20개의 단어와 뜻을 짝짓지 않아도 된다",
+     "8번과 9번 단어는 의미가 전혀 다르다는 점에 주의하라",
+     "답은 종이에 기록해야 한다"
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장에서 '과학자들이 침팬지에게 의사소통을 가르치려는 시도가 있었다'고 분명히 언급했는데도, '없었다'고 오해한 것으로 보인다. 'have had remarkable success in teaching'을 '시도한 적 없다'로 잘못 읽은 듯하다. → 처방: 지문 첫 문장을 다시 한 번 천천히 읽고, 'have had success in ~ing'의 의미를 정확히 파악한 뒤, '시도한 적 없다'는 말이 맞는지 확인하기.\n② 진단: 지문에서 'higher animals who apply themselves can master all of them(노력하는 고등 동물은 모든 단어를 익힐 수 있다)'고 했는데, 이를 '익힐 수 없다'로 오해한 것으로 보인다. 'even super-monkeys would have difficulty' 부분만 보고 전체 의미를 놓친 듯하다. → 처방: 지문의 전체 흐름을 먼저 파악한 뒤, 'even super-monkeys'가 'even'의 강조 효과임을 깨닫고, 'higher animals'가 모든 단어를 익힐 수 있다고 결론을 내리기.\n③ 진단: 지문에서 'Match the twenty words with their meanings(20개의 단어와 뜻을 짝지어라)'고 분명히 지시했는데도, '짝짓지 않아도 된다'고 오해한 것으로 보인다. 'Match'라는 단어를 '무시'하거나 '선택'으로 잘못 해석한 듯하다. → 처방: 지시문의 'Match'라는 단어를 '짝짓기'로 정확히 이해한 뒤, 지시문을 따라 20개의 단어와 뜻을 모두 짝지으려고 노력하기.\n④ 진단: 지문에서 'Note the similarity between numbers 8 and 9(8번과 9번 단어는 유사하다는 점에 주의하라)'고 언급했는데도, '의미가 전혀 다르다'고 오해한 것으로 보인다. 'similarity'를 '유사하지 않다'로 잘못 해석한 듯하다. → 처방: 'similarity'라는 단어를 '유사함'으로 정확히 이해한 뒤, 8번과 9번 단어의 뜻을 비교해보며 유사점을 찾으려고 노력하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-20T23:23:20.066Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "WEEK 18 DAY 5 REVIEW While it is true that scientists have had remarkable success in teaching chimpanzees to communicate, we can be certain that even super-monkeys would have difficulty with any of the words below. However, higher animals who apply themselves can master all of them. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 8 and 9.) REVIEW WORDS DEFINITIONS 1.abortive a. not related to the subject 2.accommodate b. thin covering 3.barometer c. fruitless, failing 4.buff (n.) d. natural 5.conjugal e. polished, civilized 6.crave f. to make fit, <u>adjust to 7.deem g. on the spur of the moment 8.inherent h. move in a lively manner 9.innate i. to desire 10.irrelevant j. instrument for measuring change 11.itinerant k. winding 12.latent l. inborn 13.modify m. believe</u>, to judge 14.myriad n. going from place to place 15.peregrination o. a fan, follower, enthusiast 16.romp p. travel (n.) 17.spontaneous q. relating to marriage, connubial* 18.tortuous r. countless number 19.urbane s. to change 20.veneer t. lying hidden",
+    "choices": [
+     "The phrase suggests that efforts were made without achieving any meaningful progress, emphasizing the futility of such actions.",
+     "The phrase indicates that all attempts were completely ineffective, with no results whatsoever being produced.",
+     "The phrase implies that attempts or efforts have ended without achieving their intended outcome, highlighting the concept of unsuccessful endeavors.",
+     "The phrase conveys that despite continuous efforts, no progress was made, highlighting the concept of wasted endeavors.",
+     "The phrase implies that actions taken led to no significant outcomes, underscoring the absence of successful results."
+    ],
+    "answer": 3,
+    "explanation": "밑줄 친 부분은 'The phrase implies that attempts or efforts have ended without achieving their intended outcome, highlighting the concept of unsuccessful endeavors.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘without achieving any meaningful progress’를 ‘의미 있는 진전 없이’로 해석해 ‘결과가 없음’을 강조했지만, ‘futility’는 ‘무익함’이란 뜻으로 ‘의미’보다는 ‘쓸모없음’을 더 강조한다는 점에서 오독. ‘abortive’의 뜻인 ‘결과가 없음’을 ‘의미 있는 결과가 없음’으로 과장해 해석. → 처방: '의미 있는'이라는 단어를 지우고, ‘결과가 없다’는 기본 뜻에 집중해 뜻을 떠올려라. ‘futile’이란 단어도 ‘쓸모없음’을 뜻한다는 점 기억하기.\n② 진단: ‘completely ineffective’를 ‘완전히 효과가 없었다’로 해석해 ‘결과가 전혀 없었다’를 강조했지만, ‘abortive’는 ‘실패한, 무산된’이란 뜻으로 ‘완전히’라는 강도는 약하다는 점에서 오독. ‘difficulty’를 ‘완전히 효과가 없었다’로 과장해 해석. → 처방: 'completely'라는 단어를 지우고, ‘실패했다’는 기본 뜻을 떠올려라. ‘difficulty’는 ‘어려움’이란 뜻도 있지만 여기서는 ‘실패’로 해석해야 함.\n④ 진단: ‘no progress was made’를 ‘진전이 없었다’로 해석해 ‘결과가 없었다’를 강조했지만, ‘wasted endeavors’는 ‘헛된 노력’을 뜻하는 반면, ‘abortive’는 ‘실패한 노력’을 뜻한다는 점에서 오독. ‘wasted’를 ‘헛됨’으로 해석해 ‘의도된 실패’가 아닌 ‘쓸모없는 노력’을 연상. → 처방: 'wasted'라는 단어를 버리고, ‘실패한, 무산된’이라는 기본 뜻을 떠올려라. ‘wasted’는 ‘쓸모없는’ 뜻이지만 여기서는 ‘실패’로 해석해야 함.\n⑤ 진단: ‘no significant outcomes’를 ‘중요한 결과가 없었다’로 해석해 ‘결과가 없음’을 강조했지만, ‘abortive’는 ‘결과가 없음’이 아니라 ‘목표 달성을 못한 실패’를 뜻한다는 점에서 오독. ‘significant’을 ‘중요한’으로 해석해 ‘결과 자체의 부재’가 아닌 ‘결과의 중요성’을 연상. → 처방: 'significant'라는 단어를 지우고, ‘목표를 달성하지 못했다’는 기본 뜻을 떠올려라. ‘outcomes’이란 단어는 ‘결과’지만 여기서는 ‘목표 달성 실패’를 뜻한다는 점 기억하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-20T23:24:35.755Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] Match the twenty words with their meanings.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The twenty words should be matched with their meanings. (포인트: 능동태 문장을 수동태로 전환(by가 생략된 경우에도 수동태로 처리))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-20T22:14:25.618Z",
    "type": "요지",
@@ -262,92 +351,6 @@
     ],
     "answer": 3,
     "explanation": "밑줄 친 부분은 'The ideal balance in research or judgment lies in avoiding extremes and finding a moderate, well-considered middle ground.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Goldilocks rule'은 '적당히'가 중요하다는 뜻이지 '특정한 한계'를 말하는 게 아님. 학생은 '특정 한계'라는 말만 보고 오해한 듯. → 처방: 지문에서 'not too much, not too little, but just right'가 '적당히'를 뜻한다는 점을 떠올리며 선지를 다시 읽기.\n② 진단: 지문은 '적당히'가 중요하다고 했지만, 'too much 연구'와 'too little 연구'를 '균형'으로 보지 않음. 학생은 '균형'이라는 단어에만 집중한 듯. → 처방: 지문에서 '적당히'가 '극단 '와 '중도 찾기'를 뜻한다는 점을 기억하고, 선지의 '균형'이라는 단어를 주의 깊게 보기.\n④ 진단: 지문은 '적당히'가 중요하다고 했지만, '정확성'이 'avoid extremes'에만 달렸다고 말하지 않음. 학생은 '정확성'과 'avoid extremes'만 보고 오해한 듯. → 처방: 지문에서 '적당히'가 '정확성'의 기준이 아니라 '적당한 정도'를 찾는다는 점을 떠올리며 선지를 다시 읽기.\n⑤ 진단: 지문은 '적당히'가 중요하다고 했지만, '극단으로 기울기'를 권장하지 않음. 학생은 'groundbreaking insights'라는 말만 보고 오해한 듯. → 처방: 지문에서 '적당히'가 '극단 '를 뜻한다는 점을 기억하고, '획기적 통찰'이라는 말이 함정임을 알기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T13:22:43.542Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 5 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 5단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 전체주의는 안정된 사회적 관계를 막는다.\n주어진 단어: ( totalitarianism / prevents / stable )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Totalitarianism prevents stable social relationships. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-20T11:15:27.692Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "analysis of linguistic structures",
-     "cause of linguistic complexity",
-     "identification of phrase heads",
-     "study of all language components",
-     "always necessary linguistic analysis"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The analysis of APs involves identifying the heads and functions of phrases in a sentence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘원인’을 뜻하는 ‘cause’를 ‘분석’을 뜻하는 ‘analysis’와 혼동했거나, 지문에서 ‘복잡성’의 원인을 찾지 못했다. 지문은 언어 구조 분석에 집중하며 복잡성의 원인은 다루지 않음. → 처방: ‘원인’을 묻는 문제는 ‘왜?’로 시작한다는 점을 기억하고, 지문에서 그런 질문이 있는지 확인하기.\n③ 진단: ‘구(phrase) 머리(head)’를 ‘구분(phrase)’으로 오해했거나, 지문에서 ‘머리’를 찾는 과정이 ‘식별’로 보임. 지문은 ‘머리’를 찾는 것이지 ‘식별’이 주제가 아님. → 처방: ‘머리(head)’가 문법 용어라는 점을 떠올리고, 지문에서 ‘머리’를 찾는 과정이 ‘주제’가 아님을 확인하기.\n④ 진단: ‘모든 언어 구성 요소’를 뜻하는 ‘all language components’를 ‘언어 구조 분석’과 혼동했거나, 지문에서 ‘모든 구성 요소’를 다루지 않음. 지문은 ‘구조 분석’에만 초점. → 처방: ‘모든 구성 요소’를 묻는 문제는 ‘언어의 모든 부분’을 다룬다는 점을 떠올리고, 지문에서 그런 내용이 있는지 확인하기.\n⑤ 진단: ‘항상 필요한 분석’을 뜻하는 ‘always necessary’를 ‘언어 구조 분석’의 중요성으로 오해했거나, 지문에서 ‘항상’이나 ‘필요성’을 언급하지 않음. → 처방: ‘항상’이라는 말이 들어간 선지는 ‘절대적’Claims 를 의심하고, 지문에서 그런 Claims 가 있는지 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The analysis of APs involves identifying the heads and functions of phrases in a sentence.]"
-   }
-  },
-  {
-   "ts": "2026-07-20T07:33:20.437Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Advanced English Rewriting and Collocations",
-     "English Language Skills for All Levels",
-     "Rewriting Techniques for Beginners",
-     "Mastering English Through Various Methods",
-     "Collocations in Everyday English Conversations"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Advanced English Rewriting and Collocations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 학생은 지문의 내용이 고급 영어 리라이팅과 콜로케이션에 중점을 두고 있다는 것을 오독했으며, 'All Levels'라는 단어가 모든 수준의 영어 학습자를 위한 것으로 혼동했을 것으로 보인다. ('1. Catching a bug while he was in hospital meant the old man died sooner than he would otherwise have done. (hastened)'에서 고급 리라이팅이 요구됨) → 처방: 다음부터는 지문의 주요 키워드와 문맥을 더 주의깊게 읽어야 한다.\n③ 진단: 학생은 지문의 내용이 초급 리라이팅 기술에만 집중된 것으로 오독했으며, 실제 지문은 다양한 영어 리라이팅과 콜로케이션에 대한 내용을 포함하고 있다. ('Rewrite each sentence using the word in brackets.'에서 다양한 리라이팅 기술이 요구됨) → 처방: 다음부터는 지문의 전체적인 내용과 범위를 더 잘 이해해야 한다.\n④ 진단: 학생은 지문의 내용이 영어 학습에 대한 일반적인 방법에만 집중된 것으로 오독했으며, 실제 지문은 리라이팅과 콜로케이션에 대한 구체적인 기술을 다루고 있다. ('Use a dictionary such as the Cambridge Online Dictionary to find two ways of completing each of these collocations'에서 구체적인 리라이팅 기술이 요구됨) → 처방: 다음부터는 지문의 세부 내용을 더 주의깊게 읽어야 한다.\n⑤ 진단: 학생은 지문의 내용이 일상 회화에서 사용되는 콜로케이션에만 집중된 것으로 오독했으며, 실제 지문은 다양한 리라이팅 기술과 콜로케이션을 포함하고 있다. ('1. a fit of 2. to shatter'에서 다양한 콜로케이션이 요구됨) → 처방: 다음부터는 지문의 범위와 내용을 더 잘 이해해야 한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Advanced English Rewriting and Collocations.]"
    }
   }
  ]
