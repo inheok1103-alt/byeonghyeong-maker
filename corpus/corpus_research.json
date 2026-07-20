@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-20T00:15:51.878Z",
+ "updated": "2026-07-20T04:09:51.589Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-20T04:09:21.599Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "명사+전치사+명사 구조에서 전치사가 생략되거나 잘못 사용되는 경우가 빈번하며, 특히 'of'가 포함된 연어 패턴에서 오류가 자주 발생함을 확인했다.",
+   "rule": "명사+of+명사 구조(예: construction of the car, use of the car)에서 전치사 'of'를 생략하거나 다른 전치사로 대체하지 않도록 출제 시 반드시 확인하고, 오답지에는 'of'를 빼거나 'to/for' 등으로 대체한 형태를 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-20T00:15:21.192Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "명사 오류(verity→variety, sosiety→society, arguement→argument)가 빈번하며, 문법적 오류가 아닌 어휘 선택 오류가 다수 관찰된다. 또한 시제 혼동(present perfect vs. simple past)도 두드러진다.",
    "rule": "CEFR B1-B2 수준의 내신 문항에서는 '명사/동사/형용사의 철자 오류'와 '시제 혼동(present perfect vs. simple past)'을 의도적으로 삽입하여 오답 선지를 구성하라. 특히 '-ity'로 끝나는 추상명사(verity→variety)와 '-ment'로 끝나는 명사(arugment→argument), '-ce'로 끝나는 명사(sosiety→society)를 집중적으로 변형하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-15T11:52:40.983Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스는 문장 내 정보 구조를 명확히 하기 위해 추가적 설명이나 보충 구문을 삽입하는 패턴이 빈번하다. 특히 인명·장소·시간 등 고유명사나 시제 전환 시 보조동사·관계사·구두점(쉼표, 대시)을 활용해 문장 흐름을 자연스럽게 만든다.",
-   "rule": "원서 코퍼스의 정보 구조화 패턴을 반영하여, 문장 내 고유명사·보충 설명·시제 전환 시 반드시 쉼표(,)·관계사(which/that)·보조동사(be/is/are/was/were)를 활용한 보완 구문을 삽입하도록 지시문을 수정하라.",
    "sample": [
     "old english",
     "university press",

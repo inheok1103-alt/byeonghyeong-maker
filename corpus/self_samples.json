@@ -1,6 +1,25 @@
 {
- "updated": "2026-07-20T00:15:51.882Z",
+ "updated": "2026-07-20T04:09:51.592Z",
  "samples": [
+  {
+   "ts": "2026-07-20T04:09:19.571Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "I can remember p______ the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. We use remember/forget doing for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. Regret doing something means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. Try doing something means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. Means doing something expresses the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] posting — 문단의 논지상 이 자리에는 'posting'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-20T00:14:51.854Z",
    "type": "빈칸(어구)",
@@ -313,25 +332,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-19T17:27:43.714Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "MODALITY AND POSSIBLE WORLDS reveals that a plane which did not crash may have been in danger which was averted by the pilot’s action. On the emerging non-epistemic interpretation, the plane did crash but the pilot could have prevented it had things happened differently. A somewhat bizarre example of this shift is the headline GP Criticized over Death: Baby may have lived – Coroner. 5.1.3 Deontic modality Modal auxiliaries also express deontic modality, which is concerned with compliance or compatibility with some code of behaviour or set of rules. Which code or set of rules is involved depends on the context and is determined pragmatically. Deontic necessity expresses what is required or compulsory, or what someone is obliged to do within the set of rules determined by the context, and deontic possibility expresses what is allowed or permitted within the rules. These are illustrated in (8) and (9): (8) deontic necessity",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
