@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-20T20:44:06.433Z",
+ "updated": "2026-07-20T22:16:13.912Z",
  "samples": [
+  {
+   "ts": "2026-07-20T22:14:25.618Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 2/2 다수결 2번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "대명사는 가리키는 대상의 수에 따라 형태가 달라진다",
+     "대명사의 수는 선행사와 일치해야 문법적으로 올바르다",
+     "‘all’이나 ‘both’는 수 일치 규칙에서 예외로 인정된다",
+     "모든 대명사는 반드시 단수 선행사와만 수를 맞추어야 한다",
+     "대명사가 선행사를 가리킬 때는 복수형으로만 써야 한다"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Pronouns must agree in number with their antecedents.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Pronouns must agree in number with their antecedents.]\n[오답 진단·처방]\n① 진단: ‘대명사는 가리키는 대상의 수에 따라 형태가 달라진다’를 ‘대명사의 형태 변화’로 오해한 것 같다. 지문은 대명사가 가리키는 대상(선행사)과 수를 맞추어야 한다고 설명하고, 형태 변화가 아니라 수 일치를 강조한다. → 처방: 대명사의 ‘형태’가 아니라 ‘수’가 선행사와 일치해야 한다는 점을 기억하자. 문제에서 대명사의 ‘형태 변화’를 묻는 것이 아니라 ‘수 일치’를 묻는다는 점을 정확히 파악하라.\n③ 진단: ‘all’이나 ‘both’는 지문에서 ‘both each either everybody everyone everything few little many most much neither no one nobody none nothing one other others several some somebody someone’ 등 indefinite pronouns(불특정 대명사)로 소개되며, 이 중 ‘all’과 ‘both’는 복수형으로 쓰인다는 사실을 몰랐거나 혼동한 것 같다. → 처방: 지문에 나온 indefinite pronouns 목록을 다시 한 번 확인하고, ‘all’과 ‘both’는 복수형으로 쓰인다는 점을 기억하라. 수 일치 규칙에서 예외가 아니라, 예외 없이 복수형으로 쓰이는 경우라는 점을 구분하라.\n④ 진단: ‘모든 대명사는 반드시 단수 선행사와만 수를 맞추어야 한다’를 ‘단수 선행사’에만 국한해서 해석한 것 같다. 지문은 ‘대명사의 수’가 선행사와 일치해야 한다고 설명하며, 선행사가 복수일 때도 복수 대명사를 써야 한다고 명시한다. → 처방: ‘대명사의 수’가 선행사의 수와 일치해야 한다는 점을 잊지 마라. 선행사가 복수이면 대명사도 복수로 써야 한다는 점을 기억하고, ‘반드시 단수’라는 제한을 두지 않도록 주의하라.\n⑤ 진단: ‘대명사가 선행사를 가리킬 때는 복수형으로만 써야 한다’를 ‘항상 복수형’이라는 절대적인 규칙으로 오해한 것 같다. 지문은 ‘대명사의 수’가 선행사와 일치해야 한다고 설명하며, 선행사가 단수이면 단수 대명사를 써야 한다고 명시한다. → 처방: ‘대명사의 수’가 선행사의 수와 일치해야 한다는 점을 기억하라. 선행사가 단수이면 단수 대명사를, 복수이면 복수 대명사를 써야 한다는 점을 잊지 마라."
+   }
+  },
+  {
+   "ts": "2026-07-20T22:15:45.858Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 대명사는 가리키는 명사와 수를 일치시켜야 한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-20T20:42:52.605Z",
    "type": "네모어휘ABC",
@@ -295,60 +348,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Advanced English Rewriting and Collocations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 지나치게 확대 해석· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 학생은 지문의 내용이 고급 영어 리라이팅과 콜로케이션에 중점을 두고 있다는 것을 오독했으며, 'All Levels'라는 단어가 모든 수준의 영어 학습자를 위한 것으로 혼동했을 것으로 보인다. ('1. Catching a bug while he was in hospital meant the old man died sooner than he would otherwise have done. (hastened)'에서 고급 리라이팅이 요구됨) → 처방: 다음부터는 지문의 주요 키워드와 문맥을 더 주의깊게 읽어야 한다.\n③ 진단: 학생은 지문의 내용이 초급 리라이팅 기술에만 집중된 것으로 오독했으며, 실제 지문은 다양한 영어 리라이팅과 콜로케이션에 대한 내용을 포함하고 있다. ('Rewrite each sentence using the word in brackets.'에서 다양한 리라이팅 기술이 요구됨) → 처방: 다음부터는 지문의 전체적인 내용과 범위를 더 잘 이해해야 한다.\n④ 진단: 학생은 지문의 내용이 영어 학습에 대한 일반적인 방법에만 집중된 것으로 오독했으며, 실제 지문은 리라이팅과 콜로케이션에 대한 구체적인 기술을 다루고 있다. ('Use a dictionary such as the Cambridge Online Dictionary to find two ways of completing each of these collocations'에서 구체적인 리라이팅 기술이 요구됨) → 처방: 다음부터는 지문의 세부 내용을 더 주의깊게 읽어야 한다.\n⑤ 진단: 학생은 지문의 내용이 일상 회화에서 사용되는 콜로케이션에만 집중된 것으로 오독했으며, 실제 지문은 다양한 리라이팅 기술과 콜로케이션을 포함하고 있다. ('1. a fit of 2. to shatter'에서 다양한 콜로케이션이 요구됨) → 처방: 다음부터는 지문의 범위와 내용을 더 잘 이해해야 한다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Advanced English Rewriting and Collocations.]"
-   }
-  },
-  {
-   "ts": "2026-07-20T04:09:19.571Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "I can remember p______ the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. We use remember/forget doing for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. Regret doing something means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. Try doing something means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. Means doing something expresses the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] posting — 문단의 논지상 이 자리에는 'posting'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T00:14:51.854Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "⚠ 지문 축소 의심(60%) — 정보 손실 여부 확인 권고 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "We can formulate a further argument in support of positing a PRO subject in apparently subjectless infinitive clauses ____ these are nominal expressions used as the complement of a copular verb such as be, become, remain (etc.) in expressions such as John was my best friend, where the predicate nominal is my best friend, and the property of being my best friend is predicated of John. Predicate nominals of the relevant type have to agree in number with the subject of their own clause in copular constructions, as we see from examples such as the following:",
-    "choices": [
-     "to highlight the syntactic structure",
-     "to emphasize the phonetic features",
-     "to illustrate the historical development",
-     "to show that predicate nominals",
-     "to deny the existence of nominals"
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 'to show that predicate nominals'가 들어가 글의 논지를 완성한다 (본문 'in relation to the syntax of predicate nominals'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'PRO 주제'가 아니라 '구문 구조'를 강조하는 내용이 없음. '명사적 표현'과 '서술어 명사'의 관계를 설명하는 데 초점을 둔 글이므로 '구문 구조'를 언급한 이 선택지는 어울리지 않음. → 처방: 빈칸 앞뒤 문장을 읽고 '무엇을 설명하는지'를 먼저 찾기. 'PRO 주제'가 아니라 '서술어 명사의 수 일치'를 보여주는 예시라는 점을 확인할 것.\n② 진단: 지문은 '음운적 특징'을 다루는 내용이 전혀 없음. '서술어 명사'의 수 일치 같은 문법 규칙을 설명하는 글인데, 소리나 발음에 대한 얘기는 전혀 없음. → 처방: 문법 규칙이나 예시가 나오면 '소리'나 '발음' 같은 단어에 집중하지 말고, '문법적 특징'이나 '구조'에 주목할 것.\n③ 진단: 지문은 '역사적 발전'을 설명하는 글이 아님. '서술어 명사의 수 일치' 같은 현재 문법 규칙을 예시로 든 글이므로, 역사적 변화에 대한 얘기는 전혀 없음. → 처방: 문법 규칙이나 예시를 설명하는 글은 '과거'나 '변화' 같은 단어가 없으면 '역사적 발전'을 고르지 말 것. '현재의 규칙'에 초점을 맞추기.\n⑤ 진단: 지문은 '명사의 존재를 부정'하는 내용이 아니라, '명사 표현'의 특징을 설명하는 글임. '존재를 부정'하는 말은 전혀 언급되지 않음. → 처방: 빈칸 앞뒤 문장에 '존재'나 '부정' 같은 단어가 없으면 그 선택지는 배제하기. 문법 규칙을 설명하는 글이므로 '존재'와는 무관하다는 점을 기억할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
