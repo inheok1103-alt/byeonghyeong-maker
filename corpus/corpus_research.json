@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-21T18:44:13.107Z",
+ "updated": "2026-07-21T20:39:42.394Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-21T20:39:16.602Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어에서 동사-명사 연어는 문법 오류로 자주 활용된다. 특히 3인칭 단수 주어가 동사 뒤에 오면 -s가 필수적이지만, 한국어 화자는 이를 놓치기 쉽다.",
+   "rule": "3인칭 단수 주어(he/she/it 또는 단수 명사) 뒤에는 동사 원형이 아닌 '-s' 또는 '-es'가 붙은 형태로만 출제하라. 예: 'she lose' → 'she loses', 'the costumer lose' → 'the costumer loses'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-21T18:43:42.396Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'of' 대신 'on'/'about'/'in' 등 전치사를 활용한 연어 선호가 빈번하며, 고유명사(Real Politik→real politics)나 동사(try→tries) 변형도 오류로 자주 발생한다.",
    "rule": "'noun + of + how/that 절' 구문은 'noun + on/about/in + how/that 절' 또는 'noun + ing' 형태로 변환하는 오류 패턴을 교정하는 문항을 제작하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-16T20:15:10.919Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'old', 'new', 'middle' 등 시간적/공간적 한정어가 'english'와 결합하는 패턴이 빈번하며, 특히 'old english', 'new york' 등은 고정 관용구로 정착됨. 또한 'between two'는 전치사구로 자주 사용됨.",
-   "rule": "'~ days'는 'nowadays'로, '~ ways'는 'in several ways'로, 'create'는 'and create'로 결합하는 등 시간/방법/동작의 연어 패턴을 오답 선지로 반드시 포함시켜 문법·의미 오류를 유도하라.",
    "sample": [
     "old english",
     "university press",
