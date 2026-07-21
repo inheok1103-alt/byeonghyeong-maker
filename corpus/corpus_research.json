@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-21T06:45:37.140Z",
+ "updated": "2026-07-21T09:43:27.472Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-21T09:43:00.531Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거분사(-ed) 형태가 '~와 비교하여'의 의미를 가질 때, 'compared to/with' 구문으로 축약되는 패턴이 빈번하다. 또한, 'one of the reason(s)'는 복수형 'reasons'로 수일치를 해야 하며, 'a important'은 관사 오류로 'an important'가 되어야 한다.",
+   "rule": "비교 구문에서 '-ing' 형태의 동명사가 아닌 과거분사(-ed)가 사용될 경우, 'compared to/with'로 표준화하여 문법적 정확성을 확보하라. (예: 'Comparing with' → 'Compared to')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-21T06:45:14.717Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 실제 패턴에서 '소유격 대명사'와 '전치사 오용', '대문자/소문자 규칙', '문장 연결 오류'가 빈번히 관찰된다. 특히 소유격 대명사(~'s, theirs) 대신 전치사(to/for) 사용, 고유명사 소문자화, 그리고 문장 간 연결 부재가 오류의 주요 원인이다.",
    "rule": "원서 코퍼스의 문체 패턴을 반영하여, '소유격 대명사'는 반드시 소유격이 필요한 경우에만 사용하고, 소유 대상이 불분명한 경우 'to/for + 목적격 대명사'로 대체하라. 또한 고유명사(Real Politik → realpolitik)는 문장 내에서 소문자로 표기하며, 문장 간 연결이 필요한 경우 ':', ', and', ';' 등을 활용하여 명확히 연결하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-16T09:41:00.885Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형 동사(insistments, advertisments, thier)가 명사 오류로 사용된 경우, 해당 동사를 올바른 명사형(insistence, advertisements, their)으로 대체해야 한다.",
-   "rule": "과거형 동사 형태가 명사 자리에 오류로 사용된 경우, 반드시 해당 동사의 올바른 명사형(예: insist → insistence, advertise → advertisement, they → their)으로 수정하도록 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",

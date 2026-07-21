@@ -1,6 +1,92 @@
 {
- "updated": "2026-07-21T06:45:37.144Z",
+ "updated": "2026-07-21T09:43:27.477Z",
  "samples": [
+  {
+   "ts": "2026-07-21T09:41:32.254Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "The analysis implied in (61) is that Jim leaving the ﬂ at is the Direct Object of see . The semantic test conﬁ rms that this string of words is a constituent because the answer to the question ‘What did Abdul see?’ is Jim leaving the ﬂ at . Let’s now apply all the other tests. (i) Abdul says that he saw Jim leaving the ﬂ at, and [Jim leaving the ﬂ at] he did see –. (ii) *[Jim leaving the ﬂ at] though Abdul saw –, it could have been someone else. (iii) *[Jim leaving the ﬂ at] was seen by Abdul. (iv) Abdul saw it . (v) Abdul saw [Jim leaving the ﬂ at] and [Pat leaving the room]. (vi) It was [Jim leaving the ﬂ at] that Abdul saw. (vii) What Abdul saw was [Jim leaving the ﬂ at]. (viii) [Jim leaving the ﬂ at] was Abdul’s goal. (ix) *It was Abdul’s goal [Jim leaving the ﬂ at]. (x) A: What did Abdul see?",
+    "choices": [
+     "압둘이 짐이 집을 떠나는 것을 보지 못했다고 말한다.",
+     "압둘은 짐이 집을 떠나는 것을 보지 못했다고 진술했다.",
+     "압둘은 짐이 집을 떠나는 것과 팻이 방을 떠나는 것을 보지 못했다.",
+     "압둘이 본 것은 짐이 집을 떠나는 것이 아니었다.",
+     "압둘이 본 것은 짐이 집을 떠나는 것이었다고 압둘이 말했다."
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘보지 못했다’(didn’t see)는 지문에서 ‘보았다’(saw)로만 언급되며, 부정 표현이 없으므로 오독. 지문은 ‘보았다’(saw)의 직접목적어가 ‘짐이 집을 떠나는 것’이라는 분석을 보임. → 처방: ‘보았다’(saw)라는 동사 자체를 정확히 확인하고, 부정·의문·시제 변화에 주의하며 읽기.\n② 진단: ‘~하지 못했다’(didn’t say)는 지문에서 ‘말했다’(says)가 아니라 ‘보았다’(saw)의 직접목적어 분석을 다루므로 오독. 지문은 Abdul 이 본 내용을 질문으로 확인하는 구조임. → 처방: 동사의 의미와 목적어 관계를 정확히 짚고, 문장의 주어·동사·목적어 구조를 먼저 분석하기.\n③ 진단: ‘보지 못했다’는 부정 표현이지만, 지문은 ‘보았다’(saw)의 직접목적어 분석을 설명하며, 팻이 방을 떠나는 것도 언급하지 않으므로 오독. 지문에서 팻은 예시로만 등장함. → 처방: 지문의 예시와 실제 분석 대상을 구분하고, 부정 표현이 아니라 목적어 분석에 집중하기.\n④ 진단: ‘~이 아니었다’는 부정 표현이지만, 지문은 ‘보았다’(saw)의 직접목적어가 ‘짐이 집을 떠나는 것’이라는 분석을 명확히 제시하므로 오독. 지문은 부정 표현 없이 분석을 설명함. → 처방: 지문의 핵심 분석(‘보았다’의 직접목적어)이 무엇인지 먼저 파악하고, 부정·긍정 여부를 구분하여 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-21T09:42:02.976Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "The analysis implied in (61) is that Jim leaving the ﬂ at is the Direct Object of see . The semantic test conﬁ rms that this string of words is a constituent because the answer to the question ‘What did Abdul see?’ is Jim leaving the ﬂ at . Let’s now apply all the other tests. (i) Abdul says that he saw Jim leaving the ﬂ at, and [Jim leaving the ﬂ at] he did see –. (ii) *[Jim leaving the ﬂ at] though Abdul saw –, it could have been someone else. (iii) *[Jim leaving the ﬂ at] was seen by Abdul. (iv) Abdul saw it . (v) Abdul saw [Jim leaving the ﬂ at] and [Pat leaving the room]. (vi) It was [Jim leaving the ﬂ at] that Abdul saw. (vii) What Abdul saw was [Jim leaving the ﬂ at]. (viii) [Jim leaving the ﬂ at] was Abdul’s goal. (ix) *It was Abdul’s goal [Jim leaving the ﬂ at]. (x) A: What did Abdul see?\n\n─────────\n[요약문] The semantic tests confirm that the string 'Jim leaving the flat' functions as a (A) because it serves as the (B) in the sentence construction.",
+    "choices": [
+     "(A) phrase … (B) subject complement",
+     "(A) constituent … (B) direct object",
+     "(A) noun … (B) adverbial modifier",
+     "(A) clause … (B) indirect object",
+     "(A) predicate … (B) complementizer"
+    ],
+    "answer": 2,
+    "explanation": "(A) constituent / (B) direct object 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘phrase’를 ‘구’로 오해하고 ‘subject complement’를 ‘주격 보어’로 오해했을 수 있습니다. 지문에서 ‘Jim leaving the flat’이 직접 목적어 역할을 한다는 설명(‘What did Abdul see?’의 답)이 나와 있는데, 주격 보어와는 관련이 없습니다. → 처방: ‘constituent’를 ‘구성 요소’로, ‘direct object’를 ‘직접 목적어’로 정확히 이해하고, 지문에서 ‘What did Abdul see?’의 답이 되는 부분을 직접 목적어로 보세요.\n③ 진단: ‘noun’을 ‘명사’로만 한정하고 ‘adverbial modifier’를 ‘부사적 수식어’로 오해했을 수 있습니다. ‘Jim leaving the flat’이 명사구로 기능한다는 점은 맞지만, 지문에서 ‘직접 목적어’로 기능한다는 설명이 더 중요합니다. → 처방: ‘constituent’를 ‘구성 요소’ 전체로 보고, 지문에서 ‘직접 목적어’로 기능한다는 설명을 따라가며 ‘noun’이 아닌 ‘constituent’를 선택하세요.\n④ 진단: ‘clause’를 ‘절’로 오해하고 ‘indirect object’를 ‘간접 목적어’로 오해했을 수 있습니다. ‘Jim leaving the flat’이 절이 아닌 구로 기능한다는 점과, 간접 목적어와는 관련이 없다는 점이 지문에 명시되어 있습니다. → 처방: ‘constituent’를 ‘구성 요소’로 보고, 지문에서 ‘직접 목적어’로 기능한다는 설명을 따라가며 ‘clause’가 아닌 ‘constituent’를 선택하세요.\n⑤ 진단: ‘predicate’를 ‘술어’로 오해하고 ‘complementizer’를 ‘보충어’로 오해했을 수 있습니다. 지문에서 ‘predicate’는 문장의 핵심 동사 부분을 가리키며, ‘complementizer’는 문법 용어와 관련이 없습니다. → 처방: ‘constituent’를 ‘구성 요소’로 보고, 지문에서 ‘직접 목적어’로 기능한다는 설명을 따라가며 ‘predicate’를 배제하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-21T09:42:47.425Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "The analysis implied in (61) is that ⓐ<u>Jim leaving</u> the ﬂ at is the Direct Object of see . The semantic test conﬁ rms that this string of words is a constituent because the answer to the question ‘What did Abdul see?’ is Jim leaving the ﬂ at . Let’s now apply all the other tests. (i) Abdul says that he saw Jim leaving the ﬂ at, and [Jim leaving the ﬂ at] ⓑ<u>he did see</u> –. (ii) *[Jim leaving the ﬂ at] though Abdul saw –, it could have been someone else. (iii) *[Jim leaving the ﬂ at] ⓒ<u>was seen by Abdul</u> Abdul. (iv) Abdul saw it . (v) Abdul saw [Jim leaving the ﬂ at] ⓓ<u>and [Pat leaving</u> the room]. (vi) It was [Jim leaving the ﬂ at] that Abdul saw. (vii) What Abdul saw was [Jim leaving the ﬂ at]. (viii) [Jim leaving the ﬂ at] ⓔ<u>was Abdul’s goal</u>. (ix) *It was Abdul’s goal [Jim leaving the ﬂ at]. (x) A: What did Abdul see?",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [태] ⓒ: 'was seen by Abdul' → 'saw' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-21T06:42:55.271Z",
    "type": "빈칸(문장)",
@@ -247,93 +333,6 @@
     ],
     "answer": 1,
     "explanation": "정답 조합: (A) passive - (B) agentive - (C) active. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘(A)’에서 ‘active’를 선택했는데, 지문 첫머리에서 ‘passive’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’에서 ‘agentive’를 선택했는데, ‘non-agentive light verb’를 ‘agentive’로 오인했다. ‘(C)’는 맞게 선택했지만 앞부분 오독으로 전체 오답. → 처방: 지문 첫 문장을 다시 읽고 ‘passive’를 분석 대상으로 삼는다는 점을 확실히 확인한 후, ‘non-agentive light verb’를 ‘주체(agent)’가 아닌 ‘비주체’를 가리키는 말로 이해하기.\n③ 진단: ‘(A)’에서 ‘passive’를 선택했으나 지문에서 ‘active’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’는 ‘non-agentive’를 맞게 선택했지만 앞부분 오독으로 전체 오답. ‘(C)’는 맞게 선택했지만 앞부분 오류로 틀렸다. → 처방: 지문 첫 문장의 ‘active’를 분석 대상으로 삼는다는 점을 확실히 확인하고, ‘passive’를 분석 대상으로 삼는다는 오해를 버리기.\n④ 진단: ‘(A)’에서 ‘active’를 선택했으나 지문에서 ‘passive’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’에서 ‘agentive’를 선택했는데, ‘non-agentive’를 ‘주체(agent)’가 있는 것으로 오인했다. ‘(C)’는 맞게 선택했지만 앞부분 오독으로 전체 오답. → 처방: ‘non-agentive light verb’의 의미를 ‘주체가 없는 동사’를 가리키는 말로 정확히 이해하고, 지문에서 ‘passive’를 분석 대상으로 삼는다는 점을 다시 확인하기.\n⑤ 진단: ‘(A)’와 ‘(B)’는 맞게 선택했으나 ‘(C)’에서 ‘passive’를 선택했는데, 지문에서 ‘active’의 구조가 (74)여야 한다는 점을 보지 못했다. ‘passive’의 구조가 (74)라고 오해했다. → 처방: ‘(C)’에서 ‘active’의 구조가 (74)여야 한다는 지문 내용을 정확히 짚고, ‘passive’의 구조가 아님을 확인하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T20:43:29.537Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 5번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "수동태 구조를 분석하는 방법을 익히려고",
-     "수동태의 행위자를 제외하는 방법만 배우려고",
-     "모든 언어의 수동태 구문을 분석하려고",
-     "수동태 분석을 위해 능동태 구조를 가정하려고",
-     "수동태 구문 분석을 이해하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'to understand the passive voice construction.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 수동태 분석 방법 자체보다는 '수동태 분석이 왜 가능한지'를 설명하는 데 초점을 맞추고 있으므로, '분석하는 방법'만 익히려 했다고 오독한 것으로 보임. (예: 'analysis of the passive involves replacing the agentive light verb' 부분만 보고 '방법'으로만 이해함) → 처방: 지문에서 수동태가 '왜' 가능한지, 어떤 가정이 필요했는지를 먼저 확인한 뒤, 그 가정이 어떤 분석에 쓰이는지 전체적으로 읽기.\n② 진단: 수동태에서 행위자를 제외하는 방법만 배우려고 했다면, 지문의 핵심 논점(수동태 분석이 가능한 구조적 가정, 즉 (74) vs (76))을 놓쳤을 가능성이 큼. (예: 'replacing the agentive light verb with a non-agentive passive light verb' 부분만 행위자 제외로 오해함) → 처방: 수동태의 '행위자 제외'가 아니라, 수동태가 '어떻게 구조적으로 분석되는지'를 먼저 파악한 뒤, 그 과정에서 행위자가 어떻게 다루어지는지 확인하기.\n③ 진단: 모든 언어의 수동태 구문을 분석하려고 했다면, 지문이 특정 구조(예: (74) vs (76))에 대한 가정을 다루고 있음을 간과했을 것임. (예: 'this analysis of the passive would simply be unavailable if we supposed that the structure of the active were to be (76)' 부분에서 '모든 언어'가 아니라 특정 구조에 대한 논의임을 놓침) → 처방: 지문의 주장이 특정 언어 현상(수동태의 구조적 가정)에 대한 것인지, 아니면 보편적 현상에 대한 것인지 먼저 구분한 뒤 읽기.\n④ 진단: 수동태 분석을 위해 능동태 구조를 가정한다고 오독했다면, 지문의 핵심 논점이 '수동태 분석이 가능한 구조적 가정을 위해 능동태 구조가 (74)여야 한다'는 점임을 놓쳤을 것임. (예: 'it can be used as evidence in favour of the assumption of (74)' 부분에서 능동태 구조의 필요성을 '가정'으로만 이해함) → 처방: 수동태 분석을 위해 '왜' 능동태 구조가 필요한지, 그 가정이 어떤 논리로 제시되는지 전체 흐름을 따라가며 읽기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to understand the passive voice construction.]"
-   }
-  },
-  {
-   "ts": "2026-07-20T18:22:45.687Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Yes, he will try to get in touch with one of our senior staff.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 네, 그는 우리 선임 직원 중 한 명과 연락하려고 노력할 것입니다. (구문 포인트: to부정사의 목적어 역할(try to get in touch) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T16:03:11.850Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 2/3가 3번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "COUNTERFACTUALS 91 that by saying that the similarity criteria for this counterfactual include the laws of nature. Unfortunately, the kangaroos required to test the hypothesis are highly unnatural beasts. They have an extraordinary high-speed bounding gait, like a two-legged cheetah, and insufficient ways of keeping their balance. This scenario must presuppose very unusual patterns for the evolution of species. Given the laws of nature governing biology, a kangaroo like ours except for the tail would have evolved some way of not toppling over, by walking instead of leaping, or developing a four-footed gait, or some other dodge. The hypothetical kangaroo is a monster. Some laws of nature, but not others, are carried over to establish the similarity we want between the actual and hypothetical worlds. Generally, the way we calculate what similarity requires depends on the understood nature of the hypothesis. For example, consider the features that might hold in tailless kangaroo worlds listed in (28): (28) Kangaroos have no tails, and\n\n─────────\n[요약문] The evaluation of (A) relies on selective transfer of natural laws, leading to (B) when extreme biological deviations are assumed.",
-    "choices": [
-     "(A) hypothetical modeling … (B) predictable outcomes",
-     "(A) hypothesis transfer … (B) contradictory outcomes",
-     "(A) biological plausibility … (B) evolutionary dead ends",
-     "(A) law retention … (B) consistent adaptations",
-     "(A) species divergence … (B) natural harmony"
-    ],
-    "answer": 2,
-    "explanation": "(A) hypothesis transfer / (B) contradictory outcomes 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 가설 모델링(hypothetical modeling)이라는 말을 '가상 세계의 특징을 따지는 과정'으로 오해하고, 예측 가능한 결과(redictable outcomes)와 연결지음. 그러나 지문은 '법칙의 일부만 유지'하는 복잡한 '가설 전이(hypothesis transfer)'를 다룸. → 처방: 가설 전이(hypothesis transfer)란 실제 세계와 가상 세계의 유사성을 정할 때 '법칙을 어떻게 유지·변경할지'를 고민하는 과정임을 기억할 것.\n③ 진단: 생물학적 타당성(biological plausibility)을 '진화의 가능성'으로 오해하고, 진화의 막다른 길(evolutionary dead ends)과 연결지음. 그러나 지문은 '법칙의 선택적 유지'가 핵심임을 강조함. → 처방: 타당한 가설이란 '법칙을 자연스럽게 적용할 수 있는지'를 따지는 것임을 잊지 말고, '법칙 유지'를 먼저 생각하라.\n④ 진단: 법칙 유지(law retention)를 '법칙이 일관되게 적용되는지'로 단순화하고, 적응(consistent adaptations)과 연결지음. 그러나 지문은 '일부 법칙만 유지'하는 모순적 상황을 다룸. → 처방: 법칙을 '전부' 유지하지 않고 '일부만' 유지하는 경우를 떠올리며, '모순적 결과'가 나올 수 있음을 생각하라.\n⑤ 진단: 종 분화(species divergence)를 '자연의 조화'와 연결지어 '서로 다른 종이 공존하는 모습'으로 오해함. 그러나 지문은 '법칙의 선택적 유지'가 핵심임을 강조함. → 처방: 종 분화는 '법칙의 적용 범위'와 관련이 있음을 기억하고, '법칙 유지'를 기준으로 유사성을 판단하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
