@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-21T20:39:42.394Z",
+ "updated": "2026-07-21T22:15:31.845Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-21T22:15:07.880Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 최빈 연어와 문법오류쌍을 분석한 결과, 'be + useful/important'와 같은 상태동사-형용사 결합에서 'be + being + 형용사'가 오류로 나타나며, 'necessary'와 'need'의 혼용, 'today'의 소유격 오류가 빈번했다. 특히 'however'와 같은 접속사가 문장 중간에서 부적절하게 사용되는 패턴도 확인되었다.",
+   "rule": "CEFR B1-B2 수준 내신 변형문제에서 'be + useful/important' 구문을 오답으로 제시할 때는 'being + useful/important'를 오류로 포함하고, 'necessary'는 'need'와 함께 복합 오류로 출제하며, 'today'는 소유격 오류('today's')를 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-21T20:39:16.602Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'every + 복수명사'는 'all + 단수명사' 또는 'each + 단수명사'로 대체되는 패턴이 빈번하며, 'become' 동사 뒤에는 비교급 형용사가 직접 연결되는 경향이 강하다.",
    "rule": "원서 패턴을 반영하여 'every + 복수명사'는 'all + 단수명사' 또는 'each + 단수명사'로, 'become more + 형용사'는 'become + 비교급 + than' 구조로 변형하도록 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-16T21:21:44.973Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'of' 대신 'on'/'about'/'in' 등 전치사를 활용한 연어 선호가 빈번하며, 고유명사(Real Politik→real politics)나 동사(try→tries) 변형도 오류로 자주 발생한다.",
-   "rule": "'noun + of + how/that 절' 구문은 'noun + on/about/in + how/that 절' 또는 'noun + ing' 형태로 변환하는 오류 패턴을 교정하는 문항을 제작하라.",
    "sample": [
     "old english",
     "university press",
