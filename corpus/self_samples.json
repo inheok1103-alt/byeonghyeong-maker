@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-21T09:43:27.477Z",
+ "updated": "2026-07-21T12:04:43.079Z",
  "samples": [
+  {
+   "ts": "2026-07-21T12:03:58.821Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "I feel something rough. The cloth feels rough. I'm feeling the cloth. ASPECT The verbs SEE and HEAR are not similarly used in three senses. In comparable senses different verbs are used: (LOOK) (LOOK AT) I see my brother. He looks well. I'm looking at my brother. I hear music. (SOUND) It sounds beautiful. (LISTEN TO) I'm listening to the music. Diagrammatically these can be displayed in three columns: SMELL SMELL SMELL TASTE TASTE TASTE FEEL FEEL FEEL SEE LOOK LOOK AT HEAR SOUND LISTEN TO (I) Lists private verbs with the sense of 'acquire the sensation', (2) verbs of state with the sense of 'produce the sensation', and (3) verbs that are not non-progressive and have the sense of 'act to acquire the sensation'. In view of the differences in these functions and especially in view of the fact that SEE and HEAR are not used in all three senses, it is as well to treat them as different homonymous verbs rather than to account for them in terms of grammatical function.",
+    "choices": [
+     "촉각으로 느껴지는 거칠함을 옷감에서 느끼고 있다",
+     "‘보다’와 ‘듣다’는 동일한 세 가지 감각에서 사용되지 않는다",
+     "‘보다’는 ‘~을 바라보다’라는 행위로 사용될 수 있다",
+     "촉각으로 느껴지는 거칠함을 옷감에서 느끼지 못하고 있다",
+     "‘맡다’, ‘맛보다’, ‘느끼다’는 감각을 획득하는 행위로 사용될 수 있다"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: ‘촉각으로 느껴지는 거칠함을 옷감에서 느끼고 있다’는 ‘feel’을 ‘느끼다’로 해석해 지문의 ‘I feel something rough. The cloth feels rough.’와 일치한다고 오독했으나, 지문은 ‘feel’이 ‘느끼다’ 외에도 ‘만지다’의 뜻으로도 쓰일 수 있음을 간과함. → 처방: ‘feel’이 ‘만지다’의 뜻으로 쓰였을 때는 ‘촉각으로 느껴지다’가 아니라 ‘만지다’라는 행위로 해석된다는 점을 기억하고, 문맥에 따라 뜻을 구분할 것.\n② 진단: ‘보다’와 ‘듣다’는 지문에 ‘SEE’는 세 가지 감각(획득·생성·행위) 중 ‘생성’(‘produce the sensation’)에서 사용되지 않는다고 나와 있지만, ‘HEAR’는 ‘소리’(‘sound’)에서 ‘생성’으로도 쓰인다고 오해함. → 처방: 지문의 표를 정확히 보고, ‘SEE’는 ‘생성’에서 사용되지 않지만 ‘HEAR’는 ‘SOUND’라는 동사로 ‘생성’에서 사용된다는 점을 구분할 것.\n③ 진단: ‘보다’는 지문에서 ‘LOOK AT’로 ‘~을 바라보다’라는 행위로 사용될 수 있다고 나와 있지만, 학생은 ‘보다’가 ‘바라보다’라는 행위로만 쓰인다고 오해해 다른 뜻도 있음을 간과함. → 처방: ‘보다’라는 동사가 ‘바라보다’뿐만 아니라 ‘찾아보다’, ‘살펴보다’ 등 다양한 행위로도 쓰일 수 있음을 기억하고, 문맥에 따라 의미를 파악할 것.\n⑤ 진단: ‘맡다’, ‘맛보다’, ‘느끼다’는 지문에서 ‘획득하는 행위’(‘acquire the sensation’)로 분류되지만, 학생은 ‘맡다’가 ‘냄새를 맡다’라는 행위로만 쓰인다고 오해해 ‘맛보다’나 ‘느끼다’도 포함된다는 점을 놓침. → 처방: ‘맡다’, ‘맛보다’, ‘느끼다’가 모두 ‘감각을 획득하는 행위’로 사용될 수 있음을 기억하고, 각 동사의 의미를 정확히 구분할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-21T12:04:13.537Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 나는 보기와 듣기를 뚜렷한 용도로 인해 별도의 동사로 취급합니다.\n주어진 단어: ( treat / and / their / as / uses / due / distinct / verbs / separate / SEE / HEAR / I / to )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] I treat SEE and HEAR as separate verbs due to their distinct uses.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-21T09:41:32.254Z",
    "type": "내용일치",
@@ -279,60 +333,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'Pronouns must agree in number with their antecedents.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Pronouns must agree in number with their antecedents.]\n[오답 진단·처방]\n① 진단: ‘대명사는 가리키는 대상의 수에 따라 형태가 달라진다’를 ‘대명사의 형태 변화’로 오해한 것 같다. 지문은 대명사가 가리키는 대상(선행사)과 수를 맞추어야 한다고 설명하고, 형태 변화가 아니라 수 일치를 강조한다. → 처방: 대명사의 ‘형태’가 아니라 ‘수’가 선행사와 일치해야 한다는 점을 기억하자. 문제에서 대명사의 ‘형태 변화’를 묻는 것이 아니라 ‘수 일치’를 묻는다는 점을 정확히 파악하라.\n③ 진단: ‘all’이나 ‘both’는 지문에서 ‘both each either everybody everyone everything few little many most much neither no one nobody none nothing one other others several some somebody someone’ 등 indefinite pronouns(불특정 대명사)로 소개되며, 이 중 ‘all’과 ‘both’는 복수형으로 쓰인다는 사실을 몰랐거나 혼동한 것 같다. → 처방: 지문에 나온 indefinite pronouns 목록을 다시 한 번 확인하고, ‘all’과 ‘both’는 복수형으로 쓰인다는 점을 기억하라. 수 일치 규칙에서 예외가 아니라, 예외 없이 복수형으로 쓰이는 경우라는 점을 구분하라.\n④ 진단: ‘모든 대명사는 반드시 단수 선행사와만 수를 맞추어야 한다’를 ‘단수 선행사’에만 국한해서 해석한 것 같다. 지문은 ‘대명사의 수’가 선행사와 일치해야 한다고 설명하며, 선행사가 복수일 때도 복수 대명사를 써야 한다고 명시한다. → 처방: ‘대명사의 수’가 선행사의 수와 일치해야 한다는 점을 잊지 마라. 선행사가 복수이면 대명사도 복수로 써야 한다는 점을 기억하고, ‘반드시 단수’라는 제한을 두지 않도록 주의하라.\n⑤ 진단: ‘대명사가 선행사를 가리킬 때는 복수형으로만 써야 한다’를 ‘항상 복수형’이라는 절대적인 규칙으로 오해한 것 같다. 지문은 ‘대명사의 수’가 선행사와 일치해야 한다고 설명하며, 선행사가 단수이면 단수 대명사를 써야 한다고 명시한다. → 처방: ‘대명사의 수’가 선행사의 수와 일치해야 한다는 점을 기억하라. 선행사가 단수이면 단수 대명사를, 복수이면 복수 대명사를 써야 한다는 점을 잊지 마라."
-   }
-  },
-  {
-   "ts": "2026-07-20T22:15:45.858Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 대명사는 가리키는 명사와 수를 일치시켜야 한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T20:42:52.605Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "From this perspective, then, the analysis of the (A) [active / passive] involves replacing the (B) [non-agentive / agentive] light verb with a non-agentive passive light verb, most of the other aspects of the passive construction follow straightforwardly from this. A crucial point to make at this point is that this analysis of the passive would simply be unavailable if we supposed that the structure of the (C) [passive / active] were to be (76) and not (74). Inasmuch as this analysis helps us to understand the passivisation process any better, then, it can be used as evidence in favour of the assumption of (74). 2.4.2 Extended projections Yet if this is so, we still face the problem that the subject of an active transitive verb is interpreted as the subject of that verb and not of some independent abstract light verb. To understand this, it is essential to understand the relationship between light verbs and thematic verbs in general. Recall that the semantic contribution of a light verb to a construction is somewhat reduced from its full thematic usage: (82) a I gave Charlotte chocolates",
-    "choices": [
-     "(A) passive - (B) agentive - (C) active",
-     "(A) active - (B) non-agentive - (C) active",
-     "(A) passive - (B) non-agentive - (C) active",
-     "(A) active - (B) agentive - (C) active",
-     "(A) passive - (B) non-agentive - (C) passive"
-    ],
-    "answer": 1,
-    "explanation": "정답 조합: (A) passive - (B) agentive - (C) active. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘(A)’에서 ‘active’를 선택했는데, 지문 첫머리에서 ‘passive’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’에서 ‘agentive’를 선택했는데, ‘non-agentive light verb’를 ‘agentive’로 오인했다. ‘(C)’는 맞게 선택했지만 앞부분 오독으로 전체 오답. → 처방: 지문 첫 문장을 다시 읽고 ‘passive’를 분석 대상으로 삼는다는 점을 확실히 확인한 후, ‘non-agentive light verb’를 ‘주체(agent)’가 아닌 ‘비주체’를 가리키는 말로 이해하기.\n③ 진단: ‘(A)’에서 ‘passive’를 선택했으나 지문에서 ‘active’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’는 ‘non-agentive’를 맞게 선택했지만 앞부분 오독으로 전체 오답. ‘(C)’는 맞게 선택했지만 앞부분 오류로 틀렸다. → 처방: 지문 첫 문장의 ‘active’를 분석 대상으로 삼는다는 점을 확실히 확인하고, ‘passive’를 분석 대상으로 삼는다는 오해를 버리기.\n④ 진단: ‘(A)’에서 ‘active’를 선택했으나 지문에서 ‘passive’를 분석 대상으로 삼고 있음을 보지 못했다. ‘(B)’에서 ‘agentive’를 선택했는데, ‘non-agentive’를 ‘주체(agent)’가 있는 것으로 오인했다. ‘(C)’는 맞게 선택했지만 앞부분 오독으로 전체 오답. → 처방: ‘non-agentive light verb’의 의미를 ‘주체가 없는 동사’를 가리키는 말로 정확히 이해하고, 지문에서 ‘passive’를 분석 대상으로 삼는다는 점을 다시 확인하기.\n⑤ 진단: ‘(A)’와 ‘(B)’는 맞게 선택했으나 ‘(C)’에서 ‘passive’를 선택했는데, 지문에서 ‘active’의 구조가 (74)여야 한다는 점을 보지 못했다. ‘passive’의 구조가 (74)라고 오해했다. → 처방: ‘(C)’에서 ‘active’의 구조가 (74)여야 한다는 지문 내용을 정확히 짚고, ‘passive’의 구조가 아님을 확인하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
