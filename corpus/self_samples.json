@@ -1,6 +1,77 @@
 {
- "updated": "2026-07-21T03:48:31.076Z",
+ "updated": "2026-07-21T06:45:37.144Z",
  "samples": [
+  {
+   "ts": "2026-07-21T06:42:55.271Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. “Use the relative pronoun that—not which—for ­restrictive clauses. ” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. [ ]",
+    "choices": [
+     "Barzun had previously stated that",
+     "Barzun's statement was unrelated to the topic of writing",
+     "Barzun's assertion was the most important aspect of his entire career",
+     "The concept of style is irrelevant to Barzun's work",
+     "Barzun had never mentioned that before"
+    ],
+    "answer": 1,
+    "explanation": "빈칸에는 원문 '—Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: 지문에서 Barzun 의 진술이 주제와 관련이 없다고 생각했을 수 있다. → 처방: 주제와 관련된 문맥을 다시 읽어보라.\n③ 진단: Barzun 의 주장의 중요성을 과대평가했을 수 있다. → 처방: 문장의 전체 흐름을 다시 분석해 보라.\n④ 진단: 스타일의 개념을 잘못 이해했을 수 있다. → 처방: 스타일과 글쓰기 주제의 관련성을 다시 연구해 보라.\n⑤ 진단: Barzun 의 이전 언급을 무시했을 수 있다. → 처방: 이전 문맥을 다시 확인하고 연결해 보라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-21T06:45:02.708Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-21T06:45:12.589Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 16 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'information', 'causation', 'familiar' / 14~18단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Since familiar causation clauses should start with since to show the reader already knows the information.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-20T23:18:16.786Z",
    "type": "안내문일치",
@@ -263,94 +334,6 @@
     ],
     "answer": 2,
     "explanation": "(A) hypothesis transfer / (B) contradictory outcomes 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 가설 모델링(hypothetical modeling)이라는 말을 '가상 세계의 특징을 따지는 과정'으로 오해하고, 예측 가능한 결과(redictable outcomes)와 연결지음. 그러나 지문은 '법칙의 일부만 유지'하는 복잡한 '가설 전이(hypothesis transfer)'를 다룸. → 처방: 가설 전이(hypothesis transfer)란 실제 세계와 가상 세계의 유사성을 정할 때 '법칙을 어떻게 유지·변경할지'를 고민하는 과정임을 기억할 것.\n③ 진단: 생물학적 타당성(biological plausibility)을 '진화의 가능성'으로 오해하고, 진화의 막다른 길(evolutionary dead ends)과 연결지음. 그러나 지문은 '법칙의 선택적 유지'가 핵심임을 강조함. → 처방: 타당한 가설이란 '법칙을 자연스럽게 적용할 수 있는지'를 따지는 것임을 잊지 말고, '법칙 유지'를 먼저 생각하라.\n④ 진단: 법칙 유지(law retention)를 '법칙이 일관되게 적용되는지'로 단순화하고, 적응(consistent adaptations)과 연결지음. 그러나 지문은 '일부 법칙만 유지'하는 모순적 상황을 다룸. → 처방: 법칙을 '전부' 유지하지 않고 '일부만' 유지하는 경우를 떠올리며, '모순적 결과'가 나올 수 있음을 생각하라.\n⑤ 진단: 종 분화(species divergence)를 '자연의 조화'와 연결지어 '서로 다른 종이 공존하는 모습'으로 오해함. 그러나 지문은 '법칙의 선택적 유지'가 핵심임을 강조함. → 처방: 종 분화는 '법칙의 적용 범위'와 관련이 있음을 기억하고, '법칙 유지'를 기준으로 유사성을 판단하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T16:04:00.800Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: n)\n[영영풀이] The natural world; that which consists of all things unaffected by or predating human technology, production, and design. (Compare ecosystem.)",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] nature (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T13:20:21.898Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "It is almost certainly the case that totalitarian systems cannot allow a society to have what we would define as stable social relationships. ✓ Totalitarianism prevents stable social relationships. 9. Hedges and intensifiers The only principle here is the Goldilocks rule: not too much, not too little, but just right. That’s little help, but this is a matter where you have to develop and then trust your ear. Too certain: In my research, I prove that people with a gun in their home use it to kill themselves or a family member instead of to protect themselves from an intruder. Too uncertain: Some of my recent research seems to ­imply that there may be a risk that certain people with a gun in their homes could be more prone to use it to kill themselves or a ­family member than to protect themselves from ­possible intruders. Just right? My research indicates that people with a gun in their homes are more likely to use it to kill themselves or a family member than they are to protect themselves from an intruder.\n\n─────────\n[요약문] Totalitarian systems hinder the establishment of (A) social structures, as demonstrated by researchers' struggle to achieve (B) precision in their claims.",
-    "choices": [
-     "(A) stability … (B) moderate",
-     "(A) adaptability … (B) overstatement",
-     "(A) transience … (B) certainty",
-     "(A) permanence … (B) ambiguity",
-     "(A) flexibility … (B) exaggeration"
-    ],
-    "answer": 1,
-    "explanation": "(A) stability / (B) moderate 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: ‘adaptability(적응성)’는 지문에 전혀 언급되지 않으며, ‘overstatement(과장)’는 ‘Hedges and intensifiers’에서 ‘too much’(과장)의 반대 개념으로 나온 ‘just right’이 아니라 과장된 표현을 뜻하는 단어로 오해한 듯함. → 처방: 지문에서 ‘totalitarian systems’이 ‘stable social relationships’를 막는다고 했으므로 ‘adaptability’는 관련이 없음을 확인하고, ‘moderate(적절한)’가 아니라 ‘overstatement(과장)’가 들어갈 이유가 없음을 기억하기.\n③ 진단: ‘transience(일시성)’는 지문에 없으며, ‘certainty(확신)’는 ‘too certain’이 아니라 ‘just right’의 예시로 나온 ‘too uncertain’의 반대 개념으로 오해한 듯함. → 처방: ‘transience’는 ‘안정성’의 반대 개념이 아니며, 지문에서 ‘totalitarianism’이 ‘stable’을 막는다고 했으므로 ‘permanence(영속성)’가 더 어울림을 기억하기.\n④ 진단: ‘permanence(영속성)’는 지문에 없지만 ‘stability(안정성)’의 동의어로 보았고, ‘ambiguity(모호성)’는 ‘too uncertain’의 예시로 나온 표현을 오해하여 선택한 듯함. → 처방: ‘permanence’는 ‘안정성’의 의미와 가까울 수 있지만, 지문은 ‘stable social relationships’를 막는다고 했으므로 ‘stability’가 더 직접적임을 기억하기.\n⑤ 진단: ‘flexibility(유연성)’는 지문에 없으며, ‘exaggeration(과장)’는 ‘Hedges and intensifiers’에서 ‘too much’(과장)의 반대 개념인 ‘just right’이 아니라 과장된 표현을 뜻하는 단어로 오해한 듯함. → 처방: ‘flexibility’는 ‘totalitarian systems’이 ‘stable’을 막는다는 내용과 무관하며, ‘moderate(적절한)’가 아니라 ‘exaggeration’이 들어갈 이유가 없음을 기억하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T13:20:54.078Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "It is almost certainly the case that totalitarian systems cannot allow a society to have what we would define as stable social relationships. ✓ Totalitarianism prevents stable social relationships. 9. Hedges and intensifiers The only principle here is the Goldilocks rule: <u>not too much, not too little, but just right</u>. That’s little help, but this is a matter where you have to develop and then trust your ear. Too certain: In my research, I prove that people with a gun in their home use it to kill themselves or a family member instead of to protect themselves from an intruder. Too uncertain: Some of my recent research seems to ­imply that there may be a risk that certain people with a gun in their homes could be more prone to use it to kill themselves or a ­family member than to protect themselves from ­possible intruders. Just right? My research indicates that people with a gun in their homes are more likely to use it to kill themselves or a family member than they are to protect themselves from an intruder.",
-    "choices": [
-     "The phrase literally means that research or judgment must not exceed a specific limit to be considered valid.",
-     "The best outcome comes from balancing too much research with too little.",
-     "The ideal balance in research or judgment lies in avoiding extremes and finding a moderate, well-considered middle ground.",
-     "The accuracy of research depends entirely on whether one avoids too much or too little, rather than on the balance itself.",
-     "Research should sometimes lean toward extremes to uncover groundbreaking insights rather than adhering strictly to moderation."
-    ],
-    "answer": 3,
-    "explanation": "밑줄 친 부분은 'The ideal balance in research or judgment lies in avoiding extremes and finding a moderate, well-considered middle ground.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Goldilocks rule'은 '적당히'가 중요하다는 뜻이지 '특정한 한계'를 말하는 게 아님. 학생은 '특정 한계'라는 말만 보고 오해한 듯. → 처방: 지문에서 'not too much, not too little, but just right'가 '적당히'를 뜻한다는 점을 떠올리며 선지를 다시 읽기.\n② 진단: 지문은 '적당히'가 중요하다고 했지만, 'too much 연구'와 'too little 연구'를 '균형'으로 보지 않음. 학생은 '균형'이라는 단어에만 집중한 듯. → 처방: 지문에서 '적당히'가 '극단 '와 '중도 찾기'를 뜻한다는 점을 기억하고, 선지의 '균형'이라는 단어를 주의 깊게 보기.\n④ 진단: 지문은 '적당히'가 중요하다고 했지만, '정확성'이 'avoid extremes'에만 달렸다고 말하지 않음. 학생은 '정확성'과 'avoid extremes'만 보고 오해한 듯. → 처방: 지문에서 '적당히'가 '정확성'의 기준이 아니라 '적당한 정도'를 찾는다는 점을 떠올리며 선지를 다시 읽기.\n⑤ 진단: 지문은 '적당히'가 중요하다고 했지만, '극단으로 기울기'를 권장하지 않음. 학생은 'groundbreaking insights'라는 말만 보고 오해한 듯. → 처방: 지문에서 '적당히'가 '극단 '를 뜻한다는 점을 기억하고, '획기적 통찰'이라는 말이 함정임을 알기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
