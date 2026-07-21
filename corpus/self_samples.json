@@ -1,6 +1,67 @@
 {
- "updated": "2026-07-21T16:46:11.883Z",
+ "updated": "2026-07-21T18:44:13.112Z",
  "samples": [
+  {
+   "ts": "2026-07-21T18:42:07.331Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "O PA Most uses of this complement type ⓐ<u>is phrase that allow</u> relatively little substitution for the predicate adjective. For instance, in the four preceding examples of this complement type, each of the predicate adjectives will allow only a few other predicate adjectives to be used with that verb. Consider the ﬁ rst example: ⓑ<u>He drives me crazy</u>. ⓒ<u>We can substitutes only</u> a few close synonyms for crazy. For example: He drives me mad. He drives me nuts. Now consider the second example: ⓓ<u>The proposal left us cold</u>. About the only obvious substitute for cold is lukewarm: The proposal left us lukewarm. The same is true of the remaining two examples. ⓔ<u>We can substitutes only</u> guilty for innocent in the third example. In the fourth example, we can substitute only words for describing meat (such as rare, well done, juicy, and pink) for medium-rare. A list of the most commonly used verbs that take an object + adjective phrase complement follows. Since this complement type is so idiomatic, an example is included with each verb.",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 3,
+    "explanation": "틀린 곳은 ⓐ(is phrase that allow → are phrases that allow), ⓒ(We can substitutes only → We can substitute only), ⓔ(we can substitutes only → we can substitute only) — 총 3개.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-21T18:42:38.226Z",
+   "type": "연결어빈칸",
+   "level": "중",
+   "audit": "정답 코드생성됨(원문 연결어 탐지·빈칸화) · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "O PA Most uses of this complement type are phrases that allow relatively little substitution for the predicate adjective. ___(A)___, in the four preceding examples of this complement type, each of the predicate adjectives will allow only a few other predicate adjectives to be used with that verb. Consider the ﬁ rst example: He drives me crazy. We can substitute only a few close synonyms for crazy. ___(B)___: He drives me mad. He drives me nuts. Now consider the second example: The proposal left us cold. About the only obvious substitute for cold is lukewarm: The proposal left us lukewarm. The same is true of the remaining two examples. We can substitute only guilty for innocent in the third example. In the fourth example, we can substitute only words for describing meat (such as rare, well done, juicy, and pink) for medium-rare. A list of the most commonly used verbs that take an object + adjective phrase complement follows. Since this complement type is so idiomatic, an example is included with each verb.",
+    "choices": [
+     "For instance …… For example",
+     "For instance …… Furthermore",
+     "On the other hand …… Furthermore",
+     "For instance …… However",
+     "Meanwhile …… For example"
+    ],
+    "answer": 2,
+    "explanation": "(A)는 앞 문장에 이어 앞의 일반 진술을 구체적 예로 뒷받침하므로 '예시'의 For instance 가, (B)는 앞의 일반 진술을 구체적 예로 뒷받침하므로 '예시'의 For example 가 알맞다. 나머지 선지는 이 논리 관계와 맞지 않아 오답이다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 빈칸 (A)에 'For instance'는 맞지만, (B)에 'For example'는 앞선 예시와 중복되어 문맥상 어울리지 않는다. 지문은 'He drives me mad. He drives me nuts.'가 새로운 예시가 아니라 'crazy'의 대체어임을 설명하므로 'Furthermore'가 더 적절하다. → 처방: 빈칸 (B)에는 'Furthermore'가 들어가야 문맥이 자연스럽다는 점을 기억하고, 같은 의미라도 문맥에 따라 적절한 연결어를 고르는 연습을 해보세요.\n③ 진단: 빈칸 (A)에 'On the other hand'는 앞선 설명과 대조되는 내용을 도입할 때 쓰이지만, 지문은 같은 내용을 예시로 설명하는 중이므로 부적절하다. (B)의 'Furthermore'는 문맥상 맞지만 (A)의 선택이 잘못되었다. → 처방: 'On the other hand'는 비교·대조를 할 때만 쓰는 연결어라는 점을 기억하고, 문맥에 맞는 연결어를 선택하는 연습을 해보세요.\n④ 진단: 빈칸 (A)에 'For instance'는 맞지만, (B)에 'However'는 앞선 설명과 대조되는 내용을 도입하는 연결어인데, 지문은 같은 예시를 계속 설명하는 중이므로 문맥에 맞지 않다. → 처방: 연결어의 의미(예시, 대조, 추가 설명 등)를 정확히 파악하고, 문맥에 맞는 연결어를 고르는 연습을 해보세요.\n⑤ 진단: 빈칸 (A)에 'Meanwhile'는 시간적 동시성을 나타내는 연결어인데, 지문은 예시를 설명하는 중이므로 부적절하다. (B)의 'For example'도 앞선 설명과 중복되어 어울리지 않는다. → 처방: 연결어의 기본 의미를 정확히 이해하고, 문맥에 따라 적절한 연결어를 선택하는 연습을 해보세요."
+   }
+  },
   {
    "ts": "2026-07-21T14:25:45.794Z",
    "type": "주제",
@@ -263,76 +324,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Since familiar causation clauses should start with since to show the reader already knows the information.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-20T23:18:16.786Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "WEEK 18 DAY 5 REVIEW While it is true that scientists have had remarkable success in teaching chimpanzees to communicate, we can be certain that even super-monkeys would have difficulty with any of the words below. However, higher animals who apply themselves can master all of them. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 8 and 9.) REVIEW WORDS DEFINITIONS 1.abortive a. not related to the subject 2.accommodate b. thin covering 3.barometer c. fruitless, failing 4.buff (n.) d. natural 5.conjugal e. polished, civilized 6.crave f. to make fit, adjust to 7.deem g. on the spur of the moment 8.inherent h. move in a lively manner 9.innate i. to desire 10.irrelevant j. instrument for measuring change 11.itinerant k. winding 12.latent l. inborn 13.modify m. believe, to judge 14.myriad n. going from place to place 15.peregrination o. a fan, follower, enthusiast 16.romp p. travel (n.) 17.spontaneous q. relating to marriage, connubial* 18.tortuous r. countless number 19.urbane s. to change 20.veneer t. lying hidden",
-    "choices": [
-     "과학자들이 침팬지에게 의사소통을 가르치려 한 적이 없다",
-     "고등 동물이 스스로 노력해도 모든 단어를 익힐 수 없다",
-     "20개의 단어와 뜻을 짝짓지 않아도 된다",
-     "8번과 9번 단어는 의미가 전혀 다르다는 점에 주의하라",
-     "답은 종이에 기록해야 한다"
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장에서 '과학자들이 침팬지에게 의사소통을 가르치려는 시도가 있었다'고 분명히 언급했는데도, '없었다'고 오해한 것으로 보인다. 'have had remarkable success in teaching'을 '시도한 적 없다'로 잘못 읽은 듯하다. → 처방: 지문 첫 문장을 다시 한 번 천천히 읽고, 'have had success in ~ing'의 의미를 정확히 파악한 뒤, '시도한 적 없다'는 말이 맞는지 확인하기.\n② 진단: 지문에서 'higher animals who apply themselves can master all of them(노력하는 고등 동물은 모든 단어를 익힐 수 있다)'고 했는데, 이를 '익힐 수 없다'로 오해한 것으로 보인다. 'even super-monkeys would have difficulty' 부분만 보고 전체 의미를 놓친 듯하다. → 처방: 지문의 전체 흐름을 먼저 파악한 뒤, 'even super-monkeys'가 'even'의 강조 효과임을 깨닫고, 'higher animals'가 모든 단어를 익힐 수 있다고 결론을 내리기.\n③ 진단: 지문에서 'Match the twenty words with their meanings(20개의 단어와 뜻을 짝지어라)'고 분명히 지시했는데도, '짝짓지 않아도 된다'고 오해한 것으로 보인다. 'Match'라는 단어를 '무시'하거나 '선택'으로 잘못 해석한 듯하다. → 처방: 지시문의 'Match'라는 단어를 '짝짓기'로 정확히 이해한 뒤, 지시문을 따라 20개의 단어와 뜻을 모두 짝지으려고 노력하기.\n④ 진단: 지문에서 'Note the similarity between numbers 8 and 9(8번과 9번 단어는 유사하다는 점에 주의하라)'고 언급했는데도, '의미가 전혀 다르다'고 오해한 것으로 보인다. 'similarity'를 '유사하지 않다'로 잘못 해석한 듯하다. → 처방: 'similarity'라는 단어를 '유사함'으로 정확히 이해한 뒤, 8번과 9번 단어의 뜻을 비교해보며 유사점을 찾으려고 노력하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T23:23:20.066Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "WEEK 18 DAY 5 REVIEW While it is true that scientists have had remarkable success in teaching chimpanzees to communicate, we can be certain that even super-monkeys would have difficulty with any of the words below. However, higher animals who apply themselves can master all of them. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 8 and 9.) REVIEW WORDS DEFINITIONS 1.abortive a. not related to the subject 2.accommodate b. thin covering 3.barometer c. fruitless, failing 4.buff (n.) d. natural 5.conjugal e. polished, civilized 6.crave f. to make fit, <u>adjust to 7.deem g. on the spur of the moment 8.inherent h. move in a lively manner 9.innate i. to desire 10.irrelevant j. instrument for measuring change 11.itinerant k. winding 12.latent l. inborn 13.modify m. believe</u>, to judge 14.myriad n. going from place to place 15.peregrination o. a fan, follower, enthusiast 16.romp p. travel (n.) 17.spontaneous q. relating to marriage, connubial* 18.tortuous r. countless number 19.urbane s. to change 20.veneer t. lying hidden",
-    "choices": [
-     "The phrase suggests that efforts were made without achieving any meaningful progress, emphasizing the futility of such actions.",
-     "The phrase indicates that all attempts were completely ineffective, with no results whatsoever being produced.",
-     "The phrase implies that attempts or efforts have ended without achieving their intended outcome, highlighting the concept of unsuccessful endeavors.",
-     "The phrase conveys that despite continuous efforts, no progress was made, highlighting the concept of wasted endeavors.",
-     "The phrase implies that actions taken led to no significant outcomes, underscoring the absence of successful results."
-    ],
-    "answer": 3,
-    "explanation": "밑줄 친 부분은 'The phrase implies that attempts or efforts have ended without achieving their intended outcome, highlighting the concept of unsuccessful endeavors.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘without achieving any meaningful progress’를 ‘의미 있는 진전 없이’로 해석해 ‘결과가 없음’을 강조했지만, ‘futility’는 ‘무익함’이란 뜻으로 ‘의미’보다는 ‘쓸모없음’을 더 강조한다는 점에서 오독. ‘abortive’의 뜻인 ‘결과가 없음’을 ‘의미 있는 결과가 없음’으로 과장해 해석. → 처방: '의미 있는'이라는 단어를 지우고, ‘결과가 없다’는 기본 뜻에 집중해 뜻을 떠올려라. ‘futile’이란 단어도 ‘쓸모없음’을 뜻한다는 점 기억하기.\n② 진단: ‘completely ineffective’를 ‘완전히 효과가 없었다’로 해석해 ‘결과가 전혀 없었다’를 강조했지만, ‘abortive’는 ‘실패한, 무산된’이란 뜻으로 ‘완전히’라는 강도는 약하다는 점에서 오독. ‘difficulty’를 ‘완전히 효과가 없었다’로 과장해 해석. → 처방: 'completely'라는 단어를 지우고, ‘실패했다’는 기본 뜻을 떠올려라. ‘difficulty’는 ‘어려움’이란 뜻도 있지만 여기서는 ‘실패’로 해석해야 함.\n④ 진단: ‘no progress was made’를 ‘진전이 없었다’로 해석해 ‘결과가 없었다’를 강조했지만, ‘wasted endeavors’는 ‘헛된 노력’을 뜻하는 반면, ‘abortive’는 ‘실패한 노력’을 뜻한다는 점에서 오독. ‘wasted’를 ‘헛됨’으로 해석해 ‘의도된 실패’가 아닌 ‘쓸모없는 노력’을 연상. → 처방: 'wasted'라는 단어를 버리고, ‘실패한, 무산된’이라는 기본 뜻을 떠올려라. ‘wasted’는 ‘쓸모없는’ 뜻이지만 여기서는 ‘실패’로 해석해야 함.\n⑤ 진단: ‘no significant outcomes’를 ‘중요한 결과가 없었다’로 해석해 ‘결과가 없음’을 강조했지만, ‘abortive’는 ‘결과가 없음’이 아니라 ‘목표 달성을 못한 실패’를 뜻한다는 점에서 오독. ‘significant’을 ‘중요한’으로 해석해 ‘결과 자체의 부재’가 아닌 ‘결과의 중요성’을 연상. → 처방: 'significant'라는 단어를 지우고, ‘목표를 달성하지 못했다’는 기본 뜻을 떠올려라. ‘outcomes’이란 단어는 ‘결과’지만 여기서는 ‘목표 달성 실패’를 뜻한다는 점 기억하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
