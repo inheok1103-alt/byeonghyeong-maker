@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-21T14:27:35.653Z",
+ "updated": "2026-07-21T16:46:11.879Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-21T16:45:47.688Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서 'by + 도구' 구문(예: by computer)과 'enjoy + 전치사' 구문(예: enjoying in it)이 오류로 자주 등장하며, 이는 학습자들이 연어 규칙을 간과하는 경향을 반영한다. 또한 'which'가 이끄는 절의 동사 형태(원형 vs. -ing/ed) 오류도 빈번하다.",
+   "rule": "'by + 도구' 구문(예: by computer, by hand)은 전치사 'by'를 반드시 사용해야 하며, 'enjoy'는 전치사 없이 직접 목적어를 취하므로 'enjoying in it'은 'enjoying it'으로 수정해야 한다. 또한 관계대명사 'which'가 이끄는 절의 동사는 문맥에 따라 능동형(-ing) 또는 수동형(-ed)으로 정확히 변환해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-21T14:27:02.699Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "복수명사(ideas, concepts) 뒤의 동사 일치 오류와 대명사 대문자 오류가 빈번하며, 조동사 뒤 동사 원형 오류도 다수 발견된다.",
    "rule": "CEFR B1 수준에서는 복수명사 뒤 동사 일치(are→is), 대명사 대문자(I), 조동사 뒤 동사 원형(are reduced→reduce)을 반드시 확인하는 문항을 30% 이상 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-16T16:44:22.235Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 표본은 문장 내 동사(verb)나 전치사(preposition)의 반복적 오용 패턴과 구두점(punctuation)으로 인한 오류가 두드러진다. 특히 'time after timer'와 같이 연어(collocation) 오용이 빈발하며, 'wait much' → 'wait'와 같은 불필요한 보어 제거 오류도 확인된다.",
-   "rule": "'~ after ~' 구문에서 'timer'·'timer'와 같은 오용을 방지하기 위해, 'time after time'·'day after day' 등 고정된 연어(collocation)를 반드시 포함하는 문장을 출제하고, 오답 선택지에는 'time after timer'·'day after dayy'와 같이 연어 오용을 삽입하라.",
    "sample": [
     "old english",
     "university press",
