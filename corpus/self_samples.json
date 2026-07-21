@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-21T12:04:43.079Z",
+ "updated": "2026-07-21T14:27:35.657Z",
  "samples": [
+  {
+   "ts": "2026-07-21T14:25:45.794Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 2건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "common use of object + present participle constructions with perception or causation verbs",
+     "verbs frequently pairing with object + present participle for sensory observation",
+     "verbs triggering object + present participle to denote incorrect actions",
+     "verbs necessitating object + present participle to reveal misconduct",
+     "widespread application of object + present participle with all transitive verbs"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Some verbs are commonly used with object + present participle complements, often conveying sense perception or causation.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·과잉 일반화)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 조건 누락· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘감각 관찰’을 강조한 선지인데, 지문은 감각 동사뿐 아니라 ‘get’, ‘have’ 같은 ‘원인’을 나타내는 동사도 포함한다고 설명한다. 학생은 감각 동사에만 초점을 맞추고 ‘원인’ 동사를 놓쳤다. → 처방: 지문에서 ‘perception’(감각)과 ‘causation’(원인) 동사를 모두 확인한 후, 선지가 두 가지를 모두 포함하는지 확인해라.\n③ 진단: ‘잘못된 행동’을 암시한 선지인데, 지문은 ‘catch’ 동사가 부정적 의미를 가질 수 있지만, 모든 선지에서 ‘잘못된 행동’을 나타내는 것은 아니다. 학생은 ‘catch’의 부정적 의미를 과도하게 일반화했다. → 처방: ‘catch’의 부정적 의미를 기억하되, 지문에서 다른 동사(예: ‘find’, ‘leave’)는 부정적 의미를 나타내지 않는다는 점을 확인해라.\n④ 진단: ‘잘못된 행동 드러내기’를 강조한 선지로, 지문은 ‘catch’가 부정적 의미를 가질 수 있지만, 모든 선지가 ‘잘못된 행동’을 드러내는 것은 아니다. 학생은 ‘misconduct’를 과도하게 확대 해석했다. → 처방: ‘misconduct’를 포함하는 동사가 ‘catch’뿐임을 확인하고, 다른 동사(예: ‘have’, ‘get’)는 ‘원인’을 나타낸다는 점을 기억해라.\n⑤ 진단: ‘모든 타동사’에 적용된다고 오해한 선지로, 지문은 ‘perception’이나 ‘causation’ 동사만 ‘object + present participle’을 쓴다고 한정한다. 학생은 ‘all transitive verbs’를 잘못 추론했다. → 처방: 지문에서 ‘commonly used’(흔히 쓰이는) 동사 목록을 확인하고, ‘모든 타동사’가 아니라는 점을 기억해라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Some verbs are commonly used with object + present participle complements, often conveying sense perception or causation.]"
+   }
+  },
+  {
+   "ts": "2026-07-21T14:27:00.936Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Here is a list of the verbs that are commonly used with object + present participle complements.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 다음은 목적어 뒤에 현재분사 형태의 보어를 취하는 동사들의 목록입니다. (구문 포인트: 5형식(목적어 + 목적보어: 현재분사) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-21T12:03:58.821Z",
    "type": "내용불일치",
@@ -280,59 +333,6 @@
     ],
     "answer": 3,
     "explanation": "밑줄 친 부분은 'The phrase implies that attempts or efforts have ended without achieving their intended outcome, highlighting the concept of unsuccessful endeavors.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘without achieving any meaningful progress’를 ‘의미 있는 진전 없이’로 해석해 ‘결과가 없음’을 강조했지만, ‘futility’는 ‘무익함’이란 뜻으로 ‘의미’보다는 ‘쓸모없음’을 더 강조한다는 점에서 오독. ‘abortive’의 뜻인 ‘결과가 없음’을 ‘의미 있는 결과가 없음’으로 과장해 해석. → 처방: '의미 있는'이라는 단어를 지우고, ‘결과가 없다’는 기본 뜻에 집중해 뜻을 떠올려라. ‘futile’이란 단어도 ‘쓸모없음’을 뜻한다는 점 기억하기.\n② 진단: ‘completely ineffective’를 ‘완전히 효과가 없었다’로 해석해 ‘결과가 전혀 없었다’를 강조했지만, ‘abortive’는 ‘실패한, 무산된’이란 뜻으로 ‘완전히’라는 강도는 약하다는 점에서 오독. ‘difficulty’를 ‘완전히 효과가 없었다’로 과장해 해석. → 처방: 'completely'라는 단어를 지우고, ‘실패했다’는 기본 뜻을 떠올려라. ‘difficulty’는 ‘어려움’이란 뜻도 있지만 여기서는 ‘실패’로 해석해야 함.\n④ 진단: ‘no progress was made’를 ‘진전이 없었다’로 해석해 ‘결과가 없었다’를 강조했지만, ‘wasted endeavors’는 ‘헛된 노력’을 뜻하는 반면, ‘abortive’는 ‘실패한 노력’을 뜻한다는 점에서 오독. ‘wasted’를 ‘헛됨’으로 해석해 ‘의도된 실패’가 아닌 ‘쓸모없는 노력’을 연상. → 처방: 'wasted'라는 단어를 버리고, ‘실패한, 무산된’이라는 기본 뜻을 떠올려라. ‘wasted’는 ‘쓸모없는’ 뜻이지만 여기서는 ‘실패’로 해석해야 함.\n⑤ 진단: ‘no significant outcomes’를 ‘중요한 결과가 없었다’로 해석해 ‘결과가 없음’을 강조했지만, ‘abortive’는 ‘결과가 없음’이 아니라 ‘목표 달성을 못한 실패’를 뜻한다는 점에서 오독. ‘significant’을 ‘중요한’으로 해석해 ‘결과 자체의 부재’가 아닌 ‘결과의 중요성’을 연상. → 처방: 'significant'라는 단어를 지우고, ‘목표를 달성하지 못했다’는 기본 뜻을 떠올려라. ‘outcomes’이란 단어는 ‘결과’지만 여기서는 ‘목표 달성 실패’를 뜻한다는 점 기억하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-20T23:24:35.755Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] Match the twenty words with their meanings.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The twenty words should be matched with their meanings. (포인트: 능동태 문장을 수동태로 전환(by가 생략된 경우에도 수동태로 처리))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-20T22:14:25.618Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 2/2 다수결 2번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "대명사는 가리키는 대상의 수에 따라 형태가 달라진다",
-     "대명사의 수는 선행사와 일치해야 문법적으로 올바르다",
-     "‘all’이나 ‘both’는 수 일치 규칙에서 예외로 인정된다",
-     "모든 대명사는 반드시 단수 선행사와만 수를 맞추어야 한다",
-     "대명사가 선행사를 가리킬 때는 복수형으로만 써야 한다"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Pronouns must agree in number with their antecedents.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Pronouns must agree in number with their antecedents.]\n[오답 진단·처방]\n① 진단: ‘대명사는 가리키는 대상의 수에 따라 형태가 달라진다’를 ‘대명사의 형태 변화’로 오해한 것 같다. 지문은 대명사가 가리키는 대상(선행사)과 수를 맞추어야 한다고 설명하고, 형태 변화가 아니라 수 일치를 강조한다. → 처방: 대명사의 ‘형태’가 아니라 ‘수’가 선행사와 일치해야 한다는 점을 기억하자. 문제에서 대명사의 ‘형태 변화’를 묻는 것이 아니라 ‘수 일치’를 묻는다는 점을 정확히 파악하라.\n③ 진단: ‘all’이나 ‘both’는 지문에서 ‘both each either everybody everyone everything few little many most much neither no one nobody none nothing one other others several some somebody someone’ 등 indefinite pronouns(불특정 대명사)로 소개되며, 이 중 ‘all’과 ‘both’는 복수형으로 쓰인다는 사실을 몰랐거나 혼동한 것 같다. → 처방: 지문에 나온 indefinite pronouns 목록을 다시 한 번 확인하고, ‘all’과 ‘both’는 복수형으로 쓰인다는 점을 기억하라. 수 일치 규칙에서 예외가 아니라, 예외 없이 복수형으로 쓰이는 경우라는 점을 구분하라.\n④ 진단: ‘모든 대명사는 반드시 단수 선행사와만 수를 맞추어야 한다’를 ‘단수 선행사’에만 국한해서 해석한 것 같다. 지문은 ‘대명사의 수’가 선행사와 일치해야 한다고 설명하며, 선행사가 복수일 때도 복수 대명사를 써야 한다고 명시한다. → 처방: ‘대명사의 수’가 선행사의 수와 일치해야 한다는 점을 잊지 마라. 선행사가 복수이면 대명사도 복수로 써야 한다는 점을 기억하고, ‘반드시 단수’라는 제한을 두지 않도록 주의하라.\n⑤ 진단: ‘대명사가 선행사를 가리킬 때는 복수형으로만 써야 한다’를 ‘항상 복수형’이라는 절대적인 규칙으로 오해한 것 같다. 지문은 ‘대명사의 수’가 선행사와 일치해야 한다고 설명하며, 선행사가 단수이면 단수 대명사를 써야 한다고 명시한다. → 처방: ‘대명사의 수’가 선행사의 수와 일치해야 한다는 점을 기억하라. 선행사가 단수이면 단수 대명사를, 복수이면 복수 대명사를 써야 한다는 점을 잊지 마라."
    }
   }
  ]
