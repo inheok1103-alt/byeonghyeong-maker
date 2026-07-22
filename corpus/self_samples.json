@@ -1,6 +1,77 @@
 {
- "updated": "2026-07-22T18:37:36.971Z",
+ "updated": "2026-07-22T20:34:32.316Z",
  "samples": [
+  {
+   "ts": "2026-07-22T20:32:54.785Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "동사 구문 분석에서 동사의 문법적 기능에 따라 자동사와 타동사로 하위 분류해야 한다",
+     "동사의 문법적 기능이 자동사인지 타동사인지는 문장의 의미를 통해서만 결정되어야 한다",
+     "동사 구문 분석에서 자동사와 타동사로 분류하는 것은 주어와 목적어의 존재 여부와는 무관하다",
+     "모든 동사는 문장 속에서 자동사와 타동사 중 하나로만 사용되며 중간 형태는 존재하지 않는다",
+     "동사 구문 분석에서 자동사와 타동사로의 하위 분류는 문장 분석의 필수 요소가 아니다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Verbs must be sub-categorized into intransitive or transitive based on their syntactic behavior in sentences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 문장의 의미를 동사의 자동사/타동사 분류 기준으로 오해함. 지문 74쪽에서 동사의 하위 분류는 '문장 구조'(예: 목적어 존재 여부)에 따라 결정된다고 명확히 설명함. '의미'가 아니라 '기능'을 기준으로 해야 함. → 처방: 동사 분류는 문장 안에서 동사가 어떤 구조적 역할을 하는지(예: 목적어와 함께 쓰이는지)를 기준으로 판단해야 한다는 점을 기억하자.\n③ 진단: 주어와 목적어의 존재 여부와 동사의 자동사/타동사 분류를 '무관하다'고 오해함. 지문 예문 (a)와 (b)에서 'paddled'가 주어만 있을 때는 자동사, 목적어와 함께 쓰이면 타동사로 바뀌는 것을 확인할 수 있음. → 처방: 동사가 자동사인지 타동사인지는 주어와 목적어의 존재 여부와 밀접하게 연결되어 있다는 점을 잊지 말자.\n④ 진단: 모든 동사가 오직 자동사 또는 타동사로만 사용된다고 오해함. 지문 예문 (e)와 (f)에서 'broke'가 자동사와 타동사로 모두 쓰이는 것을 확인할 수 있음. '중간 형태'가 존재하지 않는다는 주장은 옳지 않음. → 처방: 한 동사가 문맥에 따라 자동사와 타동사로 모두 쓰일 수 있다는 점을 기억하고, 문장 전체를 보고 판단하자.\n⑤ 진단: 동사의 하위 분류가 문장 분석의 '필수 요소'가 아니라고 오해함. 지문 74쪽에서 동사의 하위 분류가 문장 분석에 도움이 된다고 설명하고, 예문에서도 이를 적극 활용하고 있음. → 처방: 동사의 자동사/타동사 분류는 문장 구조를 이해하는 데 매우 유용하다는 점을 기억하고, 분석에 활용하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Verbs must be sub-categorized into intransitive or transitive based on their syntactic behavior in sentences.]"
+   }
+  },
+  {
+   "ts": "2026-07-22T20:33:57.845Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 4번(기록 3번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "THE BASIC VERB PHRASE 74 The following may help in identifying the sub-​categories of verb in sentences: Discussion of in-​text exercise 1. (a) The ducks paddled (across the lake) –​ [intransitive] (b) He paddled the raft (across the lake) –​ [transitive] (c) Zadie reflected (quietly) –​ [intransitive] (d) The shop window reflected the blinding sunshine –​ [transitive] (e) The samovar broke –​ [intransitive] (f) Anna broke the samovar –​ [transitive]. Exercises 1. Identify the major functions in the following sentences (subject, direct object, indirect object, subject-​predicative, object-​predicative and prepositional complement). Identify the verbs and sub-​categorise them. Example: (a) The girl in the palace dyed her hair a strange colour. (b) Hot air rises. (c) Luigi promised me his spaghetti machine. (d) The largest frying pan proved very useful. (e) Someone stole my contact lenses. (f) It sounds like a really good film. Otto devoured the couscous subject V direct object [trans]\n\n─────────\n[요약문] Understanding verb (A) in sentences requires distinguishing whether the verb is used (B) or with an object.",
+    "choices": [
+     "(A) classification … (B) transitively",
+     "(A) recognition … (B) intransitively with an object",
+     "(A) categorization … (B) intransitively",
+     "(A) analysis … (B) without an object",
+     "(A) interpretation … (B) reflexively"
+    ],
+    "answer": 4,
+    "explanation": "(A) categorization / (B) intransitively 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘classification’을 ‘구분’으로 오해하고 ‘transitively’를 ‘목적어 있는 경우’로만 생각했으나, 지문은 ‘transitive/intransitive’를 ‘목적어 유무’로 넓게 설명함을 놓침. → 처방: ‘transitive/intransitive’를 ‘목적어의 유무’로 이해하고, 문장의 핵심을 ‘목적어 유무’로 파악하는 연습을 반복하라.\n② 진단: ‘recognition’을 ‘인식’으로 오해하고 ‘intransitively’를 ‘목적어 없는 동사’로만 한정했으나, 지문은 ‘intransitive’가 ‘목적어 없이 쓰는 동사’를 포함함을 간과함. → 처방: ‘intransitive’를 ‘목적어가 없는 동사’로만 보지 말고, 문장에서 ‘목적어의 존재 여부’를 먼저 확인하는 습관을 기르라.\n③ 진단: ‘categorization’을 ‘범주화’로 오해하고 ‘intransitively’를 ‘목적어 없이 쓰는 동사’로만 생각했으나, 지문은 ‘transitive/intransitive’를 ‘목적어의 유무’로 설명함을 놓침. → 처방: ‘transitive’와 ‘intransitive’를 ‘목적어의 유무’로 명확히 구분하는 연습을 하고, 예문에서 직접 확인하라.\n⑤ 진단: ‘interpretation’을 ‘해석’으로 오해하고 ‘reflexively’를 ‘재귀적’으로만 생각했으나, 지문은 ‘transitive/intransitive’를 ‘목적어의 유무’로 설명함을 간과함. → 처방: ‘reflexive’를 생각하지 말고, 문장에서 ‘목적어의 유무’를 먼저 확인하는 습관을 들여라."
+   }
+  },
   {
    "ts": "2026-07-22T18:36:53.040Z",
    "type": "어휘(밑줄)",
@@ -308,60 +379,6 @@
     ],
     "answer": 4,
     "explanation": "밑줄 친 부분은 'The event structure suggests a sequential cause-and-effect relationship where one action directly leads to a resulting state.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘e1 → e2’의 화살표가 ‘e2가 e1을 일으켰다’는 의미로 오해한 듯. 지문에서 ‘e1이 e2를 일으켰다’(e1 causes e2)라 명시했으나, ‘e2가 e1을 일으켰다’는 역방향으로 뒤집어 읽음. → 처방: ‘→’가 ‘원인 → 결과’를 뜻함을 기억하고, 화살표 방향과 ‘cause’의 의미를 정확히 짚어 읽기.\n② 진단: ‘occasionally’(때때로)라는 한정어가 지문에 없음에도, ‘때때로’가 포함된 선지를 선택. 지문은 ‘e1이 e2를 일으켰다’는 ‘항상’(always) 성립하는 인과관계를 설명한 것임. → 처방: ‘항상’ 또는 ‘반드시’가 지문에 있는지 확인하고, 한정어나 예외가 없으면 배제하기.\n③ 진단: ‘e2가 e1을 일으켰다’는 잘못된 역방향 인과관계를 선택. 지문은 ‘e1이 e2를 일으켰다’(e1 causes e2)라 명시했으나, 이를 반대로 해석함. → 처방: ‘e1 → e2’의 화살표가 ‘e1이 e2의 원인’이라는 뜻임을 기억하고, 화살표 방향과 인과관계의 순서를 정확히 짚기.\n⑤ 진단: ‘동시공존’(simultaneous coexistence)과 ‘논리적 진행 없음’을 선택했으나, 지문은 ‘e1이 e2를 일으켰다’는 ‘순차적 인과관계’를 분명히 설명함. → 처방: ‘→’가 ‘순차적 진행’을 뜻함을 확인하고, ‘동시성’이나 ‘논리적 무관계’를 암시하는 선지는 배제하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T06:44:05.480Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] An occurrence; something that happens.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] event (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T06:44:37.996Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 2/3 다수결 4번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "Unfortunately this is an entirely different set of \u0002-role assignments to what we have previously found. We concluded above that the theme \u0002-role is ⓐ<u>assigned</u> to the specifier of a thematic verb, not its complement position. The agent, on the other hand, was assigned to the specifier of a ⓑ<u>light</u> verb taking a VP complement. If we are to maintain the UTAH, either the ⓒ<u>structure</u> in (45) is inaccurate, or our analyses of unaccusative and light verbs is. Moreover, the structure of the VP in (45) is simple, in comparison to that of verbal complexes ⓓ<u>involving</u> light verbs, as in (32), for example. Yet the ⓔ<u>event</u> structure expressed here is not simple. In the butler opened the door, there is an event involving the butler doing something and an event involving the door being open and clearly the first event causes the second. Hence the event structure is: (46) e = e1 → e2 : e1 = ‘the butler did something’",
-    "choices": [
-     "assigned: To designate or set apart something for some purpose.",
-     "light: Visible electromagnetic radiation. The human eye can typically detect radiation ",
-     "structure: A cohesive whole built up of distinct parts.",
-     "involving: To roll or fold up; to wind round; to entwine.",
-     "event: A manservant having charge of wines and liquors."
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓔ의 풀이는 'butler'의 정의이다. 'event'의 올바른 풀이: An occurrence; something that happens.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘assigned’를 ‘할당하다’로만 알고 ‘지정하다’(to designate)도 포함된다는 점을 놓쳤다. 지문에서 ‘theme role 이 …에 할당된다’(assigned to)라는 표현으로 두 뜻 모두 쓰였다. → 처방: ‘assign’의 뜻을 사전에서 ‘할당하다’와 ‘지정하다’를 모두 찾아보고, 지문에서 쓰인 용법을 다시 확인하라.\n② 진단: ‘light’를 ‘가벼운’이라는 뜻만 떠올렸고, 문맥에서 ‘light verb’(경량동사)로 쓰인 ‘light’를 ‘가시적 전자기파’(visible electromagnetic radiation)로 오해했다. → 처방: ‘light’의 뜻을 ‘가벼운’이 아닌 다른 뜻으로 쓸 때는 문맥(예: ‘light verb’)을 먼저 살피고, 사전에서 관련 뜻을 찾아보라.\n③ 진단: ‘structure’를 ‘구조’로만 알고 ‘구성된 부분들로 이뤄진 전체’(cohesive whole built up of distinct parts)라는 뜻을 놓쳤다. 지문에서 ‘VP 의 구조’(structure of the VP)가 단순하다고 말할 때 이 뜻을 사용했다. → 처방: ‘structure’의 뜻을 ‘구조’뿐 아니라 ‘구성체’로도 해석할 수 있음을 기억하고, 사전에서 예문을 확인하라.\n⑤ 진단: ‘event’를 ‘사건’으로만 알고 ‘하인’(manservant)으로 오해했다. 지문에서 ‘event structure’(사건 구조)로 쓰였고, ‘butler’는 ‘하인’이 아닌 ‘집사’를 뜻한다. → 처방: ‘event’의 뜻을 ‘사건’과 ‘행사’ 등으로 먼저 떠올리고, ‘manservant’라는 뜻은 ‘butler’가 아니라 ‘valet’나 ‘footman’ 같은 단어로 확인하라."
    }
   }
  ]

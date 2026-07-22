@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-22T18:37:36.968Z",
+ "updated": "2026-07-22T20:34:32.312Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-22T20:34:06.430Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'명사 + 전치사 + 명사' 또는 '형용사 + 전치사 + 명사' 구조가 반복적으로 오류 유발 패턴으로 나타나며, 특히 'to have broad knowledge to'와 같이 전치사 오용이 빈번하다. 또한 'It 's is'와 같이 중복된 조동사 오류도 빈번하게 관찰된다.",
+   "rule": "'명사/형용사 + 전치사 + 명사' 구조에서 전치사 오용 시, 해당 연어의 표준 전치사(예: 'knowledge of', 'obvious to')를 반드시 사용하도록 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-22T18:37:05.086Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'명사+전치사+명사' 구조에서 전치사 오용(besides of → factoring in, caused y → caused by)이 빈번하게 나타나며, 특히 'of'가 'by'로 대체되는 패턴이 다수 관찰된다. 또한 '명사+명사' 결합에서 복수형 오류(scienses → sciences)도 반복된다.",
    "rule": "'명사+전치사+명사' 구조에서 전치사 오용을 검증하는 문항을 출제할 때는 'of'가 'by'로 대체될 가능성을 우선 고려하고, '명사+명사' 결합에서는 복수형 오류(s, es, ies 등 접미사) 여부를 반드시 점검하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-17T19:35:43.725Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 코퍼스는 '명사구(NP) + 동사 + 전치사(to)' 구조에서 전치사(to)가 불필요한 경우가 빈번함을 보여준다. 특히 'study to the topics'처럼 전치사(to)가 중복 사용되는 오류가 두드러진다.",
-   "rule": "'~를 공부하다/이해하다'와 같은 동사가 전치사 없이 직접 목적어를 취할 수 있는 경우(예: study the topic, understand the ideas), 'to'를 삽입하지 않도록 명사구를 직접 연결하는 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",
