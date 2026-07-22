@@ -1,6 +1,74 @@
 {
- "updated": "2026-07-22T22:18:30.461Z",
+ "updated": "2026-07-22T23:28:32.131Z",
  "samples": [
+  {
+   "ts": "2026-07-22T23:27:25.203Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 1번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.25,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.25)",
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "limitations on how locative arguments appear in inversion constructions",
+     "effects of locative argument realization on inversion structures",
+     "locative argument realization in dative contexts",
+     "general restrictions on argument realization in syntax",
+     "locative argument realization without syntactic constraints"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Constraints on locative argument realization in linguistic inversion structures**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘effects of locative argument realization on inversion structures’를 오해했는데, 지문은 ‘one-case-per-clause’ 제약과 같은 ‘제한’(limitations)에 초점을 맞추고 있음. ‘effects’는 결과나 영향에 대한 설명이지만 지문은 구조적 제약에 대한 논의임. → 처방: ‘inversion structures’가 아니라 ‘제약(constraint)’에 주목하며 읽기. ‘effects’는 결과가 아니라 ‘제한’이 핵심임을 기억하기.\n③ 진단: ‘locative argument realization in dative contexts’를 선택했는데, 지문은 dative 가 locative 로 해석될 수 있음을 설명하지만 주제는 ‘제한’(limitations)에 있음. ‘dative contexts’만 강조하면 주제를 벗어남. → 처방: ‘locative argument realization’이 아니라 ‘제한(constraint)’이 주제임을 확인하고, ‘dative contexts’는 예시일 뿐임을 기억하기.\n④ 진단: ‘general restrictions on argument realization in syntax’를 선택했는데, 지문은 locative argument 에만 초점을 맞추고 있음. ‘general’이라는 말은 지문의 좁은 범위를 벗어나게 함. → 처방: ‘general’이 아니라 ‘locative argument realization’의 ‘제한(constraint)’임을 명확히 하고, ‘general’이라는 단어에 현혹되지 않기.\n⑤ 진단: ‘locative argument realization without syntactic constraints’를 선택했는데, 지문은 ‘one-case-per-clause’ 제약과 같은 ‘syntactic constraints’를 강조하고 있음. ‘without’는 지문의 핵심과 반대됨. → 처방: ‘without’라는 단어가 있으면 ‘제약’이 없다는 뜻이므로, 지문에서 ‘제약’을 강조하는지 확인하고 ‘without’는 제외하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Constraints on locative argument realization in linguistic inversion structures**]"
+   }
+  },
+  {
+   "ts": "2026-07-22T23:27:52.170Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "What positions fit in?\n\n(A) Although there is no direct evidence for lexicalisation of the prefix + verb complex, we may recall instances of accusative co-occurring with cefter + verb, only when the formative immediately precedes the verb (cf. above). And these may be indirect evidence for lexicalisation of the complex as a transitive verb governing the accusative as its direct object, as represented in (50) and (51). After (50) V erg abs/loc A Ν Ν Hig öa sona aefterridon\n\n(B) For (16) — (19), the datives might be taken as governed by prefixed verbs (e. cefterridan, aftercliopan), and therefore participant arguments thereof.\n\n(C) 93 (49) V loc Ν abs loc Ν Ν Him bij) fyr ongean The representations in (47) — (49) each contain two locative arguments, given that, unlike fram, which realises ablative, ongean realises locative. Given the \"one-case-per-clause\" constraint, then, as long as the datives me and him are interpreted as locative, they must be circumstantials.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 5,
+    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘(A)’가 ‘직접 증거는 없지만 간접 증거가 있다’는 논리를 펼치며 ‘(50)·(51)’을 언급하는 부분인데, 이를 ‘(C)’의 ‘위치격·소유격 논의’와 혼동한 듯하다. ‘(A)’는 ‘타동사화’에 초점을 맞추지만, 학생은 ‘위치격·소유격’ 논의로 오해한 듯하다. → 처방: ‘(A)’는 ‘접두사+동사’가 ‘타동사’로 Lexicalisation 되는지 여부를 다루는 글임을 먼저 확인하고, ‘(C)’는 ‘위치격·소유격’ 제약에 대한 설명임을 구분해서 읽기.\n② 진단: ‘(B)’가 ‘여격·소유격이 접두사 동사에 지배된다’는 내용인데, 이를 ‘(A)’의 ‘직접/간접 증거’ 논의와 섞어 ‘(A)’를 먼저 배치한 듯하다. ‘(B)’는 ‘접두사 동사의 지배격’에 대한 예시라 ‘(A)’보다 앞선다는 점을 놓쳤다. → 처방: ‘(B)’는 ‘접두사 동사가 여격·소유격을 지배하는지’에 대한 예시이므로, ‘(A)’의 ‘간접 증거’ 논의보다 먼저 나와야 한다는 흐름을 먼저 파악하기.\n③ 진단: ‘(C)’가 ‘위치격·소유격 제약’과 ‘둘째 위치격 Arg’에 대한 설명인데, 이를 ‘(A)’의 ‘타동사화’ 논의와 혼동하여 ‘(C)’를 ‘(A)’ 다음에 배치한 듯하다. ‘(C)’는 ‘한 문장당 한 격’ 제약에 대한 논의로, ‘(B)’의 예시보다 먼저 나와야 한다. → 처방: ‘(C)’는 ‘격 제약’이 핵심인 글이므로, ‘(B)’의 ‘접두사 동사의 지배격’ 예시보다 먼저 나와야 한다는 구조를 먼저 이해하기.\n④ 진단: ‘(C)’를 가장 먼저 배치해야 한다는 점은 맞았으나, ‘(B)’와 ‘(A)’의 순서를 반대로 배치했다. ‘(B)’는 ‘접두사 동사의 지배격’ 예시로 ‘(A)’의 ‘간접 증거’ 논의보다 앞선다는 점을 놓쳤다. → 처방: ‘(C)’ → ‘(B)’ → ‘(A)’ 순서가 ‘격 제약 → 접두사 동사의 지배격 → 간접 증거’로 이어지는 논리 흐름임을 기억하고, 각 글의 핵심 주제를 먼저 파악하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-22T20:32:54.785Z",
    "type": "요지",
@@ -311,74 +379,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Only in a utopia are most reformers seeking to create a schism. (포인트: Only + 주어 도치(are most reformers) + 강조(Only in a utopia))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-22T09:41:10.263Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "One of my ⓐ<u>friends</u> said he was ⓑ<u>called</u> for by the ⓒ<u>state</u> ⓓ<u>security</u> ⓔ<u>police</u>, the most powerful police authority in Egypt. A few days later, one of the sentry guards in my village told me that I had to visit a major in the Supreme State Security Police Department in my city. I was scared to death. “I did nothing to do with their business!” I said to my self. I tried to contact some acquaintances to find about that (off the record!), and to find out how far I might have been implicated in some work at variance with their interests. But deplorably enough, nobody told me any thing that could possibly soothe my jitters. Then I said to my self, “ you have to face the music yourself!” And I did. I went to the Headquarters of the State Security Police almost dying of fear. The receptionist kept me waiting for four hours making me",
-    "choices": [
-     "friends: A person other than a family member, spouse or lover whose company one enjoys an",
-     "called: (heading) To use one's voice.",
-     "state: A condition; a set of circumstances applying at any given time.",
-     "security: The condition of not being threatened, especially physically, psychologically, e",
-     "police: Having, or capable of exerting power, potency or influence."
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ의 풀이는 'powerful'의 정의이다. 'police'의 올바른 풀이: A civil force granted the legal authority for law enforcement and maintaining pu\n[오답 진단·처방]\n① 진단: ‘friends’를 ‘친구’라는 뜻으로만 알고 ‘지문에서 말하는 친구’를 떠올렸을 수 있습니다. 하지만 지문에서 ‘friends’는 ‘친구’가 아니라 ‘지인’을 의미합니다. 영영풀이에서 ‘A person other than a family member, spouse or lover whose company one enjoys’라는 설명은 ‘친구’를 뜻하는 일반적인 정의이지만, 지문에서는 더 넓은 의미로 사용된 것입니다. → 처방: 영영풀이에서 ‘friends’를 ‘친구’로만 생각하지 말고, ‘지인’ 또는 ‘아는 사람’이라는 넓은 의미도 포함할 수 있음을 기억하세요. 지문 전체를 꼼꼼히 읽고 단어의 맥락을 파악하는 연습을 하세요.\n② 진단: ‘called’를 ‘목소리를 사용하다’라는 뜻으로만 알고 ‘지문에서 사용된 의미’를 혼동했을 수 있습니다. 지문에서 ‘called’는 ‘소환되다’라는 뜻으로, ‘to be summoned’이라는 수동태로 쓰였습니다. 영영풀이에서 ‘(heading) To use one's voice.’는 ‘목소리를 사용하다’라는 뜻으로, 지문에서 사용된 의미와 다릅니다. → 처방: ‘called’를 영영풀이로만 생각하지 말고, 지문에서 사용된 문맥(수동태, ‘~에게 불려가다’)을 먼저 떠올리세요. 단어의 뜻은 문맥에 따라 달라질 수 있음을 기억하세요.\n③ 진단: ‘state’를 ‘상태’ 또는 ‘상황’이라는 뜻으로만 알고 ‘지문에서 사용된 의미’를 혼동했을 수 있습니다. 지문에서 ‘state’는 ‘국가’를 뜻하는 ‘State Security Police’(국가안전경찰)의 일부로 쓰였습니다. 영영풀이에서 ‘A condition; a set of circumstances applying at any given time.’는 ‘상태’를 뜻하는 일반적인 정의이지만, 지문에서는 ‘국가’라는 뜻으로 사용되었습니다. → 처방: ‘state’를 영영풀이로만 생각하지 말고, 지문에서 ‘State Security Police’라는 단어가 ‘국가안전’이라는 뜻으로 쓰였음을 기억하세요. 단어의 뜻은 문맥에 따라 달라질 수 있음을 기억하세요.\n④ 진단: ‘security’를 ‘안전’이라는 뜻으로만 알고 ‘지문에서 사용된 의미’를 혼동했을 수 있습니다. 지문에서 ‘security’는 ‘경찰’이라는 뜻의 ‘State Security Police’(국가안전경찰)에서 ‘안전’이라는 뜻을 담고 있지만, 영영풀이에서 ‘The condition of not being threatened, especially physically, psychologically, etc.’는 ‘안전’이라는 뜻의 일반적인 정의입니다. 지문에서 ‘security’는 ‘경찰’이라는 뜻으로 더 가까웠습니다. → 처방: ‘security’를 영영풀이로만 생각하지 말고, 지문에서 ‘State Security Police’라는 단어가 ‘국가안전’이라는 뜻으로 쓰였음을 기억하세요. ‘security’라는 단어는 ‘안전’이라는 뜻 외에도 ‘경찰’이라는 뜻으로도 사용될 수 있음을 기억하세요.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T06:43:59.683Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Unfortunately this is an entirely different set of \u0002-role assignments to what we have previously found. We concluded above that the theme \u0002-role is assigned to the specifier of a thematic verb, not its complement position. The agent, on the other hand, was assigned to the specifier of a light verb taking a VP complement. If we are to maintain the UTAH, either the structure in (45) is inaccurate, or our analyses of unaccusative and light verbs is. Moreover, the structure of the VP in (45) is simple, in comparison to that of verbal complexes involving light verbs, as in (32), for example. Yet the event structure expressed here is not simple. In the butler opened the door, there is an event involving the butler doing something and an event involving the door being open and clearly the first event causes the second. Hence <u>the event structure is: (46) e = e1 → e2 : e1 = ‘the butler did something’</u>",
-    "choices": [
-     "The event structure implies that the resulting state (e2) led to the butler's action (e1), reversing the original sequence.",
-     "The event structure occasionally shows a cause-and-effect relationship between actions and resulting states, but not always.",
-     "The event structure shows that the resulting state e2 causes the initial action e1 to occur.",
-     "The event structure suggests a sequential cause-and-effect relationship where one action directly leads to a resulting state.",
-     "The event structure indicates a simultaneous coexistence of two actions without any logical progression."
-    ],
-    "answer": 4,
-    "explanation": "밑줄 친 부분은 'The event structure suggests a sequential cause-and-effect relationship where one action directly leads to a resulting state.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘e1 → e2’의 화살표가 ‘e2가 e1을 일으켰다’는 의미로 오해한 듯. 지문에서 ‘e1이 e2를 일으켰다’(e1 causes e2)라 명시했으나, ‘e2가 e1을 일으켰다’는 역방향으로 뒤집어 읽음. → 처방: ‘→’가 ‘원인 → 결과’를 뜻함을 기억하고, 화살표 방향과 ‘cause’의 의미를 정확히 짚어 읽기.\n② 진단: ‘occasionally’(때때로)라는 한정어가 지문에 없음에도, ‘때때로’가 포함된 선지를 선택. 지문은 ‘e1이 e2를 일으켰다’는 ‘항상’(always) 성립하는 인과관계를 설명한 것임. → 처방: ‘항상’ 또는 ‘반드시’가 지문에 있는지 확인하고, 한정어나 예외가 없으면 배제하기.\n③ 진단: ‘e2가 e1을 일으켰다’는 잘못된 역방향 인과관계를 선택. 지문은 ‘e1이 e2를 일으켰다’(e1 causes e2)라 명시했으나, 이를 반대로 해석함. → 처방: ‘e1 → e2’의 화살표가 ‘e1이 e2의 원인’이라는 뜻임을 기억하고, 화살표 방향과 인과관계의 순서를 정확히 짚기.\n⑤ 진단: ‘동시공존’(simultaneous coexistence)과 ‘논리적 진행 없음’을 선택했으나, 지문은 ‘e1이 e2를 일으켰다’는 ‘순차적 인과관계’를 분명히 설명함. → 처방: ‘→’가 ‘순차적 진행’을 뜻함을 확인하고, ‘동시성’이나 ‘논리적 무관계’를 암시하는 선지는 배제하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
