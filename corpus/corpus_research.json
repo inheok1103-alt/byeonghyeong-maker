@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-21T23:15:57.200Z",
+ "updated": "2026-07-22T00:11:54.679Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-22T00:11:17.516Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어에서 동사 뒤에는 동명사(~ing)가 오는 경우가 많으며, 조동사 뒤에는 동사원형이 온다. 또한 문장 구조가 불완전하면 동사나 주어의 생략이 필요한 경우가 많다.",
+   "rule": "조동사(should, can 등) 뒤에는 동사원형이 오며, 동사 뒤에는 동명사(~ing)가 오는 경우가 많으므로, 이를 오답으로 활용하여 문법 오류를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-21T23:15:34.619Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "과거형 동사와 현재형 동사가 병렬 구조로 나열될 때, 동사의 시제 일관성과 보어/부사 형태의 정확한 사용이 중요하다. 특히 'recovered good' → 'recovered well'과 같이 보어 형용사가 부사 형태로 변환되어야 하는 패턴이 빈번하다.",
    "rule": "원서 코퍼스에서 확인된 병렬 구조의 동사 시제 일치와 보어/부사 형태 변환 규칙을 적용하여, 'A got better and recovered really good' → 'A got better and recovered really well'와 같이, 병렬 동사 뒤 보어 형용사를 부사 형태로 변환하는 오류를 교정하는 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-17T00:14:17.786Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "명사+명사 연어(N+N collocation)가 문법적 오류 발생 빈도가 높으며, 특히 'thoughts our lives' → 'Throughout our lives'와 같이 전치사+명사 구조로의 교정이 빈번하다.",
-   "rule": "한국어 학습자 대상 내신 변형문제에서, '명사+명사' 형태의 연어(N+N collocation)를 전치사+명사(Prep+N) 또는 동사+명사(V+N) 구조로 교정하는 오답 유형을 30% 이상 포함시켜 오류 패턴을 학습시킨다.",
    "sample": [
     "old english",
     "university press",
