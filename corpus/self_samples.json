@@ -1,6 +1,73 @@
 {
- "updated": "2026-07-22T12:07:29.197Z",
+ "updated": "2026-07-22T14:26:53.058Z",
  "samples": [
+  {
+   "ts": "2026-07-22T14:24:48.416Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Sa hun til dattera mi said she to daughter my at faren min er kommet alene that father my is come alone og føler sig bedre? and feels himself better Here we have many of the same sorts of things that motivated Twain to say, “A person who has not studied German can form no idea of what a perplexing language it is.” The same Said she . . . ? (Sa hun . . . ?), is come (er kommet), and “feeling yourself” (føler sig), plus gender: the my for my daughter is mi but the my for my father is min. That is, in a sense one “should” be able to say in English Said she to my daughter that my father alone come is and himself better feels? After all, you can say something similar in every other offshoot of Proto-Germanic but English. <u>Only to English speakers does the sentence sound like something someone with brain damage would say.</u> This shows that something was",
+    "choices": [
+     "To those unfamiliar with English grammar, the sentence’s odd structure might seem like a sign of cognitive impairment, highlighting how grammar shapes what we consider normal.",
+     "The sentence’s illogical flow tricks even native speakers into thinking it’s a symptom of brain damage, proving grammar’s power to distort perception.",
+     "People who grasp English conventions notice the sentence’s unnaturalness, which occasionally makes them question the speaker’s mental state.",
+     "Since native speakers find the sentence illogical, it suggests that grammatical rules are universally tied to cognitive function across all languages.",
+     "The sentence structure appears unnatural and illogical only to those accustomed to English grammar, revealing how deeply ingrained linguistic conventions shape perception."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'The sentence structure appears unnatural and illogical only to those accustomed to English grammar, revealing how deeply ingrained linguistic conventions shape perception.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Only to English speakers'가 핵심임을 무시하고 'unfamiliar with English grammar'라는 일반적 표현에만 주목해 오독. → 처방: 지문에서 강조된 'Only to English speakers'를 정확히 짚고, 'English grammar'에만 초점을 맞춰 풀기.\n② 진단: 지문의 'tricks even native speakers' 부분을 'even native speakers'로 축소해 오해하고, 'distort perception'이라는 과장된 표현에 끌림. → 처방: 지문에서 'Only to English speakers'와 'does not sound like'를 정확히 연결해, 'tricks'가 아닌 'unnaturalness'에 주목하기.\n③ 진단: 지문의 'brain damage' 표현을 'question the speaker’s mental state'로 왜곡해, 지문의 핵심 논점(문법의 영향력)을 놓침. → 처방: 지문에서 'brain damage'는 예시일 뿐임을 인식하고, 'unnaturalness'와 'grammar'의 관계를 정확히 파악하기.\n④ 진단: 지문의 'universally tied to cognitive function'이라는 과장된 결론을 'grammatical rules are universally tied'로 오해하고, 지문의 한계(영어만의 특성)를 무시함. → 처방: 지문에서 'only to English speakers'와 'offshoot of Proto-Germanic'을 확인해, 영어만의 특성을 정확히 짚기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-22T14:25:30.984Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(73%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어는 게르만어족의 공통 구조 패턴을 벗어난 후 언어의 통사적 규칙을 크게 훼손하였다.",
+     "영어의 통사 규칙은 게르만어족의 일부 특징만을 잃어 다른 언어와 뚜렷한 차이를 보였다.",
+     "게르만어족의 후손 언어 대부분은 영어와 동일한 통사적 규칙을 공유하지 않는다.",
+     "영어는 게르만어족의 원형적 구조를 상당 부분 유지하여 후손 언어와 구별된다.",
+     "영어는 게르만어족의 공통 구조 패턴에서 크게 벗어나 언어의 통사적 규칙을 이탈하였다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'English has deviated so far from its Germanic roots that its syntax now violates the core structural patterns shared by all other Proto-Germanic descendants.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘공통 구조 패턴을 벗어났다’는 말은 틀렸지만, ‘통사적 규칙을 크게 훼손하였다’는 말은 지문에서 ‘뇌 손상자 같은 말’로 표현된 영어의 특성을 정확히 짚었다. 학생은 ‘공통 구조 패턴’을 ‘원형적 구조’로 오해한 듯하다. → 처방: ‘공통 구조 패턴’이란 원형적 구조를 뜻한다는 점을 기억하고, 지문의 ‘원형적 구조’와 ‘벗어남’을 구분해서 읽기.\n② 진단: ‘일부 특징만을 잃어’란 말은 지문에서 영어가 게르만어족의 ‘원형적 구조’를 ‘상당 부분’ 잃었다고 한 것과 모순된다. 학생은 ‘일부’와 ‘상당 부분’을 혼동한 듯하다. → 처방: ‘일부’와 ‘상당 부분’을 비교하며 읽고, 지문에서 ‘상당 부분’을 강조한 이유를 찾기.\n③ 진단: ‘게르만어족의 후손 언어 대부분’이란 말은 지문에서 ‘다른 게르만어파 언어’는 ‘원형적 구조’를 유지했다고 한 것과 반대된다. 학생은 ‘공통 구조 패턴’을 ‘원형적 구조’로 오해한 듯하다. → 처방: ‘공통 구조 패턴’이란 원형적 구조를 뜻한다는 점을 기억하고, 지문의 ‘원형적 구조’를 유지한 언어와 벗어난 영어를 구분해서 읽기.\n④ 진단: ‘원형적 구조를 상당 부분 유지’라고 한 말은 지문에서 영어가 ‘원형적 구조’를 ‘상당 부분 잃었다’고 한 것과 반대된다. 학생은 ‘유지’와 ‘벗어남’을 혼동한 듯하다. → 처방: ‘유지’와 ‘벗어남’을 비교하며 읽고, 지문에서 영어가 ‘벗어났다’는 사실을 정확히 파악하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: English has deviated so far from its Germanic roots that its syntax now violates the core structural patterns shared by all other Proto-Germanic descendants.]"
+   }
+  },
   {
    "ts": "2026-07-22T12:06:37.486Z",
    "type": "요약문AB",
@@ -282,76 +349,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'demand for clear, complex writing over oversimplified sentences'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: 지문은 '간단한 문장'만으로 복잡한 생각을 표현할 수 없다고 강조하며, 'Dick-and-Jane sentences(아동용 문장)'를 예로 들며 단순화를 반대한다. 하지만 이 선지는 '모든 문장은 짧고 직접적이어야 한다'고 오해하여 지문의 반대 의미를 담았다. → 처방: 지문에서 '간단한 문장'의 한계를 지적하는 부분을 정확히 읽고, '복잡한 생각'을 표현할 때는 문장 길이나 단순화 여부가 아니라 '명료성'과 '적절성'을 중시해야 한다는 점을 기억하자.\n③ 진단: 이 선지는 '복잡한 생각을 단순화해야 한다'고 오해했는데, 지문은 '복잡한 생각을 너무 짧고 단순하게 표현하지 말라'고 말한다. 즉, 'oversimplification(과도한 단순화)'을 반대하는 내용이 아니라 오히려 '단순화의 반대'를 주장하는 지문이다. → 처방: 지문에서 '복잡한 생각을 표현할 때는 문장이 짧아도 안 된다'는 부분을 집중해서 읽고, '단순화'가 아니라 '명료하면서도 복잡한 생각을 담는 법'을 찾아야 한다는 점을 명심하자.\n④ 진단: 이 선지는 '모든 글쓰기는 기본적이고 아이 같은 스타일을 따라야 한다'고 오해했는데, 지문은 '아동용 문장(Dick-and-Jane sentences)'을 예로 들며 '단순한 글쓰기'를 반대한다. 즉, '기본적이고 아이 같은 스타일'을 강요하는 것이 아니라 '복잡한 생각을 담은 명료한 글쓰기'를 권장한다. → 처방: 지문에서 '아동용 문장'이 좋은 예시가 아니라는 점을 기억하고, '기본 스타일'이나 '아이 같은 스타일'이 아니라 '복잡한 생각을 담은 명료한 글쓰기'가 중요하다는 점을 떠올리자.\n⑤ 진단: 이 선지는 '상속세 폐지를 글쓰기 스타일로 요구한다'고 오해했는데, 지문은 '상속세 폐지 요구'를 예시로 들며 '명료한 글쓰기'의 중요성을 설명한다. 즉, '상속세'는 글쓰기 스타일과 무관한 주제이며, 글쓰기 스타일의 문제는 아니다. → 처방: 지문에서 '상속세 폐지 요구'는 '복잡한 생각을 담은 명료한 글쓰기'의 예를 들기 위한 예시일 뿐이라는 점을 기억하고, '글쓰기 스타일'과 '정책 요구'를 구분해서 읽어야 한다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: demand for clear, complex writing over oversimplified sentences]"
-   }
-  },
-  {
-   "ts": "2026-07-22T00:11:08.733Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "There is a demand for a repeal of the inheritance tax. ✓ We demand that Congress repeal the inheritance tax. <u>Clarity, Not Simplemindedness</u> Your readers want you to write clearly, but not in Dick-and-Jane sentences. Some argue that all sentences should be short, no more than fifteen or twenty words. But many mature ideas are too ­complicated to express so compactly. In Lessons 10 and 11 we look at ways to revise too-short, too-simple sentences into a style that is readable but still complex enough to communicate ­complex ideas. In Your Own Words E xercise 3.8 Go through a page of your own writing. Underline whole ­subjects and bracket verbs. Now, think about the story you are telling. ­Circle the main characters and box their actions, wherever they ­appear. Look especially for actions hidden in nominalizations. What do you notice? How clear will a reader likely find your writing? If necessary, revise to align characters with subjects and specific actions with verbs.",
-    "choices": [
-     "Writing that is too simple is always better than writing that is complex.",
-     "Writing should avoid complex ideas to make it easier for readers to understand.",
-     "Clear writing always means using simple words, regardless of the depth of the topic.",
-     "The main goal of writing is to simplify sophisticated concepts so they can be comprehended by everyone.",
-     "Effective writing prioritizes clear expression of sophisticated ideas over oversimplified, childish language."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'Effective writing prioritizes clear expression of sophisticated ideas over oversimplified, childish language.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘Writing that is too simple is always better than writing that is complex’를 골랐다면, 지문에서 ‘not in Dick-and-Jane sentences(단순한 문장만 쓰는 것이 아님)’와 ‘complex enough to communicate complex ideas(복잡한 생각을 전달하기에 충분히 복잡해야 함)’를 오독한 것입니다. → 처방: ‘복잡한 생각’을 담은 글은 단순화하지 말고, ‘읽기 쉬운’ 수준에서 복잡성을 유지하도록 쓰라는 지문을 다시 읽고, ‘항상 단순함이 낫다’는 오해를 버리세요.\n② 진단: ‘Writing should avoid complex ideas’를 골랐다면, 지문에서 ‘mature ideas(성숙한 생각)’가 ‘complex ideas(복잡한 생각)’와 같음을 혼동한 것입니다. 또한 ‘readable but still complex enough(읽기 쉬우면서도 충분히 복잡해야 함)’을 무시했습니다. → 처방: ‘복잡한 생각’을 ‘피해야 할 대상’이 아니라 ‘전달해야 할 대상’으로 이해하고, ‘읽기 쉬운 글’이란 ‘단순한 글’이 아니라 ‘복잡한 생각을 명확히 전달하는 글’이라는 점을 기억하세요.\n③ 진단: ‘Clear writing always means using simple words’를 골랐다면, 지문에서 ‘Clarity, Not Simplemindedness(명확성, 단순-mindedness 가 아님)’와 ‘complex enough to communicate complex ideas’를 오독한 것입니다. → 처방: ‘명확한 글’이란 ‘단어의 단순성’이 아니라 ‘생각의 명확한 전달’이라는 점을 강조한 지문을 다시 읽고, ‘단어의 단순성’을 ‘글의 명확성’으로 혼동하지 마세요.\n④ 진단: ‘The main goal of writing is to simplify sophisticated concepts’를 골랐다면, 지문에서 ‘Clarity, Not Simplemindedness’와 ‘complex enough to communicate complex ideas’를 오독한 것입니다. 또한 ‘simplify’를 ‘복잡한 생각을 단순화하는 것’으로 오해했습니다. → 처방: ‘복잡한 생각을 단순화하는 것’이 아니라 ‘복잡한 생각을 명확히 전달하는 것’이 글의 목표라는 점을 기억하고, ‘simplify’를 ‘단순화’가 아니라 ‘명확화’로 재해석하세요.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-21T22:14:57.740Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "Reuisiпg апd recycliпg сhипhs :tivity сап э ýharp ... ... еуе (for) Рrераrе lumп 1rts аrе аЫе апd the first rd column Е, you сап tround lking for iry 9.7: иЫе ions tlrat ihis way 'the цld Ье ls out nds with оr еасh оr i*uP::.: frrcd her... :€Slgпеr... -]ake... naS run... -hey went... school together фе'че kпоwп each ... i:::9_tl9l1_9r y9_1I: frшe 2.6: Begtnnings and endings of chunks Ее Ь rill see frоm the examples above that thе mix of items suggested for this activity is quite diverse. lЬвле: r iлKlividual words that might Ье genuinely new at this level, е.g. sепsе . ш chunks containing familiar words, e.g. а sharp еуе . фчпks containing seemingly easy words that students tend to make mistakes with, e.g. learners о,ftеп say Tbql lеаrпеd at the same sсйооl instead of Тhеу шепt to school together . ftilly grammaticalized sentences, е.g . We'ue hпоwп еасh other for years (you сап include chunks like фis regardless of whеthеr the present perfect has been'covered' оп the соursе оr not). 45 . languages easaly ... а lift ... boutique ... а decision ... over (Ьу а car)",
-    "choices": [
-     "이 활동은 학습자에게 새로운 단어뿐만 아니라 친숙한 단어들도 포함한다",
-     "학생들은 종종 '우리는 같은 학교에서 배웠다'라고 잘못 말한다",
-     "이 활동은 문법화된 문장도 포함할 수 있다",
-     "이 활동은 학습자에게 새로운 단어뿐만 아니라 친숙한 단어들도 포함하지 않는다",
-     "이 활동은 오류가 발생하기 쉬운 쉬운 단어들로 구성된 덩어리들도 다룬다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'individual words that might be genuinely new at this level'와 'chunks containing familiar words'가 모두 포함된다고 명시했는데, 이를 '포함하지 않는다'로 오해한 듯함. → 처방: 지문에서 언급된 '포함한다'는 내용을 정확히 읽고, '포함하지 않는다'는 선지는 무조건 제외하도록 주의하기.\n② 진단: 지문에서 'students often say Tbql learned at the same school instead of They went to school together'라고 오류 예시를 들었는데, 이를 '잘못 말한다'로 이해하지 못하고 반대로 오독한 듯함. → 처방: 지문 속 오류 예시를 꼼꼼히 읽고, '잘못 말한다'는 선지가 지문과 일치하는지 확인하기.\n③ 진단: 지문에서 'fully grammaticalized sentences'가 포함될 수 있다고 명시했는데, 이를 '포함할 수 있다'로 이해하지 못하고 반대로 오독한 듯함. → 처방: 지문에서 'fully grammaticalized sentences'가 포함된다고 쓰였는지 확인하고, '포함하지 않는다'는 선지는 무조건 제외하기.\n⑤ 진단: 지문에서 'chunks containing seemingly easy words that students tend to make mistakes with'가 포함된다고 명시했는데, 이를 '오류가 발생하기 쉬운 덩어리'로 이해하지 못하고 반대로 오독한 듯함. → 처방: 지문 속 'tend to make mistakes'라는 표현을 정확히 읽고, '오류가 발생하기 쉬운'이라는 말이 포함된 선지를 선택하도록 주의하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
