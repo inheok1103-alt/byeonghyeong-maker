@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-22T16:50:31.480Z",
+ "updated": "2026-07-22T18:37:36.971Z",
  "samples": [
+  {
+   "ts": "2026-07-22T18:36:53.040Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "Sentences like (2a, b) are called ⓐ<u>expletive</u> structures because they contain the expletive ⓑ<u>pronoun</u> there. (The fact that there is not a locative pronoun in this kind of use is shown by the impossibility of replacing it by locative here or questioning it by the interrogative locative where? or focussing it by assigning it contrastive stress.) For the time being, let’s focus on the derivation of Belfast English sentences like (2a, b) before turning to consider the derivation of Standard English sentences like (1a, b). One question to ask about the sentences in (2a, b) is where the expletive pronoun there is positioned. Since there immediately precedes the tensed ⓒ<u>antagonist</u> should/have, a reasonable conjecture is that there is the ⓓ<u>subject</u>/specifier of should/have and hence occupies the spec-T position. If this is so, we’d expect to find that the auxiliary can move in front of the expletive subject (via T-to-C ⓔ<u>movement</u>) in questions – and this is indeed the case in Belfast English, as the sentences in (3) below illustrate:",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ: 문맥상 'auxiliary'가 와야 하는데 'antagonist'가 쓰여 부적절하다 — 앞 문장에서 'expletive pronoun there'가 Belfast English 에서 주어(spec-T) 역할을 하며, 'should/have'와 같은 조동사(auxiliary)와 결합한다고 설명한 후, 조동사가 expletive 주어 앞에 나올 수 있음을 보인다는 문맥에서 'antagonist'(적대자, 반대자)라는 단어는 문법적 역할과 문맥의 방향성을 완전히 역전시킨다.. [극성] 정답=조동사의 기능/존재(auxiliary) ↔ 오답=상호작용의 반대(antagonist)\n[오답 진단·처방]\n① 진단: ‘expletive structures’라는 말이 문맥상 맞지 않음. 지문에서 ‘expletive structures’는 ‘there’를 포함하는 문장 구조를 가리키는 말이고, ‘expletive’는 문법 용어로 ‘빈 자리 대명사’를 뜻함. 학생은 ‘expletive’를 ‘억지스러운 구조’로 오해했을 수 있음. → 처방: ‘expletive’를 ‘빈 자리 대명사 구조’라고 외우고, 문법 용어의 뜻을 정확히 기억하기.\n② 진단: ‘pronoun’이라는 말이 ‘there’를 가리키는 데 맞지 않음. ‘there’는 문법에서 ‘빈 자리 대명사’로 쓰이지만, ‘pronoun’은 보통 대명사를 가리키는 일반적인 용어임. 학생은 ‘there’를 일반적인 대명사로 오해했을 수 있음. → 처방: ‘there’를 ‘빈 자리 대명사’라고 정확히 이해하고, ‘pronoun’이란 용어의 범위를 기억하기.\n④ 진단: ‘antagonist’라는 말이 문맥상 맞지 않음. 지문에서 ‘antagonist’는 ‘should/have’를 가리키는 말이고, 문법 용어로 ‘조동사’를 뜻함. 학생은 ‘antagonist’를 ‘반대자’로 오해했을 수 있음. → 처방: ‘antagonist’를 ‘조동사’라고 외우고, 문법 용어의 뜻을 정확히 기억하기.\n⑤ 진단: ‘movement’라는 말이 문맥상 맞지 않음. 지문에서 ‘movement’는 ‘조동사가 there 앞으로 이동하는 현상’을 가리키는 말이고, 문법 용어로 ‘이동’을 뜻함. 학생은 ‘movement’를 ‘움직임’으로 오해했을 수 있음. → 처방: ‘movement’를 ‘문법적 이동’이라고 이해하고, 문법 용어의 뜻을 정확히 기억하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-22T18:37:03.066Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 17 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 7,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'expletive', 'auxiliary', 'questions' / 15~19단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] In Belfast English, the expletive pronoun *there* occupies the subject position before auxiliary movement occurs in questions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-22T16:49:15.928Z",
    "type": "글의순서",
@@ -308,61 +362,6 @@
     ],
     "answer": 4,
     "explanation": "정답 ⓔ의 풀이는 'butler'의 정의이다. 'event'의 올바른 풀이: An occurrence; something that happens.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘assigned’를 ‘할당하다’로만 알고 ‘지정하다’(to designate)도 포함된다는 점을 놓쳤다. 지문에서 ‘theme role 이 …에 할당된다’(assigned to)라는 표현으로 두 뜻 모두 쓰였다. → 처방: ‘assign’의 뜻을 사전에서 ‘할당하다’와 ‘지정하다’를 모두 찾아보고, 지문에서 쓰인 용법을 다시 확인하라.\n② 진단: ‘light’를 ‘가벼운’이라는 뜻만 떠올렸고, 문맥에서 ‘light verb’(경량동사)로 쓰인 ‘light’를 ‘가시적 전자기파’(visible electromagnetic radiation)로 오해했다. → 처방: ‘light’의 뜻을 ‘가벼운’이 아닌 다른 뜻으로 쓸 때는 문맥(예: ‘light verb’)을 먼저 살피고, 사전에서 관련 뜻을 찾아보라.\n③ 진단: ‘structure’를 ‘구조’로만 알고 ‘구성된 부분들로 이뤄진 전체’(cohesive whole built up of distinct parts)라는 뜻을 놓쳤다. 지문에서 ‘VP 의 구조’(structure of the VP)가 단순하다고 말할 때 이 뜻을 사용했다. → 처방: ‘structure’의 뜻을 ‘구조’뿐 아니라 ‘구성체’로도 해석할 수 있음을 기억하고, 사전에서 예문을 확인하라.\n⑤ 진단: ‘event’를 ‘사건’으로만 알고 ‘하인’(manservant)으로 오해했다. 지문에서 ‘event structure’(사건 구조)로 쓰였고, ‘butler’는 ‘하인’이 아닌 ‘집사’를 뜻한다. → 처방: ‘event’의 뜻을 ‘사건’과 ‘행사’ 등으로 먼저 떠올리고, ‘manservant’라는 뜻은 ‘butler’가 아니라 ‘valet’나 ‘footman’ 같은 단어로 확인하라."
-   }
-  },
-  {
-   "ts": "2026-07-22T06:44:43.228Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'cause-and-effect', 'relationship', 'traditional' / 10~14단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The event structure reveals a cause-and-effect relationship that challenges traditional syntactic analyses.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-22T03:49:59.403Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": -0.5,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "변별도 낮음(D̂=-0.50)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "EXERCISE 28b — Write three sentences using the objects in parentheses. Be sure to put the objects in the right place. 1. The White House (A) [beefed up / weakened down]. (security, it) 2. The police are (B) [uniting down / breaking up]. (the protest, it) 3. A trained technician ought to (C) [cancel out / carry out]. (the experiment, it) 4. The foundation gave away. (the money, it) 5. Susie always messes up. (the bathroom, it) 6. Todd stood up. (Heather, her) EXERCISE 28c — Write answers to the questions using phrasal verbs and participle adjectives from this unit. Make all the phrasal verbs passive. 1. Dr. Wood will do the test of the new drug. What will happen to the test? 2. The statue was smashed by thieves. What happened to the gold statue? 3. The children made the house dirty and disorganized. What happened to the house? 4. In Question 3, how would you describe the house? 5. Mike’s friend promised to come to his house, but he didn’t. What happened to Mike? 6. Karen called Sarah, but Sarah was at school. Sarah didn’t call Karen later. What didn’t happen to Karen?",
-    "choices": [
-     "(A) weakened down - (B) uniting down - (C) cancel out",
-     "(A) weakened down - (B) breaking up - (C) carry out",
-     "(A) weakened down - (B) breaking up - (C) cancel out",
-     "(A) beefed up - (B) breaking up - (C) carry out",
-     "(A) beefed up - (B) uniting down - (C) cancel out"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) beefed up - (B) breaking up - (C) carry out. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘weakened down’을 골랐는데, ‘weakened down’이란 말은 문법적으로 틀리며 ‘beef up’이 ‘보안’을 강화한다는 뜻이므로 문맥에 맞지 않는다. ‘beef up’이 ‘강화하다’라는 뜻임을 몰라서 생긴 오류다. → 처방: ‘beef up’이 ‘강화하다’라는 뜻임을 기억하고, ‘The White House beefed up security’를 떠올려라.\n② 진단: ‘uniting down’을 골랐는데, ‘uniting down’이란 말은 문법적으로 맞지 않으며 ‘break up’이 ‘해체하다’라는 뜻이므로 문맥에 맞지 않는다. ‘break up’이 ‘해체하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘break up’이 ‘해체하다’라는 뜻을 기억하고, ‘The police are breaking up the protest’를 떠올려라.\n③ 진단: ‘cancel out’을 골랐는데, ‘cancel out’이 ‘무효화하다’라는 뜻이므로 ‘실험을 수행하다’라는 문맥에 맞지 않는다. ‘carry out’이 ‘수행하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘carry out’이 ‘수행하다’라는 뜻을 기억하고, ‘A trained technician ought to carry out the experiment’를 떠올려라.\n⑤ 진단: ‘uniting down’을 골랐는데, ‘uniting down’이란 말은 문법적으로 맞지 않으며 ‘break up’이 ‘해체하다’라는 뜻이므로 문맥에 맞지 않는다. ‘break up’이 ‘해체하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘break up’이 ‘해체하다’라는 뜻을 기억하고, ‘The police are breaking up the protest’를 떠올려라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-22T16:50:31.476Z",
+ "updated": "2026-07-22T18:37:36.968Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-22T18:37:05.086Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거 시제 오류('last monthe'→'last month')와 접속사 오류('beacuse'→'because')가 가장 빈번하며, 불필요한 전치사('for skin')나 동사 형태('studing'→'study')도 자주 나타난다. 또한, 문장 간 논리적 연결 부족(예: 'so let us talk')이 난이도 조절을 어렵게 한다.",
+   "rule": "CEFR B1 수준 내신 문항에서는 과거 시제 동사(regular/irregular) 오류와 접속사('because', 'so', 'but') 오류를 반드시 포함하여 문법적 난이도를 높인다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-22T16:50:08.050Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 코퍼스는 '명사구(NP) + 동사 + 전치사(to)' 구조에서 전치사(to)가 불필요한 경우가 빈번함을 보여준다. 특히 'study to the topics'처럼 전치사(to)가 중복 사용되는 오류가 두드러진다.",
    "rule": "'~를 공부하다/이해하다'와 같은 동사가 전치사 없이 직접 목적어를 취할 수 있는 경우(예: study the topic, understand the ideas), 'to'를 삽입하지 않도록 명사구를 직접 연결하는 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-17T17:33:04.719Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형 동사(choosed) 오용과 부사(lastly) 위치 오류, 또는 문장 구조의 비약적 변화(Thus in concordance with → Thus I agree with)가 빈번하다는 점에서, 문법 오류는 종종 '과거형 동사의 오용'과 '어순/구조적 조율의 실패'로 귀결됨을 확인했다.",
-   "rule": "'과거형 동사를 쓸 때, 과거분사 형태(-ed)가 아닌 단순 과거형(-ed)을 오용하지 않도록 하며, 특히 'last'는 부사(lastly)로 변환될 가능성이 높으므로 문맥에 따라 '마지막으로'라는 뜻의 부사로 재구성하라.",
    "sample": [
     "old english",
     "university press",
