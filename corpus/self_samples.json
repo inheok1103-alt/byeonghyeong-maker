@@ -1,6 +1,74 @@
 {
- "updated": "2026-07-22T14:26:53.058Z",
+ "updated": "2026-07-22T16:50:31.480Z",
  "samples": [
+  {
+   "ts": "2026-07-22T16:49:15.928Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "FORMAL COMPOSITION With predicate variables we can define intersective modifiers, including modifier adjectives, more explicitly – this discussion can replace the simple rule in (39) above.\n\n(A) The different kinds of adjectives are illustrated in (51), where modifier blue is of type <, >: (51) a. predicative adjective: The umbrella is blue. ‖ blue ‖ = λx[BLUE(x)]\n\n(B) An adjective like red in The car Jones liked was red is called a predicative adjective and generally appears in the syntactic predicate of the sentence. A predicative adjective is of type (red, flat, tasty) or type <e, > (proud, fond, afraid ).\n\n(C) A modifier adjective, on the other hand, is like the underlined adjectives in the red hat, his last thought, and any old iron, where red modifies the predicate hat, last modifies the predicate thought, and old modifies the predicate iron. A modifier adjective takes a predicate as its argument and forms a predicate of the same type.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 3,
+    "explanation": "원문 전개 순서는 (B) - (C) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-22T16:49:51.148Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "ADJECTIVES: PREDICATES or MODIFIERS?",
+     "ADJECTIVES CANNOT BE BOTH PREDICATES and MODIFIERS",
+     "ADJECTIVE TYPES: PREDICATES VS. MODIFIERS",
+     "ADJECTIVES as PREDICATES or MODIFIERS: TYPE DIFFERENCES",
+     "DIFFERENT TYPES of ADJECTIVES: PREDICATE VS. MODIFIER"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'ADJECTIVES AS PREDICATES OR MODIFIERS: TYPE DIFFERENCES**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 정도·빈도를 왜곡· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: ‘predicates’와 ‘modifiers’를 단순 대립으로만 이해하고, ‘type’이라는 개념을 고려하지 않았다. 지문에서 ‘type <e, t>’이나 ‘type <<e, t>, <e, t>>’로 설명하는 ‘형용사의 유형 차이’를 놓쳤다. → 처방: 형용사의 역할(예: predicative vs. modifier)과 그 ‘타입’(예: <e, t> vs. <<e, t>, <e, t>>)을 함께 떠올리며 선지를 읽기.\n② 진단: ‘둘 다 될 수 없다’는 ‘배타적 대립’을 주장하는 것으로 오해했다. 지문은 형용사가 ‘predicate’ 또는 ‘modifier’로 기능할 수 있음을 설명하지만, ‘type’이라는 ‘차이’를 강조한다는 점을 놓쳤다. → 처방: ‘둘 다 될 수 없다’는 주장이 아니라 ‘어떻게 다른가’를 묻는 선지임을 확인하고, ‘type’이라는 키워드를 찾아보기.\n③ 진단: ‘PREDICATES VS. MODIFIERS’를 ‘대립’으로만 보고, ‘TYPE’이라는 개념을 제목에 포함하지 않았다. 지문은 ‘type’이라는 용어를 핵심적으로 사용하고 있음을 간과했다. → 처방: 제목에 ‘TYPE’이라는 단어가 포함된 선지를 우선적으로 확인하기. ‘대립’보다는 ‘차이’를 강조하는 선지를 찾기.\n⑤ 진단: ‘DIFFERENT TYPES’를 ‘형용사의 종류’로만 해석하고, ‘predicate’와 ‘modifier’의 ‘타입 차이’를 구체적으로 담지 못했다. 지문은 ‘predicate’의 ‘타입’(예: <e, t>)과 ‘modifier’의 ‘타입’(예: <<e, t>, <e, t>>)을 비교한다는 점을 놓쳤다. → 처방: ‘DIFFERENT TYPES’가 ‘형용사의 타입 차이’를 뜻함을 확인하고, ‘predicate vs. modifier’의 ‘타입’을 비교하는 선지를 찾기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: ADJECTIVES AS PREDICATES OR MODIFIERS: TYPE DIFFERENCES**]"
+   }
+  },
   {
    "ts": "2026-07-22T14:24:48.416Z",
    "type": "밑줄함의",
@@ -295,60 +363,6 @@
     ],
     "answer": 4,
     "explanation": "정답 조합: (A) beefed up - (B) breaking up - (C) carry out. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘weakened down’을 골랐는데, ‘weakened down’이란 말은 문법적으로 틀리며 ‘beef up’이 ‘보안’을 강화한다는 뜻이므로 문맥에 맞지 않는다. ‘beef up’이 ‘강화하다’라는 뜻임을 몰라서 생긴 오류다. → 처방: ‘beef up’이 ‘강화하다’라는 뜻임을 기억하고, ‘The White House beefed up security’를 떠올려라.\n② 진단: ‘uniting down’을 골랐는데, ‘uniting down’이란 말은 문법적으로 맞지 않으며 ‘break up’이 ‘해체하다’라는 뜻이므로 문맥에 맞지 않는다. ‘break up’이 ‘해체하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘break up’이 ‘해체하다’라는 뜻을 기억하고, ‘The police are breaking up the protest’를 떠올려라.\n③ 진단: ‘cancel out’을 골랐는데, ‘cancel out’이 ‘무효화하다’라는 뜻이므로 ‘실험을 수행하다’라는 문맥에 맞지 않는다. ‘carry out’이 ‘수행하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘carry out’이 ‘수행하다’라는 뜻을 기억하고, ‘A trained technician ought to carry out the experiment’를 떠올려라.\n⑤ 진단: ‘uniting down’을 골랐는데, ‘uniting down’이란 말은 문법적으로 맞지 않으며 ‘break up’이 ‘해체하다’라는 뜻이므로 문맥에 맞지 않는다. ‘break up’이 ‘해체하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘break up’이 ‘해체하다’라는 뜻을 기억하고, ‘The police are breaking up the protest’를 떠올려라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T03:50:08.248Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: h)\n[영영풀이] A structure built or serving as an abode of human beings.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] house (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T00:10:30.448Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 2건 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "demand for clear, nuanced writing over oversimplification",
-     "demand for short, direct sentences in writing",
-     "demand for oversimplification of complex ideas in writing",
-     "demand for all writing to follow a basic, childish style",
-     "demand for eliminating inheritance tax in writing style"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'demand for clear, complex writing over oversimplified sentences'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: 지문은 '간단한 문장'만으로 복잡한 생각을 표현할 수 없다고 강조하며, 'Dick-and-Jane sentences(아동용 문장)'를 예로 들며 단순화를 반대한다. 하지만 이 선지는 '모든 문장은 짧고 직접적이어야 한다'고 오해하여 지문의 반대 의미를 담았다. → 처방: 지문에서 '간단한 문장'의 한계를 지적하는 부분을 정확히 읽고, '복잡한 생각'을 표현할 때는 문장 길이나 단순화 여부가 아니라 '명료성'과 '적절성'을 중시해야 한다는 점을 기억하자.\n③ 진단: 이 선지는 '복잡한 생각을 단순화해야 한다'고 오해했는데, 지문은 '복잡한 생각을 너무 짧고 단순하게 표현하지 말라'고 말한다. 즉, 'oversimplification(과도한 단순화)'을 반대하는 내용이 아니라 오히려 '단순화의 반대'를 주장하는 지문이다. → 처방: 지문에서 '복잡한 생각을 표현할 때는 문장이 짧아도 안 된다'는 부분을 집중해서 읽고, '단순화'가 아니라 '명료하면서도 복잡한 생각을 담는 법'을 찾아야 한다는 점을 명심하자.\n④ 진단: 이 선지는 '모든 글쓰기는 기본적이고 아이 같은 스타일을 따라야 한다'고 오해했는데, 지문은 '아동용 문장(Dick-and-Jane sentences)'을 예로 들며 '단순한 글쓰기'를 반대한다. 즉, '기본적이고 아이 같은 스타일'을 강요하는 것이 아니라 '복잡한 생각을 담은 명료한 글쓰기'를 권장한다. → 처방: 지문에서 '아동용 문장'이 좋은 예시가 아니라는 점을 기억하고, '기본 스타일'이나 '아이 같은 스타일'이 아니라 '복잡한 생각을 담은 명료한 글쓰기'가 중요하다는 점을 떠올리자.\n⑤ 진단: 이 선지는 '상속세 폐지를 글쓰기 스타일로 요구한다'고 오해했는데, 지문은 '상속세 폐지 요구'를 예시로 들며 '명료한 글쓰기'의 중요성을 설명한다. 즉, '상속세'는 글쓰기 스타일과 무관한 주제이며, 글쓰기 스타일의 문제는 아니다. → 처방: 지문에서 '상속세 폐지 요구'는 '복잡한 생각을 담은 명료한 글쓰기'의 예를 들기 위한 예시일 뿐이라는 점을 기억하고, '글쓰기 스타일'과 '정책 요구'를 구분해서 읽어야 한다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: demand for clear, complex writing over oversimplified sentences]"
    }
   }
  ]

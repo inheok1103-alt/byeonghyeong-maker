@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-22T14:26:53.054Z",
+ "updated": "2026-07-22T16:50:31.476Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-22T16:50:08.050Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "원서 코퍼스에서 'agree with', 'brought immediately', 'give rise to'와 같은 고정적 연어 패턴이 빈번히 나타나며, 오답지 설계 시에도 이 연어의 정확한 형태를 묻는 문제가 유효함을 확인할 수 있다.",
+   "rule": "원서 코퍼스의 최빈 연어를 기반으로, 'agree with', 'give rise to', 'brought immediately'와 같은 고정적 동사-전치사/부사 연어 패턴을 오답 선택지에 포함하여, 학생들이 연어의 정확한 형태를 선택하도록 하는 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-22T14:26:21.395Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거형 동사(choosed) 오용과 부사(lastly) 위치 오류, 또는 문장 구조의 비약적 변화(Thus in concordance with → Thus I agree with)가 빈번하다는 점에서, 문법 오류는 종종 '과거형 동사의 오용'과 '어순/구조적 조율의 실패'로 귀결됨을 확인했다.",
    "rule": "'과거형 동사를 쓸 때, 과거분사 형태(-ed)가 아닌 단순 과거형(-ed)을 오용하지 않도록 하며, 특히 'last'는 부사(lastly)로 변환될 가능성이 높으므로 문맥에 따라 '마지막으로'라는 뜻의 부사로 재구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-17T15:49:59.377Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'be' 동사의 오용, 복수 명사의 오용, 동사의 오용, 철자 오류가 빈번히 관찰된다. 특히 'reasons for live'와 같은 비문법적 표현이 'reasons to live'로 수정되는 패턴이 두드러진다.",
-   "rule": "원서 코퍼스에서 빈도 높은 'reasons to + 동사원형' 구문을 활용하여, 'reasons for + 동명사'로 잘못 사용된 경우를 변형 문제로 출제하라. 예: 'reasons for live' → 'reasons to live'.",
    "sample": [
     "old english",
     "university press",
