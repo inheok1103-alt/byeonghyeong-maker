@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-22T03:50:37.799Z",
+ "updated": "2026-07-22T06:45:10.168Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-22T06:44:45.882Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "영어 학습자들이 자주 혼동하는 철자(already/already), 어휘 선택(realistic/realist), 그리고 문법적 오류(소유동사+명사+be동사 구조)에서 유래된 패턴이다. 특히 '~의 상태/특성'을 나타낼 때 형용사 형태가 아닌 명사형을 오용하는 경향이 두드러진다.",
+   "rule": "CEFR B1 수준 이하의 문항에서, '~한 상태/특성'을 설명할 때 '-ic' 또는 '-ical'로 끝나는 형용사(예: realistic, historical)를 사용하도록 유도하는 문항을 출제하라. 단, 철자 오류(예: 'succesfull' → 'successful')와 소유동사+명사+be동사 구조(예: 'in possetion' → 'in possession')도 함께 검증하도록 문항을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-22T03:50:10.309Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거형과 조동사(would)의 혼동, 또는 조건절 내 시간적 오류가 빈번하며, 이는 문맥상 '과거 사실의 반대 가정'으로 재해석되어야 한다.",
    "rule": "조건절(if절)에서 과거형 동사가 사용될 경우, 주절에는 'would + 동사원형'을 필수적으로 사용하도록 출제하여 문법적 일관성을 점검하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-17T06:30:15.541Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스 패턴은 관사·대명사의 오용(예: 'a'→'it is', 'one'→'a')과 단수·복수 혼동(예: 'fans'→'fan')이 빈번함을 보여준다. 또한 문장 내 대문자·구두점(예: 'i'→'I', 쉼표 추가) 오류도 관찰된다.",
-   "rule": "CEFR B1 수준 이하의 내신 문제에서는 관사(a/an/the), 대명사(it/they), 단수/복수 명사, 대문자, 구두점(쉼표, 마침표) 오용을 집중적으로 테스트하는 문항을 30% 이상 포함하라.",
    "sample": [
     "old english",
     "university press",

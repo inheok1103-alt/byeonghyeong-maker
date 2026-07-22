@@ -1,6 +1,114 @@
 {
- "updated": "2026-07-22T03:50:37.803Z",
+ "updated": "2026-07-22T06:45:10.172Z",
  "samples": [
+  {
+   "ts": "2026-07-22T06:43:59.683Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Unfortunately this is an entirely different set of \u0002-role assignments to what we have previously found. We concluded above that the theme \u0002-role is assigned to the specifier of a thematic verb, not its complement position. The agent, on the other hand, was assigned to the specifier of a light verb taking a VP complement. If we are to maintain the UTAH, either the structure in (45) is inaccurate, or our analyses of unaccusative and light verbs is. Moreover, the structure of the VP in (45) is simple, in comparison to that of verbal complexes involving light verbs, as in (32), for example. Yet the event structure expressed here is not simple. In the butler opened the door, there is an event involving the butler doing something and an event involving the door being open and clearly the first event causes the second. Hence <u>the event structure is: (46) e = e1 → e2 : e1 = ‘the butler did something’</u>",
+    "choices": [
+     "The event structure implies that the resulting state (e2) led to the butler's action (e1), reversing the original sequence.",
+     "The event structure occasionally shows a cause-and-effect relationship between actions and resulting states, but not always.",
+     "The event structure shows that the resulting state e2 causes the initial action e1 to occur.",
+     "The event structure suggests a sequential cause-and-effect relationship where one action directly leads to a resulting state.",
+     "The event structure indicates a simultaneous coexistence of two actions without any logical progression."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'The event structure suggests a sequential cause-and-effect relationship where one action directly leads to a resulting state.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘e1 → e2’의 화살표가 ‘e2가 e1을 일으켰다’는 의미로 오해한 듯. 지문에서 ‘e1이 e2를 일으켰다’(e1 causes e2)라 명시했으나, ‘e2가 e1을 일으켰다’는 역방향으로 뒤집어 읽음. → 처방: ‘→’가 ‘원인 → 결과’를 뜻함을 기억하고, 화살표 방향과 ‘cause’의 의미를 정확히 짚어 읽기.\n② 진단: ‘occasionally’(때때로)라는 한정어가 지문에 없음에도, ‘때때로’가 포함된 선지를 선택. 지문은 ‘e1이 e2를 일으켰다’는 ‘항상’(always) 성립하는 인과관계를 설명한 것임. → 처방: ‘항상’ 또는 ‘반드시’가 지문에 있는지 확인하고, 한정어나 예외가 없으면 배제하기.\n③ 진단: ‘e2가 e1을 일으켰다’는 잘못된 역방향 인과관계를 선택. 지문은 ‘e1이 e2를 일으켰다’(e1 causes e2)라 명시했으나, 이를 반대로 해석함. → 처방: ‘e1 → e2’의 화살표가 ‘e1이 e2의 원인’이라는 뜻임을 기억하고, 화살표 방향과 인과관계의 순서를 정확히 짚기.\n⑤ 진단: ‘동시공존’(simultaneous coexistence)과 ‘논리적 진행 없음’을 선택했으나, 지문은 ‘e1이 e2를 일으켰다’는 ‘순차적 인과관계’를 분명히 설명함. → 처방: ‘→’가 ‘순차적 진행’을 뜻함을 확인하고, ‘동시성’이나 ‘논리적 무관계’를 암시하는 선지는 배제하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-22T06:44:05.480Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] An occurrence; something that happens.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] event (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-22T06:44:37.996Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 2/3 다수결 4번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "Unfortunately this is an entirely different set of \u0002-role assignments to what we have previously found. We concluded above that the theme \u0002-role is ⓐ<u>assigned</u> to the specifier of a thematic verb, not its complement position. The agent, on the other hand, was assigned to the specifier of a ⓑ<u>light</u> verb taking a VP complement. If we are to maintain the UTAH, either the ⓒ<u>structure</u> in (45) is inaccurate, or our analyses of unaccusative and light verbs is. Moreover, the structure of the VP in (45) is simple, in comparison to that of verbal complexes ⓓ<u>involving</u> light verbs, as in (32), for example. Yet the ⓔ<u>event</u> structure expressed here is not simple. In the butler opened the door, there is an event involving the butler doing something and an event involving the door being open and clearly the first event causes the second. Hence the event structure is: (46) e = e1 → e2 : e1 = ‘the butler did something’",
+    "choices": [
+     "assigned: To designate or set apart something for some purpose.",
+     "light: Visible electromagnetic radiation. The human eye can typically detect radiation ",
+     "structure: A cohesive whole built up of distinct parts.",
+     "involving: To roll or fold up; to wind round; to entwine.",
+     "event: A manservant having charge of wines and liquors."
+    ],
+    "answer": 4,
+    "explanation": "정답 ⓔ의 풀이는 'butler'의 정의이다. 'event'의 올바른 풀이: An occurrence; something that happens.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘assigned’를 ‘할당하다’로만 알고 ‘지정하다’(to designate)도 포함된다는 점을 놓쳤다. 지문에서 ‘theme role 이 …에 할당된다’(assigned to)라는 표현으로 두 뜻 모두 쓰였다. → 처방: ‘assign’의 뜻을 사전에서 ‘할당하다’와 ‘지정하다’를 모두 찾아보고, 지문에서 쓰인 용법을 다시 확인하라.\n② 진단: ‘light’를 ‘가벼운’이라는 뜻만 떠올렸고, 문맥에서 ‘light verb’(경량동사)로 쓰인 ‘light’를 ‘가시적 전자기파’(visible electromagnetic radiation)로 오해했다. → 처방: ‘light’의 뜻을 ‘가벼운’이 아닌 다른 뜻으로 쓸 때는 문맥(예: ‘light verb’)을 먼저 살피고, 사전에서 관련 뜻을 찾아보라.\n③ 진단: ‘structure’를 ‘구조’로만 알고 ‘구성된 부분들로 이뤄진 전체’(cohesive whole built up of distinct parts)라는 뜻을 놓쳤다. 지문에서 ‘VP 의 구조’(structure of the VP)가 단순하다고 말할 때 이 뜻을 사용했다. → 처방: ‘structure’의 뜻을 ‘구조’뿐 아니라 ‘구성체’로도 해석할 수 있음을 기억하고, 사전에서 예문을 확인하라.\n⑤ 진단: ‘event’를 ‘사건’으로만 알고 ‘하인’(manservant)으로 오해했다. 지문에서 ‘event structure’(사건 구조)로 쓰였고, ‘butler’는 ‘하인’이 아닌 ‘집사’를 뜻한다. → 처방: ‘event’의 뜻을 ‘사건’과 ‘행사’ 등으로 먼저 떠올리고, ‘manservant’라는 뜻은 ‘butler’가 아니라 ‘valet’나 ‘footman’ 같은 단어로 확인하라."
+   }
+  },
+  {
+   "ts": "2026-07-22T06:44:43.228Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'cause-and-effect', 'relationship', 'traditional' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The event structure reveals a cause-and-effect relationship that challenges traditional syntactic analyses.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-22T03:49:59.403Z",
    "type": "네모어휘ABC",
@@ -254,113 +362,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Some verbs are commonly used with object + present participle complements, often conveying sense perception or causation.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·과잉 일반화)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 조건 누락· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘감각 관찰’을 강조한 선지인데, 지문은 감각 동사뿐 아니라 ‘get’, ‘have’ 같은 ‘원인’을 나타내는 동사도 포함한다고 설명한다. 학생은 감각 동사에만 초점을 맞추고 ‘원인’ 동사를 놓쳤다. → 처방: 지문에서 ‘perception’(감각)과 ‘causation’(원인) 동사를 모두 확인한 후, 선지가 두 가지를 모두 포함하는지 확인해라.\n③ 진단: ‘잘못된 행동’을 암시한 선지인데, 지문은 ‘catch’ 동사가 부정적 의미를 가질 수 있지만, 모든 선지에서 ‘잘못된 행동’을 나타내는 것은 아니다. 학생은 ‘catch’의 부정적 의미를 과도하게 일반화했다. → 처방: ‘catch’의 부정적 의미를 기억하되, 지문에서 다른 동사(예: ‘find’, ‘leave’)는 부정적 의미를 나타내지 않는다는 점을 확인해라.\n④ 진단: ‘잘못된 행동 드러내기’를 강조한 선지로, 지문은 ‘catch’가 부정적 의미를 가질 수 있지만, 모든 선지가 ‘잘못된 행동’을 드러내는 것은 아니다. 학생은 ‘misconduct’를 과도하게 확대 해석했다. → 처방: ‘misconduct’를 포함하는 동사가 ‘catch’뿐임을 확인하고, 다른 동사(예: ‘have’, ‘get’)는 ‘원인’을 나타낸다는 점을 기억해라.\n⑤ 진단: ‘모든 타동사’에 적용된다고 오해한 선지로, 지문은 ‘perception’이나 ‘causation’ 동사만 ‘object + present participle’을 쓴다고 한정한다. 학생은 ‘all transitive verbs’를 잘못 추론했다. → 처방: 지문에서 ‘commonly used’(흔히 쓰이는) 동사 목록을 확인하고, ‘모든 타동사’가 아니라는 점을 기억해라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Some verbs are commonly used with object + present participle complements, often conveying sense perception or causation.]"
-   }
-  },
-  {
-   "ts": "2026-07-21T14:27:00.936Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Here is a list of the verbs that are commonly used with object + present participle complements.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 다음은 목적어 뒤에 현재분사 형태의 보어를 취하는 동사들의 목록입니다. (구문 포인트: 5형식(목적어 + 목적보어: 현재분사) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-21T12:03:58.821Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "I feel something rough. The cloth feels rough. I'm feeling the cloth. ASPECT The verbs SEE and HEAR are not similarly used in three senses. In comparable senses different verbs are used: (LOOK) (LOOK AT) I see my brother. He looks well. I'm looking at my brother. I hear music. (SOUND) It sounds beautiful. (LISTEN TO) I'm listening to the music. Diagrammatically these can be displayed in three columns: SMELL SMELL SMELL TASTE TASTE TASTE FEEL FEEL FEEL SEE LOOK LOOK AT HEAR SOUND LISTEN TO (I) Lists private verbs with the sense of 'acquire the sensation', (2) verbs of state with the sense of 'produce the sensation', and (3) verbs that are not non-progressive and have the sense of 'act to acquire the sensation'. In view of the differences in these functions and especially in view of the fact that SEE and HEAR are not used in all three senses, it is as well to treat them as different homonymous verbs rather than to account for them in terms of grammatical function.",
-    "choices": [
-     "촉각으로 느껴지는 거칠함을 옷감에서 느끼고 있다",
-     "‘보다’와 ‘듣다’는 동일한 세 가지 감각에서 사용되지 않는다",
-     "‘보다’는 ‘~을 바라보다’라는 행위로 사용될 수 있다",
-     "촉각으로 느껴지는 거칠함을 옷감에서 느끼지 못하고 있다",
-     "‘맡다’, ‘맛보다’, ‘느끼다’는 감각을 획득하는 행위로 사용될 수 있다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: ‘촉각으로 느껴지는 거칠함을 옷감에서 느끼고 있다’는 ‘feel’을 ‘느끼다’로 해석해 지문의 ‘I feel something rough. The cloth feels rough.’와 일치한다고 오독했으나, 지문은 ‘feel’이 ‘느끼다’ 외에도 ‘만지다’의 뜻으로도 쓰일 수 있음을 간과함. → 처방: ‘feel’이 ‘만지다’의 뜻으로 쓰였을 때는 ‘촉각으로 느껴지다’가 아니라 ‘만지다’라는 행위로 해석된다는 점을 기억하고, 문맥에 따라 뜻을 구분할 것.\n② 진단: ‘보다’와 ‘듣다’는 지문에 ‘SEE’는 세 가지 감각(획득·생성·행위) 중 ‘생성’(‘produce the sensation’)에서 사용되지 않는다고 나와 있지만, ‘HEAR’는 ‘소리’(‘sound’)에서 ‘생성’으로도 쓰인다고 오해함. → 처방: 지문의 표를 정확히 보고, ‘SEE’는 ‘생성’에서 사용되지 않지만 ‘HEAR’는 ‘SOUND’라는 동사로 ‘생성’에서 사용된다는 점을 구분할 것.\n③ 진단: ‘보다’는 지문에서 ‘LOOK AT’로 ‘~을 바라보다’라는 행위로 사용될 수 있다고 나와 있지만, 학생은 ‘보다’가 ‘바라보다’라는 행위로만 쓰인다고 오해해 다른 뜻도 있음을 간과함. → 처방: ‘보다’라는 동사가 ‘바라보다’뿐만 아니라 ‘찾아보다’, ‘살펴보다’ 등 다양한 행위로도 쓰일 수 있음을 기억하고, 문맥에 따라 의미를 파악할 것.\n⑤ 진단: ‘맡다’, ‘맛보다’, ‘느끼다’는 지문에서 ‘획득하는 행위’(‘acquire the sensation’)로 분류되지만, 학생은 ‘맡다’가 ‘냄새를 맡다’라는 행위로만 쓰인다고 오해해 ‘맛보다’나 ‘느끼다’도 포함된다는 점을 놓침. → 처방: ‘맡다’, ‘맛보다’, ‘느끼다’가 모두 ‘감각을 획득하는 행위’로 사용될 수 있음을 기억하고, 각 동사의 의미를 정확히 구분할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-21T12:04:13.537Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 나는 보기와 듣기를 뚜렷한 용도로 인해 별도의 동사로 취급합니다.\n주어진 단어: ( treat / and / their / as / uses / due / distinct / verbs / separate / SEE / HEAR / I / to )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I treat SEE and HEAR as separate verbs due to their distinct uses.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-21T09:41:32.254Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "The analysis implied in (61) is that Jim leaving the ﬂ at is the Direct Object of see . The semantic test conﬁ rms that this string of words is a constituent because the answer to the question ‘What did Abdul see?’ is Jim leaving the ﬂ at . Let’s now apply all the other tests. (i) Abdul says that he saw Jim leaving the ﬂ at, and [Jim leaving the ﬂ at] he did see –. (ii) *[Jim leaving the ﬂ at] though Abdul saw –, it could have been someone else. (iii) *[Jim leaving the ﬂ at] was seen by Abdul. (iv) Abdul saw it . (v) Abdul saw [Jim leaving the ﬂ at] and [Pat leaving the room]. (vi) It was [Jim leaving the ﬂ at] that Abdul saw. (vii) What Abdul saw was [Jim leaving the ﬂ at]. (viii) [Jim leaving the ﬂ at] was Abdul’s goal. (ix) *It was Abdul’s goal [Jim leaving the ﬂ at]. (x) A: What did Abdul see?",
-    "choices": [
-     "압둘이 짐이 집을 떠나는 것을 보지 못했다고 말한다.",
-     "압둘은 짐이 집을 떠나는 것을 보지 못했다고 진술했다.",
-     "압둘은 짐이 집을 떠나는 것과 팻이 방을 떠나는 것을 보지 못했다.",
-     "압둘이 본 것은 짐이 집을 떠나는 것이 아니었다.",
-     "압둘이 본 것은 짐이 집을 떠나는 것이었다고 압둘이 말했다."
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘보지 못했다’(didn’t see)는 지문에서 ‘보았다’(saw)로만 언급되며, 부정 표현이 없으므로 오독. 지문은 ‘보았다’(saw)의 직접목적어가 ‘짐이 집을 떠나는 것’이라는 분석을 보임. → 처방: ‘보았다’(saw)라는 동사 자체를 정확히 확인하고, 부정·의문·시제 변화에 주의하며 읽기.\n② 진단: ‘~하지 못했다’(didn’t say)는 지문에서 ‘말했다’(says)가 아니라 ‘보았다’(saw)의 직접목적어 분석을 다루므로 오독. 지문은 Abdul 이 본 내용을 질문으로 확인하는 구조임. → 처방: 동사의 의미와 목적어 관계를 정확히 짚고, 문장의 주어·동사·목적어 구조를 먼저 분석하기.\n③ 진단: ‘보지 못했다’는 부정 표현이지만, 지문은 ‘보았다’(saw)의 직접목적어 분석을 설명하며, 팻이 방을 떠나는 것도 언급하지 않으므로 오독. 지문에서 팻은 예시로만 등장함. → 처방: 지문의 예시와 실제 분석 대상을 구분하고, 부정 표현이 아니라 목적어 분석에 집중하기.\n④ 진단: ‘~이 아니었다’는 부정 표현이지만, 지문은 ‘보았다’(saw)의 직접목적어가 ‘짐이 집을 떠나는 것’이라는 분석을 명확히 제시하므로 오독. 지문은 부정 표현 없이 분석을 설명함. → 처방: 지문의 핵심 분석(‘보았다’의 직접목적어)이 무엇인지 먼저 파악하고, 부정·긍정 여부를 구분하여 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
