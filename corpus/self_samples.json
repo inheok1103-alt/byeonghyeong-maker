@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-22T09:41:51.291Z",
+ "updated": "2026-07-22T12:07:29.197Z",
  "samples": [
+  {
+   "ts": "2026-07-22T12:06:37.486Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (diatribe, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (schism, utopia). 3.Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. 4.Anyone so (ilk, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (prestigious, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.\n\n─────────\n[요약문] The sentences require careful selection of words to convey the intended meaning, involving the use of (A) to express strong opinions and (B) to achieve a desired outcome.",
+    "choices": [
+     "(A) rhetoric … (B) strategy",
+     "(A) harmony … (B) instability",
+     "(A) tirade … (B) failure",
+     "(A) division … (B) chaos",
+     "(A) self-righteous … (B) judgment"
+    ],
+    "answer": 1,
+    "explanation": "(A) rhetoric / (B) strategy 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: ‘harmony(조화)’와 ‘instability(불안정)’가 ‘reformers(개혁가)’의 목표와 맞지 않음. reformers 는 사회를 ‘이상적 상태로 바꾸려는’ 뜻인데, harmony 는 이미 조화로운 상태를, instability 는 혼란을 뜻함. → 처방: 선지를 볼 때 ‘개혁’이라는 키워드에 주목하고, ‘이상적 상태’를 뜻하는 단어를 찾으세요. ‘utopia(유토피아)’가 그 뜻입니다.\n③ 진단: ‘ostentatious(과시적인)’과 ‘nominal(명목상의)’을 혼동. ‘비판받았다’는 점에서 ‘과시적인’이 맞지만, 학생은 ‘명목상’이라는 뜻으로 오해했을 수 있음. → 처방: ‘비판받았다’는 단서에 집중하고, ‘과시적인’이 ‘지나치게 화려한’ 뜻임을 기억하세요.\n④ 진단: ‘ilk(유형)’과 ‘timorous(겁 많은)’을 혼동. ‘성곽을 지키기에 부적합한 사람’이라는 뜻에서 ‘겁 많은’이 맞지만, 학생은 ‘ilk(동류)’로 오해했을 수 있음. → 처방: ‘~하기에 부적합하다’는 문맥에서 ‘겁이 많은 사람’이 맞음을 떠올리세요. ‘timorous’를 기억하세요.\n⑤ 진단: ‘prestigious(명망 있는)’과 ‘flamboyant(화려한)’을 혼동. ‘승진’이라는 점에서 ‘명망 있는’이 맞지만, 학생은 ‘화려한’으로 오해했을 수 있음. → 처방: ‘승진’이라는 단서에 주목하고, ‘명망 있는’이 ‘높은 평가를 받는’ 뜻임을 기억하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-22T12:06:59.791Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] Most reformers are seeking to create a (schism, utopia).\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Only in a utopia are most reformers seeking to create a schism. (포인트: Only + 주어 도치(are most reformers) + 강조(Only in a utopia))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-22T09:41:10.263Z",
    "type": "영영풀이일치",
@@ -300,67 +352,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'individual words that might be genuinely new at this level'와 'chunks containing familiar words'가 모두 포함된다고 명시했는데, 이를 '포함하지 않는다'로 오해한 듯함. → 처방: 지문에서 언급된 '포함한다'는 내용을 정확히 읽고, '포함하지 않는다'는 선지는 무조건 제외하도록 주의하기.\n② 진단: 지문에서 'students often say Tbql learned at the same school instead of They went to school together'라고 오류 예시를 들었는데, 이를 '잘못 말한다'로 이해하지 못하고 반대로 오독한 듯함. → 처방: 지문 속 오류 예시를 꼼꼼히 읽고, '잘못 말한다'는 선지가 지문과 일치하는지 확인하기.\n③ 진단: 지문에서 'fully grammaticalized sentences'가 포함될 수 있다고 명시했는데, 이를 '포함할 수 있다'로 이해하지 못하고 반대로 오독한 듯함. → 처방: 지문에서 'fully grammaticalized sentences'가 포함된다고 쓰였는지 확인하고, '포함하지 않는다'는 선지는 무조건 제외하기.\n⑤ 진단: 지문에서 'chunks containing seemingly easy words that students tend to make mistakes with'가 포함된다고 명시했는데, 이를 '오류가 발생하기 쉬운 덩어리'로 이해하지 못하고 반대로 오독한 듯함. → 처방: 지문 속 'tend to make mistakes'라는 표현을 정확히 읽고, '오류가 발생하기 쉬운'이라는 말이 포함된 선지를 선택하도록 주의하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-21T18:42:07.331Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "O PA Most uses of this complement type ⓐ<u>is phrase that allow</u> relatively little substitution for the predicate adjective. For instance, in the four preceding examples of this complement type, each of the predicate adjectives will allow only a few other predicate adjectives to be used with that verb. Consider the ﬁ rst example: ⓑ<u>He drives me crazy</u>. ⓒ<u>We can substitutes only</u> a few close synonyms for crazy. For example: He drives me mad. He drives me nuts. Now consider the second example: ⓓ<u>The proposal left us cold</u>. About the only obvious substitute for cold is lukewarm: The proposal left us lukewarm. The same is true of the remaining two examples. ⓔ<u>We can substitutes only</u> guilty for innocent in the third example. In the fourth example, we can substitute only words for describing meat (such as rare, well done, juicy, and pink) for medium-rare. A list of the most commonly used verbs that take an object + adjective phrase complement follows. Since this complement type is so idiomatic, an example is included with each verb.",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓐ(is phrase that allow → are phrases that allow), ⓒ(We can substitutes only → We can substitute only), ⓔ(we can substitutes only → we can substitute only) — 총 3개.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-21T18:42:38.226Z",
-   "type": "연결어빈칸",
-   "level": "중",
-   "audit": "정답 코드생성됨(원문 연결어 탐지·빈칸화) · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "O PA Most uses of this complement type are phrases that allow relatively little substitution for the predicate adjective. ___(A)___, in the four preceding examples of this complement type, each of the predicate adjectives will allow only a few other predicate adjectives to be used with that verb. Consider the ﬁ rst example: He drives me crazy. We can substitute only a few close synonyms for crazy. ___(B)___: He drives me mad. He drives me nuts. Now consider the second example: The proposal left us cold. About the only obvious substitute for cold is lukewarm: The proposal left us lukewarm. The same is true of the remaining two examples. We can substitute only guilty for innocent in the third example. In the fourth example, we can substitute only words for describing meat (such as rare, well done, juicy, and pink) for medium-rare. A list of the most commonly used verbs that take an object + adjective phrase complement follows. Since this complement type is so idiomatic, an example is included with each verb.",
-    "choices": [
-     "For instance …… For example",
-     "For instance …… Furthermore",
-     "On the other hand …… Furthermore",
-     "For instance …… However",
-     "Meanwhile …… For example"
-    ],
-    "answer": 2,
-    "explanation": "(A)는 앞 문장에 이어 앞의 일반 진술을 구체적 예로 뒷받침하므로 '예시'의 For instance 가, (B)는 앞의 일반 진술을 구체적 예로 뒷받침하므로 '예시'의 For example 가 알맞다. 나머지 선지는 이 논리 관계와 맞지 않아 오답이다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 빈칸 (A)에 'For instance'는 맞지만, (B)에 'For example'는 앞선 예시와 중복되어 문맥상 어울리지 않는다. 지문은 'He drives me mad. He drives me nuts.'가 새로운 예시가 아니라 'crazy'의 대체어임을 설명하므로 'Furthermore'가 더 적절하다. → 처방: 빈칸 (B)에는 'Furthermore'가 들어가야 문맥이 자연스럽다는 점을 기억하고, 같은 의미라도 문맥에 따라 적절한 연결어를 고르는 연습을 해보세요.\n③ 진단: 빈칸 (A)에 'On the other hand'는 앞선 설명과 대조되는 내용을 도입할 때 쓰이지만, 지문은 같은 내용을 예시로 설명하는 중이므로 부적절하다. (B)의 'Furthermore'는 문맥상 맞지만 (A)의 선택이 잘못되었다. → 처방: 'On the other hand'는 비교·대조를 할 때만 쓰는 연결어라는 점을 기억하고, 문맥에 맞는 연결어를 선택하는 연습을 해보세요.\n④ 진단: 빈칸 (A)에 'For instance'는 맞지만, (B)에 'However'는 앞선 설명과 대조되는 내용을 도입하는 연결어인데, 지문은 같은 예시를 계속 설명하는 중이므로 문맥에 맞지 않다. → 처방: 연결어의 의미(예시, 대조, 추가 설명 등)를 정확히 파악하고, 문맥에 맞는 연결어를 고르는 연습을 해보세요.\n⑤ 진단: 빈칸 (A)에 'Meanwhile'는 시간적 동시성을 나타내는 연결어인데, 지문은 예시를 설명하는 중이므로 부적절하다. (B)의 'For example'도 앞선 설명과 중복되어 어울리지 않는다. → 처방: 연결어의 기본 의미를 정확히 이해하고, 문맥에 따라 적절한 연결어를 선택하는 연습을 해보세요."
    }
   }
  ]

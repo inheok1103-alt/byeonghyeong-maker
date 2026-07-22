@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-22T09:41:51.287Z",
+ "updated": "2026-07-22T12:07:29.193Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-22T12:07:02.519Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스 패턴은 명사구(noun phrase)와 동사 시제(past/present tense) 간의 연어적 오류가 빈번하며, 특히 '~ing' 형태의 동명사/현재분사 사용 오류가 두드러진다. 또한 고유명사(Discovery Channel)나 전치사(~에서: in the wild)의 오용도 다수 확인된다.",
+   "rule": "'동사 + ing' 형태(동명사/현재분사)가 필요한 문맥에서 'to + 동사원형'을 사용하거나, 시제 일치 오류(3인칭 단수 현재형 동사 뒤 -s 누락/과잉)를 반드시 포함시킨다. 예: 'They enjoy learning' → 'They enjoy to learn' 또는 'The scraping causes heat' → 'The scraping will causes heat'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-22T09:41:24.246Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'between two'와 같은 전치사구를 활용한 문장 구조가 빈번하며, 특히 주제-동사-목적어 순서가 자연스러운 패턴으로 활용된다. 또한 'disagreed'와 같은 동사 오용이 'disagreed with'로 수정되는 경우가 많다.",
    "rule": "'between two' 또는 'from ~'와 같은 전치사구를 포함한 문장은 주어와 동사 사이에 콤마를 삽입하거나, 전치사구를 'of ~' 또는 'with ~'로 재구성하여 문법적 정확성을 높이는 변형 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-17T11:45:43.886Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 접속사·관사·시제 일관성, 명사의 복수형/형용사 수식어 오류가 빈번하며, 특히 'and'로 연결된 동사구가 문법적 오류로 이어지는 패턴이 두드러진다.",
-   "rule": "연결어('and', 'or' 등)로 연결된 동사구가 있을 경우, 모든 동사가 동일한 시제·태·수(단수/복수)를 유지하도록 수정하라.",
    "sample": [
     "old english",
     "university press",
