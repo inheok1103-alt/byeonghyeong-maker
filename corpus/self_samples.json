@@ -1,6 +1,61 @@
 {
- "updated": "2026-07-22T00:11:54.683Z",
+ "updated": "2026-07-22T03:50:37.803Z",
  "samples": [
+  {
+   "ts": "2026-07-22T03:49:59.403Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": -0.5,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "변별도 낮음(D̂=-0.50)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "EXERCISE 28b — Write three sentences using the objects in parentheses. Be sure to put the objects in the right place. 1. The White House (A) [beefed up / weakened down]. (security, it) 2. The police are (B) [uniting down / breaking up]. (the protest, it) 3. A trained technician ought to (C) [cancel out / carry out]. (the experiment, it) 4. The foundation gave away. (the money, it) 5. Susie always messes up. (the bathroom, it) 6. Todd stood up. (Heather, her) EXERCISE 28c — Write answers to the questions using phrasal verbs and participle adjectives from this unit. Make all the phrasal verbs passive. 1. Dr. Wood will do the test of the new drug. What will happen to the test? 2. The statue was smashed by thieves. What happened to the gold statue? 3. The children made the house dirty and disorganized. What happened to the house? 4. In Question 3, how would you describe the house? 5. Mike’s friend promised to come to his house, but he didn’t. What happened to Mike? 6. Karen called Sarah, but Sarah was at school. Sarah didn’t call Karen later. What didn’t happen to Karen?",
+    "choices": [
+     "(A) weakened down - (B) uniting down - (C) cancel out",
+     "(A) weakened down - (B) breaking up - (C) carry out",
+     "(A) weakened down - (B) breaking up - (C) cancel out",
+     "(A) beefed up - (B) breaking up - (C) carry out",
+     "(A) beefed up - (B) uniting down - (C) cancel out"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) beefed up - (B) breaking up - (C) carry out. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘weakened down’을 골랐는데, ‘weakened down’이란 말은 문법적으로 틀리며 ‘beef up’이 ‘보안’을 강화한다는 뜻이므로 문맥에 맞지 않는다. ‘beef up’이 ‘강화하다’라는 뜻임을 몰라서 생긴 오류다. → 처방: ‘beef up’이 ‘강화하다’라는 뜻임을 기억하고, ‘The White House beefed up security’를 떠올려라.\n② 진단: ‘uniting down’을 골랐는데, ‘uniting down’이란 말은 문법적으로 맞지 않으며 ‘break up’이 ‘해체하다’라는 뜻이므로 문맥에 맞지 않는다. ‘break up’이 ‘해체하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘break up’이 ‘해체하다’라는 뜻을 기억하고, ‘The police are breaking up the protest’를 떠올려라.\n③ 진단: ‘cancel out’을 골랐는데, ‘cancel out’이 ‘무효화하다’라는 뜻이므로 ‘실험을 수행하다’라는 문맥에 맞지 않는다. ‘carry out’이 ‘수행하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘carry out’이 ‘수행하다’라는 뜻을 기억하고, ‘A trained technician ought to carry out the experiment’를 떠올려라.\n⑤ 진단: ‘uniting down’을 골랐는데, ‘uniting down’이란 말은 문법적으로 맞지 않으며 ‘break up’이 ‘해체하다’라는 뜻이므로 문맥에 맞지 않는다. ‘break up’이 ‘해체하다’라는 뜻을 몰라서 생긴 오류다. → 처방: ‘break up’이 ‘해체하다’라는 뜻을 기억하고, ‘The police are breaking up the protest’를 떠올려라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-22T03:50:08.248Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: h)\n[영영풀이] A structure built or serving as an abode of human beings.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] house (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-22T00:10:30.448Z",
    "type": "주제",
@@ -306,58 +361,6 @@
     ],
     "answer": 5,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘보지 못했다’(didn’t see)는 지문에서 ‘보았다’(saw)로만 언급되며, 부정 표현이 없으므로 오독. 지문은 ‘보았다’(saw)의 직접목적어가 ‘짐이 집을 떠나는 것’이라는 분석을 보임. → 처방: ‘보았다’(saw)라는 동사 자체를 정확히 확인하고, 부정·의문·시제 변화에 주의하며 읽기.\n② 진단: ‘~하지 못했다’(didn’t say)는 지문에서 ‘말했다’(says)가 아니라 ‘보았다’(saw)의 직접목적어 분석을 다루므로 오독. 지문은 Abdul 이 본 내용을 질문으로 확인하는 구조임. → 처방: 동사의 의미와 목적어 관계를 정확히 짚고, 문장의 주어·동사·목적어 구조를 먼저 분석하기.\n③ 진단: ‘보지 못했다’는 부정 표현이지만, 지문은 ‘보았다’(saw)의 직접목적어 분석을 설명하며, 팻이 방을 떠나는 것도 언급하지 않으므로 오독. 지문에서 팻은 예시로만 등장함. → 처방: 지문의 예시와 실제 분석 대상을 구분하고, 부정 표현이 아니라 목적어 분석에 집중하기.\n④ 진단: ‘~이 아니었다’는 부정 표현이지만, 지문은 ‘보았다’(saw)의 직접목적어가 ‘짐이 집을 떠나는 것’이라는 분석을 명확히 제시하므로 오독. 지문은 부정 표현 없이 분석을 설명함. → 처방: 지문의 핵심 분석(‘보았다’의 직접목적어)이 무엇인지 먼저 파악하고, 부정·긍정 여부를 구분하여 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-21T09:42:02.976Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "The analysis implied in (61) is that Jim leaving the ﬂ at is the Direct Object of see . The semantic test conﬁ rms that this string of words is a constituent because the answer to the question ‘What did Abdul see?’ is Jim leaving the ﬂ at . Let’s now apply all the other tests. (i) Abdul says that he saw Jim leaving the ﬂ at, and [Jim leaving the ﬂ at] he did see –. (ii) *[Jim leaving the ﬂ at] though Abdul saw –, it could have been someone else. (iii) *[Jim leaving the ﬂ at] was seen by Abdul. (iv) Abdul saw it . (v) Abdul saw [Jim leaving the ﬂ at] and [Pat leaving the room]. (vi) It was [Jim leaving the ﬂ at] that Abdul saw. (vii) What Abdul saw was [Jim leaving the ﬂ at]. (viii) [Jim leaving the ﬂ at] was Abdul’s goal. (ix) *It was Abdul’s goal [Jim leaving the ﬂ at]. (x) A: What did Abdul see?\n\n─────────\n[요약문] The semantic tests confirm that the string 'Jim leaving the flat' functions as a (A) because it serves as the (B) in the sentence construction.",
-    "choices": [
-     "(A) phrase … (B) subject complement",
-     "(A) constituent … (B) direct object",
-     "(A) noun … (B) adverbial modifier",
-     "(A) clause … (B) indirect object",
-     "(A) predicate … (B) complementizer"
-    ],
-    "answer": 2,
-    "explanation": "(A) constituent / (B) direct object 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘phrase’를 ‘구’로 오해하고 ‘subject complement’를 ‘주격 보어’로 오해했을 수 있습니다. 지문에서 ‘Jim leaving the flat’이 직접 목적어 역할을 한다는 설명(‘What did Abdul see?’의 답)이 나와 있는데, 주격 보어와는 관련이 없습니다. → 처방: ‘constituent’를 ‘구성 요소’로, ‘direct object’를 ‘직접 목적어’로 정확히 이해하고, 지문에서 ‘What did Abdul see?’의 답이 되는 부분을 직접 목적어로 보세요.\n③ 진단: ‘noun’을 ‘명사’로만 한정하고 ‘adverbial modifier’를 ‘부사적 수식어’로 오해했을 수 있습니다. ‘Jim leaving the flat’이 명사구로 기능한다는 점은 맞지만, 지문에서 ‘직접 목적어’로 기능한다는 설명이 더 중요합니다. → 처방: ‘constituent’를 ‘구성 요소’ 전체로 보고, 지문에서 ‘직접 목적어’로 기능한다는 설명을 따라가며 ‘noun’이 아닌 ‘constituent’를 선택하세요.\n④ 진단: ‘clause’를 ‘절’로 오해하고 ‘indirect object’를 ‘간접 목적어’로 오해했을 수 있습니다. ‘Jim leaving the flat’이 절이 아닌 구로 기능한다는 점과, 간접 목적어와는 관련이 없다는 점이 지문에 명시되어 있습니다. → 처방: ‘constituent’를 ‘구성 요소’로 보고, 지문에서 ‘직접 목적어’로 기능한다는 설명을 따라가며 ‘clause’가 아닌 ‘constituent’를 선택하세요.\n⑤ 진단: ‘predicate’를 ‘술어’로 오해하고 ‘complementizer’를 ‘보충어’로 오해했을 수 있습니다. 지문에서 ‘predicate’는 문장의 핵심 동사 부분을 가리키며, ‘complementizer’는 문법 용어와 관련이 없습니다. → 처방: ‘constituent’를 ‘구성 요소’로 보고, 지문에서 ‘직접 목적어’로 기능한다는 설명을 따라가며 ‘predicate’를 배제하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-21T09:42:47.425Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "The analysis implied in (61) is that ⓐ<u>Jim leaving</u> the ﬂ at is the Direct Object of see . The semantic test conﬁ rms that this string of words is a constituent because the answer to the question ‘What did Abdul see?’ is Jim leaving the ﬂ at . Let’s now apply all the other tests. (i) Abdul says that he saw Jim leaving the ﬂ at, and [Jim leaving the ﬂ at] ⓑ<u>he did see</u> –. (ii) *[Jim leaving the ﬂ at] though Abdul saw –, it could have been someone else. (iii) *[Jim leaving the ﬂ at] ⓒ<u>was seen by Abdul</u> Abdul. (iv) Abdul saw it . (v) Abdul saw [Jim leaving the ﬂ at] ⓓ<u>and [Pat leaving</u> the room]. (vi) It was [Jim leaving the ﬂ at] that Abdul saw. (vii) What Abdul saw was [Jim leaving the ﬂ at]. (viii) [Jim leaving the ﬂ at] ⓔ<u>was Abdul’s goal</u>. (ix) *It was Abdul’s goal [Jim leaving the ﬂ at]. (x) A: What did Abdul see?",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [태] ⓒ: 'was seen by Abdul' → 'saw' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
