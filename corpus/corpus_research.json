@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-23T09:42:28.818Z",
+ "updated": "2026-07-23T12:06:27.192Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-23T12:06:04.696Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서 'a'가 누락된 명사구 연어(예: 'a name', 'a family')가 빈번히 오류로 나타나며, 특히 'and'로 연결된 명사구에서 관사 일치 오류가 두드러진다.",
+   "rule": "'and'로 연결된 복수 명사구(예: 'money and name') 뒤에는 반드시 관사 'a'를 각각 붙여 'a lot of money and a name'으로 표기해야 한다. 이는 영어 문법 규칙으로, 학생들에게 'and' 앞뒤 명사구에 관사 일치 규칙을 적용하도록 지시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-23T09:42:02.961Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "복수 주어의 병렬 구조에서 콤마 사용이 문법적 오류를 유발할 수 있으며, 'nowadays'는 한 단어로 표기해야 한다.",
    "rule": "복수 명사나 동사구가 병렬 구조로 나열될 때, 콤마 없이 나열하거나, 콤마를 사용하려면 'and' 앞의 콤마를 생략하지 말고 정확히 배치하라. 또한 'nowadays'는 한 단어('now a days'가 아님)로 표기하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T06:25:40.751Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "CEFR 밴드를 활용하면 문항의 난이도를 유연하게 조절할 수 있다.",
-   "rule": "모범답안의 문법이 원문과 완전히 동일해야 한다.",
    "sample": [
     "old english",
     "university press",
