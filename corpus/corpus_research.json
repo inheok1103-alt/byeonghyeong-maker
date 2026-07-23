@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-23T18:40:32.342Z",
+ "updated": "2026-07-23T20:48:35.751Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-23T20:48:10.322Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "원서 코퍼스에서 'a/an + 명사 + 명사' 패턴(예: 'a fixed data', 'a rolling stone')이 빈번히 오류로 나타나며, 관사 사용 오류가 문법적 오류의 핵심임을 확인했다.",
+   "rule": "원서 코퍼스에서 'a/an + 명사 + 명사' 패턴이 빈번한 만큼, 내신 변형문제에서는 관사(a/an/the) 사용 오류를 반드시 포함하여 출제하되, 'a fixed data' → 'fixed data'로 수정하는 등 관사 생략 또는 잘못된 관사 사용을 오답지로 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-23T18:40:03.436Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 연어 패턴은 'old English'와 'New York'처럼 고유명사+명사가 빈번하며, 'noun phrase'와 'direct object'가 결합된 문장 구조가 많다. 또한 'reason relations'와 'past/present tense'가 혼용되어 논리적 흐름을 형성한다.",
    "rule": "원서 문체 패턴을 반영하여, 'For example' 뒤에는 복수형 오류(예: 'fans')가 아닌 단수형 명사(예: 'fan')를 사용하도록 변형 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T13:52:28.798Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'be + 형용사 + 전치사' 구문에서 'be' 동사의 오용(be useful → is useful)이 빈번하며, 'whenever' 절 내 'necessary'의 위치 오류도 다수 확인된다. 또한 과거 시제와 현재 시제의 혼용 오류가 반복적으로 발생한다.",
-   "rule": "'be + 형용사 + 전치사' 구문(예: be useful for, be familiar with)에서 'be' 동사가 생략되거나 오용된 경우, 반드시 'be' 동사를 올바르게 삽입하거나 형용사-전치사 결합을 확인하여 문장을 수정하라.",
    "sample": [
     "old english",
     "university press",
