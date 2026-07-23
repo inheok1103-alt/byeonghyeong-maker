@@ -1,6 +1,42 @@
 {
- "updated": "2026-07-23T03:48:43.546Z",
+ "updated": "2026-07-23T06:43:51.448Z",
  "samples": [
+  {
+   "ts": "2026-07-23T06:42:28.145Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "(A) [Stations / Terminals] and (B) [Airstrips / airports]; important buildings We do not use (C) [a / the] with most stations and airports; with religious, educational and official buildings or with palaces and houses. to Waterloo (Station) at Orly (Airport) near St Mary's Church Merton College Norwich Museum Lambeth Palace Ashdown House Exceptions are names with of or with a noun (science) or adjective (open). at the University of York in the Palace of Westminster the Science Museum the Open University past the White House Theatres, cinemas, hotels, galleries and centres A possessive form ('s) is without the. St Martin's (Theatre) at Durrant's (Hotel) In the US, names with center are without the. near Lincoln Center But usually theatres, cinemas, etc have the. at the Globe (Theatre) the Plaza (Cinema) outside the Dorchester (Hotel) in the Tate (Gallery) the Brunei shopping centre",
+    "choices": [
+     "(A) Terminals - (B) airports - (C) a",
+     "(A) Terminals - (B) airports - (C) the",
+     "(A) Stations - (B) airports - (C) the",
+     "(A) Terminals - (B) Airstrips - (C) a",
+     "(A) Stations - (B) Airstrips - (C) the"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) Stations - (B) airports - (C) the. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A) Stations / Terminals'와 '(B) Airstrips / airports'를 혼동했으며, '(C) a/the'는 'most stations and airports' 규칙을 적용하지 않고 임의로 'a'를 선택했다. → 처방: 지문에서 'Stations'와 'Terminals'의 차이를 확인하고, 'airports'는 'the' 없이 쓰이는 경우가 많다는 점을 기억하며 '(C)'는 'the'가 아닌 'a'를 쓰지 않도록 주의하라.\n② 진단: 지문에서 'airports'는 'the' 없이 쓰이는 경우가 많다는 규칙을 무시하고 '(C)'에 'the'를 넣었으며, '(A)'와 '(B)'의 선택도 지문의 예시와 맞지 않았다. → 처방: 'airports'는 'the' 없이 쓰이는 경우가 많다는 규칙을 다시 읽고, '(A)'는 'Stations'가 맞는다는 점을 확인하라.\n④ 진단: 지문에서 'Airstrips'는 'the'와 함께 쓰이는 경우가 거의 없음을 무시하고 '(B)'에 'Airstrips'를 선택했으며, '(C)'에 'a'를 넣은 것도 규칙을 잘못 적용한 것이다. → 처방: 'Airstrips'는 'the' 없이 쓰이는 경우가 거의 없다는 점을 기억하고, '(C)'는 'the'가 아닌 'a'를 쓰지 않도록 주의하라.\n⑤ 진단: 지문에서 'Airstrips'는 'the'와 함께 쓰이는 경우가 거의 없음을 무시하고 '(B)'에 'Airstrips'를 선택했으며, '(C)'에 'the'를 넣은 것도 규칙을 잘못 적용한 것이다. → 처방: 'Airstrips'는 'the' 없이 쓰이는 경우가 거의 없다는 점을 기억하고, '(C)'는 'the'가 아닌 'a'를 쓰지 않도록 주의하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-23T03:48:10.422Z",
    "type": "주제문완성",
@@ -346,39 +382,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'English has deviated so far from its Germanic roots that its syntax now violates the core structural patterns shared by all other Proto-Germanic descendants.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘공통 구조 패턴을 벗어났다’는 말은 틀렸지만, ‘통사적 규칙을 크게 훼손하였다’는 말은 지문에서 ‘뇌 손상자 같은 말’로 표현된 영어의 특성을 정확히 짚었다. 학생은 ‘공통 구조 패턴’을 ‘원형적 구조’로 오해한 듯하다. → 처방: ‘공통 구조 패턴’이란 원형적 구조를 뜻한다는 점을 기억하고, 지문의 ‘원형적 구조’와 ‘벗어남’을 구분해서 읽기.\n② 진단: ‘일부 특징만을 잃어’란 말은 지문에서 영어가 게르만어족의 ‘원형적 구조’를 ‘상당 부분’ 잃었다고 한 것과 모순된다. 학생은 ‘일부’와 ‘상당 부분’을 혼동한 듯하다. → 처방: ‘일부’와 ‘상당 부분’을 비교하며 읽고, 지문에서 ‘상당 부분’을 강조한 이유를 찾기.\n③ 진단: ‘게르만어족의 후손 언어 대부분’이란 말은 지문에서 ‘다른 게르만어파 언어’는 ‘원형적 구조’를 유지했다고 한 것과 반대된다. 학생은 ‘공통 구조 패턴’을 ‘원형적 구조’로 오해한 듯하다. → 처방: ‘공통 구조 패턴’이란 원형적 구조를 뜻한다는 점을 기억하고, 지문의 ‘원형적 구조’를 유지한 언어와 벗어난 영어를 구분해서 읽기.\n④ 진단: ‘원형적 구조를 상당 부분 유지’라고 한 말은 지문에서 영어가 ‘원형적 구조’를 ‘상당 부분 잃었다’고 한 것과 반대된다. 학생은 ‘유지’와 ‘벗어남’을 혼동한 듯하다. → 처방: ‘유지’와 ‘벗어남’을 비교하며 읽고, 지문에서 영어가 ‘벗어났다’는 사실을 정확히 파악하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: English has deviated so far from its Germanic roots that its syntax now violates the core structural patterns shared by all other Proto-Germanic descendants.]"
-   }
-  },
-  {
-   "ts": "2026-07-22T12:06:37.486Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (diatribe, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (schism, utopia). 3.Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. 4.Anyone so (ilk, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (prestigious, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.\n\n─────────\n[요약문] The sentences require careful selection of words to convey the intended meaning, involving the use of (A) to express strong opinions and (B) to achieve a desired outcome.",
-    "choices": [
-     "(A) rhetoric … (B) strategy",
-     "(A) harmony … (B) instability",
-     "(A) tirade … (B) failure",
-     "(A) division … (B) chaos",
-     "(A) self-righteous … (B) judgment"
-    ],
-    "answer": 1,
-    "explanation": "(A) rhetoric / (B) strategy 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: ‘harmony(조화)’와 ‘instability(불안정)’가 ‘reformers(개혁가)’의 목표와 맞지 않음. reformers 는 사회를 ‘이상적 상태로 바꾸려는’ 뜻인데, harmony 는 이미 조화로운 상태를, instability 는 혼란을 뜻함. → 처방: 선지를 볼 때 ‘개혁’이라는 키워드에 주목하고, ‘이상적 상태’를 뜻하는 단어를 찾으세요. ‘utopia(유토피아)’가 그 뜻입니다.\n③ 진단: ‘ostentatious(과시적인)’과 ‘nominal(명목상의)’을 혼동. ‘비판받았다’는 점에서 ‘과시적인’이 맞지만, 학생은 ‘명목상’이라는 뜻으로 오해했을 수 있음. → 처방: ‘비판받았다’는 단서에 집중하고, ‘과시적인’이 ‘지나치게 화려한’ 뜻임을 기억하세요.\n④ 진단: ‘ilk(유형)’과 ‘timorous(겁 많은)’을 혼동. ‘성곽을 지키기에 부적합한 사람’이라는 뜻에서 ‘겁 많은’이 맞지만, 학생은 ‘ilk(동류)’로 오해했을 수 있음. → 처방: ‘~하기에 부적합하다’는 문맥에서 ‘겁이 많은 사람’이 맞음을 떠올리세요. ‘timorous’를 기억하세요.\n⑤ 진단: ‘prestigious(명망 있는)’과 ‘flamboyant(화려한)’을 혼동. ‘승진’이라는 점에서 ‘명망 있는’이 맞지만, 학생은 ‘화려한’으로 오해했을 수 있음. → 처방: ‘승진’이라는 단서에 주목하고, ‘명망 있는’이 ‘높은 평가를 받는’ 뜻임을 기억하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
