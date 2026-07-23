@@ -1,6 +1,93 @@
 {
- "updated": "2026-07-23T06:43:51.448Z",
+ "updated": "2026-07-23T09:42:28.822Z",
  "samples": [
+  {
+   "ts": "2026-07-23T09:40:17.302Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what. The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think what that she is hiding what. This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think what that she is hiding what. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with <u>arrows indicating movements which take place in the course of the derivation</u>):",
+    "choices": [
+     "The arrows merely illustrate the sequential order of steps involved in analyzing a single sentence's grammatical components.",
+     "The arrows literally represent the physical trajectory of words as they shift positions on a page during linguistic analysis.",
+     "The completed linguistic structures dictate the necessary movements, which are then depicted by the arrows.",
+     "The arrows indicate optional adjustments made by linguists to occasionally refine an already established grammatical derivation.",
+     "This phrase visually symbolizes the abstract, systematic operations and transformations that are theorized to construct linguistic structures within a grammatical framework."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'This phrase visually symbolizes the abstract, systematic operations and transformations that are theorized to construct linguistic structures within a grammatical framework.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'arrows indicating movements'는 단순히 순서나 단계만 보여주는 것이 아니라 '이론화된 추상적 변환 과정'을 가리키는데, 이를 '순차적 분석 단계'로 오독한 것 같습니다. → 처방: 지문에서 'arrows'는 단어의 물리적 움직임이 아니라 '문법 구조를 구성하는 추상적 연산'을 나타낸다는 점을 기억하세요. 이론의 핵심 개념을 정확히 파악하려면 'movements'가 가리키는 바를 문맥에서 다시 확인하세요.\n② 진단: 지문에서 'arrows'는 단어의 '물리적 위치 이동'을 표현한 것이 아니라 '문법 이론의 변환 과정'을 시각화한 것이므로, 이를 '페이지 상의 단어 이동'으로 오해한 것 같습니다. → 처방: 'arrows'가 물리적 움직임을 나타내는 것이 아니라 '이론적 변환'을 상징한다는 점을 강조합니다. 언어학에서 'movement'는 실제 움직임이 아닌 추상적 구조 변경을 뜻한다는 점을 기억하세요.\n③ 진단: 지문에서 'arrows'는 '완성된 구조가 시키는 대로 움직임을 보여주는 것'이 아니라 '구조가 형성되는 과정에서 일어나는 변환을 표현한 것'입니다. 완성된 구조가 먼저 있는 것이 아니라 변환 과정이 구조를 이끕니다. → 처방: 지문에서 'arrows'는 '구조 형성 과정 자체'를 보여주는 것이며, '완성된 구조가 시키는 움직임'이 아니라는 점을 분명히 하세요. 먼저 구조가 형성되고 나서가 아니라, 변환 과정이 구조를 이끈다는 점을 이해하세요.\n④ 진단: 지문에서 'arrows'는 '선택적 조정'이 아니라 '이론화된 필수 변환 과정'을 나타내는데, 이를 '선택적 보완'으로 오독한 것 같습니다. → 처방: 'arrows'는 언어학 이론에서 필수적으로 가정되는 '체계적 변환'을 시각화한 것이라는 점을 강조합니다. 선택적 조정보다는 '이론적 필연성'을 중시하는 접근을 기억하세요.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-23T09:41:00.684Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think ____ that she is hiding ____. The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think ____ that she is hiding ____. This T-bar is itself merged with the subject pronoun he, forming the TP he might think ____ that she is hiding ____. The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think ____ that she is hiding ____. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation):",
+    "choices": [
+     "she universally reveals",
+     "she ignores",
+     "she conceals",
+     "she confirms",
+     "she practices"
+    ],
+    "answer": 3,
+    "explanation": "빈칸에는 'she conceals'가 들어가 글의 논지를 완성한다 (본문 'what that she is hiding what'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'hiding'의 의미가 '감추는 것'임을 고려하지 않고 '드러내는 것'으로 오해하여 she universally reveals 를 선택했을 가능성이 높습니다. 'hiding'의 반대말이 'revealing'이지만, 문맥상 '감추는 행동'을 나타내므로 she universally reveals 는 문맥에 맞지 않습니다. → 처방: 빈칸 앞뒤의 동사 think 와 hiding 의 관계를 확인하고, 'hiding'이 '감추는 행동'을 뜻한다는 점을 떠올리며 선지를 고르기.\n② 진단: 지문에서 'hiding'과 어울리는 동사를 찾지 않고, 'ignore(무시하다)'라는 일반적인 동사로 오해하여 she ignores 를 선택했을 가능성이 있습니다. 그러나 문맥상 '감추는 행동'을 나타내는 동사가 필요하므로 she ignores 는 문맥에 맞지 않습니다. → 처방: 빈칸의 동사가 'hiding'과 자연스럽게 연결되는지 확인하고, 문맥상 '감추는 행동'을 나타내는 동사를 선택하기.\n④ 진단: 지문에서 'hiding'의 의미를 '확인하다'로 오해하여 she confirms 를 선택했을 가능성이 있습니다. 그러나 'hiding'은 '감추는 것'을 뜻하므로 she confirms 는 문맥에 맞지 않습니다. → 처방: 빈칸의 동사가 'hiding'과 어울리는지 확인하고, 문맥상 '감추는 행동'을 나타내는 동사를 우선적으로 고려하기.\n⑤ 진단: 지문에서 'hiding'의 의미를 '실행하다'로 오해하여 she practices 를 선택했을 가능성이 있습니다. 그러나 'practices'는 '연습하다' 또는 '실행하다'라는 의미로, '감추는 행동'을 나타내기에는 부적절합니다. → 처방: 빈칸의 동사가 'hiding'과 자연스럽게 연결되는지 확인하고, 문맥상 '감추는 행동'을 나타내는 동사를 선택하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-23T09:42:00.941Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 의심 1건",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 11,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 시제 기능은 보조 장치를 보완자 위치로 이동시킵니다.\n주어진 단어: ( complementizer / the / auxiliary / feature / moves / position / to / The / the / tense )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The tense feature moves the auxiliary to the complementizer position.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-23T06:42:28.145Z",
    "type": "네모어휘ABC",
@@ -282,106 +369,6 @@
     ],
     "answer": 3,
     "explanation": "원문 전개 순서는 (B) - (C) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T16:49:51.148Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "ADJECTIVES: PREDICATES or MODIFIERS?",
-     "ADJECTIVES CANNOT BE BOTH PREDICATES and MODIFIERS",
-     "ADJECTIVE TYPES: PREDICATES VS. MODIFIERS",
-     "ADJECTIVES as PREDICATES or MODIFIERS: TYPE DIFFERENCES",
-     "DIFFERENT TYPES of ADJECTIVES: PREDICATE VS. MODIFIER"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'ADJECTIVES AS PREDICATES OR MODIFIERS: TYPE DIFFERENCES**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 정도·빈도를 왜곡· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: ‘predicates’와 ‘modifiers’를 단순 대립으로만 이해하고, ‘type’이라는 개념을 고려하지 않았다. 지문에서 ‘type <e, t>’이나 ‘type <<e, t>, <e, t>>’로 설명하는 ‘형용사의 유형 차이’를 놓쳤다. → 처방: 형용사의 역할(예: predicative vs. modifier)과 그 ‘타입’(예: <e, t> vs. <<e, t>, <e, t>>)을 함께 떠올리며 선지를 읽기.\n② 진단: ‘둘 다 될 수 없다’는 ‘배타적 대립’을 주장하는 것으로 오해했다. 지문은 형용사가 ‘predicate’ 또는 ‘modifier’로 기능할 수 있음을 설명하지만, ‘type’이라는 ‘차이’를 강조한다는 점을 놓쳤다. → 처방: ‘둘 다 될 수 없다’는 주장이 아니라 ‘어떻게 다른가’를 묻는 선지임을 확인하고, ‘type’이라는 키워드를 찾아보기.\n③ 진단: ‘PREDICATES VS. MODIFIERS’를 ‘대립’으로만 보고, ‘TYPE’이라는 개념을 제목에 포함하지 않았다. 지문은 ‘type’이라는 용어를 핵심적으로 사용하고 있음을 간과했다. → 처방: 제목에 ‘TYPE’이라는 단어가 포함된 선지를 우선적으로 확인하기. ‘대립’보다는 ‘차이’를 강조하는 선지를 찾기.\n⑤ 진단: ‘DIFFERENT TYPES’를 ‘형용사의 종류’로만 해석하고, ‘predicate’와 ‘modifier’의 ‘타입 차이’를 구체적으로 담지 못했다. 지문은 ‘predicate’의 ‘타입’(예: <e, t>)과 ‘modifier’의 ‘타입’(예: <<e, t>, <e, t>>)을 비교한다는 점을 놓쳤다. → 처방: ‘DIFFERENT TYPES’가 ‘형용사의 타입 차이’를 뜻함을 확인하고, ‘predicate vs. modifier’의 ‘타입’을 비교하는 선지를 찾기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: ADJECTIVES AS PREDICATES OR MODIFIERS: TYPE DIFFERENCES**]"
-   }
-  },
-  {
-   "ts": "2026-07-22T14:24:48.416Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Sa hun til dattera mi said she to daughter my at faren min er kommet alene that father my is come alone og føler sig bedre? and feels himself better Here we have many of the same sorts of things that motivated Twain to say, “A person who has not studied German can form no idea of what a perplexing language it is.” The same Said she . . . ? (Sa hun . . . ?), is come (er kommet), and “feeling yourself” (føler sig), plus gender: the my for my daughter is mi but the my for my father is min. That is, in a sense one “should” be able to say in English Said she to my daughter that my father alone come is and himself better feels? After all, you can say something similar in every other offshoot of Proto-Germanic but English. <u>Only to English speakers does the sentence sound like something someone with brain damage would say.</u> This shows that something was",
-    "choices": [
-     "To those unfamiliar with English grammar, the sentence’s odd structure might seem like a sign of cognitive impairment, highlighting how grammar shapes what we consider normal.",
-     "The sentence’s illogical flow tricks even native speakers into thinking it’s a symptom of brain damage, proving grammar’s power to distort perception.",
-     "People who grasp English conventions notice the sentence’s unnaturalness, which occasionally makes them question the speaker’s mental state.",
-     "Since native speakers find the sentence illogical, it suggests that grammatical rules are universally tied to cognitive function across all languages.",
-     "The sentence structure appears unnatural and illogical only to those accustomed to English grammar, revealing how deeply ingrained linguistic conventions shape perception."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'The sentence structure appears unnatural and illogical only to those accustomed to English grammar, revealing how deeply ingrained linguistic conventions shape perception.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Only to English speakers'가 핵심임을 무시하고 'unfamiliar with English grammar'라는 일반적 표현에만 주목해 오독. → 처방: 지문에서 강조된 'Only to English speakers'를 정확히 짚고, 'English grammar'에만 초점을 맞춰 풀기.\n② 진단: 지문의 'tricks even native speakers' 부분을 'even native speakers'로 축소해 오해하고, 'distort perception'이라는 과장된 표현에 끌림. → 처방: 지문에서 'Only to English speakers'와 'does not sound like'를 정확히 연결해, 'tricks'가 아닌 'unnaturalness'에 주목하기.\n③ 진단: 지문의 'brain damage' 표현을 'question the speaker’s mental state'로 왜곡해, 지문의 핵심 논점(문법의 영향력)을 놓침. → 처방: 지문에서 'brain damage'는 예시일 뿐임을 인식하고, 'unnaturalness'와 'grammar'의 관계를 정확히 파악하기.\n④ 진단: 지문의 'universally tied to cognitive function'이라는 과장된 결론을 'grammatical rules are universally tied'로 오해하고, 지문의 한계(영어만의 특성)를 무시함. → 처방: 지문에서 'only to English speakers'와 'offshoot of Proto-Germanic'을 확인해, 영어만의 특성을 정확히 짚기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T14:25:30.984Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(73%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어는 게르만어족의 공통 구조 패턴을 벗어난 후 언어의 통사적 규칙을 크게 훼손하였다.",
-     "영어의 통사 규칙은 게르만어족의 일부 특징만을 잃어 다른 언어와 뚜렷한 차이를 보였다.",
-     "게르만어족의 후손 언어 대부분은 영어와 동일한 통사적 규칙을 공유하지 않는다.",
-     "영어는 게르만어족의 원형적 구조를 상당 부분 유지하여 후손 언어와 구별된다.",
-     "영어는 게르만어족의 공통 구조 패턴에서 크게 벗어나 언어의 통사적 규칙을 이탈하였다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'English has deviated so far from its Germanic roots that its syntax now violates the core structural patterns shared by all other Proto-Germanic descendants.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘공통 구조 패턴을 벗어났다’는 말은 틀렸지만, ‘통사적 규칙을 크게 훼손하였다’는 말은 지문에서 ‘뇌 손상자 같은 말’로 표현된 영어의 특성을 정확히 짚었다. 학생은 ‘공통 구조 패턴’을 ‘원형적 구조’로 오해한 듯하다. → 처방: ‘공통 구조 패턴’이란 원형적 구조를 뜻한다는 점을 기억하고, 지문의 ‘원형적 구조’와 ‘벗어남’을 구분해서 읽기.\n② 진단: ‘일부 특징만을 잃어’란 말은 지문에서 영어가 게르만어족의 ‘원형적 구조’를 ‘상당 부분’ 잃었다고 한 것과 모순된다. 학생은 ‘일부’와 ‘상당 부분’을 혼동한 듯하다. → 처방: ‘일부’와 ‘상당 부분’을 비교하며 읽고, 지문에서 ‘상당 부분’을 강조한 이유를 찾기.\n③ 진단: ‘게르만어족의 후손 언어 대부분’이란 말은 지문에서 ‘다른 게르만어파 언어’는 ‘원형적 구조’를 유지했다고 한 것과 반대된다. 학생은 ‘공통 구조 패턴’을 ‘원형적 구조’로 오해한 듯하다. → 처방: ‘공통 구조 패턴’이란 원형적 구조를 뜻한다는 점을 기억하고, 지문의 ‘원형적 구조’를 유지한 언어와 벗어난 영어를 구분해서 읽기.\n④ 진단: ‘원형적 구조를 상당 부분 유지’라고 한 말은 지문에서 영어가 ‘원형적 구조’를 ‘상당 부분 잃었다’고 한 것과 반대된다. 학생은 ‘유지’와 ‘벗어남’을 혼동한 듯하다. → 처방: ‘유지’와 ‘벗어남’을 비교하며 읽고, 지문에서 영어가 ‘벗어났다’는 사실을 정확히 파악하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: English has deviated so far from its Germanic roots that its syntax now violates the core structural patterns shared by all other Proto-Germanic descendants.]"
    }
   }
  ]
