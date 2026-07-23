@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-23T16:50:08.902Z",
+ "updated": "2026-07-23T18:40:32.342Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-23T18:40:03.436Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 실제 패턴에서 'and'나 'since'로 연결된 문장 구조에서 동사 시제 불일치, 반복된 동사 사용, 또는 불필요한 반복(예: 'what researchers said'의 중복)이 빈번한 오류로 나타났다.",
+   "rule": "CEFR B1 수준 이하의 내신 변형문제에서는 'and' 또는 'since'로 연결된 두 문장 간에 동사 시제, 주어-동사 일치, 또는 반복된 표현(예: 'what researchers said')을 의도적으로 틀리게 하여 오류를 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-23T16:49:42.696Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'be + 형용사 + 전치사' 구문에서 'be' 동사의 오용(be useful → is useful)이 빈번하며, 'whenever' 절 내 'necessary'의 위치 오류도 다수 확인된다. 또한 과거 시제와 현재 시제의 혼용 오류가 반복적으로 발생한다.",
    "rule": "'be + 형용사 + 전치사' 구문(예: be useful for, be familiar with)에서 'be' 동사가 생략되거나 오용된 경우, 반드시 'be' 동사를 올바르게 삽입하거나 형용사-전치사 결합을 확인하여 문장을 수정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T12:10:54.192Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "연어가 오답의 구문적 결함을 보완·완화하는 역할을 한다.",
-   "rule": "모범답안의 오답 연어를 원문에서 찾아내어 그 자리에 정답 연어를 끼워넣는다.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,78 @@
 {
- "updated": "2026-07-23T16:50:08.905Z",
+ "updated": "2026-07-23T18:40:32.346Z",
  "samples": [
+  {
+   "ts": "2026-07-23T18:39:09.956Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "How Men and Women Redefined Workplace Relationships",
+     "Why Workplace Changes Are Making Divorce Rates Rise",
+     "How Men and Women Work Together in Low-Density Areas",
+     "How All Social Relationships Have Transformed Due to Work",
+     "Why Men and Women Always Change Relationships at Work"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Men and women's relationships have most changed in how they work together.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘이혼율 상승’이라는 구체적 내용만 보고 지문의 ‘직장 관계 변화’와 ‘원인’을 혼동했다. 지문은 ‘관계 변화의 양상’을 다룬 반면, 이 선지는 ‘원인’을 주장하는 오류가 있다. → 처방: ‘무엇이 어떻게 변했는지’를 먼저 찾고, 그 변화의 ‘원인’이나 ‘결과’를 주장하는 선지는 배제하라.\n③ 진단: ‘저밀도 지역’이라는 세부 사례만 보고 지문의 ‘직장 관계 변화’ 전체를 오독했다. 지문은 ‘직장 내 관계 변화’를 다룬 반면, 이 선지는 ‘특정 지역’으로 범위를 좁혔다. → 처방: ‘직장 관계 변화’라는 핵심 주제를 먼저 확인하고, 세부 사례가 제목에 포함된 선지는 배제하라.\n④ 진단: ‘모든 사회 관계’로 범위를 넓혀 지문의 ‘직장 관계 변화’와 혼동했다. 지문은 ‘직장 내 관계’에 한정되어 있지만, 이 선지는 ‘모든 사회 관계’로 확대해 오독했다. → 처방: 제목의 범위가 지문과 ‘일치하는지’ 먼저 확인하고, 범위가 과도하게 넓거나 좁은 선지는 배제하라.\n⑤ 진단: ‘항상 변화한다’는 절대적 표현으로 지문의 ‘변화 양상’을 오해했다. 지문은 ‘변화의 양상’을 설명하지만, 이 선지는 ‘항상’이라는 과장된 표현으로 오독했다. → 처방: ‘항상’, ‘모두’, ‘절대’와 같은 절대적 표현이 제목에 포함된 선지는 오답일 확률이 높으니 주의하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Men and women]"
+   }
+  },
+  {
+   "ts": "2026-07-23T18:39:56.595Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "The greatest changes in men-women relationships have occurred in ⓐ<u>how they work together</u>. Now that we see what the sentence says, we can make it still more direct: ✓ Men and women have changed their relationships most in how they work together. ⓑ<u>How writers use metadiscourse varies</u> by field, but you can usually cut these two types: 1. Metadiscourse That Attributes Your Ideas to a Source Don’t announce that something has been observed, noticed, noted, and so on; just state the fact: High divorce rates ⓒ<u>have been observed occurring</u> in areas that have been determined to have low population density. ✓ High divorce rates occur in areas with low population density. 2. Metadiscourse That Announces Your Topic The boldface phrases tell your reader what your sentence is “about”: This section introduces another problem, ⓓ<u>that of noise pollution</u>. The first thing to say about it is that noise pollution ⓔ<u>exists not only</u> . . .",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [준동사] ⓒ: 'have been observed occurring' → 'have been observed to occur' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-23T18:40:01.261Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 17 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'relationships', 'significantly', 'transformed' / 15~19단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Men and women have transformed their relationships most significantly through changes in how they collaborate at work.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-23T16:48:52.394Z",
    "type": "글의순서",
@@ -265,109 +337,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] The itinerant lifestyle involves constant movement from place to place.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 8~12단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-22T23:27:25.203Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 1번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.25,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.25)",
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "limitations on how locative arguments appear in inversion constructions",
-     "effects of locative argument realization on inversion structures",
-     "locative argument realization in dative contexts",
-     "general restrictions on argument realization in syntax",
-     "locative argument realization without syntactic constraints"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Constraints on locative argument realization in linguistic inversion structures**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘effects of locative argument realization on inversion structures’를 오해했는데, 지문은 ‘one-case-per-clause’ 제약과 같은 ‘제한’(limitations)에 초점을 맞추고 있음. ‘effects’는 결과나 영향에 대한 설명이지만 지문은 구조적 제약에 대한 논의임. → 처방: ‘inversion structures’가 아니라 ‘제약(constraint)’에 주목하며 읽기. ‘effects’는 결과가 아니라 ‘제한’이 핵심임을 기억하기.\n③ 진단: ‘locative argument realization in dative contexts’를 선택했는데, 지문은 dative 가 locative 로 해석될 수 있음을 설명하지만 주제는 ‘제한’(limitations)에 있음. ‘dative contexts’만 강조하면 주제를 벗어남. → 처방: ‘locative argument realization’이 아니라 ‘제한(constraint)’이 주제임을 확인하고, ‘dative contexts’는 예시일 뿐임을 기억하기.\n④ 진단: ‘general restrictions on argument realization in syntax’를 선택했는데, 지문은 locative argument 에만 초점을 맞추고 있음. ‘general’이라는 말은 지문의 좁은 범위를 벗어나게 함. → 처방: ‘general’이 아니라 ‘locative argument realization’의 ‘제한(constraint)’임을 명확히 하고, ‘general’이라는 단어에 현혹되지 않기.\n⑤ 진단: ‘locative argument realization without syntactic constraints’를 선택했는데, 지문은 ‘one-case-per-clause’ 제약과 같은 ‘syntactic constraints’를 강조하고 있음. ‘without’는 지문의 핵심과 반대됨. → 처방: ‘without’라는 단어가 있으면 ‘제약’이 없다는 뜻이므로, 지문에서 ‘제약’을 강조하는지 확인하고 ‘without’는 제외하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Constraints on locative argument realization in linguistic inversion structures**]"
-   }
-  },
-  {
-   "ts": "2026-07-22T23:27:52.170Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "What positions fit in?\n\n(A) Although there is no direct evidence for lexicalisation of the prefix + verb complex, we may recall instances of accusative co-occurring with cefter + verb, only when the formative immediately precedes the verb (cf. above). And these may be indirect evidence for lexicalisation of the complex as a transitive verb governing the accusative as its direct object, as represented in (50) and (51). After (50) V erg abs/loc A Ν Ν Hig öa sona aefterridon\n\n(B) For (16) — (19), the datives might be taken as governed by prefixed verbs (e. cefterridan, aftercliopan), and therefore participant arguments thereof.\n\n(C) 93 (49) V loc Ν abs loc Ν Ν Him bij) fyr ongean The representations in (47) — (49) each contain two locative arguments, given that, unlike fram, which realises ablative, ongean realises locative. Given the \"one-case-per-clause\" constraint, then, as long as the datives me and him are interpreted as locative, they must be circumstantials.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 5,
-    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘(A)’가 ‘직접 증거는 없지만 간접 증거가 있다’는 논리를 펼치며 ‘(50)·(51)’을 언급하는 부분인데, 이를 ‘(C)’의 ‘위치격·소유격 논의’와 혼동한 듯하다. ‘(A)’는 ‘타동사화’에 초점을 맞추지만, 학생은 ‘위치격·소유격’ 논의로 오해한 듯하다. → 처방: ‘(A)’는 ‘접두사+동사’가 ‘타동사’로 Lexicalisation 되는지 여부를 다루는 글임을 먼저 확인하고, ‘(C)’는 ‘위치격·소유격’ 제약에 대한 설명임을 구분해서 읽기.\n② 진단: ‘(B)’가 ‘여격·소유격이 접두사 동사에 지배된다’는 내용인데, 이를 ‘(A)’의 ‘직접/간접 증거’ 논의와 섞어 ‘(A)’를 먼저 배치한 듯하다. ‘(B)’는 ‘접두사 동사의 지배격’에 대한 예시라 ‘(A)’보다 앞선다는 점을 놓쳤다. → 처방: ‘(B)’는 ‘접두사 동사가 여격·소유격을 지배하는지’에 대한 예시이므로, ‘(A)’의 ‘간접 증거’ 논의보다 먼저 나와야 한다는 흐름을 먼저 파악하기.\n③ 진단: ‘(C)’가 ‘위치격·소유격 제약’과 ‘둘째 위치격 Arg’에 대한 설명인데, 이를 ‘(A)’의 ‘타동사화’ 논의와 혼동하여 ‘(C)’를 ‘(A)’ 다음에 배치한 듯하다. ‘(C)’는 ‘한 문장당 한 격’ 제약에 대한 논의로, ‘(B)’의 예시보다 먼저 나와야 한다. → 처방: ‘(C)’는 ‘격 제약’이 핵심인 글이므로, ‘(B)’의 ‘접두사 동사의 지배격’ 예시보다 먼저 나와야 한다는 구조를 먼저 이해하기.\n④ 진단: ‘(C)’를 가장 먼저 배치해야 한다는 점은 맞았으나, ‘(B)’와 ‘(A)’의 순서를 반대로 배치했다. ‘(B)’는 ‘접두사 동사의 지배격’ 예시로 ‘(A)’의 ‘간접 증거’ 논의보다 앞선다는 점을 놓쳤다. → 처방: ‘(C)’ → ‘(B)’ → ‘(A)’ 순서가 ‘격 제약 → 접두사 동사의 지배격 → 간접 증거’로 이어지는 논리 흐름임을 기억하고, 각 글의 핵심 주제를 먼저 파악하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T20:32:54.785Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "동사 구문 분석에서 동사의 문법적 기능에 따라 자동사와 타동사로 하위 분류해야 한다",
-     "동사의 문법적 기능이 자동사인지 타동사인지는 문장의 의미를 통해서만 결정되어야 한다",
-     "동사 구문 분석에서 자동사와 타동사로 분류하는 것은 주어와 목적어의 존재 여부와는 무관하다",
-     "모든 동사는 문장 속에서 자동사와 타동사 중 하나로만 사용되며 중간 형태는 존재하지 않는다",
-     "동사 구문 분석에서 자동사와 타동사로의 하위 분류는 문장 분석의 필수 요소가 아니다"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Verbs must be sub-categorized into intransitive or transitive based on their syntactic behavior in sentences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 문장의 의미를 동사의 자동사/타동사 분류 기준으로 오해함. 지문 74쪽에서 동사의 하위 분류는 '문장 구조'(예: 목적어 존재 여부)에 따라 결정된다고 명확히 설명함. '의미'가 아니라 '기능'을 기준으로 해야 함. → 처방: 동사 분류는 문장 안에서 동사가 어떤 구조적 역할을 하는지(예: 목적어와 함께 쓰이는지)를 기준으로 판단해야 한다는 점을 기억하자.\n③ 진단: 주어와 목적어의 존재 여부와 동사의 자동사/타동사 분류를 '무관하다'고 오해함. 지문 예문 (a)와 (b)에서 'paddled'가 주어만 있을 때는 자동사, 목적어와 함께 쓰이면 타동사로 바뀌는 것을 확인할 수 있음. → 처방: 동사가 자동사인지 타동사인지는 주어와 목적어의 존재 여부와 밀접하게 연결되어 있다는 점을 잊지 말자.\n④ 진단: 모든 동사가 오직 자동사 또는 타동사로만 사용된다고 오해함. 지문 예문 (e)와 (f)에서 'broke'가 자동사와 타동사로 모두 쓰이는 것을 확인할 수 있음. '중간 형태'가 존재하지 않는다는 주장은 옳지 않음. → 처방: 한 동사가 문맥에 따라 자동사와 타동사로 모두 쓰일 수 있다는 점을 기억하고, 문장 전체를 보고 판단하자.\n⑤ 진단: 동사의 하위 분류가 문장 분석의 '필수 요소'가 아니라고 오해함. 지문 74쪽에서 동사의 하위 분류가 문장 분석에 도움이 된다고 설명하고, 예문에서도 이를 적극 활용하고 있음. → 처방: 동사의 자동사/타동사 분류는 문장 구조를 이해하는 데 매우 유용하다는 점을 기억하고, 분석에 활용하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Verbs must be sub-categorized into intransitive or transitive based on their syntactic behavior in sentences.]"
    }
   }
  ]
