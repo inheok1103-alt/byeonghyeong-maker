@@ -1,7 +1,15 @@
 {
- "updated": "2026-07-22T23:28:32.126Z",
+ "updated": "2026-07-23T03:48:43.541Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "정답 선지는 지문의 핵심 의미를 정확히 반영해야 하며, 오답 선지는 정답 선지의 오류를 보완할 수 있도록 재구성되어야 한다.",
+   "src": "자가학습:내용불일치",
+   "score": 80,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-07-23T03:47:47.914Z"
+  },
   {
    "rule": "모든 선지는 지문의 핵심 논점(one-case-per-clause constraint, circumstantial interpretations, ablative/locative case 실현 제약 등)을 구체적이고 직접적으로 반영해야 하며, 지나치게 포괄적이거나 오류를 내포한 표현(예: 'universal rules', 'determining factors')은 배제해야 한다.",
    "src": "자가학습:주제",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-16T18:34:39.561Z"
-  },
-  {
-   "rule": "모든 문항은 단어 정의 → 예시 → 퀴즈 소개 → 퀴즈 항목의 명확한 흐름을 유지해야 하며, 선지의 위치와 정답 번호는 문맥상 자연스러운 순서(예: 정의-퀴즈 연결성)로 배열되어야 한다.",
-   "src": "자가학습:문장삽입",
-   "score": 80,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-16T16:43:19.367Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
