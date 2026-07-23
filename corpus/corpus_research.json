@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-23T20:48:35.751Z",
+ "updated": "2026-07-23T22:18:02.999Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-23T22:17:41.072Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 실제 오류에서 '형용사+명사' 구문에서 관사 누락, 복수형 오류, 비교급 오류가 빈번히 발생함을 확인. 특히 'more responsibilities than young person'에서 관사와 비교급의 오류가 동시에 나타남.",
+   "rule": "'형용사+명사' 구문(예: weather related factors, young person)에서 관사(a/the)나 복수형(-s) 오류를 검증하는 문제를 100% 포함하여 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-23T20:48:10.322Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'명사 + 전치사 + 관사 + 명사' 구조에서 관사가 생략되거나 잘못 사용되는 오류가 빈번하며, 특히 'kind of activities' → 'kinds of activities'와 같이 복수형/관사 오류가 연어 패턴과 결합된다. 또한 'possession'의 철자 오류('possetion')와 같은 기본적인 오류도 다수 관찰된다.",
    "rule": "'명사 + 전치사 + 관사 + 명사' 구조에서 관사는 반드시 포함되어야 하며, 복수형 명사 뒤에는 'of'가 아닌 'kinds of'/'types of'와 같은 복수 표현을 사용해야 한다. 예를 들어, 'kind of activities'는 'these kinds of activities'로 수정해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T15:17:59.662Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 연어 패턴은 'old English'와 'New York'처럼 고유명사+명사가 빈번하며, 'noun phrase'와 'direct object'가 결합된 문장 구조가 많다. 또한 'reason relations'와 'past/present tense'가 혼용되어 논리적 흐름을 형성한다.",
-   "rule": "원서 문체 패턴을 반영하여, 'For example' 뒤에는 복수형 오류(예: 'fans')가 아닌 단수형 명사(예: 'fan')를 사용하도록 변형 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
