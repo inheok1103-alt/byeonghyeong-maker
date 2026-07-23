@@ -1,6 +1,42 @@
 {
- "updated": "2026-07-23T12:06:27.196Z",
+ "updated": "2026-07-23T14:36:28.242Z",
  "samples": [
+  {
+   "ts": "2026-07-23T14:35:30.874Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "T-보조사 'may'는 φ-특징과 격을 평가하고 삭제한 후 ЕРР를 충족하기 위해 목표어와 Probe 관계를 맺는다.",
+     "T-보조사 'may'는 φ-특징을 평가하고 삭제하는 Probe 역할을 수행하며 ЕРР를 충족시킨다.",
+     "T-보조사 'may'는 Probe 로서 φ-특징과 격을 평가·삭제하고 ЕРР를 위한 목표어의 이동을 유발한다.",
+     "T-보조사 'may'는 Probe 역할을 맡아 φ-특징과 격을 평가·삭제하여 ЕРР를 충족시킨다.",
+     "T-보조사 'may'는 φ-특징과 격을 평가·삭제하고 ЕРР 충족을 위한 Probe 관계를 형성한다."
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The T-auxiliary *may* probes and agrees with the goal *several miners* to value and delete -features and case, triggering movement for EPP satisfaction.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The T-auxiliary *may* probes and agrees with the goal *several miners* to value and delete -features and case, triggering movement for EPP satisfaction.]\n[오답 진단·처방]\n① 진단: ‘may’가 Probe 역할을 하기 전에 -특징과 격을 평가·삭제한 후 를 충족한다고 오해. 지문은 Probe 역할로 -특징과 격을 평가·삭제한 다음 를 위한 목표어의 이동이 일어난다고 설명(‘These various operations apply simultaneously on the T-cycle in accordance with (81)’). → 처방: Probe 역할의 순서와 의 관계를 정확히 기억하기. Probe 가 -특징과 격을 평가·삭제한 후 를 충족하는 것이 아니라, ‘동시에’ 를 위한 이동이 일어난다는 점을 명확히 이해하기.\n② 진단: ‘may’가 를 ‘충족시킨다’고만 표현하여 를 위한 목표어의 이동(‘movement of the closest goal several miners to spec-T’)을 생략. 지문은 삭제가 목표어의 이동으로 일어난다고 명시. → 처방: 가 Probe 의 -특징/격 평가와 별도로 목표어의 이동을 통해 ‘삭제’된다는 사실을 반드시 기억하기. ‘충족’보다는 ‘삭제’와 ‘이동’의 관계를 정확히 연결 지어 이해하기.\n④ 진단: ‘를 충족시킨다’고만 표현하여 가 Probe 의 -특징/격 평가와 ‘동시에’ 목표어의 이동을 유발한다는 세부 과정을 무시. 지문은 삭제가 목표어의 이동을 통해 일어난다고 설명. → 처방: 의 ‘삭제’가 Probe 의 평가와 ‘동시’에 목표어의 이동으로 일어난다는 점을 강조. ‘충족’보다는 ‘삭제’와 ‘이동’의 관계를 구체적으로 떠올리기.\n⑤ 진단: ‘Probe 관계를 형성한다’고만 표현하여 Probe 가 -특징/격 평가와 삭제를 ‘어떻게’ 수행하는지(‘movement of the closest goal several miners to spec-T’)를 생략. 지문은 Probe 가 목표어와 ‘동시’에 를 위한 이동을 유발한다고 설명. → 처방: Probe 의 역할이 -특징/격 평가뿐 아니라 삭제를 위한 목표어의 이동까지 포함한다는 점을 명확히 기억하기. ‘형성한다’보다는 ‘유발한다’와 ‘삭제’를 연결 지어 이해하기."
+   }
+  },
   {
    "ts": "2026-07-23T12:05:04.176Z",
    "type": "빈칸(문장)",
@@ -350,25 +386,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ: 문맥상 'auxiliary'가 와야 하는데 'antagonist'가 쓰여 부적절하다 — 앞 문장에서 'expletive pronoun there'가 Belfast English 에서 주어(spec-T) 역할을 하며, 'should/have'와 같은 조동사(auxiliary)와 결합한다고 설명한 후, 조동사가 expletive 주어 앞에 나올 수 있음을 보인다는 문맥에서 'antagonist'(적대자, 반대자)라는 단어는 문법적 역할과 문맥의 방향성을 완전히 역전시킨다.. [극성] 정답=조동사의 기능/존재(auxiliary) ↔ 오답=상호작용의 반대(antagonist)\n[오답 진단·처방]\n① 진단: ‘expletive structures’라는 말이 문맥상 맞지 않음. 지문에서 ‘expletive structures’는 ‘there’를 포함하는 문장 구조를 가리키는 말이고, ‘expletive’는 문법 용어로 ‘빈 자리 대명사’를 뜻함. 학생은 ‘expletive’를 ‘억지스러운 구조’로 오해했을 수 있음. → 처방: ‘expletive’를 ‘빈 자리 대명사 구조’라고 외우고, 문법 용어의 뜻을 정확히 기억하기.\n② 진단: ‘pronoun’이라는 말이 ‘there’를 가리키는 데 맞지 않음. ‘there’는 문법에서 ‘빈 자리 대명사’로 쓰이지만, ‘pronoun’은 보통 대명사를 가리키는 일반적인 용어임. 학생은 ‘there’를 일반적인 대명사로 오해했을 수 있음. → 처방: ‘there’를 ‘빈 자리 대명사’라고 정확히 이해하고, ‘pronoun’이란 용어의 범위를 기억하기.\n④ 진단: ‘antagonist’라는 말이 문맥상 맞지 않음. 지문에서 ‘antagonist’는 ‘should/have’를 가리키는 말이고, 문법 용어로 ‘조동사’를 뜻함. 학생은 ‘antagonist’를 ‘반대자’로 오해했을 수 있음. → 처방: ‘antagonist’를 ‘조동사’라고 외우고, 문법 용어의 뜻을 정확히 기억하기.\n⑤ 진단: ‘movement’라는 말이 문맥상 맞지 않음. 지문에서 ‘movement’는 ‘조동사가 there 앞으로 이동하는 현상’을 가리키는 말이고, 문법 용어로 ‘이동’을 뜻함. 학생은 ‘movement’를 ‘움직임’으로 오해했을 수 있음. → 처방: ‘movement’를 ‘문법적 이동’이라고 이해하고, 문법 용어의 뜻을 정확히 기억하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-22T18:37:03.066Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 17 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 7,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'expletive', 'auxiliary', 'questions' / 15~19단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] In Belfast English, the expletive pronoun *there* occupies the subject position before auxiliary movement occurs in questions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
