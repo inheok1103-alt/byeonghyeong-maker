@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-23T14:36:28.242Z",
+ "updated": "2026-07-23T16:50:08.905Z",
  "samples": [
+  {
+   "ts": "2026-07-23T16:48:52.394Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page.\n\n(A) 2 He/She’s downright rude. 6 He/She has a warm smile. 3 He/She’s bursting with energy. 7 He/She’s full of pent-up anger.\n\n(B) 4 He/She has a bubbly personality. 8 He/She has boundless energy. Complete this conversation using collocations from the box in the appropriate form so that Nell always agrees with Zoë. bear a striking resemblance to\n\n(C) Then match them to 1–6 below. blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments? 1 He/She certainly looks his/her age. 5 He/She has a very abrasive manner.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 4,
+    "explanation": "원문 전개 순서는 (C) - (A) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ① (A)부터 시작했는데, (A)는 'He/She’s downright rude' 등 부정적 표현이 많아 대화 흐름상 맞지 않음. ② (C)는 'match them to 1–6 below'로 이어지는 지시문이므로 (C)가 먼저 나와야 자연스러움. → 처방: 지시문(1–6 아래에 맞춰라)이 먼저 나오면 문제 풀이가 편하다는 점을 기억하고, (C)를 먼저 찾도록 연습하기.\n② 진단: ① (B)부터 시작했는데, (B)는 'Complete this conversation'로 대화가 이어지므로 (C)의 지시문과 맞지 않음. ② (A)는 대화가 아니라 예시 문장들이므로 순서상 맞지 않음. → 처방: 대화는 (B)에서 시작하고, 지시문은 (C)에서 나오므로 (B)→(C)→(A) 순서를 기억하기.\n③ 진단: ① (B)부터 시작했는데, (B)는 대화로 시작하므로 (C)의 지시문이 먼저 나와야 흐름이 자연스러움. ② (C) 다음에 (A)가 오면 대화가 끊기므로 순서가 맞지 않음. → 처방: 지시문(1–6 아래에 맞춰라)이 대화보다 먼저 나와야 문제 풀이가 쉬우므로, (C)를 먼저 찾도록 연습하기.\n⑤ 진단: ① (C)부터 시작했는데, (C)는 지시문으로 문제 풀이를 위한 안내이므로 (B)의 대화가 먼저 나와야 자연스러움. ② (B) 다음에 (A)가 오면 대화가 끝나지 않고 이어지므로 순서가 맞지 않음. → 처방: 대화는 (B)에서 시작하고, 지시문은 (C)에서 나오며, 예시는 (A)에서 나오므로 (B)→(C)→(A) 순서를 기억하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-23T16:49:40.357Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 사람들은 보통 '~와 놀랍도록 닮았다'고 말할 때 칭찬으로 여긴다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-23T14:35:30.874Z",
    "type": "요지",
@@ -315,77 +368,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Verbs must be sub-categorized into intransitive or transitive based on their syntactic behavior in sentences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 문장의 의미를 동사의 자동사/타동사 분류 기준으로 오해함. 지문 74쪽에서 동사의 하위 분류는 '문장 구조'(예: 목적어 존재 여부)에 따라 결정된다고 명확히 설명함. '의미'가 아니라 '기능'을 기준으로 해야 함. → 처방: 동사 분류는 문장 안에서 동사가 어떤 구조적 역할을 하는지(예: 목적어와 함께 쓰이는지)를 기준으로 판단해야 한다는 점을 기억하자.\n③ 진단: 주어와 목적어의 존재 여부와 동사의 자동사/타동사 분류를 '무관하다'고 오해함. 지문 예문 (a)와 (b)에서 'paddled'가 주어만 있을 때는 자동사, 목적어와 함께 쓰이면 타동사로 바뀌는 것을 확인할 수 있음. → 처방: 동사가 자동사인지 타동사인지는 주어와 목적어의 존재 여부와 밀접하게 연결되어 있다는 점을 잊지 말자.\n④ 진단: 모든 동사가 오직 자동사 또는 타동사로만 사용된다고 오해함. 지문 예문 (e)와 (f)에서 'broke'가 자동사와 타동사로 모두 쓰이는 것을 확인할 수 있음. '중간 형태'가 존재하지 않는다는 주장은 옳지 않음. → 처방: 한 동사가 문맥에 따라 자동사와 타동사로 모두 쓰일 수 있다는 점을 기억하고, 문장 전체를 보고 판단하자.\n⑤ 진단: 동사의 하위 분류가 문장 분석의 '필수 요소'가 아니라고 오해함. 지문 74쪽에서 동사의 하위 분류가 문장 분석에 도움이 된다고 설명하고, 예문에서도 이를 적극 활용하고 있음. → 처방: 동사의 자동사/타동사 분류는 문장 구조를 이해하는 데 매우 유용하다는 점을 기억하고, 분석에 활용하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Verbs must be sub-categorized into intransitive or transitive based on their syntactic behavior in sentences.]"
-   }
-  },
-  {
-   "ts": "2026-07-22T20:33:57.845Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 4번(기록 3번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "THE BASIC VERB PHRASE 74 The following may help in identifying the sub-​categories of verb in sentences: Discussion of in-​text exercise 1. (a) The ducks paddled (across the lake) –​ [intransitive] (b) He paddled the raft (across the lake) –​ [transitive] (c) Zadie reflected (quietly) –​ [intransitive] (d) The shop window reflected the blinding sunshine –​ [transitive] (e) The samovar broke –​ [intransitive] (f) Anna broke the samovar –​ [transitive]. Exercises 1. Identify the major functions in the following sentences (subject, direct object, indirect object, subject-​predicative, object-​predicative and prepositional complement). Identify the verbs and sub-​categorise them. Example: (a) The girl in the palace dyed her hair a strange colour. (b) Hot air rises. (c) Luigi promised me his spaghetti machine. (d) The largest frying pan proved very useful. (e) Someone stole my contact lenses. (f) It sounds like a really good film. Otto devoured the couscous subject V direct object [trans]\n\n─────────\n[요약문] Understanding verb (A) in sentences requires distinguishing whether the verb is used (B) or with an object.",
-    "choices": [
-     "(A) classification … (B) transitively",
-     "(A) recognition … (B) intransitively with an object",
-     "(A) categorization … (B) intransitively",
-     "(A) analysis … (B) without an object",
-     "(A) interpretation … (B) reflexively"
-    ],
-    "answer": 4,
-    "explanation": "(A) categorization / (B) intransitively 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘classification’을 ‘구분’으로 오해하고 ‘transitively’를 ‘목적어 있는 경우’로만 생각했으나, 지문은 ‘transitive/intransitive’를 ‘목적어 유무’로 넓게 설명함을 놓침. → 처방: ‘transitive/intransitive’를 ‘목적어의 유무’로 이해하고, 문장의 핵심을 ‘목적어 유무’로 파악하는 연습을 반복하라.\n② 진단: ‘recognition’을 ‘인식’으로 오해하고 ‘intransitively’를 ‘목적어 없는 동사’로만 한정했으나, 지문은 ‘intransitive’가 ‘목적어 없이 쓰는 동사’를 포함함을 간과함. → 처방: ‘intransitive’를 ‘목적어가 없는 동사’로만 보지 말고, 문장에서 ‘목적어의 존재 여부’를 먼저 확인하는 습관을 기르라.\n③ 진단: ‘categorization’을 ‘범주화’로 오해하고 ‘intransitively’를 ‘목적어 없이 쓰는 동사’로만 생각했으나, 지문은 ‘transitive/intransitive’를 ‘목적어의 유무’로 설명함을 놓침. → 처방: ‘transitive’와 ‘intransitive’를 ‘목적어의 유무’로 명확히 구분하는 연습을 하고, 예문에서 직접 확인하라.\n⑤ 진단: ‘interpretation’을 ‘해석’으로 오해하고 ‘reflexively’를 ‘재귀적’으로만 생각했으나, 지문은 ‘transitive/intransitive’를 ‘목적어의 유무’로 설명함을 간과함. → 처방: ‘reflexive’를 생각하지 말고, 문장에서 ‘목적어의 유무’를 먼저 확인하는 습관을 들여라."
-   }
-  },
-  {
-   "ts": "2026-07-22T18:36:53.040Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "Sentences like (2a, b) are called ⓐ<u>expletive</u> structures because they contain the expletive ⓑ<u>pronoun</u> there. (The fact that there is not a locative pronoun in this kind of use is shown by the impossibility of replacing it by locative here or questioning it by the interrogative locative where? or focussing it by assigning it contrastive stress.) For the time being, let’s focus on the derivation of Belfast English sentences like (2a, b) before turning to consider the derivation of Standard English sentences like (1a, b). One question to ask about the sentences in (2a, b) is where the expletive pronoun there is positioned. Since there immediately precedes the tensed ⓒ<u>antagonist</u> should/have, a reasonable conjecture is that there is the ⓓ<u>subject</u>/specifier of should/have and hence occupies the spec-T position. If this is so, we’d expect to find that the auxiliary can move in front of the expletive subject (via T-to-C ⓔ<u>movement</u>) in questions – and this is indeed the case in Belfast English, as the sentences in (3) below illustrate:",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ: 문맥상 'auxiliary'가 와야 하는데 'antagonist'가 쓰여 부적절하다 — 앞 문장에서 'expletive pronoun there'가 Belfast English 에서 주어(spec-T) 역할을 하며, 'should/have'와 같은 조동사(auxiliary)와 결합한다고 설명한 후, 조동사가 expletive 주어 앞에 나올 수 있음을 보인다는 문맥에서 'antagonist'(적대자, 반대자)라는 단어는 문법적 역할과 문맥의 방향성을 완전히 역전시킨다.. [극성] 정답=조동사의 기능/존재(auxiliary) ↔ 오답=상호작용의 반대(antagonist)\n[오답 진단·처방]\n① 진단: ‘expletive structures’라는 말이 문맥상 맞지 않음. 지문에서 ‘expletive structures’는 ‘there’를 포함하는 문장 구조를 가리키는 말이고, ‘expletive’는 문법 용어로 ‘빈 자리 대명사’를 뜻함. 학생은 ‘expletive’를 ‘억지스러운 구조’로 오해했을 수 있음. → 처방: ‘expletive’를 ‘빈 자리 대명사 구조’라고 외우고, 문법 용어의 뜻을 정확히 기억하기.\n② 진단: ‘pronoun’이라는 말이 ‘there’를 가리키는 데 맞지 않음. ‘there’는 문법에서 ‘빈 자리 대명사’로 쓰이지만, ‘pronoun’은 보통 대명사를 가리키는 일반적인 용어임. 학생은 ‘there’를 일반적인 대명사로 오해했을 수 있음. → 처방: ‘there’를 ‘빈 자리 대명사’라고 정확히 이해하고, ‘pronoun’이란 용어의 범위를 기억하기.\n④ 진단: ‘antagonist’라는 말이 문맥상 맞지 않음. 지문에서 ‘antagonist’는 ‘should/have’를 가리키는 말이고, 문법 용어로 ‘조동사’를 뜻함. 학생은 ‘antagonist’를 ‘반대자’로 오해했을 수 있음. → 처방: ‘antagonist’를 ‘조동사’라고 외우고, 문법 용어의 뜻을 정확히 기억하기.\n⑤ 진단: ‘movement’라는 말이 문맥상 맞지 않음. 지문에서 ‘movement’는 ‘조동사가 there 앞으로 이동하는 현상’을 가리키는 말이고, 문법 용어로 ‘이동’을 뜻함. 학생은 ‘movement’를 ‘움직임’으로 오해했을 수 있음. → 처방: ‘movement’를 ‘문법적 이동’이라고 이해하고, 문법 용어의 뜻을 정확히 기억하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

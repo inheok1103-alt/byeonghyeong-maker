@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-23T14:36:28.238Z",
+ "updated": "2026-07-23T16:50:08.902Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-23T16:49:42.696Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거형 동사(anderstand, dengures, axcedant 등)와 현재형 동사(learn, guides 등)가 혼용되어 문법 오류가 발생하는 패턴이 반복됨. 또한 전치사(about, in, of)나 관사(a, the) 사용 오류가 빈번하게 관찰됨.",
+   "rule": "'과거형 동사와 현재형 동사가 혼용되지 않도록 문장에서 시제 일관성을 엄격히 검증하며, 전치사/관사 오류를 유도하는 오답지를 설계할 때는 실제 코퍼스에서 관찰된 전치사(about, in, of)나 관사(a, the) 오용 패턴을 반영하여 문장 내 빈칸이나 선택지 형태로 제시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-23T14:36:01.937Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "연어가 오답의 구문적 결함을 보완·완화하는 역할을 한다.",
    "rule": "모범답안의 오답 연어를 원문에서 찾아내어 그 자리에 정답 연어를 끼워넣는다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T10:44:52.713Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스 패턴은 관사 오류와 관용적 표현의 오용이 빈번하며, 특히 'a/an'의 결핍이나 'the'의 오용이 주된 오류 유형이다.",
-   "rule": "'a/an/the' 관사의 선택은 명사의 가산성·특정성·첫 언급 여부에 따라 엄격히 구분하며, 예외적 관용구(예: 'fixed data')는 별도 암기 항목으로 다룬다.",
    "sample": [
     "old english",
     "university press",
