@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-23T22:18:03.003Z",
+ "updated": "2026-07-23T23:16:35.665Z",
  "samples": [
+  {
+   "ts": "2026-07-23T23:15:50.060Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Lip-Reading Computers: Breaking Limits Faster Than Expected",
+     "Perfect Speech: the Only Path to Computer Success",
+     "Silence as the Secret Weapon in Speech Recognition",
+     "Machines Now Decode Human Thoughts Without Any Sound",
+     "Lip-Reading Computers Require Specialized Environments Only"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'THE SEEMINGLY IMPOSSIBLE GETS DONE MORE QUICKLY THAN WE EVER IMAGINED'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 지문에서 컴퓨터가 인간의 말을 이해하는 데 '침묵'이나 '특별한 환경'이 필수 조건이 아니라, 오히려 '소음'이 방해가 된다는 점을 오해한 것으로 보임. 'perfect speech'가 아니라 'lip-reading'과 '소음 극복'이 핵심 주제임. → 처방: 문제에서 'speech recognition'의 핵심은 '입술 읽기'와 '소음 극복'임을 떠올리고, 'perfect speech'가 아니라 '입술 읽기 컴퓨터'의 가능성에 집중할 것.\n③ 진단: 지문에서 '침묵'이 컴퓨터의 능력을 돕는 조건이 아니라, 오히려 '소음'이 방해가 된다는 점을 오해한 것으로 보임. 'secret weapon'이라는 표현이 지문에서 사용되지 않음. → 처방: 지문에서 'noise'가 컴퓨터의 능력을 방해한다는 점을 정확히 짚고, '침묵'이 아니라 '소음 극복'이 핵심임을 기억할 것.\n④ 진단: 지문에서 컴퓨터가 '입술을 읽는' 수준이지, '생각을 해독하는' 수준은 아니라는 점을 오해한 것으로 보임. 'decode human thoughts'라는 표현이 지문에 없음. → 처방: 지문에서 'read lips'라는 표현을 정확히 이해하고, 컴퓨터가 '생각을 해독하는' 것이 아니라 '입술을 읽는' 것이라는 점을 기억할 것.\n⑤ 진단: 지문에서 'lip-reading computers'가 'specialized environments'에서만 작동한다는 말이 아니라, 'special room'에서 잘 작동한다는 말이며, 'require'라는 강제적 표현이 과장된 것으로 보임. → 처방: 지문에서 'special room'이 'well works'하는 조건이지, 'require'하는 조건이 아님을 기억하고, 'specialized environments only'가 아니라 '소음 극복'이 핵심임을 떠올릴 것.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: THE SEEMINGLY IMPOSSIBLE GETS DONE MORE QUICKLY THAN WE EVER IMAGINED]"
+   }
+  },
+  {
+   "ts": "2026-07-23T23:16:05.600Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 17 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'expectations', 'technology', 'Computers' / 15~19단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Computers are now being developed to read lips even amid noise, proving technology’s rapid progress beyond expectations.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-23T22:17:39.320Z",
    "type": "우리말해석",
@@ -268,74 +321,6 @@
     ],
     "answer": 5,
     "explanation": "빈칸에는 원문 'bear a striking resemblance to'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 학생은 '비슷하다'는 뜻을 '함께 일한다'는 뜻으로 잘못 이해했거나, 'similar'를 'synergy'와 같은 개념으로 혼동했습니다. 지문 1번 정의 '두 가지 또는 두 사람이 매우 비슷하게 생김'과 거리가 멉니다. → 처방: 지문의 정의를 읽을 때, 핵심 낱말(여기서는 'look similar')에 집중하여 정확한 의미를 파악하는 연습을 하세요.\n② 진단: 이 선지는 '비슷하다'는 뜻과 완전히 반대되는 '서로 완전히 다르다'는 뜻입니다. 학생은 'similar'의 의미를 'distinct'와 혼동했거나, 지문의 정의를 정반대로 이해했습니다. → 처방: 낱말의 반대말을 떠올려 보며 의미를 정확히 구분하는 훈련을 하고, 지문의 내용을 꼼꼼히 읽어 반대 의미로 오해하지 않도록 주의하세요.\n③ 진단: 이 선지는 '몇 가지 눈에 띄는 특징을 공유한다'는 뜻으로, '비슷하다'는 의미와 어느 정도 관련이 있지만, 지문 1번 정의의 '매우 비슷하게 생김(very similar)'이라는 강도를 충분히 담아내지 못합니다. → 처방: 지문의 낱말(여기서는 'very')이 주는 의미의 강도나 정도를 놓치지 않고 정확히 파악하는 연습을 하세요.\n④ 진단: 이 선지는 '서로 완전히 구별할 수 없다'는 뜻으로, '매우 비슷하다'는 의미와 매우 가깝지만, 'absolutely'라는 낱말이 '완벽한 동일성'을 강조하여 지문의 'very similar'가 내포하는 미묘한 의미 차이를 넘어설 수 있습니다. → 처방: 낱말의 의미를 해석할 때, 'absolutely'와 같은 강한 표현이 주는 의미의 강도를 신중하게 판단하고, 지문의 낱말이 가진 미묘한 의미 차이를 놓치지 않도록 주의 깊게 비교하는 연습을 하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-23T09:40:17.302Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what. The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think what that she is hiding what. This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think what that she is hiding what. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with <u>arrows indicating movements which take place in the course of the derivation</u>):",
-    "choices": [
-     "The arrows merely illustrate the sequential order of steps involved in analyzing a single sentence's grammatical components.",
-     "The arrows literally represent the physical trajectory of words as they shift positions on a page during linguistic analysis.",
-     "The completed linguistic structures dictate the necessary movements, which are then depicted by the arrows.",
-     "The arrows indicate optional adjustments made by linguists to occasionally refine an already established grammatical derivation.",
-     "This phrase visually symbolizes the abstract, systematic operations and transformations that are theorized to construct linguistic structures within a grammatical framework."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'This phrase visually symbolizes the abstract, systematic operations and transformations that are theorized to construct linguistic structures within a grammatical framework.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'arrows indicating movements'는 단순히 순서나 단계만 보여주는 것이 아니라 '이론화된 추상적 변환 과정'을 가리키는데, 이를 '순차적 분석 단계'로 오독한 것 같습니다. → 처방: 지문에서 'arrows'는 단어의 물리적 움직임이 아니라 '문법 구조를 구성하는 추상적 연산'을 나타낸다는 점을 기억하세요. 이론의 핵심 개념을 정확히 파악하려면 'movements'가 가리키는 바를 문맥에서 다시 확인하세요.\n② 진단: 지문에서 'arrows'는 단어의 '물리적 위치 이동'을 표현한 것이 아니라 '문법 이론의 변환 과정'을 시각화한 것이므로, 이를 '페이지 상의 단어 이동'으로 오해한 것 같습니다. → 처방: 'arrows'가 물리적 움직임을 나타내는 것이 아니라 '이론적 변환'을 상징한다는 점을 강조합니다. 언어학에서 'movement'는 실제 움직임이 아닌 추상적 구조 변경을 뜻한다는 점을 기억하세요.\n③ 진단: 지문에서 'arrows'는 '완성된 구조가 시키는 대로 움직임을 보여주는 것'이 아니라 '구조가 형성되는 과정에서 일어나는 변환을 표현한 것'입니다. 완성된 구조가 먼저 있는 것이 아니라 변환 과정이 구조를 이끕니다. → 처방: 지문에서 'arrows'는 '구조 형성 과정 자체'를 보여주는 것이며, '완성된 구조가 시키는 움직임'이 아니라는 점을 분명히 하세요. 먼저 구조가 형성되고 나서가 아니라, 변환 과정이 구조를 이끈다는 점을 이해하세요.\n④ 진단: 지문에서 'arrows'는 '선택적 조정'이 아니라 '이론화된 필수 변환 과정'을 나타내는데, 이를 '선택적 보완'으로 오독한 것 같습니다. → 처방: 'arrows'는 언어학 이론에서 필수적으로 가정되는 '체계적 변환'을 시각화한 것이라는 점을 강조합니다. 선택적 조정보다는 '이론적 필연성'을 중시하는 접근을 기억하세요.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-23T09:41:00.684Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think ____ that she is hiding ____. The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think ____ that she is hiding ____. This T-bar is itself merged with the subject pronoun he, forming the TP he might think ____ that she is hiding ____. The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think ____ that she is hiding ____. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation):",
-    "choices": [
-     "she universally reveals",
-     "she ignores",
-     "she conceals",
-     "she confirms",
-     "she practices"
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 'she conceals'가 들어가 글의 논지를 완성한다 (본문 'what that she is hiding what'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'hiding'의 의미가 '감추는 것'임을 고려하지 않고 '드러내는 것'으로 오해하여 she universally reveals 를 선택했을 가능성이 높습니다. 'hiding'의 반대말이 'revealing'이지만, 문맥상 '감추는 행동'을 나타내므로 she universally reveals 는 문맥에 맞지 않습니다. → 처방: 빈칸 앞뒤의 동사 think 와 hiding 의 관계를 확인하고, 'hiding'이 '감추는 행동'을 뜻한다는 점을 떠올리며 선지를 고르기.\n② 진단: 지문에서 'hiding'과 어울리는 동사를 찾지 않고, 'ignore(무시하다)'라는 일반적인 동사로 오해하여 she ignores 를 선택했을 가능성이 있습니다. 그러나 문맥상 '감추는 행동'을 나타내는 동사가 필요하므로 she ignores 는 문맥에 맞지 않습니다. → 처방: 빈칸의 동사가 'hiding'과 자연스럽게 연결되는지 확인하고, 문맥상 '감추는 행동'을 나타내는 동사를 선택하기.\n④ 진단: 지문에서 'hiding'의 의미를 '확인하다'로 오해하여 she confirms 를 선택했을 가능성이 있습니다. 그러나 'hiding'은 '감추는 것'을 뜻하므로 she confirms 는 문맥에 맞지 않습니다. → 처방: 빈칸의 동사가 'hiding'과 어울리는지 확인하고, 문맥상 '감추는 행동'을 나타내는 동사를 우선적으로 고려하기.\n⑤ 진단: 지문에서 'hiding'의 의미를 '실행하다'로 오해하여 she practices 를 선택했을 가능성이 있습니다. 그러나 'practices'는 '연습하다' 또는 '실행하다'라는 의미로, '감추는 행동'을 나타내기에는 부적절합니다. → 처방: 빈칸의 동사가 'hiding'과 자연스럽게 연결되는지 확인하고, 문맥상 '감추는 행동'을 나타내는 동사를 선택하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]

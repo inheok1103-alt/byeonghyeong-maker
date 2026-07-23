@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-23T22:18:02.999Z",
+ "updated": "2026-07-23T23:16:35.661Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-23T23:16:07.299Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 실제 패턴에서 'old houses', 'student is', 'the important'와 같은 명사구 오류가 빈번하며, 특히 복수형 오류와 관사 생략이 두드러진다.",
+   "rule": "복수형 오류와 관사 생략 오류를 방지하기 위해, 'most + 명사' 뒤에는 복수형(-s)을 반드시 사용하고, 'the important'과 같은 관사 오류는 'the important thing'으로 명사구를 구체화하여 수정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-23T22:17:41.072Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구 내 중복 관사 제거(예: 'the the')와 비교급 구조의 관사/형용사 오류(예: 'young person' → 'a younger person')가 빈번하다는 점을 확인했다.",
    "rule": "명사구 내 중복 관사(예: 'the the')가 나타나면 오류로 처리하며, 비교급 구조에서는 'a younger person'처럼 관사와 비교급 형용사를 함께 사용하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T16:15:00.982Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'명사 + 전치사 + 관사 + 명사' 구조에서 관사가 생략되거나 잘못 사용되는 오류가 빈번하며, 특히 'kind of activities' → 'kinds of activities'와 같이 복수형/관사 오류가 연어 패턴과 결합된다. 또한 'possession'의 철자 오류('possetion')와 같은 기본적인 오류도 다수 관찰된다.",
-   "rule": "'명사 + 전치사 + 관사 + 명사' 구조에서 관사는 반드시 포함되어야 하며, 복수형 명사 뒤에는 'of'가 아닌 'kinds of'/'types of'와 같은 복수 표현을 사용해야 한다. 예를 들어, 'kind of activities'는 'these kinds of activities'로 수정해야 한다.",
    "sample": [
     "old english",
     "university press",
