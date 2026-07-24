@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-24T09:44:16.347Z",
+ "updated": "2026-07-24T11:59:10.583Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-24T11:58:43.743Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'They say'나 'It gives'와 같은 주제-동사 구조는 종종 보조적 요소(예: 'in simple words', 'a lot of opportunity')가 문장 중간에 삽입되어 문법적 흐름을 방해하지 않도록 패턴화된다. 또한 'are'와 같은 상태동사는 관용적으로 'usually', 'often' 등 빈도를 나타내는 부사가 동반되는 경우가 많다.",
+   "rule": "주어+동사 구조에서 보조적 요소(삽입구, 부사 등)가 삽입될 경우, 쉼표(,)로 분리하여 문법적 명확성을 유지하라. 또한 상태동사('are', 'seem' 등)는 빈도부사('usually', 'often')와 함께 사용되는 패턴을 우선 적용하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-24T09:37:47.428Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'the'는 고유명사·특정 개념·고유한 대상에 한정적으로 사용되며, 일반화·범용적 표현에는 제외됨을 확인. 또한, 영어 문법에서 'reason to V' 구문이 'reason that S V'보다 자연스럽고 빈번하게 사용됨을 확인.",
    "rule": "'the'는 고유명사(예: New York), 특정 개념(예: Persian language), 또는 이미 언급된 대상을 지칭할 때만 사용하고, 범용·일반적 대상(예: Chinese, Mongolian, wood)에는 'the'를 생략하도록 문장 구성.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T22:10:14.056Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스에서 'old/new', 'return/reciprocate', 'loose/lose' 등 유사한 의미의 단어 간 오용이 빈번하며, 'most of + 명사'가 'most + 명사'로 축약되어야 하는 등 관용적 표현의 오류가 두드러진다. 또한 문장 내 시제 일관성(예: 'have already bought'와 'end up loosing')과 전치사 사용('in his help' → 'to reciprocate his help')의 오류가 패턴화되어 있다.",
-   "rule": "CEFR B1-B2 수준에서 'most of + 복수명사'는 'most + 복수명사'로, 'loose'는 'lose'의 동사로, 'return'은 'reciprocate'로 대체하는 오류를 유도하는 문장을 출제하라. 예: 'Most of students prefer online classes rather than offline ones.' → 'Most students prefer online classes to offline ones.'",
    "sample": [
     "old english",
     "university press",

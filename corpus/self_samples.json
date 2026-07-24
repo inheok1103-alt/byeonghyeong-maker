@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-24T09:44:16.351Z",
+ "updated": "2026-07-24T11:59:10.587Z",
  "samples": [
+  {
+   "ts": "2026-07-24T11:57:50.983Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Linguistic Variation in English",
+     "English Language Universal Patterns",
+     "Factors Influencing Linguistic Choice",
+     "All Language Variations in Human Communication",
+     "Grammatical Structure of Written Texts"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The Grammatical Structure of Written English examines the grammatical and discourse factors influencing the choice among related variants.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정도·빈도를 왜곡· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The Grammatical Structure of Written English examines the grammatical and discourse factors influencing the choice among related variants.]\n[오답 진단·처방]\n① 진단: ‘Linguistic Variation in English’를 제목으로 고른 학생은 ‘English has a system of several related variants’(영어에는 여러 관련 변형이 있다)라는 문장만 보고 ‘영어의 언어 변이’를 전체 주제로 오해한 듯하다. 지문은 ‘언어 선택의 원인’(why the different forms are used)에 초점을 맞추고 있다. → 처방: 지문에서 ‘when and why’의 이유가 중요하다는 점을 꼭 기억하고, 변이(Variation)뿐 아니라 ‘선택의 원인’을 함께 떠올리며 읽기.\n② 진단: ‘English Language Universal Patterns’을 고른 학생은 ‘structurally similar variants’(구조적으로 유사한 변형)라는 표현을 ‘보편적 패턴’으로 오해한 듯하다. 지문은 ‘보편적’ rather than ‘구조적 유사성’을 다루지 않는다. → 처방: ‘Universal(보편적)’이라는 단어는 지문에서 전혀 언급되지 않는다는 점을 기억하고, ‘구조적 유사성’과 ‘보편성’을 혼동하지 않기.\n④ 진단: ‘All Language Variations in Human Communication’를 선택한 학생은 ‘English has variants’(영어의 변이)와 ‘human communication’을 연관 지어 ‘모든 언어 변이’를 과도하게 확장해 해석한 듯하다. 지문은 영어의 특정 변이와 그 원인에만 초점을 둔다. → 처방: ‘All’이라는 포괄적 단어가 지문에 없음을 확인하고, 지문의 범위가 ‘영어의 특정 변이’임을 정확히 이해하기.\n⑤ 진단: ‘Grammatical Structure of Written Texts’를 고른 학생은 ‘written texts’의 언급(‘Grammatical Structure of Written Texts’)을 보고 ‘문법 구조’에만 집중한 듯하다. 지문은 ‘구조적 유사성’보다는 ‘선택의 원인’을 다루고 있다. → 처방: 지문에서 ‘grammatical and discourse factors’(문법적·담화적 요인)가 ‘선택의 이유’라는 점을 꼭 기억하고, ‘구조’보다는 ‘선택의 원인’을 우선해서 읽기."
+   }
+  },
+  {
+   "ts": "2026-07-24T11:58:41.286Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 영어에서는 표현 방식에 따라 다양한 변형이 가능하다는 점이 중요하다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-24T09:36:38.187Z",
    "type": "네모어휘ABC",
@@ -274,73 +328,6 @@
     ],
     "answer": 2,
     "explanation": "정답 ⓑ: 문맥상 'familiar'가 와야 하는데 'unfamiliar'가 쓰여 부적절하다 — 'since'를 도입하는 절은 독자가 이미 알고 있는 정보를 담아야 하므로, 문맥상 'unfamiliar'(익숙하지 않은)보다는 'familiar'(익숙한) 정보가 적절하다.. [극성] 정답=익숙한 정보(positive) ↔ 오답=익숙하지 않은 정보(negative)\n[오답 진단·처방]\n① 진단: ‘graceless’는 ‘세련되지 못한’이라는 뜻으로 문맥상 ‘글이 아름답지 못한’ 상태로 쓰였으나, ‘글이 자유롭지 못한’으로 오해했을 수 있다. 지문에서 ‘grammarian 이 설명할 수 있는 오류가 없을 때만 좋은 글’이라는 오해 때문에 ‘graceless’가 나왔다는 점을 놓쳤다. → 처방: ‘graceless’를 ‘세련되지 못한’으로만 기억하고, 문맥에서 ‘자유롭지 못한’과 혼동하지 않도록 글의 ‘질’을 떠올리며 읽기.\n③ 진단: ‘deficiency’를 ‘부족’으로만 알고 ‘결함’이라는 뜻으로 오해했을 수 있다. 지문에서 ‘문법적 오류가 정신적·도덕적 결함’을 가리킨다는 맥락을 제대로 읽지 못했다. → 처방: ‘deficiency’를 ‘부족’과 ‘결함’ 두 뜻으로 나누어 기억하고, 문맥에서 ‘부족’이 아닌 ‘결함’을 뜻하는지 확인하기.\n④ 진단: ‘eminent’을 ‘유명한’으로만 알고 ‘저명한’이라는 뜻으로 오해했을 수 있다. 지문에서 ‘지적인 역사학자와 평론가’라는 맥락에서 ‘eminent’이 ‘저명한’을 뜻한다는 점을 놓쳤다. → 처방: ‘eminent’을 ‘유명한’과 ‘저명한’으로 나누어 기억하고, ‘저명한’은 ‘뛰어난 위치’를 뜻한다는 점을 떠올리기.\n⑤ 진단: ‘restrictive’를 ‘제한적인’이라는 뜻으로만 알고 ‘한정하는’이라는 뜻으로 오해했을 수 있다. 지문에서 ‘that’를 써야 하는 이유가 ‘한정하는 절’이라는 점을 제대로 읽지 못했다. → 처방: ‘restrictive’를 ‘한정하는’이라는 뜻으로만 기억하고, ‘that’과 ‘which’를 구별하는 규칙을 다시 공부하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T00:16:40.202Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "문법적 오류가 없는 글쓰기가 유일하게 좋은 글쓰기는 아니며, 문장의 자연스러움과 명확성이 더 중요하다",
-     "문법적 오류가 없는 글쓰기는 좋은 글쓰기의 필수 조건이지만, 문장의 자연스러움은 부차적인 요소에 불과하다",
-     "모든 문법적 오류가 글의 질을 저하시키는 것은 아니며, 문장의 자연스러움과 명확성이 더 우선해야 한다",
-     "문법적 오류가 없는 글쓰기는 좋은 글쓰기의 한 가지 조건일 뿐이지만, 명확성은 반드시 뒷받침되어야 한다",
-     "문법적 오류가 없는 글쓰기는 좋은 글쓰기의 중요 요소이지만, 문장의 자연스러움은 필요하지 않다"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Grammatical correctness should not be the sole measure of good writing; clarity and natural flow matter more.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘문법적 오류가 없는 글쓰기가 좋은 글쓰기의 필수 조건’이라는 부분은 지문에서 ‘글쓰기는 오류가 없어야만 좋은 것이라는 생각’이 잘못되었다고 지적한 것과 반대된다. ‘필수 조건’이 아니라 ‘유일하게 좋은 것’으로 오해한 듯하다. → 처방: 지문에서 ‘글쓰기는 오류가 없어야만 좋은 것이라는 생각은 틀렸다’는 점을 기억하고, ‘필수 조건’이 아니라 ‘유일하게 좋은 것’이라는 표현을 주의해서 읽기.\n③ 진단: ‘모든 문법적 오류가 글의 질을 저하시키는 것은 아니다’라는 말은 지문에서 나온 내용이 아니다. 지문은 문법적 오류가 글의 질을 떨어뜨릴 수 있지만, 자연스러움과 명확성이 더 중요하다는 입장을 보이고 있다. → 처방: 지문의 핵심은 ‘문법적 오류가 없어야만 좋은 글쓰기는 아니다’라는 점임을 기억하고, ‘모든 오류가 영향을 주지 않는다’는 과장된 해석을 경계하기.\n④ 진단: ‘문법적 오류가 없는 글쓰기는 한 가지 조건일 뿐’이라는 말은 지문에서 나온 내용이지만, ‘명확성은 반드시 뒷받침되어야 한다’는 부분은 지문에서 강조하지 않는다. 오히려 자연스러움이 더 중요하다는 입장이다. → 처방: 지문의 요지는 ‘자연스러움과 명확성’이 문법적 오류보다 더 중요하다는 것이지, 명확성이 ‘반드시’ 뒷받침되어야 한다는 말이 아님을 기억하기.\n⑤ 진단: ‘문장의 자연스러움은 필요하지 않다’는 말은 지문과 완전히 반대된다. 지문은 문법적 오류가 없어도 자연스럽지 않으면 좋지 않다는 입장을 보이고 있다. → 처방: 지문에서 ‘자연스러움’이 중요하다는 점을 강조한 부분을 다시 읽고, ‘필요하지 않다’는 표현을 오해하지 않도록 주의하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Grammatical correctness should not be the sole measure of good writing; clarity and natural flow matter more.]"
-   }
-  },
-  {
-   "ts": "2026-07-23T23:15:50.060Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Lip-Reading Computers: Breaking Limits Faster Than Expected",
-     "Perfect Speech: the Only Path to Computer Success",
-     "Silence as the Secret Weapon in Speech Recognition",
-     "Machines Now Decode Human Thoughts Without Any Sound",
-     "Lip-Reading Computers Require Specialized Environments Only"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'THE SEEMINGLY IMPOSSIBLE GETS DONE MORE QUICKLY THAN WE EVER IMAGINED'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 지문에서 컴퓨터가 인간의 말을 이해하는 데 '침묵'이나 '특별한 환경'이 필수 조건이 아니라, 오히려 '소음'이 방해가 된다는 점을 오해한 것으로 보임. 'perfect speech'가 아니라 'lip-reading'과 '소음 극복'이 핵심 주제임. → 처방: 문제에서 'speech recognition'의 핵심은 '입술 읽기'와 '소음 극복'임을 떠올리고, 'perfect speech'가 아니라 '입술 읽기 컴퓨터'의 가능성에 집중할 것.\n③ 진단: 지문에서 '침묵'이 컴퓨터의 능력을 돕는 조건이 아니라, 오히려 '소음'이 방해가 된다는 점을 오해한 것으로 보임. 'secret weapon'이라는 표현이 지문에서 사용되지 않음. → 처방: 지문에서 'noise'가 컴퓨터의 능력을 방해한다는 점을 정확히 짚고, '침묵'이 아니라 '소음 극복'이 핵심임을 기억할 것.\n④ 진단: 지문에서 컴퓨터가 '입술을 읽는' 수준이지, '생각을 해독하는' 수준은 아니라는 점을 오해한 것으로 보임. 'decode human thoughts'라는 표현이 지문에 없음. → 처방: 지문에서 'read lips'라는 표현을 정확히 이해하고, 컴퓨터가 '생각을 해독하는' 것이 아니라 '입술을 읽는' 것이라는 점을 기억할 것.\n⑤ 진단: 지문에서 'lip-reading computers'가 'specialized environments'에서만 작동한다는 말이 아니라, 'special room'에서 잘 작동한다는 말이며, 'require'라는 강제적 표현이 과장된 것으로 보임. → 처방: 지문에서 'special room'이 'well works'하는 조건이지, 'require'하는 조건이 아님을 기억하고, 'specialized environments only'가 아니라 '소음 극복'이 핵심임을 떠올릴 것.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: THE SEEMINGLY IMPOSSIBLE GETS DONE MORE QUICKLY THAN WE EVER IMAGINED]"
    }
   }
  ]
