@@ -1,6 +1,79 @@
 {
- "updated": "2026-07-24T03:48:57.550Z",
+ "updated": "2026-07-24T06:42:25.774Z",
  "samples": [
+  {
+   "ts": "2026-07-24T06:40:50.015Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: r)\n[영영풀이] A relationship or relation (to something).",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] references (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-24T06:41:44.915Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "Note on abbreviated citations ⓐ<u>Most of the text examples</u> cited throughout the book come from different published works of ﬁction and from periodicals. ⓑ<u>To avoid lengthy and repetitive referencing</u> we shall be using abbreviated citations throughout the text. ⓒ<u>References to books will consists</u> of the author’s initials, the acronym for the title, and the page number. For example, the citation NS.SC.50 refers to page 50 of Neal Stephenson’s Snow Crash. Full references for all works so cited will be found in the “Texts” section in the list of references. ⓓ<u>Examples taken from periodicals</u> will be accompanied by full references. A number of our cited text examples are taken from a publicly accessible portion of the Modern English Collection of the University of Virginia Electronic Text Center. ⓔ<u>These references will consists</u> of the author’s name, the title of the work, followed by “U-Va Electronic Text Center”. For example, Mark Twain, Innocents Abroad, U-Va Electronic Text Center. Publication history, page citations, and other information can be found on the Text Center’s database. xvii",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 2,
+    "explanation": "틀린 곳은 ⓒ(References to books will consists → References to books will consist), ⓔ(These references will consists → These references will consist) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘Most of the text examples’를 ‘Most of the texts examples’로 오독해 복수형 ‘texts’를 잘못 사용했거나, ‘come’이라는 동사가 3인칭 단수 현재형이 아니므로 오류가 없다고 착각했을 수 있음. → 처방: ‘Most of the text examples’는 옳은 표현이므로, 동사 ‘come’이 3인칭 단수 현재형이 아니어도 오류가 아니라는 점을 기억하고, ‘Most of the texts examples’는 틀린 표현임을 확인할 것.\n③ 진단: ‘consists’를 ‘consist’로 오독해 동사 시제를 혼동했거나, ‘will consists’를 ‘will consist’라고 잘못 썼을 수 있음. → 처방: ‘consists’는 3인칭 단수 현재형이므로 ‘will consists’는 틀린 표현임을 기억하고, ‘will consist’라고 써야 옳다는 점을 확인할 것.\n④ 진단: ‘Examples taken from periodicals’를 ‘Examples taken from the periodicals’로 오독해 관사 ‘the’를 잘못 추가했거나, ‘will be accompanied by full references’를 ‘will be accompanied with full references’라고 오독했을 수 있음. → 처방: ‘Examples taken from periodicals’는 옳은 표현이므로, 관사 ‘the’를 붙이거나 ‘with’를 ‘by’로 바꾸면 안 된다는 점을 기억할 것.\n⑤ 진단: ‘These references will consists’를 ‘These references will consist’라고 오독해 동사 시제를 혼동했거나, ‘Publication history’를 ‘Publication histories’라고 오독했을 수 있음. → 처방: ‘consists’를 ‘consist’라고 쓰지 말고, ‘will consists’는 ‘will consist’라고 써야 한다는 점을 확인하고, ‘Publication history’는 단수형이므로 복수형으로 쓰지 않도록 주의할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-24T06:41:52.844Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Abbreviated', 'streamline', 'references' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Abbreviated citations help streamline references without losing necessary details for accurate sourcing.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-24T03:47:40.087Z",
    "type": "네모어휘ABC",
@@ -246,78 +319,6 @@
     ],
     "answer": 3,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장에 'Many other people have been involved with the project at both research and editing stages.'라고 명시되어 있어 '많은 사람들이 참여했다'는 내용과 일치함을 알 수 있는데, 이를 오독하여 '많은 사람들이 참여하지 않았다'고 오해했을 가능성이 있다. → 처방: 지문을 꼼꼼히 읽고, '참여했다'는 말이 반복되는지 확인한 뒤, 반대 의미가 있는지 한 번 더 살펴보기.\n② 진단: 지문에 'Patrick Hanks, who was the Editorial Director of Cobuild throughout the project'라고 나와 있어 '프로젝트 기간 동안 코빌드 편집장이었다'는 내용과 일치함을 알 수 있는데, 이를 '프로젝트 전체 기간이 아니라 일부 기간만이었다'고 오해했을 가능성이 있다. → 처방: 지문에서 'throughout the project'라는 표현이 있는지 확인하고, 기간을 정확히 파악하기.\n④ 진단: 지문에 'David Brazil gave us great help and encouragement during the early editing of the book.'라고 나와 있어 '데이비드 브라질이 초창기 편집에서 큰 도움을 주었다'는 내용과 일치함을 알 수 있는데, 이를 '초창기 편집이 아니라 후반기 편집이었다'고 오해했을 가능성이 있다. → 처방: 지문에서 'early editing'이라는 단어가 있는지 확인하고, 'early'의 의미를 정확히 이해하기.\n⑤ 진단: 지문에 'Helen Liebeck and Christina Rammell were influential in the early stages of editing.'라고 나와 있어 '헬렌 리벡과 크리스티나 램멜이 초기 편집 단계에서 영향력 있는 역할을 했다'는 내용과 일치함을 알 수 있는데, 이를 '초기 단계가 아니라 후반기였다'고 오해했을 가능성이 있다. → 처방: 지문에서 'early stages of editing'이라는 표현이 있는지 확인하고, 'early stages'의 의미를 정확히 이해하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-23T20:48:08.348Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "M.A.K. Halliday Collins Publishers Annette Capel, Lorna Heaslip, Douglas Williamson Many other people have been involved with the project at both research and editing stages. Patrick Hanks, ⓐ<u>who was the Editorial Director</u> of Cobuild throughout the project, ⓑ<u>made a valuable contribution</u> both in policy and in detail. Dominic Bree, Jane Cullen, and Clare Ramsey ⓒ<u>worked as a researcher</u> in the early stages, and Ron Hardie ⓓ<u>helped from the beginning</u> until quite late in the editing process. David Brazil gave us great help and encouragement during the early editing of the book. Without his support, ⓔ<u>this would have been a more difficult task</u>. Helen Liebeck and Christina Rammell were influential in the early stages of editing. Michael Hoey and Charles Owen, members of the Department of English, University of Birmingham, and PhD and MA students in the department, in particular Richard Francis, Agnes Molnar, Iria 6",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓒ: 'worked as a researcher' → 'worked as researchers' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-23T18:39:09.956Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "How Men and Women Redefined Workplace Relationships",
-     "Why Workplace Changes Are Making Divorce Rates Rise",
-     "How Men and Women Work Together in Low-Density Areas",
-     "How All Social Relationships Have Transformed Due to Work",
-     "Why Men and Women Always Change Relationships at Work"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Men and women's relationships have most changed in how they work together.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘이혼율 상승’이라는 구체적 내용만 보고 지문의 ‘직장 관계 변화’와 ‘원인’을 혼동했다. 지문은 ‘관계 변화의 양상’을 다룬 반면, 이 선지는 ‘원인’을 주장하는 오류가 있다. → 처방: ‘무엇이 어떻게 변했는지’를 먼저 찾고, 그 변화의 ‘원인’이나 ‘결과’를 주장하는 선지는 배제하라.\n③ 진단: ‘저밀도 지역’이라는 세부 사례만 보고 지문의 ‘직장 관계 변화’ 전체를 오독했다. 지문은 ‘직장 내 관계 변화’를 다룬 반면, 이 선지는 ‘특정 지역’으로 범위를 좁혔다. → 처방: ‘직장 관계 변화’라는 핵심 주제를 먼저 확인하고, 세부 사례가 제목에 포함된 선지는 배제하라.\n④ 진단: ‘모든 사회 관계’로 범위를 넓혀 지문의 ‘직장 관계 변화’와 혼동했다. 지문은 ‘직장 내 관계’에 한정되어 있지만, 이 선지는 ‘모든 사회 관계’로 확대해 오독했다. → 처방: 제목의 범위가 지문과 ‘일치하는지’ 먼저 확인하고, 범위가 과도하게 넓거나 좁은 선지는 배제하라.\n⑤ 진단: ‘항상 변화한다’는 절대적 표현으로 지문의 ‘변화 양상’을 오해했다. 지문은 ‘변화의 양상’을 설명하지만, 이 선지는 ‘항상’이라는 과장된 표현으로 오독했다. → 처방: ‘항상’, ‘모두’, ‘절대’와 같은 절대적 표현이 제목에 포함된 선지는 오답일 확률이 높으니 주의하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Men and women]"
-   }
-  },
-  {
-   "ts": "2026-07-23T18:39:56.595Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "The greatest changes in men-women relationships have occurred in ⓐ<u>how they work together</u>. Now that we see what the sentence says, we can make it still more direct: ✓ Men and women have changed their relationships most in how they work together. ⓑ<u>How writers use metadiscourse varies</u> by field, but you can usually cut these two types: 1. Metadiscourse That Attributes Your Ideas to a Source Don’t announce that something has been observed, noticed, noted, and so on; just state the fact: High divorce rates ⓒ<u>have been observed occurring</u> in areas that have been determined to have low population density. ✓ High divorce rates occur in areas with low population density. 2. Metadiscourse That Announces Your Topic The boldface phrases tell your reader what your sentence is “about”: This section introduces another problem, ⓓ<u>that of noise pollution</u>. The first thing to say about it is that noise pollution ⓔ<u>exists not only</u> . . .",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓒ: 'have been observed occurring' → 'have been observed to occur' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
