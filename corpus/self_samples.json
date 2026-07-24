@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-24T14:17:31.476Z",
+ "updated": "2026-07-24T15:48:48.927Z",
  "samples": [
+  {
+   "ts": "2026-07-24T15:47:16.671Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] Any activity designed to develop or hone a skill or ability.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] exercise (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-24T15:48:11.603Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "After the materials and the ⓐ<u>exercise</u> had been distributed to each group, the ⓑ<u>instructions</u> were generally explained for every group briefly. It was expected that some curious students were willing to ask the detail of the instruction. Yet, no one was apparently ⓒ<u>disinterested</u> in asking the researcher. Thus, their missions were explained thoroughly through involving in every group discussion. There were five exercises dealing with the text. Two exercises were about the content of the text and its social function. Those two exercises’ answers needed to be ⓓ<u>presented</u> by the representative of each group. Then, there was an exercise dealing with the ⓔ<u>vocabulary</u>. The students should match some words appeared in the text with the provided definitions which was in English. They were not allowed to open their dictionary. The following exercise was about reference. And the last exercise was about finding topic and main idea.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ: 문맥상 'interested'가 와야 하는데 'disinterested'가 쓰여 부적절하다 — 앞 문장에서는 '궁금한 학생들이 설명을 자세히 묻고자 했다'는 내용이 나오는데, 뒤 문장에서는 '아무도 연구자에게 설명을 묻는 데 관심이 없어 보였다'는 대조가 나타나므로 'interested'가 문맥에 맞다.. [극성] interested(관심 있음) ↔ disinterested(관심 없음)\n[오답 진단·처방]\n① 진단: ⓐ<u>exercise</u>는 '운동'이 아니라 '문제'나 '연습 문제'로 쓰였어야 하는데, 학생은 '운동'으로만 오해했을 가능성이 있다. 지문에서 'exercises dealing with the text'는 '글과 관련된 문제들'을 뜻한다. → 처방: 'exercise'가 '운동'이 아닌 '문제'나 '연습'으로 쓰인다는 점을 기억하고, 문맥에 따라 뜻을 유추하라.\n② 진단: ⓑ<u>instructions</u>는 '지시 사항'으로 쓰였어야 하는데, 학생은 '교육'이나 '수업'으로 혼동했을 수 있다. 지문에서 'instructions were explained'는 '지시 사항이 설명되었다'는 뜻이다. → 처방: 'instructions'가 '지시 사항'임을 확인하고, '수업'이나 '교육'과는 구분하라.\n④ 진단: ⓓ<u>presented</u>는 '발표하다'가 아니라 '제출하다'나 '제시하다'로 쓰였어야 하는데, 학생은 '발표'로만 오해했을 수 있다. 지문에서 'answers needed to be presented'는 '답안이 제출되어야 했다'는 뜻이다. → 처방: 'presented'가 '발표'가 아닌 '제출'이나 '제시'로 쓰일 수도 있음을 기억하고, 문맥에 따라 뜻을 확인하라.\n⑤ 진단: ⓔ<u>vocabulary</u>는 '어휘'로 쓰였어야 하는데, 학생은 '문법'이나 '문장'으로 혼동했을 가능성이 있다. 지문에서 'vocabulary'는 '단어'를 뜻하며, 'match some words'와 연결된다. → 처방: 'vocabulary'가 '어휘'나 '단어'임을 확인하고, '문법'이나 '문장'과는 구분하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-24T14:15:45.440Z",
    "type": "네모어휘ABC",
@@ -289,59 +343,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Abbreviated citations help streamline references without losing necessary details for accurate sourcing.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-24T03:47:40.087Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "(A) [Mundane / Olympian] (B) [Base / Lofty], superior, and (C) [Engaged / detached]. • Now 77, he moved slowly and spoke to the younger lawyers in Olympian tones, but his college friends could remember when he was a brash, crazy risk-taker. The Greek gods lived high atop Mt. Olympus, which allowed them to watch what went on in the human realm below and intervene as they saw fit. They insisted on being properly worshipped by humans, but otherwise tended to treat the affairs of these weak and short-lived creatures almost like a sport. So Olympian describes someone who seems “lofty” and “above it all,” as if surveying a scene in which other people appear the size of ants. The Olympic Games were first celebrated in the 8th century B.C., at the religious site called Olympia (far from Mt. Olympus), and Olympian today actually most often refers to Olympic athletes.",
-    "choices": [
-     "(A) Olympian - (B) Lofty - (C) detached",
-     "(A) Olympian - (B) Base - (C) Engaged",
-     "(A) Mundane - (B) Base - (C) detached",
-     "(A) Olympian - (B) Base - (C) detached",
-     "(A) Mundane - (B) Lofty - (C) Engaged"
-    ],
-    "answer": 1,
-    "explanation": "정답 조합: (A) Olympian - (B) Lofty - (C) detached. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘Base’를 ‘아래에 있는’ 뜻으로 오해하고 ‘Engaged’를 ‘관여하는’ 뜻으로 혼동해 (B)와 (C)에서 문맥과 반대되는 뜻을 골랐다. 지문에서 ‘Olympian tones’는 ‘위에서 내려다보는 듯한 말투’를 뜻하는데, ‘Base’는 ‘낮은·천한’이라는 뜻이므로 문맥에 맞지 않다. → 처방: ‘Base’가 ‘낮은·천한’이라는 뜻을 떠올리고, ‘Engaged’가 ‘관여하는’이라는 뜻임을 기억한 뒤 문맥에 맞게 ‘Lofty’와 ‘detached’를 고르도록 연습하기.\n③ 진단: ‘Mundane’을 ‘일상적인’이라는 뜻으로 오해하고 ‘detached’를 ‘무관심한’이라는 뜻으로 혼동했다. 지문에서 ‘Olympian tones’는 ‘위에서 내려다보는 듯한 말투’를 뜻하는데, ‘Mundane’은 ‘평범한’이라는 뜻으로 문맥에 맞지 않다. → 처방: ‘Mundane’이 ‘평범한’이라는 뜻임을 확인하고, ‘detached’가 ‘무관심한’이라는 뜻임을 기억한 뒤 문맥에 맞게 ‘Lofty’와 ‘detached’를 고르도록 연습하기.\n④ 진단: ‘Base’를 ‘아래에 있는’ 뜻으로 오해하고 ‘detached’를 ‘무관심한’이라는 뜻으로 혼동했다. 지문에서 ‘Olympian tones’는 ‘위에서 내려다보는 듯한 말투’를 뜻하는데, ‘Base’는 ‘낮은·천한’이라는 뜻으로 문맥에 맞지 않다. → 처방: ‘Base’가 ‘낮은·천한’이라는 뜻을 떠올리고, ‘detached’가 ‘무관심한’이라는 뜻임을 기억한 뒤 문맥에 맞게 ‘Lofty’와 ‘detached’를 고르도록 연습하기.\n⑤ 진단: ‘Mundane’을 ‘일상적인’이라는 뜻으로 오해하고 ‘Engaged’를 ‘관여하는’이라는 뜻으로 혼동했다. 지문에서 ‘Olympian tones’는 ‘위에서 내려다보는 듯한 말투’를 뜻하는데, ‘Mundane’은 ‘평범한’이라는 뜻으로 문맥에 맞지 않다. → 처방: ‘Mundane’이 ‘평범한’이라는 뜻을 확인하고, ‘Engaged’가 ‘관여하는’이라는 뜻임을 기억한 뒤 문맥에 맞게 ‘Lofty’와 ‘Engaged’를 고르지 않도록 연습하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T03:48:18.779Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Olympian Lofty, superior, and detached. • Now 77, he moved slowly and spoke to the younger lawyers in Olympian tones, but his college friends could remember when he was a brash, crazy risk-taker. The Greek gods lived high atop Mt. Olympus, which allowed them to watch what went on in the human realm below and intervene as they saw fit. They insisted on being properly worshipped by humans, but otherwise tended to treat the affairs of these weak and short-lived creatures almost like a sport. So Olympian describes someone who seems “lofty” and “above it all,” as if surveying a scene in which other people appear the size of ants. The Olympic Games were first celebrated in the 8th century B.C., at the religious site called Olympia (far from Mt. Olympus), and Olympian today actually most often refers to Olympic athletes.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]

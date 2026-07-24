@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-24T14:17:31.471Z",
+ "updated": "2026-07-24T15:48:48.922Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-24T15:48:24.621Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사구(noun phrase) 내 복수형 대명사/동사 일치 오류가 빈번하며, 시제(present/past) 혼동과 전치사(介詞) 선택 오류가 자주 발생한다.",
+   "rule": "복수형 명사구가 주어일 경우, 동사는 반드시 복수형(are/were)으로 일치시키며, 전치사 구문(예: at the same time)에서는 전치사 선택과 시제를 엄밀히 검토하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-24T14:17:03.708Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "과거형 동사와 현재완료형의 혼동이 빈번하며, 특히 '~한 적이 없다'는 의미에서는 현재완료가 필수적이다. 또한, 주어가 복수일 때 'life'가 'lives'로 변환되는 패턴이 관찰된다.",
    "rule": "주어가 단수/복수에 따라 'life/lives'를 구분하되, 과거형 동사가 사용된 경우 현재완료형으로 수정하여 문맥에 맞게 시제를 일치시킨다. 예: 'He changed' → 'He has changed'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-19T00:13:10.836Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 연어 패턴은 'only by + -ing' 구문과 'can you'의 도치 구조가 빈번히 결합됨을 보여준다. 또한 'talkative'→'speaker', 'error'→'wrong'과 같이 어휘적 오류가 문법 오류로 이어지는 경우가 많다.",
-   "rule": "'Only by + 동명사' 구문 뒤에는 주어+조동사+동사원형 도치 구조가 필수임을 강조하며, 'talkative' 등 오용된 형용사를 'speaker'로, 'error'를 'wrong'으로 대체하는 오답 선지를 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",
