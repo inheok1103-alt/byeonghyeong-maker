@@ -1,6 +1,93 @@
 {
- "updated": "2026-07-23T23:16:35.665Z",
+ "updated": "2026-07-24T00:17:18.256Z",
  "samples": [
+  {
+   "ts": "2026-07-24T00:15:09.135Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-24T00:15:50.777Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write ⓐ<u>graceless</u> prose. If you want to begin a sentence with a clause expressing ­ⓑ<u>unfamiliar</u> information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral ⓒ<u>deficiency</u>. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­ⓓ<u>restrictive</u> clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most ⓔ<u>eminent</u> intellectual historians and critics of style) had asserted:",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 2,
+    "explanation": "정답 ⓑ: 문맥상 'familiar'가 와야 하는데 'unfamiliar'가 쓰여 부적절하다 — 'since'를 도입하는 절은 독자가 이미 알고 있는 정보를 담아야 하므로, 문맥상 'unfamiliar'(익숙하지 않은)보다는 'familiar'(익숙한) 정보가 적절하다.. [극성] 정답=익숙한 정보(positive) ↔ 오답=익숙하지 않은 정보(negative)\n[오답 진단·처방]\n① 진단: ‘graceless’는 ‘세련되지 못한’이라는 뜻으로 문맥상 ‘글이 아름답지 못한’ 상태로 쓰였으나, ‘글이 자유롭지 못한’으로 오해했을 수 있다. 지문에서 ‘grammarian 이 설명할 수 있는 오류가 없을 때만 좋은 글’이라는 오해 때문에 ‘graceless’가 나왔다는 점을 놓쳤다. → 처방: ‘graceless’를 ‘세련되지 못한’으로만 기억하고, 문맥에서 ‘자유롭지 못한’과 혼동하지 않도록 글의 ‘질’을 떠올리며 읽기.\n③ 진단: ‘deficiency’를 ‘부족’으로만 알고 ‘결함’이라는 뜻으로 오해했을 수 있다. 지문에서 ‘문법적 오류가 정신적·도덕적 결함’을 가리킨다는 맥락을 제대로 읽지 못했다. → 처방: ‘deficiency’를 ‘부족’과 ‘결함’ 두 뜻으로 나누어 기억하고, 문맥에서 ‘부족’이 아닌 ‘결함’을 뜻하는지 확인하기.\n④ 진단: ‘eminent’을 ‘유명한’으로만 알고 ‘저명한’이라는 뜻으로 오해했을 수 있다. 지문에서 ‘지적인 역사학자와 평론가’라는 맥락에서 ‘eminent’이 ‘저명한’을 뜻한다는 점을 놓쳤다. → 처방: ‘eminent’을 ‘유명한’과 ‘저명한’으로 나누어 기억하고, ‘저명한’은 ‘뛰어난 위치’를 뜻한다는 점을 떠올리기.\n⑤ 진단: ‘restrictive’를 ‘제한적인’이라는 뜻으로만 알고 ‘한정하는’이라는 뜻으로 오해했을 수 있다. 지문에서 ‘that’를 써야 하는 이유가 ‘한정하는 절’이라는 점을 제대로 읽지 못했다. → 처방: ‘restrictive’를 ‘한정하는’이라는 뜻으로만 기억하고, ‘that’과 ‘which’를 구별하는 규칙을 다시 공부하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-24T00:16:40.202Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "문법적 오류가 없는 글쓰기가 유일하게 좋은 글쓰기는 아니며, 문장의 자연스러움과 명확성이 더 중요하다",
+     "문법적 오류가 없는 글쓰기는 좋은 글쓰기의 필수 조건이지만, 문장의 자연스러움은 부차적인 요소에 불과하다",
+     "모든 문법적 오류가 글의 질을 저하시키는 것은 아니며, 문장의 자연스러움과 명확성이 더 우선해야 한다",
+     "문법적 오류가 없는 글쓰기는 좋은 글쓰기의 한 가지 조건일 뿐이지만, 명확성은 반드시 뒷받침되어야 한다",
+     "문법적 오류가 없는 글쓰기는 좋은 글쓰기의 중요 요소이지만, 문장의 자연스러움은 필요하지 않다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Grammatical correctness should not be the sole measure of good writing; clarity and natural flow matter more.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘문법적 오류가 없는 글쓰기가 좋은 글쓰기의 필수 조건’이라는 부분은 지문에서 ‘글쓰기는 오류가 없어야만 좋은 것이라는 생각’이 잘못되었다고 지적한 것과 반대된다. ‘필수 조건’이 아니라 ‘유일하게 좋은 것’으로 오해한 듯하다. → 처방: 지문에서 ‘글쓰기는 오류가 없어야만 좋은 것이라는 생각은 틀렸다’는 점을 기억하고, ‘필수 조건’이 아니라 ‘유일하게 좋은 것’이라는 표현을 주의해서 읽기.\n③ 진단: ‘모든 문법적 오류가 글의 질을 저하시키는 것은 아니다’라는 말은 지문에서 나온 내용이 아니다. 지문은 문법적 오류가 글의 질을 떨어뜨릴 수 있지만, 자연스러움과 명확성이 더 중요하다는 입장을 보이고 있다. → 처방: 지문의 핵심은 ‘문법적 오류가 없어야만 좋은 글쓰기는 아니다’라는 점임을 기억하고, ‘모든 오류가 영향을 주지 않는다’는 과장된 해석을 경계하기.\n④ 진단: ‘문법적 오류가 없는 글쓰기는 한 가지 조건일 뿐’이라는 말은 지문에서 나온 내용이지만, ‘명확성은 반드시 뒷받침되어야 한다’는 부분은 지문에서 강조하지 않는다. 오히려 자연스러움이 더 중요하다는 입장이다. → 처방: 지문의 요지는 ‘자연스러움과 명확성’이 문법적 오류보다 더 중요하다는 것이지, 명확성이 ‘반드시’ 뒷받침되어야 한다는 말이 아님을 기억하기.\n⑤ 진단: ‘문장의 자연스러움은 필요하지 않다’는 말은 지문과 완전히 반대된다. 지문은 문법적 오류가 없어도 자연스럽지 않으면 좋지 않다는 입장을 보이고 있다. → 처방: 지문에서 ‘자연스러움’이 중요하다는 점을 강조한 부분을 다시 읽고, ‘필요하지 않다’는 표현을 오해하지 않도록 주의하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Grammatical correctness should not be the sole measure of good writing; clarity and natural flow matter more.]"
+   }
+  },
   {
    "ts": "2026-07-23T23:15:50.060Z",
    "type": "제목",
@@ -231,96 +318,6 @@
     ],
     "answer": 4,
     "explanation": "원문 전개 순서는 (C) - (A) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ① (A)부터 시작했는데, (A)는 'He/She’s downright rude' 등 부정적 표현이 많아 대화 흐름상 맞지 않음. ② (C)는 'match them to 1–6 below'로 이어지는 지시문이므로 (C)가 먼저 나와야 자연스러움. → 처방: 지시문(1–6 아래에 맞춰라)이 먼저 나오면 문제 풀이가 편하다는 점을 기억하고, (C)를 먼저 찾도록 연습하기.\n② 진단: ① (B)부터 시작했는데, (B)는 'Complete this conversation'로 대화가 이어지므로 (C)의 지시문과 맞지 않음. ② (A)는 대화가 아니라 예시 문장들이므로 순서상 맞지 않음. → 처방: 대화는 (B)에서 시작하고, 지시문은 (C)에서 나오므로 (B)→(C)→(A) 순서를 기억하기.\n③ 진단: ① (B)부터 시작했는데, (B)는 대화로 시작하므로 (C)의 지시문이 먼저 나와야 흐름이 자연스러움. ② (C) 다음에 (A)가 오면 대화가 끊기므로 순서가 맞지 않음. → 처방: 지시문(1–6 아래에 맞춰라)이 대화보다 먼저 나와야 문제 풀이가 쉬우므로, (C)를 먼저 찾도록 연습하기.\n⑤ 진단: ① (C)부터 시작했는데, (C)는 지시문으로 문제 풀이를 위한 안내이므로 (B)의 대화가 먼저 나와야 자연스러움. ② (B) 다음에 (A)가 오면 대화가 끝나지 않고 이어지므로 순서가 맞지 않음. → 처방: 대화는 (B)에서 시작하고, 지시문은 (C)에서 나오며, 예시는 (A)에서 나오므로 (B)→(C)→(A) 순서를 기억하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-23T16:49:40.357Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 사람들은 보통 '~와 놀랍도록 닮았다'고 말할 때 칭찬으로 여긴다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-23T14:35:30.874Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "T-보조사 'may'는 φ-특징과 격을 평가하고 삭제한 후 ЕРР를 충족하기 위해 목표어와 Probe 관계를 맺는다.",
-     "T-보조사 'may'는 φ-특징을 평가하고 삭제하는 Probe 역할을 수행하며 ЕРР를 충족시킨다.",
-     "T-보조사 'may'는 Probe 로서 φ-특징과 격을 평가·삭제하고 ЕРР를 위한 목표어의 이동을 유발한다.",
-     "T-보조사 'may'는 Probe 역할을 맡아 φ-특징과 격을 평가·삭제하여 ЕРР를 충족시킨다.",
-     "T-보조사 'may'는 φ-특징과 격을 평가·삭제하고 ЕРР 충족을 위한 Probe 관계를 형성한다."
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The T-auxiliary *may* probes and agrees with the goal *several miners* to value and delete -features and case, triggering movement for EPP satisfaction.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The T-auxiliary *may* probes and agrees with the goal *several miners* to value and delete -features and case, triggering movement for EPP satisfaction.]\n[오답 진단·처방]\n① 진단: ‘may’가 Probe 역할을 하기 전에 -특징과 격을 평가·삭제한 후 를 충족한다고 오해. 지문은 Probe 역할로 -특징과 격을 평가·삭제한 다음 를 위한 목표어의 이동이 일어난다고 설명(‘These various operations apply simultaneously on the T-cycle in accordance with (81)’). → 처방: Probe 역할의 순서와 의 관계를 정확히 기억하기. Probe 가 -특징과 격을 평가·삭제한 후 를 충족하는 것이 아니라, ‘동시에’ 를 위한 이동이 일어난다는 점을 명확히 이해하기.\n② 진단: ‘may’가 를 ‘충족시킨다’고만 표현하여 를 위한 목표어의 이동(‘movement of the closest goal several miners to spec-T’)을 생략. 지문은 삭제가 목표어의 이동으로 일어난다고 명시. → 처방: 가 Probe 의 -특징/격 평가와 별도로 목표어의 이동을 통해 ‘삭제’된다는 사실을 반드시 기억하기. ‘충족’보다는 ‘삭제’와 ‘이동’의 관계를 정확히 연결 지어 이해하기.\n④ 진단: ‘를 충족시킨다’고만 표현하여 가 Probe 의 -특징/격 평가와 ‘동시에’ 목표어의 이동을 유발한다는 세부 과정을 무시. 지문은 삭제가 목표어의 이동을 통해 일어난다고 설명. → 처방: 의 ‘삭제’가 Probe 의 평가와 ‘동시’에 목표어의 이동으로 일어난다는 점을 강조. ‘충족’보다는 ‘삭제’와 ‘이동’의 관계를 구체적으로 떠올리기.\n⑤ 진단: ‘Probe 관계를 형성한다’고만 표현하여 Probe 가 -특징/격 평가와 삭제를 ‘어떻게’ 수행하는지(‘movement of the closest goal several miners to spec-T’)를 생략. 지문은 Probe 가 목표어와 ‘동시’에 를 위한 이동을 유발한다고 설명. → 처방: Probe 의 역할이 -특징/격 평가뿐 아니라 삭제를 위한 목표어의 이동까지 포함한다는 점을 명확히 기억하기. ‘형성한다’보다는 ‘유발한다’와 ‘삭제’를 연결 지어 이해하기."
-   }
-  },
-  {
-   "ts": "2026-07-23T12:05:04.176Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": -1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page. Then match them to 1–6 below. blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments? 1 He/She certainly looks his/her age. 5 He/She has a very abrasive manner. 2 He/She’s downright rude. 6 He/She has a warm smile. 3 He/She’s bursting with energy. 7 He/She’s full of pent-up anger. 4 He/She has a bubbly personality. 8 He/She has boundless energy. Complete this conversation using collocations from the box in the appropriate form so that Nell always agrees with Zoë. [ ]",
-    "choices": [
-     "They often work together effectively.",
-     "They are entirely distinct from each other.",
-     "They share some noticeable features.",
-     "They are absolutely indistinguishable from each other.",
-     "They exhibit a pronounced visual similarity."
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 원문 'bear a striking resemblance to'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 학생은 '비슷하다'는 뜻을 '함께 일한다'는 뜻으로 잘못 이해했거나, 'similar'를 'synergy'와 같은 개념으로 혼동했습니다. 지문 1번 정의 '두 가지 또는 두 사람이 매우 비슷하게 생김'과 거리가 멉니다. → 처방: 지문의 정의를 읽을 때, 핵심 낱말(여기서는 'look similar')에 집중하여 정확한 의미를 파악하는 연습을 하세요.\n② 진단: 이 선지는 '비슷하다'는 뜻과 완전히 반대되는 '서로 완전히 다르다'는 뜻입니다. 학생은 'similar'의 의미를 'distinct'와 혼동했거나, 지문의 정의를 정반대로 이해했습니다. → 처방: 낱말의 반대말을 떠올려 보며 의미를 정확히 구분하는 훈련을 하고, 지문의 내용을 꼼꼼히 읽어 반대 의미로 오해하지 않도록 주의하세요.\n③ 진단: 이 선지는 '몇 가지 눈에 띄는 특징을 공유한다'는 뜻으로, '비슷하다'는 의미와 어느 정도 관련이 있지만, 지문 1번 정의의 '매우 비슷하게 생김(very similar)'이라는 강도를 충분히 담아내지 못합니다. → 처방: 지문의 낱말(여기서는 'very')이 주는 의미의 강도나 정도를 놓치지 않고 정확히 파악하는 연습을 하세요.\n④ 진단: 이 선지는 '서로 완전히 구별할 수 없다'는 뜻으로, '매우 비슷하다'는 의미와 매우 가깝지만, 'absolutely'라는 낱말이 '완벽한 동일성'을 강조하여 지문의 'very similar'가 내포하는 미묘한 의미 차이를 넘어설 수 있습니다. → 처방: 낱말의 의미를 해석할 때, 'absolutely'와 같은 강한 표현이 주는 의미의 강도를 신중하게 판단하고, 지문의 낱말이 가진 미묘한 의미 차이를 놓치지 않도록 주의 깊게 비교하는 연습을 하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]

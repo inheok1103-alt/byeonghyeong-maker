@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-23T23:16:35.661Z",
+ "updated": "2026-07-24T00:17:18.252Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-24T00:16:53.691Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "명사-형용사/동사-명사 등 연어의 오용이 빈번하며, 특히 'effect'와 'affect', 'sacrifice'와 'sacrifise', 'precious'와 'preciouse' 등 철자 오류가 연어 오용과 결합되어 나타난다.",
+   "rule": "원서 코퍼스의 최빈 연어 패턴(예: 'old english', 'noun phrase', 'direct object')을 기반으로, 학생들이 흔히 혼동하는 연어(예: 'effect' vs. 'affect', 'sacrifice' vs. 'sacrifise')를 오답으로 제시하여 연어 사용 능력을 평가한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-23T23:16:07.299Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "영어 문장 내 부사구(adverbial phrase)의 위치가 문법적 정확성과 가독성을 좌우하며, 특히 'in my view', 'personally', 'thus'와 같은 평가적 부사구가 문장 중간이나 끝에 오면 어색하거나 오류가 발생하기 쉽다.",
    "rule": "CEFR B1-B2 수준 내신 변형문제에서, 평가적 부사구('in my view', 'personally', 'thus' 등)는 문장 맨 앞이나 맨 뒤에 위치하도록 강제하는 오류 유형을 출제하라. 단, 문맥상 자연스러움을 위해 중간 위치가 허용되는 경우도 있음을 명시적으로 비교하도록 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T17:18:55.730Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구 내 중복 관사 제거(예: 'the the')와 비교급 구조의 관사/형용사 오류(예: 'young person' → 'a younger person')가 빈번하다는 점을 확인했다.",
-   "rule": "명사구 내 중복 관사(예: 'the the')가 나타나면 오류로 처리하며, 비교급 구조에서는 'a younger person'처럼 관사와 비교급 형용사를 함께 사용하도록 한다.",
    "sample": [
     "old english",
     "university press",
