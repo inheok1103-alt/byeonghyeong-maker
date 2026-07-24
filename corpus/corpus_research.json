@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-24T19:49:53.372Z",
+ "updated": "2026-07-24T21:31:26.714Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-24T21:31:01.113Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "강조 목적의 주어 대명사(You, they 등)가 불필요하게 반복될 경우, 문법적으로 불필요한 경우가 많다. 또한, 수동태에서 행위자의 생략이 자연스러운 경우(are controlled → being controlled)에도 오류가 발생한다.",
+   "rule": "강조가 아닌 단순 주어 대명사(You, They 등)는 문법적으로 필수적이지 않다면 생략하거나, 수동태에서 행위자 생략이 자연스러운 경우(be + past participle → be + being + past participle)를 적용하여 오류를 수정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-24T19:49:31.561Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'in my opinion'와 'in addition' 등 전치사+명사구 구문 뒤에 오는 절이 주어-동사 일치 오류를 자주 일으킨다. 또한 'on which'와 같은 관계사 절에서도 동사 수 일치가 지켜지지 않는 경우가 많다.",
    "rule": "원서 패턴 분석 결과, 전치사구(In my opinion, In addition 등) 또는 관계사(on which) 뒤의 절은 반드시 주어와 동사의 수 일치를 확인하여, 단수 주어에는 단수 동사, 복수 주어에는 복수 동사를 사용하도록 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-19T09:19:39.080Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형과 현재형의 혼동, 전치사 오용, 관사 누락이 빈번한 오류 유형으로 나타났다.",
-   "rule": "과거형(worked, created 등)과 현재형(works, create 등)의 구분이 필요한 동사 뒤에는 'how it works'와 같이 현재형이 오는 규칙을 문항에 반영하라.",
    "sample": [
     "old english",
     "university press",

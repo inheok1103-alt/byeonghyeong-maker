@@ -1,6 +1,75 @@
 {
- "updated": "2026-07-24T19:49:53.377Z",
+ "updated": "2026-07-24T21:31:26.718Z",
  "samples": [
+  {
+   "ts": "2026-07-24T21:29:46.755Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.29,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "과다어려움(P̂=0.29)",
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "In these sentences it may (A) [appear / disappear] to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that these strings are constituents. However, this cannot be (B) [correct / incorrect], i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). We can go further and ask whether the AP is a (C) [Supplement / Complement] of the lexical verb inside VP, or an Adjunct. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
+    "choices": [
+     "(A) disappear - (B) correct - (C) Supplement",
+     "(A) appear - (B) incorrect - (C) Supplement",
+     "(A) disappear - (B) incorrect - (C) Supplement",
+     "(A) disappear - (B) correct - (C) Complement",
+     "(A) appear - (B) correct - (C) Complement"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) appear - (B) correct - (C) Complement. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-24T21:30:49.776Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.25,
+    "D": 0.17,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.25)",
+     "변별도 낮음(D̂=0.17)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would ⓐ<u>suggest</u> that these strings are constituents. However, this ⓑ<u>cannot</u> be ⓒ<u>wrong</u>, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are ⓓ<u>inside</u> the VP, as in (65). We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an ⓔ<u>Adjunct</u>. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ: 문맥상 'correct'가 와야 하는데 'incorrect'가 쓰여 부적절하다 — 해당 문장 “However, this cannot be correct, i.”의 논리 흐름상 correct 가 맞고 incorrect 는 방향이 어긋난다. [극성] 정답=옳음/적절 ↔ 오답=잘못됨/부적절\n[오답 진단·처방]\n① 진단: ⓐ'suggest'는 '~처럼 보이다'라는 뜻으로, 지문에서 '~인 것처럼 보일 수 있다'는 의미를 담고 있지만, 문맥상 '제안하다'로 오해할 수 있음. (지문: 'it may appear to be the case that... This would ⓐsuggest that...') → 처방: 글의 흐름을 따라 '~처럼 보이다'라는 뜻임을 기억하고, '제안하다'라는 뜻으로는 쓰지 않도록 주의하기.\n② 진단: ⓑ'cannot'은 '~일 리가 없다'라는 뜻으로, 지문에서 '이것은 틀릴 수 없다'는 의미를 담고 있지만, '~할 수 없다'로 오해할 수 있음. (지문: 'This would ⓑcannot be ⓒwrong') → 처방: 부정어 'not'과 'can'의 결합이 '~일 리가 없다'라는 뜻임을 기억하고, '~할 수 없다'라는 뜻으로는 쓰지 않도록 주의하기.\n④ 진단: ⓓ'inside'는 '~안에'라는 뜻으로, 지문에서 '형용사구가 VP 안에 있다'는 의미를 담고 있지만, '~안'이라는 장소로 오해할 수 있음. (지문: 'Subject-related adjective phrases are ⓓinside the VP') → 처방: 'inside'가 '~안에'라는 뜻임을 기억하고, '~안'이라는 장소로 쓰지 않도록 주의하기.\n⑤ 진단: ⓔ'Adjunct'는 '부가어'라는 뜻으로, 지문에서 '형용사구가 보어인지 부가어인지'를 묻는 의미를 담고 있지만, '보조'로 오해할 수 있음. (지문: 'whether the AP is a Complement of the lexical verb inside VP, or an ⓔAdjunct') → 처방: 문맥상 '부가어'라는 뜻임을 기억하고, '보조'라는 뜻으로는 쓰지 않도록 주의하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-24T19:48:28.877Z",
    "type": "본문찾아쓰기",
@@ -289,60 +358,6 @@
     ],
     "answer": 3,
     "explanation": "틀린 곳은 ⓐ(repeated but with breaks are → repeated but with breaks), ⓒ(a blinking symbols → a blinking symbol), ⓔ(a swear words → a swear word) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘repeated but with breaks are’를 ‘repeated but with breaks in between’로 오독하여 ‘are’를 빼고 읽음. 지문 예시 ‘continual problem’에서 ‘are’를 넣으면 문법 오류가 됨. → 처방: ‘are’를 빼고 ‘repeated but with breaks in between’이 맞는 표현임을 기억하고, 문법 규칙을 다시 확인하며 읽기.\n② 진단: ‘a swear words’를 ‘a swear word’로 오독하여 단수·복수 구분을 틀림. 지문에서 ‘damn’이 ‘a swear word’로 설명되어 있음. → 처방: ‘swear word’는 단수 명사이므로 ‘a’를 붙이고 ‘words’를 쓰지 않도록 주의하기.\n④ 진단: ‘a blinking symbols’를 ‘a blinking symbol’로 오독하여 단수·복수 구분을 틀림. 지문에서 ‘cursor’는 단수 명사이므로 ‘symbol’이 맞음. → 처방: ‘symbol’이 단수임을 기억하고, ‘a’를 붙인 뒤 ‘symbols’를 쓰지 않도록 주의하기.\n⑤ 진단: ‘indicating position on’를 ‘indicating position in’로 오독하여 전치사 ‘on’을 ‘in’으로 혼동. 지문에서 ‘on a computer screen’이 맞음. → 처방: ‘on’을 전치사로 기억하고, ‘in’을 쓰지 않도록 주의하며 전치사 사용 규칙을 다시 확인하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T09:37:32.598Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/3가 2번 선택(기록 1번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Homonyms: Words Sharing Forms Yet Holding Distinct Meanings",
-     "Homonyms: Identical Spellings with Different Pronunciations",
-     "Homonyms: Confusion Stemming from Sound-Alike Words",
-     "Homonyms: Often Misleading Due to Overlapping Definitions",
-     "Homonyms: Require Context to Prevent Misinterpretation"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Homonyms: words with multiple meanings'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘identical spellings(똑같은 철자)’와 ‘different pronunciations(다른 발음)’을 혼동했는데, 지문은 같은 철자·발음으로 다른 뜻인 ‘동형이의어’를 설명하고 있어 틀렸다. → 처방: ‘동형이의어’는 철자와 발음이 같아도 뜻이 다르다는 점을 기억하고, 지문에서 같은 형태를 가진 단어들이 서로 다른 의미를 지닌다는 설명을 다시 확인하기.\n③ 진단: ‘sound-alike words(소리만 비슷한 단어)’를 떠올렸는데, 지문은 철자와 발음이 모두 같은 ‘동형이의어’를 다루고 있어 오해했다. → 처방: ‘동형이의어’는 철자와 발음이 같아도 뜻이 다르다는 점을 강조한 제목임을 기억하고, 지문에서 같은 형태를 가진 단어들이 서로 다른 의미를 지닌다는 설명을 다시 읽기.\n④ 진단: ‘overlapping definitions(겹치는 정의)’를 오해했는데, 지문은 같은 형태의 단어가 ‘서로 다른 뜻’을 지닌다는 점을 설명하고 있어 틀렸다. → 처방: ‘겹치는 정의’가 아니라 ‘서로 다른 뜻’을 지닌다는 점을 기억하고, 지문에서 같은 철자·발음을 가진 단어들이 서로 다른 의미를 지닌다는 설명을 다시 확인하기.\n⑤ 진단: ‘context(맥락)’를 강조했는데, 지문은 같은 형태의 단어가 ‘서로 다른 뜻’을 지닌다는 설명에 집중하고 있어 오해했다. → 처방: ‘맥락’이 아니라 ‘서로 다른 뜻’을 지닌다는 점을 기억하고, 지문에서 같은 철자·발음을 가진 단어들이 서로 다른 의미를 지닌다는 설명을 다시 읽기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Homonyms: words with multiple meanings]"
-   }
-  },
-  {
-   "ts": "2026-07-24T06:40:50.015Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: r)\n[영영풀이] A relationship or relation (to something).",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] references (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
