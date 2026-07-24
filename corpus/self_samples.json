@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-24T00:17:18.256Z",
+ "updated": "2026-07-24T03:48:57.550Z",
  "samples": [
+  {
+   "ts": "2026-07-24T03:47:40.087Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "(A) [Mundane / Olympian] (B) [Base / Lofty], superior, and (C) [Engaged / detached]. • Now 77, he moved slowly and spoke to the younger lawyers in Olympian tones, but his college friends could remember when he was a brash, crazy risk-taker. The Greek gods lived high atop Mt. Olympus, which allowed them to watch what went on in the human realm below and intervene as they saw fit. They insisted on being properly worshipped by humans, but otherwise tended to treat the affairs of these weak and short-lived creatures almost like a sport. So Olympian describes someone who seems “lofty” and “above it all,” as if surveying a scene in which other people appear the size of ants. The Olympic Games were first celebrated in the 8th century B.C., at the religious site called Olympia (far from Mt. Olympus), and Olympian today actually most often refers to Olympic athletes.",
+    "choices": [
+     "(A) Olympian - (B) Lofty - (C) detached",
+     "(A) Olympian - (B) Base - (C) Engaged",
+     "(A) Mundane - (B) Base - (C) detached",
+     "(A) Olympian - (B) Base - (C) detached",
+     "(A) Mundane - (B) Lofty - (C) Engaged"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) Olympian - (B) Lofty - (C) detached. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘Base’를 ‘아래에 있는’ 뜻으로 오해하고 ‘Engaged’를 ‘관여하는’ 뜻으로 혼동해 (B)와 (C)에서 문맥과 반대되는 뜻을 골랐다. 지문에서 ‘Olympian tones’는 ‘위에서 내려다보는 듯한 말투’를 뜻하는데, ‘Base’는 ‘낮은·천한’이라는 뜻이므로 문맥에 맞지 않다. → 처방: ‘Base’가 ‘낮은·천한’이라는 뜻을 떠올리고, ‘Engaged’가 ‘관여하는’이라는 뜻임을 기억한 뒤 문맥에 맞게 ‘Lofty’와 ‘detached’를 고르도록 연습하기.\n③ 진단: ‘Mundane’을 ‘일상적인’이라는 뜻으로 오해하고 ‘detached’를 ‘무관심한’이라는 뜻으로 혼동했다. 지문에서 ‘Olympian tones’는 ‘위에서 내려다보는 듯한 말투’를 뜻하는데, ‘Mundane’은 ‘평범한’이라는 뜻으로 문맥에 맞지 않다. → 처방: ‘Mundane’이 ‘평범한’이라는 뜻임을 확인하고, ‘detached’가 ‘무관심한’이라는 뜻임을 기억한 뒤 문맥에 맞게 ‘Lofty’와 ‘detached’를 고르도록 연습하기.\n④ 진단: ‘Base’를 ‘아래에 있는’ 뜻으로 오해하고 ‘detached’를 ‘무관심한’이라는 뜻으로 혼동했다. 지문에서 ‘Olympian tones’는 ‘위에서 내려다보는 듯한 말투’를 뜻하는데, ‘Base’는 ‘낮은·천한’이라는 뜻으로 문맥에 맞지 않다. → 처방: ‘Base’가 ‘낮은·천한’이라는 뜻을 떠올리고, ‘detached’가 ‘무관심한’이라는 뜻임을 기억한 뒤 문맥에 맞게 ‘Lofty’와 ‘detached’를 고르도록 연습하기.\n⑤ 진단: ‘Mundane’을 ‘일상적인’이라는 뜻으로 오해하고 ‘Engaged’를 ‘관여하는’이라는 뜻으로 혼동했다. 지문에서 ‘Olympian tones’는 ‘위에서 내려다보는 듯한 말투’를 뜻하는데, ‘Mundane’은 ‘평범한’이라는 뜻으로 문맥에 맞지 않다. → 처방: ‘Mundane’이 ‘평범한’이라는 뜻을 확인하고, ‘Engaged’가 ‘관여하는’이라는 뜻임을 기억한 뒤 문맥에 맞게 ‘Lofty’와 ‘Engaged’를 고르지 않도록 연습하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-24T03:48:18.779Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "Olympian Lofty, superior, and detached. • Now 77, he moved slowly and spoke to the younger lawyers in Olympian tones, but his college friends could remember when he was a brash, crazy risk-taker. The Greek gods lived high atop Mt. Olympus, which allowed them to watch what went on in the human realm below and intervene as they saw fit. They insisted on being properly worshipped by humans, but otherwise tended to treat the affairs of these weak and short-lived creatures almost like a sport. So Olympian describes someone who seems “lofty” and “above it all,” as if surveying a scene in which other people appear the size of ants. The Olympic Games were first celebrated in the 8th century B.C., at the religious site called Olympia (far from Mt. Olympus), and Olympian today actually most often refers to Olympic athletes.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-24T00:15:09.135Z",
    "type": "장문세트",
@@ -265,59 +318,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [준동사] ⓒ: 'have been observed occurring' → 'have been observed to occur' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-23T18:40:01.261Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 17 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'relationships', 'significantly', 'transformed' / 15~19단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Men and women have transformed their relationships most significantly through changes in how they collaborate at work.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-23T16:48:52.394Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page.\n\n(A) 2 He/She’s downright rude. 6 He/She has a warm smile. 3 He/She’s bursting with energy. 7 He/She’s full of pent-up anger.\n\n(B) 4 He/She has a bubbly personality. 8 He/She has boundless energy. Complete this conversation using collocations from the box in the appropriate form so that Nell always agrees with Zoë. bear a striking resemblance to\n\n(C) Then match them to 1–6 below. blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments? 1 He/She certainly looks his/her age. 5 He/She has a very abrasive manner.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 4,
-    "explanation": "원문 전개 순서는 (C) - (A) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ① (A)부터 시작했는데, (A)는 'He/She’s downright rude' 등 부정적 표현이 많아 대화 흐름상 맞지 않음. ② (C)는 'match them to 1–6 below'로 이어지는 지시문이므로 (C)가 먼저 나와야 자연스러움. → 처방: 지시문(1–6 아래에 맞춰라)이 먼저 나오면 문제 풀이가 편하다는 점을 기억하고, (C)를 먼저 찾도록 연습하기.\n② 진단: ① (B)부터 시작했는데, (B)는 'Complete this conversation'로 대화가 이어지므로 (C)의 지시문과 맞지 않음. ② (A)는 대화가 아니라 예시 문장들이므로 순서상 맞지 않음. → 처방: 대화는 (B)에서 시작하고, 지시문은 (C)에서 나오므로 (B)→(C)→(A) 순서를 기억하기.\n③ 진단: ① (B)부터 시작했는데, (B)는 대화로 시작하므로 (C)의 지시문이 먼저 나와야 흐름이 자연스러움. ② (C) 다음에 (A)가 오면 대화가 끊기므로 순서가 맞지 않음. → 처방: 지시문(1–6 아래에 맞춰라)이 대화보다 먼저 나와야 문제 풀이가 쉬우므로, (C)를 먼저 찾도록 연습하기.\n⑤ 진단: ① (C)부터 시작했는데, (C)는 지시문으로 문제 풀이를 위한 안내이므로 (B)의 대화가 먼저 나와야 자연스러움. ② (B) 다음에 (A)가 오면 대화가 끝나지 않고 이어지므로 순서가 맞지 않음. → 처방: 대화는 (B)에서 시작하고, 지시문은 (C)에서 나오며, 예시는 (A)에서 나오므로 (B)→(C)→(A) 순서를 기억하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]

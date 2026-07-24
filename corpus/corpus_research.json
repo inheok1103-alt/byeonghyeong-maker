@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-24T00:17:18.252Z",
+ "updated": "2026-07-24T03:48:57.546Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-24T03:48:29.656Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거 시제와 현재 시제가 혼용된 문장이나, 복수형/단수형 오류가 빈번하며, 'those'의 과도한 사용으로 인해 문장의 명확성이 떨어진다. 또한 'between two' 패턴이 'between A and B'로 변환되어야 하는 경우가 많다.",
+   "rule": "학생들이 'those' + 복수명사 + 과거 시제 동사(예: were found) 패턴을 사용할 때, 반드시 'those'를 'those + 복수명사 + are found'로 수정하거나, 'those'를 'the' 또는 'these'로 대체하여 문법적 오류를 방지하도록 연습시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-24T00:16:53.691Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 '명사 + 소유격 + 복수명사' 패턴이 빈번히 나타나며, 특히 'failure's'와 같은 오류가 자주 발생함을 확인했다.",
    "rule": "'명사 + 소유격 + 복수명사' 구조에서 소유격이 생략된 경우(예: failure's → failures), 반드시 복수형 명사(예: failures)로 수정하고 소유격(예: their)을 추가하여 문법적으로 올바르게 재구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-18T18:12:54.006Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어 문장 내 부사구(adverbial phrase)의 위치가 문법적 정확성과 가독성을 좌우하며, 특히 'in my view', 'personally', 'thus'와 같은 평가적 부사구가 문장 중간이나 끝에 오면 어색하거나 오류가 발생하기 쉽다.",
-   "rule": "CEFR B1-B2 수준 내신 변형문제에서, 평가적 부사구('in my view', 'personally', 'thus' 등)는 문장 맨 앞이나 맨 뒤에 위치하도록 강제하는 오류 유형을 출제하라. 단, 문맥상 자연스러움을 위해 중간 위치가 허용되는 경우도 있음을 명시적으로 비교하도록 구성하라.",
    "sample": [
     "old english",
     "university press",
