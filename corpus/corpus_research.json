@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-25T12:11:35.169Z",
+ "updated": "2026-07-25T14:07:16.443Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-25T14:06:50.162Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'someone'이나 'he/she'와 같은 인칭대명사가 반복될 때, 문법적 일관성(단수/복수, 시제, 태) 유지 실패가 빈번하다. 또한 'return'·'talent'·'groundless'와 같이 한국어와 어순/형태가 다른 영어 고유의 동사/형용사 사용에서 오류가 발생한다.",
+   "rule": "CEFR B1 수준 이하의 문항에서 인칭대명사(he/she/they/it)와 동사(단수/복수, 시제) 또는 형용사(형용사형/부사형) 간의 일관성을 유지하지 않은 오류를 반드시 1개 이상 포함하도록 문장을 설계하라. 예: 'She know that he like her talent in dance' → 'She knows that he likes her talent in dancing'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-25T12:11:05.230Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'단수/복수 명사의 선택 오류'가 빈번하며, 특히 'the + 단수명사' vs. 'a/an + 단수명사' 또는 '복수명사'의 구분이 CEFR B1-B2 수준에서 핵심 오류 유형임을 확인할 수 있다. 또한, 전치사(예: 'to' vs. 'of')와 대명사의 일치(예: 'they' vs. 'it')도 빈번한 오류로 나타났다.",
    "rule": "CEFR B1-B2 수준 내신 변형문제에서는 'the + 단수명사'가 불가산명사(예: 'knowledge', 'transportation')와 함께 사용될 때 오류를 유도하는 문장을 반드시 1개 이상 포함하여, 학생들이 'the + 단수명사'가 불가산명사 앞에서는 사용되지 않는다는 규칙을 적용하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-19T21:11:08.079Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'therefore'는 문법적으로 접속사(접속부사)로 기능하지만, 문장 첫머리에 오는 경우 콤마(,)로 분리해야 하며, 'therefore' 자체는 대문자로 시작해야 한다. 또한 'therefore'는 인과관계를 명확히 하기 위해 문장 중간보다는 문장 첫머리나 중간에서 콤마와 함께 사용되는 패턴이 일반적이다.",
-   "rule": "'therefore'를 포함한 인과관계 문장은 반드시 문장 첫머리(대문자 시작) 또는 문장 중간(소문자 시작 후 콤마 분리)으로 배치하고, 'therefore' 앞뒤에 콤마를 필수로 삽입하여 문법적 명확성을 확보하라.",
    "sample": [
     "old english",
     "university press",

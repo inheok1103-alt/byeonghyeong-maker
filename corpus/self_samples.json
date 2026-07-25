@@ -1,6 +1,39 @@
 {
- "updated": "2026-07-25T12:11:35.173Z",
+ "updated": "2026-07-25T14:07:16.447Z",
  "samples": [
+  {
+   "ts": "2026-07-25T14:04:35.671Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "Xvi ACKNOWLEDGMENTS Kasner and Newman’s Mathematics and the Imagination (Simon and Schuster). A. J. Liebling’s The Wayward Pressman. Katherine Mansfield’s The Garden Party (Constable). Jules Masserman’s Principles of Dynamic Psychiatry (Saunders). Charles Morris’s Signs, Language and Bebhaviowr (Prentice-Hall). Lewis Mumford’s The Culture of Cities (Secker & Warburg) Jawaharlal Nehru’s Autobiography (Lane). Ogden and Richard’s The Meaning of Meaning (Kegan Paul). Jean Piaget’s The Child’s Conception of the World (Kegan Paul). James Harvey Robinson’s The Mind in the Making (Harper). P. A. Sorokin’s Man and Society in Calamity (Dutton). Clarence Streit’s Union Now (Cape). Wellek and Warren’s Theory of Literature (Harcourt, Brace). E. B. White’s QOuo Vadimus? (Harper). William Allen White’s Forty Years on Main Street (Rinehart). Lee Wulff’s The Handbook of Freshwater Fishing (Lippincott). Lin Yutang’s The Wisdom of Confucius. And articles in the Chicago Sun-Times, New Masses, The Mation, New Republic, New Statesman and Nation, Pittsburgh Courier, and the Political Science Quarterly.",
+    "choices": [
+     "카스너와 뉴먼의 책 '수학과 상상력'이 사이먼 앤 슈스터에서 출판되지 않았다.",
+     "찰스 모리스의 책 '기호, 언어, 행동'이 프렌티스홀에서 출판되지 않았다.",
+     "자바할랄 네루의 자서전 '나의 인생'이 레인이 아닌 다른 곳에서 출판되었다.",
+     "오그던과 리처즈의 책 '의미의 의미'가 케간 폴에서 출판되었다.",
+     "리 L. 월프의 책 '민물 낚시 핸드북'이 리핀콧이 아닌 다른 출판사에서 출판되었다."
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Mathematics and the Imagination'의 출판사가 'Simon and Schuster'로 정확히 나와 있는데, '사이먼 앤 슈스터'가 아닌 다른 이름으로 오해했을 가능성이 크다. → 처방: 출판사 이름은 원문 그대로 정확히 읽고, 출판사 이름의 표기 오류를 주의해야 한다.\n② 진단: 지문에서 'Signs, Language and Behavior'가 'Prentice-Hall'에서 출판되었다고 명시되어 있지만, '프렌티스홀'이라는 표기 오류로 혼동했을 수 있다. → 처방: 출판사 이름을 철자까지 정확히 확인하고, 약어나 표기 오류에 주의해야 한다.\n③ 진단: 지문에서 'Autobiography'의 출판사가 'Lane'으로 명시되어 있지만, '자서전'이라는 뜻의 'Autobiography'를 '나의 인생'으로 번역하며 출판사 정보까지 혼동했을 수 있다. → 처방: 제목과 출판사를 분리해서 읽고, 제목의 번역 오류를 줄이기 위해 원문 제목을 그대로 확인해야 한다.\n⑤ 진단: 지문에서 'The Handbook of Freshwater Fishing'이 'Lippincott'에서 출판되었다고 나오지만, '리 L. 월프'라는 이름의 표기 오류로 출판사까지 잘못 연결했을 수 있다. → 처방: 저자 이름과 출판사를 따로 확인하고, 저자 이름의 오독이 출판사 선택에 영향을 주지 않도록 주의해야 한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-25T12:10:33.896Z",
    "type": "전체문장배열",
@@ -340,41 +373,6 @@
     ],
     "answer": 5,
     "explanation": "정답 조합: (A) appear - (B) correct - (C) Complement. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T21:30:49.776Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.25,
-    "D": 0.17,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.25)",
-     "변별도 낮음(D̂=0.17)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would ⓐ<u>suggest</u> that these strings are constituents. However, this ⓑ<u>cannot</u> be ⓒ<u>wrong</u>, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are ⓓ<u>inside</u> the VP, as in (65). We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an ⓔ<u>Adjunct</u>. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ: 문맥상 'correct'가 와야 하는데 'incorrect'가 쓰여 부적절하다 — 해당 문장 “However, this cannot be correct, i.”의 논리 흐름상 correct 가 맞고 incorrect 는 방향이 어긋난다. [극성] 정답=옳음/적절 ↔ 오답=잘못됨/부적절\n[오답 진단·처방]\n① 진단: ⓐ'suggest'는 '~처럼 보이다'라는 뜻으로, 지문에서 '~인 것처럼 보일 수 있다'는 의미를 담고 있지만, 문맥상 '제안하다'로 오해할 수 있음. (지문: 'it may appear to be the case that... This would ⓐsuggest that...') → 처방: 글의 흐름을 따라 '~처럼 보이다'라는 뜻임을 기억하고, '제안하다'라는 뜻으로는 쓰지 않도록 주의하기.\n② 진단: ⓑ'cannot'은 '~일 리가 없다'라는 뜻으로, 지문에서 '이것은 틀릴 수 없다'는 의미를 담고 있지만, '~할 수 없다'로 오해할 수 있음. (지문: 'This would ⓑcannot be ⓒwrong') → 처방: 부정어 'not'과 'can'의 결합이 '~일 리가 없다'라는 뜻임을 기억하고, '~할 수 없다'라는 뜻으로는 쓰지 않도록 주의하기.\n④ 진단: ⓓ'inside'는 '~안에'라는 뜻으로, 지문에서 '형용사구가 VP 안에 있다'는 의미를 담고 있지만, '~안'이라는 장소로 오해할 수 있음. (지문: 'Subject-related adjective phrases are ⓓinside the VP') → 처방: 'inside'가 '~안에'라는 뜻임을 기억하고, '~안'이라는 장소로 쓰지 않도록 주의하기.\n⑤ 진단: ⓔ'Adjunct'는 '부가어'라는 뜻으로, 지문에서 '형용사구가 보어인지 부가어인지'를 묻는 의미를 담고 있지만, '보조'로 오해할 수 있음. (지문: 'whether the AP is a Complement of the lexical verb inside VP, or an ⓔAdjunct') → 처방: 문맥상 '부가어'라는 뜻임을 기억하고, '보조'라는 뜻으로는 쓰지 않도록 주의하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
