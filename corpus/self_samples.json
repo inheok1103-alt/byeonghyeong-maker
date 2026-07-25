@@ -1,6 +1,77 @@
 {
- "updated": "2026-07-25T03:41:57.840Z",
+ "updated": "2026-07-25T06:32:00.077Z",
  "samples": [
+  {
+   "ts": "2026-07-25T06:30:27.853Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the structural rules of language determine how words combine into meaningful expressions",
+     "the meanings of words alone dictate the grammatical arrangement in sentences",
+     "the sequence of words in a sentence strictly adheres to fixed grammatical frameworks",
+     "all languages universally follow identical grammatical structures without exceptions",
+     "grammar occasionally influences the structure of natural language"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Grammar governs the structure and usage of natural language.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 '의미'가 아닌 '구조'가 문법의 핵심임을 'the structural rules of language determine how words combine'로 설명했는데, 학생은 '의미'에만 집중해 '단어의 뜻이 문장 구조를 결정한다'고 오해했음. → 처방: 지문에서 '의미'와 '구조'를 구분하는 부분을 다시 읽고, '의미'가 아닌 '구조'가 문법의 핵심임을 기억할 것.\n③ 진단: 지문에서 '고정된 틀'이 아니라 '규칙에 따라 유연하게 결합'함을 'words combine into meaningful expressions'로 설명했는데, 학생은 '고정됨'으로 오해해 '문법적 틀에 딱 맞아야 한다'고 생각했음. → 처방: 지문에서 '규칙에 따라 결합'한다는 부분을 강조하고, '고정'이 아니라 '유연성'을 떠올릴 것.\n④ 진단: 지문에서 '모든 언어가 동일한 구조를 가진다'는 말이 없는데, 학생은 '보편성'에만 집중해 '모든 언어가 똑같은 문법 구조를 가진다'고 오해했음. → 처방: 지문에서 '언어의 구조'가 각 언어마다 다르다는 점을 확인하고, '보편성'이 아니라 '다양성'을 떠올릴 것.\n⑤ 진단: 지문에서 '문법이 언어 구조에 영향을 미친다'는 내용이 없는데, 학생은 '영향'이라는 단어에만 집중해 '문법이 때때로 구조를 결정한다'고 오해했음. → 처방: 지문에서 '문법의 역할'이 '단어 결합 규칙'임을 다시 확인하고, '영향'이 아니라 '결정'임을 기억할 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Grammar governs the structure and usage of natural language.]"
+   }
+  },
+  {
+   "ts": "2026-07-25T06:30:55.714Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Exercises 57 (a) (A) [so very / so much] touchy (b) (B) [so complete / so completely] stupid (c) (C) [very very / much very] odd Suggest an analysis for these APs. If you need a hint, notice that very touchy, com­ pletely stupid and very odd are APs. Discussion of exercises 1. NOUNS: court, cheek, officials, club, home, hand, being, sensitivity, people, feelings ADJECTIVES: outrageous, other, warm, loving, human, full DEGREE ADVERBS: perfectly, incredibly GENERAL ADVERBS: openly, recently PREPOSITIONS: on, towards, by, at, on, of, for 2. NPs: (a) the court (b) she (c) a perfectly outrageous cheek (d) officials recently appointed by the club (e) the club. You may have missed she: it’s a pronoun having one of the functions of full NPs (subject). HEADS: (a) court (b) she (c) cheek (d) officials (e) club. FUNCTIONS: the court is functioning as complement of the preposition on. She is functioning as the subject. A perfectly outrageous cheek has a function other than sub­ ject or complement to a preposition. Officials appointed by the club is complement to the preposition towards. The club is complement to the preposition by.",
+    "choices": [
+     "(A) so very - (B) so completely - (C) very very",
+     "(A) so very - (B) so complete - (C) much very",
+     "(A) so much - (B) so completely - (C) very very",
+     "(A) so much - (B) so completely - (C) much very",
+     "(A) so very - (B) so complete - (C) very very"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) so very - (B) so completely - (C) very very. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘so very touchy’는 ‘so much touchy’보다 ‘very very touchy’와 비슷하다고 착각해 ‘so very’를 선택했는데, ‘very’는 ‘so’와 함께 쓸 수 없지만 ‘so much’는 ‘touchy’(형용사)와 어울릴 수 있다고 잘못 생각했음. → 처방: ‘so’는 ‘very’와 달리 ‘much’와 함께 쓸 수 있으니 ‘so much’를 써야 함을 기억할 것.\n② 진단: ‘so complete stupid’을 ‘so completely stupid’로 써야 하는데, ‘complete’는 형용사라서 ‘completely’(부사)로 바꿔야 한다는 사실을 몰라 ‘so complete’를 선택했음. → 처방: ‘completely’는 ‘stupid’을 수식하는 부사라는 점을 알고, ‘so completely stupid’로 써야 함을 기억할 것.\n④ 진단: ‘very very odd’를 ‘much very odd’로 썼는데, ‘much’는 ‘very’와 달리 ‘odd’를 수식할 수 없고, ‘very very’는 강조로 허용된다는 사실을 몰랐음. → 처방: ‘very’는 ‘very’와 함께 쓸 수 있음을 기억하고, ‘very very odd’를 써야 함을 기억할 것.\n⑤ 진단: ‘so very touchy’를 ‘so very’로 썼고, ‘so complete stupid’을 ‘so complete’로 썼으며, ‘very very odd’를 ‘very very’로 썼지만, ‘so very touchy’는 ‘so much touchy’가 옳고, ‘so complete stupid’은 ‘so completely stupid’가 옳다는 사실을 혼동했음. → 처방: ‘so much’는 ‘touchy’를, ‘so completely’는 ‘stupid’를, ‘very very’는 ‘odd’를 수식한다는 점을 정확히 기억하고 쓸 것."
+   }
+  },
   {
    "ts": "2026-07-25T03:40:57.187Z",
    "type": "밑줄함의",
@@ -306,74 +377,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ: 문맥상 'interested'가 와야 하는데 'disinterested'가 쓰여 부적절하다 — 앞 문장에서는 '궁금한 학생들이 설명을 자세히 묻고자 했다'는 내용이 나오는데, 뒤 문장에서는 '아무도 연구자에게 설명을 묻는 데 관심이 없어 보였다'는 대조가 나타나므로 'interested'가 문맥에 맞다.. [극성] interested(관심 있음) ↔ disinterested(관심 없음)\n[오답 진단·처방]\n① 진단: ⓐ<u>exercise</u>는 '운동'이 아니라 '문제'나 '연습 문제'로 쓰였어야 하는데, 학생은 '운동'으로만 오해했을 가능성이 있다. 지문에서 'exercises dealing with the text'는 '글과 관련된 문제들'을 뜻한다. → 처방: 'exercise'가 '운동'이 아닌 '문제'나 '연습'으로 쓰인다는 점을 기억하고, 문맥에 따라 뜻을 유추하라.\n② 진단: ⓑ<u>instructions</u>는 '지시 사항'으로 쓰였어야 하는데, 학생은 '교육'이나 '수업'으로 혼동했을 수 있다. 지문에서 'instructions were explained'는 '지시 사항이 설명되었다'는 뜻이다. → 처방: 'instructions'가 '지시 사항'임을 확인하고, '수업'이나 '교육'과는 구분하라.\n④ 진단: ⓓ<u>presented</u>는 '발표하다'가 아니라 '제출하다'나 '제시하다'로 쓰였어야 하는데, 학생은 '발표'로만 오해했을 수 있다. 지문에서 'answers needed to be presented'는 '답안이 제출되어야 했다'는 뜻이다. → 처방: 'presented'가 '발표'가 아닌 '제출'이나 '제시'로 쓰일 수도 있음을 기억하고, 문맥에 따라 뜻을 확인하라.\n⑤ 진단: ⓔ<u>vocabulary</u>는 '어휘'로 쓰였어야 하는데, 학생은 '문법'이나 '문장'으로 혼동했을 가능성이 있다. 지문에서 'vocabulary'는 '단어'를 뜻하며, 'match some words'와 연결된다. → 처방: 'vocabulary'가 '어휘'나 '단어'임을 확인하고, '문법'이나 '문장'과는 구분하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T14:15:45.440Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.86,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.86)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "An early dinner. An early riser. The early Victorians. First class. First offenders are not punished severely. Comparative anatomy. We owed our comparative safety to the fog. A (A) [imperfect / perfect] copy. He spoke with perfect ease. They are perfect strangers. A young lady. In his young days. (B) [Conscientious / careless] work. Conscientious objectors. A born orator. In all their born days. A married woman. Their married life was very happy. A (C) [excusable / criminal] neglect of duty. The criminal courts. A deaf-and-dumb teacher (one who is d.). A deaf-and-dumb teacher (one who teaches the d.). A lunatic girl. A lunatic asylum. In New Englander, Pacific Islanders the adjective qualifies only the beginning of the next word (cp. comparative safety). 9.4. With composite names the adjunct sometimes belongs to the nearest substantive only; this is the case in the following examples in spite of the different spelling: Everyday speech (speech is defined by everyday, and day by every). An all-night sitting. A public schoolboy. The dirty clothes-basket. Smith & Co., old and new booksellers. Essentials of english grammar 60",
-    "choices": [
-     "(A) perfect - (B) careless - (C) excusable",
-     "(A) imperfect - (B) Conscientious - (C) criminal",
-     "(A) perfect - (B) Conscientious - (C) criminal",
-     "(A) imperfect - (B) careless - (C) criminal",
-     "(A) imperfect - (B) careless - (C) excusable"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) perfect - (B) Conscientious - (C) criminal. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T14:16:09.268Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.25,
-    "D": 0.33,
-    "distractorEff": 100,
-    "pass": true,
-    "flags": [
-     "과다어려움(P̂=0.25)"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] They are perfect strangers.\n\nAn early dinner. An early riser. The early Victorians. First offenders are not punished severely. We owed our comparative safety to the fog. ( ① ) A perfect copy. ( ② ) He spoke with perfect ease. ( ③ ) A young lady. ( ④ ) In his young days. ( ⑤ ) A born orator. In all their born days. A married woman. Their married life was very happy. A criminal neglect of duty. The criminal courts. A deaf-and-dumb teacher (one who is d.) A deaf-and-dumb teacher (one who teaches the d.) A lunatic girl. A lunatic asylum. In New Englander, Pacific Islanders the adjective qualifies only the beginning of the next word (cp. With composite names the adjunct sometimes belongs to the nearest substantive only; this is the case in the following examples in spite of the different spelling: Everyday speech (speech is defined by everyday, and day by every). An all-night sitting. A public schoolboy. The dirty clothes-basket. Smith & Co. , old and new booksellers. s. Essentials of english grammar 60",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘perfect strangers’를 ‘완전히 낯선 사람들’로 오해하고, ‘perfect’의 의미가 ‘완전함’이 아니라 ‘완전히’라는 부사적 의미를 가진다고 착각했다. 지문에서 ‘perfect’는 ‘완전한’이라는 형용사 의미로 쓰인 경우가 대부분인데, 이 문장은 ‘완전히 낯선’이라는 뜻으로 쓰였다고 잘못 이해했다. → 처방: ‘perfect’는 문맥에 따라 ‘완전한’ 또는 ‘완전히’라는 뜻으로도 쓰일 수 있음을 기억하고, 문장 전체의 의미를 살피며 ‘perfect’의 역할을 정확히 판단한다.\n② 진단: ‘perfect copy’를 ‘완벽한 복사본’으로만 해석하고, ‘perfect’이 문장에서 ‘완전히’라는 부사적 의미를 가질 수 있음을 간과했다. 지문에서 ‘perfect’는 주로 형용사로 쓰였지만, 이 문장은 ‘완전히’라는 뜻으로 쓰였다고 착각했다. → 처방: ‘perfect’는 문장에서 ‘완전히’라는 부사로도 쓰일 수 있음을 인지하고, 문맥에 따라 의미를 구분하여 해석한다.\n④ 진단: ‘A young lady’를 ‘젊은 숙녀’라는 뜻으로만 보고, ‘perfect strangers’와 유사한 구조로 ‘완전히 낯선 사람들’이라는 뜻이 될 수 있음을 생각하지 못했다. ‘perfect’는 ‘완전히’라는 뜻으로도 쓰일 수 있음을 간과했다. → 처방: ‘perfect’는 ‘완전히’라는 뜻으로도 쓰일 수 있음을 기억하고, 문장 구조와 의미를 종합적으로 분석하여 의미를 파악한다.\n⑤ 진단: ‘In his young days’를 ‘그의 젊은 시절’이라는 뜻으로만 보고, ‘perfect’는 ‘완전히’라는 뜻으로 쓰일 수 있음을 생각하지 못했다. ‘perfect’는 문장에서 ‘완전히’라는 부사로도 쓰일 수 있음을 간과했다. → 처방: ‘perfect’는 문장에서 ‘완전히’라는 부사로도 쓰일 수 있음을 기억하고, 문맥에 따라 의미를 정확히 판단한다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
