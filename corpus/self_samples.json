@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-25T06:32:00.077Z",
+ "updated": "2026-07-25T09:14:53.698Z",
  "samples": [
+  {
+   "ts": "2026-07-25T09:14:21.113Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① But the same is not true for the inflectional assigner of nominative Case.\n② Furthermore, this case is assigned by a functional element, something that is not involved in \u0002-role assignment.\n③ One is to assume that nominative and accusative Case are similar and the other assumes that they are fundamentally different.\n④ From the first perspective the challenge is to come up with restrictions which define the conditions under which Case can be assigned generally.\n⑤ For accusative Case the Case assigner necessarily \u0002marks its subject in order to be able to assign accusative Case.\n⑥ There are two basic positions linguists take with respect to these observations.\n⑦ For example, there are three positions to which we have seen a Case assigned: the specifier of the inflection; the specifier of the complement, and the complement position itself: (65)",
+    "choices": [
+     "②-⑤-①-⑥-③-⑦-④",
+     "②-⑤-⑥-①-③-④-⑦",
+     "②-⑤-①-⑥-③-④-⑦",
+     "②-⑦-⑤-①-⑥-④-③",
+     "②-⑤-①-③-⑥-④-⑦"
+    ],
+    "answer": 3,
+    "explanation": "정답 배열은 ②-⑤-①-⑥-③-④-⑦. 흐름: ② → ⑤ → ①(But) → ⑥ → ③ → ④ → ⑦(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘⑥(두 가지 기본 입장)’과 ‘③(두 입장 중 하나)’의 순서가 잘못됐고, ‘④(제한 조건)’가 ‘⑦(예시)’보다 먼저 나와야 하는데도 그 반대여서 글의 논리 흐름이 깨졌다. → 처방: ‘두 입장’을 먼저 제시한 뒤(⑥→③), 그 다음에 ‘제한 조건’을 설명하는(④) 순서가 자연스럽다는 점을 기억하라. 예시는 마지막에 배치된다.\n② 진단: ‘③(두 입장)’과 ‘④(제한 조건)’의 순서가 뒤바뀌었고, ‘⑦(예시)’가 ‘④’보다 먼저 나와야 하는데도 ‘④’가 뒤에 나와서 흐름이 어색해졌다. → 처방: ‘두 입장’을 먼저 말하고(③), 그 다음에 ‘제한 조건’을 설명하는(④) 순서를 지켜라. 예시는 맨 마지막에 둔다.\n④ 진단: ‘⑦(예시)’가 ‘⑤(주격·목격격 비교)’보다 먼저 나와서 ‘예시’가 ‘주장’보다 먼저 제시되는 오류가 났다. 또한 ‘③(두 입장)’이 맨 뒤로 가야 하는데도 중간에 배치됐다. → 처방: ‘예시’는 ‘주장’이 나온 뒤에야 의미를 가지므로, ‘예시’를 맨 뒤로 밀어내고 ‘두 입장’을 먼저 설명한 뒤(③) ‘제한 조건’을 설명하라(④).\n⑤ 진단: ‘③(두 입장)’이 ‘⑥(두 기본 입장)’보다 먼저 나와서 ‘두 입장’을 소개하는 문장이 흐트러졌고, ‘④(제한 조건)’가 ‘⑦(예시)’보다 먼저 나와서 논리 전개가 이상해졌다. → 처방: ‘두 입장’을 먼저 소개하고(⑥→③), 그 다음에 ‘제한 조건’을 설명한 뒤(④), 마지막으로 ‘예시’를 배치하라(⑦).\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-25T09:14:25.947Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 14 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'fundamentally', 'Nominative', 'accusative' / 12~16단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Nominative and accusative Case fundamentally differ in how their assigners operate and restrict assignment.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-25T06:30:27.853Z",
    "type": "심경변화",
@@ -323,60 +377,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 '인물 A 와 B 가 동일한 존재임을 전제로, A 에 대해 참인 명제는 B 에 대해서도 참임을 증명하는 동일성 원리(Principle of Substitutivity)의 논리적 근거를 제시한다.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘동일성 원리’는 두 대상이 동일하다는 전제 자체를 논리적 근거로 삼는 것이 아니라, 동일하다는 전제에서 ‘무엇이든 참으로 말할 수 있는 명제는 교환 가능’하다는 결론을 이끌어내는 규칙임을 오해한 것으로 보임. 지문에서 ‘이 가정은 우리에게 ‘대체 가능성 원리’라는 중요한 추론 규칙을 준다’고 설명한 부분을 보지 못한 듯. → 처방: ‘동일성 원리’는 동일하다는 전제에서 ‘무엇이든 참으로 말할 수 있는 명제는 교환 가능’하다는 결론을 이끌어내는 규칙임을 기억하고, 전제 자체를 근거로 삼는 것이 아님을 분명히 할 것.\n② 진단: ‘한 대상에 대한 모든 명제가 다른 대상에도 동일하게 적용되어야 한다’는 말은 지나치게 강하고 오류가 있는 주장으로, 지문은 ‘참된 명제’에 한정하여 교환 가능성을 언급한 점을 오해한 듯. → 처방: 지문에서 ‘참된 명제’에만 초점을 맞추고 있으므로, ‘모든 명제’를 주장하지 말고 ‘참된 명제’에 한정하여 생각하도록 할 것.\n③ 진단: ‘두 이름은 언제나 완전히 교환 가능한 존재로 간주된다’는 말은 지나치게 절대적이며, 지문은 ‘참된 명제’를 말할 때만 교환 가능성을 언급한 점을 오해한 듯. → 처방: ‘참된 명제’를 말할 때만 교환 가능성을 인정한다는 점을 분명히 기억하고, ‘완전히 교환 가능’하다는 말은 과도한 일반화임을 인지할 것.\n④ 진단: ‘한 대상을 다른 이름으로 부를 때에도 언제나 동일하게 적용되어야 한다’는 말은 ‘언제나’라는 표현이 지나치며, 지문은 ‘참된 명제’를 말할 때만 교환 가능성을 언급한 점을 오해한 듯. → 처방: ‘참된 명제’를 말할 때만 교환 가능성을 인정한다는 점을 기억하고, ‘언제나’라는 절대적 표현을 피하도록 할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: 인물 A 와 B 가 동일한 존재임을 전제로, A 에 대해 참인 명제는 B 에 대해서도 참임을 증명하는 동일성 원리(Principle of Substitutivity)의 논리적 근거를 제시한다.]"
-   }
-  },
-  {
-   "ts": "2026-07-24T15:47:16.671Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] Any activity designed to develop or hone a skill or ability.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] exercise (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T15:48:11.603Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "After the materials and the ⓐ<u>exercise</u> had been distributed to each group, the ⓑ<u>instructions</u> were generally explained for every group briefly. It was expected that some curious students were willing to ask the detail of the instruction. Yet, no one was apparently ⓒ<u>disinterested</u> in asking the researcher. Thus, their missions were explained thoroughly through involving in every group discussion. There were five exercises dealing with the text. Two exercises were about the content of the text and its social function. Those two exercises’ answers needed to be ⓓ<u>presented</u> by the representative of each group. Then, there was an exercise dealing with the ⓔ<u>vocabulary</u>. The students should match some words appeared in the text with the provided definitions which was in English. They were not allowed to open their dictionary. The following exercise was about reference. And the last exercise was about finding topic and main idea.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ: 문맥상 'interested'가 와야 하는데 'disinterested'가 쓰여 부적절하다 — 앞 문장에서는 '궁금한 학생들이 설명을 자세히 묻고자 했다'는 내용이 나오는데, 뒤 문장에서는 '아무도 연구자에게 설명을 묻는 데 관심이 없어 보였다'는 대조가 나타나므로 'interested'가 문맥에 맞다.. [극성] interested(관심 있음) ↔ disinterested(관심 없음)\n[오답 진단·처방]\n① 진단: ⓐ<u>exercise</u>는 '운동'이 아니라 '문제'나 '연습 문제'로 쓰였어야 하는데, 학생은 '운동'으로만 오해했을 가능성이 있다. 지문에서 'exercises dealing with the text'는 '글과 관련된 문제들'을 뜻한다. → 처방: 'exercise'가 '운동'이 아닌 '문제'나 '연습'으로 쓰인다는 점을 기억하고, 문맥에 따라 뜻을 유추하라.\n② 진단: ⓑ<u>instructions</u>는 '지시 사항'으로 쓰였어야 하는데, 학생은 '교육'이나 '수업'으로 혼동했을 수 있다. 지문에서 'instructions were explained'는 '지시 사항이 설명되었다'는 뜻이다. → 처방: 'instructions'가 '지시 사항'임을 확인하고, '수업'이나 '교육'과는 구분하라.\n④ 진단: ⓓ<u>presented</u>는 '발표하다'가 아니라 '제출하다'나 '제시하다'로 쓰였어야 하는데, 학생은 '발표'로만 오해했을 수 있다. 지문에서 'answers needed to be presented'는 '답안이 제출되어야 했다'는 뜻이다. → 처방: 'presented'가 '발표'가 아닌 '제출'이나 '제시'로 쓰일 수도 있음을 기억하고, 문맥에 따라 뜻을 확인하라.\n⑤ 진단: ⓔ<u>vocabulary</u>는 '어휘'로 쓰였어야 하는데, 학생은 '문법'이나 '문장'으로 혼동했을 가능성이 있다. 지문에서 'vocabulary'는 '단어'를 뜻하며, 'match some words'와 연결된다. → 처방: 'vocabulary'가 '어휘'나 '단어'임을 확인하고, '문법'이나 '문장'과는 구분하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

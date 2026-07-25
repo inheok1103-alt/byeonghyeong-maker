@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-25T06:32:00.073Z",
+ "updated": "2026-07-25T09:14:53.694Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-25T09:14:27.637Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'make/find/consider' 등 사역동사 뒤 목적격 보어는 'to be' 없이 바로 형용사/명사 형태가 온다. 또한, 'kind/type/sort' 뒤에는 단수명사가 오며, 'anyway'는 문장 끝에서 'anyways'보다 더 표준적이다.",
+   "rule": "사역동사(예: make, find, consider) 뒤에는 목적격 보어(형용사/명사)가 'to be' 없이 바로 오도록 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-25T06:31:34.144Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'~한 상태가 과거부터 현재까지 지속된다'는 의미는 현재완료 시제(have/has + 과거분사)로 표현해야 하며, 단순 과거 시제(started, tried 등)로 오용되는 패턴이 빈번하다.",
    "rule": "'~한 상태가 과거부터 현재까지 지속된다'는 의미는 'have/has + 과거분사'로 표현해야 하며, 단순 과거 시제(예: started, tried, is since ages)는 오류로 처리한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-19T16:16:31.689Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거형/현재형 동사 사용 오류와 관사/형용사 위치 오류가 빈번하다는 점을 확인했다. 특히 'kind of' 뒤에는 복수명사가 오지 않으며, 'able'은 조동사 'can'으로 대체되어야 한다.",
-   "rule": "과거형/현재형 동사 오류는 'be able to' → 'can'으로, 관사/형용사 위치 오류는 'the [형용사] ones' 형태로 수정하도록 출제 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",
