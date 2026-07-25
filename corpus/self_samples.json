@@ -1,6 +1,110 @@
 {
- "updated": "2026-07-25T22:15:57.867Z",
+ "updated": "2026-07-25T23:21:20.251Z",
  "samples": [
+  {
+   "ts": "2026-07-25T23:14:43.132Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "The ⓐ<u>Grammar</u> Geek 46 10. a) ⓑ<u>Everyone</u> ate one. b) Everyone was eating one. \b \b \b \b \b \b EXERCISE 5: EDITING Edit the following passage for past tense mistakes. You have to love this prof At McGill ⓒ<u>University</u>, four second-year students took Organic Chemistry. Everything went so well for them on the quizzes, mid­ terms and labs, and they each were ⓓ<u>having</u> an A so far in the course. They were so confident that on the ⓔ<u>weekend</u> before their final exams, they decide to go to Ottawa University and party with some friends there. They were having a great time, but after an intense night of partying, they sleep all day Sunday and didn’t made it back to McGill until early Monday morning. Rather than taking the final then, they decided to track down their professor after the final and give him an explanation as to why they were missing it. They explained to him that they had gone to Ottawa for the weekend with the intention to come back in time",
+    "choices": [
+     "grammar: A system of rules and principles for speaking and writing a language.",
+     "everyone: Every person.",
+     "university: Institution of higher education (typically accepting students from the age of ab",
+     "having: To possess, own.",
+     "weekend: A final examination; a test or examination given at the end of a term or class; "
+    ],
+    "answer": 5,
+    "explanation": "정답 ⓔ의 풀이는 'final'의 정의이다. 'weekend'의 올바른 풀이: The break in the working week, usually two days including the traditional holy o\n[오답 진단·처방]\n① 진단: 문맥상 '문법'이라는 의미를 갖는 'Grammar'를 '어법'이나 '규칙'으로 오독했을 가능성이 있다. → 처방: 문맥을 고려하여 단어의 의미를 파악해야 한다.\n② 진단: 모든 사람을 뜻하는 'everyone'을 특정한 사람이나 단체로 혼동했을 수 있다. → 처방: 단어의 정의와 문맥을 함께 고려해야 한다.\n③ 진단: 'university'를교육기관으로서의 의미를 정확히 이해하지 못했을 가능성이 있다. → 처방: 사전적 정의와 실제 사용 예시를 함께 공부해야 한다.\n④ 진단: 'having'을 소유나 지닌다는 의미로만 이해하여 문맥상 적절한 동사로 오독했을 수 있다. → 처방: 동사와 시제의 일관성을 확인해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-25T23:15:12.804Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "원고 편집에서 시제 일관성을 유지해야만 학생들의 시험 성적이 향상된다",
+     "원고 편집 시 시제 일관성은 특정 평가에서만 요구되는 제한적 조건이다",
+     "모든 언어의 원고에서 시제 일관성을 반드시 지켜야 한다",
+     "원고 편집 시 시제 일관성을 유지해야만 오해 없이 내용을 전달할 수 있다",
+     "원고 편집 시 시제 일관성을 유지해야 문장의 명확성과 정확성이 보장된다"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Editing should maintain consistent verb tense to ensure clarity and accuracy.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 시제 일관성이 학생들의 시험 성적 향상과 직접 연결된다고 오해했다. 하지만 지문은 시제 일관성이 원고의 명확성과 정확성에 영향을 미친다고만 설명한다. → 처방: 시제 일관성이 원고의 명확성과 정확성을 높인다는 점을 기억하고, 시험 성적과는 구분 지어 생각하기.\n② 진단: 시제 일관성을 특정 평가(예: 시험)에서만 요구되는 조건으로 오해했다. 지문은 원고 편집의 전반적 원칙으로 시제 일관성을 강조한다. → 처방: 시제 일관성이 모든 원고 편집에서 기본 원칙임을 인식하고, 평가 조건과는 무관하다는 점 기억하기.\n③ 진단: 모든 언어의 원고에서 시제 일관성이 '반드시' 지켜져야 한다고 과장했다. 지문은 영어 원고 편집에 한정된 원칙을 다룬다. → 처방: 지문의 맥락(영어 원고 편집)을 정확히 파악하고, 모든 언어에 적용된다고 일반화하지 않기.\n④ 진단: 시제 일관성이 오해 없이 내용을 전달하는 '필수 조건'이라고 오독했다. 지문은 명확성과 정확성의 '보장'을 강조하지, 오해 방지를 직접 언급하지 않는다. → 처방: 지문의 핵심(시제 일관성이 명확성과 정확성을 보장한다는 점)을 정확히 이해하고, 오해 방지라는 표현에 주의하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Editing should maintain consistent verb tense to ensure clarity and accuracy.]"
+   }
+  },
+  {
+   "ts": "2026-07-25T23:15:48.309Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 5번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Editing Errors Disrupt Written Clarity and Consistency",
+     "Written Clarity Requires Editing Errors to Be Present",
+     "Editing Errors Affect Quiz Scores in Organic Chemistry",
+     "All Academic Writing Must Be Free of Editing Errors",
+     "Editing Errors Sometimes Disrupt Written Clarity"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Editing errors disrupt clarity and consistency in written material.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Editing errors disrupt clarity and consistency in written material.]\n[오답 진단·처방]\n① 진단: 지문은 '에디팅 오류'가 '글의 명확성과 일관성'을 해친다고 설명하지 않지만, 학생은 '에디팅 오류가 명확성과 일관성을 해친다'는 일반적 사실만으로 이 선지를 선택했을 가능성이 있다. 지문은 구체적으로 '과거 시제 오류'에 초점을 맞추고 있으므로, 이 선지는 범위가 너무 넓다. → 처방: 지문에서 다루는 '에디팅 오류'의 구체적 유형(과거 시제 오류)을 확인하고, 제목도 그 범위에 맞게 좁혀서 고르기.\n② 진단: 학생은 '에디팅 오류가 있어야만 글의 명확성이 확보된다'는 역설적 의미를 오해했을 수 있다. 이 선지는 '에러가 있어야만 명확성이 생긴다'는 모순된 뜻을 담고 있지만, 학생은 문장의 구조만 보고 선택했을 가능성이 있다. → 처방: 제목의 의미를 정확히 이해하기 위해 '에디팅 오류'와 '명확성'의 관계를 다시 생각해 보고, 지문에서 오류가 명확성을 해친다는 사실에 주목하기.\n③ 진단: 학생은 '퀴즈 점수'라는 구체적 사례에만 주목하고, 지문 전체의 주제를 오해했을 수 있다. 지문은 '과거 시제 오류'를 수정하는 연습 문제로, '퀴즈 점수'는 전혀 언급되지 않는다. → 처방: 지문의 핵심 주제가 '에디팅 오류 수정'임을 확인하고, 제목도 그 주제에 맞게 고르기. 구체적 사례(퀴즈 점수)는 무시하기.\n④ 진단: 학생은 '모든 학문 글'이 '에디팅 오류 없이 완벽해야 한다'는 절대적 기준을 오해했을 수 있다. 지문은 '에러가 있을 때 clarity 가 떨어진다'는 상대적 설명을 담고 있지만, 학생은 문장의 강도를 과장해 해석했을 가능성이 있다. → 처방: 제목의 'must be free of' 같은 절대적 표현을 주의하고, 지문에서 오류가 '때로는' clarity 를 해친다는 사실을 확인한 뒤 선택하기."
+   }
+  },
   {
    "ts": "2026-07-25T22:12:20.676Z",
    "type": "밑줄함의",
@@ -277,93 +381,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Mathematics and the Imagination'의 출판사가 'Simon and Schuster'로 정확히 나와 있는데, '사이먼 앤 슈스터'가 아닌 다른 이름으로 오해했을 가능성이 크다. → 처방: 출판사 이름은 원문 그대로 정확히 읽고, 출판사 이름의 표기 오류를 주의해야 한다.\n② 진단: 지문에서 'Signs, Language and Behavior'가 'Prentice-Hall'에서 출판되었다고 명시되어 있지만, '프렌티스홀'이라는 표기 오류로 혼동했을 수 있다. → 처방: 출판사 이름을 철자까지 정확히 확인하고, 약어나 표기 오류에 주의해야 한다.\n③ 진단: 지문에서 'Autobiography'의 출판사가 'Lane'으로 명시되어 있지만, '자서전'이라는 뜻의 'Autobiography'를 '나의 인생'으로 번역하며 출판사 정보까지 혼동했을 수 있다. → 처방: 제목과 출판사를 분리해서 읽고, 제목의 번역 오류를 줄이기 위해 원문 제목을 그대로 확인해야 한다.\n⑤ 진단: 지문에서 'The Handbook of Freshwater Fishing'이 'Lippincott'에서 출판되었다고 나오지만, '리 L. 월프'라는 이름의 표기 오류로 출판사까지 잘못 연결했을 수 있다. → 처방: 저자 이름과 출판사를 따로 확인하고, 저자 이름의 오독이 출판사 선택에 영향을 주지 않도록 주의해야 한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-25T12:10:33.896Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① In fact, experienced writers often write fragments deliberately, as I just did.\n② At least in theory.\n③ Almost as an afterthought, often ironically.\n④ • They are intended to reflect a mind at work, as if the writer were speaking to you, finishing a sentence, then immediately expanding and qualifying it.\n⑤ When intended, those fragments typically have two characteristics: • They are relatively short, fewer than ten or so words.\n⑥ Traditionally, a punctuated sentence that fails to include an independent main clause is wrong.\n⑦ Which is why you must understand how to write a long but clearly constructed sentence that readers can follow easily.\n⑧ In this passage, Mark Twain uses sentence fragments (along with sentences beginning with conjunctions) to capture the element of chance in the circumstances that made him an author (fragments are boldfaced):\n⑨ Most fragments occur when you write a sentence that goes on so long and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence.",
-    "choices": [
-     "⑨-⑦-⑥-②-⑤-①-④-③-⑧",
-     "⑨-⑦-⑥-②-①-④-⑤-③-⑧",
-     "⑨-③-②-④-①-⑦-⑥-⑧-⑤",
-     "⑨-②-③-⑥-④-①-⑤-⑧-⑦",
-     "⑨-⑦-⑥-②-①-⑤-④-③-⑧"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ⑨-⑦-⑥-②-①-⑤-④-③-⑧. 흐름: ⑨ → ⑦ → ⑥ → ② → ① → ⑤ → ④ → ③ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 학생은 ④와 ⑤의 순서를 잘못 이해하여 글의 흐름에 맞지 않게 배치했으며, ②와 ③의 위치도 글의 논리적인 흐름과 맞지 않다. → 처방: 글의 흐름을 파악하기 위해 문장 간의 논리적인 연결을 다시 분석해야 한다.\n② 진단: 학생은 ②와 ①의 위치를 잘못 이해하여 글의 논리적인 흐름을 깨트렸으며, ④와 ⑤의 순서도 글의 맥락과 맞지 않는다. → 처방: 각 문장의 역할과 기능을 다시 파악하여 글의 전체적인 흐름을 이해해야 한다.\n③ 진단: 학생은 ⑨와 ③의 연결고리를 잘못 이해하여 글의 시작 부분이 불명확하며, ②와 ④의 위치도 글의 논리적인 진행과 맞지 않는다. → 처방: 글의 시작 부분을 다시 분석하여 전체적인 흐름을 명확히 이해해야 한다.\n④ 진단: 학생은 ②와 ③의 위치를 잘못 이해하여 글의 논리적인 진행이 깨지며, ④와 ①의 순서도 글의 맥락과 맞지 않는다. → 처방: 각 문장의 역할과 기능을 다시 분석하여 글의 전체적인 논리적인 흐름을 이해해야 한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-25T12:10:57.418Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "Most fragments occur when you write a sentence that ⓐ<u>goes on so long</u> and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence. Which is why you must understand how to write a long but clearly constructed sentence ⓑ<u>that readers could follow easily</u>. Traditionally, a punctuated sentence that fails to include an independent main clause is wrong. At least in theory. In fact, experienced writers often write fragments deliberately, ⓒ<u>as I just did</u>. When intended, those fragments typically have two characteristics: • They are relatively short, fewer than ten or so words. • They are intended to reflect a mind at work, ⓓ<u>as if the writer were speaking</u> to you, finishing a sentence, then immediately expanding and qualifying it. Almost as an afterthought, often ironically. In this passage, Mark Twain uses sentence fragments (along with sentences beginning with conjunctions) ⓔ<u>to capture the element</u> of chance in the circumstances that made him an author (fragments are boldfaced):",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [관계사] ⓑ: 'that readers could follow easily' → 'that readers can follow easily'\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-25T09:14:21.113Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① But the same is not true for the inflectional assigner of nominative Case.\n② Furthermore, this case is assigned by a functional element, something that is not involved in \u0002-role assignment.\n③ One is to assume that nominative and accusative Case are similar and the other assumes that they are fundamentally different.\n④ From the first perspective the challenge is to come up with restrictions which define the conditions under which Case can be assigned generally.\n⑤ For accusative Case the Case assigner necessarily \u0002marks its subject in order to be able to assign accusative Case.\n⑥ There are two basic positions linguists take with respect to these observations.\n⑦ For example, there are three positions to which we have seen a Case assigned: the specifier of the inflection; the specifier of the complement, and the complement position itself: (65)",
-    "choices": [
-     "②-⑤-①-⑥-③-⑦-④",
-     "②-⑤-⑥-①-③-④-⑦",
-     "②-⑤-①-⑥-③-④-⑦",
-     "②-⑦-⑤-①-⑥-④-③",
-     "②-⑤-①-③-⑥-④-⑦"
-    ],
-    "answer": 3,
-    "explanation": "정답 배열은 ②-⑤-①-⑥-③-④-⑦. 흐름: ② → ⑤ → ①(But) → ⑥ → ③ → ④ → ⑦(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘⑥(두 가지 기본 입장)’과 ‘③(두 입장 중 하나)’의 순서가 잘못됐고, ‘④(제한 조건)’가 ‘⑦(예시)’보다 먼저 나와야 하는데도 그 반대여서 글의 논리 흐름이 깨졌다. → 처방: ‘두 입장’을 먼저 제시한 뒤(⑥→③), 그 다음에 ‘제한 조건’을 설명하는(④) 순서가 자연스럽다는 점을 기억하라. 예시는 마지막에 배치된다.\n② 진단: ‘③(두 입장)’과 ‘④(제한 조건)’의 순서가 뒤바뀌었고, ‘⑦(예시)’가 ‘④’보다 먼저 나와야 하는데도 ‘④’가 뒤에 나와서 흐름이 어색해졌다. → 처방: ‘두 입장’을 먼저 말하고(③), 그 다음에 ‘제한 조건’을 설명하는(④) 순서를 지켜라. 예시는 맨 마지막에 둔다.\n④ 진단: ‘⑦(예시)’가 ‘⑤(주격·목격격 비교)’보다 먼저 나와서 ‘예시’가 ‘주장’보다 먼저 제시되는 오류가 났다. 또한 ‘③(두 입장)’이 맨 뒤로 가야 하는데도 중간에 배치됐다. → 처방: ‘예시’는 ‘주장’이 나온 뒤에야 의미를 가지므로, ‘예시’를 맨 뒤로 밀어내고 ‘두 입장’을 먼저 설명한 뒤(③) ‘제한 조건’을 설명하라(④).\n⑤ 진단: ‘③(두 입장)’이 ‘⑥(두 기본 입장)’보다 먼저 나와서 ‘두 입장’을 소개하는 문장이 흐트러졌고, ‘④(제한 조건)’가 ‘⑦(예시)’보다 먼저 나와서 논리 전개가 이상해졌다. → 처방: ‘두 입장’을 먼저 소개하고(⑥→③), 그 다음에 ‘제한 조건’을 설명한 뒤(④), 마지막으로 ‘예시’를 배치하라(⑦).\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
