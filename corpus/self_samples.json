@@ -1,6 +1,113 @@
 {
- "updated": "2026-07-25T15:30:54.963Z",
+ "updated": "2026-07-25T17:19:08.781Z",
  "samples": [
+  {
+   "ts": "2026-07-25T17:17:27.797Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: s)\n[영영풀이] The decision or judgement of a jury or court; a verdict.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] sentences (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-25T17:17:57.450Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "수동문의 주어와 능동문의 보어는 표현 제한이 동일하여 같은 의미역을 나타낸다",
+     "수동문의 주어는 능동문의 보어와 부분적으로 의미역이 일치할 때가 있다",
+     "수동문과 능동문의 주어는 언제나 동일한 의미역을 반드시 지닌다",
+     "수동문의 주어와 능동문의 보어는 의미역이 같을 수도 있지만, 반드시 그런 것은 아니다",
+     "수동문의 주어와 능동문의 보어는 표현 방식만 다를 뿐, 의미역은 동일하게 적용된다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Passive subjects and active verb complements share the same thematic function, as evidenced by identical pragmatic restrictions on their expressions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘부분적으로’라는 표현이 지문의 ‘동일한(pragmatic restrictions)’이라는 주장과 충돌한다는 점을 놓쳤다. ‘부분적’이라는 말은 지문에서 다루는 전제와 맞지 않는다. → 처방: ‘부분적’이라는 단어가 지문에서 언급된 ‘동일’이라는 의미를 약화시킬 수 있음을 기억하고, 지문의 ‘same’라는 표현에 집중하라.\n③ 진단: ‘언제나 반드시’라는 절대적 표현이 지문의 ‘same pragmatic restrictions’라는 제한적 주장과 모순됨을 간파하지 못했다. 지문은 ‘항상’이나 ‘반드시’를 쓰지 않는다. → 처방: ‘언제나 반드시’라는 표현이 지문에서 ‘same’이라는 한정된 범위를 넘어서는지 확인하라. 제한적 조건을 먼저 떠올려라.\n④ 진단: ‘같을 수도 있지만, 반드시 그런 것은 아니다’라는 유보적 표현이 지문의 ‘same’이라는 단정적 주장을 오해하게 했다. 지문은 ‘항상’ 동일하다고 주장하지 않는다. → 처방: ‘same’이라는 단어가 지문에서 ‘항상’ 동일하다는 뜻임을 기억하고, 유보적 표현을 배제하라.\n⑤ 진단: ‘표현 방식만 다를 뿐’이라는 말은 지문의 ‘same pragmatic restrictions’라는 핵심 주장과 어긋난다. 지문은 표현 방식뿐 아니라 의미역까지 동일하다고 강조한다. → 처방: ‘표현 방식’이라는 말이 ‘의미역’과 분리되어 있지 않음을 확인하고, 지문의 ‘pragmatic restrictions’가 의미역과 직접 연결됨을 떠올리라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Passive subjects and active verb complements share the same thematic function, as evidenced by identical pragmatic restrictions on their expressions.]"
+   }
+  },
+  {
+   "ts": "2026-07-25T17:18:22.754Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 2/3가 3번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Recall from our earlier discussion of sentences like (35) that McCloskey argues that stranded quantifiers modifying wh-expressions are left behind via movement of the wh-expression without the quantifier. This being so, sentences such as (63) provide evidence that what all originates as the complement of the passive participle said (with what subsequently being passivised on its own, stranding all) – and more generally, that passive subjects are initially merged as thematic objects. A claim which is implicit in the hypothesis that passive subjects originate as thematic objects is that the subjects of active verbs and the complements of passive verbs have the same thematic function. Evidence that this is indeed the case comes from the traditional observation that the two are subject to the same pragmatic restrictions on the choice of expression which can occupy the relevant position, as we see from sentences such as the following (where ?, ?! and ! mark increasing degrees of anomaly):\n\n─────────\n[요약문] McCloskey’s analysis demonstrates that stranded quantifiers in wh-expressions result from (A) movement of the wh-expression, and this further supports the claim that passive subjects are initially merged as (B) thematic objects.",
+    "choices": [
+     "(A) passive movement … (B) surface subjects",
+     "(A) wh-movement … (B) internal arguments",
+     "(A) wh-in-situ … (B) external arguments",
+     "(A) quantifier raising … (B) thematic roles",
+     "(A) topicalization … (B) agent phrases"
+    ],
+    "answer": 2,
+    "explanation": "(A) wh-movement / (B) internal arguments 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘passive movement’를 ‘wh-movement’와 혼동했으며, ‘surface subjects’를 ‘internal arguments’로 오해했음. 지문에서 stranded quantifier 가 wh-expressions 의 movement 로 남겨진다는 사실은 ‘wh-movement’의 증거로 제시됨. → 처방: ‘wh-movement’이 stranded quantifier 를 남기며, passive participle 의 complement 가 passive 화되면서 internal arguments 가 surface subjects 로 나타난다는 점을 정확히 파악할 것.\n③ 진단: ‘wh-in-situ’를 ‘wh-movement’와 반대로 오해했으며, ‘external arguments’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 설명된다는 점을 강조함. → 처방: ‘wh-in-situ’(제자리 wh-표현)는 stranded quantifier 와 무관하다는 점을 기억하고, ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 사실을 명확히 구분할 것.\n④ 진단: ‘quantifier raising’을 stranded quantifier 의 movement 와 동일시했으며, ‘thematic roles’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 남겨지며 passive participle 의 complement 가 internal arguments 로 나타난다는 점을 설명함. → 처방: ‘quantifier raising’이 stranded quantifier 의 movement 와는 다른 개념임을 인식하고, ‘thematic roles’가 아닌 ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 점을 정확히 파악할 것.\n⑤ 진단: ‘topicalization’을 stranded quantifier 의 movement 와 동일시했으며, ‘agent phrases’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 남겨지며 passive participle 의 complement 가 internal arguments 로 나타난다는 점을 강조함. → 처방: ‘topicalization’이 stranded quantifier 의 movement 와는 다른 현상임을 인식하고, ‘agent phrases’가 아닌 ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 점을 정확히 구분할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-25T17:18:37.410Z",
+   "type": "본문어변형빈칸",
+   "level": "중",
+   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
+    "passage": "Recall from our earlier discussion of sentences like (35) that McCloskey argues that stranded quantifiers modifying wh-expressions are left behind via movement of the wh-expression without the quantifier. This being so, sentences such as (63) provide evidence that what all originates as the complement of the passive participle said (with what subsequently (be) passivised on its own, stranding all) – and more generally, that passive subjects are initially merged as thematic objects. A claim which is implicit in the hypothesis that passive subjects originate as thematic objects is that the subjects of active verbs and the complements of passive verbs have the same thematic function. Evidence that this is indeed the case comes from the traditional observation that the two are subject to the same pragmatic restrictions on the choice of expression which can occupy the relevant position, as we see from sentences such as the following (where ?, ?! and ! mark increasing degrees of anomaly):",
+    "choices": [],
+    "answer": null,
+    "explanation": "1) be→being [준동사화(분사구문) — 'with what subsequently being passivised'는 'with' 다음 분사구문으로 'be'가 동명사 'being'으로 전환되어야 함.] · 2) passivised→passivized [표준 철자법 — 'passivise'는 영국식 철자, 'passivize'는 미국식 철자로 통일해야 함(지문 내 일관성).]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-25T15:30:10.891Z",
    "type": "안내문일치",
@@ -244,136 +351,6 @@
     ],
     "answer": 3,
     "explanation": "정답 조합: (A) so very - (B) so completely - (C) very very. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘so very touchy’는 ‘so much touchy’보다 ‘very very touchy’와 비슷하다고 착각해 ‘so very’를 선택했는데, ‘very’는 ‘so’와 함께 쓸 수 없지만 ‘so much’는 ‘touchy’(형용사)와 어울릴 수 있다고 잘못 생각했음. → 처방: ‘so’는 ‘very’와 달리 ‘much’와 함께 쓸 수 있으니 ‘so much’를 써야 함을 기억할 것.\n② 진단: ‘so complete stupid’을 ‘so completely stupid’로 써야 하는데, ‘complete’는 형용사라서 ‘completely’(부사)로 바꿔야 한다는 사실을 몰라 ‘so complete’를 선택했음. → 처방: ‘completely’는 ‘stupid’을 수식하는 부사라는 점을 알고, ‘so completely stupid’로 써야 함을 기억할 것.\n④ 진단: ‘very very odd’를 ‘much very odd’로 썼는데, ‘much’는 ‘very’와 달리 ‘odd’를 수식할 수 없고, ‘very very’는 강조로 허용된다는 사실을 몰랐음. → 처방: ‘very’는 ‘very’와 함께 쓸 수 있음을 기억하고, ‘very very odd’를 써야 함을 기억할 것.\n⑤ 진단: ‘so very touchy’를 ‘so very’로 썼고, ‘so complete stupid’을 ‘so complete’로 썼으며, ‘very very odd’를 ‘very very’로 썼지만, ‘so very touchy’는 ‘so much touchy’가 옳고, ‘so complete stupid’은 ‘so completely stupid’가 옳다는 사실을 혼동했음. → 처방: ‘so much’는 ‘touchy’를, ‘so completely’는 ‘stupid’를, ‘very very’는 ‘odd’를 수식한다는 점을 정확히 기억하고 쓸 것."
-   }
-  },
-  {
-   "ts": "2026-07-25T03:40:57.187Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Quick Quiz #54 Match each word in the first column with its definition in the second column. Check your answers here. 1. judicious a. irreversible 2. juxtapose b. lightness 3. kinetic c. using few words 4. labyrinth d. maze 5. laconic e. place side by side 6. lament f. present but not visible 7. lampoon g. bequest 8. languish h. active 9. latent i. become weak 10. laud j. satirize 11. legacy k. mourn 12. lethargy l. praise 13. levity m. exercising sound judgment LIBEL (LYE bul) n a written or published falsehood that injures the reputation of, or defames, someone • The executive said that the newspaper had committed libel when it called him a <u>stinking, no-good, corrupt, incompetent, overpaid, lying, worthless moron</u>. He claimed that the newspaper had libeled him, and that its description of him had been libelous. At the trial, the jury disagreed, saying that the newspaper’s description of the executive had been substantially accurate. Don’t confuse this word with liable, which has an entirely different meaning. Slander is just like libel except that it is spoken instead of written.",
-    "choices": [
-     "The phrase lists various negative traits to describe someone who is occasionally frustrating.",
-     "The description suggests that the person’s incompetence and corruption are the direct result of being overpaid and lying too often.",
-     "The phrase conveys an exaggerated, hyperbolic insult to emphasize the extreme negativity and contempt directed at the person described.",
-     "The words highlight a person who is somewhat flawed but not as severely as the exaggerated terms imply.",
-     "The phrase lists a series of negative traits to describe someone who occasionally makes mistakes but is not fundamentally worthless."
-    ],
-    "answer": 3,
-    "explanation": "밑줄 친 부분은 'The phrase conveys an exaggerated, hyperbolic insult to emphasize the extreme negativity and contempt directed at the person described.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘occasional frustration’(때때로 짜증난다는 뜻)라는 말이 지문에 나온 ‘libel’이란 말이 주는 ‘극단적 모욕’의 의미를 오해한 것 같다. 지문에서 ‘libel’이란 ‘명예를 훼손하는 거짓말’이며, ‘극단적 비난’을 담고 있음을 놓쳤다. → 처방: ‘libel’이란 ‘명예 훼손’을 뜻한다는 점을 먼저 떠올리고, 밑줄 친 부분이 ‘극단적 모욕’을 담고 있는지 확인하기.\n② 진단: ‘과도한 급여와 거짓말이 원인이 되어 비리·무능이 생겼다’는 선지가 ‘원인과 결과’를 오해한 것 같다. 지문은 단순히 ‘비난의 정도’를 보여줄 뿐, 원인과 결과를 설명하지 않는다. → 처방: ‘~의 결과’라는 인과관계를 나타내는 말이 있는지 확인하고, 그런 말이 없으면 오답임을 의심하기.\n④ 진단: ‘과장된 표현이 아니라 실제보다 덜 심각하다는 뜻’이라는 선지가 ‘과장법’을 오해한 것 같다. 지문에서 ‘stinking, no-good, corrupt…’는 ‘극단적 비난’을 위해 과장된 표현임을 알 수 있다. → 처방: ‘극단적 비난’을 나타내는 형용사가 연속으로 나오면 ‘과장법’이 쓰였는지 의심하고, 그 의도를 파악하기.\n⑤ 진단: ‘때때로 실수하는 사람이지만 근본적으로 무가치하지 않다’는 선지가 ‘libel’의 ‘명예 훼손’ 의미를 오해한 것 같다. ‘libel’이란 ‘거짓말로 명예를 훼손하는 것’이므로, ‘근본적 무가치’라는 말은 이 단어의 의미를 벗어난다. → 처방: ‘libel’이란 ‘명예 훼손’을 뜻한다는 정의를 떠올리고, 밑줄 친 부분이 ‘명예 훼손’을 담고 있는지 확인하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T23:18:07.650Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "글의 흐름을 끊어 독자의 혼란을 최소화하려고",
-     "매우 짧은 문장을 사용해 독자의 이해를 돕려고",
-     "단문과 장문을 조화롭게 사용해 모든 독자에게 효과적으로 전달하려고",
-     "글쓴이가 스스로 문장을 통제하지 못해 문장을 짧게 끊으려고",
-     "자연스러운 대화처럼 글을 써서 독자의 흥미를 유도하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'to intentionally use fragments to mimic natural speech and convey spontaneity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘글의 흐름을 끊어 독자의 혼란을 최소화하려고’라고 오해했는데, 지문은 문장 조각(fragment)을 의도적으로 써서 대화체 같은 느낌을 주려는 목적임을 간과했음. 지문에서 ‘글쓴이가 스스로 문장을 통제하지 못해 문장을 짧게 끊으려는’ 것과는 반대임. → 처방: 문장 조각(fragment)이 의도된 것인지, 아니면 실수인지 구별한 뒤, 의도된 경우 그 효과(대화체, 흥미 유도)를 확인하도록 연습하기.\n② 진단: ‘매우 짧은 문장을 사용해 독자의 이해를 돕려고’라고 보았는데, 지문은 문장 조각(fragment)이 짧은 이유와 효과를 설명하면서도, 그것이 ‘독자의 이해’를 위한 것이 아니라 ‘글쓴이의 말하기 방식’을 흉내내려는 의도임을 놓쳤음. → 처방: 문장 조각(fragment)의 길이가 ‘10단어 이하’인 이유와 효과를 정확히 파악하고, 그것이 ‘독자의 이해’를 위한 것인지 ‘표현의 효과’를 위한 것인지 구분하기.\n③ 진단: ‘단문과 장문을 조화롭게 사용해 모든 독자에게 효과적으로 전달하려고’라고 해석했는데, 지문은 문장 조각(fragment)을 ‘의도적’으로 써서 ‘글쓴이의 말하기 방식’을 나타내려는 목적임을 간과했음. ‘모든 독자’를 위한 전달이 아니라 ‘특정한 효과’를 위한 표현임을 확인하지 못함. → 처방: 문장 조각(fragment)이 ‘의도적’으로 쓰였는지, ‘실수’인지 확인한 뒤, 그 효과가 ‘모든 독자’를 위한 것인지 ‘특정 효과’를 위한 것인지 분석하는 연습하기.\n④ 진단: ‘글쓴이가 스스로 문장을 통제하지 못해 문장을 짧게 끊으려고’라고 보았는데, 지문은 문장 조각(fragment)을 ‘의도적’으로 써서 ‘글쓴이의 말하기 방식’을 나타내려는 목적임을 오해했음. ‘통제하지 못해’가 아니라 ‘의도적으로’ 쓴 것임을 확인하지 못함. → 처방: 문장 조각(fragment)이 ‘의도적’인지 ‘실수’인지 먼저 확인한 뒤, ‘의도적’이라면 그 효과(대화체, 흥미 유도)를, ‘실수’라면 수정 방법을 생각하도록 연습하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to intentionally use fragments to mimic natural speech and convey spontaneity.]"
-   }
-  },
-  {
-   "ts": "2026-07-24T23:18:33.193Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① At least in theory.\n② Which is why you must understand how to write a long but clearly constructed sentence that readers can follow easily.\n③ When intended, those fragments typically have two characteristics: • They are relatively short, fewer than ten or so words.\n④ Traditionally, a punctuated sentence that fails to include an independent main clause is wrong.\n⑤ Almost as an afterthought, often ironically.\n⑥ In fact, experienced writers often write fragments deliberately, as I just did.\n⑦ In this passage, Mark Twain uses sentence fragments (along with sentences beginning with conjunctions) to capture the element of chance in the circumstances that made him an author (fragments are boldfaced):\n⑧ Most fragments occur when you write a sentence that goes on so long and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence.\n⑨ • They are intended to reflect a mind at work, as if the writer were speaking to you, finishing a sentence, then immediately expanding and qualifying it.",
-    "choices": [
-     "⑧-④-②-①-⑥-③-⑨-⑤-⑦",
-     "⑧-②-④-①-⑥-⑨-③-⑤-⑦",
-     "⑧-②-④-①-③-⑥-⑨-⑤-⑦",
-     "⑧-②-④-①-⑥-③-⑨-⑤-⑦",
-     "②-⑧-④-①-⑥-③-⑨-⑤-⑦"
-    ],
-    "answer": 4,
-    "explanation": "정답 배열은 ⑧-②-④-①-⑥-③-⑨-⑤-⑦. 흐름: ⑧ → ② → ④ → ① → ⑥ → ③ → ⑨ → ⑤ → ⑦ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ① '⑧'과 '④'의 순서가 잘못됐습니다. '⑧'은 문장 조각의 원인을 설명하는 Introductory sentence 인데 '④'는 전통적 규칙을 언급하는 뒷부분의 문장입니다. ② '①'과 '⑥'의 순서도 뒤바뀌었습니다. '①'은 '이론상'이라는 한정적 표현으로 '⑥'의 '사실'이라는 보충 설명이 먼저 와야 흐름이 자연스럽습니다. → 처방: 글의 흐름을 따라가며 '원인 → 규칙 → 한정 → 사실 → 특징' 순서로 문장을 배치해 보세요. 예를 들어 '⑧(원인) → ②(규칙) → ④(전통적 관점) → ①(한정) → ⑥(사실)'처럼 연결해보면 도움이 됩니다.\n② 진단: ① '②'과 '④'의 순서가 잘못됐습니다. '②'는 문장 조각을 설명하는 문장인데 '④'는 전통적 규칙을 언급하는 뒷부분의 문장입니다. ② '③'과 '⑨'의 순서도 뒤바뀌었습니다. '③'은 문장 조각의 특징을 나열하는 문장인데 '⑨'은 그 특징을 구체적으로 설명하는 뒷부분의 문장입니다. → 처방: 문장 조각의 '정의 → 특징 → 예시' 순서를 기억하세요. '정의(②) → 특징(③) → 예시(⑨)'처럼 흐름을 따라가면 됩니다.\n③ 진단: ① '③'과 '⑥'의 순서가 잘못됐습니다. '③'은 문장 조각의 특징을 나열하는 문장인데 '⑥'은 문장 조각을 의도적으로 쓰는 예를 든 문장입니다. ② '⑤'의 위치도 잘못됐습니다. '⑤'는 '거의 뒤늦은 생각으로'라는 부가적인 표현으로 '⑦' 바로 앞에 오는 것이 자연스럽습니다. → 처방: 문장의 흐름을 '원인 → 규칙 → 한정 → 사실 → 특징 → 예시 → 마무리' 순서로 생각해 보세요. '⑧ → ② → ④ → ① → ⑥ → ③ → ⑨ → ⑤ → ⑦'이 가장 자연스러운 연결입니다.\n⑤ 진단: ① '②'과 '⑧'의 순서가 잘못됐습니다. '②'는 문장 조각을 설명하는 문장인데 '⑧'은 문장 조각이 생기는 원인을 설명하는 문장입니다. ② '①'과 '⑥'의 순서도 뒤바뀌었습니다. '①'은 '이론상'이라는 한정적 표현으로 '⑥'의 '사실'이라는 보충 설명이 먼저 와야 흐름이 자연스럽습니다. → 처방: 글의 주제를 '문장 조각이란 무엇인가?'로 보고, '정의 → 원인 → 특징 → 예시' 순서로 문장을 배치해 보세요. '②(정의) → ⑧(원인) → ④(규칙) → ①(한정) → ⑥(사실)'처럼 연결하면 흐름이 clearer 해집니다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T23:27:24.668Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Most fragments occur when you write a sentence that goes on so long and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence. Which is why you must understand how to write a long but clearly constructed sentence that readers can follow easily. Traditionally, a punctuated sentence that fails to include an independent main clause is wrong. At least in theory. In fact, experienced writers often write fragments deliberately, as I just did. When intended, those fragments ____ : • They are relatively short, fewer than ten or so words. • They are intended to reflect a mind at work, as if the writer were speaking to you, finishing a sentence, then immediately expanding and qualifying it. Almost as an afterthought, often ironically.",
-    "choices": [
-     "reflect universal truths",
-     "serve specific purposes",
-     "have no clear function",
-     "follow random patterns",
-     "ignore linguistic rules"
-    ],
-    "answer": 2,
-    "explanation": "빈칸에는 'serve specific purposes'가 들어가 글의 논지를 완성한다 (본문 'typically have two characteristics'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘보편적 진리’를 뜻하는 ‘universal truths’를 빈칸에 넣으면 문맥에 맞지 않는다. 지문은 ‘의도된’ 문장 조각이 ‘특정한 목적’을 위해 쓰인다고 설명한다. → 처방: 빈칸 앞뒤 문장을 다시 읽고, ‘목적’이라는 단어가 나오는지 확인해 보세요.\n③ 진단: ‘명확한 기능이 없다’는 ‘no clear function’을 선택했는데, 지문은 의도된 문장 조각이 ‘특정한 목적’을 가진다고 분명히 말한다. → 처방: ‘기능’이라는 단어가 나오면 그 뜻을 떠올리며 문장을 다시 읽어 보세요.\n④ 진단: ‘무작위 패턴’을 뜻하는 ‘random patterns’을 고르면 문맥과 맞지 않는다. 지문은 의도된 문장 조각이 ‘특정한 목적’을 위해 쓰인다고 설명한다. → 처방: ‘패턴’이라는 단어가 나오면 그 뜻을 떠올리며 문장을 다시 읽어 보세요.\n⑤ 진단: ‘언어 규칙을 무시한다’는 ‘ignore linguistic rules’를 선택했는데, 지문은 의도된 문장 조각이 ‘특정한 목적’을 위해 쓰인다고 말한다. 규칙을 무시하는 것과는 거리가 멀다. → 처방: ‘규칙’이라는 단어가 나오면 그 뜻을 떠올리며 문장을 다시 읽어 보세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
