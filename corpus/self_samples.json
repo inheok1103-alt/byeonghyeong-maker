@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-25T21:11:42.690Z",
+ "updated": "2026-07-25T22:15:57.867Z",
  "samples": [
+  {
+   "ts": "2026-07-25T22:12:20.676Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Quick Quiz #54 Match each word in the first column with its definition in the second column. Check your answers here. 1. judicious a. irreversible 2. juxtapose b. lightness 3. kinetic c. using few words 4. labyrinth d. maze 5. laconic e. place side by side 6. lament f. present but not visible 7. lampoon g. bequest 8. languish h. active 9. latent i. become weak 10. laud j. satirize 11. legacy k. mourn 12. lethargy l. praise 13. levity m. exercising sound judgment LIBEL (LYE bul) n a written or published falsehood that injures the reputation of, or defames, someone • The executive said that the newspaper had committed libel when it called him a <u>stinking, no-good, corrupt, incompetent, overpaid, lying, worthless moron</u>. He claimed that the newspaper had libeled him, and that its description of him had been libelous. At the trial, the jury disagreed, saying that the newspaper’s description of the executive had been substantially accurate. Don’t confuse this word with liable, which has an entirely different meaning. Slander is just like libel except that it is spoken instead of written.",
+    "choices": [
+     "The phrase literally describes the executive as having those negative traits, confirming the truth of the accusations.",
+     "The executive's actual incompetence led the public to unjustly accuse him of being corrupt and overpaid.",
+     "The phrase sarcastically exaggerates the executive's alleged flaws to highlight the severity of the false accusations made against him.",
+     "The phrase uses literal insults to describe the executive's actual poor performance and corruption.",
+     "The accusations against the executive are only occasionally exaggerated, not entirely false."
+    ],
+    "answer": 3,
+    "explanation": "밑줄 친 부분은 'The phrase sarcastically exaggerates the executive's alleged flaws to highlight the severity of the false accusations made against him.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'libel'은 '허위 사실로 명예를 훼손하는 것'을 뜻하며, 'substantially accurate(대체로 사실)'라는 법정 판결이 나온다. 이 선지는 '문구가 사실임을 확인한다'고 오해하여 지문의 핵심 의미를 무시했다. → 처방: 지문에서 'libel'의 정의와 법정 판결을 꼼꼼히 읽고, '허위 사실'과 '명예 훼손'의 의미를 정확히 짚어보기.\n② 진단: 이 선지는 '실제 무능함'과 '공공의 비난'을 연결 지어 오해했다. 지문은 '허위 사실로 인한 명예 훼손'을 다루며, '실제 무능함'은 언급되지 않는다. → 처방: 지문의 'libel' 정의와 예시(허위 사실, 명예 훼손)를 다시 읽고, '사실 여부'와 '공공의 비난'을 분리해서 생각하기.\n④ 진단: 이 선지는 '문구가 실제 열등함을 묘사한다'고 오해하여 지문의 '허위 사실'과 '명예 훼손'을 혼동했다. 지문은 '허위 사실'을 기반으로 한 공격임을 강조한다. → 처방: 지문에서 'libel'의 정의와 예시(허위 사실, 법정 판결)를 다시 확인하고, '사실 여부'를 기준으로 선지를 걸러내기.\n⑤ 진단: 이 선지는 '부분적으로 과장됐다'고 오해하여 지문의 '대체로 사실(libel)'이라는 판결을 무시했다. 지문은 '허위 사실'이 아닌 '대체로 사실'임을 강조한다. → 처방: 지문의 'substantially accurate'라는 판결을 정확히 이해하고, '허위 사실'과 '부분적 과장'을 구분하는 연습하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-25T21:10:43.625Z",
    "type": "목적",
@@ -329,25 +364,6 @@
     ],
     "answer": 3,
     "explanation": "정답 배열은 ②-⑤-①-⑥-③-④-⑦. 흐름: ② → ⑤ → ①(But) → ⑥ → ③ → ④ → ⑦(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘⑥(두 가지 기본 입장)’과 ‘③(두 입장 중 하나)’의 순서가 잘못됐고, ‘④(제한 조건)’가 ‘⑦(예시)’보다 먼저 나와야 하는데도 그 반대여서 글의 논리 흐름이 깨졌다. → 처방: ‘두 입장’을 먼저 제시한 뒤(⑥→③), 그 다음에 ‘제한 조건’을 설명하는(④) 순서가 자연스럽다는 점을 기억하라. 예시는 마지막에 배치된다.\n② 진단: ‘③(두 입장)’과 ‘④(제한 조건)’의 순서가 뒤바뀌었고, ‘⑦(예시)’가 ‘④’보다 먼저 나와야 하는데도 ‘④’가 뒤에 나와서 흐름이 어색해졌다. → 처방: ‘두 입장’을 먼저 말하고(③), 그 다음에 ‘제한 조건’을 설명하는(④) 순서를 지켜라. 예시는 맨 마지막에 둔다.\n④ 진단: ‘⑦(예시)’가 ‘⑤(주격·목격격 비교)’보다 먼저 나와서 ‘예시’가 ‘주장’보다 먼저 제시되는 오류가 났다. 또한 ‘③(두 입장)’이 맨 뒤로 가야 하는데도 중간에 배치됐다. → 처방: ‘예시’는 ‘주장’이 나온 뒤에야 의미를 가지므로, ‘예시’를 맨 뒤로 밀어내고 ‘두 입장’을 먼저 설명한 뒤(③) ‘제한 조건’을 설명하라(④).\n⑤ 진단: ‘③(두 입장)’이 ‘⑥(두 기본 입장)’보다 먼저 나와서 ‘두 입장’을 소개하는 문장이 흐트러졌고, ‘④(제한 조건)’가 ‘⑦(예시)’보다 먼저 나와서 논리 전개가 이상해졌다. → 처방: ‘두 입장’을 먼저 소개하고(⑥→③), 그 다음에 ‘제한 조건’을 설명한 뒤(④), 마지막으로 ‘예시’를 배치하라(⑦).\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-25T09:14:25.947Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 14 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'fundamentally', 'Nominative', 'accusative' / 12~16단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Nominative and accusative Case fundamentally differ in how their assigners operate and restrict assignment.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
