@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-25T14:07:16.443Z",
+ "updated": "2026-07-25T15:30:54.960Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-25T15:30:30.651Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'be + past participle' 구문이 동사 원형으로 오용되는 패턴이 빈번하며, 특히 'be useful' → 'very useful'와 같이 보어-형용사 결합이 직접 목적어와 혼동되는 경우가 많다.",
+   "rule": "원서 코퍼스 패턴에 기반하여 'be + (형)용사' 구문에서 동사 원형(예: 'useful' → 'was useful')이 오용되지 않도록, 보어-형용사 결합이 주어-동사-보어 구조로 명확히 드러나게 변형 문제를 설계하라. (예: 'The internet very useful' → 'the internet was very useful')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-25T14:06:50.162Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'for some reasons' → 'for various reasons'와 같이 부정적/일반적 표현을 구체적이고 긍정적/다양한 표현으로 대체하는 패턴이 빈번하다. 또한 'there are some lecture which is' → 'there are some lectures which are'와 같이 단수/복수 오류와 시제 불일치를 동시에 수정하는 경향이 있다.",
    "rule": "원서에서 빈번한 'for some reasons' → 'for various/numerous reasons'로의 구체화 패턴을 적용하여, 학생들이 부정적/일반적 표현을 더 구체적이고 긍정적인 표현으로 대체하도록 유도하는 변형 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-19T22:11:53.266Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'단수/복수 명사의 선택 오류'가 빈번하며, 특히 'the + 단수명사' vs. 'a/an + 단수명사' 또는 '복수명사'의 구분이 CEFR B1-B2 수준에서 핵심 오류 유형임을 확인할 수 있다. 또한, 전치사(예: 'to' vs. 'of')와 대명사의 일치(예: 'they' vs. 'it')도 빈번한 오류로 나타났다.",
-   "rule": "CEFR B1-B2 수준 내신 변형문제에서는 'the + 단수명사'가 불가산명사(예: 'knowledge', 'transportation')와 함께 사용될 때 오류를 유도하는 문장을 반드시 1개 이상 포함하여, 학생들이 'the + 단수명사'가 불가산명사 앞에서는 사용되지 않는다는 규칙을 적용하도록 한다.",
    "sample": [
     "old english",
     "university press",
