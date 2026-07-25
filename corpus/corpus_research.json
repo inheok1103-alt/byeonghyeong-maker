@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-25T09:14:53.694Z",
+ "updated": "2026-07-25T10:49:07.208Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-25T10:48:41.722Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거시제와 현재시제의 혼용, 소유격의 오용, 관사의 누락이 빈번한 오류 패턴으로 나타났다. 특히 'it'의 생략이나 'be' 동사의 누락이 문법적 일관성을 깨는 주요 원인으로 확인되었다.",
+   "rule": "CEFR B1 수준 내신 문항에서 주어와 동사의 시제 일치(present/past)를 의무화하고, 소유격·관사의 오류(its → it's, alot → a lot, the → a/the) 및 문장 구조의 단순화를 요구하는 문제를 100% 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-25T09:14:27.637Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'a lot more possibilities'와 같은 복수 가산명사 뒤에는 정관사 'the'를 생략하는 패턴이 빈번하며, 'a person who is'와 같이 관계대명사 뒤의 동사는 선행사의 수에 일치해야 한다. 또한 'time after time'은 고정된 숙어 형태로, 반복 오류('timer', 'inviroment')를 유도할 수 있다.",
    "rule": "복수 가산명사 뒤에는 정관사 'the'를 생략하는 경우가 많으므로, 'possibilities/ones'와 같은 복수명사 뒤에는 'the'를 삽입하거나 생략하는 오류를 유도하는 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-19T17:28:23.665Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'~한 상태가 과거부터 현재까지 지속된다'는 의미는 현재완료 시제(have/has + 과거분사)로 표현해야 하며, 단순 과거 시제(started, tried 등)로 오용되는 패턴이 빈번하다.",
-   "rule": "'~한 상태가 과거부터 현재까지 지속된다'는 의미는 'have/has + 과거분사'로 표현해야 하며, 단순 과거 시제(예: started, tried, is since ages)는 오류로 처리한다.",
    "sample": [
     "old english",
     "university press",
