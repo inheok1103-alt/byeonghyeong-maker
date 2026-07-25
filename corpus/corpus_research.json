@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-25T19:37:37.996Z",
+ "updated": "2026-07-25T21:11:42.687Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-25T21:11:15.859Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'there + be' 구문에서 단수/복수 오류가 빈번하며, 'to'의 부적절한 사용(목적·결과 관계 오류)이 다수 확인된다.",
+   "rule": "'there is/are' 구문에서 단수/복수 주어를 'there' 뒤에 배치할 때, 반드시 명사의 수 일치를 확인하여 'there is' (단수) 또는 'there are' (복수) 중 하나를 선택하도록 문항을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-25T19:37:11.350Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'old'와 'older'의 구분이 '연령 차이 강조'에서 비롯된다는 점을 확인했다. 또한 'most time' → 'most of the time'와 같은 시간 표현의 정확한 형태가 문체적 안정성을 높인다.",
    "rule": "원서 코퍼스 패턴을 반영하여 '연령 비교 구문'에서는 'old' 대신 'older'를 필수적으로 사용하고, 'most time'은 'most of the time'으로 교정하라. 또한 'he/she' 대명사 사용 시 문맥상 자연스러운 대상을 명시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-20T04:09:21.599Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "명사+전치사+명사 구조에서 전치사가 생략되거나 잘못 사용되는 경우가 빈번하며, 특히 'of'가 포함된 연어 패턴에서 오류가 자주 발생함을 확인했다.",
-   "rule": "명사+of+명사 구조(예: construction of the car, use of the car)에서 전치사 'of'를 생략하거나 다른 전치사로 대체하지 않도록 출제 시 반드시 확인하고, 오답지에는 'of'를 빼거나 'to/for' 등으로 대체한 형태를 포함시킨다.",
    "sample": [
     "old english",
     "university press",
