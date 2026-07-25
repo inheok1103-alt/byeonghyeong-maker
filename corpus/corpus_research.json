@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-25T17:19:08.776Z",
+ "updated": "2026-07-25T19:37:37.996Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-25T19:37:11.350Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'the + 단수명사'가 관용적·일반화된 표현으로 빈번히 사용됨을 확인. 특히 'the + 언어명'(e.g., the Persian language), 'the + 학문명'(e.g., the English grammar), 'the + 고유명사'(e.g., the New York) 패턴이 두드러짐.",
+   "rule": "원어민 스타일로 자연스러운 문장을 만들기 위해, 특정 언어·학문·고유명사 앞에는 반드시 정관사 'the'를 붙인다. 단, 언어명은 복수형(languages)이나 'a/an'을 쓸 수 있는 경우(예: a new language) 제외.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-25T17:18:39.690Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "명사+전치사+명사 구조에서 전치사가 생략되거나 잘못 사용되는 경우가 빈번하며, 특히 'of'가 포함된 연어 패턴에서 오류가 자주 발생함을 확인했다.",
    "rule": "명사+of+명사 구조(예: construction of the car, use of the car)에서 전치사 'of'를 생략하거나 다른 전치사로 대체하지 않도록 출제 시 반드시 확인하고, 오답지에는 'of'를 빼거나 'to/for' 등으로 대체한 형태를 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-20T00:15:21.192Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거분사(compared, interested 등)가 전치사(to/with)와 결합해 비교 구문에서 능동적 의미를 내포하는 오류가 빈번하다. 또한, 'take upon oneself' 구문에서 'it'이 필수적임을 확인할 수 있다.",
-   "rule": "비교 구문에서 '~ing' 형태의 동사(과거분사 포함)가 전치사와 결합할 경우, 반드시 수동적 의미를 지닌 과거분사 형태('compared to', 'interested in')로 교정하는 오답을 설계하라.",
    "sample": [
     "old english",
     "university press",
