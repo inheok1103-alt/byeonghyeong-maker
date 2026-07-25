@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-25T10:49:07.212Z",
+ "updated": "2026-07-25T12:11:35.173Z",
  "samples": [
+  {
+   "ts": "2026-07-25T12:10:33.896Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① In fact, experienced writers often write fragments deliberately, as I just did.\n② At least in theory.\n③ Almost as an afterthought, often ironically.\n④ • They are intended to reflect a mind at work, as if the writer were speaking to you, finishing a sentence, then immediately expanding and qualifying it.\n⑤ When intended, those fragments typically have two characteristics: • They are relatively short, fewer than ten or so words.\n⑥ Traditionally, a punctuated sentence that fails to include an independent main clause is wrong.\n⑦ Which is why you must understand how to write a long but clearly constructed sentence that readers can follow easily.\n⑧ In this passage, Mark Twain uses sentence fragments (along with sentences beginning with conjunctions) to capture the element of chance in the circumstances that made him an author (fragments are boldfaced):\n⑨ Most fragments occur when you write a sentence that goes on so long and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence.",
+    "choices": [
+     "⑨-⑦-⑥-②-⑤-①-④-③-⑧",
+     "⑨-⑦-⑥-②-①-④-⑤-③-⑧",
+     "⑨-③-②-④-①-⑦-⑥-⑧-⑤",
+     "⑨-②-③-⑥-④-①-⑤-⑧-⑦",
+     "⑨-⑦-⑥-②-①-⑤-④-③-⑧"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ⑨-⑦-⑥-②-①-⑤-④-③-⑧. 흐름: ⑨ → ⑦ → ⑥ → ② → ① → ⑤ → ④ → ③ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 학생은 ④와 ⑤의 순서를 잘못 이해하여 글의 흐름에 맞지 않게 배치했으며, ②와 ③의 위치도 글의 논리적인 흐름과 맞지 않다. → 처방: 글의 흐름을 파악하기 위해 문장 간의 논리적인 연결을 다시 분석해야 한다.\n② 진단: 학생은 ②와 ①의 위치를 잘못 이해하여 글의 논리적인 흐름을 깨트렸으며, ④와 ⑤의 순서도 글의 맥락과 맞지 않는다. → 처방: 각 문장의 역할과 기능을 다시 파악하여 글의 전체적인 흐름을 이해해야 한다.\n③ 진단: 학생은 ⑨와 ③의 연결고리를 잘못 이해하여 글의 시작 부분이 불명확하며, ②와 ④의 위치도 글의 논리적인 진행과 맞지 않는다. → 처방: 글의 시작 부분을 다시 분석하여 전체적인 흐름을 명확히 이해해야 한다.\n④ 진단: 학생은 ②와 ③의 위치를 잘못 이해하여 글의 논리적인 진행이 깨지며, ④와 ①의 순서도 글의 맥락과 맞지 않는다. → 처방: 각 문장의 역할과 기능을 다시 분석하여 글의 전체적인 논리적인 흐름을 이해해야 한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-25T12:10:57.418Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Most fragments occur when you write a sentence that ⓐ<u>goes on so long</u> and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence. Which is why you must understand how to write a long but clearly constructed sentence ⓑ<u>that readers could follow easily</u>. Traditionally, a punctuated sentence that fails to include an independent main clause is wrong. At least in theory. In fact, experienced writers often write fragments deliberately, ⓒ<u>as I just did</u>. When intended, those fragments typically have two characteristics: • They are relatively short, fewer than ten or so words. • They are intended to reflect a mind at work, ⓓ<u>as if the writer were speaking</u> to you, finishing a sentence, then immediately expanding and qualifying it. Almost as an afterthought, often ironically. In this passage, Mark Twain uses sentence fragments (along with sentences beginning with conjunctions) ⓔ<u>to capture the element</u> of chance in the circumstances that made him an author (fragments are boldfaced):",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [관계사] ⓑ: 'that readers could follow easily' → 'that readers can follow easily'\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-25T09:14:21.113Z",
    "type": "전체문장배열",
@@ -323,60 +375,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ: 문맥상 'correct'가 와야 하는데 'incorrect'가 쓰여 부적절하다 — 해당 문장 “However, this cannot be correct, i.”의 논리 흐름상 correct 가 맞고 incorrect 는 방향이 어긋난다. [극성] 정답=옳음/적절 ↔ 오답=잘못됨/부적절\n[오답 진단·처방]\n① 진단: ⓐ'suggest'는 '~처럼 보이다'라는 뜻으로, 지문에서 '~인 것처럼 보일 수 있다'는 의미를 담고 있지만, 문맥상 '제안하다'로 오해할 수 있음. (지문: 'it may appear to be the case that... This would ⓐsuggest that...') → 처방: 글의 흐름을 따라 '~처럼 보이다'라는 뜻임을 기억하고, '제안하다'라는 뜻으로는 쓰지 않도록 주의하기.\n② 진단: ⓑ'cannot'은 '~일 리가 없다'라는 뜻으로, 지문에서 '이것은 틀릴 수 없다'는 의미를 담고 있지만, '~할 수 없다'로 오해할 수 있음. (지문: 'This would ⓑcannot be ⓒwrong') → 처방: 부정어 'not'과 'can'의 결합이 '~일 리가 없다'라는 뜻임을 기억하고, '~할 수 없다'라는 뜻으로는 쓰지 않도록 주의하기.\n④ 진단: ⓓ'inside'는 '~안에'라는 뜻으로, 지문에서 '형용사구가 VP 안에 있다'는 의미를 담고 있지만, '~안'이라는 장소로 오해할 수 있음. (지문: 'Subject-related adjective phrases are ⓓinside the VP') → 처방: 'inside'가 '~안에'라는 뜻임을 기억하고, '~안'이라는 장소로 쓰지 않도록 주의하기.\n⑤ 진단: ⓔ'Adjunct'는 '부가어'라는 뜻으로, 지문에서 '형용사구가 보어인지 부가어인지'를 묻는 의미를 담고 있지만, '보조'로 오해할 수 있음. (지문: 'whether the AP is a Complement of the lexical verb inside VP, or an ⓔAdjunct') → 처방: 문맥상 '부가어'라는 뜻임을 기억하고, '보조'라는 뜻으로는 쓰지 않도록 주의하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T19:48:28.877Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: d)\n[영영풀이] To consume (a liquid) through the mouth.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] drink (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-24T17:53:52.292Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "동일성 원리는 두 대상이 동일하다는 전제에서만 논리적 근거로 작용할 수 있다",
-     "동일성 원리가 성립하려면 한 대상에 대한 모든 명제가 다른 대상에도 동일하게 적용되어야 한다",
-     "동일성 원리에 따르면 한 대상을 가리키는 두 이름은 언제나 완전히 교환 가능한 존재로 간주된다",
-     "동일성 원리는 한 대상을 다른 이름으로 부를 때에도 언제나 동일하게 적용되어야 한다",
-     "두 대상이 동일할 때 한 대상에 대한 참된 명제가 다른 대상에도 동일하게 적용될 수 있는 논리적 근거가 된다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 '인물 A 와 B 가 동일한 존재임을 전제로, A 에 대해 참인 명제는 B 에 대해서도 참임을 증명하는 동일성 원리(Principle of Substitutivity)의 논리적 근거를 제시한다.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘동일성 원리’는 두 대상이 동일하다는 전제 자체를 논리적 근거로 삼는 것이 아니라, 동일하다는 전제에서 ‘무엇이든 참으로 말할 수 있는 명제는 교환 가능’하다는 결론을 이끌어내는 규칙임을 오해한 것으로 보임. 지문에서 ‘이 가정은 우리에게 ‘대체 가능성 원리’라는 중요한 추론 규칙을 준다’고 설명한 부분을 보지 못한 듯. → 처방: ‘동일성 원리’는 동일하다는 전제에서 ‘무엇이든 참으로 말할 수 있는 명제는 교환 가능’하다는 결론을 이끌어내는 규칙임을 기억하고, 전제 자체를 근거로 삼는 것이 아님을 분명히 할 것.\n② 진단: ‘한 대상에 대한 모든 명제가 다른 대상에도 동일하게 적용되어야 한다’는 말은 지나치게 강하고 오류가 있는 주장으로, 지문은 ‘참된 명제’에 한정하여 교환 가능성을 언급한 점을 오해한 듯. → 처방: 지문에서 ‘참된 명제’에만 초점을 맞추고 있으므로, ‘모든 명제’를 주장하지 말고 ‘참된 명제’에 한정하여 생각하도록 할 것.\n③ 진단: ‘두 이름은 언제나 완전히 교환 가능한 존재로 간주된다’는 말은 지나치게 절대적이며, 지문은 ‘참된 명제’를 말할 때만 교환 가능성을 언급한 점을 오해한 듯. → 처방: ‘참된 명제’를 말할 때만 교환 가능성을 인정한다는 점을 분명히 기억하고, ‘완전히 교환 가능’하다는 말은 과도한 일반화임을 인지할 것.\n④ 진단: ‘한 대상을 다른 이름으로 부를 때에도 언제나 동일하게 적용되어야 한다’는 말은 ‘언제나’라는 표현이 지나치며, 지문은 ‘참된 명제’를 말할 때만 교환 가능성을 언급한 점을 오해한 듯. → 처방: ‘참된 명제’를 말할 때만 교환 가능성을 인정한다는 점을 기억하고, ‘언제나’라는 절대적 표현을 피하도록 할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: 인물 A 와 B 가 동일한 존재임을 전제로, A 에 대해 참인 명제는 B 에 대해서도 참임을 증명하는 동일성 원리(Principle of Substitutivity)의 논리적 근거를 제시한다.]"
    }
   }
  ]
