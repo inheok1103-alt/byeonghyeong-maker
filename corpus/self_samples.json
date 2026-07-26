@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-26T04:04:27.157Z",
+ "updated": "2026-07-26T06:52:42.203Z",
  "samples": [
+  {
+   "ts": "2026-07-26T06:51:22.333Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "VOLUME OF IRREGULAR SOLIDS: <u>The best way to measure the volume of an irregular solid is to place it in water and find the volume of water it displaces. The difference between the new and old volume measurements is equal to the volume of the object. (Next time you get into a bath</u>, look at the water you displace-that’s your volume!) Mass ELECTRONIC BALANCE: Just put the object on the pan and read the mass. DOUBLE PAN BALANCE: This compares the weight of objects in pans on each side of a balance. To find mass, place something of known mass in one pan, and in the other pan, place the object of unknown mass. When the pans are level, the masses are equal. For other geometric shapes, look in your math notebook. VOLUME DISPLACED SOLID If you are measuring something that needs to be in a container, weigh the empty container on its own first, and then subtract the weight of the container afterward.",
+    "choices": [
+     "Displacing water in a bath causes your physical volume to increase as you enter the tub.",
+     "The volume of water displaced in a bath is caused by the warmth of your body heating the water.",
+     "Your presence in a bath always causes a noticeable splash of water over the edge.",
+     "A bathtub’s water level drops because you physically push the liquid downward.",
+     "Your presence in life leaves a measurable impact, just as displacing water reveals your physical space."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'Your presence in life leaves a measurable impact, just as displacing water reveals your physical space.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'displace'는 '물체가 차지하는 공간만큼 물을 밀어내는 것'을 뜻하는데, 학생은 '목욕탕에서 몸이 커진다'는 물리적 변화로 오해함. 'volume'을 '신체 크기'로 혼동한 듯. → 처방: 물체가 차지하는 공간을 '부피'로 이해하고, 'displace'의 의미를 '물리적 공간 차지'로 정확히 기억하기.\n② 진단: 지문은 '물체의 부피 측정 방법'을 설명한 것인데, 학생은 '물 온도'가 '부피 변화'의 원인으로 오해함. 'warmth'라는 단어를 '원인'으로 오독한 듯. → 처방: 지문의 핵심은 '물체가 차지하는 공간'임을 기억하고, '원인'보다는 '결과'에 집중하여 문제 풀기.\n③ 진단: 지문은 '물체가 차지하는 공간'을 측정하는 방법에 대한 설명인데, 학생은 '물 splash'라는 눈에 띄는 현상에만 주목하여 오해함. 'noticeable splash'가 '부피 측정'과 무관함을 놓친 듯. → 처방: 문제에서 '의미'를 찾을 때는 지문의 핵심 개념(부피 측정 방법)과 선지의 연관성을 먼저 확인하기.\n④ 진단: 지문은 '물체가 차지하는 공간'을 측정하는 방법인데, 학생은 '물리적 힘'으로 '물 내림'을 오해함. 'push the liquid downward'라는 표현을 '원인'으로 오독한 듯. → 처방: 지문의 'displace'는 '공간 차지'를 뜻한다는 점을 기억하고, '물리적 힘'보다는 '부피' 개념에 집중하여 문제 풀기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-26T04:02:56.695Z",
    "type": "밑줄함의",
@@ -348,41 +383,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Passive subjects and active verb complements share the same thematic function, as evidenced by identical pragmatic restrictions on their expressions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘부분적으로’라는 표현이 지문의 ‘동일한(pragmatic restrictions)’이라는 주장과 충돌한다는 점을 놓쳤다. ‘부분적’이라는 말은 지문에서 다루는 전제와 맞지 않는다. → 처방: ‘부분적’이라는 단어가 지문에서 언급된 ‘동일’이라는 의미를 약화시킬 수 있음을 기억하고, 지문의 ‘same’라는 표현에 집중하라.\n③ 진단: ‘언제나 반드시’라는 절대적 표현이 지문의 ‘same pragmatic restrictions’라는 제한적 주장과 모순됨을 간파하지 못했다. 지문은 ‘항상’이나 ‘반드시’를 쓰지 않는다. → 처방: ‘언제나 반드시’라는 표현이 지문에서 ‘same’이라는 한정된 범위를 넘어서는지 확인하라. 제한적 조건을 먼저 떠올려라.\n④ 진단: ‘같을 수도 있지만, 반드시 그런 것은 아니다’라는 유보적 표현이 지문의 ‘same’이라는 단정적 주장을 오해하게 했다. 지문은 ‘항상’ 동일하다고 주장하지 않는다. → 처방: ‘same’이라는 단어가 지문에서 ‘항상’ 동일하다는 뜻임을 기억하고, 유보적 표현을 배제하라.\n⑤ 진단: ‘표현 방식만 다를 뿐’이라는 말은 지문의 ‘same pragmatic restrictions’라는 핵심 주장과 어긋난다. 지문은 표현 방식뿐 아니라 의미역까지 동일하다고 강조한다. → 처방: ‘표현 방식’이라는 말이 ‘의미역’과 분리되어 있지 않음을 확인하고, 지문의 ‘pragmatic restrictions’가 의미역과 직접 연결됨을 떠올리라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Passive subjects and active verb complements share the same thematic function, as evidenced by identical pragmatic restrictions on their expressions.]"
-   }
-  },
-  {
-   "ts": "2026-07-25T17:18:22.754Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 2/3가 3번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Recall from our earlier discussion of sentences like (35) that McCloskey argues that stranded quantifiers modifying wh-expressions are left behind via movement of the wh-expression without the quantifier. This being so, sentences such as (63) provide evidence that what all originates as the complement of the passive participle said (with what subsequently being passivised on its own, stranding all) – and more generally, that passive subjects are initially merged as thematic objects. A claim which is implicit in the hypothesis that passive subjects originate as thematic objects is that the subjects of active verbs and the complements of passive verbs have the same thematic function. Evidence that this is indeed the case comes from the traditional observation that the two are subject to the same pragmatic restrictions on the choice of expression which can occupy the relevant position, as we see from sentences such as the following (where ?, ?! and ! mark increasing degrees of anomaly):\n\n─────────\n[요약문] McCloskey’s analysis demonstrates that stranded quantifiers in wh-expressions result from (A) movement of the wh-expression, and this further supports the claim that passive subjects are initially merged as (B) thematic objects.",
-    "choices": [
-     "(A) passive movement … (B) surface subjects",
-     "(A) wh-movement … (B) internal arguments",
-     "(A) wh-in-situ … (B) external arguments",
-     "(A) quantifier raising … (B) thematic roles",
-     "(A) topicalization … (B) agent phrases"
-    ],
-    "answer": 2,
-    "explanation": "(A) wh-movement / (B) internal arguments 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘passive movement’를 ‘wh-movement’와 혼동했으며, ‘surface subjects’를 ‘internal arguments’로 오해했음. 지문에서 stranded quantifier 가 wh-expressions 의 movement 로 남겨진다는 사실은 ‘wh-movement’의 증거로 제시됨. → 처방: ‘wh-movement’이 stranded quantifier 를 남기며, passive participle 의 complement 가 passive 화되면서 internal arguments 가 surface subjects 로 나타난다는 점을 정확히 파악할 것.\n③ 진단: ‘wh-in-situ’를 ‘wh-movement’와 반대로 오해했으며, ‘external arguments’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 설명된다는 점을 강조함. → 처방: ‘wh-in-situ’(제자리 wh-표현)는 stranded quantifier 와 무관하다는 점을 기억하고, ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 사실을 명확히 구분할 것.\n④ 진단: ‘quantifier raising’을 stranded quantifier 의 movement 와 동일시했으며, ‘thematic roles’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 남겨지며 passive participle 의 complement 가 internal arguments 로 나타난다는 점을 설명함. → 처방: ‘quantifier raising’이 stranded quantifier 의 movement 와는 다른 개념임을 인식하고, ‘thematic roles’가 아닌 ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 점을 정확히 파악할 것.\n⑤ 진단: ‘topicalization’을 stranded quantifier 의 movement 와 동일시했으며, ‘agent phrases’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 남겨지며 passive participle 의 complement 가 internal arguments 로 나타난다는 점을 강조함. → 처방: ‘topicalization’이 stranded quantifier 의 movement 와는 다른 현상임을 인식하고, ‘agent phrases’가 아닌 ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 점을 정확히 구분할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]

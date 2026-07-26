@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-26T04:04:27.154Z",
+ "updated": "2026-07-26T06:52:42.199Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-26T06:52:16.776Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "영어 문법 오류는 주로 동사 형태(3인칭 단수, 시제), 동명사/부정사 선택, 재귀대명사 오용에서 발생하며, CEFR B1-B2 수준에서 자주 관찰된다.",
+   "rule": "CEFR B1-B2 수준의 내신 변형문제에서는 '동사 + 재귀대명사 + 동명사' 구조(예: consider oneself doing)에서 동사의 시제(3인칭 단수) 및 동명사 형태(collecting → collecting)를 반드시 검증하도록 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-26T04:03:59.423Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'inculcate'는 '가르치다·주입하다'의 의미로 '가치를 주입하다'의 연어 패턴이 강하며, 'include'는 단순히 '포함하다'의 의미로 대체할 수 없다. 또한 'give rise to'는 명사구와 함께 사용되는 고정적 연어 패턴으로, 관사 생략이 오류 유형이다.",
    "rule": "'inculcate'는 '가치·교육·습관' 등과 고정적으로 연어(collocation)를 이루므로, 'include those values' 대신 'inculcate those values'가 옳은지 확인하는 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-20T18:22:48.102Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 최빈 연어는 'present/past tense + noun phrase' 패턴이 두드러지며, 한국어 학습자의 문법 오류는 '과도한 직역·불필요한 보어 사용·관계사 오용'으로 집약된다. 특히 'how about if' → 'what if'와 같이 관용적 전환 오류가 빈번하다.",
-   "rule": "CEFR B1 수준 내신 변형문제에서는 'present/past tense + noun phrase' 구조의 문장을 제시하되, 한국어 학습자의 오류 패턴('직역·보어 과용·관계사 오류')을 유도할 수 있도록 'how about if', 'it's serious but almost people'와 같은 오류 유발 표현을 포함시킨다.",
    "sample": [
     "old english",
     "university press",
