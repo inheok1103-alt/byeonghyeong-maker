@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-26T19:43:07.297Z",
+ "updated": "2026-07-26T21:15:21.356Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-26T21:14:54.447Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'instead of + 단수명사' 오류는 'instead of + 복수명사'로 수정해야 하며, 'will able'는 'can'으로, 'choosed'는 'chose'로 과거형 오류가 발생함을 확인했다. 또한 문장 구조의 오류(주어-동사 불일치, 시제 혼용)도 빈번히 나타났다.",
+   "rule": "'instead of + 명사' 뒤에는 해당 명사의 복수형 또는 불가산명사를 사용해야 하며, 조동사 'can/could/will' 뒤에는 동사원형이 와야 한다. 또한 과거형 동사는 '-ed' 규칙형이 아닌 경우 과거형 표기(예: 'choose→chose')를 확인해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-26T19:42:40.919Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'exam', 'subject', 'era' 등 단수 명사가 문맥상 복수 의미로 사용될 때 복수형으로 변환하는 패턴이 빈번하다는 사실을 확인할 수 있었다.",
    "rule": "복수 의미를 내포하는 명사(예: exam, subject, era)가 주어일 경우, 문장의 동사는 복수형(are, suit, lives 등)으로 일치시켜야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-21T12:04:16.179Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "연어(collocation)의 오류는 단어의 결합이 잘못되었을 때 발생하며, 특히 문법적 구조(예: 부사구, 삽입구)나 어순(예: 보어 위치)에서 빈번히 나타난다. 한국어 학습자에게도 유사한 오류 패턴이 관찰된다.",
-   "rule": "문장에 삽입구(예: 'In deed', 'In addition')가 포함된 경우, 반드시 쉼표(,)로 구분하여 문법적 오류를 유도하라. 특히 동사가 삽입구 뒤에 오면, 주동사와 보어를 분리하지 않도록 주의시킨다.",
    "sample": [
     "old english",
     "university press",
