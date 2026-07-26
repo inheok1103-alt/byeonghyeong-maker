@@ -1,7 +1,18 @@
 {
- "updated": "2026-07-26T06:52:42.195Z",
+ "updated": "2026-07-26T09:27:13.230Z",
  "count": 60,
  "rules": [
+  {
+   "rule": "'in life'는 routine activities, daily tasks, common practices 등과 같은 추상명사와 결합해 '삶의 일상적 활동'을 의미하는 전치사구로, 오류 시 'of life'나 'of daily life'로 대체하지 않도록 하며, 부정어(예: not real)나 정도부사(too, very)를 동사(look, seem)와 함께 사용해 문법적 오류를 방지하라.",
+   "src": "코퍼스연구:실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "score": 72,
+   "ts": "2026-07-26T09:26:47.689Z"
+  },
+  {
+   "rule": "1) ‘exceed + 수치’(1문항), ‘(A) account for (B)%’(1문항), ‘twice as ~’(1문항)을 **복합 도표**로 통합 출제. 2) 예시: [2020 vs 2023] *Renewable energy exceeded fossil fuels by 15% in 2023, accounting for 60% of total capacity—twice as high as in 2020.* 3) 서술형 1문항 추가: *Compare the two regions using numerical data.*",
+   "src": "회의:자동연구",
+   "ts": "2026-07-26T09:27:13.229Z"
+  },
   {
    "rule": "CEFR B1-B2 수준의 내신 변형문제에서는 '동사 + 재귀대명사 + 동명사' 구조(예: consider oneself doing)에서 동사의 시제(3인칭 단수) 및 동명사 형태(collecting → collecting)를 반드시 검증하도록 출제하라.",
    "src": "코퍼스연구:CEFR 밴드를 활용한 난이도 조정",
@@ -311,17 +322,6 @@
    "rule": "1) 힌트 강도를 4단계(25%/40%/60%/80%)로 조정하고, 2) 고난도(수능 3~4점)는 '동의어/유사어' 힌트를 60%로, 저난도(내신 1~2점)는 '문장 내 위치+기능' 힌트를 80%로 적용하며, 3) '완전 미제시'는 1~2회분 주기로 난이도 혼합 어휘로 구성하여 랜덤 계층화 적용.",
    "src": "회의:자동연구",
    "ts": "2026-07-24T15:48:37.729Z"
-  },
-  {
-   "rule": "1) 채점 기준표에 ‘지칭 대상의 의미적 동일성’을 최우선 기준으로 명시하되, ‘문법적 필수성’을 보조 기준으로 활용. 2) 예외 규정을 ‘의미 차이가 명확한 경우(예: a/the + 명사)’로 한정하고, 문맥적 필요성을 판단 기준으로 추가. 3) 자동 채점 시스템에서는 ‘의미 불변 시 한정사 변동 허용’ + ‘문맥적 불일치 시 오류’로 이원화 처리.",
-   "src": "회의:자동연구",
-   "ts": "2026-07-24T15:48:48.917Z"
-  },
-  {
-   "rule": "CEFR B1 수준 내신 출제 시, 소유·표현·노출 관련 동사(be in possession of, express, show, get exposure 등)와 전치사(about, on, in) 사용 오류를 집중적으로 다룬 문항을 30% 이상 포함하라.",
-   "src": "코퍼스연구:CEFR 밴드를 활용한 난이도 조정",
-   "score": 72,
-   "ts": "2026-07-24T14:17:03.708Z"
   }
  ],
  "note": "사람 승인 완료 규칙만 활성. 자동 학습 규칙은 quarantine_rules.json에서 검토·승인 후 이곳으로 이동."
