@@ -1,6 +1,110 @@
 {
- "updated": "2026-07-26T17:19:22.618Z",
+ "updated": "2026-07-26T19:43:07.301Z",
  "samples": [
+  {
+   "ts": "2026-07-26T19:36:24.295Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.63,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "타인의 동기를 의심하는 것은 인간 본성의 이기심을 증명하는 직접적 증거가 된다.",
+     "인간은 이기적이라는 믿음이 있을 때만 타인의 동기를 의심할 수 있다.",
+     "모든 인간은 본래 이기적이므로 타인의 동기를 의심하는 것이 당연하다.",
+     "인간은 타인의 동기를 언제나 의심하는 극단적 비관주의에 빠진다.",
+     "인간은 본질적으로 이기적이라는 불신을 바탕에 둔다면 타인의 동기를 지나치게 의심하게 된다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'To be cynical is to be extremely suspicious of the motivations of other people.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘타인의 동기를 의심하는 것’이 ‘인간 본성의 이기심을 증명하는 직접적 증거’라는 말은 지문의 ‘CYNIC’이 ‘인간이 본래 이기적’이라는 믿음에서 나온다는 설명을 오해하여, 의심 자체가 증거가 된다고 잘못 이해한 듯함. → 처방: ‘CYNIC’의 정의와 예시를 다시 읽고, ‘의심’이 ‘증거’가 아니라 ‘믿음의 결과’라는 점을 분명히 기억하기.\n② 진단: ‘인간은 이기적이라는 믿음이 있을 때만 타인의 동기를 의심할 수 있다’는 말은 지문의 ‘CYNIC’이 ‘인간이 본래 이기적’이라는 믿음에서 나온다는 설명을 반대로 해석하여, 의심의 조건을 오해한 듯함. → 처방: ‘CYNIC’이란 ‘인간이 본래 이기적’이라는 믿음에서 ‘타인의 동기를 의심하는 사람’이라는 정의를 정확히 이해하고, 의심의 조건이 아니라 결과라는 점을 기억하기.\n③ 진단: ‘모든 인간은 본래 이기적’이라는 말은 지문의 ‘CYNIC’이 ‘인간이 본래 이기적’이라는 믿음에서 나온다는 설명을 확대해석하여, 모든 인간이 실제로 이기적이라고 잘못 이해한 듯함. → 처방: ‘CYNIC’이란 ‘인간이 본래 이기적’이라는 ‘믿음’을 가진 사람을 가리키는 것이지, 모든 인간이 실제로 이기적이라는 뜻이 아니라는 점을 분명히 하기.\n④ 진단: ‘인간은 타인의 동기를 언제나 의심하는 극단적 비관주의에 빠진다’는 말은 지문의 ‘CYNIC’이 ‘인간이 본래 이기적’이라는 믿음에서 나온다는 설명을 과장하여, 모든 상황이 의심으로 이어진다고 잘못 이해한 듯함. → 처방: ‘CYNIC’이란 ‘타인의 동기를 지나치게 의심하는 태도’를 가리키는 것이지, 모든 상황이 의심으로 이어지는 것은 아니라는 점을 분명히 기억하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: To be cynical is to be extremely suspicious of the motivations of other people.]"
+   }
+  },
+  {
+   "ts": "2026-07-26T19:36:45.310Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": -1,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "To make a cursory attempt at learning French is to memorize a couple of easy words and then give up. CURTAIL (kur TAYL) v to shorten; to cut short • The vet (A) [curtailed / extended] her effort to cut the cat’s tail with the lawn mower. That is, she stopped trying. To curtail a tale is to cut it short. (B) [optimist / CYNIC] (SIN ik) n one who deeply distrusts human nature; one who believes humans are motivated only by selfishness • When the pop star gave a million dollars to the museum, cynics said he was merely trying to buy himself a reputation as a cultured person. To be cynical is to be extremely suspicious of the motivations of other people. Cynicism is general grumpiness and pessimism about human nature. Quick Quiz #29 Match each word in the first column with its definition in the second column. Check your answers here. 1. culpable a. free from guilt 2. exculpate b. shorten 3. (C) [thorough / cursory] c. one who distrusts humanity 4. curtail d. hasty 5. cynic e. guilty D",
+    "choices": [
+     "(A) extended - (B) optimist - (C) thorough",
+     "(A) extended - (B) CYNIC - (C) thorough",
+     "(A) curtailed - (B) CYNIC - (C) cursory",
+     "(A) curtailed - (B) CYNIC - (C) thorough",
+     "(A) curtailed - (B) optimist - (C) cursory"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) curtailed - (B) CYNIC - (C) cursory. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A) extended’를 선택했는데, ‘curtailed’의 뜻(‘~을 중단하다’)과 반대인 ‘연장하다’를 고른 이유는 ‘vet 가 lawn mower 로 고양이 꼬리를 자르려는 시도를 중단하지 않고 계속했다는 오해’를 한 것 같다. 지문에서 ‘she stopped trying’이란 문장이 있으니 ‘curtailed’를 써야 한다. → 처방: ‘curtailed’의 뜻을 정확히 기억하고, 지문에서 ‘stopped trying’이란 단서가 나오면 무조건 ‘curtailed’를 선택하도록 연습하라.\n② 진단: ‘(B) optimist’를 선택했는데, ‘cynic’의 뜻(‘인간을 믿지 않는 사람’)과 반대인 ‘낙관주의자’를 고른 이유는 ‘인간을 믿는 사람’을 떠올렸기 때문이다. 지문에서 ‘deeply distrusts human nature’라고 설명이 있으니 ‘cynic’를 써야 한다. → 처방: ‘cynic’의 뜻을 정확히 기억하고, ‘distrust’라는 단서가 나오면 무조건 ‘cynic’를 선택하도록 연습하라.\n④ 진단: ‘(C) thorough’를 선택했는데, ‘cursory’의 뜻(‘대충 하는’)과 반대인 ‘철저한’을 고른 이유는 ‘대충이 아닌 꼼꼼한 행동’을 떠올렸기 때문이다. 지문에서 ‘a cursory attempt’는 ‘대충 하는 시도’라는 뜻이니 ‘cursory’를 써야 한다. → 처방: ‘cursory’의 뜻을 정확히 기억하고, ‘attempt’라는 단서가 나오면 무조건 ‘cursory’를 선택하도록 연습하라.\n⑤ 진단: ‘(B) optimist’를 선택했는데, ‘cynic’의 뜻을 반대로 이해하고 ‘인간을 믿는 사람’을 떠올렸기 때문이다. 지문에서 ‘distrust’라는 단서가 나오면 ‘cynic’를 써야 한다. 또한 ‘(C) cursory’를 선택했는데, ‘thorough’의 뜻을 반대로 이해하고 ‘대충’이 아닌 ‘철저한’을 떠올렸기 때문이다. → 처방: ‘cynic’과 ‘thorough’의 뜻을 정확히 기억하고, ‘distrust’나 ‘attempt’라는 단서가 나오면 무조건 해당 단어를 선택하도록 연습하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-26T19:42:31.122Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "To make a cursory attempt at learning French is to memorize a couple of easy words and then give up. CURTAIL (kur TAYL) v to shorten; to cut short • The vet curtailed her effort to cut the cat’s tail with the lawn mower. That is, she stopped trying. To curtail a tale is to cut it short. CYNIC (SIN ik) n one who deeply distrusts human nature; one who believes humans are motivated only by selfishness • When the pop star gave a million dollars to the museum, cynics said he was merely trying to buy himself a reputation as a cultured person. To be cynical is to be extremely suspicious of the motivations of other people. Cynicism is general grumpiness and pessimism about human nature. Quick Quiz #29 Match each word in the first column with its definition in the second column. Check your answers here. 1. culpable a. free from guilt 2. exculpate b. shorten 3. cursory c. one who distrusts humanity 4. curtail d. hasty 5. cynic e. guilty D\n\n─────────\n[요약문] Attempting to learn a language with (A) leads to (B) the pursuit entirely.",
+    "choices": [
+     "(A) cynicism … (B) abandoning",
+     "(A) thoroughness … (B) persevering",
+     "(A) diligence … (B) resuming",
+     "(A) superficiality … (B) abandoning",
+     "(A) cursory … (B) sustaining"
+    ],
+    "answer": 4,
+    "explanation": "(A) superficiality / (B) abandoning 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘cynicism’이 ‘인간을 불신하는 태도’를 뜻한다는 점은 맞지만, 지문에서 ‘cursory attempt’이 ‘대충 배우는 것’을 뜻한다는 사실을 무시하고 ‘시도 자체’를 오해한 듯하다. ‘cynicism’이 학습의 실패와 직접 연결되지 않는다. → 처방: ‘cursory’를 먼저 확인하고, 지문에서 ‘시도 자체’를 ‘대충’으로 설명한다는 점을 기억하자. ‘cynicism’이 아니라 ‘superficiality’가 ‘대충’이라는 뜻을 가진 단어임을 떠올려라.\n② 진단: ‘thoroughness’가 ‘철저함’을 뜻한다는 점은 맞지만, 지문에서 ‘cursory attempt’이 ‘대충 배우는 것’을 뜻한다는 사실을 무시하고 ‘철저한 시도’를 떠올렸다. ‘thoroughness’가 ‘대충’이 될 수 없다. → 처방: ‘cursory’의 뜻을 정확히 기억하고, ‘thoroughness’가 반대 의미를 가진다는 점을 떠올려라. ‘철저함’이 아니라 ‘대충’이 정답임을 확인하자.\n③ 진단: ‘diligence’가 ‘부지런함’을 뜻한다는 점은 맞지만, 지문에서 ‘cursory attempt’이 ‘대충 배우는 것’을 뜻한다는 사실을 무시하고 ‘부지런한 시도’를 떠올렸다. ‘diligence’가 ‘대충’이 될 수 없다. → 처방: ‘cursory’의 뜻을 정확히 기억하고, ‘diligence’가 ‘부지런함’이라는 뜻을 가진다는 점을 떠올려라. ‘부지런함’이 아니라 ‘대충’이 정답임을 확인하자.\n⑤ 진단: ‘cursory’가 ‘대충’이라는 뜻을 가진다는 점은 맞지만, ‘sustaining’이 ‘계속하는 것’이 아니라 ‘지속하는 것’을 뜻한다는 점을 오해했다. ‘sustaining’이 ‘계속하는 것’을 뜻하지 않는다. → 처방: ‘sustain’의 뜻을 정확히 기억하고, ‘sustaining’이 ‘지속하는 것’이라는 뜻을 가진다는 점을 떠올려라. ‘계속하는 것’이 아니라 ‘포기하는 것’이 정답임을 확인하자.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-26T17:17:54.262Z",
    "type": "요약문AB",
@@ -280,95 +384,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'drink'가 명사로도 사용된다고 예시로 언급되었음에도, '동사뿐 아니라 명사로도 사용될 수 없다'고 오해한 것. → 처방: 단어의 품사를 판단할 때는 문맥에서 그 단어의 역할(명사/동사/형용사 등)을 확인해야 한다.\n② 진단: 지문에서 'drinks'가 세 번째 인칭 단수 현재형으로 언급되었음에도, '-s'가 붙지 않는다고 오해한 것. → 처방: 동사의 현재형에서 세 번째 인칭 단수는 '-s'가 붙는 규칙을 기억하고, 예외가 아닌지 확인한다.\n③ 진단: 지문에서 'drank'는 과거형이고 'drunk'는 과거 분사형이라고 명시되었음에도, 둘 다 'drank'라고 오해한 것. → 처방: 동사의 과거형과 과거 분사형을 따로 공부하고, 각 동사의 규칙/불규칙형을 확인한다.\n⑤ 진단: 지문에서 '단어의 품사는 문맥에 따라 달라질 수 있다'고 설명되었음에도, '형태만으로 결정된다'고 오해한 것. → 처방: 단어의 형태뿐 아니라 문장에서 다른 단어들과의 관계(행동)를 보고 품사를 판단하는 습관을 기른다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T11:40:24.749Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] The reader will have noticed that some words were given as examples both of substantives and adjectives, others as substantives and verbs, and others again as adjectives and adverbs.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 독자는 어떤 단어는 명사와 형용사의 예로, 어떤 단어는 명사와 동사의 예로, 또 어떤 단어는 형용사와 부사의 예로 제시되었음을 알게 될 것입니다. (구문 포인트: 병렬 구조(parallel structure) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T06:51:22.333Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "VOLUME OF IRREGULAR SOLIDS: <u>The best way to measure the volume of an irregular solid is to place it in water and find the volume of water it displaces. The difference between the new and old volume measurements is equal to the volume of the object. (Next time you get into a bath</u>, look at the water you displace-that’s your volume!) Mass ELECTRONIC BALANCE: Just put the object on the pan and read the mass. DOUBLE PAN BALANCE: This compares the weight of objects in pans on each side of a balance. To find mass, place something of known mass in one pan, and in the other pan, place the object of unknown mass. When the pans are level, the masses are equal. For other geometric shapes, look in your math notebook. VOLUME DISPLACED SOLID If you are measuring something that needs to be in a container, weigh the empty container on its own first, and then subtract the weight of the container afterward.",
-    "choices": [
-     "Displacing water in a bath causes your physical volume to increase as you enter the tub.",
-     "The volume of water displaced in a bath is caused by the warmth of your body heating the water.",
-     "Your presence in a bath always causes a noticeable splash of water over the edge.",
-     "A bathtub’s water level drops because you physically push the liquid downward.",
-     "Your presence in life leaves a measurable impact, just as displacing water reveals your physical space."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'Your presence in life leaves a measurable impact, just as displacing water reveals your physical space.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'displace'는 '물체가 차지하는 공간만큼 물을 밀어내는 것'을 뜻하는데, 학생은 '목욕탕에서 몸이 커진다'는 물리적 변화로 오해함. 'volume'을 '신체 크기'로 혼동한 듯. → 처방: 물체가 차지하는 공간을 '부피'로 이해하고, 'displace'의 의미를 '물리적 공간 차지'로 정확히 기억하기.\n② 진단: 지문은 '물체의 부피 측정 방법'을 설명한 것인데, 학생은 '물 온도'가 '부피 변화'의 원인으로 오해함. 'warmth'라는 단어를 '원인'으로 오독한 듯. → 처방: 지문의 핵심은 '물체가 차지하는 공간'임을 기억하고, '원인'보다는 '결과'에 집중하여 문제 풀기.\n③ 진단: 지문은 '물체가 차지하는 공간'을 측정하는 방법에 대한 설명인데, 학생은 '물 splash'라는 눈에 띄는 현상에만 주목하여 오해함. 'noticeable splash'가 '부피 측정'과 무관함을 놓친 듯. → 처방: 문제에서 '의미'를 찾을 때는 지문의 핵심 개념(부피 측정 방법)과 선지의 연관성을 먼저 확인하기.\n④ 진단: 지문은 '물체가 차지하는 공간'을 측정하는 방법인데, 학생은 '물리적 힘'으로 '물 내림'을 오해함. 'push the liquid downward'라는 표현을 '원인'으로 오독한 듯. → 처방: 지문의 'displace'는 '공간 차지'를 뜻한다는 점을 기억하고, '물리적 힘'보다는 '부피' 개념에 집중하여 문제 풀기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T04:02:56.695Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 3번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Quick Quiz #54 Match each word in the first column with its definition in the second column. Check your answers here. 1. judicious a. irreversible 2. juxtapose b. lightness 3. kinetic c. using few words 4. labyrinth d. maze 5. laconic e. place side by side 6. lament f. present but not visible 7. lampoon g. bequest 8. languish h. active 9. latent i. become weak 10. laud j. satirize 11. legacy k. mourn 12. lethargy l. praise 13. levity m. exercising sound judgment LIBEL (LYE bul) n a written or published falsehood that injures the reputation of, or defames, someone • The executive said that the newspaper had committed libel when it called him a <u>stinking, no-good, corrupt, incompetent, overpaid, lying, worthless moron</u>. He claimed that the newspaper had libeled him, and that its description of him had been libelous. At the trial, the jury disagreed, saying that the newspaper’s description of the executive had been substantially accurate. Don’t confuse this word with liable, which has an entirely different meaning. Slander is just like libel except that it is spoken instead of written.",
-    "choices": [
-     "The phrase sarcastically uses exaggerated insults to imply that the executive was occasionally incompetent and occasionally overpaid, though not always.",
-     "The phrase sarcastically exaggerates the executive's negative traits to highlight the extreme and baseless nature of the accusations, implying that the newspaper's insults lacked credibility and were intentionally hyperbolic.",
-     "The phrase sarcastically lists the executive's negative traits to argue that the newspaper's accusations were partially true but expressed in an exaggerated manner.",
-     "The newspaper frequently used exaggerated insults to describe the executive, but these were only occasionally based on his actual mistakes rather than being entirely unfounded.",
-     "The phrase literally describes the executive as someone who stinks, is worthless, and lies, meaning the words were used exactly as their dictionary definitions suggest."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'The phrase sarcastically exaggerates the executive's negative traits to highlight the extreme and baseless nature of the accusations, implying that the newspaper's insults lacked credibility and were intentionally hyperbolic.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘드물게’나 ‘부분적으로’라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘드물게’나 ‘부분적으로’가 아니라 ‘대부분’에 가깝습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘드물게’나 ‘부분적으로’가 아니라는 점에 주목해 보세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n③ 진단: ‘부분적으로 사실’이라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘부분적으로’라는 표현은 적절하지 않습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘부분적으로’라는 뜻이 아니라는 점을 기억하세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n④ 진단: ‘드물게 사실’이라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘드물게’라는 표현은 적절하지 않습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘드물게’라는 뜻이 아니라는 점을 기억하세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n⑤ 진단: ‘사전적 의미 그대로’라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘libelous’는 ‘명예를 훼손하는’이라는 뜻으로, ‘사전적 의미 그대로’라는 표현은 적절하지 않습니다. → 처방: ‘명예를 훼손하는’이라는 표현이 ‘사전적 의미 그대로’라는 뜻이 아니라는 점을 기억하세요. ‘libelous’는 ‘명예를 훼손하는’이라는 뜻입니다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]

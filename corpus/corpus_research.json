@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-26T17:19:22.615Z",
+ "updated": "2026-07-26T19:43:07.297Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-26T19:42:40.919Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'단수 주제명사(community, human relationship 등)'가 복수형으로 오용되는 패턴이 빈번하며, 특히 'equal'·'use'·'respect'와 같은 동사와 결합할 때 규칙적인 오류가 발생한다. 또한 'group'·'people' 같은 집합명사가 단수형으로 쓰이는 오류도 다수 확인된다.",
+   "rule": "'단수 집합명사(community, group, human relationship 등)'가 복수형으로 사용될 경우, 문맥상 복수 의미가 아닐 때 단수형으로 수정하라는 규칙을 내신 변형문제에 반드시 포함시킨다. 예를 들어 'community'는 'communities'로, 'group'은 'group'으로, 'human relationship'은 'human relationships'로 오용된 경우를 지적하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-26T17:18:55.834Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "연어(collocation)의 오류는 단어의 결합이 잘못되었을 때 발생하며, 특히 문법적 구조(예: 부사구, 삽입구)나 어순(예: 보어 위치)에서 빈번히 나타난다. 한국어 학습자에게도 유사한 오류 패턴이 관찰된다.",
    "rule": "문장에 삽입구(예: 'In deed', 'In addition')가 포함된 경우, 반드시 쉼표(,)로 구분하여 문법적 오류를 유도하라. 특히 동사가 삽입구 뒤에 오면, 주동사와 보어를 분리하지 않도록 주의시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-21T09:43:00.531Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거분사(-ed) 형태가 '~와 비교하여'의 의미를 가질 때, 'compared to/with' 구문으로 축약되는 패턴이 빈번하다. 또한, 'one of the reason(s)'는 복수형 'reasons'로 수일치를 해야 하며, 'a important'은 관사 오류로 'an important'가 되어야 한다.",
-   "rule": "비교 구문에서 '-ing' 형태의 동명사가 아닌 과거분사(-ed)가 사용될 경우, 'compared to/with'로 표준화하여 문법적 정확성을 확보하라. (예: 'Comparing with' → 'Compared to')",
    "sample": [
     "old english",
     "university press",
