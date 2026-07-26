@@ -1,6 +1,93 @@
 {
- "updated": "2026-07-26T15:32:39.275Z",
+ "updated": "2026-07-26T17:19:22.618Z",
  "samples": [
+  {
+   "ts": "2026-07-26T17:17:54.262Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:\n\n─────────\n[요약문] Overemphasis on grammatical precision leads writers to produce (A) prose, while using 'since' to introduce familiar causal clauses helps avoid implying (B) about others.",
+    "choices": [
+     "(A) stilted writing … (B) judgmental assumptions",
+     "(A) unstructured writing … (B) grammatical rules",
+     "(A) rigid writing … (B) superficial observations",
+     "(A) fluent writing … (B) logical fallacies",
+     "(A) ambiguous writing … (B) causal connections"
+    ],
+    "answer": 1,
+    "explanation": "(A) stilted writing / (B) judgmental assumptions 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 지문에서 'unstructured writing(비구조적 글)'은 언급되지 않았으며, 'since'가 causality(인과관계)를 나타내는 연결사라는 점도 오해한 듯하다. 'since'는 '이미 알려진 이유'를 도입하는 데 쓰이므로 'grammatical rules(문법 규칙)'과는 무관하다. → 처방: 지문에서 'since'가 causality(인과관계)를 나타내는 연결사임을 확인하고, 'unstructured writing'이 아닌 'stilted writing(딱딱한 글)'을 떠올리자.\n③ 진단: 지문에서 'rigid writing(딱딱한 글)'은 'graceless prose(세련되지 못한 글)'와 유사하게 쓰였지만, 'since'가 'superficial observations(표면적 관찰)'을 도입한다고 오해했다. 'since'는 이미 알려진 인과관계를 도입하는 연결사다. → 처방: 지문에서 'since'가 causality(인과관계)를 나타내는 연결사임을 확인하고, 'superficial observations'가 아닌 'judgmental assumptions(판단적 가정)'을 떠올리자.\n④ 진단: 지문에서 'fluent writing(유창한 글)'은 언급되지 않았으며, 'since'가 'logical fallacies(논리적 오류)'를 도입한다고 오해했다. 'since'는 인과관계를 명확히 하는 연결사다. → 처방: 지문에서 'since'가 causality(인과관계)를 나타내는 연결사임을 확인하고, 'logical fallacies'가 아닌 'judgmental assumptions'을 떠올리자.\n⑤ 진단: 지문에서 'ambiguous writing(모호한 글)'은 언급되지 않았으며, 'since'가 'causal connections(인과관계)'를 도입한다고 오해했다. 'since'는 이미 알려진 인과관계를 도입하는 연결사다. → 처방: 지문에서 'since'가 causality(인과관계)를 나타내는 연결사임을 확인하고, 'causal connections'이 아닌 'judgmental assumptions'을 떠올리자.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-26T17:18:48.647Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 2번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "문법 규칙을 엄격히 지키면 문장의 아름다움과 독자의 이해력이 높아진다는 통념은 사실과 다르다.",
+     "글쓴이가 강조하는 것은 문법 오류가 없는 문장보다는 문장의 자연스러운 흐름과 친숙한 정보 전달이다.",
+     "모든 작가는 문법 규칙을 무시하고 유연하게 글을 써야만 훌륭한 글을 쓸 수 있다는 주장은 과장된 일반화이다.",
+     "문법 규칙은 때로는 문장의 명확성과 자연스러움을 해칠 수 있으므로 무조건 배제되어야 한다는 생각은 지나치다.",
+     "글쓴이는 문장의 자연스러움과 명확성을 위해 엄격한 문법 규칙보다는 유연한 문법 사용을 우선해야 한다."
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Writers should prioritize clarity and natural flow over rigid grammatical rules to produce graceful prose.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Writers should prioritize clarity and natural flow over rigid grammatical rules to produce graceful prose.]\n[오답 진단·처방]\n① 진단: ‘문법 규칙을 엄격히 지키면 문장의 아름다움과 독자의 이해력이 높아진다’는 통념을 지문이 직접 언급하지 않았음에도 ‘사실과 다르다’고 단정하여 지문의 핵심 논지를 오해함. → 처방: 지문의 핵심은 ‘문법 오류가 없는 문장’이 아니라 ‘자연스러운 흐름과 친숙한 정보 전달’을 강조한다는 점을 먼저 확인할 것.\n③ 진단: ‘모든 작가가 문법 규칙을 무시해야 한다’는 과장된 주장이 지문에 없음에도 ‘과장된 일반화’라고 주장하여 지문의 균형 잡힌 태도를 오해함. → 처방: 지문은 문법 규칙의 ‘일부 예외’를 인정한다는 점을 기억하고, ‘반드시 무시해야 한다’는 극단적 해석을 피할 것.\n④ 진단: ‘문법 규칙은 때로는 명확성과 자연스러움을 해칠 수 있으므로 무조건 배제되어야 한다’는 지문의 내용과 반대되는 주장을 펼침. → 처방: 지문은 문법 규칙의 ‘일부 예외’를 인정할 뿐, ‘무조건 배제’를 주장하지 않는다는 점을 정확히 읽을 것.\n⑤ 진단: ‘문장의 자연스러움과 명확성을 위해 유연한 문법 사용을 우선해야 한다’는 지문의 요지를 ‘엄격한 문법 규칙보다는’라는 표현으로 오해하여 지나치게 극단적으로 해석함. → 처방: 지문은 문법 규칙의 ‘일부 예외’를 인정하는 것이지, ‘문법 규칙 자체를 배제’하라는 뜻이 아님을 분명히 할 것."
+   }
+  },
+  {
+   "ts": "2026-07-26T17:18:53.800Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can e______, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] explain — 문단의 논지상 이 자리에는 'explain'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-26T15:31:05.581Z",
    "type": "본문찾아쓰기",
@@ -282,95 +369,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'The phrase sarcastically exaggerates the executive's negative traits to highlight the extreme and baseless nature of the accusations, implying that the newspaper's insults lacked credibility and were intentionally hyperbolic.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘드물게’나 ‘부분적으로’라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘드물게’나 ‘부분적으로’가 아니라 ‘대부분’에 가깝습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘드물게’나 ‘부분적으로’가 아니라는 점에 주목해 보세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n③ 진단: ‘부분적으로 사실’이라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘부분적으로’라는 표현은 적절하지 않습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘부분적으로’라는 뜻이 아니라는 점을 기억하세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n④ 진단: ‘드물게 사실’이라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘드물게’라는 표현은 적절하지 않습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘드물게’라는 뜻이 아니라는 점을 기억하세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n⑤ 진단: ‘사전적 의미 그대로’라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘libelous’는 ‘명예를 훼손하는’이라는 뜻으로, ‘사전적 의미 그대로’라는 표현은 적절하지 않습니다. → 처방: ‘명예를 훼손하는’이라는 표현이 ‘사전적 의미 그대로’라는 뜻이 아니라는 점을 기억하세요. ‘libelous’는 ‘명예를 훼손하는’이라는 뜻입니다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T00:16:06.575Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Since semantic clues may occur before or after an unidentified word form, meaning context permits the anticipation of words as well as the successful identification of words when clues follow them. Thus, regressive eye movements are not restricted to beginning readers; they are also common among proficient readers. For example, in the sentence “One should be cautious when using a pesticide to kill insects, ” the critical word pesticide may be entirely new to readers. <u>Readers may pass over that unfamiliar word momentarily, searching for clues in the words that follow</u>. The phrase “to kill insects” is a clue to the identification of the word form (pesticide). Readers may or may not have been regressive eye movements in using such clues. They do not actually have to look back at a word in order to identify it on the basis of the subsequent semantic information.",
-    "choices": [
-     "When readers come across an unfamiliar word, they immediately search for its definition in a dictionary.",
-     "Readers sometimes ignore an unfamiliar word completely and never return to it.",
-     "If readers encounter an unfamiliar word, they should immediately look it up to avoid confusion.",
-     "Most readers always stop reading when they see an unfamiliar word and try to figure out its meaning right away.",
-     "Skilled readers often overlook unknown terms briefly to rely on later context for understanding their meaning."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'Skilled readers often overlook unknown terms briefly to rely on later context for understanding their meaning.'을 함의한다.\n[오답 진단·처방]\n① 진단: 사전 찾기'라는 행동이 지문에 전혀 언급되지 않았으므로, 지문에서 '의미 맥락'을 활용한다고 한 부분을 '사전'으로 오해한 것으로 보입니다. → 처방: 지문에서 '의미 맥락'이나 '후속 단어'를 활용한다고 했으므로, '사전'이라는 단어를 찾으면 안 됩니다. '의미 맥락'에 집중하세요.\n② 진단: 지문에서 '잠시 지나치기'는 '다시 돌아보지 않고'도 가능하다고 했으므로, '절대 돌아오지 않는다'는 지문의 내용과 반대됩니다. → 처방: 지문에서 '잠시' 지나치며 '후속 단어'를 활용한다고 했으므로, '절대 돌아오지 않는다'는 오해입니다. '잠시'라는 말을 기억하세요.\n③ 진단: '즉시 사전 찾기'는 지문에 없으며, 오히려 '후속 단어'를 활용한다고 했으므로, '즉시'라는 강요가 잘못되었습니다. → 처방: 지문에서 '후속 단어'를 활용한다고 했으므로, '즉시'라는 말은 빼고 읽으세요. '후속 단어'에 주목하세요.\n④ 진단: '항상 멈춤'은 지문에서 '항상'이라는 말이 없으며, 오히려 '잠시 지나치기'가 가능하다고 했으므로, 과장된 표현입니다. → 처방: 지문에서 '잠시' 지나치며 '후속 단어'를 활용한다고 했으므로, '항상 멈춤'은 오해입니다. '잠시'라는 말을 떠올리세요.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T00:16:55.433Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 독자는 맥락을 사용하여 익숙하지 않은 단어를 예상하거나 식별합니다.\n주어진 단어: ( or / anticipate / use / unfamiliar / Readers / context / to / identify / words )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Readers use context to anticipate or identify unfamiliar words.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-25T23:14:43.132Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "The ⓐ<u>Grammar</u> Geek 46 10. a) ⓑ<u>Everyone</u> ate one. b) Everyone was eating one. \b \b \b \b \b \b EXERCISE 5: EDITING Edit the following passage for past tense mistakes. You have to love this prof At McGill ⓒ<u>University</u>, four second-year students took Organic Chemistry. Everything went so well for them on the quizzes, mid­ terms and labs, and they each were ⓓ<u>having</u> an A so far in the course. They were so confident that on the ⓔ<u>weekend</u> before their final exams, they decide to go to Ottawa University and party with some friends there. They were having a great time, but after an intense night of partying, they sleep all day Sunday and didn’t made it back to McGill until early Monday morning. Rather than taking the final then, they decided to track down their professor after the final and give him an explanation as to why they were missing it. They explained to him that they had gone to Ottawa for the weekend with the intention to come back in time",
-    "choices": [
-     "grammar: A system of rules and principles for speaking and writing a language.",
-     "everyone: Every person.",
-     "university: Institution of higher education (typically accepting students from the age of ab",
-     "having: To possess, own.",
-     "weekend: A final examination; a test or examination given at the end of a term or class; "
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ의 풀이는 'final'의 정의이다. 'weekend'의 올바른 풀이: The break in the working week, usually two days including the traditional holy o\n[오답 진단·처방]\n① 진단: 문맥상 '문법'이라는 의미를 갖는 'Grammar'를 '어법'이나 '규칙'으로 오독했을 가능성이 있다. → 처방: 문맥을 고려하여 단어의 의미를 파악해야 한다.\n② 진단: 모든 사람을 뜻하는 'everyone'을 특정한 사람이나 단체로 혼동했을 수 있다. → 처방: 단어의 정의와 문맥을 함께 고려해야 한다.\n③ 진단: 'university'를교육기관으로서의 의미를 정확히 이해하지 못했을 가능성이 있다. → 처방: 사전적 정의와 실제 사용 예시를 함께 공부해야 한다.\n④ 진단: 'having'을 소유나 지닌다는 의미로만 이해하여 문맥상 적절한 동사로 오독했을 수 있다. → 처방: 동사와 시제의 일관성을 확인해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
