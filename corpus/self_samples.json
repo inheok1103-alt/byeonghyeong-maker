@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-26T00:17:23.290Z",
+ "updated": "2026-07-26T04:04:27.157Z",
  "samples": [
+  {
+   "ts": "2026-07-26T04:02:56.695Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 3번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": -0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Quick Quiz #54 Match each word in the first column with its definition in the second column. Check your answers here. 1. judicious a. irreversible 2. juxtapose b. lightness 3. kinetic c. using few words 4. labyrinth d. maze 5. laconic e. place side by side 6. lament f. present but not visible 7. lampoon g. bequest 8. languish h. active 9. latent i. become weak 10. laud j. satirize 11. legacy k. mourn 12. lethargy l. praise 13. levity m. exercising sound judgment LIBEL (LYE bul) n a written or published falsehood that injures the reputation of, or defames, someone • The executive said that the newspaper had committed libel when it called him a <u>stinking, no-good, corrupt, incompetent, overpaid, lying, worthless moron</u>. He claimed that the newspaper had libeled him, and that its description of him had been libelous. At the trial, the jury disagreed, saying that the newspaper’s description of the executive had been substantially accurate. Don’t confuse this word with liable, which has an entirely different meaning. Slander is just like libel except that it is spoken instead of written.",
+    "choices": [
+     "The phrase sarcastically uses exaggerated insults to imply that the executive was occasionally incompetent and occasionally overpaid, though not always.",
+     "The phrase sarcastically exaggerates the executive's negative traits to highlight the extreme and baseless nature of the accusations, implying that the newspaper's insults lacked credibility and were intentionally hyperbolic.",
+     "The phrase sarcastically lists the executive's negative traits to argue that the newspaper's accusations were partially true but expressed in an exaggerated manner.",
+     "The newspaper frequently used exaggerated insults to describe the executive, but these were only occasionally based on his actual mistakes rather than being entirely unfounded.",
+     "The phrase literally describes the executive as someone who stinks, is worthless, and lies, meaning the words were used exactly as their dictionary definitions suggest."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'The phrase sarcastically exaggerates the executive's negative traits to highlight the extreme and baseless nature of the accusations, implying that the newspaper's insults lacked credibility and were intentionally hyperbolic.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘드물게’나 ‘부분적으로’라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘드물게’나 ‘부분적으로’가 아니라 ‘대부분’에 가깝습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘드물게’나 ‘부분적으로’가 아니라는 점에 주목해 보세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n③ 진단: ‘부분적으로 사실’이라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘부분적으로’라는 표현은 적절하지 않습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘부분적으로’라는 뜻이 아니라는 점을 기억하세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n④ 진단: ‘드물게 사실’이라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘substantially accurate’는 ‘대체로 사실’이라는 뜻으로, ‘드물게’라는 표현은 적절하지 않습니다. → 처방: ‘대체로 사실’이라는 표현이 ‘드물게’라는 뜻이 아니라는 점을 기억하세요. ‘substantially accurate’는 ‘대부분 사실’이라는 뜻입니다.\n⑤ 진단: ‘사전적 의미 그대로’라는 표현을 통해 오해한 것으로 보입니다. 지문에서 ‘libelous’는 ‘명예를 훼손하는’이라는 뜻으로, ‘사전적 의미 그대로’라는 표현은 적절하지 않습니다. → 처방: ‘명예를 훼손하는’이라는 표현이 ‘사전적 의미 그대로’라는 뜻이 아니라는 점을 기억하세요. ‘libelous’는 ‘명예를 훼손하는’이라는 뜻입니다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-26T00:16:06.575Z",
    "type": "밑줄함의",
@@ -348,25 +383,6 @@
     ],
     "answer": 2,
     "explanation": "(A) wh-movement / (B) internal arguments 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘passive movement’를 ‘wh-movement’와 혼동했으며, ‘surface subjects’를 ‘internal arguments’로 오해했음. 지문에서 stranded quantifier 가 wh-expressions 의 movement 로 남겨진다는 사실은 ‘wh-movement’의 증거로 제시됨. → 처방: ‘wh-movement’이 stranded quantifier 를 남기며, passive participle 의 complement 가 passive 화되면서 internal arguments 가 surface subjects 로 나타난다는 점을 정확히 파악할 것.\n③ 진단: ‘wh-in-situ’를 ‘wh-movement’와 반대로 오해했으며, ‘external arguments’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 설명된다는 점을 강조함. → 처방: ‘wh-in-situ’(제자리 wh-표현)는 stranded quantifier 와 무관하다는 점을 기억하고, ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 사실을 명확히 구분할 것.\n④ 진단: ‘quantifier raising’을 stranded quantifier 의 movement 와 동일시했으며, ‘thematic roles’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 남겨지며 passive participle 의 complement 가 internal arguments 로 나타난다는 점을 설명함. → 처방: ‘quantifier raising’이 stranded quantifier 의 movement 와는 다른 개념임을 인식하고, ‘thematic roles’가 아닌 ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 점을 정확히 파악할 것.\n⑤ 진단: ‘topicalization’을 stranded quantifier 의 movement 와 동일시했으며, ‘agent phrases’를 ‘internal arguments’와 혼동했음. 지문은 stranded quantifier 가 wh-expressions 의 movement 로 남겨지며 passive participle 의 complement 가 internal arguments 로 나타난다는 점을 강조함. → 처방: ‘topicalization’이 stranded quantifier 의 movement 와는 다른 현상임을 인식하고, ‘agent phrases’가 아닌 ‘internal arguments’가 passive participle 의 complement 에서 비롯된다는 점을 정확히 구분할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-25T17:18:37.410Z",
-   "type": "본문어변형빈칸",
-   "level": "중",
-   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
-    "passage": "Recall from our earlier discussion of sentences like (35) that McCloskey argues that stranded quantifiers modifying wh-expressions are left behind via movement of the wh-expression without the quantifier. This being so, sentences such as (63) provide evidence that what all originates as the complement of the passive participle said (with what subsequently (be) passivised on its own, stranding all) – and more generally, that passive subjects are initially merged as thematic objects. A claim which is implicit in the hypothesis that passive subjects originate as thematic objects is that the subjects of active verbs and the complements of passive verbs have the same thematic function. Evidence that this is indeed the case comes from the traditional observation that the two are subject to the same pragmatic restrictions on the choice of expression which can occupy the relevant position, as we see from sentences such as the following (where ?, ?! and ! mark increasing degrees of anomaly):",
-    "choices": [],
-    "answer": null,
-    "explanation": "1) be→being [준동사화(분사구문) — 'with what subsequently being passivised'는 'with' 다음 분사구문으로 'be'가 동명사 'being'으로 전환되어야 함.] · 2) passivised→passivized [표준 철자법 — 'passivise'는 영국식 철자, 'passivize'는 미국식 철자로 통일해야 함(지문 내 일관성).]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

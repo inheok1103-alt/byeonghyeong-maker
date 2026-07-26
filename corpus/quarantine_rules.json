@@ -1,7 +1,23 @@
 {
- "updated": "2026-07-26T00:17:23.284Z",
+ "updated": "2026-07-26T04:04:27.152Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문제에서 지문의 핵심 주제(어휘의 정의·역할)를 명확히 반영한 발문과 선지를 작성하며, 지문 내용의 범위를 벗어나거나 과도한 추론/주관적 해석을 배제하라.",
+   "src": "자가학습:요지",
+   "score": 64,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-07-26T04:03:22.083Z"
+  },
+  {
+   "rule": "원지문 인용 없이 주어진 3단어('match', 'definition', 'check')만 활용해 10단어 한 문장으로 재구성하면, \"match each definition with the correct answer to check.",
+   "src": "자가학습:조건영작",
+   "score": 68,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-07-26T04:03:52.368Z"
+  },
   {
    "rule": "모든 선지 작성 시 문맥에 맞는 완화된 표현(예: 'often', 'sometimes')을 사용하여 과도한 주장이나 비약을 방지하고, 비교 대상은 반드시 명확히 명시하며, 선지의 길이와 통일성을 유지하라.",
    "src": "자가학습:밑줄함의",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-19T16:16:23.748Z"
-  },
-  {
-   "rule": "모든 문항은 정답 선지가 '단일 단위로서 기능 불가(예: cannot function outside the noun phrase)'를 명확히 드러내고, 오답 선지는 'my father'가 하나의 명사구로 기능함을 강조하는 구체적 표현(예: 'my'와 'father'의 결합으로 하나의 단위 형성)을 포함해야 한다.",
-   "src": "자가학습:밑줄함의",
-   "score": 75,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-19T15:16:49.685Z"
-  },
-  {
-   "rule": "원지문은 실제 수능/내신에서 볼 수 있는 자연스러운 문법 오류(예: 시제 오류, 주어-동사 불일치)를 포함하되, 학생이 스스로 오류를 찾아 수정하고 그 이유를 추론하는 방식으로 문제를 구성하라.",
-   "src": "자가학습:복합세트",
-   "score": 74,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-19T13:57:38.428Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

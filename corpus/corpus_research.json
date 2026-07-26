@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-26T00:17:23.286Z",
+ "updated": "2026-07-26T04:04:27.154Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-26T04:03:59.423Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거 시제 동사의 경우 '-ed' 형태가 아닌 불규칙 과거형을 오용하는 경우가 빈번하며, 'a'와 같은 관사 생략, 'by ~ing' 구문의 오용, 'usually'와 같은 빈도부사의 생략이 오답 유형으로 활용될 수 있다.",
+   "rule": "과거 시제 동사의 경우 불규칙 과거형(예: choose→chose)을 '-ed'로 잘못 표기한 오답지를 설계하고, 빈도부사(usually, often 등)를 생략한 문장을 오답으로 제시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-26T00:16:57.202Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 최빈 연어는 'present/past tense + noun phrase' 패턴이 두드러지며, 한국어 학습자의 문법 오류는 '과도한 직역·불필요한 보어 사용·관계사 오용'으로 집약된다. 특히 'how about if' → 'what if'와 같이 관용적 전환 오류가 빈번하다.",
    "rule": "CEFR B1 수준 내신 변형문제에서는 'present/past tense + noun phrase' 구조의 문장을 제시하되, 한국어 학습자의 오류 패턴('직역·보어 과용·관계사 오류')을 유도할 수 있도록 'how about if', 'it's serious but almost people'와 같은 오류 유발 표현을 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-20T16:04:03.351Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "영어 문장의 어순 규칙이 엄격하다는 점을 활용하여, 부사(very soon, very delivered 등)의 위치 오류를 설계할 수 있다. 또한, 전치사(about, in)와의 연어 오류(aboue advance → about advanced)와 같은 '형용사-명사' 결합 오류도 빈번히 활용 가능하다.",
-   "rule": "문장 내 부사(very, moreover 등)는 동사(learn, run out)와의 자연스러운 연어 순서를 유지해야 하며, 전치사(about, in, with)와 결합하는 형용사/명사는 연어 규칙(advanced course material, familiar with students)에 맞게 배치해야 한다.",
    "sample": [
     "old english",
     "university press",
