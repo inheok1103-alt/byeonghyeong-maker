@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-26T11:40:51.174Z",
+ "updated": "2026-07-26T14:00:50.409Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-26T14:00:20.513Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'be 동사'의 누락이 빈번한 오류로 나타나며, 특히 'as ~ as' 구조에서 'be'가 필수적임을 확인할 수 있다. 또한, 철자 오류('refuced'→'refused')와 구두점 오류('In deed'→'Indeed')가 복합적으로 발생하는 패턴을 보인다.",
+   "rule": "CEFR B1 수준 내신 문법 문제에서 'as ~ as' 비교구조와 'be 동사'의 필수 결합을 반드시 포함하여 출제하며, 'be'가 누락된 오류 문항을 1문항 이상 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-26T11:40:27.151Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 '원인과 결과'를 연결하는 구문은 'that is why'나 'except that' 등 접속사+that 절로 명확히 구조화되며, 문장 간 연결 시 콤마와 접속사(and, but 등)를 병용하는 패턴이 빈번하다.",
    "rule": "원인과 결과, 조건, 예외 등을 표현하는 문장은 접속사(that is why, except that, so that 등)+that 절로 명확히 연결하고, 문장 간 연결 시 콤마+접속사(and, but 등)를 반드시 병용하여 문법적 오류(예: 중복 접속사 사용, 콤마 오용)를 방지하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-20T23:24:38.176Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'be + past participle' 구문의 수동태 패턴이 빈번하며, 특히 'be controlled by', 'be fixed' 등 동작주와 피동주 관계가 명확한 경우 수동태가 자연스럽게 사용된다. 또한 'already'의 철자 오류와 'data'의 단수/복수 혼용, 'effect'와 'affection'의 혼동 등 어휘 선택 오류가 자주 발생한다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, '~에 의해 ~되다'의 의미를 지닌 문장은 'be + past participle' 수동태로 표현하도록 출제하며, 이때 동작주(agent)는 'by + 명사'로 명시하거나 생략할 수 있도록 한다.",
    "sample": [
     "old english",
     "university press",
