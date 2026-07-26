@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-26T22:16:03.306Z",
+ "updated": "2026-07-26T23:16:57.424Z",
  "samples": [
+  {
+   "ts": "2026-07-26T23:16:19.264Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "언어는 특정 직업이나 성별에 대한 편견 때문에 비논리적으로 느껴지지만, 이는 인과관계가 뒤바뀐 오해에 불과하다",
+     "언어는 기본적으로 암묵적 전제를 무시하는 표지 용법으로 인해 비논리적으로 느껴질 때가 있지만, 이는 성별과 무관한 보편적 현상이다",
+     "언어는 기본적으로 암묵적 전제를 무시하고 특정 의미를 강조하는 표지 용법으로 인해 비논리적으로 느껴질 때가 있다",
+     "언어는 언제나 암묵적 전제를 무시하는 표지 용법으로 인해 비논리적이며, 이는 문화적 배경과 무관하게 적용된다",
+     "언어의 비논리성은 문화적 배경에 따라 달라지며, 이는 암묵적 전제를 무시하는 표지 용법의 결과가 아니다"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Language is illogical when marked terms override default assumptions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: '특정 직업이나 성별에 대한 편견'이라는 부분만 보고 '인과관계가 뒤바뀐 오해'라는 표현을 '언어의 비논리성'과 연결하지 못해 오해. 지문은 '표지 용법'이 비논리성을 낳는다고 설명하는데, 이 선지는 '편견'에만 초점을 맞춤. → 처방: 지문의 '표지 용법(예: female nurse)'과 '비논리성'의 관계를 정확히 짚고 넘어가기. '표지'가 기본 의미(예: nurse=여성)를 무시하고 특정 의미를 강조하는 경우라는 점 기억하기.\n② 진단: '성별과 무관한 보편적 현상'이라는 표현을 보고 '보편성'에만 주목해 '성별' 관련 예시(예: female nurse)를 무시하거나 '보편적 현상'이라는 말에 현혹됨. 지문은 성별 편견이 아닌 '표지 용법'의 비논리성을 다룸. → 처방: 지문에서 '표지 용법'이 비논리성을 낳는다는 핵심만 기억하고, '보편성'이나 '성별' 같은 부가 설명에 distraction 되지 않기. '표지'가 기본 의미를 무시하는 경우라는 점 집중.\n④ 진단: '언제나'라는 절대적 표현과 '문화적 배경과 무관'이라는 말을 보고 '비논리성'의 범위를 과장해 해석. 지문은 '특정 경우(표지 용법)'에 비논리성이 나타난다고 설명하는데, 이 선지는 '언제나'라는 과장된 표현을 씀. → 처방: 지문의 '특정 예시(예: female nurse)'와 '비논리성'의 관계를 정확히 짚고, '언제나'나 '무관' 같은 과장된 표현은 지문의 범위를 벗어난다는 점 기억하기.\n⑤ 진단: '문화적 배경에 따라 달라진다'는 표현을 보고 '문화적 배경'에만 주목해 '표지 용법'의 역할을 무시하거나 '비논리성'의 원인을 잘못 연결. 지문은 '표지 용법'이 비논리성을 낳는다고 설명하는데, 이 선지는 '문화적 배경'을 비논리성의 원인으로 오해. → 처방: 지문의 '표지 용법(예: female nurse)'이 비논리성을 낳는다는 핵심만 기억하고, '문화적 배경' 같은 부가 설명에 distraction 되지 않기. '표지'가 기본 의미를 무시하는 경우라는 점 집중.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Language is illogical when marked terms override default assumptions.]"
+   }
+  },
+  {
+   "ts": "2026-07-26T23:16:30.789Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 의사나 같은 특정 직업명에 성별 수식어가 붙는 경우와 그렇지 않은 경우의 언어적 차이를 설명할 필요가 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-26T22:15:13.025Z",
    "type": "빈칸(문장)",
@@ -313,76 +367,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] immediately (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T15:31:36.058Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "무표지 C 분석은 유한 종속절에만 적용된다는 기존 통념을 정면으로 반박한다.",
-     "무표지 C 분석의 철자 규정이 주절과 다르다는 주장은 사실과 다르다.",
-     "무표지 C 분석이 모든 문장에 적용되어야 한다는 주장은 과도한 일반화에 불과하다.",
-     "무표지 C 분석은 주절보다는 종속절에서 더 유용하다는 기존 견해를 재고해야 한다.",
-     "영역 확장 차원에서 무표지 C 분석이 주절에도 적용될 수 있음을 주장한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The null C analysis can be extended from finite embedded clauses to main clauses.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 무표지 C 분석이 유한 종속절뿐 아니라 주절에도 적용될 수 있음을 보이며, '기존 통념을 정면으로 반박'하는 내용은 없다. 학생은 '주장'과 '반박'을 혼동했을 가능성이 크다. → 처방: 지문에서 주장하는 바가 무엇인지 정확히 확인한 후, '반박'이 아니라 '확장'의 의미를 찾도록 한다.\n② 진단: 지문은 무표지 C 분석의 '철자 규칙'에 대해 언급하지 않으며, '주절과 다르다'는 주장은 지문 어디에도 없다. 학생은 지문의 핵심 주제가 아닌 세부 사항에 주목했을 수 있다. → 처방: 지문의 핵심 주장(무표지 C 분석의 적용 범위)을 먼저 파악한 후, 세부 규정에 대한 언급이 있는지 확인한다.\n③ 진단: 지문은 무표지 C 분석의 적용 범위를 '주절까지 확장'하는 것을 주장하며, '모든 문장에 적용'해야 한다는 과도한 일반화는 언급하지 않는다. 학생은 '확장'과 '과도한 일반화'를 혼동했을 수 있다. → 처방: 지문의 주장이 '확장'인지 '일반화'인지 명확히 구분한 후, 문맥에 맞는 의미를 선택한다.\n④ 진단: 지문은 무표지 C 분석이 주절에도 적용될 수 있음을 보이며, '주절보다는 종속절에서 더 유용'하다는 기존 견해는 언급하지 않는다. 학생은 무표지 C 분석의 '유용성'에 초점을 맞췄을 가능성이 크다. → 처방: 지문의 주제가 '적용 범위'임을 인지한 후, '유용성'이나 '효과성'에 대한 언급이 있는지 확인한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The null C analysis can be extended from finite embedded clauses to main clauses.]"
-   }
-  },
-  {
-   "ts": "2026-07-26T13:59:28.340Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>LUGUBRIOUS</u> (loo GOO bree us) adj exaggeratedly ⓑ<u>mournful</u> To be mournful is to be sad and ⓒ<u>sorrowful</u>. To be lugubrious is to make a big show of being sad and sorrowful. • Harry’s lugubrious eulogy at the funeral of his dog eventually made everyone start giggling. • The valedictorian suddenly turned lugubrious and began sobbing and tearing her hair at the thought of graduating from high school. Note carefully the pronunciation of this word. ⓓ<u>LUMINOUS</u> (LOO muh nus) adj ⓔ<u>giving</u> off light; glowing; bright • The moon was a luminous disk in the cloudy nighttime sky. • The snow on the ground appeared eerily luminous at night—it seemed to glow. • The dial on my watch is luminous; it casts a green glow in the dark. Quick Quiz #55 Match each word in the first column with its definition in the second column. Check your answers here. 1. libel a. giving off light 2. slander b. try in court 3. litigate c. exaggeratedly mournful 4. loquacious d. easy to understand 5. lucid e. written injurious falsehood 6. lugubrious f. spoken injurious falsehood 7. luminous g. talking a lot",
-    "choices": [
-     "lugubrious: Gloomy, mournful or dismal, especially to an exaggerated degree.",
-     "mournful: Visible electromagnetic radiation. The human eye can typically detect radiation ",
-     "sorrowful: (of a person) exhibiting sorrow; dejected; distraught.",
-     "luminous: Emitting light; glowing brightly.",
-     "giving: (ditransitive) To move, shift, provide something abstract or concrete to someone"
-    ],
-    "answer": 2,
-    "explanation": "정답 ⓑ의 풀이는 'light'의 정의이다. 'mournful'의 올바른 풀이: Filled with grief or sadness; being in a state in which one mourns.\n[오답 진단·처방]\n① 진단: 지문에서 lugubrious 는 'exaggeratedly mournful'로 설명되어 있지만, Gloomy, mournful or dismal, especially to an exaggerated degree.로 번역되어 조금 다르게 설명되어 혼동했을 수 있다. → 처방: 다음부터는 지문에 있는 설명과 영영풀이를 비교하면서 정확하게 이해하도록 한다.\n③ 진단: 지문에서 sorrowful 은 'sad and sorrowful'로 설명되어 있지만, (of a person) exhibiting sorrow; dejected; distraught.로 번역되어 조금 다르게 설명되어 혼동했을 수 있다. → 처방: 다음부터는 지문에 있는 설명과 영영풀이를 비교하면서 정확하게 이해하도록 한다.\n④ 진단: 지문에서 luminous 는 'giving off light; glowing; bright'로 설명되어 있지만, Emitting light; glowing brightly.로 번역되어 조금 다르게 설명되어 혼동했을 수 있다. → 처방: 다음부터는 지문에 있는 설명과 영영풀이를 비교하면서 정확하게 이해하도록 한다.\n⑤ 진단: 지문에서 giving 은 'giving off light'로 설명되어 있지만, (ditransitive) To move, shift, provide something abstract or concrete to someone 로 번역되어 완전히 다르게 설명되어 혼동했을 수 있다. → 처방: 다음부터는 지문에 있는 설명과 영영풀이를 비교하면서 정확하게 이해하도록 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
