@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-25T23:21:20.251Z",
+ "updated": "2026-07-26T00:17:23.290Z",
  "samples": [
+  {
+   "ts": "2026-07-26T00:16:06.575Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Since semantic clues may occur before or after an unidentified word form, meaning context permits the anticipation of words as well as the successful identification of words when clues follow them. Thus, regressive eye movements are not restricted to beginning readers; they are also common among proficient readers. For example, in the sentence “One should be cautious when using a pesticide to kill insects, ” the critical word pesticide may be entirely new to readers. <u>Readers may pass over that unfamiliar word momentarily, searching for clues in the words that follow</u>. The phrase “to kill insects” is a clue to the identification of the word form (pesticide). Readers may or may not have been regressive eye movements in using such clues. They do not actually have to look back at a word in order to identify it on the basis of the subsequent semantic information.",
+    "choices": [
+     "When readers come across an unfamiliar word, they immediately search for its definition in a dictionary.",
+     "Readers sometimes ignore an unfamiliar word completely and never return to it.",
+     "If readers encounter an unfamiliar word, they should immediately look it up to avoid confusion.",
+     "Most readers always stop reading when they see an unfamiliar word and try to figure out its meaning right away.",
+     "Skilled readers often overlook unknown terms briefly to rely on later context for understanding their meaning."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'Skilled readers often overlook unknown terms briefly to rely on later context for understanding their meaning.'을 함의한다.\n[오답 진단·처방]\n① 진단: 사전 찾기'라는 행동이 지문에 전혀 언급되지 않았으므로, 지문에서 '의미 맥락'을 활용한다고 한 부분을 '사전'으로 오해한 것으로 보입니다. → 처방: 지문에서 '의미 맥락'이나 '후속 단어'를 활용한다고 했으므로, '사전'이라는 단어를 찾으면 안 됩니다. '의미 맥락'에 집중하세요.\n② 진단: 지문에서 '잠시 지나치기'는 '다시 돌아보지 않고'도 가능하다고 했으므로, '절대 돌아오지 않는다'는 지문의 내용과 반대됩니다. → 처방: 지문에서 '잠시' 지나치며 '후속 단어'를 활용한다고 했으므로, '절대 돌아오지 않는다'는 오해입니다. '잠시'라는 말을 기억하세요.\n③ 진단: '즉시 사전 찾기'는 지문에 없으며, 오히려 '후속 단어'를 활용한다고 했으므로, '즉시'라는 강요가 잘못되었습니다. → 처방: 지문에서 '후속 단어'를 활용한다고 했으므로, '즉시'라는 말은 빼고 읽으세요. '후속 단어'에 주목하세요.\n④ 진단: '항상 멈춤'은 지문에서 '항상'이라는 말이 없으며, 오히려 '잠시 지나치기'가 가능하다고 했으므로, 과장된 표현입니다. → 처방: 지문에서 '잠시' 지나치며 '후속 단어'를 활용한다고 했으므로, '항상 멈춤'은 오해입니다. '잠시'라는 말을 떠올리세요.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-26T00:16:55.433Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 독자는 맥락을 사용하여 익숙하지 않은 단어를 예상하거나 식별합니다.\n주어진 단어: ( or / anticipate / use / unfamiliar / Readers / context / to / identify / words )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Readers use context to anticipate or identify unfamiliar words.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-25T23:14:43.132Z",
    "type": "영영풀이일치",
@@ -313,74 +367,6 @@
     "choices": [],
     "answer": null,
     "explanation": "1) be→being [준동사화(분사구문) — 'with what subsequently being passivised'는 'with' 다음 분사구문으로 'be'가 동명사 'being'으로 전환되어야 함.] · 2) passivised→passivized [표준 철자법 — 'passivise'는 영국식 철자, 'passivize'는 미국식 철자로 통일해야 함(지문 내 일관성).]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-25T15:30:10.891Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Confusing Words and Homonyms 27 consent (see assent) continual repeated but with breaks in between; chronic Example: The continual problem of our car not starting forced us to sell it. continuous without interruption in an unbroken stream of time or space Example: The continuous dripping of the faucet drove me crazy. core center or crucial part corps trained group corpse dead body cosign to sign along with cosine a trigonometry term council a group of people meeting for a purpose counsel (verb, noun) advise; advice, an attorney creak a sound creek a stream crews many groups cruise a trip or vacation by sea criteria plural of criterion criterion a standard for evaluating or testing something cue a hint; a stimulus queue a line of people waiting currant type of small berry current up to date curser someone who swears or wishes misfortune on another cursor a blinking symbol indicating position on a computer screen dam a barrier obstructing the ﬂow of liquid damn a swear word or curse dammed blocked from ﬂowing damned doomed",
-    "choices": [
-     "continual 은 반복적이지만 중간에 중단되지 않는 문제를 가리킨다",
-     "continuous 는 중간에 중단되는 현상을 설명하는 용어다",
-     "counsel 은 특정 목적을 위한 사람들의 모임을 뜻한다",
-     "queue 는 어떤 행동을 유도하는 힌트를 의미한다",
-     "dam 은 액체의 흐름을 막는 장치를 가리킨다"
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: continual 은 반복적이지만 중간에 중단(breaks)이 있는 문제를 뜻하는데, 지문에서 'repeated but with breaks in between'이라고 분명히 설명함. 학생은 '중단되지 않는'으로 오해한 듯. → 처방: 'continual'과 'continuous'의 뜻을 정확히 구분해서 외우고, 예문과 함께 암기할 것.\n② 진단: continuous 는 중간에 중단 없이 끊임없이 이어지는 현상을 뜻하는데, 지문에서 'without interruption in an unbroken stream'이라고 설명함. 학생은 반대 뜻으로 혼동한 듯. → 처방: 두 단어의 뜻을 비교하며 외우고, 각 예문을 보며 차이를 확실히 이해할 것.\n③ 진단: counsel 은 조언(advise)이나 변호사를 뜻하는데, 지문에서 'advise; advice, an attorney'라고 설명함. 학생은 '특정 목적을 위한 사람들의 모임'으로 오해한 듯. → 처방: 단어의 뜻을 정확히 확인하고, 유사한 발음의 단어(council)와 혼동하지 않도록 주의할 것.\n④ 진단: cue 는 힌트나 자극을 뜻하는데, 지문에서 'a hint; a stimulus'라고 설명함. 학생은 '큐(큐)'와 '큐(줄)'를 혼동한 듯. → 처방: 단어의 뜻을 소리와 함께 기억하고, 유사한 발음의 단어(queue)와 구별할 수 있도록 연습할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-25T14:04:35.671Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "Xvi ACKNOWLEDGMENTS Kasner and Newman’s Mathematics and the Imagination (Simon and Schuster). A. J. Liebling’s The Wayward Pressman. Katherine Mansfield’s The Garden Party (Constable). Jules Masserman’s Principles of Dynamic Psychiatry (Saunders). Charles Morris’s Signs, Language and Bebhaviowr (Prentice-Hall). Lewis Mumford’s The Culture of Cities (Secker & Warburg) Jawaharlal Nehru’s Autobiography (Lane). Ogden and Richard’s The Meaning of Meaning (Kegan Paul). Jean Piaget’s The Child’s Conception of the World (Kegan Paul). James Harvey Robinson’s The Mind in the Making (Harper). P. A. Sorokin’s Man and Society in Calamity (Dutton). Clarence Streit’s Union Now (Cape). Wellek and Warren’s Theory of Literature (Harcourt, Brace). E. B. White’s QOuo Vadimus? (Harper). William Allen White’s Forty Years on Main Street (Rinehart). Lee Wulff’s The Handbook of Freshwater Fishing (Lippincott). Lin Yutang’s The Wisdom of Confucius. And articles in the Chicago Sun-Times, New Masses, The Mation, New Republic, New Statesman and Nation, Pittsburgh Courier, and the Political Science Quarterly.",
-    "choices": [
-     "카스너와 뉴먼의 책 '수학과 상상력'이 사이먼 앤 슈스터에서 출판되지 않았다.",
-     "찰스 모리스의 책 '기호, 언어, 행동'이 프렌티스홀에서 출판되지 않았다.",
-     "자바할랄 네루의 자서전 '나의 인생'이 레인이 아닌 다른 곳에서 출판되었다.",
-     "오그던과 리처즈의 책 '의미의 의미'가 케간 폴에서 출판되었다.",
-     "리 L. 월프의 책 '민물 낚시 핸드북'이 리핀콧이 아닌 다른 출판사에서 출판되었다."
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Mathematics and the Imagination'의 출판사가 'Simon and Schuster'로 정확히 나와 있는데, '사이먼 앤 슈스터'가 아닌 다른 이름으로 오해했을 가능성이 크다. → 처방: 출판사 이름은 원문 그대로 정확히 읽고, 출판사 이름의 표기 오류를 주의해야 한다.\n② 진단: 지문에서 'Signs, Language and Behavior'가 'Prentice-Hall'에서 출판되었다고 명시되어 있지만, '프렌티스홀'이라는 표기 오류로 혼동했을 수 있다. → 처방: 출판사 이름을 철자까지 정확히 확인하고, 약어나 표기 오류에 주의해야 한다.\n③ 진단: 지문에서 'Autobiography'의 출판사가 'Lane'으로 명시되어 있지만, '자서전'이라는 뜻의 'Autobiography'를 '나의 인생'으로 번역하며 출판사 정보까지 혼동했을 수 있다. → 처방: 제목과 출판사를 분리해서 읽고, 제목의 번역 오류를 줄이기 위해 원문 제목을 그대로 확인해야 한다.\n⑤ 진단: 지문에서 'The Handbook of Freshwater Fishing'이 'Lippincott'에서 출판되었다고 나오지만, '리 L. 월프'라는 이름의 표기 오류로 출판사까지 잘못 연결했을 수 있다. → 처방: 저자 이름과 출판사를 따로 확인하고, 저자 이름의 오독이 출판사 선택에 영향을 주지 않도록 주의해야 한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]

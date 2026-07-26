@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-25T23:21:20.247Z",
+ "updated": "2026-07-26T00:17:23.286Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-26T00:16:57.202Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'thereby'가 문장 중간에서 사용될 경우, 결과적 의미를 강조하는 'therefore'로 대체하는 오류 패턴이 빈번하다. 또한 'as much as successful'와 같이 연어 오류('as successful as')가 자연스러운 문법 오류로 활용된다.",
+   "rule": "'thereby'가 결과적 의미를 나타내는 접속사 역할을 할 때는 'therefore'로 대체하여 오답지를 설계하라. 또한 'as [형용사] as' 구문을 오용한 'as much as [형용사]' 형태를 오답으로 제시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-25T23:20:58.437Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "영어 문장의 어순 규칙이 엄격하다는 점을 활용하여, 부사(very soon, very delivered 등)의 위치 오류를 설계할 수 있다. 또한, 전치사(about, in)와의 연어 오류(aboue advance → about advanced)와 같은 '형용사-명사' 결합 오류도 빈번히 활용 가능하다.",
    "rule": "문장 내 부사(very, moreover 등)는 동사(learn, run out)와의 자연스러운 연어 순서를 유지해야 하며, 전치사(about, in, with)와 결합하는 형용사/명사는 연어 규칙(advanced course material, familiar with students)에 맞게 배치해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-20T13:22:45.687Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'for example' 뒤의 콤마는 인용 구문의 시작을 알리는 신호로, 오류 없이 사용될 때 콤마가 필수적이다. 또한 'reason'은 복수형 'reasons'로 쓰이는 경우가 많으며, 'live'는 동사가 아닌 명사로 쓰일 때 'to live' 형태로 연결된다.",
-   "rule": "'for example' 뒤의 콤마는 인용 구문 시작 시 생략하지 말고 반드시 표기하며, 'reason'은 복수형 'reasons'로, 'live'는 'to live' 형태로 동사적 의미를 연결하는지 확인하라.",
    "sample": [
     "old english",
     "university press",
