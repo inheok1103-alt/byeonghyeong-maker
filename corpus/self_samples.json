@@ -1,6 +1,95 @@
 {
- "updated": "2026-07-26T09:27:13.237Z",
+ "updated": "2026-07-26T11:40:51.178Z",
  "samples": [
+  {
+   "ts": "2026-07-26T11:38:45.411Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Verbs Base: drink, used as (1) infinitive: I may drink, I want to drink. (2) imperative: drink this! (3) present indicative: I drink. (4) present subjunctive: if he drink. Third person indicative: drinks. Preterit: drank. Second participle: drunk. Form in -ing, drinking, used as (1) first participle. (2) gerund. Derivation of Word-Classes 7.71. The reader will have noticed that some words were given as examples both of substantives and adjectives, others as substantives and verbs, and others again as adjectives and adverbs. This shows that in order to find out what class a word belongs to it is not enough to consider its form in itself; what is decisive is the way in which the word in connected speech “behaves” towards other words, and in which other words behave towards it. If we find that one and the same form is used now as a substantive, now as an adjective or verb, this does not mean that the distinction between word-classes Word-Classes 41\n\n─────────\n[요약문] Verbs exhibit (A) syntactic flexibility through their (B) grammatical roles in sentences, which determines their word-class identity rather than mere morphological form.",
+    "choices": [
+     "(A) lexical ambiguity … (B) structural rigidity",
+     "(A) contextual adaptation … (B) functional categorization",
+     "(A) conjugational shift … (B) phonological identity",
+     "(A) formal derivation … (B) pragmatic function",
+     "(A) morphological variation … (B) semantic categorization"
+    ],
+    "answer": 2,
+    "explanation": "(A) contextual adaptation / (B) functional categorization 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘lexical ambiguity’는 ‘단어의 의미가 여러 가지’라는 뜻인데, 지문은 ‘단어의 형태가 아니라 문장에서의 역할’이 중요하다고 설명하여 ‘의미’가 아닌 ‘문맥’(contextual)을 다룬다. ‘structural rigidity’는 ‘문법적 형태가 변하지 않는다’는 뜻인데, 지문은 동사의 형태가 문장에서 바뀌는 예를 보여준다. → 처방: ‘의미’가 아니라 ‘문장에서의 역할’이 중요하다는 점을 먼저 떠올리며, ‘변하지 않는다’는 뜻의 ‘rigidity’를 버리고 ‘적응’이라는 뜻을 가진 ‘adaptation’을 떠올려라.\n③ 진단: ‘conjugational shift’는 ‘동사의 활용 변화’를 뜻하는데, 지문은 동사의 활용뿐 아니라 명사·형용사 등 다른 품사와의 관계도 다룬다. ‘phonological identity’는 ‘소리 형태의 동일성’을 뜻하는데, 지문은 소리보다는 문장에서의 역할에 초점을 둔다. → 처방: ‘소리’가 아니라 ‘문장에서의 역할’을 중심으로 문제를 읽고, ‘변화’라는 단어보다 ‘적응’이라는 단어를 떠올려라.\n④ 진단: ‘formal derivation’는 ‘형태적 파생’을 뜻하는데, 지문은 동사의 형태 변화보다는 문장에서의 기능적 역할에 초점을 둔다. ‘pragmatic function’은 ‘화용적 기능’을 뜻하는데, 지문은 문법적 역할(구조적 기능)을 설명한다. → 처방: ‘형태’가 아니라 ‘문장에서의 역할’을 떠올리며, ‘화용적’보다는 ‘기능적’이라는 단어를 떠올려라.\n⑤ 진단: ‘morphological variation’는 ‘형태적 변화’를 뜻하는데, 지문은 동사의 형태 변화뿐 아니라 명사·형용사와 같은 다른 품사와도 연관지어 설명한다. ‘semantic categorization’는 ‘의미적 범주화’를 뜻하는데, 지문은 문법적 역할(기능적 범주화)을 다룬다. → 처방: ‘형태’가 아니라 ‘문장에서의 역할’을 떠올리며, ‘의미’가 아니라 ‘기능’이라는 단어를 떠올려라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-26T11:40:14.088Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Verbs Base: drink, used as (1) infinitive: I may drink, I want to drink. (2) imperative: drink this! (3) present indicative: I drink. (4) present subjunctive: if he drink. Third person indicative: drinks. Preterit: drank. Second participle: drunk. Form in -ing, drinking, used as (1) first participle. (2) gerund. Derivation of Word-Classes 7.71. The reader will have noticed that some words were given as examples both of substantives and adjectives, others as substantives and verbs, and others again as adjectives and adverbs. This shows that in order to find out what class a word belongs to it is not enough to consider its form in itself; what is decisive is the way in which the word in connected speech “behaves” towards other words, and in which other words behave towards it. If we find that one and the same form is used now as a substantive, now as an adjective or verb, this does not mean that the distinction between word-classes Word-Classes 41",
+    "choices": [
+     "'drink'는 동사뿐 아니라 명사로도 사용될 수 없다.",
+     "'drink'는 현재형에서 세 번째 인칭 단수에 '-s'가 붙지 않는다.",
+     "'drink'의 과거형은 'drank'이며 과거 분사형은 'drank'이다.",
+     "'drink'의 '-ing'형은 현재 분사 또는 동명사로 사용된다.",
+     "단어의 품사는 형태만으로 결정되며 문맥에 따라 달라지지 않는다."
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'drink'가 명사로도 사용된다고 예시로 언급되었음에도, '동사뿐 아니라 명사로도 사용될 수 없다'고 오해한 것. → 처방: 단어의 품사를 판단할 때는 문맥에서 그 단어의 역할(명사/동사/형용사 등)을 확인해야 한다.\n② 진단: 지문에서 'drinks'가 세 번째 인칭 단수 현재형으로 언급되었음에도, '-s'가 붙지 않는다고 오해한 것. → 처방: 동사의 현재형에서 세 번째 인칭 단수는 '-s'가 붙는 규칙을 기억하고, 예외가 아닌지 확인한다.\n③ 진단: 지문에서 'drank'는 과거형이고 'drunk'는 과거 분사형이라고 명시되었음에도, 둘 다 'drank'라고 오해한 것. → 처방: 동사의 과거형과 과거 분사형을 따로 공부하고, 각 동사의 규칙/불규칙형을 확인한다.\n⑤ 진단: 지문에서 '단어의 품사는 문맥에 따라 달라질 수 있다'고 설명되었음에도, '형태만으로 결정된다'고 오해한 것. → 처방: 단어의 형태뿐 아니라 문장에서 다른 단어들과의 관계(행동)를 보고 품사를 판단하는 습관을 기른다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-26T11:40:24.749Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] The reader will have noticed that some words were given as examples both of substantives and adjectives, others as substantives and verbs, and others again as adjectives and adverbs.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 독자는 어떤 단어는 명사와 형용사의 예로, 어떤 단어는 명사와 동사의 예로, 또 어떤 단어는 형용사와 부사의 예로 제시되었음을 알게 될 것입니다. (구문 포인트: 병렬 구조(parallel structure) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-26T06:51:22.333Z",
    "type": "밑줄함의",
@@ -297,92 +386,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'to crack down on flagrant cheating at the high school.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘예방하려고’를 골랐는데, 지문은 부정행위가 이미 일어난 후 ‘단속·징계’를 강조한다. ‘예방’이라는 단어는 부정행위가 일어나기 전 행동을 가리키므로 지문 내용과 맞지 않다. → 처방: ‘예방’이라는 단어가 나오면 부정행위가 일어나기 전 행동을 떠올리고, 지문은 이미 일어난 부정행위에 대한 ‘단속’을 말하고 있는지 확인하기.\n③ 진단: ‘불성실한 감독관을 징계하려고’를 골랐는데, 지문은 부정행위를 한 ‘학생(culprit)’을 처벌하는 내용이 주를 이룬다. ‘감독관’을 징계한다는 말은 지문에 없다. → 처방: ‘징계’라는 단어가 나오면 누가 징계를 당하는지 지문을 꼼꼼히 읽고, 학생과 선생 중 누가 부정행위의 주체인지 확인하기.\n④ 진단: ‘모든 학교의 부정행위를 근절하려고’를 골랐는데, 지문은 ‘우리 학교’에 대한 내용만 다룬다. ‘모든 학교’라는 말은 지문에 없다. → 처방: ‘모든’이라는 말이 나오면 범위가 어디까지인지 확인하고, 지문이 특정 학교(우리 학교)에 대한 내용인지 확인하기.\n⑤ 진단: ‘부정행위를 엄격히 단속하기 위해’를 골랐는데, 이 말은 부정행위가 이미 일어난 후 ‘단속’을 한다는 뜻이지만, 지문은 부정행위를 ‘엄격히 단속’하는 ‘목적’이 아니라 ‘실행’ 자체를 말하고 있다. → 처방: ‘~하려고’라는 말이 나오면 목적(why)을 묻는 것인지, 실행(what)을 묻는 것인지 확인하고, 지문이 어떤 의도를 담고 있는지 다시 읽기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to crack down on flagrant cheating at the high school.]"
-   }
-  },
-  {
-   "ts": "2026-07-25T21:11:03.178Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.75,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Under duress, the faculty reported the names of the culprits.\n② Television sleuths are ________________ in their pursuit of lawbreakers.\n③ The ________________ was caught with his fingers in the cookie jar.\n④ He issued bulletins and began to admonish those teachers who did not proctor alertly.\n⑤ Sample Sentences Into which sentences do the new words fit best?\n⑥ NEW WORDS flagrant flā´ grənt admonish ad mon´ ish duress d res´ culprit kul´ prit inexorable in ek´ sər ə bəl WEEK 5 DAY 2 CRACKING DOWN Mr. Dorsey, our new principal, determined to do something about the flagrant cheating at our high school.\n⑦ Several crib sheets were turned in as tangible* evidence of the cheating.\n⑧ Mr. Dorsey’s inexorable campaign against the wrong-doers seemed to be paying off.\n⑨ The confession was signed under ________________ , the attorney claimed.",
-    "choices": [
-     "⑥-④-①-⑦-⑧-③-⑤-②-⑨",
-     "④-⑥-①-⑦-⑧-⑤-③-②-⑨",
-     "⑥-④-①-⑦-⑧-⑤-③-②-⑨",
-     "⑥-④-⑦-①-⑧-⑤-③-②-⑨",
-     "⑥-④-①-⑦-⑧-⑤-②-③-⑨"
-    ],
-    "answer": 3,
-    "explanation": "정답 배열은 ⑥-④-①-⑦-⑧-⑤-③-②-⑨. 흐름: ⑥ → ④ → ① → ⑦ → ⑧ → ⑤ → ③ → ② → ⑨ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ⑦의 순서가 잘못되어 '체포'와 '증거'의 흐름이 깨졌다. ①은 '죄인 이름 보고'로 ⑦의 '체크시트 증거'보다 앞설 수 없다. → 처방: 문장의 순서를 '원인(6) → 행동(4) → 결과(1) → 증거(7)'로 따라가며 배치하라.\n② 진단: ⑤가 ③보다 먼저 오면서 '새로운 단어 예문'이 '범인 잡기'보다 앞서야 한다는 착오가 있었다. ⑤는 문장 끝에 있어야 한다. → 처방: ⑤를 문장 맨 마지막에 둬야 한다는 규칙을 기억하라. '새로운 단어 예문은 항상 마지막'이다.\n④ 진단: ②가 ③보다 먼저 오면서 '수사관의 추적'이 '범인 잡기'보다 앞선다는 오해가 있었다. ③이 '범인 잡기'의 결과이므로 ②는 그 뒤에 와야 한다. → 처방: ③(범인 잡기)이 먼저고 ②(수사관의 추적)는 그 뒤에 오는 구조임을 기억하라.\n⑤ 진단: ⑤가 ②와 ③ 사이에 배치되어 '새로운 단어 예문'의 위치를 잘못 이해했다. ⑤는 문장 끝으로 고정되어야 한다. → 처방: ⑤는 문장 맨 마지막에만 오는 고정 위치임을 명심하라. 예문은 항상 마지막이다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-25T17:17:27.797Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: s)\n[영영풀이] The decision or judgement of a jury or court; a verdict.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] sentences (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-25T17:17:57.450Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "수동문의 주어와 능동문의 보어는 표현 제한이 동일하여 같은 의미역을 나타낸다",
-     "수동문의 주어는 능동문의 보어와 부분적으로 의미역이 일치할 때가 있다",
-     "수동문과 능동문의 주어는 언제나 동일한 의미역을 반드시 지닌다",
-     "수동문의 주어와 능동문의 보어는 의미역이 같을 수도 있지만, 반드시 그런 것은 아니다",
-     "수동문의 주어와 능동문의 보어는 표현 방식만 다를 뿐, 의미역은 동일하게 적용된다"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Passive subjects and active verb complements share the same thematic function, as evidenced by identical pragmatic restrictions on their expressions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘부분적으로’라는 표현이 지문의 ‘동일한(pragmatic restrictions)’이라는 주장과 충돌한다는 점을 놓쳤다. ‘부분적’이라는 말은 지문에서 다루는 전제와 맞지 않는다. → 처방: ‘부분적’이라는 단어가 지문에서 언급된 ‘동일’이라는 의미를 약화시킬 수 있음을 기억하고, 지문의 ‘same’라는 표현에 집중하라.\n③ 진단: ‘언제나 반드시’라는 절대적 표현이 지문의 ‘same pragmatic restrictions’라는 제한적 주장과 모순됨을 간파하지 못했다. 지문은 ‘항상’이나 ‘반드시’를 쓰지 않는다. → 처방: ‘언제나 반드시’라는 표현이 지문에서 ‘same’이라는 한정된 범위를 넘어서는지 확인하라. 제한적 조건을 먼저 떠올려라.\n④ 진단: ‘같을 수도 있지만, 반드시 그런 것은 아니다’라는 유보적 표현이 지문의 ‘same’이라는 단정적 주장을 오해하게 했다. 지문은 ‘항상’ 동일하다고 주장하지 않는다. → 처방: ‘same’이라는 단어가 지문에서 ‘항상’ 동일하다는 뜻임을 기억하고, 유보적 표현을 배제하라.\n⑤ 진단: ‘표현 방식만 다를 뿐’이라는 말은 지문의 ‘same pragmatic restrictions’라는 핵심 주장과 어긋난다. 지문은 표현 방식뿐 아니라 의미역까지 동일하다고 강조한다. → 처방: ‘표현 방식’이라는 말이 ‘의미역’과 분리되어 있지 않음을 확인하고, 지문의 ‘pragmatic restrictions’가 의미역과 직접 연결됨을 떠올리라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Passive subjects and active verb complements share the same thematic function, as evidenced by identical pragmatic restrictions on their expressions.]"
    }
   }
  ]
