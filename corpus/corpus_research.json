@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-26T21:15:21.356Z",
+ "updated": "2026-07-26T22:16:03.302Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-26T22:15:38.749Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사구 내 관사(a/an/the) 위치와 수 일치 오류가 빈번하며, 특히 'a such' → 'such a'로의 재배열과 복수명사/단수명사 혼동이 두드러진다.",
+   "rule": "CEFR B1 수준 이하의 내신 문제에서, 관사(a/an/the)의 올바른 배치(예: 'a such' → 'such a')와 명사의 수(단수/복수) 일치를 필수적으로 검증하는 문항을 20% 이상 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-26T21:14:54.447Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "이 코퍼스에서 'by + 도구' 구문(예: by computer)과 'enjoy + 전치사' 구문(예: enjoying in it)이 오류로 자주 등장하며, 이는 학습자들이 연어 규칙을 간과하는 경향을 반영한다. 또한 'which'가 이끄는 절의 동사 형태(원형 vs. -ing/ed) 오류도 빈번하다.",
    "rule": "'by + 도구' 구문(예: by computer, by hand)은 전치사 'by'를 반드시 사용해야 하며, 'enjoy'는 전치사 없이 직접 목적어를 취하므로 'enjoying in it'은 'enjoying it'으로 수정해야 한다. 또한 관계대명사 'which'가 이끄는 절의 동사는 문맥에 따라 능동형(-ing) 또는 수동형(-ed)으로 정확히 변환해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-21T14:27:02.699Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'exam', 'subject', 'era' 등 단수 명사가 문맥상 복수 의미로 사용될 때 복수형으로 변환하는 패턴이 빈번하다는 사실을 확인할 수 있었다.",
-   "rule": "복수 의미를 내포하는 명사(예: exam, subject, era)가 주어일 경우, 문장의 동사는 복수형(are, suit, lives 등)으로 일치시켜야 한다.",
    "sample": [
     "old english",
     "university press",
