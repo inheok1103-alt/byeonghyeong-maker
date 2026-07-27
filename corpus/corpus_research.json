@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-27T18:51:12.855Z",
+ "updated": "2026-07-27T20:46:46.957Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-27T20:46:24.010Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "동사-전치사 결합 오류가 빈번하며, 특히 'effect'와 'affect'의 혼동이 두드러진다. 또한 문장 내 시제 일관성(present tense vs. past tense)과 구두점 오류(콤마 위치)가 자주 발생한다.",
+   "rule": "학생들이 'effect'와 'affect'를 혼동하지 않도록, 'effect'는 주로 명사('영향')로, 'affect'는 동사('영향을 미치다')로 사용된다는 규칙을 강조하고, 연습 문제에서 빈칸에 동사/명사를 삽입하도록 하여 시제와 품사 일치 오류를 점검한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-27T18:50:46.936Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거 시제 동사와 현재 시제 동사가 혼용되는 오류가 빈번하며, 명사구 내 불필요한 관사(a/the) 사용이나 동사 형태(3인칭 단수, 과거형, 원형) 오류가 두드러진다.",
    "rule": "과거 시제 문맥에서 'know'는 'knew'로, 'develop'은 'develops'로, 'need to' 뒤에는 동사원형이 아닌 명사구가 오도록 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-22T06:44:45.882Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어 학습자들이 자주 혼동하는 철자(already/already), 어휘 선택(realistic/realist), 그리고 문법적 오류(소유동사+명사+be동사 구조)에서 유래된 패턴이다. 특히 '~의 상태/특성'을 나타낼 때 형용사 형태가 아닌 명사형을 오용하는 경향이 두드러진다.",
-   "rule": "CEFR B1 수준 이하의 문항에서, '~한 상태/특성'을 설명할 때 '-ic' 또는 '-ical'로 끝나는 형용사(예: realistic, historical)를 사용하도록 유도하는 문항을 출제하라. 단, 철자 오류(예: 'succesfull' → 'successful')와 소유동사+명사+be동사 구조(예: 'in possetion' → 'in possession')도 함께 검증하도록 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",
