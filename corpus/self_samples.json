@@ -1,6 +1,96 @@
 {
- "updated": "2026-07-27T00:17:02.733Z",
+ "updated": "2026-07-27T04:10:40.362Z",
  "samples": [
+  {
+   "ts": "2026-07-27T04:08:02.613Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.83,
+    "D": -0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어와 스와힐리어의 타동사-목적어 일치 현상의 가시적 차이를 비교하려고",
+     "영어에서 타동사와 목적어 간의 일치 현상이 보이지 않지만, 스와힐리어와 같은 언어에서는 객체 일치 형태가 드러난다는 사실을 설명하려고",
+     "스와힐리어에서 타동사와 목적어의 일치 형태가 문법적으로 필수적임을 강조하려고",
+     "언어별로 타동사와 목적어의 일치 현상이 나타나는 방식이 상이하다는 점을 지적하려고",
+     "영어보다 스와힐리어에서 타동사와 목적어의 일치 현상이 더 빈번히 일어난다고 주장하려고"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'The agreement between a transitive verb and its object is invisible in English but visible in languages like Swahili with overt object-agreement morphology.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문은 영어와 스와힐리어의 타동사-목적어 일치 현상의 '가시적 차이'를 설명하는 것이지, '비교'를 목적으로 삼지 않았다. 학생은 '비교'라는 단어에만 주목해 오독했을 것이다. → 처방: 지문 전체를 빠르게 훑으며 '비교'라는 단어가 나오면 그 문장만 읽는 것이 아니라, 지문이 '설명'하는 목적인지 확인하기 위해 첫 문장과 결론 부분을 집중해서 읽기.\n③ 진단: 지문은 스와힐리어의 객체 일치 형태가 '드러난다는 사실'을 설명하지, '필수적임'을 강조하지 않았다. 학생은 '강조'라는 단어에만 반응해 오독했을 것이다. → 처방: 지문의 핵심 문장(첫 문장과 결론)을 읽고, 그 문장이 '강조'나 '주장'을 담고 있는지 확인하기. 설명문은 보통 사실 전달이므로 '~임을 강조하려고' 같은 표현이 없음을 기억하기.\n④ 진단: 지문은 언어별 일치 방식의 '상이점'을 지적하는 것이 아니라, 영어와 스와힐리어의 '특정 사례'를 통해 일치 현상의 가시성을 설명한다. 학생은 '상이점'이라는 포괄적 단어에 끌려 오독했을 것이다. → 처방: 지문의 첫 문장과 결론을 읽고, 그 문장이 '특정 언어의 특징'을 설명하는지, 아니면 '여러 언어의 공통점/차이점'을 지적하는지 명확히 구분하기.\n⑤ 진단: 지문은 영어보다 스와힐리어에서 일치 현상이 '더 빈번히 일어난다'는 주장을 하지 않는다. 학생은 '빈번히'라는 단어에만 주목해 오독했을 것이다. → 처방: 지문의 핵심 문장(첫 문장과 결론)을 읽고, 그 문장에 '빈도'나 '빈번히' 같은 단어가 있는지 확인하기. 설명문은 보통 '존재 여부'나 '형태'에 초점을 맞추므로 그런 단어는 없음을 기억하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: The agreement between a transitive verb and its object is invisible in English but visible in languages like Swahili with overt object-agreement morphology.]"
+   }
+  },
+  {
+   "ts": "2026-07-27T04:08:32.674Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Agreement between a transitive verb and its object is invisible in English (in the sense that it has no overt phonetic manifestation), but is visible in languages like Swahili with overt object-agreement ____ . Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.",
+    "choices": [
+     "agreement verbs",
+     "structural relations",
+     "morphological marking",
+     "semantic agreement",
+     "phonetic patterns"
+    ],
+    "answer": 3,
+    "explanation": "빈칸에는 'morphological marking'가 들어가 글의 논지를 완성한다 (본문 'object-agreement morphology'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘agreement verbs’를 골랐다면, 지문에서 ‘overt object-agreement’라는 표현을 ‘동사 자체의 성질’로 오해했을 가능성이 큽니다. ‘agreement’는 ‘동사-목적어 간 일치’(즉, 문법적 관계)를 뜻하는데, 이를 ‘동사 종류’로 혼동한 것입니다. → 처방: ‘agreement’는 ‘일치·표지’라는 뜻임을 기억하고, 지문에서 ‘visible in languages like Swahili with overt object-agreement’를 다시 읽어보세요. ‘일치’가 어떻게 ‘형태적으로 드러나는지’(morphological marking)를 확인하세요.\n② 진단: ‘structural relations’를 골랐다면, 지문이 ‘visible’이라는 단어를 ‘구조적 관계’(예: 통사적 위치)로 오해했을 가능성이 큽니다. 그러나 지문은 ‘형태적으로 드러남’을 의미하는 ‘visible’이므로 구조적 관계가 아니라 ‘형태적 표지’를 가리킵니다. → 처방: ‘visible’이란 단어의 의미를 정확히 파악하세요. ‘형태적으로 드러나는지’(morphological marking)를 묻는 것임을 기억하고, ‘구조적 관계’와 혼동하지 마세요.\n④ 진단: ‘semantic agreement’를 골랐다면, 지문에서 ‘agreement’가 ‘의미적 일치’(예: 주어-동사 수 일치)가 아니라 ‘문법적 일치’를 뜻한다는 점을 놓쳤습니다. 영어에서 ‘agreement’는 통사적(문법적) 관계를 가리키며, 의미적 일치와는 다릅니다. → 처방: ‘agreement’가 통사적(문법적) 관계를 뜻한다는 점을 기억하세요. ‘의미적 일치’와 혼동하지 말고, 지문에서 ‘overt object-agreement’를 ‘형태적으로 드러나는 문법적 일치’로 해석하세요.\n⑤ 진단: ‘phonetic patterns’를 골랐다면, 지문이 ‘overt’라는 단어를 ‘발음 가능한 패턴’으로 오해했을 가능성이 큽니다. 그러나 ‘overt’는 ‘형태적으로 드러나는’(morphological) 것이지, ‘발음’(phonetic)과는 다릅니다. 지문은 ‘형태적 표지’를 문제 삼고 있습니다. → 처방: ‘overt’는 ‘형태적으로 드러나는’(morphological marking)을 뜻한다는 점을 기억하세요. ‘발음’(phonetic)과 혼동하지 말고, ‘형태적 표지’가 무엇인지 다시 확인하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-27T04:08:46.322Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 이 문장에서 필자는 영어에서 동사-목적어 간reement가 보이지 않지만 스와힐리어 등에서는 형태적으로 드러난다고 주장하며, Earliness Principle에 따라 목적어가 동사에 의해 조기에 case가 부여되어 T-사이클에서 비활성화됨으로써 HAVE가 he에 agree하고 nominative를 부여한다고 설명한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-27T00:16:18.535Z",
    "type": "안내문일치",
@@ -278,109 +368,6 @@
     ],
     "answer": 3,
     "explanation": "정답 조합: (A) curtailed - (B) CYNIC - (C) cursory. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A) extended’를 선택했는데, ‘curtailed’의 뜻(‘~을 중단하다’)과 반대인 ‘연장하다’를 고른 이유는 ‘vet 가 lawn mower 로 고양이 꼬리를 자르려는 시도를 중단하지 않고 계속했다는 오해’를 한 것 같다. 지문에서 ‘she stopped trying’이란 문장이 있으니 ‘curtailed’를 써야 한다. → 처방: ‘curtailed’의 뜻을 정확히 기억하고, 지문에서 ‘stopped trying’이란 단서가 나오면 무조건 ‘curtailed’를 선택하도록 연습하라.\n② 진단: ‘(B) optimist’를 선택했는데, ‘cynic’의 뜻(‘인간을 믿지 않는 사람’)과 반대인 ‘낙관주의자’를 고른 이유는 ‘인간을 믿는 사람’을 떠올렸기 때문이다. 지문에서 ‘deeply distrusts human nature’라고 설명이 있으니 ‘cynic’를 써야 한다. → 처방: ‘cynic’의 뜻을 정확히 기억하고, ‘distrust’라는 단서가 나오면 무조건 ‘cynic’를 선택하도록 연습하라.\n④ 진단: ‘(C) thorough’를 선택했는데, ‘cursory’의 뜻(‘대충 하는’)과 반대인 ‘철저한’을 고른 이유는 ‘대충이 아닌 꼼꼼한 행동’을 떠올렸기 때문이다. 지문에서 ‘a cursory attempt’는 ‘대충 하는 시도’라는 뜻이니 ‘cursory’를 써야 한다. → 처방: ‘cursory’의 뜻을 정확히 기억하고, ‘attempt’라는 단서가 나오면 무조건 ‘cursory’를 선택하도록 연습하라.\n⑤ 진단: ‘(B) optimist’를 선택했는데, ‘cynic’의 뜻을 반대로 이해하고 ‘인간을 믿는 사람’을 떠올렸기 때문이다. 지문에서 ‘distrust’라는 단서가 나오면 ‘cynic’를 써야 한다. 또한 ‘(C) cursory’를 선택했는데, ‘thorough’의 뜻을 반대로 이해하고 ‘대충’이 아닌 ‘철저한’을 떠올렸기 때문이다. → 처방: ‘cynic’과 ‘thorough’의 뜻을 정확히 기억하고, ‘distrust’나 ‘attempt’라는 단서가 나오면 무조건 해당 단어를 선택하도록 연습하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T19:42:31.122Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "To make a cursory attempt at learning French is to memorize a couple of easy words and then give up. CURTAIL (kur TAYL) v to shorten; to cut short • The vet curtailed her effort to cut the cat’s tail with the lawn mower. That is, she stopped trying. To curtail a tale is to cut it short. CYNIC (SIN ik) n one who deeply distrusts human nature; one who believes humans are motivated only by selfishness • When the pop star gave a million dollars to the museum, cynics said he was merely trying to buy himself a reputation as a cultured person. To be cynical is to be extremely suspicious of the motivations of other people. Cynicism is general grumpiness and pessimism about human nature. Quick Quiz #29 Match each word in the first column with its definition in the second column. Check your answers here. 1. culpable a. free from guilt 2. exculpate b. shorten 3. cursory c. one who distrusts humanity 4. curtail d. hasty 5. cynic e. guilty D\n\n─────────\n[요약문] Attempting to learn a language with (A) leads to (B) the pursuit entirely.",
-    "choices": [
-     "(A) cynicism … (B) abandoning",
-     "(A) thoroughness … (B) persevering",
-     "(A) diligence … (B) resuming",
-     "(A) superficiality … (B) abandoning",
-     "(A) cursory … (B) sustaining"
-    ],
-    "answer": 4,
-    "explanation": "(A) superficiality / (B) abandoning 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘cynicism’이 ‘인간을 불신하는 태도’를 뜻한다는 점은 맞지만, 지문에서 ‘cursory attempt’이 ‘대충 배우는 것’을 뜻한다는 사실을 무시하고 ‘시도 자체’를 오해한 듯하다. ‘cynicism’이 학습의 실패와 직접 연결되지 않는다. → 처방: ‘cursory’를 먼저 확인하고, 지문에서 ‘시도 자체’를 ‘대충’으로 설명한다는 점을 기억하자. ‘cynicism’이 아니라 ‘superficiality’가 ‘대충’이라는 뜻을 가진 단어임을 떠올려라.\n② 진단: ‘thoroughness’가 ‘철저함’을 뜻한다는 점은 맞지만, 지문에서 ‘cursory attempt’이 ‘대충 배우는 것’을 뜻한다는 사실을 무시하고 ‘철저한 시도’를 떠올렸다. ‘thoroughness’가 ‘대충’이 될 수 없다. → 처방: ‘cursory’의 뜻을 정확히 기억하고, ‘thoroughness’가 반대 의미를 가진다는 점을 떠올려라. ‘철저함’이 아니라 ‘대충’이 정답임을 확인하자.\n③ 진단: ‘diligence’가 ‘부지런함’을 뜻한다는 점은 맞지만, 지문에서 ‘cursory attempt’이 ‘대충 배우는 것’을 뜻한다는 사실을 무시하고 ‘부지런한 시도’를 떠올렸다. ‘diligence’가 ‘대충’이 될 수 없다. → 처방: ‘cursory’의 뜻을 정확히 기억하고, ‘diligence’가 ‘부지런함’이라는 뜻을 가진다는 점을 떠올려라. ‘부지런함’이 아니라 ‘대충’이 정답임을 확인하자.\n⑤ 진단: ‘cursory’가 ‘대충’이라는 뜻을 가진다는 점은 맞지만, ‘sustaining’이 ‘계속하는 것’이 아니라 ‘지속하는 것’을 뜻한다는 점을 오해했다. ‘sustaining’이 ‘계속하는 것’을 뜻하지 않는다. → 처방: ‘sustain’의 뜻을 정확히 기억하고, ‘sustaining’이 ‘지속하는 것’이라는 뜻을 가진다는 점을 떠올려라. ‘계속하는 것’이 아니라 ‘포기하는 것’이 정답임을 확인하자.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T17:17:54.262Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:\n\n─────────\n[요약문] Overemphasis on grammatical precision leads writers to produce (A) prose, while using 'since' to introduce familiar causal clauses helps avoid implying (B) about others.",
-    "choices": [
-     "(A) stilted writing … (B) judgmental assumptions",
-     "(A) unstructured writing … (B) grammatical rules",
-     "(A) rigid writing … (B) superficial observations",
-     "(A) fluent writing … (B) logical fallacies",
-     "(A) ambiguous writing … (B) causal connections"
-    ],
-    "answer": 1,
-    "explanation": "(A) stilted writing / (B) judgmental assumptions 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 지문에서 'unstructured writing(비구조적 글)'은 언급되지 않았으며, 'since'가 causality(인과관계)를 나타내는 연결사라는 점도 오해한 듯하다. 'since'는 '이미 알려진 이유'를 도입하는 데 쓰이므로 'grammatical rules(문법 규칙)'과는 무관하다. → 처방: 지문에서 'since'가 causality(인과관계)를 나타내는 연결사임을 확인하고, 'unstructured writing'이 아닌 'stilted writing(딱딱한 글)'을 떠올리자.\n③ 진단: 지문에서 'rigid writing(딱딱한 글)'은 'graceless prose(세련되지 못한 글)'와 유사하게 쓰였지만, 'since'가 'superficial observations(표면적 관찰)'을 도입한다고 오해했다. 'since'는 이미 알려진 인과관계를 도입하는 연결사다. → 처방: 지문에서 'since'가 causality(인과관계)를 나타내는 연결사임을 확인하고, 'superficial observations'가 아닌 'judgmental assumptions(판단적 가정)'을 떠올리자.\n④ 진단: 지문에서 'fluent writing(유창한 글)'은 언급되지 않았으며, 'since'가 'logical fallacies(논리적 오류)'를 도입한다고 오해했다. 'since'는 인과관계를 명확히 하는 연결사다. → 처방: 지문에서 'since'가 causality(인과관계)를 나타내는 연결사임을 확인하고, 'logical fallacies'가 아닌 'judgmental assumptions'을 떠올리자.\n⑤ 진단: 지문에서 'ambiguous writing(모호한 글)'은 언급되지 않았으며, 'since'가 'causal connections(인과관계)'를 도입한다고 오해했다. 'since'는 이미 알려진 인과관계를 도입하는 연결사다. → 처방: 지문에서 'since'가 causality(인과관계)를 나타내는 연결사임을 확인하고, 'causal connections'이 아닌 'judgmental assumptions'을 떠올리자.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T17:18:48.647Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 2번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "문법 규칙을 엄격히 지키면 문장의 아름다움과 독자의 이해력이 높아진다는 통념은 사실과 다르다.",
-     "글쓴이가 강조하는 것은 문법 오류가 없는 문장보다는 문장의 자연스러운 흐름과 친숙한 정보 전달이다.",
-     "모든 작가는 문법 규칙을 무시하고 유연하게 글을 써야만 훌륭한 글을 쓸 수 있다는 주장은 과장된 일반화이다.",
-     "문법 규칙은 때로는 문장의 명확성과 자연스러움을 해칠 수 있으므로 무조건 배제되어야 한다는 생각은 지나치다.",
-     "글쓴이는 문장의 자연스러움과 명확성을 위해 엄격한 문법 규칙보다는 유연한 문법 사용을 우선해야 한다."
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Writers should prioritize clarity and natural flow over rigid grammatical rules to produce graceful prose.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Writers should prioritize clarity and natural flow over rigid grammatical rules to produce graceful prose.]\n[오답 진단·처방]\n① 진단: ‘문법 규칙을 엄격히 지키면 문장의 아름다움과 독자의 이해력이 높아진다’는 통념을 지문이 직접 언급하지 않았음에도 ‘사실과 다르다’고 단정하여 지문의 핵심 논지를 오해함. → 처방: 지문의 핵심은 ‘문법 오류가 없는 문장’이 아니라 ‘자연스러운 흐름과 친숙한 정보 전달’을 강조한다는 점을 먼저 확인할 것.\n③ 진단: ‘모든 작가가 문법 규칙을 무시해야 한다’는 과장된 주장이 지문에 없음에도 ‘과장된 일반화’라고 주장하여 지문의 균형 잡힌 태도를 오해함. → 처방: 지문은 문법 규칙의 ‘일부 예외’를 인정한다는 점을 기억하고, ‘반드시 무시해야 한다’는 극단적 해석을 피할 것.\n④ 진단: ‘문법 규칙은 때로는 명확성과 자연스러움을 해칠 수 있으므로 무조건 배제되어야 한다’는 지문의 내용과 반대되는 주장을 펼침. → 처방: 지문은 문법 규칙의 ‘일부 예외’를 인정할 뿐, ‘무조건 배제’를 주장하지 않는다는 점을 정확히 읽을 것.\n⑤ 진단: ‘문장의 자연스러움과 명확성을 위해 유연한 문법 사용을 우선해야 한다’는 지문의 요지를 ‘엄격한 문법 규칙보다는’라는 표현으로 오해하여 지나치게 극단적으로 해석함. → 처방: 지문은 문법 규칙의 ‘일부 예외’를 인정하는 것이지, ‘문법 규칙 자체를 배제’하라는 뜻이 아님을 분명히 할 것."
    }
   }
  ]
