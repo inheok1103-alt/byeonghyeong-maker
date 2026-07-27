@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-27T11:44:56.588Z",
+ "updated": "2026-07-27T15:18:04.634Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-27T15:17:36.615Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사구(noun phrase)의 오용이 빈번하며, 특히 'take responsible'처럼 형용사가 동사 뒤에 위치하는 오류가 많다. 또한 대문자 오용과 관사의 생략이 자주 발생한다.",
+   "rule": "명사구가 필요한 위치(예: 'take responsibility')에는 반드시 명사형을 사용하고, 동사 뒤의 보어 자리에서는 '-ing' 형태가 아닌 명사형(-ity, -ment 등)을 선호한다는 규칙을 변형 문제에서 반복적으로 테스트하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-27T11:44:29.922Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "영어에서 동사 뒤에는 동명사(~ing)가 오는 경우가 많으며, 조동사 뒤에는 동사원형이 온다. 또한 문장 구조가 불완전하면 동사나 주어의 생략이 필요한 경우가 많다.",
    "rule": "조동사(should, can 등) 뒤에는 동사원형이 오며, 동사 뒤에는 동명사(~ing)가 오는 경우가 많으므로, 이를 오답으로 활용하여 문법 오류를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-21T23:15:34.619Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 연어 패턴은 '~ that would/might + 동사 + 목적어'가 '변화·영향·장려' 관련 맥락에서 빈번히 사용됨을 보여준다. 또한 'rich people are interested in'과 같은 명사구+관심사 패턴도 빈번하다.",
-   "rule": "원서 코퍼스의 '~ that would/might + 동사 + 목적어' 구조(예: 'changes that might encourage')를 활용하여 '~ 것들이 ~하도록 장려할 수 있다'는 문장 패턴으로 변형 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
