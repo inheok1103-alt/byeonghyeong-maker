@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-27T20:46:46.957Z",
+ "updated": "2026-07-27T22:20:55.383Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-27T22:20:29.262Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거시제 동사의 형태 오류(choosed → chose)와 시제 불일치(do not know → will be open)가 빈번하며, 불필요한 조동사(ca n't to do → ca n't do)나 중복 표현(when it is open or close → when it will be open or closed)이 특징적이다.",
+   "rule": "CEFR B1 수준 내신 출제 시, 과거시제 동사의 3단 변화(예: choose → chose → chosen)와 시제 일관성(현재/과거/미래)을 반드시 포함하는 문장을 1개 이상 제시하여 오류를 찾게 하라. (예: 'She choosed to study English yesterday, but she does not know if the library will be open or closed tomorrow.')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-27T20:46:24.010Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "이 코퍼스 패턴은 명사구(noun phrase)와 동사 시제(past/present tense) 간의 연어적 오류가 빈번하며, 특히 '~ing' 형태의 동명사/현재분사 사용 오류가 두드러진다. 또한 고유명사(Discovery Channel)나 전치사(~에서: in the wild)의 오용도 다수 확인된다.",
    "rule": "'동사 + ing' 형태(동명사/현재분사)가 필요한 문맥에서 'to + 동사원형'을 사용하거나, 시제 일치 오류(3인칭 단수 현재형 동사 뒤 -s 누락/과잉)를 반드시 포함시킨다. 예: 'They enjoy learning' → 'They enjoy to learn' 또는 'The scraping causes heat' → 'The scraping will causes heat'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-22T09:41:24.246Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제 동사와 현재 시제 동사가 혼용되는 오류가 빈번하며, 명사구 내 불필요한 관사(a/the) 사용이나 동사 형태(3인칭 단수, 과거형, 원형) 오류가 두드러진다.",
-   "rule": "과거 시제 문맥에서 'know'는 'knew'로, 'develop'은 'develops'로, 'need to' 뒤에는 동사원형이 아닌 명사구가 오도록 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",
