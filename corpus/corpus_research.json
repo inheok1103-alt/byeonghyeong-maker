@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-27T04:10:40.358Z",
+ "updated": "2026-07-27T07:57:42.051Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-27T07:57:13.924Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서에서 'to be + 동사원형' 구문은 '~하기 위해'로 해석되는 경우가 많지만, 한국어에서는 '~해야 한다'/'~할 필요가 있다'로 자연스럽게 재구성되는 경우가 많다. 특히 'resource for the cars to be working' 같은 경우 '자동차가 작동하기 위한 자원'으로 해석될 수 있으나, 한국어로는 '자동차가 작동할 수 있도록 필요한 자원'으로 변환하는 것이 자연스럽다.",
+   "rule": "원서 문장에서 'to be + 동사원형' 구문이 '목적'을 나타낼 경우, 한국어 변형에서는 '~하기 위해' 대신 '~해야 한다'/'~할 필요가 있다'로 재구성하여 오류를 유도하라. 예: 'It is the main resource for the cars to be working.' → 'It is the main resource that cars need to run.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-27T00:16:33.884Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 최빈 연어와 문법오류쌍을 분석한 결과, 'be + useful/important'와 같은 상태동사-형용사 결합에서 'be + being + 형용사'가 오류로 나타나며, 'necessary'와 'need'의 혼용, 'today'의 소유격 오류가 빈번했다. 특히 'however'와 같은 접속사가 문장 중간에서 부적절하게 사용되는 패턴도 확인되었다.",
    "rule": "CEFR B1-B2 수준 내신 변형문제에서 'be + useful/important' 구문을 오답으로 제시할 때는 'being + useful/important'를 오류로 포함하고, 'necessary'는 'need'와 함께 복합 오류로 출제하며, 'today'는 소유격 오류('today's')를 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-21T20:39:16.602Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "영어에서 동사-명사 연어는 문법 오류로 자주 활용된다. 특히 3인칭 단수 주어가 동사 뒤에 오면 -s가 필수적이지만, 한국어 화자는 이를 놓치기 쉽다.",
-   "rule": "3인칭 단수 주어(he/she/it 또는 단수 명사) 뒤에는 동사 원형이 아닌 '-s' 또는 '-es'가 붙은 형태로만 출제하라. 예: 'she lose' → 'she loses', 'the costumer lose' → 'the costumer loses'.",
    "sample": [
     "old english",
     "university press",

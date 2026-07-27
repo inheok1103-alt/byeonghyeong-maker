@@ -1,6 +1,112 @@
 {
- "updated": "2026-07-27T04:10:40.362Z",
+ "updated": "2026-07-27T07:57:42.056Z",
  "samples": [
+  {
+   "ts": "2026-07-27T07:55:38.146Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "이 글은 특정 어휘들의 의미와 사용법을 설명과 구체적인 예시를 통해 명확히 제시한다.",
+     "이 글은 특정 어휘들의 발음에 대한 정보만을 제공하며, 의미 설명은 부족하다.",
+     "이 글은 특정 어휘의 예시를 먼저 제시하여, 독자가 그 단어의 정의를 스스로 구성하게 한다.",
+     "이 글은 독자들이 어휘 학습 시 겪는 어려움을 해결하기 위한 효과적인 방법을 제시한다.",
+     "이 글은 모든 언어 학습자가 알아야 할 보편적인 어휘 학습 원칙을 설명한다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The text primarily defines and illustrates the meanings of specific vocabulary words, such as 'lugubrious' and 'luminous', through explanations and examples.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·초점 이탈·과잉 일반화·인과 전도)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 소재는 같으나 논점에서 벗어남· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 이 글은 특정 어휘들의 의미와 사용법을 설명하고 예시를 제공한다는 점을 간과하여, 발음 정보만을 제공한다고 오독하였다. → 처방: 글의 전체적인 구조와 내용을 주의깊게 읽어보아야 한다.\n③ 진단: 이 글은 예시를 먼저 제시하고 정의를 나중에 설명한다는 점을 오해하여, 독자가 스스로 정의를 구성하게 한다고 오독하였다. → 처방: 글의 순서와 구조를 잘 이해하고, 예시와 정의의 관계를 명확히 파악해야 한다.\n④ 진단: 이 글은 특정 어휘들의 의미와 사용법을 설명하고 있지만, 어휘 학습의 어려움을 해결하는 방법을 제공한다고 오독하였다. → 처방: 글의 목적과 범위를 명확히 이해하고, 제공하는 정보를 제대로 해석해야 한다.\n⑤ 진단: 이 글은 특정 어휘들의 의미와 사용법을 설명하고 있지만, 모든 언어 학습자가 알아야 할 보편적인 원칙을 설명한다고 오독하였다. → 처방: 글의 내용과 범위를 정확히 파악하고, 특정 어휘와 보편적인 원칙을 구분해야 한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The text primarily defines and illustrates the meanings of specific vocabulary words, such as ]"
+   }
+  },
+  {
+   "ts": "2026-07-27T07:56:04.287Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "슬픔을 진심으로 느끼려고",
+     "장례식에서 슬픔을 드러내려고",
+     "모든 유형의 슬픔을 과장하려고",
+     "슬픔을 지나치게 드러내려고",
+     "슬픔을 과장하여 표현하려고"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'to show exaggerated mournfulness.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n① 진단: 지문에서 'lugubrious'는 '과장된 슬픔'을 뜻하는데, 학생은 '진심으로 슬픔을 느끼는 것'으로 오해한 듯하다. 지문 첫머리에 'exaggeratedly mournful(과장된 슬픔)'이라고 명확히 설명되어 있다. → 처방: 단어의 뜻을 정확히 확인할 때는 지문의 설명을 꼼꼼히 읽고, 'exaggeratedly(과장된)'라는 말이 있는지 확인해 보자.\n② 진단: 학생은 'lugubrious'가 장례식에서 슬픔을 드러내는 것이라고 오해했는데, 지문에서는 '장례식에서 슬픔을 과장해서 표현한 예'가 있을 뿐, 장례식 자체가 목적이 아니라고 설명되어 있다. → 처방: 단어의 뜻을 풀이할 때는 지문에 나온 예시가 '목적'인지 '방법'인지를 구분해 보자. 여기서는 '방법'에 가깝다.\n③ 진단: 학생은 '모든 유형의 슬픔'을 과장한다고 오해했는데, 지문에서는 '특정한 과장된 슬픔'만을 가리킨다고 설명되어 있다. '모든 유형'이라는 말이 지문에 없다. → 처방: 단어의 뜻을 풀이할 때는 '모든'이나 '특정' 같은 범위를 나타내는 단어가 있는지 확인해 보자.\n⑤ 진단: 학생은 '슬픔을 과장하여 표현하려고'라는 말이 정답과 비슷하다고 생각했을 텐데, 정답은 '지나치게 드러내려고'라는 더 넓은 뜻을 담고 있다. '과장하여 표현'은 '지나치게 드러내'의 한 예에 불과하다. → 처방: 정답과 오답을 비교할 때는 단어의 뜻뿐 아니라 문맥(예: '과장' vs '지나침')도 함께 따져 보자.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to show exaggerated mournfulness.]"
+   }
+  },
+  {
+   "ts": "2026-07-27T07:57:01.551Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(73%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "LUGUBRIOUS (loo GOO bree us) adj exaggeratedly mournful To be mournful is to be sad and sorrowful. To be lugubrious is to make a big show of being sad and sorrowful. • Harry’s lugubrious eulogy at the funeral of his dog eventually made everyone start giggling. • The valedictorian suddenly turned lugubrious and began sobbing and tearing her hair at the thought of graduating from high school. Note carefully the pronunciation of this word. LUMINOUS (LOO muh nus) adj giving off light; glowing; bright • The moon was a luminous disk in the cloudy nighttime sky. • The snow on the ground appeared eerily luminous at night—it seemed to glow. • The dial on my watch is luminous; it casts a green glow in the dark. Quick Quiz #55 Match each word in the first column with its definition in the second column. Check your answers here. 1. libel a. giving off light 2. slander b. try in court 3. litigate c. exaggeratedly mournful 4. loquacious d. easy to understand 5. lucid e. written injurious falsehood 6. lugubrious f. spoken injurious falsehood 7. luminous g. talking a lot",
+    "choices": [
+     "‘슬픔을 과장되게 드러내는’은 ‘슬프고 비통한’ 상태를 과장하여 표현하는 것이다.",
+     "‘슬픔을 과장되게 드러내는’이란 ‘슬프고 비통한’ 상태를 과장하여 표현하는 것이 아니다.",
+     "수석 졸업생이 고등학교 졸업에 대해 lugubrious 해지며 오열하고 머리를 뜯기 시작했다.",
+     "‘빛을 내는’은 ‘빛을 발하거나 밝은’ 상태를 말한다.",
+     "밤에 눈이 lumino us 하게 빛나며 유령처럼 보였다."
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: ‘지문에서 lugubrious 는 슬픔을 과장되게 드러내는 뜻으로, 단순히 슬프고 비통한 상태를 말하는 것이 아니다.’라는 설명을 오해하여 ‘슬픔을 과장되게 드러내는’ 자체가 ‘슬프고 비통한’ 상태를 포함한다고 생각한 듯함. → 처방: ‘과장’이라는 단어를 꼭 기억하고, 지문에서 ‘make a big show of’라는 표현을 떠올리며 ‘과장된 표현’이라는 핵심을 떠올리기.\n③ 진단: 지문에서 valedictorian(수석 졸업생)이 lugubrious 해지며 오열했다는 예시가 그대로 나와 있어, 이 선지는 지문과 일치함. 오독이 아니라면 다른 선지를 잘못 본 것일 수 있음. → 처방: 선지를 꼼꼼히 읽고, 지문과 비교할 때는 ‘정확히 같은 내용’이 아니라 ‘일치하지 않는 것’을 찾는다는 점을 명심하기.\n④ 진단: ‘luminous’의 뜻이 ‘빛을 내는, 밝은’으로 지문에 나와 있어 이 선지는 일치함. 오독이라면 ‘luminous’를 ‘어둡다’ 또는 ‘빛을 흡수한다’로 잘못 기억한 것일 수 있음. → 처방: 단어 뜻을 암기할 때 ‘반대말’이나 ‘유사어’를 혼동하지 않도록, 지문의 예문과 뜻을 함께 외우기.\n⑤ 진단: ‘luminous’의 뜻이 ‘빛을 내는, 밝은’으로, 눈이 밤에 빛나며 유령처럼 보였다는 지문 내용과 일치함. 오독이라면 ‘luminous’를 ‘어둡다’로 오해했을 가능성 있음. → 처방: ‘luminous’의 예문(‘snow appeared eerily luminous’)을 떠올리며 ‘어둡다’가 아니라 ‘빛나는’ 뜻임을 확실히 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-27T04:08:02.613Z",
    "type": "목적",
@@ -265,109 +371,6 @@
     ],
     "answer": 3,
     "explanation": "정답 조합: (A) It transcends - (B) Despite the rise - (C) having the unique. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(C) having the unique’를 고른 이유는 ‘authors having’의 오류를 그대로 따라한 것으로, 분사 having 이 본동사로 오인된 듯하다. 지문에서 ‘authors having’의 오류는 ‘having’이 본동사 자리에 오면 안 된다는 점을 보여준다. → 처방: 분사 having 은 본동사가 아니라 보조동사·연결동사와 함께 쓰이거나, 뒤에 명사구가 오면 분사로 쓴다는 규칙을 기억하고, 본동사 자리에는 동사원형 have 를 써야 한다는 점을 확인하자.\n② 진단: ‘(A) It transcend’를 고른 이유는 동사 ‘transcend’의 3인칭 단수 형태를 잊고 원형 동사를 쓴 것으로 보인다. 지문에서 ‘It transcends’는 시제와 주어 일치를 맞춘 올바른 표현이다. → 처방: 주어(It)가 3인칭 단수이므로 동사는 -s 가 붙은 ‘transcends’를 써야 한다는 규칙을 다시 한번 정리하고, 주어-동사 일치를 철저히 확인하자.\n④ 진단: ‘(B) Despite rising’를 고른 이유는 ‘Despite’의 뒤에 동명사(rising)가 오는 것을 ‘Despite the rise’의 명사구와 혼동한 듯하다. 지문에서 ‘Despite the rise’는 명사구로, ‘Despite rising’은 동명사구로 둘 다 문법적으로 맞지만, 지문 전체 흐름에서 ‘Despite the rise’를 더 자연스럽게 받는다. → 처방: ‘Despite’는 뒤에 명사구와 동명사 모두 올 수 있지만, 지문에서 ‘the rise’라는 명사구가 이미 제시되었으므로, 명사구와 동명사 중 어느 것이 더 어울리는지 맥락을 확인하자.\n⑤ 진단: ‘(A) It transcend’, ‘(C) have the unique’를 함께 고른 이유는 주어-동사 일치와 분사의 오용을 동시에 혼동한 것으로 보인다. ‘It transcend’은 3인칭 단수 동사 형태가 틀렸고, ‘have the unique’는 ‘authors having’의 오류와 같은 이유로 틀렸다. → 처방: 주어-동사 일치와 분사의 역할(본동사 vs. 보조동사·연결동사)을 따로 분리해서 공부하고, 각 규칙을 적용할 때 철저히 확인하는 습관을 기르자."
-   }
-  },
-  {
-   "ts": "2026-07-26T21:14:40.405Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Ray English 지문 전문 · 원문 그대로 29번 어법 [ 3 점] · G R A M M A R 문학의 힘 어법 ④ authors having → have: 주어 authors의 본동사가 없으므로 분사 having은 불가, have로 고친다. 소재 문학의 지속적 힘 The (A) [fleeting / enduring] power of literature 주제 문학은 시공을 초월해 인간 경험을 전하는 지속적 예술이다 Literature endures, conveying human experience across time 제목 문학 — 창의성의 지속적 힘 Literature: The Enduring Power of Creativity 한눈에 문학은 시공을 초월해 인간 경험을 전하는 ‘지속적 힘’을 지닌 예술이라는 글이다. 새 기술의 등장에도 의의를 잃지 않고, 인간 감정을 포착·전달 하며 우리 자신을 비춰 보게 한다. (어법상 주어 authors의 ‘본동사’ 자리가 핵심 포인트.) 지문 전문 — 시험지 원문 Literature, in its essence, is a testament to the enduring power of human creativity and expression. It (B) [confines / transcends] time and space, ① connecting us with the thoughts and emotions of people from all walks of life, across centuries and cultures. ② Despite the rise of new technologies and the ever-changing landscape of media, literature has retained its relevance and significance as a timeless art form. One reason for literature’s enduring power is its ability to capture and ③ (C) [convey / suppress] the complexities of the human experience. Through the written word, authors ④ having the unique ability to explore the depths of human emotion, the nuances of relationships, and the challenges and triumphs of the human spirit. Literature allows us to see ourselves characters different from ourselves, and to gain a deeper understanding of the human condition. * testament: 증거 ** transcend: 초월하다 *** nuance: 미묘한 차이 지문 전문 · 원문 그대로",
-    "choices": [
-     "(A) enduring - (B) transcends - (C) convey",
-     "(A) fleeting - (B) confines - (C) convey",
-     "(A) fleeting - (B) transcends - (C) convey",
-     "(A) enduring - (B) confines - (C) suppress",
-     "(A) fleeting - (B) transcends - (C) suppress"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) enduring - (B) transcends - (C) convey. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(A)에서 enduring(지속적)’을 ‘fleeting(덧없는)’으로 오독했는데, 지문 첫머리에 ‘지속적 힘’을 강조하는 표현이 반복되어 있으므로 오답. → 처방: 지문에서 ‘지속적’이라는 키워드를 찾아(A)에는 enduring 을 넣어야 함을 기억하자.\n② 진단: ‘(B)에서 confines(제한하다)’를 골랐는데, 지문에서 ‘시공을 초월하다’라는 뜻의 동사가 필요하다는 사실을 놓침. → 처방: ‘시공을 초월하다’는 ‘시간과 공간을 넘어서다’라는 뜻이므로 transcends 가 맞음을 확인하자.\n④ 진단: ‘(C)에서 suppress(억누르다)’를 선택했는데, 지문에서 ‘인간의 경험을 담아내다’라는 뜻이 필요하다는 점을 간과함. → 처방: ‘담아내다’는 convey(전달하다)라는 동사가 맞으므로 suppress 는 문맥에 맞지 않음을 기억하자.\n⑤ 진단: ‘(A)에서 fleeting’을, ‘(C)에서 suppress’를 골랐는데, (A)는 지속적 힘을, (C)는 담아낸다는 의미를 오해함. → 처방: 지문 전체의 주제를 파악하고, 각 빈칸에 어울리는 단어를 ‘지속성’과 ‘전달’이라는 키워드로 연결 지어 풀자."
-   }
-  },
-  {
-   "ts": "2026-07-26T19:36:24.295Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.63,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "타인의 동기를 의심하는 것은 인간 본성의 이기심을 증명하는 직접적 증거가 된다.",
-     "인간은 이기적이라는 믿음이 있을 때만 타인의 동기를 의심할 수 있다.",
-     "모든 인간은 본래 이기적이므로 타인의 동기를 의심하는 것이 당연하다.",
-     "인간은 타인의 동기를 언제나 의심하는 극단적 비관주의에 빠진다.",
-     "인간은 본질적으로 이기적이라는 불신을 바탕에 둔다면 타인의 동기를 지나치게 의심하게 된다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'To be cynical is to be extremely suspicious of the motivations of other people.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘타인의 동기를 의심하는 것’이 ‘인간 본성의 이기심을 증명하는 직접적 증거’라는 말은 지문의 ‘CYNIC’이 ‘인간이 본래 이기적’이라는 믿음에서 나온다는 설명을 오해하여, 의심 자체가 증거가 된다고 잘못 이해한 듯함. → 처방: ‘CYNIC’의 정의와 예시를 다시 읽고, ‘의심’이 ‘증거’가 아니라 ‘믿음의 결과’라는 점을 분명히 기억하기.\n② 진단: ‘인간은 이기적이라는 믿음이 있을 때만 타인의 동기를 의심할 수 있다’는 말은 지문의 ‘CYNIC’이 ‘인간이 본래 이기적’이라는 믿음에서 나온다는 설명을 반대로 해석하여, 의심의 조건을 오해한 듯함. → 처방: ‘CYNIC’이란 ‘인간이 본래 이기적’이라는 믿음에서 ‘타인의 동기를 의심하는 사람’이라는 정의를 정확히 이해하고, 의심의 조건이 아니라 결과라는 점을 기억하기.\n③ 진단: ‘모든 인간은 본래 이기적’이라는 말은 지문의 ‘CYNIC’이 ‘인간이 본래 이기적’이라는 믿음에서 나온다는 설명을 확대해석하여, 모든 인간이 실제로 이기적이라고 잘못 이해한 듯함. → 처방: ‘CYNIC’이란 ‘인간이 본래 이기적’이라는 ‘믿음’을 가진 사람을 가리키는 것이지, 모든 인간이 실제로 이기적이라는 뜻이 아니라는 점을 분명히 하기.\n④ 진단: ‘인간은 타인의 동기를 언제나 의심하는 극단적 비관주의에 빠진다’는 말은 지문의 ‘CYNIC’이 ‘인간이 본래 이기적’이라는 믿음에서 나온다는 설명을 과장하여, 모든 상황이 의심으로 이어진다고 잘못 이해한 듯함. → 처방: ‘CYNIC’이란 ‘타인의 동기를 지나치게 의심하는 태도’를 가리키는 것이지, 모든 상황이 의심으로 이어지는 것은 아니라는 점을 분명히 기억하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: To be cynical is to be extremely suspicious of the motivations of other people.]"
-   }
-  },
-  {
-   "ts": "2026-07-26T19:36:45.310Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": -1,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "To make a cursory attempt at learning French is to memorize a couple of easy words and then give up. CURTAIL (kur TAYL) v to shorten; to cut short • The vet (A) [curtailed / extended] her effort to cut the cat’s tail with the lawn mower. That is, she stopped trying. To curtail a tale is to cut it short. (B) [optimist / CYNIC] (SIN ik) n one who deeply distrusts human nature; one who believes humans are motivated only by selfishness • When the pop star gave a million dollars to the museum, cynics said he was merely trying to buy himself a reputation as a cultured person. To be cynical is to be extremely suspicious of the motivations of other people. Cynicism is general grumpiness and pessimism about human nature. Quick Quiz #29 Match each word in the first column with its definition in the second column. Check your answers here. 1. culpable a. free from guilt 2. exculpate b. shorten 3. (C) [thorough / cursory] c. one who distrusts humanity 4. curtail d. hasty 5. cynic e. guilty D",
-    "choices": [
-     "(A) extended - (B) optimist - (C) thorough",
-     "(A) extended - (B) CYNIC - (C) thorough",
-     "(A) curtailed - (B) CYNIC - (C) cursory",
-     "(A) curtailed - (B) CYNIC - (C) thorough",
-     "(A) curtailed - (B) optimist - (C) cursory"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) curtailed - (B) CYNIC - (C) cursory. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A) extended’를 선택했는데, ‘curtailed’의 뜻(‘~을 중단하다’)과 반대인 ‘연장하다’를 고른 이유는 ‘vet 가 lawn mower 로 고양이 꼬리를 자르려는 시도를 중단하지 않고 계속했다는 오해’를 한 것 같다. 지문에서 ‘she stopped trying’이란 문장이 있으니 ‘curtailed’를 써야 한다. → 처방: ‘curtailed’의 뜻을 정확히 기억하고, 지문에서 ‘stopped trying’이란 단서가 나오면 무조건 ‘curtailed’를 선택하도록 연습하라.\n② 진단: ‘(B) optimist’를 선택했는데, ‘cynic’의 뜻(‘인간을 믿지 않는 사람’)과 반대인 ‘낙관주의자’를 고른 이유는 ‘인간을 믿는 사람’을 떠올렸기 때문이다. 지문에서 ‘deeply distrusts human nature’라고 설명이 있으니 ‘cynic’를 써야 한다. → 처방: ‘cynic’의 뜻을 정확히 기억하고, ‘distrust’라는 단서가 나오면 무조건 ‘cynic’를 선택하도록 연습하라.\n④ 진단: ‘(C) thorough’를 선택했는데, ‘cursory’의 뜻(‘대충 하는’)과 반대인 ‘철저한’을 고른 이유는 ‘대충이 아닌 꼼꼼한 행동’을 떠올렸기 때문이다. 지문에서 ‘a cursory attempt’는 ‘대충 하는 시도’라는 뜻이니 ‘cursory’를 써야 한다. → 처방: ‘cursory’의 뜻을 정확히 기억하고, ‘attempt’라는 단서가 나오면 무조건 ‘cursory’를 선택하도록 연습하라.\n⑤ 진단: ‘(B) optimist’를 선택했는데, ‘cynic’의 뜻을 반대로 이해하고 ‘인간을 믿는 사람’을 떠올렸기 때문이다. 지문에서 ‘distrust’라는 단서가 나오면 ‘cynic’를 써야 한다. 또한 ‘(C) cursory’를 선택했는데, ‘thorough’의 뜻을 반대로 이해하고 ‘대충’이 아닌 ‘철저한’을 떠올렸기 때문이다. → 처방: ‘cynic’과 ‘thorough’의 뜻을 정확히 기억하고, ‘distrust’나 ‘attempt’라는 단서가 나오면 무조건 해당 단어를 선택하도록 연습하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
