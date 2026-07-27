@@ -1,6 +1,94 @@
 {
- "updated": "2026-07-27T15:18:04.638Z",
+ "updated": "2026-07-27T17:14:41.722Z",
  "samples": [
+  {
+   "ts": "2026-07-27T17:13:19.493Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "부채를 갚을 능력이 없을 때만 ‘무능력’ 또는 ‘파산’으로 규정할 수 있다.",
+     "기업이 부채를 갚지 못할 경우에 한해 ‘무능력’ 또는 ‘파산’으로 불린다.",
+     "모든 부채를 갚지 못하는 모든 대상은 반드시 ‘파산’ 상태로 진입한다.",
+     "부채를 갚지 못하는 모든 상황에서 ‘파산’이라는 명칭이 적용된다.",
+     "부채를 갚을 능력이 없는 상태를 가리켜 ‘무능력’ 또는 ‘파산’이라고 한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'A person or company is considered insolvent when they are unable to pay their debts at maturity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘무능력’ 또는 ‘파산’이 부채를 갚을 능력이 없을 때를 가리키는 것은 맞지만, 지문에서는 ‘부도’(insolvency)의 정의가 ‘부채를 갚지 못하는 상태’를 포함한다는 점을 보지 못하고 ‘부채를 갚을 능력이 없을 때만’이라는 한정적 표현을 오해했다. → 처방: ‘부도’의 정의가 ‘부채를 갚지 못하는 상태’를 포함한다는 점을 기억하고, ‘~만’이라는 한정적 표현이 오답임을 확인할 것.\n② 진단: ‘기업’이 한정어로 쓰였지만, 지문에서 ‘insolvent’의 정의는 ‘부채를 갚지 못하는 모든 대상’을 포함한다는 점을 놓쳤다. ‘기업’으로만 한정해 오독했다. → 처방: ‘insolvent’의 정의가 ‘부채를 갚지 못하는 모든 대상’을 포함한다는 점을 기억하고, ‘기업’이라는 한정어를 주의할 것.\n③ 진단: ‘반드시’라는 절대적 표현을 오해했다. 지문에서 ‘insolvency’는 ‘부채를 갚지 못하는 상태’를 뜻하지만, ‘반드시 파산 상태로 진입한다’는 말은 과장된 표현이다. → 처방: ‘insolvency’의 정의가 ‘부채를 갚지 못하는 상태’를 뜻한다는 점은 맞지만, ‘반드시’라는 절대적 표현이 오답임을 확인할 것.\n④ 진단: ‘모든 상황’이라는 포괄적 표현을 오해했다. 지문에서 ‘insolvent’는 ‘부채를 갚지 못하는 상태’를 뜻하지만, ‘모든 상황’이라는 말은 ‘부채’라는 조건 없이도 적용된다고 오독했다. → 처방: ‘insolvent’의 정의가 ‘부채를 갚지 못하는 상태’를 뜻한다는 점을 기억하고, ‘모든 상황’이라는 표현이 오답임을 확인할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A person or company is considered insolvent when they are unable to pay their debts at maturity.]"
+   }
+  },
+  {
+   "ts": "2026-07-27T17:14:00.599Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "To be broke is to be insolvent. An insolvent company is one that can’t cover its debts. The state of being solvent is called solvency; the state of being insolvent is called insolvency. SOPORIFIC (sahp uh RIF ik) adj sleep inducing; boring; sleepy • The doctor calmed his hysterical patient by injecting him with some sort of soporific medication. • Sam’s soporific address was acknowledged not by applause but by a chorus of snores. • The soporific creature from the bottom of the sea lay in a gigantic blob on the beach for several days and then roused itself enough to consume the panic-stricken city. Quick Quiz #77 Match each word in the first column with its definition in the second column. Check your answers here. 1. serendipity a. accidental good fortune 2. servile b. sleep inducing 3. singular c. eager and attentive 4. sinister d. not bankrupt 5. slavish e. submissive 6. sloth f. broke 7. sobriety g. laziness 8. solicitous h. state of being sober 9. solvent i. extremely subservient 10. insolvent j. unique 11. soporific k. wicked",
+    "choices": [
+     "파산 상태는 채무를 갚을 능력이 없는 상태를 말한다",
+     "솔벤시 상태는 채무를 갚을 수 없는 상태를 말한다",
+     "수면제를 투여한 의사는 흥분한 환자를 흥분시켰다",
+     "사무엘의 지루한 연설은 박수로 반응을 받았다",
+     "바다 바닥의 수면성 생물은 며칠 동안 해변에 머물지 않았다"
+    ],
+    "answer": 1,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: ‘solvent’는 ‘파산하지 않은 상태’를 뜻하는데, ‘solvency’는 ‘파산하지 않은 상태’를 가리키는 명사형이므로 ‘채무를 갚을 수 없는 상태’를 뜻하는 건 ‘insolvency’다. ‘solvent’와 ‘solvency’를 혼동한 듯하다. → 처방: ‘solvent’는 ‘파산하지 않은’, ‘solvency’는 ‘파산하지 않은 상태’를 뜻한다는 점을 기억하고, 반대 의미인 ‘insolvent’와 ‘insolvency’를 따로 정리해두자.\n③ 진단: ‘soporific’이 ‘수면제’를 뜻한다는 점은 맞지만, 지문에서 ‘의사가 흥분한 환자에게 주사를 놓아 흥분을 가라앉혔다’는 내용은 ‘calmed’이므로 ‘흥분시켰다’가 아니라 ‘진정시켰다’가 된다. → 처방: ‘soporific’이 ‘수면제’를 뜻한다는 점은 맞지만, 동사 ‘calm’의 의미를 정확히 파악해야 한다. ‘calm’은 ‘진정시키다’라는 뜻임을 기억하자.\n④ 진단: ‘soporific’이 ‘지루한’을 뜻한다는 점은 맞지만, 지문에서 사무엘의 연설에 대한 반응은 ‘박수’가 아니라 ‘코고는 소리’였다. ‘applause’와 ‘snores’를 혼동한 듯하다. → 처방: ‘soporific’이 ‘지루한’을 뜻한다는 점은 맞지만, 지문의 반응을 꼼꼼히 읽고 ‘applause’와 ‘snores’를 구분해 기억하자.\n⑤ 진단: ‘soporific’이 ‘수면성’을 뜻한다는 점은 맞지만, 지문에서 ‘바다 바닥의 수면성 생물’이 해변에 며칠 동안 머물렀다는 내용은 ‘roused itself enough to consume the city’로, 며칠 동안 머물렀다는 내용은 없다. → 처방: ‘soporific’이 ‘수면성’을 뜻한다는 점은 맞지만, 지문의 마지막 문장을 꼼꼼히 읽고 ‘몇일 동안 머물렀다’는 내용이 없음을 확인하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-27T17:14:10.026Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] An insolvent company is one that can’t cover its debts.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] A company is insolvent when its debts can’t be covered by it. (포인트: 능동 문장(An insolvent company is one that can’t cover its debts)을 수동 문장으로 전환(by 구를 명시하지 않음).)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-27T15:17:13.223Z",
    "type": "요약문AB",
@@ -282,95 +370,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] There remains every hope of finding survivors.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-26T23:16:19.264Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "언어는 특정 직업이나 성별에 대한 편견 때문에 비논리적으로 느껴지지만, 이는 인과관계가 뒤바뀐 오해에 불과하다",
-     "언어는 기본적으로 암묵적 전제를 무시하는 표지 용법으로 인해 비논리적으로 느껴질 때가 있지만, 이는 성별과 무관한 보편적 현상이다",
-     "언어는 기본적으로 암묵적 전제를 무시하고 특정 의미를 강조하는 표지 용법으로 인해 비논리적으로 느껴질 때가 있다",
-     "언어는 언제나 암묵적 전제를 무시하는 표지 용법으로 인해 비논리적이며, 이는 문화적 배경과 무관하게 적용된다",
-     "언어의 비논리성은 문화적 배경에 따라 달라지며, 이는 암묵적 전제를 무시하는 표지 용법의 결과가 아니다"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Language is illogical when marked terms override default assumptions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: '특정 직업이나 성별에 대한 편견'이라는 부분만 보고 '인과관계가 뒤바뀐 오해'라는 표현을 '언어의 비논리성'과 연결하지 못해 오해. 지문은 '표지 용법'이 비논리성을 낳는다고 설명하는데, 이 선지는 '편견'에만 초점을 맞춤. → 처방: 지문의 '표지 용법(예: female nurse)'과 '비논리성'의 관계를 정확히 짚고 넘어가기. '표지'가 기본 의미(예: nurse=여성)를 무시하고 특정 의미를 강조하는 경우라는 점 기억하기.\n② 진단: '성별과 무관한 보편적 현상'이라는 표현을 보고 '보편성'에만 주목해 '성별' 관련 예시(예: female nurse)를 무시하거나 '보편적 현상'이라는 말에 현혹됨. 지문은 성별 편견이 아닌 '표지 용법'의 비논리성을 다룸. → 처방: 지문에서 '표지 용법'이 비논리성을 낳는다는 핵심만 기억하고, '보편성'이나 '성별' 같은 부가 설명에 distraction 되지 않기. '표지'가 기본 의미를 무시하는 경우라는 점 집중.\n④ 진단: '언제나'라는 절대적 표현과 '문화적 배경과 무관'이라는 말을 보고 '비논리성'의 범위를 과장해 해석. 지문은 '특정 경우(표지 용법)'에 비논리성이 나타난다고 설명하는데, 이 선지는 '언제나'라는 과장된 표현을 씀. → 처방: 지문의 '특정 예시(예: female nurse)'와 '비논리성'의 관계를 정확히 짚고, '언제나'나 '무관' 같은 과장된 표현은 지문의 범위를 벗어난다는 점 기억하기.\n⑤ 진단: '문화적 배경에 따라 달라진다'는 표현을 보고 '문화적 배경'에만 주목해 '표지 용법'의 역할을 무시하거나 '비논리성'의 원인을 잘못 연결. 지문은 '표지 용법'이 비논리성을 낳는다고 설명하는데, 이 선지는 '문화적 배경'을 비논리성의 원인으로 오해. → 처방: 지문의 '표지 용법(예: female nurse)'이 비논리성을 낳는다는 핵심만 기억하고, '문화적 배경' 같은 부가 설명에 distraction 되지 않기. '표지'가 기본 의미를 무시하는 경우라는 점 집중.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Language is illogical when marked terms override default assumptions.]"
-   }
-  },
-  {
-   "ts": "2026-07-26T23:16:30.789Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 의사나 같은 특정 직업명에 성별 수식어가 붙는 경우와 그렇지 않은 경우의 언어적 차이를 설명할 필요가 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-26T22:15:13.025Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 지문 축소 의심(71%) — 정보 손실 여부 확인 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Confusing Words and Homonyms 29 dual two-fold duel ﬁght eager (see anxious) effect (see affect) e.g. for example Example: My living expenses have increased, e.g., rent, food, and utilities. i.e. that is, in other words Example: My living expenses have drained my ﬁnances; i.e., I have less money in the bank at the end of every month. eight (see ate) elicit evoke, extract, draw out illicit illegal elude (see allude) elusive difﬁcult to describe, evasive Example: The point of the novel is elusive to me. illusive plausible or possible; deceptive Example: She had the illusive dream of ﬁnding happiness by traveling. (plausible, possible) Example: She had an illusive idea that she was qualiﬁed for the job. [ ]",
-    "choices": [
-     "An 'epoch' is a specific event in history, while a 'saga' is a long story about heroic deeds.",
-     "The term 'empathy' is used when someone feels compassion for another person's situation, while 'sympathy' means understanding their feelings.",
-     "Immigrating means leaving a country, while emigrating means entering a new one to live permanently.",
-     "The words 'deceptive' and 'delusional' both describe someone who is leaving their country to live in another.",
-     "The word 'emigrate' describes leaving one's country to live elsewhere, whereas 'immigrate' refers to entering a new country to settle."
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 원문 '(deceptive, delusional) emigrate to exit one country in order to live in another country immigrate to enter a new country to live empathy to understand another’s feelings sympathy to feel compassion or sadness for another ensure (see assure) epic saga epoch a period of time, an age err (see air)'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: ‘epoch’는 역사상 특정 시대(시기)를 뜻하고 ‘saga’는 영웅적 행적을 다룬 긴 이야기를 뜻하는데, 지문에서 ‘epoch’는 ‘특정 역사적 사건’으로 잘못 설명하고 있어 혼동한 듯함. → 처방: ‘epoch’와 ‘saga’의 뜻을 정확히 외우고, 예문을 찾아가며 의미를 비교해 보자.\n② 진단: ‘empathy’는 상대의 감정을 ‘공감’하는 것이고 ‘sympathy’는 ‘동정’하는 것인데, 지문에서 ‘empathy’를 ‘동정’으로, ‘sympathy’를 ‘공감’으로 뒤바꿔 설명하고 있음. → 처방: ‘empathy’는 ‘감정 이입’, ‘sympathy’는 ‘동정’이라는 뜻을 기억하고, 실제 예문을 보며 차이를 익히자.\n③ 진단: ‘immigrate’는 ‘이민 오다(입국)’이고 ‘emigrate’는 ‘이민 가다(출국)’인데, 지문과 반대로 설명하고 있어 혼동한 것 같음. → 처방: ‘im-’는 ‘안으로’, ‘e-’는 ‘밖으로’라는 접두어를 떠올리고, ‘immigrate’는 ‘안으로 이민 오다’, ‘emigrate’는 ‘밖으로 이민 가다’라고 외우자.\n④ 진단: ‘deceptive’는 ‘속이는’, ‘delusional’은 ‘망상적인’이라는 뜻인데, 둘 다 ‘타국으로 떠나는 것’을 설명한다고 잘못 이해한 듯함. → 처방: 단어의 뜻을 정확히 외우고, ‘deceptive’는 ‘속임’, ‘delusional’은 ‘현실과 동떨어진 생각’이라는 뜻을 기억하자.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
