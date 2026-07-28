@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-27T22:20:55.383Z",
+ "updated": "2026-07-28T00:14:13.564Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-28T00:13:46.371Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 패턴은 동사(be, is, must 등)와 주어-동사 일치, 또는 동사 형태(원형, 과거분사 등)의 오용이 빈번하다는 점을 보여준다. 또한 문장 내 연어(예: 'day until night')의 반복적 오용 패턴도 확인된다.",
+   "rule": "'be 동사 + 동사원형' 구조(예: 'is generate')가 아닌 'be 동사 + 과거분사' 구조(예: 'is generated')가 옳음을 강조하는 오답지를 설계하라. 특히 'be + V-ed' 형태의 수동태나 완료형 오용을 유도하는 선택지를 포함할 것.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-27T22:20:29.262Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 실제 오류 패턴에서 '가산명사/불가산명사의 혼동'과 '시제 일치 오류'가 빈번함을 확인할 수 있다. 특히 'livestocks'와 같이 복수형이 불가산명사에 잘못 적용된 경우가 두드러진다.",
    "rule": "'가산명사의 복수형은 불가산명사(예: livestock, poultry, information, equipment)에는 적용되지 않는다'는 규칙을 내신 변형문제에 반드시 포함하여, 학생들이 가산/불가산 명사의 구분을 정확히 숙지하도록 출제한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-22T12:07:02.519Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스 패턴은 명사구(noun phrase)와 동사 시제(past/present tense) 간의 연어적 오류가 빈번하며, 특히 '~ing' 형태의 동명사/현재분사 사용 오류가 두드러진다. 또한 고유명사(Discovery Channel)나 전치사(~에서: in the wild)의 오용도 다수 확인된다.",
-   "rule": "'동사 + ing' 형태(동명사/현재분사)가 필요한 문맥에서 'to + 동사원형'을 사용하거나, 시제 일치 오류(3인칭 단수 현재형 동사 뒤 -s 누락/과잉)를 반드시 포함시킨다. 예: 'They enjoy learning' → 'They enjoy to learn' 또는 'The scraping causes heat' → 'The scraping will causes heat'.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,94 @@
 {
- "updated": "2026-07-27T22:20:55.387Z",
+ "updated": "2026-07-28T00:14:13.568Z",
  "samples": [
+  {
+   "ts": "2026-07-28T00:12:37.491Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "학생들의 자각은 연습 문제의 난이도와 교사의 설명의 질에 따라 달라진다.",
+     "교사는 학생들의 자각을 높이기 위해 연습 문제의 난이도를 높이는 데 집중해야 한다.",
+     "모든 학생은 자각이 부족하며, 이를 해결하기 위해 교사는 모든 수업 방식을 바꿔야 한다.",
+     "교사는 학생들의 자각을 높이기 위해 연습 문제를 강화하고 설명을 명확히 해야 하며, 이 두 조건이 동시에 충족되어야만 효과가 있다.",
+     "교사는 학생들의 자각을 높이기 위해 다양한 연습 문제와 명료한 설명을 제공해야 한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The teacher should enhance exercises and provide clear explanations to improve students' awareness.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘자각’이 ‘난이도’와 ‘설명의 질’에 ‘달라진다’는 말은 지문에 없지만, 학생들은 ‘연습 문제의 방식 변화’와 ‘명확한 설명’이 ‘자각’을 높이는 데 중요하다는 점은 읽었지만, 두 요소가 ‘상관관계’가 아니라 ‘원인-결과’로 작용한다는 사실을 혼동했다. → 처방: ‘자각’이 ‘어떤 조건에 따라 달라지는지’를 찾기보다는, ‘어떤 조건이 자각을 높이는지’를 집중해서 읽어야 한다.\n② 진단: ‘난이도 높이기’에만 초점을 맞췄지만, 지문은 ‘다양한 방식의 연습 문제’와 ‘명확한 설명’을 모두 강조하며, ‘난이도’ 자체보다는 ‘방식과 설명의 질’이 중요하다고 설명한다. → 처방: ‘난이도’가 아닌 ‘다양한 방식’과 ‘명확한 설명’이 자각을 높이는 핵심 요소임을 기억하자.\n③ 진단: ‘모든 학생’이 ‘자각이 부족하다’는 말은 과장이며, 지문은 ‘일부 학생’이 ‘시간 엄수’와 ‘자각’에서 부족함을 보였을 뿐, ‘모든 학생’을 일반화하지 않는다. → 처방: ‘일부 학생’의 문제점을 ‘일반화’하지 말고, 지문의 구체적 사례에 집중해서 읽자.\n④ 진단: ‘두 조건이 동시에 충족되어야만 효과가 있다’는 말은 지문에 없지만, 학생들은 ‘동시에’가 아니라 ‘각각’의 중요성을 혼동했다. 지문은 두 조건이 ‘모두’ 중요하다는 점을 강조하지만, ‘동시 충족’이 필수라는 말은 없다. → 처방: ‘두 조건이 모두 중요하다’는 사실만 기억하고, ‘동시 충족’이 필수인지 여부는 지문의 표현을 다시 확인하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The teacher should enhance exercises and provide clear explanations to improve students]"
+   }
+  },
+  {
+   "ts": "2026-07-28T00:13:20.762Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "On the first cycle, in implementing the Authentic Materials, the students were taken into an enjoyable teaching and learning process of reading. The materials successfully kept the students’ willingness, yet not quite successful in their awareness. They did every their work but not in time. It showed that they still lacked of awareness. Therefore, it was decided to solve the awareness problem in the next cycle. From the first cycle, the English teacher, as a collaborator, argued that in solving the remaining problem, the exercises should be enhanced by varying them in many ways. Furthermore, she also argued that the researcher himself should specify his explanation to the students and maintain his composure. Therefore, in the second cycle, the exercises were varied into many ways and every instruction was explained instead of waiting the students to ask. The students were also motivated by giving tip in effective reading. Those gave good result considering",
+    "choices": [
+     "첫 번째 주기에서 학생들은 제시간에 과제를 완료했다.",
+     "첫 번째 주기에서 학생들은 자발적인 참여는 유지했으나 인지 수준은 부족했다.",
+     "첫 번째 주기에서 학생들은 문제 해결을 위해 연습 문제를 다양화할 것을 제안했다.",
+     "첫 번째 주기에서 영어 교사가 학생들에게 설명을 구체화하고 침착함을 유지할 것을 주장했다.",
+     "두 번째 주기에서 학생들은 효과적인 읽기 팁을 제공받지 못했다."
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'They did every their work but not in time(제시간에 하지 못했다)'라고 명시했는데, 이를 '제시간에 완료했다'로 오해한 것 같다. 'not in time'을 간과했거나 반대로 해석한 듯하다. → 처방: 지문을 읽을 때 'not' 같은 부정어에 밑줄을 긋고 의미를 정확히 확인한 뒤 답을 선택하자.\n③ 진단: 지문에서 '연습 문제를 다양화할 것을 제안한 주체는 영어 교사'인데, 이를 '학생들이 제안했다'로 오해했다. 학생들이 아니라 교사가 제안한 내용임을 혼동한 것 같다. → 처방: 누가 어떤 행동을 했는지(주체와 대상)를 정확히 구분하여 읽고, 인칭(학생/교사/연구자)에 주의하자.\n④ 진단: 지문에서 '영어 교사가 주장한 것은 학생들에게 설명을 구체화하고 침착함을 유지할 것'이 아니라, '연구자에게(should specify his explanation to the students)'라고 했다. 학생들에게가 아니라 연구자에게 설명을 구체화하라고 한 것임을 오해했다. → 처방: 주어와 목적어를 정확히 짚고, '~에게'라는 조사가 포함된 문장은 누가 누구에게인지를 다시 한 번 확인하자.\n⑤ 진단: 지문에서 '효과적인 읽기 팁을 제공했다(Tip in effective reading)'고 명시했는데, 이를 '제공하지 않았다'로 오해했다. 긍정 표현을 부정으로 잘못 읽었거나 'tip'의 의미를 제대로 파악하지 못한 듯하다. → 처방: 긍정/부정 표현을 정확히 구분하고, unfamiliar 단어('tip' 등)는 문맥에서 의미를 유추하거나 사전을 참고하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-28T00:13:44.038Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 12,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 학생들은 즐거운 읽기 활동으로 willingness은 유지했지만 인지 부족으로 제때 과제를 완료하지 못해 다음 단계에서 인지 향상을 위한 다양한 연습과 명쾌한 설명, 차분한 진행이 필요했다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-27T20:44:56.321Z",
    "type": "요약문AB",
@@ -298,96 +386,6 @@
     ],
     "answer": 2,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: ‘지문에서 lugubrious 는 슬픔을 과장되게 드러내는 뜻으로, 단순히 슬프고 비통한 상태를 말하는 것이 아니다.’라는 설명을 오해하여 ‘슬픔을 과장되게 드러내는’ 자체가 ‘슬프고 비통한’ 상태를 포함한다고 생각한 듯함. → 처방: ‘과장’이라는 단어를 꼭 기억하고, 지문에서 ‘make a big show of’라는 표현을 떠올리며 ‘과장된 표현’이라는 핵심을 떠올리기.\n③ 진단: 지문에서 valedictorian(수석 졸업생)이 lugubrious 해지며 오열했다는 예시가 그대로 나와 있어, 이 선지는 지문과 일치함. 오독이 아니라면 다른 선지를 잘못 본 것일 수 있음. → 처방: 선지를 꼼꼼히 읽고, 지문과 비교할 때는 ‘정확히 같은 내용’이 아니라 ‘일치하지 않는 것’을 찾는다는 점을 명심하기.\n④ 진단: ‘luminous’의 뜻이 ‘빛을 내는, 밝은’으로 지문에 나와 있어 이 선지는 일치함. 오독이라면 ‘luminous’를 ‘어둡다’ 또는 ‘빛을 흡수한다’로 잘못 기억한 것일 수 있음. → 처방: 단어 뜻을 암기할 때 ‘반대말’이나 ‘유사어’를 혼동하지 않도록, 지문의 예문과 뜻을 함께 외우기.\n⑤ 진단: ‘luminous’의 뜻이 ‘빛을 내는, 밝은’으로, 눈이 밤에 빛나며 유령처럼 보였다는 지문 내용과 일치함. 오독이라면 ‘luminous’를 ‘어둡다’로 오해했을 가능성 있음. → 처방: ‘luminous’의 예문(‘snow appeared eerily luminous’)을 떠올리며 ‘어둡다’가 아니라 ‘빛나는’ 뜻임을 확실히 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-27T04:08:02.613Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.83,
-    "D": -0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어와 스와힐리어의 타동사-목적어 일치 현상의 가시적 차이를 비교하려고",
-     "영어에서 타동사와 목적어 간의 일치 현상이 보이지 않지만, 스와힐리어와 같은 언어에서는 객체 일치 형태가 드러난다는 사실을 설명하려고",
-     "스와힐리어에서 타동사와 목적어의 일치 형태가 문법적으로 필수적임을 강조하려고",
-     "언어별로 타동사와 목적어의 일치 현상이 나타나는 방식이 상이하다는 점을 지적하려고",
-     "영어보다 스와힐리어에서 타동사와 목적어의 일치 현상이 더 빈번히 일어난다고 주장하려고"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'The agreement between a transitive verb and its object is invisible in English but visible in languages like Swahili with overt object-agreement morphology.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문은 영어와 스와힐리어의 타동사-목적어 일치 현상의 '가시적 차이'를 설명하는 것이지, '비교'를 목적으로 삼지 않았다. 학생은 '비교'라는 단어에만 주목해 오독했을 것이다. → 처방: 지문 전체를 빠르게 훑으며 '비교'라는 단어가 나오면 그 문장만 읽는 것이 아니라, 지문이 '설명'하는 목적인지 확인하기 위해 첫 문장과 결론 부분을 집중해서 읽기.\n③ 진단: 지문은 스와힐리어의 객체 일치 형태가 '드러난다는 사실'을 설명하지, '필수적임'을 강조하지 않았다. 학생은 '강조'라는 단어에만 반응해 오독했을 것이다. → 처방: 지문의 핵심 문장(첫 문장과 결론)을 읽고, 그 문장이 '강조'나 '주장'을 담고 있는지 확인하기. 설명문은 보통 사실 전달이므로 '~임을 강조하려고' 같은 표현이 없음을 기억하기.\n④ 진단: 지문은 언어별 일치 방식의 '상이점'을 지적하는 것이 아니라, 영어와 스와힐리어의 '특정 사례'를 통해 일치 현상의 가시성을 설명한다. 학생은 '상이점'이라는 포괄적 단어에 끌려 오독했을 것이다. → 처방: 지문의 첫 문장과 결론을 읽고, 그 문장이 '특정 언어의 특징'을 설명하는지, 아니면 '여러 언어의 공통점/차이점'을 지적하는지 명확히 구분하기.\n⑤ 진단: 지문은 영어보다 스와힐리어에서 일치 현상이 '더 빈번히 일어난다'는 주장을 하지 않는다. 학생은 '빈번히'라는 단어에만 주목해 오독했을 것이다. → 처방: 지문의 핵심 문장(첫 문장과 결론)을 읽고, 그 문장에 '빈도'나 '빈번히' 같은 단어가 있는지 확인하기. 설명문은 보통 '존재 여부'나 '형태'에 초점을 맞추므로 그런 단어는 없음을 기억하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: The agreement between a transitive verb and its object is invisible in English but visible in languages like Swahili with overt object-agreement morphology.]"
-   }
-  },
-  {
-   "ts": "2026-07-27T04:08:32.674Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Agreement between a transitive verb and its object is invisible in English (in the sense that it has no overt phonetic manifestation), but is visible in languages like Swahili with overt object-agreement ____ . Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.",
-    "choices": [
-     "agreement verbs",
-     "structural relations",
-     "morphological marking",
-     "semantic agreement",
-     "phonetic patterns"
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 'morphological marking'가 들어가 글의 논지를 완성한다 (본문 'object-agreement morphology'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘agreement verbs’를 골랐다면, 지문에서 ‘overt object-agreement’라는 표현을 ‘동사 자체의 성질’로 오해했을 가능성이 큽니다. ‘agreement’는 ‘동사-목적어 간 일치’(즉, 문법적 관계)를 뜻하는데, 이를 ‘동사 종류’로 혼동한 것입니다. → 처방: ‘agreement’는 ‘일치·표지’라는 뜻임을 기억하고, 지문에서 ‘visible in languages like Swahili with overt object-agreement’를 다시 읽어보세요. ‘일치’가 어떻게 ‘형태적으로 드러나는지’(morphological marking)를 확인하세요.\n② 진단: ‘structural relations’를 골랐다면, 지문이 ‘visible’이라는 단어를 ‘구조적 관계’(예: 통사적 위치)로 오해했을 가능성이 큽니다. 그러나 지문은 ‘형태적으로 드러남’을 의미하는 ‘visible’이므로 구조적 관계가 아니라 ‘형태적 표지’를 가리킵니다. → 처방: ‘visible’이란 단어의 의미를 정확히 파악하세요. ‘형태적으로 드러나는지’(morphological marking)를 묻는 것임을 기억하고, ‘구조적 관계’와 혼동하지 마세요.\n④ 진단: ‘semantic agreement’를 골랐다면, 지문에서 ‘agreement’가 ‘의미적 일치’(예: 주어-동사 수 일치)가 아니라 ‘문법적 일치’를 뜻한다는 점을 놓쳤습니다. 영어에서 ‘agreement’는 통사적(문법적) 관계를 가리키며, 의미적 일치와는 다릅니다. → 처방: ‘agreement’가 통사적(문법적) 관계를 뜻한다는 점을 기억하세요. ‘의미적 일치’와 혼동하지 말고, 지문에서 ‘overt object-agreement’를 ‘형태적으로 드러나는 문법적 일치’로 해석하세요.\n⑤ 진단: ‘phonetic patterns’를 골랐다면, 지문이 ‘overt’라는 단어를 ‘발음 가능한 패턴’으로 오해했을 가능성이 큽니다. 그러나 ‘overt’는 ‘형태적으로 드러나는’(morphological) 것이지, ‘발음’(phonetic)과는 다릅니다. 지문은 ‘형태적 표지’를 문제 삼고 있습니다. → 처방: ‘overt’는 ‘형태적으로 드러나는’(morphological marking)을 뜻한다는 점을 기억하세요. ‘발음’(phonetic)과 혼동하지 말고, ‘형태적 표지’가 무엇인지 다시 확인하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-27T04:08:46.322Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 이 문장에서 필자는 영어에서 동사-목적어 간reement가 보이지 않지만 스와힐리어 등에서는 형태적으로 드러난다고 주장하며, Earliness Principle에 따라 목적어가 동사에 의해 조기에 case가 부여되어 T-사이클에서 비활성화됨으로써 HAVE가 he에 agree하고 nominative를 부여한다고 설명한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
