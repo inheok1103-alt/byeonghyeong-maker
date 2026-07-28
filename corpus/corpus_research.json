@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-28T18:50:07.327Z",
+ "updated": "2026-07-28T20:37:52.683Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-28T20:37:23.367Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서 'but'과 'while' 같은 접속사가 문장 내 위치나 중복 사용으로 인한 문법적 혼란을 유발하는 경우가 많음을 확인했다. 특히 'even if'와 'but'의 병치나 'while'의 중복 사용이 오류로 이어지는 패턴이 반복된다.",
+   "rule": "'but'이나 'while' 등 접속사를 사용할 때에는 문장 내 중복 사용을 방지하고, 접속사 앞뒤의 구문 구조가 자연스럽게 연결되도록 문장을 설계하라. 예를 들어 'even if'와 'but'을 같은 문장에서 쓸 경우, 각 접속사가 담당하는 절의 구분이 명확하도록 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-28T18:49:32.486Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거 시제 동사와 단수 주어의 불일치 오류가 빈번하며, 명사구와 전치사구가 결합된 문장에서 주어-동사 일치와 시제 일치가 자주 틀어지는 경향이 관찰된다.",
    "rule": "단수 주어(예: professor, editor)와 과거 시제 동사(예: oppose, is)가 결합된 문장에서 주어-동사 일치 오류가 발생할 가능성이 높으므로, 해당 패턴을 문항으로 출제할 때에는 반드시 단수 주어와 과거 시제 동사의 일치를 확인하는 문제를 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-23T06:43:20.019Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 최빈 연어와 문법오류쌍을 분석한 결과, '명사 + 전치사 + 명사' 구조에서 전치사의 선택이 CEFR 밴드에 따라 체계적으로 달라지며, 특히 'reason'과 'experience'가 빈번히 오류를 일으켰다.",
-   "rule": "CEFR B1 수준 이하의 문제에서는 'reason + that절'이나 'experience + although절'처럼 명사 뒤에 불필요한 접속사나 절을 삽입하는 오류를 유도하고, 정답은 'reason + to부정사'나 'experience + while절'로 전치사/접속사의 정확한 사용을 요구하라.",
    "sample": [
     "old english",
     "university press",

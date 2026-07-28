@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-28T18:50:07.331Z",
+ "updated": "2026-07-28T20:37:52.687Z",
  "samples": [
+  {
+   "ts": "2026-07-28T20:37:04.243Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "a pugnacious boxer's violent escalation of a rematch demand",
+     "a manager's aggressive intervention in a boxer's demand for a rematch",
+     "a boxer's demand for a rematch as a pugnacious act",
+     "common outcomes of pugnacity in competitive sports",
+     "frequent violent reactions triggered by pugnacious athletes"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'A pugnacious boxer's demand for a rematch escalated into a violent confrontation.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: A pugnacious boxer]\n[오답 진단·처방]\n① 진단: ‘pugnacious’의 의미(싸움을 좋아하는, 공격적인)가 아니라 ‘폭력적인 escalation(에스컬레이션, 격화)’에만 초점을 맞춰 오해한 듯하다. Mullins 의 폭력적 행동은 주제가 아니라 결과에 가깝다. → 처방: ‘pugnacious’의 의미를 정확히 확인하고, 주제가 Mullins 의 성격과 행동임을 기억하라. 지문에서 Mullins 가 ‘pugnacious’라고 직접 묘사된 부분을 찾으라.\n② 진단: ‘manager’의 행동(aggressive intervention)이 아니라 Mullins 의 ‘pugnacious act’가 주제라고 오해했다. 지문은 Mullins 의 성격과 도전장을 내민 행위를 중심으로 전개된다. → 처방: 지문 전체를 읽고 누가 주된 행위자인지 확인하라. Mullins 가 ‘pugnacious’라고 묘사된 부분을 찾고, 주제는 그의 성격과 행동임을 기억하라.\n④ 진단: ‘common outcomes(흔한 결과)’라는 표현에 이끌려 오답을 선택했다. 지문은 Mullins 의 성격과 도전장을 내민 행위를 묘사할 뿐, ‘common outcomes’은 언급되지 않는다. → 처방: ‘주제’를 묻는 문제임을 기억하고, 지문에서 반복되는 핵심 단어(‘pugnacious’, Mullins)가 무엇인지 찾으라. 주제는 Mullins 의 성격과 행동임을 기억하라.\n⑤ 진단: ‘frequent violent reactions(흔한 폭력적 반응)’에만 초점을 맞춰 오해했다. 지문은 Mullins 의 폭력적 행동이 주제가 아니라, 그의 ‘pugnacious act’가 주제임을 보여준다. → 처방: ‘주제’를 묻는 문제임을 기억하고, 지문에서 Mullins 가 ‘pugnacious’라고 묘사된 부분을 찾으라. 주제는 그의 성격과 행동임을 기억하라."
+   }
+  },
   {
    "ts": "2026-07-28T18:48:23.399Z",
    "type": "제목",
@@ -320,41 +355,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'The teacher should enhance exercises and provide clear explanations to improve students' awareness.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘자각’이 ‘난이도’와 ‘설명의 질’에 ‘달라진다’는 말은 지문에 없지만, 학생들은 ‘연습 문제의 방식 변화’와 ‘명확한 설명’이 ‘자각’을 높이는 데 중요하다는 점은 읽었지만, 두 요소가 ‘상관관계’가 아니라 ‘원인-결과’로 작용한다는 사실을 혼동했다. → 처방: ‘자각’이 ‘어떤 조건에 따라 달라지는지’를 찾기보다는, ‘어떤 조건이 자각을 높이는지’를 집중해서 읽어야 한다.\n② 진단: ‘난이도 높이기’에만 초점을 맞췄지만, 지문은 ‘다양한 방식의 연습 문제’와 ‘명확한 설명’을 모두 강조하며, ‘난이도’ 자체보다는 ‘방식과 설명의 질’이 중요하다고 설명한다. → 처방: ‘난이도’가 아닌 ‘다양한 방식’과 ‘명확한 설명’이 자각을 높이는 핵심 요소임을 기억하자.\n③ 진단: ‘모든 학생’이 ‘자각이 부족하다’는 말은 과장이며, 지문은 ‘일부 학생’이 ‘시간 엄수’와 ‘자각’에서 부족함을 보였을 뿐, ‘모든 학생’을 일반화하지 않는다. → 처방: ‘일부 학생’의 문제점을 ‘일반화’하지 말고, 지문의 구체적 사례에 집중해서 읽자.\n④ 진단: ‘두 조건이 동시에 충족되어야만 효과가 있다’는 말은 지문에 없지만, 학생들은 ‘동시에’가 아니라 ‘각각’의 중요성을 혼동했다. 지문은 두 조건이 ‘모두’ 중요하다는 점을 강조하지만, ‘동시 충족’이 필수라는 말은 없다. → 처방: ‘두 조건이 모두 중요하다’는 사실만 기억하고, ‘동시 충족’이 필수인지 여부는 지문의 표현을 다시 확인하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The teacher should enhance exercises and provide clear explanations to improve students]"
-   }
-  },
-  {
-   "ts": "2026-07-28T00:13:20.762Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "On the first cycle, in implementing the Authentic Materials, the students were taken into an enjoyable teaching and learning process of reading. The materials successfully kept the students’ willingness, yet not quite successful in their awareness. They did every their work but not in time. It showed that they still lacked of awareness. Therefore, it was decided to solve the awareness problem in the next cycle. From the first cycle, the English teacher, as a collaborator, argued that in solving the remaining problem, the exercises should be enhanced by varying them in many ways. Furthermore, she also argued that the researcher himself should specify his explanation to the students and maintain his composure. Therefore, in the second cycle, the exercises were varied into many ways and every instruction was explained instead of waiting the students to ask. The students were also motivated by giving tip in effective reading. Those gave good result considering",
-    "choices": [
-     "첫 번째 주기에서 학생들은 제시간에 과제를 완료했다.",
-     "첫 번째 주기에서 학생들은 자발적인 참여는 유지했으나 인지 수준은 부족했다.",
-     "첫 번째 주기에서 학생들은 문제 해결을 위해 연습 문제를 다양화할 것을 제안했다.",
-     "첫 번째 주기에서 영어 교사가 학생들에게 설명을 구체화하고 침착함을 유지할 것을 주장했다.",
-     "두 번째 주기에서 학생들은 효과적인 읽기 팁을 제공받지 못했다."
-    ],
-    "answer": 2,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'They did every their work but not in time(제시간에 하지 못했다)'라고 명시했는데, 이를 '제시간에 완료했다'로 오해한 것 같다. 'not in time'을 간과했거나 반대로 해석한 듯하다. → 처방: 지문을 읽을 때 'not' 같은 부정어에 밑줄을 긋고 의미를 정확히 확인한 뒤 답을 선택하자.\n③ 진단: 지문에서 '연습 문제를 다양화할 것을 제안한 주체는 영어 교사'인데, 이를 '학생들이 제안했다'로 오해했다. 학생들이 아니라 교사가 제안한 내용임을 혼동한 것 같다. → 처방: 누가 어떤 행동을 했는지(주체와 대상)를 정확히 구분하여 읽고, 인칭(학생/교사/연구자)에 주의하자.\n④ 진단: 지문에서 '영어 교사가 주장한 것은 학생들에게 설명을 구체화하고 침착함을 유지할 것'이 아니라, '연구자에게(should specify his explanation to the students)'라고 했다. 학생들에게가 아니라 연구자에게 설명을 구체화하라고 한 것임을 오해했다. → 처방: 주어와 목적어를 정확히 짚고, '~에게'라는 조사가 포함된 문장은 누가 누구에게인지를 다시 한 번 확인하자.\n⑤ 진단: 지문에서 '효과적인 읽기 팁을 제공했다(Tip in effective reading)'고 명시했는데, 이를 '제공하지 않았다'로 오해했다. 긍정 표현을 부정으로 잘못 읽었거나 'tip'의 의미를 제대로 파악하지 못한 듯하다. → 처방: 긍정/부정 표현을 정확히 구분하고, unfamiliar 단어('tip' 등)는 문맥에서 의미를 유추하거나 사전을 참고하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
