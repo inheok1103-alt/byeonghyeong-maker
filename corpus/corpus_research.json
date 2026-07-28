@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-28T00:14:13.564Z",
+ "updated": "2026-07-28T03:40:16.577Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-28T03:39:52.779Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'make'은 능동태로 직접 목적어를 취하는 동사로 빈번히 사용되며, 'make + 목적어 + 동사원형' 구조가 일반적이다. 또한 'when'은 시간 부사절 접속사로 오용되는 경우가 많고, 'for' 뒤에는 명사형(명사구)이 오는 패턴이 두드러진다.",
+   "rule": "'make' 동사를 사용할 때에는 능동태로 'make + 목적어 + 동사원형' 구조를 사용하도록 오류를 유도하는 문장을 제작하라. 예를 들어, 'advertisements make products seem better'와 같은 문장을 변형하여 'advertisements are make products seem better'로 오류를 삽입하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-28T00:13:46.371Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "원서 코퍼스에서 'agree with', 'brought immediately', 'give rise to'와 같은 고정적 연어 패턴이 빈번히 나타나며, 오답지 설계 시에도 이 연어의 정확한 형태를 묻는 문제가 유효함을 확인할 수 있다.",
    "rule": "원서 코퍼스의 최빈 연어를 기반으로, 'agree with', 'give rise to', 'brought immediately'와 같은 고정적 동사-전치사/부사 연어 패턴을 오답 선택지에 포함하여, 학생들이 연어의 정확한 형태를 선택하도록 하는 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-22T14:26:21.395Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 실제 오류 패턴에서 '가산명사/불가산명사의 혼동'과 '시제 일치 오류'가 빈번함을 확인할 수 있다. 특히 'livestocks'와 같이 복수형이 불가산명사에 잘못 적용된 경우가 두드러진다.",
-   "rule": "'가산명사의 복수형은 불가산명사(예: livestock, poultry, information, equipment)에는 적용되지 않는다'는 규칙을 내신 변형문제에 반드시 포함하여, 학생들이 가산/불가산 명사의 구분을 정확히 숙지하도록 출제한다.",
    "sample": [
     "old english",
     "university press",

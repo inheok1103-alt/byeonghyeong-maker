@@ -1,6 +1,85 @@
 {
- "updated": "2026-07-28T00:14:13.568Z",
+ "updated": "2026-07-28T03:40:16.582Z",
  "samples": [
+  {
+   "ts": "2026-07-28T03:38:13.065Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "It's Friday afternoon.\n\n(A) So instead of Tom's words I'm having, David says he's having. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So instead of here, he says at his flat. And a day has passed since he first heard about it.\n\n(B) David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick has arrived at the flat. Now David is reporting what Tom said.\n\n(C) It is now the day of the party. So instead of tomorrow evening, David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 2,
+    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 학생은 글의 순서를 파악하는 데 실패하여 (A) - (C) - (B) 순으로 선택했을 것으로 보인다. 'It's Friday afternoon.'이라는 문장과 (B) 문단의 내용이 일치하지 않음을 인식하지 못한 것으로 보인다. → 처방: 글의 순서를 파악하기 위해 각 문단의 시간과 장소를 주의 깊게 읽어야 한다.\n③ 진단: 학생은 (B) - (C) - (A) 순으로 선택했을 것으로 보인다. 이는 (C) 문단의 'Changes in reported speech'라는 제목이 전체 글의 순서를 결정하는 데 중요한 역할을 하지 않는다고 생각했기 때문일 수 있다. → 처방: 각 문단의 제목과 내용을 주의 깊게 읽어 전체 글의 흐름을 파악해야 한다.\n④ 진단: 학생은 (C) - (A) - (B) 순으로 선택했을 것으로 보인다. 이는 (C) 문단의 설명이 (B) 문단의 내용을 기반으로 해야 한다는 것을 인식하지 못한 것으로 보인다. → 처방: 글의 순서를 파악하기 위해 각 문단의 내용과 설명의 관련성을 주의 깊게 분석해야 한다.\n⑤ 진단: 학생은 (C) - (B) - (A) 순으로 선택했을 것으로 보인다. 이는 (B) 문단의 내용이 (A) 문단의 내용보다 먼저 나와야 한다는 것을 인식하지 못한 것으로 보인다. → 처방: 글의 순서를 파악하기 위해 각 문단의 시간과 장소를 주의 깊게 비교해야 한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-28T03:39:26.397Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "It's Friday afternoon. David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick (A) [arrived / has arrived] at the flat. Now David is reporting what Tom said. So instead of Tom's words (B) [I'm having / I have], David says he's having. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So instead of here, he says at his flat. And a day has passed since he first heard about it. It is now the day of the party. So instead of (C) [this evening / tomorrow evening], David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
+    "choices": [
+     "(A) has arrived - (B) I have - (C) tomorrow evening",
+     "(A) arrived - (B) I have - (C) this evening",
+     "(A) has arrived - (B) I'm having - (C) this evening",
+     "(A) arrived - (B) I have - (C) tomorrow evening",
+     "(A) has arrived - (B) I'm having - (C) tomorrow evening"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) has arrived - (B) I'm having - (C) tomorrow evening. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(A) has arrived’를 고른 학생은 ‘닉이 지금 막 도착했다는 사실’을 강조하려 했지만, ‘몇 분 전에 왔다’는 지문 속 시간 표현을 보지 못하고 시제 선택을 오류했음. (B)도 ‘I have’를 써서 ‘현재 진행 중인 파티’를 표현하지 못하고 있음. → 처방: ‘몇 분 전에’라는 시간 표현이 있으면 단순 과거 시제를 써야 한다는 점을 기억하고, 시제 선택 시 동사의 시점(지금 vs 과거)을 정확히 확인할 것.\n② 진단: ‘(B) I have’를 고른 학생은 ‘have’를 써서 현재 완료 시제를 사용했지만, ‘I’m having’이라는 현재이 ‘파티를 열고 있다’는 의미를 더 정확히 전달한다는 지문 속 설명을 무시했음. → 처방: ‘have’를 쓸 때는 완료의 의미를, ‘I’m having’을 쓸 때는 ‘현재 진행 중인 행동’을 나타낸다는 차이를 명확히 구분하고, 문맥에 맞는 시제를 선택할 것.\n④ 진단: ‘(C) tomorrow evening’을 고른 학생은 ‘파티가 내일 저녁’이라는 시간적 배경을 잘못 이해했음. 지문에서 ‘파티는 금요일 오후에 열리며, 다음 날인 토요일 저녁이 아님’을 명시했음에도 이를 놓쳤음. → 처방: ‘파티가 열리는 날’이 언제인지 지문에서 정확히 확인하고, ‘tomorrow evening’이 아니라 ‘this evening’을 써야 한다는 점을 기억할 것.\n⑤ 진단: ‘(A) has arrived’를 쓰고 (B)도 ‘I have’를 써서 ‘have’를 과용했으며, (C)도 ‘tomorrow evening’을 써서 시간적 배경을 오해했음. 시제와 시간 표현을 모두 잘못 적용한 경우임. → 처방: 각 시제와 시간 표현의 쓰임새를 따로따로 공부하고, 문맥에 맞는 표현을 차근차근 확인할 것. 특히 ‘몇 분 전’, ‘지금’, ‘다음 날’ 같은 시간 표현을 놓치지 않도록 주의할 것."
+   }
+  },
+  {
+   "ts": "2026-07-28T03:39:50.446Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "It's Friday afternoon. David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick ⓐ<u>had arrived</u> at the flat. Now David is reporting what Tom said. So instead of Tom's words ⓑ<u>I'm having</u>, David says he's having. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So ⓒ<u>instead of here</u>, ⓓ<u>he says at his flat</u>. And a day has passed since he first heard about it. It is now the day of the party. So instead of ⓔ<u>tomorrow evening</u>, David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓐ: 'had arrived' → 'has arrived' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-28T00:12:37.491Z",
    "type": "요지",
@@ -280,112 +359,6 @@
     ],
     "answer": 5,
     "explanation": "(A) lexical combinations / (B) personality assessments 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘social evaluations’를 (B) 자리에 넣은 이유는 ‘word combinations’이 ‘사회적 평가’를 가리키는 것으로 오해했기 때문. 그러나 지문은 ‘collocations’를 ‘사회적 평가’와 연결짓는 연습이지, ‘word combinations’이 ‘사회적 평가’를 뜻하지 않음. → 처방: ‘collocations’를 ‘어휘 결합’으로, ‘social evaluations’를 ‘사회적 평가’로 구분해서 생각하기. 지문에서 ‘collocations’를 ‘어휘 결합’으로, ‘personality assessments’를 ‘사회적 평가’로 사용했는지 확인하기.\n② 진단: ‘lexical combinations’을 (A) 자리에, ‘grammatical structures’를 (B) 자리에 넣은 이유는 ‘collocations’이 ‘문법 구조’와 관련 있다고 잘못 생각했기 때문. 지문은 ‘collocations’이 ‘문법’보다 ‘어휘 결합’임을 보여줌. → 처방: ‘collocations’가 ‘문법 구조’가 아니라 ‘어휘 결합’이라는 점을 기억하기. ‘grammatical structures’는 문법 규칙을 뜻하니 혼동하지 않기.\n③ 진단: ‘semantic fields’를 (A) 자리에, ‘morphological patterns’를 (B) 자리에 넣은 이유는 ‘collocations’이 ‘형태론적 패턴’과 관련 있다고 오해했기 때문. 지문은 ‘collocations’이 ‘의미 영역’이 아니라 ‘어휘 결합’을 다룬다는 점을 보여줌. → 처방: ‘collocations’를 ‘어휘 결합’으로, ‘morphological patterns’을 ‘형태소 패턴’으로 구분하기. ‘semantic fields’는 ‘의미 영역’이니 혼동하지 않기.\n④ 진단: ‘grammatical rules’를 (A) 자리에, ‘personality assessments’를 (B) 자리에 넣은 이유는 ‘collocations’이 ‘문법 규칙’과 관련 있다고 잘못 생각했기 때문. 지문은 ‘collocations’이 ‘문법’보다 ‘어휘 결합’과 ‘인성 평가’를 다룬다는 점을 보여줌. → 처방: ‘collocations’를 ‘어휘 결합’으로, ‘grammatical rules’를 ‘문법 규칙’으로 구분하기. ‘personality assessments’는 ‘인성 평가’이니 ‘collocations’와 연결짓기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-27T07:55:38.146Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "이 글은 특정 어휘들의 의미와 사용법을 설명과 구체적인 예시를 통해 명확히 제시한다.",
-     "이 글은 특정 어휘들의 발음에 대한 정보만을 제공하며, 의미 설명은 부족하다.",
-     "이 글은 특정 어휘의 예시를 먼저 제시하여, 독자가 그 단어의 정의를 스스로 구성하게 한다.",
-     "이 글은 독자들이 어휘 학습 시 겪는 어려움을 해결하기 위한 효과적인 방법을 제시한다.",
-     "이 글은 모든 언어 학습자가 알아야 할 보편적인 어휘 학습 원칙을 설명한다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The text primarily defines and illustrates the meanings of specific vocabulary words, such as 'lugubrious' and 'luminous', through explanations and examples.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·초점 이탈·과잉 일반화·인과 전도)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 소재는 같으나 논점에서 벗어남· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 이 글은 특정 어휘들의 의미와 사용법을 설명하고 예시를 제공한다는 점을 간과하여, 발음 정보만을 제공한다고 오독하였다. → 처방: 글의 전체적인 구조와 내용을 주의깊게 읽어보아야 한다.\n③ 진단: 이 글은 예시를 먼저 제시하고 정의를 나중에 설명한다는 점을 오해하여, 독자가 스스로 정의를 구성하게 한다고 오독하였다. → 처방: 글의 순서와 구조를 잘 이해하고, 예시와 정의의 관계를 명확히 파악해야 한다.\n④ 진단: 이 글은 특정 어휘들의 의미와 사용법을 설명하고 있지만, 어휘 학습의 어려움을 해결하는 방법을 제공한다고 오독하였다. → 처방: 글의 목적과 범위를 명확히 이해하고, 제공하는 정보를 제대로 해석해야 한다.\n⑤ 진단: 이 글은 특정 어휘들의 의미와 사용법을 설명하고 있지만, 모든 언어 학습자가 알아야 할 보편적인 원칙을 설명한다고 오독하였다. → 처방: 글의 내용과 범위를 정확히 파악하고, 특정 어휘와 보편적인 원칙을 구분해야 한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The text primarily defines and illustrates the meanings of specific vocabulary words, such as ]"
-   }
-  },
-  {
-   "ts": "2026-07-27T07:56:04.287Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "슬픔을 진심으로 느끼려고",
-     "장례식에서 슬픔을 드러내려고",
-     "모든 유형의 슬픔을 과장하려고",
-     "슬픔을 지나치게 드러내려고",
-     "슬픔을 과장하여 표현하려고"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'to show exaggerated mournfulness.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n① 진단: 지문에서 'lugubrious'는 '과장된 슬픔'을 뜻하는데, 학생은 '진심으로 슬픔을 느끼는 것'으로 오해한 듯하다. 지문 첫머리에 'exaggeratedly mournful(과장된 슬픔)'이라고 명확히 설명되어 있다. → 처방: 단어의 뜻을 정확히 확인할 때는 지문의 설명을 꼼꼼히 읽고, 'exaggeratedly(과장된)'라는 말이 있는지 확인해 보자.\n② 진단: 학생은 'lugubrious'가 장례식에서 슬픔을 드러내는 것이라고 오해했는데, 지문에서는 '장례식에서 슬픔을 과장해서 표현한 예'가 있을 뿐, 장례식 자체가 목적이 아니라고 설명되어 있다. → 처방: 단어의 뜻을 풀이할 때는 지문에 나온 예시가 '목적'인지 '방법'인지를 구분해 보자. 여기서는 '방법'에 가깝다.\n③ 진단: 학생은 '모든 유형의 슬픔'을 과장한다고 오해했는데, 지문에서는 '특정한 과장된 슬픔'만을 가리킨다고 설명되어 있다. '모든 유형'이라는 말이 지문에 없다. → 처방: 단어의 뜻을 풀이할 때는 '모든'이나 '특정' 같은 범위를 나타내는 단어가 있는지 확인해 보자.\n⑤ 진단: 학생은 '슬픔을 과장하여 표현하려고'라는 말이 정답과 비슷하다고 생각했을 텐데, 정답은 '지나치게 드러내려고'라는 더 넓은 뜻을 담고 있다. '과장하여 표현'은 '지나치게 드러내'의 한 예에 불과하다. → 처방: 정답과 오답을 비교할 때는 단어의 뜻뿐 아니라 문맥(예: '과장' vs '지나침')도 함께 따져 보자.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to show exaggerated mournfulness.]"
-   }
-  },
-  {
-   "ts": "2026-07-27T07:57:01.551Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(73%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "LUGUBRIOUS (loo GOO bree us) adj exaggeratedly mournful To be mournful is to be sad and sorrowful. To be lugubrious is to make a big show of being sad and sorrowful. • Harry’s lugubrious eulogy at the funeral of his dog eventually made everyone start giggling. • The valedictorian suddenly turned lugubrious and began sobbing and tearing her hair at the thought of graduating from high school. Note carefully the pronunciation of this word. LUMINOUS (LOO muh nus) adj giving off light; glowing; bright • The moon was a luminous disk in the cloudy nighttime sky. • The snow on the ground appeared eerily luminous at night—it seemed to glow. • The dial on my watch is luminous; it casts a green glow in the dark. Quick Quiz #55 Match each word in the first column with its definition in the second column. Check your answers here. 1. libel a. giving off light 2. slander b. try in court 3. litigate c. exaggeratedly mournful 4. loquacious d. easy to understand 5. lucid e. written injurious falsehood 6. lugubrious f. spoken injurious falsehood 7. luminous g. talking a lot",
-    "choices": [
-     "‘슬픔을 과장되게 드러내는’은 ‘슬프고 비통한’ 상태를 과장하여 표현하는 것이다.",
-     "‘슬픔을 과장되게 드러내는’이란 ‘슬프고 비통한’ 상태를 과장하여 표현하는 것이 아니다.",
-     "수석 졸업생이 고등학교 졸업에 대해 lugubrious 해지며 오열하고 머리를 뜯기 시작했다.",
-     "‘빛을 내는’은 ‘빛을 발하거나 밝은’ 상태를 말한다.",
-     "밤에 눈이 lumino us 하게 빛나며 유령처럼 보였다."
-    ],
-    "answer": 2,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: ‘지문에서 lugubrious 는 슬픔을 과장되게 드러내는 뜻으로, 단순히 슬프고 비통한 상태를 말하는 것이 아니다.’라는 설명을 오해하여 ‘슬픔을 과장되게 드러내는’ 자체가 ‘슬프고 비통한’ 상태를 포함한다고 생각한 듯함. → 처방: ‘과장’이라는 단어를 꼭 기억하고, 지문에서 ‘make a big show of’라는 표현을 떠올리며 ‘과장된 표현’이라는 핵심을 떠올리기.\n③ 진단: 지문에서 valedictorian(수석 졸업생)이 lugubrious 해지며 오열했다는 예시가 그대로 나와 있어, 이 선지는 지문과 일치함. 오독이 아니라면 다른 선지를 잘못 본 것일 수 있음. → 처방: 선지를 꼼꼼히 읽고, 지문과 비교할 때는 ‘정확히 같은 내용’이 아니라 ‘일치하지 않는 것’을 찾는다는 점을 명심하기.\n④ 진단: ‘luminous’의 뜻이 ‘빛을 내는, 밝은’으로 지문에 나와 있어 이 선지는 일치함. 오독이라면 ‘luminous’를 ‘어둡다’ 또는 ‘빛을 흡수한다’로 잘못 기억한 것일 수 있음. → 처방: 단어 뜻을 암기할 때 ‘반대말’이나 ‘유사어’를 혼동하지 않도록, 지문의 예문과 뜻을 함께 외우기.\n⑤ 진단: ‘luminous’의 뜻이 ‘빛을 내는, 밝은’으로, 눈이 밤에 빛나며 유령처럼 보였다는 지문 내용과 일치함. 오독이라면 ‘luminous’를 ‘어둡다’로 오해했을 가능성 있음. → 처방: ‘luminous’의 예문(‘snow appeared eerily luminous’)을 떠올리며 ‘어둡다’가 아니라 ‘빛나는’ 뜻임을 확실히 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
