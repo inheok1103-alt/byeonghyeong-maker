@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-28T14:45:39.492Z",
+ "updated": "2026-07-28T16:53:33.569Z",
  "samples": [
+  {
+   "ts": "2026-07-28T16:52:58.735Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.86,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.86)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "의문 보문에서 wh-단어의 이동은 C의 의문적 특징을 유발하는 원인으로 작용한다.",
+     "영어의 wh-이동은 의문 보문에서 wh-단어를 C로만 이동시키는 통사적 과정이므로 그 범위가 제한된다.",
+     "일부 언어에서는 wh-이동이 의문 보문의 의문적 특징을 만족시키기 위해 일어나지 않을 수도 있다.",
+     "wh-이동은 통사적 과정이지만 모든 언어에서 반드시 발생해야 하는 필수 현상은 아니다.",
+     "wh-이동이 C 아래 지정자 위치로의 이동을 통해 의문 보문의 의문적 특징을 만족시킨다는 것이 영어의 통사적 특징이다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Wh-movement is a syntactic process in English that moves interrogative words to a specifier position under C to satisfy the interrogative feature of the interrogative complementizer.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: C 의 의문적 특징이 wh-단어의 이동을 유발한다는 오독. 지문은 wh-이동이 C 의 edge feature [EF] 때문에 일어난다고 설명함. 즉, 이동은 C 의 특징 때문에 발생하는 것임. → 처방: C 의 edge feature [EF]가 wh-이동을 유발한다는 점을 정확히 파악하기. wh-이동의 원인과 결과 관계를 반대로 오해하지 않기.\n② 진단: wh-이동의 범위가 C 로만 제한된다고 오해. 지문은 wh-이동이 C 의 specifier 로 이동한다고만 설명하며, 범위가 제한된다는 내용은 없음. → 처방: wh-이동이 C 의 specifier 로 이동한다는 사실만 기억하기. 이동의 범위나 제한 여부는 지문에서 다루지 않음을 인식하기.\n③ 진단: 일부 언어에서 wh-이동이 일어나지 않을 수도 있다고 혼동. 지문은 영어의 특징을 설명하며, 중국어와 같은 언어는 wh-이동이 필요 없다고는 언급하지 않음. → 처방: 지문이 영어의 wh-이동 특징을 설명한다는 점을 기억하기. 다른 언어의 특징은 지문에서 다루지 않음을 분명히 하기.\n④ 진단: wh-이동이 모든 언어에서 필수라고 오독. 지문은 영어의 경우 wh-이동이 필요하다고 설명하지만, 모든 언어에 적용되는 필수 현상은 아님을 암시하지 않음. → 처방: wh-이동이 특정 언어(영어)의 특징임을 분명히 파악하기. 모든 언어에 공통된 필수 현상이 아님을 인식하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Wh-movement is a syntactic process in English that moves interrogative words to a specifier position under C to satisfy the interrogative feature of the interrogative complementizer.]"
+   }
+  },
+  {
+   "ts": "2026-07-28T16:53:07.886Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'wh-questions', 'wh-movement', 'grammatical' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] I agree that English requires wh-movement in non-echoic wh-questions for grammatical correctness.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-28T12:17:58.099Z",
    "type": "제목",
@@ -290,74 +343,6 @@
     ],
     "answer": 3,
     "explanation": "(A) parallelism / (B) consistency 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘ambiguity(모호성)’를 오해한 듯합니다. 지문은 ‘well-formed(문법적)’와 ‘ungrammatical(문법적이지 않은)’의 대비를 말하고 있는데, ‘ambiguity’는 문장의 의미가 불분명한 경우에나 쓰입니다. 지문은 문법 구조의 일관성을 문제 삼고 있습니다. → 처방: ‘parallelism(병렬 구조)’가 문법적 일관성을 지키는지 확인하는 개념임을 기억하고, ‘ambiguity’는 제외하세요.\n② 진단: ‘redundancy(중복)’를 오해한 듯합니다. 지문은 ‘co-ordination(병렬 구조)’에서 각 요소가 같은 문법적 역할을 해야 한다는 점을 강조하는데, ‘redundancy’는 정보의 중복과 관련이 있습니다. → 처방: ‘consistency(일관성)’가 문법적 병렬 구조에서 같은 품사나 구문 구조를 유지해야 한다는 뜻임을 기억하세요.\n④ 진단: ‘cohesion(결합)’을 오해한 듯합니다. 지문은 문법적 구조의 일관성(parallelism)을 문제 삼고 있는데, ‘cohesion’은 문장 내 연결성(예: 대명사, 접속사)을 의미합니다. → 처방: ‘consistency(일관성)’가 문법적 병렬 구조에서 같은 품사나 구문 구조를 유지해야 한다는 뜻임을 기억하세요.\n⑤ 진단: ‘compatibility(호환성)’을 오해한 듯합니다. 지문은 ‘co-ordination(병렬 구조)’에서 각 요소가 같은 문법적 역할을 해야 한다는 점을 강조하는데, ‘compatibility’는 단어 간의 어울림을 의미합니다. → 처방: ‘consistency(일관성)’가 문법적 병렬 구조에서 같은 품사나 구문 구조를 유지해야 한다는 뜻임을 기억하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-27T18:49:20.863Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] Hence, the bracketed clauses are infinitive clauses in: ‘He is trying [to help her]’, and ‘Why not let [him help her]?\n\nInfinitive: The infinitive form of a verb is the (uninflected) form which is used (inter alia) when the verb is the complement of a modal auxiliary like can, or of the infinitive particle to. ( ① ) Accordingly, the italicised verbs are infinitive forms in sentences like ‘He can speak French’, and ‘He’s trying to learn French. ( ② ) ’ An infinitive clause is a clause which contains a verb in the infinitive form. ( ③ ) ’ (In both examples, help is an infinitive verb form, and to when used with an infinitive complement is said to be an infinitive particle.) ( ④ ) Since clauses are analysed as phrases within the framework used here, the term infinitive phrase can be used interchangeably with infinitive clause, to denote a TP projection headed by the infinitive particle to (or by a null counterpart of the infinitive particle to). ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: 인용구의 시작 부분을 주목하지 않고, 주어진 문장이 들어갈 수 있는 위치로 오독했다. → 처방: 인용구의 시작 부분을 주목해서 주어진 문장이 들어갈 수 있는 위치를 다시 확인하자.\n② 진단: 예시 문장의 특징을 주어진 문장과 혼동하여, 주어진 문장이 들어가기에 적절한 위치로 오독했다. → 처방: 예시 문장과 주어진 문장을 비교해서 주어진 문장이 들어갈 수 있는 위치를 다시 확인하자.\n④ 진단: 인용구의 설명 부분을 주목하지 않고, 주어진 문장이 들어갈 수 있는 위치로 오독했다. → 처방: 인용구의 설명 부분을 주목해서 주어진 문장이 들어갈 수 있는 위치를 다시 확인하자.\n⑤ 진단: 인용구의 마지막 부분을 주목하지 않고, 주어진 문장이 들어갈 수 있는 위치로 오독했다. → 처방: 인용구의 마지막 부분을 주목해서 주어진 문장이 들어갈 수 있는 위치를 다시 확인하자.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-27T17:13:19.493Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "부채를 갚을 능력이 없을 때만 ‘무능력’ 또는 ‘파산’으로 규정할 수 있다.",
-     "기업이 부채를 갚지 못할 경우에 한해 ‘무능력’ 또는 ‘파산’으로 불린다.",
-     "모든 부채를 갚지 못하는 모든 대상은 반드시 ‘파산’ 상태로 진입한다.",
-     "부채를 갚지 못하는 모든 상황에서 ‘파산’이라는 명칭이 적용된다.",
-     "부채를 갚을 능력이 없는 상태를 가리켜 ‘무능력’ 또는 ‘파산’이라고 한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'A person or company is considered insolvent when they are unable to pay their debts at maturity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘무능력’ 또는 ‘파산’이 부채를 갚을 능력이 없을 때를 가리키는 것은 맞지만, 지문에서는 ‘부도’(insolvency)의 정의가 ‘부채를 갚지 못하는 상태’를 포함한다는 점을 보지 못하고 ‘부채를 갚을 능력이 없을 때만’이라는 한정적 표현을 오해했다. → 처방: ‘부도’의 정의가 ‘부채를 갚지 못하는 상태’를 포함한다는 점을 기억하고, ‘~만’이라는 한정적 표현이 오답임을 확인할 것.\n② 진단: ‘기업’이 한정어로 쓰였지만, 지문에서 ‘insolvent’의 정의는 ‘부채를 갚지 못하는 모든 대상’을 포함한다는 점을 놓쳤다. ‘기업’으로만 한정해 오독했다. → 처방: ‘insolvent’의 정의가 ‘부채를 갚지 못하는 모든 대상’을 포함한다는 점을 기억하고, ‘기업’이라는 한정어를 주의할 것.\n③ 진단: ‘반드시’라는 절대적 표현을 오해했다. 지문에서 ‘insolvency’는 ‘부채를 갚지 못하는 상태’를 뜻하지만, ‘반드시 파산 상태로 진입한다’는 말은 과장된 표현이다. → 처방: ‘insolvency’의 정의가 ‘부채를 갚지 못하는 상태’를 뜻한다는 점은 맞지만, ‘반드시’라는 절대적 표현이 오답임을 확인할 것.\n④ 진단: ‘모든 상황’이라는 포괄적 표현을 오해했다. 지문에서 ‘insolvent’는 ‘부채를 갚지 못하는 상태’를 뜻하지만, ‘모든 상황’이라는 말은 ‘부채’라는 조건 없이도 적용된다고 오독했다. → 처방: ‘insolvent’의 정의가 ‘부채를 갚지 못하는 상태’를 뜻한다는 점을 기억하고, ‘모든 상황’이라는 표현이 오답임을 확인할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A person or company is considered insolvent when they are unable to pay their debts at maturity.]"
    }
   }
  ]
