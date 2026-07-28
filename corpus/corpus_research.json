@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-28T12:19:39.285Z",
+ "updated": "2026-07-28T14:45:39.488Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-28T14:45:09.224Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거 시제와 현재 완료 시제가 혼용된 문장에서 오류가 빈번하며, 특히 'never'와 같은 부정어와 결합된 경우 현재 완료 시제로의 교정이 규칙적으로 나타난다는 점을 확인했다.",
+   "rule": "CEFR B1 수준에서 'never'와 같은 부정어와 과거 시제가 결합된 문장이 주어지면, 해당 문장을 현재 완료 시제로 재구성하도록 출제하라. 예: 'He never visited Paris.' → 'He has never visited Paris.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-28T12:19:12.480Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'while'이나 'except that' 등 접속사 뒤의 문장 구조는 단순화·명확화 경향이 강하다. 오류 수정 패턴에서도 중복 표현(예: 'a subject' → 'one subject')이나 불필요한 소유격('passage's') 제거가 규칙적으로 관찰된다.",
    "rule": "원서 코퍼스 패턴을 반영하여, 접속사(while, except that 등) 뒤의 문장은 주어·동사 구조를 단순화하고, 중복·불필요한 관사(예: 'a number of diverse other courses' → 'a number of other diverse courses')나 소유격을 제거한 형태로 변형 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-22T22:18:05.878Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'명사 + 전치사 + 명사' 구조에서 전치사의 오용(예: 'for' → 'fore', 'such as' 생략)이나 복수형 오류('advertisements' → 'advertisemnets')가 빈번하다. 또한 'to be + ing' 형태의 불필요한 진행형 사용이 'that + 주어 + 동사원형' 구조로 대체되어야 한다.",
-   "rule": "'명사 + 전치사 + 명사' 구조에서 전치사의 오용(예: 'for' → 'fore', 'such as' 생략)을 확인하는 문항을 출제할 때, 오류 유형을 '전치사 오용', '복수형 오류', 'to be + ing 불필요한 사용'으로 한정하고, 각 오류 유형별로 1~2개의 선택지를 제공하라.",
    "sample": [
     "old english",
     "university press",
