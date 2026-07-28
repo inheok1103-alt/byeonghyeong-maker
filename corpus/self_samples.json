@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-28T03:40:16.582Z",
+ "updated": "2026-07-28T06:43:27.919Z",
  "samples": [
+  {
+   "ts": "2026-07-28T06:42:51.256Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "ACRIMONIOUS (ak ruh MOH nee us) adj full of spite; bitter; nasty • George and Elizabeth’s discussion (A) [turned acrimonious / turns acrimonious] when Elizabeth introduced the subject of George’s perennial, incorrigible stupidity. • Relations between the competing candidates were so acrimonious that each refused to acknowledge the presence of the other. ACUMEN (AK yoo mun) n keenness of judgment; mental sharpness • A woman who knows how to turn one dollar into a million overnight might be said to have a lot of business acumen. • Ernie’s lack of acumen (B) [leds him / led him] to invest all his money in a company that had already (C) [gone out / went out] of business. Note carefully the pronunciation of this word. Quick Quiz #2 Match each word in the first column with its definition in the second column. Check your answers here. 1. abstinent a. hard to understand 2. abstract b. voluntarily avoiding 3. abstruse c. wretched 4. abysmal d. bitter 5. accolade e. comply 6. accost f. harsh 7. acerbic g. mental sharpness 8. acquiesce h. theoretical 9. acrid i. award",
+    "choices": [
+     "(A) turned acrimonious - (B) leds him - (C) went out",
+     "(A) turns acrimonious - (B) led him - (C) went out",
+     "(A) turns acrimonious - (B) leds him - (C) went out",
+     "(A) turned acrimonious - (B) led him - (C) went out",
+     "(A) turned acrimonious - (B) led him - (C) gone out"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) turned acrimonious - (B) led him - (C) gone out. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘turned’는 과거형이지만 주어가 ‘discussion’이므로 시제 일치에 맞지 않고, ‘turns’는 3인칭 단수 현재형으로 문맥에 맞지 않음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 과거형으로 문맥에 맞음. → 처방: 시제와 동사 형태를 정확히 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n② 진단: ‘turns’는 3인칭 단수 현재형이지만 문맥상 과거 상황이므로 ‘turned’가 옳음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 문맥에 맞음. → 처방: 문맥에 맞는 시제를 먼저 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n③ 진단: ‘turns’는 3인칭 단수 현재형이지만 문맥상 과거 상황이므로 ‘turned’가 옳음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 문맥에 맞음. → 처방: 시제와 동사 형태를 정확히 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n⑤ 진단: ‘turned’는 과거형으로 문맥에 맞음. ‘led him’은 옳음. ‘gone out’는 과거 완료형이지만 문맥상 단순 과거가 필요하므로 ‘went out’이 옳음. → 처방: ‘went out’과 ‘gone out’의 차이를 알고, 문맥에 맞는 시제를 정확히 쓰기."
+   }
+  },
   {
    "ts": "2026-07-28T03:38:13.065Z",
    "type": "글의순서",
@@ -324,41 +359,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] A company is insolvent when its debts can’t be covered by it. (포인트: 능동 문장(An insolvent company is one that can’t cover its debts)을 수동 문장으로 전환(by 구를 명시하지 않음).)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-27T15:17:13.223Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page. Then match them to 1–6 below. blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments? 1 He/She certainly looks his/her age. 5 He/She has a very abrasive manner. 2 He/She’s downright rude. 6 He/She has a warm smile. 3 He/She’s bursting with energy. 7 He/She’s full of pent-up anger. 4 He/She has a bubbly personality. 8 He/She has boundless energy. Complete this conversation using collocations from the box in the appropriate form so that Nell always agrees with Zoë. bear a striking resemblance to\n\n─────────\n[요약문] The exercise demonstrates how (A) word combinations can be matched to specific (B) social evaluations through collocation practice.",
-    "choices": [
-     "(A) social evaluations … (B) word combinations",
-     "(A) lexical combinations … (B) grammatical structures",
-     "(A) semantic fields … (B) morphological patterns",
-     "(A) grammatical rules … (B) personality assessments",
-     "(A) lexical combinations … (B) personality assessments"
-    ],
-    "answer": 5,
-    "explanation": "(A) lexical combinations / (B) personality assessments 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘social evaluations’를 (B) 자리에 넣은 이유는 ‘word combinations’이 ‘사회적 평가’를 가리키는 것으로 오해했기 때문. 그러나 지문은 ‘collocations’를 ‘사회적 평가’와 연결짓는 연습이지, ‘word combinations’이 ‘사회적 평가’를 뜻하지 않음. → 처방: ‘collocations’를 ‘어휘 결합’으로, ‘social evaluations’를 ‘사회적 평가’로 구분해서 생각하기. 지문에서 ‘collocations’를 ‘어휘 결합’으로, ‘personality assessments’를 ‘사회적 평가’로 사용했는지 확인하기.\n② 진단: ‘lexical combinations’을 (A) 자리에, ‘grammatical structures’를 (B) 자리에 넣은 이유는 ‘collocations’이 ‘문법 구조’와 관련 있다고 잘못 생각했기 때문. 지문은 ‘collocations’이 ‘문법’보다 ‘어휘 결합’임을 보여줌. → 처방: ‘collocations’가 ‘문법 구조’가 아니라 ‘어휘 결합’이라는 점을 기억하기. ‘grammatical structures’는 문법 규칙을 뜻하니 혼동하지 않기.\n③ 진단: ‘semantic fields’를 (A) 자리에, ‘morphological patterns’를 (B) 자리에 넣은 이유는 ‘collocations’이 ‘형태론적 패턴’과 관련 있다고 오해했기 때문. 지문은 ‘collocations’이 ‘의미 영역’이 아니라 ‘어휘 결합’을 다룬다는 점을 보여줌. → 처방: ‘collocations’를 ‘어휘 결합’으로, ‘morphological patterns’을 ‘형태소 패턴’으로 구분하기. ‘semantic fields’는 ‘의미 영역’이니 혼동하지 않기.\n④ 진단: ‘grammatical rules’를 (A) 자리에, ‘personality assessments’를 (B) 자리에 넣은 이유는 ‘collocations’이 ‘문법 규칙’과 관련 있다고 잘못 생각했기 때문. 지문은 ‘collocations’이 ‘문법’보다 ‘어휘 결합’과 ‘인성 평가’를 다룬다는 점을 보여줌. → 처방: ‘collocations’를 ‘어휘 결합’으로, ‘grammatical rules’를 ‘문법 규칙’으로 구분하기. ‘personality assessments’는 ‘인성 평가’이니 ‘collocations’와 연결짓기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
