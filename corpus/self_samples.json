@@ -1,6 +1,114 @@
 {
- "updated": "2026-07-28T20:37:52.687Z",
+ "updated": "2026-07-28T22:19:42.364Z",
  "samples": [
+  {
+   "ts": "2026-07-28T22:18:00.825Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "WEEK 34 DAY 5 REVIEW As an “old hand” at vocabulary-building by the context method, you realize that this is the most natural and effective way. ① However, you also know that there is work and self-discipline too. ② You should carry these fine qualities right through life. ③ The words you learn are valuable, the method is equally so. ④ For instance, mastering these words will also help you win arguments in academic debates, where eloquence often outweighs factual accuracy. ⑤ REVIEW WORDS DEFINITIONS 1. stubborn, tough 2. slander, false accusation 3. au courant c. small amount 4. neglected, untidy 5. reveal, disclose 7. alternate, shift 8. disorderly clothing or hair 9. superficial appearance, front 10. facial expression of disgust 11. unwholesome, foul 13. wakeful watching 14. as bad as can be, unrelieved 16. out-of-date, obsolete 17. stupid, silly 18. choosy, particular 19. burdensome, unwieldy 20.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①을 '그러나'로 시작하는 문장이므로 앞 문장(자연스럽고 효과적인 방법)과 대조되는 내용이 나와야 하는데, 학생은 '이 방법도 자연스럽고 효과적이지만 노력과 자기 훈련도 필요하다'는 흐름을 오해했을 수 있음. ②를 '이 방법의 장점은 자연스러움과 효과성뿐 아니라 노력과 자기 훈련도 필요하다는 점'으로 잘못 이해한 듯. → 처방: 앞 문장과 대조되는 내용을 찾는 문제임을 기억하고, '그러나' 다음 문장이 앞 문장과 반대·제한·보완 역할을 하는지 확인하라.\n② 진단: ②를 '이 방법의 장점은 평생을 통해 좋은 습관을 유지해야 한다는 점'으로 오해했을 수 있음. 학생은 '이 fine qualities(좋은 습관)를 평생 유지하라'는 말을 '이 방법이 평생을 통해 유용하다는 의미'로 잘못 해석한 듯. → 처방: ②는 '이 fine qualities(노력과 자기 훈련)를 평생 유지하라'는 조언으로, '이 방법의 장점'과는 직접 관련이 없다는 점을 분명히 하라.\n③ 진단: ③을 '이 방법으로 배운 단어들이 가치 있고, 그 방법도 똑같이 가치 있다'는 문장으로 오해했을 수 있음. 학생은 '단어의 가치'와 '방법의 가치'를 동등하게 언급한 ③을 '이 방법의 장점'으로 잘못 받아들인 듯. → 처방: ③은 단어의 가치와 방법의 가치를 나열한 문장이므로, '이 방법의 장점'과는 무관하다는 점을 명확히 하라.\n⑤ 진단: ⑤를 '예를 들어, 이 방법으로 단어를 마스터하면 학술 토론에서 eloquence(웅변)가 사실의 정확성보다 중요하다는 점을 알 수 있다'는 문장으로 오해했을 수 있음. 학생은 '예시'가 포함된 ⑤를 '이 방법의 장점'으로 잘못 판단한 듯. → 처방: ⑤는 '예시'를 제시한 문장이므로, '이 방법의 장점'과는 무관하다는 점을 기억하고, 예시가 포함된 문장은 제외하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-28T22:18:36.971Z",
+   "type": "필자주장",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(64%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "어휘 학습의 효과를 높이려면 평생 꾸준한 노력과 자기 절제가 있어야 한다",
+     "어휘가 풍부해지면 평생 꾸준한 노력과 자기 절제가 필요해진다",
+     "어휘 학습의 효과를 높이려면 꾸준한 노력만 있어야 한다",
+     "어휘 학습의 효과를 높이려면 항상 자기 절제와 엄격한 훈련이 있어야 한다",
+     "어휘 학습의 효과를 높이려면 자기 절제를 해야 한다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'You should carry self-discipline and diligence throughout life to build vocabulary effectively.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘어휘가 풍부해지면’(선지 내용)이 지문의 ‘어휘를 배우는 방법’이 ‘자연스럽고 효과적’이라는 주장과 혼동됨. ‘풍부해지면’이 아니라 ‘배우는 방법’이 중요하다는 점을 오독했음. → 처방: 지문의 핵심은 ‘어휘를 배우는 방법’이 아니라 ‘그 방법을 꾸준히 실천하는 자세’임을 기억하고, 선지의 ‘~하면’ 구문은 지문의 주장 구조와 맞지 않음을 확인할 것.\n③ 진단: ‘꾸준한 노력만 있어야 한다’(선지 내용)에서 ‘자기 절제’를 빠뜨림. 지문은 ‘work and self-discipline’를 강조했는데, 이 부분을 놓쳤음. → 처방: 지문에서 ‘work and self-discipline’을 ‘노력과 자기 절제’로 정확히 짚고, 선지에 ‘~만’이라는 한정어가 있다면 그 단어가 빠졌는지 다시 확인할 것.\n④ 진단: ‘항상 자기 절제와 엄격한 훈련’이 지문의 ‘self-discipline’을 ‘엄격한 훈련’으로 과장해 해석했음. 지문은 ‘self-discipline’이지만 ‘엄격한 훈련’이라는 표현은 없음. → 처방: 지문의 ‘self-discipline’을 ‘자기 절제’로 정확히 이해하고, ‘엄격한 훈련’이라는 단어가 없으면 그 선지는 오답일 가능성이 높음을 기억할 것.\n⑤ 진단: ‘자기 절제만 해야 한다’(선지 내용)에서 ‘노력’을 빠뜨림. 지문은 ‘work and self-discipline’을 함께 강조했는데, ‘work’를 생략했음. → 처방: 지문의 ‘work and self-discipline’을 ‘노력과 자기 절제’로 묶어 기억하고, 선지에 이 두 요소가 모두 포함되어 있는지 확인할 것.\n【출제의도】 필자의 당위 주장을 근거와 함께 파악하는 능력을 평가한다. [핵심 논지: You should carry self-discipline and diligence throughout life to build vocabulary effectively.]"
+   }
+  },
+  {
+   "ts": "2026-07-28T22:18:58.742Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "WEEK 34 DAY 5 REVIEW As an “old hand” at vocabulary-building by the context method, you realize that ⓐ<u>this is the most natural and effective way</u>. However, you also know that ⓑ<u>there is work and self-discipline too</u>. ⓒ<u>You should carry these fine qualities right through life</u>. ⓓ<u>The words you learns are valuable</u>, ⓔ<u>the method is equally so</u>. REVIEW WORDS DEFINITIONS 1.antiquated a. stubborn, tough 2.asinine b. slander, false accusation 3.au courant c. small amount 4.calumny d. neglected, untidy 5.commodious e. location 6.cumbersome f. reveal, disclose 7.disheveled g. alternate, shift 8.divulge h. disorderly clothing or hair 9.façade i. superficial appearance, front 10.fastidious j. facial expression of disgust 11.fluctuate k. up-to-date 12.grimace l. unwholesome, foul 13.interrogate m. wakeful watching 14.noisome n. question 15.pittance o. as bad as can be, unrelieved 16.site p. out-of-date, obsolete 17.tenacious q. stupid, silly 18.unkempt r. choosy, particular 19.unmitigated s. burdensome, unwieldy 20.vigil t. spacious, large",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓓ: 'the words you learns are valuable' → 'the words you learn are valuable' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-28T22:19:07.279Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 배우는 단어와 방법은 모두 가치가 있습니다.\n주어진 단어: ( words / learn / method )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The words you learn and the method are both valuable. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-28T20:37:04.243Z",
    "type": "주제",
@@ -242,119 +350,6 @@
     ],
     "answer": 4,
     "explanation": "정답 조합: (A) turned acrimonious - (B) led him - (C) gone out. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘turned’는 과거형이지만 주어가 ‘discussion’이므로 시제 일치에 맞지 않고, ‘turns’는 3인칭 단수 현재형으로 문맥에 맞지 않음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 과거형으로 문맥에 맞음. → 처방: 시제와 동사 형태를 정확히 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n② 진단: ‘turns’는 3인칭 단수 현재형이지만 문맥상 과거 상황이므로 ‘turned’가 옳음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 문맥에 맞음. → 처방: 문맥에 맞는 시제를 먼저 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n③ 진단: ‘turns’는 3인칭 단수 현재형이지만 문맥상 과거 상황이므로 ‘turned’가 옳음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 문맥에 맞음. → 처방: 시제와 동사 형태를 정확히 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n⑤ 진단: ‘turned’는 과거형으로 문맥에 맞음. ‘led him’은 옳음. ‘gone out’는 과거 완료형이지만 문맥상 단순 과거가 필요하므로 ‘went out’이 옳음. → 처방: ‘went out’과 ‘gone out’의 차이를 알고, 문맥에 맞는 시제를 정확히 쓰기."
-   }
-  },
-  {
-   "ts": "2026-07-28T03:38:13.065Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "It's Friday afternoon.\n\n(A) So instead of Tom's words I'm having, David says he's having. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So instead of here, he says at his flat. And a day has passed since he first heard about it.\n\n(B) David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick has arrived at the flat. Now David is reporting what Tom said.\n\n(C) It is now the day of the party. So instead of tomorrow evening, David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 2,
-    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 학생은 글의 순서를 파악하는 데 실패하여 (A) - (C) - (B) 순으로 선택했을 것으로 보인다. 'It's Friday afternoon.'이라는 문장과 (B) 문단의 내용이 일치하지 않음을 인식하지 못한 것으로 보인다. → 처방: 글의 순서를 파악하기 위해 각 문단의 시간과 장소를 주의 깊게 읽어야 한다.\n③ 진단: 학생은 (B) - (C) - (A) 순으로 선택했을 것으로 보인다. 이는 (C) 문단의 'Changes in reported speech'라는 제목이 전체 글의 순서를 결정하는 데 중요한 역할을 하지 않는다고 생각했기 때문일 수 있다. → 처방: 각 문단의 제목과 내용을 주의 깊게 읽어 전체 글의 흐름을 파악해야 한다.\n④ 진단: 학생은 (C) - (A) - (B) 순으로 선택했을 것으로 보인다. 이는 (C) 문단의 설명이 (B) 문단의 내용을 기반으로 해야 한다는 것을 인식하지 못한 것으로 보인다. → 처방: 글의 순서를 파악하기 위해 각 문단의 내용과 설명의 관련성을 주의 깊게 분석해야 한다.\n⑤ 진단: 학생은 (C) - (B) - (A) 순으로 선택했을 것으로 보인다. 이는 (B) 문단의 내용이 (A) 문단의 내용보다 먼저 나와야 한다는 것을 인식하지 못한 것으로 보인다. → 처방: 글의 순서를 파악하기 위해 각 문단의 시간과 장소를 주의 깊게 비교해야 한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-28T03:39:26.397Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "It's Friday afternoon. David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick (A) [arrived / has arrived] at the flat. Now David is reporting what Tom said. So instead of Tom's words (B) [I'm having / I have], David says he's having. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So instead of here, he says at his flat. And a day has passed since he first heard about it. It is now the day of the party. So instead of (C) [this evening / tomorrow evening], David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
-    "choices": [
-     "(A) has arrived - (B) I have - (C) tomorrow evening",
-     "(A) arrived - (B) I have - (C) this evening",
-     "(A) has arrived - (B) I'm having - (C) this evening",
-     "(A) arrived - (B) I have - (C) tomorrow evening",
-     "(A) has arrived - (B) I'm having - (C) tomorrow evening"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) has arrived - (B) I'm having - (C) tomorrow evening. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(A) has arrived’를 고른 학생은 ‘닉이 지금 막 도착했다는 사실’을 강조하려 했지만, ‘몇 분 전에 왔다’는 지문 속 시간 표현을 보지 못하고 시제 선택을 오류했음. (B)도 ‘I have’를 써서 ‘현재 진행 중인 파티’를 표현하지 못하고 있음. → 처방: ‘몇 분 전에’라는 시간 표현이 있으면 단순 과거 시제를 써야 한다는 점을 기억하고, 시제 선택 시 동사의 시점(지금 vs 과거)을 정확히 확인할 것.\n② 진단: ‘(B) I have’를 고른 학생은 ‘have’를 써서 현재 완료 시제를 사용했지만, ‘I’m having’이라는 현재이 ‘파티를 열고 있다’는 의미를 더 정확히 전달한다는 지문 속 설명을 무시했음. → 처방: ‘have’를 쓸 때는 완료의 의미를, ‘I’m having’을 쓸 때는 ‘현재 진행 중인 행동’을 나타낸다는 차이를 명확히 구분하고, 문맥에 맞는 시제를 선택할 것.\n④ 진단: ‘(C) tomorrow evening’을 고른 학생은 ‘파티가 내일 저녁’이라는 시간적 배경을 잘못 이해했음. 지문에서 ‘파티는 금요일 오후에 열리며, 다음 날인 토요일 저녁이 아님’을 명시했음에도 이를 놓쳤음. → 처방: ‘파티가 열리는 날’이 언제인지 지문에서 정확히 확인하고, ‘tomorrow evening’이 아니라 ‘this evening’을 써야 한다는 점을 기억할 것.\n⑤ 진단: ‘(A) has arrived’를 쓰고 (B)도 ‘I have’를 써서 ‘have’를 과용했으며, (C)도 ‘tomorrow evening’을 써서 시간적 배경을 오해했음. 시제와 시간 표현을 모두 잘못 적용한 경우임. → 처방: 각 시제와 시간 표현의 쓰임새를 따로따로 공부하고, 문맥에 맞는 표현을 차근차근 확인할 것. 특히 ‘몇 분 전’, ‘지금’, ‘다음 날’ 같은 시간 표현을 놓치지 않도록 주의할 것."
-   }
-  },
-  {
-   "ts": "2026-07-28T03:39:50.446Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "It's Friday afternoon. David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick ⓐ<u>had arrived</u> at the flat. Now David is reporting what Tom said. So instead of Tom's words ⓑ<u>I'm having</u>, David says he's having. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So ⓒ<u>instead of here</u>, ⓓ<u>he says at his flat</u>. And a day has passed since he first heard about it. It is now the day of the party. So instead of ⓔ<u>tomorrow evening</u>, David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓐ: 'had arrived' → 'has arrived' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-28T00:12:37.491Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "학생들의 자각은 연습 문제의 난이도와 교사의 설명의 질에 따라 달라진다.",
-     "교사는 학생들의 자각을 높이기 위해 연습 문제의 난이도를 높이는 데 집중해야 한다.",
-     "모든 학생은 자각이 부족하며, 이를 해결하기 위해 교사는 모든 수업 방식을 바꿔야 한다.",
-     "교사는 학생들의 자각을 높이기 위해 연습 문제를 강화하고 설명을 명확히 해야 하며, 이 두 조건이 동시에 충족되어야만 효과가 있다.",
-     "교사는 학생들의 자각을 높이기 위해 다양한 연습 문제와 명료한 설명을 제공해야 한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The teacher should enhance exercises and provide clear explanations to improve students' awareness.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘자각’이 ‘난이도’와 ‘설명의 질’에 ‘달라진다’는 말은 지문에 없지만, 학생들은 ‘연습 문제의 방식 변화’와 ‘명확한 설명’이 ‘자각’을 높이는 데 중요하다는 점은 읽었지만, 두 요소가 ‘상관관계’가 아니라 ‘원인-결과’로 작용한다는 사실을 혼동했다. → 처방: ‘자각’이 ‘어떤 조건에 따라 달라지는지’를 찾기보다는, ‘어떤 조건이 자각을 높이는지’를 집중해서 읽어야 한다.\n② 진단: ‘난이도 높이기’에만 초점을 맞췄지만, 지문은 ‘다양한 방식의 연습 문제’와 ‘명확한 설명’을 모두 강조하며, ‘난이도’ 자체보다는 ‘방식과 설명의 질’이 중요하다고 설명한다. → 처방: ‘난이도’가 아닌 ‘다양한 방식’과 ‘명확한 설명’이 자각을 높이는 핵심 요소임을 기억하자.\n③ 진단: ‘모든 학생’이 ‘자각이 부족하다’는 말은 과장이며, 지문은 ‘일부 학생’이 ‘시간 엄수’와 ‘자각’에서 부족함을 보였을 뿐, ‘모든 학생’을 일반화하지 않는다. → 처방: ‘일부 학생’의 문제점을 ‘일반화’하지 말고, 지문의 구체적 사례에 집중해서 읽자.\n④ 진단: ‘두 조건이 동시에 충족되어야만 효과가 있다’는 말은 지문에 없지만, 학생들은 ‘동시에’가 아니라 ‘각각’의 중요성을 혼동했다. 지문은 두 조건이 ‘모두’ 중요하다는 점을 강조하지만, ‘동시 충족’이 필수라는 말은 없다. → 처방: ‘두 조건이 모두 중요하다’는 사실만 기억하고, ‘동시 충족’이 필수인지 여부는 지문의 표현을 다시 확인하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The teacher should enhance exercises and provide clear explanations to improve students]"
    }
   }
  ]
