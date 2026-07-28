@@ -1,6 +1,59 @@
 {
- "updated": "2026-07-28T10:08:25.601Z",
+ "updated": "2026-07-28T12:19:39.290Z",
  "samples": [
+  {
+   "ts": "2026-07-28T12:17:58.099Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Understanding Common English Word Misuses and Confusions",
+     "Common Mistakes in English Spelling and Grammar",
+     "Why Correct English Usage Matters in Every Situation",
+     "How Misused Words Create Confusion in Communication",
+     "Never Use Homonyms in Formal Writing"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Misused English words and their distinctions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘spelling(맞춤법)’과 ‘grammar(문법)’을 혼동했으며, 지문은 ‘뜻이 비슷한 단어’와 ‘동음이의어’를 다루므로 이 선지는 범위가 너무 넓고 맞지 않는다. → 처방: ‘뜻이 비슷한 단어’와 ‘동음이의어’를 집중해서 공부하고, 문제에서 ‘confusing words and homonyms’를 강조하는지 확인하기.\n③ 진단: ‘correct English usage(올바른 영어 사용)’가 아니라 ‘뜻이 비슷한 단어와 동음이의어’를 다룬다는 점에서 오해했으며, 지문은 ‘사용 오류’에 초점을 맞추고 있다. → 처방: 문제에서 ‘confusing words and homonyms’가 핵심 단어인지 확인하고, 제목이 ‘뜻 혼동’을 다루는지 먼저 살피기.\n④ 진단: ‘misused words(잘못 사용된 단어)’가 아니라 ‘confusing words(뜻이 혼동되는 단어)’를 다룬다는 점에서 오해했으며, 지문은 ‘뜻 혼동’과 ‘동음이의어’를 설명한다. → 처방: ‘confusing words’는 ‘뜻이 비슷해서 혼동되는 단어’를 뜻한다는 점 기억하고, 제목에 ‘confusing’이 있는지 확인하기.\n⑤ 진단: ‘homonyms(동음이의어)’를 ‘절대 사용하지 말라’는 과장된 표현으로 오해했으며, 지문은 ‘동음이의어의 올바른 사용’을 설명한다. → 처방: ‘homonyms’는 ‘뜻이 같은 단어’가 아니라 ‘소리가 같은 단어’를 뜻한다는 점 기억하고, 지문에서 ‘homonyms’를 어떻게 설명하는지 다시 읽기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Misused English words and their distinctions.]"
+   }
+  },
+  {
+   "ts": "2026-07-28T12:19:10.323Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] ingenious clever ingenuous na¨ıve or simple innocence to be without guilt innocents people who are without guilt insure (see assure) irregardless no such word exists regardless in spite of, without regard isle (see aisle) it’s contraction for it is or it has Example: It’s for a good cause.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 영리하고 재치 있으며 순진하거나 죄책감이 없는 순수한 사람들은, 어떤 경우에도 그러한 단어가 존재하지 않는다는 점을 보장합니다(‘irregardless’는 ‘regardless’의 오용이며, ‘isle’은 ‘aisle’의 오용입니다). (구문 포인트: 동사 ‘insure’의 오용(‘assure’로 대체해야 함) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-28T06:42:51.256Z",
    "type": "네모어법ABC",
@@ -305,60 +358,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'A person or company is considered insolvent when they are unable to pay their debts at maturity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘무능력’ 또는 ‘파산’이 부채를 갚을 능력이 없을 때를 가리키는 것은 맞지만, 지문에서는 ‘부도’(insolvency)의 정의가 ‘부채를 갚지 못하는 상태’를 포함한다는 점을 보지 못하고 ‘부채를 갚을 능력이 없을 때만’이라는 한정적 표현을 오해했다. → 처방: ‘부도’의 정의가 ‘부채를 갚지 못하는 상태’를 포함한다는 점을 기억하고, ‘~만’이라는 한정적 표현이 오답임을 확인할 것.\n② 진단: ‘기업’이 한정어로 쓰였지만, 지문에서 ‘insolvent’의 정의는 ‘부채를 갚지 못하는 모든 대상’을 포함한다는 점을 놓쳤다. ‘기업’으로만 한정해 오독했다. → 처방: ‘insolvent’의 정의가 ‘부채를 갚지 못하는 모든 대상’을 포함한다는 점을 기억하고, ‘기업’이라는 한정어를 주의할 것.\n③ 진단: ‘반드시’라는 절대적 표현을 오해했다. 지문에서 ‘insolvency’는 ‘부채를 갚지 못하는 상태’를 뜻하지만, ‘반드시 파산 상태로 진입한다’는 말은 과장된 표현이다. → 처방: ‘insolvency’의 정의가 ‘부채를 갚지 못하는 상태’를 뜻한다는 점은 맞지만, ‘반드시’라는 절대적 표현이 오답임을 확인할 것.\n④ 진단: ‘모든 상황’이라는 포괄적 표현을 오해했다. 지문에서 ‘insolvent’는 ‘부채를 갚지 못하는 상태’를 뜻하지만, ‘모든 상황’이라는 말은 ‘부채’라는 조건 없이도 적용된다고 오독했다. → 처방: ‘insolvent’의 정의가 ‘부채를 갚지 못하는 상태’를 뜻한다는 점을 기억하고, ‘모든 상황’이라는 표현이 오답임을 확인할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A person or company is considered insolvent when they are unable to pay their debts at maturity.]"
-   }
-  },
-  {
-   "ts": "2026-07-27T17:14:00.599Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "To be broke is to be insolvent. An insolvent company is one that can’t cover its debts. The state of being solvent is called solvency; the state of being insolvent is called insolvency. SOPORIFIC (sahp uh RIF ik) adj sleep inducing; boring; sleepy • The doctor calmed his hysterical patient by injecting him with some sort of soporific medication. • Sam’s soporific address was acknowledged not by applause but by a chorus of snores. • The soporific creature from the bottom of the sea lay in a gigantic blob on the beach for several days and then roused itself enough to consume the panic-stricken city. Quick Quiz #77 Match each word in the first column with its definition in the second column. Check your answers here. 1. serendipity a. accidental good fortune 2. servile b. sleep inducing 3. singular c. eager and attentive 4. sinister d. not bankrupt 5. slavish e. submissive 6. sloth f. broke 7. sobriety g. laziness 8. solicitous h. state of being sober 9. solvent i. extremely subservient 10. insolvent j. unique 11. soporific k. wicked",
-    "choices": [
-     "파산 상태는 채무를 갚을 능력이 없는 상태를 말한다",
-     "솔벤시 상태는 채무를 갚을 수 없는 상태를 말한다",
-     "수면제를 투여한 의사는 흥분한 환자를 흥분시켰다",
-     "사무엘의 지루한 연설은 박수로 반응을 받았다",
-     "바다 바닥의 수면성 생물은 며칠 동안 해변에 머물지 않았다"
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: ‘solvent’는 ‘파산하지 않은 상태’를 뜻하는데, ‘solvency’는 ‘파산하지 않은 상태’를 가리키는 명사형이므로 ‘채무를 갚을 수 없는 상태’를 뜻하는 건 ‘insolvency’다. ‘solvent’와 ‘solvency’를 혼동한 듯하다. → 처방: ‘solvent’는 ‘파산하지 않은’, ‘solvency’는 ‘파산하지 않은 상태’를 뜻한다는 점을 기억하고, 반대 의미인 ‘insolvent’와 ‘insolvency’를 따로 정리해두자.\n③ 진단: ‘soporific’이 ‘수면제’를 뜻한다는 점은 맞지만, 지문에서 ‘의사가 흥분한 환자에게 주사를 놓아 흥분을 가라앉혔다’는 내용은 ‘calmed’이므로 ‘흥분시켰다’가 아니라 ‘진정시켰다’가 된다. → 처방: ‘soporific’이 ‘수면제’를 뜻한다는 점은 맞지만, 동사 ‘calm’의 의미를 정확히 파악해야 한다. ‘calm’은 ‘진정시키다’라는 뜻임을 기억하자.\n④ 진단: ‘soporific’이 ‘지루한’을 뜻한다는 점은 맞지만, 지문에서 사무엘의 연설에 대한 반응은 ‘박수’가 아니라 ‘코고는 소리’였다. ‘applause’와 ‘snores’를 혼동한 듯하다. → 처방: ‘soporific’이 ‘지루한’을 뜻한다는 점은 맞지만, 지문의 반응을 꼼꼼히 읽고 ‘applause’와 ‘snores’를 구분해 기억하자.\n⑤ 진단: ‘soporific’이 ‘수면성’을 뜻한다는 점은 맞지만, 지문에서 ‘바다 바닥의 수면성 생물’이 해변에 며칠 동안 머물렀다는 내용은 ‘roused itself enough to consume the city’로, 며칠 동안 머물렀다는 내용은 없다. → 처방: ‘soporific’이 ‘수면성’을 뜻한다는 점은 맞지만, 지문의 마지막 문장을 꼼꼼히 읽고 ‘몇일 동안 머물렀다’는 내용이 없음을 확인하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-27T17:14:10.026Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] An insolvent company is one that can’t cover its debts.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] A company is insolvent when its debts can’t be covered by it. (포인트: 능동 문장(An insolvent company is one that can’t cover its debts)을 수동 문장으로 전환(by 구를 명시하지 않음).)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

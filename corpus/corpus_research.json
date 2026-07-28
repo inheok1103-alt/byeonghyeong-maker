@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-28T10:08:25.597Z",
+ "updated": "2026-07-28T12:19:39.285Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-28T12:19:12.480Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서 'a lot of + 복수명사'와 'concerned that' 절의 결합, 'too ~ to' 구조, 'first + 중요성 서술'의 연어 패턴이 빈번히 등장한다. 또한 문장 내 쉼표 생략 오류도 자주 발견된다.",
+   "rule": "'a lot of + 복수명사' 뒤에는 단수동사가 아닌 복수동사를 사용해야 하며, 'too ~ to' 구조는 '~하기에 너무 ...해서 ...할 수 없다'의 의미를 가지므로 문맥에 맞게 변형해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-28T10:07:55.591Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'명사 + 전치사 + 명사' 구조에서 전치사의 오용(예: 'for' → 'fore', 'such as' 생략)이나 복수형 오류('advertisements' → 'advertisemnets')가 빈번하다. 또한 'to be + ing' 형태의 불필요한 진행형 사용이 'that + 주어 + 동사원형' 구조로 대체되어야 한다.",
    "rule": "'명사 + 전치사 + 명사' 구조에서 전치사의 오용(예: 'for' → 'fore', 'such as' 생략)을 확인하는 문항을 출제할 때, 오류 유형을 '전치사 오용', '복수형 오류', 'to be + ing 불필요한 사용'으로 한정하고, 각 오류 유형별로 1~2개의 선택지를 제공하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-22T20:34:06.430Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'명사 + 전치사 + 명사' 또는 '형용사 + 전치사 + 명사' 구조가 반복적으로 오류 유발 패턴으로 나타나며, 특히 'to have broad knowledge to'와 같이 전치사 오용이 빈번하다. 또한 'It 's is'와 같이 중복된 조동사 오류도 빈번하게 관찰된다.",
-   "rule": "'명사/형용사 + 전치사 + 명사' 구조에서 전치사 오용 시, 해당 연어의 표준 전치사(예: 'knowledge of', 'obvious to')를 반드시 사용하도록 오답지를 설계하라.",
    "sample": [
     "old english",
     "university press",
