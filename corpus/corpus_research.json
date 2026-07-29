@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-29T00:13:35.016Z",
+ "updated": "2026-07-29T03:44:39.407Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-29T03:44:12.236Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'have/has + something that is specialized in ~' 구조가 'have something specializing in ~'로 오용되는 경향이 있다. 또한 'year after year'의 반복 오류가 빈번하다.",
+   "rule": "'have/has + N that is specialized in ~'는 'have/has + N specializing in ~'로 오용되지 않도록, 항상 'that is specialized in ~' 형태를 직접 목적어로 사용하도록 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-29T00:13:05.312Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거형 동사(anderstand, dengures, axcedant 등)와 현재형 동사(learn, guides 등)가 혼용되어 문법 오류가 발생하는 패턴이 반복됨. 또한 전치사(about, in, of)나 관사(a, the) 사용 오류가 빈번하게 관찰됨.",
    "rule": "'과거형 동사와 현재형 동사가 혼용되지 않도록 문장에서 시제 일관성을 엄격히 검증하며, 전치사/관사 오류를 유도하는 오답지를 설계할 때는 실제 코퍼스에서 관찰된 전치사(about, in, of)나 관사(a, the) 오용 패턴을 반영하여 문장 내 빈칸이나 선택지 형태로 제시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-23T14:36:01.937Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'명사+동사+명사' 구조에서 관사 누락, 동사의 수 일치 오류, 그리고 'most/almost'의 혼동이 빈번히 발생함을 확인했다. 특히 'most people'의 표준 표현을 'almost people'로 오용하는 경향이 두드러진다.",
-   "rule": "CEFR B1 수준 내신 변형 문제에서는 주어와 동사의 수 일치를 반드시 확인하는 문항을 출제하라. 예를 들어, 'most people know' vs. 'almost people know'와 같은 선택지 쌍을 제시하여 문법적 정확성을 평가하라.",
    "sample": [
     "old english",
     "university press",
