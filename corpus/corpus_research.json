@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-28T22:19:42.360Z",
+ "updated": "2026-07-29T00:13:35.016Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-29T00:13:05.312Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "형용사-부사 오류가 빈번하며, 특히 'perfect'와 'good'이 부사로 잘못 사용된 경우가 많다. 또한 접속사 오류(and, thereby→therefore)도 자주 관찰된다.",
+   "rule": "형용사(perfect/good) 뒤에는 반드시 부사(perfectly/well)를 사용해야 하며, 접속사 오류는 and, thereby→therefore로 수정해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-28T22:19:08.881Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'명사+동사+명사' 구조에서 관사 누락, 동사의 수 일치 오류, 그리고 'most/almost'의 혼동이 빈번히 발생함을 확인했다. 특히 'most people'의 표준 표현을 'almost people'로 오용하는 경향이 두드러진다.",
    "rule": "CEFR B1 수준 내신 변형 문제에서는 주어와 동사의 수 일치를 반드시 확인하는 문항을 출제하라. 예를 들어, 'most people know' vs. 'almost people know'와 같은 선택지 쌍을 제시하여 문법적 정확성을 평가하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-23T12:06:04.696Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스에서 'a'가 누락된 명사구 연어(예: 'a name', 'a family')가 빈번히 오류로 나타나며, 특히 'and'로 연결된 명사구에서 관사 일치 오류가 두드러진다.",
-   "rule": "'and'로 연결된 복수 명사구(예: 'money and name') 뒤에는 반드시 관사 'a'를 각각 붙여 'a lot of money and a name'으로 표기해야 한다. 이는 영어 문법 규칙으로, 학생들에게 'and' 앞뒤 명사구에 관사 일치 규칙을 적용하도록 지시하라.",
    "sample": [
     "old english",
     "university press",
