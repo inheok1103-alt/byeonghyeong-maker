@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-29T10:02:48.035Z",
+ "updated": "2026-07-29T12:25:30.073Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-29T12:24:57.295Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "원서 코퍼스는 '명사 + 전치사 + 수사' 패턴(예: 'for three reasons')이 빈번하며, 한국어 학습자들은 전치사 오용(예: 'for' → 'to')과 수사 결합 오류(예: 'three reasons' → 'three reason')를 자주 보인다.",
+   "rule": "원서 코퍼스의 'for + 수사 + 복수명사' 패턴(예: 'for three reasons')을 활용하여, 한국어 오답 선택지에서 'for + 수사 + 단수명사'(예: 'for three reason') 또는 'to + 동사원형'(예: 'to decrease the use')으로 전치사 오용과 수사 결합 오류를 동시에 유도하는 오답을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-29T10:01:56.955Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 실제 오류에서 '형용사+명사' 구문에서 관사 누락, 복수형 오류, 비교급 오류가 빈번히 발생함을 확인. 특히 'more responsibilities than young person'에서 관사와 비교급의 오류가 동시에 나타남.",
    "rule": "'형용사+명사' 구문(예: weather related factors, young person)에서 관사(a/the)나 복수형(-s) 오류를 검증하는 문제를 100% 포함하여 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-23T20:48:10.322Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "원서 코퍼스에서 'a/an + 명사 + 명사' 패턴(예: 'a fixed data', 'a rolling stone')이 빈번히 오류로 나타나며, 관사 사용 오류가 문법적 오류의 핵심임을 확인했다.",
-   "rule": "원서 코퍼스에서 'a/an + 명사 + 명사' 패턴이 빈번한 만큼, 내신 변형문제에서는 관사(a/an/the) 사용 오류를 반드시 포함하여 출제하되, 'a fixed data' → 'fixed data'로 수정하는 등 관사 생략 또는 잘못된 관사 사용을 오답지로 설계하라.",
    "sample": [
     "old english",
     "university press",

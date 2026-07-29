@@ -1,6 +1,40 @@
 {
- "updated": "2026-07-29T10:02:48.039Z",
+ "updated": "2026-07-29T12:25:30.077Z",
  "samples": [
+  {
+   "ts": "2026-07-29T12:24:46.751Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 2건 · 솔버교정: 솔버 2/3 다수결 2번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "classification of adjectives by function and meaning",
+     "semantic types of adjectives in formal grammar",
+     "syntactic constraints on adjective semantic interpretation",
+     "intersective adjectives as the sole syntactic category",
+     "predicative and attributive adjectives in linguistic analysis"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Types and syntactic roles of adjectives**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 조건 누락· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Types and syntactic roles of adjectives**]\n[오답 진단·처방]\n① 진단: 형용사의 기능과 의미를 분류한 것이 아니라, 형식 문법에서 형용사의 의미 유형을 다룬다. (지문은 'modifier adjective'와 'predicative adjective'의 의미 유형을 <e, t>와 <<e, t>, <e, t>> 등으로 설명함.) → 처방: 문제를 풀 때는 지문의 핵심 주제가 '형용사의 의미 유형'인지 먼저 확인하고, 기능·의미 분류가 아니라 유형에 초점을 맞추자.\n③ 진단: 형용사의 의미 해석에 대한 통사적 제약이 아니라, 형용사의 의미 유형을 형식적으로 분석한 내용을 다룬다. (지문은 'semantic types'와 'type <e, t>', 'type <<e, t>, <e, t>>' 등을 설명함.) → 처방: 형용사의 의미 해석과 관련된 통사적 제약이 아니라, 형식 문법에서 형용사의 의미 유형을 어떻게 분류하는지 확인하자.\n④ 진단: 형용사의 유일한 통사적 범주가 'intersective adjectives'가 아니라, modifier adjective 와 predicative adjective 를 모두 다룬다. (지문은 (51)에서 두 종류를 모두 예시하고 있음.) → 처방: 형용사의 통사적 범주를 'intersective adjectives'로만 한정하지 말고, 지문에 제시된 모든 유형을 확인하자.\n⑤ 진단: 형용사를 'predicative'와 'attributive'로만 분류한 것이 아니라, 'modifier adjective'와 'predicative adjective'를 모두 다룬다. (지문은 modifier adjective 에 대한 설명도 포함함.) → 처방: 형용사를 'predicative'와 'attributive'로만 보지 말고, 지문에 나오는 'modifier adjective'도 함께 고려하자."
+   }
+  },
   {
    "ts": "2026-07-29T09:59:50.017Z",
    "type": "목적",
@@ -333,40 +367,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'Errors reveal, not conceal, mental processes in writing.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Errors reveal, not conceal, mental processes in writing.**]\n[오답 진단·처방]\n① 진단: 지문은 '문법 오류'가 writers 의 '질 낮은 사고'를 드러낸다는 오해(1행)를 비판하며, 오히려 오류 없는 문장이 '부자연스럽고 둔한 글'을 낳는다고 말합니다. 학생은 지문의 핵심 비판을 '생각 과정'과 연결 지어 오해했습니다. → 처방: 지문에서 '문법 오류'가 writers 의 '질 낮은 사고'를 드러낸다는 주장은 전혀 없습니다. 지문 전체가 '문법 오류'에 집착하는 태도를 비판한다는 점을 기억하세요.\n② 진단: 지문은 '문법 오류'가 writers 의 '인지 패턴'을 가리거나 숨기는 경우가 많다고 말하지 않습니다. 오히려 '문법 오류'에 집착하는 태도가 writers 의 '생각'을 왜곡한다고 지적합니다. → 처방: 지문에서 '문법 오류'가 writers 의 '인지 패턴'을 가리거나 숨긴다는 내용은 없습니다. 지문의 비판 대상이 '문법 오류'가 아니라 '문법 오류에 집착하는 태도'임을 다시 읽어보세요.\n③ 진단: 지문은 '문법 오류'가 writers 의 '심리적 상태'를 Mirror 한다고 말하지 않습니다. 오히려 '문법 오류'에 집착하는 태도가 writers 의 '생각'을 왜곡한다고 지적합니다. 학생은 지문의 비판 대상을 '문법 오류' 자체로 오해했습니다. → 처방: 지문에서 '문법 오류'가 writers 의 '심리적 상태'를 Mirror 한다는 주장은 없습니다. 지문은 '문법 오류'에 집착하는 태도가 writers 의 '생각'을 왜곡한다고 말합니다. 비판 대상을 정확히 파악하세요.\n⑤ 진단: 지문은 '모든 오류'가 writers 의 '진짜 의도'를 직접 드러낸다고 말하지 않습니다. 오히려 '문법 오류'에 집착하는 태도가 writers 의 '생각'을 왜곡한다고 지적합니다. 학생은 지문의 비판 대상을 '모든 오류'로 과장했습니다. → 처방: 지문에서 '모든 오류'가 writers 의 '진짜 의도'를 직접 드러낸다는 주장은 없습니다. 지문은 '문법 오류'에 집착하는 태도가 writers 의 '생각'을 왜곡한다고 말합니다. '모든'이라는 과장된 표현을 주의하세요."
-   }
-  },
-  {
-   "ts": "2026-07-28T18:49:18.861Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.75,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the assumption that grammatical errors reveal intellectual shortcomings",
-     "the belief that correct grammar guarantees superior cognitive ability",
-     "the tendency to equate writing mistakes with personal character flaws",
-     "the frequent association of grammar mistakes with moral failings",
-     "the misinterpretation of grammatical errors as moral or mental deficiencies"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'identifying writing errors as indicators of mental or moral deficiency**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘assumption that grammatical errors reveal intellectual shortcomings’를 ‘intellectual shortcomings’이 아니라 ‘mental deficiency’(지문 1번째 문장)로 오독해 ‘intellectual’이 아닌 ‘moral’로 치우쳤다. → 처방: ‘intellectual shortcomings’이 아닌 ‘mental deficiency’를 오독하지 말고, 지문에서 ‘mental or moral deficiency’를 ‘intellectual shortcomings’으로 바꿔 읽는 오류를 피하라. 정확히 지문 용어를 따라가라.\n② 진단: ‘correct grammar guarantees superior cognitive ability’를 ‘correct grammar’가 ‘superior cognitive ability’를 ‘보장’한다고 오해해, 지문에서 ‘grammatical errors indicate mental or moral deficiency’(결과지시)만 읽고 인과관계를 반대로 뒤집었다. → 처방: ‘indicate’를 ‘보장’으로 오해하지 말고, 지문에서 ‘errors indicate deficiency’를 ‘correct grammar guarantees ability’로 뒤집는 오류를 피하라. 인과관계는 지문 그대로만 따라가라.\n③ 진단: ‘writing mistakes’를 ‘personal character flaws’로 오독해, 지문에서 ‘mental or moral deficiency’(결과)만 읽고 ‘character flaws’(원인)로 오해했다. → 처방: ‘mental or moral deficiency’를 ‘character flaws’로 오해하지 말고, 지문에서 ‘errors indicate deficiency’를 ‘mistakes = flaws’로 연결하는 오류를 피하라. 지문 용어와 개념을 정확히 구분하라.\n④ 진단: ‘grammar mistakes’를 ‘moral failings’로 오독해, 지문에서 ‘mental or moral deficiency’를 ‘moral failings’(일부분)으로만 읽고 ‘moral’이 아닌 ‘moral and mental’을 모두 포함하지 못했다. → 처방: ‘mental or moral deficiency’를 ‘moral failings’로 오해하지 말고, 지문에서 ‘mental or moral’을 모두 포함하는 ‘moral and mental deficiencies’를 정확히 읽어내라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: identifying writing errors as indicators of mental or moral deficiency**]"
    }
   }
  ]
