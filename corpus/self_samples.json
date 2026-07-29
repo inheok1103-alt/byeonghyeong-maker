@@ -1,6 +1,44 @@
 {
- "updated": "2026-07-29T21:15:55.965Z",
+ "updated": "2026-07-29T22:16:28.989Z",
  "samples": [
+  {
+   "ts": "2026-07-29T22:15:32.242Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: p)\n[영영풀이] A short written or spoken expression.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] phrase (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-29T22:15:59.133Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "So, it seems clear that the grammatical properties of a phrase like ⓐ<u>helps you</u> are determined by the verb help, and not by the pronoun you. Much the same can be said about the semantic properties of the expression, since the phrase ⓑ<u>help you</u> describes an act of help, not a kind of person. Using the appropriate technical terminology, we can say that ⓒ<u>the verb help</u> is the head of the phrase help you, and hence that help you is a verb phrase: and in the same way as we abbreviate category labels like verb to V, ⓓ<u>so too</u> we can abbreviate the category label verb phrase to VP. If we use the traditional labelled bracketing technique to represent the category of the overall verb phrase help you and of its constituent words (the verb help and the pronoun you), we can represent the structure of ⓔ<u>the resulting phrase</u> as in (4) below:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓐ: 'helps you' → 'help you' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-29T21:14:07.624Z",
    "type": "어법(밑줄)",
@@ -311,77 +349,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The concept of tense in English refers to the way finite auxiliary and main verbs indicate the time at which a situation takes place, traditionally distinguished between present and past tense forms.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘결정한다’는 강한 인과관계를 주장하는데, 지문은 ‘상관관계가 imperfect’라고 설명하여 시제가 시점을 ‘결정’하지 않음을 분명히 함. → 처방: 시제가 시점을 ‘나타낸다’는 표현(1번)과 ‘결정한다’는 표현(2번)을 비교해, 지문에서 ‘결정’이란 말이 쓰였는지 확인하기.\n③ 진단: ‘과거’를 묘사한다고만 강조하는데, 지문은 ‘present/past tense distinction’이 ‘to some extent’만 시점과 관련 있다고 설명하여 모든 경우를 ‘과거 묘사’로 한정하지 않음. → 처방: ‘to some extent’ 같은 한정 표현이 있으면 시제가 시점을 ‘완전히’ 나타내는 경우가 아니라는 점을 떠올리기.\n④ 진단: ‘모든 언어’에서 시제가 시점을 표시한다고 과장했는데, 지문은 영어의 시제만 다루며 다른 언어는 언급하지 않음. → 처방: 지문의 범위가 ‘영어’에 한정되어 있는지 확인하고, ‘모든 언어’라는 말이 나오면 범위를 벗어난 설명인지 점검하기.\n⑤ 진단: ‘가장 중요한 요인’이라고 과장했는데, 지문은 시제가 시점과 ‘상관관계’가 imperfect 하다고 설명하여 시제가 유일한 요인이 아님을 암시함. → 처방: ‘가장 중요한’이라는 표현이 나오면 지문에서 그 요인이 유일한지, 아니면 여러 요소 중 하나인지 확인하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: The concept of tense in English refers to the way finite auxiliary and main verbs indicate the time at which a situation takes place, traditionally distinguished between present and past tense forms.]"
-   }
-  },
-  {
-   "ts": "2026-07-29T06:47:16.630Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/3 다수결 4번(기록 3번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "Tense: Finite auxiliary and main verbs in English (A) [show a / shows a] binary (two-way) tense contrast, traditionally said to be between present tense forms and past tense forms. Thus, in ‘John hates syntax’, hates is a present tense verb form, whereas in ‘John hated syntax’, hated is a past tense verb form (An alternative classification which many linguists prefer (B) [is in to / is into] [±PAST] verb forms, so that hated is [+PAST], and hates [-PAST]). This present/past tense distinction correlates (to some extent) with time-reference, so that (e.g.) past tense verbs typically describe an event taking place in the past, whereas present-tense verbs typically describe an event taking place in the present (or future). However, the correlation is an imperfect one, since e.g. in a sentence such as ‘I might go there tomorrow’, the auxiliary might (C) [carry the / carries the] past tense inflection -t (found on past tense main verbs like left) but does not denote past time.",
-    "choices": [
-     "(A) shows a - (B) is into - (C) carries the",
-     "(A) show a - (B) is in to - (C) carry the",
-     "(A) show a - (B) is into - (C) carries the",
-     "(A) shows a - (B) is into - (C) carry the",
-     "(A) shows a - (B) is in to - (C) carries the"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) show a - (B) is into - (C) carries the. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문 (A)에서 'show a'가 아니라 'shows a'가 맞음에도 동사 일치를 잘못 봄. (B)에서 'is into'가 아니라 'is in to'가 맞음에도 전치사 혼동. (C)에서 'carry the'가 아니라 'carries the'가 맞음에도 주어-동사 일치 오류. → 처방: 동사 일치 규칙을 다시 확인하고, 전치사 'in to'와 'into'의 차이를 공부한 뒤, 주어와 동사의 수 일치를 정확히 맞추기.\n② 진단: 지문 (A)에서 'show a'가 아니라 'shows a'가 맞음에도 단수 주어 'Tense'를 복수로 오해. (B)에서 'is in to'가 아니라 'is into'가 맞음에도 전치사 혼동. (C)에서 'carry the'가 아니라 'carries the'가 맞음에도 주어-동사 일치 오류. → 처방: 주어와 동사의 수 일치를 철저히 확인하고, 'in to'와 'into'의 의미를 구분하여 전치사 사용 규칙을 익히기.\n③ 진단: 지문 (A)에서 'show a'가 아니라 'shows a'가 맞음에도 동사 일치를 잘못 봄. (B)에서 'is into'가 아니라 'is in to'가 맞음에도 전치사 혼동. (C)에서 'carries the'가 아니라 'carry the'가 맞음에도 주어-동사 일치 오류. → 처방: 동사 일치와 전치사 사용 규칙을 따로따로 공부하고, 문제를 풀 때마다 문장 구조를 분석하여 오류를 방지하기.\n⑤ 진단: 지문 (A)에서 'shows a'는 맞지만 (B)에서 'is in to'가 아니라 'is into'가 맞음에도 전치사 혼동. (C)에서 'carries the'는 맞지만 (A)의 동사 일치를 잘못 봄. → 처방: 전치사 'in to'와 'into'의 차이를 명확히 이해하고, 주어-동사 일치 규칙을 반복 학습하여 실수하지 않기."
-   }
-  },
-  {
-   "ts": "2026-07-28T22:18:00.825Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "WEEK 34 DAY 5 REVIEW As an “old hand” at vocabulary-building by the context method, you realize that this is the most natural and effective way. ① However, you also know that there is work and self-discipline too. ② You should carry these fine qualities right through life. ③ The words you learn are valuable, the method is equally so. ④ For instance, mastering these words will also help you win arguments in academic debates, where eloquence often outweighs factual accuracy. ⑤ REVIEW WORDS DEFINITIONS 1. stubborn, tough 2. slander, false accusation 3. au courant c. small amount 4. neglected, untidy 5. reveal, disclose 7. alternate, shift 8. disorderly clothing or hair 9. superficial appearance, front 10. facial expression of disgust 11. unwholesome, foul 13. wakeful watching 14. as bad as can be, unrelieved 16. out-of-date, obsolete 17. stupid, silly 18. choosy, particular 19. burdensome, unwieldy 20.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①을 '그러나'로 시작하는 문장이므로 앞 문장(자연스럽고 효과적인 방법)과 대조되는 내용이 나와야 하는데, 학생은 '이 방법도 자연스럽고 효과적이지만 노력과 자기 훈련도 필요하다'는 흐름을 오해했을 수 있음. ②를 '이 방법의 장점은 자연스러움과 효과성뿐 아니라 노력과 자기 훈련도 필요하다는 점'으로 잘못 이해한 듯. → 처방: 앞 문장과 대조되는 내용을 찾는 문제임을 기억하고, '그러나' 다음 문장이 앞 문장과 반대·제한·보완 역할을 하는지 확인하라.\n② 진단: ②를 '이 방법의 장점은 평생을 통해 좋은 습관을 유지해야 한다는 점'으로 오해했을 수 있음. 학생은 '이 fine qualities(좋은 습관)를 평생 유지하라'는 말을 '이 방법이 평생을 통해 유용하다는 의미'로 잘못 해석한 듯. → 처방: ②는 '이 fine qualities(노력과 자기 훈련)를 평생 유지하라'는 조언으로, '이 방법의 장점'과는 직접 관련이 없다는 점을 분명히 하라.\n③ 진단: ③을 '이 방법으로 배운 단어들이 가치 있고, 그 방법도 똑같이 가치 있다'는 문장으로 오해했을 수 있음. 학생은 '단어의 가치'와 '방법의 가치'를 동등하게 언급한 ③을 '이 방법의 장점'으로 잘못 받아들인 듯. → 처방: ③은 단어의 가치와 방법의 가치를 나열한 문장이므로, '이 방법의 장점'과는 무관하다는 점을 명확히 하라.\n⑤ 진단: ⑤를 '예를 들어, 이 방법으로 단어를 마스터하면 학술 토론에서 eloquence(웅변)가 사실의 정확성보다 중요하다는 점을 알 수 있다'는 문장으로 오해했을 수 있음. 학생은 '예시'가 포함된 ⑤를 '이 방법의 장점'으로 잘못 판단한 듯. → 처방: ⑤는 '예시'를 제시한 문장이므로, '이 방법의 장점'과는 무관하다는 점을 기억하고, 예시가 포함된 문장은 제외하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]

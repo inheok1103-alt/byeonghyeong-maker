@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-29T21:15:55.960Z",
+ "updated": "2026-07-29T22:16:28.984Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-29T22:16:00.970Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'between'은 전치사로 사용될 때 반드시 관사/the를 동반하는 패턴이 빈번함을 확인할 수 있다. 또한 문법 오류 쌍에서도 'between lecture and passage'가 'between the lecture and the passage'로 수정되는 경우가 다수 존재한다.",
+   "rule": "CEFR B1/B2 수준 내신 변형문제에서 'between A and B' 구조는 반드시 관사/the를 동반하도록 출제하여, 학생들이 전치사 구문에서 관사의 필요성을 인식하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-29T21:15:31.576Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'시간/장소 관련 전치사 오류'가 빈번히 발생하며, 특히 'at the same time', 'in life', 'take a trip'과 같은 고정 표현에서 전치사가 잘못 사용됨을 확인할 수 있다.",
    "rule": "'시간/장소/방법/목적'을 나타내는 고정 전치사 표현(예: 'at the same time', 'in life', 'take a trip')은 반드시 표준 패턴으로 출제하여 학생들이 전치사 선택 오류를 범하지 않도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-24T06:41:55.273Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스에서 'ordinal number(서수)'와 'plural agreement(복수 동사)'가 동시에 등장할 때 오류가 빈번하며, 'if-clause(조건절)' 내 동사 형태(3인칭 단수/복수)와 'why not + V(원형)' 구문의 혼동이 관찰된다. 또한 'between two' 구문에서 'other'의 복수형 생략 오류가 다수 확인된다.",
-   "rule": "CEFR B1 수준에서 'ordinal number(1st, 2nd 등)'가 포함된 명사구가 주어일 경우, 복수 동사(are/were) 사용을 강제하는 문제 1개를 반드시 포함시킨다. 예: 'My 10th and 12th exams ___ very good.' (are)",
    "sample": [
     "old english",
     "university press",
