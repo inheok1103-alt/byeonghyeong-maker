@@ -1,6 +1,75 @@
 {
- "updated": "2026-07-29T03:44:39.411Z",
+ "updated": "2026-07-29T06:47:51.340Z",
  "samples": [
+  {
+   "ts": "2026-07-29T06:46:47.149Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어 동사의 시제가 사건 발생 시점을 나타낸다고 설명하려고",
+     "영어 동사의 시제가 사건 발생 시점을 결정한다고 주장하려고",
+     "영어 동사의 시제가 사건이 발생한 과거를 묘사한다고 설명하려고",
+     "영어 동사의 시제가 모든 언어에서 사건 발생 시점을 표시한다고 주장하려고",
+     "영어 동사의 시제가 사건을 발생시키는 가장 중요한 요인이라고 설명하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The concept of tense in English refers to the way finite auxiliary and main verbs indicate the time at which a situation takes place, traditionally distinguished between present and past tense forms.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘결정한다’는 강한 인과관계를 주장하는데, 지문은 ‘상관관계가 imperfect’라고 설명하여 시제가 시점을 ‘결정’하지 않음을 분명히 함. → 처방: 시제가 시점을 ‘나타낸다’는 표현(1번)과 ‘결정한다’는 표현(2번)을 비교해, 지문에서 ‘결정’이란 말이 쓰였는지 확인하기.\n③ 진단: ‘과거’를 묘사한다고만 강조하는데, 지문은 ‘present/past tense distinction’이 ‘to some extent’만 시점과 관련 있다고 설명하여 모든 경우를 ‘과거 묘사’로 한정하지 않음. → 처방: ‘to some extent’ 같은 한정 표현이 있으면 시제가 시점을 ‘완전히’ 나타내는 경우가 아니라는 점을 떠올리기.\n④ 진단: ‘모든 언어’에서 시제가 시점을 표시한다고 과장했는데, 지문은 영어의 시제만 다루며 다른 언어는 언급하지 않음. → 처방: 지문의 범위가 ‘영어’에 한정되어 있는지 확인하고, ‘모든 언어’라는 말이 나오면 범위를 벗어난 설명인지 점검하기.\n⑤ 진단: ‘가장 중요한 요인’이라고 과장했는데, 지문은 시제가 시점과 ‘상관관계’가 imperfect 하다고 설명하여 시제가 유일한 요인이 아님을 암시함. → 처방: ‘가장 중요한’이라는 표현이 나오면 지문에서 그 요인이 유일한지, 아니면 여러 요소 중 하나인지 확인하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: The concept of tense in English refers to the way finite auxiliary and main verbs indicate the time at which a situation takes place, traditionally distinguished between present and past tense forms.]"
+   }
+  },
+  {
+   "ts": "2026-07-29T06:47:16.630Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/3 다수결 4번(기록 3번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Tense: Finite auxiliary and main verbs in English (A) [show a / shows a] binary (two-way) tense contrast, traditionally said to be between present tense forms and past tense forms. Thus, in ‘John hates syntax’, hates is a present tense verb form, whereas in ‘John hated syntax’, hated is a past tense verb form (An alternative classification which many linguists prefer (B) [is in to / is into] [±PAST] verb forms, so that hated is [+PAST], and hates [-PAST]). This present/past tense distinction correlates (to some extent) with time-reference, so that (e.g.) past tense verbs typically describe an event taking place in the past, whereas present-tense verbs typically describe an event taking place in the present (or future). However, the correlation is an imperfect one, since e.g. in a sentence such as ‘I might go there tomorrow’, the auxiliary might (C) [carry the / carries the] past tense inflection -t (found on past tense main verbs like left) but does not denote past time.",
+    "choices": [
+     "(A) shows a - (B) is into - (C) carries the",
+     "(A) show a - (B) is in to - (C) carry the",
+     "(A) show a - (B) is into - (C) carries the",
+     "(A) shows a - (B) is into - (C) carry the",
+     "(A) shows a - (B) is in to - (C) carries the"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) show a - (B) is into - (C) carries the. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문 (A)에서 'show a'가 아니라 'shows a'가 맞음에도 동사 일치를 잘못 봄. (B)에서 'is into'가 아니라 'is in to'가 맞음에도 전치사 혼동. (C)에서 'carry the'가 아니라 'carries the'가 맞음에도 주어-동사 일치 오류. → 처방: 동사 일치 규칙을 다시 확인하고, 전치사 'in to'와 'into'의 차이를 공부한 뒤, 주어와 동사의 수 일치를 정확히 맞추기.\n② 진단: 지문 (A)에서 'show a'가 아니라 'shows a'가 맞음에도 단수 주어 'Tense'를 복수로 오해. (B)에서 'is in to'가 아니라 'is into'가 맞음에도 전치사 혼동. (C)에서 'carry the'가 아니라 'carries the'가 맞음에도 주어-동사 일치 오류. → 처방: 주어와 동사의 수 일치를 철저히 확인하고, 'in to'와 'into'의 의미를 구분하여 전치사 사용 규칙을 익히기.\n③ 진단: 지문 (A)에서 'show a'가 아니라 'shows a'가 맞음에도 동사 일치를 잘못 봄. (B)에서 'is into'가 아니라 'is in to'가 맞음에도 전치사 혼동. (C)에서 'carries the'가 아니라 'carry the'가 맞음에도 주어-동사 일치 오류. → 처방: 동사 일치와 전치사 사용 규칙을 따로따로 공부하고, 문제를 풀 때마다 문장 구조를 분석하여 오류를 방지하기.\n⑤ 진단: 지문 (A)에서 'shows a'는 맞지만 (B)에서 'is in to'가 아니라 'is into'가 맞음에도 전치사 혼동. (C)에서 'carries the'는 맞지만 (A)의 동사 일치를 잘못 봄. → 처방: 전치사 'in to'와 'into'의 차이를 명확히 이해하고, 주어-동사 일치 규칙을 반복 학습하여 실수하지 않기."
+   }
+  },
   {
    "ts": "2026-07-28T22:18:00.825Z",
    "type": "무관문장",
@@ -296,60 +365,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Misused English words and their distinctions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘spelling(맞춤법)’과 ‘grammar(문법)’을 혼동했으며, 지문은 ‘뜻이 비슷한 단어’와 ‘동음이의어’를 다루므로 이 선지는 범위가 너무 넓고 맞지 않는다. → 처방: ‘뜻이 비슷한 단어’와 ‘동음이의어’를 집중해서 공부하고, 문제에서 ‘confusing words and homonyms’를 강조하는지 확인하기.\n③ 진단: ‘correct English usage(올바른 영어 사용)’가 아니라 ‘뜻이 비슷한 단어와 동음이의어’를 다룬다는 점에서 오해했으며, 지문은 ‘사용 오류’에 초점을 맞추고 있다. → 처방: 문제에서 ‘confusing words and homonyms’가 핵심 단어인지 확인하고, 제목이 ‘뜻 혼동’을 다루는지 먼저 살피기.\n④ 진단: ‘misused words(잘못 사용된 단어)’가 아니라 ‘confusing words(뜻이 혼동되는 단어)’를 다룬다는 점에서 오해했으며, 지문은 ‘뜻 혼동’과 ‘동음이의어’를 설명한다. → 처방: ‘confusing words’는 ‘뜻이 비슷해서 혼동되는 단어’를 뜻한다는 점 기억하고, 제목에 ‘confusing’이 있는지 확인하기.\n⑤ 진단: ‘homonyms(동음이의어)’를 ‘절대 사용하지 말라’는 과장된 표현으로 오해했으며, 지문은 ‘동음이의어의 올바른 사용’을 설명한다. → 처방: ‘homonyms’는 ‘뜻이 같은 단어’가 아니라 ‘소리가 같은 단어’를 뜻한다는 점 기억하고, 지문에서 ‘homonyms’를 어떻게 설명하는지 다시 읽기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Misused English words and their distinctions.]"
-   }
-  },
-  {
-   "ts": "2026-07-28T12:19:10.323Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] ingenious clever ingenuous na¨ıve or simple innocence to be without guilt innocents people who are without guilt insure (see assure) irregardless no such word exists regardless in spite of, without regard isle (see aisle) it’s contraction for it is or it has Example: It’s for a good cause.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 영리하고 재치 있으며 순진하거나 죄책감이 없는 순수한 사람들은, 어떤 경우에도 그러한 단어가 존재하지 않는다는 점을 보장합니다(‘irregardless’는 ‘regardless’의 오용이며, ‘isle’은 ‘aisle’의 오용입니다). (구문 포인트: 동사 ‘insure’의 오용(‘assure’로 대체해야 함) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-28T06:42:51.256Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "ACRIMONIOUS (ak ruh MOH nee us) adj full of spite; bitter; nasty • George and Elizabeth’s discussion (A) [turned acrimonious / turns acrimonious] when Elizabeth introduced the subject of George’s perennial, incorrigible stupidity. • Relations between the competing candidates were so acrimonious that each refused to acknowledge the presence of the other. ACUMEN (AK yoo mun) n keenness of judgment; mental sharpness • A woman who knows how to turn one dollar into a million overnight might be said to have a lot of business acumen. • Ernie’s lack of acumen (B) [leds him / led him] to invest all his money in a company that had already (C) [gone out / went out] of business. Note carefully the pronunciation of this word. Quick Quiz #2 Match each word in the first column with its definition in the second column. Check your answers here. 1. abstinent a. hard to understand 2. abstract b. voluntarily avoiding 3. abstruse c. wretched 4. abysmal d. bitter 5. accolade e. comply 6. accost f. harsh 7. acerbic g. mental sharpness 8. acquiesce h. theoretical 9. acrid i. award",
-    "choices": [
-     "(A) turned acrimonious - (B) leds him - (C) went out",
-     "(A) turns acrimonious - (B) led him - (C) went out",
-     "(A) turns acrimonious - (B) leds him - (C) went out",
-     "(A) turned acrimonious - (B) led him - (C) went out",
-     "(A) turned acrimonious - (B) led him - (C) gone out"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) turned acrimonious - (B) led him - (C) gone out. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘turned’는 과거형이지만 주어가 ‘discussion’이므로 시제 일치에 맞지 않고, ‘turns’는 3인칭 단수 현재형으로 문맥에 맞지 않음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 과거형으로 문맥에 맞음. → 처방: 시제와 동사 형태를 정확히 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n② 진단: ‘turns’는 3인칭 단수 현재형이지만 문맥상 과거 상황이므로 ‘turned’가 옳음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 문맥에 맞음. → 처방: 문맥에 맞는 시제를 먼저 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n③ 진단: ‘turns’는 3인칭 단수 현재형이지만 문맥상 과거 상황이므로 ‘turned’가 옳음. ‘leds’는 ‘led’의 오용으로, ‘led him’을 써야 함. ‘went out’는 문맥에 맞음. → 처방: 시제와 동사 형태를 정확히 확인하고, ‘led’를 쓸 때는 ‘s’를 붙이지 않도록 주의하기.\n⑤ 진단: ‘turned’는 과거형으로 문맥에 맞음. ‘led him’은 옳음. ‘gone out’는 과거 완료형이지만 문맥상 단순 과거가 필요하므로 ‘went out’이 옳음. → 처방: ‘went out’과 ‘gone out’의 차이를 알고, 문맥에 맞는 시제를 정확히 쓰기."
    }
   }
  ]
