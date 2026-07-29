@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-29T19:48:47.386Z",
+ "updated": "2026-07-29T21:15:55.960Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-29T21:15:31.576Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거형/현재형 혼용, 소유격 생략, 동사 선택 오류가 빈번하며, 특히 'have a trip' 대신 'take a trip'이 표준 표현임을 확인할 수 있다.",
+   "rule": "영어 문법 문항에서 'have/take a trip' 구문의 경우, 'take a trip'이 표준 표현임을 반드시 포함하여 출제하며, 특히 'have' 대신 'take'를 요구하는 빈칸 채움 문제를 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-29T19:47:58.873Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "이 코퍼스에서 'ordinal number(서수)'와 'plural agreement(복수 동사)'가 동시에 등장할 때 오류가 빈번하며, 'if-clause(조건절)' 내 동사 형태(3인칭 단수/복수)와 'why not + V(원형)' 구문의 혼동이 관찰된다. 또한 'between two' 구문에서 'other'의 복수형 생략 오류가 다수 확인된다.",
    "rule": "CEFR B1 수준에서 'ordinal number(1st, 2nd 등)'가 포함된 명사구가 주어일 경우, 복수 동사(are/were) 사용을 강제하는 문제 1개를 반드시 포함시킨다. 예: 'My 10th and 12th exams ___ very good.' (are)",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-24T03:48:29.656Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거 시제와 현재 시제가 혼용된 문장이나, 복수형/단수형 오류가 빈번하며, 'those'의 과도한 사용으로 인해 문장의 명확성이 떨어진다. 또한 'between two' 패턴이 'between A and B'로 변환되어야 하는 경우가 많다.",
-   "rule": "학생들이 'those' + 복수명사 + 과거 시제 동사(예: were found) 패턴을 사용할 때, 반드시 'those'를 'those + 복수명사 + are found'로 수정하거나, 'those'를 'the' 또는 'these'로 대체하여 문법적 오류를 방지하도록 연습시킨다.",
    "sample": [
     "old english",
     "university press",
