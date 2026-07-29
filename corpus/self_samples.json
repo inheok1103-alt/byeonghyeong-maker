@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-29T22:16:28.989Z",
+ "updated": "2026-07-29T23:19:21.880Z",
  "samples": [
+  {
+   "ts": "2026-07-29T23:17:44.741Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 1번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.38,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "However, neither (A) [ungrammatical / grammatical] categories nor constructional taxonomies are good at capturing the full range of grammatical generalizations. First, as argued in §3, different constructions on the whole do not describe the same grammatical category, that is, the distributions defined by the relevant roles in the constructions are not the same. The same can be observed in the taxonomic hierarchy of constructions. For example, tickle is a (B) [Transitive / Intransitive] Verb, while die is an Intransitive Verb; that is, [Sbj tickle Obj] and [Sbj die] are instances of the Transitive [Sbj TrVerb Obj] and Intransitive [Sbj IntrVerb] constructions respectively. But break can occur in either the Transitive or Intransitive Construction, and weigh occurs in the Transitive (Active) construction but not the (C) [Passive / Active] construction. Why are these all called Verbs, despite their distribution differences? Because they all also occur in another construction, the Morphological Verb construction, defined by occurrence in the Tense-Agreement inflectional construction (i.e. the Present Ø/-s alternation and the Past -ed morpheme).",
+    "choices": [
+     "(A) grammatical - (B) Transitive - (C) Passive",
+     "(A) ungrammatical - (B) Intransitive - (C) Active",
+     "(A) grammatical - (B) Transitive - (C) Active",
+     "(A) grammatical - (B) Intransitive - (C) Passive",
+     "(A) ungrammatical - (B) Transitive - (C) Active"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) grammatical - (B) Transitive - (C) Passive. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘(A)’에서 ‘ungrammatical’이 오답인데, 지문 첫 문장에 ‘neither ungrammatical nor grammatical’이 아니라 ‘neither grammatical nor ungrammatical’로 나와야 옳다는 오해로 보인다. ‘(B)’에서 ‘Intransitive’를 택했는데, 지문에서 ‘tickle’이 ‘Transitive Verb’로 명시된 부분을 보지 못한 듯하다. → 처방: ‘(A)’는 지문 첫 문장의 ‘neither grammatical categories nor constructional taxonomies’를 그대로 따라 ‘grammatical’을 선택하고, ‘(B)’는 ‘tickle’이 ‘Transitive Verb’임을 지문에서 확인한 후 답을 고르기.\n③ 진단: ‘(A)’는 ‘grammatical’을 correctly 선택했지만, ‘(B)’에서 ‘tickle’이 ‘Transitive Verb’라는 지문 내용을 무시하고 ‘Transitive’를 선택한 오류. ‘(C)’는 ‘weigh’이 ‘Passive’가 아니라 ‘Active’에서만 나타난다는 지문을 읽지 못해 ‘Active’를 택했다. → 처방: ‘(B)’와 ‘(C)’는 각각 지문에서 ‘tickle’이 ‘Transitive’, ‘weigh’이 ‘Transitive (Active)’임을 직접 확인한 후 답을 고르기.\n④ 진단: ‘(A)’는 ‘grammatical’을 correctly 선택했지만, ‘(B)’에서 ‘die’를 ‘Intransitive Verb’로만 보고 ‘Intransitive’를 선택했는데, 지문은 ‘tickle’이 ‘Transitive’임을 먼저 설명한 후 ‘die’를 예로 든 것이라 혼동한 듯하다. ‘(C)’는 ‘Passive’를 택했는데, ‘weigh’이 ‘Passive’에서 나타나지 않는다는 지문을 읽지 못했다. → 처방: ‘(B)’는 ‘tickle’이 ‘Transitive’임을 지문에서 확인하고, ‘(C)’는 ‘weigh’이 ‘Passive’에서 나타나지 않는다는 지문 내용을 확인한 후 답을 고르기.\n⑤ 진단: ‘(A)’에서 ‘ungrammatical’을 택했는데, 지문 첫 문장이 ‘neither grammatical categories nor constructional taxonomies’를 말하고 있어 ‘grammatical’이 옳다는 사실을 놓쳤다. ‘(B)’는 ‘Transitive’를 correctly 선택했지만, ‘(C)’에서 ‘Active’를 택했는데, ‘weigh’이 ‘Passive’에서 나타나지 않는다는 지문을 읽지 못했다. → 처방: ‘(A)’는 지문 첫 문장의 ‘grammatical’을 그대로 따라 선택하고, ‘(C)’는 ‘weigh’이 ‘Passive’에서 나타나지 않는다는 지문 내용을 확인한 후 답을 고르기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-07-29T23:18:53.794Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 16 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'distribution', 'Grammatical', 'consistency' / 14~18단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Grammatical categories should reflect functional consistency rather than just syntactic distribution to accurately capture linguistic patterns.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-29T22:15:32.242Z",
    "type": "본문찾아쓰기",
@@ -297,58 +349,6 @@
     ],
     "answer": 1,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 지문에서 '[3]의 구성 요소들은 [1]의 구성 요소들과 같은 구문적 기능을 지닌다'고 명시했는데, 이를 '동일한 구문적 기능이 없다'로 잘못 읽었다. → 처방: 지문에서 'exactly the same syntactic functions'라고 강조한 부분을 다시 한 번 꼼꼼히 읽고, '동일한'과 '없다'의 의미를 정확히 구별해서 이해하기.\n③ 진단: 지문에서 'the ducks'를 'ducks'로 대체해도 문법적으로 옳은 문장이 된다고 설명했는데, 이를 '문법적으로 옳지 않다'로 오해했다. → 처방: 지문에서 'Replacing that string by ducks yields the well-formed sentence' 부분을 다시 확인하고, '대체 가능'과 '대체 불가능'을 정확히 구분해서 읽기.\n④ 진단: 지문에서 'are paddling away'를 'paddle'로 대체해도 문법적으로 옳은 문장이 된다고 설명했는데, 이를 '문법적으로 옳지 않다'로 잘못 이해했다. → 처방: 지문에서 'the remainder of [3] – are paddling away – can be replaced by the single word paddle' 부분을 다시 읽고, '대체 가능' 여부를 정확히 판단하는 연습하기.\n⑤ 진단: 지문에서 '[3]은 [4]와 같이 두 부분으로 완전히 나뉜다'고 설명했는데, 이를 '[3]은 [4]와 같이 나뉘지 않는다'로 오해했다. → 처방: 지문에서 'This exhaustively divides [3] into two, as in [4]'라는 문장을 다시 확인하고, '완전히 나뉜다'와 '나뉘지 않는다'의 의미를 정확히 이해하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-29T10:01:43.410Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Sentence Structure: Functions 22 We want to say that [3]‌ has the same general structure as [1]. Like [1], it can be divided into two CONSTITUENTS of the same CATEGORIES as the corresponding constituents of [1]. Furthermore, they have exactly the same syntactic FUNCTIONS as those in [1] –​ put another way, the relation between them is the same. In asking which word-​string in [3]‌ corresponds to ducks in [1], we’re asking which string in [3] could be replaced by the single word ducks while leaving a grammatical sentence. It has to be the ducks. Replacing that string by ducks yields the well-​formed sentence Ducks are paddling away. In each sentence, both ducks and the ducks could be replaced by the single word they. And the remainder of [3] –​ are paddling away –​ can be replaced by the single word paddle (from [1]), giving the well-​formed sentence The ducks paddle. This exhaustively divides [3]‌ into two, as in [4]:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-29T06:46:47.149Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어 동사의 시제가 사건 발생 시점을 나타낸다고 설명하려고",
-     "영어 동사의 시제가 사건 발생 시점을 결정한다고 주장하려고",
-     "영어 동사의 시제가 사건이 발생한 과거를 묘사한다고 설명하려고",
-     "영어 동사의 시제가 모든 언어에서 사건 발생 시점을 표시한다고 주장하려고",
-     "영어 동사의 시제가 사건을 발생시키는 가장 중요한 요인이라고 설명하려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The concept of tense in English refers to the way finite auxiliary and main verbs indicate the time at which a situation takes place, traditionally distinguished between present and past tense forms.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘결정한다’는 강한 인과관계를 주장하는데, 지문은 ‘상관관계가 imperfect’라고 설명하여 시제가 시점을 ‘결정’하지 않음을 분명히 함. → 처방: 시제가 시점을 ‘나타낸다’는 표현(1번)과 ‘결정한다’는 표현(2번)을 비교해, 지문에서 ‘결정’이란 말이 쓰였는지 확인하기.\n③ 진단: ‘과거’를 묘사한다고만 강조하는데, 지문은 ‘present/past tense distinction’이 ‘to some extent’만 시점과 관련 있다고 설명하여 모든 경우를 ‘과거 묘사’로 한정하지 않음. → 처방: ‘to some extent’ 같은 한정 표현이 있으면 시제가 시점을 ‘완전히’ 나타내는 경우가 아니라는 점을 떠올리기.\n④ 진단: ‘모든 언어’에서 시제가 시점을 표시한다고 과장했는데, 지문은 영어의 시제만 다루며 다른 언어는 언급하지 않음. → 처방: 지문의 범위가 ‘영어’에 한정되어 있는지 확인하고, ‘모든 언어’라는 말이 나오면 범위를 벗어난 설명인지 점검하기.\n⑤ 진단: ‘가장 중요한 요인’이라고 과장했는데, 지문은 시제가 시점과 ‘상관관계’가 imperfect 하다고 설명하여 시제가 유일한 요인이 아님을 암시함. → 처방: ‘가장 중요한’이라는 표현이 나오면 지문에서 그 요인이 유일한지, 아니면 여러 요소 중 하나인지 확인하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: The concept of tense in English refers to the way finite auxiliary and main verbs indicate the time at which a situation takes place, traditionally distinguished between present and past tense forms.]"
    }
   }
  ]

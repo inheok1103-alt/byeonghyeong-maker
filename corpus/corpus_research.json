@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-29T22:16:28.984Z",
+ "updated": "2026-07-29T23:19:21.876Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-29T23:18:56.239Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 패턴들은 불필요한 중복 표현(예: 'in my opinion, I think')이나 오류 있는 동사 형태(예: 'are make'), 또는 생략된 접속사(예: 'indicates prescribed fire should')가 자주 나타나며, 이는 영어 문법의 기본 구조와 어휘 선택의 오류로 연결된다.",
+   "rule": "원서 코퍼스의 실제 패턴을 반영하여, '~라고 생각한다', '~라고 주장한다' 등 주관적 표현 뒤에는 'that' 절을 필수적으로 삽입하도록 하거나, 동사의 시제·태 오류(예: 'be + 동사원형' 형태 오류)를 교정하는 문항을 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-29T22:16:00.970Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'They say'나 'It gives'와 같은 주제-동사 구조는 종종 보조적 요소(예: 'in simple words', 'a lot of opportunity')가 문장 중간에 삽입되어 문법적 흐름을 방해하지 않도록 패턴화된다. 또한 'are'와 같은 상태동사는 관용적으로 'usually', 'often' 등 빈도를 나타내는 부사가 동반되는 경우가 많다.",
    "rule": "주어+동사 구조에서 보조적 요소(삽입구, 부사 등)가 삽입될 경우, 쉼표(,)로 분리하여 문법적 명확성을 유지하라. 또한 상태동사('are', 'seem' 등)는 빈도부사('usually', 'often')와 함께 사용되는 패턴을 우선 적용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-24T09:37:47.428Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'시간/장소 관련 전치사 오류'가 빈번히 발생하며, 특히 'at the same time', 'in life', 'take a trip'과 같은 고정 표현에서 전치사가 잘못 사용됨을 확인할 수 있다.",
-   "rule": "'시간/장소/방법/목적'을 나타내는 고정 전치사 표현(예: 'at the same time', 'in life', 'take a trip')은 반드시 표준 패턴으로 출제하여 학생들이 전치사 선택 오류를 범하지 않도록 한다.",
    "sample": [
     "old english",
     "university press",
