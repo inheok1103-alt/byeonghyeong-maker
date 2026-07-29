@@ -1,6 +1,41 @@
 {
- "updated": "2026-07-29T17:42:17.700Z",
+ "updated": "2026-07-29T19:48:47.390Z",
  "samples": [
+  {
+   "ts": "2026-07-29T19:47:13.121Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what. The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think what that she is hiding what. This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think what that she is hiding what. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation):\n\n─────────\n[요약문] The syntactic derivation of a question structure involves (A) ... (B) ...",
+    "choices": [
+     "(A) subject incorporation … (B) edge feature suppression",
+     "(A) interrogative movement … (B) feature attraction",
+     "(A) complement merging … (B) feature absence",
+     "(A) null complementiser insertion … (B) T-auxiliary retention",
+     "(A) tense agreement … (B) interrogative pronoun deletion"
+    ],
+    "answer": 2,
+    "explanation": "(A) interrogative movement / (B) feature attraction 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ①은 'subject incorporation(주어 결합)'이라는 용어를 오해한 것으로 보입니다. 지문은 'he'가 TP 의 주어로 결합된다고 설명하지만, 'incorporation(결합)'은 문법 용어로 동사와 주어가가 되는 현상을 가리키며, 이 글에서는 해당되지 않습니다. 또한 'edge feature suppression(에지 특징 억제)'은 지문에 전혀 언급되지 않은 잘못된 개념입니다. → 처방: 문법 용어의 의미를 정확히 숙지하고, 지문에서 설명하는 'edge feature(에지 특징)'가 무엇인지 다시 확인하세요. 'incorporation'은 동사와 주어가 결합하는 현상이 아니라, 문법 구조에서 주어가 자리하는 위치를 정확히 이해하세요.\n③ 진단: ③은 'complement merging(보충어 결합)'은 지문에서 언급되지만, 'feature absence(특징 부재)'는 오해입니다. 지문은 'tense feature'와 'edge feature'가 작용한다고 설명하며, 'absence(부재)'는 해당되지 않습니다. → 처방: 지문에서 'feature(특징)'가 어떻게 작용하는지 집중하세요. 'absence'는 문법적 특징이 없다는 뜻이므로, 지문에서 설명하는 'attract(끌어당김)'이나 'movement(이동)'과 같은 동작을 떠올리며 특징의 역할을 다시 정리하세요.\n④ 진단: ④는 'null complementiser insertion(영 보충어 삽입)'은 지문에 언급되지만, 'T-auxiliary retention(조동사 유지)'은 오해입니다. 지문은 조동사 'might'가 C 로 이동한다고 설명하며, 'retention(유지)'은 해당되지 않습니다. → 처방: 지문에서 'might'가 T 에서 C 로 'move(이동)'한다는 부분을 정확히 기억하세요. 'retention'은 이동이 아니라 유지라는 뜻이므로, 동사의 이동 과정을 다시 한 번 정리하고, 'move'와 'retention'의 차이를 구분하세요.\n⑤ 진단: ⑤는 'tense agreement(시제 일치)'는 지문에 없지만, 'interrogative pronoun deletion(의문대명사 삭제)'은 오해입니다. 지문은 의문대명사 'what'이 C 의 Specifier 로 이동한다고 설명하며, 'deletion(삭제)'은 해당되지 않습니다. → 처방: 지문에서 'what'이 'move(이동)'한다는 부분을 다시 확인하세요. 'deletion'은 문법적 요소가 사라진다는 뜻이므로, 'what'이 어떻게 이동하는지 구조도를 그려가며 이해하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-29T15:21:57.764Z",
    "type": "안내문일치",
@@ -334,25 +369,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [수일치] ⓓ: 'the words you learns are valuable' → 'the words you learn are valuable' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-28T22:19:07.279Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 배우는 단어와 방법은 모두 가치가 있습니다.\n주어진 단어: ( words / learn / method )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The words you learn and the method are both valuable. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
