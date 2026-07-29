@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-29T06:47:51.337Z",
+ "updated": "2026-07-29T10:02:48.035Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-29T10:01:56.955Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'reason + that절'은 'reason to + 동사원형'으로 수정하는 패턴이 빈번하며, 접속사 'that'이 생략되면서 오류가 발생한다. 또한, 'surprise'와 같은 추상명사는 전치사 'to'와 결합하는 경우가 많다.",
+   "rule": "'reason that + 주어 + 동사'는 'reason to + 동사원형'으로 변환하는 오류를 유발하므로, 해당 구조가 포함된 문장은 'to + 동사원형'으로의 수정을 요구하는 문제로 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-29T06:47:24.919Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "원서 코퍼스에서 'a/an + 명사 + 명사' 패턴(예: 'a fixed data', 'a rolling stone')이 빈번히 오류로 나타나며, 관사 사용 오류가 문법적 오류의 핵심임을 확인했다.",
    "rule": "원서 코퍼스에서 'a/an + 명사 + 명사' 패턴이 빈번한 만큼, 내신 변형문제에서는 관사(a/an/the) 사용 오류를 반드시 포함하여 출제하되, 'a fixed data' → 'fixed data'로 수정하는 등 관사 생략 또는 잘못된 관사 사용을 오답지로 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-23T18:40:03.436Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 실제 패턴에서 'and'나 'since'로 연결된 문장 구조에서 동사 시제 불일치, 반복된 동사 사용, 또는 불필요한 반복(예: 'what researchers said'의 중복)이 빈번한 오류로 나타났다.",
-   "rule": "CEFR B1 수준 이하의 내신 변형문제에서는 'and' 또는 'since'로 연결된 두 문장 간에 동사 시제, 주어-동사 일치, 또는 반복된 표현(예: 'what researchers said')을 의도적으로 틀리게 하여 오류를 유도하라.",
    "sample": [
     "old english",
     "university press",
