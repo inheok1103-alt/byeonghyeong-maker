@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-29T15:23:53.416Z",
+ "updated": "2026-07-29T17:42:17.697Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-29T17:41:38.724Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'부사(realy, not 등)의 위치 오류'가 빈번하며, 특히 'a/an + 형용사 + 명사' 구조에서 형용사 앞의 부사 위치가 중요하다. 또한 'think about'과 같은 구동사 뒤에는 동사원형이 아닌 동사-ing 형태가 오는 경우가 많아 오류가 발생한다.",
+   "rule": "'a/an + 형용사 + 명사' 구조에서 형용사 앞에 오는 부사는 반드시 'a/an'과 형용사 사이에 위치해야 한다(예: 'a really good film' vs. '*a good really film').",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-29T15:23:23.961Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "명사-형용사/동사-명사 등 연어의 오용이 빈번하며, 특히 'effect'와 'affect', 'sacrifice'와 'sacrifise', 'precious'와 'preciouse' 등 철자 오류가 연어 오용과 결합되어 나타난다.",
    "rule": "원서 코퍼스의 최빈 연어 패턴(예: 'old english', 'noun phrase', 'direct object')을 기반으로, 학생들이 흔히 혼동하는 연어(예: 'effect' vs. 'affect', 'sacrifice' vs. 'sacrifise')를 오답으로 제시하여 연어 사용 능력을 평가한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-23T23:16:07.299Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 실제 패턴에서 'old houses', 'student is', 'the important'와 같은 명사구 오류가 빈번하며, 특히 복수형 오류와 관사 생략이 두드러진다.",
-   "rule": "복수형 오류와 관사 생략 오류를 방지하기 위해, 'most + 명사' 뒤에는 복수형(-s)을 반드시 사용하고, 'the important'과 같은 관사 오류는 'the important thing'으로 명사구를 구체화하여 수정하라.",
    "sample": [
     "old english",
     "university press",
