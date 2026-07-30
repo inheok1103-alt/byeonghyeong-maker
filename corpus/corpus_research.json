@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-30T14:35:43.934Z",
+ "updated": "2026-07-30T16:52:47.216Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-30T16:52:25.089Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서 'old/new', 'agree/disagree', 'between two' 등 대립·비교·변화의 연어 패턴이 빈번히 등장하며, 특히 전치사 오용(agree with, disagree with)과 복수형 오용(livestock/livestocks)이 오답 설계에 활용될 수 있음을 확인했다.",
+   "rule": "'agree/disagree' 동사는 전치사 'with'를 필수적으로 요구하므로, 문장에서 해당 동사가 등장하면 반드시 'agree with' 또는 'disagree with' 형태로 출제하여 전치사 오용 오답을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-30T14:35:15.138Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'failures and struggles'와 같이 복수 명사나 동사 원형이 명사구로 직접 연결되는 연어가 빈번히 관찰된다. 또한 'spent too much time using computers'와 같이 동명사(-ing) 형태가 'time'과 결합해 시간 소모를 나타내는 구조가 두드러진다.",
    "rule": "원서 문체 패턴을 반영하여, 'face + 복수명사(plural noun)' 또는 'spend + too much + time + 동명사(-ing)' 구조를 필수적으로 포함하는 문장을 내신 변형 문제로 출제하라. 예: 'They had to face their failures and struggles.' 또는 'They spent too much time using computers.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-24T21:31:01.113Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "강조 목적의 주어 대명사(You, they 등)가 불필요하게 반복될 경우, 문법적으로 불필요한 경우가 많다. 또한, 수동태에서 행위자의 생략이 자연스러운 경우(are controlled → being controlled)에도 오류가 발생한다.",
-   "rule": "강조가 아닌 단순 주어 대명사(You, They 등)는 문법적으로 필수적이지 않다면 생략하거나, 수동태에서 행위자 생략이 자연스러운 경우(be + past participle → be + being + past participle)를 적용하여 오류를 수정하라.",
    "sample": [
     "old english",
     "university press",
