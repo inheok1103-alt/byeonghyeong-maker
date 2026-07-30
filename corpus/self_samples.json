@@ -1,6 +1,25 @@
 {
- "updated": "2026-07-30T12:08:06.432Z",
+ "updated": "2026-07-30T14:35:43.938Z",
  "samples": [
+  {
+   "ts": "2026-07-30T14:35:12.982Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 이러한 문자열은 가정된 문장 구조에 따라 구성 요소가 될 수 없습니다.\n주어진 단어: ( strings / cannot / constituents )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] These strings cannot be constituents under our assumed sentence structure. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-30T12:06:20.461Z",
    "type": "어휘(밑줄)",
@@ -321,40 +340,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [수일치] ⓐ: 'helps you' → 'help you' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-29T21:14:07.624Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "There is a demand for a ⓐ<u>repeal to the inheritance tax</u>. ✓ We demand that Congress repeal the inheritance tax. Clarity, Not Simplemindedness Your readers want you to write clearly, but not in Dick-and-Jane sentences. Some argue that all sentences should be short, ⓑ<u>no more than fifteen or twenty words</u>. But many mature ideas are too ­complicated to express so compactly. In Lessons 10 and 11 we look at ways to revise ⓒ<u>too-short, too-simple sentences</u> into a style that is readable but still complex enough to communicate ­complex ideas. In Your Own Words E xercise 3.8 Go through a page of your own writing. Underline whole ­subjects and bracket verbs. Now, think about the story you are telling. ­Circle the main characters and box ⓓ<u>their actions</u>, wherever they ­appear. Look especially for ⓔ<u>actions hidden in nominalizations</u>. What do you notice? How clear will a reader likely find your writing? If necessary, revise to align characters with subjects and specific actions with verbs.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 1,
-    "explanation": "[어법: 준동사] 정답 ⓐ의 'repeal to the inheritance tax'는 'repeal of the inheritance tax'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
