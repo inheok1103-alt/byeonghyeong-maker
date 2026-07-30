@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-30T18:50:14.176Z",
+ "updated": "2026-07-30T20:44:01.211Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-30T20:37:51.551Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'this shall/will' 다음에 동사원형이 아닌 명사(효과·증거 등)가 오는 오류가 반복된다. 또한 소유·복수 관련 오류(components→members, cars→car)도 빈번하다.",
+   "rule": "'This/It will' 다음에는 동사원형(affect/prove)이 와야 하며, 소유·복수 오류는 'have a car'와 같이 복수형이 아닌 단수형으로 통일해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-30T18:49:45.823Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 'needs to' → 'needs of' 오류는 'to'가 아닌 'of'가 전치사로 쓰이는 명사구 패턴(needs of N)을 반영하며, 'another fishes' → 'other fish'는 수량형용사와 불가산명사 규칙이 혼용된 결과다. 'not only predator' → 'not only a predator'는 관사 누락 오류로, 관사 규칙이 CEFR B1 수준에서 핵심임을 시사한다.",
    "rule": "'needs of N'와 같은 전치사 패턴, 'other + 불가산명사', 'a/an + 단수명사' 규칙을 CEFR B1 수준에서 '빈칸채우기'나 '오류수정' 유형으로 직접 출제하여 문법적 정확성을 평가하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-25T03:41:32.702Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'one of the reason(s)'는 복수형 'reasons'로 사용되며, 'never give up'은 'never give it up'으로 대명사 'it'을 동반하는 경우가 많다. 또한 'why not'은 'why would you not'으로 완화된 표현으로 변환되는 경향이 있다.",
-   "rule": "원서 코퍼스 패턴을 반영하여, 'one of the reason(s)'는 반드시 'one of the reasons'로 복수형으로 수정하고, 'never give up'은 'never give it up'으로 대명사를 포함하도록 변형 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",

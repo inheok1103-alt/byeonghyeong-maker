@@ -1,6 +1,74 @@
 {
- "updated": "2026-07-30T18:50:14.180Z",
+ "updated": "2026-07-30T20:44:01.214Z",
  "samples": [
+  {
+   "ts": "2026-07-30T20:36:53.108Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 1,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "methods for facilitating effective classroom discussions",
+     "ways to encourage student participation before discussions begin",
+     "results expected from well-managed classroom discussions",
+     "general guidelines applicable to all instructional approaches in education",
+     "procedures for holding discussions without direct teacher supervision"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Effective strategies for implementing classroom discussions as a teaching method'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: 지문은 '토론 시작 전 학생 준비'보다 '토론 itself 의 방법(1, 4, 5)'에 더 초점을 둔다. 'before discussions begin'은 보조 설명일 뿐 주제가 아니다. → 처방: 발문은 '글의 주제'를 묻는 것이므로, 지문 전체를 아우르는 핵심(토론 방법)을 찾도록 해라.\n③ 진단: 지문은 '잘 관리된 토론의 결과'가 아니라 '토론을 효과적으로 이끄는 방법'에 대해 설명한다. 'results expected'는 지문에 나오지 않는다. → 처방: 글의 핵심은 '방법(methods)'이므로, 결과가 아니라 '어떻게 하는지'를 먼저 떠올려라.\n④ 진단: 지문은 '토론 방법'에만 국한된 내용으로, '모든 교수법'에 적용되는 '일반 가이드라인'은 아니다. 4번은 범위가 너무 넓다. → 처방: 지문의 주제는 '토론 방법'이므로, 더 좁은 범위(토론 관련)로 한정해서 생각해라.\n⑤ 진단: 지문은 '선생님의 역할(준비·진행·관찰)'을 강조하며, '선생님 없이 토론하기'는 다루지 않는다. 'without direct teacher supervision'은 지문과 무관하다. → 처방: 지문에서 선생님의 역할이 중요하다고 나오므로, '선생님 없이'라는 표현이 나오면 의심해라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Effective strategies for implementing classroom discussions as a teaching method]"
+   }
+  },
+  {
+   "ts": "2026-07-30T20:37:46.988Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Ask the groups to discuss each exercise first among themselves and then orally under your supervision. Evaluate your students’ competence through the use of the lesson and unit evaluation in which they have to perform individually (independent practice) In discussion, as in other methods, your role as teacher is to prepare, execute and follow up. Before the discussion begins you, the teacher must make sure that every one is properly prepared. During the class’s first experiences with real discussion you will have to act as moderator. All times you will need to act as supervisor and observer. In roles, please make sure that the problem to be discussed is properly defined. Characteristics of a good discussion: 1. A discussion is a purposeful conversation proceeding toward some goal, 2. The topic presented must be discussible, 3. Though it is informal , it is always serious , 4. The teacher is merely a moderator , who supervises rather than directs the conversation, 5. All members of the group have a chance to express an opinion.",
+    "choices": [
+     "학생들은 먼저 그룹별로 토론을 연습한 후 선생님 지도 아래 발표하지 않는다",
+     "선생님은 학생들의 개별 수행을 평가하기 위해 수업 평가지를 사용하지 않는다",
+     "토론 시작 전 선생님은 모든 학생이 준비되었는지 확인하지 않는다",
+     "토론 초반에는 선생님이 중재자로서 역할을 수행해야 한다",
+     "토론에서 선생님은 학생들을 감독하고 관찰하는 역할을 맡지 않는다"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'Ask the groups to discuss each exercise first among themselves and then orally under your supervision'라고 하여 그룹별로 토론을 연습한 후 선생님 지도 아래 발표한다고 하였으므로, '발표하지 않는다'는 오독입니다. → 처방: 선생님 지도 아래 발표한다는 점을 정확히 읽고, '발표하지 않는다'는 반대의 뜻을 가진 표현임을 확인하세요.\n② 진단: 지문에서 'Evaluate your students’ competence through the use of the lesson and unit evaluation in which they have to perform individually'라고 하여 개별 수행을 평가한다고 하였으므로, '사용하지 않는다'는 오독입니다. → 처방: 개별 수행을 평가한다는 점을 정확히 읽고, '사용하지 않는다'는 반대의 뜻을 가진 표현임을 확인하세요.\n③ 진단: 지문에서 'Before the discussion begins you, the teacher must make sure that every one is properly prepared'라고 하여 토론 시작 전 모든 학생이 준비되었는지 확인한다고 하였으므로, '확인하지 않는다'는 오독입니다. → 처방: 토론 시작 전 모든 학생이 준비되었는지 확인한다는 점을 정확히 읽고, '확인하지 않는다'는 반대의 뜻을 가진 표현임을 확인하세요.\n⑤ 진단: 지문에서 'All times you will need to act as supervisor and observer'라고 하여 선생님이 학생들을 감독하고 관찰하는 역할을 맡는다고 하였으므로, '맡지 않는다'는 오독입니다. → 처방: 선생님이 학생들을 감독하고 관찰하는 역할을 맡는다는 점을 정확히 읽고, '맡지 않는다'는 반대의 뜻을 가진 표현임을 확인하세요.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-30T18:48:57.689Z",
    "type": "제목",
@@ -286,75 +354,6 @@
     ],
     "answer": 2,
     "explanation": "(A) coordination / (B) theory 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 학생은 'constituency(구성체)'라는 용어를 'coordination(동일 구조 결합)'과 혼동했을 가능성이 크다. 지문에서 RNR 구조의 'coordination'은 겉보기 현상에 불과하며, 이것이 constituents(구성체)임을 증명하지 못한다고 명시되어 있다. → 처방: 용어의 의미를 정확히 구분하고, 지문에서 'coordination'과 'constituency'가 어떻게 다른지 다시 한 번 확인할 것.\n③ 진단: 학생은 'modification(수식)'이라는 단어를 'coordination(동일 구조 결합)'의 의미로 오해했을 수 있다. 지문은 RNR 구조에서 동일 구조가 결합되는 현상을 다루며, 이것이 constituents 를 증명하지 못한다고 설명한다. → 처방: 지문에서 'coordination'의 의미를 정확히 이해하고, 'modification'과 같은 다른 문법 용어와의 차이를 명확히 구분할 것.\n④ 진단: 학생은 'ambiguity(모호성)'을 'coordination(동일 구조 결합)'의 의미로 오해했을 가능성이 있다. 지문은 RNR 구조에서 겉보기 coordination 이 constituents 임을 부정하는 논리를 전개한다. → 처방: 지문의 핵심 논리를 파악하고, 'ambiguity'와 같은 다른 개념이 아니라 'coordination' 자체에 주목할 것.\n⑤ 진단: 학생은 'representation(표상)'을 'coordination(동일 구조 결합)'으로 오해했을 수 있다. 지문은 RNR 구조의 coordination 이 constituents 임을 부정하는 이유와 관련하여 'general structure(일반 구조)'를 언급한다. → 처방: 지문에서 'representation'이 아닌 'coordination'과 'constituency'의 관계를 정확히 이해하고, 'representation'은 constituents 의 구조적 표상과 관련됨을 기억할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-30T03:32:27.689Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that these strings are constituents. However, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? In Section 13. 7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an Adjunct. [ ]",
-    "choices": [
-     "The two possible structures of the VP 'eat the pizza naked' are discussed in Section 13.7.",
-     "The VP 'eat the pizza naked' cannot be analyzed structurally in (i) or (ii) without additional context.",
-     "The VP 'eat the pizza naked' has only one possible structure, as shown in (i).",
-     "Two alternative syntactic structures for the VP 'eat the pizza naked' are illustrated in (i) and (ii).",
-     "The VP 'eat the pizza naked' reveals that adjuncts must always follow complements in syntactic trees."
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 원문 'The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'eat the pizza naked'의 두 가지 구조가 (i)와 (ii)에서 논의된다는 직접적인 언급이 없음에도, 학생이 Section 13.7에 언급된 'eat the pizza naked'의 두 구조를 'Section 13.7에서 다룬다'고 오해한 것으로 보임. → 처방: 문제를 풀기 전에 지문 전체를 꼼꼼히 읽고, 빈칸 앞뒤 문장(Section 13.7의 내용과 (i)·(ii)의 예시 구조 언급)이 'eat the pizza naked'의 구조 분석과 직접 연결되는지 확인할 것.\n② 진단: 지문에서 '(i)와 (ii)'가 'eat the pizza naked'의 두 구조를 가리키는 예시라는 점을 놓치고, '추가적인 문맥 없이 분석할 수 없다'고 오독한 것으로 보임. 지문은 구조 분석의 가능성을 (i)·(ii)에서 제시하고 있음. → 처방: 빈칸 앞뒤의 '(i)·(ii)'가 구조 예시임을 인지하고, 그 예시가 'eat the pizza naked'의 두 구조를 보여준다는 점을 명확히 파악할 것.\n③ 진단: 지문에서 '(i)·(ii)'가 두 구조를 대조하는 예시로 제시된다는 점을 무시하고, '오직 한 가지 구조만 있다'고 단정지은 것으로 보임. 지문은 두 구조의 대조를 통해 문제를 해결하고자 함. → 처방: 지문의 논리 흐름을 따라가며 '(i)·(ii)'가 서로 다른 두 구조를 보여주는 예시임을 확인하고, 그 대조를 통해 문제의 해결책을 찾도록 노력할 것.\n⑤ 진단: 지문에서 'adjuncts must always follow complements'라는 절대적인 규칙을 언급하지 않음에도, 학생이 그러한 규칙이 있다고 오해하고 '반드시 보조사가 보어 뒤에 온다'고 잘못 적용한 것으로 보임. → 처방: 지문의 문맥을 정확히 읽고, '반드시 ~하다'라는 절대적인 표현이 지문에 있는지 확인한 후, 그러한 표현이 없으면 그 선지를 배제할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-30T03:33:02.250Z",
-   "type": "지칭추론",
-   "level": "중",
-   "audit": "밑줄·정답 코드검증(대명사 구절 원문 매칭)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
-    "passage": "In these sentences ⓐ<u>it may appear to</u> be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that ⓑ<u>these strings are</u> constituents. However, this cannot be correct, i.e. ⓒ<u>these strings cannot</u> be constituents, if the general structure ⓓ<u>we’ve posited for</u> sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC ⓔ<u>we saw that</u> Subject-related adjective phrases are inside the VP, as in (65). We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an Adjunct. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ는 'Frank'를 가리키고, 나머지 넷은 '일반 구조(we)'를 가리킨다.\n[오답 진단·처방]\n① 진단: ⓐ는 'RNR(연쇄제거규칙)'로 인해 새로운 구조가 생겨났다는 설명에 초점을 맞추고 있지만, ⓑⓒⓓ는 'Frank washed' 등 문자열이 구성체인지 여부를 논하는 부분으로 주제가 다르다. 학생은 문장 전체 흐름을 보지 못하고 표면적인 단어만 보고 오독했을 가능성이 크다. → 처방: 문제 유형(‘대상 찾기’)을 먼저 확인하고, 각 표식의 문맥적 역할(설명·예시·논증 등)을 구분해서 읽기.\n② 진단: ⓑ는 'Frank washed' 등 문자열이 구성체로 보인다는 주장을 담고 있지만, ⓐⓒⓓ는 그 주장의 옳음/틀림을 논하는 부분으로 주제가 같다. 학생은 ‘주장’의 방향(긍정/부정)을 혼동했을 수 있다. → 처방: ‘~이다’, ‘~아니다’ 등 주장의 극성을 표시하는 동사/형용사에 밑줄 긋고, 같은 극성을 가진 문장끼리 묶어 읽기.\n③ 진단: ⓒ는 ‘Frank washed’ 등이 구성체가 될 수 없다고 주장하는 부분으로, ⓐⓑⓓ의 ‘구성체 가능성’ 논의와 주제가 같다. 학생은 ‘불가능’이라는 부정 표현을 무시하고 ‘구성체’만 보고 오독했을 가능성이 있다. → 처방: ‘~아니다’, ‘~불가능하다’ 등 부정 표현이 나올 때마다 문장 전체를 반대로 뒤집어 해석해 보기.\n④ 진단: ⓓ는 우리가 가정했던 문장 구조가 옳다면 구성체가 될 수 없다는 이유를 설명하는 부분으로, ⓐⓑⓒ와 같은 ‘구성체’ 논의와 주제가 같다. 학생은 ‘이유 설명’ 부분을 ‘예시’로 오해했을 수 있다. → 처방: ‘왜냐하면’, ‘~때문에’ 등 이유 표시 어구를 찾아, 그 뒤에 오는 설명을 먼저 읽고 나서 앞의 주장을 다시 확인하기.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
