@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-29T23:19:21.876Z",
+ "updated": "2026-07-30T03:34:07.508Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-30T03:33:34.210Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'because' 이후에 명사구(animals, nature)가 오는 경우, 동사(affect, is breaking)가 단수형으로 오기보다는 복수형으로 오는 패턴이 빈번함을 확인했다. 또한 접속사 생략이 오류로 이어지는 경우가 많다.",
+   "rule": "'because + 명사구' 뒤에는 동사가 복수형(are/is → are)으로 오며, 접속사(and, but 등)는 문장 내 논리적 연결을 위해 필수적으로 삽입한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-29T23:18:56.239Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "영어 문법 오류가 주로 소유·표현·노출 관련 동사(be in possession of, express feelings, get exposure)와 전치사/관사 오류에서 발생하며, 한국어 번역 오류로 인한 직역체 표현이 다수 포함된다.",
    "rule": "CEFR B1 수준 내신 출제 시, 소유·표현·노출 관련 동사(be in possession of, express, show, get exposure 등)와 전치사(about, on, in) 사용 오류를 집중적으로 다룬 문항을 30% 이상 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-24T11:58:43.743Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'They say'나 'It gives'와 같은 주제-동사 구조는 종종 보조적 요소(예: 'in simple words', 'a lot of opportunity')가 문장 중간에 삽입되어 문법적 흐름을 방해하지 않도록 패턴화된다. 또한 'are'와 같은 상태동사는 관용적으로 'usually', 'often' 등 빈도를 나타내는 부사가 동반되는 경우가 많다.",
-   "rule": "주어+동사 구조에서 보조적 요소(삽입구, 부사 등)가 삽입될 경우, 쉼표(,)로 분리하여 문법적 명확성을 유지하라. 또한 상태동사('are', 'seem' 등)는 빈도부사('usually', 'often')와 함께 사용되는 패턴을 우선 적용하라.",
    "sample": [
     "old english",
     "university press",
