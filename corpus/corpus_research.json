@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-30T09:46:12.604Z",
+ "updated": "2026-07-30T12:08:06.428Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-30T12:07:37.460Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'thus making'와 'and like'는 문법적으로 비문법적 연쇄를 일으키며, 'have dealed'는 불규칙 동사 오용 패턴으로 빈번하다. 결과적으로 'plain to see'와 같은 자연스러운 연어 표현이 오답으로 기능한다.",
+   "rule": "'thus + V-ing' 구문은 문법적으로 부적절하므로, 'thus'를 생략하거나 'it makes'로 대체하는 오답을 반드시 1개씩 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-30T09:45:45.483Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'a lot of'가 복수명사와 결합할 때 동사는 복수형('are')이 기본이며, 'too ~ to' 구문은 'so ~ that'보다 자연스럽고, 'in fact'는 문두에 위치하는 경우가 많다.",
    "rule": "'a lot of + 복수명사' 뒤에는 동사 'are'를 사용하고, 'too ~ to' 구문으로 전환하여 문장을 간결하게 재구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-24T17:55:06.909Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'no evidence of'와 같은 부정 표현 뒤에는 불가산명사(uncountable noun)가 오는 패턴이 빈번하며, 'spend time on'보다는 'spend time ~ing'가 자연스러운 연어(collocation)로 나타났다.",
-   "rule": "'no evidence of' 뒤에는 불가산명사(예: life, water, change)가 오며, 'spend time' 뒤에는 동명사(-ing) 형태가 오는지를 검증하는 문항을 출제하라.",
    "sample": [
     "old english",
     "university press",
