@@ -1,6 +1,58 @@
 {
- "updated": "2026-07-30T22:22:38.309Z",
+ "updated": "2026-07-31T00:19:40.789Z",
  "samples": [
+  {
+   "ts": "2026-07-31T00:17:57.497Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "구성 요소 분석은 문장 내 구의 의미를 해체하여 문법적 의미를 도출하는 과정이 필수적이다",
+     "구성 요소 분석은 문장 내 특정 구가 직접 목적어 역할을 하는지 확인하는 데만 한정된다",
+     "모든 언어 현상은 구문 구조 분석만으로 그 의미를 완벽히 설명할 수 있다",
+     "구성 요소 분석은 문장 내 구가 하나의 단위로 기능하는지 여부를 판단하는 데 문법적 의미를 반드시 고려해야 한다",
+     "구성 요소 분석은 문장 내 구와 절이 하나의 단위로 기능하는지 확인하여 문장의 구문 구조를 규명하는 방법론이다"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'Constituent analysis determines the syntactic structure of a sentence by identifying phrases that function as single units.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Constituent analysis determines the syntactic structure of a sentence by identifying phrases that function as single units.]\n[오답 진단·처방]\n① 진단: ‘구성 요소 분석’이 ‘문의 의미를 해체하여 문법적 의미를 도출하는 과정’(①) 자체를 필수 과정으로 오해한 듯하다. 지문은 ‘구가 하나의 단위로 기능하는지’를 판단하는 데 ‘문법적 의미를 고려해야 한다’(4번)고 강조하지, 의미를 ‘해체하는 과정’이 필수라고 말하지 않는다. 예를 들어 (vi)~(vii)에서 ‘의미’를 고려해 구성 여부를 확인하지만, ‘의미 해체’가 목적이 아님을 지문은 보여준다. → 처방: ‘구성 요소 분석’이란 ‘구가 하나의 단위로 기능하는지’를 판단하는 방법임을 기억하고, 문법적 의미를 ‘고려하는 이유’를 먼저 떠올리자. ‘의미’를 해체하는 과정이 아니라 ‘의미를 바탕으로 구성 여부를 확인하는 과정’이라는 점을 명심하라.\n② 진단: ‘특정 구가 직접 목적어 역할을 하는지 확인하는 데만 한정된다’(②)고 오해한 듯하다. 지문은 (i)~(vii)에서 ‘구가 하나의 단위로 기능하는지’를 여러 문법적 테스트로 확인하고 있지만, ‘직접 목적어 역할 확인’이 유일한 목적은 아님을 (viii)~(ix)에서 보여준다. 예를 들어 (viii)는 ‘목적어 역할’과 무관한 ‘목표’의 의미를 다루고 있다. → 처방: ‘구성 요소 분석’이란 ‘구가 하나의 단위로 기능하는지’를 다양한 문법적 테스트로 확인하는 과정임을 기억하라. ‘직접 목적어 역할 확인’이 전부가 아님을 깨닫고, 테스트의 ‘목적’을 넓게 이해하자.\n③ 진단: ‘모든 언어 현상은 구문 구조 분석만으로 의미를 완벽히 설명할 수 있다’(③)고 오해한 듯하다. 지문은 ‘구가 하나의 단위로 기능하는지’를 문법적 테스트로 확인하는 데 중점을 두지만, ‘의미’를 ‘완벽히 설명할 수 있다’는 주장은 지문 어디에도 없다. 예를 들어 (viii)~(ix)는 ‘의미’를 고려하긴 하지만, ‘구문 구조 분석만으로’ 모든 의미를 설명할 수 있다고는 말하지 않는다. → 처방: ‘구문 구조 분석’이란 ‘구가 하나의 단위로 기능하는지’를 확인하는 방법임을 기억하라. ‘의미를 완벽히 설명할 수 있다’는 주장은 과장된 것이며, 지문은 ‘구성 여부’를 확인하는 데 초점을 맞추고 있음을 명심하라.\n⑤ 진단: ‘구와 절이 하나의 단위로 기능하는지 확인하여 문장의 구문 구조를 규명하는 방법론’(⑤)이라고 오해한 듯하다. 지문은 ‘구’가 하나의 단위로 기능하는지(예: Jim leaving the flat)를 확인하는 데 중점을 두고 있지만, ‘구와 절’을 모두 다루는 방법론은 아니다. 예를 들어 (viii)~(ix)는 ‘구’(Jim leaving the flat)를 다루지만, ‘절’의 예시는 없다. → 처방: ‘구성 요소 분석’이란 ‘구가 하나의 단위로 기능하는지’를 확인하는 방법임을 기억하라. ‘구와 절’을 모두 다루는 방법론이 아님을 깨닫고, ‘구’에 초점을 맞춰 문제를 해결하자."
+   }
+  },
+  {
+   "ts": "2026-07-31T00:19:13.485Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 짐이 플랫을 떠나는 것은 \"\n주어진 단어: ( leaving / direct / object )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Jim leaving the flat is the direct object of \"see. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-30T22:22:11.389Z",
    "type": "어법수정",
@@ -270,75 +322,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ①이 들어갈 자리에선 ‘The Garden Party’와 ‘The Culture of Cities’ 같은 문학·사회과학 서적이 나열되는데, ‘The Mind in the Making’이란 제목만으로도 ‘정신·사고’ 주제임을 짐작할 수 있어도, 앞뒤 서적의 주제나 성격이 맞지 않아 틀렸다. → 처방: ‘주제·장르·분야가 비슷한 책끼리 묶어 읽기’를 기본으로 삼아, 앞뒤 문맥의 흐름을 먼저 확인하고 그 자리에 어울리는지 판단하라.\n② 진단: ②이 들어갈 자리에선 ‘Man and Society in Calamity’(사회학·역사) 같은 학문적 서적이 오는데, ‘The Mind in the Making’이란 제목만으로는 학문적 성격이 명확하지 않아 혼란을 일으켰다. → 처방: ‘제목만 보고 판단하지 말고, 앞뒤 문장에 나오는 서적들의 주제·장르·분야를 비교하며 일관성을 확인하라’.\n④ 진단: ④가 들어갈 자리에선 ‘QOuo Vadimus?’(라틴어 제목, 학술적 성격) 같은 학문적 서적이 오는데, ‘The Mind in the Making’이란 제목이 학술서로 보이지 않아 오해했다. → 처방: ‘제목의 언어(한국어/영어/라틴어 등)나 장르(소설/자서전/학술서 등)를 먼저 구분한 뒤, 같은 장르의 서적이 나오는지 확인하라’.\n⑤ 진단: ⑤가 들어갈 자리에선 ‘Forty Years on Main Street’(자서전) 같은 개인적 경험을 다룬 서적이 오는데, ‘The Mind in the Making’이란 제목이 ‘개인 경험’보다는 ‘사고·지식’ 주제임을 떠올려 틀렸다. → 처방: ‘제목의 핵심 키워드(‘Mind’, ‘Making’ 등)를 분석해 어떤 주제를 다루는지 짐작한 뒤, 앞뒤 문장의 주제와 비교하라’.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-30T06:43:41.886Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "O PA Most uses of this complement type are phrases that allow relatively little substitution for the predicate adjective. For instance, in the four preceding examples of this complement type, each of the predicate adjectives will allow only a few other predicate adjectives to be used with that verb. Consider the ﬁ rst example: <u>He drives me crazy.</u> We can substitute only a few close synonyms for crazy. For example: He drives me mad. He drives me nuts. Now consider the second example: The proposal left us cold. About the only obvious substitute for cold is lukewarm: The proposal left us lukewarm. The same is true of the remaining two examples. We can substitute only guilty for innocent in the third example. In the fourth example, we can substitute only words for describing meat (such as rare, well done, juicy, and pink) for medium-rare. A list of the most commonly used verbs that take an object + adjective phrase complement follows. Since this complement type is so idiomatic, an example is included with each verb.",
-    "choices": [
-     "His behavior is so infuriating that it makes her lose her temper instantly.",
-     "This phrase implies that someone's actions cause another person to lose emotional control or become extremely frustrated.",
-     "She gets upset whenever he interrupts her during a serious conversation.",
-     "He often says things that bother her, but only in a mild way.",
-     "He occasionally does things that slightly irritate her, but never to an extreme degree."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'This phrase implies that someone's actions cause another person to lose emotional control or become extremely frustrated.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘He drives me crazy’를 ‘그의 행동이 그녀를 참지 못하게 만든다’로만 해석해 ‘즉각 화를 내게 한다’는 ‘lose her temper instantly’를 오독했다. 지문은 ‘감정적 통제 상실’을 강조하지 ‘즉각성’을 언급하지 않는다. → 처방: ‘~를 crazy/mad/nuts 로 만든다’는 ‘~를 몹시 화나게 한다’는 뜻임을 기억하고, ‘즉각’이라는 시간 강조는 무시하라.\n③ 진단: ‘He drives me crazy’를 ‘그가 대화를 방해할 때 그녀가 화낸다’는 ‘interrupts during a conversation’로 오해했다. 지문은 ‘감정 상태 변화’를 핵심으로 삼고 ‘방해’ 같은 구체적 행동은 언급하지 않는다. → 처방: ‘~를 crazy/mad/nuts 로 만든다’는 ‘감정 상태’를 변화시키는 구문임을 떠올리고, 행동 묘사는 무시하라.\n④ 진단: ‘mild way’나 ‘slightly irritate’를 보고 ‘약간 화나게 한다’는 뜻으로만 해석했다. 지문은 ‘극단적 분노’를 뜻하는 ‘crazy/mad/nuts’를 ‘mild’로 축소해 오독했다. → 처방: ‘crazy/mad/nuts’는 ‘극단적 감정’을 나타내는 표현임을 기억하고, ‘mild’ 같은 완화어는 무시하라.\n⑤ 진단: ‘occasionally’나 ‘slightly’를 보고 ‘가끔 약하게 화나게 한다’는 뜻으로만 이해했다. 지문은 ‘감정의 극단적 변화’를 뜻하는 구문임을 오해했다. → 처방: ‘~를 crazy/mad/nuts 로 만든다’는 ‘감정의 극단적 변화’를 뜻함을 떠올리고, ‘가끔’이나 ‘약하게’는 무시하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-30T06:44:58.576Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 2건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "complement types restrict predicate adjective choice to a few synonyms",
-     "complement types limit predicate adjectives to just one synonym",
-     "predicate adjectives are chosen freely without restriction from complement types",
-     "complement types allow most synonyms to modify predicate adjectives",
-     "complement types determine the exact number of synonyms for predicate adjectives"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'This complement type allows only a few close synonyms for the predicate adjective.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 지문에서 'a few'과 'only a few'이라는 표현을 'just one'으로 오해했거나, 'close synonyms'를 'only one synonym'으로 축소해 읽었다. → 처방: 지문에서 'a few'이나 'only a few'이란 표현은 '몇몇'을 뜻하니, '단 하나'가 아니라 '소수'라는 점을 정확히 파악해라.\n③ 진단: 지문의 'relatively little substitution'이나 'only a few'을 '자유롭게 선택'으로 잘못 해석해, 제한이 없다는 뜻으로 오독했다. → 처방: 지문에서 'substitution'이 제한된다는 말은 곧 '선택의 폭이 좁다'는 뜻이니, '자유롭다'는 오해를 버려라.\n④ 진단: 'most synonyms'라는 표현을 '가장 많은 동의어'로 받아들여, 지문의 'idiomatic'한 제한을 무시하고 '많은 선택지'로 오해했다. → 처방: 지문에서 'most uses'는 '대부분의 경우'를 뜻하니, 동의어 선택이 '자유롭다'가 아니라 '제한적'이라는 점을 기억해라.\n⑤ 진단: 지문의 'a few'이나 'only a few'을 '정확한 수'로 오해해, 'exact number'라는 선지를 선택했다. → 처방: 지문은 '몇몇'이라는 개략적인 수를 언급하니, '정확한 수'라는 표현은 오해의 소지가 있으니 주의해라.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: This complement type allows only a few close synonyms for the predicate adjective.]"
    }
   }
  ]
