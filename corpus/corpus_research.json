@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-31T00:19:40.785Z",
+ "updated": "2026-07-31T03:57:20.900Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-31T03:56:52.600Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "복수형 오류는 '-s' 접미사 추가가 아니라 불규칙 복수형(elders→elders는 틀린 표현)으로 처리해야 하며, 'a number of diverse other courses'에서 'diverse'는 'other' 앞에 위치하는 것이 자연스럽다.",
+   "rule": "복수형 오류는 '-s' 접미사 추가가 아니라 불규칙 복수형(예: elder→elders, child→children)이나 복수형 자체의 오류(예: olders→elders)로 수정해야 하며, 'a number of' 구문에서는 'diverse'와 같은 한정사가 'other' 앞에 오도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-31T00:19:15.388Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'explain about that' → 'explain what'와 같이 전치사+that 절이 'explain'의 직접목적어로 잘못 사용되는 오류가 반복된다. 또한 'for this reasons' → 'for these reasons'처럼 복수형 명사의 수 일치 오류도 빈번하다.",
    "rule": "'explain', 'indicate', 'say' 등 보고·설명·제안 동사 뒤에 오는 that 절은 전치사 없이 직접 연결하며, 복수형 명사 뒤에는 'these/those'를 사용하도록 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-25T10:48:41.722Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거시제와 현재시제의 혼용, 소유격의 오용, 관사의 누락이 빈번한 오류 패턴으로 나타났다. 특히 'it'의 생략이나 'be' 동사의 누락이 문법적 일관성을 깨는 주요 원인으로 확인되었다.",
-   "rule": "CEFR B1 수준 내신 문항에서 주어와 동사의 시제 일치(present/past)를 의무화하고, 소유격·관사의 오류(its → it's, alot → a lot, the → a/the) 및 문장 구조의 단순화를 요구하는 문제를 100% 포함하라.",
    "sample": [
     "old english",
     "university press",

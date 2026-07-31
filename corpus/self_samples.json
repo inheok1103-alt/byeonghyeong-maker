@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-31T00:19:40.789Z",
+ "updated": "2026-07-31T03:57:20.904Z",
  "samples": [
+  {
+   "ts": "2026-07-31T03:56:09.153Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 2번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Case Constraints Govern All Syntactic Movement",
+     "Case-Marked Movement as Syntax’s Core Constraint",
+     "Case Assignment Dictates Syntax, Not the Reverse",
+     "Movement Occurs Only When Case-Marking Permits",
+     "Case-Marking Principles Rarely Shape Syntactic Operations"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'MUST: Movement in syntax follows case-marking constraints.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: 지문은 'case-marked nominal'의 움직임이 'case-marked' 여부에 따라 제한된다는 점을 강조하지만, 모든 움직임이 'case constraint'에 의해 통제된다고 보지는 않는다. 특히 'already the highest non-head constituent' 같은 조건을 언급하며 제한적임을 밝힌다. → 처방: 지문의 핵심 논점('case-marked movement 가 syntax 의 핵심 제약이다')을 정확히 짚고, '모든 움직임'이라는 과장된 표현을 경계하라.\n③ 진단: 지문은 'case assignment'가 syntax 를 좌우한다고 설명하지 않는다. 오히려 'case assignment'가 movement 의 가능성을 결정짓는 '제약 조건'으로 작용한다고 서술하며, syntax 가 case assignment 를 따르지 않음을 암시한다. → 처방: 'Dictate'라는 단어가 주는 '강제적 우위'를 오해하지 말고, 지문의 '제약' 역할을 정확히 이해하라.\n④ 진단: 지문은 'case-marking permits movement'라는 단순 논리로 모든 움직임을 설명하지 않는다. 오히려 'nominal 이 이미 highest constituent 라면 움직임이 일어나지 않는다'는 조건을 제시하며, 'permit'이라는 용어가 지나치게 포괄적임을 지적한다. → 처방: 'Permit'이라는 단어가 주는 '무조건적 허용'을 오해하지 말고, 지문의 '조건부 허용'을 정확히 파악하라.\n⑤ 진단: 지문은 'case-marking principles'가 syntax 의 움직임에 'rarely' 영향을 미친다고 설명하지 않는다. 오히려 'case assignment'가 movement 의 핵심 제약으로 기능한다고 명시하며, 'rarely'라는 표현은 지문의 의도와 반대된다. → 처방: 'Rarely'라는 부정적 표현을 오해하지 말고, 지문의 '핵심 제약' 역할을 정확히 인식하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: MUST: Movement in syntax follows case-marking constraints.]"
+   }
+  },
+  {
+   "ts": "2026-07-31T03:56:50.658Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 20 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'light-verb', 'unergative', 'underlying' / 18~22단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] I believe the light-verb analysis can also explain unergative verbs by treating their subjects as derived from underlying transitive structures.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 18~22단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-07-31T00:17:57.497Z",
    "type": "요지",
@@ -262,66 +316,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] These strings cannot be constituents under our assumed sentence structure. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-30T12:06:20.461Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "But you can ⓐ<u>usually</u> work those topics into a subject: ✓ The most ⓑ<u>important</u> feature of a vigorous style is a short, ­concrete subject followed by a forceful verb. ✓ China has long ⓒ<u>surpassed</u> Japan’s industrial development. Hedges and Intensifiers Another kind of metadiscourse reflects the writer’s ⓓ<u>certainty</u> about what she is claiming. Hedges qualify your certainty; intensifiers ­ⓔ<u>decrease</u> it. Both can be redundant when used excessively. But they can also be useful, because they signal how well you balance caution and confidence and therefore influence how readers judge your character. Hedges These are common hedges: Adverbs usually, often, sometimes, almost, virtually, possibly, ­allegedly, arguably, perhaps, apparently, in some ways, to a certain extent, somewhat, in some/certain respects Adjectives most, many, some, a certain number of Verbs may, might, can, could, seem, tend, appear, suggest, indicate Too much hedging sounds mealy-mouthed, like this:",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ: 문맥상 'increase'가 와야 하는데 'decrease'가 쓰여 부적절하다 — 글은 '강화어(intensifiers)'가 작가의 확신을 '증가시킨다'고 명시적으로 정의하고 있으므로, '감소시킨다'는 문맥상 강화어의 기능에 대한 설명과 직접적으로 모순된다.. [극성] 정답=확신 강화 ↔ 오답=확신 약화\n[오답 진단·처방]\n① 진단: 학생은 'usually'가 완충어(hedge)의 한 종류로, 글쓴이의 주장에 대한 확신의 정도를 조절하는 역할을 한다는 점을 간과했습니다. 지문에서 'Adverbs usually, often, sometimes...' 부분에서 'usually'가 완충어의 예시로 제시되어 있습니다. → 처방: 완충어(hedge)의 목록과 그 역할을 정확히 이해하고, 문맥 속에서 글쓴이의 의도를 파악하는 연습을 하세요.\n② 진단: 학생은 'important'가 문장의 핵심 특징을 강조하는 일반적인 형용사로 쓰였음을 오해하고, 완충어나 강조어의 개념과 혼동했을 수 있습니다. 지문은 '가장 중요한 특징'을 설명하고 있습니다. → 처방: 특정 대상의 속성이나 중요성을 나타내는 일반적인 낱말과, 글쓴이의 확신 정도를 조절하는 완충어/강조어를 구분하여 이해하세요.\n③ 진단: 학생은 'surpassed'가 '능가했다'는 뜻으로, 특정 사실 관계를 전달하는 동사임을 파악하지 못하고, 문맥상 의미를 잘못 해석했을 수 있습니다. 지문은 중국이 일본의 산업 발전을 능가했다는 사실을 제시합니다. → 처방: 동사의 정확한 의미를 숙지하고, 문장이 전달하는 사실적 내용을 중심으로 문맥을 이해하는 데 집중하세요.\n④ 진단: 학생은 'certainty'가 글쓴이의 주장에 대한 '확신'을 의미하며, 완충어와 강조어의 개념을 설명하는 데 필수적인 핵심어라는 점을 놓쳤습니다. 지문은 '글쓴이의 확신'을 완충어와 강조어가 반영한다고 설명합니다. → 처방: 글의 도입부에서 제시되는 핵심 개념어의 정의와 역할을 명확히 이해하고, 그 단어가 글 전체에서 어떤 의미로 사용되는지 파악하세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-30T09:44:30.326Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] Clarence Streit’s Union Now (Cape).\n\nXvi ACKNOWLEDGMENTS Kasner and Newman’s Mathematics and the Imagination (Simon and Schuster). Liebling’s The Wayward Pressman. Katherine Mansfield’s The Garden Party (Constable). Jules Masserman’s Principles of Dynamic Psychiatry (Saunders). Charles Morris’s Signs, Language and Bebhaviowr (Prentice-Hall). Lewis Mumford’s The Culture of Cities (Secker & Warburg) Jawaharlal Nehru’s Autobiography (Lane). Ogden and Richard’s The Meaning of Meaning (Kegan Paul). Jean Piaget’s The Child’s Conception of the World (Kegan Paul). ( ① ) James Harvey Robinson’s The Mind in the Making (Harper). ( ② ) Sorokin’s Man and Society in Calamity (Dutton). ( ③ ) Wellek and Warren’s Theory of Literature (Harcourt, Brace). ( ④ ) White’s QOuo Vadimus? ( ⑤ ) William Allen White’s Forty Years on Main Street (Rinehart). Lee Wulff’s The Handbook of Freshwater Fishing (Lippincott). Lin Yutang’s The Wisdom of Confucius. And articles in the Chicago Sun-Times, New Masses, The Mation, New Republic, New Statesman and Nation, Pittsburgh Courier, and the Political Science Quarterly.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ①이 들어갈 자리에선 ‘The Garden Party’와 ‘The Culture of Cities’ 같은 문학·사회과학 서적이 나열되는데, ‘The Mind in the Making’이란 제목만으로도 ‘정신·사고’ 주제임을 짐작할 수 있어도, 앞뒤 서적의 주제나 성격이 맞지 않아 틀렸다. → 처방: ‘주제·장르·분야가 비슷한 책끼리 묶어 읽기’를 기본으로 삼아, 앞뒤 문맥의 흐름을 먼저 확인하고 그 자리에 어울리는지 판단하라.\n② 진단: ②이 들어갈 자리에선 ‘Man and Society in Calamity’(사회학·역사) 같은 학문적 서적이 오는데, ‘The Mind in the Making’이란 제목만으로는 학문적 성격이 명확하지 않아 혼란을 일으켰다. → 처방: ‘제목만 보고 판단하지 말고, 앞뒤 문장에 나오는 서적들의 주제·장르·분야를 비교하며 일관성을 확인하라’.\n④ 진단: ④가 들어갈 자리에선 ‘QOuo Vadimus?’(라틴어 제목, 학술적 성격) 같은 학문적 서적이 오는데, ‘The Mind in the Making’이란 제목이 학술서로 보이지 않아 오해했다. → 처방: ‘제목의 언어(한국어/영어/라틴어 등)나 장르(소설/자서전/학술서 등)를 먼저 구분한 뒤, 같은 장르의 서적이 나오는지 확인하라’.\n⑤ 진단: ⑤가 들어갈 자리에선 ‘Forty Years on Main Street’(자서전) 같은 개인적 경험을 다룬 서적이 오는데, ‘The Mind in the Making’이란 제목이 ‘개인 경험’보다는 ‘사고·지식’ 주제임을 떠올려 틀렸다. → 처방: ‘제목의 핵심 키워드(‘Mind’, ‘Making’ 등)를 분석해 어떤 주제를 다루는지 짐작한 뒤, 앞뒤 문장의 주제와 비교하라’.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
