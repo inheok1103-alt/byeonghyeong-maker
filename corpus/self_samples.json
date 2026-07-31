@@ -1,6 +1,42 @@
 {
- "updated": "2026-07-31T10:03:36.249Z",
+ "updated": "2026-07-31T12:21:16.110Z",
  "samples": [
+  {
+   "ts": "2026-07-31T12:19:06.718Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Infinitival to (by virtue of being the head of the overall structure and being active) serves as a probe and identifies both there and several prizes as active goals (there being active by virtue of its uninterpretable person feature, and several prizes by virtue of its uninterpretable case feature). Person agreement between the probe (A) [to and their / to and its] two third-person goals (there and several prizes) results in the unvalued person feature on to (B) [being valued / being value] as third-person via (7) and deleted via (13). The unvalued case-feature on the goal several prizes cannot be valued or deleted by infinitival to, given our earlier assumption that to is a defective probe which (C) [cannot value / can values] or delete an unvalued case feature on a goal. But what about the uninterpretable person feature on expletive there? If this gets deleted at this point, there will be inactivated at the end of the T-cycle, once it has moved to become the specifier of infinitival to: and this will wrongly predict that sentences such as the following should be grammatical:",
+    "choices": [
+     "(A) to and their - (B) being value - (C) can values",
+     "(A) to and its - (B) being value - (C) cannot value",
+     "(A) to and its - (B) being value - (C) can values",
+     "(A) to and their - (B) being value - (C) cannot value",
+     "(A) to and its - (B) being valued - (C) cannot value"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) to and its - (B) being valued - (C) cannot value. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'their'를 사용했으며, 'being value'와 'can values'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n② 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'its'를 사용했으며, 'being value'와 'cannot value'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n③ 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'its'를 사용했으며, 'being value'와 'can values'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n④ 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'their'를 사용했으며, 'being value'와 'cannot value'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-31T10:01:45.366Z",
    "type": "요지",
@@ -330,25 +366,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'GERMANIC ADJECTIVES INFLECT STRONG/WEAK BASED ON DEFINITE ARTICLE'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 '강한 굴절(strong)'과 '약한 굴절(weak)'의 규칙을 설명하는데, '정관사(der, die, das)'가 없을 때 강한 굴절이 일어난다고 명시되어 있으나, 선지는 '정관사가 없을 때'만 강조하여 나머지 경우(정관사가 있을 때)도 고려해야 한다는 점을 간과함. → 처방: 문제를 풀 때는 '정관사의 유무'뿐만 아니라 '강한/약한 굴절의 전체 규칙'을 함께 떠올리며 답을 찾아야 함.\n③ 진단: 지문은 '정관사의 유무'가 형용사의 굴절을 결정한다고 설명하지만, 선지는 '명사의 성'을 기준으로 굴절한다고 오해하여 지문의 핵심 내용과 다르게 이해함. → 처방: 형용사의 굴절 규칙을 설명할 때는 '정관사'와 '강한/약한 굴절'을 먼저 떠올리고, '명사의 성'은 그 결과에 영향을 주는 요소일 뿐이라는 점을 기억할 것.\n④ 진단: 지문은 '정관사가 있을 때 약한 굴절, 없을 때 강한 굴절'이라고 설명하지만, 선지는 '모든' 형용사가 정관사에 따라 굴절한다고 과장하여 표현하여 오류가 발생함. → 처방: 문제를 풀 때는 '모든'이라는 절대적 표현이 있는지 확인하고, 지문의 '일반적 규칙'과 '예외'를 구분하여 답을 선택할 것.\n⑤ 진단: 지문은 정관사의 유무가 형용사의 굴절을 결정한다고 설명하지만, 선지는 '드물게'라는 표현을 사용하여 지문의 핵심 규칙을 무시하고 오해함. → 처방: 형용사의 굴절 규칙은 '정관사의 유무'에 따라 '일반적'으로 결정된다는 점을 기억하고, '드물게'라는 단어가 등장하지 않는다는 점을 확인할 것.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: GERMANIC ADJECTIVES INFLECT STRONG/WEAK BASED ON DEFINITE ARTICLE]"
-   }
-  },
-  {
-   "ts": "2026-07-30T18:49:43.467Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 19 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'inflection', 'adjective', 'languages' / 17~21단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Strong or weak adjective inflection in Germanic languages generally depends on the presence or absence of the definite article.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
