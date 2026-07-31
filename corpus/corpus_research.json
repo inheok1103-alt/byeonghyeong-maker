@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-31T15:33:11.937Z",
+ "updated": "2026-07-31T17:56:44.908Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-31T17:56:16.937Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'not only A, so B' 구조에서 'so'는 인과관계가 아닌 병렬·보완관계를 나타내야 하며, 'A'와 'B'는 문법적·의미적으로 대등해야 한다. 또한 'another'는 단수 가산명사와 함께 쓰이며, 'grow up'은 성장·발달의 의미를 지닌 자동사로, 'grow'는 단순 변화 동사로 대체되어야 한다.",
+   "rule": "'not only A, so B' 구조에서 'so'를 'and' 또는 'thus'로 대체하거나, 'so'를 삭제하고 문장을 재구성하여 인과관계가 자연스럽게 연결되도록 하라. 또한 'another + 단수명사'와 'grow up' 대신 'grow'를 사용하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-31T15:32:12.666Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'there + be' 구문에서 단수/복수 오류가 빈번하며, 'to'의 부적절한 사용(목적·결과 관계 오류)이 다수 확인된다.",
    "rule": "'there is/are' 구문에서 단수/복수 주어를 'there' 뒤에 배치할 때, 반드시 명사의 수 일치를 확인하여 'there is' (단수) 또는 'there are' (복수) 중 하나를 선택하도록 문항을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-25T19:37:11.350Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'the + 단수명사'가 관용적·일반화된 표현으로 빈번히 사용됨을 확인. 특히 'the + 언어명'(e.g., the Persian language), 'the + 학문명'(e.g., the English grammar), 'the + 고유명사'(e.g., the New York) 패턴이 두드러짐.",
-   "rule": "원어민 스타일로 자연스러운 문장을 만들기 위해, 특정 언어·학문·고유명사 앞에는 반드시 정관사 'the'를 붙인다. 단, 언어명은 복수형(languages)이나 'a/an'을 쓸 수 있는 경우(예: a new language) 제외.",
    "sample": [
     "old english",
     "university press",
