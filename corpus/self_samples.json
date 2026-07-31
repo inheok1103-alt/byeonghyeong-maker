@@ -1,6 +1,42 @@
 {
- "updated": "2026-07-31T07:18:40.494Z",
+ "updated": "2026-07-31T10:03:36.249Z",
  "samples": [
+  {
+   "ts": "2026-07-31T10:01:45.366Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": -1,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어 문법 변이형은 문맥과 의미를 결정짓는 구조적 핵심 요소로 작용한다",
+     "영어 문법 변이형은 특정 대명사나 명사구에 국한되어 제한적으로 활용된다",
+     "모든 언어에서 문법 변이형이 문맥과 의미를 완벽히 반영하는 것은 아니다",
+     "영어 문법 변이형은 언제나 문맥과 의미를 동일하게 반영하는 규칙을 따른다",
+     "영어 문법 변이형은 문맥과 의미를 반영하여 사용되며 체계적 분석이 필요하다"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The GSWE examines when and why structurally and semantically related grammatical variants are used.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘문맥과 의미를 결정짓는 구조적 핵심 요소’라는 말은 지문의 ‘문법적·담화적 요소’와 혼동한 것으로 보입니다. 지문은 변이형이 문맥과 의미를 ‘반영’한다고만 설명하지, ‘결정짓는’ 핵심 요소라고 말하지 않았습니다. → 처방: ‘결정짓는’ 같은 강한 표현은 지문에서 쓰지 않는다는 점을 기억하고, ‘반영’이나 ‘관련’ 같은 softer 한 표현을 찾도록 연습하세요.\n② 진단: ‘특정 대명사나 명사구에 국한되어’라는 말은 지문의 ‘다양한 명사구’(예: they, the gents) 예시를 무시한 것으로 보입니다. 지문은 변이형이 ‘여러 가지’로 나타난다고 했습니다. → 처방: ‘국한되어’라는 단어가 나오면 ‘다양한’이나 ‘여러 가지’ 같은 반대 표현을 떠올리며 지문을 다시 읽어보세요.\n③ 진단: ‘모든 언어’라는 말은 지문의 ‘영어’에만 초점을 맞춘 부분과 혼동한 것으로 보입니다. 지문은 영어에 대한 설명만 다루고, 다른 언어의 예는 없습니다. → 처방: ‘모든 언어’라는 표현이 나오면 ‘이 글은 영어에 대한 설명’이라는 점을 먼저 확인하고, 범위를 좁혀 읽어보세요.\n④ 진단: ‘언제나 규칙을 따른다는 말은 지문의 ‘체계적 분석이 필요하다’는 설명과 반대됩니다. 지문은 변이형이 ‘언제·왜’ 쓰이는지 분석해야 한다고 했습니다. → 처방: ‘언제나’라는 절대적 표현은 지문에서 ‘언제·왜’라는 조건적 표현과 대비된다는 점을 기억하고, 선지를 읽을 때 ‘절대’ vs ‘조건’을 구분하세요.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The GSWE examines when and why structurally and semantically related grammatical variants are used.]"
+   }
+  },
   {
    "ts": "2026-07-31T07:17:02.070Z",
    "type": "밑줄함의",
@@ -313,39 +349,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Strong or weak adjective inflection in Germanic languages generally depends on the presence or absence of the definite article.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-07-30T16:52:16.909Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.43,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] This comprises the full possible range of doghood.\n\n2 Possible worlds, extension and intension The term possible worlds is used in semantics for hypothetical ways reality might be or might have been. The way things actually are is the actual world, and it is included in the possible worlds because it is obviously a possible reality. A possible world different from the actual world is a whole alternative universe, not just an alternative version of Planet Earth. There are infinitely many possible worlds. ( ① ) Many possible worlds have dogs in them, which the word dog applies to. ( ② ) We can collect together all the dogs in the real world to form the set of all real dogs – this set is the extension of dog. ( ③ ) To get closer to what we think of as the ‘real meaning’ of the word dog we need the intension, which is the set of all dogs in all possible worlds. ( ④ ) So there are two kinds of denotation for predicates: (12) word (noun): dog ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘( ①)’ 앞 문장은 ‘무한히 많은 가능세계가 있다’는 내용인데, 주어진 문장은 ‘개가 될 수 있는 모든 가능성’을 뜻하여 맥락이 맞지 않는다. 학생은 ‘개가 포함된 가능세계’의 의미를 ‘개가 될 수 있는 모든 가능성’으로 과하게 확장해 오독했다. → 처방: ‘개가 포함된 가능세계’를 ‘개가 될 수 있는 모든 가능성’으로 해석하지 말고, 문맥상 ‘개가 포함된 가능세계의 집합’을 떠올려야 한다.\n② 진단: ‘( ②)’는 ‘단어 dog 가 적용되는 개들’을 모아 ‘실제 세계의 개 집합(확장)’을 설명하는 부분이다. 주어진 문장은 ‘개가 될 수 있는 모든 가능성’을 뜻하므로, ‘실제 세계’에 국한된 설명과 맞지 않는다. 학생은 ‘확장’의 의미를 ‘가능한 모든 개’로 혼동했다. → 처방: ‘확장’이란 ‘실제 세계에서 존재하는 개들’의 집합임을 기억하고, ‘가능한 모든 개’는 ‘의미(intension)’와 관련이 있음을 구분하라.\n③ 진단: ‘( ③)’는 ‘의미(intension)’를 설명하는 부분으로, ‘모든 가능세계의 개들’을 모은 집합을 뜻한다. 주어진 문장은 ‘개가 될 수 있는 모든 가능성’을 뜻하므로, ‘의미’의 정의와 거의 일치하지만, 문맥상 ‘의미’를 설명하는 문장이 더 자연스럽다. 학생은 ‘의미’와 ‘확장’을 혼동했을 수 있다. → 처방: ‘의미(intension)’는 ‘모든 가능세계의 개들’을 모은 집합임을 확실히 알고, ‘확장’과 구분하라.\n⑤ 진단: ‘( ⑤)’는 ‘단어 dog 의 두 가지 지시(denotation)’를 나열하는 부분으로, ‘단어 dog’의 지시가 ‘확장’과 ‘의미’라는 설명이 이미 끝난 상태다. 주어진 문장은 ‘개가 될 수 있는 모든 가능성’을 뜻하므로, 이 부분에 들어가기엔 문맥이 맞지 않는다. 학생은 ‘지시’의 의미를 ‘개가 될 수 있는 모든 가능성’으로 과하게 확장했다. → 처방: ‘지시(denotation)’란 ‘단어의 의미’를 가리키는 것이지, ‘개가 될 수 있는 모든 가능성’을 뜻하는 것이 아님을 기억하라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
