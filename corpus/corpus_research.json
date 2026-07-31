@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-31T17:56:44.908Z",
+ "updated": "2026-07-31T19:55:21.786Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-31T19:54:51.140Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거형 동사나 수동태가 과도하게 사용된 문장은 현재형·복수형으로 단순화하여 오류를 유도할 수 있으며, 특히 'most important doctor'처럼 불필요한 수식어는 'doctors'로 복수화하는 패턴이 빈번하다. 또한 'affect the ozone layer greatly'처럼 부사 위치가 어색한 경우, 'greatly affect'로 재배치하는 오류가 특징적이다.",
+   "rule": "'most important [단수명사]'나 'recommended for [단수명사]' 같은 문장은 'most important [복수명사]'나 'recommended for [복수명사]'로 변형하여 복수화 오류를 유도하라. 또한 'affect [명사] greatly'는 'greatly affect [명사]'로 재배치하는 오류를 반드시 포함시켜라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-31T17:56:16.937Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거시제 동사의 오용(choosed→chose)과 시제 혼동(are→could)이 빈번하며, 문장 구조의 단순화(Lastly, he chose...)가 난이도 조절에 효과적이다.",
    "rule": "과거시제 동사의 변형(예: choose→chose, write→wrote)이나 시제 혼동(are→could/would) 문제를 포함하는 문장을 내신에 출제할 때는, 오류를 수정하되 문장 구조는 간결하고 명확한 형태로 변형(예: 'Lastly, he chose...' → 'He finally chose...')하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-25T21:11:15.859Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'there + be' 구문에서 단수/복수 오류가 빈번하며, 'to'의 부적절한 사용(목적·결과 관계 오류)이 다수 확인된다.",
-   "rule": "'there is/are' 구문에서 단수/복수 주어를 'there' 뒤에 배치할 때, 반드시 명사의 수 일치를 확인하여 'there is' (단수) 또는 'there are' (복수) 중 하나를 선택하도록 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",
