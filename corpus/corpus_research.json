@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-31T19:55:21.786Z",
+ "updated": "2026-07-31T21:31:13.768Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-31T21:30:45.893Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거시제와 현재시제가 혼용된 문장에서 시제 일관성이 깨지거나, 관사 생략, 복수형 오류가 빈번하다는 패턴을 확인했다. 특히 'known'과 같은 과거분사 동사가 현재시제와 결합된 오류가 두드러진다.",
+   "rule": "'과거시제와 현재시제가 혼용된 문장(예: 'As we all known when we were out')은 반드시 'have/has + 과거분사'로 시제를 통일하고, 쉼표로 문장 구조를 분리하여 오류를 수정하라. 또한, 'a/an' 관사 생략이나 복수형 오류('fishes' → 'fish', 'another fishes' → 'other fish')가 있는 경우, 관사 추가 또는 복수형 수정을 필수적으로 적용하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-31T19:54:51.140Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'that절 + 동사' 구문은 주어가 3인칭 단수일 때 '-s'가 필수적으로 나타나며, 문맥상 의미가 중복되는 경우 세미콜론으로 분리하여 간결한 구조를 선호한다.",
    "rule": "원서 패턴을 반영하여, 'that + 주어 + 동사' 구문에서 주어(3인칭 단수)가 나오면 동사를 '-s' 형태로 강제 적용하고, 두 개의 독립절이 동일한 주제를 다루면 세미콜론(;)으로 연결하는 변형문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-25T22:15:30.879Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거시제 동사의 오용(choosed→chose)과 시제 혼동(are→could)이 빈번하며, 문장 구조의 단순화(Lastly, he chose...)가 난이도 조절에 효과적이다.",
-   "rule": "과거시제 동사의 변형(예: choose→chose, write→wrote)이나 시제 혼동(are→could/would) 문제를 포함하는 문장을 내신에 출제할 때는, 오류를 수정하되 문장 구조는 간결하고 명확한 형태로 변형(예: 'Lastly, he chose...' → 'He finally chose...')하도록 한다.",
    "sample": [
     "old english",
     "university press",
