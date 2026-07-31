@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-31T03:57:20.900Z",
+ "updated": "2026-07-31T07:18:40.490Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-31T07:18:09.890Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'형용사+명사' 구문의 경우, 'a/an' 관사 생략 오류가 빈번하며, 특히 'really' 같은 부사가 형용사 앞에 오면 관사 위치가 모호해진다. 또한 'take upon oneself'와 같은 숙어는 'take it upon oneself'로의 관용적 표현이 일반적이다.",
+   "rule": "'a/an' 관사는 형용사와 명사 사이에 반드시 위치하며, 'really'와 같은 강조 부사가 형용사 앞에 올 경우에도 관사 배치는 동일하게 적용된다. (예: 'a really good film' → 'It's a really good film.')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-31T03:56:52.600Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'someone'이나 'he/she'와 같은 인칭대명사가 반복될 때, 문법적 일관성(단수/복수, 시제, 태) 유지 실패가 빈번하다. 또한 'return'·'talent'·'groundless'와 같이 한국어와 어순/형태가 다른 영어 고유의 동사/형용사 사용에서 오류가 발생한다.",
    "rule": "CEFR B1 수준 이하의 문항에서 인칭대명사(he/she/they/it)와 동사(단수/복수, 시제) 또는 형용사(형용사형/부사형) 간의 일관성을 유지하지 않은 오류를 반드시 1개 이상 포함하도록 문장을 설계하라. 예: 'She know that he like her talent in dance' → 'She knows that he likes her talent in dancing'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-25T12:11:05.230Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'explain about that' → 'explain what'와 같이 전치사+that 절이 'explain'의 직접목적어로 잘못 사용되는 오류가 반복된다. 또한 'for this reasons' → 'for these reasons'처럼 복수형 명사의 수 일치 오류도 빈번하다.",
-   "rule": "'explain', 'indicate', 'say' 등 보고·설명·제안 동사 뒤에 오는 that 절은 전치사 없이 직접 연결하며, 복수형 명사 뒤에는 'these/those'를 사용하도록 오답지를 설계하라.",
    "sample": [
     "old english",
     "university press",
