@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-31T21:31:13.768Z",
+ "updated": "2026-07-31T23:19:27.370Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-31T23:18:48.622Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'for some reasons' → 'for various reasons'와 같이 특정 이유의 범위를 한정짓는 표현이 한국어 학습자들에게 자주 누락됨. 또한 'the one who take' → 'the ones who create'에서 단수/복수 혼동과 시제 오류가 빈번히 발생함.",
+   "rule": "'for [형용사] reasons' 구조(예: various, different, several 등)를 반드시 포함하도록 오류 유도 문제를 설계하며, 단수/복수 명사와 시제 일치를 철저히 검증하는 문장을 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-31T21:30:45.893Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'thereby'가 문장 중간에서 사용될 경우, 결과적 의미를 강조하는 'therefore'로 대체하는 오류 패턴이 빈번하다. 또한 'as much as successful'와 같이 연어 오류('as successful as')가 자연스러운 문법 오류로 활용된다.",
    "rule": "'thereby'가 결과적 의미를 나타내는 접속사 역할을 할 때는 'therefore'로 대체하여 오답지를 설계하라. 또한 'as [형용사] as' 구문을 오용한 'as much as [형용사]' 형태를 오답으로 제시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-25T23:20:58.437Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'that절 + 동사' 구문은 주어가 3인칭 단수일 때 '-s'가 필수적으로 나타나며, 문맥상 의미가 중복되는 경우 세미콜론으로 분리하여 간결한 구조를 선호한다.",
-   "rule": "원서 패턴을 반영하여, 'that + 주어 + 동사' 구문에서 주어(3인칭 단수)가 나오면 동사를 '-s' 형태로 강제 적용하고, 두 개의 독립절이 동일한 주제를 다루면 세미콜론(;)으로 연결하는 변형문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
