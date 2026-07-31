@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-31T12:21:16.105Z",
+ "updated": "2026-07-31T15:33:11.937Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-07-31T15:32:12.666Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 '형용사+명사' 패턴이 빈번하며, 특히 'a/an+형용사+명사' 구조가 강조됨. 또한, 'than'을 통한 비교 구문이 자주 등장해 비교급 오류가 빈발함.",
+   "rule": "'a/an+형용사+복수명사' 구조에서 복수명사가 오류 없이 쓰일 수 있도록, 출제 시 'a/an+형용사+복수명사'가 올바르게 쓰였는지 확인하고, 비교급에서는 'than'을 필수적으로 포함시켜 오류를 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-31T12:20:32.913Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'the + 단수명사'가 관용적·일반화된 표현으로 빈번히 사용됨을 확인. 특히 'the + 언어명'(e.g., the Persian language), 'the + 학문명'(e.g., the English grammar), 'the + 고유명사'(e.g., the New York) 패턴이 두드러짐.",
    "rule": "원어민 스타일로 자연스러운 문장을 만들기 위해, 특정 언어·학문·고유명사 앞에는 반드시 정관사 'the'를 붙인다. 단, 언어명은 복수형(languages)이나 'a/an'을 쓸 수 있는 경우(예: a new language) 제외.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-25T17:18:39.690Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'then'과 같은 부사적 접속사 뒤에는 콤마가 필요 없으나, 'from this'와 같이 전치사구로 사용된 경우 콤마가 필수적이다. 또한 'disagreed some ideas'와 같이 동사가 전치사 없이 직접 목적어를 취할 수 없음을 보여준다.",
-   "rule": "'From this', 'For this reason' 등 전치사구로 시작하는 문장에서는 반드시 콤마를 삽입하여 문법적 오류를 방지하라. 또한 동사 'agree/disagree'는 전치사 'with'를 필수적으로 요구함을 기억하고, 'want' 뒤에는 동사원형이 아닌 'to + 동사원형'이 와야 한다.",
    "sample": [
     "old english",
     "university press",
