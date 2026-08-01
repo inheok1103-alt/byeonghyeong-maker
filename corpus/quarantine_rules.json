@@ -1,7 +1,15 @@
 {
- "updated": "2026-08-01T13:59:17.571Z",
+ "updated": "2026-08-01T15:30:40.950Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 Sapir-Whorf 가설의 언어 결정론(예: \"사고가 언어에 의해 제한된다\")과 Modern English의 역사적 변화(Old English → Modern English, 예: Celts/노르만French의 영향)를 명확히 연계한 정답 선지와, 해당 지문의 핵심 오류(언어 결정론 부인,Celts/노르만French의 영향 부인,Old English의 현대 영어 동일성 주장 등)를 구체적이고 비중복·통일된 형태로 재구성한 오답 선지를 포함해야 한다.",
+   "src": "자가학습:혼합통합형",
+   "score": 78,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-01T15:29:36.029Z"
+  },
   {
    "rule": "선지의 길이를 줄이고, 어법 정확성을 높이며, 난이도 적정성을 고려하여 문제를 재구성하여야 한다.",
    "src": "자가학습:전체문장배열",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-25T12:10:50.975Z"
-  },
-  {
-   "rule": "지문 내 대명사('it'/'this'/'they')가 가리키는 구체적 대상을 문맥에 맞게 명시한 영어 표현으로만 정답을 구성하라.",
-   "src": "자가학습:지칭명시",
-   "score": 40,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-25T12:11:02.094Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

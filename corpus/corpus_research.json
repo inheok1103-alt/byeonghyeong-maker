@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-01T13:59:17.572Z",
+ "updated": "2026-08-01T15:30:40.952Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-01T15:30:12.102Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사형 오류(‘surprize’→‘surprise’)는 명사형 접미사 ‘-s’가 누락된 패턴으로, ‘-tion’·‘-ment’ 등 파생명사에서도 동일하게 발생한다. 동사 시제·3인칭 단수 ‘-s’ 오류(‘sugest’→‘suggests’)는 문맥상 필수 시제 일치 규칙이 적용되지 않은 경우다.",
+   "rule": "‘명사형’이나 ‘3인칭 단수 동사’에서 ‘-s’가 생략된 경우, 반드시 해당 접미사를 복원하여 문법적 정확성을 확보하라. 예: ‘To my [surprise]’ / ‘The lecturer [suggests]’ / ‘It [helps] the environment’.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-01T13:58:51.935Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구 내 대소문자 통일 오류(예: 'The theory generating' → 'the theory coming')와 복수형 오류('cigarettes' vs 'cigarrets')가 빈발하며, 특히 문장 내 주어·동사 간 대소문자 불일치(예: 'Is' vs 'is')가 자주 발생한다.",
    "rule": "주로 주어·동사 간 대소문자 불일치(예: 'Is this...' → 'is this...')와 명사 복수형 오류(예: 'cigarettes' vs 'cigarrets')를 중점으로 한 오류 유형을 출제하며, 문장 내 모든 명사구와 동사 구문에서 대소문자·복수형 일관성을 점검하는 문항을 설계한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-26T15:32:15.285Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구(NP) 내 명사 수식어(형용사/관사)의 선택적 관사가 오류 유발 패턴으로 확인되며, 특히 고유명사·집합명사·단수명사에서 관사의 유무가 문법성 판단의 핵심 변수로 작용한다. 또한, 동사 시제·태(tense/voice) 변화와 함께 직접목적어(direct object)의 수·형태가 문맥에 맞게 조정되어야 한다.",
-   "rule": "단수 고유명사(예: Persian langage) 앞에는 반드시 정관사 'the'를 첨가하여 문법성을 확보하고, 복수형·집합명사(예: group rules, prescribed fire solution)는 문맥에 맞는 수 일치를 강제하라.",
    "sample": [
     "old english",
     "university press",
