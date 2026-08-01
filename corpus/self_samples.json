@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-01T00:16:15.236Z",
+ "updated": "2026-08-01T03:56:07.182Z",
  "samples": [
+  {
+   "ts": "2026-08-01T03:54:53.506Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "문장의 통사 구조를 설명하려고",
+     "문장의 의미를 재구성하려고",
+     "동사의 보충어 역할만 설명하려고",
+     "모든 문장의 통사 구조를 규명하려고",
+     "문장의 주어를 분석하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'to clarify the syntactic structure of the sentence \"The police have the police arrested the suspect.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘문장의 의미를 재구성’이라고 오해했는데, 지문은 통사 구조(구성 요소의 위치와 역할)를 설명하는 데 중점을 두고 있음. ‘의미’를 언급한 부분은 없음. → 처방: 문장의 의미를 재구성하는 것이 아니라 통사 구조를 설명하는지 확인하기 위해 지문의 첫 문장과 마지막 문장을 집중해서 읽기.\n③ 진단: ‘동사의 보충어 역할만 설명’이라고 잘못 이해했는데, 지문은 보충어뿐 아니라 주어(외부 인자)와 보조사 ‘have’의 역할까지 설명하고 있음. → 처방: ‘only’(오직)이나 ‘just’(단지) 같은 단어가 없음을 확인하고, 지문 전체에서 다루는 내용을 종합해서 파악하기.\n④ 진단: ‘모든 문장의 통사 구조’를 과도하게 일반화했는데, 지문은 (15)와 같은 특정 구조에 한정해서 설명하고 있음. → 처방: ‘모든’이라는 말이 지문에 없음을 확인하고, 예시가 특정 구조에 국한된 것인지 확인하기.\n⑤ 진단: ‘주어만 분석’이라고 오해했는데, 지문은 주어뿐 아니라 동사, 보충어, 보조사까지 통사적 위치를 설명하고 있음. → 처방: 지문의 첫 문장에서 ‘complement’(보충어)와 ‘subject’(주어) 모두 언급하는지 확인하고, 전체 구조를 살피기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to clarify the syntactic structure of the sentence \"The police have the police arrested the suspect.]"
+   }
+  },
+  {
+   "ts": "2026-08-01T03:55:20.474Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.71,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "In a structure such as (15), the (A) [antecedent / complement] the suspect is said to be the internal argument of the verb arrested (in the sense that it is the argument contained within the immediate V-bar projection of the verb, and hence is a sister of the verb), whereas the subject the police is the (B) [internal / external] argument of the verb arrested (in that it occupies a position external to the V-bar constituent which is the immediate projection of the verb arrested). The VP in (15) is then merged with the present tense auxiliary [T have], forming the T-bar have the police arrested the suspect. Since a finite T has an [EPP] feature requiring it to have a (C) [subject / object] of its own, the DP the police moves from being the subject of arrested to becoming the subject of [T have], forming The police have the police arrested the suspect. Merging the resulting TP with a null declarative complementiser in turn derives the structure shown in simplified form in (16) below:",
+    "choices": [
+     "(A) antecedent - (B) internal - (C) subject",
+     "(A) complement - (B) internal - (C) subject",
+     "(A) complement - (B) internal - (C) object",
+     "(A) complement - (B) external - (C) subject",
+     "(A) antecedent - (B) internal - (C) object"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) complement - (B) external - (C) subject. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘antecedent’를 (A)에 넣은 것은 ‘complement’의 의미를 ‘선행사’로 오해한 것으로 보입니다. 지문에서 ‘complement’는 ‘the suspect’를 가리키며, ‘antecedent’는 ‘the suspect’를 가리키는 다른 용어(‘선행사’)로 오인한 듯합니다. → 처방: ‘complement’는 ‘목적어’를 뜻하는 문법 용어이므로, ‘목적어’를 가리키는 말로 이해하고 다시 읽어보세요.\n② 진단: ‘(B)에 internal’을 고른 것은 ‘external’의 의미를 혼동한 것입니다. 지문에서 ‘the police’는 V-bar 바깥에 위치하므로 ‘external argument’로 설명되어 있습니다. → 처방: ‘internal argument’는 동사 바로 안쪽에 있는 요소(‘the suspect’)를, ‘external argument’는 동사 바깥에 있는 요소(‘the police’)를 가리킨다는 점을 기억하세요.\n③ 진단: ‘(C)에 object’를 넣은 것은 EPP 특징이 ‘주어’를 요구한다는 점을 놓친 것입니다. 지문에서 ‘[EPP] feature’는 ‘주어’를 요구한다고 명시되어 있습니다. → 처방: EPP 특징은 ‘주어’를 필요로 한다는 점을 기억하고, ‘subject’를 우선적으로 생각하세요.\n⑤ 진단: ‘(A)에 antecedent’를, ‘(C)에 object’를 넣은 것은 ‘complement’와 ‘object’를 혼동한 것입니다. 지문에서 ‘complement’는 ‘the suspect’를, EPP 는 ‘주어’를 요구한다고 설명되어 있습니다. → 처방: ‘complement’는 ‘목적어’를, EPP 는 ‘주어’를 요구한다는 점을 정확히 구분해서 읽으세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-01T00:14:57.221Z",
    "type": "본문찾아쓰기",
@@ -312,76 +380,6 @@
     ],
     "answer": 5,
     "explanation": "정답 조합: (A) to and its - (B) being valued - (C) cannot value. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'their'를 사용했으며, 'being value'와 'can values'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n② 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'its'를 사용했으며, 'being value'와 'cannot value'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n③ 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'its'를 사용했으며, 'being value'와 'can values'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n④ 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'their'를 사용했으며, 'being value'와 'cannot value'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-31T10:01:45.366Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": -1,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어 문법 변이형은 문맥과 의미를 결정짓는 구조적 핵심 요소로 작용한다",
-     "영어 문법 변이형은 특정 대명사나 명사구에 국한되어 제한적으로 활용된다",
-     "모든 언어에서 문법 변이형이 문맥과 의미를 완벽히 반영하는 것은 아니다",
-     "영어 문법 변이형은 언제나 문맥과 의미를 동일하게 반영하는 규칙을 따른다",
-     "영어 문법 변이형은 문맥과 의미를 반영하여 사용되며 체계적 분석이 필요하다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The GSWE examines when and why structurally and semantically related grammatical variants are used.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘문맥과 의미를 결정짓는 구조적 핵심 요소’라는 말은 지문의 ‘문법적·담화적 요소’와 혼동한 것으로 보입니다. 지문은 변이형이 문맥과 의미를 ‘반영’한다고만 설명하지, ‘결정짓는’ 핵심 요소라고 말하지 않았습니다. → 처방: ‘결정짓는’ 같은 강한 표현은 지문에서 쓰지 않는다는 점을 기억하고, ‘반영’이나 ‘관련’ 같은 softer 한 표현을 찾도록 연습하세요.\n② 진단: ‘특정 대명사나 명사구에 국한되어’라는 말은 지문의 ‘다양한 명사구’(예: they, the gents) 예시를 무시한 것으로 보입니다. 지문은 변이형이 ‘여러 가지’로 나타난다고 했습니다. → 처방: ‘국한되어’라는 단어가 나오면 ‘다양한’이나 ‘여러 가지’ 같은 반대 표현을 떠올리며 지문을 다시 읽어보세요.\n③ 진단: ‘모든 언어’라는 말은 지문의 ‘영어’에만 초점을 맞춘 부분과 혼동한 것으로 보입니다. 지문은 영어에 대한 설명만 다루고, 다른 언어의 예는 없습니다. → 처방: ‘모든 언어’라는 표현이 나오면 ‘이 글은 영어에 대한 설명’이라는 점을 먼저 확인하고, 범위를 좁혀 읽어보세요.\n④ 진단: ‘언제나 규칙을 따른다는 말은 지문의 ‘체계적 분석이 필요하다’는 설명과 반대됩니다. 지문은 변이형이 ‘언제·왜’ 쓰이는지 분석해야 한다고 했습니다. → 처방: ‘언제나’라는 절대적 표현은 지문에서 ‘언제·왜’라는 조건적 표현과 대비된다는 점을 기억하고, 선지를 읽을 때 ‘절대’ vs ‘조건’을 구분하세요.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The GSWE examines when and why structurally and semantically related grammatical variants are used.]"
-   }
-  },
-  {
-   "ts": "2026-07-31T07:17:02.070Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that these strings are constituents. However, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an Adjunct. The two possible structures of the VP <u>eat the pizza naked</u> are shown in (i) and (ii) below: (i)",
-    "choices": [
-     "The phrase indicates that something is done in its most basic and unadorned state, stripped of all unnecessary elements.",
-     "The phrase conveys that an action is carried out purely and without any added embellishments or conditions.",
-     "The phrase means that a process occurs in its most raw and unfiltered form, free from any modifications.",
-     "The phrase suggests that an action is performed in its simplest and most straightforward manner, without any extra layers.",
-     "The phrase implies that an action is performed in its most unadorned, essential, or unfiltered form without any additional elements or conditions."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'The phrase implies that an action is performed in its most unadorned, essential, or unfiltered form without any additional elements or conditions.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘naked’이 ‘기본 상태’나 ‘필요 없는 요소 제거’로만 좁게 이해하여 ‘unadorned’(꾸밈 없는)이나 ‘unfiltered’(거르지 않은)의 넓은 의미를 놓쳤음. 지문에서 ‘most unadorned, essential, or unfiltered form’이라는 서술이 있음. → 처방: ‘naked’를 ‘꾸밈 없이 본질적인 상태’라는 뜻으로 넓게 해석하는 연습을 하라. 예를 들어 ‘eat naked’이 ‘옷 없이 먹기’가 아니라 ‘본질 그대로 먹기’를 뜻할 수도 있음을 떠올려라.\n② 진단: ‘purely’(순수하게)나 ‘without any added embellishments’(장식 없이)의 표현에만 집중하여 ‘essential’(본질적인)이나 ‘unfiltered’(거르지 않은)의 의미를 배제했음. 지문에서 ‘essential’이 명시되어 있음. → 처방: ‘naked’의 의미를 ‘본질’이나 ‘거르지 않음’이라는 관점에서 다시 생각해 보라. ‘순수한’보다 ‘본질 그대로’라는 뜻을 강조하는 연습을 하라.\n③ 진단: ‘raw’(날것의)나 ‘unfiltered’(거르지 않은)의 이미지에만 치우쳐 ‘unadorned’(꾸밈 없는)이나 ‘essential’(본질적인)의 의미를 놓쳤음. 지문에서 ‘unadorned’와 ‘essential’이 함께 쓰였음. → 처방: ‘naked’를 ‘날것’이나 ‘거르지 않음’으로만 생각하지 말고, ‘꾸밈 없이 본질적인’으로도 해석해 보라. 두 의미를 모두 고려하는 습관을 들여라.\n④ 진단: ‘simplest’(가장 단순한)나 ‘straightforward’(직접적인)의 표현에만 주목하여 ‘unadorned’(꾸밈 없는)이나 ‘unfiltered’(거르지 않은)의 의미를 배제했음. 지문에서 ‘most unadorned, essential, or unfiltered form’이 있음. → 처방: ‘naked’를 ‘단순함’으로만 좁게 해석하지 말고, ‘꾸밈 없이 본질적인’이나 ‘거르지 않은’이라는 넓은 의미도 포함해 보라. 문맥 전체를 종합적으로 이해하는 연습을 하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
