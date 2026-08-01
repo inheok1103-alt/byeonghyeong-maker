@@ -1,6 +1,60 @@
 {
- "updated": "2026-07-31T23:19:27.374Z",
+ "updated": "2026-08-01T00:16:15.236Z",
  "samples": [
+  {
+   "ts": "2026-08-01T00:14:57.221Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] The act of extending; a stretching out; enlargement in length or breadth; an increase",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] extension (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-01T00:15:31.190Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "The term possible worlds is used in semantics for hypothetical ways reality might be or ____ be. The way things actually are is the actual world, and it is included in the possible worlds because it is obviously a possible reality. A possible world different from the actual world is a whole alternative universe, not just an alternative version of Planet Earth. There are infinitely many possible worlds. Many possible worlds have dogs in them, which the word dog applies to. We can collect together all the dogs in the real world to form the set of all real dogs – this set is the extension of dog. To get closer to what we think of as the ‘real meaning’ of the word dog we need the intension, which is the set of all dogs in all possible worlds. This comprises the full possible range of doghood. So there are two kinds of denotation for predicates: (12) word (noun): dog",
+    "choices": [
+     "has to",
+     "might not",
+     "could have",
+     "is taken",
+     "can only"
+    ],
+    "answer": 3,
+    "explanation": "빈칸에는 'could have'가 들어가 글의 논지를 완성한다 (본문 'might have been'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘has to’는 ‘반드시 ~해야 한다’는 뜻으로, 지문에서 ‘가능한 세계’가 reality 의 한 방식일 뿐 ‘반드시’가 아님을 오해했음. 지문은 ‘hypothetical ways reality might be’라고 명시함. → 처방: ‘might’는 ‘~일 수도 있다’는 가능성을 나타내므로, 빈칸 앞의 ‘might’이 힌트라는 점을 기억하고 ‘가능성’을 뜻하는 조동사를 찾아야 함.\n② 진단: ‘might not’는 ‘~하지 않을 수도 있다’는 부정 가능성을 나타내지만, 지문은 ‘reality might be’의 ‘be’를 대체할 동사가 필요함을 놓침. ‘might not’이 문법적으로는 맞지만, ‘be’의 의미가 빠져 있음. → 처방: ‘might not’이 아니라 ‘might be’의 형태로 ‘be’를 포함하는 조동사를 찾아야 하며, ‘could have’는 ‘~했을 수도 있다’는 과거 가능성을 뜻하지만, 지문은 현재·미래 가능성을 다룸.\n④ 진단: ‘is taken’는 수동태로 ‘~로 여겨지다’라는 뜻이지만, 지문은 ‘reality might be’의 ‘be’를 대체할 동사가 필요하다는 점을 무시했음. ‘taken’이라는 동사가 문맥에 맞지 않음. → 처방: ‘be’를 대체할 수 있는 조동사를 찾되, ‘take’의 의미가 아니라 ‘존재하거나 일어날 가능성’을 나타내는 조동사를 우선해야 함.\n⑤ 진단: ‘can only’는 ‘오직 ~뿐이다’라는 뜻으로, 지문에서 ‘hypothetical ways reality might be’의 ‘might’이 ‘can’의 의미와 혼동되었음. ‘only’는 ‘유일성’을 강조하지만, 지문은 ‘가능성’을 강조함. → 처방: ‘can’이 아니라 ‘could’의 과거형이 문맥에 더 어울리며, ‘only’는 배제하고 ‘가능성’을 나타내는 조동사를 선택해야 함.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-07-31T23:16:58.927Z",
    "type": "안내문일치",
@@ -328,75 +382,6 @@
     ],
     "answer": 5,
     "explanation": "밑줄 친 부분은 'The phrase implies that an action is performed in its most unadorned, essential, or unfiltered form without any additional elements or conditions.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘naked’이 ‘기본 상태’나 ‘필요 없는 요소 제거’로만 좁게 이해하여 ‘unadorned’(꾸밈 없는)이나 ‘unfiltered’(거르지 않은)의 넓은 의미를 놓쳤음. 지문에서 ‘most unadorned, essential, or unfiltered form’이라는 서술이 있음. → 처방: ‘naked’를 ‘꾸밈 없이 본질적인 상태’라는 뜻으로 넓게 해석하는 연습을 하라. 예를 들어 ‘eat naked’이 ‘옷 없이 먹기’가 아니라 ‘본질 그대로 먹기’를 뜻할 수도 있음을 떠올려라.\n② 진단: ‘purely’(순수하게)나 ‘without any added embellishments’(장식 없이)의 표현에만 집중하여 ‘essential’(본질적인)이나 ‘unfiltered’(거르지 않은)의 의미를 배제했음. 지문에서 ‘essential’이 명시되어 있음. → 처방: ‘naked’의 의미를 ‘본질’이나 ‘거르지 않음’이라는 관점에서 다시 생각해 보라. ‘순수한’보다 ‘본질 그대로’라는 뜻을 강조하는 연습을 하라.\n③ 진단: ‘raw’(날것의)나 ‘unfiltered’(거르지 않은)의 이미지에만 치우쳐 ‘unadorned’(꾸밈 없는)이나 ‘essential’(본질적인)의 의미를 놓쳤음. 지문에서 ‘unadorned’와 ‘essential’이 함께 쓰였음. → 처방: ‘naked’를 ‘날것’이나 ‘거르지 않음’으로만 생각하지 말고, ‘꾸밈 없이 본질적인’으로도 해석해 보라. 두 의미를 모두 고려하는 습관을 들여라.\n④ 진단: ‘simplest’(가장 단순한)나 ‘straightforward’(직접적인)의 표현에만 주목하여 ‘unadorned’(꾸밈 없는)이나 ‘unfiltered’(거르지 않은)의 의미를 배제했음. 지문에서 ‘most unadorned, essential, or unfiltered form’이 있음. → 처방: ‘naked’를 ‘단순함’으로만 좁게 해석하지 말고, ‘꾸밈 없이 본질적인’이나 ‘거르지 않은’이라는 넓은 의미도 포함해 보라. 문맥 전체를 종합적으로 이해하는 연습을 하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-31T07:17:53.841Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that these strings are constituents. However, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an Adjunct. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)\n\n─────────\n[요약문] The analysis of (A) in coordination structures may seem to suggest (B) as constituents, but tree structure evidence disproves this, revealing the need for alternative structural interpretations.",
-    "choices": [
-     "(A) coordination failure … (B) syntactic constituent reality",
-     "(A) structural ambiguity … (B) lexical constituent illusion",
-     "(A) gap detection … (B) constituent reassignment",
-     "(A) ellipsis resolution … (B) phrase boundary misinterpretation",
-     "(A) coordination ambiguity … (B) constituent misidentification"
-    ],
-    "answer": 5,
-    "explanation": "(A) coordination ambiguity / (B) constituent misidentification 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 학생은 'coordination failure(조합 실패)'라는 표현을 통해 문장의 구조적 결합 실패를 오해했을 가능성이 높습니다. 지문은 'coordination(조합)'이 문법적으로 가능해 보이지만 실제로는 constituents(구성체)가 아니라고 설명합니다. 'failure'라는 단어는 오답의 의미를 왜곡시킬 수 있습니다. → 처방: 'coordination'의 의미를 정확히 이해하고, 지문에서 '구성체가 아님'을 강조하는 부분을 다시 읽으세요. 'coordination'이 문법적으로 가능해 보여도 constituents 가 아니라는 점을 기억하세요.\n② 진단: 학생은 'structural ambiguity(구조적 모호성)'을 오해하여 문장의 구조적 중의성을 오독했을 수 있습니다. 지문은 constituents 가 아님을 'tree structure(트리 구조)'로 증명한다고 설명하는데, 모호성과는 무관합니다. → 처방: 'ambiguity'는 중의성을 뜻하니 지문에서 '구성체가 아님'을 증명하는 'tree structure'의 역할을 다시 확인하세요. 모호성보다는 constituents 의 오분류에 집중하세요.\n③ 진단: 학생은 'gap detection(빈자리 감지)'을 통해 constituents 를 재할당하는 오류를 범했을 수 있습니다. 지문은 constituents 가 아님을 'tree structure'로 증명한다고 설명하는데, 빈자리 감지와는 무관합니다. → 처방: 'gap detection'은 constituents 의 재할당과 관련이 없음을 기억하세요. 지문에서 constituents 가 아님을 증명하는 'tree structure'의 역할을 다시 읽으세요.\n④ 진단: 학생은 'ellipsis resolution(생략 해결)'을 constituents 의 오분류와 연결했을 수 있습니다. 지문은 constituents 가 아님을 'tree structure'로 증명한다고 설명하는데, 생략 해결과는 무관합니다. → 처방: 'ellipsis resolution'은 constituents 의 오분류와 직접 관련이 없음을 기억하세요. constituents 가 constituents 가 아님을 증명하는 'tree structure'의 역할을 다시 확인하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-31T03:56:09.153Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 2번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Case Constraints Govern All Syntactic Movement",
-     "Case-Marked Movement as Syntax’s Core Constraint",
-     "Case Assignment Dictates Syntax, Not the Reverse",
-     "Movement Occurs Only When Case-Marking Permits",
-     "Case-Marking Principles Rarely Shape Syntactic Operations"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'MUST: Movement in syntax follows case-marking constraints.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: 지문은 'case-marked nominal'의 움직임이 'case-marked' 여부에 따라 제한된다는 점을 강조하지만, 모든 움직임이 'case constraint'에 의해 통제된다고 보지는 않는다. 특히 'already the highest non-head constituent' 같은 조건을 언급하며 제한적임을 밝힌다. → 처방: 지문의 핵심 논점('case-marked movement 가 syntax 의 핵심 제약이다')을 정확히 짚고, '모든 움직임'이라는 과장된 표현을 경계하라.\n③ 진단: 지문은 'case assignment'가 syntax 를 좌우한다고 설명하지 않는다. 오히려 'case assignment'가 movement 의 가능성을 결정짓는 '제약 조건'으로 작용한다고 서술하며, syntax 가 case assignment 를 따르지 않음을 암시한다. → 처방: 'Dictate'라는 단어가 주는 '강제적 우위'를 오해하지 말고, 지문의 '제약' 역할을 정확히 이해하라.\n④ 진단: 지문은 'case-marking permits movement'라는 단순 논리로 모든 움직임을 설명하지 않는다. 오히려 'nominal 이 이미 highest constituent 라면 움직임이 일어나지 않는다'는 조건을 제시하며, 'permit'이라는 용어가 지나치게 포괄적임을 지적한다. → 처방: 'Permit'이라는 단어가 주는 '무조건적 허용'을 오해하지 말고, 지문의 '조건부 허용'을 정확히 파악하라.\n⑤ 진단: 지문은 'case-marking principles'가 syntax 의 움직임에 'rarely' 영향을 미친다고 설명하지 않는다. 오히려 'case assignment'가 movement 의 핵심 제약으로 기능한다고 명시하며, 'rarely'라는 표현은 지문의 의도와 반대된다. → 처방: 'Rarely'라는 부정적 표현을 오해하지 말고, 지문의 '핵심 제약' 역할을 정확히 인식하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: MUST: Movement in syntax follows case-marking constraints.]"
    }
   }
  ]

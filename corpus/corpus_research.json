@@ -1,8 +1,22 @@
 {
- "updated": "2026-07-31T23:19:27.370Z",
+ "updated": "2026-08-01T00:16:15.233Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-01T00:15:46.443Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "원서 코퍼스의 연어 패턴은 '명사 + 전치사 + 명사' 구조가 빈번하며, 오류 유형은 문장 내 부사 위치 오류, 동사 시제 오류, 관사 오류 등으로 나타났다. 특히 'influence on'과 같은 전치사 연어는 오답 선지로 활용 가능성이 높다.",
+   "rule": "'명사 + 전치사 + 명사' 구조의 연어(예: 'influence on agriculture')가 포함된 문장은, 오답 선지로 동사 시제 오류(예: 'have' → 'has') 또는 관사 오류(예: 'a' 누락)를 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-07-31T23:18:48.622Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거 시제 동사의 경우 '-ed' 형태가 아닌 불규칙 과거형을 오용하는 경우가 빈번하며, 'a'와 같은 관사 생략, 'by ~ing' 구문의 오용, 'usually'와 같은 빈도부사의 생략이 오답 유형으로 활용될 수 있다.",
    "rule": "과거 시제 동사의 경우 불규칙 과거형(예: choose→chose)을 '-ed'로 잘못 표기한 오답지를 설계하고, 빈도부사(usually, often 등)를 생략한 문장을 오답으로 제시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-26T00:16:57.202Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'thereby'가 문장 중간에서 사용될 경우, 결과적 의미를 강조하는 'therefore'로 대체하는 오류 패턴이 빈번하다. 또한 'as much as successful'와 같이 연어 오류('as successful as')가 자연스러운 문법 오류로 활용된다.",
-   "rule": "'thereby'가 결과적 의미를 나타내는 접속사 역할을 할 때는 'therefore'로 대체하여 오답지를 설계하라. 또한 'as [형용사] as' 구문을 오용한 'as much as [형용사]' 형태를 오답으로 제시하라.",
    "sample": [
     "old english",
     "university press",
