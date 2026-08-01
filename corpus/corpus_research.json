@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-01T21:12:55.817Z",
+ "updated": "2026-08-01T22:15:01.261Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-01T22:14:34.820Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'with the above'는 'concordance'와 함께 연어로서 사용되지만, 문법적 오류 없이도 'I agree with the above'로 축약 가능하다는 패턴을 확인했다. 또한 문장 내 위치(접속사/부사)나 구두점(콜론/세미콜론) 선택이 CEFR 밴드에 따라 난이도를 조절할 수 있는 지표가 된다.",
+   "rule": "'I agree with the ~' 또는 'I disagree with the ~' 구문에서 'the above'를 포함한 연어는 CEFR B1 수준에서 'I agree/disagree with this/that'로 단순화하여 출제하거나, B2 수준에서 'I agree/disagree with the above'로 연어 표현을 유지한 채 문장 내 위치(접속사/부사)와 구두점(콜론/세미콜론)을 선택하도록 변형 문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-01T21:12:27.156Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'명사 단수/복수 오류'와 '동사 시제 오류'가 연어(collocation) 패턴에서 빈번하게 등장하며, 특히 'compulsory to attend'와 같은 고정 표현이 오답 설계에 활용된다. 또한 'reasons for live'와 같이 전치사+동사 형태의 오류도 다수 발견된다.",
    "rule": "'명사 단수/복수 오류'는 'compulsory to attend'와 같은 고정 연어 뒤에 오는 명사구가 단수/복수 형태를 혼용하는 경우를 우선적으로 검토하며, 'reasons for live'와 같은 전치사+동사 형태는 'reasons to live'로 수정하는 규칙을 적용한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-26T23:16:32.484Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'and' 구문은 병렬 구조에서 동사 일치와 명사 단수형을 우선적으로 요구하는 패턴이 두드러진다. 또한 'something + 동사원형'은 상대적으로 드물고, 'something that + 시제동사'가 일반적이다.",
-   "rule": "원서 코퍼스 패턴에 따라 'and'로 연결된 병렬 구조에서는 동사 시제와 명사의 단수형을 일치시킨 후, 'something + 동사원형' 구조는 'something that + 시제동사'로 교정하라.",
    "sample": [
     "old english",
     "university press",
