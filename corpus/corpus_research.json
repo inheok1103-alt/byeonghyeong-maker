@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-01T15:30:40.952Z",
+ "updated": "2026-08-01T17:18:58.142Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-01T17:18:28.779Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구 내 고유명사(Italian law, New York 등)는 항상 대문자로 표기해야 한다. 또한 'some times'는 'sometimes'로 단일어로 축약되어야 하며, 'old information'은 'outdated information'으로 자연스러운 표현으로 대체되어야 한다.",
+   "rule": "문장 내 고유명사(국가, 언어, 기관명 등)는 첫 글자를 대문자로 표기하는지 확인하라. 예: 'I study about korean law' → 'I study about Korean law'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-01T15:30:12.102Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'단수 주제명사(community, human relationship 등)'가 복수형으로 오용되는 패턴이 빈번하며, 특히 'equal'·'use'·'respect'와 같은 동사와 결합할 때 규칙적인 오류가 발생한다. 또한 'group'·'people' 같은 집합명사가 단수형으로 쓰이는 오류도 다수 확인된다.",
    "rule": "'단수 집합명사(community, group, human relationship 등)'가 복수형으로 사용될 경우, 문맥상 복수 의미가 아닐 때 단수형으로 수정하라는 규칙을 내신 변형문제에 반드시 포함시킨다. 예를 들어 'community'는 'communities'로, 'group'은 'group'으로, 'human relationship'은 'human relationships'로 오용된 경우를 지적하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-26T17:18:55.834Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구 내 대소문자 통일 오류(예: 'The theory generating' → 'the theory coming')와 복수형 오류('cigarettes' vs 'cigarrets')가 빈발하며, 특히 문장 내 주어·동사 간 대소문자 불일치(예: 'Is' vs 'is')가 자주 발생한다.",
-   "rule": "주로 주어·동사 간 대소문자 불일치(예: 'Is this...' → 'is this...')와 명사 복수형 오류(예: 'cigarettes' vs 'cigarrets')를 중점으로 한 오류 유형을 출제하며, 문장 내 모든 명사구와 동사 구문에서 대소문자·복수형 일관성을 점검하는 문항을 설계한다.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-01T15:30:40.956Z",
+ "updated": "2026-08-01T17:18:58.146Z",
  "samples": [
+  {
+   "ts": "2026-08-01T17:18:26.872Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: p)\n[영영풀이] A very small piece of matter, a fragment; especially, the smallest possible part of something.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] particle (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-01T15:28:45.352Z",
    "type": "빈칸(문장)",
@@ -306,25 +325,6 @@
     ],
     "answer": 4,
     "explanation": "정답 조합: (A) complement - (B) external - (C) subject. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘antecedent’를 (A)에 넣은 것은 ‘complement’의 의미를 ‘선행사’로 오해한 것으로 보입니다. 지문에서 ‘complement’는 ‘the suspect’를 가리키며, ‘antecedent’는 ‘the suspect’를 가리키는 다른 용어(‘선행사’)로 오인한 듯합니다. → 처방: ‘complement’는 ‘목적어’를 뜻하는 문법 용어이므로, ‘목적어’를 가리키는 말로 이해하고 다시 읽어보세요.\n② 진단: ‘(B)에 internal’을 고른 것은 ‘external’의 의미를 혼동한 것입니다. 지문에서 ‘the police’는 V-bar 바깥에 위치하므로 ‘external argument’로 설명되어 있습니다. → 처방: ‘internal argument’는 동사 바로 안쪽에 있는 요소(‘the suspect’)를, ‘external argument’는 동사 바깥에 있는 요소(‘the police’)를 가리킨다는 점을 기억하세요.\n③ 진단: ‘(C)에 object’를 넣은 것은 EPP 특징이 ‘주어’를 요구한다는 점을 놓친 것입니다. 지문에서 ‘[EPP] feature’는 ‘주어’를 요구한다고 명시되어 있습니다. → 처방: EPP 특징은 ‘주어’를 필요로 한다는 점을 기억하고, ‘subject’를 우선적으로 생각하세요.\n⑤ 진단: ‘(A)에 antecedent’를, ‘(C)에 object’를 넣은 것은 ‘complement’와 ‘object’를 혼동한 것입니다. 지문에서 ‘complement’는 ‘the suspect’를, EPP 는 ‘주어’를 요구한다고 설명되어 있습니다. → 처방: ‘complement’는 ‘목적어’를, EPP 는 ‘주어’를 요구한다는 점을 정확히 구분해서 읽으세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-01T00:14:57.221Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] The act of extending; a stretching out; enlargement in length or breadth; an increase",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] extension (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
