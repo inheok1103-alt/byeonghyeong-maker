@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-01T09:28:44.354Z",
+ "updated": "2026-08-01T11:38:42.161Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-01T11:38:00.188Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'comma + conjunction' 패턴(예: ', and', ', that')이 문맥에 따라 구문적 명확성을 위해 필수적으로 사용됨을 확인했다.",
+   "rule": "원서 문체 패턴을 반영하여, 'and', 'that', 'as' 등 접속사 앞에는 문맥상 필요 시 쉼표를 반드시 삽입하도록 변형 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-01T09:28:12.045Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'be 동사'의 누락이 빈번한 오류로 나타나며, 특히 'as ~ as' 구조에서 'be'가 필수적임을 확인할 수 있다. 또한, 철자 오류('refuced'→'refused')와 구두점 오류('In deed'→'Indeed')가 복합적으로 발생하는 패턴을 보인다.",
    "rule": "CEFR B1 수준 내신 문법 문제에서 'as ~ as' 비교구조와 'be 동사'의 필수 결합을 반드시 포함하여 출제하며, 'be'가 누락된 오류 문항을 1문항 이상 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-26T11:40:27.151Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'old'/'new'/'furious'/'serious' 등 형용사의 오용이 빈번하며, 특히 'very + 형용사' 구문에서 'very'가 무의미하게 사용되거나 형용사의 등급(serious vs. furious)이 혼용된다. 또한 'make + 목적어 + to 부정사' 구조가 'make + 목적어 + 원형부정사'로 오용되는 경우가 많다.",
-   "rule": "'very + 형용사' 구문에서 'very'는 'serious', 'important', 'necessary' 등 추상적 의미를 지닌 형용사에만 사용하고, 'furious', 'angry' 등 감정 형용사에는 'very' 대신 'extremely'/'highly'/'deeply'를 사용한다. 또한 'make + 목적어 + to 부정사' 구조는 'make + 목적어 + 원형부정사'로 수정하여 오용을 방지하라.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,42 @@
 {
- "updated": "2026-08-01T09:28:44.358Z",
+ "updated": "2026-08-01T11:38:42.164Z",
  "samples": [
+  {
+   "ts": "2026-08-01T11:37:42.880Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 3번 선택(기록 4번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": -0.67,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "In the past , readers were apparently more patient than today’s readers. They had few entertainment opportunities, so they did not mind spending many hours in the reading of lengthy novels. <u>Such novels seem unreasonable to us today</u>. Also we find the digressions and irrelevancies intolerable. But these defects are found in some of the greatest writings and did not seem to irritate earlier readers. It is deplorable that for these reasons those writings are less frequently read today. 1. The author says that………… a) great writings are usually long. b) great writings usually have frequent digressions. c) modern novelists write lengthy novels. d) people today tend not to read lengthy novels. 2. The author thinks that digressions and irrelevancies …… a) are not important to modern readers. b) Are a sign of greatness in a novel. c) Were intolerable to the readers of the past. d) Should not prevent the reading of novels.",
+    "choices": [
+     "Contemporary audiences often find the intricate designs of traditional novels to be overly complicated or needlessly dense.",
+     "Many modern readers consider the detailed frameworks of classic literary works as unnecessarily intricate or exaggerated.",
+     "Some readers today view the complex frameworks of old novels as unnecessarily intricate or disproportionately elaborate.",
+     "Modern readers perceive the elaborate structure of classic novels as unnecessarily complex or excessive.",
+     "Modern readers frequently regard the elaborate structures of classic novels as unnecessarily convoluted or disproportionately complex."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'Modern readers perceive the elaborate structure of classic novels as unnecessarily complex or excessive.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘intricate designs’(복잡한 디자인)나 ‘traditional novels’(전통 소설)이라는 단어가 지문의 ‘lengthy novels’(장편 소설)이나 ‘great writings’(위대한 작품들)과 맞지 않음에도, ‘overly complicated’(너무 복잡한)라는 표현이 ‘unreasonable’(불합리한)과 어감이 비슷하다고 오해한 듯. → 처방: ‘lengthy novels’나 ‘great writings’를 떠올리며, ‘unreasonable’이 ‘길고 복잡한 구조’를 비판하는 말이 아니라 ‘오늘날 기준으로는 받아들이기 힘들 정도로 길다’는 뜻임을 분명히 기억하기.\n② 진단: ‘detailed frameworks’(자세한 틀)이라는 말이 지문의 ‘digressions and irrelevancies’(주제 이탈과 무관한 내용)와 직접 연결되지 않음에도, ‘unnecessarily intricate’(불필요하게 복잡한)가 ‘intolerable’(참기 어려운)과 비슷하다고 생각한 듯. → 처방: ‘digressions and irrelevancies’를 ‘주제에서 벗어난 내용’으로 이해하고, 그것이 ‘불필요한 복잡성’이 아니라 ‘길고 산만한 구성’을 뜻한다는 점을 분명히 하기.\n③ 진단: ‘complex frameworks’(복잡한 틀)이라는 말이 지문의 ‘lengthy novels’(장편 소설)이나 ‘great writings’(위대한 작품들)과 맞지 않음에도, ‘unnecessarily intricate’(불필요하게 복잡한)가 ‘unreasonable’(불합리한)과 혼동된 듯. → 처방: ‘lengthy novels’를 떠올리며, ‘unreasonable’이 ‘길고 복잡한 구조’를 비판하는 말이 아니라 ‘오늘날 기준으로는 받아들이기 힘들 정도로 길다’는 뜻임을 분명히 기억하기.\n⑤ 진단: ‘convoluted’(복잡한)이나 ‘disproportionately complex’(과도하게 복잡한)가 지문의 ‘digressions and irrelevancies’(주제 이탈과 무관한 내용)와 직접 연결되지 않음에도, ‘unreasonable’이 ‘너무 복잡한’으로 오해된 듯. → 처방: ‘unreasonable’이 ‘길고 복잡한 구조’를 비판하는 말이 아니라 ‘오늘날 기준으로는 받아들이기 힘들 정도로 길다’는 뜻임을 분명히 하고, ‘convoluted’는 ‘복잡한’보다는 ‘꼬인’ 느낌이 강하다는 점도 기억하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-01T09:27:21.299Z",
    "type": "밑줄함의",
@@ -321,40 +357,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'To predict environments where negative polarity items are licensed.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To predict environments where negative polarity items are licensed.]\n[오답 진단·처방]\n① 진단: 지문 (44)와 (48)에서 '음성 양화사 항목이 허용되는 환경'을 '검토'하는 것이 아니라 '정리'하고 '예측'하는 목적으로 서술했음을 오해했음. 특히 (47)에서 'downward-entailing environments'가 NPI 허용 환경과 '정확히 일치'한다고 결론짓는 부분이 '검토'의 의미를 담고 있다고 잘못 해석함. → 처방: 지문에서 '목적'을 찾을 때는 결론이나 요약 부분(예: (47))을 집중해서 읽고, '검토'와 '정리'의 차이를 분명히 구분할 것.\n② 진단: 지문 (48)에서 'NPI licensing environments'를 '정리'하는 내용이 포함되어 있지만, 이는 '목적'이 아니라 '과정'에 해당함을 오해했음. 학생은 '정리' 자체가 목적인 것처럼 오독했으며, (47)의 '예측'과 '일치'라는 핵심 논점을 놓침. → 처방: 글의 '목적'은 '결론'이나 '주장'에 집중해야 하며, '과정'이나 '예시'는 참고용임을 기억할 것.\n③ 진단: '모든 환경에서 허용된다'는 주장이 지문에 없음을 오독했음. 지문은 NPI 가 '특정 환경'(downward-entailing)에서만 허용된다고 설명하며, 이를 '예측'했다고 서술했음. 학생은 '모든 환경'이라는 과장된 해석을 내림. → 처방: 지문의 주장 범위를 정확히 파악하고, '모든'이나 '항상' 같은 절대어 사용을 주의할 것.\n⑤ 진단: '예측'의 의미를 '설명'과 혼동했음. 지문은 NPI 허용 환경이 downward-entailing 환경과 '정확히 일치'한다고 '예측'했다고 서술하지만, 학생은 이를 '설명'하는 것으로 오해했음. '예측'은 이론적 결론을, '설명'은 원인을 다룸. → 처방: '예측'과 '설명'의 차이를 분명히 하고, 지문의 결론(47)을 다시 한 번 읽으며 '예측'의 의미를 재확인할 것."
-   }
-  },
-  {
-   "ts": "2026-07-31T17:54:42.800Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "구성 문법은 복잡한 구문들이 다른 구문들의 역할을 대체할 수 있음을 강조할 뿐, 그 존재의 정당성은 고려하지 않는 입장이다.",
-     "구성 문법은 수동태 주제역 등 일부 복잡한 구문만이 다른 구문의 역할을 대체할 수 있다고 제한적으로 주장한다.",
-     "구성 문법은 복잡한 구문들이 다른 구문의 역할을 대체할 수 있어야만 그 존재 가치를 인정한다고 주장한다.",
-     "구성 문법은 복잡한 구문들이 다른 구문의 역할을 대체할 수 있음을 전제로 모든 구문 구조를 설명할 수 있다고 본다.",
-     "구성 문법은 복잡한 구문들이 다른 구문들의 역할을 대신할 수 있으며, 그 독자성이 복합 구문의 존재를 정당화한다는 입장을 제시한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Construction grammar posits that complex constructions can fill roles of other constructions, and their autonomy justifies their existence within larger constructions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘고려하지 않는다’는 말은 지문에서 ‘독립성(autonomy)이 없다면 그 구문의 존재가 정당화되지 않는다’고 한 부분을 오해한 것이다. 지문은 복잡한 구문의 존재가 ‘독립성’을 기준으로 정당화된다고 명시한다. → 처방: ‘고려하지 않는다’는 표현 대신 ‘독립성을 기준으로 정당화된다’는 지문의 핵심 내용을 정확히 읽고 답을 골라야 한다.\n② 진단: ‘일부 복잡한 구문만 대체할 수 있다’는 말은 지문에서 ‘모든 복잡한 구문’이 대체 가능하다고 한 부분을 무시한 것이다. 지문은 ‘복잡한 구문’이 대체할 수 있음을 강조하며, 제한을 두지 않는다. → 처방: ‘일부’가 아니라 ‘모든 복잡한 구문’이 대체 가능하다는 지문의 내용을 정확히 파악하고 답을 고르도록 연습한다.\n③ 진단: ‘존재 가치를 인정받기 위해 대체 가능해야 한다’는 말은 지문의 ‘독립성이 구문의 존재를 정당화한다’는 의미를 잘못 해석한 것이다. 지문은 ‘대체 가능성’이 아니라 ‘독립성’이 구문의 존재를 정당화한다고 말한다. → 처방: ‘존재 가치’가 아니라 ‘독립성’이 구문의 존재를 정당화한다는 지문의 핵심 뜻을 정확히 이해하고 답을 선택한다.\n④ 진단: ‘모든 구문 구조를 설명할 수 있다’는 말은 지문에서 ‘일부 구성 요소는 독립적인 구문이 아닐 수 있다’는 예를 들며 한계를 지적한 부분을 무시한 것이다. 지문은 ‘모든 구문’을 설명할 수 있다고 주장하지 않는다. → 처방: ‘모든 구문’을 설명할 수 있다는 과장된 표현이 아니라, ‘독립성이 구문의 존재를 정당화한다’는 지문의 핵심을 정확히 읽고 답을 고른다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Construction grammar posits that complex constructions can fill roles of other constructions, and their autonomy justifies their existence within larger constructions.]"
    }
   }
  ]
