@@ -1,6 +1,119 @@
 {
- "updated": "2026-08-01T22:15:01.265Z",
+ "updated": "2026-08-01T23:15:59.829Z",
  "samples": [
+  {
+   "ts": "2026-08-01T23:13:21.610Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 1/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "This would mean that head movement applies in a successive-cyclic (two-step) fashion. Each of the two head movement operations in (52) – viz movement of (A) [care from V / cares from V] to NEG, and then from NEG to T – is local in the sense that it satisfies the Head Movement Constraint (31), since in each case (B) [movements are / movement is] from one head position into the next highest head position in the structure. If head movement is driven by affixal properties of heads, and if both T and NEG contain (C) [the strong affix / a strong affix] with a V-feature which can trigger movement of a main verb, the verb care will first move from V to NEG in order to attach to a null negative affix (in much the same way as the verb hath in (50) moves from V to Neg to attach to the overt negative affix ne), and the resulting complex NEG head (comprising a null negative affix with a verb attached to it) in turn will move from NEG to T in order to attach to a strong tense affix in T.",
+    "choices": [
+     "(A) care from V - (B) movement is - (C) a strong affix",
+     "(A) cares from V - (B) movement is - (C) a strong affix",
+     "(A) cares from V - (B) movements are - (C) the strong affix",
+     "(A) care from V - (B) movements are - (C) the strong affix",
+     "(A) cares from V - (B) movements are - (C) a strong affix"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) care from V - (B) movement is - (C) a strong affix. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘care’는 3인칭 단수 동사이므로 ‘cares’로 오기했을 가능성이 크며, (B)와 (C)도 문맥에 맞게 선택하지 못했음. 지문에서 ‘care’는 주어 없이 쓰였으므로 ‘care from V’가 옳음. → 처방: ‘care’는 3인칭 단수 동사가 아니므로 ‘care from V’를 써야 하며, (B)는 ‘movement is’로, (C)는 ‘a strong affix’로 문맥에 맞게 고르기.\n③ 진단: ‘cares’는 3인칭 단수 동사이므로 오기했을 수 있으나, (B) ‘movements are’를 선택한 이유는 복수 동사 ‘are’를 오해한 것임. (C) ‘the strong affix’는 부정관사 ‘a’가 필요한 문맥임. → 처방: ‘care’는 3인칭 단수가 아니므로 ‘care from V’를 써야 하며, (B)는 ‘movement is’로, (C)는 ‘a strong affix’로 선택하기.\n④ 진단: ‘care’를 3인칭 단수로 오해한 점은 없으나, (B) ‘movements are’를 선택한 이유는 복수 동사 ‘are’를 오해한 것임. (C) ‘the strong affix’는 부정관사 ‘a’가 필요한 문맥임. → 처방: ‘care’는 3인칭 단수가 아니므로 ‘care from V’를 써야 하며, (B)는 ‘movement is’로, (C)는 ‘a strong affix’로 선택하기.\n⑤ 진단: ‘cares’를 3인칭 단수로 오해한 점은 없으나, (B) ‘movements are’를 선택한 이유는 복수 동사 ‘are’를 오해한 것임. (C) ‘a strong affix’는 옳지만, (A)에서 ‘cares’를 오기한 점은 틀림. → 처방: ‘care’는 3인칭 단수가 아니므로 ‘care from V’를 써야 하며, (B)는 ‘movement is’로, (C)는 ‘a strong affix’로 선택하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-01T23:13:46.132Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "This would mean that ⓐ<u>head movement applies</u> in a successive-cyclic (two-step) fashion. Each of the two head movement operations in (52) – viz ⓑ<u>movement of cares</u> from V to NEG, and then from NEG to T – is local in the sense that ⓒ<u>it satisfies</u> the Head Movement Constraint (31), since in each case movement is from one head position into the next highest head position in the structure. If head movement is driven by affixal properties of heads, and if ⓓ<u>both T and NEGs</u> contain a strong affix with a V-feature which can trigger movement of a main verb, ⓔ<u>the verb care will first move</u> from V to NEG in order to attach to a null negative affix (in much the same way as the verb hath in (50) moves from V to Neg to attach to the overt negative affix ne), and the resulting complex NEG head (comprising a null negative affix with a verb attached to it) in turn will move from NEG to T in order to attach to a strong tense affix in T.",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 2,
+    "explanation": "틀린 곳은 ⓑ(movement of cares → movement of care), ⓓ(both T and NEGs → both T and NEG) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘head movement applies’는 문법적으로 올바르지만, ‘applies’라는 동사가 ‘head movement’라는 명사를 수식할 때 어색하다는 오해로 틀렸다고 판단했을 수 있음. 그러나 ‘applies’는 ‘적용되다’라는 뜻으로 문법 용어로 자연스럽게 쓰임. → 처방: ‘head movement applies’라는 표현이 문법 용어로 자연스럽다는 점을 기억하고, 동사+명사 조합이 어색하다고 오해하지 않도록 주의하기.\n③ 진단: ‘it satisfies’라는 대명사가 ‘head movement operations’라는 복수 명사를 가리키므로, 단수 대명사 ‘it’이 잘못되었다고 오해했을 수 있음. 그러나 ‘each’의 경우 단수 취급하므로 ‘it’이 맞음. → 처방: ‘each’는 단수 취급한다는 규칙을 떠올리고, 대명사가 복수인지 단수인지 꼼꼼히 확인하기.\n④ 진단: ‘both T and NEGs’라는 표현에서 ‘NEGs’라는 복수형이 문법적으로 틀렸다고 생각했을 수 있음. ‘NEG’는 ‘negative’의 약어로 단수형으로 쓰이므로 ‘NEGs’는 잘못됨. → 처방: 약어는 보통 단수형으로 쓰인다는 점을 기억하고, 약어 뒤에 ‘s’를 붙이는 오류를 주의하기.\n⑤ 진단: ‘the verb care will first move’라는 미래 시제가 문맥에 맞지 않다고 오해했을 수 있음. 그러나 지문은 이론적 설명으로, 미래 시제가 아니라 일반적 사실 설명으로 쓰였으므로 문법적으로 맞음. → 처방: 문맥이 이론적 설명인지, 실제 상황 설명인지 구별하고, 시제 사용 규칙을 다시 한 번 확인하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-01T23:15:19.121Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": -0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "머리 이동은 접사 특성을 만족시키기 위해 한 머리 위치에서 차례로 이루어져야 한다.",
+     "머리 이동은 접사 특성에 의해 발생하므로, 접사의 요구를 충족시키기 위해 머리 이동이 먼저 일어나야 한다.",
+     "머리 이동은 한 단계씩만 가능하며, 때로는 두 단계 이상으로도 이루어질 수 있다.",
+     "모든 머리 이동은 두 단계로만 이루어져야 하며, 한 단계로도 가능하지 않다.",
+     "머리 이동은 언제나 한 단계씩만 가능하고, 두 번째 머리 위치로만 한정된다."
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Head movement operates in a successive-cyclic manner, moving from one head position to the next to satisfy affixal requirements.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Head movement operates in a successive-cyclic manner, moving from one head position to the next to satisfy affixal requirements.]\n[오답 진단·처방]\n① 진단: 지문은 머리 이동이 접사 특성에 의해 발생한다고 설명하지만, '한 머리 위치에서 차례로'라는 표현은 지문에 없으며, 머리 이동의 '순차적' 성격은 Head Movement Constraint 를 만족시키기 위한 '국지적' 움직임일 뿐임을 혼동한 듯함. → 처방: 머리 이동의 '순차적' 성격이 아니라 '국지적' 움직임임을 정확히 이해하고, 접사 특성에 의한 발생 여부를 먼저 확인할 것.\n③ 진단: 지문은 머리 이동이 두 단계로 이루어질 수 있음을 설명하지만, '때로는 두 단계 이상'이라는 표현은 과장이며, '한 단계'도 가능하다는 내용은 지문에 없음을 혼동함. → 처방: 지문의 '두 단계' 예시만으로 '가능한 경우'를 판단하지 말고, 지문에 명시된 '한 단계' 가능성도 함께 고려할 것.\n④ 진단: 지문은 머리 이동이 두 단계로 이루어질 수 있음을 설명하지만, '반드시 두 단계'라는 절대적 표현은 지문에 없음을 혼동함. → 처방: 지문의 '가능한 경우'를 기준으로 삼고, 절대적 조건은 아닌지 재확인할 것.\n⑤ 진단: 지문은 머리 이동이 두 단계로 이루어질 수 있음을 설명하지만, '언제나 한 단계'라는 표현은 지문에 없으며, 두 번째 머리 위치로만 한정되는 것도 아님을 혼동함. → 처방: 지문의 '두 단계' 예시를 무시하지 말고, 머리 이동의 범위가 더 넓을 수 있음을 고려할 것."
+   }
+  },
+  {
+   "ts": "2026-08-01T23:15:28.177Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "This would mean that head movement applies in a successive-cyclic (two-step) fashion. Each of the two head movement o_________ in (52) – viz movement of care from V to NEG, and then from NEG to T – is local in the sense that it satisfies the Head Movement Constraint (31), since in each case movement is from one head position into the next highest head position in the structure. If head movement is driven by affixal properties of heads, and if both T and NEG contain a strong affix with a V-feature which can trigger movement of a main verb, the verb care will first move from V to NEG in order to attach to a null negative affix (in much the same way as the verb hath in (50) moves from V to Neg to attach to the overt negative affix ne), and the resulting complex NEG head (comprising a null negative affix with a verb attached to it) in turn will move from NEG to T in order to attach to a strong tense affix in T.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] operations — 문단의 논지상 이 자리에는 'operations'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-01T21:11:22.473Z",
    "type": "전체문장배열",
@@ -211,112 +324,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] particle (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-01T15:28:45.352Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 1/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Are We Dumb Anglo-Saxons? Try squaring the Sapir-Whorf hypothesis with, for example, the fact that today’s English was once Old English. As we have seen, the language I am writing in was not planted in one fell swoop from on high. Modern English is the current stage of what began as a very different grammar, much like German’s. Over a millennium-and-a-half, this grammar had grammatical features from Celtic plugged into it Botox-style, while also being radically shorn of its complexities liposuction-style by adults learning it as a second language. Now, let’s try to look at this language we speak as it is today through the eyes of the Sapir-Whorf hypothesis. We English speakers “cut nature up, organize it into concepts, and ascribe significances as we do, largely because we are parties to an agreement to organize it in this way” and “cannot talk at all except by subscribing to the organization and classification of data which the agreement decrees. [ ]",
-    "choices": [
-     "Or, to phrase it in the words of one of the hypothesis's early advocates:",
-     "Or, as an early opponent of the hypothesis declared:",
-     "Or, as a recent study conclusively proved:",
-     "Or, as a late critic of the Whorfian view would argue:",
-     "Or, as a modern linguist has since disproven:"
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 원문 '” Or, as an early Whorfian put it:'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘early opponent(반대자)’라는 표현을 보고 Sapir-Whorf 가설을 부정하는 입장인 줄 착각했다. 하지만 지문은 가설을 지지하는 내용만 담고 있어 오해이다. → 처방: Sapir-Whorf 가설의 ‘지지자’와 ‘반대자’를 구분하지 말고, 지문에서 가설을 ‘지지하는’ 표현(‘agreement’, ‘parties to’)만 집중해서 읽기.\n③ 진단: ‘recent study(최신 연구)’나 ‘conclusively proved(결정적으로 증명)’라는 표현을 보고 과학적 사실로 오해했다. 하지만 지문은 언어와 사고의 관계를 ‘합의’로 설명하는 철학적 가설에 불과하다. → 처방: ‘연구’나 ‘증명’이라는 단어에 현혹되지 말고, 지문이 가설을 ‘설명하는’ 방식(‘agreement’, ‘concepts’)에 주목하기.\n④ 진단: ‘late critic(후기 비평가)’라는 표현을 보고 가설을 비판하는 입장으로 오해했다. 하지만 지문은 가설을 지지하는 내용으로만 구성되어 있어 오독이다. → 처방: ‘비평가’라는 단어에 속지 말고, 지문에서 ‘지지를 표현하는’ 단어(‘parties to’, ‘agreement’)만 찾아 읽기.\n⑤ 진단: ‘modern linguist(현대 언어학자)’가 ‘disproven(반증했다)’고 오해했다. 하지만 지문은 가설을 지지하는 입장이므로 반증과는 무관하다. → 처방: ‘disproven’이라는 단어가 나오면 가설의 ‘반대’ 입장으로 오해할 수 있으니, 지문 전체의 ‘지지’ 분위기를 먼저 파악하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-01T15:30:08.394Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 14 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'simplification', 'Language', 'cultural' / 12~16단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Language evolves through cultural exchange and simplification rather than shaping thought in fixed ways.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-01T13:58:37.894Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "벨파스트 영어 구조에서 ‘there’의 위치와 기능을 분석하려고",
-     "특정 동사(should/have) 앞에서 ‘there’의 위치를 확인하려고",
-     "‘there’의 위치가 문법 규칙을 결정한다고 주장하려고",
-     "모든 영어 방언에서 ‘there’의 위치 변화를 연구하려고",
-     "‘there’를 모든 벨파스트 영어 문장에 필수적으로 분석하려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'to analyze the positioning and function of the expletive pronoun \"there\" in Belfast English structures.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘there’의 위치만 확인하려고 했다. 지문은 ‘there’의 위치와 기능(주어 역할, spec-T 위치) 모두를 분석하려고 한 것이다. → 처방: ‘there’의 위치뿐 아니라 그 기능(주어 역할, 문법적 위치)까지 함께 확인하는지 확인하기.\n③ 진단: ‘there’의 위치가 문법 규칙을 결정한다고 주장하는 것처럼 읽었다. 지문은 ‘there’의 위치와 기능을 분석하는 데 초점을 맞췄다. → 처방: ‘there’의 위치와 기능이 문법 규칙에 어떤 영향을 주는지 설명하는지 확인하기.\n④ 진단: 모든 영어 방언이 아닌 벨파스트 영어에만 초점을 맞추고 있다. 지문은 벨파스트 영어와 표준 영어의 차이를 비교 분석하려고 한다. → 처방: 지문에서 언급된 ‘벨파스트 영어’와 ‘표준 영어’의 차이를 구분해서 읽기.\n⑤ 진단: ‘there’를 벨파스트 영어 문장에 ‘필수적’으로 분석하려고 했다. 지문은 ‘there’의 위치와 기능을 분석하는 데 목적이 있다. → 처방: ‘there’의 필수성 여부보다 ‘위치와 기능’이 주제인지 확인하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to analyze the positioning and function of the expletive pronoun \"there\" in Belfast English structures.]"
-   }
-  },
-  {
-   "ts": "2026-08-01T13:58:49.389Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 16 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'expletive', 'auxiliary', 'inversion' / 14~18단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] In Belfast English, the expletive \"there\" occupies the subject position and allows auxiliary inversion in questions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

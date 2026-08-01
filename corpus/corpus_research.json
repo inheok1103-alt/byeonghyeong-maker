@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-01T22:15:01.261Z",
+ "updated": "2026-08-01T23:15:59.825Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-01T23:15:30.737Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스는 '주어 + have/has + 명사구' 구조에서 관사(a/the)나 소유격('s) 사용이 필수적임을 보여준다. 특히 'subjective to'와 같은 전치사구를 동반한 경우, 전치사의 목적어는 명확한 한정사(예: the, each, every)가 필요한 경우가 많다.",
+   "rule": "'have/has + 명사구' 또는 'be + 형용사 + 전치사구' 구조에서, 명사구가 추상적이거나 범용적일 경우 반드시 한정사(a/the/each/every) 또는 소유격('s)을 첨가하여 구체화하라. 예: 'have information' → 'have all the information'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-01T22:14:34.820Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서에서 'to be + 동사원형' 구문은 '~하기 위해'로 해석되는 경우가 많지만, 한국어에서는 '~해야 한다'/'~할 필요가 있다'로 자연스럽게 재구성되는 경우가 많다. 특히 'resource for the cars to be working' 같은 경우 '자동차가 작동하기 위한 자원'으로 해석될 수 있으나, 한국어로는 '자동차가 작동할 수 있도록 필요한 자원'으로 변환하는 것이 자연스럽다.",
    "rule": "원서 문장에서 'to be + 동사원형' 구문이 '목적'을 나타낼 경우, 한국어 변형에서는 '~하기 위해' 대신 '~해야 한다'/'~할 필요가 있다'로 재구성하여 오류를 유도하라. 예: 'It is the main resource for the cars to be working.' → 'It is the main resource that cars need to run.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-27T00:16:33.884Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'명사 단수/복수 오류'와 '동사 시제 오류'가 연어(collocation) 패턴에서 빈번하게 등장하며, 특히 'compulsory to attend'와 같은 고정 표현이 오답 설계에 활용된다. 또한 'reasons for live'와 같이 전치사+동사 형태의 오류도 다수 발견된다.",
-   "rule": "'명사 단수/복수 오류'는 'compulsory to attend'와 같은 고정 연어 뒤에 오는 명사구가 단수/복수 형태를 혼용하는 경우를 우선적으로 검토하며, 'reasons for live'와 같은 전치사+동사 형태는 'reasons to live'로 수정하는 규칙을 적용한다.",
    "sample": [
     "old english",
     "university press",
