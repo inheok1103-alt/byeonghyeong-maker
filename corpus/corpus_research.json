@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-01T18:16:25.549Z",
+ "updated": "2026-08-01T19:41:03.839Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-01T19:40:34.759Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'a/an + 복수명사' 오류가 빈번하며, 특히 'make a products'처럼 관사 오류가 'make product'로 단순화되는 패턴이 확인된다. 또한 'and' 구문에서 동사 일치 오류('make a products and sell it')가 자주 발생한다.",
+   "rule": "복수명사 앞에 관사를 사용할 때 'a/an + 복수명사'는 오류로, 항상 'a/an + 단수명사' 또는 복수명사 자체를 사용하도록 문항을 설계하라. 예: 'make a product' 또는 'make products'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-01T18:15:55.984Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "명사구 내 관사(a/an/the) 위치와 수 일치 오류가 빈번하며, 특히 'a such' → 'such a'로의 재배열과 복수명사/단수명사 혼동이 두드러진다.",
    "rule": "CEFR B1 수준 이하의 내신 문제에서, 관사(a/an/the)의 올바른 배치(예: 'a such' → 'such a')와 명사의 수(단수/복수) 일치를 필수적으로 검증하는 문항을 20% 이상 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-26T21:14:54.447Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'instead of + 단수명사' 오류는 'instead of + 복수명사'로 수정해야 하며, 'will able'는 'can'으로, 'choosed'는 'chose'로 과거형 오류가 발생함을 확인했다. 또한 문장 구조의 오류(주어-동사 불일치, 시제 혼용)도 빈번히 나타났다.",
-   "rule": "'instead of + 명사' 뒤에는 해당 명사의 복수형 또는 불가산명사를 사용해야 하며, 조동사 'can/could/will' 뒤에는 동사원형이 와야 한다. 또한 과거형 동사는 '-ed' 규칙형이 아닌 경우 과거형 표기(예: 'choose→chose')를 확인해야 한다.",
    "sample": [
     "old english",
     "university press",
