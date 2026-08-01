@@ -1,6 +1,44 @@
 {
- "updated": "2026-08-01T03:56:07.182Z",
+ "updated": "2026-08-01T06:44:09.641Z",
  "samples": [
+  {
+   "ts": "2026-08-01T06:42:17.831Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "EXERCISE 28b — Write three sentences using the objects in parentheses. Be sure to put the objects in the right place. 1. The White House ⓐ<u>beefed up</u>. (security, it) 2. The police are ⓑ<u>breaking up</u>. (the protest, it) 3. A trained technician ought to ⓒ<u>carries out</u>. (the experiment, it) 4. The foundation ⓓ<u>gave away</u>. (the money, it) 5. Susie always ⓔ<u>messes up</u>. (the bathroom, it) 6. Todd stood up. (Heather, her) EXERCISE 28c — Write answers to the questions using phrasal verbs and participle adjectives from this unit. Make all the phrasal verbs passive. 1. Dr. Wood will do the test of the new drug. What will happen to the test? 2. The statue was smashed by thieves. What happened to the gold statue? 3. The children made the house dirty and disorganized. What happened to the house? 4. In Question 3, how would you describe the house? 5. Mike’s friend promised to come to his house, but he didn’t. What happened to Mike? 6. Karen called Sarah, but Sarah was at school. Sarah didn’t call Karen later. What didn’t happen to Karen?",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓒ: 'carries out' → 'carry out'\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-01T06:43:39.929Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 7 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 7단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 백악관은 보안을 강화했다.\n주어진 단어: ( white / house / beefed )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The White House beefed up its security. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-01T03:54:53.506Z",
    "type": "목적",
@@ -325,61 +363,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'The hierarchical embedding of grammatical structures within one another reflects how language organizes meaning through conventionalized patterns rather than rigid, independent units.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 '자동화된(constructional) 구성의 독립성'을 강조하는데, 이 학생은 '자립적인(rigid, self-contained) 단위'에만 집중해 전체 의미를 놓쳤다. '의존성과 관습성'을 오해한 듯하다. → 처방: 지문의 'autonomy of the construction(구성체의 독립성)'과 'conventionalization(관습화)'을 함께 읽고, '의존성'과 '관습성'의 차이를 분명히 구분해서 보라.\n③ 진단: 지문의 '구조적 중첩(nesting)'을 '실제 공간의 용기 쌓기'로 비유한 선지를 선택했는데, 이는 추상적 언어 구조를 구체적 이미지로 잘못 해석한 오류다. → 처방: 언어 구조의 '중첩'은 '구체적 물리적 현상'이 아니라 '의미와 역할의 계층'임을 기억하고, 비유가 아닌 '구성체의 관습적 결합'에 초점을 맞춰라.\n④ 진단: 지문의 '계층적 중첩이 규칙적'임을 '산발적(sporadically)'으로 오해했는데, 'autonomy(독립성)'과 'conventionalization(관습화)'이 보장된 경우에만 중첩이 일어난다는 점을 놓쳤다. → 처방: 지문의 'justified only by the autonomy of the construction' 부분을 정확히 읽고, '규칙성'과 '산발성'의 차이를 명확히 이해하라.\n⑤ 진단: 지문의 '복잡성을 단순화하는 독립적 요소'가 아니라 '관습적 패턴에 의한 계층적 결합'을 설명한 선지를 선택했는데, '단순화'라는 키워드에만 주목해 의미를 왜곡했다. → 처방: '단순화'가 아니라 '관습적 패턴과 계층적 결합'이 핵심임을 인식하고, 지문의 'conventionalized patterns'와 'nesting'을 함께 분석하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-31T17:56:14.036Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] For example, the Passive Subject role in the Passive Voice construction is filled by a Subject Phrase construction which may itself be complex: for example consisting of a Noun combined with a Relative Clause, which in turn is a complex construction in its own right.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 예를 들어, 수동태 문장에서 수동 주어 역할을 하는 주어구는 그 자체가 복잡할 수 있는데, 이는 예를 들어 관계사절이 결합된 명사로 구성되며, 이 관계사절 또한 그 자체로 복잡한 구조를 지니는 경우입니다. (구문 포인트: 관계사절(relative clause) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-31T12:19:06.718Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "Infinitival to (by virtue of being the head of the overall structure and being active) serves as a probe and identifies both there and several prizes as active goals (there being active by virtue of its uninterpretable person feature, and several prizes by virtue of its uninterpretable case feature). Person agreement between the probe (A) [to and their / to and its] two third-person goals (there and several prizes) results in the unvalued person feature on to (B) [being valued / being value] as third-person via (7) and deleted via (13). The unvalued case-feature on the goal several prizes cannot be valued or deleted by infinitival to, given our earlier assumption that to is a defective probe which (C) [cannot value / can values] or delete an unvalued case feature on a goal. But what about the uninterpretable person feature on expletive there? If this gets deleted at this point, there will be inactivated at the end of the T-cycle, once it has moved to become the specifier of infinitival to: and this will wrongly predict that sentences such as the following should be grammatical:",
-    "choices": [
-     "(A) to and their - (B) being value - (C) can values",
-     "(A) to and its - (B) being value - (C) cannot value",
-     "(A) to and its - (B) being value - (C) can values",
-     "(A) to and their - (B) being value - (C) cannot value",
-     "(A) to and its - (B) being valued - (C) cannot value"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) to and its - (B) being valued - (C) cannot value. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'their'를 사용했으며, 'being value'와 'can values'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n② 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'its'를 사용했으며, 'being value'와 'cannot value'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n③ 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'its'를 사용했으며, 'being value'와 'can values'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n④ 진단: to 와 함께 사용된 목적어의 소유자가 사람인지 아닌지 구분하지 못하고 혼동하여 'their'를 사용했으며, 'being value'와 'cannot value'의 문법적 일관성을 지키지 못했다. ('to is a defective probe which cannot value or delete an unvalued case feature on a goal' 지문 참조) → 처방: 목적어의 소유자가 사람인지 아닌지 구분하고, 'being valued'와 'cannot value'의 문법적 일관성을 지키도록 한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
