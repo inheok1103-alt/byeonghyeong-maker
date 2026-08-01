@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-01T11:38:42.164Z",
+ "updated": "2026-08-01T13:59:17.576Z",
  "samples": [
+  {
+   "ts": "2026-08-01T13:58:37.894Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "벨파스트 영어 구조에서 ‘there’의 위치와 기능을 분석하려고",
+     "특정 동사(should/have) 앞에서 ‘there’의 위치를 확인하려고",
+     "‘there’의 위치가 문법 규칙을 결정한다고 주장하려고",
+     "모든 영어 방언에서 ‘there’의 위치 변화를 연구하려고",
+     "‘there’를 모든 벨파스트 영어 문장에 필수적으로 분석하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'to analyze the positioning and function of the expletive pronoun \"there\" in Belfast English structures.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘there’의 위치만 확인하려고 했다. 지문은 ‘there’의 위치와 기능(주어 역할, spec-T 위치) 모두를 분석하려고 한 것이다. → 처방: ‘there’의 위치뿐 아니라 그 기능(주어 역할, 문법적 위치)까지 함께 확인하는지 확인하기.\n③ 진단: ‘there’의 위치가 문법 규칙을 결정한다고 주장하는 것처럼 읽었다. 지문은 ‘there’의 위치와 기능을 분석하는 데 초점을 맞췄다. → 처방: ‘there’의 위치와 기능이 문법 규칙에 어떤 영향을 주는지 설명하는지 확인하기.\n④ 진단: 모든 영어 방언이 아닌 벨파스트 영어에만 초점을 맞추고 있다. 지문은 벨파스트 영어와 표준 영어의 차이를 비교 분석하려고 한다. → 처방: 지문에서 언급된 ‘벨파스트 영어’와 ‘표준 영어’의 차이를 구분해서 읽기.\n⑤ 진단: ‘there’를 벨파스트 영어 문장에 ‘필수적’으로 분석하려고 했다. 지문은 ‘there’의 위치와 기능을 분석하는 데 목적이 있다. → 처방: ‘there’의 필수성 여부보다 ‘위치와 기능’이 주제인지 확인하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to analyze the positioning and function of the expletive pronoun \"there\" in Belfast English structures.]"
+   }
+  },
+  {
+   "ts": "2026-08-01T13:58:49.389Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 16 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'expletive', 'auxiliary', 'inversion' / 14~18단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] In Belfast English, the expletive \"there\" occupies the subject position and allows auxiliary inversion in questions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-01T11:37:42.880Z",
    "type": "밑줄함의",
@@ -289,74 +343,6 @@
     ],
     "answer": 2,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘적응하지 않는다’는 내용은 지문에 전혀 없으며, 오히려 ‘적응한다’는 글이 반복된다. ‘~하지 않는다는’ 표현은 지문에서 직접 언급된 적이 없다는 점을 오해한 듯하다. → 처방: 지문에서 ‘적응한다’는 말이 반복되므로, ‘적응하지 않는다’는 말은 무조건 틀렸다는 사실을 기억하라. ‘~하지 않는다’는 표현이 나오면 한 번 더 확인해라.\n③ 진단: ‘효과 있다고 느낀 동작’을 그만둔다는 내용은 지문에 없다. 지문은 ‘효과 없다고 느낀 동작’을 그만둔다고 쓰여 있다. ‘효과 있다고’와 ‘효과 없다고’를 혼동한 듯하다. → 처방: 지문에서 ‘효과 없다’는 말이 나오면 그 반대인 ‘효과 있다’는 말은 자동으로 틀렸다고 생각하라. 반대 표현을 주의 깊게 읽어라.\n④ 진단: ‘손해가 되는 일을 한다’는 내용은 지문에 없다. 지문은 ‘이득이 되는 일’을 한다는 말이 나오며, 손해는 피한다는 내용만 있다. ‘이득’과 ‘손해’를 혼동한 듯하다. → 처방: ‘이득’이란 단어가 지문에 나오면 그 반대인 ‘손해’는 틀렸다고 생각해라. 이득과 손해를 구분해서 읽어라.\n⑤ 진단: ‘문제를 피하거나 불이익을 늘리는 행동’을 한다는 내용은 지문에 없다. 지문은 ‘문제를 피하거나 불이익을 줄이는 행동’을 한다는 말이 나오며, ‘늘린다’는 말은 반대다. ‘줄인다’와 ‘늘린다’를 혼동한 듯하다. → 처방: ‘문제를 피한다’ 또는 ‘불이익을 줄인다’는 말이 지문에 나오면 그 반대 표현은 틀렸다고 생각해라. 반대 의미를 주의해서 읽어라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-31T23:17:30.014Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Ray English 지문 전문 · 원문 그대로 34번 빈칸 [ 3 점] · B L A N K 결과에 따라 행동을 바꾸기 빈칸 빈칸 = changing behaviors in light of the consequences: 결과(칭찬/무효)에 따라 행동을 바꾼다(조작적 조건화). 소재 결과에 따른 행동 변화 Changing behavior by its consequences 주제 우리는 결과에 비추어 행동을 조정하며 적응한다 We adapt by acting on consequences 제목 결과가 행동을 바꾼다 We Adapt by Acting on Consequences 한눈에 인간은 ‘결과에 따라 행동을 바꾸며’ 적응한다는 글이다. 칭찬받은 아이는 그 행동을 계속하고, 효과 없다고 느끼는 무용 수는 그만둔다. 즉 이득이 되는 일은 하고 문제가 되는 방식은 피하는 ‘결과 기반 적응’이 핵심이다. 지문 전문 — 시험지 원문 A particularly powerful way in which human beings adapt and adjust to their circumstances is by ＿＿＿＿＿＿＿＿ that they yield. For instance, a child who gets praised by her teacher for doing an exercise correctly is likely to continue doing the exercise in that way. A dancer who feels that a particular conditioning exercise is not giving any results is likely to give that exercise up in favor of another one that seems more promising. In general, we tend to do things that bring us some kind of benefit or act in ways that help us avoid some kind of problem, discomfort, or disadvantage. We also tend to do fewer things (or stop doing things) that lead to problems, discomfort, or disadvantages, and we tend to avoid acting in ways that do not bring any benefit or reward. 지문 전문 · 원문 그대로\n\n─────────\n[요약문] Humans adapt to their environment by (A) behaviors based on the (B) they produce.",
-    "choices": [
-     "(A) replicating … (B) expectations",
-     "(A) modifying … (B) outcomes",
-     "(A) ignoring … (B) consequences",
-     "(A) suppressing … (B) outcomes",
-     "(A) reinforcing … (B) intentions"
-    ],
-    "answer": 2,
-    "explanation": "(A) modifying / (B) outcomes 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘replicating(모방하다)’는 지문에서 행동의 ‘변화’(adapt, adjust)를 설명하는 내용과 맞지 않으며, ‘expectations(기대)’는 지문에서 ‘칭찬’, ‘결과’ 등으로 언급된 ‘outcomes(결과)’와 의미가 다르다. → 처방: ‘adapt(적응하다)’의 핵심은 ‘결과’에 따라 행동을 ‘고치는 것’이므로, ‘결과’를 뜻하는 ‘outcomes’를 빈칸에 넣어야 한다.\n③ 진단: ‘ignoring(무시하다)’는 지문에서 행동이 ‘결과’에 따라 바뀐다는 핵심 내용을 반대로 설명하며, ‘consequences(결과)’는 ‘outcomes’와 의미가 비슷하지만 부정적인 뉘앙스가 강해 지문의 중립적 설명과 맞지 않다. → 처방: ‘결과’를 뜻하는 ‘outcomes’를 빈칸에 넣고, 행동이 결과에 따라 ‘고쳐지는 것’을 강조해야 한다.\n④ 진단: ‘suppressing(억누르다)’는 행동을 ‘없애는 것’을 뜻하며, 지문은 행동이 ‘변화’(adjust)하는 과정을 설명하므로 적합하지 않다. ‘outcomes’는 ‘결과’를 뜻하지만, 앞의 동사가 맞지 않다. → 처방: ‘결과’를 뜻하는 ‘outcomes’를 빈칸에 넣고, 행동이 결과에 따라 ‘고쳐지는 것’을 나타내는 동사를 선택해야 한다.\n⑤ 진단: ‘reinforcing(강화하다)’는 지문에서 ‘칭찬’이나 ‘유용성’을 언급하는 부분과는 관련이 있지만, 행동의 ‘변화’를 설명하는 핵심 내용과는 맞지 않는다. ‘intentions(의도)’는 지문에서 다루지 않은 개념이다. → 처방: ‘결과’를 뜻하는 ‘outcomes’를 빈칸에 넣고, 행동이 결과에 따라 ‘고쳐지는 것’을 강조하는 동사를 선택해야 한다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-31T21:30:17.169Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버교정: 솔버 2/3 다수결 4번(기록 5번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "음성 양화사 항목이 허용되는 환경을 검토하려고",
-     "음성 양화사 항목이 허용되는 환경을 정리하려고",
-     "음성 양화사 항목이 모든 환경에서 허용된다고 주장하려고",
-     "음성 양화사 항목이 허용되는 환경을 설명하려고",
-     "음성 양화사 항목이 허용되는 환경을 예측하려고"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'To predict environments where negative polarity items are licensed.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To predict environments where negative polarity items are licensed.]\n[오답 진단·처방]\n① 진단: 지문 (44)와 (48)에서 '음성 양화사 항목이 허용되는 환경'을 '검토'하는 것이 아니라 '정리'하고 '예측'하는 목적으로 서술했음을 오해했음. 특히 (47)에서 'downward-entailing environments'가 NPI 허용 환경과 '정확히 일치'한다고 결론짓는 부분이 '검토'의 의미를 담고 있다고 잘못 해석함. → 처방: 지문에서 '목적'을 찾을 때는 결론이나 요약 부분(예: (47))을 집중해서 읽고, '검토'와 '정리'의 차이를 분명히 구분할 것.\n② 진단: 지문 (48)에서 'NPI licensing environments'를 '정리'하는 내용이 포함되어 있지만, 이는 '목적'이 아니라 '과정'에 해당함을 오해했음. 학생은 '정리' 자체가 목적인 것처럼 오독했으며, (47)의 '예측'과 '일치'라는 핵심 논점을 놓침. → 처방: 글의 '목적'은 '결론'이나 '주장'에 집중해야 하며, '과정'이나 '예시'는 참고용임을 기억할 것.\n③ 진단: '모든 환경에서 허용된다'는 주장이 지문에 없음을 오독했음. 지문은 NPI 가 '특정 환경'(downward-entailing)에서만 허용된다고 설명하며, 이를 '예측'했다고 서술했음. 학생은 '모든 환경'이라는 과장된 해석을 내림. → 처방: 지문의 주장 범위를 정확히 파악하고, '모든'이나 '항상' 같은 절대어 사용을 주의할 것.\n⑤ 진단: '예측'의 의미를 '설명'과 혼동했음. 지문은 NPI 허용 환경이 downward-entailing 환경과 '정확히 일치'한다고 '예측'했다고 서술하지만, 학생은 이를 '설명'하는 것으로 오해했음. '예측'은 이론적 결론을, '설명'은 원인을 다룸. → 처방: '예측'과 '설명'의 차이를 분명히 하고, 지문의 결론(47)을 다시 한 번 읽으며 '예측'의 의미를 재확인할 것."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-01T11:38:42.161Z",
+ "updated": "2026-08-01T13:59:17.572Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-01T13:58:51.935Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거 시제 오류와 현재 시제 오류가 혼용된 문장에서 시제 일관성이 깨지는 경우가 많다. 또한, 전치사 오류(aboue→about, for skin→for skin care)와 철자 오류(actully→actually, beacuse→because)가 빈번히 발생한다.",
+   "rule": "과거 시제와 현재 시제가 혼용된 문장은 반드시 시제 일관성을 점검하고, 전치사(about, for, in 등)는 해당 명사구와 어울리는지 확인하라. 또한, 철자 오류(actually, because 등)를 최소화하기 위해 빈출 철자 패턴을 숙지하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-01T11:38:00.188Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사구(NP) 내 명사 수식어(형용사/관사)의 선택적 관사가 오류 유발 패턴으로 확인되며, 특히 고유명사·집합명사·단수명사에서 관사의 유무가 문법성 판단의 핵심 변수로 작용한다. 또한, 동사 시제·태(tense/voice) 변화와 함께 직접목적어(direct object)의 수·형태가 문맥에 맞게 조정되어야 한다.",
    "rule": "단수 고유명사(예: Persian langage) 앞에는 반드시 정관사 'the'를 첨가하여 문법성을 확보하고, 복수형·집합명사(예: group rules, prescribed fire solution)는 문맥에 맞는 수 일치를 강제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-26T14:00:20.513Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'be 동사'의 누락이 빈번한 오류로 나타나며, 특히 'as ~ as' 구조에서 'be'가 필수적임을 확인할 수 있다. 또한, 철자 오류('refuced'→'refused')와 구두점 오류('In deed'→'Indeed')가 복합적으로 발생하는 패턴을 보인다.",
-   "rule": "CEFR B1 수준 내신 문법 문제에서 'as ~ as' 비교구조와 'be 동사'의 필수 결합을 반드시 포함하여 출제하며, 'be'가 누락된 오류 문항을 1문항 이상 포함시킨다.",
    "sample": [
     "old english",
     "university press",
