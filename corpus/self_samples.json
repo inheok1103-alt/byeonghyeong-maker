@@ -1,6 +1,65 @@
 {
- "updated": "2026-08-01T06:44:09.641Z",
+ "updated": "2026-08-01T09:28:44.358Z",
  "samples": [
+  {
+   "ts": "2026-08-01T09:27:21.299Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Stations and airports; important buildings <u>We do not use the with most stations and airports</u>; with religious, educational and official buildings or with palaces and houses. to Waterloo (Station) at Orly (Airport) near St Mary's Church Merton College Norwich Museum Lambeth Palace Ashdown House Exceptions are names with of or with a noun (science) or adjective (open). at the University of York in the Palace of Westminster the Science Museum the Open University past the White House Theatres, cinemas, hotels, galleries and centres A possessive form ('s) is without the. St Martin's (Theatre) at Durrant's (Hotel) In the US, names with center are without the. near Lincoln Center But usually theatres, cinemas, etc have the. at the Globe (Theatre) the Plaza (Cinema) outside the Dorchester (Hotel) in the Tate (Gallery) the Brunei shopping centre",
+    "choices": [
+     "English speakers frequently exercise discretion in article usage, opting to omit 'the' for enhanced stylistic flow when referring to common public transportation hubs.",
+     "The grammatical principle governing article omission for public places is widely considered straightforward and easily acquired by all individuals learning the English language.",
+     "In standard English communication, the definite article is routinely absent preceding references to various established public transportation facilities and their specific designations.",
+     "English grammar dictates specific and often non-intuitive exclusions of definite articles for certain categories of public venues, reflecting inherent linguistic conventions.",
+     "The observed patterns of article suppression in discourse concerning public locations have progressively generated the established grammatical rules within the English language system."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'English grammar dictates specific and often non-intuitive exclusions of definite articles for certain categories of public venues, reflecting inherent linguistic conventions.'을 함의한다.\n[오답 진단·처방]\n① 진단: 학생은 'English speakers frequently exercise discretion'라는 구절을 너무 일반화하여 해석했을 가능성이 있는데, 실제로는 특정 건물이나 장소에 대한 article 사용에 대한 구체적인 규칙이 존재한다는 점을 간과했을 수 있다. → 처방: 특정 건물이나 장소에 대한 article 사용 규칙을 더 구체적으로 공부해야 한다.\n② 진단: 학생은 article 사용 규칙을 너무 단순화하여 생각했을 가능성이 있는데, 실제로는 여러 예외와 특이한 경우가 존재한다는 점을 간과했을 수 있다. → 처방: article 사용 규칙의 예외와 특이한 경우를 더 자세히 공부해야 한다.\n③ 진단: 학생은 'standard English communication'이라는 구절을 너무 일반화하여 해석했을 가능성이 있는데, 실제로는 특정 건물이나 장소에 대한 article 사용에 대한 구체적인 규칙이 존재한다는 점을 간과했을 수 있다. → 처방: 특정 건물이나 장소에 대한 article 사용 규칙을 더 구체적으로 공부해야 한다.\n⑤ 진단: 학생은 article 사용 규칙의 역사적 발전에 대한 구절을 너무 중요하게 생각했을 가능성이 있는데, 실제로는 현재의 규칙과 예외를 이해하는 것이 더 중요하다. → 처방: 현재의 article 사용 규칙과 예외를 더 자세히 공부해야 한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-01T09:27:57.885Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "Stations and airports; important buildings We do not use the with most stations and airports; with religious, educational and official buildings or with palaces and houses. to Waterloo (Station) at Orly (Airport) near St Mary's Church Merton College Norwich Museum Lambeth Palace Ashdown House Exceptions are names with of or with a noun (science) or adjective (open). at the University of York in the Palace of Westminster the Science Museum the Open University past the White House Theatres, cinemas, hotels, galleries and centres A possessive form ('s) is without the. St Martin's (Theatre) at Durrant's (Hotel) In the US, names with center are without the. near Lincoln Center But usually theatres, cinemas, etc have the. at the Globe (Theatre) the Plaza (Cinema) outside the Dorchester (Hotel) in the Tate (Gallery) the Brunei shopping centre",
+    "choices": [
+     "‘워털루’ 역과 ‘오를리’ 공항은 정관사 없이 사용된다",
+     "‘세인트 메리 교회’는 종교 건물로 정관사가 붙지 않는다",
+     "‘머튼 칼리지’는 교육 기관으로 정관사가 붙지 않는다",
+     "‘워털루’ 역과 ‘오를리’ 공항은 정관사가 붙는다",
+     "‘글로브 극장’은 관사가 붙은 채로 사용된다"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: ‘워털루’ 역과 ‘오를리’ 공항은 지문에서 ‘with most stations and airports’를 통해 정관사 없이 쓴다고 나와 있다. 이 학생은 지문에서 ‘We do not use the with most stations and airports’를 읽고도 ‘정관사가 붙지 않는다’는 사실을 오독하지 않았다. → 처방: ‘most’를 강조해 ‘대부분의 기차역과 공항은 정관사가 없다’는 규칙을 기억하고, 예외가 아닌지 확인하는 습관을 기르기.\n② 진단: ‘세인트 메리 교회’는 지문에서 ‘religious buildings’에 해당하며, ‘near St Mary’s Church’를 예시로 정관사 없이 쓴다고 나와 있다. 이 학생은 종교 건물도 정관사가 붙지 않는다는 사실을 오독하지 않았다. → 처방: ‘religious, educational and official buildings’ 목록을 외우고, 이 범주에 속하는지 먼저 확인하는 방법 익히기.\n③ 진단: ‘머튼 칼리지’는 지문에서 ‘educational buildings’에 해당하며, ‘Merton College’를 예시로 정관사 없이 쓴다고 나와 있다. 이 학생은 교육 기관도 정관사가 붙지 않는다는 사실을 오독하지 않았다. → 처방: ‘educational buildings’ 목록을 확인하고, ‘-college’, ‘-university’ 같은 단어는 정관사 없이 쓴다는 점 기억하기.\n⑤ 진단: ‘글로브 극장’은 지문에서 ‘theatres, cinemas, hotels, galleries and centres’는 보통 정관사가 붙는다고 나와 있으며, ‘at the Globe (Theatre)’를 예시로 들었다. 이 학생은 ‘theatres’는 정관사가 붙는 경우가 많다는 사실을 오독하지 않았다. → 처방: ‘theatres, cinemas, hotels, galleries’는 ‘보통(the)’ 정관사가 붙는다는 규칙을하고, 예외(‘St Martin’s (Theatre)’)도 함께 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-01T06:42:17.831Z",
    "type": "틀린문장 고쳐쓰기",
@@ -296,73 +355,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Construction grammar posits that complex constructions can fill roles of other constructions, and their autonomy justifies their existence within larger constructions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘고려하지 않는다’는 말은 지문에서 ‘독립성(autonomy)이 없다면 그 구문의 존재가 정당화되지 않는다’고 한 부분을 오해한 것이다. 지문은 복잡한 구문의 존재가 ‘독립성’을 기준으로 정당화된다고 명시한다. → 처방: ‘고려하지 않는다’는 표현 대신 ‘독립성을 기준으로 정당화된다’는 지문의 핵심 내용을 정확히 읽고 답을 골라야 한다.\n② 진단: ‘일부 복잡한 구문만 대체할 수 있다’는 말은 지문에서 ‘모든 복잡한 구문’이 대체 가능하다고 한 부분을 무시한 것이다. 지문은 ‘복잡한 구문’이 대체할 수 있음을 강조하며, 제한을 두지 않는다. → 처방: ‘일부’가 아니라 ‘모든 복잡한 구문’이 대체 가능하다는 지문의 내용을 정확히 파악하고 답을 고르도록 연습한다.\n③ 진단: ‘존재 가치를 인정받기 위해 대체 가능해야 한다’는 말은 지문의 ‘독립성이 구문의 존재를 정당화한다’는 의미를 잘못 해석한 것이다. 지문은 ‘대체 가능성’이 아니라 ‘독립성’이 구문의 존재를 정당화한다고 말한다. → 처방: ‘존재 가치’가 아니라 ‘독립성’이 구문의 존재를 정당화한다는 지문의 핵심 뜻을 정확히 이해하고 답을 선택한다.\n④ 진단: ‘모든 구문 구조를 설명할 수 있다’는 말은 지문에서 ‘일부 구성 요소는 독립적인 구문이 아닐 수 있다’는 예를 들며 한계를 지적한 부분을 무시한 것이다. 지문은 ‘모든 구문’을 설명할 수 있다고 주장하지 않는다. → 처방: ‘모든 구문’을 설명할 수 있다는 과장된 표현이 아니라, ‘독립성이 구문의 존재를 정당화한다’는 지문의 핵심을 정확히 읽고 답을 고른다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Construction grammar posits that complex constructions can fill roles of other constructions, and their autonomy justifies their existence within larger constructions.]"
-   }
-  },
-  {
-   "ts": "2026-07-31T17:55:11.159Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "There is however another important representational commitment in Radical ⓐ<u>Construction</u> ⓑ<u>Grammar</u>, shared with other construction grammars, namely that ⓒ<u>complex</u> ⓓ<u>constructions</u> may fill the roles of other complex constructions. For ⓔ<u>example</u>, the Passive Subject role in the Passive Voice construction is filled by a Subject Phrase construction which may itself be complex: for example consisting of a Noun combined with a Relative Clause, which in turn is a complex construction in its own right. The nesting of complex constructions is similar to the constituent structure of nonconstructional theories. However it differs from those in that the existence of a nested construction is justified only by the autonomy of the construction (i.e. its conventionalization independent of the larger construction). In a construction grammar, some “constituents” may not be autonomous constructions. For example, in the idiomatic construction shoot the breeze, the breeze is not an autonomous phrasal constituent any more, since the choice of Definite Article as well as the choice of Noun are fixed for this construction.",
-    "choices": [
-     "construction: The process of constructing.",
-     "grammar: A system of rules and principles for speaking and writing a language.",
-     "complex: (grammar) The passive voice of verbs.",
-     "constructions: The process of constructing.",
-     "example: Something that is representative of all such things in a group."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ의 풀이는 'passive'의 정의이다. 'complex'의 올바른 풀이: A network of interconnected systems.\n[오답 진단·처방]\n① 진단: 지문에서 'construction'은 '문법에서 쓰이는 구문(문법적 구조)'을 뜻하는데, 학생은 '건축이나 만드는 과정'으로 오해한 듯하다. 지문 첫 문장에 'representational commitment in Radical Construction Grammar'로 나와 있어 '구문'임을 알 수 있다. → 처방: 문법 용어의 뜻을 정확히 알고, 지문에서 해당 단어가 쓰인 문맥을 꼼꼼히 살핀다.\n② 진단: 학생은 'grammar'를 '말하거나 쓰는 규칙과 원칙'으로만 알고 있지만, 지문에서는 'Construction Grammar'라는 특정 이론의 한 종류로 쓰였다. 학생은 '일반적인 문법'으로만 해석한 듯하다. → 처방: 문법 이론의 종류(예: Construction Grammar, Generative Grammar 등)를 구분하고, 지문에서 해당 이론이 어떤 의미를 가지는지 확인한다.\n④ 진단: 학생은 'constructions'를 '건축이나 만드는 과정'으로 오해한 듯하다. 지문에서는 'complex constructions'가 '복잡한 구문'을 뜻하는데, 학생은 '구축 과정'으로만 해석했다. → 처방: 문법 용어에서 'construction'은 '구문'을 의미한다는 점을 기억하고, 지문에서 해당 단어가 쓰인 문맥을 다시 한 번 확인한다.\n⑤ 진단: 학생은 'example'을 '예시'로만 알고 있지만, 지문에서는 '예를 들어'라는 뜻으로 쓰였다. 학생은 '대표적인 사례'로만 해석한 듯하다. 지문에서 'for example'로 나와 있어 '예시'임을 알 수 있다. → 처방: 단어의 뜻과 문맥을 함께 고려하여, 'for example'와 같이 쓰이는 경우 '예시'라는 뜻임을 기억한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-07-31T17:55:59.323Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "There is however another important representational commitment in Radical Construction Grammar, shared with other construction grammars, namely that complex constructions may fill the roles of other complex constructions. For example, the Passive Subject role in the Passive Voice construction is filled by a Subject Phrase construction which may itself be complex: for example consisting of a Noun combined with a Relative Clause, which in turn is a complex construction in its own right. <u>The nesting of complex constructions</u> is similar to the constituent structure of nonconstructional theories. However it differs from those in that the existence of a nested construction is justified only by the autonomy of the construction (i.e. its conventionalization independent of the larger construction). In a construction grammar, some “constituents” may not be autonomous constructions. For example, in the idiomatic construction shoot the breeze, the breeze is not an autonomous phrasal constituent any more, since the choice of Definite Article as well as the choice of Noun are fixed for this construction.",
-    "choices": [
-     "Grammatical structures are embedded hierarchically because language depends on rigid, self-contained units to create meaning.",
-     "The hierarchical embedding of grammatical structures within one another reflects how language organizes meaning through conventionalized patterns rather than rigid, independent units.",
-     "When phrases are nested inside one another, this literal stacking mirrors how containers fit together in space.",
-     "Although language often relies on conventionalized patterns, the hierarchical nesting of constructions occurs only sporadically.",
-     "The layering of grammatical components into sentences demonstrates how language simplifies complexity through independent elements."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'The hierarchical embedding of grammatical structures within one another reflects how language organizes meaning through conventionalized patterns rather than rigid, independent units.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 '자동화된(constructional) 구성의 독립성'을 강조하는데, 이 학생은 '자립적인(rigid, self-contained) 단위'에만 집중해 전체 의미를 놓쳤다. '의존성과 관습성'을 오해한 듯하다. → 처방: 지문의 'autonomy of the construction(구성체의 독립성)'과 'conventionalization(관습화)'을 함께 읽고, '의존성'과 '관습성'의 차이를 분명히 구분해서 보라.\n③ 진단: 지문의 '구조적 중첩(nesting)'을 '실제 공간의 용기 쌓기'로 비유한 선지를 선택했는데, 이는 추상적 언어 구조를 구체적 이미지로 잘못 해석한 오류다. → 처방: 언어 구조의 '중첩'은 '구체적 물리적 현상'이 아니라 '의미와 역할의 계층'임을 기억하고, 비유가 아닌 '구성체의 관습적 결합'에 초점을 맞춰라.\n④ 진단: 지문의 '계층적 중첩이 규칙적'임을 '산발적(sporadically)'으로 오해했는데, 'autonomy(독립성)'과 'conventionalization(관습화)'이 보장된 경우에만 중첩이 일어난다는 점을 놓쳤다. → 처방: 지문의 'justified only by the autonomy of the construction' 부분을 정확히 읽고, '규칙성'과 '산발성'의 차이를 명확히 이해하라.\n⑤ 진단: 지문의 '복잡성을 단순화하는 독립적 요소'가 아니라 '관습적 패턴에 의한 계층적 결합'을 설명한 선지를 선택했는데, '단순화'라는 키워드에만 주목해 의미를 왜곡했다. → 처방: '단순화'가 아니라 '관습적 패턴과 계층적 결합'이 핵심임을 인식하고, 지문의 'conventionalized patterns'와 'nesting'을 함께 분석하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
