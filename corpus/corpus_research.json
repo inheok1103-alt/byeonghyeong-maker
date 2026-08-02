@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-02T03:58:50.979Z",
+ "updated": "2026-08-02T06:47:54.360Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-02T06:47:23.746Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "이 코퍼스 패턴은 영어 문법에서 '이유(reason)'와 '순서(second)'를 표현할 때 전치사나 절 구조가 아닌 'to부정사'나 '명령문'으로 전환되는 경향을 보이며, 동사구 병렬 구조에서는 쉼표와 접속사를 병행해야 함을 시사한다.",
+   "rule": "영어 문장에서 '이유'를 표현할 때 'that절' 대신 'to부정사'를 사용하도록 유도하는 문제를 출제하라. 예: 'I have a reason that ~' → 'I have a reason to ~'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-02T03:58:24.632Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구(NP) 내冠詞 생략 오류와 동사 시제/태 오류가 빈번하며, 특히 'have + NP' 구조에서 관사가 자주 생략됨. 또한 문장 내 연결어(and, it) 오용과 직접인용 부호 누락이 반복됨.",
    "rule": "'have + [관사 생략 빈번 명사]' 구조(예: have interest, have self-confidence)에서 관사를 반드시 명시하도록 하는 문항을 출제하라. 예시: 'She has ___ passion for music.' → 정답: 'a' (빈칸에 관사 삽입)",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-27T15:17:36.615Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구(noun phrase)의 오용이 빈번하며, 특히 'take responsible'처럼 형용사가 동사 뒤에 위치하는 오류가 많다. 또한 대문자 오용과 관사의 생략이 자주 발생한다.",
-   "rule": "명사구가 필요한 위치(예: 'take responsibility')에는 반드시 명사형을 사용하고, 동사 뒤의 보어 자리에서는 '-ing' 형태가 아닌 명사형(-ity, -ment 등)을 선호한다는 규칙을 변형 문제에서 반복적으로 테스트하라.",
    "sample": [
     "old english",
     "university press",
