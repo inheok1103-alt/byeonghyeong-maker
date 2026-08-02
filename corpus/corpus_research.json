@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-02T21:13:24.851Z",
+ "updated": "2026-08-02T22:13:15.326Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-02T22:12:49.720Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 실제 오류에서 'for example', 'furthermore' 등 접속사 다음에 오는 문장 구조가 단순하거나 불완전하다는 패턴이 반복된다. 또한 'have a reason that study'처럼 관계대명사 대신 'to부정사'가 필요한 경우가 많다.",
+   "rule": "CEFR A2-B1 수준 내신 변형문제에서는 접속사(예: for example, furthermore) 다음에 오는 문장이 완전한 문장 구조(주어+동사+목적어)를 갖추도록 오류를 삽입하거나, 'have a reason that + 동사원형'을 'have a reason to + 동사원형'으로 수정하는 오류를 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-02T21:12:54.863Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거 시제와 현재 완료 시제가 혼용된 문장에서 오류가 빈번하며, 특히 'never'와 같은 부정어와 결합된 경우 현재 완료 시제로의 교정이 규칙적으로 나타난다는 점을 확인했다.",
    "rule": "CEFR B1 수준에서 'never'와 같은 부정어와 과거 시제가 결합된 문장이 주어지면, 해당 문장을 현재 완료 시제로 재구성하도록 출제하라. 예: 'He never visited Paris.' → 'He has never visited Paris.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-28T12:19:12.480Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스에서 'a lot of + 복수명사'와 'concerned that' 절의 결합, 'too ~ to' 구조, 'first + 중요성 서술'의 연어 패턴이 빈번히 등장한다. 또한 문장 내 쉼표 생략 오류도 자주 발견된다.",
-   "rule": "'a lot of + 복수명사' 뒤에는 단수동사가 아닌 복수동사를 사용해야 하며, 'too ~ to' 구조는 '~하기에 너무 ...해서 ...할 수 없다'의 의미를 가지므로 문맥에 맞게 변형해야 한다.",
    "sample": [
     "old english",
     "university press",

@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-02T21:13:24.850Z",
+ "updated": "2026-08-02T22:13:15.324Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "정답 선지는 원문의 'selectional properties'와 'complement selection'을 정확히 반영하는 기술적 용어로 수정하고, 오답 선지들은 원문의 핵심 개념과 직접 연관된 오개념만 제시하여 오답의 명확성을 높이는 방향으로 재구성해야 한다.",
+   "src": "자가학습:밑줄함의",
+   "score": 78,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-02T22:12:15.783Z"
+  },
+  {
+   "rule": "핵심 비교 대상('ought'와 'should')을 정확히 반영하되, 보충어 선택 방식('for their complements')은 'regarding their complements' 또는 'in selecting their complements'로 구체적이고 문법적으로 자연스럽게 재구성하라.",
+   "src": "자가학습:배열영작",
+   "score": 79,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-02T22:12:38.149Z"
+  },
   {
    "rule": "모든 출제에 적용할 일반화된 개선 규칙은 \"모든 선지는 명료하고 간결하여야 하며, 지문과 연결이 분명하여야 한다\"이다.",
    "src": "자가학습:글의순서",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-26T21:14:15.543Z"
-  },
-  {
-   "rule": "개선 규칙:** 모든 조건영작 문항은 원문의 핵심 의미를 유지하면서 '지속적 힘'이나 '핵심 동사'를 반영한 어법으로 재구성하고, 단어 수를 엄격히 준수(±1단어)하며, 추가 단어가 허용될 경우에도 원문의 뉘앙스를 손상하지 않도록 해야 한다.",
-   "src": "자가학습:조건영작",
-   "score": 83,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-26T21:14:47.174Z"
-  },
-  {
-   "rule": "모든 출제 시, 지문의 핵심 내용과 정확히 일치하는 선지를 1개 이상 포함하고, 오답 선지는 지문과 모순되거나 과도한 추론을 유도하지 않도록 명확히 제한하라.",
-   "src": "자가학습:요지",
-   "score": 81,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-26T19:36:04.264Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
