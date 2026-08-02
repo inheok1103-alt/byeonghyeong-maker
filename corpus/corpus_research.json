@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-02T17:19:38.713Z",
+ "updated": "2026-08-02T18:17:15.940Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-02T18:16:49.092Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 연어 패턴에서 'there is/are' 구문과 'and' 병렬 구조가 빈번히 등장하며, 특히 'there is/are'의 단수/복수 오류와 'and' 병렬의 문법적 일관성 결여가 두드러진다.",
+   "rule": "CEFR B1-B2 수준 내신 변형문제에서 'there is/are' 구문의 단수/복수 일치 오류와 'and'로 연결된 병렬 구조의 문법적 일관성(동사 형태, 품사 일치)을 검증하는 문항을 반드시 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-02T17:19:10.671Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'noun phrase'와 'reason relations'가 빈번한 만큼, 문법 오류 수정 시 복수형(noun phrase), 시제(tense), 대명사(case) 등을 CEFR 밴드에 맞춰 변형할 수 있다.",
    "rule": "CEFR B1 수준에서 'noun phrase' 오류(복수형, 관사, 대명사)를 변형 문제로 출제할 때는, 주어와 목적어의 수 일치(are/am/is → is, them → it 등), 관사(a/the) 누락, 대문자 미사용(I, And 등)을 반드시 포함하도록 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-28T03:39:52.779Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'make'은 능동태로 직접 목적어를 취하는 동사로 빈번히 사용되며, 'make + 목적어 + 동사원형' 구조가 일반적이다. 또한 'when'은 시간 부사절 접속사로 오용되는 경우가 많고, 'for' 뒤에는 명사형(명사구)이 오는 패턴이 두드러진다.",
-   "rule": "'make' 동사를 사용할 때에는 능동태로 'make + 목적어 + 동사원형' 구조를 사용하도록 오류를 유도하는 문장을 제작하라. 예를 들어, 'advertisements make products seem better'와 같은 문장을 변형하여 'advertisements are make products seem better'로 오류를 삽입하라.",
    "sample": [
     "old english",
     "university press",
