@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-02T09:26:03.089Z",
+ "updated": "2026-08-02T11:38:34.031Z",
  "samples": [
+  {
+   "ts": "2026-08-02T11:37:59.840Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "regressive eye movements are essential for recognizing unfamiliar words",
+     "semantic context assists word identification only in early reading stages",
+     "semantic context is the primary factor determining all word recognition",
+     "semantic context often proves ineffective in aiding unfamiliar word identification",
+     "contextual clues following unfamiliar terms help identify those words"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Semantic priming enables word identification when contextual clues follow unfamiliar words.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 'regressive eye movements'는 낯선 단어를 찾을 때 '필수'가 아니라 '일반적인' 행동일 뿐임을 오독. 'essential'이라는 과장된 단어를 보지 못했거나, 'not restricted to'라는 문장을 잘못 해석했을 가능성 있음. → 처방: 지문에서 'not essential'이나 'common' 같은 단어를 주의 깊게 읽고, '필수'라는 말이 나오면 바로 의심해 보기.\n② 진단: 'semantic context assists word identification only in early reading stages'라고 오해. 지문은 'proficient readers'도 이런 방식을 쓴다고 명시했는데, 'only in early stages'로 오독했음. → 처방: 지문에서 'not restricted to beginning readers' 같은 문장을 찾아 '전문가도 쓴다'는 사실을 확인하고, 'only' 같은 한정어가 있으면 주의하기.\n③ 진단: 'primary factor determining all word recognition'으로 과장해 읽음. 지문은 'semantic clues'가 'assist'한다고만 했고, 'all'이나 'determining' 같은 절대적인 표현은 없음. → 처방: 지문에서 'permits the anticipation'이나 'assists' 같은 단어를 찾고, '모든'이나 '결정적' 같은 말은 지문에 없으면 배제하기.\n④ 진단: 'ineffective'로 오독. 지문은 'semantic context permits... successful identification'이라고 effectiveness 를 긍정적으로 설명했는데, 'ineffective'로 반대로 읽음. → 처방: 지문에서 'permits'나 'successful identification' 같은 긍정적 표현을 찾고, 부정적인 단어가 나오면 지문 근거를 다시 확인하기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Semantic priming enables word identification when contextual clues follow unfamiliar words.]"
+   }
+  },
+  {
+   "ts": "2026-08-02T11:38:05.878Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 의미적 단서는 알려지지 않은 단어 앞뒤에 나타나기도 하므로 문맥을 통해 단어 예측과 식별이 가능하다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-02T09:24:18.008Z",
    "type": "안내문일치",
@@ -279,59 +333,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 자유주의자들이 예술 검열에 반대했다는 사실은 지문에 있지만 '반대하지 않았다'는 사실과는 반대라서 오독. 지문 첫 문장 'many liberals have argued against censorship of art'를 거꾸로 읽음. → 처방: 지문에서 주장과 반대 주장의 방향을 정확히 확인하고, '~하지 않았다' 같은 부정 표현은 주의 깊게 읽기.\n② 진단: '오늘날 검열은 사실상 과거의 일이 되었다'는 뜻인데, 지문은 'censorship is virtually a thing of the past'로 '과거의 일'이 맞지만 '미래의 일'로 혼동. 단어 'past'를 'future'로 잘못 이해. → 처방: 지문에서 'past' 같은 핵심 단어를 꼼꼼히 확인하고, 문맥에 맞게 해석하기.\n③ 진단: '많은 독자가 찬성한다'는 내용이지만 지문은 'they reflexively think the opposite'로 반대한다고 설명. '찬성'과 '반대'를 반대로 읽음. → 처방: 지문에서 'think the opposite' 같은 반대 표현을 놓치지 말고, 문장의 논리 흐름을 따라가기.\n⑤ 진단: '아마도', '~인 듯하다' 같은 표현이 '확실성을 강화한다'고 설명했지만 지문은 'hedges your certainty'로 '확실성을 약화시킨다'고 설명. 'hedges'의 의미를 잘못 이해. → 처방: 지문에서 'hedges' 같은 어려운 단어가 나오면 사전이나 문맥으로 의미를 정확히 파악한 후 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T00:17:42.325Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] Quick Tip: When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Only when most readers read a sentence that begins with something like obviously, undoubtedly, it is clear that, or there is no question that do they reflexively think the opposite. (포인트: 'Only'를 도치의 시작으로 사용하여 강조와 주어-조동사 도치(do they) 적용.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-01T23:13:21.610Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 1/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "This would mean that head movement applies in a successive-cyclic (two-step) fashion. Each of the two head movement operations in (52) – viz movement of (A) [care from V / cares from V] to NEG, and then from NEG to T – is local in the sense that it satisfies the Head Movement Constraint (31), since in each case (B) [movements are / movement is] from one head position into the next highest head position in the structure. If head movement is driven by affixal properties of heads, and if both T and NEG contain (C) [the strong affix / a strong affix] with a V-feature which can trigger movement of a main verb, the verb care will first move from V to NEG in order to attach to a null negative affix (in much the same way as the verb hath in (50) moves from V to Neg to attach to the overt negative affix ne), and the resulting complex NEG head (comprising a null negative affix with a verb attached to it) in turn will move from NEG to T in order to attach to a strong tense affix in T.",
-    "choices": [
-     "(A) care from V - (B) movement is - (C) a strong affix",
-     "(A) cares from V - (B) movement is - (C) a strong affix",
-     "(A) cares from V - (B) movements are - (C) the strong affix",
-     "(A) care from V - (B) movements are - (C) the strong affix",
-     "(A) cares from V - (B) movements are - (C) a strong affix"
-    ],
-    "answer": 1,
-    "explanation": "정답 조합: (A) care from V - (B) movement is - (C) a strong affix. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘care’는 3인칭 단수 동사이므로 ‘cares’로 오기했을 가능성이 크며, (B)와 (C)도 문맥에 맞게 선택하지 못했음. 지문에서 ‘care’는 주어 없이 쓰였으므로 ‘care from V’가 옳음. → 처방: ‘care’는 3인칭 단수 동사가 아니므로 ‘care from V’를 써야 하며, (B)는 ‘movement is’로, (C)는 ‘a strong affix’로 문맥에 맞게 고르기.\n③ 진단: ‘cares’는 3인칭 단수 동사이므로 오기했을 수 있으나, (B) ‘movements are’를 선택한 이유는 복수 동사 ‘are’를 오해한 것임. (C) ‘the strong affix’는 부정관사 ‘a’가 필요한 문맥임. → 처방: ‘care’는 3인칭 단수가 아니므로 ‘care from V’를 써야 하며, (B)는 ‘movement is’로, (C)는 ‘a strong affix’로 선택하기.\n④ 진단: ‘care’를 3인칭 단수로 오해한 점은 없으나, (B) ‘movements are’를 선택한 이유는 복수 동사 ‘are’를 오해한 것임. (C) ‘the strong affix’는 부정관사 ‘a’가 필요한 문맥임. → 처방: ‘care’는 3인칭 단수가 아니므로 ‘care from V’를 써야 하며, (B)는 ‘movement is’로, (C)는 ‘a strong affix’로 선택하기.\n⑤ 진단: ‘cares’를 3인칭 단수로 오해한 점은 없으나, (B) ‘movements are’를 선택한 이유는 복수 동사 ‘are’를 오해한 것임. (C) ‘a strong affix’는 옳지만, (A)에서 ‘cares’를 오기한 점은 틀림. → 처방: ‘care’는 3인칭 단수가 아니므로 ‘care from V’를 써야 하며, (B)는 ‘movement is’로, (C)는 ‘a strong affix’로 선택하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

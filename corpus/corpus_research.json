@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-02T09:26:03.085Z",
+ "updated": "2026-08-02T11:38:34.028Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-02T11:38:08.467Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'about contracts'와 같은 전치사구가 명사구 뒤에 직접 결합하는 패턴이 빈번하며, 'thus making'과 같은 분사구문이 원인-결과 관계를 과도하게 중복 표현하는 경우가 많다. 또한 과거분사나 수동태가 명시적으로 드러나지 않는 경우 오류로 이어진다.",
+   "rule": "원서 코퍼스 패턴을 반영하여, 'A about B' 형태의 전치사구가 포함된 문장은 'A regarding B' 또는 'A concerning B'로도 변형 출제 가능하며, 'thus V-ing' 구문은 'which makes V' 또는 'and this leads to V'로 대체하여 오류 유발을 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-02T09:25:37.398Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "동사-전치사 결합 오류가 빈번하며, 특히 'effect'와 'affect'의 혼동이 두드러진다. 또한 문장 내 시제 일관성(present tense vs. past tense)과 구두점 오류(콤마 위치)가 자주 발생한다.",
    "rule": "학생들이 'effect'와 'affect'를 혼동하지 않도록, 'effect'는 주로 명사('영향')로, 'affect'는 동사('영향을 미치다')로 사용된다는 규칙을 강조하고, 연습 문제에서 빈칸에 동사/명사를 삽입하도록 하여 시제와 품사 일치 오류를 점검한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-27T18:50:46.936Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'all information'은 관사 없이 사용되지 않으며, 'casts douts'는 'doubts'로 복수형을 써야 한다. 또한 시제 일관성이 요구되며, 접속사나 구두점 오류가 빈번하다.",
-   "rule": "CEFR B1 수준 내신 변형문제에서 'all + 명사'는 반드시 관사('the/all')를 포함하도록 오류를 유도하거나, 복수형 오류('douts'→'doubts')와 시제 일관성(과거→과거, 현재→현재) 오류를 반드시 포함시켜 출제하라.",
    "sample": [
     "old english",
     "university press",
