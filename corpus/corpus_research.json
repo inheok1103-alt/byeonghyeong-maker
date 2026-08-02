@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-02T06:47:54.360Z",
+ "updated": "2026-08-02T09:26:03.085Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-02T09:25:37.398Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'주어 + 동사 + 간접목적어 + 직접목적어' 구조에서 간접목적어와 직접목적어의 위치를 바꾸면 문법적으로 부적절하다는 패턴이 반복됨. 또한 '형용사 vs 부사' 오류와 '동사 + 보어' 구조의 오용이 빈번히 관찰됨.",
+   "rule": "'주어 + 동사 + 간접목적어 + 직접목적어' 구조에서 목적어의 순서를 반대로 바꾸는 오류가 발생할 경우, 반드시 '주어 + 동사 + 직접목적어'로 수정하여 출제할 것(예: 'It gives us opportunity' → 'It gives opportunity to us'는 오류).",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-02T06:47:23.746Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'all information'은 관사 없이 사용되지 않으며, 'casts douts'는 'doubts'로 복수형을 써야 한다. 또한 시제 일관성이 요구되며, 접속사나 구두점 오류가 빈번하다.",
    "rule": "CEFR B1 수준 내신 변형문제에서 'all + 명사'는 반드시 관사('the/all')를 포함하도록 오류를 유도하거나, 복수형 오류('douts'→'doubts')와 시제 일관성(과거→과거, 현재→현재) 오류를 반드시 포함시켜 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-27T17:14:12.217Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구(NP) 내冠詞 생략 오류와 동사 시제/태 오류가 빈번하며, 특히 'have + NP' 구조에서 관사가 자주 생략됨. 또한 문장 내 연결어(and, it) 오용과 직접인용 부호 누락이 반복됨.",
-   "rule": "'have + [관사 생략 빈번 명사]' 구조(예: have interest, have self-confidence)에서 관사를 반드시 명시하도록 하는 문항을 출제하라. 예시: 'She has ___ passion for music.' → 정답: 'a' (빈칸에 관사 삽입)",
    "sample": [
     "old english",
     "university press",
