@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-02T15:30:50.849Z",
+ "updated": "2026-08-02T17:19:38.713Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-02T17:19:10.671Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'diverse other courses' → 'other diverse courses'로 재배열하는 패턴이 빈번하며, 'a number of'가 'diverse'와 같은 형용사와 결합할 때 어순 규칙이 적용된다. 또한 'the amount of'는 불가산 명사와 결합해야 하며, 'are'→'is'로 단수화하는 오류가 다수 관찰된다.",
+   "rule": "'a number of' 또는 'the amount of' 뒤에는 형용사(예: diverse, diverse other)가 오면 어순을 'other + diverse'로 고정하고, 'are'는 단수명사(예: amount) 뒤에서는 'is'로 반드시 통일하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-02T15:30:24.069Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'make'은 능동태로 직접 목적어를 취하는 동사로 빈번히 사용되며, 'make + 목적어 + 동사원형' 구조가 일반적이다. 또한 'when'은 시간 부사절 접속사로 오용되는 경우가 많고, 'for' 뒤에는 명사형(명사구)이 오는 패턴이 두드러진다.",
    "rule": "'make' 동사를 사용할 때에는 능동태로 'make + 목적어 + 동사원형' 구조를 사용하도록 오류를 유도하는 문장을 제작하라. 예를 들어, 'advertisements make products seem better'와 같은 문장을 변형하여 'advertisements are make products seem better'로 오류를 삽입하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-28T00:13:46.371Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 패턴은 동사(be, is, must 등)와 주어-동사 일치, 또는 동사 형태(원형, 과거분사 등)의 오용이 빈번하다는 점을 보여준다. 또한 문장 내 연어(예: 'day until night')의 반복적 오용 패턴도 확인된다.",
-   "rule": "'be 동사 + 동사원형' 구조(예: 'is generate')가 아닌 'be 동사 + 과거분사' 구조(예: 'is generated')가 옳음을 강조하는 오답지를 설계하라. 특히 'be + V-ed' 형태의 수동태나 완료형 오용을 유도하는 선택지를 포함할 것.",
    "sample": [
     "old english",
     "university press",
