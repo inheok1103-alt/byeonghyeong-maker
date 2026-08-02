@@ -1,6 +1,110 @@
 {
- "updated": "2026-08-02T00:18:12.927Z",
+ "updated": "2026-08-02T03:58:50.983Z",
  "samples": [
+  {
+   "ts": "2026-08-02T03:56:52.998Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.57,
+    "D": 1,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Denotative meaning 6.1 If we had to think of a list of features or criteria that defined both the words woman and lady, one might suggest that they include (A) [be human / being human], female and adult. A definition based on these lines would be the DENOTATIVE MEANING of the two words. But there must be more to meaning than this, since (B) [we knows that / we know that] there is a difference between these two words – we know they can be used to mean different things. Consider these words placed in the context of the sentences below. She’s only thirteen, but she’s a woman already She’s only thirteen, but she’s a lady already Connotations What differences in meaning – what different associations or CONNOTATIONS – do the words have? One way in which dictionaries try to give us clues about usage is by providing quotations where the word is used. However, even the dictionaries that do contain quotations cannot, for practical reasons, contain every usage of a word. It (C) [becomes a matter / become a matter] of selection and",
+    "choices": [
+     "(A) being human - (B) we know that - (C) becomes a matter",
+     "(A) be human - (B) we know that - (C) become a matter",
+     "(A) be human - (B) we know that - (C) becomes a matter",
+     "(A) being human - (B) we knows that - (C) become a matter",
+     "(A) be human - (B) we knows that - (C) becomes a matter"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) being human - (B) we know that - (C) becomes a matter. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: be human 은 '인간이 되다'라는 의미로, 지문에서 인간이라는 특성을 설명하는 맥락과 어울리지 않다. → 처방: 해당 문맥에서 주어와 동사에 맞는 형태를 사용해야 한다.\n③ 진단: we know that 에서 주어가 we 이므로 동사 know 의 동사형이 we knows 가 아닌 we know 여야 한다. → 처방: 주어와 동사 일치를 확인해야 한다.\n④ 진단: become a matter 에서 it 가 주어로 사용되었으므로 동사형이 it becomes a matter 여야 한다. → 처방: 주어가 it 인 경우 동사형을 확인해야 한다.\n⑤ 진단: we knows that 는 주어와 동사 일치가 맞지 않으며, be human 은 지문 맥락과 어울리지 않는다. → 처방: 주어와 동사 일치를 확인하고, 문맥에 맞는 동사형을 사용해야 한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-02T03:57:33.347Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Denotative meaning 6.1 If we had to think of a list of features or criteria ⓐ<u>that defined both</u> the words woman and lady, one might suggest that ⓑ<u>they includes being</u> human, female and adult. A definition ⓒ<u>based on these lines</u> would be the DENOTATIVE MEANING of the two words. But there must be more to meaning than this, since we know that there is a difference between these two words – we know they can be used to mean different things. Consider these words ⓓ<u>placed in the context</u> of the sentences below. She’s only thirteen, but she’s a woman already She’s only thirteen, but she’s a lady already Connotations What differences in meaning – what different associations or CONNOTATIONS – do the words have? One way in which dictionaries try to give us clues about usage is by providing quotations where the word is used. However, even the dictionaries that do contain quotations ⓔ<u>cannot, for practical reasons,</u> contain every usage of a word. It becomes a matter of selection and",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓑ: 'they includes being' → 'they include being' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-02T03:58:18.250Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0.33,
+    "distractorEff": 100,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "Denotative meaning 6.1 If we had to think of a list of features or criteria that defined both the words woman and lady, one ⓐ<u>might suggests</u> that they include ⓑ<u>being human, female and adult</u>. A definition ⓒ<u>based on these lines</u> would be the DENOTATIVE MEANING of the two words. But there must be more to meaning than this, since we know that ⓓ<u>there is a difference</u> between these two words – we know they can be used to mean different things. Consider these words placed in the context of the sentences below. She’s only thirteen, but she’s a woman already She’s only thirteen, but she’s a lady already Connotations What differences in meaning – what different associations or CONNOTATIONS – do ⓔ<u>the words have</u>? One way in which dictionaries try to give us clues about usage is by providing quotations where the word is used. However, even the dictionaries that do contain quotations cannot, for practical reasons, contain every usage of a word. It becomes a matter of selection and",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 1,
+    "explanation": "[어법: 수일치] 정답 ⓐ의 'might suggests'는 'might suggest'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n② 진단: ⓑ에서 'being human, female and adult'가 모두 동명사 형태로 나열되어 있는데, 'female'이 형용사임에도 동명사로 오인했거나 'being'의 영향으로 동명사로 처리한 것으로 보임. → 처방: 형용사와 동명사를 구분하여 'being human' 다음에 'female'과 'adult'는 형용사로 쓰였다는 점에 주목하고, 문법 규칙을 다시 한 번 정리하라.\n③ 진단: ⓒ에서 'based on these lines'가 '이러한 기준에 따라'라는 뜻으로 쓰였지만, 'lines'가 '기준'이라는 뜻으로 오해하거나 'based on'의 사용법이 부정확하여 틀린 것으로 판단했을 수 있음. → 처방: 'based on'이 '~에 근거하여'라는 뜻임을 확실히 기억하고, 'lines'는 문맥상 '기준'이 아니라 '방식'이나 '틀'을 의미한다는 점을 파악하라.\n④ 진단: ⓓ에서 'there is a difference'가 문법적으로는 옳지만, 학생이 'difference'가 셀 수 있는 명사임을 간과하고 'a'를 쓰지 않거나 'difference'를 복수형으로 오인했을 가능성이 있음. → 처방: 명사의 가산·불가산 여부를 다시 한 번 확인하고, 'a difference'가 '한 가지 차이'라는 뜻임을 숙지하라.\n⑤ 진단: ⓔ에서 'the words have'가 문법적으로는 옳지만, 학생이 'have'의 시제나 주어('the words')의 수를 잘못 판단하여 오류로 여겼을 수 있음. → 처방: 주어와 동사의 수 일치를 다시 한 번 점검하고, 'the words'가 복수 주어임을 확인하라.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-02T03:58:21.289Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'connotations', 'denotative', 'different' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The words \"woman\" and \"lady\" carry different connotations despite sharing denotative meanings.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-02T00:15:44.897Z",
    "type": "안내문일치",
@@ -218,128 +322,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-01T19:38:11.869Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어의 중세 언어 변천 과정을 학생들에게 상세히 설명하려고",
-     "학생들이 영어를 중세부터 현대까지 체계적으로 배울 수 있도록 새로운 교재를 개발하려고",
-     "모든 영어 사용자에게 언어 역사의 중요성을 강조하려고",
-     "영어 언어 발전의 역사적 사례를 학생들에게 제공하려고",
-     "영어 언어와 문화의 역사적 발달을 중세부터 현대까지 학생들에게 균형 잡히고 최신의 개관으로 제공하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'To provide students with a balanced and up-to-date overview of the linguistic and cultural development of English from the Middle Ages to the present.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘중세 언어 변천 과정’에만 초점을 맞추어 ‘언어와 문화의 발달’(지문 2~3행)이나 ‘균형 잡히고 최신의 개관’(3행)을 보지 못한 것으로 보입니다. 지문은 중세뿐 아니라 현대까지의 ‘발달’ 전체를 다루고 있습니다. → 처방: ‘중세부터 현대까지’라는 시간 범위가 지문에 포함되어 있는지 확인하세요. ‘언어와 문화의 발달’ 또는 ‘균형 잡힌 개관’이라는 표현이 있는지 찾아보세요.\n② 진단: ‘새로운 교재 개발’이라는 표현이 지문에 없습니다. 지문은 ‘기존 책의 개정’(4행)과 ‘학생 보조 자료’(5행)만 언급하고 있어, ‘교재 개발’과는 거리가 멉니다. → 처방: 지문의 핵심 내용이 ‘책의 개정’이나 ‘보충 자료’에 대한 것인지, 아니면 ‘새로운 교재’에 대한 것인지 구별하세요. ‘개발’이라는 단어가 있는지 확인하세요.\n③ 진단: ‘모든 영어 사용자’를 대상으로 하지 않고, 지문은 ‘학생’(3행, 5행)에게 초점을 맞추고 있습니다. ‘언어 역사의 중요성’도 직접 언급되지 않았습니다. → 처방: 지문의 대상자가 ‘학생’인지 확인하세요. ‘모든 영어 사용자’가 아니라 특정 집단을 가리키는지 확인하는 습관을 들이세요.\n④ 진단: ‘사례 제공’에만 집중하여 ‘체계적 개관’(3행)이나 ‘균형 잡힌 설명’(3행)이라는 지문의 핵심 메시지를 놓쳤습니다. 지문은 ‘사례’뿐 아니라 ‘발달 과정 전체’를 다루고 있습니다. → 처방: ‘사례’가 아니라 ‘발달 과정 전체’를 설명하는지 확인하세요. ‘체계적’ 또는 ‘균형 잡힌’이라는 단어가 있는지 찾아보세요.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To provide students with a balanced and up-to-date overview of the linguistic and cultural development of English from the Middle Ages to the present.]"
-   }
-  },
-  {
-   "ts": "2026-08-01T19:39:14.851Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "A History of the English Language Fifth Edition Baugh and Cable’s A History of the English Language has long been considered the standard work in the field. A History of the English Language is a comprehensive exploration of the linguistic and cultural development of English, from the Middle Ages to the present day. The book provides students with a balanced and up-to-date overview of the history of the language. The fifth edition has been revised and updated to keep students up to date with recent developments in the field. Revisions include: • a revised first chapter, ‘English present and future’ • a new section on gender issues and linguistic change • updated material on African-American Vernacular English A student supplement for this book is available, entitled Companion to A History of the English Language. Albert C.Baugh was Schelling Memorial Professor at the University of Pennsylvania. Thomas Cable is Jane and Roland Blumberg Centennial Professor of English at the University of Texas at Austin.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-01T18:15:13.102Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "This then is the heritage of the pioneer experience—a passionate belief that a democracy was possible which should leave the individual a part to play in a free society and not make him <u>a cog in a machine operated from above</u>; which trusted in the common man, in his ­tolerance, his ability to adjust differences with good humor, and to work out an American type from the contributions of all nations— a type for which he would fight against those who challenged it in arms, and for which in time of war he would make sacrifices, even the temporary sacrifice of his individual freedom and his life, lest that freedom be lost forever. Note the following: • the summative modifier in the opening segment: a passionate belief that . . . • the increased length and weight of the second element in each coordination, even the coordinations inside coordinations • the two resumptive modifiers beginning with type and sacrifice That may be over the top, especially the quadruple chiasmus in the last sixteen words:",
-    "choices": [
-     "The author argues that true democracy requires individuals to submit to authority's predefined roles to prevent chaos and ensure collective harmony.",
-     "Following strict societal norms set by authority is essential for individuals to achieve personal growth and societal progress.",
-     "Rigid control from authority guarantees that people's actions align with societal expectations, fostering stability and efficiency.",
-     "To maintain social order, individuals must conform to roles assigned by authority rather than pursuing independent thought.",
-     "The author implies that true democracy should empower individuals to think and act independently rather than forcing them into rigid, controlled roles dictated by authority."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'The author implies that true democracy should empower individuals to think and act independently rather than forcing them into rigid, controlled roles dictated by authority.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘submit to authority's predefined roles’를 ‘a cog in a machine operated from above’로 오해하여 지문의 ‘a passionate belief that a democracy was possible which should leave the individual a part to play in a free society’를 무시함. → 처방: 지문의 핵심 어구 ‘a cog in a machine operated from above’를 ‘자동차의 톱니바퀴’가 아닌 ‘위에서 조종당하는 기계의 부품’으로 정확히 풀이하고, ‘passionate belief’가 democracy 의 특징임을 확인할 것.\n② 진단: ‘strict societal norms’을 ‘a cog in a machine operated from above’로 연결하여 ‘개인의 성장’을 강조하는 선지를 선택했으나, 지문은 ‘개인의 자유와 독립’을 강조함을 놓침. → 처방: 지문에서 ‘a free society’를 강조하는 부분을 찾아내고, ‘societal norms’이 아닌 ‘individual freedom’을 핵심 가치로 인식할 것.\n③ 진단: ‘Rigid control’을 ‘a cog in a machine operated from above’의 의미로 오해하고, ‘stability and efficiency’를 지문의 ‘democracy’와 연결하지 못함. → 처방: ‘Rigid control’이 아닌 ‘free society’를 지문의 핵심어로 삼고, ‘guarantees’를 ‘a cog in a machine operated from above’와 대조하여 의미를 재해석할 것.\n④ 진단: ‘conform to roles assigned by authority’를 ‘a cog in a machine operated from above’로 해석하여 ‘social order’를 ‘democracy’와 분리하여 이해함. → 처방: ‘conform to roles assigned by authority’를 ‘위에서 조종당하는 기계의 부품’으로 풀이하고, 지문의 ‘passionate belief that a democracy was possible’라는 문맥을 반드시 고려할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-01T18:15:45.921Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "faith in democracy as a free society that preserves individual liberty",
-     "faith in democracy as a society that prioritizes individual freedom over collective action",
-     "faith in individual freedom as the result of a functioning democratic society",
-     "faith in all democratic societies as inherently preserving individual freedom",
-     "faith in democracy as a free society that requires absolute individual freedom without sacrifice"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'faith in democracy as a free society preserving individual freedom'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘prioritizes individual freedom over collective action’이라는 표현은 지문에서 ‘개인의 자유를 보장하는 자유로운 사회’를 강조하지 ‘개인의 자유가 집단 행동보다 우선’한다고 말한 적이 없다. 또한 ‘collective action’이란 단어도 지문에 없다. → 처방: ‘democracy’를 ‘자유로운 사회’로만 해석하고 ‘개인의 자유 vs 집단 행동’이라는 대립 구조로 오해하지 말자. 지문은 개인의 자유가 보장된 사회를 ‘자유 사회’라고만 설명한다는 점을 기억하자.\n③ 진단: ‘result’라는 단어가 지문에 없으며, ‘functioning democratic society’의 결과로 ‘individual freedom’이 나온다는 인상을 준다. 하지만 지문은 ‘자유로운 사회가 개인의 자유를 보장한다’는 구조로, ‘결과’가 아니라 ‘기능’에 가깝다. → 처방: ‘result’라는 단어가 나오면 지문에서 ‘결과’로 설명하는지 확인하고, 그렇지 않다면 ‘기능’이나 ‘특성’으로 재해석하자.\n④ 진단: ‘all democratic societies’라는 표현은 지문에 없으며, ‘inherently’라는 단어도 ‘자동적으로’라는 뜻으로 오해할 수 있다. 지문은 ‘미국형 민주주의’에 초점을 맞추고, ‘모든 민주주의’에 대한 보편적 믿음을 말한 적이 없다. → 처방: ‘all’이라는 단어가 나오면 지문에 ‘모든’이라는 말이 있는지 확인하고, 없다면 ‘특정 사례’로 좁혀서 읽자.\n⑤ 진단: ‘absolute individual freedom’이라는 표현은 지문에 없으며, ‘sacrifice’라는 단어가 포함된 부분(‘자유를 잃지 않기 위해 희생까지 한다’)을 무시한 채 ‘절대적 자유’만 강조했다. → 처방: ‘sacrifice’라는 단어가 나오면 ‘희생’이 포함된 문장을 다시 읽고, ‘절대적 자유’가 아니라 ‘자유를 지키기 위한 희생’이라는 의미를 떠올리자.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: faith in democracy as a free society preserving individual freedom]"
    }
   }
  ]
