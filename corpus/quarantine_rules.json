@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-02T11:38:34.026Z",
+ "updated": "2026-08-02T13:59:28.981Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "지문과 발문을 'present perfect'의 특징을 묻는 문장으로 명확히 통일하고, 선지는 해당 시제의 정의와 문맥에 부합하는지 엄밀히 검증하여 균형 잡힌 길이를 유지하라.",
+   "src": "자가학습:빈칸(문장)",
+   "score": 70,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-02T13:58:38.678Z"
+  },
+  {
+   "rule": "지문에서 'present perfect'이 표현하는 '과거-현재 간격'과 '계속되는 상태 또는 결과적 consequence'를 정확히 반영한 문장으로만 주제문을 완성하라.",
+   "src": "자가학습:주제문완성",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-02T13:58:53.305Z"
+  },
   {
    "rule": "모든 출제 지문은 문법적으로 완전하고 의미상 완결된 형태로 제시되어야 하며, 발문에서 요구하는 모든 구성 요소(예: 밑줄)가 지문 내에 정확하고 명확하게 반영되어야 한다.",
    "src": "자가학습:어법(밑줄)",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-26T06:52:10.443Z"
-  },
-  {
-   "rule": "모든 문제에서 지문의 핵심 주제(어휘의 정의·역할)를 명확히 반영한 발문과 선지를 작성하며, 지문 내용의 범위를 벗어나거나 과도한 추론/주관적 해석을 배제하라.",
-   "src": "자가학습:요지",
-   "score": 64,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-26T04:03:22.083Z"
-  },
-  {
-   "rule": "원지문 인용 없이 주어진 3단어('match', 'definition', 'check')만 활용해 10단어 한 문장으로 재구성하면, \"match each definition with the correct answer to check.",
-   "src": "자가학습:조건영작",
-   "score": 68,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-26T04:03:52.368Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

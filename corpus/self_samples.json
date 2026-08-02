@@ -1,6 +1,73 @@
 {
- "updated": "2026-08-02T11:38:34.031Z",
+ "updated": "2026-08-02T13:59:28.987Z",
  "samples": [
+  {
+   "ts": "2026-08-02T13:58:23.686Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "현재완료 시제는 과거 어느 시점을 기준으로 현재까지 지속되거나 완료된 상태를 나타낸다",
+     "과거의 특정 사건이 현재에 영향을 미치는 인과관계를 반드시 포함해야 한다",
+     "과거와 현재를 단순히 연결하는 시제 기능만을 지닌다",
+     "모든 언어에서 과거와 현재를 동시에 가리키는 보편적 문법 규칙이다",
+     "과거 시점의 시작점이 명확히 존재해야만 사용할 수 있다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The present perfect denotes an interval beginning in the past and extending up to the present, filled with a state or situation, either continuing or resulting from a past event.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 과거의 특정 사건이 현재에 영향을 미치는 '인과관계'를 '반드시 포함해야 한다'고 오해했는데, 지문에서는 '현재완료가 과거와 현재를 연결하는 시제 기능'을 설명하며 인과관계를 필수 조건으로 삼지 않음을 보임. → 처방: 문장 속에서 과거와 현재를 연결하는 시제 기능(예: 지속·완료·결과 상태)을 먼저 찾고, 인과관계 여부는 개별 문맥에 따라 판단하도록 연습하기.\n③ 진단: 과거와 현재를 '단순히 연결하는 시제 기능'만 지닌다고 오독했는데, 지문에서는 '현재완료가 Interval(구간)을 나타낸다'는 핵심 의미를 강조하며 단순 연결 이상의 의미를 담고 있음을 설명함. → 처방: 현재완료가 단순히 과거와 현재를 잇는 시제가 아니라, '구간(interval)'을 나타낸다는 점을 기억하고, 예문에서 그 구간에 해당하는지 확인해 보기.\n④ 진단: '모든 언어에서 보편적 문법 규칙'이라고 오해했는데, 지문은 영어의 현재완료 시제에만 초점을 맞추며, 보편성에 대한 언급이 없음을 확인할 수 있음. → 처방: 문법 규칙이 특정 언어(예: 영어)에만 적용되는 것인지, 아니면 보편적인 것인지 구별하는 연습을 하기. (예: 한국어의 '-았/었-'과 비교).\n⑤ 진단: '과거 시점의 시작점이 명확히 존재해야 한다'고 오해했는데, 지문에서는 '과거와 현재를 연결하는 Interval'을 설명하며 시작점이 모호하거나 불분명한 경우도 포함됨을 보임. → 처방: 현재완료가 '시작점이 불분명한 과거 상태'나 '결과 상태'를 나타낼 때도 사용된다는 점을 기억하고, 예문에서 그런 경우를 찾아보기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The present perfect denotes an interval beginning in the past and extending up to the present, filled with a state or situation, either continuing or resulting from a past event.]"
+   }
+  },
+  {
+   "ts": "2026-08-02T13:58:49.827Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 1/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 100,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "E (4) \u0001 Give the Reichenbachian diagrams for the italicized verb groups below. I havea to buy a present for Marcia. I supposeb I will getc something nice at the mall, but I can’t afford to spend much because I haven’t been paidd for that graphics job. They’re really slack at that firm – if I’d knowne about them before they rangf me I wouldn’t have taken the job. By the time they pay me I will have waitedg three months – it’s a disgrace. (5) \u0001\u0001 (recommended for discussion) Can you construct a Reichenbach diagram for the italicized verb group below? If not, why not? John left for the front. [ ] The present perfect (6) \u0001\u0001\u0001 (recommended for discussion) The present perfect might be described as denoting an interval, beginning in the past and extending up to the present, which is filled with a state or situation: either a continuing state (with a state predicate or progressive), or a result state (with an event predicate).",
+    "choices": [
+     "When he came back, the fields would already have been reduced to ashes.",
+     "By the time he returned, the fields had already been burnt to stubble.",
+     "Even after his return, the fields would still be burning.",
+     "The fields would have been burnt to stubble long before he would return.",
+     "He returned just as the fields were being set on fire."
+    ],
+    "answer": 1,
+    "explanation": "빈칸에는 원문 'By the time he would return, the fields would have been burnt to stubble.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: 지문에서 'By the time he returned'는 과거 시점을 기준으로 한 완료를 나타내지만, 이 선지는 'had already been burnt'로 과거 완료를 써서 시제 일관성이 깨진다. 학생은 'by the time'의 시제 규칙을 잘못 적용했을 것이다. → 처방: 'by the time' 뒤에는 과거 시제와 어울리는 'had pp'가 아니라, 미래 시제와 어울리는 'would have pp'를 써야 한다는 규칙을 기억하라.\n③ 진단: 이 선지는 'Even after his return, the fields would still be burning'로, 완료가 아닌 지속 상태를 나타낸다. 학생은 'by the time'이 완료를 반드시 요구한다는 점을 간과하고, 단순 지속 상태로 오해했을 것이다. → 처방: 'by the time' 뒤에는 완료(perfect)가 와야 한다는 점을 확실히 기억하고, 지속 상태는 'while'이나 'as'와 같은 접속사와 함께 쓰인다는 점을 구분하라.\n④ 진단: 이 선지는 'long before he would return'와 'would have been burnt'가 섞여 있어, 시제와 부사구의 조합이 어색하다. 학생은 'long before'와 'by the time'의 시제 규칙을 혼동했을 것이다. → 처방: 'long before'와 'by the time'은 모두 완료 시제를 요구한다는 점을 명확히 구분하고, 'would have pp'와 'had pp'의 사용 조건을 다시 공부하라.\n⑤ 진단: 이 선지는 'He returned just as the fields were being set on fire'로, 완료가 아닌 동시 발생을 나타낸다. 학생은 'by the time'이 완료를 요구한다는 점을 모르고, 단순 동시 발생으로 오해했을 것이다. → 처방: 'by the time'은 완료를 나타내는 접속사라는 점을 기억하고, 동시 발생은 'as', 'when', 'while'과 같은 접속사와 함께 쓰인다는 점을 구분하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-02T11:37:59.840Z",
    "type": "심경변화",
@@ -279,60 +346,6 @@
     ],
     "answer": 1,
     "explanation": "[어법: 수일치] 정답 ⓐ의 'might suggests'는 'might suggest'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n② 진단: ⓑ에서 'being human, female and adult'가 모두 동명사 형태로 나열되어 있는데, 'female'이 형용사임에도 동명사로 오인했거나 'being'의 영향으로 동명사로 처리한 것으로 보임. → 처방: 형용사와 동명사를 구분하여 'being human' 다음에 'female'과 'adult'는 형용사로 쓰였다는 점에 주목하고, 문법 규칙을 다시 한 번 정리하라.\n③ 진단: ⓒ에서 'based on these lines'가 '이러한 기준에 따라'라는 뜻으로 쓰였지만, 'lines'가 '기준'이라는 뜻으로 오해하거나 'based on'의 사용법이 부정확하여 틀린 것으로 판단했을 수 있음. → 처방: 'based on'이 '~에 근거하여'라는 뜻임을 확실히 기억하고, 'lines'는 문맥상 '기준'이 아니라 '방식'이나 '틀'을 의미한다는 점을 파악하라.\n④ 진단: ⓓ에서 'there is a difference'가 문법적으로는 옳지만, 학생이 'difference'가 셀 수 있는 명사임을 간과하고 'a'를 쓰지 않거나 'difference'를 복수형으로 오인했을 가능성이 있음. → 처방: 명사의 가산·불가산 여부를 다시 한 번 확인하고, 'a difference'가 '한 가지 차이'라는 뜻임을 숙지하라.\n⑤ 진단: ⓔ에서 'the words have'가 문법적으로는 옳지만, 학생이 'have'의 시제나 주어('the words')의 수를 잘못 판단하여 오류로 여겼을 수 있음. → 처방: 주어와 동사의 수 일치를 다시 한 번 점검하고, 'the words'가 복수 주어임을 확인하라.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T03:58:21.289Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'connotations', 'denotative', 'different' / 10~14단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The words \"woman\" and \"lady\" carry different connotations despite sharing denotative meanings.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-02T00:15:44.897Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "For about a century now, many liberals have argued against ­censorship of art, and most courts have found their arguments ­persuasive enough that few people may remember exactly how they were countered. As a result, today, censorship is virtually a thing of the past. Some claim that a passage hedged that much is wordy and weak. Perhaps. But it does not come on like a bulldozer. It leaves room for a reasoned and equally moderate response. Quick Tip:  When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite. Here’s the point: You need some metadiscourse in everything you write, especially metadiscourse that guides readers through your text, words such as first, second, therefore, on the other hand, and so on. You also need some metadiscourse that hedges your certainty, words such as perhaps, seems, could, and so on. The risk is in using too many.",
-    "choices": [
-     "자유주의자들은 약 1세기 전부터 예술 검열에 반대하지 않았다는 사실",
-     "오늘날 검열은 사실상 미래의 일이 되었다는 사실",
-     "많은 독자가 '분명히', '틀림없이' 같은 문장 시작에 찬성한다는 사실",
-     "글에서 메타담화는 독자를 안내하는 역할을 해야 한다는 사실",
-     "글에서 '아마도', '~인 듯하다' 같은 표현은 확실성을 강화한다는 사실"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 자유주의자들이 예술 검열에 반대했다는 사실은 지문에 있지만 '반대하지 않았다'는 사실과는 반대라서 오독. 지문 첫 문장 'many liberals have argued against censorship of art'를 거꾸로 읽음. → 처방: 지문에서 주장과 반대 주장의 방향을 정확히 확인하고, '~하지 않았다' 같은 부정 표현은 주의 깊게 읽기.\n② 진단: '오늘날 검열은 사실상 과거의 일이 되었다'는 뜻인데, 지문은 'censorship is virtually a thing of the past'로 '과거의 일'이 맞지만 '미래의 일'로 혼동. 단어 'past'를 'future'로 잘못 이해. → 처방: 지문에서 'past' 같은 핵심 단어를 꼼꼼히 확인하고, 문맥에 맞게 해석하기.\n③ 진단: '많은 독자가 찬성한다'는 내용이지만 지문은 'they reflexively think the opposite'로 반대한다고 설명. '찬성'과 '반대'를 반대로 읽음. → 처방: 지문에서 'think the opposite' 같은 반대 표현을 놓치지 말고, 문장의 논리 흐름을 따라가기.\n⑤ 진단: '아마도', '~인 듯하다' 같은 표현이 '확실성을 강화한다'고 설명했지만 지문은 'hedges your certainty'로 '확실성을 약화시킨다'고 설명. 'hedges'의 의미를 잘못 이해. → 처방: 지문에서 'hedges' 같은 어려운 단어가 나오면 사전이나 문맥으로 의미를 정확히 파악한 후 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
