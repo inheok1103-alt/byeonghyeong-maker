@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-01T23:15:59.829Z",
+ "updated": "2026-08-02T00:18:12.927Z",
  "samples": [
+  {
+   "ts": "2026-08-02T00:15:44.897Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "For about a century now, many liberals have argued against ­censorship of art, and most courts have found their arguments ­persuasive enough that few people may remember exactly how they were countered. As a result, today, censorship is virtually a thing of the past. Some claim that a passage hedged that much is wordy and weak. Perhaps. But it does not come on like a bulldozer. It leaves room for a reasoned and equally moderate response. Quick Tip:  When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite. Here’s the point: You need some metadiscourse in everything you write, especially metadiscourse that guides readers through your text, words such as first, second, therefore, on the other hand, and so on. You also need some metadiscourse that hedges your certainty, words such as perhaps, seems, could, and so on. The risk is in using too many.",
+    "choices": [
+     "자유주의자들은 약 1세기 전부터 예술 검열에 반대하지 않았다는 사실",
+     "오늘날 검열은 사실상 미래의 일이 되었다는 사실",
+     "많은 독자가 '분명히', '틀림없이' 같은 문장 시작에 찬성한다는 사실",
+     "글에서 메타담화는 독자를 안내하는 역할을 해야 한다는 사실",
+     "글에서 '아마도', '~인 듯하다' 같은 표현은 확실성을 강화한다는 사실"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 자유주의자들이 예술 검열에 반대했다는 사실은 지문에 있지만 '반대하지 않았다'는 사실과는 반대라서 오독. 지문 첫 문장 'many liberals have argued against censorship of art'를 거꾸로 읽음. → 처방: 지문에서 주장과 반대 주장의 방향을 정확히 확인하고, '~하지 않았다' 같은 부정 표현은 주의 깊게 읽기.\n② 진단: '오늘날 검열은 사실상 과거의 일이 되었다'는 뜻인데, 지문은 'censorship is virtually a thing of the past'로 '과거의 일'이 맞지만 '미래의 일'로 혼동. 단어 'past'를 'future'로 잘못 이해. → 처방: 지문에서 'past' 같은 핵심 단어를 꼼꼼히 확인하고, 문맥에 맞게 해석하기.\n③ 진단: '많은 독자가 찬성한다'는 내용이지만 지문은 'they reflexively think the opposite'로 반대한다고 설명. '찬성'과 '반대'를 반대로 읽음. → 처방: 지문에서 'think the opposite' 같은 반대 표현을 놓치지 말고, 문장의 논리 흐름을 따라가기.\n⑤ 진단: '아마도', '~인 듯하다' 같은 표현이 '확실성을 강화한다'고 설명했지만 지문은 'hedges your certainty'로 '확실성을 약화시킨다'고 설명. 'hedges'의 의미를 잘못 이해. → 처방: 지문에서 'hedges' 같은 어려운 단어가 나오면 사전이나 문맥으로 의미를 정확히 파악한 후 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-02T00:17:42.325Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] Quick Tip: When most readers read a sentence that ­begins with something like obviously, undoubtedly, it is clear that, there is no question that, and so on, they reflexively think the opposite.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Only when most readers read a sentence that begins with something like obviously, undoubtedly, it is clear that, or there is no question that do they reflexively think the opposite. (포인트: 'Only'를 도치의 시작으로 사용하여 강조와 주어-조동사 도치(do they) 적용.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-01T23:13:21.610Z",
    "type": "네모어법ABC",
@@ -286,44 +340,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'faith in democracy as a free society preserving individual freedom'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘prioritizes individual freedom over collective action’이라는 표현은 지문에서 ‘개인의 자유를 보장하는 자유로운 사회’를 강조하지 ‘개인의 자유가 집단 행동보다 우선’한다고 말한 적이 없다. 또한 ‘collective action’이란 단어도 지문에 없다. → 처방: ‘democracy’를 ‘자유로운 사회’로만 해석하고 ‘개인의 자유 vs 집단 행동’이라는 대립 구조로 오해하지 말자. 지문은 개인의 자유가 보장된 사회를 ‘자유 사회’라고만 설명한다는 점을 기억하자.\n③ 진단: ‘result’라는 단어가 지문에 없으며, ‘functioning democratic society’의 결과로 ‘individual freedom’이 나온다는 인상을 준다. 하지만 지문은 ‘자유로운 사회가 개인의 자유를 보장한다’는 구조로, ‘결과’가 아니라 ‘기능’에 가깝다. → 처방: ‘result’라는 단어가 나오면 지문에서 ‘결과’로 설명하는지 확인하고, 그렇지 않다면 ‘기능’이나 ‘특성’으로 재해석하자.\n④ 진단: ‘all democratic societies’라는 표현은 지문에 없으며, ‘inherently’라는 단어도 ‘자동적으로’라는 뜻으로 오해할 수 있다. 지문은 ‘미국형 민주주의’에 초점을 맞추고, ‘모든 민주주의’에 대한 보편적 믿음을 말한 적이 없다. → 처방: ‘all’이라는 단어가 나오면 지문에 ‘모든’이라는 말이 있는지 확인하고, 없다면 ‘특정 사례’로 좁혀서 읽자.\n⑤ 진단: ‘absolute individual freedom’이라는 표현은 지문에 없으며, ‘sacrifice’라는 단어가 포함된 부분(‘자유를 잃지 않기 위해 희생까지 한다’)을 무시한 채 ‘절대적 자유’만 강조했다. → 처방: ‘sacrifice’라는 단어가 나오면 ‘희생’이 포함된 문장을 다시 읽고, ‘절대적 자유’가 아니라 ‘자유를 지키기 위한 희생’이라는 의미를 떠올리자.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: faith in democracy as a free society preserving individual freedom]"
-   }
-  },
-  {
-   "ts": "2026-08-01T18:15:54.109Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 9 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 9단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 민주주의에 대한 열정적인 믿음이 개척자의 경험을 정의했습니다.\n주어진 단어: ( passionate / belief / democracy )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] A passionate belief in democracy defined the pioneer experience. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-01T17:18:26.872Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: p)\n[영영풀이] A very small piece of matter, a fragment; especially, the smallest possible part of something.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] particle (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]

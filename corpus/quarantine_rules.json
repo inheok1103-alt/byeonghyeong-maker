@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-01T23:15:59.824Z",
+ "updated": "2026-08-02T00:18:12.922Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제 시, 정답 선지는 지문의 metadiscourse(화용언어) 기능을 정확히 반영하고, 오답 선지는 지문 내용과 모순·오역·과도한 추론 없이 엄밀하게 일치하도록 작성해야 한다.",
+   "src": "자가학습:안내문일치",
+   "score": 73,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-02T00:15:16.136Z"
+  },
+  {
+   "rule": "원문 의미를 유지하면서 강조 구문(It ~ that)이나 도치 구문(Not a single person ~, Rarely does anyone ~)으로 변환할 때, 'Some'을 'No one', 'Not a single person', 'Rarely does anyone' 등으로 대체하고 시제·의미를 일치시켜야 하며, 부정·강조 효과는 도치 구문의 구조적 특징으로만 구현해야 한다.",
+   "src": "자가학습:문장전환",
+   "score": 68,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-02T00:15:55.755Z"
+  },
   {
    "rule": "머리 이동은 조동사의 접사적 강세(head의 affixal properties)에 의해 유발되며, successive-cyclic(2단계) head movement로 나타나 Head Movement Constraint를 준수하고, 각 단계는 인접한 머리 위치로 제한된다.",
    "src": "자가학습:요지",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-25T22:12:46.232Z"
-  },
-  {
-   "rule": "모든 문항에서 미국식 표기법과 관용적 표현을 우선 적용하여 통일성을 확보할 것.",
-   "src": "자가학습:네모어법ABC",
-   "score": 87,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-25T22:15:03.472Z"
-  },
-  {
-   "rule": "원문 핵심 구조와 맥락을 정확히 반영하면서, 제시된 단어 수 조건을 엄격히 준수하는 문장을 작성하라.",
-   "src": "자가학습:조건영작",
-   "score": 75,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-25T22:15:22.506Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
