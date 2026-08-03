@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-03T11:57:37.180Z",
+ "updated": "2026-08-03T15:20:08.270Z",
  "samples": [
+  {
+   "ts": "2026-08-03T15:18:32.822Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.29,
+    "D": -0.17,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.29)",
+     "변별도 낮음(D̂=-0.17)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "It's Friday afternoon. David is at Tom's flat. Tom ⓐ<u>has decided</u> to have a party for all his friends. A few minutes later Nick has arrived at the flat. Now David is reporting what Tom said. So instead of Tom's words ⓑ<u>I am having</u>, David says he's having. The next day David is talking to Harriet. Now David is ⓒ<u>in a different place</u> from where Tom first told him about the party. So instead of here, he says ⓓ<u>at his flat</u>. And a day has passed since he first heard about it. It is now the day of the party. So instead of tomorrow evening, David says this evening. B Changes in reported speech Changes from direct speech to reported speech ⓔ<u>depend on changes</u> in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 2,
+    "explanation": "[어법: 준동사] 정답 ⓑ의 'I am having'는 'I'm having'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n① 진단: 학생은 'has decided'를 보고 결정했을 때 사용하는 시제로 오독했으며, 실제로는 계획이나 의도에 사용하는 현재 완료 시제로 사용된 것으로 보인다. → 처방: 현재 완료 시제의 의미와 사용법을 다시 공부한다.\n③ 진단: 학생은 'in a different place'를 보고 의 변경으로 오독했으며, 실제로는 의 변경과는 관련이 없다. → 처방: 의 변경과 의 변경이 Reported Speech 에 미치는 영향을 다시 공부한다.\n④ 진단: 학생은 'at his flat'를 보고 의 변경으로 오독했으며, 실제로는 의 변경과는 관련이 없다. → 처방: 의 변경과 의 변경이 Reported Speech 에 미치는 영향을 다시 공부한다.\n⑤ 진단: 학생은 'depend on changes'를 보고 나 의 변경과 관련이 없다고 오독했으며, 실제로는 나 의 변경에 따라 의 변경이 필요할 수 있다. → 처방: 나 의 변경과 의 변경을 다시 공부한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-03T15:19:19.891Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "adjustments in pronouns, locations, and time references to match context shifts",
+     "replacing direct speech with indirect speech to emphasize the original speaker’s emotions",
+     "changing pronouns and locations while overlooking verb tense adjustments in reported speech",
+     "requiring identical adjustments in pronouns, locations, and time references without considering context",
+     "adjusting pronouns and locations but failing to modify verb tenses to reflect temporal shifts"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Reported speech involves adjusting pronouns, place/time references, and verb tenses based on shifts in context.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 핵심 조건·전제를 빠뜨림· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 직접화법에서 감정을 강조하는 것이 아니라, 상황 변화에 맞춰 대명사·장소·시간 표현을 조정한 것으로 오독함. 지문에서 'Changes from direct speech to reported speech depend on changes in the situation'라는 근거를 무시함. → 처방: 보고된 화법이 상황 변화에 따라 어떻게 변하는지 먼저 확인하고, 감정 강조가 아닌 '맥락 맞춤'임을 기억할 것.\n③ 진단: 대명사와 장소를 바꿨지만 동사 시제 조정을 소홀히 했다고 오독함. 지문에서 'We may have to make changes when we report it in a different place or at a different time'라는 부분에서 시간 변화도 중요함을 간과함. → 처방: 보고된 화법에서 시간 변화가 동사 시제에 영향을 미친다는 점을 항상 떠올리며 풀 것.\n④ 진단: 맥락 고려 없이 무조건 동일한 조정이 필요하다고 오독함. 지문에서 'Changes... depend on changes in the situation'이라며 맥락에 따라 조정이 달라질 수 있음을 명시했음에도 이를 무시함. → 처방: 보고된 화법의 조정이 상황(장소·시간)에 따라 달라질 수 있음을 기억하고, 무조건적 변환이 아님을 깨달을 것.\n⑤ 진단: 대명사와 장소는 조절했지만 동사 시제 조정을 잊었다고 오독함. 지문에서 'a day has passed since he first heard about it. It is now the day of the party'라는 시간 변화가 동사 시제에 영향을 미친다는 점을 놓침. → 처방: 보고된 화법에서 시간 흐름에 따라 동사 시제를 조정해야 한다는 점을 항상 떠올리며 풀 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Reported speech involves adjusting pronouns, place/time references, and verb tenses based on shifts in context.]"
+   }
+  },
   {
    "ts": "2026-08-03T11:46:58.051Z",
    "type": "내용일치",
@@ -289,74 +358,6 @@
     ],
     "answer": 2,
     "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T21:12:42.320Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Model answer for 1 and 2 Relevant aspects of the derivation of 1 (here presented in simplified form) are as follows. The verb (A) [marvel / despise] merges with its PP complement at my words to form the VP marvel at my words. This in turn is merged with a T constituent containing a (B) [strong / weak] present tense affix (= Af) to form the T-bar Af marvel at my words, which is in turn merged with its subject thou. The tense affix agrees with thou and thus carries the features [second-person, singular-number, present-tense], below abbreviated to 2SgPr. Being strong, the tense affix triggers (C) [raising / lowering] of the verb marvel to adjoin to the affix in T. The resulting TP is merged with a null intransitive finite C which marks the declarative force of the sentence and which assigns nominative case to thou. 1 thus has the syntactic structure shown in simplified form in (i) below, with the dotted arrow indicating movement of the verb marvel from V to T:",
-    "choices": [
-     "(A) marvel - (B) strong - (C) raising",
-     "(A) despise - (B) strong - (C) lowering",
-     "(A) marvel - (B) weak - (C) raising",
-     "(A) marvel - (B) strong - (C) lowering",
-     "(A) despise - (B) weak - (C) raising"
-    ],
-    "answer": 1,
-    "explanation": "정답 조합: (A) marvel - (B) strong - (C) raising. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘despise’를 선택한 학생은 ‘marvel’이 아닌 ‘despise’를 (A)에 넣어야 한다고 착각했을 수 있습니다. 지문에서 ‘marvel’이 (A)에 쓰였음을 확인하지 못했거나, ‘despise’의 의미와 문법적 특징을 혼동했을 가능성이 큽니다. → 처방: ‘despise’는 ‘강한’(strong) 시제 affix 와 함께 쓰일 수 없다는 점을 기억하고, (A)에는 ‘marvel’이 들어가야 한다는 사실을 다시 한 번 확인하세요.\n③ 진단: ‘weak’을 선택한 학생은 ‘marvel’이 ‘강한’(strong) 시제 affix 와 함께 쓰인다는 사실을 놓쳤습니다. 지문에서 ‘marvel’이 ‘강한’ 시제 affix 와 결합해 동사 이동(raising)을 일으킨다고 명시되어 있음을 확인하지 못했을 수 있습니다. → 처방: ‘marvel’이 ‘강한’ 시제 affix 와 함께 쓰여 동사 이동(raising)을 일으킨다는 지문 내용을 꼼꼼히 읽고, (B)에는 ‘strong’이 들어가야 한다는 점을 기억하세요.\n④ 진단: ‘lowering’을 선택한 학생은 ‘강한’(strong) 시제 affix 가 동사 이동(raising)을 일으킨다는 사실을 오해했을 수 있습니다. 지문에서 ‘강한’ 시제 affix 가 동사 이동(raising)을 유발한다고 명시되어 있지만, 이를 ‘lowering’으로 잘못 해석했을 가능성이 큽니다. → 처방: ‘강한’ 시제 affix 가 동사 이동(raising)을 일으킨다는 지문 내용을 다시 읽고, (C)에는 ‘raising’이 들어가야 한다는 점을 명확히 이해하세요.\n⑤ 진단: ‘despise’를 (A)에 넣고 ‘weak’을 (B)에 넣은 학생은 ‘despise’의 문법적 특징과 ‘weak’ 시제 affix 의 결합 가능성을 혼동했을 수 있습니다. 지문에서 ‘despise’는 ‘weak’ 시제 affix 와 함께 쓰이지 않으며, ‘marvel’이 ‘strong’ 시제 affix 와 함께 쓰인다는 사실을 놓쳤을 가능성이 큽니다. → 처방: ‘despise’는 ‘weak’ 시제 affix 와 함께 쓰이지 않는다는 점과, ‘marvel’이 ‘strong’ 시제 affix 와 결합해 동사 이동(raising)을 일으킨다는 사실을 다시 한 번 확인하세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T19:39:21.598Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "On the first cycle, in implementing the ⓐ<u>Authentic</u> Materials, the students were taken into an ⓑ<u>enjoyable</u> teaching and learning process of reading. The materials successfully kept the students’ ⓒ<u>reluctance</u>, yet not quite successful in their awareness. They did every their work but not in time. It showed that they still lacked of awareness. Therefore, it was decided to solve the awareness problem in the next cycle. From the first cycle, the English teacher, as a collaborator, argued that in solving the remaining problem, the exercises should be ⓓ<u>enhanced</u> by varying them in many ways. Furthermore, she also argued that the researcher himself should specify his explanation to the students and maintain his composure. Therefore, in the second cycle, the exercises were varied into many ways and every instruction was explained instead of waiting the students to ask. The students were also motivated by giving tip in ⓔ<u>effective</u> reading. Those gave good result considering",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ: 문맥상 'willingness'가 와야 하는데 'reluctance'가 쓰여 부적절하다 — 'willingness'는 학생들의 자발적 참여를 뜻하는 긍정적 상태를 나타내며, 문맥에서 학생들이 '자발적으로' 작업을 수행했다는 사실과 연결된다. 반면 'reluctance'는 부정적 상태(주저함·꺼림)로, 'They did every their work but not in time'라는 문장과 대조되어 학생들의 노력은 있었으나 시간 엄수에 문제가 있었음을 암시하는 맥락에 부합하지 않는다.. [극성] willingness(긍정·자발성) ↔ reluctance(부정·주저)\n[오답 진단·처방]\n① 진단: ‘Authentic Materials’를 ‘진짜 자료’로 오해하고 ‘적합한 자료’로 써야 하는데도 ‘진짜’로만 해석해 오용했다. 지문에서 ‘Authentic Materials’는 학습에 실생활에서 쓰이는 진짜 자료를 뜻하는데, 학생은 ‘진짜’라는 뜻만 떠올렸다. → 처방: ‘Authentic Materials’를 ‘실제 사용되는 자료’로 이해하고, ‘적합한 자료’가 아니라 ‘실제와 같은 자료’임을 기억하자.\n② 진단: ‘enjoyable’을 ‘즐거운’으로만 해석해 ‘학습 과정이 즐거웠다’는 뜻으로 썼지만, 지문에서는 ‘즐거운 수업’보다는 ‘흥미로운 수업’으로 쓰였다. 학생은 ‘즐거움’의 정도를 오해했다. → 처방: ‘enjoyable’을 ‘흥미로운’이나 ‘재미있는’ 정도로 넓게 생각하고, 문맥에 맞게 해석하자.\n④ 진단: ‘effective’를 ‘효과적인’으로만 써서 ‘효과적인 읽기 방법’을 뜻하는지, ‘효과적인 동기 부여’를 뜻하는지 혼동했다. 지문에서는 ‘효과적인 읽기’로 쓰였는데, 학생은 ‘동기 부여’를 떠올렸다. → 처방: ‘effective’를 ‘효과적인’으로만 보지 말고, 문맥에 따라 ‘효과적인 읽기 방법’인지 ‘효과적인 동기 부여’인지 정확히 파악하자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

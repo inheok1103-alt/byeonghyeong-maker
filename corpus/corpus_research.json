@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-03T11:57:37.176Z",
+ "updated": "2026-08-03T15:20:08.266Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-03T15:19:42.689Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'a knowledge'와 같은 불필요한 관사 사용은 명사의 고유한 특성을 무시하는 오류로, 'knowledge'는 불가산명사이므로 관사가 필요 없다. 또한 'and do more benefits'와 같이 동사-명사 불일치 오류는 문맥상 동사의 의미적 일관성을 고려해야 한다.",
+   "rule": "'a/an + 불가산명사' 또는 '복수형 명사와 단수 동사의 불일치'가 포함된 문장은, 관사를 제거하거나 복수형 동사로 수정하여 문법적 정확성을 확보하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-03T11:57:05.362Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'have/has + something that is specialized in ~' 구조가 'have something specializing in ~'로 오용되는 경향이 있다. 또한 'year after year'의 반복 오류가 빈번하다.",
    "rule": "'have/has + N that is specialized in ~'는 'have/has + N specializing in ~'로 오용되지 않도록, 항상 'that is specialized in ~' 형태를 직접 목적어로 사용하도록 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-29T00:13:05.312Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "형용사-부사 오류가 빈번하며, 특히 'perfect'와 'good'이 부사로 잘못 사용된 경우가 많다. 또한 접속사 오류(and, thereby→therefore)도 자주 관찰된다.",
-   "rule": "형용사(perfect/good) 뒤에는 반드시 부사(perfectly/well)를 사용해야 하며, 접속사 오류는 and, thereby→therefore로 수정해야 한다.",
    "sample": [
     "old english",
     "university press",
