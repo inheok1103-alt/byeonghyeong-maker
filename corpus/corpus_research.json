@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-03T07:52:50.381Z",
+ "updated": "2026-08-03T11:57:37.176Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-03T11:57:05.362Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 패턴은 학술적·교과서적 문체에서 '명사 + 동사(3인칭 단수 현재)'의 반복적 사용이 오류로 이어질 수 있음을 보여준다. 특히 'are', 'is' 등 상태동사의 과도한 사용이 문법적 오류(예: 복수 명사 뒤 단수 동사, 반복된 관사 오류)와 연관된다.",
+   "rule": "'are/is + 형용사' 구문에서 복수 명사(예: 'prices', 'things') 뒤에는 반드시 'are'를 사용하고, 단수 동사(예: 'is')는 단수 명사와만 결합하도록 강제하는 문항을 출제하라. 예: 'The prices are cheap' vs. 'The price is cheap'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-03T07:52:22.373Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "형용사-부사 오류가 빈번하며, 특히 'perfect'와 'good'이 부사로 잘못 사용된 경우가 많다. 또한 접속사 오류(and, thereby→therefore)도 자주 관찰된다.",
    "rule": "형용사(perfect/good) 뒤에는 반드시 부사(perfectly/well)를 사용해야 하며, 접속사 오류는 and, thereby→therefore로 수정해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-28T22:19:08.881Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "복합문에서 동사구 오류(시제 혼동, 소유격 누락, 대명사 오류)가 빈번하며, 특히 'and'로 연결된 동사구가 문법적 일관성을 깨는 패턴이 두드러진다.",
-   "rule": "CEFR B1-B2 수준에서 'and'로 연결된 동사구는 시제·소유격·대명사 일관성을 유지하도록 오류를 삽입하거나 수정하는 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",

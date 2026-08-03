@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-03T07:52:50.385Z",
+ "updated": "2026-08-03T11:57:37.180Z",
  "samples": [
+  {
+   "ts": "2026-08-03T11:46:58.051Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "R : Terimakasih waktunya ya fur, bisa cerita nggak, bu Ririn di kelas ngajarnya gimana? F : Orangnya disiplin mas, kalau ngasi tugas banyak banget. R : Kemarin di kelas reading, kayaknya semua anak di kelas memberi respon ke tiap pertanyaan guru bisa kompak gitu, misal pas di tanyain di belakang preposisi ada jenis kata apa, sekelas kompak banget jawab noun gt, sudah benarbenar hafal ya? F : Ya lama-lama hafal mas, tiap pelajaran diajarinnya itu-itu terus. R : Nah itu sekelas semua ngerti ya? F : Sebenernya memang hafal mas, tp juga masih sering bingung. R : Hwduh, trus pernah nggak pas di kelas di kasih teks, terus membahas isi teks? F : Hwah, nggak pernah mas, itu mah pas SMP dulu, di sini sih seringnya mbahas struktur kalimatnya terus diartiin mas tiap dapet teks. R : Teks yang diberikan bu guru pernah nggak diambil dari kehidupan sehari-hari kaya misalnya dari internet, acara tv, iklan di koran, gitu? F : Seingat saya blom pernah mas. R : Selama ini kadang pernah nggak merasa bosan terhadap materi yang diajarkan?",
+    "choices": [
+     "부 리린 선생님은 과제량을 거의 내지 않으신다.",
+     "부 리린 선생님은 학생들에게 반복적으로 같은 내용을 가르치신다.",
+     "부 리린 선생님은 문장 구조를 분석하고 번역하는 수업을 거의 진행하지 않으신다.",
+     "부 리린 선생님의 수업에서 학생들은 문법 질문에 대해 각자 다른 대답을 한다.",
+     "부 리린 선생님은 수업 시간에 실생활 관련 텍스트를 자주 사용하신다."
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'kalau ngasi tugas banyak banget'이라고 했지만 '거의 내지 않으신다'는 과제 '양'이 아니라 '제출 여부'를 뜻하는 오해. 'banyak banget'은 과제량이 많다는 뜻이지, 과제를 거의 내지 않는다는 뜻이 아님. → 처방: 과제량을 말할 때는 '과제량이 많다/적다'로, 과제 제출 여부를 말할 때는 '과제를 거의 내지 않는다/자주 낸다'로 구분해서 읽기.\n③ 진단: 지문에서 'seringnya mbahas struktur kalimatnya terus diartiin'이라고 했지만 '거의 진행하지 않으신다'는 부정 표현을 반대로 해석한 오류. '자주'를 '거의'로 잘못 이해함. → 처방: 빈도 표현(자주, 가끔, 거의 등)을 정확히 읽고, 부정 표현이 포함된 선지는 문맥을 다시 확인하기.\n④ 진단: 지문에서 'sekelas kompak banget jawab noun'이라고 했지만 '각자 다른 대답'은 문맥과 반대. 학생들이 한 목소리로 대답한 사실을 반대로 이해한 오류. → 처방: 지문에서 학생들의 반응이 '커다랗게 한 목소리로'인지, '각자 다르게'인지를 꼼꼼히 확인하기.\n⑤ 진단: 지문에서 'Seingat saya blom pernah'이라고 했지만 '자주 사용하신다'는 빈도와 관련해 오해. '한 번도 없다'는 '자주'의 반대 의미인데, 이를 반대로 해석한 오류. → 처방: 부정 표현(안, 못, 없다 등)이 포함된 문장은 반대 의미를 떠올리며 다시 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-03T07:51:49.003Z",
    "type": "밑줄함의",
@@ -322,41 +357,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ: 문맥상 'willingness'가 와야 하는데 'reluctance'가 쓰여 부적절하다 — 'willingness'는 학생들의 자발적 참여를 뜻하는 긍정적 상태를 나타내며, 문맥에서 학생들이 '자발적으로' 작업을 수행했다는 사실과 연결된다. 반면 'reluctance'는 부정적 상태(주저함·꺼림)로, 'They did every their work but not in time'라는 문장과 대조되어 학생들의 노력은 있었으나 시간 엄수에 문제가 있었음을 암시하는 맥락에 부합하지 않는다.. [극성] willingness(긍정·자발성) ↔ reluctance(부정·주저)\n[오답 진단·처방]\n① 진단: ‘Authentic Materials’를 ‘진짜 자료’로 오해하고 ‘적합한 자료’로 써야 하는데도 ‘진짜’로만 해석해 오용했다. 지문에서 ‘Authentic Materials’는 학습에 실생활에서 쓰이는 진짜 자료를 뜻하는데, 학생은 ‘진짜’라는 뜻만 떠올렸다. → 처방: ‘Authentic Materials’를 ‘실제 사용되는 자료’로 이해하고, ‘적합한 자료’가 아니라 ‘실제와 같은 자료’임을 기억하자.\n② 진단: ‘enjoyable’을 ‘즐거운’으로만 해석해 ‘학습 과정이 즐거웠다’는 뜻으로 썼지만, 지문에서는 ‘즐거운 수업’보다는 ‘흥미로운 수업’으로 쓰였다. 학생은 ‘즐거움’의 정도를 오해했다. → 처방: ‘enjoyable’을 ‘흥미로운’이나 ‘재미있는’ 정도로 넓게 생각하고, 문맥에 맞게 해석하자.\n④ 진단: ‘effective’를 ‘효과적인’으로만 써서 ‘효과적인 읽기 방법’을 뜻하는지, ‘효과적인 동기 부여’를 뜻하는지 혼동했다. 지문에서는 ‘효과적인 읽기’로 쓰였는데, 학생은 ‘동기 부여’를 떠올렸다. → 처방: ‘effective’를 ‘효과적인’으로만 보지 말고, 문맥에 따라 ‘효과적인 읽기 방법’인지 ‘효과적인 동기 부여’인지 정확히 파악하자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T18:14:48.675Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "MUST We use must when the speaker feels that something is (A) [optional / necessary]. You must exercise. (I'm (B) [telling / asking] you.) We must be quiet. (I'm telling you.) I/we must can also express a wish. / must buy a newspaper. 1 want to see the racing results. We must invite Claire. She's wonderful company. HAVE TO We use have to when the situation makes something necessary. I have to exercise. (The doctor told me.) We have to be quiet. (That's the rule.) 1 have to buy a newspaper. The boss asked melt get one. We have to invite Trevor and Laura. They invited us last time. Have got to Have got to means the same as have to, but have got to is (C) [informal / formal]. We use it mainly in the present. I have to/I've got to make my sandwiches. My father has to/has got to take these pills. Do we have to apply/Have we got to apply for a visa? 48 Mustn't and needn't",
-    "choices": [
-     "(A) optional - (B) telling - (C) informal",
-     "(A) necessary - (B) asking - (C) informal",
-     "(A) necessary - (B) telling - (C) informal",
-     "(A) optional - (B) telling - (C) formal",
-     "(A) optional - (B) asking - (C) informal"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) necessary - (B) telling - (C) informal. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 'must'는 화자가 어떤 일이 (A) '필수적'이라고 느낄 때 쓴다고 했고, 'telling'은 화자가 강요·명령을 할 때 쓴다고 했다. 그런데 (A)에 'optional(선택적)'을, (B)에 'telling'을 골랐다면, 'must'의 기본 뜻(필수)을 잘못 이해한 것이다. → 처방: 'must'는 '~해야 한다'로, 'have to'와 달리 화자의 주관적 판단(필수)을 나타낸다는 점을 기억하자.\n② 진단: (A)에 'necessary(필수적)'는 맞지만, (B)에 'asking(요청)'을 골랐다면, 지문에서 'I'm telling you.'가 반복된 부분을 보지 못한 것이다. 'must'는 명령·강요를 나타내므로 'telling'이 옳다. → 처방: 지문의 예문에서 'must' 뒤에는 'I'm telling you.'가 반복된다는 점을 눈여겨보고, 명령·강요의 의미를 떠올리자.\n④ 진단: (A)에 'optional(선택적)'을 골랐다면 'must'의 기본 뜻(필수)을 오해한 것이고, (C)에 'formal(격식)'을 골랐다면 'have got to'가 구어체라는 지문 내용을 무시한 것이다. → 처방: 'have got to'는 'have to'와 뜻은 같지만 구어체라는 점을 기억하고, 지문에서 '(C) [informal / formal]'을 다시 확인하자.\n⑤ 진단: (A)에 'optional(선택적)'을 골랐다면 'must'의 기본 뜻(필수)을 오해한 것이고, (B)에 'asking(요청)'을 골랐다면 지문에서 'I'm telling you.'가 반복된 부분을 보지 못한 것이다. → 처방: 'must'는 명령·강요를 나타내므로, 지문의 예문에서 'telling'이 반복된다는 점을 기억하고, (B)에는 'telling'을 넣자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
