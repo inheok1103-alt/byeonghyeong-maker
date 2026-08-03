@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-03T18:10:30.369Z",
+ "updated": "2026-08-03T20:07:31.673Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-03T20:07:00.452Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'to not V'는 부정의 부정으로 해석될 위험이 있어 'not to V'가 자연스러운 영어 연어 패턴이다. 또한 'those energy'는 한정사 오류로, 'those energy sources/types'와 같이 구체적인 명사구를 사용해야 한다.",
+   "rule": "'to 부정사' 구문에서 부정의 의미를 표현할 때는 'not to V' 형식을 사용하며, 'those/these + 단수명사'는 'those/these + 복수명사 + 구체적 명사구'로 수정하여 한정사 오류를 해결하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-03T18:09:57.174Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'reason + that절'은 'reason to + 동사원형'으로 수정하는 패턴이 빈번하며, 접속사 'that'이 생략되면서 오류가 발생한다. 또한, 'surprise'와 같은 추상명사는 전치사 'to'와 결합하는 경우가 많다.",
    "rule": "'reason that + 주어 + 동사'는 'reason to + 동사원형'으로 변환하는 오류를 유발하므로, 해당 구조가 포함된 문장은 'to + 동사원형'으로의 수정을 요구하는 문제로 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-29T06:47:24.919Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 최빈 연어 패턴에서 'between two'와 'reason relations'가 빈번한 반면, 한국어 학습자의 오류는 전치사(aboue→about), 관사(a), 복수형(fishes→fish), 숙어(pier→peer pressure) 오류로 집약된다. 특히 'not only A but also B' 구조와 'create + 목적어 + to-v' 구문에서 오류가 두드러진다.",
-   "rule": "CEFR B1 수준의 영어 문법 문제에서, 'not only A but also B' 구조와 'create + 목적어 + to-v' 구문, 그리고 전치사·관사·복수형·숙어 오류를 집중적으로 출제하여 난이도를 조정하라. 예: 'She is not only a good student but also helps others.' → 오류 수정 및 이유 설명 요구.",
    "sample": [
     "old english",
     "university press",
