@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-03T21:33:48.852Z",
+ "updated": "2026-08-03T23:40:25.648Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-03T23:39:59.213Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거시제 동사와 현재시제 동사가 혼용된 문장에서 시제 일관성이 깨지며 오류가 발생하는 패턴을 확인했다. 또한 'time'과 같은 불가산명사가 'many'로 수식되어 발생하는 오류도 반복된다.",
+   "rule": "과거시제 문장에서는 동사 시제를 일관되게 과거형으로 통일하고, 불가산명사(예: time, money)는 'much/a lot of'로 수식하도록 지도한다. 예: 'They spent much time on computers, so they did not know how to communicate properly.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-03T21:33:19.052Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 코퍼스의 패턴은 복수형 오류와 시제 오류가 빈번하며, 특히 'thing'의 복수형 'things'와 동사 'develop'의 시제 오류가 두드러진다. 또한 문맥에 맞지 않는 조동사 사용과 불완전한 구문 구조가 자주 발견된다.",
    "rule": "복수형 오류를 방지하기 위해 'certain thing'을 'certain things'로, 'poeple'을 'people'으로, 'hte'를 'the'로 수정하고, 시제 오류는 조동사(will) 뒤 동사를 원형(understand, develop)으로 통일하여 문장을 완성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-29T12:24:57.295Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "원서 코퍼스는 '명사 + 전치사 + 수사' 패턴(예: 'for three reasons')이 빈번하며, 한국어 학습자들은 전치사 오용(예: 'for' → 'to')과 수사 결합 오류(예: 'three reasons' → 'three reason')를 자주 보인다.",
-   "rule": "원서 코퍼스의 'for + 수사 + 복수명사' 패턴(예: 'for three reasons')을 활용하여, 한국어 오답 선택지에서 'for + 수사 + 단수명사'(예: 'for three reason') 또는 'to + 동사원형'(예: 'to decrease the use')으로 전치사 오용과 수사 결합 오류를 동시에 유도하는 오답을 설계하라.",
    "sample": [
     "old english",
     "university press",
