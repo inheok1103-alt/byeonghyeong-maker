@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-03T15:20:08.266Z",
+ "updated": "2026-08-03T18:10:30.369Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-03T18:09:57.174Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "이 코퍼스는 CEFR B1-B2 수준에서 빈번한 명사구 오류(예: 'most famous + 인명' → 'most famous + 직위 + 인명')와 전치사 오류('to a bank' → 'for a loan to a bank')가 두드러진다. 또한 접속사·부사 오류('oin way' → 'one way')와 동사 시제·수 일치 오류('use' → 'uses')도 다수 확인된다.",
+   "rule": "CEFR B1-B2 수준에서 'most famous [인명]' 구문은 반드시 'most famous [직위], [인명],'로 명사구를 확장하여 출제하며, 전치사 'to'는 'for [목적]'과 결합된 경우 'to [장소]'로 수정하도록 오류 유도 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-03T15:19:42.689Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 최빈 연어 패턴에서 'between two'와 'reason relations'가 빈번한 반면, 한국어 학습자의 오류는 전치사(aboue→about), 관사(a), 복수형(fishes→fish), 숙어(pier→peer pressure) 오류로 집약된다. 특히 'not only A but also B' 구조와 'create + 목적어 + to-v' 구문에서 오류가 두드러진다.",
    "rule": "CEFR B1 수준의 영어 문법 문제에서, 'not only A but also B' 구조와 'create + 목적어 + to-v' 구문, 그리고 전치사·관사·복수형·숙어 오류를 집중적으로 출제하여 난이도를 조정하라. 예: 'She is not only a good student but also helps others.' → 오류 수정 및 이유 설명 요구.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-29T03:44:12.236Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'have/has + something that is specialized in ~' 구조가 'have something specializing in ~'로 오용되는 경향이 있다. 또한 'year after year'의 반복 오류가 빈번하다.",
-   "rule": "'have/has + N that is specialized in ~'는 'have/has + N specializing in ~'로 오용되지 않도록, 항상 'that is specialized in ~' 형태를 직접 목적어로 사용하도록 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",

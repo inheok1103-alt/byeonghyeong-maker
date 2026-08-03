@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-03T15:20:08.270Z",
+ "updated": "2026-08-03T18:10:30.373Z",
  "samples": [
+  {
+   "ts": "2026-08-03T18:08:14.419Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "맥락에 따라 트리거는 복수의 대상을 가리킬 수 있다",
+     "트리거의 다중 적용 가능성은 맥락에 의해 결정된다",
+     "트리거는 언제나 한 번에 하나의 대상에만 적용된다",
+     "언어적 트리거가 복수 대상을 가리키는 경우는 예외적인 경우다",
+     "트리거가 복수 대상을 가리키는 경우는 매우 드문 현상이다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Triggers can refer to multiple targets depending on context.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘맥락에 따라’라는 말은 맞지만 ‘결정된다’는 표현이 지나치게 좁고 강하다는 점에서 지문의 ‘이론적 가능성’을 오해한 듯함. 지문은 맥락이 아니라 ‘트리거의 성질’ 자체가 복수 대상을 가리키는 가능성을 내포한다고 설명함. → 처방: ‘결정된다’는 표현 대신 ‘가능하다’나 ‘적용될 수 있다’로 바꿔 읽고, 지문의 ‘이론적 가능성’을 떠올리며 선지를 고르기.\n③ 진단: ‘언제나’라는 절대적 표현을 보고 지문의 ‘예외적 가능성’을 무시한 듯함. 지문은 ‘언제나’가 아니라 ‘특정 조건’에서만 한 번에 하나의 대상에만 적용된다고 설명함. → 처방: ‘언제나’라는 말이 나오면 ‘예외나 조건’을 먼저 떠올리고, 지문의 ‘이론적 가능성’을 확인한 뒤 선지를 고르기.\n④ 진단: ‘예외적인 경우’라는 표현을 보고 지문의 ‘일반적 가능성’을 오해한 듯함. 지문은 ‘예외’가 아니라 ‘일상적’으로 발생할 수 있는 현상으로 설명함. → 처방: ‘예외’라는 말이 나오면 ‘일상적’이나 ‘보편적’이라는 단서가 있는지 확인하고, 지문의 ‘일반적 가능성’을 떠올리며 선지를 고르기.\n⑤ 진단: ‘매우 드문 현상’이라는 표현을 보고 지문의 ‘자주 일어날 수 있는 현상’을 오해한 듯함. 지문은 ‘드문’ 현상이 아니라 ‘일상적으로’ 발생할 수 있는 현상으로 설명함. → 처방: ‘매우 드문’이라는 말이 나오면 ‘자주 일어난다’는 반대의 의미를 떠올리고, 지문의 ‘일반적 가능성’을 확인한 뒤 선지를 고르기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Triggers can refer to multiple targets depending on context.]"
+   }
+  },
+  {
+   "ts": "2026-08-03T18:08:48.324Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/2 다수결 5번(기록 3번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.86,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.86)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Y: You ­shouldn’t have put them ?there / in ­those places. (A) [simplicity / Plexity]-­(B) [biased / neutral] triggers.  Other triggers are neutral to plexity and are able to refer to ­either a (C) [uniplex / multiplex] or a multiplex target. This holds for the relative pronouns who/which/ that (see section 2.2.7 for relative pronouns as triggers), as illustrated in (30).7 (30)  I like a person / ­people who can talk sports with me. In my judgment, further, a TV chef could even say (31a) as he proceeds to demonstrate in quick succession the two actions of radish slicing and pancake flipping. If so, his trigger thus, with targets in the ontological subcategory of manner, ­here targets two separate manners. Likewise, a speaker could say (31b) while quickly moving her hands three times progressively further apart. Thus, her trigger yay, with targets in the ontological subcategory of “distance between,” ­here targets three dif­fer­ent distances between her hands. (31)  a. You slice a radish and flip a pancake thus.",
+    "choices": [
+     "(A) simplicity - (B) neutral - (C) uniplex",
+     "(A) simplicity - (B) neutral - (C) multiplex",
+     "(A) Plexity - (B) neutral - (C) uniplex",
+     "(A) Plexity - (B) biased - (C) uniplex",
+     "(A) Plexity - (B) neutral - (C) multiplex"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) Plexity - (B) neutral - (C) uniplex. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘simplicity’(단순성)와 ‘plexity’(복합성)의 구분을 몰라서 (A)를 잘못 골랐다. 지문에서 ‘plexity’는 ‘복잡한 정도’를 뜻하며, ‘triggers’(유발어)가 ‘uniplex(단일 대상)’ 또는 ‘multiplex(다중 대상)’을 가리키는 핵심 개념임을 확인하지 못했다. → 처방: ‘plexity’는 ‘복잡한 정도’를 뜻한다는 점과, 지문에서 ‘triggers’가 ‘uniplex’ 또는 ‘multiplex’를 가리키는지를 먼저 확인하자.\n② 진단: (B)를 ‘neutral’(중립적)로 골랐지만, 지문에서 ‘biased’(편향된)와 ‘neutral’(중립적)의 대조를 언급한 부분을 놓쳤다. ‘Other triggers are neutral to plexity’라는 문장이 ‘neutral’이 옳음을 뒷받침한다. → 처방: ‘biased’와 ‘neutral’의 대조를 찾기 위해 지문에서 ‘triggers’의 성격을 설명하는 부분을 다시 읽고, ‘neutral’이 ‘plexity’와 무관하다는 점을 확인하자.\n③ 진단: (C)를 ‘uniplex’(단일 대상)로 골랐지만, 지문에서 ‘a person / people who’를 예로 들며 ‘multiplex’(다중 대상)를 가리키는 경우가 있음을 간과했다. ‘people’라는 복수 명사가 ‘multiplex’를 암시한다는 점을 놓쳤다. → 처방: ‘a person / people who’를 예로 든 부분을 다시 읽고, ‘people’(복수 명사)이 ‘multiplex’를 가리키는지를 먼저 확인하자.\n④ 진단: (B)를 ‘biased’(편향된)로 골랐지만, 지문에서 ‘Other triggers are neutral to plexity’라는 문장이 ‘neutral’이 옳음을 분명히 밝히고 있다. ‘biased’의 반대 개념인 ‘neutral’을 찾지 못했다. → 처방: ‘triggers’의 성격을 설명하는 문장에서 ‘neutral’이라는 단어가 등장하는지 확인하고, 그 의미를 정확히 파악하자."
+   }
+  },
   {
    "ts": "2026-08-03T15:18:32.822Z",
    "type": "어법(밑줄)",
@@ -304,60 +374,6 @@
     ],
     "answer": 4,
     "explanation": "밑줄 친 부분은 'The modal verbs *ought* and *should* differ in their syntactic requirements, with *ought* demanding a more rigid, structured complement (TP) and *should* allowing a more flexible one (VP).'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 ought 와 should 가 '선택하는 보충어(complement)'의 종류가 다르다고 했는데, 이 학생은 둘이 '동일한 구문적 행동'을 보인다고 오독. ought 는 TP 를, should 는 VP 를 요구한다고 지문에서 분명히 밝혔음. → 처방: 선택 범주를 비교할 때는 'TP vs VP'라는 차이를 정확히 기억하고, 보충어의 종류가 다르면 구문적 행동도 같을 수 없다는 점을 떠올리자.\n② 진단: 이 학생은 ought 와 should 가 '기능적으로 동등'하다고 오독했는데, 지문은 구문적 요구(TP vs VP)가 다르다고 설명. '의미'가 아니라 '구조'를 비교해야 함. → 처방: 선택 범주를 비교할 때는 '의미'가 아니라 '구조적 요구'에 집중하고, '기능적 동등성'이라는 말은 쓰지 않도록 주의하자.\n③ 진단: 이 학생은 should 가 'bare infinitive'를 허용한다고 오독했는데, 지문은 should 가 VP 를, ought 가 TP 를 요구한다고만 설명. bare infinitive 에 대한 언급은 없음. → 처방: 지문에서 'to-infinitive'와 'TP/VP'를 강조한 부분을 다시 읽고, bare infinitive 는 따로 공부해두자.\n⑤ 진단: 이 학생은 ought 와 should 의 사용 빈도나 사회적 위계(법률/공식 vs 일상어)를 비교했는데, 지문은 오로지 '구문적 요구(TP vs VP)'에만 초점을 맞췄다. → 처방: 선택 범주를 비교할 때는 '사회적 맥락'이나 '빈도'가 아니라 '구문적 구조'에만 집중하고, 필요 시 따로 메모해두자.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T22:12:47.566Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 의심 2건",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: Ought는 infinitival TP를 선택하고 should는 infinitival VP를 선택합니다.\n주어진 단어: ( selects / Ought / infinitival / VP / selects / an / an / TP / while / infinitival / should )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Ought selects an infinitival TP while should selects an infinitival VP.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-02T21:11:25.229Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "Model answer for 1 and 2 Relevant aspects of the derivation of 1 (here presented in simplified form) are as follows.\n\n(A) The tense affix agrees with thou and thus carries the features [second-person, singular-number, present-tense], below abbreviated to 2SgPr. Being strong, the tense affix triggers raising of the verb marvel to adjoin to the affix in T.\n\n(B) The verb marvel merges with its PP complement at my words to form the VP marvel at my words. This in turn is merged with a T constituent containing a strong present tense affix (= Af) to form the T-bar Af marvel at my words, which is in turn merged with its subject thou.\n\n(C) The resulting TP is merged with a null intransitive finite C which marks the declarative force of the sentence and which assigns nominative case to thou. 1 thus has the syntactic structure shown in simplified form in (i) below, with the dotted arrow indicating movement of the verb marvel from V to T:",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 2,
-    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
