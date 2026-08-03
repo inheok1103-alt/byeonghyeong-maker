@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-03T20:07:31.677Z",
+ "updated": "2026-08-03T21:33:48.855Z",
  "samples": [
+  {
+   "ts": "2026-08-03T21:31:42.930Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page. Then match them to 1–6 below. blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments? 1 He/She certainly looks his/her age. 5 He/She has a very abrasive manner. 2 He/She’s downright rude. 6 He/She has a warm smile. 3 He/She’s bursting with energy. 7 He/She’s full of pent-up anger. 4 He/She has a bubbly personality. 8 He/She has boundless energy. Complete this conversation using collocations from the box in the appropriate form so that Nell always agrees with Zoë. [ ]",
+    "choices": [
+     "have a slight difference from",
+     "have an overwhelming superiority over",
+     "have a remarkable similarity to",
+     "have a moderate connection with",
+     "bear no resemblance to"
+    ],
+    "answer": 3,
+    "explanation": "빈칸에는 원문 'bear a striking resemblance to'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 유사성과는 거리가 먼 '차이'를 의미하는 'difference'를 오독했을 가능성이 있다. 지문에서 'very similar'라고 언급된 부분을 간과했을 수 있다. → 처방: 유사성과 관련된 단어를 주의해서 읽어야 한다.\n② 진단: 'superiority'는 우월성을 의미하는 단어로, 지문에서 언급된 유사성과는 관련이 없을 가능성이 있다. 'overwhelming'이라는 단어도 강조의 의미로 오독했을 수 있다. → 처방: 단어의 의미를 정확하게 이해하고, 문맥에 맞게 사용해야 한다.\n④ 진단: 'connection'은 관련성이나 링크를 의미하는 단어로, 지문에서 언급된 유사성과는 직접적으로 관련이 없을 가능성이 있다. 'moderate'라는 단어도 정도를 나타내는 의미로 오독했을 수 있다. → 처방: 유사성과 관련된 단어를 주의해서 읽고, 문맥에 맞게 사용해야 한다.\n⑤ 진단: 'resemblance'는 유사성을 의미하는 단어로, 지문에서 언급된 유사성과는 정반대의 의미를 가진 'bear no resemblance'를 오독했을 가능성이 있다. → 처방: 단어의 의미를 정확하게 이해하고, 문맥에 맞게 사용해야 한다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-03T21:33:17.040Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 11 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'approachable', 'personality', 'friendly' / 9~13단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] A bubbly personality often makes someone seem more approachable and friendly.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 9~13단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-03T20:06:44.528Z",
    "type": "복합세트",
@@ -299,50 +352,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The denotative meaning of words provides only their literal definitions, while connotations reflect their contextual associations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 지문에서 'literal definitions'은 'denotative meaning'을 가리키며, 'contextual associations'은 'connotations'를 가리킨다. 그런데 이 학생은 'exact word meanings'과 'dictionary definitions'을 같은 개념으로 오해하여 선지를 선택한 듯하다. 'exact word meanings'은 'literal definitions'과 같은 말이지만, 'dictionary definitions'은 'denotative meaning'의 한 부분일 뿐, 'exact'의 범위가 더 넓다고 오해한 것이다. → 처방: 단어의 'literal meaning'과 'dictionary definition'을 구분하여 공부하고, 'exact'의 의미를 명확히 이해한 뒤 문제를 다시 풀어보기.\n③ 진단: 이 학생은 'contextual associations'가 'literal word meanings'을 '형성'한다고 오해했다. 그러나 지문에서는 'literal meaning'이 기본 정의이고, 'connotations'는 그 위에 덧붙는 의미로 설명된다. 즉, 'contextual associations'가 'literal meaning'을 바꾸는 것이 아니라, 'literal meaning' 위에 'associations'가 추가되는 구조임을 혼동한 것이다. → 처방: 단어의 'literal meaning'과 'connotations'의 관계를 다시 정리하고, '형성'이라는 동사가 어떤 의미를 갖는지 생각해 본 뒤 문제를 풀어보기.\n④ 진단: 이 학생은 'denotative meanings'이 '항상' 'connotations'를 포함한다고 생각했다. 그러나 지문에서는 'denotative meaning'은 기본 정의이고, 'connotations'는 선택적·부가적인 의미로 설명된다. 즉, '항상'이라는 절대적 표현이 잘못되었음을 간과한 것이다. → 처방: 'denotative meaning'과 'connotations'의 관계를 명확히 구분하고, '항상'과 같은 절대적 표현이 문제에서 어떻게 사용되는지 확인한 뒤 문제를 다시 풀어보기.\n⑤ 진단: 이 학생은 'literal definitions'이 'human, female, adult' 같은 기준을 '제외'한다고 생각했다. 그러나 지문에서는 이 기준들이 'literal definitions'의 핵심 요소임을 분명히 설명한다. 즉, '제외'라는 표현이 완전히 반대임을 오해한 것이다. → 처방: 'literal definitions'의 정의를 다시 읽고, '제외'라는 단어가 문제에서 어떻게 사용되는지 확인한 뒤 문제를 다시 풀어보기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The denotative meaning of words provides only their literal definitions, while connotations reflect their contextual associations.]"
-   }
-  },
-  {
-   "ts": "2026-08-03T04:00:31.845Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 두 단어 모두 기본 정의를 뛰어넘는 다양한 의미를 담고 있습니다.\n주어진 단어: ( words / connotations / definitions / different / beyond / Both / carry / basic / their )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Both words carry different connotations beyond their basic definitions.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-02T23:13:56.293Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "Within these chapters you’ll find important concepts presented in an accessible, relatable way. ⓐ<u>Linear equations and inequalities</u>, statistics and probability, functions, factoring polynomials, and ⓑ<u>solving and graphing quadratic equations are</u> are all presented as notes you can easily understand. It’s algebra for the regular person. ⓒ<u>Notes are presented are</u> in an organized way: • Important vocabulary words are highlighted in YELLOW . • All vocabulary words are clearly defined. • Related terms and concepts ⓓ<u>are written in BLUE PEN BLUE PEN</u>. • Clear step-by-step examples and calculations are supported by explanations, color coding, illustrations, and charts. If you want something to use as a companion to your textbook that's fun and easy to understand, and ⓔ<u>you’re not so great at takes notes in class</u>, this notebook will help. It hits all the key concepts you’ll learn in Pre-Algebra and Algebra 1.",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓑ(solving and graphing quadratic equations are → solving and graphing quadratic equations), ⓒ(Notes are presented are → Notes are presented), ⓔ(you’re not so great at takes notes in class → you’re not so great at taking notes in class) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘Linear equations and inequalities’는 주어가 아니라 동사구로 쓰였으므로 문법 오류가 없다. 학생은 ‘Linear equations and inequalities’를 주어로 오해했을 수 있다. → 처방: 문장 구조를 살피며 주어와 동사를 정확히 찾고, 주어가 없거나 동사구가 주어로 쓰였는지 확인하기.\n② 진단: ‘are are’는 중복된 동사로, 문법 오류가 있다. 학생은 ‘are’를 두 번 쓴 부분을 놓쳤을 수 있다. → 처방: 문장을 다시 읽으며 동사가 중복되었는지 확인하고, 중복된 동사가 있다면 지우기.\n④ 진단: ‘are written in BLUE PEN BLUE PEN’은 ‘are written in blue’라는 표현이 반복되어 오류가 있다. 학생은 ‘BLUE PEN’이 두 번 반복된 부분을 놓쳤을 수 있다. → 처방: 문장을 꼼꼼히 읽으며 같은 단어나 표현이 반복되었는지 확인하고, 중복된 부분을 삭제하기.\n⑤ 진단: ‘you’re not so great at takes notes in class’는 동사 ‘takes’를 잘못 쓴 오류다. ‘taking’이 맞다. 학생은 동사의 형태를 혼동했을 수 있다. → 처방: 동사 ‘take’를 쓸 때는 ‘-ing’ 형태로 써야 하는지, ‘-s’를 붙여야 하는지 문맥에 맞게 확인하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
