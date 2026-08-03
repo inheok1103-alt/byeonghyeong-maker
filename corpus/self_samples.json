@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-03T04:01:01.295Z",
+ "updated": "2026-08-03T07:52:50.385Z",
  "samples": [
+  {
+   "ts": "2026-08-03T07:51:49.003Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Contents Preface page vii Acknowledgments xiii 1 <u>an adventure in ambiguity with one ﬁsh two ﬁsh</u> 1 1.1 How an 8-word title can have many interpretations 2 1.2 Syntax and punctuation 5 Coda 12 2 exceptional students and teachers 13 2.1 Syntactic structure in coordinate constructions 13 2.2 Ambiguities with multiple coordination 21 Coda 23 3 Introduction to Language and Linguistics 25 3.1 Ambiguity in the interpretation of conjuncts 25 3.2 What a language is: the lexicon 29 3.2.1 The mental lexicon 29 3.2.2 Some structure in the mental lexicon 31 3.3 What a language is: the computational procedure 34 3.4 What is language? 39 3.5 What is linguistics? 40 3.5.1 A puzzle in linguistics: the syntactic structure of coordination 42 3.6 On the use and misuse of and 45 Coda 50 4 a review of a book by two philosophers 53 4.1 The syntactic structure of complex noun phrases 53 4.1.1 The syntax of prepositional phrase modiﬁers 54 4.1.2 From prepositional phrase to clausal modiﬁers 56 4.2 The syntactic analysis of (relative) clauses 60 4.2.1 Syntactic variation in relative clauses 67 4.3 Inﬁnitival clauses 69 4.3.1 Ending a relative clause with a preposition 74 4.4 Mental grammar vs. prescriptive rules 75 4.4.1 The stranded preposition mistake 76 4.4.2 The split inﬁnitive mistake 83 4.4.3 that vs. which: restrictive vs. nonrestrictive relative clauses 88 Coda 92 v",
+    "choices": [
+     "This expression literally depicts a challenging expedition into natural environments, where the primary difficulty lies in precisely distinguishing and tallying various biological classifications of marine life.",
+     "It suggests a casual and uncritical engagement with linguistic constructs that are inherently transparent, offering minimal resistance to immediate and complete comprehension without deeper analytical effort.",
+     "The phrase indicates that when communication becomes obscure, the most effective strategy involves reverting to foundational linguistic components that are unequivocally distinct and readily comprehensible for re-establishing clarity.",
+     "This title signifies a playful yet profound exploration into the multifaceted and often perplexing interpretations inherent in language, starting from seemingly simple linguistic structures.",
+     "This phrase denotes a cheerful, introductory venture into elementary quantitative reasoning, highlighting the intrinsic satisfaction derived from organizing and classifying objects based on their fundamental numerical attributes."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'This title signifies a playful yet profound exploration into the multifaceted and often perplexing interpretations inherent in language, starting from seemingly simple linguistic structures.'을 함의한다.\n[오답 진단·처방]\n① 진단: 학생은 'fish'를 실제 물고기로, 'adventure'를 자연 탐험으로 글자 그대로만 이해하여, 지문이 언어학 책의 목차임을 간과하고 비유적 의미를 파악하지 못했습니다. → 처방: 지문의 전체 맥락과 제목의 비유적 표현을 연결하여 의미를 추론하는 연습을 하세요.\n② 진단: 학생은 'ambiguity(모호함)'라는 핵심 단어의 의미를 완전히 반대로 이해하여, 언어가 명확하고 분석이 필요 없다는 오해를 했습니다. → 처방: 지문 속 핵심 단어의 정확한 뜻을 파악하고 그 단어가 문맥에서 어떤 역할을 하는지 확인하세요.\n③ 진단: 학생은 'one fish two fish'를 모호함을 해결하는 '기초적인 해결책'으로 오해하여, 지문이 '모호함 자체를 탐구하는 시작점'으로 삼는다는 맥락을 놓쳤습니다. → 처방: 지문에서 제시된 특정 요소가 '무엇의 예시'인지 '무엇의 해결책'인지를 정확히 구분하여 파악하세요.\n⑤ 진단: 학생은 'one fish two fish'를 수량적 분류나 수학적 추론으로만 해석하여, 'ambiguity(모호함)'라는 핵심 개념과 지문의 언어학적 주제를 완전히 벗어났습니다. → 처방: 지문의 핵심 개념어와 전체 주제를 먼저 파악하고, 세부 내용이 그 주제와 어떻게 연결되는지 확인하세요.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-03T07:52:19.390Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: s)\n[영영풀이] Of, related to or connected with syntax.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] syntactic (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-03T04:00:20.443Z",
    "type": "심경변화",
@@ -303,60 +357,6 @@
     ],
     "answer": 3,
     "explanation": "정답 조합: (A) necessary - (B) telling - (C) informal. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 'must'는 화자가 어떤 일이 (A) '필수적'이라고 느낄 때 쓴다고 했고, 'telling'은 화자가 강요·명령을 할 때 쓴다고 했다. 그런데 (A)에 'optional(선택적)'을, (B)에 'telling'을 골랐다면, 'must'의 기본 뜻(필수)을 잘못 이해한 것이다. → 처방: 'must'는 '~해야 한다'로, 'have to'와 달리 화자의 주관적 판단(필수)을 나타낸다는 점을 기억하자.\n② 진단: (A)에 'necessary(필수적)'는 맞지만, (B)에 'asking(요청)'을 골랐다면, 지문에서 'I'm telling you.'가 반복된 부분을 보지 못한 것이다. 'must'는 명령·강요를 나타내므로 'telling'이 옳다. → 처방: 지문의 예문에서 'must' 뒤에는 'I'm telling you.'가 반복된다는 점을 눈여겨보고, 명령·강요의 의미를 떠올리자.\n④ 진단: (A)에 'optional(선택적)'을 골랐다면 'must'의 기본 뜻(필수)을 오해한 것이고, (C)에 'formal(격식)'을 골랐다면 'have got to'가 구어체라는 지문 내용을 무시한 것이다. → 처방: 'have got to'는 'have to'와 뜻은 같지만 구어체라는 점을 기억하고, 지문에서 '(C) [informal / formal]'을 다시 확인하자.\n⑤ 진단: (A)에 'optional(선택적)'을 골랐다면 'must'의 기본 뜻(필수)을 오해한 것이고, (B)에 'asking(요청)'을 골랐다면 지문에서 'I'm telling you.'가 반복된 부분을 보지 못한 것이다. → 처방: 'must'는 명령·강요를 나타내므로, 지문의 예문에서 'telling'이 반복된다는 점을 기억하고, (B)에는 'telling'을 넣자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T18:15:40.576Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "MUST We use must when the speaker feels that something is necessary. You must exercise. (I'm telling you.) We must be quiet. (I'm telling you.) I/we ⓐ<u>must can</u> also express a wish. / must buy a newspaper. 1 want to see the racing results. We must invite Claire. She's wonderful company. HAVE TO We use have to when the situation makes something necessary. I have to exercise. (The doctor told me.) We have to be quiet. (That's the rule.) 1 have to buy a newspaper. The boss asked ⓑ<u>melt get one</u>. We have to invite Trevor and Laura. They invited us last time. Have got to Have got to means the same as have to, but have got to is informal. We use it mainly in the present. I ⓒ<u>have to/I've got to</u> make my sandwiches. My father has to/has got to take these pills. Do we have to apply/ⓓ<u>Have we got to apply</u> for a visa? 48 ⓔ<u>Mustn't and needn't</u>",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사조동사] ⓐ: 'must can' → 'can' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T17:17:40.370Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어의 수동태는 전치사구를 포함한 구문의 일부만 변환할 수 있다.",
-     "영어의 수동태 변환은 전치사구가 반드시 포함되어야 가능하다.",
-     "영어의 수동태는 전치사구 유무와 관계없이 모든 구문을 변환할 수 있다.",
-     "영어의 수동태는 전치사구가 없으면 변환이 불가능하다.",
-     "영어의 수동태는 전치사구를 포함한 다양한 구문을 수동형으로 변환할 수 있다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The passive voice in English can convert various constructions, including those with prepositional phrases, into passive forms.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘전치사구를 포함한 구문의 일부만 변환할 수 있다’는 문장에서 ‘일부만’을 오해해 ‘전치사구가 포함된 구문 전체가 변환되지 않는다’고 잘못 이해한 듯함. 지문 12.6에서 ‘such set phrases only as those here exemplified’(예시된 구문들만)라고 한 점을 보지 못함. → 처방: ‘전치사구가 포함된 구문 전체가 변환되지 않는다’는 오해를 버리고, 지문에서 예시된 ‘구문들’이 변환 가능하다는 점을 정확히 기억할 것.\n② 진단: ‘전치사구가 반드시 포함되어야 가능하다’는 문장에서 ‘반드시’를 오해해 전치사구가 없으면 변환 자체가 불가능하다고 생각한 듯함. 지문 12.7에서 ‘The city was destroyed by the French’(전치사구가 없음)도 예시된 점을 보지 못함. → 처방: ‘전치사구가 없으면 변환이 불가능하다’는 오해를 버리고, 전치사구 유무와 관계없이 수동태 변환이 가능하다는 점을 기억할 것.\n③ 진단: ‘전치사구 유무와 관계없이 모든 구문을 변환할 수 있다’는 문장에서 ‘모든’을 오해해 전치사구가 포함된 모든 구문이 변환 가능하다고 생각한 듯함. 지문 12.6에서 ‘found with such set phrases only’라고 한 점을 보지 못함. → 처방: ‘모든 구문’이 아니라 ‘특정 구문들’만 변환 가능하다는 점을 정확히 기억하고, 예시된 구문들(‘lost sight of’, ‘taken good care of’ 등)을 다시 확인할 것.\n④ 진단: ‘전치사구가 없으면 변환이 불가능하다’는 문장에서 ‘없으면’을 오해해 전치사구가 없으면 변환 자체가 불가능하다고 생각한 듯함. 지문 12.7에서 ‘The city was destroyed by the French’(전치사구가 없음)도 예시된 점을 보지 못함. → 처방: ‘전치사구가 없으면 변환이 불가능하다’는 오해를 버리고, 전치사구 유무와 관계없이 수동태 변환이 가능하다는 점을 기억할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The passive voice in English can convert various constructions, including those with prepositional phrases, into passive forms.]"
    }
   }
  ]
