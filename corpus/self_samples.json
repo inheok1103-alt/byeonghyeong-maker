@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-03T00:16:56.156Z",
+ "updated": "2026-08-03T04:01:01.295Z",
  "samples": [
+  {
+   "ts": "2026-08-03T04:00:20.443Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 1번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "literal definitions contrasting with contextual associations",
+     "exact word meanings differing from their dictionary definitions",
+     "contextual associations shaping literal word meanings",
+     "denotative meanings always including connotations",
+     "literal definitions excluding human, female, and adult criteria"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The denotative meaning of words provides only their literal definitions, while connotations reflect their contextual associations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 지문에서 'literal definitions'은 'denotative meaning'을 가리키며, 'contextual associations'은 'connotations'를 가리킨다. 그런데 이 학생은 'exact word meanings'과 'dictionary definitions'을 같은 개념으로 오해하여 선지를 선택한 듯하다. 'exact word meanings'은 'literal definitions'과 같은 말이지만, 'dictionary definitions'은 'denotative meaning'의 한 부분일 뿐, 'exact'의 범위가 더 넓다고 오해한 것이다. → 처방: 단어의 'literal meaning'과 'dictionary definition'을 구분하여 공부하고, 'exact'의 의미를 명확히 이해한 뒤 문제를 다시 풀어보기.\n③ 진단: 이 학생은 'contextual associations'가 'literal word meanings'을 '형성'한다고 오해했다. 그러나 지문에서는 'literal meaning'이 기본 정의이고, 'connotations'는 그 위에 덧붙는 의미로 설명된다. 즉, 'contextual associations'가 'literal meaning'을 바꾸는 것이 아니라, 'literal meaning' 위에 'associations'가 추가되는 구조임을 혼동한 것이다. → 처방: 단어의 'literal meaning'과 'connotations'의 관계를 다시 정리하고, '형성'이라는 동사가 어떤 의미를 갖는지 생각해 본 뒤 문제를 풀어보기.\n④ 진단: 이 학생은 'denotative meanings'이 '항상' 'connotations'를 포함한다고 생각했다. 그러나 지문에서는 'denotative meaning'은 기본 정의이고, 'connotations'는 선택적·부가적인 의미로 설명된다. 즉, '항상'이라는 절대적 표현이 잘못되었음을 간과한 것이다. → 처방: 'denotative meaning'과 'connotations'의 관계를 명확히 구분하고, '항상'과 같은 절대적 표현이 문제에서 어떻게 사용되는지 확인한 뒤 문제를 다시 풀어보기.\n⑤ 진단: 이 학생은 'literal definitions'이 'human, female, adult' 같은 기준을 '제외'한다고 생각했다. 그러나 지문에서는 이 기준들이 'literal definitions'의 핵심 요소임을 분명히 설명한다. 즉, '제외'라는 표현이 완전히 반대임을 오해한 것이다. → 처방: 'literal definitions'의 정의를 다시 읽고, '제외'라는 단어가 문제에서 어떻게 사용되는지 확인한 뒤 문제를 다시 풀어보기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The denotative meaning of words provides only their literal definitions, while connotations reflect their contextual associations.]"
+   }
+  },
+  {
+   "ts": "2026-08-03T04:00:31.845Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 두 단어 모두 기본 정의를 뛰어넘는 다양한 의미를 담고 있습니다.\n주어진 단어: ( words / connotations / definitions / different / beyond / Both / carry / basic / their )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Both words carry different connotations beyond their basic definitions.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-02T23:13:56.293Z",
    "type": "어법개수형",
@@ -304,77 +357,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'The passive voice in English can convert various constructions, including those with prepositional phrases, into passive forms.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘전치사구를 포함한 구문의 일부만 변환할 수 있다’는 문장에서 ‘일부만’을 오해해 ‘전치사구가 포함된 구문 전체가 변환되지 않는다’고 잘못 이해한 듯함. 지문 12.6에서 ‘such set phrases only as those here exemplified’(예시된 구문들만)라고 한 점을 보지 못함. → 처방: ‘전치사구가 포함된 구문 전체가 변환되지 않는다’는 오해를 버리고, 지문에서 예시된 ‘구문들’이 변환 가능하다는 점을 정확히 기억할 것.\n② 진단: ‘전치사구가 반드시 포함되어야 가능하다’는 문장에서 ‘반드시’를 오해해 전치사구가 없으면 변환 자체가 불가능하다고 생각한 듯함. 지문 12.7에서 ‘The city was destroyed by the French’(전치사구가 없음)도 예시된 점을 보지 못함. → 처방: ‘전치사구가 없으면 변환이 불가능하다’는 오해를 버리고, 전치사구 유무와 관계없이 수동태 변환이 가능하다는 점을 기억할 것.\n③ 진단: ‘전치사구 유무와 관계없이 모든 구문을 변환할 수 있다’는 문장에서 ‘모든’을 오해해 전치사구가 포함된 모든 구문이 변환 가능하다고 생각한 듯함. 지문 12.6에서 ‘found with such set phrases only’라고 한 점을 보지 못함. → 처방: ‘모든 구문’이 아니라 ‘특정 구문들’만 변환 가능하다는 점을 정확히 기억하고, 예시된 구문들(‘lost sight of’, ‘taken good care of’ 등)을 다시 확인할 것.\n④ 진단: ‘전치사구가 없으면 변환이 불가능하다’는 문장에서 ‘없으면’을 오해해 전치사구가 없으면 변환 자체가 불가능하다고 생각한 듯함. 지문 12.7에서 ‘The city was destroyed by the French’(전치사구가 없음)도 예시된 점을 보지 못함. → 처방: ‘전치사구가 없으면 변환이 불가능하다’는 오해를 버리고, 전치사구 유무와 관계없이 수동태 변환이 가능하다는 점을 기억할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The passive voice in English can convert various constructions, including those with prepositional phrases, into passive forms.]"
-   }
-  },
-  {
-   "ts": "2026-08-02T17:18:09.732Z",
-   "type": "연결어빈칸",
-   "level": "중",
-   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "She was quite ready to be fallen in love with (Jane Austen). The doctor was speedily sent for. 12.6. ___(A)___ phrases containing a transitive verb with its object followed by a preposition may be thus turned into the passive: The original purpose was gradually lost sight of. She will be taken good care of. He was taken no notice of, but his sister was made much of. I hate being found fault with. This liberty is found with such set phrases only as those here exemplified. 12.7. The converted subject of a passive sentence, i.e. what would have been the subject if the idea had been expressed in an active form, is now regularly indicated by means of the preposition by: The city was destroyed by the French. ___(B)___ the old preposition was of, which is still found, chiefly after verbs denoting mental states: beloved, scorned, admired, etc. Of all forsaken, and forsaking all (Dryden). Essentials of english grammar 88",
-    "choices": [
-     "Even …… In fact",
-     "Even …… That is",
-     "Even …… But",
-     "That is …… Indeed",
-     "For example …… Moreover"
-    ],
-    "answer": 3,
-    "explanation": "(A)는 앞 내용과 '강조' 관계로 Even, (B)는 '대조' 관계로 But 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n[오답 진단·처방]\n① 진단: ‘Even……In fact’는 문맥상 전환을 설명하는 말이 아니라 예시나 강조를 위한 말이어서 지문의 ‘thus turned into’(이렇게 전환됨)와 맞지 않는다. ‘In fact’는 사실 강조로, ‘even’은 범위 확장으로 오해했을 수 있다. → 처방: 빈칸 앞뒤의 전환 설명을 연결하는 말로 ‘even……but’를 기억하고, 지문에서 ‘only as those here exemplified’(오로지 여기 예시된 구문에서만)로 전환의 한계를 나타내는 ‘but’를 찾도록 연습하기.\n② 진단: ‘Even……That is’는 전환 설명이 아니라 예시나 재진술로, 지문의 ‘thus turned into’(이렇게 전환됨)와 ‘the old preposition was of’(옛 전치사 ‘of’가 쓰임)의 대조를 설명하지 못한다. ‘That is’는 재진술로, 문맥 흐름과 맞지 않는다. → 처방: 지문에서 ‘found with such set phrases only as those here exemplified’(이 예시된 구문에서만 발견됨)와 ‘the old preposition was of’(옛 전치사 ‘of’가 쓰임)의 대조를 ‘even……but’가 나타낸다는 점을 기억하고, 전환과 대조의 흐름을 따라가도록 연습하기.\n④ 진단: ‘That is……Indeed’는 전환 설명이 아니라 재진술과 강조로, 지문의 ‘thus turned into’(이렇게 전환됨)와 ‘the old preposition was of’(옛 전치사 ‘of’가 쓰임)의 대조를 설명하지 못한다. ‘Indeed’는 강조로, 문맥상 전환의 한계를 나타내는 말이 아니다. → 처방: 지문에서 ‘found with such set phrases only as those here exemplified’(이 예시된 구문에서만 발견됨)의 ‘only’를 ‘but’가 대신하여 전환의 한계를 나타낸다는 점을 기억하고, ‘even……but’가 전환과 한계를 동시에 설명한다는 사실을 연습하기.\n⑤ 진단: ‘For example……Moreover’는 예시와 추가 설명으로, 지문의 전환 설명과 대조 설명을 연결하는 말이 아니라 단순히 예시와 보충을 나열하는 말로 오해했을 수 있다. ‘Moreover’는 추가 설명으로, 전환의 한계를 나타내는 말이 아니다. → 처방: 지문에서 ‘found with such set phrases only as those here exemplified’(이 예시된 구문에서만 발견됨)의 ‘only’를 ‘but’가 전환의 한계를 나타낸다는 점을 기억하고, ‘even……but’가 전환과 한계를 동시에 설명한다는 사실을 연습하기.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-02T17:18:41.148Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "She was quite ready to be fallen in love with (Jane Austen). ① The doctor was speedily sent for. ② Even phrases containing a transitive verb with its object followed by a preposition may be thus turned into the passive: The original purpose was gradually lost sight of. ③ The passive voice is rarely found in modern business communications. ④ She will be taken good care of. ⑤ He was taken no notice of, but his sister was made much of. I hate being found fault with. This liberty is found with such set phrases only as those here exemplified. The converted subject of a passive sentence, i.e. what would have been the subject if the idea had been expressed in an active form, is now regularly indicated by means of the preposition by: The city was destroyed by the French. But the old preposition was of, which is still found, chiefly after verbs denoting mental states: beloved, scorned, admired, etc. Of all forsaken, and forsaking all (Dryden). Essentials of english grammar 88",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘be fallen in love with’는 ‘~와 사랑에 빠지다’라는 구동사인데, ‘fall in love with’를 수동태로 잘못 이해했을 가능성이 있다. 지문 ②에서 ‘lost sight of’(시야에서 잃다)가 수동태로 쓰인 예를 들었는데, 이 선지도 같은 구조로 오해했을 수 있다. → 처방: ‘be fallen in love with’는 잘못된 표현이므로, ‘fall in love with’를 수동태로 바꾸면 ‘She was quite ready to fall in love with (by someone).’가 된다. 수동태가 되는 동사의 형태를 정확히 확인하자.\n② 진단: ‘transitive verb with its object followed by a preposition’(목적어+전치사가 있는 타동사)가 수동태로 바뀌는 예를 설명한 부분인데, 이 선지를 선택한 학생은 ‘transitive verb’의 의미를 정확히 알지 못해 전치사 구가 포함된 동사도 수동태가 가능하다는 점을 놓쳤을 수 있다. → 처방: ‘transitive verb’는 ‘목적어를 필요로 하는 동사’라는 뜻임을 기억하자. ‘lost sight of’(시야를 잃다)처럼 전치사 구가 포함된 동사도 수동태가 가능하다는 점을 기억하고, 예문을 다시 한 번 확인하자.\n④ 진단: ‘take good care of’의 수동태 형태인 ‘be taken good care of’를 예로 든 부분인데, 학생은 ‘take care of’의 수동태 구조를 정확히 알지 못해 이 선지를 선택했을 가능성이 있다. → 처방: ‘take care of’의 수동태는 ‘be taken care of’임을 기억하자. ‘good’이 수식어로 들어간 경우 ‘be taken good care of’가 된다는 점을 확인하고, 예문을 더 찾아보면서 익숙해지자.\n⑤ 진단: ‘take no notice of’와 ‘make much of’의 수동태 형태를 예로 든 부분인데, 학생은 ‘take notice of’와 ‘make of’의 수동태 구조를 혼동했을 수 있다. → 처방: ‘take notice of’는 ‘~에 주목하다’라는 뜻으로, 수동태는 ‘be taken notice of’가 된다. ‘make much of’는 ‘~을 중요시하다’라는 뜻으로, 수동태는 ‘be made much of’가 된다. 구동사의 수동태 형태를 따로 정리해 공부하자.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]
