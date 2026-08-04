@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-04T21:43:10.572Z",
+ "updated": "2026-08-04T23:23:35.360Z",
  "samples": [
+  {
+   "ts": "2026-08-04T23:19:15.046Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "AWRY (uh RYE) adj off ⓐ<u>course</u>; twisted to one side • The hunter’s bullet went awry. Instead of hitting the bear, it hit his truck. • When we couldn’t find a restaurant, our ⓑ<u>dinner</u> plans went awry. • The old woman’s hat was awry; it had dipped in front of her left eye. ⓒ<u>AXIOM</u> (AK see um) n a ⓓ<u>self-evident</u> rule or ⓔ<u>truth</u>; a widely accepted saying “Everything that is living dies” is an axiom. An axiom in geometry is a rule that doesn’t have to be proved because its truth is accepted as obvious, self-evident, or unprovable. Quick Quiz #13 Match each word in the first column with its definition in the second column. Check your answers here. 1. autonomous a. greed 2. avarice b. like an uncle 3. avow c. self-evident truth 4. avuncular d. acting independently 5. awry e. claim 6. axiom f. off course B BANAL (buh NAL) adj unoriginal; ordinary • The dinner conversation was so banal that Amanda fell asleep in her dessert dish.",
+    "choices": [
+     "course: A sequence of events.",
+     "dinner: A midday meal (in a context in which the evening meal is called supper or tea).",
+     "axiom: A seemingly self-evident or necessary truth which is based on assumption; a prin",
+     "self-evident: To receive, especially with a consent, with favour, or with approval.",
+     "truth: True facts, genuine depiction or statements of reality."
+    ],
+    "answer": 4,
+    "explanation": "정답 ⓓ의 풀이는 'accepted'의 정의이다. 'self-evident'의 올바른 풀이: Obviously true, and requiring no proof, argument or explanation.\n[오답 진단·처방]\n① 진단: 지문에서 'off course'로 설명된 'awry'를 이해하지 못하고 'course'의 일반적인 의미인 '일련의 사건'으로 오독했을 가능성이 있다. → 처방: 다음부터는 단어의 문맥을 고려하여 의미를 파악해야 한다.\n② 진단: 지문에서 'dinner plans'로 사용된 'dinner'를 이해하지 못하고 일반적인 의미인 '중식'으로 혼동했을 가능성이 있다. → 처방: 다음부터는 단어의 문맥을 고려하여 의미를 파악해야 한다.\n③ 진단: 지문에서 'self-evident rule or truth'로 설명된 'axiom'을 이해하지 못하고 일반적인 의미인 '가정에 기반한 진리'로 오독했을 가능성이 있다. → 처방: 다음부터는 단어의 정의와 예시를 함께 고려하여 의미를 파악해야 한다.\n⑤ 진단: 지문에서 'axiom'의 정의로 사용된 'truth'를 이해하지 못하고 일반적인 의미인 '진실한 사실'로 혼동했을 가능성이 있다. → 처방: 다음부터는 단어의 문맥과 관련된 다른 단어의 의미를 함께 고려하여 의미를 파악해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-04T23:19:41.266Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① • When we couldn’t find a restaurant, our dinner plans went awry.\n② Quick Quiz #13 Match each word in the first column with its definition in the second column.\n③ like an uncle 3.\n④ An axiom in geometry is a rule that doesn’t have to be proved because its truth is accepted as obvious, self-evident, or unprovable.\n⑤ AXIOM (AK see um) n a self-evident rule or truth; a widely accepted saying “Everything that is living dies” is an axiom.\n⑥ Instead of hitting the bear, it hit his truck.\n⑦ • The old woman’s hat was awry; it had dipped in front of her left eye.\n⑧ AWRY (uh RYE) adj off course; twisted to one side • The hunter’s bullet went awry.\n⑨ Check your answers here.",
+    "choices": [
+     "⑧-①-⑥-⑦-⑤-④-②-⑨-③",
+     "⑧-⑥-⑨-⑦-③-①-④-⑤-②",
+     "⑧-⑥-①-⑦-⑤-②-④-⑨-③",
+     "⑧-⑤-⑦-③-⑨-②-④-①-⑥",
+     "⑧-⑥-①-⑦-⑤-④-②-⑨-③"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ⑧-⑥-①-⑦-⑤-④-②-⑨-③. 흐름: ⑧ → ⑥(Instead) → ① → ⑦ → ⑤ → ④ → ② → ⑨ → ③ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ① 'awry'의 뜻(off course, twisted to one side)을 몰라서 문맥에 맞지 않게 배치했고, ② 'axiom'의 정의가 들어간 문장(⑤, ④)이 흐름에 맞지 않게 앞쪽으로 배치됐다. 특히 ⑥번 문장이 'awry'의 뜻을 모른 채 앞뒤로 배치된 점이 문제다. → 처방: 단어 뜻을 먼저 확인하고, 문맥상 'awry'가 사용된 문장끼리 묶은 뒤 'axiom' 관련 문장을 이어서 배치하라.\n② 진단: ① 'awry'의 뜻을 몰라 ⑧-⑥-⑨ 순서로 배치했고, ② 'axiom' 관련 문장(⑤, ④)이 중간에 섞여 흐름이 깨졌다. ③ 'Quick Quiz'와 'Check your answers'가 끝부분에 배치된 것도 잘못이다. → 처방: 문장의 주제를 먼저 파악한 뒤, 'awry'가 포함된 문장(⑧, ①, ⑥, ⑦)을 한 그룹으로, 'axiom' 관련 문장(⑤, ④)을 다른 그룹으로 나누어 배치하라.\n③ 진단: ① 'awry'의 뜻을 몰라 ⑧-⑤-⑦ 순서로 배치했고, ② 'axiom' 관련 문장(⑤)이 'awry' 관련 문장(⑦)보다 먼저 나와 의미가 연결되지 않았다. ③ 'Quick Quiz'와 'Check your answers'가 중간에 배치된 것도 흐름을 깨뜨렸다. → 처방: 단어 뜻을 먼저 확인하고, 문장의 주제와 흐름을 고려해 'awry' 관련 문장과 'axiom' 관련 문장을 분리하여 배치하라.\n④ 진단: ① 'awry'의 뜻을 몰라 ⑧-⑥-①-⑦ 순서로 배치했지만, ② 'axiom' 관련 문장(⑤, ④)이 흐름에 맞지 않게 앞쪽으로 배치됐다. ③ 'Quick Quiz'와 'Check your answers'가 중간에 배치된 것도 잘못이다. → 처방: 문장의 주제를 먼저 파악한 뒤, 'awry'가 포함된 문장(⑧, ①, ⑥, ⑦)을 한 그룹으로, 'axiom' 관련 문장(⑤, ④)을 다른 그룹으로 나누어 배치하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-04T21:42:20.740Z",
    "type": "어법(밑줄)",
@@ -310,60 +380,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'Variability in language allows for flexibility in word combinations and meanings.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Variability in language allows for flexibility in word combinations and meanings.]\n[오답 진단·처방]\n① 진단: 자유로운 조합이 언어의 유연성을 높인다는 점은 맞지만, 지문은 '자유로운 조합'의 '변동성'이 의미를 투명하게 만들기도 한다는 점을 강조하지 변동성이 언어 유연성을 높이는 주된 이유라고 보지는 않는다. 학생은 '변동성'과 '유연성'을 같은 뜻으로 오해한 듯하다. → 처방: 지문에서 '변동성'이 '의미의 투명성'과 관련이 있음을 확인하고, 선지의 '유연성'이 지문에서 말하는 '변동성'과 같은 의미인지 다시 한 번 확인하기.\n② 진단: 지문은 전치사의 의미가 '불확실하게 변할 수 있다'는 점보다는 '자유로운 조합'의 변동성이 의미를 투명하게 만든다는 점을 더 강조한다. 학생은 지문의 핵심 논점을 '의미의 불확실성'으로 잘못 읽은 듯하다. → 처방: 지문의 핵심 주제가 '의미의 투명성'과 '변동성'의 관계임을 기억하고, 선지가 지문의 주제를 벗어나지 않았는지 다시 점검하기.\n④ 진단: 지문은 '자유로운 조합'이 의미를 투명하게 만들지만, 모든 언어 조합이 완전한 투명성을 보장하지는 않는다는 점을 지적한다. 학생은 '모든 조합'이라는 절대적인 표현을 지문에서 뒷받침할 수 있는지 확인하지 않았다. → 처방: 지문에서 '모든 조합'이 '투명성'을 보장하지 않는다는 반례가 있는지 찾아보고, 선지의 절대적 표현이 지문과 맞는지 다시 한 번 확인하기.\n⑤ 진단: 지문은 '변동성'이 '자유로운 조합'의 특징이지만, '명확한 경계'를 만든다는 점은 언급하지 않는다. 오히려 변동성이 경계가 모호하다는 점을 지적한다. 학생은 '변동성'과 '경계'의 관계를 반대로 이해한 듯하다. → 처방: 지문에서 '변동성'과 '경계'의 관계를 정확히 파악하고, '변동성'이 '경계'를 만든다는 표현이 지문에서 어떻게 설명되는지 다시 읽어보기."
-   }
-  },
-  {
-   "ts": "2026-08-04T03:48:11.622Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 2건 · 솔버교정: 솔버 2/2 다수결 5번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "variability as a continuum in free combinations",
-     "transparency in prepositional meanings",
-     "complete variability in all word combinations",
-     "borderline establishment in free combinations",
-     "functional overlap of orthographic words"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Degree of variability in free combinations'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Degree of variability in free combinations]\n[오답 진단·처방]\n① 진단: 자유로운 조합(free combinations)의 '가변성(variability)'이 연속선 상에 있음을 언급한 ①은 지문의 첫 문장('At the other extreme, four-word free combinations allow considerable variability')만을 보고 '가변성'에만 초점을 맞췄으나, 지문은 '가변성의 정도'가 '자유로운 조합'과 '복합 전치사'를 구분짓는 명확한 경계가 없다는 점까지 설명하고 있음을 오독함. → 처방: 지문의 전체 내용을 꼼꼼히 읽고, '가변성'이 언급된 문맥이 '경계의 모호성'까지 포함한다는 점을 확인할 것.\n② 진단: ②는 전치사 의미의 '투명성(transparent meanings)'을 주제로 삼았으나, 지문은 '투명성'을 '자유로운 조합'의 특징으로 언급한 뒤 곧바로 '가변성'과 '경계의 모호성'으로 논의를 전환하고 있음을 오독함. → 처방: 지문의 구조를 따라가며, '투명성'이 언급된 부분이 전체 주제가 아님을 파악할 것.\n③ 진단: ③은 '모든 단어 조합의 완전한 가변성'을 주장했으나, 지문은 '자유로운 조합'의 '상당한 가변성'을 언급했을 뿐 '모든 조합'에 대해 말하지 않았으며, 오히려 '경계의 모호성'을 강조하고 있음을 오독함. → 처방: 지문의 한정적 표현('considerable variability', 'many of the same orthographic words')에 주목하여 과장된 해석을 피할 것.\n④ 진단: ④는 '자유로운 조합의 경계 설정'을 주제로 삼았으나, 지문은 '자유로운 조합'과 '복합 전치사'의 경계가 모호하다는 점('it is impossible to establish a clear borderline')을 설명하고, 이어 '다른 품사와의 기능적 중복'까지 다루고 있음을 오독함. → 처방: 지문의 마지막 문장('Overlap between prepositions and other word classes')까지 읽고, '기능적 중복'이 주제임을 확인할 것."
-   }
-  },
-  {
-   "ts": "2026-08-04T03:48:28.575Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] At the other extreme, four-word free combinations allow considerable variability and are transparent in their meanings: across the front of the green against the back of his neck at the back of the stage at the centre of the system in the back of the vehicle in the side of the neck on the far side of the track outside the front of the house to the front of the court through the middle of nesting terns As variability is a matter of degree, it is impossible to establish a clear borderline between free combinations and complex prepositions.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 한편, 네 단어까지의 자유로운 조합은 상당한 변이성을 허용하며 그 의미가 투명하다: (예: 초록색 앞부분 across the front of the green, 그의 목 뒤쪽 against the back of his neck 등) (구문 포인트: 전치사구(complex prepositions) 및 다의적 전치사 사용 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-04T21:43:10.568Z",
+ "updated": "2026-08-04T23:23:35.357Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-04T23:23:10.145Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'the + 명사 + is/are' 구조가 빈번하며, 특히 'the amount of + 복수명사'가 단수로 처리되는 오류가 다수 발견된다. 또한 'which means that'가 'which means'로 단순화되는 경향이 있다.",
+   "rule": "'the + amount/number of + 복수명사' 뒤에는 단수 동사(is/has/was)를 사용해야 하며, 'which means that'는 'which means'로 축약하여 문맥상 자연스럽게 연결하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-04T21:42:38.352Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'thus making'와 'and like'는 문법적으로 비문법적 연쇄를 일으키며, 'have dealed'는 불규칙 동사 오용 패턴으로 빈번하다. 결과적으로 'plain to see'와 같은 자연스러운 연어 표현이 오답으로 기능한다.",
    "rule": "'thus + V-ing' 구문은 문법적으로 부적절하므로, 'thus'를 생략하거나 'it makes'로 대체하는 오답을 반드시 1개씩 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-30T09:45:45.483Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'really'는 형용사/부사 앞에 오는 경우 'a really good film'처럼 관사 뒤에 위치하며, 'recovered really good'처럼 동사+형용사 구조는 오류로 나타난다. 또한 'for some reasons'는 'for various reasons'로 구체화되어야 자연스럽다.",
-   "rule": "'really'는 관사(a/the) 뒤에 오며, 'for some reasons'는 'for various reasons'로 대체하여 문맥에 맞게 구체화하라.",
    "sample": [
     "old english",
     "university press",
