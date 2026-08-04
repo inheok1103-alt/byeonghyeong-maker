@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-04T15:40:05.555Z",
+ "updated": "2026-08-04T18:08:15.661Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-04T18:07:47.877Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거 시제 동사(was, were, had 등)가 불필요하게 사용되어 문법 오류가 발생하는 패턴이 빈번하며, 특히 'no matter how + 과거 시제'나 'must + 과거 시제' 구조에서 오류가 두드러진다.",
+   "rule": "'no matter how + 형용사/부사 + 과거 시제' 또는 'must + 동사원형' 구조에서 과거 시제 동사를 사용하지 말고, 'may/might + 동사원형' 또는 'must + 동사원형'으로 통일하여 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-04T15:39:38.408Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'because' 이후에 명사구(animals, nature)가 오는 경우, 동사(affect, is breaking)가 단수형으로 오기보다는 복수형으로 오는 패턴이 빈번함을 확인했다. 또한 접속사 생략이 오류로 이어지는 경우가 많다.",
    "rule": "'because + 명사구' 뒤에는 동사가 복수형(are/is → are)으로 오며, 접속사(and, but 등)는 문장 내 논리적 연결을 위해 필수적으로 삽입한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-29T23:18:56.239Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 패턴들은 불필요한 중복 표현(예: 'in my opinion, I think')이나 오류 있는 동사 형태(예: 'are make'), 또는 생략된 접속사(예: 'indicates prescribed fire should')가 자주 나타나며, 이는 영어 문법의 기본 구조와 어휘 선택의 오류로 연결된다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, '~라고 생각한다', '~라고 주장한다' 등 주관적 표현 뒤에는 'that' 절을 필수적으로 삽입하도록 하거나, 동사의 시제·태 오류(예: 'be + 동사원형' 형태 오류)를 교정하는 문항을 출제하라.",
    "sample": [
     "old english",
     "university press",

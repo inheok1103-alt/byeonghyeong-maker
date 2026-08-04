@@ -1,6 +1,110 @@
 {
- "updated": "2026-08-04T15:40:05.558Z",
+ "updated": "2026-08-04T18:08:15.665Z",
  "samples": [
+  {
+   "ts": "2026-08-04T18:04:47.681Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.86,
+    "D": -1,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.86)",
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "If A and B are identical, anything which is true of A is also true of B, and vice versa. Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. So A and B are identical means that A and B are one and the same thing. In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name. This assumption gives us an important rule of inference called the Principle of Substitutivity. (2) Principle of Substitutivity",
+    "choices": [
+     "A 와 B 가 동일하다는 것은 A 와 B 가 같은 외모라는 뜻이다.",
+     "동일성이란 ‘동일한 정체성’을 지닌다는 의미로, ‘외모가 같다’는 뜻이 아니다.",
+     "모하메드 알리와 캐시어스 클레이가 동일하다는 것은 두 사람이 다른 인물이라는 의미다.",
+     "라이프니츠의 법칙에 따르면 A=B 이면 A 에 대해 참인 것은 B 에 대해서도 거짓이다.",
+     "대체 가능성의 원리는 동일한 대상에 다른 이름을 붙였을 때 적용되지 않는 추론 규칙이다."
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘identical’의 의미를 ‘외모가 같다’로 오해한 것. 지문에서 ‘identical’의 의미는 ‘동일한 정체성’을 지닌다는 것이고, ‘외모가 같다’는 뜻과는 다르다고 분명히 밝힘. → 처방: ‘identical’의 의미를 지문에서 제시한 정의대로 정확히 기억하고, ‘외모’와 혼동하지 않도록 주의하기.\n③ 진단: ‘모하메드 알리와 캐시어스 클레이가 동일하다’는 말이 두 사람이 ‘다른 인물’이라는 의미로 오해한 것. 지문에서 이 말은 두 이름이 같은 한 사람을 가리킨다고 설명함. → 처방: ‘A 와 B 가 동일하다’는 말이 같은 대상을 가리킨다는 사실을 기억하고, ‘다른 인물’이라는 오해를 버리기.\n④ 진단: 라이프니츠의 법칙에 따르면 A=B 이면 A 에 대해 참인 것은 B 에 대해서도 참이라고 설명했는데, ‘거짓’이라는 단어를 사용해 오해한 것. → 처방: ‘참’과 ‘거짓’을 정확히 구분하고, 지문에서 설명한 법칙의 내용을 다시 한 번 확인하기.\n⑤ 진단: ‘대체 가능성의 원리’는 동일한 대상에 다른 이름을 붙였을 때 적용되는 추론 규칙이라고 설명했는데, ‘적용되지 않는다’고 오해한 것. → 처방: ‘대체 가능성의 원리’의 의미를 다시 읽고, 이 원리가 적용되는 경우를 정확히 이해하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-04T18:07:01.407Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "If A and B are identical, <u>anything which is true of A is also true of B, and vice versa</u>. Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. So A and B are identical means that A and B are one and the same thing. In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name. This assumption gives us an important rule of inference called the Principle of Substitutivity. (2) Principle of Substitutivity",
+    "choices": [
+     "If two entities are truly identical, every property or statement applicable to one must equally apply to the other without exception.",
+     "Whenever two entities are identical, some properties of one can be different from those of the other.",
+     "When two things are identical, their properties determine their identity rather than the other way around.",
+     "If two entities share some properties, they must be identical in all aspects.",
+     "If two things are identical, only some of their properties will necessarily match."
+    ],
+    "answer": 1,
+    "explanation": "밑줄 친 부분은 'If two entities are truly identical, every property or statement applicable to one must equally apply to the other without exception.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘identical’이 ‘same identity’를 뜻한다는 지문 내용을 무시하고 ‘appearance’나 ‘some properties’에만 초점을 맞추어 오해한 것. → 처방: ‘identical’의 의미를 ‘same identity’로 정확히 이해한 후, 모든 성질이 동일해야 한다는 결론을 따라가기.\n③ 진단: ‘properties determine identity’가 아니라 ‘identity determines properties’라는 지문의 논리 흐름을 거꾸로 뒤집어 오해한 것. → 처방: 지문의 ‘A = B’이 ‘same thing’이라는 점을 확인하고, 성질이 아닌 정체성이 우선임을 인식하기.\n④ 진단: ‘share some properties’라는 조건 없이 ‘must be identical in all aspects’로 과장하여 오해한 것. → 처방: ‘identical’이 ‘same thing’을 뜻한다는 점에서 모든 성질이 동일해야 함을 떠올리기.\n⑤ 진단: ‘only some of their properties will necessarily match’이라는 표현이 지문의 ‘anything which is true of A is also true of B’를 부정하는 오해. → 처방: ‘anything’이라는 전면적 동일성을 확인하고, ‘only some’이 아니라 ‘all’이어야 함을 기억하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-04T18:07:38.017Z",
+   "type": "안내문불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
+    "passage": "If A and B are identical, anything which is true of A is also true of B, and vice versa. Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. So A and B are identical means that A and B are one and the same thing. In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name. This assumption gives us an important rule of inference called the Principle of Substitutivity. (2) Principle of Substitutivity",
+    "choices": [
+     "A 와 B 가 동일하다는 것은 A 와 B 가 같은 대상을 가리킨다는 뜻이다.",
+     "동일성에 따르면 A 에 대해 참인 말은 B 에 대해서도 참이다.",
+     "A 와 B 가 동일하다는 것은 A 와 B 가 같은 외형을 지닌다는 뜻이다.",
+     "대체 가능성의 원칙은 동일성에 근거한 추론 규칙이다.",
+     "모하메드 알리와 캐시어스 클레이가 동일하다는 말은 두 이름이 같은 사람을 가리킨다는 뜻이다."
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '동일하다'는 '같은 대상을 가리킨다'는 뜻임을 정확히 짚었지만, 학생이 이 선지를 고르지 않았다면 '동일'의 의미를 정확히 이해하지 못한 채 무작정 선택했을 가능성이 있다. → 처방: 지문에서 '동일'의 의미를 정확히 확인하고, '동일'이 외형이 아니라 '하나의 대상'을 가리킨다는 점을 기억하며 문제를 풀기.\n② 진단: 지문에서 'A=B 이면 A 에 대해 참인 말은 B 에 대해서도 참'이라는 원칙을 '동일성'의 정의로 오해했을 수 있다. 학생이 이 선지를 고르지 않았다면 원칙과 정의를 혼동했을 가능성이 있다. → 처방: 지문에서 'Leibniz 의 법칙'과 '대체 가능성의 원칙'을 구분해 읽고, 각각의 의미를 명확히 이해한 후 문제를 풀기.\n④ 진단: 지문에서 '대체 가능성의 원칙'이 '동일성'에 근거한 추론 규칙임을 명시했지만, 학생이 이 선지를 고르지 않았다면 원칙의 근거를 제대로 파악하지 못한 채 선택했을 수 있다. → 처방: 지문에서 '대체 가능성의 원칙'이 '동일성'에 기반한다는 설명을 꼼꼼히 읽고, 원칙의 정의와 근거를 정확히 기억하며 문제를 풀기.\n⑤ 진단: 지문에서 '모하메드 알리와 캐시어스 클레이가 동일하다'는 두 이름이 같은 사람을 가리킨다는 뜻임을 예시로 들었지만, 학생이 이 선지를 고르지 않았다면 예시의 의미를 잘못 이해했을 가능성이 있다. → 처방: 지문에서 '동일'의 의미를 예시로 설명한 부분을 다시 읽고, 이름이 같은 대상을 가리킬 때 '동일'이 사용된다는 점을 기억하며 문제를 풀기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-04T15:37:36.300Z",
    "type": "연결어빈칸",
@@ -260,100 +364,6 @@
     ],
     "answer": 1,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: ‘기준선 위로 급락’이라고 적혀 있는데, 지문은 ‘기준선 아래로 급락’이라고 써서 반대 뜻을 적었다. → 처방: 지문에서 ‘위로’와 ‘아래로’를 정확히 확인하고, ‘항상성’ 때문에 도파민이 기준선 아래로 떨어진다는 점을 기억하기.\n③ 진단: ‘균형을 무시하려고 한다’고 적혀 있는데, 지문은 ‘항상 균형을 추구한다’고 써서 뜻이 완전히 반대다. → 처방: ‘항상성’이란 ‘균형을 유지하려는 뇌의 성질’이라는 뜻을 떠올리고, ‘무시’라는 단어가 나오면 반대 뜻인지 확인하기.\n④ 진단: ‘더 즐거워진다’고 적혀 있는데, 지문은 ‘더 우울해진다’고 써서 결과가 정반대다. → 처방: ‘오른 것은 내려온다’는 원리가 도파민에도 적용된다는 점을 떠올리고, 결과가 긍정적일지 부정적일지 한 번 더 읽기.\n⑤ 진단: ‘설명되지 않는다’고 적혀 있는데, 지문은 ‘항상성’으로 도파민 급등과 급락을 설명한다고 써서 뜻이 반대다. → 처방: ‘항상성’이란 ‘균형 유지 메커니즘’이라는 뜻을 떠올리고, 도파민 변화가 이 메커니즘으로 설명된다는 점을 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-03T23:39:17.995Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The Scrolling Crash: How Dopamine Drops Below Baseline",
-     "Social Media’s Dopamine Surge: Why Scrolling Feels Good",
-     "Dopamine Spikes: Scrolling’s Temporary High Without Consequences",
-     "The Dopamine Paradox: Scrolling’s Emotional Rollercoaster",
-     "Endless Scrolling, Endless Crashes: a Guaranteed Cycle"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'The Dopamine Seesaw: Social Media Scrolling’s Emotional Crash**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 핵심 조건·전제를 빠뜨림· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: ‘도파민 급등 후 급락’이 아니라 ‘급등한 도파민이 기준선 아래로 급락’(항상성 때문에)만 강조해 핵심 ‘시소’ 원리를 놓쳤다. 지문에서 ‘시소’가 오르내림의 반복을 뜻함을 간과했다. → 처방: 제목에 ‘시소’(up and down 의 반복)라는 말이 들어가는지 확인하고, 지문에서 ‘항상성’과 ‘기준선’ 개념이 어떻게 연결되는지 다시 읽어보기.\n② 진단: ‘스크롤이 기분을 좋게 한다’는 부분만 읽고, 그 뒤에 오는 ‘급락과 우울’(부정적 결과)을 무시했다. 제목이 ‘왜 기분이 좋은지’에만 초점을 맞췄다. → 처방: 제목이 ‘왜 기분이 좋은지’만 설명하는지, 아니면 그 뒤에 오는 ‘결과’까지 담고 있는지 확인하기.\n③ 진단: ‘일시적인 기분 상승’이 아니라, ‘항상성 때문에 기준선 아래로 급락해 더 우울해진다’는 부정적 결과가 빠져 있다. ‘결과 없이’란 단어가 오해를 불렀다. → 처방: 제목에 ‘결과’(급락·우울)가 포함되는지, 아니면 ‘일시적 기분 상승’만 강조하는지 다시 확인하기.\n⑤ 진단: ‘무한 스크롤 = 무한 급락’이라는 ‘보장된 사이클’을 과장해 표현했다. 지문은 ‘항상성 때문에’ 급락하지만, ‘무한’이나 ‘보장됨’을 직접 언급하지 않는다. → 처방: 제목에 ‘무한’이나 ‘보장됨’이란 말이 있으면 지문에서 같은 말이 나오는지 확인하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The Dopamine Seesaw: Social Media Scrolling’s Emotional Crash**]"
-   }
-  },
-  {
-   "ts": "2026-08-03T23:39:47.912Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.6,
-    "D": -0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "Ray English 지문 전문 · 원문 그대로 24번 제목 · T I T L E 도파민의 시소 제목 스크롤로 급등한 도파민이 항상성 때문에 기준선 아래로 급락한다 — '도파민 시소' 소재 소셜미디어와 도파민 Social media and dopamine 주제 스크롤로 급등한 도파민은 항상성 때문에 기준선 아래로 급락한다 Dopamine spikes from scrolling crash below baseline 제목 도파민 시소 The Dopamine Seesaw: How Scrolling Makes You Feel 한눈에 소셜미디어를 스크롤하면 도파민이 급등해 기분이 좋아지지만, 뇌는 늘 균형(항상성)을 추구하므로 곧 기준선 ‘아래로’ 급락해 오 히려 더 우울해 진다. ‘오른 것은 내려온다’는 원리가 작동하는 ‘도파민 시소’가 글의 핵심이다. 지문 전문 — 시험지 원문 Let’s look at what is occurring in your brain when scrolling on social media, ⓐ<u>a quick dopamine activities</u>. You open your social media apps and immediately you notice you feel really good, your dopamine levels increase ⓑ<u>incredibly fastly</u> and pleasure is experienced in your brain. The challenge this creates is as with everything in our universe: as the laws of physics explain, ‘what goes up, must come down’. Your brain and body are always seeking something called ‘homeostasis’, which simply means balance. With this in mind, when dopamine levels increase incredibly fast when scrolling social media, the brain then thinks, ‘Wow, how are my dopamine levels ⓒ<u>so high</u>?’ In order to achieve homeostasis, or balance, the dopamine then has to quickly drop ⓓ<u>an equally amount</u> below your baseline level in order to rebalance, making you ⓔ<u>feel even worse</u> than before you started scrolling. 지문 전문 · 원문 그대로",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓐ(a quick dopamine activities → a quick dopamine activity), ⓑ(incredibly fastly → incredibly fast), ⓓ(an equally amount → an equal amount) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘a quick dopamine activities’를 ‘a quick dopamine activity’로 고쳐야 하는데, 학생은 ‘activity’가 아니라 ‘activities’를 써서 틀렸다고 오독했을 수 있다. ‘dopamine’이 불가산 명사라 ‘activity’가 맞지만, 학생은 ‘dopamine’이 복수형으로 쓰인다고 착각했을 것이다. → 처방: ‘dopamine’이 불가산 명사라는 점을 기억하고, ‘activity’가 단수형임을 확인한 뒤 고쳐 써야 한다.\n② 진단: ‘incredibly fastly’를 ‘incredibly fast’로 고쳐야 하는데, 학생은 ‘fastly’가 부사로 쓰인다고 오독했을 수 있다. ‘fast’는 형용사와 부사 모두로 쓰이므로, ‘incredibly’는 ‘fast’를 꾸며야 하므로 ‘fast’를 부사로 써야 한다. → 처방: ‘fast’는 부사로도 쓰인다는 점을 기억하고, ‘-ly’를 붙이지 말고 ‘fast’를 그대로 써야 한다.\n④ 진단: ‘when scrolling social media’를 ‘when you scroll social media’로 고쳐야 하는데, 학생은 ‘when’ 뒤에 동사가 바로 와도 된다고 오독했을 수 있다. ‘when’ 뒤에는 완전한 문장이 와야 하므로 ‘you scroll’이 필요하다. → 처방: ‘when’ 뒤에는 완전한 문장이 와야 한다는 점을 기억하고, 주어와 동사를 넣어 ‘when you scroll’을 써야 한다.\n⑤ 진단: ‘the brain then thinks, ‘Wow, how are my dopa’를 ‘the brain then thinks, ‘Wow, how my dopamine levels are’를 고쳐야 하는데, 학생은 문장 구조를 제대로 파악하지 못하고 ‘are’를 생략했다고 오독했을 수 있다. → 처방: 문장의 주어와 동사를 확인하고, ‘how’ 뒤에는 완전한 절이 와야 한다는 점을 기억해 ‘how my dopamine levels are’를 써야 한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-03T21:31:42.930Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page. Then match them to 1–6 below. blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments? 1 He/She certainly looks his/her age. 5 He/She has a very abrasive manner. 2 He/She’s downright rude. 6 He/She has a warm smile. 3 He/She’s bursting with energy. 7 He/She’s full of pent-up anger. 4 He/She has a bubbly personality. 8 He/She has boundless energy. Complete this conversation using collocations from the box in the appropriate form so that Nell always agrees with Zoë. [ ]",
-    "choices": [
-     "have a slight difference from",
-     "have an overwhelming superiority over",
-     "have a remarkable similarity to",
-     "have a moderate connection with",
-     "bear no resemblance to"
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 원문 'bear a striking resemblance to'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 유사성과는 거리가 먼 '차이'를 의미하는 'difference'를 오독했을 가능성이 있다. 지문에서 'very similar'라고 언급된 부분을 간과했을 수 있다. → 처방: 유사성과 관련된 단어를 주의해서 읽어야 한다.\n② 진단: 'superiority'는 우월성을 의미하는 단어로, 지문에서 언급된 유사성과는 관련이 없을 가능성이 있다. 'overwhelming'이라는 단어도 강조의 의미로 오독했을 수 있다. → 처방: 단어의 의미를 정확하게 이해하고, 문맥에 맞게 사용해야 한다.\n④ 진단: 'connection'은 관련성이나 링크를 의미하는 단어로, 지문에서 언급된 유사성과는 직접적으로 관련이 없을 가능성이 있다. 'moderate'라는 단어도 정도를 나타내는 의미로 오독했을 수 있다. → 처방: 유사성과 관련된 단어를 주의해서 읽고, 문맥에 맞게 사용해야 한다.\n⑤ 진단: 'resemblance'는 유사성을 의미하는 단어로, 지문에서 언급된 유사성과는 정반대의 의미를 가진 'bear no resemblance'를 오독했을 가능성이 있다. → 처방: 단어의 의미를 정확하게 이해하고, 문맥에 맞게 사용해야 한다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
