@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-03T23:40:25.648Z",
+ "updated": "2026-08-04T03:49:04.275Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-04T03:48:31.019Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 '명사 + 전치사 + 명사' 패턴(예: 'between two', 'from every subject')이 빈번하며, 특히 관사 생략 오류가 다수 관찰된다. 또한 대문자 오용(예: 'SOME LUCE POINTS')과 시제 혼동(예: 'When'의 대문자 오용)도 특징적이다.",
+   "rule": "원서 코퍼스 패턴을 반영하여, '명사 + 전치사 + 명사' 구문에서 관사 생략 오류를 의도적으로 삽입하거나, 대문자 오용(예: 'When' → 'when')과 시제 혼동(예: 과거시제 동사 뒤 'to' 생략) 문제를 변형문제에 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-03T23:39:59.213Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'부사(realy, not 등)의 위치 오류'가 빈번하며, 특히 'a/an + 형용사 + 명사' 구조에서 형용사 앞의 부사 위치가 중요하다. 또한 'think about'과 같은 구동사 뒤에는 동사원형이 아닌 동사-ing 형태가 오는 경우가 많아 오류가 발생한다.",
    "rule": "'a/an + 형용사 + 명사' 구조에서 형용사 앞에 오는 부사는 반드시 'a/an'과 형용사 사이에 위치해야 한다(예: 'a really good film' vs. '*a good really film').",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-29T15:23:23.961Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 코퍼스의 패턴은 복수형 오류와 시제 오류가 빈번하며, 특히 'thing'의 복수형 'things'와 동사 'develop'의 시제 오류가 두드러진다. 또한 문맥에 맞지 않는 조동사 사용과 불완전한 구문 구조가 자주 발견된다.",
-   "rule": "복수형 오류를 방지하기 위해 'certain thing'을 'certain things'로, 'poeple'을 'people'으로, 'hte'를 'the'로 수정하고, 시제 오류는 조동사(will) 뒤 동사를 원형(understand, develop)으로 통일하여 문장을 완성하라.",
    "sample": [
     "old english",
     "university press",
