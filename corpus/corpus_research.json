@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-05T15:39:52.752Z",
+ "updated": "2026-08-05T17:56:18.175Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-05T17:55:45.776Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'and'로 연결된 동사구가 병렬 구조를 이룰 때, 시제·태·형태가 일치해야 하며, 'for + 동명사'는 'to + 동사원형'으로 대체되어야 한다. 또한 'a/an'의 선택은 명사의 가산성·수에 따라 결정된다.",
+   "rule": "'and'로 연결된 동사구가 병렬 구조를 이룰 때는 모든 동사가 동일한 시제·태·형태(예: 원형, 과거형, 수동태 등)를 유지해야 하며, 'for + 동명사' 구문은 'to + 동사원형'으로 수정해야 한다. 또한 가산 명사 앞에는 'a/an'을 정확히 사용해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-05T15:39:25.525Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'kind of' 다음에는 복수명사가 오지 않고, 'something' 뒤에는 관계대명사가 필수적으로 따라온다. 또한 'thing'은 'learn'과 같은 동사와 함께 쓰이며, 'think of'는 'aspects of'로 재구조화된다.",
    "rule": "'kind of' 뒤에는 단수명사나 복수명사를 위한 'ones'가 오며, 'something' 뒤에는 반드시 'that'이나 'which' 같은 관계대명사가 와야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-30T22:22:13.729Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'old/older'와 같은 비교급 형용사의 사용 패턴과 'recover well'와 같은 부사 사용이 빈번하며, 문법 오류는 주로 대명사 일치와 형용사/부사 혼용에서 발생한다.",
-   "rule": "원서 코퍼스 패턴을 반영하여, 비교급 형용사(old → older)나 부사(good → well)의 올바른 사용 여부를 묻는 문항을 CEFR B1 수준에서 출제하라. 특히 대명사 일치 오류(he → they/one 등)와 동사 수 일치(is → are) 오류를 포함하라.",
    "sample": [
     "old english",
     "university press",
