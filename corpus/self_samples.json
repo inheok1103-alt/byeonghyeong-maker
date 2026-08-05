@@ -1,6 +1,44 @@
 {
- "updated": "2026-08-05T03:36:38.078Z",
+ "updated": "2026-08-05T06:44:24.384Z",
  "samples": [
+  {
+   "ts": "2026-08-05T06:43:13.150Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: c)\n[영영풀이] The process of constructing.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] construction (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-05T06:43:56.566Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "EVENTS ⓐ<u>one verb class</u>, as shown by argument alternations (e.g., Jones broke the pot / The pot broke; Gillian spread the crusts with butter / Gillian spread butter on the crusts). The variability of verb meaning and verbal argument structure ⓑ<u>calls the traditional view into question</u>, and some scholars, particularly in Construction Grammar, propose that syntactic and semantic arguments are determined by ⓒ<u>the form of the sentence</u>, and not by the meaning of the verb. For example, on this approach the double object construction is analysed as a kind of idiom ⓓ<u>with associated thematic roles</u>. The verbs which can be inserted into the idiom framework contribute little more than a manner modification, as in (35). The Construction Grammar approach fits well with analysing the verb as ⓔ<u>a 1-place manner predicate</u> on the event. (35) a. Jones sent Delia a pet stoat.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓐ: 'one verb class' → 'a single verb class' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-05T03:35:37.382Z",
    "type": "목적",
@@ -320,59 +358,6 @@
     ],
     "answer": 5,
     "explanation": "(A)는 앞 내용과 '대조' 관계로 However, (B)는 '인과' 관계로 Is this a plausible line of reasoning 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n[오답 진단·처방]\n① 진단: 예를 들면이라는 뜻의 'For example'과, 무엇보다도라는 뜻의 'Above all'을 문맥에 맞지 않게 사용하여 오답을 선택했다. → 처방: 문장의 흐름과 논리적인 연결을 고려하여 빈칸에 들어갈 단어를 선택해야 한다.\n② 진단: 의외의 사실을 나타내는 'Indeed'와, 반대의견을 나타내는 'However'를 문맥에 맞지 않게 사용하여 오답을 선택했다. → 처방: 문장의 논리적인 흐름과 연결을 고려하여 빈칸에 들어갈 단어를 선택해야 한다.\n③ 진단: 반대의견을 나타내는 'However'를 두 번 반복하여 문장이 모호해지고, 논리적인 연결이 깨지게 하여 오답을 선택했다. → 처방: 문장의 흐름과 논리적인 연결을 고려하여 빈칸에 들어갈 단어를 선택해야 한다.\n④ 진단: 반대의견을 나타내는 'However'와, 예를 들면이라는 뜻의 'For instance'를 문맥에 맞지 않게 사용하여 오답을 선택했다. → 처방: 문장의 논리적인 흐름과 연결을 고려하여 빈칸에 들어갈 단어를 선택해야 한다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-04T15:38:21.408Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "동사의 의미를 일부 예문만 보고 분석하려고",
-     "동사의 의미를 분석할 때 문맥 조건을 무시하고 추론하려고",
-     "문장의 동사 의미를 단순히 비교하려고",
-     "문장의 동사와 통사적 역할을 분석하려고",
-     "모든 동사의 통사적 역할을 동일하게 가정하려고"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'To analyze the grammatical function of verbs and their syntactic roles in sentences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: 지문에서 동사의 의미를 분석할 때는 문맥과 통사적 역할(예: move 의 경우 ‘displace’ vs ‘stir’)을 함께 고려해야 하는데, 학생은 ‘일부 예문’만 보고 의미를 분석하려고 했다. → 처방: 동사의 의미를 분석할 때는 문맥과 통사적 역할을 모두 고려해야 한다. 문장 전체와 문맥을 꼼꼼히 읽고 동사의 기능(예: ‘move’의 경우 ‘displace’인지 ‘stir’인지)도 함께 확인하자.\n② 진단: 지문은 문맥 조건(예: move 의 경우 ‘himself’를 암시하는지)을 무시하고 동사의 의미를 추론하지 말라고 강조하는데, 학생은 그런 조건을 무시하고 의미를 분석하려고 했다. → 처방: 동사의 의미를 분석할 때는 문맥 조건(예: 암시된 주어나 목적어)을 반드시 확인해야 한다. 문장 안팎의 단서를 놓치지 말고 의미를 추론하자.\n③ 진단: 지문은 동사의 의미를 단순히 비교하는 것이 아니라 통사적 역할(예: ‘read’와 ‘eat’처럼 목적어의 존재 여부)을 분석해야 한다고 강조하는데, 학생은 단순히 비교만 하려고 했다. → 처방: 동사의 의미를 분석할 때는 통사적 역할(예: 목적어의 유무, 문법적 기능)을 함께 살펴야 한다. 문장의 구조와 동사의 기능 관계를 중시하자.\n⑤ 진단: 지문은 모든 동사의 통사적 역할을 동일하게 가정하지 말라고 경고하는데, 학생은 그런 가정을 하고 동사를 분석하려고 했다. → 처방: 동사의 통사적 역할을 분석할 때는 각 동사의 특성을 고려해야 한다. ‘read’와 ‘eat’처럼 보이는 동사라도 문맥에 따라 역할이 달라질 수 있음을 기억하자.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To analyze the grammatical function of verbs and their syntactic roles in sentences.]"
-   }
-  },
-  {
-   "ts": "2026-08-04T15:39:35.877Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "The reason for having two verbs was that ⓐ<u>moved in (i)</u> ⓑ<u>means ‘displace’</u>, whereas it means something like ‘stir’ in (ii). However, you may want to argue that move is, in fact, exactly like read and eat discussed in the same section, if we simply assume that ⓒ<u>move in (ii)</u> ⓓ<u>involves an implied DO</u>, namely himself . Sentence (ii) would then mean ‘Harold moved/displaced himself’. Is this a plausible line of reasoning? Give reasons for your answer. *8. Why is assigning the grammatical function of Direct Object to the italicised strings in the sentences below problematic? Is there another function we can assign instead? (i) This computer weighs ⓔ<u>twenty kilograms</u> . (ii) Each of these oranges costs ten pence . (iii) The information booklet contains four pages . (iv) That jacket suits you . *9. Apply the criteria for subjecthood presented in Section 3.1 to sentence (i) below: (i) There is a rat in the kitchen.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [시제] ⓐ: 'moved in (i)' → 'move in (i)' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-05T03:36:38.074Z",
+ "updated": "2026-08-05T06:44:24.380Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-05T06:43:58.775Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'the + 형용사'는 복수 개념(people, things)으로 해석되어야 하나, 한국어 학습자들은 단수·복수 구분을 소홀히 한다. 또한 'around'는 '주변에'라는 물리적 위치만 나타내며, 'at one's disposal'는 '~의 손안에 있다'라는 추상적 소유 개념으로 대체해야 한다.",
+   "rule": "'the + 형용사'가 복수 개념(people/things)으로 쓰일 때에는 반드시 복수형 동사나 복수 대명사를 사용하고, 'around'는 'at one's disposal'로 대체하여 추상적 소유 관계를 표현하도록 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-05T03:36:08.558Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "이 코퍼스에서 'old/new', 'agree/disagree', 'between two' 등 대립·비교·변화의 연어 패턴이 빈번히 등장하며, 특히 전치사 오용(agree with, disagree with)과 복수형 오용(livestock/livestocks)이 오답 설계에 활용될 수 있음을 확인했다.",
    "rule": "'agree/disagree' 동사는 전치사 'with'를 필수적으로 요구하므로, 문장에서 해당 동사가 등장하면 반드시 'agree with' 또는 'disagree with' 형태로 출제하여 전치사 오용 오답을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-30T14:35:15.138Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거시제와 현재시제가 혼용된 문장은 문법적 일관성을 유지해야 하며, 복수형 명사 사용 시 불규칙 복수형이나 관사 사용에 주의가 필요하다.",
-   "rule": "CEFR B1 수준의 내신 변형문제에서는 'many + 복수명사' 구문에서 복수형 오류(예: subject→subjects)를 고정적으로 오답으로 제시하고, 'just one' 또는 'a single'과 같은 수량 표현을 정답으로 요구한다.",
    "sample": [
     "old english",
     "university press",
