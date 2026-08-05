@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-05T12:19:50.476Z",
+ "updated": "2026-08-05T15:39:52.752Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-05T15:39:25.525Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스 패턴은 학술·교육 맥락에서 '전치사 + 명사(~ing)' 구문이 '명사 + 전치사 + 명사'로 변환되는 경향이 강하며, 시제·수 일치 오류가 빈번히 발생한다. 또한 'have + 명사' 구조가 'have + 형용사 + 명사'로 재구조화되는 패턴도 확인된다.",
+   "rule": "원서 코퍼스에서 확인된 'have + 명사' 구조는 'have + 형용사 + 명사'로 변환하여 시제·수 일치를 반드시 점검하도록 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-05T12:19:20.882Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'old/older'와 같은 비교급 형용사의 사용 패턴과 'recover well'와 같은 부사 사용이 빈번하며, 문법 오류는 주로 대명사 일치와 형용사/부사 혼용에서 발생한다.",
    "rule": "원서 코퍼스 패턴을 반영하여, 비교급 형용사(old → older)나 부사(good → well)의 올바른 사용 여부를 묻는 문항을 CEFR B1 수준에서 출제하라. 특히 대명사 일치 오류(he → they/one 등)와 동사 수 일치(is → are) 오류를 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-30T20:37:51.551Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'this shall/will' 다음에 동사원형이 아닌 명사(효과·증거 등)가 오는 오류가 반복된다. 또한 소유·복수 관련 오류(components→members, cars→car)도 빈번하다.",
-   "rule": "'This/It will' 다음에는 동사원형(affect/prove)이 와야 하며, 소유·복수 오류는 'have a car'와 같이 복수형이 아닌 단수형으로 통일해야 한다.",
    "sample": [
     "old english",
     "university press",
