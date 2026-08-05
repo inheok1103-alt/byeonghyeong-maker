@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-05T06:44:24.384Z",
+ "updated": "2026-08-05T10:00:14.102Z",
  "samples": [
+  {
+   "ts": "2026-08-05T09:58:11.234Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Charles Morris’s Signs, Language and Bebhaviowr (Prentice-Hall).\n② Jean Piaget’s The Child’s Conception of the World (Kegan Paul).\n③ Liebling’s The Wayward Pressman.\n④ James Harvey Robinson’s The Mind in the Making (Harper).\n⑤ Lewis Mumford’s The Culture of Cities (Secker & Warburg) Jawaharlal Nehru’s Autobiography (Lane).\n⑥ Katherine Mansfield’s The Garden Party (Constable).\n⑦ Xvi ACKNOWLEDGMENTS Kasner and Newman’s Mathematics and the Imagination (Simon and Schuster).\n⑧ Jules Masserman’s Principles of Dynamic Psychiatry (Saunders).\n⑨ Ogden and Richard’s The Meaning of Meaning (Kegan Paul).",
+    "choices": [
+     "⑦-③-⑥-⑧-①-⑤-⑨-②-④",
+     "③-⑦-⑥-⑧-①-⑤-⑨-②-④",
+     "⑦-③-⑥-⑧-①-⑤-⑨-④-②",
+     "⑦-⑥-③-⑧-①-⑤-⑨-②-④",
+     "⑦-⑥-③-⑤-①-⑨-⑧-④-②"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ⑦-③-⑥-⑧-①-⑤-⑨-②-④. 흐름: ⑦ → ③ → ⑥ → ⑧ → ① → ⑤ → ⑨ → ② → ④ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: 학생은 문장 ⑦에 있는 'ACKNOWLEDGMENTS'라는 표현이 글의 시작을 알리는 중요한 단서임을 놓치고, 목록의 첫 부분을 제대로 파악하지 못했습니다. → 처방: 목록이나 색인과 같은 글에서는 제목이나 머리말 역할을 하는 문장이 있는지 먼저 확인하고, 있다면 그 문장을 가장 앞에 두세요.\n③ 진단: 학생은 대부분의 저자 이름을 알파벳 순서로 잘 배열했지만, 마지막 부분에서 피아제(②)와 로빈슨(④)의 순서를 바꾸어 'P'가 'R'보다 먼저 온다는 규칙을 잊었습니다. → 처방: 저자 이름의 첫 글자를 꼼꼼히 비교하여 알파벳 순서를 정확하게 확인하는 습관을 들이세요.\n④ 진단: 학생은 글의 시작 문장은 맞게 골랐으나, 리블링(③)과 맨스필드(⑥)의 저자 이름 첫 글자 'L'과 'M'의 순서를 혼동하여 맨스필드를 리블링보다 먼저 배치했습니다. → 처방: 저자 이름의 첫 글자를 기준으로 알파벳 순서를 정할 때, 각 글자의 순서를 다시 한번 확인하는 과정을 거치세요.\n⑤ 진단: 학생은 저자 이름의 알파벳 순서 규칙을 일관되게 적용하지 못하고, 리블링(③)과 맨스필드(⑥), 매서먼(⑧)과 멈포드/네루(⑤) 등 여러 부분에서 순서 오류를 범했습니다. → 처방: 글의 흐름이 저자 이름의 알파벳 순서임을 파악했다면, 모든 저자의 이름을 나열한 뒤 첫 글자를 기준으로 정확한 순서를 미리 정해보고 선지와 비교하세요.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-05T09:58:50.335Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(77%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "감사의 글은 저작 활동에 도움을 제공한 이에게 정식으로 감사를 표하는 형식적 장치이다.",
+     "감사의 글은 저작물의 질을 보장하기 위한 공식적인 절차에 속한다.",
+     "저작물의 완성도를 높이기 위해 도움을 받은 이에게 감사의 표시를 하는 것은 필수적이다.",
+     "모든 저작 활동에서 감사의 글은 저자의 진심을 담은 필수적인 부분으로 자리한다.",
+     "감사의 글은 저작 활동에 도움을 준 이에게 때로만 정식으로 감사를 표하는 형식적 장치에 불과하다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Acknowledgment serves as a formal expression of gratitude for assistance in creating a work.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘저작물의 질을 보장하기 위한 공식적인 절차’로 오독했는데, 지문은 ‘감사의 글’이 ‘질 보장’과 무관함을 보여준다. (예: ‘도움을 제공한 이에게 정식으로 감사를 표하는 형식적 장치’가 핵심임을 확인할 수 있음) → 처방: ‘감사의 글’의 목적(감사 표현)이 아닌 ‘질 보장’ 절차로 오해하지 말고, 지문에서 ‘감사’를 ‘도움에 대한 정식 표기’로만 읽는 연습을 하라.\n③ 진단: ‘필수적’으로 오독했는데, 지문은 ‘필수’가 아니라 ‘형식적 장치’임을 보여준다. (예: ‘필수적’이라는 단어가 지문에 없음) → 처방: ‘필수’라는 표현이 지문에 있는지 확인하고, ‘필수’가 아니라 ‘형식적’임을 기억하라.\n④ 진단: ‘모든 저작 활동에서 필수’라는 과장된 해석으로 오독했는데, 지문은 ‘도움을 받은 경우’의 감사를 다룬다. (예: ‘도움을 제공한 이에게’라는 한정어가 있음) → 처방: ‘모든’이나 ‘필수’라는 과장된 표현이 지문에 있는지 확인하고, 한정적 의미를 찾도록 하라.\n⑤ 진단: ‘때로만’이라는 한정 조건을 ‘형식적 장치’에만 국한해 오독했는데, 지문은 ‘정식으로’라는 표현이 ‘형식적’임을 강조한다. (예: ‘정식으로’라는 단어가 ‘형식적 장치’를 뒷받침함) → 처방: ‘정식으로’라는 말이 ‘형식적’이라는 의미를 담고 있음을 기억하고, ‘때로만’이 아니라 ‘정식으로’라는 표현에 주목하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Acknowledgment serves as a formal expression of gratitude for assistance in creating a work.]"
+   }
+  },
   {
    "ts": "2026-08-05T06:43:13.150Z",
    "type": "본문찾아쓰기",
@@ -290,74 +358,6 @@
     ],
     "answer": 1,
     "explanation": "밑줄 친 부분은 'If two entities are truly identical, every property or statement applicable to one must equally apply to the other without exception.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘identical’이 ‘same identity’를 뜻한다는 지문 내용을 무시하고 ‘appearance’나 ‘some properties’에만 초점을 맞추어 오해한 것. → 처방: ‘identical’의 의미를 ‘same identity’로 정확히 이해한 후, 모든 성질이 동일해야 한다는 결론을 따라가기.\n③ 진단: ‘properties determine identity’가 아니라 ‘identity determines properties’라는 지문의 논리 흐름을 거꾸로 뒤집어 오해한 것. → 처방: 지문의 ‘A = B’이 ‘same thing’이라는 점을 확인하고, 성질이 아닌 정체성이 우선임을 인식하기.\n④ 진단: ‘share some properties’라는 조건 없이 ‘must be identical in all aspects’로 과장하여 오해한 것. → 처방: ‘identical’이 ‘same thing’을 뜻한다는 점에서 모든 성질이 동일해야 함을 떠올리기.\n⑤ 진단: ‘only some of their properties will necessarily match’이라는 표현이 지문의 ‘anything which is true of A is also true of B’를 부정하는 오해. → 처방: ‘anything’이라는 전면적 동일성을 확인하고, ‘only some’이 아니라 ‘all’이어야 함을 기억하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-04T18:07:38.017Z",
-   "type": "안내문불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
-    "passage": "If A and B are identical, anything which is true of A is also true of B, and vice versa. Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. So A and B are identical means that A and B are one and the same thing. In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name. This assumption gives us an important rule of inference called the Principle of Substitutivity. (2) Principle of Substitutivity",
-    "choices": [
-     "A 와 B 가 동일하다는 것은 A 와 B 가 같은 대상을 가리킨다는 뜻이다.",
-     "동일성에 따르면 A 에 대해 참인 말은 B 에 대해서도 참이다.",
-     "A 와 B 가 동일하다는 것은 A 와 B 가 같은 외형을 지닌다는 뜻이다.",
-     "대체 가능성의 원칙은 동일성에 근거한 추론 규칙이다.",
-     "모하메드 알리와 캐시어스 클레이가 동일하다는 말은 두 이름이 같은 사람을 가리킨다는 뜻이다."
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '동일하다'는 '같은 대상을 가리킨다'는 뜻임을 정확히 짚었지만, 학생이 이 선지를 고르지 않았다면 '동일'의 의미를 정확히 이해하지 못한 채 무작정 선택했을 가능성이 있다. → 처방: 지문에서 '동일'의 의미를 정확히 확인하고, '동일'이 외형이 아니라 '하나의 대상'을 가리킨다는 점을 기억하며 문제를 풀기.\n② 진단: 지문에서 'A=B 이면 A 에 대해 참인 말은 B 에 대해서도 참'이라는 원칙을 '동일성'의 정의로 오해했을 수 있다. 학생이 이 선지를 고르지 않았다면 원칙과 정의를 혼동했을 가능성이 있다. → 처방: 지문에서 'Leibniz 의 법칙'과 '대체 가능성의 원칙'을 구분해 읽고, 각각의 의미를 명확히 이해한 후 문제를 풀기.\n④ 진단: 지문에서 '대체 가능성의 원칙'이 '동일성'에 근거한 추론 규칙임을 명시했지만, 학생이 이 선지를 고르지 않았다면 원칙의 근거를 제대로 파악하지 못한 채 선택했을 수 있다. → 처방: 지문에서 '대체 가능성의 원칙'이 '동일성'에 기반한다는 설명을 꼼꼼히 읽고, 원칙의 정의와 근거를 정확히 기억하며 문제를 풀기.\n⑤ 진단: 지문에서 '모하메드 알리와 캐시어스 클레이가 동일하다'는 두 이름이 같은 사람을 가리킨다는 뜻임을 예시로 들었지만, 학생이 이 선지를 고르지 않았다면 예시의 의미를 잘못 이해했을 가능성이 있다. → 처방: 지문에서 '동일'의 의미를 예시로 설명한 부분을 다시 읽고, 이름이 같은 대상을 가리킬 때 '동일'이 사용된다는 점을 기억하며 문제를 풀기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-04T15:37:36.300Z",
-   "type": "연결어빈칸",
-   "level": "중",
-   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.83,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①③④"
-    ]
-   },
-   "q": {
-    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "The reason for having two verbs was that move in (i) means ‘displace’, whereas it means something like ‘stir’ in (ii). ___(A)___, you may want to argue that move is, in fact, exactly like read and eat discussed in the same section, if we simply assume that move in (ii) involves an implied DO, namely himself . Sentence (ii) would then mean ‘Harold moved/displaced himself’. ___(B)___? Give reasons for your answer. *8. Why is assigning the grammatical function of Direct Object to the italicised strings in the sentences below problematic? Is there another function we can assign instead? (i) This computer weighs twenty kilograms . (ii) Each of these oranges costs ten pence . (iii) The information booklet contains four pages . (iv) That jacket suits you . *9. Apply the criteria for subjecthood presented in Section 3.1 to sentence (i) below: (i) There is a rat in the kitchen.",
-    "choices": [
-     "For example …… Above all",
-     "Indeed …… However",
-     "However …… However",
-     "However …… For instance",
-     "However …… Is this a plausible line of reasoning"
-    ],
-    "answer": 5,
-    "explanation": "(A)는 앞 내용과 '대조' 관계로 However, (B)는 '인과' 관계로 Is this a plausible line of reasoning 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n[오답 진단·처방]\n① 진단: 예를 들면이라는 뜻의 'For example'과, 무엇보다도라는 뜻의 'Above all'을 문맥에 맞지 않게 사용하여 오답을 선택했다. → 처방: 문장의 흐름과 논리적인 연결을 고려하여 빈칸에 들어갈 단어를 선택해야 한다.\n② 진단: 의외의 사실을 나타내는 'Indeed'와, 반대의견을 나타내는 'However'를 문맥에 맞지 않게 사용하여 오답을 선택했다. → 처방: 문장의 논리적인 흐름과 연결을 고려하여 빈칸에 들어갈 단어를 선택해야 한다.\n③ 진단: 반대의견을 나타내는 'However'를 두 번 반복하여 문장이 모호해지고, 논리적인 연결이 깨지게 하여 오답을 선택했다. → 처방: 문장의 흐름과 논리적인 연결을 고려하여 빈칸에 들어갈 단어를 선택해야 한다.\n④ 진단: 반대의견을 나타내는 'However'와, 예를 들면이라는 뜻의 'For instance'를 문맥에 맞지 않게 사용하여 오답을 선택했다. → 처방: 문장의 논리적인 흐름과 연결을 고려하여 빈칸에 들어갈 단어를 선택해야 한다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
    }
   }
  ]
