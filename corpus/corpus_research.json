@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-05T20:05:10.699Z",
+ "updated": "2026-08-05T21:36:40.829Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-05T21:36:05.732Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'whole'은 전체 집합을 가리킬 때 쓰이며, 'all'은 개별 단위나 복수 명사와 결합해 '모든 ~'로 일반화한다. 'more'는 동사 뒤가 아닌 수식 대상 앞에 위치해야 한다.",
+   "rule": "'whole' + 단수명사(집합체) → 'all' + 복수명사(개별 단위)로 수정하는 오류 패턴을 변형 문제로 출제하라. (예: 'the whole emission' → 'all emissions')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-05T20:04:31.638Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'형용사+명사' 구문의 경우, 'a/an' 관사 생략 오류가 빈번하며, 특히 'really' 같은 부사가 형용사 앞에 오면 관사 위치가 모호해진다. 또한 'take upon oneself'와 같은 숙어는 'take it upon oneself'로의 관용적 표현이 일반적이다.",
    "rule": "'a/an' 관사는 형용사와 명사 사이에 반드시 위치하며, 'really'와 같은 강조 부사가 형용사 앞에 올 경우에도 관사 배치는 동일하게 적용된다. (예: 'a really good film' → 'It's a really good film.')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-31T03:56:52.600Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "복수형 오류는 '-s' 접미사 추가가 아니라 불규칙 복수형(elders→elders는 틀린 표현)으로 처리해야 하며, 'a number of diverse other courses'에서 'diverse'는 'other' 앞에 위치하는 것이 자연스럽다.",
-   "rule": "복수형 오류는 '-s' 접미사 추가가 아니라 불규칙 복수형(예: elder→elders, child→children)이나 복수형 자체의 오류(예: olders→elders)로 수정해야 하며, 'a number of' 구문에서는 'diverse'와 같은 한정사가 'other' 앞에 오도록 한다.",
    "sample": [
     "old english",
     "university press",
