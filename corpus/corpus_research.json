@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-05T17:56:18.175Z",
+ "updated": "2026-08-05T20:05:10.699Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-05T20:04:31.638Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "명사+명사 형태의 복합명사에서 오류가 자주 발생하며, 특히 'car usage', 'Latin American', 'third world'와 같이 관용적 표현에서 띄어쓰기·대소문자·관사 오류가 빈번하다.",
+   "rule": "복합명사(예: car usage, Latin American, third world)는 반드시 표준 표기법(띄어쓰기, 대소문자, 관사)을 적용한 후 출제하며, 오답 선택지에는 띄어쓰기 오류, 관사 누락, 대소문자 오류 등을 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-05T17:55:45.776Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "복수형 오류는 '-s' 접미사 추가가 아니라 불규칙 복수형(elders→elders는 틀린 표현)으로 처리해야 하며, 'a number of diverse other courses'에서 'diverse'는 'other' 앞에 위치하는 것이 자연스럽다.",
    "rule": "복수형 오류는 '-s' 접미사 추가가 아니라 불규칙 복수형(예: elder→elders, child→children)이나 복수형 자체의 오류(예: olders→elders)로 수정해야 하며, 'a number of' 구문에서는 'diverse'와 같은 한정사가 'other' 앞에 오도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-31T00:19:15.388Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'kind of' 다음에는 복수명사가 오지 않고, 'something' 뒤에는 관계대명사가 필수적으로 따라온다. 또한 'thing'은 'learn'과 같은 동사와 함께 쓰이며, 'think of'는 'aspects of'로 재구조화된다.",
-   "rule": "'kind of' 뒤에는 단수명사나 복수명사를 위한 'ones'가 오며, 'something' 뒤에는 반드시 'that'이나 'which' 같은 관계대명사가 와야 한다.",
    "sample": [
     "old english",
     "university press",

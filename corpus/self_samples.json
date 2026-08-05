@@ -1,6 +1,77 @@
 {
- "updated": "2026-08-05T17:56:18.179Z",
+ "updated": "2026-08-05T20:05:10.703Z",
  "samples": [
+  {
+   "ts": "2026-08-05T20:03:53.014Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "I can remember posting the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. <u>We use remember/forget doing for memories of the past.</u> The action is before the remembering. I regret spending all that money. I've got none left. Regret doing something means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. Try doing something means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. Means doing something expresses the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
+    "choices": [
+     "The act of recalling past experiences is inherently tied to the completion of those experiences.",
+     "Remembering past events is only possible if we have already completed them.",
+     "Past experiences require active forgetting in order to be remembered clearly.",
+     "All memories of the past are merely reconstructions built from our current needs and desires.",
+     "The ability to recall memories depends on how much time has passed since the events occurred."
+    ],
+    "answer": 1,
+    "explanation": "밑줄 친 부분은 'The act of recalling past experiences is inherently tied to the completion of those experiences.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-05T20:04:19.910Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "I can remember posting the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. We use ⓐ<u>remember/forget doing</u> for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. ⓑ<u>Regret doing something</u> means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. ⓒ<u>Try doing something</u> means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. ⓓ<u>Means doing something</u> expresses the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes ⓔ<u>need to clean</u>. This means that my shoes need to be cleaned (see Unit 59B).",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [준동사] ⓔ: 'need to clean' → 'need cleaning' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-05T20:04:29.701Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 16 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'regretting', 'remember', 'spending' / 14~18단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] I remember posting the letter, regretting spending all the money, and needing to clean my shoes.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-05T17:55:42.813Z",
    "type": "조건영작",
@@ -247,85 +318,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [수일치] ⓐ: 'one verb class' → 'a single verb class' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-05T03:35:37.382Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "자신의 기억력을 높이기 위해 복잡한 이미지를 활용하려고",
-     "단어의 의미를 시각적으로 떠올리기 위해 플래시카드 뒷면을 활용하려고",
-     "어려운 단어를 기억하기 위해 상상력을 적극 활용하려고",
-     "자신의 상상력을 활용하여 기억에 도움이 되는 정신적 이미지를 만들려고",
-     "항상 플래시카드 뒷면에 복잡한 그림을 그려 기억을 돕려고"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'to use your imagination to create mental images for better memory.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: ‘복잡한 이미지’를 ‘자신의 기억력을 높이기 위해’로 오해했는데, 지문은 ‘단어의 의미를 기억하기 위한 mental image’(정신적 이미지)를 강조하며, ‘복잡한’ 보다는 ‘단어와 연결된 간단한 이미지’를 권장합니다. → 처방: ‘복잡한 이미지’가 아니라 ‘단어와 연결된 mental image’를 떠올리는지 확인하세요.\n② 진단: ‘단어의 의미를 시각적으로 떠올리기 위해’를 ‘플래시카드 뒷면을 활용하는 방법’으로만 한정했는데, 지문은 ‘플래시카드 뒷면을 활용하는 이유’(mental image 만들기)를 설명하며, ‘시각적 떠올림’이 목적이 아니라 ‘기억을 돕는 mental image’가 핵심입니다. → 처방: ‘플래시카드 뒷면’은 수단일 뿐, 진짜 목적은 ‘mental image 로 기억을 돕는 것’이라는 점을 기억하세요.\n③ 진단: ‘어려운 단어를 기억하기 위해’를 ‘상상력을 적극 활용하는 것’으로만 해석했는데, 지문은 ‘단어 자체를 활용해 mental image 를 만드는 방법’을 구체적으로 설명하며, ‘어려운 단어’ 보다는 ‘단어의 의미를 기억하는 데 상상력이 도움이 된다’를 강조합니다. → 처방: ‘어려운 단어’가 아니라 ‘단어의 의미를 기억하는 데 상상력이 도움이 된다’를 떠올리세요.\n⑤ 진단: ‘항상 플래시카드 뒷면에 복잡한 그림을 그려’를 ‘무조건 해야 하는 방법’으로 오해했는데, 지문은 ‘필요한 경우에만’(예시로 oblique lines 그림을 든 것) 활용하라고 설명하며, ‘항상’은 과도한 일반화입니다. → 처방: ‘항상’이 아니라 ‘필요한 경우에 mental image 를 만들 때’ 활용하는지 확인하세요.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to use your imagination to create mental images for better memory.]"
-   }
-  },
-  {
-   "ts": "2026-08-05T03:36:02.108Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "You’ll learn even more if you use your imagination to make the backs of your flashcards ⓐ<u>a bit more elaborate</u>. For example, you might decorate the back of this card with a diagram of oblique lines—that is, lines that are ⓑ<u>neither parallel nor perpendiculars</u> to each other. Back Your diagram now gives you a mental image that can ⓒ<u>help you remember</u> the word. You’ll probably think of your own mental image, ⓓ<u>one that means somethings</u> to you. You could even use the word itself to create a picture that conveys the meaning of the word and that will stick in your mind to help you remember it. Here’s one possibility. We’ve ⓔ<u>divided the word into two</u> parts and written them on two different lines that are at an oblique angle to each other. Back",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 2,
-    "explanation": "틀린 곳은 ⓑ(neither parallel nor perpendiculars → neither parallel nor perpendicular), ⓓ(one that means somethings → one that means something) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘a bit more elaborate’는 문법상 옳지만, 학생이 ‘a bit’을 ‘a little’로 오해해 ‘more elaborate’를 ‘more elaborated’로 착각했을 수 있음. 지문에서 ‘elaborate’는 동사형용사(형용사)로 쓰였으므로 ‘elaborated’는 과거분사(형용사)로 오용한 것임. → 처방: ‘more + 형용사’ 꼴을 기억하고, ‘-ed’가 붙은 과거분사는 ‘과거형’이 아니라 ‘형용사’로도 쓰일 수 있음을 확인할 것.\n③ 진단: ‘neither parallel nor perpendiculars’를 ‘neither A nor B’ 구조로 오해해 ‘perpendiculars’를 복수형으로 썼음. ‘perpendicular’는 단수·복수 같은 형태이므로 ‘perpendicular’가 옳음. → 처방: ‘neither A nor B’에서 A 와 B 는 같은 형태(단수/복수, 원형/변형 등)를 유지해야 함을 기억할 것.\n④ 진단: ‘one that means somethings’를 ‘something’이 복수형 ‘somethings’로 오용했음. ‘something’은 불가산 명사이므로 ‘something’이 옳음. → 처방: ‘something’이 불가산 명사임을 기억하고, 복수형으로 쓸 수 없는지 확인할 것.\n⑤ 진단: ‘divided the word into two’를 ‘divided the word in two’로 착각했을 수 있음. ‘divide A into B’는 ‘A 를 B 로 나누다’라는 뜻이므로 ‘into’가 옳음. → 처방: ‘divide into’의 전치사 ‘into’를 기억하고, ‘in’과 혼동하지 않도록 주의할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-05T03:36:06.031Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 14 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'flashcards', 'creative', 'enhances' / 12~16단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Using creative visuals on flashcards enhances memory by linking words to personal mental images.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
