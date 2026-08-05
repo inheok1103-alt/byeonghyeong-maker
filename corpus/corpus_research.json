@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-04T23:23:35.357Z",
+ "updated": "2026-08-05T03:36:38.074Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-05T03:36:08.558Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거시제 동사(needs, wants got)나 부정사(to a knowledge)의 오용이 빈번하며, 복수명사(energy, familys)나 장소명사(palce)의 오류가 반복된다. 또한 'because those energy were found'와 같이 주어-동사 일치와 시제 혼용이 두드러진다.",
+   "rule": "'복수명사나 무한정사(energy, familys) 뒤에는 복수동사(are, need)나 단수형(knowledge)으로 대체하여 문법적 일치를 유지하라. 또한 'want got'처럼 시제 혼용 오류는 'want to'로, 'desport'는 'extract'로 올바른 동사로 교정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-04T23:23:10.145Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거시제와 현재시제가 혼용된 문장은 문법적 일관성을 유지해야 하며, 복수형 명사 사용 시 불규칙 복수형이나 관사 사용에 주의가 필요하다.",
    "rule": "CEFR B1 수준의 내신 변형문제에서는 'many + 복수명사' 구문에서 복수형 오류(예: subject→subjects)를 고정적으로 오답으로 제시하고, 'just one' 또는 'a single'과 같은 수량 표현을 정답으로 요구한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-30T12:07:37.460Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'thus making'와 'and like'는 문법적으로 비문법적 연쇄를 일으키며, 'have dealed'는 불규칙 동사 오용 패턴으로 빈번하다. 결과적으로 'plain to see'와 같은 자연스러운 연어 표현이 오답으로 기능한다.",
-   "rule": "'thus + V-ing' 구문은 문법적으로 부적절하므로, 'thus'를 생략하거나 'it makes'로 대체하는 오답을 반드시 1개씩 포함시킨다.",
    "sample": [
     "old english",
     "university press",
