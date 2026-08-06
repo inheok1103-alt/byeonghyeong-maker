@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-06T12:21:49.495Z",
+ "updated": "2026-08-06T15:33:51.558Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-06T15:33:21.581Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'과거·현재 시제 혼용' 오류가 빈번하며, 특히 '일회성 경험'을 과거로, '일반적 사실'을 현재로 표현하는 패턴이 두드러진다. 또한 '명사구+동사' 구조에서 시제 일관성 결여가 자주 발생한다.",
+   "rule": "'일회적 사건'은 과거 시제(과거형/과거완료)로, '일반적 사실·습관·상태'는 현재 시제(단순현재)로 통일하여 문장을 구성하라. 예: 'Once you get success, why would you not get it next time?' → '일회적 성공(과거)과 일반적 가능성(현재) 구분을 시제로 명확히 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-06T12:21:19.962Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제와 현재시제가 혼용된 문장에서 시제 일관성이 깨지거나, 관사 생략, 복수형 오류가 빈번하다는 패턴을 확인했다. 특히 'known'과 같은 과거분사 동사가 현재시제와 결합된 오류가 두드러진다.",
    "rule": "'과거시제와 현재시제가 혼용된 문장(예: 'As we all known when we were out')은 반드시 'have/has + 과거분사'로 시제를 통일하고, 쉼표로 문장 구조를 분리하여 오류를 수정하라. 또한, 'a/an' 관사 생략이나 복수형 오류('fishes' → 'fish', 'another fishes' → 'other fish')가 있는 경우, 관사 추가 또는 복수형 수정을 필수적으로 적용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-31T19:54:51.140Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거형 동사나 수동태가 과도하게 사용된 문장은 현재형·복수형으로 단순화하여 오류를 유도할 수 있으며, 특히 'most important doctor'처럼 불필요한 수식어는 'doctors'로 복수화하는 패턴이 빈번하다. 또한 'affect the ozone layer greatly'처럼 부사 위치가 어색한 경우, 'greatly affect'로 재배치하는 오류가 특징적이다.",
-   "rule": "'most important [단수명사]'나 'recommended for [단수명사]' 같은 문장은 'most important [복수명사]'나 'recommended for [복수명사]'로 변형하여 복수화 오류를 유도하라. 또한 'affect [명사] greatly'는 'greatly affect [명사]'로 재배치하는 오류를 반드시 포함시켜라.",
    "sample": [
     "old english",
     "university press",

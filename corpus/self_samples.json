@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-06T12:21:49.499Z",
+ "updated": "2026-08-06T15:33:51.562Z",
  "samples": [
+  {
+   "ts": "2026-08-06T15:31:53.660Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "D-Structure Determines Thematic Role Assignment in Predicates",
+     "Thematic Roles Stem Exclusively from Lexical Entries",
+     "Predicate Subject Positions Dictate Thematic Role Assignment",
+     "D-Structure Controls All Syntactic Positions in Sentences",
+     "Thematic Relations Remain Hidden in D-Structure Representations"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'D-structure represents thematic relations, where arguments are assigned -roles by predicates.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘-roles 가 lexical entry 에만 저장된다고 오해. 지문은 lexical entry 에서 -roles 가 주어지지만, 실제 문장에서 -roles 는 argument 에 할당된다고 분명히 밝힘. → 처방: ‘-roles 가 lexical entry 에만 존재한다고 생각하지 말고, 문장 속 argument 에 어떻게 할당되는지 집중해서 읽기.\n③ 진단: ‘predicate subject positions 가 thematic role 을 결정한다고 착각. 지문은 D-structure 가 thematic relations 을 순수하게 반영한다고 설명하며, subject position 이 thematic role 을 정하지 않음. → 처방: ‘subject position’이 아니라 ‘thematic relations’을 중심으로 D-structure 의 역할을 다시 한번 확인하기.\n④ 진단: ‘D-structure 가 모든 syntax positions 을 통제한다고 과장. 지문은 D-structure 가 thematic relations 을 반영하는 ‘pure representation’이라는 점만 강조하며, 모든 syntax positions 을 통제한다고 말하지 않음. → 처방: ‘모든 syntax positions’을 통제한다는 표현은 과하다는 점을 깨닫고, ‘thematic relations’이라는 핵심 단어에 집중하기.\n⑤ 진단: ‘D-structure 에서 thematic relations 이 숨겨져 있다고 오해. 지문은 D-structure 가 thematic relations 을 ‘pure representation’으로 보여준다고 설명하며, 숨겨져 있지 않음. → 처방: ‘숨겨져 있다’는 표현이 아니라 ‘반영된다’는 개념을 정확히 이해하고, D-structure 의 역할을 다시 한번 정리하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: D-structure represents thematic relations, where arguments are assigned -roles by predicates.]"
+   }
+  },
   {
    "ts": "2026-08-06T12:20:16.846Z",
    "type": "본문찾아쓰기",
@@ -325,25 +360,6 @@
     ],
     "answer": 1,
     "explanation": "밑줄 친 부분은 'The act of recalling past experiences is inherently tied to the completion of those experiences.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-05T20:04:19.910Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "I can remember posting the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. We use ⓐ<u>remember/forget doing</u> for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. ⓑ<u>Regret doing something</u> means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. ⓒ<u>Try doing something</u> means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. ⓓ<u>Means doing something</u> expresses the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes ⓔ<u>need to clean</u>. This means that my shoes need to be cleaned (see Unit 59B).",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓔ: 'need to clean' → 'need cleaning' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
