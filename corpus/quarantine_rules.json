@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-05T23:20:14.981Z",
+ "updated": "2026-08-06T03:42:52.361Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 원문의 의무·허가·제한 등 규범적 성격(예: 'must', 'may not')을 문장 구조에 그대로 반영하고, 축약·왜곡 없이 '반드시 ~해야 한다/할 수 없다'와 같은 엄격한 표현으로 작성하라.",
+   "src": "자가학습:목적",
+   "score": 84,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-06T03:41:07.762Z"
+  },
+  {
+   "rule": "지문 핵심(강제적 표준 유지·위원회 감독·불이행 시 제명)을 17~21단어로 재구성하되, 'supervision', 'standards', 'unsympathetic'을 원문과 연계해 반드시 포함하라.",
+   "src": "자가학습:주제문완성",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-06T03:42:14.825Z"
+  },
   {
    "rule": "모든 문항은 지문의 핵심 논리(형식과 의미의 불일치·제약)를 직접 반영한 선지를 최소 1개 이상 포함해야 하며, 발문은 해당 논리를 포착할 수 있도록 구체화해야 한다.",
    "src": "자가학습:심경변화",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-29T10:01:49.790Z"
-  },
-  {
-   "rule": "모든 출제에서 지문 내 ‘This present/past tense distinction’이 가리키는 대상을 **‘the binary tense contrast between present and past tense forms’**로 1:1 명시적으로 서술하라.",
-   "src": "자가학습:지칭명시",
-   "score": 22,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-29T06:47:20.962Z"
-  },
-  {
-   "rule": "모든 문항은 원지문의 각 빈칸(1~5번)과 정답 선지(a~h)를 엄밀히 1:1 매칭하되, 문항 번호 오류를 방지하고 빈칸 문장은 완전한 문장으로 제시하여 문맥파악과 정답선정의 공정성을 유지해야 한다.",
-   "src": "자가학습:혼합통합형",
-   "score": 82,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-29T03:43:34.794Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

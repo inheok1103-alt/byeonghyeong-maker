@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-05T23:20:14.983Z",
+ "updated": "2026-08-06T03:42:52.363Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-06T03:42:21.066Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'sustain and active'와 같이 동사+형용사 구조가 잘못된 경우, 'sustain and be active'로 수정되는 패턴이 빈번히 관찰된다. 또한 'looks to pretty'와 같은 잘못된 보어 구조가 'looks too pretty'로 교정되는 경향이 강하다.",
+   "rule": "원서 문체 패턴을 반영하여, '동사 + and + 형용사' 구조가 등장할 경우, 반드시 '동사 + and + be + 형용사' 또는 '형용사 보어 구조(looks too pretty)'로 수정하도록 변형 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-05T23:19:49.027Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "연어의 오류는 주로 구두점(콤마) 누락이나 반복 오류에서 발생하며, 특히 'year after year'와 같은 고정 연어에서 'yaer'와 같은 철자 오류가 빈번하다.",
    "rule": "'year after year'와 같이 고정 연어는 반드시 정확한 형태로 출제하며, 특히 콤마(,)를 포함한 명사구(예: 'Insufficient closet space, inefficient heating, and decaying plumbing')는 병렬 구조를 유지하도록 오답지를 설계한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-31T10:03:02.298Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "시간 표현(‘spend time on ~’)과 재귀대명사(‘himself’)의 오용이 빈번하며, 명사의 단복수와 동사의 일치(‘costumer lose’ → ‘costumer loses’)가 CEFR B1 수준에서 핵심 오류 유형임을 확인할 수 있다.",
-   "rule": "‘spend + 시간 표현 + on + 동명사’(e.g., spend time on collecting)와 ‘재귀대명사 + 동사’(e.g., consider himself losing)의 정확한 구조를 묻는 문항을 CEFR B1 밴드에서 반드시 포함하라.",
    "sample": [
     "old english",
     "university press",
