@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-06T06:58:25.822Z",
+ "updated": "2026-08-06T10:02:34.030Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-06T10:01:58.645Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거분사(dealt/decrease) 오용과 시제·부정어 위치 오류가 빈번하며, 'have + 과거분사'와 'would + 동사원형'의 조합이 CEFR B1 수준에서 자주 틀린다. 또한 'for the future'가 'for the fucture'로 철자 오류가 발생하는 패턴이 확인된다.",
+   "rule": "'have/has/had + 과거분사'와 'would/should/could + 동사원형' 구문에서 과거분사 형태와 동사원형을 반드시 확인하여 오용을 방지하라. (예: have dealt, would decrease)",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-06T06:57:59.082Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'not only A, so B' 구조에서 'so'는 인과관계가 아닌 병렬·보완관계를 나타내야 하며, 'A'와 'B'는 문법적·의미적으로 대등해야 한다. 또한 'another'는 단수 가산명사와 함께 쓰이며, 'grow up'은 성장·발달의 의미를 지닌 자동사로, 'grow'는 단순 변화 동사로 대체되어야 한다.",
    "rule": "'not only A, so B' 구조에서 'so'를 'and' 또는 'thus'로 대체하거나, 'so'를 삭제하고 문장을 재구성하여 인과관계가 자연스럽게 연결되도록 하라. 또한 'another + 단수명사'와 'grow up' 대신 'grow'를 사용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-31T15:32:12.666Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 '형용사+명사' 패턴이 빈번하며, 특히 'a/an+형용사+명사' 구조가 강조됨. 또한, 'than'을 통한 비교 구문이 자주 등장해 비교급 오류가 빈발함.",
-   "rule": "'a/an+형용사+복수명사' 구조에서 복수명사가 오류 없이 쓰일 수 있도록, 출제 시 'a/an+형용사+복수명사'가 올바르게 쓰였는지 확인하고, 비교급에서는 'than'을 필수적으로 포함시켜 오류를 유도하라.",
    "sample": [
     "old english",
     "university press",
