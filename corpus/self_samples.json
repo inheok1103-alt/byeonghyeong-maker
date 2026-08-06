@@ -1,6 +1,113 @@
 {
- "updated": "2026-08-06T10:02:34.035Z",
+ "updated": "2026-08-06T12:21:49.499Z",
  "samples": [
+  {
+   "ts": "2026-08-06T12:20:16.846Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: c)\n[영영풀이] Of, or relating to concepts or mental conception; existing in the imagination.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] conceptual (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-06T12:20:39.431Z",
+   "type": "연결어빈칸",
+   "level": "중",
+   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · ⚠ 정답 재검토 권고 — 솔버 1/3가 3번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 100,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)"
+    ]
+   },
+   "q": {
+    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Overview\b 43 further rightward on the scale ­because of the additional conceptual content generated in it. In (40), for example, speaker Y’s trigger that targets the conceptual complex that she associates with the noun phrase a ­castle built only of sausages within speaker X’s utterance. ___(A)___ Y’s question about structural integrity may not make sense if that conceptual complex is based solely on the narrow sum of the literal meanings of the component ele­ments in the noun phrase. It may instead make sense only if Y augments this narrow sum with further conceptual content based on inference and general knowledge. ___(B)___, the familiar linearity of sausages might suggest their being strung together to form long chains, in turn arranged to visually indicate some contours of a picture-­book ­castle (rather than, say, being packed together to form the walls and floors of an ­actual ­castle). (40)  X: ­There’s a ­castle built only of sausages on the fairground.",
+    "choices": [
+     "But …… Thus",
+     "In fact …… Indeed",
+     "Moreover …… For instance",
+     "But …… However",
+     "But …… For example"
+    ],
+    "answer": 1,
+    "explanation": "(A)는 앞 내용과 '대조' 관계로 But, (B)는 '인과' 관계로 Thus 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n[오답 진단·처방]\n② 진단: 학생은 'In fact'이 사실을 강조하는 말로 'Indeed'도 사실을 강조하는 말로 인해 두 문장이 같은 방향으로 진행되는 것으로 오독했을 가능성이 있다. (예: 'In fact …… Indeed'는 '사실 …… 실제로'로 같은 방향으로 진행) → 처방: 다음부터는 연결 어구의 기능을 정확히 파악하여 문장의 진행 방향을 판단해야 한다.\n③ 진단: 학생은 'Moreover'가 추가 정보를 제공하는 말로 'For instance'도 예를 들는 말로 인해 두 문장이 같은 방향으로 진행되는 것으로 오독했을 가능성이 있다. (예: 'Moreover …… For instance'는 '또한 …… 예를 들어'로 같은 방향으로 진행) → 처방: 다음부터는 연결 어구의 기능을 정확히 파악하여 문장의 진행 방향을 판단해야 한다.\n④ 진단: 학생은 'But'이 대조를 나타내는 말로 'However'도 대조를 나타내는 말로 인해 두 문장이 같은 방향으로 진행되는 것으로 오독했을 가능성이 있다. (예: 'But …… However'는 '그러나 …… 그러나'로 같은 방향으로 진행) → 처방: 다음부터는 연결 어구의 기능을 정확히 파악하여 문장의 진행 방향을 판단해야 한다.\n⑤ 진단: 학생은 'But'이 대조를 나타내는 말로 'For example'가 예를 들는 말로 인해 두 문장이 같은 방향으로 진행되는 것으로 오독했을 가능성이 있다. (예: 'But …… For example'는 '그러나 …… 예를 들어'로 같은 방향으로 진행) → 처방: 다음부터는 연결 어구의 기능을 정확히 파악하여 문장의 진행 방향을 판단해야 한다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-06T12:21:09.218Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Overview\b 43 further rightward on the scale ­because of the additional conceptual content generated in it. In (40), for example, <u>speaker Y’s trigger that targets the conceptual complex that she associates with the noun phrase a ­castle built only of sausages within speaker X’s utterance. But Y’s question about structural integrity may not make sense if that conceptual complex is based solely on the narrow sum of the literal meanings of the component ele­ments in the noun phrase. It may instead make sense only if Y augments this narrow sum with further conceptual content based on inference and general knowledge. Thus</u>, the familiar linearity of sausages might suggest their being strung together to form long chains, in turn arranged to visually indicate some contours of a picture-­book ­castle (rather than, say, being packed together to form the walls and floors of an ­actual ­castle). (40)  X: ­There’s a ­castle built only of sausages on the fairground.",
+    "choices": [
+     "The sausage castle is a literal representation of medieval architecture.",
+     "The castle made entirely of sausages always collapses within a day.",
+     "The image of a sausage castle is often used to emphasize the importance of using edible materials when constructing buildings.",
+     "A castle made entirely of sausages symbolizes how absurd ideas can sometimes lead to unexpected but beneficial outcomes.",
+     "It represents an absurd or impossible scenario that highlights the need for imaginative interpretation rather than literal understanding."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'It represents an absurd or impossible scenario that highlights the need for imaginative interpretation rather than literal understanding.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 '추가적인 개념적 내용'이 필요하다고 강조하는데, 이 선지는 '중세 건축의 사실적 표현'으로만 해석하여 지문의 '추론과 일반지식의 보충'을 무시했다. → 처방: 지문에서처럼 '추론'과 '일반지식'을 동원해 의미를 확장하는 연습을 해보기.\n② 진단: 지문은 '소시지 성곽'의 '비현실성'을 강조하는데, 이 선지는 '하루 만에 무너진다'는 물리적 사실에만 집중해 지문의 '개념적 복잡성'을 놓쳤다. → 처방: 지문에서처럼 '비유적·상상적 의미'를 찾아내는 습관을 기르기.\n③ 진단: 지문은 '소시지 성곽'이 '비현실적'임을 강조하는데, 이 선지는 '식재료의 중요성'을 강조하는 실용적 의미를 부여해 지문의 '추상적 해석'을 오해했다. → 처방: 지문에서처럼 '비유·상상'을 중심에 두고 의미를 파악하기.\n④ 진단: 지문은 '비현실적 상황'을 통해 '상상력의 필요성'을 강조하는데, 이 선지는 '이상한 아이디어의 긍정적 결과'로만 해석해 지문의 '의도된 모순'을 놓쳤다. → 처방: 지문에서처럼 '모순·비현실성'을 감지하고 그 의미를 탐구하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-06T12:21:17.964Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] X의 말에 따르면 소시지만으로 지어진 성이란 상상 속 그림책 같은 성일 수 있다는 생각이 든다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-06T10:01:41.381Z",
    "type": "요지",
@@ -237,114 +344,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [준동사] ⓔ: 'need to clean' → 'need cleaning' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-05T20:04:29.701Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 16 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'regretting', 'remember', 'spending' / 14~18단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I remember posting the letter, regretting spending all the money, and needing to clean my shoes.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-05T17:55:42.813Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 노르웨이어는 영어보다 독일어 단어 순서를 더 쉽게 이해합니다\n주어진 단어: ( norwegian / makes / sense )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Norwegian makes sense of German word order more easily than English does. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-05T15:39:00.931Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "자연스러운 언어 사용을 위해서는 임의의 단어 짝짓음이 빈발 패턴보다 더 중요하다는 주장은 타당하지 않다",
-     "어휘 조합은 자연스러운 빈발 패턴에 따라 형성되어야 하며, 특정한 상황이나 맥락에 구애받지 않아야 한다",
-     "모든 어휘 조합이 자연스러운 빈발 패턴에 따라 무조건 형성되어야 한다는 주장은 과도한 일반화에 해당한다",
-     "어휘 조합은 자연스러운 빈발 패턴에 따라 형성되어야 하며, 경우에 따라 임의의 짝짓음도 허용될 수 있다는 입장은 논리적 모순을 지닌다",
-     "어휘 조합은 자연스러운 빈발 패턴에 따라 형성되어야 하며 임의의 짝짓음에 의존해서는 안 된다"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Collocations should be formed by combining words that frequently co-occur in natural language rather than relying on arbitrary or chance pairings.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 정도 왜곡· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Collocations should be formed by combining words that frequently co-occur in natural language rather than relying on arbitrary or chance pairings.]\n[오답 진단·처방]\n① 진단: '임의의 단어 짝짓음'이 '빈발 패턴'보다 더 중요하다는 주장이 지문에서 '타당하지 않다'고 언급된 적이 없음. 지문은 오히려 '자연스러운 언어 사용'에 빈발 패턴이 중요하다고 강조함. → 처방: 지문에서 '자연스러운 언어 사용'을 위해 '빈발 패턴'이 중요하다는 점을 확실히 읽고, '임의의 짝짓음'의 역할에 대한 언급을 주의 깊게 확인하기.\n② 진단: '특정한 상황이나 맥락에 구애받지 않아야 한다'는 지문의 내용과 반대됨. 지문은 '특정한 상황이나 맥락'에서 자연스러운 조합이 달라질 수 있음을 암시함. → 처방: 지문에서 '맥락'이나 '상황'에 따라 조합이 달라질 수 있는 예시가 있는지 찾아보기.\n④ 진단: '경우에 따라 임의의 짝짓음도 허용될 수 있다'는 지문의 내용과 모순되지 않음. 지문은 '자연스러운 빈발 패턴'을 기본으로 하면서도 '임의의 짝짓음'의 가능성을 배제하지 않음. → 처방: 지문에서 '임의의 짝짓음'이 완전히 배제되지 않는다는 점을 확인하고, '논리적 모순'이라는 주장이 틀렸다는 사실을 인식하기.\n⑤ 진단: '어휘 조합은 자연스러운 빈발 패턴에 따라 형성되어야 하며 임의의 짝짓음에 의존해서는 안 된다'는 지문의 내용과 반대됨. 지문은 '임의의 짝짓음'도 부분적으로 허용될 수 있음을 시사함. → 처방: 지문에서 '임의의 짝짓음'의 허용 가능성에 대한 언급을 찾고, '의존해서는 안 된다'는 주장이 과도한 일반화라는 점을 이해하기."
-   }
-  },
-  {
-   "ts": "2026-08-05T12:18:40.819Z",
-   "type": "안내문불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
-    "passage": "Exercise 1.2 In the text, we noted that the Head Position Parameter has a uniform head-first setting (in the sense that all heads precede their complements) in English, and a uniform head-last setting (in the sense that all heads follow their complements) in Korean. However, we also noted that there are languages in which some heads precede their complements (giving rise to head-first structures), and others follow them (giving rise to head-last structures). German is argued by some to be a language of this latter type, in which (e.g.) prepositions, determiners and complementisers canonically precede their complements, but (auxiliary and main) verbs canonically follow their complements. Discuss the extent to which German sentences like those in 1-5 below (kindly provided for me by Harald Clahsen) bear out this claim, and say which examples prove problematic and why.",
-    "choices": [
-     "영어는 머리 먼저 설정이다.",
-     "한국어는 머리 나중에 설정이다.",
-     "독일어는 일부 머리 먼저 구조를 가진다.",
-     "영어는 머리 나중에 설정이다.",
-     "독일어의 동사는 보통 보충어 뒤에 나온다."
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 머리 먼저 설정에 대한 영어의 특성을 잘 이해했지만 다른 선지와의 비교를 제대로 하지 못했다. → 처방: 다른 언어의 특성과 비교해가며 읽어야 한다.\n② 진단: 머리 나중에 설정에 대한 한국어의 특성을 잘 이해했지만 다른 선지와의 비교를 제대로 하지 못했다. → 처방: 다른 언어의 특성과 비교해가며 읽어야 한다.\n③ 진단: 일부 머리 먼저 구조에 대한 독일어의 특성을 잘 이해했지만 다른 선지와의 비교를 제대로 하지 못했다. → 처방: 다른 언어의 특성과 비교해가며 읽어야 한다.\n⑤ 진단: 보충어 뒤에 나오는 동사에 대한 독일어의 특성을 잘 이해했지만 다른 선지와의 비교를 제대로 하지 못했다. → 처방: 다른 언어의 특성과 비교해가며 읽어야 한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
