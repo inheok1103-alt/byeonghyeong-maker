@@ -1,7 +1,15 @@
 {
- "updated": "2026-08-06T03:42:52.361Z",
+ "updated": "2026-08-06T06:58:25.822Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 선지의 형태와 길이를 통일하고, 어법 정확성을 검토하여 완성도 높은 문항을 출제한다.",
+   "src": "자가학습:빈칸(문장)",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-06T06:47:04.714Z"
+  },
   {
    "rule": "모든 문항은 원문의 의무·허가·제한 등 규범적 성격(예: 'must', 'may not')을 문장 구조에 그대로 반영하고, 축약·왜곡 없이 '반드시 ~해야 한다/할 수 없다'와 같은 엄격한 표현으로 작성하라.",
    "src": "자가학습:목적",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-29T10:01:20.275Z"
-  },
-  {
-   "rule": "원문과 동일한 문법적 구조와 기능(same structure/same syntactic functions)을 반드시 포함하고, 'structure'를 필수 단어(12단어 이내)로 사용하여 \"[X] has the same structure as [Y]\" 패턴을 엄격히 적용하라.",
-   "src": "자가학습:조건영작",
-   "score": 61,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-29T10:01:49.790Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

@@ -1,6 +1,42 @@
 {
- "updated": "2026-08-06T03:42:52.366Z",
+ "updated": "2026-08-06T06:58:25.827Z",
  "samples": [
+  {
+   "ts": "2026-08-06T06:47:14.702Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "Implicit Cues Question No. 1 Word in Context: Read the passage and answer the questions : \" Language is the expression of human personality in words , whether written or spoken . It is the universal medium alike for conveying the common facts of everyday life and the philosophers' searching after truth , and all that lies between. Thus thinkers have always assumed that language can be the bearer of all kinds of truth and the image of every sort of reality ; nor can mathematical or other incomplete form of scientific symbols take the place of language among any but highly technical group of specialists. ” Choose the word or phrase from the alternatives given which is closest in meaning to the blackened word 1-Universal: a. restricted 2-Incomplete: a. inadequate 3-Symbols: a. [ ]",
+    "choices": [
+     "detach",
+     "eliminate",
+     "supplement",
+     "move",
+     "replace"
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 원문 'stones 4-take the place: a.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: detach 를 선택했을 때는 '탈부착'하는 의미로 인해 문맥과 어울리지 않는다는 점을 간과했을 가능성이 있다. 지문에서 'take the place of'라는 구절이 사용되었는데, 이 구절은 '대체하다'라는 의미를 가지고 있다. → 처방: 문장의 전체적인 흐름과 의미를 파악하여 적절한 단어를 선택해야 한다.\n② 진단: eliminate 를 선택했을 때는 '제거하다'라는 의미로 인해 문맥과 어울리지 않는다는 점을 간과했을 가능성이 있다. 지문에서 'take the place of'라는 구절이 사용되었는데, 이 구절은 '대체하다'라는 의미를 가지고 있다. → 처방: 문장의 전체적인 흐름과 의미를 파악하여 적절한 단어를 선택해야 한다.\n③ 진단: supplement 를 선택했을 때는 '보충하다'라는 의미로 인해 문맥과 어울리지 않는다는 점을 간과했을 가능성이 있다. 지문에서 'take the place of'라는 구절이 사용되었는데, 이 구절은 '대체하다'라는 의미를 가지고 있다. → 처방: 문장의 전체적인 흐름과 의미를 파악하여 적절한 단어를 선택해야 한다.\n④ 진단: move 를 선택했을 때는 '이동하다'라는 의미로 인해 문맥과 어울리지 않는다는 점을 간과했을 가능성이 있다. 지문에서 'take the place of'라는 구절이 사용되었는데, 이 구절은 '대체하다'라는 의미를 가지고 있다. → 처방: 문장의 전체적인 흐름과 의미를 파악하여 적절한 단어를 선택해야 한다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-06T03:41:22.818Z",
    "type": "목적",
@@ -308,25 +344,6 @@
     ],
     "answer": 3,
     "explanation": "(A) word order variation / (B) head-directionality 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문에서 'head-directionality(머리 방향성)'라는 용어는 나오지만, 'phrase structure(구문 구조)'는 문맥상 빈칸 (A)에 들어갈 말이 아니다. 학생은 'head-directionality'가 구문 구조를 가리키는 것으로 오해했을 가능성이 있다. → 처방: 빈칸 (A)는 'head-directionality(머리 방향성)'가 맞으므로, (A)에 'head-directionality'가 들어가는 선지 ①을 제외한 나머지를 확인할 때는 'head-directionality'가 문맥에 맞는지 먼저 점검하라.\n② 진단: 지문은 'head-final pattern(머리-끝 패턴)'이 아니라 'mixed head-first/head-last(혼합된 머리-첫/머리-끝)' 패턴을 다룬다. 학생은 'grammatical variation(문법적 변이)'가 German 의 특성을 가리키는 것으로 오해했을 수 있다. → 처방: 'grammatical variation'은 German 의 특성을 설명하는 데 너무 포괄적이므로, German 의 'head-directionality(머리 방향성)'가 문법적 변이를 설명하는지 직접 확인하라.\n④ 진단: 지문은 'syntactic structure(통사 구조)'가 아니라 'head-directionality(머리 방향성)'를 다룬다. 학생은 'word order(어순)'가 'syntactic structure'와 같은 의미로 오해했을 가능성이 있다. → 처방: 'syntactic structure'는 German 의 'head-directionality'를 설명하는 데 직접적인 단어가 아니므로, 'word order variation(어순 변이)'가 German 의 특성을 더 정확히 설명하는지 확인하라.\n⑤ 진단: 지문은 'language typology(언어 유형론)'가 아니라 German 의 'head-directionality'를 다룬다. 학생은 'complement placement(보충어 위치)'가 'language typology'와 같은 의미로 오해했을 수 있다. → 처방: 'language typology'는 German 의 특성을 설명하는 데 너무 넓으므로, German 의 'head-directionality'가 'complement placement'와 관련이 있는지 먼저 확인하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-05T12:19:18.971Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 13 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'head-directionality', 'complements', 'preceding' / 11~15단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] German exhibits mixed head-directionality, with some heads preceding and others following their complements.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 11~15단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

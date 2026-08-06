@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-06T03:42:52.363Z",
+ "updated": "2026-08-06T06:58:25.822Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-06T06:57:59.082Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "영어 문법에서 불필요한 관사(a/the)나 전치사(up) 사용은 CEFR B1-B2 수준에서 자주 오류로 나타나며, 특히 'need to a knowledge'처럼 명사 앞에 관사가 불필요한 경우와 'facing up with'처럼 중복된 전치사 사용이 특징적이다. 또한, 시제 일관성(present tense → past tense)이 유지되지 않는 오류도 빈번하다.",
+   "rule": "CEFR B1-B2 수준의 내신 변형문제에서는 'need to a [명사]' → 'need [명사]'로 관사 삭제, 'facing up with' → 'facing'으로 중복 전치사 제거, 그리고 시제 불일치(present→past) 오류를 포함하여 문장을 수정하도록 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-06T03:42:21.066Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 '형용사+명사' 패턴이 빈번하며, 특히 'a/an+형용사+명사' 구조가 강조됨. 또한, 'than'을 통한 비교 구문이 자주 등장해 비교급 오류가 빈발함.",
    "rule": "'a/an+형용사+복수명사' 구조에서 복수명사가 오류 없이 쓰일 수 있도록, 출제 시 'a/an+형용사+복수명사'가 올바르게 쓰였는지 확인하고, 비교급에서는 'than'을 필수적으로 포함시켜 오류를 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-31T12:20:32.913Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "연어의 오류는 주로 구두점(콤마) 누락이나 반복 오류에서 발생하며, 특히 'year after year'와 같은 고정 연어에서 'yaer'와 같은 철자 오류가 빈번하다.",
-   "rule": "'year after year'와 같이 고정 연어는 반드시 정확한 형태로 출제하며, 특히 콤마(,)를 포함한 명사구(예: 'Insufficient closet space, inefficient heating, and decaying plumbing')는 병렬 구조를 유지하도록 오답지를 설계한다.",
    "sample": [
     "old english",
     "university press",
