@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-07T00:18:52.793Z",
+ "updated": "2026-08-07T03:22:50.635Z",
  "samples": [
+  {
+   "ts": "2026-08-07T03:21:38.265Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Cultural Diversity in Human Experience",
+     "Language Determines Cultural Values",
+     "All Indigenous Cultures Are Primitive",
+     "Western Societies Are the Most Advanced",
+     "Human Experience Is Shaped by Environment"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The Sapir-Whorf hypothesis has been more widely accepted than examined, particularly for its demonstration that indigenous cultures are not primitive, but rather valuable variations of human experience.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 소재는 같으나 논점에서 벗어남· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 지문에서 'Sapir-Whorf hypothesis'가 언급되면서도, 언어가 문화적 가치를 결정한다는 부분은 언급되지 않아 혼동했을 것으로 보인다. 'To Whorf, Hopi and the world view it supposedly conditioned was not just different, but better:' 이 문장에서 언어와 문화의 차이를 언급하고 있지만, 결정한다는 말은 없다. → 처방: 제목을 결정하기 전에 지문 전체를 다시 읽어보면서 핵심 내용을 파악하자.\n③ 진단: 지문에서 'indigenous cultures are not “primitive”'이라는 문장이 나오는데, 이 부분을 무시하고 선지의 내용을 선택했을 것으로 보인다. 이는 지문의 핵심을 오독한 결과이다. → 처방: 지문을 읽을 때 핵심 키워드를 찾고, 그 키워드를 중심으로 지문의 내용을 이해해 보자.\n④ 진단: 지문에서 서구 사회를 다른 문화와 비교하는 내용은 없으며, 오히려 다른 문화를 존중하는 내용이 나오는데, 이 부분을 무시하고 선지를 선택했을 것으로 보인다. → 처방: 지문을 읽을 때는 지문의 전체적인 흐름과 핵심 메시지를 파악하고, 선지를 선택할 때는 지문의 내용과 일치하는지 확인해 보자.\n⑤ 진단: 지문에서 환경이 인간의 경험을 형성한다는 내용은 언급되지 않으며, 언어와 문화의 관계에 대한 내용이 주를 이루는데, 이 부분을 오독한 것으로 보인다. 'It is to him and like-minded thinkers of his time such as his mentor anthropologist Franz Boas that it is part of the warp and woof of modern Westerners to view other cultures as variations on being human rather than “savages”.' 이 문장을 잘 읽어보면, 환경이 아니라 문화의 다양성에 대한 내용임을 알 수 있다. → 처방: 지문을 읽을 때는 키워드를 찾고, 그 키워드를 중심으로 지문의 내용을 분석해 보자.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The Sapir-Whorf hypothesis has been more widely accepted than examined, particularly for its demonstration that indigenous cultures are not primitive, but rather valuable variations of human experience.]"
+   }
+  },
   {
    "ts": "2026-08-07T00:18:09.486Z",
    "type": "심경변화",
@@ -338,31 +371,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] The focused wh-word cannot precede the topic due to auxiliary syntax constraints. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-05T21:35:42.546Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] He is not alive anymore but my uncle Dan was coming from Texas and was having a thick American accent.\n\nLesson 3: The Past 41 7. When the fire breaked out, the alarm was sounding so all of the children exited the building. Fortunately, no one was being hurt. ( ① ) Yesterday the boss didn’t knew what time he was going to arrive at the meeting. ( ② ) He came from Montreal and was stuck in traffic on the highway. ( ③ ) At the post office the clerk was weighing the package and calculating the postage. ( ④ ) Then I was paying and was leaving. ( ⑤ ) EXERCISE 3: TRANSLATION Translate each sentence using the correct form of the verb in parentheses. Quand j’étais jeune j’avais une tante qui sentait le tabac. (be, have, smell like) \b 2. Pourquoi faisais-tu l’idiot hier? (be) \b 3. Il m’en a parlé ce matin. (talk about) \b 4. Il m’en parlait avant la réunion. (talk about) \b 5. Elle avait l’air mieux quand je l’ai vue. (look, see) \b",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘breaked’는 ‘break’의 잘못된 과거형으로, 과거 시제 규칙 동사(-ed)를 잘못 적용했다. 또한 ‘was sounding’는 과거 진행형을 쓸 때 ‘was’와 ‘-ing’를 분리하지 않고 한꺼번에 썼다. → 처방: ‘broke’로 과거형으로 바꾸고, ‘was sounding’를 ‘sounded’로 단순 과거로 써야 한다.\n② 진단: ‘didn’t knew’는 조동사 ‘did’를 썼지만 동사 ‘knew’를 그대로 썼다. 조동사 뒤에는 동사 원형을 써야 하는데, 이를 혼동했다. → 처방: ‘didn’t know’로 조동사 뒤에는 동사 원형을 쓴다는 규칙을 적용해야 한다.\n④ 진단: ‘was weighing’와 ‘was calculating’을 과거 진행형으로 썼지만, 이 문맥에서는 단순 과거가 더 자연스럽다. 진행형은 동작이 진행 중임을 강조할 때 쓰는 데, 여기서는 동작 완료가 중요하다. → 처방: ‘weighed’와 ‘calculated’로 단순 과거형을 써서 동작 완료를 나타내야 한다.\n⑤ 진단: ‘was paying’와 ‘was leaving’을 과거 진행형으로 썼지만, 이 문장들도 단순 과거가 더 어울린다. ‘Then’이 시간의 흐름을 나타내서 동작의 연속을 보여야 하는데, 진행형은 연속성을 약하게 만든다. → 처방: ‘paid’와 ‘left’로 단순 과거형을 써서 동작의 순서를 명확히 해야 한다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]

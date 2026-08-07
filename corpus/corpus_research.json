@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T00:18:52.789Z",
+ "updated": "2026-08-07T03:22:50.631Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T03:22:22.323Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'and'를 통한 병렬 구조가 빈번하며, 문장 내 동사 시제나 주어-동사 일치가 오류로 자주 발생함을 확인할 수 있다. 또한 'useful'과 같은 형용사가 'necessary'와 같은 명사와 결합하거나, 'think of it'과 같은 구가 문장 끝에 덧붙여지는 패턴이 관찰된다.",
+   "rule": "'A and B' 병렬 구조에서 A와 B는 문법적으로 동일한 품사(명사/동사/형용사 등)로 통일해야 하며, 특히 동사 시제나 수 일치를 반드시 맞추도록 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T00:18:22.108Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "원서 코퍼스의 연어 패턴은 '명사 + 전치사 + 명사' 구조가 빈번하며, 오류 유형은 문장 내 부사 위치 오류, 동사 시제 오류, 관사 오류 등으로 나타났다. 특히 'influence on'과 같은 전치사 연어는 오답 선지로 활용 가능성이 높다.",
    "rule": "'명사 + 전치사 + 명사' 구조의 연어(예: 'influence on agriculture')가 포함된 문장은, 오답 선지로 동사 시제 오류(예: 'have' → 'has') 또는 관사 오류(예: 'a' 누락)를 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-07-31T23:18:48.622Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'for some reasons' → 'for various reasons'와 같이 특정 이유의 범위를 한정짓는 표현이 한국어 학습자들에게 자주 누락됨. 또한 'the one who take' → 'the ones who create'에서 단수/복수 혼동과 시제 오류가 빈번히 발생함.",
-   "rule": "'for [형용사] reasons' 구조(예: various, different, several 등)를 반드시 포함하도록 오류 유도 문제를 설계하며, 단수/복수 명사와 시제 일치를 철저히 검증하는 문장을 출제하라.",
    "sample": [
     "old english",
     "university press",
