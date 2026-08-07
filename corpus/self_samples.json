@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-07T21:04:47.112Z",
+ "updated": "2026-08-07T21:58:54.350Z",
  "samples": [
+  {
+   "ts": "2026-08-07T21:57:40.511Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Books are your keys to knowledge, and there is no limit to the kinds of things you can learn from books. So don’t worry if the______ you’ve taken an interest in is ___. Only you seem to care about. ___ are written on almost every subject ______ person could hope to think of. _____ learn about new things , just visit favorite book store. When you buy ______ book , you read it whenever you _______. Read about a far-away place ________ pretend you are having an adventure, _________ study something you heard about in ______. You might wish to study a ________ or learn to cook different kinds _____ food. Reading a book can mean _______ differences between learning about things and _______ to wonder about them. It’s economical _____ convenient to read books. You have ________ freedom to study whenever you like. ________ from books is very easy because ______ can simply go back to a _________ if you forget something you’ve read.\n\n─────────\n[요약문] By engaging in (A), individuals gain (B) that transcend curiosity and foster continuous inquiry.",
+    "choices": [
+     "(A) knowledge … (B) wonder",
+     "(A) study … (B) information",
+     "(A) adventure … (B) experience",
+     "(A) books … (B) curiosity",
+     "(A) reading … (B) understanding"
+    ],
+    "answer": 5,
+    "explanation": "(A) reading / (B) understanding 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘지문에서 (A)는 ‘책을 읽는 행동’이 아니라 ‘지식’이라는 결과물로 오해했으며, (B) ‘wonder’는 ‘궁금증’이라는 뜻으로 지문의 ‘지속적인 탐구’와 맞지 않음. → 처방: ‘지문에서 (A)는 ‘책을 읽는 행동’을 가리키므로 ‘knowledge’가 아니라 ‘reading’을 써야 함을 기억할 것.\n② 진단: ‘지문에서 (B)는 ‘지식’을 얻는 것이 아니라 ‘지속적인 탐구’를 유도하는 ‘이해’를 강조하므로 ‘information’이 오해임. → 처방: ‘지문에서 ‘지속적인 탐구’를 유도하는 것은 ‘이해’라는 뜻이므로 ‘understanding’이 맞는다는 점을 기억할 것.\n③ 진단: ‘지문에서 (A)는 ‘모험’이 아니라 ‘책을 읽는 행동’을 가리키며, (B) ‘경험’은 ‘지속적인 탐구’와 어울리지 않음. → 처방: ‘지문에서 ‘책을 읽는 행동’을 (A)로 써야 하므로 ‘adventure’가 아니라 ‘reading’을 떠올릴 것.\n④ 진단: ‘지문에서 (B)는 ‘궁금증’이 아니라 ‘지속적인 탐구’를 유도하는 ‘이해’를 가리키며, (A) ‘책’을 ‘행동’이 아닌 ‘대상’으로 오해함. → 처방: ‘지문에서 (A)는 ‘행동’을 가리키므로 ‘books’가 아니라 ‘reading’을 써야 한다는 점을 기억할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-07T21:01:11.328Z",
    "type": "내용일치",
@@ -297,42 +330,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 글의 핵심은 '글의 설득력을 높이려면 과도한 hedges와 intensifiers 사용을 줄이고, 명확한 주제와 강한 동사로 문장을 구성하라'이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T13:43:33.954Z",
-   "type": "안내문불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
-    "passage": "Domestic wine is wine from this country, as opposed to wine imported from, say, France. The domestic steel industry is the steel industry in this country. A country that enjoys domestic tranquility is a happy country on the homefront. Quick Quiz #34 Match each word in the first column with its definition in the second column. Check your answers here. 1. disparate a. committed to a theory 2. disseminate b. thin out 3. dissipate c. of the household 4. dissolution d. firmly held system of ideas 5. distend e. easily taught 6. distinguish f. arrogantly assertive 7. docile g. swell 8. doctrinaire h. tell apart 9. dogmatic i. incompatible 10. dogma j. spread seeds 11. domestic k. disintegration DORMANT (DOR munt) adj inactive; as though asleep; asleep Dormant, like dormitory, comes from a root meaning sleep. • Mt. Vesuvius erupted violently and then fell dormant for several hundred years. Many plants remain dormant through the winter; that is, they stop growing until spring.",
-    "choices": [
-     "이 나라는 국내산 와인을 생산하며 수입 와인과는 구분된다",
-     "이 나라는 국내 철강 산업을 보유하고 있으며 수입 철강과 다르다",
-     "이 나라는 국내산 와인을 수입하며 국내산과 구분된다",
-     "퀵 퀴즈 34는 단어와 정의를 짝짓는 문제로 구성되어 있다",
-     "도시나 마을은 겨울철에 식물이 휴면 상태가 되는 특징이 있다"
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'domestic wine'은 '이 나라의 와인'을 뜻하는데, 학생은 'domestic'을 '수입'으로 오해한 듯하다. 'domestic'은 '국내의'라는 뜻이므로 수입과는 반대 개념이다. → 처방: 단어의 뜻을 정확히 기억하고, 'domestic'은 '국내의'라는 뜻임을 다시 한 번 확인하자.\n② 진단: 지문에서 'domestic steel industry'는 '이 나라의 철강 산업'을 의미하는데, 학생은 '수입 철강'과 '국내 철강'을 구분하지 못한 것으로 보인다. → 처방: 'domestic'의 뜻을 정확히 알고, '국내 산업'과 '수입 산업'을 구분하는 연습을 더 해보자.\n④ 진단: 지문에서 'Quick Quiz #34'는 단어와 정의를 짝짓는 문제로 구성되어 있다고 명시되어 있는데, 학생은 이 내용을 오독한 것으로 보인다. → 처방: 문제를 꼼꼼히 읽고, 지문의 내용을 정확히 이해한 후 답을 선택하도록 주의하자.\n⑤ 진단: 지문에서 'dormant'은 '휴면 상태'를 뜻하며, '식물이 겨울철에 휴면 상태가 된다'는 내용은 지문에 없다. 학생은 'dormant'과 '겨울'을 연관지은 것으로 보인다. → 처방: 단어의 뜻을 정확히 파악하고, 지문에 없는 내용은 답으로 선택하지 않도록 주의하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]

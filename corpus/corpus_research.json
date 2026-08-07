@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T21:04:47.107Z",
+ "updated": "2026-08-07T21:58:54.346Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T21:58:17.680Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거 시제/현재 시제 혼용, 복수형 오류, 관사 누락이 빈번한 패턴으로, 문장 구조의 일관성과 수 일치 오류가 주된 문제점이다. 특히 'compulsory to attend'와 같은 구문은 전치사 오류와 결합되어 나타나기도 한다.",
+   "rule": "'명사 + 단수/복수형 동사'의 수 일치와 'a/an/the + 단수명사'의 관사 사용 규칙을 반드시 확인하라. 특히 'compulsory to attend'와 같은 구문은 'compulsory for attendance'로 전치사 오류를 수정해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T21:04:21.728Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "이 코퍼스 패턴은 영어 문법에서 '이유(reason)'와 '순서(second)'를 표현할 때 전치사나 절 구조가 아닌 'to부정사'나 '명령문'으로 전환되는 경향을 보이며, 동사구 병렬 구조에서는 쉼표와 접속사를 병행해야 함을 시사한다.",
    "rule": "영어 문장에서 '이유'를 표현할 때 'that절' 대신 'to부정사'를 사용하도록 유도하는 문제를 출제하라. 예: 'I have a reason that ~' → 'I have a reason to ~'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-02T03:58:24.632Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'trust ourselves'와 같은 동사+재귀대명사 패턴은 문장 종결 시 마침표 없이도 자연스러운 반면, 한국어 학습자에게는 마침표 삽입 오류가 빈번하다. 또한 'thing'→'one thing'과 같은 구체화 오류, 'until they know how it works'와 같은 시제·태 오류가 원서 패턴에서 재현된다.",
-   "rule": "한국어 학습자를 위한 내신 변형 문제에서, 동사+재귀대명사 패턴(예: trust ourselves, help ourselves) 뒤에는 마침표를 반드시 포함하도록 오답지를 구성하며, 문법적 오류(예: 'thing'→'one thing', 'woek'→'works', 'until they know how it works')를 직접적으로 수정하는 형태로 출제한다.",
    "sample": [
     "old english",
     "university press",
