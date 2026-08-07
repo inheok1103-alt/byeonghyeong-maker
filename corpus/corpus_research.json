@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T19:18:17.217Z",
+ "updated": "2026-08-07T20:04:24.088Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T20:03:57.224Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'attractive'→'attracted'와 같이 형용사-분사 전환이 필요한 연어 패턴이 빈번하며, 'responsible'→'responsibility'와 같이 명사화 오류도 다수 발생한다. 또한 문장 내 삽입어(insert) 생략(예: ',')도 오류 유형으로 활용 가능하다.",
+   "rule": "'형용사(attractive/appealing/interesting 등)가 수동적 의미(attracted/appealed/interest)를 요구할 때, 반드시 '-ed' 분사로 전환하여 연어 패턴을 완성하도록 출제한다. (예: 'kids are more ______ to ads' → 'attracted')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T19:17:48.778Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거 시제 동사와 조동사/단수 주어가 결합하는 오류가 빈번하며, 'year after year'와 같은 고정 연어에서 'yaer'와 같은 철자 오류가 다수 발생한다.",
    "rule": "단수 주어나 인칭 대명사가 조동사 없이 과거 시제 동사와 결합할 때(예: 'they needs' → 'they need'), 오답으로 출제하여 '단수 주어 + 단수 동사' 규칙을 확인하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T23:15:30.737Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 코퍼스는 '주어 + have/has + 명사구' 구조에서 관사(a/the)나 소유격('s) 사용이 필수적임을 보여준다. 특히 'subjective to'와 같은 전치사구를 동반한 경우, 전치사의 목적어는 명확한 한정사(예: the, each, every)가 필요한 경우가 많다.",
-   "rule": "'have/has + 명사구' 또는 'be + 형용사 + 전치사구' 구조에서, 명사구가 추상적이거나 범용적일 경우 반드시 한정사(a/the/each/every) 또는 소유격('s)을 첨가하여 구체화하라. 예: 'have information' → 'have all the information'.",
    "sample": [
     "old english",
     "university press",
