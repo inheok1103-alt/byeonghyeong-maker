@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T11:14:00.830Z",
+ "updated": "2026-08-07T12:01:10.799Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T12:00:39.628Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어에서 'do not know' 연어는 부정문 구조에서 'do not know how/what to'로 확장될 때, 조동사 'do'가 재사용되지 않고 'to'가 직접 동사원형과 결합한다는 패턴을 확인할 수 있다. 또한 'good to people'은 'good for people'으로 오용되는 경우가 많으며, 'all'의 위치가 의미 차이를 유발한다는 점을 발견했다.",
+   "rule": "부정문 'do not know' 뒤에 'how/what to'가 나올 경우, 조동사 'do'를 생략하고 'to'를 직접 동사원형과 결합한 형태로 오답지를 설계하라(예: 'do not know how to do' → 'do not know how to do'). 또한 'good to'는 'good for'로 오용되는 경우가 많으므로, 'good to'가 포함된 문장은 'good for'로 대체한 오답지를 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T11:13:34.672Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사형 오류(‘surprize’→‘surprise’)는 명사형 접미사 ‘-s’가 누락된 패턴으로, ‘-tion’·‘-ment’ 등 파생명사에서도 동일하게 발생한다. 동사 시제·3인칭 단수 ‘-s’ 오류(‘sugest’→‘suggests’)는 문맥상 필수 시제 일치 규칙이 적용되지 않은 경우다.",
    "rule": "‘명사형’이나 ‘3인칭 단수 동사’에서 ‘-s’가 생략된 경우, 반드시 해당 접미사를 복원하여 문법적 정확성을 확보하라. 예: ‘To my [surprise]’ / ‘The lecturer [suggests]’ / ‘It [helps] the environment’.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T13:58:51.935Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제 오류와 현재 시제 오류가 혼용된 문장에서 시제 일관성이 깨지는 경우가 많다. 또한, 전치사 오류(aboue→about, for skin→for skin care)와 철자 오류(actully→actually, beacuse→because)가 빈번히 발생한다.",
-   "rule": "과거 시제와 현재 시제가 혼용된 문장은 반드시 시제 일관성을 점검하고, 전치사(about, for, in 등)는 해당 명사구와 어울리는지 확인하라. 또한, 철자 오류(actually, because 등)를 최소화하기 위해 빈출 철자 패턴을 숙지하라.",
    "sample": [
     "old english",
     "university press",
