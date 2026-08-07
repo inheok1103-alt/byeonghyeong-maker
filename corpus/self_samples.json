@@ -1,6 +1,77 @@
 {
- "updated": "2026-08-07T15:13:35.654Z",
+ "updated": "2026-08-07T16:14:42.903Z",
  "samples": [
+  {
+   "ts": "2026-08-07T16:10:35.546Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 5번(기록 4번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "과학자들은 비전문가와 소통하지 못하는 이유가 문장 구조의 동사-목적어 연결을 중단하기 때문이다.",
+     "과학자들은 비전문가와 소통하기 위해 문장 구조의 동사-목적어 연결을 중단해야 한다.",
+     "모든 과학자들이 비전문가와의 소통을 위해 문장 구조의 동사-목적어 연결을 중단해야 한다는 주장은 과장이다.",
+     "과학자들은 비전문가와의 소통을 위해 동사-목적어 연결을 중단하지 말아야 한다.",
+     "비전문가와의 소통을 원활히 하려면 과학자들이 문장 구조의 동사-목적어 연결을 유지해야 한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Scientists should avoid interrupting the verb-object connection in their sentences to communicate more effectively with laypeople.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 논지에서 어긋남· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Scientists should avoid interrupting the verb-object connection in their sentences to communicate more effectively with laypeople.]\n[오답 진단·처방]\n① 진단: ‘과학자들이 비전문가와 소통하지 못하는 이유’를 ‘문장 구조의 동사-목적어 연결 중단’으로만 좁혀 오해했다. 지문은 과학자들의 문장 스타일이 비인격적이고 객관적이라서 소통이 어렵다고 설명하는데, 이 오독은 그 원인을 문장 구조의 ‘연결 중단’으로만 한정지었다. → 처방: 지문에서 말한 ‘소통의 어려움’의 진짜 이유는 과학자들의 문장 스타일이 비인격적이고 객관적이라는 점임을 기억하고, 문장 구조의 ‘동사-목적어 연결’이 그 스타일을 만드는 한 요소라는 점을 떠올리자.\n② 진단: ‘소통을 위해 문장 구조의 동사-목적어 연결을 중단해야 한다’는 지문의 내용을 반대로 해석했다. 지문은 오히려 ‘연결을 유지하라’고 권장하는데, 이 선지는 그 반대 행동을 요구한다. → 처방: 지문의 핵심 메시지가 ‘연결을 유지하라’는 것이라는 점을 확실히 기억하고, 선지의 요구가 지문과 반대 방향인지 먼저 확인하자.\n③ 진단: ‘모든 과학자들이 ~해야 한다는 주장은 과장’이라는 말을 지문의 내용과 연결하지 못했다. 지문은 과학자들의 문장 스타일이 소통을 방해한다고 설명하는데, 이 선지는 그 주장을 ‘과장’으로 폄하하는 오독을 보였다. → 처방: 지문의 핵심 주장이 ‘과학자들의 문장 스타일이 소통을 방해한다’는 것임을 떠올리고, 그 주장이 ‘과장’이 아니라는 점을 확인하자.\n④ 진단: ‘과학자들이 동사-목적어 연결을 중단하지 말아야 한다’는 지문의 메시지와 완전히 반대되는 선지를 골랐다. 지문은 오히려 ‘연결을 유지하라’고 권장하는데, 이 선지는 그 권고를 부정하는 오독을 보였다. → 처방: 지문의 핵심 메시지가 ‘연결을 유지하라’는 것임을 분명히 기억하고, 선지의 요구가 그 메시지와 일치하는지 먼저 확인하자."
+   }
+  },
+  {
+   "ts": "2026-08-07T16:11:34.347Z",
+   "type": "혼합통합형",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 7,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
+    "passage": "Some scientists, because they write in a style that is impersonal and objective, do not easily communicate with laypeople. That because clause after the subject forces us to hold our mental breath until we reach the verb, do not easily communicate. Move the interruption to the beginning or end of its sentence, depending on whether it connects more closely to what precedes or follows it (note the since instead of because). ✓ Since some scientists write in a style that is impersonal and objective, they do not easily communicate with laypeople. This lack of communication damages . . . ✓ Some scientists do not easily communicate with laypeople because they write in a style that is impersonal and objective. It is a kind of style filled with passives and . . . We mind short interruptions less: ✓ Some scientists deliberately write in a style that is impersonal and objective. Avoid interrupting the verb-object connection. We also like to get past the verb to its object quickly. This sentence doesn’t let us do that:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-07T16:14:11.453Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 과학자들은 객관적이고 비인격적인 문체를 deliberate하게 사용하기 때문에 일반인들과 소통하지 못한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-07T15:12:35.324Z",
    "type": "어법(밑줄)",
@@ -281,109 +352,6 @@
     ],
     "answer": 5,
     "explanation": "빈칸에는 원문 'That too -- isn’t it nice the way thing N * workout?'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장의 맥락을 이해하지 못하고 'things work out'을 부정적인 의미로 오독했다. → 처방: 문장의 전체적인 흐름과 대화의 맥락을 고려하여 의미를 파악하라.\n② 진단: 대화의 내용을 분석하지 않고 'things work out'을 일반화하여 오독했다. → 처방: 대화의 내용을 세부적으로 분석하여 문장의 의미를 파악하라.\n③ 진단: 대화의 논리적인 흐름을 이해하지 못하고 무작위적인 의미로 오독했다. → 처방: 대화의 논리적인 흐름을 따라가며 문장의 의미를 파악하라.\n④ 진단: 문장의 긍정적인 의미를 부정적인 의미로 오독하여 맥락을 이해하지 못했다. → 처방: 문장의 긍정적인 의미를 고려하여 대화의 맥락을 파악하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T09:17:59.628Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 1,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "CONTEXTUAL INFERENCE DRIVES VOCABULARY MASTERY",
-     "EXAMPLES TRUMP CONTEXT in VOCABULARY LEARNING",
-     "GROUP DISCUSSIONS ENHANCE VOCABULARY ACQUISITION",
-     "ALL VOCABULARY LEARNING MUST RELY on EXAMPLES and CONTEXT",
-     "CONTEXTUAL CLUES RARELY HELP in VOCABULARY STUDY"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Vocabulary learning thrives on contextual inference and example-based practice'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘EXAMPLES TRUMP CONTEXT’라는 선지는 지문에서 ‘context(예시가 포함된 문장)’와 ‘examples(단어 뜻 유추에 쓰이는 구체적 사례)’를 혼동한 듯합니다. 지문은 ‘context’를 통해 뜻을 유추하게 하고, ‘examples’는 뜻 유추의 재료로만 쓰였습니다. → 처방: ‘context’가 단어 뜻 유추의 핵심 도구임을 기억하고, 예시는 그 도구로 쓰이는 재료라는 점을 분리해서 생각하세요.\n③ 진단: ‘GROUP DISCUSSIONS ENHANCE VOCABULARY ACQUISITION’라는 선지는 지문의 ‘group work’ 부분을 과하게 확대해 해석한 것 같습니다. 지문은 ‘group work’이 ‘new word’의 뜻을 유추하는 데 도움을 주는 ‘도구’일 뿐, ‘vocabulary acquisition(어휘 습득)’ 전체를 책임지는 핵심 방법은 아닙니다. → 처방: ‘group discussion’이 단어 뜻 유추에만 쓰이는 보조 도구임을 알고, 어휘 습득의 전체 과정을 ‘context’와 ‘examples’가 함께 이끈다는 점을 기억하세요.\n④ 진단: ‘ALL VOCABULARY LEARNING MUST RELY on EXAMPLES and CONTEXT’라는 선지는 지문의 ‘must’라는 절대적 표현이 과하다는 점을 간과했습니다. 지문은 ‘context’를 통한 뜻 유추와 ‘examples’를 통한 확인을 제안했지만, ‘모든’ 어휘 학습이 반드시 이 방법에 의존해야 한다는 말은 없습니다. → 처방: ‘must’라는 강제적 표현을 주의하고, 지문이 제안하는 ‘context’와 ‘examples’의 역할을 ‘보통’ 또는 ‘유용한 방법’으로 이해하세요.\n⑤ 진단: ‘CONTEXTUAL CLUES RARELY HELP’라는 선지는 지문의 ‘context’를 통한 단어 뜻 유추를 완전히 무시한 것입니다. 지문은 ‘context’를 단어 뜻 유추의 핵심 도구로 강조하고 있습니다. → 처방: ‘context’를 통한 단어 뜻 유추가 중요하다는 지문의 내용을 다시 읽고, ‘rarely’라는 부정적 표현이 잘못된 이유를 생각해 보세요.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Vocabulary learning thrives on contextual inference and example-based practice]"
-   }
-  },
-  {
-   "ts": "2026-08-07T07:43:51.927Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "어법 의심 2건 · ⚠ 정답-오답 근접(77%) — 복수정답 재검 권고 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "연결동사가 동사를 끌어당기기 때문에 기능범주 C와 T가 ‘누구’를 동시에 탐색하며 격을 표시하고 이동시킨다.",
-     "연결동사가 동사를 끌어당기고 기능범주 T만 ‘누구’를 탐색해 격표시와 일치를 이루며 이동시킨다.",
-     "모든 기능범주가 동사를 끌어당기고 ‘누구’를 동시에 탐색해 격표시와 일치를 이루며 이동시킨다.",
-     "연결동사가 동사를 끌어당기고 기능범주 C와 T가 ‘누구’를 탐색해 격을 표시하고 이동시킨다.",
-     "연결동사가 동사를 끌어당기고 기능범주 C와 T가 동시에 ‘누구’를 탐색해 격표시와 일치를 이루며 이동시킨다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The light verb attracts the verb, and C and T simultaneously probe the goal \"who\" to agree with, case-mark, and move it to their respective specifiers.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘연결동사’(light-verb)가 동사를 끌어당기는 것은 맞지만, 기능범주 C 와 T 가 ‘누구’를 동시에 탐색하는 이유는 ‘격 표시와 이동’이 아니라 ‘동시 탐색’과 ‘복사 이동’이기 때문에 오해한 듯함. 지문에서 ‘C 와 T 가 동시에 who 를 탐색’한다고 명시되어 있음. → 처방: ‘연결동사’가 동사를 끌어당기는 역할만 기억하지 말고, 기능범주 C 와 T 가 ‘동시에’ 탐색한다는 핵심 내용을 반드시 확인할 것.\n② 진단: ‘기능범주 T 만 who 를 탐색’이라고 오해했는데, 지문에서 C 와 T 가 동시에 who 를 탐색한다고 명시되어 있음. 또한 T 가 who 를 끌어당기는 것은 맞지만, C 도 동시에 who 를 끌어당기는 과정이 포함되어야 함. → 처방: ‘T 만’이라는 단정적 표현이 나오면 지문에서 C 와 T 의 탐색 여부를 다시 한 번 꼼꼼히 읽어볼 것.\n③ 진단: ‘모든 기능범주가 동사를 끌어당긴다’는 오해인데, 지문에서 ‘light-verb’(연결동사)만 동사를 끌어당기고, C 와 T 는 who 를 끌어당기는 역할만 함. 또한 ‘동시에’라는 조건이 빠져 있음. → 처방: ‘모든’이라는 포괄적 표현이 나오면 지문에서 누가 어떤 역할을 하는지 정확히 짚어볼 것.\n④ 진단: ‘기능범주 C 와 T 가 who 를 탐색해 격을 표시하고 이동시킨다’는 부분은 맞지만, ‘동시에’라는 조건이 빠져 있어 오해의 소지가 있음. 지문에서 C 와 T 는 ‘동시에’ who 를 탐색한다고 명시되어 있음. → 처방: ‘동시’라는 시간적 조건을 반드시 확인하고, 선지에 ‘동시’가 포함되어 있는지 확인할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The light verb attracts the verb, and C and T simultaneously probe the goal \"who\" to agree with, case-mark, and move it to their respective specifiers.]"
-   }
-  },
-  {
-   "ts": "2026-08-07T07:44:38.144Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/2 다수결 5번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "syntactic probes attracting interrogative goals while assigning case simultaneously",
-     "interrogative goal attraction and case assignment by syntactic probes in sequence",
-     "universal case-marking of all goals through syntactic probes",
-     "interrogative goals consistently attracted and case-assigned by syntactic probes",
-     "syntactic probes performing case assignment and goal attraction simultaneously"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The simultaneous probing of C and T in the antisymmetric framework to attract and assign case to the goal \"who'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The simultaneous probing of C and T in the antisymmetric framework to attract and assign case to the goal \"who]\n[오답 진단·처방]\n① 진단: ‘simultaneously’라는 말이 있지만 ‘interrogative goals’를 probe 가 ‘attract’하는 과정과 ‘case assignment’를 동시에 한다는 내용이 아니라, probe 가 ‘interrogative goal’을 ‘attract’하는 것과 ‘case assignment’를 동시에 한다는 내용이 주제임을 혼동함. 지문에서 ‘C and T both locate the same goal who, they probe simultaneously’는 ‘C 와 T 가 동시에 probe’를 가리키며, ‘case assignment’는 ‘T-affix’가 who 에게 Nominative case 를 부여하는 것이라서 ‘interrogative goal attraction’이 주제가 아님. → 처방: 문제를 풀 때는 ‘주제’를 정할 때 지문에서 probe 가 ‘무엇’을 ‘어떻게’ 하는지(‘case assignment’와 ‘goal attraction’의 관계)를 정확히 짚고, ‘simultaneously’라는 말이 어떤 대상을 가리키는지 확인할 것.\n② 진단: ‘in sequence’라는 말이 있지만 지문은 probe 가 ‘simultaneously’(동시에) 작동한다는 내용이 주제인데, ‘sequence’라는 단어를 보고 probe 가 순서대로 일어난다고 오해함. 또한 ‘case assignment’가 probe 의 순서에 따라 일어난다고 생각하여 ‘interrogative goal attraction’이 주제가 아님. → 처방: ‘sequence’라는 단어가 나오면 지문에서 ‘순서’를 언급하는지, 아니면 ‘동시’를 언급하는지 다시 한 번 확인하고, probe 의 ‘동시성’이 주제임을 기억할 것.\n③ 진단: ‘universal’이라는 말이 나오지만 지문은 ‘who’라는 특정 interrogative goal 에 대한 probe 와 case assignment 를 설명하고 있으며, ‘모든 goal’이라는 보편적 내용이 아님을 혼동함. 또한 ‘case-marking’이 모든 goal 에 적용된다는 주장은 지문에서 ‘who’에만 적용된다는 점에서 오류임. → 처방: ‘universal’이라는 단어가 나오면 지문이 ‘모든 대상’을 가리키는지, 아니면 ‘특정 대상’을 가리키는지 다시 한 번 확인하고, ‘who’라는 특정 interrogative goal 에 초점을 맞추어 읽을 것.\n④ 진단: ‘consistently’라는 말이 나오지만 지문은 probe 가 ‘who’를 ‘attract’하고 ‘case assignment’를 하는 과정이 ‘일관적’이라는 내용이 아니라, probe 가 ‘simultaneously’(동시에) 작동한다는 내용이 주제임을 혼동함. 또한 ‘interrogative goals’를 probe 가 ‘consistently’ attracting 한다는 내용은 지문에서 ‘who’라는 한 가지 goal 에만 해당됨. → 처방: ‘consistently’라는 단어가 나오면 지문이 ‘일관성’을 강조하는지, 아니면 ‘동시성’을 강조하는지 다시 한 번 확인하고, probe 의 ‘동시성’이 주제임을 기억할 것."
    }
   }
  ]

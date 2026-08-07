@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T15:13:35.650Z",
+ "updated": "2026-08-07T16:14:42.899Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T16:14:15.182Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'old/new + noun' 구조(예: old English, new book)가 빈번한 반면, 'old/new + noun + -s' 형태(예: old Englishs)는 오류로 나타나며, 이는 복수형 또는 오역 패턴임을 확인할 수 있다. 또한 'in + noun phrase' 구조(예: in my opinion)가 자주 쓰이지만, 'in + noun' 형태(예: in opinion)는 오류로 나타나며, 전치사 구문의 규칙을 위반함을 알 수 있다.",
+   "rule": "'old/new + noun' 또는 'in + noun phrase' 구조가 사용될 경우, 반드시 복수형(-s) 여부와 전치사 구문(예: in my opinion vs. in opinion)을 검증하도록 출제하라. 특히 'old/new + noun' 뒤에는 복수형이 오지 않도록 하며, 'in + noun phrase' 뒤에는 소유격(예: my, your) 또는 관사(the, a)가 필수적으로 포함되도록 오답을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T15:13:07.727Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'a/an + 복수명사' 오류가 빈번하며, 특히 'make a products'처럼 관사 오류가 'make product'로 단순화되는 패턴이 확인된다. 또한 'and' 구문에서 동사 일치 오류('make a products and sell it')가 자주 발생한다.",
    "rule": "복수명사 앞에 관사를 사용할 때 'a/an + 복수명사'는 오류로, 항상 'a/an + 단수명사' 또는 복수명사 자체를 사용하도록 문항을 설계하라. 예: 'make a product' 또는 'make products'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T18:15:55.984Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "동일한 명사구(‘with other researchers’)가 반복되어 문장의 간결성을 해치는 경우가 많다. 이는 영어에서 ‘redundancy’를 줄이는 패턴으로, 특히 학술적 글쓰기에서 중요하다.",
-   "rule": "동일 어휘가 문장 내 두 번 이상 반복될 경우, 두 번째 반복을 삭제하거나 ‘that of’/‘those of’ 등으로 대체하여 문장을 간결하게 재구성하도록 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
