@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T16:14:42.899Z",
+ "updated": "2026-08-07T17:11:52.641Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T17:11:18.708Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구 내 한정사(quantifier) 오류와 동사 시제·태 오류가 빈번하게 결합되어 있음을 확인. 특히, 'any/many', 'few/used few' 등 한정사 선택과 동사 시제·태가 문맥에 맞지 않게 사용되는 패턴이 두드러짐.",
+   "rule": "한정사(a/an, the, any, few, many 등)와 동사 시제·태(present/past tense, passive voice)가 문맥에 맞지 않게 사용된 경우, 해당 한정사와 동사의 조합이 자연스러운지 검토하여 오류를 수정하라. 특히, 'any'는 부정문/의문문에서, 'few'는 수량 제한을 강조할 때, '-ed'는 과거 시제/수동태로만 사용되도록 제한하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T16:14:15.182Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'명사 + 명사' 또는 '명사 + 동사원형' 패턴에서 빈도부사(usually, often 등)나 관사(a/the) 또는 관계대명사(that) 삽입이 자연스러움을 확인할 수 있다. 또한 'reason'과 같이 셀 수 있는 명사는 복수형 또는 수식 구조가 필수적이다.",
    "rule": "'명사 + 동사원형' 구조(예: 'several reason to support')가 출제될 경우, 반드시 'reasons that support' 또는 'reasons for supporting'로 수정하는 규칙을 적용하라. 빈도부사(usually, often)나 관사(a/the)도 빈번한 오류 유형으로 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T19:40:34.759Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'a/an + 복수명사' 오류가 빈번하며, 특히 'make a products'처럼 관사 오류가 'make product'로 단순화되는 패턴이 확인된다. 또한 'and' 구문에서 동사 일치 오류('make a products and sell it')가 자주 발생한다.",
-   "rule": "복수명사 앞에 관사를 사용할 때 'a/an + 복수명사'는 오류로, 항상 'a/an + 단수명사' 또는 복수명사 자체를 사용하도록 문항을 설계하라. 예: 'make a product' 또는 'make products'.",
    "sample": [
     "old english",
     "university press",
