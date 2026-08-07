@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T07:46:04.157Z",
+ "updated": "2026-08-07T09:18:41.298Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T09:18:12.277Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "원서 코퍼스의 실제 오류에서 '법률/사회적 책임' 관련 명사(law, responsibility) 앞에는 고유명사(Italian, society) 또는 관사(the)가 필수적으로 사용되며, 동사(choose, take) 뒤의 명사구는 문법적 제약을 받는다.",
+   "rule": "'법률/책임/사회' 관련 명사 앞에는 반드시 고유명사(Italian, society) 또는 관사(the)가 와야 하며, 동사(choose, take)의 목적어는 단수/복수 명사구로 통일되어야 한다. 예: 'I chose law' → 'I chose Italian law' 또는 'I chose the law'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T07:45:35.425Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사 복수형 오류가 빈번하며, 특히 'reason'→'reasons', 'subject'→'subjects'와 같이 단순 복수화가 필요한 경우가 많다. 또한 대명사 오류('we'→'it')도 자주 발생한다.",
    "rule": "주어와 동사가 일치하지 않거나 명사의 복수형이 틀린 문장은 반드시 복수형으로 수정하거나 대명사를 일치시켜야 한다. 예: 'There are several reason.' → 'There are several reasons.' 또는 'We grip on many subject.' → 'We read on many subjects.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T06:43:42.203Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'형용사 + 명사' 구조에서 부정관사(a/an/the) 생략 오류가 빈번하며, 특히 'unstable trip'처럼 형용사가 명사를 수식할 때 관사 필수 사용 패턴이 두드러진다. 또한 문장 내 주어-동사 일치(are/who take/create) 및 시제(present tense) 오류가 반복된다.",
-   "rule": "형용사가 명사를 직접 수식하는 경우, 출제 문장에서 반드시 부정관사(a/an/the) 또는 소유격/지시형용사(that/this/my 등)를 포함하도록 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",

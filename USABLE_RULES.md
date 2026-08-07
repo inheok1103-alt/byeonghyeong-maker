@@ -1832,3 +1832,8 @@
 - '~s' 소유격·단수형 오류(예: hobbies → hobby)와 'to + 동사원형' vs. '~ing' 동명사 오류(예: using vs. to use)를 반드시 검토하여 문맥에 맞는 형태로 수정하라.  _(출처: 코퍼스연구:원서 문체 패턴을 활용한 변형)_
 - [object Object]  _(출처: 회의:자동연구)_
 - 1) T16 유형 정의: ‘소재 동일 + 논지의 방향성 차이(찬/반 전환, 범주 이탈)’로 한정. 2) ‘논리적 연계성’의 최소한도(인과·예시·필연성 등 논리적 틀 유지)를 *필수 조건*으로 명시. 3) ‘완전한 무관’은 배제하되, ‘논리적 연계성’은 난도 조절 장치로 활용. 4) EBS 연계성 설명 시 ‘추론의 자연스러움’ 강조.  _(출처: 회의:자동연구)_
+
+## 2026-08-07T09:18:42.700Z 자동 반영 규칙
+- '법률/책임/사회' 관련 명사 앞에는 반드시 고유명사(Italian, society) 또는 관사(the)가 와야 하며, 동사(choose, take)의 목적어는 단수/복수 명사구로 통일되어야 한다. 예: 'I chose law' → 'I chose Italian law' 또는 'I chose the law'.  _(출처: 코퍼스연구:실제 문법오류쌍(gec)을 활용한 어법 문항)_
+- 1) 긍→부 변화 시: 부정 명사가 '원인→결과'로 직결되는 인과 구조(예: flaw→ruined→disappointment)만 허용. 2) 부→긍 변화 시: 긍정 명사가 기존 부정 감정의 직접적 전환(예: praised→relief)으로 이어지는 인과 구조만 인정. 3) 수능·내신 출제 시, 객관적 판단을 위한 체크리스트(인과관계 여부, 감정 전환의 명시적 연결) 적용.  _(출처: 회의:자동연구)_
+- 1) 도표 유형을 ‘규모·비율·영향력’ + ‘한계·비교·원인’으로 확장하여 ‘exceed’는 ‘표준 초과’(예: *The deposit in Seoul exceeded the national average*), ‘account for’는 ‘인과적 비율’(예: *Low interest rates accounted for the 30% increase in deposits*)로만 제한. 2) ‘twice as~’는 ‘최소 2배 이상’으로 한정하고, 오답 선택지(예: ‘include’, ‘approximate’)를 포함하여 ‘의도적 오류 노출’ 훈련 추가. 3) ‘은행 구축’ 도표를 ‘데이터 소스’로 삼아 수치→표현 전환(예: *Urban areas have twice as many bank branches as rural areas*)을 연습시키는 ‘표현 등급화’ 체계 도입.  _(출처: 회의:자동연구)_
