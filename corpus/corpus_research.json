@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T18:05:07.524Z",
+ "updated": "2026-08-07T19:18:17.217Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T19:17:48.778Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사구(noun phrase) 내 'kind(s) of' 구조는 'these kinds of'로 구체화되어야 하며, 동사 시제 불일치(present/past tense 혼용)는 일관된 시제로 수정해야 한다. 또한 전치사(for)의 목적어는 명사형(-ness, -tion 등)으로 끝나야 자연스럽다.",
+   "rule": "'kind(s) of + 명사'는 'these/those kinds of + 명사'로 명확히 하고, 시제 불일치는 일관된 present/past tense로 통일하며, 'for + 명사' 뒤에는 '-ness'나 '-tion'으로 끝나는 명사형을 사용해 문법적으로 자연스럽게 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T18:04:33.421Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 코퍼스는 '주어 + have/has + 명사구' 구조에서 관사(a/the)나 소유격('s) 사용이 필수적임을 보여준다. 특히 'subjective to'와 같은 전치사구를 동반한 경우, 전치사의 목적어는 명확한 한정사(예: the, each, every)가 필요한 경우가 많다.",
    "rule": "'have/has + 명사구' 또는 'be + 형용사 + 전치사구' 구조에서, 명사구가 추상적이거나 범용적일 경우 반드시 한정사(a/the/each/every) 또는 소유격('s)을 첨가하여 구체화하라. 예: 'have information' → 'have all the information'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T22:14:34.820Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'with the above'는 'concordance'와 함께 연어로서 사용되지만, 문법적 오류 없이도 'I agree with the above'로 축약 가능하다는 패턴을 확인했다. 또한 문장 내 위치(접속사/부사)나 구두점(콜론/세미콜론) 선택이 CEFR 밴드에 따라 난이도를 조절할 수 있는 지표가 된다.",
-   "rule": "'I agree with the ~' 또는 'I disagree with the ~' 구문에서 'the above'를 포함한 연어는 CEFR B1 수준에서 'I agree/disagree with this/that'로 단순화하여 출제하거나, B2 수준에서 'I agree/disagree with the above'로 연어 표현을 유지한 채 문장 내 위치(접속사/부사)와 구두점(콜론/세미콜론)을 선택하도록 변형 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
