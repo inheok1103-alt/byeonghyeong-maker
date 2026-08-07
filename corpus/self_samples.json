@@ -1,6 +1,42 @@
 {
- "updated": "2026-08-06T15:33:51.562Z",
+ "updated": "2026-08-07T00:18:52.793Z",
  "samples": [
+  {
+   "ts": "2026-08-07T00:18:09.486Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "epistemic modality limited to known possibilities → logical modality encompassing all scenarios",
+     "epistemic modality narrowed to observable evidence → logical modality excluding impossible worlds",
+     "epistemic modality aligned with reality → logical modality never matching reality",
+     "epistemic modality sometimes including impossible worlds → logical modality always covering all scenarios",
+     "epistemic modality confined to plausible worlds → logical modality excluding known possibilities"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Logical modality encompasses all possible worlds without distinction, whereas epistemic modality is confined to worlds consistent with our knowledge.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 지문에서 'epistemic modality'는 '알려진 가능성'에 한정되지 않고 '알 수 있는 모든 세계'를 다루며, 'logical modality'는 '불가능한 세계'를 포함한다고 설명했는데, 학생은 이를 '관찰 가능한 증거'와 '불가능한 세계 배제'로 오해한 듯하다. → 처방: 지문에서 'epistemic modality'는 '알려진 사실에 기반한 결론'을 의미하며, 'logical modality'는 '모든 가능한 세계'를 포함한다는 점을 정확히 기억하고 풀이를 시작할 것.\n③ 진단: 학생은 'epistemic modality'가 '현실과 일치하는 가능성'에만 국한된다고 오해했으며, 'logical modality'는 '현실과 결코 일치하지 않는다'고 잘못 이해한 듯하다. 지문은 'logical modality'가 '가능한 모든 세계'를 다루고, 'epistemic modality'는 '알려진 사실에 기반한 결론'을 내린다고 설명했다. → 처방: 'epistemic modality'는 '알려진 사실에 의한 결론'을, 'logical modality'는 '가능한 모든 세계'를 포함한다는 정의를 정확히 떠올리고 선지를 비교할 것.\n④ 진단: 학생은 'epistemic modality'가 '불가능한 세계를 포함할 수 있다'고 오해했으며, 'logical modality'가 '항상 모든 시나리오를 포함한다'는 점은 맞지만, 학생은 'epistemic modality'의 정의를 잘못 이해한 듯하다. 지문은 'epistemic possibility'가 '알려진 사실에 기반한 가능성'임을 명시했다. → 처방: 'epistemic possibility'는 '알려진 사실에 의한 가능성'을, 'logical possibility'는 '모든 가능한 세계'를 포함한다는 점을 정확히 구분하여 풀이를 시작할 것.\n⑤ 진단: 학생은 'epistemic modality'를 '그럴듯한 세계에만 국한된다고' 오해했으며, 'logical modality'가 '알려진 가능성을 배제한다고' 잘못 이해한 듯하다. 지문은 'epistemic modality'가 '알려진 사실에 의한 결론'을, 'logical modality'가 '모든 가능한 세계'를 포함한다고 설명했다. → 처방: 지문의 'epistemic modality'와 'logical modality'의 정의를 정확히 기억하고, '그럴듯한'이라는 주관적 표현이 아닌 '알려진 사실'과 '모든 가능성'의 차이를 기준으로 선지를 선택할 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Logical modality encompasses all possible worlds without distinction, whereas epistemic modality is confined to worlds consistent with our knowledge.]"
+   }
+  },
   {
    "ts": "2026-08-06T15:31:53.660Z",
    "type": "제목",
@@ -327,39 +363,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘breaked’는 ‘break’의 잘못된 과거형으로, 과거 시제 규칙 동사(-ed)를 잘못 적용했다. 또한 ‘was sounding’는 과거 진행형을 쓸 때 ‘was’와 ‘-ing’를 분리하지 않고 한꺼번에 썼다. → 처방: ‘broke’로 과거형으로 바꾸고, ‘was sounding’를 ‘sounded’로 단순 과거로 써야 한다.\n② 진단: ‘didn’t knew’는 조동사 ‘did’를 썼지만 동사 ‘knew’를 그대로 썼다. 조동사 뒤에는 동사 원형을 써야 하는데, 이를 혼동했다. → 처방: ‘didn’t know’로 조동사 뒤에는 동사 원형을 쓴다는 규칙을 적용해야 한다.\n④ 진단: ‘was weighing’와 ‘was calculating’을 과거 진행형으로 썼지만, 이 문맥에서는 단순 과거가 더 자연스럽다. 진행형은 동작이 진행 중임을 강조할 때 쓰는 데, 여기서는 동작 완료가 중요하다. → 처방: ‘weighed’와 ‘calculated’로 단순 과거형을 써서 동작 완료를 나타내야 한다.\n⑤ 진단: ‘was paying’와 ‘was leaving’을 과거 진행형으로 썼지만, 이 문장들도 단순 과거가 더 어울린다. ‘Then’이 시간의 흐름을 나타내서 동작의 연속을 보여야 하는데, 진행형은 연속성을 약하게 만든다. → 처방: ‘paid’와 ‘left’로 단순 과거형을 써서 동작의 순서를 명확히 해야 한다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-05T20:03:53.014Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.67,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "I can remember posting the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. <u>We use remember/forget doing for memories of the past.</u> The action is before the remembering. I regret spending all that money. I've got none left. Regret doing something means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. Try doing something means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. Means doing something expresses the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
-    "choices": [
-     "The act of recalling past experiences is inherently tied to the completion of those experiences.",
-     "Remembering past events is only possible if we have already completed them.",
-     "Past experiences require active forgetting in order to be remembered clearly.",
-     "All memories of the past are merely reconstructions built from our current needs and desires.",
-     "The ability to recall memories depends on how much time has passed since the events occurred."
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'The act of recalling past experiences is inherently tied to the completion of those experiences.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
