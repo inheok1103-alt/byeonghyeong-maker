@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T03:22:50.631Z",
+ "updated": "2026-08-07T05:53:14.946Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T05:52:49.137Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "‘go to the army’와 같은 고정적 표현이 아닌 ‘commitments men have to make to go to the army’로 재구성되는 패턴이 빈번히 관찰된다. 또한 ‘sacrifice’, ‘precious’, ‘textbooks’ 등 명사/형용사의 철자 오류와 ‘anyways’(→ ‘anyway’)의 비표준 표기 수정이 반복된다.",
+   "rule": "‘go to the army’(군대에 가다) 대신 ‘commitments to go to the army’(군대에 가기 위한 의무)나 ‘enlist in the army’(입대하다) 등으로 재구성하는 어법 변형을 내신 문항에 반드시 포함하라. 특히 ‘go to the army’가 등장하면 무조건 오류로 처리하고, 올바른 대안을 ‘enlist in the army’ 또는 ‘join the army’로 제시하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T03:22:22.323Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "능동태 문장에서 목적어 자리에 형용사(skilled, important)가 오면 수동의 의미를 내포한다는 패턴이 반복됨. 또한, 조동사(can) 없이 동사원형만 사용한 경우 오류로 나타나며, 복수 명사(activities)가 필요한 경우 단수형(matter, problem)으로 오류가 발생함.",
    "rule": "능동태 문장에서 목적어 자리에 형용사(skilled, important 등)가 오면 수동태로 변환하여야 하며, 조동사 없이 동사원형만 사용한 경우 조동사(can, must 등)를 추가하여야 하고, 복수 명사가 필요한 경우 단수형으로 오류가 발생하지 않도록 복수형을 사용해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T00:15:46.443Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "원서 코퍼스의 연어 패턴은 '명사 + 전치사 + 명사' 구조가 빈번하며, 오류 유형은 문장 내 부사 위치 오류, 동사 시제 오류, 관사 오류 등으로 나타났다. 특히 'influence on'과 같은 전치사 연어는 오답 선지로 활용 가능성이 높다.",
-   "rule": "'명사 + 전치사 + 명사' 구조의 연어(예: 'influence on agriculture')가 포함된 문장은, 오답 선지로 동사 시제 오류(예: 'have' → 'has') 또는 관사 오류(예: 'a' 누락)를 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",
