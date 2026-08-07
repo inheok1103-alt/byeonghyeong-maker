@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T13:45:05.528Z",
+ "updated": "2026-08-07T15:13:35.650Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T15:13:07.727Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'there'는 보어(are/were)와 함께 위치해 주어-동사-보어 구조를 형성하며, 'take'는 3인칭 단수 주어에 '-s'가 필수적으로 붙는다. 또한 'young'은 명사 앞 한정사로 '-er'가 붙은 비교급이 아닌 경우 'younger'로 교정해야 한다.",
+   "rule": "한국어 문장을 영어로 변환할 때, 주어와 동사의 일치(3인칭 단수 시제, 복수형 보어)와 'there'의 보어 구조('there + be + 명사')를 반드시 확인하여 문법적 오류를 방지하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T13:44:26.352Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "동일한 명사구(‘with other researchers’)가 반복되어 문장의 간결성을 해치는 경우가 많다. 이는 영어에서 ‘redundancy’를 줄이는 패턴으로, 특히 학술적 글쓰기에서 중요하다.",
    "rule": "동일 어휘가 문장 내 두 번 이상 반복될 경우, 두 번째 반복을 삭제하거나 ‘that of’/‘those of’ 등으로 대체하여 문장을 간결하게 재구성하도록 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T17:18:28.779Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구 내 고유명사(Italian law, New York 등)는 항상 대문자로 표기해야 한다. 또한 'some times'는 'sometimes'로 단일어로 축약되어야 하며, 'old information'은 'outdated information'으로 자연스러운 표현으로 대체되어야 한다.",
-   "rule": "문장 내 고유명사(국가, 언어, 기관명 등)는 첫 글자를 대문자로 표기하는지 확인하라. 예: 'I study about korean law' → 'I study about Korean law'.",
    "sample": [
     "old english",
     "university press",
