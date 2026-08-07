@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T05:53:14.946Z",
+ "updated": "2026-08-07T07:46:04.157Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T07:45:35.425Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'~ing' 동명사 형태가 명사적 기능(주어/목적어/보어)으로 더 자연스러운 경우가 많다. 또한 소유격·단수·복수 구분이 문맥상 중요하다.",
+   "rule": "'~s' 소유격·단수형 오류(예: hobbies → hobby)와 'to + 동사원형' vs. '~ing' 동명사 오류(예: using vs. to use)를 반드시 검토하여 문맥에 맞는 형태로 수정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T05:52:49.137Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'형용사 + 명사' 구조에서 부정관사(a/an/the) 생략 오류가 빈번하며, 특히 'unstable trip'처럼 형용사가 명사를 수식할 때 관사 필수 사용 패턴이 두드러진다. 또한 문장 내 주어-동사 일치(are/who take/create) 및 시제(present tense) 오류가 반복된다.",
    "rule": "형용사가 명사를 직접 수식하는 경우, 출제 문장에서 반드시 부정관사(a/an/the) 또는 소유격/지시형용사(that/this/my 등)를 포함하도록 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T03:55:35.331Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "능동태 문장에서 목적어 자리에 형용사(skilled, important)가 오면 수동의 의미를 내포한다는 패턴이 반복됨. 또한, 조동사(can) 없이 동사원형만 사용한 경우 오류로 나타나며, 복수 명사(activities)가 필요한 경우 단수형(matter, problem)으로 오류가 발생함.",
-   "rule": "능동태 문장에서 목적어 자리에 형용사(skilled, important 등)가 오면 수동태로 변환하여야 하며, 조동사 없이 동사원형만 사용한 경우 조동사(can, must 등)를 추가하여야 하고, 복수 명사가 필요한 경우 단수형으로 오류가 발생하지 않도록 복수형을 사용해야 한다.",
    "sample": [
     "old english",
     "university press",
