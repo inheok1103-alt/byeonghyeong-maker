@@ -1,7 +1,31 @@
 {
- "updated": "2026-08-07T20:04:24.087Z",
+ "updated": "2026-08-07T21:04:47.106Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "정답 선지는 지문의 핵심 구절을 직접 인용·반영하되, 오답 선지는 지문의 논리를 왜곡하지 않으면서도 지문 내 핵심 개념(예: ‘thematic role’, ‘semantic properties’, ‘joint dependence’)을 활용해 매력도를 높이는 방향으로 재구성해야 한다.",
+   "src": "자가학습:내용일치",
+   "score": 84,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-07T21:00:51.280Z"
+  },
+  {
+   "rule": "모든 문항에서 정답·오답 선지 간 의미 충돌을 방지하고 원문의 의미를 정확히 반영하기 위해, 'depend jointly on', 'solely', 'exclusively' 등 원문의 어휘적·의미적 통일성을 엄격히 유지한 선지를 작성하라.",
+   "src": "자가학습:제목",
+   "score": 73,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-07T21:01:29.378Z"
+  },
+  {
+   "rule": "원문의 조건부 구조와 모든 시제를 일관되게 가정법 과거/과거완료로 통일하고, 'it will then follow that' 부분을 'it would then follow that'로 변환하여 조건법의 논리적 엄밀성과 문맥 일관성을 확보할 것.",
+   "src": "자가학습:문장전환",
+   "score": 78,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-07T21:01:56.552Z"
+  },
   {
    "rule": "모든 문항에서 정답 선지는 반드시 지문의 핵심 주제를 '예시와 분석을 통한 문법적/비문법적 coordinated phrases의 제시 및 설명'으로 한정하고, 오답 선지들은 오류 원인이나 일반적 규칙 설명으로 범위를 넓혀 차별성을 확보하라.",
    "src": "자가학습:주제",
@@ -1577,30 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-07-31T12:20:18.999Z"
-  },
-  {
-   "rule": "모든 문항은 지문의 범위와 어휘를 엄격히 준수하며, 선지 간 변별력을 높이기 위해 동일 어휘 반복을 피하고, 수동태·과도한 일반화·맥락 오류를 배제해야 한다.",
-   "src": "자가학습:요지",
-   "score": 76,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-31T10:01:28.954Z"
-  },
-  {
-   "rule": "출제 시에는 평가 기준(내용 일치 또는 어법)을 명확히 명시하고, 문맥파악이 가능한 충분한 분량을 제시한 후, 1개의 정답과 3~4개의 매력도·비중복성이 검증된 오답을 설계하라.",
-   "src": "자가학습:혼합통합형",
-   "score": 63,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-31T10:02:18.514Z"
-  },
-  {
-   "rule": "원문의 의미를 유지하며 자연스럽고 간결한 영작을 위해, \"The analysis depends on various grammatical and discourse factors.\"로 재구성하라.",
-   "src": "자가학습:조건영작",
-   "score": 75,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-07-31T10:02:55.047Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

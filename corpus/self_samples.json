@@ -1,6 +1,93 @@
 {
- "updated": "2026-08-07T20:04:24.092Z",
+ "updated": "2026-08-07T21:04:47.112Z",
  "samples": [
+  {
+   "ts": "2026-08-07T21:01:11.328Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "We can account for this if we suppose that pragmatic restrictions on the choice of admissible arguments for a given predicate depend jointly on the semantic properties of the predicate and the thematic role of the argument: it will then follow that two expressions which fulfil the same thematic role in respect of a given predicate will be subject to the same pragmatic restrictions on argument choice. Since passive subjects like those italicised in (64a) originate as complements, they will have the same θ-role (and so be subject to the same pragmatic restrictions on argument choice) as active complements like those italicised in (64b). We can arrive at the same conclusion (that passive subjects originate as thematic complements) on theoretical grounds. It seems reasonable to suppose that principles of UG correlate thematic structure with syntactic structure in a uniform fashion: this assumption is embodied in the Uniform Theta Assignment",
+    "choices": [
+     "수동 주어는 보문 보충어와 다른 θ역할을 가져서 같은 화용적 제한을 받는다",
+     "능동 보문 보충어는 같은 θ역할을 가져서 다른 화용적 제한을 받는다",
+     "수동 주어는 본래 보문 보충어에서 비롯되지 않는다",
+     "θ역할은 술어의 의미 특성과 화제 역할에 따라 선택 가능한 논항을 제한하지 않는다",
+     "UG 의 원칙은 주제 구조와 통사 구조를 균일하게 상관시킨다"
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문은 수동 주어와 능동 보문이 같은 역할을 가져서 같은 화용적 제한을 받는다고 설명하는데, 이를 '다른 역할을 가져서'로 오독했거나 '화용적 제한이 같다'는 부분만 기억해 잘못 선택했을 수 있음. → 처방: 지문에서 '같은 역할'과 '같은 화용적 제한'을 함께 확인하고, 두 표현이 동일한지 비교해보기.\n② 진단: 능동 보문 보충어는 같은 역할을 가져서 '같은' 화용적 제한을 받는다고 지문에 서술되어 있는데, 이를 '다른' 화용적 제한으로 오해했을 가능성이 있음. → 처방: 지문에서 '같은 역할'과 '같은 화용적 제한'이 연결된다는 점을 정확히 기억하고, 선지를 읽을 때 반대 의미가 아닌지 다시 한 번 확인하기.\n③ 진단: 지문은 수동 주어가 본래 보문 보충어에서 비롯된다고 설명하는데, 이를 '보문 보충어에서 비롯되지 않는다'로 오독했거나 '원래'라는 말을 놓쳤을 수 있음. → 처방: 지문에서 'passive subjects originate as complements'라는 문장을 정확히 읽고, '원래'와 '보문 보충어'의 관계를 명확히 파악하기.\n④ 진단: 지문은 역할이 술어의 의미 특성과 화제 역할에 따라 선택 가능한 논항을 제한한다고 설명하는데, 이를 반대로 오해했거나 '제한하지 않는다'는 부분만 기억했을 수 있음. → 처방: 역할이 '선택을 제한한다'는 지문의 핵심 내용을 정확히 기억하고, '제한하지 않는다'는 선지가 틀렸다는 점을 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-07T21:01:49.896Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Argument Choice Faces Limits from Thematic and Semantic Constraints",
+     "Pragmatic Restrictions on Argument Choice Depend on Thematic Roles Alone",
+     "Thematic Roles Determine Pragmatic Restrictions on Argument Choice",
+     "Pragmatic Restrictions Apply Uniformly Across All Thematic Roles",
+     "Passive Subjects and Active Complements Face Distinct Pragmatic Limits"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Pragmatic restrictions on argument choice depend on semantic and thematic properties'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘thematic roles alone’(단독)으로 제한된다고 오해했는데, 지문은 ‘thematic roles + semantic properties’를 함께 언급함. ‘depend jointly on’(함께 의존한다는 사실)을 놓침. → 처방: 지문에서 ‘depend jointly on’의 의미를 정확히 파악하고, ‘alone’이 아니라 ‘함께’라는 조건을 기억할 것.\n③ 진단: ‘pragmatic restrictions’가 ‘thematic roles’에 의해 ‘결정된다’고 단순화했는데, 지문은 ‘thematic roles + semantic properties’가 ‘pragmatic restrictions’를 ‘제한한다’는 사실을 강조함. ‘determine’이 아니라 ‘제한’(restrict)임을 놓침. → 처방: ‘determine’이 아니라 ‘restrict’의 의미를 정확히 이해하고, ‘thematic roles’가 ‘pragmatic restrictions’를 ‘제한’한다는 사실을 기억할 것.\n④ 진단: ‘모든 thematic roles’에 ‘균일하게 적용된다’고 오해했는데, 지문은 ‘주어진 predicate’의 ‘semantic properties’와 ‘thematic role’이 ‘pragmatic restrictions’를 ‘결정’한다는 사실을 설명함. ‘uniformly across all’(모든 것에 균일)이 아니라 ‘주어진 predicate 에 따라’임을 놓침. → 처방: ‘uniformly across all’이 아니라 ‘주어진 predicate 에 따라’라는 조건을 기억하고, ‘pragmatic restrictions’가 ‘균일하지 않음’을 이해할 것.\n⑤ 진단: ‘passive subjects’와 ‘active complements’가 ‘서로 다른 제한’을 받는다고 오해했는데, 지문은 두 표현이 ‘같은 thematic role’을 가져서 ‘같은 pragmatic restrictions’를 받는다고 설명함. ‘distinct limits’를 주장하는 선지가 지문의 결론과 반대임을 놓침. → 처방: ‘passive subjects’와 ‘active complements’가 ‘같은 thematic role’을 가진다는 사실을 기억하고, 두 표현이 ‘같은 제한’을 받는다는 결론을 확인할 것.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Pragmatic restrictions on argument choice depend on semantic and thematic properties]"
+   }
+  },
+  {
+   "ts": "2026-08-07T21:04:19.256Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '가정법' 전환 자동 선택",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 가정법 문장으로 바꿔 쓰시오.\n[원문] We can account for this if we suppose that pragmatic restrictions on the choice of admissible arguments for a given predicate depend jointly on the semantic properties of the predicate and the thematic role of the argument: it will then follow that two expressions which fulfil the same thematic role in respect of a given predicate will be subject to the same pragmatic restrictions on argument choice.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] two expressions would be subject to the same pragmatic restrictions on argument choice if they were to fulfil the same thematic role in respect of a given predicate. (포인트: 시제 대응: will→would / 극성 반전: if we suppose→if they were to fulfil)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-07T20:03:38.036Z",
    "type": "목적",
@@ -246,96 +333,6 @@
     ],
     "answer": 3,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'domestic wine'은 '이 나라의 와인'을 뜻하는데, 학생은 'domestic'을 '수입'으로 오해한 듯하다. 'domestic'은 '국내의'라는 뜻이므로 수입과는 반대 개념이다. → 처방: 단어의 뜻을 정확히 기억하고, 'domestic'은 '국내의'라는 뜻임을 다시 한 번 확인하자.\n② 진단: 지문에서 'domestic steel industry'는 '이 나라의 철강 산업'을 의미하는데, 학생은 '수입 철강'과 '국내 철강'을 구분하지 못한 것으로 보인다. → 처방: 'domestic'의 뜻을 정확히 알고, '국내 산업'과 '수입 산업'을 구분하는 연습을 더 해보자.\n④ 진단: 지문에서 'Quick Quiz #34'는 단어와 정의를 짝짓는 문제로 구성되어 있다고 명시되어 있는데, 학생은 이 내용을 오독한 것으로 보인다. → 처방: 문제를 꼼꼼히 읽고, 지문의 내용을 정확히 이해한 후 답을 선택하도록 주의하자.\n⑤ 진단: 지문에서 'dormant'은 '휴면 상태'를 뜻하며, '식물이 겨울철에 휴면 상태가 된다'는 내용은 지문에 없다. 학생은 'dormant'과 '겨울'을 연관지은 것으로 보인다. → 처방: 단어의 뜻을 정확히 파악하고, 지문에 없는 내용은 답으로 선택하지 않도록 주의하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T13:44:20.643Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 국내산은 수입산과 달리 자국에서 생산된 것을 가리킨다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T12:00:12.232Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "WEEK 17 DAY 5 REVIEW Major Martin, if he had lived, would have used the word “bonnet” to refer to the hood of his auto, and he might have referred to a truck as a “lorry.” As you can see, there are differences between American and British English. But Major Martin, undoubtedly, would have known all the words below—do you? Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 13 and 20.) REVIEW WORDS DEFINITIONS 1.assiduous a. <u>spread out in battle formation</u> 2.attest b. a trick 3.component c. busy, attentive 4.concoct d. confirm as accurate, vouch for 5.consummate e. devise 6.deploy f. a riddle, puzzle 7.enigma g. element, part 8.evaluate h. able to meet any situation 9.exult i. perfect, complete 10.fallacious j. filled 11.fraught k. misleading, false 12.gullible l. rejoice greatly 13.hoax m. faultless 14.impeccable n. easily fooled 15.labyrinth o. winding passages 16.manifold p. find the value of, review 17.murky q. many 18.perpetrate r. deception 19.resourceful s. commit 20.subterfuge t. dark, obscure",
-    "choices": [
-     "The troops were scattered randomly across the battlefield without any clear structure.",
-     "The commander occasionally spread out in battle formation during training exercises.",
-     "To organize or arrange resources strategically for maximum efficiency or impact in a challenging situation.",
-     "Spreading out in battle formation directly causes a lack of coordination among soldiers.",
-     "Because the soldiers spread out in battle formation, they lost their initial advantage."
-    ],
-    "answer": 3,
-    "explanation": "밑줄 친 부분은 'To organize or arrange resources strategically for maximum efficiency or impact in a challenging situation.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘spread out in battle formation’을 ‘randomly scattered(무작위로 흩어진)’로 오해해 ‘배치’가 아닌 ‘산만함’을 떠올렸다. 지문에서 ‘deploy’는 ‘전개·배치’로 전략적 배치를 뜻하는데, 이를 ‘무질서’를 연상했다. → 처방: ‘deploy’를 ‘배치·전개’로만 기억하고, ‘randomly’는 ‘deployment’의 반대 개념임을 떠올리자. 배치는 늘 ‘목적 있는 전략적 행동’이라는 점을 기억해.\n② 진단: ‘spread out’를 ‘훈련 중 occasional( ocasional)하게’로 오해해 ‘일시적 행동’을 떠올렸다. 지문에서 ‘deploy’는 ‘전투 배치’로 ‘상황에 맞는 전략적 행동’이지만, 이를 ‘훈련’과 연결했다. → 처방: ‘deploy’를 ‘전투 상황’에만 한정하지 말고, ‘필요한 곳에 배치·전개하는 행동’으로 넓게 이해하자. ‘occasional’이라는 단어 자체가 지문에 없음을 확인해.\n④ 진단: ‘spread out in battle formation’이 ‘lack of coordination(조율 부족)’을 일으킨다고 오해했다. ‘deploy’는 ‘배치’를 뜻하지만, 이를 ‘결과’로 ‘조율 부족’을 연관 지었다. → 처방: ‘deploy’의 의미를 ‘배치’로만 떠올리고, 그 결과가 ‘좋은지 나쁜지’를 판단하지 말자. 배치 자체가 ‘조율’을 위한 행동임을 기억해.\n⑤ 진단: ‘spread out in battle formation’이 ‘initial advantage(초기 우위)’를 잃게 했다고 오해했다. ‘deploy’는 ‘배치’지만, 이를 ‘손실’의 원인으로 연결했다. → 처방: ‘deploy’를 ‘배치’로만 생각하고, 그 배치가 ‘좋은 결과’를 위한 것임을 떠올리자. ‘advantage’를 잃는다는 말은 지문에 없음을 확인해.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T11:11:33.493Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "형용사의 지시적 기능이 수식적 기능보다 더 복잡한 구조를 지닌다",
-     "형용사의 유형은 술어 변수를 통해 두 가지로만 명확히 나뉜다",
-     "형용사의 기능적 구분을 위해 술어 변수를 도입하여 지시적 형용사와 수식적 형용사의 유형을 명시적으로 정의할 수 있다",
-     "모든 형용사가 술어 변수를 활용해 형식적으로 구분될 수 있다",
-     "형용사의 유형 구분이 가능하려면 문장 내 술어 구조가 반드시 필요하다"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The distinction between predicative and modifier adjectives can be explicitly defined using predicate variables, with predicative adjectives being of type or <e, > and modifier adjectives being of type <, >.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: ‘지시적 기능’이 ‘수식적 기능’보다 복잡하다는 말은 지문에 없다. 오히려 지문은 두 기능을 ‘명시적으로’ 구분하는 방법을 설명하며, 복잡성 비교는 언급하지 않는다. → 처방: ‘형용사의 기능’을 ‘구분하는 방법’에 초점을 맞추고, 지문의 내용을 다시 한 번 읽으며 ‘복잡성’보다는 ‘유형’에 주목하라.\n② 진단: ‘두 가지로만 명확히 나뉜다’는 말은 지문에 맞지 않다. 지문은 형용사를 ‘술어 변수’를 통해 ‘두 가지 유형’으로 나누지만, ‘두 가지만’으로 한정하지 않는다(예: <e, t>와 <e, <e, t>>). → 처방: ‘두 가지’보다는 ‘어떤 유형들이 있는지’를 먼저 떠올리고, 지문의 예시(예: predicative vs modifier)를 확인하라.\n④ 진단: ‘모든 형용사’가 술어 변수를 활용해 구분된다는 말은 과장이다. 지문은 ‘일부 형용사’(예: predicative/modifier)에 대해 설명하며, 모든 경우를 다루지 않는다. → 처방: ‘모든’이라는 단어를 주의하고, 지문의 예시가 ‘일부’에 해당한다는 점을 기억하라. ‘형용사의 유형’이란 ‘일부’에 대한 설명임을 떠올려라.\n⑤ 진단: ‘반드시 문장 내 술어 구조가 필요하다’는 말은 지문의 요지가 아니다. 지문은 술어 변수를 도입해 형용사의 유형을 ‘정의’하는 방법을 설명하지만, ‘필요성’을 강조하지 않는다. → 처방: ‘필요하다’는 단어를 버리고, 지문이 ‘어떻게’ 형용사를 구분하는지(예: 술어 변수 도입)의 ‘방법론’에 집중하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The distinction between predicative and modifier adjectives can be explicitly defined using predicate variables, with predicative adjectives being of type or <e, > and modifier adjectives being of type <, >.]"
    }
   }
  ]
