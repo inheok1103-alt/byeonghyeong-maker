@@ -1,6 +1,61 @@
 {
- "updated": "2026-08-07T12:01:10.803Z",
+ "updated": "2026-08-07T13:45:05.532Z",
  "samples": [
+  {
+   "ts": "2026-08-07T13:43:33.954Z",
+   "type": "안내문불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
+    "passage": "Domestic wine is wine from this country, as opposed to wine imported from, say, France. The domestic steel industry is the steel industry in this country. A country that enjoys domestic tranquility is a happy country on the homefront. Quick Quiz #34 Match each word in the first column with its definition in the second column. Check your answers here. 1. disparate a. committed to a theory 2. disseminate b. thin out 3. dissipate c. of the household 4. dissolution d. firmly held system of ideas 5. distend e. easily taught 6. distinguish f. arrogantly assertive 7. docile g. swell 8. doctrinaire h. tell apart 9. dogmatic i. incompatible 10. dogma j. spread seeds 11. domestic k. disintegration DORMANT (DOR munt) adj inactive; as though asleep; asleep Dormant, like dormitory, comes from a root meaning sleep. • Mt. Vesuvius erupted violently and then fell dormant for several hundred years. Many plants remain dormant through the winter; that is, they stop growing until spring.",
+    "choices": [
+     "이 나라는 국내산 와인을 생산하며 수입 와인과는 구분된다",
+     "이 나라는 국내 철강 산업을 보유하고 있으며 수입 철강과 다르다",
+     "이 나라는 국내산 와인을 수입하며 국내산과 구분된다",
+     "퀵 퀴즈 34는 단어와 정의를 짝짓는 문제로 구성되어 있다",
+     "도시나 마을은 겨울철에 식물이 휴면 상태가 되는 특징이 있다"
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'domestic wine'은 '이 나라의 와인'을 뜻하는데, 학생은 'domestic'을 '수입'으로 오해한 듯하다. 'domestic'은 '국내의'라는 뜻이므로 수입과는 반대 개념이다. → 처방: 단어의 뜻을 정확히 기억하고, 'domestic'은 '국내의'라는 뜻임을 다시 한 번 확인하자.\n② 진단: 지문에서 'domestic steel industry'는 '이 나라의 철강 산업'을 의미하는데, 학생은 '수입 철강'과 '국내 철강'을 구분하지 못한 것으로 보인다. → 처방: 'domestic'의 뜻을 정확히 알고, '국내 산업'과 '수입 산업'을 구분하는 연습을 더 해보자.\n④ 진단: 지문에서 'Quick Quiz #34'는 단어와 정의를 짝짓는 문제로 구성되어 있다고 명시되어 있는데, 학생은 이 내용을 오독한 것으로 보인다. → 처방: 문제를 꼼꼼히 읽고, 지문의 내용을 정확히 이해한 후 답을 선택하도록 주의하자.\n⑤ 진단: 지문에서 'dormant'은 '휴면 상태'를 뜻하며, '식물이 겨울철에 휴면 상태가 된다'는 내용은 지문에 없다. 학생은 'dormant'과 '겨울'을 연관지은 것으로 보인다. → 처방: 단어의 뜻을 정확히 파악하고, 지문에 없는 내용은 답으로 선택하지 않도록 주의하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-07T13:44:20.643Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 국내산은 수입산과 달리 자국에서 생산된 것을 가리킨다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-07T12:00:12.232Z",
    "type": "밑줄함의",
@@ -315,58 +370,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] comprehension (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T05:52:46.424Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: c)\n[영영풀이] Thorough understanding",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] comprehension (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T03:21:38.265Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Cultural Diversity in Human Experience",
-     "Language Determines Cultural Values",
-     "All Indigenous Cultures Are Primitive",
-     "Western Societies Are the Most Advanced",
-     "Human Experience Is Shaped by Environment"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The Sapir-Whorf hypothesis has been more widely accepted than examined, particularly for its demonstration that indigenous cultures are not primitive, but rather valuable variations of human experience.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 소재는 같으나 논점에서 벗어남· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 지문에서 'Sapir-Whorf hypothesis'가 언급되면서도, 언어가 문화적 가치를 결정한다는 부분은 언급되지 않아 혼동했을 것으로 보인다. 'To Whorf, Hopi and the world view it supposedly conditioned was not just different, but better:' 이 문장에서 언어와 문화의 차이를 언급하고 있지만, 결정한다는 말은 없다. → 처방: 제목을 결정하기 전에 지문 전체를 다시 읽어보면서 핵심 내용을 파악하자.\n③ 진단: 지문에서 'indigenous cultures are not “primitive”'이라는 문장이 나오는데, 이 부분을 무시하고 선지의 내용을 선택했을 것으로 보인다. 이는 지문의 핵심을 오독한 결과이다. → 처방: 지문을 읽을 때 핵심 키워드를 찾고, 그 키워드를 중심으로 지문의 내용을 이해해 보자.\n④ 진단: 지문에서 서구 사회를 다른 문화와 비교하는 내용은 없으며, 오히려 다른 문화를 존중하는 내용이 나오는데, 이 부분을 무시하고 선지를 선택했을 것으로 보인다. → 처방: 지문을 읽을 때는 지문의 전체적인 흐름과 핵심 메시지를 파악하고, 선지를 선택할 때는 지문의 내용과 일치하는지 확인해 보자.\n⑤ 진단: 지문에서 환경이 인간의 경험을 형성한다는 내용은 언급되지 않으며, 언어와 문화의 관계에 대한 내용이 주를 이루는데, 이 부분을 오독한 것으로 보인다. 'It is to him and like-minded thinkers of his time such as his mentor anthropologist Franz Boas that it is part of the warp and woof of modern Westerners to view other cultures as variations on being human rather than “savages”.' 이 문장을 잘 읽어보면, 환경이 아니라 문화의 다양성에 대한 내용임을 알 수 있다. → 처방: 지문을 읽을 때는 키워드를 찾고, 그 키워드를 중심으로 지문의 내용을 분석해 보자.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The Sapir-Whorf hypothesis has been more widely accepted than examined, particularly for its demonstration that indigenous cultures are not primitive, but rather valuable variations of human experience.]"
    }
   }
  ]

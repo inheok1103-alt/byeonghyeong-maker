@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-07T12:01:10.799Z",
+ "updated": "2026-08-07T13:45:05.528Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-07T13:44:26.352Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "동사구조의 필수 구성요소(주어+동사+목적어 등)가 누락된 경우 오류가 빈번하며, 특히 조동사+동사원형 구조에서 동사원형이 생략되는 패턴이 두드러진다.",
+   "rule": "조동사(will, can, may 등)가 사용된 문장에서는 반드시 동사원형이 뒤따라야 하며, 이를 생략한 경우 오류로 간주하여 문항으로 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-07T12:00:39.628Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구 내 고유명사(Italian law, New York 등)는 항상 대문자로 표기해야 한다. 또한 'some times'는 'sometimes'로 단일어로 축약되어야 하며, 'old information'은 'outdated information'으로 자연스러운 표현으로 대체되어야 한다.",
    "rule": "문장 내 고유명사(국가, 언어, 기관명 등)는 첫 글자를 대문자로 표기하는지 확인하라. 예: 'I study about korean law' → 'I study about Korean law'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-01T15:30:12.102Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사형 오류(‘surprize’→‘surprise’)는 명사형 접미사 ‘-s’가 누락된 패턴으로, ‘-tion’·‘-ment’ 등 파생명사에서도 동일하게 발생한다. 동사 시제·3인칭 단수 ‘-s’ 오류(‘sugest’→‘suggests’)는 문맥상 필수 시제 일치 규칙이 적용되지 않은 경우다.",
-   "rule": "‘명사형’이나 ‘3인칭 단수 동사’에서 ‘-s’가 생략된 경우, 반드시 해당 접미사를 복원하여 문법적 정확성을 확보하라. 예: ‘To my [surprise]’ / ‘The lecturer [suggests]’ / ‘It [helps] the environment’.",
    "sample": [
     "old english",
     "university press",
