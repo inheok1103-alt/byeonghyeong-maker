@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-07T09:18:41.302Z",
+ "updated": "2026-08-07T10:17:56.479Z",
  "samples": [
+  {
+   "ts": "2026-08-07T10:15:38.014Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "CHAPTER 12 Word Meanings The division of the meanings of words into smaller units of meaning is one of the most successful areas of modern semantics, and turns out to be useful for language learning, for most of the elementary units of meaning of one language are found in other languages. We can call these elementary units of meaning 'semantic atoms', for like atoms in chemistry that combine together into molecules, they combine together into tight clusters that can be called 'concepts' or word meanings. Of course, when atoms combine in chemistry the result may have a quite different nature; two gases, hydrogen (H) and oxygen (0), combine to form a liquid, water (H20). We seldom find such big differences in semantics, but like chemical atoms each semantic atom can combine only with a certain number of things, and a combination can act quite differently from its constituent parts. That woman is my father's sister You mean your aunt? [ ]",
+    "choices": [
+     "It's unfortunate that things always work out in a predictable manner.",
+     "The outcome of events is always predetermined and unchanging.",
+     "The way things work out is completely random.",
+     "Things never seem to work out as planned.",
+     "It's also nice how things work out, isn't it?"
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 원문 'That too -- isn’t it nice the way thing N * workout?'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장의 맥락을 이해하지 못하고 'things work out'을 부정적인 의미로 오독했다. → 처방: 문장의 전체적인 흐름과 대화의 맥락을 고려하여 의미를 파악하라.\n② 진단: 대화의 내용을 분석하지 않고 'things work out'을 일반화하여 오독했다. → 처방: 대화의 내용을 세부적으로 분석하여 문장의 의미를 파악하라.\n③ 진단: 대화의 논리적인 흐름을 이해하지 못하고 무작위적인 의미로 오독했다. → 처방: 대화의 논리적인 흐름을 따라가며 문장의 의미를 파악하라.\n④ 진단: 문장의 긍정적인 의미를 부정적인 의미로 오독하여 맥락을 이해하지 못했다. → 처방: 문장의 긍정적인 의미를 고려하여 대화의 맥락을 파악하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-07T09:17:59.628Z",
    "type": "제목",
@@ -316,41 +351,6 @@
     ],
     "answer": 1,
     "explanation": "(A)는 앞 내용과 '대조' 관계로 But, (B)는 '인과' 관계로 Thus 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n[오답 진단·처방]\n② 진단: 학생은 'In fact'이 사실을 강조하는 말로 'Indeed'도 사실을 강조하는 말로 인해 두 문장이 같은 방향으로 진행되는 것으로 오독했을 가능성이 있다. (예: 'In fact …… Indeed'는 '사실 …… 실제로'로 같은 방향으로 진행) → 처방: 다음부터는 연결 어구의 기능을 정확히 파악하여 문장의 진행 방향을 판단해야 한다.\n③ 진단: 학생은 'Moreover'가 추가 정보를 제공하는 말로 'For instance'도 예를 들는 말로 인해 두 문장이 같은 방향으로 진행되는 것으로 오독했을 가능성이 있다. (예: 'Moreover …… For instance'는 '또한 …… 예를 들어'로 같은 방향으로 진행) → 처방: 다음부터는 연결 어구의 기능을 정확히 파악하여 문장의 진행 방향을 판단해야 한다.\n④ 진단: 학생은 'But'이 대조를 나타내는 말로 'However'도 대조를 나타내는 말로 인해 두 문장이 같은 방향으로 진행되는 것으로 오독했을 가능성이 있다. (예: 'But …… However'는 '그러나 …… 그러나'로 같은 방향으로 진행) → 처방: 다음부터는 연결 어구의 기능을 정확히 파악하여 문장의 진행 방향을 판단해야 한다.\n⑤ 진단: 학생은 'But'이 대조를 나타내는 말로 'For example'가 예를 들는 말로 인해 두 문장이 같은 방향으로 진행되는 것으로 오독했을 가능성이 있다. (예: 'But …… For example'는 '그러나 …… 예를 들어'로 같은 방향으로 진행) → 처방: 다음부터는 연결 어구의 기능을 정확히 파악하여 문장의 진행 방향을 판단해야 한다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-06T12:21:09.218Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Overview\b 43 further rightward on the scale ­because of the additional conceptual content generated in it. In (40), for example, <u>speaker Y’s trigger that targets the conceptual complex that she associates with the noun phrase a ­castle built only of sausages within speaker X’s utterance. But Y’s question about structural integrity may not make sense if that conceptual complex is based solely on the narrow sum of the literal meanings of the component ele­ments in the noun phrase. It may instead make sense only if Y augments this narrow sum with further conceptual content based on inference and general knowledge. Thus</u>, the familiar linearity of sausages might suggest their being strung together to form long chains, in turn arranged to visually indicate some contours of a picture-­book ­castle (rather than, say, being packed together to form the walls and floors of an ­actual ­castle). (40)  X: ­There’s a ­castle built only of sausages on the fairground.",
-    "choices": [
-     "The sausage castle is a literal representation of medieval architecture.",
-     "The castle made entirely of sausages always collapses within a day.",
-     "The image of a sausage castle is often used to emphasize the importance of using edible materials when constructing buildings.",
-     "A castle made entirely of sausages symbolizes how absurd ideas can sometimes lead to unexpected but beneficial outcomes.",
-     "It represents an absurd or impossible scenario that highlights the need for imaginative interpretation rather than literal understanding."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'It represents an absurd or impossible scenario that highlights the need for imaginative interpretation rather than literal understanding.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 '추가적인 개념적 내용'이 필요하다고 강조하는데, 이 선지는 '중세 건축의 사실적 표현'으로만 해석하여 지문의 '추론과 일반지식의 보충'을 무시했다. → 처방: 지문에서처럼 '추론'과 '일반지식'을 동원해 의미를 확장하는 연습을 해보기.\n② 진단: 지문은 '소시지 성곽'의 '비현실성'을 강조하는데, 이 선지는 '하루 만에 무너진다'는 물리적 사실에만 집중해 지문의 '개념적 복잡성'을 놓쳤다. → 처방: 지문에서처럼 '비유적·상상적 의미'를 찾아내는 습관을 기르기.\n③ 진단: 지문은 '소시지 성곽'이 '비현실적'임을 강조하는데, 이 선지는 '식재료의 중요성'을 강조하는 실용적 의미를 부여해 지문의 '추상적 해석'을 오해했다. → 처방: 지문에서처럼 '비유·상상'을 중심에 두고 의미를 파악하기.\n④ 진단: 지문은 '비현실적 상황'을 통해 '상상력의 필요성'을 강조하는데, 이 선지는 '이상한 아이디어의 긍정적 결과'로만 해석해 지문의 '의도된 모순'을 놓쳤다. → 처방: 지문에서처럼 '모순·비현실성'을 감지하고 그 의미를 탐구하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
