@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T14:56:42.133Z",
+ "updated": "2026-08-08T15:50:10.817Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T15:49:42.870Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스에서는 소유·소유권 관련 연어('owning a lot of your time')와 동명사·현재분사 사용 패턴('his trying')이 빈번하며, 문법 오류는 동사 형태(3인칭 단수, 시제 일치)나 보어 생략(be 동사) 문제에서 주로 발생한다. 또한 'that's why' 구조는 결과-원인 관계의 보어 구문('be as hard as when')으로 확장되는 경향이 있다.",
+   "rule": "원서 코퍼스에서 빈번한 'owning/trying'과 같은 동명사 구문은 한국어 내신 변형 시 '~하는 것'으로 번역·활용하되, 주어-동사 일치(3인칭 단수)나 보어(be 동사) 생략 오류를 반드시 포함시켜 문법 오류 유도 문제를 제작하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T14:56:16.152Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'a knowledge'와 같은 불필요한 관사 사용은 명사의 고유한 특성을 무시하는 오류로, 'knowledge'는 불가산명사이므로 관사가 필요 없다. 또한 'and do more benefits'와 같이 동사-명사 불일치 오류는 문맥상 동사의 의미적 일관성을 고려해야 한다.",
    "rule": "'a/an + 불가산명사' 또는 '복수형 명사와 단수 동사의 불일치'가 포함된 문장은, 관사를 제거하거나 복수형 동사로 수정하여 문법적 정확성을 확보하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-03T11:57:05.362Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 패턴은 학술적·교과서적 문체에서 '명사 + 동사(3인칭 단수 현재)'의 반복적 사용이 오류로 이어질 수 있음을 보여준다. 특히 'are', 'is' 등 상태동사의 과도한 사용이 문법적 오류(예: 복수 명사 뒤 단수 동사, 반복된 관사 오류)와 연관된다.",
-   "rule": "'are/is + 형용사' 구문에서 복수 명사(예: 'prices', 'things') 뒤에는 반드시 'are'를 사용하고, 단수 동사(예: 'is')는 단수 명사와만 결합하도록 강제하는 문항을 출제하라. 예: 'The prices are cheap' vs. 'The price is cheap'.",
    "sample": [
     "old english",
     "university press",

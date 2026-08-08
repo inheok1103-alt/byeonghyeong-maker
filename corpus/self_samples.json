@@ -1,6 +1,56 @@
 {
- "updated": "2026-08-08T14:56:42.137Z",
+ "updated": "2026-08-08T15:50:10.821Z",
  "samples": [
+  {
+   "ts": "2026-08-08T15:48:10.709Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.67,
+    "distractorEff": 100,
+    "pass": true,
+    "flags": []
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "단어는 철저히 검토하여 오류를 예방해야 한다",
+     "단어는 철저히 점검하면 오류를 줄일 수 있다",
+     "모든 단어는 사용 전에 완벽한 의미를 확정해야 한다",
+     "단어는 때때로 철저히 검토하여 의미를 분명히 해야 한다",
+     "단어는 그 의미를 면밀하고 완전하게 탐색하여야 한다"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Vocabulary should be examined exhaustively to ensure precision and completeness.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘철저히 검토하여 오류를 예방해야 한다’는 뜻으로 ‘exhaustive’의 의미를 ‘오류 예방’에 한정해 오독. 지문은 ‘exhaustively’의 의미가 ‘철저히 검토’ 자체임을 강조하며 ‘결정의 되돌릴 수 없음’을 예시로 들음. → 처방: ‘exhaustive’의 의미를 ‘철저히 검토’ 자체로만 기억하고, ‘오류 예방’이라는 목적은 제외하고 풀기.\n② 진단: ‘단어는 철저히 점검하면 오류를 줄일 수 있다’는 뜻으로 ‘exhaustive’의 의미를 ‘오류 감소’에 한정해 오독. 지문은 ‘exhaustive’의 의미가 ‘철저히 검토’ 자체임을 강조하며 ‘결정의 되돌릴 수 없음’을 예시로 들음. → 처방: ‘exhaustive’의 의미를 ‘철저히 검토’ 자체로만 기억하고, ‘오류 감소’라는 결과는 제외하고 풀기.\n③ 진단: ‘모든 단어는 사용 전에 완벽한 의미를 확정해야 한다’는 뜻으로 ‘exhaustive’의 의미를 ‘완벽한 의미 확정’에 한정해 오독. 지문은 ‘exhaustive’의 의미가 ‘철저히 검토’ 자체임을 강조하며 ‘결정의 되돌릴 수 없음’을 예시로 들음. → 처방: ‘exhaustive’의 의미를 ‘철저히 검토’ 자체로만 기억하고, ‘완벽한 의미 확정’이라는 결과는 제외하고 풀기.\n④ 진단: ‘단어는 때때로 철저히 검토하여 의미를 분명히 해야 한다’는 뜻으로 ‘exhaustive’의 의미를 ‘때때로’에 한정해 오독. 지문은 ‘exhaustive’의 의미가 ‘철저히 검토’를 강조하며 ‘결정의 되돌릴 수 없음’을 예시로 들음. → 처방: ‘exhaustive’의 의미를 ‘철저히 검토’를 강조하는 뜻으로만 기억하고, ‘때때로’라는 조건은 제외하고 풀기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Vocabulary should be examined exhaustively to ensure precision and completeness.]"
+   }
+  },
+  {
+   "ts": "2026-08-08T15:49:39.965Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "EXHAUSTIVE (ig ZAWS tiv) adj thorough; rigorous; complete; painstaking • Before you use a p________, you should examine it exhaustively for defects. Once you jump, your decision is irrevocable. EXHORT (ig ZORT) v to urge strongly; to give a serious warning to • The coach used her bullhorn to exhort us to try harder. • The fearful forest ranger exhorted us not to go into the cave, but we did so anyway and became lost in the center of the earth. The adjective is hortatory (HOR tuh tor ee). Quick Quiz #40 Match each word in the first column with its definition in the second column. Check your answers here. 1. esoteric a. peculiar 2. espouse b. make worse 3. ethereal c. extremely demanding 4. euphemism d. raise high 5. evanescent e. inoffensive substitute term 6. exacerbate f. urge strongly 7. exacting g. annoy thoroughly 8. exalt h. heavenly 9. exasperate i. advocate 10. exemplify j. fleeting 11. exhaustive k. illustrate by example 12. exhort l. thorough",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] parachute — 문단의 논지상 이 자리에는 'parachute'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-08T14:55:28.601Z",
    "type": "틀린문장 고쳐쓰기",
@@ -281,77 +331,6 @@
     ],
     "answer": 4,
     "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘independent subject of the infinitive’를 설명하는 문장이 ‘John started for Mary to call the meeting to order.’와 연결된다고 오해. 이 문장은 ‘independent subject’를 설명하는 예시일 뿐, ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장이 아님. → 처방: ‘independent subject of the infinitive’가 무엇인지 먼저 이해한 후, 이 예시가 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장임을 확인하기.\n② 진단: ‘Following is a summary listing...’가 ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장이라고 오해. 이 문장은 ‘verbs that permit infinitives with assigned subjects’를 설명하는 것이 아니라, ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장 뒤에 나오는 ‘summary’를 소개하는 문장임. → 처방: ‘summary’라는 단어가 나오면, 그 문장이 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이 아니라, ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장 뒤에 나오는 ‘summary’를 소개하는 문장임을 확인하기.\n③ 진단: ‘The verbs are roughly grouped into semantic categories.’가 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이라고 오해. 이 문장은 ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장 뒤에 나오는 ‘verbs’를 소개하는 문장임. → 처방: ‘grouped into semantic categories’라는 단어가 나오면, 그 문장이 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이 아니라, ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장 뒤에 나오는 ‘verbs’를 소개하는 문장임을 확인하기.\n⑤ 진단: ‘An example is the verb recommend: Gerund object: ( ⑤)’가 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이라고 오해. 이 문장은 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이 아니라, ‘verbs that permit gerunds as objects’를 설명하는 문장임. → 처방: ‘gerund object’라는 단어가 나오면, 그 문장이 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이 아니라, ‘verbs that permit gerunds as objects’를 설명하는 문장임을 확인하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T08:04:34.244Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "Last year, the number of employees on the first day of the year was equal to the number of employees on the last day of the year. Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year.” We are also told that the labor turnover rate last year was 25%. To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
-    "choices": [
-     "작년 한 해 동안 회사를 떠난 직원의 수는 연 초와 연 말 직원 수의 평균의 25퍼센트였다",
-     "연초와 연말의 직원 수는 달랐다",
-     "연간 노동 이직률은 연도 중 떠난 직원 수를 연초와 연말 직원 수의 합으로 나눈 값이다",
-     "연간 노동 이직률 계산식은 연도 중 떠난 직원 수를 연초와 연말 직원 수의 평균으로 나눈 것이 아니다",
-     "연초와 연말의 직원 수가 달랐으므로 연간 노동 이직률은 연도 중 떠난 직원 수를 연초 직원 수로 나눈 값과 같다"
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 지문에서 '연초와 연말 직원 수가 같다'고 명시했으나, 이를 무시하고 '달랐다'고 오해한 듯함. → 처방: 지문 속 '첫날과 마지막날 직원 수가 같다'는 문장을 반드시 확인하고, 그 내용을 기억한 채로 문제를 풀기.\n③ 진단: 지문에서 '연초와 연말 직원 수의 평균'으로 나눈다고 했는데, 이를 '합'으로 잘못 읽은 듯함. → 처방: 계산식의 '평균'과 '합'을 정확히 구분하고, 지문 속 계산식을 다시 한 번 꼼꼼히 읽기.\n④ 진단: 지문에서 '평균으로 나눈다'고 했는데, 이를 '평균으로 나누는 것이 아니다'라고 반대로 이해한 듯함. → 처방: 계산식의 구조를 정확히 기억하고, '~가 아니다' 같은 부정 표현이 나오면 다시 한 번 확인하기.\n⑤ 진단: 지문에서 '연초와 연말 직원 수가 같다'는 사실을 무시하고, '달랐다'는 가정을 한 뒤 계산을 잘못한 듯함. → 처방: 문제 속 조건을 모두 확인하고, 조건이 바뀌면 계산식이 달라질 수 있음을 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T07:19:28.665Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "ⓐ<u>The noun form is integration</u>, which often refers to the end of racial segregation. INTRACTABLE (in TRAK tuh bul) adj uncontrollable; stubborn; disobedient • The intractable child was a torment to his nursery school teacher. • Lavanya ⓑ<u>was intractable in her opposition</u> to pay increases for the library employees; she swore she would never vote to give them a raise. • ⓒ<u>The disease were intractable</u>. None of the dozens of medicines the doctor tried had the slightest effect on it. The opposite of intractable is tractable. INTRANSIGENT (in TRAN suh junt) adj uncompromising; stubborn • Vijay was an intransigent hard-liner, and he didn’t care how many people he offended with his views. • ⓓ<u>The jury was unanimous except</u> for one intransigent member, who didn’t believe that anyone should ever be forced to go to jail. The noun is intransigence. Quick Quiz #52 Match each word in the first column with its definition in the second column. Check your answers here. ⓔ<u>1. insidious a. hint</u> 2. insinuate b. uncontrollable 3. insipid c. treacherous 4. insolent d. essential 5. instigate e. provoke 6. insular f. like an island 7. insurgent g. rebel",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "[어법: 수일치] 정답 ⓒ의 'The disease were intractable'는 'The disease was intractable'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n① 진단: 문맥상 문장 구조가 맞아 보이는데도 틀렸다고 생각했을 것 → 처방: 문장 구조를 다시 분석해 보아야 한다\n② 진단: 문장 구조가 맞아 보이는데도 틀렸다고 생각했을 것 → 처방: 문장 구조를 다시 분석해 보아야 한다\n④ 진단: 문맥상 문장 구조가 맞아 보이는데도 틀렸다고 생각했을 것 → 처방: 문장 구조를 다시 분석해 보아야 한다\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
