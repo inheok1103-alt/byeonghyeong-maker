@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-08T22:50:24.696Z",
+ "updated": "2026-08-08T23:50:46.834Z",
  "samples": [
+  {
+   "ts": "2026-08-08T23:50:06.437Z",
+   "type": "연결어빈칸",
+   "level": "중",
+   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.57,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that these strings are constituents. ___(A)___, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). ___(B)___ the AP is a Complement of the lexical verb inside VP, or an Adjunct. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
+    "choices": [
+     "Therefore …… In contrast",
+     "However …… We can go further and ask whether",
+     "However …… In fact",
+     "However …… In addition",
+     "To put it simply …… Indeed"
+    ],
+    "answer": 3,
+    "explanation": "(A)는 앞 내용과 '대조' 관계로 However, (B)는 '예시' 관계로 We can go further and ask whether 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘Therefore’는 앞 문장의 결론을 이어야 하는데, 지문은 ‘이것은 옳을 수 없다’며 반박하고 있어 문맥이 맞지 않는다. ‘In contrast’는 대조를 나타내지만, (A) 뒤 문장이 ‘이것은 옳을 수 없다’를 뒷받침하는 내용이어서 대조가 아니라 ‘사실’로 이어야 한다. → 처방: 빈칸 앞뒤 문장의 관계를 정확히 확인하라. ‘이것은 옳을 수 없다’는 반박이므로 ‘However’로 시작하고, 뒤에는 ‘사실’을 뜻하는 말로 이어야 한다.\n② 진단: ‘However’는 옳지만 ‘We can go further and ask whether’는 뒤 문장이 새로운 질문을 던지는 구조라서 문맥에 맞지 않다. 지문은 ‘왜 안 되는지’를 설명하는 내용이어서 ‘In fact’가 더 자연스럽다. → 처방: 빈칸 뒤 문장이 ‘왜 안 되는지’를 설명하는지 확인하라. 설명을 보강하는 말로 ‘In fact’를 써야 한다.\n④ 진단: ‘However’는 옳지만 ‘In addition’는 ‘추가’나 ‘더불어’를 뜻해 문맥이 맞지 않는다. 지문은 (B) 뒤 문장이 ‘AP 가 보어인지 부가어인지’를 설명하는 내용이라서 ‘사실’을 뜻하는 말이 필요하다. → 처방: 빈칸 뒤 문장이 ‘사실’을 보강하거나 설명하는지 확인하라. ‘In fact’를 써야 한다.\n⑤ 진단: ‘To put it simply’는 간단하게 설명할 때 쓰이지만, 지문은 복잡한 논리를 전개하고 있어 문맥이 맞지 않는다. ‘Indeed’는 ‘사실’을 뜻하지만, 앞의 ‘However’와 어울리지 않는다. → 처방: 빈칸 앞 문장이 반박이라면 ‘However’를 쓰고, 뒤에는 ‘사실’을 뜻하는 말로 이어야 한다. ‘Indeed’는 ‘사실’이라는 뜻이지만 앞의 ‘However’와 어울리지 않으므로 주의하라."
+   }
+  },
+  {
+   "ts": "2026-08-08T23:50:11.717Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'constituents', 'coordination', 'structures' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] RNR structures do not create new constituents despite apparent coordination of strings.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-08T22:48:55.984Z",
    "type": "틀린문장 고쳐쓰기",
@@ -295,76 +347,6 @@
     ],
     "answer": 1,
     "explanation": "밑줄 친 부분은 'Violence and fatalities inevitably follow the act of initiating armed conflict.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘primary causes(주된 원인)’가 아니라 ‘자연스러운 결과(자동으로 따라오는 결과)’라는 뜻의 ‘corollary’를 ‘원인’으로 오해했음. 지문에서 ‘corollary’는 ‘~의 결과’로 설명되어 있음. → 처방: ‘corollary’의 뜻을 ‘결과’로 정확히 기억하고, ‘원인’과 혼동하지 않도록 문제에서 ‘~의 결과’라는 표현을 찾기.\n③ 진단: ‘primary causes(주된 원인)’와 ‘any war declaration(어떤 전쟁 선언)’을 잘못 연결했음. ‘corollary’는 ‘결과’이지 ‘원인’이 아님. 또한 ‘any declaration of war(전쟁 선언)’ 전체가 ‘corollary’의 대상임. → 처방: ‘corollary’의 뜻을 ‘결과’로 떠올리고, ‘~의 결과’라는 구절을 문제에서 찾아 연결하기.\n④ 진단: ‘War(전쟁)’이 ‘declarations of bloodshed and death(피의 선언)’를 일으킨다고 뒤집어 해석했음. 지문에서 ‘corollary’는 ‘선언의 결과’이지 ‘전쟁의 결과’가 아님. → 처방: ‘corollary’의 뜻을 ‘A 의 결과’로 기억하고, 문제에서 ‘선언’이라는 단어를 찾은 뒤 ‘선언의 결과’로 해석하기.\n⑤ 진단: ‘bloodshed and death’가 ‘corollaries’라는 단어를 ‘문자 그대로 같다’고 오해했음. ‘corollary’는 ‘결과’라는 뜻이지 같은 단어라는 뜻이 아님. → 처방: ‘corollary’를 ‘결과’라는 뜻으로 이해하고, 문제에서 ‘~의 결과’라는 의미를 찾은 뒤 ‘bloodshed and death’는 그 결과의 예시임을 기억하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T17:51:06.492Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "어휘는 개인의 지적 능력과 직결되는 핵심 요소로 평가받는다.",
-     "어휘는 개인이 알고 있는 단어들로만 구성된다는 점에서 제한적이다.",
-     "서로 다른 언어의 어휘 구조는 공통적인 특성을 대부분 공유한다.",
-     "어휘는 개인이 평소 사용하지 않는 단어들도 자연스럽게 포함한다.",
-     "어휘는 특정 언어에서 통용되거나 개인이 습득한 단어들의 집합이다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'A vocabulary is a set of words used in a particular language or known to an individual.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘개인의 지적 능력과 직결되는 핵심 요소’라는 표현은 지문에 전혀 언급되지 않았으며, 어휘가 ‘개인의 지적 능력’과 ‘직결’된다는 근거가 없다. → 처방: 지문에서 ‘어휘’를 ‘특정 언어에서 통용되거나 개인이 습득한 단어들의 집합’으로 설명했으므로, 그 의미를 정확히 파악한 후 선지를 고를 것.\n② 진단: ‘개인이 알고 있는 단어들로만 구성된다는 점에서 제한적’이라는 표현은 지문에 없으며, 어휘가 ‘개인이 알고 있는 단어들’로만 한정되지 않음을 알 수 있다. → 처방: 지문의 ‘어휘’를 ‘특정 언어에서 통용되거나 개인이 습득한 단어들의 집합’으로 이해한 후, ‘집합’이란 개념이 개인의 사용 여부와 무관함을 기억할 것.\n③ 진단: ‘서로 다른 언어의 어휘 구조는 공통적인 특성을 대부분 공유한다’라는 표현은 지문에 전혀 언급되지 않았으며, 어휘의 ‘구조’나 ‘공통 특성’에 대한 설명이 없다. → 처방: 지문에서 ‘어휘’를 ‘특정 언어에서 통용되거나 개인이 습득한 단어들의 집합’으로만 정의했으므로, 그 의미를 벗어나지 않도록 주의할 것.\n④ 진단: ‘개인이 평소 사용하지 않는 단어들도 자연스럽게 포함한다’라는 표현은 지문의 ‘개인이 습득한 단어들’이라는 부분만 보고 ‘사용하지 않는 단어’를 연상한 오해로 보임. → 처방: ‘개인이 습득한 단어들’이란 ‘알고 있는 단어들’을 뜻함을 기억하고, ‘습득’이란 개념이 ‘사용 여부’와는 무관함을 명확히 구분할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A vocabulary is a set of words used in a particular language or known to an individual.]"
-   }
-  },
-  {
-   "ts": "2026-08-08T16:54:54.347Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.63,
-    "D": -0.17,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.17)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① to make afraid 3.\n② *Reminder: Record answers on a sheet of paper.\n③ REVIEW WORDS DEFINITIONS 1.\n④ WEEK 4 DAY 5 REVIEW Let’s see how many of the new words studied during the course of this week you remember.\n⑤ person of eighty 5.\n⑥ Incidentally, try to keep a record of the many times you find your new words in magazines, newspapers, and books.\n⑦ Before you knew the meanings of those words you probably skipped right over them.\n⑧ In the following quiz, match the best possible definition with the word you have studied.\n⑨ frantic outburst 4.",
-    "choices": [
-     "④-⑨-⑧-⑤-②-⑦-③-⑥-①",
-     "④-⑥-⑦-⑧-②-③-①-⑤-⑨",
-     "④-⑥-⑦-⑧-②-①-③-⑨-⑤",
-     "⑥-④-⑦-⑧-②-③-①-⑨-⑤",
-     "④-⑥-⑦-⑧-②-③-①-⑨-⑤"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ④-⑥-⑦-⑧-②-③-①-⑨-⑤. 흐름: ④ → ⑥ → ⑦ → ⑧ → ② → ③ → ① → ⑨ → ⑤ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ④(리뷰 시작) 다음에 ⑨(단어 뜻 맞추기) → ⑧(퀴즈 지시) → ②(기록 지시) → ③(단어 뜻 다시 보기) → ①(정의 1) → ⑤(정의 5) → ⑦(이전 상태 설명)이지만, ⑤와 ⑦의 순서가 바뀌어 있음. 학생은 '단어 뜻 맞추기'와 '퀴즈 지시'의 순서를 혼동한 듯. → 처방: 퀴즈 지시(⑧) 다음에 기록 지시(②)가 오는지 확인하고, 그 후에 단어 뜻 다시 보기(③)로 넘어가야 함을 기억할 것.\n② 진단: ④(리뷰 시작) 다음에 ⑥(단어 찾기 기록) → ⑦(이전 상태) → ⑧(퀴즈) → ②(기록) → ③(단어 뜻) → ①(정의 1) → ⑨(정의 4)이지만, ⑨가 ⑤보다 먼저 오고 있음. 학생은 '정의 4'와 '정의 5'의 순서를 혼동한 듯. → 처방: 정의 번호가 작은 것(①, ③, ⑤, ⑨ 순서)에서 큰 순서로 배열되는지 확인할 것.\n③ 진단: ④(리뷰 시작) 다음에 ⑥(단어 찾기 기록) → ⑦(이전 상태) → ⑧(퀴즈) → ②(기록) → ①(정의 1) → ③(단어 뜻) → ⑨(정의 4) → ⑤(정의 5)이지만, ①과 ③의 순서가 바뀌어 있음. 학생은 '단어 뜻 다시 보기'와 '정의 1'의 순서를 혼동한 듯. → 처방: 퀴즈 지시(⑧) 다음에 기록 지시(②)가 오고, 그 후에 단어 뜻 다시 보기(③)와 정의(①, ⑤, ⑨)가 순서대로 오는지 확인할 것.\n④ 진단: ⑥(단어 찾기 기록)이 ④(리뷰 시작)보다 먼저 오고, ⑦(이전 상태) → ⑧(퀴즈) → ②(기록) → ③(단어 뜻) → ①(정의 1) → ⑨(정의 4) → ⑤(정의 5)로 이어지지만, ⑥이 맨 앞에 오면 흐름이 깨짐. 학생은 '리뷰 시작'과 '단어 찾기 기록'의 순서를 혼동한 듯. → 처방: 글의 흐름은 '리뷰 시작(④)' → '단어 찾기 기록(⑥)' 순서이므로, 맨 처음에 오는 문장이 리뷰 시작인지 확인할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
