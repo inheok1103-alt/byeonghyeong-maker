@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T20:52:09.408Z",
+ "updated": "2026-08-08T21:50:16.312Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T21:49:44.918Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'or' 구문에서 'unreal' 같은 형용사가 'looks'와 결합할 때 'too'가 아닌 'to'가 오류로 자주 나타나며, 'runs'와 같은 단수 동사가 'systems' 복수 명사와 결합하는 오류도 빈번하다. 또한 'In fact'와 같은 구가 문장 중간에서 쉼표 없이 사용되는 경우가 많다.",
+   "rule": "'or' 구문에서 형용사가 'looks'와 결합할 경우 'too'를 사용해야 하며, 복수 명사와 동사의 수 일치를 반드시 확인하라. 또한 'In fact'와 같은 구는 문장 중간에서 쉼표로 구분되어야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T20:51:00.601Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'and' 구문에서 동사 일치 오류가 빈번하며, 병렬 구조에서 동사 형태가 생략되거나 부정형이 중복되는 경향이 있다. 또한 주어-동사 일치와 시제 일치가 문맥적으로 혼동되는 경우가 많다.",
    "rule": "'A and B' 구조에서 B 동사의 형태가 A와 일치하도록 출제하며, 특히 병렬 구조에서 동사 생략이나 부정형 오류를 유도하는 문장을 구성한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-04T03:48:31.019Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 '명사 + 전치사 + 명사' 패턴(예: 'between two', 'from every subject')이 빈번하며, 특히 관사 생략 오류가 다수 관찰된다. 또한 대문자 오용(예: 'SOME LUCE POINTS')과 시제 혼동(예: 'When'의 대문자 오용)도 특징적이다.",
-   "rule": "원서 코퍼스 패턴을 반영하여, '명사 + 전치사 + 명사' 구문에서 관사 생략 오류를 의도적으로 삽입하거나, 대문자 오용(예: 'When' → 'when')과 시제 혼동(예: 과거시제 동사 뒤 'to' 생략) 문제를 변형문제에 포함시킨다.",
    "sample": [
     "old english",
     "university press",

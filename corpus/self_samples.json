@@ -1,6 +1,91 @@
 {
- "updated": "2026-08-08T20:52:09.412Z",
+ "updated": "2026-08-08T21:50:16.317Z",
  "samples": [
+  {
+   "ts": "2026-08-08T21:47:44.687Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영 보문소의 존재를 부정하려고",
+     "영 보문소가 유한 종속절에만 나타난다고 주장하려고",
+     "모든 보문소 삭제가 영로 처리된다고 주장하려고",
+     "영 보문소의 존재 조건을 구체화하려고",
+     "영 보문소의 존재를 주장하려고"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'to argue that null complementisers exist in both finite embedded and main clauses.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘영 보문소의 존재를 부정하려고’라는 선지를 고른 학생은 지문에서 ‘null C constituent’를 ‘존재하지 않는다고’ 오해했거나, ‘seemingly complementiserless’가 ‘없음을 직접적으로 말하는 것’으로 읽은 듯하다. 지문은 오히려 ‘null C constituent’를 주장하며 그 존재를 인정하고 있다. → 처방: 지문에서 ‘null C constituent’를 언급하는 부분을 다시 읽고, ‘존재’를 부정하는지 확인할지 스스로에게 질문해 보세요. 예를 들어 ‘~는 ~를 주장한다’가 긍정인지 부정인지 확인하는 연습을 하세요.\n② 진단: ‘유한 종속절에만 나타난다고 주장하려고’라는 선지를 고른 학생은 지문의 ‘so far in this section’ 부분에서 ‘지금까지는 유한 종속절에만 적용됐지만, 이제 주절에도 적용된다’는 내용을 놓쳤거나, ‘extended’라는 단어를 ‘제한적’이라는 뜻으로 오해한 듯하다. → 처방: ‘extended’의 의미를 정확히 확인하고, 지문에서 ‘main clauses’로 확장된다는 설명을 다시 읽어 보세요. ‘확장’의 의미를 명확히 이해하는 연습을 하세요.\n③ 진단: ‘모든 보문소 삭제가 영로 처리된다고 주장하려고’라는 선지를 고른 학생은 ‘complementiser deletion’이 ‘모든 경우에 영으로 처리된다’는 뜻으로 오해한 듯하다. 지문은 ‘cannot be given a null spellout’이라는 조건부 표현을 사용하며, ‘remains shrouded in mystery’라고 uncertainty 를 강조하고 있다. → 처방: 조건부 표현(‘cannot’, ‘might suggest’, ‘remains’)을 주의 깊게 읽고, ‘~하지 못한다’ 또는 ‘~일 수도 있다’가 ‘무조건 ~이다’를 뜻하지 않는다는 점을 기억하세요.\n④ 진단: ‘영 보문소의 존재 조건을 구체화하려고’라는 선지를 고른 학생은 지문의 ‘precise how, when and why’라는 질문에 주목했지만, 정작 글의 ‘목적’은 ‘존재를 주장하는 것’이라는 점을 놓친 듯하다. ‘목적’은 글쓴이가 ‘무엇을 하기 위해’ 글을 썼는지를 묻는 것이지, ‘조건’을 구체화하는 것이 아니다. → 처방: ‘목적’을 묻는 문제에서는 ‘주장’, ‘제시’, ‘설명’ 등 글쓴이의 행위를 확인하세요. ‘조건’을 묻는 문제가 아니라면, ‘구체화’ 같은 단어가 포함된 선지는 일단 의심해 보세요.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to argue that null complementisers exist in both finite embedded and main clauses.]"
+   }
+  },
+  {
+   "ts": "2026-08-08T21:48:17.371Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "In (57), the adjectival predicate ⓐ<u>clear asymmetrically c-commands</u> but is not immediately adjacent to that (the two being separated by the intervening prepositional phrase to everyone), and so ⓑ<u>that cannot be given</u> a null spellout. In (58), that is neither c-commanded by nor immediately adjacent to clear, so that once again that cannot be given a null spellout. The adjacency requirement might suggest that ⓒ<u>complementiser deletion involves</u> cliticisation of the null complementiser onto the head immediately above it – but precisely how, when and why complementisers receive a null spellout ⓓ<u>remains shrouded in mystery</u>. So far in this section, we have argued that seemingly complementiserless finite declarative complement clauses ⓔ<u>are introduced by a null C constituent</u> (here analysed as a null counterpart of the complementiser that). However, the null C analysis can be extended from finite embedded clauses to main (= root = principal = independent) clauses like those produced by speakers A and B in (59) below:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [관계사] ⓑ: 'that cannot be given' → 'it cannot be given' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-08T21:49:25.806Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어에서 무표지 보문소는 주절과 종속절의 인접성 조건을 반드시 따라야만 실현된다.",
+     "영어에서 무표지 보문소는 주절에서만 제한적으로 실현될 수 있다.",
+     "모든 언어에서 무표지 보문소는 주절과 종속절에 자유롭게 나타나며, 그 이유가 이미 밝혀졌다.",
+     "영어에서 무표지 보문소는 보문소와 인접한 명사구에만 국한되어 실현된다.",
+     "영어에서 무표지 보문소는 주절과 종속절 모두에서 나타날 수 있다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Null complementisers can appear in both finite embedded and main clauses.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 무표지 보문소가 주절과 종속절의 인접성 조건을 '반드시' 따라야만 실현된다는 내용은 없으며, 오히려 인접성 조건이 '보장되지 않을' 때도 무표지 보문소가 실현되지 않는다는 점(예: (57), (58))을 강조한다. 학생은 '반드시'라는 절대적 조건을 오해하여 선택한 듯하다. → 처방: 지문에서 '반드시'라는 강제 조건이 아니라 '인접성 조건이 지켜지지 않으면 실현되지 않는다'는 상대적 조건임을 확인하고, 선지의 절대적 표현('반드시')에 주의하라.\n② 진단: 지문은 무표지 보문소가 주절에서 '제한적'으로 실현된다는 내용이 아니라, 주절과 종속절 모두에서 나타날 수 있음을 보인다고 설명한다. 학생은 '제한적'이라는 표현에 주목했으나, 지문은 오히려 주절과 종속절 모두에서 가능함을 강조한다. → 처방: 지문에서 '제한적'이라는 단어의 의미를 오해하지 말고, 보문소가 '둘 다'에서 나타날 수 있음을 정확히 파악하라.\n③ 진단: 지문은 영어에 국한된 현상을 다루며, '모든 언어'라는 포괄적 표현은 지문에 없으며, 이유에 대한 설명도 '미상'이라고 명시되어 있다. 학생은 지문의 범위를 과도하게 확장하여 오독한 듯하다. → 처방: 지문의 범위를 정확히 파악하고, '모든 언어'라는 과도한 일반화에 주의하라. 지문은 영어에만 초점을 맞추고 있음을 기억하라.\n④ 진단: 지문은 무표지 보문소가 보문소와 인접한 명사구에만 국한되어 실현된다는 내용이 아니라, 보문소와 인접한 '머리'(head)에 클리티시제이션될 가능성이 있음을 언급한다. 학생은 '명사구'라는 구체적 표현을 오해하여 선택한 듯하다. → 처방: 지문에서 '머리'(head)와 '클리티시제이션'이라는 언어학적 용어의 의미를 정확히 이해하고, '명사구'라는 구체적 표현에 속지 않도록 하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Null complementisers can appear in both finite embedded and main clauses.]"
+   }
+  },
   {
    "ts": "2026-08-08T19:46:04.239Z",
    "type": "심경변화",
@@ -277,78 +362,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] parachute — 문단의 논지상 이 자리에는 'parachute'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T14:55:28.601Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "INTRODUCTION 1.3.2 Possible worlds, extension and intension The term possible worlds is used in semantics for hypothetical ways reality might be or might have been. The way things actually are is ⓐ<u>the actual world</u>, and ⓑ<u>it is included</u> in the possible worlds because it is obviously a possible reality. A possible world different from the actual world is ⓒ<u>a whole alternative universe</u>, not just an alternative version of Planet Earth. There are infinitely many possible worlds. Many possible worlds have dogs in them, ⓓ<u>which the word dog applies to</u>. We can collect together all the dogs in the real world ⓔ<u>forming the set</u> of all real dogs – this set is the extension of dog. To get closer to what we think of as the ‘real meaning’ of the word dog we need the intension, which is the set of all dogs in all possible worlds. This comprises the full possible range of doghood. So there are two kinds of denotation for predicates: (12) word (noun): dog",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓔ: 'forming the set' → 'to form the set' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T14:56:14.078Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 11 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'alternative', 'infinitely', 'universes' / 9~13단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Possible worlds include the actual world and infinitely many alternative universes.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 9~13단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-08T13:14:16.041Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "T VP Af [Pres-Tns] PRN V' [u-Pers] there [u-Num] [3-Pers] V QP [EPP] remain <u>every hope of finding survivors</u> [3-Pers, Sg-Num, u-Case] (Note that expletive it could not be used in place of there here, because the Inactivity Condition would prevent it from being merged with a V-bar like that in (i) which contains a constituent with an active case feature, such as the QP every hope of ﬁnding survivors.) The afﬁxal T constituent serves as a probe because it is the highest head in the structure, and because its uninterpretable person/number features make it active. Consequently, T searches for active goals, locating the expletive pronoun there, which is active by virtue of its uninterpretable person feature. However, since there carries no number feature and so cannot value the number feature on T, the T head probes further until it locates the (person-and-number-speciﬁed) QP every hope of ﬁnding",
-    "choices": [
-     "The search team occasionally hopes to find survivors during their efforts.",
-     "The possibility of finding survivors is what occasionally keeps the search efforts from ending.",
-     "The phrase means exactly that no one is expected to survive.",
-     "The mere possibility of locating the missing people is the only remaining factor that keeps the search efforts alive.",
-     "Finding survivors is the result of the ongoing search efforts."
-    ],
-    "answer": 4,
-    "explanation": "밑줄 친 부분은 'The mere possibility of locating the missing people is the only remaining factor that keeps the search efforts alive.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘every hope of finding survivors’를 ‘occasional hope during efforts’로 오독했는데, 지문은 ‘가능성’이 ‘계속되는 탐색을 유지하는 유일한 요소’라는 뜻임을 명시하고 있음. → 처방: ‘every hope of finding survivors’를 ‘가능성’이 ‘탐색을 지속시키는 요소’로 해석해야 함을 기억하고, 선지 속 ‘occasional’이나 ‘during efforts’를 지문과 연결하지 않도록 주의하기.\n② 진단: ‘possibility’를 ‘가능성’으로 읽지 않고 ‘가능성 때문에 탐색이 끝나지 않는다’는 의미를 ‘가능성이 탐색을 끝내지 못하게 한다’로 혼동했음. 지문은 ‘가능성’이 ‘탐색을 유지하는 유일한 요소’라고 설명함. → 처방: ‘possibility’를 ‘가능성’으로 정확히 이해하고, ‘keep ~ from ending’를 ‘~가 끝나지 않도록 유지하다’로 해석하는 연습을 하기.\n③ 진단: ‘no one is expected to survive’를 ‘아무도 살아남을 가능성이 없다’로 오해했는데, 지문은 ‘생존자 발견 가능성’이 ‘탐색을 지속시키는 요소’라고 설명함. → 처방: ‘no one is expected to survive’를 ‘생존자 발견 가능성이 없다’로 오해하지 말고, 지문의 핵심 의미를 ‘생존자 발견 가능성’이 ‘탐색을 유지하는 요소’라는 점에 집중하기.\n⑤ 진단: ‘Finding survivors’를 ‘탐색의 결과’로 오독했는데, 지문은 ‘생존자 발견 가능성’이 ‘탐색을 지속시키는 요소’라고 설명함. → 처방: ‘Finding survivors’를 ‘결과’가 아닌 ‘가능성’이 ‘탐색을 유지하는 요소’라는 지문의 의미를 정확히 파악하고, 선지의 ‘result’를 지문과 연결하지 않도록 주의하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
