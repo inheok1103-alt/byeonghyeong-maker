@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T19:08:16.743Z",
+ "updated": "2026-08-08T19:47:19.385Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T19:46:53.007Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'a/an' 생략 오류는 명사구 내 관사 생략 패턴과 관련이 깊으며, 특히 'thing'과 같은 추상명사에서 두드러진다. 또한 비교구조에서 'than'을 'that'으로 혼용하는 오류가 빈번하다.",
+   "rule": "'a/an'이 필요한 추상명사(thing, knowledge 등) 앞에는 항상 관사를 붙이고, 비교구조에서는 'than'을 'that'으로 대체하지 않도록 검토하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T19:07:49.271Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "과거시제 동사와 현재시제 동사가 혼용된 문장에서 시제 일관성이 깨지며 오류가 발생하는 패턴을 확인했다. 또한 'time'과 같은 불가산명사가 'many'로 수식되어 발생하는 오류도 반복된다.",
    "rule": "과거시제 문장에서는 동사 시제를 일관되게 과거형으로 통일하고, 불가산명사(예: time, money)는 'much/a lot of'로 수식하도록 지도한다. 예: 'They spent much time on computers, so they did not know how to communicate properly.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-03T21:33:19.052Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "동사(understand/work hard)와 목적어(idea/out of trip)가 병렬 구조로 연결될 때, 두 번째 동사의 목적어는 생략되지 않고 반드시 명시되어야 한다. 또한, 'kind of studies'는 복수형으로 사용되어야 한다.",
-   "rule": "병렬 구조에서 두 번째 동사의 목적어는 반드시 명시하고, 'kind of + 복수명사' 형태로만 사용하며, 'the ones'는 기술적 형용사 뒤에 오는 경우에만 사용해야 한다.",
    "sample": [
     "old english",
     "university press",
