@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-08T21:50:16.317Z",
+ "updated": "2026-08-08T22:50:24.696Z",
  "samples": [
+  {
+   "ts": "2026-08-08T22:48:55.984Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "The resulting structure satisfies the θ-criterion (which requires each argument to be assigned a single θ-role, and each θ-role to be assigned to a single argument), in that ⓐ<u>he is the EXPERIENCER arguments</u> of want, the bracketed CP in (81) is the THEME complement of want, ⓑ<u>PRO is the AGENT argument</u> of scare, and ⓒ<u>them the EXPERIENCER argument</u> of scare. The analysis of control predicates presented here differs from that presented in chapter 3 in that it assumes that ⓓ<u>the PRO subject of a control infinitive</u> like that bracketed in (79b) He does want to scare them is merged in spec-V, and not (as assumed in chapter 3) in spec-T. The requirement for PRO to be generated in spec-V follows from the VP-Internal Subject Hypothesis and the Predicate-Internal ThetaMarking Hypothesis which posit that arguments are generated and theta-marked internally to a projection of their predicate, so that ⓔ<u>PRO (by virtue of being the agent argument</u> of scare) is generated as the specifier",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓐ: 'he is the EXPERIENCER arguments' → 'he is the EXPERIENCER argument' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-08T22:49:44.437Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Refining Theta-Role Assignment and PRO Subject Placement in Control Predicates",
+     "Theta-Role Assignments in Control Predicates Dictate PRO Subject Placement",
+     "Refining Theta-Role Assignment: a Single Adjustment in Control Predicates",
+     "All Theta-Role Assignments and PRO Subject Placements in Linguistic Theories",
+     "Theta-Role Assignments and PRO Subject Placements Often Require Refinement"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The analysis refines -role assignment and PRO subject placement in control predicates.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 역할이 PRO 의 위치(구조)를 '결정짓는다'고 오해하여, PRO 의 생성 위치를 '역할 배정의 결과'로만 봄. 지문은 PRO 의 위치가 역할 배정의 '원인'이 아니라 '결과'라는 점을 명시적으로 설명하지 않음에도, 선지 ②는 이를 과장해 표현. → 처방: 역할 배정과 PRO 의 위치는 서로 영향을 주지만, 지문은 PRO 가 '역할을 받기 위해' spec-V 에 머지된다는 점을 강조하므로, '결정짓는다'는 표현은 지나치다는 점을 기억할 것.\n③ 진단: 역할 배정의 '정제'가 '단 하나의 조절'에만 국한된다고 오독. 지문은 PRO 의 생성 위치를 spec-V 로 바꾸는 것이 '역할 배정의 한 부분'임을 설명하지만, '단 하나의 조절'로 한정 지어 해석하여 범위를 좁힘. → 처방: 지문에서 언급된 '정제'는 PRO 의 생성 위치를 바꾸는 '전체적인 분석 틀'의 변화임을 인식하고, '단 하나의 조절'이라는 표현은 지문의 범위를 벗어난다는 점을 유념할 것.\n④ 진단: 역할 배정과 PRO 의 위치를 '모든' 이론적 맥락에서 다루는 것으로 오해. 지문은 'control predicates'에 한정된 분석을 제시하지만, 선지 ④는 '언어 이론 전반'으로 범위를 확장하여 과장된 표현을 사용. → 처방: 지문의 주제는 'control predicates'에 국한된다는 점을 분명히 하고, '모든'이라는 표현은 지문의 범위를 벗어난다는 점을 기억할 것.\n⑤ 진단: 역할 배정과 PRO 의 위치가 '자주' 정제되어야 한다고 오독. 지문은 'control predicates'의 분석에서 발생한 '특정한 변화'를 설명하지만, 선지 ⑤는 이를 '자주'라는 보편적 표현으로 확대해 해석. → 처방: 지문은 '특정한 분석 틀의 변화'를 설명하는 것이므로, '자주'라는 표현은 지문의 맥락과 맞지 않다는 점을 유념할 것.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The analysis refines -role assignment and PRO subject placement in control predicates.**]"
+   }
+  },
   {
    "ts": "2026-08-08T21:47:44.687Z",
    "type": "목적",
@@ -312,56 +365,6 @@
     ],
     "answer": 5,
     "explanation": "정답 배열은 ④-⑥-⑦-⑧-②-③-①-⑨-⑤. 흐름: ④ → ⑥ → ⑦ → ⑧ → ② → ③ → ① → ⑨ → ⑤ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ④(리뷰 시작) 다음에 ⑨(단어 뜻 맞추기) → ⑧(퀴즈 지시) → ②(기록 지시) → ③(단어 뜻 다시 보기) → ①(정의 1) → ⑤(정의 5) → ⑦(이전 상태 설명)이지만, ⑤와 ⑦의 순서가 바뀌어 있음. 학생은 '단어 뜻 맞추기'와 '퀴즈 지시'의 순서를 혼동한 듯. → 처방: 퀴즈 지시(⑧) 다음에 기록 지시(②)가 오는지 확인하고, 그 후에 단어 뜻 다시 보기(③)로 넘어가야 함을 기억할 것.\n② 진단: ④(리뷰 시작) 다음에 ⑥(단어 찾기 기록) → ⑦(이전 상태) → ⑧(퀴즈) → ②(기록) → ③(단어 뜻) → ①(정의 1) → ⑨(정의 4)이지만, ⑨가 ⑤보다 먼저 오고 있음. 학생은 '정의 4'와 '정의 5'의 순서를 혼동한 듯. → 처방: 정의 번호가 작은 것(①, ③, ⑤, ⑨ 순서)에서 큰 순서로 배열되는지 확인할 것.\n③ 진단: ④(리뷰 시작) 다음에 ⑥(단어 찾기 기록) → ⑦(이전 상태) → ⑧(퀴즈) → ②(기록) → ①(정의 1) → ③(단어 뜻) → ⑨(정의 4) → ⑤(정의 5)이지만, ①과 ③의 순서가 바뀌어 있음. 학생은 '단어 뜻 다시 보기'와 '정의 1'의 순서를 혼동한 듯. → 처방: 퀴즈 지시(⑧) 다음에 기록 지시(②)가 오고, 그 후에 단어 뜻 다시 보기(③)와 정의(①, ⑤, ⑨)가 순서대로 오는지 확인할 것.\n④ 진단: ⑥(단어 찾기 기록)이 ④(리뷰 시작)보다 먼저 오고, ⑦(이전 상태) → ⑧(퀴즈) → ②(기록) → ③(단어 뜻) → ①(정의 1) → ⑨(정의 4) → ⑤(정의 5)로 이어지지만, ⑥이 맨 앞에 오면 흐름이 깨짐. 학생은 '리뷰 시작'과 '단어 찾기 기록'의 순서를 혼동한 듯. → 처방: 글의 흐름은 '리뷰 시작(④)' → '단어 찾기 기록(⑥)' 순서이므로, 맨 처음에 오는 문장이 리뷰 시작인지 확인할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T15:48:10.709Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.67,
-    "distractorEff": 100,
-    "pass": true,
-    "flags": []
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "단어는 철저히 검토하여 오류를 예방해야 한다",
-     "단어는 철저히 점검하면 오류를 줄일 수 있다",
-     "모든 단어는 사용 전에 완벽한 의미를 확정해야 한다",
-     "단어는 때때로 철저히 검토하여 의미를 분명히 해야 한다",
-     "단어는 그 의미를 면밀하고 완전하게 탐색하여야 한다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Vocabulary should be examined exhaustively to ensure precision and completeness.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘철저히 검토하여 오류를 예방해야 한다’는 뜻으로 ‘exhaustive’의 의미를 ‘오류 예방’에 한정해 오독. 지문은 ‘exhaustively’의 의미가 ‘철저히 검토’ 자체임을 강조하며 ‘결정의 되돌릴 수 없음’을 예시로 들음. → 처방: ‘exhaustive’의 의미를 ‘철저히 검토’ 자체로만 기억하고, ‘오류 예방’이라는 목적은 제외하고 풀기.\n② 진단: ‘단어는 철저히 점검하면 오류를 줄일 수 있다’는 뜻으로 ‘exhaustive’의 의미를 ‘오류 감소’에 한정해 오독. 지문은 ‘exhaustive’의 의미가 ‘철저히 검토’ 자체임을 강조하며 ‘결정의 되돌릴 수 없음’을 예시로 들음. → 처방: ‘exhaustive’의 의미를 ‘철저히 검토’ 자체로만 기억하고, ‘오류 감소’라는 결과는 제외하고 풀기.\n③ 진단: ‘모든 단어는 사용 전에 완벽한 의미를 확정해야 한다’는 뜻으로 ‘exhaustive’의 의미를 ‘완벽한 의미 확정’에 한정해 오독. 지문은 ‘exhaustive’의 의미가 ‘철저히 검토’ 자체임을 강조하며 ‘결정의 되돌릴 수 없음’을 예시로 들음. → 처방: ‘exhaustive’의 의미를 ‘철저히 검토’ 자체로만 기억하고, ‘완벽한 의미 확정’이라는 결과는 제외하고 풀기.\n④ 진단: ‘단어는 때때로 철저히 검토하여 의미를 분명히 해야 한다’는 뜻으로 ‘exhaustive’의 의미를 ‘때때로’에 한정해 오독. 지문은 ‘exhaustive’의 의미가 ‘철저히 검토’를 강조하며 ‘결정의 되돌릴 수 없음’을 예시로 들음. → 처방: ‘exhaustive’의 의미를 ‘철저히 검토’를 강조하는 뜻으로만 기억하고, ‘때때로’라는 조건은 제외하고 풀기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Vocabulary should be examined exhaustively to ensure precision and completeness.]"
-   }
-  },
-  {
-   "ts": "2026-08-08T15:49:39.965Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "EXHAUSTIVE (ig ZAWS tiv) adj thorough; rigorous; complete; painstaking • Before you use a p________, you should examine it exhaustively for defects. Once you jump, your decision is irrevocable. EXHORT (ig ZORT) v to urge strongly; to give a serious warning to • The coach used her bullhorn to exhort us to try harder. • The fearful forest ranger exhorted us not to go into the cave, but we did so anyway and became lost in the center of the earth. The adjective is hortatory (HOR tuh tor ee). Quick Quiz #40 Match each word in the first column with its definition in the second column. Check your answers here. 1. esoteric a. peculiar 2. espouse b. make worse 3. ethereal c. extremely demanding 4. euphemism d. raise high 5. evanescent e. inoffensive substitute term 6. exacerbate f. urge strongly 7. exacting g. annoy thoroughly 8. exalt h. heavenly 9. exasperate i. advocate 10. exemplify j. fleeting 11. exhaustive k. illustrate by example 12. exhort l. thorough",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] parachute — 문단의 논지상 이 자리에는 'parachute'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
