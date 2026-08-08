@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T19:47:19.385Z",
+ "updated": "2026-08-08T20:52:09.408Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T20:51:00.601Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "원서 코퍼스에서 'purpose of + 동명사'가 'purpose of + 명사'보다 압도적으로 빈도가 높다. 또한 'half than'은 오류로, 'half the' 또는 'half of the'가 표준 연어다.",
+   "rule": "원서 코퍼스 연어 패턴을 반영하여, 'purpose of + 동명사'와 'half the + 명사'를 정답으로 설정하고, 오답에는 'purpose of + 명사'와 'half than + 명사'를 삽입하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T19:46:53.007Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 '명사 + 전치사 + 명사' 패턴(예: 'between two', 'from every subject')이 빈번하며, 특히 관사 생략 오류가 다수 관찰된다. 또한 대문자 오용(예: 'SOME LUCE POINTS')과 시제 혼동(예: 'When'의 대문자 오용)도 특징적이다.",
    "rule": "원서 코퍼스 패턴을 반영하여, '명사 + 전치사 + 명사' 구문에서 관사 생략 오류를 의도적으로 삽입하거나, 대문자 오용(예: 'When' → 'when')과 시제 혼동(예: 과거시제 동사 뒤 'to' 생략) 문제를 변형문제에 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-03T23:39:59.213Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거시제 동사와 현재시제 동사가 혼용된 문장에서 시제 일관성이 깨지며 오류가 발생하는 패턴을 확인했다. 또한 'time'과 같은 불가산명사가 'many'로 수식되어 발생하는 오류도 반복된다.",
-   "rule": "과거시제 문장에서는 동사 시제를 일관되게 과거형으로 통일하고, 불가산명사(예: time, money)는 'much/a lot of'로 수식하도록 지도한다. 예: 'They spent much time on computers, so they did not know how to communicate properly.'",
    "sample": [
     "old english",
     "university press",
