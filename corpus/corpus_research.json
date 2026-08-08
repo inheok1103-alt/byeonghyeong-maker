@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T06:02:19.438Z",
+ "updated": "2026-08-08T07:21:08.185Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T07:20:40.684Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'a/an'의 오용이 빈번하며, 특히 정보성 명사(uncountable noun) 앞에 관사가 생략되는 경향이 강하다. 또한 'own'의 소유격 사용이 'our'로 대체되어야 하는 경우가 많다.",
+   "rule": "정보성 명사(예: information, advice, knowledge) 앞에는 관사를 생략하고, 소유격 'own'은 'our/your/their'로 대체하여 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T06:01:53.441Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 연어 패턴에서 'there is/are' 구문과 'and' 병렬 구조가 빈번히 등장하며, 특히 'there is/are'의 단수/복수 오류와 'and' 병렬의 문법적 일관성 결여가 두드러진다.",
    "rule": "CEFR B1-B2 수준 내신 변형문제에서 'there is/are' 구문의 단수/복수 일치 오류와 'and'로 연결된 병렬 구조의 문법적 일관성(동사 형태, 품사 일치)을 검증하는 문항을 반드시 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-02T17:19:10.671Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'diverse other courses' → 'other diverse courses'로 재배열하는 패턴이 빈번하며, 'a number of'가 'diverse'와 같은 형용사와 결합할 때 어순 규칙이 적용된다. 또한 'the amount of'는 불가산 명사와 결합해야 하며, 'are'→'is'로 단수화하는 오류가 다수 관찰된다.",
-   "rule": "'a number of' 또는 'the amount of' 뒤에는 형용사(예: diverse, diverse other)가 오면 어순을 'other + diverse'로 고정하고, 'are'는 단수명사(예: amount) 뒤에서는 'is'로 반드시 통일하라.",
    "sample": [
     "old english",
     "university press",
