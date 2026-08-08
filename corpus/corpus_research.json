@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T09:57:52.478Z",
+ "updated": "2026-08-08T10:54:07.079Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T10:53:37.669Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거분사(working, reduced)나 수동태가 문맥상 능동의 의미를 지녀야 하는데, 이를 능동태로 대체하거나 관계사/수동태 구조로 재구성해야 한다. 또한, 문장 내 동사형태가 CEFR B1/B2 수준에서 요구하는 시제/태(예: 현재완료, 수동태, 관계사절)를 준수해야 한다.",
+   "rule": "CEFR B1/B2 수준의 문장에서는, 과거분사/수동태가 능동의 의미를 지닐 경우 능동태로 변환하거나 'that + 주어 + 동사원형' 또는 'be + 과거분사' 형태의 수동태로 재구성하여 문법적 오류를 방지하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T09:57:24.282Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'use'는 전치사 'from'이나 'for'와 결합해 재정적/기능적 관계를 명확히 하며, 'than' 뒤에는 비교 대상이 되는 명사구가 오는 패턴이 빈번하다.",
    "rule": "한국어 문장에서 '~을/를 사용하다'는 표현을 쓸 때, 'use' 다음에는 전치사 'from'(출처)나 'for'(목적)을 반드시 포함시켜 문맥을 구체화하라. (예: 'use money from people' → '사람들로부터 돈을 사용하다')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-02T22:12:49.720Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 실제 오류에서 'for example', 'furthermore' 등 접속사 다음에 오는 문장 구조가 단순하거나 불완전하다는 패턴이 반복된다. 또한 'have a reason that study'처럼 관계대명사 대신 'to부정사'가 필요한 경우가 많다.",
-   "rule": "CEFR A2-B1 수준 내신 변형문제에서는 접속사(예: for example, furthermore) 다음에 오는 문장이 완전한 문장 구조(주어+동사+목적어)를 갖추도록 오류를 삽입하거나, 'have a reason that + 동사원형'을 'have a reason to + 동사원형'으로 수정하는 오류를 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",
