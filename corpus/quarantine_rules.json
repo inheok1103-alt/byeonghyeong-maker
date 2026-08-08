@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-08T14:01:09.497Z",
+ "updated": "2026-08-08T14:56:42.132Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제에서 정답은 최대 1개로 제한하고, 발문은 원문 내용과 직접 일치하는지 여부를 명시적으로 묻되, 어법 오류가 아닌 의미·논리적 불일치 여부로 한정하며, 선지는 형태·길이·난이도를 통일하고 핵심 용어는 번역 용어 사전을 근거로 일관되게 표기하라.",
+   "src": "자가학습:혼합통합형",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-08T14:51:25.699Z"
+  },
+  {
+   "rule": "모든 문항은 반드시 정답과 오류 색출 이유를 포함한 완전한 답안을 제공하며, 발문 조건은 원지문을 필수적으로 포함해야 한다.",
+   "src": "자가학습:틀린문장 고쳐쓰기",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-08T14:55:10.074Z"
+  },
   {
    "rule": "모든 문항에서 빈칸 문장은 지문 핵심 단어(예: 'relentless enforcement')의 의미를 'wrong-doers'에 대한 '강제적 단속'으로 구체화하고, 선지 선택 근거를 명확히 하도록 재구성해야 한다.",
    "src": "자가학습:빈칸(어구)",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-01T18:14:50.923Z"
-  },
-  {
-   "rule": "모든 선지는 지문의 핵심 주제(개인의 자유와 공동체 신뢰의 결합)를 정확히 반영해야 하며, 'collective trust in humanity'는 'trust in the common man and his ability to resolve differences'로 구체화하여 지문의 뉘앙스를 충실히 담아야 한다.",
-   "src": "자가학습:주제",
-   "score": 80,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-01T18:15:29.134Z"
-  },
-  {
-   "rule": "모든 출제에서 조건(12단어, 모든 단어 사용)을 엄격히 준수하며 원문의 핵심 의미를 살리기 위해, 'should'를 'must'로 대체하거나 'without' 구문을 'without being ~ed'로 재구성하여 12단어 내 모든 단어를 포함하는 문장으로 작성할 것.",
-   "src": "자가학습:조건영작",
-   "score": 68,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-01T18:15:51.826Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
