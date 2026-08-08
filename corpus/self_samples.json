@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-07T23:52:23.323Z",
+ "updated": "2026-08-08T02:23:37.272Z",
  "samples": [
+  {
+   "ts": "2026-08-08T02:22:53.576Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: a)\n[영영풀이] (grammar) A word that modifies a noun or describes a noun’s referent.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] adjective (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-07T23:51:09.291Z",
    "type": "복합세트",
@@ -314,25 +333,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Scientists should avoid interrupting the verb-object connection in their sentences to communicate more effectively with laypeople.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 논지에서 어긋남· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Scientists should avoid interrupting the verb-object connection in their sentences to communicate more effectively with laypeople.]\n[오답 진단·처방]\n① 진단: ‘과학자들이 비전문가와 소통하지 못하는 이유’를 ‘문장 구조의 동사-목적어 연결 중단’으로만 좁혀 오해했다. 지문은 과학자들의 문장 스타일이 비인격적이고 객관적이라서 소통이 어렵다고 설명하는데, 이 오독은 그 원인을 문장 구조의 ‘연결 중단’으로만 한정지었다. → 처방: 지문에서 말한 ‘소통의 어려움’의 진짜 이유는 과학자들의 문장 스타일이 비인격적이고 객관적이라는 점임을 기억하고, 문장 구조의 ‘동사-목적어 연결’이 그 스타일을 만드는 한 요소라는 점을 떠올리자.\n② 진단: ‘소통을 위해 문장 구조의 동사-목적어 연결을 중단해야 한다’는 지문의 내용을 반대로 해석했다. 지문은 오히려 ‘연결을 유지하라’고 권장하는데, 이 선지는 그 반대 행동을 요구한다. → 처방: 지문의 핵심 메시지가 ‘연결을 유지하라’는 것이라는 점을 확실히 기억하고, 선지의 요구가 지문과 반대 방향인지 먼저 확인하자.\n③ 진단: ‘모든 과학자들이 ~해야 한다는 주장은 과장’이라는 말을 지문의 내용과 연결하지 못했다. 지문은 과학자들의 문장 스타일이 소통을 방해한다고 설명하는데, 이 선지는 그 주장을 ‘과장’으로 폄하하는 오독을 보였다. → 처방: 지문의 핵심 주장이 ‘과학자들의 문장 스타일이 소통을 방해한다’는 것임을 떠올리고, 그 주장이 ‘과장’이 아니라는 점을 확인하자.\n④ 진단: ‘과학자들이 동사-목적어 연결을 중단하지 말아야 한다’는 지문의 메시지와 완전히 반대되는 선지를 골랐다. 지문은 오히려 ‘연결을 유지하라’고 권장하는데, 이 선지는 그 권고를 부정하는 오독을 보였다. → 처방: 지문의 핵심 메시지가 ‘연결을 유지하라’는 것임을 분명히 기억하고, 선지의 요구가 그 메시지와 일치하는지 먼저 확인하자."
-   }
-  },
-  {
-   "ts": "2026-08-07T16:11:34.347Z",
-   "type": "혼합통합형",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 7,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
-    "passage": "Some scientists, because they write in a style that is impersonal and objective, do not easily communicate with laypeople. That because clause after the subject forces us to hold our mental breath until we reach the verb, do not easily communicate. Move the interruption to the beginning or end of its sentence, depending on whether it connects more closely to what precedes or follows it (note the since instead of because). ✓ Since some scientists write in a style that is impersonal and objective, they do not easily communicate with laypeople. This lack of communication damages . . . ✓ Some scientists do not easily communicate with laypeople because they write in a style that is impersonal and objective. It is a kind of style filled with passives and . . . We mind short interruptions less: ✓ Some scientists deliberately write in a style that is impersonal and objective. Avoid interrupting the verb-object connection. We also like to get past the verb to its object quickly. This sentence doesn’t let us do that:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
