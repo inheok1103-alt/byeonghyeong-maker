@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-08T08:05:34.933Z",
+ "updated": "2026-08-08T09:05:16.053Z",
  "samples": [
+  {
+   "ts": "2026-08-08T09:03:26.520Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.25,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.25)",
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "verbs that permit subject-controlled infinitives only when the object is animate",
+     "verbs that restrict infinitives as objects regardless of the subject's control",
+     "verbs allowing subject-controlled infinitives in object position",
+     "verbs that sometimes permit subject-controlled infinitives when the subject is inanimate",
+     "verbs permitting subject-controlled infinitives only in passive constructions"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Verbs like *recommend* do not allow infinitives as objects.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: 지문에서 'Group 3'의 동사들(begin, cease, continue, start, stop)은 '주어 통제의 to 부정사'를 허용한다고 설명하는데, 이 선지는 '대상이 살아 있는 경우에만'이라는 조건을 덧붙여 오독했음. 지문에는 그런 조건이 없음. → 처방: 지문을 다시 읽고, 동사들이 '주어 통제의 to 부정사'를 허용하는지 여부만 집중해서 확인할 것.\n② 진단: 이 선지는 'to 부정사를 객체로 삼을 때 주어 통제 여부를 제한한다'고 오해했는데, 지문은 대부분의 동사가 'to 부정사'와 '동명사'를 모두 허용한다고 설명하며, 몇몇 동사는 '동명사'만 허용한다고 덧붙임. '제한'이라는 표현이 잘못됨. → 처방: 지문의 '허용 여부'와 '제한 여부'를 정확히 구분해서 읽고, 동사의 종류별로 어떤 것이 허용되는지 정리할 것.\n④ 진단: 이 선지는 '주어가 무생물일 때만 to 부정사를 허용한다'고 오독했는데, 지문은 '주어 통제의 to 부정사'를 허용하는 동사들이 있음을 설명하며, 무생물의 경우를 따로 언급하지 않음. → 처방: 지문의 예시 동사들이 '주어 통제의 to 부정사'를 허용하는지 여부를 확인하고, 무생물의 경우를 따로 생각하지 말 것.\n⑤ 진단: 이 선지는 'to 부정사가 수동태에서만 허용된다'고 오해했는데, 지문은 '주어 통제의 to 부정사'가 능동태에서도 허용된다고 설명하며, 수동태는 언급하지 않음. → 처방: 지문에서 '능동태'와 '수동태'를 구분하지 말고, 동사가 'to 부정사'를 허용하는지 여부만 집중해서 확인할 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Verbs like *recommend* do not allow infinitives as objects.]"
+   }
+  },
+  {
+   "ts": "2026-08-08T09:04:24.210Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": -0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] However, a number of verbs will allow gerunds as objects but not inﬁ nitives.\n\nJohn started to call the meeting to order. Independent subject of the inﬁ nitive: X John started for Mary to call the meeting to order. ( ① ) Following is a summary listing of the more common verbs that permit inﬁ nitives with assigned subjects as objects of the verb but do not permit independent subjects of the inﬁ nitive. ( ② ) The verbs are roughly grouped into semantic categories. ( ③ ) Group 1: affect, ask, claim, decline, demand, offer, promise, refuse, swear, undertake Group 2: afford, attempt, endeavor, fail, learn, manage, neglect, omit, try Group 3: begin, cease, continue, start, stop Group 4: hope, propose, want, wish Group 5: disdain, help, scorn, venture Group 6: forget, remember, regret Verbs That Do Not Allow Inﬁ nitives as Objects Except for verbs that require a concrete object (for example, smash or paint), most verbs permit both gerunds and inﬁ nitives as objects. ( ④ ) An example is the verb recommend: Gerund object: ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘independent subject of the infinitive’를 설명하는 문장이 ‘John started for Mary to call the meeting to order.’와 연결된다고 오해. 이 문장은 ‘independent subject’를 설명하는 예시일 뿐, ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장이 아님. → 처방: ‘independent subject of the infinitive’가 무엇인지 먼저 이해한 후, 이 예시가 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장임을 확인하기.\n② 진단: ‘Following is a summary listing...’가 ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장이라고 오해. 이 문장은 ‘verbs that permit infinitives with assigned subjects’를 설명하는 것이 아니라, ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장 뒤에 나오는 ‘summary’를 소개하는 문장임. → 처방: ‘summary’라는 단어가 나오면, 그 문장이 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이 아니라, ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장 뒤에 나오는 ‘summary’를 소개하는 문장임을 확인하기.\n③ 진단: ‘The verbs are roughly grouped into semantic categories.’가 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이라고 오해. 이 문장은 ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장 뒤에 나오는 ‘verbs’를 소개하는 문장임. → 처방: ‘grouped into semantic categories’라는 단어가 나오면, 그 문장이 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이 아니라, ‘verbs that permit infinitives with assigned subjects’를 소개하는 문장 뒤에 나오는 ‘verbs’를 소개하는 문장임을 확인하기.\n⑤ 진단: ‘An example is the verb recommend: Gerund object: ( ⑤)’가 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이라고 오해. 이 문장은 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이 아니라, ‘verbs that permit gerunds as objects’를 설명하는 문장임. → 처방: ‘gerund object’라는 단어가 나오면, 그 문장이 ‘verbs that permit infinitives with assigned subjects’를 설명하는 문장이 아니라, ‘verbs that permit gerunds as objects’를 설명하는 문장임을 확인하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-08T08:04:34.244Z",
    "type": "내용일치",
@@ -287,61 +356,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T23:51:52.580Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 5 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 5단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 그녀의 체조 동작은 놀라웠습니다.\n주어진 단어: ( gymnastic / moves / incredible )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Her gymnastic moves were incredible. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-07T22:56:59.860Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.17,
-    "D": -1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.17)",
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "XP → YP XP It must be noted that the order of the ⓐ<u>constituents</u> on the right side of the arrow may vary, i.e. adjunction to either side is possible and that in case of adjunction to a head the adjoining element is itself a head, whereas in the other two cases it is a maximal projection. Q3 The constituent that is not ⓑ<u>projected</u> in a phrase is called the head (the zerolevel projection). A head projects its properties (e.g. its category), thus the maximal projection containing that head will share the category of the head and so will intermediate projections between the two. Projection is ⓒ<u>competing</u> category among the three levels of constituents. The properties of a given head which is inserted into a head position are ⓓ<u>idiosyncratic</u>, in other words, if a word is picked from the lexicon, all the relevant pieces of information about it specified in the lexicon are also automatically available. Thus, depending on what ⓔ<u>category</u> a given word has, the phrase it heads will acquire the same category.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ: 문맥상 'sharing'가 와야 하는데 'competing'가 쓰여 부적절하다 — 해당 문장 “Projection is sharing category among the three levels of constituents.”의 논리 흐름상 sharing 가 맞고 competing 는 방향이 어긋난다. [극성] 정답=협력적 상속(증가·공유) ↔ 오답=경쟁(감소·상충)\n[오답 진단·처방]\n① 진단: ⓐ의 'constituents'는 '구성 요소'라는 뜻으로 문맥상 맞지만, 학생이 '구성 성분'으로 오해해 '구성'이라는 낱말로만 떠올리며 '구성 요소' 전체를 떠올리지 못했다. → 처방: 문장에서 'constituents'가 가리키는 범위를 정확히 짚고, '구성 요소' 전체를 떠올리며 읽기.\n② 진단: ⓑ의 'projected'는 '투사된다'는 뜻으로, 학생이 '예측된다' 또는 '표출된다'로 잘못 해석해 문맥을 혼동했다. → 처방: 'projected'가 '투사'라는 언어학 용어임을 기억하고, 문맥에서 '성질이 전달된다'는 뜻을 떠올리기.\n④ 진단: ⓓ의 'idiosyncratic'는 '특이한' 또는 '개별적인' 뜻으로, 학생이 '이상한' 또는 '보편적인'으로 오해해 문맥을 잘못 이해했다. → 처방: 'idiosyncratic'의 뜻을 정확히 알고, 문맥에서 '개별 단어의 고유한 성질'임을 떠올리기.\n⑤ 진단: ⓔ의 'category'는 '범주'라는 뜻으로, 학생이 '분류' 또는 '범위'로 오해해 문맥을 혼동했다. → 처방: 'category'가 언어학에서 '범주'를 뜻함을 기억하고, 문장에서 '품사' 또는 '유형'으로 이해하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

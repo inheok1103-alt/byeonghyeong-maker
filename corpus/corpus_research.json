@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T08:05:34.929Z",
+ "updated": "2026-08-08T09:05:16.048Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T09:04:44.248Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "시간 표현에서 'during'은 명사구와 결합할 때 'of life'와 같은 소유격 구문 대신 'in life'로 더 자연스럽게 연결된다. 또한, 과거 시제 동사는 문맥상 과거 시제와 조화를 이루어야 한다.",
+   "rule": "시간 표현에서 'during' 다음에는 'normal conversation', 'routine activities'와 같은 명사구만 오며, 'of life'와 같은 소유격 구문은 'in life'로 대체하여 문법적 오류를 방지하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T08:05:06.931Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제 동사와 현재시제 동사가 혼용되어 문법적 일관성이 깨지는 경우가 빈번하며, 특히 'be' 동사의 생략이나 'the same' 구문의 오용이 자주 발생한다.",
    "rule": "과거시제와 현재시제 동사가 혼용되지 않도록 통일성을 유지하며, 'the same' 구문은 명사/형용사 뒤에만 쓰도록 한다. 또한 문장 첫 부분의 'Second'는 콤마와 함께 독립된 절로 처리해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-02T19:39:41.243Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'reason'이 'to부정사'와 결합하는 경우가 'that절'보다 훨씬 빈번하며, 특히 'to부정사'가 'live', 'study'와 같은 동사원형과 직접 연결되는 패턴이 두드러진다. 또한 'for + 명사'가 'reasons'와 결합할 때 'various', 'some' 등 한정사가 필수적으로 동반된다.",
-   "rule": "'reason'을 사용한 문장에서 'that절' 대신 'to부정사'를 사용하도록 오류를 유도하거나, 'reasons' 뒤에 'for + 한정사(예: various, some) + 명사' 패턴을 강제하는 변형문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
