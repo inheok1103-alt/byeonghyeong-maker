@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T09:05:16.048Z",
+ "updated": "2026-08-08T09:57:52.478Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T09:57:24.282Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구(NP) 앞에 한정사(a/an/the)나 지시사(this/that)가 누락된 경우 오류가 빈번하며, 특히 'important thing'처럼 수식어구가 있는 경우 'a/an'이 필수다. 또한, 전치사 구문에서 'between two'는 'between the two'로, 'by'는 'with'로 대체되는 경향이 있다.",
+   "rule": "수식어구가 포함된 단일 명사구(NP) 앞에 한정사(a/an/the)나 지시사가 없을 경우, 반드시 한정사를 삽입하거나 적절한 전치사를 수정하라. 예: 'This is important thing.' → 'This is an important thing.' 또는 'It kept X from Y with Z.' → 'It kept X from Y by Z.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T09:04:44.248Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 실제 오류에서 'for example', 'furthermore' 등 접속사 다음에 오는 문장 구조가 단순하거나 불완전하다는 패턴이 반복된다. 또한 'have a reason that study'처럼 관계대명사 대신 'to부정사'가 필요한 경우가 많다.",
    "rule": "CEFR A2-B1 수준 내신 변형문제에서는 접속사(예: for example, furthermore) 다음에 오는 문장이 완전한 문장 구조(주어+동사+목적어)를 갖추도록 오류를 삽입하거나, 'have a reason that + 동사원형'을 'have a reason to + 동사원형'으로 수정하는 오류를 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-02T21:12:54.863Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제 동사와 현재시제 동사가 혼용되어 문법적 일관성이 깨지는 경우가 빈번하며, 특히 'be' 동사의 생략이나 'the same' 구문의 오용이 자주 발생한다.",
-   "rule": "과거시제와 현재시제 동사가 혼용되지 않도록 통일성을 유지하며, 'the same' 구문은 명사/형용사 뒤에만 쓰도록 한다. 또한 문장 첫 부분의 'Second'는 콤마와 함께 독립된 절로 처리해야 한다.",
    "sample": [
     "old english",
     "university press",
