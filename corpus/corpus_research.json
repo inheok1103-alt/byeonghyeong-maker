@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T04:31:15.463Z",
+ "updated": "2026-08-08T06:02:19.438Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T06:01:53.441Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "시제와 수 일치 오류가 빈번하며, 특히 'loose/loose'와 'advertisement/advertisements'의 철자 및 문법적 오류가 반복된다. 또한 조동사-동사 원형 결합의 오류('shall effect' → 'will affect')도 다수 확인된다.",
+   "rule": "조동사(will/shall/can/may 등)가 사용된 문장에서는 반드시 동사가 원형(동사원형)인지 확인하고, 수 일치 오류가 발생하지 않도록 주어가 단수/복수인지 확인하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T04:30:51.871Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'diverse other courses' → 'other diverse courses'로 재배열하는 패턴이 빈번하며, 'a number of'가 'diverse'와 같은 형용사와 결합할 때 어순 규칙이 적용된다. 또한 'the amount of'는 불가산 명사와 결합해야 하며, 'are'→'is'로 단수화하는 오류가 다수 관찰된다.",
    "rule": "'a number of' 또는 'the amount of' 뒤에는 형용사(예: diverse, diverse other)가 오면 어순을 'other + diverse'로 고정하고, 'are'는 단수명사(예: amount) 뒤에서는 'is'로 반드시 통일하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-02T15:30:24.069Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 패턴은 명사구(noun phrase)의 수 일치와 동사 시제(tense) 오류가 빈번히 발생하며, 특히 'a lot of' 다음에 복수명사가 오는 경우 복수형 동사나 수식어 사용이 누락됨을 확인할 수 있다. 또한 전치사나 접속사의 생략(예: 'In addition it have')이 문법성 저하의 주요 원인임을 알 수 있다.",
-   "rule": "'a lot of' 다음에는 복수명사가 오며, 해당 명사구는 복수형 동사(예: 'have' → 'have')와 함께 사용해야 한다. 또한 전치사나 접속사(예: 'In addition') 뒤에는 주어와 동사가 반드시 포함된 완전한 절이 와야 한다.",
    "sample": [
     "old english",
     "university press",
