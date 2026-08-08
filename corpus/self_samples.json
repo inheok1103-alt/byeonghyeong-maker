@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-08T07:21:08.189Z",
+ "updated": "2026-08-08T08:05:34.933Z",
  "samples": [
+  {
+   "ts": "2026-08-08T08:04:34.244Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "Last year, the number of employees on the first day of the year was equal to the number of employees on the last day of the year. Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year.” We are also told that the labor turnover rate last year was 25%. To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
+    "choices": [
+     "작년 한 해 동안 회사를 떠난 직원의 수는 연 초와 연 말 직원 수의 평균의 25퍼센트였다",
+     "연초와 연말의 직원 수는 달랐다",
+     "연간 노동 이직률은 연도 중 떠난 직원 수를 연초와 연말 직원 수의 합으로 나눈 값이다",
+     "연간 노동 이직률 계산식은 연도 중 떠난 직원 수를 연초와 연말 직원 수의 평균으로 나눈 것이 아니다",
+     "연초와 연말의 직원 수가 달랐으므로 연간 노동 이직률은 연도 중 떠난 직원 수를 연초 직원 수로 나눈 값과 같다"
+    ],
+    "answer": 1,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 지문에서 '연초와 연말 직원 수가 같다'고 명시했으나, 이를 무시하고 '달랐다'고 오해한 듯함. → 처방: 지문 속 '첫날과 마지막날 직원 수가 같다'는 문장을 반드시 확인하고, 그 내용을 기억한 채로 문제를 풀기.\n③ 진단: 지문에서 '연초와 연말 직원 수의 평균'으로 나눈다고 했는데, 이를 '합'으로 잘못 읽은 듯함. → 처방: 계산식의 '평균'과 '합'을 정확히 구분하고, 지문 속 계산식을 다시 한 번 꼼꼼히 읽기.\n④ 진단: 지문에서 '평균으로 나눈다'고 했는데, 이를 '평균으로 나누는 것이 아니다'라고 반대로 이해한 듯함. → 처방: 계산식의 구조를 정확히 기억하고, '~가 아니다' 같은 부정 표현이 나오면 다시 한 번 확인하기.\n⑤ 진단: 지문에서 '연초와 연말 직원 수가 같다'는 사실을 무시하고, '달랐다'는 가정을 한 뒤 계산을 잘못한 듯함. → 처방: 문제 속 조건을 모두 확인하고, 조건이 바뀌면 계산식이 달라질 수 있음을 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-08T07:19:28.665Z",
    "type": "어법(밑줄)",
@@ -307,39 +342,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ: 문맥상 'sharing'가 와야 하는데 'competing'가 쓰여 부적절하다 — 해당 문장 “Projection is sharing category among the three levels of constituents.”의 논리 흐름상 sharing 가 맞고 competing 는 방향이 어긋난다. [극성] 정답=협력적 상속(증가·공유) ↔ 오답=경쟁(감소·상충)\n[오답 진단·처방]\n① 진단: ⓐ의 'constituents'는 '구성 요소'라는 뜻으로 문맥상 맞지만, 학생이 '구성 성분'으로 오해해 '구성'이라는 낱말로만 떠올리며 '구성 요소' 전체를 떠올리지 못했다. → 처방: 문장에서 'constituents'가 가리키는 범위를 정확히 짚고, '구성 요소' 전체를 떠올리며 읽기.\n② 진단: ⓑ의 'projected'는 '투사된다'는 뜻으로, 학생이 '예측된다' 또는 '표출된다'로 잘못 해석해 문맥을 혼동했다. → 처방: 'projected'가 '투사'라는 언어학 용어임을 기억하고, 문맥에서 '성질이 전달된다'는 뜻을 떠올리기.\n④ 진단: ⓓ의 'idiosyncratic'는 '특이한' 또는 '개별적인' 뜻으로, 학생이 '이상한' 또는 '보편적인'으로 오해해 문맥을 잘못 이해했다. → 처방: 'idiosyncratic'의 뜻을 정확히 알고, 문맥에서 '개별 단어의 고유한 성질'임을 떠올리기.\n⑤ 진단: ⓔ의 'category'는 '범주'라는 뜻으로, 학생이 '분류' 또는 '범위'로 오해해 문맥을 혼동했다. → 처방: 'category'가 언어학에서 '범주'를 뜻함을 기억하고, 문장에서 '품사' 또는 '유형'으로 이해하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T21:57:40.511Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.67,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Books are your keys to knowledge, and there is no limit to the kinds of things you can learn from books. So don’t worry if the______ you’ve taken an interest in is ___. Only you seem to care about. ___ are written on almost every subject ______ person could hope to think of. _____ learn about new things , just visit favorite book store. When you buy ______ book , you read it whenever you _______. Read about a far-away place ________ pretend you are having an adventure, _________ study something you heard about in ______. You might wish to study a ________ or learn to cook different kinds _____ food. Reading a book can mean _______ differences between learning about things and _______ to wonder about them. It’s economical _____ convenient to read books. You have ________ freedom to study whenever you like. ________ from books is very easy because ______ can simply go back to a _________ if you forget something you’ve read.\n\n─────────\n[요약문] By engaging in (A), individuals gain (B) that transcend curiosity and foster continuous inquiry.",
-    "choices": [
-     "(A) knowledge … (B) wonder",
-     "(A) study … (B) information",
-     "(A) adventure … (B) experience",
-     "(A) books … (B) curiosity",
-     "(A) reading … (B) understanding"
-    ],
-    "answer": 5,
-    "explanation": "(A) reading / (B) understanding 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘지문에서 (A)는 ‘책을 읽는 행동’이 아니라 ‘지식’이라는 결과물로 오해했으며, (B) ‘wonder’는 ‘궁금증’이라는 뜻으로 지문의 ‘지속적인 탐구’와 맞지 않음. → 처방: ‘지문에서 (A)는 ‘책을 읽는 행동’을 가리키므로 ‘knowledge’가 아니라 ‘reading’을 써야 함을 기억할 것.\n② 진단: ‘지문에서 (B)는 ‘지식’을 얻는 것이 아니라 ‘지속적인 탐구’를 유도하는 ‘이해’를 강조하므로 ‘information’이 오해임. → 처방: ‘지문에서 ‘지속적인 탐구’를 유도하는 것은 ‘이해’라는 뜻이므로 ‘understanding’이 맞는다는 점을 기억할 것.\n③ 진단: ‘지문에서 (A)는 ‘모험’이 아니라 ‘책을 읽는 행동’을 가리키며, (B) ‘경험’은 ‘지속적인 탐구’와 어울리지 않음. → 처방: ‘지문에서 ‘책을 읽는 행동’을 (A)로 써야 하므로 ‘adventure’가 아니라 ‘reading’을 떠올릴 것.\n④ 진단: ‘지문에서 (B)는 ‘궁금증’이 아니라 ‘지속적인 탐구’를 유도하는 ‘이해’를 가리키며, (A) ‘책’을 ‘행동’이 아닌 ‘대상’으로 오해함. → 처방: ‘지문에서 (A)는 ‘행동’을 가리키므로 ‘books’가 아니라 ‘reading’을 써야 한다는 점을 기억할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T07:21:08.185Z",
+ "updated": "2026-08-08T08:05:34.929Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T08:05:06.931Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "명사+전치사+명사 구조에서 전치사 오류(예: 'of the reason' → 'reasons')와 복수형 오류('place' → 'space', 'cars' → 'these cars')가 빈번하게 발생함을 확인했다.",
+   "rule": "복합명사구(명사+of+명사)에서 전치사 'of'와 복수형 일치(예: 'one of the reasons')를 필수적으로 검토하고, 명사+to+동사 구조(예: 'space to park')에서 동사의 원형과 관사('a/an/the')를 반드시 확인하여 오답을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T07:20:40.684Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'reason'이 'to부정사'와 결합하는 경우가 'that절'보다 훨씬 빈번하며, 특히 'to부정사'가 'live', 'study'와 같은 동사원형과 직접 연결되는 패턴이 두드러진다. 또한 'for + 명사'가 'reasons'와 결합할 때 'various', 'some' 등 한정사가 필수적으로 동반된다.",
    "rule": "'reason'을 사용한 문장에서 'that절' 대신 'to부정사'를 사용하도록 오류를 유도하거나, 'reasons' 뒤에 'for + 한정사(예: various, some) + 명사' 패턴을 강제하는 변형문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-02T18:16:49.092Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 연어 패턴에서 'there is/are' 구문과 'and' 병렬 구조가 빈번히 등장하며, 특히 'there is/are'의 단수/복수 오류와 'and' 병렬의 문법적 일관성 결여가 두드러진다.",
-   "rule": "CEFR B1-B2 수준 내신 변형문제에서 'there is/are' 구문의 단수/복수 일치 오류와 'and'로 연결된 병렬 구조의 문법적 일관성(동사 형태, 품사 일치)을 검증하는 문항을 반드시 포함하라.",
    "sample": [
     "old english",
     "university press",
