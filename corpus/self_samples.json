@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-08T10:54:07.083Z",
+ "updated": "2026-08-08T11:45:57.177Z",
  "samples": [
+  {
+   "ts": "2026-08-08T11:45:11.196Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "NEGATION'S ROLE in DEFINING MODAL CONCEPTS",
+     "Negation as the Sole Determinant of Necessity",
+     "Modal Truths Are Fully Interchangeable Through Negation",
+     "Necessity and Possibility Define Negation's Meaning",
+     "Negation Always Resolves Modal Ambiguities"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Necessity and possibility are interdefinable through negation.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘Negation’의 역할이 아니라 ‘necessity’를 ‘possibility’로 정의하는 데만 초점을 맞췄음. 지문은 ‘negation’이 ‘necessity’와 ‘possibility’를 상호 정의하는 데 사용된다고 설명하지, ‘negation’이 ‘necessity’를 ‘determine’한다고 말하지 않음. → 처방: ‘Negation’이 ‘necessity’를 ‘possibility’로 바꾸는 데 쓰이지만, ‘determine’(유일 결정자)라는 과장된 표현을 쓰지 않도록 주의할 것.\n③ 진단: ‘Modal truths’를 ‘negation’을 통해 ‘fully interchangeable’하다고 오해했음. 지문은 ‘necessity’와 ‘possibility’가 ‘negation’을 통해 상호 정의될 수 있지만, 모든 ‘modal truths’가 ‘negation’만으로 완전히 대체될 수 있다고는 말하지 않음. → 처방: ‘Interchangeable’이란 단어는 ‘mutually definable’의 의미로만 한정해서 이해하고, ‘fully interchangeable’이라는 과장된 표현은 피할 것.\n④ 진단: ‘Necessity’와 ‘possibility’가 ‘negation’의 의미를 ‘define’한다고 반대로 오해했음. 지문은 ‘negation’이 ‘necessity’와 ‘possibility’를 정의하는 데 사용된다고 설명하지, 그 반대는 아님. → 처방: ‘Define’의 방향을 정확히 파악할 것. ‘negation’이 ‘necessity’와 ‘possibility’를 정의하는 도구로 쓰인다는 점을 기억할 것.\n⑤ 진단: ‘Negation’이 ‘modal ambiguities’를 ‘always’ 해결한다고 단정했음. 지문은 ‘negation’이 ‘necessity’와 ‘possibility’를 상호 정의하는 데 쓰일 수 있지만, 모든 ‘modal ambiguities’를 ‘always’ 해결할 수 있다고는 말하지 않음. → 처방: ‘Always’라는 절대적인 표현은 지문에서 사용된 적이 없음을 기억하고, ‘negation’이 ‘modal concepts’를 정의하는 데 도움을 줄 뿐이라는 점을 명확히 구분할 것.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Necessity and possibility are interdefinable through negation.]"
+   }
+  },
   {
    "ts": "2026-08-08T10:53:01.564Z",
    "type": "목적",
@@ -353,25 +386,6 @@
     ],
     "answer": 3,
     "explanation": "정답 배열은 ③-④-⑨-①-⑧-⑤-②-⑦-⑥. 흐름: ③ → ④ → ⑨ → ① → ⑧ → ⑤ → ② → ⑦ → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①(3-4-9-1-8-5-2-6-7)은 ⑥과 ⑦의 순서가 바뀌어 있어, '새로운 정보'가 문장 끝에 온다는 설명(⑦)이 '주어에 대한 새로운 정보'(⑥)보다 뒤에 나와야 하는데 그렇지 않음. ⑤(각 문장은 주어부터 시작한다)는 ②(주어는 문장의 시작점)보다 뒤에 나와야 하는데 앞섬. → 처방: 문장을 읽을 때 '주어'와 '새로운 정보'의 위치를 확인하고, 설명이 자연스러운 순서로 오는지 다시 점검하기.\n② 진단: ②(3-4-9-8-1-5-2-7-6)에서 ⑥과 ⑦의 순서가 바뀌어 있어, '주어에 대한 새로운 정보'(⑥)가 문장 끝에 온다는 설명(⑦)보다 먼저 설명됨. 또한 ⑤(각 문장은 주어부터 시작한다)가 ②(주어는 문장의 시작점)보다 앞에 나와야 하는데 뒤섬. → 처방: 설명의 흐름을 '주어 → 문장 구조 → 새로운 정보' 순서로 생각하며, 각 문장의 역할(시작, 설명, 결론)을 구분해서 배열하기.\n④ 진단: ④(3-4-9-1-5-8-2-7-6)에서 ⑥과 ⑦이 빠져 있어, '주어에 대한 새로운 정보가 문장 끝에 온다'는 핵심 설명이 빠져 있음. 또한 ⑤(각 문장은 주어부터 시작한다)와 ②(주어는 문장의 시작점)의 연결이 자연스럽지 않음. → 처방: 핵심 설명(⑥, ⑦)이 모두 포함되었는지 확인하고, 문장의 구조와 정보의 흐름을 함께 생각하기.\n⑤ 진단: ⑤(4-3-9-1-8-5-2-7-6)에서 문장 ④가 맨 앞에 나와서 흐름이 깨짐. '보기 문장'(③)이 먼저 나와야 하는데, ④가 먼저 나오면 'Bell 이 전화기를 발명했다'는 예시가 먼저 나와서 설명의 흐름이 어색해짐. → 처방: 글의 흐름을 '예시 → 설명 → 결론' 순서로 생각하며, '보기 문장'(③)이 맨 앞에 오도록 배열하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T04:30:49.758Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] ACTIVE We say The telephone was invented by Bell because we are talking about the telephone, and the new information is that it was invented by Bell.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 우리는 전화가 벨에 의해 발명되었다고 말합니다. 우리가 전화에 대해 이야기하고 있기 때문입니다. (구문 포인트: 원인 부사절(왜냐하면 ~이기 때문) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
