@@ -1,6 +1,96 @@
 {
- "updated": "2026-08-08T02:23:37.272Z",
+ "updated": "2026-08-08T04:31:15.467Z",
  "samples": [
+  {
+   "ts": "2026-08-08T04:29:37.624Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "Look at these two sentences. ACTIVE Bell invented the telephone. PASSIVE The telephone was invented by Bell. The two sentences have the same meaning, but they are about different things. One sentence is about Bell, and the other is about the telephone. Each sentence begins with the subject. The subject is the startingpoint of the sentence, the thing we are talking about. The new information about the subject comes at the end of the sentence. We say Bell invented the telephone because we are talking about Bell, and the new information is that he invented the telephone. When the subject is the person or thing doing the action (the agent), then we use an active verb. ACTIVE We say The telephone was invented by Bell because we are talking about the telephone, and the new information is that it was invented by Bell. [ ]",
+    "choices": [
+     "Using a passive verb makes the sentence more complicated and less clear.",
+     "The choice between active and passive verbs depends on the length of the sentence.",
+     "We always use active verbs in English because they are more common.",
+     "The subject of a sentence always performs the action described by the verb.",
+     "We use a passive verb when the subject of the sentence is not performing the action."
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 원문 'When the subject is not the agent (is not doing the action), then we use a passive verb.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'The two sentences have the same meaning'라고 하여 두 가지 문장 형태가 같은 의미를 가지고 있음을 강조했지만, 수동태를 사용하면 문장이 더 복잡하고 불분명해진다고 착각했다. → 처방: 수동태와 능동태의 차이를 이해하기 위해 문장의 주제와 새로운 정보의 위치를 주의 깊게 살펴보아야 한다.\n② 진단: 지문에서 능동태와 수동태의 선택이 문장의 의미에 영향을 준다고 설명했지만, 문장의 길이와 관련있다고 잘못 이해했다. → 처방: 문장의 주제와 새로운 정보의 위치를 고려하여 능동태와 수동태를 선택해야 한다.\n③ 진단: 지문에서 능동태와 수동태의 사용 예를 설명했지만, 영어에서 항상 능동태를 사용해야 한다고 오해했다. → 처방: 문장의 주제와 새로운 정보의 위치에 따라 적절한 문장 형태를 선택해야 한다.\n④ 진단: 지문에서 주제와 새로운 정보의 위치를 설명했지만, 주제가 항상 동작을 수행한다고 잘못 이해했다. → 처방: 주제와 동작의 관계를 명확히 이해하고, 주제가 동작을 수행하지 않는 경우 수동태를 사용해야 한다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-08T04:30:05.998Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① The two sentences have the same meaning, but they are about different things.\n② The subject is the startingpoint of the sentence, the thing we are talking about.\n③ Look at these two sentences.\n④ ACTIVE Bell invented the telephone.\n⑤ Each sentence begins with the subject.\n⑥ We say Bell invented the telephone because we are talking about Bell, and the new information is that he invented the telephone.\n⑦ The new information about the subject comes at the end of the sentence.\n⑧ One sentence is about Bell, and the other is about the telephone.\n⑨ PASSIVE The telephone was invented by Bell.",
+    "choices": [
+     "③-④-⑨-①-⑧-⑤-②-⑥-⑦",
+     "③-④-⑨-⑧-①-⑤-②-⑦-⑥",
+     "③-④-⑨-①-⑧-⑤-②-⑦-⑥",
+     "③-④-⑨-①-⑤-⑧-②-⑦-⑥",
+     "④-③-⑨-①-⑧-⑤-②-⑦-⑥"
+    ],
+    "answer": 3,
+    "explanation": "정답 배열은 ③-④-⑨-①-⑧-⑤-②-⑦-⑥. 흐름: ③ → ④ → ⑨ → ① → ⑧ → ⑤ → ② → ⑦ → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①(3-4-9-1-8-5-2-6-7)은 ⑥과 ⑦의 순서가 바뀌어 있어, '새로운 정보'가 문장 끝에 온다는 설명(⑦)이 '주어에 대한 새로운 정보'(⑥)보다 뒤에 나와야 하는데 그렇지 않음. ⑤(각 문장은 주어부터 시작한다)는 ②(주어는 문장의 시작점)보다 뒤에 나와야 하는데 앞섬. → 처방: 문장을 읽을 때 '주어'와 '새로운 정보'의 위치를 확인하고, 설명이 자연스러운 순서로 오는지 다시 점검하기.\n② 진단: ②(3-4-9-8-1-5-2-7-6)에서 ⑥과 ⑦의 순서가 바뀌어 있어, '주어에 대한 새로운 정보'(⑥)가 문장 끝에 온다는 설명(⑦)보다 먼저 설명됨. 또한 ⑤(각 문장은 주어부터 시작한다)가 ②(주어는 문장의 시작점)보다 앞에 나와야 하는데 뒤섬. → 처방: 설명의 흐름을 '주어 → 문장 구조 → 새로운 정보' 순서로 생각하며, 각 문장의 역할(시작, 설명, 결론)을 구분해서 배열하기.\n④ 진단: ④(3-4-9-1-5-8-2-7-6)에서 ⑥과 ⑦이 빠져 있어, '주어에 대한 새로운 정보가 문장 끝에 온다'는 핵심 설명이 빠져 있음. 또한 ⑤(각 문장은 주어부터 시작한다)와 ②(주어는 문장의 시작점)의 연결이 자연스럽지 않음. → 처방: 핵심 설명(⑥, ⑦)이 모두 포함되었는지 확인하고, 문장의 구조와 정보의 흐름을 함께 생각하기.\n⑤ 진단: ⑤(4-3-9-1-8-5-2-7-6)에서 문장 ④가 맨 앞에 나와서 흐름이 깨짐. '보기 문장'(③)이 먼저 나와야 하는데, ④가 먼저 나오면 'Bell 이 전화기를 발명했다'는 예시가 먼저 나와서 설명의 흐름이 어색해짐. → 처방: 글의 흐름을 '예시 → 설명 → 결론' 순서로 생각하며, '보기 문장'(③)이 맨 앞에 오도록 배열하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-08T04:30:49.758Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] ACTIVE We say The telephone was invented by Bell because we are talking about the telephone, and the new information is that it was invented by Bell.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 우리는 전화가 벨에 의해 발명되었다고 말합니다. 우리가 전화에 대해 이야기하고 있기 때문입니다. (구문 포인트: 원인 부사절(왜냐하면 ~이기 때문) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-08T02:22:53.576Z",
    "type": "본문찾아쓰기",
@@ -246,93 +336,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'to explain why some phrases are grammatical and others are ungrammatical'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·조건 누락·인과 전도·범위 축소)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 정답 — 핵심 논지 반영· ③ 오답 — 조건 누락· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: ‘예외 사항’을 ‘규칙의 예외’로 오해한 듯합니다. 지문은 문법 규칙(‘NP’ ‘PP’ ‘AP’의 결합)을 설명하며, 예외가 아니라 ‘잘못된 결합’을 지적합니다. [23][24][27][29]가 ‘잘못된 결합’임을 예로 들었습니다. → 처방: ‘예외’가 아니라 ‘잘못된 결합’을 찾는 문제임을 먼저 확인하세요. 지문의 ‘well-formed phrases’와 ‘ungrammatical’ 판정을 비교해 보세요.\n③ 진단: ‘수정 방법’을 ‘적절성 설명’으로 혼동했습니다. 지문은 ‘잘못된 문장’을 예로 들었지만, 그 목적은 ‘왜 틀린지 설명’하는 것이지 ‘수정하는 법’이 아닙니다. → 처방: ‘무엇을 설명하는지’를 먼저 찾으세요. 지문에서 ‘judge(판단)’ ‘grammatical(문법적 적절성)’ 같은 단어를 눈여겨보세요.\n④ 진단: ‘특정 단어 유형’에만 초점을 맞추었습니다. 지문은 ‘NP’ ‘PP’ ‘AP’ 등 ‘구(phrase) 유형’을 다룹니다. 단어 유형이 아니라 ‘구 유형의 결합 규칙’을 설명하는 글입니다. → 처방: ‘단어’가 아니라 ‘구(phrase)’가 핵심임을 기억하세요. ‘Max and quite quickly’를 ‘Max(명사) + quite quickly(부사)’로만 보지 말고 ‘구’로 묶어 보세요.\n⑤ 진단: ‘일부만 다루는 규칙’을 ‘전체 규칙’으로 오해했습니다. 지문은 ‘NP’ ‘PP’ ‘AP’의 결합 규칙을 ‘전체적으로’ 설명하며, ‘일부만’ 다루는 것이 아닙니다. → 처방: ‘일부만’인지 ‘전체’를 설명하는지 확인하세요. 지문에서 ‘co-ordination(결합)’ ‘category(범주)’ 같은 단어가 ‘전체 규칙’을 가리킨다는 점을 기억하세요.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to explain why some phrases are grammatical and others are ungrammatical]"
-   }
-  },
-  {
-   "ts": "2026-08-07T18:04:22.180Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "주절의 선언적 힘은 CP 분석의 결과로 나타나므로 보충사(C)가 그 힘을 직접 부여하는 것은 아니다.",
-     "주절은 CP 로 분석되지만, 선언적 힘이 보충사(C)에만 국한된다고 볼 수는 없다.",
-     "언어에 따라 주절의 선언적 힘이 보충사(C)에 의해 headed 되는 CP 로 분석되지 않을 수도 있다.",
-     "주절의 선언적 힘은 보충사(C)에 의해 일시적으로 부여될 뿐, 필수 조건은 아니다.",
-     "주절은 선언적 힘이 부여된 보충사(C)에 의해 headed 되는 CP 로 분석된다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Main clauses are analyzed as CPs headed by a force-marking complementiser.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 주절의 선언적 힘이 CP 분석에서 보충사(C)가 [Dec-Force]라는 선언적 힘 특징을 carrying 한다는 사실에 근거한다고 밝히며, 보충사가 그 힘을 직접 부여한다고 설명합니다. 학생은 '직접 부여하는 것은 아니다'라고 오해한 것으로 보입니다. → 처방: CP 분석에서 보충사가 선언적 힘을 carrying 한다는 점을 정확히 읽고, 그 힘이 보충사에 의해 부여된다는 사실을 인식하기.\n② 진단: 선지②는 선언적 힘이 보충사에 '국한된다고 볼 수는 없다'고 주장하지만, 지문은 보충사가 선언적 힘을 carrying 한다는 점을 분명히 합니다. 학생은 '국한'의 의미를 오해하거나 보충사의 역할을 축소 해석한 듯합니다. → 처방: 보충사가 선언적 힘을 carrying 한다는 지문의 핵심 내용을 정확히 파악하고, '국한'이라는 표현의 의미를 다시 생각해 보기.\n③ 진단: 선지③은 언어에 따라 주절의 선언적 힘이 CP 로 분석되지 않을 수도 있다고 주장하지만, 지문은 CP 분석이 cross-linguistically plausible 하다는 예시를 들며 CP 분석을 지지합니다. 학생은 예시의 의미를 오해했거나 '분석되지 않을 수도 있다'는 반대의견을 과장했을 수 있습니다. → 처방: 지문의 예시가 CP 분석의 보편성을 지지한다는 점을 정확히 이해하고, 반대의견을 주장할 때는 지문의 근거를 다시 확인하기.\n④ 진단: 선지④는 선언적 힘이 '일시적으로 부여될 뿐 필수 조건은 아니다'라고 주장하지만, 지문은 선언적 힘이 보충사에 의해 필수적으로 부여된다고 설명합니다. 학생은 '일시적' 또는 '필수 조건'의 의미를 오해했거나 보충사의 역할을 경시한 듯합니다. → 처방: 지문에서 보충사가 선언적 힘을 carrying 한다는 필수 조건을 강조한다는 점을 정확히 읽고, '일시적' 또는 '필수 조건'의 의미를 재검토하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Main clauses are analyzed as CPs headed by a force-marking complementiser.]"
-   }
-  },
-  {
-   "ts": "2026-08-07T18:04:30.971Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 주요 절이 CP로 분석될 때, 문장의 서술적 기능은 [Dec-Force]라는 서술적 기능 특성을 지닌 ø 보문소에 의해 결정된다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-07T16:10:35.546Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 5번(기록 4번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "과학자들은 비전문가와 소통하지 못하는 이유가 문장 구조의 동사-목적어 연결을 중단하기 때문이다.",
-     "과학자들은 비전문가와 소통하기 위해 문장 구조의 동사-목적어 연결을 중단해야 한다.",
-     "모든 과학자들이 비전문가와의 소통을 위해 문장 구조의 동사-목적어 연결을 중단해야 한다는 주장은 과장이다.",
-     "과학자들은 비전문가와의 소통을 위해 동사-목적어 연결을 중단하지 말아야 한다.",
-     "비전문가와의 소통을 원활히 하려면 과학자들이 문장 구조의 동사-목적어 연결을 유지해야 한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Scientists should avoid interrupting the verb-object connection in their sentences to communicate more effectively with laypeople.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 논지에서 어긋남· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Scientists should avoid interrupting the verb-object connection in their sentences to communicate more effectively with laypeople.]\n[오답 진단·처방]\n① 진단: ‘과학자들이 비전문가와 소통하지 못하는 이유’를 ‘문장 구조의 동사-목적어 연결 중단’으로만 좁혀 오해했다. 지문은 과학자들의 문장 스타일이 비인격적이고 객관적이라서 소통이 어렵다고 설명하는데, 이 오독은 그 원인을 문장 구조의 ‘연결 중단’으로만 한정지었다. → 처방: 지문에서 말한 ‘소통의 어려움’의 진짜 이유는 과학자들의 문장 스타일이 비인격적이고 객관적이라는 점임을 기억하고, 문장 구조의 ‘동사-목적어 연결’이 그 스타일을 만드는 한 요소라는 점을 떠올리자.\n② 진단: ‘소통을 위해 문장 구조의 동사-목적어 연결을 중단해야 한다’는 지문의 내용을 반대로 해석했다. 지문은 오히려 ‘연결을 유지하라’고 권장하는데, 이 선지는 그 반대 행동을 요구한다. → 처방: 지문의 핵심 메시지가 ‘연결을 유지하라’는 것이라는 점을 확실히 기억하고, 선지의 요구가 지문과 반대 방향인지 먼저 확인하자.\n③ 진단: ‘모든 과학자들이 ~해야 한다는 주장은 과장’이라는 말을 지문의 내용과 연결하지 못했다. 지문은 과학자들의 문장 스타일이 소통을 방해한다고 설명하는데, 이 선지는 그 주장을 ‘과장’으로 폄하하는 오독을 보였다. → 처방: 지문의 핵심 주장이 ‘과학자들의 문장 스타일이 소통을 방해한다’는 것임을 떠올리고, 그 주장이 ‘과장’이 아니라는 점을 확인하자.\n④ 진단: ‘과학자들이 동사-목적어 연결을 중단하지 말아야 한다’는 지문의 메시지와 완전히 반대되는 선지를 골랐다. 지문은 오히려 ‘연결을 유지하라’고 권장하는데, 이 선지는 그 권고를 부정하는 오독을 보였다. → 처방: 지문의 핵심 메시지가 ‘연결을 유지하라’는 것임을 분명히 기억하고, 선지의 요구가 그 메시지와 일치하는지 먼저 확인하자."
    }
   }
  ]

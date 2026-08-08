@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T02:23:37.268Z",
+ "updated": "2026-08-08T04:31:15.463Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T04:30:51.871Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "한국어 학습자들이 자주 범하는 오류는 동사 수 일치와 조동사 누락에 집중되어 있으며, 특히 'and'로 연결된 복수 주어 뒤 동사가 단수로 오는 경우가 많다. 또한 동사 뒤 목적어나 보어의 생략(be 동사, 조동사)도 빈번히 발생한다.",
+   "rule": "복수 주어 뒤에는 복수 동사를 반드시 사용하고, 동사 뒤 목적어나 보어(예: 'be active')가 필요한 경우 조동사 'can', 'could' 등을 반드시 포함시켜 문법적 완결성을 확보하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T02:23:08.819Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 패턴은 명사구(noun phrase)의 수 일치와 동사 시제(tense) 오류가 빈번히 발생하며, 특히 'a lot of' 다음에 복수명사가 오는 경우 복수형 동사나 수식어 사용이 누락됨을 확인할 수 있다. 또한 전치사나 접속사의 생략(예: 'In addition it have')이 문법성 저하의 주요 원인임을 알 수 있다.",
    "rule": "'a lot of' 다음에는 복수명사가 오며, 해당 명사구는 복수형 동사(예: 'have' → 'have')와 함께 사용해야 한다. 또한 전치사나 접속사(예: 'In addition') 뒤에는 주어와 동사가 반드시 포함된 완전한 절이 와야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-02T13:59:00.573Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제와 현재 시제가 혼용된 문장은 'once/nowadays'와 같은 시간 부사구를 도입해 시제 일관성을 확보해야 한다. 또한 'why not' 구문은 의문형식으로 재구조화해 자연스러운 영어 표현을 만든다.",
-   "rule": "'과거 시제와 현재 시제가 혼용된 문장은 시간 부사구(once, nowadays 등)를 추가하고, 시제를 통일시킨 후, 'why not'은 'why would you not' 또는 'why not'으로 의문형식으로 재구조화하라.",
    "sample": [
     "old english",
     "university press",
