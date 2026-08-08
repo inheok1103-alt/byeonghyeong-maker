@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T16:55:39.634Z",
+ "updated": "2026-08-08T17:52:16.722Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T17:51:44.804Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'between two' 패턴의 오류가 'three to four years'로 일반화되는 것처럼, 수량·시간 표현에서 하이픈(-) 오용이 빈번하다. 또한, 'in many books, news'에서처럼 복수형·명사구 불일치가 문법 오류로 이어진다.",
+   "rule": "수량·시간 표현(예: 'three-four years')은 반드시 'from A to B' 또는 'A to B' 형태로만 작성해야 하며, 하이픈(-)을 사용하지 않는다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T16:55:13.141Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'to not V'는 부정의 부정으로 해석될 위험이 있어 'not to V'가 자연스러운 영어 연어 패턴이다. 또한 'those energy'는 한정사 오류로, 'those energy sources/types'와 같이 구체적인 명사구를 사용해야 한다.",
    "rule": "'to 부정사' 구문에서 부정의 의미를 표현할 때는 'not to V' 형식을 사용하며, 'those/these + 단수명사'는 'those/these + 복수명사 + 구체적 명사구'로 수정하여 한정사 오류를 해결하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-03T18:09:57.174Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스는 CEFR B1-B2 수준에서 빈번한 명사구 오류(예: 'most famous + 인명' → 'most famous + 직위 + 인명')와 전치사 오류('to a bank' → 'for a loan to a bank')가 두드러진다. 또한 접속사·부사 오류('oin way' → 'one way')와 동사 시제·수 일치 오류('use' → 'uses')도 다수 확인된다.",
-   "rule": "CEFR B1-B2 수준에서 'most famous [인명]' 구문은 반드시 'most famous [직위], [인명],'로 명사구를 확장하여 출제하며, 전치사 'to'는 'for [목적]'과 결합된 경우 'to [장소]'로 수정하도록 오류 유도 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",
