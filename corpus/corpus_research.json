@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T15:50:10.817Z",
+ "updated": "2026-08-08T16:55:39.634Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-08T16:55:13.141Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'too ~ to' 구조(부정적 결과)와 'was/were + a/an + 형용사 + 명사' 구문(명사구 완성)이 빈번한 오류 유형임을 확인. 특히 'very'와 같은 부사의 과도한 사용이 문법적 정확성을 떨어뜨림.",
+   "rule": "'too + 형용사/부사 + to 부정사' 구조와 'be동사 + (a/an) + 형용사 + 명사' 구문에서 오답지를 설계할 때는, 'very'를 'too'로 대체하거나, 관사(a/an) 누락을 유도하는 오답을 반드시 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T15:49:42.870Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "이 코퍼스는 CEFR B1-B2 수준에서 빈번한 명사구 오류(예: 'most famous + 인명' → 'most famous + 직위 + 인명')와 전치사 오류('to a bank' → 'for a loan to a bank')가 두드러진다. 또한 접속사·부사 오류('oin way' → 'one way')와 동사 시제·수 일치 오류('use' → 'uses')도 다수 확인된다.",
    "rule": "CEFR B1-B2 수준에서 'most famous [인명]' 구문은 반드시 'most famous [직위], [인명],'로 명사구를 확장하여 출제하며, 전치사 'to'는 'for [목적]'과 결합된 경우 'to [장소]'로 수정하도록 오류 유도 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-03T15:19:42.689Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'a knowledge'와 같은 불필요한 관사 사용은 명사의 고유한 특성을 무시하는 오류로, 'knowledge'는 불가산명사이므로 관사가 필요 없다. 또한 'and do more benefits'와 같이 동사-명사 불일치 오류는 문맥상 동사의 의미적 일관성을 고려해야 한다.",
-   "rule": "'a/an + 불가산명사' 또는 '복수형 명사와 단수 동사의 불일치'가 포함된 문장은, 관사를 제거하거나 복수형 동사로 수정하여 문법적 정확성을 확보하라.",
    "sample": [
     "old english",
     "university press",
