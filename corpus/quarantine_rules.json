@@ -1,7 +1,31 @@
 {
- "updated": "2026-08-09T15:01:47.391Z",
+ "updated": "2026-08-09T15:50:15.231Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 지문 내 실제 밑줄 친 단어 수(예: ⓐ, ⓑ, ⓒ)에 정확히 일치하도록 선지 개수를 맞추고, 정답 번호는 해당 밑줄 위치에 맞게 수정해야 한다.",
+   "src": "자가학습:어휘(밑줄)",
+   "score": 58,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-09T15:48:44.267Z"
+  },
+  {
+   "rule": "모든 문항은 지문의 핵심 논리(complex construction의 nesting과 constituents의 conventionalization/autonomy)를 직접 반영하도록 선지를 설계하고, 주제 일관성을 유지해야 한다.",
+   "src": "자가학습:빈칸(문장)",
+   "score": 80,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-09T15:49:20.496Z"
+  },
+  {
+   "rule": "복잡한 구문이 자체적으로 다른 구문의 역할을 수행할 수 있음을 서술하라.",
+   "src": "자가학습:서술형(자유)",
+   "score": 43,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-09T15:49:39.049Z"
+  },
   {
    "rule": "모든 문항은 원문의 핵심 개념(가변성, 투명성, 문법 범주)과 용어(예: prepositions, adverbs)를 정확히 반영하고, 중립적·균형 있는 표현으로 기술해야 하며, 과장된 부정 표현을 지양해야 한다.",
    "src": "자가학습:요지",
@@ -1577,30 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-03T21:31:31.991Z"
-  },
-  {
-   "rule": "모든 문항은 지문의 핵심 주제(예: 심경 변화)가 명확히 드러나는 스토리텔링 형식으로 작성되어야 하며, 선지는 해당 주제를 직접적으로 반영한 내용으로 구성되어야 한다.",
-   "src": "자가학습:심경변화",
-   "score": 57,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-03T21:32:00.169Z"
-  },
-  {
-   "rule": "발문은 'Which of these statements is a genuine compliment?'로 통일하고, 선지는 ⓐ, ⓑ, ⓓ, ⓔ만 4개 문장 형태로 제시하여 'compliment' 조건과 직접 연관된 항목만 비교하도록 하며, 정답을 명확히 표시하라.",
-   "src": "자가학습:지칭추론",
-   "score": 63,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-03T21:32:48.805Z"
-  },
-  {
-   "rule": "모든 선지의 길이를 균일하게 조정하고, 어법상 틀린 부분을 명확하게 지적할 수 있도록 출제문을 수정하여 난이도와 통일성을 높인다.",
-   "src": "자가학습:어법개수형",
-   "score": 83,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-03T19:59:36.809Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

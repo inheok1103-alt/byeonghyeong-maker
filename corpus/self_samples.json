@@ -1,6 +1,95 @@
 {
- "updated": "2026-08-09T15:01:47.396Z",
+ "updated": "2026-08-09T15:50:15.236Z",
  "samples": [
+  {
+   "ts": "2026-08-09T15:49:06.225Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "There is however another important representational commitment in Radical ⓐ<u>Construction</u> Grammar, shared with other construction grammars, namely that ⓑ<u>clear</u> constructions may fill the roles of other complex constructions. For example, the ⓒ<u>Passive</u> Subject role in the Passive Voice construction is filled by a Subject Phrase construction which may itself be complex: for example consisting of a Noun combined with a Relative Clause, which in turn is a complex construction in its own right. The nesting of complex constructions is similar to the constituent structure of nonconstructional theories. However it differs from those in that the existence of a nested construction is justified only by the autonomy of the construction (i.e. its conventionalization independent of the larger construction). In a construction grammar, some “constituents” may not be ⓓ<u>autonomous</u> constructions. For example, in the idiomatic construction shoot the breeze, the breeze is not an autonomous phrasal ⓔ<u>constituent</u> any more, since the choice of Definite Article as well as the choice of Noun are fixed for this construction.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 2,
+    "explanation": "정답 ⓑ: 문맥상 'complex'가 와야 하는데 'clear'가 쓰여 부적절하다 — ‘complex constructions may fill the roles of other complex constructions’에서 ‘complex’는 ‘복잡한’이라는 뜻이 아니라 ‘구성된, 구성체의’로 쓰였기 때문에 ‘clear(명료한)’는 문맥상 부적절하다. 문맥은 구성체의 계층성과 중첩을 논하는 것이지 복잡성 여부를 판단하는 것이 아니다.. [극성] 정답=구성체의 복잡성(구체적 의미) ↔ 오답=명료성(추상적 반대 의미)\n[오답 진단·처방]\n① 진단: ⓐ<u>Construction</u>은 '구성'이라는 뜻으로 문맥상 '문법'을 가리키는 말이므로 '구성 문법'으로 자연스럽지만, 학생은 '구성' 자체를 '건축'이나 '만들기'로 오해했을 가능성이 있다. → 처방: 지문에서 'Construction Grammar'는 '구성 문법'으로 통칭된다는 점을 기억하고, 'Construction'이 '문법'의 한 종류임을 떠올리자.\n③ 진단: ⓒ<u>Passive</u>는 '수동태'를 뜻하는데, 학생은 '수동'이라는 말의 의미를 '움직이지 않음'이나 '소극적'으로 오해하고 '능동'과 혼동했을 수 있다. → 처방: 수동태는 '~이/가 당하는 상태'라는 뜻을 가진다는 점을 기억하고, 'Passive'가 문법 용어임을 떠올리자.\n④ 진단: ⓓ<u>autonomous</u>는 '자율적인' 또는 '독립적인'을 뜻하는데, 학생은 '자동'이나 '자연스러운'으로 오해하고 '독립성'의 의미를 놓쳤을 수 있다. → 처방: 문맥에서 'autonomous construction'은 '독립된 구성'을 의미한다는 점을 기억하고, 'autonomous'가 '독립성'을 강조한다는 사실을 떠올리자.\n⑤ 진단: ⓔ<u>constituent</u>는 '구성 요소'를 뜻하는데, 학생은 '구성'을 '구성품'이나 '부분'으로만 이해하고, 문법 용어로서의 'constituent'를 오해했을 수 있다. → 처방: 문법에서 'constituent'는 '문장의 구성 요소'를 가리킨다는 점을 기억하고, '구성 요소'라는 뜻을 떠올리자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-09T15:49:33.294Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "There is however another important representational commitment in Radical Construction Grammar, shared with other construction grammars, namely that complex constructions may fill the roles of other complex constructions. For example, the Passive Subject role in the Passive Voice construction is filled by a Subject Phrase construction which may itself be complex: for example consisting of a Noun combined with a Relative Clause, which in turn is a complex construction in its own right. The nesting of complex constructions is similar to the constituent structure of nonconstructional theories. However it differs from those in that the existence of a nested construction is justified only by the autonomy of the construction (i.e. its conventionalization independent of the larger construction). In a construction grammar, some “constituents” may not be autonomous constructions. [ ]",
+    "choices": [
+     "The idiom 'shoot the breeze' exemplifies how constructions can freely combine nouns and articles without losing their individual autonomy.",
+     "In idiomatic expressions like 'shoot the breeze,' the noun 'breeze' retains its autonomous status as a phrasal constituent despite the fixed article.",
+     "The fixed article 'the' in 'shoot the breeze' highlights that idioms always preserve the grammatical independence of their individual components.",
+     "In the idiom 'shoot the breeze,' the definite article 'the' and the noun 'breeze' are not freely selectable, as their fixed usage demonstrates that neither functions as an independent phrasal unit.",
+     "Unlike other constructions, idioms such as 'shoot the breeze' allow the noun 'breeze' to be replaced with any other noun while maintaining the same meaning."
+    ],
+    "answer": 4,
+    "explanation": "빈칸에는 원문 'For example, in the idiomatic construction shoot the breeze, the breeze is not an autonomous phrasal constituent any more, since the choice of Definite Article as well as the choice of Noun are fixed for this construction.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문은 'idiom'이 아니라 'construction'의 '자율성'과 '고정성'을 강조하는데, 이 선지는 'idiom'의 '자유로운 조합'을 예시로 든 것이 지문과 맞지 않음. → 처방: 문제에서 'idiom'이 아닌 'construction'의 특성을 묻는다는 점을 먼저 확인하고, 선지의 예시가 지문의 핵심 주장과 부합하는지 검토하기.\n② 진단: 지문은 'idiom'의 '고정성'을 강조하는데, 이 선지는 'breeze'가 '자율적 구성체'로 남아 있다고 설명하여 지문의 핵심과 반대됨. → 처방: 지문의 '자율성'과 '고정성'의 관계를 정확히 이해하고, 선지가 두 개념 중 어느 쪽을 중시하는지 비교하기.\n③ 진단: 지문은 'idiom'의 '고정성' 때문에 구성요소가 독립적이지 않음을 설명하는데, 이 선지는 'idiom'이 항상 '문법적 독립성'을 보존한다고 주장하여 오류. → 처방: 지문의 '자율성'과 '고정성'의 관계를 정리하고, 'idiom'이 고정되어 있음을 보여주는 예시를 찾기.\n⑤ 진단: 지문은 'idiom'의 '고정성'을 설명하는데, 이 선지는 'breeze'를 다른 명사로 대체할 수 있다고 주장하여 지문의 핵심과 반대됨. → 처방: 지문의 '고정성' 개념을 정확히 이해하고, 'idiom'이 고정된 표현임을 기억하며 선지를 검토하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-09T15:49:45.343Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 복잡한 구문도 또 다른 복잡한 구문의 역할을 대신할 수 있다는 것이 Radical Construction Grammar의 핵심 주장이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-09T14:54:23.700Z",
    "type": "요지",
@@ -246,108 +335,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] object (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T11:47:34.205Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "He had the judge reduce the charges. When have is used as a causative, have is followed by a noun-phrase object and a base-stem inﬁ nitive verb phrase. The noun-phrase object of have also serves as the subject of the following bare-stem verb. For example: James had his boss kill the proposal. Here the noun phrase his boss is both the object of had and the subject of the bare-stem verb kill. In other words, the boss is the person killing the proposal, not James. When get and have are used as causative verbs, they differ in the exact form of the verb in their complements (inﬁ nitives with get; bare-stems with have), but in other aspects they seem interchangeable—with the predictable exception that get passives are more informal than have passives. They are also alike in that the verbs in their complements can be passives. Here are the active get and have sentences, together with their passive counterparts:",
-    "choices": [
-     "그는 판사에게 혐의를 낮추도록 요청했다",
-     "‘have’를 사역동사로 쓸 때 목적어 다음에 동사원형이 온다",
-     "'have'의 목적어가 동사원형의 주체가 된다",
-     "'get'과 'have'는 보문에서 능동태와 수동태 모두 가능하다",
-     "그는 판사에게 혐의를 낮추지 않도록 요청했다"
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '그는 판사에게 혐의를 낮추도록 했다'는 내용은 있지만 '요청했다'는 말은 없으므로 '요청했다'라는 표현을 오해했을 가능성이 있다. 지문은 'have'가 사역동사로 쓰인 경우를 설명하며, 'reduce'가 'have'의 목적어('the judge')의 행위가 됨을 나타낸다. → 처방: 지문에서 'have'가 사역동사로 쓰일 때 목적어 다음에 오는 동사는 동사원형임을 확인하고, '요청했다'라는 표현이 지문에 없음을 기억하며 선지를 읽어야 한다.\n② 진단: 'have'를 사역동사로 쓸 때 목적어 다음에 오는 동사는 'bare-stem(동사원형)'임을 지문에서 명확히 설명하고 있다. 학생이 이 부분을 놓쳤거나, 'get'과의 차이를 혼동했을 수 있다. → 처방: 지문에서 'have'가 사역동사로 쓰일 때의 보문 구조를 정확히 기억하고, 'bare-stem(동사원형)'이라는 용어를 확인한 후 선지를 비교해야 한다.\n③ 진단: 지문에서 'have'의 목적어가 동사원형의 주체가 된다는 설명이 있다. 학생이 이 관계를 잘못 이해했거나, 'get'과의 차이를 혼동했을 수 있다. → 처방: 지문에서 'his boss'가 'had'의 목적어이자 'kill'의 주체임을 예시로 확인하고, 목적어와 동사원형의 주체 관계를 명확히 이해해야 한다.\n④ 진단: 지문에서 'get'과 'have'는 보문에서 능동태와 수동태 모두 가능하다는 설명이 있다. 학생이 이 부분을 놓쳤거나, 'get'이 더 비공식적이라는 점만 기억했을 수 있다. → 처방: 지문에서 'get'과 'have'의 보문이 능동태와 수동태 모두 가능하다는 사실을 확인하고, 'get'이 비공식적이라는 점은 별개의 정보임을 기억해야 한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T10:54:30.115Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 5번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "간결한 언변을 알리기 위해서",
-     "장황한 연설을 줄이기 위해서",
-     "정치인의 발언을 제한하기 위해서",
-     "정치인들에게 간결한 언변을 요구하기 위해서",
-     "언변의 간결성을 강조하기 위해서"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'To emphasize concision in speech.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To emphasize concision in speech.]\n[오답 진단·처방]\n① 진단: ‘간결한 언변’을 ‘간결한 말’을 뜻하는 laconic 의 뜻과 혼동한 것으로 보입니다. Coolidge 가 ‘Silent Cal’로 불린 이유는 ‘간결한 말’을 해서가 아니라 ‘말이 적고 조용한’ 태도 때문입니다. → 처방: laconic 의 뜻을 정확히 기억하고, 지문에서 Coolidge 가 ‘말이 적고 조용한’ 태도를 보인 이유를 다시 확인하세요.\n② 진단: ‘장황한 연설’을 ‘간결한 말’과 반대로 오해한 것으로 보입니다. 지문은 Coolidge 의 ‘간결한 말’을 예로 들며 ‘장황한 연설’이 아니라 ‘간결한 연설’을 강조합니다. → 처방: ‘장황한 연설’과 ‘간결한 연설’을 구분하는 단어를 다시 공부하고, 지문에서 Coolidge 가 ‘간결한 말’을 한 이유를 찾아보세요.\n③ 진단: ‘정치인의 발언을 제한하기 위해서’를 Coolidge 의 ‘간결한 말’과 연관 지어 오독한 것 같습니다. 지문은 Coolidge 의 ‘간결한 말’을 예로 들 뿐, ‘발언을 제한’하는 목적이 아닙니다. → 처방: ‘목적’을 묻는 문제에서 지문의 ‘예시’와 ‘목적’을 구분하세요. Coolidge 는 ‘간결한 말’을 한 예시일 뿐, ‘발언을 제한’하는 것이 아닙니다.\n④ 진단: ‘정치인들에게 간결한 언변을 요구하기 위해서’를 Coolidge 의 ‘간결한 말’과 연관 지어 오독한 것 같습니다. 지문은 Coolidge 의 ‘간결한 말’을 소개하는 데 그치며, ‘요구’를 하는 내용은 없습니다. → 처방: ‘요구’와 ‘예시’를 구분하세요. 지문은 Coolidge 가 ‘간결한 말’을 한 ‘예시’일 뿐, ‘정치인들에게 요구’를 한 것이 아닙니다."
-   }
-  },
-  {
-   "ts": "2026-08-09T10:54:53.766Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "NEW ⓐ<u>WORDS</u> ⓑ<u>laconic</u> lə kon´ ik ⓒ<u>throng</u> thrông ⓓ<u>intrepid</u> in trep´ id accost ə kôst´ ⓔ<u>reticent</u> ret´ ə sənt WEEK 2 DAY 1 TO THE POINT Calvin Coolidge, our thirtieth president, was named “Silent Cal” by reporters because of his laconic speech. One Sunday, after Mr. Coolidge had listened to an interminable* sermon, a throng of newsmen gathered around him. An intrepid reporter accosted the Chief Executive: “Mr. President, we know that the sermon was on the topic of sin. What did the minister say?” “He was against it,” the reticent Coolidge replied. (*interminable—click here.) Sample Sentences Use the new words in the following sentences: 1.His speech was usually rambling, but this time I found it brief and ________________ . 2.If a surly panhandler should ________________ you, keep on walking. 3.Even under repeated questioning, the witness remained ________________ . 4.A howling ________________ of teenage girls surrounded the rap artists. 5.The corporal received the Silver Star for his ________________ deeds in combat. Definitions Match the new words with their dictionary meanings. 6.laconic a. expressing much in few words 7.throng b. brave",
-    "choices": [
-     "words: The smallest unit of language that has a particular meaning and can be expressed",
-     "laconic: Using as few words as possible; pithy and concise.",
-     "throng: A group of people crowded or gathered closely together.",
-     "intrepid: An act in the past which may be used as an example to help decide the outcome of",
-     "reticent: Keeping one's thoughts and opinions to oneself; reserved or restrained."
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓓ의 풀이는 'president'의 정의이다. 'intrepid'의 올바른 풀이: Fearless; bold; brave.\n[오답 진단·처방]\n① 진단: ‘words’의 정의가 ‘의미를 가진 언어의 가장 작은 단위’라는 뜻이지만, 지문에서는 ‘새로운 단어들’을 뜻하는 제목으로만 쓰였으므로 오독한 것 같습니다. 지문에서 ‘words’는 단어 목록을 가리키는 표제어일 뿐, 영영풀이로 사용되지 않았습니다. → 처방: ‘words’를 영영풀이로 사용할 때는 ‘의미를 가진 언어의 가장 작은 단위’라는 뜻을 떠올리고, 지문에서 ‘NEW WORDS’가 단어 목록임을 기억하세요.\n② 진단: ‘laconic’의 정의는 ‘가능한 한 적은 말을 사용하는; 간결하고 함축적인’이라는 뜻으로 지문의 설명과 일치합니다. 오독한 이유가 없다면, 정답 선지를 확인하는 과정에서 헷갈렸을 수 있습니다. → 처방: 정답 선지를 찾기 위해 각 단어의 뜻을 정확히 기억하고, 지문 속 예문(‘Silent Cal’)과 연결 지어 생각해 보세요.\n③ 진단: ‘throng’의 정의는 ‘붐비거나 밀집해 있는 사람들로 이루어진 무리’라는 뜻으로 지문의 설명과 일치합니다. 오독한 이유가 없다면, ‘throng’이 ‘무리’를 뜻한다는 점을 잊었을 수 있습니다. → 처방: ‘throng’을 영영풀이로 사용할 때는 ‘사람들이 빽빽이 모여 있는 무리’라는 뜻을 떠올리고, 지문 속 예문(‘a throng of newsmen’)을 참고하세요.\n⑤ 진단: ‘reticent’의 정의는 ‘생각이나 의견을 드러내지 않는; 삼가는 또는 자제하는’이라는 뜻으로 지문의 설명과 일치합니다. 오독한 이유가 없다면, ‘reticent’이 ‘말을 아끼는’ 성격을 뜻한다는 점을 잊었을 수 있습니다. → 처방: ‘reticent’을 영영풀이로 사용할 때는 ‘말을 잘 하지 않는 성격’을 떠올리고, 지문 속 예문(‘the reticent Coolidge’)를 참고하세요.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T15:01:47.392Z",
+ "updated": "2026-08-09T15:50:15.232Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T15:49:47.624Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 패턴에서 '명사+명사' 구조(예: 'old English', 'university press')가 빈번하며, 한국어 오류는 주로 '명사+동사' 구조에서 발생한다. 또한 과거 시제와 현재 시제의 혼용 오류가 다수 발견된다.",
+   "rule": "'명사+동사' 구조(예: 'important is travel')가 문법적으로 부적절할 경우, 'The + 명사 + thing/ones + 동사' 구조(예: 'The important thing is traveling')로 변환하여 문법적으로 옳은 문장을 만든다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T15:01:18.566Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "명사+명사 형태의 복합명사에서 오류가 자주 발생하며, 특히 'car usage', 'Latin American', 'third world'와 같이 관용적 표현에서 띄어쓰기·대소문자·관사 오류가 빈번하다.",
    "rule": "복합명사(예: car usage, Latin American, third world)는 반드시 표준 표기법(띄어쓰기, 대소문자, 관사)을 적용한 후 출제하며, 오답 선택지에는 띄어쓰기 오류, 관사 누락, 대소문자 오류 등을 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-05T17:55:45.776Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'and'로 연결된 동사구가 병렬 구조를 이룰 때, 시제·태·형태가 일치해야 하며, 'for + 동명사'는 'to + 동사원형'으로 대체되어야 한다. 또한 'a/an'의 선택은 명사의 가산성·수에 따라 결정된다.",
-   "rule": "'and'로 연결된 동사구가 병렬 구조를 이룰 때는 모든 동사가 동일한 시제·태·형태(예: 원형, 과거형, 수동태 등)를 유지해야 하며, 'for + 동명사' 구문은 'to + 동사원형'으로 수정해야 한다. 또한 가산 명사 앞에는 'a/an'을 정확히 사용해야 한다.",
    "sample": [
     "old english",
     "university press",
