@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T06:01:01.796Z",
+ "updated": "2026-08-09T07:20:28.452Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T07:19:59.144Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스에서는 '형용사 + 명사' 구문에서 강도·비교를 나타내는 형용사가 중복 사용되거나, 'than'을 생략하는 오류가 빈번했다. 또한 'that' 절의 불필요한 중복 사용과 시제 일치 오류가 두드러졌다.",
+   "rule": "'형용사 + 명사' 구문에서 강도·비교를 나타낼 때는 'more/less + 형용사'를 사용하고, 'than'을 반드시 포함하여 비교 대상을 명시하라. 또한 'that' 절은 불필요한 중복을 피하고, 시제 일치를 반드시 확인하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T06:00:34.433Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'another'와 'the other'의 구분이 문법적 오류로 자주 발생하며, 복수형 명사 앞에서는 'these'가 아닌 'this'가 오류로 나타난다. 또한 'while' 구문 내 동사 일치와 병렬 구조가 문법적 오류를 유발하는 주요 패턴이다.",
    "rule": "'another'와 'the other'의 차이를 묻는 문항에서, 'another'는 단수 가산명사, 'the other'는 복수 가산명사나 특정 집합의 나머지 하나를 가리킬 때 쓰임을 강조하여 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-04T20:03:28.362Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "원서 코퍼스에서 'old/new + noun' 패턴(예: old English, new york)이 빈번히 등장하며, 학생들은 이를 'the old another'나 'a new another'로 오용하는 경향이 있다. 또한 'between two'와 같은 전치사+숫자 조합이 연어로서 자주 쓰이지만, 학생들은 이를 'between two of'로 잘못 확장하는 경우가 많다.",
-   "rule": "'old/new + noun' 패턴에서 'another'는 'the other'로 대체하여 오답 유도(예: 'the another reason' → 'the other reason')하며, 'between two'는 항상 'between two [명사]' 형태로만 사용하도록 강제하는 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",
