@@ -1,6 +1,109 @@
 {
- "updated": "2026-08-09T09:07:02.414Z",
+ "updated": "2026-08-09T10:02:50.907Z",
  "samples": [
+  {
+   "ts": "2026-08-09T09:58:53.421Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as (A) [INDIRECT SUBJECT / DIRECT OBJECT]. The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them. By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper. (Sharpen, cut and wrap are (B) [inseparable / transitive] verbs.) (C) [interdependent / Intransitive] verbs An intransitive verb is one that does not demand any further constituent in the VP. ‘INtransitive’ means ‘has (and needs) no complement’. Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs. Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right. Intransitive VPs are the simplest VPs. So a sentence like Omar sighed is represented as in [17]. Note the [intrans] feature on the V node.",
+    "choices": [
+     "(A) INDIRECT SUBJECT - (B) transitive - (C) Intransitive",
+     "(A) INDIRECT SUBJECT - (B) inseparable - (C) Intransitive",
+     "(A) DIRECT OBJECT - (B) inseparable - (C) interdependent",
+     "(A) DIRECT OBJECT - (B) transitive - (C) Intransitive",
+     "(A) DIRECT OBJECT - (B) inseparable - (C) Intransitive"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) DIRECT OBJECT - (B) transitive - (C) Intransitive. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-09T09:59:52.766Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as DIRECT OBJECT. The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them. By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper. (Sharpen, cut and wrap are transitive verbs.) Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP. ‘INtransitive’ means ‘has (and needs) no complement’. Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs. Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right. Intransitive VPs are the simplest VPs. So a sentence like Omar sighed is represented as in [17]. Note the [intrans] feature on the V node.",
+    "choices": [
+     "직접목적어는 동사 V 의 [intrans] 특징을 지닌 NP 와 인접한 자리에 위치한다",
+     "직접목적어는 가위바위보 게임에서 이기는 쪽에 해당한다",
+     "‘sharpen’, ‘cut’, ‘wrap’은 직접목적어를 요구하는 동사들이다",
+     "‘sleep’, ‘die’, ‘laugh’, ‘sigh’는 보충어가 필요한 자동사들이다",
+     "‘Omar sighed’는 타동사 VP 로 완전한 문장으로 구성된다"
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 '[trans] 특징을 지닌 V 의 자매인 NP'가 직접목적어라고 설명했는데, 이 선지는 '[intrans] 특징'을 지닌 NP 와 인접한 자리에 위치한다고 잘못 이해한 것으로 보임. → 처방: 자동사와 타동사를 구분하는 특징([trans] vs [intrans])을 정확히 기억하고, 직접목적어는 '[trans]' 특징을 지닌 동사의 자매라는 점을 다시 확인할 것.\n② 진단: 지문에서 '가위바위보에서 지는 쪽이 직접목적어'라고 설명했는데, 이 선지는 반대로 '이기는 쪽'이라고 잘못 이해한 것으로 보임. → 처방: 지문에서 직접 인용한 내용을 그대로 기억하고, 가위바위보 비유가 어떤 뜻을 담고 있는지 다시 한번 읽어볼 것.\n④ 진단: 지문에서 'sleep, die, laugh, sigh'는 보충어가 필요 없는 자동사라고 설명했는데, 이 선지는 반대로 '보충어가 필요한 자동사'라고 잘못 이해한 것으로 보임. → 처방: 자동사와 타동사의 정의(보충어 필요 여부)를 정확히 구분하고, 지문에서 제시한 자동사의 예시를 다시 한번 확인할 것.\n⑤ 진단: 지문에서 'Omar sighed'는 '[intrans]' 특징을 지닌 자동사 VP 로 완전한 문장이라고 설명했는데, 이 선지는 반대로 '타동사 VP'라고 잘못 이해한 것으로 보임. → 처방: VP(동사구)의 종류(자동사 vs 타동사)를 정확히 구분하고, 지문에서 '[intrans]' 특징이 자동사를 뜻한다는 점을 다시 한번 확인할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-09T10:01:55.427Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as DIRECT OBJECT. ① The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them. ② By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper. ③ (Sharpen, cut and wrap are transitive verbs.) ④ Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP. ⑤ The distinction between transitive and intransitive verbs is not merely syntactic but also reflects semantic nuances in how agents interact with their environments. ‘INtransitive’ means ‘has (and needs) no complement’. Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs. Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right. Intransitive VPs are the simplest VPs. So a sentence like Omar sighed is represented as in [17]. Note the [intrans] feature on the V node.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 5,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘이 특징의 점’(①)이 앞 문장(‘NP 가 [trans] 특징을 가진 V 의 자매일 때 NP 는 직접목적어로 기능한다는 것’)과 연결된다는 점을 몰라서 오독했을 수 있다. ‘이 특징’이 무엇인지 명확히 짚지 않고 지나쳤다. → 처방: ‘이 특징’이란 ‘[trans] 특징을 가진 V 의 자매가 NP’라는 사실을 가리킨다는 점을 먼저 확인하고, 앞 문장과 이어지는지 확인하기.\n② 진단: ‘이 특징’이 무엇인지에 대한 설명이 ‘다른 하위 범주’로 넘어가면서 흐름이 바뀌는 줄 알고 오독했을 수 있다. ‘이 특징’이란 앞 문장의 ‘[trans]’를 가리킨다는 점을 놓쳤다. → 처방: ‘이 특징’이란 앞 문장에서 언급된 ‘[trans]’를 가리키는 것임을 기억하고, 앞뒤 문장의 연결을 확인하기.\n③ 진단: ‘가위바위보에서 지는 쪽’이란 예시가 문법 설명과 무관하다고 생각했을 수 있다. 하지만 예시는 ‘직접목적어’의 의미를 강조하기 위한 보조 설명일 뿐, 전체 흐름과는 무관하다는 점을 몰라서 오독했다. → 처방: 예시가 문법 설명의 보조 역할인지 확인하고, 주제와 직접 관련이 없으면 제외하기.\n④ 진단: ‘타동사와 자동사의 구문적 차이’를 설명하는 문장으로, 전체 흐름(‘직접목적어’와 ‘타동사’의 관계)에 부합한다고 오해했을 수 있다. 하지만 이 문장은 ‘직접목적어’와 ‘타동사’의 관계를 다루는 것이 아니라 ‘자동사와 타동사의 차이’를 설명하는 문장이다. → 처방: 문장의 주제가 ‘직접목적어’와 ‘타동사’의 관계인지 확인하고, 그렇지 않으면 제외하기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-09T09:06:30.973Z",
    "type": "배열영작",
@@ -262,91 +365,6 @@
     ],
     "answer": 2,
     "explanation": "정답 ⓑ: 문맥상 'oblique'가 와야 하는데 'direct'가 쓰여 부적절하다 — 앞 문장에서 'oblique lines'는 'neither parallel nor perpendicular'로 정의되어 있으며, 이 단어는 '평행도 아니고 수직도 아닌' 비스듬한 상태를 묘사하는 데 사용된다. 'direct'는 '직접적인'으로 반의어이지만, 문맥상 '평행이나 수직이 아닌 상태'를 설명하는 데 적합하지 않다.. [극성] 정답=비스듬한 상태(oblique) ↔ 오답=직접적인 상태(direct)\n[오답 진단·처방]\n① 진단: ⓐ 'elaborate'는 '정교한, 복잡한' 뜻으로 문맥에 맞지만, 학생은 '자세한, 상세한' 정도로만 이해해 '꾸미는' 뜻으로 오해했을 수 있음(예: '꾸미는 카드'). → 처방: 단어의 뜻을 정확히 외우고, 문맥에서 '정교한'으로 쓰였는지 확인하기.\n③ 진단: ⓒ 'mental'은 '정신적인, 마음의' 뜻으로 문맥에 맞지만, 학생은 '물리적인, 실제의'로 오해해 '눈에 보이는' 이미지로 오독했을 수 있음(예: '눈에 보이는 이미지'). → 처방: 단어의 뜻을 문장 전체에서 파악하고, '정신적인'이라는 뜻임을 기억하기.\n④ 진단: ⓓ 'remember'는 '기억하다' 뜻으로 문맥에 맞지만, 학생은 '되찾다, 상기하다' 정도로만 이해해 '다시 배우다'로 오해했을 수 있음(예: '다시 배우는 단어'). → 처방: 단어의 기본 뜻을 정확히 알고, 문맥에서 '기억하다'로 쓰였는지 확인하기.\n⑤ 진단: ⓔ 'divided'는 '나누다, 분할하다' 뜻으로 문맥에 맞지만, 학생은 '구분하다, 분류하다' 정도로만 이해해 '나열하다'로 오해했을 수 있음(예: '나열한 단어'). → 처방: 단어의 뜻을 문장 구조와 함께 파악하고, '나누다'라는 뜻임을 기억하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T02:35:16.565Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① *Reminder: Record answers on a sheet of paper.\n② Match the twenty words with their meanings.\n③ thin covering 3.\n④ not related to the subject 2.\n⑤ (Note the similarity between numbers 8 and 9.)\n⑥ fruitless, failing 4.\n⑦ WEEK 18 DAY 5 REVIEW While it is true that scientists have had remarkable success in teaching chimpanzees to communicate, we can be certain that even super-monkeys would have difficulty with any of the words below.\n⑧ However, higher animals who apply themselves can master all of them.\n⑨ REVIEW WORDS DEFINITIONS 1.",
-    "choices": [
-     "⑦-⑥-⑤-⑧-⑨-④-②-①-③",
-     "⑧-⑦-②-①-⑤-⑨-④-③-⑥",
-     "⑦-⑧-②-①-⑤-⑨-④-⑥-③",
-     "⑦-⑧-②-①-⑨-⑤-④-③-⑥",
-     "⑦-⑧-②-①-⑤-⑨-④-③-⑥"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ⑦-⑧-②-①-⑤-⑨-④-③-⑥. 흐름: ⑦ → ⑧(However) → ② → ① → ⑤ → ⑨ → ④ → ③ → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘③ thin covering’과 ‘⑥ fruitless, failing’이 마지막에 배치된 이유가 ‘마무리 부분에 정의가 나와야 한다’는 생각으로 오독한 것 같음. 지문 ⑨에서 ‘REVIEW WORDS DEFINITIONS 1.’이 먼저 나오고, 그다음에 ‘④ not related to the subject 2.’가 뒤에 배치되어야 하는데, 이 선지는 그 순서를 무시함. → 처방: 글의 흐름을 따라 ‘정의’가 먼저 나오는 부분을 찾고, 그다음에 ‘예시’나 ‘마무리’가 오는 구조임을 기억할 것.\n② 진단: ‘⑤ (Note the similarity between numbers 8 and 9.)’가 ‘⑧ However, higher animals who apply themselves can master all of them.’ 뒤에 배치된 이유가 ‘5번과 8번의 유사성을 먼저 설명해야 한다’는 오해로 보임. 실제로는 5번이 ‘주의사항’으로, 8번은 ‘결과’로 이어지는 흐름임. → 처방: ‘주의사항’(⑤) 다음에는 ‘결과’(⑧)가 오는 구조임을 기억하고, 번호 순서가 아니라 글의 흐름을 먼저 생각하라.\n③ 진단: ‘⑥ fruitless, failing’이 ‘④ not related to the subject’보다 앞에 배치된 이유가 ‘정의가 먼저 나와야 한다’는 오독 때문. 지문에서 ‘④’는 ‘2’번으로, ‘⑥’은 ‘4’번으로 번호가 매겨져 있어, 번호 순서대로 배치해야 함을 간과함. → 처방: ‘REVIEW WORDS DEFINITIONS’에서 나온 번호 순서대로 정의를 배치해야 한다는 점을 기억하라.\n④ 진단: ‘⑨ REVIEW WORDS DEFINITIONS 1.’이 ‘⑤ (Note the similarity...)’보다 앞에 배치된 이유가 ‘정의가 먼저 나와야 한다’는 생각으로 오독한 것 같음. 실제로는 ‘주의사항’(⑤)이 먼저 나오고, 그다음에 ‘정의’(⑨)가 오는 구조임. → 처방: ‘주의사항’(⑤)이 먼저 나오는지 확인하고, 그다음에 ‘정의’(⑨)가 오는 구조임을 기억하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T23:50:06.437Z",
-   "type": "연결어빈칸",
-   "level": "중",
-   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.57,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that these strings are constituents. ___(A)___, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). ___(B)___ the AP is a Complement of the lexical verb inside VP, or an Adjunct. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
-    "choices": [
-     "Therefore …… In contrast",
-     "However …… We can go further and ask whether",
-     "However …… In fact",
-     "However …… In addition",
-     "To put it simply …… Indeed"
-    ],
-    "answer": 3,
-    "explanation": "(A)는 앞 내용과 '대조' 관계로 However, (B)는 '예시' 관계로 We can go further and ask whether 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘Therefore’는 앞 문장의 결론을 이어야 하는데, 지문은 ‘이것은 옳을 수 없다’며 반박하고 있어 문맥이 맞지 않는다. ‘In contrast’는 대조를 나타내지만, (A) 뒤 문장이 ‘이것은 옳을 수 없다’를 뒷받침하는 내용이어서 대조가 아니라 ‘사실’로 이어야 한다. → 처방: 빈칸 앞뒤 문장의 관계를 정확히 확인하라. ‘이것은 옳을 수 없다’는 반박이므로 ‘However’로 시작하고, 뒤에는 ‘사실’을 뜻하는 말로 이어야 한다.\n② 진단: ‘However’는 옳지만 ‘We can go further and ask whether’는 뒤 문장이 새로운 질문을 던지는 구조라서 문맥에 맞지 않다. 지문은 ‘왜 안 되는지’를 설명하는 내용이어서 ‘In fact’가 더 자연스럽다. → 처방: 빈칸 뒤 문장이 ‘왜 안 되는지’를 설명하는지 확인하라. 설명을 보강하는 말로 ‘In fact’를 써야 한다.\n④ 진단: ‘However’는 옳지만 ‘In addition’는 ‘추가’나 ‘더불어’를 뜻해 문맥이 맞지 않는다. 지문은 (B) 뒤 문장이 ‘AP 가 보어인지 부가어인지’를 설명하는 내용이라서 ‘사실’을 뜻하는 말이 필요하다. → 처방: 빈칸 뒤 문장이 ‘사실’을 보강하거나 설명하는지 확인하라. ‘In fact’를 써야 한다.\n⑤ 진단: ‘To put it simply’는 간단하게 설명할 때 쓰이지만, 지문은 복잡한 논리를 전개하고 있어 문맥이 맞지 않는다. ‘Indeed’는 ‘사실’을 뜻하지만, 앞의 ‘However’와 어울리지 않는다. → 처방: 빈칸 앞 문장이 반박이라면 ‘However’를 쓰고, 뒤에는 ‘사실’을 뜻하는 말로 이어야 한다. ‘Indeed’는 ‘사실’이라는 뜻이지만 앞의 ‘However’와 어울리지 않으므로 주의하라."
-   }
-  },
-  {
-   "ts": "2026-08-08T23:50:11.717Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'constituents', 'coordination', 'structures' / 10~14단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] RNR structures do not create new constituents despite apparent coordination of strings.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
