@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T15:50:15.232Z",
+ "updated": "2026-08-09T16:59:08.678Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T16:58:38.185Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'old/new + noun' 형태의 연어에서 명사의 단복수 통일 오류가 빈번하며, 특히 'energy'/'knowledges'와 같이 비표준 복수형이 오답으로 자주 활용됨. 또한 'Italian'과 같이 고유명사/형용사의 대소문자 오류도 빈번한 패턴임.",
+   "rule": "'old/new/energy/knowledge/Italian' 등 특정 연어 명사(혹은 형용사)의 단복수 통일, 대소문자 오류, 또는 'those + 복수명사' 구문의 오용(예: 'those energy' → 'those energy sources')을 오답으로 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T15:49:47.624Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'whole'은 전체 집합을 가리킬 때 쓰이며, 'all'은 개별 단위나 복수 명사와 결합해 '모든 ~'로 일반화한다. 'more'는 동사 뒤가 아닌 수식 대상 앞에 위치해야 한다.",
    "rule": "'whole' + 단수명사(집합체) → 'all' + 복수명사(개별 단위)로 수정하는 오류 패턴을 변형 문제로 출제하라. (예: 'the whole emission' → 'all emissions')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-05T20:04:31.638Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "명사+명사 형태의 복합명사에서 오류가 자주 발생하며, 특히 'car usage', 'Latin American', 'third world'와 같이 관용적 표현에서 띄어쓰기·대소문자·관사 오류가 빈번하다.",
-   "rule": "복합명사(예: car usage, Latin American, third world)는 반드시 표준 표기법(띄어쓰기, 대소문자, 관사)을 적용한 후 출제하며, 오답 선택지에는 띄어쓰기 오류, 관사 누락, 대소문자 오류 등을 포함시킨다.",
    "sample": [
     "old english",
     "university press",
