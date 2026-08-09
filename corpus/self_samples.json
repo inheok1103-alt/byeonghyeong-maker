@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-08T23:50:46.834Z",
+ "updated": "2026-08-09T02:36:56.568Z",
  "samples": [
+  {
+   "ts": "2026-08-09T02:35:16.565Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① *Reminder: Record answers on a sheet of paper.\n② Match the twenty words with their meanings.\n③ thin covering 3.\n④ not related to the subject 2.\n⑤ (Note the similarity between numbers 8 and 9.)\n⑥ fruitless, failing 4.\n⑦ WEEK 18 DAY 5 REVIEW While it is true that scientists have had remarkable success in teaching chimpanzees to communicate, we can be certain that even super-monkeys would have difficulty with any of the words below.\n⑧ However, higher animals who apply themselves can master all of them.\n⑨ REVIEW WORDS DEFINITIONS 1.",
+    "choices": [
+     "⑦-⑥-⑤-⑧-⑨-④-②-①-③",
+     "⑧-⑦-②-①-⑤-⑨-④-③-⑥",
+     "⑦-⑧-②-①-⑤-⑨-④-⑥-③",
+     "⑦-⑧-②-①-⑨-⑤-④-③-⑥",
+     "⑦-⑧-②-①-⑤-⑨-④-③-⑥"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ⑦-⑧-②-①-⑤-⑨-④-③-⑥. 흐름: ⑦ → ⑧(However) → ② → ① → ⑤ → ⑨ → ④ → ③ → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘③ thin covering’과 ‘⑥ fruitless, failing’이 마지막에 배치된 이유가 ‘마무리 부분에 정의가 나와야 한다’는 생각으로 오독한 것 같음. 지문 ⑨에서 ‘REVIEW WORDS DEFINITIONS 1.’이 먼저 나오고, 그다음에 ‘④ not related to the subject 2.’가 뒤에 배치되어야 하는데, 이 선지는 그 순서를 무시함. → 처방: 글의 흐름을 따라 ‘정의’가 먼저 나오는 부분을 찾고, 그다음에 ‘예시’나 ‘마무리’가 오는 구조임을 기억할 것.\n② 진단: ‘⑤ (Note the similarity between numbers 8 and 9.)’가 ‘⑧ However, higher animals who apply themselves can master all of them.’ 뒤에 배치된 이유가 ‘5번과 8번의 유사성을 먼저 설명해야 한다’는 오해로 보임. 실제로는 5번이 ‘주의사항’으로, 8번은 ‘결과’로 이어지는 흐름임. → 처방: ‘주의사항’(⑤) 다음에는 ‘결과’(⑧)가 오는 구조임을 기억하고, 번호 순서가 아니라 글의 흐름을 먼저 생각하라.\n③ 진단: ‘⑥ fruitless, failing’이 ‘④ not related to the subject’보다 앞에 배치된 이유가 ‘정의가 먼저 나와야 한다’는 오독 때문. 지문에서 ‘④’는 ‘2’번으로, ‘⑥’은 ‘4’번으로 번호가 매겨져 있어, 번호 순서대로 배치해야 함을 간과함. → 처방: ‘REVIEW WORDS DEFINITIONS’에서 나온 번호 순서대로 정의를 배치해야 한다는 점을 기억하라.\n④ 진단: ‘⑨ REVIEW WORDS DEFINITIONS 1.’이 ‘⑤ (Note the similarity...)’보다 앞에 배치된 이유가 ‘정의가 먼저 나와야 한다’는 생각으로 오독한 것 같음. 실제로는 ‘주의사항’(⑤)이 먼저 나오고, 그다음에 ‘정의’(⑨)가 오는 구조임. → 처방: ‘주의사항’(⑤)이 먼저 나오는지 확인하고, 그다음에 ‘정의’(⑨)가 오는 구조임을 기억하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-08T23:50:06.437Z",
    "type": "연결어빈칸",
@@ -313,40 +346,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: construed 의 뜻을 'admit(인정하다)'로 오독했는데, 지문에서 construe 는 'interpret(해석하다)'로 정의되어 있다. 'admit'은 contrite 의 뜻과 혼동한 듯하다. → 처방: 단어 뜻을 외울 때, 유사한 단어(예: contrite)와 혼동하지 않도록 각 단어의 정의를 정확히 적고 예문까지 함께 기억하라.\n② 진단: consummate 를 'labored(고된)'로 오해했는데, 지문에서 consummate 는 'perfect(완벽한)'를 뜻한다. 'labored'는 contrived 의 뜻과 비슷하다고 착각한 것 같다. → 처방: 단어 뜻을 외울 때는 문맥(예: 수학 용어, 일상 단어)을 고려해 정확히 기억하고, 유사한 단어와 비교해보라.\n③ 진단: contentious 를 'festive(축제의)'로 잘못 해석했는데, 지문에서 contentious 는 'argumentative(논쟁을 좋아하는)'를 뜻한다. 'festive'는 convivial 의 뜻과 혼동한 듯하다. → 처방: 단어 뜻을 외울 때는 뜻뿐 아니라 반대말(예: contentious ↔ peaceful)도 함께 공부해 혼동을 줄이라.\n⑤ 진단: corollary 를 '자연적 원인으로' 정의했는데, 지문에서 corollary 는 'something that follows; a natural consequence(당연한 결과)'를 뜻한다. '원인'이 아니라 '결과'로 이해해야 한다. → 처방: 단어 뜻을 외울 때는 '정의'와 '예문'을 함께 읽고, '원인과 결과'를 구분해 정확히 이해하라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T17:48:33.017Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Quick Quiz #26 Match each word in the first column with its definition in the second column. Check your answers here. 1. construe a. admitting guilt 2. consummate b. interpret 3. contentious c. perfect 4. contiguous d. labored 5. contingent e. dependent 6. contrite f. abundant 7. contrived g. adjoining 8. conventional h. argumentative 9. convivial i. festive 10. copious j. common COROLLARY (KOR uh ler ee) n something that follows; a natural consequence In mathematics, a corollary is a law that can be deduced without further proof from a law that has already been proven. • <u>Bloodshed and death are corollaries of any declaration of war.</u> • Higher prices were a corollary of the two companies’ agreement not to compete. CORROBORATE (kuh ROB uh rayt) v to confirm; to back up with evidence • I knew my statement was correct when my colleague corroborated it. • Henny Penny’s contention that the sky was falling could not be corroborated. That is, no one was able to find any fallen sky.",
-    "choices": [
-     "Violence and fatalities inevitably follow the act of initiating armed conflict.",
-     "Bloodshed and death are the primary causes of declaring war.",
-     "Bloodshed and death are the primary causes of any war declaration.",
-     "War inevitably leads to declarations of bloodshed and death.",
-     "The phrase 'bloodshed and death' literally means the same as 'corollaries' in this context."
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'Violence and fatalities inevitably follow the act of initiating armed conflict.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘primary causes(주된 원인)’가 아니라 ‘자연스러운 결과(자동으로 따라오는 결과)’라는 뜻의 ‘corollary’를 ‘원인’으로 오해했음. 지문에서 ‘corollary’는 ‘~의 결과’로 설명되어 있음. → 처방: ‘corollary’의 뜻을 ‘결과’로 정확히 기억하고, ‘원인’과 혼동하지 않도록 문제에서 ‘~의 결과’라는 표현을 찾기.\n③ 진단: ‘primary causes(주된 원인)’와 ‘any war declaration(어떤 전쟁 선언)’을 잘못 연결했음. ‘corollary’는 ‘결과’이지 ‘원인’이 아님. 또한 ‘any declaration of war(전쟁 선언)’ 전체가 ‘corollary’의 대상임. → 처방: ‘corollary’의 뜻을 ‘결과’로 떠올리고, ‘~의 결과’라는 구절을 문제에서 찾아 연결하기.\n④ 진단: ‘War(전쟁)’이 ‘declarations of bloodshed and death(피의 선언)’를 일으킨다고 뒤집어 해석했음. 지문에서 ‘corollary’는 ‘선언의 결과’이지 ‘전쟁의 결과’가 아님. → 처방: ‘corollary’의 뜻을 ‘A 의 결과’로 기억하고, 문제에서 ‘선언’이라는 단어를 찾은 뒤 ‘선언의 결과’로 해석하기.\n⑤ 진단: ‘bloodshed and death’가 ‘corollaries’라는 단어를 ‘문자 그대로 같다’고 오해했음. ‘corollary’는 ‘결과’라는 뜻이지 같은 단어라는 뜻이 아님. → 처방: ‘corollary’를 ‘결과’라는 뜻으로 이해하고, 문제에서 ‘~의 결과’라는 의미를 찾은 뒤 ‘bloodshed and death’는 그 결과의 예시임을 기억하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]

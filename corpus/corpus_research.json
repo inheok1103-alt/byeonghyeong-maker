@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-08T23:50:46.830Z",
+ "updated": "2026-08-09T02:36:56.564Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T02:36:28.378Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원문에서 'create' 동사 사용 시 직접목적어 없이 문법적 오류가 빈번하며, 'control' 동사도 수동태가 필요한 경우가 많다. 또한 'open the door for' 구문은 중복 표현으로 오류가 발생한다.",
+   "rule": "'동사 + 목적어' 구조에서 목적어가 생략된 경우나, 수동태가 필요한 동사(예: control, create 등)를 능동태로 사용한 문장은 오류로 간주하고, 목적어 추가 또는 수동태 전환을 요구하는 문제를 출제한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-08T23:50:13.867Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'for + reason relations' 패턴이 빈번히 나타나며, 한국어 학습자의 경우 'for some reasons' → 'for various reasons'로 구체화하는 오류가 두드러진다. 또한, 소유격 오류('thier' → 'their')와 시제·태 전환('needs talk' → 'need to talk')에서도 패턴화된 오류가 확인된다.",
    "rule": "'for + reason relations' 표현을 사용할 때는 'some' 대신 'various', 'several', 'many' 등 구체적인 수식어를 반드시 포함하여야 하며, 주어-동사 일치와 시제·태 전환(예: 'needs' → 'need to')을 철저히 검토하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-04T12:26:26.113Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'시간 표현(until now, after all)과 시제(try→tried)'의 연어적 불일치, 'weather-related'와 같은 하이픈 사용 규칙, 'instead of + 단수명사'의 오용 등 문법·의미 연어의 오류 패턴이 다수 관찰된다.",
-   "rule": "시간 표현(until now, after all)과 시제(try→tried)는 반드시 일치해야 하며, 'weather-related'와 같이 복합형용사는 하이픈으로 연결해야 하고, 'instead of' 뒤에는 복수명사(cars)가 와야 한다.",
    "sample": [
     "old english",
     "university press",
