@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T17:50:12.183Z",
+ "updated": "2026-08-09T19:04:27.797Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T19:03:55.240Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'old english', 'middle english' 등 역사적 언어 변천 패턴과 'noun phrase'의 명사구 구조가 'new york'와 같은 고유명사 단위의 조합으로 자주 등장하며, 문법 오류 쌍에서 'concepts and ideas which they gave us' → 'concepts and ideas they gave us'로의 생략 패턴과 'end up loosing' → 'end up losing'의 동사 형태 오류가 반복된다.",
+   "rule": "'명사구 + 관계대명사 + 주어 + 동사' 구조는 원서 패턴상 생략 가능한 경우가 많으므로, 학생 오류 분석 시 'which they gave us' → 'they gave us'로의 생략 가능성을 우선 검토하고, 'loose' vs 'lose'와 같이 발음·형태가 유사한 동사의 철자 오류는 문맥상 동사 형태(ing, ed, s 등)를 반드시 확인하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T17:49:45.055Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'sustain and active'와 같이 동사+형용사 구조가 잘못된 경우, 'sustain and be active'로 수정되는 패턴이 빈번히 관찰된다. 또한 'looks to pretty'와 같은 잘못된 보어 구조가 'looks too pretty'로 교정되는 경향이 강하다.",
    "rule": "원서 문체 패턴을 반영하여, '동사 + and + 형용사' 구조가 등장할 경우, 반드시 '동사 + and + be + 형용사' 또는 '형용사 보어 구조(looks too pretty)'로 수정하도록 변형 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-05T23:19:49.027Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 실제 패턴에서 '명사 + 동사(3인칭 단수) + 목적어' 구조가 빈번히 나타나며, 특히 'possess'나 'offer'와 같은 동사가 '-s' 접미사를 동반한 3인칭 단수 형태로 사용된다. 또한 'between two'와 같은 전치사구는 'A and B'로 대체 가능한 경우가 많다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, '주어(3인칭 단수) + 동사(-s) + 목적어' 구조의 문장은 반드시 3인칭 단수 동사를 사용하도록 변형 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
