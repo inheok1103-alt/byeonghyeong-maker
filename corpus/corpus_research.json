@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T07:20:28.452Z",
+ "updated": "2026-08-09T09:07:02.410Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T09:06:33.453Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'than other'는 'than the other'보다 훨씬 높은 빈도로 사용되며, 특히 비교 대상이 복수일 때 'the'가 생략되는 경향이 강하다. 또한, 'how to do'는 'how to do better'와 같이 목적·방법의 의미를 담을 때 'is'가 불필요하고, 'be took full use of'는 능동태 전환 오류가 빈번하게 발생한다.",
+   "rule": "비교 구문에서 'than other'와 'than the other'의 빈도 차이를 반영하여, 'than other'가 정답인 문항을 우선적으로 출제하고, 'be took'와 같은 능동태 전환 오류는 'become'이나 'be used'로 수정하도록 유도하는 문제를 설계한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T07:19:59.144Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'the + 명사 + is/are' 구조가 빈번하며, 특히 'the amount of + 복수명사'가 단수로 처리되는 오류가 다수 발견된다. 또한 'which means that'가 'which means'로 단순화되는 경향이 있다.",
    "rule": "'the + amount/number of + 복수명사' 뒤에는 단수 동사(is/has/was)를 사용해야 하며, 'which means that'는 'which means'로 축약하여 문맥상 자연스럽게 연결하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-04T21:42:38.352Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'another'와 'the other'의 구분이 문법적 오류로 자주 발생하며, 복수형 명사 앞에서는 'these'가 아닌 'this'가 오류로 나타난다. 또한 'while' 구문 내 동사 일치와 병렬 구조가 문법적 오류를 유발하는 주요 패턴이다.",
-   "rule": "'another'와 'the other'의 차이를 묻는 문항에서, 'another'는 단수 가산명사, 'the other'는 복수 가산명사나 특정 집합의 나머지 하나를 가리킬 때 쓰임을 강조하여 출제하라.",
    "sample": [
     "old english",
     "university press",

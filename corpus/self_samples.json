@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-09T07:20:28.456Z",
+ "updated": "2026-08-09T09:07:02.414Z",
  "samples": [
+  {
+   "ts": "2026-08-09T09:06:30.973Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 소시지로 만든 성은 그림책 성처럼 긴 사슬이 배열되어 있음을 암시합니다.\n주어진 단어: ( made / of / chains / castle / suggests / A / like / arranged / picture-book / sausages / a / castle / long )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] A castle made of sausages suggests long chains arranged like a picture-book castle.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-09T07:18:49.130Z",
    "type": "네모어휘ABC",
@@ -328,25 +347,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] RNR structures do not create new constituents despite apparent coordination of strings.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-08T22:48:55.984Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "The resulting structure satisfies the θ-criterion (which requires each argument to be assigned a single θ-role, and each θ-role to be assigned to a single argument), in that ⓐ<u>he is the EXPERIENCER arguments</u> of want, the bracketed CP in (81) is the THEME complement of want, ⓑ<u>PRO is the AGENT argument</u> of scare, and ⓒ<u>them the EXPERIENCER argument</u> of scare. The analysis of control predicates presented here differs from that presented in chapter 3 in that it assumes that ⓓ<u>the PRO subject of a control infinitive</u> like that bracketed in (79b) He does want to scare them is merged in spec-V, and not (as assumed in chapter 3) in spec-T. The requirement for PRO to be generated in spec-V follows from the VP-Internal Subject Hypothesis and the Predicate-Internal ThetaMarking Hypothesis which posit that arguments are generated and theta-marked internally to a projection of their predicate, so that ⓔ<u>PRO (by virtue of being the agent argument</u> of scare) is generated as the specifier",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓐ: 'he is the EXPERIENCER arguments' → 'he is the EXPERIENCER argument' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
