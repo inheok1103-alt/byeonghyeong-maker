@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-09T14:04:29.160Z",
+ "updated": "2026-08-09T15:01:47.391Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 원문의 핵심 개념(가변성, 투명성, 문법 범주)과 용어(예: prepositions, adverbs)를 정확히 반영하고, 중립적·균형 있는 표현으로 기술해야 하며, 과장된 부정 표현을 지양해야 한다.",
+   "src": "자가학습:요지",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-09T14:54:03.953Z"
+  },
+  {
+   "rule": "개선 규칙: \"영영풀이의 핵심 의미는 원문에 직접 등장하는 'front'의 공간적 용법(예: 'the front of ~')에 기반하여 정의하며, 발문 조건은 원문에 명시된 요소(예: 'the front of the stage')로 한정하고, 'front'의 의미는 '정면/앞쪽'으로 통일하여 사전 정의('foremost side' 등)와 혼동되지 않도록 한다.",
+   "src": "자가학습:본문찾아쓰기",
+   "score": 60,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-09T15:01:01.288Z"
+  },
   {
    "rule": "개선 규칙:** 지문 내 혼동어(예: *allusion/illusion*)는 반드시 대조적 정의(예: *\"allusion: indirect reference / illusion: false perception\"*)로 제시하고, 빈칸의 정답 유일성을 확보하기 위해 예시는 오답 선지와 직접 연결되는 문맥(예: *\"The law was ambiguous\"* → *\"ambiguous: open to multiple interpretations\"*)으로 구성할 것.",
    "src": "자가학습:빈칸(어구)",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-03T19:59:36.809Z"
-  },
-  {
-   "rule": "모든 복합세트 문항은 ‘①특정 언어 현상의 구조적 설명(예: wh-표현 이동, CP 구조·보조동사 도치)’, ‘②해당 현상의 기능적·의미적 역할’, ‘③난이도 등급(기본·발전·심화)’을 명시한 후, 고교 수준에 맞게 원지문을 재구성·축약하여 발문을 작성해야 한다.",
-   "src": "자가학습:복합세트",
-   "score": 58,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-03T20:00:44.169Z"
-  },
-  {
-   "rule": "모든 영어 문장 변환 문제는 변환 대상(능동/수동)과 보어/동사의 형태(능동형/수동형) 규정을 엄밀히 명시하고, 오답 선지를 사전에 검증하여 정답 유일성을 보장해야 한다.",
-   "src": "자가학습:문장전환",
-   "score": 69,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-03T20:06:52.631Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
