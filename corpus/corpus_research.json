@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T16:59:08.678Z",
+ "updated": "2026-08-09T17:50:12.183Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T17:49:45.055Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구 내 관사 생략 오류와 전치사+명사 조합의 오류가 빈번하며, 특히 'most of + 복수명사'가 'most + 복수명사'로 수정되는 패턴이 두드러진다.",
+   "rule": "복수명사 앞에 'most of'가 쓰였을 때, 'most + 복수명사'로 수정하는 것이 문법적으로 옳은지 확인하라. 또한 'to + 동사원형' 구조에서 부정사가 문두에 오지 않도록 'not to'로 재구성하는지 검증하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T16:58:38.185Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 실제 패턴에서 '명사 + 동사(3인칭 단수) + 목적어' 구조가 빈번히 나타나며, 특히 'possess'나 'offer'와 같은 동사가 '-s' 접미사를 동반한 3인칭 단수 형태로 사용된다. 또한 'between two'와 같은 전치사구는 'A and B'로 대체 가능한 경우가 많다.",
    "rule": "원서 코퍼스의 실제 패턴을 반영하여, '주어(3인칭 단수) + 동사(-s) + 목적어' 구조의 문장은 반드시 3인칭 단수 동사를 사용하도록 변형 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-05T21:36:05.732Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'whole'은 전체 집합을 가리킬 때 쓰이며, 'all'은 개별 단위나 복수 명사와 결합해 '모든 ~'로 일반화한다. 'more'는 동사 뒤가 아닌 수식 대상 앞에 위치해야 한다.",
-   "rule": "'whole' + 단수명사(집합체) → 'all' + 복수명사(개별 단위)로 수정하는 오류 패턴을 변형 문제로 출제하라. (예: 'the whole emission' → 'all emissions')",
    "sample": [
     "old english",
     "university press",
