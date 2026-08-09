@@ -1,6 +1,61 @@
 {
- "updated": "2026-08-09T21:50:46.417Z",
+ "updated": "2026-08-09T22:52:49.861Z",
  "samples": [
+  {
+   "ts": "2026-08-09T22:52:12.071Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Mullins’ aggressive start followed by a failure to land decisive blows",
+     "champion’s intimidating strategy leading to Mullins’ defeat",
+     "Mullins’ initial aggressive stance ignoring opponent’s strength",
+     "constant aggressive attacks resulting in immediate knockout",
+     "Mullins’ belligerent attitude overcoming the champion’s defenses"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The boxing match described in the text highlights Mullins' aggressive yet ineffective strategy against the champion.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도 왜곡·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 정도 왜곡· ⑤ 오답 — 조건 누락\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The boxing match described in the text highlights Mullins]\n[오답 진단·처방]\n① 진단: ‘Mullins 의 공격적인 시작’이 맞지만 ‘결정적 타격을 못 날린 실패’를 강조한 부분은 글에 없음. ‘alacrity 로 sprang 하고 disdain 을 보인 것은 맞지만 패배는 ‘intimidate 하지 못한 결과’가 아니라 ‘feint 와 uppercut 에 당한 것’임. → 처방: ‘시작’과 ‘결과’를 구분하지 말고 글 전체 흐름(‘belligerent 태도 → intimidate 실패 → 패배’)을 따라가기.\n② 진단: ‘champion 의 intimidate 전략’이 아니라 ‘Mullins 가 intimidate 하려 했지만 실패한 것’이 글의 핵심. ‘intimidate’는 Mullins 가 한 행동이지 champion 이 한 행동이 아님. → 처방: ‘누가 누구를 intimidate 하는지’를 정확히 짚고, 동사 주체와 목적어를 구분해서 읽기.\n④ 진단: ‘끊임없는 공격’이 아니라 Mullins 는 ‘한 번의 공격적 돌입’만 했고, ‘즉각적인 KO’는 일어나지 않음. ‘adroit feint 와 uppercut’으로 패배했으므로 ‘즉각적’이란 표현은 오류. → 처방: ‘상대방의 반격 없이 한 방에 끝나는 상황’이 아니라 ‘상대방의 기술에 당한 패배’를 떠올리며 읽기.\n⑤ 진단: ‘Mullins 의 공격적 태도가 champion 의 방어선을 뚫었다’는 내용은 글에 없음. Mullins 는 champion 의 ‘feint 와 uppercut’에 당해 패배했으므로 ‘overcoming’이란 표현은 틀림. → 처방: ‘승리’와 ‘패배’를 구분하고, ‘overcoming’이란 단어가 나올 때는 ‘누가 누구를 이겼는지’를 정확히 확인하기."
+   }
+  },
+  {
+   "ts": "2026-08-09T22:52:19.085Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] Although this belligerent attitude impressed the referee, it failed to intimidate the champ.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Although the referee was impressed by this belligerent attitude, the champ was not intimidated by it. (포인트: 능동태(attitude impressed the referee) → 수동태(referee was impressed by attitude), 능동태(it failed to intimidate the champ) → 수동태(the champ was not intimidated by it))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-09T21:49:54.527Z",
    "type": "요지",
@@ -299,76 +354,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [수일치] ⓔ: 'in no way' → 'in no ways' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T15:49:06.225Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "There is however another important representational commitment in Radical ⓐ<u>Construction</u> Grammar, shared with other construction grammars, namely that ⓑ<u>clear</u> constructions may fill the roles of other complex constructions. For example, the ⓒ<u>Passive</u> Subject role in the Passive Voice construction is filled by a Subject Phrase construction which may itself be complex: for example consisting of a Noun combined with a Relative Clause, which in turn is a complex construction in its own right. The nesting of complex constructions is similar to the constituent structure of nonconstructional theories. However it differs from those in that the existence of a nested construction is justified only by the autonomy of the construction (i.e. its conventionalization independent of the larger construction). In a construction grammar, some “constituents” may not be ⓓ<u>autonomous</u> constructions. For example, in the idiomatic construction shoot the breeze, the breeze is not an autonomous phrasal ⓔ<u>constituent</u> any more, since the choice of Definite Article as well as the choice of Noun are fixed for this construction.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 2,
-    "explanation": "정답 ⓑ: 문맥상 'complex'가 와야 하는데 'clear'가 쓰여 부적절하다 — ‘complex constructions may fill the roles of other complex constructions’에서 ‘complex’는 ‘복잡한’이라는 뜻이 아니라 ‘구성된, 구성체의’로 쓰였기 때문에 ‘clear(명료한)’는 문맥상 부적절하다. 문맥은 구성체의 계층성과 중첩을 논하는 것이지 복잡성 여부를 판단하는 것이 아니다.. [극성] 정답=구성체의 복잡성(구체적 의미) ↔ 오답=명료성(추상적 반대 의미)\n[오답 진단·처방]\n① 진단: ⓐ<u>Construction</u>은 '구성'이라는 뜻으로 문맥상 '문법'을 가리키는 말이므로 '구성 문법'으로 자연스럽지만, 학생은 '구성' 자체를 '건축'이나 '만들기'로 오해했을 가능성이 있다. → 처방: 지문에서 'Construction Grammar'는 '구성 문법'으로 통칭된다는 점을 기억하고, 'Construction'이 '문법'의 한 종류임을 떠올리자.\n③ 진단: ⓒ<u>Passive</u>는 '수동태'를 뜻하는데, 학생은 '수동'이라는 말의 의미를 '움직이지 않음'이나 '소극적'으로 오해하고 '능동'과 혼동했을 수 있다. → 처방: 수동태는 '~이/가 당하는 상태'라는 뜻을 가진다는 점을 기억하고, 'Passive'가 문법 용어임을 떠올리자.\n④ 진단: ⓓ<u>autonomous</u>는 '자율적인' 또는 '독립적인'을 뜻하는데, 학생은 '자동'이나 '자연스러운'으로 오해하고 '독립성'의 의미를 놓쳤을 수 있다. → 처방: 문맥에서 'autonomous construction'은 '독립된 구성'을 의미한다는 점을 기억하고, 'autonomous'가 '독립성'을 강조한다는 사실을 떠올리자.\n⑤ 진단: ⓔ<u>constituent</u>는 '구성 요소'를 뜻하는데, 학생은 '구성'을 '구성품'이나 '부분'으로만 이해하고, 문법 용어로서의 'constituent'를 오해했을 수 있다. → 처방: 문법에서 'constituent'는 '문장의 구성 요소'를 가리킨다는 점을 기억하고, '구성 요소'라는 뜻을 떠올리자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T15:49:33.294Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "There is however another important representational commitment in Radical Construction Grammar, shared with other construction grammars, namely that complex constructions may fill the roles of other complex constructions. For example, the Passive Subject role in the Passive Voice construction is filled by a Subject Phrase construction which may itself be complex: for example consisting of a Noun combined with a Relative Clause, which in turn is a complex construction in its own right. The nesting of complex constructions is similar to the constituent structure of nonconstructional theories. However it differs from those in that the existence of a nested construction is justified only by the autonomy of the construction (i.e. its conventionalization independent of the larger construction). In a construction grammar, some “constituents” may not be autonomous constructions. [ ]",
-    "choices": [
-     "The idiom 'shoot the breeze' exemplifies how constructions can freely combine nouns and articles without losing their individual autonomy.",
-     "In idiomatic expressions like 'shoot the breeze,' the noun 'breeze' retains its autonomous status as a phrasal constituent despite the fixed article.",
-     "The fixed article 'the' in 'shoot the breeze' highlights that idioms always preserve the grammatical independence of their individual components.",
-     "In the idiom 'shoot the breeze,' the definite article 'the' and the noun 'breeze' are not freely selectable, as their fixed usage demonstrates that neither functions as an independent phrasal unit.",
-     "Unlike other constructions, idioms such as 'shoot the breeze' allow the noun 'breeze' to be replaced with any other noun while maintaining the same meaning."
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 원문 'For example, in the idiomatic construction shoot the breeze, the breeze is not an autonomous phrasal constituent any more, since the choice of Definite Article as well as the choice of Noun are fixed for this construction.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문은 'idiom'이 아니라 'construction'의 '자율성'과 '고정성'을 강조하는데, 이 선지는 'idiom'의 '자유로운 조합'을 예시로 든 것이 지문과 맞지 않음. → 처방: 문제에서 'idiom'이 아닌 'construction'의 특성을 묻는다는 점을 먼저 확인하고, 선지의 예시가 지문의 핵심 주장과 부합하는지 검토하기.\n② 진단: 지문은 'idiom'의 '고정성'을 강조하는데, 이 선지는 'breeze'가 '자율적 구성체'로 남아 있다고 설명하여 지문의 핵심과 반대됨. → 처방: 지문의 '자율성'과 '고정성'의 관계를 정확히 이해하고, 선지가 두 개념 중 어느 쪽을 중시하는지 비교하기.\n③ 진단: 지문은 'idiom'의 '고정성' 때문에 구성요소가 독립적이지 않음을 설명하는데, 이 선지는 'idiom'이 항상 '문법적 독립성'을 보존한다고 주장하여 오류. → 처방: 지문의 '자율성'과 '고정성'의 관계를 정리하고, 'idiom'이 고정되어 있음을 보여주는 예시를 찾기.\n⑤ 진단: 지문은 'idiom'의 '고정성'을 설명하는데, 이 선지는 'breeze'를 다른 명사로 대체할 수 있다고 주장하여 지문의 핵심과 반대됨. → 처방: 지문의 '고정성' 개념을 정확히 이해하고, 'idiom'이 고정된 표현임을 기억하며 선지를 검토하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
