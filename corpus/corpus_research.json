@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T19:04:27.797Z",
+ "updated": "2026-08-09T19:52:14.213Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T19:51:44.261Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 실제 패턴에서 'be동사 + 보어' 구조가 빈번히 사용되며, 특히 it's가 'it is'의 축약형으로 쓰인다. 또한 주어가 3인칭 단수일 때 동사의 '-s' 형태가 필수적임을 확인할 수 있다.",
+   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'It's'가 문두에 나올 경우 'it is'의 축약형으로 인식하고, 문법적으로 올바르게 축약되었는지(예: 'It's very obvious...')와 3인칭 단수 주어 뒤 동사의 '-s' 형태(예: 'it has')가 필수임을 변형문제에 반드시 반영하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T19:03:55.240Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "영어 문법에서 불필요한 관사(a/the)나 전치사(up) 사용은 CEFR B1-B2 수준에서 자주 오류로 나타나며, 특히 'need to a knowledge'처럼 명사 앞에 관사가 불필요한 경우와 'facing up with'처럼 중복된 전치사 사용이 특징적이다. 또한, 시제 일관성(present tense → past tense)이 유지되지 않는 오류도 빈번하다.",
    "rule": "CEFR B1-B2 수준의 내신 변형문제에서는 'need to a [명사]' → 'need [명사]'로 관사 삭제, 'facing up with' → 'facing'으로 중복 전치사 제거, 그리고 시제 불일치(present→past) 오류를 포함하여 문장을 수정하도록 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-06T03:42:21.066Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'sustain and active'와 같이 동사+형용사 구조가 잘못된 경우, 'sustain and be active'로 수정되는 패턴이 빈번히 관찰된다. 또한 'looks to pretty'와 같은 잘못된 보어 구조가 'looks too pretty'로 교정되는 경향이 강하다.",
-   "rule": "원서 문체 패턴을 반영하여, '동사 + and + 형용사' 구조가 등장할 경우, 반드시 '동사 + and + be + 형용사' 또는 '형용사 보어 구조(looks too pretty)'로 수정하도록 변형 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",

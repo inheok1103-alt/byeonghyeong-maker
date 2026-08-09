@@ -1,6 +1,42 @@
 {
- "updated": "2026-08-09T19:04:27.801Z",
+ "updated": "2026-08-09T19:52:14.217Z",
  "samples": [
+  {
+   "ts": "2026-08-09T19:51:31.198Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.13,
+    "D": -0.5,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.13)",
+     "변별도 낮음(D̂=-0.50)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "In these sentences it may appear to be the case that as a result of the (A) [removal / application] of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that these strings are (B) [constituents / non-constituents]. However, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). We can go further and ask whether the AP is a Complement of the (C) [lexical / grammatical] verb inside VP, or an Adjunct. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
+    "choices": [
+     "(A) application - (B) constituents - (C) lexical",
+     "(A) removal - (B) non-constituents - (C) grammatical",
+     "(A) application - (B) non-constituents - (C) lexical",
+     "(A) application - (B) constituents - (C) grammatical",
+     "(A) removal - (B) constituents - (C) grammatical"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) application - (B) constituents - (C) lexical. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘application’을 ‘removal’로 오독해 RNR 의 ‘제거’가 아닌 ‘적용’을 생각했음. (B)에서는 ‘constituents’를 ‘non-constituents’로 오해해 ‘구성 요소’가 아니라 ‘비구성 요소’라고 봄. (C)에서는 ‘lexical’을 ‘grammatical’로 혼동해 ‘어휘적’ 동사가 아닌 ‘문법적’ 동사로 봄. → 처방: RNR 의 결과로 ‘새로운 구조’가 생긴다는 문장(‘as a result of the (A) [removal / application] of RNR new structures come about’)을 정확히 읽고, ‘application’이 맞는지 ‘removal’이 맞는지 다시 확인할 것.\n③ 진단: (A)에서 ‘application’을 선택했지만 (B)에서 ‘non-constituents’를 오해해 ‘구성 요소’가 아닌 ‘비구성 요소’라고 봄. (C)에서는 ‘lexical’을 ‘grammatical’로 잘못 이해해 ‘어휘적’ 동사가 아닌 ‘문법적’ 동사로 봄. → 처방: (B)에서는 ‘these strings cannot be constituents’라는 문장(‘이 문자열들은 구성 요소가 될 수 없다’)을 읽고 ‘constituents’가 맞는지 ‘non-constituents’가 맞는지 다시 확인할 것.\n④ 진단: (A)에서 ‘application’을 선택했지만 (B)에서 ‘non-constituents’를 오해해 ‘비구성 요소’라고 봄. (C)에서는 ‘lexical’을 ‘grammatical’로 잘못 이해해 ‘문법적’ 동사로 봄. → 처방: (C)에서는 ‘lexical verb’와 ‘grammatical verb’를 구분하는 문맥(‘Complement of the (C) [lexical / grammatical] verb inside VP’)을 정확히 읽고, ‘어휘적 동사’가 맞는지 ‘문법적 동사’가 맞는지 다시 확인할 것.\n⑤ 진단: (A)에서 ‘removal’을 선택해 RNR 의 ‘제거’를 생각했지만 문장에서는 ‘새로운 구조’가 생긴다는 결과가 나와 ‘application’이 맞음. (B)에서는 ‘constituents’를 선택했지만 문장에서는 ‘이 문자열들은 구성 요소가 될 수 없다’고 나와 ‘non-constituents’가 맞음. (C)에서는 ‘grammatical’을 선택했지만 문맥상 ‘어휘적 동사’가 맞음. → 처방: 문장의 전체 흐름을 먼저 읽고, 각 빈칸이 어떤 역할을 하는지 문맥에서 파악한 뒤 선택지를 하나씩 확인할 것. 특히 (A)는 RNR 의 결과가 ‘새로운 구조’라는 점, (B)는 ‘구성 요소가 될 수 없다’는 점, (C)는 ‘어휘적 동사’가 ‘Complement’이 될 수 있다는 점을.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-09T17:49:01.503Z",
    "type": "요지",
@@ -316,25 +352,6 @@
     ],
     "answer": 5,
     "explanation": "밑줄 친 부분은 'A relationship that appears friendly on the surface may still end in separation despite maintaining a polite exterior.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘keep up appearances of mutual respect’를 ‘상호 존중을 유지하는 모습’으로만 해석하여 ‘겉치레’(polite exterior)라는 의미를 놓쳤고, ‘partnership might collapse’의 ‘분열’(collapse)이 ‘관계의 완전한 붕괴’(complete breakdown)보다 약한 표현임을 혼동함. → 처방: ‘appearances’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점에 주목하고, ‘collapse’는 ‘완전한 붕괴’를 포함한다는 사실을 기억하며 선지를 다시 읽기.\n② 진단: ‘polite exterior’를 ‘겉치레’로 해석했으나 ‘mutual respect’를 ‘상호 존중’으로만 강조해 ‘겉치레’가 가리키는 ‘겉모습’(surface)보다 좁은 뜻으로 오독했고, ‘separation’을 ‘분리’(separation)보다 약한 ‘분열’(fracture)으로 오해함. → 처방: ‘exterior’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점과 ‘separation’이 ‘완전한 붕괴’를 포함하지 않을 수 있음을 확인하고 선지를 재검토하기.\n③ 진단: ‘cordial bond’를 ‘친근한 유대’로만 해석해 ‘겉모습’(surface)이라는 의미를 놓쳤고, ‘dissolve’를 ‘분리’(separation)보다 약한 ‘분열’(fracture)으로 오해했으며, ‘unresolved tensions’을 ‘숨은 갈등’(hidden disagreements)으로만 좁게 봄. → 처방: ‘cordial’는 ‘겉모습의 친근함’을 뜻할 수 있음을 생각하고, ‘dissolve’는 ‘완전한 붕괴’를 포함할 수 있음을 기억하며 선지를 다시 읽기.\n④ 진단: ‘harmonious relationship externally’를 ‘겉모습의 조화’로만 해석해 ‘겉치레’(illusion)의 의미를 놓쳤고, ‘fracture’를 ‘분리’(separation)보다 약한 ‘분열’(collapse)으로 오해했으며, ‘unresolved conflicts beneath the surface’를 ‘숨은 갈등’(hidden disagreements)으로만 좁게 봄. → 처방: ‘externally’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점과 ‘fracture’는 ‘완전한 붕괴’를 포함할 수 있음을 확인하고 선지를 재검토하기."
-   }
-  },
-  {
-   "ts": "2026-08-09T14:03:58.814Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] among involves three or more Example: Who among us has not lied?",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 우리 중 거짓말을 하지 않은 사람은 누가 있습니까? (구문 포인트: among의 쓰임(3인칭 이상의 among + who) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
