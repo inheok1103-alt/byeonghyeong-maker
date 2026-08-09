@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T19:52:14.213Z",
+ "updated": "2026-08-09T20:57:42.118Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T20:57:15.901Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'during'는 명사구(noun phrase)와의 연어 강도가 높아, 'during + 부정사' 형태는 드물고 오류 가능성 높음. 또한 'suggest'는 3인칭 단수 현재형에서 '-s'가 필수이며, 'subsidize'는 '-ize' 동사로서 철자 오류 발생 가능성 높음.",
+   "rule": "'during + [명사구]' 패턴에서 'during + 동사원형' 형태는 오류 가능성 90% 이상이므로, 'during' 뒤에는 반드시 명사구(예: 'normal conversation', 'the lecture')가 오도록 문장을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T19:51:44.261Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거분사(dealt/decrease) 오용과 시제·부정어 위치 오류가 빈번하며, 'have + 과거분사'와 'would + 동사원형'의 조합이 CEFR B1 수준에서 자주 틀린다. 또한 'for the future'가 'for the fucture'로 철자 오류가 발생하는 패턴이 확인된다.",
    "rule": "'have/has/had + 과거분사'와 'would/should/could + 동사원형' 구문에서 과거분사 형태와 동사원형을 반드시 확인하여 오용을 방지하라. (예: have dealt, would decrease)",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-06T06:57:59.082Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어 문법에서 불필요한 관사(a/the)나 전치사(up) 사용은 CEFR B1-B2 수준에서 자주 오류로 나타나며, 특히 'need to a knowledge'처럼 명사 앞에 관사가 불필요한 경우와 'facing up with'처럼 중복된 전치사 사용이 특징적이다. 또한, 시제 일관성(present tense → past tense)이 유지되지 않는 오류도 빈번하다.",
-   "rule": "CEFR B1-B2 수준의 내신 변형문제에서는 'need to a [명사]' → 'need [명사]'로 관사 삭제, 'facing up with' → 'facing'으로 중복 전치사 제거, 그리고 시제 불일치(present→past) 오류를 포함하여 문장을 수정하도록 출제하라.",
    "sample": [
     "old english",
     "university press",

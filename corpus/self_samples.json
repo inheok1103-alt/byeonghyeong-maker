@@ -1,6 +1,95 @@
 {
- "updated": "2026-08-09T19:52:14.217Z",
+ "updated": "2026-08-09T20:57:42.122Z",
  "samples": [
+  {
+   "ts": "2026-08-09T20:53:22.022Z",
+   "type": "안내문불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 34번 빈칸 [ 3 점] · B L A N K 결과에 따라 행동을 바꾸기 빈칸 빈칸 = changing behaviors in light of the consequences: 결과(칭찬/무효)에 따라 행동을 바꾼다(조작적 조건화). 소재 결과에 따른 행동 변화 Changing behavior by its consequences 주제 우리는 결과에 비추어 행동을 조정하며 적응한다 We adapt by acting on consequences 제목 결과가 행동을 바꾼다 We Adapt by Acting on Consequences 한눈에 인간은 ‘결과에 따라 행동을 바꾸며’ 적응한다는 글이다. 칭찬받은 아이는 그 행동을 계속하고, 효과 없다고 느끼는 무용 수는 그만둔다. 즉 이득이 되는 일은 하고 문제가 되는 방식은 피하는 ‘결과 기반 적응’이 핵심이다. 지문 전문 — 시험지 원문 A particularly powerful way in which human beings adapt and adjust to their circumstances is by ＿＿＿＿＿＿＿＿ that they yield. For instance, a child who gets praised by her teacher for doing an exercise correctly is likely to continue doing the exercise in that way. A dancer who feels that a particular conditioning exercise is not giving any results is likely to give that exercise up in favor of another one that seems more promising. In general, we tend to do things that bring us some kind of benefit or act in ways that help us avoid some kind of problem, discomfort, or disadvantage. We also tend to do fewer things (or stop doing things) that lead to problems, discomfort, or disadvantages, and we tend to avoid acting in ways that do not bring any benefit or reward. 지문 전문 · 원문 그대로",
+    "choices": [
+     "칭찬받은 아이는 그 행동을 계속해서 수행하지 못할 가능성이 있다.",
+     "칭찬받은 아이는 그 행동을 계속해서 수행할 가능성이 있다.",
+     "효과가 없다고 느껴지는 동작은 포기하는 경우가 많다.",
+     "이득이 되는 행동은 계속하고 불이익은 피하는 경향이 있다.",
+     "문제나 불편을 초래하는 행동은 줄이거나 중단하는 특성이 있다."
+    ],
+    "answer": 1,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n② 진단: ‘칭찬받은 아이는 그 행동을 계속해서 수행하지 못할 가능성이 있다’는 문장에서 ‘하지 못할’로 오독하여 결과(칭찬)에 따라 행동이 바뀌는 원리를 무시했다. 지문은 칭찬받은 행동이 계속된다고 분명히 밝힘. → 처방: ‘결과에 따라 행동이 바뀐다’는 핵심 원리를 떠올리며 선지를 읽고, ‘하지 못할’이 아니라 ‘계속할 가능성이 있다’로 해석해야 한다.\n③ 진단: ‘효과가 없다고 느껴지는 동작은 포기하는 경우가 많다’는 문장을 ‘포기하지 않을 수도 있다’로 혼동했다. 지문은 효과가 없다고 느껴지면 동작을 포기한다고 직접 설명함. → 처방: ‘결과(효과)가 없으면 행동(포기)을 바꾼다’는 원리를 떠올리며 선지를 읽고, ‘포기하는 경우가 많다’가 옳음을 확인해야 한다.\n④ 진단: ‘이득이 되는 행동은 계속하고 불이익은 피하는 경향이 있다’를 ‘이득이 있어도 그만두는 경우가 있다’로 오독했다. 지문은 이득이 되는 일은 계속하고 불이익은 피한다고 명확히 설명함. → 처방: ‘결과(이득/불이익)에 따라 행동이 바뀐다’는 원리를 떠올리며 선지를 읽고, ‘계속하고 피하는 경향’이 옳음을 확인해야 한다.\n⑤ 진단: ‘문제나 불편을 초래하는 행동은 줄이거나 중단하는 특성이 있다’를 ‘문제 행동을 더 하려는 경향이 있다’로 혼동했다. 지문은 문제 행동을 줄이거나 중단한다고 설명함. → 처방: ‘결과(문제/불편)에 따라 행동이 바뀐다’는 원리를 떠올리며 선지를 읽고, ‘줄이거나 중단하는 특성’이 옳음을 확인해야 한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-09T20:57:05.191Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "ways of determining outcomes through behavior",
+     "ways of changing behavior based on praise",
+     "ways of always adjusting behavior to consequences",
+     "ways of responding to positive outcomes only",
+     "ways of adapting behaviors based on outcomes"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'ways of acting on consequences'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘outcomes’를 ‘behavior’를 통해 ‘결정하는’ 방법으로 오해. 지문은 ‘결과’가 행동을 바꾸는 것이지, 행동이 결과를 결정하는 것이 아님. ‘ways of determining outcomes’를 오독한 것. → 처방: ‘결과’를 ‘행동의 결과’로만 한정해 읽고, ‘결과가 행동을 바꾼다’는 핵심 문장을 먼저 찾기.\n② 진단: ‘칭찬’에만 초점을 맞추어 ‘always(항상)’이라는 과도한 일반화를 무시. 지문은 칭찬뿐 아니라 ‘무용한 결과’도 행동 변화를 이끈다고 설명. → 처방: ‘칭찬’ 외에 ‘무용한 결과’도 포함된다는 사실을 확인하고, ‘always’를 포함한 선지는 오답일 가능성이 높다는 점을 기억하기.\n③ 진단: ‘always adjusting’을 ‘항상’으로 오해하고 ‘consequences’를 ‘결과’로만 해석. 지문은 ‘결과에 따라 행동이 바뀐다’는 ‘일반적 원칙’을 설명하지, ‘항상’이라는 절대적 의미를 담지 않음. → 처방: ‘always’라는 단어가 포함된 선지는 ‘예외가 있다’는 지문의 성격과 맞지 않음을 떠올리고, ‘일반적 적응’ 개념을 떠올리기.\n④ 진단: ‘positive outcomes only(긍정적 결과만)’으로 오해. 지문은 ‘이득(칭찬)’과 ‘문제(무용)’ 모두를 언급하며, ‘negative outcomes’도 행동 변화를 이끈다고 설명. → 처방: ‘긍정적 결과’ 외에 ‘문제나 불이익’도 행동 변화를 이끈다는 사실을 지문에서 찾고, ‘only’라는 단어가 포함된 선지는 오답일 가능성이 높다는 점을 기억하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: ways of acting on consequences]"
+   }
+  },
+  {
+   "ts": "2026-08-09T20:57:13.554Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: c)\n[영영풀이] That which follows something on which it depends; that which is produced by a cause.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] consequences (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-09T19:51:31.198Z",
    "type": "네모어휘ABC",
@@ -264,94 +353,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 복잡한 구문도 또 다른 복잡한 구문의 역할을 대신할 수 있다는 것이 Radical Construction Grammar의 핵심 주장이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T14:54:23.700Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "자유 결합의 변이 양상은 전치사와의 결합에서만 그 경계가 모호하게 나타나도록 강제된다",
-     "언어 표현의 변이는 범주 구분이 모호하다는 점에서 전치사와 자유 결합의 구분이 언제나 불가능한 것은 아니다",
-     "언어 변이가 모든 표현에서 범주 구분을 모호하게 만드는 것은 아니지만, 전치사와 자유 결합의 경계는 명확히 설정될 수 없다",
-     "언어 표현의 변이가 범주 간 구분을 모호하게 만들기는 하지만, 전치사와 자유 결합의 구분을 완전히 불가능하게 하지는 않는다",
-     "언어 표현의 변이는 범주 간 구분이 모호할 정도로 유연하게 나타나므로, 자유 결합과 전치사의 명확한 경계를 설정하는 것은 불가능하다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Variability refers to the degree of spread or flexibility in a set of data or linguistic expressions, making clear distinctions between categories like free combinations and prepositions inherently difficult.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 자유 결합의 변이 양상이 전치사와의 결합에서만 그 경계가 모호하다고 오해. 지문은 전치사뿐 아니라 'subordinators, adverbs, verbs, adjectives' 등 다양한 품사에서도 경계가 모호하다고 설명. → 처방: 변이 양상이 나타나는 범위를 지문 전체에서 확인하고, 전치사뿐 아니라 다른 품사도 함께 고려하기.\n② 진단: 언어 표현의 변이가 범주 구분을 모호하게 만들기는 하지만 전치사와 자유 결합의 구분이 '언제나 불가능한 것은 아니다'라고 오해. 지문은 전치사와 자유 결합의 경계가 명확하지 않다고 강조. → 처방: 지문의 핵심 주장('불가능하다' vs '언제나 불가능한 것은 아니다')을 정확히 비교하며 읽기.\n③ 진단: 언어 변이가 모든 표현에서 범주 구분을 모호하게 만드는 것은 아니지만, 전치사와 자유 결합의 경계는 명확히 설정될 수 없다고 오해. 지문은 전치사와 자유 결합의 경계가 모호하다고만 설명하지, '모든 표현'에 대해 말하지 않음. → 처방: 지문의 범위를 정확히 파악하고, '모든 표현'이라는 과도한 일반화는 지양하기.\n④ 진단: 언어 표현의 변이가 범주 간 구분을 모호하게 만들기는 하지만 전치사와 자유 결합의 구분을 '완전히 불가능하게 하지는 않는다'고 오해. 지문은 전치사와 자유 결합의 구분이 불가능하다고 설명. → 처방: 지문의 핵심 주장('불가능하다')을 정확히 파악하고, '완전히 불가능하지 않다'는 해석은 지양하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Variability refers to the degree of spread or flexibility in a set of data or linguistic expressions, making clear distinctions between categories like free combinations and prepositions inherently difficult.]"
-   }
-  },
-  {
-   "ts": "2026-08-09T15:01:08.055Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: f)\n[영영풀이] The foremost side of something or the end that faces the direction it normally moves.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] front (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T14:03:45.786Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버교정: 솔버 3/3 다수결 5번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Confusing Words and Homonyms 19 allude to refer indirectly Example: He alluded to his past as a spy. elude avoid capture Example: The fugitive eluded the police for a month. illude mislead Example: He illuded her about his age. allusion an indirect mention of something illusion false perception ambiguous to have more than one meaning Example: The law was ambiguous. ambivalent to have mixed feelings Example: She is ambivalent about her wedding dress. amicable friendly (refers to things, not people) amiable friendly (refers to people) Example: The amiable couple had an amicable divorce. among involves three or more Example: Who among us has not lied? between involves just two Example: She couldn’t decide between Chinese and Thai food. amount used for things not countable Example: We couldn’t handle that amount of ill will. number used for things that can be counted Example: <u>The number of accidents increased by ten percent. ant a bug aunt the sister of a parent ante a bet placed before playing auntie affectionate term for a parent’s sister</u>",
-    "choices": [
-     "Despite initial friendliness, a partnership might collapse even when both sides keep up appearances of mutual respect.",
-     "A relationship that appears friendly on the surface may still end in separation despite maintaining a polite exterior.",
-     "A seemingly cordial bond can still dissolve if the underlying tensions remain unaddressed.",
-     "What looks like a harmonious relationship externally could fracture due to unresolved conflicts beneath the surface.",
-     "Even when interactions stay courteous, hidden disagreements may lead to a complete breakdown in the relationship."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'A relationship that appears friendly on the surface may still end in separation despite maintaining a polite exterior.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘keep up appearances of mutual respect’를 ‘상호 존중을 유지하는 모습’으로만 해석하여 ‘겉치레’(polite exterior)라는 의미를 놓쳤고, ‘partnership might collapse’의 ‘분열’(collapse)이 ‘관계의 완전한 붕괴’(complete breakdown)보다 약한 표현임을 혼동함. → 처방: ‘appearances’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점에 주목하고, ‘collapse’는 ‘완전한 붕괴’를 포함한다는 사실을 기억하며 선지를 다시 읽기.\n② 진단: ‘polite exterior’를 ‘겉치레’로 해석했으나 ‘mutual respect’를 ‘상호 존중’으로만 강조해 ‘겉치레’가 가리키는 ‘겉모습’(surface)보다 좁은 뜻으로 오독했고, ‘separation’을 ‘분리’(separation)보다 약한 ‘분열’(fracture)으로 오해함. → 처방: ‘exterior’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점과 ‘separation’이 ‘완전한 붕괴’를 포함하지 않을 수 있음을 확인하고 선지를 재검토하기.\n③ 진단: ‘cordial bond’를 ‘친근한 유대’로만 해석해 ‘겉모습’(surface)이라는 의미를 놓쳤고, ‘dissolve’를 ‘분리’(separation)보다 약한 ‘분열’(fracture)으로 오해했으며, ‘unresolved tensions’을 ‘숨은 갈등’(hidden disagreements)으로만 좁게 봄. → 처방: ‘cordial’는 ‘겉모습의 친근함’을 뜻할 수 있음을 생각하고, ‘dissolve’는 ‘완전한 붕괴’를 포함할 수 있음을 기억하며 선지를 다시 읽기.\n④ 진단: ‘harmonious relationship externally’를 ‘겉모습의 조화’로만 해석해 ‘겉치레’(illusion)의 의미를 놓쳤고, ‘fracture’를 ‘분리’(separation)보다 약한 ‘분열’(collapse)으로 오해했으며, ‘unresolved conflicts beneath the surface’를 ‘숨은 갈등’(hidden disagreements)으로만 좁게 봄. → 처방: ‘externally’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점과 ‘fracture’는 ‘완전한 붕괴’를 포함할 수 있음을 확인하고 선지를 재검토하기."
    }
   }
  ]
