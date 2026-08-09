@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-09T13:20:04.915Z",
+ "updated": "2026-08-09T14:04:29.166Z",
  "samples": [
+  {
+   "ts": "2026-08-09T14:03:45.786Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버교정: 솔버 3/3 다수결 5번(기록 2번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Confusing Words and Homonyms 19 allude to refer indirectly Example: He alluded to his past as a spy. elude avoid capture Example: The fugitive eluded the police for a month. illude mislead Example: He illuded her about his age. allusion an indirect mention of something illusion false perception ambiguous to have more than one meaning Example: The law was ambiguous. ambivalent to have mixed feelings Example: She is ambivalent about her wedding dress. amicable friendly (refers to things, not people) amiable friendly (refers to people) Example: The amiable couple had an amicable divorce. among involves three or more Example: Who among us has not lied? between involves just two Example: She couldn’t decide between Chinese and Thai food. amount used for things not countable Example: We couldn’t handle that amount of ill will. number used for things that can be counted Example: <u>The number of accidents increased by ten percent. ant a bug aunt the sister of a parent ante a bet placed before playing auntie affectionate term for a parent’s sister</u>",
+    "choices": [
+     "Despite initial friendliness, a partnership might collapse even when both sides keep up appearances of mutual respect.",
+     "A relationship that appears friendly on the surface may still end in separation despite maintaining a polite exterior.",
+     "A seemingly cordial bond can still dissolve if the underlying tensions remain unaddressed.",
+     "What looks like a harmonious relationship externally could fracture due to unresolved conflicts beneath the surface.",
+     "Even when interactions stay courteous, hidden disagreements may lead to a complete breakdown in the relationship."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'A relationship that appears friendly on the surface may still end in separation despite maintaining a polite exterior.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘keep up appearances of mutual respect’를 ‘상호 존중을 유지하는 모습’으로만 해석하여 ‘겉치레’(polite exterior)라는 의미를 놓쳤고, ‘partnership might collapse’의 ‘분열’(collapse)이 ‘관계의 완전한 붕괴’(complete breakdown)보다 약한 표현임을 혼동함. → 처방: ‘appearances’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점에 주목하고, ‘collapse’는 ‘완전한 붕괴’를 포함한다는 사실을 기억하며 선지를 다시 읽기.\n② 진단: ‘polite exterior’를 ‘겉치레’로 해석했으나 ‘mutual respect’를 ‘상호 존중’으로만 강조해 ‘겉치레’가 가리키는 ‘겉모습’(surface)보다 좁은 뜻으로 오독했고, ‘separation’을 ‘분리’(separation)보다 약한 ‘분열’(fracture)으로 오해함. → 처방: ‘exterior’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점과 ‘separation’이 ‘완전한 붕괴’를 포함하지 않을 수 있음을 확인하고 선지를 재검토하기.\n③ 진단: ‘cordial bond’를 ‘친근한 유대’로만 해석해 ‘겉모습’(surface)이라는 의미를 놓쳤고, ‘dissolve’를 ‘분리’(separation)보다 약한 ‘분열’(fracture)으로 오해했으며, ‘unresolved tensions’을 ‘숨은 갈등’(hidden disagreements)으로만 좁게 봄. → 처방: ‘cordial’는 ‘겉모습의 친근함’을 뜻할 수 있음을 생각하고, ‘dissolve’는 ‘완전한 붕괴’를 포함할 수 있음을 기억하며 선지를 다시 읽기.\n④ 진단: ‘harmonious relationship externally’를 ‘겉모습의 조화’로만 해석해 ‘겉치레’(illusion)의 의미를 놓쳤고, ‘fracture’를 ‘분리’(separation)보다 약한 ‘분열’(collapse)으로 오해했으며, ‘unresolved conflicts beneath the surface’를 ‘숨은 갈등’(hidden disagreements)으로만 좁게 봄. → 처방: ‘externally’는 ‘겉모습’이 아니라 ‘겉치레’를 뜻한다는 점과 ‘fracture’는 ‘완전한 붕괴’를 포함할 수 있음을 확인하고 선지를 재검토하기."
+   }
+  },
+  {
+   "ts": "2026-08-09T14:03:58.814Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] among involves three or more Example: Who among us has not lied?",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 우리 중 거짓말을 하지 않은 사람은 누가 있습니까? (구문 포인트: among의 쓰임(3인칭 이상의 among + who) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-09T13:18:28.344Z",
    "type": "내용일치",
@@ -294,75 +347,6 @@
     ],
     "answer": 4,
     "explanation": "정답 조합: (A) DIRECT OBJECT - (B) transitive - (C) Intransitive. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T09:59:52.766Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as DIRECT OBJECT. The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them. By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper. (Sharpen, cut and wrap are transitive verbs.) Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP. ‘INtransitive’ means ‘has (and needs) no complement’. Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs. Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right. Intransitive VPs are the simplest VPs. So a sentence like Omar sighed is represented as in [17]. Note the [intrans] feature on the V node.",
-    "choices": [
-     "직접목적어는 동사 V 의 [intrans] 특징을 지닌 NP 와 인접한 자리에 위치한다",
-     "직접목적어는 가위바위보 게임에서 이기는 쪽에 해당한다",
-     "‘sharpen’, ‘cut’, ‘wrap’은 직접목적어를 요구하는 동사들이다",
-     "‘sleep’, ‘die’, ‘laugh’, ‘sigh’는 보충어가 필요한 자동사들이다",
-     "‘Omar sighed’는 타동사 VP 로 완전한 문장으로 구성된다"
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 '[trans] 특징을 지닌 V 의 자매인 NP'가 직접목적어라고 설명했는데, 이 선지는 '[intrans] 특징'을 지닌 NP 와 인접한 자리에 위치한다고 잘못 이해한 것으로 보임. → 처방: 자동사와 타동사를 구분하는 특징([trans] vs [intrans])을 정확히 기억하고, 직접목적어는 '[trans]' 특징을 지닌 동사의 자매라는 점을 다시 확인할 것.\n② 진단: 지문에서 '가위바위보에서 지는 쪽이 직접목적어'라고 설명했는데, 이 선지는 반대로 '이기는 쪽'이라고 잘못 이해한 것으로 보임. → 처방: 지문에서 직접 인용한 내용을 그대로 기억하고, 가위바위보 비유가 어떤 뜻을 담고 있는지 다시 한번 읽어볼 것.\n④ 진단: 지문에서 'sleep, die, laugh, sigh'는 보충어가 필요 없는 자동사라고 설명했는데, 이 선지는 반대로 '보충어가 필요한 자동사'라고 잘못 이해한 것으로 보임. → 처방: 자동사와 타동사의 정의(보충어 필요 여부)를 정확히 구분하고, 지문에서 제시한 자동사의 예시를 다시 한번 확인할 것.\n⑤ 진단: 지문에서 'Omar sighed'는 '[intrans]' 특징을 지닌 자동사 VP 로 완전한 문장이라고 설명했는데, 이 선지는 반대로 '타동사 VP'라고 잘못 이해한 것으로 보임. → 처방: VP(동사구)의 종류(자동사 vs 타동사)를 정확히 구분하고, 지문에서 '[intrans]' 특징이 자동사를 뜻한다는 점을 다시 한번 확인할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T10:01:55.427Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as DIRECT OBJECT. ① The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them. ② By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper. ③ (Sharpen, cut and wrap are transitive verbs.) ④ Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP. ⑤ The distinction between transitive and intransitive verbs is not merely syntactic but also reflects semantic nuances in how agents interact with their environments. ‘INtransitive’ means ‘has (and needs) no complement’. Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs. Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right. Intransitive VPs are the simplest VPs. So a sentence like Omar sighed is represented as in [17]. Note the [intrans] feature on the V node.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 5,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘이 특징의 점’(①)이 앞 문장(‘NP 가 [trans] 특징을 가진 V 의 자매일 때 NP 는 직접목적어로 기능한다는 것’)과 연결된다는 점을 몰라서 오독했을 수 있다. ‘이 특징’이 무엇인지 명확히 짚지 않고 지나쳤다. → 처방: ‘이 특징’이란 ‘[trans] 특징을 가진 V 의 자매가 NP’라는 사실을 가리킨다는 점을 먼저 확인하고, 앞 문장과 이어지는지 확인하기.\n② 진단: ‘이 특징’이 무엇인지에 대한 설명이 ‘다른 하위 범주’로 넘어가면서 흐름이 바뀌는 줄 알고 오독했을 수 있다. ‘이 특징’이란 앞 문장의 ‘[trans]’를 가리킨다는 점을 놓쳤다. → 처방: ‘이 특징’이란 앞 문장에서 언급된 ‘[trans]’를 가리키는 것임을 기억하고, 앞뒤 문장의 연결을 확인하기.\n③ 진단: ‘가위바위보에서 지는 쪽’이란 예시가 문법 설명과 무관하다고 생각했을 수 있다. 하지만 예시는 ‘직접목적어’의 의미를 강조하기 위한 보조 설명일 뿐, 전체 흐름과는 무관하다는 점을 몰라서 오독했다. → 처방: 예시가 문법 설명의 보조 역할인지 확인하고, 주제와 직접 관련이 없으면 제외하기.\n④ 진단: ‘타동사와 자동사의 구문적 차이’를 설명하는 문장으로, 전체 흐름(‘직접목적어’와 ‘타동사’의 관계)에 부합한다고 오해했을 수 있다. 하지만 이 문장은 ‘직접목적어’와 ‘타동사’의 관계를 다루는 것이 아니라 ‘자동사와 타동사의 차이’를 설명하는 문장이다. → 처방: 문장의 주제가 ‘직접목적어’와 ‘타동사’의 관계인지 확인하고, 그렇지 않으면 제외하기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]

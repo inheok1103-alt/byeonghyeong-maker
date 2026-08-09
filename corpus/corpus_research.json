@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T13:20:04.912Z",
+ "updated": "2026-08-09T14:04:29.161Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T14:04:00.749Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "영어 학습자들이 흔히 혼동하는 전치사(‘for’, ‘by’, ‘to’)나 조동사(‘could’, ‘can’)의 오용 패턴이 빈번하며, 특히 ‘-ing’ 형태와 ‘to + 동사원형’의 구분이 학습자에게 어려움을 준다.",
+   "rule": "‘for + 동명사’(예: ‘for moving’)와 ‘to + 동사원형’(예: ‘to risk’)의 구분을 명확히 하는 문항을 출제하여, 학습자의 전치사와 동사 형태 선택 오류를 점검한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T13:19:36.404Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 코퍼스 패턴은 학술·교육 맥락에서 '전치사 + 명사(~ing)' 구문이 '명사 + 전치사 + 명사'로 변환되는 경향이 강하며, 시제·수 일치 오류가 빈번히 발생한다. 또한 'have + 명사' 구조가 'have + 형용사 + 명사'로 재구조화되는 패턴도 확인된다.",
    "rule": "원서 코퍼스에서 확인된 'have + 명사' 구조는 'have + 형용사 + 명사'로 변환하여 시제·수 일치를 반드시 점검하도록 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-05T12:19:20.882Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "명사 단수/복수 오류와 접속사 오류가 빈번하며, 특히 'reasons'와 같은 복수형 명사의 경우 관계절로 대체하는 경향이 강하다.",
-   "rule": "복수형 명사(예: reasons, purposes)가 문장에서 사용될 경우, 관계대명사(that/which)나 소유격(-'s) 형태로 오류를 유도하거나, 단수형(예: reason, purpose)으로 잘못 표기된 답안을 정답으로 설계한다.",
    "sample": [
     "old english",
     "university press",
