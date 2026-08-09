@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T11:48:18.685Z",
+ "updated": "2026-08-09T13:20:04.912Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T13:19:36.404Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "복합문에서 시제 불일치 오류가 빈번하며, 특히 주절과 종속절 간 시제 불일치가 문법적 오류로 이어진다. 또한 전치사 선택(‘in’ vs ‘on’)이 빈번한 오류 유형임을 확인할 수 있다.",
+   "rule": "복합문에서 주절과 종속절의 시제를 일치시키되, 시간·조건을 나타내는 종속절에서는 현재 시제를 사용하고, 주절에서는 미래 시제를 사용하도록 문항을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T11:47:51.451Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "명사 단수/복수 오류와 접속사 오류가 빈번하며, 특히 'reasons'와 같은 복수형 명사의 경우 관계절로 대체하는 경향이 강하다.",
    "rule": "복수형 명사(예: reasons, purposes)가 문장에서 사용될 경우, 관계대명사(that/which)나 소유격(-'s) 형태로 오류를 유도하거나, 단수형(예: reason, purpose)으로 잘못 표기된 답안을 정답으로 설계한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-05T09:59:44.083Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구(noun phrase) 내 동사 일치 오류가 빈번하며, 특히 3인칭 단수 주어가 누락된 '-s' 형태가 자주 생략된다. 또한 전치사(about, in, on 등) 오용이 빈번하게 관찰된다.",
-   "rule": "3인칭 단수 주어 뒤에는 항상 '-s'가 붙어야 하며, 전치사는 문맥에 맞는 정확한 전치사를 사용해야 한다. 특히 'on guard', 'over the weekend', 'what the placebo effect does'와 같이 관용적 표현이나 문법적 구조를 정확히 적용해야 한다.",
    "sample": [
     "old english",
     "university press",

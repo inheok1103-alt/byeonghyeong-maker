@@ -1,6 +1,127 @@
 {
- "updated": "2026-08-09T11:48:18.689Z",
+ "updated": "2026-08-09T13:20:04.915Z",
  "samples": [
+  {
+   "ts": "2026-08-09T13:18:28.344Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "Denotative meaning 6.1 If we had to think of a list of features or criteria that defined both the words woman and lady, one might suggest that they include being human, female and adult. A definition based on these lines would be the DENOTATIVE MEANING of the two words. But there must be more to meaning than this, since we know that there is a difference between these two words – we know they can be used to mean different things. Consider these words placed in the context of the sentences below. She’s only thirteen, but she’s a woman already She’s only thirteen, but she’s a lady already Connotations What differences in meaning – what different associations or CONNOTATIONS – do the words have? One way in which dictionaries try to give us clues about usage is by providing quotations where the word is used. However, even the dictionaries that do contain quotations cannot, for practical reasons, contain every usage of a word. It becomes a matter of selection and",
+    "choices": [
+     "‘woman’과 ‘lady’의 공통된 지시적 의미는 인간이면서 성인이며 남성이라는 점이다.",
+     "‘woman’과 ‘lady’는 문맥에 따라 서로 다른 의미를 지닐 수 있다.",
+     "사전은 단어의 Usage 를 보여주기 위해 인용문을 제공하며 모든 사용례를 담는다.",
+     "‘She’s only thirteen, but she’s a woman already’는 ‘woman’이 유년기를 암시할 수 있음을 보여준다.",
+     "‘She’s only thirteen, but she’s a lady already’는 ‘lady’가 천박함을 연관됨을 암시할 수 있음을 보여준다."
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘woman’의 지시적 의미는 ‘인간·여성·성인’이지만 ‘lady’는 그렇지 않음에도 ‘남성’이라는 공통점을 오독했음. (지문: ‘being human, female and adult’가 ‘woman’과 ‘lady’에만 해당됨) → 처방: ‘woman’과 ‘lady’의 지시적 의미를 비교할 때는 ‘남성’이 아니라 ‘여성’이 공통점임을 먼저 확인할 것.\n③ 진단: 사전이 모든 사용례를 담을 수 없다고 했는데 ‘모든 사용례를 담는다’고 오해했음. (지문: ‘cannot, for practical reasons, contain every usage of a word’) → 처방: ‘사전은 모든 사용례를 담지 못한다’는 한계가 있음을 기억하고, ‘제공된 인용문은 일부 예시일 뿐’이라는 점을 떠올릴 것.\n④ 진단: ‘She’s only thirteen, but she’s a woman already’가 ‘woman’이 유년기를 암시한다고 오독했음. (지문: 이 문장은 ‘woman’이 ‘어린 나이에도 성숙함을 뜻할 수 있음’을 보여줌) → 처방: ‘woman’이 ‘유년기’를 암시하는지 확인하려면 ‘어린 나이’를 직접적으로 언급하는지 살펴볼 것.\n⑤ 진단: ‘She’s only thirteen, but she’s a lady already’가 ‘lady’가 천박함을 연관짓는다고 오독했음. (지문: 이 문장은 ‘lady’가 ‘어린 나이에도 품위 있음’을 뜻할 수 있음을 보임) → 처방: ‘lady’가 ‘천박함’을 연관짓는지는 문맥에서 ‘품위’나 ‘고상함’이 아니라 ‘천박함’이 드러나는지 확인할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-09T13:18:49.625Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Denotative meaning 6.1 If we had to think of a list of features or criteria that defined both the words woman and lady, one might suggest that they include being human, female and adult. A definition based on these lines would be the DENOTATIVE MEANING of the two words. But there must be more to meaning than this, since we know that there is a difference between these two words – we know they can be used to mean different things. Consider these words placed in the context of the sentences below. She’s only thirteen, but (A) [she’s a women / she’s a woman] already She’s only thirteen, but (B) [she’s a ladys / she’s a lady] already Connotations What differences in meaning – what different associations or CONNOTATIONS – do the words have? One way in which dictionaries try to give us clues about usage is by providing quotations where the word is used. However, even the dictionaries that do contain quotations cannot, for practical reasons, (C) [contains every / contain every] usage of a word. It becomes a matter of selection and",
+    "choices": [
+     "(A) she’s a woman - (B) she’s a lady - (C) contains every",
+     "(A) she’s a woman - (B) she’s a ladys - (C) contains every",
+     "(A) she’s a woman - (B) she’s a lady - (C) contain every",
+     "(A) she’s a women - (B) she’s a lady - (C) contain every",
+     "(A) she’s a woman - (B) she’s a ladys - (C) contain every"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) she’s a woman - (B) she’s a lady - (C) contain every. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘ladys’는 ‘lady’의 복수형이 아니라 잘못된 형태이며, (C)에서 ‘cannot’ 뒤에 동사가 원형으로 와야 하는데 ‘contains’를 써서 시제와 수 일치를 잘못했다. → 처방: 단수형 ‘lady’를 쓰고, 조동사 뒤에는 동사 원형 ‘contain’을 써야 한다.\n② 진단: (B)에서 ‘ladys’가 잘못된 복수형이고, (C)에서 ‘contains every’를 써서 조동사 ‘cannot’ 뒤의 동사가 원형이 아닌 3인칭 단수로 잘못 썼다. → 처방: ‘lady’를 쓰고, 조동사 뒤에는 동사 원형 ‘contain’을 써서 문법 규칙을 지키자.\n④ 진단: (A)에서 ‘women’이 복수형으로 잘못 쓰였고, (C)에서 ‘contain every’를 써서 조동사 ‘cannot’ 뒤의 동사 형태를 잘못 썼다. → 처방: ‘woman’을 단수로 쓰고, 조동사 뒤에는 동사 원형 ‘contain’을 써서 문법을 따르자.\n⑤ 진단: (B)에서 ‘ladys’가 잘못된 복수형이고, (A)에서는 ‘woman’이 맞지만 (B)와 (C) 모두에서 문법 오류가 있다. → 처방: ‘lady’를 쓰고, 조동사 뒤에는 ‘contain’을 써서 문법 규칙을 지키자.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-09T13:19:26.026Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 3건 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "literal criteria versus contextual associations",
+     "connotations determining denotative meaning",
+     "denotative meaning always excluding connotations",
+     "dictionary specifications versus contextual meanings",
+     "contextual meanings versus literal criteria"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The denotative meaning defines literal criteria, while connotations shape contextual associations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 주체나 대상을 바꿔치기\n[오답 진단·처방]\n② 진단: ‘connotations determining denotative meaning’을 선택한 학생은 ‘denotative meaning’이란 단어의 뜻을 ‘사전적 정의’가 아닌 ‘글쓴이의 주관적 느낌’으로 오해했을 가능성이 큽니다. 지문에서 ‘denotative meaning’이란 ‘사전적 정의’(인간·여성·성인)를 뜻하며, ‘connotation’이란 ‘글쓴이의 주관적 느낌’을 뜻한다는 구분이 명확히 드러나 있습니다. → 처방: ‘denotative meaning’이란 ‘사전적 정의’를 뜻한다는 점을 꼭 기억하고, 지문에서 ‘connotation’이란 ‘글쓴이의 주관적 느낌’을 뜻한다는 점을 다시 한 번 확인하세요.\n③ 진단: ‘denotative meaning always excluding connotations’를 선택한 학생은 ‘always’라는 절대적 표현을 근거로 오해했을 가능성이 큽니다. 지문에서 ‘denotative meaning’이란 ‘사전적 정의’를 뜻하며, ‘connotation’이란 ‘글쓴이의 주관적 느낌’을 뜻한다는 점은 분명하지만, ‘always’라는 절대적 표현은 지문에 없습니다. → 처방: ‘always’라는 절대적 표현이 지문에 없다는 점을 확인하고, ‘denotative meaning’이 ‘connotation’을 배제한다는 뜻이 아니라는 점을 기억하세요.\n④ 진단: ‘dictionary specifications versus contextual meanings’를 선택한 학생은 ‘dictionary specifications’이란 ‘사전적 정의’를 뜻한다는 점을 혼동했을 가능성이 큽니다. 지문에서 ‘dictionary specifications’이란 ‘사전적 정의’를 뜻하지 않으며, ‘denotative meaning’이란 ‘사전적 정의’를 뜻한다는 점이 명확히 드러나 있습니다. → 처방: ‘dictionary specifications’이란 ‘사전적 정의’를 뜻하지 않는다는 점을 기억하고, 지문에서 ‘denotative meaning’이란 ‘사전적 정의’를 뜻한다는 점을 다시 한 번 확인하세요.\n⑤ 진단: ‘contextual meanings versus literal criteria’를 선택한 학생은 ‘literal criteria’란 ‘사전적 정의’를 뜻한다는 점을 혼동했을 가능성이 큽니다. 지문에서 ‘literal criteria’란 ‘사전적 정의’를 뜻하지 않으며, ‘denotative meaning’이란 ‘사전적 정의’를 뜻한다는 점이 명확히 드러나 있습니다. → 처방: ‘literal criteria’란 ‘사전적 정의’를 뜻하지 않는다는 점을 기억하고, 지문에서 ‘denotative meaning’이란 ‘사전적 정의’를 뜻한다는 점을 다시 한 번 확인하세요.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The denotative meaning defines literal criteria, while connotations shape contextual associations.]"
+   }
+  },
+  {
+   "ts": "2026-08-09T13:19:34.397Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 두 단어의 차이는 단어 자체가 지닌 함축된 의미와 associated associations에 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-09T11:45:52.731Z",
    "type": "본문찾아쓰기",
@@ -242,112 +363,6 @@
     ],
     "answer": 5,
     "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘이 특징의 점’(①)이 앞 문장(‘NP 가 [trans] 특징을 가진 V 의 자매일 때 NP 는 직접목적어로 기능한다는 것’)과 연결된다는 점을 몰라서 오독했을 수 있다. ‘이 특징’이 무엇인지 명확히 짚지 않고 지나쳤다. → 처방: ‘이 특징’이란 ‘[trans] 특징을 가진 V 의 자매가 NP’라는 사실을 가리킨다는 점을 먼저 확인하고, 앞 문장과 이어지는지 확인하기.\n② 진단: ‘이 특징’이 무엇인지에 대한 설명이 ‘다른 하위 범주’로 넘어가면서 흐름이 바뀌는 줄 알고 오독했을 수 있다. ‘이 특징’이란 앞 문장의 ‘[trans]’를 가리킨다는 점을 놓쳤다. → 처방: ‘이 특징’이란 앞 문장에서 언급된 ‘[trans]’를 가리키는 것임을 기억하고, 앞뒤 문장의 연결을 확인하기.\n③ 진단: ‘가위바위보에서 지는 쪽’이란 예시가 문법 설명과 무관하다고 생각했을 수 있다. 하지만 예시는 ‘직접목적어’의 의미를 강조하기 위한 보조 설명일 뿐, 전체 흐름과는 무관하다는 점을 몰라서 오독했다. → 처방: 예시가 문법 설명의 보조 역할인지 확인하고, 주제와 직접 관련이 없으면 제외하기.\n④ 진단: ‘타동사와 자동사의 구문적 차이’를 설명하는 문장으로, 전체 흐름(‘직접목적어’와 ‘타동사’의 관계)에 부합한다고 오해했을 수 있다. 하지만 이 문장은 ‘직접목적어’와 ‘타동사’의 관계를 다루는 것이 아니라 ‘자동사와 타동사의 차이’를 설명하는 문장이다. → 처방: 문장의 주제가 ‘직접목적어’와 ‘타동사’의 관계인지 확인하고, 그렇지 않으면 제외하기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T09:06:30.973Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 소시지로 만든 성은 그림책 성처럼 긴 사슬이 배열되어 있음을 암시합니다.\n주어진 단어: ( made / of / chains / castle / suggests / A / like / arranged / picture-book / sausages / a / castle / long )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] A castle made of sausages suggests long chains arranged like a picture-book castle.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-09T07:18:49.130Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Because (in the (A) [irrelevant / relevant] variety) infinitival to can only have a null spellout when the TP complement it heads is the complement of an (B) [inactive / active] transitive verb-form like the perfect participle known in (84) and not when the relevant TP is the complement of a passive participle like known in (85), it follows that infinitival to must be given an overt spellout in sentences like (85). Under the analysis proposed here, verbs which take a bare infinitive complement with an accusative subject are analysed as ECM predicates which select a TP complement headed by an infinitival T which has an overt spellout as to in passive structures like (85) and a null spellout in active structures such as (84). However, one predicate which is (C) [unproblematic / problematic] to classify in such terms is let, since it allows a bare infinitive complement in active structures like (86a) below but doesn’t normally allow the subject of the infinitive to passivise, as we see from the ungrammaticality of sentences like (86b):",
-    "choices": [
-     "(A) irrelevant - (B) active - (C) unproblematic",
-     "(A) irrelevant - (B) inactive - (C) problematic",
-     "(A) relevant - (B) active - (C) unproblematic",
-     "(A) relevant - (B) inactive - (C) unproblematic",
-     "(A) relevant - (B) active - (C) problematic"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) relevant - (B) active - (C) problematic. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: irrelevant 를 선택했으므로 문맥의 설명이 관련이 없다고 판단했으며, active 를 선택했으므로 infinitival to 가 null spellout 을 가질 수 있는 조건을 이해하지 못했고, unproblematic 을 선택했으므로 let 의 분류가 문제가 없다고 판단한 것으로 보인다. → 처방: 문맥을 다시 읽고 관련된 설명을 찾으라.\n② 진단: irrelevant 를 선택했으므로 문맥의 설명이 관련이 없다고 판단했으며, inactive 를 선택했으므로 infinitival to 가 null spellout 을 가질 수 있는 조건을 이해하지 못했고, problematic 을 선택했으므로 let 의 분류가 문제가 있다고 판단했지만 다른 두 항목은 잘못 선택한 것으로 보인다. → 처방: 관련된 설명을 찾고 그 설명을 다시 읽어라.\n③ 진단: relevant 를 선택했으므로 문맥의 설명이 관련이 있다고 판단했으며, active 를 선택했으므로 infinitival to 가 null spellout 을 가질 수 있는 조건을 이해했지만, unproblematic 을 선택했으므로 let 의 분류가 문제가 없다고 판단한 것으로 보인다. → 처방: let 의 분류를 다시 살펴보고 문제가 있는지 없는지 판단해라.\n④ 진단: relevant 를 선택했으므로 문맥의 설명이 관련이 있다고 판단했으며, inactive 를 선택했으므로 infinitival to 가 null spellout 을 가질 수 있는 조건을 이해하지 못했고, unproblematic 을 선택했으므로 let 의 분류가 문제가 없다고 판단한 것으로 보인다. → 처방: infinitival to 의 조건을 다시 읽고 이해하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T07:19:36.602Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 7건 · 솔버교정: 솔버 3/3 다수결 4번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.75,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Variation in Infinitival To’s Spellout by Voice in TP Complements",
-     "Active Voice Eliminates Null Spellout in Infinitival to",
-     "Infinitival To’s Spellout Depends Entirely on Voice",
-     "Passive Voice Forces Overt Spellout of Infinitival to",
-     "Infinitival To’s Spellout Is Rarely Affected by Voice in TP Complements"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'Infinitival to’s spellout varies by voice in TP complements'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Infinitival to’s spellout varies by voice in TP complements]\n[오답 진단·처방]\n① 진단: ‘Variation in Infinitival To’s Spellout by Voice in TP Complements’를 고른 학생은 ‘infinitival to’의 발음이 ‘활동태 vs 수동태’에 따라 달라진다는 ‘변화’에만 초점을 맞췄고, ‘수동태에서만 to 가 반드시 드러나야 한다’는 핵심 논지를 놓쳤다. 지문에서 ‘passive participle’ 아래서는 to 가 ‘overt spellout’(드러남)되어야 한다고 분명히 밝혔음을 간과했다. → 처방: ‘to’의 발음이 ‘활동태’와 ‘수동태’에서 어떻게 달라지는지 ‘변화’ 자체를 묻는 선지가 아니라, ‘수동태에서만 to 가 반드시 드러난다’는 ‘결과’를 묻는 문제임을 기억하라. 지문 맨 앞과 끝부분의 ‘it follows that’ 구절을 다시 읽고, ‘must be given an overt spellout in sentences like (85)’가 핵심임을 확인하라.\n② 진단: ‘Active Voice Eliminates Null Spellout in Infinitival to’를 고른 학생은 ‘활동태’가 ‘to 의 발음을 없앤다’는 오해를 했다. 지문은 ‘active structure’ 아래서는 to 가 ‘null spellout’(드러나지 않음)이라고 했지만, ‘eliminates’를 ‘to 의 발음을 아예 없애버린다’로 해석해 ‘passive’에서 to 가 ‘overt’(드러나야 함)임을 놓쳤다. → 처방: ‘eliminates’를 ‘to 의 발음을 완전히 없앤다’로 오해하지 말고, ‘null spellout’(드러나지 않음)과 ‘overt spellout’(드러남)의 대비를 정확히 이해하라. 지문에서 ‘active’ 아래서는 to 가 ‘null’, ‘passive’ 아래서는 ‘overt’라고 반복해서 설명했음을 확인하고, ‘eliminates’를 ‘드러나지 않게 한다’로 해석하라.\n③ 진단: ‘Infinitival To’s Spellout Depends Entirely on Voice’를 고른 학생은 ‘전적으로’(entirely)라는 단어가 과장되었다는 점을 놓쳤다. 지문은 ‘passive’에서만 to 가 ‘overt’(드러나야 함)이라고 했지만, ‘entirely’이 ‘모든 경우’를 뜻한다고 오해해 ‘active’에서도 영향을 미친다고 착각했다. → 처방: ‘entirely’를 ‘전적으로’라는 뜻으로만 해석하지 말고, 지문에서 ‘only’나 ‘must’라는 한정적 표현이 ‘passive’에서만 to 가 드러난다는 점을 강조했음을 기억하라. ‘entirely’를 ‘완전히 모든 경우’를 뜻한다고 오해하지 말고, ‘passive’에서만 ‘must’라고 강조했음을 확인하라.\n⑤ 진단: ‘Infinitival To’s Spellout Is Rarely Affected by Voice’를 고른 학생은 ‘rarely’(거의 영향을 받지 않는다)가 지문에서 말한 ‘passive 에서 to 가 반드시 드러난다’는 사실을 무시했다고 오해했다. 지문은 ‘passive’에서 to 가 ‘overt’(드러나야 함)이라고 했지만, ‘rarely’를 ‘거의 영향을 받지 않는다’는 뜻으로 오해해 ‘passive’에서도 to 가 드러나지 않을 수 있다고 착각했다. → 처방: ‘rarely’를 ‘거의 영향을 받지 않는다’는 뜻으로만 해석하지 말고, 지문에서 ‘must be given an overt spellout in sentences like (85)’라고 ‘강조’했음을 기억하라. ‘rarely’는 ‘거의’라는 뜻이 아니라, ‘드물게’라는 뜻으로도 쓰일 수 있음을 확인하고, 지문에서 ‘must’라고 강조한 부분을 다시 읽어보라."
-   }
-  },
-  {
-   "ts": "2026-08-09T07:19:56.915Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Under the analysis proposed here, verbs which take a bare infinitive complement with an accusative subject are analysed as ECM predicates which select a TP complement headed by an infinitival T which has an overt spellout as to in passive structures like (85) and a null spellout in active structures such as (84).",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 이 분석에 따르면, 목적격 주어와 함께 동사원형 보어를 취하는 동사들은 (85)와 같은 수동 구조에서는 to로, (84)와 같은 능동 구조에서는 무표지 형태로 실현되는 무한 T가 이끄는 TP 보어를 선택하는 ECM 술어로 분석됩니다. (구문 포인트: ECM(Expletive Control Movement) 술어 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

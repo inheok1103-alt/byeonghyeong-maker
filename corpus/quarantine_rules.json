@@ -1,7 +1,31 @@
 {
- "updated": "2026-08-09T11:48:18.684Z",
+ "updated": "2026-08-09T13:20:04.910Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 선지는 원문의 'denotative meaning'을 정확히 반영한 일관된 정의 구조('~는 인간, 여성, 성인으로 정의할 수 있는 특징을 지닌다')로 통일하여 출제하라.",
+   "src": "자가학습:내용일치",
+   "score": 71,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-09T13:17:58.878Z"
+  },
+  {
+   "rule": "지문의 'denotative meaning'과 'connotations'를 '심경 변화'와 구체적으로 연결짓는 선지를 개발하여, 지문의 논리 흐름과 일관성을 유지하고 오해를 최소화하라.",
+   "src": "자가학습:심경변화",
+   "score": 66,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-09T13:19:07.213Z"
+  },
+  {
+   "rule": "모든 서술형 문항은 핵심 정보(예: '사회·문화적 함의')를 필수 포함하도록 지시하고, 자연스럽고 완결된 표현을 유도하는 명확한 채점기준(예: 문장 구조·논리성 점수)을 적용하며, 무응답 시 0점 처리 방침을 사전에 고지해야 한다.",
+   "src": "자가학습:서술형(자유)",
+   "score": 32,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-09T13:19:29.970Z"
+  },
   {
    "rule": "사역동사 'have'는 '~가 ...하도록 시키다'라는 뜻으로, 'have + 목적어(사람/사물) + 동사원형' 구조로 쓰이며, 예컨대 'He had the judge reduce the charges.'에서 'the judge'가 'had'의 목적어이자 'reduce'의 주어임을 명시하라.\"**",
    "src": "자가학습:우리말해석",
@@ -1577,30 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-03T18:09:51.666Z"
-  },
-  {
-   "rule": "모든 출제에서는 '어법상 틀린 부분'을 찾는다는 조건을 명확하게 명시하고, 선지의 어법을 검토하여 문맥상 자연스럽지 않은 표현이 있는 경우 수정하여야 한다.",
-   "src": "자가학습:어법(밑줄)",
-   "score": 80,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-03T15:18:24.134Z"
-  },
-  {
-   "rule": "선지 전체를 reported speech의 변화 원리(대명사/장소/시간)에 맞춰 재작성하고, 발문을 'reported speech의 변화 원리로 가장 적절한 것은?'으로 구체화하라.",
-   "src": "자가학습:심경변화",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-03T15:18:55.413Z"
-  },
-  {
-   "rule": "원문에서 'having'은 조동사+진행형('is having')으로, 'evening'은 'this evening'으로 그대로 활용하여 12단어 내로 재구성하고, 'flat'을 'apartment'로 대체하지 않아 조건을 모두 충족시킨다.",
-   "src": "자가학습:조건영작",
-   "score": 82,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-03T15:19:31.857Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
