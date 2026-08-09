@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-09T02:36:56.568Z",
+ "updated": "2026-08-09T04:44:49.638Z",
  "samples": [
+  {
+   "ts": "2026-08-09T04:43:07.931Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "You’ll learn even more if you use your imagination to make the backs of your flashcards a bit more elaborate. For example, you might decorate the back of this card with a diagram of oblique lines—that is, lines that are neither parallel nor perpendicular to each other. Back Your diagram now gives you a mental image that can help you remember the word. You’ll probably think of your own mental image, one that means something to you. You could even use the word itself to create a picture that conveys the meaning of the word and that will stick in your mind to help you remember it. Here’s one possibility. We’ve divided the word into two parts and written them on two different lines that are at an oblique angle to each other. Back",
+    "choices": [
+     "상상력을 발휘해 플래시카드 뒷면을 좀 더 단순하게 꾸미면 학습 효과가 커진다",
+     "플래시카드 뒷면에 대각선으로 그린 도표는 기억을 돕는 정신적 이미지가 된다",
+     "타인이 익숙한 정신적 이미지를 떠올리면 단어를 더 쉽게 기억할 수 있다",
+     "단어 자체를 활용해 그 의미를 나타내는 그림을 만들면 기억에 오래 남지 않는다",
+     "단어를 세 부분으로 나누어 대각선으로 배치하면 기억에 도움이 되는 그림이 된다"
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문은 플래시카드 뒷면을 '상상력을 발휘해 좀 더 정교하게 꾸미는 것'을 권장했는데, 선지①은 '단순하게 꾸미면'이라고 잘못 해석해 핵심 메시지를 반대로 이해했다. → 처방: 플래시카드 뒷면을 꾸밀 때는 '단순함'이 아니라 '상상력을 더해 정교하게 꾸미는 것'이 학습 효과를 높인다는 점을 기억하자.\n③ 진단: 지문은 '자신이 익숙한 정신적 이미지를 떠올리면' 기억에 도움이 된다고 설명했는데, 선지③은 '타인이 익숙한 정신적 이미지'라고 잘못 읽어 대상을 혼동했다. → 처방: 지문에서 강조하는 '자신의 mental image'를 떠올리며 플래시카드를 꾸미는 연습을 해보자.\n④ 진단: 지문은 '단어 자체를 활용해 의미를 나타내는 그림을 만들면 기억에 오래 남는다'고 설명했는데, 선지④는 '기억에 오래 남지 않는다'고 반대로 적어 내용을 잘못 이해했다. → 처방: 단어의 의미를 그림으로 표현할 때는 '자신의 mental image'를 떠올리면서 기억에 오래 남도록 꾸며 보자.\n⑤ 진단: 지문은 '단어를 두 부분으로 나눠 대각선으로 배치하는 예시'를 들었는데, 선지⑤는 '세 부분으로 나누어'라고 잘못 읽어 단어 나누는 법을 혼동했다. → 처방: 지문에서 소개한 '두 부분으로 나누는 방법'을 따라 플래시카드를 꾸며 보면서 연습해 보자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-09T04:44:10.539Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 100,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "You’ll learn even more if you use your imagination to make the backs of your flashcards a bit more ⓐ<u>elaborate</u>. For example, you might decorate the back of this card with a diagram of ⓑ<u>direct</u> lines—that is, lines that are neither parallel nor perpendicular to each other. Back Your diagram now gives you a ⓒ<u>mental</u> image that can help you ⓓ<u>remember</u> the word. You’ll probably think of your own mental image, one that means something to you. You could even use the word itself to create a picture that conveys the meaning of the word and that will stick in your mind to help you remember it. Here’s one possibility. We’ve ⓔ<u>divided</u> the word into two parts and written them on two different lines that are at an oblique angle to each other. Back",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 2,
+    "explanation": "정답 ⓑ: 문맥상 'oblique'가 와야 하는데 'direct'가 쓰여 부적절하다 — 앞 문장에서 'oblique lines'는 'neither parallel nor perpendicular'로 정의되어 있으며, 이 단어는 '평행도 아니고 수직도 아닌' 비스듬한 상태를 묘사하는 데 사용된다. 'direct'는 '직접적인'으로 반의어이지만, 문맥상 '평행이나 수직이 아닌 상태'를 설명하는 데 적합하지 않다.. [극성] 정답=비스듬한 상태(oblique) ↔ 오답=직접적인 상태(direct)\n[오답 진단·처방]\n① 진단: ⓐ 'elaborate'는 '정교한, 복잡한' 뜻으로 문맥에 맞지만, 학생은 '자세한, 상세한' 정도로만 이해해 '꾸미는' 뜻으로 오해했을 수 있음(예: '꾸미는 카드'). → 처방: 단어의 뜻을 정확히 외우고, 문맥에서 '정교한'으로 쓰였는지 확인하기.\n③ 진단: ⓒ 'mental'은 '정신적인, 마음의' 뜻으로 문맥에 맞지만, 학생은 '물리적인, 실제의'로 오해해 '눈에 보이는' 이미지로 오독했을 수 있음(예: '눈에 보이는 이미지'). → 처방: 단어의 뜻을 문장 전체에서 파악하고, '정신적인'이라는 뜻임을 기억하기.\n④ 진단: ⓓ 'remember'는 '기억하다' 뜻으로 문맥에 맞지만, 학생은 '되찾다, 상기하다' 정도로만 이해해 '다시 배우다'로 오해했을 수 있음(예: '다시 배우는 단어'). → 처방: 단어의 기본 뜻을 정확히 알고, 문맥에서 '기억하다'로 쓰였는지 확인하기.\n⑤ 진단: ⓔ 'divided'는 '나누다, 분할하다' 뜻으로 문맥에 맞지만, 학생은 '구분하다, 분류하다' 정도로만 이해해 '나열하다'로 오해했을 수 있음(예: '나열한 단어'). → 처방: 단어의 뜻을 문장 구조와 함께 파악하고, '나누다'라는 뜻임을 기억하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-09T02:35:16.565Z",
    "type": "전체문장배열",
@@ -276,76 +345,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Languages evolve so drastically that unrelated roots can unexpectedly link through historical twists like the word \"punch.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-08T19:00:59.822Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Given the assumptions we made in chapter 7, the bracketed TP in (32a) is selected by the C-constituent that, and the head T of TP is the auxiliary has which carries a complete set of person/number agreement features. By contrast, the TP in the raising structure in (32b) is not selected by C, and its head T constituent to is defective in that it does not carry a complete set of agreement features. Reasoning thus, Chomsky concludes that the person/number agreement features of T must originate on C, and subsequently ‘be inherited by’ or ‘be handed over to’, or ‘percolate down onto’ (three different metaphors expressing the same idea) the T constituent immediately beneath C. Chomsky argues that in the same way, the agreement features carried by a transitive V (which enable it to assign accusative case to a goal within its domain) ____ which is the head of the relevant vP phase (transitive vPs being phases). One reason for thinking this can be illustrated in relation to the following contrast:",
-    "choices": [
-     "are passed down to it",
-     "are erased in it",
-     "are scattered across it",
-     "are held within it",
-     "are lost over it"
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 'are passed down to it'가 들어가 글의 논지를 완성한다 (본문 'are inherited from the light-verb'의 패러프레이즈).\n[오답 진단·처방]\n② 진단: TP 의 T 가 '결함 있는' 특징(불완전한 일치 특징)을 가졌다는 점에서 '지워진다'고 오해. 지문은 T 가 '결함'이 있지만 C 가 그 특징을 물려준다고 설명하므로 '지워진다'는 뜻이 아님. → 처방: T 의 특징이 C 에서 비롯되어 T 로 '전달'된다는 흐름을 기억하고, '지워진다'는 표현이 문맥에 맞지 않음을 확인할 것.\n③ 진단: '흩어진다'는 표현이 T 의 특징이 '전달'된다는 통일된 흐름과 맞지 않음. 'percolate down onto'가 '물려준다'는 뜻임을 놓침. → 처방: 지문에 나오는 'percolate down onto', 'handed over', 'inherited by' 같은 표현이 '전달'의 의미를 담고 있음을 떠올릴 것.\n④ 진단: 'T 안에 특징이 머물러 있다'는 표현이 C 가 T 로 특징을 '전달'한다는 동적 과정을 무시함. 'held within'은 정적인 상태를 뜻하므로 문맥에 맞지 않음. → 처방: 특징이 '전달'되는 동적 과정을 떠올리며, 정적인 상태를 뜻하는 표현은 배제할 것.\n⑤ 진단: '잃어버린다'는 표현이 T 가 C 로부터 특징을 '전달받아'야 한다는 논리와 반대됨. 지문은 T 가 특징을 '물려받아야' 한다고 설명하므로 '잃어버린다'는 뜻이 아님. → 처방: T 가 C 로부터 특징을 '물려받아야' 한다는 논리를 정확히 이해하고, 반대되는 표현은 배제할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-08T17:48:00.705Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Quick Quiz #26 Match each word in the first column with its definition in the second column. Check your answers here. 1. construe a. admitting guilt 2. consummate b. interpret 3. contentious c. perfect 4. contiguous d. labored 5. contingent e. dependent 6. contrite f. abundant 7. contrived g. adjoining 8. conventional h. argumentative 9. convivial i. festive 10. copious j. common COROLLARY (KOR uh ler ee) n something that follows; a natural consequence In mathematics, a corollary is a law that can be deduced without further proof from a law that has already been proven. • Bloodshed and death are corollaries of any declaration of war. • Higher prices were a corollary of the two companies’ agreement not to compete. CORROBORATE (kuh ROB uh rayt) v to confirm; to back up with evidence • I knew my statement was correct when my colleague corroborated it. • Henny Penny’s contention that the sky was falling could not be corroborated. That is, no one was able to find any fallen sky.",
-    "choices": [
-     "construed 는 admit 로 해석된다",
-     "consummate 는 labored 를 의미한다",
-     "contentious 는 festive 를 뜻한다",
-     "contiguous 는 adjoining 와 같다",
-     "corollary 는 자연적 원인으로 정의된다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: construed 의 뜻을 'admit(인정하다)'로 오독했는데, 지문에서 construe 는 'interpret(해석하다)'로 정의되어 있다. 'admit'은 contrite 의 뜻과 혼동한 듯하다. → 처방: 단어 뜻을 외울 때, 유사한 단어(예: contrite)와 혼동하지 않도록 각 단어의 정의를 정확히 적고 예문까지 함께 기억하라.\n② 진단: consummate 를 'labored(고된)'로 오해했는데, 지문에서 consummate 는 'perfect(완벽한)'를 뜻한다. 'labored'는 contrived 의 뜻과 비슷하다고 착각한 것 같다. → 처방: 단어 뜻을 외울 때는 문맥(예: 수학 용어, 일상 단어)을 고려해 정확히 기억하고, 유사한 단어와 비교해보라.\n③ 진단: contentious 를 'festive(축제의)'로 잘못 해석했는데, 지문에서 contentious 는 'argumentative(논쟁을 좋아하는)'를 뜻한다. 'festive'는 convivial 의 뜻과 혼동한 듯하다. → 처방: 단어 뜻을 외울 때는 뜻뿐 아니라 반대말(예: contentious ↔ peaceful)도 함께 공부해 혼동을 줄이라.\n⑤ 진단: corollary 를 '자연적 원인으로' 정의했는데, 지문에서 corollary 는 'something that follows; a natural consequence(당연한 결과)'를 뜻한다. '원인'이 아니라 '결과'로 이해해야 한다. → 처방: 단어 뜻을 외울 때는 '정의'와 '예문'을 함께 읽고, '원인과 결과'를 구분해 정확히 이해하라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]

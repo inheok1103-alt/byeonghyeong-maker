@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-09T02:36:56.564Z",
+ "updated": "2026-08-09T04:44:49.635Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-09T04:44:18.379Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'travel'은 전치사 'to'가 필수적으로 동반되며, 'teach'는 3인칭 단수 현재형에서 '-es'가 붙고, 'concern'은 'be concerned about'로 수동태가 자연스럽다. 한국어 학습자에게는 전치사/시제/수동태 오류가 빈번하게 발생한다.",
+   "rule": "'travel' 뒤에는 반드시 'to'를 붙이도록 강제하며, 'teach'는 3인칭 단수 현재형에서 '-es'로 변형하고, 'concern'은 'be concerned about' 형태로 수동태로 사용하도록 출제 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-09T02:36:28.378Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거 시제 동사(was, were, had 등)가 불필요하게 사용되어 문법 오류가 발생하는 패턴이 빈번하며, 특히 'no matter how + 과거 시제'나 'must + 과거 시제' 구조에서 오류가 두드러진다.",
    "rule": "'no matter how + 형용사/부사 + 과거 시제' 또는 'must + 동사원형' 구조에서 과거 시제 동사를 사용하지 말고, 'may/might + 동사원형' 또는 'must + 동사원형'으로 통일하여 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-04T15:39:38.408Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'for + reason relations' 패턴이 빈번히 나타나며, 한국어 학습자의 경우 'for some reasons' → 'for various reasons'로 구체화하는 오류가 두드러진다. 또한, 소유격 오류('thier' → 'their')와 시제·태 전환('needs talk' → 'need to talk')에서도 패턴화된 오류가 확인된다.",
-   "rule": "'for + reason relations' 표현을 사용할 때는 'some' 대신 'various', 'several', 'many' 등 구체적인 수식어를 반드시 포함하여야 하며, 주어-동사 일치와 시제·태 전환(예: 'needs' → 'need to')을 철저히 검토하라.",
    "sample": [
     "old english",
     "university press",
