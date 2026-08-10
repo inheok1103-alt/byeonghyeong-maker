@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-10T17:12:57.845Z",
+ "updated": "2026-08-10T18:06:57.085Z",
  "samples": [
+  {
+   "ts": "2026-08-10T18:05:04.413Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "M.A.K. Halliday Collins Publishers Annette Capel, Lorna Heaslip, Douglas Williamson Many other people have been involved with the project at both research and editing stages. Patrick Hanks, ⓐ<u>who was</u> the Editorial Director of Cobuild throughout the project, ⓑ<u>made a valuable contribution</u> both in policy and in detail. Dominic Bree, Jane Cullen, and Clare Ramsey ⓒ<u>worked as research</u> in the early stages, and Ron Hardie ⓓ<u>helped from the beginning</u> until quite late in the editing process. David Brazil gave us great help and encouragement during the early editing of the book. Without his support, this would have been a more difficult task. Helen Liebeck and Christina Rammell were influential in the early stages of editing. Michael Hoey and Charles Owen, members of the Department of English, University of Birmingham, and PhD and MA students in the department, ⓔ<u>in particular Richard Francis</u>, Agnes Molnar, Iria 6",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓒ: 'worked as research' → 'worked as researchers' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-10T18:06:09.975Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.33,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "M.A.K. Halliday ⓐ<u>Collins</u> Publishers Annette Capel, Lorna Heaslip, Douglas Williamson Many other people have been involved with the ⓑ<u>project</u> at both research and ⓒ<u>editing</u> ⓓ<u>stages</u>. Patrick Hanks, who was the Editorial Director of Cobuild throughout the project, made a valuable contribution both in policy and in detail. Dominic Bree, Jane Cullen, and Clare Ramsey worked as researchers in the ⓔ<u>early</u> stages, and Ron Hardie helped from the beginning until quite late in the editing process. David Brazil gave us great help and encouragement during the early editing of the book. Without his support, this would have been a more difficult task. Helen Liebeck and Christina Rammell were influential in the early stages of editing. Michael Hoey and Charles Owen, members of the Department of English, University of Birmingham, and PhD and MA students in the department, in particular Richard Francis, Agnes Molnar, Iria 6",
+    "choices": [
+     "collins: Any of various alcoholic drinks made with lemon juice, sugar, and carbonated wat",
+     "project: A planned endeavor, usually with a specific goal and accomplished in several ste",
+     "editing: A part, portion, or subdivision.",
+     "stages: An adult male deer.",
+     "early: A shift (scheduled work period) that takes place early in the day."
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ의 풀이는 'department'의 정의이다. 'editing'의 올바른 풀이: To change a text, or a document.\n[오답 진단·처방]\n① 진단: 지문에서 'Collins'는 출판사 이름으로 쓰였지만, 선지①은 술의 한 종류로 오해한 듯함. 지문 ⓐ<u>Collins</u> Publishers 가 'Collins 출판사'임을 무시하고, 단어 자체의 뜻만 보고 술로 오독한 것 같음. → 처방: 단어의 문맥적 쓰임을 먼저 확인하고, 사전 뜻은 보조적으로만 활용하기. 특히 고유명사(사람·기관·책 이름 등)는 문맥에서 판단할 것.\n② 진단: 지문에서 'project'는 '프로젝트'로 쓰였지만, 선지②은 '목표가 있는 계획'으로 옳은 뜻임에도 학생이 오독한 듯. 아마 'project'의 뜻이 여러 가지라 혼란을 느낀 것 같음. → 처방: 'project'가 지문에서 '프로젝트'로 쓰였는지 확인하고, 영영풀이도 문맥에 맞는지 재점검하기. 사전 뜻은 여러 개일 수 있으니 문맥과 연관 지어 보기.\n④ 진단: 지문에서 'stages'는 '단계'로 쓰였지만, 선지④은 '사슴의 수컷'으로 오해한 듯. 아마 'stag'의 뜻과 혼동한 것 같음. → 처방: 단어의 기본형과 활용형을 구분하고, 지문에서 쓰인 형태가 어떤 뜻인지 정확히 확인하기. 'stag'과 'stage'는 다른 단어임을 기억할 것.\n⑤ 진단: 지문에서 'early'는 '초기의'로 쓰였지만, 선지⑤은 '아침 근무조'로 오해한 듯. 'early'의 뜻이 '시간적으로 이른'임을 모르고, '근무조'라는 특정 상황에만 집중한 것 같음. → 처방: 단어의 기본 뜻을 먼저 떠올리고, 문맥에서 그 뜻이 맞는지 확인하기. 'early'는 '이른'이라는 뜻이 기본이므로, '근무조'라는 뜻은 문맥에서만 나올 수 있음을 기억하기.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-10T17:10:21.690Z",
    "type": "영영풀이일치",
@@ -267,60 +319,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] change (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T08:54:43.311Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "일반적으로 종교 및 교육 건물에는 정관사를 쓰지 않으려고",
-     "정관사를 쓰지 않는 이유가 역과 공항이 중요하기 때문이라고 주장하려고",
-     "항상 역과 공항에는 정관사를 쓰지 않으려고",
-     "예외가 있는 경우에도 역과 공항에는 정관사를 쓰지 않으려고",
-     "일반적으로 역과 공항에는 정관사를 쓰지 않으려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'to use the with most stations and airports, religious buildings, and palaces.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘종교 및 교육 건물’(St Mary's Church, Merton College)만 언급한 반면, ‘역과 공항’(Waterloo, Orly)도 정관사를 쓰지 않는 예시로 지문에 나와 있으므로 오독했음. → 처방: ‘역과 공항’이 정관사를 쓰지 않는 대표적인 예시임을 먼저 확인한 뒤, 나머지 건물 종류는 예외나 추가 설명으로 이해하기.\n② 진단: ‘중요한 건물’이라는 표현이 지문에 없으며, 역과 공항의 중요성을 이유로 정관사를 쓰지 않는다고 오해했음. → 처방: 지문의 첫 문장 ‘Stations and airports; important buildings’를 정확히 읽고, ‘중요성’이 아니라 ‘관습’을 기준으로 정관사 사용 여부를 판단하기.\n③ 진단: ‘항상’이라는 절대적 표현을 사용했으나, 지문에는 ‘예외’(of 가 포함된 이름, Palace of Westminster 등)가 명시되어 있으므로 오독했음. → 처방: ‘항상’보다는 ‘대부분’ 또는 ‘일반적으로’라는 상대적 표현을 떠올리며, 예외가 있는지 지문을 꼼꼼히 확인하기.\n④ 진단: ‘예외가 있는 경우에도’라는 조건을 무시하고 ‘역과 공항’에만 초점을 맞췄으나, 지문은 예외가 ‘다른 건물’(the Palace of Westminster)에 있음을 알려주므로 오독했음. → 처방: ‘예외’가 어디에 해당하는지 먼저 찾은 뒤, 그 예외가 역과 공항에 영향을 미치는지 차근차근 확인하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to use the with most stations and airports, religious buildings, and palaces.]"
-   }
-  },
-  {
-   "ts": "2026-08-10T08:54:55.455Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] Stations and airports; important buildings We do not use the with most stations and airports; with religious, educational and official buildings or with palaces and houses.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Never do we use the with most stations and airports; (포인트: 부정어 'Never'를 문두로 이동시켜 주어-조동사 도치 구현)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
