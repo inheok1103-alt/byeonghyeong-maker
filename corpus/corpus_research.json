@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-10T04:56:39.075Z",
+ "updated": "2026-08-10T06:44:42.645Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-10T06:44:15.850Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거형/현재형 동사 사용 시 주어-동사 일치 오류가 빈번하며, 특히 관계대명사 뒤의 동사 수 일치가 문제로 제기됨. 또한, 접속사나 전치사 생략이 문법적 오류를 유발하는 주요 패턴임.",
+   "rule": "CEFR B1 수준 이하의 문장에서는 주어-동사 수 일치(예: 'are based' → 'is based')와 접속사/전치사 생략(예: 'In addition the' → 'In addition, the') 오류를 반드시 포함하여 변형문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-10T04:56:16.296Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'~ing' 동명사 형태가 명사적 기능(주어/목적어/보어)으로 더 자연스러운 경우가 많다. 또한 소유격·단수·복수 구분이 문맥상 중요하다.",
    "rule": "'~s' 소유격·단수형 오류(예: hobbies → hobby)와 'to + 동사원형' vs. '~ing' 동명사 오류(예: using vs. to use)를 반드시 검토하여 문맥에 맞는 형태로 수정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T05:52:49.137Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "‘go to the army’와 같은 고정적 표현이 아닌 ‘commitments men have to make to go to the army’로 재구성되는 패턴이 빈번히 관찰된다. 또한 ‘sacrifice’, ‘precious’, ‘textbooks’ 등 명사/형용사의 철자 오류와 ‘anyways’(→ ‘anyway’)의 비표준 표기 수정이 반복된다.",
-   "rule": "‘go to the army’(군대에 가다) 대신 ‘commitments to go to the army’(군대에 가기 위한 의무)나 ‘enlist in the army’(입대하다) 등으로 재구성하는 어법 변형을 내신 문항에 반드시 포함하라. 특히 ‘go to the army’가 등장하면 무조건 오류로 처리하고, 올바른 대안을 ‘enlist in the army’ 또는 ‘join the army’로 제시하도록 한다.",
    "sample": [
     "old english",
     "university press",

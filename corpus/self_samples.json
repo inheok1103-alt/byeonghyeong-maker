@@ -1,6 +1,77 @@
 {
- "updated": "2026-08-10T04:56:39.080Z",
+ "updated": "2026-08-10T06:44:42.649Z",
  "samples": [
+  {
+   "ts": "2026-08-10T06:43:17.478Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": -0.5,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "변별도 낮음(D̂=-0.50)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "Because some ⓐ<u>writers</u> are ⓑ<u>seized</u> by the idea that writing is good only when it’s free of ⓒ<u>errors</u> that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a ⓓ<u>clause</u> expressing ­familiar information about causation, introduce the clause with ⓔ<u>since</u>, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
+    "choices": [
+     "writers: A person who writes, or produces literary work.",
+     "seized: To deliberately take hold of; to grab or capture.",
+     "errors: Senses relating to a thin, pointed object.",
+     "clause: (grammar) A verb, its necessary grammatical arguments, and any adjuncts affectin",
+     "since: From a specified time in the past."
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ의 풀이는 'style'의 정의이다. 'errors'의 올바른 풀이: The state, quality, or condition of being wrong.\n[오답 진단·처방]\n① 진단: 지문에서 'some writers'는 글을 쓰는 사람을 의미하지만, 학생은 '작가'라는 단어의 의미를 제대로 파악하지 못하고 다른 의미로 오독했을 가능성이 있다. → 처방: 다음부터는 문맥에 맞는 단어의 의미를 파악하기 위해 지문을 더 주의해서 읽어야 한다.\n② 진단: 지문에서 'seized'는 아이디어에 사로잡혀 있다는 의미인데, 학생은 이 단어의 의미를 제대로 이해하지 못하고 다른 동사로 혼동했을 가능성이 있다. → 처방: 다음부터는 지문에서 사용된 단어의 의미를 사전이나 문맥을 통해 정확하게 파악해야 한다.\n④ 진단: 지문에서 'clause'는 문법적인 용어로, 학생은 이 용어의 의미를 제대로 파악하지 못하고 다른 의미로 오독했을 가능성이 있다. → 처방: 다음부터는 문법적인 용어를 정확하게 이해하기 위해 문법 책이나 참고 자료를 더 참고해야 한다.\n⑤ 진단: 지문에서 'since'는 시간이나 이유를 나타내는 접속사로, 학생은 이 단어의 의미를 제대로 이해하지 못하고 다른 의미로 혼동했을 가능성이 있다. → 처방: 다음부터는 지문에서 사용된 접속사나 전치사의 의미를 정확하게 파악하기 위해 문법 규칙을 더 공부해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-10T06:43:57.677Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:\n\n─────────\n[요약문] Overemphasis on (A) leads writers to produce (B) prose, yet exceptions exist where familiar causal clauses introduced by 'since' can enhance clarity.",
+    "choices": [
+     "(A) literal accuracy … (B) fluent",
+     "(A) grammatical precision … (B) ornate",
+     "(A) grammatical correctness … (B) stiff",
+     "(A) strict grammar … (B) ambiguous",
+     "(A) mechanical correctness … (B) verbose"
+    ],
+    "answer": 3,
+    "explanation": "(A) grammatical correctness / (B) stiff 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A) leads writers to produce (B) prose'의 (A)가 'grammatical correctness'임을 강조하는데, 학생은 'literal accuracy'로 오해하여 문자의 뜻만 따졌음. 지문 첫 문장에 'free of errors that only a grammarian can explain'이 있음. → 처방: 요약문의 핵심 단어는 '문법적 정확성'이므로, '(A)는 문법적 정확성'을 뜻하는 단어를 찾도록 문제의 키워드('grammatical', 'errors')에 집중할 것.\n② 진단: 학생은 'ornate'를 '(B) prose'에 넣었는데, 지문은 'graceless prose'라고 하여 거칠고 세련되지 못한 문체를 말함. 'ornate'는 화려한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'가 '(B) prose'에 해당하므로, '(B)는 stiff(뻣뻣한, 경직된)'가 어울린다는 점을 기억할 것.\n④ 진단: 학생은 'ambiguous'을 골랐는데, 지문은 문법적 엄격함이 지나치면 문체가 '뻣뻣해진다'고 설명함. 'ambiguous'은 모호한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'와 'stiff'가 '(B) prose'에 해당한다는 점을 떠올리며, 선택지 중 '뻣뻣한'을 뜻하는 단어를 찾도록 할 것.\n⑤ 진단: 학생은 'verbose'를 골랐는데, 지문은 문법적 엄격함이 지나치면 '거칠고 세련되지 못한 문체'가 된다고 설명함. 'verbose'는 장황한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'가 '(B) prose'에 해당한다는 점을 기억하고, '(B)는 stiff(뻣뻣한)'가 가장 어울린다는 결론을 내릴 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-10T04:56:00.003Z",
    "type": "어휘(밑줄)",
@@ -302,58 +373,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Lugubrious means exaggeratedly mournful.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘Lugubrious’는 ‘지나치게 과장된 슬픔’을 뜻하는데, 학생은 ‘있는 그대로 드러내는 상태’를 ‘과장된 감정’과 혼동한 듯함. 지문에서 ‘make a big show’라고 분명히 설명했음. → 처방: ‘과장’이라는 단어를 반드시 찾아보기. 지문에 ‘big show’라는 표현이 있는지 확인할 것.\n② 진단: ‘특정 상황이나 장소에 국한되지 않는다’는 말이 ‘Lugubrious’의 정의와 맞지 않음. 지문은 ‘과장된 슬픔’을 가리키는 단어라고만 설명했을 뿐, 사용 범위에 대해 제한하지 않음. → 처방: ‘국한되지 않는다’는 말이 나오면 ‘범위’와 ‘정의’를 분리해서 생각하기. 정의가 먼저인지, 범위가 먼저인지 구분할 것.\n③ 진단: ‘모든 슬픔의 형태를 포괄하지 않는다’는 말이 ‘Lugubrious’의 의미를 잘못 이해한 것. 지문은 ‘과장된 슬픔’을 특별히 가리키는 단어라고 설명했는데, 학생은 ‘포괄하지 않는다’는 말로 ‘일부만 포함한다’는 오해를 함. → 처방: ‘포괄한다’는 말이 나오면 ‘전체’와 ‘일부’를 구분하기. Lugubrious 는 ‘일부(과장된 슬픔)’만 가리킨다는 점 기억하기.\n④ 진단: ‘진지한 슬픔의 표현과는 무관하다’는 말이 ‘Lugubrious’의 의미를 완전히 잘못 이해한 것. 지문은 ‘진지한 슬픔’이 아니라 ‘과장된 슬픔’을 뜻한다고 설명했는데, 학생은 ‘진지한 슬픔’과 ‘과장된 슬픔’을 혼동함. → 처방: ‘진지한’과 ‘과장된’을 비교해보기. Lugubrious 는 ‘과장’이라는 단어가 핵심이라는 점 기억하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Lugubrious means exaggeratedly mournful.]"
-   }
-  },
-  {
-   "ts": "2026-08-09T17:49:36.085Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 정답 재검토 권고 — 솔버 1/3가 3번 선택(기록 4번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>LUGUBRIOUS</u> (loo GOO bree us) adj exaggeratedly ⓑ<u>mournful</u> To be mournful is to be sad and ⓒ<u>sorrowful</u>. To be lugubrious is to make a big show of being sad and sorrowful. • Harry’s lugubrious eulogy at the funeral of his dog eventually made everyone start giggling. • The valedictorian suddenly turned lugubrious and began sobbing and tearing her hair at the thought of graduating from high school. Note carefully the pronunciation of this word. ⓓ<u>LUMINOUS</u> (LOO muh nus) adj ⓔ<u>giving</u> off light; glowing; bright • The moon was a luminous disk in the cloudy nighttime sky. • The snow on the ground appeared eerily luminous at night—it seemed to glow. • The dial on my watch is luminous; it casts a green glow in the dark. Quick Quiz #55 Match each word in the first column with its definition in the second column. Check your answers here. 1. libel a. giving off light 2. slander b. try in court 3. litigate c. exaggeratedly mournful 4. loquacious d. easy to understand 5. lucid e. written injurious falsehood 6. lugubrious f. spoken injurious falsehood 7. luminous g. talking a lot",
-    "choices": [
-     "lugubrious: Gloomy, mournful or dismal, especially to an exaggerated degree.",
-     "mournful: Filled with grief or sadness; being in a state in which one mourns.",
-     "sorrowful: (of a person) exhibiting sorrow; dejected; distraught.",
-     "luminous: Visible electromagnetic radiation. The human eye can typically detect radiation ",
-     "giving: (ditransitive) To move, shift, provide something abstract or concrete to someone"
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓓ의 풀이는 'light'의 정의이다. 'luminous'의 올바른 풀이: Emitting light; glowing brightly.\n[오답 진단·처방]\n① 진단: 지문에서 'lugubrious'는 '과장된 슬픔'을 뜻하는데, 학생은 'gloomy, dismal' 같은 일반적인 '음울한' 뜻으로 오독했을 수 있음. 지문 예시('과장된 슬픔')와 정의를 제대로 연결하지 못함. → 처방: 지문에서 제시한 '과장된'이라는 단어를 반드시 기억하고, 'mournful'과 'lugubrious'의 차이를 명확히 구분하기 위해 예시 문장을 다시 한 번 읽고 이해하기.\n② 진단: 학생은 'mournful'의 의미를 'grief 나 sadness'로만 단순하게 받아들였을 수 있으나, 지문에서 '슬픔과 슬픔을 표현하는 상태'로 설명한 부분을 놓쳤음. → 처방: 'mournful'은 단순히 '슬프다'가 아니라 '슬픔을 표현하는 상태'라는 점을 기억하고, 지문에서 'to be sad and sorrowful'의 의미를 정확히 파악하기.\n③ 진단: 학생은 'sorrowful'을 '슬픔을 보임'으로만 해석했으나, 지문에서 '(of a person) exhibiting sorrow'라는 설명을 'dejected, distraught' 같은 더 강한 감정으로 오독했을 수 있음. → 처방: 'sorrowful'은 '슬픔을 보임'이라는 뜻으로, 'dejected'나 'distraught'처럼 극심한 상태를 뜻하지 않는다는 점을 기억하고, 단어의 강도를 지문과 비교하기.\n⑤ 진단: 학생은 'giving'의 의미를 '주다'라는 기본 뜻으로만 오독했으며, 지문에서 'giving off light'라는 구절을 'provide something abstract or concrete'로 혼동했을 수 있음. → 처방: 지문에서 'giving off light'라는 구절을 정확히 이해하고, 'giving'이 '방출하다'라는 뜻으로 쓰인 경우를 구분할 수 있도록 연습하기.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T17:49:43.120Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "LUGUBRIOUS (loo GOO bree us) adj exaggeratedly mournful To be mournful is to be sad and sorrowful. To be lugubrious is to make a big show of b____ sad and sorrowful. • Harry’s lugubrious eulogy at the funeral of his dog eventually made everyone start giggling. • The valedictorian suddenly turned lugubrious and began sobbing and tearing her hair at the thought of graduating from high school. Note carefully the pronunciation of this word. LUMINOUS (LOO muh nus) adj giving off light; glowing; bright • The moon was a luminous disk in the cloudy nighttime sky. • The snow on the ground appeared eerily luminous at night—it seemed to glow. • The dial on my watch is luminous; it casts a green glow in the dark. Quick Quiz #55 Match each word in the first column with its definition in the second column. Check your answers here. 1. libel a. giving off light 2. slander b. try in court 3. litigate c. exaggeratedly mournful 4. loquacious d. easy to understand 5. lucid e. written injurious falsehood 6. lugubrious f. spoken injurious falsehood 7. luminous g. talking a lot",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] being — 문단의 논지상 이 자리에는 'being'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
