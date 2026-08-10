@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-10T21:07:03.342Z",
+ "updated": "2026-08-10T22:01:45.402Z",
  "samples": [
+  {
+   "ts": "2026-08-10T21:59:56.606Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버교정: 솔버 2/3 다수결 4번(기록 3번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": -0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "We can then say that (in the relevant idiom) all hell must be the sister of (A) [breaks loose / break loose], and that this condition will be met only if all hell originates in spec-V as the subject (and sister) of the V-bar break loose. We can account for how the subject all hell comes to be separated from its predicate break loose by positing that subjects originate internally within VP and from there (B) [raise to / rises to] spec-T (via A-movement) across an intervening T constituent like will, so that the subject and predicate thereby come to be separated from each other – movement of the subject to spec-T being driven by an [EPP] feature (C) [carrying by / carried by] [T will] requiring will to have a subject with person/number features. Subsequently, the TP in (12) is merged with a null declarative complementiser, so deriving the structure associated with (10a) All hell will break loose.",
+    "choices": [
+     "(A) breaks loose - (B) raise to - (C) carried by",
+     "(A) break loose - (B) rises to - (C) carrying by",
+     "(A) break loose - (B) raise to - (C) carried by",
+     "(A) break loose - (B) rises to - (C) carried by",
+     "(A) breaks loose - (B) rises to - (C) carrying by"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) break loose - (B) raise to - (C) carried by. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ① (A)에서 'all hell'이 복수 주어임에도 'breaks loose'를 써서 단수 동사로 오용했고, (B)에서 'raise to'는 능동형으로 틀렸고, (C) 'carrying by'는 수동형이 아니라 능동형으로 오용했다. 지문에서 'all hell'은 복수 주어고, 'raise'는 수동형으로 써야 하며, 'carried by'가 옳은 수동형이다. → 처방: 주어의 수에 맞춰 동사를 쓰고, 수동형과 능동형을 정확히 구분해라. 특히 'raise'는 능동형, 'rise'는 자동사라는 점도 기억해 둬.\n② 진단: ② (B)에서 'rises to'는 자동사로 쓰였지만, 'raise to'는 타동사로 오용했고, (C) 'carrying by'는 능동형으로 잘못 썼다. 지문에서 'subjects'가 복수 주어이므로 'raise to'는 수동형 'raised to'가 아니라 'rise to'가 맞고, (C)는 수동형 'carried by'가 옳다. → 처방: 자동사와 타동사를 구분하고, 수동형과 능동형을 정확히 써라. 특히 'raise'는 '~를 올리다', 'rise'는 '올라가다'라는 뜻임을 기억해 둬.\n③ 진단: ③ (A)에서 'break loose'는 옳지만, (B)에서 'raise to'는 능동형으로 오용했고, (C) 'carried by'는 옳지만 (B)의 오류로 전체가 틀렸다. 지문에서 'subjects'는 복수 주어이므로 'raise to'는 수동형이 아니라 자동사 'rise to'가 맞다. → 처방: 문장의 주어와 동사의 수를 맞춰 쓰고, 자동사와 타동사를 정확히 구분해라. 특히 'raise'는 타동사, 'rise'는 자동사임을 기억해 둬.\n⑤ 진단: ⑤ (A)에서 'breaks loose'는 복수 주어에 맞지 않고, (B)에서 'rises to'는 옳지만 (C) 'carrying by'는 능동형으로 오용했다. 지문에서 'all hell'은 복수 주어이므로 'break loose'가 옳고, (C)는 수동형 'carried by'가 맞다. → 처방: 주어의 수에 맞춰 동사를 쓰고, 수동형과 능동형을 정확히 써라. 특히 'carry'는 수동형 'carried by'로 써야 한다는 점을 기억해 둬."
+   }
+  },
+  {
+   "ts": "2026-08-10T22:01:01.560Z",
+   "type": "안내문불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(64%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
+    "passage": "We can then say that (in the relevant idiom) all hell must be the sister of break loose, and that this condition will be met only if all hell originates in spec-V as the subject (and sister) of the V-bar break loose. We can account for how the subject all hell comes to be separated from its predicate break loose by positing that subjects originate internally within VP and from there raise to spec-T (via A-movement) across an intervening T constituent like will, so that the subject and predicate thereby come to be separated from each other – movement of the subject to spec-T being driven by an [EPP] feature carried by [T will] requiring will to have a subject with person/number features. Subsequently, the TP in (12) is merged with a null declarative complementiser, so deriving the structure associated with (10a) All hell will break loose.",
+    "choices": [
+     "'all hell'은 동사의 주어 역할을 하며 'break loose'와 분리된다",
+     "'all hell'은 VP 내부에서 기원하여 T 요소인 'will'을 거쳐 spec-T 로 이동한다",
+     "'will'은 [EPP] 기능을 carrying 하여 주어의 인칭/수 features 를 요구한다",
+     "'all hell'은 동사의 주어 역할을 하지 않으며 'break loose'와 분리되지 않는다",
+     "'all hell will break loose'에서 'all hell'은 'will'의 주어로 기능한다"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'all hell'이 동사의 주어 역할을 하며 'break loose'와 분리된다고 명시했으나, 학생은 이 부분을 '주어 역할'과 '분리'를 분리해 오독했을 수 있음. 'all hell'이 주어 역할을 한다는 사실과 'break loose'와 분리된다는 사실은 지문에서 함께 언급됨. → 처방: 지문에서 주어 역할과 분리가 함께 언급된다는 점을 기억하고, 선지를 읽을 때 두 조건이 동시에 성립하는지 확인하기.\n② 진단: 지문은 'all hell'이 VP 내부에서 기원하여 T 요소인 'will'을 거쳐 spec-T 로 이동한다고 설명하지만, 학생은 'will'을 거치는 이동 과정을 생략하고 오독했을 수 있음. → 처방: 지문에서 설명하는 이동 경로(VP → T → spec-T)를 그림으로 그려보고, 각 단계가 어떤 역할을 하는지 정리하기.\n③ 진단: 지문은 '[T will]'이 [EPP] 기능을 carrying 하여 주어의 인칭/수 features 를 요구한다고 설명하지만, 학생은 'carrying'의 의미를 오해하거나 기능의 주체를 혼동했을 수 있음. → 처방: '[EPP] 기능'이 무엇인지 정확히 알고, 지문에서 '[T will]'이 그 기능을 carrying 한다는 점을 다시 한 번 확인하기.\n⑤ 진단: 지문은 'all hell will break loose'에서 'all hell'이 'will'의 주어로 기능한다고 설명하지만, 학생은 'will'이 조동사라는 점만 기억하고 주어 역할은 무시했을 수 있음. → 처방: 'will'이 조동사이면서 동시에 주어의 인칭/수 features 를 요구한다는 점을 기억하고, 선지를 읽을 때 조동사의 역할과 주어 역할을 동시에 고려하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-10T21:03:30.198Z",
    "type": "빈칸(어구)",
@@ -283,59 +353,6 @@
     ],
     "answer": 4,
     "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘theme 역할’이 ‘thematic 동사’의 보충어 위치가 아니라 ‘specifier’에 할당된다는 결론을 오독해, 이 문장이 앞의 결론을 다시 언급하는 supporting evidence 로만 보았고, 전체 흐름의 일부로 인식했다. → 처방: ‘이전 결론’을 다시 인용하는 문장임을 분명히 파악하고, ‘흐름’을 끊는 supporting detail 로 보지 말 것.\n② 진단: ‘agent 역할’이 ‘light 동사’의 VP 보충어 ‘specifier’에 할당되었다는 앞의 분석을 오해해, 이 문장이 새로운 정보가 아니라 반복으로만 느껴졌고, 흐름의 일부로 여겼다. → 처방: ‘agent’와 ‘light 동사’의 관계를 설명하는 supporting fact 임을 명확히 구분하고, ‘흐름’을 끊는 supporting detail 로 보지 말 것.\n③ 진단: ‘UTAH’를 유지하려면 구조(45)가 잘못되었거나 ‘unaccusative·light 동사’ 분석이 잘못되었다는 가설을 제시하는 문장으로 오해해, 이 문장이 ‘문제 제기’로만 보았고, 흐름의 일부로 생각했다. → 처방: ‘문제 제기’나 ‘가설’을 제시하는 문장이 아니라, 앞의 결론을 바탕으로 한 ‘분석의 한계’임을 분명히 파악할 것.\n⑤ 진단: ‘butler opened the door’의 사건 구조가 ‘butler 의 행동’과 ‘door 의 상태 변화’로 나뉜다는 예시를 오해해, 이 문장이 사건 구조의 복잡성을 설명하는 supporting detail 로만 보았고, 흐름의 일부로 여겼다. → 처방: ‘사건 구조’의 복잡성을 예시로 설명하는 supporting detail 임을 분명히 파악하고, ‘흐름’을 끊는 supporting detail 로 보지 말 것.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T15:19:00.836Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: (45) 의 구조가 부정확하거나 분석이 잘못되었습니다\n주어진 단어: ( structure / inaccurate / analyses )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The structure in (45) is inaccurate or our analyses are wrong. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-10T13:46:25.042Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "A CASTLE IN THE AIR consonants. The verbal root in Semitic is not a pronounceable chunk like English 'eat' or Latin `ed-', but a group of just three consonants, like the Arabic 1-b-s, which means 'wear', or s- -m, which means 'be at peace'. But how can a vowel-less group of three consonants ever mean anything, if it cannot even stand up on its own three legs and be pronounced unaided? The answer is that such roots do not have to be spoken by themselves, because the root is an abstract notion, which comes to life only when it is superimposed on some templates: patterns of (mostly) vowels, which have three empty slots for the three consonants of the root. [ ]",
-    "choices": [
-     "For instance, the Arabic pattern OaOiOa generates the past tense for the third person masculine 'he', meaning you simply slot the root s-i-m ('be at peace') into this pattern to form the phrase.",
-     "The Arabic template OaOiOa directly translates the root s-i-m into a pronounceable word without any additional structure.",
-     "To say 'he was at peace' in Arabic, you must first separate the root s-i-m from its template before pronunciation.",
-     "The Semitic verbal root, such as s-i-m, functions independently as a full verb in all grammatical contexts.",
-     "Unlike English, Arabic roots can stand alone as complete words without needing vowel templates to give them meaning."
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 원문 'To take one example, the Arabic template OaOiOa forms the past tense (in the third person `he'), so if you want to say 'he was at peace', you just insert the root s- i-m (`be at peace') into that template, to get: 37'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘직역’이나 ‘직접 변환’으로 오해하여, 템플릿이 단순히 ‘소리’로만 바뀐다고 생각한 것. 지문은 템플릿이 ‘추상적 의미’를 ‘형태’로 구현한다고 설명했는데, 이를 ‘번역’이나 ‘직접 변환’으로 잘못 읽음. → 처방: 템플릿은 ‘소리’가 아니라 ‘형태(패턴)’라는 점을 기억하고, 템플릿이 ‘의미’를 담는 틀임을 다시 확인하기.\n③ 진단: ‘분리’가 필요하다고 오해하여, 템플릿과 뿌리가 따로 존재한다고 생각한 것. 지문은 뿌리가 템플릿에 ‘덧붙어’ 의미를 이룬다고 설명했는데, 뿌리를 템플릿에서 떼어내야 한다고 잘못 이해함. → 처방: 뿌리와 템플릿은 ‘하나의 단어’를 이루는 ‘부분’이므로, 둘을 떼어내면 의미가 사라진다는 점을 떠올리기.\n④ 진단: ‘독립적 기능’을 오해하여, 뿌리가 문맥 없이도 완전한 동사로 쓰인다고 생각한 것. 지문은 뿌리가 템플릿 없이 ‘소리’로만서는 의미가 없다고 설명했는데, 이를 ‘완전한 동사’로 오독함. → 처방: 뿌리는 ‘추상적 개념’일 뿐이고, 템플릿이 있어야만 ‘말’이 된다는 점을 다시 확인하기.\n⑤ 진단: ‘독립성’을 오해하여, 영어와 달리 뿌리가 홀로 쓰인다고 생각한 것. 지문은 뿌리가 템플릿 없이 ‘소리’로만서는 의미가 없다고 설명했는데, 이를 ‘완전한 단어’로 잘못 연결함. → 처방: 뿌리는 ‘소리’가 아니라 ‘의미의 뼈대’이므로, 템플릿이 있어야만 ‘말’이 된다는 점을 기억하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
