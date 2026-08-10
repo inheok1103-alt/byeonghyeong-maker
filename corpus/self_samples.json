@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-10T15:19:33.067Z",
+ "updated": "2026-08-10T17:12:57.845Z",
  "samples": [
+  {
+   "ts": "2026-08-10T17:10:21.690Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "ⓐ<u>Agreement</u> between a ⓑ<u>transitive</u> verb and its object is invisible in English (in the sense that it has no ⓒ<u>overt</u> phonetic manifestation), but is visible in languages like Swahili with overt object-agreement morphology. Given the Earliness Principle, the ⓓ<u>pronoun</u> them in (44) will have had its case ⓔ<u>feature</u> valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.",
+    "choices": [
+     "agreement: To stop the motion of (a person or animal).",
+     "transitive: Making a transit or passage.",
+     "overt: Open and not concealed or secret.",
+     "pronoun: (grammar) A type of noun that refers anaphorically to another noun or noun phras",
+     "feature: One's structure or make-up: form, shape, bodily proportions."
+    ],
+    "answer": 1,
+    "explanation": "정답 ⓐ의 풀이는 'arrested'의 정의이다. 'agreement'의 올바른 풀이: An understanding between entities to follow a specific course of conduct.\n[오답 진단·처방]\n② 진단: 학생은 'transitive'를 '이동하다'나 '이동시키다'의 의미로 오독했을 가능성이 있다. 지문에서 'a transitive verb'라는 문맥을 고려하지 않고 단어의 어근을 잘못 해석했기 때문이다. ('Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle') → 처방: 학생은 지문에서 단어가 사용된 문맥을 주의 깊게 읽고, 문법 용어의 정의를 정확히 이해해야 한다.\n③ 진단: 학생은 'overt'를 다른 의미로 오독했을 가능성이 있다. 지문에서 'overt object-agreement morphology'라는 문맥을 고려하지 않고 단어의 일반적인 의미를 잘못 해석했기 때문이다. ('but is visible in languages like Swahili with overt object-agreement morphology') → 처방: 학생은 지문에서 단어가 사용된 문맥을 주의 깊게 읽고, 문법 용어의 정의를 정확히 이해해야 한다.\n④ 진단: 학생은 'pronoun'을 다른 의미로 오독했을 가능성이 있다. 지문에서 'the pronoun them'이라는 문맥을 고려하지 않고 단어의 일반적인 의미를 잘못 해석했기 때문이다. ('Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative') → 처방: 학생은 지문에서 단어가 사용된 문맥을 주의 깊게 읽고, 문법 용어의 정의를 정확히 이해해야 한다.\n⑤ 진단: 학생은 'feature'를 다른 의미로 오독했을 가능성이 있다. 지문에서 'case feature'라는 문맥을 고려하지 않고 단어의 일반적인 의미를 잘못 해석했기 때문이다. ('and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above') → 처방: 학생은 지문에서 단어가 사용된 문맥을 주의 깊게 읽고, 문법 용어의 정의를 정확히 이해해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-10T17:12:23.269Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 이 문장은 주어와 목적어 간 격과 일치의 차이가 언어에 따라 어떻게 나타나는지를 설명한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-10T15:18:20.354Z",
    "type": "본문찾아쓰기",
@@ -267,77 +321,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Never do we use the with most stations and airports; (포인트: 부정어 'Never'를 문두로 이동시켜 주어-조동사 도치 구현)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-10T06:43:17.478Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": -0.5,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "변별도 낮음(D̂=-0.50)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "Because some ⓐ<u>writers</u> are ⓑ<u>seized</u> by the idea that writing is good only when it’s free of ⓒ<u>errors</u> that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a ⓓ<u>clause</u> expressing ­familiar information about causation, introduce the clause with ⓔ<u>since</u>, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
-    "choices": [
-     "writers: A person who writes, or produces literary work.",
-     "seized: To deliberately take hold of; to grab or capture.",
-     "errors: Senses relating to a thin, pointed object.",
-     "clause: (grammar) A verb, its necessary grammatical arguments, and any adjuncts affectin",
-     "since: From a specified time in the past."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ의 풀이는 'style'의 정의이다. 'errors'의 올바른 풀이: The state, quality, or condition of being wrong.\n[오답 진단·처방]\n① 진단: 지문에서 'some writers'는 글을 쓰는 사람을 의미하지만, 학생은 '작가'라는 단어의 의미를 제대로 파악하지 못하고 다른 의미로 오독했을 가능성이 있다. → 처방: 다음부터는 문맥에 맞는 단어의 의미를 파악하기 위해 지문을 더 주의해서 읽어야 한다.\n② 진단: 지문에서 'seized'는 아이디어에 사로잡혀 있다는 의미인데, 학생은 이 단어의 의미를 제대로 이해하지 못하고 다른 동사로 혼동했을 가능성이 있다. → 처방: 다음부터는 지문에서 사용된 단어의 의미를 사전이나 문맥을 통해 정확하게 파악해야 한다.\n④ 진단: 지문에서 'clause'는 문법적인 용어로, 학생은 이 용어의 의미를 제대로 파악하지 못하고 다른 의미로 오독했을 가능성이 있다. → 처방: 다음부터는 문법적인 용어를 정확하게 이해하기 위해 문법 책이나 참고 자료를 더 참고해야 한다.\n⑤ 진단: 지문에서 'since'는 시간이나 이유를 나타내는 접속사로, 학생은 이 단어의 의미를 제대로 이해하지 못하고 다른 의미로 혼동했을 가능성이 있다. → 처방: 다음부터는 지문에서 사용된 접속사나 전치사의 의미를 정확하게 파악하기 위해 문법 규칙을 더 공부해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T06:43:57.677Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:\n\n─────────\n[요약문] Overemphasis on (A) leads writers to produce (B) prose, yet exceptions exist where familiar causal clauses introduced by 'since' can enhance clarity.",
-    "choices": [
-     "(A) literal accuracy … (B) fluent",
-     "(A) grammatical precision … (B) ornate",
-     "(A) grammatical correctness … (B) stiff",
-     "(A) strict grammar … (B) ambiguous",
-     "(A) mechanical correctness … (B) verbose"
-    ],
-    "answer": 3,
-    "explanation": "(A) grammatical correctness / (B) stiff 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A) leads writers to produce (B) prose'의 (A)가 'grammatical correctness'임을 강조하는데, 학생은 'literal accuracy'로 오해하여 문자의 뜻만 따졌음. 지문 첫 문장에 'free of errors that only a grammarian can explain'이 있음. → 처방: 요약문의 핵심 단어는 '문법적 정확성'이므로, '(A)는 문법적 정확성'을 뜻하는 단어를 찾도록 문제의 키워드('grammatical', 'errors')에 집중할 것.\n② 진단: 학생은 'ornate'를 '(B) prose'에 넣었는데, 지문은 'graceless prose'라고 하여 거칠고 세련되지 못한 문체를 말함. 'ornate'는 화려한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'가 '(B) prose'에 해당하므로, '(B)는 stiff(뻣뻣한, 경직된)'가 어울린다는 점을 기억할 것.\n④ 진단: 학생은 'ambiguous'을 골랐는데, 지문은 문법적 엄격함이 지나치면 문체가 '뻣뻣해진다'고 설명함. 'ambiguous'은 모호한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'와 'stiff'가 '(B) prose'에 해당한다는 점을 떠올리며, 선택지 중 '뻣뻣한'을 뜻하는 단어를 찾도록 할 것.\n⑤ 진단: 학생은 'verbose'를 골랐는데, 지문은 문법적 엄격함이 지나치면 '거칠고 세련되지 못한 문체'가 된다고 설명함. 'verbose'는 장황한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'가 '(B) prose'에 해당한다는 점을 기억하고, '(B)는 stiff(뻣뻣한)'가 가장 어울린다는 결론을 내릴 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
