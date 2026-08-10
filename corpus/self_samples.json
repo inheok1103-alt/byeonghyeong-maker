@@ -1,6 +1,79 @@
 {
- "updated": "2026-08-10T13:51:51.023Z",
+ "updated": "2026-08-10T15:19:33.067Z",
  "samples": [
+  {
+   "ts": "2026-08-10T15:18:20.354Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] An occurrence; something that happens.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] event (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-10T15:18:44.394Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.13,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.13)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "Unfortunately this is an entirely different set of \u0002-role assignments to what we have previously found. ① We concluded above that the theme \u0002-role is assigned to the specifier of a thematic verb, not its complement position. ② The agent, on the other hand, was assigned to the specifier of a light verb taking a VP complement. ③ If we are to maintain the UTAH, either the structure in (45) is inaccurate, or our analyses of unaccusative and light verbs is. ④ This discrepancy suggests that the UTAH might actually be a universal principle applicable to all linguistic structures, including those with entirely different thematic roles. ⑤ Moreover, the structure of the VP in (45) is simple, in comparison to that of verbal complexes involving light verbs, as in (32), for example. Yet the event structure expressed here is not simple. In the butler opened the door, there is an event involving the butler doing something and an event involving the door being open and clearly the first event causes the second. Hence the event structure is: (46) e = e1 → e2 : e1 = ‘the butler did something’",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘theme 역할’이 ‘thematic 동사’의 보충어 위치가 아니라 ‘specifier’에 할당된다는 결론을 오독해, 이 문장이 앞의 결론을 다시 언급하는 supporting evidence 로만 보았고, 전체 흐름의 일부로 인식했다. → 처방: ‘이전 결론’을 다시 인용하는 문장임을 분명히 파악하고, ‘흐름’을 끊는 supporting detail 로 보지 말 것.\n② 진단: ‘agent 역할’이 ‘light 동사’의 VP 보충어 ‘specifier’에 할당되었다는 앞의 분석을 오해해, 이 문장이 새로운 정보가 아니라 반복으로만 느껴졌고, 흐름의 일부로 여겼다. → 처방: ‘agent’와 ‘light 동사’의 관계를 설명하는 supporting fact 임을 명확히 구분하고, ‘흐름’을 끊는 supporting detail 로 보지 말 것.\n③ 진단: ‘UTAH’를 유지하려면 구조(45)가 잘못되었거나 ‘unaccusative·light 동사’ 분석이 잘못되었다는 가설을 제시하는 문장으로 오해해, 이 문장이 ‘문제 제기’로만 보았고, 흐름의 일부로 생각했다. → 처방: ‘문제 제기’나 ‘가설’을 제시하는 문장이 아니라, 앞의 결론을 바탕으로 한 ‘분석의 한계’임을 분명히 파악할 것.\n⑤ 진단: ‘butler opened the door’의 사건 구조가 ‘butler 의 행동’과 ‘door 의 상태 변화’로 나뉜다는 예시를 오해해, 이 문장이 사건 구조의 복잡성을 설명하는 supporting detail 로만 보았고, 흐름의 일부로 여겼다. → 처방: ‘사건 구조’의 복잡성을 예시로 설명하는 supporting detail 임을 분명히 파악하고, ‘흐름’을 끊는 supporting detail 로 보지 말 것.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-10T15:19:00.836Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: (45) 의 구조가 부정확하거나 분석이 잘못되었습니다\n주어진 단어: ( structure / inaccurate / analyses )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The structure in (45) is inaccurate or our analyses are wrong. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-10T13:46:25.042Z",
    "type": "빈칸(문장)",
@@ -265,96 +338,6 @@
     ],
     "answer": 3,
     "explanation": "(A) grammatical correctness / (B) stiff 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A) leads writers to produce (B) prose'의 (A)가 'grammatical correctness'임을 강조하는데, 학생은 'literal accuracy'로 오해하여 문자의 뜻만 따졌음. 지문 첫 문장에 'free of errors that only a grammarian can explain'이 있음. → 처방: 요약문의 핵심 단어는 '문법적 정확성'이므로, '(A)는 문법적 정확성'을 뜻하는 단어를 찾도록 문제의 키워드('grammatical', 'errors')에 집중할 것.\n② 진단: 학생은 'ornate'를 '(B) prose'에 넣었는데, 지문은 'graceless prose'라고 하여 거칠고 세련되지 못한 문체를 말함. 'ornate'는 화려한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'가 '(B) prose'에 해당하므로, '(B)는 stiff(뻣뻣한, 경직된)'가 어울린다는 점을 기억할 것.\n④ 진단: 학생은 'ambiguous'을 골랐는데, 지문은 문법적 엄격함이 지나치면 문체가 '뻣뻣해진다'고 설명함. 'ambiguous'은 모호한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'와 'stiff'가 '(B) prose'에 해당한다는 점을 떠올리며, 선택지 중 '뻣뻣한'을 뜻하는 단어를 찾도록 할 것.\n⑤ 진단: 학생은 'verbose'를 골랐는데, 지문은 문법적 엄격함이 지나치면 '거칠고 세련되지 못한 문체'가 된다고 설명함. 'verbose'는 장황한 문체를 뜻하므로 문맥과 맞지 않음. → 처방: 지문의 'graceless'가 '(B) prose'에 해당한다는 점을 기억하고, '(B)는 stiff(뻣뻣한)'가 가장 어울린다는 결론을 내릴 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T04:56:00.003Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "Confusing Words and Homonyms 39 ⓐ<u>mood</u> an emotional state ⓑ<u>mooed</u> the sound a cow made moose an animal mousse type of dessert ⓒ<u>morning</u> start of the day, between night and afternoon ⓓ<u>cheer</u> sorrow over someone’s death ⓔ<u>muscle</u> ﬁbrous tissue mussel edible marine bivalve mustard yellow condiment mustered assembled, gathered naval pertaining to ships navel belly button, umbilicus need (see knead) new (see knew) night (see knight) no (see know) none not one, not any nun female member of a religious order nose (see knows) not (see knot) number (see amount) oar a blade for rowing or conjunction ore metal-bearing mineral or rock odd (see awed) of (see have) on to vs. onto Use onto if you can add up before on. Examples: He climbed (up) onto the roof. She held on to her child in the crowd.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓓ: 문맥상 'mourning'가 와야 하는데 'cheer'가 쓰여 부적절하다 — 'mourning'은 누군가의 죽음을 슬퍼하는 상태를 뜻하는 반면, 'cheer'는 기쁨이나 유쾌함을 표현하는 단어로 'sorrow over someone’s death'라는 문맥에 부합하지 않는다.. [극성] 슬픔(정답=mourning) ↔ 기쁨(오답=cheer)\n[오답 진단·처방]\n① 진단: ⓐ mood 의 뜻(emotional state)을 몰라서 오독했을 수 있다. 지문에서 mood 는 '기분'을 뜻하는데, 학생이 이를 '소리'나 '동물'로 혼동했을 가능성이 있다. → 처방: 단어 뜻을 정확히 외우고, 문맥에 맞게 쓰는 연습을 한다. 예를 들어 '기분이 좋다'는 표현을 영어로 쓸 때 mood 를 사용한다는 점을 기억한다.\n② 진단: ⓑ mooed 의 뜻을 몰라서 오독했을 수 있다. 지문에서 mooed 는 '소의 울음소리'를 뜻하는데, 학생이 이를 '동물'이나 '음식'으로 혼동했을 가능성이 있다. → 처방: mooed 가 동사형으로 '음매하고 울다'라는 뜻임을 기억하고, 문장에서 소리가 나는 상황인지 확인한다.\n③ 진단: ⓒ morning 의 뜻을 몰라서 오독했을 수 있다. 지문에서 morning 은 '아침'을 뜻하는데, 학생이 이를 '저녁'이나 '밤'으로 혼동했을 가능성이 있다. → 처방: morning 이 '아침'임을 확실히 기억하고, 시간 순서(밤→아침→오후→저녁)를 떠올리며 문맥을 확인한다.\n⑤ 진단: ⓔ muscle 의 뜻을 몰라서 오독했을 수 있다. 지문에서 muscle 은 '근육'을 뜻하는데, 학생이 이를 '소리'나 '동물'로 혼동했을 가능성이 있다. → 처방: muscle 이 '근육'임을 기억하고, 신체 부위를 설명하는 문장인지 확인한다. 예를 들어 '근육이 아프다'는 표현을 떠올린다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T23:49:52.416Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 9 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 9단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 미국 영어와 영국 영어는 어휘에 많은 차이가 있습니다.\n주어진 단어: ( american / british / english )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] American and British English have many differences in vocabulary. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-09T22:52:12.071Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Mullins’ aggressive start followed by a failure to land decisive blows",
-     "champion’s intimidating strategy leading to Mullins’ defeat",
-     "Mullins’ initial aggressive stance ignoring opponent’s strength",
-     "constant aggressive attacks resulting in immediate knockout",
-     "Mullins’ belligerent attitude overcoming the champion’s defenses"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The boxing match described in the text highlights Mullins' aggressive yet ineffective strategy against the champion.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도 왜곡·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 정도 왜곡· ⑤ 오답 — 조건 누락\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The boxing match described in the text highlights Mullins]\n[오답 진단·처방]\n① 진단: ‘Mullins 의 공격적인 시작’이 맞지만 ‘결정적 타격을 못 날린 실패’를 강조한 부분은 글에 없음. ‘alacrity 로 sprang 하고 disdain 을 보인 것은 맞지만 패배는 ‘intimidate 하지 못한 결과’가 아니라 ‘feint 와 uppercut 에 당한 것’임. → 처방: ‘시작’과 ‘결과’를 구분하지 말고 글 전체 흐름(‘belligerent 태도 → intimidate 실패 → 패배’)을 따라가기.\n② 진단: ‘champion 의 intimidate 전략’이 아니라 ‘Mullins 가 intimidate 하려 했지만 실패한 것’이 글의 핵심. ‘intimidate’는 Mullins 가 한 행동이지 champion 이 한 행동이 아님. → 처방: ‘누가 누구를 intimidate 하는지’를 정확히 짚고, 동사 주체와 목적어를 구분해서 읽기.\n④ 진단: ‘끊임없는 공격’이 아니라 Mullins 는 ‘한 번의 공격적 돌입’만 했고, ‘즉각적인 KO’는 일어나지 않음. ‘adroit feint 와 uppercut’으로 패배했으므로 ‘즉각적’이란 표현은 오류. → 처방: ‘상대방의 반격 없이 한 방에 끝나는 상황’이 아니라 ‘상대방의 기술에 당한 패배’를 떠올리며 읽기.\n⑤ 진단: ‘Mullins 의 공격적 태도가 champion 의 방어선을 뚫었다’는 내용은 글에 없음. Mullins 는 champion 의 ‘feint 와 uppercut’에 당해 패배했으므로 ‘overcoming’이란 표현은 틀림. → 처방: ‘승리’와 ‘패배’를 구분하고, ‘overcoming’이란 단어가 나올 때는 ‘누가 누구를 이겼는지’를 정확히 확인하기."
    }
   }
  ]
