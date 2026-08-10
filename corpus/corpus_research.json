@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-10T02:37:24.248Z",
+ "updated": "2026-08-10T04:56:39.075Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-10T04:56:16.296Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'old english', 'middle english' 등 역사적 맥락의 연어는 문법 오류와 결합해 'deed'→'Indeed'와 같은 철자 오류나 문법적 오류로 출제될 가능성이 높다. 또한 'reason relations', 'direct object' 등 문법 용어는 오용될 가능성이 높아 오답 설계에 유용하다.",
+   "rule": "'Indeed', 'these kinds of', 'the same thing' 등 고빈도 연어는 문법 오류나 어휘 오류와 결합해 'deed'→'Indeed', 'kind of activities'→'these kinds of activities'와 같이 오답을 설계할 때 반드시 포함시켜야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-10T02:36:54.909Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "‘go to the army’와 같은 고정적 표현이 아닌 ‘commitments men have to make to go to the army’로 재구성되는 패턴이 빈번히 관찰된다. 또한 ‘sacrifice’, ‘precious’, ‘textbooks’ 등 명사/형용사의 철자 오류와 ‘anyways’(→ ‘anyway’)의 비표준 표기 수정이 반복된다.",
    "rule": "‘go to the army’(군대에 가다) 대신 ‘commitments to go to the army’(군대에 가기 위한 의무)나 ‘enlist in the army’(입대하다) 등으로 재구성하는 어법 변형을 내신 문항에 반드시 포함하라. 특히 ‘go to the army’가 등장하면 무조건 오류로 처리하고, 올바른 대안을 ‘enlist in the army’ 또는 ‘join the army’로 제시하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T03:22:22.323Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'and'를 통한 병렬 구조가 빈번하며, 문장 내 동사 시제나 주어-동사 일치가 오류로 자주 발생함을 확인할 수 있다. 또한 'useful'과 같은 형용사가 'necessary'와 같은 명사와 결합하거나, 'think of it'과 같은 구가 문장 끝에 덧붙여지는 패턴이 관찰된다.",
-   "rule": "'A and B' 병렬 구조에서 A와 B는 문법적으로 동일한 품사(명사/동사/형용사 등)로 통일해야 하며, 특히 동사 시제나 수 일치를 반드시 맞추도록 출제하라.",
    "sample": [
     "old english",
     "university press",

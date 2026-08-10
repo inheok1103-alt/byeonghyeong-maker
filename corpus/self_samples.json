@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-10T02:37:24.252Z",
+ "updated": "2026-08-10T04:56:39.080Z",
  "samples": [
+  {
+   "ts": "2026-08-10T04:56:00.003Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "Confusing Words and Homonyms 39 ⓐ<u>mood</u> an emotional state ⓑ<u>mooed</u> the sound a cow made moose an animal mousse type of dessert ⓒ<u>morning</u> start of the day, between night and afternoon ⓓ<u>cheer</u> sorrow over someone’s death ⓔ<u>muscle</u> ﬁbrous tissue mussel edible marine bivalve mustard yellow condiment mustered assembled, gathered naval pertaining to ships navel belly button, umbilicus need (see knead) new (see knew) night (see knight) no (see know) none not one, not any nun female member of a religious order nose (see knows) not (see knot) number (see amount) oar a blade for rowing or conjunction ore metal-bearing mineral or rock odd (see awed) of (see have) on to vs. onto Use onto if you can add up before on. Examples: He climbed (up) onto the roof. She held on to her child in the crowd.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 4,
+    "explanation": "정답 ⓓ: 문맥상 'mourning'가 와야 하는데 'cheer'가 쓰여 부적절하다 — 'mourning'은 누군가의 죽음을 슬퍼하는 상태를 뜻하는 반면, 'cheer'는 기쁨이나 유쾌함을 표현하는 단어로 'sorrow over someone’s death'라는 문맥에 부합하지 않는다.. [극성] 슬픔(정답=mourning) ↔ 기쁨(오답=cheer)\n[오답 진단·처방]\n① 진단: ⓐ mood 의 뜻(emotional state)을 몰라서 오독했을 수 있다. 지문에서 mood 는 '기분'을 뜻하는데, 학생이 이를 '소리'나 '동물'로 혼동했을 가능성이 있다. → 처방: 단어 뜻을 정확히 외우고, 문맥에 맞게 쓰는 연습을 한다. 예를 들어 '기분이 좋다'는 표현을 영어로 쓸 때 mood 를 사용한다는 점을 기억한다.\n② 진단: ⓑ mooed 의 뜻을 몰라서 오독했을 수 있다. 지문에서 mooed 는 '소의 울음소리'를 뜻하는데, 학생이 이를 '동물'이나 '음식'으로 혼동했을 가능성이 있다. → 처방: mooed 가 동사형으로 '음매하고 울다'라는 뜻임을 기억하고, 문장에서 소리가 나는 상황인지 확인한다.\n③ 진단: ⓒ morning 의 뜻을 몰라서 오독했을 수 있다. 지문에서 morning 은 '아침'을 뜻하는데, 학생이 이를 '저녁'이나 '밤'으로 혼동했을 가능성이 있다. → 처방: morning 이 '아침'임을 확실히 기억하고, 시간 순서(밤→아침→오후→저녁)를 떠올리며 문맥을 확인한다.\n⑤ 진단: ⓔ muscle 의 뜻을 몰라서 오독했을 수 있다. 지문에서 muscle 은 '근육'을 뜻하는데, 학생이 이를 '소리'나 '동물'로 혼동했을 가능성이 있다. → 처방: muscle 이 '근육'임을 기억하고, 신체 부위를 설명하는 문장인지 확인한다. 예를 들어 '근육이 아프다'는 표현을 떠올린다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-09T23:49:52.416Z",
    "type": "조건영작",
@@ -319,41 +354,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] being — 문단의 논지상 이 자리에는 'being'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T16:58:15.307Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "The disconnection between cultural development and grammar is also clear in that societies have turned upside down over time while the grammar stayed put. As psychologist Herbert Clark has put it, if the Sapir-Whorf hypothesis “has any force historically, we should find examples of beliefs failing to change over time because of the conventions that exist in the language. Such examples do not readily come to mind.” Right—take Russia. All would agree that certain changes have occurred in prevailing beliefs in that country over the past thousand years—from brute feudalism under the tsars to Communism to glasnost to the queer blend of democracy and dictatorship of today. Yet Russian grammar during that time has always been the marvelous nightmare that it is now. Russian has changed, to be sure, but without equivalents to the Celtic adoption and the Viking disruption, and nowhere near as dramatically as English—and in no ways that could be correlated with things Peter the Great, the Romanovs, or Lenin did.",
-    "choices": [
-     "러시아의 신념은 지난 천 년간 변화하지 않았지만 문법은 거의 변하지 않았다",
-     "러시아는 차르 시대부터 민주주의와 독재가 혼재된 현재에 이르기까지 신념이 변해 왔다",
-     "러시아어 문법은 과거와 현재 모두 단순하고 쉬운 특징을 유지해 왔다",
-     "러시아어는 켈트족의 채택이나 바이킹의 혼란과 같은 급격한 변화가 있었다",
-     "러시아어는 영어만큼 dramatic 한 변화가 있었고 피터 대제나 레닌의 정책과 연관되었다"
-    ],
-    "answer": 2,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘러시아의 신념이 변화하지 않았다’고 오해했는데, 지문은 ‘신념이 변해 왔다’고 분명히 밝힘. ‘문법이 거의 변하지 않았다’는 부분은 맞지만 전체 뜻이 틀림. → 처방: ‘신념’이 변했다는 지문 내용을 정확히 짚고, ‘문법’이 변하지 않았다는 사실과 구분해서 읽기.\n③ 진단: ‘러시아어 문법이 단순하고 쉬웠다’고 오해했는데, 지문은 ‘marvelous nightmare(놀랍고 끔찍한)’라고 표현해 복잡함을 강조했음. → 처방: ‘marvelous nightmare’라는 표현이 주는 의미를 떠올리며 문법의 특징을 정확히 파악하기.\n④ 진단: ‘켈트족의 채택이나 바이킹의 혼란’이고 오해했는데, 지문은 ‘러시아어는 그런 급격한 변화가 없었다’고 명시함. → 처방: ‘러시아어는 변화가 없었다’는 지문 내용을 다시 확인하고, 영어와 비교해 차이를 분명히 하기.\n⑤ 진단: ‘러시아어는 dramatic 한 변화가 있었고 정책과 연관되었다’고 오해했는데, 지문은 ‘러시아어는 변화가 작았고 정책과 무관’하다고 설명함. → 처방: ‘dramatic’이라는 단어가 주는 의미를 생각하며, 영어와 러시아어의 변화 정도를 비교해서 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
