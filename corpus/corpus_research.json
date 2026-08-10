@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-10T22:01:45.398Z",
+ "updated": "2026-08-10T23:05:32.482Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-10T23:05:05.577Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 '목록 나열' 구조가 문장 내에 등장할 때, 쉼표(,)를 일관적으로 사용해 항목 간 구분을 명확히 한다는 패턴이 관찰된다. 특히 3개 이상의 항목이 나열될 경우, 마지막 항목 앞에도 쉼표를 삽입하는Oxford comma(Oxford 쉼표) 규칙이 빈번히 적용된다.",
+   "rule": "3개 이상의 항목이 나열된 문장에서, 각 항목 사이에 쉼표(,)를 반드시 삽입하고, 마지막 항목 앞에도 쉼표를 추가하여 항목 구분을 명확히 하도록 한다. 예: 'A , B , and C'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-10T22:01:15.173Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'attractive'→'attracted'와 같이 형용사-분사 전환이 필요한 연어 패턴이 빈번하며, 'responsible'→'responsibility'와 같이 명사화 오류도 다수 발생한다. 또한 문장 내 삽입어(insert) 생략(예: ',')도 오류 유형으로 활용 가능하다.",
    "rule": "'형용사(attractive/appealing/interesting 등)가 수동적 의미(attracted/appealed/interest)를 요구할 때, 반드시 '-ed' 분사로 전환하여 연어 패턴을 완성하도록 출제한다. (예: 'kids are more ______ to ads' → 'attracted')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T19:17:48.778Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구(noun phrase) 내 'kind(s) of' 구조는 'these kinds of'로 구체화되어야 하며, 동사 시제 불일치(present/past tense 혼용)는 일관된 시제로 수정해야 한다. 또한 전치사(for)의 목적어는 명사형(-ness, -tion 등)으로 끝나야 자연스럽다.",
-   "rule": "'kind(s) of + 명사'는 'these/those kinds of + 명사'로 명확히 하고, 시제 불일치는 일관된 present/past tense로 통일하며, 'for + 명사' 뒤에는 '-ness'나 '-tion'으로 끝나는 명사형을 사용해 문법적으로 자연스럽게 구성하라.",
    "sample": [
     "old english",
     "university press",
