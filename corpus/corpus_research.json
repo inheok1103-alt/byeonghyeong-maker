@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-10T18:06:57.081Z",
+ "updated": "2026-08-10T19:20:31.144Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-10T19:20:00.639Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'except that'와 'and'가 병렬 구조를 형성하며 명사절/동사절을 연결하는 패턴이 빈번히 관찰됨. 또한 'and'가 문장 내 동사나 절을 연결할 때 콤마(,)를 동반하는 경향이 강함.",
+   "rule": "'except that' 또는 'and'로 연결되는 절은 반드시 콤마(,)로 분리하여 병렬 구조를 명확히 표시하도록 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-10T18:06:23.564Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구 내 한정사(quantifier) 오류와 동사 시제·태 오류가 빈번하게 결합되어 있음을 확인. 특히, 'any/many', 'few/used few' 등 한정사 선택과 동사 시제·태가 문맥에 맞지 않게 사용되는 패턴이 두드러짐.",
    "rule": "한정사(a/an, the, any, few, many 등)와 동사 시제·태(present/past tense, passive voice)가 문맥에 맞지 않게 사용된 경우, 해당 한정사와 동사의 조합이 자연스러운지 검토하여 오류를 수정하라. 특히, 'any'는 부정문/의문문에서, 'few'는 수량 제한을 강조할 때, '-ed'는 과거 시제/수동태로만 사용되도록 제한하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T16:14:15.182Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'old/new + noun' 구조(예: old English, new book)가 빈번한 반면, 'old/new + noun + -s' 형태(예: old Englishs)는 오류로 나타나며, 이는 복수형 또는 오역 패턴임을 확인할 수 있다. 또한 'in + noun phrase' 구조(예: in my opinion)가 자주 쓰이지만, 'in + noun' 형태(예: in opinion)는 오류로 나타나며, 전치사 구문의 규칙을 위반함을 알 수 있다.",
-   "rule": "'old/new + noun' 또는 'in + noun phrase' 구조가 사용될 경우, 반드시 복수형(-s) 여부와 전치사 구문(예: in my opinion vs. in opinion)을 검증하도록 출제하라. 특히 'old/new + noun' 뒤에는 복수형이 오지 않도록 하며, 'in + noun phrase' 뒤에는 소유격(예: my, your) 또는 관사(the, a)가 필수적으로 포함되도록 오답을 설계하라.",
    "sample": [
     "old english",
     "university press",
