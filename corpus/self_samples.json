@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-10T10:38:42.625Z",
+ "updated": "2026-08-10T12:07:21.203Z",
  "samples": [
+  {
+   "ts": "2026-08-10T12:06:40.748Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "I don’t like. Note carefully the pronunciation of this word. ANTITHESIS (an TITH uh sis) n the direct opposite • Erin is the antithesis of Aaron: Erin is bright and beautiful; Aaron is dull and plain. Note carefully the pronunciation of this word. APARTHEID (uh PAHRT hyte) n the former policy of racial segregation and oppression in the Republic of South Africa The word apartheid is related to the word apart. Under apartheid in South Africa, blacks were kept apart from whites and denied all rights. The word apartheid is sometimes applied to less radical forms of racial injustice and to other kinds of separation. Critics have sometimes accused American public schools of <u>practicing educational apartheid</u> by providing substandard schooling for nonwhites. Quick Quiz #8 Match each word in the first column with its definition in the second column. Check your answers here. 1. anarchy a. resentment 2. monarchy b. racial oppression 3. anecdote c. firm dislike 4. anguish d. irregularity 5. animosity e. what went before 6. anomaly f. agonizing pain",
+    "choices": [
+     "Sometimes providing unequal opportunities to certain racial or social groups in education, but not always in a deliberate or harmful way.",
+     "Providing unequal educational opportunities to certain groups based on race or social status, thereby reinforcing systemic discrimination.",
+     "Segregating schools by race or social class to maintain historical traditions and cultural heritage.",
+     "Educational apartheid occasionally occurs when certain schools receive significantly less funding than others.",
+     "Segregating students solely by economic class without considering race or social background in educational settings."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'Providing unequal educational opportunities to certain groups based on race or social status, thereby reinforcing systemic discrimination.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'practicing educational apartheid'는 'substandard schooling for nonwhites'와 'denied all rights'를 연관지어 설명했는데, 이 선지는 'deliberate or harmful way'가 아닌 'not always'로 약화시켜 오독. 'practicing'의 강도를 잘못 이해함. → 처방: 지문에서 'practicing'은 '실행하는 것'으로, 부정적 의미를 포함한다는 점을 확인하고, 'deliberate or harmful'가 포함된 선지를 선택하도록 연습하기.\n③ 진단: 'apartheid'가 'racial segregation'을 뜻하지만, 이 선지는 'maintain historical traditions and cultural heritage'로 오해하여 '전통 유지'라는 잘못된 의미를 붙임. 지문에서 'kept apart from whites and denied all rights'를 무시함. → 처방: 'apartheid'의 핵심 의미를 'racial segregation + oppression'으로 정리하고, '전통'이나 '문화'와 같은 단어에 현혹되지 않도록 주의하기.\n④ 진단: 'educational apartheid'가 'funding 차이'만으로 설명된다고 오독. 지문에서 'substandard schooling'과 'denied all rights'가 포함된 'systemic discrimination'을 강조했는데, 이 선지는 'funding'에만 초점을 맞춤. → 처방: 지문에서 'practicing educational apartheid'의 예시가 'substandard schooling for nonwhites'임을 확인하고, 'funding'보다는 'systemic discrimination'을 포함하는 선지를 선택하도록 연습하기.\n⑤ 진단: 'apartheid'가 'racial'을 포함한다는 점을 무시하고, 'economic class'만으로 오독. 지문에서 'blacks were kept apart from whites'와 'racial injustice'를 강조했는데, 이 선지는 'race'를 배제하고 'economic class'만 다룸. → 처방: 'apartheid'의 정의에서 'racial'이 핵심임을 기억하고, 'racial'이 포함되지 않은 선지는 제외하도록 연습하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-10T12:06:51.660Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: a)\n[영영풀이] The policy of racial separation used by South Africa from 1948 to 1990.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] apartheid (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-10T10:37:24.029Z",
    "type": "본문찾아쓰기",
@@ -287,76 +340,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Democracy should empower individuals in a free society rather than reduce them to mere components of a centrally controlled system.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘개인의 자유를 희생시키는’과 ‘중앙 통제 체계’를 지문의 ‘자유로운 사회’와 ‘기계의 부품’이 아닌 ‘중앙 통제’로 오해하여, 민주주의의 본질을 반대로 읽음. → 처방: ‘개인의 자유’를 ‘자유로운 사회’와 연결지어, 민주주의가 개인의 역할을 보호함을 다시 한 번 확인하며 읽기.\n② 진단: ‘개인의 자율성을 보호하지 않고’와 ‘개인의 역할을 제한해야 한다’를 지문의 ‘자유로운 사회’와 ‘주체적 역할’이 아닌 ‘제한’으로만 봄. → 처방: ‘자율성’과 ‘주체적 역할’을 강조하는 문장을 찾아, 민주주의가 개인을 보호함을 분명히 이해하기.\n③ 진단: ‘개인을 중앙 통제 체계의 부품으로 전락시키는’과 ‘없어서는 안 된다’를 지문의 ‘자유로운 사회’와 ‘주체적 역할’이 아닌 ‘부품’으로만 해석함. → 처방: ‘자유로운 사회’와 ‘주체적 역할’을 핵심어로 삼아, 민주주의의 목표가 개인을 보호함을 다시 확인하기.\n④ 진단: ‘개인의 자유를 절대적으로 보장하지 않으며’와 ‘개인의 권리를 제한할 수밖에 없다’를 지문의 ‘자유로운 사회’가 아닌 ‘제한’에만 집중하여 오해함. → 처방: ‘자유로운 사회’와 ‘주체적 역할’을 떠올리며, 민주주의가 개인의 자유를 보호함을 다시 한 번 점검하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Democracy should empower individuals in a free society rather than reduce them to mere components of a centrally controlled system.]"
-   }
-  },
-  {
-   "ts": "2026-08-09T20:53:22.022Z",
-   "type": "안내문불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
-    "passage": "Ray English 지문 전문 · 원문 그대로 34번 빈칸 [ 3 점] · B L A N K 결과에 따라 행동을 바꾸기 빈칸 빈칸 = changing behaviors in light of the consequences: 결과(칭찬/무효)에 따라 행동을 바꾼다(조작적 조건화). 소재 결과에 따른 행동 변화 Changing behavior by its consequences 주제 우리는 결과에 비추어 행동을 조정하며 적응한다 We adapt by acting on consequences 제목 결과가 행동을 바꾼다 We Adapt by Acting on Consequences 한눈에 인간은 ‘결과에 따라 행동을 바꾸며’ 적응한다는 글이다. 칭찬받은 아이는 그 행동을 계속하고, 효과 없다고 느끼는 무용 수는 그만둔다. 즉 이득이 되는 일은 하고 문제가 되는 방식은 피하는 ‘결과 기반 적응’이 핵심이다. 지문 전문 — 시험지 원문 A particularly powerful way in which human beings adapt and adjust to their circumstances is by ＿＿＿＿＿＿＿＿ that they yield. For instance, a child who gets praised by her teacher for doing an exercise correctly is likely to continue doing the exercise in that way. A dancer who feels that a particular conditioning exercise is not giving any results is likely to give that exercise up in favor of another one that seems more promising. In general, we tend to do things that bring us some kind of benefit or act in ways that help us avoid some kind of problem, discomfort, or disadvantage. We also tend to do fewer things (or stop doing things) that lead to problems, discomfort, or disadvantages, and we tend to avoid acting in ways that do not bring any benefit or reward. 지문 전문 · 원문 그대로",
-    "choices": [
-     "칭찬받은 아이는 그 행동을 계속해서 수행하지 못할 가능성이 있다.",
-     "칭찬받은 아이는 그 행동을 계속해서 수행할 가능성이 있다.",
-     "효과가 없다고 느껴지는 동작은 포기하는 경우가 많다.",
-     "이득이 되는 행동은 계속하고 불이익은 피하는 경향이 있다.",
-     "문제나 불편을 초래하는 행동은 줄이거나 중단하는 특성이 있다."
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n② 진단: ‘칭찬받은 아이는 그 행동을 계속해서 수행하지 못할 가능성이 있다’는 문장에서 ‘하지 못할’로 오독하여 결과(칭찬)에 따라 행동이 바뀌는 원리를 무시했다. 지문은 칭찬받은 행동이 계속된다고 분명히 밝힘. → 처방: ‘결과에 따라 행동이 바뀐다’는 핵심 원리를 떠올리며 선지를 읽고, ‘하지 못할’이 아니라 ‘계속할 가능성이 있다’로 해석해야 한다.\n③ 진단: ‘효과가 없다고 느껴지는 동작은 포기하는 경우가 많다’는 문장을 ‘포기하지 않을 수도 있다’로 혼동했다. 지문은 효과가 없다고 느껴지면 동작을 포기한다고 직접 설명함. → 처방: ‘결과(효과)가 없으면 행동(포기)을 바꾼다’는 원리를 떠올리며 선지를 읽고, ‘포기하는 경우가 많다’가 옳음을 확인해야 한다.\n④ 진단: ‘이득이 되는 행동은 계속하고 불이익은 피하는 경향이 있다’를 ‘이득이 있어도 그만두는 경우가 있다’로 오독했다. 지문은 이득이 되는 일은 계속하고 불이익은 피한다고 명확히 설명함. → 처방: ‘결과(이득/불이익)에 따라 행동이 바뀐다’는 원리를 떠올리며 선지를 읽고, ‘계속하고 피하는 경향’이 옳음을 확인해야 한다.\n⑤ 진단: ‘문제나 불편을 초래하는 행동은 줄이거나 중단하는 특성이 있다’를 ‘문제 행동을 더 하려는 경향이 있다’로 혼동했다. 지문은 문제 행동을 줄이거나 중단한다고 설명함. → 처방: ‘결과(문제/불편)에 따라 행동이 바뀐다’는 원리를 떠올리며 선지를 읽고, ‘줄이거나 중단하는 특성’이 옳음을 확인해야 한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-09T20:57:05.191Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "ways of determining outcomes through behavior",
-     "ways of changing behavior based on praise",
-     "ways of always adjusting behavior to consequences",
-     "ways of responding to positive outcomes only",
-     "ways of adapting behaviors based on outcomes"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'ways of acting on consequences'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘outcomes’를 ‘behavior’를 통해 ‘결정하는’ 방법으로 오해. 지문은 ‘결과’가 행동을 바꾸는 것이지, 행동이 결과를 결정하는 것이 아님. ‘ways of determining outcomes’를 오독한 것. → 처방: ‘결과’를 ‘행동의 결과’로만 한정해 읽고, ‘결과가 행동을 바꾼다’는 핵심 문장을 먼저 찾기.\n② 진단: ‘칭찬’에만 초점을 맞추어 ‘always(항상)’이라는 과도한 일반화를 무시. 지문은 칭찬뿐 아니라 ‘무용한 결과’도 행동 변화를 이끈다고 설명. → 처방: ‘칭찬’ 외에 ‘무용한 결과’도 포함된다는 사실을 확인하고, ‘always’를 포함한 선지는 오답일 가능성이 높다는 점을 기억하기.\n③ 진단: ‘always adjusting’을 ‘항상’으로 오해하고 ‘consequences’를 ‘결과’로만 해석. 지문은 ‘결과에 따라 행동이 바뀐다’는 ‘일반적 원칙’을 설명하지, ‘항상’이라는 절대적 의미를 담지 않음. → 처방: ‘always’라는 단어가 포함된 선지는 ‘예외가 있다’는 지문의 성격과 맞지 않음을 떠올리고, ‘일반적 적응’ 개념을 떠올리기.\n④ 진단: ‘positive outcomes only(긍정적 결과만)’으로 오해. 지문은 ‘이득(칭찬)’과 ‘문제(무용)’ 모두를 언급하며, ‘negative outcomes’도 행동 변화를 이끈다고 설명. → 처방: ‘긍정적 결과’ 외에 ‘문제나 불이익’도 행동 변화를 이끈다는 사실을 지문에서 찾고, ‘only’라는 단어가 포함된 선지는 오답일 가능성이 높다는 점을 기억하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: ways of acting on consequences]"
    }
   }
  ]
