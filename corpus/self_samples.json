@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-10T12:07:21.203Z",
+ "updated": "2026-08-10T13:51:51.023Z",
  "samples": [
+  {
+   "ts": "2026-08-10T13:46:25.042Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "A CASTLE IN THE AIR consonants. The verbal root in Semitic is not a pronounceable chunk like English 'eat' or Latin `ed-', but a group of just three consonants, like the Arabic 1-b-s, which means 'wear', or s- -m, which means 'be at peace'. But how can a vowel-less group of three consonants ever mean anything, if it cannot even stand up on its own three legs and be pronounced unaided? The answer is that such roots do not have to be spoken by themselves, because the root is an abstract notion, which comes to life only when it is superimposed on some templates: patterns of (mostly) vowels, which have three empty slots for the three consonants of the root. [ ]",
+    "choices": [
+     "For instance, the Arabic pattern OaOiOa generates the past tense for the third person masculine 'he', meaning you simply slot the root s-i-m ('be at peace') into this pattern to form the phrase.",
+     "The Arabic template OaOiOa directly translates the root s-i-m into a pronounceable word without any additional structure.",
+     "To say 'he was at peace' in Arabic, you must first separate the root s-i-m from its template before pronunciation.",
+     "The Semitic verbal root, such as s-i-m, functions independently as a full verb in all grammatical contexts.",
+     "Unlike English, Arabic roots can stand alone as complete words without needing vowel templates to give them meaning."
+    ],
+    "answer": 1,
+    "explanation": "빈칸에는 원문 'To take one example, the Arabic template OaOiOa forms the past tense (in the third person `he'), so if you want to say 'he was at peace', you just insert the root s- i-m (`be at peace') into that template, to get: 37'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘직역’이나 ‘직접 변환’으로 오해하여, 템플릿이 단순히 ‘소리’로만 바뀐다고 생각한 것. 지문은 템플릿이 ‘추상적 의미’를 ‘형태’로 구현한다고 설명했는데, 이를 ‘번역’이나 ‘직접 변환’으로 잘못 읽음. → 처방: 템플릿은 ‘소리’가 아니라 ‘형태(패턴)’라는 점을 기억하고, 템플릿이 ‘의미’를 담는 틀임을 다시 확인하기.\n③ 진단: ‘분리’가 필요하다고 오해하여, 템플릿과 뿌리가 따로 존재한다고 생각한 것. 지문은 뿌리가 템플릿에 ‘덧붙어’ 의미를 이룬다고 설명했는데, 뿌리를 템플릿에서 떼어내야 한다고 잘못 이해함. → 처방: 뿌리와 템플릿은 ‘하나의 단어’를 이루는 ‘부분’이므로, 둘을 떼어내면 의미가 사라진다는 점을 떠올리기.\n④ 진단: ‘독립적 기능’을 오해하여, 뿌리가 문맥 없이도 완전한 동사로 쓰인다고 생각한 것. 지문은 뿌리가 템플릿 없이 ‘소리’로만서는 의미가 없다고 설명했는데, 이를 ‘완전한 동사’로 오독함. → 처방: 뿌리는 ‘추상적 개념’일 뿐이고, 템플릿이 있어야만 ‘말’이 된다는 점을 다시 확인하기.\n⑤ 진단: ‘독립성’을 오해하여, 영어와 달리 뿌리가 홀로 쓰인다고 생각한 것. 지문은 뿌리가 템플릿 없이 ‘소리’로만서는 의미가 없다고 설명했는데, 이를 ‘완전한 단어’로 잘못 연결함. → 처방: 뿌리는 ‘소리’가 아니라 ‘의미의 뼈대’이므로, 템플릿이 있어야만 ‘말’이 된다는 점을 기억하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-10T13:51:08.561Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.38,
+    "D": -0.17,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.17)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "셈어 동사 어근은 모음 템플릿과 결합하는 것만으로 의미를 획득한다",
+     "셈어 동사 어근이 모음 템플릿과 결합해도 과거형이 되는 것은 아니다",
+     "모든 언어의 동사 어근은 모음 템플릿과 조합될 때 의미를 지닌다",
+     "셈어 동사 동사 어근은 모음 템플릿 없이도 의미를 유지할 수 있다",
+     "셈어 동사 어근은 모음 템플릿과 결합할 때에만 의미를 지닌다"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The meaning of Semitic verbal roots is realized only when abstract consonantal roots are combined with vowel templates.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈 · ② 오답 — 정답의 일부만 담아 지엽적 · ③ 오답 — 지나치게 확대 해석 · ④ 오답 — 정도 왜곡 · ⑤ 정답 — 핵심 논지 반영\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The meaning of Semitic verbal roots is realized only when abstract consonantal roots are combined with vowel templates.]"
+   }
+  },
   {
    "ts": "2026-08-10T12:06:40.748Z",
    "type": "밑줄함의",
@@ -286,60 +355,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'The boxing match described in the text highlights Mullins' aggressive yet ineffective strategy against the champion.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도 왜곡·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 정도 왜곡· ⑤ 오답 — 조건 누락\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The boxing match described in the text highlights Mullins]\n[오답 진단·처방]\n① 진단: ‘Mullins 의 공격적인 시작’이 맞지만 ‘결정적 타격을 못 날린 실패’를 강조한 부분은 글에 없음. ‘alacrity 로 sprang 하고 disdain 을 보인 것은 맞지만 패배는 ‘intimidate 하지 못한 결과’가 아니라 ‘feint 와 uppercut 에 당한 것’임. → 처방: ‘시작’과 ‘결과’를 구분하지 말고 글 전체 흐름(‘belligerent 태도 → intimidate 실패 → 패배’)을 따라가기.\n② 진단: ‘champion 의 intimidate 전략’이 아니라 ‘Mullins 가 intimidate 하려 했지만 실패한 것’이 글의 핵심. ‘intimidate’는 Mullins 가 한 행동이지 champion 이 한 행동이 아님. → 처방: ‘누가 누구를 intimidate 하는지’를 정확히 짚고, 동사 주체와 목적어를 구분해서 읽기.\n④ 진단: ‘끊임없는 공격’이 아니라 Mullins 는 ‘한 번의 공격적 돌입’만 했고, ‘즉각적인 KO’는 일어나지 않음. ‘adroit feint 와 uppercut’으로 패배했으므로 ‘즉각적’이란 표현은 오류. → 처방: ‘상대방의 반격 없이 한 방에 끝나는 상황’이 아니라 ‘상대방의 기술에 당한 패배’를 떠올리며 읽기.\n⑤ 진단: ‘Mullins 의 공격적 태도가 champion 의 방어선을 뚫었다’는 내용은 글에 없음. Mullins 는 champion 의 ‘feint 와 uppercut’에 당해 패배했으므로 ‘overcoming’이란 표현은 틀림. → 처방: ‘승리’와 ‘패배’를 구분하고, ‘overcoming’이란 단어가 나올 때는 ‘누가 누구를 이겼는지’를 정확히 확인하기."
-   }
-  },
-  {
-   "ts": "2026-08-09T22:52:19.085Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] Although this belligerent attitude impressed the referee, it failed to intimidate the champ.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Although the referee was impressed by this belligerent attitude, the champ was not intimidated by it. (포인트: 능동태(attitude impressed the referee) → 수동태(referee was impressed by attitude), 능동태(it failed to intimidate the champ) → 수동태(the champ was not intimidated by it))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-09T21:49:54.527Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "민주주의는 개인의 자유를 희생시키는 대가로 중앙 통제 체계를 유지하는 데 기여해야 한다.",
-     "민주주의는 개인의 자율성을 보호하지 않고, 사회의 화합과 조화를 위해 개인의 역할을 제한해야 한다.",
-     "민주주의가 안정성을 확보하려면 개인을 중앙 통제 체계의 부품으로 전락시키는 수밖에 없다.",
-     "민주주의는 개인의 자유를 절대적으로 보장하지 않으며, 때로는 개인의 권리를 제한할 수밖에 없다.",
-     "민주주의는 개인이 자유로운 사회에서 주체적 역할을 할 수 있도록 힘을 실어 주어야 한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Democracy should empower individuals in a free society rather than reduce them to mere components of a centrally controlled system.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘개인의 자유를 희생시키는’과 ‘중앙 통제 체계’를 지문의 ‘자유로운 사회’와 ‘기계의 부품’이 아닌 ‘중앙 통제’로 오해하여, 민주주의의 본질을 반대로 읽음. → 처방: ‘개인의 자유’를 ‘자유로운 사회’와 연결지어, 민주주의가 개인의 역할을 보호함을 다시 한 번 확인하며 읽기.\n② 진단: ‘개인의 자율성을 보호하지 않고’와 ‘개인의 역할을 제한해야 한다’를 지문의 ‘자유로운 사회’와 ‘주체적 역할’이 아닌 ‘제한’으로만 봄. → 처방: ‘자율성’과 ‘주체적 역할’을 강조하는 문장을 찾아, 민주주의가 개인을 보호함을 분명히 이해하기.\n③ 진단: ‘개인을 중앙 통제 체계의 부품으로 전락시키는’과 ‘없어서는 안 된다’를 지문의 ‘자유로운 사회’와 ‘주체적 역할’이 아닌 ‘부품’으로만 해석함. → 처방: ‘자유로운 사회’와 ‘주체적 역할’을 핵심어로 삼아, 민주주의의 목표가 개인을 보호함을 다시 확인하기.\n④ 진단: ‘개인의 자유를 절대적으로 보장하지 않으며’와 ‘개인의 권리를 제한할 수밖에 없다’를 지문의 ‘자유로운 사회’가 아닌 ‘제한’에만 집중하여 오해함. → 처방: ‘자유로운 사회’와 ‘주체적 역할’을 떠올리며, 민주주의가 개인의 자유를 보호함을 다시 한 번 점검하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Democracy should empower individuals in a free society rather than reduce them to mere components of a centrally controlled system.]"
    }
   }
  ]

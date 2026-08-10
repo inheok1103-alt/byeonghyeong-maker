@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-10T12:07:21.199Z",
+ "updated": "2026-08-10T13:51:51.018Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-10T13:51:21.582Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'who' 다음 단수 인칭 동사(are→is)나 'ways'와 같은 복수 명사 사용 오류가 빈번하며, 'other than' 구문도 'instead of'와 혼용되어 오용되는 패턴이 확인된다. 또한 'travel'이 불가산 명사로 쓰일 수 있음을 유의해야 한다.",
+   "rule": "'who'가 선행하는 경우 동사는 단수형(is/are)으로, 'ways'는 복수형으로 쓰며, 'other than'과 'instead of'의 구문적 차이를 명확히 구분하여 문항에 반영하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-10T12:06:53.951Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "영어에서 'do not know' 연어는 부정문 구조에서 'do not know how/what to'로 확장될 때, 조동사 'do'가 재사용되지 않고 'to'가 직접 동사원형과 결합한다는 패턴을 확인할 수 있다. 또한 'good to people'은 'good for people'으로 오용되는 경우가 많으며, 'all'의 위치가 의미 차이를 유발한다는 점을 발견했다.",
    "rule": "부정문 'do not know' 뒤에 'how/what to'가 나올 경우, 조동사 'do'를 생략하고 'to'를 직접 동사원형과 결합한 형태로 오답지를 설계하라(예: 'do not know how to do' → 'do not know how to do'). 또한 'good to'는 'good for'로 오용되는 경우가 많으므로, 'good to'가 포함된 문장은 'good for'로 대체한 오답지를 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T11:13:34.672Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'and'로 연결된 동사구(understand and work hard)나 형용사구(clean and big)가 오면 문법적 일관성(parallelism)을 유지해야 한다. 또한 'so on' 앞의 나열은 쉼표로 구분되어야 한다.",
-   "rule": "'A and B' 또는 'A, B, and C' 형태로 나열된 동사구·형용사구·명사구는 문법적 일관성과 쉼표 사용 규칙을 준수하도록 오류를 수정하라.",
    "sample": [
     "old english",
     "university press",
