@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-10T06:44:42.645Z",
+ "updated": "2026-08-10T08:55:26.845Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-10T08:54:57.492Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "비교급 구문에서 'half than'은 오류로, 'half the' 또는 'half as much as' 형태로 사용해야 한다. 또한, 'much'는 불가산 명사와 함께 쓰이며, 'a lot of'로 대체해야 자연스럽다.",
+   "rule": "비교급 구문에서 'half than'은 반드시 'half the' 또는 'half as much as'로 수정하도록 하며, 'much'는 불가산 명사와 함께 쓸 때 'a lot of'로 대체하여 문법적·어휘적으로 자연스러운 표현을 사용하도록 출제한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-10T06:44:15.850Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "원서 코퍼스의 실제 오류에서 '법률/사회적 책임' 관련 명사(law, responsibility) 앞에는 고유명사(Italian, society) 또는 관사(the)가 필수적으로 사용되며, 동사(choose, take) 뒤의 명사구는 문법적 제약을 받는다.",
    "rule": "'법률/책임/사회' 관련 명사 앞에는 반드시 고유명사(Italian, society) 또는 관사(the)가 와야 하며, 동사(choose, take)의 목적어는 단수/복수 명사구로 통일되어야 한다. 예: 'I chose law' → 'I chose Italian law' 또는 'I chose the law'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T07:45:35.425Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'~ing' 동명사 형태가 명사적 기능(주어/목적어/보어)으로 더 자연스러운 경우가 많다. 또한 소유격·단수·복수 구분이 문맥상 중요하다.",
-   "rule": "'~s' 소유격·단수형 오류(예: hobbies → hobby)와 'to + 동사원형' vs. '~ing' 동명사 오류(예: using vs. to use)를 반드시 검토하여 문맥에 맞는 형태로 수정하라.",
    "sample": [
     "old english",
     "university press",
