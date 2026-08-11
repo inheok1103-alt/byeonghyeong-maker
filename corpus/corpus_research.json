@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-11T06:07:20.049Z",
+ "updated": "2026-08-11T07:42:18.027Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-11T07:41:51.163Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 '동명사(gerund)'는 단수 취급하는 경향이 강하며, 특히 'trying', 'improvement', 'making' 등 동명사가 주어 역할을 할 때 단수 동사(-s)가 오는 패턴이 빈번하다. 또한 'can + 동사원형' 구조에서 동사원형이 아닌 'to + 명사'로 전환되는 경우가 많다.",
+   "rule": "'~ing' 형태의 동명사가 주어일 경우, 단수 동사(-s)를 사용하도록 문제를 출제하며, 'can + 동사원형' 구조는 'to + 명사'로 전환하는 오류 유형을 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-11T06:06:52.595Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'when'이나 'so'로 시작하는 부사절이 문장 중간에서 콤마 없이 사용된 경우, 문법적 오류로 빈번히 발생함을 확인. 또한 고유명사(Juju Island → Jeju Island)나 관사 생략(fish's population → fish population)이 난이도 조정에 영향을 미침.",
    "rule": "CEFR B1 수준 내신 변형문제에서는 부사절(when, because, so 등)이나 고유명사, 관사 생략 오류가 포함된 문장을 제시하되, 오류 유형은 1개로 한정하고 콤마 누락, 관사 오류, 고유명사 오류 중 하나를 선택하여 응시자가 해당 오류를 식별하고 수정하도록 설계할 것.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T23:51:54.605Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구 내 병렬 구조에서 관사나 수식어의 일관성이 유지되지 않으면 문법 오류가 발생하며, 특히 'a lot of + 명사'와 'a + 명사'가 혼용되지 않아야 한다.",
-   "rule": "병렬 구조의 명사구에서 첫 번째 항목에 관사('a')가 사용되었다면, 두 번째 이상의 항목에도 반드시 관사를 첨가하여 'a + 명사' 형태로 통일하라. (예: 'a lot of money and a name' → 'a lot of money and a name')",
    "sample": [
     "old english",
     "university press",

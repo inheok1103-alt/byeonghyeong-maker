@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-11T06:07:20.053Z",
+ "updated": "2026-08-11T07:42:18.032Z",
  "samples": [
+  {
+   "ts": "2026-08-11T07:39:34.671Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "The T-auxiliary may is a probe by virtue of being the head of the overall structure and is (A) [inactive / active] by virtue of its (abstract) (B) [uninterpretable / interpretable] person and number features, in accordance with (78). It searches for an active goal and locates the QP several miners (which is active by virtue of its uninterpretable case feature). Via agreement with the φ-complete goal several miners, the φ-features on the probe may are valued as third person plural in accordance with (79i), and (C) [added / deleted] in accordance with (80i). Via agreement with the finite φ-complete probe may, the case feature on the goal several miners is valued as nominative in accordance with (79ii), and deleted in accordance with (80i). The EPP feature on T is deleted by movement of the closest goal several miners to spec-T, in conformity with (80ii). These various (agreement, casemarking, movement and deletion) operations apply simultaneously on the T-cycle in accordance with (81), so deriving the TP shown in (iv) below:",
+    "choices": [
+     "(A) active - (B) interpretable - (C) added",
+     "(A) inactive - (B) interpretable - (C) deleted",
+     "(A) active - (B) interpretable - (C) deleted",
+     "(A) inactive - (B) uninterpretable - (C) deleted",
+     "(A) active - (B) uninterpretable - (C) deleted"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) active - (B) uninterpretable - (C) deleted. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: T-auxiliary may 는 uninterpretable feature 를 가지고 있으므로 interpretable 로 오독했으며, agreement 후에 -features 가 added 가 아니라 deleted 된다고 지문에 명시되어 있으므로 added 로 오독했다. (지문: \"the -features on the probe may are valued as third person plural... and deleted in accordance with (80i)\") → 처방: 지문에서 T-auxiliary may 의 특징과 agreement 후에 -features 의 변화를 다시 읽어보아야 한다.\n② 진단: T-auxiliary may 는 active probe 이므로 inactive 로 오독했으며, T-auxiliary may 는 uninterpretable feature 를 가지고 있으므로 interpretable 로 오독했다. (지문: \"The T-auxiliary may is a probe by virtue of being the head of the overall structure and is (A) [inactive / active] by virtue of its (abstract) (B) [uninterpretable / interpretable] person and number features\") → 처방: 지문에서 T-auxiliary may 의 특징을 다시 읽어보아야 한다.\n③ 진단: T-auxiliary may 는 uninterpretable feature 를 가지고 있으므로 interpretable 로 오독했으며, agreement 후에 -features 가 added 가 아니라 deleted 된다고 지문에 명시되어 있으므로 added 로 오독했다. (지문: \"the -features on the probe may are valued as third person plural... and deleted in accordance with (80i)\") → 처방: 지문에서 T-auxiliary may 의 특징과 agreement 후에 -features 의 변화를 다시 읽어보아야 한다.\n④ 진단: T-auxiliary may 는 active probe 이므로 inactive 로 오독했다. (지문: \"The T-auxiliary may is a probe by virtue of being the head of the overall structure and is (A) [inactive / active] by virtue of its (abstract) (B) [uninterpretable / interpretable] person and number features\") → 처방: 지문에서 T-auxiliary may 의 특징을 다시 읽어보아야 한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-11T07:41:48.908Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] T는 may의 φ-특징과 일치하는 QP인 several miners를 주어 위치로 끌어들이고 대격 기능을 부여해 주어-동사 일치를 완성한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-11T04:43:15.504Z",
    "type": "주제",
@@ -300,76 +354,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'all hell'이 동사의 주어 역할을 하며 'break loose'와 분리된다고 명시했으나, 학생은 이 부분을 '주어 역할'과 '분리'를 분리해 오독했을 수 있음. 'all hell'이 주어 역할을 한다는 사실과 'break loose'와 분리된다는 사실은 지문에서 함께 언급됨. → 처방: 지문에서 주어 역할과 분리가 함께 언급된다는 점을 기억하고, 선지를 읽을 때 두 조건이 동시에 성립하는지 확인하기.\n② 진단: 지문은 'all hell'이 VP 내부에서 기원하여 T 요소인 'will'을 거쳐 spec-T 로 이동한다고 설명하지만, 학생은 'will'을 거치는 이동 과정을 생략하고 오독했을 수 있음. → 처방: 지문에서 설명하는 이동 경로(VP → T → spec-T)를 그림으로 그려보고, 각 단계가 어떤 역할을 하는지 정리하기.\n③ 진단: 지문은 '[T will]'이 [EPP] 기능을 carrying 하여 주어의 인칭/수 features 를 요구한다고 설명하지만, 학생은 'carrying'의 의미를 오해하거나 기능의 주체를 혼동했을 수 있음. → 처방: '[EPP] 기능'이 무엇인지 정확히 알고, 지문에서 '[T will]'이 그 기능을 carrying 한다는 점을 다시 한 번 확인하기.\n⑤ 진단: 지문은 'all hell will break loose'에서 'all hell'이 'will'의 주어로 기능한다고 설명하지만, 학생은 'will'이 조동사라는 점만 기억하고 주어 역할은 무시했을 수 있음. → 처방: 'will'이 조동사이면서 동시에 주어의 인칭/수 features 를 요구한다는 점을 기억하고, 선지를 읽을 때 조동사의 역할과 주어 역할을 동시에 고려하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T21:03:30.198Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Alcohol has been a big part of college life . . . drink hard. shared context But a new kind of drinking known as “binge” drinking ____ . . . kills and injures not just drinkers but those around them. problem We may not be able to stop bingeing entirely, but we must try to ­control its worst costs by educating students in how to manage its risks. solution/main point/claim Part 1: Establishing a Shared Context Most pieces of writing open with a shared context, as does (1b): Alcohol has been a big part of college life for hundreds of years. From football weekends to fraternity parties, college students drink and often drink hard. shared context But a new kind of drinking known as “binge” . . . That shared context offers historical background, but it might have been a recent event, a common belief, or anything else that reminds readers of what they know, have experienced, or readily accept.",
-    "choices": [
-     "can become extreme",
-     "seems rare",
-     "is unknown",
-     "is spreading",
-     "has stopped"
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 'is spreading'가 들어가 글의 논지를 완성한다 (본문 'is spreading'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘extreme’이라는 단어가 ‘과도한’이라는 뜻임을 몰라 ‘심한’ 정도로만 이해하고, ‘binge drinking’이 ‘심한’ drinking 으로 이어질 수 있다고 착각했을 수 있습니다. 지문에서 ‘extreme’이 아니라 ‘spreading’이 핵심임을 놓쳤습니다. → 처방: ‘extreme’은 ‘극단적인’이라는 뜻임을 기억하고, 지문에서 ‘spreading’이 ‘퍼지고 있다’는 의미로 쓰였는지 확인하세요.\n② 진단: ‘rare’는 ‘드물다’라는 뜻으로, 지문에서 ‘새로운 종류의 음주’가 ‘드물다’는 내용이 없어서 오답을 선택했을 수 있습니다. ‘rare’는 지문의 흐름과 맞지 않음을 간과했습니다. → 처방: ‘rare’는 ‘드문’이라는 뜻임을 기억하고, 지문에서 ‘새로운 종류’의 음주가 ‘퍼지고 있다’는 내용이 있는지 확인하세요.\n③ 진단: ‘unknown’이라는 단어가 ‘알려지지 않았다’는 뜻임을 몰라, ‘새로운 종류의 음주’가 ‘알려지지 않았다’는 오해를 했을 수 있습니다. 지문에서 ‘알려지지 않았다’는 내용이 없음을 놓쳤습니다. → 처방: ‘unknown’은 ‘알려지지 않음’을 뜻함을 기억하고, 지문에서 ‘새로운 종류의 음주’가 ‘퍼지고 있다’는 내용이 있는지 확인하세요.\n⑤ 진단: ‘has stopped’라는 표현이 ‘멈췄다’는 뜻임을 몰라, ‘새로운 종류의 음주가 멈췄다는’ 오해를 했을 수 있습니다. 지문에서 ‘멈췄다’는 내용이 없음을 간과했습니다. → 처방: ‘has stopped’은 ‘멈췄다’를 뜻함을 기억하고, 지문에서 ‘새로운 종류의 음주가 퍼지고 있다’는 내용이 있는지 확인하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T21:05:48.529Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Alcohol has been a big part of college life . . . drink hard. shared context But a new kind of drinking known as “binge” drinking is spreading . . . kills and injures not just drinkers but those around them. problem We may not be able to stop bingeing entirely, but we must try to ­control its worst costs by educating students in how to manage its risks. solution/main point/claim Part 1: Establishing a Shared Context Most pieces of writing open with a shared context, as does (1b): Alcohol has been a big part of college life for hundreds of years. From football weekends to fraternity parties, college students drink and often drink hard. shared context But a new kind of drinking known as “binge” . . . That shared context offers historical background, but it might have been a recent event, a common belief, or anything else that reminds readers of what they know, have experienced, or readily accept.",
-    "choices": [
-     "대학 생활에서 술을 오랫동안 함께해 왔다는 역사적 공통 배경이 제시되었다",
-     "대학에서는 술자리가 흔히 폭음으로 이어졌다는 사실이 언급되지 않았다",
-     "폭음 문화가 술을 마시는 사람뿐 아니라 주변 사람들도 위험에 빠뜨린다고 설명되지 않았다",
-     "폭음 문제를 완전히 없애기는 어려우나 위험 관리를 교육하지 않아야 한다는 해결책이 제시되었다",
-     "글쓴이가 폭음의 가장 큰 비용을 줄이기 위해 교육이 필요하지 않다고 주장하였다"
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 지문에서 'From football weekends to fraternity parties, college students drink and often drink hard.'라고 하여 술자리가 폭음으로 이어졌다는 사실이 언급되었음에도, 이를 놓쳤음. → 처방: 지문 전체를 꼼꼼히 읽고, 술자리가 폭음으로 이어지는지 여부를 확인할 것.\n③ 진단: 지문에서 'kills and injures not just drinkers but those around them.'라고 하여 폭음 문화가 주변 사람들도 위험에 빠뜨린다고 설명되었음에도, 이를 오해했음. → 처방: 지문에서 'not just A but B' 구문을 주의 깊게 읽고, A 와 B 가 모두 포함되는지 확인할 것.\n④ 진단: 지문에서 'We must try to control its worst costs by educating students in how to manage its risks.'라고 하여 위험 관리를 교육해야 한다는 해결책이 제시되었음에도, 이를 반대로 오해했음. → 처방: 지문의 'must try to control'와 'educating students' 부분을 정확히 이해하고, 해결책의 방향을 확인할 것.\n⑤ 진단: 지문에서 'we must try to control its worst costs by educating students'라고 하여 교육이 필요하다고 주장되었음에도, 이를 필요 없다고 오해했음. → 처방: 지문의 주장 부분을 정확히 읽고, 'must'나 'should'와 같은 강제적 표현에 주의를 기울일 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
