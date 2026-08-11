@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-11T09:18:29.806Z",
+ "updated": "2026-08-11T10:16:30.888Z",
  "samples": [
+  {
+   "ts": "2026-08-11T10:15:47.868Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 1/3가 1번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "I can remember posting the letter. <u>I posted it on Friday morning.</u> I'll never forget flying over the Grand Canyon. It was wonderful. We use remember/forget doing for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. Regret doing something means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. Try doing something means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. Means doing something expresses the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
+    "choices": [
+     "The act of sending the letter was a temporary or reversible decision.",
+     "The act of sending the letter marked the irreversible start of a process that cannot be undone or altered.",
+     "Because the letter was posted on Friday morning, the recipient received it immediately.",
+     "The letter was delivered to the recipient on Friday morning.",
+     "I sent the letter on Friday morning, which was the only day I could choose."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'The act of sending the letter marked the irreversible start of a process that cannot be undone or altered.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'I posted it on Friday morning.'은 '기억하는 과거의 행동'을 나타내며, 보낸 편지는 되돌릴 수 없다는 뜻이므로 '되돌릴 수 있는 결정'으로 오해한 듯함. → 처방: 'remember doing'은 과거의 기억된 행동으로, 그 행동의 결과가 되돌릴 수 없음을 확인하고 풀기.\n③ 진단: 'I posted it on Friday morning.'은 편지를 보낸 시점을 말하는데, 받는 사람이 편지를 받은 시점은 '즉시'가 아닐 수도 있어 '받는 시점'으로 오해함. → 처방: 보낸 시점과 받는 시점을 구분하고, 지문의 문맥이 '보낸 행동' 자체에 초점을 맞추고 있음을 확인하기.\n④ 진단: 선지 4번은 편지를 받은 시점을 말하는데, 지문은 편지를 보낸 시점에 대해 말하고 있어 '보낸 시점'과 '받은 시점'을 혼동한 듯함. → 처방: 문장의 주어와 동사가 가리키는 대상을 정확히 짚고, 'posting'의 의미를 '보내기'로만 해석하지 말고 문맥을 살피기.\n⑤ 진단: 'I posted it on Friday morning.'은 편지를 보낸 날을 말하는데, '유일한 선택'이라는 제한적 의미를 지문에 없음에도 과도하게 추측한 듯함. → 처방: 지문에 없는 정보는 함부로 추론하지 말고, 주어진 문장만으로 의미를 파악하는 연습하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-11T10:16:00.125Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '관계사' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 관계사를 사용하여 한 문장으로 바꿔 쓰시오.\n[원문] I can remember posting the letter.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] I can remember posting the letter which I posted on Friday morning. (포인트: 원문 두 문장을 관계사 'which'로 결합하여 하나의 문장으로 변환.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-11T09:17:23.577Z",
    "type": "무관문장",
@@ -298,44 +350,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 동사 의미와 구문 형태가 밀접하게 연관되어 구문의 의미가 동사보다 우선할 수 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T23:01:25.548Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "I tried rebooting the disk drive. Independent subject of gerund: X I tried my friend’s rebooting the disk drive. Following is a summary listing of the more common verbs that permit gerund objects with assigned subjects but do not permit gerunds with independent subjects of the gerunds. The verbs are roughly grouped into semantic categories. Group 1: ask, beg, decline, demand, offer, promise, refuse, swear, undertake Group 2: attempt, begin, cease, continue, resume, start, stop, try Group 3: avoid, endeavor, fail, learn, manage, neglect, omit Group 4: admit, claim, confess, profess Verbs That Do Not Allow Gerunds as Objects Except for verbs that require concrete objects (for example, smash or paint), most verbs permit both gerunds and inﬁ nitives as objects. However, there are some verbs that will accept inﬁ nitives as objects, but not gerunds. For example, the verb promise:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T23:05:03.410Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Following is a summary listing of the more common verbs that permit gerund objects with assigned subjects but do not permit gerunds with independent subjects of the gerunds.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 다음은 할당된 주어(assigned subject)가 있는 동명사 객체를 허용하지만 동명사의 독립된 주어(independent subject)가 있는 동명사를 허용하지 않는 더 일반적인 동사들의 목록입니다. (구문 포인트: 수동태(gerund의 주어와 객체의 관계) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
