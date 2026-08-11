@@ -1,6 +1,40 @@
 {
- "updated": "2026-08-11T18:11:34.646Z",
+ "updated": "2026-08-11T19:29:33.175Z",
  "samples": [
+  {
+   "ts": "2026-08-11T19:26:59.506Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "ⓐ<u>Acknowledgments</u> ⓑ<u>Creating</u> and ⓒ<u>publishing</u> a ⓓ<u>reference</u> ⓔ<u>guide</u> and workbook that is popular, easy to understand, and tempting to use requires the input of many. My thanks go to the following: my parents who, as immigrants to the United States, passed their meticulousness about speaking and writing well along to me; Gary Klehr for helping to name the book many years ago and for tireless structural editing; my husband, Lester Kaufman, for catching so many mistakes before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, help shape every rule, example, and quiz. xiii",
+    "choices": [
+     "acknowledgments: The act of acknowledging",
+     "creating: To bring into existence; (sometimes in particular:)",
+     "publishing: The act or process of putting in; infusion.",
+     "reference: A relationship or relation (to something).",
+     "guide: Someone who guides, especially someone hired to show people around a place or an"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ의 풀이는 'input'의 정의이다. 'publishing'의 올바른 풀이: To issue (something, such as printed work) for distribution and/or sale.\n[오답 진단·처방]\n① 진단: acknowledgments 의 의미를 너무 일반적으로 이해해서 '인사말'이라는 뜻을 제대로 파악하지 못했다. → 처방: 영어 사전에서 단어의 예시 문장을 찾아보아야 한다.\n② 진단: creating 의 의미를 너무 일반적으로 이해해서 '만드는 것'이라는 뜻을 제대로 파악하지 못했다. → 처방: 문맥을 고려해서 단어의 의미를 더 구체적으로 이해해야 한다.\n④ 진단: reference 의 의미를 너무 일반적으로 이해해서 '참고'라는 뜻을 제대로 파악하지 못했다. → 처방: 단어의 여러 가지 의미 중에서 문맥에 가장 적합한 것을 선택해야 한다.\n⑤ 진단: guide 의 의미를 너무 일반적으로 이해해서 '안내서'라는 뜻을 제대로 파악하지 못했다. → 처방: 단어의 여러 가지 의미 중에서 문맥에 가장 적합한 것을 선택해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-11T18:10:40.864Z",
    "type": "주제",
@@ -309,41 +343,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'wine 의 발명가'로 서술한 부분을 그대로 읽어 맞다고 판단했으나, 디오니소스가 '발명가'라는 표현이 지문에 직접 있지 않음을 혼동하지 못함. (지문: 'He was the inventor of wine'로 명시되어 있음) → 처방: 선지를 읽을 때 '발명가'라는 단어가 지문에 정확히 쓰였는지 확인할 것.\n② 진단: 지문의 'immensely popular'와 'a great many myths'라는 표현을 '큰 인기를 얻었으며 신화에 자주 등장한다'로 해석해 맞다고 판단했으나, '인기'와 '등장'의 정도가 과장되었는지 확인하지 않음. → 처방: 지문에서 사용된 표현의 강도를 그대로 받아들이지 말고, 선지가 지문의 내용을 '정확히' 반영하는지 다시 한 번 확인할 것.\n③ 진단: 지문의 'often shown holding a wine goblet, with his hair full of vine leaves'라는 부분을 그대로 읽어 맞다고 판단했으나, 'attended by satyrs and maenads' 부분은 이 선지에 포함되지 않음을 혼동하지 못함. → 처방: 선지의 내용이 지문의 '전체' 내용을 포함하는지 확인할 것. 일부분만 일치해도 맞다고 판단하지 말 것.\n⑤ 진단: 지문의 'Only in the tropics did such festivals become truly Dionysian'이라는 부분을 '열대 지방에서만'으로 축약해 읽었으나, 'such festivals'가 'truly Dionysian'한 축제를 가리키는 것인지 명확히 구분하지 않음. → 처방: 지문에서 'such'가 가리키는 대상을 정확히 파악한 후 선지를 읽을 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T11:09:29.824Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/2가 4번 선택(기록 5번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "(A) [Apollonian / Dionysian] Frenzied, delirious. • Only in the tropics did such festivals become truly Dionysian, he said, which was why he was booking his flight to Rio. Dionysus was the Greek forerunner of Bacchus. He was the inventor of wine, which he gave to the human race. For that gift and for all the (B) [wild / tame] behavior that it led to, Dionysus became immensely popular, and he appears in a great many myths. He is often shown holding a wine goblet, with his hair full of vine leaves, and attended by a band of goat-footed satyrs and wild female spirits called maenads. In the 19th century, scholars such as Nietzsche claimed that the ancient world could be understood as a continuing conflict between the attitudes represented by Apollo (see Apollonian) and Dionysus— that is, between order and disorder, between moderation and (C) [restraint / excess], between the controlled and the ecstatic.",
-    "choices": [
-     "(A) Dionysian - (B) tame - (C) excess",
-     "(A) Dionysian - (B) tame - (C) restraint",
-     "(A) Apollonian - (B) wild - (C) excess",
-     "(A) Apollonian - (B) wild - (C) restraint",
-     "(A) Dionysian - (B) wild - (C) excess"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) Dionysian - (B) wild - (C) excess. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 (A)는 'Frenzied, delirious(광란한, 황홀한)'라는 설명과 'wild female spirits(야생의 여성 spirits)'가 등장해 'Dionysian'이 맞는데, 'Apollonian'을 선택했다는 것은 '질서·조절'을 떠올리며 오해한 것 같다. (B)는 'wild behavior(야생적인 행동)'이 문맥상 맞는데 'tame'을 골랐다면 '와인이 질서를 가져온다'고 착각한 듯하다. (C)는 'excess(과도)'가 문맥에 맞는데 'restraint(자제)'를 선택했다면 '질서 vs 무질서'를 반대로 이해한 것이다. → 처방: 지문에서 'Frenzied, delirious' 같은 단어가 나오면 'Dionysian(무질서·광란)'을 떠올리고, 'wild'가 포함된 설명을 찾아 'wild'를 선택하라. 'excess'는 '질서 vs 무질서'에서 무질서 쪽에 해당한다는 점을 기억하라.\n② 진단: (A)에서 'Apollonian'을 선택했다면 '질서·조절'을 떠올렸겠지만, 지문은 'Frenzied, delirious'라는 단어로 시작해 'Dionysian'이 맞다. (B)에서 'wild'를 골랐지만 'tame'을 선택했다면 '와인이 질서를 가져온다'는 오해를 한 것 같다. (C)에서 'restraint'를 선택했다면 '질서 vs 무질서'에서 질서를 'excess'로 착각한 것이다. → 처방: 지문에서 'Frenzied, delirious' 같은 말이 나오면 'Dionysian(무질서·광란)'을 떠올리고, 'wild'가 포함된 설명을 찾아 'wild'를 선택하라. 'excess'는 '질서 vs 무질서'에서 무질서 쪽에 해당한다는 점을 기억하라.\n③ 진단: (A)에서 'Apollonian'을 선택했다면 '질서·조절'을 떠올렸겠지만, 지문은 'Frenzied, delirious'라는 단어로 시작해 'Dionysian'이 맞다. (B)에서 'tame'을 선택했다면 '와인이 질서를 가져온다'는 오해를 한 것 같다. (C)에서 'restraint'를 선택했다면 '질서 vs 무질서'에서 질서를 'excess'로 착각한 것이다. → 처방: 지문에서 'Frenzied, delirious' 같은 말이 나오면 'Dionysian(무질서·광란)'을 떠올리고, 'wild'가 포함된 설명을 찾아 'wild'를 선택하라. 'excess'는 '질서 vs 무질서'에서 무질서 쪽에 해당한다는 점을 기억하라.\n④ 진단: (A)에서 'Apollonian'을 선택했다면 '질서·조절'을 떠올렸겠지만, 지문은 'Frenzied, delirious'라는 단어로 시작해 'Dionysian'이 맞다. (B)에서 'tame'을 선택했다면 '와인이 질서를 가져온다'는 오해를 한 것 같다. (C)에서 'restraint'를 선택했다면 '질서 vs 무질서'에서 질서를 'excess'로 착각한 것이다. → 처방: 지문에서 'Frenzied, delirious' 같은 말이 나오면 'Dionysian(무질서·광란)'을 떠올리고, 'wild'가 포함된 설명을 찾아 'wild'를 선택하라. 'excess'는 '질서 vs 무질서'에서 무질서 쪽에 해당한다는 점을 기억하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
