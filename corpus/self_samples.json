@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-11T13:45:51.036Z",
+ "updated": "2026-08-11T15:25:20.377Z",
  "samples": [
+  {
+   "ts": "2026-08-11T15:17:26.682Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "Quick Quiz #76 Match each word in the first column with its definition in the second column. Check your answers here. 1. scintillate a. sparkle 2. scrupulous b. ⓐ<u>having nothing to do with religion</u> 3. scrutinize c. treason 4. secular d. having to do with the senses 5. sedition e. set apart 6. segregate f. strict 7. ⓑ<u>sensory</u> g. delighting the senses 8. sensual h. examine very carefully 9. sensuous i. ⓒ<u>devoted to pleasure</u> 10. sentient j. conscious 11. sequester k. separate SERENDIPITY (ser un DIP uh tee) n accidental good fortune; discovering good things without looking for them • It was serendipity rather than genius that led the archaeologist to his breathtaking discovery of the ancient civilization. While walking his dog in the desert, he tripped over the top of a buried tomb. Something that occurs through serendipity is ⓓ<u>was serendipitous</u>. • Our arrival at the airport serendipitously coincided with that of the queen, and she ⓔ<u>offered us a ride</u> to our hotel in her carriage. SERVILE (SUR vyle) adj submissive and subservient; like a servant",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 4,
+    "explanation": "[어법: 수일치] 정답 ⓓ의 'was serendipitous'는 'serendipitously'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n① 진단: ⓐ의 'having nothing to do with religion'은 '세속적인'이라는 뜻의 'secular'의 정의와 일치하지 않음. 지문에서 'secular'는 '세속의'로 정의되어 있음. 학생은 'secular'가 '무신론'이나 '비종교'를 뜻한다고 오해했을 가능성이 큼. → 처방: 단어의 뜻을 정확히 외우고, 'secular'는 '세속의'라는 뜻임을 기억할 것. 종교와 관련이 없다는 뜻이 아님.\n② 진단: ⓑ의 'sensory'는 '감각과 관련된'이라는 뜻으로, 지문에서 'sensual'의 정의로 제시되어 있음. 학생은 'sensory'와 'sensual'을 혼동했을 가능성이 큼. → 처방: 'sensory'는 '감각의'라는 뜻이고, 'sensual'은 '육감적인' 또는 '쾌락주의적인'이라는 뜻임을 구분하여 기억할 것.\n③ 진단: ⓒ의 'devoted to pleasure'는 '쾌락주의적인'이라는 뜻으로, 지문에서 'sensual'의 정의로 제시되어 있음. 학생은 'sensual'과 'sensuous'를 혼동했을 가능성이 큼. → 처방: 'sensual'은 '육감적인' 또는 '쾌락주의적인'을 뜻하고, 'sensuous'는 '감각적으로 즐거운'을 뜻함을 구분하여 기억할 것.\n⑤ 진단: ⓓ의 'was serendipitous'는 '우연히 좋은 일이 일어난'이라는 뜻의 형용사형으로, 지문에서 'serendipity'가 '우연한 좋은 행운'을 뜻하는 명사임을 고려하면 문법적으로 옳음. 학생은 'serendipitous'가 동사형으로 오해했을 가능성이 큼. → 처방: 'serendipity'는 명사, 'serendipitous'는 형용사임을 기억하고, 문장에서 형용사로 쓰일 때는 '-ous'로 끝나는지 확인할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-11T11:59:22.224Z",
    "type": "제목",
@@ -315,41 +348,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Infinitival to’s defective probing and its effects on agreement features**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·과잉 일반화)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 조건 누락· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 선지 2는 'case feature'만 다루고 'person feature'의 문제까지 포함하는 주제를 오해했음. 지문은 'case feature'가 'person feature'와 함께 언급되며, defective probing 의 'impact'가 주제임을 분명히 함. → 처방: 문제에서 'impact'라는 단어를 주의 깊게 읽고, defective probing 이 어떤 특징(feature)에 영향을 주는지 전체적으로 파악하기.\n③ 진단: 선지 3은 'uninterpretable agreement features'에만 초점을 맞추어 defective probing 의 'impact'를 보지 못했음. 지문은 defective probing 이 agreement features 에 미치는 영향을 다룬다고 명시함. → 처방: 주제 선지에서 'impact'나 'resulting from' 같은 표현을 찾고, defective probing 이 어떤 'impact'를 주는지 전체 맥락에서 확인하기.\n④ 진단: 선지 4는 'agreement feature valuation'에만 집중하여 defective probing 의 'impact'를 좁게 해석했음. 지문은 defective probing 이 agreement features 에 미치는 'impact'를 다루며, 그 범위가 더 넓음을함. → 처방: 문제에서 'impact'라는 단어를 보고 defective probing 이 agreement features 에 어떤 영향을 주는지 전체적으로 읽어보기.\n⑤ 진단: 선지 5는 'properties of infinitival to'에만 초점을 맞추어 defective probing 의 'impact'를 보지 못했음. 지문은 defective probing 이 agreement features 에 미치는 영향을 주제로 삼고 있음. → 처방: 주제 선지에서 'impact'라는 단어를 찾고 defective probing 이 어떤 특징(feature)에 영향을 주는지 전체적으로 파악하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Infinitival to’s defective probing and its effects on agreement features**]"
-   }
-  },
-  {
-   "ts": "2026-08-11T02:29:30.184Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "students' awareness grew by exercise variation and clearer instruction in the second cycle",
-     "students' awareness was lost due to unclear instructions in the first cycle",
-     "the second cycle improved students' reading skills through varied exercises",
-     "all students always lacked awareness in every teaching and learning process",
-     "the second cycle occasionally addressed students' awareness issues"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The implementation of authentic materials in the first cycle of teaching and learning process showed that students lacked awareness, which was addressed in the second cycle by varying exercises and providing clear explanations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘unclear instructions’가 아니라 ‘instructions were not given in time(제때 설명하지 않음)’이 문제였다. 학생들은 ‘의욕은 있었으나 인지 부족’을 보였고, 이는 ‘제때 안 했다’는 행동 결과였다. → 처방: ‘제때 설명하지 않은 점’을 ‘명확하지 않은 설명’으로 오독한 경우, 지문에서 ‘instructions’를 ‘제때 설명하지 않음’으로 다시 읽고, ‘awareness 부족’의 원인을 행동(시간 관리)에서 찾도록 연습하기.\n③ 진단: ‘reading skills’이 아니라 ‘awareness(인지)’가 개선된 것이다. 글에서 ‘awareness 문제 해결’을 목표로 했고, ‘reading skills’ 향상은 언급되지 않았다. → 처방: ‘reading skills’와 ‘awareness’를 혼동한 경우, 지문에서 ‘awareness’를 강조하는 문장(‘They did every their work but not in time. It showed that they still lacked of awareness.’)을 다시 확인하고, ‘목표’와 ‘결과’를 구분해서 읽기.\n④ 진단: ‘always lacked awareness’는 과장된 표현이다. 첫 번째 사이클에서 ‘awareness 부족’이 보였지만, 두 번째 사이클에서 ‘awareness 가 grew(성장)’했다는 결과가 나왔다. → 처방: ‘항상’이라는 절대적 표현에 주목하지 않은 경우, 지문에서 ‘Therefore, it was decided to solve the awareness problem in the next cycle.’와 ‘Those gave good result considering’를 비교해 ‘변화’와 ‘결과’를 정확히 파악하기.\n⑤ 진단: ‘occasionally’는 ‘때때로’라는 뜻으로, 두 번째 사이클에서 ‘awareness 문제 해결’이 ‘전체적으로’ 이뤄졌다는 결과와 맞지 않다. ‘good result’를 무시한 오독이다. → 처방: ‘occasionally’라는 한정어를 무시한 경우, 지문에서 ‘gave good result’를 강조하는 부분을 다시 읽고, ‘결과’의 강도를 판단하는 연습하기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The implementation of authentic materials in the first cycle of teaching and learning process showed that students lacked awareness, which was addressed in the second cycle by varying exercises and providing clear explanations.]"
    }
   }
  ]
