@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-11T17:17:56.652Z",
+ "updated": "2026-08-11T18:11:34.646Z",
  "samples": [
+  {
+   "ts": "2026-08-11T18:10:40.864Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 5건 · 솔버 1/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "temporal reasoning in English verb phrases",
+     "reasoning in English verb tenses",
+     "financial consequences reflected in English verb phrases",
+     "temporal reasoning in various natural languages",
+     "temporal reasoning limited to past English verb phrases"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Temporal reasoning in English verb phrases'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘tense(시제)’와 ‘verb phrase(동사구)’를 혼동하여 ‘tense’가 아닌 ‘verb phrase’ 전체의 시간적 추론을 다룬다는 글의 주제를 ‘tense’에 한정된 추론으로 오해한 것 같다. 지문에서 ‘verb phrases’의 시간적 관계를 분석하는 것이 주제임을 확인할 수 있다. → 처방: ‘tense’와 ‘verb phrase’를 구분하고, 지문에서 다루는 대상이 ‘verb phrase’의 시간적 추론임을 명확히 파악하자. ‘tense’가 아닌 ‘verb phrase’의 시간적 관계를 분석한다는 점에 주목하라.\n③ 진단: ‘financial consequences(재정적 결과)’라는 단어에만 집중하여 지문의 핵심 주제가 재정 문제라고 오인한 것 같다. 그러나 지문은 시간적 추론(Reichenbachian diagrams)을 중심으로 동사구와 시제의 관계를 분석하고 있다. → 처방: 지문의 핵심 주제가 ‘시간적 추론’이라는 점을 먼저 확인하고, 재정적 결과는 부차적인 예시일 뿐임을 인식하라. 주제를 찾기 위해 핵심 단어(‘temporal reasoning’)를 먼저 찾아라.\n④ 진단: ‘various natural languages(여러 자연어)’라는 단어를 보고 지문이 특정 언어가 아닌 여러 언어를 다룬다고 오해한 것 같다. 그러나 지문은 오로지 ‘English(영어)’의 동사구와 시제에 대한 시간적 추론만 다룬다. → 처방: 지문에서 ‘English’라는 단어가 반복적으로 등장하는지 확인하고, 주제가 특정 언어(영어)에 국한된다는 점을 분명히 하라. ‘various natural languages’는 오답의 함정임을 기억하라.\n⑤ 진단: ‘past English verb phrases(과거 영어 동사구)’라는 단어에만 집중하여 지문이 과거 시제에만 국한된다고 오해한 것 같다. 그러나 지문은 ‘present perfect’, ‘future’, ‘past’ 등 다양한 시제를 포함하는 시간적 추론을 다룬다. → 처방: 지문에서 ‘present perfect’, ‘future’, ‘past’ 등 다양한 시제가 언급되는지 확인하고, 주제가 과거 시제로 한정되지 않는다는 점을 파악하라. ‘limited to past’라는 단어가 오답임을 기억하라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Temporal reasoning in English verb phrases]"
+   }
+  },
+  {
+   "ts": "2026-08-11T18:10:53.538Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 존은 돌아가기 전에 전선으로 떠났다.\n주어진 단어: ( John / the / left / he / front / return / would / for / before )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] John left for the front before he would return.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-11T17:14:54.770Z",
    "type": "목적",
@@ -292,58 +344,6 @@
     ],
     "answer": 5,
     "explanation": "정답 조합: (A) Dionysian - (B) wild - (C) excess. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 (A)는 'Frenzied, delirious(광란한, 황홀한)'라는 설명과 'wild female spirits(야생의 여성 spirits)'가 등장해 'Dionysian'이 맞는데, 'Apollonian'을 선택했다는 것은 '질서·조절'을 떠올리며 오해한 것 같다. (B)는 'wild behavior(야생적인 행동)'이 문맥상 맞는데 'tame'을 골랐다면 '와인이 질서를 가져온다'고 착각한 듯하다. (C)는 'excess(과도)'가 문맥에 맞는데 'restraint(자제)'를 선택했다면 '질서 vs 무질서'를 반대로 이해한 것이다. → 처방: 지문에서 'Frenzied, delirious' 같은 단어가 나오면 'Dionysian(무질서·광란)'을 떠올리고, 'wild'가 포함된 설명을 찾아 'wild'를 선택하라. 'excess'는 '질서 vs 무질서'에서 무질서 쪽에 해당한다는 점을 기억하라.\n② 진단: (A)에서 'Apollonian'을 선택했다면 '질서·조절'을 떠올렸겠지만, 지문은 'Frenzied, delirious'라는 단어로 시작해 'Dionysian'이 맞다. (B)에서 'wild'를 골랐지만 'tame'을 선택했다면 '와인이 질서를 가져온다'는 오해를 한 것 같다. (C)에서 'restraint'를 선택했다면 '질서 vs 무질서'에서 질서를 'excess'로 착각한 것이다. → 처방: 지문에서 'Frenzied, delirious' 같은 말이 나오면 'Dionysian(무질서·광란)'을 떠올리고, 'wild'가 포함된 설명을 찾아 'wild'를 선택하라. 'excess'는 '질서 vs 무질서'에서 무질서 쪽에 해당한다는 점을 기억하라.\n③ 진단: (A)에서 'Apollonian'을 선택했다면 '질서·조절'을 떠올렸겠지만, 지문은 'Frenzied, delirious'라는 단어로 시작해 'Dionysian'이 맞다. (B)에서 'tame'을 선택했다면 '와인이 질서를 가져온다'는 오해를 한 것 같다. (C)에서 'restraint'를 선택했다면 '질서 vs 무질서'에서 질서를 'excess'로 착각한 것이다. → 처방: 지문에서 'Frenzied, delirious' 같은 말이 나오면 'Dionysian(무질서·광란)'을 떠올리고, 'wild'가 포함된 설명을 찾아 'wild'를 선택하라. 'excess'는 '질서 vs 무질서'에서 무질서 쪽에 해당한다는 점을 기억하라.\n④ 진단: (A)에서 'Apollonian'을 선택했다면 '질서·조절'을 떠올렸겠지만, 지문은 'Frenzied, delirious'라는 단어로 시작해 'Dionysian'이 맞다. (B)에서 'tame'을 선택했다면 '와인이 질서를 가져온다'는 오해를 한 것 같다. (C)에서 'restraint'를 선택했다면 '질서 vs 무질서'에서 질서를 'excess'로 착각한 것이다. → 처방: 지문에서 'Frenzied, delirious' 같은 말이 나오면 'Dionysian(무질서·광란)'을 떠올리고, 'wild'가 포함된 설명을 찾아 'wild'를 선택하라. 'excess'는 '질서 vs 무질서'에서 무질서 쪽에 해당한다는 점을 기억하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T10:15:47.868Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 1/3가 1번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "I can remember posting the letter. <u>I posted it on Friday morning.</u> I'll never forget flying over the Grand Canyon. It was wonderful. We use remember/forget doing for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. Regret doing something means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. Try doing something means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. Means doing something expresses the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
-    "choices": [
-     "The act of sending the letter was a temporary or reversible decision.",
-     "The act of sending the letter marked the irreversible start of a process that cannot be undone or altered.",
-     "Because the letter was posted on Friday morning, the recipient received it immediately.",
-     "The letter was delivered to the recipient on Friday morning.",
-     "I sent the letter on Friday morning, which was the only day I could choose."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'The act of sending the letter marked the irreversible start of a process that cannot be undone or altered.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'I posted it on Friday morning.'은 '기억하는 과거의 행동'을 나타내며, 보낸 편지는 되돌릴 수 없다는 뜻이므로 '되돌릴 수 있는 결정'으로 오해한 듯함. → 처방: 'remember doing'은 과거의 기억된 행동으로, 그 행동의 결과가 되돌릴 수 없음을 확인하고 풀기.\n③ 진단: 'I posted it on Friday morning.'은 편지를 보낸 시점을 말하는데, 받는 사람이 편지를 받은 시점은 '즉시'가 아닐 수도 있어 '받는 시점'으로 오해함. → 처방: 보낸 시점과 받는 시점을 구분하고, 지문의 문맥이 '보낸 행동' 자체에 초점을 맞추고 있음을 확인하기.\n④ 진단: 선지 4번은 편지를 받은 시점을 말하는데, 지문은 편지를 보낸 시점에 대해 말하고 있어 '보낸 시점'과 '받은 시점'을 혼동한 듯함. → 처방: 문장의 주어와 동사가 가리키는 대상을 정확히 짚고, 'posting'의 의미를 '보내기'로만 해석하지 말고 문맥을 살피기.\n⑤ 진단: 'I posted it on Friday morning.'은 편지를 보낸 날을 말하는데, '유일한 선택'이라는 제한적 의미를 지문에 없음에도 과도하게 추측한 듯함. → 처방: 지문에 없는 정보는 함부로 추론하지 말고, 주어진 문장만으로 의미를 파악하는 연습하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T10:16:00.125Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '관계사' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 관계사를 사용하여 한 문장으로 바꿔 쓰시오.\n[원문] I can remember posting the letter.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I can remember posting the letter which I posted on Friday morning. (포인트: 원문 두 문장을 관계사 'which'로 결합하여 하나의 문장으로 변환.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
