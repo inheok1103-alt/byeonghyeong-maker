@@ -1,6 +1,93 @@
 {
- "updated": "2026-08-10T23:05:32.486Z",
+ "updated": "2026-08-11T00:00:33.554Z",
  "samples": [
+  {
+   "ts": "2026-08-10T23:52:00.194Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Jones sent Delia a pet stoat.\n② EVENTS one verb class, as shown by argument alternations (e.g., Jones broke the pot / The pot broke; Gillian spread the crusts with butter / Gillian spread butter on the crusts).\n③ The variability of verb meaning and verbal argument structure calls the traditional view into question, and some scholars, particularly in Construction Grammar, propose that syntactic and semantic arguments are determined by the form of the sentence, and not by the meaning of the verb.\n④ For example, on this approach the double object construction is analysed as a kind of idiom with associated thematic roles.\n⑤ The verbs which can be inserted into the idiom framework contribute little more than a manner modification, as in (35).\n⑥ The Construction Grammar approach fits well with analysing the verb as a 1-place manner predicate on the event.",
+    "choices": [
+     "②-⑥-④-③-①-⑤",
+     "②-⑤-⑥-④-①-③",
+     "②-③-①-⑤-⑥-④",
+     "③-②-④-⑤-⑥-①",
+     "②-③-④-⑤-⑥-①"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ②-③-④-⑤-⑥-①. 흐름: ② → ③ → ④(For example) → ⑤ → ⑥ → ① — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 지문을 잘 읽지 않아 ②와 ④의 논리적 연결을 이해하지 못하고, ①과 ③의 위치를 잘못 판단했다. → 처방: 지문을 다시 읽어 논리적 연결을 파악하고, 각 문장의 역할을 이해하라.\n② 진단: ②와 ⑤의 연결을 이해하지 못하고, ③과 ④의 위치를 잘못 판단했다. 또한 ①의 위치도 잘못 판단했다. → 처방: 지문을 다시 읽어 각 문장의 논리적 연결을 파악하고, 각 문장의 역할을 이해하라.\n③ 진단: ②와 ③의 논리적 연결을 이해하지 못하고, ①과 ④의 위치를 잘못 판단했다. → 처방: 지문을 다시 읽어 논리적 연결을 파악하고, 각 문장의 역할을 이해하라.\n④ 진단: ③과 ②의 논리적 연결을 이해하지 못하고, ①의 위치를 잘못 판단했다. → 처방: 지문을 다시 읽어 논리적 연결을 파악하고, 각 문장의 역할을 이해하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-10T23:59:49.712Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.13,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.13)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "EVENTS one verb class, as shown by argument alternations (e.g., Jones broke the pot / The pot broke; Gillian spread the crusts with butter / Gillian spread butter on the crusts). The variability of verb meaning and verbal argument structure calls the traditional view into question, and some scholars, particularly in Construction Grammar, propose that syntactic and semantic arguments are determined by the form of the sentence, and not by the meaning of the verb. For example, on this approach the double object construction is analysed as a kind of idiom with associated thematic roles. The verbs which can be inserted into the idiom framework contribute little more than a manner modification, as in (35). The Construction Grammar approach fits well with analysing the verb as a 1-place manner predicate on the event. (35) a. Jones sent Delia a pet stoat.",
+    "choices": [
+     "동사 의미의 가변성은 전통적 견해를 지지하게 한다",
+     "구문 문법 학자들은 구문의 형태가 논리적 역할을 결정한다고 주장한다",
+     "단일 목적어 구문은 관용구로 분석될 수 있다",
+     "동사는 사건의 한 가지 방식 술어로 기능할 수 없다",
+     "관용구 틀에서는 동사가 방식 수정 외에 큰 역할을 한다"
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘동사 의미의 가변성’이 전통적 견해를 ‘지지’(지지하지 않음)한다고 오해했거나, ‘지지하게 한다’는 표현을 ‘지지하지 않는다’는 뜻으로 혼동했을 수 있음. 지문은 전통적 견해를 ‘의문’한다고 명시함. → 처방: ‘지지’라는 단어를 볼 때, 문장의 주체가 ‘지지’를 받는 것인지 주는 것인지 명확히 확인할 것.\n③ 진단: ‘단일 목적어 구문’이 아니라 ‘이중 목적어 구문’이 관용구로 분석된다는 점을 혼동했거나, 지문에서 ‘double object construction’을 ‘단일 목적어’로 잘못 읽음. → 처방: 구문(예: ‘double object construction’)을 정확히 확인하고, 문장에서 해당 구문이 언급되는지 다시 한 번 살필 것.\n④ 진단: ‘동사가 사건의 한 가지 방식 술어로 기능할 수 없다’는 선지를 선택했는데, 지문은 Construction Grammar 에서 동사를 ‘1-place manner predicate’로 분석한다고 설명한 부분을 무시함. → 처방: ‘~할 수 없다’는 부정 표현이 나오면, 지문에서 그와 반대되는 내용(‘~할 수 있다’)이 있는지 반드시 확인할 것.\n⑤ 진단: ‘관용구 틀에서는 동사가 방식 수정 외에 큰 역할을 한다’는 선지를 선택했는데, 지문은 ‘contribute little more than a manner modification’(방식 수정 외에는 거의 기여하지 않음)이라고 설명한 부분을 잘못 해석했음. → 처방: ‘little more than’이라는 표현이 ‘~외에는 거의 없다’는 뜻임을 기억하고, 문장 전체의 의미를 종합적으로 파악할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-11T00:00:00.571Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 동사 의미와 구문 형태가 밀접하게 연관되어 구문의 의미가 동사보다 우선할 수 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-10T23:01:25.548Z",
    "type": "복합세트",
@@ -250,93 +337,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [수일치] ⓒ: 'worked as research' → 'worked as researchers' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T18:06:09.975Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "M.A.K. Halliday ⓐ<u>Collins</u> Publishers Annette Capel, Lorna Heaslip, Douglas Williamson Many other people have been involved with the ⓑ<u>project</u> at both research and ⓒ<u>editing</u> ⓓ<u>stages</u>. Patrick Hanks, who was the Editorial Director of Cobuild throughout the project, made a valuable contribution both in policy and in detail. Dominic Bree, Jane Cullen, and Clare Ramsey worked as researchers in the ⓔ<u>early</u> stages, and Ron Hardie helped from the beginning until quite late in the editing process. David Brazil gave us great help and encouragement during the early editing of the book. Without his support, this would have been a more difficult task. Helen Liebeck and Christina Rammell were influential in the early stages of editing. Michael Hoey and Charles Owen, members of the Department of English, University of Birmingham, and PhD and MA students in the department, in particular Richard Francis, Agnes Molnar, Iria 6",
-    "choices": [
-     "collins: Any of various alcoholic drinks made with lemon juice, sugar, and carbonated wat",
-     "project: A planned endeavor, usually with a specific goal and accomplished in several ste",
-     "editing: A part, portion, or subdivision.",
-     "stages: An adult male deer.",
-     "early: A shift (scheduled work period) that takes place early in the day."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ의 풀이는 'department'의 정의이다. 'editing'의 올바른 풀이: To change a text, or a document.\n[오답 진단·처방]\n① 진단: 지문에서 'Collins'는 출판사 이름으로 쓰였지만, 선지①은 술의 한 종류로 오해한 듯함. 지문 ⓐ<u>Collins</u> Publishers 가 'Collins 출판사'임을 무시하고, 단어 자체의 뜻만 보고 술로 오독한 것 같음. → 처방: 단어의 문맥적 쓰임을 먼저 확인하고, 사전 뜻은 보조적으로만 활용하기. 특히 고유명사(사람·기관·책 이름 등)는 문맥에서 판단할 것.\n② 진단: 지문에서 'project'는 '프로젝트'로 쓰였지만, 선지②은 '목표가 있는 계획'으로 옳은 뜻임에도 학생이 오독한 듯. 아마 'project'의 뜻이 여러 가지라 혼란을 느낀 것 같음. → 처방: 'project'가 지문에서 '프로젝트'로 쓰였는지 확인하고, 영영풀이도 문맥에 맞는지 재점검하기. 사전 뜻은 여러 개일 수 있으니 문맥과 연관 지어 보기.\n④ 진단: 지문에서 'stages'는 '단계'로 쓰였지만, 선지④은 '사슴의 수컷'으로 오해한 듯. 아마 'stag'의 뜻과 혼동한 것 같음. → 처방: 단어의 기본형과 활용형을 구분하고, 지문에서 쓰인 형태가 어떤 뜻인지 정확히 확인하기. 'stag'과 'stage'는 다른 단어임을 기억할 것.\n⑤ 진단: 지문에서 'early'는 '초기의'로 쓰였지만, 선지⑤은 '아침 근무조'로 오해한 듯. 'early'의 뜻이 '시간적으로 이른'임을 모르고, '근무조'라는 특정 상황에만 집중한 것 같음. → 처방: 단어의 기본 뜻을 먼저 떠올리고, 문맥에서 그 뜻이 맞는지 확인하기. 'early'는 '이른'이라는 뜻이 기본이므로, '근무조'라는 뜻은 문맥에서만 나올 수 있음을 기억하기.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T17:10:21.690Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>Agreement</u> between a ⓑ<u>transitive</u> verb and its object is invisible in English (in the sense that it has no ⓒ<u>overt</u> phonetic manifestation), but is visible in languages like Swahili with overt object-agreement morphology. Given the Earliness Principle, the ⓓ<u>pronoun</u> them in (44) will have had its case ⓔ<u>feature</u> valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.",
-    "choices": [
-     "agreement: To stop the motion of (a person or animal).",
-     "transitive: Making a transit or passage.",
-     "overt: Open and not concealed or secret.",
-     "pronoun: (grammar) A type of noun that refers anaphorically to another noun or noun phras",
-     "feature: One's structure or make-up: form, shape, bodily proportions."
-    ],
-    "answer": 1,
-    "explanation": "정답 ⓐ의 풀이는 'arrested'의 정의이다. 'agreement'의 올바른 풀이: An understanding between entities to follow a specific course of conduct.\n[오답 진단·처방]\n② 진단: 학생은 'transitive'를 '이동하다'나 '이동시키다'의 의미로 오독했을 가능성이 있다. 지문에서 'a transitive verb'라는 문맥을 고려하지 않고 단어의 어근을 잘못 해석했기 때문이다. ('Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle') → 처방: 학생은 지문에서 단어가 사용된 문맥을 주의 깊게 읽고, 문법 용어의 정의를 정확히 이해해야 한다.\n③ 진단: 학생은 'overt'를 다른 의미로 오독했을 가능성이 있다. 지문에서 'overt object-agreement morphology'라는 문맥을 고려하지 않고 단어의 일반적인 의미를 잘못 해석했기 때문이다. ('but is visible in languages like Swahili with overt object-agreement morphology') → 처방: 학생은 지문에서 단어가 사용된 문맥을 주의 깊게 읽고, 문법 용어의 정의를 정확히 이해해야 한다.\n④ 진단: 학생은 'pronoun'을 다른 의미로 오독했을 가능성이 있다. 지문에서 'the pronoun them'이라는 문맥을 고려하지 않고 단어의 일반적인 의미를 잘못 해석했기 때문이다. ('Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative') → 처방: 학생은 지문에서 단어가 사용된 문맥을 주의 깊게 읽고, 문법 용어의 정의를 정확히 이해해야 한다.\n⑤ 진단: 학생은 'feature'를 다른 의미로 오독했을 가능성이 있다. 지문에서 'case feature'라는 문맥을 고려하지 않고 단어의 일반적인 의미를 잘못 해석했기 때문이다. ('and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above') → 처방: 학생은 지문에서 단어가 사용된 문맥을 주의 깊게 읽고, 문법 용어의 정의를 정확히 이해해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T17:12:23.269Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 이 문장은 주어와 목적어 간 격과 일치의 차이가 언어에 따라 어떻게 나타나는지를 설명한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
