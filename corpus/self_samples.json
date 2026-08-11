@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-11T07:42:18.032Z",
+ "updated": "2026-08-11T09:18:29.806Z",
  "samples": [
+  {
+   "ts": "2026-08-11T09:17:23.577Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "Quiz 5-4 A. ① Fill in each blank with the correct letter: a. ② There is many a ___ for the word die, and many more for the word drunk. ③ The novel paints a picture of a ___ in which the effects of climate change have wrecked the social order. ④ Her ___ for her longtime friend was the most moving part of the ceremony. ⑤ The use of genetic engineering in agriculture has sparked a heated debate about the potential risks and benefits of such practices. Because his ___ was discovered early, he was able to receive the special reading instruction he needed. The end of the war was marked by widespread ___ and celebration. Ebenezer Scrooge, in A Christmas Carol, is a thoroughly ___ character. Though the dog is the product of generations of ___ breeding, she is highstrung and has terrible eyesight. The tests had detected some suspicious cell ___, but her doctors told her not to worry since it was at a very early stage.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 5,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-11T09:17:55.600Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 9 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Euphemisms', 'exist', 'harsh' / 7~11단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Euphemisms exist for harsh words like die and drunk.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 7~11단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-11T07:39:34.671Z",
    "type": "네모어휘ABC",
@@ -284,76 +336,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 다음은 할당된 주어(assigned subject)가 있는 동명사 객체를 허용하지만 동명사의 독립된 주어(independent subject)가 있는 동명사를 허용하지 않는 더 일반적인 동사들의 목록입니다. (구문 포인트: 수동태(gerund의 주어와 객체의 관계) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T21:59:56.606Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버교정: 솔버 2/3 다수결 4번(기록 3번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "We can then say that (in the relevant idiom) all hell must be the sister of (A) [breaks loose / break loose], and that this condition will be met only if all hell originates in spec-V as the subject (and sister) of the V-bar break loose. We can account for how the subject all hell comes to be separated from its predicate break loose by positing that subjects originate internally within VP and from there (B) [raise to / rises to] spec-T (via A-movement) across an intervening T constituent like will, so that the subject and predicate thereby come to be separated from each other – movement of the subject to spec-T being driven by an [EPP] feature (C) [carrying by / carried by] [T will] requiring will to have a subject with person/number features. Subsequently, the TP in (12) is merged with a null declarative complementiser, so deriving the structure associated with (10a) All hell will break loose.",
-    "choices": [
-     "(A) breaks loose - (B) raise to - (C) carried by",
-     "(A) break loose - (B) rises to - (C) carrying by",
-     "(A) break loose - (B) raise to - (C) carried by",
-     "(A) break loose - (B) rises to - (C) carried by",
-     "(A) breaks loose - (B) rises to - (C) carrying by"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) break loose - (B) raise to - (C) carried by. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ① (A)에서 'all hell'이 복수 주어임에도 'breaks loose'를 써서 단수 동사로 오용했고, (B)에서 'raise to'는 능동형으로 틀렸고, (C) 'carrying by'는 수동형이 아니라 능동형으로 오용했다. 지문에서 'all hell'은 복수 주어고, 'raise'는 수동형으로 써야 하며, 'carried by'가 옳은 수동형이다. → 처방: 주어의 수에 맞춰 동사를 쓰고, 수동형과 능동형을 정확히 구분해라. 특히 'raise'는 능동형, 'rise'는 자동사라는 점도 기억해 둬.\n② 진단: ② (B)에서 'rises to'는 자동사로 쓰였지만, 'raise to'는 타동사로 오용했고, (C) 'carrying by'는 능동형으로 잘못 썼다. 지문에서 'subjects'가 복수 주어이므로 'raise to'는 수동형 'raised to'가 아니라 'rise to'가 맞고, (C)는 수동형 'carried by'가 옳다. → 처방: 자동사와 타동사를 구분하고, 수동형과 능동형을 정확히 써라. 특히 'raise'는 '~를 올리다', 'rise'는 '올라가다'라는 뜻임을 기억해 둬.\n③ 진단: ③ (A)에서 'break loose'는 옳지만, (B)에서 'raise to'는 능동형으로 오용했고, (C) 'carried by'는 옳지만 (B)의 오류로 전체가 틀렸다. 지문에서 'subjects'는 복수 주어이므로 'raise to'는 수동형이 아니라 자동사 'rise to'가 맞다. → 처방: 문장의 주어와 동사의 수를 맞춰 쓰고, 자동사와 타동사를 정확히 구분해라. 특히 'raise'는 타동사, 'rise'는 자동사임을 기억해 둬.\n⑤ 진단: ⑤ (A)에서 'breaks loose'는 복수 주어에 맞지 않고, (B)에서 'rises to'는 옳지만 (C) 'carrying by'는 능동형으로 오용했다. 지문에서 'all hell'은 복수 주어이므로 'break loose'가 옳고, (C)는 수동형 'carried by'가 맞다. → 처방: 주어의 수에 맞춰 동사를 쓰고, 수동형과 능동형을 정확히 써라. 특히 'carry'는 수동형 'carried by'로 써야 한다는 점을 기억해 둬."
-   }
-  },
-  {
-   "ts": "2026-08-10T22:01:01.560Z",
-   "type": "안내문불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(64%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
-    "passage": "We can then say that (in the relevant idiom) all hell must be the sister of break loose, and that this condition will be met only if all hell originates in spec-V as the subject (and sister) of the V-bar break loose. We can account for how the subject all hell comes to be separated from its predicate break loose by positing that subjects originate internally within VP and from there raise to spec-T (via A-movement) across an intervening T constituent like will, so that the subject and predicate thereby come to be separated from each other – movement of the subject to spec-T being driven by an [EPP] feature carried by [T will] requiring will to have a subject with person/number features. Subsequently, the TP in (12) is merged with a null declarative complementiser, so deriving the structure associated with (10a) All hell will break loose.",
-    "choices": [
-     "'all hell'은 동사의 주어 역할을 하며 'break loose'와 분리된다",
-     "'all hell'은 VP 내부에서 기원하여 T 요소인 'will'을 거쳐 spec-T 로 이동한다",
-     "'will'은 [EPP] 기능을 carrying 하여 주어의 인칭/수 features 를 요구한다",
-     "'all hell'은 동사의 주어 역할을 하지 않으며 'break loose'와 분리되지 않는다",
-     "'all hell will break loose'에서 'all hell'은 'will'의 주어로 기능한다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 'all hell'이 동사의 주어 역할을 하며 'break loose'와 분리된다고 명시했으나, 학생은 이 부분을 '주어 역할'과 '분리'를 분리해 오독했을 수 있음. 'all hell'이 주어 역할을 한다는 사실과 'break loose'와 분리된다는 사실은 지문에서 함께 언급됨. → 처방: 지문에서 주어 역할과 분리가 함께 언급된다는 점을 기억하고, 선지를 읽을 때 두 조건이 동시에 성립하는지 확인하기.\n② 진단: 지문은 'all hell'이 VP 내부에서 기원하여 T 요소인 'will'을 거쳐 spec-T 로 이동한다고 설명하지만, 학생은 'will'을 거치는 이동 과정을 생략하고 오독했을 수 있음. → 처방: 지문에서 설명하는 이동 경로(VP → T → spec-T)를 그림으로 그려보고, 각 단계가 어떤 역할을 하는지 정리하기.\n③ 진단: 지문은 '[T will]'이 [EPP] 기능을 carrying 하여 주어의 인칭/수 features 를 요구한다고 설명하지만, 학생은 'carrying'의 의미를 오해하거나 기능의 주체를 혼동했을 수 있음. → 처방: '[EPP] 기능'이 무엇인지 정확히 알고, 지문에서 '[T will]'이 그 기능을 carrying 한다는 점을 다시 한 번 확인하기.\n⑤ 진단: 지문은 'all hell will break loose'에서 'all hell'이 'will'의 주어로 기능한다고 설명하지만, 학생은 'will'이 조동사라는 점만 기억하고 주어 역할은 무시했을 수 있음. → 처방: 'will'이 조동사이면서 동시에 주어의 인칭/수 features 를 요구한다는 점을 기억하고, 선지를 읽을 때 조동사의 역할과 주어 역할을 동시에 고려하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
