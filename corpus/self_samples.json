@@ -1,6 +1,111 @@
 {
- "updated": "2026-08-11T22:08:24.613Z",
+ "updated": "2026-08-11T23:08:33.979Z",
  "samples": [
+  {
+   "ts": "2026-08-11T23:05:04.598Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.71,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name.\n\nIf A and B are identical, anything which is true of A is also true of B, and vice versa. Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. ( ① ) So A and B are identical means that A and B are one and the same thing. ( ② ) In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. ( ③ ) This assumption gives us an important rule of inference called the Principle of Substitutivity. ( ④ ) (2) Principle of Substitutivity ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘identical’의 의미가 ‘동일성’을 뜻한다는 설명이 이미 ②에서 나오므로, ①에 넣으면 중복되어 흐름이 끊어진다. 학생은 ‘identical’의 의미를 설명하는 부분이 필요하다고 혼동했을 수 있다. → 처방: ‘identical’의 의미를 설명하는 문장은 ②에 이미 있으니, 그 앞부분에서 흐름을 이어가도록 주의한다.\n② 진단: ②는 ‘identical’이 ‘동일성’을 뜻한다는 정의 자체이므로, 주어진 문장은 정의에 대한 예시가 아니라 ‘동일성의 의미’를 설명하는 문장이다. 학생은 예시와 정의를 혼동했을 수 있다. → 처방: ‘동일성’의 의미를 설명하는 문장은 정의가 아닌 예시임을 알고, 주어진 문장이 ‘예시’를 제공하는지 확인한다.\n④ 진단: ④는 ‘Principle of Substitutivity’의 규칙을 소개하는 부분이므로, 주어진 문장은 그 규칙의 전제가 되는 설명에 가깝다. 학생은 규칙의 소개와 전제를 혼동했을 수 있다. → 처방: ‘원리’가 소개되기 전에 그 원리의 전제가 되는 설명이 나와야 하므로, 주어진 문장은 ③의 예시 다음에 오는 것이 자연스럽다.\n⑤ 진단: ⑤는 ‘Principle of Substitutivity’의 이름과 규칙이 이미 소개된 상태이므로, 주어진 문장은 그 규칙의 전제가 되는 설명에 해당한다. 학생은 규칙의 이름과 설명의 위치를 혼동했을 수 있다. → 처방: ‘원리’의 이름이 나오기 전에 그 원리의 전제가 되는 설명이 나와야 하므로, 주어진 문장은 ③의 예시 다음에 오는 것이 맞다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-11T23:05:25.772Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "If A and B are identical, anything which is true of A is also true of B, and vice versa.\n\n(A) This assumption gives us an important rule of inference called the Principle of Substitutivity. (2) Principle of Substitutivity\n\n(B) Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. So A and B are identical means that A and B are one and the same thing.\n\n(C) In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 3,
+    "explanation": "원문 전개 순서는 (B) - (C) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘(A)가 첫 문장에 나오는데도 (2)라는 번호가 붙은 부분을 먼저 언급한 점에서, 학생은 ‘원리 이름’보다 ‘원리 설명’이 먼저 나와야 한다는 선입견에 갇혔다. (A)는 결론이나 정의가 아니라 ‘원리 이름’을 단순히 소개하는 부분이라 순서가 맞지 않는다. → 처방: ‘원리 이름’(A)은 ‘원리 설명’(C)이 나온 뒤에야 자연스럽게 등장한다는 점을 기억하고, 설명이 먼저 오는 순서를 찾도록 연습한다.\n② 진단: ‘(B)가 ‘동일’의 의미를 설명하는 부분인데도 (A)보다 먼저 두지 않은 점에서, 학생은 ‘정의’가 ‘원리’보다 먼저 나와야 한다는 고정관념에 사로잡혔다. 하지만 (A)는 ‘원리 이름’ 소개일 뿐, (B)의 정의가 먼저 나와야 흐름이 자연스럽다. → 처방: ‘정의’(B)가 ‘원리’(A)보다 먼저 나와야 논리적 흐름이 맞다는 점을 기억하고, 각 문단의 역할(정의 → 원리 → 예시)을 구분해서 읽도록 한다.\n④ 진단: ‘(C)가 ‘예시’ 부분인데도 (A)보다 먼저 두지 않은 점에서, 학생은 ‘원리’가 ‘예시’보다 먼저 나와야 한다는 선입견에 갇혔다. 하지만 (C)는 ‘원리’(A)가 적용된 사례이므로, 원리 설명이 먼저 나와야 한다. → 처방: ‘원리’(A)가 ‘예시’(C)보다 먼저 나와야 한다는 점을 기억하고, ‘원리 → 예시’의 순서를 찾도록 연습한다.\n⑤ 진단: ‘(C)가 ‘예시’인데도 (B)보다 먼저 두지 않은 점에서, 학생은 ‘예시’가 ‘정의’보다 먼저 나와야 한다는 오해를 했다. 하지만 (B)는 ‘동일’의 의미를 명확히 하는 ‘정의’이므로, 정의가 먼저 나와야 흐름이 자연스럽다. → 처방: ‘정의’(B)가 ‘예시’(C)보다 먼저 나와야 한다는 점을 기억하고, 각 문단의 역할(정의 → 예시 → 원리 이름)을 구분해서 읽도록 한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-11T23:07:46.994Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 2문항(요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "If A and B are identical, anything which is true of A is also true of B, and vice versa. Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. So A and B are identical means that A and B are one and the same thing. In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name. This assumption gives us an important rule of inference called the Principle of Substitutivity. (2) Principle of Substitutivity",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-11T23:07:57.925Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] A와 B가 동일하면 A에 대해 참인 것은 B에 대해서도 참이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-11T22:07:11.852Z",
    "type": "제목",
@@ -210,122 +315,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] I never lost hope of regaining my freedom someday. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-11T16:14:31.319Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "To be broke is to be insolvent. An insolvent company is one that can’t cover its debts. The state of being solvent is called solvency; the state of being insolvent is called insolvency. SOPORIFIC (sahp uh RIF ik) adj sleep inducing; boring; sleepy • The doctor calmed his hysterical patient by injecting him with some sort of soporific medication. • Sam’s soporific address was acknowledged not by applause but by a chorus of snores. • The soporific creature from the bottom of the sea lay in a gigantic blob on the beach for several days and then roused itself enough to consume the panic-stricken city. Quick Quiz #77 Match each word in the first column with its definition in the second column. Check your answers here. accidental good fortune 2. sleep inducing 3. eager and attentive 4. not bankrupt 5. [ ] extremely subservient 10.",
-    "choices": [
-     "The state of being solvent is referred to as solvency.",
-     "A state of being solvent is what we call insolvency.",
-     "The state of being sober is called sobriety.",
-     "The state of being solvent is a temporary condition that always leads to bankruptcy.",
-     "Sobriety is the condition of not being solvent."
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 원문 'state of being sober 9.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘solvent’(지불 능력이 있는)와 ‘insolvent’(지불 능력이 없는)를 혼동하여, ‘solvent’의 반대말이 ‘insolvency’(지불 불능)라고 잘못 이해함. → 처방: ‘solvent’의 반대말은 ‘insolvent’이므로, ‘solvency’(지불 능력 상태)와 ‘insolvency’(지불 불능 상태)를 정확히 구분하여 외우기.\n③ 진단: ‘sober’(술에 취하지 않은)와 ‘solvent’를 혼동하여, ‘sober’의 상태를 가리키는 ‘sobriety’를 ‘solvent’의 상태로 오해함. → 처방: ‘solvent’와 ‘sober’를 철자·뜻 모두 비교하며 외우고, 지문에서 ‘solvency’(지불 능력 상태)와 ‘insolvency’(지불 불능 상태)를 다시 한 번 확인하기.\n④ 진단: ‘solvent’의 상태가 ‘항상 bankruptcy(파산)로 이어진다’는 오해를 함. 지문에서 ‘solvent’는 ‘지불 능력이 있는 상태’를 뜻하며, bankruptcy 는 그 반대 상태를 가리킴. → 처방: ‘solvent’의 뜻과 bankruptcy 의 뜻을 따로 정리하고, ‘solvent’는 ‘지불 능력이 있는 상태’이며 bankruptcy 는 ‘지불 능력이 없는 상태’라는 점을 명확히 이해하기.\n⑤ 진단: ‘sobriety’(술에 취하지 않은 상태)와 ‘solvent’를 혼동하여, ‘solvency’를 ‘sobriety’로 오해함. → 처방: ‘solvency’(지불 능력)와 ‘sobriety’(술에 취하지 않음)를 철자·뜻 모두 비교하며 외우고, 지문에서 ‘solvent’의 뜻을 정확히 파악하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T16:16:22.473Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.38,
-    "D": 1,
-    "distractorEff": 100,
-    "pass": true,
-    "flags": []
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "파산은 채무를 변제할 능력이 없어 발생하는 법적 상태를 가리킨다.",
-     "파산은 회사가 부도를 내거나 법정관리에 들어가는 경우를 말한다.",
-     "파산은 모든 경제 주체가 같은 시기에 겪는 필연적인 상태가 아니다.",
-     "파산은 채무 불이행뿐만 아니라 예기치 못한 재정적 변동으로도 발생할 수 있다.",
-     "파산은 개인의 신용도 하락과 직접적으로 연결된 현상이다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Insolvency is the state of being unable to pay debts at maturity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 'insolvent company'는 '채무를 변제할 수 없는 회사'를 뜻하지만, '부도'나 '법정관리' 같은 구체적 절차를 언급하지 않음. 학생은 '파산'의 법적 절차를 회사의 부도나 법정관리와 동일시한 오류. → 처방: 파산의 정의(채무 변제 능력 상실)를 먼저 떠올리고, 법적 절차는 그 결과로 발생하는 현상임을 기억하기.\n③ 진단: 지문은 'insolvent'가 '채무를 변제할 수 없는 상태'임을 설명하지만, '모든 경제 주체'가 겪는 '필연적 상태'는 아님을 직접 언급하지 않음. 학생은 '파산'이 특정 시점에 모든 경제 주체가 겪는 필연적 현상으로 오해. → 처방: 파산은 개별 경제 주체의 재정 상태이므로, '모든 경제 주체'라는 범위를 좁히기.\n④ 진단: 지문은 'insolvent'가 '채무를 변제할 수 없는 상태'임을 설명하지만, '예기치 못한 재정적 변동'은 언급하지 않음. 학생은 파산의 원인을 '채무 불이행'뿐만 아니라 '예기치 못한 변동'까지 확장해 오독. → 처방: 파산의 정의(채무 변제 능력 상실)를 정확히 기억하고, 원인은 '채무 불이행'에 집중하기.\n⑤ 진단: 지문은 'insolvent'가 '채무를 변제할 수 없는 상태'임을 설명하지만, '개인의 신용도 하락'은 직접 언급하지 않음. 학생은 파산의 결과(신용도 하락)를 파산의 정의로 오해. → 처방: 파산의 정의(채무 변제 능력 상실)를 먼저 떠올리고, 신용도 하락은 그 결과임을 기억하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Insolvency is the state of being unable to pay debts at maturity.]"
-   }
-  },
-  {
-   "ts": "2026-08-11T16:18:01.503Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 18 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'insolvency', 'indicates', 'financial' / 16~20단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Breaking down the text reveals that insolvency means being unable to pay debts, while solvency indicates financial health.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 16~20단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-11T15:17:26.682Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "Quick Quiz #76 Match each word in the first column with its definition in the second column. Check your answers here. 1. scintillate a. sparkle 2. scrupulous b. ⓐ<u>having nothing to do with religion</u> 3. scrutinize c. treason 4. secular d. having to do with the senses 5. sedition e. set apart 6. segregate f. strict 7. ⓑ<u>sensory</u> g. delighting the senses 8. sensual h. examine very carefully 9. sensuous i. ⓒ<u>devoted to pleasure</u> 10. sentient j. conscious 11. sequester k. separate SERENDIPITY (ser un DIP uh tee) n accidental good fortune; discovering good things without looking for them • It was serendipity rather than genius that led the archaeologist to his breathtaking discovery of the ancient civilization. While walking his dog in the desert, he tripped over the top of a buried tomb. Something that occurs through serendipity is ⓓ<u>was serendipitous</u>. • Our arrival at the airport serendipitously coincided with that of the queen, and she ⓔ<u>offered us a ride</u> to our hotel in her carriage. SERVILE (SUR vyle) adj submissive and subservient; like a servant",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 4,
-    "explanation": "[어법: 수일치] 정답 ⓓ의 'was serendipitous'는 'serendipitously'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n① 진단: ⓐ의 'having nothing to do with religion'은 '세속적인'이라는 뜻의 'secular'의 정의와 일치하지 않음. 지문에서 'secular'는 '세속의'로 정의되어 있음. 학생은 'secular'가 '무신론'이나 '비종교'를 뜻한다고 오해했을 가능성이 큼. → 처방: 단어의 뜻을 정확히 외우고, 'secular'는 '세속의'라는 뜻임을 기억할 것. 종교와 관련이 없다는 뜻이 아님.\n② 진단: ⓑ의 'sensory'는 '감각과 관련된'이라는 뜻으로, 지문에서 'sensual'의 정의로 제시되어 있음. 학생은 'sensory'와 'sensual'을 혼동했을 가능성이 큼. → 처방: 'sensory'는 '감각의'라는 뜻이고, 'sensual'은 '육감적인' 또는 '쾌락주의적인'이라는 뜻임을 구분하여 기억할 것.\n③ 진단: ⓒ의 'devoted to pleasure'는 '쾌락주의적인'이라는 뜻으로, 지문에서 'sensual'의 정의로 제시되어 있음. 학생은 'sensual'과 'sensuous'를 혼동했을 가능성이 큼. → 처방: 'sensual'은 '육감적인' 또는 '쾌락주의적인'을 뜻하고, 'sensuous'는 '감각적으로 즐거운'을 뜻함을 구분하여 기억할 것.\n⑤ 진단: ⓓ의 'was serendipitous'는 '우연히 좋은 일이 일어난'이라는 뜻의 형용사형으로, 지문에서 'serendipity'가 '우연한 좋은 행운'을 뜻하는 명사임을 고려하면 문법적으로 옳음. 학생은 'serendipitous'가 동사형으로 오해했을 가능성이 큼. → 처방: 'serendipity'는 명사, 'serendipitous'는 형용사임을 기억하고, 문장에서 형용사로 쓰일 때는 '-ous'로 끝나는지 확인할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
