@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-11T21:07:31.317Z",
+ "updated": "2026-08-11T22:08:24.609Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-11T22:07:54.267Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'however'와 같은 접속사 뒤의 주어는 문맥상 생략되지 않도록 명시해야 하며, 동사 시제는 문맥에 맞는 적절한 시제를 사용해야 한다. 또한 'chose'는 과거형으로, 원형은 'choose'임을 구분해야 한다.",
+   "rule": "'그러나', '그런데'와 같은 접속사(however, but 등) 뒤에는 주어(주로 인칭대명사 또는 명사)가 생략되지 않도록 명시하고, 동사는 문맥에 맞는 시제(현재/과거/완료 등)로 정확히 사용하라. 또한 'chose'는 '선택했다'의 과거형으로, 'choose'는 '선택하다'의 원형임을 구분하여 오용하지 않도록 하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-11T21:07:03.784Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 코퍼스에서는 소유·소유권 관련 연어('owning a lot of your time')와 동명사·현재분사 사용 패턴('his trying')이 빈번하며, 문법 오류는 동사 형태(3인칭 단수, 시제 일치)나 보어 생략(be 동사) 문제에서 주로 발생한다. 또한 'that's why' 구조는 결과-원인 관계의 보어 구문('be as hard as when')으로 확장되는 경향이 있다.",
    "rule": "원서 코퍼스에서 빈번한 'owning/trying'과 같은 동명사 구문은 한국어 내신 변형 시 '~하는 것'으로 번역·활용하되, 주어-동사 일치(3인칭 단수)나 보어(be 동사) 생략 오류를 반드시 포함시켜 문법 오류 유도 문제를 제작하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T14:56:16.152Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "명사구 내 'old'는 'outdated'로, 'surprise'는 명사형으로 교정되며, 접속사 뒤에는 콤마가 필수적이다. 동사 시제는 문맥에 맞게 단순 과거로 통일하는 경향이 강하다.",
-   "rule": "CEFR B1 수준에서 'old + 명사'는 'outdated + 명사'로, 'surprise'는 명사형으로 교정하고, 접속사(therefore, however 등) 뒤에는 항상 콤마를 삽입하도록 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",

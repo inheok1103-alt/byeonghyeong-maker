@@ -1,7 +1,15 @@
 {
- "updated": "2026-08-11T21:07:31.316Z",
+ "updated": "2026-08-11T22:08:24.608Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "제목은 핵심 주제(예: 'Binge Drinking')와 한정적 문제(예: 'Risks'/'Causes')를 결합해 구체성과 일관성을 높여야 하며, 과장·포괄적·맥락 오류를 배제해야 한다.",
+   "src": "자가학습:제목",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-11T22:06:35.655Z"
+  },
   {
    "rule": "모든 선지는 다양한 형태와 길이를 가지며, 본문의 의미와 일치하는 정답을 제시하고, 오답의 매력도를 높여야 한다.",
    "src": "자가학습:본문찾아쓰기",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-07T21:01:29.378Z"
-  },
-  {
-   "rule": "원문의 조건부 구조와 모든 시제를 일관되게 가정법 과거/과거완료로 통일하고, 'it will then follow that' 부분을 'it would then follow that'로 변환하여 조건법의 논리적 엄밀성과 문맥 일관성을 확보할 것.",
-   "src": "자가학습:문장전환",
-   "score": 78,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-07T21:01:56.552Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
