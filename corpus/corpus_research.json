@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-11T11:10:05.462Z",
+ "updated": "2026-08-11T12:06:00.943Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-11T12:05:32.313Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'and so on'이나 'time after time' 같은 연어는 콤마로 분리되어야 자연스럽고, 문법적 오류는 연어의 형태적 오류(형용사+전치사+형용사, 명사+전치사+명사 등)에서 주로 발생한다. 또한, 'be as hard as'와 같이 'be + as ~ as' 구조는 비교 구문에서 필수적이다.",
+   "rule": "비교 구문('as ~ as')이나 연어('and so on', 'time after time')가 포함된 문장은 콤마 삽입 여부와 동사/전치사 결합 형태를 오답으로 설계하여, 학생이 연어의 정확한 형태와 구조를 숙지하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-11T11:09:40.195Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "명사+전치사+명사 구조에서 전치사 오류(예: 'of the reason' → 'reasons')와 복수형 오류('place' → 'space', 'cars' → 'these cars')가 빈번하게 발생함을 확인했다.",
    "rule": "복합명사구(명사+of+명사)에서 전치사 'of'와 복수형 일치(예: 'one of the reasons')를 필수적으로 검토하고, 명사+to+동사 구조(예: 'space to park')에서 동사의 원형과 관사('a/an/the')를 반드시 확인하여 오답을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T07:20:40.684Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'a/an'의 오용이 빈번하며, 특히 정보성 명사(uncountable noun) 앞에 관사가 생략되는 경향이 강하다. 또한 'own'의 소유격 사용이 'our'로 대체되어야 하는 경우가 많다.",
-   "rule": "정보성 명사(예: information, advice, knowledge) 앞에는 관사를 생략하고, 소유격 'own'은 'our/your/their'로 대체하여 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",

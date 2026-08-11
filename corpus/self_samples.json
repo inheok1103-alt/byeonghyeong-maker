@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-11T11:10:05.465Z",
+ "updated": "2026-08-11T12:06:00.948Z",
  "samples": [
+  {
+   "ts": "2026-08-11T11:59:22.224Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 4건 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 5번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Wh-Word Inversions Canceling Out Grammar Rules",
+     "How Grammar Rules Cancel Out Wh-Word Inversions",
+     "The Role of Wh-Words in Subject Position",
+     "All Grammar Inversions Cancel Each Other in Questions",
+     "No Need for Dummy Verbs with Wh-Words as Subjects"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'WHO SAID THAT WE WERE READY TO GO?'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: WHO SAID THAT WE WERE READY TO GO?]\n[오답 진단·처방]\n① 진단: ‘wh- word 가 주어 자리에 있을 때 do 가 필요 없다는 핵심 내용’(지문 마지막 문장)을 읽지 않고 ‘wh- word 의 도치 현상’(지문 앞부분)만 보고 오해한 듯하다. 지문은 도치가 상쇄되어 do 가 필요 없다는 결론을 내렸지, 도치 자체가 규칙이 아니기 때문이다. → 처방: 문제를 풀기 전 ‘지문의 핵심 주장’을 먼저 찾고, 그 주장에 맞지 않는 선지는 제거하는 습관을 기르자.\n② 진단: ‘how’라는 wh- word 가 아니라 ‘who’라는 wh- word 의 특성을 다룬 글임을 간과하고, ‘how’는 do 가 필요 없다는 내용이 없다는 점(지문에서 언급되지 않음)을 놓쳤다. → 처방: ‘wh- word 의 종류(what, who, how 등)에 따라 do 사용 여부가 달라질 수 있다’는 점을 기억하고, 선지를 고를 때는 ‘지문에서 언급된 wh- word’에만 집중하자.\n③ 진단: ‘wh- word 가 주어 자리에 있을 때’라는 조건을 무시하고, 단순히 ‘wh- word 의 역할’만 보고 오해한 듯하다. 지문은 주어 자리의 wh- word 에만 초점을 맞추었는데, 이 선지는 주어 자리 여부를 묻지 않는다. → 처방: ‘지문의 조건(wh- word 가 주어일 때)’을 먼저 확인하고, 그 조건에 맞지 않는 선지는 제외하는 연습을 하자.\n④ 진단: ‘모든 도치가 서로 상쇄된다’는 과장된 주장(지문은 wh- word 가 주어일 때만 해당)을 일반화해서 오해했다. 지문은 ‘wh- word 가 주어일 때’에만 do 가 필요 없다는 점을 강조했는데, 이 선지는 모든 도치에 적용된다고 주장한다. → 처방: ‘지문에서 언급된 범위’를 정확히 파악하고, ‘과장된 일반화’가 포함된 선지는 선택하지 않도록 주의하자."
+   }
+  },
+  {
+   "ts": "2026-08-11T12:05:29.655Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 누가 우리가 떠날 준비가 되었다고 했나요?\n주어진 단어: ( we / go / said / that / were / ready / Who / to )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Who said that we were ready to go.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-11T11:09:04.102Z",
    "type": "내용불일치",
@@ -297,75 +350,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The implementation of authentic materials in the first cycle of teaching and learning process showed that students lacked awareness, which was addressed in the second cycle by varying exercises and providing clear explanations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘unclear instructions’가 아니라 ‘instructions were not given in time(제때 설명하지 않음)’이 문제였다. 학생들은 ‘의욕은 있었으나 인지 부족’을 보였고, 이는 ‘제때 안 했다’는 행동 결과였다. → 처방: ‘제때 설명하지 않은 점’을 ‘명확하지 않은 설명’으로 오독한 경우, 지문에서 ‘instructions’를 ‘제때 설명하지 않음’으로 다시 읽고, ‘awareness 부족’의 원인을 행동(시간 관리)에서 찾도록 연습하기.\n③ 진단: ‘reading skills’이 아니라 ‘awareness(인지)’가 개선된 것이다. 글에서 ‘awareness 문제 해결’을 목표로 했고, ‘reading skills’ 향상은 언급되지 않았다. → 처방: ‘reading skills’와 ‘awareness’를 혼동한 경우, 지문에서 ‘awareness’를 강조하는 문장(‘They did every their work but not in time. It showed that they still lacked of awareness.’)을 다시 확인하고, ‘목표’와 ‘결과’를 구분해서 읽기.\n④ 진단: ‘always lacked awareness’는 과장된 표현이다. 첫 번째 사이클에서 ‘awareness 부족’이 보였지만, 두 번째 사이클에서 ‘awareness 가 grew(성장)’했다는 결과가 나왔다. → 처방: ‘항상’이라는 절대적 표현에 주목하지 않은 경우, 지문에서 ‘Therefore, it was decided to solve the awareness problem in the next cycle.’와 ‘Those gave good result considering’를 비교해 ‘변화’와 ‘결과’를 정확히 파악하기.\n⑤ 진단: ‘occasionally’는 ‘때때로’라는 뜻으로, 두 번째 사이클에서 ‘awareness 문제 해결’이 ‘전체적으로’ 이뤄졌다는 결과와 맞지 않다. ‘good result’를 무시한 오독이다. → 처방: ‘occasionally’라는 한정어를 무시한 경우, 지문에서 ‘gave good result’를 강조하는 부분을 다시 읽고, ‘결과’의 강도를 판단하는 연습하기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The implementation of authentic materials in the first cycle of teaching and learning process showed that students lacked awareness, which was addressed in the second cycle by varying exercises and providing clear explanations.]"
-   }
-  },
-  {
-   "ts": "2026-08-11T02:30:20.444Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "On the first cycle, in implementing the Authentic Materials, the students were taken into an enjoyable teaching and learning process of reading.\n\n(A) Therefore, it was decided to solve the awareness problem in the next cycle. From the first cycle, the English teacher, as a collaborator, argued that in solving the remaining problem, the exercises should be enhanced by varying them in many ways. Furthermore, she also argued that the researcher himself should specify his explanation to the students and maintain his composure.\n\n(B) The materials successfully kept the students’ willingness, yet not quite successful in their awareness. They did every their work but not in time. It showed that they still lacked of awareness.\n\n(C) Therefore, in the second cycle, the exercises were varied into many ways and every instruction was explained instead of waiting the students to ask. The students were also motivated by giving tip in effective reading. Those gave good result considering",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 2,
-    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ① (A)의 'Therefore'가 첫 순서에 오면 앞뒤가 맞지 않는다. ② (C)의 'Therefore'도 첫 순서에 오면 앞뒤가 맞지 않는다. 학생은 'Therefore'가 결과나 결론을 도입하는 단어로만 쓰인다고 오해한 듯하다. → 처방: 문단의 흐름을 먼저 살펴보세요. 'Therefore'는 앞 문장의 결과나 결론을 도입하는 단어라는 점을 기억하세요.\n③ 진단: ① (B)에서 'They did every their work but not in time.'이 첫 문장으로 오면 앞뒤가 맞지 않는다. ② (A)의 'Therefore'가 (B) 다음에 오면 앞뒤가 맞지 않는다. 학생은 문단의 흐름을 무시하고 개별 문장만 보고 순서를 정한 듯하다. → 처방: 문단의 흐름을 먼저 파악하세요. 첫 문장은 상황 설명, 다음은 문제점, 그다음은 해결책 순서라는 점을 기억하세요.\n④ 진단: ① (C)의 'Therefore'가 첫 순서에 오면 앞뒤가 맞지 않는다. ② (B)의 'They did every their work but not in time.'이 (A) 다음에 오면 앞뒤가 맞지 않는다. 학생은 문단의 흐름을 무시하고 개별 문장만 보고 순서를 정한 듯하다. → 처방: 문단의 흐름을 먼저 파악하세요. 첫 문장은 상황 설명, 다음은 문제점, 그다음은 해결책 순서라는 점을 기억하세요.\n⑤ 진단: ① (C)의 'Therefore'가 첫 순서에 오면 앞뒤가 맞지 않는다. ② (B)의 'They did every their work but not in time.'이 (A) 다음에 오면 앞뒤가 맞지 않는다. 학생은 문단의 흐름을 무시하고 개별 문장만 보고 순서를 정한 듯하다. → 처방: 문단의 흐름을 먼저 파악하세요. 첫 문장은 상황 설명, 다음은 문제점, 그다음은 해결책 순서라는 점을 기억하세요.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T23:52:00.194Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Jones sent Delia a pet stoat.\n② EVENTS one verb class, as shown by argument alternations (e.g., Jones broke the pot / The pot broke; Gillian spread the crusts with butter / Gillian spread butter on the crusts).\n③ The variability of verb meaning and verbal argument structure calls the traditional view into question, and some scholars, particularly in Construction Grammar, propose that syntactic and semantic arguments are determined by the form of the sentence, and not by the meaning of the verb.\n④ For example, on this approach the double object construction is analysed as a kind of idiom with associated thematic roles.\n⑤ The verbs which can be inserted into the idiom framework contribute little more than a manner modification, as in (35).\n⑥ The Construction Grammar approach fits well with analysing the verb as a 1-place manner predicate on the event.",
-    "choices": [
-     "②-⑥-④-③-①-⑤",
-     "②-⑤-⑥-④-①-③",
-     "②-③-①-⑤-⑥-④",
-     "③-②-④-⑤-⑥-①",
-     "②-③-④-⑤-⑥-①"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ②-③-④-⑤-⑥-①. 흐름: ② → ③ → ④(For example) → ⑤ → ⑥ → ① — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 지문을 잘 읽지 않아 ②와 ④의 논리적 연결을 이해하지 못하고, ①과 ③의 위치를 잘못 판단했다. → 처방: 지문을 다시 읽어 논리적 연결을 파악하고, 각 문장의 역할을 이해하라.\n② 진단: ②와 ⑤의 연결을 이해하지 못하고, ③과 ④의 위치를 잘못 판단했다. 또한 ①의 위치도 잘못 판단했다. → 처방: 지문을 다시 읽어 각 문장의 논리적 연결을 파악하고, 각 문장의 역할을 이해하라.\n③ 진단: ②와 ③의 논리적 연결을 이해하지 못하고, ①과 ④의 위치를 잘못 판단했다. → 처방: 지문을 다시 읽어 논리적 연결을 파악하고, 각 문장의 역할을 이해하라.\n④ 진단: ③과 ②의 논리적 연결을 이해하지 못하고, ①의 위치를 잘못 판단했다. → 처방: 지문을 다시 읽어 논리적 연결을 파악하고, 각 문장의 역할을 이해하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
