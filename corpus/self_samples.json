@@ -1,6 +1,89 @@
 {
- "updated": "2026-08-11T15:25:20.377Z",
+ "updated": "2026-08-11T16:18:31.653Z",
  "samples": [
+  {
+   "ts": "2026-08-11T16:14:31.319Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "To be broke is to be insolvent. An insolvent company is one that can’t cover its debts. The state of being solvent is called solvency; the state of being insolvent is called insolvency. SOPORIFIC (sahp uh RIF ik) adj sleep inducing; boring; sleepy • The doctor calmed his hysterical patient by injecting him with some sort of soporific medication. • Sam’s soporific address was acknowledged not by applause but by a chorus of snores. • The soporific creature from the bottom of the sea lay in a gigantic blob on the beach for several days and then roused itself enough to consume the panic-stricken city. Quick Quiz #77 Match each word in the first column with its definition in the second column. Check your answers here. accidental good fortune 2. sleep inducing 3. eager and attentive 4. not bankrupt 5. [ ] extremely subservient 10.",
+    "choices": [
+     "The state of being solvent is referred to as solvency.",
+     "A state of being solvent is what we call insolvency.",
+     "The state of being sober is called sobriety.",
+     "The state of being solvent is a temporary condition that always leads to bankruptcy.",
+     "Sobriety is the condition of not being solvent."
+    ],
+    "answer": 1,
+    "explanation": "빈칸에는 원문 'state of being sober 9.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘solvent’(지불 능력이 있는)와 ‘insolvent’(지불 능력이 없는)를 혼동하여, ‘solvent’의 반대말이 ‘insolvency’(지불 불능)라고 잘못 이해함. → 처방: ‘solvent’의 반대말은 ‘insolvent’이므로, ‘solvency’(지불 능력 상태)와 ‘insolvency’(지불 불능 상태)를 정확히 구분하여 외우기.\n③ 진단: ‘sober’(술에 취하지 않은)와 ‘solvent’를 혼동하여, ‘sober’의 상태를 가리키는 ‘sobriety’를 ‘solvent’의 상태로 오해함. → 처방: ‘solvent’와 ‘sober’를 철자·뜻 모두 비교하며 외우고, 지문에서 ‘solvency’(지불 능력 상태)와 ‘insolvency’(지불 불능 상태)를 다시 한 번 확인하기.\n④ 진단: ‘solvent’의 상태가 ‘항상 bankruptcy(파산)로 이어진다’는 오해를 함. 지문에서 ‘solvent’는 ‘지불 능력이 있는 상태’를 뜻하며, bankruptcy 는 그 반대 상태를 가리킴. → 처방: ‘solvent’의 뜻과 bankruptcy 의 뜻을 따로 정리하고, ‘solvent’는 ‘지불 능력이 있는 상태’이며 bankruptcy 는 ‘지불 능력이 없는 상태’라는 점을 명확히 이해하기.\n⑤ 진단: ‘sobriety’(술에 취하지 않은 상태)와 ‘solvent’를 혼동하여, ‘solvency’를 ‘sobriety’로 오해함. → 처방: ‘solvency’(지불 능력)와 ‘sobriety’(술에 취하지 않음)를 철자·뜻 모두 비교하며 외우고, 지문에서 ‘solvent’의 뜻을 정확히 파악하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-11T16:16:22.473Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.38,
+    "D": 1,
+    "distractorEff": 100,
+    "pass": true,
+    "flags": []
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "파산은 채무를 변제할 능력이 없어 발생하는 법적 상태를 가리킨다.",
+     "파산은 회사가 부도를 내거나 법정관리에 들어가는 경우를 말한다.",
+     "파산은 모든 경제 주체가 같은 시기에 겪는 필연적인 상태가 아니다.",
+     "파산은 채무 불이행뿐만 아니라 예기치 못한 재정적 변동으로도 발생할 수 있다.",
+     "파산은 개인의 신용도 하락과 직접적으로 연결된 현상이다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Insolvency is the state of being unable to pay debts at maturity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 'insolvent company'는 '채무를 변제할 수 없는 회사'를 뜻하지만, '부도'나 '법정관리' 같은 구체적 절차를 언급하지 않음. 학생은 '파산'의 법적 절차를 회사의 부도나 법정관리와 동일시한 오류. → 처방: 파산의 정의(채무 변제 능력 상실)를 먼저 떠올리고, 법적 절차는 그 결과로 발생하는 현상임을 기억하기.\n③ 진단: 지문은 'insolvent'가 '채무를 변제할 수 없는 상태'임을 설명하지만, '모든 경제 주체'가 겪는 '필연적 상태'는 아님을 직접 언급하지 않음. 학생은 '파산'이 특정 시점에 모든 경제 주체가 겪는 필연적 현상으로 오해. → 처방: 파산은 개별 경제 주체의 재정 상태이므로, '모든 경제 주체'라는 범위를 좁히기.\n④ 진단: 지문은 'insolvent'가 '채무를 변제할 수 없는 상태'임을 설명하지만, '예기치 못한 재정적 변동'은 언급하지 않음. 학생은 파산의 원인을 '채무 불이행'뿐만 아니라 '예기치 못한 변동'까지 확장해 오독. → 처방: 파산의 정의(채무 변제 능력 상실)를 정확히 기억하고, 원인은 '채무 불이행'에 집중하기.\n⑤ 진단: 지문은 'insolvent'가 '채무를 변제할 수 없는 상태'임을 설명하지만, '개인의 신용도 하락'은 직접 언급하지 않음. 학생은 파산의 결과(신용도 하락)를 파산의 정의로 오해. → 처방: 파산의 정의(채무 변제 능력 상실)를 먼저 떠올리고, 신용도 하락은 그 결과임을 기억하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Insolvency is the state of being unable to pay debts at maturity.]"
+   }
+  },
+  {
+   "ts": "2026-08-11T16:18:01.503Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 18 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'insolvency', 'indicates', 'financial' / 16~20단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Breaking down the text reveals that insolvency means being unable to pay debts, while solvency indicates financial health.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 16~20단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-11T15:17:26.682Z",
    "type": "어법(밑줄)",
@@ -259,95 +342,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Euphemisms exist for harsh words like die and drunk.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 7~11단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-11T07:39:34.671Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "The T-auxiliary may is a probe by virtue of being the head of the overall structure and is (A) [inactive / active] by virtue of its (abstract) (B) [uninterpretable / interpretable] person and number features, in accordance with (78). It searches for an active goal and locates the QP several miners (which is active by virtue of its uninterpretable case feature). Via agreement with the φ-complete goal several miners, the φ-features on the probe may are valued as third person plural in accordance with (79i), and (C) [added / deleted] in accordance with (80i). Via agreement with the finite φ-complete probe may, the case feature on the goal several miners is valued as nominative in accordance with (79ii), and deleted in accordance with (80i). The EPP feature on T is deleted by movement of the closest goal several miners to spec-T, in conformity with (80ii). These various (agreement, casemarking, movement and deletion) operations apply simultaneously on the T-cycle in accordance with (81), so deriving the TP shown in (iv) below:",
-    "choices": [
-     "(A) active - (B) interpretable - (C) added",
-     "(A) inactive - (B) interpretable - (C) deleted",
-     "(A) active - (B) interpretable - (C) deleted",
-     "(A) inactive - (B) uninterpretable - (C) deleted",
-     "(A) active - (B) uninterpretable - (C) deleted"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) active - (B) uninterpretable - (C) deleted. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: T-auxiliary may 는 uninterpretable feature 를 가지고 있으므로 interpretable 로 오독했으며, agreement 후에 -features 가 added 가 아니라 deleted 된다고 지문에 명시되어 있으므로 added 로 오독했다. (지문: \"the -features on the probe may are valued as third person plural... and deleted in accordance with (80i)\") → 처방: 지문에서 T-auxiliary may 의 특징과 agreement 후에 -features 의 변화를 다시 읽어보아야 한다.\n② 진단: T-auxiliary may 는 active probe 이므로 inactive 로 오독했으며, T-auxiliary may 는 uninterpretable feature 를 가지고 있으므로 interpretable 로 오독했다. (지문: \"The T-auxiliary may is a probe by virtue of being the head of the overall structure and is (A) [inactive / active] by virtue of its (abstract) (B) [uninterpretable / interpretable] person and number features\") → 처방: 지문에서 T-auxiliary may 의 특징을 다시 읽어보아야 한다.\n③ 진단: T-auxiliary may 는 uninterpretable feature 를 가지고 있으므로 interpretable 로 오독했으며, agreement 후에 -features 가 added 가 아니라 deleted 된다고 지문에 명시되어 있으므로 added 로 오독했다. (지문: \"the -features on the probe may are valued as third person plural... and deleted in accordance with (80i)\") → 처방: 지문에서 T-auxiliary may 의 특징과 agreement 후에 -features 의 변화를 다시 읽어보아야 한다.\n④ 진단: T-auxiliary may 는 active probe 이므로 inactive 로 오독했다. (지문: \"The T-auxiliary may is a probe by virtue of being the head of the overall structure and is (A) [inactive / active] by virtue of its (abstract) (B) [uninterpretable / interpretable] person and number features\") → 처방: 지문에서 T-auxiliary may 의 특징을 다시 읽어보아야 한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T07:41:48.908Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] T는 may의 φ-특징과 일치하는 QP인 several miners를 주어 위치로 끌어들이고 대격 기능을 부여해 주어-동사 일치를 완성한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T04:43:15.504Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "defective probing by infinitival to and its impact on agreement features",
-     "defective case feature valuation by infinitival to",
-     "uninterpretable agreement features resulting from defective probing by infinitival to",
-     "defective probing by infinitival to in agreement feature valuation",
-     "defective properties of infinitival to in syntactic probing"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Infinitival to’s defective probing and its effects on agreement features**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·과잉 일반화)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 조건 누락· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 선지 2는 'case feature'만 다루고 'person feature'의 문제까지 포함하는 주제를 오해했음. 지문은 'case feature'가 'person feature'와 함께 언급되며, defective probing 의 'impact'가 주제임을 분명히 함. → 처방: 문제에서 'impact'라는 단어를 주의 깊게 읽고, defective probing 이 어떤 특징(feature)에 영향을 주는지 전체적으로 파악하기.\n③ 진단: 선지 3은 'uninterpretable agreement features'에만 초점을 맞추어 defective probing 의 'impact'를 보지 못했음. 지문은 defective probing 이 agreement features 에 미치는 영향을 다룬다고 명시함. → 처방: 주제 선지에서 'impact'나 'resulting from' 같은 표현을 찾고, defective probing 이 어떤 'impact'를 주는지 전체 맥락에서 확인하기.\n④ 진단: 선지 4는 'agreement feature valuation'에만 집중하여 defective probing 의 'impact'를 좁게 해석했음. 지문은 defective probing 이 agreement features 에 미치는 'impact'를 다루며, 그 범위가 더 넓음을함. → 처방: 문제에서 'impact'라는 단어를 보고 defective probing 이 agreement features 에 어떤 영향을 주는지 전체적으로 읽어보기.\n⑤ 진단: 선지 5는 'properties of infinitival to'에만 초점을 맞추어 defective probing 의 'impact'를 보지 못했음. 지문은 defective probing 이 agreement features 에 미치는 영향을 주제로 삼고 있음. → 처방: 주제 선지에서 'impact'라는 단어를 찾고 defective probing 이 어떤 특징(feature)에 영향을 주는지 전체적으로 파악하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Infinitival to’s defective probing and its effects on agreement features**]"
    }
   }
  ]
