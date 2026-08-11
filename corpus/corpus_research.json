@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-11T00:00:33.549Z",
+ "updated": "2026-08-11T02:30:59.612Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-11T02:30:33.573Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "복합문에서 접속사 'but'의 과도한 사용이 문장의 논리적 흐름을 방해하며, 'system'의 단수형 오용과 'car'의 복수 표현 부족이 자연스러운 문장 구성을 어렵게 한다.",
+   "rule": "CEFR B2 수준의 문장에서는 'but'을 한 문장에 1회만 사용하도록 제한하고, 'system'은 복수형 'systems'로, 'car'는 'personal cars'로 명시하여 문법적 정확성과 자연스러움을 확보하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-11T00:00:02.526Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거 시제/현재 시제 혼용, 복수형 오류, 관사 누락이 빈번한 패턴으로, 문장 구조의 일관성과 수 일치 오류가 주된 문제점이다. 특히 'compulsory to attend'와 같은 구문은 전치사 오류와 결합되어 나타나기도 한다.",
    "rule": "'명사 + 단수/복수형 동사'의 수 일치와 'a/an/the + 단수명사'의 관사 사용 규칙을 반드시 확인하라. 특히 'compulsory to attend'와 같은 구문은 'compulsory for attendance'로 전치사 오류를 수정해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T21:04:21.728Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제 동사 앞의 관사 누락, 'one way or the other' 구문의 오용, 'when' 절 내 주어의 관사/시제 오류가 빈번히 발생한다. 특히 'ask'와 같은 일반동사가 과거시제일 때 관사('the')와 시제('asked')가 동시에 생략되는 패턴이 두드러진다.",
-   "rule": "'when + 주어 + 일반동사 과거시제' 구문에서 주어는 반드시 관사('the' 등)를 동반하고, 동사는 과거시제('asked', 'taught' 등)로 정확히 표기하라. 예: 'when the teacher asked me' → 'when teacher ask me'는 오류.",
    "sample": [
     "old english",
     "university press",
