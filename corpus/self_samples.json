@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-11T02:30:59.616Z",
+ "updated": "2026-08-11T04:44:29.829Z",
  "samples": [
+  {
+   "ts": "2026-08-11T04:43:15.504Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 1/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "defective probing by infinitival to and its impact on agreement features",
+     "defective case feature valuation by infinitival to",
+     "uninterpretable agreement features resulting from defective probing by infinitival to",
+     "defective probing by infinitival to in agreement feature valuation",
+     "defective properties of infinitival to in syntactic probing"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Infinitival to’s defective probing and its effects on agreement features**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·과잉 일반화)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 조건 누락· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 선지 2는 'case feature'만 다루고 'person feature'의 문제까지 포함하는 주제를 오해했음. 지문은 'case feature'가 'person feature'와 함께 언급되며, defective probing 의 'impact'가 주제임을 분명히 함. → 처방: 문제에서 'impact'라는 단어를 주의 깊게 읽고, defective probing 이 어떤 특징(feature)에 영향을 주는지 전체적으로 파악하기.\n③ 진단: 선지 3은 'uninterpretable agreement features'에만 초점을 맞추어 defective probing 의 'impact'를 보지 못했음. 지문은 defective probing 이 agreement features 에 미치는 영향을 다룬다고 명시함. → 처방: 주제 선지에서 'impact'나 'resulting from' 같은 표현을 찾고, defective probing 이 어떤 'impact'를 주는지 전체 맥락에서 확인하기.\n④ 진단: 선지 4는 'agreement feature valuation'에만 집중하여 defective probing 의 'impact'를 좁게 해석했음. 지문은 defective probing 이 agreement features 에 미치는 'impact'를 다루며, 그 범위가 더 넓음을함. → 처방: 문제에서 'impact'라는 단어를 보고 defective probing 이 agreement features 에 어떤 영향을 주는지 전체적으로 읽어보기.\n⑤ 진단: 선지 5는 'properties of infinitival to'에만 초점을 맞추어 defective probing 의 'impact'를 보지 못했음. 지문은 defective probing 이 agreement features 에 미치는 영향을 주제로 삼고 있음. → 처방: 주제 선지에서 'impact'라는 단어를 찾고 defective probing 이 어떤 특징(feature)에 영향을 주는지 전체적으로 파악하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Infinitival to’s defective probing and its effects on agreement features**]"
+   }
+  },
   {
    "ts": "2026-08-11T02:29:30.184Z",
    "type": "심경변화",
@@ -335,25 +370,6 @@
     ],
     "answer": 1,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 지문에서 'From football weekends to fraternity parties, college students drink and often drink hard.'라고 하여 술자리가 폭음으로 이어졌다는 사실이 언급되었음에도, 이를 놓쳤음. → 처방: 지문 전체를 꼼꼼히 읽고, 술자리가 폭음으로 이어지는지 여부를 확인할 것.\n③ 진단: 지문에서 'kills and injures not just drinkers but those around them.'라고 하여 폭음 문화가 주변 사람들도 위험에 빠뜨린다고 설명되었음에도, 이를 오해했음. → 처방: 지문에서 'not just A but B' 구문을 주의 깊게 읽고, A 와 B 가 모두 포함되는지 확인할 것.\n④ 진단: 지문에서 'We must try to control its worst costs by educating students in how to manage its risks.'라고 하여 위험 관리를 교육해야 한다는 해결책이 제시되었음에도, 이를 반대로 오해했음. → 처방: 지문의 'must try to control'와 'educating students' 부분을 정확히 이해하고, 해결책의 방향을 확인할 것.\n⑤ 진단: 지문에서 'we must try to control its worst costs by educating students'라고 하여 교육이 필요하다고 주장되었음에도, 이를 필요 없다고 오해했음. → 처방: 지문의 주장 부분을 정확히 읽고, 'must'나 'should'와 같은 강제적 표현에 주의를 기울일 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-10T21:06:31.560Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "Alcohol has been ⓐ<u>a big part</u> of college life . . . ⓑ<u>drink hard</u>. shared context But a new kind of drinking ⓒ<u>known as</u> “binge” drinking is spreading . . . kills and injures not just drinkers but those around them. problem We may not be able to stop bingeing entirely, but we must try to ­control its worst costs by educating students in how ⓓ<u>to manage its risks</u>. solution/main point/claim Part 1: Establishing a Shared Context Most pieces of writing open with a shared context, ⓔ<u>as do</u> (1b): Alcohol has been a big part of college life for hundreds of years. From football weekends to fraternity parties, college students drink and often drink hard. shared context But a new kind of drinking known as “binge” . . . That shared context offers historical background, but it might have been a recent event, a common belief, or anything else that reminds readers of what they know, have experienced, or readily accept.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓔ: 'as do' → 'as does' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

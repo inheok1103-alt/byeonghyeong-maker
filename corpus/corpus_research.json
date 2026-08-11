@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-11T02:30:59.612Z",
+ "updated": "2026-08-11T04:44:29.825Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-11T04:44:05.114Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "형용사 수식어의 위치가 문법적으로 자연스러운지 확인하는 패턴이 빈번히 관찰된다. 특히 'a really good film'과 같이 관사-형용사-부사-명사 순서가 일반화되어 있다.",
+   "rule": "형용사 수식어(especially 'really', 'very' 등 부사)가 포함된 경우, 관사(a/an/the) 바로 뒤에 위치하도록 강제하는 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-11T02:30:33.573Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 빈번한 연어는 '형용사+명사' 구성이며, 특히 'particular person', 'advanced course material' 등에서 '-ed/-ing' 형용사의 오용이 두드러진다. 또한 'about/on/than' 등 전치사의 선택 오류가 자주 발생한다.",
    "rule": "원서 코퍼스에서 빈번한 '형용사+명사' 구성을 활용한 오류는, '-ed/-ing' 형용사의 경우 주어의 상태(present participle)나 완료된 상태(past participle)를 구분하여 출제하라. 예: 'dependent on' (상태) vs. 'depending on' (행위), 'advanced' (완료된 상태) vs. 'advancing' (진행 중).",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-07T21:58:17.680Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제/현재 시제 혼용, 복수형 오류, 관사 누락이 빈번한 패턴으로, 문장 구조의 일관성과 수 일치 오류가 주된 문제점이다. 특히 'compulsory to attend'와 같은 구문은 전치사 오류와 결합되어 나타나기도 한다.",
-   "rule": "'명사 + 단수/복수형 동사'의 수 일치와 'a/an/the + 단수명사'의 관사 사용 규칙을 반드시 확인하라. 특히 'compulsory to attend'와 같은 구문은 'compulsory for attendance'로 전치사 오류를 수정해야 한다.",
    "sample": [
     "old english",
     "university press",
