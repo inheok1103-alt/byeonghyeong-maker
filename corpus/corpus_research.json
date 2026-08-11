@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-11T12:06:00.943Z",
+ "updated": "2026-08-11T13:45:51.032Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-11T13:45:22.471Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "관사·대명사·시제 일치 오류가 반복적으로 나타나며, 특히 'two kind of studies'처럼 복수형 오류가 빈번하다. 또한, 문장 간 연결어(and, because of, : 등)가 생략되거나 잘못 사용되는 패턴이 많다.",
+   "rule": "'two kind of studies' → 'two kinds of studies'로 복수형을 반드시 검토하고, 문장 간 연결어(and, because of, : 등)가 생략된 경우 복원하여 문법적 오류를 교정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-11T12:05:32.313Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "시간 표현에서 'during'은 명사구와 결합할 때 'of life'와 같은 소유격 구문 대신 'in life'로 더 자연스럽게 연결된다. 또한, 과거 시제 동사는 문맥상 과거 시제와 조화를 이루어야 한다.",
    "rule": "시간 표현에서 'during' 다음에는 'normal conversation', 'routine activities'와 같은 명사구만 오며, 'of life'와 같은 소유격 구문은 'in life'로 대체하여 문법적 오류를 방지하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T08:05:06.931Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "명사+전치사+명사 구조에서 전치사 오류(예: 'of the reason' → 'reasons')와 복수형 오류('place' → 'space', 'cars' → 'these cars')가 빈번하게 발생함을 확인했다.",
-   "rule": "복합명사구(명사+of+명사)에서 전치사 'of'와 복수형 일치(예: 'one of the reasons')를 필수적으로 검토하고, 명사+to+동사 구조(예: 'space to park')에서 동사의 원형과 관사('a/an/the')를 반드시 확인하여 오답을 설계하라.",
    "sample": [
     "old english",
     "university press",
