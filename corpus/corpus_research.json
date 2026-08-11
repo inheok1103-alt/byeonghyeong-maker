@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-11T10:16:30.884Z",
+ "updated": "2026-08-11T11:10:05.462Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-11T11:09:40.195Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거분사 오용(be took → become)과 부정어 중복 오용(no bothering and no hassle → any bothering and hassle)이 빈번하며, 주어-동사 일치 오류(know → knows)도 패턴화되어 있다.",
+   "rule": "원서 코퍼스에서 빈도 높은 'old english', 'university press', 'noun phrase' 패턴을 활용하여, 'be + 과거분사' 구문 대신 능동태 전환(become + 형용사/명사)이나 'cannot + any + 명사'로 부정어 중복을 수정하는 변형 문제를 즉시 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-11T10:16:02.369Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'a/an'의 오용이 빈번하며, 특히 정보성 명사(uncountable noun) 앞에 관사가 생략되는 경향이 강하다. 또한 'own'의 소유격 사용이 'our'로 대체되어야 하는 경우가 많다.",
    "rule": "정보성 명사(예: information, advice, knowledge) 앞에는 관사를 생략하고, 소유격 'own'은 'our/your/their'로 대체하여 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T06:01:53.441Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "시제와 수 일치 오류가 빈번하며, 특히 'loose/loose'와 'advertisement/advertisements'의 철자 및 문법적 오류가 반복된다. 또한 조동사-동사 원형 결합의 오류('shall effect' → 'will affect')도 다수 확인된다.",
-   "rule": "조동사(will/shall/can/may 등)가 사용된 문장에서는 반드시 동사가 원형(동사원형)인지 확인하고, 수 일치 오류가 발생하지 않도록 주어가 단수/복수인지 확인하라.",
    "sample": [
     "old english",
     "university press",
