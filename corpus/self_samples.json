@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-12T15:17:59.133Z",
+ "updated": "2026-08-12T16:16:05.003Z",
  "samples": [
+  {
+   "ts": "2026-08-12T16:14:34.468Z",
+   "type": "혼합통합형",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
+    "passage": "Stations and airports; important buildings We do not use the with most stations and airports; with religious, educational and official buildings or with palaces and houses. to Waterloo (Station) at Orly (Airport) near St Mary's Church Merton College Norwich Museum Lambeth Palace Ashdown House Exceptions are names with of or with a noun (science) or adjective (open). at the University of York in the Palace of Westminster the Science Museum the Open University past the White House Theatres, cinemas, hotels, galleries and centres A possessive form ('s) is without the. St Martin's (Theatre) at Durrant's (Hotel) In the US, names with center are without the. near Lincoln Center But usually theatres, cinemas, etc have the. at the Globe (Theatre) the Plaza (Cinema) outside the Dorchester (Hotel) in the Tate (Gallery) the Brunei shopping centre",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-12T16:15:19.471Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "ARTICLES with SPECIFIC DESCRIPTORS: NAMING RULES",
+     "Exceptions in Article Usage for Buildings and Institutions",
+     "How Article Choice Reflects the Significance of Locations",
+     "General Rules for All Place Names with Descriptors",
+     "When 'the' Must Precede Theatres and Cinemas"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Place names with specific descriptors follow distinct article usage rules'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Place names with specific descriptors follow distinct article usage rules]\n[오답 진단·처방]\n① 진단: ‘specific descriptors’라는 표현이 지문에서 ‘descriptors’로만 언급된 것과 달리 ‘specific descriptors’로 과장하여 오해한 것. 지문은 ‘descriptors’(예: ‘of’, ‘science’, ‘open’)가 예외를 만드는 규칙을 설명하지만, ‘specific’이라는 한정어는 nowhere 나온다. → 처방: ‘descriptors’라는 단어가 지문에 나오는지 확인하고, 과장된 표현을 쓰지 않도록 주의하기.\n③ 진단: ‘article choice 가 location 의 중요성을 반영한다’는 주제는 지문에 전혀 없음. 지문은 오로지 ‘the’의 사용 여부 규칙만 다룸. → 처방: 지문의 핵심 주제가 ‘the’의 사용 규칙임을 떠올리고, 제목이 그 내용을 담고 있는지 먼저 확인하기.\n④ 진단: ‘general rules for all place names’라는 표현이 지문에 없음. 지문은 ‘stations’, ‘airports’, ‘buildings’, ‘theatres’ 등 특정 범주에만 적용되는 규칙을 설명함. → 처방: 지문에 ‘all’이라는 말이 있는지 확인하고, 범위가 제한된 규칙인지 먼저 파악하기.\n⑤ 진단: ‘theatres and cinemas’에 ‘the’를 반드시 써야 하는 경우가 아니라, 대부분 ‘the’를 쓰는 경우가 많다는 점에서 오해. 지문은 ‘theatres, cinemas 등은 보통 the 를 쓴다’라고 설명하지만, ‘when’이라는 조건이 없음. → 처방: 지문에 ‘usually’라는 단어가 있는지 확인하고, ‘보통’이라는 표현이 ‘when’이라는 조건과 혼동되지 않도록 주의하기."
+   }
+  },
   {
    "ts": "2026-08-12T15:16:21.417Z",
    "type": "밑줄함의",
@@ -295,58 +348,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'Rules express obligations and exemptions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문에서 '규제'나 '통제'라는 표현은 없으며, 오히려 '예외'나 '면제'가 언급된 부분(예: 'unless there is sign of improvement', 'Such a refusal must be submitted in writing')을 무시하고 '엄격히 통제'로 오해한 것으로 보임. → 처방: 규칙의 내용뿐 아니라 예외나 조건이 있는 부분도 꼼꼼히 읽고, '통제'나 '규제'라는 단어에만 집중하지 말고 전체 맥락을 파악할 것.\n② 진단: 지문에서 '예외'나 '면제'가 명시된 부분(예: 'Members who agree to a prolonged period of supervision will not need to undergo further training', 'If the member of the committee is deemed to be unsympathetic, members do not have to submit themselves')을 보지 못하고 '예외나 면제는 고려하지 않는다'로 오해한 것으로 보임. → 처방: 지문에 예외나 조건이 포함된 문장이 있는지 직접 찾아보고, 그런 부분이 있다면 '예외나 면제가 없다'는 선지를 배제할 것.\n③ 진단: 지문에서 '모든 구성원'이라는 표현 자체가 없으며, 오히려 '특정 조건'에서 예외가 인정되는 부분(예: 'unless', 'if')을 무시하고 '동일성'을 강조한 것으로 보임. → 처방: 지문에 '모든 구성원'이라는 말이 있는지 확인하고, 조건이나 예외가 있는 문장을 찾아서 '동일성'을 주장하는 선지를 배제할 것.\n⑤ 진단: 지문에서 '특정 조건'에서 예외가 인정되는 부분(예: 'unless there is sign of improvement', 'Such a refusal must be submitted in writing')을 무시하고 '무조건 준수'로 오해한 것으로 보임. → 처방: 지문에 'unless', 'if'와 같은 조건문이 있는지 확인하고, 그런 조건이 있다면 '무조건'이라는 선지를 배제할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Rules express obligations and exemptions.]"
-   }
-  },
-  {
-   "ts": "2026-08-12T00:02:55.824Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "Task two ** Below are the rules for a Karate Club. Show what meaning is expressed in each rule with the appropriate letter. A Permission, B Hypothetical permission, C Obligation, D Hypothetical obligation, E Exemption, F Prohibition This club is dedicated to the high performance of karate All members ⓐ<u>must regularly satisfy</u> the committee that they have maintained the standard they achieved at the previous supervision. Any member failing to do so ⓑ<u>will not be allowing to continue</u> without further training. Members who agree to a prolonged period of supervision ⓒ<u>will not need to undergo</u> further training, unless there is sign of improvement. Members ⓓ<u>may decide what they prefer to do</u>. The annual two supervisions must be completed within twelve months of the second supervision in the previous year. If the member of the committee is deemed to be unsympathetic, members do not have to submit themselves for supervision at that time. Such a refusal ⓔ<u>must be submitted</u> in writing one week before the supervision.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓑ: 'will not be allowing to continue' → 'will not be allowed to continue'\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T23:05:04.598Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.71,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name.\n\nIf A and B are identical, anything which is true of A is also true of B, and vice versa. Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. ( ① ) So A and B are identical means that A and B are one and the same thing. ( ② ) In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. ( ③ ) This assumption gives us an important rule of inference called the Principle of Substitutivity. ( ④ ) (2) Principle of Substitutivity ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘identical’의 의미가 ‘동일성’을 뜻한다는 설명이 이미 ②에서 나오므로, ①에 넣으면 중복되어 흐름이 끊어진다. 학생은 ‘identical’의 의미를 설명하는 부분이 필요하다고 혼동했을 수 있다. → 처방: ‘identical’의 의미를 설명하는 문장은 ②에 이미 있으니, 그 앞부분에서 흐름을 이어가도록 주의한다.\n② 진단: ②는 ‘identical’이 ‘동일성’을 뜻한다는 정의 자체이므로, 주어진 문장은 정의에 대한 예시가 아니라 ‘동일성의 의미’를 설명하는 문장이다. 학생은 예시와 정의를 혼동했을 수 있다. → 처방: ‘동일성’의 의미를 설명하는 문장은 정의가 아닌 예시임을 알고, 주어진 문장이 ‘예시’를 제공하는지 확인한다.\n④ 진단: ④는 ‘Principle of Substitutivity’의 규칙을 소개하는 부분이므로, 주어진 문장은 그 규칙의 전제가 되는 설명에 가깝다. 학생은 규칙의 소개와 전제를 혼동했을 수 있다. → 처방: ‘원리’가 소개되기 전에 그 원리의 전제가 되는 설명이 나와야 하므로, 주어진 문장은 ③의 예시 다음에 오는 것이 자연스럽다.\n⑤ 진단: ⑤는 ‘Principle of Substitutivity’의 이름과 규칙이 이미 소개된 상태이므로, 주어진 문장은 그 규칙의 전제가 되는 설명에 해당한다. 학생은 규칙의 이름과 설명의 위치를 혼동했을 수 있다. → 처방: ‘원리’의 이름이 나오기 전에 그 원리의 전제가 되는 설명이 나와야 하므로, 주어진 문장은 ③의 예시 다음에 오는 것이 맞다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]

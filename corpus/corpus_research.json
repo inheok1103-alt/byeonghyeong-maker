@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T15:17:59.129Z",
+ "updated": "2026-08-12T16:16:04.999Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T16:15:31.660Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거 시제 동사와 'except that' 구문이 연이어 사용되는 경우, 콤마와 접속사 'and'를 추가하여 문법적 흐름을 명확히 해야 한다. 또한 부정어 'not'과 'anything'의 조합은 'nothing'으로 자연스럽게 대체되어야 하며, 전치사 선택(around → at our disposal)이 문맥에 맞게 수정되어야 한다.",
+   "rule": "원서 코퍼스에서 빈번한 'past tense + except that' 구조는 콤마(,)와 접속사 'and'를 반드시 삽입하여 문장 흐름을 자연스럽게 연결하도록 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T15:17:33.456Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "명사구(noun phrase)의 오류는 관사 누락이나 형태 변형(예: 'olde'→'older')에서 빈번하며, 연어(collocation) 오류는 'take a choose'→'making a choice'와 같이 동사-명사 결합이 잘못된 경우 많다.",
    "rule": "CEFR B1 수준 이하의 문장에서는 관사(a/the) 누락, 동사-명사 연어 오류(예: 'take a choose'→'make a choice'), 또는 형용사 형태 오류(예: 'olde'→'older')를 포함하도록 출제하라. 단, 'between two'와 같은 고정된 연어는 오류 유발 소재로 삼지 않는다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T04:44:18.379Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'travel'은 전치사 'to'가 필수적으로 동반되며, 'teach'는 3인칭 단수 현재형에서 '-es'가 붙고, 'concern'은 'be concerned about'로 수동태가 자연스럽다. 한국어 학습자에게는 전치사/시제/수동태 오류가 빈번하게 발생한다.",
-   "rule": "'travel' 뒤에는 반드시 'to'를 붙이도록 강제하며, 'teach'는 3인칭 단수 현재형에서 '-es'로 변형하고, 'concern'은 'be concerned about' 형태로 수동태로 사용하도록 출제 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",
