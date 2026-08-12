@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-12T19:37:13.670Z",
+ "updated": "2026-08-12T22:05:36.254Z",
  "samples": [
+  {
+   "ts": "2026-08-12T22:04:54.427Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "difference in action sequences between remembered buying and remembered to buy",
+     "confusion between remembering and the need to perform an action",
+     "timing of recalling and buying actions",
+     "universal rules for all verb pairs with remember",
+     "consistent overlap in action timing for all verb structures"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The distinction between the two sentences lies in the sequence of actions: \"remembered buying\" indicates the action was completed before recalling, while \"remembered to buy\" implies recalling occurred before the action.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: remembered 의 목적어 역할(buy vs buying)을 혼동하여, '기억'과 '행동의 필요'가 섞인 혼란으로 오독했다. 지문에서 'remembered to buy'는 '행동을 해야 한다는 기억'을, 'remembered buying'은 '과거 행동의 기억'을 뜻함을 확인하지 못했다. → 처방: 목적어 동사 형태(-ing vs to 부정사)에 따라 의미가 달라지는지 확인하고, 예문을 직접 만들어 비교해 보세요.\n③ 진단: 두 동작(remembering 과 buying)의 '시점'만 중시하여, '기억'과 '행동'의 순서 관계를 오해했다. 지문에서 두 문장의 타임라인이 다른 순서를 보여주지만, 이를 '시기'로만 해석하여 action sequences 의 차이를 놓쳤다. → 처방: 두 문장을 타임라인에 표시하고, 동작의 순서를 화살표로 그려보세요. 어떤 일이 먼저 일어났는지 명확히 구분하세요.\n④ 진단: 모든 동사 짝에 적용되는 '보편 규칙'을 찾으려 했다. 지문은 remember + 동사 구조에만 초점을 맞추지만, 학생은 이를 일반화하여 오독했다. → 처방: 해당 구조가 적용되는 동사(예: forget, try 등)를 추가로 찾아보고, 각 경우의 의미를 비교해 보세요.\n⑤ 진단: 모든 동사 구조에서 '동작의 중복'을 가정했다. 지문에서 두 문장은 동작의 '겹침 여부'가 아니라 '순서'가 다르다는 점을 놓쳤다. → 처방: '겹침'과 '순서'를 구분하여 예문을 다시 쓰고, 두 문장의 차이를 설명해 보세요.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The distinction between the two sentences lies in the sequence of actions: \"remembered buying\" indicates the action was completed before recalling, while \"remembered to buy\" implies recalling occurred before the action.]"
+   }
+  },
+  {
+   "ts": "2026-08-12T22:05:08.494Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 22 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'remembered', 'purchased', 'purchase' / 20~24단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] You remembered buying the milk after you had already purchased it, while you remembered to buy the milk before the planned purchase.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 20~24단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-12T19:28:32.741Z",
    "type": "무관문장",
@@ -296,44 +349,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'to understand key vocabulary terms like \"antithesis\" and \"apartheid\" through their definitions and examples.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 지문에서 '발음과 철자'만 정확히 배우려는 내용은 전혀 없으며, 오로지 '정의와 예시'를 통해 의미를 이해하도록 안내하고 있음. 학생은 '발음과 철자'라는 단어에만 집중하여 지문의 진짜 목적을 놓침. → 처방: 지문의 첫 문장과 단어 설명(정의·예시·관련 단어·비유)을 주의 깊게 읽고, 그 안에 담긴 의미를 찾는 연습을 하세요.\n③ 진단: 지문은 '정의와 예시'를 통해 단어를 이해하도록 안내하지만, '정의가 의미를 결정짓도록' 한다는 내용은 없음. 학생은 '정의'라는 단어에만 주목하여 오해한 듯함. → 처방: 단어의 정의와 예시를 함께 보고, 그 단어가 실제로 어떤 상황에서 쓰이는지 확인하는 습관을 들리세요.\n④ 진단: 지문은 '복잡한 어휘'를 '비슷한 방법'으로 암기하지 않도록 안내하고 있으며, 오히려 각 단어의 특징(예: 'apartheid'는 'apart'와 관련 있음)을 설명하고 있음. 학생은 '암기'라는 단어에만 반응한 듯함. → 처방: 단어마다 특징(발음·관련 단어·예시)을 따로따로 정리하고, 그 특징을 기억하는 방식으로 공부하세요.\n⑤ 진단: 지문은 '예시'를 먼저 보고 의미를 추론하지 말고, '정의'를 먼저 이해한 뒤 예시를 확인하도록 안내하고 있음. 학생은 '예시'라는 단어에만 주목하여 지문의 흐름을 놓침. → 처방: 단어의 정의를 먼저 읽고, 그 뒤에 나오는 예시가 그 정의를 실제로 어떻게 나타내는지 확인하는 순서를 지키세요.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to understand key vocabulary terms like \"antithesis\" and \"apartheid\" through their definitions and examples.]"
-   }
-  },
-  {
-   "ts": "2026-08-12T06:47:02.604Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "I don’t like. Note carefully the pronunciation of this word. ANTITHESIS (an TITH uh sis) n the direct o_______ • Erin is the antithesis of Aaron: Erin is bright and beautiful; Aaron is dull and plain. Note carefully the pronunciation of this word. APARTHEID (uh PAHRT hyte) n the former policy of racial segregation and oppression in the Republic of South Africa The word apartheid is related to the word apart. Under apartheid in South Africa, blacks were kept apart from whites and denied all rights. The word apartheid is sometimes applied to less radical forms of racial injustice and to other kinds of separation. Critics have sometimes accused American public schools of practicing educational apartheid by providing substandard schooling for nonwhites. Quick Quiz #8 Match each word in the first column with its definition in the second column. Check your answers here. 1. anarchy a. resentment 2. monarchy b. racial oppression 3. anecdote c. firm dislike 4. anguish d. irregularity 5. animosity e. what went before 6. anomaly f. agonizing pain",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] opposite — 문단의 논지상 이 자리에는 'opposite'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-12T05:05:19.216Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 17 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Possessive', 'adjectives', 'pronouns' / 15~19단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Possessive pronouns function either as adjectives or as true pronouns, and the two forms cannot be swapped.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

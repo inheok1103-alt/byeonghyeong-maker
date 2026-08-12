@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T19:37:13.666Z",
+ "updated": "2026-08-12T22:05:36.249Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T22:05:10.871Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사구(noun phrase) 내 불필요한 관사·형용사·전치사 제거가 CEFR B1-B2 수준에서 가장 빈번한 오류 패턴임을 확인. 특히 'society and the nature' → 'society and nature'와 같이 관사가 중복되거나 불필요한 경우 수정해야 함.",
+   "rule": "'명사구(noun phrase) 내 동일 범주(예: 환경/사회 관련 명사)의 경우, 첫 번째 명사 외 관사·형용사·전치사를 모두 생략하거나 일관되게 적용하라. 예: 'the automobile society and the nature' → 'automobile society and nature'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T19:35:14.610Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "영어 문법에서 대문자 사용 규칙(고유명사, 문장 첫 단어, 인칭 대명사 'I')과 관사 생략 규칙(추상명사, 일반적 의미의 명사) 등이 난이도 조정에 영향을 미친다.",
    "rule": "CEFR B1 수준 이하의 문항에서 대문자 오류(예: 'i' → 'I')와 관사 오류(예: 'a holistic understanding' → 'holistic understanding')를 각각 1개씩 반드시 포함하여 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T10:02:21.537Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거 시제 동사의 단수/복수 일치 오류와 소유격·전치사의 잘못된 사용이 빈번하며, 특히 'use'와 'people'의 결합 패턴에서 전치사 생략·오용이 두드러진다.",
-   "rule": "CEFR B1-B2 수준 내신 문항에서, 'use' + [명사] + [전치사] + [명사] 구조(예: use money from people, use ideas for success)에서 전치사를 생략하거나 잘못 사용한 오류를 1개 이상 포함하여 문법 오류 수정을 요구하는 문장을 반드시 1개 이상 포함시킨다.",
    "sample": [
     "old english",
     "university press",
