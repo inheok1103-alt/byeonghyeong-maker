@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T12:02:32.047Z",
+ "updated": "2026-08-12T13:52:49.750Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T13:52:21.086Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구 내 동일 범주의 항목 나열 시 쉼표와 접속사(and/or) 병용이 원칙이며, 접속사 앞 쉼표(Oxford comma) 생략은 오류로 간주된다. 또한, 동사 뒤 목적어는 명사구로 통일해야 하며, 동사 생략이나 불완전 구문은 오류로 처리된다.",
+   "rule": "명사나 동사 구문에서 항목을 나열할 때, 접속사 'and' 또는 'or' 앞에 반드시 쉼표를 넣고, 동일 범주의 명사구는 통일된 형식(예: 복수형, 관사 사용)으로 통일하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T12:02:03.483Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원문에서 'create' 동사 사용 시 직접목적어 없이 문법적 오류가 빈번하며, 'control' 동사도 수동태가 필요한 경우가 많다. 또한 'open the door for' 구문은 중복 표현으로 오류가 발생한다.",
    "rule": "'동사 + 목적어' 구조에서 목적어가 생략된 경우나, 수동태가 필요한 동사(예: control, create 등)를 능동태로 사용한 문장은 오류로 간주하고, 목적어 추가 또는 수동태 전환을 요구하는 문제를 출제한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T23:50:13.867Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거 시제와 명사구가 혼용되면서 발생하는 오류가 빈번하며, 특히 'caused by'와 같은 전치사구 구조가 잘못 사용되는 패턴이 많다.",
-   "rule": "과거 시제 동사(예: caused, left, based)와 전치사 'by'가 포함된 수동태 구문에서는, 오류를 방지하기 위해 'by + 명사구'가 올바르게 연결되는지 확인하라. 특히 'by + 복수명사 + ing' 형태(예: caused by cars releasing carbon dioxide)로의 변형을 연습하게 하라.",
    "sample": [
     "old english",
     "university press",
