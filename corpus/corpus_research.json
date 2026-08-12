@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T22:05:36.249Z",
+ "updated": "2026-08-12T23:06:38.874Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T23:06:13.896Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'furious'와 같은 감정형용사는 보통 비교대상이 되는 명사(예: 'world')와 직접 호응하지 않으며, 'serious'와 같은 속성형용사가 더 자연스럽게 쓰인다. 또한, 'fact'는 복수형 'facts'로 일반화하는 것이 문법적으로 옳고, 'want' 뒤에는 동사원형이 아닌 'to + 동사원형'이 와야 한다.",
+   "rule": "'감정형용사(예: furious, angry)'는 비교대상이 되는 명사와 직접 호응하지 않으므로, 'serious', 'important' 등 속성형용사로 대체하거나 비교구조를 명확히 한다. 또한, 'want' 뒤에는 동사원형이 아닌 'to + 동사원형'을 사용하며, 'fact'는 복수형 'facts'로 일반화한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T22:05:10.871Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 'noun phrase + present tense/be + past participle' 패턴(예: 'lectures which are completely based on facts')에서 'be + 과거분사'가 명사구를 수식하는 구조를 확인할 수 있다. 한국어 학습자에게는 'which/that are + 과거분사' 구문이 주어-동사-목적어 순서로 자연스럽게 느껴질 수 있음을 유의해야 한다.",
    "rule": "원서 코퍼스의 'be + 과거분사' 수식 구조(예: 'lectures which are completely based on facts')를 활용하여, 한국어 학습자에게는 '~하는 것(명사구) + ~이다(be동사) + 과거분사' 형태의 문장을 주어-동사-목적어 순서로 변형하여 출제하라. (예: '강의는 완전히 사실에 기반을 두고 있다' → '강의는 완전히 사실에 기반을 둔 것이다')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T10:55:30.364Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어 문법에서 대문자 사용 규칙(고유명사, 문장 첫 단어, 인칭 대명사 'I')과 관사 생략 규칙(추상명사, 일반적 의미의 명사) 등이 난이도 조정에 영향을 미친다.",
-   "rule": "CEFR B1 수준 이하의 문항에서 대문자 오류(예: 'i' → 'I')와 관사 오류(예: 'a holistic understanding' → 'holistic understanding')를 각각 1개씩 반드시 포함하여 출제하라.",
    "sample": [
     "old english",
     "university press",
