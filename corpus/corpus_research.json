@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T17:20:54.494Z",
+ "updated": "2026-08-12T18:11:28.003Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T18:10:49.345Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 최빈 연어와 문법오류쌍을 분석한 결과, '단수/복수 명사의 혼용 오류'와 '불필요한 관사/대명사 사용 오류'가 빈번히 발생함을 확인했다.",
+   "rule": "CEFR B1 수준 내신 변형문제에서는 '단수 가산명사의 경우 무관사 단수형(예: a car) 또는 복수형(예: cars)으로만 사용하도록 제한하며, 관사·대명사의 중복 사용(예: the medias → media)을 배제하는 규칙을 적용하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T17:20:22.628Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'than other'는 'than the other'보다 훨씬 높은 빈도로 사용되며, 특히 비교 대상이 복수일 때 'the'가 생략되는 경향이 강하다. 또한, 'how to do'는 'how to do better'와 같이 목적·방법의 의미를 담을 때 'is'가 불필요하고, 'be took full use of'는 능동태 전환 오류가 빈번하게 발생한다.",
    "rule": "비교 구문에서 'than other'와 'than the other'의 빈도 차이를 반영하여, 'than other'가 정답인 문항을 우선적으로 출제하고, 'be took'와 같은 능동태 전환 오류는 'become'이나 'be used'로 수정하도록 유도하는 문제를 설계한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T07:19:59.144Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 코퍼스에서는 '형용사 + 명사' 구문에서 강도·비교를 나타내는 형용사가 중복 사용되거나, 'than'을 생략하는 오류가 빈번했다. 또한 'that' 절의 불필요한 중복 사용과 시제 일치 오류가 두드러졌다.",
-   "rule": "'형용사 + 명사' 구문에서 강도·비교를 나타낼 때는 'more/less + 형용사'를 사용하고, 'than'을 반드시 포함하여 비교 대상을 명시하라. 또한 'that' 절은 불필요한 중복을 피하고, 시제 일치를 반드시 확인하라.",
    "sample": [
     "old english",
     "university press",
