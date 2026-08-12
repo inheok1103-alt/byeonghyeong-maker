@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T10:35:09.891Z",
+ "updated": "2026-08-12T12:02:32.047Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T12:02:03.483Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'old/new' + 'English'가 'university press', 'grammar', 'language'와 결합하는 빈도가 높아 'old/new' + 'English'가 연어 패턴으로 정착되어 있음을 확인했다. 또한 'heart disease'가 'heart decease'로 오용되는 오류는 'disease'의 철자 오류가 아니라 'disease'와 'decease'의 혼동에서 비롯된다는 점을 발견했다.",
+   "rule": "'old/new' + 'English'가 포함된 문장에서 'English'를 'grammar', 'language', 'university press' 중 하나로 대체하는 오답지를 설계할 때는 반드시 'old/new' + 해당 명사(예: 'old grammar')의 연어 가능성을 검토하여 오답의 자연스러움을 보장하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T10:34:38.374Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "과거 시제와 명사구가 혼용되면서 발생하는 오류가 빈번하며, 특히 'caused by'와 같은 전치사구 구조가 잘못 사용되는 패턴이 많다.",
    "rule": "과거 시제 동사(예: caused, left, based)와 전치사 'by'가 포함된 수동태 구문에서는, 오류를 방지하기 위해 'by + 명사구'가 올바르게 연결되는지 확인하라. 특히 'by + 복수명사 + ing' 형태(예: caused by cars releasing carbon dioxide)로의 변형을 연습하게 하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T22:50:00.358Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "형용사-의존성 오류(dependent/particular) 및 관사 누락(a particular person)과 수일치 오류(generation are → generation is)가 빈번하며, 문장 내 논리적 연결(thus → and therefore)도 수정 대상이 된다.",
-   "rule": "CEFR B1 수준 이하의 과제에서, '형용사 + 명사' 구조(예: dependent on a particular person) 및 '단수 주어 + 단수 동사'(예: The younger generation is) 규칙을 반드시 포함하여 문장 완성형을 출제하라.",
    "sample": [
     "old english",
     "university press",
