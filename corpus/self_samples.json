@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-12T00:03:25.822Z",
+ "updated": "2026-08-12T02:49:04.013Z",
  "samples": [
+  {
+   "ts": "2026-08-12T02:46:41.425Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 1/1가 2번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Ask the groups to discuss each exercise first among themselves and then orally under your supervision. Evaluate your students’ competence through the use of the lesson and unit evaluation in which they have to perform individually (independent practice) In discussion, as in other methods, your role as teacher is to prepare, execute and follow up. Before the discussion begins you, the teacher must make sure that every one is properly prepared. During the class’s first experiences with real discussion you will have to act as moderator. All times you will need to act as supervisor and observer. In roles, please make sure that the problem to be discussed is properly defined. Characteristics of a good discussion: 1. A discussion is a purposeful conversation proceeding toward some goal, 2. The topic presented must be discussible, 3. Though it is informal , it is always serious , 4. The teacher is merely a moderator , who supervises rather than directs the conversation, 5. All members of the group have a chance to express an opinion.\n\n─────────\n[요약문] Teachers should (A) facilitate and (B) evaluate student-led discussions to ensure both engagement and measurable outcomes.",
+    "choices": [
+     "(A) scaffold … (B) assess",
+     "(A) guide … (B) test",
+     "(A) encourage … (B) observe",
+     "(A) mediate … (B) grade",
+     "(A) oversee … (B) monitor"
+    ],
+    "answer": 1,
+    "explanation": "(A) scaffold / (B) assess 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 선지 (A)에서 'guide'는 교사가 토론을 이끄는 역할을 강조하지만, 지문은 교사가 'moderator'나 'supervisor'로써 방향을 제시하기보다는 토론의 흐름을 돕고 평가하는 역할을 더 강조한다. (B) 'test'는 개별 수행 평가와는 관련이 있지만, 지문은 'evaluate'라는 단어를 사용하여 더 넓은 의미의 평가를 언급한다. → 처방: 교사가 토론에서 단순히 '가이드' 역할을 넘어서 '도구 제공'(scaffold)과 '평가'(assess)의 역할을 한다는 점을 기억하자.\n③ 진단: 선지 (A)에서 'encourage'는 학생들의 참여를 북돋우는 의미를 담고 있지만, 지문은 교사가 토론을 '준비'(prepare), '실행'(execute), '추적'(follow up)하는 더 적극적인 역할을 요구한다. (B) 'observe'는 관찰에 그치지만, 지문은 'evaluate'를 통해 학생의 역량을 구체적으로 판단해야 한다. → 처방: 교사의 역할이 '격려'보다 '도구 제공'과 '평가'라는 점을 명확히 구분해서 이해하자.\n④ 진단: 선지 (A)에서 'mediate'는 중재자로서의 역할을 강조하지만, 지문은 교사가 토론을 '준비'하고 '감독'(supervise)하는 더 넓은 역할을 요구한다. (B) 'grade'는 성적 평가를 의미하지만, 지문은 'evaluate'를 통해 학생의 역량을 종합적으로 판단해야 한다. → 처방: 교사의 역할이 '중재'에 그치지 않고 '도구 제공'과 '평가'라는 점을 명확히 하자.\n⑤ 진단: 선지 (A)에서 'oversee'는 감독하는 의미를 담고 있지만, 지문은 교사가 학생들에게 '도구'(scaffold)를 제공하고 '평가'(assess)하는 역할을 더 강조한다. (B) 'monitor'는 관찰에 초점을 맞추지만, 지문은 'evaluate'를 통해 학생의 역량을 구체적으로 판단해야 한다. → 처방: 교사의 역할이 '감독'에 그치지 않고 '도구 제공'과 '평가'라는 점을 명확히 구분해서 이해하자.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-12T00:02:21.739Z",
    "type": "요지",
@@ -296,25 +329,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Temporal reasoning in English verb phrases'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘tense(시제)’와 ‘verb phrase(동사구)’를 혼동하여 ‘tense’가 아닌 ‘verb phrase’ 전체의 시간적 추론을 다룬다는 글의 주제를 ‘tense’에 한정된 추론으로 오해한 것 같다. 지문에서 ‘verb phrases’의 시간적 관계를 분석하는 것이 주제임을 확인할 수 있다. → 처방: ‘tense’와 ‘verb phrase’를 구분하고, 지문에서 다루는 대상이 ‘verb phrase’의 시간적 추론임을 명확히 파악하자. ‘tense’가 아닌 ‘verb phrase’의 시간적 관계를 분석한다는 점에 주목하라.\n③ 진단: ‘financial consequences(재정적 결과)’라는 단어에만 집중하여 지문의 핵심 주제가 재정 문제라고 오인한 것 같다. 그러나 지문은 시간적 추론(Reichenbachian diagrams)을 중심으로 동사구와 시제의 관계를 분석하고 있다. → 처방: 지문의 핵심 주제가 ‘시간적 추론’이라는 점을 먼저 확인하고, 재정적 결과는 부차적인 예시일 뿐임을 인식하라. 주제를 찾기 위해 핵심 단어(‘temporal reasoning’)를 먼저 찾아라.\n④ 진단: ‘various natural languages(여러 자연어)’라는 단어를 보고 지문이 특정 언어가 아닌 여러 언어를 다룬다고 오해한 것 같다. 그러나 지문은 오로지 ‘English(영어)’의 동사구와 시제에 대한 시간적 추론만 다룬다. → 처방: 지문에서 ‘English’라는 단어가 반복적으로 등장하는지 확인하고, 주제가 특정 언어(영어)에 국한된다는 점을 분명히 하라. ‘various natural languages’는 오답의 함정임을 기억하라.\n⑤ 진단: ‘past English verb phrases(과거 영어 동사구)’라는 단어에만 집중하여 지문이 과거 시제에만 국한된다고 오해한 것 같다. 그러나 지문은 ‘present perfect’, ‘future’, ‘past’ 등 다양한 시제를 포함하는 시간적 추론을 다룬다. → 처방: 지문에서 ‘present perfect’, ‘future’, ‘past’ 등 다양한 시제가 언급되는지 확인하고, 주제가 과거 시제로 한정되지 않는다는 점을 파악하라. ‘limited to past’라는 단어가 오답임을 기억하라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Temporal reasoning in English verb phrases]"
-   }
-  },
-  {
-   "ts": "2026-08-11T18:10:53.538Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 존은 돌아가기 전에 전선으로 떠났다.\n주어진 단어: ( John / the / left / he / front / return / would / for / before )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] John left for the front before he would return.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

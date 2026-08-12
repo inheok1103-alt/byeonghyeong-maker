@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T00:03:25.818Z",
+ "updated": "2026-08-12T02:49:04.010Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T02:48:36.403Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거시제와 3인칭 단수 동사 형태의 불일치가 빈번하며, 소유격이나 복수형 오류가 자주 발생한다. 또한 전치사 구나 접속사의 오용이 문법적 오류로 이어진다.",
+   "rule": "CEFR B1 수준에서 3인칭 단수 동사(예: needs → need), 소유격(-s) 및 복수형(-s) 오류, 그리고 전치사(예: 'of him' 추가)나 접속사(예: 'that' 추가) 누락을 반드시 검토하여 문법 오류를 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T00:02:57.535Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'responsibility'와 같은 추상명사는 복수형(-ies)으로 변환될 가능성이 높으며, 'major'는 복수명사와 호응하는 한정사로 자주 사용된다. 또한 'on the other hand'는 비교 구조에서 대조적 의미를 강조하는 패턴으로 자주 등장한다.",
    "rule": "'no + major + [복수명사] other than ~' 구조에서 '[복수명사]'는 '-ies'로 변환 가능하며, 'major'는 복수명사와 호응하도록 수정하라. 예: 'no major responsibility' → 'no major responsibilities'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T17:51:44.804Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'between two' 패턴의 오류가 'three to four years'로 일반화되는 것처럼, 수량·시간 표현에서 하이픈(-) 오용이 빈번하다. 또한, 'in many books, news'에서처럼 복수형·명사구 불일치가 문법 오류로 이어진다.",
-   "rule": "수량·시간 표현(예: 'three-four years')은 반드시 'from A to B' 또는 'A to B' 형태로만 작성해야 하며, 하이픈(-)을 사용하지 않는다.",
    "sample": [
     "old english",
     "university press",
