@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-12T13:52:49.754Z",
+ "updated": "2026-08-12T15:17:59.133Z",
  "samples": [
+  {
+   "ts": "2026-08-12T15:16:21.417Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": -0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "<u>SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (diatribe</u>, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (schism, utopia). 3.Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. 4.Anyone so (ilk, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (prestigious, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.",
+    "choices": [
+     "The senator spent hours discussing the details of military budget allocations.",
+     "The senator delivered an angry and prolonged verbal attack criticizing excessive spending in defense funding.",
+     "The senator delivered a calm and detailed explanation of waste in the military budget.",
+     "The senator's speech led to increased scrutiny of government waste in defense funding.",
+     "The senator rarely criticized excessive spending in the military budget."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'The senator delivered an angry and prolonged verbal attack criticizing excessive spending in defense funding.'을 함의한다.\n[오답 진단·처방]\n① 진단: 학생은 'diatribe'가 '길고 자세한 설명'을 뜻한다고 오해한 것 같다. 'diatribe'는 '격렬한 비난'을 뜻하는데, 학생은 'discussing the details'라는 표현에 이끌려 이 뜻을 혼동한 듯하다. → 처방: 'diatribe'의 뜻을 정확히 기억하고, 문맥에서 'angry and prolonged verbal attack'가 맞는지를 먼저 확인해라.\n③ 진단: 학생은 'ostentatious'가 '겉치레가 심한'을 뜻한다는 점을 무시하고, 'nominal'의 '명목상의'라는 뜻을 떠올린 것 같다. 'nominal'은 '형식적인'을 뜻하므로 문맥에 맞지 않다. → 처방: 단어의 뜻을 정확히 알고, 문장에서 '겉치레가 심한'이라는 말이 어울리는지 먼저 생각해라.\n④ 진단: 학생은 'timorous'가 '겁이 많은'을 뜻한다는 점을 무시하고, 'ilk'의 '유사한 종류'라는 뜻을 떠올린 것 같다. 'ilk'는 문맥에 맞지 않는다. → 처방: 단어의 뜻을 정확히 알고, 문장에서 '겁이 많은'이라는 말이 어울리는지 먼저 생각해라.\n⑤ 진단: 학생은 'prestigious'가 '화려한'을 뜻한다고 오해한 것 같다. 'prestigious'는 '명망 있는'을 뜻하는데, 학생은 'flamboyant'의 '화려한'이라는 뜻을 떠올린 듯하다. → 처방: 'prestigious'의 뜻을 정확히 기억하고, 문맥에서 '명망 있는 직책'이 어울리는지 먼저 확인해라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-12T15:16:50.829Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.33,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (diatribe, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (schism, utopia). 3.Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. 4.Anyone so (ilk, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (prestigious, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.\n\n─────────\n[요약문] The exercise demonstrates how (A) word choice in context shapes (B) communication outcomes by testing nuanced vocabulary comprehension.",
+    "choices": [
+     "(A) semantic precision … (B) effective expression",
+     "(A) syntactic structure … (B) semantic precision",
+     "(A) etymological origin … (B) effective expression",
+     "(A) word frequency … (B) communication outcomes",
+     "(A) contextual fit … (B) literal interpretation"
+    ],
+    "answer": 1,
+    "explanation": "(A) semantic precision / (B) effective expression 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 'syntactic structure'는 문장 구조를 뜻하는데, 이 문제는 단어의 '의미 정밀도'와 '표현 효과'를 다룬다. 학생은 '문장 구조'와 '의미'를 헷갈렸다. → 처방: 문제에서 '의미'가 중심인지 확인하고, '의미 정밀도'와 '표현 효과'가 연결되는지 먼저 생각하자.\n③ 진단: 'etymological origin'은 단어의 어원을 뜻하는데, 이 문제는 단어의 '의미'와 '표현'을 다룬다. 학생은 '어원'과 '의미'를 혼동했다. → 처방: 문제에서 '의미'가 중요하다는 점을 먼저 떠올리고, '어원'보다는 '의미 정밀도'가 더 관련이 있는지 확인하자.\n④ 진단: 'word frequency'는 단어의 빈도를 뜻하는데, 이 문제는 단어의 '의미'와 '표현 효과'를 다룬다. 학생은 '빈도'와 '의미'를 잘못 연결했다. → 처방: 문제에서 '의미'와 '표현'이 핵심인지 확인하고, '단어 빈도'보다는 '의미 정밀도'가 더 관련이 있는지 먼저 생각해보자.\n⑤ 진단: 'contextual fit'는 문맥에 맞는지를 뜻하는데, 이 문제는 단어의 '의미'와 '표현 효과'를 다룬다. 학생은 '문맥'과 '의미'를 혼동했다. → 처방: 문제에서 '의미'가 중요하다는 점을 먼저 떠올리고, '문맥에 맞음'보다는 '의미 정밀도'가 더 관련이 있는지 확인하자.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-12T12:01:53.131Z",
    "type": "요지",
@@ -279,59 +347,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘identical’의 의미가 ‘동일성’을 뜻한다는 설명이 이미 ②에서 나오므로, ①에 넣으면 중복되어 흐름이 끊어진다. 학생은 ‘identical’의 의미를 설명하는 부분이 필요하다고 혼동했을 수 있다. → 처방: ‘identical’의 의미를 설명하는 문장은 ②에 이미 있으니, 그 앞부분에서 흐름을 이어가도록 주의한다.\n② 진단: ②는 ‘identical’이 ‘동일성’을 뜻한다는 정의 자체이므로, 주어진 문장은 정의에 대한 예시가 아니라 ‘동일성의 의미’를 설명하는 문장이다. 학생은 예시와 정의를 혼동했을 수 있다. → 처방: ‘동일성’의 의미를 설명하는 문장은 정의가 아닌 예시임을 알고, 주어진 문장이 ‘예시’를 제공하는지 확인한다.\n④ 진단: ④는 ‘Principle of Substitutivity’의 규칙을 소개하는 부분이므로, 주어진 문장은 그 규칙의 전제가 되는 설명에 가깝다. 학생은 규칙의 소개와 전제를 혼동했을 수 있다. → 처방: ‘원리’가 소개되기 전에 그 원리의 전제가 되는 설명이 나와야 하므로, 주어진 문장은 ③의 예시 다음에 오는 것이 자연스럽다.\n⑤ 진단: ⑤는 ‘Principle of Substitutivity’의 이름과 규칙이 이미 소개된 상태이므로, 주어진 문장은 그 규칙의 전제가 되는 설명에 해당한다. 학생은 규칙의 이름과 설명의 위치를 혼동했을 수 있다. → 처방: ‘원리’의 이름이 나오기 전에 그 원리의 전제가 되는 설명이 나와야 하므로, 주어진 문장은 ③의 예시 다음에 오는 것이 맞다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T23:05:25.772Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "If A and B are identical, anything which is true of A is also true of B, and vice versa.\n\n(A) This assumption gives us an important rule of inference called the Principle of Substitutivity. (2) Principle of Substitutivity\n\n(B) Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. So A and B are identical means that A and B are one and the same thing.\n\n(C) In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 3,
-    "explanation": "원문 전개 순서는 (B) - (C) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘(A)가 첫 문장에 나오는데도 (2)라는 번호가 붙은 부분을 먼저 언급한 점에서, 학생은 ‘원리 이름’보다 ‘원리 설명’이 먼저 나와야 한다는 선입견에 갇혔다. (A)는 결론이나 정의가 아니라 ‘원리 이름’을 단순히 소개하는 부분이라 순서가 맞지 않는다. → 처방: ‘원리 이름’(A)은 ‘원리 설명’(C)이 나온 뒤에야 자연스럽게 등장한다는 점을 기억하고, 설명이 먼저 오는 순서를 찾도록 연습한다.\n② 진단: ‘(B)가 ‘동일’의 의미를 설명하는 부분인데도 (A)보다 먼저 두지 않은 점에서, 학생은 ‘정의’가 ‘원리’보다 먼저 나와야 한다는 고정관념에 사로잡혔다. 하지만 (A)는 ‘원리 이름’ 소개일 뿐, (B)의 정의가 먼저 나와야 흐름이 자연스럽다. → 처방: ‘정의’(B)가 ‘원리’(A)보다 먼저 나와야 논리적 흐름이 맞다는 점을 기억하고, 각 문단의 역할(정의 → 원리 → 예시)을 구분해서 읽도록 한다.\n④ 진단: ‘(C)가 ‘예시’ 부분인데도 (A)보다 먼저 두지 않은 점에서, 학생은 ‘원리’가 ‘예시’보다 먼저 나와야 한다는 선입견에 갇혔다. 하지만 (C)는 ‘원리’(A)가 적용된 사례이므로, 원리 설명이 먼저 나와야 한다. → 처방: ‘원리’(A)가 ‘예시’(C)보다 먼저 나와야 한다는 점을 기억하고, ‘원리 → 예시’의 순서를 찾도록 연습한다.\n⑤ 진단: ‘(C)가 ‘예시’인데도 (B)보다 먼저 두지 않은 점에서, 학생은 ‘예시’가 ‘정의’보다 먼저 나와야 한다는 오해를 했다. 하지만 (B)는 ‘동일’의 의미를 명확히 하는 ‘정의’이므로, 정의가 먼저 나와야 흐름이 자연스럽다. → 처방: ‘정의’(B)가 ‘예시’(C)보다 먼저 나와야 한다는 점을 기억하고, 각 문단의 역할(정의 → 예시 → 원리 이름)을 구분해서 읽도록 한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T23:07:46.994Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "If A and B are identical, anything which is true of A is also true of B, and vice versa. Remember that the word identical here means ‘having the same identity’, and does not mean ‘having the same appearance’ as it does when we speak of identical twins. So A and B are identical means that A and B are one and the same thing. In this use Mohammed Ali and Cassius Clay are identical means ‘Mohammed Ali and Cassius Clay are one and the same person’. It appears to follow from Leibniz’ Law that if A = B, anything you can truly say about A can also be truly said about B: after all, whatever you say is said about exactly the same thing under another name. This assumption gives us an important rule of inference called the Principle of Substitutivity. (2) Principle of Substitutivity",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]

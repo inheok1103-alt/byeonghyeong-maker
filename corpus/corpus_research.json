@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T13:52:49.750Z",
+ "updated": "2026-08-12T15:17:59.129Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T15:17:33.456Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사+명사(compound noun) 형태가 빈번하며, 특히 하이픈(-) 사용이 규칙적이지 않은 경우가 많다. 또한, 동사 형태(3인칭 단수, 과거형, 진행형 등)의 오용이 빈번하다.",
+   "rule": "복합명사(compound noun)일 경우, 하이픈(-)을 명확히 구분하여 사용하고, 동사 형태는 주어와 시제에 맞게 정확히 변형하라. 예: 'car usage' (X: 'carusage'), 'Latin American' (X: 'latinamerican'), 'works hard' (X: 'do more benefits').",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T13:52:21.086Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'travel'은 전치사 'to'가 필수적으로 동반되며, 'teach'는 3인칭 단수 현재형에서 '-es'가 붙고, 'concern'은 'be concerned about'로 수동태가 자연스럽다. 한국어 학습자에게는 전치사/시제/수동태 오류가 빈번하게 발생한다.",
    "rule": "'travel' 뒤에는 반드시 'to'를 붙이도록 강제하며, 'teach'는 3인칭 단수 현재형에서 '-es'로 변형하고, 'concern'은 'be concerned about' 형태로 수동태로 사용하도록 출제 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T02:36:28.378Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원문에서 'create' 동사 사용 시 직접목적어 없이 문법적 오류가 빈번하며, 'control' 동사도 수동태가 필요한 경우가 많다. 또한 'open the door for' 구문은 중복 표현으로 오류가 발생한다.",
-   "rule": "'동사 + 목적어' 구조에서 목적어가 생략된 경우나, 수동태가 필요한 동사(예: control, create 등)를 능동태로 사용한 문장은 오류로 간주하고, 목적어 추가 또는 수동태 전환을 요구하는 문제를 출제한다.",
    "sample": [
     "old english",
     "university press",
