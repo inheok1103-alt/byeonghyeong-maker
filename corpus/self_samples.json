@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-12T02:49:04.013Z",
+ "updated": "2026-08-12T05:05:50.858Z",
  "samples": [
+  {
+   "ts": "2026-08-12T05:05:19.216Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 17 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Possessive', 'adjectives', 'pronouns' / 15~19단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Possessive pronouns function either as adjectives or as true pronouns, and the two forms cannot be swapped.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-12T02:46:41.425Z",
    "type": "요약문AB",
@@ -296,39 +315,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ의 풀이는 'input'의 정의이다. 'publishing'의 올바른 풀이: To issue (something, such as printed work) for distribution and/or sale.\n[오답 진단·처방]\n① 진단: acknowledgments 의 의미를 너무 일반적으로 이해해서 '인사말'이라는 뜻을 제대로 파악하지 못했다. → 처방: 영어 사전에서 단어의 예시 문장을 찾아보아야 한다.\n② 진단: creating 의 의미를 너무 일반적으로 이해해서 '만드는 것'이라는 뜻을 제대로 파악하지 못했다. → 처방: 문맥을 고려해서 단어의 의미를 더 구체적으로 이해해야 한다.\n④ 진단: reference 의 의미를 너무 일반적으로 이해해서 '참고'라는 뜻을 제대로 파악하지 못했다. → 처방: 단어의 여러 가지 의미 중에서 문맥에 가장 적합한 것을 선택해야 한다.\n⑤ 진단: guide 의 의미를 너무 일반적으로 이해해서 '안내서'라는 뜻을 제대로 파악하지 못했다. → 처방: 단어의 여러 가지 의미 중에서 문맥에 가장 적합한 것을 선택해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T18:10:40.864Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 5건 · 솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "temporal reasoning in English verb phrases",
-     "reasoning in English verb tenses",
-     "financial consequences reflected in English verb phrases",
-     "temporal reasoning in various natural languages",
-     "temporal reasoning limited to past English verb phrases"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Temporal reasoning in English verb phrases'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘tense(시제)’와 ‘verb phrase(동사구)’를 혼동하여 ‘tense’가 아닌 ‘verb phrase’ 전체의 시간적 추론을 다룬다는 글의 주제를 ‘tense’에 한정된 추론으로 오해한 것 같다. 지문에서 ‘verb phrases’의 시간적 관계를 분석하는 것이 주제임을 확인할 수 있다. → 처방: ‘tense’와 ‘verb phrase’를 구분하고, 지문에서 다루는 대상이 ‘verb phrase’의 시간적 추론임을 명확히 파악하자. ‘tense’가 아닌 ‘verb phrase’의 시간적 관계를 분석한다는 점에 주목하라.\n③ 진단: ‘financial consequences(재정적 결과)’라는 단어에만 집중하여 지문의 핵심 주제가 재정 문제라고 오인한 것 같다. 그러나 지문은 시간적 추론(Reichenbachian diagrams)을 중심으로 동사구와 시제의 관계를 분석하고 있다. → 처방: 지문의 핵심 주제가 ‘시간적 추론’이라는 점을 먼저 확인하고, 재정적 결과는 부차적인 예시일 뿐임을 인식하라. 주제를 찾기 위해 핵심 단어(‘temporal reasoning’)를 먼저 찾아라.\n④ 진단: ‘various natural languages(여러 자연어)’라는 단어를 보고 지문이 특정 언어가 아닌 여러 언어를 다룬다고 오해한 것 같다. 그러나 지문은 오로지 ‘English(영어)’의 동사구와 시제에 대한 시간적 추론만 다룬다. → 처방: 지문에서 ‘English’라는 단어가 반복적으로 등장하는지 확인하고, 주제가 특정 언어(영어)에 국한된다는 점을 분명히 하라. ‘various natural languages’는 오답의 함정임을 기억하라.\n⑤ 진단: ‘past English verb phrases(과거 영어 동사구)’라는 단어에만 집중하여 지문이 과거 시제에만 국한된다고 오해한 것 같다. 그러나 지문은 ‘present perfect’, ‘future’, ‘past’ 등 다양한 시제를 포함하는 시간적 추론을 다룬다. → 처방: 지문에서 ‘present perfect’, ‘future’, ‘past’ 등 다양한 시제가 언급되는지 확인하고, 주제가 과거 시제로 한정되지 않는다는 점을 파악하라. ‘limited to past’라는 단어가 오답임을 기억하라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Temporal reasoning in English verb phrases]"
    }
   }
  ]
