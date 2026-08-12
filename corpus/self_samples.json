@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-12T05:05:50.858Z",
+ "updated": "2026-08-12T06:48:01.412Z",
  "samples": [
+  {
+   "ts": "2026-08-12T06:44:29.750Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "어휘 용어의 정의와 예시를 통해 핵심 의미를 이해하려고",
+     "어휘 용어의 발음과 철자만 정확히 배우려고",
+     "어휘 용어의 정의가 주어진 단어의 의미를 결정짓도록 하려고",
+     "모든 복잡한 어휘를 비슷한 방법으로 암기하려고",
+     "단어의 예시만 먼저 보고 의미를 추론하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'to understand key vocabulary terms like \"antithesis\" and \"apartheid\" through their definitions and examples.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 지문에서 '발음과 철자'만 정확히 배우려는 내용은 전혀 없으며, 오로지 '정의와 예시'를 통해 의미를 이해하도록 안내하고 있음. 학생은 '발음과 철자'라는 단어에만 집중하여 지문의 진짜 목적을 놓침. → 처방: 지문의 첫 문장과 단어 설명(정의·예시·관련 단어·비유)을 주의 깊게 읽고, 그 안에 담긴 의미를 찾는 연습을 하세요.\n③ 진단: 지문은 '정의와 예시'를 통해 단어를 이해하도록 안내하지만, '정의가 의미를 결정짓도록' 한다는 내용은 없음. 학생은 '정의'라는 단어에만 주목하여 오해한 듯함. → 처방: 단어의 정의와 예시를 함께 보고, 그 단어가 실제로 어떤 상황에서 쓰이는지 확인하는 습관을 들리세요.\n④ 진단: 지문은 '복잡한 어휘'를 '비슷한 방법'으로 암기하지 않도록 안내하고 있으며, 오히려 각 단어의 특징(예: 'apartheid'는 'apart'와 관련 있음)을 설명하고 있음. 학생은 '암기'라는 단어에만 반응한 듯함. → 처방: 단어마다 특징(발음·관련 단어·예시)을 따로따로 정리하고, 그 특징을 기억하는 방식으로 공부하세요.\n⑤ 진단: 지문은 '예시'를 먼저 보고 의미를 추론하지 말고, '정의'를 먼저 이해한 뒤 예시를 확인하도록 안내하고 있음. 학생은 '예시'라는 단어에만 주목하여 지문의 흐름을 놓침. → 처방: 단어의 정의를 먼저 읽고, 그 뒤에 나오는 예시가 그 정의를 실제로 어떻게 나타내는지 확인하는 순서를 지키세요.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to understand key vocabulary terms like \"antithesis\" and \"apartheid\" through their definitions and examples.]"
+   }
+  },
+  {
+   "ts": "2026-08-12T06:47:02.604Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "I don’t like. Note carefully the pronunciation of this word. ANTITHESIS (an TITH uh sis) n the direct o_______ • Erin is the antithesis of Aaron: Erin is bright and beautiful; Aaron is dull and plain. Note carefully the pronunciation of this word. APARTHEID (uh PAHRT hyte) n the former policy of racial segregation and oppression in the Republic of South Africa The word apartheid is related to the word apart. Under apartheid in South Africa, blacks were kept apart from whites and denied all rights. The word apartheid is sometimes applied to less radical forms of racial injustice and to other kinds of separation. Critics have sometimes accused American public schools of practicing educational apartheid by providing substandard schooling for nonwhites. Quick Quiz #8 Match each word in the first column with its definition in the second column. Check your answers here. 1. anarchy a. resentment 2. monarchy b. racial oppression 3. anecdote c. firm dislike 4. anguish d. irregularity 5. animosity e. what went before 6. anomaly f. agonizing pain",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] opposite — 문단의 논지상 이 자리에는 'opposite'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-12T05:05:19.216Z",
    "type": "이어쓰기영작",
@@ -262,59 +314,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] right (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T21:07:01.675Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 19 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'originated', 'mythical', 'warrior' / 17~21단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] A mythical female warrior race called Amazons likely originated from an Iranian word meaning warrior, not from breast removal.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-11T19:26:59.506Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>Acknowledgments</u> ⓑ<u>Creating</u> and ⓒ<u>publishing</u> a ⓓ<u>reference</u> ⓔ<u>guide</u> and workbook that is popular, easy to understand, and tempting to use requires the input of many. My thanks go to the following: my parents who, as immigrants to the United States, passed their meticulousness about speaking and writing well along to me; Gary Klehr for helping to name the book many years ago and for tireless structural editing; my husband, Lester Kaufman, for catching so many mistakes before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, help shape every rule, example, and quiz. xiii",
-    "choices": [
-     "acknowledgments: The act of acknowledging",
-     "creating: To bring into existence; (sometimes in particular:)",
-     "publishing: The act or process of putting in; infusion.",
-     "reference: A relationship or relation (to something).",
-     "guide: Someone who guides, especially someone hired to show people around a place or an"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ의 풀이는 'input'의 정의이다. 'publishing'의 올바른 풀이: To issue (something, such as printed work) for distribution and/or sale.\n[오답 진단·처방]\n① 진단: acknowledgments 의 의미를 너무 일반적으로 이해해서 '인사말'이라는 뜻을 제대로 파악하지 못했다. → 처방: 영어 사전에서 단어의 예시 문장을 찾아보아야 한다.\n② 진단: creating 의 의미를 너무 일반적으로 이해해서 '만드는 것'이라는 뜻을 제대로 파악하지 못했다. → 처방: 문맥을 고려해서 단어의 의미를 더 구체적으로 이해해야 한다.\n④ 진단: reference 의 의미를 너무 일반적으로 이해해서 '참고'라는 뜻을 제대로 파악하지 못했다. → 처방: 단어의 여러 가지 의미 중에서 문맥에 가장 적합한 것을 선택해야 한다.\n⑤ 진단: guide 의 의미를 너무 일반적으로 이해해서 '안내서'라는 뜻을 제대로 파악하지 못했다. → 처방: 단어의 여러 가지 의미 중에서 문맥에 가장 적합한 것을 선택해야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]

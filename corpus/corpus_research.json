@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T05:05:50.854Z",
+ "updated": "2026-08-12T06:48:01.408Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T06:47:04.642Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "고유명사(Jeju Island)나 명사의 철자 오류( surprise → surprize, magnitude → magnitide)가 빈번히 발생하며, 접속사(But, Even) 뒤의 문장 구조가 단순해 오류가 상대적으로 적다.",
+   "rule": "CEFR B1 수준에서 'But,' 또는 'Even'으로 시작하는 문장은 접속사 뒤의 첫 단어(대명사/명사)를 대문자로 쓰지 않도록 오류 유도 문제를 100% 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T05:05:20.983Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "원서 코퍼스에서 'purpose of + 동명사'가 'purpose of + 명사'보다 압도적으로 빈도가 높다. 또한 'half than'은 오류로, 'half the' 또는 'half of the'가 표준 연어다.",
    "rule": "원서 코퍼스 연어 패턴을 반영하여, 'purpose of + 동명사'와 'half the + 명사'를 정답으로 설정하고, 오답에는 'purpose of + 명사'와 'half than + 명사'를 삽입하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T19:46:53.007Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'a/an' 생략 오류는 명사구 내 관사 생략 패턴과 관련이 깊으며, 특히 'thing'과 같은 추상명사에서 두드러진다. 또한 비교구조에서 'than'을 'that'으로 혼용하는 오류가 빈번하다.",
-   "rule": "'a/an'이 필요한 추상명사(thing, knowledge 등) 앞에는 항상 관사를 붙이고, 비교구조에서는 'than'을 'that'으로 대체하지 않도록 검토하라.",
    "sample": [
     "old english",
     "university press",
