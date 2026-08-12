@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T08:44:00.820Z",
+ "updated": "2026-08-12T10:35:09.891Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T10:34:38.374Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'old/new'와 같은 형용사가 명사구(NP)의 수식어 역할을 할 때, 문법적 오류는 주로 수 일치(agreement)나 관사 생략에서 발생하며, 이를 수정할 때 'the + last/first + 명사' 구조나 비교급 형용사의 정확한 형태가 중요하다.",
+   "rule": "형용사(old/new, small/big 등)가 명사구(NP)를 수식할 경우, 비교급(er)이나 최상급(-est) 형태가 필요한지, 또는 관사(the/a)가 필요한지를 반드시 검토하여 문장을 완성하라. 예를 들어, 'smallers' → 'smaller', 'big chance' → 'great chance' 등으로 오류를 수정한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T08:43:32.717Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "형용사-의존성 오류(dependent/particular) 및 관사 누락(a particular person)과 수일치 오류(generation are → generation is)가 빈번하며, 문장 내 논리적 연결(thus → and therefore)도 수정 대상이 된다.",
    "rule": "CEFR B1 수준 이하의 과제에서, '형용사 + 명사' 구조(예: dependent on a particular person) 및 '단수 주어 + 단수 동사'(예: The younger generation is) 규칙을 반드시 포함하여 문장 완성형을 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T21:49:44.918Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'or' 구문에서 'unreal' 같은 형용사가 'looks'와 결합할 때 'too'가 아닌 'to'가 오류로 자주 나타나며, 'runs'와 같은 단수 동사가 'systems' 복수 명사와 결합하는 오류도 빈번하다. 또한 'In fact'와 같은 구가 문장 중간에서 쉼표 없이 사용되는 경우가 많다.",
-   "rule": "'or' 구문에서 형용사가 'looks'와 결합할 경우 'too'를 사용해야 하며, 복수 명사와 동사의 수 일치를 반드시 확인하라. 또한 'In fact'와 같은 구는 문장 중간에서 쉼표로 구분되어야 한다.",
    "sample": [
     "old english",
     "university press",

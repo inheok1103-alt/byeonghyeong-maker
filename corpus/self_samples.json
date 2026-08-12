@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-12T08:44:00.825Z",
+ "updated": "2026-08-12T10:35:09.894Z",
  "samples": [
+  {
+   "ts": "2026-08-12T10:34:35.782Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 유난히 이른 저녁, 일찍 일어나는 사람, 이른 빅토리아 시대인들 모두 첫 번째 등급, 첫 번째 범법자 처벌 완화, 비교 해부학, 안개 덕에 비교적 안전했음을 우리도 인정한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-12T08:42:54.538Z",
    "type": "안내문일치",
@@ -297,39 +316,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] A와 B가 동일하면 A에 대해 참인 것은 B에 대해서도 참이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-11T22:07:11.852Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Binge Drinking Risks Demand Student Risk Education",
-     "Student Drinking Habits Fuel Binge Drinking Epidemic",
-     "Managing Binge Drinking Among College Students",
-     "All College Drinking Practices Require Strict Regulation",
-     "Binge Drinking Is Always Preventable Through Education"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Binge drinking's risks must be managed through student education'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Binge drinking]\n[오답 진단·처방]\n① 진단: ‘Demand’(요구)라는 표현이 과장되어 있으며, 지문은 ‘교육을 통해 위험을 관리하는 법을 가르쳐야 한다’고만 말하고 ‘요구’하지 않는다. 또한 ‘가장 큰 비용’을 ‘위험’으로 오해했을 수 있다. → 처방: 지문의 핵심 주장(‘위험 관리 교육’)과 선지의 ‘위험’(risks)이 같은 뜻인지 확인하고, ‘요구’(demand) 같은 강한 표현이 지문에 있는지도 살피기.\n② 진단: ‘Fuel’(부채질하다)라는 표현이 부정적 편견을 담고 있지만, 지문은 ‘새로운 형태의 음주가 퍼지고 있다’는 사실만 제시할 뿐, ‘원인’을 ‘학생의 습관’으로 단정하지 않는다. → 처방: 지문의 ‘사실 제시’(shared context)와 ‘해결책’(solution)을 구분하고, 선지가 ‘원인’을 주장하는지 확인하기.\n④ 진단: ‘All’(모든)과 ‘Strict Regulation’(엄격한 규제)이라는 과격한 표현이 지문의 ‘부분적 통제’(control its worst costs)와 다르며, 지문은 ‘교육’을 강조하지 규제를 강조하지 않는다. → 처방: 지문의 ‘주장’(must try to control its worst costs by educating students)이 ‘규제’(regulation)인지 ‘교육’(education)인지 정확히 읽기.\n⑤ 진단: ‘Always preventable’(항상 예방 가능하다는 주장)이 지문의 ‘가장 큰 비용을 줄이는 데 노력해야 한다’는 온건한 주장과 다르며, ‘항상’이라는 절대적 표현도 지문에 없음. → 처방: 지문의 ‘부분적 해결’(try to control its worst costs)과 선지의 ‘항상 예방 가능’(always preventable)을 비교하고, ‘절대적’ vs ‘상대적’ 표현 구별하기."
    }
   }
  ]
