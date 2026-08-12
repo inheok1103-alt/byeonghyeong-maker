@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-12T06:48:01.412Z",
+ "updated": "2026-08-12T08:44:00.825Z",
  "samples": [
+  {
+   "ts": "2026-08-12T08:42:54.538Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -1,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "The DISTRIBUTIVE PROPERTY OF MULTIPLICATION OVER ADDITION says that we get the same number when we multiply a group of numbers added together or when we multiply each number separately and then add them. The Distributive Property can be used when multiplying a number by the sum of two numbers: Given three numbers a, b, and c: a(b + c) = (a • b) + (a • c). a(b + c) = a • b + a • c We are DISTRIBUTING DISTRIBUTING the term a to each of the terms b and c. b Think: Think: Distributive Distributive means to share or means to share or give out. give out. The Distributive Property states: Adding two numbers inside the parentheses and then multiplying that sum by a number outside the parentheses is the same as first multiplying the number outside the parentheses by each of the addends inside the parentheses and then adding the two products together. y p and then adding the two products together. a b c b c = + 12",
+    "choices": [
+     "곱셈의 분배법칙은 뺄셈에 대해 곱할 때 성립하는 성질이다",
+     "분배법칙은 세 수 a, b, c 에 대해 a(b + c) = ab - ac 로 표현된다",
+     "분배법칙은 곱하는 수를 괄호 안 각 항에 나눠 곱한 후 뺀 결과와 같다",
+     "분배법칙은 곱셈에서 덧셈의 묶음을 풀어 계산하는 규칙이다",
+     "분배법칙은 a(b + c)와 ab - ac 의 결과가 같음을 보장하는 수학적 원리이다"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 분배법칙이 덧셈뿐 아니라 뺄셈에도 성립한다는 사실을 혼동한 것 같다. 지문은 'a(b + c) = ab + ac'로 덧셈만 다루고, 뺄셈은 언급하지 않았다. → 처방: 분배법칙은 덧셈에만 적용된다는 점을 기억하고, 뺄셈은 'a(b - c) = ab - ac'로 계산한다는 사실도 따로 공부하자.\n② 진단: 분배법칙의 공식에서 덧셈 기호를 빼기로 잘못 읽은 것 같다. 지문은 'a(b + c) = ab + ac'로 덧셈을 기준으로 하고 있다. → 처방: 분배법칙의 공식은 '+' 기호가 기본이므로, 뺄셈은 'a(b - c) = ab - ac'로 따로 구분해서 외우자.\n③ 진단: 분배법칙에서 '곱하는 수를 괄호 안 각 항에 나눠 곱한 후 뺀 결과'라고 잘못 이해했다. 지문은 덧셈에 대해 설명하고 있다. → 처방: 분배법칙은 덧셈에 대해 'a(b + c) = ab + ac'임을 기억하고, 뺄셈은 'a(b - c) = ab - ac'로 계산한다는 점을 명확히 구분하자.\n⑤ 진단: 분배법칙이 'a(b + c)와 ab - ac 의 결과가 같음'을 보장한다는 오해를 했다. 지문은 덧셈에 대한 등식만 다루고 있다. → 처방: 분배법칙은 덧셈에 대한 등식임을 명확히 기억하고, 뺄셈은 'ab - ac'로 계산된다는 점을 따로 공부하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-12T06:44:29.750Z",
    "type": "목적",
@@ -295,25 +330,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'Binge drinking's risks must be managed through student education'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Binge drinking]\n[오답 진단·처방]\n① 진단: ‘Demand’(요구)라는 표현이 과장되어 있으며, 지문은 ‘교육을 통해 위험을 관리하는 법을 가르쳐야 한다’고만 말하고 ‘요구’하지 않는다. 또한 ‘가장 큰 비용’을 ‘위험’으로 오해했을 수 있다. → 처방: 지문의 핵심 주장(‘위험 관리 교육’)과 선지의 ‘위험’(risks)이 같은 뜻인지 확인하고, ‘요구’(demand) 같은 강한 표현이 지문에 있는지도 살피기.\n② 진단: ‘Fuel’(부채질하다)라는 표현이 부정적 편견을 담고 있지만, 지문은 ‘새로운 형태의 음주가 퍼지고 있다’는 사실만 제시할 뿐, ‘원인’을 ‘학생의 습관’으로 단정하지 않는다. → 처방: 지문의 ‘사실 제시’(shared context)와 ‘해결책’(solution)을 구분하고, 선지가 ‘원인’을 주장하는지 확인하기.\n④ 진단: ‘All’(모든)과 ‘Strict Regulation’(엄격한 규제)이라는 과격한 표현이 지문의 ‘부분적 통제’(control its worst costs)와 다르며, 지문은 ‘교육’을 강조하지 규제를 강조하지 않는다. → 처방: 지문의 ‘주장’(must try to control its worst costs by educating students)이 ‘규제’(regulation)인지 ‘교육’(education)인지 정확히 읽기.\n⑤ 진단: ‘Always preventable’(항상 예방 가능하다는 주장)이 지문의 ‘가장 큰 비용을 줄이는 데 노력해야 한다’는 온건한 주장과 다르며, ‘항상’이라는 절대적 표현도 지문에 없음. → 처방: 지문의 ‘부분적 해결’(try to control its worst costs)과 선지의 ‘항상 예방 가능’(always preventable)을 비교하고, ‘절대적’ vs ‘상대적’ 표현 구별하기."
-   }
-  },
-  {
-   "ts": "2026-08-11T21:06:07.642Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: r)\n[영영풀이] Straight, not bent.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] right (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]

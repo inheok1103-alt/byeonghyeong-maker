@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-12T06:48:01.408Z",
+ "updated": "2026-08-12T08:44:00.820Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-12T08:43:32.717Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "명사 수의 일치 오류가 빈번하며, 특히 'car(s)'와 같은 가산명사에서 복수형 오용이 두드러진다. 또한 문맥상 필요한 동사의 시제(예: 수동태)나 접속사의 생략이 오답으로 자주 활용된다.",
+   "rule": "가산명사(예: car, policy)는 복수형(-s) 또는 수량 표현(예: cars, mentioned policy)이 필요한 경우에만 복수형/수동태로 출제하며, 그렇지 않을 경우 단수형/능동태로 오답을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-12T06:47:04.642Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'or' 구문에서 'unreal' 같은 형용사가 'looks'와 결합할 때 'too'가 아닌 'to'가 오류로 자주 나타나며, 'runs'와 같은 단수 동사가 'systems' 복수 명사와 결합하는 오류도 빈번하다. 또한 'In fact'와 같은 구가 문장 중간에서 쉼표 없이 사용되는 경우가 많다.",
    "rule": "'or' 구문에서 형용사가 'looks'와 결합할 경우 'too'를 사용해야 하며, 복수 명사와 동사의 수 일치를 반드시 확인하라. 또한 'In fact'와 같은 구는 문장 중간에서 쉼표로 구분되어야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-08T20:51:00.601Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "원서 코퍼스에서 'purpose of + 동명사'가 'purpose of + 명사'보다 압도적으로 빈도가 높다. 또한 'half than'은 오류로, 'half the' 또는 'half of the'가 표준 연어다.",
-   "rule": "원서 코퍼스 연어 패턴을 반영하여, 'purpose of + 동명사'와 'half the + 명사'를 정답으로 설정하고, 오답에는 'purpose of + 명사'와 'half than + 명사'를 삽입하라.",
    "sample": [
     "old english",
     "university press",
