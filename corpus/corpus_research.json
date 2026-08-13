@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T05:10:05.381Z",
+ "updated": "2026-08-13T06:51:03.291Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T06:50:37.451Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "영어에서 고유명사(Real Politik, Bismarck 등)는 대문자로 표기해야 하지만, 일반명사(real politics, Bismark)는 소문자로 표기해야 한다. 또한, 중복 표현(I think advertisements are make → I think advertisements make)을 제거해야 한다.",
+   "rule": "고유명사와 일반명사를 구별하여 대소문자 표기 규칙을 적용하고, 중복된 동사(are make → make)나 중복 표현을 제거하여 문법적으로 정확한 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T05:09:38.487Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 패턴에서 '명사+명사' 구조(예: 'old English', 'university press')가 빈번하며, 한국어 오류는 주로 '명사+동사' 구조에서 발생한다. 또한 과거 시제와 현재 시제의 혼용 오류가 다수 발견된다.",
    "rule": "'명사+동사' 구조(예: 'important is travel')가 문법적으로 부적절할 경우, 'The + 명사 + thing/ones + 동사' 구조(예: 'The important thing is traveling')로 변환하여 문법적으로 옳은 문장을 만든다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T15:01:18.566Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 'old english', 'middle english', 'english grammar' 등 언어학적 용어와 'reason relations'(인과관계 표현)의 빈번한 사용은 문법적 구조와 논리적 연결을 강조하는 패턴임을 확인했다. 또한 'new york'과 같은 고유명사나 'between two'와 같은 전치사 구는 문맥적 명확성을 요구하는 경향이 강하다.",
-   "rule": "원서 코퍼스의 언어학적·논리적 패턴을 반영하여, '인과관계(~because, ~so)'와 '논리적 연결(~between two, ~the ones who~)'을 포함한 문장은 반드시 주어-동사 일치, 시제 일치, 그리고 명사구의 정확한 수식(예: 'the younger generation' vs 'youg genaration')을 요구하는 문제로 출제하라.",
    "sample": [
     "old english",
     "university press",

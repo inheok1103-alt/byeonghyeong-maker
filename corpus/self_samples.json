@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-13T05:10:05.385Z",
+ "updated": "2026-08-13T06:51:03.295Z",
  "samples": [
+  {
+   "ts": "2026-08-13T06:50:35.453Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 9 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 9단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 직교 방식은 특정 규칙 내에서 의무 또는 권한을 표현합니다\n주어진 단어: ( deontic / modality / expresses )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Deontic modality expresses obligations or permissions within specific rules. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-13T05:08:26.071Z",
    "type": "혼합통합형",
@@ -284,40 +303,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-12T16:15:19.471Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "ARTICLES with SPECIFIC DESCRIPTORS: NAMING RULES",
-     "Exceptions in Article Usage for Buildings and Institutions",
-     "How Article Choice Reflects the Significance of Locations",
-     "General Rules for All Place Names with Descriptors",
-     "When 'the' Must Precede Theatres and Cinemas"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Place names with specific descriptors follow distinct article usage rules'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Place names with specific descriptors follow distinct article usage rules]\n[오답 진단·처방]\n① 진단: ‘specific descriptors’라는 표현이 지문에서 ‘descriptors’로만 언급된 것과 달리 ‘specific descriptors’로 과장하여 오해한 것. 지문은 ‘descriptors’(예: ‘of’, ‘science’, ‘open’)가 예외를 만드는 규칙을 설명하지만, ‘specific’이라는 한정어는 nowhere 나온다. → 처방: ‘descriptors’라는 단어가 지문에 나오는지 확인하고, 과장된 표현을 쓰지 않도록 주의하기.\n③ 진단: ‘article choice 가 location 의 중요성을 반영한다’는 주제는 지문에 전혀 없음. 지문은 오로지 ‘the’의 사용 여부 규칙만 다룸. → 처방: 지문의 핵심 주제가 ‘the’의 사용 규칙임을 떠올리고, 제목이 그 내용을 담고 있는지 먼저 확인하기.\n④ 진단: ‘general rules for all place names’라는 표현이 지문에 없음. 지문은 ‘stations’, ‘airports’, ‘buildings’, ‘theatres’ 등 특정 범주에만 적용되는 규칙을 설명함. → 처방: 지문에 ‘all’이라는 말이 있는지 확인하고, 범위가 제한된 규칙인지 먼저 파악하기.\n⑤ 진단: ‘theatres and cinemas’에 ‘the’를 반드시 써야 하는 경우가 아니라, 대부분 ‘the’를 쓰는 경우가 많다는 점에서 오해. 지문은 ‘theatres, cinemas 등은 보통 the 를 쓴다’라고 설명하지만, ‘when’이라는 조건이 없음. → 처방: 지문에 ‘usually’라는 단어가 있는지 확인하고, ‘보통’이라는 표현이 ‘when’이라는 조건과 혼동되지 않도록 주의하기."
    }
   }
  ]
