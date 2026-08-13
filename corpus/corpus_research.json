@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T13:57:26.890Z",
+ "updated": "2026-08-13T15:18:50.106Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T15:18:21.962Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'for + 동사원형'보다는 'to + 동사원형'이 더 자연스러운 패턴으로 빈번히 사용됨을 확인할 수 있다. 또한, 복합명사(예: 'every day life')는 띄어쓰기 오류가 빈번하며, 고유명사(예: 'Latin American')는 대소문자 구분이 필요하다.",
+   "rule": "원서 코퍼스 패턴을 반영하여, '~하기 위해'라는 의미를 나타낼 때는 'for + 동사원형' 대신 'to + 동사원형'을 우선적으로 사용하도록 문제를 설계하라. (예: 'Water is needed to live.')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T13:56:22.589Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'during'는 명사구(noun phrase)와의 연어 강도가 높아, 'during + 부정사' 형태는 드물고 오류 가능성 높음. 또한 'suggest'는 3인칭 단수 현재형에서 '-s'가 필수이며, 'subsidize'는 '-ize' 동사로서 철자 오류 발생 가능성 높음.",
    "rule": "'during + [명사구]' 패턴에서 'during + 동사원형' 형태는 오류 가능성 90% 이상이므로, 'during' 뒤에는 반드시 명사구(예: 'normal conversation', 'the lecture')가 오도록 문장을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T19:51:44.261Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 실제 패턴에서 'be동사 + 보어' 구조가 빈번히 사용되며, 특히 it's가 'it is'의 축약형으로 쓰인다. 또한 주어가 3인칭 단수일 때 동사의 '-s' 형태가 필수적임을 확인할 수 있다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'It's'가 문두에 나올 경우 'it is'의 축약형으로 인식하고, 문법적으로 올바르게 축약되었는지(예: 'It's very obvious...')와 3인칭 단수 주어 뒤 동사의 '-s' 형태(예: 'it has')가 필수임을 변형문제에 반드시 반영하라.",
    "sample": [
     "old english",
     "university press",

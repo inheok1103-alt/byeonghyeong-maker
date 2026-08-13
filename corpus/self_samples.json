@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-13T13:57:26.895Z",
+ "updated": "2026-08-13T15:18:50.109Z",
  "samples": [
+  {
+   "ts": "2026-08-13T15:18:07.775Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 35번 무관한 문장 · I R R E L E V A N T 디지털 미니멀리즘 무관 ③ 무관: 주제는 ‘디지털 미니멀리즘→정신건강 개선’인데 ③은 ‘구매 결정 위해 SNS 의존’(주제 이탈). 소재 디지털 미니멀리즘과 정신건강 Digital minimalism and mental health 주제 디지털 사용을 줄이면 정신 건강이 좋아진다 Less digital use improves mental health 제목 디지털 미니멀리즘의 효과 Digital Minimalism Improves Mental Health 한눈에 디지털 미니멀리즘(디지털 사용을 의도적으로 줄이기)이 정신 건강을 개선한다는 글이다. 스탠퍼드 연구의 스트레스 감소, 알림 축소로 인한 의미 있는 교류, 번아웃 직장인의 회복 사례가 주제를 뒷받침한다. (‘구매 위해 SNS 의존’은 주제와 어긋난 무관 문장.) 지문 전문 — 시험지 원문 It is evident through various case studies that adopting digital minimalism ⓐ<u>can lead to improved</u> mental health outcomes. ① For instance, a study conducted by researchers at Stanford University found that participants who limited their use of social media and digital devices ⓑ<u>reported lower levels</u> of stress, anxiety, and depression. ② By reducing the constant stream of information and notifications, individuals were able to focus more on meaningful interactions and activities that promoted well-being. ③ Additionally, participants reported ⓒ<u>relying to social media</u> to get information for their purchasing decisions. ④In another case, a corporate professional struggling with burnout and insomnia ⓓ<u>implemented digital minimalism techniques</u>, such as setting boundaries for phone usage and practicing mindfulness. ⑤ As a result, he ⓔ<u>experienced improved sleep quality</u>, reduced stress levels, and a newfound sense of calm and clarity. * insomnia: 불면증 지문 전문 · 원문 그대로",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "[어법: 준동사] 정답 ⓒ의 'relying to social media'는 'relying on social media'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n① 진단: ‘can lead to’를 ‘can leads to’로 잘못 읽어 동사 형태를 틀렸다고 생각했다. 지문에서 ⓐ는 ‘can lead to’로 3인칭 단수 동사가 아니라 조동사+원형 동사 구조임을 보지 못했다. → 처방: 조동사(can, will 등) 뒤에는 동사 원형을 쓴다는 규칙을 떠올리고, ⓐ가 조동사+원형 동사 구조임을 확인하라.\n② 진단: ‘reported lower levels’를 ‘reported lower level’로 단수형으로 오독했다. ‘levels’는 복수형으로 쓰였음을 놓쳤다. → 처방: ‘lower levels’는 ‘더 낮은 수준들’이라는 복수 표현임을 기억하고, 문맥에서 복수임을 확인하라.\n④ 진단: ‘were able to focus’를 ‘was able to focus’로 주어가 복수인데도 단수 동사를 썼다며 틀렸다고 생각했다. 지문에서 ‘individuals’는 복수 주어임을 간과했다. → 처방: 주어가 복수일 때는 ‘were’를, 단수일 때는 ‘was’를 쓴다는 기본 규칙을 다시 익히고, ‘individuals’는 복수 주어임을 확인하라.\n⑤ 진단: ‘promoted’를 ‘promote’로 동사 원형을 써야 한다고 생각했다. 지문에서 ‘promoted’는 과거 분사 형태로 쓰였음을 보지 못했다. → 처방: ‘promoted’는 과거 분사(‘~된’)로 쓰였으므로, 동사 원형이 아니라 과거 분사임을 확인하라.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-13T13:51:01.633Z",
    "type": "밑줄함의",
@@ -298,40 +333,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Tense operators must always take scope over existential quantifiers binding event variables.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-12T22:04:54.427Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "difference in action sequences between remembered buying and remembered to buy",
-     "confusion between remembering and the need to perform an action",
-     "timing of recalling and buying actions",
-     "universal rules for all verb pairs with remember",
-     "consistent overlap in action timing for all verb structures"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The distinction between the two sentences lies in the sequence of actions: \"remembered buying\" indicates the action was completed before recalling, while \"remembered to buy\" implies recalling occurred before the action.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: remembered 의 목적어 역할(buy vs buying)을 혼동하여, '기억'과 '행동의 필요'가 섞인 혼란으로 오독했다. 지문에서 'remembered to buy'는 '행동을 해야 한다는 기억'을, 'remembered buying'은 '과거 행동의 기억'을 뜻함을 확인하지 못했다. → 처방: 목적어 동사 형태(-ing vs to 부정사)에 따라 의미가 달라지는지 확인하고, 예문을 직접 만들어 비교해 보세요.\n③ 진단: 두 동작(remembering 과 buying)의 '시점'만 중시하여, '기억'과 '행동'의 순서 관계를 오해했다. 지문에서 두 문장의 타임라인이 다른 순서를 보여주지만, 이를 '시기'로만 해석하여 action sequences 의 차이를 놓쳤다. → 처방: 두 문장을 타임라인에 표시하고, 동작의 순서를 화살표로 그려보세요. 어떤 일이 먼저 일어났는지 명확히 구분하세요.\n④ 진단: 모든 동사 짝에 적용되는 '보편 규칙'을 찾으려 했다. 지문은 remember + 동사 구조에만 초점을 맞추지만, 학생은 이를 일반화하여 오독했다. → 처방: 해당 구조가 적용되는 동사(예: forget, try 등)를 추가로 찾아보고, 각 경우의 의미를 비교해 보세요.\n⑤ 진단: 모든 동사 구조에서 '동작의 중복'을 가정했다. 지문에서 두 문장은 동작의 '겹침 여부'가 아니라 '순서'가 다르다는 점을 놓쳤다. → 처방: '겹침'과 '순서'를 구분하여 예문을 다시 쓰고, 두 문장의 차이를 설명해 보세요.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The distinction between the two sentences lies in the sequence of actions: \"remembered buying\" indicates the action was completed before recalling, while \"remembered to buy\" implies recalling occurred before the action.]"
    }
   }
  ]
