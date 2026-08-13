@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-13T12:02:40.821Z",
+ "updated": "2026-08-13T13:57:26.895Z",
  "samples": [
+  {
+   "ts": "2026-08-13T13:51:01.633Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 1,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Under the CP analysis of main clauses in (60), <u>the declarative force of the overall sentence is attributed to the fact that the sentence is a CP headed by a null complementiser ø which carries a declarative force feature which we can represent as [Dec-Force]</u>. (The purists among you may object that it’s not appropriate to call a null declarative particle introducing a main clause a complementiser when it doesn’t introduce a complement clause: however, in keeping with work over the past 4 decades, we’ll use the term complementiser/C in a more general sense here, to designate a category of word which can introduce both complement clauses and other clauses, and which serves to mark properties such as force and finiteness.) From a cross-linguistic perspective, an analysis such as (60) which posits that main clauses are CPs headed by a force-marking complementiser is by no means implausible in that we find languages like Arabic in which both declarative and interrogative main clauses can be introduced by an overt complementiser, as the examples below illustrate:",
+    "choices": [
+     "A sentence becomes declarative only when the listener infers its force from the speaker's tone and context.",
+     "The sentence’s meaning is determined by the visible complementiser that appears in the CP.",
+     "The absence of the null complementiser ø directly weakens the sentence's ability to state facts or opinions.",
+     "The declarative force of a sentence always depends on the presence of an overt complementiser like 'that' or 'if'.",
+     "The core meaning of a sentence arises from its structural composition, where an invisible marker explicitly signals its declarative nature."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'The core meaning of a sentence arises from its structural composition, where an invisible marker explicitly signals its declarative nature.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문은 문장의 선언적 힘이 null complementiser ø의 [Dec-Force]라는 특징에 있다고 설명하는데, 이 학생은 문장의 힘을 화자의 말투나 맥락에서 추론한다고 오해했다. → 처방: 문장의 ‘선언적 힘’이란 문법적 구조(CP 와 null complementiser ø)에 있는 특징임을 기억하고, 화자의 말투나 맥락은 문법적 분석에서 제외됨을 확인할 것.\n② 진단: 지문은 null complementiser ø가 보이지 않아도 선언적 힘을 가진다고 설명하는데, 이 학생은 보이는 complementiser 가 문장의 의미를 결정한다고 잘못 이해했다. → 처방: ‘보이는 complementiser’가 아니라 ‘null complementiser ø의 존재’가 선언적 힘을 부여함을 정확하게 읽고, 문법적 구조에 주목할 것.\n③ 진단: 지문은 null complementiser ø가 없어도 문장이 선언적 힘을 가질 수 있다고 설명하는데, 이 학생은 ø가 없으면 문장의 사실·의견 진술 능력이 약해진다고 오독했다. → 처방: null complementiser ø는 문장의 선언적 힘을 ‘표시’하는 역할일 뿐, ø가 없어도 문장은 선언적일 수 있음을 이해하고, ø의 기능에 집중할 것.\n④ 진단: 지문은 Arabic 처럼 보이는 complementiser 가 있는 경우도 있지만, 영어에서는 null complementiser ø가 선언적 힘을 나타낸다고 설명하는데, 이 학생은 모든 문장이 ‘that’이나 ‘if’ 같은 complementiser 에 의존한다고 혼동했다. → 처방: ‘언제나’가 아니라 ‘특정 언어(예: 영어)에서는 null complementiser ø가 선언적 힘을 나타낸다’는 점을 정확히 파악하고, 문법적 다양성을 고려할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-13T10:31:02.425Z",
    "type": "내용불일치",
@@ -299,25 +332,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The distinction between the two sentences lies in the sequence of actions: \"remembered buying\" indicates the action was completed before recalling, while \"remembered to buy\" implies recalling occurred before the action.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: remembered 의 목적어 역할(buy vs buying)을 혼동하여, '기억'과 '행동의 필요'가 섞인 혼란으로 오독했다. 지문에서 'remembered to buy'는 '행동을 해야 한다는 기억'을, 'remembered buying'은 '과거 행동의 기억'을 뜻함을 확인하지 못했다. → 처방: 목적어 동사 형태(-ing vs to 부정사)에 따라 의미가 달라지는지 확인하고, 예문을 직접 만들어 비교해 보세요.\n③ 진단: 두 동작(remembering 과 buying)의 '시점'만 중시하여, '기억'과 '행동'의 순서 관계를 오해했다. 지문에서 두 문장의 타임라인이 다른 순서를 보여주지만, 이를 '시기'로만 해석하여 action sequences 의 차이를 놓쳤다. → 처방: 두 문장을 타임라인에 표시하고, 동작의 순서를 화살표로 그려보세요. 어떤 일이 먼저 일어났는지 명확히 구분하세요.\n④ 진단: 모든 동사 짝에 적용되는 '보편 규칙'을 찾으려 했다. 지문은 remember + 동사 구조에만 초점을 맞추지만, 학생은 이를 일반화하여 오독했다. → 처방: 해당 구조가 적용되는 동사(예: forget, try 등)를 추가로 찾아보고, 각 경우의 의미를 비교해 보세요.\n⑤ 진단: 모든 동사 구조에서 '동작의 중복'을 가정했다. 지문에서 두 문장은 동작의 '겹침 여부'가 아니라 '순서'가 다르다는 점을 놓쳤다. → 처방: '겹침'과 '순서'를 구분하여 예문을 다시 쓰고, 두 문장의 차이를 설명해 보세요.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The distinction between the two sentences lies in the sequence of actions: \"remembered buying\" indicates the action was completed before recalling, while \"remembered to buy\" implies recalling occurred before the action.]"
-   }
-  },
-  {
-   "ts": "2026-08-12T22:05:08.494Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 22 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'remembered', 'purchased', 'purchase' / 20~24단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] You remembered buying the milk after you had already purchased it, while you remembered to buy the milk before the planned purchase.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 20~24단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

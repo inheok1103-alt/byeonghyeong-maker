@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T12:02:40.816Z",
+ "updated": "2026-08-13T13:57:26.890Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T13:56:22.589Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사 단수/복수 오류와 동사 시제·태 오류가 빈번하게 결합되어 나타나며, 특히 구어체에서 문법적 정확성이 떨어지는 경향이 있다. 또한, 인용부호 내 구두점(쉼표, 물음표) 오류가 자주 발생한다.",
+   "rule": "'~ing' 형태의 동명사(gerund) 또는 명사구가 'other than', 'because of' 등 전치사구와 결합될 때는 단수/복수 명사의 정확한 형태(예: responsibility/responsibilities)를 확인하고, 문장 내 시제(present/past)와 태(active/passive) 일관성을 점검하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T12:02:03.541Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 실제 패턴에서 'be동사 + 보어' 구조가 빈번히 사용되며, 특히 it's가 'it is'의 축약형으로 쓰인다. 또한 주어가 3인칭 단수일 때 동사의 '-s' 형태가 필수적임을 확인할 수 있다.",
    "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'It's'가 문두에 나올 경우 'it is'의 축약형으로 인식하고, 문법적으로 올바르게 축약되었는지(예: 'It's very obvious...')와 3인칭 단수 주어 뒤 동사의 '-s' 형태(예: 'it has')가 필수임을 변형문제에 반드시 반영하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T19:03:55.240Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'old english', 'middle english' 등 역사적 언어 변천 패턴과 'noun phrase'의 명사구 구조가 'new york'와 같은 고유명사 단위의 조합으로 자주 등장하며, 문법 오류 쌍에서 'concepts and ideas which they gave us' → 'concepts and ideas they gave us'로의 생략 패턴과 'end up loosing' → 'end up losing'의 동사 형태 오류가 반복된다.",
-   "rule": "'명사구 + 관계대명사 + 주어 + 동사' 구조는 원서 패턴상 생략 가능한 경우가 많으므로, 학생 오류 분석 시 'which they gave us' → 'they gave us'로의 생략 가능성을 우선 검토하고, 'loose' vs 'lose'와 같이 발음·형태가 유사한 동사의 철자 오류는 문맥상 동사 형태(ing, ed, s 등)를 반드시 확인하도록 한다.",
    "sample": [
     "old english",
     "university press",

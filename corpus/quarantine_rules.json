@@ -1,7 +1,31 @@
 {
- "updated": "2026-08-13T12:02:40.815Z",
+ "updated": "2026-08-13T13:57:26.889Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "정답 선지는 지문의 핵심 논리('CP headed by a null complementiser ø carries [Dec-Force]')와 직접적으로 일치해야 하며, 추상적 표현 대신 구체적 구조와 기능을 명시해야 한다.",
+   "src": "자가학습:밑줄함의",
+   "score": 82,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-13T13:50:42.501Z"
+  },
+  {
+   "rule": "CP 분석에서 선언적 힘을 지시하는 요소로 가장 적절한 것은?",
+   "src": "자가학습:빈칸(어구)",
+   "score": 75,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-13T13:55:43.541Z"
+  },
+  {
+   "rule": "모든 출제에서 'CP 분석'이나 '주요 절' 같은 임의적 축약 대신 원문의 핵심을 담은 'null complementiser ø carrying [Dec-Force]' 또는 'the declarative force feature [Dec-Force] carried by the null complementiser ø'로만 지칭명시를 표준화하라.",
+   "src": "자가학습:지칭명시",
+   "score": 62,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-13T13:56:12.868Z"
+  },
   {
    "rule": "모든 선지는 지문의 핵심 단어('ambivalent')를 직접 반영하되, 오답 선지는 해당 단어와 중복되지 않도록 구성해야 한다.",
    "src": "자가학습:제목",
@@ -1577,30 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-08T23:48:37.472Z"
-  },
-  {
-   "rule": "모든 연결어 선택 시 지문의 논리적 흐름(전제→반대→추가 설명)을 명확히 반영하고, 선지의 길이·형태를 통일성 있게 유지하라.",
-   "src": "자가학습:연결어빈칸",
-   "score": 71,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-08T23:49:32.030Z"
-  },
-  {
-   "rule": "지문의 핵심 주장(VP 내 subject-related constituent가 coordinated strings의 constituent 분석을 어렵게 함)을 정확히 반영하고, 단어 수를 15~19단어로 조정하며, 조건어를 문맥에 맞게 재배치하라.",
-   "src": "자가학습:주제문완성",
-   "score": 72,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-08T23:50:10.380Z"
-  },
-  {
-   "rule": "모든 출제에서 수일치, 문법적 역할(주격/목적격), 구문 완결성(생략 금지)을 엄격히 검증하고, 병렬 구조·대등 접속사(and/that) 사용 시 일관된 형식(예: that절 병렬, 동사원형 수동태 등)을 요구하라.",
-   "src": "자가학습:틀린문장 고쳐쓰기",
-   "score": 67,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-08T22:48:36.997Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
