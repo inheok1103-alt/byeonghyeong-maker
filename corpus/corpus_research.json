@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T06:51:03.291Z",
+ "updated": "2026-08-13T08:53:09.568Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T08:52:42.148Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'year after year'와 같은 반복적 연어(Recurrent Collocation)에서 'after' 뒤 명사 생략 오류가 빈번하며, 'teach'→'teaches'와 같이 3인칭 단수 동사 형태 오류도 주목할 만하다. 또한 'dangerous it is'처럼 보어+주어 역순 오류가 문법적 혼란을 초래한다.",
+   "rule": "'A after A' 형태의 반복적 연어(예: year after year, day after day)에서 'after' 뒤 명사를 생략하지 않도록 하며, 특히 3인칭 단수 주어 뒤 동사는 '-s' 형태를 필수적으로 사용하도록 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T06:50:37.451Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'old/new + noun' 형태의 연어에서 명사의 단복수 통일 오류가 빈번하며, 특히 'energy'/'knowledges'와 같이 비표준 복수형이 오답으로 자주 활용됨. 또한 'Italian'과 같이 고유명사/형용사의 대소문자 오류도 빈번한 패턴임.",
    "rule": "'old/new/energy/knowledge/Italian' 등 특정 연어 명사(혹은 형용사)의 단복수 통일, 대소문자 오류, 또는 'those + 복수명사' 구문의 오용(예: 'those energy' → 'those energy sources')을 오답으로 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T15:49:47.624Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 패턴에서 '명사+명사' 구조(예: 'old English', 'university press')가 빈번하며, 한국어 오류는 주로 '명사+동사' 구조에서 발생한다. 또한 과거 시제와 현재 시제의 혼용 오류가 다수 발견된다.",
-   "rule": "'명사+동사' 구조(예: 'important is travel')가 문법적으로 부적절할 경우, 'The + 명사 + thing/ones + 동사' 구조(예: 'The important thing is traveling')로 변환하여 문법적으로 옳은 문장을 만든다.",
    "sample": [
     "old english",
     "university press",
