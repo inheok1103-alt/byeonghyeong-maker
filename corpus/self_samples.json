@@ -1,6 +1,94 @@
 {
- "updated": "2026-08-13T22:06:18.845Z",
+ "updated": "2026-08-13T23:06:27.983Z",
  "samples": [
+  {
+   "ts": "2026-08-13T23:04:29.358Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "ⓐ<u>Necessity</u> . . . ⓑ<u>constrains</u> them to ⓒ<u>alter</u> their former Systems of ⓓ<u>government</u>. ✓ We now must alter our former Systems of government. Instead of writing as clearly and directly as he did in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a ⓔ<u>style</u> so indirect and impersonal? One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked. What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]",
+    "choices": [
+     "necessity: The quality or state of being necessary, unavoidable, or absolutely requisite.",
+     "constrains: To force physically, by strong persuasion or pressuring; to compel; to oblige.",
+     "alter: To change the form or structure of.",
+     "government: The body with the power to make and/or enforce laws to control a country, land a",
+     "style: A founder of a colony."
+    ],
+    "answer": 5,
+    "explanation": "정답 ⓔ의 풀이는 'colonists'의 정의이다. 'style'의 올바른 풀이: Senses relating to a thin, pointed object.\n[오답 진단·처방]\n① 진단: ‘necessity’의 의미는 지문에서 ‘필수적임’이 아니라 ‘필연성’(avoidable 하지 않은 상태)으로 쓰였지만, 학생은 ‘필수적임’이라는 일반적인 뜻을 떠올렸다. 지문 ⓐ에 ‘Necessity... constrains’를 보면 ‘필연성’이 ‘강제’로 이어지는 의미를 담고 있음을 볼 수 있다. → 처방: ‘necessity’를 영영풀이할 때는 ‘unavoidable’이 포함된 뜻을 떠올리고, 지문에서 ‘constrains’와 연결된 의미를 확인하자.\n② 진단: ‘constrains’를 ‘강제하다’라고 해석했지만, 학생은 ‘물리적으로 강제하는’ 의미로만 이해했다. 지문 ⓑ에서 ‘constrains’는 ‘의견 존중’이란 도덕적·사회적 압력으로 colonists 를 ‘compel’하는 의미를 담고 있다. → 처방: ‘constrain’의 의미를 영영풀이할 때는 ‘compel’(강요하다)뿐 아니라 ‘pressuring’(압박하는) 의미도 포함된다는 점을 기억하고, 지문에서 어떤 종류의 ‘강제’인지 확인하자.\n③ 진단: ‘alter’를 ‘형태나 구조를 바꾸다’라고 해석했지만, 학생은 ‘변화’의 일반적인 뜻을 떠올렸다. 지문 ⓒ에서 ‘alter’는 ‘정부 시스템’을 ‘바꾸다’라는 구체적인 변화로 쓰였지만, 학생은 ‘변화’의 폭을 넓게 해석했다. → 처방: ‘alter’를 영영풀이할 때는 ‘change’의 하위 범주로 ‘형태나 구조의 변화’를 떠올리고, 지문에서 어떤 대상이 ‘변화’하는지 확인하자.\n④ 진단: ‘government’를 ‘법을 만들고 집행하는 기관’으로 해석했지만, 학생은 ‘정부’라는 단어 자체에만 집중했다. 지문 ⓓ에서 ‘government’는 ‘정부 시스템’이라는 구체적인 제도나 구조를 가리키며, ‘법률을 만드는 기관’보다 넓은 의미를 담고 있다. → 처방: ‘government’를 영영풀이할 때는 ‘정부’라는 단어뿐 아니라 ‘정치 체제나 시스템’이라는 의미를 떠올리고, 지문에서 어떤 맥락에서 쓰였는지 확인하자.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-13T23:05:53.889Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Jefferson’s Philosophical Grounds for Revolution",
+     "Revolution’s Need for Philosophical Justification",
+     "Jefferson’s Indirect Style in Revolutionary Writing",
+     "All Revolutions Require Abstract Political Philosophy",
+     "Jefferson Always Avoided Direct Arguments in Political Texts"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'JEFFERSON'S PHILOSOPHICAL JUSTIFICATION FOR ANY REVOLUTION'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: JEFFERSON]\n[오답 진단·처방]\n① 진단: ‘Jefferson’s Philosophical Grounds for Revolution’을 제목으로 삼은 학생은 ‘철학적 근거’(philosophical basis)와 ‘혁명’(revolution)이라는 핵심 단어에만 주목하고, 지문이 ‘스타일’(indirect, impersonal)에 초점을 맞추는 사실을 놓쳤음. 지문에서 ‘style’이 3번과 4번에서 반복되며 ‘impersonal generality’와 ‘relentlessly Jefferson uses that style’를 강조한다는 점도 확인하지 못함. → 처방: 제목을 정할 때에는 지문의 ‘핵심 주제’가 무엇인지 먼저 파악하라. ‘철학적 근거’가 아니라 ‘스타일’(indirect, impersonal)이 핵심임을 기억하고, 지문에서 ‘style’이 몇 번이나 언급되는지 확인하라.\n② 진단: ‘Revolution’s Need for Philosophical Justification’을 선택한 학생은 ‘철학적 정당화’(philosophical basis/justification)가 필요하다는 내용에만 집중하고, 지문이 ‘Jefferson 의 스타일’(indirect, impersonal)이라는 ‘방법론’에 대해 설명한다는 사실을 간과했음. ‘necessity coerce’라는 표현도 ‘강제성’이 아닌 ‘정당화’의 필요로 오해했음. → 처방: 지문에서 ‘why in Part 1 did Jefferson choose to write in a style so indirect and impersonal?’라는 질문이 나오므로, ‘방법’(style)이 아니라 ‘내용’(justification)의 필요성을 다룬 선지는 오답임을 기억하라.\n④ 진단: ‘All Revolutions Require Abstract Political Philosophy’를 고른 학생은 ‘혁명’과 ‘철학적’이라는 단어에만 주목하고, 지문이 ‘Jefferson 의 특정 스타일’(indirect, impersonal)과 ‘특정 부분’(Part 1)에 대한 설명임을 놓쳤음. ‘모든 혁명’이 아니라 ‘Jefferson 의 혁명 서사’에 초점을 맞추고 있음을 간과했음. → 처방: 제목은 지문의 ‘범위’를 정확히 반영해야 한다. ‘Jefferson’이라는 특정 인물과 ‘Part 1’이라는 특정 부분에 대한 설명이므로, ‘모든 혁명’을 포함하는 선지는 오답임을 기억하라.\n⑤ 진단: ‘Jefferson Always Avoided Direct Arguments in Political Texts’를 선택한 학생은 ‘indirect’라는 단어에만 주목하고, 지문이 ‘Part 1’이라는 특정 부분에 대한 설명임을 간과했음. Jefferson 이 ‘항상’(always) 직접적이지 않았다는 주장은 지문에서 증명되지 않으며, Part 2와 3에서는 ‘clearly and directly’라고 언급된 사실도 무시했음. → 처방: ‘항상’이라는 절대적 표현은 지문에서 뒷받침되지 않으므로 주의하라. 지문은 ‘Part 1’에서만 indirect 한 스타일을 사용했다는 점을 기억하고, ‘항상’이라는 표현이 포함된 선지는 오답임을 확인하라."
+   }
+  },
+  {
+   "ts": "2026-08-13T23:05:57.347Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 21 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'revolution', 'Jefferson', 'universal' / 19~23단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Jefferson used an indirect style in Part 1 to present revolution as a universal principle rather than a specific colonial act.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 19~23단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-13T22:05:03.727Z",
    "type": "요지",
@@ -248,95 +336,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-13T17:22:50.792Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.67,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "단어의 기원은 시간이 지나면서 점차 드러나는 경우가 많다.",
-     "언어의 의미 변화는 특정 단어에서만 두드러지게 나타난다.",
-     "언어의 의미는 시간이 흐르면서 점차 사라져 단어의 기원을 영원히 알 수 없게 된다.",
-     "언어의 의미 변화는 단어의 기원을 완전히 가리고 만다.",
-     "언어의 의미는 시간이 지나면서 크게 변화하여 단어의 기원을 추적하는 것이 거의 불가능해진다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'However, the meanings of words can change so much over time that tracing their origins becomes nearly impossible.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 단어의 '기원'이 드러난다는 점(①)과 '의미 변화'가 점차 드러난다는 점(①)을 혼동했다. 지문은 '의미 변화'가 기원을 숨기기도 하지만, 반대로 '기원'을 밝혀내는 경우도 있음을 말한다. → 처방: 문제를 풀 때는 '기원'과 '의미 변화'를 명확히 구분하고, 지문에서 두 개념이 어떻게 다뤄지는지 확인할 것.\n② 진단: 언어의 의미 변화가 '특정 단어'에서만 두드러진다는 점(②)을 오해했다. 지문은 '모든 단어'에서 의미 변화가 일어날 수 있음을 설명한다. → 처방: 지문 전체를 꼼꼼히 읽고, '특정'이라는 한정어가 들어간 선지는 주의 깊게 검토할 것.\n③ 진단: 언어의 의미가 '영원히' 알 수 없게 된다는 점(③)을 과장했다. 지문은 '때로는' 기원을 밝혀낼 수 있음을 언급한다. → 처방: 지문의 '때로는', '가능성' 같은 표현을 주의 깊게 읽고, 절대적인 표현(예: 영원히, 절대)에는 의심의 눈길을 둘 것.\n④ 진단: 의미 변화가 '완전히' 기원을 가린다는 점(④)을 잘못 해석했다. 지문은 '완전히 가릴 수도 있지만', '반대로 밝혀낼 수도 있다'고 설명한다. → 처방: 지문에서 '완전히', '반드시' 같은 절대적 표현이 나오면 그 반대 가능성도 생각해 볼 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: However, the meanings of words can change so much over time that tracing their origins becomes nearly impossible.]"
-   }
-  },
-  {
-   "ts": "2026-08-13T17:23:12.275Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "Or, the meanings of words can change so much over time that a ProtoGermanic word ⓐ<u>could possibly trace</u> to a Proto-Indo-European root with a completely different meaning, such that no one would suspect the connection. The word punch, when referring to a drink, ⓑ<u>comes not from</u> a Proto-IndoEuropean word for some kind of liquid, but from its word for five—through Hindi’s five word, ⓒ<u>used that</u> ⓓ<u>the original recipe was developed</u> in India and used five ingredients. Shitte happens. And besides, when scholars put their heads to it they can often figure out a Proto-Indo-European root that the Proto-Germanic words could have come from, via likenesses that no one happened to notice before. ⓔ<u>So one leading scholar</u> of how languages change has only this to say about the issue in a recent work:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [관계사] ⓒ: 'used that' → 'used because' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-13T16:13:28.011Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 5번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "For example: Ten waves pass a dock in 10 seconds (higher frequency waves). Two waves pass a dock in 10 seconds (lower frequency waves). In the first situation, ten waves have to pass in the same amount of time it takes two waves to pass! Because the waves are traveling at the same speed, the ten waves must be closer together (they have a shorter wavelength). 4. \u0007The time it takes a wave to move from one point to another is called WAVE SPEED, represented in equations as v (for velocity). The equation for wave speed is: wave speed = frequency × wavelength (abbreviated as v =  × ) Wave speed is measured in METERS PER SECOND (m/s), frequency is measured in HERTZ (Hz), and wavelength is measured in METERS (m). Waves travel at different speeds in different mediums. For example, mechanical waves, such as sound waves, travel faster in water than they do in air. Electromagnetic waves, such as 10 SEC y (Higher frequency = smaller wavelength)\n\n─────────\n[요약문] Wave (A) is determined by multiplying (B) and wavelength, with variations across mediums.",
-    "choices": [
-     "(A) propagation speed … (B) period",
-     "(A) amplitude … (B) frequency",
-     "(A) wave speed … (B) wavelength",
-     "(A) wavelength … (B) frequency",
-     "(A) propagation speed … (B) frequency"
-    ],
-    "answer": 5,
-    "explanation": "(A) propagation speed / (B) frequency 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문에서 'wave speed = frequency × wavelength'라고 명확히 쓰였는데, 학생이 'propagation speed'와 'period'로 오독하여 주파수와 주기(주기=1/주파수)를 혼동한 것 같다. → 처방: 지문에서 'wave speed'의 공식과 단위를 정확히 확인하고, 'period'가 아닌 'frequency'가 사용되는지 다시 한 번 확인하기.\n② 진단: 지문에서 'wave speed = frequency × wavelength'라고 쓰였는데, 학생이 'amplitude'와 'frequency'로 오독하여 파동의 세기와 주파수를 혼동한 것 같다. → 처방: 파동의 기본 공식(v = f ×)을 기억하고, 'amplitude'는 파동의 세기를 나타내며 공식에 포함되지 않는다는 점을 분명히 하기.\n③ 진단: 지문에서 'wave speed = frequency × wavelength'라고 쓰였는데, 학생이 'wave speed'와 'wavelength'로 오독하여 공식을 반대로 이해한 것 같다. → 처방: 공식의 구조(v = f ×)를 기억하고, 'wave speed'가 'frequency'와 'wavelength'의 곱이라는 점을 확실히 암기하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
