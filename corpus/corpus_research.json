@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T21:07:36.881Z",
+ "updated": "2026-08-13T22:06:18.840Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T22:05:49.569Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거시제와 단수/복수 동사 일치 오류가 빈번하며, 특히 수치(10th, 12th) 뒤의 동사에서 오류가 자주 발생한다. 또한 'take risks'와 같은 관용적 표현이 'doing'으로 대체되는 오류도 다수 확인된다.",
+   "rule": "수치(10th, 12th 등)가 포함된 문장에서 동사 일치 오류를 방지하기 위해, 'and'로 연결된 복수 수치 뒤에는 반드시 복수 동사('are', 'were')를 사용하도록 문제를 설계하라. 예: 'My 10th and 12th exams are very good.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T21:07:06.327Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거형/현재형 동사 사용 시 주어-동사 일치 오류가 빈번하며, 특히 관계대명사 뒤의 동사 수 일치가 문제로 제기됨. 또한, 접속사나 전치사 생략이 문법적 오류를 유발하는 주요 패턴임.",
    "rule": "CEFR B1 수준 이하의 문장에서는 주어-동사 수 일치(예: 'are based' → 'is based')와 접속사/전치사 생략(예: 'In addition the' → 'In addition, the') 오류를 반드시 포함하여 변형문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-10T04:56:16.296Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'old english', 'middle english' 등 역사적 맥락의 연어는 문법 오류와 결합해 'deed'→'Indeed'와 같은 철자 오류나 문법적 오류로 출제될 가능성이 높다. 또한 'reason relations', 'direct object' 등 문법 용어는 오용될 가능성이 높아 오답 설계에 유용하다.",
-   "rule": "'Indeed', 'these kinds of', 'the same thing' 등 고빈도 연어는 문법 오류나 어휘 오류와 결합해 'deed'→'Indeed', 'kind of activities'→'these kinds of activities'와 같이 오답을 설계할 때 반드시 포함시켜야 한다.",
    "sample": [
     "old english",
     "university press",
