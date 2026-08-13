@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-13T15:18:50.109Z",
+ "updated": "2026-08-13T16:14:38.526Z",
  "samples": [
+  {
+   "ts": "2026-08-13T16:13:28.011Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 5번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "For example: Ten waves pass a dock in 10 seconds (higher frequency waves). Two waves pass a dock in 10 seconds (lower frequency waves). In the first situation, ten waves have to pass in the same amount of time it takes two waves to pass! Because the waves are traveling at the same speed, the ten waves must be closer together (they have a shorter wavelength). 4. \u0007The time it takes a wave to move from one point to another is called WAVE SPEED, represented in equations as v (for velocity). The equation for wave speed is: wave speed = frequency × wavelength (abbreviated as v =  × ) Wave speed is measured in METERS PER SECOND (m/s), frequency is measured in HERTZ (Hz), and wavelength is measured in METERS (m). Waves travel at different speeds in different mediums. For example, mechanical waves, such as sound waves, travel faster in water than they do in air. Electromagnetic waves, such as 10 SEC y (Higher frequency = smaller wavelength)\n\n─────────\n[요약문] Wave (A) is determined by multiplying (B) and wavelength, with variations across mediums.",
+    "choices": [
+     "(A) propagation speed … (B) period",
+     "(A) amplitude … (B) frequency",
+     "(A) wave speed … (B) wavelength",
+     "(A) wavelength … (B) frequency",
+     "(A) propagation speed … (B) frequency"
+    ],
+    "answer": 5,
+    "explanation": "(A) propagation speed / (B) frequency 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문에서 'wave speed = frequency × wavelength'라고 명확히 쓰였는데, 학생이 'propagation speed'와 'period'로 오독하여 주파수와 주기(주기=1/주파수)를 혼동한 것 같다. → 처방: 지문에서 'wave speed'의 공식과 단위를 정확히 확인하고, 'period'가 아닌 'frequency'가 사용되는지 다시 한 번 확인하기.\n② 진단: 지문에서 'wave speed = frequency × wavelength'라고 쓰였는데, 학생이 'amplitude'와 'frequency'로 오독하여 파동의 세기와 주파수를 혼동한 것 같다. → 처방: 파동의 기본 공식(v = f ×)을 기억하고, 'amplitude'는 파동의 세기를 나타내며 공식에 포함되지 않는다는 점을 분명히 하기.\n③ 진단: 지문에서 'wave speed = frequency × wavelength'라고 쓰였는데, 학생이 'wave speed'와 'wavelength'로 오독하여 공식을 반대로 이해한 것 같다. → 처방: 공식의 구조(v = f ×)를 기억하고, 'wave speed'가 'frequency'와 'wavelength'의 곱이라는 점을 확실히 암기하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-13T16:13:55.959Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "For example: Ten waves (A) [passes a dock / pass a dock] in 10 seconds (higher frequency waves). Two waves pass a dock in 10 seconds (lower frequency waves). In the first situation, ten waves have to pass in the same amount of time (B) [it takes two / it take two] waves to pass! Because the waves are traveling at the same speed, the ten waves must be closer together (they have a shorter wavelength). 4. \u0007The time it takes a wave to move from one point to another is called WAVE SPEED, (C) [representing in / represented in] equations as v (for velocity). The equation for wave speed is: wave speed = frequency × wavelength (abbreviated as v =  × ) Wave speed is measured in METERS PER SECOND (m/s), frequency is measured in HERTZ (Hz), and wavelength is measured in METERS (m). Waves travel at different speeds in different mediums. For example, mechanical waves, such as sound waves, travel faster in water than they do in air. Electromagnetic waves, such as 10 SEC y (Higher frequency = smaller wavelength)",
+    "choices": [
+     "(A) pass a dock - (B) it takes two - (C) represented in",
+     "(A) passes a dock - (B) it take two - (C) represented in",
+     "(A) pass a dock - (B) it takes two - (C) representing in",
+     "(A) pass a dock - (B) it take two - (C) represented in",
+     "(A) passes a dock - (B) it takes two - (C) representing in"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) pass a dock - (B) it takes two - (C) represented in. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘(A) passes a dock’는 주어가 ‘Ten waves’(복수)이므로 단수 동사 ‘passes’를 쓸 수 없음. ‘(B) it take two’는 주어 ‘it’이 3인칭 단수이므로 동사 ‘take’를 ‘takes’로 써야 함. ‘(C) represented in’는 수동태가 맞지만 문맥에 맞지 않음. → 처방: 주어와 동사의 수 일치를 먼저 확인하고, 수동태와 능동태의 차이를 다시 공부하라.\n③ 진단: ‘(A) pass a dock’는 주어와 동사의 수 일치가 맞음. ‘(B) it takes two’는 주어 ‘it’이 3인칭 단수이므로 동사 ‘takes’를 써야 함. ‘(C) representing in’는 현재분사가 아닌 수동태가 필요함. → 처방: 수동태와 능동태의 차이를 명확히 이해하고, 문장 구조를 분석한 뒤 동사를 선택하라.\n④ 진단: ‘(A) pass a dock’는 주어와 동사의 수 일치가 맞음. ‘(B) it take two’는 주어 ‘it’이 3인칭 단수이므로 동사 ‘take’를 ‘takes’로 써야 함. ‘(C) represented in’는 수동태가 맞지만 문맥에 맞지 않음. → 처방: 주어의 수에 따라 동사를 정확히 바꾸고, 수동태와 능동태의 차이를 다시 공부하라.\n⑤ 진단: ‘(A) pass a dock’는 주어와 동사의 수 일치가 맞음. ‘(B) it takes two’는 주어 ‘it’이 3인칭 단수이므로 동사 ‘takes’를 써야 함. ‘(C) representing in’는 현재분사가 아닌 수동태가 필요함. → 처방: 문장의 주어와 동사의 수 일치를 먼저 확인하고, 수동태와 능동태의 차이를 명확히 이해하라.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-13T15:18:07.775Z",
    "type": "어법(밑줄)",
@@ -279,60 +348,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘한 주제로 관심을 좁히지 말고 경험의 폭을 넓혀야 창의성이 자란다’는 글의 핵심 주장이 ‘eureka moments’가 언제 일어나는지 설명하는 부분에 바로 들어가면 흐름이 끊어질 수 있다. 학생은 ‘창의적 해결책이 갑자기 떠오르는 순간’이 핵심이라는 점만 보고 이 문장이 들어갈 위치로 오해했을 수 있다. → 처방: ‘eureka moments’의 정의와 중요성을 먼저 설명한 뒤, 그 원인으로 ‘경험의 폭’을 제시하는 흐름을 기억하라. 문장은 해결책이 떠오르는 ‘원인’을 설명하는 부분에 들어가야 한다.\n② 진단: ‘Such “eureka moments”’가 ‘창의적 해결책이 갑자기 떠오르는 순간’을 가리킨다는 점은 알았지만, 그 ‘원인’이 ‘경험의 폭’이라는 핵심 주장이 나와야 한다는 흐름을 놓쳤다. 학생은 문장 앞부분만 보고 ‘eureka moments’의 예시로 오해했을 수 있다. → 처방: ‘eureka moments’의 ‘원인’을 설명하는 문장이므로, 그 원인이 ‘경험의 폭’이라는 점을 강조하는 위치에 들어가야 한다. 문장 앞뒤의 논리적 연결을 꼼꼼히 읽어라.\n④ 진단: ‘To enhance spontaneous creativity, therefore, one must pay atte…’는 ‘그러므로 창의성을 높이려면 ~해야 한다’는 ‘결론’ 부분이다. 학생은 ‘결론’에 ‘원인’을 설명하는 문장이 들어가야 한다고 착각했을 수 있다. → 처방: ‘결론’ 부분에는 ‘원인’이 아니라 ‘해결책’이 들어가야 한다. 문장의 역할(원인·결론·예시)을 구분해서 읽어라.\n⑤ 진단: ‘In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed.’는 ‘경험의 폭을 넓히면 해결책이 떠오른다’는 ‘원인’ 설명이다. 학생은 이 부분이 ‘창의성의 핵심’이 ‘경험의 폭’이라는 점을 이미 설명했다고 생각했을 수 있다. → 처방: ‘원인’ 설명 뒤에는 그 ‘원인’이 ‘창의성의 핵심’이라는 점을 강조하는 문장이 와야 한다. 문장과 문장 사이의 ‘흐름’을 따라가며 읽어라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-13T00:00:45.559Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "Ray English 지문 전문 · 원문 그대로 22번 요지 · M A I N P O I N T 경험의 폭과 창의성 요지 창의성을 높이려면 관심을 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다. 소재 창의성과 경험의 폭 Creativity and breadth of experience 주제 관심을 좁히지 말고 경험을 넓혀야 창의성이 자란다 Broad, not narrow, experience fuels creativity 제목 넓은 경험이 창의성을 키운다 Why Broad Experience Fuels Creativity 한눈에 어려운 문제의 창의적 해결책은 긴장을 푼 순간 떠오른다는 관찰에서 출발한다. 흔히 ‘한 주제로 관심을 좁히라’고 하지만, 글은 이를 뒤집어 ‘경험 의 폭 (breadth)을 넓히는 것이 창의성의 핵심’이라고 본다. 경험이 좁으면 상상력의 범위도 좁아져 해롭다는 것이다. 지문 전문 — 시험지 원문 Suppose you have been working on the solution to a challenging technological problem for many years. Let’s also suppose that you have been paying attention to whatever else you have encountered that might be related to the problem. In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed. Such “eureka moments” (when great insights lead to discovery or invention) often take place at unexpected times. To enhance spontaneous creativity, therefore, one must pay attention to the things that could potentially lead to valuable outcomes. This does not mean that you must narrow down your interest to one specific topic. On the contrary, breadth of experience is the key to creativity. If your experience is limited to a narrow range of topics, then the scope of your imagination will likewise be narrow, which would be harmful to creativity. * spontaneous: 자연 발생적인 지문 전문 · 원문 그대로",
-    "choices": [
-     "어려운 기술 문제 해결을 오랫동안 연구하는 경우, 다른 관련 경험도 함께 쌓으면 창의적 해결책이 떠오르지 않는다",
-     "창의적 해결책은 예상치 못한 순간에 자연스럽게 떠오르는 경우가 드물다",
-     "'유레카 순간'은 위대한 통찰이 발견이나 발명으로 이어지지 않을 때 발생한다",
-     "창의성 향상을 위해 관심사를 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다",
-     "경험의 범위가 좁으면 상상력의 범위가 넓어져 창의성에 도움이 된다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문은 '다른 관련 경험을 쌓으면 창의적 해결책이 떠오를 가능성이 있다'고 했으므로, '창의적 해결책이 떠오르지 않는다'는 부분이 반대다. '관련 경험을 쌓으면'과 '창의적 해결책이 떠오른다'는 관계가 잘못 연결됐다. → 처방: 지문에서 '관련 경험을 쌓으면 창의적 해결책이 떠오를 가능성이 있다'고 했으므로, 이 선지는 지문과 완전히 반대라는 점을 기억하고 읽어라.\n② 진단: 지문은 '예상치 못한 순간에 창의적 해결책이 떠오르는 경우가 많다'고 했으므로, '드물다'는 말은 지문의 내용과 반대다. '자주'와 '드물다'의 차이를 혼동한 듯하다. → 처방: 지문에서 '자주' 또는 '흔히'라는 표현이 나오면 '드물다'는 선지가 오답일 가능성이 크다는 점을 기억해라.\n③ 진단: 지문은 '유레카 순간이 위대한 통찰이 발견이나 발명으로 이어질 때 발생한다'고 했으므로, '이어지지 않을 때'라는 말은 지문의 내용과 반대다. '발견이나 발명으로 이어진다'는 핵심 조건을 놓쳤다. → 처방: 지문에서 '유레카 순간'이란 '위대한 통찰이 발견이나 발명으로 이어질 때'라는 점을 꼭 기억하고, 조건을 반대로 해석하지 않도록 주의해라.\n⑤ 진단: 지문은 '경험의 범위가 넓어야 상상력의 범위가 넓어져 창의성에 도움이 된다'고 했으므로, '경험의 범위가 좁으면 상상력의 범위가 넓어진다'는 말은 지문의 내용과 반대다. '넓다'와 '좁다'의 관계를 반대로 이해한 듯하다. → 처방: 지문에서 '경험의 폭(넓음)이 창의성에 도움이 된다'는 핵심 메시지를 기억하고, '좁다'와 '넓다'의 관계를 반대로 해석하지 않도록 주의해라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-12T23:06:10.386Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'existential', 'quantifiers', 'operators' / 10~14단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Tense operators must always take scope over existential quantifiers binding event variables.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

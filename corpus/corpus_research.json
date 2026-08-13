@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T15:18:50.106Z",
+ "updated": "2026-08-13T16:14:38.521Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T16:14:08.598Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거분사(過去分詞)나 수동태 구문에서 대명사 위치가 오류로 자주 발생하며, 특히 'that'절 내의 수동태에서 대명사 주격이 누락되는 패턴이 두드러진다.",
+   "rule": "수동태 문장에서 'that'절 내 대명사 주격을 생략하지 않도록 하며, 특히 'had marked on it' → 'it had marked on it'과 같이 대명사를 주어로 명시적으로 삽입하는 패턴을 오답으로 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T15:18:21.962Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'points of views' → 'point of view'와 같이 복수형 명사구가 단수형으로 축약되는 패턴, 'reasons' → 'these reasons'와 같이 한정사 교정 오류가 빈번함을 확인할 수 있다.",
    "rule": "복수형 명사구가 단수형으로 축약되어야 하는 경우(예: 'points of views' → 'point of view')와 한정사 오류(예: 'this reasons' → 'these reasons')를 반드시 문항으로 출제하여 학생들의 오류 인지력을 테스트하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T20:57:15.901Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'during'는 명사구(noun phrase)와의 연어 강도가 높아, 'during + 부정사' 형태는 드물고 오류 가능성 높음. 또한 'suggest'는 3인칭 단수 현재형에서 '-s'가 필수이며, 'subsidize'는 '-ize' 동사로서 철자 오류 발생 가능성 높음.",
-   "rule": "'during + [명사구]' 패턴에서 'during + 동사원형' 형태는 오류 가능성 90% 이상이므로, 'during' 뒤에는 반드시 명사구(예: 'normal conversation', 'the lecture')가 오도록 문장을 설계하라.",
    "sample": [
     "old english",
     "university press",
