@@ -1,6 +1,79 @@
 {
- "updated": "2026-08-13T16:14:38.526Z",
+ "updated": "2026-08-13T17:23:43.467Z",
  "samples": [
+  {
+   "ts": "2026-08-13T17:19:46.537Z",
+   "type": "혼합통합형",
+   "level": "중",
+   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
+    "passage": "Or, the meanings of words can change so much over time that a ProtoGermanic word could possibly trace to a Proto-Indo-European root with a completely different meaning, such that no one would suspect the connection. The word punch, when referring to a drink, comes not from a Proto-IndoEuropean word for some kind of liquid, but from its word for five—through Hindi’s five word, used because the original recipe was developed in India and used five ingredients. Shitte happens. And besides, when scholars put their heads to it they can often figure out a Proto-Indo-European root that the Proto-Germanic words could have come from, via likenesses that no one happened to notice before. So one leading scholar of how languages change has only this to say about the issue in a recent work:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-13T17:22:50.792Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.67,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "단어의 기원은 시간이 지나면서 점차 드러나는 경우가 많다.",
+     "언어의 의미 변화는 특정 단어에서만 두드러지게 나타난다.",
+     "언어의 의미는 시간이 흐르면서 점차 사라져 단어의 기원을 영원히 알 수 없게 된다.",
+     "언어의 의미 변화는 단어의 기원을 완전히 가리고 만다.",
+     "언어의 의미는 시간이 지나면서 크게 변화하여 단어의 기원을 추적하는 것이 거의 불가능해진다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'However, the meanings of words can change so much over time that tracing their origins becomes nearly impossible.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 단어의 '기원'이 드러난다는 점(①)과 '의미 변화'가 점차 드러난다는 점(①)을 혼동했다. 지문은 '의미 변화'가 기원을 숨기기도 하지만, 반대로 '기원'을 밝혀내는 경우도 있음을 말한다. → 처방: 문제를 풀 때는 '기원'과 '의미 변화'를 명확히 구분하고, 지문에서 두 개념이 어떻게 다뤄지는지 확인할 것.\n② 진단: 언어의 의미 변화가 '특정 단어'에서만 두드러진다는 점(②)을 오해했다. 지문은 '모든 단어'에서 의미 변화가 일어날 수 있음을 설명한다. → 처방: 지문 전체를 꼼꼼히 읽고, '특정'이라는 한정어가 들어간 선지는 주의 깊게 검토할 것.\n③ 진단: 언어의 의미가 '영원히' 알 수 없게 된다는 점(③)을 과장했다. 지문은 '때로는' 기원을 밝혀낼 수 있음을 언급한다. → 처방: 지문의 '때로는', '가능성' 같은 표현을 주의 깊게 읽고, 절대적인 표현(예: 영원히, 절대)에는 의심의 눈길을 둘 것.\n④ 진단: 의미 변화가 '완전히' 기원을 가린다는 점(④)을 잘못 해석했다. 지문은 '완전히 가릴 수도 있지만', '반대로 밝혀낼 수도 있다'고 설명한다. → 처방: 지문에서 '완전히', '반드시' 같은 절대적 표현이 나오면 그 반대 가능성도 생각해 볼 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: However, the meanings of words can change so much over time that tracing their origins becomes nearly impossible.]"
+   }
+  },
+  {
+   "ts": "2026-08-13T17:23:12.275Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "Or, the meanings of words can change so much over time that a ProtoGermanic word ⓐ<u>could possibly trace</u> to a Proto-Indo-European root with a completely different meaning, such that no one would suspect the connection. The word punch, when referring to a drink, ⓑ<u>comes not from</u> a Proto-IndoEuropean word for some kind of liquid, but from its word for five—through Hindi’s five word, ⓒ<u>used that</u> ⓓ<u>the original recipe was developed</u> in India and used five ingredients. Shitte happens. And besides, when scholars put their heads to it they can often figure out a Proto-Indo-European root that the Proto-Germanic words could have come from, via likenesses that no one happened to notice before. ⓔ<u>So one leading scholar</u> of how languages change has only this to say about the issue in a recent work:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [관계사] ⓒ: 'used that' → 'used because' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-13T16:13:28.011Z",
    "type": "요약문AB",
@@ -262,92 +335,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-13T02:49:10.574Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "Of course, ⓐ<u>this can only be a</u> a partial representation of the structure of phrases like those in (1)–(5). What about the elements that immediately precede the Heads, such as not , an , so , quite and much in (1)–(5)? Unlike Complements, these seem to relate ⓑ<u>not so much to</u> the Head, but to the Head and Complement taken together. Th us, in (1) we could say that not adds something to the sequence destroy the garden : ⓒ<u>it negates it</u>. We can ask the question: ‘what did the defendants not do?’, and the answer would be ‘destroy the garden’. In (2) ⓓ<u>the determinative an</u> relates to the sequence analysis of the sentence , not just to the Head. And in (3)–(5) the adverbs so , quite and much intensify the strings fond of coﬀ ee , in agreement and faster than me , respectively. ⓔ<u>We will say</u> that the elements that precede the Head in (1)–(5) specify the Head + Complement sequence; thus, we will refer to them as Speciﬁ ers (abbreviated as ‘Spec’). We can now expand our partial tree in (7) for each of the phrases in (1)–(5) as follows: (8)",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [시제] ⓐ: 'this can only be a' → 'this can only be' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-13T02:50:00.688Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the modifying function of specifiers on head-complement units",
-     "the negation role of specifiers in negative constructions",
-     "how specifiers determine the grammatical structure of phrases",
-     "the universal necessity of specifiers in all syntactic sequences",
-     "the frequent intensification of specifiers in head-complement units"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Specifiers' role in modifying Head + Complement sequences'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘not’이 부정 구문에서만 쓰인다고 오해한 듯하다. 지문은 ‘not’이 ‘destroy the garden’이라는 Head+Complement 전체를 부정한다고 설명하지만, 학생은 ‘not’이 부정 구문에서만 특정한 역할을 한다고 단순화해서 보았다. → 처방: ‘Specifier’의 역할을 ‘Head+Complement 전체에 대한 기능’이라는 큰 틀에서 다시 읽고, 부정 구문뿐 아니라 다른 예시들도 함께 비교해보기.\n③ 진단: Specifier 가 문법 구조 자체를 ‘결정’한다고 오해한 듯하다. 지문은 Specifier 가 Head+Complement 의 ‘의미나 기능’을 구체화한다고 설명하는데, 학생은 ‘구조’를 결정하는 것으로 잘못 이해했다. → 처방: ‘결정하다’라는 단어가 ‘구조’를 의미하는지 ‘의미나 기능’을 의미하는지 문맥에서 다시 확인하고, Specifier 의 역할을 ‘수식’ 또는 ‘강조’로 재정의하기.\n④ 진단: Specifier 가 모든 구문에서 ‘필수적’이라고 오해한 듯하다. 지문은 Specifier 가 Head+Complement 의 ‘일부를 보완’한다고 설명하지만, 학생은 모든 구문에 필수적으로 필요하다고 일반화했다. → 처방: ‘필수’라는 말이 지문에서 나온 적이 있는지 확인하고, 예시가 ‘부분적’임을 기억하며 Specifier 의 ‘선택적’ 역할을 강조하는 부분 다시 읽기.\n⑤ 진단: Specifier 가 ‘자주’ ‘강조’ 역할을 한다고 오해한 듯하다. 지문은 ‘so, quite, much’가 ‘강조’를 한다고 설명하지만, 학생은 ‘자주’라는 빈도를 강조한 것으로 보인다. → 처방: ‘자주’라는 단어가 지문에 없음을 확인하고, Specifier 의 역할이 ‘강조’뿐 아니라 ‘부정’이나 ‘한정’ 등 다양한 기능이 있음을 예시와 함께 정리하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Specifiers]"
-   }
-  },
-  {
-   "ts": "2026-08-12T23:59:49.496Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.14,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.14)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] This does not mean that you must narrow down your interest to one specific topic.\n\nRay English 지문 전문 · 원문 그대로 22번 요지 · M A I N P O I N T 경험의 폭과 창의성 요지 창의성을 높이려면 관심을 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다. 소재 창의성과 경험의 폭 Creativity and breadth of experience 주제 관심을 좁히지 말고 경험을 넓혀야 창의성이 자란다 Broad, not narrow, experience fuels creativity 제목 넓은 경험이 창의성을 키운다 Why Broad Experience Fuels Creativity 한눈에 어려운 문제의 창의적 해결책은 긴장을 푼 순간 떠오른다는 관찰에서 출발한다. 흔히 ‘한 주제로 관심을 좁히라’고 하지만, 글은 이를 뒤집어 ‘경험 의 폭 (breadth)을 넓히는 것이 창의성의 핵심’이라고 본다. 경험이 좁으면 상상력의 범위도 좁아져 해롭다는 것이다. 지문 전문 — 시험지 원문 Suppose you have been working on the solution to a challenging technological problem for many years. Let’s also suppose that you have been paying attention to whatever else you have encountered that might be related to the problem. In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed. ( ① ) Such “eureka moments” (when great insights lead to discovery or invention) often take place at unexpected times. ( ② ) To enhance spontaneous creativity, therefore, one must pay attention to the things that could potentially lead to valuable outcomes. ( ③ ) On the contrary, breadth of experience is the key to creativity. ( ④ ) If your experience is limited to a narrow range of topics, then the scope of your imagination will likewise be narrow, which would be harmful to creativity. ( ⑤ ) * spontaneous: 자연 발생적인 지문 전문 · 원문 그대로",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘한 주제로 관심을 좁히지 말고 경험의 폭을 넓혀야 창의성이 자란다’는 글의 핵심 주장이 ‘eureka moments’가 언제 일어나는지 설명하는 부분에 바로 들어가면 흐름이 끊어질 수 있다. 학생은 ‘창의적 해결책이 갑자기 떠오르는 순간’이 핵심이라는 점만 보고 이 문장이 들어갈 위치로 오해했을 수 있다. → 처방: ‘eureka moments’의 정의와 중요성을 먼저 설명한 뒤, 그 원인으로 ‘경험의 폭’을 제시하는 흐름을 기억하라. 문장은 해결책이 떠오르는 ‘원인’을 설명하는 부분에 들어가야 한다.\n② 진단: ‘Such “eureka moments”’가 ‘창의적 해결책이 갑자기 떠오르는 순간’을 가리킨다는 점은 알았지만, 그 ‘원인’이 ‘경험의 폭’이라는 핵심 주장이 나와야 한다는 흐름을 놓쳤다. 학생은 문장 앞부분만 보고 ‘eureka moments’의 예시로 오해했을 수 있다. → 처방: ‘eureka moments’의 ‘원인’을 설명하는 문장이므로, 그 원인이 ‘경험의 폭’이라는 점을 강조하는 위치에 들어가야 한다. 문장 앞뒤의 논리적 연결을 꼼꼼히 읽어라.\n④ 진단: ‘To enhance spontaneous creativity, therefore, one must pay atte…’는 ‘그러므로 창의성을 높이려면 ~해야 한다’는 ‘결론’ 부분이다. 학생은 ‘결론’에 ‘원인’을 설명하는 문장이 들어가야 한다고 착각했을 수 있다. → 처방: ‘결론’ 부분에는 ‘원인’이 아니라 ‘해결책’이 들어가야 한다. 문장의 역할(원인·결론·예시)을 구분해서 읽어라.\n⑤ 진단: ‘In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed.’는 ‘경험의 폭을 넓히면 해결책이 떠오른다’는 ‘원인’ 설명이다. 학생은 이 부분이 ‘창의성의 핵심’이 ‘경험의 폭’이라는 점을 이미 설명했다고 생각했을 수 있다. → 처방: ‘원인’ 설명 뒤에는 그 ‘원인’이 ‘창의성의 핵심’이라는 점을 강조하는 문장이 와야 한다. 문장과 문장 사이의 ‘흐름’을 따라가며 읽어라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]

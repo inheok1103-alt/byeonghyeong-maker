@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T16:14:38.521Z",
+ "updated": "2026-08-13T17:23:43.463Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T17:23:14.101Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "‘focus in’ → ‘focus on’(연어 오류), ‘consume’(동사) → ‘car’(명사) 생략 오류, ‘clear in’ → ‘clearly is’(어순·형용사→부사 전환) 등 다층적 오류가 빈발한다.",
+   "rule": "‘focus on’, ‘care about’, ‘support’ 등 전치사 필수 동사 뒤에는 명사/명사구만 오며, 동사 원형(consume)이나 전치사(in) 오용을 배제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T16:14:08.598Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "명사 복수형 오류와冠詞(a/an/the) 누락/오용이 빈번하며, 특히 'a + 복수명사'가 'a car'처럼 단수명사로 수정되는 패턴이 두드러진다. 또한 전치사(about/aboue)나 동사 시제(use→used) 오류도 빈번하다.",
    "rule": "한국어 학습자에게 제시할 문항에서, 'a + 복수명사' 형태(예: a cars, a informations)를 포함하거나,冠詞(a/an/the) 오용·누락, 전치사 오용, 시제 불일치(present→past) 오류가 포함된 문장을 1개 반드시 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T21:50:21.080Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'points of views' → 'point of view'와 같이 복수형 명사구가 단수형으로 축약되는 패턴, 'reasons' → 'these reasons'와 같이 한정사 교정 오류가 빈번함을 확인할 수 있다.",
-   "rule": "복수형 명사구가 단수형으로 축약되어야 하는 경우(예: 'points of views' → 'point of view')와 한정사 오류(예: 'this reasons' → 'these reasons')를 반드시 문항으로 출제하여 학생들의 오류 인지력을 테스트하라.",
    "sample": [
     "old english",
     "university press",
