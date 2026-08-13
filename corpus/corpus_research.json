@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T08:53:09.568Z",
+ "updated": "2026-08-13T10:31:47.675Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T10:31:17.361Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "영어에서 관사(a/an/the) 오류는 CEFR B1~B2 수준에서 빈번하며, 특히 'a'와 'an'의 선택 오류, 관사 생략, 또는 복수형/단수형 오류가 두드러진다.",
+   "rule": "CEFR B1~B2 수준의 내신 문항에서 관사(a/an/the) 사용 오류를 테스트할 경우, 'a'와 'an'의 선택, 관사의 생략, 또는 복수형/단수형의 불일치를 포함한 문장을 1개 이상 포함하여 오류를 찾아 수정하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T08:52:42.148Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구 내 관사 생략 오류와 전치사+명사 조합의 오류가 빈번하며, 특히 'most of + 복수명사'가 'most + 복수명사'로 수정되는 패턴이 두드러진다.",
    "rule": "복수명사 앞에 'most of'가 쓰였을 때, 'most + 복수명사'로 수정하는 것이 문법적으로 옳은지 확인하라. 또한 'to + 동사원형' 구조에서 부정사가 문두에 오지 않도록 'not to'로 재구성하는지 검증하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T16:58:38.185Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'old/new + noun' 형태의 연어에서 명사의 단복수 통일 오류가 빈번하며, 특히 'energy'/'knowledges'와 같이 비표준 복수형이 오답으로 자주 활용됨. 또한 'Italian'과 같이 고유명사/형용사의 대소문자 오류도 빈번한 패턴임.",
-   "rule": "'old/new/energy/knowledge/Italian' 등 특정 연어 명사(혹은 형용사)의 단복수 통일, 대소문자 오류, 또는 'those + 복수명사' 구문의 오용(예: 'those energy' → 'those energy sources')을 오답으로 설계하라.",
    "sample": [
     "old english",
     "university press",

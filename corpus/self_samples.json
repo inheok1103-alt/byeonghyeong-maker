@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-13T08:53:09.572Z",
+ "updated": "2026-08-13T10:31:47.679Z",
  "samples": [
+  {
+   "ts": "2026-08-13T10:31:02.425Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "If we assume that help you is a VP whereas to help you is a TP, we can account for the contrasts in (7) and (8) by saying that ought is the kind of word which selects (i.e. ‘takes’) an infinitival TP as its complement, whereas should is the kind of word which selects an infinitival VP as its complement. Implicit in this claim is the assumption that different words like ought and should have different selectional properties which determine the range of complements they permit. The infinitive phrase to help you is formed by merging the infinitive particle to with the verb phrase help you. If (as we argued in the previous chapter) infinitival to is an infinitival tense particle (belonging to the category T) and if to is the head of the phrase to help you, the structure formed by merging to with the verb phrase/VP help you in (5) will be the TP (i.e. infinitival Tense Projection/Tense Phrase) in (9) below:",
+    "choices": [
+     "ought 는 to+동사구 보다는 to+동사원형 TP 를 선택하는 성질을 지닌다.",
+     "should 는 동사원형 VP 를 선택하는 성질을 지닌다.",
+     "ought 와 should 는 서로 다른 선택 속성을 지닌다.",
+     "to+help you 는 to(시제 입자)와 help you(동사구)의 결합으로 TP 구조를 이룬다.",
+     "ought 는 to+동사원형 TP 가 아니라 to+동사구 VP 를 선택하는 성질을 지닌다."
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 ought 는 to+동사원형 TP 를 선택한다고 명시했는데, 학생은 이를 to+동사구(VP)로 오해한 듯하다. 'to+동사원형 TP'와 'to+동사구 VP'를 혼동한 것으로 보인다. → 처방: TP 와 VP 의 구조적 차이를 정확히 짚고, to+동사원형이 TP 를 이룬다는 점을 다시 한 번 확인하라.\n② 진단: 지문에서 should 는 동사원형 VP 를 선택한다고 했지만, 학생은 이를 동사구 VP 로 오해한 듯하다. '동사원형 VP'와 '동사구 VP'의 구분이 모호한 상태다. → 처방: VP 와 동사원형 VP 의 차이를 명확히 구분하고, should 가 동사원형 VP 를 선택한다는 점을 다시 확인하라.\n③ 진단: 지문에서 ought 와 should 는 서로 다른 선택 속성을 지닌다고 명시했는데, 학생은 이를 동일하게 오해한 듯하다. 선택 속성의 차이를 제대로 읽지 못한 것으로 보인다. → 처방: ought 와 should 의 선택 속성 차이를 다시 한 번 정리하고, 각 단어의 선택 범위를 정확히 기억하라.\n④ 진단: 지문에서 to+help you 는 to(시제 입자)와 help you(동사구)의 결합으로 TP 구조를 이룬다고 명시했는데, 학생은 이를 오해한 듯하다. TP 와 VP 의 구조적 구분을 제대로 이해하지 못한 상태다. → 처방: to 가 시제 입자(T)로서 TP 를 형성한다는 점을 다시 확인하고, TP 와 VP 의 구조적 차이를 명확히 하라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-13T08:51:53.868Z",
    "type": "전체문장배열",
@@ -283,41 +318,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] You remembered buying the milk after you had already purchased it, while you remembered to buy the milk before the planned purchase.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 20~24단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-12T19:28:32.741Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "NEW WORDS juxtapose juk stə pōz´ plight plīt covert kō´ vərt cope kōp incompatibility in kəm pat´ ə bil´ ə tē WEEK 22 DAY 1 FEMALE ALCOHOLICS When we juxtapose the words “woman” and “alcoholic” many readers are surprised. ① However, the plight of America’s several million female alcoholics is rapidly increasing in intensity. ② But the statistics are inexact because it is estimated that there are nine covert alcoholics for every one under treatment. ③ Women drink to help themselves to cope with life’s vicissitudes. ④ The covert nature of alcoholism among women often leads to social stigma, which further exacerbates their plight and makes it harder for them to cope. ⑤ * They drink because of financial pressures, incompatibility, frustration,* and related reasons. Sample Sentences Use the new words in the following sentences. If we were to ________________ our philosophies, your materialism* would conflict with my idealism. Judge Felder commented with asperity* upon the wife’s charge of ________________ . Just how our club’s president is able to ________________ with so many disparate* personalities is something I’ll never understand. The ________________ of the refugees who wandered about in a desultory* fashion moved us to tears. Woodrow Wilson stated that he found ________________ agreements to be reprehensible.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①의 'However'가 '놀랍지만'이라는 뜻으로 앞 문장과 대조를 이루는 연결어임을 오해하지 못하고, '놀라움을 강조하는 문장'으로만 읽었다. ②의 'plight'가 '곤경'이라는 뜻임을 몰라서 전체 흐름을 보지 못했다. → 처방: 지문의 흐름을 파악하려면 'However'나 'But' 같은 연결어의 역할을 먼저 확인하라. 문맥상 앞 문장과 반대·대조를 이루는지, 보충·예외를 나타내는지 확인할 때 'plight' 같은 어려운 단어는 사전으로 뜻을 먼저 찾고 읽어라.\n② 진단: ②의 'But'이 통계의 부정확성을 설명하는 문장임을 모르고, '여성 알코올리즘의 심각성'을 강조하는 문장으로만 읽었다. 'inexact'가 '부정확한'이라는 뜻임을 몰라서 문맥을 오해했다. → 처방: 지문의 흐름을 볼 때는 'But', 'However' 같은 연결어의 역할을 먼저 확인하라. 통계가 부정확하다는 내용이라면 그 뒤에 나오는 통계 수치나 이유를 주의 깊게 읽어라.\n③ 진단: ③의 'Women drink to help themselves to cope with life’s vicissitudes'가 '여성 알코올리즘의 원인'을 설명하는 문장임을 모르고, '일반적인 사실'로만 읽었다. 'vicissitudes'가 '변화·변동'이라는 뜻임을 몰라서 문맥을 오해했다. → 처방: 지문의 흐름을 볼 때는 문장 하나가 어떤 역할을 하는지 확인하라. 원인·결과·예시·대조 중 어떤 역할을 하는지 먼저 파악하고, 어려운 단어는 사전으로 뜻을 찾은 뒤 다시 읽어라.\n⑤ 진단: ⑤의 'They drink because of financial pressures, incompatibility, frustration,'가 '여성 알코올리즘의 원인'을 구체적으로 나열하는 문장임을 모르고, '단순한 예시'로만 읽었다. 'incompatibility'가 '불화·상충'이라는 뜻임을 몰라서 문맥을 오해했다. → 처방: 지문의 흐름을 볼 때는 문장 하나가 어떤 역할을 하는지 확인하라. 원인·결과·예시·대조 중 어떤 역할을 하는지 먼저 파악하고, 어려운 단어는 사전으로 뜻을 찾은 뒤 다시 읽어라. 특히 'because of' 같은 표현이 나오면 원인임을 바로 알 수 있어야 한다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]
