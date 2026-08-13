@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-13T00:03:26.689Z",
+ "updated": "2026-08-13T02:51:09.915Z",
  "samples": [
+  {
+   "ts": "2026-08-13T02:49:10.574Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Of course, ⓐ<u>this can only be a</u> a partial representation of the structure of phrases like those in (1)–(5). What about the elements that immediately precede the Heads, such as not , an , so , quite and much in (1)–(5)? Unlike Complements, these seem to relate ⓑ<u>not so much to</u> the Head, but to the Head and Complement taken together. Th us, in (1) we could say that not adds something to the sequence destroy the garden : ⓒ<u>it negates it</u>. We can ask the question: ‘what did the defendants not do?’, and the answer would be ‘destroy the garden’. In (2) ⓓ<u>the determinative an</u> relates to the sequence analysis of the sentence , not just to the Head. And in (3)–(5) the adverbs so , quite and much intensify the strings fond of coﬀ ee , in agreement and faster than me , respectively. ⓔ<u>We will say</u> that the elements that precede the Head in (1)–(5) specify the Head + Complement sequence; thus, we will refer to them as Speciﬁ ers (abbreviated as ‘Spec’). We can now expand our partial tree in (7) for each of the phrases in (1)–(5) as follows: (8)",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [시제] ⓐ: 'this can only be a' → 'this can only be' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-13T02:50:00.688Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the modifying function of specifiers on head-complement units",
+     "the negation role of specifiers in negative constructions",
+     "how specifiers determine the grammatical structure of phrases",
+     "the universal necessity of specifiers in all syntactic sequences",
+     "the frequent intensification of specifiers in head-complement units"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Specifiers' role in modifying Head + Complement sequences'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘not’이 부정 구문에서만 쓰인다고 오해한 듯하다. 지문은 ‘not’이 ‘destroy the garden’이라는 Head+Complement 전체를 부정한다고 설명하지만, 학생은 ‘not’이 부정 구문에서만 특정한 역할을 한다고 단순화해서 보았다. → 처방: ‘Specifier’의 역할을 ‘Head+Complement 전체에 대한 기능’이라는 큰 틀에서 다시 읽고, 부정 구문뿐 아니라 다른 예시들도 함께 비교해보기.\n③ 진단: Specifier 가 문법 구조 자체를 ‘결정’한다고 오해한 듯하다. 지문은 Specifier 가 Head+Complement 의 ‘의미나 기능’을 구체화한다고 설명하는데, 학생은 ‘구조’를 결정하는 것으로 잘못 이해했다. → 처방: ‘결정하다’라는 단어가 ‘구조’를 의미하는지 ‘의미나 기능’을 의미하는지 문맥에서 다시 확인하고, Specifier 의 역할을 ‘수식’ 또는 ‘강조’로 재정의하기.\n④ 진단: Specifier 가 모든 구문에서 ‘필수적’이라고 오해한 듯하다. 지문은 Specifier 가 Head+Complement 의 ‘일부를 보완’한다고 설명하지만, 학생은 모든 구문에 필수적으로 필요하다고 일반화했다. → 처방: ‘필수’라는 말이 지문에서 나온 적이 있는지 확인하고, 예시가 ‘부분적’임을 기억하며 Specifier 의 ‘선택적’ 역할을 강조하는 부분 다시 읽기.\n⑤ 진단: Specifier 가 ‘자주’ ‘강조’ 역할을 한다고 오해한 듯하다. 지문은 ‘so, quite, much’가 ‘강조’를 한다고 설명하지만, 학생은 ‘자주’라는 빈도를 강조한 것으로 보인다. → 처방: ‘자주’라는 단어가 지문에 없음을 확인하고, Specifier 의 역할이 ‘강조’뿐 아니라 ‘부정’이나 ‘한정’ 등 다양한 기능이 있음을 예시와 함께 정리하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Specifiers]"
+   }
+  },
   {
    "ts": "2026-08-12T23:59:49.496Z",
    "type": "문장삽입",
@@ -282,74 +334,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'The senator delivered an angry and prolonged verbal attack criticizing excessive spending in defense funding.'을 함의한다.\n[오답 진단·처방]\n① 진단: 학생은 'diatribe'가 '길고 자세한 설명'을 뜻한다고 오해한 것 같다. 'diatribe'는 '격렬한 비난'을 뜻하는데, 학생은 'discussing the details'라는 표현에 이끌려 이 뜻을 혼동한 듯하다. → 처방: 'diatribe'의 뜻을 정확히 기억하고, 문맥에서 'angry and prolonged verbal attack'가 맞는지를 먼저 확인해라.\n③ 진단: 학생은 'ostentatious'가 '겉치레가 심한'을 뜻한다는 점을 무시하고, 'nominal'의 '명목상의'라는 뜻을 떠올린 것 같다. 'nominal'은 '형식적인'을 뜻하므로 문맥에 맞지 않다. → 처방: 단어의 뜻을 정확히 알고, 문장에서 '겉치레가 심한'이라는 말이 어울리는지 먼저 생각해라.\n④ 진단: 학생은 'timorous'가 '겁이 많은'을 뜻한다는 점을 무시하고, 'ilk'의 '유사한 종류'라는 뜻을 떠올린 것 같다. 'ilk'는 문맥에 맞지 않는다. → 처방: 단어의 뜻을 정확히 알고, 문장에서 '겁이 많은'이라는 말이 어울리는지 먼저 생각해라.\n⑤ 진단: 학생은 'prestigious'가 '화려한'을 뜻한다고 오해한 것 같다. 'prestigious'는 '명망 있는'을 뜻하는데, 학생은 'flamboyant'의 '화려한'이라는 뜻을 떠올린 듯하다. → 처방: 'prestigious'의 뜻을 정확히 기억하고, 문맥에서 '명망 있는 직책'이 어울리는지 먼저 확인해라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-12T15:16:50.829Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (diatribe, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (schism, utopia). 3.Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. 4.Anyone so (ilk, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (prestigious, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.\n\n─────────\n[요약문] The exercise demonstrates how (A) word choice in context shapes (B) communication outcomes by testing nuanced vocabulary comprehension.",
-    "choices": [
-     "(A) semantic precision … (B) effective expression",
-     "(A) syntactic structure … (B) semantic precision",
-     "(A) etymological origin … (B) effective expression",
-     "(A) word frequency … (B) communication outcomes",
-     "(A) contextual fit … (B) literal interpretation"
-    ],
-    "answer": 1,
-    "explanation": "(A) semantic precision / (B) effective expression 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 'syntactic structure'는 문장 구조를 뜻하는데, 이 문제는 단어의 '의미 정밀도'와 '표현 효과'를 다룬다. 학생은 '문장 구조'와 '의미'를 헷갈렸다. → 처방: 문제에서 '의미'가 중심인지 확인하고, '의미 정밀도'와 '표현 효과'가 연결되는지 먼저 생각하자.\n③ 진단: 'etymological origin'은 단어의 어원을 뜻하는데, 이 문제는 단어의 '의미'와 '표현'을 다룬다. 학생은 '어원'과 '의미'를 혼동했다. → 처방: 문제에서 '의미'가 중요하다는 점을 먼저 떠올리고, '어원'보다는 '의미 정밀도'가 더 관련이 있는지 확인하자.\n④ 진단: 'word frequency'는 단어의 빈도를 뜻하는데, 이 문제는 단어의 '의미'와 '표현 효과'를 다룬다. 학생은 '빈도'와 '의미'를 잘못 연결했다. → 처방: 문제에서 '의미'와 '표현'이 핵심인지 확인하고, '단어 빈도'보다는 '의미 정밀도'가 더 관련이 있는지 먼저 생각해보자.\n⑤ 진단: 'contextual fit'는 문맥에 맞는지를 뜻하는데, 이 문제는 단어의 '의미'와 '표현 효과'를 다룬다. 학생은 '문맥'과 '의미'를 혼동했다. → 처방: 문제에서 '의미'가 중요하다는 점을 먼저 떠올리고, '문맥에 맞음'보다는 '의미 정밀도'가 더 관련이 있는지 확인하자.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-12T12:01:53.131Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "어휘는 한 언어의 모든 구성원이 공유하는 기호 체계로, 개인의 사용 여부와 무관하게 존재한다.",
-     "언어의 변화는 어휘의 변동에 따라 결정되며, 어휘는 그 변화의 주된 원인이 된다.",
-     "어휘는 개인이 습득한 언어적 요소에 한정되지 않으며, 공동체의 관습에 따라 형성된다.",
-     "어휘는 한 언어 공동체에서 통용되는 기호 집합으로, 모든 구성원에게 동일하게 적용된다.",
-     "어휘는 한 언어 공동체에서 통용되거나 개인이 습득한 일련의 기호 집합체이다."
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The core argument of the text is that vocabulary is a set of words used in a particular language or known to an individual.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·인과 전도·범위 축소·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The core argument of the text is that vocabulary is a set of words used in a particular language or known to an individual.]\n[오답 진단·처방]\n① 진단: 지문에서 'putative'의 뜻이 'commonly accepted'임을 확인했으나, '어휘는 한 언어의 모든 구성원이 공유하는 기호 체계'라는 선지의 표현을 '개인의 사용 여부와 무관하게 존재한다'로 오해하여 어휘의 공동체적 성격을 잘못 이해함. → 처방: 어휘의 공동체적 성격을 확인할 때는 'commonly accepted'나 'reputed' 같은 단어를 활용해 공동체의 관습과 사용 여부를 중점적으로 살피기.\n② 진단: 'putative'의 뜻이 'commonly accepted'임을 확인했으나, '언어의 변화는 어휘의 변동에 따라 결정된다'는 선지를 '어휘가 언어 변화의 주된 원인'으로 오해하여 어휘의 역할과 변화의 관계를 혼동함. → 처방: 어휘가 언어 변화의 '원인'이 아니라 '결과'나 '표현 수단'임을 기억하고, 지문의 예시(putative, qualify)를 활용해 어휘의 기능적 측면을 정확히 파악하기.\n④ 진단: 'putative'의 뜻이 'commonly accepted'임을 확인했으나, '어휘는 한 언어 공동체에서 통용되는 기호 집합'이라는 선지를 '모든 구성원에게 동일하게 적용된다'로 오해하여 어휘의 통용성과 개인적 차이를 혼동함. → 처방: 어휘가 공동체에서 '통용'된다는 점은 인정하되, 개인의 사용이나 해석이 다를 수 있음을 염두에 두고 지문의 'qualify' 예시(개인의 제한적 적용)를 참고하기.\n⑤ 진단: 'putative'의 뜻이 'commonly accepted'임을 확인했으나, '어휘는 한 언어 공동체에서 통용되거나 개인이 습득한 일련의 기호 집합체'라는 선지를 '개인이 습득한 요소도 포함'한다는 점에서 오해하여 어휘의 공동체적 성격을 약화시킴. → 처방: 어휘의 공동체적 성격을 우선 확인한 뒤, 개인의 습득 여부는 부가적인 요소임을 기억하고 지문의 'putative'나 'proximity' 같은 단어를 활용해 공동체의 중요성을 재확인하기."
    }
   }
  ]
