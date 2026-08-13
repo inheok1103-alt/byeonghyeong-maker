@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T10:31:47.675Z",
+ "updated": "2026-08-13T12:02:40.816Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T12:02:03.541Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어에서 'be + 과거분사' 형태는 상태를 나타내지만, '~하게 하다'의 의미를 강조할 때는 능동형 동사(예: annoy → annoy, worsen → worsen)로 전환해야 한다. 또한 전치사 오용(예: 'with' → 'to')이나 소유격 오용(예: 'theirs' → 'them')은 빈번한 오류 유형이다.",
+   "rule": "원문에서 'be + 과거분사'가 상태를 나타내는 경우, 해당 동사의 능동형(예: annoy, worsen)으로 대체하여 문맥에 맞게 재구성하라. 또한 전치사나 소유격 오용이 의심될 때는 'to + 목적격' 또는 소유격 재구성을 우선 검토하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T10:31:17.361Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'old english', 'middle english' 등 역사적 언어 변천 패턴과 'noun phrase'의 명사구 구조가 'new york'와 같은 고유명사 단위의 조합으로 자주 등장하며, 문법 오류 쌍에서 'concepts and ideas which they gave us' → 'concepts and ideas they gave us'로의 생략 패턴과 'end up loosing' → 'end up losing'의 동사 형태 오류가 반복된다.",
    "rule": "'명사구 + 관계대명사 + 주어 + 동사' 구조는 원서 패턴상 생략 가능한 경우가 많으므로, 학생 오류 분석 시 'which they gave us' → 'they gave us'로의 생략 가능성을 우선 검토하고, 'loose' vs 'lose'와 같이 발음·형태가 유사한 동사의 철자 오류는 문맥상 동사 형태(ing, ed, s 등)를 반드시 확인하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T17:49:45.055Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구 내 관사 생략 오류와 전치사+명사 조합의 오류가 빈번하며, 특히 'most of + 복수명사'가 'most + 복수명사'로 수정되는 패턴이 두드러진다.",
-   "rule": "복수명사 앞에 'most of'가 쓰였을 때, 'most + 복수명사'로 수정하는 것이 문법적으로 옳은지 확인하라. 또한 'to + 동사원형' 구조에서 부정사가 문두에 오지 않도록 'not to'로 재구성하는지 검증하라.",
    "sample": [
     "old english",
     "university press",
