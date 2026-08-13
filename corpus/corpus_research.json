@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T17:23:43.463Z",
+ "updated": "2026-08-13T18:12:53.163Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-13T18:12:18.636Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거시제 동사(예: stated, startet, was)와 관사/형용사 오류(예: lot → a lot of, problemes → problems)가 빈번하며, 접속사 생략이나 콤마 오용으로 문장 구조가 무너지는 패턴이 관찰된다.",
+   "rule": "과거시제 동사와 관사/형용사 사용 오류를 포함한 문장(3~5개 절)을 제시하고, 학생으로 하여금 과거시제 동사의 올바른 형태와 관사/형용사 수식, 접속사 사용을 복원하도록 요구하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T17:23:14.101Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'noun phrase'와 'direct object'가 결합된 경우, 복수 명사의 경우 불규칙 복수형(예: livestock → livestock, menhadens → menhaden)이 아닌 규칙 복수형(-s/-es)을 우선적으로 사용한다는 패턴이 나타났다. 또한 'reason relations'와 'present/past tense'가 혼용된 문장에서 동사 시제가 일관되지 않은 오류가 빈번했다.",
    "rule": "'noun phrase'가 'direct object'로 사용될 때, 복수 명사는 '-s' 또는 '-es'를 붙이는 규칙적 복수형을 우선 적용하고, 불규칙 복수형은 문맥상 명확히 필요한 경우에만 예외로 허용한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-09T22:52:21.449Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "명사 복수형 오류와冠詞(a/an/the) 누락/오용이 빈번하며, 특히 'a + 복수명사'가 'a car'처럼 단수명사로 수정되는 패턴이 두드러진다. 또한 전치사(about/aboue)나 동사 시제(use→used) 오류도 빈번하다.",
-   "rule": "한국어 학습자에게 제시할 문항에서, 'a + 복수명사' 형태(예: a cars, a informations)를 포함하거나,冠詞(a/an/the) 오용·누락, 전치사 오용, 시제 불일치(present→past) 오류가 포함된 문장을 1개 반드시 포함하라.",
    "sample": [
     "old english",
     "university press",
