@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-12T23:06:38.877Z",
+ "updated": "2026-08-13T00:03:26.689Z",
  "samples": [
+  {
+   "ts": "2026-08-12T23:59:49.496Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.14,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.14)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] This does not mean that you must narrow down your interest to one specific topic.\n\nRay English 지문 전문 · 원문 그대로 22번 요지 · M A I N P O I N T 경험의 폭과 창의성 요지 창의성을 높이려면 관심을 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다. 소재 창의성과 경험의 폭 Creativity and breadth of experience 주제 관심을 좁히지 말고 경험을 넓혀야 창의성이 자란다 Broad, not narrow, experience fuels creativity 제목 넓은 경험이 창의성을 키운다 Why Broad Experience Fuels Creativity 한눈에 어려운 문제의 창의적 해결책은 긴장을 푼 순간 떠오른다는 관찰에서 출발한다. 흔히 ‘한 주제로 관심을 좁히라’고 하지만, 글은 이를 뒤집어 ‘경험 의 폭 (breadth)을 넓히는 것이 창의성의 핵심’이라고 본다. 경험이 좁으면 상상력의 범위도 좁아져 해롭다는 것이다. 지문 전문 — 시험지 원문 Suppose you have been working on the solution to a challenging technological problem for many years. Let’s also suppose that you have been paying attention to whatever else you have encountered that might be related to the problem. In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed. ( ① ) Such “eureka moments” (when great insights lead to discovery or invention) often take place at unexpected times. ( ② ) To enhance spontaneous creativity, therefore, one must pay attention to the things that could potentially lead to valuable outcomes. ( ③ ) On the contrary, breadth of experience is the key to creativity. ( ④ ) If your experience is limited to a narrow range of topics, then the scope of your imagination will likewise be narrow, which would be harmful to creativity. ( ⑤ ) * spontaneous: 자연 발생적인 지문 전문 · 원문 그대로",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘한 주제로 관심을 좁히지 말고 경험의 폭을 넓혀야 창의성이 자란다’는 글의 핵심 주장이 ‘eureka moments’가 언제 일어나는지 설명하는 부분에 바로 들어가면 흐름이 끊어질 수 있다. 학생은 ‘창의적 해결책이 갑자기 떠오르는 순간’이 핵심이라는 점만 보고 이 문장이 들어갈 위치로 오해했을 수 있다. → 처방: ‘eureka moments’의 정의와 중요성을 먼저 설명한 뒤, 그 원인으로 ‘경험의 폭’을 제시하는 흐름을 기억하라. 문장은 해결책이 떠오르는 ‘원인’을 설명하는 부분에 들어가야 한다.\n② 진단: ‘Such “eureka moments”’가 ‘창의적 해결책이 갑자기 떠오르는 순간’을 가리킨다는 점은 알았지만, 그 ‘원인’이 ‘경험의 폭’이라는 핵심 주장이 나와야 한다는 흐름을 놓쳤다. 학생은 문장 앞부분만 보고 ‘eureka moments’의 예시로 오해했을 수 있다. → 처방: ‘eureka moments’의 ‘원인’을 설명하는 문장이므로, 그 원인이 ‘경험의 폭’이라는 점을 강조하는 위치에 들어가야 한다. 문장 앞뒤의 논리적 연결을 꼼꼼히 읽어라.\n④ 진단: ‘To enhance spontaneous creativity, therefore, one must pay atte…’는 ‘그러므로 창의성을 높이려면 ~해야 한다’는 ‘결론’ 부분이다. 학생은 ‘결론’에 ‘원인’을 설명하는 문장이 들어가야 한다고 착각했을 수 있다. → 처방: ‘결론’ 부분에는 ‘원인’이 아니라 ‘해결책’이 들어가야 한다. 문장의 역할(원인·결론·예시)을 구분해서 읽어라.\n⑤ 진단: ‘In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed.’는 ‘경험의 폭을 넓히면 해결책이 떠오른다’는 ‘원인’ 설명이다. 학생은 이 부분이 ‘창의성의 핵심’이 ‘경험의 폭’이라는 점을 이미 설명했다고 생각했을 수 있다. → 처방: ‘원인’ 설명 뒤에는 그 ‘원인’이 ‘창의성의 핵심’이라는 점을 강조하는 문장이 와야 한다. 문장과 문장 사이의 ‘흐름’을 따라가며 읽어라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-13T00:00:45.559Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 22번 요지 · M A I N P O I N T 경험의 폭과 창의성 요지 창의성을 높이려면 관심을 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다. 소재 창의성과 경험의 폭 Creativity and breadth of experience 주제 관심을 좁히지 말고 경험을 넓혀야 창의성이 자란다 Broad, not narrow, experience fuels creativity 제목 넓은 경험이 창의성을 키운다 Why Broad Experience Fuels Creativity 한눈에 어려운 문제의 창의적 해결책은 긴장을 푼 순간 떠오른다는 관찰에서 출발한다. 흔히 ‘한 주제로 관심을 좁히라’고 하지만, 글은 이를 뒤집어 ‘경험 의 폭 (breadth)을 넓히는 것이 창의성의 핵심’이라고 본다. 경험이 좁으면 상상력의 범위도 좁아져 해롭다는 것이다. 지문 전문 — 시험지 원문 Suppose you have been working on the solution to a challenging technological problem for many years. Let’s also suppose that you have been paying attention to whatever else you have encountered that might be related to the problem. In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed. Such “eureka moments” (when great insights lead to discovery or invention) often take place at unexpected times. To enhance spontaneous creativity, therefore, one must pay attention to the things that could potentially lead to valuable outcomes. This does not mean that you must narrow down your interest to one specific topic. On the contrary, breadth of experience is the key to creativity. If your experience is limited to a narrow range of topics, then the scope of your imagination will likewise be narrow, which would be harmful to creativity. * spontaneous: 자연 발생적인 지문 전문 · 원문 그대로",
+    "choices": [
+     "어려운 기술 문제 해결을 오랫동안 연구하는 경우, 다른 관련 경험도 함께 쌓으면 창의적 해결책이 떠오르지 않는다",
+     "창의적 해결책은 예상치 못한 순간에 자연스럽게 떠오르는 경우가 드물다",
+     "'유레카 순간'은 위대한 통찰이 발견이나 발명으로 이어지지 않을 때 발생한다",
+     "창의성 향상을 위해 관심사를 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다",
+     "경험의 범위가 좁으면 상상력의 범위가 넓어져 창의성에 도움이 된다"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문은 '다른 관련 경험을 쌓으면 창의적 해결책이 떠오를 가능성이 있다'고 했으므로, '창의적 해결책이 떠오르지 않는다'는 부분이 반대다. '관련 경험을 쌓으면'과 '창의적 해결책이 떠오른다'는 관계가 잘못 연결됐다. → 처방: 지문에서 '관련 경험을 쌓으면 창의적 해결책이 떠오를 가능성이 있다'고 했으므로, 이 선지는 지문과 완전히 반대라는 점을 기억하고 읽어라.\n② 진단: 지문은 '예상치 못한 순간에 창의적 해결책이 떠오르는 경우가 많다'고 했으므로, '드물다'는 말은 지문의 내용과 반대다. '자주'와 '드물다'의 차이를 혼동한 듯하다. → 처방: 지문에서 '자주' 또는 '흔히'라는 표현이 나오면 '드물다'는 선지가 오답일 가능성이 크다는 점을 기억해라.\n③ 진단: 지문은 '유레카 순간이 위대한 통찰이 발견이나 발명으로 이어질 때 발생한다'고 했으므로, '이어지지 않을 때'라는 말은 지문의 내용과 반대다. '발견이나 발명으로 이어진다'는 핵심 조건을 놓쳤다. → 처방: 지문에서 '유레카 순간'이란 '위대한 통찰이 발견이나 발명으로 이어질 때'라는 점을 꼭 기억하고, 조건을 반대로 해석하지 않도록 주의해라.\n⑤ 진단: 지문은 '경험의 범위가 넓어야 상상력의 범위가 넓어져 창의성에 도움이 된다'고 했으므로, '경험의 범위가 좁으면 상상력의 범위가 넓어진다'는 말은 지문의 내용과 반대다. '넓다'와 '좁다'의 관계를 반대로 이해한 듯하다. → 처방: 지문에서 '경험의 폭(넓음)이 창의성에 도움이 된다'는 핵심 메시지를 기억하고, '좁다'와 '넓다'의 관계를 반대로 해석하지 않도록 주의해라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-12T23:06:10.386Z",
    "type": "이어쓰기영작",
@@ -281,60 +350,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'The core argument of the text is that vocabulary is a set of words used in a particular language or known to an individual.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·인과 전도·범위 축소·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The core argument of the text is that vocabulary is a set of words used in a particular language or known to an individual.]\n[오답 진단·처방]\n① 진단: 지문에서 'putative'의 뜻이 'commonly accepted'임을 확인했으나, '어휘는 한 언어의 모든 구성원이 공유하는 기호 체계'라는 선지의 표현을 '개인의 사용 여부와 무관하게 존재한다'로 오해하여 어휘의 공동체적 성격을 잘못 이해함. → 처방: 어휘의 공동체적 성격을 확인할 때는 'commonly accepted'나 'reputed' 같은 단어를 활용해 공동체의 관습과 사용 여부를 중점적으로 살피기.\n② 진단: 'putative'의 뜻이 'commonly accepted'임을 확인했으나, '언어의 변화는 어휘의 변동에 따라 결정된다'는 선지를 '어휘가 언어 변화의 주된 원인'으로 오해하여 어휘의 역할과 변화의 관계를 혼동함. → 처방: 어휘가 언어 변화의 '원인'이 아니라 '결과'나 '표현 수단'임을 기억하고, 지문의 예시(putative, qualify)를 활용해 어휘의 기능적 측면을 정확히 파악하기.\n④ 진단: 'putative'의 뜻이 'commonly accepted'임을 확인했으나, '어휘는 한 언어 공동체에서 통용되는 기호 집합'이라는 선지를 '모든 구성원에게 동일하게 적용된다'로 오해하여 어휘의 통용성과 개인적 차이를 혼동함. → 처방: 어휘가 공동체에서 '통용'된다는 점은 인정하되, 개인의 사용이나 해석이 다를 수 있음을 염두에 두고 지문의 'qualify' 예시(개인의 제한적 적용)를 참고하기.\n⑤ 진단: 'putative'의 뜻이 'commonly accepted'임을 확인했으나, '어휘는 한 언어 공동체에서 통용되거나 개인이 습득한 일련의 기호 집합체'라는 선지를 '개인이 습득한 요소도 포함'한다는 점에서 오해하여 어휘의 공동체적 성격을 약화시킴. → 처방: 어휘의 공동체적 성격을 우선 확인한 뒤, 개인의 습득 여부는 부가적인 요소임을 기억하고 지문의 'putative'나 'proximity' 같은 단어를 활용해 공동체의 중요성을 재확인하기."
-   }
-  },
-  {
-   "ts": "2026-08-12T10:34:35.782Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 유난히 이른 저녁, 일찍 일어나는 사람, 이른 빅토리아 시대인들 모두 첫 번째 등급, 첫 번째 범법자 처벌 완화, 비교 해부학, 안개 덕에 비교적 안전했음을 우리도 인정한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-12T08:42:54.538Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "The DISTRIBUTIVE PROPERTY OF MULTIPLICATION OVER ADDITION says that we get the same number when we multiply a group of numbers added together or when we multiply each number separately and then add them. The Distributive Property can be used when multiplying a number by the sum of two numbers: Given three numbers a, b, and c: a(b + c) = (a • b) + (a • c). a(b + c) = a • b + a • c We are DISTRIBUTING DISTRIBUTING the term a to each of the terms b and c. b Think: Think: Distributive Distributive means to share or means to share or give out. give out. The Distributive Property states: Adding two numbers inside the parentheses and then multiplying that sum by a number outside the parentheses is the same as first multiplying the number outside the parentheses by each of the addends inside the parentheses and then adding the two products together. y p and then adding the two products together. a b c b c = + 12",
-    "choices": [
-     "곱셈의 분배법칙은 뺄셈에 대해 곱할 때 성립하는 성질이다",
-     "분배법칙은 세 수 a, b, c 에 대해 a(b + c) = ab - ac 로 표현된다",
-     "분배법칙은 곱하는 수를 괄호 안 각 항에 나눠 곱한 후 뺀 결과와 같다",
-     "분배법칙은 곱셈에서 덧셈의 묶음을 풀어 계산하는 규칙이다",
-     "분배법칙은 a(b + c)와 ab - ac 의 결과가 같음을 보장하는 수학적 원리이다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 분배법칙이 덧셈뿐 아니라 뺄셈에도 성립한다는 사실을 혼동한 것 같다. 지문은 'a(b + c) = ab + ac'로 덧셈만 다루고, 뺄셈은 언급하지 않았다. → 처방: 분배법칙은 덧셈에만 적용된다는 점을 기억하고, 뺄셈은 'a(b - c) = ab - ac'로 계산한다는 사실도 따로 공부하자.\n② 진단: 분배법칙의 공식에서 덧셈 기호를 빼기로 잘못 읽은 것 같다. 지문은 'a(b + c) = ab + ac'로 덧셈을 기준으로 하고 있다. → 처방: 분배법칙의 공식은 '+' 기호가 기본이므로, 뺄셈은 'a(b - c) = ab - ac'로 따로 구분해서 외우자.\n③ 진단: 분배법칙에서 '곱하는 수를 괄호 안 각 항에 나눠 곱한 후 뺀 결과'라고 잘못 이해했다. 지문은 덧셈에 대해 설명하고 있다. → 처방: 분배법칙은 덧셈에 대해 'a(b + c) = ab + ac'임을 기억하고, 뺄셈은 'a(b - c) = ab - ac'로 계산한다는 점을 명확히 구분하자.\n⑤ 진단: 분배법칙이 'a(b + c)와 ab - ac 의 결과가 같음'을 보장한다는 오해를 했다. 지문은 덧셈에 대한 등식만 다루고 있다. → 처방: 분배법칙은 덧셈에 대한 등식임을 명확히 기억하고, 뺄셈은 'ab - ac'로 계산된다는 점을 따로 공부하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
