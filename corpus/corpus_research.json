@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T18:14:24.909Z",
+ "updated": "2026-08-14T19:17:51.818Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T19:17:21.722Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'that' 절을 동사 뒤에 배치하는 경우, 주절 동사(use/think/suggest)와 조화된 시제(3인칭 단수 현재형) 및 문법적 일관성을 유지하는 패턴이 빈번하다.",
+   "rule": "원서 패턴을 반영하여 '~ that S V' 구조에서 주절 동사는 3인칭 단수 현재형(-s)으로 통일하고, 'that' 절의 시제를 주절과 맞춰야 한다. 예: 'birds use that they have crystals' → 'birds use that they have crystals'가 아니라 'the third piece of evidence that birds use is that they have crystals'로 변형.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T18:13:27.928Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "형용사 수식어의 위치가 문법적으로 자연스러운지 확인하는 패턴이 빈번히 관찰된다. 특히 'a really good film'과 같이 관사-형용사-부사-명사 순서가 일반화되어 있다.",
    "rule": "형용사 수식어(especially 'really', 'very' 등 부사)가 포함된 경우, 관사(a/an/the) 바로 뒤에 위치하도록 강제하는 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-11T02:30:33.573Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "복합문에서 접속사 'but'의 과도한 사용이 문장의 논리적 흐름을 방해하며, 'system'의 단수형 오용과 'car'의 복수 표현 부족이 자연스러운 문장 구성을 어렵게 한다.",
-   "rule": "CEFR B2 수준의 문장에서는 'but'을 한 문장에 1회만 사용하도록 제한하고, 'system'은 복수형 'systems'로, 'car'는 'personal cars'로 명시하여 문법적 정확성과 자연스러움을 확보하라.",
    "sample": [
     "old english",
     "university press",
