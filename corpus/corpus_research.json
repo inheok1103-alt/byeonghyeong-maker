@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T13:47:17.637Z",
+ "updated": "2026-08-14T15:12:48.898Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T15:08:39.405Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스에서 'necessary to V'와 'important to V' 같은 동사구 패턴이 빈번히 나타나며, 'for + 동명사' 구문이 'to + 동사원형'으로 대체되는 경향이 강하다. 또한 'according to me'가 'in my opinion'로 자연스럽게 변환되는 패턴도 관찰된다.",
+   "rule": "'for + 동명사' 구문은 'to + 동사원형'으로 대체하여 문법적으로 옳은 문장을 구성하도록 변형 문제를 출제한다. 예: 'Water is needed for alive.' → 'Water is necessary to live.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T13:46:51.626Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "이 코퍼스 패턴은 관사/소유격 오류, 부정어 중복 오류, 시제/관계사 오류가 빈번하다는 특징이 드러난다. 특히 'for the future', 'and the nature' 같은 관사 과잉 사용이 눈에 띈다.",
    "rule": "'명사+for the future' 구문에서 'the'는 생략 가능하며, 관사가 필요한 경우에도 'the nature'보다는 'nature'가 자연스러운 경우가 많다. 따라서 문장 내 'for the future' 뒤의 관사는 생략 가능한지, 'the+명사'가 문맥상 필요한지 반드시 검토하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-10T21:06:33.547Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제(had started)가 현재까지 지속되는 사건에 사용된 경우, 현재완료(have started)로 수정해야 한다. 또한, 'the one'은 지시대명사 'this/that one'으로 명확히 하는 것이 자연스럽다.",
-   "rule": "과거시제 문장은 현재까지의 지속·완료·영향을 나타낼 때 현재완료(have/has + pp)로 수정하여 출제하라. 예: 'They had lived there for 10 years.' → 'They have lived there for 10 years.'",
    "sample": [
     "old english",
     "university press",
