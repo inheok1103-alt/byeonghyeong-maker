@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T20:48:41.459Z",
+ "updated": "2026-08-14T21:44:26.438Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T21:43:59.942Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'복수형 명사 + of + 복수형 명사' 구문에서 불필요한 정관사(the) 사용이 오류로 확인된다. 또한, 'livestock'은 불가산 명사로, 복수형이 없음을 유념해야 한다.",
+   "rule": "'the + 복수형 명사(of + 복수형 명사)' 구조에서 'the'를 삭제하거나, 불가산 명사(livestock, poultry 등)일 경우 복수형을 쓰지 않도록 문장을 수정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T20:48:15.447Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거 시제 동사가 수동적 맥락에서 불필요한 진행형(ask → asked)으로 오류가 발생하며, 'too ~ to ...' 구문과 'a very useful and fast tool'에서 관사 누락이 공통적으로 나타난다. 또한, 'precious'의 철자 오류('preciouse')도 빈번하다.",
    "rule": "'과거 시제 문장에서 동사가 수동적 의미를 가질 경우, 과거분사형(-ed)으로만 사용하고, 'too + 형용사 + to 부정사' 구문에서는 부정사 앞에 'to'가 필수임을 확인하며, 관사(a/the) 생략 오류를 점검하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-11T07:41:51.163Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 '동명사(gerund)'는 단수 취급하는 경향이 강하며, 특히 'trying', 'improvement', 'making' 등 동명사가 주어 역할을 할 때 단수 동사(-s)가 오는 패턴이 빈번하다. 또한 'can + 동사원형' 구조에서 동사원형이 아닌 'to + 명사'로 전환되는 경우가 많다.",
-   "rule": "'~ing' 형태의 동명사가 주어일 경우, 단수 동사(-s)를 사용하도록 문제를 출제하며, 'can + 동사원형' 구조는 'to + 명사'로 전환하는 오류 유형을 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",
