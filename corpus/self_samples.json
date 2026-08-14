@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-14T19:17:51.822Z",
+ "updated": "2026-08-14T20:00:32.794Z",
  "samples": [
+  {
+   "ts": "2026-08-14T19:59:20.247Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] Part two “ contextual analysis” in its turn is divided into two units: explicit clues; dealing with how to analyze words contextually via knowledge and use of synonyms, antonyms and examples .\n\nTeacher’s Guide Introduction This program is an attempt to develop some basic skills of reading for second year faculty of Education, English Majors of the primary division. The main focus of the program is upon two main broad categories of basic skills: structural analysis and contextual analysis. ( ① ) The program consists of two parts, four units and 12 lessons. ( ② ) Structural analysis is divided into two units: Morphemic clues; dealing with how to analyze words structurally via knowledge and use of prefixes, suffixes, and roots. ( ③ ) The second unit is syntactic clues: dealing with how to analyze sentences syntactically via knowledge and use of sentence patterns, word markers, and punctuation. ( ④ ) The second and last unit is implicit cues dealing with how to analyze sentences contextually via sense of the sentence context clues (word in context and phrase in context) and by knowing and using some well-known expressions and idioms. ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘①’은 프로그램의 구성 요소(두 부분, 네 단원, 열두 수업)를 설명하는 부분으로, ‘contextual analysis’의 세부 내용이 나오려면 아직 이르다. 학생은 ‘contextual analysis’의 세부 항목이 프로그램 구성의 일부라는 착각을 했다. → 처방: ‘contextual analysis’가 ‘structural analysis’ 다음에 나오는지 확인하고, 프로그램 구성 설명이 끝난 뒤에 세부 항목을 넣어야 한다는 규칙을 기억하자.\n② 진단: ‘②’는 프로그램의 전체 구성(두 부분, 네 단원, 열두 수업)을 설명하는 부분으로, ‘contextual analysis’의 세부 내용이 나올 단계가 아니다. 학생은 ‘contextual analysis’가 프로그램 구성의 일부라고 오해했다. → 처방: 프로그램의 ‘구성’을 설명하는 문장은 ‘contextual analysis’의 세부 항목이 나오기 전에 끝나야 한다는 점을 확인하자.\n③ 진단: ‘③’은 ‘structural analysis’의 세부 항목(형태소, 구문 분석)을 설명하는 부분으로, ‘contextual analysis’의 세부 항목이 나오려면 아직 ‘structural analysis’ 설명이 끝나야 한다. 학생은 ‘contextual analysis’가 ‘structural analysis’와 같은 단계에 있다고 생각했다. → 처방: ‘structural analysis’와 ‘contextual analysis’가 프로그램의 ‘두 부분’이라는 점을 기억하고, ‘structural analysis’ 설명이 끝난 뒤에 ‘contextual analysis’를 넣어야 한다는 규칙을 적용하자.\n⑤ 진단: ‘⑤’는 지문에 없는 위치(마지막 부분)으로, ‘contextual analysis’의 세부 항목이 나오려면 ‘structural analysis’ 설명이 끝난 뒤에 와야 한다. 학생은 ‘contextual analysis’의 세부 항목이 프로그램의 맨 뒤에만 올 수 있다고 생각했다. → 처방: ‘contextual analysis’가 ‘structural analysis’ 다음에 나오는지 확인하고, 프로그램의 ‘두 부분’을 기억한 뒤에 세부 항목을 배치하자.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-14T19:59:41.520Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Teacher’s Guide Introduction This program is an attempt to develop some basic skills of r______ for second year faculty of Education, English Majors of the primary division. The main focus of the program is upon two main broad categories of basic skills: structural analysis and contextual analysis. The program consists of two parts, four units and 12 lessons. Structural analysis is divided into two units: Morphemic clues; dealing with how to analyze words structurally via knowledge and use of prefixes, suffixes, and roots. The second unit is syntactic clues: dealing with how to analyze sentences syntactically via knowledge and use of sentence patterns, word markers, and punctuation. Part two “ contextual analysis” in its turn is divided into two units: explicit clues; dealing with how to analyze words contextually via knowledge and use of synonyms, antonyms and examples . The second and last unit is implicit cues dealing with how to analyze sentences contextually via sense of the sentence context clues (word in context and phrase in context) and by knowing and using some well-known expressions and idioms.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] reading — 문단의 논지상 이 자리에는 'reading'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-14T19:15:50.911Z",
    "type": "요지",
@@ -269,75 +323,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'A situation of extreme chaos or disorder is inherently linked to the occurrence of a sudden and uncontrollable event.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘in the aftermath of’라는 표현을 ‘~의 결과로’라는 뜻으로 오해하여 ‘극도의 무질서가 가끔 발생한다’는 의미로 해석한 것으로 보임. 지문은 ‘극도의 무질서가 발생하는 조건’을 설명하지 ‘발생 빈도’를 언급하지 않음. → 처방: ‘aftermath’가 아닌 ‘occurs only if’라는 조건절에 주목하여, ‘~할 때만’이라는 의미를 정확히 파악할 것.\n③ 진단: ‘all hell originates in spec-V’라는 표현을 ‘강력한 힘의 해방’이 ‘혼자서’ 원인이라고 오해한 것으로 보임. 지문은 ‘spec-V 에서 비롯된다는 조건’을 설명하며, ‘해방’이 ‘무질서’의 원인이라는 점은 맞지만 ‘유일한 원인’이 아님을 간과함. → 처방: ‘only if’라는 조건절의 의미를 정확히 이해하고, ‘~할 때만’이라는 구조에 주목할 것.\n④ 진단: ‘deliberate act’라는 단어를 ‘고의적인 행위’로 오해하여 ‘의도적 행위가 혼돈의 직접적 원인’이라는 의미로 해석한 것으로 보임. 지문은 ‘uncontrollable event’(통제 불가능한 사건)을 언급하며, ‘의도성’을 언급하지 않음. → 처방: ‘deliberate’가 아니라 ‘uncontrollable’이라는 단어를 중점적으로 읽고, ‘의도성’을 배제한 의미를 파악할 것.\n⑤ 진단: ‘idiom’이라는 표현을 ‘직역’으로 오해하여 ‘자매’라는 단어를 ‘문자 그대로’ 해석한 것으로 보임. 지문은 ‘idiom’을 ‘관용구’로 사용하며, ‘자매’라는 단어는 ‘비유적 표현’임을 간과함. → 처방: ‘idiom’이 ‘관용구’라는 뜻을 지닌다는 점을 떠올리고, ‘자매’라는 단어는 ‘연관성’을 나타내는 비유임을 인식할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T12:00:21.770Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The subject must detach from its predicate to meet grammatical requirements",
-     "The subject moves to fulfill syntactic constraints imposed by the predicate",
-     "The subject's separation from its predicate arises from grammatical movement demands",
-     "All grammatical subjects universally detach from their predicates to satisfy syntactic rules",
-     "The subject moves to satisfy person/number features required by the predicate"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'All hell must move from VP to spec-T to satisfy [EPP] on T, separating subject from predicate.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: All hell must move from VP to spec-T to satisfy [EPP] on T, separating subject from predicate.]\n[오답 진단·처방]\n① 진단: ‘must detach’는 지문의 ‘must be the sister of break loose’를 ‘분리’로 오해한 듯. ‘분리’가 ‘의무’와 직접 연결되지 않음. 지문은 ‘분리’가 ‘문법적 움직임’ 때문임을 강조. → 처방: ‘의무’가 아니라 ‘문법적 움직임’ 때문에 분리된다는 점을 먼저 확인하고, 선지를 고를 때는 ‘의무’와 ‘분리’를 분리해서 생각하기.\n② 진단: ‘subject moves to fulfill syntactic constraints imposed by the predicate’를 골랐다면, ‘predicate’가 ‘break loose’를 ‘제약’을 주는 주체로 오해한 듯. 지문은 ‘T will’이 ‘subject’를 요구한다고 설명. → 처방: ‘predicate’가 아니라 ‘T will’이 ‘subject’를 요구한다는 점을 정확히 짚고, ‘predicate’는 ‘분리’된 결과임을 기억하기.\n④ 진단: ‘universally’라는 과장된 표현을 골랐다면, 지문의 ‘only if’나 ‘EPP feature’를 무시하고 ‘모든 경우’를 일반화한 듯. 지문은 ‘all hell’이 ‘spec-T’로 이동한다고만 설명. → 처방: ‘universally’를 쓰기 전에 ‘지문에서 언급된 경우’인지 먼저 확인하고, 예외가 있는지 확인하기.\n⑤ 진단: ‘person/number features’를 골랐다면, 지문의 ‘EPP feature carried by [T will]’를 ‘predicate’의 요구로 오해한 듯. 지문은 ‘T will’이 ‘subject’를 요구한다고 설명. → 처방: ‘predicate’가 아니라 ‘T will’이 ‘subject’를 요구한다는 점을 정확히 짚고, ‘person/number features’를 ‘T will’의 요구로 이해하기."
-   }
-  },
-  {
-   "ts": "2026-08-14T10:18:00.532Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>Prepositional</u> ⓑ<u>Phrase</u> Both approaches are perfectly logical and consistent. Both give exactly the same analysis of phrasal verbs. Longman’s Dictionary of Phrasal Verbs uses the second ⓒ<u>approach</u>, with its distinction between adverbs and prepositions. In this book we will adopt the ﬁ rst approach and simply use the term particle. The only reason for choosing this approach is that life is short and grammar books are long. There is actually a fourth use of ⓓ<u>phrasal</u> ⓔ<u>verbs</u>: as a prepositional phrase that follows a noun phrase. In keeping with the preceding diagram, this fourth type would look like this: verb + noun phrase + preposition + noun phrase. We will analyze this type after discussing the more common phrasal verbs given in the diagram. We now turn to a more detailed description of the three common types of phrasal verbs: intransitive, inseparable transitive, and separable transitive.",
-    "choices": [
-     "prepositional: (grammar) The prepositional case.",
-     "phrase: (not used in the plural) The person or thing in the fourth position.",
-     "approach: The act of drawing near; a coming or advancing near.",
-     "phrasal: Referring to, or used in the manner of, a phrase.",
-     "verbs: (grammar) A word that indicates an action, event, or state."
-    ],
-    "answer": 2,
-    "explanation": "정답 ⓑ의 풀이는 'fourth'의 정의이다. 'phrase'의 올바른 풀이: A short written or spoken expression.\n[오답 진단·처방]\n① 진단: 학생은 'prepositional'이 문법 용어로 쓰인 것만 생각해서 'prepositional: (grammar) The prepositional case'를 선택했을 것이다. 지문에서 'prepositional'은 '전치사와 관련된'이라는 의미로 사용되는데, 이 부분을 간과한 듯하다. → 처방: 문맥에 따라 단어의 의미가 달라질 수 있음을 인지하고, 지문을 더 주의깊게 읽어야 한다.\n③ 진단: 학생은 'approach'를 일반적인 의미로만 이해해서 'The act of drawing near; a coming or advancing near'를 선택했을 것이다. 하지만 지문에서는 방법론적인 접근 방식을 의미한다. → 처방: 단어가 사용된 문맥을 더 신중하게 분석해야 한다.\n④ 진단: 학생은 'phrasal'을 문법 용어로만 이해해서 'Referring to, or used in the manner of, a phrase'를 선택했을 것이다. 지문에서는 구와 관련된다는 의미로 사용되는데, 이 부분을 간과한 듯하다. → 처방: 문법 용어의 다의성을 고려하여 지문을 더 세심하게 읽어야 한다.\n⑤ 진단: 학생은 'verbs'를 일반적인 의미로만 이해해서 '(grammar) A word that indicates an action, event, or state'를 선택했을 것이다. 지문에서는 동사라는 문법 용어로 사용되는데, 이 부분을 간과한 듯하다. → 처방: 문법 용어의 정의를 더 명확하게 이해하고, 지문을 더 주의깊게 읽어야 한다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
