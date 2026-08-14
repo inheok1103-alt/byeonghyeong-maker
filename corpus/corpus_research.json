@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T16:25:18.201Z",
+ "updated": "2026-08-14T17:20:07.830Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T17:19:35.635Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'explain about' → 'explain what'처럼 전치사 사용 오류가 빈번하며, 비교급 구조에서 관사 생략('young person' → 'a younger person')과 전치사 오류('than young person' → 'than a younger person')가 공통적으로 나타난다.",
+   "rule": "비교급 문장에서는 'than + (a) younger/older + 명사' 형태로 관사를 반드시 포함하고, 비교 대상이 되는 명사 앞에는 형용사적 비교급(예: younger/older)을 사용하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T16:19:53.394Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "연어(collocation) 오류는 특정 구문 내 필수 관사·전치사·형태소 누락에서 빈번히 발생하며, 이는 문법적 정확성뿐 아니라 의미적 완결성에도 영향을 미친다.",
    "rule": "연어 기반 오답 설계 시, 'give rise to'는 반드시 'a + 명사구' 구조를 요구하므로, 'holistic understanding' 앞에 관사 'a'를 생략하거나 'to' 다음 명사구에 전치사 'of'를 누락한 오답을 반드시 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-10T23:05:05.577Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 '목록 나열' 구조가 문장 내에 등장할 때, 쉼표(,)를 일관적으로 사용해 항목 간 구분을 명확히 한다는 패턴이 관찰된다. 특히 3개 이상의 항목이 나열될 경우, 마지막 항목 앞에도 쉼표를 삽입하는Oxford comma(Oxford 쉼표) 규칙이 빈번히 적용된다.",
-   "rule": "3개 이상의 항목이 나열된 문장에서, 각 항목 사이에 쉼표(,)를 반드시 삽입하고, 마지막 항목 앞에도 쉼표를 추가하여 항목 구분을 명확히 하도록 한다. 예: 'A , B , and C'.",
    "sample": [
     "old english",
     "university press",

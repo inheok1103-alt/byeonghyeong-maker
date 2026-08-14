@@ -1,6 +1,44 @@
 {
- "updated": "2026-08-14T16:25:18.205Z",
+ "updated": "2026-08-14T17:20:07.834Z",
  "samples": [
+  {
+   "ts": "2026-08-14T17:13:36.049Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "Late Modern English Syntax The Late Modern period is the first in the history of English for which an unprece­ dented wealth of textual material exists. Using increasingly sophisticated databases, the contributions in this volume explore grammatical usage from the period, spe­ cifically morphological and syntactic change, in a broad context. Some chapters explore the socio-historical background of the period while others provide informa­ tion on prescriptivism, newspaper language, language contact and regional variation in British and American English. Internal processes of change are discussed against grammaticalisation theory and construction grammar and the rich body of textual evidence is used to draw inferences on the precise nature of historical change. Exposing readers to a wealth of data that informs the description of a broad range of syntactic phenomena, this book is ideal for graduate students and researchers interested in historical linguistics, corpus linguistics and language development. Marianne Hundt is Full Professor of English Linguistics in the English Department at the University of Zurich, Switzerland.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-14T17:19:33.602Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Late Modern English Syntax The Late Modern period is the first in the history of English for which an unprece­ dented wealth of textual material exists.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 후기 현대 영어 시대는 영어 역사상 전례 없이 풍부한 텍스트 자료가 존재하는 최초의 시대입니다. (구문 포인트: 관계사절(relative clause) 생략 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-14T16:19:36.527Z",
    "type": "요지",
@@ -289,58 +327,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 한국어 문장으로 자연스럽게 표현하겠습니다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T06:45:57.966Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "학생들은 부정행위를 줄이기 위해 교사의 엄격한 감독을 요구해야 한다",
-     "학교는 부정행위가 학생의 도덕성을 보호하는 데 주된 책임을 져야 한다",
-     "학교는 부정행위를 허용하지 않아야만 학문적 질서와 진실성을 유지할 수 있다",
-     "학교는 부정행위가 발생할 때마다 즉시 엄격한 처벌을 가해야 한다",
-     "학교는 학문적 진실성을 지키기 위해 부정행위를 근절해야 한다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Mr. Dorsey insisted that cheating must be eradicated to uphold academic integrity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 교사나 학생의 요구가 아니라 교장의 부정행위 근절 정책(감독 강화·신고 강요·징계)을 서술한 부분을 보지 않고 학생의 주관적 요구로 오해함. '교사의 엄격한 감독을 요구해야 한다'는 학생의 능동적 행동이지, 지문은 학교의 적극적 대책임. → 처방: 문제를 풀 때는 '학교가 어떤 행동을 했는가'를 먼저 찾고, 그 행동이 학생·교사·학교 중 누구의 책임인지 구별하기.\n② 진단: 부정행위가 학생의 도덕성 보호와 직접 연결된다고 오해함. 지문은 부정행위의 근절과 학문적 질서·진실성 유지가 주제인데, 학생의 도덕성 보호는 언급되지 않음. → 처방: 주제는 부정행위의 결과(학문적 질서·진실성)에 초점을 맞추고, 학생의 도덕성은 간접적 배경으로만 생각하기.\n③ 진단: 부정행위를 '허용하지 않아야만' 학문적 질서와 진실성을 유지할 수 있다고 오해함. 지문은 부정행위를 근절하는 것이 주제이지, '허용하지 않는 것'이 질서와 진실성의 직접적 조건은 아님. → 처방: 지문의 핵심 메시지가 부정행위의 근절임을 확인하고, '~해야만'이라는 조건문보다는 '~하는 것이 중요하다'는 결론을 먼저 떠올리기.\n④ 진단: 부정행위가 발생할 때마다 '즉시 엄격한 처벌'을 가해야 한다는 과도한 강제성을 주장한 부분이 지문에서 나오지 않음. 지문은 부정행위 근절을 위한 교장의 campagna(정책·운동)을 서술했을 뿐, 처벌의 시기와 방법에 대해 구체적으로 다루지 않음. → 처방: 문제에서 '주제'를 찾을 때는 지문의 핵심 행동(근절·정책·운동)을 우선 확인하고, '처벌' 같은 세부사항은 배제하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Mr. Dorsey insisted that cheating must be eradicated to uphold academic integrity.]"
-   }
-  },
-  {
-   "ts": "2026-08-14T06:46:00.812Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 16 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'unrelenting', 'compulsion', 'principal' / 14~18단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The principal began an unrelenting campaign against flagrant cheating, forcing teachers to report culprits under compulsion.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
