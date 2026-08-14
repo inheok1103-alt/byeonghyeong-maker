@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T12:01:15.126Z",
+ "updated": "2026-08-14T13:47:17.637Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T13:46:51.626Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'successful'과 같은 형용사의 철자 오류(gec)가 빈번하며, 'gift'의 복수화와 'textbook'의 복합명사화 오류도 두드러진다. 또한 'old'의 비교급 'older'로의 변환과 'make way'와 같은 관용구 사용 오류가 특징적이다.",
+   "rule": "형용사의 철자 오류(예: 'succesfull' → 'successful')와 복수형/복합명사 오류(예: 'text books' → 'textbooks')를 검증하는 문항을 출제할 때는, 해당 단어의 표준 철자 및 복수형을 반드시 포함하여 오답지를 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T12:00:45.483Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제(had started)가 현재까지 지속되는 사건에 사용된 경우, 현재완료(have started)로 수정해야 한다. 또한, 'the one'은 지시대명사 'this/that one'으로 명확히 하는 것이 자연스럽다.",
    "rule": "과거시제 문장은 현재까지의 지속·완료·영향을 나타낼 때 현재완료(have/has + pp)로 수정하여 출제하라. 예: 'They had lived there for 10 years.' → 'They have lived there for 10 years.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-10T19:20:00.639Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'except that'와 'and'가 병렬 구조를 형성하며 명사절/동사절을 연결하는 패턴이 빈번히 관찰됨. 또한 'and'가 문장 내 동사나 절을 연결할 때 콤마(,)를 동반하는 경향이 강함.",
-   "rule": "'except that' 또는 'and'로 연결되는 절은 반드시 콤마(,)로 분리하여 병렬 구조를 명확히 표시하도록 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",
