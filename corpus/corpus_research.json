@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-13T23:06:27.979Z",
+ "updated": "2026-08-14T00:01:05.645Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T00:00:37.392Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "명사+전치사+명사 구조에서 전치사가 잘못 쓰이거나 생략된 경우 오류가 빈번하며, 특히 'in possession of'처럼 고정된 연어 패턴이 자주 틀린다.",
+   "rule": "주어진 문장에서 'in [명사] of' 또는 'to [동사]'와 같은 고정 연어 패턴이 필요한지 확인하고, 틀린 경우 정답으로 복원하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-13T23:06:02.762Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "명사구(noun phrase) 내 한정사(a/an/the) 누락 오류가 CEFR B1~B2 밴드에서 빈번하며, 특히 'important thing'과 같이 수식어 없이 단독으로 쓰이는 경우 오류 발생 가능성이 높다.",
    "rule": "CEFR B1~B2 수준의 문법 오류 유형 중 'a/an/the' 한정사 누락 오류를 검증하는 문제를 30% 이상 포함하되, 'important thing'·'chance of hiring'·'door for new projects'와 같은 빈도 높은 명사구 패턴을 우선 적용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-10T08:54:57.492Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "비교급 구문에서 'half than'은 오류로, 'half the' 또는 'half as much as' 형태로 사용해야 한다. 또한, 'much'는 불가산 명사와 함께 쓰이며, 'a lot of'로 대체해야 자연스럽다.",
-   "rule": "비교급 구문에서 'half than'은 반드시 'half the' 또는 'half as much as'로 수정하도록 하며, 'much'는 불가산 명사와 함께 쓸 때 'a lot of'로 대체하여 문법적·어휘적으로 자연스러운 표현을 사용하도록 출제한다.",
    "sample": [
     "old english",
     "university press",

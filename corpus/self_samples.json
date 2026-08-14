@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-13T23:06:27.983Z",
+ "updated": "2026-08-14T00:01:05.649Z",
  "samples": [
+  {
+   "ts": "2026-08-14T00:00:35.689Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 핵심적인 차이는 지속적이고 지속적이라는 의미에 있습니다.\n주어진 단어: ( and / lies / of / meaning / continuous / the / difference / continual / in / The / core )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The core difference lies in the meaning of continual and continuous.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-13T23:04:29.358Z",
    "type": "영영풀이일치",
@@ -317,25 +336,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 이것이 실제로 사실이라는 증거는 다음 문장들에서 볼 수 있듯이, 두 표현이 차지할 수 있는 관련 위치에 대해 동일한 실용적 제한을 받는다는 전통적인 관찰에서 비롯됩니다. (구문 포인트: 관계사절(relative clause) 및 한정적 용법 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-13T17:19:46.537Z",
-   "type": "혼합통합형",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
-    "passage": "Or, the meanings of words can change so much over time that a ProtoGermanic word could possibly trace to a Proto-Indo-European root with a completely different meaning, such that no one would suspect the connection. The word punch, when referring to a drink, comes not from a Proto-IndoEuropean word for some kind of liquid, but from its word for five—through Hindi’s five word, used because the original recipe was developed in India and used five ingredients. Shitte happens. And besides, when scholars put their heads to it they can often figure out a Proto-Indo-European root that the Proto-Germanic words could have come from, via likenesses that no one happened to notice before. So one leading scholar of how languages change has only this to say about the issue in a recent work:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
