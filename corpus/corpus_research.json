@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T15:12:48.898Z",
+ "updated": "2026-08-14T16:25:18.201Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T16:19:53.394Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어 문법에서 접속사나 전치사 오류는 종종 절의 경계나 구문 구조를 흐트러뜨린다. 특히 'if', 'when', 'because' 등의 접속사 뒤에는 절(主語+동사)이 필수적으로 따라와야 한다.",
+   "rule": "'if'나 'when', 'because'와 같은 접속사 뒤에는 항상 완전한 절(主語+동사)이 오도록 문장을 구성하라. 예: 'If the teacher teaches them that, they will go on to study about that.' → 'If the teacher teaches them that, they will go on to study about it.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T15:08:39.405Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 '목록 나열' 구조가 문장 내에 등장할 때, 쉼표(,)를 일관적으로 사용해 항목 간 구분을 명확히 한다는 패턴이 관찰된다. 특히 3개 이상의 항목이 나열될 경우, 마지막 항목 앞에도 쉼표를 삽입하는Oxford comma(Oxford 쉼표) 규칙이 빈번히 적용된다.",
    "rule": "3개 이상의 항목이 나열된 문장에서, 각 항목 사이에 쉼표(,)를 반드시 삽입하고, 마지막 항목 앞에도 쉼표를 추가하여 항목 구분을 명확히 하도록 한다. 예: 'A , B , and C'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-10T22:01:15.173Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스 패턴은 관사/소유격 오류, 부정어 중복 오류, 시제/관계사 오류가 빈번하다는 특징이 드러난다. 특히 'for the future', 'and the nature' 같은 관사 과잉 사용이 눈에 띈다.",
-   "rule": "'명사+for the future' 구문에서 'the'는 생략 가능하며, 관사가 필요한 경우에도 'the nature'보다는 'nature'가 자연스러운 경우가 많다. 따라서 문장 내 'for the future' 뒤의 관사는 생략 가능한지, 'the+명사'가 문맥상 필요한지 반드시 검토하라.",
    "sample": [
     "old english",
     "university press",

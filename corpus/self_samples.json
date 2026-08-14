@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-14T15:12:48.902Z",
+ "updated": "2026-08-14T16:25:18.205Z",
  "samples": [
+  {
+   "ts": "2026-08-14T16:19:36.527Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "머리말사 앞에 오는 수식어는 머리말 자체를 직접 수식하는 보충어로 기능한다",
+     "머리말사 앞에 오는 수식어는 머리말과 보충어의 시퀀스 중 머리말만을 한정적으로 수식한다",
+     "머리말사 앞에 오는 모든 수식어는 항상 머리말과 보충어의 시퀀스를 수식하는 지정어로만 기능한다",
+     "머리말사 앞에 오는 수식어는 머리말과 보충어의 시퀀스를 수식하지 않고 문장 전체의 의미를 부정한다",
+     "머리말사 앞에 오는 수식어는 머리말과 보충어의 시퀀스를 수식하는 지정어로서 기능한다"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Modifiers that precede the Head specify the Head + Complement sequence and are called Specifiers.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘수식어는 머리말 자체를 직접 수식한다’고 오해했는데, 지문은 수식어가 ‘머리말+보충어 시퀀스’를 수식한다고 분명히 밝힘. ‘보충어’를 무시하고 머리말만 보려 한 듯. → 처방: ‘머리말+보충어’를 하나의 단위로 보고, 수식어가 이 시퀀스를 전체적으로 수식하는지 확인하라.\n② 진단: ‘머리만 한정적으로 수식한다’고 잘못 이해했는데, 지문은 ‘머리+보충어 시퀀스’를 수식한다고 반복해서 설명함. ‘한정적’이라는 말이 오해를 부른 듯. → 처방: ‘한정적’이라는 단어에 현혹되지 말고, 수식 대상이 ‘머리+보충어’ 전체인지 확인하라.\n③ 진단: ‘항상 지정어로만 기능한다’고 과도한 일반화를 했는데, 지문은 ‘Spec’이라는 한정된 범주로만 설명하고 있음. ‘항상’이라는 말이 오류를 일으킴. → 처방: ‘Spec’이라는 용어를 기억하고, 그것이 문법적 범주임을 확인하라. ‘항상’이라는 절대적 표현은 경계하라.\n④ 진단: ‘문장 전체의 의미를 부정한다’고 오해했는데, 지문은 ‘Spec’이 ‘머리+보충어 시퀀스’를 수식한다고 설명하고 있음. 부정은 ‘not’이 하는 역할이지만, ‘Spec’의 기능은 아님. → 처방: ‘Spec’의 기능이 ‘수식’인지 ‘부정’인지 구분하라. 부정은 ‘Spec’의 한 예에 불과하다는 점을 기억하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Modifiers that precede the Head specify the Head + Complement sequence and are called Specifiers.]"
+   }
+  },
   {
    "ts": "2026-08-14T13:45:46.914Z",
    "type": "장문세트",
@@ -306,41 +341,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] The principal began an unrelenting campaign against flagrant cheating, forcing teachers to report culprits under compulsion.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-14T05:04:34.560Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "ConjP Conj’ Conj NP NP N’ N N N’ and Kim Peter While this analysis is widely accepted, it’s not uncontroversial. ① The details would take us too far afield here. ② Meanwhile, researchers have also been studying the impact of social media on language learning, which has led to some interesting findings about the role of technology in education. ③ But notice it represents the conjuncts as having different functions: Kim is specifier, Peter is complement. ④ This asymmetry (com­ pare the symmetry of [XP + and + XP]) is a necessary consequence of X-​bar, which is by its nature SUB-​ordinative. ⑤ It’s not clear that the traditional notion of CO-​ordination is compatible with X-​bar. Furthermore, traditionally, co-​ ordination is allowed between constituents of any level, phrasal (as in [15]), inter­ mediate (as in [these [smokers of cigars and drinkers of alcohol]]) and lexical (as in [extremely [proud and happy]]). But the three-​level constraint (C) demands that only PHRASAL categories can be introduced as specifiers and complements in XPs, including ConjPs. In its favour, though, [15] represents and Peter as a constituent. This is clearly right. If someone says Kim went to India, someone",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 2,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: 학생은 '지문에서 다른 주제로 넘어간다'는 사실을 오독했을 가능성이 있다. 지문에서 'The details would take us too far afield here.'라는 문장이 전체 흐름과는 별개로 보였을 수 있다. → 처방: 학생은 문장 간의 논리적 연결을 더 주의해서 읽어야 한다.\n③ 진단: 학생은 'ConjP 관련 설명'이 전체 흐름과 무관하다고 생각했을 가능성이 있다. 지문에서 'But notice it represents the conjuncts as having different functions: Kim is specifier, Peter is complement.'라는 문장이 ConjP 관련 설명으로 보였을 수 있다. → 처방: 학생은 지문에서 ConjP 관련 설명이 전체 흐름의 일부라는 것을 인식해야 한다.\n④ 진단: 학생은 'X-​bar 관련 설명'이 전체 흐름과 무관하다고 생각했을 가능성이 있다. 지문에서 'This asymmetry (com­ pare the symmetry of [XP + and + XP]) is a necessary consequence of X-​bar, which is by its nature SUB-​ordinative.'라는 문장이 X-​bar 관련 설명으로 보였을 수 있다. → 처방: 학생은 지문에서 X-​bar 관련 설명이 전체 흐름의 일부라는 것을 인식해야 한다.\n⑤ 진단: 학생은 '전통적인 관점과 X-​bar 의 차이'가 전체 흐름과 무관하다고 생각했을 가능성이 있다. 지문에서 'It’s not clear that the traditional notion of CO-​ordination is compatible with X-​bar.'라는 문장이 전통적인 관점과 X-​bar 의 차이로 보였을 수 있다. → 처방: 학생은 지문에서 전통적인 관점과 X-​bar 의 차이가 전체 흐름의 일부라는 것을 인식해야 한다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]
