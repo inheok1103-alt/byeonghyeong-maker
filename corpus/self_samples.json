@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-14T20:00:32.794Z",
+ "updated": "2026-08-14T20:48:41.463Z",
  "samples": [
+  {
+   "ts": "2026-08-14T20:46:58.248Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Fair use: \u0007Levin claims that we experience the theater as the most social form of literature because we see it taking place before us. Using Quotations in Your Text (A) [You use / you uses] quotations best when you integrate them so fully that they seem made for your text. Readers become suspicious when (B) [they see / they sees] bare quotations dropped into your paper with no effort to connect them to your own points: Is it you or your source that’s doing all the thinking? So prepare readers for each quotation by stating before you use it (C) [how the quotations / how the quotation] fits into the mesh of your argument. Then make the fit between the quotation and your text as seamless as possible. Four or Fewer Lines Drop in the Quotation  An acceptable but artless way to insert a quotation into your text is simply to drop it in, introducing it with something like",
+    "choices": [
+     "(A) You use - (B) they see - (C) how the quotation",
+     "(A) you uses - (B) they sees - (C) how the quotations",
+     "(A) You use - (B) they see - (C) how the quotations",
+     "(A) you uses - (B) they see - (C) how the quotation",
+     "(A) you uses - (B) they sees - (C) how the quotation"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) You use - (B) they see - (C) how the quotation. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 써야 하는데, ‘uses’를 써서 3인칭 단수 동사로 오해했다. ‘they’는 복수 주어이므로 동사 원형 ‘see’를 써야 하는데, ‘sees’를 써서 혼동했다. ‘quotation’은 단수 개념이므로 ‘quotations’로 복수화한 것이 오류다. → 처방: 주어와 동사의 수 일치를 정확히 확인하고, ‘quotation’이 단수인지 복수인지 문맥에서 판단하기.\n③ 진단: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 써야 하는데, ‘uses’를 써서 3인칭 단수 동사로 오해했다. ‘they’는 복수 주어이므로 동사 원형 ‘see’를 써야 하는데, ‘sees’를 쓰지 않았지만 ‘quotations’를 복수로 써서 문맥 오류를 냈다. → 처방: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 쓰고, ‘quotation’이 단수인지 복수인지 문맥에서 정확히 판단하기.\n④ 진단: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 써야 하는데, ‘uses’를 써서 3인칭 단수 동사로 오해했다. ‘quotation’이 단수 개념이므로 ‘quotations’를 복수로 쓴 것이 오류다. → 처방: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 쓰고, ‘quotation’이 단수인지 복수인지 문맥에서 정확히 판단하기.\n⑤ 진단: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 써야 하는데, ‘uses’를 써서 3인칭 단수 동사로 오해했다. ‘they’는 복수 주어이므로 동사 원형 ‘see’를 써야 하는데, ‘sees’를 써서 수 일치를 틀렸다. → 처방: 주어와 동사의 수 일치를 정확히 확인하고, ‘you’는 2인칭 단수 주어라는 점을 기억하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-14T19:59:20.247Z",
    "type": "문장삽입",
@@ -288,41 +323,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [준동사] ⓒ: 'known to' → 'known as' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T11:59:09.590Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 1/2가 1번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "We can then say that (in the relevant idiom) <u>all hell must be the sister of break loose</u>, and that this condition will be met only if all hell originates in spec-V as the subject (and sister) of the V-bar break loose. We can account for how the subject all hell comes to be separated from its predicate break loose by positing that subjects originate internally within VP and from there raise to spec-T (via A-movement) across an intervening T constituent like will, so that the subject and predicate thereby come to be separated from each other – movement of the subject to spec-T being driven by an [EPP] feature carried by [T will] requiring will to have a subject with person/number features. Subsequently, the TP in (12) is merged with a null declarative complementiser, so deriving the structure associated with (10a) All hell will break loose.",
-    "choices": [
-     "The expression suggests that extreme disorder happens only occasionally in the aftermath of uncontrollable events.",
-     "A situation of extreme chaos or disorder is inherently linked to the occurrence of a sudden and uncontrollable event.",
-     "A situation of extreme chaos or disorder is caused solely by the release of a powerful force.",
-     "The phrase implies that an event causing extreme chaos is the direct result of a deliberate act.",
-     "The idiom literally means that chaos is the sister of breaking free from restraints."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'A situation of extreme chaos or disorder is inherently linked to the occurrence of a sudden and uncontrollable event.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘in the aftermath of’라는 표현을 ‘~의 결과로’라는 뜻으로 오해하여 ‘극도의 무질서가 가끔 발생한다’는 의미로 해석한 것으로 보임. 지문은 ‘극도의 무질서가 발생하는 조건’을 설명하지 ‘발생 빈도’를 언급하지 않음. → 처방: ‘aftermath’가 아닌 ‘occurs only if’라는 조건절에 주목하여, ‘~할 때만’이라는 의미를 정확히 파악할 것.\n③ 진단: ‘all hell originates in spec-V’라는 표현을 ‘강력한 힘의 해방’이 ‘혼자서’ 원인이라고 오해한 것으로 보임. 지문은 ‘spec-V 에서 비롯된다는 조건’을 설명하며, ‘해방’이 ‘무질서’의 원인이라는 점은 맞지만 ‘유일한 원인’이 아님을 간과함. → 처방: ‘only if’라는 조건절의 의미를 정확히 이해하고, ‘~할 때만’이라는 구조에 주목할 것.\n④ 진단: ‘deliberate act’라는 단어를 ‘고의적인 행위’로 오해하여 ‘의도적 행위가 혼돈의 직접적 원인’이라는 의미로 해석한 것으로 보임. 지문은 ‘uncontrollable event’(통제 불가능한 사건)을 언급하며, ‘의도성’을 언급하지 않음. → 처방: ‘deliberate’가 아니라 ‘uncontrollable’이라는 단어를 중점적으로 읽고, ‘의도성’을 배제한 의미를 파악할 것.\n⑤ 진단: ‘idiom’이라는 표현을 ‘직역’으로 오해하여 ‘자매’라는 단어를 ‘문자 그대로’ 해석한 것으로 보임. 지문은 ‘idiom’을 ‘관용구’로 사용하며, ‘자매’라는 단어는 ‘비유적 표현’임을 간과함. → 처방: ‘idiom’이 ‘관용구’라는 뜻을 지닌다는 점을 떠올리고, ‘자매’라는 단어는 ‘연관성’을 나타내는 비유임을 인식할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
