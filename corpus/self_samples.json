@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-14T10:18:57.361Z",
+ "updated": "2026-08-14T12:01:15.130Z",
  "samples": [
+  {
+   "ts": "2026-08-14T11:59:09.590Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 1/2가 1번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "We can then say that (in the relevant idiom) <u>all hell must be the sister of break loose</u>, and that this condition will be met only if all hell originates in spec-V as the subject (and sister) of the V-bar break loose. We can account for how the subject all hell comes to be separated from its predicate break loose by positing that subjects originate internally within VP and from there raise to spec-T (via A-movement) across an intervening T constituent like will, so that the subject and predicate thereby come to be separated from each other – movement of the subject to spec-T being driven by an [EPP] feature carried by [T will] requiring will to have a subject with person/number features. Subsequently, the TP in (12) is merged with a null declarative complementiser, so deriving the structure associated with (10a) All hell will break loose.",
+    "choices": [
+     "The expression suggests that extreme disorder happens only occasionally in the aftermath of uncontrollable events.",
+     "A situation of extreme chaos or disorder is inherently linked to the occurrence of a sudden and uncontrollable event.",
+     "A situation of extreme chaos or disorder is caused solely by the release of a powerful force.",
+     "The phrase implies that an event causing extreme chaos is the direct result of a deliberate act.",
+     "The idiom literally means that chaos is the sister of breaking free from restraints."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'A situation of extreme chaos or disorder is inherently linked to the occurrence of a sudden and uncontrollable event.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘in the aftermath of’라는 표현을 ‘~의 결과로’라는 뜻으로 오해하여 ‘극도의 무질서가 가끔 발생한다’는 의미로 해석한 것으로 보임. 지문은 ‘극도의 무질서가 발생하는 조건’을 설명하지 ‘발생 빈도’를 언급하지 않음. → 처방: ‘aftermath’가 아닌 ‘occurs only if’라는 조건절에 주목하여, ‘~할 때만’이라는 의미를 정확히 파악할 것.\n③ 진단: ‘all hell originates in spec-V’라는 표현을 ‘강력한 힘의 해방’이 ‘혼자서’ 원인이라고 오해한 것으로 보임. 지문은 ‘spec-V 에서 비롯된다는 조건’을 설명하며, ‘해방’이 ‘무질서’의 원인이라는 점은 맞지만 ‘유일한 원인’이 아님을 간과함. → 처방: ‘only if’라는 조건절의 의미를 정확히 이해하고, ‘~할 때만’이라는 구조에 주목할 것.\n④ 진단: ‘deliberate act’라는 단어를 ‘고의적인 행위’로 오해하여 ‘의도적 행위가 혼돈의 직접적 원인’이라는 의미로 해석한 것으로 보임. 지문은 ‘uncontrollable event’(통제 불가능한 사건)을 언급하며, ‘의도성’을 언급하지 않음. → 처방: ‘deliberate’가 아니라 ‘uncontrollable’이라는 단어를 중점적으로 읽고, ‘의도성’을 배제한 의미를 파악할 것.\n⑤ 진단: ‘idiom’이라는 표현을 ‘직역’으로 오해하여 ‘자매’라는 단어를 ‘문자 그대로’ 해석한 것으로 보임. 지문은 ‘idiom’을 ‘관용구’로 사용하며, ‘자매’라는 단어는 ‘비유적 표현’임을 간과함. → 처방: ‘idiom’이 ‘관용구’라는 뜻을 지닌다는 점을 떠올리고, ‘자매’라는 단어는 ‘연관성’을 나타내는 비유임을 인식할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-14T12:00:21.770Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The subject must detach from its predicate to meet grammatical requirements",
+     "The subject moves to fulfill syntactic constraints imposed by the predicate",
+     "The subject's separation from its predicate arises from grammatical movement demands",
+     "All grammatical subjects universally detach from their predicates to satisfy syntactic rules",
+     "The subject moves to satisfy person/number features required by the predicate"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'All hell must move from VP to spec-T to satisfy [EPP] on T, separating subject from predicate.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: All hell must move from VP to spec-T to satisfy [EPP] on T, separating subject from predicate.]\n[오답 진단·처방]\n① 진단: ‘must detach’는 지문의 ‘must be the sister of break loose’를 ‘분리’로 오해한 듯. ‘분리’가 ‘의무’와 직접 연결되지 않음. 지문은 ‘분리’가 ‘문법적 움직임’ 때문임을 강조. → 처방: ‘의무’가 아니라 ‘문법적 움직임’ 때문에 분리된다는 점을 먼저 확인하고, 선지를 고를 때는 ‘의무’와 ‘분리’를 분리해서 생각하기.\n② 진단: ‘subject moves to fulfill syntactic constraints imposed by the predicate’를 골랐다면, ‘predicate’가 ‘break loose’를 ‘제약’을 주는 주체로 오해한 듯. 지문은 ‘T will’이 ‘subject’를 요구한다고 설명. → 처방: ‘predicate’가 아니라 ‘T will’이 ‘subject’를 요구한다는 점을 정확히 짚고, ‘predicate’는 ‘분리’된 결과임을 기억하기.\n④ 진단: ‘universally’라는 과장된 표현을 골랐다면, 지문의 ‘only if’나 ‘EPP feature’를 무시하고 ‘모든 경우’를 일반화한 듯. 지문은 ‘all hell’이 ‘spec-T’로 이동한다고만 설명. → 처방: ‘universally’를 쓰기 전에 ‘지문에서 언급된 경우’인지 먼저 확인하고, 예외가 있는지 확인하기.\n⑤ 진단: ‘person/number features’를 골랐다면, 지문의 ‘EPP feature carried by [T will]’를 ‘predicate’의 요구로 오해한 듯. 지문은 ‘T will’이 ‘subject’를 요구한다고 설명. → 처방: ‘predicate’가 아니라 ‘T will’이 ‘subject’를 요구한다는 점을 정확히 짚고, ‘person/number features’를 ‘T will’의 요구로 이해하기."
+   }
+  },
   {
    "ts": "2026-08-14T10:18:00.532Z",
    "type": "영영풀이일치",
@@ -287,60 +357,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Joachim was taught by Mozart himself and knew the sonata was within his capacities.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘having been taught by Mozart himself’를 ‘모차르트에게 가르침을 받은 후’로만 해석해 ‘소나타를 연주할 수 있게 되었다’는 결과가 지문에 없음을 무시했다. ‘having been taught’는 ‘가르침을 받았다’는 과거 상태만 나타내고, ‘연주 가능’은 ‘within his capacities’로만 표현되어 있다. → 처방: ‘having been taught’는 과거 상태일 뿐 결과가 아님을 기억하고, ‘within his capacities’를 ‘자신의 능력 범위 내’라는 뜻으로 정확히 해석하라.\n② 진단: ‘knew’를 ‘확인했다’로만 해석해 ‘소나타가 자신의 능력 범위 내에 있음을 스스로 확인했다’는 주체(요아힘)가 능동적으로 확인한 것처럼 오독했다. ‘knew’는 ‘알았다’는 뜻으로, ‘within his capacities’는 객관적 사실로 서술된 것이다. → 처방: ‘knew’를 ‘알았다’는 뜻으로만 받아들이고, ‘within his capacities’를 주관적 판단이 아닌 객관적 사실로 이해하라.\n③ 진단: ‘all’의 생략을 근거로 ‘모차르트의 제자들은 모두’라는 일반화를 오독했다. 지문은 요아힘 한 사람에 대한 사실만 서술했고, ‘all’이라는 단어가 없다. → 처방: ‘all’이라는 단어가 없으면 일반화하지 말고, 지문에 언급된 요아힘 한 사람에만 집중하라.\n④ 진단: ‘having been taught by Mozart himself’를 ‘모차르트에게 가르침을 받았다’는 사실만으로 ‘연주 가능’을 보장한다고 오해했다. 그러나 ‘within his capacities’는 ‘능력 범위 내’라는 조건적 사실일 뿐, 가르침이 보장한다는 의미는 없다. → 처방: ‘having been taught’는 과거 사실일 뿐이고, ‘within his capacities’는 조건적 사실임을 구분해 이해하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Joachim was taught by Mozart himself and knew the sonata was within his capacities.]"
-   }
-  },
-  {
-   "ts": "2026-08-14T00:00:35.689Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 핵심적인 차이는 지속적이고 지속적이라는 의미에 있습니다.\n주어진 단어: ( and / lies / of / meaning / continuous / the / difference / continual / in / The / core )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The core difference lies in the meaning of continual and continuous.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-13T23:04:29.358Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>Necessity</u> . . . ⓑ<u>constrains</u> them to ⓒ<u>alter</u> their former Systems of ⓓ<u>government</u>. ✓ We now must alter our former Systems of government. Instead of writing as clearly and directly as he did in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a ⓔ<u>style</u> so indirect and impersonal? One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked. What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]",
-    "choices": [
-     "necessity: The quality or state of being necessary, unavoidable, or absolutely requisite.",
-     "constrains: To force physically, by strong persuasion or pressuring; to compel; to oblige.",
-     "alter: To change the form or structure of.",
-     "government: The body with the power to make and/or enforce laws to control a country, land a",
-     "style: A founder of a colony."
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ의 풀이는 'colonists'의 정의이다. 'style'의 올바른 풀이: Senses relating to a thin, pointed object.\n[오답 진단·처방]\n① 진단: ‘necessity’의 의미는 지문에서 ‘필수적임’이 아니라 ‘필연성’(avoidable 하지 않은 상태)으로 쓰였지만, 학생은 ‘필수적임’이라는 일반적인 뜻을 떠올렸다. 지문 ⓐ에 ‘Necessity... constrains’를 보면 ‘필연성’이 ‘강제’로 이어지는 의미를 담고 있음을 볼 수 있다. → 처방: ‘necessity’를 영영풀이할 때는 ‘unavoidable’이 포함된 뜻을 떠올리고, 지문에서 ‘constrains’와 연결된 의미를 확인하자.\n② 진단: ‘constrains’를 ‘강제하다’라고 해석했지만, 학생은 ‘물리적으로 강제하는’ 의미로만 이해했다. 지문 ⓑ에서 ‘constrains’는 ‘의견 존중’이란 도덕적·사회적 압력으로 colonists 를 ‘compel’하는 의미를 담고 있다. → 처방: ‘constrain’의 의미를 영영풀이할 때는 ‘compel’(강요하다)뿐 아니라 ‘pressuring’(압박하는) 의미도 포함된다는 점을 기억하고, 지문에서 어떤 종류의 ‘강제’인지 확인하자.\n③ 진단: ‘alter’를 ‘형태나 구조를 바꾸다’라고 해석했지만, 학생은 ‘변화’의 일반적인 뜻을 떠올렸다. 지문 ⓒ에서 ‘alter’는 ‘정부 시스템’을 ‘바꾸다’라는 구체적인 변화로 쓰였지만, 학생은 ‘변화’의 폭을 넓게 해석했다. → 처방: ‘alter’를 영영풀이할 때는 ‘change’의 하위 범주로 ‘형태나 구조의 변화’를 떠올리고, 지문에서 어떤 대상이 ‘변화’하는지 확인하자.\n④ 진단: ‘government’를 ‘법을 만들고 집행하는 기관’으로 해석했지만, 학생은 ‘정부’라는 단어 자체에만 집중했다. 지문 ⓓ에서 ‘government’는 ‘정부 시스템’이라는 구체적인 제도나 구조를 가리키며, ‘법률을 만드는 기관’보다 넓은 의미를 담고 있다. → 처방: ‘government’를 영영풀이할 때는 ‘정부’라는 단어뿐 아니라 ‘정치 체제나 시스템’이라는 의미를 떠올리고, 지문에서 어떤 맥락에서 쓰였는지 확인하자.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
