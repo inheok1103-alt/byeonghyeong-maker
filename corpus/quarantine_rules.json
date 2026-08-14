@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-14T02:53:10.837Z",
+ "updated": "2026-08-14T05:06:03.829Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제에서는 선지의 형태와 길이를 통일하고, 발문을 명료하게 수정하여 통일성과 명확성을 확보해야 한다.",
+   "src": "자가학습:무관문장",
+   "score": 82,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-14T05:04:25.161Z"
+  },
+  {
+   "rule": "모든 오류는 개별적으로 식별·수정되어야 하며, 문맥에 따라 단수/복수 동사 일치, 어순, 중복 오류 등 모든 결함을 포괄적으로 검토해야 한다.",
+   "src": "자가학습:틀린문장 고쳐쓰기",
+   "score": 63,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-14T05:05:00.600Z"
+  },
   {
    "rule": "모든 문항은 원문의 핵심 논리(사실과 인식의 독립성)를 정확히 반영한 선지들로만 구성하며, 중복·불명확·오류 표현을 배제하고 인과관계를 오해시킬 수 있는 서술을 금지한다.",
    "src": "자가학습:요지",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-09T14:54:03.953Z"
-  },
-  {
-   "rule": "개선 규칙: \"영영풀이의 핵심 의미는 원문에 직접 등장하는 'front'의 공간적 용법(예: 'the front of ~')에 기반하여 정의하며, 발문 조건은 원문에 명시된 요소(예: 'the front of the stage')로 한정하고, 'front'의 의미는 '정면/앞쪽'으로 통일하여 사전 정의('foremost side' 등)와 혼동되지 않도록 한다.",
-   "src": "자가학습:본문찾아쓰기",
-   "score": 60,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-09T15:01:01.288Z"
-  },
-  {
-   "rule": "개선 규칙:** 지문 내 혼동어(예: *allusion/illusion*)는 반드시 대조적 정의(예: *\"allusion: indirect reference / illusion: false perception\"*)로 제시하고, 빈칸의 정답 유일성을 확보하기 위해 예시는 오답 선지와 직접 연결되는 문맥(예: *\"The law was ambiguous\"* → *\"ambiguous: open to multiple interpretations\"*)으로 구성할 것.",
-   "src": "자가학습:빈칸(어구)",
-   "score": 82,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-09T14:02:40.824Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
