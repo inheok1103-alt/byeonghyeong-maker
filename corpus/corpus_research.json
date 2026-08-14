@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T17:20:07.830Z",
+ "updated": "2026-08-14T18:14:24.909Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T18:13:27.928Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "영어 문법 오류는 대소문자, 시제, 수일치, 관사 등 기본적인 문법 규칙 미비에서 주로 발생하며, 특히 능동태와 수동태, 단수·복수 명사의 혼동이 빈번하다.",
+   "rule": "CEFR B1 수준 내신 문항 출제 시, 주어와 동사의 수 일치, 능동태/수동태 전환, 관사의 적절한 사용(정관사/부정관사/무관사)을 필수 문법 요소로 포함하여 오류 유도를 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T17:19:35.635Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "복합문에서 접속사 'but'의 과도한 사용이 문장의 논리적 흐름을 방해하며, 'system'의 단수형 오용과 'car'의 복수 표현 부족이 자연스러운 문장 구성을 어렵게 한다.",
    "rule": "CEFR B2 수준의 문장에서는 'but'을 한 문장에 1회만 사용하도록 제한하고, 'system'은 복수형 'systems'로, 'car'는 'personal cars'로 명시하여 문법적 정확성과 자연스러움을 확보하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-11T00:00:02.526Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "연어(collocation) 오류는 특정 구문 내 필수 관사·전치사·형태소 누락에서 빈번히 발생하며, 이는 문법적 정확성뿐 아니라 의미적 완결성에도 영향을 미친다.",
-   "rule": "연어 기반 오답 설계 시, 'give rise to'는 반드시 'a + 명사구' 구조를 요구하므로, 'holistic understanding' 앞에 관사 'a'를 생략하거나 'to' 다음 명사구에 전치사 'of'를 누락한 오답을 반드시 포함하라.",
    "sample": [
     "old english",
     "university press",
