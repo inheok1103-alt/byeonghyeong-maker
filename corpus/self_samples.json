@@ -1,6 +1,93 @@
 {
- "updated": "2026-08-14T21:44:26.442Z",
+ "updated": "2026-08-14T22:43:54.441Z",
  "samples": [
+  {
+   "ts": "2026-08-14T22:42:45.951Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "PROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. • The provident father had long ago set aside money for the college education of each of his children. To be improvident is to fail to provide for the future. • It was improvident of the grasshopper not to store any food for the winter, <u>unlike his acquaintance the provident ant</u>. Quick Quiz #68 Match each word in the first column with its definition in the second column. Check your answers here. 1. promulgate a. natural inclination 2. propensity b. good manners 3. propitious c. advocate 4. proponent d. prohibit 5. proprietary e. prolong 6. propriety f. leading character 7. prosaic g. constituting property 8. proscribe h. frugal 9. proselytize i. dull 10. protagonist j. marked by favorable signs 11. protract k. convert 12. provident l. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
+    "choices": [
+     "The grasshopper’s carefree attitude toward the future is similar to the ant’s cautious behavior, suggesting that both success and failure depend on luck.",
+     "The grasshopper’s failure to prepare for the future contrasts sharply with the ant’s foresightedness, illustrating the moral that prudent planning leads to survival.",
+     "Unlike the ant, which sometimes plans ahead, the grasshopper is always carefree, so its lack of preparation occasionally results in hardship.",
+     "Because the grasshopper didn’t prepare for the future, the ant’s foresightedness led to its survival, proving that planning alone guarantees success.",
+     "Because the grasshopper did not plan ahead, he starved, which proves that lack of preparation directly leads to survival."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'The grasshopper’s failure to prepare for the future contrasts sharply with the ant’s foresightedness, illustrating the moral that prudent planning leads to survival.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘유사한’과 ‘의존’ 키워드로 지문의 ‘unlike’를 무시하고 ‘carefree attitude’와 ‘cautious behavior’를 같은 맥락으로 오해했음. → 처방: ‘unlike’를 중심으로 ‘대조’를 찾아야 하며, ‘luck’은 지문에 없으므로 제외하고 풀기.\n③ 진단: ‘때때로’와 ‘항상’을 혼동해 ‘ant’의 계획성 여부를 부정확하게 해석했으며, ‘occasional hardship’을 근거로 오답을 선택했음. → 처방: ‘unlike’를 기준으로 ‘ant’는 ‘provident(계획성 있음)’임을 정확히 짚고, ‘always’를 배제한 풀기.\n④ 진단: ‘planning alone guarantees success’를 근거로 ‘planning’이 ‘유일한 성공 조건’이라고 과장해 해석해 오답을 선택했음. → 처방: 지문은 ‘prudent planning’이 ‘survival’에 도움이 된다는 정도를 말하고 있음을 기억하고, ‘guarantees’를 배제한 풀기.\n⑤ 진단: ‘starved’를 근거로 ‘직접적 결과’를 과장해 ‘survival’을 ‘starvation’으로 오해했으며, 지문이 ‘survival’을 언급함을 무시했음. → 처방: ‘survival’이 ‘ant’의 결과임을 확인하고, ‘starved’를 ‘survival’과 연결 지어 풀기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-14T22:43:12.441Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] • It was improvident of the grasshopper not to store any food for the winter, unlike his acquaintance the provident ant.\n\nPROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. ( ① ) • The provident father had long ago set aside money for the college education of each of his children. ( ② ) To be improvident is to fail to provide for the future. ( ③ ) Quick Quiz #68 Match each word in the first column with its definition in the second column. ( ④ ) Check your answers here. ( ⑤ ) natural inclination 2. good manners 3. leading character 7. constituting property 8. marked by favorable signs 11. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ①의 문장은 'provident'가 '미래를 준비하는' 뜻임을 예시로 설명하는 부분인데, 주어진 문장은 'improvident'와 'provident'의 대조를 통해 '미래 준비의 중요성'을 강조하는 내용이므로 흐름이 맞지 않는다. → 처방: 단어의 뜻과 예시가 나오는 문장 뒤에 오는 문장은 그 단어를 사용한 문장이어야 한다는 점을 기억하고, 문맥 흐름을 먼저 확인하라.\n② 진단: ②의 문장도 'provident'의 의미를 예시로 설명하는 부분으로, 주어진 문장처럼 두 동물의 대조를 통한 교훈을 전달하는 내용이 아니기 때문에 적절하지 않다. → 처방: 예시 문장 다음에는 그 단어를 사용한 문장이 오지 않을 수도 있음을 인식하고, 문맥의 핵심 의미를 먼저 파악하라.\n④ 진단: ④는 단어 정의와 퀴즈를 연결하는 부분으로, 주어진 문장이 'provident'와 'improvident'의 대조를 통한 교훈을 전달하는 내용이므로 이 위치에는 맞지 않다. → 처방: 퀴즈나 정의가 나오는 부분은 문맥의 흐름이 끊어지는 곳이므로, 그 전에 문맥이 자연스럽게 연결되는지 먼저 확인하라.\n⑤ 진단: ⑤는 퀴즈의 답을 확인하는 부분으로, 주어진 문장이 두 동물의 대조를 통한 교훈을 전달하는 내용이므로 이 위치에는 맞지 않다. → 처방: 퀴즈나 답 확인 부분은 문장의 흐름이 끊어지는 곳이므로, 그 전에 문맥이 자연스럽게 연결되는지 먼저 확인하라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-14T22:43:22.415Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: p)\n[영영풀이] Possessing, exercising, or demonstrating great care and consideration for the future.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] provident (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-14T21:43:03.485Z",
    "type": "밑줄함의",
@@ -266,80 +353,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 조지와 엘리자베스의 토론은 조지의 끊임없는 고질적인 어리석음을 거론하면서 신랄해졌다. (구문 포인트: when 절(시간을 나타내는 부사절) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T18:12:57.204Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "⚠ 지문 축소 의심(62%) — 정보 손실 여부 확인 권고 · ⚠ 정답 재검토 권고 — 솔버 2/3가 3번 선택(기록 4번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.13,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.13)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "We can then say that the infinitive subject him is assigned accusative case by the complementiser for in structures like (67) in exactly the same way as the accusative subject them is assigned accusative case by the complementiser for in the bracketed complement clause in (64). (How case-marking works will be discussed in §3.9.) One way of accounting for why the complementiser isn’t overtly spelled out as for in structures like (67) is to suppose that it is given a null spellout (and thereby has its phonetic features deleted) when introducing the complement of a ____ .",
-    "choices": [
-     "transitive verb",
-     "finite verb",
-     "modal verb",
-     "제거 대상 동사",
-     "primary verb"
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 '제거 대상 동사'가 들어가 글의 논지를 완성한다 (본문 'verbs like want'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘transitive verb(타동사)’를 골랐다면, 지문에서 ‘complementiser for’가 ‘them’을 목적격으로 Assign 하는 것처럼 ‘him’을 Assign 한다고 설명하는데, 타동사는 목적어와 직접 관련이 있지만 ‘for’ 자체가 ‘complementiser’(보문사)라는 점에서 혼동한 듯함. → 처방: ‘complementiser(보문사)’가 무엇인지 정확히 짚고, 보문사가 동사 종류와는 다른 문법 범주라는 점을 기억하세요.\n② 진단: ‘finite verb(한정동사)’를 골랐다면, 지문에서 ‘for’가 보문사로 기능한다고 설명하는데, 한정동사와 보문사의 역할이 다르다는 점을 혼동한 듯함. → 처방: ‘for’가 보문사로 쓰일 때는 동사가 아니라 문법적 기능을 한다는 점을 분명히 구분하세요.\n③ 진단: ‘modal verb(조동사)’를 골랐다면, 조동사와 보문사가 문법적 기능을 한다는 점에서 유사하다고 생각했을 수 있으나, 조동사는 동사 종류고 보문사는 문법적 기능이라는 점에서 혼동한 듯함. → 처방: 조동사와 보문사의 역할을 명확히 구분하고, 보문사가 동사 종류가 아니라는 점을 기억하세요.\n⑤ 진단: ‘primary verb(주동사)’를 골랐다면, ‘for’를 동사의 한 종류로 오해했을 수 있으나, ‘for’는 보문사로 기능하며 동사가 아니라는 점을 혼동한 듯함. → 처방: ‘for’가 동사가 아니라 보문사라는 점을 정확히 이해하고, 동사와 보문사의 차이를 구분하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T17:13:36.049Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Late Modern English Syntax The Late Modern period is the first in the history of English for which an unprece­ dented wealth of textual material exists. Using increasingly sophisticated databases, the contributions in this volume explore grammatical usage from the period, spe­ cifically morphological and syntactic change, in a broad context. Some chapters explore the socio-historical background of the period while others provide informa­ tion on prescriptivism, newspaper language, language contact and regional variation in British and American English. Internal processes of change are discussed against grammaticalisation theory and construction grammar and the rich body of textual evidence is used to draw inferences on the precise nature of historical change. Exposing readers to a wealth of data that informs the description of a broad range of syntactic phenomena, this book is ideal for graduate students and researchers interested in historical linguistics, corpus linguistics and language development. Marianne Hundt is Full Professor of English Linguistics in the English Department at the University of Zurich, Switzerland.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T17:19:33.602Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Late Modern English Syntax The Late Modern period is the first in the history of English for which an unprece­ dented wealth of textual material exists.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 후기 현대 영어 시대는 영어 역사상 전례 없이 풍부한 텍스트 자료가 존재하는 최초의 시대입니다. (구문 포인트: 관계사절(relative clause) 생략 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
