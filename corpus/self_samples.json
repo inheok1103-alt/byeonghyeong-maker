@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-14T00:01:05.649Z",
+ "updated": "2026-08-14T02:53:10.841Z",
  "samples": [
+  {
+   "ts": "2026-08-14T02:48:05.071Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "요아힘은 모차르트에게 가르침을 받은 후 소나타를 연주할 수 있게 되었다.",
+     "요아힘은 소나타가 자신의 능력 범위 내에 있음을 스스로 확인했다.",
+     "모차르트의 제자들은 모두 그의 가르침을 받은 뒤 소나타를 연주할 수 있게 된다.",
+     "요아힘이 모차르트에게 가르침을 받았다는 사실은 그가 소나타를 연주할 수 있음을 보장하지 않는다.",
+     "요아힘은 모차르트에게 직접 가르침을 받았고, 그 소나타는 자신의 능력 범위 내에 있음을 알았다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Joachim was taught by Mozart himself and knew the sonata was within his capacities.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘having been taught by Mozart himself’를 ‘모차르트에게 가르침을 받은 후’로만 해석해 ‘소나타를 연주할 수 있게 되었다’는 결과가 지문에 없음을 무시했다. ‘having been taught’는 ‘가르침을 받았다’는 과거 상태만 나타내고, ‘연주 가능’은 ‘within his capacities’로만 표현되어 있다. → 처방: ‘having been taught’는 과거 상태일 뿐 결과가 아님을 기억하고, ‘within his capacities’를 ‘자신의 능력 범위 내’라는 뜻으로 정확히 해석하라.\n② 진단: ‘knew’를 ‘확인했다’로만 해석해 ‘소나타가 자신의 능력 범위 내에 있음을 스스로 확인했다’는 주체(요아힘)가 능동적으로 확인한 것처럼 오독했다. ‘knew’는 ‘알았다’는 뜻으로, ‘within his capacities’는 객관적 사실로 서술된 것이다. → 처방: ‘knew’를 ‘알았다’는 뜻으로만 받아들이고, ‘within his capacities’를 주관적 판단이 아닌 객관적 사실로 이해하라.\n③ 진단: ‘all’의 생략을 근거로 ‘모차르트의 제자들은 모두’라는 일반화를 오독했다. 지문은 요아힘 한 사람에 대한 사실만 서술했고, ‘all’이라는 단어가 없다. → 처방: ‘all’이라는 단어가 없으면 일반화하지 말고, 지문에 언급된 요아힘 한 사람에만 집중하라.\n④ 진단: ‘having been taught by Mozart himself’를 ‘모차르트에게 가르침을 받았다’는 사실만으로 ‘연주 가능’을 보장한다고 오해했다. 그러나 ‘within his capacities’는 ‘능력 범위 내’라는 조건적 사실일 뿐, 가르침이 보장한다는 의미는 없다. → 처방: ‘having been taught’는 과거 사실일 뿐이고, ‘within his capacities’는 조건적 사실임을 구분해 이해하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Joachim was taught by Mozart himself and knew the sonata was within his capacities.]"
+   }
+  },
   {
    "ts": "2026-08-14T00:00:35.689Z",
    "type": "배열영작",
@@ -317,25 +352,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'Passive subjects and complements of passive verbs share the same thematic function.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 수동태 주어는 보어에서 의미역을 전달받는다고 오해했는데, 지문은 수동태 주어(원래 보어)가 수동화 과정에서 주어로 바뀌면서 같은 의미역을 유지한다고 설명함. ‘전달받는다’는 표현이 오해의 원인. → 처방: 수동태 주어와 보어의 의미역이 같다는 사실을 기억하고, ‘전달’이라는 동사를 쓰지 않도록 주의하기.\n② 진단: 수동태 주어와 보어의 의미역이 다르다고 오독했는데, 지문은 두 경우가 ‘동일한’ 의미역을 지닌다고 주장하며 그 근거로 수동화 과정과 의미역 일치를 제시함. → 처방: ‘같지 않다’는 결론을 내리기 전에 지문의 ‘동일한’ 주장과 ‘의미역 일치’ 근거를 다시 한 번 확인하기.\n③ 진단: 문맥에 따라 의미역이 달라질 수 있다고 혼동했는데, 지문은 수동태 주어와 보어가 ‘항상’ 같은 의미역을 지닌다고 명시적으로 설명하고 있음. → 처방: ‘달라질 수 있다’는 추측을 배제하고, 지문의 ‘항상 같다’는 주장에 집중하기.\n⑤ 진단: 수동태 주어와 보어가 다른 의미역을 지닌다고 오해했는데, 지문은 두 경우가 ‘동일한’ 의미역을 지닌다고 반복해서 강조하고 있음. → 처방: ‘다른’과 ‘동일’의 의미를 정확히 구분하고, 지문의 반복된 주장(‘same thematic function’)을 눈여겨보기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Passive subjects and complements of passive verbs share the same thematic function.]"
-   }
-  },
-  {
-   "ts": "2026-08-13T18:12:16.242Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Evidence that this is indeed the case comes from the traditional observation that the two are subject to the same pragmatic restrictions on the choice of expression which can occupy the relevant position, as we see from sentences such as the following (where ?",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 이것이 실제로 사실이라는 증거는 다음 문장들에서 볼 수 있듯이, 두 표현이 차지할 수 있는 관련 위치에 대해 동일한 실용적 제한을 받는다는 전통적인 관찰에서 비롯됩니다. (구문 포인트: 관계사절(relative clause) 및 한정적 용법 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

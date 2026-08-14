@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T00:01:05.645Z",
+ "updated": "2026-08-14T02:53:10.837Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T02:52:45.419Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거시제와 현재완료시제의 혼동, 단수/복수 주어나 관사의 오용이 빈번하며, 문법적 복잡성보다 의미적 명확성이 우선되는 한국어 학습자의 특성을 반영한다.",
+   "rule": "CEFR B1 수준 이하의 문항에서, 'that절 내 동사의 시제(과거/현재완료)나 주어의 수(단수/복수) 오류'와 '불필요한 관사(예: a/the)나 전치사(for/of) 오류'를 1개씩 반드시 포함하여 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T00:00:37.392Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "명사구(noun phrase) 내 연어(collocation) 오류가 빈번하며, 특히 'reasons for', 'methods of', 'dos and don'ts'와 같이 고정된 복합명사구가 자주 틀리게 사용됨을 확인했다.",
    "rule": "복합명사구(noun phrase) 내 연어(collocation)를 묻는 문제에서는 'reasons for', 'methods of', 'dos and don'ts' 등 빈번한 실제 연어를 기준으로 오답지를 설계하라. 예를 들어 'reasons of' → 'reasons for', 'methods for' → 'methods of', 'do's and don't of' → 'dos and don'ts of'로 틀리게 제시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-10T10:38:08.223Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "명사구(noun phrase) 내 한정사(a/an/the) 누락 오류가 CEFR B1~B2 밴드에서 빈번하며, 특히 'important thing'과 같이 수식어 없이 단독으로 쓰이는 경우 오류 발생 가능성이 높다.",
-   "rule": "CEFR B1~B2 수준의 문법 오류 유형 중 'a/an/the' 한정사 누락 오류를 검증하는 문제를 30% 이상 포함하되, 'important thing'·'chance of hiring'·'door for new projects'와 같은 빈도 높은 명사구 패턴을 우선 적용하라.",
    "sample": [
     "old english",
     "university press",
