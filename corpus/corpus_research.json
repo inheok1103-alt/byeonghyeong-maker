@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T08:46:33.629Z",
+ "updated": "2026-08-14T10:18:57.357Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-14T10:18:32.279Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'that'절이 명사구 역할을 할 때, 주절 동사 뒤에 위치하는 패턴이 빈번히 관찰된다. 특히 'reason that' → 'reason to'와 같이 전치사 구문으로 전환하는 오류가 반복된다.",
+   "rule": "CEFR B1 수준에서 'that'절이 명사 역할을 하는 경우, 'that S V' → 'to V' 또는 'for V-ing'으로 전환하는 연습 문제를 출제하여, 학생들이 명사적 기능을 지닌 to-부정사와 that-절을 구분할 수 있도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T08:46:07.115Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'one'의 오용이 빈번하며, 특히 지시대명사(指示代名詞)나 관사(冠詞) 없이 사용될 때 문법적 오류로 이어진다. 또한 'better'와 같은 비교급 형용사가 부사적 맥락에서 잘못 사용되는 패턴이 관찰된다.",
    "rule": "CEFR B1~B2 수준 문제 출제 시, 'one'을 지시대명사로 사용할 경우 반드시 'the one', 'this one', 'that one' 등 명시적 지시어와 함께 사용하도록 오답 선택지를 구성하거나, 비교급 형용사('better', 'worse' 등)가 부사적 맥락에서 오용되지 않도록 문장 구조를 검증하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-10T17:12:25.732Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "‘in life’와 ‘of life’의 선택은 맥락에 따라 달라지며, ‘car’→‘cars’와 같이 복수형 오류가 빈번하다는 점을 확인할 수 있다. 또한 대문자 사용(‘I’, ‘So’)과 같은 소소한 오류도 문법항목으로 활용 가능하다는 인사이트를 얻었다.",
-   "rule": "‘in life’와 ‘of life’ 중 하나를 빈칸으로 제시하여, ‘활동의 범위(일상/삶의 영역)’를 나타낼 때는 ‘in life’를, ‘생명·존재·소유’ 개념일 때는 ‘of life’를 선택하도록 문항을 구성하라.",
    "sample": [
     "old english",
     "university press",
