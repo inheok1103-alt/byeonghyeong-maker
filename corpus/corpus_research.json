@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-15T16:49:02.797Z",
+ "updated": "2026-08-15T17:42:52.689Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T17:42:26.721Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'also', 'unmeaningful' 같은 비표준형용사/부사 사용이나 전치사 누락이 빈번하며, 문장 구조 재구조화가 필요하다는 패턴을 확인했다. 특히 'also'의 위치 오류와 'un-' 접두사 오용이 특징적이다.",
+   "rule": "'also', 'only', 'even' 등 강조부사는 문장 맨 앞·뒤가 아닌 동사 바로 뒤에 배치하는 것이 표준 영어 규칙임을 학생들에게 반드시 강조하라. 예를 들어 'It may spoil the health also.'는 'It may also spoil the health.'로 수정해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-15T16:48:39.807Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'old/new' + 'English'가 'university press', 'grammar', 'language'와 결합하는 빈도가 높아 'old/new' + 'English'가 연어 패턴으로 정착되어 있음을 확인했다. 또한 'heart disease'가 'heart decease'로 오용되는 오류는 'disease'의 철자 오류가 아니라 'disease'와 'decease'의 혼동에서 비롯된다는 점을 발견했다.",
    "rule": "'old/new' + 'English'가 포함된 문장에서 'English'를 'grammar', 'language', 'university press' 중 하나로 대체하는 오답지를 설계할 때는 반드시 'old/new' + 해당 명사(예: 'old grammar')의 연어 가능성을 검토하여 오답의 자연스러움을 보장하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-12T10:34:38.374Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'old/new'와 같은 형용사가 명사구(NP)의 수식어 역할을 할 때, 문법적 오류는 주로 수 일치(agreement)나 관사 생략에서 발생하며, 이를 수정할 때 'the + last/first + 명사' 구조나 비교급 형용사의 정확한 형태가 중요하다.",
-   "rule": "형용사(old/new, small/big 등)가 명사구(NP)를 수식할 경우, 비교급(er)이나 최상급(-est) 형태가 필요한지, 또는 관사(the/a)가 필요한지를 반드시 검토하여 문장을 완성하라. 예를 들어, 'smallers' → 'smaller', 'big chance' → 'great chance' 등으로 오류를 수정한다.",
    "sample": [
     "old english",
     "university press",
