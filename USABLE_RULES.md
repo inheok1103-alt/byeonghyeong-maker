@@ -2599,3 +2599,8 @@
 - 'also', 'only', 'even' 등 강조부사는 문장 맨 앞·뒤가 아닌 동사 바로 뒤에 배치하는 것이 표준 영어 규칙임을 학생들에게 반드시 강조하라. 예를 들어 'It may spoil the health also.'는 'It may also spoil the health.'로 수정해야 한다.  _(출처: 코퍼스연구:실제 문법오류쌍(gec)을 활용한 어법 문항)_
 - 1) BERT/RoBERTa 임베딩(0.85 Threshold) + WordNet Sense + FrameNet 맥락 분석을 기본 틀로 채택하되, 2) idiom/slang/eregister mismatch는 Frame Alignment Score(<0.3)로 자동 차단하고, 3) 다의어는 Dependency Parsing + SRL(Semantic Role Labeling)로 sense disambiguation 강화. 4) 화용론적 계층(Politeness/Register/Idiom Integrity)을 3단계 필터링(Pre-filtering→Contextual→Register Check)으로 구조화하여 내신/수능 ‘맥락 오용’ 채점 위험 최소화.  _(출처: 회의:자동연구)_
 - 1) spaCy로 주어/목적어 동일성 확인 후, 2) 의미역 분석(인과관계·책임소재)을 통해 주체의 중요도를 판단. 3) 재귀대명사/수여동사 관여 시 by구 강제 유지. 4) 주체가 '행위 책임' 내포 시 by구 필수, '제3자/사소한 개입' 시 선택적 생략 허용.  _(출처: 회의:자동연구)_
+
+## 2026-08-15T18:56:20.774Z 자동 반영 규칙
+- CEFR B1-B2 수준에서, 학습자들이 자주 오용하는 고빈도 연어(예: 'to one's + 명사', 'make time to 동사원형')와 관용적 표현(예: 'A attracts B')를 포함하는 문장 완성 또는 오류 수정 문제를 출제하여, 해당 수준의 문법·어휘 습득도를 점검한다.  _(출처: 코퍼스연구:CEFR 밴드를 활용한 난이도 조정)_
+- 1) 의미역(θ-역) 분석 + 구문 트리 기반 규칙으로 현수분사의 주절 주체-동사 관계 오류 탐지(예: *Walking to school, the rain started*). 2) 감정 동사(wept, smiled 등)의 감정 주체 연어 패턴을 매핑해 맥락 불일치 오류 차단(예: *Hearing the news, tears welled up*). 3) 시제·상황 시퀀스 규칙은 '인과적·시간적 연결성'을 보조적으로 활용하되, 주된 판단 기준은 아니도록 조정.  _(출처: 회의:자동연구)_
+- 1) 객관식·서술형은 강제 치환(예: '그'→'해당 X') 적용. 2) 주관식·서사형은 선택형 제안으로 전환(사용자 선택 여지 남김). 3) 감성·시적 표현은 수용 가능 목록(예: '아름답구나'→'매우 아름답구나')으로만 치환 허용. 4) 의미 뉘앙스 점검 모듈(의존성 분석 + 스타일 스코어링)을 추가해 자연스러움 보장.  _(출처: 회의:자동연구)_
