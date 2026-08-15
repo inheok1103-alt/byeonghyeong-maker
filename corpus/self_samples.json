@@ -1,6 +1,31 @@
 {
- "updated": "2026-08-15T21:43:09.971Z",
+ "updated": "2026-08-15T22:41:27.107Z",
  "samples": [
+  {
+   "ts": "2026-08-15T22:40:06.405Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "You’ll learn even more if you ⓐ<u>use your imaginations</u> to make the backs of your flashcards a bit more elaborate. For example, you might decorate the back of this card with a diagram of ⓑ<u>oblique lines</u>—that is, lines that are ⓒ<u>neither parallels nor perpendiculars</u> to each other. Back Your diagram now gives you a ⓓ<u>mental image</u> that can help you remember the word. You’ll probably think of your own mental image, one that means something to you. You could even use the word itself to create a picture that conveys the meaning of the word and that will stick in your mind to help you remember it. Here’s one possibility. We’ve ⓔ<u>divided the word into two part</u> and written them on two different lines that are at an oblique angle to each other. Back",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 3,
+    "explanation": "틀린 곳은 ⓐ(use your imaginations → use your imagination), ⓒ(neither parallels nor perpendiculars → neither parallel nor perpendicular), ⓔ(divided the word into two part → divided the word into two parts) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘use your imaginations’를 ‘use your imagination’으로 오독했을 가능성이 큼. ‘imagination’이 ‘상상력’이라는 뜻으로 단수형이 자연스럽지만, 학생은 ‘상상력들’이라는 복수형으로 혼동했을 수 있음. → 처방: ‘imagination’이 ‘상상력’이라는 뜻임을 기억하고, 단수형으로 쓰는 연습을 반복할 것.\n② 진단: ‘oblique lines’를 ‘oblique line’으로 오독했을 가능성이 있음. 지문에서 ‘lines’를 복수형으로 사용한 이유는 ‘여러 개의 기울어진 선’을 가리키기 때문임. → 처방: ‘oblique’는 ‘기울어진’이라는 뜻으로, 뒤에 오는 명사가 복수형일 때 ‘lines’를 쓰는 규칙을 익힐 것.\n④ 진단: ‘divided the word into two part’를 ‘divided the word into two parts’로 오독하지 않았을 가능성이 있음. ‘part’를 복수형 ‘parts’로 써야 하는데, 학생은 단수형으로 썼거나 복수형을 빼먹었을 수 있음. → 처방: ‘two’를 쓸 때는 뒤에 오는 명사를 복수형으로 쓰는 규칙을 기억하고, ‘part’를 ‘parts’로 고치도록 연습할 것.\n⑤ 진단: ‘divided the word into two part’를 ‘divided the word into parts’로 오독했을 가능성이 있음. ‘into two parts’가 맞지만, 학생은 ‘two’를 빼고 ‘into parts’로만 썼을 수 있음. → 처방: ‘into two parts’처럼 ‘two’를 반드시 포함해서 쓰는 습관을 들일 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-15T21:36:26.451Z",
    "type": "네모어휘ABC",
@@ -339,41 +364,6 @@
     ],
     "answer": 5,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장 'Such results no one could have predicted'에서 '예상치 못한 결과'를 언급했는데, 학생은 이 문장을 '글쓴이가 예상치 못한 결과를 얻었다'로 오해하여 선택했을 가능성이 높음. → 처방: 지문에서 '예상치 못한 결과'는 '글쓴이'가 아니라 '누구도 예상하지 못한 결과'임을 정확히 확인할 것.\n② 진단: 지문 'think about those characters before you begin reading carefully'와 'main characters'를 '주요 인물상'으로 오해하여 선택했을 가능성이 높음. → 처방: 지문에서 말하는 'characters'는 '등장인물'이 아니라 '주제나 핵심 아이디어'를 뜻함을 기억할 것.\n③ 진단: 지문 'You must analyze it more objectively'와 'analyze the flow of your writing'을 '글의 흐름을 객관적으로 분석해야 한다'로 정확히 읽었으나, 학생은 이 부분을 놓쳤을 가능성이 있음. → 처방: 지문에서 '글의 흐름'을 분석하는 주체가 '글쓴이'임을 확인하고, '객관적 분석'의 필요성을 강조하는 부분을 다시 읽을 것.\n④ 진단: 지문 'you know it too well'과 'can’t predict how readers will judge'에서 '글쓴이가 스스로 객관적으로 판단하기 어렵다'는 내용을 정확히 읽었으나, 학생은 이 부분을 '글쓴이가 글을 쓸 때'로 오해했을 가능성이 있음. → 처방: 지문에서 '글의 흐름을 스스로 객관적으로 판단하기 어렵다'는 '글쓴이'가 아니라 '글쓴이가 글을 쓸 때'가 아니라 '글을 읽는 독자'의 관점을 뜻함을 기억할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T11:35:45.268Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Such results no one could have predicted. Quick Tip:  When you start to read a passage whose ideas you expect to be difficult, skim it quickly to find its main characters. Then think about those characters before you begin reading carefully. What do you know about them? What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily you will ­understand stories about them. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because <u>you know it too well</u>. You must analyze it more objectively. This passage feels choppy, out of focus, even disorganized:",
-    "choices": [
-     "The writer’s excessive familiarity with their own text leads them to assess its clarity and coherence more accurately than others could.",
-     "The writer literally understands every detail of their text, so they can evaluate its clarity and coherence without any difficulty.",
-     "The writer’s excessive confidence in their own text makes it difficult for others to understand it clearly.",
-     "Because the writer knows the text too well, they are able to assess its clarity and coherence objectively.",
-     "The writer’s excessive familiarity with their own text prevents them from objectively assessing its clarity and coherence."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'The writer’s excessive familiarity with their own text prevents them from objectively assessing its clarity and coherence.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'you know it too well'은 글쓴이가 자신의 글을 지나치게 잘 알기에 객관적 평가가 어렵다는 뜻인데, ①은 '정확히 평가한다'고 반대로 해석하여 오독. → 처방: 지문에서 'you know it too well'의 의미를 정확히 짚고, '과도한 친숙함이 객관성 떨어지게 한다'는 핵심 뜻을 기억하기.\n② 진단: ②는 '글쓴이가 모든 디테일을 이해해서 평가에 어려움이 없다'고 오해했는데, 지문은 '너무 잘 알기에 객관적 평가가 힘들다'고 설명. → 처방: 지문에서 'you know it too well'이 '객관적 평가의 어려움'을 뜻한다는 점을 다시 한 번 확인하고, '과도한 친숙함'과 '객관성'의 관계를 연결 지어 생각하기.\n③ 진단: ③은 '글쓴이의 과도한 자신감이 타인의 이해를 어렵게 한다'고 오해했는데, 지문은 '글쓴이 자신이 객관적 평가를 못한다는' 내용임. → 처방: 지문에서 'you know it too well'의 주어와 목적어를 정확히 구분하고, '타인이 아닌 글쓴이 자신의 문제'임을 기억하기.\n④ 진단: ④는 '글쓴이가 객관적 평가를 한다'고 오해했는데, 지문은 '너무 잘 알기에 객관적 평가가 불가능하다'고 설명. → 처방: 지문에서 'you know it too well'이 '객관적 평가의 어려움'을 뜻한다는 점을 강조하고, '과도한 친숙함'과 '객관성 상실'의 관계를 명확히 이해하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
