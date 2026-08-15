@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-15T20:46:05.713Z",
+ "updated": "2026-08-15T21:43:09.971Z",
  "samples": [
+  {
+   "ts": "2026-08-15T21:36:26.451Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/1가 5번 선택(기록 2번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.29,
+    "D": 0.5,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.29)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Given the assumptions we made in chapter 7, the bracketed TP in (32a) is (A) [selected / rejected] by the C-constituent that, and the head T of TP is the auxiliary has which carries a complete set of person/number agreement features. By contrast, the TP in the raising structure in (32b) is not selected by C, and its head T constituent to is (B) [defective / perfect] in that it does not carry a complete set of agreement features. Reasoning thus, Chomsky concludes that the person/number agreement features of T must originate on C, and subsequently ‘be (C) [divested / inherited] by’ or ‘be handed over to’, or ‘percolate down onto’ (three different metaphors expressing the same idea) the T constituent immediately beneath C. Chomsky argues that in the same way, the agreement features carried by a transitive V (which enable it to assign accusative case to a goal within its domain) are inherited from the light-verb which is the head of the relevant vP phase (transitive vPs being phases). One reason for thinking this can be illustrated in relation to the following contrast:",
+    "choices": [
+     "(A) rejected - (B) defective - (C) divested",
+     "(A) selected - (B) defective - (C) inherited",
+     "(A) rejected - (B) perfect - (C) inherited",
+     "(A) rejected - (B) defective - (C) inherited",
+     "(A) selected - (B) perfect - (C) divested"
+    ],
+    "answer": 2,
+    "explanation": "정답 조합: (A) selected - (B) defective - (C) inherited. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 (A)는 'C-constituent that'이 TP 를 '선택'한다고 나와 있는데, 학생은 이를 '거부'로 오독하여 선택된 상황을 반대로 이해했다. (B)는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 지문이 명시하지만, 학생은 '완전(perfect)'으로 오해했다. → 처방: 지문의 'selected/rejected'와 'defective/perfect' 구분을 정확히 읽고, '선택 vs 거부', '결함 vs 완전'의 의미를 문맥에서 확인한 뒤 답안을 선택할 것.\n③ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 거부한다고 지문에서 명시된 부분을 잘못 읽었다. (B)에서는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 이해하지 못하고 '완전(perfect)'으로 오해했다. → 처방: (A)는 지문에서 'selected'로 나와 있으니 '선택'을, (B)는 'defective'로 나와 있으니 '결함이 있는'을 정확히 짚고 답안을 고를 것.\n④ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 거부한다고 지문에서 명시된 부분을 잘못 읽었다. (C)에서 'divested'가 아닌 'inherited'가 맞는 표현임을 파악하지 못했다. → 처방: (C)는 지문에서 'inherited'가 세 가지 비유로 설명된 표현이므로, 'inherited'가 옳음을 확인하고 답안을 선택할 것.\n⑤ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 선택한다고 지문에서 명시된 부분을 '거부'로 오독했다. (B)에서는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 이해하지 못하고 '완전(perfect)'으로 오해했다. (C)에서도 'divested'가 아닌 'inherited'가 맞는 표현임을 파악하지 못했다. → 처방: 지문의 (A)·(B)·(C) 각각의 의미를 문맥에서 정확히 짚고, '선택 vs 거부', '결함 vs 완전', 'inherited vs divested'의 구분을 명확히 한 뒤 답안을 고를 것.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-15T21:42:22.963Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "Given the assumptions we made in chapter 7, the bracketed TP in (32a) is selected by the C-constituent that, and the head T of TP is the auxiliary has which carries a complete set of person/number agreement features. By contrast, the TP in the raising structure in (32b) is not selected by C, and its head T constituent to is defective in that it does not carry a complete set of agreement features. Reasoning thus, Chomsky concludes that the person/number agreement features of T must originate on C, and subsequently ‘be inherited by’ or ‘be handed over to’, or ‘percolate down onto’ (three different metaphors expressing the same idea) the T constituent immediately beneath C. Chomsky argues that in the same way, the agreement features carried by a transitive V (which enable it to assign accusative case to a goal within its domain) are inherited from the light-verb which is the head of the relevant vP phase (transitive vPs being phases). One reason for thinking this can be illustrated in relation to the following contrast:",
+    "choices": [
+     "TP 의 머리 T 는 결함이 있는 조동사 'has'를 갖는다",
+     "C 구성체가 TP 를 선택하지 않는 raising 구조에서 TP 의 머리 T 는 완전한 기능을 한다",
+     "T 의 인칭·수 일치 기능은 C 로부터 물려받거나 전달되지 않는다고 촘스키는 주장한다",
+     "타동사 V 의 일치 기능은 vP 상의 경동사가 아닌 명사에서 상속된다는 촘스키의 주장을 제시한다",
+     "타동사 V 는 목적어에게서 격을 부여할 수 있도록 일치 기능을 보유한다"
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: TP 의 머리 T 가 'has'를 갖는 것은 (32a)의 경우로, 지문에서 '(32a)의 TP 는 C-구성체가 선택하며 T 는 완전한 일치 기능을 가진 조동사 has 를 갖는다'고 밝히므로, '결함이 있는'이라는 말은 지문과 맞지 않는다. → 처방: TP 의 머리 T 가 어떤 조동사를 갖는지, 그것이 완전하거나 결함이 있는지 지문의 설명을 정확히 짚고 넘어가라.\n② 진단: C 가 TP 를 선택하지 않는 raising 구조에서 TP 의 머리 T 는 'to'로 지문에서 'defective(결함 있는)'라고 설명하므로, '완전한 기능을 한다'는 말은 지문과 반대된다. → 처방: raising 구조에서 T 가 'to'라는 점과 그 결함 여부를 지문에서 다시 확인하라.\n③ 진단: 지문에서 촘스키는 T 의 인칭·수 일치 기능이 C 로부터 '상속'된다고 주장하는데, '전달되지 않는다'는 말은 이 주장과 완전히 반대된다. → 처방: 촘스키의 주장이 '상속' 개념임을 기억하고, 지문의 핵심 주장과 선지의 내용을 정확히 연결하라.\n④ 진단: 지문에서 타동사 V 의 일치 기능은 '경동사(light-verb)'에서 상속된다고 설명하는데, '명사에서 상속'이라는 말은 지문 내용과 전혀 맞지 않는다. → 처방: 타동사 V 의 일치 기능이 어디서 오는지 지문의 설명을 꼼꼼히 읽고, '경동사'와 '명사'를 혼동하지 않도록 하라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-15T20:45:27.824Z",
    "type": "안내문일치",
@@ -305,44 +374,6 @@
     ],
     "answer": 5,
     "explanation": "밑줄 친 부분은 'The writer’s excessive familiarity with their own text prevents them from objectively assessing its clarity and coherence.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'you know it too well'은 글쓴이가 자신의 글을 지나치게 잘 알기에 객관적 평가가 어렵다는 뜻인데, ①은 '정확히 평가한다'고 반대로 해석하여 오독. → 처방: 지문에서 'you know it too well'의 의미를 정확히 짚고, '과도한 친숙함이 객관성 떨어지게 한다'는 핵심 뜻을 기억하기.\n② 진단: ②는 '글쓴이가 모든 디테일을 이해해서 평가에 어려움이 없다'고 오해했는데, 지문은 '너무 잘 알기에 객관적 평가가 힘들다'고 설명. → 처방: 지문에서 'you know it too well'이 '객관적 평가의 어려움'을 뜻한다는 점을 다시 한 번 확인하고, '과도한 친숙함'과 '객관성'의 관계를 연결 지어 생각하기.\n③ 진단: ③은 '글쓴이의 과도한 자신감이 타인의 이해를 어렵게 한다'고 오해했는데, 지문은 '글쓴이 자신이 객관적 평가를 못한다는' 내용임. → 처방: 지문에서 'you know it too well'의 주어와 목적어를 정확히 구분하고, '타인이 아닌 글쓴이 자신의 문제'임을 기억하기.\n④ 진단: ④는 '글쓴이가 객관적 평가를 한다'고 오해했는데, 지문은 '너무 잘 알기에 객관적 평가가 불가능하다'고 설명. → 처방: 지문에서 'you know it too well'이 '객관적 평가의 어려움'을 뜻한다는 점을 강조하고, '과도한 친숙함'과 '객관성 상실'의 관계를 명확히 이해하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T11:38:12.952Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "Such results ⓐ<u>no one could predict</u>. Quick Tip:  When you start to read a passage whose ideas you expect to be difficult, skim it quickly to find ⓑ<u>its main characters</u>. Then think about those characters before you begin reading carefully. ⓒ<u>What do you know about them?</u> What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily ⓓ<u>you will ­understand stories about them</u>. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because you know it too well. ⓔ<u>You must analyze it more objectively</u>. This passage feels choppy, out of focus, even disorganized:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓐ: 'no one could predict' → 'no one could have predicted' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T10:41:46.535Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "Recall from our earlier discussion of sentences like (35) that McCloskey argues that ⓐ<u>stranded quantifiers</u> modifying wh-expressions are left behind via movement of the wh-expression without the quantifier. This being so, sentences such as (63) provide evidence that what all originates as the complement of the passive participle ⓑ<u>said (with what subsequently being passivized</u> on its own, stranding all) – and more generally, ⓒ<u>that passive subjects are initially merged as thematic objects</u>. A claim which is implicit in the hypothesis that passive subjects originate as thematic objects is that ⓓ<u>the subjects of active verbs and the complements of passive verbs</u> have the same thematic function. Evidence that this is indeed the case comes from the traditional observation that ⓔ<u>the two are subject to the same pragmatic restrictions</u> on the choice of expression which can occupy the relevant position, as we see from sentences such as the following (where ?, ?! and ! mark increasing degrees of anomaly):",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [시제] ⓑ: 'said (with what subsequently being passivized' → 'said (with what subsequently being passivised' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
