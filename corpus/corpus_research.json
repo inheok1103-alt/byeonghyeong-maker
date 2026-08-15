@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-15T11:38:55.780Z",
+ "updated": "2026-08-15T13:02:19.132Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T13:01:53.745Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "시간 표현에서 'after timer' → 'time after time'로의 오류는 반복·계속의 의미를 지닌 고정어구를 잘못 사용한 패턴이다. 또한 'delivered in format'는 수동태 또는 전치사 구조의 오용으로, 정보 전달 방식이 아닌 정보의 형식을 설명해야 한다.",
+   "rule": "시간·반복·계속을 나타내는 문장에서는 'time after time', 'over and over', 'repeatedly' 등 고정어구를 우선 점검하고, 정보 전달 방식 설명 시 'in a [형용사] format' 또는 'delivered in a [형용사] manner' 구조를 사용하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-15T11:38:29.330Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거시제와 3인칭 단수 동사 형태의 불일치가 빈번하며, 소유격이나 복수형 오류가 자주 발생한다. 또한 전치사 구나 접속사의 오용이 문법적 오류로 이어진다.",
    "rule": "CEFR B1 수준에서 3인칭 단수 동사(예: needs → need), 소유격(-s) 및 복수형(-s) 오류, 그리고 전치사(예: 'of him' 추가)나 접속사(예: 'that' 추가) 누락을 반드시 검토하여 문법 오류를 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-12T00:02:57.535Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "원서 코퍼스에서 'reason'은 복수형 'reasons'로 사용되는 경우가 빈번하며, 'therefore'와 'because'는 문장 첫머리에 오면 대문자화하고 콤마를 동반하는 패턴이 일반적이다.",
-   "rule": "문장 첫머리에 접속사('therefore', 'because' 등)를 사용할 경우, 반드시 대문자로 시작하고 콤마를 삽입한 후 문장을 재구성하라.",
    "sample": [
     "old english",
     "university press",
