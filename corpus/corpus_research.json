@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-15T09:45:13.265Z",
+ "updated": "2026-08-15T10:42:37.550Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T10:42:07.440Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사구 앞에 위치하는 한정사(one, this 등)의 생략은 CEFR B1 수준에서 빈번한 오류로, 특히 'the'와 같은 정관사 사용 시 명확한 지시가 필요한 경우 오류로 이어진다. 또한, 복합명사(예: long-term wastefulness)와 부사(indeed)의 철자 오류는 CEFR A2-B1 수준에서 흔히 관찰된다.",
+   "rule": "CEFR B1 수준에서 'the + 단일명사' 구조는 반드시 한정사(예: this, that, one 등)를 포함하도록 출제하여, 학생들이 정관사의 사용 맥락을 정확히 파악하도록 한다. (예: 'The book is interesting.' → 'This book is interesting.')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-15T09:44:42.622Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사의 수(단수/복수) 오류와 조동사(ability/possibility) 오류가 빈번하며, 특히 'fish(es)'와 같이 불규칙 복수/불변명사가 혼동된다. 또한 문법적 구조(주어-동사-목적어)나 전치사 구(‘to people’ → ‘to the people’)의 생략/오용이 두드러진다.",
    "rule": "‘명사 단수/복수 오류’와 ‘조동사(ability/possibility) 오류’를 동시에 검증하는 문항을 출제할 때는, 불규칙 복수(예: fish, people)나 불가산명사(예: money) 사용 여부를 확인하고, 조동사(can/could/will be able to 등)는 문맥상 가능/능력/허가 여부를 엄격히 구분하여 오류를 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-11T22:07:54.267Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'however'와 같은 접속사 뒤의 주어는 문맥상 생략되지 않도록 명시해야 하며, 동사 시제는 문맥에 맞는 적절한 시제를 사용해야 한다. 또한 'chose'는 과거형으로, 원형은 'choose'임을 구분해야 한다.",
-   "rule": "'그러나', '그런데'와 같은 접속사(however, but 등) 뒤에는 주어(주로 인칭대명사 또는 명사)가 생략되지 않도록 명시하고, 동사는 문맥에 맞는 시제(현재/과거/완료 등)로 정확히 사용하라. 또한 'chose'는 '선택했다'의 과거형으로, 'choose'는 '선택하다'의 원형임을 구분하여 오용하지 않도록 하라.",
    "sample": [
     "old english",
     "university press",
