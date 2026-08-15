@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-15T04:50:29.592Z",
+ "updated": "2026-08-15T05:48:07.293Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T05:47:43.866Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "일상 표현에서 'think differently from'은 오류로 'think differently than'으로, 'give up'은 타동사 구로 'give it up'으로 교정됨을 확인. 또한 'form hesitancy from'은 'form a hesitancy to'로 재구조화됨을 확인.",
+   "rule": "대상 동사(think, give, form)가 전치사(than, up, from)와 결합할 때, 타동사 구문(has succeeded, give it up, hesitancy to interact)로 재구조화하는 오류 패턴을 문항으로 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-15T04:49:57.850Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'to 부정사'가 '목적'(make the tour difficult)이나 '필요성'(necessary to live)을 나타낼 때, 원문에서는 'will want to set'처럼 동사+to 부정사 구조가 잘못 사용되거나, 'for alive'처럼 전치사+형용사 형태가 오류로 나타나기도 한다. 실제 오류는 'to'의 목적/필요성 기능이 제대로 반영되지 않은 경우다.",
    "rule": "'~하기 위해' 또는 '~할 필요가 있다'의 의미를 표현할 때는 'to 부정사'(to V) 또는 'necessary/needed to V'를 사용해야 하며, 'for + 형용사'나 'will want to V'처럼 오류 유형을 그대로 답안으로 제시하지 말고, 올바른 'to V' 구조로 수정하도록 문항을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-11T16:18:03.536Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'too + 형용사 + to-v' 구조와 'every + 단수명사' 같은 연어 패턴이 오류에 자주 연루되며, 'looks too pretty'처럼 'too'의 위치가 잘못된 경우가 많다. 또한 'in every details'처럼 복수형 오용도 빈번하다.",
-   "rule": "'too + 형용사 + to-v' 구조와 'every + 단수명사' 패턴을 반드시 포함하는 문장에 오류(형용사/부사 위치, 복수형 오용)를 삽입하여 오답 선지를 만든다.",
    "sample": [
     "old english",
     "university press",
