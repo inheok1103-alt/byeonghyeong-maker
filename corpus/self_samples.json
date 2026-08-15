@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-15T18:56:19.979Z",
+ "updated": "2026-08-15T19:37:44.505Z",
  "samples": [
+  {
+   "ts": "2026-08-15T19:36:18.196Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the resistance of grammar to cultural and ideological changes over time",
+     "the influence of language conventions on cultural and ideological shifts",
+     "the limited adaptability of grammar within evolving cultural contexts",
+     "the absolute permanence of grammar across diverse human societies",
+     "the sporadic grammatical modifications resulting from cultural exchanges"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The stability of grammar despite cultural and ideological shifts'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘문화적·이념적 변화가 언어 관습에 영향을 미친다’는 Sapir-Whorf 가설을 오해해, 지문에서 ‘언어 관습 때문에 믿음이 변하지 않는다’는 반대 사례를 보지 못하고 선지를 선택한 듯함. → 처방: ‘언어와 문화의 관계’를 다룬 지문임을 먼저 확인하고, 지문에서 Sapir-Whorf 가설을 반박하는 예시(러시아)를 꼼꼼히 읽기.\n③ 진단: ‘문화적 변화에 문법이 적응하지 못한다’는 ‘적응하지 못한다’는 표현을 ‘변화하지 않는다’로 오해해, 문법이 ‘변화는 하지만 문화 변화와 무관하다’는 지문의 뜻을 놓침. → 처방: ‘적응하지 못한다’와 ‘변화하지 않는다’를 구분하고, 지문에서 ‘러시아 문법이 변했지만 문화 변화와 무관하다’는 부분을 정확히 짚기.\n④ 진단: ‘문법이 절대 변하지 않는다’는 지나친 일반화를 해, 지문에서 ‘러시아 문법이 변했지만 문화 변화와 무관하다’는 한계적 변화를 무시함. → 처방: ‘절대’라는 단어를 주의하고, 지문에서 ‘변화는 있지만 문화 변화와 무관하다’는 부분을 확인해 한계적 변화를 인식하기.\n⑤ 진단: ‘문화 교류로 인한 문법 변화’가 지문의 주제가 아님을 모르고, ‘Viking disruption’ 같은 단어를 보고 선지를 선택한 듯함. → 처방: ‘문화 교류로 인한 변화’가 아니라 ‘문법이 문화 변화에 영향을 받지 않는다’는 주제를 먼저 파악하고, 지문에서 관련 없는 예시는 무시하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The stability of grammar despite cultural and ideological shifts]"
+   }
+  },
   {
    "ts": "2026-08-15T17:41:45.336Z",
    "type": "어법개수형",
@@ -309,40 +344,6 @@
     ],
     "answer": 5,
     "explanation": "정답 조합: (A) move - (B) displace - (C) stir. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A) stay’를 선택한 학생은 ‘move’의 의미를 ‘머무르다’로만 오해했을 가능성이 크다. 지문에서 move 는 (i)에서 ‘대체하다’를 뜻하고 (ii)에서는 ‘움직이다’로 쓰였음을 확인해야 한다. → 처방: ‘move’를 ‘움직이다’라는 뜻으로만 생각하지 말고, 문맥에 따라 ‘대체하다’도 될 수 있음을 기억하자.\n② 진단: ‘(B) replace’를 선택한 학생은 (i)에서 move 가 ‘대체하다’를 뜻한다는 지문 내용을 제대로 읽지 않았거나, ‘displace’와 ‘replace’를 혼동했을 수 있다. → 처방: ‘displace’는 ‘강제로 자리를 옮기게 하다’라는 뜻이므로, ‘replace’(교체하다)와 구분해서 기억하자.\n③ 진단: ‘(C) calm’을 선택한 학생은 (ii)에서 move 가 ‘움직이다’라는 뜻이라는 지문 내용을 무시하고, ‘조용히 하다’라는 뜻으로만 오해했을 가능성이 있다. → 처방: ‘stir’는 ‘움직이다’나 ‘휘젓다’라는 뜻이므로, ‘calm’(조용히 하다)과는 반대라는 점을 기억하자.\n④ 진단: ‘(C) calm’을 선택한 학생은 ‘move’가 (ii)에서 ‘움직이다’를 뜻한다는 지문 내용을 제대로 활용하지 못했다. ‘stir’는 ‘움직이다’와 관련이 있지만 ‘calm’은 그렇지 않다. → 처방: ‘move’가 (ii)에서 ‘움직이다’를 뜻한다는 점을 확실히 기억하고, ‘stir’와 ‘calm’을 비교해서 선택하자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T07:49:22.932Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Match each word in the first column with its definition in the second column. Check your answers here. 1. categorical a. unconditional 2. catharsis b. relieving purification 3. catholic c. abstinence from sex 4. caustic d. brainy 5. celibacy e. humiliation 6. censure f. magical attractiveness 7. cerebral g. corrosive 8. chagrin h. condemn severely 9. charisma i. universal CHARLATAN (SHAR luh tun) n fraud; quack; con man • Buck was selling what he claimed was a cure for cancer, but he was just a charlatan (the pills were jelly beans). • The flea market usually attracts a lot of charlatans who sell phony products that don’t do what they claim they will. CHASM (KAZ um) n <u>a deep, gaping hole; a gorge</u> • Mark was so stupid that his girlfriend wondered whether there wasn’t a chasm where his brain should be. • The bad guys were gaining, so the hero grabbed the heroine and swung across the chasm on a slender vine. Note carefully the pronunciation of this word. CHASTISE (chas TYZE) v to inflict punishment on; to discipline",
-    "choices": [
-     "A 'deep, gaping hole' symbolizes a minor inconvenience that arises occasionally in communication.",
-     "The expression implies that the gap in understanding is temporary and can always be filled with effort.",
-     "A 'gorge' is used here to describe a sudden and unavoidable obstacle that must be overcome immediately.",
-     "The phrase 'a deep, gaping hole' literally refers to a physical cavity in the ground.",
-     "a metaphor for a profound and seemingly unbridgeable gap in understanding or ability."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'a metaphor for a profound and seemingly unbridgeable gap in understanding or ability.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘깊은 구멍’이 ‘일시적 불편’을 뜻한다고 오해. 지문에서 ‘깊은 구멍’이 ‘심오하고 메울 수 없어 보이는 차이’를 상징한다고 명시되어 있음. → 처방: ‘깊은 구멍’이 상징하는 의미를 ‘일시적’이나 ‘사소한’으로 오해하지 말고, 지문의 비유적 의미를 정확히 파악하기.\n② 진단: ‘차이’가 ‘시간과 노력으로 메울 수 있는’ 것으로 오해. 지문은 ‘메울 수 없어 보이는’ 차이를 강조하지만, 선지는 ‘메울 수 있는’으로 해석됨. → 처방: ‘gap’의 의미를 ‘메울 수 있는가’로 판단하지 말고, 지문의 ‘심오하고 메울 수 없어 보이는’ 부분을 중점으로 읽기.\n③ 진단: ‘골짜기’가 ‘갑작스럽고 피할 수 없는 장애물’로 오해. 지문은 ‘골짜기’를 ‘메울 수 없어 보이는 차이’의 상징으로 사용했지만, 선지는 ‘장애물’로만 축소해 해석함. → 처방: ‘골짜기’가 상징하는 의미를 ‘장애물’로만 보지 말고, 지문의 비유적 의미를 ‘차이’나 ‘한계’로 확장해 이해하기.\n④ 진단: ‘깊은 구멍’이 ‘지상의 물리적 구멍’으로 오해. 지문은 ‘골짜기’를 ‘비유적 의미’로 사용했지만, 선지는 ‘리터럴(직접적) 의미’로만 해석함. → 처방: ‘깊은 구멍’이 상징하는 의미를 ‘리터럴’로 오해하지 말고, 지문의 비유적 의미를 찾기 위해 ‘심오한 차이’나 ‘한계’를 떠올리기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]

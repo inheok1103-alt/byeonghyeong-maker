@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-15T18:56:19.975Z",
+ "updated": "2026-08-15T19:37:44.500Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T19:37:10.762Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'for + 목적' 구문이 'to + 동사원형' 구문보다 더 자연스럽고 문법적으로 올바른 경우가 많다. 특히 'improve'와 같은 동사가 목적어로 사용될 때, 'for improvement'로 명사화하는 패턴이 빈번하다.",
+   "rule": "'to + 동사원형'이 목적어를 동사화하는 경우, 해당 동사를 'for + 명사'로 대체하여 문장을 구성하라. 예: 'They can bring that problem to improve...' → 'They can bring that problem for improvement...'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-15T18:55:51.372Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사+명사(compound noun) 형태가 빈번하며, 특히 하이픈(-) 사용이 규칙적이지 않은 경우가 많다. 또한, 동사 형태(3인칭 단수, 과거형, 진행형 등)의 오용이 빈번하다.",
    "rule": "복합명사(compound noun)일 경우, 하이픈(-)을 명확히 구분하여 사용하고, 동사 형태는 주어와 시제에 맞게 정확히 변형하라. 예: 'car usage' (X: 'carusage'), 'Latin American' (X: 'latinamerican'), 'works hard' (X: 'do more benefits').",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-12T13:52:21.086Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구 내 동일 범주의 항목 나열 시 쉼표와 접속사(and/or) 병용이 원칙이며, 접속사 앞 쉼표(Oxford comma) 생략은 오류로 간주된다. 또한, 동사 뒤 목적어는 명사구로 통일해야 하며, 동사 생략이나 불완전 구문은 오류로 처리된다.",
-   "rule": "명사나 동사 구문에서 항목을 나열할 때, 접속사 'and' 또는 'or' 앞에 반드시 쉼표를 넣고, 동일 범주의 명사구는 통일된 형식(예: 복수형, 관사 사용)으로 통일하라.",
    "sample": [
     "old english",
     "university press",
