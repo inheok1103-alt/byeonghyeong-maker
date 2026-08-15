@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-15T03:08:08.265Z",
+ "updated": "2026-08-15T04:01:12.415Z",
  "samples": [
+  {
+   "ts": "2026-08-15T04:00:35.569Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 넬은 항상 어머니와 두드러지게 닮았다.\n주어진 단어: ( a / striking / always / her / resemblance / Nell / mother / bears / to )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Nell always bears a striking resemblance to her mother.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-15T03:06:42.841Z",
    "type": "요약문AB",
@@ -313,41 +332,6 @@
     ],
     "answer": 1,
     "explanation": "정답 조합: (A) You use - (B) they see - (C) how the quotation. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 써야 하는데, ‘uses’를 써서 3인칭 단수 동사로 오해했다. ‘they’는 복수 주어이므로 동사 원형 ‘see’를 써야 하는데, ‘sees’를 써서 혼동했다. ‘quotation’은 단수 개념이므로 ‘quotations’로 복수화한 것이 오류다. → 처방: 주어와 동사의 수 일치를 정확히 확인하고, ‘quotation’이 단수인지 복수인지 문맥에서 판단하기.\n③ 진단: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 써야 하는데, ‘uses’를 써서 3인칭 단수 동사로 오해했다. ‘they’는 복수 주어이므로 동사 원형 ‘see’를 써야 하는데, ‘sees’를 쓰지 않았지만 ‘quotations’를 복수로 써서 문맥 오류를 냈다. → 처방: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 쓰고, ‘quotation’이 단수인지 복수인지 문맥에서 정확히 판단하기.\n④ 진단: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 써야 하는데, ‘uses’를 써서 3인칭 단수 동사로 오해했다. ‘quotation’이 단수 개념이므로 ‘quotations’를 복수로 쓴 것이 오류다. → 처방: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 쓰고, ‘quotation’이 단수인지 복수인지 문맥에서 정확히 판단하기.\n⑤ 진단: ‘you’는 2인칭 단수 주어이므로 동사 원형 ‘use’를 써야 하는데, ‘uses’를 써서 3인칭 단수 동사로 오해했다. ‘they’는 복수 주어이므로 동사 원형 ‘see’를 써야 하는데, ‘sees’를 써서 수 일치를 틀렸다. → 처방: 주어와 동사의 수 일치를 정확히 확인하고, ‘you’는 2인칭 단수 주어라는 점을 기억하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T19:59:20.247Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] Part two “ contextual analysis” in its turn is divided into two units: explicit clues; dealing with how to analyze words contextually via knowledge and use of synonyms, antonyms and examples .\n\nTeacher’s Guide Introduction This program is an attempt to develop some basic skills of reading for second year faculty of Education, English Majors of the primary division. The main focus of the program is upon two main broad categories of basic skills: structural analysis and contextual analysis. ( ① ) The program consists of two parts, four units and 12 lessons. ( ② ) Structural analysis is divided into two units: Morphemic clues; dealing with how to analyze words structurally via knowledge and use of prefixes, suffixes, and roots. ( ③ ) The second unit is syntactic clues: dealing with how to analyze sentences syntactically via knowledge and use of sentence patterns, word markers, and punctuation. ( ④ ) The second and last unit is implicit cues dealing with how to analyze sentences contextually via sense of the sentence context clues (word in context and phrase in context) and by knowing and using some well-known expressions and idioms. ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘①’은 프로그램의 구성 요소(두 부분, 네 단원, 열두 수업)를 설명하는 부분으로, ‘contextual analysis’의 세부 내용이 나오려면 아직 이르다. 학생은 ‘contextual analysis’의 세부 항목이 프로그램 구성의 일부라는 착각을 했다. → 처방: ‘contextual analysis’가 ‘structural analysis’ 다음에 나오는지 확인하고, 프로그램 구성 설명이 끝난 뒤에 세부 항목을 넣어야 한다는 규칙을 기억하자.\n② 진단: ‘②’는 프로그램의 전체 구성(두 부분, 네 단원, 열두 수업)을 설명하는 부분으로, ‘contextual analysis’의 세부 내용이 나올 단계가 아니다. 학생은 ‘contextual analysis’가 프로그램 구성의 일부라고 오해했다. → 처방: 프로그램의 ‘구성’을 설명하는 문장은 ‘contextual analysis’의 세부 항목이 나오기 전에 끝나야 한다는 점을 확인하자.\n③ 진단: ‘③’은 ‘structural analysis’의 세부 항목(형태소, 구문 분석)을 설명하는 부분으로, ‘contextual analysis’의 세부 항목이 나오려면 아직 ‘structural analysis’ 설명이 끝나야 한다. 학생은 ‘contextual analysis’가 ‘structural analysis’와 같은 단계에 있다고 생각했다. → 처방: ‘structural analysis’와 ‘contextual analysis’가 프로그램의 ‘두 부분’이라는 점을 기억하고, ‘structural analysis’ 설명이 끝난 뒤에 ‘contextual analysis’를 넣어야 한다는 규칙을 적용하자.\n⑤ 진단: ‘⑤’는 지문에 없는 위치(마지막 부분)으로, ‘contextual analysis’의 세부 항목이 나오려면 ‘structural analysis’ 설명이 끝난 뒤에 와야 한다. 학생은 ‘contextual analysis’의 세부 항목이 프로그램의 맨 뒤에만 올 수 있다고 생각했다. → 처방: ‘contextual analysis’가 ‘structural analysis’ 다음에 나오는지 확인하고, 프로그램의 ‘두 부분’을 기억한 뒤에 세부 항목을 배치하자.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
