@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-15T22:41:27.107Z",
+ "updated": "2026-08-15T23:40:54.135Z",
  "samples": [
+  {
+   "ts": "2026-08-15T23:36:25.624Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "정치인들은 Conservation 법을 제정하면 희귀 동식물의 서식지 파괴와 오염 문제가 해결될 것이다",
+     "환경 운동가들은 희귀 동식물의 서식지 파괴와 오염을 막기 위해 Conservation 법제화를 추진해야 한다",
+     "모든 희귀 동식물이 서식지 파괴와 오염으로 멸종 위기에 처했으므로 Conservation 법제화가 반드시 필요하다",
+     "정치인들은 Conservation 법을 제정하기 위해 환경 운동가들에게 대중의 참여를 확보해야 한다",
+     "환경 운동가들은 대중의 참여로 정치인들에게 Conservation 법제화를 촉구해야 한다"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Environmentalists must convince large numbers of people to pressure politicians into passing conservation legislation to protect rare species from habitat loss and pollution.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 정치인들이 Conservation 법을 제정하면 문제가 해결될 것이라는 '인과관계'를 오독했다. 지문은 Conservation 법제화가 '논쟁'과 '부담'을 낳을 수 있음을 보여준다. → 처방: 문제 해결의 주체는 '환경 운동가'와 '대중'임을 기억하고, 법제화가 모든 문제를 해결하지는 않는다는 점을 확인하자.\n② 진단: 환경 운동가들이 Conservation 법제화를 '추진해야 한다'는 '의무'를 오독했다. 지문은 Conservation 법제화가 '논쟁'과 '부담'을 낳을 수 있음을 보여준다. → 처방: 지문의 '논쟁'과 '부담' 부분을 다시 읽고, Conservation 법제화가 반드시 옳은 해결책은 아님을 기억하자.\n③ 진단: '모든 희귀 동식물이 멸종 위기에 처했다'는 '과장된 주장'을 오독했다. 지문은 '희귀 동식물의 서식지 파괴와 오염'이 문제임을 보여주지만, 모든 동식물이 멸종 위기에 처했다는 말은 없다. → 처방: 지문의 '희귀'라는 단어를 주의 깊게 읽고, '모든'이라는 말이 과장된 표현임을 확인하자.\n④ 진단: 정치인들이 Conservation 법을 제정하기 위해 '환경 운동가들에게 대중의 참여를 확보해야 한다'는 '역할'을 오독했다. 지문은 환경 운동가들이 대중의 참여를 확보해야 한다고 말한다. → 처방: 주어와 목적어를 정확히 구분하고, 지문의 '환경 운동가'와 '대중'의 역할을 다시 한 번 확인하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Environmentalists must convince large numbers of people to pressure politicians into passing conservation legislation to protect rare species from habitat loss and pollution.]"
+   }
+  },
+  {
+   "ts": "2026-08-15T23:40:21.768Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "advocacy and legislation efforts to protect endangered species and habitats",
+     "legislation and advocacy as causes of species loss and habitat destruction",
+     "efforts to protect endangered species through advocacy alone",
+     "universal necessity of all environmental laws to protect every endangered species",
+     "efforts to protect species regardless of habitat loss or pollution factors"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Environmentalists' efforts to protect species and habitats through advocacy and legislation'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘법률과 옹호가 야생동물과 서식지 파괴의 원인이라는 선지’를 골랐다면, 지문에서 ‘환경운동가들이 정치인들에게 보전법안을 통과시키도록 압력을 가하는 것’이 보호를 위한 노력임을 놓쳤음. 지문 4~5행에 ‘이러한 제안된 법들은 사업에 부담을 준다고 여겨지지만, 이는 보호 노력의 일환’이라는 뜻이 있음. → 처방: ‘보호 노력’이란 단어와 문맥을 정확히 짚고, ‘원인’이 아니라 ‘결과’로 해석하지 않도록 주의할 것.\n③ 진단: ‘옹호만으로 멸종 위기종을 보호하려는 노력’을 골랐다면, 지문에서 ‘환경운동가들이 많은 사람들을 설득해 정치인들에게 압력을 가하는 것’이 보호를 위한 ‘다양한 노력’ 중 하나임을 놓쳤음. 지문 4~5행에 ‘많은 사람들을 설득하는 것’이 포함된 전체 흐름을 이해하지 못함. → 처방: ‘단지 옹호만’이라고 해석하지 말고, 지문에 나타난 ‘압력’과 ‘법률’ 같은 ‘다양한 방법’이 포함된 efforts 임을 확인할 것.\n④ 진단: ‘모든 멸종 위기종을 보호하기 위한 환경법의 보편적 필요성’을 골랐다면, 지문에서 ‘모든’ 멸종 위기종을 보호해야 한다는 내용이 없음을 놓쳤음. 지문은 ‘희귀한 동물과 새’를 보호하려는 노력에 초점을 맞추고 있지만, ‘모든’ 멸종 위기종을 보호해야 한다는 보편적 필요성은 언급하지 않음. → 처방: ‘모든’이라는 절대적 표현이 지문에 있는지 확인하고, 지문의 한정된 범위를 정확히 파악할 것.\n⑤ 진단: ‘서식지 손실이나 오염 요인을 무시하고 종을 보호하려는 노력’을 골랐다면, 지문에서 ‘삼림 손실이나 수질 오염으로 인한 파괴로부터 이들 동물을 보호하려는 노력’을 언급한 부분을 놓쳤음. 지문 3~4행에 ‘삼림 손실이나 수질 오염’이라는 구체적 요인이 포함된 보호 노력이 있음. → 처방: 지문에 나타난 ‘삼림 손실’과 ‘수질 오염’이 보호 노력의 ‘원인’이 아니라 ‘대상’이라는 점을 정확히 짚고, 이 요인들을 무시하지 않도록 주의할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Environmentalists]"
+   }
+  },
   {
    "ts": "2026-08-15T22:40:06.405Z",
    "type": "어법개수형",
@@ -296,74 +364,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Collocations are word pairs or phrases that frequently co-occur in language.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 핵심 조건·전제를 빠뜨림· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘frustration(좌절)’와 ‘relief(안도)’라는 감정이 동일 인물 ‘I’의 심경 변화로 오해했는데, 지문은 Nell 과 Zoë의 대화로만 구성되어 있어 ‘I’의 감정 변화가 전혀 나타나지 않음. → 처방: 문제에서 ‘I’의 심경 변화가 언급된 경우에만 그 감정을 찾아야 함. 지문에 그런 언급이 없으면 다른 선지를 우선 검토할 것.\n② 진단: ‘흔히 오용되는 단어’로 오해했는데, 지문은 ‘collocations(관용 표현)’과 관련된 문제로, 단어의 오용이 아니라 ‘자주 함께 쓰이는 단어 묶음’을 다룸. → 처방: ‘collocations’라는 용어가 나오면 ‘자주 함께 쓰이는 단어 조합’을 떠올리고, 선지 ③④⑤ 중 ‘자주 함께 쓰이는 단어’ 관련 표현을 먼저 확인할 것.\n③ 진단: ‘항상 같은 순서로 등장하는 단어 쌍’으로 오해했는데, 지문은 ‘collocations’이란 단어 자체가 ‘자주 함께 쓰이는 단어 묶음’을 의미하며, 순서가 고정된 단어 쌍을 가리키는 말이 아님. → 처방: ‘collocations’를 ‘항상 같은 순서로 나오는 단어’로 오해하지 말고, ‘자주 함께 쓰이는 단어 묶음’이라는 뜻을 기억할 것.\n④ 진단: ‘문장에서 자주 반복되는 특정 단어’로 오해했는데, 지문은 ‘collocations’로, ‘자주 함께 쓰이는 단어 묶음’을 의미하며, 개별 단어의 반복과는 무관함. → 처방: ‘collocations’를 ‘단어의 반복’으로 오해하지 말고, ‘단어와 단어가 결합된 표현’을 떠올릴 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Collocations are word pairs or phrases that frequently co-occur in language.]"
-   }
-  },
-  {
-   "ts": "2026-08-15T13:00:33.540Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Quick Quiz #22 Match each word in the first column with its definition in the second column. Check your answers here. 1. coalesce a. perceptive 2. coalition b. unite 3. coerce c. conversational 4. cogent d. force someone to do something 5. cognitive e. proportionate 6. cognizant f. making sense 7. coherent g. group with a purpose 8. colloquial h. powerfully convincing 9. collusion i. summary 10. commensurate j. forceful 11. compelling k. conspiracy 12. compendium l. dealing with how we know our environment COMPLACENT (kum PLAY sunt) adj self-satisfied; overly pleased with oneself; contented to a fault • The complacent camper paid no attention to the poison ivy around his campsite, and ended up going to the hospital. • The football team won so many games that it became complacent, and the worst team in the league won the game. To fall into complacency is to become comfortably uncaring about the world around you.\n\n─────────\n[요약문] The quiz assessed one's ability to match each (A) abstract concept with its (B) precise definition through a structured exercise.",
-    "choices": [
-     "(A) commensurate … (B) summary",
-     "(A) coalesce … (B) perceptive",
-     "(A) coercive … (B) united",
-     "(A) compelling … (B) conspiracy",
-     "(A) lexical item … (B) meaning"
-    ],
-    "answer": 5,
-    "explanation": "(A) lexical item / (B) meaning 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘commensurate’는 ‘proportionate’를 뜻하는데, 학생은 ‘summary’를 뜻하는 ‘compendium’과 혼동했을 가능성이 있다. 지문에서 ‘commensurate’는 11번으로 ‘proportionate’와 짝지어져 있다. → 처방: 단어의 뜻을 정확히 기억하고, 지문에서 해당 단어가 짝지어진 정의를 다시 한 번 확인하라.\n② 진단: ‘coalesce’는 ‘unite’를 뜻하는데, 학생은 ‘perceptive’를 뜻하는 ‘cogent’와 혼동했을 가능성이 있다. 지문에서 ‘coalesce’는 2번으로 ‘unite’와 짝지어져 있다. → 처방: 단어의 뜻을 정확히 기억하고, 지문에서 해당 단어가 짝지어진 정의를 다시 한 번 확인하라.\n③ 진단: ‘coercive’는 ‘force someone to do something’를 뜻하는데, 학생은 ‘united’를 뜻하는 ‘coalition’과 혼동했을 가능성이 있다. 지문에서 ‘coerce’는 4번으로 ‘force someone to do something’와 짝지어져 있다. → 처방: 단어의 뜻을 정확히 기억하고, 지문에서 해당 단어가 짝지어진 정의를 다시 한 번 확인하라.\n④ 진단: ‘compelling’는 ‘powerfully convincing’을 뜻하는데, 학생은 ‘conspiracy’를 뜻하는 ‘collusion’과 혼동했을 가능성이 있다. 지문에서 ‘compelling’는 8번으로 ‘powerfully convincing’과 짝지어져 있다. → 처방: 단어의 뜻을 정확히 기억하고, 지문에서 해당 단어가 짝지어진 정의를 다시 한 번 확인하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T11:35:16.236Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "Such results no one could have predicted. Quick Tip:  When you start to read a passage whose ideas you expect to be difficult, skim it quickly to find its main characters. Then think about those characters before you begin reading carefully. What do you know about them? What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily you will ­understand stories about them. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because you know it too well. You must analyze it more objectively. This passage feels choppy, out of focus, even disorganized:",
-    "choices": [
-     "글쓴이가 예상치 못한 결과를 얻었다고 서술하고 있다.",
-     "읽기 전 미리 주요 인물상을 떠올리면 이해가 쉬워진다고 주장한다.",
-     "글의 흐름을 객관적으로 분석해야 한다고 지적하고 있다.",
-     "글쓴이는 자신이 글을 쓸 때 흐름을 스스로 객관적으로 판단하기 어렵다고 설명한다.",
-     "글쓴이가 예상한 결과를 얻었다고 서술하고 있다."
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장 'Such results no one could have predicted'에서 '예상치 못한 결과'를 언급했는데, 학생은 이 문장을 '글쓴이가 예상치 못한 결과를 얻었다'로 오해하여 선택했을 가능성이 높음. → 처방: 지문에서 '예상치 못한 결과'는 '글쓴이'가 아니라 '누구도 예상하지 못한 결과'임을 정확히 확인할 것.\n② 진단: 지문 'think about those characters before you begin reading carefully'와 'main characters'를 '주요 인물상'으로 오해하여 선택했을 가능성이 높음. → 처방: 지문에서 말하는 'characters'는 '등장인물'이 아니라 '주제나 핵심 아이디어'를 뜻함을 기억할 것.\n③ 진단: 지문 'You must analyze it more objectively'와 'analyze the flow of your writing'을 '글의 흐름을 객관적으로 분석해야 한다'로 정확히 읽었으나, 학생은 이 부분을 놓쳤을 가능성이 있음. → 처방: 지문에서 '글의 흐름'을 분석하는 주체가 '글쓴이'임을 확인하고, '객관적 분석'의 필요성을 강조하는 부분을 다시 읽을 것.\n④ 진단: 지문 'you know it too well'과 'can’t predict how readers will judge'에서 '글쓴이가 스스로 객관적으로 판단하기 어렵다'는 내용을 정확히 읽었으나, 학생은 이 부분을 '글쓴이가 글을 쓸 때'로 오해했을 가능성이 있음. → 처방: 지문에서 '글의 흐름을 스스로 객관적으로 판단하기 어렵다'는 '글쓴이'가 아니라 '글쓴이가 글을 쓸 때'가 아니라 '글을 읽는 독자'의 관점을 뜻함을 기억할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
