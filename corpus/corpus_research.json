@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-15T01:52:09.324Z",
+ "updated": "2026-08-15T03:08:08.261Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T03:07:36.691Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스는 '명사구 + 동사 + 보어/목적어' 구조에서 '단수/복수 일치'와 '동사 시제/태'가 오류로 자주 등장함을 보여준다. 특히 'and'로 연결된 동사구가 있을 때, 동사 형태의 일관성이 깨지는 경우가 많다.",
+   "rule": "'and'로 연결된 동사구는 반드시 동일한 시제·태·수(단/복수)를 유지해야 한다. 예: 'X does not exist and is just fiction' (O) vs. 'X does not exist and it is just fiction' (X).",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-15T01:51:43.095Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "관사·대명사·시제 일치 오류가 반복적으로 나타나며, 특히 'two kind of studies'처럼 복수형 오류가 빈번하다. 또한, 문장 간 연결어(and, because of, : 등)가 생략되거나 잘못 사용되는 패턴이 많다.",
    "rule": "'two kind of studies' → 'two kinds of studies'로 복수형을 반드시 검토하고, 문장 간 연결어(and, because of, : 등)가 생략된 경우 복원하여 문법적 오류를 교정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-11T12:05:32.313Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'and so on'이나 'time after time' 같은 연어는 콤마로 분리되어야 자연스럽고, 문법적 오류는 연어의 형태적 오류(형용사+전치사+형용사, 명사+전치사+명사 등)에서 주로 발생한다. 또한, 'be as hard as'와 같이 'be + as ~ as' 구조는 비교 구문에서 필수적이다.",
-   "rule": "비교 구문('as ~ as')이나 연어('and so on', 'time after time')가 포함된 문장은 콤마 삽입 여부와 동사/전치사 결합 형태를 오답으로 설계하여, 학생이 연어의 정확한 형태와 구조를 숙지하도록 한다.",
    "sample": [
     "old english",
     "university press",
