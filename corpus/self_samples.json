@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-15T13:51:59.277Z",
+ "updated": "2026-08-15T14:45:04.321Z",
  "samples": [
+  {
+   "ts": "2026-08-15T14:41:34.936Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page. Then match them to 1–6 below. blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments? 1 He/She certainly looks his/her age. 5 He/She has a very abrasive manner. 2 He/She’s downright rude. 6 He/She has a warm smile. 3 He/She’s bursting with energy. 7 He/She’s full of pent-up anger. 4 He/She has a bubbly personality. 8 He/She has boundless energy. Complete this conversation using collocations from the box in the appropriate form so that Nell always agrees with Zoë. ____",
+    "choices": [
+     "remain completely unknown",
+     "bear little resemblance to",
+     "look nothing like",
+     "slightly differ from",
+     "strikingly resemble"
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 'strikingly resemble'가 들어가 글의 논지를 완성한다 (본문 'bear a striking resemblance to'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘remain completely unknown’는 ‘전혀 알려지지 않다’라는 뜻으로, ‘닮음’을 나타내는 ‘resemble’이 들어간 문장과는 전혀 관련이 없음. ‘look his/her age’(자신의 나이 그대로 보이다)와 헷갈렸을 수 있음. → 처방: ‘닮음’을 나타내는 동사(resemble, look like 등)를 찾고, 문맥에 맞게 ‘닮음의 정도’를 나타내는 부사(strikingly, slightly 등)를 함께 확인하기.\n② 진단: ‘bear little resemblance to’는 ‘거의 닮지 않다’라는 뜻으로, ‘닮음’을 나타내는 문장과 반대 의미가 됨. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 문장과 반대 의미를 나타내는 문장을 구분하고, 빈칸 앞뒤의 문맥(‘Zoë가 동의하는 말’을 넣어야 함)을 꼼꼼히 읽기.\n③ 진단: ‘look nothing like’는 ‘전혀 닮지 않다’라는 뜻으로, ‘닮음’을 나타내는 문장과는 반대 의미가 됨. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 동사(resemble, look like 등)와 ‘닮지 않다’를 나타내는 표현(look nothing like, bear little resemblance to 등)을 정리하고, 문맥에 맞게 선택하기.\n④ 진단: ‘slightly differ from’는 ‘약간 다르다’라는 뜻으로, ‘닮음’을 나타내는 문장과는 관련이 없음. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 문장과 ‘차이’를 나타내는 문장을 구분하고, 빈칸에 들어갈 말이 ‘Zoë가 동의하는 말’이어야 한다는 점을하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-15T14:42:09.878Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "emotions that shift from frustration to relief",
+     "words that are commonly misused in writing",
+     "pairs of words that always appear in the same order",
+     "specific words that frequently repeat in sentences",
+     "phrases that frequently co-occur in language"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Collocations are word pairs or phrases that frequently co-occur in language.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 핵심 조건·전제를 빠뜨림· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘frustration(좌절)’와 ‘relief(안도)’라는 감정이 동일 인물 ‘I’의 심경 변화로 오해했는데, 지문은 Nell 과 Zoë의 대화로만 구성되어 있어 ‘I’의 감정 변화가 전혀 나타나지 않음. → 처방: 문제에서 ‘I’의 심경 변화가 언급된 경우에만 그 감정을 찾아야 함. 지문에 그런 언급이 없으면 다른 선지를 우선 검토할 것.\n② 진단: ‘흔히 오용되는 단어’로 오해했는데, 지문은 ‘collocations(관용 표현)’과 관련된 문제로, 단어의 오용이 아니라 ‘자주 함께 쓰이는 단어 묶음’을 다룸. → 처방: ‘collocations’라는 용어가 나오면 ‘자주 함께 쓰이는 단어 조합’을 떠올리고, 선지 ③④⑤ 중 ‘자주 함께 쓰이는 단어’ 관련 표현을 먼저 확인할 것.\n③ 진단: ‘항상 같은 순서로 등장하는 단어 쌍’으로 오해했는데, 지문은 ‘collocations’이란 단어 자체가 ‘자주 함께 쓰이는 단어 묶음’을 의미하며, 순서가 고정된 단어 쌍을 가리키는 말이 아님. → 처방: ‘collocations’를 ‘항상 같은 순서로 나오는 단어’로 오해하지 말고, ‘자주 함께 쓰이는 단어 묶음’이라는 뜻을 기억할 것.\n④ 진단: ‘문장에서 자주 반복되는 특정 단어’로 오해했는데, 지문은 ‘collocations’로, ‘자주 함께 쓰이는 단어 묶음’을 의미하며, 개별 단어의 반복과는 무관함. → 처방: ‘collocations’를 ‘단어의 반복’으로 오해하지 말고, ‘단어와 단어가 결합된 표현’을 떠올릴 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Collocations are word pairs or phrases that frequently co-occur in language.]"
+   }
+  },
   {
    "ts": "2026-08-15T13:00:33.540Z",
    "type": "요약문AB",
@@ -282,70 +352,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Nell always bears a striking resemblance to her mother.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-15T03:06:42.841Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "CHAPTER 12 Word Meanings The division of the meanings of words into smaller units of meaning is one of the most successful areas of modern semantics, and turns out to be useful for language learning, for most of the elementary units of meaning of one language are found in other languages. We can call these elementary units of meaning 'semantic atoms', for like atoms in chemistry that combine together into molecules, they combine together into tight clusters that can be called 'concepts' or word meanings. Of course, when atoms combine in chemistry the result may have a quite different nature; two gases, hydrogen (H) and oxygen (0), combine to form a liquid, water (H20). We seldom find such big differences in semantics, but like chemical atoms each semantic atom can combine only with a certain number of things, and a combination can act quite differently from its constituent parts. That woman is my father's sister You mean your aunt? That too -- isn’t it nice the way thing N * workout?^>\n\n─────────\n[요약문] The study of (A) in semantics reveals that words are composed of (B), which combine to form distinct meanings across languages.",
-    "choices": [
-     "(A) chemical bonding … (B) word meanings",
-     "(A) molecular composition … (B) semantic units",
-     "(A) language structure … (B) semantic atoms",
-     "(A) semantic atoms … (B) molecular structures",
-     "(A) word components … (B) semantic units"
-    ],
-    "answer": 3,
-    "explanation": "(A) word components / (B) semantic units 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 화학 결합(chemical bonding)과 분자(molecular composition)를 혼동했으며, 지문에서 'semantic atoms'가 'word meanings'의 작은 단위라는 내용과 맞지 않음. → 처방: 지문에서 'semantic atoms'가 단어의 기본 의미 단위라는 점을 정확히 짚고, 화학 용어와 언어학 용어를 구분하여 공부하기.\n② 진단: 'molecular composition'이 분자의 조합을 뜻하는 데, 지문은 단어의 의미가 'semantic units'로 나뉜다는 내용과 맞지 않음. → 처방: 지문의 'semantic atoms'가 단어의 기본 의미 단위임을 기억하고, 'molecular' 같은 화학 용어에 현혹되지 않기.\n④ 진단: 'molecular structures'가 분자의 구조를 뜻하는 데, 지문은 단어의 의미가 'semantic atoms'로 나뉜다는 내용과 맞지 않음. → 처방: 지문에서 'semantic atoms'가 단어의 기본 의미 단위임을 확인하고, 'molecular' 같은 용어는 무시하기.\n⑤ 진단: 'word components'가 단어의 구성 요소로 오해했으나, 지문은 'semantic atoms'가 단어의 기본 의미 단위임을 강조함. → 처방: 지문의 'semantic atoms'가 단어의 기본 의미 단위임을 정확히 이해하고, 'components'라는 일반 용어에 속지 않기."
-   }
-  },
-  {
-   "ts": "2026-08-15T03:07:19.951Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.33,
-    "distractorEff": 100,
-    "pass": true,
-    "flags": []
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "단어 의미를 더 작은 단위로 나누려고",
-     "단어 의미를 더 큰 단위로 결합하려고",
-     "단어 의미를 화학 원자처럼 나누려고",
-     "모든 언어의 단어 의미를 원자 수준으로 나누려고",
-     "단어 의미를 거의 변하지 않게 나누려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'to divide word meanings into semantic atoms for clearer understanding and cross-linguistic analysis.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘단어 의미를 더 큰 단위로 결합’이라는 표현은 지문의 ‘결합’(combine) 개념을 오해한 결과다. 지문은 의미 단위를 ‘더 작은’ 단위로 나눈다고 강조한다(‘division of the meanings of words into smaller units’). → 처방: ‘결합’이라는 단어에 현혹되지 말고, 지문에서 ‘나누는 행위’가 핵심임을 다시 확인하라. ‘combine’이라는 단어는 ‘결합’이 아니라 ‘묶음’을 뜻하는 ‘cluster’를 만들기 위한 과정임을 기억하라.\n③ 진단: ‘화학 원자처럼’이라는 표현은 지문의 비유를 문자 그대로 받아들인 오독이다. 지문은 ‘원자’(atoms)라는 비유를 사용하지만, 실제로는 ‘의미의 최소 단위’를 가리키는 metaphor 일 뿐, 화학 원자를 의미하는 것이 아니다. → 처방: ‘원자’라는 단어가 화학 원자를 뜻하지 않음을 분명히 인식하라. 지문은 ‘의미의 최소 단위’를 ‘원자’에 비유했을 뿐, 화학 원자와는 무관하다는 점을 기억하라.\n④ 진단: ‘모든 언어의 단어 의미를 원자 수준으로 나누려고’라는 표현은 지문의 ‘most of the elementary units of meaning of one language are found in other languages’를 오해한 결과다. 지문은 ‘대부분의’ 언어에서 공통된 의미 단위가 있음을 설명하지만, ‘모든 언어’를 뜻하지 않는다. → 처방: ‘most’라는 단어를 반드시 확인하라. ‘모든 언어’가 아니라 ‘대부분의 언어’라는 한정적 표현임을 기억하고, 선지를 선택할 때는 이 부분을 정확히 읽어내야 한다.\n⑤ 진단: ‘거의 변하지 않게’라는 표현은 지문의 ‘We seldom find such big differences in semantics’를 오해한 결과다. 지문은 화학 원자와 달리 의미의 결합에서 큰 변화가 ‘드물다’고 설명하지만, ‘거의 변하지 않는다’는 뜻이 아니다. → 처방: ‘seldom’이라는 단어를 ‘거의 ~하지 않다’로 해석하지 말고, ‘드물다’는 뜻임을 정확히 이해하라. ‘거의 변하지 않는다’는 강한 표현이므로, 지문의 ‘드물다’는 weaker 한 표현임을 기억하라.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to divide word meanings into semantic atoms for clearer understanding and cross-linguistic analysis.]"
    }
   }
  ]
