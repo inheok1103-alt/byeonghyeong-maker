@@ -1,6 +1,95 @@
 {
- "updated": "2026-08-15T10:42:37.555Z",
+ "updated": "2026-08-15T11:38:55.785Z",
  "samples": [
+  {
+   "ts": "2026-08-15T11:35:16.236Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "Such results no one could have predicted. Quick Tip:  When you start to read a passage whose ideas you expect to be difficult, skim it quickly to find its main characters. Then think about those characters before you begin reading carefully. What do you know about them? What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily you will ­understand stories about them. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because you know it too well. You must analyze it more objectively. This passage feels choppy, out of focus, even disorganized:",
+    "choices": [
+     "글쓴이가 예상치 못한 결과를 얻었다고 서술하고 있다.",
+     "읽기 전 미리 주요 인물상을 떠올리면 이해가 쉬워진다고 주장한다.",
+     "글의 흐름을 객관적으로 분석해야 한다고 지적하고 있다.",
+     "글쓴이는 자신이 글을 쓸 때 흐름을 스스로 객관적으로 판단하기 어렵다고 설명한다.",
+     "글쓴이가 예상한 결과를 얻었다고 서술하고 있다."
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장 'Such results no one could have predicted'에서 '예상치 못한 결과'를 언급했는데, 학생은 이 문장을 '글쓴이가 예상치 못한 결과를 얻었다'로 오해하여 선택했을 가능성이 높음. → 처방: 지문에서 '예상치 못한 결과'는 '글쓴이'가 아니라 '누구도 예상하지 못한 결과'임을 정확히 확인할 것.\n② 진단: 지문 'think about those characters before you begin reading carefully'와 'main characters'를 '주요 인물상'으로 오해하여 선택했을 가능성이 높음. → 처방: 지문에서 말하는 'characters'는 '등장인물'이 아니라 '주제나 핵심 아이디어'를 뜻함을 기억할 것.\n③ 진단: 지문 'You must analyze it more objectively'와 'analyze the flow of your writing'을 '글의 흐름을 객관적으로 분석해야 한다'로 정확히 읽었으나, 학생은 이 부분을 놓쳤을 가능성이 있음. → 처방: 지문에서 '글의 흐름'을 분석하는 주체가 '글쓴이'임을 확인하고, '객관적 분석'의 필요성을 강조하는 부분을 다시 읽을 것.\n④ 진단: 지문 'you know it too well'과 'can’t predict how readers will judge'에서 '글쓴이가 스스로 객관적으로 판단하기 어렵다'는 내용을 정확히 읽었으나, 학생은 이 부분을 '글쓴이가 글을 쓸 때'로 오해했을 가능성이 있음. → 처방: 지문에서 '글의 흐름을 스스로 객관적으로 판단하기 어렵다'는 '글쓴이'가 아니라 '글쓴이가 글을 쓸 때'가 아니라 '글을 읽는 독자'의 관점을 뜻함을 기억할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-15T11:35:45.268Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Such results no one could have predicted. Quick Tip:  When you start to read a passage whose ideas you expect to be difficult, skim it quickly to find its main characters. Then think about those characters before you begin reading carefully. What do you know about them? What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily you will ­understand stories about them. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because <u>you know it too well</u>. You must analyze it more objectively. This passage feels choppy, out of focus, even disorganized:",
+    "choices": [
+     "The writer’s excessive familiarity with their own text leads them to assess its clarity and coherence more accurately than others could.",
+     "The writer literally understands every detail of their text, so they can evaluate its clarity and coherence without any difficulty.",
+     "The writer’s excessive confidence in their own text makes it difficult for others to understand it clearly.",
+     "Because the writer knows the text too well, they are able to assess its clarity and coherence objectively.",
+     "The writer’s excessive familiarity with their own text prevents them from objectively assessing its clarity and coherence."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'The writer’s excessive familiarity with their own text prevents them from objectively assessing its clarity and coherence.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'you know it too well'은 글쓴이가 자신의 글을 지나치게 잘 알기에 객관적 평가가 어렵다는 뜻인데, ①은 '정확히 평가한다'고 반대로 해석하여 오독. → 처방: 지문에서 'you know it too well'의 의미를 정확히 짚고, '과도한 친숙함이 객관성 떨어지게 한다'는 핵심 뜻을 기억하기.\n② 진단: ②는 '글쓴이가 모든 디테일을 이해해서 평가에 어려움이 없다'고 오해했는데, 지문은 '너무 잘 알기에 객관적 평가가 힘들다'고 설명. → 처방: 지문에서 'you know it too well'이 '객관적 평가의 어려움'을 뜻한다는 점을 다시 한 번 확인하고, '과도한 친숙함'과 '객관성'의 관계를 연결 지어 생각하기.\n③ 진단: ③은 '글쓴이의 과도한 자신감이 타인의 이해를 어렵게 한다'고 오해했는데, 지문은 '글쓴이 자신이 객관적 평가를 못한다는' 내용임. → 처방: 지문에서 'you know it too well'의 주어와 목적어를 정확히 구분하고, '타인이 아닌 글쓴이 자신의 문제'임을 기억하기.\n④ 진단: ④는 '글쓴이가 객관적 평가를 한다'고 오해했는데, 지문은 '너무 잘 알기에 객관적 평가가 불가능하다'고 설명. → 처방: 지문에서 'you know it too well'이 '객관적 평가의 어려움'을 뜻한다는 점을 강조하고, '과도한 친숙함'과 '객관성 상실'의 관계를 명확히 이해하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-15T11:38:12.952Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Such results ⓐ<u>no one could predict</u>. Quick Tip:  When you start to read a passage whose ideas you expect to be difficult, skim it quickly to find ⓑ<u>its main characters</u>. Then think about those characters before you begin reading carefully. ⓒ<u>What do you know about them?</u> What other ideas do you associate with them? What would you expect to read about them? The more sharply you have characters in mind as you read, the more easily ⓓ<u>you will ­understand stories about them</u>. Diagnosis and Revision: Topics As with other issues of clarity, you can’t predict how readers will judge the flow of your writing just by reading it yourself, because you know it too well. ⓔ<u>You must analyze it more objectively</u>. This passage feels choppy, out of focus, even disorganized:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓐ: 'no one could predict' → 'no one could have predicted' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-15T10:41:46.535Z",
    "type": "틀린문장 고쳐쓰기",
@@ -243,93 +332,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 의미의 기본 단위인 '의미소'는 언어 간에 공통으로 나타나며 개념 형성에 핵심 역할을 한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T01:51:40.773Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 분석에서는 PRO가 spec-T가 아닌 spec-V에 병합된다고 가정합니다.\n주어진 단어: ( analysis / assumes / merged )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The analysis assumes PRO is merged in spec-V, not spec-T. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-14T22:42:45.951Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "PROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. • The provident father had long ago set aside money for the college education of each of his children. To be improvident is to fail to provide for the future. • It was improvident of the grasshopper not to store any food for the winter, <u>unlike his acquaintance the provident ant</u>. Quick Quiz #68 Match each word in the first column with its definition in the second column. Check your answers here. 1. promulgate a. natural inclination 2. propensity b. good manners 3. propitious c. advocate 4. proponent d. prohibit 5. proprietary e. prolong 6. propriety f. leading character 7. prosaic g. constituting property 8. proscribe h. frugal 9. proselytize i. dull 10. protagonist j. marked by favorable signs 11. protract k. convert 12. provident l. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
-    "choices": [
-     "The grasshopper’s carefree attitude toward the future is similar to the ant’s cautious behavior, suggesting that both success and failure depend on luck.",
-     "The grasshopper’s failure to prepare for the future contrasts sharply with the ant’s foresightedness, illustrating the moral that prudent planning leads to survival.",
-     "Unlike the ant, which sometimes plans ahead, the grasshopper is always carefree, so its lack of preparation occasionally results in hardship.",
-     "Because the grasshopper didn’t prepare for the future, the ant’s foresightedness led to its survival, proving that planning alone guarantees success.",
-     "Because the grasshopper did not plan ahead, he starved, which proves that lack of preparation directly leads to survival."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'The grasshopper’s failure to prepare for the future contrasts sharply with the ant’s foresightedness, illustrating the moral that prudent planning leads to survival.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘유사한’과 ‘의존’ 키워드로 지문의 ‘unlike’를 무시하고 ‘carefree attitude’와 ‘cautious behavior’를 같은 맥락으로 오해했음. → 처방: ‘unlike’를 중심으로 ‘대조’를 찾아야 하며, ‘luck’은 지문에 없으므로 제외하고 풀기.\n③ 진단: ‘때때로’와 ‘항상’을 혼동해 ‘ant’의 계획성 여부를 부정확하게 해석했으며, ‘occasional hardship’을 근거로 오답을 선택했음. → 처방: ‘unlike’를 기준으로 ‘ant’는 ‘provident(계획성 있음)’임을 정확히 짚고, ‘always’를 배제한 풀기.\n④ 진단: ‘planning alone guarantees success’를 근거로 ‘planning’이 ‘유일한 성공 조건’이라고 과장해 해석해 오답을 선택했음. → 처방: 지문은 ‘prudent planning’이 ‘survival’에 도움이 된다는 정도를 말하고 있음을 기억하고, ‘guarantees’를 배제한 풀기.\n⑤ 진단: ‘starved’를 근거로 ‘직접적 결과’를 과장해 ‘survival’을 ‘starvation’으로 오해했으며, 지문이 ‘survival’을 언급함을 무시했음. → 처방: ‘survival’이 ‘ant’의 결과임을 확인하고, ‘starved’를 ‘survival’과 연결 지어 풀기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T22:43:12.441Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] • It was improvident of the grasshopper not to store any food for the winter, unlike his acquaintance the provident ant.\n\nPROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. ( ① ) • The provident father had long ago set aside money for the college education of each of his children. ( ② ) To be improvident is to fail to provide for the future. ( ③ ) Quick Quiz #68 Match each word in the first column with its definition in the second column. ( ④ ) Check your answers here. ( ⑤ ) natural inclination 2. good manners 3. leading character 7. constituting property 8. marked by favorable signs 11. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ①의 문장은 'provident'가 '미래를 준비하는' 뜻임을 예시로 설명하는 부분인데, 주어진 문장은 'improvident'와 'provident'의 대조를 통해 '미래 준비의 중요성'을 강조하는 내용이므로 흐름이 맞지 않는다. → 처방: 단어의 뜻과 예시가 나오는 문장 뒤에 오는 문장은 그 단어를 사용한 문장이어야 한다는 점을 기억하고, 문맥 흐름을 먼저 확인하라.\n② 진단: ②의 문장도 'provident'의 의미를 예시로 설명하는 부분으로, 주어진 문장처럼 두 동물의 대조를 통한 교훈을 전달하는 내용이 아니기 때문에 적절하지 않다. → 처방: 예시 문장 다음에는 그 단어를 사용한 문장이 오지 않을 수도 있음을 인식하고, 문맥의 핵심 의미를 먼저 파악하라.\n④ 진단: ④는 단어 정의와 퀴즈를 연결하는 부분으로, 주어진 문장이 'provident'와 'improvident'의 대조를 통한 교훈을 전달하는 내용이므로 이 위치에는 맞지 않다. → 처방: 퀴즈나 정의가 나오는 부분은 문맥의 흐름이 끊어지는 곳이므로, 그 전에 문맥이 자연스럽게 연결되는지 먼저 확인하라.\n⑤ 진단: ⑤는 퀴즈의 답을 확인하는 부분으로, 주어진 문장이 두 동물의 대조를 통한 교훈을 전달하는 내용이므로 이 위치에는 맞지 않다. → 처방: 퀴즈나 답 확인 부분은 문장의 흐름이 끊어지는 곳이므로, 그 전에 문맥이 자연스럽게 연결되는지 먼저 확인하라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]

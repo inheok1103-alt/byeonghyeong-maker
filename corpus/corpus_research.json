@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-15T10:42:37.550Z",
+ "updated": "2026-08-15T11:38:55.780Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T11:38:29.330Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'noun phrase'와 'reason relations'가 결합된 경우, 복수형 명사나 관계절로 재구성되는 패턴이 빈번하다. 특히 'several reason'처럼 단수형 명사가 오용되는 오류가 다수 발견된다.",
+   "rule": "원서 코퍼스에서 'several + 단수명사'가 사용된 경우, 'several + 복수명사 + 관계절(that/who)'로 변형하여 출제하라. 예를 들어, 'several reason' → 'several reasons that/who...'로 수정하는 패턴을 적용한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-15T10:42:07.440Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "원서 코퍼스에서 'reason'은 복수형 'reasons'로 사용되는 경우가 빈번하며, 'therefore'와 'because'는 문장 첫머리에 오면 대문자화하고 콤마를 동반하는 패턴이 일반적이다.",
    "rule": "문장 첫머리에 접속사('therefore', 'because' 등)를 사용할 경우, 반드시 대문자로 시작하고 콤마를 삽입한 후 문장을 재구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-11T23:08:00.719Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사의 수(단수/복수) 오류와 조동사(ability/possibility) 오류가 빈번하며, 특히 'fish(es)'와 같이 불규칙 복수/불변명사가 혼동된다. 또한 문법적 구조(주어-동사-목적어)나 전치사 구(‘to people’ → ‘to the people’)의 생략/오용이 두드러진다.",
-   "rule": "‘명사 단수/복수 오류’와 ‘조동사(ability/possibility) 오류’를 동시에 검증하는 문항을 출제할 때는, 불규칙 복수(예: fish, people)나 불가산명사(예: money) 사용 여부를 확인하고, 조동사(can/could/will be able to 등)는 문맥상 가능/능력/허가 여부를 엄격히 구분하여 오류를 유도하라.",
    "sample": [
     "old english",
     "university press",
