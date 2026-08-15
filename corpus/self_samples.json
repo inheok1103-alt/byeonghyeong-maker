@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-14T23:40:37.144Z",
+ "updated": "2026-08-15T01:52:09.328Z",
  "samples": [
+  {
+   "ts": "2026-08-15T01:51:40.773Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 분석에서는 PRO가 spec-T가 아닌 spec-V에 병합된다고 가정합니다.\n주어진 단어: ( analysis / assumes / merged )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The analysis assumes PRO is merged in spec-V, not spec-T. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-14T22:42:45.951Z",
    "type": "밑줄함의",
@@ -334,25 +353,6 @@
     ],
     "answer": 5,
     "explanation": "밑줄 친 부분은 'Their disagreement escalated into a bitter and hostile argument due to Elizabeth’s deliberate provocation about George’s unchangeable foolishness.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘acrimonious’는 ‘악의에 찬’·‘원한이 가득한’ 말다툼을 뜻하는데, 이 학생은 ‘unexpectedly led to their argument turning acrimonious’를 보고 ‘예기치 않게’가 ‘acrimonious’의 의미를 담은 줄 오독했다. → 처방: ‘acrimonious’는 ‘원한·악의가 가득한’ 상태를 뜻하므로, 뜻과 감정의 강도를 지문에서 정확히 짚고 넘어가기.\n② 진단: ‘George’s continual stupidity frustrated Elizabeth deeply’를 보고 ‘George 의 어리석음이 Elizabeth 를 화나게 했다’는 점만 보고 ‘acrimonious’의 ‘원한·적대감’을 놓쳤다. → 처방: ‘acrimonious’는 ‘원한·적대감’이 핵심인데, 이 뜻을 지문에서 ‘full of spite; bitter; nasty’라고 설명한 부분을 다시 읽고 이해하기.\n③ 진단: ‘Elizabeth called George stupid’를 보고 ‘호칭’이 ‘acrimonious’의 원인이라고 오해했는데, 지문은 ‘Elizabeth 가 George 의 ‘변하지 않는 어리석음’을 들춰냈다’는 점을 강조했다. → 처방: ‘perennial, incorrigible stupidity’를 ‘계속되는·고칠 수 없는 어리석음’으로 해석하고, 이것이 ‘acrimonious’의 원인이라는 점을 기억하기.\n④ 진단: ‘George refused to admit his repeated mistakes’를 보고 ‘George 의 refusal’이 ‘acrimonious’의 직접 원인으로 오독했는데, 지문은 ‘Elizabeth 가 George 의 어리석음을 들춰냈다’는 점이 더 중요하다. → 처방: ‘acrimonious’는 ‘원한·적대감’이 핵심인데, 이 단어의 뜻을 지문에서 ‘full of spite; bitter; nasty’라고 설명한 부분을 다시 확인하고, 누가 누구를 toward toward toward toward toward toward toward toward toward toward toward toward toward toward toward toward toward\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T19:17:19.439Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] ACRIMONIOUS (ak ruh MOH nee us) adj full of spite; bitter; nasty • George and Elizabeth’s discussion turned acrimonious when Elizabeth introduced the subject of George’s perennial, incorrigible stupidity.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 조지와 엘리자베스의 토론은 조지의 끊임없는 고질적인 어리석음을 거론하면서 신랄해졌다. (구문 포인트: when 절(시간을 나타내는 부사절) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

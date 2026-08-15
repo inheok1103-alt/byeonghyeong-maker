@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-14T23:40:37.141Z",
+ "updated": "2026-08-15T01:52:09.324Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T01:51:43.095Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "복수 명사(transports, commitments, subjects)가 단수형으로 오류가 발생하는 패턴이 빈번하며, 전치사(‘to’→‘of’, ‘of the matter that’→‘The fact of the matter is that’)와 관사(a lot of)의 오용도 다수 확인된다.",
+   "rule": "‘복수 명사’가 단수형으로 오용된 경우, 해당 명사를 단수로 수정하고 문맥에 맞는 전치사(‘of’, ‘to’)나 관사(a/an/the)를 추가하여 문법적으로 올바르게 재구성하라. 예: ‘needs to transportation’ → ‘needs of transportation’, ‘alot of acadmic subject’ → ‘a lot of academic subjects’.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-14T23:40:08.812Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'and so on'이나 'time after time' 같은 연어는 콤마로 분리되어야 자연스럽고, 문법적 오류는 연어의 형태적 오류(형용사+전치사+형용사, 명사+전치사+명사 등)에서 주로 발생한다. 또한, 'be as hard as'와 같이 'be + as ~ as' 구조는 비교 구문에서 필수적이다.",
    "rule": "비교 구문('as ~ as')이나 연어('and so on', 'time after time')가 포함된 문장은 콤마 삽입 여부와 동사/전치사 결합 형태를 오답으로 설계하여, 학생이 연어의 정확한 형태와 구조를 숙지하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-11T11:09:40.195Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거분사 오용(be took → become)과 부정어 중복 오용(no bothering and no hassle → any bothering and hassle)이 빈번하며, 주어-동사 일치 오류(know → knows)도 패턴화되어 있다.",
-   "rule": "원서 코퍼스에서 빈도 높은 'old english', 'university press', 'noun phrase' 패턴을 활용하여, 'be + 과거분사' 구문 대신 능동태 전환(become + 형용사/명사)이나 'cannot + any + 명사'로 부정어 중복을 수정하는 변형 문제를 즉시 출제하라.",
    "sample": [
     "old english",
     "university press",
