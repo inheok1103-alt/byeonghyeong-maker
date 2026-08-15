@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-15T19:37:44.500Z",
+ "updated": "2026-08-15T20:46:05.709Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-15T20:45:40.466Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'only'와 같은 한정적 부사가 동사구 앞에 오면 구문 전체의 의미가 왜곡될 수 있으며, 'place'는 가산명사로 'a lot of'와 결합할 때 복수형 'spaces'가 자연스럽다. 또한 'traffic'은 특정 날짜/시간제한과 결합할 때 전치사 'on'이 필수적이다.",
+   "rule": "'only', 'just', 'simply'와 같은 한정적 부사는 동사구 바로 앞에 오지 말고, 동사구 전체를 수식하도록 문장 맨 앞이나 뒤에 배치하여 자연스러운 영어 구문을 유지하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-15T19:37:10.762Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거 시제 동사와 'except that' 구문이 연이어 사용되는 경우, 콤마와 접속사 'and'를 추가하여 문법적 흐름을 명확히 해야 한다. 또한 부정어 'not'과 'anything'의 조합은 'nothing'으로 자연스럽게 대체되어야 하며, 전치사 선택(around → at our disposal)이 문맥에 맞게 수정되어야 한다.",
    "rule": "원서 코퍼스에서 빈번한 'past tense + except that' 구조는 콤마(,)와 접속사 'and'를 반드시 삽입하여 문장 흐름을 자연스럽게 연결하도록 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-12T15:17:33.456Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사+명사(compound noun) 형태가 빈번하며, 특히 하이픈(-) 사용이 규칙적이지 않은 경우가 많다. 또한, 동사 형태(3인칭 단수, 과거형, 진행형 등)의 오용이 빈번하다.",
-   "rule": "복합명사(compound noun)일 경우, 하이픈(-)을 명확히 구분하여 사용하고, 동사 형태는 주어와 시제에 맞게 정확히 변형하라. 예: 'car usage' (X: 'carusage'), 'Latin American' (X: 'latinamerican'), 'works hard' (X: 'do more benefits').",
    "sample": [
     "old english",
     "university press",

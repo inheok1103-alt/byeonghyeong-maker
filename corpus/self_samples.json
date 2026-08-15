@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-15T19:37:44.505Z",
+ "updated": "2026-08-15T20:46:05.713Z",
  "samples": [
+  {
+   "ts": "2026-08-15T20:45:27.824Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Confusing Words and Homonyms 45 set one sets a thing Example: Please set the table. sit one sits oneself Example: Please sit down at the table. sew to stitch so in the manner indicated sow (verb) to scatter or plant seed sewer a conduit for carrying off waste suer one who sues shear to cut sheer transparent shoe foot attire shoo interjection used to scare away an animal shoot (see chute) sic a Latin term used to indicate that something written is intentionally left in the original form, which may be incorrect. Example: She wrote, ‘‘They made there [sic] beds.’’ sick ill sics attacks six a number sight (see cite) sign an indication sine a trigonometry term since (see because) sink to submerge; to descend to a lower level; where you wash dirty dishes synch (or sync) to synchronize, to coincide or match up site (see cite) slay kill sleigh snow vehicle, sled",
+    "choices": [
+     "'set'는 '테이블을 준비하다'라는 뜻을 가진 명사이다.",
+     "'sit'는 '앉다'라는 뜻을 가진 명사이다.",
+     "'sow'는 '씨를 뿌리다'라는 뜻을 가진 명사이다.",
+     "'sick'은 '아프다'라는 뜻을 가진 형용사이다.",
+     "'slew'는 '죽이다'라는 뜻을 가진 동사이다."
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'set'은 동사(예: Please set the table)로만 설명했는데, 학생은 '명사'로 오독했다. 'set'이 명사로 쓰일 때도 있지만(예: a set of tools), 여기서는 동사로만 소개되었다. → 처방: 단어의 품사와 뜻을 모두 확인한 뒤, 지문에서 제시한 예문과 뜻을 정확히 짚고 넘어가라.\n② 진단: 지문에서 'sit'은 '앉다'라는 뜻을 가진 동사로만 설명했는데, 학생은 '명사'로 오독했다. 'sit'이 명사로 쓰일 때도 있지만(예: a sit-in), 여기서는 동사로만 소개되었다. → 처방: 단어의 품사와 뜻을 구분할 때, 예문과 함께 '~하다'로 동사임을 확인하라.\n③ 진단: 지문에서 'sow'는 '씨를 뿌리다'라는 뜻을 가진 동사로만 설명했는데, 학생은 '명사'로 오독했다. 'sow'가 명사로 쓰일 때도 있지만(예: female pig), 여기서는 동사로만 소개되었다. → 처방: 동사인 경우 '~하다'로 끝나는지 확인하고, 지문 예문과 뜻을 함께 기억하라.\n⑤ 진단: 지문에서 'slay'는 '죽이다'라는 뜻을 가진 동사로 소개했는데, 학생은 'slew'로 잘못 썼다. 'slew'는 'slay'의 과거형이지만, 지문에는 'slay'만 나와 있으며 뜻은 같다. → 처방: 단어의 기본형과 과거형을 구분하고, 지문에서 제시된 기본형을 기준으로 뜻을 확인하라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-15T19:36:18.196Z",
    "type": "주제",
@@ -308,42 +343,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [시제] ⓑ: 'said (with what subsequently being passivized' → 'said (with what subsequently being passivised' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T09:44:09.798Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/1가 2번 선택(기록 5번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": -0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "The reason for having two verbs was that (A) [stay / move] in (i) means ‘(B) [replace / displace]’, whereas it means something like ‘(C) [stir / calm]’ in (ii). However, you may want to argue that move is, in fact, exactly like read and eat discussed in the same section, if we simply assume that move in (ii) involves an implied DO, namely himself . Sentence (ii) would then mean ‘Harold moved/displaced himself’. Is this a plausible line of reasoning? Give reasons for your answer. *8. Why is assigning the grammatical function of Direct Object to the italicised strings in the sentences below problematic? Is there another function we can assign instead? (i) This computer weighs twenty kilograms . (ii) Each of these oranges costs ten pence . (iii) The information booklet contains four pages . (iv) That jacket suits you . *9. Apply the criteria for subjecthood presented in Section 3.1 to sentence (i) below: (i) There is a rat in the kitchen.",
-    "choices": [
-     "(A) move - (B) displace - (C) calm",
-     "(A) move - (B) replace - (C) stir",
-     "(A) stay - (B) replace - (C) calm",
-     "(A) move - (B) replace - (C) calm",
-     "(A) move - (B) displace - (C) stir"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) move - (B) displace - (C) stir. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A) stay’를 선택한 학생은 ‘move’의 의미를 ‘머무르다’로만 오해했을 가능성이 크다. 지문에서 move 는 (i)에서 ‘대체하다’를 뜻하고 (ii)에서는 ‘움직이다’로 쓰였음을 확인해야 한다. → 처방: ‘move’를 ‘움직이다’라는 뜻으로만 생각하지 말고, 문맥에 따라 ‘대체하다’도 될 수 있음을 기억하자.\n② 진단: ‘(B) replace’를 선택한 학생은 (i)에서 move 가 ‘대체하다’를 뜻한다는 지문 내용을 제대로 읽지 않았거나, ‘displace’와 ‘replace’를 혼동했을 수 있다. → 처방: ‘displace’는 ‘강제로 자리를 옮기게 하다’라는 뜻이므로, ‘replace’(교체하다)와 구분해서 기억하자.\n③ 진단: ‘(C) calm’을 선택한 학생은 (ii)에서 move 가 ‘움직이다’라는 뜻이라는 지문 내용을 무시하고, ‘조용히 하다’라는 뜻으로만 오해했을 가능성이 있다. → 처방: ‘stir’는 ‘움직이다’나 ‘휘젓다’라는 뜻이므로, ‘calm’(조용히 하다)과는 반대라는 점을 기억하자.\n④ 진단: ‘(C) calm’을 선택한 학생은 ‘move’가 (ii)에서 ‘움직이다’를 뜻한다는 지문 내용을 제대로 활용하지 못했다. ‘stir’는 ‘움직이다’와 관련이 있지만 ‘calm’은 그렇지 않다. → 처방: ‘move’가 (ii)에서 ‘움직이다’를 뜻한다는 점을 확실히 기억하고, ‘stir’와 ‘calm’을 비교해서 선택하자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
