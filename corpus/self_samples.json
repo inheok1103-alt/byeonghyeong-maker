@@ -1,6 +1,42 @@
 {
- "updated": "2026-08-15T08:50:33.245Z",
+ "updated": "2026-08-15T09:45:13.270Z",
  "samples": [
+  {
+   "ts": "2026-08-15T09:44:09.798Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/1가 2번 선택(기록 5번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": -0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "The reason for having two verbs was that (A) [stay / move] in (i) means ‘(B) [replace / displace]’, whereas it means something like ‘(C) [stir / calm]’ in (ii). However, you may want to argue that move is, in fact, exactly like read and eat discussed in the same section, if we simply assume that move in (ii) involves an implied DO, namely himself . Sentence (ii) would then mean ‘Harold moved/displaced himself’. Is this a plausible line of reasoning? Give reasons for your answer. *8. Why is assigning the grammatical function of Direct Object to the italicised strings in the sentences below problematic? Is there another function we can assign instead? (i) This computer weighs twenty kilograms . (ii) Each of these oranges costs ten pence . (iii) The information booklet contains four pages . (iv) That jacket suits you . *9. Apply the criteria for subjecthood presented in Section 3.1 to sentence (i) below: (i) There is a rat in the kitchen.",
+    "choices": [
+     "(A) move - (B) displace - (C) calm",
+     "(A) move - (B) replace - (C) stir",
+     "(A) stay - (B) replace - (C) calm",
+     "(A) move - (B) replace - (C) calm",
+     "(A) move - (B) displace - (C) stir"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) move - (B) displace - (C) stir. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A) stay’를 선택한 학생은 ‘move’의 의미를 ‘머무르다’로만 오해했을 가능성이 크다. 지문에서 move 는 (i)에서 ‘대체하다’를 뜻하고 (ii)에서는 ‘움직이다’로 쓰였음을 확인해야 한다. → 처방: ‘move’를 ‘움직이다’라는 뜻으로만 생각하지 말고, 문맥에 따라 ‘대체하다’도 될 수 있음을 기억하자.\n② 진단: ‘(B) replace’를 선택한 학생은 (i)에서 move 가 ‘대체하다’를 뜻한다는 지문 내용을 제대로 읽지 않았거나, ‘displace’와 ‘replace’를 혼동했을 수 있다. → 처방: ‘displace’는 ‘강제로 자리를 옮기게 하다’라는 뜻이므로, ‘replace’(교체하다)와 구분해서 기억하자.\n③ 진단: ‘(C) calm’을 선택한 학생은 (ii)에서 move 가 ‘움직이다’라는 뜻이라는 지문 내용을 무시하고, ‘조용히 하다’라는 뜻으로만 오해했을 가능성이 있다. → 처방: ‘stir’는 ‘움직이다’나 ‘휘젓다’라는 뜻이므로, ‘calm’(조용히 하다)과는 반대라는 점을 기억하자.\n④ 진단: ‘(C) calm’을 선택한 학생은 ‘move’가 (ii)에서 ‘움직이다’를 뜻한다는 지문 내용을 제대로 활용하지 못했다. ‘stir’는 ‘움직이다’와 관련이 있지만 ‘calm’은 그렇지 않다. → 처방: ‘move’가 (ii)에서 ‘움직이다’를 뜻한다는 점을 확실히 기억하고, ‘stir’와 ‘calm’을 비교해서 선택하자.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-15T07:49:22.932Z",
    "type": "밑줄함의",
@@ -294,42 +330,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] provident (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-14T21:43:03.485Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Model answer for 1 Given the assumptions made in the text, sentence 1 will be derived as follows. The noun hope is merged with its PP complement of finding survivors (whose structure need not concern us here) to form the NP <u>hope of finding survivors</u>. This NP is merged with the quantifier every to form the QP every hope of finding survivors. The resulting QP is merged as the complement of the unaccusative verb remain to form the V-bar remain every hope of finding survivors. This V-bar is then merged with expletive there to form the VP there remain every hope of finding survivors, with there being merged as the highest argument of a verb (remain) which has an indefinite internal argument every hope of finding survivors but no external argument, so that Expletive Conditions (81)(i) and (ii) are satisfied. The resulting VP in turn is merged with an affixal finite T constituent (denoted as Af) to form the structure shown in simplified form in (i) below:",
-    "choices": [
-     "They hoped to find survivors as soon as possible.",
-     "The phrase suggests an unrealistic expectation that survivors will definitely be found in the aftermath of the disaster.",
-     "Because there was little hope of finding survivors, rescue efforts were quickly abandoned.",
-     "The phrase implies a fragile yet persistent belief in the possibility of a positive outcome despite overwhelming circumstances.",
-     "The phrase literally means that someone is hoping to find survivors who are still alive."
-    ],
-    "answer": 4,
-    "explanation": "밑줄 친 부분은 'The phrase implies a fragile yet persistent belief in the possibility of a positive outcome despite overwhelming circumstances.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘hope of finding survivors’를 ‘hope to find survivors as soon as possible’로 오해한 것 같다. 지문은 ‘hope of finding survivors’를 ‘살아 있는 구조대상자를 찾겠다는 희망’으로만 설명하고, ‘가능한 한 빨리’라는 시간적 제약은 언급하지 않는다. → 처방: ‘of finding survivors’를 ‘to find survivors’를 포함한 동사구로 오해하지 말고, 전치사 ‘of’의 의미를 정확히 살피자. ‘of’는 ‘~의’라는 소유나 관계(여기서는 ‘~를 찾겠다는 희망’)를 나타낸다는 점을 기억하자.\n② 진단: ‘unrealistic expectation’이 ‘확실히 구조대상자를 찾을 것이라는 기대’를 뜻한다고 오해했다. 지문은 ‘hope’를 ‘fragile yet persistent belief’로 설명하며, ‘확실성’을 언급하지 않는다. → 처방: ‘unrealistic’을 ‘현실적이지 못한’이라는 뜻으로만 해석하지 말고, 지문에서 ‘hope’를 ‘믿음’이라는 softer 한 표현으로 설명했다는 점을 떠올리자. ‘확실성’이 아니라 ‘가능성’이라는 단서를 찾자.\n③ 진단: ‘little hope’이 ‘희망이 거의 없어서 구조 작업을 포기했다’는 인과관계를 오해했다. 지문은 ‘hope’를 ‘믿음’으로 설명하며, ‘희망의 크기’나 ‘포기’의 이유가 언급되지 않는다. → 처방: ‘little hope’을 ‘희망의 정도’로만 보지 말고, 지문에서 ‘hope’를 ‘믿음’이라는 관념으로 설명했다는 점을 떠올리자. ‘희망의 크기’가 아니라 ‘믿음의 성격’을 중시해야 한다.\n⑤ 진단: ‘문자 그대로’라는 표현을 보고 ‘literal meaning’을 오해했다. 지문은 ‘hope of finding survivors’를 ‘살아 있는 구조대상자를 찾겠다는 희망’으로 설명하지만, ‘문자 그대로’라는 표현은 지문에 없다. → 처방: ‘문자 그대로’를 오해하지 말고, 지문에서 ‘hope’를 ‘믿음’이라는 metaphorical 한 표현으로 설명했다는 점을 떠올리자. ‘문자 그대로’가 아니라 ‘비유적 의미’를 중시해야 한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
