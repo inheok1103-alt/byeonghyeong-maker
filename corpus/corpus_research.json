@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T22:39:54.630Z",
+ "updated": "2026-08-16T23:38:06.205Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T23:37:37.824Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스는 '명사구 + 동사 + 전치사/부사' 구조가 빈번하며, 특히 'be + 과거분사 + 전치사' 패턴(예: 'was effected by')에서 오류가 자주 발생한다. 또한 'any more'와 'anymore'의 구분이 모호한 경우가 많다.",
+   "rule": "'be + 과거분사 + 전치사' 구조(예: 'is effected by')에서 과거분사가 전치사와 결합하지 않고 단독으로 쓰일 경우, 반드시 전치사를 추가하거나 동사 형태를 수정하라(예: 'is not an illusion but real' → 'is not an illusion but real'로 수정하거나 'is affected by'로 재구성).",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T22:39:29.268Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "이 코퍼스는 접속사나 문장부호 오류가 빈번히 발생하며, 특히 'because of' 뒤의 절이나 'for example' 뒤의 예시 구문이 잘못된 문장 구조를 보인다.",
    "rule": "다음과 같이 'because of' 뒤에는 명사구만 오며 절이 오면 오류로 처리하고, 'for example' 뒤에는 콤마 없이 바로 예시가 오면 오류로 처리하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T06:46:03.079Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "CEFR B1-B2 수준에서 빈번한 문법 오류는 접속사 오류, 문장 구조의 복잡성, 관사/형용사의 오용 등이다. 특히 접속사와 문장 부호의 생략이 난이도 조절의 핵심 요소로 작용한다.",
-   "rule": "CEFR B1-B2 수준의 내신 변형문제에서는 접속사(Although, Because 등)의 생략이나 문장 부호(콤마, 마침표)의 오용을 반드시 포함하여 출제하라. 예를 들어, 'Although' 뒤의 콤마 생략이나 'for example' 앞의 콤마 생략을 오류로 제시하라.",
    "sample": [
     "old english",
     "university press",
