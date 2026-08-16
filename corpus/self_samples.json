@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-16T11:37:50.913Z",
+ "updated": "2026-08-16T13:03:29.809Z",
  "samples": [
+  {
+   "ts": "2026-08-16T13:02:29.000Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "CHAPTER 2 Markedness and Blocking Why is it odd to say *'ⓐ<u>a female nurse</u>', while it is reasonable to say 'a male nurse'? If you point to your thumb and ask 'ⓑ<u>Is this a finger?</u>' you will probably not get a 'Yes' answer. You can then ask 'ⓒ<u>How many fingers do you have?</u>' and will almost certainly get an answer of 'Ten'. Is language really so illogical? Let us begin with a parody of a familiar puzzle. One day, John went shopping with his mother. On the way their car ⓓ<u>was hit by a truck</u> and his mother was killed. John was seriously injured and taken to a hospital in an ambulance. One of the nurses in the emergency room was startled, and cried, 'Oh my God, that's my son!' Who was this nurse? This puzzle takes advantage of the fact that in our culture ⓔ<u>nurses is usually women</u>. This assumption, however, contradicts the story that John's mother had just died. When you finally",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓔ: 'nurses is usually women' → 'nurses are usually women' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-16T13:02:50.261Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.8,
+    "D": -0.5,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.50)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] This assumption, however, contradicts the story that John's mother had just died.\n\nCHAPTER 2 Markedness and Blocking Why is it odd to say *'a female nurse', while it is reasonable to say 'a male nurse'? If you point to your thumb and ask 'Is this a finger?' you will probably not get a 'Yes' answer. You can then ask 'How many fingers do you have?' and will almost certainly get an answer of 'Ten'. Is language really so illogical? Let us begin with a parody of a familiar puzzle. One day, John went shopping with his mother. On the way their car was hit by a truck and his mother was killed. John was seriously injured and taken to a hospital in an ambulance. ( ① ) One of the nurses in the emergency room was startled, and cried, 'Oh my God, that's my son!' ( ② ) Who was this nurse? ( ③ ) This puzzle takes advantage of the fact that in our culture nurses are usually women. ( ④ ) When you finally ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: 학생은 '①'에 주어진 문장이 들어가면 문맥상 'John 의 어머니가 죽은 후 병원으로 이송된 상황'과 이어지지 않아 앞뒤가 맞지 않는다는 점은 인식했지만, 'nurse'가 여성으로 상정되는 문화적 배경이 '이후'에야 드러난다는 사실(④)을 놓쳤다. → 처방: 문장의 'nurse'가 여성으로 여겨지는 문화적 배경을 설명하는 부분을 찾으려면 'nurse'가 여성으로 통상 여겨지는 시점(④)을 기준으로 삼아야 한다.\n② 진단: 학생은 '②'에 주어진 문장이 들어가면 'John 의 어머니가 죽은 후 병원에서 만난 nurse'가 '그의 어머니'라고 오해할 수 있지만, 정작 'nurse'가 여성으로 여겨지는 문화적 배경이 드러나는 부분(④)을 보지 못했다. → 처방: 문장의 'nurse'가 여성으로 통상 여겨지는 이유를 설명하는 부분을 먼저 찾아야 한다. 그 이유는 ④에 있다.\n③ 진단: 학생은 '③'에 주어진 문장이 들어가면 '누가 그 nurse 인가?'라는 질문이 자연스럽다고 생각했지만, 정작 'nurse'가 여성으로 여겨지는 문화적 배경이 드러나는 부분(④)을 보지 못해 오류를 범했다. → 처방: 문장의 'nurse'가 여성으로 통상 여겨지는 이유를 설명하는 부분을 먼저 찾아야 한다. 그 이유는 ④에 있다.\n⑤ 진단: 학생은 '⑤'에 주어진 문장이 들어가면 '결국'이라는 말이 자연스럽다고 생각했지만, 정작 'nurse'가 여성으로 여겨지는 문화적 배경이 드러나는 부분(④)을 보지 못해 오류를 범했다. → 처방: 문장의 'nurse'가 여성으로 통상 여겨지는 이유를 설명하는 부분을 먼저 찾아야 한다. 그 이유는 ④에 있다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-16T11:36:14.862Z",
    "type": "혼합통합형",
@@ -280,60 +334,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'Polarity items are licensed in downward-entailing environments.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Polarity items are licensed in downward-entailing environments.]\n[오답 진단·처방]\n① 진단: ‘Polarity items are restricted to contexts where entailment weakens propositions’에서 ‘weakens’를 ‘약화시킨다’로만 해석해 ‘downward entailment’의 방향성과 ‘negative expressions’의 조건을 모두 무시했다. 지문 (47)과 (48)에서 ‘NPI licensing environments = downward-entailing environments’라고 분명히 밝혔으므로, ‘weakens’이 entailment 의 방향성을 가리키는 용어라는 점을 놓쳤다. → 처방: ‘entailment weakens’를 ‘downward entailment’의 정의로 이해하고, 지문에서 ‘negative expressions’의 조건이 포함된다는 점을 다시 한 번 확인하라.\n② 진단: ‘Polarity items weaken propositions by restricting entailment contexts’를 ‘propositions 자체를 약화시킨다’로 오해해 ‘weakens’의 방향성과 ‘restricting’의 의미를 혼동했다. 지문은 entailment 의 방향성(upward/downward)에 따라 polarity items 가 ‘허용되는지 여부’가 결정된다고 설명했는데, 이를 propositions 의 강도 변화로 잘못 읽었다. → 처방: ‘weaken’이라는 단어가 entailment 의 방향성을 가리키는 기술어라는 점을 기억하고, 지문에서 ‘NPI licensing environments = downward-entailing environments’라고 명시된 부분을 다시 읽어라.\n④ 진단: ‘Polarity items always occur in upward-entailing environments without exception’을 선택했는데, 지문 (48)에서 ‘NPI licensing environments’는 ‘downward-entailing environments’라고 명시되어 있어 모순임을 간과했다. ‘upward entailment’은 polarity items 가 ‘허용되지 않는’ 환경임을 지문에서 분명히 했다. → 처방: 지문 (48)의 ‘NPI licensing environments = downward-entailing environments’를 정확히 기억하고, ‘upward entailment’은 polarity items 가 나타나지 않는 환경임을 다시 확인하라.\n⑤ 진단: ‘Polarity items are licensed in all entailment environments regardless of direction’를 선택했는데, 지문 (48)에서 polarity items 가 ‘downward-entailing environments’에서만 ‘허용’된다고 명시된 부분을 무시했다. ‘all entailment environments’라고 과장해 해석했다. → 처방: 지문 (48)의 ‘exactly the downward-entailing environments’라는 표현을 정확히 기억하고, polarity items 가 ‘downward entailment’에서만 ‘허용’된다는 점을 다시 한 번 확인하라."
-   }
-  },
-  {
-   "ts": "2026-08-16T04:51:41.719Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'environments', 'entailment', 'Negative' / 10~14단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Negative polarity items are only allowed in environments that support downward entailment.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-16T04:04:04.533Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Quiz 1-4 A. Fill in each blank with the correct letter: a. grave b. gravitate c. gravitas d. aggravate e. alleviate f. cantilever g. levity h. elevation 1. Even the smallest motion would ___ the pain in his shoulder. 2. She hesitated to step onto the balcony, which was supported by a single ___. 3. At their father's funeral they showed the same solemn ___ at which they had often laughed during his lifetime. 4. To relieve the swelling, the doctor recommended ___ of her legs several times a day. 5. Attracted magically by the music, all animals and natural objects would ___ toward the sound of Orpheus's lyre. 6. With the two armies moving toward the border, they knew the situation was ___. 7. The neighboring nations organized an airlift of supplies to ___ the suffering caused by the drought. 8. The board meeting ended in an unusual mood of ___ when <u>a man in a gorilla suit burst in</u>. Answers",
-    "choices": [
-     "A person dressed as a gorilla came into the space, indicating the start of an important event.",
-     "Because the formal proceedings were disrupted, a man in a gorilla suit burst in to relieve the tension.",
-     "The man dressed in a gorilla costume entered the room quietly, causing no disruption to the ongoing formal meeting.",
-     "The unexpected and absurd interruption disrupted the formal proceedings and brought an unplanned, humorous relief to the tense atmosphere.",
-     "A man in a gorilla suit occasionally entered the room to provide a momentary distraction from the serious discussions."
-    ],
-    "answer": 4,
-    "explanation": "밑줄 친 부분은 'The unexpected and absurd interruption disrupted the formal proceedings and brought an unplanned, humorous relief to the tense atmosphere.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'levity'는 '무거운 분위기를 가볍게 하다'는 뜻인데, 이 선지는 '중요한 행사가 시작됐다'는 뜻으로 오해한 것 같다. 'levity'가 '장례식' 같은 무거운 자리에서도 쓰인다는 점을 놓쳤다. → 처방: 단어의 의미를 정확히 기억하고, 문맥(장례식)에서의 'levity'가 어떤 효과를 내는지 생각해보기.\n② 진단: 지문에서 'levity'는 '장례식' 같은 무거운 자리에서 '장례식 분위기를 가볍게 하다'는 뜻인데, 이 선지는 '장례식을 방해한 이유'로 오해한 것 같다. 'levity'가 '장례식' 자체를 방해한 것이 아니라 분위기를 가볍게 했다는 점을 놓쳤다. → 처방: 문맥에서 'levity'가 어떤 효과를 내는지 정확히 짚고, 그 효과가 왜 '장례식' 같은 무거운 자리에서 쓰이는지 생각해보기.\n③ 진단: 지문에서 'levity'는 '장례식' 같은 무거운 자리에서 '장례식 분위기를 가볍게 하다'는 뜻인데, 이 선지는 '장례식을 방해한 이유'로 오해한 것 같다. 'levity'가 '장례식' 자체를 방해한 것이 아니라 분위기를 가볍게 했다는 점을 놓쳤다. → 처방: 문맥에서 'levity'가 어떤 효과를 내는지 정확히 짚고, 그 효과가 왜 '장례식' 같은 무거운 자리에서 쓰이는지 생각해보기.\n⑤ 진단: 지문에서 'levity'는 '장례식' 같은 무거운 자리에서 '장례식 분위기를 가볍게 하다'는 뜻인데, 이 선지는 '장례식을 방해한 이유'로 오해한 것 같다. 'levity'가 '장례식' 자체를 방해한 것이 아니라 분위기를 가볍게 했다는 점을 놓쳤다. → 처방: 문맥에서 'levity'가 어떤 효과를 내는지 정확히 짚고, 그 효과가 왜 '장례식' 같은 무거운 자리에서 쓰이는지 생각해보기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
