@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-15T23:40:54.135Z",
+ "updated": "2026-08-16T01:59:54.391Z",
  "samples": [
+  {
+   "ts": "2026-08-16T01:59:20.632Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Tense: Finite auxiliary and main verbs in English show a binary (two-way) tense contrast, t____________ said to be between present tense forms and past tense forms. Thus, in ‘John hates syntax’, hates is a present tense verb form, whereas in ‘John hated syntax’, hated is a past tense verb form (An alternative classification which many linguists prefer is into [±PAST] verb forms, so that hated is [+PAST], and hates [-PAST]). This present/past tense distinction correlates (to some extent) with time-reference, so that (e.g.) past tense verbs typically describe an event taking place in the past, whereas present-tense verbs typically describe an event taking place in the present (or future). However, the correlation is an imperfect one, since e.g. in a sentence such as ‘I might go there tomorrow’, the auxiliary might carries the past tense inflection -t (found on past tense main verbs like left) but does not denote past time.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] traditionally — 문단의 논지상 이 자리에는 'traditionally'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-15T23:36:25.624Z",
    "type": "요지",
@@ -329,41 +348,6 @@
     ],
     "answer": 5,
     "explanation": "빈칸에는 'strikingly resemble'가 들어가 글의 논지를 완성한다 (본문 'bear a striking resemblance to'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘remain completely unknown’는 ‘전혀 알려지지 않다’라는 뜻으로, ‘닮음’을 나타내는 ‘resemble’이 들어간 문장과는 전혀 관련이 없음. ‘look his/her age’(자신의 나이 그대로 보이다)와 헷갈렸을 수 있음. → 처방: ‘닮음’을 나타내는 동사(resemble, look like 등)를 찾고, 문맥에 맞게 ‘닮음의 정도’를 나타내는 부사(strikingly, slightly 등)를 함께 확인하기.\n② 진단: ‘bear little resemblance to’는 ‘거의 닮지 않다’라는 뜻으로, ‘닮음’을 나타내는 문장과 반대 의미가 됨. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 문장과 반대 의미를 나타내는 문장을 구분하고, 빈칸 앞뒤의 문맥(‘Zoë가 동의하는 말’을 넣어야 함)을 꼼꼼히 읽기.\n③ 진단: ‘look nothing like’는 ‘전혀 닮지 않다’라는 뜻으로, ‘닮음’을 나타내는 문장과는 반대 의미가 됨. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 동사(resemble, look like 등)와 ‘닮지 않다’를 나타내는 표현(look nothing like, bear little resemblance to 등)을 정리하고, 문맥에 맞게 선택하기.\n④ 진단: ‘slightly differ from’는 ‘약간 다르다’라는 뜻으로, ‘닮음’을 나타내는 문장과는 관련이 없음. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 문장과 ‘차이’를 나타내는 문장을 구분하고, 빈칸에 들어갈 말이 ‘Zoë가 동의하는 말’이어야 한다는 점을하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T14:42:09.878Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "emotions that shift from frustration to relief",
-     "words that are commonly misused in writing",
-     "pairs of words that always appear in the same order",
-     "specific words that frequently repeat in sentences",
-     "phrases that frequently co-occur in language"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Collocations are word pairs or phrases that frequently co-occur in language.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 핵심 조건·전제를 빠뜨림· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘frustration(좌절)’와 ‘relief(안도)’라는 감정이 동일 인물 ‘I’의 심경 변화로 오해했는데, 지문은 Nell 과 Zoë의 대화로만 구성되어 있어 ‘I’의 감정 변화가 전혀 나타나지 않음. → 처방: 문제에서 ‘I’의 심경 변화가 언급된 경우에만 그 감정을 찾아야 함. 지문에 그런 언급이 없으면 다른 선지를 우선 검토할 것.\n② 진단: ‘흔히 오용되는 단어’로 오해했는데, 지문은 ‘collocations(관용 표현)’과 관련된 문제로, 단어의 오용이 아니라 ‘자주 함께 쓰이는 단어 묶음’을 다룸. → 처방: ‘collocations’라는 용어가 나오면 ‘자주 함께 쓰이는 단어 조합’을 떠올리고, 선지 ③④⑤ 중 ‘자주 함께 쓰이는 단어’ 관련 표현을 먼저 확인할 것.\n③ 진단: ‘항상 같은 순서로 등장하는 단어 쌍’으로 오해했는데, 지문은 ‘collocations’이란 단어 자체가 ‘자주 함께 쓰이는 단어 묶음’을 의미하며, 순서가 고정된 단어 쌍을 가리키는 말이 아님. → 처방: ‘collocations’를 ‘항상 같은 순서로 나오는 단어’로 오해하지 말고, ‘자주 함께 쓰이는 단어 묶음’이라는 뜻을 기억할 것.\n④ 진단: ‘문장에서 자주 반복되는 특정 단어’로 오해했는데, 지문은 ‘collocations’로, ‘자주 함께 쓰이는 단어 묶음’을 의미하며, 개별 단어의 반복과는 무관함. → 처방: ‘collocations’를 ‘단어의 반복’으로 오해하지 말고, ‘단어와 단어가 결합된 표현’을 떠올릴 것.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Collocations are word pairs or phrases that frequently co-occur in language.]"
    }
   }
  ]
