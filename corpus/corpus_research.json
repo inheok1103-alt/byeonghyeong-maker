@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T13:03:29.805Z",
+ "updated": "2026-08-16T13:50:26.455Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T13:49:53.785Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거형 동사(choosed, used)와 현재형 동사(means)가 혼용된 오류가 빈번하며, 명사구(noun phrase) 내 한정사(middle english, few)의 위치·형태 오류가 자주 발생한다.",
+   "rule": "과거 시제 동사는 '-ed' 규칙·불규칙형을 정확히 구분하여 사용하며, 명사구 내 한정사는 명사 앞에 위치하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T13:03:00.591Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "‘focus in’ → ‘focus on’(연어 오류), ‘consume’(동사) → ‘car’(명사) 생략 오류, ‘clear in’ → ‘clearly is’(어순·형용사→부사 전환) 등 다층적 오류가 빈발한다.",
    "rule": "‘focus on’, ‘care about’, ‘support’ 등 전치사 필수 동사 뒤에는 명사/명사구만 오며, 동사 원형(consume)이나 전치사(in) 오용을 배제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T16:14:08.598Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거분사(過去分詞)나 수동태 구문에서 대명사 위치가 오류로 자주 발생하며, 특히 'that'절 내의 수동태에서 대명사 주격이 누락되는 패턴이 두드러진다.",
-   "rule": "수동태 문장에서 'that'절 내 대명사 주격을 생략하지 않도록 하며, 특히 'had marked on it' → 'it had marked on it'과 같이 대명사를 주어로 명시적으로 삽입하는 패턴을 오답으로 설계하라.",
    "sample": [
     "old english",
     "university press",

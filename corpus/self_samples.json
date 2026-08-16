@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-16T13:03:29.809Z",
+ "updated": "2026-08-16T13:50:26.459Z",
  "samples": [
+  {
+   "ts": "2026-08-16T13:46:49.548Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "To make a (A) [cursory / thorough] attempt at learning French is to memorize a couple of easy words and then give up. (B) [CURTAIL / prolong] (kur TAYL) v to shorten; to cut short • The vet curtailed her effort to cut the cat’s tail with the lawn mower. That is, she stopped trying. To curtail a tale is to cut it short. (C) [CYNIC / optimist] (SIN ik) n one who deeply distrusts human nature; one who believes humans are motivated only by selfishness • When the pop star gave a million dollars to the museum, cynics said he was merely trying to buy himself a reputation as a cultured person. To be cynical is to be extremely suspicious of the motivations of other people. Cynicism is general grumpiness and pessimism about human nature. Quick Quiz #29 Match each word in the first column with its definition in the second column. Check your answers here. 1. culpable a. free from guilt 2. exculpate b. shorten 3. cursory c. one who distrusts humanity 4. curtail d. hasty 5. cynic e. guilty D",
+    "choices": [
+     "(A) thorough - (B) CURTAIL - (C) optimist",
+     "(A) cursory - (B) CURTAIL - (C) optimist",
+     "(A) cursory - (B) CURTAIL - (C) CYNIC",
+     "(A) cursory - (B) prolong - (C) CYNIC",
+     "(A) cursory - (B) prolong - (C) optimist"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) cursory - (B) CURTAIL - (C) CYNIC. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A) thorough’를 ‘충분한 노력’을 뜻하는 것으로 오해한 듯하다. 지문에서 ‘cursory’는 ‘대충 하는’ 뜻으로, ‘시시한 단어 몇 개 외우고 포기하는’ 행동을 설명한다. → 처방: ‘cursory’는 ‘대충 하는’, ‘thorough’는 ‘철저한’이므로 문맥에 맞게 ‘cursory’를 써야 한다.\n② 진단: ‘(B) CURTAIL’을 ‘줄이다’라는 뜻으로만 알고 ‘prioritize’를 떠올린 듯하다. 지문에서 ‘cursory attempt’을 ‘give up’으로 연결하므로 ‘prioritize’가 아니라 ‘prioritize’를 반대하는 ‘prioritize’를 줄이는 ‘CURTAIL’이 와야 한다. → 처방: ‘CURTAIL’의 뜻 ‘줄이다’를 정확히 기억하고, 문맥에서 ‘시도를 줄이는 것’이 맞는지 확인한다.\n④ 진단: ‘(C) CYNIC’을 ‘인간을 믿지 않는 사람’으로 오해하지 못하고 ‘optimist’를 선택한 듯하다. 지문에서 ‘cynic’이 ‘인간은 이기적’이라는 믿음을 가진 사람을 뜻함을 확인할 수 있다. → 처방: ‘CYNIC’의 뜻을 정확히 기억하고, ‘인간을 믿지 않는 사람’이 문맥에 맞는지 확인한다.\n⑤ 진단: ‘(B) prolong’을 ‘길게 하다’라는 뜻으로만 알고 ‘prioritize’를 떠올렸다. 지문에서 ‘give up’을 연상할 수 있는 ‘prioritize’를 줄이는 ‘CURTAIL’이 와야 한다. → 처방: ‘prioritize’를 ‘길게 하다’로 오해하지 말고, 문맥에서 ‘시도를 줄이는 것’이 맞는지 확인한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-16T13:02:29.000Z",
    "type": "틀린문장 고쳐쓰기",
@@ -300,40 +335,6 @@
     ],
     "answer": 3,
     "explanation": "원문 전개 순서는 (B) - (C) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①(A) 다음에 (C)가 오면 지문의 흐름이 '범위 연산자 표기법' → 'NPI 환경' → '연습 문제'로 이어지지 않고, 예시와 연습 문제가 뒤섞여 논리적 흐름이 깨진다. (A)는 '제한된 범위 연산자' 예시, (C)는 '연습 문제'로 분류되어 있다. → 처방: 지문 구조를 주의 깊게 읽고, 각 부분이 어떤 역할을 하는지(예시/설명/연습 문제) 구분한 뒤 순서를 정하라.\n② 진단: ②(B) 다음에 (A)가 오면 지문의 'NPI 환경' 설명(48)이 '범위 연산자 표기법' 예시(47)보다 먼저 나오는데, 이는 논리적 순서가 아니다. (B)는 'NPI 환경'을 설명하는 부분으로, (A)보다 뒤에 와야 한다. → 처방: 지문의 각 부분이 어떤 내용을 다루는지 제목을 확인하고, 설명 → 예시 → 연습 문제 순으로 흐름을 잡아라.\n④ 진단: ④(C) 다음에 (A)가 오면 '연습 문제'가 '예시'보다 먼저 나오는데, 이는 학습의 논리적 흐름을 거스른다. (A)는 '범위 연산자 표기법'의 기본 예시, (C)는 '연습 문제'로 분류되어 있어 순서가 맞지 않다. → 처방: 각 부분의 역할을 정확히 파악하고, '기본 설명 → 예시 → 연습 문제' 순으로 순서를 정하라.\n⑤ 진단: ⑤(C) 다음에 (B)가 오면 '연습 문제'가 'NPI 환경 설명'보다 먼저 나오는데, 이는 설명이 예시보다 뒤에 오는 논리적 흐름을 무시한 선택이다. (B)는 'NPI 환경'을 설명하는 부분으로, (C)보다 뒤에 와야 한다. → 처방: 지문의 각 섹션이 어떤 내용을 다루는지 확인하고, 설명 → 예시 → 연습 문제 순으로 흐름을 잡아라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T04:51:37.024Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(63%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Polarity items are restricted to contexts where entailment weakens propositions",
-     "Polarity items weaken propositions by restricting entailment contexts",
-     "Polarity items appear only in downward-entailing contexts for negative expressions",
-     "Polarity items always occur in upward-entailing environments without exception",
-     "Polarity items are licensed in all entailment environments regardless of direction"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Polarity items are licensed in downward-entailing environments.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Polarity items are licensed in downward-entailing environments.]\n[오답 진단·처방]\n① 진단: ‘Polarity items are restricted to contexts where entailment weakens propositions’에서 ‘weakens’를 ‘약화시킨다’로만 해석해 ‘downward entailment’의 방향성과 ‘negative expressions’의 조건을 모두 무시했다. 지문 (47)과 (48)에서 ‘NPI licensing environments = downward-entailing environments’라고 분명히 밝혔으므로, ‘weakens’이 entailment 의 방향성을 가리키는 용어라는 점을 놓쳤다. → 처방: ‘entailment weakens’를 ‘downward entailment’의 정의로 이해하고, 지문에서 ‘negative expressions’의 조건이 포함된다는 점을 다시 한 번 확인하라.\n② 진단: ‘Polarity items weaken propositions by restricting entailment contexts’를 ‘propositions 자체를 약화시킨다’로 오해해 ‘weakens’의 방향성과 ‘restricting’의 의미를 혼동했다. 지문은 entailment 의 방향성(upward/downward)에 따라 polarity items 가 ‘허용되는지 여부’가 결정된다고 설명했는데, 이를 propositions 의 강도 변화로 잘못 읽었다. → 처방: ‘weaken’이라는 단어가 entailment 의 방향성을 가리키는 기술어라는 점을 기억하고, 지문에서 ‘NPI licensing environments = downward-entailing environments’라고 명시된 부분을 다시 읽어라.\n④ 진단: ‘Polarity items always occur in upward-entailing environments without exception’을 선택했는데, 지문 (48)에서 ‘NPI licensing environments’는 ‘downward-entailing environments’라고 명시되어 있어 모순임을 간과했다. ‘upward entailment’은 polarity items 가 ‘허용되지 않는’ 환경임을 지문에서 분명히 했다. → 처방: 지문 (48)의 ‘NPI licensing environments = downward-entailing environments’를 정확히 기억하고, ‘upward entailment’은 polarity items 가 나타나지 않는 환경임을 다시 확인하라.\n⑤ 진단: ‘Polarity items are licensed in all entailment environments regardless of direction’를 선택했는데, 지문 (48)에서 polarity items 가 ‘downward-entailing environments’에서만 ‘허용’된다고 명시된 부분을 무시했다. ‘all entailment environments’라고 과장해 해석했다. → 처방: 지문 (48)의 ‘exactly the downward-entailing environments’라는 표현을 정확히 기억하고, polarity items 가 ‘downward entailment’에서만 ‘허용’된다는 점을 다시 한 번 확인하라."
    }
   }
  ]
