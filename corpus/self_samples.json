@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-16T01:59:54.391Z",
+ "updated": "2026-08-16T03:15:35.250Z",
  "samples": [
+  {
+   "ts": "2026-08-16T03:13:54.910Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: r)\n[영영풀이] To present again or anew; to present by means of something standing in the place of; to exhibit the counterpart or image of; to typify.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] represents (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-16T03:14:37.219Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "전통적 통사 이론의 대등 결합 구조가 하위 지배 구조를 내포한다는 점",
+     "X-bar 이론의 하위 지배 구조가 전통적 통사 이론의 대등 결합을 필연적으로 배제한다는 점",
+     "통사 구조의 비대칭성이 모든 이론에서 공통 요구사항이라는 점",
+     "X-bar 이론의 하위 지배 구조가 전통적 통사 이론의 대등 결합과 양립 불가능하다는 점",
+     "전통적 통사 이론의 대등 결합 구조가 하위 지배 원칙에 따라 재구성되어야 한다는 점"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'The traditional notion of coordination conflicts with X-bar theory's sub-ordinative structure.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: ‘하위 지배 구조’를 ‘대등 결합 구조가 내포한다’는 식으로 오독했는데, 지문은 X-bar 이론이 하위 지배 구조를 내포하고 전통적 통사 이론의 대등 결합과는 양립하지 않는다고 설명함. → 처방: ‘하위 지배 구조’라는 개념이 어떤 이론의 특징인지 정확히 짚고, 전통적 통사 이론과 X-bar 이론의 차이를 비교하며 읽기.\n② 진단: ‘X-bar 이론의 하위 지배 구조가 전통적 통사 이론의 대등 결합을 필연적으로 배제한다’는 선지를 ‘필연적’이라는 표현 때문에 선택했는데, 지문은 ‘양립 불가능’이라는 표현을 사용함. → 처방: ‘필연적’이라는 단어의 의미를 정확히 파악하고, 지문에서 사용된 ‘양립 불가능’이라는 용어를 주의 깊게 확인하기.\n③ 진단: ‘통사 구조의 비대칭성’이 모든 이론에서 공통 요구사항인 것처럼 오독했는데, 지문은 X-bar 이론의 비대칭성이 전통적 통사 이론의 대등 결합과 맞지 않음을 지적함. → 처방: ‘비대칭성’이라는 개념이 어떤 이론에서 어떤 의미를 갖는지 명확히 구분하고, 지문의 대조를 정확히 이해하기.\n⑤ 진단: ‘전통적 통사 이론의 대등 결합 구조가 하위 지배 원칙에 따라 재구성되어야 한다’는 선지를 선택했는데, 지문은 전통적 통사 이론의 대등 결합이 X-bar 이론의 하위 지배 구조와 양립하지 않음을 강조함. → 처방: ‘재구성’이라는 단어가 지문에서 사용된 맥락과 다른지 확인하고, 지문의 핵심 주장(양립 불가능)을 정확히 파악하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The traditional notion of coordination conflicts with X-bar theory]"
+   }
+  },
   {
    "ts": "2026-08-16T01:59:20.632Z",
    "type": "첫글자어휘",
@@ -294,60 +348,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T15:43:14.963Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 본 연구는 복잡한 의사소통에서 목표에 영향을 미치기 위해 단서가 어떻게 상호 작용하는지 살펴본다.\n주어진 단어: ( study / examines / interact )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] This study examines how cues interact to influence targets in complex communication. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-15T14:41:34.936Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Exercises 95 English Collocations in Use Advanced Match words from each box to form collocations from the opposite page. Then match them to 1–6 below. blank gruff striking cool stubborn bubbly 1 two things or people which look very similar 2 a very lively person 3 a person’s face which shows no emotion 4 when someone is being inflexible 5 an apparently rude and unfriendly personality 6 a rather unfriendly welcome Which of these things that people say would usually be compliments? 1 He/She certainly looks his/her age. 5 He/She has a very abrasive manner. 2 He/She’s downright rude. 6 He/She has a warm smile. 3 He/She’s bursting with energy. 7 He/She’s full of pent-up anger. 4 He/She has a bubbly personality. 8 He/She has boundless energy. Complete this conversation using collocations from the box in the appropriate form so that Nell always agrees with Zoë. ____",
-    "choices": [
-     "remain completely unknown",
-     "bear little resemblance to",
-     "look nothing like",
-     "slightly differ from",
-     "strikingly resemble"
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 'strikingly resemble'가 들어가 글의 논지를 완성한다 (본문 'bear a striking resemblance to'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘remain completely unknown’는 ‘전혀 알려지지 않다’라는 뜻으로, ‘닮음’을 나타내는 ‘resemble’이 들어간 문장과는 전혀 관련이 없음. ‘look his/her age’(자신의 나이 그대로 보이다)와 헷갈렸을 수 있음. → 처방: ‘닮음’을 나타내는 동사(resemble, look like 등)를 찾고, 문맥에 맞게 ‘닮음의 정도’를 나타내는 부사(strikingly, slightly 등)를 함께 확인하기.\n② 진단: ‘bear little resemblance to’는 ‘거의 닮지 않다’라는 뜻으로, ‘닮음’을 나타내는 문장과 반대 의미가 됨. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 문장과 반대 의미를 나타내는 문장을 구분하고, 빈칸 앞뒤의 문맥(‘Zoë가 동의하는 말’을 넣어야 함)을 꼼꼼히 읽기.\n③ 진단: ‘look nothing like’는 ‘전혀 닮지 않다’라는 뜻으로, ‘닮음’을 나타내는 문장과는 반대 의미가 됨. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 동사(resemble, look like 등)와 ‘닮지 않다’를 나타내는 표현(look nothing like, bear little resemblance to 등)을 정리하고, 문맥에 맞게 선택하기.\n④ 진단: ‘slightly differ from’는 ‘약간 다르다’라는 뜻으로, ‘닮음’을 나타내는 문장과는 관련이 없음. ‘strikingly resemble’(매우 닮다)와 혼동했을 수 있음. → 처방: ‘닮음’을 나타내는 문장과 ‘차이’를 나타내는 문장을 구분하고, 빈칸에 들어갈 말이 ‘Zoë가 동의하는 말’이어야 한다는 점을하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
