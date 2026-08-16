@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-16T05:53:25.307Z",
+ "updated": "2026-08-16T07:08:56.088Z",
  "samples": [
+  {
+   "ts": "2026-08-16T07:02:42.858Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 32번 빈칸 · B L A N K 장소를 바꿔 공부하기 빈칸 빈칸 = recall the material: 장소를 옮겨 공부한 쪽이 회상을 훨씬 잘함(실험 결론). 소재 장소를 바꿔 공부하기 Studying in different places 주제 장소를 바꿔 공부하면 기억이 강화된다 Varying study places strengthens memory 제목 장소를 바꾸면 더 잘 외운다 Study in Different Places to Remember Better 한눈에 장소를 바꿔 공부하면 다양성이 생겨 학습이 강화된다는 주장을 실험으로 뒷받침한다. 같은 방에서 두 번 공부한 집단보다 두 장소로 나눠 공부한 집단이 단어를 훨씬 잘 회상했다. 다양한 맥락이 풍부한 연상을 만들기 때문이다. 지문 전문 — 시험지 원문 Do you always study in the same spot? Don’t. If you study in different places, that helps create variety, and that rich experience can reinforce what you are learning. When several college students told us they did school work in different places rather than in some favorite nook, that habit reflected the research on learning. Numerous experiments have found that if learners simply study in at least two different places, they are more likely to ＿＿＿＿＿＿＿＿. In one of the first such trials, two different groups studied a list of words. Some students returned to the same room twice while their counterparts spent the same amount of time divided between two locations. When asked to recall as many words on the list as possible, those who had moved around did far better. Variety creates rich association, even when those connections form in the background, totally outside of what we are consciously thinking. * nook: 구석진 곳 ** counterpart: 상대 지문 전문 · 원문 그대로",
+    "choices": [
+     "장소를 옮겨 공부한 학생들이 같은 장소에서 공부한 학생들보다 단어를 더 적게 회상했다.",
+     "장소를 바꿔 공부하는 습관은 학습 연구 결과와 일치하지 않는다고 학생들이 말했다.",
+     "동일한 장소에서 두 번 공부한 집단은 두 장소로 나눠 공부한 집단보다 회상 능력이 떨어졌다.",
+     "장소의 변화는 의식 밖에서도 기억을 약화시키는 풍부한 연상을 만든다.",
+     "적어도 세 군데 장소에서 공부한 학습자들은 기억력이 향상되었다고 실험에서 밝혀졌다."
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 장소를 옮겨 공부한 학생들이 같은 장소에서 공부한 학생들보다 '단어를 더 적게 회상했다'는 부분에서 '회상'의 방향을 반대로 오독했다. 지문은 '더 많이 회상했다'고 명시되어 있다. → 처방: '회상'의 뜻을 정확히 확인하고, 지문에서 '더 많이'라는 비교급을 놓치지 말고 읽기.\n② 진단: '학습 연구 결과와 일치하지 않는다'는 부분에서 '일치하지 않는다'는 말을 '학습 연구 결과와 반대된다'로 혼동했다. 지문은 학생들의 습관이 연구 결과와 '일치한다'고 말한다. → 처방: 지문에서 학생들의 말('~that habit reflected the research on learning')을 그대로 받아쓰듯 읽고, '일치한다'와 '반대된다'를 구별하기.\n④ 진단: '기억을 약화시키는'이라는 표현을 '기억을 강화시키는'으로 오독했다. 지문은 '기억을 강화시킨다'고 설명한다. → 처방: '강화'와 '약화'의 의미를 정확히 구분하고, 지문에서 'reinforce'라는 단어를 눈여겨보기.\n⑤ 진단: '적어도 세 군데 장소'라는 구체적 수치를 지문에 없음에도 '세 군데'라고 단정했다. 지문은 '적어도 두 군데'만 언급한다. → 처방: 지문에 나오는 수치(예: 'at least two different places')를 정확히 기억하고, '적어도'라는 표현이 포함된 문장은 수치를 꼼꼼히 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-16T07:08:16.489Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 32번 빈칸 · B L A N K 장소를 바꿔 공부하기 빈칸 빈칸 = recall the material: 장소를 옮겨 공부한 쪽이 회상을 훨씬 잘함(실험 결론). ① 소재 장소를 바꿔 공부하기 Studying in different places 주제 장소를 바꿔 공부하면 기억이 강화된다 Varying study places strengthens memory 제목 장소를 바꾸면 더 잘 외운다 Study in Different Places to Remember Better 한눈에 장소를 바꿔 공부하면 다양성이 생겨 학습이 강화된다는 주장을 실험으로 뒷받침한다. ② 같은 방에서 두 번 공부한 집단보다 두 장소로 나눠 공부한 집단이 단어를 훨씬 잘 회상했다. ③ Places with natural light can reduce eye strain and improve concentration during long study sessions. ④ 다양한 맥락이 풍부한 연상을 만들기 때문이다. ⑤ 지문 전문 — 시험지 원문 Do you always study in the same spot? If you study in different places, that helps create variety, and that rich experience can reinforce what you are learning. When several college students told us they did school work in different places rather than in some favorite nook, that habit reflected the research on learning. Numerous experiments have found that if learners simply study in at least two different places, they are more likely to ＿＿＿＿＿＿＿＿. In one of the first such trials, two different groups studied a list of words. Some students returned to the same room twice while their counterparts spent the same amount of time divided between two locations. When asked to recall as many words on the list as possible, those who had moved around did far better. Variety creates rich association, even when those connections form in the background, totally outside of what we are consciously thinking. * nook: 구석진 곳 ** counterpart: 상대 지문 전문 · 원문 그대로",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①의 제목은 '소재 장소를 바꿔 공부하기'로 장소를 바꿔 공부하는 것이 기억에 좋다는 주제와 어울리지만, ②~⑤는 모두 장소를 바꿔 공부할 때의 이점이나 근거를 담고 있는 반면 ①은 제목만 제시되어 있어 흐름에서 벗어나 있다. → 처방: 제목으로만 구성된 문장은 지문의 주제 흐름에 맞게 구체적인 근거나 설명이 있어야 한다. 유사 선지를 볼 때는 제목인지 내용인지 먼저 확인하고, 내용이 없으면 제외하는 습관을 들이자.\n② 진단: ②는 실험 결과를 설명하는 문장으로, 지문의 핵심 주장(장소를 바꿔 공부하면 기억이 좋아진다)을 뒷받침하는 중요한 근거다. 흐름에서 벗어난 것은 아니다. → 처방: 이미 정답이 아니므로 넘어가도 좋다. 다만 오답 중에도 흐름을 돕는 문장이 있을 수 있으니, 무조건 버리기보다는 '이 문장이 없으면 어떤 점이 부족한지'를 생각해 보도록 하자.\n④ 진단: ④는 '다양한 맥락이 풍부한 연상을 만들기 때문이다'로, 장소를 바꿀 때의 이점(다양한 경험이 기억을 강화한다는 주제)을 설명하는 문장이다. 흐름에서 벗어난 것은 아니다. → 처방: ④도 흐름을 돕는 문장이므로 오답 선지를 고를 때는 '이 문장이 빠지면 주제가 약해지는가?'를 생각해 보자. 약해지지 않는다면 그 선지는 제외 대상이다.\n⑤ 진단: ⑤는 지문 전문(원문 그대로)을 보여주는 문장으로, 실험 결과와 주장을 제시하는 핵심 부분이다. 흐름에서 벗어난 것은 아니다. → 처방: ⑤는 지문의 핵심 Evidence(증거)이므로, 오답 선지를 고를 때는 '이 문장이 없으면 주장이 설득력이 떨어지는가?'를 기준으로 삼자.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-16T05:52:48.118Z",
    "type": "장문세트",
@@ -280,65 +350,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Environmentalists' efforts to protect species and habitats through advocacy and legislation'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘법률과 옹호가 야생동물과 서식지 파괴의 원인이라는 선지’를 골랐다면, 지문에서 ‘환경운동가들이 정치인들에게 보전법안을 통과시키도록 압력을 가하는 것’이 보호를 위한 노력임을 놓쳤음. 지문 4~5행에 ‘이러한 제안된 법들은 사업에 부담을 준다고 여겨지지만, 이는 보호 노력의 일환’이라는 뜻이 있음. → 처방: ‘보호 노력’이란 단어와 문맥을 정확히 짚고, ‘원인’이 아니라 ‘결과’로 해석하지 않도록 주의할 것.\n③ 진단: ‘옹호만으로 멸종 위기종을 보호하려는 노력’을 골랐다면, 지문에서 ‘환경운동가들이 많은 사람들을 설득해 정치인들에게 압력을 가하는 것’이 보호를 위한 ‘다양한 노력’ 중 하나임을 놓쳤음. 지문 4~5행에 ‘많은 사람들을 설득하는 것’이 포함된 전체 흐름을 이해하지 못함. → 처방: ‘단지 옹호만’이라고 해석하지 말고, 지문에 나타난 ‘압력’과 ‘법률’ 같은 ‘다양한 방법’이 포함된 efforts 임을 확인할 것.\n④ 진단: ‘모든 멸종 위기종을 보호하기 위한 환경법의 보편적 필요성’을 골랐다면, 지문에서 ‘모든’ 멸종 위기종을 보호해야 한다는 내용이 없음을 놓쳤음. 지문은 ‘희귀한 동물과 새’를 보호하려는 노력에 초점을 맞추고 있지만, ‘모든’ 멸종 위기종을 보호해야 한다는 보편적 필요성은 언급하지 않음. → 처방: ‘모든’이라는 절대적 표현이 지문에 있는지 확인하고, 지문의 한정된 범위를 정확히 파악할 것.\n⑤ 진단: ‘서식지 손실이나 오염 요인을 무시하고 종을 보호하려는 노력’을 골랐다면, 지문에서 ‘삼림 손실이나 수질 오염으로 인한 파괴로부터 이들 동물을 보호하려는 노력’을 언급한 부분을 놓쳤음. 지문 3~4행에 ‘삼림 손실이나 수질 오염’이라는 구체적 요인이 포함된 보호 노력이 있음. → 처방: 지문에 나타난 ‘삼림 손실’과 ‘수질 오염’이 보호 노력의 ‘원인’이 아니라 ‘대상’이라는 점을 정확히 짚고, 이 요인들을 무시하지 않도록 주의할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Environmentalists]"
-   }
-  },
-  {
-   "ts": "2026-08-15T22:40:06.405Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "You’ll learn even more if you ⓐ<u>use your imaginations</u> to make the backs of your flashcards a bit more elaborate. For example, you might decorate the back of this card with a diagram of ⓑ<u>oblique lines</u>—that is, lines that are ⓒ<u>neither parallels nor perpendiculars</u> to each other. Back Your diagram now gives you a ⓓ<u>mental image</u> that can help you remember the word. You’ll probably think of your own mental image, one that means something to you. You could even use the word itself to create a picture that conveys the meaning of the word and that will stick in your mind to help you remember it. Here’s one possibility. We’ve ⓔ<u>divided the word into two part</u> and written them on two different lines that are at an oblique angle to each other. Back",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓐ(use your imaginations → use your imagination), ⓒ(neither parallels nor perpendiculars → neither parallel nor perpendicular), ⓔ(divided the word into two part → divided the word into two parts) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘use your imaginations’를 ‘use your imagination’으로 오독했을 가능성이 큼. ‘imagination’이 ‘상상력’이라는 뜻으로 단수형이 자연스럽지만, 학생은 ‘상상력들’이라는 복수형으로 혼동했을 수 있음. → 처방: ‘imagination’이 ‘상상력’이라는 뜻임을 기억하고, 단수형으로 쓰는 연습을 반복할 것.\n② 진단: ‘oblique lines’를 ‘oblique line’으로 오독했을 가능성이 있음. 지문에서 ‘lines’를 복수형으로 사용한 이유는 ‘여러 개의 기울어진 선’을 가리키기 때문임. → 처방: ‘oblique’는 ‘기울어진’이라는 뜻으로, 뒤에 오는 명사가 복수형일 때 ‘lines’를 쓰는 규칙을 익힐 것.\n④ 진단: ‘divided the word into two part’를 ‘divided the word into two parts’로 오독하지 않았을 가능성이 있음. ‘part’를 복수형 ‘parts’로 써야 하는데, 학생은 단수형으로 썼거나 복수형을 빼먹었을 수 있음. → 처방: ‘two’를 쓸 때는 뒤에 오는 명사를 복수형으로 쓰는 규칙을 기억하고, ‘part’를 ‘parts’로 고치도록 연습할 것.\n⑤ 진단: ‘divided the word into two part’를 ‘divided the word into parts’로 오독했을 가능성이 있음. ‘into two parts’가 맞지만, 학생은 ‘two’를 빼고 ‘into parts’로만 썼을 수 있음. → 처방: ‘into two parts’처럼 ‘two’를 반드시 포함해서 쓰는 습관을 들일 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T21:36:26.451Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답 재검토 권고 — 솔버 1/1가 5번 선택(기록 2번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.29,
-    "D": 0.5,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.29)",
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Given the assumptions we made in chapter 7, the bracketed TP in (32a) is (A) [selected / rejected] by the C-constituent that, and the head T of TP is the auxiliary has which carries a complete set of person/number agreement features. By contrast, the TP in the raising structure in (32b) is not selected by C, and its head T constituent to is (B) [defective / perfect] in that it does not carry a complete set of agreement features. Reasoning thus, Chomsky concludes that the person/number agreement features of T must originate on C, and subsequently ‘be (C) [divested / inherited] by’ or ‘be handed over to’, or ‘percolate down onto’ (three different metaphors expressing the same idea) the T constituent immediately beneath C. Chomsky argues that in the same way, the agreement features carried by a transitive V (which enable it to assign accusative case to a goal within its domain) are inherited from the light-verb which is the head of the relevant vP phase (transitive vPs being phases). One reason for thinking this can be illustrated in relation to the following contrast:",
-    "choices": [
-     "(A) rejected - (B) defective - (C) divested",
-     "(A) selected - (B) defective - (C) inherited",
-     "(A) rejected - (B) perfect - (C) inherited",
-     "(A) rejected - (B) defective - (C) inherited",
-     "(A) selected - (B) perfect - (C) divested"
-    ],
-    "answer": 2,
-    "explanation": "정답 조합: (A) selected - (B) defective - (C) inherited. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 (A)는 'C-constituent that'이 TP 를 '선택'한다고 나와 있는데, 학생은 이를 '거부'로 오독하여 선택된 상황을 반대로 이해했다. (B)는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 지문이 명시하지만, 학생은 '완전(perfect)'으로 오해했다. → 처방: 지문의 'selected/rejected'와 'defective/perfect' 구분을 정확히 읽고, '선택 vs 거부', '결함 vs 완전'의 의미를 문맥에서 확인한 뒤 답안을 선택할 것.\n③ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 거부한다고 지문에서 명시된 부분을 잘못 읽었다. (B)에서는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 이해하지 못하고 '완전(perfect)'으로 오해했다. → 처방: (A)는 지문에서 'selected'로 나와 있으니 '선택'을, (B)는 'defective'로 나와 있으니 '결함이 있는'을 정확히 짚고 답안을 고를 것.\n④ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 거부한다고 지문에서 명시된 부분을 잘못 읽었다. (C)에서 'divested'가 아닌 'inherited'가 맞는 표현임을 파악하지 못했다. → 처방: (C)는 지문에서 'inherited'가 세 가지 비유로 설명된 표현이므로, 'inherited'가 옳음을 확인하고 답안을 선택할 것.\n⑤ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 선택한다고 지문에서 명시된 부분을 '거부'로 오독했다. (B)에서는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 이해하지 못하고 '완전(perfect)'으로 오해했다. (C)에서도 'divested'가 아닌 'inherited'가 맞는 표현임을 파악하지 못했다. → 처방: 지문의 (A)·(B)·(C) 각각의 의미를 문맥에서 정확히 짚고, '선택 vs 거부', '결함 vs 완전', 'inherited vs divested'의 구분을 명확히 한 뒤 답안을 고를 것.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

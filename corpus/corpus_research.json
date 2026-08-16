@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T05:53:25.302Z",
+ "updated": "2026-08-16T07:08:56.084Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T07:08:24.500Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사구 내 관사·형용사 순서 오류와 접속사 생략 오류가 빈번하며, 특히 'such a + 명사' 구문과 'that' 생략 오류가 두드러진다. 또한 과거/현재 시제 혼용과 직접목적어 생략도 자주 발생한다.",
+   "rule": "'such a + 명사' 구문에서 관사가 'a'로 고정되어야 하며, 'that'을 생략하지 말고 접속사(that/which 등)를 반드시 삽입하여 문법적 완결성을 확보하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T05:53:00.685Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "영어에서 고유명사(Real Politik, Bismarck 등)는 대문자로 표기해야 하지만, 일반명사(real politics, Bismark)는 소문자로 표기해야 한다. 또한, 중복 표현(I think advertisements are make → I think advertisements make)을 제거해야 한다.",
    "rule": "고유명사와 일반명사를 구별하여 대소문자 표기 규칙을 적용하고, 중복된 동사(are make → make)나 중복 표현을 제거하여 문법적으로 정확한 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T05:09:38.487Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'비교급 + than' 구문 오류가 빈번하며, 특히 'more + 명사 + than' 패턴에서 'than' 생략 또는 'that' 오용이 많다. 또한 '시간 + on + 활동' 구조가 '시간 + more + 활동'으로 잘못 표현되는 경향이 있다.",
-   "rule": "'more + 시간/명사 + than' 구문에서 'than'을 반드시 포함시켜 비교 대상을 명확히 하도록 문항을 설계하라. 예: 'spend more time on their lifestyles' → 'spend more time than on their lifestyles'.",
    "sample": [
     "old english",
     "university press",
