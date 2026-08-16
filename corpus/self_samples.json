@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-16T07:49:30.431Z",
+ "updated": "2026-08-16T08:50:21.725Z",
  "samples": [
+  {
+   "ts": "2026-08-16T08:49:52.806Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 그는 챔피언의 힘에 대한 경멸감으로 대변에서 튀어나왔다.\n주어진 단어: ( sprang / stool / disdain )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] He sprang from his stool with disdain for the champion’s strength. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-16T07:02:42.858Z",
    "type": "안내문일치",
@@ -317,39 +336,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Environmentalists must convince large numbers of people to pressure politicians into passing conservation legislation to protect rare species from habitat loss and pollution.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 정치인들이 Conservation 법을 제정하면 문제가 해결될 것이라는 '인과관계'를 오독했다. 지문은 Conservation 법제화가 '논쟁'과 '부담'을 낳을 수 있음을 보여준다. → 처방: 문제 해결의 주체는 '환경 운동가'와 '대중'임을 기억하고, 법제화가 모든 문제를 해결하지는 않는다는 점을 확인하자.\n② 진단: 환경 운동가들이 Conservation 법제화를 '추진해야 한다'는 '의무'를 오독했다. 지문은 Conservation 법제화가 '논쟁'과 '부담'을 낳을 수 있음을 보여준다. → 처방: 지문의 '논쟁'과 '부담' 부분을 다시 읽고, Conservation 법제화가 반드시 옳은 해결책은 아님을 기억하자.\n③ 진단: '모든 희귀 동식물이 멸종 위기에 처했다'는 '과장된 주장'을 오독했다. 지문은 '희귀 동식물의 서식지 파괴와 오염'이 문제임을 보여주지만, 모든 동식물이 멸종 위기에 처했다는 말은 없다. → 처방: 지문의 '희귀'라는 단어를 주의 깊게 읽고, '모든'이라는 말이 과장된 표현임을 확인하자.\n④ 진단: 정치인들이 Conservation 법을 제정하기 위해 '환경 운동가들에게 대중의 참여를 확보해야 한다'는 '역할'을 오독했다. 지문은 환경 운동가들이 대중의 참여를 확보해야 한다고 말한다. → 처방: 주어와 목적어를 정확히 구분하고, 지문의 '환경 운동가'와 '대중'의 역할을 다시 한 번 확인하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Environmentalists must convince large numbers of people to pressure politicians into passing conservation legislation to protect rare species from habitat loss and pollution.]"
-   }
-  },
-  {
-   "ts": "2026-08-15T23:40:21.768Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "advocacy and legislation efforts to protect endangered species and habitats",
-     "legislation and advocacy as causes of species loss and habitat destruction",
-     "efforts to protect endangered species through advocacy alone",
-     "universal necessity of all environmental laws to protect every endangered species",
-     "efforts to protect species regardless of habitat loss or pollution factors"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Environmentalists' efforts to protect species and habitats through advocacy and legislation'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘법률과 옹호가 야생동물과 서식지 파괴의 원인이라는 선지’를 골랐다면, 지문에서 ‘환경운동가들이 정치인들에게 보전법안을 통과시키도록 압력을 가하는 것’이 보호를 위한 노력임을 놓쳤음. 지문 4~5행에 ‘이러한 제안된 법들은 사업에 부담을 준다고 여겨지지만, 이는 보호 노력의 일환’이라는 뜻이 있음. → 처방: ‘보호 노력’이란 단어와 문맥을 정확히 짚고, ‘원인’이 아니라 ‘결과’로 해석하지 않도록 주의할 것.\n③ 진단: ‘옹호만으로 멸종 위기종을 보호하려는 노력’을 골랐다면, 지문에서 ‘환경운동가들이 많은 사람들을 설득해 정치인들에게 압력을 가하는 것’이 보호를 위한 ‘다양한 노력’ 중 하나임을 놓쳤음. 지문 4~5행에 ‘많은 사람들을 설득하는 것’이 포함된 전체 흐름을 이해하지 못함. → 처방: ‘단지 옹호만’이라고 해석하지 말고, 지문에 나타난 ‘압력’과 ‘법률’ 같은 ‘다양한 방법’이 포함된 efforts 임을 확인할 것.\n④ 진단: ‘모든 멸종 위기종을 보호하기 위한 환경법의 보편적 필요성’을 골랐다면, 지문에서 ‘모든’ 멸종 위기종을 보호해야 한다는 내용이 없음을 놓쳤음. 지문은 ‘희귀한 동물과 새’를 보호하려는 노력에 초점을 맞추고 있지만, ‘모든’ 멸종 위기종을 보호해야 한다는 보편적 필요성은 언급하지 않음. → 처방: ‘모든’이라는 절대적 표현이 지문에 있는지 확인하고, 지문의 한정된 범위를 정확히 파악할 것.\n⑤ 진단: ‘서식지 손실이나 오염 요인을 무시하고 종을 보호하려는 노력’을 골랐다면, 지문에서 ‘삼림 손실이나 수질 오염으로 인한 파괴로부터 이들 동물을 보호하려는 노력’을 언급한 부분을 놓쳤음. 지문 3~4행에 ‘삼림 손실이나 수질 오염’이라는 구체적 요인이 포함된 보호 노력이 있음. → 처방: 지문에 나타난 ‘삼림 손실’과 ‘수질 오염’이 보호 노력의 ‘원인’이 아니라 ‘대상’이라는 점을 정확히 짚고, 이 요인들을 무시하지 않도록 주의할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Environmentalists]"
    }
   }
  ]
