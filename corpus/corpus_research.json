@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T17:37:23.657Z",
+ "updated": "2026-08-16T18:50:21.335Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T18:49:52.831Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'most of the' 뒤에 중복된 'the'가 자주 나타나며, 'take the future'는 'create the future'로 자연스러운 표현이 대체됨. 또한 'yong genaration'은 'younger generation'으로, 'close'는 문맥에 따라 'closed'로 시제와 형태가 조정되어야 함.",
+   "rule": "'most of the' 다음에 오는 명사구에서 중복된 'the'를 제거하고, 'take'와 같은 동사는 'create'·'shape'·'influence' 등으로 CEFR B1/B2 수준에 맞는 자연스러운 동사로 대체하며, 시제 오류(close→closed, study before→check beforehand)도 반드시 수정하여 문장을 완성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T17:36:48.113Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'fact of the matter'와 같은 고정관용 표현이 빈번히 사용되며, 주어-동사-보어 구조가 문장 핵심임을 확인할 수 있다.",
    "rule": "원서 문체 패턴을 반영하여, 'The fact of the matter is that S' 또는 'You can change X but not Y'와 같은 고정구조를 변형 문제에서 반드시 포함하도록 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T22:05:49.569Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거시제와 단수/복수 동사 일치 오류가 빈번하며, 특히 수치(10th, 12th) 뒤의 동사에서 오류가 자주 발생한다. 또한 'take risks'와 같은 관용적 표현이 'doing'으로 대체되는 오류도 다수 확인된다.",
-   "rule": "수치(10th, 12th 등)가 포함된 문장에서 동사 일치 오류를 방지하기 위해, 'and'로 연결된 복수 수치 뒤에는 반드시 복수 동사('are', 'were')를 사용하도록 문제를 설계하라. 예: 'My 10th and 12th exams are very good.'",
    "sample": [
     "old english",
     "university press",
