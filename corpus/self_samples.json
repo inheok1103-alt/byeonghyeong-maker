@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-16T13:50:26.459Z",
+ "updated": "2026-08-16T14:42:46.474Z",
  "samples": [
+  {
+   "ts": "2026-08-16T14:41:38.317Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, <u>we know that the NP is functioning as DIRECT OBJECT. The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them. By the way</u>, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper. (Sharpen, cut and wrap are transitive verbs.) Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP. ‘INtransitive’ means ‘has (and needs) no complement’. Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs. Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right. Intransitive VPs are the simplest VPs. So a sentence like Omar sighed is represented as in [17]. Note the [intrans] feature on the V node.",
+    "choices": [
+     "The grammatical subject is metaphorically portrayed as the dominant force that prevails in a competitive framework, emphasizing its superior syntactic position.",
+     "The indirect complement is metaphorically framed as the passive recipient of actions, underscoring its lack of influence in the structural hierarchy.",
+     "The direct object is literally described as the entity that faces inevitable defeat in every syntactic contest, revealing its inherent weakness in the hierarchy.",
+     "The direct object is metaphorically depicted as the one that inevitably loses in a zero-sum competition, highlighting its subordinate role in the syntactic structure.",
+     "The grammatical object is metaphorically represented as the one that must yield in a battle of syntactic superiority, stressing its inferior role in the sentence."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'The direct object is metaphorically depicted as the one that inevitably loses in a zero-sum competition, highlighting its subordinate role in the syntactic structure.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘지문에서 ‘the loser in the game of Rock-Scissors-Paper’는 직접목적어(direct object)를 가리키며, ‘dominant force’나 ‘superior syntactic position’ 같은 표현은 지문에 없습니다. 학생은 ‘주어(subject)’와 ‘직접목적어’를 혼동했거나, ‘우위’와 ‘패배’를 잘못 연결했습니다. → 처방: ‘직접목적어’가 무엇인지 정확히 확인하고, 지문에서 ‘loser’라는 단어가 어떤 성분을 가리키는지 다시 한 번 짚어보세요. ‘주어’와 ‘목적어’를 구분하는 연습을 더 해보세요.\n② 진단: ‘간접목적어(indirect object)’는 지문에 언급되지 않았습니다. 학생은 ‘간접목적어’를 ‘직접목적어’로 오해하거나, ‘수동적 수혜자’라는 설명을 ‘간접목적어’에만 적용하려고 했습니다. → 처방: ‘직접목적어’와 ‘간접목적어’를 명확히 구분하고, 지문에서 ‘Rock-Scissors-Paper’ 게임이 ‘직접목적어’를 가리키는 이유(‘cut’, ‘wrap’이 타동사이기 때문)를 다시 공부하세요.\n③ 진단: ‘직접목적어’를 ‘문법적 약점’이나 ‘고유한 약점’으로 오해했습니다. 지문은 ‘Rock-Scissors-Paper’ 게임의 ‘패자’(loser)를 ‘직접목적어’에 비유했을 뿐, ‘약점’을 강조한 게 아닙니다. → 처방: 비유 표현을 Literal(직역)하지 말고, ‘패자’라는 단어가 ‘직접목적어’의 역할을 상징하는지 다시 생각해보세요. 비유와 실제 문법 용어를 구분하세요.\n⑤ 진단: ‘문법적 목적어(grammatical object)’라는 표현은 맞지만, ‘배틀(syntactic superiority)’이라는 표현은 지문에 없습니다. 학생은 ‘배틀’이라는 단어를 ‘패자’와 연결해 ‘문법적 약점’을 강조하려고 했지만, 지문은 ‘패자’가 ‘직접목적어’를 상징한다는 점만 다룹니다. → 처방: ‘문법적 목적어’가 ‘직접목적어’와 같은지 확인하고, ‘배틀’이라는 표현이 지문에 없음을 기억하세요. ‘패자’라는 단어가 어떤 성분을 가리키는지 다시 확인하세요.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-16T14:42:14.917Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 18 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Intransitive', 'complements', 'predicate' / 16~20단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Intransitive verbs are complete on their own as they don’t need any complements to form a full predicate.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 16~20단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-16T13:46:49.548Z",
    "type": "네모어휘ABC",
@@ -283,58 +336,6 @@
     ],
     "answer": 3,
     "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①의 제목은 '소재 장소를 바꿔 공부하기'로 장소를 바꿔 공부하는 것이 기억에 좋다는 주제와 어울리지만, ②~⑤는 모두 장소를 바꿔 공부할 때의 이점이나 근거를 담고 있는 반면 ①은 제목만 제시되어 있어 흐름에서 벗어나 있다. → 처방: 제목으로만 구성된 문장은 지문의 주제 흐름에 맞게 구체적인 근거나 설명이 있어야 한다. 유사 선지를 볼 때는 제목인지 내용인지 먼저 확인하고, 내용이 없으면 제외하는 습관을 들이자.\n② 진단: ②는 실험 결과를 설명하는 문장으로, 지문의 핵심 주장(장소를 바꿔 공부하면 기억이 좋아진다)을 뒷받침하는 중요한 근거다. 흐름에서 벗어난 것은 아니다. → 처방: 이미 정답이 아니므로 넘어가도 좋다. 다만 오답 중에도 흐름을 돕는 문장이 있을 수 있으니, 무조건 버리기보다는 '이 문장이 없으면 어떤 점이 부족한지'를 생각해 보도록 하자.\n④ 진단: ④는 '다양한 맥락이 풍부한 연상을 만들기 때문이다'로, 장소를 바꿀 때의 이점(다양한 경험이 기억을 강화한다는 주제)을 설명하는 문장이다. 흐름에서 벗어난 것은 아니다. → 처방: ④도 흐름을 돕는 문장이므로 오답 선지를 고를 때는 '이 문장이 빠지면 주제가 약해지는가?'를 생각해 보자. 약해지지 않는다면 그 선지는 제외 대상이다.\n⑤ 진단: ⑤는 지문 전문(원문 그대로)을 보여주는 문장으로, 실험 결과와 주장을 제시하는 핵심 부분이다. 흐름에서 벗어난 것은 아니다. → 처방: ⑤는 지문의 핵심 Evidence(증거)이므로, 오답 선지를 고를 때는 '이 문장이 없으면 주장이 설득력이 떨어지는가?'를 기준으로 삼자.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T05:52:48.118Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 2문항(요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Part II Contextual Analysis I . Explicit Cues Question No.1 Synonyms: Choose the correct answer : 1- The detectives were deluded by all the false evidence . They were completely deceived and they arrested the wrong person. Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony. Excruciating means _____________ a) painful. b) wonderful c) hurtful 3-Inveterate gamblers are habitual customers at the race track betting widows. Inveterate means ____________ a) ancient b) regular c) casual 4- Our plane tickets were voided when the airline ticket agent declared that the airport was closed . Therefore , all reservations were cancelled . voided means ___________ a) reserved b) stolen c ) not valid 5-Although the insurrection began in the rural areas , the rebellion quickly spread throughout the cities . Insurrection means _________ a) elections b) revolt c) journey.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T04:51:00.238Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "Page 89 The downward and upward entailments are summarized in (47).\n\n(A) Ramòn signs every sculpture he makes. Marcia and Clive ate four apples each. Jones restored and sold several valuable paintings. Most bulbs will not grow if they are dry. (B) Two Quantifiers: Scopal Ambiguity Using restricted quantifier notation, give the two representations for each sentence below and indicate their meanings. < previous page page_89 next page >\n\n(B) The environments which allow negative polarity items were listed in (44), repeated here in (48). As we see, the NPI licensing environments are exactly the downward-entailing environments, as predicted. EXERCISES (A) Restricted Quantifier Notation: Basic Review Using restricted quantifier notation, give the formulae for the sentences below. Example: John photographed every model that Bill hired. [Every x: MODEL(x) & HIRE(b, x)] PHOTOGRAPH(j, x) Anne has read most books on psychoanalysis.\n\n(C) Few who knew him supported Baxter. Some students who heard both concerts were interviewed by Holmes. Morris showed Jane every fingerprint he dusted. Marcia peeled and quartered three apples. Most travellers entering or leaving Australia visit Sydney.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 3,
-    "explanation": "원문 전개 순서는 (B) - (C) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①(A) 다음에 (C)가 오면 지문의 흐름이 '범위 연산자 표기법' → 'NPI 환경' → '연습 문제'로 이어지지 않고, 예시와 연습 문제가 뒤섞여 논리적 흐름이 깨진다. (A)는 '제한된 범위 연산자' 예시, (C)는 '연습 문제'로 분류되어 있다. → 처방: 지문 구조를 주의 깊게 읽고, 각 부분이 어떤 역할을 하는지(예시/설명/연습 문제) 구분한 뒤 순서를 정하라.\n② 진단: ②(B) 다음에 (A)가 오면 지문의 'NPI 환경' 설명(48)이 '범위 연산자 표기법' 예시(47)보다 먼저 나오는데, 이는 논리적 순서가 아니다. (B)는 'NPI 환경'을 설명하는 부분으로, (A)보다 뒤에 와야 한다. → 처방: 지문의 각 부분이 어떤 내용을 다루는지 제목을 확인하고, 설명 → 예시 → 연습 문제 순으로 흐름을 잡아라.\n④ 진단: ④(C) 다음에 (A)가 오면 '연습 문제'가 '예시'보다 먼저 나오는데, 이는 학습의 논리적 흐름을 거스른다. (A)는 '범위 연산자 표기법'의 기본 예시, (C)는 '연습 문제'로 분류되어 있어 순서가 맞지 않다. → 처방: 각 부분의 역할을 정확히 파악하고, '기본 설명 → 예시 → 연습 문제' 순으로 순서를 정하라.\n⑤ 진단: ⑤(C) 다음에 (B)가 오면 '연습 문제'가 'NPI 환경 설명'보다 먼저 나오는데, 이는 설명이 예시보다 뒤에 오는 논리적 흐름을 무시한 선택이다. (B)는 'NPI 환경'을 설명하는 부분으로, (C)보다 뒤에 와야 한다. → 처방: 지문의 각 섹션이 어떤 내용을 다루는지 확인하고, 설명 → 예시 → 연습 문제 순으로 흐름을 잡아라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
