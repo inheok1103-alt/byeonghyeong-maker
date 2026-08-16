@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T08:50:21.721Z",
+ "updated": "2026-08-16T09:45:37.706Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T09:45:07.402Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거 시제와 현재 시제가 혼용된 문장에서 시제 일관성이 깨지는 경우가 빈번하며, 특히 'consist', 'own', 'satisfy'와 같은 동사가 과거 시제와 함께 쓰일 때 오류가 발생한다. 또한 부정사나 동명사 형태로 오류가 발생하는 경우가 많다.",
+   "rule": "'과거 시제를 요구하는 문맥(예: '~ ago', 'last')에서는 모든 동사가 과거 시제(단순 과거 또는 과거 완료)로 통일되어야 하며, 부정사나 동명사 형태는 시제 오류로 간주한다. 예: 'Ten years ago, she **owned** a house that **satisfied** her needs'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T08:49:54.880Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "영어에서 'be + 과거분사' 형태는 상태를 나타내지만, '~하게 하다'의 의미를 강조할 때는 능동형 동사(예: annoy → annoy, worsen → worsen)로 전환해야 한다. 또한 전치사 오용(예: 'with' → 'to')이나 소유격 오용(예: 'theirs' → 'them')은 빈번한 오류 유형이다.",
    "rule": "원문에서 'be + 과거분사'가 상태를 나타내는 경우, 해당 동사의 능동형(예: annoy, worsen)으로 대체하여 문맥에 맞게 재구성하라. 또한 전치사나 소유격 오용이 의심될 때는 'to + 목적격' 또는 소유격 재구성을 우선 검토하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T10:31:17.361Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어에서 관사(a/an/the) 오류는 CEFR B1~B2 수준에서 빈번하며, 특히 'a'와 'an'의 선택 오류, 관사 생략, 또는 복수형/단수형 오류가 두드러진다.",
-   "rule": "CEFR B1~B2 수준의 내신 문항에서 관사(a/an/the) 사용 오류를 테스트할 경우, 'a'와 'an'의 선택, 관사의 생략, 또는 복수형/단수형의 불일치를 포함한 문장을 1개 이상 포함하여 오류를 찾아 수정하도록 한다.",
    "sample": [
     "old english",
     "university press",

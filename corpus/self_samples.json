@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-16T08:50:21.725Z",
+ "updated": "2026-08-16T09:45:37.710Z",
  "samples": [
+  {
+   "ts": "2026-08-16T09:44:52.127Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "We can account for this if we suppose that ⓐ<u>pragmatic</u> ⓑ<u>restrictions</u> on the ⓒ<u>choice</u> of admissible arguments for a given predicate depend jointly on the semantic properties of the predicate and the thematic role of the ⓓ<u>argument</u>: it will then follow that two expressions which fulfil the same thematic role in respect of a given ⓔ<u>predicate</u> will be subject to the same pragmatic restrictions on argument choice. Since passive subjects like those italicised in (64a) originate as complements, they will have the same θ-role (and so be subject to the same pragmatic restrictions on argument choice) as active complements like those italicised in (64b). We can arrive at the same conclusion (that passive subjects originate as thematic complements) on theoretical grounds. It seems reasonable to suppose that principles of UG correlate thematic structure with syntactic structure in a uniform fashion: this assumption is embodied in the Uniform Theta Assignment",
+    "choices": [
+     "pragmatic: A man of business.",
+     "restrictions: The act of restricting, or the state of being restricted.",
+     "choice: A postage stamp that is part of a thematic collection.",
+     "argument: A fact or statement used to support a proposition; a reason.",
+     "predicate: (grammar) The part of the sentence (or clause) which states something about the "
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ의 풀이는 'thematic'의 정의이다. 'choice'의 올바른 풀이: An option; a decision; an opportunity to choose or select something.\n[오답 진단·처방]\n① 진단: ‘pragmatic’이 ‘사업가의’로 오해한 것으로 보입니다. 지문에서 ‘pragmatic’는 ‘실용적인’(실제 언어 사용 맥락에서 제약이 생기는 이유)을 뜻합니다. 영어 단어 뜻풀이가 잘못된 경우입니다. → 처방: ‘pragmatic’이 ‘실용적인’이라는 뜻임을 기억하고, 문맥(언어 사용의 제약)에서 ‘실용적’으로 해석하는 연습을 하세요.\n② 진단: ‘restrictions’이 ‘제한하는 행위나 상태’를 뜻하는지 혼동한 것 같습니다. 지문에서도 ‘제약’을 뜻하는 ‘pragmatic restrictions’이란 표현이 나옵니다. → 처방: ‘restrictions’를 ‘제한’이라는 뜻으로만 기억하지 말고, 문장에서 ‘제한’이 ‘무엇을 제한하는지’(예: ‘pragmatic restrictions’)를 함께 떠올리세요.\n④ 진단: ‘argument’를 ‘주장이나 이유’를 뜻하는지 오해한 것 같습니다. 지문에서 ‘admissible arguments’는 ‘허용 가능한 논증(주어/목적어)’을 뜻합니다. → 처방: ‘argument’를 ‘논증’이 아니라 ‘주어/목적어’로도 쓸 수 있음을 기억하고, 문맥(‘admissible arguments for a predicate’)에서 의미를 찾아보세요.\n⑤ 진단: ‘predicate’를 ‘문장의 주어/목적어’를 뜻하는지 혼동한 것 같습니다. 지문에서 ‘predicate’는 ‘동사’(서술어)를 뜻합니다. → 처방: ‘predicate’를 ‘서술어’로만 기억하지 말고, 문장에서 ‘~이다’, ‘~하다’로 대체되는 부분을 찾는 연습을 하세요.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-16T08:49:52.806Z",
    "type": "조건영작",
@@ -301,41 +334,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] traditionally — 문단의 논지상 이 자리에는 'traditionally'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T23:36:25.624Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "정치인들은 Conservation 법을 제정하면 희귀 동식물의 서식지 파괴와 오염 문제가 해결될 것이다",
-     "환경 운동가들은 희귀 동식물의 서식지 파괴와 오염을 막기 위해 Conservation 법제화를 추진해야 한다",
-     "모든 희귀 동식물이 서식지 파괴와 오염으로 멸종 위기에 처했으므로 Conservation 법제화가 반드시 필요하다",
-     "정치인들은 Conservation 법을 제정하기 위해 환경 운동가들에게 대중의 참여를 확보해야 한다",
-     "환경 운동가들은 대중의 참여로 정치인들에게 Conservation 법제화를 촉구해야 한다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Environmentalists must convince large numbers of people to pressure politicians into passing conservation legislation to protect rare species from habitat loss and pollution.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 정치인들이 Conservation 법을 제정하면 문제가 해결될 것이라는 '인과관계'를 오독했다. 지문은 Conservation 법제화가 '논쟁'과 '부담'을 낳을 수 있음을 보여준다. → 처방: 문제 해결의 주체는 '환경 운동가'와 '대중'임을 기억하고, 법제화가 모든 문제를 해결하지는 않는다는 점을 확인하자.\n② 진단: 환경 운동가들이 Conservation 법제화를 '추진해야 한다'는 '의무'를 오독했다. 지문은 Conservation 법제화가 '논쟁'과 '부담'을 낳을 수 있음을 보여준다. → 처방: 지문의 '논쟁'과 '부담' 부분을 다시 읽고, Conservation 법제화가 반드시 옳은 해결책은 아님을 기억하자.\n③ 진단: '모든 희귀 동식물이 멸종 위기에 처했다'는 '과장된 주장'을 오독했다. 지문은 '희귀 동식물의 서식지 파괴와 오염'이 문제임을 보여주지만, 모든 동식물이 멸종 위기에 처했다는 말은 없다. → 처방: 지문의 '희귀'라는 단어를 주의 깊게 읽고, '모든'이라는 말이 과장된 표현임을 확인하자.\n④ 진단: 정치인들이 Conservation 법을 제정하기 위해 '환경 운동가들에게 대중의 참여를 확보해야 한다'는 '역할'을 오독했다. 지문은 환경 운동가들이 대중의 참여를 확보해야 한다고 말한다. → 처방: 주어와 목적어를 정확히 구분하고, 지문의 '환경 운동가'와 '대중'의 역할을 다시 한 번 확인하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Environmentalists must convince large numbers of people to pressure politicians into passing conservation legislation to protect rare species from habitat loss and pollution.]"
    }
   }
  ]
