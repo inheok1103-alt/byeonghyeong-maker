@@ -1,6 +1,92 @@
 {
- "updated": "2026-08-16T04:04:38.178Z",
+ "updated": "2026-08-16T04:52:27.099Z",
  "samples": [
+  {
+   "ts": "2026-08-16T04:51:00.238Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 1,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "Page 89 The downward and upward entailments are summarized in (47).\n\n(A) Ramòn signs every sculpture he makes. Marcia and Clive ate four apples each. Jones restored and sold several valuable paintings. Most bulbs will not grow if they are dry. (B) Two Quantifiers: Scopal Ambiguity Using restricted quantifier notation, give the two representations for each sentence below and indicate their meanings. < previous page page_89 next page >\n\n(B) The environments which allow negative polarity items were listed in (44), repeated here in (48). As we see, the NPI licensing environments are exactly the downward-entailing environments, as predicted. EXERCISES (A) Restricted Quantifier Notation: Basic Review Using restricted quantifier notation, give the formulae for the sentences below. Example: John photographed every model that Bill hired. [Every x: MODEL(x) & HIRE(b, x)] PHOTOGRAPH(j, x) Anne has read most books on psychoanalysis.\n\n(C) Few who knew him supported Baxter. Some students who heard both concerts were interviewed by Holmes. Morris showed Jane every fingerprint he dusted. Marcia peeled and quartered three apples. Most travellers entering or leaving Australia visit Sydney.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 3,
+    "explanation": "원문 전개 순서는 (B) - (C) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①(A) 다음에 (C)가 오면 지문의 흐름이 '범위 연산자 표기법' → 'NPI 환경' → '연습 문제'로 이어지지 않고, 예시와 연습 문제가 뒤섞여 논리적 흐름이 깨진다. (A)는 '제한된 범위 연산자' 예시, (C)는 '연습 문제'로 분류되어 있다. → 처방: 지문 구조를 주의 깊게 읽고, 각 부분이 어떤 역할을 하는지(예시/설명/연습 문제) 구분한 뒤 순서를 정하라.\n② 진단: ②(B) 다음에 (A)가 오면 지문의 'NPI 환경' 설명(48)이 '범위 연산자 표기법' 예시(47)보다 먼저 나오는데, 이는 논리적 순서가 아니다. (B)는 'NPI 환경'을 설명하는 부분으로, (A)보다 뒤에 와야 한다. → 처방: 지문의 각 부분이 어떤 내용을 다루는지 제목을 확인하고, 설명 → 예시 → 연습 문제 순으로 흐름을 잡아라.\n④ 진단: ④(C) 다음에 (A)가 오면 '연습 문제'가 '예시'보다 먼저 나오는데, 이는 학습의 논리적 흐름을 거스른다. (A)는 '범위 연산자 표기법'의 기본 예시, (C)는 '연습 문제'로 분류되어 있어 순서가 맞지 않다. → 처방: 각 부분의 역할을 정확히 파악하고, '기본 설명 → 예시 → 연습 문제' 순으로 순서를 정하라.\n⑤ 진단: ⑤(C) 다음에 (B)가 오면 '연습 문제'가 'NPI 환경 설명'보다 먼저 나오는데, 이는 설명이 예시보다 뒤에 오는 논리적 흐름을 무시한 선택이다. (B)는 'NPI 환경'을 설명하는 부분으로, (C)보다 뒤에 와야 한다. → 처방: 지문의 각 섹션이 어떤 내용을 다루는지 확인하고, 설명 → 예시 → 연습 문제 순으로 흐름을 잡아라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-16T04:51:37.024Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(63%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Polarity items are restricted to contexts where entailment weakens propositions",
+     "Polarity items weaken propositions by restricting entailment contexts",
+     "Polarity items appear only in downward-entailing contexts for negative expressions",
+     "Polarity items always occur in upward-entailing environments without exception",
+     "Polarity items are licensed in all entailment environments regardless of direction"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Polarity items are licensed in downward-entailing environments.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Polarity items are licensed in downward-entailing environments.]\n[오답 진단·처방]\n① 진단: ‘Polarity items are restricted to contexts where entailment weakens propositions’에서 ‘weakens’를 ‘약화시킨다’로만 해석해 ‘downward entailment’의 방향성과 ‘negative expressions’의 조건을 모두 무시했다. 지문 (47)과 (48)에서 ‘NPI licensing environments = downward-entailing environments’라고 분명히 밝혔으므로, ‘weakens’이 entailment 의 방향성을 가리키는 용어라는 점을 놓쳤다. → 처방: ‘entailment weakens’를 ‘downward entailment’의 정의로 이해하고, 지문에서 ‘negative expressions’의 조건이 포함된다는 점을 다시 한 번 확인하라.\n② 진단: ‘Polarity items weaken propositions by restricting entailment contexts’를 ‘propositions 자체를 약화시킨다’로 오해해 ‘weakens’의 방향성과 ‘restricting’의 의미를 혼동했다. 지문은 entailment 의 방향성(upward/downward)에 따라 polarity items 가 ‘허용되는지 여부’가 결정된다고 설명했는데, 이를 propositions 의 강도 변화로 잘못 읽었다. → 처방: ‘weaken’이라는 단어가 entailment 의 방향성을 가리키는 기술어라는 점을 기억하고, 지문에서 ‘NPI licensing environments = downward-entailing environments’라고 명시된 부분을 다시 읽어라.\n④ 진단: ‘Polarity items always occur in upward-entailing environments without exception’을 선택했는데, 지문 (48)에서 ‘NPI licensing environments’는 ‘downward-entailing environments’라고 명시되어 있어 모순임을 간과했다. ‘upward entailment’은 polarity items 가 ‘허용되지 않는’ 환경임을 지문에서 분명히 했다. → 처방: 지문 (48)의 ‘NPI licensing environments = downward-entailing environments’를 정확히 기억하고, ‘upward entailment’은 polarity items 가 나타나지 않는 환경임을 다시 확인하라.\n⑤ 진단: ‘Polarity items are licensed in all entailment environments regardless of direction’를 선택했는데, 지문 (48)에서 polarity items 가 ‘downward-entailing environments’에서만 ‘허용’된다고 명시된 부분을 무시했다. ‘all entailment environments’라고 과장해 해석했다. → 처방: 지문 (48)의 ‘exactly the downward-entailing environments’라는 표현을 정확히 기억하고, polarity items 가 ‘downward entailment’에서만 ‘허용’된다는 점을 다시 한 번 확인하라."
+   }
+  },
+  {
+   "ts": "2026-08-16T04:51:41.719Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'environments', 'entailment', 'Negative' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Negative polarity items are only allowed in environments that support downward entailment.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-16T04:04:04.533Z",
    "type": "밑줄함의",
@@ -269,101 +355,6 @@
     ],
     "answer": 5,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: TP 의 머리 T 가 'has'를 갖는 것은 (32a)의 경우로, 지문에서 '(32a)의 TP 는 C-구성체가 선택하며 T 는 완전한 일치 기능을 가진 조동사 has 를 갖는다'고 밝히므로, '결함이 있는'이라는 말은 지문과 맞지 않는다. → 처방: TP 의 머리 T 가 어떤 조동사를 갖는지, 그것이 완전하거나 결함이 있는지 지문의 설명을 정확히 짚고 넘어가라.\n② 진단: C 가 TP 를 선택하지 않는 raising 구조에서 TP 의 머리 T 는 'to'로 지문에서 'defective(결함 있는)'라고 설명하므로, '완전한 기능을 한다'는 말은 지문과 반대된다. → 처방: raising 구조에서 T 가 'to'라는 점과 그 결함 여부를 지문에서 다시 확인하라.\n③ 진단: 지문에서 촘스키는 T 의 인칭·수 일치 기능이 C 로부터 '상속'된다고 주장하는데, '전달되지 않는다'는 말은 이 주장과 완전히 반대된다. → 처방: 촘스키의 주장이 '상속' 개념임을 기억하고, 지문의 핵심 주장과 선지의 내용을 정확히 연결하라.\n④ 진단: 지문에서 타동사 V 의 일치 기능은 '경동사(light-verb)'에서 상속된다고 설명하는데, '명사에서 상속'이라는 말은 지문 내용과 전혀 맞지 않는다. → 처방: 타동사 V 의 일치 기능이 어디서 오는지 지문의 설명을 꼼꼼히 읽고, '경동사'와 '명사'를 혼동하지 않도록 하라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T20:45:27.824Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Confusing Words and Homonyms 45 set one sets a thing Example: Please set the table. sit one sits oneself Example: Please sit down at the table. sew to stitch so in the manner indicated sow (verb) to scatter or plant seed sewer a conduit for carrying off waste suer one who sues shear to cut sheer transparent shoe foot attire shoo interjection used to scare away an animal shoot (see chute) sic a Latin term used to indicate that something written is intentionally left in the original form, which may be incorrect. Example: She wrote, ‘‘They made there [sic] beds.’’ sick ill sics attacks six a number sight (see cite) sign an indication sine a trigonometry term since (see because) sink to submerge; to descend to a lower level; where you wash dirty dishes synch (or sync) to synchronize, to coincide or match up site (see cite) slay kill sleigh snow vehicle, sled",
-    "choices": [
-     "'set'는 '테이블을 준비하다'라는 뜻을 가진 명사이다.",
-     "'sit'는 '앉다'라는 뜻을 가진 명사이다.",
-     "'sow'는 '씨를 뿌리다'라는 뜻을 가진 명사이다.",
-     "'sick'은 '아프다'라는 뜻을 가진 형용사이다.",
-     "'slew'는 '죽이다'라는 뜻을 가진 동사이다."
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'set'은 동사(예: Please set the table)로만 설명했는데, 학생은 '명사'로 오독했다. 'set'이 명사로 쓰일 때도 있지만(예: a set of tools), 여기서는 동사로만 소개되었다. → 처방: 단어의 품사와 뜻을 모두 확인한 뒤, 지문에서 제시한 예문과 뜻을 정확히 짚고 넘어가라.\n② 진단: 지문에서 'sit'은 '앉다'라는 뜻을 가진 동사로만 설명했는데, 학생은 '명사'로 오독했다. 'sit'이 명사로 쓰일 때도 있지만(예: a sit-in), 여기서는 동사로만 소개되었다. → 처방: 단어의 품사와 뜻을 구분할 때, 예문과 함께 '~하다'로 동사임을 확인하라.\n③ 진단: 지문에서 'sow'는 '씨를 뿌리다'라는 뜻을 가진 동사로만 설명했는데, 학생은 '명사'로 오독했다. 'sow'가 명사로 쓰일 때도 있지만(예: female pig), 여기서는 동사로만 소개되었다. → 처방: 동사인 경우 '~하다'로 끝나는지 확인하고, 지문 예문과 뜻을 함께 기억하라.\n⑤ 진단: 지문에서 'slay'는 '죽이다'라는 뜻을 가진 동사로 소개했는데, 학생은 'slew'로 잘못 썼다. 'slew'는 'slay'의 과거형이지만, 지문에는 'slay'만 나와 있으며 뜻은 같다. → 처방: 단어의 기본형과 과거형을 구분하고, 지문에서 제시된 기본형을 기준으로 뜻을 확인하라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T19:36:18.196Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the resistance of grammar to cultural and ideological changes over time",
-     "the influence of language conventions on cultural and ideological shifts",
-     "the limited adaptability of grammar within evolving cultural contexts",
-     "the absolute permanence of grammar across diverse human societies",
-     "the sporadic grammatical modifications resulting from cultural exchanges"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The stability of grammar despite cultural and ideological shifts'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘문화적·이념적 변화가 언어 관습에 영향을 미친다’는 Sapir-Whorf 가설을 오해해, 지문에서 ‘언어 관습 때문에 믿음이 변하지 않는다’는 반대 사례를 보지 못하고 선지를 선택한 듯함. → 처방: ‘언어와 문화의 관계’를 다룬 지문임을 먼저 확인하고, 지문에서 Sapir-Whorf 가설을 반박하는 예시(러시아)를 꼼꼼히 읽기.\n③ 진단: ‘문화적 변화에 문법이 적응하지 못한다’는 ‘적응하지 못한다’는 표현을 ‘변화하지 않는다’로 오해해, 문법이 ‘변화는 하지만 문화 변화와 무관하다’는 지문의 뜻을 놓침. → 처방: ‘적응하지 못한다’와 ‘변화하지 않는다’를 구분하고, 지문에서 ‘러시아 문법이 변했지만 문화 변화와 무관하다’는 부분을 정확히 짚기.\n④ 진단: ‘문법이 절대 변하지 않는다’는 지나친 일반화를 해, 지문에서 ‘러시아 문법이 변했지만 문화 변화와 무관하다’는 한계적 변화를 무시함. → 처방: ‘절대’라는 단어를 주의하고, 지문에서 ‘변화는 있지만 문화 변화와 무관하다’는 부분을 확인해 한계적 변화를 인식하기.\n⑤ 진단: ‘문화 교류로 인한 문법 변화’가 지문의 주제가 아님을 모르고, ‘Viking disruption’ 같은 단어를 보고 선지를 선택한 듯함. → 처방: ‘문화 교류로 인한 변화’가 아니라 ‘문법이 문화 변화에 영향을 받지 않는다’는 주제를 먼저 파악하고, 지문에서 관련 없는 예시는 무시하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The stability of grammar despite cultural and ideological shifts]"
-   }
-  },
-  {
-   "ts": "2026-08-15T17:41:45.336Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "WEEK 33 DAY 5 REVIEW While ⓐ<u>each day’s story has</u> five new words, there are many others that ⓑ<u>are repeated from</u> previous weeks. These words are placed within the stories ⓒ<u>so that you may</u> practice your grasp of their meanings. Repetition will help guarantee that these words will be ⓓ<u>firmly fixed as</u> part of your ⓔ<u>ever-expanding vocabularies</u>. REVIEW WORDS DEFINITIONS 1.abjure a. stir up, instigate 2.allay b. disorderly, carelessly 3.complacent c. regretful, confessing guilt 4.connoisseur d. abstain from, renounce 5.debilitate e. weaken 6.deter f. self-satisfied 7.discreet g. discourage, hinder 8.evanescent h. bent, inclination, disposition 9.foment i. sad, gloomy 10.glean j. identical, equivalent 11.impetuous k. something hunted or pursued 12.occult l. watchful, shrewd 13.penitent m. supernatural, mysterious, secret 14.propensity n. impulsive 15.quarry o. rebuke, reprimand* 16.reproach p. momentary, passing, fleeting 17.slovenly q. prudent,* careful, cautious 18.somber r. collect, gather 19.tantamount s. expert 20.wary t. soothe, calm",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 2,
-    "explanation": "틀린 곳은 ⓒ(so that you may → so that you might), ⓔ(ever-expanding vocabularies → ever-expanding vocabulary) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘each day’s story has’의 주어·동사 일치 오류가 아니라면, ‘are repeated from’의 시제나 수 일치가 맞다고 착각했을 수 있음. ‘are’는 복수 주어에 맞는 동사지만, ‘each day’는 단수 취급이므로 ‘is repeated’가 되어야 함. → 처방: ‘each day’는 단수 주어이므로 동사는 ‘is’를 써야 한다. 문법 규칙 ‘each + 단수명사’는 단수 동사를 쓴다는 점을 기억하고, 문장을 다시 읽어보기.\n③ 진단: ‘so that you may’의 ‘may’는 가능성·허락을 나타내는 조동사지만, 문맥상 ‘can’이 더 자연스럽다고 착각했을 수 있음. 그러나 ‘may’는 문법적으로 틀리지 않으므로 오류가 아님. → 처방: ‘may’는 문법적으로 옳은 조동사이므로 오류로 보지 않는다. 조동사 선택은 문맥에 따라 달라질 수 있지만, 문법 규칙만으로는 틀리지 않음을 기억하기.\n④ 진단: ‘firmly fixed as’의 ‘as’는 ‘~로써’라는 뜻이지만, 여기서는 ‘in’이나 ‘into’가 더 자연스럽다고 착각했을 수 있음. 그러나 ‘as’는 ‘~의 상태로’라는 뜻으로 문법적으로 틀리지 않음. → 처방: ‘fixed as’는 ‘~의 상태로 고정되다’라는 뜻으로 문법적으로 옳다. 전치사 선택은 문맥에 따라 달라질 수 있지만, 문법 규칙만으로는 틀리지 않음을 기억하기.\n⑤ 진단: ‘ever-expanding vocabularies’의 ‘vocabularies’는 ‘단어 목록’이 아니라 ‘어휘력’이라는 뜻이므로 ‘vocabulary’가 되어야 한다고 착각했을 수 있음. 그러나 ‘vocabularies’는 ‘각각의 단어 목록’을 뜻할 때도 쓰이므로 문법적으로 틀리지 않음. → 처방: ‘vocabularies’는 ‘여러 단어 목록’을 뜻할 때도 문법적으로 옳다. ‘vocabulary’는 ‘어휘력’을 뜻하는 경우가 많지만, ‘목록’이라는 뜻으로도 쓰일 수 있음을 기억하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T04:04:38.173Z",
+ "updated": "2026-08-16T04:52:27.095Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T04:51:44.076Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "원서 코퍼스의 최빈 연어 패턴에서 'old english', 'english grammar', 'english language' 등 'english'가 포함된 연어가 다수 관찰된다. 또한 'present tense', 'past tense'와 같은 시제 관련 연어도 빈번히 등장한다.",
+   "rule": "원서 코퍼스에서 'english'가 포함된 연어(예: 'english grammar', 'english language')가 빈번히 사용되므로, 내신 변형문제에서는 'english'가 포함된 연어와 시제 오류(present/past tense 혼동)를 결합한 문항을 설계하라. 예를 들어, 'The grammar rules in English are more complex than in Korean.'에서 'are'를 'were'로 오용하게 하거나, 'He study English grammar every day.'에서 'study'를 'studies'로 오용하게 하는 문제가 가능하다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T04:04:12.336Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거 시제와 현재 시제가 혼용된 문장에서 시제 일치 오류가 빈번하며, 관사(a/the)나 복수형(-s) 오류가 자주 발생한다.",
    "rule": "시제 혼용 문장은 반드시 시제 일치를 확인하고, 관사와 복수형 오류는 문법적 일관성을 기준으로 교정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T00:02:57.803Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'generate from' 대신 'come from'가 자연스러운 연어 패턴이 빈번하며, 특히 'theory'와 결합할 때 'coming from'이 표준 표현이다. 또한 'results from'는 'turn out'과 결합하지 않고 독립적으로 쓰이는 경우가 많다.",
-   "rule": "'theory'가 주어일 경우, 'generate from' 대신 'come from'를 사용한 문장(예: 'the theory coming from...')을 오답으로 제시하여 연어 오류를 유도하라.",
    "sample": [
     "old english",
     "university press",
