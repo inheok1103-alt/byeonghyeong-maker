@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-16T14:42:46.466Z",
+ "updated": "2026-08-16T15:38:37.916Z",
  "count": 60,
  "rules": [
+  {
+   "rule": "원서 코퍼스 기반 영어 문법 변형 문제에서, 접속사 병렬 구조('Not only... but...', 'Although...')와 전치사 오류('in the tests' → 'on the tests'), 조동사 오류('shud' → 'should')를 반드시 점검하여 오류를 수정하는 규칙을 적용하라.",
+   "src": "코퍼스연구:원서 문체 패턴을 활용한 변형",
+   "score": 72,
+   "ts": "2026-08-16T15:38:12.449Z"
+  },
+  {
+   "rule": "1) 힌트 강도 고정을 기본 틀로 유지하되, 2) 문맥 밀도(문장 내 정보량)와 어휘 등급(고빈도/저빈도)을 매트릭스로 연동하여 문항별로 10% 단위의 가변 조정(예: 문맥 풍부 시 20%→10%, 단순 문맥 시 70%→80%)을 적용. 3) 실생활 응용형 문항에서는 힌트 강도를 30% 이하로 낮춰 맥락파악 능력을 직접 측정.",
+   "src": "회의:자동연구",
+   "ts": "2026-08-16T15:38:25.760Z"
+  },
+  {
+   "rule": "① ‘논리적 필수 한정사’(the only, this, each 등)는 반드시 포함하여 정답 범위를 엄격히 규정(e.g., \"the sole method\"). ② ‘문맥 선택적 한정사’(a/an, some, any)는 의미 왜곡 여부를 기준으로 오류 여부를 판단(e.g., \"a possible solution\" → \"solution\"으로 인정). ③ 표준화된 오류 패턴(예: 부정관사/정관사 혼동 시 0.5점 감점)을 채점자료에 명시하여 객관성 제고.",
+   "src": "회의:자동연구",
+   "ts": "2026-08-16T15:38:37.915Z"
+  },
   {
    "rule": "CEFR B1 수준 내신 변형문제에서 전치사구(예: 'on the Discovery Channel', 'in the wild')와 관사(예: 'the animals', 'a group') 사용 규칙을 필수 포함하여 출제하며, 특히 전치사 오류(On → On the, in → in the)나 관사 누락/오용(are hobbies → enjoy learning, your → you're) 문제를 직접 수정하도록 문장을 구성한다.",
    "src": "코퍼스연구:CEFR 밴드를 활용한 난이도 조정",
@@ -307,22 +323,6 @@
    "src": "코퍼스연구:실제 문법오류쌍(gec)을 활용한 어법 문항",
    "score": 72,
    "ts": "2026-08-15T17:42:26.721Z"
-  },
-  {
-   "rule": "1) BERT/RoBERTa 임베딩(0.85 Threshold) + WordNet Sense + FrameNet 맥락 분석을 기본 틀로 채택하되, 2) idiom/slang/eregister mismatch는 Frame Alignment Score(<0.3)로 자동 차단하고, 3) 다의어는 Dependency Parsing + SRL(Semantic Role Labeling)로 sense disambiguation 강화. 4) 화용론적 계층(Politeness/Register/Idiom Integrity)을 3단계 필터링(Pre-filtering→Contextual→Register Check)으로 구조화하여 내신/수능 ‘맥락 오용’ 채점 위험 최소화.",
-   "src": "회의:자동연구",
-   "ts": "2026-08-15T17:42:40.585Z"
-  },
-  {
-   "rule": "1) spaCy로 주어/목적어 동일성 확인 후, 2) 의미역 분석(인과관계·책임소재)을 통해 주체의 중요도를 판단. 3) 재귀대명사/수여동사 관여 시 by구 강제 유지. 4) 주체가 '행위 책임' 내포 시 by구 필수, '제3자/사소한 개입' 시 선택적 생략 허용.",
-   "src": "회의:자동연구",
-   "ts": "2026-08-15T17:42:52.685Z"
-  },
-  {
-   "rule": "'consist of', 'satisfy', 'point of view'와 같은 고정 연어는 문법 오류 유형으로 출제할 때, 과거 시제 동사 형태, 목적어 결합, 단수/복수 형태 오류를 반드시 포함시킨다.",
-   "src": "코퍼스연구:연어(collocation)를 활용한 오답 설계",
-   "score": 72,
-   "ts": "2026-08-15T16:48:39.807Z"
   }
  ],
  "note": "사람 승인 완료 규칙만 활성. 자동 학습 규칙은 quarantine_rules.json에서 검토·승인 후 이곳으로 이동."
