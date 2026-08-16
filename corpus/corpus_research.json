@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T09:45:37.706Z",
+ "updated": "2026-08-16T10:49:39.103Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T10:49:11.252Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'단수 명사(thing, subject) → 복수 명사(things)'나 '불필요한 전치사(시간 표현에서 un- 접두사)'처럼 문법적 일관성(grammatical agreement)이나 어휘 선택(vocabulary choice)의 오류가 빈번하다. 특히, '단수/복수'와 '전치사 생략/삽입'이 CEFR B1-B2 수준에서 자주 오류로 나타난다.",
+   "rule": "CEFR B1-B2 수준의 내신 문항에서는 '단수/복수 명사의 일치'와 '전치사의 필수적 사용(예: spend time in/on ~)'을 반드시 검증하는 문장을 출제하라. 오류 유형은 문장 내 명사 수(thing → things)나 전치사 생략(unmeaningful → in meaningless)으로 제시한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T09:45:07.402Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사 단수/복수 오류와 동사 시제·태 오류가 빈번하게 결합되어 나타나며, 특히 구어체에서 문법적 정확성이 떨어지는 경향이 있다. 또한, 인용부호 내 구두점(쉼표, 물음표) 오류가 자주 발생한다.",
    "rule": "'~ing' 형태의 동명사(gerund) 또는 명사구가 'other than', 'because of' 등 전치사구와 결합될 때는 단수/복수 명사의 정확한 형태(예: responsibility/responsibilities)를 확인하고, 문장 내 시제(present/past)와 태(active/passive) 일관성을 점검하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T12:02:03.541Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "영어에서 'be + 과거분사' 형태는 상태를 나타내지만, '~하게 하다'의 의미를 강조할 때는 능동형 동사(예: annoy → annoy, worsen → worsen)로 전환해야 한다. 또한 전치사 오용(예: 'with' → 'to')이나 소유격 오용(예: 'theirs' → 'them')은 빈번한 오류 유형이다.",
-   "rule": "원문에서 'be + 과거분사'가 상태를 나타내는 경우, 해당 동사의 능동형(예: annoy, worsen)으로 대체하여 문맥에 맞게 재구성하라. 또한 전치사나 소유격 오용이 의심될 때는 'to + 목적격' 또는 소유격 재구성을 우선 검토하라.",
    "sample": [
     "old english",
     "university press",
