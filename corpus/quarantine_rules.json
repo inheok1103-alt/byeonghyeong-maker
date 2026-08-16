@@ -1,7 +1,39 @@
 {
- "updated": "2026-08-16T20:47:24.722Z",
+ "updated": "2026-08-16T21:38:00.905Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 언어학 용어는 통일된 표준 용어(예: '보충어(complement)'/'주어(subject)')로 표기하며, 오답 선지는 오해·혼란을 최소화하도록 절대적·모호한 표현 없이 명확한 기술로 수정해야 한다.",
+   "src": "자가학습:요지",
+   "score": 81,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-16T21:35:39.975Z"
+  },
+  {
+   "rule": "모든 문항은 문법적 정확성과 오답 선지의 비중균형을 고려하여, 지문과 선지의 오류를 수정하고 오답 선지를 재배치하여 정답의 유일성을 확보해야 한다.",
+   "src": "자가학습:네모어휘ABC",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-16T21:36:10.753Z"
+  },
+  {
+   "rule": "모든 문항은 지문의 '핵심 주제(동사의 internal/external argument 구조)'를 직접·명시적으로 포괄해야 하며, 특정 이론(예: syntactic theory)이나 부분적 관계(예: 보충어-동사 관계)에 치우치지 않도록 주제의 범위와 중점을 엄격히 일치시켜야 한다.",
+   "src": "자가학습:주제",
+   "score": 74,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-16T21:36:52.898Z"
+  },
+  {
+   "rule": "주제문은 반드시 'subject', 'feature', 'arrested'를 포함하고 핵심 주장과 직접 연관된 문장으로 작성하라.",
+   "src": "자가학습:주제문완성",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-16T21:37:16.552Z"
+  },
   {
    "rule": "모든 선지의 길이를 균일하게 맞추고, 어법상 틀린 부분의 예시를 최소 2개 이상 포함하여 문제의 명확성과 난이도를 균일하게 조정하라.",
    "src": "자가학습:어법개수형",
@@ -1569,38 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-13T10:30:05.418Z"
-  },
-  {
-   "rule": "모든 문항은 지문의 핵심 논리(ought=TP 보어 요구, should=VP 보어 요구, to help you=to(T)+VP 구조)를 엄격히 반영하되, 오답 선지에는 'ought는 to+VP가 아니라 TP를 요구한다'는 점을 교묘히 왜곡하거나 과장하는 오개념 기반 선지를 최소 1개 이상 포함하여 오답의 매력도를 높여야 한다.",
-   "src": "자가학습:내용불일치",
-   "score": 74,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-13T10:30:36.501Z"
-  },
-  {
-   "rule": "모든 출제 시 주어지는 단어는 반드시 문장에 포함하고, 단어 수(축약형 제외)와 추가 단어 사용을 엄격히 통제하며, should는 'must', 'have to' 등으로 대체하거나 문장 구조를 재구성하여 조건을 준수하라.",
-   "src": "자가학습:조건영작",
-   "score": 67,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-13T10:31:08.256Z"
-  },
-  {
-   "rule": "모든 출제 지문은 수능/내신 시험의 난이도와 범위에 적합한 일반적인 주제로, 누락 없이 문법적으로 완결된 문장들로 구성되어야 한다.",
-   "src": "자가학습:전체문장배열",
-   "score": 5,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-13T08:48:02.678Z"
-  },
-  {
-   "rule": "원문 그대로의 인과관계와 구체성을 유지하며, 13단어로 정확히 재작성하라: \"Chomsky argues that person/number agreement features originate on C and are inherited from C by T.",
-   "src": "자가학습:조건영작",
-   "score": 75,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-13T08:52:31.618Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
