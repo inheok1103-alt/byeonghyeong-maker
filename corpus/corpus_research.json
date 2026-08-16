@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T07:08:56.084Z",
+ "updated": "2026-08-16T07:49:30.427Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T07:48:58.929Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 '명사구 + 동사 + 목적어' 구조가 빈번하며, 특히 관사(a/the)나 동사변화(3인칭 단수 현재형, 진행형) 오류가 자주 발생함을 확인했다.",
+   "rule": "원서 코퍼스 패턴을 반영하여, '명사구 + 동사(3인칭 단수 현재형) + 목적어' 구조의 문장을 출제할 때에는 관사(a/the) 유무와 동사의 시제(현재형 vs 진행형)를 반드시 확인하여 오류를 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T07:08:24.500Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'year after year'와 같은 반복적 연어(Recurrent Collocation)에서 'after' 뒤 명사 생략 오류가 빈번하며, 'teach'→'teaches'와 같이 3인칭 단수 동사 형태 오류도 주목할 만하다. 또한 'dangerous it is'처럼 보어+주어 역순 오류가 문법적 혼란을 초래한다.",
    "rule": "'A after A' 형태의 반복적 연어(예: year after year, day after day)에서 'after' 뒤 명사를 생략하지 않도록 하며, 특히 3인칭 단수 주어 뒤 동사는 '-s' 형태를 필수적으로 사용하도록 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T06:50:37.451Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어에서 고유명사(Real Politik, Bismarck 등)는 대문자로 표기해야 하지만, 일반명사(real politics, Bismark)는 소문자로 표기해야 한다. 또한, 중복 표현(I think advertisements are make → I think advertisements make)을 제거해야 한다.",
-   "rule": "고유명사와 일반명사를 구별하여 대소문자 표기 규칙을 적용하고, 중복된 동사(are make → make)나 중복 표현을 제거하여 문법적으로 정확한 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",
