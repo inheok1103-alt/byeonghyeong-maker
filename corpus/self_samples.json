@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-16T03:15:35.250Z",
+ "updated": "2026-08-16T04:04:38.178Z",
  "samples": [
+  {
+   "ts": "2026-08-16T04:04:04.533Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Quiz 1-4 A. Fill in each blank with the correct letter: a. grave b. gravitate c. gravitas d. aggravate e. alleviate f. cantilever g. levity h. elevation 1. Even the smallest motion would ___ the pain in his shoulder. 2. She hesitated to step onto the balcony, which was supported by a single ___. 3. At their father's funeral they showed the same solemn ___ at which they had often laughed during his lifetime. 4. To relieve the swelling, the doctor recommended ___ of her legs several times a day. 5. Attracted magically by the music, all animals and natural objects would ___ toward the sound of Orpheus's lyre. 6. With the two armies moving toward the border, they knew the situation was ___. 7. The neighboring nations organized an airlift of supplies to ___ the suffering caused by the drought. 8. The board meeting ended in an unusual mood of ___ when <u>a man in a gorilla suit burst in</u>. Answers",
+    "choices": [
+     "A person dressed as a gorilla came into the space, indicating the start of an important event.",
+     "Because the formal proceedings were disrupted, a man in a gorilla suit burst in to relieve the tension.",
+     "The man dressed in a gorilla costume entered the room quietly, causing no disruption to the ongoing formal meeting.",
+     "The unexpected and absurd interruption disrupted the formal proceedings and brought an unplanned, humorous relief to the tense atmosphere.",
+     "A man in a gorilla suit occasionally entered the room to provide a momentary distraction from the serious discussions."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'The unexpected and absurd interruption disrupted the formal proceedings and brought an unplanned, humorous relief to the tense atmosphere.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 'levity'는 '무거운 분위기를 가볍게 하다'는 뜻인데, 이 선지는 '중요한 행사가 시작됐다'는 뜻으로 오해한 것 같다. 'levity'가 '장례식' 같은 무거운 자리에서도 쓰인다는 점을 놓쳤다. → 처방: 단어의 의미를 정확히 기억하고, 문맥(장례식)에서의 'levity'가 어떤 효과를 내는지 생각해보기.\n② 진단: 지문에서 'levity'는 '장례식' 같은 무거운 자리에서 '장례식 분위기를 가볍게 하다'는 뜻인데, 이 선지는 '장례식을 방해한 이유'로 오해한 것 같다. 'levity'가 '장례식' 자체를 방해한 것이 아니라 분위기를 가볍게 했다는 점을 놓쳤다. → 처방: 문맥에서 'levity'가 어떤 효과를 내는지 정확히 짚고, 그 효과가 왜 '장례식' 같은 무거운 자리에서 쓰이는지 생각해보기.\n③ 진단: 지문에서 'levity'는 '장례식' 같은 무거운 자리에서 '장례식 분위기를 가볍게 하다'는 뜻인데, 이 선지는 '장례식을 방해한 이유'로 오해한 것 같다. 'levity'가 '장례식' 자체를 방해한 것이 아니라 분위기를 가볍게 했다는 점을 놓쳤다. → 처방: 문맥에서 'levity'가 어떤 효과를 내는지 정확히 짚고, 그 효과가 왜 '장례식' 같은 무거운 자리에서 쓰이는지 생각해보기.\n⑤ 진단: 지문에서 'levity'는 '장례식' 같은 무거운 자리에서 '장례식 분위기를 가볍게 하다'는 뜻인데, 이 선지는 '장례식을 방해한 이유'로 오해한 것 같다. 'levity'가 '장례식' 자체를 방해한 것이 아니라 분위기를 가볍게 했다는 점을 놓쳤다. → 처방: 문맥에서 'levity'가 어떤 효과를 내는지 정확히 짚고, 그 효과가 왜 '장례식' 같은 무거운 자리에서 쓰이는지 생각해보기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-16T03:13:54.910Z",
    "type": "본문찾아쓰기",
@@ -329,25 +364,6 @@
     ],
     "answer": 2,
     "explanation": "틀린 곳은 ⓒ(so that you may → so that you might), ⓔ(ever-expanding vocabularies → ever-expanding vocabulary) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘each day’s story has’의 주어·동사 일치 오류가 아니라면, ‘are repeated from’의 시제나 수 일치가 맞다고 착각했을 수 있음. ‘are’는 복수 주어에 맞는 동사지만, ‘each day’는 단수 취급이므로 ‘is repeated’가 되어야 함. → 처방: ‘each day’는 단수 주어이므로 동사는 ‘is’를 써야 한다. 문법 규칙 ‘each + 단수명사’는 단수 동사를 쓴다는 점을 기억하고, 문장을 다시 읽어보기.\n③ 진단: ‘so that you may’의 ‘may’는 가능성·허락을 나타내는 조동사지만, 문맥상 ‘can’이 더 자연스럽다고 착각했을 수 있음. 그러나 ‘may’는 문법적으로 틀리지 않으므로 오류가 아님. → 처방: ‘may’는 문법적으로 옳은 조동사이므로 오류로 보지 않는다. 조동사 선택은 문맥에 따라 달라질 수 있지만, 문법 규칙만으로는 틀리지 않음을 기억하기.\n④ 진단: ‘firmly fixed as’의 ‘as’는 ‘~로써’라는 뜻이지만, 여기서는 ‘in’이나 ‘into’가 더 자연스럽다고 착각했을 수 있음. 그러나 ‘as’는 ‘~의 상태로’라는 뜻으로 문법적으로 틀리지 않음. → 처방: ‘fixed as’는 ‘~의 상태로 고정되다’라는 뜻으로 문법적으로 옳다. 전치사 선택은 문맥에 따라 달라질 수 있지만, 문법 규칙만으로는 틀리지 않음을 기억하기.\n⑤ 진단: ‘ever-expanding vocabularies’의 ‘vocabularies’는 ‘단어 목록’이 아니라 ‘어휘력’이라는 뜻이므로 ‘vocabulary’가 되어야 한다고 착각했을 수 있음. 그러나 ‘vocabularies’는 ‘각각의 단어 목록’을 뜻할 때도 쓰이므로 문법적으로 틀리지 않음. → 처방: ‘vocabularies’는 ‘여러 단어 목록’을 뜻할 때도 문법적으로 옳다. ‘vocabulary’는 ‘어휘력’을 뜻하는 경우가 많지만, ‘목록’이라는 뜻으로도 쓰일 수 있음을 기억하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T16:47:52.383Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "We can then say that the infinitive subject him is assigned accusative case by the complementiser for in structures like (67) in exactly the same way as the accusative subject them is assigned accusative case by the complementiser for in the bracketed complement clause in (64). (How case-marking works will be discussed in §3.9.) One way of accounting for why the complementiser isn’t overtly spelled out as for in structures like (67) is to suppose that it is given a null spellout (and thereby has its phonetic features deleted) when introducing the complement of a verb like want: we can accordingly refer to verbs like want as for-deletion verbs. For speakers of varieties of English such as mine, for-deletion is obligatory when the for-clause immediately follows a verb like want, but cannot apply when the for-clause is separated from want in some way – as the examples below illustrate:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]

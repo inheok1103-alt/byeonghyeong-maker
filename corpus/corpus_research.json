@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T03:15:35.246Z",
+ "updated": "2026-08-16T04:04:38.173Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T04:04:12.336Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거형·현재형 동사(are not agree → may not agree)나 단수·복수 명사(reasons → these reasons) 오류가 연어 패턴과 결합된 경우가 많다. 또한 전치사나 접속사(however → but) 오류도 연어 기반으로 자주 발생한다.",
+   "rule": "연어 기반 오답 설계 시, 'are not agree'(X) → 'may not agree'(O), 'for this reasons'(X) → 'for these reasons'(O)처럼 해당 연어의 표준 패턴(동사형, 수 일치, 전치사/접속사 사용)을 위반한 오답을 1개 이상 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T03:15:09.748Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'generate from' 대신 'come from'가 자연스러운 연어 패턴이 빈번하며, 특히 'theory'와 결합할 때 'coming from'이 표준 표현이다. 또한 'results from'는 'turn out'과 결합하지 않고 독립적으로 쓰이는 경우가 많다.",
    "rule": "'theory'가 주어일 경우, 'generate from' 대신 'come from'를 사용한 문장(예: 'the theory coming from...')을 오답으로 제시하여 연어 오류를 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-12T23:06:13.896Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'furious'와 같은 감정형용사는 보통 비교대상이 되는 명사(예: 'world')와 직접 호응하지 않으며, 'serious'와 같은 속성형용사가 더 자연스럽게 쓰인다. 또한, 'fact'는 복수형 'facts'로 일반화하는 것이 문법적으로 옳고, 'want' 뒤에는 동사원형이 아닌 'to + 동사원형'이 와야 한다.",
-   "rule": "'감정형용사(예: furious, angry)'는 비교대상이 되는 명사와 직접 호응하지 않으므로, 'serious', 'important' 등 속성형용사로 대체하거나 비교구조를 명확히 한다. 또한, 'want' 뒤에는 동사원형이 아닌 'to + 동사원형'을 사용하며, 'fact'는 복수형 'facts'로 일반화한다.",
    "sample": [
     "old english",
     "university press",
