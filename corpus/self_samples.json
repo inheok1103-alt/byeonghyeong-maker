@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-16T21:38:00.910Z",
+ "updated": "2026-08-16T22:39:54.634Z",
  "samples": [
+  {
+   "ts": "2026-08-16T22:38:42.091Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답-오답 근접(64%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "Infinitival to (by virtue of being the head of the overall structure and being active) serves as a probe and identifies both there and several prizes as active goals (there being active by virtue of its uninterpretable person feature, and several prizes by virtue of its uninterpretable case feature). Person agreement between the probe to and its two third-person goals (there and several prizes) results in the unvalued person feature on to being valued as third-person via (7) and deleted via (13). The unvalued case-feature on the goal several prizes cannot be valued or deleted by infinitival to, given our earlier assumption that to is a defective probe which cannot value or delete an unvalued case feature on a goal. [ ] If this gets deleted at this point, there will be inactivated at the end of the T-cycle, once it has moved to become the specifier of infinitival to: and this will wrongly predict that sentences such as the following should be grammatical:",
+    "choices": [
+     "The uninterpretable person feature on expletive there is automatically deleted without any intervention.",
+     "Infinitival to can value and delete the uninterpretable person feature on expletive there just as it does with case features.",
+     "The uninterpretable person feature on expletive there is irrelevant to the grammaticality of sentences involving infinitival to.",
+     "How then can the uninterpretable person feature on expletive there be resolved if infinitival to cannot value or delete it?",
+     "Expletive there must always retain its uninterpretable person feature to remain grammatically valid."
+    ],
+    "answer": 4,
+    "explanation": "빈칸에는 원문 'But what about the uninterpretable person feature on expletive there?'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'there 의 uninterpretable person feature 는 infinitival to 가 해결하지 못하고, T-사이클 말기에 inactivated 된다고 했다. 그런데 ①은 '자동으로 삭제된다'고 오해한 듯하다. 지문은 to 가 해결하지 못한다고 명시했다. → 처방: 지문에서 to 가 해결하지 못하는 feature 는 무엇인지 정확히 짚고, to 의 역할과 한계를 다시 한 번 정리해 읽어보기.\n② 진단: 지문은 to 가 case feature 는 해결하지 못한다고 했지만, ②은 to 가 person feature 도 case feature 처럼 해결할 수 있다고 착각한 듯하다. 지문은 to 가 defective probe 라 person feature 는 해결하지만 case feature 는 해결하지 못한다고 분명히 했다. → 처방: to 의 probe 로서의 능력과 한계를 구분해서 정리하고, 지문에서 'defective probe'가 무엇을 뜻하는지 다시 확인하기.\n③ 진단: 3번은 there 의 uninterpretable person feature 가 문법성에 영향을 주지 않는다고 주장하는데, 지문은 이 feature 가 inactivated 되어야 문법성이 유지된다고 했다. 학생은 이 feature 의 중요성을 오해한 듯하다. → 처방: there 의 uninterpretable person feature 가 문법성에 미치는 영향을 정리하고, inactivated 가 어떤 의미인지 이해하기.\n⑤ 진단: 5번은 there 가 uninterpretable person feature 를 '항상' 유지해야 한다고 주장하는데, 지문은 to 가 person feature 를 해결한다고 했다. 학생은 to 의 역할을 무시한 듯하다. → 처방: to 가 person feature 를 해결하는 과정을 다시 읽고, there 의 feature 가 inactivated 되는 시점을 정확히 파악하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-16T21:35:59.202Z",
    "type": "요지",
@@ -320,25 +355,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 조지와 엘리자베스의 논쟁은 조지의 끊임없는, 고질적인 어리석음을 지적하면서 신랄해졌다. (구문 포인트: 시간을 나타내는 부사절(when절) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T17:36:45.720Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] The (remote, ubiquitous) mayor was photographed in four different parts of the city yesterday.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Only the ubiquitous mayor was photographed in four different parts of the city yesterday. (포인트: Only 강조로 주어-조동사 도치('was'가 'Only the ubiquitous mayor' 앞에 옴))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
