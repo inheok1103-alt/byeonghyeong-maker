@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-16T16:45:26.908Z",
+ "updated": "2026-08-16T17:37:23.662Z",
  "samples": [
+  {
+   "ts": "2026-08-16T17:36:45.720Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] The (remote, ubiquitous) mayor was photographed in four different parts of the city yesterday.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Only the ubiquitous mayor was photographed in four different parts of the city yesterday. (포인트: Only 강조로 주어-조동사 도치('was'가 'Only the ubiquitous mayor' 앞에 옴))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-16T16:45:01.150Z",
    "type": "우리말해석",
@@ -287,39 +306,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] literature (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T09:44:52.127Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "We can account for this if we suppose that ⓐ<u>pragmatic</u> ⓑ<u>restrictions</u> on the ⓒ<u>choice</u> of admissible arguments for a given predicate depend jointly on the semantic properties of the predicate and the thematic role of the ⓓ<u>argument</u>: it will then follow that two expressions which fulfil the same thematic role in respect of a given ⓔ<u>predicate</u> will be subject to the same pragmatic restrictions on argument choice. Since passive subjects like those italicised in (64a) originate as complements, they will have the same θ-role (and so be subject to the same pragmatic restrictions on argument choice) as active complements like those italicised in (64b). We can arrive at the same conclusion (that passive subjects originate as thematic complements) on theoretical grounds. It seems reasonable to suppose that principles of UG correlate thematic structure with syntactic structure in a uniform fashion: this assumption is embodied in the Uniform Theta Assignment",
-    "choices": [
-     "pragmatic: A man of business.",
-     "restrictions: The act of restricting, or the state of being restricted.",
-     "choice: A postage stamp that is part of a thematic collection.",
-     "argument: A fact or statement used to support a proposition; a reason.",
-     "predicate: (grammar) The part of the sentence (or clause) which states something about the "
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ의 풀이는 'thematic'의 정의이다. 'choice'의 올바른 풀이: An option; a decision; an opportunity to choose or select something.\n[오답 진단·처방]\n① 진단: ‘pragmatic’이 ‘사업가의’로 오해한 것으로 보입니다. 지문에서 ‘pragmatic’는 ‘실용적인’(실제 언어 사용 맥락에서 제약이 생기는 이유)을 뜻합니다. 영어 단어 뜻풀이가 잘못된 경우입니다. → 처방: ‘pragmatic’이 ‘실용적인’이라는 뜻임을 기억하고, 문맥(언어 사용의 제약)에서 ‘실용적’으로 해석하는 연습을 하세요.\n② 진단: ‘restrictions’이 ‘제한하는 행위나 상태’를 뜻하는지 혼동한 것 같습니다. 지문에서도 ‘제약’을 뜻하는 ‘pragmatic restrictions’이란 표현이 나옵니다. → 처방: ‘restrictions’를 ‘제한’이라는 뜻으로만 기억하지 말고, 문장에서 ‘제한’이 ‘무엇을 제한하는지’(예: ‘pragmatic restrictions’)를 함께 떠올리세요.\n④ 진단: ‘argument’를 ‘주장이나 이유’를 뜻하는지 오해한 것 같습니다. 지문에서 ‘admissible arguments’는 ‘허용 가능한 논증(주어/목적어)’을 뜻합니다. → 처방: ‘argument’를 ‘논증’이 아니라 ‘주어/목적어’로도 쓸 수 있음을 기억하고, 문맥(‘admissible arguments for a predicate’)에서 의미를 찾아보세요.\n⑤ 진단: ‘predicate’를 ‘문장의 주어/목적어’를 뜻하는지 혼동한 것 같습니다. 지문에서 ‘predicate’는 ‘동사’(서술어)를 뜻합니다. → 처방: ‘predicate’를 ‘서술어’로만 기억하지 말고, 문장에서 ‘~이다’, ‘~하다’로 대체되는 부분을 찾는 연습을 하세요.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
