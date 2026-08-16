@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-16T04:52:27.099Z",
+ "updated": "2026-08-16T05:53:25.307Z",
  "samples": [
+  {
+   "ts": "2026-08-16T05:52:48.118Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 2문항(요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "Part II Contextual Analysis I . Explicit Cues Question No.1 Synonyms: Choose the correct answer : 1- The detectives were deluded by all the false evidence . They were completely deceived and they arrested the wrong person. Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony. Excruciating means _____________ a) painful. b) wonderful c) hurtful 3-Inveterate gamblers are habitual customers at the race track betting widows. Inveterate means ____________ a) ancient b) regular c) casual 4- Our plane tickets were voided when the airline ticket agent declared that the airport was closed . Therefore , all reservations were cancelled . voided means ___________ a) reserved b) stolen c ) not valid 5-Although the insurrection began in the rural areas , the rebellion quickly spread throughout the cities . Insurrection means _________ a) elections b) revolt c) journey.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-16T04:51:00.238Z",
    "type": "글의순서",
@@ -320,41 +339,6 @@
     ],
     "answer": 2,
     "explanation": "정답 조합: (A) selected - (B) defective - (C) inherited. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 (A)는 'C-constituent that'이 TP 를 '선택'한다고 나와 있는데, 학생은 이를 '거부'로 오독하여 선택된 상황을 반대로 이해했다. (B)는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 지문이 명시하지만, 학생은 '완전(perfect)'으로 오해했다. → 처방: 지문의 'selected/rejected'와 'defective/perfect' 구분을 정확히 읽고, '선택 vs 거부', '결함 vs 완전'의 의미를 문맥에서 확인한 뒤 답안을 선택할 것.\n③ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 거부한다고 지문에서 명시된 부분을 잘못 읽었다. (B)에서는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 이해하지 못하고 '완전(perfect)'으로 오해했다. → 처방: (A)는 지문에서 'selected'로 나와 있으니 '선택'을, (B)는 'defective'로 나와 있으니 '결함이 있는'을 정확히 짚고 답안을 고를 것.\n④ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 거부한다고 지문에서 명시된 부분을 잘못 읽었다. (C)에서 'divested'가 아닌 'inherited'가 맞는 표현임을 파악하지 못했다. → 처방: (C)는 지문에서 'inherited'가 세 가지 비유로 설명된 표현이므로, 'inherited'가 옳음을 확인하고 답안을 선택할 것.\n⑤ 진단: 학생은 (A)에서 'C-constituent that'이 TP 를 선택한다고 지문에서 명시된 부분을 '거부'로 오독했다. (B)에서는 'to'가 agreement features 가 없다는 점에서 '결함이 있는(defective)' 상태임을 이해하지 못하고 '완전(perfect)'으로 오해했다. (C)에서도 'divested'가 아닌 'inherited'가 맞는 표현임을 파악하지 못했다. → 처방: 지문의 (A)·(B)·(C) 각각의 의미를 문맥에서 정확히 짚고, '선택 vs 거부', '결함 vs 완전', 'inherited vs divested'의 구분을 명확히 한 뒤 답안을 고를 것.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-15T21:42:22.963Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "Given the assumptions we made in chapter 7, the bracketed TP in (32a) is selected by the C-constituent that, and the head T of TP is the auxiliary has which carries a complete set of person/number agreement features. By contrast, the TP in the raising structure in (32b) is not selected by C, and its head T constituent to is defective in that it does not carry a complete set of agreement features. Reasoning thus, Chomsky concludes that the person/number agreement features of T must originate on C, and subsequently ‘be inherited by’ or ‘be handed over to’, or ‘percolate down onto’ (three different metaphors expressing the same idea) the T constituent immediately beneath C. Chomsky argues that in the same way, the agreement features carried by a transitive V (which enable it to assign accusative case to a goal within its domain) are inherited from the light-verb which is the head of the relevant vP phase (transitive vPs being phases). One reason for thinking this can be illustrated in relation to the following contrast:",
-    "choices": [
-     "TP 의 머리 T 는 결함이 있는 조동사 'has'를 갖는다",
-     "C 구성체가 TP 를 선택하지 않는 raising 구조에서 TP 의 머리 T 는 완전한 기능을 한다",
-     "T 의 인칭·수 일치 기능은 C 로부터 물려받거나 전달되지 않는다고 촘스키는 주장한다",
-     "타동사 V 의 일치 기능은 vP 상의 경동사가 아닌 명사에서 상속된다는 촘스키의 주장을 제시한다",
-     "타동사 V 는 목적어에게서 격을 부여할 수 있도록 일치 기능을 보유한다"
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: TP 의 머리 T 가 'has'를 갖는 것은 (32a)의 경우로, 지문에서 '(32a)의 TP 는 C-구성체가 선택하며 T 는 완전한 일치 기능을 가진 조동사 has 를 갖는다'고 밝히므로, '결함이 있는'이라는 말은 지문과 맞지 않는다. → 처방: TP 의 머리 T 가 어떤 조동사를 갖는지, 그것이 완전하거나 결함이 있는지 지문의 설명을 정확히 짚고 넘어가라.\n② 진단: C 가 TP 를 선택하지 않는 raising 구조에서 TP 의 머리 T 는 'to'로 지문에서 'defective(결함 있는)'라고 설명하므로, '완전한 기능을 한다'는 말은 지문과 반대된다. → 처방: raising 구조에서 T 가 'to'라는 점과 그 결함 여부를 지문에서 다시 확인하라.\n③ 진단: 지문에서 촘스키는 T 의 인칭·수 일치 기능이 C 로부터 '상속'된다고 주장하는데, '전달되지 않는다'는 말은 이 주장과 완전히 반대된다. → 처방: 촘스키의 주장이 '상속' 개념임을 기억하고, 지문의 핵심 주장과 선지의 내용을 정확히 연결하라.\n④ 진단: 지문에서 타동사 V 의 일치 기능은 '경동사(light-verb)'에서 상속된다고 설명하는데, '명사에서 상속'이라는 말은 지문 내용과 전혀 맞지 않는다. → 처방: 타동사 V 의 일치 기능이 어디서 오는지 지문의 설명을 꼼꼼히 읽고, '경동사'와 '명사'를 혼동하지 않도록 하라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
