@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T15:38:37.919Z",
+ "updated": "2026-08-16T16:45:26.904Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T16:45:03.272Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'old'와 'age'는 'old age'로 고정 연어(collocation)로 쓰이며, 'loose'는 'lose'로, 'oldage'는 'old age'로 분리되어야 한다. 또한 'form'은 'from'으로, 'term work'는 'team work'로 교정되어야 한다.",
+   "rule": "시제(present/past tense) 오류와 연어(collocation) 오류를 혼합한 문항을 설계할 때는, 'have/has + 과거분사' 구조와 'old age', 'lose/loose', 'from/form' 등 고정 연어를 반드시 포함시켜 오답지를 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T15:38:12.449Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'for skin'과 'of life'처럼 무생물 명사 뒤에는 전치사 'for'/'in'이 더 자연스럽고, 'want' 뒤에는 동명사(to develop/sell)가 아닌 원형동사가 오면 오류가 된다. 실제 오류는 전치사 선택과 동사 형태에서 빈번하다.",
    "rule": "'무생물 명사 + for/in'과 'want + 동사원형' 패턴을 문항에 반드시 포함하여, 전치사 선택 오류와 동사 형태 오류를 검증하는 문장을 1개씩 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T19:31:08.749Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'half than'이나 'give up' 같은 비표준 연어는 실제 오용으로 나타나며, 특히 비교급 구조와 동사-목적어 결합에서 오류가 빈번하다. 또한 'because' 다음 이유 제시 시 시간·상태 변화의 논리적 연결이 약한 경우가 많다.",
-   "rule": "비교급 구조에서는 'A is half than B'가 아닌 'A is half as much/many as B'로 표준화하고, 'give up'은 'give it up'으로 목적어 위치에 대명사를 삽입하도록 변형 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",

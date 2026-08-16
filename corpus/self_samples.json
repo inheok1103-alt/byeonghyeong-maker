@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-16T15:38:37.923Z",
+ "updated": "2026-08-16T16:45:26.908Z",
  "samples": [
+  {
+   "ts": "2026-08-16T16:45:01.150Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] The sister who was born in India is my father’s sister, not my sister.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 인도에서 태어난 사람은 내 아버지의 여동생으로, 내 여동생이 아니다. (구문 포인트: 관계사절(정의적 용법) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-16T15:37:42.122Z",
    "type": "어휘(밑줄)",
@@ -301,25 +320,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ의 풀이는 'thematic'의 정의이다. 'choice'의 올바른 풀이: An option; a decision; an opportunity to choose or select something.\n[오답 진단·처방]\n① 진단: ‘pragmatic’이 ‘사업가의’로 오해한 것으로 보입니다. 지문에서 ‘pragmatic’는 ‘실용적인’(실제 언어 사용 맥락에서 제약이 생기는 이유)을 뜻합니다. 영어 단어 뜻풀이가 잘못된 경우입니다. → 처방: ‘pragmatic’이 ‘실용적인’이라는 뜻임을 기억하고, 문맥(언어 사용의 제약)에서 ‘실용적’으로 해석하는 연습을 하세요.\n② 진단: ‘restrictions’이 ‘제한하는 행위나 상태’를 뜻하는지 혼동한 것 같습니다. 지문에서도 ‘제약’을 뜻하는 ‘pragmatic restrictions’이란 표현이 나옵니다. → 처방: ‘restrictions’를 ‘제한’이라는 뜻으로만 기억하지 말고, 문장에서 ‘제한’이 ‘무엇을 제한하는지’(예: ‘pragmatic restrictions’)를 함께 떠올리세요.\n④ 진단: ‘argument’를 ‘주장이나 이유’를 뜻하는지 오해한 것 같습니다. 지문에서 ‘admissible arguments’는 ‘허용 가능한 논증(주어/목적어)’을 뜻합니다. → 처방: ‘argument’를 ‘논증’이 아니라 ‘주어/목적어’로도 쓸 수 있음을 기억하고, 문맥(‘admissible arguments for a predicate’)에서 의미를 찾아보세요.\n⑤ 진단: ‘predicate’를 ‘문장의 주어/목적어’를 뜻하는지 혼동한 것 같습니다. 지문에서 ‘predicate’는 ‘동사’(서술어)를 뜻합니다. → 처방: ‘predicate’를 ‘서술어’로만 기억하지 말고, 문장에서 ‘~이다’, ‘~하다’로 대체되는 부분을 찾는 연습을 하세요.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T08:49:52.806Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 그는 챔피언의 힘에 대한 경멸감으로 대변에서 튀어나왔다.\n주어진 단어: ( sprang / stool / disdain )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] He sprang from his stool with disdain for the champion’s strength. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
