@@ -1,6 +1,94 @@
 {
- "updated": "2026-08-16T18:50:21.338Z",
+ "updated": "2026-08-16T19:39:24.437Z",
  "samples": [
+  {
+   "ts": "2026-08-16T19:36:14.235Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Lesson 5: The Perfect 67 Geek: Ooh, very smooth! <u>I’ve got to hand it to you Denis, you are a fast learner.</u> A bit of a show-off, but a fast learner indeed. Denis: Thank-you. I will take that as a compliment. See youtomorrow? Geek: See you tomorrow. Exercises, Lesson 5 EXERCISE 1: THE PRESENT TENSES Fill in the blank with the correct form of the verb in parentheses. Choose between the present perfect, the simple present, or the present progressive. 1. We —————0— (study) French since kindergarten. 2. Mr. Whitman —————0— (teach) at this school for the past six years. 3. I hear footsteps. I —————0— (think) someone —————0— (come) up the stairs. 4. My dad —————0— (deposit) money in my account at the beginning of each week. He —————0— (do) this until I find a full-time job. 5. I —————0— (travel) to New York many times in my life. I intend to go again. 6. Every winter it —————0— (snow) in Quebec and —————0— (rain) in Vancouver. 7. My cousins —————0— (be) in town for the past two days. 8. You —————0— (make) great progress in your English skills since the beginning of the course.",
+    "choices": [
+     "I often recognize that you are a very fast learner.",
+     "I have to physically give you the item Denis, you are a fast learner.",
+     "I sincerely acknowledge your quick ability to learn.",
+     "I occasionally have to admit Denis, you are a quick learner.",
+     "I must blame you Denis, because your fast learning is causing problems."
+    ],
+    "answer": 3,
+    "explanation": "밑줄 친 부분은 'I sincerely acknowledge your quick ability to learn.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘I’ve got to hand it to you’는 ‘너에게 인정한다’는 뜻인데, ‘often recognize’를 ‘자주 알아차린다’로 오해해 ‘자주’라는 빈도를 넣었다. → 처방: ‘I’ve got to hand it to you’는 ‘인정하다’라는 뜻이므로, ‘자주’라는 말은 쓰지 말고 ‘진짜로’라는 뜻으로만 해석하자.\n② 진단: ‘hand’의 뜻이 ‘물건을 주다’로만 떠올라 ‘물리적으로 건네준다’고 오해했는데, 여기서는 ‘인정하다’라는 뜻으로 쓰였다. → 처방: ‘hand’의 뜻을 ‘물리적 행동’이 아니라 ‘인정하다’라는 뜻으로만 기억하고, 문맥에 맞게 쓰자.\n④ 진단: ‘have to’는 ‘~해야 한다’라는 강제적 의미로만 읽어 ‘가끔씩 인정해야 한다’고 오해했는데, 여기서는 ‘진짜로’라는 뜻으로 쓰였다. → 처방: ‘have to’의 강제적 의미가 아니라 ‘진짜로’라는 뜻으로만 해석하고, 문맥에 맞게 풀자.\n⑤ 진단: ‘got to’는 ‘~해야 한다’라는 의미로만 읽어 ‘너를 비난해야 한다’고 오해했는데, 여기서는 ‘인정하다’라는 뜻으로 쓰였다. → 처방: ‘got to’의 강제적 의미를 버리고, ‘I’ve got to’는 ‘I really must’라고만 기억하고 풀자.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-16T19:36:43.049Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/3 다수결 4번(기록 3번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Lesson 5: The Perfect 67 Geek: Ooh, very smooth! I’ve (A) [go to / got to] hand it to you Denis, you are a fast learner. A bit of a show-off, but a fast learner indeed. Denis: Thank-you. I will take that as a compliment. See (B) [you tomorrow / youtomorrow]? Geek: See you tomorrow. Exercises, Lesson 5 EXERCISE 1: THE PRESENT TENSES Fill in the blank with the correct form of the verb in parentheses. Choose between the present perfect, the simple present, or the present progressive. 1. We —————0— (study) French since kindergarten. 2. Mr. Whitman —————0— (teach) at this school for the past six years. 3. I hear footsteps. I —————0— (think) someone (C) [—————0— (comes) / —————0— (come)] up the stairs. 4. My dad —————0— (deposit) money in my account at the beginning of each week. He —————0— (do) this until I find a full-time job. 5. I —————0— (travel) to New York many times in my life. I intend to go again. 6. Every winter it —————0— (snow) in Quebec and —————0— (rain) in Vancouver. 7. My cousins —————0— (be) in town for the past two days. 8. You —————0— (make) great progress in your English skills since the beginning of the course.",
+    "choices": [
+     "(A) got to - (B) you tomorrow - (C) —————0— (comes)",
+     "(A) got to - (B) youtomorrow - (C) —————0— (comes)",
+     "(A) got to - (B) youtomorrow - (C) —————0— (come)",
+     "(A) got to - (B) you tomorrow - (C) —————0— (come)",
+     "(A) go to - (B) you tomorrow - (C) —————0— (come)"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) got to - (B) youtomorrow - (C) —————0— (come). 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 ‘go to’는 문법적으로 틀리지만 학생은 ‘have to’의 축약형 ‘got to’와 혼동했을 가능성이 있다. ‘(B)’는 띄어쓰기 오류(‘youtomorrow’)를 범했으며, ‘(C)’는 ‘comes’(3인칭 단수 현재형)를 선택해 ‘think someone comes’의 구조를 오해한 듯하다. → 처방: ‘have to’의 축약형 ‘got to’를 ‘go to’와 구분해 기억하고, ‘see you tomorrow’처럼 띄어쓰기 규칙을 다시 공부하라.\n② 진단: ‘(A)’는 ‘got to’로 옳지만 ‘(B)’에서 ‘youtomorrow’를 붙여 썼고, ‘(C)’는 ‘comes’를 선택해 ‘think someone comes’의 문법적 오류를 범했다. 학생은 ‘think’ 뒤의 절에서 주어와 동사의 일치를 오해한 듯하다. → 처방: ‘think + someone + 동사원형’ 구조(예: ‘I think he come’)를 연습해 ‘think someone comes’가 틀린 이유를 명확히 이해하라.\n③ 진단: ‘(A)’는 ‘got to’로 옳지만 ‘(B)’에서 띄어쓰기 오류를 범했고, ‘(C)’는 ‘come’을 선택해 ‘think someone come’의 구조를 오해했다. 학생은 ‘think’ 뒤의 절에서 동사의 형태(원형 vs. 3인칭 단수)를 혼동한 듯하다. → 처방: ‘think’ 뒤의 절에서는 동사가 원형으로 쓰인다는 규칙을 다시 확인하고, ‘someone come’이 아니라 ‘someone comes’가 틀린 이유를 설명할 수 있도록 연습하라.\n⑤ 진단: ‘(A)’에서 ‘go to’는 문법적으로 틀리지만 학생은 ‘have to’의 의미를 ‘go to’로 오해했을 가능성이 있다. ‘(B)’는 띄어쓰기 오류를 범했고, ‘(C)’는 ‘comes’를 선택해 ‘think someone comes’의 구조를 오해한 듯하다. → 처방: ‘have to’의 의미를 ‘~해야 한다’로 정확히 이해하고, ‘go to’는 ‘~에 가다’라는 뜻임을 구분해 기억하라. 띄어쓰기 규칙도 다시 공부하라."
+   }
+  },
+  {
+   "ts": "2026-08-16T19:36:46.301Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 8 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'consistent', 'dedication', 'Learning' / 6~10단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Learning a language requires consistent practice and dedication.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 6~10단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-16T18:48:47.898Z",
    "type": "목적",
@@ -232,79 +320,6 @@
     ],
     "answer": 3,
     "explanation": "정답 조합: (A) cursory - (B) CURTAIL - (C) CYNIC. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A) thorough’를 ‘충분한 노력’을 뜻하는 것으로 오해한 듯하다. 지문에서 ‘cursory’는 ‘대충 하는’ 뜻으로, ‘시시한 단어 몇 개 외우고 포기하는’ 행동을 설명한다. → 처방: ‘cursory’는 ‘대충 하는’, ‘thorough’는 ‘철저한’이므로 문맥에 맞게 ‘cursory’를 써야 한다.\n② 진단: ‘(B) CURTAIL’을 ‘줄이다’라는 뜻으로만 알고 ‘prioritize’를 떠올린 듯하다. 지문에서 ‘cursory attempt’을 ‘give up’으로 연결하므로 ‘prioritize’가 아니라 ‘prioritize’를 반대하는 ‘prioritize’를 줄이는 ‘CURTAIL’이 와야 한다. → 처방: ‘CURTAIL’의 뜻 ‘줄이다’를 정확히 기억하고, 문맥에서 ‘시도를 줄이는 것’이 맞는지 확인한다.\n④ 진단: ‘(C) CYNIC’을 ‘인간을 믿지 않는 사람’으로 오해하지 못하고 ‘optimist’를 선택한 듯하다. 지문에서 ‘cynic’이 ‘인간은 이기적’이라는 믿음을 가진 사람을 뜻함을 확인할 수 있다. → 처방: ‘CYNIC’의 뜻을 정확히 기억하고, ‘인간을 믿지 않는 사람’이 문맥에 맞는지 확인한다.\n⑤ 진단: ‘(B) prolong’을 ‘길게 하다’라는 뜻으로만 알고 ‘prioritize’를 떠올렸다. 지문에서 ‘give up’을 연상할 수 있는 ‘prioritize’를 줄이는 ‘CURTAIL’이 와야 한다. → 처방: ‘prioritize’를 ‘길게 하다’로 오해하지 말고, 문맥에서 ‘시도를 줄이는 것’이 맞는지 확인한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T13:02:29.000Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "CHAPTER 2 Markedness and Blocking Why is it odd to say *'ⓐ<u>a female nurse</u>', while it is reasonable to say 'a male nurse'? If you point to your thumb and ask 'ⓑ<u>Is this a finger?</u>' you will probably not get a 'Yes' answer. You can then ask 'ⓒ<u>How many fingers do you have?</u>' and will almost certainly get an answer of 'Ten'. Is language really so illogical? Let us begin with a parody of a familiar puzzle. One day, John went shopping with his mother. On the way their car ⓓ<u>was hit by a truck</u> and his mother was killed. John was seriously injured and taken to a hospital in an ambulance. One of the nurses in the emergency room was startled, and cried, 'Oh my God, that's my son!' Who was this nurse? This puzzle takes advantage of the fact that in our culture ⓔ<u>nurses is usually women</u>. This assumption, however, contradicts the story that John's mother had just died. When you finally",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓔ: 'nurses is usually women' → 'nurses are usually women' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T13:02:50.261Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.8,
-    "D": -0.5,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.50)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] This assumption, however, contradicts the story that John's mother had just died.\n\nCHAPTER 2 Markedness and Blocking Why is it odd to say *'a female nurse', while it is reasonable to say 'a male nurse'? If you point to your thumb and ask 'Is this a finger?' you will probably not get a 'Yes' answer. You can then ask 'How many fingers do you have?' and will almost certainly get an answer of 'Ten'. Is language really so illogical? Let us begin with a parody of a familiar puzzle. One day, John went shopping with his mother. On the way their car was hit by a truck and his mother was killed. John was seriously injured and taken to a hospital in an ambulance. ( ① ) One of the nurses in the emergency room was startled, and cried, 'Oh my God, that's my son!' ( ② ) Who was this nurse? ( ③ ) This puzzle takes advantage of the fact that in our culture nurses are usually women. ( ④ ) When you finally ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: 학생은 '①'에 주어진 문장이 들어가면 문맥상 'John 의 어머니가 죽은 후 병원으로 이송된 상황'과 이어지지 않아 앞뒤가 맞지 않는다는 점은 인식했지만, 'nurse'가 여성으로 상정되는 문화적 배경이 '이후'에야 드러난다는 사실(④)을 놓쳤다. → 처방: 문장의 'nurse'가 여성으로 여겨지는 문화적 배경을 설명하는 부분을 찾으려면 'nurse'가 여성으로 통상 여겨지는 시점(④)을 기준으로 삼아야 한다.\n② 진단: 학생은 '②'에 주어진 문장이 들어가면 'John 의 어머니가 죽은 후 병원에서 만난 nurse'가 '그의 어머니'라고 오해할 수 있지만, 정작 'nurse'가 여성으로 여겨지는 문화적 배경이 드러나는 부분(④)을 보지 못했다. → 처방: 문장의 'nurse'가 여성으로 통상 여겨지는 이유를 설명하는 부분을 먼저 찾아야 한다. 그 이유는 ④에 있다.\n③ 진단: 학생은 '③'에 주어진 문장이 들어가면 '누가 그 nurse 인가?'라는 질문이 자연스럽다고 생각했지만, 정작 'nurse'가 여성으로 여겨지는 문화적 배경이 드러나는 부분(④)을 보지 못해 오류를 범했다. → 처방: 문장의 'nurse'가 여성으로 통상 여겨지는 이유를 설명하는 부분을 먼저 찾아야 한다. 그 이유는 ④에 있다.\n⑤ 진단: 학생은 '⑤'에 주어진 문장이 들어가면 '결국'이라는 말이 자연스럽다고 생각했지만, 정작 'nurse'가 여성으로 여겨지는 문화적 배경이 드러나는 부분(④)을 보지 못해 오류를 범했다. → 처방: 문장의 'nurse'가 여성으로 통상 여겨지는 이유를 설명하는 부분을 먼저 찾아야 한다. 그 이유는 ④에 있다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T11:36:14.862Z",
-   "type": "혼합통합형",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 8,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
-    "passage": "John started to call the meeting to order. Independent subject of the inﬁ nitive: X John started for Mary to call the meeting to order. Following is a summary listing of the more common verbs that permit inﬁ nitives with assigned subjects as objects of the verb but do not permit independent subjects of the inﬁ nitive. The verbs are roughly grouped into semantic categories. Group 1: affect, ask, claim, decline, demand, offer, promise, refuse, swear, undertake Group 2: afford, attempt, endeavor, fail, learn, manage, neglect, omit, try Group 3: begin, cease, continue, start, stop Group 4: hope, propose, want, wish Group 5: disdain, help, scorn, venture Group 6: forget, remember, regret Verbs That Do Not Allow Inﬁ nitives as Objects Except for verbs that require a concrete object (for example, smash or paint), most verbs permit both gerunds and inﬁ nitives as objects. However, a number of verbs will allow gerunds as objects but not inﬁ nitives. An example is the verb recommend: Gerund object:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
