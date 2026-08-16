@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T10:49:39.103Z",
+ "updated": "2026-08-16T11:37:50.909Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-16T11:37:25.548Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 실제 패턴에서 'most time'→'most of the time', 'student'→'students', 'think'→'thoughts' 등으로 복수화·구체화되는 경향이 강하며, 구두점 오류('hey how'→'hey, how')도 빈번하다.",
+   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'most + 단수명사'는 'most of the + 복수명사'로, 'think'는 'thoughts'로, 구두점 오류는 '쉼표 추가'로 변형 문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T10:49:11.252Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'for + 동사원형'보다는 'to + 동사원형'이 더 자연스러운 패턴으로 빈번히 사용됨을 확인할 수 있다. 또한, 복합명사(예: 'every day life')는 띄어쓰기 오류가 빈번하며, 고유명사(예: 'Latin American')는 대소문자 구분이 필요하다.",
    "rule": "원서 코퍼스 패턴을 반영하여, '~하기 위해'라는 의미를 나타낼 때는 'for + 동사원형' 대신 'to + 동사원형'을 우선적으로 사용하도록 문제를 설계하라. (예: 'Water is needed to live.')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-13T13:56:22.589Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사 단수/복수 오류와 동사 시제·태 오류가 빈번하게 결합되어 나타나며, 특히 구어체에서 문법적 정확성이 떨어지는 경향이 있다. 또한, 인용부호 내 구두점(쉼표, 물음표) 오류가 자주 발생한다.",
-   "rule": "'~ing' 형태의 동명사(gerund) 또는 명사구가 'other than', 'because of' 등 전치사구와 결합될 때는 단수/복수 명사의 정확한 형태(예: responsibility/responsibilities)를 확인하고, 문장 내 시제(present/past)와 태(active/passive) 일관성을 점검하라.",
    "sample": [
     "old english",
     "university press",
