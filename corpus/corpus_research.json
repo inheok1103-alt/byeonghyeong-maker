@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T17:49:19.669Z",
+ "updated": "2026-08-17T19:01:12.969Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T19:00:43.081Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사구 내 전치사 오류와 동사 시제/태 오류가 빈번히 발생하며, 특히 'for + 명사' 구조에서 'for + 형용사'로의 오용이 두드러진다.",
+   "rule": "원서 문체 패턴을 반영하여 'for + 명사' 구조가 필요한 경우, 항상 'for + safety/systematic development'와 같은 명사형 표현을 사용하도록 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T17:48:46.160Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "일상 표현에서 'think differently from'은 오류로 'think differently than'으로, 'give up'은 타동사 구로 'give it up'으로 교정됨을 확인. 또한 'form hesitancy from'은 'form a hesitancy to'로 재구조화됨을 확인.",
    "rule": "대상 동사(think, give, form)가 전치사(than, up, from)와 결합할 때, 타동사 구문(has succeeded, give it up, hesitancy to interact)로 재구조화하는 오류 패턴을 문항으로 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T04:49:57.850Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'and' 다음에 동사원형이 오는 경우, 'could sustain and (be) active'처럼 동사원형이 연속으로 오면 문법적 오류가 발생할 가능성이 높음. 특히 'sustain'과 'active'의 연어적 결합이 자연스럽지 않음.",
-   "rule": "'and'로 연결된 동사구에서 두 번째 동사가 동사원형이어야 하는 경우, 반드시 'be + 형용사' 또는 'to + 동사원형' 형태로 명시하여 오류를 유도하라. 예: 'could sustain and be active' vs. 'could sustain and active'.",
    "sample": [
     "old english",
     "university press",
