@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-17T13:10:14.874Z",
+ "updated": "2026-08-17T14:00:08.533Z",
  "samples": [
+  {
+   "ts": "2026-08-17T13:54:59.206Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "NEW WORDS pugnacious pug nā´ shəs promulgate prom´ əl gāt brash brash scoff skof belittle bi lit´ l WEEK 4 DAY 2 MULLINS THROWS DOWN THE GAUNTLET* The pugnacious K.O. Mullins demanded a rematch. He took a full-page newspaper advertisement to promulgate his challenge. When the champ’s manager saw the brash announcement, he accosted* Mullins, who was surrounded by a throng* of newsmen. The manager openly scoffed at Mullins and belittled his fighting ability. Mullins then lost his temper and fearlessly punched the manager, knocking him off of his crutches. Sample Sentences Use the new words in the following sentences. 1.We implored* the faculty advisor to ________________ the requirements for the presidency of the club. 2.My mother liked the salesman’s ________________ personality, but he irritated most people. 3.I don’t understand modern art, but I neither loathe* nor ________________ at it. 4.Since everyone can outpunch my cousin, he cannot afford to be ________________ . 5.Although Ralph can’t play, he doesn’t hesitate to ________________ the efforts of our football team. Definitions Match the new words with their meanings.\n\n─────────\n[요약문] K.O. Mullins’s (A) aggression and (B) defiance led to a violent confrontation after he publicly challenged his opponent.",
+    "choices": [
+     "(A) aggression … (B) apology",
+     "(A) confidence … (B) defiance",
+     "(A) hostility … (B) defiance",
+     "(A) hostility … (B) submission",
+     "(A) arrogance … (B) defiance"
+    ],
+    "answer": 3,
+    "explanation": "(A) hostility / (B) defiance 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘aggression’은 Mullins 의 행동이 공격적이었음을, ‘apology’는 manager 가 사과하지 않았다는 사실을 혼동한 듯하다. Mullins 는 manager 를 때렸고, manager 는 사과하지 않았다. → 처방: ‘aggression’은 Mullins 의 행동이 공격적임을, ‘apology’는 manager 의 반응이 사과가 아님을 정확히 구분해 읽어야 한다.\n② 진단: ‘confidence’는 Mullins 의 자신감이 아니라 manager 의 행동이 ‘brash’(-bold but rude)임을 혼동했다. Mullins 는 ‘pugnacious’(aggressive)였고, manager 는 ‘scoffed’(mocked)했다. → 처방: ‘confidence’는 Mullins 의 성격이 아니라 manager 의 행동이 ‘brash’임을 떠올리며 단어를 정확히 연결해야 한다.\n④ 진단: ‘arrogance’는 manager 의 행동이 ‘belittled’(무시)하는 태도와 혼동했다. Mullins 는 ‘pugnacious’(싸움을 좋아하는)였고, manager 는 그를 무시했다. → 처방: ‘arrogance’는 manager 의 무시하는 태도를, ‘defiance’는 Mullins 의 도전적 행동을 떠올리며 단어를 매칭해야 한다.\n⑤ 진단: ‘submission’은 manager 가 Mullins 에게 굴복하지 않았다는 사실을 혼동했다. Mullins 가 manager 를 때렸지만, manager 는 굴복하지 않았다(‘scoffed’). → 처방: ‘submission’은 manager 의 굴복이 아니라 Mullins 의 도전적 행동과 manager 의 무시를 떠올리며 풀어야 한다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T13:55:37.469Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The Manager's Scorn Provoked a Brutal Response",
+     "Mullins's Brash Publicity Campaign",
+     "All Challenges in Sports Lead to Physical Confrontation",
+     "Mullins Occasionally Loses His Temper in Public",
+     "The Pugnacious Challenge Turned to Violence"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Mullins's brash challenge escalated into physical violence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘scorn(경멸)’과 ‘brutal response(잔인한 반응)’가 지문에서 직접 드러나지 않음. ‘scorn’은 manager 가 Mullins 를 깔보지만, ‘brutal response’는 Mullins 가 manager 를 때린 행동에만 해당됨. 제목으로 전체 내용을 담지 못함. → 처방: 제목은 글의 핵심 사건(폭력적 충돌)을 담아야 하므로, ‘폭력’이 포함된 선지를 찾아야 함.\n② 진단: ‘publicity campaign(선전 활동)’은 Mullins 가 신문 광고를 내는 부분만 강조했지만, manager 의 반응과 Mullins 의 폭력적 행동이 빠져 있음. 제목이 글의 전체 흐름을 반영하지 못함. → 처방: 제목은 글의 시작(도전)부터 끝(폭력)까지의 전체 사건을 담아야 함.\n③ 진단: ‘All Challenges in Sports Lead to Physical Confrontation(모든 도전이 신체적 대결로 이어진다)’는 지문의 특정 상황(폭력)을 과장해 일반화한 것. 지문은 한 사건에 국한된 이야기임. → 처방: 제목은 ‘특정한 사건’을 다룬 글이므로, ‘모든’이라는 포괄적 표현은 피해야 함.\n④ 진단: ‘Mullins Occasionally Loses His Temper in Public(가끔 공공장소에서 화를 낸다)’는 Mullins 의 행동 중 일부(폭력)만을 강조했지만, manager 의 도발과 신문 광고 등 다른 요소는 빠져 있음. → 처방: 제목은 글의 핵심 사건(폭력적 충돌)의 원인과 결과를 모두 담아야 함.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Mullins]"
+   }
+  },
   {
    "ts": "2026-08-17T13:08:49.988Z",
    "type": "네모어법ABC",
@@ -283,50 +352,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 '글의 핵심 논지는 **글을 쓰기 전에 주제를 명확히 정하고 일관되게 유지해야 한다**이다.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘주제를 일관되게 유지해야만’(should only)라는 표현이 지문의 ‘consistent’(일관되게 다루어야)보다 더 강한 강제성을 띠며, ‘독자들이 글을 더 잘 이해하게 된다’는 결과만 강조한 나머지 ‘주제를 일관되게 다루어야 한다’는 핵심 행동을 놓쳤다. → 처방: 지문에서 강조한 ‘consistent’(일관성 유지)의 중요성을 떠올리며, 주제를 일관되게 다루는 것이 독자의 이해를 돕는 핵심 행동임을 기억하자.\n③ 진단: ‘주제어를 간결하고 구체적으로 정하는 것’이 중요하다는 점은 맞지만, 지문은 ‘대부분의 주제가 주제어여야 한다’는 stronger 조건을 덧붙이며 ‘주제어의 역할’을 더 강조했다. 이 선지는 그 부분을 생략했다. → 처방: 지문의 ‘most of your subjects should be topics’를 떠올리며, 주제어가 단순히 중요하다는 것뿐 아니라 ‘주제의 핵심을 담아야 한다’는 점을 기억하자.\n④ 진단: ‘모든 주제가 주제어여야만’(only if all subjects are topics)라는 표현이 지문의 ‘most of your subjects should be topics’보다 훨씬 엄격한 조건을 요구하며, 지문은 ‘대부분’이란 완화 조건을 사용했다. → 처방: 지문의 ‘most’(대부분)를 떠올리며, ‘주제의 핵심을 담은 주제어가 대부분 있어야 한다’는 점을 기억하고, ‘모든’은 오버스펙하지 않도록 주의하자.\n⑤ 진단: ‘주제를 가끔씩 바꿔야 한다’는 내용은 지문의 ‘do not vary your subjects for the sake of variety’(다양성을 위해 주제를 바꾸지 마라)와 완전히 반대된다. 학생은 ‘독자들의 관심을 유발할 수 있다’는 결과에만 주목했다. → 처방: 지문의 ‘consistent’(일관성 유지)의 중요성을 떠올리며, 주제를 자주 바꾸는 것이 아니라 ‘일관되게 다루는 것’이 독자의 이해를 돕는 핵심임을 기억하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: 글의 핵심 논지는 **글을 쓰기 전에 주제를 명확히 정하고 일관되게 유지해야 한다**이다.]"
-   }
-  },
-  {
-   "ts": "2026-08-17T05:52:16.806Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Being (A) [transitive / intransitive], the verb commis assigns accusative case to the object quelle bêtise ‘what blunder’. By hypothesis, the light verb has no edge feature in wh-in-situ questions, so there is no movement of the wh-phrase quelle bêtise ‘what blunder’ to spec-v. Subsequently the vP (29) is merged as the complement of the auxiliary a ‘has’ which (B) [disagrees / agrees] in person/number φ-features with (and triggers movement to spec-T of) the subject il ‘he’. Merging the resulting TP with a (C) [null / explicit] complementiser which likewise has no edge feature derives the structure associated with (28a) Il a commis quelle bêtise? (literally ‘He has committed what blunder?’). Now consider the derivation of (28b). This is similar to that of (28a), until we reach the stage of derivation shown in (29) above. However, in a non-echoic question, the light-verb will have an edge feature which attracts the wh-marked object quelle bêtise ‘what blunder’ to move to become an additional (outer) specifier for the vP, in the manner shown by the arrow below:",
-    "choices": [
-     "(A) intransitive - (B) disagrees - (C) null",
-     "(A) transitive - (B) agrees - (C) null",
-     "(A) intransitive - (B) disagrees - (C) explicit",
-     "(A) intransitive - (B) agrees - (C) explicit",
-     "(A) transitive - (B) agrees - (C) explicit"
-    ],
-    "answer": 2,
-    "explanation": "정답 조합: (A) transitive - (B) agrees - (C) null. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘transitive’를 ‘intransitive’로 오독했는데, 지문에서 ‘commis’는 ‘assigns accusative case’를 통해 목적어를 갖는다는 사실이 드러난다. ‘transitive’는 목적어를 요구하는 동사를 뜻한다. → 처방: ‘transitive’와 ‘intransitive’를 구분하는 기준을 다시 공부하고, 동사가 목적어를 갖는지 확인하는 연습을 반복한다.\n③ 진단: ‘null’을 ‘explicit’로 오독했는데, 지문에서 ‘null complementiser’가 ‘no edge feature’를 가진다는 설명을 보지 못했다. ‘null complementiser’는 형태가 없는 보조사를 뜻한다. → 처방: ‘null complementiser’와 ‘explicit complementiser’를 예문으로 비교하며 차이를 익히고, 문장 구조에서 보조사의 유무를 찾는 연습을 한다.\n④ 진단: ‘intransitive’를 선택한 이유는 ‘transitive’의 의미를 정확히 이해하지 못해 ‘commis’가 목적어를 갖지 않는다고 착각했기 때문이다. 또한 ‘explicit complementiser’를 고른 이유는 ‘null’의 의미를 제대로 파악하지 못해 보조사가 형태를 가질 거라고 생각했다. → 처방: ‘transitive’와 ‘intransitive’를 문장 속에서 직접 확인하고, ‘null complementiser’의 예를 찾아보며 차이를 명확히 한다.\n⑤ 진단: ‘transitive’를 ‘intransitive’로 오해한 것과 ‘explicit complementiser’를 ‘null’로 오해한 것이 복합적으로 작용했다. 지문에서 ‘commis’는 ‘assigns accusative case’를 통해 목적어를 갖는다는 사실이 명시되어 있지만, 이를 놓쳤다. → 처방: 지문을 다시 읽고, 동사의 성격을 ‘transitive’와 ‘intransitive’로 나눌 수 있는 기준을 정리한 후, 예문을 직접 만들어보며 연습한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T05:55:41.464Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] By hypothesis, the light verb has no edge feature in wh-in-situ questions, so there is no movement of the wh-phrase quelle bêtise ‘what blunder’ to spec-v.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] the light verb has no edge feature in wh-in-situ questions, so the wh-phrase quelle bêtise ‘what blunder’ is not moved to spec-v by any agent. (포인트: ‘no movement of the wh-phrase’ → ‘the wh-phrase is not moved’ (능동→수동))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

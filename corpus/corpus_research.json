@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T13:10:14.870Z",
+ "updated": "2026-08-17T14:00:08.529Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T13:59:39.567Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'all'의 생략이 문법적 오류를 유발하는 패턴이 반복된다. 특히 'all the burdens', 'all carbon emission'에서 'all'이 필수적임에도 생략된 경우가 많다.",
+   "rule": "'all'이 포함된 복수명사구(예: all burdens, all carbon emissions)에서 'all'을 생략하지 말고 반드시 포함시켜 문장을 구성하라. 이는 'old age', 'math problems', 'exams' 등에도 동일하게 적용된다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T13:09:46.428Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서는 관사·단수/복수 일치와 구두점(쉼표, 마침표) 사용이 엄격하며, 특히 'come'과 같은 동사 원형은 문맥에 맞게 시제·태를 조정해야 한다. 또한 'anyways'는 비표준어로, 표준 영어에서는 'anyway'를 사용한다.",
    "rule": "원서 코퍼스 패턴에 따라, 학생들이 작성한 문장에서 관사(예: a/the)나 단수/복수 명사의 일치 여부를 확인하고, 구두점(쉼표, 마침표, 물음표)의 정확한 사용을 요구하라. 특히 동사 원형('come')이 사용된 경우, 문맥에 맞는 시제(예: 'comes', 'came')로 수정하도록 지시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T22:43:25.105Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "명사구에서 정관사(the)의 필수적 사용이 특정 맥락(고유명사, 언어명, 고유한 개념)에서 빈번하며, 동사 오류는 시제 불일치(과거→현재)나 대명사 오용(he→it)으로 나타났다.",
-   "rule": "CEFR B1-B2 수준 내신 문제에서, '언어명(Perisan, Chinese 등)'이나 '고유명사(University Press 등)'가 주어질 경우, 정관사 'the'를 생략하지 않도록 오류 유도를 하거나, 문장의 동사 시제와 주어의 인칭·수 일치를 반드시 확인하는 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
