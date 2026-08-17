@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-17T20:47:12.743Z",
+ "updated": "2026-08-17T21:44:40.398Z",
  "samples": [
+  {
+   "ts": "2026-08-17T21:44:12.608Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 16 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'unrecognizable', 'drastically', 'connections' / 14~18단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The meanings of words can evolve so drastically that their original connections become unrecognizable over time.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-17T20:45:44.810Z",
    "type": "요약문AB",
@@ -284,39 +303,6 @@
     ],
     "answer": 5,
     "explanation": "정답 배열은 ④-①-⑤-③-②. 흐름: ④ → ① → ⑤ → ③ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ②가 각각 'Answer Explanation'와 'To answer this question correctly'로 시작해 지문 맨 앞부분에 나올 수 없다는 점을 오독했음. ③과 ⑤의 내용(노동 이직률 정의와 계산 방법)이 먼저 나와야 하는데, 이를 무시하고 순서를 임의로 배치했음. → 처방: 지문에서 '정의'와 '계산 방법'이 먼저 나오는지 확인하고, 그 뒤에 '평가'와 '해설'이 오는 순서를 기억할 것.\n② 진단: ④ 다음에 ②가 바로 오면서 'To answer this question correctly'가 지문 맨 앞부분처럼 느껴졌음. ⑤의 'Statement 1과 2'가 아직 소개되지 않아서 ②가 앞부분에 나올 수 없다는 점을 놓쳤음. → 처방: 문단의 첫 부분은 '정의'나 '설명'이 오는지 확인하고, '해설'이나 '평가'는 뒤에 오는 규칙을.\n③ 진단: ④ 다음에 ③이 오면서 '노동 이직률이 25%였다'는 정보만 보고 중요하다고 생각했으나, ⑤의 '정의'가 먼저 나와야 한다는 점을 간과했음. ①과 ②의 '해설' 부분이 뒤에 나와야 한다는 규칙도 무시했음. → 처방: 지문의 핵심 정의(⑤)가 먼저 나오는지 확인하고, 그 뒤에 예시(③)나 해설(①②)이 오는 순서를 따르도록 할 것.\n④ 진단: ④ 다음에 ①이 바로 오면서 'Answer Explanation'이 지문 맨 앞부분처럼 보였음. ⑤의 'Statement 1과 2'가 아직 소개되지 않아서 순서가 맞지 않다는 점을 놓쳤음. ③이 ⑤보다 먼저 나와야 한다는 점도 간과했음. → 처방: 지문에서 '정의'가 가장 먼저 나오는지 확인하고, 그 뒤에 '예시'나 '계산 방법', 마지막으로 '해설'이 오는 순서를 엄격히 따르도록 할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T14:47:46.219Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Last year, the number of employees on the first day of the year was equal to the number of employees on the last day of the year. Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year.” We are also told that the labor turnover rate last year was 25%. To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
-    "choices": [
-     "연말 직원 수는 연초 직원 수와 달랐다.",
-     "연도 초 직원 수는 연도 말 직원 수와 달랐다.",
-     "회사는 연간 노동 이직률을 연초와 연말 직원 수의 합으로 계산했다.",
-     "지난해 노동 이직률은 25퍼센트였다.",
-     "연간 노동 이직률은 이직자 수를 연초 직원 수로 나눈 값이다."
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 '연초 직원 수 = 연말 직원 수'라고 밝혔지만, 학생은 이를 '달랐다'로 오해하여 선택했을 가능성이 있다. 'equal to'의 의미를 정확히 이해하지 못했다. → 처방: 지문에서 'equal to'라는 단어가 나오면 '같다'로 정확히 해석하고, 반대 의미가 필요할 때는 'not equal to'인지 확인하기.\n② 진단: 선지 2번도 1번과 같은 이유로 오해했을 수 있다. '달랐다'는 표현이 지문의 'equal to'와 반대라는 점을 놓쳤다. → 처방: 지문에서 'equal to'가 나오면 바로 '같다'로 바꾸어 쓰고, 그 반대는 '다르다'라는 단어로 명확히 정리하기.\n③ 진단: 회사가 노동 이직률을 '연초와 연말 직원 수의 합'으로 계산했다고 오해했다. 지문은 '평균'으로 계산한다고 정확히 적혀 있다. → 처방: 계산 방식이 '합'인지 '평균'인지 지문에서 정확히 확인하고, 헷갈리면 'average'라는 단어를 찾아보기.\n⑤ 진단: 노동 이직률을 '이직자 수를 연초 직원 수로 나눈 값'으로 오해했다. 지문은 '연초와 연말 직원 수의 평균'으로 나눈다고 적혀 있다. → 처방: 분모가 '평균'인지 '단순한 수'인지 확인하고, 분모가 두 수의 평균인지 한 수인지 반드시 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
