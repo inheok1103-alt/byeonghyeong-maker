@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T01:58:05.324Z",
+ "updated": "2026-08-17T03:15:48.501Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T03:15:19.995Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원어민 코퍼스에서 'something extra'는 관용적으로 사용되며, 'thinmg'와 같은 철자 오류는 'something'의 빈번한 오용 패턴에서 비롯된다. 또한 'are something could fly'는 'are something that could fly'로의 보어절 삽입이 자연스럽고, 'annoy about'은 'worry about'로의 전치사 교체가 문법적으로 옳다.",
+   "rule": "'something'이 수식어 없이 명사구로 쓰일 때, 'something extra/unique/special' 등 관용적 수식어구를 붙이거나, 'something that ~'와 같은 보어절로 확장하여 문맥에 맞게 변형하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T01:57:36.368Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'감정 동사 + 목적어 + 형용사' 구문에서 'feel happy the people'처럼 목적어 뒤에 형용사를 직접 연결하는 오류가 빈번하며, 'make the people happy'처럼 'make + 목적어 + 형용사' 구조가 올바른 패턴임을 확인할 수 있다.",
    "rule": "'감정 동사(feel, seem, appear 등) + 목적어 + 형용사' 구문에서 오답을 설계할 때는 'feel happy the people'처럼 목적어 뒤에 형용사를 직접 연결하는 오류를 포함하고, 정답은 'make the people happy'처럼 'make + 목적어 + 형용사' 구조로 제시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T10:18:32.279Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'that'절이 명사구 역할을 할 때, 주절 동사 뒤에 위치하는 패턴이 빈번히 관찰된다. 특히 'reason that' → 'reason to'와 같이 전치사 구문으로 전환하는 오류가 반복된다.",
-   "rule": "CEFR B1 수준에서 'that'절이 명사 역할을 하는 경우, 'that S V' → 'to V' 또는 'for V-ing'으로 전환하는 연습 문제를 출제하여, 학생들이 명사적 기능을 지닌 to-부정사와 that-절을 구분할 수 있도록 한다.",
    "sample": [
     "old english",
     "university press",

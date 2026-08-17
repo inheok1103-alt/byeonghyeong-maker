@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-17T01:58:05.327Z",
+ "updated": "2026-08-17T03:15:48.505Z",
  "samples": [
+  {
+   "ts": "2026-08-17T03:14:36.023Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": 0.17,
+    "distractorEff": 100,
+    "pass": true,
+    "flags": [
+     "변별도 낮음(D̂=0.17)"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Case assignment differs based on functional elements and the type of Case (accusative vs. nominative)",
+     "Case assignment is determined exclusively by the functional element in role assignment",
+     "Case assignment varies only for accusative Case, excluding nominative Case",
+     "All Case types are assigned under identical conditions by functional elements",
+     "Case assignment always requires subject marking, irrespective of Case type"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Case assignment varies depending on the functional element and the type of Case (accusative vs. nominative).'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 지문에서 'functional element'이 Case assigner 가 될 수 있지만, 'role assignment'와는 무관하다는 점을 보지 못하고 'role assignment'에만 집중해 오독했음. 지문은 'functional element'이 Case assigner 가 될 수 있다고만 말하고, 'role assignment'와는 별개임을 분명히 함. → 처방: 문제를 풀 때는 'Case assigner'와 'role assignment'가 같은 것인지, 아니면 다른 것인지 반드시 구분해 읽어야 함.\n③ 진단: 지문에서 'nominative Case'는 'subject marking' 없이도 assign 될 수 있지만, 'accusative Case'는 반드시 'subject marking'이 필요하다는 점을 혼동했음. 지문은 'nominative'와 'accusative'가 'fundamentally different'하다고 설명하고 있음. → 처방: Case 의 종류(accusative vs. nominative)에 따라 assign 조건이 달라질 수 있음을 염두에 두고 지문을 읽어야 함.\n④ 진단: 지문에서 'nominative'와 'accusative'의 assign 조건이 'identical'하지 않다는 점을 보지 못하고, 모든 Case 가 같은 조건에서 assign 된다고 오독했음. 지문은 두 Case 가 'similar'한지, 아니면 'fundamentally different'한지를 두고 논쟁 중이라고 설명함. → 처방: Case 의 종류에 따라 assign 조건이 달라질 수 있음을 기억하고, 지문의 논쟁 구조를 정확히 파악해야 함.\n⑤ 진단: 지문에서 'nominative Case'는 'subject marking' 없이도 assign 될 수 있지만, 'accusative Case'는 반드시 'subject marking'이 필요하다는 점을 혼동했음. 지문은 'nominative'와 'accusative'가 'fundamentally different'하다고 설명하고 있음. → 처방: Case 의 종류에 따라 assign 조건이 달라질 수 있음을 염두에 두고, 지문의 세부 설명을 꼼꼼히 읽어야 함.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Case assignment varies depending on the functional element and the type of Case (accusative vs. nominative).]"
+   }
+  },
+  {
+   "ts": "2026-08-17T03:15:08.126Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": -0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "주격과 목적격 격의 기능적 유사성을 규명하려고",
+     "주격 격의 선택 조건을 체계적으로 제시하려고",
+     "격 체계의 보편적 할당 규칙을 설명하려고",
+     "격의 할당 방식이 모든 언어에서 동일하다고 주장하려고",
+     "주격 및 목적격 격의 본질적 유사성 또는 차이점을 규명하려고"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'to clarify whether nominative and accusative Case are fundamentally similar or different'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 주격과 목적격 격의 '유사성'과 '차이점' 모두를 다루고 있지만, ①은 '유사성'만 규명하려고 한다고 오해. 지문에서 'similar'과 'fundamentally different'가 모두 언급된 점을 놓침. → 처방: 격의 할당 방식에서 공통점과 차이점을 모두 확인한 후, 지문의 목적(규명)을 떠올리며 선지를 고를 것.\n② 진단: 지문은 주격 격의 '선택 조건'보다는 '할당 방식의 유사성/차이점'에 초점을 맞추고 있지만, ②는 주격 격의 '선택 조건'을 체계적으로 제시한다고 오해. 지문의 'Case assigner'가 '할당자'를 뜻한다는 점을 간과함. → 처방: 지문에서 'Case assigner'가 '할당자'라는 뜻임을 확인하고, 격의 '할당 방식'과 '본질'을 중심으로 선지를 분석할 것.\n③ 진단: 지문은 '보편적 할당 규칙'을 설명하는 것이 아니라, '주격과 목적격 격의 유사성 또는 차이점'을 규명하는 것이 목적임. ③은 '보편적 규칙'을 제시한다고 오해했지만, 지문은 '두 가지 관점(유사 vs 차이)'을 비교하는 데 집중함. → 처방: 지문의 첫 문장('There are two basic positions linguists take')에서 '두 관점 비교'가 목적임을 떠올리며 선지를 선택할 것.\n④ 진단: 지문은 '모든 언어에서 동일하다'고 주장하는 것이 아니라, '주격과 목적격 격의 할당 방식이 유사하거나 다를 수 있다'는 관점을 비교하는 것임. ④는 '동일하다'고 주장한다고 오해했지만, 지문은 '유사성 또는 차이점'을 규명하는 것이 목적임. → 처방: 지문의 'similar'과 'fundamentally different'가 '비교'를 뜻한다는 점을 기억하고, '주장'보다는 '규명'을 목적으로 삼는 선지를 고를 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to clarify whether nominative and accusative Case are fundamentally similar or different]"
+   }
+  },
   {
    "ts": "2026-08-17T01:57:25.966Z",
    "type": "밑줄함의",
@@ -332,60 +400,6 @@
     ],
     "answer": 3,
     "explanation": "(A) strategic fragments / (B) rhythmic immediacy 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘unintentional fragments’를 ‘의도하지 않은 문장 조각’으로 오해했는데, 지문은 ‘의도적’인 조각을 강조함. ‘controlled syntax’를 ‘문법적 통제’라고만 이해해 ‘controlled’의 의미를 제대로 살피지 못함. → 처방: ‘fragments’를 ‘의도적’으로 쓰는 경우를 찾고, ‘controlled syntax’를 ‘리듬감 있는 즉각성’으로 연결 지어 읽기.\n② 진단: ‘conventional clauses’를 ‘전통적인 절’로만 해석해 ‘clauses’의 의미를 좁게 봄. ‘theoretical correctness’를 ‘이론적 올바름’으로만 이해해 ‘correctness’의 실제 쓰임을 놓침. → 처방: ‘clauses’를 ‘문장 구조’로 넓게 보고, ‘theoretical correctness’를 ‘이론상 옳음’이 아니라 ‘실제 쓰임’으로 해석하기.\n④ 진단: ‘grammatical fragments’를 ‘문법에 맞는 조각’으로 오해해 ‘grammatical’의 의미를 반대로 봄. ‘logical progression’을 ‘논리적 진행’으로만 이해해 ‘progression’의 실제 역할을 찾지 못함. → 처방: ‘fragments’를 ‘문법에 어긋나는 조각’이 아니라 ‘의도적 조각’으로 보고, ‘progression’을 ‘흐름’보다는 ‘즉각성’으로 재해석하기.\n⑤ 진단: ‘long sentences’를 ‘긴 문장’으로만 읽어 ‘Effective writers’의 ‘의도적 조각 사용’을 놓침. ‘narrative clarity’를 ‘서사적 명확성’으로만 이해해 ‘리듬감’이나 ‘즉각성’을 고려하지 않음. → 처방: ‘Effective writers’의 ‘의도적 조각’을 먼저 찾고, ‘narrative clarity’를 ‘서사적 흐름’이 아니라 ‘리듬감 있는 즉각성’으로 바꿔 이해하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T20:46:56.069Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: s)\n[영영풀이] The decision or judgement of a jury or court; a verdict.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] sentence (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T19:36:14.235Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Lesson 5: The Perfect 67 Geek: Ooh, very smooth! <u>I’ve got to hand it to you Denis, you are a fast learner.</u> A bit of a show-off, but a fast learner indeed. Denis: Thank-you. I will take that as a compliment. See youtomorrow? Geek: See you tomorrow. Exercises, Lesson 5 EXERCISE 1: THE PRESENT TENSES Fill in the blank with the correct form of the verb in parentheses. Choose between the present perfect, the simple present, or the present progressive. 1. We —————0— (study) French since kindergarten. 2. Mr. Whitman —————0— (teach) at this school for the past six years. 3. I hear footsteps. I —————0— (think) someone —————0— (come) up the stairs. 4. My dad —————0— (deposit) money in my account at the beginning of each week. He —————0— (do) this until I find a full-time job. 5. I —————0— (travel) to New York many times in my life. I intend to go again. 6. Every winter it —————0— (snow) in Quebec and —————0— (rain) in Vancouver. 7. My cousins —————0— (be) in town for the past two days. 8. You —————0— (make) great progress in your English skills since the beginning of the course.",
-    "choices": [
-     "I often recognize that you are a very fast learner.",
-     "I have to physically give you the item Denis, you are a fast learner.",
-     "I sincerely acknowledge your quick ability to learn.",
-     "I occasionally have to admit Denis, you are a quick learner.",
-     "I must blame you Denis, because your fast learning is causing problems."
-    ],
-    "answer": 3,
-    "explanation": "밑줄 친 부분은 'I sincerely acknowledge your quick ability to learn.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘I’ve got to hand it to you’는 ‘너에게 인정한다’는 뜻인데, ‘often recognize’를 ‘자주 알아차린다’로 오해해 ‘자주’라는 빈도를 넣었다. → 처방: ‘I’ve got to hand it to you’는 ‘인정하다’라는 뜻이므로, ‘자주’라는 말은 쓰지 말고 ‘진짜로’라는 뜻으로만 해석하자.\n② 진단: ‘hand’의 뜻이 ‘물건을 주다’로만 떠올라 ‘물리적으로 건네준다’고 오해했는데, 여기서는 ‘인정하다’라는 뜻으로 쓰였다. → 처방: ‘hand’의 뜻을 ‘물리적 행동’이 아니라 ‘인정하다’라는 뜻으로만 기억하고, 문맥에 맞게 쓰자.\n④ 진단: ‘have to’는 ‘~해야 한다’라는 강제적 의미로만 읽어 ‘가끔씩 인정해야 한다’고 오해했는데, 여기서는 ‘진짜로’라는 뜻으로 쓰였다. → 처방: ‘have to’의 강제적 의미가 아니라 ‘진짜로’라는 뜻으로만 해석하고, 문맥에 맞게 풀자.\n⑤ 진단: ‘got to’는 ‘~해야 한다’라는 의미로만 읽어 ‘너를 비난해야 한다’고 오해했는데, 여기서는 ‘인정하다’라는 뜻으로 쓰였다. → 처방: ‘got to’의 강제적 의미를 버리고, ‘I’ve got to’는 ‘I really must’라고만 기억하고 풀자.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
