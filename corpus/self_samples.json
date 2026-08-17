@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-17T09:04:22.655Z",
+ "updated": "2026-08-17T10:03:55.861Z",
  "samples": [
+  {
+   "ts": "2026-08-17T10:00:44.395Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 2건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "gratitude for student input in manuscript revisions",
+     "acknowledgments as causes of intellectual contributions",
+     "gratitude limited to published versions of academic works",
+     "gratitude for intellectual and creative contributions in academic acknowledgments",
+     "universal gratitude expressions in all academic publications"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'Gratitude expressions in acknowledgments for intellectual and creative contributions'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 조건 누락· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: ‘students’를 ‘manuscript revisions’에만 초점을 맞추어 오독. 지문은 학생들이 원고를 ‘toiled through’(고생하며 읽고 피드백 줌)했다고만 언급하며, ‘revisions’(수정 작업) 자체는 교수진이 했다고 명시되어 있음. → 처방: ‘toiled through’의 의미를 정확히 이해하고, 학생의 역할이 ‘revisions’가 아니라 ‘feedback 과 피드백’임을 기억하기.\n② 진단: ‘acknowledgments’를 ‘causes of intellectual contributions’로 오해. 지문은 ‘invaluable ideas’, ‘constructive criticisms’, ‘tokens of empathy’를 언급하지만, 이들이 ‘원인’이 아니라 ‘감사의 대상’이라는 점을 혼동. → 처방: ‘acknowledgments’가 ‘감사’를 표현하는 글이므로, 그 내용이 ‘원인’이 아니라 ‘대상’이라는 점을 분명히 하기.\n③ 진단: ‘limited to published versions’를 오독. 지문은 학생들이 ‘manuscript’를 읽고 피드백을 주었다고 언급하며, ‘published versions’(출판된 버전)에만 감사를 표한 것이 아님. → 처방: ‘manuscript’와 ‘published versions’를 구분하고, 지문이 manuscript 단계의 피드백에 대한 감사를 담고 있음을 기억하기.\n⑤ 진단: ‘universal gratitude’를 오해. 지문은 특정 대상(학생, 교수진, 일러스트레이터 등)에 대한 구체적인 감사를 표현하며, ‘모든’ 학술 출판물의 ‘보편적’ 감사가 아님. → 처방: ‘universal’이라는 단어가 ‘특정 대상에 대한 구체적 감사’와 대조됨을 인식하고, 지문의 구체적 사례를 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Gratitude expressions in acknowledgments for intellectual and creative contributions]"
+   }
+  },
+  {
+   "ts": "2026-08-17T10:03:04.351Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Cognitive English Grammar VIII us invaluable ideas, in particular Susannah Ewing Bölke, Elizabeth Matthis, Jane Oehlert, and Allan Turner. We would also like to thank Birgit Smieja, Evgenia Sokolinskaja, Angela Heidemann, and Lukasz Tabakowska, who embellished the book with illustrations. Our special thanks go to the instructors of many classes who worked with earlier versions of the book and gave us suggestions and constructive criticisms as well as tokens of empathy. We would especially like to express our thanks to the many students who toiled through the book manuscript at the universities of Hamburg, Kraków, Warsaw, Murcia, Budapest, Debrecen, and Bergen. The student input gave us the satisfying impression that the book was written and re-written with its future users looking over our shoulders and somehow writing the book with us. Günter Radden and René Dirven",
+    "choices": [
+     "이 책의 집필에 수잔나 유잉 뵐케가 중요한 아이디어를 제공하지 않았다.",
+     "이 책은 일러스트레이터 비르기트 스미에자 등이 그림으로 꾸미지 않았다.",
+     "이 책의 개정판을 사용한 강사들이 건설적인 비판과 조언을 주었다.",
+     "이 책의 원고 검토에 여러 대학 학생들이 참여하지 않았다.",
+     "이 책은 구텐 루덴과 르네 디르벤에 의해 집필되지 않았다."
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문 첫머리에 'Susannah Ewing Bölke'가 'invaluable ideas'를 제공했다고 명시되어 있는데, 이를 읽지 않고 '제공하지 않았다'로 오해한 듯함. → 처방: 지문에서 'invaluable ideas'를 제공한 사람을 찾고, 그 이름이 '수잔나 유잉 뵐케'인지 확인하기.\n② 진단: 지문에 'Birgit Smieja 등'이 'illustrations'으로 책을 꾸몄다고 쓰였는데, 이를 '그림으로 꾸미지 않았다'로 잘못 이해한 듯함. → 처방: 지문에서 'illustrations'을 맡은 사람을 찾고, 그 이름이 '비르기트 스미에자'인지 확인하기.\n④ 진단: 지문에 'many students who toiled through the book manuscript at the universities of...'라고 여러 대학 학생들이 원고 검토에 참여했다고 쓰였는데, 이를 '참여하지 않았다'로 오해한 듯함. → 처방: 지문에서 '원고 검토'에 참여한 주체를 찾고, '여러 대학 학생들'이 포함되어 있는지 확인하기.\n⑤ 진단: 지문 맨 끝에 'Günter Radden and René Dirven'이 이 책을 집필했다고 쓰였는데, 이를 '집필하지 않았다'로 잘못 이해한 듯함. → 처방: 지문에서 책의 집필자를 찾고, 그 이름이 '구텐 루덴과 르네 디르벤'인지 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-17T08:05:56.667Z",
    "type": "주제",
@@ -256,58 +326,6 @@
     ],
     "answer": 5,
     "explanation": "정답 조합: (A) basic ___ - (B) natural ___ - (C) ___ cloud. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: (A) 자리에 'basic primer'가 그대로 들어가 있는데, 지문에서 'basic'은 선택지 안에만 있고 정답은 'basic primer'가 아니라 'primer'만으로도 충분하다는 점을 오독했다. 'basic'이 선택지에 포함되어 있어 혼란을 느꼈다. → 처방: 선택지에 'basic'이 붙어 있어도 정답은 'basic' 없이도 맞는 단어를 고르는지 확인한다. 'basic primer'는 '기본 교과서'라는 뜻이지만, 지문에서는 '기본적인'을 뜻하는 'basic'이 아니라 '기본 교과서' 자체를 가리키므로 'primer'만으로도 충분하다는 점을 기억하자.\n② 진단: (B) 자리에 'natural polymer'가 들어가 있는데, 지문에서 'natural'은 선택지 안에만 있고 정답은 'polymer'만으로도 충분하다는 점을 오독했다. 'natural polymer'는 '자연 고분자'라는 뜻이지만, 지문에서는 '자연적인'을 뜻하는 'natural'이 아니라 '고분자' 자체를 가리킨다. → 처방: 선택지에 'natural'이 붙어 있어도 정답은 'polymer'만으로도 맞는 단어인지 확인한다. 'natural'은 '자연의'라는 뜻이지만, 지문에서는 '자연 고분자'가 아니라 단순히 '고분자'를 가리키므로 'polymer'만으로도 충분하다는 점을 기억하자.\n③ 진단: (C) 자리에 '___ cloud'가 들어가 있는데, 지문에서 'primordial cloud'가 정답이지만 'primordial'의 의미를 몰라서 '___'로만 선택한 것으로 보인다. 'primordial'은 '원시의'라는 뜻인데, 이를 몰라서 빈칸으로 처리했다. → 처방: 'primordial'이 '원시의'라는 뜻을 가진 단어라는 사실을 기억하고, 지문에서 '원시의 구름'이라는 뜻으로 쓰였는지 확인한다. 'primordial cloud'는 '원시 시대부터 있던 구름'을 뜻하므로, '원시의'라는 뜻을 가진 단어를 떠올리자.\n④ 진단: 이 선지는 (A), (B), (C) 중 하나가 아니라 전체 선택지 구조를 오독한 경우로 보이며, (C) 자리에 '___ cloud'가 들어가야 하는데 'primordial'을 몰라서 '___'로만 선택한 오류가 반복된다. → 처방: 지문에서 (C) 자리에 들어갈 단어가 'primordial'이라는 사실을 기억하고, '원시의'라는 뜻을 가진 단어를 떠올리자. 'primordial cloud'는 '원시 시대부터 있던 구름'을 뜻하므로, 이 단어가 맞는지 확인한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T04:07:34.606Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 18 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'countries', 'polyglot', 'already' / 16~20단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] She was already a fluent polyglot because she had gone to school in four countries as a child.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 16~20단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-17T03:14:36.023Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": 0.17,
-    "distractorEff": 100,
-    "pass": true,
-    "flags": [
-     "변별도 낮음(D̂=0.17)"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Case assignment differs based on functional elements and the type of Case (accusative vs. nominative)",
-     "Case assignment is determined exclusively by the functional element in role assignment",
-     "Case assignment varies only for accusative Case, excluding nominative Case",
-     "All Case types are assigned under identical conditions by functional elements",
-     "Case assignment always requires subject marking, irrespective of Case type"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Case assignment varies depending on the functional element and the type of Case (accusative vs. nominative).'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 지문에서 'functional element'이 Case assigner 가 될 수 있지만, 'role assignment'와는 무관하다는 점을 보지 못하고 'role assignment'에만 집중해 오독했음. 지문은 'functional element'이 Case assigner 가 될 수 있다고만 말하고, 'role assignment'와는 별개임을 분명히 함. → 처방: 문제를 풀 때는 'Case assigner'와 'role assignment'가 같은 것인지, 아니면 다른 것인지 반드시 구분해 읽어야 함.\n③ 진단: 지문에서 'nominative Case'는 'subject marking' 없이도 assign 될 수 있지만, 'accusative Case'는 반드시 'subject marking'이 필요하다는 점을 혼동했음. 지문은 'nominative'와 'accusative'가 'fundamentally different'하다고 설명하고 있음. → 처방: Case 의 종류(accusative vs. nominative)에 따라 assign 조건이 달라질 수 있음을 염두에 두고 지문을 읽어야 함.\n④ 진단: 지문에서 'nominative'와 'accusative'의 assign 조건이 'identical'하지 않다는 점을 보지 못하고, 모든 Case 가 같은 조건에서 assign 된다고 오독했음. 지문은 두 Case 가 'similar'한지, 아니면 'fundamentally different'한지를 두고 논쟁 중이라고 설명함. → 처방: Case 의 종류에 따라 assign 조건이 달라질 수 있음을 기억하고, 지문의 논쟁 구조를 정확히 파악해야 함.\n⑤ 진단: 지문에서 'nominative Case'는 'subject marking' 없이도 assign 될 수 있지만, 'accusative Case'는 반드시 'subject marking'이 필요하다는 점을 혼동했음. 지문은 'nominative'와 'accusative'가 'fundamentally different'하다고 설명하고 있음. → 처방: Case 의 종류에 따라 assign 조건이 달라질 수 있음을 염두에 두고, 지문의 세부 설명을 꼼꼼히 읽어야 함.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Case assignment varies depending on the functional element and the type of Case (accusative vs. nominative).]"
    }
   }
  ]

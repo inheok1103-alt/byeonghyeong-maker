@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T09:04:22.651Z",
+ "updated": "2026-08-17T10:03:55.857Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T10:03:17.185Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'and'로 연결된 명사구가 병렬 구조를 이루며, 두 번째 명사에 관사가 누락되는 오류가 빈번하다. 또한 'of' 대신 'to'가 잘못 사용되는 전치사 오류도 다수 확인된다.",
+   "rule": "'and'로 연결된 명사구가 병렬 구조를 이룰 때는 두 번째 명사구에도 반드시 관사를 첨가하도록 오류 유도 문장을 작성하라. 예를 들어, 'She has a book and pen.' 대신 'She has a book and a pen.' 또는 'She has a book and the pen.'으로 오류를 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T09:03:40.764Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'old/new'와 같은 형용사가 명사의 수를 결정짓는 패턴이 빈번하며, 특히 'new'는 복수 명사와 결합할 때 '-s'가 필수적으로 붙는다. 또한, 'successful'과 같은 형용사의 철자 오류(예: 'successfull')가 자주 발생한다.",
    "rule": "형용사 'new'가 명사와 결합할 때는 복수형 명사(예: plants, books 등)에 '-s'를 반드시 붙여야 한다. 또한, '-ful'로 끝나는 형용사(예: successful, beautiful)는 철자를 정확히 '-ful'로 표기해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T19:17:21.722Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'that' 절을 동사 뒤에 배치하는 경우, 주절 동사(use/think/suggest)와 조화된 시제(3인칭 단수 현재형) 및 문법적 일관성을 유지하는 패턴이 빈번하다.",
-   "rule": "원서 패턴을 반영하여 '~ that S V' 구조에서 주절 동사는 3인칭 단수 현재형(-s)으로 통일하고, 'that' 절의 시제를 주절과 맞춰야 한다. 예: 'birds use that they have crystals' → 'birds use that they have crystals'가 아니라 'the third piece of evidence that birds use is that they have crystals'로 변형.",
    "sample": [
     "old english",
     "university press",
