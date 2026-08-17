@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-17T14:49:17.597Z",
+ "updated": "2026-08-17T15:45:26.822Z",
  "samples": [
+  {
+   "ts": "2026-08-17T15:44:39.465Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "어휘 동사의 의미가 주어와 목적어의 격 부여와 위치를 직접 결정하므로 경량 동사의 위계가 그 결과로 나타난다고 보아야 한다.",
+     "경량 동사와 어휘 동사의 위계는 주어와 목적어의 격 부여에만 관여하며, 문법 구조의 다른 부분에는 영향을 주지 않는다.",
+     "어휘 동사 위에 경량 동사가 위치해야만 주어와 목적어의 격과 위치를 체계적으로 부여할 수 있다고 주장할 수 있다.",
+     "경량 동사와 어휘 동사의 위계가 주어와 목적어의 격 부여에 관여하기도 하지만, 그 규칙이 항상 필수적이지는 않다.",
+     "어휘적·구조적 제약에 따라 경량 동사와 어휘 동사의 위계가 분화되면서 주어와 목적어의 격 부여와 위치가 결정된다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The head-directionality parameter governs the structural organization of VP, where the light verb v projects above the lexical verb V, determining argument merging and case assignment.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 어휘 동사와 경량 동사의 위계가 주어/목적어의 격 부여와 위치 결정에 영향을 주지만, 그 위계가 어휘 동사의 '의미'에 직접 좌우된다고 설명하지 않는다. 학생은 어휘 동사의 '의미'가 격 부여를 '직접' 결정한다고 오해하여 의미를 지나치게 강조한 듯하다. → 처방: 지문에서 어휘 동사의 의미보다는 '구조적 제약'(예: 동사의 통사적 위치와 역할)이 격 부여와 위계에 더 중요하다는 점을하라. 어휘 동사의 의미보다는 문법 구조를 먼저 분석해 보세요.\n② 진단: 지문은 경량 동사와 어휘 동사가 주어/목적어의 격 부여뿐 아니라 문법 구조의 '다른 부분'(예: 동사구 내 constituents 의 위치, discontinuous constituents)에도 영향을 미친다고 명시한다. 학생은 이 부분을 놓쳤거나 과소평가한 듯하다. → 처방: 문법 구조의 '다른 부분'이 무엇인지 확인하라. 특히 동사구의 constituents 배치와 discontinuous constituents 처리가 격 부여와 어떻게 연관되는지 다시 읽어보세요.\n③ 진단: 지문은 경량 동사와 어휘 동사의 위계가 주어/목적어의 격과 위치를 체계적으로 부여하는 '방법' 중 하나일 뿐, '필수적'으로 그렇게 위치해야만 한다는 주장은 아니다. 학생은 위계가 '반드시' 경량 동사가 위에 있어야 한다고 단정지은 듯하다. → 처방: 지문의 'split structure' 개념을 떠올리며, 동사의 위계가 문법적 필요에 따라 달라질 수 있음을 인정하라. '체계적 부여'가 항상 특정 위계를 요구하지는 않는다는 점을 기억하세요.\n④ 진단: 지문은 경량 동사와 어휘 동사의 위계가 주어/목적어의 격 부여에 '항상' 관여하는 것은 아니며, 예외나 선택적 규칙이 있음을 암시한다(예: expletive subjects, discontinuous constituents). 학생은 이 규칙이 '항상 필수적'이라고 오해한 듯하다. → 처방: 지문의 'Make the following general assumptions' 부분을 주의 깊게 읽고, '일반적 가정'이지만 예외가 있을 수 있음을 인식하라. 규칙의 '필수성'보다는 '일반성'에 초점을 맞추세요.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The head-directionality parameter governs the structural organization of VP, where the light verb v projects above the lexical verb V, determining argument merging and case assignment.]"
+   }
+  },
+  {
+   "ts": "2026-08-17T15:44:52.427Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 모든 동사구는 형태소 동사 V가 조-light 동사 v에 포함된 분할 구조를 가지며, 주어는 v에 병합되고 다른 문법 요소는 V에 병합된다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-17T14:46:52.534Z",
    "type": "전체문장배열",
@@ -296,76 +349,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'Gratitude expressions in acknowledgments for intellectual and creative contributions'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 조건 누락· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: ‘students’를 ‘manuscript revisions’에만 초점을 맞추어 오독. 지문은 학생들이 원고를 ‘toiled through’(고생하며 읽고 피드백 줌)했다고만 언급하며, ‘revisions’(수정 작업) 자체는 교수진이 했다고 명시되어 있음. → 처방: ‘toiled through’의 의미를 정확히 이해하고, 학생의 역할이 ‘revisions’가 아니라 ‘feedback 과 피드백’임을 기억하기.\n② 진단: ‘acknowledgments’를 ‘causes of intellectual contributions’로 오해. 지문은 ‘invaluable ideas’, ‘constructive criticisms’, ‘tokens of empathy’를 언급하지만, 이들이 ‘원인’이 아니라 ‘감사의 대상’이라는 점을 혼동. → 처방: ‘acknowledgments’가 ‘감사’를 표현하는 글이므로, 그 내용이 ‘원인’이 아니라 ‘대상’이라는 점을 분명히 하기.\n③ 진단: ‘limited to published versions’를 오독. 지문은 학생들이 ‘manuscript’를 읽고 피드백을 주었다고 언급하며, ‘published versions’(출판된 버전)에만 감사를 표한 것이 아님. → 처방: ‘manuscript’와 ‘published versions’를 구분하고, 지문이 manuscript 단계의 피드백에 대한 감사를 담고 있음을 기억하기.\n⑤ 진단: ‘universal gratitude’를 오해. 지문은 특정 대상(학생, 교수진, 일러스트레이터 등)에 대한 구체적인 감사를 표현하며, ‘모든’ 학술 출판물의 ‘보편적’ 감사가 아님. → 처방: ‘universal’이라는 단어가 ‘특정 대상에 대한 구체적 감사’와 대조됨을 인식하고, 지문의 구체적 사례를 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Gratitude expressions in acknowledgments for intellectual and creative contributions]"
-   }
-  },
-  {
-   "ts": "2026-08-17T10:03:04.351Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Cognitive English Grammar VIII us invaluable ideas, in particular Susannah Ewing Bölke, Elizabeth Matthis, Jane Oehlert, and Allan Turner. We would also like to thank Birgit Smieja, Evgenia Sokolinskaja, Angela Heidemann, and Lukasz Tabakowska, who embellished the book with illustrations. Our special thanks go to the instructors of many classes who worked with earlier versions of the book and gave us suggestions and constructive criticisms as well as tokens of empathy. We would especially like to express our thanks to the many students who toiled through the book manuscript at the universities of Hamburg, Kraków, Warsaw, Murcia, Budapest, Debrecen, and Bergen. The student input gave us the satisfying impression that the book was written and re-written with its future users looking over our shoulders and somehow writing the book with us. Günter Radden and René Dirven",
-    "choices": [
-     "이 책의 집필에 수잔나 유잉 뵐케가 중요한 아이디어를 제공하지 않았다.",
-     "이 책은 일러스트레이터 비르기트 스미에자 등이 그림으로 꾸미지 않았다.",
-     "이 책의 개정판을 사용한 강사들이 건설적인 비판과 조언을 주었다.",
-     "이 책의 원고 검토에 여러 대학 학생들이 참여하지 않았다.",
-     "이 책은 구텐 루덴과 르네 디르벤에 의해 집필되지 않았다."
-    ],
-    "answer": 3,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문 첫머리에 'Susannah Ewing Bölke'가 'invaluable ideas'를 제공했다고 명시되어 있는데, 이를 읽지 않고 '제공하지 않았다'로 오해한 듯함. → 처방: 지문에서 'invaluable ideas'를 제공한 사람을 찾고, 그 이름이 '수잔나 유잉 뵐케'인지 확인하기.\n② 진단: 지문에 'Birgit Smieja 등'이 'illustrations'으로 책을 꾸몄다고 쓰였는데, 이를 '그림으로 꾸미지 않았다'로 잘못 이해한 듯함. → 처방: 지문에서 'illustrations'을 맡은 사람을 찾고, 그 이름이 '비르기트 스미에자'인지 확인하기.\n④ 진단: 지문에 'many students who toiled through the book manuscript at the universities of...'라고 여러 대학 학생들이 원고 검토에 참여했다고 쓰였는데, 이를 '참여하지 않았다'로 오해한 듯함. → 처방: 지문에서 '원고 검토'에 참여한 주체를 찾고, '여러 대학 학생들'이 포함되어 있는지 확인하기.\n⑤ 진단: 지문 맨 끝에 'Günter Radden and René Dirven'이 이 책을 집필했다고 쓰였는데, 이를 '집필하지 않았다'로 잘못 이해한 듯함. → 처방: 지문에서 책의 집필자를 찾고, 그 이름이 '구텐 루덴과 르네 디르벤'인지 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T08:05:56.667Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "ambiguity in word meanings across contexts and languages",
-     "confusion in English homonyms and near-homophones",
-     "universal challenges in language comprehension due to word multiplicity",
-     "miscommunication arising from identical spellings in different contexts",
-     "frequent cases where single labels carry multiple meanings in English"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Meaning multiplicity in labels or aliases across languages and contexts'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 정도 왜곡\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Meaning multiplicity in labels or aliases across languages and contexts]\n[오답 진단·처방]\n① 진단: ‘contexts and languages’를 오해해 ‘단어의 뜻이 문맥과 언어에 따라 달라진다’고 읽었지만, 지문은 ‘영어 동음이의어와 비슷한 소리의 단어들’에만 초점을 맞춤. ‘languages’(언어)라는 말이 지문에 없음. → 처방: 문제의 핵심은 ‘영어 동음이의어와 비슷한 소리의 단어’임을 기억하고, ‘언어’나 ‘문맥’을 오해하지 않도록 주의하기.\n③ 진단: ‘universal challenges’를 ‘보편적인 언어 이해의 어려움’으로 오해해 ‘모든 언어’에서 일어나는 문제라고 읽었지만, 지문은 ‘영어’에만 한정되어 있음. → 처방: ‘universal’이 아니라 ‘English’라는 단어가 문제의 범위를 ‘영어’로 한정한다는 점을 기억하고, ‘보편적’이라고 오해하지 않기.\n④ 진단: ‘identical spellings’를 ‘똑같은 철자’를 ‘다른 문맥에서’로 오해해 ‘철자가 같은 경우’로만 읽었지만, 지문은 ‘소리도 비슷하고 뜻도 다른 단어들(동음이의어·유사음 단어)’까지 포함함. → 처방: ‘identical spellings’가 아니라 ‘homonyms and near-homophones’를 문제의 핵심으로 삼고, 철자뿐 아니라 소리와 뜻의 혼동까지 고려하기.\n⑤ 진단: ‘single labels’이 ‘하나의 단어에 여러 뜻’이 아니라 ‘하나의 표제어(레이블)가 여러 의미를 가진다’고 오해해 ‘단어 자체의 다의성’을 떠올렸지만, 지문은 ‘소리나 철자가 비슷해서 혼동되는 단어들’에 초점을 맞춤. → 처방: ‘single labels’이 아니라 ‘homonyms and near-homophones’를 문제의 핵심으로 삼고, ‘단어의 다의성’이 아니라 ‘소리·철자의 유사성으로 인한 혼동’을 떠올리기."
    }
   }
  ]

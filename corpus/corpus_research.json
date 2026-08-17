@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T14:49:17.593Z",
+ "updated": "2026-08-17T15:45:26.818Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T15:44:54.545Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스 패턴은 '명사 + 전치사 + 특정 시간/기간' 구조가 빈번하며, 특히 'on/at/in + 명사구'가 시간 표현에서 핵심 역할을 한다. 또한 'but'이나 'and'로 연결된 대조/병렬 구조가 문장 구조를 단순화하는 데 자주 활용된다.",
+   "rule": "시간 표현에서 'in/on/at' 중 'on'을 사용할 때는 '특정 요일/날짜/시간대'(예: days, hours, morning, Monday) 앞에 반드시 'on'을 쓰도록 문항을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T14:48:43.193Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 코퍼스는 '명사구 + 동사 + 보어/목적어' 구조에서 '단수/복수 일치'와 '동사 시제/태'가 오류로 자주 등장함을 보여준다. 특히 'and'로 연결된 동사구가 있을 때, 동사 형태의 일관성이 깨지는 경우가 많다.",
    "rule": "'and'로 연결된 동사구는 반드시 동일한 시제·태·수(단/복수)를 유지해야 한다. 예: 'X does not exist and is just fiction' (O) vs. 'X does not exist and it is just fiction' (X).",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T01:51:43.095Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "복수 명사(transports, commitments, subjects)가 단수형으로 오류가 발생하는 패턴이 빈번하며, 전치사(‘to’→‘of’, ‘of the matter that’→‘The fact of the matter is that’)와 관사(a lot of)의 오용도 다수 확인된다.",
-   "rule": "‘복수 명사’가 단수형으로 오용된 경우, 해당 명사를 단수로 수정하고 문맥에 맞는 전치사(‘of’, ‘to’)나 관사(a/an/the)를 추가하여 문법적으로 올바르게 재구성하라. 예: ‘needs to transportation’ → ‘needs of transportation’, ‘alot of acadmic subject’ → ‘a lot of academic subjects’.",
    "sample": [
     "old english",
     "university press",
