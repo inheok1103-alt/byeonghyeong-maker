@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T10:51:38.229Z",
+ "updated": "2026-08-17T11:47:59.965Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T11:47:32.850Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사구 내 복수형 오류는 소유격/복수형 혼동에서 비롯되며, 'failures and struggles'와 같이 명사 자체의 복수형으로 수정해야 한다.",
+   "rule": "원서 코퍼스에서 확인된 'point of view'와 같이 복합명사의 단수형 구조(‘A of B’)가 빈번하므로, 'points of views' → 'point of view'로 수정하는 오류 패턴을 변형문제에 반영하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T10:51:07.640Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'복수형 명사 + of + 복수형 명사' 구문에서 불필요한 정관사(the) 사용이 오류로 확인된다. 또한, 'livestock'은 불가산 명사로, 복수형이 없음을 유념해야 한다.",
    "rule": "'the + 복수형 명사(of + 복수형 명사)' 구조에서 'the'를 삭제하거나, 불가산 명사(livestock, poultry 등)일 경우 복수형을 쓰지 않도록 문장을 수정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T20:48:15.447Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'~을 하다'/'~을 수행하다'와 같이 행위 동사를 'of+명사' 구조로 오용하는 패턴이 반복된다. 또한 'become+형용사'가 'be+형용사'로 대체되어야 하는 경우가 많다.",
-   "rule": "'행위 동사(do/perform/think 등)의 경우, '~을 하다'/'~을 수행하다'는 'do/perform/think + 목적어' 형태로만 사용하며, 'of+명사' 구조는 명사 수식에 한정해 사용한다. 또한 'become+형용사'는 'be+형용사'로 대체 가능할 때 반드시 수정하도록 오답을 설계한다.",
    "sample": [
     "old english",
     "university press",

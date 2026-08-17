@@ -1,6 +1,44 @@
 {
- "updated": "2026-08-17T10:51:38.232Z",
+ "updated": "2026-08-17T11:47:59.969Z",
  "samples": [
+  {
+   "ts": "2026-08-17T11:43:51.558Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Ray English 지문 전문 · 원문 그대로 22번 요지 · M A I N P O I N T 경험의 폭과 창의성 요지 창의성을 높이려면 관심을 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다. 소재 창의성과 경험의 폭 Creativity and breadth of experience 주제 관심을 좁히지 말고 경험을 넓혀야 창의성이 자란다 Broad, not narrow, experience fuels creativity 제목 넓은 경험이 창의성을 키운다 Why Broad Experience Fuels Creativity 한눈에 어려운 문제의 창의적 해결책은 긴장을 푼 순간 떠오른다는 관찰에서 출발한다. 흔히 ‘한 주제로 관심을 좁히라’고 하지만, 글은 이를 뒤집어 ‘경험 의 폭 (breadth)을 넓히는 것이 창의성의 핵심’이라고 본다. 경험이 좁으면 상상력의 범위도 좁아져 해롭다는 것이다. 지문 전문 — 시험지 원문 Suppose you have been working on the solution to a challenging technological problem for many years. ⓐ<u>Let’s also suppose</u> that you have been ⓑ<u>paying attention to whatever else you have encountered</u> that might be related to the problem. In that case, chances are that creative solutions to the problem ⓒ<u>could suddenly popped up</u> in your mind when you are relaxed. ⓓ<u>Such “eureka moments”</u> (when great insights lead to discovery or invention) often take place at unexpected times. To enhance spontaneous creativity, therefore, one must pay attention to the things that could potentially lead to valuable outcomes. This ⓔ<u>does not mean that you must narrow down</u> your interest to one specific topic. On the contrary, breadth of experience is the key to creativity. If your experience is limited to a narrow range of topics, then the scope of your imagination will likewise be narrow, which would be harmful to creativity. * spontaneous: 자연 발생적인 지문 전문 · 원문 그대로",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [시제] ⓒ: 'could suddenly popped up' → 'could suddenly pop up' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T11:47:30.791Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "Ray English 지문 전문 · 원문 그대로 22번 요지 · M A I N P O I N T 경험의 폭과 창의성 요지 창의성을 높이려면 관심을 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다. 소재 창의성과 경험의 폭 Creativity and breadth of experience 주제 관심을 좁히지 말고 경험을 넓혀야 창의성이 자란다 Broad, not narrow, experience fuels creativity 제목 넓은 경험이 창의성을 키운다 Why Broad Experience Fuels Creativity 한눈에 어려운 문제의 창의적 해결책은 긴장을 푼 순간 떠오른다는 관찰에서 출발한다. 흔히 ‘한 주제로 관심을 좁히라’고 하지만, 글은 이를 뒤집어 ‘경험 의 폭 (breadth)을 넓히는 것이 창의성의 핵심’이라고 본다. 경험이 좁으면 상상력의 범위도 좁아져 해롭다는 것이다. 지문 전문 — 시험지 원문 Suppose you have been working on the solution to a challenging technological problem for many years. ⓐ<u>Let’s also suppose</u> that you have been paying attention to whatever else you have encountered ⓑ<u>that might be related to the problem</u>. In that case, chances are that creative solutions to the problem ⓒ<u>could suddenly popped up</u> in your mind when you are relaxed. Such “eureka moments” (when great insights lead to discovery or invention) often take place at unexpected times. ⓓ<u>To enhance spontaneous creativity</u>, therefore, one must pay attention to the things that could potentially lead to valuable outcomes. This does not mean that you ⓔ<u>must narrow down your interest</u> to one specific topic. On the contrary, breadth of experience is the key to creativity. If your experience is limited to a narrow range of topics, then the scope of your imagination will likewise be narrow, which would be harmful to creativity. * spontaneous: 자연 발생적인 지문 전문 · 원문 그대로",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [시제] ⓒ: 'could suddenly popped up' → 'could suddenly pop up' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-17T10:49:35.255Z",
    "type": "영영풀이일치",
@@ -273,60 +311,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T05:00:30.896Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "Practice:  ⓐ<u>Ask students to work in groups</u> and discuss the sentences to reach the meaning of the new word depending on the overall meaning of the sentences in which these words are located.  ⓑ<u>A recorder of each group writes down</u> the answer of his/her mates and ⓒ<u>a spokesperson says the answers</u>.  In the individual work section ask students to work individually and ⓓ<u>give the meaning that is closest to the underlined word</u> ⓔ<u>depending the overall meaning</u> of the sentences.  For homework ask the students to complete the exercises done at the classroom. You may also ask them to refer to any writing materials they have encountered before and try to unlock the meaning of the words that seemed difficult to them, and to tell you the result of their effort.  Let them refer back to the preview section and check again the words they know after studying the lesson, so as to measure their progress. Teacher’s Comments:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓔ: 'depending the overall meaning' → 'depending on the overall meaning' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T05:01:10.148Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "학생들은 문맥적 단서를 과도하게 활용해 새로운 어휘의 의미를 즉각적으로 암기해야 한다.",
-     "학생들은 새로운 어휘의 의미를 문장 속에서 유추하는 방법만으로 충분하다고 여겨야 한다.",
-     "학생들은 새로운 어휘를 문맥적 유추 없이 무조건 암기하는 것이 가장 효율적이라고 생각해야 한다.",
-     "학생들은 새로운 어휘의 의미를 유추하는 연습을 소홀히 하거나 선택적으로 반복해야 한다.",
-     "학생들은 문맥적 단서를 활용해 새로운 어휘의 의미를 유추하고, 자기 점검형 연습을 통해 그 의미를 정착시켜야 한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Students should learn new vocabulary by inferring meanings from contextual sentences and reviewing progress through self-referential exercises.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 문맥적 단서의 '과도한 활용'을 문맥 유추의 중요성으로 오해한 것 같다. 지문은 문맥적 단서를 '적절히 활용'해 의미를 유추하라고 강조하는데, '즉각적 암기'라는 표현은 지문에서 다루지 않는다. → 처방: 문장 속에서 새로운 단어의 의미를 '유추'하는 연습을 꾸준히 하고, 그 의미를 '정착'시키는 자기 점검 활동을 해야 한다.\n② 진단: '유추하는 방법만으로 충분하다'고 오해했는데, 지문은 문맥 유추 후 '자기 점검형 연습'을 통해 의미를 정착시키라고 안내한다. → 처방: 문맥을 통해 의미를 유추한 뒤, 그 의미를 '확인하고 정리'하는 활동을 반드시 추가해야 한다.\n③ 진단: '무조건 암기'가 가장 효율적이라고 생각했는데, 지문은 문맥적 단서를 활용해 '의미를 유추'하고 '정착'시키는 과정을 강조한다. → 처방: 새로운 단어의 의미를 '문장 속에서 찾아내는 연습'을 먼저 하고, 그다음 암기하는 방식으로 공부해야 한다.\n④ 진단: '소홀히 하거나 선택적으로 반복'해야 한다고 오해했는데, 지문은 '반복과 점검'을 통해 의미를 정착시키라고 명시한다. → 처방: 새로운 단어의 의미를 '여러 번 확인'하고, 자신이 얼마나 이해했는지 '스스로 점검'하는 활동을 꾸준히 해야 한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Students should learn new vocabulary by inferring meanings from contextual sentences and reviewing progress through self-referential exercises.]"
    }
   }
  ]
