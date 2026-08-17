@@ -1,6 +1,40 @@
 {
- "updated": "2026-08-17T05:56:09.165Z",
+ "updated": "2026-08-17T07:19:39.731Z",
  "samples": [
+  {
+   "ts": "2026-08-17T07:18:39.674Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "글을 쓸 때에는 주제를 먼저 정해 일관되게 다루어야 독자가 글을 이해하기 쉽다",
+     "글의 주제를 일관되게 유지해야만 독자들이 글의 내용을 더 잘 이해하게 된다",
+     "글을 쓸 때는 주제어를 간결하고 구체적으로 정하는 것이 중요하다",
+     "글을 쓸 때에는 모든 주제가 주제어여야만 글이 cohesive 하고 coherent 해진다",
+     "글을 쓸 때에는 주제를 가끔씩 바꿔야만 독자들의 관심을 유발할 수 있다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 '글의 핵심 논지는 **글을 쓰기 전에 주제를 명확히 정하고 일관되게 유지해야 한다**이다.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘주제를 일관되게 유지해야만’(should only)라는 표현이 지문의 ‘consistent’(일관되게 다루어야)보다 더 강한 강제성을 띠며, ‘독자들이 글을 더 잘 이해하게 된다’는 결과만 강조한 나머지 ‘주제를 일관되게 다루어야 한다’는 핵심 행동을 놓쳤다. → 처방: 지문에서 강조한 ‘consistent’(일관성 유지)의 중요성을 떠올리며, 주제를 일관되게 다루는 것이 독자의 이해를 돕는 핵심 행동임을 기억하자.\n③ 진단: ‘주제어를 간결하고 구체적으로 정하는 것’이 중요하다는 점은 맞지만, 지문은 ‘대부분의 주제가 주제어여야 한다’는 stronger 조건을 덧붙이며 ‘주제어의 역할’을 더 강조했다. 이 선지는 그 부분을 생략했다. → 처방: 지문의 ‘most of your subjects should be topics’를 떠올리며, 주제어가 단순히 중요하다는 것뿐 아니라 ‘주제의 핵심을 담아야 한다’는 점을 기억하자.\n④ 진단: ‘모든 주제가 주제어여야만’(only if all subjects are topics)라는 표현이 지문의 ‘most of your subjects should be topics’보다 훨씬 엄격한 조건을 요구하며, 지문은 ‘대부분’이란 완화 조건을 사용했다. → 처방: 지문의 ‘most’(대부분)를 떠올리며, ‘주제의 핵심을 담은 주제어가 대부분 있어야 한다’는 점을 기억하고, ‘모든’은 오버스펙하지 않도록 주의하자.\n⑤ 진단: ‘주제를 가끔씩 바꿔야 한다’는 내용은 지문의 ‘do not vary your subjects for the sake of variety’(다양성을 위해 주제를 바꾸지 마라)와 완전히 반대된다. 학생은 ‘독자들의 관심을 유발할 수 있다’는 결과에만 주목했다. → 처방: 지문의 ‘consistent’(일관성 유지)의 중요성을 떠올리며, 주제를 자주 바꾸는 것이 아니라 ‘일관되게 다루는 것’이 독자의 이해를 돕는 핵심임을 기억하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: 글의 핵심 논지는 **글을 쓰기 전에 주제를 명확히 정하고 일관되게 유지해야 한다**이다.]"
+   }
+  },
   {
    "ts": "2026-08-17T05:52:16.806Z",
    "type": "네모어휘ABC",
@@ -290,39 +324,6 @@
     ],
     "answer": 5,
     "explanation": "밑줄 친 부분은 'The senator delivered an angry, prolonged speech criticizing excessive military spending, revealing deep frustration with governmental inefficiency.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘brief speech’와 ‘venting anger at inefficiencies in public welfare programs’는 ‘lengthy diatribe’(길고 통렬한 비판)라는 지문 내용과 완전히 반대되며, ‘military spending’을 ‘public welfare programs’로 오독한 것으로 보임. → 처방: 문장에서 ‘military budget waste’를 정확히 찾아내어 ‘군사 예산 낭비’가 핵심 주제임을 확인하고, ‘diatribe’가 ‘길고 분노에 찬 비판’이란 뜻을 떠올려야 함.\n② 진단: ‘detailed speech’와 ‘numerically broke down’는 ‘diatribe’가 ‘길고 분노에 찬 비판’이라는 뜻을 오해한 것이며, ‘without expressing frustration’은 ‘diatribe’가 분노를 담는다는 지문 내용과 맞지 않음. → 처방: ‘diatribe’를 ‘길고 격렬한 비판’이라는 뜻으로 정확히 기억하고, 문장에서 분노가 담겼는지 확인할 것.\n③ 진단: ‘measured, lengthy debate’는 ‘diatribe’가 ‘격렬한 비판’이라는 뜻을 오해한 것이며, ‘reducing military expenses’는 ‘condemning excessive military spending’과 다르며, ‘frustration’이 빠졌음. → 처방: ‘diatribe’를 ‘격렬한 비판’으로 정확히 이해하고, 문장에서 분노와 비판의 강도가 높은지 확인할 것.\n④ 진단: ‘concise and factual’는 ‘diatribe’가 ‘길고 격렬한 비판’이라는 뜻을 오해한 것이며, ‘condemning military budget waste’는 맞지만 ‘always’가 ‘lengthy’를 부정하는 오류임. → 처방: ‘diatribe’를 ‘길고 분노에 찬 비판’으로 정확히 기억하고, 문장에서 ‘lengthy’와 ‘angry’가 포함되었는지 확인할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T23:35:31.032Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "Practice:  Ask ⓐ<u>students</u> to work in groups and discuss the ⓑ<u>sentences</u> to reach the meaning of the new word ⓒ<u>depending</u> on the ⓓ<u>examples</u> given in the sentences.  A recorder of each group writes down the answer of his/her mates and a spokesperson says the answers.  In the individual work section ask students to work individually and give the meaning that is closest to the underlined word depending on the given examples in the sentences.  For homework ask students to read the two passages about the Intifada and languages, and answer the questions by referring to the examples in the passages.  Make sure that students understand quite well that in the first ⓔ<u>passage</u> they are to give meanings to the words depending on the examples, while in the second passage they are to give examples from the passage to the words indicated in the questions.  Let students refer back to the preview section and check again the words they know after studying the lesson, so as to measure their progress.",
-    "choices": [
-     "students: A person who studies or learns about a particular subject.",
-     "sentences: The smallest unit of language that has a particular meaning and can be expressed",
-     "depending: (followed by on or upon, formerly also by of) To be contingent or conditioned; t",
-     "examples: Something that is representative of all such things in a group.",
-     "passage: A paragraph or section of text or music with particular meaning."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓑ의 풀이는 'words'의 정의이다. 'sentences'의 올바른 풀이: The decision or judgement of a jury or court; a verdict.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘students’를 ‘공부를 하는 사람’으로만 오독해 ‘특정 과목’에 대한 학습을 강조하는 정의를 ‘학생’의 일반적인 의미로 혼동했다. 지문에서 ‘학생’이 그룹 활동의 주체로만 언급된 점을 보지 못했다. → 처방: ‘학생’의 사전적 의미를 떠올리고, ‘특정 과목’을 강조하는 정의를 버리고 일반적인 ‘공부하는 사람’을 떠올리자.\n② 진단: ‘sentences’를 ‘의미를 가진 언어의 최소 단위’로 오독했으나, 정작 ‘문장’이 ‘의미’를 지닌다는 점은 맞지만 ‘가장 작은 단위’라는 표현이 과도하게 좁아졌다. 지문에서 ‘문장’이 ‘의미’를 지닌다는 점만 언급된 점을 놓쳤다. → 처방: ‘문장’의 사전적 의미를 떠올리고, ‘의미’를 지닌다는 핵심만 기억한 뒤 ‘가장 작은 단위’라는 표현은 무시하자.\n④ 진단: ‘examples’를 ‘집단의 대표적인 사례’로 오독했으나, 정작 ‘예시’는 ‘특정 사례’를 가리키는 경우가 많다. 지문에서 ‘예시’가 ‘단어의 뜻을 설명하는 근거’로 사용된 점을 보지 못했다. → 처방: ‘예시’의 의미를 ‘특정 사례’를 가리키는 것으로 떠올리고, ‘집단의 대표’라는 표현은 무시하자.\n⑤ 진단: ‘passage’를 ‘특정한 의미를 지닌 문단이나 음악 부분’으로 오독했으나, 정작 ‘passage’는 ‘지나가는 부분’이란 뜻도 있다. 지문에서 ‘passage’가 ‘두 개의 글’로 언급된 점을 보지 못했다. → 처방: ‘passage’의 의미를 ‘지나가는 부분’이란 기본 뜻부터 떠올리고, ‘특정한 의미’라는 표현은 무시하자."
    }
   }
  ]
