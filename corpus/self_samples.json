@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-17T11:47:59.969Z",
+ "updated": "2026-08-17T13:10:14.874Z",
  "samples": [
+  {
+   "ts": "2026-08-17T13:08:49.988Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/3 다수결 3번(기록 5번 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Contents Preface page vii Acknowledgments xiii 1 an adventure in ambiguity with one ﬁsh two ﬁsh 1 1.1 How an (A) [8-word title / 8-words title] can have many interpretations 2 1.2 Syntax and punctuation 5 Coda 12 2 exceptional students and teachers 13 2.1 Syntactic structure in coordinate constructions 13 2.2 Ambiguities with multiple coordination 21 Coda 23 3 Introduction to Language and Linguistics 25 3.1 (B) [ambiguities in / Ambiguity in] the interpretation of conjuncts 25 3.2 What a language is: the lexicon 29 3.2.1 The mental lexicon 29 3.2.2 Some structure in the mental lexicon 31 3.3 What a language is: the computational procedure 34 3.4 What is language? 39 3.5 What is linguistics? 40 3.5.1 A puzzle in linguistics: the syntactic structure of coordination 42 3.6 On the use and misuse of and 45 Coda 50 4 a review of a book by two philosophers 53 4.1 The syntactic structure of complex noun phrases 53 4.1.1 The syntax of prepositional phrase modiﬁers 54 4.1.2 From prepositional phrase to clausal modiﬁers 56 4.2 The syntactic analysis of (relative) clauses 60 4.2.1 Syntactic variation in relative clauses 67 4.3 Inﬁnitival clauses 69 4.3.1 Ending a relative clause with a preposition 74 4.4 Mental grammar vs. prescriptive rules 75 4.4.1 (C) [The stranded preposition mistake / the stranded preposition mistakes] 76 4.4.2 The split inﬁnitive mistake 83 4.4.3 that vs. which: restrictive vs. nonrestrictive relative clauses 88 Coda 92 v",
+    "choices": [
+     "(A) 8-word title - (B) ambiguities in - (C) the stranded preposition mistakes",
+     "(A) 8-words title - (B) Ambiguity in - (C) the stranded preposition mistakes",
+     "(A) 8-words title - (B) ambiguities in - (C) The stranded preposition mistake",
+     "(A) 8-words title - (B) ambiguities in - (C) the stranded preposition mistakes",
+     "(A) 8-word title - (B) Ambiguity in - (C) The stranded preposition mistake"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) 8-word title - (B) Ambiguity in - (C) The stranded preposition mistake. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문 1.1에서 '(A) [8-word title / 8-words title]'의 제목을 '8-word title'로 쓴 부분이 '8-words title'로 오독하여 복수형 '-s'를 붙였다. 또한 (B) 부분에서 'ambiguities in'을 복수형으로 쓴 것이 옳은지 혼동했다. → 처방: 제목의 단어 수 표기는 '8-word title'로 복수 '-s'를 붙이지 않는다. (B)도 'ambiguities in'이 문맥상 옳은지 확인하고, 필요한 경우 단수형 'Ambiguity in'을 쓴다.\n② 진단: (A)에서 '8-word title'을 '8-words title'로 오독하여 복수형 '-s'를 잘못 사용했다. (B)에서는 'ambiguities in'을 복수형으로 썼으나, 문맥상 'Ambiguity in'이 더 적절하다는 판단이 부족했다. → 처방: 제목의 단어 수 표기는 '8-word title'로 고정하고, (B)도 문맥에 맞게 단수형 'Ambiguity in'을 우선 고려한다.\n④ 진단: (C)에서 'the stranded preposition mistakes'를 복수형으로 썼으나, 지문 3.6 'On the use and misuse of and'에서 'mistake'는 단수형이 옳음을 유추하지 못했다. 또한 'The'를 대문자로 쓰지 않았다. → 처방: (C)는 'The stranded preposition mistake'로 단수형과 대문자 'T'를 정확히 쓴다. 오류는 문맥상 단수형이 더 자연스러운지 확인한다.\n⑤ 진단: (A)에서 '8-word title'을 옳게 썼으나, (B)에서 'Ambiguity in'을 단수형으로 썼고, (C)에서 'The stranded preposition mistake'를 옳게 썼으나 세부 오류가 혼재되어 있다. → 처방: 각 항목의 문법 규칙을 분리하여 확인한다. (A)는 '8-word title'로, (B)는 문맥에 따라 'ambiguities in' 또는 'Ambiguity in'을 판단하고, (C)는 문맥상 단수형과 대문자 'T'를 정확히 쓴다."
+   }
+  },
   {
    "ts": "2026-08-17T11:43:51.558Z",
    "type": "틀린문장 고쳐쓰기",
@@ -292,25 +327,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] the light verb has no edge feature in wh-in-situ questions, so the wh-phrase quelle bêtise ‘what blunder’ is not moved to spec-v by any agent. (포인트: ‘no movement of the wh-phrase’ → ‘the wh-phrase is not moved’ (능동→수동))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-17T04:59:53.440Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Practice:  Ask students to work in groups and discuss the sentences to reach the meaning of the new word depending on the overall meaning of the sentences in which these words are located.  A recorder of each group writes down the answer of his/her mates and a spokesperson says the answers.  In the individual work section ask students to work individually and give the meaning that is closest to the underlined word depending the overall meaning of the sentences.  For homework ask the students to complete the exercises done at the classroom. You may also ask them to refer to any writing materials they have encountered before and try to unlock the meaning of the words that seemed difficult to them, and to tell you the result of their effort.  Let them refer back to the preview section and check again the words they know after studying the lesson, so as to measure their progress. Teacher’s Comments:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
