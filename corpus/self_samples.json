@@ -1,6 +1,98 @@
 {
- "updated": "2026-08-17T04:08:01.938Z",
+ "updated": "2026-08-17T05:01:51.954Z",
  "samples": [
+  {
+   "ts": "2026-08-17T04:59:53.440Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "Practice:  Ask students to work in groups and discuss the sentences to reach the meaning of the new word depending on the overall meaning of the sentences in which these words are located.  A recorder of each group writes down the answer of his/her mates and a spokesperson says the answers.  In the individual work section ask students to work individually and give the meaning that is closest to the underlined word depending the overall meaning of the sentences.  For homework ask the students to complete the exercises done at the classroom. You may also ask them to refer to any writing materials they have encountered before and try to unlock the meaning of the words that seemed difficult to them, and to tell you the result of their effort.  Let them refer back to the preview section and check again the words they know after studying the lesson, so as to measure their progress. Teacher’s Comments:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T05:00:30.896Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Practice:  ⓐ<u>Ask students to work in groups</u> and discuss the sentences to reach the meaning of the new word depending on the overall meaning of the sentences in which these words are located.  ⓑ<u>A recorder of each group writes down</u> the answer of his/her mates and ⓒ<u>a spokesperson says the answers</u>.  In the individual work section ask students to work individually and ⓓ<u>give the meaning that is closest to the underlined word</u> ⓔ<u>depending the overall meaning</u> of the sentences.  For homework ask the students to complete the exercises done at the classroom. You may also ask them to refer to any writing materials they have encountered before and try to unlock the meaning of the words that seemed difficult to them, and to tell you the result of their effort.  Let them refer back to the preview section and check again the words they know after studying the lesson, so as to measure their progress. Teacher’s Comments:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [준동사] ⓔ: 'depending the overall meaning' → 'depending on the overall meaning' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T05:01:10.148Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "학생들은 문맥적 단서를 과도하게 활용해 새로운 어휘의 의미를 즉각적으로 암기해야 한다.",
+     "학생들은 새로운 어휘의 의미를 문장 속에서 유추하는 방법만으로 충분하다고 여겨야 한다.",
+     "학생들은 새로운 어휘를 문맥적 유추 없이 무조건 암기하는 것이 가장 효율적이라고 생각해야 한다.",
+     "학생들은 새로운 어휘의 의미를 유추하는 연습을 소홀히 하거나 선택적으로 반복해야 한다.",
+     "학생들은 문맥적 단서를 활용해 새로운 어휘의 의미를 유추하고, 자기 점검형 연습을 통해 그 의미를 정착시켜야 한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Students should learn new vocabulary by inferring meanings from contextual sentences and reviewing progress through self-referential exercises.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 문맥적 단서의 '과도한 활용'을 문맥 유추의 중요성으로 오해한 것 같다. 지문은 문맥적 단서를 '적절히 활용'해 의미를 유추하라고 강조하는데, '즉각적 암기'라는 표현은 지문에서 다루지 않는다. → 처방: 문장 속에서 새로운 단어의 의미를 '유추'하는 연습을 꾸준히 하고, 그 의미를 '정착'시키는 자기 점검 활동을 해야 한다.\n② 진단: '유추하는 방법만으로 충분하다'고 오해했는데, 지문은 문맥 유추 후 '자기 점검형 연습'을 통해 의미를 정착시키라고 안내한다. → 처방: 문맥을 통해 의미를 유추한 뒤, 그 의미를 '확인하고 정리'하는 활동을 반드시 추가해야 한다.\n③ 진단: '무조건 암기'가 가장 효율적이라고 생각했는데, 지문은 문맥적 단서를 활용해 '의미를 유추'하고 '정착'시키는 과정을 강조한다. → 처방: 새로운 단어의 의미를 '문장 속에서 찾아내는 연습'을 먼저 하고, 그다음 암기하는 방식으로 공부해야 한다.\n④ 진단: '소홀히 하거나 선택적으로 반복'해야 한다고 오해했는데, 지문은 '반복과 점검'을 통해 의미를 정착시키라고 명시한다. → 처방: 새로운 단어의 의미를 '여러 번 확인'하고, 자신이 얼마나 이해했는지 '스스로 점검'하는 활동을 꾸준히 해야 한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Students should learn new vocabulary by inferring meanings from contextual sentences and reviewing progress through self-referential exercises.]"
+   }
+  },
+  {
+   "ts": "2026-08-17T05:01:24.342Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Practice:  Ask students to work in groups and discuss the sentences to reach the meaning of the new word depending on the overall meaning of the sentences in which these words are located.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 연습: 학생들에게 그룹으로 활동하며 제시된 단어들이 포함된 문장들의 전체적인 의미에 따라 새로운 단어의 의미를 유추하도록 토론해 보도록 요청합니다. (구문 포인트: 의존적 수식어(depending on ~) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-17T04:07:31.725Z",
    "type": "네모어법ABC",
@@ -256,142 +348,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'Students should infer the definition of an unfamiliar term by analyzing contextual clues within provided sentences rather than memorizing its dictionary meaning.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 학생들은 '예문 속 맥락'을 바탕으로 새로운 단어의 의미를 '추론'해야 한다고 분명히 설명하는데, 이 선지는 '예문 속 정확한 표현'에만 의존해야 한다고 오해하여 맥락을 무시하는 오류를 범함. → 처방: 새로운 단어의 의미를 찾을 때는 예문 속 '단어와 단어 사이의 관계'나 '문장 전체의 흐름'을 주의 깊게 살펴보기.\n③ 진단: 지문에서 학생들에게 '예문 속 맥락'을 바탕으로 의미를 '추론'하라고 지시했는데, 이 선지는 '예문만으로 이미 뜻이 명확하다'고 오해하여 분석이나 추론 없이 예문만 읽는 오류를 범함. → 처방: 예문 속 단어가 '왜 그런 뜻으로 쓰였는지'를 생각하며 문장 전체를 다시 한 번 천천히 읽어보기.\n④ 진단: 지문에서 '사전 뜻'을 먼저 확인하지 말고 '예문 속 맥락'으로 의미를 찾아야 한다고 설명했는데, 이 선지는 반대로 '사전 뜻'을 먼저 확인한 뒤 예문을 확인해야 한다고 오해하여 순서를 반대로 이해한 오류를 범함. → 처방: 새로운 단어의 뜻을 찾을 때는 '사전'을 보지 말고, 예문 속 단어가 '어떻게 쓰였는지'를 집중해서 읽어보기.\n⑤ 진단: 지문에서 학생들에게 '복잡한 추론'을 요구한다고 설명했는데, 이 선지는 '빠르게 읽기만'으로 뜻을 쉽게 알 수 있다고 오해하여 단순 읽기로 의미를 찾으려는 오류를 범함. → 처방: 예문 속 단어가 '어떤 역할을 하는지'를 생각하며 문장을 여러 번 읽고, 단어의 뜻을 '정확히' 파악하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T22:38:42.091Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답-오답 근접(64%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Infinitival to (by virtue of being the head of the overall structure and being active) serves as a probe and identifies both there and several prizes as active goals (there being active by virtue of its uninterpretable person feature, and several prizes by virtue of its uninterpretable case feature). Person agreement between the probe to and its two third-person goals (there and several prizes) results in the unvalued person feature on to being valued as third-person via (7) and deleted via (13). The unvalued case-feature on the goal several prizes cannot be valued or deleted by infinitival to, given our earlier assumption that to is a defective probe which cannot value or delete an unvalued case feature on a goal. [ ] If this gets deleted at this point, there will be inactivated at the end of the T-cycle, once it has moved to become the specifier of infinitival to: and this will wrongly predict that sentences such as the following should be grammatical:",
-    "choices": [
-     "The uninterpretable person feature on expletive there is automatically deleted without any intervention.",
-     "Infinitival to can value and delete the uninterpretable person feature on expletive there just as it does with case features.",
-     "The uninterpretable person feature on expletive there is irrelevant to the grammaticality of sentences involving infinitival to.",
-     "How then can the uninterpretable person feature on expletive there be resolved if infinitival to cannot value or delete it?",
-     "Expletive there must always retain its uninterpretable person feature to remain grammatically valid."
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 원문 'But what about the uninterpretable person feature on expletive there?'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'there 의 uninterpretable person feature 는 infinitival to 가 해결하지 못하고, T-사이클 말기에 inactivated 된다고 했다. 그런데 ①은 '자동으로 삭제된다'고 오해한 듯하다. 지문은 to 가 해결하지 못한다고 명시했다. → 처방: 지문에서 to 가 해결하지 못하는 feature 는 무엇인지 정확히 짚고, to 의 역할과 한계를 다시 한 번 정리해 읽어보기.\n② 진단: 지문은 to 가 case feature 는 해결하지 못한다고 했지만, ②은 to 가 person feature 도 case feature 처럼 해결할 수 있다고 착각한 듯하다. 지문은 to 가 defective probe 라 person feature 는 해결하지만 case feature 는 해결하지 못한다고 분명히 했다. → 처방: to 의 probe 로서의 능력과 한계를 구분해서 정리하고, 지문에서 'defective probe'가 무엇을 뜻하는지 다시 확인하기.\n③ 진단: 3번은 there 의 uninterpretable person feature 가 문법성에 영향을 주지 않는다고 주장하는데, 지문은 이 feature 가 inactivated 되어야 문법성이 유지된다고 했다. 학생은 이 feature 의 중요성을 오해한 듯하다. → 처방: there 의 uninterpretable person feature 가 문법성에 미치는 영향을 정리하고, inactivated 가 어떤 의미인지 이해하기.\n⑤ 진단: 5번은 there 가 uninterpretable person feature 를 '항상' 유지해야 한다고 주장하는데, 지문은 to 가 person feature 를 해결한다고 했다. 학생은 to 의 역할을 무시한 듯하다. → 처방: to 가 person feature 를 해결하는 과정을 다시 읽고, there 의 feature 가 inactivated 되는 시점을 정확히 파악하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T21:35:59.202Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.71,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "언어학에서 보어는 동사의 의미적 완결을 위한 논리적 근거로만 기능한다.",
-     "문법적 구조가 논리적 정당성을 결정하는 핵심 요소로 작용한다.",
-     "언어학의 모든 논증은 오로지 통사적 구조에만 근거해야 한다.",
-     "보어는 동사의 통사적 구조를 완성할 뿐, 의미적 완결성을 부여하지 못한다.",
-     "언어학에서 문법적 논증의 보어는 통사적 구조를 형성하는 데 필수적이다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Arguments in linguistics are syntactic structures that complete the meaning of a predicate, not logical justifications.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 보어의 역할이 '의미적 완결을 위한 논리적 근거'에만 있다고 오해한 것으로 보입니다. 지문은 보어(the suspect)가 동사 arrested 의 'internal argument'로 동사의 통사적 구조를 완성하는 데 필수적임을 강조합니다. → 처방: 보어는 동사의 통사적 구조를 완성하는 데 필수적이라는 점에 주목하여, 의미적 완결성도 함께 고려해야 함을 기억하세요.\n② 진단: 문법적 구조가 '논리적 정당성'을 결정하는 핵심 요소로만 작용한다고 오독했습니다. 지문은 문법적 구조가 통사적 위치를 형성하는 데 중요하다는 점을 설명하지만, 논리적 정당성까지 포함하지는 않습니다. → 처방: 문법적 구조가 통사적 위치를 형성하는 데 중요하다는 점에 집중하고, 논리적 정당성 여부는 따로 판단하지 않도록 주의하세요.\n③ 진단: 언어학의 모든 논증이 '오로지 통사적 구조에만 근거해야 한다'고 잘못 이해했습니다. 지문은 통사적 구조를 중심으로 설명하지만, 모든 논증이 통사적 구조에만 근거해야 한다는 주장은 과장된 표현입니다. → 처방: 언어학적 논증은 통사적 구조를 중심으로 할 수 있지만, 다른 요소(의미, 맥락 등)도 고려할 수 있음을 기억하세요.\n④ 진단: 보어가 '의미적 완결성을 부여하지 못한다'고 오해했습니다. 지문은 보어가 동사의 통사적 구조를 완성하는 데 필수적일 뿐만 아니라, 동사의 의미적 완결에도 기여함을 보여줍니다. → 처방: 보어가 통사적 구조를 완성하는 데 필수적이라는 점에 주목하되, 의미적 완결성도 함께 고려해야 함을 잊지 마세요.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Arguments in linguistics are syntactic structures that complete the meaning of a predicate, not logical justifications.]"
-   }
-  },
-  {
-   "ts": "2026-08-16T21:36:22.100Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "In a structure such as (15), the (A) [complement / subject] the suspect is said to be the internal argument of the verb arrested (in the sense that it is the argument contained within the immediate V-bar projection of the verb, and hence is a sister of the verb), whereas the (B) [subject / complement] the police is the external argument of the verb arrested (in that it occupies a position external to the V-bar constituent which is the immediate projection of the verb arrested). The VP in (15) is then (C) [merged / separated] with the present tense auxiliary [T have], forming the T-bar have the police arrested the suspect. Since a finite T has an [EPP] feature requiring it to have a subject of its own, the DP the police moves from being the subject of arrested to becoming the subject of [T have], forming The police have the police arrested the suspect. Merging the resulting TP with a null declarative complementiser in turn derives the structure shown in simplified form in (16) below:",
-    "choices": [
-     "(A) subject - (B) complement - (C) separated",
-     "(A) subject - (B) subject - (C) separated",
-     "(A) complement - (B) complement - (C) separated",
-     "(A) complement - (B) subject - (C) merged",
-     "(A) subject - (B) subject - (C) merged"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) complement - (B) subject - (C) merged. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 ‘complement’를 ‘subject’로 오독했는데, 지문에서 ‘the suspect’는 arrested 의 ‘internal argument’로 설명되어 ‘complement’가 맞음. ‘(B)’에서도 ‘complement’을 ‘subject’로 오독했는데, ‘the police’는 arrested 의 ‘external argument’로 ‘subject’가 맞음. → 처방: ‘internal argument’는 ‘complement’, ‘external argument’는 ‘subject’라는 규칙을 기억하고, 지문에서 ‘sister of the verb’는 ‘complement’, ‘external to the V-bar’는 ‘subject’라는 힌트를 찾기.\n② 진단: ‘(A)’와 ‘(B)’ 모두 ‘subject’로 오독했는데, 지문에서 ‘the suspect’는 arrested 의 ‘internal argument’(=complement), ‘the police’는 arrested 의 ‘external argument’(=subject)라고 명시되어 있음. → 처방: ‘internal argument’는 ‘complement’, ‘external argument’는 ‘subject’라는 용어의 의미를 정확히 이해하고, 지문에서 ‘sister of the verb’(complement)와 ‘external to the V-bar’(subject)라는 설명을 연결 지어 읽기.\n③ 진단: ‘(A)’와 ‘(B)’를 모두 ‘complement’로 오독했는데, 지문에서 ‘the police’는 arrested 의 ‘external argument’(=subject)라고 설명되어 ‘subject’가 맞음. → 처방: ‘external argument’는 ‘subject’라는 사실을 기억하고, 지문에서 ‘external to the V-bar constituent’는 ‘subject’를 가리킨다는 점을 확인하기.\n⑤ 진단: ‘(C)’를 ‘merged’로 오독했는데, 지문에서 ‘VP is then merged with the present tense auxiliary [T have]’라고 설명되어 ‘merged’가 맞지만, ‘(A)’와 ‘(B)’에서 ‘subject’를 오독해 오답을 선택함. → 처방: ‘(C)’는 지문에서 ‘merged’라고 직접 언급되어 있으니 먼저 ‘(C)’부터 확인하고, ‘(A)’와 ‘(B)’는 ‘internal argument=complement’, ‘external argument=subject’라는 규칙을 적용하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T21:37:11.185Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the syntactic analysis of verb arguments and their movement in sentence formation",
-     "the grammatical function of verb arguments in verb phrases",
-     "the syntactic movement of verb arguments as the primary factor in sentence formation",
-     "the fundamental syntactic rules that apply to all language structures",
-     "the syntactic characteristics of verb arguments excluding their movement"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The grammatical structure of verb arguments and their syntactic movement in sentence formation.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: ‘동사구 내의 동사 인자의 문법적 기능’을 주제로 삼았다면 지문은 인자의 ‘이동’을 중점적으로 설명하고 있어 오해한 것. 지문은 ‘이동’을 핵심으로 다루며 ‘문장 형성’의 과정까지 언급한다. → 처방: ‘동사 인자의 문법적 기능’이 아니라 ‘동사 인자의 구문 분석과 이동’을 주제로 삼아야 한다. 동사 인자의 ‘이동’과 ‘문장 형성’의 관계를 먼저 떠올려 보자.\n③ 진단: ‘동사 인자의 구문적 이동’을 ‘주요 요소’로 보았다면 지문은 ‘이동’이 문장 형성의 ‘일부’임을 강조하고 있어 과장된 해석. 지문은 ‘이동’이 문장 형성의 ‘핵심’이라고 말하지 않는다. → 처방: ‘이동’이 문장 형성의 ‘주요 요소’가 아니라 ‘구문 분석과 이동의 전체 과정’을 주제로 삼아야 한다. ‘주요 요소’라는 단어가 지문에 없음을 확인하자.\n④ 진단: ‘모든 언어 구조에 적용되는 기본 구문 규칙’을 주제로 삼았다면 지문은 특정 영어 구조의 ‘특수한 분석’을 다루고 있어 범위를 넓힌 오독. 지문은 영어의 한 구조에 국한된 설명을 제공한다. → 처방: ‘모든 언어 구조’가 아니라 ‘특정 영어 구조의 구문 분석과 이동’을 주제로 삼아야 한다. ‘모든 언어’가 아니라 ‘특정 구조’임을 기억하자.\n⑤ 진단: ‘동사 인자의 이동을 제외하고 그 특징만을’ 주제로 삼았다면 지문은 ‘이동’을 핵심으로 설명하고 있어 ‘제외’라는 조건을 무시한 오해. 지문은 ‘이동’을 빼고 설명하지 않는다. → 처방: ‘이동’을 제외하지 말고 ‘이동까지 포함한 구문 분석’을 주제로 삼아야 한다. ‘제외’라는 단어가 지문에 없음을 확인하자.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The grammatical structure of verb arguments and their syntactic movement in sentence formation.**]"
    }
   }
  ]
