@@ -1,6 +1,78 @@
 {
- "updated": "2026-08-17T19:46:48.547Z",
+ "updated": "2026-08-17T20:47:12.743Z",
  "samples": [
+  {
+   "ts": "2026-08-17T20:45:44.810Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 2/3가 4번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 100,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "MODALITY AND POSSIBLE WORLDS reveals that a plane which did not crash may have been in danger which was averted by the pilot’s action. On the emerging non-epistemic interpretation, the plane did crash but the pilot could have prevented it had things happened differently. A somewhat bizarre example of this shift is the headline GP Criticized over Death: Baby may have lived – Coroner. 5.1.3 Deontic modality Modal auxiliaries also express deontic modality, which is concerned with compliance or compatibility with some code of behaviour or set of rules. Which code or set of rules is involved depends on the context and is determined pragmatically. Deontic necessity expresses what is required or compulsory, or what someone is obliged to do within the set of rules determined by the context, and deontic possibility expresses what is allowed or permitted within the rules. These are illustrated in (8) and (9): (8) deontic necessity\n\n─────────\n[요약문] Modal auxiliaries encode (A) of actions based on contextual rules, resulting in either (B) (obligation) or permission.",
+    "choices": [
+     "(A) permission … (B) obligation",
+     "(A) obligation … (B) allowance",
+     "(A) constraint … (B) flexibility",
+     "(A) necessity … (B) restriction",
+     "(A) compliance … (B) prohibition"
+    ],
+    "answer": 2,
+    "explanation": "(A) obligation / (B) allowance 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘permission’이 ‘obligation’을 대신할 수 없다고 오인했다. 지문에서 ‘deontic necessity’는 ‘obligation’을, ‘deontic possibility’는 ‘permission’을 가리키며, ‘permission’이 ‘obligation’보다 넓은 의미를 가질 수 있음을 고려하지 않았다. → 처방: ‘deontic necessity’는 ‘obligation’을, ‘deontic possibility’는 ‘permission’을 뜻한다는 점을 기억하고, 선지 속 단어의 의미를 지문과 정확히 맞춰라.\n③ 진단: ‘constraint’를 ‘obligation’으로, ‘flexibility’를 ‘permission’으로 잘못 연결했다. 지문은 ‘deontic necessity’가 ‘obligation’을, ‘deontic possibility’가 ‘permission’을 나타낸다고 명시하지만, 학생은 이를 ‘제약’과 ‘유연성’으로 해석해 오독했다. → 처방: ‘constraint’나 ‘flexibility’는 지문에서 다루는 ‘deontic modality’의 핵심 개념이 아니므로, 지문에서 직접 언급하는 ‘obligation’과 ‘permission’을 우선으로 떠올려라.\n④ 진단: ‘necessity’를 ‘obligation’으로, ‘restriction’을 ‘permission’으로 혼동했다. ‘necessity’는 ‘필요성’을, ‘restriction’은 ‘제한’을 뜻하는데, 지문은 ‘deontic necessity’를 ‘obligation’으로, ‘deontic possibility’를 ‘permission’으로 설명한다. → 처방: ‘deontic necessity’와 ‘deontic possibility’를 각각 ‘obligation’과 ‘permission’으로 바로 연결하는 연습을 하라. 단어의 기본 뜻을 먼저 떠올리고, 지문의 맥락과 비교하라.\n⑤ 진단: ‘compliance’를 ‘obligation’으로, ‘prohibition’을 ‘permission’으로 잘못 해석했다. ‘compliance’는 ‘준수’를 뜻하지만 지문은 ‘deontic necessity’를 ‘obligation’으로, ‘deontic possibility’를 ‘permission’으로 설명하며, ‘prohibition’은 금지라는 뜻으로 ‘permission’과 반대다. → 처방: ‘prohibition’이 ‘permission’의 반대말임을 기억하고, 지문에서 ‘deontic possibility’가 ‘허용’을 뜻한다는 점을 떠올려 ‘prohibition’을 배제하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T20:46:06.162Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "MODALITY AND POSSIBLE WORLDS reveals that a plane ⓐ<u>which did not crash</u> ⓑ<u>may have been</u> in danger which was averted by the pilot’s action. On the emerging non-epistemic interpretation, the plane did crash but the pilot ⓒ<u>could have prevent it</u> had things happened differently. A somewhat bizarre example of this shift is the headline GP Criticized over Death: Baby may have lived – Coroner. 5.1.3 Deontic modality Modal auxiliaries also express deontic modality, which is concerned with compliance or compatibility with some code of behaviour or set of rules. ⓓ<u>Which code or set of rules</u> is involved depends on the context and is determined pragmatically. Deontic necessity expresses what is required or compulsory, or what someone is obliged to do within the set of rules determined by the context, and deontic possibility expresses what is allowed or permitted within the rules. ⓔ<u>These are illustrated</u> in (8) and (9): (8) deontic necessity",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [시제] ⓒ: 'could have prevent it' → 'could have prevented it' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T20:46:46.475Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 14 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'permitted', 'modality', 'required' / 12~16단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Deontic modality defines what actions are required or permitted within specific rules or contexts.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-17T19:00:41.029Z",
    "type": "서술형(자유)",
@@ -245,110 +317,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 '연초 직원 수 = 연말 직원 수'라고 밝혔지만, 학생은 이를 '달랐다'로 오해하여 선택했을 가능성이 있다. 'equal to'의 의미를 정확히 이해하지 못했다. → 처방: 지문에서 'equal to'라는 단어가 나오면 '같다'로 정확히 해석하고, 반대 의미가 필요할 때는 'not equal to'인지 확인하기.\n② 진단: 선지 2번도 1번과 같은 이유로 오해했을 수 있다. '달랐다'는 표현이 지문의 'equal to'와 반대라는 점을 놓쳤다. → 처방: 지문에서 'equal to'가 나오면 바로 '같다'로 바꾸어 쓰고, 그 반대는 '다르다'라는 단어로 명확히 정리하기.\n③ 진단: 회사가 노동 이직률을 '연초와 연말 직원 수의 합'으로 계산했다고 오해했다. 지문은 '평균'으로 계산한다고 정확히 적혀 있다. → 처방: 계산 방식이 '합'인지 '평균'인지 지문에서 정확히 확인하고, 헷갈리면 'average'라는 단어를 찾아보기.\n⑤ 진단: 노동 이직률을 '이직자 수를 연초 직원 수로 나눈 값'으로 오해했다. 지문은 '연초와 연말 직원 수의 평균'으로 나눈다고 적혀 있다. → 처방: 분모가 '평균'인지 '단순한 수'인지 확인하고, 분모가 두 수의 평균인지 한 수인지 반드시 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T13:54:59.206Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "NEW WORDS pugnacious pug nā´ shəs promulgate prom´ əl gāt brash brash scoff skof belittle bi lit´ l WEEK 4 DAY 2 MULLINS THROWS DOWN THE GAUNTLET* The pugnacious K.O. Mullins demanded a rematch. He took a full-page newspaper advertisement to promulgate his challenge. When the champ’s manager saw the brash announcement, he accosted* Mullins, who was surrounded by a throng* of newsmen. The manager openly scoffed at Mullins and belittled his fighting ability. Mullins then lost his temper and fearlessly punched the manager, knocking him off of his crutches. Sample Sentences Use the new words in the following sentences. 1.We implored* the faculty advisor to ________________ the requirements for the presidency of the club. 2.My mother liked the salesman’s ________________ personality, but he irritated most people. 3.I don’t understand modern art, but I neither loathe* nor ________________ at it. 4.Since everyone can outpunch my cousin, he cannot afford to be ________________ . 5.Although Ralph can’t play, he doesn’t hesitate to ________________ the efforts of our football team. Definitions Match the new words with their meanings.\n\n─────────\n[요약문] K.O. Mullins’s (A) aggression and (B) defiance led to a violent confrontation after he publicly challenged his opponent.",
-    "choices": [
-     "(A) aggression … (B) apology",
-     "(A) confidence … (B) defiance",
-     "(A) hostility … (B) defiance",
-     "(A) hostility … (B) submission",
-     "(A) arrogance … (B) defiance"
-    ],
-    "answer": 3,
-    "explanation": "(A) hostility / (B) defiance 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘aggression’은 Mullins 의 행동이 공격적이었음을, ‘apology’는 manager 가 사과하지 않았다는 사실을 혼동한 듯하다. Mullins 는 manager 를 때렸고, manager 는 사과하지 않았다. → 처방: ‘aggression’은 Mullins 의 행동이 공격적임을, ‘apology’는 manager 의 반응이 사과가 아님을 정확히 구분해 읽어야 한다.\n② 진단: ‘confidence’는 Mullins 의 자신감이 아니라 manager 의 행동이 ‘brash’(-bold but rude)임을 혼동했다. Mullins 는 ‘pugnacious’(aggressive)였고, manager 는 ‘scoffed’(mocked)했다. → 처방: ‘confidence’는 Mullins 의 성격이 아니라 manager 의 행동이 ‘brash’임을 떠올리며 단어를 정확히 연결해야 한다.\n④ 진단: ‘arrogance’는 manager 의 행동이 ‘belittled’(무시)하는 태도와 혼동했다. Mullins 는 ‘pugnacious’(싸움을 좋아하는)였고, manager 는 그를 무시했다. → 처방: ‘arrogance’는 manager 의 무시하는 태도를, ‘defiance’는 Mullins 의 도전적 행동을 떠올리며 단어를 매칭해야 한다.\n⑤ 진단: ‘submission’은 manager 가 Mullins 에게 굴복하지 않았다는 사실을 혼동했다. Mullins 가 manager 를 때렸지만, manager 는 굴복하지 않았다(‘scoffed’). → 처방: ‘submission’은 manager 의 굴복이 아니라 Mullins 의 도전적 행동과 manager 의 무시를 떠올리며 풀어야 한다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T13:55:37.469Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The Manager's Scorn Provoked a Brutal Response",
-     "Mullins's Brash Publicity Campaign",
-     "All Challenges in Sports Lead to Physical Confrontation",
-     "Mullins Occasionally Loses His Temper in Public",
-     "The Pugnacious Challenge Turned to Violence"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Mullins's brash challenge escalated into physical violence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘scorn(경멸)’과 ‘brutal response(잔인한 반응)’가 지문에서 직접 드러나지 않음. ‘scorn’은 manager 가 Mullins 를 깔보지만, ‘brutal response’는 Mullins 가 manager 를 때린 행동에만 해당됨. 제목으로 전체 내용을 담지 못함. → 처방: 제목은 글의 핵심 사건(폭력적 충돌)을 담아야 하므로, ‘폭력’이 포함된 선지를 찾아야 함.\n② 진단: ‘publicity campaign(선전 활동)’은 Mullins 가 신문 광고를 내는 부분만 강조했지만, manager 의 반응과 Mullins 의 폭력적 행동이 빠져 있음. 제목이 글의 전체 흐름을 반영하지 못함. → 처방: 제목은 글의 시작(도전)부터 끝(폭력)까지의 전체 사건을 담아야 함.\n③ 진단: ‘All Challenges in Sports Lead to Physical Confrontation(모든 도전이 신체적 대결로 이어진다)’는 지문의 특정 상황(폭력)을 과장해 일반화한 것. 지문은 한 사건에 국한된 이야기임. → 처방: 제목은 ‘특정한 사건’을 다룬 글이므로, ‘모든’이라는 포괄적 표현은 피해야 함.\n④ 진단: ‘Mullins Occasionally Loses His Temper in Public(가끔 공공장소에서 화를 낸다)’는 Mullins 의 행동 중 일부(폭력)만을 강조했지만, manager 의 도발과 신문 광고 등 다른 요소는 빠져 있음. → 처방: 제목은 글의 핵심 사건(폭력적 충돌)의 원인과 결과를 모두 담아야 함.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Mullins]"
-   }
-  },
-  {
-   "ts": "2026-08-17T13:08:49.988Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "Contents Preface page vii Acknowledgments xiii 1 an adventure in ambiguity with one ﬁsh two ﬁsh 1 1.1 How an (A) [8-word title / 8-words title] can have many interpretations 2 1.2 Syntax and punctuation 5 Coda 12 2 exceptional students and teachers 13 2.1 Syntactic structure in coordinate constructions 13 2.2 Ambiguities with multiple coordination 21 Coda 23 3 Introduction to Language and Linguistics 25 3.1 (B) [ambiguities in / Ambiguity in] the interpretation of conjuncts 25 3.2 What a language is: the lexicon 29 3.2.1 The mental lexicon 29 3.2.2 Some structure in the mental lexicon 31 3.3 What a language is: the computational procedure 34 3.4 What is language? 39 3.5 What is linguistics? 40 3.5.1 A puzzle in linguistics: the syntactic structure of coordination 42 3.6 On the use and misuse of and 45 Coda 50 4 a review of a book by two philosophers 53 4.1 The syntactic structure of complex noun phrases 53 4.1.1 The syntax of prepositional phrase modiﬁers 54 4.1.2 From prepositional phrase to clausal modiﬁers 56 4.2 The syntactic analysis of (relative) clauses 60 4.2.1 Syntactic variation in relative clauses 67 4.3 Inﬁnitival clauses 69 4.3.1 Ending a relative clause with a preposition 74 4.4 Mental grammar vs. prescriptive rules 75 4.4.1 (C) [The stranded preposition mistake / the stranded preposition mistakes] 76 4.4.2 The split inﬁnitive mistake 83 4.4.3 that vs. which: restrictive vs. nonrestrictive relative clauses 88 Coda 92 v",
-    "choices": [
-     "(A) 8-word title - (B) ambiguities in - (C) the stranded preposition mistakes",
-     "(A) 8-words title - (B) Ambiguity in - (C) the stranded preposition mistakes",
-     "(A) 8-words title - (B) ambiguities in - (C) The stranded preposition mistake",
-     "(A) 8-words title - (B) ambiguities in - (C) the stranded preposition mistakes",
-     "(A) 8-word title - (B) Ambiguity in - (C) The stranded preposition mistake"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) 8-word title - (B) Ambiguity in - (C) The stranded preposition mistake. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문 1.1에서 '(A) [8-word title / 8-words title]'의 제목을 '8-word title'로 쓴 부분이 '8-words title'로 오독하여 복수형 '-s'를 붙였다. 또한 (B) 부분에서 'ambiguities in'을 복수형으로 쓴 것이 옳은지 혼동했다. → 처방: 제목의 단어 수 표기는 '8-word title'로 복수 '-s'를 붙이지 않는다. (B)도 'ambiguities in'이 문맥상 옳은지 확인하고, 필요한 경우 단수형 'Ambiguity in'을 쓴다.\n② 진단: (A)에서 '8-word title'을 '8-words title'로 오독하여 복수형 '-s'를 잘못 사용했다. (B)에서는 'ambiguities in'을 복수형으로 썼으나, 문맥상 'Ambiguity in'이 더 적절하다는 판단이 부족했다. → 처방: 제목의 단어 수 표기는 '8-word title'로 고정하고, (B)도 문맥에 맞게 단수형 'Ambiguity in'을 우선 고려한다.\n④ 진단: (C)에서 'the stranded preposition mistakes'를 복수형으로 썼으나, 지문 3.6 'On the use and misuse of and'에서 'mistake'는 단수형이 옳음을 유추하지 못했다. 또한 'The'를 대문자로 쓰지 않았다. → 처방: (C)는 'The stranded preposition mistake'로 단수형과 대문자 'T'를 정확히 쓴다. 오류는 문맥상 단수형이 더 자연스러운지 확인한다.\n⑤ 진단: (A)에서 '8-word title'을 옳게 썼으나, (B)에서 'Ambiguity in'을 단수형으로 썼고, (C)에서 'The stranded preposition mistake'를 옳게 썼으나 세부 오류가 혼재되어 있다. → 처방: 각 항목의 문법 규칙을 분리하여 확인한다. (A)는 '8-word title'로, (B)는 문맥에 따라 'ambiguities in' 또는 'Ambiguity in'을 판단하고, (C)는 문맥상 단수형과 대문자 'T'를 정확히 쓴다."
    }
   }
  ]

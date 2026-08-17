@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T19:46:48.543Z",
+ "updated": "2026-08-17T20:47:12.739Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T20:46:48.448Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "형용사나 분사 형태의 빈도·정도 강조가 필요한 경우, 'usually', 'like' 등 보편적 연어 패턴이 자연스럽다. 특히 비교급/최상급 수식어 뒤에는 전치사나 동사구 연어(like + 동사원형)가 빈번히 사용된다.",
+   "rule": "형용사/분사 수식어 뒤에 빈도·정도 강조 연어('usually', 'often', 'like + 동사원형')를 삽입하는 오답 유형을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T19:46:14.635Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'any more'와 'anymore'의 분포 차이(형용사/부사 용법)와 'hobbies'→'hobby'의 단수화 패턴, 'our life'→'our lives'의 복수화 경향을 확인할 수 있다.",
    "rule": "원서 영어에서 'any more'는 '더 이상'의 부정 의미로 주로 'not'과 결합하며, 'anymore'는 독립 부사로 사용된다. 따라서 'cannot pay the high prices any more'는 'cannot pay the high prices anymore'로 수정해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T07:02:14.321Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "영어 문법에서 'can/could/may/might' 등 조동사의 필수적 사용 패턴을 간과한 오류가 빈번하다. 또한, 콤마와 접속사를 통한 문장 구조의 명확화와 동사 시제의 일관성이 중요하다.",
-   "rule": "조동사(modal verb)가 필요한 동사(예: explain, discuss, expect, choose)는 반드시 조동사와 함께 사용해야 하며, 콤마와 접속사(and, or)를 활용해 문장 구조를 명확히 분리하라.",
    "sample": [
     "old english",
     "university press",
