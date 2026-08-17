@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-16T23:38:06.205Z",
+ "updated": "2026-08-17T01:58:05.324Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T01:57:36.368Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "연어 'year after year'와 'think much more'에서 불필요한 반복 구문(and, thus)의 오류가 자주 발생하며, 이는 구문 간 병렬 구조의 오류로 이어진다.",
+   "rule": "병렬 구조에서 반복 구문(and, thus 등)을 사용할 경우, 반드시 세 개 이상의 항목에 대해 쉼표(,)로 구분하여 일관된 형식으로 표현해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-16T23:37:37.824Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'that'절이 명사구 역할을 할 때, 주절 동사 뒤에 위치하는 패턴이 빈번히 관찰된다. 특히 'reason that' → 'reason to'와 같이 전치사 구문으로 전환하는 오류가 반복된다.",
    "rule": "CEFR B1 수준에서 'that'절이 명사 역할을 하는 경우, 'that S V' → 'to V' 또는 'for V-ing'으로 전환하는 연습 문제를 출제하여, 학생들이 명사적 기능을 지닌 to-부정사와 that-절을 구분할 수 있도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T08:46:07.115Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스는 접속사나 문장부호 오류가 빈번히 발생하며, 특히 'because of' 뒤의 절이나 'for example' 뒤의 예시 구문이 잘못된 문장 구조를 보인다.",
-   "rule": "다음과 같이 'because of' 뒤에는 명사구만 오며 절이 오면 오류로 처리하고, 'for example' 뒤에는 콤마 없이 바로 예시가 오면 오류로 처리하라.",
    "sample": [
     "old english",
     "university press",
