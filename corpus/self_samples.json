@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-17T21:44:40.398Z",
+ "updated": "2026-08-17T22:45:15.557Z",
  "samples": [
+  {
+   "ts": "2026-08-17T22:43:33.635Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(72%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "유럽의 유랑 집단은 유목 생활의 기원이 되는 유랑 관행을 역사적으로 유지해왔으며, 서아시아의 압달족 또한 유사한 방식을 보였다",
+     "유럽의 유랑 집단은 유목 생활과 유사한 유랑 관행을 보였으나, 서아시아의 압달족은 예외적인 사례에 속한다",
+     "전 세계 대부분의 유랑 집단은 유목 생활과 유사한 유랑 관행을 공유하지만, 일부는 독자적인 양상을 띤다",
+     "유럽의 유랑 집단은 역사적으로 유목 생활과 유사한 유랑 관행을 공유했으며, 서아시아의 압달족과 집시 또한 이와 유사한 관행을 보였다",
+     "유럽의 유랑 집단은 유목 생활과 유사한 유랑 관행을 오랫동안 고수했으며, 서아시아의 집시 또한 그 특징을 공유했다"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'Itinerant groups in Europe historically shared nomadic lifestyles with similar itinerant practices observed among the Abdal people in West Asia and the Romani people.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문에서 '이동하는' 뜻을 가진 'itinerant'와 '계획된 여행 경로'를 뜻하는 'itinerary'를 설명했는데, 이 선지는 '유랑 관행'과 '유목 생활의 기원'을 연결 지어 오독한 것으로 보임. '압달족'도 언급되지 않았음. → 처방: 지문 속 단어의 뜻을 정확히 기억한 뒤, 선지의 내용이 지문에 있는지 확인할 것.\n② 진단: 지문은 '이동하는' 뜻을 가진 단어와 '계획된 여행 경로'를 설명했지만, 이 선지는 '유목 생활'과 '유랑 관행'을 '예외'로 구분 지어 오독한 것으로 보임. '압달족'도 지문에 없음. → 처방: 지문의 핵심 단어 뜻을 떠올린 뒤, 선지가 지문과 직접 연결되는지 점검할 것.\n③ 진단: 지문은 '이동하는' 뜻을 가진 단어와 '계획된 여행 경로'를 설명했지만, 이 선지는 '전 세계 대부분의 유랑 집단이 공유한다'는 과장된 표현으로 오독한 것으로 보임. '유목 생활과 유사한' 내용도 지문에 없음. → 처방: 지문의 내용이 선지에 그대로 들어 있는지, 과장된 표현은 없는지 확인할 것.\n⑤ 진단: 지문은 '이동하는' 뜻을 가진 단어와 '계획된 여행 경로'를 설명했지만, 이 선지는 '유목 생활'과 '집시'를 언급하며 오독한 것으로 보임. '집시'는 지문에 없음. → 처방: 지문에 나온 단어와 개념만 떠올린 뒤, 선지의 내용이 지문과 일치하는지 확인할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Itinerant groups in Europe historically shared nomadic lifestyles with similar itinerant practices observed among the Abdal people in West Asia and the Romani people.]"
+   }
+  },
+  {
+   "ts": "2026-08-17T22:44:50.096Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Note c________ the pronunciation of both words. ITINERANT (eye TIN ur unt) adj moving from place to place • The life of a traveling salesman is an itinerant one. • The itinerant junk dealer passes through our neighborhood every month or so, pulling his wagon of odds and ends. • The international banker’s itinerant lifestyle began to seem less glamorous to her after her first child was born. A closely related word is itinerary, which is the planned route or schedule of a trip. • The tour guide handed the travelers an itinerary of the tour bus route so they would know what to expect throughout the day. Quick Quiz #53 Match each word in the first column with its definition in the second column. Check your answers here. 1. intrinsic a. irreversible 2. introspective b. insulting speech 3. inundate c. planned trip route 4. invective d. flood 5. inveterate e. inherent 6. irascible f. examining one’s feelings 7. ironic g. meaning other than what’s said 8. irrevocable h. moving from place to place 9. itinerant i. irritable 10. itinerary j. habitual",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] carefully — 문단의 논지상 이 자리에는 'carefully'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-17T21:44:12.608Z",
    "type": "주제문완성",
@@ -250,59 +302,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'The head-directionality parameter governs the structural organization of VP, where the light verb v projects above the lexical verb V, determining argument merging and case assignment.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 어휘 동사와 경량 동사의 위계가 주어/목적어의 격 부여와 위치 결정에 영향을 주지만, 그 위계가 어휘 동사의 '의미'에 직접 좌우된다고 설명하지 않는다. 학생은 어휘 동사의 '의미'가 격 부여를 '직접' 결정한다고 오해하여 의미를 지나치게 강조한 듯하다. → 처방: 지문에서 어휘 동사의 의미보다는 '구조적 제약'(예: 동사의 통사적 위치와 역할)이 격 부여와 위계에 더 중요하다는 점을하라. 어휘 동사의 의미보다는 문법 구조를 먼저 분석해 보세요.\n② 진단: 지문은 경량 동사와 어휘 동사가 주어/목적어의 격 부여뿐 아니라 문법 구조의 '다른 부분'(예: 동사구 내 constituents 의 위치, discontinuous constituents)에도 영향을 미친다고 명시한다. 학생은 이 부분을 놓쳤거나 과소평가한 듯하다. → 처방: 문법 구조의 '다른 부분'이 무엇인지 확인하라. 특히 동사구의 constituents 배치와 discontinuous constituents 처리가 격 부여와 어떻게 연관되는지 다시 읽어보세요.\n③ 진단: 지문은 경량 동사와 어휘 동사의 위계가 주어/목적어의 격과 위치를 체계적으로 부여하는 '방법' 중 하나일 뿐, '필수적'으로 그렇게 위치해야만 한다는 주장은 아니다. 학생은 위계가 '반드시' 경량 동사가 위에 있어야 한다고 단정지은 듯하다. → 처방: 지문의 'split structure' 개념을 떠올리며, 동사의 위계가 문법적 필요에 따라 달라질 수 있음을 인정하라. '체계적 부여'가 항상 특정 위계를 요구하지는 않는다는 점을 기억하세요.\n④ 진단: 지문은 경량 동사와 어휘 동사의 위계가 주어/목적어의 격 부여에 '항상' 관여하는 것은 아니며, 예외나 선택적 규칙이 있음을 암시한다(예: expletive subjects, discontinuous constituents). 학생은 이 규칙이 '항상 필수적'이라고 오해한 듯하다. → 처방: 지문의 'Make the following general assumptions' 부분을 주의 깊게 읽고, '일반적 가정'이지만 예외가 있을 수 있음을 인식하라. 규칙의 '필수성'보다는 '일반성'에 초점을 맞추세요.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The head-directionality parameter governs the structural organization of VP, where the light verb v projects above the lexical verb V, determining argument merging and case assignment.]"
-   }
-  },
-  {
-   "ts": "2026-08-17T15:44:52.427Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 모든 동사구는 형태소 동사 V가 조-light 동사 v에 포함된 분할 구조를 가지며, 주어는 v에 병합되고 다른 문법 요소는 V에 병합된다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T14:46:52.534Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together.\n② To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the\n③ ” We are also told that the labor turnover rate last year was 25%.\n④ Last year, the number of employees on the first day of the year was equal to the number of employees on the last day of the year.\n⑤ Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year.",
-    "choices": [
-     "④-③-⑤-①-②",
-     "①-④-⑤-③-②",
-     "④-⑤-①-③-②",
-     "④-②-①-③-⑤",
-     "④-①-⑤-③-②"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ④-①-⑤-③-②. 흐름: ④ → ① → ⑤ → ③ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ②가 각각 'Answer Explanation'와 'To answer this question correctly'로 시작해 지문 맨 앞부분에 나올 수 없다는 점을 오독했음. ③과 ⑤의 내용(노동 이직률 정의와 계산 방법)이 먼저 나와야 하는데, 이를 무시하고 순서를 임의로 배치했음. → 처방: 지문에서 '정의'와 '계산 방법'이 먼저 나오는지 확인하고, 그 뒤에 '평가'와 '해설'이 오는 순서를 기억할 것.\n② 진단: ④ 다음에 ②가 바로 오면서 'To answer this question correctly'가 지문 맨 앞부분처럼 느껴졌음. ⑤의 'Statement 1과 2'가 아직 소개되지 않아서 ②가 앞부분에 나올 수 없다는 점을 놓쳤음. → 처방: 문단의 첫 부분은 '정의'나 '설명'이 오는지 확인하고, '해설'이나 '평가'는 뒤에 오는 규칙을.\n③ 진단: ④ 다음에 ③이 오면서 '노동 이직률이 25%였다'는 정보만 보고 중요하다고 생각했으나, ⑤의 '정의'가 먼저 나와야 한다는 점을 간과했음. ①과 ②의 '해설' 부분이 뒤에 나와야 한다는 규칙도 무시했음. → 처방: 지문의 핵심 정의(⑤)가 먼저 나오는지 확인하고, 그 뒤에 예시(③)나 해설(①②)이 오는 순서를 따르도록 할 것.\n④ 진단: ④ 다음에 ①이 바로 오면서 'Answer Explanation'이 지문 맨 앞부분처럼 보였음. ⑤의 'Statement 1과 2'가 아직 소개되지 않아서 순서가 맞지 않다는 점을 놓쳤음. ③이 ⑤보다 먼저 나와야 한다는 점도 간과했음. → 처방: 지문에서 '정의'가 가장 먼저 나오는지 확인하고, 그 뒤에 '예시'나 '계산 방법', 마지막으로 '해설'이 오는 순서를 엄격히 따르도록 할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
