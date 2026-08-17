@@ -1,6 +1,44 @@
 {
- "updated": "2026-08-17T15:45:26.822Z",
+ "updated": "2026-08-17T16:50:16.153Z",
  "samples": [
+  {
+   "ts": "2026-08-17T16:49:33.258Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "ⓐ<u>The n acoustics</u> derives from the adj acoustic, much as ethics from ethic: and acoustic descends, ⓑ<u>perh via</u> F acoustique, from Gr akoustikos, aural, from akouein (s akou-), to hear, itself akin to HEAR. Catacoustics=cat-, for prefix cata+acoustics; dysacousia or acousis=dys-, bad(ly)+acousia, Sci L for Gr akousis (ⓒ<u>whence from -acousis</u>), a hearing. acquaint; acquaintance. The latter derives from ME aqueyntance, from OF-EF ⓓ<u>acointance</u>, from OF-EF acointier, from LL accognitāre: ac- for ad-, to+cognitus, known, from cognoscere, to know (a person), itself =co-, with+gnoscere, the old form of noscere, to know: cf cognition and quaint: f.a.e., CAN. OF-EF acointier becomes ME acointen, later aqueynten, becomes ‘to acquaint’. acquest . See QUERY, para 7, s.f. ⓔ<u>acquiesce</u> ; acquiescence, acquiescent. See QUIET, para 5. acquire , acquirement; acquisition, acquisitive. See QUERY, para 7. acquit ; acquitment, acquittal, acquittance. See QUIET, para 6. Origins 24",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [전치사] ⓒ: 'whence from -acousis' → 'whence -acousis' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T16:49:47.477Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 음향은 청각과 관련된 그리스어 단어 의미에서 비롯됩니다.\n주어진 단어: ( acoustics / comes / greek )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Acoustics comes from the Greek word meaning related to hearing. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-17T15:44:39.465Z",
    "type": "요지",
@@ -295,60 +333,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓐ의 풀이는 'thematic'의 정의이다. 'sentences'의 올바른 풀이: The decision or judgement of a jury or court; a verdict.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘sentences’를 ‘주제 모음의 일부인 우표’로 오해한 것 같다. 지문에서 ‘sentences’는 ‘문장’을 뜻하며, 선지 뜻은 ‘문장’이 아닌 ‘우표’를 가리킨다. → 처방: ‘sentences’를 ‘문장’이라는 뜻으로만 떠올리고, 선지의 뜻을 지문과 맞춰보기.\n② 진단: ‘being’을 ‘생물’로 오해한 것 같다. 지문에서 ‘being’은 ‘~라는 사실’이란 뜻의 분사구로, 선지 뜻은 ‘생물’을 가리킨다. → 처방: ‘being’이 문장에서 ‘~라는 사실’로 쓰였는지 확인하고, 선지의 뜻을 지문과 비교하기.\n④ 진단: ‘passive’를 ‘수동태’라는 뜻으로만 알고, 선지의 뜻이 ‘수동태’를 가리키는지를 확인하지 않았다. → 처방: ‘passive’의 뜻을 ‘수동태’로만 제한하지 말고, 선지의 뜻이 지문에서 쓰인 뜻과 같은지 확인하기.\n⑤ 진단: ‘subjects’를 ‘주어’로만 알고, 선지의 뜻이 ‘주어’를 가리키는지를 놓쳤다. 지문에서도 ‘주어’를 뜻하지만, 선지의 뜻은 문법 용어 ‘주어’를 가리킨다. → 처방: ‘subjects’를 ‘주어’로만 떠올리지 말고, 선지의 뜻이 ‘주어’를 가리키는지를 확인하기."
-   }
-  },
-  {
-   "ts": "2026-08-17T10:51:05.801Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "Recall from our earlier discussion of sentences like (35) that McCloskey argues that ⓐ<u>stranded quantifiers modifying</u> wh-expressions are left behind via movement of the wh-expression without the quantifier. This being so, sentences such as (63) provide evidence that what all originates as the complement of the passive participle said (with what subsequently being passivised on its own, stranding all) – and more generally, that passive subjects ⓑ<u>are initially merging</u> as thematic objects. A claim which is implicit in the hypothesis that passive subjects originate as thematic objects is that the subjects of active verbs and the complements of passive verbs have ⓒ<u>the same thematic function</u>. Evidence that this is indeed the case comes from the traditional observation that the two are ⓓ<u>subject to the same pragmatic restrictions</u> on the choice of expression ⓔ<u>which can occupy the relevant position</u>, as we see from sentences such as the following (where ?, ?! and ! mark increasing degrees of anomaly):",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓑ: 'are initially merging' → 'are initially merged' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T10:00:44.395Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 2건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "gratitude for student input in manuscript revisions",
-     "acknowledgments as causes of intellectual contributions",
-     "gratitude limited to published versions of academic works",
-     "gratitude for intellectual and creative contributions in academic acknowledgments",
-     "universal gratitude expressions in all academic publications"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'Gratitude expressions in acknowledgments for intellectual and creative contributions'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 조건 누락· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: ‘students’를 ‘manuscript revisions’에만 초점을 맞추어 오독. 지문은 학생들이 원고를 ‘toiled through’(고생하며 읽고 피드백 줌)했다고만 언급하며, ‘revisions’(수정 작업) 자체는 교수진이 했다고 명시되어 있음. → 처방: ‘toiled through’의 의미를 정확히 이해하고, 학생의 역할이 ‘revisions’가 아니라 ‘feedback 과 피드백’임을 기억하기.\n② 진단: ‘acknowledgments’를 ‘causes of intellectual contributions’로 오해. 지문은 ‘invaluable ideas’, ‘constructive criticisms’, ‘tokens of empathy’를 언급하지만, 이들이 ‘원인’이 아니라 ‘감사의 대상’이라는 점을 혼동. → 처방: ‘acknowledgments’가 ‘감사’를 표현하는 글이므로, 그 내용이 ‘원인’이 아니라 ‘대상’이라는 점을 분명히 하기.\n③ 진단: ‘limited to published versions’를 오독. 지문은 학생들이 ‘manuscript’를 읽고 피드백을 주었다고 언급하며, ‘published versions’(출판된 버전)에만 감사를 표한 것이 아님. → 처방: ‘manuscript’와 ‘published versions’를 구분하고, 지문이 manuscript 단계의 피드백에 대한 감사를 담고 있음을 기억하기.\n⑤ 진단: ‘universal gratitude’를 오해. 지문은 특정 대상(학생, 교수진, 일러스트레이터 등)에 대한 구체적인 감사를 표현하며, ‘모든’ 학술 출판물의 ‘보편적’ 감사가 아님. → 처방: ‘universal’이라는 단어가 ‘특정 대상에 대한 구체적 감사’와 대조됨을 인식하고, 지문의 구체적 사례를 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Gratitude expressions in acknowledgments for intellectual and creative contributions]"
    }
   }
  ]
