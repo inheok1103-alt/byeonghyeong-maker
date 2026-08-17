@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T08:07:14.931Z",
+ "updated": "2026-08-17T09:04:22.651Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T09:03:40.764Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'travel'은 장소명사 앞에 'to'가 필수이며, 'information'은 불가산명사로 'a'를 붙일 수 없고, 'listen'은 자동사로 목적어 앞에 'to'가 필요하다는 패턴이 반복된다. 또한 대문자 사용과 구두점(., \")도 오류 빈도가 높다.",
+   "rule": "'자동사/타동사 구분과 전치사 필수 여부'를 문항으로 출제할 때는, 동사(예: travel, listen) 뒤에 오는 명사구(예: France, song)의 전치사 필수 여부와 불가산명사의 'a' 사용 금지 여부를 반드시 포함하여 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T08:06:45.963Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'that' 절을 동사 뒤에 배치하는 경우, 주절 동사(use/think/suggest)와 조화된 시제(3인칭 단수 현재형) 및 문법적 일관성을 유지하는 패턴이 빈번하다.",
    "rule": "원서 패턴을 반영하여 '~ that S V' 구조에서 주절 동사는 3인칭 단수 현재형(-s)으로 통일하고, 'that' 절의 시제를 주절과 맞춰야 한다. 예: 'birds use that they have crystals' → 'birds use that they have crystals'가 아니라 'the third piece of evidence that birds use is that they have crystals'로 변형.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T18:13:27.928Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어 문법 오류는 대소문자, 시제, 수일치, 관사 등 기본적인 문법 규칙 미비에서 주로 발생하며, 특히 능동태와 수동태, 단수·복수 명사의 혼동이 빈번하다.",
-   "rule": "CEFR B1 수준 내신 문항 출제 시, 주어와 동사의 수 일치, 능동태/수동태 전환, 관사의 적절한 사용(정관사/부정관사/무관사)을 필수 문법 요소로 포함하여 오류 유도를 한다.",
    "sample": [
     "old english",
     "university press",
