@@ -1,6 +1,50 @@
 {
- "updated": "2026-08-17T05:01:51.954Z",
+ "updated": "2026-08-17T05:56:09.165Z",
  "samples": [
+  {
+   "ts": "2026-08-17T05:52:16.806Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Being (A) [transitive / intransitive], the verb commis assigns accusative case to the object quelle bêtise ‘what blunder’. By hypothesis, the light verb has no edge feature in wh-in-situ questions, so there is no movement of the wh-phrase quelle bêtise ‘what blunder’ to spec-v. Subsequently the vP (29) is merged as the complement of the auxiliary a ‘has’ which (B) [disagrees / agrees] in person/number φ-features with (and triggers movement to spec-T of) the subject il ‘he’. Merging the resulting TP with a (C) [null / explicit] complementiser which likewise has no edge feature derives the structure associated with (28a) Il a commis quelle bêtise? (literally ‘He has committed what blunder?’). Now consider the derivation of (28b). This is similar to that of (28a), until we reach the stage of derivation shown in (29) above. However, in a non-echoic question, the light-verb will have an edge feature which attracts the wh-marked object quelle bêtise ‘what blunder’ to move to become an additional (outer) specifier for the vP, in the manner shown by the arrow below:",
+    "choices": [
+     "(A) intransitive - (B) disagrees - (C) null",
+     "(A) transitive - (B) agrees - (C) null",
+     "(A) intransitive - (B) disagrees - (C) explicit",
+     "(A) intransitive - (B) agrees - (C) explicit",
+     "(A) transitive - (B) agrees - (C) explicit"
+    ],
+    "answer": 2,
+    "explanation": "정답 조합: (A) transitive - (B) agrees - (C) null. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘transitive’를 ‘intransitive’로 오독했는데, 지문에서 ‘commis’는 ‘assigns accusative case’를 통해 목적어를 갖는다는 사실이 드러난다. ‘transitive’는 목적어를 요구하는 동사를 뜻한다. → 처방: ‘transitive’와 ‘intransitive’를 구분하는 기준을 다시 공부하고, 동사가 목적어를 갖는지 확인하는 연습을 반복한다.\n③ 진단: ‘null’을 ‘explicit’로 오독했는데, 지문에서 ‘null complementiser’가 ‘no edge feature’를 가진다는 설명을 보지 못했다. ‘null complementiser’는 형태가 없는 보조사를 뜻한다. → 처방: ‘null complementiser’와 ‘explicit complementiser’를 예문으로 비교하며 차이를 익히고, 문장 구조에서 보조사의 유무를 찾는 연습을 한다.\n④ 진단: ‘intransitive’를 선택한 이유는 ‘transitive’의 의미를 정확히 이해하지 못해 ‘commis’가 목적어를 갖지 않는다고 착각했기 때문이다. 또한 ‘explicit complementiser’를 고른 이유는 ‘null’의 의미를 제대로 파악하지 못해 보조사가 형태를 가질 거라고 생각했다. → 처방: ‘transitive’와 ‘intransitive’를 문장 속에서 직접 확인하고, ‘null complementiser’의 예를 찾아보며 차이를 명확히 한다.\n⑤ 진단: ‘transitive’를 ‘intransitive’로 오해한 것과 ‘explicit complementiser’를 ‘null’로 오해한 것이 복합적으로 작용했다. 지문에서 ‘commis’는 ‘assigns accusative case’를 통해 목적어를 갖는다는 사실이 명시되어 있지만, 이를 놓쳤다. → 처방: 지문을 다시 읽고, 동사의 성격을 ‘transitive’와 ‘intransitive’로 나눌 수 있는 기준을 정리한 후, 예문을 직접 만들어보며 연습한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T05:55:41.464Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] By hypothesis, the light verb has no edge feature in wh-in-situ questions, so there is no movement of the wh-phrase quelle bêtise ‘what blunder’ to spec-v.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] the light verb has no edge feature in wh-in-situ questions, so the wh-phrase quelle bêtise ‘what blunder’ is not moved to spec-v by any agent. (포인트: ‘no movement of the wh-phrase’ → ‘the wh-phrase is not moved’ (능동→수동))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-17T04:59:53.440Z",
    "type": "장문세트",
@@ -279,75 +323,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓑ의 풀이는 'words'의 정의이다. 'sentences'의 올바른 풀이: The decision or judgement of a jury or court; a verdict.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘students’를 ‘공부를 하는 사람’으로만 오독해 ‘특정 과목’에 대한 학습을 강조하는 정의를 ‘학생’의 일반적인 의미로 혼동했다. 지문에서 ‘학생’이 그룹 활동의 주체로만 언급된 점을 보지 못했다. → 처방: ‘학생’의 사전적 의미를 떠올리고, ‘특정 과목’을 강조하는 정의를 버리고 일반적인 ‘공부하는 사람’을 떠올리자.\n② 진단: ‘sentences’를 ‘의미를 가진 언어의 최소 단위’로 오독했으나, 정작 ‘문장’이 ‘의미’를 지닌다는 점은 맞지만 ‘가장 작은 단위’라는 표현이 과도하게 좁아졌다. 지문에서 ‘문장’이 ‘의미’를 지닌다는 점만 언급된 점을 놓쳤다. → 처방: ‘문장’의 사전적 의미를 떠올리고, ‘의미’를 지닌다는 핵심만 기억한 뒤 ‘가장 작은 단위’라는 표현은 무시하자.\n④ 진단: ‘examples’를 ‘집단의 대표적인 사례’로 오독했으나, 정작 ‘예시’는 ‘특정 사례’를 가리키는 경우가 많다. 지문에서 ‘예시’가 ‘단어의 뜻을 설명하는 근거’로 사용된 점을 보지 못했다. → 처방: ‘예시’의 의미를 ‘특정 사례’를 가리키는 것으로 떠올리고, ‘집단의 대표’라는 표현은 무시하자.\n⑤ 진단: ‘passage’를 ‘특정한 의미를 지닌 문단이나 음악 부분’으로 오독했으나, 정작 ‘passage’는 ‘지나가는 부분’이란 뜻도 있다. 지문에서 ‘passage’가 ‘두 개의 글’로 언급된 점을 보지 못했다. → 처방: ‘passage’의 의미를 ‘지나가는 부분’이란 기본 뜻부터 떠올리고, ‘특정한 의미’라는 표현은 무시하자."
-   }
-  },
-  {
-   "ts": "2026-08-16T23:36:51.824Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Practice:  Ask students to work in groups and discuss the sentences to reach the meaning of the new word depending on the examples given in the sentences.  A recorder of each group writes down the answer of his/her mates and a spokesperson says the answers.  In the individual work section ask students to work individually and give the meaning that is closest to the underlined word depending on the given examples in the sentences.  For homework ask students to read the two passages about the Intifada and languages, and answer the questions by referring to the examples in the passages.  Make sure that students understand quite well that in the first passage they are to give meanings to the words depending on the examples, while in the second passage they are to give examples from the passage to the words indicated in the questions.  Let students refer back to the preview section and check again the words they know after studying the lesson, so as to measure their progress.",
-    "choices": [
-     "학생들은 그룹으로 모여 새로운 단어의 뜻을 예문을 통해 논의해야 한다.",
-     "각 그룹의 기록자는 동료의 답을 적고 대변인은 답을 발표하지 않는다.",
-     "개별 과제에서 학생들은 예문을 바탕으로 밑줄 친 단어의 의미를 찾지 못한다.",
-     "숙제로 학생들은 인티파다와 언어 관련 두 지문을 읽고 예문을 참조하지 않고 질문에 답해야 한다.",
-     "학생들은 첫 번째 지문에서 예문을 바탕으로 단어 의미를, 두 번째에서는 단어에 맞는 예문을 찾지 못한다."
-    ],
-    "answer": 1,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 지문에서 'a spokesperson says the answers'라고 했는데, 이 학생은 '대변인은 답을 발표하지 않는다'라고 오해했습니다. 기록자와 대변인의 역할을 혼동한 것 같습니다. → 처방: 기록자와 대변인의 역할을 다시 한 번 짚고, 대변인이 답을 발표한다는 사실을 메모해 두세요.\n③ 진단: 지문에서 'give the meaning that is closest to the underlined word depending on the given examples'라고 했는데, 이 학생은 '예문을 바탕으로 밑줄 친 단어의 의미를 찾지 못한다'라고 오해했습니다. '못 찾는다'가 아니라 '찾아야 한다'는 사실을 놓쳤습니다. → 처방: 개별 과제에서 예문을 바탕으로 단어의 의미를 찾는 연습을 할 때, 반드시 예문을 먼저 읽고 의미를 유추하도록 하세요.\n④ 진단: 지문에서 'answer the questions by referring to the examples in the passages'라고 했는데, 이 학생은 '예문을 참조하지 않고 질문에 답해야 한다'라고 오해했습니다. 숙제 내용의 핵심을 잘못 이해한 것 같습니다. → 처방: 숙제에서 예문을 반드시 참고해야 한다는 점을 기억하고, 질문에 답할 때 예문을 근거로 삼으세요.\n⑤ 진단: 지문에서 'in the first passage they are to give meanings to the words depending on the examples, while in the second passage they are to give examples from the passage to the words indicated in the questions'라고 했는데, 이 학생은 '예문을 찾지 못한다'라고 오해했습니다. 두 번째 지문에서 해야 할 일을 잘못 이해한 것 같습니다. → 처방: 첫 번째 지문은 단어의 의미를 예문으로, 두 번째 지문은 단어에 맞는 예문을 찾는다는 사실을 구분해서 기억하세요.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-16T23:37:24.275Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Practice:  Ask students to work in groups and discuss the sentences to <u>reach the meaning of the new word depending on the examples given in the sentences</u>.  A recorder of each group writes down the answer of his/her mates and a spokesperson says the answers.  In the individual work section ask students to work individually and give the meaning that is closest to the underlined word depending on the given examples in the sentences.  For homework ask students to read the two passages about the Intifada and languages, and answer the questions by referring to the examples in the passages.  Make sure that students understand quite well that in the first passage they are to give meanings to the words depending on the examples, while in the second passage they are to give examples from the passage to the words indicated in the questions.  Let students refer back to the preview section and check again the words they know after studying the lesson, so as to measure their progress.",
-    "choices": [
-     "To master an unfamiliar term, students must rely solely on the exact wording of the example sentences without considering any surrounding context.",
-     "Students should infer the definition of an unfamiliar term by analyzing contextual clues within provided sentences rather than memorizing its dictionary meaning.",
-     "The definition of a new word is already clear in the given sentences, so there is no need for students to analyze or infer its meaning.",
-     "Students should first check the dictionary definition of a new word and then verify it against the example sentences provided.",
-     "By quickly reading the example sentences, students can easily grasp the meaning of an unfamiliar term without any complex reasoning."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'Students should infer the definition of an unfamiliar term by analyzing contextual clues within provided sentences rather than memorizing its dictionary meaning.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 학생들은 '예문 속 맥락'을 바탕으로 새로운 단어의 의미를 '추론'해야 한다고 분명히 설명하는데, 이 선지는 '예문 속 정확한 표현'에만 의존해야 한다고 오해하여 맥락을 무시하는 오류를 범함. → 처방: 새로운 단어의 의미를 찾을 때는 예문 속 '단어와 단어 사이의 관계'나 '문장 전체의 흐름'을 주의 깊게 살펴보기.\n③ 진단: 지문에서 학생들에게 '예문 속 맥락'을 바탕으로 의미를 '추론'하라고 지시했는데, 이 선지는 '예문만으로 이미 뜻이 명확하다'고 오해하여 분석이나 추론 없이 예문만 읽는 오류를 범함. → 처방: 예문 속 단어가 '왜 그런 뜻으로 쓰였는지'를 생각하며 문장 전체를 다시 한 번 천천히 읽어보기.\n④ 진단: 지문에서 '사전 뜻'을 먼저 확인하지 말고 '예문 속 맥락'으로 의미를 찾아야 한다고 설명했는데, 이 선지는 반대로 '사전 뜻'을 먼저 확인한 뒤 예문을 확인해야 한다고 오해하여 순서를 반대로 이해한 오류를 범함. → 처방: 새로운 단어의 뜻을 찾을 때는 '사전'을 보지 말고, 예문 속 단어가 '어떻게 쓰였는지'를 집중해서 읽어보기.\n⑤ 진단: 지문에서 학생들에게 '복잡한 추론'을 요구한다고 설명했는데, 이 선지는 '빠르게 읽기만'으로 뜻을 쉽게 알 수 있다고 오해하여 단순 읽기로 의미를 찾으려는 오류를 범함. → 처방: 예문 속 단어가 '어떤 역할을 하는지'를 생각하며 문장을 여러 번 읽고, 단어의 뜻을 '정확히' 파악하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]

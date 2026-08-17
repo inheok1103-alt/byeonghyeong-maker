@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T05:01:51.950Z",
+ "updated": "2026-08-17T05:56:09.161Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T05:55:43.594Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'but'와 'and' 같은 접속사를 과도하게 사용하거나 부정어의 중복이 문법 오류로 이어지는 패턴이 반복된다. 또한 'thing'이나 'car' 같은 일반 명사가 무관한 한정사 없이 사용되어 구체성이 떨어지는 경우가 많다.",
+   "rule": "'but', 'and', 'or' 등 접속사를 2회 이상 연속으로 사용하지 않도록 하며, 부정어는 단일로만 쓰도록 문항을 설계하라. 또한 무관한 일반 명사(예: thing, car)는 'one thing', 'personal cars'처럼 구체적인 한정사를 반드시 요구하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T05:01:26.785Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "영어 문법에서 접속사나 전치사 오류는 종종 절의 경계나 구문 구조를 흐트러뜨린다. 특히 'if', 'when', 'because' 등의 접속사 뒤에는 절(主語+동사)이 필수적으로 따라와야 한다.",
    "rule": "'if'나 'when', 'because'와 같은 접속사 뒤에는 항상 완전한 절(主語+동사)이 오도록 문장을 구성하라. 예: 'If the teacher teaches them that, they will go on to study about that.' → 'If the teacher teaches them that, they will go on to study about it.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T15:08:39.405Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 코퍼스에서 'necessary to V'와 'important to V' 같은 동사구 패턴이 빈번히 나타나며, 'for + 동명사' 구문이 'to + 동사원형'으로 대체되는 경향이 강하다. 또한 'according to me'가 'in my opinion'로 자연스럽게 변환되는 패턴도 관찰된다.",
-   "rule": "'for + 동명사' 구문은 'to + 동사원형'으로 대체하여 문법적으로 옳은 문장을 구성하도록 변형 문제를 출제한다. 예: 'Water is needed for alive.' → 'Water is necessary to live.'",
    "sample": [
     "old english",
     "university press",
