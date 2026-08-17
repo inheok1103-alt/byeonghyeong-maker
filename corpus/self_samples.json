@@ -1,6 +1,73 @@
 {
- "updated": "2026-08-17T14:00:08.533Z",
+ "updated": "2026-08-17T14:49:17.597Z",
  "samples": [
+  {
+   "ts": "2026-08-17T14:46:52.534Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together.\n② To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the\n③ ” We are also told that the labor turnover rate last year was 25%.\n④ Last year, the number of employees on the first day of the year was equal to the number of employees on the last day of the year.\n⑤ Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year.",
+    "choices": [
+     "④-③-⑤-①-②",
+     "①-④-⑤-③-②",
+     "④-⑤-①-③-②",
+     "④-②-①-③-⑤",
+     "④-①-⑤-③-②"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ④-①-⑤-③-②. 흐름: ④ → ① → ⑤ → ③ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ②가 각각 'Answer Explanation'와 'To answer this question correctly'로 시작해 지문 맨 앞부분에 나올 수 없다는 점을 오독했음. ③과 ⑤의 내용(노동 이직률 정의와 계산 방법)이 먼저 나와야 하는데, 이를 무시하고 순서를 임의로 배치했음. → 처방: 지문에서 '정의'와 '계산 방법'이 먼저 나오는지 확인하고, 그 뒤에 '평가'와 '해설'이 오는 순서를 기억할 것.\n② 진단: ④ 다음에 ②가 바로 오면서 'To answer this question correctly'가 지문 맨 앞부분처럼 느껴졌음. ⑤의 'Statement 1과 2'가 아직 소개되지 않아서 ②가 앞부분에 나올 수 없다는 점을 놓쳤음. → 처방: 문단의 첫 부분은 '정의'나 '설명'이 오는지 확인하고, '해설'이나 '평가'는 뒤에 오는 규칙을.\n③ 진단: ④ 다음에 ③이 오면서 '노동 이직률이 25%였다'는 정보만 보고 중요하다고 생각했으나, ⑤의 '정의'가 먼저 나와야 한다는 점을 간과했음. ①과 ②의 '해설' 부분이 뒤에 나와야 한다는 규칙도 무시했음. → 처방: 지문의 핵심 정의(⑤)가 먼저 나오는지 확인하고, 그 뒤에 예시(③)나 해설(①②)이 오는 순서를 따르도록 할 것.\n④ 진단: ④ 다음에 ①이 바로 오면서 'Answer Explanation'이 지문 맨 앞부분처럼 보였음. ⑤의 'Statement 1과 2'가 아직 소개되지 않아서 순서가 맞지 않다는 점을 놓쳤음. ③이 ⑤보다 먼저 나와야 한다는 점도 간과했음. → 처방: 지문에서 '정의'가 가장 먼저 나오는지 확인하고, 그 뒤에 '예시'나 '계산 방법', 마지막으로 '해설'이 오는 순서를 엄격히 따르도록 할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-17T14:47:46.219Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Last year, the number of employees on the first day of the year was equal to the number of employees on the last day of the year. Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year.” We are also told that the labor turnover rate last year was 25%. To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
+    "choices": [
+     "연말 직원 수는 연초 직원 수와 달랐다.",
+     "연도 초 직원 수는 연도 말 직원 수와 달랐다.",
+     "회사는 연간 노동 이직률을 연초와 연말 직원 수의 합으로 계산했다.",
+     "지난해 노동 이직률은 25퍼센트였다.",
+     "연간 노동 이직률은 이직자 수를 연초 직원 수로 나눈 값이다."
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 '연초 직원 수 = 연말 직원 수'라고 밝혔지만, 학생은 이를 '달랐다'로 오해하여 선택했을 가능성이 있다. 'equal to'의 의미를 정확히 이해하지 못했다. → 처방: 지문에서 'equal to'라는 단어가 나오면 '같다'로 정확히 해석하고, 반대 의미가 필요할 때는 'not equal to'인지 확인하기.\n② 진단: 선지 2번도 1번과 같은 이유로 오해했을 수 있다. '달랐다'는 표현이 지문의 'equal to'와 반대라는 점을 놓쳤다. → 처방: 지문에서 'equal to'가 나오면 바로 '같다'로 바꾸어 쓰고, 그 반대는 '다르다'라는 단어로 명확히 정리하기.\n③ 진단: 회사가 노동 이직률을 '연초와 연말 직원 수의 합'으로 계산했다고 오해했다. 지문은 '평균'으로 계산한다고 정확히 적혀 있다. → 처방: 계산 방식이 '합'인지 '평균'인지 지문에서 정확히 확인하고, 헷갈리면 'average'라는 단어를 찾아보기.\n⑤ 진단: 노동 이직률을 '이직자 수를 연초 직원 수로 나눈 값'으로 오해했다. 지문은 '연초와 연말 직원 수의 평균'으로 나눈다고 적혀 있다. → 처방: 분모가 '평균'인지 '단순한 수'인지 확인하고, 분모가 두 수의 평균인지 한 수인지 반드시 확인하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-17T13:54:59.206Z",
    "type": "요약문AB",
@@ -299,59 +366,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'Meaning multiplicity in labels or aliases across languages and contexts'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 정도 왜곡\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Meaning multiplicity in labels or aliases across languages and contexts]\n[오답 진단·처방]\n① 진단: ‘contexts and languages’를 오해해 ‘단어의 뜻이 문맥과 언어에 따라 달라진다’고 읽었지만, 지문은 ‘영어 동음이의어와 비슷한 소리의 단어들’에만 초점을 맞춤. ‘languages’(언어)라는 말이 지문에 없음. → 처방: 문제의 핵심은 ‘영어 동음이의어와 비슷한 소리의 단어’임을 기억하고, ‘언어’나 ‘문맥’을 오해하지 않도록 주의하기.\n③ 진단: ‘universal challenges’를 ‘보편적인 언어 이해의 어려움’으로 오해해 ‘모든 언어’에서 일어나는 문제라고 읽었지만, 지문은 ‘영어’에만 한정되어 있음. → 처방: ‘universal’이 아니라 ‘English’라는 단어가 문제의 범위를 ‘영어’로 한정한다는 점을 기억하고, ‘보편적’이라고 오해하지 않기.\n④ 진단: ‘identical spellings’를 ‘똑같은 철자’를 ‘다른 문맥에서’로 오해해 ‘철자가 같은 경우’로만 읽었지만, 지문은 ‘소리도 비슷하고 뜻도 다른 단어들(동음이의어·유사음 단어)’까지 포함함. → 처방: ‘identical spellings’가 아니라 ‘homonyms and near-homophones’를 문제의 핵심으로 삼고, 철자뿐 아니라 소리와 뜻의 혼동까지 고려하기.\n⑤ 진단: ‘single labels’이 ‘하나의 단어에 여러 뜻’이 아니라 ‘하나의 표제어(레이블)가 여러 의미를 가진다’고 오해해 ‘단어 자체의 다의성’을 떠올렸지만, 지문은 ‘소리나 철자가 비슷해서 혼동되는 단어들’에 초점을 맞춤. → 처방: ‘single labels’이 아니라 ‘homonyms and near-homophones’를 문제의 핵심으로 삼고, ‘단어의 다의성’이 아니라 ‘소리·철자의 유사성으로 인한 혼동’을 떠올리기."
-   }
-  },
-  {
-   "ts": "2026-08-17T08:06:43.927Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 8 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 8단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 비슷한 소리로 들리는 이 단어와 문구가 헷갈려요\n주어진 단어: ( confused / similar-sounding / words )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I'm confused by these similar-sounding words and phrases. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-17T07:18:39.674Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "글을 쓸 때에는 주제를 먼저 정해 일관되게 다루어야 독자가 글을 이해하기 쉽다",
-     "글의 주제를 일관되게 유지해야만 독자들이 글의 내용을 더 잘 이해하게 된다",
-     "글을 쓸 때는 주제어를 간결하고 구체적으로 정하는 것이 중요하다",
-     "글을 쓸 때에는 모든 주제가 주제어여야만 글이 cohesive 하고 coherent 해진다",
-     "글을 쓸 때에는 주제를 가끔씩 바꿔야만 독자들의 관심을 유발할 수 있다"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 '글의 핵심 논지는 **글을 쓰기 전에 주제를 명확히 정하고 일관되게 유지해야 한다**이다.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘주제를 일관되게 유지해야만’(should only)라는 표현이 지문의 ‘consistent’(일관되게 다루어야)보다 더 강한 강제성을 띠며, ‘독자들이 글을 더 잘 이해하게 된다’는 결과만 강조한 나머지 ‘주제를 일관되게 다루어야 한다’는 핵심 행동을 놓쳤다. → 처방: 지문에서 강조한 ‘consistent’(일관성 유지)의 중요성을 떠올리며, 주제를 일관되게 다루는 것이 독자의 이해를 돕는 핵심 행동임을 기억하자.\n③ 진단: ‘주제어를 간결하고 구체적으로 정하는 것’이 중요하다는 점은 맞지만, 지문은 ‘대부분의 주제가 주제어여야 한다’는 stronger 조건을 덧붙이며 ‘주제어의 역할’을 더 강조했다. 이 선지는 그 부분을 생략했다. → 처방: 지문의 ‘most of your subjects should be topics’를 떠올리며, 주제어가 단순히 중요하다는 것뿐 아니라 ‘주제의 핵심을 담아야 한다’는 점을 기억하자.\n④ 진단: ‘모든 주제가 주제어여야만’(only if all subjects are topics)라는 표현이 지문의 ‘most of your subjects should be topics’보다 훨씬 엄격한 조건을 요구하며, 지문은 ‘대부분’이란 완화 조건을 사용했다. → 처방: 지문의 ‘most’(대부분)를 떠올리며, ‘주제의 핵심을 담은 주제어가 대부분 있어야 한다’는 점을 기억하고, ‘모든’은 오버스펙하지 않도록 주의하자.\n⑤ 진단: ‘주제를 가끔씩 바꿔야 한다’는 내용은 지문의 ‘do not vary your subjects for the sake of variety’(다양성을 위해 주제를 바꾸지 마라)와 완전히 반대된다. 학생은 ‘독자들의 관심을 유발할 수 있다’는 결과에만 주목했다. → 처방: 지문의 ‘consistent’(일관성 유지)의 중요성을 떠올리며, 주제를 자주 바꾸는 것이 아니라 ‘일관되게 다루는 것’이 독자의 이해를 돕는 핵심임을 기억하자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: 글의 핵심 논지는 **글을 쓰기 전에 주제를 명확히 정하고 일관되게 유지해야 한다**이다.]"
    }
   }
  ]
