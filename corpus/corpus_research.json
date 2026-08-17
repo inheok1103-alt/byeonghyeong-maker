@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T07:19:39.727Z",
+ "updated": "2026-08-17T08:07:14.931Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T08:06:45.963Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "명사구(noun phrase) 내 복수형/단수형 오류와 부정관사(a/an) 선택 오류가 빈번하며, 동사 시제(present/past tense) 및 부정어(nagative→negative) 오류도 연어 패턴과 연관되어 자주 발생한다.",
+   "rule": "복수형/단수형 오류를 방지하기 위해 문장 내 명사구의 수 일치성을 반드시 확인하고, 부정관사(a/an)는 후속 명사의 첫 음소에 따라 'a' 또는 'an'을 선택하도록 문항을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T07:19:11.580Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "영어 문법 오류는 대소문자, 시제, 수일치, 관사 등 기본적인 문법 규칙 미비에서 주로 발생하며, 특히 능동태와 수동태, 단수·복수 명사의 혼동이 빈번하다.",
    "rule": "CEFR B1 수준 내신 문항 출제 시, 주어와 동사의 수 일치, 능동태/수동태 전환, 관사의 적절한 사용(정관사/부정관사/무관사)을 필수 문법 요소로 포함하여 오류 유도를 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T17:19:35.635Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'explain about' → 'explain what'처럼 전치사 사용 오류가 빈번하며, 비교급 구조에서 관사 생략('young person' → 'a younger person')과 전치사 오류('than young person' → 'than a younger person')가 공통적으로 나타난다.",
-   "rule": "비교급 문장에서는 'than + (a) younger/older + 명사' 형태로 관사를 반드시 포함하고, 비교 대상이 되는 명사 앞에는 형용사적 비교급(예: younger/older)을 사용하라.",
    "sample": [
     "old english",
     "university press",

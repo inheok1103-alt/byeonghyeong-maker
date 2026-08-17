@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-17T07:19:39.725Z",
+ "updated": "2026-08-17T08:07:14.929Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "정답 선지는 'Words that sound or look alike but have different meanings(or are confusing due to similar sounds/spellings)'로 통일하고, 오답 선지는 각기 다른 오류 유형(예: 동음이의어/동철이의어의 한정적 정의, 지나치게 포괄적이거나 중복된 설명)을 명확히 구별하여 난이도를 80~89 수준으로 조정하라.",
+   "src": "자가학습:심경변화",
+   "score": 65,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-17T08:06:14.157Z"
+  },
+  {
+   "rule": "Mood, mooed, moose, mousse, morning, mourning, muscle, and mussel'는 복합 주어이므로 are often confusing로 수정하고, 혼동 대상임을 명확히 'muscle and mussel'로 재구성하라.",
+   "src": "자가학습:조건영작",
+   "score": 82,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-17T08:06:37.217Z"
+  },
   {
    "rule": "원지문의 핵심 메시지를 정확히 반영하여 주제를 일관성 있게 명확히 정하고, 문장을 간결하고 구체적인 주제로 통일할 것을 요구하라.",
    "src": "자가학습:서술형(자유)",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-13T21:05:53.494Z"
-  },
-  {
-   "rule": "선지 작성 시 지문의 중립적·기술적 어조를 유지하며, 핵심 주제를 왜곡하지 않는 중립적·사실적 표현을 사용하고, 선지 간 차별성을 명확히 할 것.",
-   "src": "자가학습:제목",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-13T21:06:30.634Z"
-  },
-  {
-   "rule": "모든 문항의 선지는 원문의 의미와 예시를 반영한 구체적 내용으로 재구성되어야 하며, 정답 선지는 '무관심'이 '관심/열정의 부족'뿐 아니라 '평범한 수준'까지 포함함을 명시해야 한다.",
-   "src": "자가학습:요지",
-   "score": 70,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-13T19:27:10.766Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

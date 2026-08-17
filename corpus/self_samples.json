@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-17T07:19:39.731Z",
+ "updated": "2026-08-17T08:07:14.934Z",
  "samples": [
+  {
+   "ts": "2026-08-17T08:05:56.667Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "ambiguity in word meanings across contexts and languages",
+     "confusion in English homonyms and near-homophones",
+     "universal challenges in language comprehension due to word multiplicity",
+     "miscommunication arising from identical spellings in different contexts",
+     "frequent cases where single labels carry multiple meanings in English"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Meaning multiplicity in labels or aliases across languages and contexts'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 정도 왜곡\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Meaning multiplicity in labels or aliases across languages and contexts]\n[오답 진단·처방]\n① 진단: ‘contexts and languages’를 오해해 ‘단어의 뜻이 문맥과 언어에 따라 달라진다’고 읽었지만, 지문은 ‘영어 동음이의어와 비슷한 소리의 단어들’에만 초점을 맞춤. ‘languages’(언어)라는 말이 지문에 없음. → 처방: 문제의 핵심은 ‘영어 동음이의어와 비슷한 소리의 단어’임을 기억하고, ‘언어’나 ‘문맥’을 오해하지 않도록 주의하기.\n③ 진단: ‘universal challenges’를 ‘보편적인 언어 이해의 어려움’으로 오해해 ‘모든 언어’에서 일어나는 문제라고 읽었지만, 지문은 ‘영어’에만 한정되어 있음. → 처방: ‘universal’이 아니라 ‘English’라는 단어가 문제의 범위를 ‘영어’로 한정한다는 점을 기억하고, ‘보편적’이라고 오해하지 않기.\n④ 진단: ‘identical spellings’를 ‘똑같은 철자’를 ‘다른 문맥에서’로 오해해 ‘철자가 같은 경우’로만 읽었지만, 지문은 ‘소리도 비슷하고 뜻도 다른 단어들(동음이의어·유사음 단어)’까지 포함함. → 처방: ‘identical spellings’가 아니라 ‘homonyms and near-homophones’를 문제의 핵심으로 삼고, 철자뿐 아니라 소리와 뜻의 혼동까지 고려하기.\n⑤ 진단: ‘single labels’이 ‘하나의 단어에 여러 뜻’이 아니라 ‘하나의 표제어(레이블)가 여러 의미를 가진다’고 오해해 ‘단어 자체의 다의성’을 떠올렸지만, 지문은 ‘소리나 철자가 비슷해서 혼동되는 단어들’에 초점을 맞춤. → 처방: ‘single labels’이 아니라 ‘homonyms and near-homophones’를 문제의 핵심으로 삼고, ‘단어의 다의성’이 아니라 ‘소리·철자의 유사성으로 인한 혼동’을 떠올리기."
+   }
+  },
+  {
+   "ts": "2026-08-17T08:06:43.927Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 8 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 8단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 비슷한 소리로 들리는 이 단어와 문구가 헷갈려요\n주어진 단어: ( confused / similar-sounding / words )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] I'm confused by these similar-sounding words and phrases. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-17T07:18:39.674Z",
    "type": "요지",
@@ -254,76 +308,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Case assignment varies depending on the functional element and the type of Case (accusative vs. nominative).'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 지문에서 'functional element'이 Case assigner 가 될 수 있지만, 'role assignment'와는 무관하다는 점을 보지 못하고 'role assignment'에만 집중해 오독했음. 지문은 'functional element'이 Case assigner 가 될 수 있다고만 말하고, 'role assignment'와는 별개임을 분명히 함. → 처방: 문제를 풀 때는 'Case assigner'와 'role assignment'가 같은 것인지, 아니면 다른 것인지 반드시 구분해 읽어야 함.\n③ 진단: 지문에서 'nominative Case'는 'subject marking' 없이도 assign 될 수 있지만, 'accusative Case'는 반드시 'subject marking'이 필요하다는 점을 혼동했음. 지문은 'nominative'와 'accusative'가 'fundamentally different'하다고 설명하고 있음. → 처방: Case 의 종류(accusative vs. nominative)에 따라 assign 조건이 달라질 수 있음을 염두에 두고 지문을 읽어야 함.\n④ 진단: 지문에서 'nominative'와 'accusative'의 assign 조건이 'identical'하지 않다는 점을 보지 못하고, 모든 Case 가 같은 조건에서 assign 된다고 오독했음. 지문은 두 Case 가 'similar'한지, 아니면 'fundamentally different'한지를 두고 논쟁 중이라고 설명함. → 처방: Case 의 종류에 따라 assign 조건이 달라질 수 있음을 기억하고, 지문의 논쟁 구조를 정확히 파악해야 함.\n⑤ 진단: 지문에서 'nominative Case'는 'subject marking' 없이도 assign 될 수 있지만, 'accusative Case'는 반드시 'subject marking'이 필요하다는 점을 혼동했음. 지문은 'nominative'와 'accusative'가 'fundamentally different'하다고 설명하고 있음. → 처방: Case 의 종류에 따라 assign 조건이 달라질 수 있음을 염두에 두고, 지문의 세부 설명을 꼼꼼히 읽어야 함.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Case assignment varies depending on the functional element and the type of Case (accusative vs. nominative).]"
-   }
-  },
-  {
-   "ts": "2026-08-17T03:15:08.126Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "주격과 목적격 격의 기능적 유사성을 규명하려고",
-     "주격 격의 선택 조건을 체계적으로 제시하려고",
-     "격 체계의 보편적 할당 규칙을 설명하려고",
-     "격의 할당 방식이 모든 언어에서 동일하다고 주장하려고",
-     "주격 및 목적격 격의 본질적 유사성 또는 차이점을 규명하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'to clarify whether nominative and accusative Case are fundamentally similar or different'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 주격과 목적격 격의 '유사성'과 '차이점' 모두를 다루고 있지만, ①은 '유사성'만 규명하려고 한다고 오해. 지문에서 'similar'과 'fundamentally different'가 모두 언급된 점을 놓침. → 처방: 격의 할당 방식에서 공통점과 차이점을 모두 확인한 후, 지문의 목적(규명)을 떠올리며 선지를 고를 것.\n② 진단: 지문은 주격 격의 '선택 조건'보다는 '할당 방식의 유사성/차이점'에 초점을 맞추고 있지만, ②는 주격 격의 '선택 조건'을 체계적으로 제시한다고 오해. 지문의 'Case assigner'가 '할당자'를 뜻한다는 점을 간과함. → 처방: 지문에서 'Case assigner'가 '할당자'라는 뜻임을 확인하고, 격의 '할당 방식'과 '본질'을 중심으로 선지를 분석할 것.\n③ 진단: 지문은 '보편적 할당 규칙'을 설명하는 것이 아니라, '주격과 목적격 격의 유사성 또는 차이점'을 규명하는 것이 목적임. ③은 '보편적 규칙'을 제시한다고 오해했지만, 지문은 '두 가지 관점(유사 vs 차이)'을 비교하는 데 집중함. → 처방: 지문의 첫 문장('There are two basic positions linguists take')에서 '두 관점 비교'가 목적임을 떠올리며 선지를 선택할 것.\n④ 진단: 지문은 '모든 언어에서 동일하다'고 주장하는 것이 아니라, '주격과 목적격 격의 할당 방식이 유사하거나 다를 수 있다'는 관점을 비교하는 것임. ④는 '동일하다'고 주장한다고 오해했지만, 지문은 '유사성 또는 차이점'을 규명하는 것이 목적임. → 처방: 지문의 'similar'과 'fundamentally different'가 '비교'를 뜻한다는 점을 기억하고, '주장'보다는 '규명'을 목적으로 삼는 선지를 고를 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to clarify whether nominative and accusative Case are fundamentally similar or different]"
-   }
-  },
-  {
-   "ts": "2026-08-17T01:57:25.966Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "<u>SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (diatribe</u>, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (schism, utopia). 3.Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. 4.Anyone so (ilk, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (prestigious, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.",
-    "choices": [
-     "The senator delivered a brief speech venting anger at inefficiencies in public welfare programs, failing to address military spending.",
-     "The senator gave a detailed speech that numerically broke down military budget waste without expressing frustration.",
-     "The senator's anger over government inefficiency resulted in a measured, lengthy debate about reducing military expenses.",
-     "The senator frequently gave speeches condemning military budget waste, but they were always concise and factual.",
-     "The senator delivered an angry, prolonged speech criticizing excessive military spending, revealing deep frustration with governmental inefficiency."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'The senator delivered an angry, prolonged speech criticizing excessive military spending, revealing deep frustration with governmental inefficiency.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘brief speech’와 ‘venting anger at inefficiencies in public welfare programs’는 ‘lengthy diatribe’(길고 통렬한 비판)라는 지문 내용과 완전히 반대되며, ‘military spending’을 ‘public welfare programs’로 오독한 것으로 보임. → 처방: 문장에서 ‘military budget waste’를 정확히 찾아내어 ‘군사 예산 낭비’가 핵심 주제임을 확인하고, ‘diatribe’가 ‘길고 분노에 찬 비판’이란 뜻을 떠올려야 함.\n② 진단: ‘detailed speech’와 ‘numerically broke down’는 ‘diatribe’가 ‘길고 분노에 찬 비판’이라는 뜻을 오해한 것이며, ‘without expressing frustration’은 ‘diatribe’가 분노를 담는다는 지문 내용과 맞지 않음. → 처방: ‘diatribe’를 ‘길고 격렬한 비판’이라는 뜻으로 정확히 기억하고, 문장에서 분노가 담겼는지 확인할 것.\n③ 진단: ‘measured, lengthy debate’는 ‘diatribe’가 ‘격렬한 비판’이라는 뜻을 오해한 것이며, ‘reducing military expenses’는 ‘condemning excessive military spending’과 다르며, ‘frustration’이 빠졌음. → 처방: ‘diatribe’를 ‘격렬한 비판’으로 정확히 이해하고, 문장에서 분노와 비판의 강도가 높은지 확인할 것.\n④ 진단: ‘concise and factual’는 ‘diatribe’가 ‘길고 격렬한 비판’이라는 뜻을 오해한 것이며, ‘condemning military budget waste’는 맞지만 ‘always’가 ‘lengthy’를 부정하는 오류임. → 처방: ‘diatribe’를 ‘길고 분노에 찬 비판’으로 정확히 기억하고, 문장에서 ‘lengthy’와 ‘angry’가 포함되었는지 확인할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
