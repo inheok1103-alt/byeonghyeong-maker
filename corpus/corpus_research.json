@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T03:15:48.501Z",
+ "updated": "2026-08-17T04:08:01.934Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T04:07:36.902Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어에서 'return'은 주로 '되돌아오다', '회복되다'의 의미로 쓰이며 'reciprocate'와 같은 연어는 '도움을 베풀었을 때 상대방의 반응'을 나타낸다. 문장 구조상 'no return in his help'는 비문법적이거나 의미가 모호해진다.",
+   "rule": "원서 코퍼스에서 'return in'의 실제 연어 빈도가 낮으므로, 'help'와 'return'의 잘못된 조합(예: 'no return in his help')을 오답으로 출제하여 'reciprocate'나 'appreciation'과 같은 적절한 동사·명사의 연어를 선택하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T03:15:19.995Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'successful'과 같은 형용사의 철자 오류(gec)가 빈번하며, 'gift'의 복수화와 'textbook'의 복합명사화 오류도 두드러진다. 또한 'old'의 비교급 'older'로의 변환과 'make way'와 같은 관용구 사용 오류가 특징적이다.",
    "rule": "형용사의 철자 오류(예: 'succesfull' → 'successful')와 복수형/복합명사 오류(예: 'text books' → 'textbooks')를 검증하는 문항을 출제할 때는, 해당 단어의 표준 철자 및 복수형을 반드시 포함하여 오답지를 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T12:00:45.483Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'감정 동사 + 목적어 + 형용사' 구문에서 'feel happy the people'처럼 목적어 뒤에 형용사를 직접 연결하는 오류가 빈번하며, 'make the people happy'처럼 'make + 목적어 + 형용사' 구조가 올바른 패턴임을 확인할 수 있다.",
-   "rule": "'감정 동사(feel, seem, appear 등) + 목적어 + 형용사' 구문에서 오답을 설계할 때는 'feel happy the people'처럼 목적어 뒤에 형용사를 직접 연결하는 오류를 포함하고, 정답은 'make the people happy'처럼 'make + 목적어 + 형용사' 구조로 제시하라.",
    "sample": [
     "old english",
     "university press",
