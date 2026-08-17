@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T19:01:12.969Z",
+ "updated": "2026-08-17T19:46:48.543Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T19:46:14.635Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'특정 사물/개념을 지칭하는 경우, 복수형 또는 소유격을 활용하는 패턴이 빈번하다. 특히 'certain thing(s)', 'failure(s)', 'struggle(s)'와 같이 추상명사나 집합명사가 복수화되거나 소유격이 붙는 경우가 많다.",
+   "rule": "'추상명사 또는 집합명사를 사용할 때, 문맥상 복수형(-s) 또는 소유격(-'s)을 반드시 적용하라. 예: 'certain thing' → 'certain things', 'failure' → 'failures', 'struggle' → 'struggles'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T19:00:43.081Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "영어 문법에서 'can/could/may/might' 등 조동사의 필수적 사용 패턴을 간과한 오류가 빈번하다. 또한, 콤마와 접속사를 통한 문장 구조의 명확화와 동사 시제의 일관성이 중요하다.",
    "rule": "조동사(modal verb)가 필요한 동사(예: explain, discuss, expect, choose)는 반드시 조동사와 함께 사용해야 하며, 콤마와 접속사(and, or)를 활용해 문장 구조를 명확히 분리하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T05:47:43.866Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "일상 표현에서 'think differently from'은 오류로 'think differently than'으로, 'give up'은 타동사 구로 'give it up'으로 교정됨을 확인. 또한 'form hesitancy from'은 'form a hesitancy to'로 재구조화됨을 확인.",
-   "rule": "대상 동사(think, give, form)가 전치사(than, up, from)와 결합할 때, 타동사 구문(has succeeded, give it up, hesitancy to interact)로 재구조화하는 오류 패턴을 문항으로 출제하라.",
    "sample": [
     "old english",
     "university press",
