@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-17T10:03:55.857Z",
+ "updated": "2026-08-17T10:51:38.229Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-17T10:51:07.640Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'preposition omission' 또는 'preposition substitution' 오류가 빈번하며, 특히 'of'와 'on'의 혼용이 두드러진다. 또한 'than' 뒤의 'the' 생략 오류도 나타났다.",
+   "rule": "'of'와 'on'을 포함한 전치사 선택 오류를 테스트할 때에는, 'reason relations'나 'how + S + V' 구조에서 전치사 사용을 강제하는 문항을 설계하라(예: 'Ideas on how to solve...' vs. 'Ideas of how to solve...').",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-17T10:03:17.185Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'~을 하다'/'~을 수행하다'와 같이 행위 동사를 'of+명사' 구조로 오용하는 패턴이 반복된다. 또한 'become+형용사'가 'be+형용사'로 대체되어야 하는 경우가 많다.",
    "rule": "'행위 동사(do/perform/think 등)의 경우, '~을 하다'/'~을 수행하다'는 'do/perform/think + 목적어' 형태로만 사용하며, 'of+명사' 구조는 명사 수식에 한정해 사용한다. 또한 'become+형용사'는 'be+형용사'로 대체 가능할 때 반드시 수정하도록 오답을 설계한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-14T19:59:43.784Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'old/new'와 같은 형용사가 명사의 수를 결정짓는 패턴이 빈번하며, 특히 'new'는 복수 명사와 결합할 때 '-s'가 필수적으로 붙는다. 또한, 'successful'과 같은 형용사의 철자 오류(예: 'successfull')가 자주 발생한다.",
-   "rule": "형용사 'new'가 명사와 결합할 때는 복수형 명사(예: plants, books 등)에 '-s'를 반드시 붙여야 한다. 또한, '-ful'로 끝나는 형용사(예: successful, beautiful)는 철자를 정확히 '-ful'로 표기해야 한다.",
    "sample": [
     "old english",
     "university press",
