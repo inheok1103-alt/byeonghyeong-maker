@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T22:44:55.406Z",
+ "updated": "2026-08-18T23:45:11.677Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T23:39:39.738Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사 중심의 오류(skill → skilled, information → outdated information)는 한국어-영어 간 품사 전환 패턴과 연관되며, '~에 대한 기술'/'~에 능숙한' 등의 의미 구분이 미흡한 경우 발생한다.",
+   "rule": "명사+전치사 구조에서 '능력/기술'을 의미할 때는 형용사(skilled/informed/updated 등)로 전환하거나 동사(contain/acquire 등)로 재구성하여 문법적 오류를 방지하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T22:44:26.997Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'단수 명사(thing, subject) → 복수 명사(things)'나 '불필요한 전치사(시간 표현에서 un- 접두사)'처럼 문법적 일관성(grammatical agreement)이나 어휘 선택(vocabulary choice)의 오류가 빈번하다. 특히, '단수/복수'와 '전치사 생략/삽입'이 CEFR B1-B2 수준에서 자주 오류로 나타난다.",
    "rule": "CEFR B1-B2 수준의 내신 문항에서는 '단수/복수 명사의 일치'와 '전치사의 필수적 사용(예: spend time in/on ~)'을 반드시 검증하는 문장을 출제하라. 오류 유형은 문장 내 명사 수(thing → things)나 전치사 생략(unmeaningful → in meaningless)으로 제시한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T09:45:07.402Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제와 현재 시제가 혼용된 문장에서 시제 일관성이 깨지는 경우가 빈번하며, 특히 'consist', 'own', 'satisfy'와 같은 동사가 과거 시제와 함께 쓰일 때 오류가 발생한다. 또한 부정사나 동명사 형태로 오류가 발생하는 경우가 많다.",
-   "rule": "'과거 시제를 요구하는 문맥(예: '~ ago', 'last')에서는 모든 동사가 과거 시제(단순 과거 또는 과거 완료)로 통일되어야 하며, 부정사나 동명사 형태는 시제 오류로 간주한다. 예: 'Ten years ago, she **owned** a house that **satisfied** her needs'.",
    "sample": [
     "old english",
     "university press",

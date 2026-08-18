@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-18T22:44:55.410Z",
+ "updated": "2026-08-18T23:45:11.681Z",
  "samples": [
+  {
+   "ts": "2026-08-18T23:39:02.268Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "특정한 대상을 다른 것과 구별하려고 이름을 임의로 정한다는 사실을 설명하려고",
+     "이름이 고유한 성격을 띠게 된다는 사실을 설명하려고",
+     "이름을 통해 대상을 구별하는 방식을 예시로 설명하려고",
+     "이름이 대상을 구별하는 유일한 수단이라고 주장하려고",
+     "이름이 구체적인 대상을 가리킬 때만 임의로 정해진다고 설명하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'To distinguish a specific entity from others, a name is arbitrarily chosen to become a proper name.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 이름이 '고유한 성격'을 띠게 된다는 점(②)을 지문의 핵심 논점(이름이 대상을 구별하는 수단으로 쓰이는 점)으로 오해한 것으로 보임. 지문은 이름이 '구별'의 도구로 쓰인다는 사실을 설명하지, '고유한 성격' 자체를 다루지 않음. → 처방: 이름이 대상을 구별하는 수단으로 어떻게 쓰이는지(예: 임의로 정해지는 경우)를 먼저 확인하고, 그 다음에 '고유한 성격'이란 말이 나오는지 확인할 것.\n③ 진단: 이름을 '구별하는 방식'을 '예시'로 설명한다는 점(③)을 지문의 구조(이름이 대상을 구별하는 원리 설명)로 오해한 것으로 보임. 지문은 '방식'을 설명하지 않고, 이름이 대상을 구별하는 '원리'를 설명함. → 처방: 지문의 주제가 '이름이 대상을 구별하는 원리'인지, 아니면 '예시'인지를 먼저 판단할 것. 여기서는 원리 설명이므로, 예시가 아니라 원리를 찾도록 집중할 것.\n④ 진단: 이름이 '유일한 수단'이라고 주장한다는 점(④)을 지문의 내용(이름이 대상을 구별하는 '하나의 수단'일 뿐, 유일한 수단은 아님)으로 오해한 것으로 보임. 지문은 '이름이 대상을 구별하는 수단 중 하나'임을 암시하지, '유일'하다고 주장하지 않음. → 처방: 지문에서 '유일한 수단'이라는 말이 나오는지 확인하고, 없다면 그 주장은 지문과 무관하다는 점을 기억할 것.\n⑤ 진단: 이름이 '구체적인 대상'일 때만 임의로 정해진다는 점(⑤)을 지문의 내용(이름이 구체적인 대상을 가리킬수록 '임의로 정해질 확률이 높아진다'는 점)으로 오해한 것으로 보임. 지문은 '확률'을 언급하지, '오직 그때만'이라는 절댓값을 언급하지 않음. → 처방: 지문의 '확률'이라는 단어를 주의 깊게 읽고, '절대적'인 표현(예: '오직', '반드시')이 있는지 확인할 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To distinguish a specific entity from others, a name is arbitrarily chosen to become a proper name.]"
+   }
+  },
+  {
+   "ts": "2026-08-18T23:39:25.935Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · ⚠ 정답 재검토 권고 — 솔버 1/2가 3번 선택(기록 5번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "ACTUAL MEANING OF PROPER NAMES (A) [71 differences / 71 difference] being one of degree rather than of kind. A name always connotes the quality or qualities by which the bearer or bearers of the name are known, i.e. distinguished from other beings or things. The more special or specific the thing denoted is, the more probable is it that the name is chosen arbitrarily, and (B) [SQ much / SQ muoh] the more does it approach to, or become, (C) [a. proper name / an proper name]. If a spf'.aker wants to call up the idea of some pe!'Son or thing, he has at his command in some cases a name specially applied to the individual concerned, that is, a name which in this particular situation will be understood as refeITing to it, or else he has to piece together by means of other words a composite denomination which is suffiClently precise for his purpose. The way in which this is done will be the subjeot of our oonsideration in the next chapter.",
+    "choices": [
+     "(A) 71 difference - (B) SQ much - (C) an proper name",
+     "(A) 71 differences - (B) SQ muoh - (C) a. proper name",
+     "(A) 71 differences - (B) SQ muoh - (C) an proper name",
+     "(A) 71 differences - (B) SQ much - (C) a. proper name",
+     "(A) 71 difference - (B) SQ muoh - (C) a. proper name"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) 71 difference - (B) SQ muoh - (C) a. proper name. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: '71 difference'는 복수형 오류(71 differences 가 맞음), 'SQ much'는 철자 오류(SQ muoh), 'an proper name'은 'a'가 맞는 관사 사용(an 은 모음 앞). → 처방: 복수형은 's'를 붙이고, 철자는 원문을 정확히 확인하며, 관사는 'a'가 맞는 경우 'an'을 쓰지 않도록 주의하기.\n② 진단: '71 differences'는 맞지만 'SQ muoh'는 철자 오류(SQ much), 'an proper name'은 관사 오류(a 가 맞음). → 처방: 철자는 원문을 그대로 따라 쓰기, 관사는 명사 'proper name'이 자음으로 시작하니 'a'를 사용하기.\n③ 진단: '71 differences'는 맞지만 'SQ muoh'는 철자 오류(SQ much), 'an proper name'은 관사 오류(a 가 맞음). → 처방: 철자 오류는 원문을 정확히 보고 쓰기, 관사는 명사 앞에 오는 소리(자음/모음)를 확인해서 'a' 또는 'an' 선택하기.\n④ 진단: '71 differences'는 맞지만 'SQ much'는 철자 오류(SQ muoh), 'a. proper name'은 오류(정확한 표기는 'a proper name'이지만 지문에서 'a.'로 축약된 형태). → 처방: 철자는 원문을 확인하고, 축약형이 아닌 완전한 형태로 쓰기 위해 'a proper name'으로 기억하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-18T22:44:03.044Z",
    "type": "밑줄함의",
@@ -256,60 +325,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘(1)’의 wh-표현이 동사의 보충어에서 왔다는 ‘에코 질문’의 설명은 ‘(1)’의 비에코 질문에서 wh-표현이 어디로 이동하는지 묻는 흐름과 맞지 않음. 학생은 문맥 흐름을 무시하고 ‘에코 질문’만 보고 ‘(1)’에 넣어야 한다고 오해했을 수 있음. → 처방: 문장 앞뒤 문장의 연결을 확인하고, ‘에코 질문’과 ‘비에코 질문’의 차이를 분명히 한 뒤 위치를 정하라.\n② 진단: ‘(1)’의 비에코 질문에서 wh-표현이 ‘도치된 조동사 앞’으로 이동한다는 설명은 ‘(3)’의 흐름에서 나온 것이므로, ‘(1)’에 넣기에는 문맥상 어색함. 학생은 ‘도치된 조동사 앞’이라는 단어만 보고 무작정 넣었을 가능성이 있음. → 처방: 문장의 연결어(‘But’, ‘Given that’ 등)를 보고 앞뒤 문장의 논리적 관계를 먼저 확인하라.\n④ 진단: ‘(4)’는 ‘CP 의 Spec 위치’가 아니라 ‘(2c)’의 예문과 ‘(4)’의 도표를 설명하는 부분임. 학생은 ‘CP 의 Spec’이라는 단어가 ‘Spec-CP’를 설명하는 문장임을 보지 못하고 무리하게 끼워 맞췄을 수 있음. → 처방: 문장의 핵심 단어(‘Spec-CP’, ‘PRN’, ‘Q-pronouns’)가 설명하는 대상(예문·도표·용어)을 정확히 짚어라.\n⑤ 진단: ‘(2c)’의 예문과 ‘(4)’의 도표는 ‘(5)’에서 설명하는 ‘화살표 이동’과 직접 연결됨. 학생은 ‘예문’이 나오는 위치에 ‘설명’이 먼저 나와야 한다고 착각했을 수 있음. → 처방: 예문과 설명의 순서를 구분하고, ‘(2c)’와 ‘(4)’가 ‘(5)’의 근거임을 먼저 확인하라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T18:59:03.534Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 6건 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.75,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "wh-expressions' movement into the specifier position of CP in questions",
-     "movement of wh-expressions into the specifier position in declarative clauses",
-     "origin of wh-expressions as verb complements in interrogative clauses",
-     "universal movement of noun phrases into specifier positions in clauses",
-     "obligatory presence of specifier positions in all clause types"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The movement of wh-expressions to the specifier position within CP in questions'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 2번은 'declarative clauses(평서문)'에서 wh-expressions 가 이동한다는 오해로, 지문에서 'non-echoic questions(비메아리 질문)'에만 초점을 맞췄다는 사실을 놓쳤음. 지문은 오직 질문 구조에서 wh-expressions 의 이동만을 다룸. → 처방: 문제의 유형(질문 vs 평서문)을 정확히 구분한 뒤, 지문의 범위(질문 구조)에서 wh-expressions 의 이동에만 집중하기.\n③ 진단: 3번은 wh-expressions 의 'origin(기원)'에만 집중한 오독으로, 지문은 이동의 'position(위치)'에 대한 설명이 주제임을 간과함. 지문은 wh-expressions 가 동사의 보어로 시작한다는 사실(3~4문장)을 배경으로 삼아, 이동 위치(CP 의 specifier)를 논의함. → 처방: 지문의 핵심 주제가 '이동의 위치'임을 인식하고, 서론 부분(기원 설명)은 배경으로만 이해하기.\n④ 진단: 4번은 'universal movement(보편적 이동)'이라는 과도한 일반화로, 지문은 오직 'questions(질문)'에서만 wh-expressions 의 이동을 다룬다는 한계를 무시함. → 처방: 지문의 범위가 특정 문형(질문)에 국한된다는 점을 정확히 파악하고, 보편적 주장은 지문의 내용과 맞지 않음을 확인하기.\n⑤ 진단: 5번은 'obligatory presence(필수적 존재)'라는 과장된 주장으로, 지문은 CP 의 specifier 위치가 '질문'에서 wh-expressions 의 이동을 위해 필요하다는 점만 언급하고, 모든 절 유형에 필수임을 주장하지 않음. → 처방: 지문의 설명이 특정 구조(질문)에서의 이동에 한정되어 있음을 명확히 이해하고, '모든 절'이라는 전제를 의심하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The movement of wh-expressions to the specifier position within CP in questions]"
-   }
-  },
-  {
-   "ts": "2026-08-18T19:00:29.012Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 8 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 8단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: Wh-표현식은 CP 내에서 지정자 위치로 이동합니다\n주어진 단어: ( wh-expressions / specifier / position )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Wh-expressions move to the specifier position within CP. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
