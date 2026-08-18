@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T15:56:35.995Z",
+ "updated": "2026-08-18T16:55:34.017Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T16:55:07.635Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "원서 코퍼스에서 'reduce/reduced'와 'include/inculcate'가 빈번한 연어 패턴으로 나타나며, 특히 'have to + 동사원형' 구조가 과도한 과거분사(-ed) 형태로 오용되는 경우가 많다. 또한 'make + 목적어 + 보어' 구조에서 'live in'이 'live'로 축약되는 경향이 강하다.",
+   "rule": "'have to + 동사원형' 구조에서 과거분사(-ed) 형태가 오용되지 않도록 하며, 'make + 목적어 + 보어' 구조에서는 'live in'을 'live'로 축약하는 오류를 유도하여 문법적 정확성을 테스트하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T15:56:06.820Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거형·현재형 동사(are not agree → may not agree)나 단수·복수 명사(reasons → these reasons) 오류가 연어 패턴과 결합된 경우가 많다. 또한 전치사나 접속사(however → but) 오류도 연어 기반으로 자주 발생한다.",
    "rule": "연어 기반 오답 설계 시, 'are not agree'(X) → 'may not agree'(O), 'for this reasons'(X) → 'for these reasons'(O)처럼 해당 연어의 표준 패턴(동사형, 수 일치, 전치사/접속사 사용)을 위반한 오답을 1개 이상 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T03:15:09.748Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'old english', 'english grammar', 'english language' 등 영어 관련 명사구가 빈번히 등장하며, 과거시제와 현재시제가 혼용되는 경향이 있다. 또한 'between two', 'direct object' 등 문법적 구조가 연어화되어 자주 사용된다.",
-   "rule": "영어 내신 변형문제 출제 시, 'importance/need/necessity + to understand/use'와 같은 구문은 'it is very important to understand all the concepts and ideas they gave us' → 'it is very important to understand all the concepts and ideas that were given to us'로 과거시제와 관계대명사(that/who)를 포함하도록 변형하라.",
    "sample": [
     "old english",
     "university press",

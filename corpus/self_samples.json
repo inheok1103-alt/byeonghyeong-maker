@@ -1,6 +1,77 @@
 {
- "updated": "2026-08-18T15:56:35.999Z",
+ "updated": "2026-08-18T16:55:34.021Z",
  "samples": [
+  {
+   "ts": "2026-08-18T16:49:49.590Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Presented ­here in part II is the second group of two cue categories, the “bodily cue categories.” This group consists of the category of gestural cues and the category of corporal cues, treated respectively in the next two chapters. As the general source of information common to both ­these categories, the body of one of the speech participants provides the cues to the target. But each category represents a more specific source of information. Cues of the gestural category consist of movements or configurations of parts of the speaker’s body produced volitionally. But cues of the corporal category consist simply of the location of the speaker’s or hearer’s ­whole body. Both the bodily cue categories are more elaborate where the target is speech-­external. Accordingly, analy­sis of their use for speech-­external targets begins and occupies most of the next two chapters, while analy­sis of their use for speech-­internal targets follows more briefly.",
+    "choices": [
+     "제2부에서 몸짓 신호 범주와 신체 위치 신호 범주로 구성된 **신체 위치 신호 범주**를 다룬다",
+     "몸짓 신호 범주는 화자의 신체 일부가 **자동적으로** 움직이는 행위를 포함한다",
+     "신체 위치 신호 범주는 화자나 청자의 **부분** 몸의 위치를 포함한다",
+     "두 신호 범주는 **청자의 몸**에서 나오는 정보를 공통으로 제공한다",
+     "이 신호 범주의 분석은 외부 대상에 대해 더 자세히 다루어진다"
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘제2부에서’ 몸짓 신호 범주와 신체 위치 신호 범주로 나뉜다는 말은 맞지만, ‘신체 위치 신호 범주’라는 표현은 지문에 나오지 않으며, ‘신체 신호 범주’(bodily cue categories)를 잘못 읽은 듯하다. → 처방: ‘제2부’와 ‘몸짓 신호 범주’(gestural cues), ‘신체 위치 신호 범주’(corporal cues)라는 용어를 정확히 구분해 읽기.\n② 진단: ‘자동적으로’라는 말은 지문에 없으며, 몸짓 신호 범주는 ‘의도적으로’(volitionally) 움직이는 행위를 포함한다고 나와 있다. ‘자동적’이란 단어를 잘못 연상한 듯하다. → 처방: ‘의도적으로’라는 단어를 정확히 기억하고, ‘자동적’이란 말은 쓰지 않도록 주의하기.\n③ 진단: ‘부분’ 몸의 위치를 포함한다는 말은 지문에 없으며, 신체 위치 신호 범주는 화자나 청자의 ‘전체’ 몸의 위치를 포함한다고 나와 있다. ‘부분’이라는 단어를 잘못 읽은 듯하다. → 처방: ‘whole body’라는 표현을 정확히 기억하고, ‘부분’이란 말은 쓰지 않도록 주의하기.\n④ 진단: 두 신호 범주는 ‘화자’나 ‘청자’의 몸이 아니라 ‘화자’ 몸에서 나오는 정보를 공통으로 제공한다고 나와 있다. ‘청자의 몸’이라는 표현을 잘못 읽은 듯하다. → 처방: ‘the body of one of the speech participants’라는 표현을 정확히 기억하고, ‘청자’의 몸이라는 말은 쓰지 않도록 주의하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-18T16:50:44.056Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "신체의 몸짓과 위치는 발화 대상이 외부 대상인지 내부 대상인지에 따라 신호의 구체성과 복잡성이 달라진다",
+     "신체의 몸짓은 발화자의 의도적인 신체 움직임으로 비언어적 의사소통을 구성하는 주요 요소로 볼 수 있다",
+     "신체의 몸짓과 위치는 비언어적 신호 전달에서 발화 대상을 고려하지 않으며, 그 자체로 독립적인 의미를 지닌다",
+     "신체의 몸짓과 위치는 비언어적 의사소통 수단으로, 발화 대상을 기준으로 신호 체계의 구체성과 복잡성을 제공한다",
+     "신체의 몸짓과 위치는 언제나 비언어적 의사소통의 가장 핵심적인 수단으로 평가되어야 한다"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'The bodily cue categories (gestural and corporal cues) serve as nonverbal communication channels where the body provides cues, with each category differing in specificity and elaboration depending on whether the target is speech-external or speech-internal.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: 지문에서 '신체의 몸짓과 위치는 발화 대상이 외부 대상일 때 더 복잡하고 구체적'이라고 설명했는데, 이 선지는 '발화 대상이 외부/내부 대상에 따라 달라진다'는 점만 언급하고 '복잡성과 구체성'을 생략해 오독했음. → 처방: 지문에서 강조하는 '복잡성과 구체성'의 변화까지 꼼꼼히 읽고, 선지의 핵심 키워드를 빠짐없이 확인할 것.\n② 진단: 지문은 '몸짓'만 의도적인 움직임이라고 했지만, 이 선지는 '신체의 몸짓과 위치를 모두' 의도적인 요소로 오해했음(위치는 의도적 움직임이 아님). → 처방: 지문에서 '몸짓'과 '위치'의 정의를 정확히 구분하고, 각 용어의 범위를 명확히 파악할 것.\n③ 진단: 지문은 '발화 대상을 고려'한다고 명시했는데, 이 선지는 '고려하지 않는다'고 오독해 지문의 핵심 논리를 놓쳤음. → 처방: 지문의 문맥에서 '고려한다/고려하지 않는다' 같은 반대 의미를 주의 깊게 읽고, 문장 구조를 정확히 이해할 것.\n⑤ 진단: 지문은 '언제나 가장 핵심적인 수단'이라고 하지 않았고, '발화 대상을 기준으로' 구체성과 복잡성을 제공한다고 설명했는데, 이 선지는 '언제나'라는 절대적 표현으로 오해했음. → 처방: 지문에서 사용된 '언제나', '가장 핵심적인' 같은 절대적 표현이 있는지 확인하고, 지문의 상대적 설명을 정확히 읽을 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The bodily cue categories (gestural and corporal cues) serve as nonverbal communication channels where the body provides cues, with each category differing in specificity and elaboration depending on whether the target is speech-external or speech-internal.]"
+   }
+  },
   {
    "ts": "2026-08-18T15:55:56.390Z",
    "type": "어법(밑줄)",
@@ -279,60 +350,6 @@
     ],
     "answer": 4,
     "explanation": "(A) hypothetical constructs / (B) logical interrelations 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A) hypothetical constructs'는 맞지만 '(B) existential quantification'은 틀렸다. 지문은 'existential and universal quantification'이 'necessity 와 possibility 의 정의 가능성'을 설명한다고 했는데, 'existential quantification'만으로는 '논리적 상호의존성'을 온전히 담아내지 못한다. → 처방: 지문 2문단의 'existential and universal quantification'을 보고 'existential quantification'만으로 요약하지 말고, '논리적 상호의존성'을 뜻하는 'logical interrelations'을 떠올려야 한다.\n② 진단: '(A) actual states'는 지문이 'hypothetical states of affairs'라고 말한 것과 반대다. 또한 '(B) linguistic patterns'은 지문에서 다루는 '논리적 정의 가능성'과는 무관한 '언어적 패턴'을 뜻하므로 오해한 것이다. → 처방: 지문 1문단의 'hypothetical states of affairs'와 2문단의 'necessity 와 possibility 의 정의 가능성'을 정확히 짚고, 'actual states'나 'linguistic patterns' 같은 오개념을 버려야 한다.\n③ 진단: '(A) logical interrelations'은 지문에서 다루는 'necessity 와 possibility 의 상호 정의 가능성'을 뜻하지 않는다. 또한 '(B) descriptive accuracy'는 지문이 'descriptive of actual reality'가 아니라 'hypothetical'을 다룬다고 말한 것과 반대다. → 처방: 지문 1문단의 'hypothetical states of affairs'와 2문단의 'necessity 와 possibility 의 상호 정의'를 정확히 연결 지어, '논리적 상호관계'와 '정의 가능성'을 구분해서 이해해야 한다.\n⑤ 진단: '(A) definitional equivalence'은 지문이 'interdefinability'라고 말한 것과 비슷하지만, '(B) negation'은 지문에서 'negation 을 통한 정의 가능성'을 설명하는 한 부분일 뿐, 전체 요약의 핵심이 아니다. → 처방: 지문에서 'negation'은 'necessity 와 possibility 의 상호 정의'를 설명하는 도구일 뿐이므로, 이를 '정의 가능성' 자체로 오해하지 말고, '논리적 상호의존성'을 핵으로 삼아야 한다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T11:43:49.006Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "모달 문장의 필연성과 가능성을 가능성과 부정으로 혼동하려고",
-     "모달 문장의 필연성과 가능성을 실제 상태로 기술하려고",
-     "모달 문장의 가설을 가능한 세계 분석으로 설명하려고",
-     "모달 문장의 필연성과 가능성을 정의의 반대 개념으로 오해하려고",
-     "모달 문장 분석을 위해 가능한 세계 분석을 활용하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'To analyze modal sentences, the possible worlds analysis captures their hypothetical nature and interdefinability of necessity and possibility through quantification and negation.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 모달 문장의 '필연성'과 '가능성'을 '가능한 세계 분석'으로 설명하는 것이지, 이들을 '가능성과 부정'으로 혼동하는 것이 아님. 학생은 'possible worlds'라는 용어에만 집중해 'possible'과 'negation'을 혼동한 듯함. → 처방: 문제에서 'possible worlds analysis'가 무엇인지 먼저 확인하고, 그 용어가 지문에 어떻게 쓰였는지 정확히 읽기.\n② 진단: 지문은 모달 문장이 '실제 상태'가 아니라 '가설적 상태'를 다루는 점을 강조하는데, 학생은 이를 '실제 상태로 기술'한다고 오해했음. 'hypothetical states of affairs'라는 표현을 제대로 이해하지 못한 듯함. → 처방: 지문에서 'hypothetical'이나 'not simply descriptive of actual reality' 같은 구절을 찾아 그 의미를 정확히 파악하기.\n③ 진단: 지문은 모달 문장의 '필연성과 가능성'을 '가능한 세계 분석'으로 설명하는 것이 주목적이지만, 학생은 이 분석이 '설명'하는 대상이 '가설'인 줄 착각했음. 'captures two key properties'라는 표현을 '가설을 설명'한다고 오독한 듯함. → 처방: 지문의 첫 문장('captures two key properties')을 정확히 읽고, 이 분석이 무엇에 대한 것인지 clearly 파악하기.\n④ 진단: 지문은 '필연성과 가능성'을 '정의의 반대 개념'으로 오해하는 것이 아니라, 이들을 '서로 정의할 수 있는 관계'로 설명하고 있음. 학생은 'opposed in such a way'라는 구절을 '정의의 반대'로 오해했음. → 처방: 지문에서 'interdefinability'나 'opposed in such a way'가 어떤 의미를 갖는지 사전이나 참고자료를 찾아 정확히 이해하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To analyze modal sentences, the possible worlds analysis captures their hypothetical nature and interdefinability of necessity and possibility through quantification and negation.]"
-   }
-  },
-  {
-   "ts": "2026-08-18T11:50:36.638Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 17 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'interdefinability', 'hypothetical', 'possibility' / 15~19단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Modal sentences describe hypothetical states using possible worlds and define necessity and possibility through interdefinability with negation.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
