@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T20:43:47.794Z",
+ "updated": "2026-08-18T21:42:44.047Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T21:42:15.295Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'have a trip' 대신 'take a trip'이 자연스러운 패턴으로, 동사 선택의 오류가 빈번하다는 점을 확인했다. 또한 'realist'는 형용사로서 'realistic'으로 수정해야 하며, 'successfull'은 철자 오류로 'successful'이 옳음을 알 수 있었다.",
+   "rule": "'have/take a trip' 구문에서 'take a trip'을 정답으로 설정하고, 'have a trip'을 오답으로 제시하여 동사의 자연스러운 연어 선정을 평가한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T20:43:22.129Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'noun phrase'와 'present/past tense'가 결합된 문장에서, 복수명사 오용(예: *researches*)과 시제 불일치(*are* → *is*)가 빈번하다. 또한, 'better than'과 같은 비교구조에서 전치사 오용(than book → than from books)이 자주 발생한다.",
    "rule": "'academic research'나 'feeling'과 같은 불가산명사는 복수형(*researches*, *felings*)으로 쓰지 말고, 비교구조에서는 'better than + 전치사구(than from books)' 형태로만 오답을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T07:48:58.929Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 '명사구 + 동사 + 목적어' 구조가 빈번하며, 특히 관사(a/the)나 동사변화(3인칭 단수 현재형, 진행형) 오류가 자주 발생함을 확인했다.",
-   "rule": "원서 코퍼스 패턴을 반영하여, '명사구 + 동사(3인칭 단수 현재형) + 목적어' 구조의 문장을 출제할 때에는 관사(a/the) 유무와 동사의 시제(현재형 vs 진행형)를 반드시 확인하여 오류를 유도하라.",
    "sample": [
     "old english",
     "university press",
