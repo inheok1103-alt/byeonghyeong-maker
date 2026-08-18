@@ -1,6 +1,64 @@
 {
- "updated": "2026-08-18T07:08:17.082Z",
+ "updated": "2026-08-18T07:59:15.053Z",
  "samples": [
+  {
+   "ts": "2026-08-18T07:57:51.816Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "Quiz 5-4 A. Fill in each blank with the correct letter: a. euphemism b. dysplasia c. eulogy d. dyspeptic e. dyslexia f. euphoria g. dystopia h. eugenic 1. There is ⓐ<u>many</u> a ___ for the word die, and many more for the word drunk. 2. The novel paints a picture of a ___ in which the effects of climate change have ⓑ<u>wrecked</u> the social order. 3. Her ___ for her longtime friend was the most ⓒ<u>moving</u> part of the ceremony. 4. Because his ___ was ⓓ<u>discovered</u> early, he was able to receive the special reading instruction he needed. 5. The end of the war was marked by ⓔ<u>limited</u> ___ and celebration. 6. Ebenezer Scrooge, in A Christmas Carol, is a thoroughly ___ character. 7. Though the dog is the product of generations of ___ breeding, she is highstrung and has terrible eyesight. 8. The tests had detected some suspicious cell ___, but her doctors told her not to worry since it was at a very early stage. Answers",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 5,
+    "explanation": "정답 ⓔ: 문맥상 'widespread'가 와야 하는데 'limited'가 쓰여 부적절하다 — 전쟁의 종결과 뒤따르는 축하 분위기는 일반적으로 광범위한 기쁨과 안도를 수반하므로, 긍정적인 감정의 규모가 넓게 퍼져 있음을 나타내는 'widespread'가 문맥상 적절하다.. [극성] 정답=광범위한 기쁨 ↔ 오답=제한적인 기쁨\n[오답 진단·처방]\n① 진단: 학생은 'many a' 표현의 문법적 쓰임에 집중하여 낱말의 문맥상 의미를 오해했습니다. → 처방: 밑줄 친 낱말이 문장 전체에서 어떤 의미로 쓰였는지 먼저 파악합니다.\n② 진단: 학생은 'wrecked'가 사회 질서에 미치는 영향을 나타내는 데 적절하지 않다고 오해하여 낱말의 쓰임을 잘못 판단했습니다. → 처방: 동사가 목적어와 함께 쓰일 때 어떤 의미를 만들어내는지 주의 깊게 살펴봅니다.\n③ 진단: 학생은 'moving'이 감동을 주는 의미 외에 다른 뜻으로 쓰였다고 착각하여 문맥상 적절성을 잘못 판단했습니다. → 처방: 감정을 나타내는 형용사가 문맥에서 어떤 대상을 수식하는지 정확히 확인합니다.\n④ 진단: 학생은 'discovered'가 질병이나 상태를 찾아내는 의미로 쓰일 수 있음을 간과하여 낱말의 쓰임을 오해했습니다. → 처방: 추상적인 개념이나 상태를 나타내는 명사와 함께 쓰이는 동사의 의미를 폭넓게 이해합니다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-18T07:58:36.407Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "언어는 본래의 의미를 유지하지 못해 혼란을 일으킬 때가 많다.",
+     "언어는 일부 단어에서 본래 의미가 희석되는 현상을 보인다.",
+     "언어는 본래의 의미대로만 사용되어야만 명확한 의사소통이 가능하다.",
+     "언어는 모든 단어에서 본래 의미를 벗어나 사용될 수밖에 없다.",
+     "언어는 본래의 의미와 다르게 사용되는 경우가 빈번하게 발생한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Words carry meaning but are not always used as intended, as seen in the song \"Words\" and the varied uses of the word \"die.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘언어는 본래의 의미를 유지하지 못해 혼란을 일으킬 때가 많다’를 선택한 학생은 ‘euphemism’이 ‘완곡어법’이라는 뜻으로 본래 의미를 희석시키는 단어라는 점을 보지 못하고, ‘die’나 ‘drunk’가 여러 가지 말로 표현된다는 사실만 보고 ‘의미 혼란’을 떠올린 듯하다. → 처방: ‘euphemism’이란 본래의 unpleasant 한 단어를 부드럽게 바꾸어 말하는 것이므로, ‘의미가 희석된다’는 관점에서 문제를 풀어보기(‘euphemism’이란 단어가 지문에 나온다는 사실도 기억하기).\n② 진단: ‘언어는 일부 단어에서 본래 의미가 희석되는 현상을 보인다’를 선택한 학생은 ‘dystopia’가 ‘반유토피아’라는 뜻으로 사회가 무너진 상태를 가리킨다는 점을 보지 못하고, ‘climate change’가 사회 질서를 파괴했다는 사실만 보고 ‘의미 희석’을 떠올린 듯하다. → 처방: ‘dystopia’가 ‘좋지 않은 사회’를 뜻한다는 점과, ‘novel’이 사회를 묘사한다는 점을 연결해 ‘사회적 상태’를 떠올리기.\n③ 진단: ‘언어는 본래의 의미대로만 사용되어야만 명확한 의사소통이 가능하다’를 선택한 학생은 ‘eulogy’가 ‘추도사’라는 뜻으로 본래의 의미를 벗어나지 않는다는 점을 보지 못하고, ‘moving’이라는 감정이 들어간 표현만 보고 ‘의미 명확성’을 떠올린 듯하다. → 처방: ‘eulogy’가 ‘칭찬하는 말’이라는 본래 의미를 떠올리고, ‘의사소통’이 아니라 ‘추도식의 한 부분’이라는 점도 기억하기.\n④ 진단: ‘언어는 모든 단어에서 본래 의미를 벗어나 사용될 수밖에 없다’를 선택한 학생은 ‘dyslexia’가 ‘읽기장애’라는 뜻으로 본래 의미를 벗어나지 않는다는 점을 보지 못하고, ‘special reading instruction’이란 표현만 보고 ‘의미 벗어남’을 떠올린 듯하다. → 처방: ‘dyslexia’가 ‘읽기 어려움’이라는 뜻임을 정확히 기억하고, ‘장애’라는 본래 의미를 벗어나지 않는다는 점에 주목하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Words carry meaning but are not always used as intended, as seen in the song \"Words\" and the varied uses of the word \"die.]"
+   }
+  },
   {
    "ts": "2026-08-18T05:47:30.090Z",
    "type": "요지",
@@ -281,58 +339,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] An -ing word can be an adjective if it starts with un- or ends with -ly.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-18T01:52:27.283Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Anonymous readers have been of great help; the comments, suggestions, questions, and – perhaps even more – the criticisms of earlier drafts have helped to shape my thinking and hence the development of this textbook.\n② My husband Geoff Nathan has been a reader, reviewer of all things phonetic and phonological, cheerleader, and all-around support in this undertaking as in everything.\n③ I very much appreciate the encouragement I have received from Esther Roth and Anke de Looper as well as the support provided by Ineke Elskamp and her team, all at John Benjamins.\n④ Acknowledgments I wrote many of the drafts while serving as Associate Provost and then Provost at Wayne State University in Detroit, although the manuscript was finally completed when I stepped down into retirement with time to think more about language change and less about academic administration.\n⑤ I also appreciate the careful reading of parts of the manuscript by Kavya Davuluri.",
-    "choices": [
-     "④-③-⑤-②-①",
-     "④-③-①-⑤-②",
-     "③-④-⑤-①-②",
-     "④-③-⑤-①-②",
-     "④-⑤-③-①-②"
-    ],
-    "answer": 4,
-    "explanation": "정답 배열은 ④-③-⑤-①-②. 흐름: ④ → ③ → ⑤ → ① → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①④-③-⑤-②-①에서 ②가 맨 뒤로 가면서 '지원' 관련 내용이 마지막에 오도록 배치했는데, ②는 '지원'보다는 '감사'의 대상이므로 흐름상 ① 뒤에 오는 것이 맞음. ⑤는 '원고의 일부를 주의 깊게 읽어준 사람'으로 ③(감사)과 ①(비판·질문)의 중간쯤에 오는 것이 자연스러움. → 처방: 감사의 대상(②③⑤)과 원고의 수정·발전 과정(①④)을 구분해, '감사'가 먼저 오고 '원고 수정·발전'이 뒤에 오도록 흐름을 정리할 것.\n② 진단: ②④-③-①-⑤-②에서 ②가 맨 뒤로 가면서 '지원' 관련 내용이 마지막에 오도록 배치했는데, ②는 '지원'보다는 '감사'의 대상이므로 흐름상 ① 뒤에 오는 것이 맞음. ⑤는 '원고의 일부를 주의 깊게 읽어준 사람'으로 ③(감사)과 ①(비판·질문)의 중간쯤에 오는 것이 자연스러움. → 처방: 감사의 대상(②③⑤)과 원고의 수정·발전 과정(①④)을 구분해, '감사'가 먼저 오고 '원고 수정·발전'이 뒤에 오도록 흐름을 정리할 것.\n③ 진단: ③③-④-⑤-①-②에서 ③이 맨 앞으로 오면서 '감사'가 먼저 나오는데, ④(원고 작성 시기)가 먼저 나와야 '원고가 쓰이기 시작한 배경'을 알 수 있으므로 흐름이 어색함. ②는 '지원' 관련 내용이지만 맨 뒤로 가면서 '감사'의 대상이 마지막에 오도록 배치됨. → 처방: 원고가 쓰이기 시작한 배경(④)을 먼저 쓰고, 그다음 '감사'의 대상을 나열한 뒤(③⑤②), 마지막으로 원고의 수정·발전 과정(①)을 정리할 것.\n⑤ 진단: ⑤④-⑤-③-①-②에서 ⑤가 ④ 바로 뒤에 오면서 '원고의 일부를 주의 깊게 읽어준 사람'이 '원고 작성 시기' 바로 뒤에 나오는데, 이 둘은 성격이 달라 흐름이 어색함. ②는 '지원' 관련 내용이지만 맨 뒤로 가면서 '감사'의 대상이 마지막에 오도록 배치됨. → 처방: 원고가 쓰이기 시작한 배경(④)을 먼저 쓰고, 그다음 '원고의 일부를 읽어준 사람'(⑤)을 쓰고, 그다음 '감사'의 대상(③②)을 정리한 뒤, 마지막으로 원고의 수정·발전 과정(①)을 정리할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T01:52:47.684Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "Acknowledgments I wrote many of the drafts ⓐ<u>while serving as Associate Provost</u> and then Provost at Wayne State University in Detroit, although ⓑ<u>the manuscript finally completed</u> when I stepped down into retirement with time to think more about language change and less about academic administration. ⓒ<u>I very much appreciate</u> the encouragement I have received from Esther Roth and Anke de Looper as well as ⓓ<u>the support provided by Ineke Elskamp</u> and her team, all at John Benjamins. I also appreciate the careful reading of parts of the manuscript by Kavya Davuluri. ⓔ<u>Anonymous readers have been of great help</u>; the comments, suggestions, questions, and – perhaps even more – the criticisms of earlier drafts have helped to shape my thinking and hence the development of this textbook. My husband Geoff Nathan has been a reader, reviewer of all things phonetic and phonological, cheerleader, and all-around support in this undertaking as in everything.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓑ: 'the manuscript finally completed' → 'the manuscript was finally completed' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
