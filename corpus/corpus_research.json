@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T13:11:46.747Z",
+ "updated": "2026-08-18T14:00:55.475Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T14:00:10.931Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 실제 패턴에서 'do not'의 축약형 'don't'가 부정의미를 명확히 전달하는 핵심 요소로 활용됨을 확인. 또한 명사 오류('effect' vs 'effection'), 동사 오류('grow up' vs 'grow'), 관사 오류('a plentiful' vs 'plentiful')가 빈번하게 나타나며, 이는 CEFR B1 수준에서 중점적으로 다루어야 할 문법 항목임을 시사함.",
+   "rule": "CEFR B1 수준 내신 변형문제에서는 부정문에서 'do not'의 축약형 'don't' 사용 여부를 필수적으로 검증하며, 특히 'grow up' (성장하다)과 'grow' (자라다)의 구별, 'a/an' 관사의 생략 오류, 그리고 명사의 복수형/단수형 구별을 오답으로 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T13:11:14.557Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "과거형 동사(needs, take)가 단수 주어(they)나 무인칭 주어(It)에 맞지 않게 쓰이는 오류가 빈발하며, 명사의 복수형 오류(reason→reasons)도 다수 발생한다. 또한 전치사(perpose→purpose)나 접속사(rather than only doing→rather than just doing what you are supposed to)의 오용도 빈번하다.",
    "rule": "단수 주어(they 포함)에는 동사 원형(need)을, 무인칭 주어(It) 뒤에는 조동사(is) + 동사원형(to take) 구조를 적용하여 문법 오류를 방지하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T22:40:55.106Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'명사 + 전치사 + 명사' 구조에서 불필요한 관사(예: 'the carbones')나 복수형 오류('pollutions')가 빈번하며, 'than + the other'는 'than other'로 단순화하는 패턴이 두드러진다.",
-   "rule": "'명사 + 전치사 + 명사' 구조에서 관사를 생략하거나 복수형을 단수로 수정하는 오류를 포함하는 문장을 출제할 때는, 반드시 'the + 복수명사'를 '단수명사'로, 'the other'를 'other'로 수정하는 변형을 포함하라.",
    "sample": [
     "old english",
     "university press",
