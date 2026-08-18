@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T14:00:55.475Z",
+ "updated": "2026-08-18T15:02:29.870Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T15:02:05.426Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'costs'는 복수형으로 쓰이는 경우가 많지만, 'the cost of the product'처럼 특정 단일 제품의 경우 단수형 'cost'가 선호됨. 또한 'has been changed'는 능동태 'has changed'로 축약되는 패턴이 두드러짐.",
+   "rule": "원서 코퍼스 패턴에 따라, 'the cost(s) of [단일 제품]'은 단수형 'cost'를 사용하며, 'have/has been changed'는 능동태 'have/has changed'로 변형하여 오류를 수정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T14:00:10.931Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제 동사와 수동태가 혼용된 오류가 빈번하며, 특히 'be + 과거분사' 형태의 수동태가 '과거시제'로 잘못 쓰이는 패턴이 많다. 또한, 목적어와 동사의 수 일치 오류가 자주 발생한다.",
    "rule": "'be + 과거분사' 형태의 수동태 문장은 과거시제와 혼동되지 않도록 반드시 'be + 과거분사'로만 구성된 수동태 문장으로 출제하며, 동사와 목적어의 수 일치를 반드시 확인한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T23:40:28.795Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거형 동사(needs, take)가 단수 주어(they)나 무인칭 주어(It)에 맞지 않게 쓰이는 오류가 빈발하며, 명사의 복수형 오류(reason→reasons)도 다수 발생한다. 또한 전치사(perpose→purpose)나 접속사(rather than only doing→rather than just doing what you are supposed to)의 오용도 빈번하다.",
-   "rule": "단수 주어(they 포함)에는 동사 원형(need)을, 무인칭 주어(It) 뒤에는 조동사(is) + 동사원형(to take) 구조를 적용하여 문법 오류를 방지하라.",
    "sample": [
     "old english",
     "university press",

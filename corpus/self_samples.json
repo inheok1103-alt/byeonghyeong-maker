@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-18T14:00:55.479Z",
+ "updated": "2026-08-18T15:02:29.875Z",
  "samples": [
+  {
+   "ts": "2026-08-18T14:55:08.415Z",
+   "type": "안내문불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
+    "passage": "One of my friends said he was called for by the state security police, the most powerful police authority in Egypt. A few days later, one of the sentry guards in my village told me that I had to visit a major in the Supreme State Security Police Department in my city. I was scared to death. “I did nothing to do with their business!” I said to my self. I tried to contact some acquaintances to find about that (off the record!), and to find out how far I might have been implicated in some work at variance with their interests. But deplorably enough, nobody told me any thing that could possibly soothe my jitters. Then I said to my self, “ you have to face the music yourself!” And I did. I went to the Headquarters of the State Security Police almost dying of fear. The receptionist kept me waiting for four hours making me",
+    "choices": [
+     "친구가 이집트 국가보안경찰로부터 소환되었다고 말했다",
+     "친구가 이집트 국가보안경찰로부터 소환되지 않았다고 말했다",
+     "나는 두려움에 떨었다",
+     "아무도 내 불안을 달래 줄 말을 해주지 않았다",
+     "나는 국가보안경찰 본부에 직접 방문했다"
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '친구가 이집트 국가보안경찰로부터 소환되었다'는 내용이 직접 언급되어 있으므로(첫 문장 참조) 이 선지는 지문과 일치합니다. 학생이 이 선지를 골랐다면 지문을 제대로 읽고 이해한 것입니다. → 처방: 지문 전체를 차근차근 다시 읽으며, 각 문장이 어떤 의미를 담고 있는지 확인하는 습관을 들입니다.\n③ 진단: 지문에서 'I was scared to death'라는 표현이 나와 두려움을 느꼈음을 명확히 나타내고 있습니다. 학생이 이 선지를 골랐다면 지문의 핵심 감정을 제대로 파악한 것입니다. → 처방: 지문에서 감정 표현이 나오는 부분을 (밑줄 긋기)하며, 그 이유가 무엇인지 한 문장으로 정리해 봅니다.\n④ 진단: 지문에서 'nobody told me any thing that could possibly soothe my jitters'라는 문장이 나와 아무도 불안을 달래 주지 않았다는 내용이 직접 언급됩니다. 학생이 이 선지를 골랐다면 이 부분도 정확히 읽은 것입니다. → 처방: 지문에서 'nobody'가 언급된 부분을 찾아, 그 뒤에 오는 문장과 연결 지어 왜 그런 상황이 벌어졌는지 생각해 봅니다.\n⑤ 진단: 지문에서 'I went to the Headquarters of the State Security Police'라고 직접 방문했음을 밝히고 있습니다. 학생이 이 선지를 골랐다면 지문의 사실 관계를 제대로 확인한 것입니다. → 처방: 지문에서 시간 순서대로 일어난 일들을 정리해 보면서, 어떤 사건이 언제 어떻게 일어났는지 메모하는 연습을 합니다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-18T14:55:34.701Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "One of my friends said ⓐ<u>he was called for by</u> the state security police, the most powerful police authority in Egypt. A few days later, one of the sentry guards in my village told me that I had to visit a major in the Supreme State Security Police Department in my city. I was scared to death. “ⓑ<u>I did nothing to do with</u> their business!” I said to my self. I tried to contact some acquaintances ⓒ<u>to find about that</u> (off the record!), and to find out how far I might have been implicated in some work at variance with their interests. But deplorably enough, ⓓ<u>nobody told me any thing</u> that could possibly soothe my jitters. Then I said to my self, “ you have to face the music yourself!” And I did. I went to the Headquarters of the State Security Police almost dying of fear. The receptionist kept me waiting for four hours ⓔ<u>making me</u>",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓑ: 'I did nothing to do with' → 'I had nothing to do with' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-18T13:58:39.742Z",
    "type": "네모어법ABC",
@@ -297,75 +351,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'C and T simultaneously probe and attract 'who' to their respective specifiers.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: C 와 T 가 'who'를 조사하기 전에 각자의 역할을 정하려고 했다고 오독했는데, 지문은 C 와 T 가 동시에 'who'를 조사하여 각자의 지정 위치로 끌어오려는 과정(동시 탐색·끌어오기)을 설명하고 있음. → 처방: 문법 요소의 탐색과 끌어오기는 '동시'에 이뤄지며, 각 역할(예: C 는 interrogative goal, T 는 case·agreement)은 'who'를 끌어온 후에 정해진다는 점을 기억할 것.\n② 진단: C 와 T 가 각각 'who'를 자신의 지정 위치로 끌어오려고 했다고 오독했는데, 지문은 두 요소(light-verb, T-affix)가 'who'를 동시에 끌어오며, C 는 spec-C, T 는 spec-T 로 각각 끌어온다는 점을 강조하고 있음. → 처방: 문법 용어(spec-C, spec-T)의 의미를 정확히 파악하고, '동시'라는 키워드를 놓치지 않도록 주의할 것.\n③ 진단: C 와 T 가 모든 문법 요소를 동시에 조사하여 문장을 완성하려고 했다고 오독했는데, 지문은 오직 'who'라는 특정 목표어(goal)에만 초점을 맞추고 있으며, 문장 전체를 동시에 완성하는 내용은 없음. → 처방: 문법 분석에서 '목표어(goal)'의 개념을 정확히 이해하고, 지문이 특정 요소('who')에만 집중한다는 점을 파악할 것.\n④ 진단: C 와 T 가 'who'를 조사할 때 반드시 순차적으로 처리해야 한다고 오독했는데, 지문은 두 요소가 동시에 'who'를 끌어오며, 순차적 처리가 불가능한 이유(Invisibility Condition 등)를 설명하고 있음. → 처방: 문법에서 '동시 처리'의 중요성을 인식하고, 순차적 처리가 오히려 문법 규칙을 위반할 수 있음을 기억할 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: C and T simultaneously probe and attract ]"
-   }
-  },
-  {
-   "ts": "2026-08-18T09:50:38.841Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/2 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the necessity of expanding vocabulary for effective language use",
-     "the importance of studying word definitions in context",
-     "the ability to master language through vocabulary expansion",
-     "the absolute requirement of knowing every single word in a language",
-     "the possibility of achieving proficiency without vocabulary mastery"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The importance of mastering a large vocabulary for language proficiency'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The importance of mastering a large vocabulary for language proficiency]\n[오답 진단·처방]\n① 진단: 지문에서 '단어 100개를 배웠으니 남은 일도 열심히 하면 된다'는 내용만 보고 '어휘 확장이 언어 능력 향상에 중요하다'고 오해한 것 같다. 하지만 지문은 단순히 '단어 100개를 배웠다'는 사실만 언급할 뿐, '효과적인 언어 사용을 위한 어휘 확장의 필요성'을 주제로 삼고 있지 않다. → 처방: 지문을 다시 읽고, '단어 100개를 배운 후 남은 일도 열심히 하면 된다'는 문장이 '어휘 확장을 통한 언어 숙달'을 강조한다는 점을 정확히 파악하자.\n② 진단: '단어 정의를 공부하라'는 지문 속 'REVIEW WORDS DEFINITIONS' 부분만 보고 '단어 정의를 문맥 속에서 공부해야 한다'고 오해한 것 같다. 하지만 지문은 단어 정의를 단순히 '매칭하기' 형식으로 제시했을 뿐, '문맥 속에서의 정의 공부'를 주제로 삼고 있지 않다. → 처방: 지문 전체를 다시 읽고, '단어 정의를 문맥 속에서 공부해야 한다'는 주제가 아니라 '단어 100개를 배운 후 남은 일도 열심히 하면 된다'는 내용이 주제임을 확인하자.\n④ 진단: '모든 단어를 알아야 한다'는 지문 속 'master most of the challenging words'라는 표현을 '모든 단어를 알아야 한다'로 과장하여 오해한 것 같다. 지문은 '어려운 단어 대부분을 숙달할 수 있다'고만 말하고 있지, '모든 단어를 알아야 한다'는 절대적인 요구를 담고 있지 않다. → 처방: 지문에서 'most of the challenging words'가 '모든 단어'를 의미하지 않는다는 점을 기억하고, '절대적인 요구'라는 표현이 과장된 것임을 인식하자.\n⑤ 진단: '어휘 숙달 없이도 언어 숙달이 가능하다'는 지문 속 'master most of the challenging words'라는 표현을 '어휘 숙달 없이도 가능하다'로 오해한 것 같다. 지문은 '어휘 확장을 통해 언어 숙달이 가능하다'고 말하고 있지, '어휘 숙달 없이도 가능하다'는 가능성을 언급하지 않는다. → 처방: 지문에서 '어휘 확장을 통해 언어 숙달이 가능하다'는 내용이 주제임을 확인하고, '어휘 숙달 없이도 가능하다'는 표현이 지문과 맞지 않음을 인식하자."
-   }
-  },
-  {
-   "ts": "2026-08-18T09:51:03.706Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① You have covered the first one hundred words in the book.\n② Take the following quiz by matching the best possible definition with the word you have studied.\n③ to scold, warn 6.\n④ *Reminder: Record answers on a sheet of paper.\n⑤ WEEK 5 DAY 5 REVIEW Congratulations!\n⑥ to permit, to put up with 8.\n⑦ REVIEW WORDS DEFINITIONS 1.\n⑧ With the same diligence you should be able to tackle the remaining work and to master most of the challenging words.\n⑨ cannot be moved by persuasion, inflexible 3.",
-    "choices": [
-     "⑤-①-⑧-②-④-⑦-⑨-③-⑥",
-     "①-⑤-⑧-②-④-⑦-⑨-③-⑥",
-     "⑤-⑧-①-②-④-⑦-⑨-③-⑥",
-     "⑤-①-③-④-②-⑥-⑦-⑧-⑨",
-     "⑤-②-⑧-⑦-①-⑨-③-④-⑥"
-    ],
-    "answer": 1,
-    "explanation": "정답 배열은 ⑤-①-⑧-②-④-⑦-⑨-③-⑥. 흐름: ⑤ → ① → ⑧ → ② → ④ → ⑦ → ⑨ → ③ → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ⑤(축하 인사)가 먼저 나와야 하는데 ①(공부한 분량)이 먼저 나와서 흐름이 깨졌다. 'WEEK 5 DAY 5 REVIEW Congratulations!'는 리뷰의 시작을 알리는 말이므로 맨 앞에 와야 한다. → 처방: 글의 맨 앞은 항상 '리뷰 시작'을 알리는 문장(⑤)이 오는지 먼저 확인해라.\n③ 진단: ①(공부한 분량)이 ⑧(남은 공부와 숙제)보다 먼저 나와야 하는데 반대 순서로 배치되었다. 'You have covered the first one hundred words'는 이미 한 일이고, 'to tackle the remaining work'는 앞으로 할 일이므로 순서가 바뀌면 안 된다. → 처방: 이미 한 일(①)과 앞으로 할 일(⑧)의 순서를 반대로 배치하지 말고, 시간 흐름대로 써라.\n④ 진단: ②(퀴즈 지시)가 ④(기록하라는 리마인더)보다 먼저 나와야 하는데 반대 순서로 배치되었다. 퀴즈를 먼저 지시한 다음에 기록하라고 알려줘야 자연스럽다. → 처방: 지시가 먼저 오고, 그다음에 주의사항(기록)이 오는지 확인해라.\n⑤ 진단: ⑦(정의 목록)이 ⑨(단어 뜻)보다 먼저 나와야 하는데 반대 순서로 배치되었다. 단어 뜻(⑨)을 먼저 알려주고, 그다음에 정의 목록(⑦)을 확인하는 흐름이어야 한다. → 처방: 단어 뜻(⑨)을 먼저 확인한 다음에 정의 목록(⑦)을 보는지 순서를 확인해라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
