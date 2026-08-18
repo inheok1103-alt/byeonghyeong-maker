@@ -1,7 +1,15 @@
 {
- "updated": "2026-08-17T23:47:15.919Z",
+ "updated": "2026-08-18T01:53:15.562Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문장에서 동사구의 목적어와 전치사 구성을 명확히 하여 중복이나 모호성을 제거하고, 문맥에 맞는 자연스러운 어휘를 선택해야 한다.",
+   "src": "자가학습:어법수정",
+   "score": 65,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-18T01:52:38.856Z"
+  },
   {
    "rule": "모든 선택지는 지문의 핵심 개념(예: selective transfer of natural laws, hypothetical deviations)을 직접 반영하여, 모호한 표현 대신 구체적이고 차별화된 언어로 구성하라.",
    "src": "자가학습:주제",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-14T22:43:17.964Z"
-  },
-  {
-   "rule": "정답 선지와 오답 선지 모두 원문의 '주관적 기대감'과 '구문적 구조'(PP 보어, remain + 부정적 인자)를 반드시 유지해야 하며, 'hope'의 감정적 의미를 'possibility'나 'uncertainty'로 대체하지 말고 그대로 반영해야 한다.",
-   "src": "자가학습:밑줄함의",
-   "score": 85,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-14T21:42:42.062Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
