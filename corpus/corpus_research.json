@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T19:44:28.091Z",
+ "updated": "2026-08-18T20:43:47.794Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T20:43:22.129Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'do the same'은 'do as well'로, 'could not live'은 'would not be alive'로, 'are make'는 'make'로 수정되는 패턴이 빈번하다. 이는 동사구와 조동사/시제의 오용에서 비롯된 오류로, 연어와 문법 규칙의 결합 오류가 특징이다.",
+   "rule": "'~ the same' 구문은 '~, and ~ does as well'로, 'could not live'은 'would not be alive'로, 'are + 동사원형'은 '동사원형'으로 수정하는 오류 유형을 출제 시 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T19:43:58.486Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 '명사구 + 동사 + 목적어' 구조가 빈번하며, 특히 관사(a/the)나 동사변화(3인칭 단수 현재형, 진행형) 오류가 자주 발생함을 확인했다.",
    "rule": "원서 코퍼스 패턴을 반영하여, '명사구 + 동사(3인칭 단수 현재형) + 목적어' 구조의 문장을 출제할 때에는 관사(a/the) 유무와 동사의 시제(현재형 vs 진행형)를 반드시 확인하여 오류를 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T07:08:24.500Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구 내 관사·형용사 순서 오류와 접속사 생략 오류가 빈번하며, 특히 'such a + 명사' 구문과 'that' 생략 오류가 두드러진다. 또한 과거/현재 시제 혼용과 직접목적어 생략도 자주 발생한다.",
-   "rule": "'such a + 명사' 구문에서 관사가 'a'로 고정되어야 하며, 'that'을 생략하지 말고 접속사(that/which 등)를 반드시 삽입하여 문법적 완결성을 확보하라.",
    "sample": [
     "old english",
     "university press",
