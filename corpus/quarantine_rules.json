@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-18T09:02:19.215Z",
+ "updated": "2026-08-18T09:52:16.084Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 지문의 핵심 활동(예: 복습,quiz 등)과 직접적으로 연결된 주제를 묻되, 선지 간 차별성은 높이고 지나치게 추상적이거나 극단적인 보기는 제외하여야 한다.",
+   "src": "자가학습:주제",
+   "score": 65,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-18T09:50:09.694Z"
+  },
+  {
+   "rule": "모든 출제에서 핵심 정보(핵심 단어·수치·행동 지시)를 누락하지 않으며, 자연스럽고 완결된 문장으로 재구성하라.",
+   "src": "자가학습:서술형(자유)",
+   "score": 68,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-18T09:51:39.696Z"
+  },
   {
    "rule": "모든 유형의 문제에서 지문, 선지, 발문이 유기적으로 연계되어 유형과 내용이 일치하며, 선지는 지문의 핵심 논리를 구체적이고 비중복적으로 반영해야 한다.",
    "src": "자가학습:심경변화",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-15T05:46:09.217Z"
-  },
-  {
-   "rule": "지문은 EBS/수능 내신 수준에 맞춰 언어학 이론의 복잡성을 낮추고, 선지는 4~5단어 내외로 통일하며, 발문은 '빈칸에 들어갈 말로 가장 적절한 것은? (지문의 맥락상)'으로 수정하여 조건을 명확히 한다.",
-   "src": "자가학습:빈칸(어구)",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-15T05:46:45.496Z"
-  },
-  {
-   "rule": "정답의 유일성을 보장하고 어휘 난이도를 조절하기 위해, 영영풀이는 'form, shape, bodily proportions'가 아닌 'a distinctive attribute or aspect of something'으로 재구성하고, 정답을 'feature'로 유지하거나, 첫 글자 조건을 'f'로 유지하면서도 'form'과 'feature'의 혼동을 방지하기 위해 영영풀이를 'a typical quality or important part of something'으로 재정의하라.",
-   "src": "자가학습:영영풀이단어쓰기",
-   "score": 58,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-15T05:47:37.060Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

@@ -1,6 +1,110 @@
 {
- "updated": "2026-08-18T09:02:19.220Z",
+ "updated": "2026-08-18T09:52:16.089Z",
  "samples": [
+  {
+   "ts": "2026-08-18T09:50:38.841Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/2 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the necessity of expanding vocabulary for effective language use",
+     "the importance of studying word definitions in context",
+     "the ability to master language through vocabulary expansion",
+     "the absolute requirement of knowing every single word in a language",
+     "the possibility of achieving proficiency without vocabulary mastery"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The importance of mastering a large vocabulary for language proficiency'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The importance of mastering a large vocabulary for language proficiency]\n[오답 진단·처방]\n① 진단: 지문에서 '단어 100개를 배웠으니 남은 일도 열심히 하면 된다'는 내용만 보고 '어휘 확장이 언어 능력 향상에 중요하다'고 오해한 것 같다. 하지만 지문은 단순히 '단어 100개를 배웠다'는 사실만 언급할 뿐, '효과적인 언어 사용을 위한 어휘 확장의 필요성'을 주제로 삼고 있지 않다. → 처방: 지문을 다시 읽고, '단어 100개를 배운 후 남은 일도 열심히 하면 된다'는 문장이 '어휘 확장을 통한 언어 숙달'을 강조한다는 점을 정확히 파악하자.\n② 진단: '단어 정의를 공부하라'는 지문 속 'REVIEW WORDS DEFINITIONS' 부분만 보고 '단어 정의를 문맥 속에서 공부해야 한다'고 오해한 것 같다. 하지만 지문은 단어 정의를 단순히 '매칭하기' 형식으로 제시했을 뿐, '문맥 속에서의 정의 공부'를 주제로 삼고 있지 않다. → 처방: 지문 전체를 다시 읽고, '단어 정의를 문맥 속에서 공부해야 한다'는 주제가 아니라 '단어 100개를 배운 후 남은 일도 열심히 하면 된다'는 내용이 주제임을 확인하자.\n④ 진단: '모든 단어를 알아야 한다'는 지문 속 'master most of the challenging words'라는 표현을 '모든 단어를 알아야 한다'로 과장하여 오해한 것 같다. 지문은 '어려운 단어 대부분을 숙달할 수 있다'고만 말하고 있지, '모든 단어를 알아야 한다'는 절대적인 요구를 담고 있지 않다. → 처방: 지문에서 'most of the challenging words'가 '모든 단어'를 의미하지 않는다는 점을 기억하고, '절대적인 요구'라는 표현이 과장된 것임을 인식하자.\n⑤ 진단: '어휘 숙달 없이도 언어 숙달이 가능하다'는 지문 속 'master most of the challenging words'라는 표현을 '어휘 숙달 없이도 가능하다'로 오해한 것 같다. 지문은 '어휘 확장을 통해 언어 숙달이 가능하다'고 말하고 있지, '어휘 숙달 없이도 가능하다'는 가능성을 언급하지 않는다. → 처방: 지문에서 '어휘 확장을 통해 언어 숙달이 가능하다'는 내용이 주제임을 확인하고, '어휘 숙달 없이도 가능하다'는 표현이 지문과 맞지 않음을 인식하자."
+   }
+  },
+  {
+   "ts": "2026-08-18T09:51:03.706Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① You have covered the first one hundred words in the book.\n② Take the following quiz by matching the best possible definition with the word you have studied.\n③ to scold, warn 6.\n④ *Reminder: Record answers on a sheet of paper.\n⑤ WEEK 5 DAY 5 REVIEW Congratulations!\n⑥ to permit, to put up with 8.\n⑦ REVIEW WORDS DEFINITIONS 1.\n⑧ With the same diligence you should be able to tackle the remaining work and to master most of the challenging words.\n⑨ cannot be moved by persuasion, inflexible 3.",
+    "choices": [
+     "⑤-①-⑧-②-④-⑦-⑨-③-⑥",
+     "①-⑤-⑧-②-④-⑦-⑨-③-⑥",
+     "⑤-⑧-①-②-④-⑦-⑨-③-⑥",
+     "⑤-①-③-④-②-⑥-⑦-⑧-⑨",
+     "⑤-②-⑧-⑦-①-⑨-③-④-⑥"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ⑤-①-⑧-②-④-⑦-⑨-③-⑥. 흐름: ⑤ → ① → ⑧ → ② → ④ → ⑦ → ⑨ → ③ → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ⑤(축하 인사)가 먼저 나와야 하는데 ①(공부한 분량)이 먼저 나와서 흐름이 깨졌다. 'WEEK 5 DAY 5 REVIEW Congratulations!'는 리뷰의 시작을 알리는 말이므로 맨 앞에 와야 한다. → 처방: 글의 맨 앞은 항상 '리뷰 시작'을 알리는 문장(⑤)이 오는지 먼저 확인해라.\n③ 진단: ①(공부한 분량)이 ⑧(남은 공부와 숙제)보다 먼저 나와야 하는데 반대 순서로 배치되었다. 'You have covered the first one hundred words'는 이미 한 일이고, 'to tackle the remaining work'는 앞으로 할 일이므로 순서가 바뀌면 안 된다. → 처방: 이미 한 일(①)과 앞으로 할 일(⑧)의 순서를 반대로 배치하지 말고, 시간 흐름대로 써라.\n④ 진단: ②(퀴즈 지시)가 ④(기록하라는 리마인더)보다 먼저 나와야 하는데 반대 순서로 배치되었다. 퀴즈를 먼저 지시한 다음에 기록하라고 알려줘야 자연스럽다. → 처방: 지시가 먼저 오고, 그다음에 주의사항(기록)이 오는지 확인해라.\n⑤ 진단: ⑦(정의 목록)이 ⑨(단어 뜻)보다 먼저 나와야 하는데 반대 순서로 배치되었다. 단어 뜻(⑨)을 먼저 알려주고, 그다음에 정의 목록(⑦)을 확인하는 흐름이어야 한다. → 처방: 단어 뜻(⑨)을 먼저 확인한 다음에 정의 목록(⑦)을 보는지 순서를 확인해라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-18T09:51:30.469Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "WEEK 5 DAY 5 REVIEW Congratulations! You have (A) [covered the / covering the] first one hundred words in the book. With the same diligence you should be able to tackle the remaining work and (B) [mastering / to master] most of the challenging words. Take the following quiz by matching the best possible definition with the word you have studied. *Reminder: (C) [Recording answers / Record answers] on a sheet of paper. REVIEW WORDS DEFINITIONS 1.acrimonious a. double-dealing 2.admonish b. cannot be moved by persuasion, inflexible 3.clandestine c. silly 4.concur d. flourishing 5.construe e. to scold, warn 6.culprit f. harassed 7.distraught g. to permit, to put up with 8.duplicity h. extract 9.duress i. damaging, harmful 10.egregious j. outstanding for undesirable quality 11.elicit k. notorious 12.ethics l. force, coercion 13.flagrant m. exemption 14.impunity n. moral philosophy 15.inane o. agree 16.inexorable p. hidden, secret 17.paucity q. to interpret 18.pernicious r. one who commits a crime 19.rampant s. shortage 20.tolerate t. caustic, bitter",
+    "choices": [
+     "(A) covered the - (B) mastering - (C) Record answers",
+     "(A) covering the - (B) to master - (C) Record answers",
+     "(A) covered the - (B) to master - (C) Record answers",
+     "(A) covered the - (B) mastering - (C) Recording answers",
+     "(A) covering the - (B) mastering - (C) Recording answers"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) covered the - (B) to master - (C) Record answers. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A) You have covered the first one hundred words'는 완료 시제를 써야 하는데, 학생은 동명사 'covering the'을 골라 동사의 시제 오류를 냈다. (B) 'mastering'은 'be able to' 다음에 동사원형이 와야 하는데 동명사를 써서 오류가 났다. (C)는 명령형 'Record answers'가 맞는데 'Recording answers'로 동명사를 써서 오류가 났다. → 처방: 완료 시제(현재완료)에는 'have + 과거분사'를 쓰고, 'be able to' 뒤에는 동사원형을 써야 한다. 명령형은 동사원형으로 쓴다는 점을 기억하자.\n② 진단: 지문에서 '(A) You have covered the first one hundred words'는 완료 시제를 써야 하는데, 학생은 동명사 'covering the'을 골라 동사의 시제 오류를 냈다. (B) 'to master'는 'be able to' 다음에 동사원형이 와야 하는데 'to master'는 옳지만 (A)의 오류로 전체 선택지가 틀렸다. → 처방: 완료 시제(현재완료)에는 'have + 과거분사'를 써야 한다는 점을 기억하고, 'be able to' 뒤에는 동사원형을 써야 한다는 규칙을 다시 확인하자.\n④ 진단: 지문에서 '(C) Record answers'는 명령형으로 동사원형을 써야 하는데, 학생은 'Recording answers'로 동명사를 써서 오류가 났다. (A)와 (B)는 정답과 같아도 (C)에서 오류가 났다. → 처방: 명령형은 동사원형으로 쓴다는 점을 기억하고, 동명사와 명령형을 구분해서 사용하자.\n⑤ 진단: 지문에서 '(A) You have covered the first one hundred words'는 완료 시제를 써야 하는데, 학생은 동명사 'covering the'을 골라 동사의 시제 오류를 냈다. (B) 'mastering'은 'be able to' 다음에 동사원형이 와야 하는데 동명사를 써서 오류가 났다. (C) 'Recording answers'는 명령형이 아니라 동명사 형태로 오류가 났다. → 처방: 완료 시제(현재완료)에는 'have + 과거분사'를 쓰고, 'be able to' 뒤에는 동사원형을 써야 하며, 명령형은 동사원형으로 쓴다는 점을 다시 공부하자.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-18T07:57:51.816Z",
    "type": "어휘(밑줄)",
@@ -268,77 +372,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] German shows mixed head positions, with prepositions, determiners, and complementisers preceding complements but verbs following them.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-18T03:59:56.096Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "V – noun ? This is fortunate as there is one more thematic category left to be included into the system: the (A) [prepositions / postpositions]. Thus we can claim that prepositions fill this slot: (29) prepositions = [–F, –N, –V] However, this cannot be put down to good fortune. After all, categorising elements in terms of these features has consequences concerning what other categories are related to or different from these elements. Note that the feature combination in (29) predicts that while prepositions differ from (B) [pronouns / nouns] in that they are [–N], they are similar to nouns in that they are [–V]. Similarly, prepositions differ from (C) [verbs / adjectives] in being [–V], but they share the [–N] feature with them. Thus prepositions are predicted to be similar to nouns and verbs, but in a different way to how adjectives are similar to these categories. Indeed, while prepositions do not have similar distribution patterns as verbs, as do adjectives, they share another property with verbs. Consider the following observations: (30) a see him",
-    "choices": [
-     "(A) prepositions - (B) nouns - (C) verbs",
-     "(A) postpositions - (B) nouns - (C) verbs",
-     "(A) prepositions - (B) pronouns - (C) verbs",
-     "(A) prepositions - (B) pronouns - (C) adjectives",
-     "(A) prepositions - (B) nouns - (C) adjectives"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) prepositions - (B) nouns - (C) verbs. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 ‘prepositions’를, ‘(B)’에서 ‘nouns’를, ‘(C)’에서 ‘verbs’를 골랐지만, 지문에서 (29) prepositions = [–F, –N, –V]로 설명한 후 ‘they are similar to nouns in that they are [–V]’라고 하여 ‘nouns’가 아닌 ‘pronouns’를 써야 함을 놓침. → 처방: ‘(B)’에서 ‘nouns’를 ‘pronouns’로 바꾸어 읽기: ‘nouns’는 [+N]이므로 [–V]와 맞지 않음.\n② 진단: ‘(A)’에서 ‘postpositions’를 골랐지만 지문 첫머리 ‘prepositions’를 ‘postpositions’로 잘못 읽음. 또한 ‘(B)’와 ‘(C)’에서 ‘nouns’와 ‘verbs’를 골랐으나 ‘pronouns’가 맞음. → 처방: ‘(A)’는 ‘prepositions’와 ‘postpositions’를 구분해 읽기: 지문에서 ‘prepositions’를 다루므로 ‘prepositions’를 선택.\n④ 진단: ‘(C)’에서 ‘adjectives’를 골랐지만 지문에서 ‘prepositions differ from adjectives in being [–V]’라고 하여 ‘adjectives’는 [–V]가 아니라 [+N]임을 확인해야 함. → 처방: ‘(C)’는 ‘verbs’와 ‘adjectives’를 비교해 ‘prepositions’가 [–V]라는 점에서 ‘verbs’와 비슷하다는 설명을 따라 ‘verbs’를 선택.\n⑤ 진단: ‘(B)’에서 ‘nouns’를, ‘(C)’에서 ‘adjectives’를 골랐지만 ‘nouns’는 [+N]이므로 [–N]인 ‘prepositions’와 맞지 않고, ‘adjectives’는 [+N]이므로 [–V]와 맞지 않음. → 처방: ‘(B)’와 ‘(C)’는 ‘pronouns’와 ‘verbs’를 각각 선택: ‘pronouns’는 [–N]이고 ‘verbs’는 [–V]로 ‘prepositions’와 같은 특징을 가짐."
-   }
-  },
-  {
-   "ts": "2026-08-18T03:16:50.433Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Two other morphological criteria for adjective status are also sometimes useful. First, an -ing word is signalled as an adjective if it begins with the negative prefix un-. Thus unyielding is an adjective because the prefix un- negates the whole of the rest of the word: un- + yielding; on the other hand, it cannot be a verb, as there is no verb *unyield. (Note, incidentally, that there are verbs such as unwind/unwinding, where the un- is a different prefix: it is reversative rather than negative in meaning.) Second, an -ing word is an adjective if it can be converted into an adverb by the addition of an -ly, as in surprisingly, appallingly. 2.4 Survey of function words Function words can be broadly grouped as follows according to the units they are most closely related to: Grammatical unit Function word class noun phrase determiners, pronouns, numerals, prepositions verb phrase primary auxiliaries, modal auxiliaries, adverbial particles phrase/clause coordinators clause subordinators, wh-words, the negator not, existential there, the infinitive marker to",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T03:17:10.271Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 의심 3건",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 9,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: -ing 단어는 un-로 시작하거나 -ly로 끝나는 경우 형용사가 될 수 있습니다.\n주어진 단어: ( ends / can / be / or / an / -ly / word / -ing / An / if / starts / un- / with / adjective / with / it )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] An -ing word can be an adjective if it starts with un- or ends with -ly.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
