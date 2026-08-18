@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T16:55:34.017Z",
+ "updated": "2026-08-18T17:47:16.562Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T17:46:39.540Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거시제와 비교급 오류가 공통적으로 나타나며, 문법적 단순화(tense/number 일치, 비교급 형태) 패턴이 반복된다. 명사·동사 형태의 오류가 빈번하게 결합되어 출제 가능하다.",
+   "rule": "'be동사 + ing 형태(진행형)나 비교급(-er/smaller) 오류가 포함된 문장은, 해당 동사/형용사의 기본형(원형/단순현재, 비교급)으로 단순화하는 규칙을 적용하여 오류를 교정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T16:55:07.635Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "원서 코퍼스의 최빈 연어 패턴에서 'old english', 'english grammar', 'english language' 등 'english'가 포함된 연어가 다수 관찰된다. 또한 'present tense', 'past tense'와 같은 시제 관련 연어도 빈번히 등장한다.",
    "rule": "원서 코퍼스에서 'english'가 포함된 연어(예: 'english grammar', 'english language')가 빈번히 사용되므로, 내신 변형문제에서는 'english'가 포함된 연어와 시제 오류(present/past tense 혼동)를 결합한 문항을 설계하라. 예를 들어, 'The grammar rules in English are more complex than in Korean.'에서 'are'를 'were'로 오용하게 하거나, 'He study English grammar every day.'에서 'study'를 'studies'로 오용하게 하는 문제가 가능하다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T04:04:12.336Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거형·현재형 동사(are not agree → may not agree)나 단수·복수 명사(reasons → these reasons) 오류가 연어 패턴과 결합된 경우가 많다. 또한 전치사나 접속사(however → but) 오류도 연어 기반으로 자주 발생한다.",
-   "rule": "연어 기반 오답 설계 시, 'are not agree'(X) → 'may not agree'(O), 'for this reasons'(X) → 'for these reasons'(O)처럼 해당 연어의 표준 패턴(동사형, 수 일치, 전치사/접속사 사용)을 위반한 오답을 1개 이상 포함시킨다.",
    "sample": [
     "old english",
     "university press",

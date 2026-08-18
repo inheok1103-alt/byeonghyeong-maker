@@ -1,6 +1,31 @@
 {
- "updated": "2026-08-18T16:55:34.021Z",
+ "updated": "2026-08-18T17:47:16.566Z",
  "samples": [
+  {
+   "ts": "2026-08-18T17:46:30.105Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "I like them . Other phrase types, and even clauses, can be replaced by proforms too, as the following sentences demonstrate: (66) Th ey say that Wayne ⓐ<u>is very unhappys</u> and so he is. (67) Our neighbours will go on holiday on Sunday , and we ⓑ<u>will leave then too</u>. (68) Tim ⓒ<u>sat on the couchs</u> and stayed there . (69) Janet drove her car too fast , and Sam ⓓ<u>rode his bikes likewise</u> . (70) He believes that politics is a dirty game . We all believe that . (71) He said that ⓔ<u>the operation will be successful</u> . I certainly hope so . In (66) the AP very unhappy has been replaced by so , whereas in (67) and (68) then and there replace the PPs on Sunday and on the couch , respectively. In (69) likewise replaces the AdvP too fast , and in (70) and (71) that and so replace clauses. VPs too can be replaced, as we will see in Section 12.2.2. EXERCISE Replace the noun phrase constituents in the following sentences with pronouns: (63) The boys saw six blue Rolls-Royces. (64) Harriet sold her computer to my friends from Edinburgh.",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 3,
+    "explanation": "틀린 곳은 ⓐ(is very unhappys → is very unhappy), ⓒ(sat on the couchs → sat on the couch), ⓓ(rode his bikes likewise → rode his bike likewise) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘어법상 틀린 부분이 1개’라고 판단한 이유는 ‘The boys saw six blue Rolls-Royces.’에서 ‘Rolls-Royces’를 복수형으로 쓴 것이 틀렸다고 오해했을 수 있습니다. 그러나 ‘Rolls-Royce’는 고유명사이므로 복수형으로 써도 맞습니다. → 처방: ‘Rolls-Royce’는 고유명사이므로 복수형으로 써도 문제없다는 점을 기억하세요. ‘six blue Rolls-Royces’는 옳은 표현입니다.\n② 진단: ‘Harriet sold her computer to my friends from Edinburgh.’에서 ‘to my friends’를 ‘to them’으로 대체할 때 ‘from Edinburgh’를 빼먹고 ‘them’만 썼다고 오해했을 수 있습니다. 그러나 ‘to my friends from Edinburgh’는 ‘to them’으로 대체할 수 없습니다. → 처방: ‘to my friends from Edinburgh’를 ‘to them’으로 대체할 수 없다는 점을 기억하세요. ‘to them’은 ‘to my friends’를 완전히 대체하지 못합니다.\n④ 진단: ‘어법상 틀린 부분이 4개’라고 판단한 이유는 ‘(63)’과 ‘(64)’에서 각각 한 곳씩 틀렸다고 생각했을 수 있습니다. 그러나 ‘(63)’은 옳고, ‘(64)’는 ‘to my friends’를 ‘to them’으로 대체할 수 없다는 점에서 틀렸습니다. → 처방: ‘to my friends’를 ‘to them’으로 대체할 수 없다는 점을 기억하세요. ‘them’은 ‘my friends’를 완전히 대체하지 못합니다.\n⑤ 진단: ‘어법상 틀린 부분이 5개’라고 판단한 이유는 모든 문장에 틀린 곳이 있다고 오해했을 수 있습니다. 그러나 ‘(63)’은 옳고, ‘(64)’는 한 곳만 틀렸습니다. → 처방: ‘Rolls-Royce’는 고유명사이므로 복수형으로 써도 문제없다는 점을 기억하세요. ‘six blue Rolls-Royces’는 옳은 표현입니다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-18T16:49:49.590Z",
    "type": "안내문일치",
@@ -316,40 +341,6 @@
     ],
     "answer": 5,
     "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘(A)→(C)→(B)’는 (A)에서 ‘Fillmore 의 예시’를 먼저 소개한 뒤 (C)에서 ‘단순 문장’에서 ‘복합 문장’으로 확장한다는 흐름을 오해한 결과로 보임. (C)는 ‘단순 문장’에서 ‘복합 문장’으로 나아가는 ‘개요’ 역할을 하는데, (A)는 ‘예시’로 (C) 뒤에 오면 흐름이 자연스러움. → 처방: ‘개요→예시→심화’ 순서가 아니라 ‘예시→개요→심화’로 흐름을 잡아야 함을 기억할 것.\n② 진단: ‘(B)→(A)→(C)’는 (B)의 ‘텍스트 일관성’ 개념을 먼저 설명한 뒤 (A)에서 ‘예시’를 보여주려는 의도로 보임. 그러나 (A)는 ‘Fillmore 의 예시’로 (B)의 ‘원리’보다 앞서 나와야 논리적 흐름이 맞음. → 처방: ‘원리→예시→확장’의 순서가 아니라 ‘예시→원리→확장’임을 확인하고, 텍스트의 ‘시작’은 ‘예시’로 잡아야 함.\n③ 진단: ‘(B)→(C)→(A)’는 (B)에서 ‘텍스트 일관성’을 설명한 뒤 (C)에서 ‘단순 문장→복합 문장’으로 나아가는 ‘개요’를 제시한 다음 (A)에서 ‘예시’를 보여주려는 오해로 보임. (A)는 ‘예시’로 (C)보다 먼저 나와야 함. → 처방: ‘원리→개요→예시’의 순서가 아니라 ‘예시→원리→개요’의 흐름을 기억할 것.\n④ 진단: ‘(C)→(A)→(B)’는 (C)에서 ‘단순 문장→복합 문장’으로 나아가는 ‘개요’를 먼저 제시한 뒤 (A)에서 ‘예시’를, (B)에서 ‘원리’를 설명하려는 오해로 보임. (B)는 ‘원리’를 설명하는 글이므로 (A) 다음에 나와야 함. → 처방: ‘개요→예시→원리’의 순서가 아니라 ‘예시→원리→개요’의 흐름을 명확히 구분할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T11:43:13.835Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Page 58 The possible worlds analysis reviewed so far captures two key properties of modal sentences. First, the use of possible worlds captures the fact that modal sentences are about hypothetical states of affairs, and not simply descriptive of actual reality. Secondly, the use of existential and universal quantification gives an elegant account of the way that necessity can be defined in terms of possibility and negation, and possibility can be defined in terms of necessity and negation, as reviewed in the next section. 3.2.1 Interdefinability with Negation Necessity and possibility are opposed in such a way that each can be paraphrased using the other, with negation, as shown in (15). English sentences to illustrate these patterns are given in (16)-(18). They don’t sound equally natural, and it isn’t always possible to negate a sentence by simply adding not. < previous page page_58 next page >\n\n─────────\n[요약문] The analysis of modal sentences reveals their reliance on (A) and (B) to represent hypothetical scenarios and logical interdependence.",
-    "choices": [
-     "(A) hypothetical constructs … (B) existential quantification",
-     "(A) actual states … (B) linguistic patterns",
-     "(A) logical interrelations … (B) descriptive accuracy",
-     "(A) hypothetical constructs … (B) logical interrelations",
-     "(A) definitional equivalence … (B) negation"
-    ],
-    "answer": 4,
-    "explanation": "(A) hypothetical constructs / (B) logical interrelations 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A) hypothetical constructs'는 맞지만 '(B) existential quantification'은 틀렸다. 지문은 'existential and universal quantification'이 'necessity 와 possibility 의 정의 가능성'을 설명한다고 했는데, 'existential quantification'만으로는 '논리적 상호의존성'을 온전히 담아내지 못한다. → 처방: 지문 2문단의 'existential and universal quantification'을 보고 'existential quantification'만으로 요약하지 말고, '논리적 상호의존성'을 뜻하는 'logical interrelations'을 떠올려야 한다.\n② 진단: '(A) actual states'는 지문이 'hypothetical states of affairs'라고 말한 것과 반대다. 또한 '(B) linguistic patterns'은 지문에서 다루는 '논리적 정의 가능성'과는 무관한 '언어적 패턴'을 뜻하므로 오해한 것이다. → 처방: 지문 1문단의 'hypothetical states of affairs'와 2문단의 'necessity 와 possibility 의 정의 가능성'을 정확히 짚고, 'actual states'나 'linguistic patterns' 같은 오개념을 버려야 한다.\n③ 진단: '(A) logical interrelations'은 지문에서 다루는 'necessity 와 possibility 의 상호 정의 가능성'을 뜻하지 않는다. 또한 '(B) descriptive accuracy'는 지문이 'descriptive of actual reality'가 아니라 'hypothetical'을 다룬다고 말한 것과 반대다. → 처방: 지문 1문단의 'hypothetical states of affairs'와 2문단의 'necessity 와 possibility 의 상호 정의'를 정확히 연결 지어, '논리적 상호관계'와 '정의 가능성'을 구분해서 이해해야 한다.\n⑤ 진단: '(A) definitional equivalence'은 지문이 'interdefinability'라고 말한 것과 비슷하지만, '(B) negation'은 지문에서 'negation 을 통한 정의 가능성'을 설명하는 한 부분일 뿐, 전체 요약의 핵심이 아니다. → 처방: 지문에서 'negation'은 'necessity 와 possibility 의 상호 정의'를 설명하는 도구일 뿐이므로, 이를 '정의 가능성' 자체로 오해하지 말고, '논리적 상호의존성'을 핵으로 삼아야 한다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
