@@ -2914,3 +2914,8 @@
 - 원서 패턴을 반영하여, '학생이 개념을 학습하는 경우'와 같이 과거 시제와 현재 시제를 혼용해야 하는 문장은 반드시 'the student learned a concept that can be used'와 같이 'learned' (과거 시제) + 'can be used' (능력/가능성 표현)의 조합으로 통일하여 출제하라.  _(출처: 코퍼스연구:원서 문체 패턴을 활용한 변형)_
 - 1) 등가군 기준을 '결과 반전(However)' vs '원칙 대립(Nevertheless)'로 재정의. 2) 화자의 의도성(윤리적/논리적 선호 vs 사건 전도)을 추가 판단 요소로 반영. 3) 맥락 강도(예상 가능성 반비례 vs 상충 인정 필요성)를 연계하여 최적어 선택. 4) 예시 문장 분석(She studied hard... However she failed / Although she studied hard... Nevertheless she failed)을 등가군에 포함하여 실전 적용성 제고.  _(출처: 회의:자동연구)_
 - 1) ‘핵심 동사’ 기준으로 삼되, 보조동사·시제·태는 해석·의미 변별력이 요구되는 맥락(예: ‘have been done’, ‘can be seen’)에서만 복합 동사로 허용. 2) 단순 시제/태(예: ‘She is happy’ vs. ‘She seems happy’)는 품사·시제·태를 분리해 개별 문법 항목으로 평가. 3) 출제 시 보조동사의 기능은 주동사와一体로 해석되는 맥락에서만 평가.  _(출처: 회의:자동연구)_
+
+## 2026-08-18T13:11:47.872Z 자동 반영 규칙
+- 'or not' 부정 구문(Even though ~ or looks to pretty → Even though ~ or not, looks too pretty)과 'spend time on' 구문(And young people spend time more ther lifestile → And young people spend more time on their lifestyles), 그리고 'whenever' 절의 주어·동사 일치(whenever we necessary → whenever we need necessary)를 반드시 검증하라.  _(출처: 코퍼스연구:실제 문법오류쌍(gec)을 활용한 어법 문항)_
+- 1) 오류 유형 분류 기준을 표준화된 가이드라인으로 구체화(예: 의미 왜곡 심각도 1-5점 척도, 문법 규칙 계층 3단계). 2) AI 보조 판정 시스템 도입을 권장하되, 즉각적인 구현은 보류하고 1차적으로는 평가자 훈련 및 사례집을 우선 개발. 3) 필수 수정 3점(논리적 2점+기계적 1점) 체계는 유지하되, 가감점 폭을 축소(예: 0.5점 단위로 조정)하여 객관성 제고.  _(출처: 회의:자동연구)_
+- 1) '핵심 의미 단위 포섭(50~60%)' + '문법적 정확성(25~30%)' + '맥락 내 자연스러움(15~20%)'으로 계층화하되, 2) 요약형/빈칸형별 가중치 조정(요약: 핵심키워드 50%+논리적 일관 30%, 빈칸: 문법완성도 50%+맥락적 자연스러움 30%), 3) EBS 연계는 보조지표(10%)로 제한, 4) 오류 감점은 '고정 점수(문법:1점, 의미왜곡:2점) + 가감점(0.5점)' 체계로 통일, 5) 표준답안 스크립팅 및 예시집 시스템화  _(출처: 회의:자동연구)_
