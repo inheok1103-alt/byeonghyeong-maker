@@ -1,6 +1,85 @@
 {
- "updated": "2026-08-18T17:47:16.566Z",
+ "updated": "2026-08-18T19:01:03.149Z",
  "samples": [
+  {
+   "ts": "2026-08-18T18:58:24.259Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP.\n\nEcho questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as complements of the relevant verbs, and subsequently get moved to the front of the overall clause. ( ① ) But what position do they get moved into, in non-echoic questions like (1)? ( ② ) The answer is obviously that they are moved into some position preceding the inverted auxiliary. ( ③ ) Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP). ( ④ ) If so, a sentence like (2c) Who was she dating? ( ⑤ ) will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q):",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘(1)’의 wh-표현이 동사의 보충어에서 왔다는 ‘에코 질문’의 설명은 ‘(1)’의 비에코 질문에서 wh-표현이 어디로 이동하는지 묻는 흐름과 맞지 않음. 학생은 문맥 흐름을 무시하고 ‘에코 질문’만 보고 ‘(1)’에 넣어야 한다고 오해했을 수 있음. → 처방: 문장 앞뒤 문장의 연결을 확인하고, ‘에코 질문’과 ‘비에코 질문’의 차이를 분명히 한 뒤 위치를 정하라.\n② 진단: ‘(1)’의 비에코 질문에서 wh-표현이 ‘도치된 조동사 앞’으로 이동한다는 설명은 ‘(3)’의 흐름에서 나온 것이므로, ‘(1)’에 넣기에는 문맥상 어색함. 학생은 ‘도치된 조동사 앞’이라는 단어만 보고 무작정 넣었을 가능성이 있음. → 처방: 문장의 연결어(‘But’, ‘Given that’ 등)를 보고 앞뒤 문장의 논리적 관계를 먼저 확인하라.\n④ 진단: ‘(4)’는 ‘CP 의 Spec 위치’가 아니라 ‘(2c)’의 예문과 ‘(4)’의 도표를 설명하는 부분임. 학생은 ‘CP 의 Spec’이라는 단어가 ‘Spec-CP’를 설명하는 문장임을 보지 못하고 무리하게 끼워 맞췄을 수 있음. → 처방: 문장의 핵심 단어(‘Spec-CP’, ‘PRN’, ‘Q-pronouns’)가 설명하는 대상(예문·도표·용어)을 정확히 짚어라.\n⑤ 진단: ‘(2c)’의 예문과 ‘(4)’의 도표는 ‘(5)’에서 설명하는 ‘화살표 이동’과 직접 연결됨. 학생은 ‘예문’이 나오는 위치에 ‘설명’이 먼저 나와야 한다고 착각했을 수 있음. → 처방: 예문과 설명의 순서를 구분하고, ‘(2c)’와 ‘(4)’가 ‘(5)’의 근거임을 먼저 확인하라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-18T18:59:03.534Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 6건 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.75,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "wh-expressions' movement into the specifier position of CP in questions",
+     "movement of wh-expressions into the specifier position in declarative clauses",
+     "origin of wh-expressions as verb complements in interrogative clauses",
+     "universal movement of noun phrases into specifier positions in clauses",
+     "obligatory presence of specifier positions in all clause types"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The movement of wh-expressions to the specifier position within CP in questions'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 2번은 'declarative clauses(평서문)'에서 wh-expressions 가 이동한다는 오해로, 지문에서 'non-echoic questions(비메아리 질문)'에만 초점을 맞췄다는 사실을 놓쳤음. 지문은 오직 질문 구조에서 wh-expressions 의 이동만을 다룸. → 처방: 문제의 유형(질문 vs 평서문)을 정확히 구분한 뒤, 지문의 범위(질문 구조)에서 wh-expressions 의 이동에만 집중하기.\n③ 진단: 3번은 wh-expressions 의 'origin(기원)'에만 집중한 오독으로, 지문은 이동의 'position(위치)'에 대한 설명이 주제임을 간과함. 지문은 wh-expressions 가 동사의 보어로 시작한다는 사실(3~4문장)을 배경으로 삼아, 이동 위치(CP 의 specifier)를 논의함. → 처방: 지문의 핵심 주제가 '이동의 위치'임을 인식하고, 서론 부분(기원 설명)은 배경으로만 이해하기.\n④ 진단: 4번은 'universal movement(보편적 이동)'이라는 과도한 일반화로, 지문은 오직 'questions(질문)'에서만 wh-expressions 의 이동을 다룬다는 한계를 무시함. → 처방: 지문의 범위가 특정 문형(질문)에 국한된다는 점을 정확히 파악하고, 보편적 주장은 지문의 내용과 맞지 않음을 확인하기.\n⑤ 진단: 5번은 'obligatory presence(필수적 존재)'라는 과장된 주장으로, 지문은 CP 의 specifier 위치가 '질문'에서 wh-expressions 의 이동을 위해 필요하다는 점만 언급하고, 모든 절 유형에 필수임을 주장하지 않음. → 처방: 지문의 설명이 특정 구조(질문)에서의 이동에 한정되어 있음을 명확히 이해하고, '모든 절'이라는 전제를 의심하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The movement of wh-expressions to the specifier position within CP in questions]"
+   }
+  },
+  {
+   "ts": "2026-08-18T19:00:29.012Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 8 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 8단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: Wh-표현식은 CP 내에서 지정자 위치로 이동합니다\n주어진 단어: ( wh-expressions / specifier / position )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Wh-expressions move to the specifier position within CP. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-18T17:46:30.105Z",
    "type": "어법개수형",
@@ -253,94 +332,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T14:00:07.679Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 기억·유감·시도·중단·결과·계속·필요 같은 동사 뒤에 -ing가 오는 이유를 설명해야 한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T13:10:27.609Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "텍스트는 상황들을 단순 나열하는 것만으로도 자연스럽게 일관성을 확보할 수 있다",
-     "텍스트는 문장 간 직접적 연결보다 각 문장의 기술에만 초점을 맞춰야 한다",
-     "모든 텍스트는 상황 간 연결 없이도 자동으로 일관성을 유지할 수 있다",
-     "텍스트는 상황의 조합 없이 문법적 구조만으로 일관성을 확보할 수 있다",
-     "텍스트는 상황들 간의 인지적·문법적 연결을 통해 일관성을 유지해야 한다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Texts require explicit or implicit conceptual linking of situations to ensure coherence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문에서 텍스트는 상황들을 단순 나열하는 것만으로는 자연스럽고 일관된 연결을 확보하기 어렵다고 설명했는데, 이를 '단순 나열만으로도' 자연스럽다고 오해한 듯함. → 처방: 텍스트의 일관성은 상황 간 인지적·문법적 연결을 통해 만들어지므로, 문장 간 관계를 명확히 파악하는 연습을 하라.\n② 진단: 지문은 문장 간 직접적 연결과 각 문장의 기술 모두 중요하다고 설명했는데, 이를 '각 문장의 기술에만 초점'을 맞추는 것으로 오해한 듯함. → 처방: 문장 간 관계를 나타내는 접속사·연결어 등을 주의 깊게 읽고, 그 역할을 정리하는 습관을 들여라.\n③ 진단: 지문은 텍스트가 상황 간 연결 없이 자동으로 일관성을 유지하기 어렵다고 설명했는데, 이를 '자동으로 유지할 수 있다'고 오해한 듯함. → 처방: 텍스트의 일관성은 문장 간 연결 구조를 분석해가며 확인하는 연습을 하라.\n④ 진단: 지문은 텍스트의 일관성이 문법적 구조뿐 아니라 상황 간 연결에서도 비롯된다고 설명했는데, 이를 '문법적 구조만으로' 일관성을 확보할 수 있다고 오해한 듯함. → 처방: 문법적 연결어와 상황 간 관계를 함께 살펴보며 텍스트의 흐름을 이해하는 연습을 하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Texts require explicit or implicit conceptual linking of situations to ensure coherence.]"
-   }
-  },
-  {
-   "ts": "2026-08-18T13:10:53.738Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "Cognitive English Grammar 52 3.\n\n(A) The linguist Charles Fillmore gave the following convincing example to illustrate the importance of textual coherence: (11) a. I had trouble with the car yesterday. The carburettor was dirty.\n\n(B) This will also give us the opportunity to introduce some of the cognitive principles that account for textual coherence. 1 Conceptual and grammatical linking of situations A crucial aspect of producing and understanding texts is our ability to relate situations in a meaningful way. In discourse the conceptual link between situations may be expressed explicitly, but typically it is implicit and has to be inferred.\n\n(C) 3 Combining situations: Juxtaposed and complex sentences Thus far we have dealt with simple situations and simple sentences. In discourse, situations and the sentences describing them do, of course, not occur in isolation but form part of a coherent piece of discourse. Although the scope of this book is conﬁned to the conceptualisation of simple sentences, we will conclude this survey on the cognitive framework by brieﬂy touching upon the ways in which situations are combined and expressed in the structure of English.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 5,
-    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘(A)→(C)→(B)’는 (A)에서 ‘Fillmore 의 예시’를 먼저 소개한 뒤 (C)에서 ‘단순 문장’에서 ‘복합 문장’으로 확장한다는 흐름을 오해한 결과로 보임. (C)는 ‘단순 문장’에서 ‘복합 문장’으로 나아가는 ‘개요’ 역할을 하는데, (A)는 ‘예시’로 (C) 뒤에 오면 흐름이 자연스러움. → 처방: ‘개요→예시→심화’ 순서가 아니라 ‘예시→개요→심화’로 흐름을 잡아야 함을 기억할 것.\n② 진단: ‘(B)→(A)→(C)’는 (B)의 ‘텍스트 일관성’ 개념을 먼저 설명한 뒤 (A)에서 ‘예시’를 보여주려는 의도로 보임. 그러나 (A)는 ‘Fillmore 의 예시’로 (B)의 ‘원리’보다 앞서 나와야 논리적 흐름이 맞음. → 처방: ‘원리→예시→확장’의 순서가 아니라 ‘예시→원리→확장’임을 확인하고, 텍스트의 ‘시작’은 ‘예시’로 잡아야 함.\n③ 진단: ‘(B)→(C)→(A)’는 (B)에서 ‘텍스트 일관성’을 설명한 뒤 (C)에서 ‘단순 문장→복합 문장’으로 나아가는 ‘개요’를 제시한 다음 (A)에서 ‘예시’를 보여주려는 오해로 보임. (A)는 ‘예시’로 (C)보다 먼저 나와야 함. → 처방: ‘원리→개요→예시’의 순서가 아니라 ‘예시→원리→개요’의 흐름을 기억할 것.\n④ 진단: ‘(C)→(A)→(B)’는 (C)에서 ‘단순 문장→복합 문장’으로 나아가는 ‘개요’를 먼저 제시한 뒤 (A)에서 ‘예시’를, (B)에서 ‘원리’를 설명하려는 오해로 보임. (B)는 ‘원리’를 설명하는 글이므로 (A) 다음에 나와야 함. → 처방: ‘개요→예시→원리’의 순서가 아니라 ‘예시→원리→개요’의 흐름을 명확히 구분할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
