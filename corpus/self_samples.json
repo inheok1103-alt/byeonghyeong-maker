@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-18T03:17:40.278Z",
+ "updated": "2026-08-18T04:01:02.077Z",
  "samples": [
+  {
+   "ts": "2026-08-18T03:59:56.096Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "V – noun ? This is fortunate as there is one more thematic category left to be included into the system: the (A) [prepositions / postpositions]. Thus we can claim that prepositions fill this slot: (29) prepositions = [–F, –N, –V] However, this cannot be put down to good fortune. After all, categorising elements in terms of these features has consequences concerning what other categories are related to or different from these elements. Note that the feature combination in (29) predicts that while prepositions differ from (B) [pronouns / nouns] in that they are [–N], they are similar to nouns in that they are [–V]. Similarly, prepositions differ from (C) [verbs / adjectives] in being [–V], but they share the [–N] feature with them. Thus prepositions are predicted to be similar to nouns and verbs, but in a different way to how adjectives are similar to these categories. Indeed, while prepositions do not have similar distribution patterns as verbs, as do adjectives, they share another property with verbs. Consider the following observations: (30) a see him",
+    "choices": [
+     "(A) prepositions - (B) nouns - (C) verbs",
+     "(A) postpositions - (B) nouns - (C) verbs",
+     "(A) prepositions - (B) pronouns - (C) verbs",
+     "(A) prepositions - (B) pronouns - (C) adjectives",
+     "(A) prepositions - (B) nouns - (C) adjectives"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) prepositions - (B) nouns - (C) verbs. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 ‘prepositions’를, ‘(B)’에서 ‘nouns’를, ‘(C)’에서 ‘verbs’를 골랐지만, 지문에서 (29) prepositions = [–F, –N, –V]로 설명한 후 ‘they are similar to nouns in that they are [–V]’라고 하여 ‘nouns’가 아닌 ‘pronouns’를 써야 함을 놓침. → 처방: ‘(B)’에서 ‘nouns’를 ‘pronouns’로 바꾸어 읽기: ‘nouns’는 [+N]이므로 [–V]와 맞지 않음.\n② 진단: ‘(A)’에서 ‘postpositions’를 골랐지만 지문 첫머리 ‘prepositions’를 ‘postpositions’로 잘못 읽음. 또한 ‘(B)’와 ‘(C)’에서 ‘nouns’와 ‘verbs’를 골랐으나 ‘pronouns’가 맞음. → 처방: ‘(A)’는 ‘prepositions’와 ‘postpositions’를 구분해 읽기: 지문에서 ‘prepositions’를 다루므로 ‘prepositions’를 선택.\n④ 진단: ‘(C)’에서 ‘adjectives’를 골랐지만 지문에서 ‘prepositions differ from adjectives in being [–V]’라고 하여 ‘adjectives’는 [–V]가 아니라 [+N]임을 확인해야 함. → 처방: ‘(C)’는 ‘verbs’와 ‘adjectives’를 비교해 ‘prepositions’가 [–V]라는 점에서 ‘verbs’와 비슷하다는 설명을 따라 ‘verbs’를 선택.\n⑤ 진단: ‘(B)’에서 ‘nouns’를, ‘(C)’에서 ‘adjectives’를 골랐지만 ‘nouns’는 [+N]이므로 [–N]인 ‘prepositions’와 맞지 않고, ‘adjectives’는 [+N]이므로 [–V]와 맞지 않음. → 처방: ‘(B)’와 ‘(C)’는 ‘pronouns’와 ‘verbs’를 각각 선택: ‘pronouns’는 [–N]이고 ‘verbs’는 [–V]로 ‘prepositions’와 같은 특징을 가짐."
+   }
+  },
   {
    "ts": "2026-08-18T03:16:50.433Z",
    "type": "장문세트",
@@ -282,25 +315,6 @@
     ],
     "answer": 2,
     "explanation": "(A) obligation / (B) allowance 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘permission’이 ‘obligation’을 대신할 수 없다고 오인했다. 지문에서 ‘deontic necessity’는 ‘obligation’을, ‘deontic possibility’는 ‘permission’을 가리키며, ‘permission’이 ‘obligation’보다 넓은 의미를 가질 수 있음을 고려하지 않았다. → 처방: ‘deontic necessity’는 ‘obligation’을, ‘deontic possibility’는 ‘permission’을 뜻한다는 점을 기억하고, 선지 속 단어의 의미를 지문과 정확히 맞춰라.\n③ 진단: ‘constraint’를 ‘obligation’으로, ‘flexibility’를 ‘permission’으로 잘못 연결했다. 지문은 ‘deontic necessity’가 ‘obligation’을, ‘deontic possibility’가 ‘permission’을 나타낸다고 명시하지만, 학생은 이를 ‘제약’과 ‘유연성’으로 해석해 오독했다. → 처방: ‘constraint’나 ‘flexibility’는 지문에서 다루는 ‘deontic modality’의 핵심 개념이 아니므로, 지문에서 직접 언급하는 ‘obligation’과 ‘permission’을 우선으로 떠올려라.\n④ 진단: ‘necessity’를 ‘obligation’으로, ‘restriction’을 ‘permission’으로 혼동했다. ‘necessity’는 ‘필요성’을, ‘restriction’은 ‘제한’을 뜻하는데, 지문은 ‘deontic necessity’를 ‘obligation’으로, ‘deontic possibility’를 ‘permission’으로 설명한다. → 처방: ‘deontic necessity’와 ‘deontic possibility’를 각각 ‘obligation’과 ‘permission’으로 바로 연결하는 연습을 하라. 단어의 기본 뜻을 먼저 떠올리고, 지문의 맥락과 비교하라.\n⑤ 진단: ‘compliance’를 ‘obligation’으로, ‘prohibition’을 ‘permission’으로 잘못 해석했다. ‘compliance’는 ‘준수’를 뜻하지만 지문은 ‘deontic necessity’를 ‘obligation’으로, ‘deontic possibility’를 ‘permission’으로 설명하며, ‘prohibition’은 금지라는 뜻으로 ‘permission’과 반대다. → 처방: ‘prohibition’이 ‘permission’의 반대말임을 기억하고, 지문에서 ‘deontic possibility’가 ‘허용’을 뜻한다는 점을 떠올려 ‘prohibition’을 배제하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T20:46:06.162Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "MODALITY AND POSSIBLE WORLDS reveals that a plane ⓐ<u>which did not crash</u> ⓑ<u>may have been</u> in danger which was averted by the pilot’s action. On the emerging non-epistemic interpretation, the plane did crash but the pilot ⓒ<u>could have prevent it</u> had things happened differently. A somewhat bizarre example of this shift is the headline GP Criticized over Death: Baby may have lived – Coroner. 5.1.3 Deontic modality Modal auxiliaries also express deontic modality, which is concerned with compliance or compatibility with some code of behaviour or set of rules. ⓓ<u>Which code or set of rules</u> is involved depends on the context and is determined pragmatically. Deontic necessity expresses what is required or compulsory, or what someone is obliged to do within the set of rules determined by the context, and deontic possibility expresses what is allowed or permitted within the rules. ⓔ<u>These are illustrated</u> in (8) and (9): (8) deontic necessity",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [시제] ⓒ: 'could have prevent it' → 'could have prevented it' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

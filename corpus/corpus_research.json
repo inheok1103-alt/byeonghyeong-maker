@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T03:17:40.275Z",
+ "updated": "2026-08-18T04:01:02.074Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T04:00:37.518Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어 문법 오류는 종종 구두점(예: 마침표 오용), 대명사(that→what), 동사 수(requires→require) 등 '형태적 오류'와 '의미적 오류'로 나뉜다. 특히 연어 기반 오류는 구문적 틀(예: 전치사 오용, 접속사 오류)과 밀접히 연관된다.",
+   "rule": "원서 최빈 연어('old english', 'university press' 등)를 활용한 오답지 설계 시, 반드시 '형태적 오류'(대명사·동사 수·전치사 오용)와 '의미적 오류'(연어 불일치, 접속사 오용)를 혼합하여 출제하라. 예: 'We must trust ourselves .'는 구두점 오류(형태적) + 'trust'의 연어 패턴('trust oneself' vs. 'trust oneself .')을 결합한 오답을 설계할 수 있다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T03:17:12.242Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "단수/복수 혼동 오류가 빈번하며, 특히 'the younger generation'처럼 집합명사가 단수 취급되어야 하는 경우를 주의해야 한다. 또한 접속사나 전치사의 오용(thus→and therefore, in→in which)도 빈번한 패턴이다.",
    "rule": "집합명사(예: the younger generation, the costumer, the critique) 뒤에는 단수 동사(be/is, lose→loses)를 사용하며, 접속사/전치사 오용(thus→and therefore, in→in which)을 교정하는 문항을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T13:01:53.745Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "시간 표현에서 'after timer' → 'time after time'로의 오류는 반복·계속의 의미를 지닌 고정어구를 잘못 사용한 패턴이다. 또한 'delivered in format'는 수동태 또는 전치사 구조의 오용으로, 정보 전달 방식이 아닌 정보의 형식을 설명해야 한다.",
-   "rule": "시간·반복·계속을 나타내는 문장에서는 'time after time', 'over and over', 'repeatedly' 등 고정어구를 우선 점검하고, 정보 전달 방식 설명 시 'in a [형용사] format' 또는 'delivered in a [형용사] manner' 구조를 사용하도록 한다.",
    "sample": [
     "old english",
     "university press",
