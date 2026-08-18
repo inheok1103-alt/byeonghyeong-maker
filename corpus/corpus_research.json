@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T05:48:58.900Z",
+ "updated": "2026-08-18T07:08:17.079Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T07:07:46.552Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'noun phrase + present/past tense + direct object' 패턴이 빈번하며, 오류 수정 시 문법적 일관성과 명료한 의미 전달을 우선시한다는 특징을 확인했다.",
+   "rule": "원서 코퍼스 패턴을 반영하여 '주어 + 동사 + 직접목적어' 구조의 문장을 변형문제로 출제할 때, 주어와 동사의 시제 일치와 목적어의 명사구 구성을 반드시 확인하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T05:48:29.832Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'consist of'는 과거 시제와 함께 쓰일 때 'consisted of'로 연어화되며, 'satisfy'는 'needs'와 결합하는 경우가 많다. 또한 'point of view'는 복수형이 아닌 단수형으로만 쓰이는 고정 연어다.",
    "rule": "'consist of', 'satisfy', 'point of view'와 같은 고정 연어는 문법 오류 유형으로 출제할 때, 과거 시제 동사 형태, 목적어 결합, 단수/복수 형태 오류를 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T15:43:17.016Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거시제 동사(found, needs, do n't)와 현재시제 동사(use, have) 간의 혼동이 빈번하며, 소유격(people's money → money from other people)과 목적격(there → their) 오류가 자주 발생한다.",
-   "rule": "과거시제 문맥에서 현재시제 동사를 사용한 경우, 문장 전체를 과거시제로 통일하거나 현재시제 동사를 과거시제로 수정하라. 또한 소유격·목적격 오류는 문법 규칙에 맞게 's 소유격, from + 소유자, their/there/they' 등으로 수정하라.",
    "sample": [
     "old english",
     "university press",
