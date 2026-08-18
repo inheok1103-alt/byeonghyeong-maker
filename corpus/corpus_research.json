@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T15:02:29.870Z",
+ "updated": "2026-08-18T15:56:35.995Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T15:56:06.820Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 문체 패턴에서 'to be' 동사구가 불필요하게 과도하게 사용되는 경향이 있으며, 특히 'make + 목적어 + to be' 구문이 'make + 목적어 + 형용사'로 단순화될 수 있음을 확인했다.",
+   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'make + 목적어 + to be + 형용사' 구조가 등장하면 'to be'를 삭제하고 'make + 목적어 + 형용사'로 수정하도록 변형 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T15:02:05.426Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'old english', 'english grammar', 'english language' 등 영어 관련 명사구가 빈번히 등장하며, 과거시제와 현재시제가 혼용되는 경향이 있다. 또한 'between two', 'direct object' 등 문법적 구조가 연어화되어 자주 사용된다.",
    "rule": "영어 내신 변형문제 출제 시, 'importance/need/necessity + to understand/use'와 같은 구문은 'it is very important to understand all the concepts and ideas they gave us' → 'it is very important to understand all the concepts and ideas that were given to us'로 과거시제와 관계대명사(that/who)를 포함하도록 변형하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T01:59:22.626Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제 동사와 수동태가 혼용된 오류가 빈번하며, 특히 'be + 과거분사' 형태의 수동태가 '과거시제'로 잘못 쓰이는 패턴이 많다. 또한, 목적어와 동사의 수 일치 오류가 자주 발생한다.",
-   "rule": "'be + 과거분사' 형태의 수동태 문장은 과거시제와 혼동되지 않도록 반드시 'be + 과거분사'로만 구성된 수동태 문장으로 출제하며, 동사와 목적어의 수 일치를 반드시 확인한다.",
    "sample": [
     "old english",
     "university press",
