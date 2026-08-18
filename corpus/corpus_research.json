@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T19:01:03.145Z",
+ "updated": "2026-08-18T19:44:28.091Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T19:43:58.486Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서에서 'old English'·'Middle English'·'English grammar'·'English language'가 빈번한 것처럼, 영어 학습 관련 어휘(grammar, language, study, information 등)는 문맥상 빈번히 등장하며 오류 발생 패턴도 유사하다. 또한 'because if', 'so much', 'a lot of' 등 접속사·강조 표현의 조합 오류가 다수 나타나며, 동사 형태(present/past tense)나 수동태 선택 오류가 흔하다.",
+   "rule": "'because if'나 'so much'·'a lot of' 등 접속사·강조 표현의 조합 오류를 방지하기 위해, 문법적 오류 가능성을 높이는 'if'·'because'·'so'·'a lot of'가 동시에 포함된 문장은 반드시 접속사/부사/동사 시제 일치·수동태 여부를 검토하여 오류 유도를 우선 고려하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T19:00:30.866Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사구 내 관사·형용사 순서 오류와 접속사 생략 오류가 빈번하며, 특히 'such a + 명사' 구문과 'that' 생략 오류가 두드러진다. 또한 과거/현재 시제 혼용과 직접목적어 생략도 자주 발생한다.",
    "rule": "'such a + 명사' 구문에서 관사가 'a'로 고정되어야 하며, 'that'을 생략하지 말고 접속사(that/which 등)를 반드시 삽입하여 문법적 완결성을 확보하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T05:53:00.685Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제와 현재 시제가 혼용된 문장에서는 시제 일관성을 유지해야 하며, 'expect'와 같은 동사가 'reciprocate'와 같은 동사로 대체될 때 의미적 정확성이 중요하다. 또한, 비교 구문에서 'than me' 대신 'than I am'을 사용하여 문법적 정확성을 높일 필요가 있다.",
-   "rule": "'시제 일관성'과 '비교 구문의 문법적 정확성'을 검증하는 문항을 출제할 때에는, 과거/현재 시제가 혼용된 문장이나 'than me/I am' 구문에서 오류를 의도적으로 삽입하여 학생들이 시제와 비교 구문의 규칙을 적용할 수 있도록 한다.",
    "sample": [
     "old english",
     "university press",
