@@ -1,6 +1,130 @@
 {
- "updated": "2026-08-18T04:01:02.077Z",
+ "updated": "2026-08-18T04:59:55.178Z",
  "samples": [
+  {
+   "ts": "2026-08-18T04:54:43.711Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Exercise 1.2 In the text, we noted that the Head Position Parameter has a uniform head-first setting (in the sense that all heads precede their complements) in English, and a uniform head-last setting (in the sense that all heads follow their complements) in Korean. However, we also noted that there are languages in which some heads precede their complements (giving rise to head-first structures), and others follow them (giving rise to head-last structures). German is argued by some to be a language of this latter type, in which (e.g.) prepositions, determiners and complementisers canonically precede their complements, but (auxiliary and main) verbs canonically follow their complements. Discuss the extent to which German sentences like those in 1-5 below (kindly provided for me by Harald Clahsen) bear out this claim, and say which examples prove problematic and why.",
+    "choices": [
+     "영어는 머리-마지막 구조가 통일되어 모든 머리들이 보충어 뒤에 온다",
+     "한국어는 머리-먼저 구조가 통일되어 모든 머리들이 보충어 앞에 온다",
+     "일부 언어는 머리-먼저와 머리-마지막 구조가 혼합되어 존재한다",
+     "독일어는 머리-마지막 구조만 있는 언어일 수 있다",
+     "독일어에서 전치사, 관사, 접속사는 머리-마지막 구조를 보이고 동사는 머리-먼저 구조를 보인다"
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 영어는 머리-먼저 구조(모든 머리가 보충어 앞에 옴)라고 했으므로, '머리-마지막'이라는 표현을 오독한 것으로 보임. → 처방: 지문에서 언급된 'head-first'와 'head-last'의 의미를 정확히 이해하고, 영어는 head-first 임을 기억할 것.\n② 진단: 지문에서 한국어는 머리-마지막 구조(모든 머리가 보충어 뒤에 옴)라고 했으므로, '머리-먼저'라는 표현을 오독한 것으로 보임. → 처방: 지문에서 언급된 한국어의 head-last 특성을 정확히 기억하고, 머리-먼저와 머리-마지막의 정의를 구분할 것.\n④ 진단: 지문에서 독일어는 머리-먼저와 머리-마지막이 혼합된 언어일 수 있다고 했으므로, '머리-마지막만 있다'는 표현이 오독된 것으로 보임. → 처방: 지문에서 독일어의 혼합 구조 가능성을 다시 한 번 확인하고, 언어별 head-first/head-last 특성을 정리할 것.\n⑤ 진단: 지문에서 독일어는 전치사·관사·접속사가 머리-먼저 구조를, 동사가 머리-마지막 구조를 보인다고 했지만, 선지에서는 반대로 설명했으므로 오독한 것으로 보임. → 처방: 지문에서 제시된 독일어의 예시(전치사·관사·접속사 = 머리-먼저, 동사 = 머리-마지막)를 정확히 기억하고, 선지의 내용을 지문과 대조할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-18T04:58:45.930Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "어법 의심 2건 · ⚠ 정답-오답 근접(68%) — 복수정답 재검 권고 · 솔버교정: 솔버 2/3 다수결 4번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "독일어는 머리-첫 구조와 머리-마지막 구조가 혼재되어 있어 보편문법의 Head Position Parameter 이론을 전면 부정하는 근거가 된다.",
+     "독일어는 전치사와 관사에서는 머리-첫 구조가, 주동사에서는 머리-마지막 구조가 나타나지만, 이는 보편문법의 Head Position Parameter 이론에 대한 예외로만 인정된다.",
+     "보편문법의 Head Position Parameter 이론에 따르면 모든 언어는 머리-첫 또는 머리-마지막 구조로 균일해야 하지만, 독일어는 이 이론의 적용 범위를 벗어난다.",
+     "독일어의 머리-첫과 머리-마지막 구조 혼재는 보편문법의 Head Position Parameter 이론에 대한 반례가 아니라, 이론의 세부 적용을 요구하는 특수한 사례이다.",
+     "독일어는 머리-첫 구조와 머리-마지막 구조가 혼재되어 있으며, 이는 보편문법의 Head Position Parameter 이론에 대한 예외적 현상이다."
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'German exhibits mixed head-directionality, with some heads preceding and others following their complements.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: German exhibits mixed head-directionality, with some heads preceding and others following their complements.]\n[오답 진단·처방]\n① 진단: Head Position Parameter 이론이 전면 부정되는지 여부를 German 의 혼재 현상만으로 판단한 오독. 지문은 German 이 예외적 사례에 해당한다고 설명하며, 이론 자체를 부정하지 않음. → 처방: German 의 혼재가 이론의 예외가 아니라 세부 적용을 요구하는 사례임을 확인하고, 이론의 한계를 전면 부정하는지 여부를 다시 점검하라.\n② 진단: German 의 구조가 '예외로만 인정된다'고 오해. 지문은 German 이 Head Position Parameter 이론의 세부 적용을 요구하는 특수한 사례임을 명시함. → 처방: German 의 구조가 이론의 예외가 아니라 특수한 사례임을 확인하고, '예외'라는 표현이 적절한지 재고하라.\n③ 진단: German 이 이론의 적용 범위를 벗어난다고 단정. 지문은 German 이 이론의 세부 적용을 요구하는 사례임을 강조하며, 적용 범위를 벗어난다고 설명하지 않음. → 처방: German 의 구조가 이론의 적용 범위를 벗어나는지 여부를 다시 확인하고, 지문의 설명을 정확히 따라가라.\n⑤ 진단: German 의 혼재를 '예외적 현상'으로 오해. 지문은 German 이 Head Position Parameter 이론의 세부 적용을 요구하는 특수한 사례임을 설명하며, 예외로 규정하지 않음. → 처방: German 의 혼재가 예외가 아니라 이론의 세부 적용을 요구하는 사례임을 확인하고, '예외'라는 표현을 사용하지 않도록 주의하라."
+   }
+  },
+  {
+   "ts": "2026-08-18T04:59:20.792Z",
+   "type": "지칭추론",
+   "level": "중",
+   "audit": "밑줄·정답 코드검증(대명사 구절 원문 매칭)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
+    "passage": "Exercise 1.2 In the text, we noted that ⓐ<u>the Head Position Parameter has a uniform head-first setting</u> (in the sense that ⓑ<u>all heads precede their complements</u>) in English, and a uniform head-last setting (in the sense that ⓒ<u>all heads follow their complements</u>) in Korean. However, we also noted that there are languages in which ⓓ<u>some heads precede their complements</u> (giving rise to head-first structures), and ⓔ<u>others follow them</u> (giving rise to head-last structures). German is argued by some to be a language of this latter type, in which (e.g.) prepositions, determiners and complementisers canonically precede their complements, but (auxiliary and main) verbs canonically follow their complements. Discuss the extent to which German sentences like those in 1-5 below (kindly provided for me by Harald Clahsen) bear out this claim, and say which examples prove problematic and why.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 5,
+    "explanation": "정답 ⓔ는 '독일어(German)'를 가리키고, 나머지 넷은 '언어(language)'를 가리킨다.\n[오답 진단·처방]\n① 진단: ⓐ는 'Head Position Parameter' 자체(머리 위치 설정의 종류)를 가리키지만, 나머지 ⓑⓒⓓⓔ는 모두 '머리-보충어의 위치 관계'를 설명하는 구체적 사례에 불과하다. 학생은 ⓐ가 '설정'을 가리키는 반면 나머지는 '구체적 구조'를 가리키는 점을 혼동했을 것이다. → 처방: 머리 위치 설정(parameter)과 머리-보충어의 위치(구체적 구조)를 구분해서 읽기. parameter 는 언어 전체의 기본 설정, 나머지는 그 설정에 따른 예시라는 점을 기억하기.\n② 진단: ⓑ는 '모든 머리가 보충어를 앞에 둔다'는 영어의 head-first 설정을 설명하는 반면, ⓒⓓⓔ는 head-first 또는 head-last 의 '일부 예외'나 '혼합'을 설명한다. 학생은 ⓑ가 '전체 언어의 특징'을 가리키는 반면 나머지는 '예외나 혼합'을 가리키는 점을 놓쳤을 것이다. → 처방: 지문의 'uniform(균일한)'과 'some(일부)' 같은 한정어를 주의 깊게 읽기. '균일한 특징'과 '일부 예외'를 구분해서 이해하기.\n③ 진단: ⓒ는 '모든 머리가 보충어를 뒤에 둔다'는 한국어의 head-last 설정을 설명하는 반면, ⓓⓔ는 head-first 또는 head-last 의 '혼합'을 설명한다. 학생은 ⓒ가 '한국어의 전체 특징'을 가리키는 반면 나머지는 '다른 언어의 특징'을 가리키는 점을 혼동했을 것이다. → 처방: 지문에서 한국어는 '균일한 head-last'로 소개된다는 점을 기억하기. 나머지는 한국어가 아닌 다른 언어의 특징이라는 점을 분명히 하기.\n④ 진단: ⓓ와 ⓔ는 '일부 머리가 보충어를 앞에 두고, 일부는 뒤에 둔다'는 혼합형 언어의 특징을 설명하는 반면, ⓐⓑⓒ는 '전체 언어가 균일하게 head-first 또는 head-last'라는 점을 설명한다. 학생은 ⓓⓔ가 '혼합형 언어'를 가리키는 반면 나머지는 '균일한 언어'를 가리키는 점을 간과했을 것이다. → 처방: 지문에서 'uniform(균일한)'과 'some(일부)'의 대조를 명확히 이해하기. 혼합형 언어와 균일한 언어의 차이를 구분해서 읽기.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-18T04:59:29.111Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 16 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'complementisers', 'prepositions', 'determiners' / 14~18단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] German shows mixed head positions, with prepositions, determiners, and complementisers preceding complements but verbs following them.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-18T03:59:56.096Z",
    "type": "네모어휘ABC",
@@ -210,111 +334,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 자연스러운 한국어 문장: \"사실의 세계와 가상 세계 간의 유사성을 판단할 때는 가설의 본질에 따라 달랐던 자연 법칙을 적절히 선택해야 한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T22:43:33.635Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(72%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "유럽의 유랑 집단은 유목 생활의 기원이 되는 유랑 관행을 역사적으로 유지해왔으며, 서아시아의 압달족 또한 유사한 방식을 보였다",
-     "유럽의 유랑 집단은 유목 생활과 유사한 유랑 관행을 보였으나, 서아시아의 압달족은 예외적인 사례에 속한다",
-     "전 세계 대부분의 유랑 집단은 유목 생활과 유사한 유랑 관행을 공유하지만, 일부는 독자적인 양상을 띤다",
-     "유럽의 유랑 집단은 역사적으로 유목 생활과 유사한 유랑 관행을 공유했으며, 서아시아의 압달족과 집시 또한 이와 유사한 관행을 보였다",
-     "유럽의 유랑 집단은 유목 생활과 유사한 유랑 관행을 오랫동안 고수했으며, 서아시아의 집시 또한 그 특징을 공유했다"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'Itinerant groups in Europe historically shared nomadic lifestyles with similar itinerant practices observed among the Abdal people in West Asia and the Romani people.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문에서 '이동하는' 뜻을 가진 'itinerant'와 '계획된 여행 경로'를 뜻하는 'itinerary'를 설명했는데, 이 선지는 '유랑 관행'과 '유목 생활의 기원'을 연결 지어 오독한 것으로 보임. '압달족'도 언급되지 않았음. → 처방: 지문 속 단어의 뜻을 정확히 기억한 뒤, 선지의 내용이 지문에 있는지 확인할 것.\n② 진단: 지문은 '이동하는' 뜻을 가진 단어와 '계획된 여행 경로'를 설명했지만, 이 선지는 '유목 생활'과 '유랑 관행'을 '예외'로 구분 지어 오독한 것으로 보임. '압달족'도 지문에 없음. → 처방: 지문의 핵심 단어 뜻을 떠올린 뒤, 선지가 지문과 직접 연결되는지 점검할 것.\n③ 진단: 지문은 '이동하는' 뜻을 가진 단어와 '계획된 여행 경로'를 설명했지만, 이 선지는 '전 세계 대부분의 유랑 집단이 공유한다'는 과장된 표현으로 오독한 것으로 보임. '유목 생활과 유사한' 내용도 지문에 없음. → 처방: 지문의 내용이 선지에 그대로 들어 있는지, 과장된 표현은 없는지 확인할 것.\n⑤ 진단: 지문은 '이동하는' 뜻을 가진 단어와 '계획된 여행 경로'를 설명했지만, 이 선지는 '유목 생활'과 '집시'를 언급하며 오독한 것으로 보임. '집시'는 지문에 없음. → 처방: 지문에 나온 단어와 개념만 떠올린 뒤, 선지의 내용이 지문과 일치하는지 확인할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Itinerant groups in Europe historically shared nomadic lifestyles with similar itinerant practices observed among the Abdal people in West Asia and the Romani people.]"
-   }
-  },
-  {
-   "ts": "2026-08-17T22:44:50.096Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "Note c________ the pronunciation of both words. ITINERANT (eye TIN ur unt) adj moving from place to place • The life of a traveling salesman is an itinerant one. • The itinerant junk dealer passes through our neighborhood every month or so, pulling his wagon of odds and ends. • The international banker’s itinerant lifestyle began to seem less glamorous to her after her first child was born. A closely related word is itinerary, which is the planned route or schedule of a trip. • The tour guide handed the travelers an itinerary of the tour bus route so they would know what to expect throughout the day. Quick Quiz #53 Match each word in the first column with its definition in the second column. Check your answers here. 1. intrinsic a. irreversible 2. introspective b. insulting speech 3. inundate c. planned trip route 4. invective d. flood 5. inveterate e. inherent 6. irascible f. examining one’s feelings 7. ironic g. meaning other than what’s said 8. irrevocable h. moving from place to place 9. itinerant i. irritable 10. itinerary j. habitual",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] carefully — 문단의 논지상 이 자리에는 'carefully'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T21:44:12.608Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 16 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'unrecognizable', 'drastically', 'connections' / 14~18단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The meanings of words can evolve so drastically that their original connections become unrecognizable over time.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-17T20:45:44.810Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 2/3가 4번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 100,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "MODALITY AND POSSIBLE WORLDS reveals that a plane which did not crash may have been in danger which was averted by the pilot’s action. On the emerging non-epistemic interpretation, the plane did crash but the pilot could have prevented it had things happened differently. A somewhat bizarre example of this shift is the headline GP Criticized over Death: Baby may have lived – Coroner. 5.1.3 Deontic modality Modal auxiliaries also express deontic modality, which is concerned with compliance or compatibility with some code of behaviour or set of rules. Which code or set of rules is involved depends on the context and is determined pragmatically. Deontic necessity expresses what is required or compulsory, or what someone is obliged to do within the set of rules determined by the context, and deontic possibility expresses what is allowed or permitted within the rules. These are illustrated in (8) and (9): (8) deontic necessity\n\n─────────\n[요약문] Modal auxiliaries encode (A) of actions based on contextual rules, resulting in either (B) (obligation) or permission.",
-    "choices": [
-     "(A) permission … (B) obligation",
-     "(A) obligation … (B) allowance",
-     "(A) constraint … (B) flexibility",
-     "(A) necessity … (B) restriction",
-     "(A) compliance … (B) prohibition"
-    ],
-    "answer": 2,
-    "explanation": "(A) obligation / (B) allowance 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘permission’이 ‘obligation’을 대신할 수 없다고 오인했다. 지문에서 ‘deontic necessity’는 ‘obligation’을, ‘deontic possibility’는 ‘permission’을 가리키며, ‘permission’이 ‘obligation’보다 넓은 의미를 가질 수 있음을 고려하지 않았다. → 처방: ‘deontic necessity’는 ‘obligation’을, ‘deontic possibility’는 ‘permission’을 뜻한다는 점을 기억하고, 선지 속 단어의 의미를 지문과 정확히 맞춰라.\n③ 진단: ‘constraint’를 ‘obligation’으로, ‘flexibility’를 ‘permission’으로 잘못 연결했다. 지문은 ‘deontic necessity’가 ‘obligation’을, ‘deontic possibility’가 ‘permission’을 나타낸다고 명시하지만, 학생은 이를 ‘제약’과 ‘유연성’으로 해석해 오독했다. → 처방: ‘constraint’나 ‘flexibility’는 지문에서 다루는 ‘deontic modality’의 핵심 개념이 아니므로, 지문에서 직접 언급하는 ‘obligation’과 ‘permission’을 우선으로 떠올려라.\n④ 진단: ‘necessity’를 ‘obligation’으로, ‘restriction’을 ‘permission’으로 혼동했다. ‘necessity’는 ‘필요성’을, ‘restriction’은 ‘제한’을 뜻하는데, 지문은 ‘deontic necessity’를 ‘obligation’으로, ‘deontic possibility’를 ‘permission’으로 설명한다. → 처방: ‘deontic necessity’와 ‘deontic possibility’를 각각 ‘obligation’과 ‘permission’으로 바로 연결하는 연습을 하라. 단어의 기본 뜻을 먼저 떠올리고, 지문의 맥락과 비교하라.\n⑤ 진단: ‘compliance’를 ‘obligation’으로, ‘prohibition’을 ‘permission’으로 잘못 해석했다. ‘compliance’는 ‘준수’를 뜻하지만 지문은 ‘deontic necessity’를 ‘obligation’으로, ‘deontic possibility’를 ‘permission’으로 설명하며, ‘prohibition’은 금지라는 뜻으로 ‘permission’과 반대다. → 처방: ‘prohibition’이 ‘permission’의 반대말임을 기억하고, 지문에서 ‘deontic possibility’가 ‘허용’을 뜻한다는 점을 떠올려 ‘prohibition’을 배제하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
