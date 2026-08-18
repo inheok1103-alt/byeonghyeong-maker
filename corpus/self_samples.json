@@ -1,6 +1,93 @@
 {
- "updated": "2026-08-18T04:59:55.178Z",
+ "updated": "2026-08-18T05:48:58.904Z",
  "samples": [
+  {
+   "ts": "2026-08-18T05:47:30.090Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "단어의 본래 의미를 변형하면 정의 자체가 무용지물이 되어 사용 자체가 불가능해진다.",
+     "단어의 본래 의미를 왜곡하는 것은 단어 사용의 자율성을 침해하여 오해를 불러일으킨다.",
+     "단어의 본래 의미를 왜곡하는 일은 주로 수학이나 철학 같은 전문 분야에서만 발생한다.",
+     "단어의 본래 의미를 변형하는 일은 언제나 오해와 혼란을 초래한다.",
+     "단어의 본래 의미를 왜곡하면 정의가 본래의 뜻에서 벗어나 오해될 수 있다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Definitions can go awry when twisted from their original meaning.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·인과 전도·범위 축소·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 단어의 본래 의미를 '변형'한다는 표현을 '정의 자체를 파괴하는 행위'로 오해하여 무용지물로까지 확대해석했다. 지문에서 'awry'나 'axiom'의 본래 뜻은 그대로 유지되며, '변형'은 '잘못된 방향으로 틀어짐'을 뜻하는 예시로만 사용됨을 확인하지 못했다. → 처방: 단어의 '변형'이란 '정확한 뜻에서 벗어남'을 의미한다는 점을 기억하고, 지문 속 예시(예: 총알이 빗나감, 모자가 삐뚤어짐)를 통해 '변형'의 의미를 구체적으로 떠올려라.\n② 진단: '단어 사용의 자율성'이라는 추상적 개념을 '왜곡이 오해를 불러일으킨다'는 결론으로 연결하지 못하고, '자율성 침해'라는 단어 자체에만 주목했다. 지문은 단어의 본래 의미를 '왜곡'하면 '정의가 본래 뜻에서 벗어나 오해될 수 있다'는 점을 강조하는데, 이를 놓쳤다. → 처방: 선지의 핵심 단어(자율성, 오해)를 지문 속 'awry'나 'axiom'의 예시와 연결 지어, '왜곡'이 실제 어떤 결과(오해)를 초래하는지 생각해라.\n③ 진단: '주로 수학이나 철학'이라는 한정적 표현을 근거로 삼았으나, 지문에서 'awry'는 일상생활(사냥꾼의 총알), 'axiom'은 수학 외에도 '자명한 진리'로도 쓰임을 확인하지 못했다. '전문 분야'라는 단서가 없음을 간과했다. → 처방: 지문 속 각 단어의 예시(일상/수학)를 꼼꼼히 읽고, '주로'라는 말이 지문에 없음을 확인한 뒤, '전문 분야'라는 선지가 틀렸음을 판단해라.\n④ 진단: '언제나'라는 절대적 표현을 근거로 삼았으나, 지문은 '정의가 본래 뜻에서 벗어나 오해될 수 있다'고만 말하고, '언제나 오해와 혼란을 초래한다'고 단정하지 않았다. '언제나'라는 말이 과장임을 간과했다. → 처방: '언제나'나 '절대' 같은 절대적 표현이 나오면, 지문에서 그런 단정적 표현이 있는지 확인하고, 없으면 그 선지를 의심해라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Definitions can go awry when twisted from their original meaning.]"
+   }
+  },
+  {
+   "ts": "2026-08-18T05:48:13.040Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the roles and characteristics of different types of definitions in language",
+     "self-evident truths in mathematical axioms",
+     "how definitions influence the acceptance of truths as obvious",
+     "the universal applicability of all definitions as binding rules",
+     "words frequently used when constructing definitions"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Definitions' diverse types and functions'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Definitions]\n[오답 진단·처방]\n① 진단: 정의의 '역할'과 '특성'을 지문에서 직접 다루지 않으며, '다른 유형의 정의'라는 개념도 등장하지 않음. 학생은 '정의'라는 단어에만 집중해 오해한 듯함. → 처방: 지문에서 정의하는 단어의 '의미'와 '사용 예시'에 집중하고, '정의 자체의 역할'은 생각하지 않도록 문제 접근 방식을 바꿔라.\n② 진단: 수학적 '공리'의 의미를 '자명한 진리'로만 오독했으며, 지문에서 '수학적 공리'는 예시일 뿐 주제가 아님. 학생은 '공리'라는 단어에만 끌려갔음. → 처방: 지문의 주제를 찾기 위해 '지문 전체가 설명하는 핵심'을 먼저 찾고, '예시'는 보조 자료로만 활용하라.\n④ 진단: '모든 정의가 보편적으로 적용되는 규칙'이라는 과장된 해석을 했고, 지문은 '정의가 어떻게 받아들여지는지'에 초점을 둠. 학생은 '보편성'이라는 단어를 오해해 선택한 듯함. → 처방: 지문의 핵심 문장('정의가 어떻게 진리를 자명하게 만드는지')을 찾고, '보편적 규칙'이라는 과장된 표현은 배제하라.\n⑤ 진단: '정의 구성 시 자주 쓰이는 단어'라는 오해를 했고, 지문은 '정의된 단어의 사용'을 예시로만 제시할 뿐 주제가 아님. 학생은 '단어'라는 단어에만 주목한 듯함. → 처방: 지문의 주제를 '글 전체가 전달하는 메시지'로 파악하고, '단어의 빈도' 같은 세부 사항은 무시하라."
+   }
+  },
+  {
+   "ts": "2026-08-18T05:48:27.811Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 6 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 6단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 저녁 식사 대화는 완전히 평범했습니다.\n주어진 단어: ( dinner / conversation / completely )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The dinner conversation was completely banal. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-18T04:54:43.711Z",
    "type": "안내문일치",
@@ -246,94 +333,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [수일치] ⓑ: 'the manuscript finally completed' → 'the manuscript was finally completed' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T23:40:11.602Z",
-   "type": "내용불일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
-    "passage": "COUNTERFACTUALS 91 that by saying that the similarity criteria for this counterfactual include the laws of nature. Unfortunately, the kangaroos required to test the hypothesis are highly unnatural beasts. They have an extraordinary high-speed bounding gait, like a two-legged cheetah, and insufficient ways of keeping their balance. This scenario must presuppose very unusual patterns for the evolution of species. Given the laws of nature governing biology, a kangaroo like ours except for the tail would have evolved some way of not toppling over, by walking instead of leaping, or developing a four-footed gait, or some other dodge. The hypothetical kangaroo is a monster. Some laws of nature, but not others, are carried over to establish the similarity we want between the actual and hypothetical worlds. Generally, the way we calculate what similarity requires depends on the understood nature of the hypothesis. For example, consider the features that might hold in tailless kangaroo worlds listed in (28): (28) Kangaroos have no tails, and",
-    "choices": [
-     "이 반사실적 시나리오에서 '법칙'은 자연법칙을 포함해야 한다",
-     "캥거루는 매우 빠른 속도의 도약 보행을 한다",
-     "캥거루는 균형을 유지할 수단이 부족한 동물이다",
-     "캥거루는 꼬리가 없는 가상 세계에서 균형을 유지하기 위한 방법을 개발했을 것이다",
-     "이 반사실적 시나리오에서 '법칙'은 자연법칙을 포함하지 않는다"
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장에서 '법칙'이 자연법칙을 포함해야 한다고 분명히 밝히지만, 학생은 이 부분을 놓치거나 '법칙'의 범위를 좁게 이해했을 수 있음. → 처방: 문제 풀이 전 지문 첫 문장을 꼼꼼히 읽고 '법칙'의 정의와 포함 범위를 정확히 파악하기.\n② 진단: 지문에 'They have an extraordinary high-speed bounding gait, like a two-legged cheetah'라고 명시되어 있지만, 학생은 이 부분을 오독하거나 'high-speed'를 '보통 속도'로 혼동했을 수 있음. → 처방: 지문 속 구체적인 표현(예: 'extraordinary high-speed')을 그대로 받아쓰듯 메모한 후 비교하기.\n③ 진단: 지문에 'insufficient ways of keeping their balance'라고 쓰여 있지만, 학생은 '균형 유지 수단이 부족하다'는 의미를 반대로 이해했거나 '충분하다'로 오해했을 수 있음. → 처방: 부정 표현(insufficient, not enough 등)이 나올 때는 반대 의미를 떠올린 후 다시 확인하기.\n④ 진단: 지문에 'a kangaroo like ours except for the tail would have evolved some way of not toppling over'라고 쓰여 있지만, 학생은 이 가상 진화를 '발전하지 않았을 것이다'로 잘못 해석했을 수 있음. → 처방: 가상 시나리오에서 'would have evolved'는 '~했을 것이다'로 해석하므로, 미래·가능성 관련 조동사의 의미를 정확히 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-17T23:46:29.614Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/3 다수결 2번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "selective adherence to natural laws in determining similarity criteria for counterfactual reasoning",
-     "the selective application of natural laws when assessing hypothetical scenario similarities",
-     "the need for rigid natural laws to establish counterfactual similarity standards",
-     "how natural laws define criteria for evaluating hypothetical scenario resemblances",
-     "ignoring natural laws entirely when judging counterfactual scenario similarities"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'The determination of similarity criteria in counterfactual reasoning depends on selective adherence to natural laws and the nature of the hypothetical scenario.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The determination of similarity criteria in counterfactual reasoning depends on selective adherence to natural laws and the nature of the hypothetical scenario.**]\n[오답 진단·처방]\n① 진단: 자연법칙의 '선택적 준수'라는 핵심 개념을 '선별적 적용'으로 오해하여 '준수'와 '적용'의 의미를 혼동했다. 지문은 '일부 법칙만' 유사성 기준에 포함된다고 설명하는데, 이를 '적용'으로만 이해한 듯하다. → 처방: 지문에서 '준수'와 '적용'의 차이를 정확히 파악하고, '선택적'의 의미를 '일부 법칙만 고려한다'는 정도로만 기억하기.\n③ 진단: '엄격한' 자연법칙의 필요성을 주장하는 것처럼 읽었는데, 지문은 오히려 '일부 법칙만' 유사성에 포함된다고 설명하여 '필요성'을 강조한 선지가 아님을 놓쳤다. → 처방: 지문에서 '일부 법칙만'이라는 표현을 찾아내고, '필요성'이나 '엄격함' 같은 단어는 오답 선지의 함정임을 기억하기.\n④ 진단: 자연법칙이 '기준을 정의한다'는 표현을 '유사성 기준을 평가하는 데 사용된다'는 뜻으로 오해했다. 지문은 자연법칙이 '일부만' 유사성에 포함된다고 설명하는데, 이를 '정의한다'는 말로 왜곡한 듯하다. → 처방: 지문에서 '유사성 기준'이 '자연법칙에 따라 정해진다'는 표현을 찾고, '정의한다'는 말이 '전체적으로 기준을 만든다'는 뜻이 아님을 기억하기.\n⑤ 진단: 자연법칙을 '완전히 무시한다'고 오해했는데, 지문은 '일부 법칙만' 유사성에 포함된다고 설명하여 '무시'가 아님을 놓쳤다. '일부'와 '완전히'의 차이를 혼동한 듯하다. → 처방: 지문에서 '일부 법칙만'이라는 단서를 찾고, '무시'는 '전혀 고려하지 않는다'는 뜻임을 기억하기."
-   }
-  },
-  {
-   "ts": "2026-08-17T23:46:41.912Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 자연스러운 한국어 문장: \"사실의 세계와 가상 세계 간의 유사성을 판단할 때는 가설의 본질에 따라 달랐던 자연 법칙을 적절히 선택해야 한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

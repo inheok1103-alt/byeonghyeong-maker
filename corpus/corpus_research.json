@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-18T04:59:55.173Z",
+ "updated": "2026-08-18T05:48:58.900Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-18T05:48:29.832Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "비교급 표현에서 'than' 뒤에는 명사구(noun phrase)가 오며, 비교 대상이 되는 명사는 관사(the)를 필수적으로 요구한다. 또한, 문법 오류는 비교 대상이 생략되거나 관사가 누락된 경우에 빈번히 발생한다.",
+   "rule": "비교급 문장에서 'A is ~er than B' 구조를 사용할 때, B는 반드시 'the + 명사' 형태로 구체화하여 비교 대상을 명확히 하도록 한다. 예를 들어, 'half than other'는 'half than the other'로 수정해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-18T04:59:31.435Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "과거시제 동사(found, needs, do n't)와 현재시제 동사(use, have) 간의 혼동이 빈번하며, 소유격(people's money → money from other people)과 목적격(there → their) 오류가 자주 발생한다.",
    "rule": "과거시제 문맥에서 현재시제 동사를 사용한 경우, 문장 전체를 과거시제로 통일하거나 현재시제 동사를 과거시제로 수정하라. 또한 소유격·목적격 오류는 문법 규칙에 맞게 's 소유격, from + 소유자, their/there/they' 등으로 수정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-15T14:44:32.044Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거시제와 현재시제, 명사구(NP) 구성에서 오류가 빈번하며, 특히 소유·복수·관계사 사용에서 일관된 규칙 미비로 문법적 오류가 발생한다.",
-   "rule": "CEFR B1 수준 내신 변형문제에서는 'have/has + 과거분사' 구문(완료시제)과 'a/an/the + 단수명사' 규칙을 중점적으로 오류 유도형으로 출제하라.",
    "sample": [
     "old english",
     "university press",
