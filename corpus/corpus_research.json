@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T10:49:07.423Z",
+ "updated": "2026-08-19T11:43:56.396Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T11:43:28.476Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "동사 뒤의 전치사 사용 오류가 빈번하며, 특히 'decrease', 'solidifies'와 같은 동사 뒤에 전치사가 불필요하게 삽입되는 패턴이 관찰된다. 또한 명사형 오류('competancy'→'competency', 'trasisional'→'transitional')도 빈번하다.",
+   "rule": "원서 코퍼스 패턴에 기반하여, 'decrease', 'solidify', 'force'와 같은 동사 뒤에 전치사를 불필요하게 삽입하는 오류를 교정하는 문제 출제 시, 해당 동사 뒤에는 전치사 없이 직접 목적어나 보어만 오도록 규칙화하여 변형 문제를 제작하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T10:48:40.497Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'make + 목적어 + to be + 형용사' 구조에서 'to be'가 생략되는 패턴이 빈번하며, 'as much as successful' 구조는 'as successful as'로 교정되어야 한다. 또한 'costumer'는 'customer'로, 'reflex'는 'thought'로, 'in guard'는 'on guard'로 수정되는 경향이 강하다.",
    "rule": "'make + 목적어 + 형용사' 구조(예: make them positive)를 빈칸 채우기나 오류수정 문항으로 출제할 때, 'to be'가 불필요하다는 점을 강조하여 'It usually makes them ______ more positive.'(정답: to be 삭제) 형태로 변형하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T20:46:58.402Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스 패턴은 관사(Art) 오류와 시제(tense) 오류가 빈번하며, 특히 관사가 누락되거나 잘못 사용되는 경우가 많다. 또한 결과(result)나 경험(experience)과 같은 명사가 복수형으로 잘못 쓰이거나 관사와 결합되지 않는 경우가 많다.",
-   "rule": "관사와 시제가 포함된 명사구(Noun Phrase)에서 관사가 누락되거나 잘못 사용된 경우, 또는 시제가 동사 원형으로 잘못 표기된 경우, 반드시 관사를 추가하고 시제를 동사 과거형으로 수정하여 문장을 완성하도록 오답을 설계하라.",
    "sample": [
     "old english",
     "university press",
