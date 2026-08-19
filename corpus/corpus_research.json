@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T19:48:23.798Z",
+ "updated": "2026-08-19T20:50:30.637Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T20:50:06.628Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서 'give rise to'와 같은 동사+명사 연어는 관사(a/the)의 사용이 필수적이며, 'in possession of'는 전치사+명사+전치사의 고정 구조로 관사 생략이 불가능하다는 패턴을 확인할 수 있다. 또한 'would like to'는 동사+to부정사의 연어로서 관사 없이도 자연스러운 반면, 'another one'은 'the other one'과의 혼동 가능성이 높은 연어임을 알 수 있다.",
+   "rule": "'동사+명사' 또는 '전치사+명사+전치사'로 구성된 고정 연어(예: give rise to, in possession of)에서는 관사의 생략이나 오용을 오답으로 설계하며, 특히 'another one'은 'the other one'과의 혼동을 유도하는 오답으로 활용한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T19:47:55.057Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "명사구(noun phrase) 내 복수형/단수형 오류와 부정관사(a/an) 선택 오류가 빈번하며, 동사 시제(present/past tense) 및 부정어(nagative→negative) 오류도 연어 패턴과 연관되어 자주 발생한다.",
    "rule": "복수형/단수형 오류를 방지하기 위해 문장 내 명사구의 수 일치성을 반드시 확인하고, 부정관사(a/an)는 후속 명사의 첫 음소에 따라 'a' 또는 'an'을 선택하도록 문항을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T07:19:11.580Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 'old English', 'English grammar', 'English language' 등 영어 학문 관련 명사구가 빈번하고, 문법 오류 수정에서 'but', 'and' 등 접속사의 생략 또는 오용이 두드러진다. 또한 'without a clear understanding', 'familiar with' 등 전치사 구문이 오류 쌍에서 자주 등장한다.",
-   "rule": "'Not only A, but B' 또는 'A, and B' 구조에서 'but'이나 'and'를 생략하지 말고 반드시 삽입하여 병렬 구조를 유지하라. 특히 'Not only A, but B'는 문두에서 'Not only'가 사용될 때 필수적으로 적용된다.",
    "sample": [
     "old english",
     "university press",

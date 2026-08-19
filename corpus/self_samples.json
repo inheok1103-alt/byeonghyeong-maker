@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-19T19:48:23.801Z",
+ "updated": "2026-08-19T20:50:30.642Z",
  "samples": [
+  {
+   "ts": "2026-08-19T20:47:09.129Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": 1,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "These three also occur (A) [frequently / rarely]. Command Pattern : Verb ….. Stop !Go home ! Request Pattern : Polite Word /Verb …Please leave now . Instruction Pattern .Auxiliary /not/ Verb…Don’t go there. Word Order Sequences: In addition to whole sentence pattern, various kinds of word sequences within sentences can be used to identify word forms. Knowledge of common word sequences enables readers to predict what kinds of words will mostly precede or follow certain other words. Readers can look for (B) [unfamiliar / familiar] sequences as they read, and as long as they recognize the other words in that sequence, can supply the one they don’t know form their background knowledge. For example, word order provides clues as to what words might appear in the following blank spaces: The _________teacher Ran home __________ Cute _______ The first blank requires an (C) [adverb / adjective] such as strict , or knowledgeable ; the second ,an adverb such as quickly or slowly ,and the third , a noun such as child , baby , or puppy. The most predictable English word order sequences include the following: Adjective /noun",
+    "choices": [
+     "(A) rarely - (B) unfamiliar - (C) adverb",
+     "(A) frequently - (B) familiar - (C) adjective",
+     "(A) frequently - (B) unfamiliar - (C) adverb",
+     "(A) rarely - (B) familiar - (C) adverb",
+     "(A) rarely - (B) unfamiliar - (C) adjective"
+    ],
+    "answer": 2,
+    "explanation": "정답 조합: (A) frequently - (B) familiar - (C) adjective. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문 첫머리 'These three also occur (A) [frequently / rarely]'에서 'rarely'를 선택했는데, 이는 'Command Pattern', 'Request Pattern', 'Instruction Pattern'이 자주 일어난다는 문맥을 오해한 결과다. 'frequently'가 맞는 이유는 세 패턴이 '자주' 일어난다는 뜻이기 때문이다. → 처방: 문장 첫 부분에서 'occur'가 쓰인 이유를 확인하고, '자주 일어난다'는 문맥에 맞게 'frequently'를 선택하도록 연습한다.\n③ 진단: 지문 'readers can look for (B) [unfamiliar / familiar] sequences as they read'에서 'unfamiliar'를 선택했는데, 이는 '익숙한 순서'를 찾는다는 문맥을 오해한 결과다. 'familiar'이 맞는 이유는 이미 알고 있는 순서를 찾기 때문이다. → 처방: 지문에서 'familiar sequences'가 '익숙한 순서'를 뜻한다는 점을 확인하고, '익히 아는 패턴'을 찾는다는 뜻임을 기억한다.\n④ 진단: 지문 'The first blank requires an (C) [adverb / adjective]'에서 'adverb'를 선택했는데, 'strict'이나 'knowledgeable' 같은 단어가 형용사라는 사실을 오해한 결과다. 'adjective'가 맞는 이유는 'strict teacher'처럼 형용사가 필요하기 때문이다. → 처방: 빈칸 앞에 오는 단어가 '___ teacher'로 명사 앞에 위치한다는 점을 확인하고, 형용사가 와야 한다는 규칙을 기억한다.\n⑤ 진단: 지문 (A)에서 'rarely'를, (B)에서 'unfamiliar'를, (C)에서 'adjective'를 선택했는데, 이는 문맥을 오해하고 세부 규칙을 혼동한 결과다. 'frequently', 'familiar', 'adjective'가 맞다는 사실을 놓쳤다. → 처방: 각 빈칸의 문맥을 따로따로 확인하고, 패턴과 단어 종류를 정확히 구분하여 선택하도록 연습한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-19T19:47:32.585Z",
    "type": "내용불일치",
@@ -317,25 +350,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'We should write clearly without oversimplifying complex ideas.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·인과 전도·범위 축소·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘무조건 단순화’라는 표현이 지문에서 ‘과도하게 단순화하지 않고’와 혼동됨. 지문은 복잡한 내용을 ‘적절히’ 단순화해야 한다고 강조함. → 처방: 복잡한 내용을 ‘적절히’ 단순화하는지 확인하는 습관을 기르자.\n③ 진단: ‘아예 다루지 않아야’가 지문의 ‘복잡한 주제를 다루되 명확하게 써야 한다’는 취지와 반대됨. 지문은 복잡한 주제를 ‘적절히’ 전달해야 한다고 강조함. → 처방: 복잡한 주제를 ‘제대로’ 전달하는지 점검하는 연습을 반복하자.\n④ 진단: ‘언제나 간단한 문장으로만 써야 한다’는 지문의 ‘복잡한 내용을 과도하게 단순화하지 말라’는 조언과 충돌됨. 지문은 ‘적절한’ 문장 길이를 강조함. → 처방: 문장의 길이나 복잡도를 ‘필요에 따라’ 조절하는 연습을 하도록 하자.\n⑤ 진단: ‘단순화하지 않고도’가 지문의 ‘과도한 단순화 없이’와 혼동됨. 지문은 ‘적절한 단순화’를 통해 명확성을 높이라고 설명함. → 처방: ‘적절한 단순화’가 무엇인지 예문을 찾아보며 스스로 판단하는 습관을 들이자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: We should write clearly without oversimplifying complex ideas.]"
-   }
-  },
-  {
-   "ts": "2026-08-19T10:48:38.721Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Some argue that all sentences should be short, no more than fifteen or twenty words.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 어떤 사람들은 모든 문장이 15~20단어 이내로 짧아야 한다고 주장합니다. (구문 포인트: that절 내의 'no more than fifteen or twenty words'가 '15~20단어 이내로'라는 한정적 의미를 나타내는 구문 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
