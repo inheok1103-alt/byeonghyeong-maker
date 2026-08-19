@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-19T09:08:51.062Z",
+ "updated": "2026-08-19T09:53:31.212Z",
  "samples": [
+  {
+   "ts": "2026-08-19T09:52:51.397Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 2번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "WEEK 20 DAY 5 REVIEW There are many choice epithets* for cockroaches, and over the centuries man has been most resourceful* in concocting* adjectives to describe the insects. Whether you are going to get excited over a roach, write a poem, take a College Board examination, or compose a letter to a loved one, it helps to have a rich vocabulary. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. REVIEW WORDS DEFINITIONS 1.abstemious a. different 2.derogatory b. sentimental 3.disparate c. building 4.edifice d. very sad 5.extant e. humor, lightness of disposition 6.indict f. vague, not clear 7.levity g. expressing a low opinion 8.lugubrious h. eating any kind of food 9.maudlin i. accuse 10.nebulous j. state of rest 11.omnivorous k. still existing 12.pesky l. powerful 13.puissant m. annoying 14.redolent n. fragrant 15.repose o. moderate in eating or drinking 16.reviled p. keen, sharp, biting 17.sultry q. torrid 18.trenchant r. difficulties 19.unabated s. without subsiding 20.vicissitudes t. scolded\n\n─────────\n[요약문] A rich vocabulary aids in (A) expression and helps avoid (B) confusion when describing roaches or other topics.",
+    "choices": [
+     "(A) writing … (B) clarity",
+     "(A) precision … (B) ambiguity",
+     "(A) emotion … (B) boredom",
+     "(A) creativity … (B) distraction",
+     "(A) communication … (B) misinterpretation"
+    ],
+    "answer": 2,
+    "explanation": "(A) communication / (B) misinterpretation 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘writing’(A)과 ‘clarity’(B)가 지문에서 ‘글쓰기’나 ‘명확성’을 직접 언급하지 않음. ‘rich vocabulary’가 ‘글쓰기’에만 도움된다고 오해한 듯. → 처방: ‘rich vocabulary’의 역할이 ‘표현의 정확성’임을 확인하고, ‘clarity’(명확성)가 아닌 ‘precision’(정확성)을 찾아보기.\n③ 진단: ‘emotion’(A)과 ‘boredom’(B)이 지문의 ‘표현력’이나 ‘어휘’와 무관한 감정에 치중. ‘rich vocabulary’가 감정 표현에만 도움된다고 오해. → 처방: ‘rich vocabulary’의 핵심 기능이 ‘정확한 표현’이란 점을 기억하고, ‘emotion’이나 ‘boredom’이 아닌 ‘precision’을 우선 고려하기.\n④ 진단: ‘creativity’(A)와 ‘distraction’(B)이 지문에서 ‘창의성’이나 ‘산만함’을 언급하지 않음. ‘rich vocabulary’가 ‘창의성’에만 도움이 된다고 오해한 듯. → 처방: ‘rich vocabulary’가 ‘창의성’보다 ‘정확한 표현’에 더 중점을 둔다는 점을 떠올리고, ‘distraction’이 아닌 ‘ambiguity’를 찾아보기.\n⑤ 진단: ‘communication’(A)과 ‘misinterpretation’(B)이 지문에서 ‘의사소통’이나 ‘오해’를 직접 언급하지 않음. ‘rich vocabulary’가 ‘의사소통’에만 도움된다고 오해한 듯. → 처방: ‘rich vocabulary’가 ‘의사소통의 정확성’을 높인다는 점을 떠올리고, ‘misinterpretation’이 아닌 ‘ambiguity’를 찾아보기."
+   }
+  },
+  {
+   "ts": "2026-08-19T09:53:00.308Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "WEEK 20 DAY 5 REVIEW There are many c_____ epithets* for cockroaches, and over the centuries man has been most resourceful* in concocting* adjectives to describe the insects. Whether you are going to get excited over a roach, write a poem, take a College Board examination, or compose a letter to a loved one, it helps to have a rich vocabulary. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. REVIEW WORDS DEFINITIONS 1.abstemious a. different 2.derogatory b. sentimental 3.disparate c. building 4.edifice d. very sad 5.extant e. humor, lightness of disposition 6.indict f. vague, not clear 7.levity g. expressing a low opinion 8.lugubrious h. eating any kind of food 9.maudlin i. accuse 10.nebulous j. state of rest 11.omnivorous k. still existing 12.pesky l. powerful 13.puissant m. annoying 14.redolent n. fragrant 15.repose o. moderate in eating or drinking 16.reviled p. keen, sharp, biting 17.sultry q. torrid 18.trenchant r. difficulties 19.unabated s. without subsiding 20.vicissitudes t. scolded",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] choice — 문단의 논지상 이 자리에는 'choice'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-19T07:57:42.515Z",
    "type": "밑줄함의",
@@ -269,59 +323,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] I am driven crazy by him. (포인트: 능동문(He drives me crazy)을 수동문(I am driven crazy by him)으로 전환하며 'by him'을 명시적으로 처리)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-19T02:00:15.048Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 4 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 4단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 테이블을 설정하십시오\n주어진 단어: ( please / table )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Please set the table. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T23:39:02.268Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "특정한 대상을 다른 것과 구별하려고 이름을 임의로 정한다는 사실을 설명하려고",
-     "이름이 고유한 성격을 띠게 된다는 사실을 설명하려고",
-     "이름을 통해 대상을 구별하는 방식을 예시로 설명하려고",
-     "이름이 대상을 구별하는 유일한 수단이라고 주장하려고",
-     "이름이 구체적인 대상을 가리킬 때만 임의로 정해진다고 설명하려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'To distinguish a specific entity from others, a name is arbitrarily chosen to become a proper name.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 이름이 '고유한 성격'을 띠게 된다는 점(②)을 지문의 핵심 논점(이름이 대상을 구별하는 수단으로 쓰이는 점)으로 오해한 것으로 보임. 지문은 이름이 '구별'의 도구로 쓰인다는 사실을 설명하지, '고유한 성격' 자체를 다루지 않음. → 처방: 이름이 대상을 구별하는 수단으로 어떻게 쓰이는지(예: 임의로 정해지는 경우)를 먼저 확인하고, 그 다음에 '고유한 성격'이란 말이 나오는지 확인할 것.\n③ 진단: 이름을 '구별하는 방식'을 '예시'로 설명한다는 점(③)을 지문의 구조(이름이 대상을 구별하는 원리 설명)로 오해한 것으로 보임. 지문은 '방식'을 설명하지 않고, 이름이 대상을 구별하는 '원리'를 설명함. → 처방: 지문의 주제가 '이름이 대상을 구별하는 원리'인지, 아니면 '예시'인지를 먼저 판단할 것. 여기서는 원리 설명이므로, 예시가 아니라 원리를 찾도록 집중할 것.\n④ 진단: 이름이 '유일한 수단'이라고 주장한다는 점(④)을 지문의 내용(이름이 대상을 구별하는 '하나의 수단'일 뿐, 유일한 수단은 아님)으로 오해한 것으로 보임. 지문은 '이름이 대상을 구별하는 수단 중 하나'임을 암시하지, '유일'하다고 주장하지 않음. → 처방: 지문에서 '유일한 수단'이라는 말이 나오는지 확인하고, 없다면 그 주장은 지문과 무관하다는 점을 기억할 것.\n⑤ 진단: 이름이 '구체적인 대상'일 때만 임의로 정해진다는 점(⑤)을 지문의 내용(이름이 구체적인 대상을 가리킬수록 '임의로 정해질 확률이 높아진다'는 점)으로 오해한 것으로 보임. 지문은 '확률'을 언급하지, '오직 그때만'이라는 절댓값을 언급하지 않음. → 처방: 지문의 '확률'이라는 단어를 주의 깊게 읽고, '절대적'인 표현(예: '오직', '반드시')이 있는지 확인할 것.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To distinguish a specific entity from others, a name is arbitrarily chosen to become a proper name.]"
    }
   }
  ]

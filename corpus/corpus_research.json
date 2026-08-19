@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T09:08:51.058Z",
+ "updated": "2026-08-19T09:53:31.209Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T09:53:02.576Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사 오류('safety' vs 'safe')와 고유명사 오류('Juju Island' vs 'Jeju Island')가 빈번하며, 동사 오류('understend'→'understand')와 전치사 오류('trust on it'→'trust it')도 자주 발생한다.",
+   "rule": "시험 문항에서 명사, 고유명사, 동사, 전치사의 오류를 각각 최소 1개씩 포함하여 출제하며, 오류 유형은 실제 코퍼스에서 빈번한 패턴(예: 'safe→safety', 'Juju→Jeju', 'understend→understand', 'trust on→trust')을 우선 반영한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T09:08:22.333Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 'reason relations' 패턴(논리적 전개)에서 'Hence'와 같은 접속사가 문장 맨 앞에 오면 문장부호(콤마)로 분리하는 경우가 빈번하며, 'group rule'→'group rules'와 같이 복수형 오류가 자주 발생함을 확인했다.",
    "rule": "'Hence', 'Since', 'For example'와 같은 접속사가 문장 맨 앞에 오면 반드시 콤마(,)로 문장과 분리하여 쓰도록 문제화한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T18:49:52.831Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'most of the' 뒤에 중복된 'the'가 자주 나타나며, 'take the future'는 'create the future'로 자연스러운 표현이 대체됨. 또한 'yong genaration'은 'younger generation'으로, 'close'는 문맥에 따라 'closed'로 시제와 형태가 조정되어야 함.",
-   "rule": "'most of the' 다음에 오는 명사구에서 중복된 'the'를 제거하고, 'take'와 같은 동사는 'create'·'shape'·'influence' 등으로 CEFR B1/B2 수준에 맞는 자연스러운 동사로 대체하며, 시제 오류(close→closed, study before→check beforehand)도 반드시 수정하여 문장을 완성하라.",
    "sample": [
     "old english",
     "university press",
