@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-19T20:50:30.642Z",
+ "updated": "2026-08-19T21:50:54.915Z",
  "samples": [
+  {
+   "ts": "2026-08-19T21:49:51.217Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Confusing Words and Homonyms 39 mood an emotional state mooed the sound a cow made moose an animal mousse type of dessert morning start of the day, between night and afternoon mourning sorrow over someone’s death muscle ﬁbrous tissue mussel edible marine bivalve mustard yellow condiment mustered assembled, gathered naval pertaining to ships navel belly button, umbilicus need (see knead) new (see knew) night (see knight) no (see know) none not one, not any nun female member of a religious order nose (see knows) not (see knot) number (see amount) oar a blade for rowing or conjunction ore metal-bearing mineral or rock odd (see awed) of (see have) on to vs. onto Use onto if you can add up before on. Examples: He climbed (up) onto the roof. She held on to her child in the crowd.",
+    "choices": [
+     "'mooed'는 소가 내는 소리를 뜻하지 않는다",
+     "'moose'는 동물의 한 종류를 가리킨다",
+     "'mourning'은 누군가의 죽음에 대한 기쁨을 의미한다",
+     "'mussel'은 먹을 수 없는 해산물 연체동물이다",
+     "'navel'은 손목을 가리키는 말이다"
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'mooed'는 '소의 소리'를 뜻한다고 나와 있는데, 학생은 이를 반대로 오해한 것 같다. → 처방: 단어의 뜻을 정확히 외우고, 예문과 함께 기억하기.\n③ 진단: 지문에서 'mourning'은 '슬픔'을 뜻한다고 했는데, 학생은 '기쁨'으로 오독했다. → 처방: 뜻을 외울 때 반대말이나 유사어와 비교하지 말고, 문맥 속에서 정확히 파악하기.\n④ 진단: 지문에서 'mussel'은 '먹을 수 있는' 해산물 연체동물이라고 했는데, 학생은 '먹을 수 없다'고 오독했다. → 처방: 단어 뜻을 외울 때 긍정·부정 형태를 꼼꼼히 확인하고, 예문으로 확인하기.\n⑤ 진단: 지문에서 'navel'은 '배꼽'을 뜻하는데, 학생은 '손목'으로 오해했다. → 처방: 단어 뜻을 외울 때 신체 부위와 관련이 있는지 확인하고, 그림이나 도표와 함께 기억하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-19T21:49:57.464Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 9 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'challenging', 'fascinating', 'Homophones' / 7~11단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Homophones can make learning English both challenging and fascinating.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 7~11단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-19T20:47:09.129Z",
    "type": "네모어휘ABC",
@@ -281,75 +335,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Harkov's contention that population growth will be a serious problem is widely disputed. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-19T14:00:23.098Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "EXERCISE 28b — Write three sentences using the objects in parentheses. Be sure to put the objects in the right place. 1. The White House ⓐ<u>beefed</u> up. (security, it) 2. The police are ⓑ<u>breaking</u> up. (the protest, it) 3. A trained technician ought to ⓒ<u>drop</u> out. (the experiment, it) 4. The foundation ⓓ<u>gave</u> away. (the money, it) 5. Susie always ⓔ<u>messes</u> up. (the bathroom, it) 6. Todd stood up. (Heather, her) EXERCISE 28c — Write answers to the questions using phrasal verbs and participle adjectives from this unit. Make all the phrasal verbs passive. 1. Dr. Wood will do the test of the new drug. What will happen to the test? 2. The statue was smashed by thieves. What happened to the gold statue? 3. The children made the house dirty and disorganized. What happened to the house? 4. In Question 3, how would you describe the house? 5. Mike’s friend promised to come to his house, but he didn’t. What happened to Mike? 6. Karen called Sarah, but Sarah was at school. Sarah didn’t call Karen later. What didn’t happen to Karen?",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ: 문맥상 'carry'가 와야 하는데 'postpone'가 쓰여 부적절하다 — ‘ought to carry out’는 실험을 ‘실행’하라는 뜻으로, 실험의 진행을 지시하는 문맥에서 ‘postpone(연기하다)’는 논리적 대조를 일으키며 문맥에 부적절하다.. [극성] 정답=실행(증가·진행) ↔ 오답=연기(감소·중단)\n[오답 진단·처방]\n① 진단: ‘it’이 ‘security’를 가리키지 않고 ‘The White House’를 가리킨다고 혼동한 듯합니다. ‘beef up’이 ‘~을 강화하다’라는 뜻이므로 ‘it’이 ‘security’를 받아야 하는데, ‘it’이 ‘The White House’를 받으면 ‘The White House 가 강화되었다’가 되어 문맥이 맞지 않습니다. → 처방: ‘it’을 ‘security’를 받는 대명사로 바꾸어 ‘The White House be beefed up security by it.’이라고 써야 합니다.\n② 진단: ‘it’이 ‘the protest’를 가리키지 않고 ‘The police’를 가리킨다고 오해한 듯합니다. ‘break up’이 ‘~을 해산시키다’라는 뜻이므로 ‘it’이 ‘the protest’를 받아야 하는데, ‘it’이 ‘The police’를 받으면 ‘경찰이 해산되고 있다’가 되어 문맥이 맞지 않습니다. → 처방: ‘it’을 ‘the protest’를 받는 대명사로 바꾸어 ‘The police are breaking up the protest by it.’이라고 써야 합니다.\n④ 진단: ‘it’이 ‘the money’를 가리키지 않고 ‘The foundation’을 가리킨다고 오해한 듯합니다. ‘give away’이 ‘~을 기부하다’라는 뜻이므로 ‘it’이 ‘the money’를 받아야 하는데, ‘it’이 ‘The foundation’을 받으면 ‘기금이 기부되었다’가 되어 문맥이 맞지 않습니다. → 처방: ‘it’을 ‘the money’를 받는 대명사로 바꾸어 ‘The foundation gave away the money by it.’이라고 써야 합니다.\n⑤ 진단: ‘it’이 ‘the bathroom’를 가리키지 않고 ‘Susie’를 가리킨다고 오해한 듯합니다. ‘mess up’이 ‘~을 엉망으로 만들다’라는 뜻이므로 ‘it’이 ‘the bathroom’를 받아야 하는데, ‘it’이 ‘Susie’를 받으면 ‘Susie 가 엉망이 되었다’가 되어 문맥이 맞지 않습니다. → 처방: ‘it’을 ‘the bathroom’를 받는 대명사로 바꾸어 ‘Susie always messes up the bathroom by it.’이라고 써야 합니다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T10:48:24.389Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "글쓰기는 복잡한 내용을 과도하게 단순화하지 않고도 명확하게 전달할 수 있어야 한다.",
-     "명확한 글쓰기는 복잡한 내용을 무조건 단순화하는 방법으로만 이루어진다.",
-     "글쓰기는 복잡한 주제를 아예 다루지 않아야만 명확해진다.",
-     "복잡한 주제는 언제나 간단한 문장으로만 써야 한다.",
-     "글쓰기는 복잡한 내용을 단순화하지 않고도 독자들이 쉽게 이해할 수 있도록 해야 한다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'We should write clearly without oversimplifying complex ideas.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·인과 전도·범위 축소·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘무조건 단순화’라는 표현이 지문에서 ‘과도하게 단순화하지 않고’와 혼동됨. 지문은 복잡한 내용을 ‘적절히’ 단순화해야 한다고 강조함. → 처방: 복잡한 내용을 ‘적절히’ 단순화하는지 확인하는 습관을 기르자.\n③ 진단: ‘아예 다루지 않아야’가 지문의 ‘복잡한 주제를 다루되 명확하게 써야 한다’는 취지와 반대됨. 지문은 복잡한 주제를 ‘적절히’ 전달해야 한다고 강조함. → 처방: 복잡한 주제를 ‘제대로’ 전달하는지 점검하는 연습을 반복하자.\n④ 진단: ‘언제나 간단한 문장으로만 써야 한다’는 지문의 ‘복잡한 내용을 과도하게 단순화하지 말라’는 조언과 충돌됨. 지문은 ‘적절한’ 문장 길이를 강조함. → 처방: 문장의 길이나 복잡도를 ‘필요에 따라’ 조절하는 연습을 하도록 하자.\n⑤ 진단: ‘단순화하지 않고도’가 지문의 ‘과도한 단순화 없이’와 혼동됨. 지문은 ‘적절한 단순화’를 통해 명확성을 높이라고 설명함. → 처방: ‘적절한 단순화’가 무엇인지 예문을 찾아보며 스스로 판단하는 습관을 들이자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: We should write clearly without oversimplifying complex ideas.]"
    }
   }
  ]
