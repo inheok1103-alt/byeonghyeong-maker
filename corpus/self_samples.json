@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-19T03:13:39.193Z",
+ "updated": "2026-08-19T04:08:22.759Z",
  "samples": [
+  {
+   "ts": "2026-08-19T04:01:19.336Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 1/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.33,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Lesson 3: The Past 41 7. When the fire breaked out, the alarm was sounding so all of the children exited the building. Fortunately, <u>no one was being hurt. 8. Yesterday the boss didn’t knew what time he was going to arrive at the meeting. He came from Montreal and was stuck in traffic on the highway. 9. He is not alive anymore but my uncle Dan was coming from Texas and was having a thick American accent. 10. At the post office the clerk was weighing the package and calculating the postage. Then I was paying and was leaving. EXERCISE 3</u>: TRANSLATION Translate each sentence using the correct form of the verb in parentheses. 1. Quand j’étais jeune j’avais une tante qui sentait le tabac. (be, have, smell like) \b 2. Pourquoi faisais-tu l’idiot hier? (be) \b 3. Il m’en a parlé ce matin. (talk about) \b 4. Il m’en parlait avant la réunion. (talk about) \b 5. Elle avait l’air mieux quand je l’ai vue. (look, see) \b",
+    "choices": [
+     "The strong tobacco smell on my aunt came from her recent decision to quit smoking.",
+     "My aunt carried an unmistakable scent that revealed her lifelong habit and identity.",
+     "My aunt occasionally smelled like tobacco due to a temporary cough.",
+     "My aunt occasionally smoked cigarettes, which made her smell like tobacco.",
+     "My aunt’s clothing had a faint tobacco scent, which she disliked intensely."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'My aunt carried an unmistakable scent that revealed her lifelong habit and identity.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문 'sentait le tabac'은 '담배 냄새가 났다'로 '평생의 습관과 정체성'을 암시하는데, ①은 '최근 금연 결정'으로 과거 습관을 부정하여 오해. → 처방: 지문에서 'sentait le tabac'가 현재형 과거( imparfait)로 쓰였는지 확인하고, 습관·특징을 나타내는 표현임을 떠올리기.\n③ 진단: 지문은 '평생의 습관'을 뜻하는 'sentait le tabac'이지만, ③은 '일시적인 기침'으로 임시적 현상으로 오해. → 처방: imparfait 가 습관·특징을 나타낸다는 규칙을 떠올리고, 'sentait'가 일상적 상태임을 확인하기.\n④ 진단: 지문은 '담배 냄새가 나는 정체성'을 뜻하지만, ④는 '가끔 피운 담배'로 빈도를 오해. → 처방: imparfait 가 반복·습관을 나타낸다는 점을 떠올리고, 'sentait'가 지속적 특징임을 확인하기.\n⑤ 진단: 지문은 '담배 냄새가 나는 사람'이지만, ⑤는 '옷에 남은 냄새'로 대상(사람 vs 옷)을 오해. → 처방: 주어 'ma tante'가 사람임을 확인하고, 'sentait'가 주체(사람)의 상태임을 떠올리기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-19T03:12:30.064Z",
    "type": "목적",
@@ -299,25 +332,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 이 문장들은 'very'와 같은 정도 부사 없이도 'touchy', 'stupid', 'odd'가 그대로 형용사로 쓰일 수 있음을 보여준다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T19:42:40.764Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "Ray English 지문 전문 · 원문 그대로 35번 무관한 문장 · I R R E L E V A N T 디지털 미니멀리즘 무관 ③ 무관: 주제는 ‘디지털 미니멀리즘→정신건강 개선’인데 ③은 ‘구매 결정 위해 SNS 의존’(주제 이탈). 소재 디지털 미니멀리즘과 정신건강 Digital minimalism and mental health 주제 디지털 사용을 줄이면 정신 건강이 좋아진다 Less digital use improves mental health 제목 디지털 미니멀리즘의 효과 Digital Minimalism Improves Mental Health 한눈에 디지털 미니멀리즘(디지털 사용을 의도적으로 줄이기)이 정신 건강을 개선한다는 글이다. 스탠퍼드 연구의 스트레스 감소, 알림 축소로 인한 의미 있는 교류, 번아웃 직장인의 회복 사례가 주제를 뒷받침한다. (‘구매 위해 SNS 의존’은 주제와 어긋난 무관 문장.) 지문 전문 — 시험지 원문 It is evident through various case studies that ⓐ<u>adopting digital minimalism can lead</u> to improved mental health outcomes. ① For instance, a study conducted by researchers at Stanford University found that participants who limited their use of social media and digital devices reported lower levels of stress, anxiety, and depression. ② ⓑ<u>By reducing the constant stream</u> of information and notifications, individuals were able to focus more on meaningful interactions and activities that promoted well-being. ③ Additionally, participants reported ⓒ<u>relying on social media for getting</u> information for their purchasing decisions. ④In another case, a corporate professional struggling with burnout and insomnia ⓓ<u>implemented digital minimalism techniques</u>, such as setting boundaries for phone usage and practicing mindfulness. ⑤ As a result, he ⓔ<u>experienced improved sleep quality</u>, reduced stress levels, and a newfound sense of calm and clarity. * insomnia: 불면증 지문 전문 · 원문 그대로",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓒ: 'relying on social media for getting' → 'relying on social media to get' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

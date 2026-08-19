@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T03:13:39.189Z",
+ "updated": "2026-08-19T04:08:22.754Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T04:04:04.433Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'diverse knowledges'와 같이 가산명사 복수형이 비문법적인 경우, 'knowledge'는 불가산명사로 처리되어야 한다. 또한 'old information'은 'outdated information'으로 교정되어야 하며, 불가산명사의 특성상 'an'이 삭제되어야 한다.",
+   "rule": "'가산명사 복수형 오류'는 'diverse knowledges' → 'diverse knowledge'로, '불가산명사 오류'는 'old information' → 'outdated information'으로 수정하는 규칙을 적용하여 문항을 설계한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T03:13:10.169Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거형 동사(choosed, used)와 현재형 동사(means)가 혼용된 오류가 빈번하며, 명사구(noun phrase) 내 한정사(middle english, few)의 위치·형태 오류가 자주 발생한다.",
    "rule": "과거 시제 동사는 '-ed' 규칙·불규칙형을 정확히 구분하여 사용하며, 명사구 내 한정사는 명사 앞에 위치하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T13:03:00.591Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'possession'과 'year after year'가 반복되는 구문에서 오류가 빈발하며, 복수형 명사나 관사 사용의 혼동이 두드러진다. 'reason'의 복수형 'reasons'가 'these'와 결합하지 않거나 관사가 누락되는 경우가 많다.",
-   "rule": "'For these reasons'와 같이 복수형 명사(이 경우 'reasons')는 반드시 지시사 'these'와 결합하고, 문장 초반에 사용될 때는 대문자로 시작하도록 한다. 또한 'year after year'와 같은 반복 구문은 오류 없이 정확히 표기되도록 주의하라.",
    "sample": [
     "old english",
     "university press",
