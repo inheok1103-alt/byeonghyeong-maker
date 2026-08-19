@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T04:08:22.754Z",
+ "updated": "2026-08-19T04:56:55.044Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T04:56:32.610Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스는 'become an experts'와 같이 관사 오류(복수명사 앞 관사 불필요)나 'a big chance'→'a great chance'와 같은 연어 오류가 빈번하다는 점을 보여준다. 또한 'in my opinion is'와 같은 주어-동사 불일치 오류도 다수 발견된다.",
+   "rule": "'become/be/become' 다음에는 복수명사가 오면 관사 없이 사용해야 하며, 'chance'는 'great'과 결합하는 연어가 표준이므로 오답지로 '(a) big chance'를 제시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T04:04:04.433Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'between two'와 'in the wild' 같은 전치사구 패턴이 빈번히 나타나며, 문법 오류에서도 전치사(On → On the, in → in the)나 관사(are hobbies → enjoy learning) 오류가 다수 관찰된다.",
    "rule": "CEFR B1 수준 내신 변형문제에서 전치사구(예: 'on the Discovery Channel', 'in the wild')와 관사(예: 'the animals', 'a group') 사용 규칙을 필수 포함하여 출제하며, 특히 전치사 오류(On → On the, in → in the)나 관사 누락/오용(are hobbies → enjoy learning, your → you're) 문제를 직접 수정하도록 문장을 구성한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T13:49:53.785Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형 동사(choosed, used)와 현재형 동사(means)가 혼용된 오류가 빈번하며, 명사구(noun phrase) 내 한정사(middle english, few)의 위치·형태 오류가 자주 발생한다.",
-   "rule": "과거 시제 동사는 '-ed' 규칙·불규칙형을 정확히 구분하여 사용하며, 명사구 내 한정사는 명사 앞에 위치하도록 한다.",
    "sample": [
     "old english",
     "university press",
