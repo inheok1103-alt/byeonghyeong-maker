@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-19T16:50:23.919Z",
+ "updated": "2026-08-19T17:50:13.468Z",
  "samples": [
+  {
+   "ts": "2026-08-19T17:43:09.266Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 4번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Contradicting Default Assumptions in Language",
+     "Reversing the Logic of Linguistic Norms",
+     "Limited Scope of Gendered Language Conventions",
+     "Cultural Stereotypes Embedded in Grammatical Rules",
+     "Overlooking Unmarked Categories in Everyday Speech"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'Markedness: when default assumptions clash with reality'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Markedness: when default assumptions clash with reality]\n[오답 진단·처방]\n① 진단: 기본 가정(assumption)을 '언어의 모순'으로 오해하고, 'default assumption'이란 용어가 지문에서 '문화적 고정관념'을 가리키는 줄 모르고 있음. 지문은 'nurse'가 보통 여성으로 여겨진다는 '문화적 stereotype'을 문제 삼지만, ①은 'assumption'을 '논리적 모순'으로 오독함. → 처방: 지문에서 'default assumption'이란 '사회적 고정관념'을 뜻한다는 점을 확인하고, 'assumption'이 '논리'가 아니라 '문화'에 기반함을 기억할 것.\n② 진단: '논리'와 '규범'을 혼동하여, 지문이 '문화적 stereotype'을 다루는 줄 모르고 '언어 규범의 역전'으로 오해함. 지문은 'nurse'가 여성으로 여겨지는 '문화적 관습'을 문제 삼지만, ②는 '논리적 역전'으로 오독함. → 처방: 지문의 '논리'가 아니라 '문화적 관습'에 초점을 맞추고, '규범'이란 단어의 의미를 '사회적 관습'으로 재해석할 것.\n③ 진단: 'gendered language conventions'이란 표현을 '제한된 범위'로 오해하고, 지문이 'nurse'라는 단어의 '성별 고정관념'을 다루는 줄 모르고 있음. 지문은 'nurse'가 여성으로 여겨지는 '문화적 stereotype'을 문제 삼지만, ③은 '범위'라는 단어로 오독함. → 처방: 'conventions'가 '문화적 관습'을 뜻한다는 점을 확인하고, '제한된 범위'가 아니라 '일반적 고정관념'임을 기억할 것.\n⑤ 진단: 'unmarked categories'란 용어를 '표시되지 않은 범주'로 오해하고, 지문이 'nurse'가 여성으로 여겨지는 '문화적 stereotype'을 다루는 줄 모르고 있음. 지문은 'markedness'가 '표시된(특별한) 범주'를 뜻한다는 점을 몰라 'unmarked'를 '무시된'으로 오독함. → 처방: 'markedness'가 '특별한 범주'를 뜻한다는 점을 확인하고, 'unmarked'가 '일반적인' 범주를 뜻한다는 점을 기억할 것."
+   }
+  },
+  {
+   "ts": "2026-08-19T17:49:36.992Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "CHAPTER 2 Markedness and Blocking Why is it odd to say *'a female nurse', while it is r_________ to say 'a male nurse'? If you point to your thumb and ask 'Is this a finger?' you will probably not get a 'Yes' answer. You can then ask 'How many fingers do you have?' and will almost certainly get an answer of 'Ten'. Is language really so illogical? Let us begin with a parody of a familiar puzzle. One day, John went shopping with his mother. On the way their car was hit by a truck and his mother was killed. John was seriously injured and taken to a hospital in an ambulance. One of the nurses in the emergency room was startled, and cried, 'Oh my God, that's my son!' Who was this nurse? This puzzle takes advantage of the fact that in our culture nurses are usually women. This assumption, however, contradicts the story that John's mother had just died. When you finally",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] reasonable — 문단의 논지상 이 자리에는 'reasonable'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-19T15:48:11.820Z",
    "type": "틀린문장 고쳐쓰기",
@@ -284,66 +336,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] choice — 문단의 논지상 이 자리에는 'choice'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T07:57:42.515Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "The fact that both on the nose and right on the nose can occupy focus position in a cleft sentence suggests that both are PP/prepositional phrase constituents: right on the nose cannot be an ADVP/adverbial phrase since we see from (26b) above that adverbial expressions cannot be focused in cleft sentences. The conclusion we reach from the data in (26-27) above is that the adverb right in right on the nose serves to <u>extend the prepositional expression on the nose into the even larger prepositional expression right on the nose</u>. Using the bar notation introduced in (17) above, we can analyse right on the nose in the following terms. The preposition on merges with its DP complement the nose to form the intermediate prepositional projection on the nose which has the categorial status of P ' (or P-bar, pronounced ‘pee-bar’); the resulting P-bar on the nose is then merged with the adverb right to form the PP below:",
-    "choices": [
-     "The adverb 'right' is used to correct or emphasize the exact location implied by 'on the nose', highlighting the idea of being perfectly aligned.",
-     "The word 'right' modifies 'on the nose' to intensify the sense of absolute accuracy or correctness in a given context.",
-     "The adverb 'right' intensifies and expands the spatial or metaphorical scope of the prepositional phrase 'on the nose', emphasizing precision or directness.",
-     "By adding 'right', the phrase 'right on the nose' suggests a stronger, more literal interpretation of precision rather than metaphorical extension.",
-     "The adverb 'right' serves to narrow the scope of 'on the nose' to a literal, direct meaning, excluding any broader or figurative interpretations."
-    ],
-    "answer": 3,
-    "explanation": "밑줄 친 부분은 'The adverb 'right' intensifies and expands the spatial or metaphorical scope of the prepositional phrase 'on the nose', emphasizing precision or directness.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘correct or emphasize the exact location’에서 ‘correct’는 ‘right’의 의미를 ‘바로잡다’로 오해했으며, ‘highlighting the idea of being perfectly aligned’은 ‘on the nose’의 ‘정확한 위치’를 강조하는 것이지 ‘right’의 역할이 아님을 혼동. → 처방: ‘right’를 ‘바로잡다’가 아닌 ‘완전히, 정확히’의 뜻으로만 기억하고, ‘on the nose’의 의미를 ‘정확한 위치’로 좁히지 말고 ‘정확한 정렬’로 넓게 이해하기.\n② 진단: ‘intensify the sense of absolute accuracy’를 ‘강조’로만 해석해 ‘expand’의 의미를 놓쳤으며, ‘correctness’의 ‘정확성’이 ‘on the nose’의 ‘정확한 위치’를 뜻하는지 혼동. → 처방: ‘intensify’가 ‘강조’뿐 아니라 ‘확장’의 의미도 가질 수 있음을 기억하고, ‘right on the nose’를 ‘정확한 위치’를 넘어 ‘더 큰 범위의 정확한 정렬’로 이해하기.\n④ 진단: ‘stronger, more literal interpretation’을 ‘literal’이 아닌 ‘직접적인’으로 오해해 ‘metaphorical extension’의 의미를 무시했으며, ‘precision’의 ‘정확성’이 ‘literal’과 ‘metaphorical’을 모두 포함함을 혼동. → 처방: ‘literal’이 ‘직접적인’뿐 아니라 ‘문자 그대로’의 뜻도 있음을 기억하고, ‘right on the nose’를 ‘정확한 위치’를 넘어 ‘더 큰 범위의 정확한 정렬’로 이해하기.\n⑤ 진단: ‘narrow the scope’를 ‘제한하다’로만 해석해 ‘expand’의 의미를 놓쳤으며, ‘literal’이 아닌 ‘metaphorical’을 배제하는 오해로 ‘right’의 역할을 ‘축소’로 오인. → 처방: ‘narrow’의 반대 의미인 ‘expand’가 ‘right’의 역할임을 기억하고, ‘right’를 ‘확장’시키는 요소로 이해하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T07:17:43.987Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "V Irregular verbs In the past tense some verbs can have either an irregular t ending or the regular ed ending. These verbs are burn, learn, smell, spell, spill and spoil. The British prefer the t ending, although ed is Americans normally use the ed ending, also possible. They burnt/burned the old sofa. They burned the old sofa. You've spelt/spelled this word wrong. You've spelled this word wrong. But we say e.g. a slice of burnt toast in both British and American English. In Britain the verbs dream, lean and leap can be regular, or they can have a t ending. I dreamt/dreamed about you. I dreamed about you. These three forms ending in t have the vowel sound /e/. For example, dreamt is pronounced /dremt/, and dreamed is pronounced /dri:md/. The verb dive is regular in Britain but can be irregular in the US. Craig dived into the water. Craig dived/dove into the water.",
-    "choices": [
-     "과거형에서 'burn'은 'burnt' 또는 'burned'로 변할 수 없다",
-     "미국인들은 'spell'의 과거형을 'spelled'로 주로 쓴다",
-     "영국에서는 'dream'이 'dreamt' 또는 'dreamed'로 과거형을 만들 수 없다",
-     "영국에서 'leap'의 과거형은 'leapt' 또는 'leaped'가 모두 불가능하다",
-     "미국에서 'dive'는 과거형이 'dove'로 통일된다"
-    ],
-    "answer": 2,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'burn'은 과거형으로 'burnt' 또는 'burned'로 변할 수 있다고 나와 있는데, 이를 '변할 수 없다'로 오독한 것 같다. → 처방: 'burn'의 과거형이 'burnt' 또는 'burned'로 모두 가능하다는 사실을 기억하고, 지문에서 예시를 다시 한 번 확인하기.\n③ 진단: 지문에서 영국에서도 'dream'이 'dreamt' 또는 'dreamed'로 과거형을 만들 수 있다고 명시되어 있는데, 이를 '만들 수 없다'로 오독한 것 같다. → 처방: 지문에서 'dream'의 과거형이 영국에서도 두 가지가 모두 가능하다는 점을 다시 한 번 읽고, 혼동하지 않도록 주의하기.\n④ 진단: 지문에서 영국에서 'leap'의 과거형은 'leapt' 또는 'leaped'가 모두 가능하다고 나와 있는데, 이를 '모두 불가능하다'로 오독한 것 같다. → 처방: 'leap'의 과거형이 영국에서 'leapt'와 'leaped'로 모두 쓰인다는 사실을 기억하고, 지문에서 예시를 다시 확인하기.\n⑤ 진단: 지문에서 미국에서 'dive'는 과거형이 'dived'가 일반적이지만 'dove'도 가능하다고 나와 있는데, 이를 '통일된다'로 오독한 것 같다. → 처방: 'dive'의 과거형이 미국에서도 'dived'가 기본이지만 'dove'도 가끔 쓰인다는 점을 기억하고, 지문에서 'can be irregular'이라는 표현을 주의해서 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]

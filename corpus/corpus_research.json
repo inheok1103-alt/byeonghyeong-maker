@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T16:50:23.914Z",
+ "updated": "2026-08-19T17:50:13.464Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T17:49:39.547Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구(NP) 내 한정사(some/one)와 수식어(loose/times/fans)가 잘못 배치된 오류가 빈번하며, 관사(the/a)나 복수형(-s) 오류와 결합되는 경우가 많다. 또한, 동사 시제(present tense)와 수식어(loose/outdated)의 시제 일치 오류도 자주 발생한다.",
+   "rule": "명사구 내 한정사와 수식어의 위치를 분석할 때, '한정사 + 수식어 + 명사' 구조가 기본 원칙임을 확인하고, 오류 문항에서는 이를 반대로 배치하거나 관사를 생략/오용하는 패턴을 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T16:49:56.956Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제 동사(과거분사 형태)가 수동의미로 잘못 쓰인 경우, 능동·미래·능동태로 수정되는 패턴이 다수 나타났다. 또한 'be + 과거분사' 구조가 불필요한 경우, 능동태·단순 미래·수동의미가 없는 형태로 재구성되었다.",
    "rule": "수동태(be + 과거분사)가 문맥상 필요하지 않거나 오류인 경우, 능동태·단순 미래·능동태+형용사 등으로 대체하여 자연스러운 문장으로 재구성하라. 예: 'will be took' → 'will become' / 'is un known' → 'are unknown'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T04:07:36.902Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "영어에서 'return'은 주로 '되돌아오다', '회복되다'의 의미로 쓰이며 'reciprocate'와 같은 연어는 '도움을 베풀었을 때 상대방의 반응'을 나타낸다. 문장 구조상 'no return in his help'는 비문법적이거나 의미가 모호해진다.",
-   "rule": "원서 코퍼스에서 'return in'의 실제 연어 빈도가 낮으므로, 'help'와 'return'의 잘못된 조합(예: 'no return in his help')을 오답으로 출제하여 'reciprocate'나 'appreciation'과 같은 적절한 동사·명사의 연어를 선택하도록 한다.",
    "sample": [
     "old english",
     "university press",
