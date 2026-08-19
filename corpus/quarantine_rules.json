@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-19T07:18:58.136Z",
+ "updated": "2026-08-19T08:03:36.587Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 어법 문항은 제시된 지문이 문법적으로 완전하고 의미상 명확해야 하며, 정답으로 의도된 단 하나의 오류를 제외한 모든 요소는 어법적으로 올바라야 한다.",
+   "src": "자가학습:어법(밑줄)",
+   "score": 58,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-19T07:56:41.474Z"
+  },
+  {
+   "rule": "모든 영어 문법·어휘 관련 문항은 통사적 엄밀성과 원문 의미 일치성을 확보하며, '강조·확장' 개념은 'intensifier·extension'으로, '완화·대체'는 오류로 배제하여 출제할 것.",
+   "src": "자가학습:밑줄함의",
+   "score": 79,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-19T07:57:19.244Z"
+  },
   {
    "rule": "모든 선지는 지문에서 **직접 언급된 표현**으로만 구성해야 하며, 중복·과잉·부족한 정보 없이 **원문과 100% 일치**하는 근거로만 출제해야 한다.",
    "src": "자가학습:안내문일치",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-16T03:14:16.608Z"
-  },
-  {
-   "rule": "X-bar theory makes conjunction asymmetric between conjuncts.",
-   "src": "자가학습:조건영작",
-   "score": 65,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-16T03:15:04.780Z"
-  },
-  {
-   "rule": "모든 출제의 선지는 선택지를 4개 이상으로 완성하고, 발문을 간결하게 수정하여 읽기 쉽게 할 것.",
-   "src": "자가학습:어법(밑줄)",
-   "score": 83,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-16T01:58:45.760Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
