@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-19T14:01:31.279Z",
+ "updated": "2026-08-19T14:56:48.737Z",
  "samples": [
+  {
+   "ts": "2026-08-19T14:55:26.499Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 1/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the role of academic vocabulary in improving reading and argumentation",
+     "the influence of reading comprehension on academic vocabulary acquisition",
+     "the necessity of academic vocabulary for reading alone",
+     "the absolute requirement of academic vocabulary for all academic tasks",
+     "the importance of academic vocabulary without considering context"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The impact of academic vocabulary mastery on reading comprehension and argumentation skills'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘reading comprehension’이 ‘academic vocabulary acquisition’에 미치는 영향을 주제로 오해했는데, 지문은 학술어휘가 읽기·논증 능력 향상에 어떤 역할을 하는지를 다룬다. 선지 2는 인과관계가 반대이며, 지문 어디에도 Reading comprehension → academic vocabulary acquisition 은 없다. → 처방: 문제에서 ‘역할(role)’이나 ‘영향(influence)’이란 단어가 나오면, 지문의 핵심 내용(학술어휘가 읽기·논증에 ‘기여한다’는 점)을 떠올리며 선지를 다시 읽어라. ‘acquisition’이란 단어가 나오면 ‘습득’이란 뜻으로만 한정하지 말고, 지문 전체 흐름을 먼저 확인하라.\n③ 진단: ‘academic vocabulary’의 필요성을 ‘읽기 alone(오로지 읽기)’에 한정했는데, 지문은 읽기뿐 아니라 ‘argumentation(논증)’도 포함한다고 분명히 언급한다. ‘for reading alone’이란 말은 지문의 ‘읽기·논증’ 범위를 축소해 해석한 오류다. → 처방: ‘necessity(필요성)’이나 ‘for ~ alone’이란 표현이 나오면, 지문에서 해당 단어가 어떤 맥락에서 쓰였는지 다시 확인하라. 지문은 ‘읽기와 논증’ 두 가지를 모두 언급하니, ‘alone’이란 단어가 나오면 ‘이것만으로 충분한가’를 의심하라.\n④ 진단: ‘absolute requirement(절대적 요구)’란 표현을 보고 ‘모든 학술 활동에 반드시 필요’하다고 과장했는데, 지문은 ‘읽기·논증’에 초점을 맞추고 ‘모든’ 학술 활동까지 확장하지 않는다. ‘all academic tasks’라는 말은 지문의 범위를 넘어선다. → 처방: ‘absolute requirement’나 ‘all’이라는 표현이 나오면, 지문에서 해당 범위가 어디까지인지 정확히 확인하라. 지문은 ‘읽기와 논증’에 한정하므로, ‘all’이라는 말이 나오면 ‘이 범위 안에 있는가’를 다시 점검하라.\n⑤ 진단: ‘context(맥락)’를 무시하고 ‘academic vocabulary’의 중요성만 강조했는데, 지문은 학술어휘가 ‘맥락에 따라’ 어떻게 쓰이는지를 다룬다. 선지 5는 ‘맥락’을 배제하고 ‘중요성’만 강조한 오류다. → 처방: ‘context’라는 단어가 나오면, 지문에서 해당 단어가 어떤 의미로 쓰였는지 다시 확인하라. 지문은 학술어휘가 ‘맥락에 맞게’ 쓰여야 한다는 점을 강조하므로, ‘맥락’을 배제한 선지는 오답일 가능성이 높다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The impact of academic vocabulary mastery on reading comprehension and argumentation skills]"
+   }
+  },
+  {
+   "ts": "2026-08-19T14:56:12.486Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 13 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 13단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 인구 증가가 심각한 문제가 될 것이라는 하르코프의 주장은 널리 논란이 되고 있다.\n주어진 단어: ( harkov's / contention / population )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Harkov's contention that population growth will be a serious problem is widely disputed. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-19T14:00:23.098Z",
    "type": "어휘(밑줄)",
@@ -288,44 +342,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Difficulty in performing multiple grammatical inversions simultaneously in question formation'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: ‘wh- movement rules’를 ‘wh- word 를 앞으로 옮기는 것’으로만 오독하여, 두 번째 ‘도움동사+주어 도치’까지 고려하지 않았음(지문: ‘wh- movement rules’가 아닌 ‘두 가지 도치’를 동시에 해야 한다고 지적). → 처방: ‘wh- question formation’에서 ‘wh- movement’만 아니라 ‘inversion’도 반드시 포함된다는 점을 기억하고, 두 과정을 차례로 점검할 것.\n③ 진단: ‘multiple grammatical rules conflict’를 ‘문법 규칙 간의 충돌’로 오해하여, 실제로는 ‘두 가지 도치 과정이 동시에 일어나야 함’을 보지 못했음(지문: ‘두 가지 도치를 한꺼번에 못해서 생긴 문제’로 설명). → 처방: ‘문제 상황’을 ‘규칙 충돌’이 아니라 ‘동시 수행의 어려움’으로 재정의하고, 각 도치 과정을 따로따로 확인할 것.\n④ 진단: ‘기본 wh- question’을 못 만든다고 오독하여, 실제 문제는 ‘기본’보다 ‘복잡한 도치’에 있었음(지문: ‘기본 wh- question’이 아니라 ‘두 가지 도치’를 못해서 생긴 오류). → 처방: ‘기본 wh- question’과 ‘도치 wh- question’을 구분하고, 도치 wh- question 일 때는 ‘wh- word 옮기기’ 다음에 ‘도치 확인’을 꼭 추가할 것.\n⑤ 진단: ‘grammatical inversions 가 필요할 때’의 문제를 ‘wh- question formation’의 일반적인 문제로 오독하여, ‘필요한 도치’를 못했을 때만 문제가 생긴다는 점을 놓쳤음(지문: ‘도치가 필요한 경우에만 오류가 생김’). → 처방: ‘inversion 이 필요한지’를 먼저 확인한 뒤, 필요하면 ‘wh- word 옮기기’와 ‘도치’를 차례로 적용할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Difficulty in performing multiple grammatical inversions simultaneously in question formation]"
-   }
-  },
-  {
-   "ts": "2026-08-19T05:48:22.091Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 두 가지 도치가 동시에 일어나야 하는 문장에서 한 가지는 제대로 했지만 다른 하나는 제대로 못 했다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T04:56:30.543Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] Old Frisian does not show a reduplicating class of verbs.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Not until Old Frisian do we find a reduplicating class of verbs. (포인트: 부정어 'not'을 문두로 이동시켜 주어-동사 도치 구문으로 전환)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

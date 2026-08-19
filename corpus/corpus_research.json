@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T14:01:31.277Z",
+ "updated": "2026-08-19T14:56:48.733Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T14:56:15.611Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거 시제와 현재 시제의 혼용, 미완료 동사형(close/open) 오류, 전치사(y/the) 오류가 빈번하며, 문장 내 논리적 연결(and, even though)도 부정확한 경우가 많다. 한국어 학습자에게는 문맥에 맞는 시제와 시제 일치, 전치사 사용, 논리적 접속사의 선택이 핵심 난이도 요소로 나타났다.",
+   "rule": "CEFR B1 수준 내신 문제에서는 과거 시제와 현재 시제의 혼용 오류, 전치사(y/the) 오류, 미완료 동사형(close/open) 오류를 의도적으로 삽입하여 문장 완성형 또는 오류 수정형으로 출제하라. 특히 'when + 주어 + 동사' 구조에서 시제 일치와 전치사 사용을 중점적으로 검증하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T14:01:00.639Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "연어 'year after year'와 'think much more'에서 불필요한 반복 구문(and, thus)의 오류가 자주 발생하며, 이는 구문 간 병렬 구조의 오류로 이어진다.",
    "rule": "병렬 구조에서 반복 구문(and, thus 등)을 사용할 경우, 반드시 세 개 이상의 항목에 대해 쉼표(,)로 구분하여 일관된 형식으로 표현해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T23:37:37.824Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 코퍼스는 '명사구 + 동사 + 전치사/부사' 구조가 빈번하며, 특히 'be + 과거분사 + 전치사' 패턴(예: 'was effected by')에서 오류가 자주 발생한다. 또한 'any more'와 'anymore'의 구분이 모호한 경우가 많다.",
-   "rule": "'be + 과거분사 + 전치사' 구조(예: 'is effected by')에서 과거분사가 전치사와 결합하지 않고 단독으로 쓰일 경우, 반드시 전치사를 추가하거나 동사 형태를 수정하라(예: 'is not an illusion but real' → 'is not an illusion but real'로 수정하거나 'is affected by'로 재구성).",
    "sample": [
     "old english",
     "university press",
