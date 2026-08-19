@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T04:56:55.044Z",
+ "updated": "2026-08-19T05:48:51.282Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T05:48:24.616Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거형과 현재형 동사의 혼용, 전치사 오용, 복수/단수 명사의 일치 오류가 빈번하게 관찰된다. 'dealed'→'dealt', 'needs to transportation'→'needs of transportation' 등에서 전형적 오류 패턴을 확인할 수 있다.",
+   "rule": "단수/복수 명사, 전치사, 시제 일치 오류를 검증하는 문항을 설계할 때, 'needs of transportation'(~의 필요) vs. 'needs to transportation'(불필요한 전치사) 패턴, 'have dealt' vs. 'have dealed'(불규칙 동사) 패턴, 'they will continue' vs. 'it will continue'(단수/복수 일치) 패턴을 반드시 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T04:56:32.610Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'Not only this, but...'와 같은 병렬 구조, 'would not be able to... in the tests' → 'would not be able to... on the tests'로 전치사 교정, 'shud' → 'should' 등 철자 오류가 빈번히 관찰된다. 또한 접속사 오류(Although → Althogh)도 패턴화할 수 있다.",
    "rule": "원서 코퍼스 기반 영어 문법 변형 문제에서, 접속사 병렬 구조('Not only... but...', 'Although...')와 전치사 오류('in the tests' → 'on the tests'), 조동사 오류('shud' → 'should')를 반드시 점검하여 오류를 수정하는 규칙을 적용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T14:42:17.710Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'between two'와 'in the wild' 같은 전치사구 패턴이 빈번히 나타나며, 문법 오류에서도 전치사(On → On the, in → in the)나 관사(are hobbies → enjoy learning) 오류가 다수 관찰된다.",
-   "rule": "CEFR B1 수준 내신 변형문제에서 전치사구(예: 'on the Discovery Channel', 'in the wild')와 관사(예: 'the animals', 'a group') 사용 규칙을 필수 포함하여 출제하며, 특히 전치사 오류(On → On the, in → in the)나 관사 누락/오용(are hobbies → enjoy learning, your → you're) 문제를 직접 수정하도록 문장을 구성한다.",
    "sample": [
     "old english",
     "university press",
