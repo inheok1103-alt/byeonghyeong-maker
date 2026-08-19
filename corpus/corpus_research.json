@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T05:48:51.282Z",
+ "updated": "2026-08-19T07:18:58.137Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T07:18:25.747Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'between two' 패턴이 빈번히 나타나며, 특히 'between + 명사 + and + 명사' 구조가 일반화되어 있음이 확인된다. 또한, 'smaller'와 같은 비교급 형용사가 'was'와 같은 단수 동사와 결합하는 경우가 많고, 'less'가 불가산 명사와 호응하는 경향이 강하다.",
+   "rule": "원서 패턴을 반영하여, 'between A and B' 구조에서 A와 B가 명사일 경우 반드시 관사(the, a 등)를 포함하도록 변형 문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T05:48:24.616Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'old'와 'age'는 'old age'로 고정 연어(collocation)로 쓰이며, 'loose'는 'lose'로, 'oldage'는 'old age'로 분리되어야 한다. 또한 'form'은 'from'으로, 'term work'는 'team work'로 교정되어야 한다.",
    "rule": "시제(present/past tense) 오류와 연어(collocation) 오류를 혼합한 문항을 설계할 때는, 'have/has + 과거분사' 구조와 'old age', 'lose/loose', 'from/form' 등 고정 연어를 반드시 포함시켜 오답지를 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T15:38:12.449Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'Not only this, but...'와 같은 병렬 구조, 'would not be able to... in the tests' → 'would not be able to... on the tests'로 전치사 교정, 'shud' → 'should' 등 철자 오류가 빈번히 관찰된다. 또한 접속사 오류(Although → Althogh)도 패턴화할 수 있다.",
-   "rule": "원서 코퍼스 기반 영어 문법 변형 문제에서, 접속사 병렬 구조('Not only... but...', 'Although...')와 전치사 오류('in the tests' → 'on the tests'), 조동사 오류('shud' → 'should')를 반드시 점검하여 오류를 수정하는 규칙을 적용하라.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,85 @@
 {
- "updated": "2026-08-19T05:48:51.286Z",
+ "updated": "2026-08-19T07:18:58.140Z",
  "samples": [
+  {
+   "ts": "2026-08-19T07:17:43.987Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "V Irregular verbs In the past tense some verbs can have either an irregular t ending or the regular ed ending. These verbs are burn, learn, smell, spell, spill and spoil. The British prefer the t ending, although ed is Americans normally use the ed ending, also possible. They burnt/burned the old sofa. They burned the old sofa. You've spelt/spelled this word wrong. You've spelled this word wrong. But we say e.g. a slice of burnt toast in both British and American English. In Britain the verbs dream, lean and leap can be regular, or they can have a t ending. I dreamt/dreamed about you. I dreamed about you. These three forms ending in t have the vowel sound /e/. For example, dreamt is pronounced /dremt/, and dreamed is pronounced /dri:md/. The verb dive is regular in Britain but can be irregular in the US. Craig dived into the water. Craig dived/dove into the water.",
+    "choices": [
+     "과거형에서 'burn'은 'burnt' 또는 'burned'로 변할 수 없다",
+     "미국인들은 'spell'의 과거형을 'spelled'로 주로 쓴다",
+     "영국에서는 'dream'이 'dreamt' 또는 'dreamed'로 과거형을 만들 수 없다",
+     "영국에서 'leap'의 과거형은 'leapt' 또는 'leaped'가 모두 불가능하다",
+     "미국에서 'dive'는 과거형이 'dove'로 통일된다"
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'burn'은 과거형으로 'burnt' 또는 'burned'로 변할 수 있다고 나와 있는데, 이를 '변할 수 없다'로 오독한 것 같다. → 처방: 'burn'의 과거형이 'burnt' 또는 'burned'로 모두 가능하다는 사실을 기억하고, 지문에서 예시를 다시 한 번 확인하기.\n③ 진단: 지문에서 영국에서도 'dream'이 'dreamt' 또는 'dreamed'로 과거형을 만들 수 있다고 명시되어 있는데, 이를 '만들 수 없다'로 오독한 것 같다. → 처방: 지문에서 'dream'의 과거형이 영국에서도 두 가지가 모두 가능하다는 점을 다시 한 번 읽고, 혼동하지 않도록 주의하기.\n④ 진단: 지문에서 영국에서 'leap'의 과거형은 'leapt' 또는 'leaped'가 모두 가능하다고 나와 있는데, 이를 '모두 불가능하다'로 오독한 것 같다. → 처방: 'leap'의 과거형이 영국에서 'leapt'와 'leaped'로 모두 쓰인다는 사실을 기억하고, 지문에서 예시를 다시 확인하기.\n⑤ 진단: 지문에서 미국에서 'dive'는 과거형이 'dived'가 일반적이지만 'dove'도 가능하다고 나와 있는데, 이를 '통일된다'로 오독한 것 같다. → 처방: 'dive'의 과거형이 미국에서도 'dived'가 기본이지만 'dove'도 가끔 쓰인다는 점을 기억하고, 지문에서 'can be irregular'이라는 표현을 주의해서 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-19T07:18:17.603Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 1/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "V Irregular verbs In the past tense some verbs can have either an irregular t ending or the regular ed ending. These verbs are burn, learn, smell, spell, spill and spoil. The British prefer the t ending, although ed is Americans normally use the ed ending, also possible. They burnt/burned the old sofa. They burned the old sofa. You've spelt/spelled this word wrong. You've spelled this word wrong. But we say e.g. a slice of burnt toast in both British and American English. In Britain the verbs dream, lean and leap can be regular, or they can have a t ending. I dreamt/dreamed about you. I dreamed about you. <u>These three forms ending in t have the vowel sound /e/.</u> For example, dreamt is pronounced /dremt/, and dreamed is pronounced /dri:md/. The verb dive is regular in Britain but can be irregular in the US. Craig dived into the water. Craig dived/dove into the water.",
+    "choices": [
+     "The irregular past tense forms ending in /t/ were created because speakers preferred the vowel sound /e/.",
+     "The irregular past tense forms ending in /t/ reflect a historical shift in pronunciation that preserves an older linguistic pattern.",
+     "The vowel sound /e/ in irregular past tense forms ending in /t/ has consistently appeared in all English verbs.",
+     "Because past tense forms end in /t/, the vowel sound /e/ emerged in irregular verbs.",
+     "Forms ending in /t/ must always have the vowel sound /e/ in irregular past tense."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'The irregular past tense forms ending in /t/ reflect a historical shift in pronunciation that preserves an older linguistic pattern.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 /e/ 발음이 '선호'나 '창조'된 이유가 아니라 '보존'된 역사적 발음 변화임을 오독함. 'preferred'라는 단어를 '선호로 인해 생겨났다'로 잘못 해석함. → 처방: 지문에서 'preferred'는 '보통 ~를 사용한다'는 뜻임을 기억하고, 과거 발음 변화가 '보존'된 것임을 확인하기.\n③ 진단: 지문에서 'dreamt', 'leaned' 등 일부 동사만 /e/ 소리가 난다고 했는데, '모든 동사'에 해당한다고 오독함. 'consistently appeared in all English verbs'라는 과장된 표현을 사용함. → 처방: 지문에서 예시로 든 동사들만 /e/ 소리가 난다는 점을 확인하고, '모든 동사'라는 표현은 오류임을 인지하기.\n④ 진단: 지문에서 /t/로 끝나는 과거형이 '발생'한 이유가 아니라, '보존'된 역사적 발음 변화임을 오독함. 'emerged'라는 단어를 '발생했다'로만 해석하여 인과관계를 잘못 이해함. → 처방: 지문에서 'preserves an older linguistic pattern'이라는 구절을 찾아 과거 발음 변화가 '보존'된 것임을 명확히 확인하기.\n⑤ 진단: 지문에서 'dreamt', 'leant', 'leapt' 등 일부 동사만 /e/ 소리가 난다고 했는데, '항상' /e/ 소리가 난다고 오독함. 'must always'라는 절대적 표현을 사용해 과장됨. → 처방: 지문에서 예시로 든 동사들만 /e/ 소리가 난다는 점을 확인하고, '항상'이라는 표현은 오류임을 인지하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-19T07:18:23.802Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "V Irregular verbs In the past tense some verbs can have either an irregular t ending or the regular ed ending. These verbs are burn, learn, smell, spell, s____ and spoil. The British prefer the t ending, although ed is Americans normally use the ed ending, also possible. They burnt/burned the old sofa. They burned the old sofa. You've spelt/spelled this word wrong. You've spelled this word wrong. But we say e.g. a slice of burnt toast in both British and American English. In Britain the verbs dream, lean and leap can be regular, or they can have a t ending. I dreamt/dreamed about you. I dreamed about you. These three forms ending in t have the vowel sound /e/. For example, dreamt is pronounced /dremt/, and dreamed is pronounced /dri:md/. The verb dive is regular in Britain but can be irregular in the US. Craig dived into the water. Craig dived/dove into the water.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] spill — 문단의 논지상 이 자리에는 'spill'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-19T05:48:13.978Z",
    "type": "주제",
@@ -243,95 +322,6 @@
     ],
     "answer": 5,
     "explanation": "정답 조합: (A) 71 difference - (B) SQ muoh - (C) a. proper name. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: '71 difference'는 복수형 오류(71 differences 가 맞음), 'SQ much'는 철자 오류(SQ muoh), 'an proper name'은 'a'가 맞는 관사 사용(an 은 모음 앞). → 처방: 복수형은 's'를 붙이고, 철자는 원문을 정확히 확인하며, 관사는 'a'가 맞는 경우 'an'을 쓰지 않도록 주의하기.\n② 진단: '71 differences'는 맞지만 'SQ muoh'는 철자 오류(SQ much), 'an proper name'은 관사 오류(a 가 맞음). → 처방: 철자는 원문을 그대로 따라 쓰기, 관사는 명사 'proper name'이 자음으로 시작하니 'a'를 사용하기.\n③ 진단: '71 differences'는 맞지만 'SQ muoh'는 철자 오류(SQ much), 'an proper name'은 관사 오류(a 가 맞음). → 처방: 철자 오류는 원문을 정확히 보고 쓰기, 관사는 명사 앞에 오는 소리(자음/모음)를 확인해서 'a' 또는 'an' 선택하기.\n④ 진단: '71 differences'는 맞지만 'SQ much'는 철자 오류(SQ muoh), 'a. proper name'은 오류(정확한 표기는 'a proper name'이지만 지문에서 'a.'로 축약된 형태). → 처방: 철자는 원문을 확인하고, 축약형이 아닌 완전한 형태로 쓰기 위해 'a proper name'으로 기억하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T22:44:03.044Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Within these chapters you’ll find important concepts presented in an accessible, relatable way. Linear equations and inequalities, statistics and probability, functions, factoring polynomials, and solving and graphing quadratic equations are all presented as notes you can easily understand. <u>It’s algebra for the regular person.</u> Notes are presented in an organized way: • Important vocabulary words are highlighted in YELLOW . • All vocabulary words are clearly defined. • Related terms and concepts are written in BLUE PEN BLUE PEN. • Clear step-by-step examples and calculations are supported by explanations, color coding, illustrations, and charts. If you want something to use as a companion to your textbook that's fun and easy to understand, and you’re not so great at taking notes in class, this notebook will help. It hits all the key concepts you’ll learn in Pre-Algebra and Algebra 1.",
-    "choices": [
-     "The goal of this approach is to complicate simple ideas so that they become challenging even for average learners.",
-     "This material simplifies complex mathematical concepts to make them understandable and approachable for everyday learners.",
-     "This method ensures that only those who frequently engage with educational content will benefit from the learning process.",
-     "This expression literally means that the subject is connected to mathematics for ordinary individuals.",
-     "This idea suggests that algebra is naturally suited for people who have no prior experience with it."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'This material simplifies complex mathematical concepts to make them understandable and approachable for everyday learners.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘complicate simple ideas’를 ‘복잡하게 만든다’로 오해한 듯. 지문은 ‘accessible, relatable, easily understand’를 강조하는데, 정반대 의미를 담은 선지임. → 처방: ‘complicate’는 ‘복잡하게 하다’이므로, 지문에서 ‘accessible’이란 단어를 떠올리며 선지를 읽기.\n③ 진단: ‘only those who frequently engage’를 ‘자주 공부하는 사람만 benefit’이라는 뜻으로 오독. 지문은 ‘regular person’이란 표현으로 ‘평범한 사람도 쉽게’라는 의미를 강조함. → 처방: ‘only’를 포함하는 선지는 지문에서 ‘everyone’이란 단어가 있는지 확인하기.\n④ 진단: ‘literally means’로 문자 그대로 해석했지만, 지문은 ‘algebra for the regular person’이란 표현이 ‘쉽고 친근한 방식’이라는 비유적 의미를 담음. → 처방: ‘literally’는 ‘문자 그대로’이므로, 비유적 표현이 있는지 확인하고 ‘비유’임을 인지하기.\n⑤ 진단: ‘naturally suited’를 ‘어디에나 적합하다’로 오해. 지문은 ‘easy to understand’와 ‘fun’이라는 표현으로 ‘접근성’을 강조하지 ‘적합성’을 뜻하지 않음. → 처방: ‘suited’라는 단어가 ‘적합한’이란 뜻임을 기억하고, 지문에서 ‘easy’를 찾는 연습하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T22:44:24.924Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "Within these chapters you’ll find important concepts presented in an accessible, relatable way. ⓐ<u>Linear equations and inequalities</u>, statistics and probability, functions, factoring polynomials, and solving and graphing quadratic equations ⓑ<u>is all presented</u> as notes you can easily understand. ⓒ<u>It’s algebra for the regular person</u>. Notes are presented in an organized way: • Important vocabulary words are highlighted in YELLOW . • All vocabulary words ⓓ<u>are clearly defined</u>. • Related terms and concepts are written in BLUE PEN BLUE PEN. • Clear step-by-step examples and calculations are supported by explanations, color coding, illustrations, and charts. If you want something to use as a companion to your textbook that's fun and easy to understand, and you’re not so great at ⓔ<u>taking notes in class</u>, this notebook will help. It hits all the key concepts you’ll learn in Pre-Algebra and Algebra 1.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓑ: 'is all presented' → 'are all presented' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-18T21:41:52.432Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>MODALITY</u> AND POSSIBLE WORLDS reveals that a ⓑ<u>plane</u> which did not ⓒ<u>crash</u> may have been in danger which was averted by the ⓓ<u>pilot</u>’s action. On the emerging non-epistemic interpretation, the plane did crash but the pilot could have prevented it had things happened differently. A somewhat bizarre example of this shift is the headline GP Criticized over Death: Baby may have lived – Coroner. 5.1.3 ⓔ<u>Deontic</u> modality Modal auxiliaries also express deontic modality, which is concerned with compliance or compatibility with some code of behaviour or set of rules. Which code or set of rules is involved depends on the context and is determined pragmatically. Deontic necessity expresses what is required or compulsory, or what someone is obliged to do within the set of rules determined by the context, and deontic possibility expresses what is allowed or permitted within the rules. These are illustrated in (8) and (9): (8) deontic necessity",
-    "choices": [
-     "modality: The fact of being modal.",
-     "plane: A level or flat surface.",
-     "crash: A regulation, law, guideline.",
-     "pilot: A person who steers a ship, a helmsman.",
-     "deontic: Pertaining to necessity, duty or obligation, or expressions conveying this."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ의 풀이는 'rules'의 정의이다. 'crash'의 올바른 풀이: A sudden, intense, loud sound, as made for example by cymbals.\n[오답 진단·처방]\n① 진단: 지문에서 'modality'는 'MODALITY AND POSSIBLE WORLDS'라는 제목과 함께 'a plane which did not crash' 같은 문맥에서 '양태'를 뜻하는 학술 용어로 쓰였습니다. 학생은 'The fact of being modal'이라는 사전적 정의만 보고 '모달의 사실'로 오해했을 수 있습니다. → 처방: 지문에서 'modality'가 쓰인 맥락을 먼저 확인하고, 사전 정의가 아닌 문맥에 맞게 뜻을 유추하세요.\n② 진단: 지문에서 'plane'은 비행기(airplane)를 뜻하는 단어로 쓰였지만, 학생은 'level or flat surface'라는 평면의 의미를 떠올렸습니다. 문맥상 'plane which did not crash'는 비행기가 아닌 평면일 수 없으므로 오독입니다. → 처방: 단어의 뜻을 유추할 때는 지문 전체의 흐름을 보고, 문맥에 맞지 않는 사전 뜻은 배제하세요.\n④ 진단: 지문에서 'pilot'은 비행기의 조종사를 뜻하지만, 학생은 'a person who steers a ship'이라는 선장의 의미를 떠올렸습니다. 문맥상 'pilot’s action'은 비행기 조종과 관련이 있으므로 오독입니다. → 처방: 단어의 뜻을 확인할 때는 지문에서 그 단어가 가리키는 대상(예: 비행기, 배)을 먼저 떠올리고, 사전 뜻과 비교하세요.\n⑤ 진단: 지문에서 'deontic'은 '의무나 책임'과 관련된 양태를 뜻하지만, 학생은 'Pertaining to necessity, duty or obligation'이라는 정의만 보고 '의무'에만 집중했습니다. 문맥상 'deontic modality'는 규칙이나 규범과 관련이 있음을 유추해야 합니다. → 처방: 단어의 뜻을 유추할 때는 지문에서 그 단어가 설명하는 개념(예: 규칙, 의무)의 전체 범위를 확인하세요.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
