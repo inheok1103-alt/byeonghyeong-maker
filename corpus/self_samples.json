@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-19T19:01:48.486Z",
+ "updated": "2026-08-19T19:48:23.801Z",
  "samples": [
+  {
+   "ts": "2026-08-19T19:47:32.585Z",
+   "type": "내용불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하지 않는 것은? (지문 필수 동반)",
+    "passage": "Sentence Structure: Functions 22 We want to say that [3]‌ has the same general structure as [1]. Like [1], it can be divided into two CONSTITUENTS of the same CATEGORIES as the corresponding constituents of [1]. Furthermore, they have exactly the same syntactic FUNCTIONS as those in [1] –​ put another way, the relation between them is the same. In asking which word-​string in [3]‌ corresponds to ducks in [1], we’re asking which string in [3] could be replaced by the single word ducks while leaving a grammatical sentence. It has to be the ducks. Replacing that string by ducks yields the well-​formed sentence Ducks are paddling away. In each sentence, both ducks and the ducks could be replaced by the single word they. And the remainder of [3] –​ are paddling away –​ can be replaced by the single word paddle (from [1]), giving the well-​formed sentence The ducks paddle. This exhaustively divides [3]‌ into two, as in [4]:",
+    "choices": [
+     "[1]과 [3]은 두 구성 성분이 같은 범주에 속한다는 사실이 문장에 명시된다.",
+     "[1]과 [3]의 구성 요소들은 동일한 구문적 기능을 지닌다고 명시된다.",
+     "[1]과 [3]은 두 구성 성분이 같은 범주에 속하지 않는다는 사실이 문장에 명시된다.",
+     "[3]의 'are paddling away'는 'paddle'로 대체되어 문법적으로 옳은 문장을 만든다고 설명된다.",
+     "[1]과 [3] 모두에서 'ducks'와 'the ducks'는 'they'로 대체될 수 있다고 언급된다."
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: 지문에서 '[1]과 [3]은 두 구성 성분이 같은 범주에 속한다는 사실이 문장에 명시되지 않았다.'라고 오해한 듯하다. 하지만 지문은 '[1]과 [3]은 두 구성 성분이 같은 범주에 속한다는 사실을 전제로 설명을 시작한다. → 처방: 지문 전체를 꼼꼼히 읽고, 문장의 구조와 범주를 비교하는 부분을 다시 한 번 확인하며 읽기.\n② 진단: 지문에서 '[1]과 [3]의 구성 요소들은 동일한 구문적 기능을 지닌다고 명시된 부분을 보지 못한 듯하다. 지문은 'they have exactly the same syntactic functions as those in [1]'이라고 직접 언급한다. → 처방: 지문의 핵심 문장들을 밑줄 긋고, 'syntactic functions'가 언급된 부분을 찾아보기.\n④ 진단: 지문에서 '[3]의 'are paddling away'는 'paddle'로 대체되어 문법적으로 옳은 문장을 만든다고 설명된 부분을 놓쳤다. 지문은 'the remainder of [3] – are paddling away – can be replaced by the single word paddle'이라고 분명히 적혀 있다. → 처방: 지문에서 'replace'가 사용된 부분을 찾아내고, 대체 가능한 단어를 확인하기.\n⑤ 진단: 지문에서 '[1]과 [3] 모두에서 'ducks'와 'the ducks'는 'they'로 대체될 수 있다고 언급된 부분을 읽지 못한 듯하다. 지문은 'both ducks and the ducks could be replaced by the single word they'라고 설명한다. → 처방: 지문에서 'replace'와 'they'가 함께 언급된 부분을 찾아보기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-19T19:47:52.368Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "Sentence Structure: Functions 22 We want to say that [3]‌ ⓐ<u>has the same</u> general structure as [1]. Like [1], ⓑ<u>it can be divided</u> into two CONSTITUENTS of the same CATEGORIES as the corresponding constituents of [1]. Furthermore, they have exactly the same syntactic FUNCTIONS as ⓒ<u>those of [1]</u> –​ put another way, the relation between them is the same. In asking which word-​string in [3]‌ corresponds to ducks in [1], we’re asking which string in [3] could be replaced by ⓓ<u>the single word</u> ducks while leaving a grammatical sentence. It has to be the ducks. Replacing that string by ducks yields the well-​formed sentence Ducks are paddling away. In each sentence, both ducks and the ducks could be replaced by the single word they. And ⓔ<u>the remainder of [3]</u> –​ are paddling away –​ can be replaced by the single word paddle (from [1]), giving the well-​formed sentence The ducks paddle. This exhaustively divides [3]‌ into two, as in [4]:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [전치사] ⓒ: 'those of [1]' → 'those in [1]' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-19T17:43:09.266Z",
    "type": "제목",
@@ -282,60 +336,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 어떤 사람들은 모든 문장이 15~20단어 이내로 짧아야 한다고 주장합니다. (구문 포인트: that절 내의 'no more than fifteen or twenty words'가 '15~20단어 이내로'라는 한정적 의미를 나타내는 구문 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T09:52:51.397Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버교정: 솔버 3/3 다수결 2번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "WEEK 20 DAY 5 REVIEW There are many choice epithets* for cockroaches, and over the centuries man has been most resourceful* in concocting* adjectives to describe the insects. Whether you are going to get excited over a roach, write a poem, take a College Board examination, or compose a letter to a loved one, it helps to have a rich vocabulary. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. REVIEW WORDS DEFINITIONS 1.abstemious a. different 2.derogatory b. sentimental 3.disparate c. building 4.edifice d. very sad 5.extant e. humor, lightness of disposition 6.indict f. vague, not clear 7.levity g. expressing a low opinion 8.lugubrious h. eating any kind of food 9.maudlin i. accuse 10.nebulous j. state of rest 11.omnivorous k. still existing 12.pesky l. powerful 13.puissant m. annoying 14.redolent n. fragrant 15.repose o. moderate in eating or drinking 16.reviled p. keen, sharp, biting 17.sultry q. torrid 18.trenchant r. difficulties 19.unabated s. without subsiding 20.vicissitudes t. scolded\n\n─────────\n[요약문] A rich vocabulary aids in (A) expression and helps avoid (B) confusion when describing roaches or other topics.",
-    "choices": [
-     "(A) writing … (B) clarity",
-     "(A) precision … (B) ambiguity",
-     "(A) emotion … (B) boredom",
-     "(A) creativity … (B) distraction",
-     "(A) communication … (B) misinterpretation"
-    ],
-    "answer": 2,
-    "explanation": "(A) communication / (B) misinterpretation 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘writing’(A)과 ‘clarity’(B)가 지문에서 ‘글쓰기’나 ‘명확성’을 직접 언급하지 않음. ‘rich vocabulary’가 ‘글쓰기’에만 도움된다고 오해한 듯. → 처방: ‘rich vocabulary’의 역할이 ‘표현의 정확성’임을 확인하고, ‘clarity’(명확성)가 아닌 ‘precision’(정확성)을 찾아보기.\n③ 진단: ‘emotion’(A)과 ‘boredom’(B)이 지문의 ‘표현력’이나 ‘어휘’와 무관한 감정에 치중. ‘rich vocabulary’가 감정 표현에만 도움된다고 오해. → 처방: ‘rich vocabulary’의 핵심 기능이 ‘정확한 표현’이란 점을 기억하고, ‘emotion’이나 ‘boredom’이 아닌 ‘precision’을 우선 고려하기.\n④ 진단: ‘creativity’(A)와 ‘distraction’(B)이 지문에서 ‘창의성’이나 ‘산만함’을 언급하지 않음. ‘rich vocabulary’가 ‘창의성’에만 도움이 된다고 오해한 듯. → 처방: ‘rich vocabulary’가 ‘창의성’보다 ‘정확한 표현’에 더 중점을 둔다는 점을 떠올리고, ‘distraction’이 아닌 ‘ambiguity’를 찾아보기.\n⑤ 진단: ‘communication’(A)과 ‘misinterpretation’(B)이 지문에서 ‘의사소통’이나 ‘오해’를 직접 언급하지 않음. ‘rich vocabulary’가 ‘의사소통’에만 도움된다고 오해한 듯. → 처방: ‘rich vocabulary’가 ‘의사소통의 정확성’을 높인다는 점을 떠올리고, ‘misinterpretation’이 아닌 ‘ambiguity’를 찾아보기."
-   }
-  },
-  {
-   "ts": "2026-08-19T09:53:00.308Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "WEEK 20 DAY 5 REVIEW There are many c_____ epithets* for cockroaches, and over the centuries man has been most resourceful* in concocting* adjectives to describe the insects. Whether you are going to get excited over a roach, write a poem, take a College Board examination, or compose a letter to a loved one, it helps to have a rich vocabulary. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. REVIEW WORDS DEFINITIONS 1.abstemious a. different 2.derogatory b. sentimental 3.disparate c. building 4.edifice d. very sad 5.extant e. humor, lightness of disposition 6.indict f. vague, not clear 7.levity g. expressing a low opinion 8.lugubrious h. eating any kind of food 9.maudlin i. accuse 10.nebulous j. state of rest 11.omnivorous k. still existing 12.pesky l. powerful 13.puissant m. annoying 14.redolent n. fragrant 15.repose o. moderate in eating or drinking 16.reviled p. keen, sharp, biting 17.sultry q. torrid 18.trenchant r. difficulties 19.unabated s. without subsiding 20.vicissitudes t. scolded",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] choice — 문단의 논지상 이 자리에는 'choice'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

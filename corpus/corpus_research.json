@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T19:01:48.482Z",
+ "updated": "2026-08-19T19:48:23.798Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T19:47:55.057Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'point of views'처럼 복수형이면서도 의미상 단수 개념인 경우 'point of view'로 단수화해야 하며, 'caused her situation to be worse'는 'to be'를 생략하고 동사원형 'worsen'으로 대체하는 것이 자연스럽다. 또한 문장 시작 시 주어 없이 동사만 오는 경우(예: 'Second the amount...')는 콤마로 분리하여 완전한 절을 구성해야 한다.",
+   "rule": "복합명사(예: point of view)나 의미상 단수 개념의 복수형 표현은 단수형으로 통일하며, 'to be + 형용사' 구문은 'to + 동사원형'으로 대체하고, 문장 시작 시 주어 없이 오는 동사는 콤마로 분리하여 완전한 절로 재구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T19:01:13.996Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 'old English', 'English grammar', 'English language' 등 영어 학문 관련 명사구가 빈번하고, 문법 오류 수정에서 'but', 'and' 등 접속사의 생략 또는 오용이 두드러진다. 또한 'without a clear understanding', 'familiar with' 등 전치사 구문이 오류 쌍에서 자주 등장한다.",
    "rule": "'Not only A, but B' 또는 'A, and B' 구조에서 'but'이나 'and'를 생략하지 말고 반드시 삽입하여 병렬 구조를 유지하라. 특히 'Not only A, but B'는 문두에서 'Not only'가 사용될 때 필수적으로 적용된다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T05:55:43.594Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'but'와 'and' 같은 접속사를 과도하게 사용하거나 부정어의 중복이 문법 오류로 이어지는 패턴이 반복된다. 또한 'thing'이나 'car' 같은 일반 명사가 무관한 한정사 없이 사용되어 구체성이 떨어지는 경우가 많다.",
-   "rule": "'but', 'and', 'or' 등 접속사를 2회 이상 연속으로 사용하지 않도록 하며, 부정어는 단일로만 쓰도록 문항을 설계하라. 또한 무관한 일반 명사(예: thing, car)는 'one thing', 'personal cars'처럼 구체적인 한정사를 반드시 요구하도록 한다.",
    "sample": [
     "old english",
     "university press",
