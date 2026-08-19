@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-19T21:50:54.915Z",
+ "updated": "2026-08-19T22:46:15.389Z",
  "samples": [
+  {
+   "ts": "2026-08-19T22:44:42.762Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "이 글은 감사의 글에 사용된 책과 저자들을 나열하고 있다",
+     "이 글의 모든 책과 저자들은 글의 주제와 직접적인 관련이 있다",
+     "이 글은 다양한 책과 저자들을 인용·감사하며 학문적 영향을 밝히고 있다",
+     "이 글은 반드시 모든 책과 저자를 빠짐없이 언급해야만 한다",
+     "이 글은 감사의 글이 인용된 책과 저자들 때문에 더 신뢰성을 얻고 있다"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The acknowledgments list diverse books and articles to credit intellectual influences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: ‘감사의 글’이 아니라 ‘인용·감사’가 주된 목적임을 지문의 ‘ACKNOWLEDGMENTS’라는 제목과 책·저자·기관·기사명 목록(예: ‘Mathematics and the Imagination’, ‘The Meaning of Meaning’)을 통해 확인하지 못하고, 단순히 ‘감사의 글’로만 오독했다. → 처방: ‘ACKNOWLEDGMENTS’라는 제목과 책·기관·기사명이 나열된 형식을 보고, 이것이 단순히 감사가 아니라 ‘인용·감사’임을 먼저 확인하자.\n② 진단: ‘직접적인 관련’이 있는 것처럼 오해했는데, 지문은 ‘학문적 영향을 밝히는’ 목적으로 다양한 분야의 책과 저자를 나열한 것이지, 모든 책이 글의 주제와 ‘직접’ 관련 있는 것은 아니다(예: ‘The Handbook of Freshwater Fishing’). → 처방: ‘직접적인 관련’이 아니라 ‘다양한 학문적 영향을 밝히는 것’이 목적임을 인식하고, 책 제목이나 분야가 서로 달라도 ‘영향’을 받은 흔적임을 이해하자.\n④ 진단: ‘반드시 빠짐없이 언급해야만 한다’는 강제적 의미를 오해했는데, 지문은 ‘인용·감사’가 주목적이므로 ‘반드시’가 아니라 ‘필요한 만큼’ 언급한 것임을 보지 못했다. → 처방: ‘반드시’라는 강제적 표현이 아니라, ‘인용·감사의 목적’이므로 필요한 만큼만 언급했다는 점을 확인하자.\n⑤ 진단: ‘더 신뢰성을 얻고 있다’는 주관적 평가를 오해했는데, 지문은 ‘인용·감사’가 주목적이므로 ‘신뢰성’보다는 ‘영향 받은 흔적’을 밝히는 것에 초점을 두고 있다. → 처방: ‘신뢰성’보다는 ‘학문적 영향’을 밝히는 것이 목적임을 인식하고, 제목과 목록을 통해 그 의도를 읽자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The acknowledgments list diverse books and articles to credit intellectual influences.]"
+   }
+  },
+  {
+   "ts": "2026-08-19T22:45:30.853Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "acknowledgments of diverse cited sources in academic writing",
+     "acknowledgments section in scholarly books",
+     "practice of citing all possible references in academic texts",
+     "acknowledgments listing only books used in research",
+     "recognition of influential authors in academia"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'acknowledgments section listing diverse books and articles cited'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: ‘ACKNOWLEDGMENTS’라는 제목과 책·기사 등 다양한 출처가 나열된 점은 ‘scholarly books’의 서문 부분일 수도 있다고 혼동했다. → 처방: ‘ACKNOWLEDGMENTS’는 책의 맨 앞부분에 나오는 글로, 연구에 도움을 준 모든 이에게 감사를 표하는 글이므로 ‘scholarly books’의 한 부분이 아니라 ‘감사의 글’이라는 뜻을 정확히 기억하라.\n③ 진단: ‘모든 가능한 출처를 인용하는 관행’이라는 말이 ‘citing all possible references’라는 표현에 끌려서 선택했다. → 처방: ‘ACKNOWLEDGMENTS’는 연구에 사용된 모든 출처를 나열하는 것이 아니라, 연구에 도움을 준 이들에게 감사를 표하는 글이므로 ‘인용’이 아니라 ‘감사’의 의미를 우선 떠올리라.\n④ 진단: ‘책만 사용했다는 점’을 오해했는데, 지문에 ‘기사’도 포함되어 있어 책만 listed 되지 않았다는 사실을 놓쳤다. → 처방: ‘ACKNOWLEDGMENTS’에 책뿐만 아니라 기사도 포함된다는 사실을 확인하고, ‘책만’이라는 한정적 표현이 맞지 않음을 기억하라.\n⑤ 진단: ‘유명한 학자나 저자의 이름을 알아보는 것’이라는 표현에 ‘influential authors’라는 단어가 포함되어 선택했다. → 처방: ‘ACKNOWLEDGMENTS’는 단순히 저자의 이름만 나열하는 것이 아니라, 연구에 도움을 준 모든 이에게 감사를 표하는 글이므로 ‘인식’이 아니라 ‘감사’의 의미를 우선 떠올리라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: acknowledgments section listing diverse books and articles cited]"
+   }
+  },
   {
    "ts": "2026-08-19T21:49:51.217Z",
    "type": "안내문일치",
@@ -281,60 +350,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Specifiers modify the Head + Complement sequence as a whole.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 Specifiers 가 Head 와 Complement 를 함께 가리키는 단위라고 설명하는데, ①은 Specifiers 가 Head 만 수정한다고 잘못 이해한 것. 예를 들어 (1)에서 'not'이 'destroy the garden' 전체를 부정하는 것처럼 보임. → 처방: Specifiers 가 Head 와 Complement 를 함께 가리키는지를 먼저 확인하고, 지문에서 'Spec'의 정의를 정확히 읽기.\n③ 진단: 지문은 Specifiers 가 때로는 부정(negate)하거나 강조(intensify)할 수 있지만, 항상 그런 것은 아니라고 설명하는데, ③은 모든 Specifiers 가 부정·강조를 한다고 오독한 것. (2)의 'an'은 그런 기능이 없음. → 처방: Specifiers 의 기능이 항상 부정·강조에만 국한되는지 확인하고, 지문에서 예시와 설명을 꼼꼼히 비교하기.\n④ 진단: 지문은 Specifiers 가 Head 와 Complement 를 함께 가리킨다고 설명하는데, ④는 Specifiers 가 Head 에 의존하지 않고 기능한다고 오해한 것. 예를 들어 (1)의 'not'은 'destroy the garden' 전체에 의존함. → 처방: Specifiers 가 Head 와 Complement 를 함께 가리키는지를 먼저 확인하고, 지문에서 'Spec'의 정의를 정확히 읽기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Specifiers modify the Head + Complement sequence as a whole.]"
-   }
-  },
-  {
-   "ts": "2026-08-19T14:55:26.499Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the role of academic vocabulary in improving reading and argumentation",
-     "the influence of reading comprehension on academic vocabulary acquisition",
-     "the necessity of academic vocabulary for reading alone",
-     "the absolute requirement of academic vocabulary for all academic tasks",
-     "the importance of academic vocabulary without considering context"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The impact of academic vocabulary mastery on reading comprehension and argumentation skills'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘reading comprehension’이 ‘academic vocabulary acquisition’에 미치는 영향을 주제로 오해했는데, 지문은 학술어휘가 읽기·논증 능력 향상에 어떤 역할을 하는지를 다룬다. 선지 2는 인과관계가 반대이며, 지문 어디에도 Reading comprehension → academic vocabulary acquisition 은 없다. → 처방: 문제에서 ‘역할(role)’이나 ‘영향(influence)’이란 단어가 나오면, 지문의 핵심 내용(학술어휘가 읽기·논증에 ‘기여한다’는 점)을 떠올리며 선지를 다시 읽어라. ‘acquisition’이란 단어가 나오면 ‘습득’이란 뜻으로만 한정하지 말고, 지문 전체 흐름을 먼저 확인하라.\n③ 진단: ‘academic vocabulary’의 필요성을 ‘읽기 alone(오로지 읽기)’에 한정했는데, 지문은 읽기뿐 아니라 ‘argumentation(논증)’도 포함한다고 분명히 언급한다. ‘for reading alone’이란 말은 지문의 ‘읽기·논증’ 범위를 축소해 해석한 오류다. → 처방: ‘necessity(필요성)’이나 ‘for ~ alone’이란 표현이 나오면, 지문에서 해당 단어가 어떤 맥락에서 쓰였는지 다시 확인하라. 지문은 ‘읽기와 논증’ 두 가지를 모두 언급하니, ‘alone’이란 단어가 나오면 ‘이것만으로 충분한가’를 의심하라.\n④ 진단: ‘absolute requirement(절대적 요구)’란 표현을 보고 ‘모든 학술 활동에 반드시 필요’하다고 과장했는데, 지문은 ‘읽기·논증’에 초점을 맞추고 ‘모든’ 학술 활동까지 확장하지 않는다. ‘all academic tasks’라는 말은 지문의 범위를 넘어선다. → 처방: ‘absolute requirement’나 ‘all’이라는 표현이 나오면, 지문에서 해당 범위가 어디까지인지 정확히 확인하라. 지문은 ‘읽기와 논증’에 한정하므로, ‘all’이라는 말이 나오면 ‘이 범위 안에 있는가’를 다시 점검하라.\n⑤ 진단: ‘context(맥락)’를 무시하고 ‘academic vocabulary’의 중요성만 강조했는데, 지문은 학술어휘가 ‘맥락에 따라’ 어떻게 쓰이는지를 다룬다. 선지 5는 ‘맥락’을 배제하고 ‘중요성’만 강조한 오류다. → 처방: ‘context’라는 단어가 나오면, 지문에서 해당 단어가 어떤 의미로 쓰였는지 다시 확인하라. 지문은 학술어휘가 ‘맥락에 맞게’ 쓰여야 한다는 점을 강조하므로, ‘맥락’을 배제한 선지는 오답일 가능성이 높다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The impact of academic vocabulary mastery on reading comprehension and argumentation skills]"
-   }
-  },
-  {
-   "ts": "2026-08-19T14:56:12.486Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 13 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 13단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 인구 증가가 심각한 문제가 될 것이라는 하르코프의 주장은 널리 논란이 되고 있다.\n주어진 단어: ( harkov's / contention / population )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Harkov's contention that population growth will be a serious problem is widely disputed. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

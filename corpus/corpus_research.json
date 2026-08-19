@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T21:50:54.911Z",
+ "updated": "2026-08-19T22:46:15.385Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T22:45:46.177Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 '법률/언어 관련 명사'는 고유명사화·특수명사화 경향이 강하며, 대문자 표기가 일반화되어 있다. 또한 '부사+동사' 구조에서 동사원형·to 부정사 전환 시 문법적 오류가 빈발한다.",
+   "rule": "법률·언어·지역·기관 관련 명사(예: italian law, english grammar, new york, university press)는 고유명사화 규칙에 따라 항상 대문자로 표기하도록 출제하며, 'A and began to B' 구조는 'A and began B-ing/to B'로 통일성을 요구하는 문법 테스트를 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T21:49:59.371Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'and'로 연결된 명사구가 병렬 구조를 이루며, 두 번째 명사에 관사가 누락되는 오류가 빈번하다. 또한 'of' 대신 'to'가 잘못 사용되는 전치사 오류도 다수 확인된다.",
    "rule": "'and'로 연결된 명사구가 병렬 구조를 이룰 때는 두 번째 명사구에도 반드시 관사를 첨가하도록 오류 유도 문장을 작성하라. 예를 들어, 'She has a book and pen.' 대신 'She has a book and a pen.' 또는 'She has a book and the pen.'으로 오류를 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T09:03:40.764Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'travel'은 장소명사 앞에 'to'가 필수이며, 'information'은 불가산명사로 'a'를 붙일 수 없고, 'listen'은 자동사로 목적어 앞에 'to'가 필요하다는 패턴이 반복된다. 또한 대문자 사용과 구두점(., \")도 오류 빈도가 높다.",
-   "rule": "'자동사/타동사 구분과 전치사 필수 여부'를 문항으로 출제할 때는, 동사(예: travel, listen) 뒤에 오는 명사구(예: France, song)의 전치사 필수 여부와 불가산명사의 'a' 사용 금지 여부를 반드시 포함하여 구성하라.",
    "sample": [
     "old english",
     "university press",
