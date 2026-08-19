@@ -1,6 +1,95 @@
 {
- "updated": "2026-08-19T14:56:48.737Z",
+ "updated": "2026-08-19T15:54:15.366Z",
  "samples": [
+  {
+   "ts": "2026-08-19T15:48:11.820Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Of course, this can only be a partial representation of the structure of phrases like those in (1)–(5). What about the elements that immediately precede the Heads, such as not , an , so , quite and much in (1)–(5)? Unlike Complements, these seem to relate ⓐ<u>not so much</u> ⓑ<u>to the Head</u>, but to the Head and Complement taken together. Th us, in (1) ⓒ<u>we can say</u> that not adds something to the sequence destroy the garden : ⓓ<u>it negates it</u>. We can ask the question: ‘what did the defendants not do?’, and the answer would be ‘destroy the garden’. In (2) the determinative an relates to the sequence analysis of the sentence , not just to the Head. And in (3)–(5) the adverbs so , quite and much intensify the strings fond of coﬀ ee , in agreement and faster than me , respectively. We will say that the elements that precede the Head in (1)–(5) ⓔ<u>specify the Head + Complement sequence</u>; thus, we will refer to them as Speciﬁ ers (abbreviated as ‘Spec’). We can now expand our partial tree in (7) for each of the phrases in (1)–(5) as follows: (8)",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [조동사동사원형] ⓒ: 'we can say' → 'we could say' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-19T15:48:55.308Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Of course, this can only be a partial representation of the structure of phrases like those in (1)–(5). What about the elements that immediately precede the Heads, such as not , an , so , quite and much in (1)–(5)? Unlike Complements, these seem to relate not so much to the Head, but to the Head and Complement taken together. Th us, in (1) we could say that not adds something to the sequence destroy the garden : it negates it. We can ask the question: ‘what did the defendants not do?’, and the answer would be ‘destroy the garden’. In (2) the determinative an relates to the sequence analysis of the sentence , not just to the Head. And in (3)–(5) the adverbs so , quite and much intensify the strings fond of coﬀ ee , in agreement and faster than me , respectively. We will say that the elements that precede the Head in (1)–(5) specify the Head + Complement sequence; thus, we will refer to them as Speciﬁ ers (abbreviated as ‘Spec’). We can now expand our partial tree in (7) for each of the phrases in (1)–(5) as follows: (8)",
+    "choices": [
+     "'not'은 'destroy the garden' 전체를 부정하는 역할을 한다.",
+     "1. 'an'은 'the Head'에만 영향을 미친다.",
+     "2. 'so'는 'fond of coffee'의 의미를 약화한다.",
+     "3. 'quite'는 'in agreement'의 정도를 낮춘다.",
+     "4. 'much'는 'faster than me'의 정도를 완화한다."
+    ],
+    "answer": 1,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n② 진단: 지문에서 'an'은 'the Head + Complement' 전체(즉 'analysis of the sentence')에 영향을 미친다고 설명했는데, 학생은 'the Head'에만 영향을 미친다고 오독했다. → 처방: 지문에서 'Spec'은 Head 와 Complement 를 함께 고려한다고 명시된 부분을 다시 읽고, 'an'이 전체 구문에 영향을 미치는지 확인할 것.\n③ 진단: 지문에서 'so'는 'fond of coffee'를 '강화'한다고 설명했는데, 학생은 '약화'한다고 오독했다. → 처방: 지문에서 'intensify'라는 단어를 찾아 '강화'의 의미를 정확히 이해하고, 선지의 '약화'라는 표현이 틀렸음을 확인할 것.\n④ 진단: 지문에서 'quite'는 'in agreement'의 '정도'를 '높인다'고 설명했는데, 학생은 '낮춘다'고 오독했다. → 처방: 지문에서 'intensify'가 '정도를 높인다'는 뜻임을 기억하고, 'quite'가 '강화' 역할을 한다는 점을 다시 확인할 것.\n⑤ 진단: 지문에서 'much'는 'faster than me'의 '정도'를 '강화'한다고 설명했는데, 학생은 '완화'한다고 오독했다. → 처방: 지문에서 'intensify'가 '정도를 높인다'는 뜻임을 떠올리고, 'much'가 '강화' 역할을 한다는 점을 재확인할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-19T15:53:08.217Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Specifiers Modify Only the Head in Phrase Structures",
+     "Specifiers Derive Meaning from the Head's Complements",
+     "Specifiers Always Negate or Intensify the Entire Phrase",
+     "Specifiers Function Without Dependence on the Head",
+     "Specifiers Integrate Head and Complement as a Unified Unit"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Specifiers modify the Head + Complement sequence as a whole.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 Specifiers 가 Head 와 Complement 를 함께 가리키는 단위라고 설명하는데, ①은 Specifiers 가 Head 만 수정한다고 잘못 이해한 것. 예를 들어 (1)에서 'not'이 'destroy the garden' 전체를 부정하는 것처럼 보임. → 처방: Specifiers 가 Head 와 Complement 를 함께 가리키는지를 먼저 확인하고, 지문에서 'Spec'의 정의를 정확히 읽기.\n③ 진단: 지문은 Specifiers 가 때로는 부정(negate)하거나 강조(intensify)할 수 있지만, 항상 그런 것은 아니라고 설명하는데, ③은 모든 Specifiers 가 부정·강조를 한다고 오독한 것. (2)의 'an'은 그런 기능이 없음. → 처방: Specifiers 의 기능이 항상 부정·강조에만 국한되는지 확인하고, 지문에서 예시와 설명을 꼼꼼히 비교하기.\n④ 진단: 지문은 Specifiers 가 Head 와 Complement 를 함께 가리킨다고 설명하는데, ④는 Specifiers 가 Head 에 의존하지 않고 기능한다고 오해한 것. 예를 들어 (1)의 'not'은 'destroy the garden' 전체에 의존함. → 처방: Specifiers 가 Head 와 Complement 를 함께 가리키는지를 먼저 확인하고, 지문에서 'Spec'의 정의를 정확히 읽기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Specifiers modify the Head + Complement sequence as a whole.]"
+   }
+  },
   {
    "ts": "2026-08-19T14:55:26.499Z",
    "type": "주제",
@@ -255,93 +344,6 @@
     ],
     "answer": 2,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'burn'은 과거형으로 'burnt' 또는 'burned'로 변할 수 있다고 나와 있는데, 이를 '변할 수 없다'로 오독한 것 같다. → 처방: 'burn'의 과거형이 'burnt' 또는 'burned'로 모두 가능하다는 사실을 기억하고, 지문에서 예시를 다시 한 번 확인하기.\n③ 진단: 지문에서 영국에서도 'dream'이 'dreamt' 또는 'dreamed'로 과거형을 만들 수 있다고 명시되어 있는데, 이를 '만들 수 없다'로 오독한 것 같다. → 처방: 지문에서 'dream'의 과거형이 영국에서도 두 가지가 모두 가능하다는 점을 다시 한 번 읽고, 혼동하지 않도록 주의하기.\n④ 진단: 지문에서 영국에서 'leap'의 과거형은 'leapt' 또는 'leaped'가 모두 가능하다고 나와 있는데, 이를 '모두 불가능하다'로 오독한 것 같다. → 처방: 'leap'의 과거형이 영국에서 'leapt'와 'leaped'로 모두 쓰인다는 사실을 기억하고, 지문에서 예시를 다시 확인하기.\n⑤ 진단: 지문에서 미국에서 'dive'는 과거형이 'dived'가 일반적이지만 'dove'도 가능하다고 나와 있는데, 이를 '통일된다'로 오독한 것 같다. → 처방: 'dive'의 과거형이 미국에서도 'dived'가 기본이지만 'dove'도 가끔 쓰인다는 점을 기억하고, 지문에서 'can be irregular'이라는 표현을 주의해서 읽기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T07:18:17.603Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "V Irregular verbs In the past tense some verbs can have either an irregular t ending or the regular ed ending. These verbs are burn, learn, smell, spell, spill and spoil. The British prefer the t ending, although ed is Americans normally use the ed ending, also possible. They burnt/burned the old sofa. They burned the old sofa. You've spelt/spelled this word wrong. You've spelled this word wrong. But we say e.g. a slice of burnt toast in both British and American English. In Britain the verbs dream, lean and leap can be regular, or they can have a t ending. I dreamt/dreamed about you. I dreamed about you. <u>These three forms ending in t have the vowel sound /e/.</u> For example, dreamt is pronounced /dremt/, and dreamed is pronounced /dri:md/. The verb dive is regular in Britain but can be irregular in the US. Craig dived into the water. Craig dived/dove into the water.",
-    "choices": [
-     "The irregular past tense forms ending in /t/ were created because speakers preferred the vowel sound /e/.",
-     "The irregular past tense forms ending in /t/ reflect a historical shift in pronunciation that preserves an older linguistic pattern.",
-     "The vowel sound /e/ in irregular past tense forms ending in /t/ has consistently appeared in all English verbs.",
-     "Because past tense forms end in /t/, the vowel sound /e/ emerged in irregular verbs.",
-     "Forms ending in /t/ must always have the vowel sound /e/ in irregular past tense."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'The irregular past tense forms ending in /t/ reflect a historical shift in pronunciation that preserves an older linguistic pattern.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문에서 /e/ 발음이 '선호'나 '창조'된 이유가 아니라 '보존'된 역사적 발음 변화임을 오독함. 'preferred'라는 단어를 '선호로 인해 생겨났다'로 잘못 해석함. → 처방: 지문에서 'preferred'는 '보통 ~를 사용한다'는 뜻임을 기억하고, 과거 발음 변화가 '보존'된 것임을 확인하기.\n③ 진단: 지문에서 'dreamt', 'leaned' 등 일부 동사만 /e/ 소리가 난다고 했는데, '모든 동사'에 해당한다고 오독함. 'consistently appeared in all English verbs'라는 과장된 표현을 사용함. → 처방: 지문에서 예시로 든 동사들만 /e/ 소리가 난다는 점을 확인하고, '모든 동사'라는 표현은 오류임을 인지하기.\n④ 진단: 지문에서 /t/로 끝나는 과거형이 '발생'한 이유가 아니라, '보존'된 역사적 발음 변화임을 오독함. 'emerged'라는 단어를 '발생했다'로만 해석하여 인과관계를 잘못 이해함. → 처방: 지문에서 'preserves an older linguistic pattern'이라는 구절을 찾아 과거 발음 변화가 '보존'된 것임을 명확히 확인하기.\n⑤ 진단: 지문에서 'dreamt', 'leant', 'leapt' 등 일부 동사만 /e/ 소리가 난다고 했는데, '항상' /e/ 소리가 난다고 오독함. 'must always'라는 절대적 표현을 사용해 과장됨. → 처방: 지문에서 예시로 든 동사들만 /e/ 소리가 난다는 점을 확인하고, '항상'이라는 표현은 오류임을 인지하기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T07:18:23.802Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "V Irregular verbs In the past tense some verbs can have either an irregular t ending or the regular ed ending. These verbs are burn, learn, smell, spell, s____ and spoil. The British prefer the t ending, although ed is Americans normally use the ed ending, also possible. They burnt/burned the old sofa. They burned the old sofa. You've spelt/spelled this word wrong. You've spelled this word wrong. But we say e.g. a slice of burnt toast in both British and American English. In Britain the verbs dream, lean and leap can be regular, or they can have a t ending. I dreamt/dreamed about you. I dreamed about you. These three forms ending in t have the vowel sound /e/. For example, dreamt is pronounced /dremt/, and dreamed is pronounced /dri:md/. The verb dive is regular in Britain but can be irregular in the US. Craig dived into the water. Craig dived/dove into the water.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] spill — 문단의 논지상 이 자리에는 'spill'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T05:48:13.978Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 4건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.67,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "challenges in coordinating multiple grammatical inversions in question formation",
-     "difficulties in applying wh- movement rules in question formation",
-     "limitations in forming wh- questions when multiple grammatical rules conflict",
-     "inability to construct basic wh- questions due to grammatical inversion errors",
-     "problems with wh- question formation when grammatical inversions are required"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Difficulty in performing multiple grammatical inversions simultaneously in question formation'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: ‘wh- movement rules’를 ‘wh- word 를 앞으로 옮기는 것’으로만 오독하여, 두 번째 ‘도움동사+주어 도치’까지 고려하지 않았음(지문: ‘wh- movement rules’가 아닌 ‘두 가지 도치’를 동시에 해야 한다고 지적). → 처방: ‘wh- question formation’에서 ‘wh- movement’만 아니라 ‘inversion’도 반드시 포함된다는 점을 기억하고, 두 과정을 차례로 점검할 것.\n③ 진단: ‘multiple grammatical rules conflict’를 ‘문법 규칙 간의 충돌’로 오해하여, 실제로는 ‘두 가지 도치 과정이 동시에 일어나야 함’을 보지 못했음(지문: ‘두 가지 도치를 한꺼번에 못해서 생긴 문제’로 설명). → 처방: ‘문제 상황’을 ‘규칙 충돌’이 아니라 ‘동시 수행의 어려움’으로 재정의하고, 각 도치 과정을 따로따로 확인할 것.\n④ 진단: ‘기본 wh- question’을 못 만든다고 오독하여, 실제 문제는 ‘기본’보다 ‘복잡한 도치’에 있었음(지문: ‘기본 wh- question’이 아니라 ‘두 가지 도치’를 못해서 생긴 오류). → 처방: ‘기본 wh- question’과 ‘도치 wh- question’을 구분하고, 도치 wh- question 일 때는 ‘wh- word 옮기기’ 다음에 ‘도치 확인’을 꼭 추가할 것.\n⑤ 진단: ‘grammatical inversions 가 필요할 때’의 문제를 ‘wh- question formation’의 일반적인 문제로 오독하여, ‘필요한 도치’를 못했을 때만 문제가 생긴다는 점을 놓쳤음(지문: ‘도치가 필요한 경우에만 오류가 생김’). → 처방: ‘inversion 이 필요한지’를 먼저 확인한 뒤, 필요하면 ‘wh- word 옮기기’와 ‘도치’를 차례로 적용할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Difficulty in performing multiple grammatical inversions simultaneously in question formation]"
    }
   }
  ]

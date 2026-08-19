@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T14:56:48.733Z",
+ "updated": "2026-08-19T15:54:15.361Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T15:53:50.919Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'One reason is that ~'와 같은 명사절을 이끄는 접속사 that 다음에 오는 동사가 단수/복수에 관계없이 'is'로 오류가 발생하는 패턴이 빈번했다. 또한 'These useful skills that ~'와 같이 관계대명사 that이 포함된 명사구에서 동사가 복수로 올바르게 쓰였으나, 명사 itself(skills)의 복수형과 일치하지 않는 오류가 나타났다.",
+   "rule": "'One reason is that ~', 'The fact is that ~', 'The idea is that ~' 등 접속사 that이 이끄는 명사절에서 동사는 단수 주어(one reason, the fact, the idea)에 일치시켜 'is'로 표기하도록 변형 문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T14:56:15.611Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원어민 코퍼스에서 'something extra'는 관용적으로 사용되며, 'thinmg'와 같은 철자 오류는 'something'의 빈번한 오용 패턴에서 비롯된다. 또한 'are something could fly'는 'are something that could fly'로의 보어절 삽입이 자연스럽고, 'annoy about'은 'worry about'로의 전치사 교체가 문법적으로 옳다.",
    "rule": "'something'이 수식어 없이 명사구로 쓰일 때, 'something extra/unique/special' 등 관용적 수식어구를 붙이거나, 'something that ~'와 같은 보어절로 확장하여 문맥에 맞게 변형하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T01:57:36.368Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "연어 'year after year'와 'think much more'에서 불필요한 반복 구문(and, thus)의 오류가 자주 발생하며, 이는 구문 간 병렬 구조의 오류로 이어진다.",
-   "rule": "병렬 구조에서 반복 구문(and, thus 등)을 사용할 경우, 반드시 세 개 이상의 항목에 대해 쉼표(,)로 구분하여 일관된 형식으로 표현해야 한다.",
    "sample": [
     "old english",
     "university press",
