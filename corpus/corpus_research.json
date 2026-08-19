@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T15:54:15.361Z",
+ "updated": "2026-08-19T16:50:23.914Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T16:49:56.956Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어 문법에서 관사('the', 'a/an')의 선택이 문맥적 중요도를 반영한다는 패턴을 확인. 특히 'things'와 같은 추상명사가 특정 맥락에서 'the'로 한정될 때, 학습자의 오류가 빈번히 발생함을 관찰.",
+   "rule": "'things', 'difficulties', 'qualifications' 등 복수 추상명사가 특정 맥락에서 한정성을 요구할 경우, 'the'를 필수로 삽입하도록 오답지를 설계하라. 예를 들어 'I hope the things I learned will help me'와 같은 문장에서 'the'를 생략한 'I hope things I learned will help me'를 오답으로 제시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T15:53:50.919Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "영어에서 'return'은 주로 '되돌아오다', '회복되다'의 의미로 쓰이며 'reciprocate'와 같은 연어는 '도움을 베풀었을 때 상대방의 반응'을 나타낸다. 문장 구조상 'no return in his help'는 비문법적이거나 의미가 모호해진다.",
    "rule": "원서 코퍼스에서 'return in'의 실제 연어 빈도가 낮으므로, 'help'와 'return'의 잘못된 조합(예: 'no return in his help')을 오답으로 출제하여 'reciprocate'나 'appreciation'과 같은 적절한 동사·명사의 연어를 선택하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T03:15:19.995Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원어민 코퍼스에서 'something extra'는 관용적으로 사용되며, 'thinmg'와 같은 철자 오류는 'something'의 빈번한 오용 패턴에서 비롯된다. 또한 'are something could fly'는 'are something that could fly'로의 보어절 삽입이 자연스럽고, 'annoy about'은 'worry about'로의 전치사 교체가 문법적으로 옳다.",
-   "rule": "'something'이 수식어 없이 명사구로 쓰일 때, 'something extra/unique/special' 등 관용적 수식어구를 붙이거나, 'something that ~'와 같은 보어절로 확장하여 문맥에 맞게 변형하라.",
    "sample": [
     "old english",
     "university press",
