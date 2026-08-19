@@ -1,6 +1,40 @@
 {
- "updated": "2026-08-19T13:13:47.504Z",
+ "updated": "2026-08-19T14:01:31.279Z",
  "samples": [
+  {
+   "ts": "2026-08-19T14:00:23.098Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "EXERCISE 28b — Write three sentences using the objects in parentheses. Be sure to put the objects in the right place. 1. The White House ⓐ<u>beefed</u> up. (security, it) 2. The police are ⓑ<u>breaking</u> up. (the protest, it) 3. A trained technician ought to ⓒ<u>drop</u> out. (the experiment, it) 4. The foundation ⓓ<u>gave</u> away. (the money, it) 5. Susie always ⓔ<u>messes</u> up. (the bathroom, it) 6. Todd stood up. (Heather, her) EXERCISE 28c — Write answers to the questions using phrasal verbs and participle adjectives from this unit. Make all the phrasal verbs passive. 1. Dr. Wood will do the test of the new drug. What will happen to the test? 2. The statue was smashed by thieves. What happened to the gold statue? 3. The children made the house dirty and disorganized. What happened to the house? 4. In Question 3, how would you describe the house? 5. Mike’s friend promised to come to his house, but he didn’t. What happened to Mike? 6. Karen called Sarah, but Sarah was at school. Sarah didn’t call Karen later. What didn’t happen to Karen?",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ: 문맥상 'carry'가 와야 하는데 'postpone'가 쓰여 부적절하다 — ‘ought to carry out’는 실험을 ‘실행’하라는 뜻으로, 실험의 진행을 지시하는 문맥에서 ‘postpone(연기하다)’는 논리적 대조를 일으키며 문맥에 부적절하다.. [극성] 정답=실행(증가·진행) ↔ 오답=연기(감소·중단)\n[오답 진단·처방]\n① 진단: ‘it’이 ‘security’를 가리키지 않고 ‘The White House’를 가리킨다고 혼동한 듯합니다. ‘beef up’이 ‘~을 강화하다’라는 뜻이므로 ‘it’이 ‘security’를 받아야 하는데, ‘it’이 ‘The White House’를 받으면 ‘The White House 가 강화되었다’가 되어 문맥이 맞지 않습니다. → 처방: ‘it’을 ‘security’를 받는 대명사로 바꾸어 ‘The White House be beefed up security by it.’이라고 써야 합니다.\n② 진단: ‘it’이 ‘the protest’를 가리키지 않고 ‘The police’를 가리킨다고 오해한 듯합니다. ‘break up’이 ‘~을 해산시키다’라는 뜻이므로 ‘it’이 ‘the protest’를 받아야 하는데, ‘it’이 ‘The police’를 받으면 ‘경찰이 해산되고 있다’가 되어 문맥이 맞지 않습니다. → 처방: ‘it’을 ‘the protest’를 받는 대명사로 바꾸어 ‘The police are breaking up the protest by it.’이라고 써야 합니다.\n④ 진단: ‘it’이 ‘the money’를 가리키지 않고 ‘The foundation’을 가리킨다고 오해한 듯합니다. ‘give away’이 ‘~을 기부하다’라는 뜻이므로 ‘it’이 ‘the money’를 받아야 하는데, ‘it’이 ‘The foundation’을 받으면 ‘기금이 기부되었다’가 되어 문맥이 맞지 않습니다. → 처방: ‘it’을 ‘the money’를 받는 대명사로 바꾸어 ‘The foundation gave away the money by it.’이라고 써야 합니다.\n⑤ 진단: ‘it’이 ‘the bathroom’를 가리키지 않고 ‘Susie’를 가리킨다고 오해한 듯합니다. ‘mess up’이 ‘~을 엉망으로 만들다’라는 뜻이므로 ‘it’이 ‘the bathroom’를 받아야 하는데, ‘it’이 ‘Susie’를 받으면 ‘Susie 가 엉망이 되었다’가 되어 문맥이 맞지 않습니다. → 처방: ‘it’을 ‘the bathroom’를 받는 대명사로 바꾸어 ‘Susie always messes up the bathroom by it.’이라고 써야 합니다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-19T10:48:24.389Z",
    "type": "요지",
@@ -292,39 +326,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Not until Old Frisian do we find a reduplicating class of verbs. (포인트: 부정어 'not'을 문두로 이동시켜 주어-동사 도치 구문으로 전환)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-19T04:01:19.336Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Lesson 3: The Past 41 7. When the fire breaked out, the alarm was sounding so all of the children exited the building. Fortunately, <u>no one was being hurt. 8. Yesterday the boss didn’t knew what time he was going to arrive at the meeting. He came from Montreal and was stuck in traffic on the highway. 9. He is not alive anymore but my uncle Dan was coming from Texas and was having a thick American accent. 10. At the post office the clerk was weighing the package and calculating the postage. Then I was paying and was leaving. EXERCISE 3</u>: TRANSLATION Translate each sentence using the correct form of the verb in parentheses. 1. Quand j’étais jeune j’avais une tante qui sentait le tabac. (be, have, smell like) \b 2. Pourquoi faisais-tu l’idiot hier? (be) \b 3. Il m’en a parlé ce matin. (talk about) \b 4. Il m’en parlait avant la réunion. (talk about) \b 5. Elle avait l’air mieux quand je l’ai vue. (look, see) \b",
-    "choices": [
-     "The strong tobacco smell on my aunt came from her recent decision to quit smoking.",
-     "My aunt carried an unmistakable scent that revealed her lifelong habit and identity.",
-     "My aunt occasionally smelled like tobacco due to a temporary cough.",
-     "My aunt occasionally smoked cigarettes, which made her smell like tobacco.",
-     "My aunt’s clothing had a faint tobacco scent, which she disliked intensely."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'My aunt carried an unmistakable scent that revealed her lifelong habit and identity.'을 함의한다.\n[오답 진단·처방]\n① 진단: 지문 'sentait le tabac'은 '담배 냄새가 났다'로 '평생의 습관과 정체성'을 암시하는데, ①은 '최근 금연 결정'으로 과거 습관을 부정하여 오해. → 처방: 지문에서 'sentait le tabac'가 현재형 과거( imparfait)로 쓰였는지 확인하고, 습관·특징을 나타내는 표현임을 떠올리기.\n③ 진단: 지문은 '평생의 습관'을 뜻하는 'sentait le tabac'이지만, ③은 '일시적인 기침'으로 임시적 현상으로 오해. → 처방: imparfait 가 습관·특징을 나타낸다는 규칙을 떠올리고, 'sentait'가 일상적 상태임을 확인하기.\n④ 진단: 지문은 '담배 냄새가 나는 정체성'을 뜻하지만, ④는 '가끔 피운 담배'로 빈도를 오해. → 처방: imparfait 가 반복·습관을 나타낸다는 점을 떠올리고, 'sentait'가 지속적 특징임을 확인하기.\n⑤ 진단: 지문은 '담배 냄새가 나는 사람'이지만, ⑤는 '옷에 남은 냄새'로 대상(사람 vs 옷)을 오해. → 처방: 주어 'ma tante'가 사람임을 확인하고, 'sentait'가 주체(사람)의 상태임을 떠올리기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]

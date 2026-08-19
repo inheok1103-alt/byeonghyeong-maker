@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T13:13:47.500Z",
+ "updated": "2026-08-19T14:01:31.277Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-19T14:01:00.639Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'단수 가산명사의 오용'이 CEFR B1-B2 밴드에서 빈번히 나타나며, 특히 'livestock', 'lecture' 등 특정 명사의 경우 복수형/불가산 명사로의 오용이 두드러진다. 또한 'affect'의 동사 사용 오류가 'effect'와의 혼동과 함께 나타나며, 문맥상 불필요한 수식어('greatly', 'completely')가 오류를 유발하는 패턴으로 확인된다.",
+   "rule": "CEFR B1-B2 수준의 내신 변형문제에서 '단수 가산명사(예: lecture, livestock)의 복수형 오용'과 'affect/effect 혼동' 오류를 반드시 포함하며, 불필요한 수식어(예: 'greatly', 'completely')가 문법적 오류를 유발하는지 여부를 검증하는 문장을 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T13:13:18.314Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 코퍼스는 '명사구 + 동사 + 전치사/부사' 구조가 빈번하며, 특히 'be + 과거분사 + 전치사' 패턴(예: 'was effected by')에서 오류가 자주 발생한다. 또한 'any more'와 'anymore'의 구분이 모호한 경우가 많다.",
    "rule": "'be + 과거분사 + 전치사' 구조(예: 'is effected by')에서 과거분사가 전치사와 결합하지 않고 단독으로 쓰일 경우, 반드시 전치사를 추가하거나 동사 형태를 수정하라(예: 'is not an illusion but real' → 'is not an illusion but real'로 수정하거나 'is affected by'로 재구성).",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-16T22:39:29.268Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "동사 형태의 오류(3인칭 단수 현재형 vs. 현재분사/과거분사, 부정사 오용)가 빈번하며, 특히 'year after year'와 같은 반복 표현에서 'yaer'와 같은 철자 오류가 나타난다.",
-   "rule": "CEFR B1 수준 이하의 문항에서는 3인칭 단수 현재형 동사(예: 'makes', 'increases')와 'year after year' 같은 반복 구문을 반드시 포함하여, 동사 형태와 철자 오류(예: 'yaer' → 'year')를 동시에 평가하도록 출제하라.",
    "sample": [
     "old english",
     "university press",
