@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T08:01:56.737Z",
+ "updated": "2026-08-20T09:02:18.698Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T09:01:44.263Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거 시제와 현재 시제가 혼용된 문장, 또는 불필요한 명사구·형용사가 과도한 어법 오류가 빈번하게 발생함을 확인할 수 있다. 특히 'harm full'처럼 띄어쓰기 오류와 '-ful' 접미사의 잘못된 사용이 자주 나타난다.",
+   "rule": "원문에서 과거 시제(learned)나 현재 시제(use)가 필요한 경우, 문맥상 자연스러운 시제를 선택하도록 빈칸(빈칸: ______)을 삽입하거나, '-ful' 접미사가 필요한 형용사(예: harmful)인지 확인하는 문항을 설계하라. 예: 'In this case, the student ______ a concept that can ______ in other fields.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T08:01:28.264Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사구 내 전치사 오류와 동사 시제/태 오류가 빈번히 발생하며, 특히 'for + 명사' 구조에서 'for + 형용사'로의 오용이 두드러진다.",
    "rule": "원서 문체 패턴을 반영하여 'for + 명사' 구조가 필요한 경우, 항상 'for + safety/systematic development'와 같은 명사형 표현을 사용하도록 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T17:48:46.160Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "복수 명사나 관사 오류, 과거 시제와 현재 시제 혼동, 철자 오류가 빈번하게 관찰된다. 특히 'a/an/the'의 불필요한 사용이나 누락, 과거 시제 동사의 오용이 두드러진다.",
-   "rule": "복수 명사나 관사의 오류를 검토할 때, 해당 명사가 문맥상 복수형으로 사용되어야 하는지(예: 'specialized doctors' vs 'the doctor')를 반드시 확인하고, 과거 시제 동사가 현재 시제와 혼동되지 않도록 시제 일관성을 점검하라.",
    "sample": [
     "old english",
     "university press",
