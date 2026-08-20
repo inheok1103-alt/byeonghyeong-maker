@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-19T23:42:11.006Z",
+ "updated": "2026-08-20T01:57:43.923Z",
  "samples": [
+  {
+   "ts": "2026-08-20T01:53:14.138Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 34번 빈칸 [ 3 점] · B L A N K 결과에 따라 행동을 바꾸기 빈칸 빈칸 = changing behaviors in light of the consequences: 결과(칭찬/무효)에 따라 행동을 바꾼다(조작적 조건화).\n\n(A) In general, we tend to do things that bring us some kind of benefit or act in ways that help us avoid some kind of problem, discomfort, or disadvantage. We also tend to do fewer things (or stop doing things) that lead to problems, discomfort, or disadvantages, and we tend to avoid acting in ways that do not bring any benefit or reward. 지문 전문 · 원문 그대로\n\n(B) 지문 전문 — 시험지 원문 A particularly powerful way in which human beings adapt and adjust to their circumstances is by ＿＿＿＿＿＿＿＿ that they yield. For instance, a child who gets praised by her teacher for doing an exercise correctly is likely to continue doing the exercise in that way. A dancer who feels that a particular conditioning exercise is not giving any results is likely to give that exercise up in favor of another one that seems more promising.\n\n(C) 소재 결과에 따른 행동 변화 Changing behavior by its consequences 주제 우리는 결과에 비추어 행동을 조정하며 적응한다 We adapt by acting on consequences 제목 결과가 행동을 바꾼다 We Adapt by Acting on Consequences 한눈에 인간은 ‘결과에 따라 행동을 바꾸며’ 적응한다는 글이다. 칭찬받은 아이는 그 행동을 계속하고, 효과 없다고 느끼는 무용 수는 그만둔다. 즉 이득이 되는 일은 하고 문제가 되는 방식은 피하는 ‘결과 기반 적응’이 핵심이다.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 5,
+    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ① (A)를 맨 앞에 둔 이유는 '일반적 경향'과 '결과에 따른 행동 변화'가 같은 맥락으로 보였으나, (A)는 '일반적 설명'에 그치며 (B)의 '구체적 예시'가 먼저 나와야 흐름이 자연스럽다. ② 지문을 읽을 때는 '결과에 따른 행동 변화'가 중심 주제임을 먼저 확인하고, '구체적 예시'(B) → '일반적 설명'(A)으로 이어지는 흐름을 따라가야 한다. → 처방: 지문에서 핵심 주제를 먼저 찾고, '구체적 예시'가 먼저 나오는지 확인한 뒤 순서를 정하라.\n② 진단: ② (B)를 맨 앞에 둔 이유는 '구체적 예시'가 먼저 나와야 한다는 점은 맞았으나, (A)의 '일반적 설명'이 (C)의 '주제'와 연결되는 흐름을 놓쳤다. (C)는 '결과에 따른 행동 변화'라는 주제를 제시하는 역할이므로, (B) → (C) → (A) 순서가 자연스럽다. ② 지문 구조를 '주제 - 구체적 예시 - 일반적 설명'으로 나누어 읽고, 각 부분의 역할을 정확히 파악하라. → 처방: 지문을 '주제', '구체적 예시', '일반적 설명'으로 구분한 뒤, 각 부분의 순서를 논리적으로 연결하라.\n③ 진단: ③ (B)를 맨 앞에 둔 점은 맞았으나, (C)를 (A)보다 앞에 둔 이유는 '주제'가 먼저 나와야 한다는 점을 고려하지 못했다. (C)는 '결과가 행동'이라는 주제를 제시하는 역할이므로, (B) → (C) → (A) 순서가 자연스럽다. ② 지문의 첫 문장이나 제목에서 '주제'를 먼저 찾고, 그다음 '구체적 예시', 마지막으로 '일반적 설명' 순으로 읽어라. → 처방: 지문의 첫 부분이나 제목에서 '주제'를 먼저 찾고, 그다음 '구체적 예시', 마지막으로 '일반적 설명' 순으로 읽어라.\n④ 진단: ④ (C)를 맨 앞에 둔 이유는 '주제'가 먼저 나와야 한다는 점은 맞았으나, (A)를 (B)보다 앞에 둔 이유는 '구체적 예시'가 '일반적 설명'보다 먼저 나와야 한다는 흐름을 놓쳤다. (B)는 '구체적 예시'로, (A)는 '일반적 설명'으로, (C)는 '주제'로 각각의 역할을 정확히 구분하지 못했다. ② 지문의 각 부분이 '주제', '구체적 예시', '일반적 설명' 중 어떤 역할을 하는지 정확히 파악하고, 그 순서를 따라가라. → 처방: 지문의 각 부분이 '주제', '구체적 예시', '일반적 설명' 중 어떤 역할을 하는지 정확히 파악하고, 그 순서를 따라가라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-20T01:53:31.938Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 17 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'consequences', 'perceived', 'behavior' / 15~19단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Human behavior adapts based on perceived benefits and consequences to maximize positive outcomes and minimize negative ones.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-19T23:40:03.148Z",
    "type": "요지",
@@ -308,44 +361,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'Markedness: when default assumptions clash with reality'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Markedness: when default assumptions clash with reality]\n[오답 진단·처방]\n① 진단: 기본 가정(assumption)을 '언어의 모순'으로 오해하고, 'default assumption'이란 용어가 지문에서 '문화적 고정관념'을 가리키는 줄 모르고 있음. 지문은 'nurse'가 보통 여성으로 여겨진다는 '문화적 stereotype'을 문제 삼지만, ①은 'assumption'을 '논리적 모순'으로 오독함. → 처방: 지문에서 'default assumption'이란 '사회적 고정관념'을 뜻한다는 점을 확인하고, 'assumption'이 '논리'가 아니라 '문화'에 기반함을 기억할 것.\n② 진단: '논리'와 '규범'을 혼동하여, 지문이 '문화적 stereotype'을 다루는 줄 모르고 '언어 규범의 역전'으로 오해함. 지문은 'nurse'가 여성으로 여겨지는 '문화적 관습'을 문제 삼지만, ②는 '논리적 역전'으로 오독함. → 처방: 지문의 '논리'가 아니라 '문화적 관습'에 초점을 맞추고, '규범'이란 단어의 의미를 '사회적 관습'으로 재해석할 것.\n③ 진단: 'gendered language conventions'이란 표현을 '제한된 범위'로 오해하고, 지문이 'nurse'라는 단어의 '성별 고정관념'을 다루는 줄 모르고 있음. 지문은 'nurse'가 여성으로 여겨지는 '문화적 stereotype'을 문제 삼지만, ③은 '범위'라는 단어로 오독함. → 처방: 'conventions'가 '문화적 관습'을 뜻한다는 점을 확인하고, '제한된 범위'가 아니라 '일반적 고정관념'임을 기억할 것.\n⑤ 진단: 'unmarked categories'란 용어를 '표시되지 않은 범주'로 오해하고, 지문이 'nurse'가 여성으로 여겨지는 '문화적 stereotype'을 다루는 줄 모르고 있음. 지문은 'markedness'가 '표시된(특별한) 범주'를 뜻한다는 점을 몰라 'unmarked'를 '무시된'으로 오독함. → 처방: 'markedness'가 '특별한 범주'를 뜻한다는 점을 확인하고, 'unmarked'가 '일반적인' 범주를 뜻한다는 점을 기억할 것."
-   }
-  },
-  {
-   "ts": "2026-08-19T17:49:36.992Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "CHAPTER 2 Markedness and Blocking Why is it odd to say *'a female nurse', while it is r_________ to say 'a male nurse'? If you point to your thumb and ask 'Is this a finger?' you will probably not get a 'Yes' answer. You can then ask 'How many fingers do you have?' and will almost certainly get an answer of 'Ten'. Is language really so illogical? Let us begin with a parody of a familiar puzzle. One day, John went shopping with his mother. On the way their car was hit by a truck and his mother was killed. John was seriously injured and taken to a hospital in an ambulance. One of the nurses in the emergency room was startled, and cried, 'Oh my God, that's my son!' Who was this nurse? This puzzle takes advantage of the fact that in our culture nurses are usually women. This assumption, however, contradicts the story that John's mother had just died. When you finally",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] reasonable — 문단의 논지상 이 자리에는 'reasonable'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-19T15:48:11.820Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "Of course, this can only be a partial representation of the structure of phrases like those in (1)–(5). What about the elements that immediately precede the Heads, such as not , an , so , quite and much in (1)–(5)? Unlike Complements, these seem to relate ⓐ<u>not so much</u> ⓑ<u>to the Head</u>, but to the Head and Complement taken together. Th us, in (1) ⓒ<u>we can say</u> that not adds something to the sequence destroy the garden : ⓓ<u>it negates it</u>. We can ask the question: ‘what did the defendants not do?’, and the answer would be ‘destroy the garden’. In (2) the determinative an relates to the sequence analysis of the sentence , not just to the Head. And in (3)–(5) the adverbs so , quite and much intensify the strings fond of coﬀ ee , in agreement and faster than me , respectively. We will say that the elements that precede the Head in (1)–(5) ⓔ<u>specify the Head + Complement sequence</u>; thus, we will refer to them as Speciﬁ ers (abbreviated as ‘Spec’). We can now expand our partial tree in (7) for each of the phrases in (1)–(5) as follows: (8)",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [조동사동사원형] ⓒ: 'we can say' → 'we could say' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

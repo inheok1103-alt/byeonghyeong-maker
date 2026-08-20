@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-19T23:42:11.003Z",
+ "updated": "2026-08-20T01:57:43.920Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T01:53:34.308Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사 수의 불일치(단수/복수) 오류가 빈번하며, 특히 'responsibility/responsibilities', 'quality/qualities', 'add/adds'와 같은 복수형 오류가 두드러진다. 또한 'which' 절의 선행사 오류(단수/복수 불일치)도 자주 발생한다.",
+   "rule": "'명사 + 동사 + 명사' 구조에서 두 번째 명사가 복수형이어야 할 경우(예: 'responsibility' → 'responsibilities'), 동사의 수 일치(단수/복수)를 반드시 확인하여 문항으로 출제하라. 특히 'other than ~ing' 구문에서 복수형 명사가 오는 경우(예: 'no major responsibilities other than studying')를 집중적으로 검토하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-19T23:41:31.861Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사구 내 복수형 오류는 소유격/복수형 혼동에서 비롯되며, 'failures and struggles'와 같이 명사 자체의 복수형으로 수정해야 한다.",
    "rule": "원서 코퍼스에서 확인된 'point of view'와 같이 복합명사의 단수형 구조(‘A of B’)가 빈번하므로, 'points of views' → 'point of view'로 수정하는 오류 패턴을 변형문제에 반영하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T10:51:07.640Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'preposition omission' 또는 'preposition substitution' 오류가 빈번하며, 특히 'of'와 'on'의 혼용이 두드러진다. 또한 'than' 뒤의 'the' 생략 오류도 나타났다.",
-   "rule": "'of'와 'on'을 포함한 전치사 선택 오류를 테스트할 때에는, 'reason relations'나 'how + S + V' 구조에서 전치사 사용을 강제하는 문항을 설계하라(예: 'Ideas on how to solve...' vs. 'Ideas of how to solve...').",
    "sample": [
     "old english",
     "university press",
