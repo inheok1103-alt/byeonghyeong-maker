@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T15:03:31.730Z",
+ "updated": "2026-08-20T15:51:40.786Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T15:51:08.387Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'명사+전치사+명사' 구조에서 전치사가 동사 역할(반대·지지 등)을 대신하는 오류가 빈번하며, 'for the following reasons'와 같이 전치사구가 이유 제시 패턴으로 정착되어 있음",
+   "rule": "'~에 반대하다/지지하다'를 표현할 때는 'against/for'를 동사(go against/argue for)로 변환하거나, 'oppose/support'와 같은 동사를 사용하여 전치사구를 동사구로 대체하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T15:03:03.742Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 접속사나 부사(also, but, so) 앞의 쉼표 생략이 빈번하며, 이는 문체의 간결성을 반영한다. 반면 한국어 내신 변형 문제에서는 쉼표를 강제하여 구문적 명확성을 강조하는 경향이 있다.",
    "rule": "접속사(and, but, so, also 등)나 부사(also, however 등)가 문두·문중에서 사용될 경우, 쉼표를 반드시 삽입하여 구문적 경계를 분명히 하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T01:52:49.997Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거분사(alive) 대신 능동형 동사원형(live)을, 명사(choose) 대신 동명사(making a choice)를 사용해야 하는 오류가 반복된다. 이는 한국어에서도 '-는 것이' vs '-기' 선택 오류와 유사하다.",
-   "rule": "원서 코퍼스 기반 오류 유형: 동사원형(능동형)과 동명사(수동형) 혼동 오류. '~하기 위해' 문맥에서 동사원형(alive → live)이나 동명사(choose → making a choice)를 올바르게 선택하지 못한 경우, 이를 문항으로 출제하여 학생들에게 능동/수동 구별과 동사의 형태적 제약을 학습시킨다.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,40 @@
 {
- "updated": "2026-08-20T15:03:31.733Z",
+ "updated": "2026-08-20T15:51:40.790Z",
  "samples": [
+  {
+   "ts": "2026-08-20T15:50:12.676Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Sa hun til dattera mi said she to daughter my at faren min er kommet alene that father my is come alone og føler sig bedre? and feels himself better Here we have many of the same sorts of things that motivated Twain to say, “A person who has not studied German can form no idea of what a perplexing language it is.” The same Said she . . . ? (Sa hun . . . ?), is come (er kommet), and “feeling yourself” (føler sig), plus gender: the my for my daughter is mi but the my for my father is min. That is, in a sense one “should” be able to say in English Said she to my daughter that my father alone come is and himself better feels? After all, you can say something similar in every other offshoot of Proto-Germanic but English. Only to English speakers does the sentence sound like something someone with brain damage would say. This shows that something was\n\n─────────\n[요약문] The grammatical complexity of English, compared to its (A) counterparts, makes it uniquely (B) for native speakers due to inherited irregularities and syntactic deviations.",
+    "choices": [
+     "(A) Proto-Germanic … (B) challenging",
+     "(A) other … (B) understandable",
+     "(A) simplified … (B) unpredictable",
+     "(A) Germanic … (B) accessible",
+     "(A) modern … (B) familiar"
+    ],
+    "answer": 1,
+    "explanation": "(A) Proto-Germanic / (B) challenging 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: ‘other’를 ‘다른 언어들’이 아닌 ‘다른 Proto-Germanic 언어’로 오해하여 (A)를 Proto-Germanic 으로 보지 않고 ‘other’로만 봄. (B) ‘understandable’은 ‘이해하기 쉬운’이 아니라 ‘이해할 수 있는’으로 오해하여 문맥에 맞지 않음. → 처방: ‘other’는 ‘다른 언어들’을 가리키는 말로, 지문에서 ‘every other offshoot of Proto-Germanic’을 언급했음을 확인하고 (A)를 ‘other’로 정확히 읽기.\n③ 진단: ‘simplified’를 ‘간소화된’이 아니라 ‘단순한’으로 오해하여 (A)를 ‘간소화’가 아닌 ‘단순’으로 봄. (B) ‘unpredictable’은 ‘예측 불가능한’이 아니라 ‘규칙적이지 않은’이 더 적절함. → 처방: ‘simplified’는 ‘간소화된’이 아니라 ‘단순한’ 의미가 아님을 알고, 지문에서 ‘inherited irregularities’를 언급했음을 떠올려 (A)를 ‘other’로 재확인하기.\n④ 진단: ‘Germanic’을 ‘게르만어족 전체’로 오해하여 (A)를 ‘other’가 아닌 ‘Germanic’으로 봄. (B) ‘accessible’은 ‘접근하기 쉬운’이 아니라 ‘이해하기 쉬운’이 더 맞음. → 처방: ‘Germanic’은 ‘게르만어족’을 뜻하지만 지문은 ‘other offshoot of Proto-Germanic’을 강조했음을 기억하고 (A)를 ‘other’로 선택하기.\n⑤ 진단: ‘modern’을 ‘현대 영어’로 오해하여 (A)를 ‘modern’으로 봄. (B) ‘familiar’은 ‘친숙한’이 아니라 ‘이해하기 쉬운’이 더 적절함. → 처방: ‘modern’을 배제하고, 지문에서 ‘Proto-Germanic’과 ‘offshoot’를 언급했음을 떠올려 (A)를 ‘other’로 정확히 읽기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-20T15:03:01.233Z",
    "type": "조건영작",
@@ -299,40 +333,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-20T09:00:32.865Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the necessity of eliminating ambiguity in language through precise expression",
-     "the role of prepositions in avoiding sentence ambiguity",
-     "the way ambiguity in language leads to clear communication",
-     "the absolute importance of removing all ambiguity from sentences",
-     "the impact of grammatical structures on sentence meaning"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The importance of avoiding ambiguity in language'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: ‘전치사가 문장 모호성을 피하는 역할’을 오해한 것. 지문은 전치사 예시만 주고, 주제는 ‘정확한 표현의 필요성’이므로 전치사 역할이 주제가 아님을 놓침. → 처방: ‘주제’를 찾을 때는 지문의 첫 문장과 마지막 문장을 집중해서 읽고, ‘전치사’가 아니라 ‘정확한 표현’이 핵심임을 확인하기.\n③ 진단: ‘모호성이 명확한 의사소통을 이끈다’는 반대 의미를 오독한 것. 지문은 모호성을 없애야 한다고 설명하는데, 이 선지는 모호성을 긍정적으로 설명함. → 처방: 지문의 핵심 메시지가 ‘모호성 제거’임을 기억하고, 선지가 그 반대 방향인지 확인하기.\n④ 진단: ‘모든 모호성을 제거해야 한다’는 과장된 표현을 오해한 것. 지문은 ‘필요한 단어 포함’을 강조하지, ‘모든’ 모호성을 제거하라는 말은 없음. → 처방: ‘절대’나 ‘모두’ 같은 과장된 단어가 나오면 지문과 맞는지 다시 한 번 확인하기.\n⑤ 진단: ‘문법 구조가 문장 의미에 미치는 영향’을 오해한 것. 지문은 전치사 예시와 모호성 문제를 다루지만, 문법 구조 전체의 영향을 설명하지 않음. → 처방: 지문의 주제가 ‘정확한 표현’임을 떠올리고, 문법 구조 전체가 아니라 ‘정확한 단어 선택’이 핵심임을 확인하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The importance of avoiding ambiguity in language]"
    }
   }
  ]
