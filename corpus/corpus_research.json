@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T17:49:50.755Z",
+ "updated": "2026-08-20T19:03:56.705Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T19:03:29.098Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 'present tense + noun phrase + reason relations' 패턴에서, 한국어 학습자의 오류는 'be 동사 + 형용사' 구조의 과도한 사용과 '~ing' 형태의 명사화 부족에서 비롯된다.",
+   "rule": "원서 패턴을 반영하여, '~하는 것이 ~하다' 구조(예: 'traveling is to release') 대신 '~하는 것은 ~하는 것이다' 구조(예: 'traveling is using')로 변형하여 출제할 것.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T17:49:18.962Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "비교급 표현에서 'than' 뒤에는 명사구(noun phrase)가 오며, 비교 대상이 되는 명사는 관사(the)를 필수적으로 요구한다. 또한, 문법 오류는 비교 대상이 생략되거나 관사가 누락된 경우에 빈번히 발생한다.",
    "rule": "비교급 문장에서 'A is ~er than B' 구조를 사용할 때, B는 반드시 'the + 명사' 형태로 구체화하여 비교 대상을 명확히 하도록 한다. 예를 들어, 'half than other'는 'half than the other'로 수정해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T04:59:31.435Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "‘provide for’의 대상이 ‘travel’이 아닌 ‘traveler’로 자연스럽게 연결되며, ‘know already’는 ‘already know’로 어순이 정착된 패턴이 많다. 또한 ‘teach’를 ‘try learning’으로 잘못 쓰는 오류는 ‘teach + 목적어 + 목적격보어’ 구조의 오용에서 비롯된다.",
-   "rule": "‘provide + safety/security + for + 대상’의 올바른 연어 패턴을 활용하여, 오답 선택지에서는 ‘for + 무생물(예: travel)’ 대신 ‘for + 사람(예: travelers)’을 삽입하거나, ‘know already’를 ‘already know’로 어순을 틀리게 제시하라.",
    "sample": [
     "old english",
     "university press",
