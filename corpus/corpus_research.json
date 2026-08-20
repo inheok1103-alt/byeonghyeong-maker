@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T04:05:37.803Z",
+ "updated": "2026-08-20T04:56:55.056Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T04:56:24.587Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어에서 'have a glance at/of'와 같은 고정 연어는 전치사 선택이 문법적 오류로 이어질 수 있으며, 감정형용사('furious')는 주제와 대상을 혼동하지 말고 'serious' 등으로 대체해야 한다.",
+   "rule": "문장 내 'have + 명사' 구조(예: have a glance, have a look)의 경우, 반드시 해당 연어의 표준 전치사('at/of/on')를 사용했는지 검토하고, 감정형용사가 주제와 대상을 혼동하지 않도록 'serious/important' 등으로 대체하는지 확인하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T04:05:08.211Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "복합문에서 동사 시제 일치와 명사 단복수 오류가 빈번하며, 전치사나 접속사의 잘못된 사용이 문법적 오류로 이어진다. 또한, 관사·전치사의 생략 또는 오용이 문장 구조를 불안정하게 만든다.",
    "rule": "복합문에서 주절과 종속절의 동사 시제를 일치시키고, 명사의 단복수와 관사를 정확히 사용하며, 전치사(예: 'in' → 'over', 'although' → 'while')를 문맥에 맞게 교정하도록 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T13:59:39.567Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'all'의 생략이 문법적 오류를 유발하는 패턴이 반복된다. 특히 'all the burdens', 'all carbon emission'에서 'all'이 필수적임에도 생략된 경우가 많다.",
-   "rule": "'all'이 포함된 복수명사구(예: all burdens, all carbon emissions)에서 'all'을 생략하지 말고 반드시 포함시켜 문장을 구성하라. 이는 'old age', 'math problems', 'exams' 등에도 동일하게 적용된다.",
    "sample": [
     "old english",
     "university press",
