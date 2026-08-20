@@ -1,7 +1,15 @@
 {
- "updated": "2026-08-20T01:57:43.919Z",
+ "updated": "2026-08-20T03:12:50.931Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 ⓐ와 ⓒ의 어법 오류를 동시에 지적하고, 구체적인 수정 사례(예: ⓐ는 'a female nurses' → 'a female nurse', ⓒ는 'Is this a finger?' → 'Are these fingers?')를 제시해야 한다.",
+   "src": "자가학습:어법수정",
+   "score": 70,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-20T03:12:13.560Z"
+  },
   {
    "rule": "원문과 제목·내용 일치 및 논리적 흐름(결과→예시→정리)을 위해 (C)의 구체적 설명 추가와 (C)-(A)-(B) 순서 재배열을 전제하는 규칙을 적용하라.",
    "src": "자가학습:글의순서",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-16T21:37:16.552Z"
-  },
-  {
-   "rule": "모든 선지의 길이를 균일하게 맞추고, 어법상 틀린 부분의 예시를 최소 2개 이상 포함하여 문제의 명확성과 난이도를 균일하게 조정하라.",
-   "src": "자가학습:어법개수형",
-   "score": 87,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-16T20:39:58.903Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
