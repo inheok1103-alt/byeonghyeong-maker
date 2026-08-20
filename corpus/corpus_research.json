@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T07:15:32.236Z",
+ "updated": "2026-08-20T08:01:56.737Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T08:01:28.264Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'most of + 복수명사'가 아닌 'most + 복수명사'가 자연스러운 연어 패턴임을 확인할 수 있다. 또한 동사 시제 오류(3인칭 단수, 미래형, 과거분사 등)와 관련해 'say→says', 'gonna→going to', 'conceder→consider', 'colecting→collecting'과 같은 연어 오류가 빈번하다.",
+   "rule": "'most of' 뒤에는 복수명사가 오면 안 되며, 'most'만 단독으로 복수명사와 결합해야 한다. 또한 동사 시제 오류는 'say/says', 'going to/gonna', 'consider/conceder', 'collect/colecting'과 같은 고정 연어 패턴을 기준으로 검증하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T07:15:02.170Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "복수 명사나 관사 오류, 과거 시제와 현재 시제 혼동, 철자 오류가 빈번하게 관찰된다. 특히 'a/an/the'의 불필요한 사용이나 누락, 과거 시제 동사의 오용이 두드러진다.",
    "rule": "복수 명사나 관사의 오류를 검토할 때, 해당 명사가 문맥상 복수형으로 사용되어야 하는지(예: 'specialized doctors' vs 'the doctor')를 반드시 확인하고, 과거 시제 동사가 현재 시제와 혼동되지 않도록 시제 일관성을 점검하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T16:49:49.536Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'ask' 동사가 과거 시제일 때 'me'와 같은 간접목적어를 필수적으로 동반하는 패턴이 빈번하며, 'reason'은 단수보다는 복수형으로 쓰이거나 'to V' 구문과 결합하는 경향이 강하다.",
-   "rule": "'ask + me/you/him/her/them' 구문이 포함된 문장은 과거 시제에서 'asked'로 변환하고, 간접목적어(me/you 등)를 반드시 포함하도록 오답지를 설계하라.",
    "sample": [
     "old english",
     "university press",
