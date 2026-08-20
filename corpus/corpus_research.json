@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T21:47:08.898Z",
+ "updated": "2026-08-20T22:51:50.219Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T22:51:19.802Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거 시제와 현재 시제가 혼용된 문장에서 시간적 흐름의 일관성이 깨질 경우 오류가 빈발하며, 특히 'after returning'과 같은 시간 표현 뒤에는 과거 시제(was tired)가 필수적이다.",
+   "rule": "시간적 순서가 명확한 문맥(예: 'after returning')에서는 모든 동사가 과거 시제(was tired, meant 등)로 통일되어야 하며, 중간에 현재 시제(is meant)가 끼어들면 오류로 처리한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T21:46:36.923Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'than other'는 비교대상이 불분명해 오류가 자주 발생하며, 'than the other'로 한정적 의미를 명확히 해야 한다. 또한 'why not to V'는 부정사 사용 오류로, 'why not V'가 표준 표현이다.",
    "rule": "'than other'가 비교대상으로 사용될 경우, 반드시 'than the other'로 수정하여 한정적 의미를 명시하라. 또한 'why not to V'는 'why not V'로 수정하여 부정사 오용을 방지하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T09:01:49.060Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'the one'은 특정 대상을 지시할 때 'this/that one'으로 명확히 해야 하며, 'one of the reason(s)'는 복수형(reasons)으로 써야 한다. 또한 'good situstion'처럼 명사+명사 결합은 잘못된 경우가 많다.",
-   "rule": "'the one'을 지시대상으로 사용할 때는 반드시 'this/that one'으로 바꾸고, 'one of the reason(s)' 다음에는 복수형(reasons)을 쓰며, 명사+명사 결합은 'good situation'처럼 명사+형용사+명사로 명확히 수정하라.",
    "sample": [
     "old english",
     "university press",
