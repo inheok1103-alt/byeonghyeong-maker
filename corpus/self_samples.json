@@ -1,6 +1,94 @@
 {
- "updated": "2026-08-20T05:50:06.724Z",
+ "updated": "2026-08-20T07:15:32.240Z",
  "samples": [
+  {
+   "ts": "2026-08-20T07:08:02.687Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "어휘를 반복해서 사용하면 단기 기억에만 강하게 남는다",
+     "스토리 속에서 반복되는 어휘가 장기 기억으로 이어진다",
+     "모든 어휘는 반복 노출만으로 완벽히 기억될 수 있다",
+     "매일 새로운 단어보다 과거에 배운 단어를 반복하는 것이 더 중요하다",
+     "어휘를 반복적으로 접하는 것이 장기 기억 형성에 효과적이다"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Repeated exposure to vocabulary through stories strengthens long-term retention.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘단기 기억’만 강조한 점에서 지문(‘장기 기억으로 이어진다’, ‘확고히 자리 잡게 한다’)의 핵심 뜻을 오해했다. → 처방: 지문에서 ‘장기 기억’과 ‘확고한 자리 잡기’를 강조한다는 점을 기억하고, 선지의 ‘단기 기억’ 표현을 의심하라.\n② 진단: ‘장기 기억으로 이어진다’는 부분은 옳지만, 지문은 ‘반복’이 ‘장기 기억’으로 이어진다고 설명하지 ‘반복되는 어휘가’ 직접 ‘장기 기억’으로 이어진다고 설명하지 않는다. → 처방: ‘반복’이 ‘장기 기억’으로 이어진다는 지문의 핵심 뜻을 정확히 짚고, ‘어휘가’가 아니라 ‘반복’이 핵심 동인이라는 점을 기억하라.\n③ 진단: ‘완벽히 기억될 수 있다’는 과장된 표현을 지문(‘확고히 자리 잡게 한다’는 ‘완벽’과는 다르다)에서 오독했다. → 처방: ‘완벽히’라는 강도를 낮춰야 한다는 점을 기억하고, 지문의 ‘확고히 자리 잡게 한다’는 ‘완벽’이 아닌 ‘튼튼한’ 정도로 이해하라.\n④ 진단: ‘과거 단어가 반복하는 것이 더 중요하다’는 말은 지문에서 ‘새로운 단어’와 ‘반복 단어’를 모두 강조한다는 점에서 오해했다. → 처방: 지문이 ‘새로운 단어’와 ‘반복 단어’를 모두 중요하게 다룬다는 점을 기억하고, ‘더 중요하다’는 상대적 비교를 의심하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Repeated exposure to vocabulary through stories strengthens long-term retention.]"
+   }
+  },
+  {
+   "ts": "2026-08-20T07:14:48.246Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 1/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "단어들을 반복적으로 읽으며 어휘력을 늘리기 위해서",
+     "단어들이 반복되어야 어휘가 강해지므로 매일 새 단어를 배워야",
+     "이전에 배운 단어의 의미를 이해하기 위해 이야기를 반복해서 읽기",
+     "모든 새로운 단어는 항상 반복을 통해 완전히 숙달되어야만 한다",
+     "매일 다섯 개의 새로운 단어만 반복하여 어휘를 조금씩 늘리기"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'to expand vocabulary through spaced repetition of words in stories.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘반복되어야 어휘가 강해진다’는 지문 속 ‘repetition’이 강조된 부분은 맞지만, ‘매일 새 단어를 배워야 한다’는 말은 지문에 없으며 ‘새 단어’와 ‘반복’ 개념을 혼동한 듯하다. → 처방: ‘반복’이 중요하다는 점은 맞지만, 지문은 ‘새 단어’와 ‘반복’ 모두를 다루므로 ‘새 단어’만 강조하지 말고 지문 전체를 꼼꼼히 읽자.\n③ 진단: ‘이전 단어의 의미를 이해하기 위해 이야기를 반복해서 읽기’는 지문의 ‘repeated from previous weeks’와 ‘practice grasp of meanings’를 부분적으로 연결했으나, ‘이야기를 반복해서 읽기’는 지문에 언급되지 않았다. → 처방: 지문은 ‘단어’가 반복된다고만 했고, ‘이야기’ 반복은 언급하지 않았으므로 단어와 이야기를 구분해서 읽자.\n④ 진단: ‘모든 새로운 단어는 항상 반복을 통해 완전히 숙달되어야만 한다’는 지문의 ‘guarantee that these words will be firmly fixed’ 부분만 보고 ‘항상’, ‘완전히’, ‘숙달되어야만’이라는 과장된 표현을 덧붙였다. → 처방: 지문은 ‘반복이 도움이 된다’는 정도이지 ‘완전히 숙달되어야만 한다’는 말은 없으므로 문장의 강도를 조절해서 읽자.\n⑤ 진단: ‘매일 다섯 개의 새로운 단어만 반복하여 어휘를 조금씩 늘리기’는 지문의 ‘five new words’와 ‘repeated from previous weeks’를 혼동해 ‘오직 다섯 개만’으로 한정지었다. → 처방: 지문은 ‘새 단어’와 ‘반복 단어’를 모두 포함하므로 ‘오직 다섯 개만’이라는 한정은 지문에 없음을 기억하자.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to expand vocabulary through spaced repetition of words in stories.]"
+   }
+  },
+  {
+   "ts": "2026-08-20T07:14:59.789Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 단어 반복 학습을 통해 어휘력이 체계적으로 확장될 수 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-20T05:48:56.700Z",
    "type": "영영풀이일치",
@@ -263,108 +351,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Propositional arguments can function as sentential complements in logical forms.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘보충적 논항’(complement)으로만 제한했다는 점에서 지문이 ‘주어나 목적어 역할을 하는 명제 논항’도 언급했다는 사실을 놓쳤다. 지문 (41b, c)에서 ‘주어·목적어’ 역할을 하는 명제 논항을 예로 들었고, (42a-c)에서도 ‘주어’ 역할을 하는 명제가 ‘proud’의 두 번째 논항이라고 설명했다. → 처방: ‘보충적’이 아닌 ‘주어·목적어’ 역할도 명제 논항이 할 수 있음을 떠올리며 지문을 다시 읽고, ‘보충적’이란 단어에만 집중하지 말고 문장의 ‘기능’을 중시하라.\n③ 진단: ‘동사뿐 아니라 형용사에서도 가능하다’는 표현을 ‘형용사에서만 가능하다’로 오해했다. 지문은 ‘동사뿐 아니라 다른 품사에서도 가능하다’고 했지만, 학생은 ‘형용사에서만’이라는 한정적 의미로 읽었다. → 처방: ‘뿐 아니라’(as well as)를 ‘~뿐만 아니라 ~도’로 해석하고, ‘다른 품사’가 형용사·동사·명사 등임을 확인하라. ‘~에서만’이라는 한정 표현이 나오면 주의 깊게 읽어라.\n④ 진단: ‘반드시 포함해야 한다’는 강제적 표현을 ‘포함할 수 있다’로 오독했다. 지문은 ‘명제 논항이 포함될 수 있다’는 가능성을 설명했지만, 학생은 ‘필수 조건’으로 이해했다. → 처방: ‘반드시’(must)라는 단어에 민감해져라. 지문이 ‘가능성’을 설명하는지 ‘필수 조건’을 설명하는지 문맥을 정확히 파악하라.\n⑤ 진단: ‘극히 드물다’는 지문의 ‘드물지 않다’는 내용과 반대되는 의미를 오해했다. 지문은 ‘명제 논항이 문장에서 자주 등장한다’는 예시를 들었지만, 학생은 ‘매우 희귀하다’고 잘못 해석했다. → 처방: ‘드물다’(rare)라는 단어가 문맥에서 ‘자주 없다’는 뜻인지 ‘매우 희귀하다’는 뜻인지 문맥을 살피라. ‘예시’가 많으면 ‘드물지 않다’는 결론을 내릴 수 있음을 기억하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Propositional arguments can function as sentential complements in logical forms.]"
-   }
-  },
-  {
-   "ts": "2026-08-19T23:41:18.497Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(69%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Propositions can act as sentential arguments in logical structures, either as the second argument or the sole argument of main predicates",
-     "Propositions are exclusively the second argument of main predicates when they function as sentential arguments",
-     "Propositions can serve as the second argument of main predicates in logical forms, but never as the sole argument",
-     "Propositions sometimes act as the second argument of main predicates in logical forms, though they cannot be sole arguments",
-     "Propositions can function as arguments in logical structures, but their position as second or sole argument is irrelevant"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Propositions can function as sentential arguments in logical forms, serving as the second or sole argument of main predicates.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 지문에서 'plausibly members of other word classes can also have sentential arguments'와 '(42a, b, c)에서 proud 의 두 번째 인자로 문장(프로포지션)이 오는 예시'를 언급했는데, 선지는 '오직 두 번째 인자'로 한정지어 오해. 'exclusively'라는 말이 지문의 'plausibly'와 'can also'를 무시한 과도한 일반화. → 처방: 지문에서 'can also'나 'plausibly'처럼 가능성을 열어둔 표현을 주의 깊게 읽고, 'exclusively' 같은 절대적 표현이 나올 때 지문과 맞는지 다시 한 번 확인하기.\n③ 진단: 지문에서 '(42a, b, c)의 문장(프로포지션)이 proud 의 두 번째 인자로 오는 예시'와 'For a review of this section...'에서 문장이 유일한 인자로 오는 예시(sole argument)를 모두 제시했는데, 선지는 'never'로 불가능을 주장하며 지문의 예시를 무시. 'never'라는 말이 지문의 'can also'와 'sole argument' 예시를 부정. → 처방: 지문에서 'can also'나 'sole argument' 같은 표현을 눈여겨보고, 'never'나 'cannot' 같은 절대적 부정 표현이 나오면 지문의 구체적 예를 다시 떠올리며 검토하기.\n④ 진단: 지문에서 문장이 두 번째 인자로 오는 예시(42a, b, c)와 sole argument 로 오는 예시('For a review...')를 모두 제시했는데, 선지는 'though they cannot be sole arguments'로 sole argument 를 배제. 'though'로 양보 구문을 썼지만 실제로는 sole argument 가 가능하다는 지문의 내용을 무시. → 처방: 지문에서 sole argument 로 오는 예시를 찾고, 'though'나 'but' 같은 양보 구문 뒤에도 문장이 sole argument 로 올 수 있음을 확인한 후 선택하기.\n⑤ 진단: 지문에서 문장이 두 번째 인자나 sole argument 로 오는 예시를 모두 제시했는데, 선지는 '그 위치가 irrelevant(무관하다)'고 주장. 'irrelevant'이라는 말이 지문의 'second argument'와 'sole argument' 구분이 중요하다는 내용을 무시. → 처방: 지문에서 문장의 인자 위치(두 번째 인자 vs sole argument)가 논의의 핵심임을 파악하고, 'irrelevant' 같은 표현이 나오면 지문의 구조적 구분을 떠올리며 검토하기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Propositions can function as sentential arguments in logical forms, serving as the second or sole argument of main predicates.]"
-   }
-  },
-  {
-   "ts": "2026-08-19T22:44:42.762Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "이 글은 감사의 글에 사용된 책과 저자들을 나열하고 있다",
-     "이 글의 모든 책과 저자들은 글의 주제와 직접적인 관련이 있다",
-     "이 글은 다양한 책과 저자들을 인용·감사하며 학문적 영향을 밝히고 있다",
-     "이 글은 반드시 모든 책과 저자를 빠짐없이 언급해야만 한다",
-     "이 글은 감사의 글이 인용된 책과 저자들 때문에 더 신뢰성을 얻고 있다"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The acknowledgments list diverse books and articles to credit intellectual influences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: ‘감사의 글’이 아니라 ‘인용·감사’가 주된 목적임을 지문의 ‘ACKNOWLEDGMENTS’라는 제목과 책·저자·기관·기사명 목록(예: ‘Mathematics and the Imagination’, ‘The Meaning of Meaning’)을 통해 확인하지 못하고, 단순히 ‘감사의 글’로만 오독했다. → 처방: ‘ACKNOWLEDGMENTS’라는 제목과 책·기관·기사명이 나열된 형식을 보고, 이것이 단순히 감사가 아니라 ‘인용·감사’임을 먼저 확인하자.\n② 진단: ‘직접적인 관련’이 있는 것처럼 오해했는데, 지문은 ‘학문적 영향을 밝히는’ 목적으로 다양한 분야의 책과 저자를 나열한 것이지, 모든 책이 글의 주제와 ‘직접’ 관련 있는 것은 아니다(예: ‘The Handbook of Freshwater Fishing’). → 처방: ‘직접적인 관련’이 아니라 ‘다양한 학문적 영향을 밝히는 것’이 목적임을 인식하고, 책 제목이나 분야가 서로 달라도 ‘영향’을 받은 흔적임을 이해하자.\n④ 진단: ‘반드시 빠짐없이 언급해야만 한다’는 강제적 의미를 오해했는데, 지문은 ‘인용·감사’가 주목적이므로 ‘반드시’가 아니라 ‘필요한 만큼’ 언급한 것임을 보지 못했다. → 처방: ‘반드시’라는 강제적 표현이 아니라, ‘인용·감사의 목적’이므로 필요한 만큼만 언급했다는 점을 확인하자.\n⑤ 진단: ‘더 신뢰성을 얻고 있다’는 주관적 평가를 오해했는데, 지문은 ‘인용·감사’가 주목적이므로 ‘신뢰성’보다는 ‘영향 받은 흔적’을 밝히는 것에 초점을 두고 있다. → 처방: ‘신뢰성’보다는 ‘학문적 영향’을 밝히는 것이 목적임을 인식하고, 제목과 목록을 통해 그 의도를 읽자.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The acknowledgments list diverse books and articles to credit intellectual influences.]"
-   }
-  },
-  {
-   "ts": "2026-08-19T22:45:30.853Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "acknowledgments of diverse cited sources in academic writing",
-     "acknowledgments section in scholarly books",
-     "practice of citing all possible references in academic texts",
-     "acknowledgments listing only books used in research",
-     "recognition of influential authors in academia"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'acknowledgments section listing diverse books and articles cited'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: ‘ACKNOWLEDGMENTS’라는 제목과 책·기사 등 다양한 출처가 나열된 점은 ‘scholarly books’의 서문 부분일 수도 있다고 혼동했다. → 처방: ‘ACKNOWLEDGMENTS’는 책의 맨 앞부분에 나오는 글로, 연구에 도움을 준 모든 이에게 감사를 표하는 글이므로 ‘scholarly books’의 한 부분이 아니라 ‘감사의 글’이라는 뜻을 정확히 기억하라.\n③ 진단: ‘모든 가능한 출처를 인용하는 관행’이라는 말이 ‘citing all possible references’라는 표현에 끌려서 선택했다. → 처방: ‘ACKNOWLEDGMENTS’는 연구에 사용된 모든 출처를 나열하는 것이 아니라, 연구에 도움을 준 이들에게 감사를 표하는 글이므로 ‘인용’이 아니라 ‘감사’의 의미를 우선 떠올리라.\n④ 진단: ‘책만 사용했다는 점’을 오해했는데, 지문에 ‘기사’도 포함되어 있어 책만 listed 되지 않았다는 사실을 놓쳤다. → 처방: ‘ACKNOWLEDGMENTS’에 책뿐만 아니라 기사도 포함된다는 사실을 확인하고, ‘책만’이라는 한정적 표현이 맞지 않음을 기억하라.\n⑤ 진단: ‘유명한 학자나 저자의 이름을 알아보는 것’이라는 표현에 ‘influential authors’라는 단어가 포함되어 선택했다. → 처방: ‘ACKNOWLEDGMENTS’는 단순히 저자의 이름만 나열하는 것이 아니라, 연구에 도움을 준 모든 이에게 감사를 표하는 글이므로 ‘인식’이 아니라 ‘감사’의 의미를 우선 떠올리라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: acknowledgments section listing diverse books and articles cited]"
    }
   }
  ]
