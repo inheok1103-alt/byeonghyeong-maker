@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-20T10:51:41.917Z",
+ "updated": "2026-08-20T11:46:13.390Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 선지는 지문의 핵심(원자→개념 결합)을 직접 반영해야 하며, 과도한 추론이나 확장을 배제하고, 핵심 단어는 지문의 어휘와 일치시켜야 한다.",
+   "src": "자가학습:제목",
+   "score": 82,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-20T11:45:18.529Z"
+  },
+  {
+   "rule": "영영풀이의 핵심 의미를 'meanings'에만 국한하지 말고, 'concepts'나 'word'를 포함할 수 있도록 영영풀이를 수정하거나, 발문 조건을 해당 핵심 개념에 맞게 구체화하라.",
+   "src": "자가학습:영영풀이단어쓰기",
+   "score": 60,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-20T11:45:43.910Z"
+  },
   {
    "rule": "모든 선지의 영영풀이(정확한 표준 영영사전 표현 사용)는 문맥에 맞게 완전하고 구체적으로 재구성하며, 불완전·축약·오해의 소지가 있는 표현을 배제하고, 핵심 의미를 문맥에 맞게 재정의해야 한다.",
    "src": "자가학습:영영풀이일치",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-17T09:03:31.118Z"
-  },
-  {
-   "rule": "정답 선지는 'Words that sound or look alike but have different meanings(or are confusing due to similar sounds/spellings)'로 통일하고, 오답 선지는 각기 다른 오류 유형(예: 동음이의어/동철이의어의 한정적 정의, 지나치게 포괄적이거나 중복된 설명)을 명확히 구별하여 난이도를 80~89 수준으로 조정하라.",
-   "src": "자가학습:심경변화",
-   "score": 65,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-17T08:06:14.157Z"
-  },
-  {
-   "rule": "Mood, mooed, moose, mousse, morning, mourning, muscle, and mussel'는 복합 주어이므로 are often confusing로 수정하고, 혼동 대상임을 명확히 'muscle and mussel'로 재구성하라.",
-   "src": "자가학습:조건영작",
-   "score": 82,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-17T08:06:37.217Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

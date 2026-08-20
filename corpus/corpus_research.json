@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T10:51:41.918Z",
+ "updated": "2026-08-20T11:46:13.392Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T11:45:47.343Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 'between two' 패턴(예: between two entities, between two systems)과 유사하게, 한국어 문장에서도 '~와 ~사이' 또는 '~와 ~간의' 구조가 빈번히 등장하며, 이 구조는 문법적 오류(예: 전치사 오용, 관사 생략)를 유발한다.",
+   "rule": "'A와 B의 관계/상태/행동'을 나타낼 때는 'A와 B 사이의 [명사]' 또는 'A와 B 간의 [명사]'로 반드시 전치사 '사이의/간의'를 사용하도록 강제하는 문항을 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T10:51:11.144Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "영어 문장은 핵심 동사(주요 동작)가 문장 앞부분에 위치하는 경우가 많으며, 부사구(very soon, at the current rate 등)는 동사 주변에서 유동적으로 재배치될 수 있다.",
    "rule": "주요 동사(예: run out, make brilliant 등)는 문장 앞부분에 위치시키고, 부사구(very soon, brilliant and brighter 등)는 동사 주변(주로 앞 또는 뒤)에서 자연스럽게 배치하도록 문장을 재구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T20:46:48.448Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "형용사나 분사 형태의 빈도·정도 강조가 필요한 경우, 'usually', 'like' 등 보편적 연어 패턴이 자연스럽다. 특히 비교급/최상급 수식어 뒤에는 전치사나 동사구 연어(like + 동사원형)가 빈번히 사용된다.",
-   "rule": "형용사/분사 수식어 뒤에 빈도·정도 강조 연어('usually', 'often', 'like + 동사원형')를 삽입하는 오답 유형을 설계하라.",
    "sample": [
     "old english",
     "university press",

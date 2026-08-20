@@ -1,6 +1,73 @@
 {
- "updated": "2026-08-20T10:51:41.922Z",
+ "updated": "2026-08-20T11:46:13.395Z",
  "samples": [
+  {
+   "ts": "2026-08-20T11:45:01.439Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① That too -- isn’t it nice the way thing N * workout?\n② We seldom find such big differences in semantics, but like chemical atoms each semantic atom can combine only with a certain number of things, and a combination can act quite differently from its constituent parts.\n③ Of course, when atoms combine in chemistry the result may have a quite different nature; two gases, hydrogen (H) and oxygen (0), combine to form a liquid, water (H20).\n④ That woman is my father's sister You mean your aunt?\n⑤ We can call these elementary units of meaning 'semantic atoms', for like atoms in chemistry that combine together into molecules, they combine together into tight clusters that can be called 'concepts' or word meanings.\n⑥ CHAPTER 12 Word Meanings The division of the meanings of words into smaller units of meaning is one of the most successful areas of modern semantics, and turns out to be useful for language learning, for most of the elementary units of meaning of one language are found in other languages.",
+    "choices": [
+     "⑥-⑤-③-②-①-④",
+     "⑥-⑤-②-③-④-①",
+     "⑥-⑤-③-④-②-①",
+     "⑥-⑤-③-②-④-①",
+     "⑤-⑥-③-②-④-①"
+    ],
+    "answer": 4,
+    "explanation": "정답 배열은 ⑥-⑤-③-②-④-①. 흐름: ⑥ → ⑤ → ③ → ② → ④ → ① — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ④가 문맥상 앞뒤로 연결되지 않음을 보지 못하고, 단순히 '가족 관계'라는 주제만 보고 임의로 배치한 것으로 보임. 'That too -- isn’t it nice the way thing N * workout?'가 ①의 끝부분인데, 이 문장이 ④의 'That woman is my father's sister'와 직접 연결되지 않음. → 처방: 글의 주제를 먼저 파악한 뒤, 각 문장의 논리적 연결고리를 찾아 순서대로 배치하기. 예를 들어 ⑥은 'Word Meanings'라는 제목 아래 전체 주제를 소개하는 문장이므로 맨 앞에 와야 함.\n② 진단: ③의 'two gases, hydrogen (H) and oxygen (0)'가 화학 원소 예시로 나오는데, 이 예시를 ②의 'semantic atoms'와 연결하지 못하고, 단순히 '화학'이라는 단어만 보고 배치한 것으로 보임. → 처방: 화학 원소와 'semantic atoms'가 같은 비유 구조라는 점을 인식하고, ②와 ③이 같은 맥락에서 배치되어야 한다는 점을 확인하기.\n③ 진단: ④가 ②와 ③ 사이에 배치되어야 한다는 점을 놓치고, '가족 관계'라는 주제만 보고 문장 순서를 임의로 정한 것으로 보임. → 처방: 문장의 논리적 흐름을 따라가기. ②와 ③은 '원자'와 '결합'이라는 화학 비유를 설명하는 문장이므로, 이 둘은 연속되어야 함. ④는 '가족 관계'라는 구체적 예시이므로 이 뒤에 배치해야 함.\n⑤ 진단: ⑤가 맨 앞에 배치되어야 한다는 점을 놓치고, 'semantic atoms'라는 단어가 처음 나오는 문장이므로 맨 앞에 와야 한다는 점을 간과한 것으로 보임. → 처방: 글의 첫 문장은 전체 주제를 소개하는 문장이어야 한다는 점을 기억하기. ⑥이 'CHAPTER 12 Word Meanings'로 주제를 소개한다면, ⑤는 'semantic atoms'라는 개념을 소개하는 문장이므로 ⑥ 다음에 와야 함.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-20T11:45:35.400Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 1,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "SEMANTIC ATOMS CLUSTER to SHAPE CONCEPTS",
+     "Concepts Emerge from Semantic Atoms' Transformation",
+     "Semantic Atoms Define Basic Word Meanings",
+     "All Languages Share Semantic Atoms Universally",
+     "Semantic Atoms Always Combine Into Clear Concepts"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'SEMANTIC ATOMS COMBINE INTO CONCEPTS'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 지문에서 'semantic atoms'은 'concepts'로 변형되지 않고 'cluster(모임)'을 이룬다고 설명하는데, 이 선지는 '변형(transform)'이라는 단어를 써서 오해한 듯함. → 처방: 지문에서 'cluster'라는 단어를 찾아 개념이 모여 형성된다는 점을 정확히 기억하기.\n③ 진단: 지문은 'semantic atoms'이 '기본 의미 단위'가 아니라 '더 작은 의미 단위'임을 강조하는데, 이 선지는 '기본'이라는 단어로 오해한 듯함. → 처방: 지문에서 'elementary units of meaning'가 '기본'이 아니라 '가장 작은' 단위임을 확인하기.\n④ 진단: 지문은 'most of the elementary units'가 '다른 언어에서도 발견된다'고만 설명하는데, 이 선지는 '모든 언어'라고 과장해 오해한 듯함. → 처방: 지문에서 'most'라는 한정어를 확인하고 '모든 언어'가 아님을 기억하기.\n⑤ 진단: 지문은 'tight clusters'로 결합한다고 설명하지만, 이 선지는 '항상 명확한 개념'으로 결합한다고 과장해 오해한 듯함. → 처방: 지문에서 'tight clusters'라는 표현을 찾아 '항상 명확한' 결합이 아님을 확인하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: SEMANTIC ATOMS COMBINE INTO CONCEPTS]"
+   }
+  },
   {
    "ts": "2026-08-20T10:50:35.272Z",
    "type": "영영풀이일치",
@@ -281,60 +348,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'to expand vocabulary through spaced repetition of words in stories.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: ‘반복되어야 어휘가 강해진다’는 지문 속 ‘repetition’이 강조된 부분은 맞지만, ‘매일 새 단어를 배워야 한다’는 말은 지문에 없으며 ‘새 단어’와 ‘반복’ 개념을 혼동한 듯하다. → 처방: ‘반복’이 중요하다는 점은 맞지만, 지문은 ‘새 단어’와 ‘반복’ 모두를 다루므로 ‘새 단어’만 강조하지 말고 지문 전체를 꼼꼼히 읽자.\n③ 진단: ‘이전 단어의 의미를 이해하기 위해 이야기를 반복해서 읽기’는 지문의 ‘repeated from previous weeks’와 ‘practice grasp of meanings’를 부분적으로 연결했으나, ‘이야기를 반복해서 읽기’는 지문에 언급되지 않았다. → 처방: 지문은 ‘단어’가 반복된다고만 했고, ‘이야기’ 반복은 언급하지 않았으므로 단어와 이야기를 구분해서 읽자.\n④ 진단: ‘모든 새로운 단어는 항상 반복을 통해 완전히 숙달되어야만 한다’는 지문의 ‘guarantee that these words will be firmly fixed’ 부분만 보고 ‘항상’, ‘완전히’, ‘숙달되어야만’이라는 과장된 표현을 덧붙였다. → 처방: 지문은 ‘반복이 도움이 된다’는 정도이지 ‘완전히 숙달되어야만 한다’는 말은 없으므로 문장의 강도를 조절해서 읽자.\n⑤ 진단: ‘매일 다섯 개의 새로운 단어만 반복하여 어휘를 조금씩 늘리기’는 지문의 ‘five new words’와 ‘repeated from previous weeks’를 혼동해 ‘오직 다섯 개만’으로 한정지었다. → 처방: 지문은 ‘새 단어’와 ‘반복 단어’를 모두 포함하므로 ‘오직 다섯 개만’이라는 한정은 지문에 없음을 기억하자.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to expand vocabulary through spaced repetition of words in stories.]"
-   }
-  },
-  {
-   "ts": "2026-08-20T07:14:59.789Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 단어 반복 학습을 통해 어휘력이 체계적으로 확장될 수 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-20T05:48:56.700Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · ⚠ 정답 재검토 권고 — 솔버 1/3가 2번 선택(기록 4번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "The ⓐ<u>analysis</u> ⓑ<u>implied</u> in (61) is that Jim ⓒ<u>leaving</u> the ﬂ at is the ⓓ<u>Direct</u> ⓔ<u>Object</u> of see . The semantic test conﬁ rms that this string of words is a constituent because the answer to the question ‘What did Abdul see?’ is Jim leaving the ﬂ at . Let’s now apply all the other tests. (i) Abdul says that he saw Jim leaving the ﬂ at, and [Jim leaving the ﬂ at] he did see –. (ii) *[Jim leaving the ﬂ at] though Abdul saw –, it could have been someone else. (iii) *[Jim leaving the ﬂ at] was seen by Abdul. (iv) Abdul saw it . (v) Abdul saw [Jim leaving the ﬂ at] and [Pat leaving the room]. (vi) It was [Jim leaving the ﬂ at] that Abdul saw. (vii) What Abdul saw was [Jim leaving the ﬂ at]. (viii) [Jim leaving the ﬂ at] was Abdul’s goal. (ix) *It was Abdul’s goal [Jim leaving the ﬂ at]. (x) A: What did Abdul see?",
-    "choices": [
-     "analysis: Decomposition into components in order to study (a complex thing, concept, theor",
-     "implied: Suggested without being stated directly; implicated or hinted at.",
-     "leaving: To have a consequence or remnant.",
-     "direct: In such writing systems as the Chinese writing system, the portion of a phono-se",
-     "object: A thing that has physical existence."
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓓ의 풀이는 'semantic'의 정의이다. 'direct'의 올바른 풀이: To manage, control, steer.\n[오답 진단·처방]\n① 진단: ‘analysis’를 ‘복잡한 것을 연구하기 위해 구성 요소로 나누는 행위’로 오독했는데, 지문에서는 ‘(61)에 담긴 의미 분석’이란 뜻으로 쓰였습니다. ‘Decomposition’이라는 뜻만 떠올린 것 같습니다. → 처방: ‘analysis’를 ‘연구·조사·해석’이라는 넓은 뜻으로 기억하고, 문맥에 따라 뜻을 유추하세요.\n② 진단: ‘implied’를 ‘직접적으로 말하지 않고 암시하거나 넌지시 나타내는’ 뜻으로 오독했는데, 지문에서는 ‘(61)에 담긴 의미가 암시하는 바’라고 쓰였습니다. ‘Suggested’라는 뜻만 떠올린 것 같습니다. → 처방: ‘implied’의 뜻을 ‘직접적이지 않은 암시’로만 기억하지 말고, ‘내포된 의미’로도 넓게 이해하세요.\n③ 진단: ‘leaving’을 ‘결과나 흔적을 남기는 것’으로 오독했는데, 지문에서는 ‘Jim 이 평지를 떠나는 것’이란 뜻으로 쓰였습니다. ‘Consequence’라는 뜻만 떠올린 것 같습니다. → 처방: ‘leave’의 뜻을 ‘떠나다’와 ‘남기다’로 구분해서 기억하고, 문맥에 따라 뜻을 판단하세요.\n⑤ 진단: ‘object’를 ‘물리적 실체가 있는 사물’로 오독했는데, 지문에서는 ‘Abdul 이 본 것(Jim leaving the flat)’을 가리키는 말이었습니다. ‘Physical existence’라는 뜻만 떠올린 것 같습니다. → 처방: ‘object’의 뜻을 ‘대상’으로 넓게 기억하고, 문맥에 따라 뜻을 유추하세요.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
