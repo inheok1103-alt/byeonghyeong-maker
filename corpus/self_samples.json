@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-20T19:03:56.709Z",
+ "updated": "2026-08-20T19:52:35.846Z",
  "samples": [
+  {
+   "ts": "2026-08-20T19:47:09.920Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: q)\n[영영풀이] A sentence, phrase or word which asks for information, reply or response; an interrogative.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] question (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-20T19:01:36.532Z",
    "type": "무관문장",
@@ -346,41 +365,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'SEMANTIC ATOMS COMBINE INTO CONCEPTS'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: 지문에서 'semantic atoms'은 'concepts'로 변형되지 않고 'cluster(모임)'을 이룬다고 설명하는데, 이 선지는 '변형(transform)'이라는 단어를 써서 오해한 듯함. → 처방: 지문에서 'cluster'라는 단어를 찾아 개념이 모여 형성된다는 점을 정확히 기억하기.\n③ 진단: 지문은 'semantic atoms'이 '기본 의미 단위'가 아니라 '더 작은 의미 단위'임을 강조하는데, 이 선지는 '기본'이라는 단어로 오해한 듯함. → 처방: 지문에서 'elementary units of meaning'가 '기본'이 아니라 '가장 작은' 단위임을 확인하기.\n④ 진단: 지문은 'most of the elementary units'가 '다른 언어에서도 발견된다'고만 설명하는데, 이 선지는 '모든 언어'라고 과장해 오해한 듯함. → 처방: 지문에서 'most'라는 한정어를 확인하고 '모든 언어'가 아님을 기억하기.\n⑤ 진단: 지문은 'tight clusters'로 결합한다고 설명하지만, 이 선지는 '항상 명확한 개념'으로 결합한다고 과장해 오해한 듯함. → 처방: 지문에서 'tight clusters'라는 표현을 찾아 '항상 명확한' 결합이 아님을 확인하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: SEMANTIC ATOMS COMBINE INTO CONCEPTS]"
-   }
-  },
-  {
-   "ts": "2026-08-20T10:50:35.272Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 3/3 다수결 4번(기록 1번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "The ⓐ<u>Grammar</u> Geek 46 10. a) ⓑ<u>Everyone</u> ate one. b) Everyone was eating one. \b \b \b \b \b \b EXERCISE 5: EDITING Edit the following passage for past tense mistakes. You have to love this prof At McGill ⓒ<u>University</u>, four second-year students took Organic Chemistry. Everything went so well for them on the quizzes, mid­ terms and labs, and they each were ⓓ<u>having</u> an A so far in the course. They were so confident that on the ⓔ<u>weekend</u> before their final exams, they decide to go to Ottawa University and party with some friends there. They were having a great time, but after an intense night of partying, they sleep all day Sunday and didn’t made it back to McGill until early Monday morning. Rather than taking the final then, they decided to track down their professor after the final and give him an explanation as to why they were missing it. They explained to him that they had gone to Ottawa for the weekend with the intention to come back in time",
-    "choices": [
-     "grammar: A final examination; a test or examination given at the end of a term or class; ",
-     "everyone: Every person.",
-     "university: Institution of higher education (typically accepting students from the age of ab",
-     "having: To possess, own.",
-     "weekend: The break in the working week, usually two days including the traditional holy o"
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓐ의 풀이는 'final'의 정의이다. 'grammar'의 올바른 풀이: A system of rules and principles for speaking and writing a language.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 학생은 'grammar'을 'final examination'으로 오독했는데, 지문에서 'Grammar Geek'은 '문법 매니아'라는 뜻으로 쓰였으므로 시험과는 무관하다. 학생은 'grammar'의 뜻만 알고 있었으나 문맥을 고려하지 않았다. → 처방: 단어의 뜻뿐 아니라 문장 전체의 맥락을 함께 확인하는 습관을 기르기. 문장 속 단어의 역할을 먼저 생각해 보기.\n② 진단: 학생은 'everyone'을 '모든 사람'으로만 해석했는데, 지문에서는 '모든 학생'이 아니라 '모든 사람이 한 개씩 먹었다'는 뜻으로 쓰였다. 'everyone'의 뜻은 맞지만 문맥에 맞게 해석하지 못했다. → 처방: 단어의 기본 뜻을 기억하되, 문장 전체에서 그 단어가 어떤 역할을 하는지 확인하기. 'everyone'이 주어일 때 '~이 한 개씩 먹었다'는 문장 구조를 떠올리기.\n③ 진단: 학생은 'university'를 '고등교육 기관'으로만 오독했는데, 지문에서는 'McGill University'와 'Ottawa University'가 '학교 이름'으로 쓰였다. 학생은 뜻은 맞았으나 고유명사로 쓰인 경우를 고려하지 않았다. → 처방: 단어의 뜻뿐 아니라 고유명사로 쓰였는지도 확인하기. 학교 이름이면 '~대학교'로 해석하는 습관 들이기.\n⑤ 진단: 학생은 'weekend'를 '주말'로만 오독했는데, 지문에서는 '주말 전'이라는 뜻으로 쓰였다. 'weekend'의 뜻은 맞지만 문맥상 '주말'이 아니라 '주말 전'으로 해석해야 했다. → 처방: 단어의 기본 뜻을 기억하되, 문장 전체의 시간적 흐름을 확인하기. 'before their final exams'와 연결 지어 '주말 전'으로 해석하는 습관 들이기."
    }
   }
  ]
