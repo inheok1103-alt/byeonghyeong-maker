@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-20T20:49:29.204Z",
+ "updated": "2026-08-20T21:47:08.896Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "발문은 '어법상 틀린 부분'을 최소 2개 이상 요구하며, 각 오류는 '[오류유형] ⓐ/ⓑ/ⓒ/ⓓ: 원문 → 수정' 형태로 레이블textstyle(예: [수일치], [시제])를 포함해 제시해야 한다.",
+   "src": "자가학습:틀린문장 고쳐쓰기",
+   "score": 22,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-20T21:45:07.095Z"
+  },
+  {
+   "rule": "영영풀이의 의미를 정확히 반영하며 원지문에 'phrasal'이 직접 등장하지 않음을 분명히 하고, 'phrasal modifier'나 'phrasal constituent' 등 더 구체적인 명사형을 허용하는 방향으로 발문의 조건을 '첫 글자: p, 명사형'으로 구체화하라.",
+   "src": "자가학습:영영풀이단어쓰기",
+   "score": 76,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-20T21:46:29.494Z"
+  },
   {
    "rule": "정답 선지는 문법적 용어(예: 'A sequence of words treated as a syntactic unit')로 통일하고, 오답 선지는 문맥에 맞는 구체적·대조적 의미를 부여하여 중복성을 배제하며, 모든 선지가 문법 용어임을 발문에 명시하라.",
    "src": "자가학습:영영풀이일치",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-17T16:48:34.675Z"
-  },
-  {
-   "rule": "모든 출제에서 어법 오류(문법적 오류)만을 엄격히 구분하여 지적하고, 각 오류에 대해 문법 규칙(예: 주어-동사 일치, 철자, 문법적 관계사 사용 등)을 근거로 정확한 수정안을 제시해야 한다.",
-   "src": "자가학습:틀린문장 고쳐쓰기",
-   "score": 43,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-17T16:49:06.085Z"
-  },
-  {
-   "rule": "단어 조건을 엄격히 지키며 'the Greek'에 정관사를 붙이고 '듣다'를 'hearing'으로 직접 반영한 문장은 \"Acoustics comes from the Greek word meaning hearing\"이다.",
-   "src": "자가학습:조건영작",
-   "score": 75,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-17T16:49:39.020Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

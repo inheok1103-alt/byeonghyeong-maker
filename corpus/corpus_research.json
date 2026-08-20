@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T20:49:29.205Z",
+ "updated": "2026-08-20T21:47:08.898Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T21:46:36.923Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'reasons'가 복수형으로 쓰이는 경우 'these'를 수식어로 사용해야 하며, 'the state'는 관사 필수 명사구임. 또한 'migrating reason'은 'reasons for migration'으로 재구조화되어야 자연스러움.",
+   "rule": "복수형 오류가 의심되는 'reason(s)' 뒤에는 반드시 'these/those'를 수식어로 붙이고, 'state'는 관사 없이 쓰이지 않도록 하며, 'migrating reason'은 'reasons for migration'으로 재구조화하여 문장을 완성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T20:49:04.106Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'the one'은 특정 대상을 지시할 때 'this/that one'으로 명확히 해야 하며, 'one of the reason(s)'는 복수형(reasons)으로 써야 한다. 또한 'good situstion'처럼 명사+명사 결합은 잘못된 경우가 많다.",
    "rule": "'the one'을 지시대상으로 사용할 때는 반드시 'this/that one'으로 바꾸고, 'one of the reason(s)' 다음에는 복수형(reasons)을 쓰며, 명사+명사 결합은 'good situation'처럼 명사+형용사+명사로 명확히 수정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T07:58:48.850Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 실제 패턴에서 '~에 대한(~의)'라는 의미의 소유·관련 표현이 'subjective to', 'field of interest', 'for public use' 등으로 빈번히 나타나며, 특히 소유격('s)이나 전치사(for/of)로 명확히 연결됨을 확인할 수 있다.",
-   "rule": "원서 문체 패턴을 반영하여, '~에 대한', '~의' 등 소유·관련 의미를 지닌 문장은 소유격('s)이나 전치사(for/of/regarding 등)를 반드시 명시하여 문법적 명확성을 확보하라.",
    "sample": [
     "old english",
     "university press",
