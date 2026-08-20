@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T09:02:18.698Z",
+ "updated": "2026-08-20T09:56:50.645Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T09:56:18.643Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'because' 구문에서 시간 표현(과거시제)과 무의미한 명사구('unmeaningful subjects')가 결합될 때, 'spend time ~ing' 구조로 수정하는 패턴이 반복된다. 또한 'is they have to'와 같은 주어-동사 위치 오류가 빈번하다.",
+   "rule": "'because' 또는 'which means that' 절에서 과거시제 동사와 무의미한 명사구('unmeaningful', 'disease' 등)가 결합되면, 'They spent time in ~ing' 또는 'which means they will ~' 형태로 수정하는 오류 유형을 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T09:01:44.263Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'특정 사물/개념을 지칭하는 경우, 복수형 또는 소유격을 활용하는 패턴이 빈번하다. 특히 'certain thing(s)', 'failure(s)', 'struggle(s)'와 같이 추상명사나 집합명사가 복수화되거나 소유격이 붙는 경우가 많다.",
    "rule": "'추상명사 또는 집합명사를 사용할 때, 문맥상 복수형(-s) 또는 소유격(-'s)을 반드시 적용하라. 예: 'certain thing' → 'certain things', 'failure' → 'failures', 'struggle' → 'struggles'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T19:00:43.081Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구 내 전치사 오류와 동사 시제/태 오류가 빈번히 발생하며, 특히 'for + 명사' 구조에서 'for + 형용사'로의 오용이 두드러진다.",
-   "rule": "원서 문체 패턴을 반영하여 'for + 명사' 구조가 필요한 경우, 항상 'for + safety/systematic development'와 같은 명사형 표현을 사용하도록 유도하라.",
    "sample": [
     "old english",
     "university press",
