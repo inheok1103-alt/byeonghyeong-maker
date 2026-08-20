@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-20T17:01:44.722Z",
+ "updated": "2026-08-20T17:49:50.759Z",
  "samples": [
+  {
+   "ts": "2026-08-20T17:48:40.184Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 2/3가 5번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "There is a demand for a repeal of the inheritance tax. ✓ We demand that Congress repeal the inheritance tax. Clarity, Not Simplemindedness Your readers want you to write clearly, but not in Dick-and-Jane sentences. Some argue that all sentences should be short, no more than fifteen or twenty words. But many mature ideas are too ­complicated to express so compactly. In Lessons 10 and 11 we look at ways to revise too-short, too-simple sentences into a style that is readable but still complex enough to communicate ­complex ideas. In Your Own Words E xercise 3.8 Go through a page of your own writing. Underline whole ­subjects and bracket verbs. Now, think about the story you are telling. ­Circle the main characters and box their actions, wherever they ­appear. Look especially for actions hidden in nominalizations. What do you notice? How clear will a reader likely find your writing? If necessary, revise to align characters with subjects and specific actions with verbs.\n\n─────────\n[요약문] The demand for (A) inheritance tax repeal reflects a need for (B) clarity in communication, balancing simplicity and complexity in writing style.",
+    "choices": [
+     "(A) policy elimination … (B) simplicity in expression",
+     "(A) tax abolition … (B) linguistic precision",
+     "(A) financial adjustment … (B) grammatical correctness",
+     "(A) legislative change … (B) minimalist writing",
+     "(A) tax reform … (B) rhetorical clarity"
+    ],
+    "answer": 2,
+    "explanation": "(A) tax abolition / (B) linguistic precision 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘policy elimination’이란 말은 지문에서 ‘repeal of the inheritance tax’를 ‘정책 폐지’로 단순 번역한 오류로, ‘inheritance tax’는 ‘상속세’이므로 ‘정책’이 아니라 ‘세금’을 뜻함을 혼동함. ‘simplicity in expression’은 지문이 ‘not in Dick-and-Jane sentences’(단순한 문장 반대)라며 ‘간소화’가 아니라 ‘정확한 전달’을 강조함을 놓침. → 처방: ‘inheritance tax’를 ‘상속세’로 정확히 이해하고, ‘repeal’이 ‘폐지’이므로 ‘tax abolition’이 맞는지 확인할 것.\n③ 진단: ‘financial adjustment’은 지문에서 ‘inheritance tax repeal’이 ‘재정 조정’이 아니라 ‘세금 폐지’임을 오해한 것. ‘grammatical correctness’는 지문이 문법이 아니라 ‘의미 전달의 명확성’을 강조함을 간과함. → 처방: ‘adjustment’(조정)이 아니라 ‘abolition’(폐지)이 핵심 단어임을 확인하고, ‘clarity’가 ‘문법’보다 ‘의미 전달’임을 기억할 것.\n④ 진단: ‘legislative change’는 ‘inheritance tax repeal’이 ‘입법 변화’로 포괄적으로 해석한 오류. ‘minimalist writing’은 지문이 ‘간소한 문장’이 아니라 ‘복잡한 아이디어를 명확히 전달하는 글쓰기’를 요구함을 놓침. → 처방: ‘repeal’이 ‘폐지’이므로 ‘legislative change’(입법 변화)보다는 ‘tax abolition’이 더 정확함을 확인할 것.\n⑤ 진단: ‘tax reform’은 ‘inheritance tax repeal’이 ‘세금 개혁’이 아니라 ‘폐지’임을 오해한 것. ‘rhetorical clarity’는 지문에서 ‘clarity’(명료성)을 ‘수사학적 명확성’으로 과하게 해석한 오류. → 처방: ‘repeal’이 ‘폐지’이므로 ‘abolition’이 ‘reform’보다 더 직접적임을 확인하고, ‘clarity’를 ‘수사’가 아니라 ‘의미 전달의 명확성’으로 이해할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-20T16:53:10.972Z",
    "type": "요지",
@@ -330,39 +365,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 그들은 자신감이 넘쳐서 기말고사 전 주말에 오타와 대학교에 가서 그곳에서 친구들과 파티를 하기로 결정했다. (구문 포인트: so ~ that 구문(결과를 나타내는 결과부사절) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-20T09:52:50.459Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "코치들은 부진한 경기력을 묵과하지 말고 동기를 부여해야 한다",
-     "코치들은 선수들의 동기 부여를 위해 질책을 삼가야 한다",
-     "코치들은 질책으로 선수들의 경기력을 향상시킬 수 있다",
-     "모든 스포츠 코치는 부진한 경기력을 절대 용납해서는 안 된다",
-     "코치들은 질책으로 선수들을 분노하게 해야 경기력이 나아진다"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Coaches should reprimand players to fire them up rather than accepting lackluster performance.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Coaches should reprimand players to fire them up rather than accepting lackluster performance.]\n[오답 진단·처방]\n① 진단: 지문에서 코치는 질책으로 동기를 부여했다는 내용이 없으므로 '묵과하지 말고 동기를 부여해야 한다'는 오해가 보임. '부진한 경기력을 묵과하지 말고'는 맞지만 '동기 부여'는 코치의 목적이지 직접 행동이 아님. → 처방: 지문 속 코치의 행동(질책)을 정확히 파악하고, '동기 부여'가 아닌 '질책의 효과'에 초점을 맞춰 읽기.\n② 진단: 지문에서 코치는 질책으로 선수들을 '불러일으켰다'고 했고, 질책을 '삼가야 한다'는 선지는 이 내용과 반대됨. '질책을 삼가야 한다'는 코치의 행동을 부정하는 오해. → 처방: 질책이 긍정적 효과를 냈다는 지문 속 'fired us up' 구절을 확인하고, 질책의 '의도와 결과'를 구분해서 읽기.\n④ 진단: '절대 용납해서는 안 된다'는 표현이 과장되어 있으며, 지문은 '반드시 질책으로만 해결해야 한다'는 내용이 없음. '용납'의 범위가 너무 넓음. → 처방: 지문 속 '반드시 질책으로만 해결해야 한다'는 내용이 없음을 확인하고, '절대'라는 절대적 표현에 주의하기.\n⑤ 진단: 질책으로 '분노하게 해야 한다'는 지문 속 'fired us up'이 분노를 뜻하지 않음. '분노'는 부정적 감정으로, 지문은 '결의와 투지를 일으켰다'는 중립적 의미를 담음. → 처방: 'fired us up'의 의미를 정확히 파악하고, '분노'라는 단어가 부정적 감정을 유발하는지 확인하기."
    }
   }
  ]
