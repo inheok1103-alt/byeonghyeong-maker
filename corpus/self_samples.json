@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-20T03:12:50.937Z",
+ "updated": "2026-08-20T04:05:37.807Z",
  "samples": [
+  {
+   "ts": "2026-08-20T04:00:40.168Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "Fair use: \u0007Levin claims that we experience the theater as the most social form of literature because we see it taking place before us. Using Quotations in Your Text You use quotations best when you integrate them so fully that they seem made for your text. Readers become suspicious when they see bare quotations dropped into your paper with no effort to connect them to your own points: Is it you or your source that’s doing all the thinking? So prepare readers for each quotation by stating before you use it how the quotation fits into the mesh of your argument. Then make the fit between the quotation and your text as seamless as possible. Four or Fewer Lines Drop in the Quotation  An acceptable but artless way to insert a quotation into your text is simply to drop it in, introducing it with something like",
+    "choices": [
+     "극장은 우리가 직접 보고 듣는 가장 사회적 문학 장르라는 레빈의 주장이 아니다.",
+     "인용문을 통합할 때는 글의 흐름에 자연스럽게 녹이지 못한다는 주장",
+     "독자들은 인용문이 글에 연결되지 않을 때 그 출처를 의심한다는 지적",
+     "인용문을 사용하기 전에 그 역할을 미리 설명하지 않는다는 주장",
+     "네 줄 이하의 인용문은 글에 자연스럽게 삽입하지 않는다는 주장"
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 레빈의 주장은 '극장이 가장 사회적 문학 장르'라는 것이지, 그 주장을 부정하는 내용은 없다. 학생은 '아니다'라는 부정 표현에 이끌려 오독했을 것이다. → 처방: 지문에서 주장의 긍정·부정을 정확히 확인한 뒤 선지를 읽어라. '~가 아니다' 같은 말은 지문의 핵심 주장과 반대되는지 확인해라.\n② 진단: 지문은 인용문을 '자연스럽게 녹이지 못한다는 주장'이 아니라, '녹이는 방법'을 설명하는 부분이다. 학생은 '못한다는'이라는 표현에 주목해 오해했을 것이다. → 처방: 지문의 내용을 그대로 옮겨 적는 것이 아니라, '무엇을 설명하는지'를 먼저 파악해라. '~라는 주장'이 지문에서 말하는 내용과 같은지 확인해라.\n④ 진단: 지문은 인용문을 사용하기 전에 '역할을 설명해야 한다'고 강조하는데, 학생은 '설명하지 않는다는 주장'으로 오해했을 것이다. 학생은 '~하지 않는다는'이라는 부정 표현에 주목해 오독했을 것이다. → 처방: 지문의 핵심 메시지를 먼저 정리한 뒤, 선지의 표현(긍정·부정)을 지문의 내용과 비교해라. '~하지 않는다'는 말이 지문의 의도와 반대되는지 확인해라.\n⑤ 진단: 지문은 '네 줄 이하의 인용문은 자연스럽게 삽입하지 않는다는 주장'이 아니라, '네 줄 이하의 인용문은 자연스럽게 삽입할 수 있다'고 설명하는 부분이다. 학생은 '~하지 않는다는'이라는 표현에 이끌려 오독했을 것이다. → 처방: 지문의 내용을 그대로 옮겨 적는 것이 아니라, '무엇을 설명하는지'를 먼저 파악해라. '~하지 않는다'는 말이 지문의 의도와 반대되는지 확인해라.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-20T03:11:40.931Z",
    "type": "밑줄함의",
@@ -330,39 +365,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Homophones can make learning English both challenging and fascinating.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 7~11단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-19T20:47:09.129Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "These three also occur (A) [frequently / rarely]. Command Pattern : Verb ….. Stop !Go home ! Request Pattern : Polite Word /Verb …Please leave now . Instruction Pattern .Auxiliary /not/ Verb…Don’t go there. Word Order Sequences: In addition to whole sentence pattern, various kinds of word sequences within sentences can be used to identify word forms. Knowledge of common word sequences enables readers to predict what kinds of words will mostly precede or follow certain other words. Readers can look for (B) [unfamiliar / familiar] sequences as they read, and as long as they recognize the other words in that sequence, can supply the one they don’t know form their background knowledge. For example, word order provides clues as to what words might appear in the following blank spaces: The _________teacher Ran home __________ Cute _______ The first blank requires an (C) [adverb / adjective] such as strict , or knowledgeable ; the second ,an adverb such as quickly or slowly ,and the third , a noun such as child , baby , or puppy. The most predictable English word order sequences include the following: Adjective /noun",
-    "choices": [
-     "(A) rarely - (B) unfamiliar - (C) adverb",
-     "(A) frequently - (B) familiar - (C) adjective",
-     "(A) frequently - (B) unfamiliar - (C) adverb",
-     "(A) rarely - (B) familiar - (C) adverb",
-     "(A) rarely - (B) unfamiliar - (C) adjective"
-    ],
-    "answer": 2,
-    "explanation": "정답 조합: (A) frequently - (B) familiar - (C) adjective. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문 첫머리 'These three also occur (A) [frequently / rarely]'에서 'rarely'를 선택했는데, 이는 'Command Pattern', 'Request Pattern', 'Instruction Pattern'이 자주 일어난다는 문맥을 오해한 결과다. 'frequently'가 맞는 이유는 세 패턴이 '자주' 일어난다는 뜻이기 때문이다. → 처방: 문장 첫 부분에서 'occur'가 쓰인 이유를 확인하고, '자주 일어난다'는 문맥에 맞게 'frequently'를 선택하도록 연습한다.\n③ 진단: 지문 'readers can look for (B) [unfamiliar / familiar] sequences as they read'에서 'unfamiliar'를 선택했는데, 이는 '익숙한 순서'를 찾는다는 문맥을 오해한 결과다. 'familiar'이 맞는 이유는 이미 알고 있는 순서를 찾기 때문이다. → 처방: 지문에서 'familiar sequences'가 '익숙한 순서'를 뜻한다는 점을 확인하고, '익히 아는 패턴'을 찾는다는 뜻임을 기억한다.\n④ 진단: 지문 'The first blank requires an (C) [adverb / adjective]'에서 'adverb'를 선택했는데, 'strict'이나 'knowledgeable' 같은 단어가 형용사라는 사실을 오해한 결과다. 'adjective'가 맞는 이유는 'strict teacher'처럼 형용사가 필요하기 때문이다. → 처방: 빈칸 앞에 오는 단어가 '___ teacher'로 명사 앞에 위치한다는 점을 확인하고, 형용사가 와야 한다는 규칙을 기억한다.\n⑤ 진단: 지문 (A)에서 'rarely'를, (B)에서 'unfamiliar'를, (C)에서 'adjective'를 선택했는데, 이는 문맥을 오해하고 세부 규칙을 혼동한 결과다. 'frequently', 'familiar', 'adjective'가 맞다는 사실을 놓쳤다. → 처방: 각 빈칸의 문맥을 따로따로 확인하고, 패턴과 단어 종류를 정확히 구분하여 선택하도록 연습한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

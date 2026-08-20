@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-20T03:12:50.932Z",
+ "updated": "2026-08-20T04:05:37.803Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-20T04:05:08.211Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'명사 + 전치사 + 명사' 또는 '동사 + 전치사 + 명사' 구조에서 전치사 오용이 빈번하며, 특히 'to'가 'of', 'for', 'with' 등으로 대체되어야 하는 경우가 많다.",
+   "rule": "'to'가 'of', 'for', 'with' 등으로 대체되어야 하는 전치사 오용 패턴을 문장 내 명사구(명사 + 전치사 + 명사)에서 100% 검증하고, 오답으로 'to' 사용을 강제하는 선택지를 반드시 포함한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-20T03:12:23.695Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'all'의 생략이 문법적 오류를 유발하는 패턴이 반복된다. 특히 'all the burdens', 'all carbon emission'에서 'all'이 필수적임에도 생략된 경우가 많다.",
    "rule": "'all'이 포함된 복수명사구(예: all burdens, all carbon emissions)에서 'all'을 생략하지 말고 반드시 포함시켜 문장을 구성하라. 이는 'old age', 'math problems', 'exams' 등에도 동일하게 적용된다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-17T13:09:46.428Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'시간/장소 부사구(very soon, there 등)가 문장 맨 앞 또는 동사 뒤(주로 will/be/is 등 조동사 뒤)에 위치하는 패턴이 반복됨. 또한 'for + 목적' 구문이 문장 중간 또는 끝에 오는 경우가 많음.",
-   "rule": "시간/장소 부사구(very soon, there, at the current rate 등)는 문장 맨 앞 또는 조동사/동사 뒤(주로 will, is, are 등)에 위치하도록 문장을 재구성하도록 출제하라.",
    "sample": [
     "old english",
     "university press",
