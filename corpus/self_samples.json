@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-20T23:44:05.544Z",
+ "updated": "2026-08-21T02:05:30.090Z",
  "samples": [
+  {
+   "ts": "2026-08-21T02:04:50.915Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "Furthermore, this case is assigned by a functional element, something that is not involved in \u0002-role assignment. ① For accusative Case the Case assigner necessarily \u0002marks its subject in order to be able to assign accusative Case. ② But the same is not true for the inflectional assigner of nominative Case. ③ There are two basic positions linguists take with respect to these observations. ④ Meanwhile, syntactic Case marking is also constrained by semantic roles like agent and patient, which further complicates the assignment process. ⑤ One is to assume that nominative and accusative Case are similar and the other assumes that they are fundamentally different. From the first perspective the challenge is to come up with restrictions which define the conditions under which Case can be assigned generally. For example, there are three positions to which we have seen a Case assigned: the specifier of the inflection; the specifier of the complement, and the complement position itself: (65)",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘accusative Case’의 ‘Case assigner’가 ‘subject’를 ‘mark’해야 한다는 점(①)을 오독해, ‘Case assigner’의 역할이 ‘subject’에만 한정된다고 혼동한 듯하다. 지문은 ‘accusative Case’의 ‘Case assigner’가 ‘subject’를 ‘mark’해야 한다고만 설명하지, ‘subject’에만 한정되는 것은 아니다. → 처방: ‘Case assigner’의 역할이 ‘subject’에만 한정되지 않는다는 점을 분명히 기억하고, ‘Case assignment’의 조건을 ‘subject’뿐 아니라 ‘object’나 ‘complement’도 포함한다는 점을 떠올리며 읽기.\n② 진단: ‘nominative Case’의 ‘inflectional assigner’는 ‘subject’를 ‘mark’하지 않아도 된다는 점(②)을 오독해, ‘nominative Case’의 ‘Case assigner’가 아예 ‘mark’를 하지 않는다고 착각한 듯하다. 지문은 ‘accusative Case’의 ‘Case assigner’와 달리 ‘nominative Case’의 ‘Case assigner’는 ‘mark’를 ‘필요로 하지 않는다’는 것만 설명한다. → 처방: ‘Case assigner’의 ‘mark’ 여부가 ‘Case’의 종류에 따라 달라질 수 있음을 기억하고, ‘nominative’와 ‘accusative’의 차이를 명확히 구분하여 읽기.\n③ 진단: ‘linguists’의 ‘two basic positions’를 설명하는 문장(③)을 오독해, ‘observations’의 내용이 ‘linguists’의 ‘positions’와 직접 연결된다고 혼동한 듯하다. 지문은 ‘observations’를 설명한 뒤(①②④) ‘linguists’의 ‘positions’를 소개하는 흐름(③⑤)이다. → 처방: ‘observations’와 ‘linguists’의 ‘positions’를 구분하여 읽고, 각 문장이 어떤 주제를 다루는지 명확히 파악하기.\n⑤ 진단: ‘nominative’와 ‘accusative’의 ‘Case’를 ‘similar’ 또는 ‘fundamentally different’라고 보는 ‘linguists’의 ‘two basic positions’를 설명하는 문장(⑤)을 오독해, 이 문장이 ‘observations’의 예시나 설명으로 오인한 듯하다. 지문은 ‘observations’를 소개한 뒤(①②④) ‘linguists’의 ‘positions’를 소개하는 흐름(③⑤)이다. → 처방: ‘linguists’의 ‘positions’를 설명하는 문장은 ‘observations’와는 다른 주제임을 기억하고, 문단의 주제 전환을 주의하며 읽기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-21T02:05:00.506Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 15 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 7,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'fundamentally', 'Nominative', 'accusative' / 13~17단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Nominative and accusative Case fundamentally differ in how their assigners operate and restrict assignment positions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-20T23:43:22.168Z",
    "type": "본문찾아쓰기",
@@ -297,59 +351,6 @@
     ],
     "answer": 2,
     "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘There is a demand for a repeal of the inheritance tax.’와 ‘We demand that Congress repeal the inheritance tax.’에서 유산세 폐지 요구가 존재함을 확인할 수 있으나, ‘존재하지 않는다’는 완전 반대 의미를 담아 오독했다. → 처방: ‘요구’가 있는지 여부를 먼저 찾고, 그 내용이 긍정인지 부정인지 정확히 확인하기.\n③ 진단: ‘But many mature ideas are too complicated to express so compactly.’에서 15~20단어 이하의 문장이 복잡한 생각을 전달하기 어렵다는 내용임을 지문에서 확인할 수 있으나, ‘전달하기 쉽다’는 문장이 정반대 의미를 담아 오독했다. → 처방: ‘~하기 어렵다’와 ‘~하기 쉽다’를 문장 전체에서 찾아 반대 의미를 구분하기.\n④ 진단: ‘In Lessons 10 and 11 we look at ways to revise too-short, too-simple sentences...’에서 10과 11에서 문장 수정 방법을 다룬다는 내용이 직접 언급되어 있으나, ‘다루지 않는다’는 문장이 오해로 이어졌다. → 처방: ‘~에서 다룬다’와 ‘~에서 다루지 않는다’를 문장 전체에서 찾아 의미가 일치하는지 확인하기.\n⑤ 진단: ‘Underline whole subjects and bracket verbs. Now, think about the story you are telling. Circle the main characters and box their actions...’에서 주체(주어)와 행동(동사)을 명확히 구분하라는 내용이 있지만, ‘구분하지 않아도 된다’는 문장이 오독으로 이어졌다. → 처방: ‘주체와 행동을 명확히 구분하라’는 지시문을 읽고, 그 반대 의미를 가진 선지를 고르지 않도록 주의하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-20T15:50:12.676Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Sa hun til dattera mi said she to daughter my at faren min er kommet alene that father my is come alone og føler sig bedre? and feels himself better Here we have many of the same sorts of things that motivated Twain to say, “A person who has not studied German can form no idea of what a perplexing language it is.” The same Said she . . . ? (Sa hun . . . ?), is come (er kommet), and “feeling yourself” (føler sig), plus gender: the my for my daughter is mi but the my for my father is min. That is, in a sense one “should” be able to say in English Said she to my daughter that my father alone come is and himself better feels? After all, you can say something similar in every other offshoot of Proto-Germanic but English. Only to English speakers does the sentence sound like something someone with brain damage would say. This shows that something was\n\n─────────\n[요약문] The grammatical complexity of English, compared to its (A) counterparts, makes it uniquely (B) for native speakers due to inherited irregularities and syntactic deviations.",
-    "choices": [
-     "(A) Proto-Germanic … (B) challenging",
-     "(A) other … (B) understandable",
-     "(A) simplified … (B) unpredictable",
-     "(A) Germanic … (B) accessible",
-     "(A) modern … (B) familiar"
-    ],
-    "answer": 1,
-    "explanation": "(A) Proto-Germanic / (B) challenging 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: ‘other’를 ‘다른 언어들’이 아닌 ‘다른 Proto-Germanic 언어’로 오해하여 (A)를 Proto-Germanic 으로 보지 않고 ‘other’로만 봄. (B) ‘understandable’은 ‘이해하기 쉬운’이 아니라 ‘이해할 수 있는’으로 오해하여 문맥에 맞지 않음. → 처방: ‘other’는 ‘다른 언어들’을 가리키는 말로, 지문에서 ‘every other offshoot of Proto-Germanic’을 언급했음을 확인하고 (A)를 ‘other’로 정확히 읽기.\n③ 진단: ‘simplified’를 ‘간소화된’이 아니라 ‘단순한’으로 오해하여 (A)를 ‘간소화’가 아닌 ‘단순’으로 봄. (B) ‘unpredictable’은 ‘예측 불가능한’이 아니라 ‘규칙적이지 않은’이 더 적절함. → 처방: ‘simplified’는 ‘간소화된’이 아니라 ‘단순한’ 의미가 아님을 알고, 지문에서 ‘inherited irregularities’를 언급했음을 떠올려 (A)를 ‘other’로 재확인하기.\n④ 진단: ‘Germanic’을 ‘게르만어족 전체’로 오해하여 (A)를 ‘other’가 아닌 ‘Germanic’으로 봄. (B) ‘accessible’은 ‘접근하기 쉬운’이 아니라 ‘이해하기 쉬운’이 더 맞음. → 처방: ‘Germanic’은 ‘게르만어족’을 뜻하지만 지문은 ‘other offshoot of Proto-Germanic’을 강조했음을 기억하고 (A)를 ‘other’로 선택하기.\n⑤ 진단: ‘modern’을 ‘현대 영어’로 오해하여 (A)를 ‘modern’으로 봄. (B) ‘familiar’은 ‘친숙한’이 아니라 ‘이해하기 쉬운’이 더 적절함. → 처방: ‘modern’을 배제하고, 지문에서 ‘Proto-Germanic’과 ‘offshoot’를 언급했음을 떠올려 (A)를 ‘other’로 정확히 읽기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-20T15:03:01.233Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 9 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 9단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 이 책은 구문과 해석의 언어적 모호성을 탐구한다.\n주어진 단어: ( explores / linguistic / ambiguity )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] This book explores linguistic ambiguity in syntax and interpretation. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
