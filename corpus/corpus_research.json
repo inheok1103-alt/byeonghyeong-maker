@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T02:05:30.086Z",
+ "updated": "2026-08-21T03:19:09.307Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T03:18:38.814Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거형 동사(decease/shows, pay/change → using, think/performing) 사용 시 주어와 시제 일치 오류가 빈번하며, 전치사 오류('into' → 'using', 'of' → 'in')도 자주 발생한다. 또한 'any more'와 'even' 같은 부사 위치가 문맥에 따라 변형되어야 한다.",
+   "rule": "과거형 동사가 포함된 문장에서 주어의 수(단수/복수)와 동사의 시제를 반드시 일치시킨 후, 전치사 구(예: 'into', 'of')를 문맥에 맞는 적절한 전치사(예: 'using', 'in')로 대체하여 오류를 수정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T02:05:03.114Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'or' 구문에서 부정어(or not) 생략이 빈번하며, 'look'은 보어와 결합 시 'to' 불필요, 'spend time on' 구문이 'spend time more'로 잘못 축약됨, 'whenever' 절에서 주어 생략과 동사 활용 오류가 중복됨.",
    "rule": "'or not' 부정 구문(Even though ~ or looks to pretty → Even though ~ or not, looks too pretty)과 'spend time on' 구문(And young people spend time more ther lifestile → And young people spend more time on their lifestyles), 그리고 'whenever' 절의 주어·동사 일치(whenever we necessary → whenever we need necessary)를 반드시 검증하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T11:50:38.767Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거 시제와 현재 시제가 혼용되어 문법적 일관성이 떨어지는 경우가 많으며, 특히 'it is possible to'와 같은 추상적 표현이 직접 목적어와 결합할 때 오류가 자주 발생한다.",
-   "rule": "원서 패턴을 반영하여, '학생이 개념을 학습하는 경우'와 같이 과거 시제와 현재 시제를 혼용해야 하는 문장은 반드시 'the student learned a concept that can be used'와 같이 'learned' (과거 시제) + 'can be used' (능력/가능성 표현)의 조합으로 통일하여 출제하라.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,91 @@
 {
- "updated": "2026-08-21T02:05:30.090Z",
+ "updated": "2026-08-21T03:19:09.311Z",
  "samples": [
+  {
+   "ts": "2026-08-21T03:17:40.407Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "Ray English 지문 전문 · 원문 그대로 24번 제목 · T I T L E 도파민의 시소 제목 스크롤로 급등한 도파민이 항상성 때문에 기준선 아래로 급락한다 — '도파민 시소' 소재 소셜미디어와 도파민 Social media and dopamine 주제 스크롤로 급등한 도파민은 항상성 때문에 기준선 아래로 급락한다 Dopamine spikes from scrolling crash below baseline 제목 도파민 시소 The Dopamine Seesaw: How Scrolling Makes You Feel 한눈에 소셜미디어를 스크롤하면 도파민이 급등해 기분이 좋아지지만, 뇌는 늘 균형(항상성)을 추구하므로 곧 기준선 ‘아래로’ 급락해 오 히려 더 우울해 진다. ‘오른 것은 내려온다’는 원리가 작동하는 ‘도파민 시소’가 글의 핵심이다. 지문 전문 — 시험지 원문 Let’s look at what is occurring in your brain when scrolling on social media, a quick dopamine activity. You open your social media apps and immediately you notice you feel really good, your dopamine levels increase incredibly fast and pleasure is experienced in your brain. The challenge this creates is as with everything in our universe: as the laws of physics explain, ‘what goes up, must come down’. Your brain and body are always seeking something called ‘homeostasis’, which simply means balance. With this in mind, when dopamine levels increase incredibly fast when scrolling social media, the brain then thinks, ‘Wow, how are my dopamine levels so high? [ ] 지문 전문 · 원문 그대로",
+    "choices": [
+     "The dopamine spike from scrolling stabilizes immediately, keeping your mood consistently elevated without any subsequent drop.",
+     "To restore balance, the dopamine surge from scrolling must be followed by an equally sharp drop below the baseline, intensifying the negative emotions you felt before.",
+     "Scrolling triggers a gradual dopamine increase that avoids sudden spikes, thus preventing any sharp decline afterward.",
+     "As dopamine levels rise from scrolling, the brain compensates by increasing serotonin to prevent any imbalance or emotional crash.",
+     "The brain’s homeostasis mechanism ensures that dopamine levels remain stable after scrolling, leaving your mood unchanged."
+    ],
+    "answer": 2,
+    "explanation": "빈칸에는 원문 '’ In order to achieve homeostasis, or balance, the dopamine then has to quickly drop an equal amount below your baseline level in order to rebalance, making you feel even worse than before you started scrolling.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: ‘항상성(homeostasis)’의 원리를 무시하고 도파민 급등이 ‘안정화’된다고 오해. 지문은 ‘급등→급락’의 필연성을 강조함. → 처방: ‘항상성’ 개념을 떠올리며, ‘무엇이 올라가면 반드시 내려온다’는 원리를 기억하고 지문을 다시 읽어보기.\n③ 진단: ‘점진적 상승’이 ‘급등’이 아니라고 착각. 지문은 ‘incredibly fast’로 급등을 설명하며, 점진적 상승은 급락을 막지 못한다고 설명하지 않음. → 처방: ‘급등’의 의미를 정확히 짚고, 지문의 ‘incredibly fast’를 강조하며 ‘점진적’이라는 말이 왜 틀린지 확인하기.\n④ 진단: 도파민과 세로토닌을 혼동. 지문은 ‘항상성’을 도파민의 ‘급등→급락’으로 설명하며, 세로토닌은 언급하지 않음. → 처방: ‘항상성’이 도파민의 균형 회복을 뜻한다는 점을 기억하고, 다른 신경전달물질은 신경 쓰지 말고 지문만 집중해서 읽기.\n⑤ 진단: ‘항상성’이 도파민을 ‘안정화’시킨다고 오해. 지문은 ‘기준선 아래로 급락’으로 항상성이 작용함을 설명하며, ‘안정화’는 아님을 분명히 함. → 처방: ‘항상성’이란 ‘균형을 맞추기 위해 과도한 상태를 반대 방향으로 조정하는 것’이라는 의미를 떠올리며, ‘안정화’와는 구분하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-21T03:18:07.741Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 24번 제목 · T I T L E 도파민의 시소 제목 스크롤로 급등한 도파민이 항상성 때문에 기준선 아래로 급락한다 — '도파민 시소' 소재 소셜미디어와 도파민 Social media and dopamine 주제 스크롤로 급등한 도파민은 항상성 때문에 기준선 아래로 급락한다 Dopamine spikes from scrolling crash below baseline 제목 도파민 시소 The Dopamine Seesaw: How Scrolling Makes You Feel 한눈에 소셜미디어를 스크롤하면 도파민이 급등해 기분이 좋아지지만, 뇌는 늘 균형(항상성)을 추구하므로 곧 기준선 ‘아래로’ 급락해 오 히려 더 우울해 진다.\n\n(A) You open your social media apps and immediately you notice you feel really good, your dopamine levels increase incredibly fast and pleasure is experienced in your brain. The challenge this creates is as with everything in our universe: as the laws of physics explain, ‘what goes up, must come down’. Your brain and body are always seeking something called ‘homeostasis’, which simply means balance.\n\n(B) ‘오른 것은 내려온다’는 원리가 작동하는 ‘도파민 시소’가 글의 핵심이다. 지문 전문 — 시험지 원문 Let’s look at what is occurring in your brain when scrolling on social media, a quick dopamine activity.\n\n(C) With this in mind, when dopamine levels increase incredibly fast when scrolling social media, the brain then thinks, ‘Wow, how are my dopamine levels so high? ’ In order to achieve homeostasis, or balance, the dopamine then has to quickly drop an equal amount below your baseline level in order to rebalance, making you feel even worse than before you started scrolling. 지문 전문 · 원문 그대로",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 2,
+    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘(A)→(C)→(B)’는 도파민 급등→시소 원리→결과 흐름이 아니라 ‘감정→원리→뇌 반응’으로 순서가 뒤죽박죽이다. 특히 (A)에서 ‘즉시 기분 좋아짐’을 먼저 설명한 뒤 (C)에서 ‘뇌가 놀람’을 언급하는 것은 지문의 ‘항상성’ 논리와 맞지 않는다. → 처방: 지문은 ‘도파민 급등→항상성→기준선 하락’이라는 흐름을 따라가므로, 먼저 ‘시소 원리’를 소개한 (B)를 맨 앞에 둬야 한다.\n③ 진단: ‘(B)→(C)→(A)’는 (B)에서 ‘도파민 시소’를 소개한 뒤 (C)에서 ‘뇌 반응’을 설명하는 것은 맞지만, (A)에서 ‘즉시 기분 좋아짐’을 맨 뒤에 두어 전체 흐름이 ‘원리→뇌 반응→감정’으로 뒤틀린다. → 처방: 지문은 ‘감정(기분 좋아짐)→원리(시소)→결과(기분 하락)’ 순서이므로, (A)에서 기분 변화를 먼저 설명한 뒤 (B)에서 원리를 소개해야 자연스럽다.\n④ 진단: ‘(C)→(A)→(B)’는 (C)에서 ‘뇌가 놀람’을 먼저 설명한 뒤 (A)에서 ‘즉시 기분 좋아짐’을 언급하는 것은 지문의 ‘스크롤→도파민 급등→기분 변화’ 흐름과 맞지 않는다. 또한 (B)는 ‘시소 원리’를 설명하는 핵심 문장이므로 맨 뒤로 가면 안 된다. → 처방: 지문의 핵심은 ‘스크롤→도파민 급등→항상성→기분 변화’이므로, (A)에서 기분 변화를 먼저 설명한 뒤 (C)에서 뇌 반응을, (B)에서 시소 원리를 소개해야 한다.\n⑤ 진단: ‘(C)→(B)→(A)’는 (C)에서 ‘뇌 반응’을 먼저 설명한 뒤 (B)에서 ‘시소 원리’를 소개하는 것은 지문의 ‘스크롤→도파민 급등→항상성’ 흐름과 맞지 않는다. 또한 (A)는 기분 변화를 설명하는 문장이므로 맨 뒤로 가면 안 된다. → 처방: 지문은 ‘스크롤→도파민 급등→항상성→기분 변화’ 순서이므로, (A)에서 기분 변화를 먼저 설명한 뒤 (C)에서 뇌 반응을, (B)에서 시소 원리를 소개해야 한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-21T03:18:36.489Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 13 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'homeostasis', 'Scrolling', 'worsening' / 11~15단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Scrolling spikes dopamine so high that homeostasis forces it below baseline, worsening mood.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 11~15단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-21T02:04:50.915Z",
    "type": "무관문장",
@@ -248,109 +333,6 @@
     ],
     "answer": 4,
     "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘① Check your answers here.’는 지문 맨 앞의 퀴즈 지시문으로, 앞뒤 문장과 전혀 연결되지 않음에도 ‘퀴즈’ 키워드에 이끌려 ‘정의’나 ‘설명’ 관련 문장으로 오해했을 가능성이 큼. → 처방: 퀴즈 지시문은 ‘정의’나 ‘설명’과 무관하다는 점을 기억하고, 문장끼리의 연결성(‘흐름’)을 먼저 확인할 것.\n② 진단: ‘② force someone to do something’는 ‘강제하다’라는 뜻으로, 앞뒤 문장(‘의미가 통하는’, ‘목적 있는 집단’)과 전혀 어울리지 않지만, ‘정의’로 오해하고 ‘단어 뜻 맞추기’에만 집중했을 수 있음. → 처방: 문장끼리 ‘흐름’이 연결되는지(예: ‘의미가 통하는’ → ‘목적 있는 집단’) 먼저 확인하고, 뜻만 맞추는 건 뒤로 미룰 것.\n③ 진단: ‘③ making sense’는 ‘의미가 통하는’ 뜻으로, 앞뒤 문장(‘목적 있는 집단’, ‘정의’)과 연결되지 않지만, ‘정의’로 오해하고 ‘단어 뜻’에만 매달렸을 수 있음. → 처방: 문장끼리 ‘흐름’이 연결되는지(예: ‘목적 있는 집단’ → ‘정의’) 확인한 후, 뜻 맞추기를 따로 할 것.\n⑤ 진단: ‘⑤ group with a purpose’는 ‘목적 있는 집단’을 뜻하지만, 앞뒤 문장(‘의미가 통하는’, ‘정의’)과 연결되지 않음에도 ‘정의’로 오해하고 ‘단어 뜻’에만 집중했을 수 있음. → 처방: ‘정의’나 ‘뜻 맞추기’보다, 문장끼리 ‘흐름’이 연결되는지(예: ‘의미가 통하는’ → ‘목적 있는 집단’) 먼저 확인할 것.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-20T17:48:40.184Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 2/3가 5번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "There is a demand for a repeal of the inheritance tax. ✓ We demand that Congress repeal the inheritance tax. Clarity, Not Simplemindedness Your readers want you to write clearly, but not in Dick-and-Jane sentences. Some argue that all sentences should be short, no more than fifteen or twenty words. But many mature ideas are too ­complicated to express so compactly. In Lessons 10 and 11 we look at ways to revise too-short, too-simple sentences into a style that is readable but still complex enough to communicate ­complex ideas. In Your Own Words E xercise 3.8 Go through a page of your own writing. Underline whole ­subjects and bracket verbs. Now, think about the story you are telling. ­Circle the main characters and box their actions, wherever they ­appear. Look especially for actions hidden in nominalizations. What do you notice? How clear will a reader likely find your writing? If necessary, revise to align characters with subjects and specific actions with verbs.\n\n─────────\n[요약문] The demand for (A) inheritance tax repeal reflects a need for (B) clarity in communication, balancing simplicity and complexity in writing style.",
-    "choices": [
-     "(A) policy elimination … (B) simplicity in expression",
-     "(A) tax abolition … (B) linguistic precision",
-     "(A) financial adjustment … (B) grammatical correctness",
-     "(A) legislative change … (B) minimalist writing",
-     "(A) tax reform … (B) rhetorical clarity"
-    ],
-    "answer": 2,
-    "explanation": "(A) tax abolition / (B) linguistic precision 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘policy elimination’이란 말은 지문에서 ‘repeal of the inheritance tax’를 ‘정책 폐지’로 단순 번역한 오류로, ‘inheritance tax’는 ‘상속세’이므로 ‘정책’이 아니라 ‘세금’을 뜻함을 혼동함. ‘simplicity in expression’은 지문이 ‘not in Dick-and-Jane sentences’(단순한 문장 반대)라며 ‘간소화’가 아니라 ‘정확한 전달’을 강조함을 놓침. → 처방: ‘inheritance tax’를 ‘상속세’로 정확히 이해하고, ‘repeal’이 ‘폐지’이므로 ‘tax abolition’이 맞는지 확인할 것.\n③ 진단: ‘financial adjustment’은 지문에서 ‘inheritance tax repeal’이 ‘재정 조정’이 아니라 ‘세금 폐지’임을 오해한 것. ‘grammatical correctness’는 지문이 문법이 아니라 ‘의미 전달의 명확성’을 강조함을 간과함. → 처방: ‘adjustment’(조정)이 아니라 ‘abolition’(폐지)이 핵심 단어임을 확인하고, ‘clarity’가 ‘문법’보다 ‘의미 전달’임을 기억할 것.\n④ 진단: ‘legislative change’는 ‘inheritance tax repeal’이 ‘입법 변화’로 포괄적으로 해석한 오류. ‘minimalist writing’은 지문이 ‘간소한 문장’이 아니라 ‘복잡한 아이디어를 명확히 전달하는 글쓰기’를 요구함을 놓침. → 처방: ‘repeal’이 ‘폐지’이므로 ‘legislative change’(입법 변화)보다는 ‘tax abolition’이 더 정확함을 확인할 것.\n⑤ 진단: ‘tax reform’은 ‘inheritance tax repeal’이 ‘세금 개혁’이 아니라 ‘폐지’임을 오해한 것. ‘rhetorical clarity’는 지문에서 ‘clarity’(명료성)을 ‘수사학적 명확성’으로 과하게 해석한 오류. → 처방: ‘repeal’이 ‘폐지’이므로 ‘abolition’이 ‘reform’보다 더 직접적임을 확인하고, ‘clarity’를 ‘수사’가 아니라 ‘의미 전달의 명확성’으로 이해할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-20T16:53:10.972Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "글쓰기는 복잡한 아이디어를 전달할 때 문장을 짧고 단순하게 유지하는 것만이 아니라, 독자들의 이해를 돕기 위해 문장의 길이를 적절히 조절해야 한다",
-     "글쓰기에서 문장이 복잡해지면 독자들이 내용을 이해하기 어려워지므로, 언제나 짧고 간결한 문장만 사용해야 명확성을 유지할 수 있다",
-     "글쓰기는 문장을 짧게 구성해야만 독자들이 내용을 쉽게 이해할 수 있으며, 복잡한 문장은 전달력을 떨어뜨린다",
-     "글쓰기는 복잡한 아이디어를 전달할 때 문장을 짧게 단순화하는 것이 유일한 방법이며, 문장의 길이나 복잡성은 고려하지 않아도 된다",
-     "글쓰기는 복잡한 아이디어를 효과적으로 전달하기 위해 단순하고 짧은 문장만을 고집해서는 안 되며, 명확성을 유지하면서도 문장의 복잡성을 적절히 조절해야 한다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Clarity in writing requires complex sentences to convey mature ideas effectively, not merely short, simplistic ones.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(과잉 일반화·인과 전도·범위 축소·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘문장의 길이를 적절히 조절해야 한다’는 부분은 맞지만, ‘복잡한 아이디어를 전달할 때 문장을 짧고 단순하게 유지하는 것만이 아니라’라는 표현이 지문의 핵심 주장(‘단순화만이 유일한 방법 아니다’)을 약화시켜 오해하게 한다. → 처방: 지문에서 ‘단순화만이 유일한 방법 아니다’를 강조했으므로, ‘적절히 조절해야 한다’는 표현만으로 답을 고르지 말고 ‘고집해서는 안 된다’를 꼭 확인하라.\n② 진단: ‘문장이 복잡해지면 이해하기 어려워진다’는 오해로, 지문의 ‘복잡한 문장도 필요할 때가 있다’는 주장을 무시한 채 무조건 ‘단순함’을 주장한 것으로 보인다. → 처방: 지문 2~3줄에서 ‘성숙한 아이디어는 짧게 표현하기 어렵다’는 내용을 다시 읽고, ‘언제나’ 또는 ‘무조건’ 같은 절대적 표현이 오답임을 기억하라.\n③ 진단: ‘복잡한 문장은 전달력을 떨어뜨린다’는 오해로, 지문의 ‘복잡한 아이디어를 전달할 때 문장의 복잡성도 필요하다’는 주장을 무시한 채 단순함을 유일한 해결책으로 여겼다. → 처방: 지문에서 ‘Dick-and-Jane sentences(너무 단순한 문장)’가 문제라는 점을 확인하고, ‘언제나’ 또는 ‘유일한 방법’이라는 표현이 오답임을 기억하라.\n④ 진단: ‘문장을 짧게 단순화하는 것이 유일한 방법’이라는 표현이 지문의 ‘유일한 방법 아니다’를 오독하게 만든다. 또한 ‘문장의 길이나 복잡성은 고려하지 않아도 된다’는 부분은 지문의 ‘적절히 조절하라’는 주장을 완전히 무시한 것이다. → 처방: 지문에서 ‘복잡한 아이디어를 전달할 때 문장의 복잡성도 필요하다’는 내용을 꼭 떠올리고, ‘유일한 방법’이라는 표현이 오답임을 기억하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Clarity in writing requires complex sentences to convey mature ideas effectively, not merely short, simplistic ones.]"
-   }
-  },
-  {
-   "ts": "2026-08-20T17:01:07.597Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "There is a demand for a repeal of the inheritance tax. ✓ We demand that Congress repeal the inheritance tax. Clarity, Not Simplemindedness Your readers want you to write clearly, but not in Dick-and-Jane sentences. Some argue that all sentences should be short, no more than fifteen or twenty words. But many mature ideas are too ­complicated to express so compactly. In Lessons 10 and 11 we look at ways to revise too-short, too-simple sentences into a style that is readable but still complex enough to communicate ­complex ideas. In Your Own Words E xercise 3.8 Go through a page of your own writing. Underline whole ­subjects and bracket verbs. Now, think about the story you are telling. ­Circle the main characters and box their actions, wherever they ­appear. Look especially for actions hidden in nominalizations. What do you notice? How clear will a reader likely find your writing? If necessary, revise to align characters with subjects and specific actions with verbs.",
-    "choices": [
-     "유산세 폐지를 요구하는 목소리가 존재하지 않는다",
-     "독자들은 간결하되 지나치게 단순한 문장을 원하지 않는다",
-     "15~20단어 이하의 짧은 문장은 복잡한 생각을 전달하기 쉽다",
-     "10과 11에서 문장 수정 방법을 다루지 않는다",
-     "글쓰기에서 주체와 행동을 명확히 구분하지 않아도 된다"
-    ],
-    "answer": 2,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘There is a demand for a repeal of the inheritance tax.’와 ‘We demand that Congress repeal the inheritance tax.’에서 유산세 폐지 요구가 존재함을 확인할 수 있으나, ‘존재하지 않는다’는 완전 반대 의미를 담아 오독했다. → 처방: ‘요구’가 있는지 여부를 먼저 찾고, 그 내용이 긍정인지 부정인지 정확히 확인하기.\n③ 진단: ‘But many mature ideas are too complicated to express so compactly.’에서 15~20단어 이하의 문장이 복잡한 생각을 전달하기 어렵다는 내용임을 지문에서 확인할 수 있으나, ‘전달하기 쉽다’는 문장이 정반대 의미를 담아 오독했다. → 처방: ‘~하기 어렵다’와 ‘~하기 쉽다’를 문장 전체에서 찾아 반대 의미를 구분하기.\n④ 진단: ‘In Lessons 10 and 11 we look at ways to revise too-short, too-simple sentences...’에서 10과 11에서 문장 수정 방법을 다룬다는 내용이 직접 언급되어 있으나, ‘다루지 않는다’는 문장이 오해로 이어졌다. → 처방: ‘~에서 다룬다’와 ‘~에서 다루지 않는다’를 문장 전체에서 찾아 의미가 일치하는지 확인하기.\n⑤ 진단: ‘Underline whole subjects and bracket verbs. Now, think about the story you are telling. Circle the main characters and box their actions...’에서 주체(주어)와 행동(동사)을 명확히 구분하라는 내용이 있지만, ‘구분하지 않아도 된다’는 문장이 오독으로 이어졌다. → 처방: ‘주체와 행동을 명확히 구분하라’는 지시문을 읽고, 그 반대 의미를 가진 선지를 고르지 않도록 주의하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]
