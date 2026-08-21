@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T05:51:45.817Z",
+ "updated": "2026-08-21T07:10:56.412Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T07:10:30.693Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 'old english', 'english grammar', 'english language' 등 영어 학문적 맥락에서 'that' 절이 명사구를 보완하는 경우가 빈번하다는 점을 확인할 수 있습니다. 또한 'present tense'와 'past tense'의 혼용 오류가 학생들에게서 자주 발생합니다.",
+   "rule": "'명사 + that could/would/might + 동사원형' 구조는 '~할 수 있는' 의미를 지닌 명사구를 형성하므로, 학생들은 'something could fly'와 같은 잘못된 표현 대신 'something that could fly'로 수정해야 합니다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T05:51:22.866Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 문체 패턴에서 'to be' 동사구가 불필요하게 과도하게 사용되는 경향이 있으며, 특히 'make + 목적어 + to be' 구문이 'make + 목적어 + 형용사'로 단순화될 수 있음을 확인했다.",
    "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'make + 목적어 + to be + 형용사' 구조가 등장하면 'to be'를 삭제하고 'make + 목적어 + 형용사'로 수정하도록 변형 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T15:02:05.426Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'costs'는 복수형으로 쓰이는 경우가 많지만, 'the cost of the product'처럼 특정 단일 제품의 경우 단수형 'cost'가 선호됨. 또한 'has been changed'는 능동태 'has changed'로 축약되는 패턴이 두드러짐.",
-   "rule": "원서 코퍼스 패턴에 따라, 'the cost(s) of [단일 제품]'은 단수형 'cost'를 사용하며, 'have/has been changed'는 능동태 'have/has changed'로 변형하여 오류를 수정하라.",
    "sample": [
     "old english",
     "university press",
