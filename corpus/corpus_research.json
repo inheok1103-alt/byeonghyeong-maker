@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T21:43:33.086Z",
+ "updated": "2026-08-21T22:45:08.996Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T22:44:40.769Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사 복수형 오류(workers → warker)와 비교급 오류(smallers → smaller)가 빈번하며, 쉼표 사용 오류(and before last item)도 다수 확인된다. 특히 'less + 복수명사'와 같은 문법적 비정상성이 두드러진다.",
+   "rule": "CEFR B1 수준 내신 문제에서는 '복수형 명사(workers, cities) + 비교급(older, smaller) + less/more + 복수명사(violence, noise)' 패턴의 오류를 의도적으로 삽입하여, 학생들이 '복수형 규칙', '비교급 규칙', '불가산 명사 규칙'을 동시에 적용하도록 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T21:43:04.898Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "‘of course’, ‘in addition’, ‘for example’와 같은 부사구가 문장 첫머리에 오면 주어와 동사의 일치 오류가 발생할 확률이 높아진다. 또한 ‘as much as’와 같은 비교구조에서 ‘as much as successful’이 아닌 ‘as successful as’로 정렬되어야 한다.",
    "rule": "문장 첫머리에 부사구(Of course, In addition, For example 등)가 오면 주어(it/they) 및 동사 시제 일치 오류를 반드시 포함시켜 오답지 1개를 설계하라. 또한 ‘as much as successful’ → ‘as successful as’로 잘못된 비교구조가 포함된 오답지를 1개 반드시 추가하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T07:18:25.747Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'between two' 패턴이 빈번히 나타나며, 특히 'between + 명사 + and + 명사' 구조가 일반화되어 있음이 확인된다. 또한, 'smaller'와 같은 비교급 형용사가 'was'와 같은 단수 동사와 결합하는 경우가 많고, 'less'가 불가산 명사와 호응하는 경향이 강하다.",
-   "rule": "원서 패턴을 반영하여, 'between A and B' 구조에서 A와 B가 명사일 경우 반드시 관사(the, a 등)를 포함하도록 변형 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",

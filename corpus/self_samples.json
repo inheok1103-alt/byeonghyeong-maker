@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-21T21:43:33.090Z",
+ "updated": "2026-08-21T22:45:09.001Z",
  "samples": [
+  {
+   "ts": "2026-08-21T22:44:00.883Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "단어의 반복 학습이 어휘 확장에 필수 조건이지만, 무조건 시행하는 것만으로는 부족하다.",
+     "문맥을 반복해 연습하면 어휘력이 점차 향상된다는 점은 분명한 사실로 받아들여진다.",
+     "모든 단어를 무한 반복해야만 어휘력이 지속적으로 늘어난다는 주장은 과장된 일반화이다.",
+     "단어의 반복 노출이 어휘 습득에 도움이 되지 않는다는 주장은 글의 요지와 정반대이다.",
+     "단어 학습에서 반복적인 문맥 노출이 어휘력의 장기적 확장을 이끄는 핵심 방법이다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Repeated exposure to vocabulary through contextual stories strengthens long-term retention in expanding one’s vocabulary.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 단어 반복이 어휘 확장에 '필수 조건'임을 강조하지만, '무조건 시행하는 것만으로는 부족하다'는 한계는 언급하지 않음. 학생은 '필수 조건'과 '충분 조건'을 혼동한 듯. → 처방: 문제 풀이 시, 지문의 핵심 주장(반복이 핵심 방법임을 강조한 부분)을 정확히 짚고, 선지의 '한계' 언급 여부를 확인할 것.\n② 진단: 지문은 단어 반복 학습의 효과를 '분명한 사실'로 받아들이는 것이 아니라, '반복이 어휘 확장에 도움이 된다'는 주장을 제시함. 학생은 '사실'과 '주장'을 혼동한 듯. → 처방: 글의 주장을 '사실'로 받아들이기보다는, 지문이 주장하는 바가 무엇인지 정확히 파악할 것.\n③ 진단: 지문은 단어 반복의 중요성을 강조하지만, '무한 반복해야만'이라는 극단적인 표현은 없음. 학생은 지문의 '강조'와 '과장된 일반화'를 혼동한 듯. → 처방: 선지의 '과장된 일반화' 여부를 판단할 때, 지문에 제시된 극단적 표현(예: '무한 반복')이 있는지 확인할 것.\n④ 진단: 지문은 단어 반복이 어휘 습득에 '도움이 된다'는 주장을 하고, '도움이 되지 않는다'는 주장은 반대됨. 학생은 지문의 주장을 정확히 읽지 못한 듯. → 처방: 글의 주장을 반대로 해석하지 않도록, 지문의 핵심 문장(예: '반복이 어휘 확장에 도움이 된다')을 정확히 짚을 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Repeated exposure to vocabulary through contextual stories strengthens long-term retention in expanding one’s vocabulary.]"
+   }
+  },
+  {
+   "ts": "2026-08-21T22:44:32.277Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "WEEK 33 DAY 5 REVIEW While ⓐ<u>each day’s story</u> has five new words, there are many others that are repeated from previous weeks. ⓑ<u>These words are placing</u> within the stories ⓒ<u>so that you might practice</u> your grasp of their meanings. Repetition ⓓ<u>will help guarantee</u> that these words will be firmly fixed ⓔ<u>as part of your ever-expanding vocabulary</u>. REVIEW WORDS DEFINITIONS 1.abjure a. stir up, instigate 2.allay b. disorderly, carelessly 3.complacent c. regretful, confessing guilt 4.connoisseur d. abstain from, renounce 5.debilitate e. weaken 6.deter f. self-satisfied 7.discreet g. discourage, hinder 8.evanescent h. bent, inclination, disposition 9.foment i. sad, gloomy 10.glean j. identical, equivalent 11.impetuous k. something hunted or pursued 12.occult l. watchful, shrewd 13.penitent m. supernatural, mysterious, secret 14.propensity n. impulsive 15.quarry o. rebuke, reprimand* 16.reproach p. momentary, passing, fleeting 17.slovenly q. prudent,* careful, cautious 18.somber r. collect, gather 19.tantamount s. expert 20.wary t. soothe, calm",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 2,
+    "explanation": "[어법: 준동사] 정답 ⓑ의 'These words are placing'는 'These words are placed'로 고쳐야 어법상 옳다.\n[오답 진단·처방]\n① 진단: ⓐ는 'each day’s story'가 주어이고 'has'가 동사라서 올바르지만, 학생은 'each day’s'를 'each day is'로 오해해 동사 형태를 틀리게 보았을 수 있음. → 처방: 주어와 동사의 수 일치를 확인하고, 'each'가 단수 명사를 이끈다는 규칙을 다시 공부하라.\n③ 진단: ⓒ는 'so that' 절이 올바르게 쓰였지만, 학생은 'might practice'가 조동사+원형동사라서 틀렸다고 오해했을 수 있음. → 처방: 'so that' 뒤에는 'can/may/might + 동사원형'이 오는 규칙을 익히고, 조동사의 쓰임을 다시 확인하라.\n④ 진단: ⓓ는 'will help guarantee'가 올바른 미래 시제와 동사 형태지만, 학생은 'guarantee'가 동사가 아니라 명사로 오해했을 수 있음. → 처방: 동사 'guarantee'가 '~을 보장하다'라는 뜻임을 기억하고, 동사 원형을 확인하는 습관을 들여라.\n⑤ 진단: ⓔ는 'as part of'가 전치사구로 올바르게 쓰였지만, 학생은 'ever-expanding'이 형용사로 오해해 'expanding'이 동사인 줄 알았을 수 있음. → 처방: 'ever-expanding'이 현재분사(형용사)로 쓰인다는 점을 기억하고, 분사와 동사를 구분하는 연습을 하라.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-21T21:42:51.555Z",
    "type": "주제",
@@ -290,58 +359,6 @@
     ],
     "answer": 4,
     "explanation": "(A) inflectional morphology / (B) time-related meaning 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘auxiliary verbs’를 ‘grammatical marking’으로 오독했고, ‘past events’를 ‘temporal reference’로 좁혀 오해했음. 지문은 ‘tense inflection’이 시간 의미를 나타낸다고 설명함. → 처방: ‘grammatical marking’을 ‘tense inflection’으로, ‘temporal reference’를 ‘time-related meaning’으로 바꿔 읽고, 지문에서 ‘inflectional morphology’의 역할을 다시 확인할 것.\n② 진단: ‘imperfect correlation’을 ‘(A) imperfect correlation’로 오해했고, ‘tense inflection’을 ‘(B) tense inflection’로 잘못 연결했음. 지문은 ‘imperfect correlation’이 아니라 ‘inflectional morphology’를 강조함. → 처방: ‘imperfect correlation’을 버리고, 지문에서 ‘tense inflection’이 ‘time-related meaning’을 나타낸다는 핵심을 먼저 찾도록 연습할 것.\n③ 진단: ‘classification systems’을 ‘grammatical marking’으로 오독했고, ‘time-reference’를 ‘time-related meaning’으로 혼동했음. 지문은 ‘classification’이 아니라 ‘inflectional morphology’를 문제 삼음. → 처방: ‘classification’이라는 단어를 버리고, 지문에서 ‘inflectional morphology’가 ‘time-related meaning’을 담는다는 구조를 다시 정리할 것.\n⑤ 진단: ‘main verbs’를 ‘grammatical marking’으로 오해했고, ‘present situations’을 ‘temporal reference’로 좁혀 오해했음. 지문은 ‘main verbs’뿐 아니라 ‘auxiliary verbs’를 포함한 ‘inflectional morphology’를 다룸. → 처방: ‘main verbs’에만 집중하지 말고, 지문에서 ‘finite auxiliary and main verbs’를 포함하는 ‘inflectional morphology’의 역할을 다시 읽고 정리할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T14:56:19.644Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 16 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'references', 'directly', 'English' / 14~18단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] English tense forms do not always directly match time references, as seen in modals like \"might.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 14~18단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-21T13:12:56.183Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.57,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어 대명사의 다양한 형태를 비교·선택하는 기준을 설명하려고",
-     "영어 문법에서 구조적·의미적 관련 변이형을 선택하는 방식을 설명하려고",
-     "대명사의 문법적 선택이 문장 의미에 영향을 미친다고 주장하려고",
-     "영어에서 대명사의 사용이 문법 규칙을 결정한다고 주장하려고",
-     "영어 대명사의 모든 변이형이 동일한 방식으로 사용된다고 설명하려고"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'to illustrate the choice among structurally and semantically related variants in English grammar.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건·전제 누락·과잉 일반화)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: 지문에서 '대명사'가 아닌 '대명사의 다양한 형태'를 넘어 '구조적·의미적 관련 변이형'을 다루는 내용을 오독하여 '대명사'에만 초점을 맞췄다. (예: 'referring expressions'가 대명사뿐 아니라 명사구까지 포함함을 간과) → 처방: 지문에서 'variants'가 구조·의미적으로 관련 있는 여러 형태(대명사·명사구 등)를 가리키므로, '대명사'라는 단어에만 집착하지 말고 '변이형 선택의 방식'을 전체적으로 이해하기.\n③ 진단: 지문의 핵심은 '선택의 방식'이지 '대명사가 문장 의미에 영향을 미친다'는 주장이 아니다. 학생은 지문의 'discourse factors'를 '문장 의미'로 오해하여 '영향'이라는 표현에 끌렸다. → 처방: 지문에서 'when and why'가 '선택의 기준'임을 기억하고, '영향'이나 '결정' 같은 강한 표현이 나올 때는 지문과 대조하여 사실 여부를 확인하기.\n④ 진단: 지문은 '선택 방식'을 설명하는 것이지 '대명사가 문법 규칙을 결정한다'는 주장을 하지 않는다. 학생은 'grammatical factors'를 '규칙을 결정한다'로 과장하여 해석했다. → 처방: 지문에서 'factors that relate to the choice'임을 확인하고, '결정한다'는 절대적 표현이 나오면 지문과 정확히 일치하는지 재확인하기.\n⑤ 진단: 지문은 '동일한 방식으로 사용되지 않는다'는 내용을 담고 있어, 학생은 '동일한 방식'이라는 선지를 오독하여 지문의 'variants'를 무시했다. → 처방: 지문에서 'several related variants'와 'choice among'이라는 표현을 보고, '모든 변이형이 동일하다'는 주장이 지문과 모순됨을 바로잡기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to illustrate the choice among structurally and semantically related variants in English grammar.]"
    }
   }
  ]
