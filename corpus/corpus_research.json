@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T10:51:55.062Z",
+ "updated": "2026-08-21T11:47:38.375Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T11:47:08.497Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'old English', 'Middle English' 등 시대별 언어 변천 패턴과 'between two' 구조가 빈번히 관찰되며, 문법적 오류는 주로 시제·수 일치, 관사·형용사 한정, 직접목적어의 오용에서 발생한다.",
+   "rule": "원서 코퍼스의 시대별 언어 패턴(Old/Middle English)과 'between two' 구조를 반영하여, 시제·수 일치 오류(예: 'have spend'→'have spent'), 관사/형용사 한정 오류(예: 'many time'→'too much time'), 비교구조 오류(예: 'smarter than the other people'→'smarter than other people')를 변형문제에 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T10:51:26.274Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'do the same'은 'do as well'로, 'could not live'은 'would not be alive'로, 'are make'는 'make'로 수정되는 패턴이 빈번하다. 이는 동사구와 조동사/시제의 오용에서 비롯된 오류로, 연어와 문법 규칙의 결합 오류가 특징이다.",
    "rule": "'~ the same' 구문은 '~, and ~ does as well'로, 'could not live'은 'would not be alive'로, 'are + 동사원형'은 '동사원형'으로 수정하는 오류 유형을 출제 시 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T19:43:58.486Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서에서 'old English'·'Middle English'·'English grammar'·'English language'가 빈번한 것처럼, 영어 학습 관련 어휘(grammar, language, study, information 등)는 문맥상 빈번히 등장하며 오류 발생 패턴도 유사하다. 또한 'because if', 'so much', 'a lot of' 등 접속사·강조 표현의 조합 오류가 다수 나타나며, 동사 형태(present/past tense)나 수동태 선택 오류가 흔하다.",
-   "rule": "'because if'나 'so much'·'a lot of' 등 접속사·강조 표현의 조합 오류를 방지하기 위해, 문법적 오류 가능성을 높이는 'if'·'because'·'so'·'a lot of'가 동시에 포함된 문장은 반드시 접속사/부사/동사 시제 일치·수동태 여부를 검토하여 오류 유도를 우선 고려하라.",
    "sample": [
     "old english",
     "university press",
