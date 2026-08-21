@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T19:00:20.954Z",
+ "updated": "2026-08-21T19:43:57.089Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T19:43:28.410Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 'old english', 'middle english' 등 역사적 언어 변천 패턴에서 'present/past tense 혼용'과 'noun phrase의 복수화·정관사/불정관사 사용'이 빈번함을 확인할 수 있다. 또한 'reason relations'(인과관계 표현)에서 'if-then' 구조와 'until' 구문이 조합되어 복잡한 조건문을 형성하는 경향이 강하다.",
+   "rule": "'if-then' 구조의 조건문에서 'if 절은 현재 시제(present tense)를 사용하고, then 절은 will + 동사원형(미래 시제) 또는 현재 시제(일반적 사실)로 표기하라. 또한 'until' 구문은 'until they know how it works'와 같이 완료 시점(knowing)을 나타내는 현재 시제 동사로 연결하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T18:59:46.886Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "이 코퍼스는 'become an experts'와 같이 관사 오류(복수명사 앞 관사 불필요)나 'a big chance'→'a great chance'와 같은 연어 오류가 빈번하다는 점을 보여준다. 또한 'in my opinion is'와 같은 주어-동사 불일치 오류도 다수 발견된다.",
    "rule": "'become/be/become' 다음에는 복수명사가 오면 관사 없이 사용해야 하며, 'chance'는 'great'과 결합하는 연어가 표준이므로 오답지로 '(a) big chance'를 제시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T04:04:04.433Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'diverse knowledges'와 같이 가산명사 복수형이 비문법적인 경우, 'knowledge'는 불가산명사로 처리되어야 한다. 또한 'old information'은 'outdated information'으로 교정되어야 하며, 불가산명사의 특성상 'an'이 삭제되어야 한다.",
-   "rule": "'가산명사 복수형 오류'는 'diverse knowledges' → 'diverse knowledge'로, '불가산명사 오류'는 'old information' → 'outdated information'으로 수정하는 규칙을 적용하여 문항을 설계한다.",
    "sample": [
     "old english",
     "university press",

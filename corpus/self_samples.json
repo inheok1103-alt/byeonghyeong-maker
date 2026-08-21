@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-21T19:00:20.958Z",
+ "updated": "2026-08-21T19:43:57.093Z",
  "samples": [
+  {
+   "ts": "2026-08-21T19:43:25.630Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] \b (fict) While many grammars point out the structural similarities among variants, they usually offer little explanation of when and why the different forms are used.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 많은 문법서들이 변이형들 간의 구조적 유사성을 지적하지만, 그러한 다른 형태들이 언제, 왜 사용되는지에 대한 설명은 거의 제공하지 않는다. (구문 포인트: 관계사절(when, why) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-21T18:58:29.071Z",
    "type": "주제",
@@ -343,40 +362,6 @@
     ],
     "answer": 3,
     "explanation": "(A)는 앞 내용과 '예시' 관계로 For example, (B)는 '재진식' 관계로 In other words 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘Moreover’는 앞 문장과 같은 맥락의 추가 설명을, ‘Indeed’는 앞 문장의 내용을 강조하는 말로 쓰이는데, 지문에서 (A)는 예시, (B)는 다시 설명하는 말로 쓰였다. 두 접속사가 문맥에 맞지 않다. → 처방: ‘For example’(예시)와 ‘In other words’(다시 설명) 구분이 안 되면, 빈칸 앞뒤 문장의 관계를 먼저 확인해라.\n② 진단: ‘For example’(예시)는 (A)에 알맞지만, ‘Indeed’는 앞 문장을 강조하는 말로 (B)에 맞지 않다. 지문에서 (B)는 앞 문장의 내용을 다시 설명하는 말이 필요했다. → 처방: 빈칸 뒤 문장이 앞 문장의 내용을 재정리하는지, 새로운 예를 드는지를 먼저 확인해라.\n④ 진단: ‘In other words’는 (A)에 알맞지만, ‘Above all’이 ‘가장 중요하게’를 뜻하는 말로 (B)에 맞지 않다. 지문은 예시와 재설명이 필요했다. → 처방: ‘Above all’이 ‘가장 중요하게’를 뜻한다는 점 기억하고, 빈칸 뒤 문장이 예시인지 재설명인지 확인해라.\n⑤ 진단: ‘For example’(예시)는 (A)에 알맞지만, ‘In contrast’는 대조를 뜻하는 말로 (B)에 맞지 않다. 지문은 예시와 재설명이 필요했다. → 처방: ‘In contrast’가 대조를 뜻한다는 점 기억하고, 빈칸 뒤 문장이 예시인지 재설명인지 확인해라."
-   }
-  },
-  {
-   "ts": "2026-08-21T10:50:48.800Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "He had the judge reduce the charges. When have is used as a causative, have is followed by a noun-phrase object and a base-stem inﬁ nitive verb phrase. The noun-phrase object of have also serves as the subject of the following bare-stem verb. For example: James had his boss kill the proposal. Here the noun phrase his boss is both the object of had and the subject of the bare-stem verb kill. In other words, the boss is the person killing the proposal, not James. When get and have are used as causative verbs, they differ in the exact form of the verb in their complements (inﬁ nitives with get; bare-stems with have), but in other aspects they seem interchangeable—with the predictable exception that get passives are more informal than have passives. They are also alike in that the verbs in their complements ____. Here are the active get and have sentences, together with their passive counterparts:",
-    "choices": [
-     "능동적일 수밖에 없다",
-     "활동적일 가능성이 있다",
-     "자발적일 수밖에 없다",
-     "수동적일 수 있다",
-     "주관적일 수 있다"
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 '수동적일 수 있다'가 들어가 글의 논지를 완성한다 (본문 'can be passives'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'have/get + 목적어 + 동사원형(bare-stem)' 구조는 목적어가 동사의 주체임을 강조하는데, 학생은 '능동적'이라는 단어만 보고 '주체가 능동적으로 행동해야 한다'고 오해한 듯함. 지문은 '목적어=주체'임을 설명하지만 '능동성'을 강제하지 않음. → 처방: causative 구조에서 목적어가 동사의 주체라는 점만 기억하고, '능동/수동'은 문맥에 따라 달라질 수 있음을 확인할 것.\n② 진단: 학생은 '가능성'이라는 단어를 보고 '활동적일 가능성'이 빈칸에 어울릴 거라고 생각한 듯함. 그러나 지문은 causative 구조의 특징을 설명하며 '수동태' 가능성을 직접 언급하고 있음. → 처방: 빈칸은 지문에서 제시한 'get/have passive' 예시와 비교해 '수동태'가 가능한지 확인하는 습관을 들일 것.\n③ 진단: 학생은 '자발적'이라는 단어를 보고 '목적어가 스스로 행동해야 한다'고 오해한 듯함. 그러나 causative 구조에서 목적어는 '강제받는 주체'일 수도 있어 '자발성'은 필수 조건이 아님. → 처방: causative 동사 뒤의 동사가 '자발적'인지 여부는 문맥에 따라 판단해야 하며, 구조 자체는 이를 강제하지 않음을 기억할 것.\n⑤ 진단: 학생은 '주관적'이라는 단어를 보고 '목적어의 주관적 상태'를 떠올린 듯함. 그러나 지문은 causative 구조의 문법적 특징(목적어=주체, 수동태 가능성)에 초점을 맞추고 있어 '주관성'은 관련이 없음. → 처방: 문법 문제에서는 '주관/객관'보다 '문법적 역할(주체/목적어)'과 '수동태 가능성'을 우선적으로 분석할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
