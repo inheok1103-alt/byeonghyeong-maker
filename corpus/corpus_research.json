@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T11:47:38.375Z",
+ "updated": "2026-08-21T13:14:44.712Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T13:14:18.482Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'명사+전치사+명사' 구조에서 전치사 뒤의 관사가 생략되는 오류가 빈번하며, 특히 'holistic understanding'과 같은 추상명사에서 두드러진다. 또한, 'although'와 같은 접속사가 문법적 오류 없이 사용되려면 적절한 시제와 주어의 일치, 그리고 문맥상 논리적 연결이 필수적이다.",
+   "rule": "'give rise to'나 'lead to'와 같은 'V + P + N' 구조에서 전치사(P) 뒤의 관사(a/the)를 생략하지 마라. 예를 들어, 'This will give rise to holistic understanding'은 'This will give rise to a holistic understanding'으로 수정해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T11:47:08.497Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'have a trip' 대신 'take a trip'이 자연스러운 패턴으로, 동사 선택의 오류가 빈번하다는 점을 확인했다. 또한 'realist'는 형용사로서 'realistic'으로 수정해야 하며, 'successfull'은 철자 오류로 'successful'이 옳음을 알 수 있었다.",
    "rule": "'have/take a trip' 구문에서 'take a trip'을 정답으로 설정하고, 'have a trip'을 오답으로 제시하여 동사의 자연스러운 연어 선정을 평가한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T20:43:22.129Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'do the same'은 'do as well'로, 'could not live'은 'would not be alive'로, 'are make'는 'make'로 수정되는 패턴이 빈번하다. 이는 동사구와 조동사/시제의 오용에서 비롯된 오류로, 연어와 문법 규칙의 결합 오류가 특징이다.",
-   "rule": "'~ the same' 구문은 '~, and ~ does as well'로, 'could not live'은 'would not be alive'로, 'are + 동사원형'은 '동사원형'으로 수정하는 오류 유형을 출제 시 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",

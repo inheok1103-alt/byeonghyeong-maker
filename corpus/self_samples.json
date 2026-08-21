@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-21T11:47:38.379Z",
+ "updated": "2026-08-21T13:14:44.716Z",
  "samples": [
+  {
+   "ts": "2026-08-21T13:12:56.183Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.57,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어 대명사의 다양한 형태를 비교·선택하는 기준을 설명하려고",
+     "영어 문법에서 구조적·의미적 관련 변이형을 선택하는 방식을 설명하려고",
+     "대명사의 문법적 선택이 문장 의미에 영향을 미친다고 주장하려고",
+     "영어에서 대명사의 사용이 문법 규칙을 결정한다고 주장하려고",
+     "영어 대명사의 모든 변이형이 동일한 방식으로 사용된다고 설명하려고"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'to illustrate the choice among structurally and semantically related variants in English grammar.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건·전제 누락·과잉 일반화)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: 지문에서 '대명사'가 아닌 '대명사의 다양한 형태'를 넘어 '구조적·의미적 관련 변이형'을 다루는 내용을 오독하여 '대명사'에만 초점을 맞췄다. (예: 'referring expressions'가 대명사뿐 아니라 명사구까지 포함함을 간과) → 처방: 지문에서 'variants'가 구조·의미적으로 관련 있는 여러 형태(대명사·명사구 등)를 가리키므로, '대명사'라는 단어에만 집착하지 말고 '변이형 선택의 방식'을 전체적으로 이해하기.\n③ 진단: 지문의 핵심은 '선택의 방식'이지 '대명사가 문장 의미에 영향을 미친다'는 주장이 아니다. 학생은 지문의 'discourse factors'를 '문장 의미'로 오해하여 '영향'이라는 표현에 끌렸다. → 처방: 지문에서 'when and why'가 '선택의 기준'임을 기억하고, '영향'이나 '결정' 같은 강한 표현이 나올 때는 지문과 대조하여 사실 여부를 확인하기.\n④ 진단: 지문은 '선택 방식'을 설명하는 것이지 '대명사가 문법 규칙을 결정한다'는 주장을 하지 않는다. 학생은 'grammatical factors'를 '규칙을 결정한다'로 과장하여 해석했다. → 처방: 지문에서 'factors that relate to the choice'임을 확인하고, '결정한다'는 절대적 표현이 나오면 지문과 정확히 일치하는지 재확인하기.\n⑤ 진단: 지문은 '동일한 방식으로 사용되지 않는다'는 내용을 담고 있어, 학생은 '동일한 방식'이라는 선지를 오독하여 지문의 'variants'를 무시했다. → 처방: 지문에서 'several related variants'와 'choice among'이라는 표현을 보고, '모든 변이형이 동일하다'는 주장이 지문과 모순됨을 바로잡기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to illustrate the choice among structurally and semantically related variants in English grammar.]"
+   }
+  },
+  {
+   "ts": "2026-08-21T13:14:05.058Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Grammatical Rules in Context: a Study",
+     "Gramatical Variation Across Contexts",
+     "Every Grammar Rule in English Explained",
+     "How Context Shapes Grammatical Consistency",
+     "The Fixed Nature of English Grammar"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'VARIATION IN GRAMMATICAL FORMS'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: ‘Grammatical Rules in Context’는 지문에서 다루는 ‘문법적 변이(grammatical variation)’가 아니라 ‘문법 규칙의 적용’에 초점을 맞추는 오해. 지문은 ‘구조적·의미적으로 관련 있는 변이형’(예: they/the gents) 사이의 ‘선택’에 주목하며, ‘규칙’보다는 ‘맥락에 따른 변이’를 다룬다. → 처방: ‘문법 규칙’이 아니라 ‘문맥에 따른 문법적 변이’를 찾는 문제임을 먼저 확인하라. ‘규칙’이나 ‘적용’이란 단어는 오답의 핵심 키워드임을 기억하자.\n③ 진단: ‘Every Grammar Rule in English Explained’은 지문이 ‘모든 문법 규칙’을 설명하는 것이 아니라 ‘특정 변이형 사이의 선택 조건’을 분석한다는 점을 오해. 지문은 ‘GSWE’가 ‘구조적·의미적 변이’를 ‘언제·왜’ 선택하는지 설명한다고 강조한다. → 처방: ‘모든 규칙’을 설명하는 선지는 지나치게 포괄적임을 의심하라. 지문에서 ‘관련된 변이형’과 ‘선택 조건’을 언급하는지 확인하고, ‘모든’이나 ‘완벽한 설명’이란 말이 있으면 경계하라.\n④ 진단: ‘How Context Shapes Grammatical Consistency’는 ‘일관성’을 강조하지만 지문은 ‘변이형 사이의 선택’(즉, ‘불일치’나 ‘다양성’)을 다룬다. ‘일관성’이란 단어는 지문의 핵심 주제(‘변이’)와 반대되는 오해다. → 처방: ‘일관성’이 아니라 ‘변이’를 찾는 문제임을 파악하라. ‘일관성’이나 ‘통일성’이란 단어는 오답의 함정임을 기억하고, 지문에서 ‘다양한 표현’이나 ‘선택’이란 말이 있는지 확인하라.\n⑤ 진단: ‘The Fixed Nature of English Grammar’는 지문이 ‘고정된 규칙’이 아니라 ‘맥락에 따라 변하는 선택’을 다룬다는 점을 오해. 지문은 ‘GSWE’가 ‘문법적·담화적 요인’에 따라 변이를 설명한다고 명시한다. → 처방: ‘고정된’이나 ‘변하지 않는’이란 단어가 나오면 의심하라. 지문에서 ‘변이’, ‘선택’, ‘맥락’ 같은 단어가 반복되는지 확인하고, ‘고정’이나 ‘불변’이란 말이 있으면 오답으로 판단하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: VARIATION IN GRAMMATICAL FORMS]"
+   }
+  },
   {
    "ts": "2026-08-21T11:45:07.748Z",
    "type": "심경변화",
@@ -298,58 +366,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [태] ⓐ: 'chopped up them' → 'chopped up the onions'\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T05:51:20.612Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] In which one does the speaker want to know about the person’s personal plans for after breakfast?",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 연사는 아침 식사 후에 그 사람의 개인 계획에 대해 알고 싶어 합니다. (구문 포인트: 의문사 'which'를 통한 선택적 질문 구조 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T04:56:46.909Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "THE HEADMASTER'S STERN PURSUIT of ACADEMIC FRAUD",
-     "THE HEADMASTER'S PUBLIC DENUNCIATION of TEACHERS",
-     "THE STUDENTS' INEVITABLE DETECTION of ACADEMIC FRAUD",
-     "ALL HIGH SCHOOLS' UNRELENTING WAR on CHEATING",
-     "THE HEADMASTER'S OCCASIONAL WARNINGS AGAITNST CHEATING"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'THE PRINCIPAL'S UNRELENTING CRACKDOWN ON CHEATING'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: 지문에서 교장 선생님은 학생들의 부정 행위를 엄격히 단속하고 있지만, '선생님들을 공개적으로 비난'했다는 내용은 없다. 'admonish'는 '경고하다'는 뜻으로 학생들에게 쓴 말이지, 선생님들을 비난한 것이 아님. → 처방: 지문에서 교장이 한 행동을 정확히 파악하려면 'bulletins'와 'admonish'가 누구에게 쓰였는지 다시 한 번 확인하라.\n③ 진단: 지문에서 'culprit'는 부정 행위를 한 학생들을 가리키며, 'inevitable detection'은 학생들이 필연적으로 잡힌다는 뜻이 아니다. 학생들은 교장의 단속으로 잡혔지만, 그 과정이 '피할 수 없다'는 뜻은 아니다. → 처방: 제목은 지문의 핵심 내용(교장의 부정 행위 단속)을 담아야 하므로, '학생들의 필연적 발견'보다는 '교장의 단속'을 강조하는 선지를 선택하라.\n④ 진단: 지문에서 교장은 모든 학교의 문제가 아니라 '우리 학교'의 부정 행위를 단속하고 있으며, 'unrelenting war'는 교장의 단속이 relentless(가차없는)하다는 뜻이지, 모든 학교가 전쟁을 벌인다는 뜻이 아니다. → 처방: 제목은 지문의 범위를 벗어나지 않도록 '우리 학교'나 '교장 선생님'을 포함하는 선지를 선택하라.\n⑤ 진단: 지문에서 교장은 'occasional warnings'이 아니라 'inexorable campaign'(가차없는 운동)을 벌였으며, 부정 행위를 한 학생들을 단속했다는 내용이 있다. 'occasional'은 주기적인 경고에 불과한데, 지문은 지속적이고 강경한 조치를 서술한다. → 처방: 제목은 지문의 강도와 지속성을 반영해야 하므로, '경고'보다는 '단속'이나 '운동' 같은 단어를 사용한 선지를 선택하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: THE PRINCIPAL]"
    }
   }
  ]

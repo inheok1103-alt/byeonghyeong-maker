@@ -3252,3 +3252,8 @@
 - 원서 코퍼스의 시대별 언어 패턴(Old/Middle English)과 'between two' 구조를 반영하여, 시제·수 일치 오류(예: 'have spend'→'have spent'), 관사/형용사 한정 오류(예: 'many time'→'too much time'), 비교구조 오류(예: 'smarter than the other people'→'smarter than other people')를 변형문제에 반드시 포함시킨다.  _(출처: 코퍼스연구:원서 문체 패턴을 활용한 변형)_
 - 1) 등가군 내 ‘A임에도 B’의 ‘극복/반전’이 문맥상 ‘강조’되어야 하는 경우에 한해 *nevertheless*를 ‘우선 채택’하는 것으로 기준을 조정. 2) ‘단순 상충’ 또는 ‘예외’ 수준의 경우 *however*를 허용. 3) 예시 문장별로 ‘충격도’(예: She won the race despite injury)와 ‘예상 외 결과’(예: He got the job with no experience)를 구분하여 등가군 분류에 반영.  _(출처: 회의:자동연구)_
 - [object Object]  _(출처: 회의:자동연구)_
+
+## 2026-08-21T13:14:45.706Z 자동 반영 규칙
+- 'give rise to'나 'lead to'와 같은 'V + P + N' 구조에서 전치사(P) 뒤의 관사(a/the)를 생략하지 마라. 예를 들어, 'This will give rise to holistic understanding'은 'This will give rise to a holistic understanding'으로 수정해야 한다.  _(출처: 코퍼스연구:실제 문법오류쌍(gec)을 활용한 어법 문항)_
+- 1) 어법 오류는 오류 유형별 가중치(시제/수일치: 1.2배, 어휘 선택: 0.8배, 문장 구조: 1.0배)를 적용하고, 2) 표현 오류는 '자연스러움(1~5점)' + '빈도(1~3점)'로 다차원 등급화한 뒤, 3) AI가 사전 채점한 등급을 교정 교사가 최종 확인하는 '이중 검증 시스템'을 도입. 4) 채점 가이드라인에 오류 유형별 예시와 점수 기준을 명시해 교사 간 일치율 제고.  _(출처: 회의:자동연구)_
+- ① 2층 평가 체계(정확도 60% + 기능성 40%)로 채점 기준을 재설정. ② 동의어/유사 표현 허용 범위를 예시 리스트(예: 'solve'→'address/handle/cope with')로 명시. ③ 논리 연결어(thus/therefore) 및 시제/태 변형은 기능성(40%)에서 필수 조건으로 규정. ④ EBS 교재 '유형완성'식 답안지 모델링을 참고하여 3단계 등급화(정답/유사/불일치) 적용.  _(출처: 회의:자동연구)_
