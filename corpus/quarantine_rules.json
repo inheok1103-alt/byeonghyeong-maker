@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-21T22:45:08.995Z",
+ "updated": "2026-08-21T23:46:38.318Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 평가 대상을 '대의(주제)·세부(내용)·구조(논리)·비교(대조)'로 명시하고, 원지문의 논리 구조(비교·대조)를 반영한 균형·대조 구조의 문항으로 설계해야 한다.",
+   "src": "자가학습:복합세트",
+   "score": 50,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T23:45:34.599Z"
+  },
+  {
+   "rule": "정답은 조건에 포함된 핵심 단어('irregular', 'measuring', 'displaces')를 모두 포함하여Volume of an irregular solid can be measured by the water displacement method.와 같이 표현해야 한다.",
+   "src": "자가학습:주제문완성",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T23:46:05.603Z"
+  },
   {
    "rule": "정답 선지는 지문의 핵심 개념(습득·정착·맥락적 반복)을 직접 반영해야 하며, 오답 선지는 지문의 표현 강도와 일치하도록 수정하라.",
    "src": "자가학습:요지",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-18T19:42:59.866Z"
-  },
-  {
-   "rule": "모든 문장삽입 문항은 선지 수를 5개로 통일하고 각 선지를 ‘번호+간단한 설명’(예: ③ [preposed wh-phrase의 이동])으로 균일화하며, 발문을 ‘글의 흐름상 가장 자연스러운 위치’를 묻는 명료한 형태로 수정하고, 정답의 유일성을 보장할 수 있도록 오답 선지의 매력도를 제고해야 한다.",
-   "src": "자가학습:문장삽입",
-   "score": 62,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T18:58:08.754Z"
-  },
-  {
-   "rule": "정답 선지의 범위는 반드시 지문의 논의 범위(예: 'non-echoic questions')로 한정하고, 오답 선지는 지문에서 다루지 않은 유형이나 과도한 일반화를 배제하여 지문 맥락과 완벽히 일치하도록 엄격히 제한하라.",
-   "src": "자가학습:주제",
-   "score": 64,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T18:58:43.983Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T22:45:08.996Z",
+ "updated": "2026-08-21T23:46:38.319Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T23:46:13.191Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사구 내 복수형 오류가 빈번하며, 특히 'a products'와 같이 관사와 복수형이 혼용되는 패턴이 두드러진다. 또한 동사 시제(present/past tense)나 조동사(can)의 일치 오류도 자주 발생한다.",
+   "rule": "복수형 명사를 사용할 때는 관사(a/an/the) 없이 복수형(-s/-es)을 직접 사용하거나, 관사와 함께 단수형(-s/-es 없이)을 사용하도록 한다. 예: 'a product' 또는 'products'로 통일하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T22:44:40.769Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "형용사가 직접 목적어(people, tour)를 수식할 때, 한국어와 달리 영어는 'make + 목적어 + 형용사' 구조를 사용해야 한다. 또한, 과거 완료 시제는 현재 완료 시제로 대체되는 경향이 강하다.",
    "rule": "'make/feel/become + 목적어 + 형용사' 구문에서 목적어와 형용사의 관계를 명확히 하지 않고 'to feel happy the people'처럼 어순을 어긋나게 쓰지 말고, 반드시 'make the people happy'처럼 목적어 뒤에 형용사를 배치하도록 문항을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T08:02:23.754Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "‘of course’, ‘in addition’, ‘for example’와 같은 부사구가 문장 첫머리에 오면 주어와 동사의 일치 오류가 발생할 확률이 높아진다. 또한 ‘as much as’와 같은 비교구조에서 ‘as much as successful’이 아닌 ‘as successful as’로 정렬되어야 한다.",
-   "rule": "문장 첫머리에 부사구(Of course, In addition, For example 등)가 오면 주어(it/they) 및 동사 시제 일치 오류를 반드시 포함시켜 오답지 1개를 설계하라. 또한 ‘as much as successful’ → ‘as successful as’로 잘못된 비교구조가 포함된 오답지를 1개 반드시 추가하라.",
    "sample": [
     "old english",
     "university press",
