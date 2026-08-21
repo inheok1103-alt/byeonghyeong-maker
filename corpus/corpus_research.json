@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T04:58:25.293Z",
+ "updated": "2026-08-21T05:51:45.817Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T05:51:22.866Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거형과 현재형 혼용, 전치사(in/if) 오용, 명사의 복수형 오류가 빈번하며, 문맥상 조동사(would/can) 선택 오류도 다수 발생한다. 문장 내 'and' 병렬 구조에서 동사 생략 오류가 반복된다.",
+   "rule": "'if 절 내 과거형 조동사(would/could/might) 사용 시, 주절은 조동사(would) + 동사원형(be alive) 형태로 통일하여 문법적 일관성을 유지해야 한다. (예: 'if old people could not find...' → 'if our ancestors did not develop...')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T04:58:01.138Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'costs'는 복수형으로 쓰이는 경우가 많지만, 'the cost of the product'처럼 특정 단일 제품의 경우 단수형 'cost'가 선호됨. 또한 'has been changed'는 능동태 'has changed'로 축약되는 패턴이 두드러짐.",
    "rule": "원서 코퍼스 패턴에 따라, 'the cost(s) of [단일 제품]'은 단수형 'cost'를 사용하며, 'have/has been changed'는 능동태 'have/has changed'로 변형하여 오류를 수정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T14:00:10.931Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 실제 패턴에서 'do not'의 축약형 'don't'가 부정의미를 명확히 전달하는 핵심 요소로 활용됨을 확인. 또한 명사 오류('effect' vs 'effection'), 동사 오류('grow up' vs 'grow'), 관사 오류('a plentiful' vs 'plentiful')가 빈번하게 나타나며, 이는 CEFR B1 수준에서 중점적으로 다루어야 할 문법 항목임을 시사함.",
-   "rule": "CEFR B1 수준 내신 변형문제에서는 부정문에서 'do not'의 축약형 'don't' 사용 여부를 필수적으로 검증하며, 특히 'grow up' (성장하다)과 'grow' (자라다)의 구별, 'a/an' 관사의 생략 오류, 그리고 명사의 복수형/단수형 구별을 오답으로 출제하라.",
    "sample": [
     "old english",
     "university press",
