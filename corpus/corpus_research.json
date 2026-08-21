@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T07:10:56.412Z",
+ "updated": "2026-08-21T08:07:22.628Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T08:02:53.137Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거 시제 동사와 현재 시제 동사가 혼용된 문장에서 오류가 자주 발생하며, 접속사나 전치사의 오용으로 문법적 일관성이 깨지는 경우가 많다.",
+   "rule": "시제 일관성과 접속사/전치사의 정확한 사용을 요구하는 문항을 설계할 때에는, 주어의 수(단수/복수)와 동사의 시제(현재/과거)를 일치시키는 규칙을 반드시 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T07:10:30.693Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "원서 코퍼스에서 'reduce/reduced'와 'include/inculcate'가 빈번한 연어 패턴으로 나타나며, 특히 'have to + 동사원형' 구조가 과도한 과거분사(-ed) 형태로 오용되는 경우가 많다. 또한 'make + 목적어 + 보어' 구조에서 'live in'이 'live'로 축약되는 경향이 강하다.",
    "rule": "'have to + 동사원형' 구조에서 과거분사(-ed) 형태가 오용되지 않도록 하며, 'make + 목적어 + 보어' 구조에서는 'live in'을 'live'로 축약하는 오류를 유도하여 문법적 정확성을 테스트하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T15:56:06.820Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 문체 패턴에서 'to be' 동사구가 불필요하게 과도하게 사용되는 경향이 있으며, 특히 'make + 목적어 + to be' 구문이 'make + 목적어 + 형용사'로 단순화될 수 있음을 확인했다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'make + 목적어 + to be + 형용사' 구조가 등장하면 'to be'를 삭제하고 'make + 목적어 + 형용사'로 수정하도록 변형 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",
