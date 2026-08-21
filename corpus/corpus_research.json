@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T13:14:44.712Z",
+ "updated": "2026-08-21T14:02:42.081Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T14:02:12.605Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "이 코퍼스에서 'old/new'와 같은 형용사의 비교급 오류('elders'→'olders')와 복합명사/복합어의 오류('Carusage'→'Car usage', 'latinamerican'→'Latin American')가 빈번하다는 점을 확인할 수 있다. 또한, 문장 내 쉼표 사용(부사구 삽입, 접속사 앞 쉼표)도 난이도 조절에 활용 가능한 패턴이다.",
+   "rule": "'형용사의 비교급 오류(예: old → older), 복합명사의 분리 오류(예: Carusage → Car usage), 그리고 문장 내 쉼표 오류(예: 접속사 앞/부사구 뒤 쉼표 누락)를 CEFR B1 수준에서 집중적으로 다룬다. 각 오류 유형별로 2~3개의 예문으로 구성된 변형문제를 출제하여 학생들이 실제 패턴을 인식하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T13:14:18.482Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "복합명사(company → companies), 수식어(three persons → three people), 시제(hope → will) 등 기본 문법 오류가 빈번하며, 특히 'for improvement to'와 같은 전치사 구성이 자연스러운 패턴으로 정착되어 있음.",
    "rule": "CEFR B1 수준에서 복수형 오류(company/companies), 인칭·수 오류(three persons/people), 시제 오류(hope/will) 및 전치사 구문(for improvement to)의 4가지 오류 유형을 반드시 포함하여 문장을 설계할 것.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T21:42:15.295Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'have a trip' 대신 'take a trip'이 자연스러운 패턴으로, 동사 선택의 오류가 빈번하다는 점을 확인했다. 또한 'realist'는 형용사로서 'realistic'으로 수정해야 하며, 'successfull'은 철자 오류로 'successful'이 옳음을 알 수 있었다.",
-   "rule": "'have/take a trip' 구문에서 'take a trip'을 정답으로 설정하고, 'have a trip'을 오답으로 제시하여 동사의 자연스러운 연어 선정을 평가한다.",
    "sample": [
     "old english",
     "university press",
