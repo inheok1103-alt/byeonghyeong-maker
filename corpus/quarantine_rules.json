@@ -1,7 +1,39 @@
 {
- "updated": "2026-08-21T14:56:49.546Z",
+ "updated": "2026-08-21T15:52:22.493Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 지문의 핵심 주제나 의미를 왜곡하지 않고, 핵심 요지를 가장 정확히 반영하는 선지가 정답이 되도록 출제되어야 한다.",
+   "src": "자가학습:요지",
+   "score": 61,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T15:49:44.078Z"
+  },
+  {
+   "rule": "정답과 가장 유사한 오답은 '부분적 유사성'을 유지하되, 원문의 핵심 의미를 왜곡하지 않으며, 나머지 오답은 주제 일관성을 해치지 않도록 '원문의 범위 내'에서만 변형하라.",
+   "src": "자가학습:주제",
+   "score": 69,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T15:50:16.133Z"
+  },
+  {
+   "rule": "단수/복수 주어와 동사의 일치, 보어 불충분, 선행사 일치 등 문법 규칙을 엄격히 적용하고, 모든 선지 기호를 통일된 형식(예: ①)으로 통일하라.",
+   "src": "자가학습:어법개수형",
+   "score": 85,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T15:50:54.200Z"
+  },
+  {
+   "rule": "Calypso music was derived from an African word later connected with Greek mythology.",
+   "src": "자가학습:조건영작",
+   "score": 83,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T15:51:33.079Z"
+  },
   {
    "rule": "언어학적 분석에서 'tense'는 'morphological_tense'로, 'time-reference'는 'temporal_reference'로 구체화하여 표현하라.",
    "src": "자가학습:요약문AB",
@@ -1569,38 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-18T11:43:32.093Z"
-  },
-  {
-   "rule": "모든 문항은 원지문의 핵심 논리(1. possible worlds의 hypothetical states of affairs 포착, 2. quantification을 통한 necessity/possibility 정의 관계)를 명확히 반영한 3개의 선지로 재구성하며, 오답 선지의 함정성을 낮추어 정답의 유일성을 강화해야 한다.",
-   "src": "자가학습:혼합통합형",
-   "score": 79,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T11:44:09.271Z"
-  },
-  {
-   "rule": "정답과 오답의 의미를 원문과 정확히 일치시키며, 통사 이론의 기술 용어(예: 'unvalued case feature' → '미가치 격 특징')를 그대로 반영하고, 발문을 '다음 설명 중 옳은 것은?'으로 통일하여 출제하라.",
-   "src": "자가학습:안내문일치",
-   "score": 70,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T10:48:24.651Z"
-  },
-  {
-   "rule": "모든 독해 문항은 지문, 발문, 선지가 유기적으로 연계되어야 하며, 지문의 주제와 일치하는 실제적인 소재(소설, 수필 등)를 사용하고, 발문과 선지를 해당 주제에 맞게 구체적이고 실행 가능한 수준으로 재구성해야 한다.",
-   "src": "자가학습:심경변화",
-   "score": 55,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T10:51:52.228Z"
-  },
-  {
-   "rule": "모든 출제에서 정답 선지는 지문의 언어학적 논리를 '프로브 과정의 제약 해제 및 조율'로 구체화하고, 오답 선지들은 '탐색 방식', '통합', '규제' 등 중복 의미를 배제하여 정답의 유일성을 확보하라.",
-   "src": "자가학습:목적",
-   "score": 65,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T10:54:07.297Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
