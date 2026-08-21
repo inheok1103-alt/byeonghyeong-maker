@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T03:19:09.307Z",
+ "updated": "2026-08-21T04:58:25.293Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T04:58:01.138Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'명사 + 전치사 + 부사' 또는 '명사 + 전치사 + 형용사' 구조에서 전치사의 오용이 빈번하며, 특히 'of'나 'to'가 'for'로 대체되는 패턴이 두드러진다.",
+   "rule": "'~의 영향/결과/필요'를 뜻하는 명사구(예: 'bad influence to economics', 'systems for safe')에서 전치사 'to'는 'of' 또는 'for'로 대체될 수 없음을 강조하여 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T03:18:38.814Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스의 실제 패턴에서 'do not'의 축약형 'don't'가 부정의미를 명확히 전달하는 핵심 요소로 활용됨을 확인. 또한 명사 오류('effect' vs 'effection'), 동사 오류('grow up' vs 'grow'), 관사 오류('a plentiful' vs 'plentiful')가 빈번하게 나타나며, 이는 CEFR B1 수준에서 중점적으로 다루어야 할 문법 항목임을 시사함.",
    "rule": "CEFR B1 수준 내신 변형문제에서는 부정문에서 'do not'의 축약형 'don't' 사용 여부를 필수적으로 검증하며, 특히 'grow up' (성장하다)과 'grow' (자라다)의 구별, 'a/an' 관사의 생략 오류, 그리고 명사의 복수형/단수형 구별을 오답으로 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-18T13:11:14.557Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'or' 구문에서 부정어(or not) 생략이 빈번하며, 'look'은 보어와 결합 시 'to' 불필요, 'spend time on' 구문이 'spend time more'로 잘못 축약됨, 'whenever' 절에서 주어 생략과 동사 활용 오류가 중복됨.",
-   "rule": "'or not' 부정 구문(Even though ~ or looks to pretty → Even though ~ or not, looks too pretty)과 'spend time on' 구문(And young people spend time more ther lifestile → And young people spend more time on their lifestyles), 그리고 'whenever' 절의 주어·동사 일치(whenever we necessary → whenever we need necessary)를 반드시 검증하라.",
    "sample": [
     "old english",
     "university press",
