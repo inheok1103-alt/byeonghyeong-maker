@@ -1,6 +1,109 @@
 {
- "updated": "2026-08-21T09:55:34.114Z",
+ "updated": "2026-08-21T10:51:55.066Z",
  "samples": [
+  {
+   "ts": "2026-08-21T10:50:04.153Z",
+   "type": "연결어빈칸",
+   "level": "중",
+   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · 솔버교정: 솔버 3/3 다수결 3번(기록 2번 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "He had the judge reduce the charges. When have is used as a causative, have is followed by a noun-phrase object and a base-stem inﬁ nitive verb phrase. The noun-phrase object of have also serves as the subject of the following bare-stem verb. ___(A)___: James had his boss kill the proposal. Here the noun phrase his boss is both the object of had and the subject of the bare-stem verb kill. ___(B)___, the boss is the person killing the proposal, not James. When get and have are used as causative verbs, they differ in the exact form of the verb in their complements (inﬁ nitives with get; bare-stems with have), but in other aspects they seem interchangeable—with the predictable exception that get passives are more informal than have passives. They are also alike in that the verbs in their complements can be passives. Here are the active get and have sentences, together with their passive counterparts:",
+    "choices": [
+     "Moreover …… Indeed",
+     "For example …… In other words",
+     "That is …… For example",
+     "In other words …… Above all",
+     "For example …… In contrast"
+    ],
+    "answer": 3,
+    "explanation": "(A)는 앞 내용과 '예시' 관계로 For example, (B)는 '재진식' 관계로 In other words 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘Moreover’는 앞 문장과 같은 맥락의 추가 설명을, ‘Indeed’는 앞 문장의 내용을 강조하는 말로 쓰이는데, 지문에서 (A)는 예시, (B)는 다시 설명하는 말로 쓰였다. 두 접속사가 문맥에 맞지 않다. → 처방: ‘For example’(예시)와 ‘In other words’(다시 설명) 구분이 안 되면, 빈칸 앞뒤 문장의 관계를 먼저 확인해라.\n② 진단: ‘For example’(예시)는 (A)에 알맞지만, ‘Indeed’는 앞 문장을 강조하는 말로 (B)에 맞지 않다. 지문에서 (B)는 앞 문장의 내용을 다시 설명하는 말이 필요했다. → 처방: 빈칸 뒤 문장이 앞 문장의 내용을 재정리하는지, 새로운 예를 드는지를 먼저 확인해라.\n④ 진단: ‘In other words’는 (A)에 알맞지만, ‘Above all’이 ‘가장 중요하게’를 뜻하는 말로 (B)에 맞지 않다. 지문은 예시와 재설명이 필요했다. → 처방: ‘Above all’이 ‘가장 중요하게’를 뜻한다는 점 기억하고, 빈칸 뒤 문장이 예시인지 재설명인지 확인해라.\n⑤ 진단: ‘For example’(예시)는 (A)에 알맞지만, ‘In contrast’는 대조를 뜻하는 말로 (B)에 맞지 않다. 지문은 예시와 재설명이 필요했다. → 처방: ‘In contrast’가 대조를 뜻한다는 점 기억하고, 빈칸 뒤 문장이 예시인지 재설명인지 확인해라."
+   }
+  },
+  {
+   "ts": "2026-08-21T10:50:48.800Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "He had the judge reduce the charges. When have is used as a causative, have is followed by a noun-phrase object and a base-stem inﬁ nitive verb phrase. The noun-phrase object of have also serves as the subject of the following bare-stem verb. For example: James had his boss kill the proposal. Here the noun phrase his boss is both the object of had and the subject of the bare-stem verb kill. In other words, the boss is the person killing the proposal, not James. When get and have are used as causative verbs, they differ in the exact form of the verb in their complements (inﬁ nitives with get; bare-stems with have), but in other aspects they seem interchangeable—with the predictable exception that get passives are more informal than have passives. They are also alike in that the verbs in their complements ____. Here are the active get and have sentences, together with their passive counterparts:",
+    "choices": [
+     "능동적일 수밖에 없다",
+     "활동적일 가능성이 있다",
+     "자발적일 수밖에 없다",
+     "수동적일 수 있다",
+     "주관적일 수 있다"
+    ],
+    "answer": 4,
+    "explanation": "빈칸에는 '수동적일 수 있다'가 들어가 글의 논지를 완성한다 (본문 'can be passives'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'have/get + 목적어 + 동사원형(bare-stem)' 구조는 목적어가 동사의 주체임을 강조하는데, 학생은 '능동적'이라는 단어만 보고 '주체가 능동적으로 행동해야 한다'고 오해한 듯함. 지문은 '목적어=주체'임을 설명하지만 '능동성'을 강제하지 않음. → 처방: causative 구조에서 목적어가 동사의 주체라는 점만 기억하고, '능동/수동'은 문맥에 따라 달라질 수 있음을 확인할 것.\n② 진단: 학생은 '가능성'이라는 단어를 보고 '활동적일 가능성'이 빈칸에 어울릴 거라고 생각한 듯함. 그러나 지문은 causative 구조의 특징을 설명하며 '수동태' 가능성을 직접 언급하고 있음. → 처방: 빈칸은 지문에서 제시한 'get/have passive' 예시와 비교해 '수동태'가 가능한지 확인하는 습관을 들일 것.\n③ 진단: 학생은 '자발적'이라는 단어를 보고 '목적어가 스스로 행동해야 한다'고 오해한 듯함. 그러나 causative 구조에서 목적어는 '강제받는 주체'일 수도 있어 '자발성'은 필수 조건이 아님. → 처방: causative 동사 뒤의 동사가 '자발적'인지 여부는 문맥에 따라 판단해야 하며, 구조 자체는 이를 강제하지 않음을 기억할 것.\n⑤ 진단: 학생은 '주관적'이라는 단어를 보고 '목적어의 주관적 상태'를 떠올린 듯함. 그러나 지문은 causative 구조의 문법적 특징(목적어=주체, 수동태 가능성)에 초점을 맞추고 있어 '주관성'은 관련이 없음. → 처방: 문법 문제에서는 '주관/객관'보다 '문법적 역할(주체/목적어)'과 '수동태 가능성'을 우선적으로 분석할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-21T10:51:12.420Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] They are also alike in that the verbs in their complements can be passives.\n\nHe had the judge reduce the charges. When have is used as a causative, have is followed by a noun-phrase object and a base-stem inﬁ nitive verb phrase. The noun-phrase object of have also serves as the subject of the following bare-stem verb. For example: James had his boss kill the proposal. ( ① ) Here the noun phrase his boss is both the object of had and the subject of the bare-stem verb kill. ( ② ) In other words, the boss is the person killing the proposal, not James. ( ③ ) When get and have are used as causative verbs, they differ in the exact form of the verb in their complements (inﬁ nitives with get; bare-stems with have), but in other aspects they seem interchangeable—with the predictable exception that get passives are more informal than have passives. ( ④ ) Here are the active get and have sentences, together with their passive counterparts: ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘have’를 causative 로 쓸 때의 구조(‘have + 명사구 + 동사원형’)를 설명한 뒤 바로 예문을 넣은 부분으로 보이나, 주어진 문장은 ‘complement 의 동사가 passive 가 될 수 있다’는 일반론이라 이 위치에는 어울리지 않는다. 학생은 ‘have causative’의 구조 설명과 예문의 연결만을 보고 ‘예문이 필요할 것 같다’고 오판했을 수 있다. → 처방: ‘have causative’의 구조 설명 뒤에는 ‘예문’이 아니라 ‘complement 의 passive 가능성’을 다룬 문장이 와야 한다는 점을 기억하고, 문장의 역할(일반론 vs 예시)을 구분해 읽기.\n② 진단: ‘his boss 가 kill 의 주어’라는 설명을 예문으로 오해하고 넣은 것으로 보이나, 주어진 문장은 ‘complement 의 동사가 passive 가 될 수 있다’는 내용으로, 이 위치는 ‘have causative’의 구조 설명 중 예문 분석 부분이라 어울리지 않는다. 학생은 ‘예문 분석’을 ‘일반론’으로 착각했을 수 있다. → 처방: ‘have causative’의 구조 설명 중 ‘예문 분석’ 부분과 ‘complement 의 passive 가능성’을 다룬 문장은 다르다는 점을 구분하고, 문장의 역할(구조 설명 vs 일반론)을 명확히 파악하기.\n③ 진단: ‘his boss 가 kill 하는 주체’라는 의미를 예문으로 오해하고 넣은 것으로 보이나, 주어진 문장은 ‘complement 의 동사가 passive 가 될 수 있다’는 내용으로, 이 위치는 ‘have causative’의 구조 설명 중 예문의 의미를 분석하는 부분이라 어울리지 않는다. 학생은 ‘의미 분석’을 ‘일반론’으로 착각했을 수 있다. → 처방: ‘have causative’의 구조 설명 중 ‘의미 분석’ 부분과 ‘complement 의 passive 가능성’을 다룬 문장은 다르다는 점을 구분하고, 문장의 역할(의미 분석 vs 일반론)을 명확히 파악하기.\n⑤ 진단: ‘get 과 have 의 causative 비교’를 예문과 함께 나열한 뒤라서, 주어진 문장이 들어가면 ‘complement 의 passive 가능성’을 다룬 문장이 갑자기 끼어드는 느낌을 주며 흐름이 끊긴다. 학생은 ‘예문 나열’이 끝난 뒤라서 ‘다음 문장’이 필요하다고 오판했을 수 있다. → 처방: ‘get 과 have 의 causative 비교’를 예문과 함께 나열한 뒤에는 ‘비교의 결과나 요약’이 오는 경우가 많다는 점을 기억하고, 문장의 역할(비교·요약 vs 일반론)을 구분해 읽기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-21T09:54:11.475Z",
    "type": "요지",
@@ -243,79 +346,6 @@
     ],
     "answer": 2,
     "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ‘(A)→(C)→(B)’는 도파민 급등→시소 원리→결과 흐름이 아니라 ‘감정→원리→뇌 반응’으로 순서가 뒤죽박죽이다. 특히 (A)에서 ‘즉시 기분 좋아짐’을 먼저 설명한 뒤 (C)에서 ‘뇌가 놀람’을 언급하는 것은 지문의 ‘항상성’ 논리와 맞지 않는다. → 처방: 지문은 ‘도파민 급등→항상성→기준선 하락’이라는 흐름을 따라가므로, 먼저 ‘시소 원리’를 소개한 (B)를 맨 앞에 둬야 한다.\n③ 진단: ‘(B)→(C)→(A)’는 (B)에서 ‘도파민 시소’를 소개한 뒤 (C)에서 ‘뇌 반응’을 설명하는 것은 맞지만, (A)에서 ‘즉시 기분 좋아짐’을 맨 뒤에 두어 전체 흐름이 ‘원리→뇌 반응→감정’으로 뒤틀린다. → 처방: 지문은 ‘감정(기분 좋아짐)→원리(시소)→결과(기분 하락)’ 순서이므로, (A)에서 기분 변화를 먼저 설명한 뒤 (B)에서 원리를 소개해야 자연스럽다.\n④ 진단: ‘(C)→(A)→(B)’는 (C)에서 ‘뇌가 놀람’을 먼저 설명한 뒤 (A)에서 ‘즉시 기분 좋아짐’을 언급하는 것은 지문의 ‘스크롤→도파민 급등→기분 변화’ 흐름과 맞지 않는다. 또한 (B)는 ‘시소 원리’를 설명하는 핵심 문장이므로 맨 뒤로 가면 안 된다. → 처방: 지문의 핵심은 ‘스크롤→도파민 급등→항상성→기분 변화’이므로, (A)에서 기분 변화를 먼저 설명한 뒤 (C)에서 뇌 반응을, (B)에서 시소 원리를 소개해야 한다.\n⑤ 진단: ‘(C)→(B)→(A)’는 (C)에서 ‘뇌 반응’을 먼저 설명한 뒤 (B)에서 ‘시소 원리’를 소개하는 것은 지문의 ‘스크롤→도파민 급등→항상성’ 흐름과 맞지 않는다. 또한 (A)는 기분 변화를 설명하는 문장이므로 맨 뒤로 가면 안 된다. → 처방: 지문은 ‘스크롤→도파민 급등→항상성→기분 변화’ 순서이므로, (A)에서 기분 변화를 먼저 설명한 뒤 (C)에서 뇌 반응을, (B)에서 시소 원리를 소개해야 한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T03:18:36.489Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 13 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'homeostasis', 'Scrolling', 'worsening' / 11~15단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Scrolling spikes dopamine so high that homeostasis forces it below baseline, worsening mood.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 11~15단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-21T02:04:50.915Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "Furthermore, this case is assigned by a functional element, something that is not involved in \u0002-role assignment. ① For accusative Case the Case assigner necessarily \u0002marks its subject in order to be able to assign accusative Case. ② But the same is not true for the inflectional assigner of nominative Case. ③ There are two basic positions linguists take with respect to these observations. ④ Meanwhile, syntactic Case marking is also constrained by semantic roles like agent and patient, which further complicates the assignment process. ⑤ One is to assume that nominative and accusative Case are similar and the other assumes that they are fundamentally different. From the first perspective the challenge is to come up with restrictions which define the conditions under which Case can be assigned generally. For example, there are three positions to which we have seen a Case assigned: the specifier of the inflection; the specifier of the complement, and the complement position itself: (65)",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘accusative Case’의 ‘Case assigner’가 ‘subject’를 ‘mark’해야 한다는 점(①)을 오독해, ‘Case assigner’의 역할이 ‘subject’에만 한정된다고 혼동한 듯하다. 지문은 ‘accusative Case’의 ‘Case assigner’가 ‘subject’를 ‘mark’해야 한다고만 설명하지, ‘subject’에만 한정되는 것은 아니다. → 처방: ‘Case assigner’의 역할이 ‘subject’에만 한정되지 않는다는 점을 분명히 기억하고, ‘Case assignment’의 조건을 ‘subject’뿐 아니라 ‘object’나 ‘complement’도 포함한다는 점을 떠올리며 읽기.\n② 진단: ‘nominative Case’의 ‘inflectional assigner’는 ‘subject’를 ‘mark’하지 않아도 된다는 점(②)을 오독해, ‘nominative Case’의 ‘Case assigner’가 아예 ‘mark’를 하지 않는다고 착각한 듯하다. 지문은 ‘accusative Case’의 ‘Case assigner’와 달리 ‘nominative Case’의 ‘Case assigner’는 ‘mark’를 ‘필요로 하지 않는다’는 것만 설명한다. → 처방: ‘Case assigner’의 ‘mark’ 여부가 ‘Case’의 종류에 따라 달라질 수 있음을 기억하고, ‘nominative’와 ‘accusative’의 차이를 명확히 구분하여 읽기.\n③ 진단: ‘linguists’의 ‘two basic positions’를 설명하는 문장(③)을 오독해, ‘observations’의 내용이 ‘linguists’의 ‘positions’와 직접 연결된다고 혼동한 듯하다. 지문은 ‘observations’를 설명한 뒤(①②④) ‘linguists’의 ‘positions’를 소개하는 흐름(③⑤)이다. → 처방: ‘observations’와 ‘linguists’의 ‘positions’를 구분하여 읽고, 각 문장이 어떤 주제를 다루는지 명확히 파악하기.\n⑤ 진단: ‘nominative’와 ‘accusative’의 ‘Case’를 ‘similar’ 또는 ‘fundamentally different’라고 보는 ‘linguists’의 ‘two basic positions’를 설명하는 문장(⑤)을 오독해, 이 문장이 ‘observations’의 예시나 설명으로 오인한 듯하다. 지문은 ‘observations’를 소개한 뒤(①②④) ‘linguists’의 ‘positions’를 소개하는 흐름(③⑤)이다. → 처방: ‘linguists’의 ‘positions’를 설명하는 문장은 ‘observations’와는 다른 주제임을 기억하고, 문단의 주제 전환을 주의하며 읽기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T02:05:00.506Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 15 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 7,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'fundamentally', 'Nominative', 'accusative' / 13~17단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Nominative and accusative Case fundamentally differ in how their assigners operate and restrict assignment positions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
