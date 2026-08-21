@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T19:43:57.089Z",
+ "updated": "2026-08-21T20:45:04.462Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T20:44:36.835Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어의 연어(collocation) 패턴을 분석한 결과, 'be + 과거분사(be annoyed/be taking)'와 '명사 + 명사(heart disease patients)'가 빈번히 사용되며, 부정어와 조동사의 결합(be not → cannot), 관사의 생략(placebo → a placebo)이 오류로 자주 나타난다는 점을 확인했다.",
+   "rule": "영어 문장에서 조동사(can, must 등)와 부정어(not)의 결합 시 'cannot' 형태로 축약하여 사용하며, 'be + 과거분사' 구문에서는 과거분사가 동사원형과 자연스럽게 연어(collocation)를 이루는지 확인하고, 복수 명사 앞에는 관사를 생략하지 않도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T19:43:28.410Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거형과 현재형 동사의 혼용, 전치사 오용, 복수/단수 명사의 일치 오류가 빈번하게 관찰된다. 'dealed'→'dealt', 'needs to transportation'→'needs of transportation' 등에서 전형적 오류 패턴을 확인할 수 있다.",
    "rule": "단수/복수 명사, 전치사, 시제 일치 오류를 검증하는 문항을 설계할 때, 'needs of transportation'(~의 필요) vs. 'needs to transportation'(불필요한 전치사) 패턴, 'have dealt' vs. 'have dealed'(불규칙 동사) 패턴, 'they will continue' vs. 'it will continue'(단수/복수 일치) 패턴을 반드시 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T04:56:32.610Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스는 'become an experts'와 같이 관사 오류(복수명사 앞 관사 불필요)나 'a big chance'→'a great chance'와 같은 연어 오류가 빈번하다는 점을 보여준다. 또한 'in my opinion is'와 같은 주어-동사 불일치 오류도 다수 발견된다.",
-   "rule": "'become/be/become' 다음에는 복수명사가 오면 관사 없이 사용해야 하며, 'chance'는 'great'과 결합하는 연어가 표준이므로 오답지로 '(a) big chance'를 제시하라.",
    "sample": [
     "old english",
     "university press",
