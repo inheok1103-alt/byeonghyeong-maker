@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-21T09:02:01.771Z",
+ "updated": "2026-08-21T09:55:34.114Z",
  "samples": [
+  {
+   "ts": "2026-08-21T09:54:11.475Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "제퍼슨은 혁명을 자발적 선택이 아닌 역사적 필연으로 묘사하여 급진적 정치 변화를 정당화했다",
+     "제퍼슨은 혁명이 자발적 선택으로 보일수록 역사적 필연성을 강조해 정치적 변화를 정당화했다",
+     "제퍼슨은 혁명을 역사적 필연으로만 묘사해 미국의 독립혁명에 한정된 철학적 근거를 제시했다",
+     "제퍼슨은 모든 혁명이 역사적 필연에 따라 발생한다고 주장해 서구 정치사상에 혁신을 가져왔다",
+     "제퍼슨은 혁명을 역사적 필연으로 묘사해 모든 정치 변화가 불가피한 것처럼 보이게 했다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Jefferson framed revolution as historically inevitable rather than a voluntary act to justify radical political change.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘자발적 선택으로 보일수록’은 지문에서 전혀 언급되지 않으며, 제퍼슨이 혁명을 ‘자발적’이 아닌 ‘필연’으로 묘사했다는 핵심과 무관한 오독. 혁명의 ‘자발성’과 ‘필연성’을 혼동한 듯. → 처방: 지문에서 ‘necessity’, ‘causes impel’, ‘prudence dictates’ 등 필연적 요소를 집중해서 찾고, 제퍼슨의 의도를 ‘자발성’과 대조해 다시 읽기.\n③ 진단: ‘미국 독립혁명에 한정된’은 지문에서 ‘just revolution in general’이라는 표현과 반대되며, 제퍼슨이 ‘일반적 혁명’을 위한 철학적 근거를 제시했다는 핵심과 배치됨. → 처방: ‘for our revolution in particular’ vs ‘for just revolution in general’을 정확히 구분하고, 제퍼슨의 목적이 ‘일반적’임을 강조하는 부분을 다시 확인하기.\n④ 진단: ‘모든 혁명이 역사적 필연에 따라 발생한다’는 과장된 주장으로, 지문은 ‘just revolution in general’을 언급했을 뿐 ‘모든 혁명’을 포괄하지 않음. 혁명의 ‘일반성’을 ‘전체성’으로 오독한 듯. → 처방: ‘just revolution in general’이 ‘모든 혁명’을 뜻하지 않음을 분명히 하고, 제퍼슨의 주장 범위를 정확히 파악하기.\n⑤ 진단: ‘모든 정치 변화가 불가피한 것처럼 보이게 했다’는 표현은 지문에서 ‘necessity constrains’, ‘causes impel’ 등으로 필연성을 강조한 것과는 달리, ‘불가피성’을 지나치게 확대 해석한 결과. → 처방: ‘necessity’가 ‘불가피한’ 수준인지, 아니면 ‘합리적 선택의 근거’를 제공하는 것인지 구분을 명확히 하고, 제퍼슨의 의도를 ‘불가피성’으로만 해석하지 않기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Jefferson framed revolution as historically inevitable rather than a voluntary act to justify radical political change.]"
+   }
+  },
+  {
+   "ts": "2026-08-21T09:55:02.251Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 필요에 따라 식민지 주민들은 이전 시스템을 변경해야 합니다.\n주어진 단어: ( necessity / forces / colonists )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The necessity forces the colonists to alter their former systems. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-21T07:59:26.329Z",
    "type": "어법개수형",
@@ -263,60 +316,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Nominative and accusative Case fundamentally differ in how their assigners operate and restrict assignment positions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-20T23:43:22.168Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] An occurrence; something that happens.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] event (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-20T22:46:49.498Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "I don’t like. ① Note carefully the pronunciation of this word. ② ANTITHESIS (an TITH uh sis) n the direct opposite • Erin is the antithesis of Aaron: Erin is bright and beautiful; Aaron is dull and plain. ③ The term apartheid was derived from the Afrikaans word for 'separateness,' reflecting its strict policy of racial division. ④ Note carefully the pronunciation of this word. ⑤ APARTHEID (uh PAHRT hyte) n the former policy of racial segregation and oppression in the Republic of South Africa The word apartheid is related to the word apart. Under apartheid in South Africa, blacks were kept apart from whites and denied all rights. The word apartheid is sometimes applied to less radical forms of racial injustice and to other kinds of separation. Critics have sometimes accused American public schools of practicing educational apartheid by providing substandard schooling for nonwhites. Quick Quiz #8 Match each word in the first column with its definition in the second column. Check your answers here. racial oppression 3. firm dislike 4. what went before 6.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①의 발음을 '노트 케어풀리'로 오독해 '주의 깊게 듣기'라는 지시문 자체를 문장으로 오해했을 가능성이 있다. 지문에서 ①은 단순히 발음 주의를 위한 지시일 뿐, 문장이 아니다. → 처방: 지시문(①, ④)과 문장(②, ③, ⑤)을 구분하는 연습을 한다. 지시문은 '~해라', '~주의하라'로 끝나는 명령형임을 기억한다.\n② 진단: ② 'ANTITHESIS'가 문장처럼 보였을 수 있다. 하지만 ②는 단어의 뜻과 예문이 포함된 설명일 뿐, 독립된 문장이 아니다. → 처방: 단어나 구로만 구성된 설명 부분(②, ⑤)을 문장으로 오해하지 않도록 주의한다. 문장은 반드시 동사가 있어야 한다.\n④ 진단: ④의 발음 지시('노트 케어풀리')를 문장으로 오해했을 수 있다. ①과 마찬가지로 지시문일 뿐, 문장이 아니다. → 처방: 지시문과 문장을 구분하는 연습을 반복한다. 지시문은 '~해라'로 끝나는지 확인한다.\n⑤ 진단: ⑤ 'APARTHEID'가 문장처럼 보였을 수 있다. 하지만 ⑤는 단어의 뜻과 예문이 포함된 설명일 뿐, 독립된 문장이 아니다. → 처방: 단어 설명 부분(②, ⑤)을 문장으로 오해하지 않도록 주의한다. 문장은 반드시 동사가 있어야 한다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]
