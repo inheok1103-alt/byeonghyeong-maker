@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-21T20:45:04.465Z",
+ "updated": "2026-08-21T21:43:33.090Z",
  "samples": [
+  {
+   "ts": "2026-08-21T21:42:51.555Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "itinerant lifestyle and itinerary as planned travel route",
+     "itinerant lifestyle and itinerary as temporary deviations",
+     "itinerant lifestyle and itinerary as outcomes of travel planning",
+     "itinerant lifestyle and itinerary as inherent traits of human mobility",
+     "itinerant lifestyle and itinerary as sporadic elements in travel"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Itinerant lifestyle and itinerary as planned travel route'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘temporary deviations’는 ‘일시적인 탈선’이라는 뜻인데, 지문에서 itinerant 는 ‘이동하는’, itinerary 는 ‘계획된 여행 경로’라는 뜻으로 ‘탈선’이란 뜻은 전혀 없다.Quick Quiz #53에서 itinerant 는 8번(h. moving from place to place), itinerary 는 3번(c. planned trip route)으로 정의되어 있다. → 처방: ‘itinerant’는 ‘이동하는’, ‘itinerary’는 ‘계획된 여행 경로’라는 뜻을 기억하고, 선지를 고를 때는 지문 속 정의와 일치하는지 확인할 것.\n③ 진단: ‘outcomes of travel planning’이라는 말은 ‘여행 계획의 결과’라는 뜻인데, itinerant 는 ‘이동하는’(움직이는 상태 자체), itinerary 는 ‘계획된 경로’(계획의 결과)로, ‘결과’라는 뜻은 itinerary 에만 해당하고 itinerant 에는 맞지 않다. → 처방: ‘itinerant’는 ‘움직이는 상태’를, ‘itinerary’는 ‘계획된 경로’를 가리킨다는 점을 분명히 구분하고, 선지를 고를 때는 각 단어의 핵심 의미를 떠올릴 것.\n④ 진단: ‘inherent traits of human mobility’라는 말은 ‘인간의 이동성 자체의 타고난 특징’이라는 뜻인데, itinerant 는 ‘이동하는’, itinerary 는 ‘계획된 경로’로, ‘타고난 특징’이란 뜻은 neither 단어에 해당하지 않는다. → 처방: ‘inherent’라는 단어가 나오면 ‘고유한, 타고난’이라는 뜻임을 떠올리고, 지문 속 itinerant 와 itinerary 가 그런 뜻을 담고 있는지 확인할 것.\n⑤ 진단: ‘sporadic elements’라는 말은 ‘산발적인 요소’라는 뜻인데, itinerant 는 ‘이동하는’, itinerary 는 ‘계획된 경로’로, ‘산발적’이라는 뜻은 neither 단어에 맞지 않는다. → 처방: ‘sporadic’이란 단어가 나오면 ‘산발적인’이라는 뜻임을 떠올리고, 지문 속 itinerant 와 itinerary 가 그런 뜻을 담고 있는지 확인할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Itinerant lifestyle and itinerary as planned travel route]"
+   }
+  },
+  {
+   "ts": "2026-08-21T21:43:02.987Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 여행 일정이 있는 라이프스타일은 장소를 자주 이동하는 것을 포함합니다.\n주어진 단어: ( place / itinerant / lifestyle )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] An itinerant lifestyle involves moving from place to place frequently. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-21T20:43:49.873Z",
    "type": "전체문장배열",
@@ -290,76 +342,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'to illustrate the choice among structurally and semantically related variants in English grammar.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건·전제 누락·과잉 일반화)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: 지문에서 '대명사'가 아닌 '대명사의 다양한 형태'를 넘어 '구조적·의미적 관련 변이형'을 다루는 내용을 오독하여 '대명사'에만 초점을 맞췄다. (예: 'referring expressions'가 대명사뿐 아니라 명사구까지 포함함을 간과) → 처방: 지문에서 'variants'가 구조·의미적으로 관련 있는 여러 형태(대명사·명사구 등)를 가리키므로, '대명사'라는 단어에만 집착하지 말고 '변이형 선택의 방식'을 전체적으로 이해하기.\n③ 진단: 지문의 핵심은 '선택의 방식'이지 '대명사가 문장 의미에 영향을 미친다'는 주장이 아니다. 학생은 지문의 'discourse factors'를 '문장 의미'로 오해하여 '영향'이라는 표현에 끌렸다. → 처방: 지문에서 'when and why'가 '선택의 기준'임을 기억하고, '영향'이나 '결정' 같은 강한 표현이 나올 때는 지문과 대조하여 사실 여부를 확인하기.\n④ 진단: 지문은 '선택 방식'을 설명하는 것이지 '대명사가 문법 규칙을 결정한다'는 주장을 하지 않는다. 학생은 'grammatical factors'를 '규칙을 결정한다'로 과장하여 해석했다. → 처방: 지문에서 'factors that relate to the choice'임을 확인하고, '결정한다'는 절대적 표현이 나오면 지문과 정확히 일치하는지 재확인하기.\n⑤ 진단: 지문은 '동일한 방식으로 사용되지 않는다'는 내용을 담고 있어, 학생은 '동일한 방식'이라는 선지를 오독하여 지문의 'variants'를 무시했다. → 처방: 지문에서 'several related variants'와 'choice among'이라는 표현을 보고, '모든 변이형이 동일하다'는 주장이 지문과 모순됨을 바로잡기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to illustrate the choice among structurally and semantically related variants in English grammar.]"
-   }
-  },
-  {
-   "ts": "2026-08-21T13:14:05.058Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Grammatical Rules in Context: a Study",
-     "Gramatical Variation Across Contexts",
-     "Every Grammar Rule in English Explained",
-     "How Context Shapes Grammatical Consistency",
-     "The Fixed Nature of English Grammar"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'VARIATION IN GRAMMATICAL FORMS'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: ‘Grammatical Rules in Context’는 지문에서 다루는 ‘문법적 변이(grammatical variation)’가 아니라 ‘문법 규칙의 적용’에 초점을 맞추는 오해. 지문은 ‘구조적·의미적으로 관련 있는 변이형’(예: they/the gents) 사이의 ‘선택’에 주목하며, ‘규칙’보다는 ‘맥락에 따른 변이’를 다룬다. → 처방: ‘문법 규칙’이 아니라 ‘문맥에 따른 문법적 변이’를 찾는 문제임을 먼저 확인하라. ‘규칙’이나 ‘적용’이란 단어는 오답의 핵심 키워드임을 기억하자.\n③ 진단: ‘Every Grammar Rule in English Explained’은 지문이 ‘모든 문법 규칙’을 설명하는 것이 아니라 ‘특정 변이형 사이의 선택 조건’을 분석한다는 점을 오해. 지문은 ‘GSWE’가 ‘구조적·의미적 변이’를 ‘언제·왜’ 선택하는지 설명한다고 강조한다. → 처방: ‘모든 규칙’을 설명하는 선지는 지나치게 포괄적임을 의심하라. 지문에서 ‘관련된 변이형’과 ‘선택 조건’을 언급하는지 확인하고, ‘모든’이나 ‘완벽한 설명’이란 말이 있으면 경계하라.\n④ 진단: ‘How Context Shapes Grammatical Consistency’는 ‘일관성’을 강조하지만 지문은 ‘변이형 사이의 선택’(즉, ‘불일치’나 ‘다양성’)을 다룬다. ‘일관성’이란 단어는 지문의 핵심 주제(‘변이’)와 반대되는 오해다. → 처방: ‘일관성’이 아니라 ‘변이’를 찾는 문제임을 파악하라. ‘일관성’이나 ‘통일성’이란 단어는 오답의 함정임을 기억하고, 지문에서 ‘다양한 표현’이나 ‘선택’이란 말이 있는지 확인하라.\n⑤ 진단: ‘The Fixed Nature of English Grammar’는 지문이 ‘고정된 규칙’이 아니라 ‘맥락에 따라 변하는 선택’을 다룬다는 점을 오해. 지문은 ‘GSWE’가 ‘문법적·담화적 요인’에 따라 변이를 설명한다고 명시한다. → 처방: ‘고정된’이나 ‘변하지 않는’이란 단어가 나오면 의심하라. 지문에서 ‘변이’, ‘선택’, ‘맥락’ 같은 단어가 반복되는지 확인하고, ‘고정’이나 ‘불변’이란 말이 있으면 오답으로 판단하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: VARIATION IN GRAMMATICAL FORMS]"
-   }
-  },
-  {
-   "ts": "2026-08-21T11:45:07.748Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 2건 · 솔버교정: 솔버 2/3 다수결 2번(기록 1번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "drastic evolution of English grammar over centuries",
-     "centuries of gradual changes in English grammar due to external influences",
-     "partial transformation of Old English into Modern English through borrowing",
-     "constant and universal restructuring of all languages based on grammar alone",
-     "English grammar evolving drastically only in recent decades"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'English grammar evolved drastically over time.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: English grammar evolved drastically over time.]\n[오답 진단·처방]\n① 진단: ‘drastic evolution’이라는 표현은 지문에서 ‘Botox-style’과 ‘liposuction-style’이라는 비유로 묘사된 변화가 있지만, ‘drastic’(급격한)보다는 ‘gradual’(점진적인) 변화가 더 어울린다. 학생은 ‘drastic’를 ‘급격한 변화’로만 해석해 지문의 핵심 흐름을 놓쳤다. → 처방: ‘drastic’는 강조를 위한 표현이지만, 지문 전체는 ‘천 년에 걸쳐 일어난 변화’를 강조하므로 ‘gradual’(점진적)임을 먼저 확인한 후 답을 고르기.\n③ 진단: ‘partial transformation’이라는 표현은 지문에서 ‘Celtic features 가 plugged in’되고 ‘complexities 가 shorn’되었다고 설명하지만, 이는 ‘Old English → Modern English’의 전체적 변화가 아니라 일부 변화에 불과하다. 학생은 ‘부분적 변화’만 보고 전체 흐름을 오해했다. → 처방: ‘partial’이 아니라 ‘전체적 변화’를 나타내는 단서(‘천 년에 걸쳐’, ‘grammar had features plugged in’)를 먼저 찾기.\n④ 진단: ‘constant and universal restructuring’이라는 표현은 지문에서 English 의 변화만 다루며, ‘all languages’를 언급하지 않는다. 학생은 ‘universal’이라는 단어를 보고 지문의 범위를 과장해 해석했다. → 처방: ‘universal’이라는 단어는 지문에 없으므로, ‘English 에만 해당하는 변화’임을 확인한 후 답을 선택하기.\n⑤ 진단: ‘only in recent decades’라는 표현은 지문에서 ‘천 년에 걸쳐 일어난 변화’를 설명하므로, ‘recent decades’(최근 수십 년)만으로는 변화의 전체 기간을 설명할 수 없다. 학생은 ‘recent’이라는 단어를 보고 지문의 시간적 범위를 축소시켰다. → 처방: ‘recent decades’가 아니라 ‘천 년’이라는 시간적 범위를 나타내는 단서(‘a millennium-and-a-half’)를 먼저 확인하기."
    }
   }
  ]

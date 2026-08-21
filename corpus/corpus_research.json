@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T20:45:04.462Z",
+ "updated": "2026-08-21T21:43:33.086Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T21:43:04.898Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거시제와 현재시제가 혼용된 문장에서 시제 일관성이 깨지는 경우가 빈번하며, 특히 'hire'/'teach'와 같은 동사가 'hiring'/'teaching'으로 능동태 분사형으로 수정되어야 자연스러워진다.",
+   "rule": "시제 혼용 오류를 교정하기 위해 문장 내 모든 동사의 시제를 통일하거나, 능동태/수동태를 명확히 구분하여 '~ing' 형태의 분사형으로 전환하는 규칙을 적용하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T20:44:36.835Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'between two' 패턴이 빈번히 나타나며, 특히 'between + 명사 + and + 명사' 구조가 일반화되어 있음이 확인된다. 또한, 'smaller'와 같은 비교급 형용사가 'was'와 같은 단수 동사와 결합하는 경우가 많고, 'less'가 불가산 명사와 호응하는 경향이 강하다.",
    "rule": "원서 패턴을 반영하여, 'between A and B' 구조에서 A와 B가 명사일 경우 반드시 관사(the, a 등)를 포함하도록 변형 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T05:48:24.616Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형과 현재형 동사의 혼용, 전치사 오용, 복수/단수 명사의 일치 오류가 빈번하게 관찰된다. 'dealed'→'dealt', 'needs to transportation'→'needs of transportation' 등에서 전형적 오류 패턴을 확인할 수 있다.",
-   "rule": "단수/복수 명사, 전치사, 시제 일치 오류를 검증하는 문항을 설계할 때, 'needs of transportation'(~의 필요) vs. 'needs to transportation'(불필요한 전치사) 패턴, 'have dealt' vs. 'have dealed'(불규칙 동사) 패턴, 'they will continue' vs. 'it will continue'(단수/복수 일치) 패턴을 반드시 포함하라.",
    "sample": [
     "old english",
     "university press",

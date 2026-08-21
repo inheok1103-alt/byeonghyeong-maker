@@ -1,7 +1,31 @@
 {
- "updated": "2026-08-21T20:45:04.461Z",
+ "updated": "2026-08-21T21:43:33.085Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 'ironic' 관련 문항은 '의도와 결과의 불일치(예상과 다른 결과)'를 핵심 정의로 명시하고, 'sarcasm'은 '비꼬는 어조'로, 'irony'는 '문맥적 반대'로 한정하여 선지를 구성하라.",
+   "src": "자가학습:빈칸(문장)",
+   "score": 77,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T21:41:20.241Z"
+  },
+  {
+   "rule": "모든 문항은 지문의 핵심 주제(예: 특정 단어의 혼동)를 직접 반영하여 선지 및 정답을 구성해야 하며, 주제 외의 요소(예: 생활양식, 단어 차이 일반화)로 오도하지 않도록 구체적이고 문맥에 밀착된 표현을 사용해야 한다.",
+   "src": "자가학습:주제",
+   "score": 79,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T21:42:28.854Z"
+  },
+  {
+   "rule": "An itinerant lifestyle involves moving from place to place often.",
+   "src": "자가학습:조건영작",
+   "score": 83,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-21T21:42:56.820Z"
+  },
   {
    "rule": "모든 문항은 지문의 핵심 문법 구조(예: bare-stem vs. infinitive, informal passives)와 형식성 차이를 직접 반영한 선지들로만 구성되어야 하며, 핵심 내용의 90% 이상이 요지 선지에 포함되도록 하되, 세부 설명(예: 'predictable exception' 등)을 과도하게 일반화하거나 오용하지 않도록 엄격히 제한해야 한다.",
    "src": "자가학습:요지",
@@ -1577,30 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-18T19:00:20.468Z"
-  },
-  {
-   "rule": "모든 출제에서 지문은 'proforms(대명사형 포함)가 문장 구성 요소(AP, PP, AdvP, 절 등)를 대체하는 구체적 방식과 그 체계적 설명'을 목적으로 삼아야 하며, 발문은 '주제'를 묻도록 통일하라.",
-   "src": "자가학습:목적",
-   "score": 76,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T17:45:53.790Z"
-  },
-  {
-   "rule": "모든 문항에서 주어와 동사의 일치, 집합명사 단·복수 처리, 선지 형태의 통일성(예: '1~5개'로 표준화)을 엄격히 준수하고, 발문의 요구(예: '개수' 질문)를 선지 구성에 반영하여 오류를 사전 예방하라.",
-   "src": "자가학습:어법개수형",
-   "score": 87,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T17:46:17.072Z"
-  },
-  {
-   "rule": "정답 선지는 원문의 핵심 어휘(예: '구성(configurations)', '신체 일부')를 모두 포함하고, 오답 선지는 원문의 범위나 조건(예: 'whole body', 'respectively')을 정확히 반영해야 한다.",
-   "src": "자가학습:안내문일치",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-18T16:49:27.315Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
