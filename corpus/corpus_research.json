@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-21T17:54:07.633Z",
+ "updated": "2026-08-21T19:00:20.954Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-21T18:59:46.886Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 'be 동사 + 형용사' 패턴(예: 'be active', 'be dependent')이 한국어 학습자에게 빈번한 오류로 나타나며, 특히 'could + 동사원형' 구조에서 'be' 생략 오류가 다수 관찰된다. 또한 'a/an' 관사의 부재와 문장 구조의 단순화가 특징적이다.",
+   "rule": "CEFR A2~B1 수준에서 'could + be + 형용사' 구조(예: 'could be active', 'could be dependent')를 문법 규칙으로 명시하고, 'a/an' 관사 사용 및 문장 구조 단순화 오류(예: 관사 생략, 동사 생략)를 집중적으로 평가하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-21T17:53:37.010Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'diverse knowledges'와 같이 가산명사 복수형이 비문법적인 경우, 'knowledge'는 불가산명사로 처리되어야 한다. 또한 'old information'은 'outdated information'으로 교정되어야 하며, 불가산명사의 특성상 'an'이 삭제되어야 한다.",
    "rule": "'가산명사 복수형 오류'는 'diverse knowledges' → 'diverse knowledge'로, '불가산명사 오류'는 'old information' → 'outdated information'으로 수정하는 규칙을 적용하여 문항을 설계한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T03:13:10.169Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'old English', 'Middle English' 등 고유 명사나 학술용어가 대문자로 표기되는 패턴을 확인할 수 있으며, 동사 오류(3인칭 단수, 시제, 철자)도 빈번히 발생하는 경향이 있다.",
-   "rule": "고유 명사(도시명, 학술용어 등)는 반드시 대문자로 시작하도록 하며, 동사의 시제·인칭·철자 오류를 검토하여 문법적으로 올바른 형태로 수정하라.",
    "sample": [
     "old english",
     "university press",

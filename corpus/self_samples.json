@@ -1,6 +1,40 @@
 {
- "updated": "2026-08-21T17:54:07.637Z",
+ "updated": "2026-08-21T19:00:20.958Z",
  "samples": [
+  {
+   "ts": "2026-08-21T18:58:29.071Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.88,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.88)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "distinction between logical and epistemic modalities",
+     "differences between possible worlds and actual reality",
+     "logical necessity derived from empirical evidence",
+     "absolute separation of logical and epistemic possibilities",
+     "ways to classify modes of possibility in logic"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Distinction between logical and epistemic modalities'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: 지문에서 'possible worlds'와 'actual reality'의 차이는 다루지만, 두 개념의 구분이 아니라 'logical modality'와 'epistemic modality'의 구분을 주제로 삼고 있음을 오독했음. 지문 첫 문장에 'logical modality'가 'possible worlds'를 '구분 없이 다루는' simplest modality 라고 설명된 부분을 놓침. → 처방: 지문 전체를 읽고 'modality(양태)'라는 키워드가 나오는지 확인할 것. 'modality'가 없으면 주제가 아님을 기억하기.\n③ 진단: 지문에서 'epistemic must'가 'empirical evidence(경험적 증거)'에서 비롯된다는 설명은 있지만, 'logical necessity(논리적 필연성)'가 'empirical evidence'에서 비롯된다는 내용은 없음. 학생은 'must'라는 단어에만 집중해 오해했음. → 처방: 지문에서 'must'가 등장하는 문맥을 정확히 짚기. 'epistemic must'와 'logical necessity'가 각각 어떤 근거에서 나오는지 구분할 것.\n④ 진단: 지문은 'logical possibility'와 'epistemic possibility'가 '절대 분리'된다는 내용이 아니라, 'epistemic possibility'가 'logical possibility'보다 약한 조건임을 설명함. 'absolute separation'이라는 표현은 지문에 없음. → 처방: 지문에서 'far weaker than'이나 'even though there might be differences' 같은 비교 구문을 주의 깊게 읽기. '차이'와 '분리'는 다른 개념임을 기억하기.\n⑤ 진단: 지문은 'modes of possibility'를 'logical'과 'epistemic'으로만 분류하지 않고, 그 두 가지를 비교하는 방식으로 설명함. 'ways to classify'라는 표현은 지문에 없지만, 학생은 'possible worlds'라는 단어가 'classify'와 연결된다고 오해했음. → 처방: 지문에서 'modality'가 'logical'과 'epistemic' 두 종류로만 나뉜다는 점을 확인할 것. 다른 분류 기준이 있는지 찾기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Distinction between logical and epistemic modalities]"
+   }
+  },
   {
    "ts": "2026-08-21T15:50:01.496Z",
    "type": "요지",
@@ -343,41 +377,6 @@
     ],
     "answer": 4,
     "explanation": "빈칸에는 '수동적일 수 있다'가 들어가 글의 논지를 완성한다 (본문 'can be passives'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'have/get + 목적어 + 동사원형(bare-stem)' 구조는 목적어가 동사의 주체임을 강조하는데, 학생은 '능동적'이라는 단어만 보고 '주체가 능동적으로 행동해야 한다'고 오해한 듯함. 지문은 '목적어=주체'임을 설명하지만 '능동성'을 강제하지 않음. → 처방: causative 구조에서 목적어가 동사의 주체라는 점만 기억하고, '능동/수동'은 문맥에 따라 달라질 수 있음을 확인할 것.\n② 진단: 학생은 '가능성'이라는 단어를 보고 '활동적일 가능성'이 빈칸에 어울릴 거라고 생각한 듯함. 그러나 지문은 causative 구조의 특징을 설명하며 '수동태' 가능성을 직접 언급하고 있음. → 처방: 빈칸은 지문에서 제시한 'get/have passive' 예시와 비교해 '수동태'가 가능한지 확인하는 습관을 들일 것.\n③ 진단: 학생은 '자발적'이라는 단어를 보고 '목적어가 스스로 행동해야 한다'고 오해한 듯함. 그러나 causative 구조에서 목적어는 '강제받는 주체'일 수도 있어 '자발성'은 필수 조건이 아님. → 처방: causative 동사 뒤의 동사가 '자발적'인지 여부는 문맥에 따라 판단해야 하며, 구조 자체는 이를 강제하지 않음을 기억할 것.\n⑤ 진단: 학생은 '주관적'이라는 단어를 보고 '목적어의 주관적 상태'를 떠올린 듯함. 그러나 지문은 causative 구조의 문법적 특징(목적어=주체, 수동태 가능성)에 초점을 맞추고 있어 '주관성'은 관련이 없음. → 처방: 문법 문제에서는 '주관/객관'보다 '문법적 역할(주체/목적어)'과 '수동태 가능성'을 우선적으로 분석할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T10:51:12.420Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] They are also alike in that the verbs in their complements can be passives.\n\nHe had the judge reduce the charges. When have is used as a causative, have is followed by a noun-phrase object and a base-stem inﬁ nitive verb phrase. The noun-phrase object of have also serves as the subject of the following bare-stem verb. For example: James had his boss kill the proposal. ( ① ) Here the noun phrase his boss is both the object of had and the subject of the bare-stem verb kill. ( ② ) In other words, the boss is the person killing the proposal, not James. ( ③ ) When get and have are used as causative verbs, they differ in the exact form of the verb in their complements (inﬁ nitives with get; bare-stems with have), but in other aspects they seem interchangeable—with the predictable exception that get passives are more informal than have passives. ( ④ ) Here are the active get and have sentences, together with their passive counterparts: ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘have’를 causative 로 쓸 때의 구조(‘have + 명사구 + 동사원형’)를 설명한 뒤 바로 예문을 넣은 부분으로 보이나, 주어진 문장은 ‘complement 의 동사가 passive 가 될 수 있다’는 일반론이라 이 위치에는 어울리지 않는다. 학생은 ‘have causative’의 구조 설명과 예문의 연결만을 보고 ‘예문이 필요할 것 같다’고 오판했을 수 있다. → 처방: ‘have causative’의 구조 설명 뒤에는 ‘예문’이 아니라 ‘complement 의 passive 가능성’을 다룬 문장이 와야 한다는 점을 기억하고, 문장의 역할(일반론 vs 예시)을 구분해 읽기.\n② 진단: ‘his boss 가 kill 의 주어’라는 설명을 예문으로 오해하고 넣은 것으로 보이나, 주어진 문장은 ‘complement 의 동사가 passive 가 될 수 있다’는 내용으로, 이 위치는 ‘have causative’의 구조 설명 중 예문 분석 부분이라 어울리지 않는다. 학생은 ‘예문 분석’을 ‘일반론’으로 착각했을 수 있다. → 처방: ‘have causative’의 구조 설명 중 ‘예문 분석’ 부분과 ‘complement 의 passive 가능성’을 다룬 문장은 다르다는 점을 구분하고, 문장의 역할(구조 설명 vs 일반론)을 명확히 파악하기.\n③ 진단: ‘his boss 가 kill 하는 주체’라는 의미를 예문으로 오해하고 넣은 것으로 보이나, 주어진 문장은 ‘complement 의 동사가 passive 가 될 수 있다’는 내용으로, 이 위치는 ‘have causative’의 구조 설명 중 예문의 의미를 분석하는 부분이라 어울리지 않는다. 학생은 ‘의미 분석’을 ‘일반론’으로 착각했을 수 있다. → 처방: ‘have causative’의 구조 설명 중 ‘의미 분석’ 부분과 ‘complement 의 passive 가능성’을 다룬 문장은 다르다는 점을 구분하고, 문장의 역할(의미 분석 vs 일반론)을 명확히 파악하기.\n⑤ 진단: ‘get 과 have 의 causative 비교’를 예문과 함께 나열한 뒤라서, 주어진 문장이 들어가면 ‘complement 의 passive 가능성’을 다룬 문장이 갑자기 끼어드는 느낌을 주며 흐름이 끊긴다. 학생은 ‘예문 나열’이 끝난 뒤라서 ‘다음 문장’이 필요하다고 오판했을 수 있다. → 처방: ‘get 과 have 의 causative 비교’를 예문과 함께 나열한 뒤에는 ‘비교의 결과나 요약’이 오는 경우가 많다는 점을 기억하고, 문장의 역할(비교·요약 vs 일반론)을 구분해 읽기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
