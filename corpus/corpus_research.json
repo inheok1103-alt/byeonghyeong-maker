@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T04:02:39.469Z",
+ "updated": "2026-08-22T04:53:30.204Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T04:53:03.100Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'point(s)'는 'of'를 동반한 명사구로 결합하는 연어 패턴이 빈번하며, 'point of view'가 표준 표현임을 확인할 수 있다. 또한 'effect'는 명사·동사 구분이 필요하며, 동사일 경우 'affect'로 교정해야 한다.",
+   "rule": "'point(s)'가 주어·목적어일 때, 반드시 'of'를 포함한 명사구('point of view', 'points of interest' 등)로 확장하여 문장을 구성하도록 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T04:02:11.230Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구(noun phrase) 내 동명사/현재분사와 관사 사용 패턴이 빈번히 오류로 나타나며, 특히 'the'의 생략 또는 잘못된 사용이 일반화된 오류 유형임을 확인했다.",
    "rule": "'고유명사·국가명·언어명 앞에는 관사(the)를 붙이지 않지만, 'the Persian language'와 같이 언어가 특정 국가의 언어임을 강조할 때는 'the'를 반드시 사용한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T11:43:28.476Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "동사 뒤의 전치사 사용 오류가 빈번하며, 특히 'decrease', 'solidifies'와 같은 동사 뒤에 전치사가 불필요하게 삽입되는 패턴이 관찰된다. 또한 명사형 오류('competancy'→'competency', 'trasisional'→'transitional')도 빈번하다.",
-   "rule": "원서 코퍼스 패턴에 기반하여, 'decrease', 'solidify', 'force'와 같은 동사 뒤에 전치사를 불필요하게 삽입하는 오류를 교정하는 문제 출제 시, 해당 동사 뒤에는 전치사 없이 직접 목적어나 보어만 오도록 규칙화하여 변형 문제를 제작하라.",
    "sample": [
     "old english",
     "university press",

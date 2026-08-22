@@ -1,6 +1,95 @@
 {
- "updated": "2026-08-22T04:02:39.473Z",
+ "updated": "2026-08-22T04:53:30.207Z",
  "samples": [
+  {
+   "ts": "2026-08-22T04:51:59.288Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "EXHAUSTIVE (ig ZAWS tiv) adj thorough; rigorous; complete; painstaking • Before you use a parachute, you should ⓐ<u>examine it exhaustive</u> for defects. Once you jump, ⓑ<u>your decision is irrevocable</u>. EXHORT (ig ZORT) v to urge strongly; to give a serious warning to • ⓒ<u>The coach used her bullhorn to exhort</u> us to try harder. • The fearful forest ranger exhorted us not to go into the cave, but ⓓ<u>we did so anyway</u> and became lost in the center of the earth. The adjective is hortatory (HOR tuh tor ee). Quick Quiz #40 Match each word in the first column with its definition in the second column. ⓔ<u>Check your answers here</u>. 1. esoteric a. peculiar 2. espouse b. make worse 3. ethereal c. extremely demanding 4. euphemism d. raise high 5. evanescent e. inoffensive substitute term 6. exacerbate f. urge strongly 7. exacting g. annoy thoroughly 8. exalt h. heavenly 9. exasperate i. advocate 10. exemplify j. fleeting 11. exhaustive k. illustrate by example 12. exhort l. thorough",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [형용사부사] ⓐ: 'examine it exhaustive' → 'examine it exhaustively' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-22T04:52:27.232Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "EXHAUSTIVE (ig ZAWS tiv) adj thorough; rigorous; complete; painstaking • Before you use a parachute, you should examine it exhaustively for defects. Once you jump, your decision is irrevocable. EXHORT (ig ZORT) v to urge strongly; to give a serious warning to • The coach used her bullhorn to exhort us to try harder. • The fearful forest ranger exhorted us not to go into the cave, but we did so anyway and became lost in the center of the earth. The adjective is hortatory (HOR tuh tor ee). Quick Quiz #40 Match each word in the first column with its definition in the second column. Check your answers here. 1. esoteric a. peculiar 2. espouse b. make worse 3. ethereal c. extremely demanding 4. euphemism d. raise high 5. evanescent e. inoffensive substitute term 6. exacerbate f. urge strongly 7. exacting g. annoy thoroughly 8. exalt h. heavenly 9. exasperate i. advocate 10. exemplify j. fleeting 11. exhaustive k. illustrate by example 12. exhort l. thorough\n\n─────────\n[요약문] The passage provides (A) definitions and examples of two distinct terms, highlighting their (B) practical implications.",
+    "choices": [
+     "(A) precise classification … (B) intellectual abstraction",
+     "(A) etymological derivation … (B) linguistic obscurity",
+     "(A) practical application … (B) aesthetic evaluation",
+     "(A) semantic clarification … (B) functional consequences",
+     "(A) contextual usage … (B) theoretical abstraction"
+    ],
+    "answer": 4,
+    "explanation": "(A) semantic clarification / (B) functional consequences 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘정확한 분류’를 뜻하는 precise classification 을 골랐지만, 지문은 두 단어의 뜻과 ‘실제 적용’(practical implication)을 보여주므로 ‘분류’가 아니라 ‘의미 정리’를 다룬다. (A) precise classification 은 지문에서 다루는 ‘정확한 뜻’(semantic clarification)과 다르다. → 처방: 단어의 뜻을 정리하는 ‘의미 정리’를 (A)로 먼저 떠올리고, 그 뜻이 실제 상황에서 어떤 영향을 주는지(‘기능적 결과’를 (B)로) 확인해라.\n② 진단: ‘어원적 유래’를 뜻하는 etymological derivation 을 (A)로 골랐지만, 지문은 단어의 뜻과 ‘실제 적용’을 설명하지 ‘어원’에 대해 다루지 않는다. (B) linguistic obscurity(언어의 모호성)도 지문에서 언급되지 않는다. → 처방: 단어의 뜻을 ‘정의’와 ‘예시’로 설명하는지 확인하고, 그 뜻이 어떤 ‘기능적 결과’를 낳는지(‘기능적 결과’를 (B)로) 먼저 떠올려라.\n③ 진단: ‘실제 적용’을 (A)로 골랐지만, 지문은 단어의 뜻을 ‘정의’와 ‘예시’로 설명하는 데 집중하고 ‘미학적 평가’를 언급하지 않는다. (B) aesthetic evaluation(미학적 평가)도 지문에 없다. → 처방: 지문이 단어의 뜻을 ‘정의’와 ‘예시’로 설명하는지 확인하고, 그 뜻이 어떤 ‘기능적 결과’를 낳는지(‘기능적 결과’를 (B)로) 먼저 떠올려라.\n⑤ 진단: ‘맥락적 사용’을 (A)로 골랐지만, 지문은 단어의 뜻을 ‘정의’와 ‘예시’로 설명하는 데 집중하고 ‘이론적 추상’을 언급하지 않는다. (B) theoretical abstraction(이론적 추상)도 지문에 없다. → 처방: 지문이 단어의 뜻을 ‘정의’와 ‘예시’로 설명하는지 확인하고, 그 뜻이 어떤 ‘기능적 결과’를 낳는지(‘기능적 결과’를 (B)로) 먼저 떠올려라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-22T04:52:47.364Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": -1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] inoffensive substitute term 6.\n\nEXHAUSTIVE (ig ZAWS tiv) adj thorough; rigorous; complete; painstaking • Before you use a parachute, you should examine it exhaustively for defects. Once you jump, your decision is irrevocable. EXHORT (ig ZORT) v to urge strongly; to give a serious warning to • The coach used her bullhorn to exhort us to try harder. • The fearful forest ranger exhorted us not to go into the cave, but we did so anyway and became lost in the center of the earth. The adjective is hortatory (HOR tuh tor ee). Quick Quiz #40 Match each word in the first column with its definition in the second column. Check your answers here. make worse 3. ( ① ) extremely demanding 4. ( ② ) raise high 5. ( ③ ) urge strongly 7. ( ④ ) annoy thoroughly 8. ( ⑤ ) illustrate by example 12.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘make worse’를 ‘exhaustively’의 뜻으로 오인했다. ‘exhaustively’는 ‘철저히’로, ‘make worse’는 ‘악화시키다’로 전혀 뜻이 다르다. → 처방: ‘exhaustively’는 ‘철저히’를 뜻한다는 점에 집중하고, ‘make worse’는 ‘aggravate’임을 기억하자.\n② 진단: ‘extremely demanding’을 ‘exhort’의 뜻으로 혼동했다. ‘exhort’는 ‘강력히 권고하다’로, ‘extremely demanding’은 ‘매우 힘든’이다. → 처방: ‘exhort’는 ‘강력히 권고하다’라는 뜻임을 떠올리고, ‘extremely demanding’은 ‘arduous’임을 기억하자.\n④ 진단: ‘raise high’를 ‘exhaustively’의 뜻으로 오해했다. ‘raise high’는 ‘높이 들다’로, ‘exhaustively’는 ‘철저히’이다. → 처방: ‘exhaustively’는 ‘철저히’라는 뜻임을 떠올리고, ‘raise high’는 ‘elevate’임을 기억하자.\n⑤ 진단: ‘annoy thoroughly’를 ‘exhaustively’의 뜻으로 오인했다. ‘annoy thoroughly’는 ‘매우 짜증나게 하다’로, ‘exhaustively’는 ‘철저히’이다. → 처방: ‘exhaustively’는 ‘철저히’라는 뜻임을 떠올리고, ‘annoy thoroughly’는 ‘vex’임을 기억하자.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-22T04:00:53.658Z",
    "type": "복합세트",
@@ -252,92 +341,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Repeated exposure to vocabulary through contextual stories strengthens long-term retention in expanding one’s vocabulary.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 단어 반복이 어휘 확장에 '필수 조건'임을 강조하지만, '무조건 시행하는 것만으로는 부족하다'는 한계는 언급하지 않음. 학생은 '필수 조건'과 '충분 조건'을 혼동한 듯. → 처방: 문제 풀이 시, 지문의 핵심 주장(반복이 핵심 방법임을 강조한 부분)을 정확히 짚고, 선지의 '한계' 언급 여부를 확인할 것.\n② 진단: 지문은 단어 반복 학습의 효과를 '분명한 사실'로 받아들이는 것이 아니라, '반복이 어휘 확장에 도움이 된다'는 주장을 제시함. 학생은 '사실'과 '주장'을 혼동한 듯. → 처방: 글의 주장을 '사실'로 받아들이기보다는, 지문이 주장하는 바가 무엇인지 정확히 파악할 것.\n③ 진단: 지문은 단어 반복의 중요성을 강조하지만, '무한 반복해야만'이라는 극단적인 표현은 없음. 학생은 지문의 '강조'와 '과장된 일반화'를 혼동한 듯. → 처방: 선지의 '과장된 일반화' 여부를 판단할 때, 지문에 제시된 극단적 표현(예: '무한 반복')이 있는지 확인할 것.\n④ 진단: 지문은 단어 반복이 어휘 습득에 '도움이 된다'는 주장을 하고, '도움이 되지 않는다'는 주장은 반대됨. 학생은 지문의 주장을 정확히 읽지 못한 듯. → 처방: 글의 주장을 반대로 해석하지 않도록, 지문의 핵심 문장(예: '반복이 어휘 확장에 도움이 된다')을 정확히 짚을 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Repeated exposure to vocabulary through contextual stories strengthens long-term retention in expanding one’s vocabulary.]"
-   }
-  },
-  {
-   "ts": "2026-08-21T22:44:32.277Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "WEEK 33 DAY 5 REVIEW While ⓐ<u>each day’s story</u> has five new words, there are many others that are repeated from previous weeks. ⓑ<u>These words are placing</u> within the stories ⓒ<u>so that you might practice</u> your grasp of their meanings. Repetition ⓓ<u>will help guarantee</u> that these words will be firmly fixed ⓔ<u>as part of your ever-expanding vocabulary</u>. REVIEW WORDS DEFINITIONS 1.abjure a. stir up, instigate 2.allay b. disorderly, carelessly 3.complacent c. regretful, confessing guilt 4.connoisseur d. abstain from, renounce 5.debilitate e. weaken 6.deter f. self-satisfied 7.discreet g. discourage, hinder 8.evanescent h. bent, inclination, disposition 9.foment i. sad, gloomy 10.glean j. identical, equivalent 11.impetuous k. something hunted or pursued 12.occult l. watchful, shrewd 13.penitent m. supernatural, mysterious, secret 14.propensity n. impulsive 15.quarry o. rebuke, reprimand* 16.reproach p. momentary, passing, fleeting 17.slovenly q. prudent,* careful, cautious 18.somber r. collect, gather 19.tantamount s. expert 20.wary t. soothe, calm",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 2,
-    "explanation": "[어법: 준동사] 정답 ⓑ의 'These words are placing'는 'These words are placed'로 고쳐야 어법상 옳다.\n[오답 진단·처방]\n① 진단: ⓐ는 'each day’s story'가 주어이고 'has'가 동사라서 올바르지만, 학생은 'each day’s'를 'each day is'로 오해해 동사 형태를 틀리게 보았을 수 있음. → 처방: 주어와 동사의 수 일치를 확인하고, 'each'가 단수 명사를 이끈다는 규칙을 다시 공부하라.\n③ 진단: ⓒ는 'so that' 절이 올바르게 쓰였지만, 학생은 'might practice'가 조동사+원형동사라서 틀렸다고 오해했을 수 있음. → 처방: 'so that' 뒤에는 'can/may/might + 동사원형'이 오는 규칙을 익히고, 조동사의 쓰임을 다시 확인하라.\n④ 진단: ⓓ는 'will help guarantee'가 올바른 미래 시제와 동사 형태지만, 학생은 'guarantee'가 동사가 아니라 명사로 오해했을 수 있음. → 처방: 동사 'guarantee'가 '~을 보장하다'라는 뜻임을 기억하고, 동사 원형을 확인하는 습관을 들여라.\n⑤ 진단: ⓔ는 'as part of'가 전치사구로 올바르게 쓰였지만, 학생은 'ever-expanding'이 형용사로 오해해 'expanding'이 동사인 줄 알았을 수 있음. → 처방: 'ever-expanding'이 현재분사(형용사)로 쓰인다는 점을 기억하고, 분사와 동사를 구분하는 연습을 하라.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T21:42:51.555Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "itinerant lifestyle and itinerary as planned travel route",
-     "itinerant lifestyle and itinerary as temporary deviations",
-     "itinerant lifestyle and itinerary as outcomes of travel planning",
-     "itinerant lifestyle and itinerary as inherent traits of human mobility",
-     "itinerant lifestyle and itinerary as sporadic elements in travel"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Itinerant lifestyle and itinerary as planned travel route'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘temporary deviations’는 ‘일시적인 탈선’이라는 뜻인데, 지문에서 itinerant 는 ‘이동하는’, itinerary 는 ‘계획된 여행 경로’라는 뜻으로 ‘탈선’이란 뜻은 전혀 없다.Quick Quiz #53에서 itinerant 는 8번(h. moving from place to place), itinerary 는 3번(c. planned trip route)으로 정의되어 있다. → 처방: ‘itinerant’는 ‘이동하는’, ‘itinerary’는 ‘계획된 여행 경로’라는 뜻을 기억하고, 선지를 고를 때는 지문 속 정의와 일치하는지 확인할 것.\n③ 진단: ‘outcomes of travel planning’이라는 말은 ‘여행 계획의 결과’라는 뜻인데, itinerant 는 ‘이동하는’(움직이는 상태 자체), itinerary 는 ‘계획된 경로’(계획의 결과)로, ‘결과’라는 뜻은 itinerary 에만 해당하고 itinerant 에는 맞지 않다. → 처방: ‘itinerant’는 ‘움직이는 상태’를, ‘itinerary’는 ‘계획된 경로’를 가리킨다는 점을 분명히 구분하고, 선지를 고를 때는 각 단어의 핵심 의미를 떠올릴 것.\n④ 진단: ‘inherent traits of human mobility’라는 말은 ‘인간의 이동성 자체의 타고난 특징’이라는 뜻인데, itinerant 는 ‘이동하는’, itinerary 는 ‘계획된 경로’로, ‘타고난 특징’이란 뜻은 neither 단어에 해당하지 않는다. → 처방: ‘inherent’라는 단어가 나오면 ‘고유한, 타고난’이라는 뜻임을 떠올리고, 지문 속 itinerant 와 itinerary 가 그런 뜻을 담고 있는지 확인할 것.\n⑤ 진단: ‘sporadic elements’라는 말은 ‘산발적인 요소’라는 뜻인데, itinerant 는 ‘이동하는’, itinerary 는 ‘계획된 경로’로, ‘산발적’이라는 뜻은 neither 단어에 맞지 않는다. → 처방: ‘sporadic’이란 단어가 나오면 ‘산발적인’이라는 뜻임을 떠올리고, 지문 속 itinerant 와 itinerary 가 그런 뜻을 담고 있는지 확인할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Itinerant lifestyle and itinerary as planned travel route]"
-   }
-  },
-  {
-   "ts": "2026-08-21T21:43:02.987Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 여행 일정이 있는 라이프스타일은 장소를 자주 이동하는 것을 포함합니다.\n주어진 단어: ( place / itinerant / lifestyle )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] An itinerant lifestyle involves moving from place to place frequently. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
