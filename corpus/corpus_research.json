@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T17:46:02.378Z",
+ "updated": "2026-08-22T18:55:21.598Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T18:54:52.992Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'so'나 'except that'와 같은 접속사 다음에 주어+동사 구조가 생략된 경우가 빈번히 관찰되었다. 이는 학습자들이 접속사 뒤의 절에서 주어와 조동사를 반복하는 오류를 범하는 주요 원인으로 작용한다.",
+   "rule": "CEFR B1 수준의 내신 문항에서 접속사(so, but, except that 등) 뒤 절의 주어와 조동사를 생략하지 않도록 명시적으로 요구하는 문장을 출제하라. 예: 'The weather was bad, so (it) was canceled.' → 'The weather was bad, so it was canceled.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T17:45:25.802Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'명사 + 전치사 + 명사' 또는 '동사 + 전치사 + 명사' 구조에서 전치사 오용이 빈번하며, 특히 'to'가 'of', 'for', 'with' 등으로 대체되어야 하는 경우가 많다.",
    "rule": "'to'가 'of', 'for', 'with' 등으로 대체되어야 하는 전치사 오용 패턴을 문장 내 명사구(명사 + 전치사 + 명사)에서 100% 검증하고, 오답으로 'to' 사용을 강제하는 선택지를 반드시 포함한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T03:12:23.695Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구(noun phrase)의 수 일치와 시제 일치가 문법 오류의 핵심 패턴으로 드러난다. 직접목적어(direct object) 구조에서 관사(a/the) 생략이나 시제 불일치가 빈번하다.",
-   "rule": "원서 패턴을 반영하여 '명사구(noun phrase) + 복수 동사' 구조에서 수 일치를 반드시 점검하고, 'take/be taking'과 같은 진행형 시제 사용 시 관사(a/the) 포함 여부를 확인하라.",
    "sample": [
     "old english",
     "university press",
