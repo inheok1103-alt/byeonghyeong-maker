@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T14:45:55.853Z",
+ "updated": "2026-08-22T15:38:15.674Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T15:37:44.516Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "'reason'·'student'·'think'·'ideas' 등 단수형 명사가 복수형으로 오류가 빈번하며, 'most time'은 'most of the time'로, 'not use'는 'not to use'·'for not using'로 수정이 필요하다. 또한 소유격·시제·동사 일치 오류가 반복된다.",
+   "rule": "'There are several [복수 명사].'는 '[복수 명사]가 있다'로 해석되므로, 'reason'·'student'·'idea' 등 단수형 명사는 반드시 복수형('reasons'·'students'·'ideas')으로 수정하라. 또한 'most time'은 'most of the time'으로, 'not use'는 'not to use' 또는 'for not using'으로 재구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T14:45:29.050Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'to + 동사원형' 구문이 'for + 동명사'보다 더 자연스러운 영어 표현으로 자주 쓰인다. 또한 'make + 목적어 + 보어' 구조가 'make + 목적어 + to + 동사원형'보다 더 간결하고 빈번하다.",
    "rule": "'~하기 위해'를 표현할 때는 'for + 동명사' 대신 'to + 동사원형'을 사용하도록 오답지를 구성하라. 예를 들어 'for alive' → 'to live', 'for working' → 'to run'으로 변형하는 문제를 출제한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T22:45:46.177Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 '법률/언어 관련 명사'는 고유명사화·특수명사화 경향이 강하며, 대문자 표기가 일반화되어 있다. 또한 '부사+동사' 구조에서 동사원형·to 부정사 전환 시 문법적 오류가 빈발한다.",
-   "rule": "법률·언어·지역·기관 관련 명사(예: italian law, english grammar, new york, university press)는 고유명사화 규칙에 따라 항상 대문자로 표기하도록 출제하며, 'A and began to B' 구조는 'A and began B-ing/to B'로 통일성을 요구하는 문법 테스트를 포함시킨다.",
    "sample": [
     "old english",
     "university press",
