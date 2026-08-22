@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T19:39:36.246Z",
+ "updated": "2026-08-22T20:43:00.084Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T20:42:34.395Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거 시제 동사(needs→need)와 목적어 수 일치 오류, 수동태 미사용 오류, 복합명사/형용사 오류(extra hardwork→extra hard, aswell→as well)가 빈번하게 관찰된다.",
+   "rule": "주어의 수에 맞춰 동사의 단수/복수형을 정확히 사용하고, 수동태가 필요한 문맥(be controlled 등)에서는 능동태 대신 수동태를 적용하도록 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T19:39:05.124Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "동사 원형과 동사-3인칭 단수 현재형(-s)의 구분이 실제 오류에서 빈번하게 발생하며, 특히 'will + 동사원형' 구조에서 '-s'가 잘못 추가되는 패턴이 다수 확인된다.",
    "rule": "조동사(will, can, must 등) 뒤에는 동사원형을 사용하므로, will/can/must + 동사원형(-s 없이) 구조가 틀린지 확인하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T04:56:24.587Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "영어에서 'have a glance at/of'와 같은 고정 연어는 전치사 선택이 문법적 오류로 이어질 수 있으며, 감정형용사('furious')는 주제와 대상을 혼동하지 말고 'serious' 등으로 대체해야 한다.",
-   "rule": "문장 내 'have + 명사' 구조(예: have a glance, have a look)의 경우, 반드시 해당 연어의 표준 전치사('at/of/on')를 사용했는지 검토하고, 감정형용사가 주제와 대상을 혼동하지 않도록 'serious/important' 등으로 대체하는지 확인하라.",
    "sample": [
     "old english",
     "university press",
