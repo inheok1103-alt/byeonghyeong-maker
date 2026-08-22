@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-22T05:46:00.392Z",
+ "updated": "2026-08-22T07:03:12.820Z",
  "samples": [
+  {
+   "ts": "2026-08-22T07:01:47.765Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "안정적 인간관계가 전제되지 않으면 전체주의 체제가 출현할 가능성이 높아진다.",
+     "전체주의 체제는 정치적 반대자 간의 연대를 원천적으로 금지한다.",
+     "전체주의 체제는 사회 내 모든 유형의 인간관계를 완전히 붕괴시킨다.",
+     "전체주의 체제는 때로 사회에 안정적인 인간관계를 부분적으로 허용할 수 있다.",
+     "전체주의 체제는 사회가 안정적인 인간관계를 유지하는 것을 원천적으로 차단한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Totalitarian systems prevent societies from maintaining stable social relationships.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘안정적 인간관계가 전제되지 않으면 전체주의 체제가 출현할 가능성이 높아진다’는 선지는 인과관계를 반대로 오독했다. 지문은 ‘전체주의 체제가 안정적 인간관계를 허용하지 않는다’고만 설명하지, ‘안정적 인간관계가 전제되지 않으면 전체주의가 생긴다’는 내용은 없다. → 처방: ‘전체주의가 안정적 인간관계를 허용하지 않는다’는 지문의 핵심만 정확히 짚고, 인과관계가 반대일 수 있음을 주의하라.\n② 진단: ‘정치적 반대자 간의 연대를 원천적으로 금지한다’는 선지는 지문의 범위를 좁혔다. 지문은 ‘모든 유형의’ 인간관계를 언급하며, 반대자 연대만 금지하는 것이 아님을 혼동했다. → 처방: ‘모든 유형의 인간관계’를 강조하는 지문에서 ‘일부’가 아닌 ‘전체’를 떠올리며 읽어라.\n③ 진단: ‘사회 내 모든 유형의 인간관계를 완전히 붕괴시킨다’는 선지는 과장된 해석이다. 지문은 ‘안정적 사회관계’를 ‘허용하지 않는다’고만 말하고, ‘완전히 붕괴시킨다’는 표현은 없다. → 처방: ‘허용하지 않는다’와 ‘완전히 붕괴시킨다’를 혼동하지 말고, 지문의 정확한 표현에 집중하라.\n④ 진단: ‘때로는 안정적인 인간관계를 부분적으로 허용할 수 있다’는 선지는 지문의 의미를 반대로 읽었다. 지문은 ‘원천적으로 차단한다’고만 설명하지, ‘허용할 수 있다’는 내용은 없다. → 처방: ‘원천적으로 차단한다’는 표현을 놓치지 말고, ‘때로는 허용한다’는 선지가 오답임을 기억하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Totalitarian systems prevent societies from maintaining stable social relationships.]"
+   }
+  },
+  {
+   "ts": "2026-08-22T07:02:31.624Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 4번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "권위주의 체제가 사회의 안정된 관계 형성을 방해하려고",
+     "안정된 사회 관계를 유지하기 위해 권위주의 체제를 도입하려고",
+     "권위주의 체제가 개인의 사생활을 지나치게 통제하려고",
+     "권위주의 체제가 사회의 안정된 관계를 근본적으로 차단하려고",
+     "권위주의 체제가 때때로 사회의 안정된 관계를 인정하려고"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'Totalitarianism prevents stable social relationships.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: Totalitarianism prevents stable social relationships.]\n[오답 진단·처방]\n① 진단: 지문 첫 문장에서 'cannot allow'가 '방해하려고'로 오해. '안정된 관계를 허용하지 않는다'는 '방해'와는 다르며, '근본적으로 차단'의 의미와 혼동됨. → 처방: 지문에서 'cannot allow'가 '근본적으로 차단'의 의미를 담고 있는지 확인하고, '방해'와 '차단'의 차이를 명확히 구분하기.\n② 진단: 지문에서 'cannot allow'가 '도입하려고'로 오해. '안정된 관계를 유지하기 위해'라는 목적론적 해석을 잘못 적용함. → 처방: 지문에서 'cannot allow'가 '불가능하다'는 사실을 기술한 것인지, '목적'을 나타내는 것인지 확인하기.\n③ 진단: 지문에서 'totalitarian systems'의 특징을 '개인의 사생활 통제'로 한정하여 오독. 지문은 '안정된 사회 관계'에 초점을 맞추고 있음. → 처방: 지문에서 다루는 핵심 주제가 '사회 관계'임을 확인하고, '사생활 통제'는 부차적 요소일 수 있음을 인식하기.\n⑤ 진단: 지문에서 'cannot allow'가 '때때로 인정'으로 오해. 'cannot'의 강경한 부정 의미를 '부분적 허용'으로 왜곡함. → 처방: 'cannot'과 'may allow' 등 표현의 강도를 비교하여 부정의 정도를 정확히 파악하기."
+   }
+  },
   {
    "ts": "2026-08-22T05:45:24.082Z",
    "type": "네모어법ABC",
@@ -287,60 +357,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] fictive (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T02:01:22.916Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "Given the assumptions we made in chapter 7, the bracketed TP in (32a) is selected by the C-constituent that, and the head T of TP is the auxiliary has which carries a complete set of person/number agreement features. By contrast, the TP in the raising structure in (32b) is not selected by C, and its head T constituent to is defective in that it does not carry a complete set of agreement features. Reasoning thus, Chomsky concludes that the person/number agreement features of T must originate on C, and subsequently ‘be inherited by’ or ‘be handed over to’, or ‘percolate down onto’ (three different metaphors expressing the same idea) the T constituent immediately beneath C. Chomsky argues that in the same way, the agreement features carried by a transitive V (which enable it to assign accusative case to a goal within its domain) are inherited from the light-verb which is the head of the relevant vP phase (transitive vPs being phases). One reason for thinking this can be illustrated in relation to the following contrast:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T23:41:36.409Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(76%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 2번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "불규칙한 모양의 고체를 측정할 때 물체를 물에 담가 displacing 하는 물의 양을 무게로 계산하는 방법이 있다.",
-     "불규칙한 모양의 고체의 부피를 측정할 때는 물체를 물에 담가 displacing 하는 물의 부피를 측정하는 방법이 일반적이다.",
-     "불규칙한 모양의 고체의 부피는 물체를 물에 담가 displacing 하는 물의 부피를 계산하는 방법으로만 정확히 측정할 수 있다.",
-     "불규칙한 모양의 고체를 측정할 때 물체를 물에 담가 displacing 하는 물의 부피를 계산하는 방법은 때때로 유용한 방법에 속한다.",
-     "불규칙한 모양의 고체를 측정할 때 가장 신뢰할 수 있는 방법은 물체를 물에 담가 displacing 하는 물의 부피를 계산하는 것이다."
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'The most reliable method to measure the volume of an irregular solid is by water displacement.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The most reliable method to measure the volume of an irregular solid is by water displacement.]\n[오답 진단·처방]\n① 진단: 지문에서 'displacing 하는 물의 양'을 '무게'로 오독했으며, 지문은 '부피'를 측정한다고 명시함. → 처방: 지문에서 'displacing'은 '물의 부피'를 뜻한다는 점을 기억하고, 무게와 부피를 혼동하지 않도록 주의하기.\n③ 진단: 지문은 '일반적인 방법'이라고만 설명했는데, '정확히 측정할 수 있는 유일한 방법'으로 오해함. → 처방: 지문에서 '가장 좋은 방법' 또는 '일반적인 방법'이라는 표현을 찾고, '유일'이나 '정확히'라는 단어가 오용되지 않도록 주의하기.\n④ 진단: 지문에서 '일반적인 방법'으로 설명했는데, '때때로 유용한 방법'으로 오독했으며, '일반적'과 '때때로'의 차이를 혼동함. → 처방: 지문에서 '일반적인 방법'이란 표현을 정확히 이해하고, '때때로'는 '드물게' 또는 '특별한 경우'를 뜻한다는 점을 기억하기.\n⑤ 진단: 지문은 '가장 좋은 방법'이라고만 설명했는데, '가장 신뢰할 수 있는 방법'으로 오해하며, '가장 좋은'과 '가장 신뢰할 수 있는'의 차이를 혼동함. → 처방: 지문에서 '가장 좋은 방법'이란 표현을 '가장 신뢰할 수 있는 방법'으로 바꾸어 해석하지 않도록 주의하기."
    }
   }
  ]
