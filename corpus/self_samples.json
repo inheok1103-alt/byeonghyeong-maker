@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-22T11:38:07.130Z",
+ "updated": "2026-08-22T13:05:00.950Z",
  "samples": [
+  {
+   "ts": "2026-08-22T13:02:46.008Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: p)\n[영영풀이] (grammar) The part of the sentence (or clause) which states something about the subject or the object of the sentence.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] predicate (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-22T13:03:24.317Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "형용사가 술어의 의미를 구체화하는 한정적 역할을 한다는 점에서, 부사 또한 동일한 역할을 수행할 수 있어 형용사의 역할이 고유하지 않다.",
+     "형용사는 술어의 의미를 구체화하는 한정적 역할을 하지만, 술어의 의미는 주어에 의해 결정되는 경우가 더 많다.",
+     "형용사가 술어의 의미를 구체화하는 한정적 역할을 하므로, 형용사를 생략한 문장들은 문법적 오류를 일으킨다.",
+     "형용사는 술어의 의미를 구체화하는 한정적 역할을 하지만, 명사나 동사와 결합하여 새로운 의미를 창조하는 경우도 존재한다.",
+     "형용사는 술어의 의미를 구체화하는 한정적 역할을 한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 '형용사는 한정사 역할을 하며 술어(predicate)를 수식하여 술어의 의미를 구체화한다.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 형용사의 '한정적 역할'만 설명했을 뿐, 부사의 역할에 대해서는 언급하지 않았다. 학생은 지문에 없는 내용을 추가해 형용사의 역할이 고유하지 않다고 오해했다. → 처방: 형용사의 역할에만 집중해 지문에서 설명한 내용만으로 답을 찾아야 한다.\n② 진단: 지문은 형용사가 술어의 의미를 구체화한다고 설명했지만, 주어에 의해 술어의 의미가 결정된다는 내용은 없다. 학생은 지문에 없는 내용을 연상해 오독했다. → 처방: 지문에 나온 내용만 근거로 삼아, 형용사의 역할에 초점을 맞춰야 한다.\n③ 진단: 지문은 형용사의 역할에 대해 설명했을 뿐, 형용사를 생략한 문장의 문법적 오류 여부에 대해서는 언급하지 않았다. 학생은 지문 밖의 내용을 가정해 오답을 선택했다. → 처방: 지문에 있는 정보만으로 답을 찾고, 문법적 오류 여부는 고려하지 말아야 한다.\n④ 진단: 지문은 형용사가 술어의 의미를 구체화한다고 설명했지만, 명사나 동사와 결합해 새로운 의미를 창조한다는 내용은 없다. 학생은 지문에 없는 내용을 연상해 오해했다. → 처방: 지문에 나온 형용사의 역할에만 집중해 답을 찾아야 한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: 형용사는 한정사 역할을 하며 술어(predicate)를 수식하여 술어의 의미를 구체화한다.]"
+   }
+  },
   {
    "ts": "2026-08-22T11:36:57.890Z",
    "type": "빈칸(어구)",
@@ -298,76 +352,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Totalitarian systems prevent societies from maintaining stable social relationships.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘안정적 인간관계가 전제되지 않으면 전체주의 체제가 출현할 가능성이 높아진다’는 선지는 인과관계를 반대로 오독했다. 지문은 ‘전체주의 체제가 안정적 인간관계를 허용하지 않는다’고만 설명하지, ‘안정적 인간관계가 전제되지 않으면 전체주의가 생긴다’는 내용은 없다. → 처방: ‘전체주의가 안정적 인간관계를 허용하지 않는다’는 지문의 핵심만 정확히 짚고, 인과관계가 반대일 수 있음을 주의하라.\n② 진단: ‘정치적 반대자 간의 연대를 원천적으로 금지한다’는 선지는 지문의 범위를 좁혔다. 지문은 ‘모든 유형의’ 인간관계를 언급하며, 반대자 연대만 금지하는 것이 아님을 혼동했다. → 처방: ‘모든 유형의 인간관계’를 강조하는 지문에서 ‘일부’가 아닌 ‘전체’를 떠올리며 읽어라.\n③ 진단: ‘사회 내 모든 유형의 인간관계를 완전히 붕괴시킨다’는 선지는 과장된 해석이다. 지문은 ‘안정적 사회관계’를 ‘허용하지 않는다’고만 말하고, ‘완전히 붕괴시킨다’는 표현은 없다. → 처방: ‘허용하지 않는다’와 ‘완전히 붕괴시킨다’를 혼동하지 말고, 지문의 정확한 표현에 집중하라.\n④ 진단: ‘때로는 안정적인 인간관계를 부분적으로 허용할 수 있다’는 선지는 지문의 의미를 반대로 읽었다. 지문은 ‘원천적으로 차단한다’고만 설명하지, ‘허용할 수 있다’는 내용은 없다. → 처방: ‘원천적으로 차단한다’는 표현을 놓치지 말고, ‘때로는 허용한다’는 선지가 오답임을 기억하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Totalitarian systems prevent societies from maintaining stable social relationships.]"
-   }
-  },
-  {
-   "ts": "2026-08-22T07:02:31.624Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 4번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "권위주의 체제가 사회의 안정된 관계 형성을 방해하려고",
-     "안정된 사회 관계를 유지하기 위해 권위주의 체제를 도입하려고",
-     "권위주의 체제가 개인의 사생활을 지나치게 통제하려고",
-     "권위주의 체제가 사회의 안정된 관계를 근본적으로 차단하려고",
-     "권위주의 체제가 때때로 사회의 안정된 관계를 인정하려고"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'Totalitarianism prevents stable social relationships.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: Totalitarianism prevents stable social relationships.]\n[오답 진단·처방]\n① 진단: 지문 첫 문장에서 'cannot allow'가 '방해하려고'로 오해. '안정된 관계를 허용하지 않는다'는 '방해'와는 다르며, '근본적으로 차단'의 의미와 혼동됨. → 처방: 지문에서 'cannot allow'가 '근본적으로 차단'의 의미를 담고 있는지 확인하고, '방해'와 '차단'의 차이를 명확히 구분하기.\n② 진단: 지문에서 'cannot allow'가 '도입하려고'로 오해. '안정된 관계를 유지하기 위해'라는 목적론적 해석을 잘못 적용함. → 처방: 지문에서 'cannot allow'가 '불가능하다'는 사실을 기술한 것인지, '목적'을 나타내는 것인지 확인하기.\n③ 진단: 지문에서 'totalitarian systems'의 특징을 '개인의 사생활 통제'로 한정하여 오독. 지문은 '안정된 사회 관계'에 초점을 맞추고 있음. → 처방: 지문에서 다루는 핵심 주제가 '사회 관계'임을 확인하고, '사생활 통제'는 부차적 요소일 수 있음을 인식하기.\n⑤ 진단: 지문에서 'cannot allow'가 '때때로 인정'으로 오해. 'cannot'의 강경한 부정 의미를 '부분적 허용'으로 왜곡함. → 처방: 'cannot'과 'may allow' 등 표현의 강도를 비교하여 부정의 정도를 정확히 파악하기."
-   }
-  },
-  {
-   "ts": "2026-08-22T05:45:24.082Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "WEEK 25 DAY 5 REVIEW Week by week your (A) [words-power / word-power] is being built. It’s like putting money in the bank. Remember, in our language there may be many synonyms and related meanings for each word. (B) [to know one / Knowing one] synonym is good, but you will reap greater benefits from knowing several. Below is the matching review for this week. REVIEW WORDS DEFINITIONS 1.aegis a. trembling, shaking with old age 2.awesome b. regret 3.conflagration c. bursting out 4.congenial d. infirm, weak as a result of old age 5.debris e. wise man, philosopher 6.deplorable f. ruins, fragments 7.detriment g. weak, unimportant 8.dispersed h. protection, sponsorship, shield 9.doddering i. agreeable, sympathetic 10.(C) [erupting / eruption] j. broken up, scattered, spread 11.hoard k. sad, pitiable 12.imbibe l. hurt, damage, injury 13.initiate m. drink 14.longevity n. great fire 15.obliterate o. manly, masterful 16.puny p. inspiring terror, weird 17.rue q. set going, start 18.sage r. accumulate, save, store up 19.senile s. long duration of life 20.virile t. wipe out, erase",
-    "choices": [
-     "(A) words-power - (B) Knowing one - (C) eruption",
-     "(A) words-power - (B) to know one - (C) eruption",
-     "(A) word-power - (B) to know one - (C) erupting",
-     "(A) word-power - (B) Knowing one - (C) erupting",
-     "(A) word-power - (B) Knowing one - (C) eruption"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) word-power - (B) Knowing one - (C) eruption. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘word-power’를 ‘words-power’로 잘못 읽어 복수형으로 오해했고, ‘Knowing one’을 ‘to know one’으로 오해해 동명사와 부정사의 구분을 못 했으며, ‘eruption’을 ‘erupting’으로 동사로 오해해 문맥에 맞지 않게 썼다. → 처방: ‘word-power’는 하나의 단어로 쓰이는 복합명사임을 기억하고, ‘Knowing one’은 동명사 구로 ‘to know one’은 부정사 구로 구분해 쓰자. ‘eruption’은 명사로 문맥에 맞게 써야 한다.\n② 진단: ‘words-power’를 ‘word-power’로 단수로 오해했고, ‘to know one’을 동명사 ‘Knowing one’으로 바꿔 써야 하는데도 그대로 썼다. ‘eruption’을 ‘erupting’으로 동사로 오해했다. → 처방: ‘word-power’는 단수 복합명사로 쓰이는지 확인하고, 동명사와 부정사의 차이를 확실히 익히자. ‘eruption’은 명사로 문장에서 명사 역할을 해야 한다.\n③ 진단: ‘word-power’를 제대로 썼지만, ‘to know one’을 동명사 ‘Knowing one’으로 바꿔 써야 하는데도 부정사로 썼다. ‘erupting’을 동사로 오해해 문맥에 맞지 않게 썼다. → 처방: ‘Knowing one’이 동명사 구로 문장에서 주어나 목적어 역할을 하는지 확인하고, ‘eruption’은 명사로 써야 한다.\n⑤ 진단: ‘word-power’를 제대로 썼지만, ‘Knowing one’을 동명사로 썼는데도 ‘eruption’을 ‘erupting’으로 동사로 오해해 문맥에 맞지 않게 썼다. → 처방: ‘eruption’이 문장에서 명사로 쓰이는지 확인하고, 동사와 명사의 구분을 확실히 하자."
    }
   }
  ]

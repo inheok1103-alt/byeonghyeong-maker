@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T11:38:07.126Z",
+ "updated": "2026-08-22T13:05:00.946Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T13:04:16.616Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거형/현재형 혼용, 품사 오류, 관계대명사 오용이 빈번하며, 특히 'be 동사 + 형용사' 구조에서 오류가 많다.",
+   "rule": "주어와 동사의 수 일치와 시제 일치를 우선 점검한 뒤, 'be 동사 + 형용사' 구조(예: 'be save' → 'be safe')에서 형용사의 정확한 형태를 확인하도록 문항을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T11:37:40.991Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "이 코퍼스에서 'give rise to'와 같은 동사+명사 연어는 관사(a/the)의 사용이 필수적이며, 'in possession of'는 전치사+명사+전치사의 고정 구조로 관사 생략이 불가능하다는 패턴을 확인할 수 있다. 또한 'would like to'는 동사+to부정사의 연어로서 관사 없이도 자연스러운 반면, 'another one'은 'the other one'과의 혼동 가능성이 높은 연어임을 알 수 있다.",
    "rule": "'동사+명사' 또는 '전치사+명사+전치사'로 구성된 고정 연어(예: give rise to, in possession of)에서는 관사의 생략이나 오용을 오답으로 설계하며, 특히 'another one'은 'the other one'과의 혼동을 유도하는 오답으로 활용한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T19:47:55.057Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'point of views'처럼 복수형이면서도 의미상 단수 개념인 경우 'point of view'로 단수화해야 하며, 'caused her situation to be worse'는 'to be'를 생략하고 동사원형 'worsen'으로 대체하는 것이 자연스럽다. 또한 문장 시작 시 주어 없이 동사만 오는 경우(예: 'Second the amount...')는 콤마로 분리하여 완전한 절을 구성해야 한다.",
-   "rule": "복합명사(예: point of view)나 의미상 단수 개념의 복수형 표현은 단수형으로 통일하며, 'to be + 형용사' 구문은 'to + 동사원형'으로 대체하고, 문장 시작 시 주어 없이 오는 동사는 콤마로 분리하여 완전한 절로 재구성하라.",
    "sample": [
     "old english",
     "university press",
