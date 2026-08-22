@@ -1,6 +1,94 @@
 {
- "updated": "2026-08-22T07:51:38.970Z",
+ "updated": "2026-08-22T08:51:22.505Z",
  "samples": [
+  {
+   "ts": "2026-08-22T08:50:12.998Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 2건 · 솔버교정: 솔버 2/2 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "conceptualizing various forms of friendliness",
+     "distinguishing between friendliness and unfriendliness",
+     "friendliness arising from grammatical rules of plural forms",
+     "accepting all plural nouns as conceptual categories",
+     "friendlinesses always existing in multiple distinct types"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Conceptualises different types of friendlinesses.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건·전제 누락·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Conceptualises different types of friendlinesses.]\n[오답 진단·처방]\n① 진단: 지문에서 'I'는 friendlinesses 가 다양한 형태의 친절함을 뜻할 수 있음을 설명하며, '개념화'를 강조하지 'I'의 심경 변화로 보기는 어렵다. 학생은 'conceptualizing'이라는 단어를 보고 '개념화' 자체에만 주목한 듯하다. → 처방: 글의 흐름을 따라 'I'의 심경 변화가 드러나는 부분을 찾기 위해, 지문에서 'I'가 어떤 생각을 하며 글을 썼는지 집중해서 읽기.\n② 진단: 지문은 friendliness 와 unfriendliness 의 구분이 아니라, friendliness 의 다양한 형태(friendlinesses)를 설명한다. 학생은 '구분'이라는 단어에 이끌려 오해한 듯하다. → 처방: 지문의 핵심 주제가 '다양한 형태의 friendliness'임을 기억하고, 선지가 그 주제와 맞는지 확인하기.\n④ 진단: 지문은 모든 복수 명사가 개념적 범주로 받아들여지는 것이 아니라, friendlinesses 처럼 특수한 경우에만 해당됨을 설명한다. 학생은 '항상'이라는 단어를 무시하고 오독한 듯하다. → 처방: 선지의 '항상'이나 '모든' 같은 절대적 표현이 있는지 확인하고, 지문에서 그런 말이 있는지 다시 한번 살펴보기.\n⑤ 진단: 지문은 friendlinesses 가 여러 형태일 수 있음을 설명하지만, '항상' 존재하는 것은 아니다. 학생은 '항상'이라는 단어를 보지 못하고 오독한 듯하다. → 처방: 선지의 강약 조절(항상, 반드시 등)을 주의 깊게 읽고, 지문에서 그런 말이 있는지 확인하기."
+   }
+  },
+  {
+   "ts": "2026-08-22T08:50:41.319Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 100,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① The distinction between these two words is that while the first refers to a single thing, the second refers to more than one of them.\n② Therefore we can talk about different friendlinesses.\n③ The idea–ideas case is the most straightforward.\n④ Consider a more strange case: friendliness– friendlinesses.\n⑤ Word Categories 7 Although some of these may sound strange concepts, they are perfectly acceptable forms.\n⑥ What is strange here is not the grammatical concepts of singular or plural, but that the semantic distinction is not one typically made.\n⑦ This is the distinction between singular and plural and in general this distinction can apply to virtually all nouns.\n⑧ However, it is perfectly possible to conceptualise different types of friendliness: one can be friendly by saying good morning to someone as you pass in the street, without necessarily entering into a deeper relationship with them; other forms of friendliness may demand more of an emotional commitment.\n⑨ By contrast, consider the following, based on the words in (9): (11) conceptualises",
+    "choices": [
+     "⑤-③-①-⑦-④-⑥-⑧-②-⑨",
+     "③-⑤-①-⑦-④-⑥-⑧-②-⑨",
+     "⑤-⑦-⑨-⑧-②-①-⑥-④-③",
+     "⑤-⑦-①-⑨-②-⑧-③-④-⑥",
+     "⑤-③-①-⑦-⑥-④-⑧-②-⑨"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ⑤-③-①-⑦-④-⑥-⑧-②-⑨. 흐름: ⑤ → ③ → ① → ⑦(This) → ④ → ⑥ → ⑧(However) → ②(Therefore) → ⑨ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ⑤(일부 strange 개념도 받아들일 수 있음)가 먼저 나와야 하는데 ③(가장 쉬운 case)이 먼저 나와 있음. 또한 ②(다른 friendlinesses)가 ⑧(다른 유형의 friendliness)보다 먼저 나와야 하는데 반대임. → 처방: 글의 흐름을 따라 '이상한 개념도 받아들일 수 있음 → 가장 쉬운 예 → 단어의 단수/복수 구분 → 이상한 경우 → 그 이유가 뜻 구분이 아니라 보통 안 쓰는 구분이기 때문 → 실은 뜻으로 다른 유형 구분이 가능' 순서로 읽기.\n③ 진단: ⑤(개념 수용)가 먼저 나와야 하는데 ⑦(일반적으로 모든 명사에 적용)이 먼저 나와 있음. 또한 ⑨(예시 기반 문장)이 중간에 끼어 있어 흐름이 끊김. ②(다른 friendlinesses)가 ⑧(다른 유형의 friendliness)보다 먼저 나와 있음. → 처방: 글의 도입부(⑤)에서 strange 개념 수용 → 본론(⑦)으로 넘어가기 전에 ①(단어의 단수/복수 구분)과 ⑦을 연결해 읽기. 예시는 마지막 부분(⑨)으로 밀기.\n④ 진단: ⑤(개념 수용)가 먼저 나와야 하는데 ⑦(일반 규칙)이 먼저 나와 있음. ①(단어의 단수/복수 구분)과 ⑦이 떨어져 있음. ⑥(의미 구분이 아니라 문법 구분이 이상하다는 지적)이 ④(이상한 경우)보다 먼저 나와야 하는데 반대임. → 처방: 글의 첫 부분에서 '개념 수용 → 단어의 단수/복수 구분 → 그 규칙이 모든 명사에 적용됨 → 이상한 경우(④) → 그 이유가 뜻 구분이 아니라 문법 구분이 이상해서(⑥)' 순서로 읽기.\n⑤ 진단: ⑥(의미 구분이 아니라 문법 구분이 이상하다는 지적)이 ④(이상한 경우)보다 먼저 나와 있음. ②(다른 friendlinesses)가 ⑧(다른 유형의 friendliness)보다 먼저 나와 있음. ③(가장 쉬운 case)이 ⑤(개념 수용)보다 먼저 나와 있음. → 처방: 글의 흐름을 따라 '개념 수용 → 가장 쉬운 예(③) → 단어의 단수/복수 구분(①) → 그 규칙(⑦) → 이상한 경우(④) → 그 이유가 뜻 구분이 아니라 문법 구분이 이상해서(⑥) → 실은 뜻으로 다른 유형 구분이 가능(⑧)' 순서로 읽기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-22T08:50:53.108Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 일부 명사는 다른 의미로 복수 형태를 취할 수 있지만\n주어진 단어: ( although / nouns / plural )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Although some nouns can take plural forms with different meanings. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-22T07:01:47.765Z",
    "type": "요지",
@@ -267,96 +355,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] They move into the specifier position within CP in non-echoic questions.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-22T03:10:15.835Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": -1,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "(A) [real / Fictive] motion in Wordsworthian nature  the painterly exploitation of light and shade, who suggests that ‘the emancipation of the masses of light and shade’ helps to fill the space between concrete objects with an ‘immaterial’ and ‘incorporeal’ atmosphere. This observation, I suggest, also applies to Wordsworth’s representation of light and shadow. The movement of light and shadow in his works helps to instil the atmosphere with an (B) [animate / inanimate], mysterious and spiritual dimension. Having discussed the fictive representation of natural light and shadow, I will proceed to the fictive motion of a special light: eye light. As introduced earlier, the very act of looking is sometimes encoded as a fictive motion event, as if there is some sort of light coming from the eye, travelling along the (C) [visual / auditory] path and landing upon certain objects (see the afore-mentioned example ‘I looked into the valley’). There are also many fictive representations of eye sight in Wordsworth’s poems. Here, we shall see a particular instance of this type of fictive motion:",
-    "choices": [
-     "(A) Fictive - (B) inanimate - (C) auditory",
-     "(A) Fictive - (B) inanimate - (C) visual",
-     "(A) Fictive - (B) animate - (C) auditory",
-     "(A) real - (B) animate - (C) auditory",
-     "(A) Fictive - (B) animate - (C) visual"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) Fictive - (B) animate - (C) visual. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 ‘real’을 고른 이유는 ‘Wordsworthian nature’의 실제 움직임을 중시한 것으로 보이나, 지문은 ‘fictive motion’을 다루고 있어 오해한 것. ‘(B)’에서 ‘inanimate’를 선택한 것은 ‘mysterious and spiritual dimension’이 무생물적이라 생각한 듯. ‘(C)’에서 ‘auditory’를 고른 것은 ‘visual path’를 ‘소리’로 오해한 것. → 처방: ‘fictive motion’이란 실제 움직임이 아닌 언어 표현임을 기억하고, 지문에서 ‘light and shadow’의 움직임을 ‘의인화’하는지 확인할 것. ‘visual path’는 ‘시각적 경로’를 뜻하므로, ‘auditory’는 오답임을 명심할 것.\n② 진단: ‘(A)’에서 ‘Fictive’를 고른 것은 옳으나, ‘(B)’에서 ‘inanimate’를 선택한 이유는 ‘mysterious and spiritual’이 무생물적이라 생각한 듯. ‘(C)’에서 ‘auditory’를 고른 것은 ‘visual path’를 ‘소리’로 오해한 것. → 처방: ‘animate’는 ‘생명 있는, 살아 있는’이라는 뜻임을 기억하고, ‘mysterious and spiritual dimension’이 ‘생명 있는’ 특성을 띠는지 확인할 것. ‘visual path’는 ‘시각적 경로’를 뜻하므로, ‘auditory’는 오답임을 명심할 것.\n③ 진단: ‘(A)’에서 ‘real’을 고른 이유는 ‘Wordsworthian nature’의 실제 움직임을 중시한 것으로 보이나, 지문은 ‘fictive motion’을 다루고 있어 오해한 것. ‘(B)’에서 ‘animate’를 선택한 것은 ‘mysterious and spiritual’이 살아 있는 것처럼 느껴졌기 때문. ‘(C)’에서 ‘auditory’를 고른 것은 ‘visual path’를 ‘소리’로 오해한 것. → 처방: ‘fictive motion’이란 실제 움직임이 아닌 언어 표현임을 기억하고, 지문에서 ‘light and shadow’의 움직임을 ‘의인화’하는지 확인할 것. ‘animate’는 ‘생명 있는’을 뜻하므로, ‘mysterious and spiritual’이 살아 있는 특성을 띠는지 확인할 것. ‘visual path’는 ‘시각적 경로’를 뜻하므로, ‘auditory’는 오답임을 명심할 것.\n④ 진단: ‘(B)’에서 ‘inanimate’를 선택한 이유는 ‘mysterious and spiritual’이 무생물적이라 생각한 듯. ‘(C)’에서 ‘auditory’를 고른 것은 ‘visual path’를 ‘소리’로 오해한 것. ‘(A)’는 정답과 같으나, 나머지 두 항목에서 오류가 있음. → 처방: ‘animate’는 ‘생명 있는’이라는 뜻임을 기억하고, ‘mysterious and spiritual dimension’이 살아 있는 특성을 띠는지 확인할 것. ‘visual path’는 ‘시각적 경로’를 뜻하므로, ‘auditory’는 오답임을 명심할 것.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T03:16:10.862Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "Fictive motion in Wordsworthian nature  the painterly exploitation of light and shade, who suggests that ‘the emancipation of the masses of light and shade’ helps to fill the space between concrete objects with an ‘immaterial’ and ‘incorporeal’ atmosphere. This observation, I suggest, also applies to Wordsworth’s representation of light and shadow. The movement of light and shadow in his works helps to instil the atmosphere with an animate, mysterious and spiritual dimension. Having discussed the fictive representation of natural light and shadow, I will proceed to the fictive motion of a special light: eye light. As introduced earlier, the very act of looking is sometimes encoded as a fictive motion event, as if there is some sort of light coming from the eye, travelling along the visual path and landing upon certain objects (see the afore-mentioned example ‘I looked into the valley’). There are also many fictive representations of eye sight in Wordsworth’s poems. Here, we shall see a particular instance of this type of fictive motion:",
-    "choices": [
-     "빛과 어둠의 해방이 구체적 대상 사이에 물질적 분위기를 채운다",
-     "빛과 그림자의 움직임이 작품 분위기에 평범한 기운을 더한다",
-     "시선이 바람처럼 이동한다는 가상의 움직임을 표현할 수 있다",
-     "워즈워스의 시에서 시선이 어둠으로 묘사된 경우가 많다",
-     "시선이 이동하는 것처럼 묘사하는 표현이 시에서 사용된다"
-    ],
-    "answer": 5,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘물질적’이라는 단어와 ‘해방’이란 표현을 혼동해 ‘물질적 분위기’를 ‘해방된 빛과 어둠’이 채운다고 오해했다. 지문에는 ‘불멸하고 무형의 분위기’라고 나와 있다. → 처방: ‘물질적’이란 단어가 나오면 지문에서 그와 반대되는 표현(예: ‘불멸’, ‘무형의’)을 찾아 비교해보기.\n② 진단: ‘평범한 기운’을 ‘보통의 기운’이 아니라 ‘특별한 기운’이 아니라 오해했다. 지문은 ‘신비롭고 영적인 차원’을 언급하는데, ‘평범한’은 그 반대 의미다. → 처방: 선지의 형용사가 긍정·부정·중립 중 어떤 의미인지 먼저 생각해보고, 지문에서 그와 일치하는 단어를 찾기.\n③ 진단: ‘바람처럼’이라는 표현이 지문에 없음에도 ‘이동’이라는 단어만 보고 선택했다. 지문은 ‘시선이 이동하는 것처럼 묘사하는 표현’을 언급하는데, ‘바람’은 예시가 아니다. → 처방: 선지의 구체적인 비유(예: ‘바람처럼’)가 지문에 그대로 있는지 확인하고, 없다면 그 단어가 핵심 의미인지 재검토하기.\n④ 진단: ‘어둠으로 묘사된 경우가 많다’를 ‘어둠’이 아니라 ‘시선’이 darkness(어둠)로 오해했다. 지문은 시선이 darkness(어둠이 아니라 ‘시선의 대상’)을 비춘다고 설명한다. → 처방: ‘어둠’이라는 단어가 나오면 그것이 무엇을 가리키는 것인지(예: 시선의 대상, 배경, 감정 등) 명확히 구분하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T03:16:17.112Z",
-   "type": "영영풀이단어쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: f)\n[영영풀이] Having the characteristics of fiction: fictional.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] fictive (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
