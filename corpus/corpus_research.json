@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T13:48:09.976Z",
+ "updated": "2026-08-22T14:45:55.853Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T14:45:29.050Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스의 실제 패턴에서 문장 내 삽입구(insertion phrase)의 부재가 난이도를 낮추는 요인으로 작용함을 확인. 특히 인용문 앞뒤의 쉼표(,) 생략 오류가 CEFR B1 수준의 문법적 복잡성을 낮추는 주요 변수로 분석됨.",
+   "rule": "CEFR B1 수준 내신 변형문제 출제 시, 인용문(quotation) 앞뒤에 반드시 쉼표(,)를 삽입하는 문법 규칙을 직접 평가하는 문항을 포함하라. 예: 'He said, \"...\"'와 'He said \"...\"'의 차이를 묻는 선택형 문제 설계.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T13:47:45.899Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 '법률/언어 관련 명사'는 고유명사화·특수명사화 경향이 강하며, 대문자 표기가 일반화되어 있다. 또한 '부사+동사' 구조에서 동사원형·to 부정사 전환 시 문법적 오류가 빈발한다.",
    "rule": "법률·언어·지역·기관 관련 명사(예: italian law, english grammar, new york, university press)는 고유명사화 규칙에 따라 항상 대문자로 표기하도록 출제하며, 'A and began to B' 구조는 'A and began B-ing/to B'로 통일성을 요구하는 문법 테스트를 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T21:49:59.371Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형 동사나 조동사가 불필요하게 중복 사용되는 오류가 빈번하며, 특히 'will + 과거형'이나 'are make'처럼 문법적 일관성이 깨지는 경우가 많다.",
-   "rule": "'조동사(do/does/did/will/may 등) + 동사원형' 구조에서 과거형 동사나 'be' 동사 형태가 불필요하게 추가되지 않도록 유의하여 문장을 작성하라.",
    "sample": [
     "old english",
     "university press",
