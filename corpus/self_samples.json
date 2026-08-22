@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-21T23:46:38.323Z",
+ "updated": "2026-08-22T02:02:01.921Z",
  "samples": [
+  {
+   "ts": "2026-08-22T02:01:22.916Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 2문항(제목·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "Given the assumptions we made in chapter 7, the bracketed TP in (32a) is selected by the C-constituent that, and the head T of TP is the auxiliary has which carries a complete set of person/number agreement features. By contrast, the TP in the raising structure in (32b) is not selected by C, and its head T constituent to is defective in that it does not carry a complete set of agreement features. Reasoning thus, Chomsky concludes that the person/number agreement features of T must originate on C, and subsequently ‘be inherited by’ or ‘be handed over to’, or ‘percolate down onto’ (three different metaphors expressing the same idea) the T constituent immediately beneath C. Chomsky argues that in the same way, the agreement features carried by a transitive V (which enable it to assign accusative case to a goal within its domain) are inherited from the light-verb which is the head of the relevant vP phase (transitive vPs being phases). One reason for thinking this can be illustrated in relation to the following contrast:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-21T23:41:36.409Z",
    "type": "요지",
@@ -328,37 +347,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Caribbean calypso music originally derives its name not from Greek mythology but from a similar-sounding African word.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 칼립소 음악의 이름이 아프리카어에서 비롯되었다고 설명하지만, '그리스 신화의 칼립소와 무관하다'고 단정하지는 않는다. 학생은 '유래하지 않았다'는 절대적 표현을 오독했다. → 처방: 지문에서 '유사 발음'과 '대체되었다'는 표현을 주의 깊게 읽고, 절대적 결론을 내리지 않도록 한다.\n② 진단: 지문은 아프리카어의 유사 발음이 더 유력하다고 설명하지만, '단정할 수 없다'는 표현은 없다. 학생은 지문의 '유력하다'를 '확실하지 않다'로 오해했다. → 처방: 지문에서 '유력하다'는 단어가 쓰였다면, 그것이 '확실하지 않다'는 의미가 아님을 기억하고, 선택지에서도 같은 맥락으로 해석한다.\n③ 진단: 지문은 칼립소 음악의 유래에만 초점을 맞추고, '카리브해 음악 대부분'의 유래에 대해서는 언급하지 않는다. 학생은 지문의 범위를 과장해 오독했다. → 처방: 지문의 주제와 범위를 정확히 파악하고, 지문에 언급되지 않은 내용은 선택지로 삼지 않도록 한다.\n④ 진단: 지문은 칼립소 음악의 이름이 그리스 신화가 아니라 아프리카어에서 유래했다고 명시하지만, 학생은 '그리스어와 유사하다는 주장'을 지문에서 찾았다. → 처방: 지문에서 '그리스 신화'와 '아프리카어'의 관계를 정확히 구분하고, 선택지에서도 같은 대조를 유지하도록 한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Caribbean calypso music originally derives its name not from Greek mythology but from a similar-sounding African word.]"
-   }
-  },
-  {
-   "ts": "2026-08-21T15:50:39.729Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 100,
-    "pass": true,
-    "flags": []
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the mythological influence on calypso music's enduring appeal",
-     "the African roots of calypso music as a result of its mythological association",
-     "the captivating power of calypso music in its Greek mythological origins",
-     "the universal appeal of Caribbean folk music through mythological connections",
-     "the historical spread of West Indian calypso music across the Americas"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The captivating power of calypso music stems from its African roots despite its later association with Greek mythology.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: 지문에서 'calypso'라는 이름이 그리스 신화의 '칼립소'에서 왔다는 점은 맞지만, 아프리카어에서 유래했다는 사실은 언급되지 않음. 학생은 'mythological association(신화적 연관)'을 'Africa roots(아프리카 뿌리)'로 오해하여 선택했을 가능성이 큼. → 처방: 지문의 'original name based on African word' 부분을 정확히 읽고, 신화적 연관과 아프리카 뿌리를 구분해서 이해하기.\n③ 진단: 지문은 그리스 신화의 칼립소가 오디세우스를 붙잡은 것처럼 음악도 매력적이라는 비유를 사용했지만, '칼립소 음악의 매력' 자체가 그리스 신화 기원이라는 오해. 학생은 'captivating power(매력)'과 'Greek mythological origins(그리스 신화 기원)'을 혼동했을 수 있음. → 처방: 지문의 'calypso music has some of the same captivating power as the nymph'가 비유임을 인지하고, 주제가 '신화의 영향'임을 명확히 구분하기.\n④ 진단: 지문은 카리브해 민요의 보편적 매력을 언급하지 않으며, 'mythological connections(신화적 연관)'도 주제가 아니라 신화의 영향을 다룸. 학생은 'universal appeal(보편적 매력)'과 'mythological connections'를 과도하게 확장하여 선택했을 가능성이 큼. → 처방: 지문의 주제가 '신화의 영향'임을 기억하고, '보편적 매력' 같은 포괄적 표현이 주제가 아님을 확인하기.\n⑤ 진단: 지문은 칼립소 음악의 미국 전파(앤드류스 자매, 해리 벨라폰테)까지 언급하지만, 이는 '신화의 영향'이라는 주제와는 무관한 보조 정보에 불과함. 학생은 'historical spread(역사적 전파)'라는 구체적 사실에 주목하여 오답을 선택했을 수 있음. → 처방: 지문의 핵심 주제가 '신화의 영향'임을 확인하고, 역사적 전파 같은 세부 정보는 주제를 판단하는 데 사용하지 않기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The captivating power of calypso music stems from its African roots despite its later association with Greek mythology.]"
    }
   }
  ]
