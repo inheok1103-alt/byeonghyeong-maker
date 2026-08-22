@@ -1,6 +1,91 @@
 {
- "updated": "2026-08-22T08:51:22.505Z",
+ "updated": "2026-08-22T09:46:20.295Z",
  "samples": [
+  {
+   "ts": "2026-08-22T09:45:07.472Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Expanding one's word bank improves adaptability to unpredictable challenges",
+     "A person's ability to handle unfamiliar situations determines the size of their vocabulary",
+     "Knowing more words helps in recognizing objects in the real world",
+     "All complex problems can be solved simply by increasing vocabulary size",
+     "Frequent vocabulary expansion always guarantees success in navigating new situations"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'A large vocabulary enhances one's ability to navigate complex and changing situations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘A person's ability to handle unfamiliar situations determines the size of their vocabulary’를 오독했는데, 지문은 ‘많은 단어(things)를 아는 것이 낯선 상황을 다루는 데 도움이 된다(help better able to deal with)’고만 말하고, 단어의 크기가 능숙도를 결정한다는 인과관계는 없다. → 처방: 지문에서 ‘단어는 사물을 가리킨다’는 설명을 떠올리며, ‘단어 수 = 사물 인식 능력 = 대처 능력’의 연결을 확인하기.\n③ 진단: ‘Knowing more words helps in recognizing objects in the real world’를 오독했는데, 지문은 ‘단어는 사물을 가리킨다(stand for “things”)’고만 말하고, ‘객체 인식’(recognizing objects)이라는 구체적 행위는 언급하지 않는다. → 처방: ‘단어 = 사물’이라는 비유를 기억하고, 지문이 ‘사물 인식’이 아니라 ‘사물에 대한 이해와 대처’를 말하고 있음을 확인하기.\n④ 진단: ‘All complex problems can be solved simply by increasing vocabulary size’를 오독했는데, 지문은 ‘단어 수가 많을수록 복잡한 세상을 다루기 쉬워진다(help better able to deal with)’고만 말하고, ‘모든 문제 해결’을 주장하지 않는다. → 처방: ‘단어 수가 많으면 도움이 된다’는 한계(‘better able to deal with’)를 떠올리며, ‘모든 문제’(all complex problems)라는 과장된 표현을 경계하기.\n⑤ 진단: ‘Frequent vocabulary expansion always guarantees success’를 오독했는데, 지문은 ‘단어 수가 많을수록 유리하다(help better able)’고만 말하고, ‘항상 보장한다’(always guarantees)라는 절대적 표현은 없다. → 처방: ‘항상 보장’이라는 표현이 과장임을 깨닫고, 지문의 ‘도움 된다’는 상대적 효과(‘better able’)를 떠올리며 선지를 검토하기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: A large vocabulary enhances one]"
+   }
+  },
+  {
+   "ts": "2026-08-22T09:45:38.935Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "vocabulary expansion for handling complexity and change",
+     "vocabulary improvement for reading comprehension",
+     "ways to use vocabulary in diverse contexts",
+     "vocabulary expansion for solving all real-world problems",
+     "vocabulary growth as a tool for adapting to change"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Expanding vocabulary to better navigate complex and changing situations'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 지문에서 'reading comprehension'은 언급되지 않았으며, '복잡하고 변하는 세상'을 다루는 능력에 초점을 두고 있으므로 '읽기 이해'와는 무관하다. → 처방: 지문에서 'things'와 'words'가 세상의 복잡함을 다루는 핵심 도구임을 확인하고, 'vocabulary expansion'과 'handling complexity'가 직접 연결된 부분을 찾기.\n③ 진단: 지문은 'diverse contexts'가 아닌 '복잡하고 변하는 세상'을 다루는 능력에 초점을 두고 있으며, 'ways to use'는 지문에서 다루지 않은 사용법에 대한 내용이다. → 처방: 지문에서 'new and unusual situations'가 'things'(words)로 해결된다는 점을 확인하고, '사용 방법'보다는 '확장'과 '능력'에 초점을 맞추기.\n④ 진단: 지문은 'solving all real-world problems'이 아닌 '복잡하고 변하는 세상'을 다루는 능력에 대해 말하고 있으며, 'all'이라는 과장된 표현은 지문에 없다. → 처방: 지문에서 'better able to deal with'와 'more easily handled'가 '모든 문제'가 아닌 '복잡한 상황'을 가리킨다는 점을 확인하고, 과장된 표현은 배제하기.\n⑤ 진단: 지문은 'adapting to change'가 아닌 '복잡하고 변하는 세상'을 다루는 능력에 초점을 두고 있으며, 'change'만 강조되어 'complexity'가 빠졌다. → 처방: 지문에서 'complicated and changing world'가 하나의 개념으로 묶여 있음을 확인하고, 'complexity'와 'change'가 함께 언급된 선지를 선택하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Expanding vocabulary to better navigate complex and changing situations]"
+   }
+  },
+  {
+   "ts": "2026-08-22T09:45:47.334Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'effectively', 'vocabulary', 'situations' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] A larger vocabulary helps you handle new and complex situations more effectively.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-22T08:50:12.998Z",
    "type": "심경변화",
@@ -281,80 +366,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘make worse’를 ‘exhaustively’의 뜻으로 오인했다. ‘exhaustively’는 ‘철저히’로, ‘make worse’는 ‘악화시키다’로 전혀 뜻이 다르다. → 처방: ‘exhaustively’는 ‘철저히’를 뜻한다는 점에 집중하고, ‘make worse’는 ‘aggravate’임을 기억하자.\n② 진단: ‘extremely demanding’을 ‘exhort’의 뜻으로 혼동했다. ‘exhort’는 ‘강력히 권고하다’로, ‘extremely demanding’은 ‘매우 힘든’이다. → 처방: ‘exhort’는 ‘강력히 권고하다’라는 뜻임을 떠올리고, ‘extremely demanding’은 ‘arduous’임을 기억하자.\n④ 진단: ‘raise high’를 ‘exhaustively’의 뜻으로 오해했다. ‘raise high’는 ‘높이 들다’로, ‘exhaustively’는 ‘철저히’이다. → 처방: ‘exhaustively’는 ‘철저히’라는 뜻임을 떠올리고, ‘raise high’는 ‘elevate’임을 기억하자.\n⑤ 진단: ‘annoy thoroughly’를 ‘exhaustively’의 뜻으로 오인했다. ‘annoy thoroughly’는 ‘매우 짜증나게 하다’로, ‘exhaustively’는 ‘철저히’이다. → 처방: ‘exhaustively’는 ‘철저히’라는 뜻임을 떠올리고, ‘annoy thoroughly’는 ‘vex’임을 기억하자.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T04:00:53.658Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "Echo questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as complements of the relevant verbs, and subsequently get moved to the front of the overall clause. But what position do they get moved into, in non-echoic questions like (1)? The answer is obviously that they are moved into some position preceding the inverted auxiliary. Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP. Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP). If so, a sentence like (2c) Who was she dating? will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q):",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T04:01:52.560Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.25,
-    "D": -0.5,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.25)",
-     "변별도 낮음(D̂=-0.50)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "(A) [Original / Echo] questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as (B) [complements / independents] of the relevant verbs, and subsequently get moved to the front of the overall clause. But what position do they get moved into, in non-echoic questions like (1)? The answer is obviously that they are moved into some position (C) [preceding / following] the inverted auxiliary. Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP. Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP). If so, a sentence like (2c) Who was she dating? will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q):",
-    "choices": [
-     "(A) Original - (B) complements - (C) preceding",
-     "(A) Original - (B) complements - (C) following",
-     "(A) Original - (B) independents - (C) following",
-     "(A) Echo - (B) complements - (C) preceding",
-     "(A) Echo - (B) independents - (C) preceding"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) Echo - (B) complements - (C) preceding. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 (A)는 'Original / Echo' 중 'Echo'를 골라야 하는데 'Original'을 골랐다. 지문 첫머리에 '(A) [Original / Echo] questions such as that produced by speaker B in (3)'라고 나와 있어, (A)는 'Echo'가 맞다. 'Original'은 'non-echoic questions'와 대조되는 개념으로 쓰였다. → 처방: 지문에서 (A)의 선택지가 'Original / Echo'라는 점을 확인하고, 문맥상 'Echo'가 맞는지 'Original'이 맞는지 다시 한 번 짚어보기. 'Original'은 '원래의'라는 뜻으로, 여기서는 '반복되지 않은 원래의 질문'을 뜻하지 않는다.\n② 진단: (B)에서 'complements / independents'를 'complements'로 골랐지만, 지문에서 'wh-expressions in (1) originate as (B) [complements / independents] of the relevant verbs'라고 했고, 이어서 'get moved to the front'라는 설명이 나온다. 'complements'는 동사의 보어로 남는 경우를 뜻하지만, 여기서는 'independents'가 맞다. 'independents'는 독립적으로 쓰이는 경우를 말한다. → 처방: 지문에서 'wh-expressions'가 동사의 보어로 남는 것이 아니라, 질문에서 '앞으로 이동'한다는 점을 확인하기. 'complements'는 동사 뒤에 남는 경우를 뜻하니, 'independents'가 더 적합하다는 점을 기억하기.\n③ 진단: (C)에서 'preceding / following'를 'following'으로 골랐지만, 지문에서 'preposed wh-expressions are moved into a position (C) [preceding / following] the inverted auxiliary'라고 했고, 이어서 'Since inverted auxiliaries occupy the head C position of CP'라는 설명이 나온다. 'preceding'이 맞다. 'following'은 '뒤에 오는' 경우를 뜻한다. → 처방: 지문에서 'preposed'라는 단어가 '앞으로 이동된'이라는 뜻임을 기억하기. 'wh-expressions'가 'inverted auxiliary' 앞에 위치한다는 점을 확인하고, 'preceding'을 선택하기.\n⑤ 진단: (A)에서 'Echo'를 골랐지만 (B)에서 'independents'를 골랐다. 지문에서 'wh-expressions in (1) originate as (B) [complements / independents]'라고 했고, (1)은 'non-echoic questions'로, 'complements'가 맞다. 'independents'는 '독립적으로 쓰이는 경우'를 뜻하지만, 여기서는 동사의 보어로 남는 경우가 아니라, 질문에서 '앞으로 이동'하는 경우를 설명한다. → 처방: 지문에서 (1)이 'non-echoic questions'라는 점을 확인하고, 'wh-expressions'가 동사의 보어로 남는 것이 아니라, 질문에서 '앞으로 이동'한다는 점을 기억하기. 'complements'가 맞다는 점을 다시 한 번 확인하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T04:02:09.203Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 반향이 없는 질문에서 CP 내의 지정자 위치로 이동합니다.\n주어진 단어: ( position / questions / non-echoic / CP / They / within / the / in / specifier / into / move )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] They move into the specifier position within CP in non-echoic questions.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

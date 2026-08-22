@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T08:51:22.501Z",
+ "updated": "2026-08-22T09:46:20.291Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T09:45:48.833Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'a lot of' 다음에는 복수 가산명사가 오며, 'wholeheartedly'는 한 단어 표기해야 한다. 또한 조동사 뒤에는 동사원형이 와야 한다.",
+   "rule": "'a lot of + 복수 가산명사', 'wholeheartedly'의 한 단어 표기, 조동사(be/do/can 등) 뒤에는 동사원형을 반드시 사용하도록 문항을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T08:50:55.184Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구(NP) 내 한정사(some/one)와 수식어(loose/times/fans)가 잘못 배치된 오류가 빈번하며, 관사(the/a)나 복수형(-s) 오류와 결합되는 경우가 많다. 또한, 동사 시제(present tense)와 수식어(loose/outdated)의 시제 일치 오류도 자주 발생한다.",
    "rule": "명사구 내 한정사와 수식어의 위치를 분석할 때, '한정사 + 수식어 + 명사' 구조가 기본 원칙임을 확인하고, 오류 문항에서는 이를 반대로 배치하거나 관사를 생략/오용하는 패턴을 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T16:49:56.956Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "영어 문법에서 관사('the', 'a/an')의 선택이 문맥적 중요도를 반영한다는 패턴을 확인. 특히 'things'와 같은 추상명사가 특정 맥락에서 'the'로 한정될 때, 학습자의 오류가 빈번히 발생함을 관찰.",
-   "rule": "'things', 'difficulties', 'qualifications' 등 복수 추상명사가 특정 맥락에서 한정성을 요구할 경우, 'the'를 필수로 삽입하도록 오답지를 설계하라. 예를 들어 'I hope the things I learned will help me'와 같은 문장에서 'the'를 생략한 'I hope things I learned will help me'를 오답으로 제시하라.",
    "sample": [
     "old english",
     "university press",
