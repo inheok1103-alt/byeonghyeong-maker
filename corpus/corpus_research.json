@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T16:45:49.140Z",
+ "updated": "2026-08-22T17:46:02.378Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T17:45:25.802Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "대명사·동사 수 일치 오류와 문장부호(콤마) 누락이 다수 관찰된다. 특히 주격 대명사와 동사의 수 일치 오류가 빈번하며, 접속사 뒤 콤마 생략이 특징적이다.",
+   "rule": "'주어(대명사/명사)와 동사의 수 일치를 반드시 확인하라. 또한 접속사(and, so, therefore) 뒤에는 반드시 콤마를 삽입하라. 예: 'I think' → 'I thinks' (X) → 'I think' (O), 'So I' → 'So , I' (O).",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T16:45:20.271Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사구(noun phrase)의 수 일치와 시제 일치가 문법 오류의 핵심 패턴으로 드러난다. 직접목적어(direct object) 구조에서 관사(a/the) 생략이나 시제 불일치가 빈번하다.",
    "rule": "원서 패턴을 반영하여 '명사구(noun phrase) + 복수 동사' 구조에서 수 일치를 반드시 점검하고, 'take/be taking'과 같은 진행형 시제 사용 시 관사(a/the) 포함 여부를 확인하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T01:53:34.308Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사 수의 불일치(단수/복수) 오류가 빈번하며, 특히 'responsibility/responsibilities', 'quality/qualities', 'add/adds'와 같은 복수형 오류가 두드러진다. 또한 'which' 절의 선행사 오류(단수/복수 불일치)도 자주 발생한다.",
-   "rule": "'명사 + 동사 + 명사' 구조에서 두 번째 명사가 복수형이어야 할 경우(예: 'responsibility' → 'responsibilities'), 동사의 수 일치(단수/복수)를 반드시 확인하여 문항으로 출제하라. 특히 'other than ~ing' 구문에서 복수형 명사가 오는 경우(예: 'no major responsibilities other than studying')를 집중적으로 검토하라.",
    "sample": [
     "old english",
     "university press",

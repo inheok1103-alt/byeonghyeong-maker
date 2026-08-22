@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-22T16:45:49.144Z",
+ "updated": "2026-08-22T17:46:02.382Z",
  "samples": [
+  {
+   "ts": "2026-08-22T17:38:04.843Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "shortened citation formats for books and journals",
+     "techniques to minimize citation length in scholarly writing",
+     "standardized abbreviations for citing academic publications",
+     "guidelines for concise citation practices in research papers",
+     "systems for abbreviated citation in academic texts"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Abbreviated citation systems for books and periodicals'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘shortened citation formats for books and journals’를 ‘books’와 ‘periodicals’(=)만 언급한 점에서, 지문이 책·정기간행물 모두에 ‘축약된 인용 방식’이 있음을 놓침. → 처방: ‘books’뿐 아니라 ‘periodicals’도 축약 인용 대상이란 점을 반드시 확인하고, 지문에서 ‘abbreviated citations’를 ‘books’와 ‘periodicals’ 모두에 적용하는지 확인하기.\n② 진단: ‘techniques to minimize citation length’를 ‘길이를 줄이는 방법’으로 오해했는데, 지문은 ‘축약된 인용 방식’이란 ‘형식’ 자체를 설명한 것임. → 처방: ‘길이를 줄이는 방법’이 아니라 ‘축약된 인용 형식’이란 ‘체계’를 설명한다는 점을 분명히 하고, ‘techniques’는 ‘방법’이 아닌 ‘체계’를 가리킨다는 점 기억하기.\n③ 진단: ‘standardized abbreviations’를 ‘표준화된 약어’로 오해했는데, 지문은 ‘축약된 인용 방식’이란 ‘체계’를 설명한 것이고, ‘표준화’란 말이 없음. → 처방: ‘standardized’는 지문에 없으며, ‘체계’를 설명한다는 점을 확인하고, ‘표준화’가 아니라 ‘축약된 인용 방식’이란 ‘시스템’을 설명한다는 점 기억하기.\n④ 진단: ‘guidelines for concise citation practices’를 ‘연구 논문 작성 가이드라인’으로 오해했는데, 지문은 ‘축약된 인용 방식’이란 ‘시스템’을 설명한 것이고, ‘연구 논문 작성’은 언급하지 않음. → 처방: ‘연구 논문’이 아니라 ‘축약된 인용 방식’이란 ‘시스템’을 설명한다는 점을 확인하고, ‘연구 논문 작성’이라는 맥락이 지문에 없음을 기억하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Abbreviated citation systems for books and periodicals]"
+   }
+  },
+  {
+   "ts": "2026-08-22T17:43:39.163Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "Note on abbreviated citations Most of the text examples cited throughout the book come from different published works of ﬁction and from periodicals. To avoid lengthy and repetitive referencing we shall be using abbreviated citations throughout the text. References to books will consist of the author’s initials, the acronym for the title, and the page number. For example, the citation NS.SC.50 refers to page 50 of Neal Stephenson’s Snow Crash. Full references for all works so cited will be found in the “Texts” section in the list of references. Examples taken from periodicals will be accompanied by full references. A number of our cited text examples are taken from a publicly accessible portion of the Modern English Collection of the University of Virginia Electronic Text Center. These references will consist of the author’s name, the title of the work, followed by “U-Va Electronic Text Center”. For example, Mark Twain, Innocents Abroad, U-Va Electronic Text Center. Publication history, page citations, and other information can be found on the Text Center’s database. xvii",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-22T16:43:54.814Z",
    "type": "영영풀이일치",
@@ -285,72 +337,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T09:45:07.472Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Expanding one's word bank improves adaptability to unpredictable challenges",
-     "A person's ability to handle unfamiliar situations determines the size of their vocabulary",
-     "Knowing more words helps in recognizing objects in the real world",
-     "All complex problems can be solved simply by increasing vocabulary size",
-     "Frequent vocabulary expansion always guarantees success in navigating new situations"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'A large vocabulary enhances one's ability to navigate complex and changing situations.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘A person's ability to handle unfamiliar situations determines the size of their vocabulary’를 오독했는데, 지문은 ‘많은 단어(things)를 아는 것이 낯선 상황을 다루는 데 도움이 된다(help better able to deal with)’고만 말하고, 단어의 크기가 능숙도를 결정한다는 인과관계는 없다. → 처방: 지문에서 ‘단어는 사물을 가리킨다’는 설명을 떠올리며, ‘단어 수 = 사물 인식 능력 = 대처 능력’의 연결을 확인하기.\n③ 진단: ‘Knowing more words helps in recognizing objects in the real world’를 오독했는데, 지문은 ‘단어는 사물을 가리킨다(stand for “things”)’고만 말하고, ‘객체 인식’(recognizing objects)이라는 구체적 행위는 언급하지 않는다. → 처방: ‘단어 = 사물’이라는 비유를 기억하고, 지문이 ‘사물 인식’이 아니라 ‘사물에 대한 이해와 대처’를 말하고 있음을 확인하기.\n④ 진단: ‘All complex problems can be solved simply by increasing vocabulary size’를 오독했는데, 지문은 ‘단어 수가 많을수록 복잡한 세상을 다루기 쉬워진다(help better able to deal with)’고만 말하고, ‘모든 문제 해결’을 주장하지 않는다. → 처방: ‘단어 수가 많으면 도움이 된다’는 한계(‘better able to deal with’)를 떠올리며, ‘모든 문제’(all complex problems)라는 과장된 표현을 경계하기.\n⑤ 진단: ‘Frequent vocabulary expansion always guarantees success’를 오독했는데, 지문은 ‘단어 수가 많을수록 유리하다(help better able)’고만 말하고, ‘항상 보장한다’(always guarantees)라는 절대적 표현은 없다. → 처방: ‘항상 보장’이라는 표현이 과장임을 깨닫고, 지문의 ‘도움 된다’는 상대적 효과(‘better able’)를 떠올리며 선지를 검토하기.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: A large vocabulary enhances one]"
-   }
-  },
-  {
-   "ts": "2026-08-22T09:45:38.935Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "vocabulary expansion for handling complexity and change",
-     "vocabulary improvement for reading comprehension",
-     "ways to use vocabulary in diverse contexts",
-     "vocabulary expansion for solving all real-world problems",
-     "vocabulary growth as a tool for adapting to change"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Expanding vocabulary to better navigate complex and changing situations'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n② 진단: 지문에서 'reading comprehension'은 언급되지 않았으며, '복잡하고 변하는 세상'을 다루는 능력에 초점을 두고 있으므로 '읽기 이해'와는 무관하다. → 처방: 지문에서 'things'와 'words'가 세상의 복잡함을 다루는 핵심 도구임을 확인하고, 'vocabulary expansion'과 'handling complexity'가 직접 연결된 부분을 찾기.\n③ 진단: 지문은 'diverse contexts'가 아닌 '복잡하고 변하는 세상'을 다루는 능력에 초점을 두고 있으며, 'ways to use'는 지문에서 다루지 않은 사용법에 대한 내용이다. → 처방: 지문에서 'new and unusual situations'가 'things'(words)로 해결된다는 점을 확인하고, '사용 방법'보다는 '확장'과 '능력'에 초점을 맞추기.\n④ 진단: 지문은 'solving all real-world problems'이 아닌 '복잡하고 변하는 세상'을 다루는 능력에 대해 말하고 있으며, 'all'이라는 과장된 표현은 지문에 없다. → 처방: 지문에서 'better able to deal with'와 'more easily handled'가 '모든 문제'가 아닌 '복잡한 상황'을 가리킨다는 점을 확인하고, 과장된 표현은 배제하기.\n⑤ 진단: 지문은 'adapting to change'가 아닌 '복잡하고 변하는 세상'을 다루는 능력에 초점을 두고 있으며, 'change'만 강조되어 'complexity'가 빠졌다. → 처방: 지문에서 'complicated and changing world'가 하나의 개념으로 묶여 있음을 확인하고, 'complexity'와 'change'가 함께 언급된 선지를 선택하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Expanding vocabulary to better navigate complex and changing situations]"
    }
   }
  ]
