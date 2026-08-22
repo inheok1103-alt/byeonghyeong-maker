@@ -1,6 +1,96 @@
 {
- "updated": "2026-08-22T02:02:01.921Z",
+ "updated": "2026-08-22T03:16:46.916Z",
  "samples": [
+  {
+   "ts": "2026-08-22T03:10:15.835Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": -1,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "(A) [real / Fictive] motion in Wordsworthian nature  the painterly exploitation of light and shade, who suggests that ‘the emancipation of the masses of light and shade’ helps to fill the space between concrete objects with an ‘immaterial’ and ‘incorporeal’ atmosphere. This observation, I suggest, also applies to Wordsworth’s representation of light and shadow. The movement of light and shadow in his works helps to instil the atmosphere with an (B) [animate / inanimate], mysterious and spiritual dimension. Having discussed the fictive representation of natural light and shadow, I will proceed to the fictive motion of a special light: eye light. As introduced earlier, the very act of looking is sometimes encoded as a fictive motion event, as if there is some sort of light coming from the eye, travelling along the (C) [visual / auditory] path and landing upon certain objects (see the afore-mentioned example ‘I looked into the valley’). There are also many fictive representations of eye sight in Wordsworth’s poems. Here, we shall see a particular instance of this type of fictive motion:",
+    "choices": [
+     "(A) Fictive - (B) inanimate - (C) auditory",
+     "(A) Fictive - (B) inanimate - (C) visual",
+     "(A) Fictive - (B) animate - (C) auditory",
+     "(A) real - (B) animate - (C) auditory",
+     "(A) Fictive - (B) animate - (C) visual"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) Fictive - (B) animate - (C) visual. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 ‘real’을 고른 이유는 ‘Wordsworthian nature’의 실제 움직임을 중시한 것으로 보이나, 지문은 ‘fictive motion’을 다루고 있어 오해한 것. ‘(B)’에서 ‘inanimate’를 선택한 것은 ‘mysterious and spiritual dimension’이 무생물적이라 생각한 듯. ‘(C)’에서 ‘auditory’를 고른 것은 ‘visual path’를 ‘소리’로 오해한 것. → 처방: ‘fictive motion’이란 실제 움직임이 아닌 언어 표현임을 기억하고, 지문에서 ‘light and shadow’의 움직임을 ‘의인화’하는지 확인할 것. ‘visual path’는 ‘시각적 경로’를 뜻하므로, ‘auditory’는 오답임을 명심할 것.\n② 진단: ‘(A)’에서 ‘Fictive’를 고른 것은 옳으나, ‘(B)’에서 ‘inanimate’를 선택한 이유는 ‘mysterious and spiritual’이 무생물적이라 생각한 듯. ‘(C)’에서 ‘auditory’를 고른 것은 ‘visual path’를 ‘소리’로 오해한 것. → 처방: ‘animate’는 ‘생명 있는, 살아 있는’이라는 뜻임을 기억하고, ‘mysterious and spiritual dimension’이 ‘생명 있는’ 특성을 띠는지 확인할 것. ‘visual path’는 ‘시각적 경로’를 뜻하므로, ‘auditory’는 오답임을 명심할 것.\n③ 진단: ‘(A)’에서 ‘real’을 고른 이유는 ‘Wordsworthian nature’의 실제 움직임을 중시한 것으로 보이나, 지문은 ‘fictive motion’을 다루고 있어 오해한 것. ‘(B)’에서 ‘animate’를 선택한 것은 ‘mysterious and spiritual’이 살아 있는 것처럼 느껴졌기 때문. ‘(C)’에서 ‘auditory’를 고른 것은 ‘visual path’를 ‘소리’로 오해한 것. → 처방: ‘fictive motion’이란 실제 움직임이 아닌 언어 표현임을 기억하고, 지문에서 ‘light and shadow’의 움직임을 ‘의인화’하는지 확인할 것. ‘animate’는 ‘생명 있는’을 뜻하므로, ‘mysterious and spiritual’이 살아 있는 특성을 띠는지 확인할 것. ‘visual path’는 ‘시각적 경로’를 뜻하므로, ‘auditory’는 오답임을 명심할 것.\n④ 진단: ‘(B)’에서 ‘inanimate’를 선택한 이유는 ‘mysterious and spiritual’이 무생물적이라 생각한 듯. ‘(C)’에서 ‘auditory’를 고른 것은 ‘visual path’를 ‘소리’로 오해한 것. ‘(A)’는 정답과 같으나, 나머지 두 항목에서 오류가 있음. → 처방: ‘animate’는 ‘생명 있는’이라는 뜻임을 기억하고, ‘mysterious and spiritual dimension’이 살아 있는 특성을 띠는지 확인할 것. ‘visual path’는 ‘시각적 경로’를 뜻하므로, ‘auditory’는 오답임을 명심할 것.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-22T03:16:10.862Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Fictive motion in Wordsworthian nature  the painterly exploitation of light and shade, who suggests that ‘the emancipation of the masses of light and shade’ helps to fill the space between concrete objects with an ‘immaterial’ and ‘incorporeal’ atmosphere. This observation, I suggest, also applies to Wordsworth’s representation of light and shadow. The movement of light and shadow in his works helps to instil the atmosphere with an animate, mysterious and spiritual dimension. Having discussed the fictive representation of natural light and shadow, I will proceed to the fictive motion of a special light: eye light. As introduced earlier, the very act of looking is sometimes encoded as a fictive motion event, as if there is some sort of light coming from the eye, travelling along the visual path and landing upon certain objects (see the afore-mentioned example ‘I looked into the valley’). There are also many fictive representations of eye sight in Wordsworth’s poems. Here, we shall see a particular instance of this type of fictive motion:",
+    "choices": [
+     "빛과 어둠의 해방이 구체적 대상 사이에 물질적 분위기를 채운다",
+     "빛과 그림자의 움직임이 작품 분위기에 평범한 기운을 더한다",
+     "시선이 바람처럼 이동한다는 가상의 움직임을 표현할 수 있다",
+     "워즈워스의 시에서 시선이 어둠으로 묘사된 경우가 많다",
+     "시선이 이동하는 것처럼 묘사하는 표현이 시에서 사용된다"
+    ],
+    "answer": 5,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘물질적’이라는 단어와 ‘해방’이란 표현을 혼동해 ‘물질적 분위기’를 ‘해방된 빛과 어둠’이 채운다고 오해했다. 지문에는 ‘불멸하고 무형의 분위기’라고 나와 있다. → 처방: ‘물질적’이란 단어가 나오면 지문에서 그와 반대되는 표현(예: ‘불멸’, ‘무형의’)을 찾아 비교해보기.\n② 진단: ‘평범한 기운’을 ‘보통의 기운’이 아니라 ‘특별한 기운’이 아니라 오해했다. 지문은 ‘신비롭고 영적인 차원’을 언급하는데, ‘평범한’은 그 반대 의미다. → 처방: 선지의 형용사가 긍정·부정·중립 중 어떤 의미인지 먼저 생각해보고, 지문에서 그와 일치하는 단어를 찾기.\n③ 진단: ‘바람처럼’이라는 표현이 지문에 없음에도 ‘이동’이라는 단어만 보고 선택했다. 지문은 ‘시선이 이동하는 것처럼 묘사하는 표현’을 언급하는데, ‘바람’은 예시가 아니다. → 처방: 선지의 구체적인 비유(예: ‘바람처럼’)가 지문에 그대로 있는지 확인하고, 없다면 그 단어가 핵심 의미인지 재검토하기.\n④ 진단: ‘어둠으로 묘사된 경우가 많다’를 ‘어둠’이 아니라 ‘시선’이 darkness(어둠)로 오해했다. 지문은 시선이 darkness(어둠이 아니라 ‘시선의 대상’)을 비춘다고 설명한다. → 처방: ‘어둠’이라는 단어가 나오면 그것이 무엇을 가리키는 것인지(예: 시선의 대상, 배경, 감정 등) 명확히 구분하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-22T03:16:17.112Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: f)\n[영영풀이] Having the characteristics of fiction: fictional.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] fictive (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-22T02:01:22.916Z",
    "type": "복합세트",
@@ -260,93 +350,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] following — 문단의 논지상 이 자리에는 'following'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T19:43:25.630Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] \b (fict) While many grammars point out the structural similarities among variants, they usually offer little explanation of when and why the different forms are used.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 많은 문법서들이 변이형들 간의 구조적 유사성을 지적하지만, 그러한 다른 형태들이 언제, 왜 사용되는지에 대한 설명은 거의 제공하지 않는다. (구문 포인트: 관계사절(when, why) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T18:58:29.071Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.88,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.88)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "distinction between logical and epistemic modalities",
-     "differences between possible worlds and actual reality",
-     "logical necessity derived from empirical evidence",
-     "absolute separation of logical and epistemic possibilities",
-     "ways to classify modes of possibility in logic"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Distinction between logical and epistemic modalities'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: 지문에서 'possible worlds'와 'actual reality'의 차이는 다루지만, 두 개념의 구분이 아니라 'logical modality'와 'epistemic modality'의 구분을 주제로 삼고 있음을 오독했음. 지문 첫 문장에 'logical modality'가 'possible worlds'를 '구분 없이 다루는' simplest modality 라고 설명된 부분을 놓침. → 처방: 지문 전체를 읽고 'modality(양태)'라는 키워드가 나오는지 확인할 것. 'modality'가 없으면 주제가 아님을 기억하기.\n③ 진단: 지문에서 'epistemic must'가 'empirical evidence(경험적 증거)'에서 비롯된다는 설명은 있지만, 'logical necessity(논리적 필연성)'가 'empirical evidence'에서 비롯된다는 내용은 없음. 학생은 'must'라는 단어에만 집중해 오해했음. → 처방: 지문에서 'must'가 등장하는 문맥을 정확히 짚기. 'epistemic must'와 'logical necessity'가 각각 어떤 근거에서 나오는지 구분할 것.\n④ 진단: 지문은 'logical possibility'와 'epistemic possibility'가 '절대 분리'된다는 내용이 아니라, 'epistemic possibility'가 'logical possibility'보다 약한 조건임을 설명함. 'absolute separation'이라는 표현은 지문에 없음. → 처방: 지문에서 'far weaker than'이나 'even though there might be differences' 같은 비교 구문을 주의 깊게 읽기. '차이'와 '분리'는 다른 개념임을 기억하기.\n⑤ 진단: 지문은 'modes of possibility'를 'logical'과 'epistemic'으로만 분류하지 않고, 그 두 가지를 비교하는 방식으로 설명함. 'ways to classify'라는 표현은 지문에 없지만, 학생은 'possible worlds'라는 단어가 'classify'와 연결된다고 오해했음. → 처방: 지문에서 'modality'가 'logical'과 'epistemic' 두 종류로만 나뉜다는 점을 확인할 것. 다른 분류 기준이 있는지 찾기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Distinction between logical and epistemic modalities]"
-   }
-  },
-  {
-   "ts": "2026-08-21T15:50:01.496Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "칼립소 음악의 이름은 그리스 신화의 칼립소의 유혹으로 발생한 것이 아니라 아프리카어의 유사한 발음에서 비롯되었다.",
-     "칼립소 음악의 이름은 그리스 신화의 칼립소와 관련이 없다고 단정할 수 없지만, 아프리카어의 유사 발음이 더 유력하다.",
-     "카리브해 음악 대부분은 그리스 신화나 아프리카어에서 유래했다는 통념이 널리 받아들여지고 있다.",
-     "칼립소 음악의 이름은 그리스 신화의 칼립소에서 유래했다고 해도 무방할 정도로 그리스어와 유사하다는 주장이 있다.",
-     "카리브해 칼립소 음악의 이름은 그리스 신화의 칼립소보다는 유사한 발음을 지닌 아프리카어에서 유래했다는 것이다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Caribbean calypso music originally derives its name not from Greek mythology but from a similar-sounding African word.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 지문은 칼립소 음악의 이름이 아프리카어에서 비롯되었다고 설명하지만, '그리스 신화의 칼립소와 무관하다'고 단정하지는 않는다. 학생은 '유래하지 않았다'는 절대적 표현을 오독했다. → 처방: 지문에서 '유사 발음'과 '대체되었다'는 표현을 주의 깊게 읽고, 절대적 결론을 내리지 않도록 한다.\n② 진단: 지문은 아프리카어의 유사 발음이 더 유력하다고 설명하지만, '단정할 수 없다'는 표현은 없다. 학생은 지문의 '유력하다'를 '확실하지 않다'로 오해했다. → 처방: 지문에서 '유력하다'는 단어가 쓰였다면, 그것이 '확실하지 않다'는 의미가 아님을 기억하고, 선택지에서도 같은 맥락으로 해석한다.\n③ 진단: 지문은 칼립소 음악의 유래에만 초점을 맞추고, '카리브해 음악 대부분'의 유래에 대해서는 언급하지 않는다. 학생은 지문의 범위를 과장해 오독했다. → 처방: 지문의 주제와 범위를 정확히 파악하고, 지문에 언급되지 않은 내용은 선택지로 삼지 않도록 한다.\n④ 진단: 지문은 칼립소 음악의 이름이 그리스 신화가 아니라 아프리카어에서 유래했다고 명시하지만, 학생은 '그리스어와 유사하다는 주장'을 지문에서 찾았다. → 처방: 지문에서 '그리스 신화'와 '아프리카어'의 관계를 정확히 구분하고, 선택지에서도 같은 대조를 유지하도록 한다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Caribbean calypso music originally derives its name not from Greek mythology but from a similar-sounding African word.]"
    }
   }
  ]
