@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-22T13:05:00.950Z",
+ "updated": "2026-08-22T13:48:09.980Z",
  "samples": [
+  {
+   "ts": "2026-08-22T13:47:34.437Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "If we assume that help you is a VP whereas to help you is a TP, we can account for the contrasts in (7) and (8) by saying that ought is the kind of word which selects (i.e. ‘takes’) an infinitival TP as its complement, whereas should is the kind of word which selects an infinitival VP as its complement. Implicit in this claim is the assumption that different words like ought and should have different selectional properties which determine the range of complements they permit. The infinitive phrase to help you is formed by merging the infinitive particle to with the verb phrase help you. If (as we argued in the previous chapter) infinitival to is an infinitival tense particle (belonging to the category T) and if to is the head of the phrase to help you, the structure formed by merging to with the verb phrase/VP help you in (5) will be the TP (i.e. infinitival Tense Projection/Tense Phrase) in (9) below:",
+    "choices": [
+     "ought 는 to 부정사 VP 를 보충어로 선택하는 반면 should 는 to 부정사 TP 를 보충어로 선택한다.",
+     "ought 와 should 는 서로 같은 보충어 선택 속성을 지닌다.",
+     "to help you 는 to 와 동사구 help you 가 결합되지 않고 형성된다.",
+     "to 는 to help you 구의 머리 역할을 한다.",
+     "to help you 는 to(시제 입자)와 help you(동사구)가 병합되어 VP(동사구)로 구성된다."
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ought 는 to 부정사 TP 를, should 는 to 부정사 VP 를 선택한다고 지문에서 분명히 밝히고 있는데, ought 와 should 의 선택 속성이 반대인 것을 혼동한 것 같다. 지문 (7)과 (8)의 대조를 제대로 읽지 못한 듯하다. → 처방: ought 와 should 가 각각 어떤 보충어를 선택하는지 지문에서 정확히 짚고 넘어가야 한다. ought 는 TP(시제구)를, should 는 VP(동사구)를 선택한다는 점을 다시 한 번 확인하자.\n② 진단: 지문에서 ought 와 should 는 서로 다른 선택 속성을 지닌다고 명시하고 있는데, 이를 '같은' 속성으로 오독한 것 같다. 선택 속성의 차이를 무시한 채 두 단어의 성격을 동일시한 듯하다. → 처방: 선택 속성의 차이를 반드시 기억하자. ought 와 should 는 보충어로 받아들이는 구조가 다르다는 점을 강조한 지문을 다시 읽고 정리하자.\n③ 진단: to help you 는 to(시제 입자)와 help you(동사구)가 결합하여 형성된다고 지문에서 설명하고 있는데, 이를 '결합하지 않고' 형성된다고 오독한 것 같다. 결합 과정의 중요성을 간과한 듯하다. → 처방: to 부정사 구의 형성 과정을 정확히 이해하자. to(시제 입자)와 동사구가 결합하여 TP 나 VP 가 된다는 점을 다시 한 번 확인하고, 그 과정을 머릿속으로 그려보기.\n⑤ 진단: to help you 는 to(시제 입자)와 help you(동사구)가 병합되어 TP(시제구)로 구성된다고 지문에서 설명하고 있는데, 이를 VP(동사구)로 오독한 것 같다. TP 와 VP 의 차이를 혼동한 듯하다. → 처방: to 부정사 구의 구조를 정확히 기억하자. to 는 시제 입자로서 TP 의 머리를 맡고, to help you 는 TP 로 구성된다는 점을 다시 한 번 확인하고, TP 와 VP 의 차이를 명확히 구분하자.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-22T13:02:46.008Z",
    "type": "본문찾아쓰기",
@@ -317,41 +352,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Although some nouns can take plural forms with different meanings. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-22T07:01:47.765Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "안정적 인간관계가 전제되지 않으면 전체주의 체제가 출현할 가능성이 높아진다.",
-     "전체주의 체제는 정치적 반대자 간의 연대를 원천적으로 금지한다.",
-     "전체주의 체제는 사회 내 모든 유형의 인간관계를 완전히 붕괴시킨다.",
-     "전체주의 체제는 때로 사회에 안정적인 인간관계를 부분적으로 허용할 수 있다.",
-     "전체주의 체제는 사회가 안정적인 인간관계를 유지하는 것을 원천적으로 차단한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Totalitarian systems prevent societies from maintaining stable social relationships.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘안정적 인간관계가 전제되지 않으면 전체주의 체제가 출현할 가능성이 높아진다’는 선지는 인과관계를 반대로 오독했다. 지문은 ‘전체주의 체제가 안정적 인간관계를 허용하지 않는다’고만 설명하지, ‘안정적 인간관계가 전제되지 않으면 전체주의가 생긴다’는 내용은 없다. → 처방: ‘전체주의가 안정적 인간관계를 허용하지 않는다’는 지문의 핵심만 정확히 짚고, 인과관계가 반대일 수 있음을 주의하라.\n② 진단: ‘정치적 반대자 간의 연대를 원천적으로 금지한다’는 선지는 지문의 범위를 좁혔다. 지문은 ‘모든 유형의’ 인간관계를 언급하며, 반대자 연대만 금지하는 것이 아님을 혼동했다. → 처방: ‘모든 유형의 인간관계’를 강조하는 지문에서 ‘일부’가 아닌 ‘전체’를 떠올리며 읽어라.\n③ 진단: ‘사회 내 모든 유형의 인간관계를 완전히 붕괴시킨다’는 선지는 과장된 해석이다. 지문은 ‘안정적 사회관계’를 ‘허용하지 않는다’고만 말하고, ‘완전히 붕괴시킨다’는 표현은 없다. → 처방: ‘허용하지 않는다’와 ‘완전히 붕괴시킨다’를 혼동하지 말고, 지문의 정확한 표현에 집중하라.\n④ 진단: ‘때로는 안정적인 인간관계를 부분적으로 허용할 수 있다’는 선지는 지문의 의미를 반대로 읽었다. 지문은 ‘원천적으로 차단한다’고만 설명하지, ‘허용할 수 있다’는 내용은 없다. → 처방: ‘원천적으로 차단한다’는 표현을 놓치지 말고, ‘때로는 허용한다’는 선지가 오답임을 기억하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Totalitarian systems prevent societies from maintaining stable social relationships.]"
    }
   }
  ]
