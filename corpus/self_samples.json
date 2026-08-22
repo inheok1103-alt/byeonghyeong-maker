@@ -1,6 +1,80 @@
 {
- "updated": "2026-08-22T03:16:46.916Z",
+ "updated": "2026-08-22T04:02:39.473Z",
  "samples": [
+  {
+   "ts": "2026-08-22T04:00:53.658Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 2문항(제목·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "Echo questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as complements of the relevant verbs, and subsequently get moved to the front of the overall clause. But what position do they get moved into, in non-echoic questions like (1)? The answer is obviously that they are moved into some position preceding the inverted auxiliary. Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP. Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP). If so, a sentence like (2c) Who was she dating? will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q):",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-22T04:01:52.560Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.25,
+    "D": -0.5,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.25)",
+     "변별도 낮음(D̂=-0.50)",
+     "역변별(정답키 의심)",
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "(A) [Original / Echo] questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as (B) [complements / independents] of the relevant verbs, and subsequently get moved to the front of the overall clause. But what position do they get moved into, in non-echoic questions like (1)? The answer is obviously that they are moved into some position (C) [preceding / following] the inverted auxiliary. Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP. Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP). If so, a sentence like (2c) Who was she dating? will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q):",
+    "choices": [
+     "(A) Original - (B) complements - (C) preceding",
+     "(A) Original - (B) complements - (C) following",
+     "(A) Original - (B) independents - (C) following",
+     "(A) Echo - (B) complements - (C) preceding",
+     "(A) Echo - (B) independents - (C) preceding"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) Echo - (B) complements - (C) preceding. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 (A)는 'Original / Echo' 중 'Echo'를 골라야 하는데 'Original'을 골랐다. 지문 첫머리에 '(A) [Original / Echo] questions such as that produced by speaker B in (3)'라고 나와 있어, (A)는 'Echo'가 맞다. 'Original'은 'non-echoic questions'와 대조되는 개념으로 쓰였다. → 처방: 지문에서 (A)의 선택지가 'Original / Echo'라는 점을 확인하고, 문맥상 'Echo'가 맞는지 'Original'이 맞는지 다시 한 번 짚어보기. 'Original'은 '원래의'라는 뜻으로, 여기서는 '반복되지 않은 원래의 질문'을 뜻하지 않는다.\n② 진단: (B)에서 'complements / independents'를 'complements'로 골랐지만, 지문에서 'wh-expressions in (1) originate as (B) [complements / independents] of the relevant verbs'라고 했고, 이어서 'get moved to the front'라는 설명이 나온다. 'complements'는 동사의 보어로 남는 경우를 뜻하지만, 여기서는 'independents'가 맞다. 'independents'는 독립적으로 쓰이는 경우를 말한다. → 처방: 지문에서 'wh-expressions'가 동사의 보어로 남는 것이 아니라, 질문에서 '앞으로 이동'한다는 점을 확인하기. 'complements'는 동사 뒤에 남는 경우를 뜻하니, 'independents'가 더 적합하다는 점을 기억하기.\n③ 진단: (C)에서 'preceding / following'를 'following'으로 골랐지만, 지문에서 'preposed wh-expressions are moved into a position (C) [preceding / following] the inverted auxiliary'라고 했고, 이어서 'Since inverted auxiliaries occupy the head C position of CP'라는 설명이 나온다. 'preceding'이 맞다. 'following'은 '뒤에 오는' 경우를 뜻한다. → 처방: 지문에서 'preposed'라는 단어가 '앞으로 이동된'이라는 뜻임을 기억하기. 'wh-expressions'가 'inverted auxiliary' 앞에 위치한다는 점을 확인하고, 'preceding'을 선택하기.\n⑤ 진단: (A)에서 'Echo'를 골랐지만 (B)에서 'independents'를 골랐다. 지문에서 'wh-expressions in (1) originate as (B) [complements / independents]'라고 했고, (1)은 'non-echoic questions'로, 'complements'가 맞다. 'independents'는 '독립적으로 쓰이는 경우'를 뜻하지만, 여기서는 동사의 보어로 남는 경우가 아니라, 질문에서 '앞으로 이동'하는 경우를 설명한다. → 처방: 지문에서 (1)이 'non-echoic questions'라는 점을 확인하고, 'wh-expressions'가 동사의 보어로 남는 것이 아니라, 질문에서 '앞으로 이동'한다는 점을 기억하기. 'complements'가 맞다는 점을 다시 한 번 확인하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-22T04:02:09.203Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 반향이 없는 질문에서 CP 내의 지정자 위치로 이동합니다.\n주어진 단어: ( position / questions / non-echoic / CP / They / within / the / in / specifier / into / move )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] They move into the specifier position within CP in non-echoic questions.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-22T03:10:15.835Z",
    "type": "네모어휘ABC",
@@ -264,92 +338,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] An itinerant lifestyle involves moving from place to place frequently. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-21T20:43:49.873Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.38,
-    "D": 0.5,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① They are also alike in that the verbs in their complements can be passives.\n② Here are the active get and have sentences, together with their passive counterparts:\n③ When have is used as a causative, have is followed by a noun-phrase object and a base-stem inﬁ nitive verb phrase.\n④ Here the noun phrase his boss is both the object of had and the subject of the bare-stem verb kill.\n⑤ The noun-phrase object of have also serves as the subject of the following bare-stem verb.\n⑥ When get and have are used as causative verbs, they differ in the exact form of the verb in their complements (inﬁ nitives with get; bare-stems with have), but in other aspects they seem interchangeable—with the predictable exception that get passives are more informal than have passives.\n⑦ In other words, the boss is the person killing the proposal, not James.\n⑧ For example: James had his boss kill the proposal.\n⑨ He had the judge reduce the charges.",
-    "choices": [
-     "⑨-④-⑧-⑦-⑤-①-⑥-③-②",
-     "③-⑨-⑤-⑧-④-⑦-⑥-①-②",
-     "⑨-②-③-⑤-⑧-⑦-④-①-⑥",
-     "⑨-③-⑤-⑧-④-⑦-⑥-①-②",
-     "⑨-③-②-⑤-⑦-⑥-④-⑧-①"
-    ],
-    "answer": 4,
-    "explanation": "정답 배열은 ⑨-③-⑤-⑧-④-⑦-⑥-①-②. 흐름: ⑨ → ③ → ⑤ → ⑧(For example) → ④ → ⑦(In other words) → ⑥ → ①(They) → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ⑦의 순서가 뒤바뀌어 있어 'have 의 causative 사용'과 '의미 해석'의 연결이 흐트러졌다. 특히 ⑦은 ⑧의 결과로 나온 해석이므로 ⑧ 다음에 와야 하는데, ①이 먼저 오면서 'passive' 개념만 먼저 언급되어 문맥이 어색해졌다. → 처방: 글의 흐름을 따라 causative 사용(⑧, ⑨)과 그 결과로 나온 해석(⑦)을 차례로 배치할 것.\n② 진단: ③이 먼저 오면서 causative 의 '형태'(infinitive vs bare-stem)가 너무 일찍 언급되어, 정작 causative 의 '의미와 예시'(⑧, ⑨)가 뒤에 배치되어 문맥이 혼란스럽다. causative 의 정의는 예시 다음에 오는 것이 자연스럽다. → 처방: causative 의 정의(③)는 causative 의 예시(⑧, ⑹) 다음에 배치할 것.\n③ 진단: ②가 ③ 다음에 오면서 '예시'가 아닌 '정의'가 먼저 나와 문맥이 역전되었다. causative 의 정의(③) 다음에는 예시(⑧, ⑨)가 나와야 하는데, ②는 'active 와 passive 의 예시'를 보여주므로 causative 의 정의 다음에 와야 한다. → 처방: causative 의 정의(③) → causative 의 예시(⑧, ⑨) → passive 와 active 비교(②) 순서로 배치할 것.\n⑤ 진단: ⑤가 ⑦ 앞에 오면서 'noun phrase 의 역할'(⑤)이 '의미 해석'(⑦)보다 먼저 언급되어 문맥이 어색해졌다. ⑤는 causative 의 구조를 설명하는 글이므로, causative 의 예시(⑧, ⑨)와 그 결과(⑦) 사이에 배치되어야 한다. → 처방: causative 의 예시(⑧, ⑨) → 그 결과로 나온 해석(⑦) → 구조 설명(⑤) 순서로 배치할 것.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-21T20:44:27.782Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the structural and functional distinctions of causative verbs have and get in complement constructions",
-     "the functional similarities and overlaps of causative verbs have and get in complement constructions",
-     "the contextual rules governing the selection of causative verbs have over get in sentences",
-     "the grammatical distinctions between causative verbs have and get in various sentence structures",
-     "the practical applications of causative verbs have and get in everyday language use"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Causative verbs *have* and *get* with their complement structures'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정도·빈도를 왜곡· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n② 진단: 지문에서 'have 와 get 은 보충어(compement)에서 동사 형태(무한동사 vs 동사원형)가 다르며, 기능상 유사점도 있지만 차이점도 뚜렷하다고 설명했는데, 이 선지는 두 동사의 '유사점과 겹치는 부분'만 강조하여 차이점을 간과한 오독. → 처방: 지문에서 'have 와 get 의 구조적·기능적 차이'를 먼저 확인하고, 유사점은 그 다음에 비교해 보기.\n③ 진단: 'have 를 get 보다 선택하는 규칙'이라는 문구는 지문에 전혀 없으며, 지문은 두 동사의 '구조적 차이'와 '일부 기능적 유사성'을 다룬다는 사실을 오독한 것. → 처방: 문제에서 '선택 규칙' 같은 말이 나오면 지문에서 그런 내용이 있는지 반드시 확인하기.\n④ 진단: 지문은 'have 와 get 의 구조적 차이'를 다룬다고 설명하는데, 이 선지는 '다양한 문장 구조에서의 문법적 차이'로 범위를 넓혀 오독한 것. → 처방: 지문에서 언급된 '보충어(compement) 구조'에 집중하고, 다른 문장 구조는 무시하기.\n⑤ 진단: 지문은 '문법적 설명'에 초점을 맞추고 있는데, 이 선지는 '실생활 활용'을 다룬다고 오해하여 주제를 잘못 잡은 오독. → 처방: 문제에서 '문법 규칙'이나 '구조' 같은 단어가 나오면 실생활 활용보다는 그 규칙 자체에 집중하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Causative verbs *have* and *get* with their complement structures]"
-   }
-  },
-  {
-   "ts": "2026-08-21T20:44:34.197Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "He had the judge reduce the charges. When have is used as a causative, have is followed by a noun-phrase object and a base-stem inﬁ nitive verb phrase. The noun-phrase object of have also serves as the subject of the f________ bare-stem verb. For example: James had his boss kill the proposal. Here the noun phrase his boss is both the object of had and the subject of the bare-stem verb kill. In other words, the boss is the person killing the proposal, not James. When get and have are used as causative verbs, they differ in the exact form of the verb in their complements (inﬁ nitives with get; bare-stems with have), but in other aspects they seem interchangeable—with the predictable exception that get passives are more informal than have passives. They are also alike in that the verbs in their complements can be passives. Here are the active get and have sentences, together with their passive counterparts:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] following — 문단의 논지상 이 자리에는 'following'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

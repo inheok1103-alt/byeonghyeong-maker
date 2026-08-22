@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T03:16:46.913Z",
+ "updated": "2026-08-22T04:02:39.469Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-22T04:02:11.230Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서 'a/an + 명사' 또는 'the + 명사'의 관사 사용 패턴이 빈번하며, 특히 'a'가 단수 가산명사와 결합하는 경우가 많다. 또한 'with'와 같은 전치사가 연어의 핵심 구성 요소로 자주 등장한다.",
+   "rule": "단수 가산명사 앞에는 반드시 관사(a/an/the)를 붙이도록 오답지를 설계하라. 예시: 'preparation' → 'a good preparation', 'name' → 'a name', 'weekend' → 'the weekend'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T03:16:19.137Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "동사 뒤의 전치사 사용 오류가 빈번하며, 특히 'decrease', 'solidifies'와 같은 동사 뒤에 전치사가 불필요하게 삽입되는 패턴이 관찰된다. 또한 명사형 오류('competancy'→'competency', 'trasisional'→'transitional')도 빈번하다.",
    "rule": "원서 코퍼스 패턴에 기반하여, 'decrease', 'solidify', 'force'와 같은 동사 뒤에 전치사를 불필요하게 삽입하는 오류를 교정하는 문제 출제 시, 해당 동사 뒤에는 전치사 없이 직접 목적어나 보어만 오도록 규칙화하여 변형 문제를 제작하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-19T10:48:40.497Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "명사구에서 관사(a/an/the) 오류가 빈번하며, 특히 복수명사나 불가산명사에서 오류가 두드러진다. 또한 인용절에서 that 생략 오류가 빈번히 관찰된다.",
-   "rule": "CEFR B1 수준 이하의 문항에서 명사구 내 관사(a/an/the) 사용 여부를 오답으로 제시하거나, 인용절에서 that 생략 여부를 오답으로 제시하여 난이도를 조정하라.",
    "sample": [
     "old english",
     "university press",
