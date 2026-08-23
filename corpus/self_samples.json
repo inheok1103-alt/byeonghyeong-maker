@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-23T05:49:01.715Z",
+ "updated": "2026-08-23T07:05:10.672Z",
  "samples": [
+  {
+   "ts": "2026-08-23T07:03:06.264Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Quick Quiz #54 Match each word in the first column with its definition in the second column. Check your answers here. 1. judicious a. irreversible 2. juxtapose b. lightness 3. kinetic c. using few words 4. labyrinth d. maze 5. laconic e. place side by side 6. lament f. present but not visible 7. lampoon g. bequest 8. languish h. active 9. latent i. become weak 10. laud j. satirize 11. legacy k. mourn 12. lethargy l. praise 13. levity m. exercising sound judgment LIBEL (LYE bul) n a written or published falsehood that injures the reputation of, or defames, someone • The executive said that the newspaper had committed libel when it called him a <u>stinking, no-good, corrupt, incompetent, overpaid, lying, worthless moron</u>. He claimed that the newspaper had libeled him, and that its description of him had been libelous. At the trial, the jury disagreed, saying that the newspaper’s description of the executive had been substantially accurate. Don’t confuse this word with liable, which has an entirely different meaning. Slander is just like libel except that it is spoken instead of written.",
+    "choices": [
+     "The phrase occasionally exaggerates the executive's flaws to highlight occasional flaws in the libel case.",
+     "The phrase directly describes the executive's numerous negative traits in a literal sense.",
+     "The phrase literally means the executive is a bad-smelling, useless person with no good qualities.",
+     "The phrase vividly exaggerates the executive's flaws to emphasize the severity of the defamation in the libel case.",
+     "The phrase lists specific adjectives to objectively describe the executive's professional mistakes in the legal document."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'The phrase vividly exaggerates the executive's flaws to emphasize the severity of the defamation in the libel case.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘occasional(간 occasio)’과 ‘flaws(결점)’이란 단어에만 집중해 ‘libel(명예훼손)’의 본질인 ‘과장된 표현으로 명예를 훼손하는 행위’를 보지 못했다. 지문에서 ‘libel’의 정의는 ‘허위 사실로 남의 명예를 훼손하는 것’인데, 이 선지는 ‘occasional flaws’를 언급하며 ‘libel’의 핵심인 ‘과장’을 놓쳤다. → 처방: ‘libel’의 정의와 예시(‘stinking, no-good, corrupt…’)를 다시 읽고, ‘과장된 표현’이 ‘severe defamation(심각한 명예훼손)’임을 분명히 기억하자.\n② 진단: ‘directly(직접)’와 ‘literal(문자 그대로)’이라는 단어에만 의존해 ‘libel’의 정의(‘허위 사실로 명예를 훼손’)를 무시했다. 지문에서 ‘libel’의 핵심은 ‘허위 사실’이 아니라 ‘과장된 표현으로 명예를 훼손하는 행위’라는 점을 놓쳤다. → 처방: ‘libel’의 정의와 예시를 함께 보며, ‘직접 묘사’가 아니라 ‘과장된 표현’이 ‘명예훼손’의 핵심임을 파악하자.\n③ 진단: ‘literally(문자 그대로)’라는 단어를 ‘literal meaning(직접적 의미)’으로만 이해해 ‘libel’의 정의(‘허위 사실로 명예를 훼손’)를 무시했다. 지문에서 ‘libel’의 핵심은 ‘과장된 표현’이 아니라 ‘허위 사실’이 아니라는 점을 놓쳤다. → 처방: ‘libel’의 정의와 예시를 다시 읽고, ‘문자 그대로의 의미’가 아니라 ‘과장된 표현’이 ‘명예훼손’의 핵심임을 기억하자.\n⑤ 진단: ‘specific adjectives(구체적 형용사)’와 ‘objectively(객관적으로)’라는 단어에만 집중해 ‘libel’의 정의(‘허위 사실로 명예를 훼손’)를 무시했다. 지문에서 ‘libel’의 핵심은 ‘과장된 표현’이 아니라 ‘객관적 사실’이 아니라는 점을 놓쳤다. → 처방: ‘libel’의 정의와 예시를 다시 읽고, ‘객관적 묘사’가 아니라 ‘과장된 표현’이 ‘명예훼손’의 핵심임을 분명히 하자.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-23T05:47:26.140Z",
    "type": "빈칸(문장)",
@@ -340,25 +375,6 @@
     ],
     "answer": 3,
     "explanation": "(A) coordination / (B) general framework 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 학생은 'deletion'을 오독해 '삭제'로만 이해하고, RNR(Right Node Raising) 현상이 '삭제'가 아니라 '생략된 요소의 재구'라는 점을 놓쳤을 수 있습니다. 또한 'hierarchical structure'를 '계층 구조'로만 해석해, 문장 구조의 '일반적인 틀'이라는 의미를 놓쳤습니다. → 처방: RNR 현상이 '삭제'가 아니라 '생략된 요소의 재구'임을 기억하고, 'hierarchical structure'는 '일반적인 틀'로 해석하는 연습을 하세요.\n② 진단: 학생은 'ambiguity'를 '다의성'으로만 이해해, 문장 구조의 '모호성'이 아니라 '조합의 문제'라는 점을 놓쳤습니다. 또한 'linear order'를 '선형 순서'로만 해석해, 문장 구조의 '계층적 틀'이라는 의미를 놓쳤습니다. → 처방: 'ambiguity'는 여기에서 '조합의 문제'로, 'linear order'는 '계층적 틀'로 해석하는 연습을 하세요.\n④ 진단: 학생은 'ellipsis'를 '생략'으로만 이해해, RNR 현상이 '생략'이 아니라 '생략된 요소의 재구'라는 점을 놓쳤습니다. 또한 'surface form'을 '표면 형태'로만 해석해, 문장 구조의 '일반적인 틀'이라는 의미를 놓쳤습니다. → 처방: RNR 현상이 '생략'이 아니라 '생략된 요소의 재구'임을 기억하고, 'surface form'은 '일반적인 틀'로 해석하는 연습을 하세요.\n⑤ 진단: 학생은 'conjunction'을 '접속'으로만 이해해, RNR 현상이 '접속'이 아니라 '생략된 요소의 재구'라는 점을 놓쳤습니다. 또한 'syntactic category'를 '통사 범주'로만 해석해, 문장 구조의 '일반적인 틀'이라는 의미를 놓쳤습니다. → 처방: RNR 현상이 '접속'이 아니라 '생략된 요소의 재구'임을 기억하고, 'syntactic category'는 '일반적인 틀'로 해석하는 연습을 하세요.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T23:36:53.099Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being c__________. This would suggest that these strings are constituents. However, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around this problem? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an Adjunct. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] coordinated — 문단의 논지상 이 자리에는 'coordinated'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
