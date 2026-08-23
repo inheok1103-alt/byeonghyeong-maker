@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-23T17:38:38.017Z",
+ "updated": "2026-08-23T18:52:11.872Z",
  "samples": [
+  {
+   "ts": "2026-08-23T18:50:41.057Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.25,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.25)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "A (A) [HUT / CASTLE] IN THE AIR (B) [consonants / vowels]. The verbal root in Semitic is not a pronounceable chunk like English 'eat' or Latin `ed-', but a group of just three consonants, like the Arabic 1-b-s, which means 'wear', or s- -m, which means 'be at peace'. But how can a vowel-less group of three consonants ever mean anything, if it cannot even stand up on its own three legs and be pronounced unaided? The answer is that such roots do not have to be spoken by themselves, because the root is an abstract notion, which comes to life only when it is superimposed on some templates: patterns of (mostly) vowels, which have three empty slots for the three consonants of the root. To take one example, the Arabic (C) [chaos / template] OaOiOa forms the past tense (in the third person `he'), so if you want to say 'he was at peace', you just insert the root s- i-m (`be at peace') into that template, to get: 37",
+    "choices": [
+     "(A) CASTLE - (B) consonants - (C) template",
+     "(A) HUT - (B) consonants - (C) template",
+     "(A) HUT - (B) vowels - (C) chaos",
+     "(A) CASTLE - (B) vowels - (C) chaos",
+     "(A) HUT - (B) vowels - (C) template"
+    ],
+    "answer": 2,
+    "explanation": "정답 조합: (A) CASTLE - (B) consonants - (C) template. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘CASTLE’을 골랐다는 것은 ‘공중에 떠 있는 무언가’가 ‘소리 없는 세 개의 자음’과 관련 있다고 오해한 것. 지문은 ‘HUT’이 ‘공중에 떠 있는’ 비유로 쓰였음을 보여주며, ‘CASTLE’은 ‘기둥이 약한’ 비유로만 언급됨. → 처방: ‘HUT’을 선택하도록 유도하는 문장(‘stand up on its own three legs’)을 다시 읽고, ‘HUT’이 ‘세 개의 다리로 서 있지 못한’ 비유임을 떠올리기.\n③ 진단: ‘vowels’를 골랐다는 것은 ‘세 개의 빈 자리’가 ‘모음’으로 채워진다는 지문의 핵심 내용을 놓친 것. 지문은 ‘vowels’가 ‘템플릿’을 구성한다고 설명하며, ‘chaos’는 ‘무질서’를 뜻하는 단어일 뿐 문맥에 맞지 않음. → 처방: ‘템플릿’이란 ‘모음으로 이뤄진 틀’이라는 점을 기억하고, ‘vowels’를 ‘consonants’와 대비하여 선택하기.\n④ 진단: ‘CASTLE’을 선택한 오류는 ①번과 같고, ‘chaos’를 선택한 것은 ‘템플릿’이란 단어가 아닌 ‘무질서’를 뜻하는 ‘chaos’를 잘못 고른 것. 지문은 ‘템플릿’이 ‘모음으로 이뤄진 틀’이라는 점을 분명히 함. → 처방: ‘템플릿’이란 ‘모음으로 이뤄진 패턴’이라는 뜻을 기억하고, ‘chaos’는 문맥에 맞지 않음을 확인하기.\n⑤ 진단: ‘HUT’을 고른 것은 옳지만, ‘vowels’를 선택한 것은 ‘세 개의 빈 자리’가 ‘모음’으로 채워진다는 핵심 내용을 놓친 것. 지문은 ‘템플릿’이 ‘모음으로 이뤄진 틀’이라는 점을 강조함. → 처방: ‘템플릿’이란 ‘모음으로 이뤄진 틀’이라는 뜻을 떠올리고, ‘vowels’를 ‘consonants’와 대비하여 선택하기."
+   }
+  },
+  {
+   "ts": "2026-08-23T18:51:24.781Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 4건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the abstract function of consonantal roots in Semitic languages through vowel templates",
+     "the foundational role of consonants in Semitic linguistic frameworks",
+     "how consonant pronunciation alone generates semantic meaning",
+     "the obligatory presence of vowel templates across all language families",
+     "the prevalence of three-consonant root systems in Semitic lexicons"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Abstract consonantal roots in Semitic languages functioning through vowel templates'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘foundational role of consonants(②)’는 지문에서 ‘consonantal roots 가 템플릿 위에 올려질 때만 의미를 갖는다’는 핵심 내용을 무시하고, ‘consonant 자체가 언어의 기반’이라는 오해를 보임. → 처방: ‘consonant 가 템플릿 없이도 의미를 갖는가’를 먼저 떠올리고, 지문에서 ‘템플릿이 없으면 의미가 드러나지 않는다’는 점을 확인할 것.\n③ 진단: ‘consonant 발음만으로 의미가 생긴다(③)’는 오해는 지문에서 ‘consonant root 는 템플릿 없이 혼자서는 의미가 없다’는 사실을 간과한 결과임. → 처방: ‘consonant root 가 템플릿 없이도 의미를 가질 수 있는가’를 질문해 보고, 지문에서 ‘템플릿이 필요하다는 설명’을 다시 읽을 것.\n④ 진단: ‘모든 언어에서 vowel 템플릿이 필수(④)’는 지문이 ‘Semitic 언어에만 해당되는 설명’이라는 한계를 무시하고 과장된 일반화로 오독함. → 처방: ‘이 설명이 Semitic 언어에만 적용되는지’를 먼저 확인하고, 지문에서 ‘Semitic 언어’라는 한정어를 찾도록 할 것.\n⑤ 진단: ‘Semitic 어휘에서 3-consonant root 가 보편적(⑤)’은 지문에서 ‘3-consonant root 가 템플릿과 결합해 의미를 만든다’는 설명을 ‘보편성’으로 오해한 것임. → 처방: ‘이 설명이 Semitic 언어의 ‘일반적 특징’을 설명하는지’를 먼저 묻고, 지문에서 ‘템플릿과 결합’이라는 조건을 확인할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Abstract consonantal roots in Semitic languages functioning through vowel templates]"
+   }
+  },
   {
    "ts": "2026-08-23T17:37:16.325Z",
    "type": "제목",
@@ -263,74 +332,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Suggest — 문단의 논지상 이 자리에는 'Suggest'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T10:49:06.268Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "AWRY (uh RYE) adj off course; twisted to one side • The hunter’s bullet went awry. Instead of hitting the bear, it hit his truck. • When we couldn’t find a restaurant, our dinner plans went awry. • The old woman’s hat was awry; it had dipped in front of her left eye. AXIOM (AK see um) n a self-evident rule or truth; a widely accepted saying “Everything that is living dies” is an axiom. An axiom in geometry is a rule that doesn’t have to be proved because its truth is accepted as obvious, self-evident, or unprovable. Quick Quiz #13 Match each word in the first column with its definition in the second column. Check your answers here. 1. autonomous a. greed 2. avarice b. like an uncle 3. avow c. self-evident truth 4. avuncular d. acting independently 5. awry e. claim 6. axiom f. off course B BANAL (buh NAL) adj unoriginal; ordinary • The dinner conversation was so banal that Amanda fell asleep in her dessert dish.\n\n─────────\n[요약문] The summary of the word list reveals that (A) denotes a deviation from an intended path and (B) signifies a universally accepted principle.",
-    "choices": [
-     "(A) precision … (B) contradiction",
-     "(A) intention … (B) anomaly",
-     "(A) deviation … (B) principle",
-     "(A) alignment … (B) hypothesis",
-     "(A) conformity … (B) exception"
-    ],
-    "answer": 3,
-    "explanation": "(A) deviation / (B) principle 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T09:44:47.586Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.43,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Two other morphological criteria for adjective status are also sometimes useful. First, an -ing word is signalled as an adjective if it begins with the (A) [negative / affirmative] prefix un-. Thus unyielding is an (B) [noun / adjective] because the prefix un- negates the whole of the rest of the word: un- + yielding; on the other hand, it cannot be a verb, as there is no verb *unyield. (Note, incidentally, that there are verbs such as unwind/unwinding, where the un- is a different prefix: it is reversative rather than negative in meaning.) Second, an -ing word is an adjective if it can be converted into an (C) [adverb / conjunction] by the addition of an -ly, as in surprisingly, appallingly. 2.4 Survey of function words Function words can be broadly grouped as follows according to the units they are most closely related to: Grammatical unit Function word class noun phrase determiners, pronouns, numerals, prepositions verb phrase primary auxiliaries, modal auxiliaries, adverbial particles phrase/clause coordinators clause subordinators, wh-words, the negator not, existential there, the infinitive marker to",
-    "choices": [
-     "(A) negative - (B) noun - (C) conjunction",
-     "(A) negative - (B) adjective - (C) adverb",
-     "(A) affirmative - (B) noun - (C) conjunction",
-     "(A) affirmative - (B) adjective - (C) adverb",
-     "(A) affirmative - (B) adjective - (C) conjunction"
-    ],
-    "answer": 2,
-    "explanation": "정답 조합: (A) negative - (B) adjective - (C) adverb. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 un-가 ‘부정’을 뜻하는 접두사라는 사실을 놓침. ‘(B)’에서 unyielding 이 ‘unyield’라는 동사가 없으므로 명사가 아니라 형용사라는 이유도 못 봄. ‘(C)’에서 -ly 가 부사형 접미사라는 점을 몰라서 부사나 접속사로 헷갈림. → 처방: ‘un-’가 ‘~이 아니다’라는 뜻을 가진 부정 접두사라는 뜻과 ‘-ing’가 형용사임을 기억한 뒤, ‘-ly’를 붙이면 부사가 되는지 확인해라.\n③ 진단: ‘(A)’에서 un-가 ‘긍정’을 뜻한다고 오해. ‘(B)’에서 unyielding 이 형용사라는 사실을 무시하고 명사로 봄. ‘(C)’에서 ‘-ly’를 접속사로 잘못 이해함. → 처방: ‘un-’가 부정 접두사라는 뜻과 ‘-ing’가 형용사임을 확실히 익히고, ‘-ly’를 붙였을 때 부사가 되는지 다시 확인해라.\n④ 진단: ‘(A)’에서 un-가 부정 접두사라는 점을 알고 있지만, ‘(B)’에서 unyielding 이 형용사라는 이유를 제대로 설명하지 못함. ‘(C)’는 맞게 선택했지만, ‘(B)’에서 오류가 있음. → 처방: ‘un-’가 부정 접두사라는 뜻과 ‘-ing’가 형용사임을 정확히 이해한 뒤, ‘unyield’라는 동사가 없으므로 unyielding 이 형용사라는 이유를 설명해 보라.\n⑤ 진단: ‘(A)’에서 un-가 긍정 접두사라고 오해. ‘(B)’는 맞게 선택했지만, ‘(C)’에서 ‘-ly’를 접속사로 잘못 이해함. → 처방: ‘un-’가 부정 접두사라는 뜻과 ‘-ly’를 붙이면 부사가 된다는 사실을 다시 공부한 뒤, 문제를 다시 풀어보라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

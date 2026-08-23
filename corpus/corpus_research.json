@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T17:38:38.013Z",
+ "updated": "2026-08-23T18:52:11.868Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T18:51:36.856Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "이 코퍼스는 동사 활용(tense/aspect) 오류가 빈번하며, 특히 'give up'/'give it up', 'consider'/'should be considered' 등 기능어(modal/particle) 생략·대체 패턴이 두드러진다. 또한 'want to V' 구조의 'to' 생략 오류가 반복된다.",
+   "rule": "'want/need/try/start/stop + 동사' 구조에서 'to'가 필수일 경우, 반드시 'to'를 포함한 완전한 동사구로 출제하여 CEFR B1/B2 수준의 문법적 정확성을 평가하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T17:38:06.961Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'명사 + 전치사 + 부사' 또는 '명사 + 전치사 + 형용사' 구조에서 전치사의 오용이 빈번하며, 특히 'of'나 'to'가 'for'로 대체되는 패턴이 두드러진다.",
    "rule": "'~의 영향/결과/필요'를 뜻하는 명사구(예: 'bad influence to economics', 'systems for safe')에서 전치사 'to'는 'of' 또는 'for'로 대체될 수 없음을 강조하여 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T03:18:38.814Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거형 동사(decease/shows, pay/change → using, think/performing) 사용 시 주어와 시제 일치 오류가 빈번하며, 전치사 오류('into' → 'using', 'of' → 'in')도 자주 발생한다. 또한 'any more'와 'even' 같은 부사 위치가 문맥에 따라 변형되어야 한다.",
-   "rule": "과거형 동사가 포함된 문장에서 주어의 수(단수/복수)와 동사의 시제를 반드시 일치시킨 후, 전치사 구(예: 'into', 'of')를 문맥에 맞는 적절한 전치사(예: 'using', 'in')로 대체하여 오류를 수정하라.",
    "sample": [
     "old english",
     "university press",
