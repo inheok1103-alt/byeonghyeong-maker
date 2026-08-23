@@ -1,6 +1,77 @@
 {
- "updated": "2026-08-23T07:53:35.054Z",
+ "updated": "2026-08-23T08:55:32.661Z",
  "samples": [
+  {
+   "ts": "2026-08-23T08:50:59.843Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "참조 안내서의 인기는 기여자들 없이도 충분히 보장된다.",
+     "참조 안내서의 제작은 저자의 언어 감각에만 크게 좌우된다.",
+     "참조 안내서의 성공적 제작을 위해 수많은 기여자들의 참여가 필수적이다.",
+     "참조 안내서는 단 한 명의 기여자만으로도 충분히 대중적이고 유용한 책이 될 수 있다.",
+     "참조 안내서의 제작은 개별 저자의 노력에 전적으로 달려 있다."
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The creation of a widely used reference guide demands collaborative input from many contributors.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n① 진단: ‘기여자들 없이도 인기가 보장된다’는 말이 지문의 ‘많은 사람의 참여가 필요하다는’ 내용을 반대로 오해한 것. ‘기여자들 없이도’라는 말은 지문 어디에도 없음. → 처방: 지문에서 ‘많은 사람의 참여가 필요하다는’ 표현을 찾고, 그 이유가 ‘인기·이해·사용성’을 위한 것이라는 점을 확인할 것.\n② 진단: ‘저자의 언어 감각에만 크게 좌우된다’는 말이 지문의 ‘많은 기여자들(부모, 남편, 에이전트 등)의 도움을 받았다’는 내용을 무시한 오독. ‘오직 저자’만 강조한 것. → 처방: 지문에서 ‘많은 기여자들의 이름과 역할’을 하나씩 짚어 보면서, 저자 혼자만의 힘이 아님을 확인할 것.\n④ 진단: ‘단 한 명의 기여자만으로도’라는 말은 지문의 ‘수천 명의 충성스러운 독자들의 도움’이는 사실을 무시한 오해. ‘한 명’으로 축소한 것. → 처방: 지문에서 ‘수천 명의 독자들’이 ‘매일’ 도움을 준다는 부분을 읽고, ‘다수의 참여’가 필요하다는 점을 기억할 것.\n⑤ 진단: ‘개별 저자의 노력에 전적으로 달려 있다’는 말은 지문의 ‘많은 기여자들의 역할’을 무시한 오독. ‘전적으로’라는 말이 과장된 표현임. → 처방: 지문에서 ‘많은 기여자들의 이름과 역할’을 모두 확인하고, ‘저자 혼자만의 노력’이 아니라는 점을 분명히 할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The creation of a widely used reference guide demands collaborative input from many contributors.]"
+   }
+  },
+  {
+   "ts": "2026-08-23T08:51:18.077Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.17,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.17)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "Acknowledgments ⓐ<u>Creating and publishing a reference guide are</u> and workbook that is popular, ⓑ<u>easy to understand, and tempting to use</u> requires the input of many. My thanks go to the following: ⓒ<u>my parents which, as immigrants</u> to the United States, passed their meticulousness about speaking and writing well along to me; Gary Klehr for helping to name the book many years ago and for tireless structural editing; my husband, Lester Kaufman, ⓓ<u>for catching so many mistakes</u> before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, ⓔ<u>helps shape every rule</u>, example, and quiz. xiii",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 3,
+    "explanation": "틀린 곳은 ⓐ(Creating and publishing a reference guide are → Creating and publishing a reference guide), ⓒ(my parents which, as immigrants → my parents who, as immigrants), ⓔ(helps shape every rule → help shape every rule) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘are’를 ‘are creating’이라는 시제 혼동으로 오독하거나, ‘requires’의 주어(‘Creating and publishing a reference guide and workbook’)를 복수형으로 잘못 해석했을 수 있음. → 처방: ‘requires’의 주어가 단수(‘Creating and publishing ~ workbook’)임을 확인하고, 동사 ‘are’를 ‘is’로 고쳐야 함을 기억할 것.\n② 진단: ‘tempting’이 ‘tempted’로 잘못 이해하거나, ‘requires’의 주어와 동사의 수 일치를 무시했을 수 있음. → 처방: ‘requires’의 주어가 단수임을 확인하고, 동사 ‘are’를 ‘is’로 바꾸는 연습을 반복할 것.\n④ 진단: ‘helps’를 ‘help’로 잘못 쓰거나, ‘readers and viewers’의 복수형을 무시했을 수 있음. → 처방: ‘helps’의 주어가 복수(‘thousands of loyal readers and viewers’)임을 확인하고, 동사를 ‘help’로 고칠 것.\n⑤ 진단: ‘which’를 ‘who’로 잘못 쓰거나, ‘immigrants’의 수식 구조를 제대로 파악하지 못했을 수 있음. → 처방: ‘my parents’라는 인칭 대명사가 사람을 가리키므로 ‘which’ 대신 ‘who’를 써야 함을 기억할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-23T07:49:21.626Z",
    "type": "주제",
@@ -333,60 +404,6 @@
     ],
     "answer": 3,
     "explanation": "[어법: 준동사] 정답 ⓒ의 'how the quotation fits to'는 'how the quotation fits into'로 고쳐야 어법상 옳다.\n[오답 진단·처방]\n① 진단: ⓐ에서 'the most social form of literature'는 문장 전체가 보어 자리에 놓여 'the most social form of literature'로 써도 어법상 틀리지 않지만, 'we experience the theater as' 뒤에 오는 보어는 'the most social form of literature'가 아니라 'the most social form of literature'로 쓸 수 있는 구조가 아니다. 'as' 뒤에는 명사구가 오며, 'the most social form of literature'는 문법적으로 옳지만, 'we experience the theater as the most social form of literature'는 'theater'가 'most social form of literature'로 바뀌는 오해가 생길 수 있다. 하지만 실제 오류는 아니다. → 처방: 'as' 뒤에는 명사구가 오므로 'the theater as the most social form of literature'로 쓰는 것이 자연스럽고, 오해를 줄일 수 있다. 'as' 뒤에는 'the theater'가 보어로 오는 것이므로 'the most social form of literature'는 보어 자리에 올 수 있지만, 문맥상 'theater'를 'most social form of literature'로 바꾸는 오해가 없도록 주의한다.\n② 진단: ⓑ의 'Readers become suspicious'는 문법적으로 틀린 곳이 없지만, 지문의 흐름상 'Readers may become suspicious' 또는 'Readers often become suspicious'가 자연스러울 수 있다. 그러나 이는 오류가 아니라 스타일 차이일 뿐이다. → 처방: 글쓰기에서는 'may', 'often', 'sometimes'와 같은 부사를 넣어 독자의 반응을 더 부드럽게 표현할 수 있다. 그러나 오류는 아니므로, 이 부분을 고칠 필요는 없다.\n④ 진단: ⓔ의 'as seamless as possible'는 'as ~ as possible' 구문으로 어법상 틀리지 않지만, 'seamless'는 형용사로 'as seamless as possible'는 비교급 구문으로 쓸 수 있다. 그러나 지문에서는 'make the fit between the quotation and your text seamless'으로도 쓸 수 있으므로, 이 부분은 스타일 차이일 뿐이다. → 처방: 'as ~ as possible' 구문은 비교급 강조로 자주 쓰이므로, 이 구문을 자연스럽게 사용해도 된다. 다만, 'seamless'가 형용사이므로 'as seamless as possible'로 쓰는 것이 자연스럽다.\n⑤ 진단: ⓓ의 'the mesh of your argument'는 'mesh'가 '그물'이라는 뜻의 명사로, 'your argument 의 그물'이라는 표현은 비유적으로는 가능하지만, 'the mesh of your argument'는 'your argument 의 구조' 또는 'your argument 의 틀'로 해석될 수 있어 어법상 어색하다. 'the framework of your argument' 또는 'the structure of your argument'가 더 자연스럽다. → 처방: 'mesh'는 비유적 표현이지만, 학술 글에서는 'framework'나 'structure' 같은 명확한 단어를 쓰는 것이 좋다. 'the mesh of your argument' 대신 'the framework of your argument'로 고치면 더 명확해진다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T03:21:26.070Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Fair use: \u0007Levin claims that we experience the theater as the most social form of literature because we see it taking place before us.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 레빈은 우리가 연극을 문학의 가장 사회적인 형태로 경험한다고 주장합니다. 왜냐하면 우리는 연극이 우리 눈앞에서 펼쳐지는 것을 직접 보기 때문입니다. (구문 포인트: because 절의 원인 설명(see it taking place before us: 지각동사+현재분사 구조) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T02:07:44.986Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 2/2 다수결 5번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Because (in the relevant variety) infinitival to can only have a (A) [overt / null] spellout when the TP complement it heads is the complement of an (B) [passive / active] transitive verb-form like the perfect participle known in (84) and not when the relevant TP is the complement of a passive participle like known in (85), it follows that infinitival to must be given an overt spellout in sentences like (85). Under the analysis proposed here, verbs which take a bare infinitive complement with an accusative subject are analysed as ECM predicates which select a TP complement headed by an infinitival T which has an overt spellout as to in passive structures like (85) and a null spellout in active structures such as (84). However, one predicate which is problematic to classify in such terms is let, since it allows a bare infinitive complement in active structures like (86a) below but doesn’t normally (C) [forbid / allow] the subject of the infinitive to passivise, as we see from the ungrammaticality of sentences like (86b):",
-    "choices": [
-     "(A) null - (B) active - (C) allow",
-     "(A) null - (B) passive - (C) allow",
-     "(A) overt - (B) active - (C) allow",
-     "(A) null - (B) passive - (C) forbid",
-     "(A) overt - (B) passive - (C) allow"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) null - (B) active - (C) allow. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘(A) null’을 골랐다는 것은 ‘infinitival to’의 spellout 이 null(생략)일 때만 TP 가 능동(active) 동사형(예: (84))의 보어일 수 있다고 오해한 것. 지문은 ‘passive(수동)’ 구조(예: (85))에서만 to 가 overt(표시) spellout 을 가져야 한다고 명시함. → 처방: ‘to’의 spellout(표시/생략)은 TP 가 수동(passive) 보어일 때만 규칙이 바뀐다는 점을 정확히 기억하고, 능동/수동 구조를 구분 지어 읽기.\n② 진단: ‘(B) active’를 골랐다면 지문의 ‘perfect participle known in (84)’가 능동이 아니라 수동 구조라는 점을 놓쳤음. (84)는 ‘have known’(능동)처럼 보이나, 지문은 ‘perfect participle’이 수동(‘be known’) 구조에서 to 가 null spellout 을 가진다고 설명함. → 처방: ‘perfect participle’이 능동인지 수동인지 문맥에서 정확히 파악하기. 수동은 ‘be + p.p.’(예: ‘is known’)임을 기억하고, 지문의 예문 번호(84 vs 85)를 꼼꼼히 확인하기.\n③ 진단: ‘(C) allow’를 고르고도 오답을 냈다면 ‘let’이 능동 구조(86a)에서 bare infinitive 를 허용하지만, 수동화(infinitive 주어가 수동이 되는 것)를 ‘forbid(금지)’한다는 지문의 핵심을 놓쳤음. (86b)의 비문법성을 통해 ‘forbid’가 맞다는 사실을 확인할 수 있음. → 처방: ‘let’이 bare infinitive 를 허용하는 동시에 수동화를 금지한다는 ‘이중성’을 기억하고, 지문의 예문(86a/b)을 비교해가며 읽기.\n④ 진단: ‘(A) null’을 선택한 경우, ‘to’의 spellout 이 null(생략)일 때가 능동 구조에서만 가능하다고 오해한 것. 지문은 반대로 수동 구조(85)에서 to 가 overt(표시) spellout 을 가져야 한다고 설명함. → 처방: ‘to’의 spellout 규칙을 ‘능동→null, 수동→overt’로 정확히 암기하고, 지문의 ‘(84) vs (85)’ 구조 비교를 통해 확인하기."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T07:53:35.050Z",
+ "updated": "2026-08-23T08:55:32.657Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T08:55:01.789Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스 패턴은 동사-명사 연어와 시제 일치, 그리고 전치사 오용이 빈번한 오류로 드러났다. 특히 'explain about'처럼 불필요한 전치사 삽입이 문법 오류의 주요 원인임을 확인할 수 있었다.",
+   "rule": "'explain'은 직접 목적어를 취하므로 'explain about'가 아닌 'explain + what/how' 또는 'explain + 명사' 형태로만 사용하도록 오답지를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T07:53:07.301Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거 시제와 현재 시제가 혼용되어 문법적 오류가 발생하는 경우가 많으며, 특히 'since'와 같은 시간 표현이 현재 완료 시제와 결합되어야 할 때 오류가 빈발한다. 또한, 접속사나 부사구로 인한 문장 구조의 오류(예: 'In simple words they say')가 자주 관찰된다.",
    "rule": "'since', 'for', 'always' 등 시간 표현이 포함된 문장은 현재 완료 시제(have/has been/past participle)로 수정하여 출제하라. 예: 'it is since ages' → 'it has always been'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T15:51:08.387Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'명사+전치사+명사' 구조에서 전치사가 동사 역할(반대·지지 등)을 대신하는 오류가 빈번하며, 'for the following reasons'와 같이 전치사구가 이유 제시 패턴으로 정착되어 있음",
-   "rule": "'~에 반대하다/지지하다'를 표현할 때는 'against/for'를 동사(go against/argue for)로 변환하거나, 'oppose/support'와 같은 동사를 사용하여 전치사구를 동사구로 대체하라.",
    "sample": [
     "old english",
     "university press",
