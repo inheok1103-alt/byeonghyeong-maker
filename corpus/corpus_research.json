@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T22:41:41.990Z",
+ "updated": "2026-08-23T23:38:45.742Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T23:38:23.394Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "명사구(NP) 내 한정사(Determiner) 생략 오류가 빈번하며, 특히 'important'와 같은 형용사 중심의 NP에서 'thing' 또는 'aspect' 등 보완 명사가 필요하다는 패턴이 확인된다. 또한, 문장 종결부에서 동사구(VP) 생략이 흔하며, 이를 보완하기 위해 완전한 절 구조로 변환해야 한다.",
+   "rule": "'형용사/분사 + 명사' 구조에서 한정사가 생략된 경우, 반드시 'a/the + [명사] + thing/aspect' 등으로 보완하거나, 동사구를 추가하여 완전한 절로 변환하라. 예: 'The important is travel' → 'The important thing is traveling'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T22:41:17.744Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "이 코퍼스 패턴은 'be동사 + 형용사/과거분사 + that절' 구조에서 'be동사 + 형용사/과거분사의 생략' 오류가 빈번함을 보여준다. 또한 'for + 동명사' 대신 'to + 동사원형'이 표준임을 확인할 수 있다.",
    "rule": "'be동사 + (형용사/과거분사) + that절' 구조에서 be동사를 생략하지 않도록 하거나, 'for + 동명사'를 'to + 동사원형'으로 수정하는 오류를 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T09:01:31.778Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "원서 코퍼스에서 'enjoying in it' → 'enjoying it'로 오류 수정 패턴이 반복됨을 확인. 동명사(gerund) 뒤에 전치사가 불필요한 경우가 빈번하다는 점을 도출할 수 있음.",
-   "rule": "동명사(gerund) 구문에서 목적어 앞에 전치사 'in'을 삽입하거나 생략하는 오류를 출제할 때, 'enjoy', 'participate', 'involve' 등 동사 뒤에는 전치사 없이 직접 목적어를 취한다는 규칙을 적용하라.",
    "sample": [
     "old english",
     "university press",
