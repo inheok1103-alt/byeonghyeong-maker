@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-23T16:46:12.281Z",
+ "updated": "2026-08-23T17:38:38.017Z",
  "samples": [
+  {
+   "ts": "2026-08-23T17:37:16.325Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Does T Block Polarity Items in Negative Constructions?",
+     "Why Does T C-Command PRN Via Train Metaphor?",
+     "When Mustn’t T C-Command PRN in VP Domains?",
+     "How Do Negative Auxiliaries Always Block Polarity Items?",
+     "Does T C-Command PRN in Negative Constructions?"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Does [T mustn’t] c-command [PRN anyone]?**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 조건 누락· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘T 가 부정 구문에서 polarity item 을 막는가?’로 오해했는데, 지문은 T 가 PRN(‘anyone’을 포함하는 노드)을 c-command 하는지 여부를 다룬다. polarity item 의 ‘막음’은 c-command 관계의 결과로만 언급된다. → 처방: ‘c-command’라는 용어를 정확히 이해하고, 지문이 polarity item 의 존재가 아니라 c-command 관계 자체를 다룬다는 점을 확인하라.\n② 진단: ‘왜 T 가 PRN 을 c-command 하는가?’라는 원인·이유를 묻는 선지로 오독했는데, 지문은 c-command 의 ‘방법’이 아니라 ‘사실’을 설명한다. ‘train metaphor’는 설명 도구일 뿐, 제목의 핵심 주제가 아니다. → 처방: ‘why’가 아니라 ‘does’라는 사실 확인형 질문을 제목으로 삼아야 한다는 점을 기억하라. 지문의 핵심은 c-command 의 ‘사실 여부’임을 강조하라.\n③ 진단: ‘언제 T 가 PRN 을 c-command 하지 않는가?’로 오해했는데, 지문은 부정 보조사가 포함된 T 노드가 PRN 을 c-command 한다는 ‘사실’을 논증한다. ‘when’은 시간적 조건을 묻는 선지로, 지문의 논의 범위를 벗어난다. → 처방: ‘언제’라는 시간 조건이 아니라 ‘~하는가’라는 사실 확인형 질문을 제목으로 삼아야 한다. 지문이 부정 구문에서 T 의 c-command 를 다루는지 확인하라.\n④ 진단: ‘부정 보조사가 항상 polarity item 을 막는가?’로 오해했는데, 지문은 T 노드가 PRN 을 c-command 한다는 ‘사실’을 다룬다. ‘always’는 부정 보조사의 ‘항상’ 막음 여부가 아니라 c-command 의 ‘항상’ 발생 여부를 묻는 선지로 오독됐다. → 처방: ‘항상’이라는 부사를 쓸 때는 ‘항상 c-command 하는가’를 묻는 선지로 바꿔야 한다. 부정 보조사의 역할이 아니라 c-command 관계 자체에 집중하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Does [T mustn’t] c-command [PRN anyone]?**]"
+   }
+  },
+  {
+   "ts": "2026-08-23T17:38:04.613Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '관계사' 전환 자동 선택",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 관계사를 사용하여 한 문장으로 바꿔 쓰시오.\n[원문] The T node containing the negative auxiliary mustn’t here c-commands the PRN node containing the polarity item anyone because the sister of [T mustn’t] is [VP talk to anyone], and anyone is contained within this VP, since the PRN node is one of the grandchildren of the VP node.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] anyone, which is contained within this VP, is one of the grandchildren of the VP node. (포인트: 관계사절로 'since' 절을 'which' 관계사절로 전환)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-23T16:44:59.972Z",
    "type": "네모어법ABC",
@@ -278,77 +331,6 @@
     ],
     "answer": 2,
     "explanation": "정답 조합: (A) negative - (B) adjective - (C) adverb. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘(A)’에서 un-가 ‘부정’을 뜻하는 접두사라는 사실을 놓침. ‘(B)’에서 unyielding 이 ‘unyield’라는 동사가 없으므로 명사가 아니라 형용사라는 이유도 못 봄. ‘(C)’에서 -ly 가 부사형 접미사라는 점을 몰라서 부사나 접속사로 헷갈림. → 처방: ‘un-’가 ‘~이 아니다’라는 뜻을 가진 부정 접두사라는 뜻과 ‘-ing’가 형용사임을 기억한 뒤, ‘-ly’를 붙이면 부사가 되는지 확인해라.\n③ 진단: ‘(A)’에서 un-가 ‘긍정’을 뜻한다고 오해. ‘(B)’에서 unyielding 이 형용사라는 사실을 무시하고 명사로 봄. ‘(C)’에서 ‘-ly’를 접속사로 잘못 이해함. → 처방: ‘un-’가 부정 접두사라는 뜻과 ‘-ing’가 형용사임을 확실히 익히고, ‘-ly’를 붙였을 때 부사가 되는지 다시 확인해라.\n④ 진단: ‘(A)’에서 un-가 부정 접두사라는 점을 알고 있지만, ‘(B)’에서 unyielding 이 형용사라는 이유를 제대로 설명하지 못함. ‘(C)’는 맞게 선택했지만, ‘(B)’에서 오류가 있음. → 처방: ‘un-’가 부정 접두사라는 뜻과 ‘-ing’가 형용사임을 정확히 이해한 뒤, ‘unyield’라는 동사가 없으므로 unyielding 이 형용사라는 이유를 설명해 보라.\n⑤ 진단: ‘(A)’에서 un-가 긍정 접두사라고 오해. ‘(B)’는 맞게 선택했지만, ‘(C)’에서 ‘-ly’를 접속사로 잘못 이해함. → 처방: ‘un-’가 부정 접두사라는 뜻과 ‘-ly’를 붙이면 부사가 된다는 사실을 다시 공부한 뒤, 문제를 다시 풀어보라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T08:50:59.843Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "참조 안내서의 인기는 기여자들 없이도 충분히 보장된다.",
-     "참조 안내서의 제작은 저자의 언어 감각에만 크게 좌우된다.",
-     "참조 안내서의 성공적 제작을 위해 수많은 기여자들의 참여가 필수적이다.",
-     "참조 안내서는 단 한 명의 기여자만으로도 충분히 대중적이고 유용한 책이 될 수 있다.",
-     "참조 안내서의 제작은 개별 저자의 노력에 전적으로 달려 있다."
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The creation of a widely used reference guide demands collaborative input from many contributors.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n① 진단: ‘기여자들 없이도 인기가 보장된다’는 말이 지문의 ‘많은 사람의 참여가 필요하다는’ 내용을 반대로 오해한 것. ‘기여자들 없이도’라는 말은 지문 어디에도 없음. → 처방: 지문에서 ‘많은 사람의 참여가 필요하다는’ 표현을 찾고, 그 이유가 ‘인기·이해·사용성’을 위한 것이라는 점을 확인할 것.\n② 진단: ‘저자의 언어 감각에만 크게 좌우된다’는 말이 지문의 ‘많은 기여자들(부모, 남편, 에이전트 등)의 도움을 받았다’는 내용을 무시한 오독. ‘오직 저자’만 강조한 것. → 처방: 지문에서 ‘많은 기여자들의 이름과 역할’을 하나씩 짚어 보면서, 저자 혼자만의 힘이 아님을 확인할 것.\n④ 진단: ‘단 한 명의 기여자만으로도’라는 말은 지문의 ‘수천 명의 충성스러운 독자들의 도움’이는 사실을 무시한 오해. ‘한 명’으로 축소한 것. → 처방: 지문에서 ‘수천 명의 독자들’이 ‘매일’ 도움을 준다는 부분을 읽고, ‘다수의 참여’가 필요하다는 점을 기억할 것.\n⑤ 진단: ‘개별 저자의 노력에 전적으로 달려 있다’는 말은 지문의 ‘많은 기여자들의 역할’을 무시한 오독. ‘전적으로’라는 말이 과장된 표현임. → 처방: 지문에서 ‘많은 기여자들의 이름과 역할’을 모두 확인하고, ‘저자 혼자만의 노력’이 아니라는 점을 분명히 할 것.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The creation of a widely used reference guide demands collaborative input from many contributors.]"
-   }
-  },
-  {
-   "ts": "2026-08-23T08:51:18.077Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.17,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.17)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "Acknowledgments ⓐ<u>Creating and publishing a reference guide are</u> and workbook that is popular, ⓑ<u>easy to understand, and tempting to use</u> requires the input of many. My thanks go to the following: ⓒ<u>my parents which, as immigrants</u> to the United States, passed their meticulousness about speaking and writing well along to me; Gary Klehr for helping to name the book many years ago and for tireless structural editing; my husband, Lester Kaufman, ⓓ<u>for catching so many mistakes</u> before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, ⓔ<u>helps shape every rule</u>, example, and quiz. xiii",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓐ(Creating and publishing a reference guide are → Creating and publishing a reference guide), ⓒ(my parents which, as immigrants → my parents who, as immigrants), ⓔ(helps shape every rule → help shape every rule) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘are’를 ‘are creating’이라는 시제 혼동으로 오독하거나, ‘requires’의 주어(‘Creating and publishing a reference guide and workbook’)를 복수형으로 잘못 해석했을 수 있음. → 처방: ‘requires’의 주어가 단수(‘Creating and publishing ~ workbook’)임을 확인하고, 동사 ‘are’를 ‘is’로 고쳐야 함을 기억할 것.\n② 진단: ‘tempting’이 ‘tempted’로 잘못 이해하거나, ‘requires’의 주어와 동사의 수 일치를 무시했을 수 있음. → 처방: ‘requires’의 주어가 단수임을 확인하고, 동사 ‘are’를 ‘is’로 바꾸는 연습을 반복할 것.\n④ 진단: ‘helps’를 ‘help’로 잘못 쓰거나, ‘readers and viewers’의 복수형을 무시했을 수 있음. → 처방: ‘helps’의 주어가 복수(‘thousands of loyal readers and viewers’)임을 확인하고, 동사를 ‘help’로 고칠 것.\n⑤ 진단: ‘which’를 ‘who’로 잘못 쓰거나, ‘immigrants’의 수식 구조를 제대로 파악하지 못했을 수 있음. → 처방: ‘my parents’라는 인칭 대명사가 사람을 가리키므로 ‘which’ 대신 ‘who’를 써야 함을 기억할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
