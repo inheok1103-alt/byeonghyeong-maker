@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T11:44:25.732Z",
+ "updated": "2026-08-23T13:05:39.958Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T13:05:12.545Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'의미상 필수적 한정사(the) 누락'이 문법오류로 빈번하다는 패턴을 확인했다. 특히 대명사·관계대명사·수식어구 뒤의 명사구에서 the가 선택적으로 빠지거나 오용된다.",
+   "rule": "의미상 특정 대상을 가리키는 명사구(예: '장소', '사람들', '것들') 뒤에는 반드시 정관사 'the'를 첨가하여 문장을 완성하라. 단, 고유명사·불가산명사·복수명사 일반화는 제외한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T11:43:58.895Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거형 동사(reduced)와 현재형 동사(are)의 혼동, 그리고 접속사 앞의 콤마 사용 오류가 빈번히 관찰된다. 또한 소유격이나 복수형 표기(apostrophe) 오류가 두드러진다.",
    "rule": "학생들이 동사 시제(과거형 vs 현재형)나 소유격/복수형 표기(apostrophe) 오류를 범하지 않도록, 원문에서 해당 연어(예: 'have to reduce', 'are young people')를 정확히 복제한 뒤, 오답 선택지에서는 시제·표기 오류를 의도적으로 삽입하여 오답률을 높인다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T19:52:07.466Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 빈도 높은 'old English', 'university press', 'New York' 등은 고유명사/명사구 패턴으로, 학술적·문장 구조적 맥락에서 자주 등장함을 확인할 수 있다. 또한 'past tense'와 'present tense'의 혼용이 문체적 자연스러움을 높이지만, 오류 수정 시 시제 일관성이 중요하다.",
-   "rule": "원서 코퍼스 기반 변형문제 출제 시, 고유명사(예: 'New York', 'English grammar')나 학술용어(예: 'noun phrase', 'reason relations')가 포함된 문장은 시제·수식어 일관성을 유지한 채 오류를 삽입하거나 수정할 수 있도록 설계하라. 예를 들어, 'The university press published the old English grammar book.' → 'The university press *publishes* the old English grammar book *incorrectly*.'와 같이 시제·수식어 오류를 결합하여 내신 변형 문제를 구성하라.",
    "sample": [
     "old english",
     "university press",
