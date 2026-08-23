@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T15:40:26.037Z",
+ "updated": "2026-08-23T16:46:12.277Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T16:45:45.039Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "과거 시제와 현재 시제의 혼동이 빈번하며, 'must have + 과거분사' 구조가 '과거에 ~했을 것이다'로 사용됨을 확인했다. 또한 'help'가 'help + 목적어 + 동사원형'으로 연어화되어 있음을 확인했다.",
+   "rule": "시제 혼동 오류를 출제할 때는 'must have + 과거분사'와 '과거 시제'를 혼용하는 유형을 반드시 포함하고, 'help + 목적어 + 동사원형' 연어 패턴을 오답지에 포함하여 학생들이 연어 오류를 스스로 발견하도록 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T15:40:01.072Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'one the other one'와 같은 중복 표현, 'good situstion'과 같은 철자 오류, 'with theirs'와 같은 소유격 오용이 CEFR A2~B1 수준의 오류 패턴으로, 'one way or the other'와 같은 관용구와 'to them'과 같은 전치사 구문의 정확한 사용이 난이도 조정의 핵심임을 확인함.",
    "rule": "CEFR B1 수준의 문법 오류 문제를 출제할 때는, 관용구(one way or the other), 전치사 구문(to them), 그리고 중복 표현(one the other one)을 의도적으로 오용한 문장을 제시하여 학생들이 올바른 형태를 선택하도록 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T23:43:32.089Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'and'로 연결된 동사구는 often 병렬 구조를 유지하며, 시제 일관성이 중요하다. 또한 'and' 뒤의 절은 콤마로 분리하는 경우가 많다.",
-   "rule": "원서 코퍼스 패턴을 반영하여 'and'로 연결된 동사구는 병렬 구조를 유지하고, 시제를 일치시키며, 'and' 뒤의 절은 콤마로 분리하여 문법적으로 명확히 구분하라.",
    "sample": [
     "old english",
     "university press",
