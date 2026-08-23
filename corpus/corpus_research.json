@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T04:08:10.561Z",
+ "updated": "2026-08-23T04:54:50.728Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T04:54:25.221Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "원서 코퍼스에서 'that' 절이 동사(예: said, obvious, meant) 뒤에 자주 등장하는 패턴을 확인할 수 있다. 또한 'to 부정사'가 'for' 대신 사용되는 연어(예: harmful to people)가 빈번하다.",
+   "rule": "영어 문장에서 동사(예: say, mean, obvious)가 후치사(that, to) 없이 직접 목적어를 취할 때, 오답으로 'that 절' 또는 'to 부정사'를 생략한 형태를 제시하여 오류를 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T04:07:41.103Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제/현재시제 혼용, 관사 누락, 전치사 오용, 철자 오류가 빈번한 패턴임을 확인. 특히 'need + 복수명사(불가산)'의 오용과 'such as' 뒤의 명사구 통일성 결여가 두드러짐.",
    "rule": "'need + 복수명사(불가산) + 전치사(for) + such as + 복수명사(가산)' 구조에서, 'need' 뒤에는 복수명사(가산)나 불가산 명사를 쓰고, 'such as' 뒤에는 통일된 형태(복수명사/가산명사)로 작성하라. 예: 'They need cars for many things such as transportation, entertainment, and business.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T11:45:47.343Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 'between two' 패턴(예: between two entities, between two systems)과 유사하게, 한국어 문장에서도 '~와 ~사이' 또는 '~와 ~간의' 구조가 빈번히 등장하며, 이 구조는 문법적 오류(예: 전치사 오용, 관사 생략)를 유발한다.",
-   "rule": "'A와 B의 관계/상태/행동'을 나타낼 때는 'A와 B 사이의 [명사]' 또는 'A와 B 간의 [명사]'로 반드시 전치사 '사이의/간의'를 사용하도록 강제하는 문항을 출제하라.",
    "sample": [
     "old english",
     "university press",
