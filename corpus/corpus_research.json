@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T14:44:23.735Z",
+ "updated": "2026-08-23T15:40:26.037Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T15:40:01.072Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 'old english', 'english language' 등 명사구 패턴과 'reason relations'(인과 관계) 패턴이 문장 내 논리적 연결에서 오류 발생 가능성을 높인다. 또한 'present/past tense' 혼용과 'direct object'의 수/단수 오류가 빈번하다.",
+   "rule": "원서 코퍼스의 'noun phrase'와 'reason relations' 패턴을 활용한 변형문제에서는, 문맥상 인과관계(so, because 등)를 나타내는 절에서 시제 일관성과 주어-동사 수 일치를 반드시 확인하도록 한다. 특히 'it is hoped will'와 같은 잘못된 조동사+동사 결합은 'it is hoped that S will V' 또는 'S will V'로 수정되도록 오류 유도문을 설계한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T14:43:56.837Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'and'로 연결된 동사구는 often 병렬 구조를 유지하며, 시제 일관성이 중요하다. 또한 'and' 뒤의 절은 콤마로 분리하는 경우가 많다.",
    "rule": "원서 코퍼스 패턴을 반영하여 'and'로 연결된 동사구는 병렬 구조를 유지하고, 시제를 일치시키며, 'and' 뒤의 절은 콤마로 분리하여 문법적으로 명확히 구분하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T22:51:19.802Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거 시제와 현재 시제가 혼용된 문장에서 시간적 흐름의 일관성이 깨질 경우 오류가 빈발하며, 특히 'after returning'과 같은 시간 표현 뒤에는 과거 시제(was tired)가 필수적이다.",
-   "rule": "시간적 순서가 명확한 문맥(예: 'after returning')에서는 모든 동사가 과거 시제(was tired, meant 등)로 통일되어야 하며, 중간에 현재 시제(is meant)가 끼어들면 오류로 처리한다.",
    "sample": [
     "old english",
     "university press",
