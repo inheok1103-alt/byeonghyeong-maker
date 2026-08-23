@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T21:38:49.641Z",
+ "updated": "2026-08-23T22:41:41.990Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T22:41:17.744Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'as'를 '~로'라는 의미로 사용할 때, 'considered as'는 오류가 빈발하며 'considered' 단독 사용이 자연스럽다. 또한 'adds'는 '광고'가 아닌 '덧붙임'을 뜻하므로 'ads'로 수정해야 한다.",
+   "rule": "'considered as'는 CEFR B1 수준에서 'considered'로 축약하여 사용하도록 문제를 출제하며, 'adds'는 'ads'로 오류를 유도하는 문항을 제작한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T21:38:28.601Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "원서 코퍼스에서 'enjoying in it' → 'enjoying it'로 오류 수정 패턴이 반복됨을 확인. 동명사(gerund) 뒤에 전치사가 불필요한 경우가 빈번하다는 점을 도출할 수 있음.",
    "rule": "동명사(gerund) 구문에서 목적어 앞에 전치사 'in'을 삽입하거나 생략하는 오류를 출제할 때, 'enjoy', 'participate', 'involve' 등 동사 뒤에는 전치사 없이 직접 목적어를 취한다는 규칙을 적용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T08:02:53.137Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거 시제 동사와 현재 시제 동사가 혼용된 문장에서 오류가 자주 발생하며, 접속사나 전치사의 오용으로 문법적 일관성이 깨지는 경우가 많다.",
-   "rule": "시제 일관성과 접속사/전치사의 정확한 사용을 요구하는 문항을 설계할 때에는, 주어의 수(단수/복수)와 동사의 시제(현재/과거)를 일치시키는 규칙을 반드시 포함하라.",
    "sample": [
     "old english",
     "university press",
