@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-23T13:48:33.769Z",
+ "updated": "2026-08-23T14:44:23.738Z",
  "samples": [
+  {
+   "ts": "2026-08-23T14:43:53.360Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 14 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'widespread', 'remoteness', 'influence' / 12~16단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The mayor's presence in four city areas revealed his widespread influence rather than remoteness.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-23T13:47:29.950Z",
    "type": "목적",
@@ -344,39 +363,6 @@
     ],
     "answer": 4,
     "explanation": "밑줄 친 부분은 'The phrase vividly exaggerates the executive's flaws to emphasize the severity of the defamation in the libel case.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘occasional(간 occasio)’과 ‘flaws(결점)’이란 단어에만 집중해 ‘libel(명예훼손)’의 본질인 ‘과장된 표현으로 명예를 훼손하는 행위’를 보지 못했다. 지문에서 ‘libel’의 정의는 ‘허위 사실로 남의 명예를 훼손하는 것’인데, 이 선지는 ‘occasional flaws’를 언급하며 ‘libel’의 핵심인 ‘과장’을 놓쳤다. → 처방: ‘libel’의 정의와 예시(‘stinking, no-good, corrupt…’)를 다시 읽고, ‘과장된 표현’이 ‘severe defamation(심각한 명예훼손)’임을 분명히 기억하자.\n② 진단: ‘directly(직접)’와 ‘literal(문자 그대로)’이라는 단어에만 의존해 ‘libel’의 정의(‘허위 사실로 명예를 훼손’)를 무시했다. 지문에서 ‘libel’의 핵심은 ‘허위 사실’이 아니라 ‘과장된 표현으로 명예를 훼손하는 행위’라는 점을 놓쳤다. → 처방: ‘libel’의 정의와 예시를 함께 보며, ‘직접 묘사’가 아니라 ‘과장된 표현’이 ‘명예훼손’의 핵심임을 파악하자.\n③ 진단: ‘literally(문자 그대로)’라는 단어를 ‘literal meaning(직접적 의미)’으로만 이해해 ‘libel’의 정의(‘허위 사실로 명예를 훼손’)를 무시했다. 지문에서 ‘libel’의 핵심은 ‘과장된 표현’이 아니라 ‘허위 사실’이 아니라는 점을 놓쳤다. → 처방: ‘libel’의 정의와 예시를 다시 읽고, ‘문자 그대로의 의미’가 아니라 ‘과장된 표현’이 ‘명예훼손’의 핵심임을 기억하자.\n⑤ 진단: ‘specific adjectives(구체적 형용사)’와 ‘objectively(객관적으로)’라는 단어에만 집중해 ‘libel’의 정의(‘허위 사실로 명예를 훼손’)를 무시했다. 지문에서 ‘libel’의 핵심은 ‘과장된 표현’이 아니라 ‘객관적 사실’이 아니라는 점을 놓쳤다. → 처방: ‘libel’의 정의와 예시를 다시 읽고, ‘객관적 묘사’가 아니라 ‘과장된 표현’이 ‘명예훼손’의 핵심임을 분명히 하자.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T05:47:26.140Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 지문 축소 의심(67%) — 정보 손실 여부 확인 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "We can then say that V agrees with, assigns accusative case to and triggers raising to the outer edge of VP of the object DP the truck. Because the verb load raises to v, it comes to precede both the raised direct object the truck and the VP-adverb carefully. The syntax of (74b) differs only in that carefully is a vP adverb in (74b), whereas it is a VP-adverb in (74a). If we suppose that verbs like load are essentially affixal in nature (in the sense that they must adjoin to a null causative light verb with an AGENT external argument) we can account for the ungrammaticality of intransitive structures such as (73a) *The truck will load with hay. [ ]",
-    "choices": [
-     "Evidence suggests that direct object complements always originate above PP complements in transitive verb structures.",
-     "This claim contradicts the syntactic behavior of transitive verbs with both DP and PP complements in our analysis.",
-     "The direct object DP is assumed to originate above the PP complement and never raises to a higher position.",
-     "Our analysis posits that the direct object DP starts beneath the PP complement but later moves upward to a position higher than the PP.",
-     "The assumption that the direct object originates below the PP is irrelevant to the grammaticality of sentences with transitive verbs."
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 원문 'A key assumption made in our analysis of transitive verbs which have both a DP and a PP complement is that the direct DP originates below the PP but subsequently raises to a position above PP. Some evidence in support of the claim that direct object complements originate below PP complements comes from sentence pairs such as the following:'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'the truck'이 PP(PP complement)보다 위에 있는 위치에서 시작한다고 설명하지 않았으므로, PP 와 DP 의 위치 관계를 직접 언급한 이 선택지는 지문의 내용과 맞지 않는다. → 처방: 선지를 고를 때는 지문에 나온 'PP complement'와 'direct object DP'의 위치 관계를 정확히 확인하고, 지문에서 말한 'originate'와 'moves upward'를 기준으로 선택하라.\n② 진단: 지문은 PP complement 가 DP 보다 아래에 있다고 주장하지 않으므로, '이 주장이 모순된다'는 말은 틀렸다. 지문은 DP 가 PP 보다 위에 있다고 설명한다. → 처방: 지문의 주장(DP 가 PP 보다 위에 있음)을 정확히 이해하고, '모순'이라는 말이 나오면 지문의 내용을 다시 확인하라.\n③ 진단: 지문은 DP 가 PP 보다 위에 있다고 주장하지, '절대 올라가지 않는다'고 말하지 않았다. 'never raises'라는 표현은 지문의 내용과 다르다. → 처방: 지문에서 'raises to a higher position'이라는 말이 나왔으므로, '절대' 또는 'never' 같은 절대적인 표현이 나오면 주의하라.\n⑤ 진단: 지문은 DP 가 PP 아래에서 시작한다는 가정을 받아들이지 않으므로, '무관하다'는 말은 틀렸다. 지문은 DP 가 PP 위에 있다고 가정한다. → 처방: 지문의 가정을 정확히 읽고, '무관하다' 또는 '관련 없다'는 말이 나오면 그 선택지를 의심하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]

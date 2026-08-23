@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T13:48:33.765Z",
+ "updated": "2026-08-23T14:44:23.735Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T14:43:56.837Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "과거형/현재형 동사 사용의 오류가 빈번하며, 특히 'be + 과거분사' 구문의 생략이나 오용이 두드러진다. 또한 'expert'와 같은 명사의 복수형 오류가 다수 관찰된다.",
+   "rule": "CEFR B1-B2 수준에서 'be + 과거분사' 구문(예: 'be skilled', 'be aware')의 정확한 사용을 검증하는 문항을 출제하라. 특히 능동태/수동태 혼동 오류(예: 'get skill' → 'get skilled')를 집중적으로 다룬다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T13:48:09.528Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거 시제와 현재 시제가 혼용된 문장에서 시간적 흐름의 일관성이 깨질 경우 오류가 빈발하며, 특히 'after returning'과 같은 시간 표현 뒤에는 과거 시제(was tired)가 필수적이다.",
    "rule": "시간적 순서가 명확한 문맥(예: 'after returning')에서는 모든 동사가 과거 시제(was tired, meant 등)로 통일되어야 하며, 중간에 현재 시제(is meant)가 끼어들면 오류로 처리한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T21:46:36.923Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'reasons'가 복수형으로 쓰이는 경우 'these'를 수식어로 사용해야 하며, 'the state'는 관사 필수 명사구임. 또한 'migrating reason'은 'reasons for migration'으로 재구조화되어야 자연스러움.",
-   "rule": "복수형 오류가 의심되는 'reason(s)' 뒤에는 반드시 'these/those'를 수식어로 붙이고, 'state'는 관사 없이 쓰이지 않도록 하며, 'migrating reason'은 'reasons for migration'으로 재구조화하여 문장을 완성하라.",
    "sample": [
     "old english",
     "university press",
