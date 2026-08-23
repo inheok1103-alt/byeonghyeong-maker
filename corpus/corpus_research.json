@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T02:08:29.146Z",
+ "updated": "2026-08-23T03:21:55.942Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T03:21:28.527Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스의 실제 패턴에서 '과거시제'와 '현재완료시제'가 혼용되지 않고, 문맥에 따라 엄격히 구분되어 사용됨을 확인했다. 또한, 문장의 구조적 복잡성이 낮아질수록 오류 발생 가능성이 높아지며, 특히 '명사구+동사'의 단순 연결 구조에서 시제 오류가 빈발함을 발견했다.",
+   "rule": "'과거시제(had gone) 대신 현재완료시제(have gone)를 사용해야 하는 문맥에서는, '과거의 특정 시점'이 아닌 '현재까지의 결과'나 '경험'을 강조하는지 반드시 확인하라. 오류 유형: [과거시제 오용] → [현재완료시제 필수].",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T02:08:03.991Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거 시제 동사가 수동태로 오용되는 경우가 빈번하며, 특히 'mention'과 같은 동사가 'is mentioned'로 수동태로 교정되는 패턴이 두드러진다.",
    "rule": "수동태가 필요한 문맥(예: '~에 의해 언급되다')에서 과거 시제 동사를 사용할 경우, 반드시 'be + 과거분사' 형태로 변환하여 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T09:56:18.643Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'because' 구문에서 시간 표현(과거시제)과 무의미한 명사구('unmeaningful subjects')가 결합될 때, 'spend time ~ing' 구조로 수정하는 패턴이 반복된다. 또한 'is they have to'와 같은 주어-동사 위치 오류가 빈번하다.",
-   "rule": "'because' 또는 'which means that' 절에서 과거시제 동사와 무의미한 명사구('unmeaningful', 'disease' 등)가 결합되면, 'They spent time in ~ing' 또는 'which means they will ~' 형태로 수정하는 오류 유형을 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",
