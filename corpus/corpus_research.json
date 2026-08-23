@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T03:21:55.942Z",
+ "updated": "2026-08-23T04:08:10.561Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T04:07:41.103Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어에서 'the + another'는 절대 사용되지 않으며, 'the + other'로 교정해야 한다. 또한 'exotic'의 오타, 'luxury'의 복수형 오류, 'encourages'의 동사 형태 오류가 빈번히 발생한다.",
+   "rule": "'the another'는 무조건 'the other'로 수정하고, 'luxury'는 복수형 'items'와 결합하는지 확인하며, 동사 'encourage'는 주어의 수에 맞춰 3인칭 단수형(-s)을 붙이도록 오답지를 설계한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T03:21:28.527Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 'between two' 패턴(예: between two entities, between two systems)과 유사하게, 한국어 문장에서도 '~와 ~사이' 또는 '~와 ~간의' 구조가 빈번히 등장하며, 이 구조는 문법적 오류(예: 전치사 오용, 관사 생략)를 유발한다.",
    "rule": "'A와 B의 관계/상태/행동'을 나타낼 때는 'A와 B 사이의 [명사]' 또는 'A와 B 간의 [명사]'로 반드시 전치사 '사이의/간의'를 사용하도록 강제하는 문항을 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T10:51:11.144Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거 시제 동사가 수동태로 오용되는 경우가 빈번하며, 특히 'mention'과 같은 동사가 'is mentioned'로 수동태로 교정되는 패턴이 두드러진다.",
-   "rule": "수동태가 필요한 문맥(예: '~에 의해 언급되다')에서 과거 시제 동사를 사용할 경우, 반드시 'be + 과거분사' 형태로 변환하여 출제하라.",
    "sample": [
     "old english",
     "university press",

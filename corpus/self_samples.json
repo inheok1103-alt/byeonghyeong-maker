@@ -1,6 +1,76 @@
 {
- "updated": "2026-08-23T03:21:55.946Z",
+ "updated": "2026-08-23T04:08:10.565Z",
  "samples": [
+  {
+   "ts": "2026-08-23T04:06:44.041Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": -0.5,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.50)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "(A) [COUNTERFACTUALS / factuals] 91 that by saying that the similarity criteria for this counterfactual include the laws of nature. Unfortunately, the kangaroos required to test the hypothesis are highly (B) [natural / unnatural] beasts. They have an extraordinary high-speed bounding gait, like a two-legged cheetah, and insufficient ways of keeping their balance. This scenario must presuppose very unusual patterns for the evolution of species. Given the laws of nature governing biology, a kangaroo like ours except for the tail would have evolved some way of not toppling over, by walking instead of leaping, or developing a four-footed gait, or some other dodge. The hypothetical kangaroo is a (C) [monster / ordinary]. Some laws of nature, but not others, are carried over to establish the similarity we want between the actual and hypothetical worlds. Generally, the way we calculate what similarity requires depends on the understood nature of the hypothesis. For example, consider the features that might hold in tailless kangaroo worlds listed in (28): (28) Kangaroos have no tails, and",
+    "choices": [
+     "(A) factuals - (B) unnatural - (C) monster",
+     "(A) COUNTERFACTUALS - (B) unnatural - (C) monster",
+     "(A) COUNTERFACTUALS - (B) natural - (C) ordinary",
+     "(A) factuals - (B) natural - (C) monster",
+     "(A) factuals - (B) natural - (C) ordinary"
+    ],
+    "answer": 2,
+    "explanation": "정답 조합: (A) COUNTERFACTUALS - (B) unnatural - (C) monster. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A)는 counterfactuals(반사실적 조건문)을 다루는 내용임을 'by saying that the similarity criteria for this counterfactual include the laws of nature'라는 문장으로 확인할 수 있는데, 'factuals(사실적)'로 오독하여 틀렸다. → 처방: 지문에서 'counterfactuals'라는 단어가 나오면 반드시 반사실적 조건문을 다루는 내용임을 떠올리고, 'factuals'와 혼동하지 않도록 주의한다.\n③ 진단: '(B) unnatural'을 'natural'로 오독한 이유는 'highly unusual patterns for the evolution of species'라는 문장에서 unusual(특이한)을 overlooked(간과)하고, 'unnatural'의 의미를 제대로 파악하지 못했다. → 처방: 지문에서 'highly unusual'이나 'very unusual' 같은 표현이 나오면 'unnatural(비자연스러운)'과 연결 지어 생각해본다.\n④ 진단: '(C) monster'를 'ordinary'로 오독한 이유는 'The hypothetical kangaroo is a monster'라는 문장을 'ordinary(보통의)'로 잘못 해석했는데, 'monster'가 '기이하고 비정상적인 존재'를 뜻한다는 점을 놓쳤다. → 처방: 지문에서 'monster'가 등장하면 '기이하고 비정상적인 존재'라는 의미를 떠올리고, 'ordinary'와 혼동하지 않도록 주의한다.\n⑤ 진단: '(A) factuals'와 '(C) ordinary'를 선택한 이유는 지문의 핵심 주제가 'counterfactuals(반사실적 조건문)'임을 간과하고, 'factuals(사실적)'이나 'ordinary(보통의)'라는 평범한 단어로 오독했다. → 처방: 지문에서 'counterfactuals'가 등장하면 해당 단어가 반사실적 조건문을 다루는 핵심 키워드임을 기억하고, 평범한 단어와 혼동하지 않도록 주의한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-23T04:07:29.426Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "자연 법칙에 따라 가능한 종의 진화 패턴을 제시하려고",
+     "꼬리가 없는 캥거루의 생존 가능성에만 주목하려고",
+     "자연 법칙에 반하는 가상 시나리오의 비현실성을 지적하려고",
+     "자연 법칙에 반하는 가상 시나리오가 반드시 불가능하다고 단언하려고",
+     "자연 법칙의 한계를 넘어서는 종의 특성을 분석하려고"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'To challenge the natural plausibility of a hypothetical tailless kangaroo scenario.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문은 '꼬리가 없는 캥거루'가 자연 법칙에 따라 가능한 종이 아니라는 점을 강조하지 않고, 오히려 자연 법칙을 무시하는 가상 시나리오가 비현실적임을 지적한다. 학생은 '가능한 진화 패턴'이라는 표현에 이끌려 지문의 핵심 주장(비현실성 지적)을 놓쳤다. → 처방: 지문에서 '자연 법칙에 반하는 가상 시나리오'가 얼마나 비현실적인지 집중해서 읽고, '가능한'이라는 단서에 주의하며 주제를 파악하기.\n② 진단: 지문은 꼬리가 없는 캥거루의 생존 가능성 자체보다는, 그런 가상 시나리오가 자연 법칙을 무시한다는 점에 주목한다. 학생은 '생존 가능성'이라는 단어에만 초점을 맞추어 지문의 핵심 논지를 오해했다. → 처방: 지문의 첫 문장부터 '자연 법칙'과 '비현실성'을 연결하는 흐름을 따라가며, '생존 가능성'이 아니라 '비현실성'을 기준으로 답을 찾기.\n④ 진단: 지문은 '꼬리가 없는 캥거루'가 자연 법칙에 반한다는 점을 지적하지만, 그것이 '반드시 불가능하다'고 단언하지 않는다. 학생은 '반드시 불가능'이라는 절대적 표현에 이끌려 지문의 유보적 태도를 오해했다. → 처방: 지문에서 'very unusual patterns'이나 'monster' 같은 표현이 비현실성을 강조하지만, '반드시 불가능'이라는 강경한 표현은 없다는 점을 확인하기.\n⑤ 진단: 지문은 '종의 특성'을 분석하는 것이 아니라, 자연 법칙을 무시한 가상 시나리오가 비현실적임을 지적한다. 학생은 '종의 특성'이라는 단어가 눈에 띄어 지문의 핵심 주제를 잘못 잡았다. → 처방: 지문의 첫 문장과 마지막 문장을 비교해 '자연 법칙'과 '비현실성'이 핵심 주제임을 확인하고, '종의 특성'이라는 단어에만 집중하지 않기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To challenge the natural plausibility of a hypothetical tailless kangaroo scenario.]"
+   }
+  },
   {
    "ts": "2026-08-23T03:18:16.007Z",
    "type": "빈칸(어구)",
@@ -285,76 +355,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'The captivating allure of calypso music and the mythological nymph Calypso'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The captivating allure of calypso music and the mythological nymph Calypso]\n[오답 진단·처방]\n① 진단: 지문은 칼립소 음악의 매력과 칼립소 님프의 매력이 '비슷하다'고만 말하고, '영향력'의 '정도'까지 비교하지 않음. 학생은 '영향력'이라는 단어를 보고 '정도'까지 포함했다고 오독. → 처방: 지문에서 '비슷한 매력'이라는 표현에 집중하고, '영향력'이라는 단어가 나오면 지문에서 그 정도를 설명하는지 확인하기.\n② 진단: 칼립소 음악의 기원이 '신화'에서 나왔다고 오해. 지문은 칼립소 음악의 이름이 '신화 속 이름과 비슷해서' 그렇게 불리게 되었다고만 설명하고, '기원'은 아프리카 단어에서 왔다고 함. → 처방: 지문에서 '기원'이라는 단어가 나오면 그것이 '신화'에서 비롯된 것인지, 아니면 다른 곳에서 비롯된 것인지 정확히 구분하기.\n③ 진단: 칼립소 음악의 리듬이 관광에 미치는 영향을 '주제'로 오해. 지문은 칼립소 음악의 리듬이 관광에서 들리는 예시만 언급하고, 그것이 주제가 아님. → 처방: 지문에서 '관광'이라는 단어가 나오면 그것이 '예시'인지, '주제'인지 명확히 구분하고, 주제는 전체 글의 핵심 내용을 포함하는지 확인하기.\n④ 진단: 모든 신화적 인물과 음악 스타일이 '보편적인 매력'을 지닌다고 일반화. 지문은 칼립소 음악과 칼립소 님프의 '특정' 매력만 비교하고, '보편성'을 주장하지 않음. → 처방: 지문에서 '보편성'이나 '모든'이라는 단어가 나오면 그것이 지문에서 실제로 주장하는지 확인하고, 그렇지 않다면 그 선지를 배제하기."
-   }
-  },
-  {
-   "ts": "2026-08-22T20:42:14.875Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Narrow Topic Sets Ensure Coherent Paragraphs",
-     "Subject Consistency Alone Guarantees Coherence in Writing",
-     "Coherence Depends on Frequent Topic Shifts Across Sentences",
-     "Broad Topic Ranges Always Lead to Poorly Organized Texts",
-     "Narrow Topic Sets Are Necessary but Not Sufficient for Coherence"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Topics in subjects must form a narrow set of related ideas for coherence.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘Subject Consistency Alone(주제 일관성만)’이라고 써서 ‘주제 집합의 폭(좁음)’과 ‘주제 일관성’이 다르다는 점을 혼동했다. 지문은 ‘좁은 주제 집합’이 ‘일관성’을 만든다고 했는데, 이 선지는 ‘일관성’이 ‘주제 일관성’만으로 생긴다고 오해하게 한다. → 처방: ‘주제 집합의 폭’이 ‘일관성’의 핵심임을 기억하고, ‘주제 일관성’이 ‘좁은 주제 집합’을 전제로 한다는 점을 확인하자.\n③ 진단: ‘Coherence(일관성)’가 ‘Fre­quent Topic Shifts(자주 바뀌는 주제)’에 의해 생긴다고 오해했다. 지문은 반대로 ‘주제가 갑자기 바뀌면 일관성이 사라진다’고 설명하는데, 이 선지는 그 반대 뜻을 담고 있다. → 처방: ‘일관성’이 ‘주제의 안정성’에서 나온다는 점을 떠올리고, ‘자주 바뀌는 주제’는 ‘불일관성’을 낳는다는 사실로 선지를 거르자.\n④ 진단: ‘Broad Topic Ranges(넓은 주제 범위)’가 ‘Poorly Organized(잘못 조직된)’ 글을 만든다고 써서, 지문의 ‘좁은 주제 집합’이 ‘일관성’을 만든다는 핵심과 반대되는 뜻을 담았다. → 처방: ‘좁은 주제 집합’이 ‘일관성’을 만든다는 지문의 핵심 문장을 떠올리고, ‘넓은 주제 범위’가 ‘불일관성’을 낳는다는 반대 뜻을 확인하자.\n⑤ 진단: ‘Necessary but Not Sufficient(필요하지만 충분하지는 않다)’라고 써서 ‘좁은 주제 집합’이 ‘일관성’을 ‘완전히’ 보장하지는 않는다는 뜻으로 오해했다. 지문은 ‘좁은 주제 집합’이 ‘일관성’을 ‘만드는 데 중요하다’는 점만 강조하는데, 이 선지는 ‘필요조건’과 ‘충분조건’을 혼동하게 한다. → 처방: ‘일관성’이 ‘좁은 주제 집합’에 ‘의존한다는 점’을 기억하고, ‘충분조건’ 여부는 지문에서 다루지 않는다는 점을 확인하자.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Topics in subjects must form a narrow set of related ideas for coherence.]"
-   }
-  },
-  {
-   "ts": "2026-08-22T19:37:51.464Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Most (A) [fragments / wholes] occur when you write a sentence that goes on so long and becomes so complicated that you start to feel that you are losing control over it and so need to drop in a period to start another sentence. Which is why you must understand how to write a long but clearly constructed sentence that readers can follow easily. Traditionally, a punctuated sentence that fails to include an independent main clause is wrong. At least in theory. In fact, experienced writers often write fragments (B) [accidentally / deliberately], as I just did. When intended, those fragments typically have two characteristics: • They are relatively short, fewer than ten or so words. • They are intended to reflect a mind at work, as if the writer were speaking to you, finishing a sentence, then immediately expanding and qualifying it. Almost as an afterthought, often (C) [sincerely / ironically]. In this passage, Mark Twain uses sentence fragments (along with sentences beginning with conjunctions) to capture the element of chance in the circumstances that made him an author (fragments are boldfaced):",
-    "choices": [
-     "(A) wholes - (B) accidentally - (C) sincerely",
-     "(A) fragments - (B) accidentally - (C) ironically",
-     "(A) fragments - (B) deliberately - (C) ironically",
-     "(A) fragments - (B) deliberately - (C) sincerely",
-     "(A) wholes - (B) accidentally - (C) ironically"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) fragments - (B) deliberately - (C) ironically. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문 첫 문장에서 'fragments'가 문장의 흐름을 끊는 현상을 설명하는 핵심 단어임을 놓쳤다. 'wholes'는 문장이 길어지면서 통제력을 잃은 상황을 설명하는 말이 아니라, 문장 전체를 하나로 묶는 개념으로 오해했다. → 처방: 지문 첫 문장을 다시 읽고, 'fragments'가 문장의 흐름을 방해하는 현상을 설명하는지 확인하기.\n② 진단: 지문에서 'experienced writers often write fragments (B) [accidentally / deliberately]'라는 구절을 보지 못했거나, 'deliberately'의 의미를 몰라서 'accidentally'를 선택했다. 'deliberately'는 의도적으로라는 뜻으로, 경험 많은 작가가 고의로 문장 조각을 쓰는 경우가 있음을 강조한다. → 처방: 지문에서 'experienced writers often write fragments deliberately'라는 구절을 찾아보고, 'deliberately'의 의미를 사전에서 확인하기.\n④ 진단: 지문에서 'ironically'가 사용된 문맥을 잘못 이해했다. 'Almost as an afterthought, often (C) [sincerely / ironically]'에서 'ironically'는 문장 조각이 마치 사후 고려사항처럼 쓰이면서도 실제로는 중요한 의미를 담고 있음을 뜻한다. 'sincerely'는 진실한 태도를 뜻하므로 문맥에 맞지 않는다. → 처방: 지문에서 'ironically'가 사용된 부분을 다시 읽고, 문장 조각이 의도적으로 쓰이면서도 뒤에 오는 설명이 중요하다는 의미를 파악하기.\n⑤ 진단: 지문 첫 문장에서 'fragments'가 문장의 흐름을 설명하는 핵심 단어임을 놓쳤고, (B)에서는 'accidentally'를 선택했는데 이는 지문에서 'experienced writers often write fragments deliberately'라는 구절을 무시한 것이다. (C)에서도 'ironically'의 의미를 잘못 이해했다. → 처방: 지문 전체를 다시 읽고, 'fragments'가 문장의 흐름을 설명하는 핵심 단어임을 확인한 후, 'deliberately'와 'ironically'의 의미를 정확히 이해하기.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
