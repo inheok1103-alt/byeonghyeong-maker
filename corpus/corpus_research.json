@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T07:05:10.668Z",
+ "updated": "2026-08-23T07:53:35.050Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T07:53:07.301Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'long-term'과 같이 하이픈으로 연결된 복합형용사가 빈번히 등장하며, 특히 'long term'보다는 'long-term'이 표준어로 정착되어 있음을 확인할 수 있다.",
+   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'long term'이 복합형용사로 쓰일 경우 'long-term'으로 하이픈 연결을 반드시 적용하여 문장을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T07:04:42.758Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'명사+전치사+명사' 구조에서 전치사가 동사 역할(반대·지지 등)을 대신하는 오류가 빈번하며, 'for the following reasons'와 같이 전치사구가 이유 제시 패턴으로 정착되어 있음",
    "rule": "'~에 반대하다/지지하다'를 표현할 때는 'against/for'를 동사(go against/argue for)로 변환하거나, 'oppose/support'와 같은 동사를 사용하여 전치사구를 동사구로 대체하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T15:03:03.742Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "영어 문장에서는 전치사 'of'가 '~에 대한'이라는 추상적 관계를 나타낼 때, 'on'으로 대체하여 더 구체적이고 자연스러운 의미를 부여할 수 있다. 또한, 문맥상 'there is/are' 구문은 부정어와 호응하여 사용되며, 쉼표는 문장 구조를 명확히 구분하는 데 활용된다.",
-   "rule": "영어 문장에서 'of'를 'on'으로 대체하여 더 구체적인 의미를 부여하는 경우(예: 'ideas of how' → 'ideas on how')와 부정어('not anything' → 'nothing')를 'there is/are'와 호응하여 수정하며, 문장 구조를 명확히 구분하기 위해 쉼표를 적절히 삽입하라.",
    "sample": [
     "old english",
     "university press",
