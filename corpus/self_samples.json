@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-23T10:49:43.747Z",
+ "updated": "2026-08-23T11:44:25.737Z",
  "samples": [
+  {
+   "ts": "2026-08-23T11:37:15.098Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 2건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "adjectives that only modify certain nouns",
+     "nouns that define adjectives in context",
+     "adjectives that precisely describe nouns",
+     "adjectives describing nouns outside noun phrases",
+     "adjectives that modify nouns in phrases"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'APs are adjectives modifying nouns.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정도·빈도를 왜곡· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ①번은 '특정한 명사만 수식하는 형용사'라는 설명이 지문에 나온 '명사 정의'나 '구체적 수식'과 혼동된 것으로 보입니다. 지문에서 'perfectly outrageous cheek'는 'outrageous'가 'cheek'을 수식하는 일반적인 형용사(adjective)라는 점만 언급됩니다. → 처방: 형용사의 역할(수식 범위)을 정확히 확인하려면 지문에서 '형용사가 명사를 수식하는 구체적 예'를 찾아보세요. 예를 들어 'a perfectly outrageous cheek'에서 'perfectly'는 'outrageous'를 수식하는 부사라는 점을 기억하세요.\n② 진단: ②번은 '맥락에서 형용사를 정의하는 명사'라는 설명이 지문의 '명사 헤드'나 '명사구 구성'과 혼동된 것으로 보입니다. 지문에서 'nouns that define adjectives'라는 표현은 전혀 없습니다. → 처방: 형용사가 명사를 수식하는지, 명사가 형용사를 정의하는지 확인하려면 '형용사의 위치와 역할'에 집중하세요. 형용사는 보통 명사 앞에 오며, 명사는 형용사를 설명하지 않습니다.\n③ 진단: ③번은 '정확히 명사를 묘사하는 형용사'라는 설명이 지문의 '형용사의 정확성'보다는 '형용사의 기능(수식 범위)'과 혼동된 것으로 보입니다. 지문은 형용사가 명사를 수식하는 방식(예: 'very very odd')에 초점을 둡니다. → 처방: 형용사의 '정확한 묘사' 여부보다는 '형용사가 어떤 구조에서 명사를 수식하는지'를 먼저 확인하세요. 예를 들어 'very very odd'는 'odd'가 명사를 수식하는 형용사라는 점을 기억하세요.\n④ 진단: ④번은 '명사구 밖의 명사를 수식하는 형용사'라는 설명이 지문의 '형용사의 위치(명사구 내부/외부)'와는 무관한 오해입니다. 지문은 모든 예시가 명사구 내부의 형용사 수식에 관한 것입니다. → 처방: 형용사가 명사구를 벗어나 수식하는지 확인하려면 '형용사의 위치(명사 앞/뒤)'와 '구조(명사구 구성)'를 꼼꼼히 읽으세요. 지문 모든 예시는 명사구 내부의 수식입니다.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: APs are adjectives modifying nouns.]"
+   }
+  },
+  {
+   "ts": "2026-08-23T11:43:56.397Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Exercises 57 (a) so very touchy (b) so completely stupid (c) very very odd S______ an analysis for these APs. If you need a hint, notice that very touchy, com­ pletely stupid and very odd are APs. Discussion of exercises 1. NOUNS: court, cheek, officials, club, home, hand, being, sensitivity, people, feelings ADJECTIVES: outrageous, other, warm, loving, human, full DEGREE ADVERBS: perfectly, incredibly GENERAL ADVERBS: openly, recently PREPOSITIONS: on, towards, by, at, on, of, for 2. NPs: (a) the court (b) she (c) a perfectly outrageous cheek (d) officials recently appointed by the club (e) the club. You may have missed she: it’s a pronoun having one of the functions of full NPs (subject). HEADS: (a) court (b) she (c) cheek (d) officials (e) club. FUNCTIONS: the court is functioning as complement of the preposition on. She is functioning as the subject. A perfectly outrageous cheek has a function other than sub­ ject or complement to a preposition. Officials appointed by the club is complement to the preposition towards. The club is complement to the preposition by.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Suggest — 문단의 논지상 이 자리에는 'Suggest'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-23T10:49:06.268Z",
    "type": "요약문AB",
@@ -332,76 +385,6 @@
     ],
     "answer": 3,
     "explanation": "틀린 곳은 ⓑ(verbal argument structures → verbal argument structure), ⓒ(is determined by → are determined by), ⓔ(fits well in → fits well with) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘ⓐ<u>as shown by</u>’는 문법적으로 옳은 표현이므로 틀린 부분이 없음을 몰라서 오답을 골랐다. ‘as shown by’는 ‘~에 의해 보여지듯이’라는 뜻으로 문법적으로 문제없다. → 처방: ‘as shown by’는 ‘~에 의해 보여지듯이’라는 구문으로, 문법적으로 옳은 표현임을 기억하고, 밑줄 친 부분이 문법적으로 틀린지 아닌지만 집중해서 확인하기.\n② 진단: ‘ⓑ<u>verbal argument structures</u>’는 ‘동사의 논항 구조’라는 뜻으로, ‘verbal’이 형용사 ‘verbal’(동사의)과 명사 ‘argument’(논항)가 결합한 올바른 복합명사임을 몰라서 틀렸다. ‘verbal argument structures’는 문법 용어로 자주 쓰이는 표현이다. → 처방: ‘verbal argument structures’는 ‘동사의 논항 구조’라는 문법 용어임을 기억하고, 복합명사가 문법적으로 옳은지 확인하기.\n④ 진단: ‘ⓓ<u>as a kind of</u>’는 ‘~의 한 종류로’라는 뜻으로, 문법적으로 옳은 표현임을 몰라서 틀렸다. ‘as a kind of’는 ‘~의 한 종류’라는 구문으로, 문법적으로 문제없다. → 처방: ‘as a kind of’는 ‘~의 한 종류’라는 구문으로, 문법적으로 옳은 표현임을 기억하고, 밑줄 친 부분이 문법적으로 틀린지 아닌지만 확인하기.\n⑤ 진단: ‘ⓔ<u>fits well in</u> analysing’에서 ‘fits well in’은 ‘~에 잘 들어맞다’라는 뜻으로, 전치사 ‘in’이 아니라 ‘for’나 ‘to’를 써야 한다는 오해를 했다. ‘fits well in’는 ‘~에 잘 들어맞다’라는 구문으로, 문법적으로 옳은 표현이다. → 처방: ‘fits well in’은 ‘~에 잘 들어맞다’라는 구문으로, 문법적으로 옳은 표현임을 기억하고, 전치사 사용에 대한 오해를 버리기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T04:06:44.041Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": -0.5,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.50)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "(A) [COUNTERFACTUALS / factuals] 91 that by saying that the similarity criteria for this counterfactual include the laws of nature. Unfortunately, the kangaroos required to test the hypothesis are highly (B) [natural / unnatural] beasts. They have an extraordinary high-speed bounding gait, like a two-legged cheetah, and insufficient ways of keeping their balance. This scenario must presuppose very unusual patterns for the evolution of species. Given the laws of nature governing biology, a kangaroo like ours except for the tail would have evolved some way of not toppling over, by walking instead of leaping, or developing a four-footed gait, or some other dodge. The hypothetical kangaroo is a (C) [monster / ordinary]. Some laws of nature, but not others, are carried over to establish the similarity we want between the actual and hypothetical worlds. Generally, the way we calculate what similarity requires depends on the understood nature of the hypothesis. For example, consider the features that might hold in tailless kangaroo worlds listed in (28): (28) Kangaroos have no tails, and",
-    "choices": [
-     "(A) factuals - (B) unnatural - (C) monster",
-     "(A) COUNTERFACTUALS - (B) unnatural - (C) monster",
-     "(A) COUNTERFACTUALS - (B) natural - (C) ordinary",
-     "(A) factuals - (B) natural - (C) monster",
-     "(A) factuals - (B) natural - (C) ordinary"
-    ],
-    "answer": 2,
-    "explanation": "정답 조합: (A) COUNTERFACTUALS - (B) unnatural - (C) monster. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 '(A)는 counterfactuals(반사실적 조건문)을 다루는 내용임을 'by saying that the similarity criteria for this counterfactual include the laws of nature'라는 문장으로 확인할 수 있는데, 'factuals(사실적)'로 오독하여 틀렸다. → 처방: 지문에서 'counterfactuals'라는 단어가 나오면 반드시 반사실적 조건문을 다루는 내용임을 떠올리고, 'factuals'와 혼동하지 않도록 주의한다.\n③ 진단: '(B) unnatural'을 'natural'로 오독한 이유는 'highly unusual patterns for the evolution of species'라는 문장에서 unusual(특이한)을 overlooked(간과)하고, 'unnatural'의 의미를 제대로 파악하지 못했다. → 처방: 지문에서 'highly unusual'이나 'very unusual' 같은 표현이 나오면 'unnatural(비자연스러운)'과 연결 지어 생각해본다.\n④ 진단: '(C) monster'를 'ordinary'로 오독한 이유는 'The hypothetical kangaroo is a monster'라는 문장을 'ordinary(보통의)'로 잘못 해석했는데, 'monster'가 '기이하고 비정상적인 존재'를 뜻한다는 점을 놓쳤다. → 처방: 지문에서 'monster'가 등장하면 '기이하고 비정상적인 존재'라는 의미를 떠올리고, 'ordinary'와 혼동하지 않도록 주의한다.\n⑤ 진단: '(A) factuals'와 '(C) ordinary'를 선택한 이유는 지문의 핵심 주제가 'counterfactuals(반사실적 조건문)'임을 간과하고, 'factuals(사실적)'이나 'ordinary(보통의)'라는 평범한 단어로 오독했다. → 처방: 지문에서 'counterfactuals'가 등장하면 해당 단어가 반사실적 조건문을 다루는 핵심 키워드임을 기억하고, 평범한 단어와 혼동하지 않도록 주의한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T04:07:29.426Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "자연 법칙에 따라 가능한 종의 진화 패턴을 제시하려고",
-     "꼬리가 없는 캥거루의 생존 가능성에만 주목하려고",
-     "자연 법칙에 반하는 가상 시나리오의 비현실성을 지적하려고",
-     "자연 법칙에 반하는 가상 시나리오가 반드시 불가능하다고 단언하려고",
-     "자연 법칙의 한계를 넘어서는 종의 특성을 분석하려고"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'To challenge the natural plausibility of a hypothetical tailless kangaroo scenario.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문은 '꼬리가 없는 캥거루'가 자연 법칙에 따라 가능한 종이 아니라는 점을 강조하지 않고, 오히려 자연 법칙을 무시하는 가상 시나리오가 비현실적임을 지적한다. 학생은 '가능한 진화 패턴'이라는 표현에 이끌려 지문의 핵심 주장(비현실성 지적)을 놓쳤다. → 처방: 지문에서 '자연 법칙에 반하는 가상 시나리오'가 얼마나 비현실적인지 집중해서 읽고, '가능한'이라는 단서에 주의하며 주제를 파악하기.\n② 진단: 지문은 꼬리가 없는 캥거루의 생존 가능성 자체보다는, 그런 가상 시나리오가 자연 법칙을 무시한다는 점에 주목한다. 학생은 '생존 가능성'이라는 단어에만 초점을 맞추어 지문의 핵심 논지를 오해했다. → 처방: 지문의 첫 문장부터 '자연 법칙'과 '비현실성'을 연결하는 흐름을 따라가며, '생존 가능성'이 아니라 '비현실성'을 기준으로 답을 찾기.\n④ 진단: 지문은 '꼬리가 없는 캥거루'가 자연 법칙에 반한다는 점을 지적하지만, 그것이 '반드시 불가능하다'고 단언하지 않는다. 학생은 '반드시 불가능'이라는 절대적 표현에 이끌려 지문의 유보적 태도를 오해했다. → 처방: 지문에서 'very unusual patterns'이나 'monster' 같은 표현이 비현실성을 강조하지만, '반드시 불가능'이라는 강경한 표현은 없다는 점을 확인하기.\n⑤ 진단: 지문은 '종의 특성'을 분석하는 것이 아니라, 자연 법칙을 무시한 가상 시나리오가 비현실적임을 지적한다. 학생은 '종의 특성'이라는 단어가 눈에 띄어 지문의 핵심 주제를 잘못 잡았다. → 처방: 지문의 첫 문장과 마지막 문장을 비교해 '자연 법칙'과 '비현실성'이 핵심 주제임을 확인하고, '종의 특성'이라는 단어에만 집중하지 않기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To challenge the natural plausibility of a hypothetical tailless kangaroo scenario.]"
    }
   }
  ]
