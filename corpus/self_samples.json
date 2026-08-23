@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-23T04:54:50.732Z",
+ "updated": "2026-08-23T05:49:01.715Z",
  "samples": [
+  {
+   "ts": "2026-08-23T05:47:26.140Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 지문 축소 의심(67%) — 정보 손실 여부 확인 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 1,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "We can then say that V agrees with, assigns accusative case to and triggers raising to the outer edge of VP of the object DP the truck. Because the verb load raises to v, it comes to precede both the raised direct object the truck and the VP-adverb carefully. The syntax of (74b) differs only in that carefully is a vP adverb in (74b), whereas it is a VP-adverb in (74a). If we suppose that verbs like load are essentially affixal in nature (in the sense that they must adjoin to a null causative light verb with an AGENT external argument) we can account for the ungrammaticality of intransitive structures such as (73a) *The truck will load with hay. [ ]",
+    "choices": [
+     "Evidence suggests that direct object complements always originate above PP complements in transitive verb structures.",
+     "This claim contradicts the syntactic behavior of transitive verbs with both DP and PP complements in our analysis.",
+     "The direct object DP is assumed to originate above the PP complement and never raises to a higher position.",
+     "Our analysis posits that the direct object DP starts beneath the PP complement but later moves upward to a position higher than the PP.",
+     "The assumption that the direct object originates below the PP is irrelevant to the grammaticality of sentences with transitive verbs."
+    ],
+    "answer": 4,
+    "explanation": "빈칸에는 원문 'A key assumption made in our analysis of transitive verbs which have both a DP and a PP complement is that the direct DP originates below the PP but subsequently raises to a position above PP. Some evidence in support of the claim that direct object complements originate below PP complements comes from sentence pairs such as the following:'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'the truck'이 PP(PP complement)보다 위에 있는 위치에서 시작한다고 설명하지 않았으므로, PP 와 DP 의 위치 관계를 직접 언급한 이 선택지는 지문의 내용과 맞지 않는다. → 처방: 선지를 고를 때는 지문에 나온 'PP complement'와 'direct object DP'의 위치 관계를 정확히 확인하고, 지문에서 말한 'originate'와 'moves upward'를 기준으로 선택하라.\n② 진단: 지문은 PP complement 가 DP 보다 아래에 있다고 주장하지 않으므로, '이 주장이 모순된다'는 말은 틀렸다. 지문은 DP 가 PP 보다 위에 있다고 설명한다. → 처방: 지문의 주장(DP 가 PP 보다 위에 있음)을 정확히 이해하고, '모순'이라는 말이 나오면 지문의 내용을 다시 확인하라.\n③ 진단: 지문은 DP 가 PP 보다 위에 있다고 주장하지, '절대 올라가지 않는다'고 말하지 않았다. 'never raises'라는 표현은 지문의 내용과 다르다. → 처방: 지문에서 'raises to a higher position'이라는 말이 나왔으므로, '절대' 또는 'never' 같은 절대적인 표현이 나오면 주의하라.\n⑤ 진단: 지문은 DP 가 PP 아래에서 시작한다는 가정을 받아들이지 않으므로, '무관하다'는 말은 틀렸다. 지문은 DP 가 PP 위에 있다고 가정한다. → 처방: 지문의 가정을 정확히 읽고, '무관하다' 또는 '관련 없다'는 말이 나오면 그 선택지를 의심하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-23T04:53:29.085Z",
    "type": "빈칸(문장)",
@@ -326,41 +359,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] coordinated — 문단의 논지상 이 자리에는 'coordinated'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-22T22:40:59.662Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.2,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.20)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] For example, referring expressions can be expressed as pronouns, simple noun phrases, or various kinds of complex noun phrases.\n\nHe gave Robert half his wages. ( ① ) He gave half his wages to Robert. ( ② ) \b (fict†) In other cases, English has a system of several related variants rather than a simple choice between two variants. ( ③ ) In the following text passage, the Oxford Tories are subsequently referred to in three different ways: as men from Magdalen and Christ Church whose fair hair flopped over their foreheads and who talked of horses; they; and the gents: The Oxford Tories consisted in the main of men from Magdalen and Christ Church whose fair hair flopped over their foreheads and who talked of horses. ( ④ ) They were the gents and we were the players. ( ⑤ ) \b (fict) While many grammars point out the structural similarities among variants, they usually offer little explanation of when and why the different forms are used. In contrast, the GSWE is concerned with the grammatical and discourse factors that relate to the choice among structurally and semantically related variants (4.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘He gave Robert half his wages.’가 ‘referring expressions’의 예시로 보기에 문장 구조가 단순하다고 오해한 것 같다. 하지만 이 문장은 ‘referring expressions’의 ‘pronoun’이나 ‘noun phrase’가 아니라 ‘dative alternation’의 예시일 뿐이다. → 처방: ‘referring expressions’의 정의와 예시를 먼저 떠올리고, 문장이 그 정의를 담고 있는지 확인해라.\n② 진단: ‘He gave half his wages to Robert.’가 ‘referring expressions’의 ‘complex noun phrase’로 보인 것 같다. 하지만 이 문장도 ‘dative alternation’의 또 다른 예시일 뿐, ‘referring expressions’의 예시는 아니다. → 처방: ‘referring expressions’의 종류(pronoun, simple noun phrase, complex noun phrase)를 떠올리고, 주어진 문장이 그 종류에 해당하는지 확인해라.\n④ 진단: ‘The Oxford Tories consisted in the main of men from Magdalen and Christ Church whose fair hair flopped over their foreheads and who talked of horses.’가 ‘referring expressions’의 예시로 보인 것 같다. 하지만 이 문장은 ‘referring expressions’의 ‘complex noun phrase’가 아니라 ‘dative alternation’의 예시가 아니다. → 처방: ‘referring expressions’의 정의와 예시를 먼저 떠올리고, 문장이 그 정의를 담고 있는지 확인해라.\n⑤ 진단: ‘They were the gents and we were the players.’가 ‘referring expressions’의 예시로 보인 것 같다. 하지만 이 문장은 ‘referring expressions’의 ‘pronoun’이나 ‘noun phrase’가 아니라 ‘dative alternation’의 예시가 아니다. → 처방: ‘referring expressions’의 종류를 떠올리고, 문장이 그 종류에 해당하는지 확인해라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
