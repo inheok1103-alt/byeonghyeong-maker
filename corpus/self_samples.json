@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-23T09:46:12.239Z",
+ "updated": "2026-08-23T10:49:43.747Z",
  "samples": [
+  {
+   "ts": "2026-08-23T10:49:06.268Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "AWRY (uh RYE) adj off course; twisted to one side • The hunter’s bullet went awry. Instead of hitting the bear, it hit his truck. • When we couldn’t find a restaurant, our dinner plans went awry. • The old woman’s hat was awry; it had dipped in front of her left eye. AXIOM (AK see um) n a self-evident rule or truth; a widely accepted saying “Everything that is living dies” is an axiom. An axiom in geometry is a rule that doesn’t have to be proved because its truth is accepted as obvious, self-evident, or unprovable. Quick Quiz #13 Match each word in the first column with its definition in the second column. Check your answers here. 1. autonomous a. greed 2. avarice b. like an uncle 3. avow c. self-evident truth 4. avuncular d. acting independently 5. awry e. claim 6. axiom f. off course B BANAL (buh NAL) adj unoriginal; ordinary • The dinner conversation was so banal that Amanda fell asleep in her dessert dish.\n\n─────────\n[요약문] The summary of the word list reveals that (A) denotes a deviation from an intended path and (B) signifies a universally accepted principle.",
+    "choices": [
+     "(A) precision … (B) contradiction",
+     "(A) intention … (B) anomaly",
+     "(A) deviation … (B) principle",
+     "(A) alignment … (B) hypothesis",
+     "(A) conformity … (B) exception"
+    ],
+    "answer": 3,
+    "explanation": "(A) deviation / (B) principle 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-23T09:44:47.586Z",
    "type": "네모어휘ABC",
@@ -367,41 +402,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'To challenge the natural plausibility of a hypothetical tailless kangaroo scenario.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문은 '꼬리가 없는 캥거루'가 자연 법칙에 따라 가능한 종이 아니라는 점을 강조하지 않고, 오히려 자연 법칙을 무시하는 가상 시나리오가 비현실적임을 지적한다. 학생은 '가능한 진화 패턴'이라는 표현에 이끌려 지문의 핵심 주장(비현실성 지적)을 놓쳤다. → 처방: 지문에서 '자연 법칙에 반하는 가상 시나리오'가 얼마나 비현실적인지 집중해서 읽고, '가능한'이라는 단서에 주의하며 주제를 파악하기.\n② 진단: 지문은 꼬리가 없는 캥거루의 생존 가능성 자체보다는, 그런 가상 시나리오가 자연 법칙을 무시한다는 점에 주목한다. 학생은 '생존 가능성'이라는 단어에만 초점을 맞추어 지문의 핵심 논지를 오해했다. → 처방: 지문의 첫 문장부터 '자연 법칙'과 '비현실성'을 연결하는 흐름을 따라가며, '생존 가능성'이 아니라 '비현실성'을 기준으로 답을 찾기.\n④ 진단: 지문은 '꼬리가 없는 캥거루'가 자연 법칙에 반한다는 점을 지적하지만, 그것이 '반드시 불가능하다'고 단언하지 않는다. 학생은 '반드시 불가능'이라는 절대적 표현에 이끌려 지문의 유보적 태도를 오해했다. → 처방: 지문에서 'very unusual patterns'이나 'monster' 같은 표현이 비현실성을 강조하지만, '반드시 불가능'이라는 강경한 표현은 없다는 점을 확인하기.\n⑤ 진단: 지문은 '종의 특성'을 분석하는 것이 아니라, 자연 법칙을 무시한 가상 시나리오가 비현실적임을 지적한다. 학생은 '종의 특성'이라는 단어가 눈에 띄어 지문의 핵심 주제를 잘못 잡았다. → 처방: 지문의 첫 문장과 마지막 문장을 비교해 '자연 법칙'과 '비현실성'이 핵심 주제임을 확인하고, '종의 특성'이라는 단어에만 집중하지 않기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To challenge the natural plausibility of a hypothetical tailless kangaroo scenario.]"
-   }
-  },
-  {
-   "ts": "2026-08-23T03:18:16.007Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버교정: 솔버 3/3 다수결 5번(기록 3번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Fair use: \u0007Levin claims that we experience the theater as the most social form of literature because we see it taking place before us. Using Quotations in Your Text You use quotations best when you integrate them so fully that they seem made for your text. Readers become suspicious when they see bare quotations dropped into your paper with no effort to connect them to your own points: Is it you or your source that’s doing all the thinking? So prepare readers for each quotation by stating before you use it how the quotation fits into ____ of your argument. Then make the fit between the quotation and your text as seamless as possible. Four or Fewer Lines Drop in the Quotation  An acceptable but artless way to insert a quotation into your text is simply to drop it in, introducing it with something like",
-    "choices": [
-     "the opposite view",
-     "the emotional tone",
-     "the structure",
-     "the sequence of",
-     "the general context"
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 'the structure'가 들어가 글의 논지를 완성한다 (본문 'the mesh'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘opposite view’를 고르면 ‘반대 의견’을 넣어야 한다고 오해했는데, 지문은 ‘자신의 주장에 맞는 문맥’을 설명하고 있음. → 처방: 지문에서 ‘how the quotation fits into ____ of your argument’를 읽고, ‘자신의 주장의 맥락’을 떠올리도록 연습하기.\n② 진단: ‘emotional tone’을 고르면 ‘감정적 분위기’를 넣어야 한다고 생각했는데, 지문은 주장의 구조나 맥락에 초점을 두고 있음. → 처방: 지문에서 ‘integrate them so fully’와 ‘connect them to your own points’를 보며, ‘맥락’을 먼저 떠올리기.\n③ 진단: ‘structure’를 고르면 ‘구조’를 넣어야 한다고 오해했는데, 지문은 주장의 ‘일반적 맥락’을 설명하고 있음. → 처방: ‘structure’가 아니라 ‘맥락’을 넣어야 한다는 점에 집중하기 위해, 빈칸 앞뒤 문장을 다시 읽고 ‘맥락’이란 단어 찾기.\n④ 진단: ‘sequence of’를 고르면 ‘순서’를 넣어야 한다고 생각했는데, 지문은 주장의 ‘일반적 맥락’을 설명하고 있음. → 처방: ‘sequence’는 ‘순서’를 뜻하지만, 지문은 ‘맥락’을 뜻하는 ‘general context’를 넣어야 한다는 점을 기억하기."
    }
   }
  ]
