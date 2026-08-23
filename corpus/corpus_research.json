@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-23T13:05:39.958Z",
+ "updated": "2026-08-23T13:48:33.765Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T13:48:09.528Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'명사 단수/복수 오류'가 빈번히 발생하며, 특히 'car/cars', 'guide/guides'와 같이 가산명사의 수 일치가 문맥에 맞지 않게 사용되는 경우가 많다. 또한, 'between two'와 같은 전치사구에서도 'two'의 수에 따라 명사가 복수형으로 사용되어야 한다.",
+   "rule": "'가산명사의 수 일치' 오류를 테스트하기 위해, 문장 내 가산명사가 단수/복수 중 어느 형태로 쓰이는 것이 문맥상 자연스러운지 판단하도록 하는 문항을 설계하라. 예를 들어, '...instead of car'를 '...instead of cars'로, 또는 '...a good tour guide'를 '...find good tour guides'로 수정하는 선택지를 포함시켜라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-23T13:05:12.545Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'reasons'가 복수형으로 쓰이는 경우 'these'를 수식어로 사용해야 하며, 'the state'는 관사 필수 명사구임. 또한 'migrating reason'은 'reasons for migration'으로 재구조화되어야 자연스러움.",
    "rule": "복수형 오류가 의심되는 'reason(s)' 뒤에는 반드시 'these/those'를 수식어로 붙이고, 'state'는 관사 없이 쓰이지 않도록 하며, 'migrating reason'은 'reasons for migration'으로 재구조화하여 문장을 완성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T20:49:04.106Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거형 동사(reduced)와 현재형 동사(are)의 혼동, 그리고 접속사 앞의 콤마 사용 오류가 빈번히 관찰된다. 또한 소유격이나 복수형 표기(apostrophe) 오류가 두드러진다.",
-   "rule": "학생들이 동사 시제(과거형 vs 현재형)나 소유격/복수형 표기(apostrophe) 오류를 범하지 않도록, 원문에서 해당 연어(예: 'have to reduce', 'are young people')를 정확히 복제한 뒤, 오답 선택지에서는 시제·표기 오류를 의도적으로 삽입하여 오답률을 높인다.",
    "sample": [
     "old english",
     "university press",

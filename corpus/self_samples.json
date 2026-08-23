@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-23T13:05:39.963Z",
+ "updated": "2026-08-23T13:48:33.769Z",
  "samples": [
+  {
+   "ts": "2026-08-23T13:47:29.950Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 1번(기록 2번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "구문 분석에서 올바르게 형성된 구와 그렇지 않은 구를 구분하려고",
+     "잘-formed 구의 문법적 특징을 정리하려고",
+     "구 구성 요소 간의 관계 규칙을 설명하려고",
+     "문장 내 구의 구조적 타당성을 판단하는 방법을 안내하려고",
+     "구조적 일관성을 유지하는 구의 조건을 제시하려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'to explain which phrases are well-formed and which are not'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 논지에서 어긋남· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to explain which phrases are well-formed and which are not]\n[오답 진단·처방]\n② 진단: ‘잘-formed 구의 문법적 특징’을 정리하는 것이 아니라, ‘잘-formed 구와 그렇지 않은 구’를 구분하는 것이 글의 목적임을 지문에서 ‘judge which of the following are well-formed phrases and which not’로 분명히 밝히고 있음. → 처방: ‘well-formed phrases’를 찾는 문제임을 확인하고, ‘grammatical’과 ‘ungrammatical’의 차이를 명확히 구분하는 연습을 하세요.\n③ 진단: ‘구 구성 요소 간의 관계 규칙’을 설명하는 것이 아니라, ‘구성 요소의 범주(category)’와 ‘구 전체의 범주’를 분석하는 것이 글의 목적임을 지문에서 ‘identify the category of phrases co-ordinated’로 지적하고 있음. → 처방: ‘co-ordination’의 범주를 확인하는 문제임을 인식하고, ‘NP’, ‘PP’ 등 구의 범주를 정확히 구분하는 연습을 하세요.\n④ 진단: ‘문의 내 구의 구조적 타당성’을 판단하는 방법을 안내하는 것이 아니라, ‘구문 분석에서 올바르게 형성된 구’를 구분하는 것이 글의 목적이므로 ‘구조적 타당성’이 아니라 ‘형성 여부’를 중점으로 다룸. → 처방: ‘구조적 타당성’이 아니라 ‘형성(well-formedness)’을 판단하는 문제임을 기억하고, ‘grammatical’과 ‘ungrammatical’의 기준을 다시 정리하세요.\n⑤ 진단: ‘구조적 일관성을 유지하는 구의 조건’을 제시하는 것이 아니라, ‘잘-formed 구와 그렇지 않은 구’를 구분하는 것이 글의 목적임을 지문에서 ‘judge which of the following are well-formed phrases and which not’로 명시하고 있음. → 처방: ‘일관성’이 아니라 ‘형성 여부’를 판단하는 문제임을 확인하고, ‘well-formed phrases’의 정의와 기준을 다시 학습하세요."
+   }
+  },
+  {
+   "ts": "2026-08-23T13:48:06.965Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'grammatical', 'coordinated', 'syntactic' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Phrases are grammatical only when coordinated elements share the same syntactic category.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-23T11:37:15.098Z",
    "type": "심경변화",
@@ -325,66 +377,6 @@
     ],
     "answer": 4,
     "explanation": "빈칸에는 원문 'A key assumption made in our analysis of transitive verbs which have both a DP and a PP complement is that the direct DP originates below the PP but subsequently raises to a position above PP. Some evidence in support of the claim that direct object complements originate below PP complements comes from sentence pairs such as the following:'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'the truck'이 PP(PP complement)보다 위에 있는 위치에서 시작한다고 설명하지 않았으므로, PP 와 DP 의 위치 관계를 직접 언급한 이 선택지는 지문의 내용과 맞지 않는다. → 처방: 선지를 고를 때는 지문에 나온 'PP complement'와 'direct object DP'의 위치 관계를 정확히 확인하고, 지문에서 말한 'originate'와 'moves upward'를 기준으로 선택하라.\n② 진단: 지문은 PP complement 가 DP 보다 아래에 있다고 주장하지 않으므로, '이 주장이 모순된다'는 말은 틀렸다. 지문은 DP 가 PP 보다 위에 있다고 설명한다. → 처방: 지문의 주장(DP 가 PP 보다 위에 있음)을 정확히 이해하고, '모순'이라는 말이 나오면 지문의 내용을 다시 확인하라.\n③ 진단: 지문은 DP 가 PP 보다 위에 있다고 주장하지, '절대 올라가지 않는다'고 말하지 않았다. 'never raises'라는 표현은 지문의 내용과 다르다. → 처방: 지문에서 'raises to a higher position'이라는 말이 나왔으므로, '절대' 또는 'never' 같은 절대적인 표현이 나오면 주의하라.\n⑤ 진단: 지문은 DP 가 PP 아래에서 시작한다는 가정을 받아들이지 않으므로, '무관하다'는 말은 틀렸다. 지문은 DP 가 PP 위에 있다고 가정한다. → 처방: 지문의 가정을 정확히 읽고, '무관하다' 또는 '관련 없다'는 말이 나오면 그 선택지를 의심하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-23T04:53:29.085Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "EVENTS one verb class, as shown by argument alternations (e.g., Jones broke the pot / The pot broke; Gillian spread the crusts with butter / Gillian spread butter on the crusts). The variability of verb meaning and verbal argument structure calls the traditional view into question, and some scholars, particularly in Construction Grammar, propose that syntactic and semantic arguments are determined by the form of the sentence, and not by the meaning of the verb. For example, on this approach the double object construction is analysed as a kind of idiom with associated thematic roles. The verbs which can be inserted into the idiom framework contribute little more than a manner modification, as in (35). [ ] Jones sent Delia a pet stoat.",
-    "choices": [
-     "The Construction Grammar approach effectively treats the verb as a one-place manner predicate describing the event.",
-     "The Construction Grammar approach argues that verbs should be analyzed as 2-place predicates with fixed thematic roles.",
-     "The Construction Grammar approach rejects the idea that syntactic structure is influenced by verb meaning or argument alternations.",
-     "The Construction Grammar approach focuses exclusively on idiomatic expressions, ignoring manner modification in verbs.",
-     "The Construction Grammar approach claims that verbs inherently determine their syntactic and semantic arguments without sentence structure."
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 원문 'The Construction Grammar approach fits well with analysing the verb as a 1-place manner predicate on the event.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문은 Construction Grammar 가 동사 자체의 의미보다 문장 구조가 구문적·의미적 역할을 결정한다고 설명하는데, 학생은 'one-place manner predicate'라는 표현만 보고 동사가 한 자리 동사라는 점만 중시한 듯함. 지문은 동사가 구문 안에서 얼마나 제한적인 역할을 하는지 설명하지 않음. → 처방: 구문 문법의 핵심 아이디어(문장 구조가 의미를 결정한다는 점)를 정확히 이해한 후, 동사의 역할이 제한적임을 기억할 것.\n② 진단: 지문은 Construction Grammar 가 동사의 자리 수나 thematic roles 를 고정하지 않는다고 설명하는데, 학생은 반대로 동사가 2자리 동사라는 점만 오독한 듯함. 지문은 동사의 의미가 구문에 따라 변한다는 점을 강조함. → 처방: 동사의 의미가 구문에 따라 달라질 수 있음을 떠올리며, thematic roles 가 고정되지 않는다는 점을 기억할 것.\n④ 진단: 지문은 Construction Grammar 가 idiom framework 를 통해 구문과 의미를 설명한다고 설명하는데, 학생은 'exclusively'라는 표현을 보고 구문 문법이 idiom 만 다룬다고 오해한 듯함. 지문은 manner modification 도 언급하며, 구문 전체의 역할을 설명함. → 처방: 구문 문법이 idiom 뿐만 아니라 구문 전체의 역할을 설명한다는 점을 기억하고, manner modification 의 예도 떠올릴 것.\n⑤ 진단: 지문은 Construction Grammar 가 동사 자체보다는 문장 구조가 의미를 결정한다고 설명하는데, 학생은 반대로 동사가 구문 구조를 결정한다고 오독한 듯함. 지문은 동사가 구문 안에서 제한적인 역할을 한다고 설명함. → 처방: 구문 문법의 핵심(문장 구조가 의미를 결정한다는 점)을 정확히 이해하고, 동사가 구문을 결정하지 않는다는 점을 기억할 것."
-   }
-  },
-  {
-   "ts": "2026-08-23T04:54:16.006Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "EVENTS one verb class, ⓐ<u>as shown by</u> argument alternations (e.g., Jones broke the pot / The pot broke; Gillian spread the crusts with butter / Gillian spread butter on the crusts). The variability of verb meaning and ⓑ<u>verbal argument structures</u> calls the traditional view into question, and some scholars, particularly in Construction Grammar, propose that syntactic and semantic arguments ⓒ<u>is determined by</u> the form of the sentence, and not by the meaning of the verb. For example, on this approach the double object construction is analysed ⓓ<u>as a kind of</u> idiom with associated thematic roles. The verbs which can be inserted into the idiom framework contribute little more than a manner modification, as in (35). The Construction Grammar approach ⓔ<u>fits well in</u> analysing the verb as a 1-place manner predicate on the event. (35) a. Jones sent Delia a pet stoat.",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓑ(verbal argument structures → verbal argument structure), ⓒ(is determined by → are determined by), ⓔ(fits well in → fits well with) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘ⓐ<u>as shown by</u>’는 문법적으로 옳은 표현이므로 틀린 부분이 없음을 몰라서 오답을 골랐다. ‘as shown by’는 ‘~에 의해 보여지듯이’라는 뜻으로 문법적으로 문제없다. → 처방: ‘as shown by’는 ‘~에 의해 보여지듯이’라는 구문으로, 문법적으로 옳은 표현임을 기억하고, 밑줄 친 부분이 문법적으로 틀린지 아닌지만 집중해서 확인하기.\n② 진단: ‘ⓑ<u>verbal argument structures</u>’는 ‘동사의 논항 구조’라는 뜻으로, ‘verbal’이 형용사 ‘verbal’(동사의)과 명사 ‘argument’(논항)가 결합한 올바른 복합명사임을 몰라서 틀렸다. ‘verbal argument structures’는 문법 용어로 자주 쓰이는 표현이다. → 처방: ‘verbal argument structures’는 ‘동사의 논항 구조’라는 문법 용어임을 기억하고, 복합명사가 문법적으로 옳은지 확인하기.\n④ 진단: ‘ⓓ<u>as a kind of</u>’는 ‘~의 한 종류로’라는 뜻으로, 문법적으로 옳은 표현임을 몰라서 틀렸다. ‘as a kind of’는 ‘~의 한 종류’라는 구문으로, 문법적으로 문제없다. → 처방: ‘as a kind of’는 ‘~의 한 종류’라는 구문으로, 문법적으로 옳은 표현임을 기억하고, 밑줄 친 부분이 문법적으로 틀린지 아닌지만 확인하기.\n⑤ 진단: ‘ⓔ<u>fits well in</u> analysing’에서 ‘fits well in’은 ‘~에 잘 들어맞다’라는 뜻으로, 전치사 ‘in’이 아니라 ‘for’나 ‘to’를 써야 한다는 오해를 했다. ‘fits well in’는 ‘~에 잘 들어맞다’라는 구문으로, 문법적으로 옳은 표현이다. → 처방: ‘fits well in’은 ‘~에 잘 들어맞다’라는 구문으로, 문법적으로 옳은 표현임을 기억하고, 전치사 사용에 대한 오해를 버리기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]
