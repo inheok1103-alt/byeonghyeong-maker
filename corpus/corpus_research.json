@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-22T23:37:20.426Z",
+ "updated": "2026-08-23T02:08:29.146Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-23T02:08:03.991Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사 단수/복수 오류와 문맥적 어색함을 동시에 잡는 패턴이 빈번하며, 특히 'there is/are' 구문과 'new'+명사의 수 일치가 핵심이다.",
+   "rule": "CEFR B1 수준 내신 문항에서 'there is/are' 구문과 'new + (단/복)명사' 조합을 활용하여, 수 일치 오류와 문맥적 어색함을 동시에 평가하는 문장을 출제하라. 예: 'There is a new book on the table, but why are you looking for new books?'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-22T23:36:55.408Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'because' 구문에서 시간 표현(과거시제)과 무의미한 명사구('unmeaningful subjects')가 결합될 때, 'spend time ~ing' 구조로 수정하는 패턴이 반복된다. 또한 'is they have to'와 같은 주어-동사 위치 오류가 빈번하다.",
    "rule": "'because' 또는 'which means that' 절에서 과거시제 동사와 무의미한 명사구('unmeaningful', 'disease' 등)가 결합되면, 'They spent time in ~ing' 또는 'which means they will ~' 형태로 수정하는 오류 유형을 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-20T09:01:44.263Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제와 현재 시제가 혼용된 문장, 또는 불필요한 명사구·형용사가 과도한 어법 오류가 빈번하게 발생함을 확인할 수 있다. 특히 'harm full'처럼 띄어쓰기 오류와 '-ful' 접미사의 잘못된 사용이 자주 나타난다.",
-   "rule": "원문에서 과거 시제(learned)나 현재 시제(use)가 필요한 경우, 문맥상 자연스러운 시제를 선택하도록 빈칸(빈칸: ______)을 삽입하거나, '-ful' 접미사가 필요한 형용사(예: harmful)인지 확인하는 문항을 설계하라. 예: 'In this case, the student ______ a concept that can ______ in other fields.'",
    "sample": [
     "old english",
     "university press",
