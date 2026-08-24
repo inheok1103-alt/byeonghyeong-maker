@@ -1,6 +1,107 @@
 {
- "updated": "2026-08-24T17:50:29.729Z",
+ "updated": "2026-08-24T19:09:07.178Z",
  "samples": [
+  {
+   "ts": "2026-08-24T19:02:11.716Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the choice of words",
+     "the clarity of expression",
+     "the necessity of expression",
+     "the importance of grammar",
+     "the precision of expression"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Vocabulary determines the precision of expression in English.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Vocabulary determines the precision of expression in English.]\n[오답 진단·처방]\n① 진단: 학생은 'the choice of words'를 선택했는데, 이는 'I'가 단어 선택에 집중했다는 오해에서 나온다. 하지만 지문에서 'I'는 단어 선택이 아니라 '표현의 필요성'이 변했다는 점을 강조한다(예: '표현하지 않을 수 없었다'는 문장). → 처방: 문제에서 '표현의 필요성'이 변했다는 단서를 찾고, 그 변화가 글에서 어떻게 드러나는지 확인하라.\n② 진단: 학생은 'the clarity of expression'을 선택했는데, 이는 'I'의 말이나 글이 명확하지 않았다고 오해한 것이다. 하지만 지문은 '표현의 필요성'이 커졌다는 내용이지, 표현의 명확성에 대한 변화가 아니다. → 처방: 표현의 '필요성'과 '명확성'을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 기억하라.\n④ 진단: 학생은 'the importance of grammar'를 선택했는데, 이는 문법의 중요성에 대한 오해에서 나온다. 하지만 지문은 문법이 아니라 '표현의 필요성'이 변했다는 점을 다루고 있다. → 처방: 문법의 중요성과 표현의 필요성을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 떠올리라.\n⑤ 진단: 학생은 'the precision of expression'을 선택했는데, 이는 'I'가 표현을 정교하게 했다고 오해한 것이다. 하지만 지문은 '표현의 필요성'이 커졌다는 내용이지, 표현의 정교함에 대한 변화가 아니다. → 처방: 표현의 '정교함'과 '필요성'을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 확인하라."
+   }
+  },
+  {
+   "ts": "2026-08-24T19:06:30.108Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.83,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "<u>SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (diatribe</u>, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (schism, utopia). 3.Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. 4.Anyone so (ilk, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (prestigious, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.",
+    "choices": [
+     "The senator delivered an angry and critical speech to express strong disapproval of excessive military spending.",
+     "The senator went into a lengthy diatribe to defend the military budget against criticism.",
+     "The senator occasionally mentioned government waste in the military budget during a brief conversation.",
+     "The senator's speech caused excessive military spending due to his lengthy diatribe.",
+     "The senator sometimes goes into a lengthy diatribe about government waste in the military budget."
+    ],
+    "answer": 1,
+    "explanation": "밑줄 친 부분은 'The senator delivered an angry and critical speech to express strong disapproval of excessive military spending.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘diatribe’를 ‘변호’로 오해하고 ‘방어(defend)’라는 단어를 근거로 삼았지만, diatribe 는 ‘격렬한 비판’이므로 ‘비판’과 반대되는 의미를 지닌 이 선지는 지문과 맞지 않는다. → 처방: ‘diatribe’의 의미를 정확히 알고 있어야 한다. ‘격렬한 비판’이라는 뜻을 떠올리고, 지문에서 ‘정부 낭비’를 비판하는 내용임을 확인하자.\n③ 진단: ‘diatribe’를 ‘간단한 언급(occasionally mentioned)’으로 오해했으며, ‘길게( lengthy)’라는 단어를 무시하고 ‘간단히(brief)’라는 단어를 근거로 삼았다. → 처방: ‘lengthy’라는 단어가 ‘길게’라는 뜻임을 기억하고, 지문에서 ‘길게( lengthy)’라는 말이 쓰였는지 확인하자.\n④ 진단: ‘diatribe’를 ‘원인(caused)’으로 오해했으며, ‘정부 낭비’를 비판하는 연설이 ‘과도한 지출’을 일으킨다는 논리적 오류를 범했다. → 처방: ‘diatribe’는 ‘비판’이므로, 지문의 내용이 ‘비판’인지 ‘원인’이 되는지 확인하자. 비판은 결과가 아니라 행위임을 기억하자.\n⑤ 진단: ‘diatribe’를 ‘때때로( sometimes)’라는 단어로 오해했으며, ‘길게( lengthy)’라는 단어를 무시하고 ‘때때로’라는 단어를 근거로 삼았다. → 처방: ‘lengthy’라는 단어가 ‘길게’라는 뜻임을 기억하고, 지문에서 ‘길게’라는 말이 쓰였는지 확인하자. ‘때때로’는 ‘길게’와 반대되는 의미임을 기억하자.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-24T19:08:25.871Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.5,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary.\n\n(From Week 12) Choose the word that makes sense in each of the sentences below. The senator went into a lengthy (diatribe, remuneration) about government waste in the military budget. Most reformers are seeking to create a (schism, utopia). Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. Anyone so (ilk, timorous) should not have been selected to guard the castle. My brother was promoted to a (prestigious, flamboyant) job in his company. Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. ( ① ) The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. ( ② ) I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. ( ③ ) We marched in front of the embassy with (placards, inhibitions) held high. ( ④ ) Don’t (save face, wash your dirty linen in public) if you plan to run for office. ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘expunged’는 ‘지우다’란 뜻으로 문맥상 ‘성적’을 ‘지우는’ 일은 맞지만, ‘제출한 excellent term paper 때문에’가 아니라 ‘성적 자체가 사라지는’ 맥락이 자연스럽다. ‘truncated’는 ‘잘라내다’로 ‘기록’을 ‘잘라낸다’는 표현이 문맥에 맞지 않는다. → 처방: ‘truncated’를 ‘잘라내다’라는 뜻으로만 기억하지 말고, ‘기록’이 ‘잘라진다’는 표현이 자연스러운지 문장 전체를 다시 읽어보기.\n② 진단: ‘fractious’는 ‘화를 잘 내는’이란 뜻으로 ‘우연히 만난’ 상황과 맞지 않다. ‘fortuitous’는 ‘운이 좋은’이란 뜻으로 문맥에 맞지만, 학생은 ‘fractious’의 의미를 ‘다툼’이란 뜻으로 오해했을 수 있다. → 처방: ‘fractious’와 ‘fortuitous’를 단어장에 정리할 때, 뜻과 예문을 함께 적고, 뜻이 헷갈릴 때는 예문을 소리 내어 읽어보기.\n④ 진단: ‘save face’는 ‘체면을 세우다’란 뜻으로 문맥상 ‘공개하지 마라’는 뜻과 반대다. ‘wash your dirty linen in public’은 ‘남의 이목을 꺼리는’ 뜻으로, 학생은 ‘체면을 세우다’의 반대 표현으로 오해했을 수 있다. → 처방: ‘save face’와 ‘wash your dirty linen in public’을 한 문장으로 묶어 외우고, 문맥상 어떤 표현이 더 어울리는지 생각해보기.\n⑤ 진단: ‘placards’는 ‘플래카드’란 뜻으로 ‘들고 다니는’ 표현은 맞지만, ‘inhibitions’는 ‘억제’란 뜻으로 ‘들고 다니는’ 표현이 문맥에 맞지 않는다. 학생은 ‘placards’를 ‘장애물’이란 뜻으로 오해했을 수 있다. → 처방: 단어의 뜻을 외울 때, 뜻과 함께 ‘어떻게 사용되는지’를 예문으로 같이 적고, 문장 속에서 그 단어가 어떤 역할을 하는지 확인하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-24T17:48:21.862Z",
    "type": "틀린문장 고쳐쓰기",
@@ -230,78 +331,6 @@
     ],
     "answer": 3,
     "explanation": "밑줄 친 부분은 'A light verb’s role in a sentence is less meaningful than its role when it carries its full thematic weight.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘의미론적 기여’(semantic contribution)와 ‘문법적 역할’(grammatical structure)을 혼동한 것으로 보입니다. ‘의미론적 기여가 줄어든다’는 말은 문법적 역할이 아니라 ‘의미의 강도’가 약해진다는 뜻인데, 이를 ‘문법적 역할’이 주된 기능이라는 오해로 연결했습니다. → 처방: ‘의미론적 기여’가 ‘문법적 역할’이 아니라 ‘의미의 강도’임을 분명히 하고, ‘light verb’의 본래 의미(theme)를 떠올리며 읽기.\n② 진단: ‘의미론적 무게’(thematic weight)가 ‘문법적 기능’(grammatical function)에 의해 ‘가려진다’는 표현을 ‘의미론적 기여가 약해진다’는 뜻으로 오해했습니다. ‘overshadow’는 ‘가려지다’지만, 여기서는 ‘의미가 약해진다’는 의미가 아니라 ‘문법적 기능이 주목받는다’는 의미로 오독했습니다. → 처방: ‘overshadow’라는 단어가 ‘의미가 약해진다’는 뜻이 아니라 ‘다른 기능이 두드러진다’는 뜻임을 사전에서 확인하고 다시 읽기.\n④ 진단: ‘의미를 전달하지 않는다’는 표현을 ‘문법적 역할이 주된 기능’이라는 뜻으로 오해했습니다. 하지만 지문은 ‘의미의 강도가 약해진다’는 것이지 ‘의미가 전혀 없다’는 뜻이 아닙니다. → 처방: ‘contribution’이 ‘전혀 없다’는 뜻이 아니라 ‘약하다’는 뜻임을 명심하고, ‘의미의 강도’를 기준으로 선지를 비교하기.\n⑤ 진단: ‘의미 기여가 무시할 만하다’는 표현을 ‘의미가 전혀 없다’는 뜻으로 오해했습니다. 지문은 ‘의미의 강도가 줄어든다’는 것이지 ‘의미가 negligible(무시할 만한)’라는 뜻이 아닙니다. → 처방: ‘negligible’이라는 단어가 ‘무시할 만하다’는 뜻이지만, 지문에서 ‘의미의 강도가 약해진다’는 것은 ‘의미가 전혀 없다’는 뜻이 아님을 기억하고 읽기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T15:03:41.045Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] 2 Extended projections Yet if this is so, we still face the problem that the subject of an active transitive verb is interpreted as the subject of that verb and not of some independent abstract light verb.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 그런데 이것이 사실이라고 하더라도, 능동태의 타동사의 주어는 그 동사가 아닌 어떤 독립적인 추상적 ‘가벼운 동사’의 주어로서 해석된다는 문제에 여전히 직면하게 됩니다. (구문 포인트: 명사절(that절) 내의 수동태(interpreted as) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T14:05:43.901Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "QUESTION WORD AUXILIARY SUBJECT Where do people meet? How does the radio work? What did the guerrillas say? An ordinary verb such as meet, work or say cannot come before the subject. NOT Where meet-people? and NOT How works-the-radio? The verb after the subject does not end in s or ed. and NOT What did-the-guerrillas-said? Question phrases Look at these question phrases with what and how. What time is your friend arriving? ~ Half past eight. What colour is your toothbrush? What kind of/What sort of club is it? ~ A nightclub. How old is your sister? ~ She's twenty. How often do you go out? ~ About once a week, usually. How far is the beach? ~ Only five minutes walk How long will the meeting last? ~ An hour or so, I expect. How many televisions have you got? ~ Three How much money did you spend? ~ About a hundred pounds. [ ] We can help them Very soon.",
-    "choices": [
-     "The guerrillas planned to celebrate their victory together.",
-     "The guerrillas warned that their enemies were very dangerous.",
-     "The guerrillas declared that their goal was independence.",
-     "The guerrillas shouted angrily about their enemies.",
-     "The guerrillas announced their surrender to the authorities."
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 원문 'Guerillas: For our freedom.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'What did the guerrillas say?'는 '무엇을 말하다'라는 뜻이므로, '계획하다(planned)'는 동사 의미가 맞지 않는다. → 처방: 질문 동사(say, tell 등)를 보고 선지가 말하는 내용이 동사와 어울리는지 확인할 것.\n② 진단: 지문에서 'say'는 단순히 '말하다'라는 뜻이므로, '경고하다(warn)'는 동사 의미가 맞지 않는다. → 처방: 질문 동사(say)의 의미를 정확히 알고, 선지가 그 의미를 담고 있는지 확인할 것.\n④ 진단: 지문에서 'say'는 중립적인 '말하다'이므로, '화난 목소리로 소리치다(shouted angrily)'는 감정 표현이 과장되어 있다. → 처방: 질문 동사(say)의 기본 의미를 기억하고, 선지가 그 의미를 벗어나지 않는지 점검할 것.\n⑤ 진단: 지문에서 'say'는 '말하다'이므로, '항복 선언하다(announced their surrender)'는 의미가 맞지 않는다. → 처방: 질문 동사(say)의 의미를 정확히 이해하고, 선지가 그 의미를 벗어나지 않는지 확인할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T14:09:07.187Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "QUESTION WORD AUXILIARY SUBJECT Where do people meet? How does the radio work? What did the guerrillas say? An ordinary verb such as meet, work or say cannot come before the subject. NOT Where meet-people? and NOT How works-the-radio? The verb after the subject does not end in s or ed. NOT How-does-the-radio-works? and NOT What did-the-guerrillas-said? Question phrases Look at these question phrases with what and how. What time is your friend arriving? ~ Half past eight. What colour is your toothbrush? ~ Yellow. What kind of/What sort of club is it? ~ A nightclub. How old is your sister? ~ She's twenty. How often do you go out? ~ About once a week, usually. How far is the beach? ~ Only five minutes walk How long will the meeting last? ~ An hour or so, I expect. How many televisions have you got? ~ Three How much money did you spend? ~ About a hundred pounds. Guerillas: For our freedom. We can help them Very soon.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]

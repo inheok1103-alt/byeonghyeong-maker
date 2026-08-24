@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T17:50:29.725Z",
+ "updated": "2026-08-24T19:09:07.174Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T19:08:35.806Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'resource for ~ to be working'는 'resource that ~ need to run'으로 재구조화되는 경향이 강하며, 소유격 오류('failure's')는 복수형+'s'가 아닌 'their failures'로 교정되는 패턴이 반복됨.",
+   "rule": "'X is the main resource for Y to be V-ing'라는 문장은 'X is the main resource that Y need(s) to V'로 변환하여 출제하라. (예: 'This book is the main resource for students to be learning.' → 'This book is the main resource that students need to learn.')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T17:49:26.047Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "명사 오류(단수/복수, 철자)는 원서 코퍼스에서 'reasons', 'successful' 등 빈도 높은 명사/형용사 패턴과 연관성이 높다. 또한 'a/an/the' 관사 오류는 'the 2006 World Cup' 등 고정 관용 표현에서 자주 발생한다.",
    "rule": "원서 코퍼스 최빈 명사/형용사(예: 'reasons', 'successful')의 복수형/형용사 형태와 관사('the' + 고유명사) 규칙을 적용한 오류 검토를 반드시 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T02:01:33.644Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 '~ is the best way' 구문과 'propose/make' 동사의 병렬 구조가 문법적으로 오류가 빈번하다는 점을 확인할 수 있었다. 또한 소유대명사 'theirs'가 'to them'으로 대체되는 오류 패턴도 다수 관찰되었다.",
-   "rule": "'~ is the best way' 구문에서 동사 원형(예: propose/make)과 병렬 구조를 구성할 때는 'to V' 형태가 아닌 '-ing' 형태(예: proposing/making)를 사용해야 하며, 소유대명사(theirs)는 반드시 목적격 대명사(to them/for them)으로 교정해야 한다.",
    "sample": [
     "old english",
     "university press",
