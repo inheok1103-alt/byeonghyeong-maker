@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T03:20:48.949Z",
+ "updated": "2026-08-24T05:06:41.796Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T05:06:12.955Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거시제 동사(hire, work)가 전치사 없이 직접 사용되는 오류가 빈번하며, 'when/if + 동사원형' 구조가 아니라 'when/if + -ing' 또는 'by + -ing'로 연결되어야 한다.",
+   "rule": "문법 문항에서 'when/if + 주어 + 동사원형' 구조가 나올 경우, 해당 동사가 전치사 없이 사용되었다면 'by + -ing' 또는 '-ing' 형태로 수정하도록 오류 유형을 제시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T03:20:08.887Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'명사+전치사+명사' 구조에서 전치사 뒤의 관사가 생략되는 오류가 빈번하며, 특히 'holistic understanding'과 같은 추상명사에서 두드러진다. 또한, 'although'와 같은 접속사가 문법적 오류 없이 사용되려면 적절한 시제와 주어의 일치, 그리고 문맥상 논리적 연결이 필수적이다.",
    "rule": "'give rise to'나 'lead to'와 같은 'V + P + N' 구조에서 전치사(P) 뒤의 관사(a/the)를 생략하지 마라. 예를 들어, 'This will give rise to holistic understanding'은 'This will give rise to a holistic understanding'으로 수정해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T11:47:08.497Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'old English', 'Middle English' 등 시대별 언어 변천 패턴과 'between two' 구조가 빈번히 관찰되며, 문법적 오류는 주로 시제·수 일치, 관사·형용사 한정, 직접목적어의 오용에서 발생한다.",
-   "rule": "원서 코퍼스의 시대별 언어 패턴(Old/Middle English)과 'between two' 구조를 반영하여, 시제·수 일치 오류(예: 'have spend'→'have spent'), 관사/형용사 한정 오류(예: 'many time'→'too much time'), 비교구조 오류(예: 'smarter than the other people'→'smarter than other people')를 변형문제에 반드시 포함시킨다.",
    "sample": [
     "old english",
     "university press",
