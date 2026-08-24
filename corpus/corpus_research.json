@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T02:07:39.288Z",
+ "updated": "2026-08-24T03:20:48.949Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T03:20:08.887Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'long-term'과 같은 복합형용사가 빈번히 등장하며, 특히 'long-term wastefulness'처럼 명사 수식 시 하이픈이 필수적으로 사용됨을 확인했다. 또한 'during normal conversation'과 같이 전치사 뒤 명사구는 관사 생략 없이 완전 형태가 일반적임을 확인했다.",
+   "rule": "원서 문체 패턴을 반영하여, 'long-term', 'well-known' 등 복합형용사가 명사를 수식할 때에는 반드시 하이픈을 삽입하고, 전치사 뒤 명사구는 관사 없이 완전 형태(예: 'during normal conversation')로 표기하도록 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T02:07:14.579Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'old English', 'Middle English' 등 시대별 언어 변천 패턴과 'between two' 구조가 빈번히 관찰되며, 문법적 오류는 주로 시제·수 일치, 관사·형용사 한정, 직접목적어의 오용에서 발생한다.",
    "rule": "원서 코퍼스의 시대별 언어 패턴(Old/Middle English)과 'between two' 구조를 반영하여, 시제·수 일치 오류(예: 'have spend'→'have spent'), 관사/형용사 한정 오류(예: 'many time'→'too much time'), 비교구조 오류(예: 'smarter than the other people'→'smarter than other people')를 변형문제에 반드시 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T10:51:26.274Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'직접목적어+부사+동사' 구문에서 목적어의 위치가 문법 규칙을 위반하는 경우가 빈번하며, 특히 'to me', 'at home' 등 전치사구가 동사와 결합할 때 오류가 발생한다. 또한 'kind of studies'와 같이 수량 표현 뒤 복수명사가 오는 경우, 'two kind'와 같이 수량 표현의 단수형 오류가 자주 관찰된다.",
-   "rule": "'직접목적어+부사+동사' 구문에서 목적어는 동사 바로 뒤에 위치해야 하며, 전치사구는 동사나 목적어 뒤에 오는 규칙을 적용하여 문장을 구성하라. 또한 수량 표현 뒤에는 복수명사를 사용하고, 'kind of' 뒤에는 복수명사를 반드시 따르도록 한다.",
    "sample": [
     "old english",
     "university press",
