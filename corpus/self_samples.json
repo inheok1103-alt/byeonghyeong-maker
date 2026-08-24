@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-24T11:51:19.126Z",
+ "updated": "2026-08-24T13:21:53.991Z",
  "samples": [
+  {
+   "ts": "2026-08-24T13:15:20.636Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Necessity . . . constrains them to alter their former Systems of government. ✓ We now must alter our former Systems of government. Instead of writing as clearly and directly as he did in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a style so indirect and impersonal? One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked. What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • <u>necessity constrains [the colonists]</u>",
+    "choices": [
+     "Because the colonists faced unavoidable circumstances, they were able to achieve their goals more effectively.",
+     "Because of their own decisions, the colonists were compelled to stay in the harsh environment.",
+     "The colonists had absolute freedom to make their own decisions in the new land.",
+     "The colonists were not acting out of their own choice but were forced by unavoidable circumstances beyond their control.",
+     "The colonists occasionally felt pressure from unavoidable circumstances, but they mostly acted freely."
+    ],
+    "answer": 4,
+    "explanation": "밑줄 친 부분은 'The colonists were not acting out of their own choice but were forced by unavoidable circumstances beyond their control.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘unavoidable circumstances’(필연적 상황)와 ‘achieve their goals more effectively’(목표 달성에 효과적)는 지문의 ‘necessity 가 그들을 alter 하도록 강제한다’는 맥락과 맞지 않음. ‘effectively’는 지문에 없음. → 처방: ‘necessity’가 ‘강제’한다는 핵심 뜻을 먼저 확인하고, ‘목표 달성에 효과적’이란 말은 지문에 없으므로 제외해야 함.\n② 진단: ‘compelled to stay’(머무르도록 강제됨)는 지문의 ‘alter their former Systems of government’(정부를 바꾸도록 강제됨)와 반대 의미. ‘stay’는 지문에 없음. → 처방: ‘compel’이 ‘강제’를 뜻한다는 점을 떠올리고, 지문에서 ‘변화’를 강요하는지 확인해야 함.\n③ 진단: ‘absolute freedom’(절대적 자유)는 지문의 ‘necessity 가 강제한다’는 뜻과 완전히 반대. ‘freedom’이라는 단어 자체가 지문에 없음. → 처방: ‘necessity’가 ‘자유’를 제한한다는 점을 떠올리고, ‘freedom’이란 말이 나오면 오답임을 의심해야 함.\n⑤ 진단: ‘occasionally felt pressure’(가끔 압박을 느꼈다)는 지문의 ‘constrains them to alter’(변경하도록 강제한다)와 달리 ‘부분적’이며 ‘자유’가 있음을 암시. ‘mostly acted freely’는 지문의 ‘free will’이 없다는 뜻과 반대. → 처방: ‘necessity’가 ‘전체적 강제’를 뜻한다는 점을 떠올리고, ‘부분적’이나 ‘자유’란 표현이 나오면 오답임을 확인해야 함.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-24T13:21:17.321Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 19 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'responsibility', 'principles', 'revolution' / 17~21단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Jefferson’s indirect style subtly shifts responsibility from colonists to universal principles, making revolution seem inevitable rather than a choice.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-24T11:45:44.448Z",
    "type": "밑줄함의",
@@ -292,58 +346,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T07:35:13.042Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '관계사' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 관계사를 사용하여 한 문장으로 바꿔 쓰시오.\n[원문] For instance, a child who gets praised by her teacher for doing an exercise correctly is likely to continue doing the exercise in that way.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] a child getting praised by her teacher for doing an exercise correctly is likely to continue doing the exercise in that way. (포인트: 관계사 'who'를 현재분사 'getting'으로 전환하여 관계사절을 축약)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-24T05:55:34.121Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 4번(기록 3번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "참고서가 성공하려면 무엇보다도 저자의 부모로부터 언어 감각을 물려받아야 한다",
-     "참고서의 성공은 오류를 잡아내는 남편의 역할에 가장 크게 좌우된다",
-     "참고서의 성공은 다수의 기여와 꼼꼼한 편집 작업에 달려 있다",
-     "모든 참고서는 창작과 출판에 수많은 사람들의 공동 노력이 반드시 필요하다",
-     "참고서가 성공하려면 창작 과정에서 모든 사람의 의견이 언제나 반영되어야 한다"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'A reference guide's success depends on collective input and meticulous editing.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 논지에서 어긋남· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A reference guide]\n[오답 진단·처방]\n① 진단: 저자의 부모가 언어 감각을 물려주었다는 사실만 강조하고, 부모의 역할이 전체 성공 요인인 것처럼 오해했다. 지문은 부모의 영향을 언급하지만, 성공 요인으로 부모 한 사람만을 꼽은 것이 아니다. → 처방: 지문에서 저자가 언급한 여러 사람의 기여를 종합적으로 살펴보고, 그중 한 요소에만 집중하지 않도록 주의하기.\n② 진단: 지문에서 남편이 오류를 잡아냈다는 사실만 보고, 남편의 역할이 가장 중요하다고 단정했다. 그러나 지문은 남편 외에도 많은 사람의 도움이 필요하다고 강조한다. → 처방: 지문에서 언급된 모든 사람의 역할을 리스트로 정리하고, 그중 한 사람의 역할이 가장 중요하다고 판단하지 않기.\n③ 진단: 꼼꼼한 편집 작업의 중요성을 과장하여, 참고서의 성공이 오로지 편집에 달려 있다고 오해했다. 지문은 편집뿐 아니라 여러 사람의 기여를 강조한다. → 처방: 지문의 전체 내용을 훑어보며, '꼼꼼한 편집'이라는 한 요소에만 초점을 맞추지 말고, 지문이 언급한 모든 요소(예: 부모, 남편, 독자 등)를 종합적으로 이해하기.\n⑤ 진단: 지문에서 '수많은 사람들의 공동 노력'을 언급했지만, '모든 사람의 의견이 언제나 반영되어야 한다'는 과도한 조건을 덧붙였다. 지문은 기여가 있었음을 강조하지, 모든 의견의 반영을 요구하지 않는다. → 처방: 지문의 표현을 그대로 받아들이되, '모든 사람의 의견이 언제나 반영되어야 한다'는 해석은 지문에 없는 과도한 주장임을 인지하고, 지문의 핵심만 정확히 파악하기."
    }
   }
  ]

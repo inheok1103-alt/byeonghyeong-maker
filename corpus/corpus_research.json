@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T11:51:19.122Z",
+ "updated": "2026-08-24T13:21:53.987Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T13:21:19.350Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거시제와 3인칭 단수 동사 형태가 혼동된 오류가 빈번하며, 접속사 생략으로 인한 문맥 오해도 많다. 또한, 명사 복수형과 소유격 오류가 자주 발생한다.",
+   "rule": "'3인칭 단수 주어 + 현재시제 동사'는 '-s' 또는 '-es'가 반드시 붙어야 하며, 접속사(and, but 등)는 문맥상 필수적일 경우 반드시 삽입하여 문장 구조를 명확히 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T11:50:49.529Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "영어의 연어(collocation) 패턴을 분석한 결과, 'be + 과거분사(be annoyed/be taking)'와 '명사 + 명사(heart disease patients)'가 빈번히 사용되며, 부정어와 조동사의 결합(be not → cannot), 관사의 생략(placebo → a placebo)이 오류로 자주 나타난다는 점을 확인했다.",
    "rule": "영어 문장에서 조동사(can, must 등)와 부정어(not)의 결합 시 'cannot' 형태로 축약하여 사용하며, 'be + 과거분사' 구문에서는 과거분사가 동사원형과 자연스럽게 연어(collocation)를 이루는지 확인하고, 복수 명사 앞에는 관사를 생략하지 않도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T19:43:28.410Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 'old english', 'middle english' 등 역사적 언어 변천 패턴에서 'present/past tense 혼용'과 'noun phrase의 복수화·정관사/불정관사 사용'이 빈번함을 확인할 수 있다. 또한 'reason relations'(인과관계 표현)에서 'if-then' 구조와 'until' 구문이 조합되어 복잡한 조건문을 형성하는 경향이 강하다.",
-   "rule": "'if-then' 구조의 조건문에서 'if 절은 현재 시제(present tense)를 사용하고, then 절은 will + 동사원형(미래 시제) 또는 현재 시제(일반적 사실)로 표기하라. 또한 'until' 구문은 'until they know how it works'와 같이 완료 시점(knowing)을 나타내는 현재 시제 동사로 연결하라.",
    "sample": [
     "old english",
     "university press",
