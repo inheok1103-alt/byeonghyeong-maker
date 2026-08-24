@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-24T21:47:17.491Z",
+ "updated": "2026-08-24T22:52:43.007Z",
  "samples": [
+  {
+   "ts": "2026-08-24T22:47:05.725Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어 소유격 대명사는 소유의 의미를 나타내는 두 가지 형태로 나뉘지만, 두 형태 모두 같은 문법적 역할을 수행한다",
+     "영어 소유격 대명사의 형태가 문법적 역할을 결정하지 않으며, 오히려 문법적 역할이 형태를 결정한다는 사실은 잘못된 주장이다",
+     "영어 대명사 대부분이 소유격 대명사를 포함해 형용사적 기능과 대명사적 기능을 동시에 갖추는 것은 아니다",
+     "영어 소유격 대명사는 문장 내 위치에 따라 형용사적 기능과 대명사적 기능 중 하나를 임의로 선택할 수 있다",
+     "영어 소유격 대명사는 형용사처럼 쓰이는 형태와 대명사처럼 쓰이는 형태가 각각 달라, 각기 다른 문법적 역할을 수행한다"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Possessive pronouns in English have two distinct forms—adjectival and pronominal—each serving different grammatical functions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘두 형태 모두 같은 문법적 역할을 수행한다’는 문장에서 ‘형태’와 ‘문법적 역할’이 뒤섞였고, 지문은 ‘형태가 달라지면 역할도 달라진다’고 분명히 밝혔음에도 ‘같은 역할’을 주장하여 지문과 반대됨. → 처방: 형태가 문법적 역할을 결정한다는 지문의 내용을 정확히 읽고, 형태와 역할의 관계를 ‘서로 다르다’로 기억하기.\n② 진단: ‘문법적 역할이 형태를 결정한다’는 잘못된 주장이라고 오해했는데, 지문은 ‘형태가 문법적 역할을 결정한다’고 명시했으므로 이 선지는 지문의 핵심과 정반대임. → 처방: ‘결정한다’는 동사가 ‘형태→역할’ 방향임을 반드시 확인하고, 반대 방향은 없다고 기억하기.\n③ 진단: ‘대부분의 대명사가 형용사적 기능과 대명사적 기능을 동시에 갖추지 않는다’는 문장에서 ‘대부분’이란 단어를 오해해 지문의 ‘소유격 대명사만’ 해당된다는 한정적 의미를 무시했음. → 처방: ‘소유격 대명사’에만 초점을 맞추고, ‘대부분’이란 말은 이 지문에서는 해당되지 않는다는 점을 분명히 하기.\n④ 진단: ‘임의로 선택할 수 있다’는 표현에서 ‘위치’에 따라 기능이 바뀌는 것처럼 오해했는데, 지문은 ‘형태’에 따라 기능이 정해진다고 설명했으므로 이 선지는 지문과 무관한 주장임. → 처방: ‘형태’와 ‘기능’이 고정된 관계임을 기억하고, ‘위치’나 ‘선택’이라는 단어는 이 문제와 무관하다는 점을 분명히 하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Possessive pronouns in English have two distinct forms—adjectival and pronominal—each serving different grammatical functions.]"
+   }
+  },
+  {
+   "ts": "2026-08-24T22:52:04.336Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 3건 · 솔버교정: 솔버 2/3 다수결 1번(기록 2번 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the dual grammatical roles of possessive pronouns in English",
+     "distinct grammatical functions of possessive pronouns in English",
+     "how possessive determiners and pronouns overlap in English grammar",
+     "the necessity of two possessive forms for personal pronouns",
+     "common misconceptions about possessive pronouns in grammar"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Possessive pronouns in English have two distinct functions: adjectival (e.g., *my*) and pronominal (e.g., *mine*).'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 논지에서 어긋남· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 조건 누락· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Possessive pronouns in English have two distinct functions: adjectival (e.g., *my*) and pronominal (e.g., *mine*).]\n[오답 진단·처방]\n② 진단: ‘distinct grammatical functions’를 ‘dual roles’와 혼동하여, ‘distinct’는 ‘서로 다른’(구분된) 의미로 ‘dual’(이중의)과는 다르다는 점을 놓침. 지문은 ‘adjectival possessive pronouns’와 ‘pronominal possessive pronouns’를 구분하지만, ‘distinct’는 ‘서로 다른 기능’을 가리키는 반면 ‘dual’은 ‘두 가지 역할’을 가리킴. → 처방: ‘distinct’는 ‘서로 다른 기능’을, ‘dual’는 ‘이중 역할’을 뜻한다는 점을 기억하고, 지문에서 두 가지로 나뉜 possessive pronouns 의 ‘기능’을 정확히 짚어보기.\n③ 진단: ‘overlap’(겹침)을 오해하여, possessive determiners(‘my’, ‘your’)와 pronouns(‘mine’, ‘yours’)가 ‘겹치는’ 것이 아니라 ‘서로 다른 역할’을 한다는 점을 놓침. 지문은 ‘my’는 determiner 로, ‘mine’는 pronoun 으로 기능한다고 명확히 설명함. → 처방: ‘overlap’이 아니라 ‘서로 다른 역할’을 한다는 점을 확인하고, 지문에서 ‘my’는 ‘adjectival possessive pronoun’, ‘mine’는 ‘pronominal possessive pronoun’이라는 용어를 다시 한 번 읽어보기.\n④ 진단: ‘necessity’(필요성)를 강조하여, possessive pronouns 가 ‘두 가지 형태’가 있어야 한다는 ‘필요성’을 오해함. 지문은 ‘두 가지 형태가 있다’는 사실만 설명하고, 그 ‘필요성’을 언급하지 않음. → 처방: ‘필요성’이 아니라 ‘형태가 두 가지’라는 사실에 집중하고, 지문에서 ‘my’와 ‘mine’이 ‘서로 다른 기능’을 한다는 점을 다시 확인하기.\n⑤ 진단: ‘common misconceptions’(흔한 오해)를 오해하여, possessive pronouns 에 대한 ‘오해’를 다룬다는 점을 놓침. 지문은 ‘possessive pronouns’의 ‘두 가지 형태와 기능’을 설명하는 데 초점을 두고, ‘오해’를 다루지 않음. → 처방: ‘misconceptions’이 아니라 ‘possessive pronouns 의 두 가지 형태와 기능’을 정확히 짚어보기. 지문에서 ‘adjectival possessive pronouns’와 ‘pronominal possessive pronouns’를 구분하는 부분을 다시 읽기."
+   }
+  },
   {
    "ts": "2026-08-24T21:45:28.911Z",
    "type": "주제",
@@ -309,60 +377,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘expunged’는 ‘지우다’란 뜻으로 문맥상 ‘성적’을 ‘지우는’ 일은 맞지만, ‘제출한 excellent term paper 때문에’가 아니라 ‘성적 자체가 사라지는’ 맥락이 자연스럽다. ‘truncated’는 ‘잘라내다’로 ‘기록’을 ‘잘라낸다’는 표현이 문맥에 맞지 않는다. → 처방: ‘truncated’를 ‘잘라내다’라는 뜻으로만 기억하지 말고, ‘기록’이 ‘잘라진다’는 표현이 자연스러운지 문장 전체를 다시 읽어보기.\n② 진단: ‘fractious’는 ‘화를 잘 내는’이란 뜻으로 ‘우연히 만난’ 상황과 맞지 않다. ‘fortuitous’는 ‘운이 좋은’이란 뜻으로 문맥에 맞지만, 학생은 ‘fractious’의 의미를 ‘다툼’이란 뜻으로 오해했을 수 있다. → 처방: ‘fractious’와 ‘fortuitous’를 단어장에 정리할 때, 뜻과 예문을 함께 적고, 뜻이 헷갈릴 때는 예문을 소리 내어 읽어보기.\n④ 진단: ‘save face’는 ‘체면을 세우다’란 뜻으로 문맥상 ‘공개하지 마라’는 뜻과 반대다. ‘wash your dirty linen in public’은 ‘남의 이목을 꺼리는’ 뜻으로, 학생은 ‘체면을 세우다’의 반대 표현으로 오해했을 수 있다. → 처방: ‘save face’와 ‘wash your dirty linen in public’을 한 문장으로 묶어 외우고, 문맥상 어떤 표현이 더 어울리는지 생각해보기.\n⑤ 진단: ‘placards’는 ‘플래카드’란 뜻으로 ‘들고 다니는’ 표현은 맞지만, ‘inhibitions’는 ‘억제’란 뜻으로 ‘들고 다니는’ 표현이 문맥에 맞지 않는다. 학생은 ‘placards’를 ‘장애물’이란 뜻으로 오해했을 수 있다. → 처방: 단어의 뜻을 외울 때, 뜻과 함께 ‘어떻게 사용되는지’를 예문으로 같이 적고, 문장 속에서 그 단어가 어떤 역할을 하는지 확인하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T17:48:21.862Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "What positions fit in? 93 (49) V loc Ν abs loc Ν Ν Him bij) fyr ongean The representations in (47) — (49) each contain two locative arguments, given that, unlike fram, which ⓐ<u>realises ablative</u>, ongean realises locative. Given the \"one-case-per-clause\" constraint, then, as long as the datives ⓑ<u>me and he</u> are interpreted as locative, they must be circumstantials. For (16) — (19), the datives ⓒ<u>might be taken as</u> governed by prefixed verbs (e. g. cefterridan, aftercliopan), and therefore participant arguments thereof. Although there is no direct evidence for lexicalisation of the prefix + verb complex, we may recall instances of accusative co-occurring with cefter + verb, only when the formative ⓓ<u>immediately precedes the verb</u> (cf. above). And these may be indirect evidence for lexicalisation of the complex as a transitive verb governing the accusative as its direct object, as represented in (50) and (51). After (50) V erg abs/loc A Ν Ν Hig öa sona ⓔ<u>aefterridon</u>",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓑ: 'me and he' → 'me and him' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T17:49:07.306Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 9건 · 솔버교정: 솔버 2/2 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "constraints on case assignment in Miami–Illinois grammar",
-     "limitations of locative case marking in Miami–Illinois",
-     "impact of verb prefixes on case realization in Miami–Illinois",
-     "universal grammatical constraints on dative arguments",
-     "case assignment rules in Miami–Illinois excluding locative contexts"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Case assignment constraints in Miami–Illinois.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Case assignment constraints in Miami–Illinois.]\n[오답 진단·처방]\n① 진단: 지문에서 'one-case-per-clause' 제약이나 동사 접두어의 영향을 다루지 않으며, Miami–Illinois 문법의 'case assignment' 제약에만 초점을 맞추었다면, 지문의 핵심 논의(접두어+동사 복합체의 영향)를 놓친 것이다. → 처방: 지문의 주요 논의를 확인하고, 각 선지가 지문에서 다루는 주제와 얼마나 일치하는지 비교해 보세요. 특히 동사 접두어(cefter-, æfter-)가 격 실현에 미치는 영향을 중점적으로 읽으세요.\n② 진단: 지문은 'locative' 격이 사용되는 경우를 설명하지만, 'limitations'(제한점)이 아니라 'realisation'(실현 방식)에 초점을 맞추고 있다. 또한 Miami–Illinois 문법의 한계가 아니라 동사 접두어의 영향을 분석하고 있다. → 처방: 지문에서 'locative' 격이 어떻게 실현되는지(예: ongean, dative 해석)를 확인하고, 'limitations'이라는 단어가 지문에서 언급되는지 확인하세요.\n④ 진단: 지문은 Miami–Illinois 문법의 특정한 사례(동사 접두어의 영향)에 집중하며, 'universal'(보편적) 제약이나 'dative argument'(여격 논항)의 보편 규칙을 다루지 않는다. → 처방: 지문에서 'Miami–Illinois'라는 특정 언어의 문법 규칙에 주목하고, 보편적 규칙을 다루는 선지는 제외하세요.\n⑤ 진단: 지문은 'locative contexts'를 포함한 전체적인 격 할당 규칙을 다루며, 'excluding locative contexts'(여격 맥락을 제외하는) 규칙을 다루지 않는다. 또한 'case assignment rules'가 아니라 동사 접두어의 영향을 분석하고 있다. → 처방: 지문에서 'locative' 격이 포함된 사례(예: (49) ongean)까지도 분석 대상이었는지 확인하고, 여격을 제외하는 규칙이 있는지 찾아보세요."
    }
   }
  ]
