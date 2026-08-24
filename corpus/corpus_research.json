@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T13:21:53.987Z",
+ "updated": "2026-08-24T14:09:50.085Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T14:09:19.329Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "복수형 오류가 빈번하며, 특히 'a + 단수명사' 구조에서 단수명사가 복수형으로 수정되는 패턴이 두드러진다. 또한, 'be동사 + 과거분사' 구조가 'be동사 + 전치사구'로 오류 수정되는 경우가 많다.",
+   "rule": "영어 문장에서 'a + 단수명사' 또는 'be동사 + 과거분사' 구조가 등장할 경우, 해당 명사의 복수형 여부와 동사의 능동/수동태를 반드시 확인하여 오류를 점검하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T13:21:19.350Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제와 현재시제가 혼용된 문장에서 시제 일관성이 깨지는 경우가 빈번하며, 특히 'hire'/'teach'와 같은 동사가 'hiring'/'teaching'으로 능동태 분사형으로 수정되어야 자연스러워진다.",
    "rule": "시제 혼용 오류를 교정하기 위해 문장 내 모든 동사의 시제를 통일하거나, 능동태/수동태를 명확히 구분하여 '~ing' 형태의 분사형으로 전환하는 규칙을 적용하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T20:44:36.835Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "영어의 연어(collocation) 패턴을 분석한 결과, 'be + 과거분사(be annoyed/be taking)'와 '명사 + 명사(heart disease patients)'가 빈번히 사용되며, 부정어와 조동사의 결합(be not → cannot), 관사의 생략(placebo → a placebo)이 오류로 자주 나타난다는 점을 확인했다.",
-   "rule": "영어 문장에서 조동사(can, must 등)와 부정어(not)의 결합 시 'cannot' 형태로 축약하여 사용하며, 'be + 과거분사' 구문에서는 과거분사가 동사원형과 자연스럽게 연어(collocation)를 이루는지 확인하고, 복수 명사 앞에는 관사를 생략하지 않도록 한다.",
    "sample": [
     "old english",
     "university press",

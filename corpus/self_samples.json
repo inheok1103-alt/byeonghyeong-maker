@@ -1,6 +1,78 @@
 {
- "updated": "2026-08-24T13:21:53.991Z",
+ "updated": "2026-08-24T14:09:50.089Z",
  "samples": [
+  {
+   "ts": "2026-08-24T14:05:43.901Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "QUESTION WORD AUXILIARY SUBJECT Where do people meet? How does the radio work? What did the guerrillas say? An ordinary verb such as meet, work or say cannot come before the subject. NOT Where meet-people? and NOT How works-the-radio? The verb after the subject does not end in s or ed. and NOT What did-the-guerrillas-said? Question phrases Look at these question phrases with what and how. What time is your friend arriving? ~ Half past eight. What colour is your toothbrush? What kind of/What sort of club is it? ~ A nightclub. How old is your sister? ~ She's twenty. How often do you go out? ~ About once a week, usually. How far is the beach? ~ Only five minutes walk How long will the meeting last? ~ An hour or so, I expect. How many televisions have you got? ~ Three How much money did you spend? ~ About a hundred pounds. [ ] We can help them Very soon.",
+    "choices": [
+     "The guerrillas planned to celebrate their victory together.",
+     "The guerrillas warned that their enemies were very dangerous.",
+     "The guerrillas declared that their goal was independence.",
+     "The guerrillas shouted angrily about their enemies.",
+     "The guerrillas announced their surrender to the authorities."
+    ],
+    "answer": 3,
+    "explanation": "빈칸에는 원문 'Guerillas: For our freedom.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'What did the guerrillas say?'는 '무엇을 말하다'라는 뜻이므로, '계획하다(planned)'는 동사 의미가 맞지 않는다. → 처방: 질문 동사(say, tell 등)를 보고 선지가 말하는 내용이 동사와 어울리는지 확인할 것.\n② 진단: 지문에서 'say'는 단순히 '말하다'라는 뜻이므로, '경고하다(warn)'는 동사 의미가 맞지 않는다. → 처방: 질문 동사(say)의 의미를 정확히 알고, 선지가 그 의미를 담고 있는지 확인할 것.\n④ 진단: 지문에서 'say'는 중립적인 '말하다'이므로, '화난 목소리로 소리치다(shouted angrily)'는 감정 표현이 과장되어 있다. → 처방: 질문 동사(say)의 기본 의미를 기억하고, 선지가 그 의미를 벗어나지 않는지 점검할 것.\n⑤ 진단: 지문에서 'say'는 '말하다'이므로, '항복 선언하다(announced their surrender)'는 의미가 맞지 않는다. → 처방: 질문 동사(say)의 의미를 정확히 이해하고, 선지가 그 의미를 벗어나지 않는지 확인할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-24T14:09:07.187Z",
+   "type": "장문세트",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
+    "passage": "QUESTION WORD AUXILIARY SUBJECT Where do people meet? How does the radio work? What did the guerrillas say? An ordinary verb such as meet, work or say cannot come before the subject. NOT Where meet-people? and NOT How works-the-radio? The verb after the subject does not end in s or ed. NOT How-does-the-radio-works? and NOT What did-the-guerrillas-said? Question phrases Look at these question phrases with what and how. What time is your friend arriving? ~ Half past eight. What colour is your toothbrush? ~ Yellow. What kind of/What sort of club is it? ~ A nightclub. How old is your sister? ~ She's twenty. How often do you go out? ~ About once a week, usually. How far is the beach? ~ Only five minutes walk How long will the meeting last? ~ An hour or so, I expect. How many televisions have you got? ~ Three How much money did you spend? ~ About a hundred pounds. Guerillas: For our freedom. We can help them Very soon.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-24T14:09:16.834Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 6 검산됨)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 6단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 친구가 몇 시에 도착하나요?\n주어진 단어: ( friend / arriving )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] What time is your friend arriving. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-24T13:15:20.636Z",
    "type": "밑줄함의",
@@ -273,79 +345,6 @@
     ],
     "answer": 4,
     "explanation": "정답 ⓓ는 '(대명사 We)'를 가리키고, 나머지 넷은 '과학자들(they)'를 가리킨다.\n[오답 진단·처방]\n① 진단: ⓐ는 'they write'로 과학자들을 가리키지만, 지문은 ⓐ를 'they write 하는 방식'으로만 설명해 대상을 과학자로만 보기 어렵다. → 처방: 대상을 가리키는 대명사는 앞의 명사(과학자)와 연결된다는 점을 기억하고, 문맥을 함께 살피기.\n② 진단: ⓑ는 'they do not'으로 과학자들을 가리키지만, 지문은 ⓑ를 '소통하지 못하는 과학자들'로만 설명해 대상을 과학자로만 보기 어렵다. → 처방: 대명사가 가리키는 대상은 문장 전체가 아니라 앞의 명사와 연결된다는 점을 기억하고, 문맥을 함께 살피기.\n③ 진단: ⓒ는 'they write'로 과학자들을 가리키지만, 지문은 ⓒ를 'they write 하는 방식'으로만 설명해 대상을 과학자로만 보기 어렵다. → 처방: 대명사가 가리키는 대상은 문장 전체가 아니라 앞의 명사와 연결된다는 점을 기억하고, 문맥을 함께 살피기.\n⑤ 진단: ⓔ는 'We also'로 '우리'를 가리키지만, 나머지 넷은 모두 과학자들을 가리켜 대상이 다르다. → 처방: 대명사가 가리키는 대상을 찾을 때는 앞의 명사와 연결된다는 점을 기억하고, 문맥을 함께 살피기.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T09:06:19.637Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "If we take the traditional definition of a clause as a p__________ structure (more precisely, a structure containing a predicate which has a subject, and which may or may not also contain one or more complements and adjuncts), it follows that since there are two predicates (knows and smokes) in (10), there are correspondingly two clauses – the smokes clause on the one hand, and the knows clause on the other. The smokes clause comprises the subject John and the predicate smokes; the knows clause comprises the subject Mary, the predicate knows and the complement John smokes. So, the complement of knows here is itself a clause – namely the clause John smokes. More precisely, the smokes clause is a complement clause (because it serves as the complement of knows), while the knows clause is the main clause (or principal clause or independent clause or root clause). The overall sentence (10) Mary knows John",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] predication — 문단의 논지상 이 자리에는 'predication'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T07:31:05.537Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "인간은 결과와 상관없이 습관적으로 같은 행동을 반복한다.",
-     "인간은 보상받은 행동만 지속하고 실패한 행동은 피한다.",
-     "인간은 모든 결과에 즉각 반응하여 행동을 전면 수정한다.",
-     "인간은 결과에 따라 행동을 바꾸기도 하지만 때로는 무관심하게 행동하기도 한다.",
-     "인간은 자신의 행동이 초래한 결과에 따라 행동을 조절하며 적응한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'We adapt by acting on the consequences of our actions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘결과와 상관없이’라는 말은 지문에서 ‘칭찬받은 행동은 계속하고 효과 없다고 느끼는 행동은 그만둔다’고 한 것과 완전히 반대된다. 학생은 ‘습관적 반복’이란 단어에만 주목해 전체 의미를 보지 못한 듯하다. → 처방: ‘결과’가 행동의 변화에 영향을 미친다는 점에 밑줄을 긋고, 지문에서 ‘칭찬/무용’을 예로 든 부분을 다시 읽어보기.\n② 진단: ‘보상받은 행동만 지속’이라고 했지만 지문은 ‘이득이 되는 일(칭찬)도 하고 문제 되는 방식(무용)도 피한다’고 했고, ‘실패한 행동은 피한다’는 부분은 맞지만 ‘보상받은 행동만’이라는 제한은 틀렸다. 학생은 ‘칭찬’ 예만 기억해 전체를 오해한 듯하다. → 처방: ‘칭찬’과 ‘무용’이라는 두 가지 예를 모두 확인하고, ‘이득’과 ‘문제’가 결과의 양면임을 기억하기.\n③ 진단: ‘즉각 반응하여 전면 수정’은 지문에서 ‘계속하거나 그만둔다’는 ‘부분적 변화’를 말한 것과 다르다. 학생은 ‘반응’과 ‘수정’이라는 단어에만 집중해 정도(정도)를 놓친 듯하다. → 처방: ‘부분적 변화(계속/그만둠)’와 ‘전면 수정’을 구분하고, 지문에서 ‘일반적으로 이득을 추구하고 문제를 피한다’는 문장을 다시 읽기.\n④ 진단: ‘무관심하게 행동하기도 한다’는 말은 지문에 전혀 없다. 학생은 ‘때로는’라는 말이 ‘선택적 반응’을 연상시켜 오해한 듯하다. 지문은 결과에 따라 ‘행동을 조절한다’고만 했다. → 처방: ‘무관심’이라는 단어가 지문에 없음을 확인하고, ‘결과에 따라 조절’이라는 핵심 문장을 다시 읽기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: We adapt by acting on the consequences of our actions.]"
-   }
-  },
-  {
-   "ts": "2026-08-24T07:34:50.701Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 8,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "Ray English 지문 전문 · 원문 그대로 34번 빈칸 [ 3 점] · B L A N K 결과에 따라 행동을 바꾸기 빈칸 빈칸 = changing behaviors in light of the consequences: 결과(칭찬/무효)에 따라 행동을 바꾼다(조작적 조건화). 소재 결과에 따른 행동 변화 Changing behavior by its consequences 주제 우리는 결과에 비추어 행동을 조정하며 적응한다 We adapt by acting on consequences 제목 결과가 행동을 바꾼다 We Adapt by Acting on Consequences 한눈에 인간은 ‘결과에 따라 행동을 바꾸며’ 적응한다는 글이다. 칭찬받은 아이는 그 행동을 계속하고, 효과 없다고 느끼는 무용 수는 그만둔다. 즉 이득이 되는 일은 하고 문제가 되는 방식은 피하는 ‘결과 기반 적응’이 핵심이다. 지문 전문 — 시험지 원문 A particularly powerful way in which human beings adapt and adjust to their circumstances is by ＿＿＿＿＿＿＿＿ that they yield. For instance, a child who gets praised by her teacher for doing an exercise correctly is likely to continue doing the exercise in that way. A dancer who feels that a particular conditioning exercise is not giving any results is likely to give that exercise up in favor of another one that seems more promising. In general, we tend to do things that bring us some kind of benefit or act in ways that help us avoid some kind of problem, discomfort, or disadvantage. We also tend to do fewer things (or stop doing things) that lead to problems, discomfort, or disadvantages, and we tend to avoid acting in ways that do not bring any benefit or reward. 지문 전문 · 원문 그대로",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
