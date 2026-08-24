@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-24T07:35:45.518Z",
+ "updated": "2026-08-24T09:06:49.776Z",
  "samples": [
+  {
+   "ts": "2026-08-24T09:06:19.637Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "If we take the traditional definition of a clause as a p__________ structure (more precisely, a structure containing a predicate which has a subject, and which may or may not also contain one or more complements and adjuncts), it follows that since there are two predicates (knows and smokes) in (10), there are correspondingly two clauses – the smokes clause on the one hand, and the knows clause on the other. The smokes clause comprises the subject John and the predicate smokes; the knows clause comprises the subject Mary, the predicate knows and the complement John smokes. So, the complement of knows here is itself a clause – namely the clause John smokes. More precisely, the smokes clause is a complement clause (because it serves as the complement of knows), while the knows clause is the main clause (or principal clause or independent clause or root clause). The overall sentence (10) Mary knows John",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] predication — 문단의 논지상 이 자리에는 'predication'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-24T07:31:05.537Z",
    "type": "요지",
@@ -296,41 +315,6 @@
     ],
     "answer": 3,
     "explanation": "(A)는 앞 내용과 '인과' 관계로 So, (B)는 '인과' 관계로 Then 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘Nevertheless’는 ‘그렇지만’이라는 뜻으로 앞뒤 논리가 대조될 때 쓰는 말인데, 지문은 ‘So’(그러므로)로 앞뒤 논리가 이어지는 흐름을 보임. ‘For example’도 예시만 나열할 뿐, 인용문을 자연스럽게 연결하는 설명이 없음. → 처방: 지문에서 ‘So’(그러므로)로 논리적 흐름을 잇고, 인용문을 ‘In other words’(다시 말해)로 부드럽게 연결한다는 점을 기억하고, 빈칸 앞뒤의 논리 관계를 먼저 확인할 것.\n② 진단: ‘Then’은 ‘그다음에’라는 시간적 순서를 나타내는 말이지만, 지문은 인용문을 논리적으로 연결하는 설명을 요구함. ‘So’(그러므로)는 맞지만, ‘Then’은 인용문의 역할 설명이 부족함. → 처방: ‘So’로 논리적 인과관계를 잇고, 인용문이 어떻게 argument(주장)에 ‘In other words’(다시 말해)로 자연스럽게 녹아드는지 확인할 것.\n④ 진단: ‘For example’는 예시를 들 때 쓰는 말이지만, 지문은 인용문을 argument 에 ‘In other words’(다시 말해)로 ‘논리적으로’ 연결해야 한다고 설명함. ‘For example’는 구체적 사례를 나열하는 데 그침. → 처방: 지문에서 ‘mesh of your argument’(주장의 연결망)처럼 논리적 연결을 강조한다는 점을 기억하고, 인용문이 argument 에 어떻게 ‘In other words’로 녹아드는지 집중할 것.\n⑤ 진단: ‘In fact’는 사실임을 강조하는 말이지만, 지문은 인용문을 argument 에 ‘So’(그러므로)로 자연스럽게 연결해야 한다는 흐름이 강함. ‘For instance’는 예시만 나열하는 데 그침. → 처방: 지문에서 ‘So’로 논리적 흐름을 잇고, 인용문을 argument 에 ‘In other words’로 부드럽게 연결한다는 점을 기억하고, 빈칸의 역할(논리적 연결 vs 예시)을 구분할 것."
-   }
-  },
-  {
-   "ts": "2026-08-23T22:40:10.483Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "preparing for winter as a seasonal habit",
-     "future preparation being caused by past planning",
-     "always preparing for the future as a universal necessity",
-     "sometimes preparing for the future as an occasional act",
-     "preparing for the future as a key virtue"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'preparing for the future as the core meaning of \"provident\"**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘겨울을 준비하는 습관’만 강조해 ‘미래를 준비하는 덕목’이라는 핵심 주제를 놓쳤다. 지문은 ‘미래를 준비하는 것이 좋은 품성’이라는 뜻을 ‘provident’의 정의로 설명하는데, 학생은 ‘계절적 습관’에만 초점을 맞췄다. → 처방: ‘provident’의 의미를 ‘미래를 준비하는 덕목’으로 정리한 뒤, 지문에서 예시로 든 ‘겨울 준비’가 그 덕목의 한 사례임을 확인할 것.\n② 진단: ‘과거 계획이 미래 준비를 이끈다’는 인과관계만 읽었고, ‘provident’의 ‘미래를 준비하는 품성’이라는 본질적 의미를 놓쳤다. 지문은 ‘미래를 준비하는 것이 좋은 품성’이라는 뜻을 직접 설명하는데, 학생은 그 연결을 놓쳤다. → 처방: ‘provident’의 정의를 ‘미래를 준비하는 품성’으로 먼저 떠올리고, 선지의 ‘과거 계획’이 그 품성의 한 예시일 뿐임을 확인할 것.\n③ 진단: ‘보편적 necessity’라고 해석해 ‘provident’의 ‘품성’이라는 의미를 약화시켰다. 지문은 ‘provident’를 ‘frugal’(검소한)이나 ‘미래를 준비하는 품성’으로 설명하는데, 학생은 ‘필요성’으로만 축소했다. → 처방: ‘provident’의 의미를 ‘품성’으로 정확히 이해한 뒤, 지문에서 ‘좋은 품성’이라는 표현을 확인하고 ‘보편적 necessity’가 아니라 ‘품성’이라는 점을 기억할 것.\n④ 진단: ‘가끔 하는 행동’이라는 의미를 ‘provident’의 ‘습관적 품성’과 혼동했다. 지문은 ‘provident’를 ‘미래를 준비하는 품성’으로 설명하는데, 학생은 ‘가끔’이라는 occasional act 로 오해했다. → 처방: ‘provident’의 의미를 ‘습관적 품성’으로 기억하고, 지문에서 ‘frugal’(검소한)이나 ‘미래를 준비하는 품성’이라는 표현을 확인해 ‘가끔’이 아니라 ‘습관적’이라는 점을 기억할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: preparing for the future as the core meaning of \"provident\"**]"
    }
   }
  ]
