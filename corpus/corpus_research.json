@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T19:53:26.587Z",
+ "updated": "2026-08-24T20:51:58.064Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T20:51:32.967Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'명사+전치사+형용사' 또는 '형용사+명사' 구조의 연어 패턴이 오류로 자주 나타나며, 특히 'unmeaningful subjects'처럼 명사+형용사 결합이 비표준인 경우가 많다. 또한 'ask me did I'와 같이 시제 오류와 함께 직접화법 구조가 잘못 사용되는 경향이 있다.",
+   "rule": "'형용사+명사' 또는 '명사+형용사' 연어는 표준 영어에서 고정된 결합을 따르므로, 'unmeaningful subjects'는 'subjects that were not meaningful'로, 'meaningless subjects'로 수정하라. 또한 'ask me did I'와 같은 직접화법 구조는 'asked me if/whether I'로 전환하여 시제와 절 구조를 일치시켜야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T19:52:59.923Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'point(s)'는 'of'를 동반한 명사구로 결합하는 연어 패턴이 빈번하며, 'point of view'가 표준 표현임을 확인할 수 있다. 또한 'effect'는 명사·동사 구분이 필요하며, 동사일 경우 'affect'로 교정해야 한다.",
    "rule": "'point(s)'가 주어·목적어일 때, 반드시 'of'를 포함한 명사구('point of view', 'points of interest' 등)로 확장하여 문장을 구성하도록 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T04:02:11.230Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스에서 'a/an + 명사' 또는 'the + 명사'의 관사 사용 패턴이 빈번하며, 특히 'a'가 단수 가산명사와 결합하는 경우가 많다. 또한 'with'와 같은 전치사가 연어의 핵심 구성 요소로 자주 등장한다.",
-   "rule": "단수 가산명사 앞에는 반드시 관사(a/an/the)를 붙이도록 오답지를 설계하라. 예시: 'preparation' → 'a good preparation', 'name' → 'a name', 'weekend' → 'the weekend'.",
    "sample": [
     "old english",
     "university press",
