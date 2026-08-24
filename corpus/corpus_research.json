@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T14:09:50.085Z",
+ "updated": "2026-08-24T15:04:12.199Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T15:03:43.269Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스에서는 전치사나 관사 사용의 오류가 빈번하며, 특히 'agree/disagree with'와 같은 전치사 동사의 결합이 누락되는 패턴이 두드러진다. 또한 소유격('s')이나 수식어의 정확한 배치도 오류의 주요 원인으로 나타났다.",
+   "rule": "'agree/disagree'와 같은 전치사 동사를 사용할 때는 반드시 'with'를 포함하도록 하며, 소유격('s')이나 수식어는 명사 바로 앞에 배치하여 문법적 정확성을 확보하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T14:09:19.329Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "명사 복수형 오류(workers → warker)와 비교급 오류(smallers → smaller)가 빈번하며, 쉼표 사용 오류(and before last item)도 다수 확인된다. 특히 'less + 복수명사'와 같은 문법적 비정상성이 두드러진다.",
    "rule": "CEFR B1 수준 내신 문제에서는 '복수형 명사(workers, cities) + 비교급(older, smaller) + less/more + 복수명사(violence, noise)' 패턴의 오류를 의도적으로 삽입하여, 학생들이 '복수형 규칙', '비교급 규칙', '불가산 명사 규칙'을 동시에 적용하도록 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T21:43:04.898Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제와 현재시제가 혼용된 문장에서 시제 일관성이 깨지는 경우가 빈번하며, 특히 'hire'/'teach'와 같은 동사가 'hiring'/'teaching'으로 능동태 분사형으로 수정되어야 자연스러워진다.",
-   "rule": "시제 혼용 오류를 교정하기 위해 문장 내 모든 동사의 시제를 통일하거나, 능동태/수동태를 명확히 구분하여 '~ing' 형태의 분사형으로 전환하는 규칙을 적용하라.",
    "sample": [
     "old english",
     "university press",

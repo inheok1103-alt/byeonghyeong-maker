@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-24T14:09:50.084Z",
+ "updated": "2026-08-24T15:04:12.197Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "정답 선지는 ‘비교·상실’을 직접 반영하는 ‘원래 기능의 체계적 상실’을 핵심어로 삼고, 모든 선지는 ‘light verb’의 thematic function 약화(→ 기능 대체)나 ‘verb’의 thematic potential 약화(→ 문법화 도구화)로 통일하여 지문의 ‘agentive vs. non-agentive passive’ 대립을 명확히 반영해야 한다.",
+   "src": "자가학습:밑줄함의",
+   "score": 68,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-24T15:02:16.250Z"
+  },
+  {
+   "rule": "원문의 구문적 의미를 정확히 반역하고 학술적 용어를 표준화하여, 'interpreted as'는 '~로 간주된다'/'~로 처리된다', 'light verb'는 '경동사(light verb)', 'independent abstract'는 '별개의 개념적'으로 번역할 것.",
+   "src": "자가학습:우리말해석",
+   "score": 58,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-24T15:03:32.554Z"
+  },
   {
    "rule": "개선 규칙:** 모든 문항은 'How soon...?' 형태의 질문에 대한 답변으로 재구성하되, 선지들은 'soon'을 포함한 시간 표현으로 통일하여 문맥적·어휘적 일관성을 확보해야 한다.",
    "src": "자가학습:빈칸(문장)",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-21T09:54:53.299Z"
-  },
-  {
-   "rule": "모든 '세트' 문항은 발문 조건(예: '다음 중 옳은/옳지 않은 문장을 고르시오')을 구체적으로 명시하고, 원지문은 150~200단어 내외로 확장해 'antecedent' 개념과 대명사 사용 규칙을 포함하며, 각 문항의 평가 목적(문법 규칙, 오류 수정, 문맥 이해 등)을 투명하게 제시해야 한다.",
-   "src": "자가학습:장문세트",
-   "score": 62,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-21T09:00:13.598Z"
-  },
-  {
-   "rule": "모든 어법 오류는 제시된 정답 수와 정확히 일치하도록 설계하며, 지문은 완성도와 오류 일관성을 유지해야 한다.",
-   "src": "자가학습:어법개수형",
-   "score": 45,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-21T07:59:14.123Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

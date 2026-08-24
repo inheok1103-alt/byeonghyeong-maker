@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-24T14:09:50.089Z",
+ "updated": "2026-08-24T15:04:12.203Z",
  "samples": [
+  {
+   "ts": "2026-08-24T15:02:46.664Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "From this perspective, then, the analysis of the passive involves replacing the agentive light verb with a non-agentive passive light verb, most of the other aspects of the passive construction follow straightforwardly from this. A crucial point to make at this point is that this analysis of the passive would simply be unavailable if we supposed that the structure of the active were to be (76) and not (74). Inasmuch as this analysis helps us to understand the passivisation process any better, then, it can be used as evidence in favour of the assumption of (74). 2.4.2 Extended projections Yet if this is so, we still face the problem that the subject of an active transitive verb is interpreted as the subject of that verb and not of some independent abstract light verb. To understand this, it is essential to understand the relationship between light verbs and thematic verbs in general. Recall that <u>the semantic contribution of a light verb to a construction is somewhat reduced from its full thematic usage</u>: (82) a I gave Charlotte chocolates",
+    "choices": [
+     "A light verb’s presence in a sentence merely serves grammatical structure rather than conveying thematic depth.",
+     "The thematic weight of a light verb is overshadowed by its grammatical function in most constructions.",
+     "A light verb’s role in a sentence is less meaningful than its role when it carries its full thematic weight.",
+     "Rather than carrying thematic meaning, a light verb primarily fulfills a syntactic role in sentence formation.",
+     "A light verb’s contribution to meaning is negligible compared to the thematic roles it syntactically supports."
+    ],
+    "answer": 3,
+    "explanation": "밑줄 친 부분은 'A light verb’s role in a sentence is less meaningful than its role when it carries its full thematic weight.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘의미론적 기여’(semantic contribution)와 ‘문법적 역할’(grammatical structure)을 혼동한 것으로 보입니다. ‘의미론적 기여가 줄어든다’는 말은 문법적 역할이 아니라 ‘의미의 강도’가 약해진다는 뜻인데, 이를 ‘문법적 역할’이 주된 기능이라는 오해로 연결했습니다. → 처방: ‘의미론적 기여’가 ‘문법적 역할’이 아니라 ‘의미의 강도’임을 분명히 하고, ‘light verb’의 본래 의미(theme)를 떠올리며 읽기.\n② 진단: ‘의미론적 무게’(thematic weight)가 ‘문법적 기능’(grammatical function)에 의해 ‘가려진다’는 표현을 ‘의미론적 기여가 약해진다’는 뜻으로 오해했습니다. ‘overshadow’는 ‘가려지다’지만, 여기서는 ‘의미가 약해진다’는 의미가 아니라 ‘문법적 기능이 주목받는다’는 의미로 오독했습니다. → 처방: ‘overshadow’라는 단어가 ‘의미가 약해진다’는 뜻이 아니라 ‘다른 기능이 두드러진다’는 뜻임을 사전에서 확인하고 다시 읽기.\n④ 진단: ‘의미를 전달하지 않는다’는 표현을 ‘문법적 역할이 주된 기능’이라는 뜻으로 오해했습니다. 하지만 지문은 ‘의미의 강도가 약해진다’는 것이지 ‘의미가 전혀 없다’는 뜻이 아닙니다. → 처방: ‘contribution’이 ‘전혀 없다’는 뜻이 아니라 ‘약하다’는 뜻임을 명심하고, ‘의미의 강도’를 기준으로 선지를 비교하기.\n⑤ 진단: ‘의미 기여가 무시할 만하다’는 표현을 ‘의미가 전혀 없다’는 뜻으로 오해했습니다. 지문은 ‘의미의 강도가 줄어든다’는 것이지 ‘의미가 negligible(무시할 만한)’라는 뜻이 아닙니다. → 처방: ‘negligible’이라는 단어가 ‘무시할 만하다’는 뜻이지만, 지문에서 ‘의미의 강도가 약해진다’는 것은 ‘의미가 전혀 없다’는 뜻이 아님을 기억하고 읽기.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-24T15:03:41.045Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] 2 Extended projections Yet if this is so, we still face the problem that the subject of an active transitive verb is interpreted as the subject of that verb and not of some independent abstract light verb.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 그런데 이것이 사실이라고 하더라도, 능동태의 타동사의 주어는 그 동사가 아닌 어떤 독립적인 추상적 ‘가벼운 동사’의 주어로서 해석된다는 문제에 여전히 직면하게 됩니다. (구문 포인트: 명사절(that절) 내의 수동태(interpreted as) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-24T14:05:43.901Z",
    "type": "빈칸(문장)",
@@ -275,76 +327,6 @@
     ],
     "answer": 1,
     "explanation": "빈칸에는 원문 'We also like to get past the verb to its object quickly.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘we often skip the verb entirely’라는 말은 지문에서 ‘hold our mental breath until we reach the verb’(동사까지 숨을 참아야 한다)라는 표현과 반대됩니다. 지문은 동사를 건너뛰는 것이 아니라 동사가 나올 때까지 기다려야 한다고 설명합니다. → 처방: 지문을 다시 읽고 ‘동사까지 숨을 참아야 한다’는 핵심 뜻을 정확히 이해한 뒤, 동사와 목적어의 연결이 끊어지지 않아야 한다는 원리를 떠올리세요.\n③ 진단: ‘we find it unnecessary’라는 말은 지문에서 ‘do not easily communicate’라는 부정 표현과 맞지 않습니다. 지문은 과학자들의 문체가 laypeople(일반인)과의 소통을 어렵게 만든다고 설명하며, 이는 필수적인 연결이 약해진 결과임을 강조합니다. → 처방: ‘연결’이 중요하다는 지문의 핵심 뜻을 기억하고, 선택지 속 ‘불필요’라는 단어는 지문의 의도와 반대라는 점을 확인하세요.\n④ 진단: ‘long clauses’라는 말은 지문에서 ‘short interruptions’를 권장한다는 내용과 반대됩니다. 지문은 문장 중간에 끼어드는 장문의 삽입이 아니라 짧은 간섭조차 피하라고 설명합니다. → 처방: 지문의 ‘short interruptions’를 ‘long clauses’로 혼동하지 말고, 문장의 흐름을 끊지 말아야 한다는 원리를 떠올리세요.\n⑤ 진단: ‘Some scientists deliberately delay’라는 말은 지문에서 ‘because they write in a style that is impersonal and objective’라는 이유 설명과 혼동됩니다. 지문은 과학자들이 의도적으로 동사를 지연시키는 것이 아니라, 문체 자체가 소통을 방해한다고 설명합니다. → 처방: ‘의도적’이라는 단어가 지문에서 설명하는 ‘객관적 문체’와는 다른 의미를 지닌다는 점을 구분하고, 문장의 흐름을 자연스럽게 유지해야 한다는 점을 기억하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T10:07:27.273Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 2번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "일부 과학자들이 비인격적이고 객관적인 문체를 사용해 대중과의 소통을 의도적으로 피한다는 점이 문제의 핵심이다.",
-     "과학자들의 비인격적이고 객관적인 문체가 대중과의 소통을 어렵게 만든다는 주장이 제기된다.",
-     "모든 과학자들이 비인격적이고 객관적인 문체를 사용하기 때문에 대중과의 소통이 원활하지 못하다는 통념이 있다.",
-     "대부분의 과학자들이 비인격적이고 객관적인 문체를 채택해 대중과의 소통을 아예 포기한다고 오해하기 쉽다.",
-     "일부 과학자들이 비인격적이고 객관적인 문체를 고집하는 까닭이 대중과의 소통을 기피하기 위해서라는 분석이 있다."
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Some scientists deliberately write in a style that is impersonal and objective to avoid communicating easily with laypeople.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Some scientists deliberately write in a style that is impersonal and objective to avoid communicating easily with laypeople.]\n[오답 진단·처방]\n① 진단: ‘의도적으로 피한다’는 지문에서 나온 말이 아니라 학생의 추측으로, ‘피한다’는 강한 표현이 지문에 없음. ‘문체가 소통을 어렵게 만든다’는 지문의 핵심 주장과 무관하게 ‘의도’를 강조해 오독. → 처방: ‘의도적’이라는 말이 지문에 없으니, 문체 때문에 소통이 안 된다는 주장을 먼저 확인하고 선지를 고를 것.\n③ 진단: ‘모든 과학자’ ‘원활하지 못하다’는 과장된 표현으로, 지문은 ‘일부 과학자’와 ‘어렵게 만든다’는 상대적 주장만 제시. ‘통념’이라는 말도 지문에 없음. → 처방: ‘모든’이라는 말이 나오면 지문에 ‘일부’ ‘일부 과학자’가 있는지 확인하고, 과장된 표현은 의심할 것.\n④ 진단: ‘대부분’이 ‘일부’를 과장했고, ‘원래 포기한다’는 강한 표현이 지문에 없음. ‘문체를 채택해’도 지문 ‘문체를 사용해’와는 차이가 있음. → 처방: ‘대부분’이라는 말이 나오면 지문에 ‘일부’ ‘일부 과학자’가 있는지 확인하고, ‘포기’라는 말은 지문에서 쓰지 않았는지 확인할 것.\n⑤ 진단: ‘까닭이 기피하기 위해서’라는 말은 지문에 없음. 지문은 문체가 소통을 어렵게 만든다는 사실만 말하고, ‘기피’라는 의도를 단정하지 않음. → 처방: ‘왜냐하면’이라는 이유가 나오면 지문에 그 이유가 정확히 있는지, 아니면 지문의 사실만 있는지를 구분할 것."
-   }
-  },
-  {
-   "ts": "2026-08-24T10:08:34.037Z",
-   "type": "지칭추론",
-   "level": "중",
-   "audit": "밑줄·정답 코드검증(대명사 구절 원문 매칭)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
-    "passage": "Some scientists, because ⓐ<u>they write</u> in a style that is impersonal and objective, do not easily communicate with laypeople. That because clause after the subject forces us to hold our mental breath until we reach the verb, do not easily communicate. Move the interruption to the beginning or end of its sentence, depending on whether it connects more closely to what precedes or follows it (note the since instead of because). ✓ Since some scientists write in a style that is impersonal and objective, ⓑ<u>they do not</u> easily communicate with laypeople. This lack of communication damages . . . ✓ Some scientists do not easily communicate with laypeople because ⓒ<u>they write</u> in a style that is impersonal and objective. It is a kind of style filled with passives and . . . ⓓ<u>We mind</u> short interruptions less: ✓ Some scientists deliberately write in a style that is impersonal and objective. Avoid interrupting the verb-object connection. ⓔ<u>We also</u> like to get past the verb to its object quickly. This sentence doesn’t let us do that:",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓓ는 '(대명사 We)'를 가리키고, 나머지 넷은 '과학자들(they)'를 가리킨다.\n[오답 진단·처방]\n① 진단: ⓐ는 'they write'로 과학자들을 가리키지만, 지문은 ⓐ를 'they write 하는 방식'으로만 설명해 대상을 과학자로만 보기 어렵다. → 처방: 대상을 가리키는 대명사는 앞의 명사(과학자)와 연결된다는 점을 기억하고, 문맥을 함께 살피기.\n② 진단: ⓑ는 'they do not'으로 과학자들을 가리키지만, 지문은 ⓑ를 '소통하지 못하는 과학자들'로만 설명해 대상을 과학자로만 보기 어렵다. → 처방: 대명사가 가리키는 대상은 문장 전체가 아니라 앞의 명사와 연결된다는 점을 기억하고, 문맥을 함께 살피기.\n③ 진단: ⓒ는 'they write'로 과학자들을 가리키지만, 지문은 ⓒ를 'they write 하는 방식'으로만 설명해 대상을 과학자로만 보기 어렵다. → 처방: 대명사가 가리키는 대상은 문장 전체가 아니라 앞의 명사와 연결된다는 점을 기억하고, 문맥을 함께 살피기.\n⑤ 진단: ⓔ는 'We also'로 '우리'를 가리키지만, 나머지 넷은 모두 과학자들을 가리켜 대상이 다르다. → 처방: 대명사가 가리키는 대상을 찾을 때는 앞의 명사와 연결된다는 점을 기억하고, 문맥을 함께 살피기.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
