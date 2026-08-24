@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-24T22:52:43.007Z",
+ "updated": "2026-08-24T23:40:16.399Z",
  "samples": [
+  {
+   "ts": "2026-08-24T23:39:06.502Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 3/3 다수결 4번(기록 2번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "The crucial fact (A) [is / are] that an English speaker might be moved to make a similar assessment of all of the other Germanic languages, for pretty much the same reasons. For example, the Dutch version of the sentence is Zei zij tegen mijn dochter dat mijn vader alleen gekomen is en zich beter voelt? in which the words occur in the same order as in the German. The question is why, indeed, Said she to my daughter that my father alone (B) [came / come is] and himself better (C) [feels / felt]? is so silly in English alone. The Germanic languages, of course, have their differences, and not all of them parallel the German one quite as closely as Dutch does. To a Norwegian, for instance, a sentence with the words in the German order of Said she to my daughter that my father alone come is and himself better feels? would seem a little off, but still highly familiar. The Norwegian version is:",
+    "choices": [
+     "(A) is - (B) come is - (C) felt",
+     "(A) is - (B) come is - (C) feels",
+     "(A) are - (B) came - (C) feels",
+     "(A) is - (B) came - (C) feels",
+     "(A) are - (B) came - (C) felt"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) is - (B) come is - (C) feels. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘crucial fact’는 단수 명사이므로 ‘are’가 아니라 ‘is’를 써야 하는데, 학생은 복수 동사 ‘are’를 선택했다. 또한 ‘came’는 과거 시제 동사로 문맥상 맞지만, 학생은 ‘come is’를 써서 현재 시제와 조동사 ‘is’를 혼동했다. ‘felt’는 과거 시제이지만 문맥상 현재 시제 ‘feels’가 맞으므로 오류다. → 처방: ‘crucial fact’는 단수 주어이므로 ‘is’를 쓰고, 과거 시제 동사 ‘came’를 써야 한다. 시제와 조동사 사용 규칙을 다시 공부하고, 문맥에 맞는 동사를 고르도록 한다.\n② 진단: ‘crucial fact’는 단수 명사이므로 ‘is’를 써야 하는데, 학생은 ‘is’를 썼지만, ‘come is’는 조동사 ‘is’와 현재 시제 동사 ‘come’을 잘못 조합한 것이다. 문맥상 과거 시제 ‘came’가 필요함에도 현재 시제를 썼다. → 처방: 조동사 없이 과거 시제 동사를 쓰는 경우를 연습하고, 문장의 시제를 문맥에 맞게 정확히 판단하도록 한다. ‘come is’는 조동사 없이 쓸 수 없으므로 ‘came’를 써야 한다.\n③ 진단: ‘crucial fact’는 단수 명사이므로 ‘are’가 아니라 ‘is’를 써야 하는데, 학생은 복수 동사 ‘are’를 선택했다. 또한 ‘felt’는 과거 시제이지만 문맥상 현재 시제 ‘feels’가 맞으므로 오류다. 학생은 시제와 동사의 수 일치를 혼동했다. → 처방: 주어와 동사의 수 일치를 다시 공부하고, 문맥에 맞는 시제를 선택하도록 한다. ‘crucial fact’는 단수이므로 ‘is’를 써야 한다.\n⑤ 진단: ‘crucial fact’는 단수 명사이므로 ‘are’가 아니라 ‘is’를 써야 하는데, 학생은 복수 동사 ‘are’를 선택했다. 또한 ‘felt’는 과거 시제이지만 문맥상 현재 시제 ‘feels’가 맞으므로 오류다. 학생은 시제와 동사의 수 일치를 모두 혼동했다. → 처방: 주어와 동사의 수 일치와 시제를 따로따로 공부하고, 문맥에 맞는 동사를 선택하도록 한다. ‘crucial fact’는 단수이므로 ‘is’를, 문맥상 현재 시제 ‘feels’를 써야 한다."
+   }
+  },
+  {
+   "ts": "2026-08-24T23:39:38.384Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 2/3 다수결 3번(기록 2번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.22,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.22)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "The crucial fact is that an ⓐ<u>English</u> speaker might be moved to make a similar assessment of all of the other Germanic languages, for pretty much the same reasons. For example, the Dutch version of the sentence is Zei zij tegen mijn dochter dat mijn vader alleen gekomen is en zich beter voelt? in which the words occur in the same order as in the ⓑ<u>German</u>. The question is why, indeed, Said she to my daughter that my father alone come is and himself better feels? is so silly in English alone. The ⓒ<u>Germanic</u> ⓓ<u>languages</u>, of course, have their differences, and not all of them parallel the German one quite as closely as Dutch does. To a Norwegian, for instance, a sentence with the words in the German order of Said she to my daughter that my father alone come is and himself better feels? would seem a little off, but still highly familiar. The Norwegian ⓔ<u>version</u> is:",
+    "choices": [
+     "english: Spinning or rotary motion given to a ball around the vertical axis, as in billia",
+     "german: By oneself, solitary.",
+     "germanic: Of or containing germanium.",
+     "languages: A body of words, and set of methods of combining them (called a grammar), unders",
+     "version: A specific form or variation of something."
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓑ의 풀이는 'alone'의 정의이다. 'german'의 올바른 풀이: A near relative.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘english’의 오독은 ‘회전 운동’을 뜻하는 ‘english’(스포츠 용어)와 ‘영어’를 뜻하는 ‘English’를 혼동한 것으로 보인다. 지문에서 ‘English’는 언어명을 가리키며, 선지①의 뜻은 전혀 관련이 없다. → 처방: ‘english’를 ‘영어’라는 언어명으로만 떠올리고, 지문에서 그 단어가 쓰인 맥락을 확인해 단어의 뜻을 정확히 짚어라.\n② 진단: ‘german’의 오독은 ‘혼자’라는 뜻의 ‘by oneself’를 ‘german’으로 오해한 것이다. 지문에서 ‘german’은 언어명을 가리키며, 선지②의 뜻은 ‘german’이라는 단어와 전혀 다르다. → 처방: ‘german’을 ‘독일어’라는 언어명으로만 생각하고, 지문에서 그 단어가 쓰인 문맥을 다시 한 번 확인해 뜻을 정확히 짚어라.\n④ 진단: ‘languages’의 오독은 ‘언어’를 뜻하는 ‘languages’를 ‘문법’이라는 뜻으로 오해한 것이다. 지문에서 ‘languages’는 ‘언어’를 가리키며, 선지④는 ‘언어’를 설명하는 부분과 일부 일치하지만 ‘문법’이라는 뜻은 포함하지 않는다. → 처방: ‘languages’를 ‘언어’라는 뜻으로만 생각하고, 지문에서 그 단어가 쓰인 문장을 다시 읽어 뜻을 정확히 짚어라.\n⑤ 진단: ‘version’의 오독은 ‘형태’를 뜻하는 ‘version’을 ‘언어’를 뜻하는 ‘languages’와 혼동한 것이다. 지문에서 ‘version’은 ‘형태’를 가리키며, 선지⑤는 ‘형태’를 설명하는 부분과 일치한다. → 처방: ‘version’을 ‘형태’라는 뜻으로만 생각하고, 지문에서 그 단어가 쓰인 문장을 다시 읽어 뜻을 정확히 짚어라."
+   }
+  },
   {
    "ts": "2026-08-24T22:47:05.725Z",
    "type": "요지",
@@ -311,72 +380,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'Vocabulary determines the precision of expression in English.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Vocabulary determines the precision of expression in English.]\n[오답 진단·처방]\n① 진단: 학생은 'the choice of words'를 선택했는데, 이는 'I'가 단어 선택에 집중했다는 오해에서 나온다. 하지만 지문에서 'I'는 단어 선택이 아니라 '표현의 필요성'이 변했다는 점을 강조한다(예: '표현하지 않을 수 없었다'는 문장). → 처방: 문제에서 '표현의 필요성'이 변했다는 단서를 찾고, 그 변화가 글에서 어떻게 드러나는지 확인하라.\n② 진단: 학생은 'the clarity of expression'을 선택했는데, 이는 'I'의 말이나 글이 명확하지 않았다고 오해한 것이다. 하지만 지문은 '표현의 필요성'이 커졌다는 내용이지, 표현의 명확성에 대한 변화가 아니다. → 처방: 표현의 '필요성'과 '명확성'을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 기억하라.\n④ 진단: 학생은 'the importance of grammar'를 선택했는데, 이는 문법의 중요성에 대한 오해에서 나온다. 하지만 지문은 문법이 아니라 '표현의 필요성'이 변했다는 점을 다루고 있다. → 처방: 문법의 중요성과 표현의 필요성을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 떠올리라.\n⑤ 진단: 학생은 'the precision of expression'을 선택했는데, 이는 'I'가 표현을 정교하게 했다고 오해한 것이다. 하지만 지문은 '표현의 필요성'이 커졌다는 내용이지, 표현의 정교함에 대한 변화가 아니다. → 처방: 표현의 '정교함'과 '필요성'을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 확인하라."
-   }
-  },
-  {
-   "ts": "2026-08-24T19:06:30.108Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.83,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "<u>SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (diatribe</u>, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (schism, utopia). 3.Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. 4.Anyone so (ilk, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (prestigious, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.",
-    "choices": [
-     "The senator delivered an angry and critical speech to express strong disapproval of excessive military spending.",
-     "The senator went into a lengthy diatribe to defend the military budget against criticism.",
-     "The senator occasionally mentioned government waste in the military budget during a brief conversation.",
-     "The senator's speech caused excessive military spending due to his lengthy diatribe.",
-     "The senator sometimes goes into a lengthy diatribe about government waste in the military budget."
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'The senator delivered an angry and critical speech to express strong disapproval of excessive military spending.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘diatribe’를 ‘변호’로 오해하고 ‘방어(defend)’라는 단어를 근거로 삼았지만, diatribe 는 ‘격렬한 비판’이므로 ‘비판’과 반대되는 의미를 지닌 이 선지는 지문과 맞지 않는다. → 처방: ‘diatribe’의 의미를 정확히 알고 있어야 한다. ‘격렬한 비판’이라는 뜻을 떠올리고, 지문에서 ‘정부 낭비’를 비판하는 내용임을 확인하자.\n③ 진단: ‘diatribe’를 ‘간단한 언급(occasionally mentioned)’으로 오해했으며, ‘길게( lengthy)’라는 단어를 무시하고 ‘간단히(brief)’라는 단어를 근거로 삼았다. → 처방: ‘lengthy’라는 단어가 ‘길게’라는 뜻임을 기억하고, 지문에서 ‘길게( lengthy)’라는 말이 쓰였는지 확인하자.\n④ 진단: ‘diatribe’를 ‘원인(caused)’으로 오해했으며, ‘정부 낭비’를 비판하는 연설이 ‘과도한 지출’을 일으킨다는 논리적 오류를 범했다. → 처방: ‘diatribe’는 ‘비판’이므로, 지문의 내용이 ‘비판’인지 ‘원인’이 되는지 확인하자. 비판은 결과가 아니라 행위임을 기억하자.\n⑤ 진단: ‘diatribe’를 ‘때때로( sometimes)’라는 단어로 오해했으며, ‘길게( lengthy)’라는 단어를 무시하고 ‘때때로’라는 단어를 근거로 삼았다. → 처방: ‘lengthy’라는 단어가 ‘길게’라는 뜻임을 기억하고, 지문에서 ‘길게’라는 말이 쓰였는지 확인하자. ‘때때로’는 ‘길게’와 반대되는 의미임을 기억하자.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T19:08:25.871Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.5,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary.\n\n(From Week 12) Choose the word that makes sense in each of the sentences below. The senator went into a lengthy (diatribe, remuneration) about government waste in the military budget. Most reformers are seeking to create a (schism, utopia). Lorraine was criticized sharply for the (ostentatious, nominal) way in which she furnished her apartment. Anyone so (ilk, timorous) should not have been selected to guard the castle. My brother was promoted to a (prestigious, flamboyant) job in his company. Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. ( ① ) The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. ( ② ) I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. ( ③ ) We marched in front of the embassy with (placards, inhibitions) held high. ( ④ ) Don’t (save face, wash your dirty linen in public) if you plan to run for office. ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘expunged’는 ‘지우다’란 뜻으로 문맥상 ‘성적’을 ‘지우는’ 일은 맞지만, ‘제출한 excellent term paper 때문에’가 아니라 ‘성적 자체가 사라지는’ 맥락이 자연스럽다. ‘truncated’는 ‘잘라내다’로 ‘기록’을 ‘잘라낸다’는 표현이 문맥에 맞지 않는다. → 처방: ‘truncated’를 ‘잘라내다’라는 뜻으로만 기억하지 말고, ‘기록’이 ‘잘라진다’는 표현이 자연스러운지 문장 전체를 다시 읽어보기.\n② 진단: ‘fractious’는 ‘화를 잘 내는’이란 뜻으로 ‘우연히 만난’ 상황과 맞지 않다. ‘fortuitous’는 ‘운이 좋은’이란 뜻으로 문맥에 맞지만, 학생은 ‘fractious’의 의미를 ‘다툼’이란 뜻으로 오해했을 수 있다. → 처방: ‘fractious’와 ‘fortuitous’를 단어장에 정리할 때, 뜻과 예문을 함께 적고, 뜻이 헷갈릴 때는 예문을 소리 내어 읽어보기.\n④ 진단: ‘save face’는 ‘체면을 세우다’란 뜻으로 문맥상 ‘공개하지 마라’는 뜻과 반대다. ‘wash your dirty linen in public’은 ‘남의 이목을 꺼리는’ 뜻으로, 학생은 ‘체면을 세우다’의 반대 표현으로 오해했을 수 있다. → 처방: ‘save face’와 ‘wash your dirty linen in public’을 한 문장으로 묶어 외우고, 문맥상 어떤 표현이 더 어울리는지 생각해보기.\n⑤ 진단: ‘placards’는 ‘플래카드’란 뜻으로 ‘들고 다니는’ 표현은 맞지만, ‘inhibitions’는 ‘억제’란 뜻으로 ‘들고 다니는’ 표현이 문맥에 맞지 않는다. 학생은 ‘placards’를 ‘장애물’이란 뜻으로 오해했을 수 있다. → 처방: 단어의 뜻을 외울 때, 뜻과 함께 ‘어떻게 사용되는지’를 예문으로 같이 적고, 문장 속에서 그 단어가 어떤 역할을 하는지 확인하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
