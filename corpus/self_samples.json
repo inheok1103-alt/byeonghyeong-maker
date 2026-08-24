@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-23T23:38:45.745Z",
+ "updated": "2026-08-24T02:07:39.292Z",
  "samples": [
+  {
+   "ts": "2026-08-24T02:07:12.700Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 13 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'identified', 'adjective', 'prefixes' / 11~15단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] An adjective can be identified by prefixes like un- or suffixes like -ly.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 11~15단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-23T23:37:35.199Z",
    "type": "어휘(밑줄)",
@@ -333,39 +352,6 @@
     ],
     "answer": 2,
     "explanation": "정답 조합: (A) CASTLE - (B) consonants - (C) template. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘CASTLE’을 골랐다는 것은 ‘공중에 떠 있는 무언가’가 ‘소리 없는 세 개의 자음’과 관련 있다고 오해한 것. 지문은 ‘HUT’이 ‘공중에 떠 있는’ 비유로 쓰였음을 보여주며, ‘CASTLE’은 ‘기둥이 약한’ 비유로만 언급됨. → 처방: ‘HUT’을 선택하도록 유도하는 문장(‘stand up on its own three legs’)을 다시 읽고, ‘HUT’이 ‘세 개의 다리로 서 있지 못한’ 비유임을 떠올리기.\n③ 진단: ‘vowels’를 골랐다는 것은 ‘세 개의 빈 자리’가 ‘모음’으로 채워진다는 지문의 핵심 내용을 놓친 것. 지문은 ‘vowels’가 ‘템플릿’을 구성한다고 설명하며, ‘chaos’는 ‘무질서’를 뜻하는 단어일 뿐 문맥에 맞지 않음. → 처방: ‘템플릿’이란 ‘모음으로 이뤄진 틀’이라는 점을 기억하고, ‘vowels’를 ‘consonants’와 대비하여 선택하기.\n④ 진단: ‘CASTLE’을 선택한 오류는 ①번과 같고, ‘chaos’를 선택한 것은 ‘템플릿’이란 단어가 아닌 ‘무질서’를 뜻하는 ‘chaos’를 잘못 고른 것. 지문은 ‘템플릿’이 ‘모음으로 이뤄진 틀’이라는 점을 분명히 함. → 처방: ‘템플릿’이란 ‘모음으로 이뤄진 패턴’이라는 뜻을 기억하고, ‘chaos’는 문맥에 맞지 않음을 확인하기.\n⑤ 진단: ‘HUT’을 고른 것은 옳지만, ‘vowels’를 선택한 것은 ‘세 개의 빈 자리’가 ‘모음’으로 채워진다는 핵심 내용을 놓친 것. 지문은 ‘템플릿’이 ‘모음으로 이뤄진 틀’이라는 점을 강조함. → 처방: ‘템플릿’이란 ‘모음으로 이뤄진 틀’이라는 뜻을 떠올리고, ‘vowels’를 ‘consonants’와 대비하여 선택하기."
-   }
-  },
-  {
-   "ts": "2026-08-23T18:51:24.781Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 4건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the abstract function of consonantal roots in Semitic languages through vowel templates",
-     "the foundational role of consonants in Semitic linguistic frameworks",
-     "how consonant pronunciation alone generates semantic meaning",
-     "the obligatory presence of vowel templates across all language families",
-     "the prevalence of three-consonant root systems in Semitic lexicons"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Abstract consonantal roots in Semitic languages functioning through vowel templates'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘foundational role of consonants(②)’는 지문에서 ‘consonantal roots 가 템플릿 위에 올려질 때만 의미를 갖는다’는 핵심 내용을 무시하고, ‘consonant 자체가 언어의 기반’이라는 오해를 보임. → 처방: ‘consonant 가 템플릿 없이도 의미를 갖는가’를 먼저 떠올리고, 지문에서 ‘템플릿이 없으면 의미가 드러나지 않는다’는 점을 확인할 것.\n③ 진단: ‘consonant 발음만으로 의미가 생긴다(③)’는 오해는 지문에서 ‘consonant root 는 템플릿 없이 혼자서는 의미가 없다’는 사실을 간과한 결과임. → 처방: ‘consonant root 가 템플릿 없이도 의미를 가질 수 있는가’를 질문해 보고, 지문에서 ‘템플릿이 필요하다는 설명’을 다시 읽을 것.\n④ 진단: ‘모든 언어에서 vowel 템플릿이 필수(④)’는 지문이 ‘Semitic 언어에만 해당되는 설명’이라는 한계를 무시하고 과장된 일반화로 오독함. → 처방: ‘이 설명이 Semitic 언어에만 적용되는지’를 먼저 확인하고, 지문에서 ‘Semitic 언어’라는 한정어를 찾도록 할 것.\n⑤ 진단: ‘Semitic 어휘에서 3-consonant root 가 보편적(⑤)’은 지문에서 ‘3-consonant root 가 템플릿과 결합해 의미를 만든다’는 설명을 ‘보편성’으로 오해한 것임. → 처방: ‘이 설명이 Semitic 언어의 ‘일반적 특징’을 설명하는지’를 먼저 묻고, 지문에서 ‘템플릿과 결합’이라는 조건을 확인할 것.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Abstract consonantal roots in Semitic languages functioning through vowel templates]"
    }
   }
  ]
