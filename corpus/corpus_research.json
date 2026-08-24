@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T05:56:09.304Z",
+ "updated": "2026-08-24T07:35:45.514Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T07:35:15.164Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'very soon'과 같은 부사구가 문장의 맨 앞이나 맨 뒤에 위치하는 경우가 빈번하며, 특히 'will + 동사원형' 구문에서 시제 표지 후 부사구 위치가 유동적임을 확인했다.",
+   "rule": "'will + 동사원형' 구문에서 시제 표지 직후에 오는 부사구(very soon, soon, later 등)는 문장 맨 앞 또는 맨 뒤로 이동 가능하며, 이 경우 주어-동사-목적어 순서는 유지되어야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T05:55:42.596Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'for the field' → 'in the field'로 전치사 오류가 빈번하며, 능동태(work) 대신 수동태(worked)나 전치사 구(work in the field)로 교정된다. 또한 'get skill' → 'get skilled'로 동사-명사 혼용 오류가 많다.",
    "rule": "CEFR B1 수준에서 'for + N' 대신 'in + N'을 요구하는 전치사 선택 문제를 출제할 때, 'work for' → 'work in'로 변환하는 연습을 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T14:02:12.605Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스에서 'old/new'와 같은 형용사의 비교급 오류('elders'→'olders')와 복합명사/복합어의 오류('Carusage'→'Car usage', 'latinamerican'→'Latin American')가 빈번하다는 점을 확인할 수 있다. 또한, 문장 내 쉼표 사용(부사구 삽입, 접속사 앞 쉼표)도 난이도 조절에 활용 가능한 패턴이다.",
-   "rule": "'형용사의 비교급 오류(예: old → older), 복합명사의 분리 오류(예: Carusage → Car usage), 그리고 문장 내 쉼표 오류(예: 접속사 앞/부사구 뒤 쉼표 누락)를 CEFR B1 수준에서 집중적으로 다룬다. 각 오류 유형별로 2~3개의 예문으로 구성된 변형문제를 출제하여 학생들이 실제 패턴을 인식하도록 한다.",
    "sample": [
     "old english",
     "university press",
