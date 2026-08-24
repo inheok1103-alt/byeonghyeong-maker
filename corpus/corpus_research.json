@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T10:58:17.628Z",
+ "updated": "2026-08-24T11:51:19.122Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T11:50:49.529Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'on many subjects'와 같은 전치사구는 'knowledge'와 같은 추상명사와 빈번하게 결합하며, 오류는 관사 생략이나 불필요한 소유격('passage's')에서 발생한다.",
+   "rule": "원서 코퍼스 패턴을 반영하여 'knowledge on N' 구문에서 관사를 반드시 포함하고, 소유격 오류('s')는 'that절'로 대체하도록 변형 문제를 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T10:57:46.109Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 'old english', 'middle english' 등 역사적 언어 변천 패턴에서 'present/past tense 혼용'과 'noun phrase의 복수화·정관사/불정관사 사용'이 빈번함을 확인할 수 있다. 또한 'reason relations'(인과관계 표현)에서 'if-then' 구조와 'until' 구문이 조합되어 복잡한 조건문을 형성하는 경향이 강하다.",
    "rule": "'if-then' 구조의 조건문에서 'if 절은 현재 시제(present tense)를 사용하고, then 절은 will + 동사원형(미래 시제) 또는 현재 시제(일반적 사실)로 표기하라. 또한 'until' 구문은 'until they know how it works'와 같이 완료 시점(knowing)을 나타내는 현재 시제 동사로 연결하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T18:59:46.886Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스의 'be 동사 + 형용사' 패턴(예: 'be active', 'be dependent')이 한국어 학습자에게 빈번한 오류로 나타나며, 특히 'could + 동사원형' 구조에서 'be' 생략 오류가 다수 관찰된다. 또한 'a/an' 관사의 부재와 문장 구조의 단순화가 특징적이다.",
-   "rule": "CEFR A2~B1 수준에서 'could + be + 형용사' 구조(예: 'could be active', 'could be dependent')를 문법 규칙으로 명시하고, 'a/an' 관사 사용 및 문장 구조 단순화 오류(예: 관사 생략, 동사 생략)를 집중적으로 평가하라.",
    "sample": [
     "old english",
     "university press",
