@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T17:09:31.318Z",
+ "updated": "2026-08-24T17:50:29.725Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-24T17:49:26.047Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "이 패턴은 문장 내 불필요한 보어(예: 'much')나 구두점(예: 쉼표) 제거, 또는 동사 시제·형용사 오류(예: 'weatherrealted' → 'weather related')를 수정하는 오류가 빈번함을 보여준다.",
+   "rule": "문장의 의미와 문법적 구조를 유지하면서 불필요한 보어(예: 'much')나 구두점(예: 쉼표) 또는 오류가 있는 동사·형용사를 제거·수정하여 자연스러운 문장으로 변환하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T16:05:18.333Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 '~ is the best way' 구문과 'propose/make' 동사의 병렬 구조가 문법적으로 오류가 빈번하다는 점을 확인할 수 있었다. 또한 소유대명사 'theirs'가 'to them'으로 대체되는 오류 패턴도 다수 관찰되었다.",
    "rule": "'~ is the best way' 구문에서 동사 원형(예: propose/make)과 병렬 구조를 구성할 때는 'to V' 형태가 아닌 '-ing' 형태(예: proposing/making)를 사용해야 하며, 소유대명사(theirs)는 반드시 목적격 대명사(to them/for them)으로 교정해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-21T23:46:13.191Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구 내 복수형 오류가 빈번하며, 특히 'a products'와 같이 관사와 복수형이 혼용되는 패턴이 두드러진다. 또한 동사 시제(present/past tense)나 조동사(can)의 일치 오류도 자주 발생한다.",
-   "rule": "복수형 명사를 사용할 때는 관사(a/an/the) 없이 복수형(-s/-es)을 직접 사용하거나, 관사와 함께 단수형(-s/-es 없이)을 사용하도록 한다. 예: 'a product' 또는 'products'로 통일하라.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,79 @@
 {
- "updated": "2026-08-24T17:09:31.322Z",
+ "updated": "2026-08-24T17:50:29.729Z",
  "samples": [
+  {
+   "ts": "2026-08-24T17:48:21.862Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "What positions fit in? 93 (49) V loc Ν abs loc Ν Ν Him bij) fyr ongean The representations in (47) — (49) each contain two locative arguments, given that, unlike fram, which ⓐ<u>realises ablative</u>, ongean realises locative. Given the \"one-case-per-clause\" constraint, then, as long as the datives ⓑ<u>me and he</u> are interpreted as locative, they must be circumstantials. For (16) — (19), the datives ⓒ<u>might be taken as</u> governed by prefixed verbs (e. g. cefterridan, aftercliopan), and therefore participant arguments thereof. Although there is no direct evidence for lexicalisation of the prefix + verb complex, we may recall instances of accusative co-occurring with cefter + verb, only when the formative ⓓ<u>immediately precedes the verb</u> (cf. above). And these may be indirect evidence for lexicalisation of the complex as a transitive verb governing the accusative as its direct object, as represented in (50) and (51). After (50) V erg abs/loc A Ν Ν Hig öa sona ⓔ<u>aefterridon</u>",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓑ: 'me and he' → 'me and him' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-24T17:49:07.306Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 9건 · 솔버교정: 솔버 2/2 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "constraints on case assignment in Miami–Illinois grammar",
+     "limitations of locative case marking in Miami–Illinois",
+     "impact of verb prefixes on case realization in Miami–Illinois",
+     "universal grammatical constraints on dative arguments",
+     "case assignment rules in Miami–Illinois excluding locative contexts"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Case assignment constraints in Miami–Illinois.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Case assignment constraints in Miami–Illinois.]\n[오답 진단·처방]\n① 진단: 지문에서 'one-case-per-clause' 제약이나 동사 접두어의 영향을 다루지 않으며, Miami–Illinois 문법의 'case assignment' 제약에만 초점을 맞추었다면, 지문의 핵심 논의(접두어+동사 복합체의 영향)를 놓친 것이다. → 처방: 지문의 주요 논의를 확인하고, 각 선지가 지문에서 다루는 주제와 얼마나 일치하는지 비교해 보세요. 특히 동사 접두어(cefter-, æfter-)가 격 실현에 미치는 영향을 중점적으로 읽으세요.\n② 진단: 지문은 'locative' 격이 사용되는 경우를 설명하지만, 'limitations'(제한점)이 아니라 'realisation'(실현 방식)에 초점을 맞추고 있다. 또한 Miami–Illinois 문법의 한계가 아니라 동사 접두어의 영향을 분석하고 있다. → 처방: 지문에서 'locative' 격이 어떻게 실현되는지(예: ongean, dative 해석)를 확인하고, 'limitations'이라는 단어가 지문에서 언급되는지 확인하세요.\n④ 진단: 지문은 Miami–Illinois 문법의 특정한 사례(동사 접두어의 영향)에 집중하며, 'universal'(보편적) 제약이나 'dative argument'(여격 논항)의 보편 규칙을 다루지 않는다. → 처방: 지문에서 'Miami–Illinois'라는 특정 언어의 문법 규칙에 주목하고, 보편적 규칙을 다루는 선지는 제외하세요.\n⑤ 진단: 지문은 'locative contexts'를 포함한 전체적인 격 할당 규칙을 다루며, 'excluding locative contexts'(여격 맥락을 제외하는) 규칙을 다루지 않는다. 또한 'case assignment rules'가 아니라 동사 접두어의 영향을 분석하고 있다. → 처방: 지문에서 'locative' 격이 포함된 사례(예: (49) ongean)까지도 분석 대상이었는지 확인하고, 여격을 제외하는 규칙이 있는지 찾아보세요."
+   }
+  },
+  {
+   "ts": "2026-08-24T17:49:24.026Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] Although there is no direct evidence for lexicalisation of the prefix + verb complex, we may recall instances of accusative co-occurring with cefter + verb, only when the formative immediately precedes the verb (cf. above).\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Only when the formative immediately precedes the verb may we recall instances of accusative co-occurring with cefter + verb, although there is no direct evidence for lexicalisation of the prefix + verb complex (cf. above). (포인트: Only + 도치 구문으로 전환 (원문에서는 'only when'이 문장 중간에서 사용되었으나, 강조를 위해 문장 맨 앞으로 이동))\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-24T16:59:06.317Z",
    "type": "장문세트",
@@ -229,79 +302,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T14:09:16.834Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 6 검산됨)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 6단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 친구가 몇 시에 도착하나요?\n주어진 단어: ( friend / arriving )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] What time is your friend arriving. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-24T13:15:20.636Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Necessity . . . constrains them to alter their former Systems of government. ✓ We now must alter our former Systems of government. Instead of writing as clearly and directly as he did in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a style so indirect and impersonal? One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked. What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • <u>necessity constrains [the colonists]</u>",
-    "choices": [
-     "Because the colonists faced unavoidable circumstances, they were able to achieve their goals more effectively.",
-     "Because of their own decisions, the colonists were compelled to stay in the harsh environment.",
-     "The colonists had absolute freedom to make their own decisions in the new land.",
-     "The colonists were not acting out of their own choice but were forced by unavoidable circumstances beyond their control.",
-     "The colonists occasionally felt pressure from unavoidable circumstances, but they mostly acted freely."
-    ],
-    "answer": 4,
-    "explanation": "밑줄 친 부분은 'The colonists were not acting out of their own choice but were forced by unavoidable circumstances beyond their control.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘unavoidable circumstances’(필연적 상황)와 ‘achieve their goals more effectively’(목표 달성에 효과적)는 지문의 ‘necessity 가 그들을 alter 하도록 강제한다’는 맥락과 맞지 않음. ‘effectively’는 지문에 없음. → 처방: ‘necessity’가 ‘강제’한다는 핵심 뜻을 먼저 확인하고, ‘목표 달성에 효과적’이란 말은 지문에 없으므로 제외해야 함.\n② 진단: ‘compelled to stay’(머무르도록 강제됨)는 지문의 ‘alter their former Systems of government’(정부를 바꾸도록 강제됨)와 반대 의미. ‘stay’는 지문에 없음. → 처방: ‘compel’이 ‘강제’를 뜻한다는 점을 떠올리고, 지문에서 ‘변화’를 강요하는지 확인해야 함.\n③ 진단: ‘absolute freedom’(절대적 자유)는 지문의 ‘necessity 가 강제한다’는 뜻과 완전히 반대. ‘freedom’이라는 단어 자체가 지문에 없음. → 처방: ‘necessity’가 ‘자유’를 제한한다는 점을 떠올리고, ‘freedom’이란 말이 나오면 오답임을 의심해야 함.\n⑤ 진단: ‘occasionally felt pressure’(가끔 압박을 느꼈다)는 지문의 ‘constrains them to alter’(변경하도록 강제한다)와 달리 ‘부분적’이며 ‘자유’가 있음을 암시. ‘mostly acted freely’는 지문의 ‘free will’이 없다는 뜻과 반대. → 처방: ‘necessity’가 ‘전체적 강제’를 뜻한다는 점을 떠올리고, ‘부분적’이나 ‘자유’란 표현이 나오면 오답임을 확인해야 함.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T13:21:17.321Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 19 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'responsibility', 'principles', 'revolution' / 17~21단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Jefferson’s indirect style subtly shifts responsibility from colonists to universal principles, making revolution seem inevitable rather than a choice.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
