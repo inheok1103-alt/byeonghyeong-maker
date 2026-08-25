@@ -1,6 +1,40 @@
 {
- "updated": "2026-08-25T17:49:09.174Z",
+ "updated": "2026-08-25T19:02:01.922Z",
  "samples": [
+  {
+   "ts": "2026-08-25T19:00:46.790Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "WEEK 18 DAY 5 ⓐ<u>REVIEW</u> While it is true that ⓑ<u>scientists</u> have had ⓒ<u>remarkable</u> success in teaching chimpanzees to communicate, we can be certain that even super-monkeys would have difficulty with any of the ⓓ<u>words</u> below. However, higher animals who apply themselves can master all of them. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 8 and 9.) REVIEW WORDS DEFINITIONS 1.abortive a. not related to the subject 2.accommodate b. thin covering 3.barometer c. fruitless, failing 4.buff (n.) d. natural 5.conjugal e. polished, civilized 6.crave f. to make fit, adjust to 7.deem g. on the spur of the moment 8.inherent h. move in a lively manner 9.innate i. to desire 10.irrelevant j. instrument for measuring ⓔ<u>change</u> 11.itinerant k. winding 12.latent l. inborn 13.modify m. believe, to judge 14.myriad n. going from place to place 15.peregrination o. a fan, follower, enthusiast 16.romp p. travel (n.) 17.spontaneous q. relating to marriage, connubial* 18.tortuous r. countless number 19.urbane s. to change 20.veneer t. lying hidden",
+    "choices": [
+     "review: A second or subsequent reading of a text or artifact in an attempt to gain new i",
+     "scientists: One whose activities make use of the scientific method to answer questions regar",
+     "remarkable: (physical) An area; somewhere within an area.",
+     "words: The smallest unit of language that has a particular meaning and can be expressed",
+     "change: The process of becoming different."
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ의 풀이는 'place'의 정의이다. 'remarkable'의 올바른 풀이: Worthy of being remarked or noted; notable\n[오답 진단·처방]\n① 진단: ‘review’를 ‘다시 읽기’로만 이해하고 ‘새로운 통찰 얻기’를 보지 못했다. 지문에서 ‘REVIEW’는 ‘복습’이란 뜻이지만, 선지①는 ‘새로운 통찰’을 포함해 더 넓은 의미를 담은 영어 정의를 제시했다. → 처방: ‘review’의 영어 정의를 찾을 때는 사전뿐 아니라 지문 속 ‘복습’이라는 뜻도 떠올리며, 선지의 의미를 ‘이해의 깊이’를 기준으로 비교해본다.\n② 진단: ‘scientists’를 ‘과학자’로만 좁게 해석하고, ‘과학적 방법’을 활용한다는 넓은 의미를 놓쳤다. 지문에서 ‘과학적 방법’을 언급하지 않았지만, 선지②는 과학자의 정의에 ‘과학적 방법’을 포함했다. → 처방: ‘scientists’를 ‘과학을 연구하는 사람’으로 넓게 생각하고, 선지의 영어 정의를 ‘과학적 방법’의 포함 여부로 나누어본다.\n④ 진단: ‘words’를 ‘의미 있는 smallest unit’로만 해석하고, ‘표현될 수 있는’ 부분을 보지 못했다. 지문에서 ‘단어’는 ‘의미’를 지닌 ‘가장 작은 언어 단위’이지만, 선지④는 ‘표현될 수 있는’ 조건까지 포함했다. → 처방: ‘words’의 정의를 ‘의미’를 지닌 ‘단위’로만 보지 말고, ‘표현’이라는 기능까지 고려해 선지의 의미를 넓게 생각한다.\n⑤ 진단: ‘change’를 ‘다른 상태로 변하는 과정’으로만 이해하고, ‘becoming different’라는 영어 정의가 ‘과정’이라는 점을 놓쳤다. 지문에서 ‘change’는 ‘변화’라는 뜻이지만, 선지⑤는 ‘과정’이라는 뜻을 정확히 담았다. → 처방: ‘change’를 단순히 ‘변화’가 아닌 ‘어떻게 변하는지’를 뜻하는 ‘과정’으로도 생각하고, 영어 정의를 ‘과정’이라는 키워드로 찾아본다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-25T17:48:37.678Z",
    "type": "이어쓰기영작",
@@ -300,42 +334,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The core argument highlights the importance of distinguishing between confusing words and homonyms in English.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘발음이 같아도 철자가 다르면 의미가 같다는 통념’을 비판한다는 선지의 내용이 지문에서 ‘의미가 같은 경우’를 언급하지 않음을 오독했음. 지문은 ‘의미가 다른 경우’를 예시로 들며 혼동어의 위험성을 강조함. → 처방: 혼동어와 동음이의어는 ‘발음은 같지만 의미가 다른 경우’를 집중해서 공부하라.\n③ 진단: ‘구분이 언어 사용의 오류를 줄이는 데 필수적’이라는 표현이 지나치게 ‘필수적’이라는 단어를 강조한 오독. 지문은 ‘명료성을 높이는 핵심 방법’으로 설명하며 ‘필수적’이라는 강한 표현은 없음. → 처방: ‘핵심 방법’이라는 표현에 집중해, 혼동어의 의미를 정확히 구분해야 함을 기억하라.\n④ 진단: ‘모든 영어 학습자에게 필수적’이라는 과장된 주장이 지문에 없다고 오독했음. 지문은 혼동어의 중요성을 강조하지만 ‘모든 학습자’에 대한 과장은 없음. → 처방: 지문에 나온 ‘명료성’을 높이는 데 혼동어 구분이 중요하다는 점을 떠올리라.\n⑤ 진단: ‘언제나 명확히 구분해야 한다’는 지나친 일반화를 지문이 주장하지 않음을 오독했음. 지문은 ‘명료성을 높이는 핵심 방법’으로 혼동어를 구분할 필요가 있음을 강조할 뿐, ‘언제나’라는 절대적 표현은 없음. → 처방: ‘명료성을 높이는 데 도움이 된다’는 관점에서 혼동어를 공부하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The core argument highlights the importance of distinguishing between confusing words and homonyms in English.]"
-   }
-  },
-  {
-   "ts": "2026-08-25T09:02:33.082Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.11,
-    "D": -0.33,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.11)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① its possessive pronoun Example: The cat hurt its paw.\n② incredulous skeptical Example: Citizens are incredulous about the reason for the increase in the price of gas.\n③ Confusing Words and Homonyms 35 Inc.\n④ abbreviation for incorporated ink ﬂuid in pens incite to prompt to action insight understanding, comprehension incredible astonishing Example: Her gymnastic moves were incredible.\n⑤ ingenious clever ingenuous na¨ıve or simple innocence to be without guilt innocents people who are without guilt insure (see assure) irregardless no such word exists regardless in spite of, without regard isle (see aisle) it’s contraction for it is or it has Example: It’s for a good cause.\n⑥ jewel gem joule in physics, a unit of work or energy karat (see carat) kernel (see colonel) key (see cay) knead work with bread dough kneed hit with one’s knee need to require knew past tense of know, to have understood new opposite of old",
-    "choices": [
-     "③-④-②-⑤-①-⑥",
-     "③-④-⑥-②-⑤-①",
-     "④-③-②-⑤-①-⑥",
-     "③-②-④-⑤-①-⑥",
-     "③-④-②-①-⑤-⑥"
-    ],
-    "answer": 1,
-    "explanation": "정답 배열은 ③-④-②-⑤-①-⑥. 흐름: ③ → ④ → ② → ⑤ → ① → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ④의 'insight'와 ⑤의 'insight'가 같은 단어라는 오해로 ⑥을 ② 뒤로 배치했다. 또한 ⑤의 'ingenious'와 'ingenuous'를 혼동해 ⑤를 ① 뒤로 배치했다. → 처방: 단어의 뜻과 품사를 정확히 구분해 순서대로 배치하기. 예를 들어 'insight'는 ④에, 'ingenious'는 ⑤에 속한다는 점을 기억하기.\n③ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ④의 'incredible'가 'astonishing'과 같은 뜻이라는 오해로 ④를 ③ 뒤로 배치했다. 또한 ⑥의 'jewel'과 'gem'이 같은 범주라는 착각으로 ⑥을 ② 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 같은 범주에 속하는지 확인하기. 예를 들어 'jewel'과 'gem'은 같은 뜻이지만 예시가 다르므로 분리해야 함을 기억하기.\n④ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ②의 'incredulous'가 'skeptical'과 같은 뜻이라는 오해로 ②를 ④ 뒤로 배치했다. 또한 ⑤의 'it's'가 'it is' 또는 'it has'의 줄임말이라는 점을 무시하고 ⑤를 ① 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 문법적 특징(예: it's 의 의미)을 고려해 순서대로 배치하기.\n⑤ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ④의 'insight'와 ⑤의 'insight'를 같은 단어로 오해해 ⑤를 ① 뒤로 배치했다. 또한 ⑥의 'jewel'과 'gem'을 같은 범주로 착각해 ⑥을 ② 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 같은 범주에 속하는지 확인하기. 예를 들어 'jewel'과 'gem'은 같은 뜻이지만 예시가 다르므로 분리해야 함을 기억하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]

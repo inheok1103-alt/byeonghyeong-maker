@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T17:49:09.171Z",
+ "updated": "2026-08-25T19:02:01.918Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T19:01:34.975Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원어민의 자연스러운 문장은 '명사 + 전치사 + 명사' 구조에서 전치사가 생략되지 않으며, 동사 시제와 수 일치, 대명사 일치, 관사 사용이 철저히 지켜진다.",
+   "rule": "원서 코퍼스 패턴을 기반으로, 학생들이 작성한 문장에서 전치사 생략, 동사 시제/수 불일치, 대명사/관사 오용을 발견하면 즉시 오류로 채점하고, 올바른 형태(예: 'those energy sources' → 'those energy types', 'a lot of place' → 'a lot of space')로 수정하도록 지시하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T17:48:40.503Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 실제 패턴에서 '과거시제'와 '현재완료시제'가 혼용되지 않고, 문맥에 따라 엄격히 구분되어 사용됨을 확인했다. 또한, 문장의 구조적 복잡성이 낮아질수록 오류 발생 가능성이 높아지며, 특히 '명사구+동사'의 단순 연결 구조에서 시제 오류가 빈발함을 발견했다.",
    "rule": "'과거시제(had gone) 대신 현재완료시제(have gone)를 사용해야 하는 문맥에서는, '과거의 특정 시점'이 아닌 '현재까지의 결과'나 '경험'을 강조하는지 반드시 확인하라. 오류 유형: [과거시제 오용] → [현재완료시제 필수].",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T02:08:03.991Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "명사 단수/복수 오류와 문맥적 어색함을 동시에 잡는 패턴이 빈번하며, 특히 'there is/are' 구문과 'new'+명사의 수 일치가 핵심이다.",
-   "rule": "CEFR B1 수준 내신 문항에서 'there is/are' 구문과 'new + (단/복)명사' 조합을 활용하여, 수 일치 오류와 문맥적 어색함을 동시에 평가하는 문장을 출제하라. 예: 'There is a new book on the table, but why are you looking for new books?'",
    "sample": [
     "old english",
     "university press",
