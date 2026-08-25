@@ -3646,3 +3646,8 @@
 - 'of + 명사 + ing' 구조는 소유·소속 관계를 명확히 하기 위해 'to + 동사'나 'that + 동사' 구조로 대체하여 문법적 명확성을 높이는 규칙을 적용하라. 예: 'the requirement of men going to army' → 'the commitments men have to make to go to the army'.  _(출처: 코퍼스연구:실제 문법오류쌍(gec)을 활용한 어법 문항)_
 - ① ‘의도적 오류 유도’(40%): 문법/시제/수동태 오류를 내장해 과잉 추론을 억제. ② ‘자기 교정 메커니즘’(35%): 2~3문장 문맥을 넓혀 Core meaning 재확인. ③ ‘축자 해석’(25%): 단어 수준을 넘어 문맥 내 미묘한 함의(예: 부정어+비교급)로 난도 상승. 단, 축자 해석 비율은 30%까지 상향 조정 가능.  _(출처: 회의:자동연구)_
 - 1) '소재는 텍스트가 다루는 객관적 범위(what the text is about)'로 정의하고, 2) '주제는 therein 저자가 선택한 관점·해석·가치(how the author frames it)'로 정의한다. 3) 소재와 주제의 *입체적 관계*를 강조하기 위해 수능/교과서 문제지에 '소재: OO / 주제: OO의 OO'로 표기하며, 4) 소재가 주제로 직접 연결되지 않는 경우(예: '고양이' → '고독의 비극성')도 허용하되, 주제가 소재 내의 *의도된 해석 공간*으로 한정되도록 유도한다.  _(출처: 회의:자동연구)_
+
+## 2026-08-25T03:15:17.135Z 자동 반영 규칙
+- 'even if', 'like', 'but'와 같은 접속사 뒤에는 완전한 절(주어+동사)이 오도록 하며, 'be + 명사' 구문에서는 형용사 오류(예: successful/successfull)를 검토하도록 문제를 설계하라.  _(출처: 코퍼스연구:원서 문체 패턴을 활용한 변형)_
+- 1) 2학년 2학기: 'with+O+C' 구조(예: *With the window broken*)와 능동/수동 선택(예: *The man standing there* vs. *The man being scolded*)을 필수 패턴으로 재정리. 2) 3학년 1학기: 분사구문의 의미상 주어를 명시적/생략적 형태로 제한적(예: *Opening the door, she entered* / *Her eyes closed, she sat there*)으로 출제. 3) 3학년 2학기: '복합 문장 내 준동사 병행'(예: *Hearing the news, he left, not knowing what to do*)을 심화형으로 한정. 4) 수능·내신 간 연계성을 위해 EBS 교재에 '준동사 포인트'별 난이도 계층화(기본/확장/심화) 적용.  _(출처: 회의:자동연구)_
+- [object Object]  _(출처: 회의:자동연구)_
