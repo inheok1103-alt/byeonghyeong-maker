@@ -1,6 +1,58 @@
 {
- "updated": "2026-08-25T14:08:11.986Z",
+ "updated": "2026-08-25T15:17:09.529Z",
  "samples": [
+  {
+   "ts": "2026-08-25T15:15:28.613Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "It's Friday afternoon. David is at Tom's flat. Tom has decided to have a party for all his friends. A few minutes later Nick has arrived at the flat. Now David is reporting what Tom said. So <u>instead of Tom's words I'm having, David says he's having</u>. The next day David is talking to Harriet. Now David is in a different place from where Tom first told him about the party. So instead of here, he says at his flat. And a day has passed since he first heard about it. It is now the day of the party. So instead of tomorrow evening, David says this evening. B Changes in reported speech Changes from direct speech to reported speech depend on changes in the situation. We may have to make changes when we are reporting something another person has said, or when we report it in a different place or at a different time. Here are some typical changes.",
+    "choices": [
+     "David occasionally changes Tom's words but often keeps them exactly as they were.",
+     "David is simply repeating what Tom said without changing any details.",
+     "Because Tom spoke first, David was forced to alter his words to match his own views.",
+     "David is having the same words that Tom had, so there is no alteration in the message.",
+     "David alters Tom's direct speech to reflect his own perspective, implying that he is not merely repeating but actively reshaping the message."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'David alters Tom's direct speech to reflect his own perspective, implying that he is not merely repeating but actively reshaping the message.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-25T15:16:38.520Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 15 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'situation', 'reports', 'changes' / 13~17단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] David reports Tom's words with changes in place and time because the situation has changed.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-25T13:16:27.492Z",
    "type": "요약문AB",
@@ -282,60 +334,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T05:50:16.440Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": -0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Dionysian Frenzied, delirious. • Only in the tropics did such festivals become truly Dionysian, he said, which was why he was booking his flight to Rio. Dionysus was the Greek forerunner of Bacchus. He was the inventor of wine, which he gave to the human race. For that gift and for all the wild behavior that it led to, Dionysus became immensely popular, and he appears in a great many myths. [ ] In the 19th century, scholars such as Nietzsche claimed that the ancient world could be understood as a continuing conflict between the attitudes represented by Apollo (see Apollonian) and Dionysus— that is, between order and disorder, between moderation and excess, between the controlled and the ecstatic.",
-    "choices": [
-     "Dionysus, the god of wine, is always portrayed with a calm expression, surrounded by disciplined followers rather than chaotic spirits.",
-     "His typical depiction includes a wine goblet, hair adorned with vine leaves, and companionship from goat-footed satyrs and maenads.",
-     "He is frequently depicted wearing a crown of grapevines while dancing alone in a peaceful meadow.",
-     "Unlike other gods, Dionysus is never shown with satyrs or maenads, emphasizing his solitary and refined nature.",
-     "The image of Dionysus holding a wine goblet symbolizes his preference for quiet, intellectual pursuits over wild celebrations."
-    ],
-    "answer": 2,
-    "explanation": "빈칸에는 원문 'He is often shown holding a wine goblet, with his hair full of vine leaves, and attended by a band of goat-footed satyrs and wild female spirits called maenads.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'wild behavior'와 'chaotic spirits'가 강조되는데, 선지①은 'calm expression'과 'disciplined followers'로 이를 무시하고 반대되는 이미지를 제시함. → 처방: 지문에서 묘사된 'wild'와 'chaotic'의 의미를 정확히 짚고, 선지가 이를 반대로 오해했는지 확인하라.\n③ 진단: 지문은 'wild behavior'와 'ecstatic'을 강조하는데, 선지③은 'peaceful meadow'와 'dancing alone'으로 이를 무시하고 평화로운 이미지만 강조함. → 처방: 지문에서 'Dionysian'의 핵심 특징인 'wild'와 'excess'를 먼저 떠올리고, 선지가 이를 간과했는지 점검하라.\n④ 진단: 지문은 'great many myths'와 'wild behavior'를 언급하는데, 선지④은 'never shown with satyrs or maenads'로 이를 무시하고 고립된 이미지를 제시함. → 처방: 지문에서 'myths'와 'wild behavior'가 등장하는 부분을 다시 읽고, 선지가 이를 빼먹었는지 확인하라.\n⑤ 진단: 지문은 'wild celebrations'와 'ecstatic'을 강조하는데, 선지⑤은 'quiet, intellectual pursuits'로 이를 무시하고 정반대의 의미를 제시함. → 처방: 지문에서 'Dionysian'의 반대 개념인 'Apollonian'을 떠올리며, 선지가 이를 혼동했는지 확인하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T05:50:49.350Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 그는 디오니소스적 열광과 광란을 경험하기 위해 리우행 비행기를 예약했다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]

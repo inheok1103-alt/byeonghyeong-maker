@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T14:08:11.981Z",
+ "updated": "2026-08-25T15:17:09.524Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T15:16:41.538Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'therefore', 'immediately' 등 부사나 접속사가 문장 맨 앞 또는 중간에서 문법적 오류 없이 사용되는 패턴이 빈번하며, 'teach'→'teaches', 'brought'→'brought'와 같이 시제 일치와 철자 오류가 동시에 발생하는 경우가 많다. 'between two'처럼 전치사구는 명사구와 결합되어 문장 구조를 복잡하게 만드는 경향이 있다.",
+   "rule": "원서 코퍼스 패턴을 반영하여, 문장 맨 앞 또는 중간에서 'therefore', 'however', 'immediately' 등 부사/접속사를 사용한 경우, 반드시 문장 구조(주어+동사+목적어) 일치와 철자(예: 'brought'→'brought')를 확인하는 문제를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T14:07:41.987Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제와 현재시제의 혼용 오류가 빈번하며, 특히 'be + ing' 형태의 동명사 구문이 주어 역할을 할 때 시제 불일치가 자주 발생한다. 또한, 복수 명사 뒤에 단수 동사('runs')가 오거나, 형용사·부사 위치가 어긋나는 오류가 반복된다.",
    "rule": "'be + ing' 형태의 동명사구가 주어일 경우, 동사는 반드시 현재시제(단수형)로 일치시켜야 하며, 복수 명사 뒤에는 복수 동사를 사용해야 한다. 또한, 'new'와 같은 형용사는 명사 'something' 앞에 위치해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T20:42:34.395Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거 시제 동사(needs→need)와 목적어 수 일치 오류, 수동태 미사용 오류, 복합명사/형용사 오류(extra hardwork→extra hard, aswell→as well)가 빈번하게 관찰된다.",
-   "rule": "주어의 수에 맞춰 동사의 단수/복수형을 정확히 사용하고, 수동태가 필요한 문맥(be controlled 등)에서는 능동태 대신 수동태를 적용하도록 오답지를 설계하라.",
    "sample": [
     "old english",
     "university press",
