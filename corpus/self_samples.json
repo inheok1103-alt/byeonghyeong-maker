@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-25T11:46:47.475Z",
+ "updated": "2026-08-25T13:17:48.336Z",
  "samples": [
+  {
+   "ts": "2026-08-25T13:16:27.492Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 7,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.86,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.86)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 24번 제목 · T I T L E 도파민의 시소 제목 스크롤로 급등한 도파민이 항상성 때문에 기준선 아래로 급락한다 — '도파민 시소' 소재 소셜미디어와 도파민 Social media and dopamine 주제 스크롤로 급등한 도파민은 항상성 때문에 기준선 아래로 급락한다 Dopamine spikes from scrolling crash below baseline 제목 도파민 시소 The Dopamine Seesaw: How Scrolling Makes You Feel 한눈에 소셜미디어를 스크롤하면 도파민이 급등해 기분이 좋아지지만, 뇌는 늘 균형(항상성)을 추구하므로 곧 기준선 ‘아래로’ 급락해 오 히려 더 우울해 진다. ‘오른 것은 내려온다’는 원리가 작동하는 ‘도파민 시소’가 글의 핵심이다. 지문 전문 — 시험지 원문 Let’s look at what is occurring in your brain when scrolling on social media, a quick dopamine activity. You open your social media apps and immediately you notice you feel really good, your dopamine levels increase incredibly fast and pleasure is experienced in your brain. The challenge this creates is as with everything in our universe: as the laws of physics explain, ‘what goes up, must come down’. Your brain and body are always seeking something called ‘homeostasis’, which simply means balance. With this in mind, when dopamine levels increase incredibly fast when scrolling social media, the brain then thinks, ‘Wow, how are my dopamine levels so high?’ In order to achieve homeostasis, or balance, the dopamine then has to quickly drop an equal amount below your baseline level in order to rebalance, making you feel even worse than before you started scrolling. 지문 전문 · 원문 그대로\n\n─────────\n[요약문] Scrolling on social media triggers rapid (A) ... but brain’s (B) ... soon pulls levels below baseline, worsening mood.",
+    "choices": [
+     "(A) cortisol surge … (B) cognitive dissonance",
+     "(A) dopamine surge … (B) homeostatic drive",
+     "(A) endorphin release … (B) sensory overload",
+     "(A) serotonin spike … (B) homeostatic resistance",
+     "(A) dopamine deficiency … (B) instant gratification"
+    ],
+    "answer": 2,
+    "explanation": "(A) dopamine surge / (B) homeostatic drive 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘코르티졸(스트레스 호르몬)’과 ‘인지적 불일치’라는 용어를 오독했다. 지문은 도파민의 급등과 항상성(균형)을 언급했을 뿐, 코르티졸이나 인지적 불일치와는 무관하다. → 처방: 지문에서 언급된 핵심 단어(‘도파민’, ‘항상성’)를 먼저 확인하고, 용어의 의미를 정확히 기억한 뒤 선지를 비교하라.\n③ 진단: ‘엔도르핀(행복 호르몬)’과 ‘감각 과부하’를 혼동했다. 지문은 도파민과 항상성에 초점을 맞췄고, 엔도르핀이나 감각 과부하는 언급되지 않았다. → 처방: 지문의 핵심 주제(‘도파민’, ‘항상성’)를 파악한 뒤, 선지의 용어가 지문과 직접적으로 연결되는지 확인하라.\n④ 진단: ‘세로토닌(행복 호르몬)’과 ‘항상성 저항’을 잘못 연결했다. 지문은 도파민의 급등과 항상성(균형)으로 설명했는데, 세로토닌은 언급되지 않았고 ‘항상성 저항’이라는 용어도 없다. → 처방: 지문의 주요 단어(‘도파민’, ‘항상성’)와 선지의 단어(‘세로토닌’, ‘항상성 저항’)가 일치하는지 꼼꼼히 비교하라.\n⑤ 진단: ‘도파민 결핍’과 ‘즉각적 만족’을 오해했다. 지문은 도파민의 ‘급등’과 ‘항상성’으로 설명했는데, 도파민 결핍이나 즉각적 만족과는 관련이 없다. → 처방: 지문의 내용(‘도파민 급등’, ‘항상성’)과 선지의 내용(‘도파민 결핍’, ‘즉각적 만족’)이 반대거나 무관한지 확인하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-25T13:17:17.378Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] 지문 전문 — 시험지 원문 Let’s look at what is occurring in your brain when scrolling on social media, a quick dopamine activity.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 소셜 미디어에서 스크롤하는 간단한 도파민 활동 시 뇌에서 어떤 일이 일어나는지 살펴보겠습니다. (구문 포인트: 명사구 수식(‘a quick dopamine activity’가 ‘scrolling on social media’를 동격으로 설명) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-25T10:52:27.233Z",
    "type": "요지",
@@ -283,75 +336,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 그는 디오니소스적 열광과 광란을 경험하기 위해 리우행 비행기를 예약했다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T04:56:28.708Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 3/3 다수결 4번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Contents Preface page vii Acknowledgments xiii 1 an adventure in (A) [clarity / ambiguity] with one ﬁsh two ﬁsh 1 1.1 How an 8-word title can have many interpretations 2 1.2 Syntax and punctuation 5 Coda 12 2 exceptional students and teachers 13 2.1 Syntactic structure in (B) [subordinate / coordinate] constructions 13 2.2 Ambiguities with multiple coordination 21 Coda 23 3 Introduction to Language and Linguistics 25 3.1 Ambiguity in the interpretation of conjuncts 25 3.2 What a language is: the lexicon 29 3.2.1 The (C) [mental / physical] lexicon 29 3.2.2 Some structure in the mental lexicon 31 3.3 What a language is: the computational procedure 34 3.4 What is language? 39 3.5 What is linguistics? 40 3.5.1 A puzzle in linguistics: the syntactic structure of coordination 42 3.6 On the use and misuse of and 45 Coda 50 4 a review of a book by two philosophers 53 4.1 The syntactic structure of complex noun phrases 53 4.1.1 The syntax of prepositional phrase modiﬁers 54 4.1.2 From prepositional phrase to clausal modiﬁers 56 4.2 The syntactic analysis of (relative) clauses 60 4.2.1 Syntactic variation in relative clauses 67 4.3 Inﬁnitival clauses 69 4.3.1 Ending a relative clause with a preposition 74 4.4 Mental grammar vs. prescriptive rules 75 4.4.1 The stranded preposition mistake 76 4.4.2 The split inﬁnitive mistake 83 4.4.3 that vs. which: restrictive vs. nonrestrictive relative clauses 88 Coda 92 v",
-    "choices": [
-     "(A) clarity - (B) coordinate - (C) mental",
-     "(A) clarity - (B) coordinate - (C) physical",
-     "(A) clarity - (B) subordinate - (C) mental",
-     "(A) ambiguity - (B) subordinate - (C) mental",
-     "(A) ambiguity - (B) coordinate - (C) mental"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) ambiguity - (B) coordinate - (C) mental. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문 1장 제목 'an adventure in [clarity / ambiguity] with one fish two fish'에서 'ambiguity'가 맞음에도 'clarity'를 선택했는데, 'clarity'가 제목에 어울릴 것 같아서 문맥을 제대로 살피지 않았음. → 처방: 제목의 의미를 먼저 생각해 보고, 지문 1.1에서 'many interpretations'라는 말이 나오므로 'ambiguity'가 맞다는 사실을 확인할 것.\n② 진단: 지문 2.1에서 '(B) [subordinate / coordinate] constructions' 부분에서 'coordinate'를 선택했는데, 'subordinate'가 문맥상 더 어울림. 'coordinate'는 대등한 관계를, 'subordinate'는 종속 관계를 뜻하는데 지문에서 종속 관계가 더 중요해 보임. → 처방: 지문 2.1의 내용을 읽고 'subordinate constructions'가 문법적으로 종속 구조를 설명한다는 점을 확인할 것.\n③ 진단: 지문 3.2.1에서 '(C) [mental / physical] lexicon' 부분에서 'physical'을 선택했는데, 'mental lexicon'이 언어의 내재적 구조를 뜻한다는 사실을 몰라서 오해함. → 처방: 언어학에서 'mental lexicon'이란 머릿속에 저장된 단어들의 집합을 뜻한다는 기본 개념을 공부할 것.\n⑤ 진단: 지문 2.1에서 'subordinate'가 맞음에도 'coordinate'를 선택했는데, 'coordinate'가 익숙한 단어라서 무의식적으로 선택했을 가능성이 있음. 또한 (A)에서도 'clarity'를 선택했는데, 제목의 'ambiguity'를 보지 못했음. → 처방: 제목과 각 장의 소제목을 꼼꼼히 읽고, 문맥에 맞는 단어를 선택할 것. 특히 'ambiguity'와 'subordinate'가 문법적으로 중요한 단어라는 점을 기억할 것."
-   }
-  },
-  {
-   "ts": "2026-08-25T03:14:06.231Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "The greatest changes in men-women relationships have occurred in ____. Now that we see what the sentence says, we can make it still more direct: ✓ Men and women have changed their relationships most in how they work together. How writers use metadiscourse varies by field, but you can usually cut these two types: 1. Metadiscourse That Attributes Your Ideas to a Source Don’t announce that something has been observed, noticed, noted, and so on; just state the fact: High divorce rates have been observed to occur in areas that have been determined to have low population density. ✓ High divorce rates occur in areas with low population density. 2. Metadiscourse That Announces Your Topic The boldface phrases tell your reader what your sentence is “about”: This section introduces another problem, that of noise pollution. The first thing to say about it is that noise pollution exists not only . . .",
-    "choices": [
-     "whether they argue",
-     "how they collaborate",
-     "how they sleep",
-     "what they earn",
-     "what they wear"
-    ],
-    "answer": 2,
-    "explanation": "빈칸에는 'how they collaborate'가 들어가 글의 논지를 완성한다 (본문 'how they work together'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'men-women relationships'의 변화가 'how they work together'(협력 방식)에서 가장 크게 일어났다고 설명하는데, 'whether they argue'(다투는지 여부)는 관계 변화의 한 측면일 뿐 주된 변화가 아님을 오독한 듯함. 지문은 'how they work together'를 강조했으므로 'whether'는 범위가 너무 좁음. → 처방: 문장의 핵심은 '관계의 변화가 일어난 분야'임을 기억하고, 빈칸에는 '어떻게(how)'가 들어가는 선지를 먼저 확인하기.\n③ 진단: 지문은 'men-women relationships'의 변화가 'how they work together'(직장·일상에서의 협력)에서 일어났다고 설명하는데, 'how they sleep'(어떻게 자는가)는 이 맥락과 전혀 관련이 없음을 오독했음. 학생은 'sleep'이라는 친숙한 단어에 이끌려 무관한 선지를 선택한 듯함. → 처방: 지문의 주제어('relationships', 'work together')와 선지의 키워드('how', 'what')를 매칭해 빈칸의 의미를 유추하기.\n④ 진단: 지문은 'men-women relationships'의 변화가 'how they work together'에서 일어났다고 설명하는데, 'what they earn'(얼마를 버는지)는 경제적 측면으로, 관계가 변한 '방법'과는 거리가 있음을 오독했음. 학생은 'earn'이 관계와 연관될 수 있다고 착각한 듯함. → 처방: 빈칸 앞뒤 문장과 지문의 전체 흐름을 살피며, '관계의 변화'가 일어난 '방법'을 묻는 선지를 찾기.\n⑤ 진단: 지문은 'men-women relationships'의 변화가 'how they work together'에서 일어났다고 설명하는데, 'what they wear'(어떻게 입는지)는 외모·패션에 초점을 맞췄을 뿐, 관계 변화의 핵심은 아님을 오독했음. 학생은 'wear'이 관계와 연관될 수 있다고 생각한 듯함. → 처방: 지문의 주제와 빈칸의 문맥을 정확히 이해하기 위해, '관계'라는 단어와 어울리는 동사·부사(예: 'how', 'collaborate')를 우선 고려하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
