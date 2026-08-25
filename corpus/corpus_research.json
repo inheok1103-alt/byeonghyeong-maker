@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T05:51:22.811Z",
+ "updated": "2026-08-25T07:24:31.566Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T07:24:01.282Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'of'를 포함하는 구문은 중복 사용(예: 'Most of the the things')이나 불필요한 조동사 사용(예: 'have to participate')이 오류로 자주 나타난다는 점을 확인했다.",
+   "rule": "원서 코퍼스 패턴을 반영하여, 'of'를 포함한 구문에서 중복된 'of' 사용(예: 'Most of the the things')이나 조동사의 과도한 사용(예: 'have to participate' → 'participate')을 오류로 출제한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T05:50:51.421Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'명사 + 고유명사' 구조에서 고유명사가 보충 설명 역할을 할 때 콤마로 구분해야 하며, '의도적·필수적' 동작 전환 시 'start ~ing'가 자연스럽고, 'should + 동사원형'이 지시·제안 구문에 필수적이다.",
    "rule": "'A, B, C' 구조에서 B가 C의 보충 설명(예: 'inventor, Thomas Edison')일 경우, 반드시 콤마로 구분하고, 'should + 동사원형'이 지시·제안 구문에서 필수적으로 사용되며, 'start ~ing'가 의도적 동작 전환 시 자연스러운 대안임을 기억하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T13:04:16.616Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형/현재형 혼용, 품사 오류, 관계대명사 오용이 빈번하며, 특히 'be 동사 + 형용사' 구조에서 오류가 많다.",
-   "rule": "주어와 동사의 수 일치와 시제 일치를 우선 점검한 뒤, 'be 동사 + 형용사' 구조(예: 'be save' → 'be safe')에서 형용사의 정확한 형태를 확인하도록 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",

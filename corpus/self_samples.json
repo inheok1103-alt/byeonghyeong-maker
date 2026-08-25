@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-25T05:51:22.815Z",
+ "updated": "2026-08-25T07:24:31.569Z",
  "samples": [
+  {
+   "ts": "2026-08-25T07:11:25.543Z",
+   "type": "혼합통합형",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
+    "passage": "The Grammar Geek 56 6. Lorsque nous rencontrerons des problèmes, nous vous le dirons. (encounter, tell) \b 7. Il arrivera quand il arrivera. (get here) \b 8. Voici l’itinéraire pour demain: on commence par le musée à 9h00. Après la visite guidée, on embarque dans l’autobus et on va au restaurant. (start, get on, go) \b \b 9. Annie vous fera signe au moment où vous entrerez dans la salle. (wave at, come in) \b 10. Je ne sais pas si Tony est dans son bureau. Je regarderai dès que j’aurai une minute. (check, get) \b EXERCISE 3: CONTEXTS Choose the correct answer. Then write contexts for each one. 1. In which one is the speaker on an organized group tour? a) We visit the Empire State Building tomorrow. b) We are visiting the Empire State Building tomorrow. 2. In which one does the speaker want to know about the person’s personal plans for after breakfast? a) What are you doing after breakfast? b) What do you do after breakfast?",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-25T05:50:16.440Z",
    "type": "빈칸(문장)",
@@ -360,39 +379,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The distinction between \"itinerant\" and \"itinerary'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 지문에서 'itinerant'과 'itinerary'의 뜻과 예문은 자세히 설명하지만 발음 차이는 언급하지 않음. 학생은 발음 차이를 중요하게 여겼거나, 지문을 제대로 읽지 않고 제목만 보고 판단했을 수 있음. → 처방: 지문 전체를 꼼꼼히 읽고, 각 단어의 뜻과 예문을 확인한 뒤 주제를 판단하기.\n③ 진단: 지문에서 'itinerant'의 예문은 '이동하는 삶'을 묘사하지만, 'negative effects(부정적 효과)'는 언급되지 않음. 학생은 단어의 뜻만 보고 주제를 과장하거나 추측했을 가능성 있음. → 처방: 지문의 예문이나 설명에 없는 내용은 주제로 삼지 말고, 제시된 정보만으로 판단하기.\n④ 진단: 지문은 'itinerant'과 'itinerary'의 뜻과 예문만 다루며, 'travel-related vocabulary(여행 관련 어휘)'의 공통점은 언급하지 않음. 학생은 단어의 연관성만 보고 주제를 넓게 해석했을 수 있음. → 처방: 지문에 직접 언급된 단어와 뜻, 예문에만 집중하고, 연관된 다른 단어는 고려하지 않기.\n⑤ 진단: 지문은 'itinerant'과 'itinerary'의 뜻과 예문만 다루며, 철자 차이는 언급하지 않음. 학생은 단어의 모양만 보고 주제를 판단했을 가능성 있음. → 처방: 단어의 뜻과 예문을 우선 확인하고, 철자나 발음은 부가적인 정보로만 생각하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The distinction between \"itinerant\" and \"itinerary]"
-   }
-  },
-  {
-   "ts": "2026-08-24T21:46:41.748Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "Note carefully the pronunciation of both words. ① ITINERANT (eye TIN ur unt) adj moving from place to place • The life of a traveling salesman is an itinerant one. ② • The itinerant junk dealer passes through our neighborhood every month or so, pulling his wagon of odds and ends. ③ • The international banker’s itinerant lifestyle began to seem less glamorous to her after her first child was born. ④ The itinerant musician’s daily performances in the same plaza drew a loyal local audience, making his nomadic lifestyle less burdensome. ⑤ A closely related word is itinerary, which is the planned route or schedule of a trip. • The tour guide handed the travelers an itinerary of the tour bus route so they would know what to expect throughout the day. Quick Quiz #53 Match each word in the first column with its definition in the second column. Check your answers here. insulting speech 3. planned trip route 4. examining one’s feelings 7. meaning other than what’s said 8. moving from place to place 9.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘ITINERANT’의 뜻(‘이동하는’)을 몰라서 ‘insulting speech’(모욕적인 말)로 오해했을 가능성이 크다. 지문에서 ①은 ‘이동하는’이라는 뜻임을 분명히 설명하고 있다. → 처방: ‘ITINERANT’를 지문에서 제시한 뜻과 예문으로 정확히 암기하고, ‘insulting speech’는 따로 공부해 두기.\n② 진단: ‘ITINERANT’의 뜻을 몰라서 ‘planned trip route’(계획된 여행 경로)로 오해했을 수 있다. 지문에서 ⑤에 ‘itinerary’(여행 일정)가 ‘planned trip route’라는 뜻으로 나오지만, ②는 ‘ITINERANT’의 예문일 뿐이다. → 처방: ‘ITINERANT’와 ‘itinerary’를 철저히 구분해서 외우고, 각 단어의 뜻과 예문을 함께 기억하기.\n③ 진단: ‘ITINERANT’의 뜻을 몰라서 ‘examining one’s feelings’(자신의 감정 살펴보기)로 오해했을 수 있다. 지문에서 ③은 ‘ITINERANT’의 예문일 뿐, 감정에 대한 내용은 전혀 없다. → 처방: 단어 뜻을 외울 때는 예문뿐 아니라 지문 속 설명도 꼼꼼히 읽고, 뜻이 헷갈리면 사전을 찾아보기.\n⑤ 진단: ‘itinerary’의 뜻을 몰라서 ‘meaning other than what’s said’(말한 것보다 다른 뜻)으로 오해했을 수 있다. 지문에서 ⑤는 ‘planned route’를 뜻하는 ‘itinerary’이지, 비유적 뜻이 아니다. → 처방: ‘itinerary’를 ‘여행 일정’이라는 뜻으로만 기억하고, 다른 뜻이 있는지 확인할 때는 반드시 사전을 참고하기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]
