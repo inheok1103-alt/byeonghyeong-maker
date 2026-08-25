@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T13:17:48.332Z",
+ "updated": "2026-08-25T14:08:11.981Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T14:07:41.987Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 관사·시제·구두점의 오류가 빈번하며, 특히 'and' 앞의 쉼표 사용 오류가 두드러진다. CEFR B1-B2 수준에서 직접 인용문과 접속사의 병렬 구조가 난이도 조절에 효과적임을 확인했다.",
+   "rule": "CEFR B1-B2 수준의 내신 변형문제에서는 직접 인용문(예: \"Is this the right thing to do?\")의 구두점(쉼표, 대문자)을 오류로 제시하고, 접속사 'and' 앞의 쉼표(Oxford comma) 사용 여부를 오류로 포함하여 문법·의미적 일관성을 평가하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T13:17:19.501Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거 시제 동사(needs→need)와 목적어 수 일치 오류, 수동태 미사용 오류, 복합명사/형용사 오류(extra hardwork→extra hard, aswell→as well)가 빈번하게 관찰된다.",
    "rule": "주어의 수에 맞춰 동사의 단수/복수형을 정확히 사용하고, 수동태가 필요한 문맥(be controlled 등)에서는 능동태 대신 수동태를 적용하도록 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T19:39:05.124Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'Third'와 'Finally'가 접속사 역할을 하며, 문장 시작 시 대문자 사용과 함께 콤마로 구분되는 패턴이 빈번하다. 또한 'our life'가 'our lives'로 복수화되어 맥락에 맞게 조정된 경우가 관찰된다.",
-   "rule": "원서 스타일 변형 문제에서 문장 시작 접속사('Third', 'Finally' 등)는 대문자로 쓰고 콤마로 구분하며, 'our life'가 문맥상 복수 개념(다양성·혁신 시대)으로 쓰일 경우 'our lives'로 변환하도록 출제하라.",
    "sample": [
     "old english",
     "university press",
