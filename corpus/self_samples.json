@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-25T17:03:12.287Z",
+ "updated": "2026-08-25T17:49:09.174Z",
  "samples": [
+  {
+   "ts": "2026-08-25T17:48:37.678Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 14 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'situations', 'discourse', 'coherent' / 12~16단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] We combine situations in discourse to create coherent texts, often implying links between them.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-25T16:58:12.439Z",
    "type": "안내문일치",
@@ -317,40 +336,6 @@
     ],
     "answer": 1,
     "explanation": "정답 배열은 ③-④-②-⑤-①-⑥. 흐름: ③ → ④ → ② → ⑤ → ① → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ④의 'insight'와 ⑤의 'insight'가 같은 단어라는 오해로 ⑥을 ② 뒤로 배치했다. 또한 ⑤의 'ingenious'와 'ingenuous'를 혼동해 ⑤를 ① 뒤로 배치했다. → 처방: 단어의 뜻과 품사를 정확히 구분해 순서대로 배치하기. 예를 들어 'insight'는 ④에, 'ingenious'는 ⑤에 속한다는 점을 기억하기.\n③ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ④의 'incredible'가 'astonishing'과 같은 뜻이라는 오해로 ④를 ③ 뒤로 배치했다. 또한 ⑥의 'jewel'과 'gem'이 같은 범주라는 착각으로 ⑥을 ② 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 같은 범주에 속하는지 확인하기. 예를 들어 'jewel'과 'gem'은 같은 뜻이지만 예시가 다르므로 분리해야 함을 기억하기.\n④ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ②의 'incredulous'가 'skeptical'과 같은 뜻이라는 오해로 ②를 ④ 뒤로 배치했다. 또한 ⑤의 'it's'가 'it is' 또는 'it has'의 줄임말이라는 점을 무시하고 ⑤를 ① 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 문법적 특징(예: it's 의 의미)을 고려해 순서대로 배치하기.\n⑤ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ④의 'insight'와 ⑤의 'insight'를 같은 단어로 오해해 ⑤를 ① 뒤로 배치했다. 또한 ⑥의 'jewel'과 'gem'을 같은 범주로 착각해 ⑥을 ② 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 같은 범주에 속하는지 확인하기. 예를 들어 'jewel'과 'gem'은 같은 뜻이지만 예시가 다르므로 분리해야 함을 기억하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T08:00:42.341Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Part II Contextual Analysis I . Explicit Cues Question No.1 Synonyms: Choose the correct answer : 1- The detectives were deluded by all the false evidence . They were completely deceived and they arrested the wrong person. Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony. Excruciating means _____________ a) painful. b) wonderful c) hurtful 3-Inveterate gamblers are habitual customers at the race track betting widows. Inveterate means ____________ a) ancient b) regular c) casual 4- Our plane tickets were voided when the airline ticket agent declared that the airport was closed . Therefore , all reservations were cancelled . voided means ___________ a) reserved b) stolen c ) not valid 5-Although the insurrection began in the rural areas , the rebellion quickly spread throughout the cities . Insurrection means _________ a) elections b) revolt c) journey.\n\n─────────\n[요약문] Detectives were misled by fabricated evidence, leading to incorrect arrests, though (A) deception and (B) consequences were severe.",
-    "choices": [
-     "(A) evidence … (B) pain",
-     "(A) fabricated … (B) relief",
-     "(A) deception … (B) consequences",
-     "(A) fabricated … (B) innocence",
-     "(A) fabrication … (B) arrests"
-    ],
-    "answer": 3,
-    "explanation": "(A) deception / (B) consequences 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘evidence’를 ‘증거’가 아닌 ‘고통’으로 오해했으며, ‘pain’이 ‘relief’와 대조되는 뜻임을 몰라 ‘(A) evidence’와 ‘(B) pain’을 잘못 짝지음. 지문에서 ‘false evidence’가 ‘deceived’를 유도했음을 놓침. → 처방: 단어의 뜻을 정확히 기억하고, 문맥에서 ‘evidence’가 ‘증거’임을 확인한 뒤, ‘pain’과 ‘relief’를 ‘고통’과 ‘안도’로 구분해 짝짓기.\n② 진단: ‘fabricated’를 ‘만들어진’으로, ‘relief’를 ‘안도’가 아닌 ‘구제’로 오해해 ‘(A) fabricated’와 ‘(B) relief’를 잘못 짝지음. 지문에서 ‘fabricated evidence’가 ‘deceived’를 낳았음을 놓침. → 처방: ‘fabricated’는 ‘거짓된’, ‘relief’는 ‘고통 완화’임을 정확히 기억하고, 문맥에 맞게 짝짓기.\n④ 진단: ‘fabricated’를 ‘만들어진’으로, ‘innocence’를 ‘무죄’가 아닌 ‘결과’로 오해해 ‘(A) fabricated’와 ‘(B) innocence’를 잘못 짝지음. 지문에서 ‘fabricated evidence’가 ‘incorrect arrests’를 낳았음을 놓침. → 처방: ‘innocence’는 ‘무죄’임을 기억하고, 문맥에서 ‘incorrect arrests’가 ‘결과’임을 확인해 짝짓기.\n⑤ 진단: ‘fabrication’을 ‘거짓’으로, ‘arrests’를 ‘체포’가 아닌 ‘결과’로 오해해 ‘(A) fabrication’와 ‘(B) arrests’를 잘못 짝지음. 지문에서 ‘fabrication’이 ‘incorrect arrests’를 낳았음을 놓침. → 처방: ‘arrests’는 ‘체포’임을 기억하고, 문맥에서 ‘incorrect’라는 말이 ‘결과’임을 확인해 짝짓기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]

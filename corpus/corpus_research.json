@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T17:03:12.283Z",
+ "updated": "2026-08-25T17:49:09.171Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T17:48:40.503Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'명사 + 명사' 또는 '형용사 + 명사' 구문에서 관사(an/the/a) 생략 오류가 빈번하며, 특히 'illusion'→'an illusion', 'placebo'→'a placebo'와 같이 가산명사 앞에 관사가 필수적인 경우가 많다. 또한 'decease'는 동사/명사 모두로 쓰이나, 'disease'가 명사로 정착된 경우가 많아 혼동 오류가 발생한다.",
+   "rule": "'가산명사(특히 단수형)'가 문장에 등장할 경우, 반드시 관사(a/an/the)를 명사 앞에 첨가하도록 문항을 설계하라. 예: 'I need ___ advice' → 'I need __ advice' (정답: 'the' 또는 'some' 등).",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T17:02:37.387Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "명사 단수/복수 오류와 문맥적 어색함을 동시에 잡는 패턴이 빈번하며, 특히 'there is/are' 구문과 'new'+명사의 수 일치가 핵심이다.",
    "rule": "CEFR B1 수준 내신 문항에서 'there is/are' 구문과 'new + (단/복)명사' 조합을 활용하여, 수 일치 오류와 문맥적 어색함을 동시에 평가하는 문장을 출제하라. 예: 'There is a new book on the table, but why are you looking for new books?'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T23:36:55.408Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'focus in'은 'focus on'으로, 'runs'는 주어가 복수일 때 'run'으로, 'lose'는 3인칭 단수일 때 'loses'로 교정되는 패턴이 빈번하다. 또한 접속사 오류(therefore → and)나 전치사 오류(in guard → on guard)도 자주 발생한다.",
-   "rule": "주어가 3인칭 단수(he/she/it)일 때 동사는 '-s'형으로, 복수일 때는 원형 동사로 통일하고, 전치사·접속사 오류(예: 'in guard' → 'on guard', 'therefore' → 'and')를 점검하여 문맥에 맞는 올바른 연결어를 사용한다.",
    "sample": [
     "old english",
     "university press",
