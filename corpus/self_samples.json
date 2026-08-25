@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-25T09:59:59.714Z",
+ "updated": "2026-08-25T10:53:26.051Z",
  "samples": [
+  {
+   "ts": "2026-08-25T10:52:27.233Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": -0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "구성은 두 개 이상이어야 하지만 통사적 범주가 달라도 문법적 완전성에 영향을 주지 않는다",
+     "문법적 완전성을 갖추려면 구성 요소가 두 개 이상이어야 하며 통사적 범주가 동일해야 한다",
+     "모든 구는 통사적 범주가 같아야만 문법적으로 완전하다고 할 수 있다",
+     "구는 통사적 범주가 같아야만 문법적으로 완전하다고 볼 수 있다",
+     "구성 요소는 두 개 이상이어야 하고, 통사적 범주가 동일할 때 문법적 완전성이 확보된다"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'A phrase must consist of at least two words and coordinate elements must belong to the same syntactic category.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: ‘두 개 이상’이라는 조건만 강조하고 ‘통사적 범주 동일’ 조건을 무시한 채 문법적 완전성을 판단했다고 볼 수 있다. 지문에서 [25]·[26]·[28]은 ‘NP 와 NP’, ‘PP 와 PP’, ‘AP 와 AP’로 범주가 같아야만 문법적 완전성이 인정된다고 명시했다. → 처방: ‘구는 통사적 범주가 같아야 문법적으로 완전하다’는 조건을 꼭 기억하고, 선지를 볼 때 범주 일치를 먼저 확인하라.\n③ 진단: ‘모든 구’가 통사적 범주가 같아야만 문법적 완전하다고 과장해서 해석했다. 지문은 ‘두 개 이상의 구가 통사적 범주가 같아야 한다’는 조건을 제시했을 뿐, ‘모든’이란 말은 없다. → 처방: ‘모든’이란 말이 없으면 그 선지는 오답일 가능성이 높다는 점을하라.\n④ 진단: ‘구는 통사적 범주가 같아야만 문법적으로 완전하다고 볼 수 있다’라는 문장은 ‘~만’(유일한 조건)으로 해석해 ‘두 개 이상’이라는 조건을 배제했다. 지문은 ‘두 개 이상 + 범주 동일’이 모두 필요하다고 했다. → 처방: ‘~만’이라는 말이 나오면 조건이 ‘유일’하다는 뜻이 아니라 ‘필수’ 조건 중 하나일 수 있음을 확인하라.\n⑤ 진단: ‘구는 통사적 범주가 같아야만 문법적으로 완전하다고 볼 수 있다’라는 문장을 ‘구는 통사적 범주가 같아야 한다’로만 축약해 ‘두 개 이상’이라는 조건을 누락했다. 지문은 ‘두 개 이상 + 범주 동일’이 모두 필요하다고 했다. → 처방: ‘~해야만’과 ‘~해야 한다’를 혼동하지 말고, 문장에 있는 모든 조건을 빠짐없이 확인하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A phrase must consist of at least two words and coordinate elements must belong to the same syntactic category.]"
+   }
+  },
   {
    "ts": "2026-08-25T09:59:25.249Z",
    "type": "배열영작",
@@ -317,39 +352,6 @@
     ],
     "answer": 2,
     "explanation": "빈칸에는 'how they collaborate'가 들어가 글의 논지를 완성한다 (본문 'how they work together'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'men-women relationships'의 변화가 'how they work together'(협력 방식)에서 가장 크게 일어났다고 설명하는데, 'whether they argue'(다투는지 여부)는 관계 변화의 한 측면일 뿐 주된 변화가 아님을 오독한 듯함. 지문은 'how they work together'를 강조했으므로 'whether'는 범위가 너무 좁음. → 처방: 문장의 핵심은 '관계의 변화가 일어난 분야'임을 기억하고, 빈칸에는 '어떻게(how)'가 들어가는 선지를 먼저 확인하기.\n③ 진단: 지문은 'men-women relationships'의 변화가 'how they work together'(직장·일상에서의 협력)에서 일어났다고 설명하는데, 'how they sleep'(어떻게 자는가)는 이 맥락과 전혀 관련이 없음을 오독했음. 학생은 'sleep'이라는 친숙한 단어에 이끌려 무관한 선지를 선택한 듯함. → 처방: 지문의 주제어('relationships', 'work together')와 선지의 키워드('how', 'what')를 매칭해 빈칸의 의미를 유추하기.\n④ 진단: 지문은 'men-women relationships'의 변화가 'how they work together'에서 일어났다고 설명하는데, 'what they earn'(얼마를 버는지)는 경제적 측면으로, 관계가 변한 '방법'과는 거리가 있음을 오독했음. 학생은 'earn'이 관계와 연관될 수 있다고 착각한 듯함. → 처방: 빈칸 앞뒤 문장과 지문의 전체 흐름을 살피며, '관계의 변화'가 일어난 '방법'을 묻는 선지를 찾기.\n⑤ 진단: 지문은 'men-women relationships'의 변화가 'how they work together'에서 일어났다고 설명하는데, 'what they wear'(어떻게 입는지)는 외모·패션에 초점을 맞췄을 뿐, 관계 변화의 핵심은 아님을 오독했음. 학생은 'wear'이 관계와 연관될 수 있다고 생각한 듯함. → 처방: 지문의 주제와 빈칸의 문맥을 정확히 이해하기 위해, '관계'라는 단어와 어울리는 동사·부사(예: 'how', 'collaborate')를 우선 고려하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T01:53:59.200Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 1/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "If we take the traditional definition of a clause as a predication structure (more precisely, a structure containing a predicate which has a subject, and which may or may not also contain one or more complements and adjuncts), it follows that since there are two predicates (knows and smokes) in (10), there are correspondingly two clauses – the smokes clause on the one hand, and the knows clause on the other. The smokes clause comprises the subject John and the predicate smokes; the knows clause comprises the subject Mary, the predicate knows and the complement John smokes. So, the complement of knows here is itself a clause – namely the clause John smokes. More precisely, the smokes clause is a complement clause (because it serves as the complement of knows), while the knows clause is the main clause (or principal clause or independent clause or root clause). [ ]",
-    "choices": [
-     "The main clause in sentence (10) is 'Mary knows John', where 'knows' takes the complement clause 'John smokes'.",
-     "Sentence (10) Mary knows John is grammatically incorrect because 'knows' should not be followed by a noun without an article.",
-     "The overall sentence (10) Mary knows John is a single clause because 'knows' does not take a complement.",
-     "The sentence (10) Mary knows John contains two main clauses because 'knows' and 'smokes' are both predicates.",
-     "In sentence (10), the clause 'Mary knows John' is a complement clause because it modifies the subject 'Mary'."
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 원문 'The overall sentence (10) Mary knows John'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: 지문에서 'John smokes'가 knows 의 보어로 쓰인 보문장(complement clause)임을 보지 못하고, 'knows' 다음에 관사가 없는 명사 'John'이 와서 문법적으로 틀렸다고 오해한 듯함. → 처방: 보문장이 보어로 쓰일 수 있는지 확인하고, 보어 자리에 오는 절의 구조를 정확히 분석하는 연습을 하세요. 예를 들어 'I know that he is kind'와 같은 예문을 보며 보문장의 역할을 익히세요.\n③ 진단: 지문에서 'knows'가 보문장(complement clause) 'John smokes'를 보어로 취한다는 사실을 무시하고, 'knows'가 보어를 취하지 않는다고 잘못 이해한 듯함. → 처방: 보어의 개념과 보문장의 역할을 다시 공부하고, 'knows'와 같은 동사가 보어를 취할 수 있는지 확인하는 연습을 하세요. 'She thinks he is smart' 같은 문장을 보며 보어의 종류를 구분해 보세요.\n④ 진단: 지문에서 'smokes'가 보문장이 아니라 주절의 술어(predicate)임을 보지 못하고, 두 술어 'knows'와 'smokes'가 모두 주절이라고 오해한 듯함. → 처방: 주절과 보문장을 구분하는 기준을 다시 공부하고, 'She said he left'와 같은 문장에서 주절과 보문장을 찾아내는 연습을 반복하세요.\n⑤ 진단: 지문에서 'Mary knows John'이 보문장이 아니라 주절임을 보지 못하고, 'Mary knows John'이 보문장이라고 잘못 이해한 듯함. 또한 보문장이 주어('Mary')를 수식한다는 오해도 보임. → 처방: 보문장의 역할과 위치를 정확히 이해하고, 'I believe he is honest'와 같은 문장에서 보문장이 어디에 위치하는지 확인하는 연습을 하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
