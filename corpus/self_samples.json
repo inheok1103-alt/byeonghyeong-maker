@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-25T08:02:02.092Z",
+ "updated": "2026-08-25T09:07:00.273Z",
  "samples": [
+  {
+   "ts": "2026-08-25T09:02:08.276Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "혼동어와 동음이의어의 의미를 정확히 구분하는 것이 언어의 명료성을 높이는 핵심 방법임을 강조한다",
+     "혼동어와 동음이의어는 발음과 철자가 다르더라도 의미가 동일하다는 통념을 비판한다",
+     "혼동어와 동음이의어의 구분이 언어 사용의 오류를 줄이는 데 필수적임을 주장한다",
+     "모든 영어 학습자에게 혼동어와 동음이의어의 구분이 필수적이라는 과장된 주장을 비판한다",
+     "혼동어와 동음이의어는 문맥에 따라 오해를 일으킬 수 있으므로 언제나 명확히 구분해야 한다는 지나친 일반화를 지적한다"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The core argument highlights the importance of distinguishing between confusing words and homonyms in English.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘발음이 같아도 철자가 다르면 의미가 같다는 통념’을 비판한다는 선지의 내용이 지문에서 ‘의미가 같은 경우’를 언급하지 않음을 오독했음. 지문은 ‘의미가 다른 경우’를 예시로 들며 혼동어의 위험성을 강조함. → 처방: 혼동어와 동음이의어는 ‘발음은 같지만 의미가 다른 경우’를 집중해서 공부하라.\n③ 진단: ‘구분이 언어 사용의 오류를 줄이는 데 필수적’이라는 표현이 지나치게 ‘필수적’이라는 단어를 강조한 오독. 지문은 ‘명료성을 높이는 핵심 방법’으로 설명하며 ‘필수적’이라는 강한 표현은 없음. → 처방: ‘핵심 방법’이라는 표현에 집중해, 혼동어의 의미를 정확히 구분해야 함을 기억하라.\n④ 진단: ‘모든 영어 학습자에게 필수적’이라는 과장된 주장이 지문에 없다고 오독했음. 지문은 혼동어의 중요성을 강조하지만 ‘모든 학습자’에 대한 과장은 없음. → 처방: 지문에 나온 ‘명료성’을 높이는 데 혼동어 구분이 중요하다는 점을 떠올리라.\n⑤ 진단: ‘언제나 명확히 구분해야 한다’는 지나친 일반화를 지문이 주장하지 않음을 오독했음. 지문은 ‘명료성을 높이는 핵심 방법’으로 혼동어를 구분할 필요가 있음을 강조할 뿐, ‘언제나’라는 절대적 표현은 없음. → 처방: ‘명료성을 높이는 데 도움이 된다’는 관점에서 혼동어를 공부하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The core argument highlights the importance of distinguishing between confusing words and homonyms in English.]"
+   }
+  },
+  {
+   "ts": "2026-08-25T09:02:33.082Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.11,
+    "D": -0.33,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.11)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① its possessive pronoun Example: The cat hurt its paw.\n② incredulous skeptical Example: Citizens are incredulous about the reason for the increase in the price of gas.\n③ Confusing Words and Homonyms 35 Inc.\n④ abbreviation for incorporated ink ﬂuid in pens incite to prompt to action insight understanding, comprehension incredible astonishing Example: Her gymnastic moves were incredible.\n⑤ ingenious clever ingenuous na¨ıve or simple innocence to be without guilt innocents people who are without guilt insure (see assure) irregardless no such word exists regardless in spite of, without regard isle (see aisle) it’s contraction for it is or it has Example: It’s for a good cause.\n⑥ jewel gem joule in physics, a unit of work or energy karat (see carat) kernel (see colonel) key (see cay) knead work with bread dough kneed hit with one’s knee need to require knew past tense of know, to have understood new opposite of old",
+    "choices": [
+     "③-④-②-⑤-①-⑥",
+     "③-④-⑥-②-⑤-①",
+     "④-③-②-⑤-①-⑥",
+     "③-②-④-⑤-①-⑥",
+     "③-④-②-①-⑤-⑥"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ③-④-②-⑤-①-⑥. 흐름: ③ → ④ → ② → ⑤ → ① → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ④의 'insight'와 ⑤의 'insight'가 같은 단어라는 오해로 ⑥을 ② 뒤로 배치했다. 또한 ⑤의 'ingenious'와 'ingenuous'를 혼동해 ⑤를 ① 뒤로 배치했다. → 처방: 단어의 뜻과 품사를 정확히 구분해 순서대로 배치하기. 예를 들어 'insight'는 ④에, 'ingenious'는 ⑤에 속한다는 점을 기억하기.\n③ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ④의 'incredible'가 'astonishing'과 같은 뜻이라는 오해로 ④를 ③ 뒤로 배치했다. 또한 ⑥의 'jewel'과 'gem'이 같은 범주라는 착각으로 ⑥을 ② 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 같은 범주에 속하는지 확인하기. 예를 들어 'jewel'과 'gem'은 같은 뜻이지만 예시가 다르므로 분리해야 함을 기억하기.\n④ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ②의 'incredulous'가 'skeptical'과 같은 뜻이라는 오해로 ②를 ④ 뒤로 배치했다. 또한 ⑤의 'it's'가 'it is' 또는 'it has'의 줄임말이라는 점을 무시하고 ⑤를 ① 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 문법적 특징(예: it's 의 의미)을 고려해 순서대로 배치하기.\n⑤ 진단: ③이 먼저 나와야 한다는 점은 맞지만, ④의 'insight'와 ⑤의 'insight'를 같은 단어로 오해해 ⑤를 ① 뒤로 배치했다. 또한 ⑥의 'jewel'과 'gem'을 같은 범주로 착각해 ⑥을 ② 뒤로 옮겼다. → 처방: 단어의 뜻을 정확히 파악하고, 같은 범주에 속하는지 확인하기. 예를 들어 'jewel'과 'gem'은 같은 뜻이지만 예시가 다르므로 분리해야 함을 기억하기.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-25T08:00:42.341Z",
    "type": "요약문AB",
@@ -297,75 +366,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Clauses are predication structures with subject-predicate relationships.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Clauses are predication structures with subject-predicate relationships.**]\n[오답 진단·처방]\n① 진단: ‘predication structure’가 ‘주어-서술어 구조’를 뜻한다는 점은 맞지만, 지문은 ‘clause’를 ‘predication structure’로 정의하며 ‘clause’가 ‘complement’나 ‘adjunct’를 포함할 수 있음을 설명하고 있으므로, ‘clause’를 ‘단순한 주어-서술어 구조’로만 한정해 오해한 듯함. → 처방: ‘clause’의 정의와 역할을 다시 확인하고, 지문에서 ‘complement clause’가 ‘clause’의 한 종류임을 기억할 것.\n② 진단: ‘simple sentence forms’가 ‘단순한 문장 형태’를 뜻한다는 점은 맞지만, 지문은 ‘clause’의 복잡한 구조(예: complement clause)를 설명하고 있으므로, ‘clause’를 ‘단순한 문장’으로만 오해한 듯함. → 처방: ‘clause’가 ‘단순한 문장’이 아니라 ‘predication structure’라는 점을 강조하고, 지문에서 ‘complement clause’가 포함된 예를 다시 읽어볼 것.\n③ 진단: ‘predication requires clause complements’는 지문에서 ‘knows’의 complement 가 ‘clause’임을 설명하지만, 지문은 ‘predication’이 ‘clause’를 구성하는 기본 요소임을 강조하고 있으므로, ‘complement’이 필수라는 오해를 한 듯함. → 처방: ‘predication’이 ‘clause’를 이루는 기본 요소임을 이해하고, ‘complement’이 항상 필요한 것은 아님을 기억할 것.\n④ 진단: ‘predication needs two clauses’는 지문에서 ‘knows’와 ‘smokes’가 각각 ‘clause’를 이룬다고 설명하지만, 이는 ‘clause’의 정의와 구조를 설명하기 위한 예시일 뿐, ‘predication’이 반드시 ‘두 clause’를 필요로 하는 것은 아님을 오해한 듯함. → 처방: ‘clause’의 정의와 예시를 다시 확인하고, ‘predication’이 ‘clause’를 이루는 기본 요소임을 기억할 것."
-   }
-  },
-  {
-   "ts": "2026-08-24T23:39:06.502Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버교정: 솔버 3/3 다수결 4번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "The crucial fact (A) [is / are] that an English speaker might be moved to make a similar assessment of all of the other Germanic languages, for pretty much the same reasons. For example, the Dutch version of the sentence is Zei zij tegen mijn dochter dat mijn vader alleen gekomen is en zich beter voelt? in which the words occur in the same order as in the German. The question is why, indeed, Said she to my daughter that my father alone (B) [came / come is] and himself better (C) [feels / felt]? is so silly in English alone. The Germanic languages, of course, have their differences, and not all of them parallel the German one quite as closely as Dutch does. To a Norwegian, for instance, a sentence with the words in the German order of Said she to my daughter that my father alone come is and himself better feels? would seem a little off, but still highly familiar. The Norwegian version is:",
-    "choices": [
-     "(A) is - (B) come is - (C) felt",
-     "(A) is - (B) come is - (C) feels",
-     "(A) are - (B) came - (C) feels",
-     "(A) is - (B) came - (C) feels",
-     "(A) are - (B) came - (C) felt"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) is - (B) come is - (C) feels. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘crucial fact’는 단수 명사이므로 ‘are’가 아니라 ‘is’를 써야 하는데, 학생은 복수 동사 ‘are’를 선택했다. 또한 ‘came’는 과거 시제 동사로 문맥상 맞지만, 학생은 ‘come is’를 써서 현재 시제와 조동사 ‘is’를 혼동했다. ‘felt’는 과거 시제이지만 문맥상 현재 시제 ‘feels’가 맞으므로 오류다. → 처방: ‘crucial fact’는 단수 주어이므로 ‘is’를 쓰고, 과거 시제 동사 ‘came’를 써야 한다. 시제와 조동사 사용 규칙을 다시 공부하고, 문맥에 맞는 동사를 고르도록 한다.\n② 진단: ‘crucial fact’는 단수 명사이므로 ‘is’를 써야 하는데, 학생은 ‘is’를 썼지만, ‘come is’는 조동사 ‘is’와 현재 시제 동사 ‘come’을 잘못 조합한 것이다. 문맥상 과거 시제 ‘came’가 필요함에도 현재 시제를 썼다. → 처방: 조동사 없이 과거 시제 동사를 쓰는 경우를 연습하고, 문장의 시제를 문맥에 맞게 정확히 판단하도록 한다. ‘come is’는 조동사 없이 쓸 수 없으므로 ‘came’를 써야 한다.\n③ 진단: ‘crucial fact’는 단수 명사이므로 ‘are’가 아니라 ‘is’를 써야 하는데, 학생은 복수 동사 ‘are’를 선택했다. 또한 ‘felt’는 과거 시제이지만 문맥상 현재 시제 ‘feels’가 맞으므로 오류다. 학생은 시제와 동사의 수 일치를 혼동했다. → 처방: 주어와 동사의 수 일치를 다시 공부하고, 문맥에 맞는 시제를 선택하도록 한다. ‘crucial fact’는 단수이므로 ‘is’를 써야 한다.\n⑤ 진단: ‘crucial fact’는 단수 명사이므로 ‘are’가 아니라 ‘is’를 써야 하는데, 학생은 복수 동사 ‘are’를 선택했다. 또한 ‘felt’는 과거 시제이지만 문맥상 현재 시제 ‘feels’가 맞으므로 오류다. 학생은 시제와 동사의 수 일치를 모두 혼동했다. → 처방: 주어와 동사의 수 일치와 시제를 따로따로 공부하고, 문맥에 맞는 동사를 선택하도록 한다. ‘crucial fact’는 단수이므로 ‘is’를, 문맥상 현재 시제 ‘feels’를 써야 한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T23:39:38.384Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 2/3 다수결 3번(기록 2번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.22,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.22)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "The crucial fact is that an ⓐ<u>English</u> speaker might be moved to make a similar assessment of all of the other Germanic languages, for pretty much the same reasons. For example, the Dutch version of the sentence is Zei zij tegen mijn dochter dat mijn vader alleen gekomen is en zich beter voelt? in which the words occur in the same order as in the ⓑ<u>German</u>. The question is why, indeed, Said she to my daughter that my father alone come is and himself better feels? is so silly in English alone. The ⓒ<u>Germanic</u> ⓓ<u>languages</u>, of course, have their differences, and not all of them parallel the German one quite as closely as Dutch does. To a Norwegian, for instance, a sentence with the words in the German order of Said she to my daughter that my father alone come is and himself better feels? would seem a little off, but still highly familiar. The Norwegian ⓔ<u>version</u> is:",
-    "choices": [
-     "english: Spinning or rotary motion given to a ball around the vertical axis, as in billia",
-     "german: By oneself, solitary.",
-     "germanic: Of or containing germanium.",
-     "languages: A body of words, and set of methods of combining them (called a grammar), unders",
-     "version: A specific form or variation of something."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓑ의 풀이는 'alone'의 정의이다. 'german'의 올바른 풀이: A near relative.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘english’의 오독은 ‘회전 운동’을 뜻하는 ‘english’(스포츠 용어)와 ‘영어’를 뜻하는 ‘English’를 혼동한 것으로 보인다. 지문에서 ‘English’는 언어명을 가리키며, 선지①의 뜻은 전혀 관련이 없다. → 처방: ‘english’를 ‘영어’라는 언어명으로만 떠올리고, 지문에서 그 단어가 쓰인 맥락을 확인해 단어의 뜻을 정확히 짚어라.\n② 진단: ‘german’의 오독은 ‘혼자’라는 뜻의 ‘by oneself’를 ‘german’으로 오해한 것이다. 지문에서 ‘german’은 언어명을 가리키며, 선지②의 뜻은 ‘german’이라는 단어와 전혀 다르다. → 처방: ‘german’을 ‘독일어’라는 언어명으로만 생각하고, 지문에서 그 단어가 쓰인 문맥을 다시 한 번 확인해 뜻을 정확히 짚어라.\n④ 진단: ‘languages’의 오독은 ‘언어’를 뜻하는 ‘languages’를 ‘문법’이라는 뜻으로 오해한 것이다. 지문에서 ‘languages’는 ‘언어’를 가리키며, 선지④는 ‘언어’를 설명하는 부분과 일부 일치하지만 ‘문법’이라는 뜻은 포함하지 않는다. → 처방: ‘languages’를 ‘언어’라는 뜻으로만 생각하고, 지문에서 그 단어가 쓰인 문장을 다시 읽어 뜻을 정확히 짚어라.\n⑤ 진단: ‘version’의 오독은 ‘형태’를 뜻하는 ‘version’을 ‘언어’를 뜻하는 ‘languages’와 혼동한 것이다. 지문에서 ‘version’은 ‘형태’를 가리키며, 선지⑤는 ‘형태’를 설명하는 부분과 일치한다. → 처방: ‘version’을 ‘형태’라는 뜻으로만 생각하고, 지문에서 그 단어가 쓰인 문장을 다시 읽어 뜻을 정확히 짚어라."
    }
   }
  ]
