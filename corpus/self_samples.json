@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-25T19:02:01.922Z",
+ "updated": "2026-08-25T19:53:02.641Z",
  "samples": [
+  {
+   "ts": "2026-08-25T19:47:43.736Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 5번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Language Patterns Reveal Subtle Human Traits",
+     "Words Exactly Mirror People’s True Actions",
+     "Personality Dictates How Language Patterns Form",
+     "Collocations Completely Define Human Nature",
+     "Language Patterns Often Reflect Human Traits"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Collocations reveal nuanced human traits through language patterns.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Collocations reveal nuanced human traits through language patterns.**]\n[오답 진단·처방]\n① 진단: ‘subtle human traits’를 오독해 ‘언어 패턴’이 ‘미묘한 성격’을 드러낸다고 착각했는데, 지문은 ‘collocations’가 ‘사람의 성격’을 반영한다고만 말하고 ‘subtle’이라는 표현은 없다. → 처방: ‘subtle’을 빼고 ‘언어 패턴이 사람의 성격(특징)을 반영한다’는 핵심만 남기기.\n② 진단: ‘mirror’를 ‘거울처럼 정확히’로 오해해 ‘단어들이 사람의 행동을 그대로 보여준다’고 생각했는데, 지문은 ‘reflect’(반영하다)라는 softer 한 표현을 쓴다. → 처방: ‘mirror’를 ‘reflect’로 바꿔 ‘완전히 반영한다’는 과장된 표현을 줄이기.\n③ 진단: ‘Personality Dictates’를 골랐는데, 지문은 ‘collocations’가 성격에 영향을 준다는 것이지 성격이 언어 패턴을 ‘결정짓는다’는 강한 인과관계를 말하지 않는다. → 처방: ‘dictates’를 ‘influence’나 ‘reflect’로 바꾸어 인과관계의 강도를 낮추기.\n④ 진단: ‘Collocations Completely Define’을 선택했는데, ‘completely’는 지문에 없으며 ‘정의한다’는 말은 너무 과장된 표현이다. 지문은 ‘reflect’(반영)만 사용했다. → 처방: ‘define’을 ‘reflect’로 바꾸고 ‘completely’를 빼어 과장된 표현 줄이기."
+   }
+  },
+  {
+   "ts": "2026-08-25T19:52:05.818Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "제시된 단어들로 관용구를 형성하려고",
+     "제시된 단어들로 새로운 단어를 만들려고",
+     "제시된 단어들로 관용구 의미를 분석하려고",
+     "제시된 단어들로 모든 문장을 해석하려고",
+     "제시된 단어들로 관용구를 반복해서 외우려고"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'To identify the core argument of the given text, we focus on the primary instructional purpose: **matching and forming collocations** to understand their meanings and usage. The key action is to **form collocations** from given words to match definitions and complete a conversation.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘제시된 단어들로 새로운 단어를 만들려고’에서 ‘새로운 단어’를 만드는 활동으로 오해했는데, 지문은 ‘관용구(collocations)’를 형성하라고 지시하고 있음. → 처방: ‘관용구’를 ‘새로운 단어’로 착각하지 말고, 지문에 나온 ‘collocations’를 정확히 이해한 뒤 풀기.\n③ 진단: ‘관용구 의미를 분석하려고’에서 ‘분석’을 ‘형성’으로 혼동했는데, 지문은 ‘형성(match)’과 ‘매치’를 요구하고 있음. → 처방: ‘match’를 ‘형성’으로 이해하고, 지시문을 꼼꼼히 읽어 ‘형성’과 ‘분석’의 차이를 분명히 하기.\n④ 진단: ‘제시된 단어들로 모든 문장을 해석하려고’에서 ‘해석’을 ‘형성’으로 오해했는데, 지문은 ‘관용구를 형성’하라고 지시하고 있음. → 처방: ‘해석’이 아니라 ‘형성’을 요구한다는 점을 기억하고, 지시문을 다시 한 번 읽어 오해 방지하기.\n⑤ 진단: ‘제시된 단어들로 관용구를 반복해서 외우려고’에서 ‘외우기’를 ‘형성’으로 오해했는데, 지문은 ‘형성’과 ‘매치’를 요구하고 있음. → 처방: ‘외우기’가 아니라 ‘형성’을 목표로 한다는 점을 깨닫고, 지시문을 다시 읽어 목표를 명확히 하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To identify the core argument of the given text, we focus on the primary instructional purpose: **matching and forming collocations** to understand their meanings and usage. The key action is to **form collocations** from given words to match definitions and complete a conversation.]"
+   }
+  },
   {
    "ts": "2026-08-25T19:00:46.790Z",
    "type": "영영풀이일치",
@@ -282,58 +351,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'A phrase must consist of at least two words and coordinate elements must belong to the same syntactic category.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: ‘두 개 이상’이라는 조건만 강조하고 ‘통사적 범주 동일’ 조건을 무시한 채 문법적 완전성을 판단했다고 볼 수 있다. 지문에서 [25]·[26]·[28]은 ‘NP 와 NP’, ‘PP 와 PP’, ‘AP 와 AP’로 범주가 같아야만 문법적 완전성이 인정된다고 명시했다. → 처방: ‘구는 통사적 범주가 같아야 문법적으로 완전하다’는 조건을 꼭 기억하고, 선지를 볼 때 범주 일치를 먼저 확인하라.\n③ 진단: ‘모든 구’가 통사적 범주가 같아야만 문법적 완전하다고 과장해서 해석했다. 지문은 ‘두 개 이상의 구가 통사적 범주가 같아야 한다’는 조건을 제시했을 뿐, ‘모든’이란 말은 없다. → 처방: ‘모든’이란 말이 없으면 그 선지는 오답일 가능성이 높다는 점을하라.\n④ 진단: ‘구는 통사적 범주가 같아야만 문법적으로 완전하다고 볼 수 있다’라는 문장은 ‘~만’(유일한 조건)으로 해석해 ‘두 개 이상’이라는 조건을 배제했다. 지문은 ‘두 개 이상 + 범주 동일’이 모두 필요하다고 했다. → 처방: ‘~만’이라는 말이 나오면 조건이 ‘유일’하다는 뜻이 아니라 ‘필수’ 조건 중 하나일 수 있음을 확인하라.\n⑤ 진단: ‘구는 통사적 범주가 같아야만 문법적으로 완전하다고 볼 수 있다’라는 문장을 ‘구는 통사적 범주가 같아야 한다’로만 축약해 ‘두 개 이상’이라는 조건을 누락했다. 지문은 ‘두 개 이상 + 범주 동일’이 모두 필요하다고 했다. → 처방: ‘~해야만’과 ‘~해야 한다’를 혼동하지 말고, 문장에 있는 모든 조건을 빠짐없이 확인하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A phrase must consist of at least two words and coordinate elements must belong to the same syntactic category.]"
-   }
-  },
-  {
-   "ts": "2026-08-25T09:59:25.249Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 아이는 기본 프라이머에서 읽는 법을 배웠습니다.\n주어진 단어: ( from / a / The / basic / child / read / primer / to / learned )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The child learned to read from a basic primer.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-25T09:02:08.276Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "혼동어와 동음이의어의 의미를 정확히 구분하는 것이 언어의 명료성을 높이는 핵심 방법임을 강조한다",
-     "혼동어와 동음이의어는 발음과 철자가 다르더라도 의미가 동일하다는 통념을 비판한다",
-     "혼동어와 동음이의어의 구분이 언어 사용의 오류를 줄이는 데 필수적임을 주장한다",
-     "모든 영어 학습자에게 혼동어와 동음이의어의 구분이 필수적이라는 과장된 주장을 비판한다",
-     "혼동어와 동음이의어는 문맥에 따라 오해를 일으킬 수 있으므로 언제나 명확히 구분해야 한다는 지나친 일반화를 지적한다"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The core argument highlights the importance of distinguishing between confusing words and homonyms in English.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘발음이 같아도 철자가 다르면 의미가 같다는 통념’을 비판한다는 선지의 내용이 지문에서 ‘의미가 같은 경우’를 언급하지 않음을 오독했음. 지문은 ‘의미가 다른 경우’를 예시로 들며 혼동어의 위험성을 강조함. → 처방: 혼동어와 동음이의어는 ‘발음은 같지만 의미가 다른 경우’를 집중해서 공부하라.\n③ 진단: ‘구분이 언어 사용의 오류를 줄이는 데 필수적’이라는 표현이 지나치게 ‘필수적’이라는 단어를 강조한 오독. 지문은 ‘명료성을 높이는 핵심 방법’으로 설명하며 ‘필수적’이라는 강한 표현은 없음. → 처방: ‘핵심 방법’이라는 표현에 집중해, 혼동어의 의미를 정확히 구분해야 함을 기억하라.\n④ 진단: ‘모든 영어 학습자에게 필수적’이라는 과장된 주장이 지문에 없다고 오독했음. 지문은 혼동어의 중요성을 강조하지만 ‘모든 학습자’에 대한 과장은 없음. → 처방: 지문에 나온 ‘명료성’을 높이는 데 혼동어 구분이 중요하다는 점을 떠올리라.\n⑤ 진단: ‘언제나 명확히 구분해야 한다’는 지나친 일반화를 지문이 주장하지 않음을 오독했음. 지문은 ‘명료성을 높이는 핵심 방법’으로 혼동어를 구분할 필요가 있음을 강조할 뿐, ‘언제나’라는 절대적 표현은 없음. → 처방: ‘명료성을 높이는 데 도움이 된다’는 관점에서 혼동어를 공부하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The core argument highlights the importance of distinguishing between confusing words and homonyms in English.]"
    }
   }
  ]
