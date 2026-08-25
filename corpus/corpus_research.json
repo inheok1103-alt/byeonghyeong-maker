@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-24T23:40:16.395Z",
+ "updated": "2026-08-25T01:59:18.423Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T01:56:57.085Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구(noun phrase)의 수식 구조에서 소유·소속 관계를 나타내는 'of' 구문 대신 동사적 구조(commitments men have to make)로 대체하여 문법적 정확성을 높이는 패턴이 빈번하다. 또한, 부정어(negation)의 중복 사용('can not be no')이 문법적으로 비정상적이며, 이를 'any'로 수정하는 오류 수정 패턴이 관찰된다.",
+   "rule": "'of + 명사 + ing' 구조는 소유·소속 관계를 명확히 하기 위해 'to + 동사'나 'that + 동사' 구조로 대체하여 문법적 명확성을 높이는 규칙을 적용하라. 예: 'the requirement of men going to army' → 'the commitments men have to make to go to the army'.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-24T23:39:50.211Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'의미적으로 복수 대상이 명확한 경우, 문법적 복수형 사용이 자연스럽다(예: needs→needs, somethings→things). 또한 문장 내 부가정보(삽입구)는 구두점(콤마)으로 분리하여 명확히 구분해야 한다.",
    "rule": "'의미적 복수 대상이 명시된 경우(예: needs, somethings)에는 문법적 복수형(needs, things)으로 통일하고, 문장 내 삽입구(예: 'in my view')는 콤마로 명확히 구분하여 오답을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T07:51:14.546Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'can grow up plentiful'는 'can grow plentiful'로 축약되어야 하며, 'get works'는 'get more work'로 관사/형용사/명사의 조합이 자연스러워야 한다. 또한 'controlled by'는 능동태가 아닌 수동태로 'being controlled by'로 수정되어야 한다.",
-   "rule": "'can + 동사 원형 + (형용사/부사)' 구조에서 'up'은 불필요한 경우가 많으므로 삭제하여 자연스러운 구문으로 만든다.",
    "sample": [
     "old english",
     "university press",

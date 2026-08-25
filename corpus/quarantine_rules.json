@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-24T23:40:16.393Z",
+ "updated": "2026-08-25T01:59:18.422Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 영어 문항의 지문은 완결된 문장으로 끝내야 하며, 선지는 문법적 역할(예: ‘complement’, ‘adverbial clause’)을 명시하여 오해 가능성을 제거하고 난이도를 일관되게 조절하라.",
+   "src": "자가학습:빈칸(어구)",
+   "score": 76,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-25T01:54:17.291Z"
+  },
+  {
+   "rule": "모든 문항은 지문의 핵심 개념(예: 'complex structure', 'complement clause', 'compound/complex 구분', 'connectors 미포함')을 정확히 반영해야 하며, 오답 선지는 지문의 논지와 무관하거나 오해를 초래하는 용어/개념을 배제하고, 정답 선지는 핵심 어휘를 명시적으로 포함해야 한다.",
+   "src": "자가학습:제목",
+   "score": 82,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-25T01:54:39.031Z"
+  },
   {
    "rule": "정답과 영영풀이, 원문이 모두 문맥과 정의상 일치하도록 영영풀이를 원문의 의미와 동일하게 재구성하고, 발문 조건은 정답과 직접 연관된 명확한 단서로만 설정하라.",
    "src": "자가학습:본문찾아쓰기",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-21T19:42:51.612Z"
-  },
-  {
-   "rule": "원문과 원지문의 핵심 개념(‘언제 어떤 경우에 어떤 형태가 사용되는지, 그 이유는 무엇인지’)을 발문과 정답에 직접 반영하여 예시(He gave Robert half his wages. v. He gave half his wages to Robert.)와 문맥적 일관성을 유지하라.",
-   "src": "자가학습:우리말해석",
-   "score": 63,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-21T19:43:21.614Z"
-  },
-  {
-   "rule": "모든 문항은 주제와 직접 연관된 핵심 개념을 '~에 대한' 또는 '~의 관점에서'와 같은 명확한 전치사구로 서술하여 문법적 정확성과 주제 일관성을 동시에 확보해야 한다.",
-   "src": "자가학습:주제",
-   "score": 77,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-21T18:58:08.652Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-24T23:40:16.399Z",
+ "updated": "2026-08-25T01:59:18.427Z",
  "samples": [
+  {
+   "ts": "2026-08-25T01:53:59.200Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답-오답 근접(71%) — 복수정답 재검 권고 · 솔버 1/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "If we take the traditional definition of a clause as a predication structure (more precisely, a structure containing a predicate which has a subject, and which may or may not also contain one or more complements and adjuncts), it follows that since there are two predicates (knows and smokes) in (10), there are correspondingly two clauses – the smokes clause on the one hand, and the knows clause on the other. The smokes clause comprises the subject John and the predicate smokes; the knows clause comprises the subject Mary, the predicate knows and the complement John smokes. So, the complement of knows here is itself a clause – namely the clause John smokes. More precisely, the smokes clause is a complement clause (because it serves as the complement of knows), while the knows clause is the main clause (or principal clause or independent clause or root clause). [ ]",
+    "choices": [
+     "The main clause in sentence (10) is 'Mary knows John', where 'knows' takes the complement clause 'John smokes'.",
+     "Sentence (10) Mary knows John is grammatically incorrect because 'knows' should not be followed by a noun without an article.",
+     "The overall sentence (10) Mary knows John is a single clause because 'knows' does not take a complement.",
+     "The sentence (10) Mary knows John contains two main clauses because 'knows' and 'smokes' are both predicates.",
+     "In sentence (10), the clause 'Mary knows John' is a complement clause because it modifies the subject 'Mary'."
+    ],
+    "answer": 1,
+    "explanation": "빈칸에는 원문 'The overall sentence (10) Mary knows John'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: 지문에서 'John smokes'가 knows 의 보어로 쓰인 보문장(complement clause)임을 보지 못하고, 'knows' 다음에 관사가 없는 명사 'John'이 와서 문법적으로 틀렸다고 오해한 듯함. → 처방: 보문장이 보어로 쓰일 수 있는지 확인하고, 보어 자리에 오는 절의 구조를 정확히 분석하는 연습을 하세요. 예를 들어 'I know that he is kind'와 같은 예문을 보며 보문장의 역할을 익히세요.\n③ 진단: 지문에서 'knows'가 보문장(complement clause) 'John smokes'를 보어로 취한다는 사실을 무시하고, 'knows'가 보어를 취하지 않는다고 잘못 이해한 듯함. → 처방: 보어의 개념과 보문장의 역할을 다시 공부하고, 'knows'와 같은 동사가 보어를 취할 수 있는지 확인하는 연습을 하세요. 'She thinks he is smart' 같은 문장을 보며 보어의 종류를 구분해 보세요.\n④ 진단: 지문에서 'smokes'가 보문장이 아니라 주절의 술어(predicate)임을 보지 못하고, 두 술어 'knows'와 'smokes'가 모두 주절이라고 오해한 듯함. → 처방: 주절과 보문장을 구분하는 기준을 다시 공부하고, 'She said he left'와 같은 문장에서 주절과 보문장을 찾아내는 연습을 반복하세요.\n⑤ 진단: 지문에서 'Mary knows John'이 보문장이 아니라 주절임을 보지 못하고, 'Mary knows John'이 보문장이라고 잘못 이해한 듯함. 또한 보문장이 주어('Mary')를 수식한다는 오해도 보임. → 처방: 보문장의 역할과 위치를 정확히 이해하고, 'I believe he is honest'와 같은 문장에서 보문장이 어디에 위치하는지 확인하는 연습을 하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-25T01:56:35.827Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/3 다수결 5번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "CLAUSES as SUBJECT-PREDICATE PREDICATION STRUCTURES",
+     "CLAUSES as SIMPLE SENTENCE FORMS",
+     "PREDICATION REQUIRES CLAUSE COMPLEMENTS",
+     "PREDICATION NEEDS TWO CLAUSES",
+     "CLAUSES OFTEN HAVE COMPLEX COMPLEMENTS"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Clauses are predication structures with subject-predicate relationships.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Clauses are predication structures with subject-predicate relationships.**]\n[오답 진단·처방]\n① 진단: ‘predication structure’가 ‘주어-서술어 구조’를 뜻한다는 점은 맞지만, 지문은 ‘clause’를 ‘predication structure’로 정의하며 ‘clause’가 ‘complement’나 ‘adjunct’를 포함할 수 있음을 설명하고 있으므로, ‘clause’를 ‘단순한 주어-서술어 구조’로만 한정해 오해한 듯함. → 처방: ‘clause’의 정의와 역할을 다시 확인하고, 지문에서 ‘complement clause’가 ‘clause’의 한 종류임을 기억할 것.\n② 진단: ‘simple sentence forms’가 ‘단순한 문장 형태’를 뜻한다는 점은 맞지만, 지문은 ‘clause’의 복잡한 구조(예: complement clause)를 설명하고 있으므로, ‘clause’를 ‘단순한 문장’으로만 오해한 듯함. → 처방: ‘clause’가 ‘단순한 문장’이 아니라 ‘predication structure’라는 점을 강조하고, 지문에서 ‘complement clause’가 포함된 예를 다시 읽어볼 것.\n③ 진단: ‘predication requires clause complements’는 지문에서 ‘knows’의 complement 가 ‘clause’임을 설명하지만, 지문은 ‘predication’이 ‘clause’를 구성하는 기본 요소임을 강조하고 있으므로, ‘complement’이 필수라는 오해를 한 듯함. → 처방: ‘predication’이 ‘clause’를 이루는 기본 요소임을 이해하고, ‘complement’이 항상 필요한 것은 아님을 기억할 것.\n④ 진단: ‘predication needs two clauses’는 지문에서 ‘knows’와 ‘smokes’가 각각 ‘clause’를 이룬다고 설명하지만, 이는 ‘clause’의 정의와 구조를 설명하기 위한 예시일 뿐, ‘predication’이 반드시 ‘두 clause’를 필요로 하는 것은 아님을 오해한 듯함. → 처방: ‘clause’의 정의와 예시를 다시 확인하고, ‘predication’이 ‘clause’를 이루는 기본 요소임을 기억할 것."
+   }
+  },
   {
    "ts": "2026-08-24T23:39:06.502Z",
    "type": "네모어법ABC",
@@ -326,60 +394,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The plight of female alcoholics in America is worsening rapidly despite being underreported.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘사회적 관심 부족’이란 말은 지문에 없지만, ‘통계가 부정확하다’는 점만 보고 ‘관심 부족’이 문제인 것처럼 오독했다. 지문은 ‘통계가 부정확한 이유’를 ‘은밀한 알코올 중독자’ 때문이라고만 밝히며, 관심 부족에 대해서는 언급하지 않는다. → 처방: ‘요지’를 찾을 때는 지문에 직접 언급된 내용만 근거로 삼고, 지문에 없는 말은 배제하라.\n③ 진단: ‘재정적 압박’이 가장 심각한 문제라고 착각했는데, 지문은 ‘재정적 압박, 부부 문제, 좌절감 등 다양한 이유’를 나열했을 뿐, 그중 가장 심각하다고 말하지 않는다. → 처방: 지문에 ‘가장’이나 ‘최우선’ 같은 비교급 표현이 없으면, ‘가장 심각한 문제’라고 단정하지 말고 전체 내용을 종합하라.\n④ 진단: ‘대부분’이 술을 마신다고 오해했는데, 지문은 ‘많은 여성 알코올 중독자들이 일상적 어려움을 해결하려고 술을 마신다’는 사실을 전할 뿐, ‘대부분’이라는 비율을 언급하지 않는다. → 처방: ‘대부분’이라는 말이 없으면, 지문에 나온 ‘많은’이나 ‘몇몇’ 같은 표현을 그대로 받아들이지 말고 비율에 대한 언급이 있는지 확인하라.\n⑤ 진단: ‘치료가 거의 이뤄지지 않을 정도로 방치되고 있다’는 말은 지문에 없지만, ‘9명의 은밀한 알코올 중독자 중 1명만 치료를 받고 있다’는 통계만 보고 ‘방치’가 문제인 것처럼 오독했다. → 처방: ‘방치’라는 표현은 지문에 없으므로, 통계 수치만으로 ‘방치’가 문제라는 결론을 내리지 말고, 지문에 나온 표현 그대로 요지를 파악하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The plight of female alcoholics in America is worsening rapidly despite being underreported.]"
-   }
-  },
-  {
-   "ts": "2026-08-24T19:52:57.366Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] NEW WORDS juxtapose juk stə pōz´ plight plīt covert kō´ vərt cope kōp incompatibility in kəm pat´ ə bil´ ə tē WEEK 22 DAY 1 FEMALE ALCOHOLICS When we juxtapose the words “woman” and “alcoholic” many readers are surprised.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] ‘여성’과 ‘알코올 중독자’라는 두 단어를 나란히 놓을 때 많은 독자들이 놀랍니다. (구문 포인트: 동사(juxtapose)의 목적어로서의 명사구(‘woman’ and ‘alcoholic’)와 수동태(are surprised) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-24T19:02:11.716Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 3번(기록 5번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the choice of words",
-     "the clarity of expression",
-     "the necessity of expression",
-     "the importance of grammar",
-     "the precision of expression"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Vocabulary determines the precision of expression in English.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 오답 — 논지에서 어긋남\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Vocabulary determines the precision of expression in English.]\n[오답 진단·처방]\n① 진단: 학생은 'the choice of words'를 선택했는데, 이는 'I'가 단어 선택에 집중했다는 오해에서 나온다. 하지만 지문에서 'I'는 단어 선택이 아니라 '표현의 필요성'이 변했다는 점을 강조한다(예: '표현하지 않을 수 없었다'는 문장). → 처방: 문제에서 '표현의 필요성'이 변했다는 단서를 찾고, 그 변화가 글에서 어떻게 드러나는지 확인하라.\n② 진단: 학생은 'the clarity of expression'을 선택했는데, 이는 'I'의 말이나 글이 명확하지 않았다고 오해한 것이다. 하지만 지문은 '표현의 필요성'이 커졌다는 내용이지, 표현의 명확성에 대한 변화가 아니다. → 처방: 표현의 '필요성'과 '명확성'을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 기억하라.\n④ 진단: 학생은 'the importance of grammar'를 선택했는데, 이는 문법의 중요성에 대한 오해에서 나온다. 하지만 지문은 문법이 아니라 '표현의 필요성'이 변했다는 점을 다루고 있다. → 처방: 문법의 중요성과 표현의 필요성을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 떠올리라.\n⑤ 진단: 학생은 'the precision of expression'을 선택했는데, 이는 'I'가 표현을 정교하게 했다고 오해한 것이다. 하지만 지문은 '표현의 필요성'이 커졌다는 내용이지, 표현의 정교함에 대한 변화가 아니다. → 처방: 표현의 '정교함'과 '필요성'을 혼동하지 말고, 지문에서 '표현하지 않을 수 없었다'는 문장이 '필요성'의 변화임을 확인하라."
    }
   }
  ]
