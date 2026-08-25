@@ -1,6 +1,31 @@
 {
- "updated": "2026-08-25T19:53:02.641Z",
+ "updated": "2026-08-25T20:53:47.939Z",
  "samples": [
+  {
+   "ts": "2026-08-25T20:48:30.172Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "I like them . Other phrase types, and even clauses, can be replaced by proforms too, as the following sentences demonstrate: (66) Th ey say ⓐ<u>that Wayne is very unhappy and so he are</u>. (67) Our neighbours ⓑ<u>will go on holiday on Sunday , and we will leave then too</u>. (68) Tim sat on the couch and stayed there . (69) Janet ⓒ<u>drove her car too fast , and Sam rides his bike likewise</u> . (70) He believes that ⓓ<u>politics are a dirty game . We all believe that</u> . (71) He said that ⓔ<u>the operation will be successful . I certainly hope so</u> . In (66) the AP very unhappy has been replaced by so , whereas in (67) and (68) then and there replace the PPs on Sunday and on the couch , respectively. In (69) likewise replaces the AdvP too fast , and in (70) and (71) that and so replace clauses. VPs too can be replaced, as we will see in Section 12.2.2. EXERCISE Replace the noun phrase constituents in the following sentences with pronouns: (63) The boys saw six blue Rolls-Royces. (64) Harriet sold her computer to my friends from Edinburgh.",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 3,
+    "explanation": "틀린 곳은 ⓐ(that Wayne is very unhappy and so he are → that Wayne is very unhappy and so he is), ⓒ(drove her car too fast, and Sam rides his bike likewise → drove her car too fast, and Sam rode his bike likewise), ⓓ(politics are a dirty game. We all believe that → politics is a dirty game. We all believe that) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘that Wayne is very unhappy and so he are’를 ‘that Wayne is very unhappy and so he is’로 고쳐야 하는데, 학생은 ‘are’를 ‘is’로 바꾸는 오류를 보지 못하고 ‘that’ 절의 동사 일치 오류(he are)를 간과했을 수 있음. → 처방: ‘that’ 절 안의 주어와 동사의 수 일치를 꼼꼼히 확인할 것. ‘he’ 뒤에는 ‘is’가 와야 함을 기억할 것.\n② 진단: ‘Sam rides his bike likewise’를 ‘Sam rides his bike likewise’를 ‘Sam rides his bike too’라고 고쳐야 하는데, 학생은 ‘likewise’의 올바른 쓰임을 몰라 ‘too’를 선택했을 수 있음. 지문에서 ‘likewise’는 ‘마찬가지로’라는 뜻으로 ‘too’와는 다르다는 점을 놓쳤음. → 처방: ‘likewise’는 ‘마찬가지로’라는 뜻임을 기억하고, 문맥에 맞게 ‘likewise’를 ‘too’로 대체하지 않도록 주의할 것.\n④ 진단: ‘politics are a dirty game’를 ‘politics is a dirty game’로 고쳐야 하는데, 학생은 ‘politics’가 복수형이지만 단수 취급해야 한다는 점을 몰라 ‘are’를 선택했을 수 있음. 지문에서 ‘politics’는 단수 취급함을 암시하는 예문이 있음. → 처방: ‘politics’는 단수 취급한다는 사실을 기억하고, 동사를 ‘is’로 쓰는 습관을 들일 것.\n⑤ 진단: ‘We all believe that’를 ‘We all believe so’라고 고쳐야 하는데, 학생은 ‘that’ 절을 ‘so’로 대체하는 규칙을 몰라 ‘that’을 그대로 두었을 수 있음. 지문에서 ‘that’ 절이 ‘so’로 대체될 수 있음을 보여줌. → 처방: ‘that’ 절이 ‘so’로 대체될 수 있음을 기억하고, 문맥에 맞게 ‘so’를 사용하도록 연습할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-25T19:47:43.736Z",
    "type": "제목",
@@ -316,41 +341,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 소셜 미디어에서 스크롤하는 간단한 도파민 활동 시 뇌에서 어떤 일이 일어나는지 살펴보겠습니다. (구문 포인트: 명사구 수식(‘a quick dopamine activity’가 ‘scrolling on social media’를 동격으로 설명) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T10:52:27.233Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": -0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "구성은 두 개 이상이어야 하지만 통사적 범주가 달라도 문법적 완전성에 영향을 주지 않는다",
-     "문법적 완전성을 갖추려면 구성 요소가 두 개 이상이어야 하며 통사적 범주가 동일해야 한다",
-     "모든 구는 통사적 범주가 같아야만 문법적으로 완전하다고 할 수 있다",
-     "구는 통사적 범주가 같아야만 문법적으로 완전하다고 볼 수 있다",
-     "구성 요소는 두 개 이상이어야 하고, 통사적 범주가 동일할 때 문법적 완전성이 확보된다"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'A phrase must consist of at least two words and coordinate elements must belong to the same syntactic category.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: ‘두 개 이상’이라는 조건만 강조하고 ‘통사적 범주 동일’ 조건을 무시한 채 문법적 완전성을 판단했다고 볼 수 있다. 지문에서 [25]·[26]·[28]은 ‘NP 와 NP’, ‘PP 와 PP’, ‘AP 와 AP’로 범주가 같아야만 문법적 완전성이 인정된다고 명시했다. → 처방: ‘구는 통사적 범주가 같아야 문법적으로 완전하다’는 조건을 꼭 기억하고, 선지를 볼 때 범주 일치를 먼저 확인하라.\n③ 진단: ‘모든 구’가 통사적 범주가 같아야만 문법적 완전하다고 과장해서 해석했다. 지문은 ‘두 개 이상의 구가 통사적 범주가 같아야 한다’는 조건을 제시했을 뿐, ‘모든’이란 말은 없다. → 처방: ‘모든’이란 말이 없으면 그 선지는 오답일 가능성이 높다는 점을하라.\n④ 진단: ‘구는 통사적 범주가 같아야만 문법적으로 완전하다고 볼 수 있다’라는 문장은 ‘~만’(유일한 조건)으로 해석해 ‘두 개 이상’이라는 조건을 배제했다. 지문은 ‘두 개 이상 + 범주 동일’이 모두 필요하다고 했다. → 처방: ‘~만’이라는 말이 나오면 조건이 ‘유일’하다는 뜻이 아니라 ‘필수’ 조건 중 하나일 수 있음을 확인하라.\n⑤ 진단: ‘구는 통사적 범주가 같아야만 문법적으로 완전하다고 볼 수 있다’라는 문장을 ‘구는 통사적 범주가 같아야 한다’로만 축약해 ‘두 개 이상’이라는 조건을 누락했다. 지문은 ‘두 개 이상 + 범주 동일’이 모두 필요하다고 했다. → 처방: ‘~해야만’과 ‘~해야 한다’를 혼동하지 말고, 문장에 있는 모든 조건을 빠짐없이 확인하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A phrase must consist of at least two words and coordinate elements must belong to the same syntactic category.]"
    }
   }
  ]

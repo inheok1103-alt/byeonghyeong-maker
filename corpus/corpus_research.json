@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T19:53:02.636Z",
+ "updated": "2026-08-25T20:53:47.935Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T20:53:23.668Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'be + useful/possible + to V'와 같은 능동태+의무/가능성 조동사+to 부정사 구조가 빈번하며, 'one way or the other'가 'in way or the other one'으로 잘못 사용되는 패턴이 관찰된다. 또한 'broad knowledge'와 같은 연어가 'board'로 오용되는 경우가 많다.",
+   "rule": "'be + [형용사] + to V' 구조(예: useful/possible to acquire)에서 형용사가 'be' 뒤에 오도록 하며, 'one way or the other'는 절대 'in way or the other one'으로 쓰지 않도록 오답지 3지선다에 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T19:52:31.240Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "원서 코퍼스에서 'that' 절이 동사(예: said, obvious, meant) 뒤에 자주 등장하는 패턴을 확인할 수 있다. 또한 'to 부정사'가 'for' 대신 사용되는 연어(예: harmful to people)가 빈번하다.",
    "rule": "영어 문장에서 동사(예: say, mean, obvious)가 후치사(that, to) 없이 직접 목적어를 취할 때, 오답으로 'that 절' 또는 'to 부정사'를 생략한 형태를 제시하여 오류를 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T04:07:41.103Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "영어에서 'the + another'는 절대 사용되지 않으며, 'the + other'로 교정해야 한다. 또한 'exotic'의 오타, 'luxury'의 복수형 오류, 'encourages'의 동사 형태 오류가 빈번히 발생한다.",
-   "rule": "'the another'는 무조건 'the other'로 수정하고, 'luxury'는 복수형 'items'와 결합하는지 확인하며, 동사 'encourage'는 주어의 수에 맞춰 3인칭 단수형(-s)을 붙이도록 오답지를 설계한다.",
    "sample": [
     "old english",
     "university press",
