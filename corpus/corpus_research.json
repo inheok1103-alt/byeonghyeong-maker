@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T04:10:20.696Z",
+ "updated": "2026-08-25T04:57:21.629Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T04:56:51.383Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'old'와 'new'가 'English'와 결합하는 빈도가 높고, 'first important'는 'the first important'로 보정해야 하며, 'many people see'는 'some people see'로도 오용될 가능성이 있다. 또한 'as' 뒤의 명사구는 복수형이나 관사 수정이 필요한 경우가 많다.",
+   "rule": "'old/new + English'와 같이 관용적으로 굳어진 연어는 오답 선택지로 'old/new + English'를 제시하고, 'first important'는 'the first important'로, 'many people see'는 'some people see'로 오용된 문장을 오답으로 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T04:09:55.837Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "'take full use of'와 같은 구식·오용 표현 대신 'become self-driving'과 같이 현대적 동사+형용사 구문으로 대체하는 패턴이 빈번하다. 또한 'live on knowledge'와 같은 비문법적 전치사 사용보다 'have knowledge'와 같은 직접 동사 구문이 선호된다.",
    "rule": "원서 코퍼스에서 빈번한 현대 영어 동사 구문(예: 'become + 형용사', 'have + 명사')을 오용된 구식 표현(예: 'take full use of', 'live on') 대신 사용하여 문장을 자연스럽게 개선하는 변형 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T10:45:51.891Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스에서 'ordinal number + noun' 구문(10th exam, 12th exam)과 'adjective + noun' 구문(successful lawyer)에서의 오류가 빈번하게 발생함을 확인했다. 또한 접속사 오류('as on when' → 'when')와 시제 일치 오류('is' → 'are')가 복합적으로 나타나고 있다.",
-   "rule": "CEFR B1 수준 이하의 문항에서는 'ordinal number + noun' 구문(예: 10th exam, 2nd place)에서 복수 동사(are/were)를 요구하는지 확인하고, 'adjective + noun' 구문(예: successful lawyer)에서 철자 오류(예: succesfull → successful)를 검수하라.",
    "sample": [
     "old english",
     "university press",
