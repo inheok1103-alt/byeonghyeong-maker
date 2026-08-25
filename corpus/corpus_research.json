@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T20:53:47.935Z",
+ "updated": "2026-08-25T21:48:12.868Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T21:47:42.439Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "복수형 오류와 관사 오류가 혼재된 문장에서, 복수형 오류가 관사 오류로 일반화될 수 있음을 확인했다. 특히 'reasons' → 'these reasons' 변환에서 복수형과 관사의 일치 규칙이 두드러진다.",
+   "rule": "복수형 명사가 관사와 함께 쓰일 때, 복수형이 옳은지 여부를 판단하는 문제에서 'these/those + 복수명사' 구조가 오답으로 자주 등장하므로, 복수형과 관사의 일치를 엄밀히 검증하는 문항을 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T20:53:23.668Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "이 오류들은 관사(a/an/the)나 시제(present/past) 오용, 그리고 목적어와 동사 간 호응 실패가 빈번하다는 점을 보여준다. 특히, 'something + 형용사' 구조에서 관사의 오류가 두드러진다.",
    "rule": "'something/anything/nothing + 형용사' 구조에서는 항상 'something extra'가 아닌 'something extra'로 쓰이며, 관사가 필요 없음을 학생들에게 주지시킨다. 또한, 과거 경험을 서술할 때는 과거 시제를 사용하도록 규칙화한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T04:54:25.221Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "원서 코퍼스에서 'that' 절이 동사(예: said, obvious, meant) 뒤에 자주 등장하는 패턴을 확인할 수 있다. 또한 'to 부정사'가 'for' 대신 사용되는 연어(예: harmful to people)가 빈번하다.",
-   "rule": "영어 문장에서 동사(예: say, mean, obvious)가 후치사(that, to) 없이 직접 목적어를 취할 때, 오답으로 'that 절' 또는 'to 부정사'를 생략한 형태를 제시하여 오류를 유도하라.",
    "sample": [
     "old english",
     "university press",
