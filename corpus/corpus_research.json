@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T22:57:50.222Z",
+ "updated": "2026-08-25T23:42:16.719Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T23:41:50.015Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'old English'·'Middle English'·'English grammar' 등 명사구에 관사가 자주 생략되지 않음을 확인할 수 있다. 또한 'reason relations'·'direct object' 등 문법 용어에서도 관사 사용 패턴이 규칙적임을 알 수 있다.",
+   "rule": "명사구가 특정 언어(English)·시대(old, middle) 또는 문법 용어(reason relations, direct object)일 경우, 관사를 반드시 포함하도록 변형 문제를 설계하라. 예: 'He studied old English.' → 'He studied the old English.'로 오류 유도.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T22:55:11.060Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'long-term'과 같이 하이픈으로 연결된 복합형용사가 빈번히 등장하며, 특히 'long term'보다는 'long-term'이 표준어로 정착되어 있음을 확인할 수 있다.",
    "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'long term'이 복합형용사로 쓰일 경우 'long-term'으로 하이픈 연결을 반드시 적용하여 문장을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T07:04:42.758Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 '~ in -' 구조는 전치사구를 동반한 구체적 예시 제시 패턴으로 빈번하며, 오류는 전치사 생략·부적절한 관계대명사 사용에서 주로 발생한다.",
-   "rule": "원서 코퍼스 패턴 '~ in [명사구] - for example, ...'을 활용한 변형문제 출제 시, 전치사(in/on/at 등) + 관계대명사(which/that) + 완전한 절 구조를 필수적으로 요구하도록 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",
