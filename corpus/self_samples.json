@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-25T21:48:12.872Z",
+ "updated": "2026-08-25T22:57:50.226Z",
  "samples": [
+  {
+   "ts": "2026-08-25T22:54:47.694Z",
+   "type": "안내문불일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하지 않는 것은?",
+    "passage": "PROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. • The provident father had long ago set aside money for the college education of each of his children. To be improvident is to fail to provide for the future. • It was improvident of the grasshopper not to store any food for the winter, unlike his acquaintance the provident ant. Quick Quiz #68 Match each word in the first column with its definition in the second column. Check your answers here. 1. promulgate a. natural inclination 2. propensity b. good manners 3. propitious c. advocate 4. proponent d. prohibit 5. proprietary e. prolong 6. propriety f. leading character 7. prosaic g. constituting property 8. proscribe h. frugal 9. proselytize i. dull 10. protagonist j. marked by favorable signs 11. protract k. convert 12. provident l. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
+    "choices": [
+     "한 겨울이 길고 추울 것을 대비해 제한된 식량을 아껴 썼다.",
+     "한 겨울이 길고 추울 것을 대비해 제한된 식량을 아끼지 않았다.",
+     "미래를 대비하지 못한 메뚜기는 겨울을 대비한 식량을 전혀 저장하지 않았다.",
+     "미래를 대비한 개미는 겨울을 대비해 식량을 저장한 반면 메뚜기는 그렇지 않았다.",
+     "미래를 대비하지 못한 행동은 ‘낭비적인’ 것으로 불린다."
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: ‘provident’의 뜻이 ‘미래를 대비하는’임을 정확히 짚었지만, 지문에서 ‘We were provident with our limited food supplies’를 ‘제한된 식량을 아껴 썼다’로 해석한 것은 맞지만, ‘아껴 썼다’가 ‘아끼지 않았다’와 반대 의미라는 점까지는 생각하지 못한 듯하다. → 처방: ‘provident’의 뜻을 정확히 기억한 다음, 지문에서 ‘provident’의 반대말인 ‘improvident’를 떠올리며 ‘아껴 썼다’와 ‘아끼지 않았다’를 비교해 보기.\n③ 진단: ‘improvident’의 뜻을 ‘미래를 대비하지 못한’으로 이해했지만, 지문에서 ‘It was improvident of the grasshopper not to store any food for the winter’를 ‘메뚜기는 겨울을 대비한 식량을 전혀 저장하지 않았다’로 해석한 것은 맞지만, ‘not to store’를 ‘저장하지 않았다’로만 해석해 ‘전혀’라는 강조까지는 고려하지 못한 듯하다. → 처방: ‘not to store’를 ‘저장하지 않았다’로만 해석하지 말고, ‘전혀’라는 강조가 포함된 표현인지 확인해 보기.\n④ 진단: ‘provident’의 뜻을 ‘미래를 대비한’으로 이해했지만, 지문에서 ‘unlike his acquaintance the provident ant’를 ‘미래를 대비한 개미는 겨울을 대비해 식량을 저장한 반면 메뚜기는 그렇지 않았다’로 해석한 것은 맞지만, ‘unlike’를 ‘반면에’라는 대조로만 이해해 ‘provident’의 의미를 충분히 살리지 못한 듯하다. → 처방: ‘unlike’를 ‘~와는 달리’라는 대조로만 보지 말고, ‘provident’의 의미를 정확히 짚은 다음 비교해 보기.\n⑤ 진단: ‘improvident’를 ‘미래를 대비하지 못한 행동’이 ‘낭비적인’으로 불린다는 점은 지문에서 ‘To be improvident is to fail to provide for the future’라고 설명한 부분을 정확히 짚었지만, ‘낭비적인’이라는 단어가 ‘improvident’의 직접적인 뜻은 아니라는 점까지는 생각하지 못한 듯하다. → 처방: ‘improvident’의 뜻을 정확히 기억한 다음, 지문에서 ‘To be improvident is to fail to provide for the future’라고 설명한 부분을 다시 한 번 확인해 보기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-25T21:45:53.392Z",
    "type": "빈칸(어구)",
@@ -331,25 +366,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Cheating undermines fairness by breaking rules covertly'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘Breaking Rules Leads to Cheating Incidents’는 규칙을 어기는 것이 부정행위를 일으킨다는 인과관계로 오독했는데, 지문은 부정행위가 규칙을 어기는 ‘결과’로만 서술되어 인과관계가 반대이다. → 처방: ‘무엇’이 ‘결과’를 일으키는지가 아니라 ‘무엇’이 ‘결과’를 초래하는지 확인하기 위해 지문의 서술 구조를 주의 깊게 읽기.\n③ 진단: ‘Covert Cheating Harms Academic Integrity’는 ‘은밀한 부정행위’가 학문적 정직성을 해친다고 오독했는데, 지문은 ‘공공연한 부정행위’를 문제 삼고 있다. → 처방: 지문에 나온 ‘flagrant cheating’이 ‘은밀한’ 부정행위가 아니라 ‘공공연한’ 부정행위임을 확인하고, 단어의 의미를 정확히 짚기.\n④ 진단: ‘All Academic Dishonesty Undermines Fairness Universally’는 모든 부정행위가 공정성을 해친다고 오독했는데, 지문은 부정행위가 ‘공정성’을 파괴한다는 ‘특정 사례’에 초점을 맞추고 있다. → 처방: ‘전체’가 아니라 ‘특정 사례’에 주목하는지 확인하고, 지문의 범위를 정확히 파악하기.\n⑤ 진단: ‘Cheating Always Ruins School Fairness Completely’는 부정행위가 ‘항상’ ‘완전히’ 공정성을 파괴한다고 오독했는데, 지문은 부정행위가 ‘공정성’을 파괴한다는 ‘일반적 사실’을 서술한 것이지 ‘항상·완전히’를 강조하지 않는다. → 처방: ‘항상’이나 ‘완전히’ 같은 절대적 표현이 지문에 있는지 확인하고, 그런 표현이 없으면 오독하지 않기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Cheating undermines fairness by breaking rules covertly]"
-   }
-  },
-  {
-   "ts": "2026-08-25T17:02:35.254Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] He issued bulletins and began to admonish those teachers who did not proctor alertly.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 그는 게시판을 발행하고 주의 깊게 감독하지 않은 교사들에게 경고하기 시작했다. (구문 포인트: 관계사절(who did not proctor alertly) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
