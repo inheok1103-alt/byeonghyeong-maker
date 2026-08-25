@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T16:04:03.485Z",
+ "updated": "2026-08-25T17:03:12.283Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T17:02:37.387Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거형/현재형 동사와 명사 수 일치 오류가 빈번하며, 'smaller'와 같은 비교급 형태 오류와 'sosiety'와 같은 철자 오류가 결합되어 나타난다.",
+   "rule": "비교급(-er) 또는 최상급(-est) 형용사가 사용된 문장에서는 해당 형용사가 수식하는 명사의 수와 동사의 시제(과거/현재)가 일치하는지 확인하라. 특히 'there was/were'와 같은 비인칭 구문에서 'less'가 사용될 경우, 명사 복수형 또는 불가산명사임을 확인하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T16:03:35.834Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'focus in'은 'focus on'으로, 'runs'는 주어가 복수일 때 'run'으로, 'lose'는 3인칭 단수일 때 'loses'로 교정되는 패턴이 빈번하다. 또한 접속사 오류(therefore → and)나 전치사 오류(in guard → on guard)도 자주 발생한다.",
    "rule": "주어가 3인칭 단수(he/she/it)일 때 동사는 '-s'형으로, 복수일 때는 원형 동사로 통일하고, 전치사·접속사 오류(예: 'in guard' → 'on guard', 'therefore' → 'and')를 점검하여 문맥에 맞는 올바른 연결어를 사용한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T22:41:37.342Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "영어 문법 오류는 주어-동사 일치, 동사 형태(수동태), 형용사/부사 선택에서 주로 발생하며, CEFR B1 수준에서 빈번히 다뤄진다.",
-   "rule": "CEFR B1 수준의 내신 변형문제에서 주어와 동사의 수 일치를 반드시 확인하고, 동사 형태(능동/수동, 시제) 및 형용사/부사의 정확한 사용(예: harmful vs. harm full)을 문항에 포함시킨다.",
    "sample": [
     "old english",
     "university press",

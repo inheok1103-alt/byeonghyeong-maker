@@ -1,6 +1,96 @@
 {
- "updated": "2026-08-25T16:04:03.490Z",
+ "updated": "2026-08-25T17:03:12.287Z",
  "samples": [
+  {
+   "ts": "2026-08-25T16:58:12.439Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "NEW WORDS flagrant flā´ grənt admonish ad mon´ ish duress d res´ culprit kul´ prit inexorable in ek´ sər ə bəl WEEK 5 DAY 2 CRACKING DOWN Mr. Dorsey, our new principal, determined to do something about the flagrant cheating at our high school. He issued bulletins and began to admonish those teachers who did not proctor alertly. Under duress, the faculty reported the names of the culprits. Several crib sheets were turned in as tangible* evidence of the cheating. Mr. Dorsey’s inexorable campaign against the wrong-doers seemed to be paying off. Sample Sentences Into which sentences do the new words fit best? 1.The ________________ was caught with his fingers in the cookie jar. 2.Television sleuths are ________________ in their pursuit of lawbreakers. 3.The confession was signed under ________________ , the attorney claimed. 4.I suspect that my father will ________________ me for coming home late. 5.Parking in front of a hydrant is a ________________ violation of the city’s law. Definitions Match the new words with their meanings. 6.flagrant a. inflexible, unrelenting 7.admonish b. compulsion, force 8.duress c. outrageous, glaringly bad",
+    "choices": [
+     "교장은 학생들의 노골적인 칭찬을 문제 삼아 단속을 시작했다",
+     "교장은 감독을 성실히 한 교사들을 꾸짖었다",
+     "교직원들은 자발적으로 부정행위의 가해자 이름을 신고했다",
+     "몇몇 쪽지가 부정행위의 증거로 제출되었다",
+     "교장은 부정행위자들에 대한 관대한 단속을 시작했다"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'flagrant'는 '노골적인(뻔한)' 부정행위를 뜻하는데, 학생은 '칭찬'으로 오해해 '칭찬'과 '부정행위'를 연결하지 못했음. (지문: 'flagrant cheating') → 처방: 새로운 단어 뜻을 정확히 외우고, 문장 속 단어가 어떤 상황인지 Context 를 먼저 떠올려야 함.\n② 진단: 지문에서 'admonish'는 '꾸짖다'는 뜻으로 쓰였지만, 학생은 '꾸짖은 대상'을 '감독을 잘한 교사'로 오해했음. (지문: 'admonish those teachers who did not proctor alertly') → 처방: 단어 뜻을 정확히 알고, 누가 누구를 꾸짖는지 문장 구조를 꼼꼼히 읽어야 함.\n③ 진단: 지문에서 'duress'는 '강제'를 뜻하는데, 학생은 '자발적'으로 오해해 '자발적으로 신고했다'로 연결했음. (지문: 'Under duress, the faculty reported the names') → 처방: 단어 뜻을 외우고, 문맥에서 '강제'가 어떤 상황인지 확인해야 함.\n⑤ 진단: 지문에서 'inexorable'은 '관대하지 않은(가혹한)' 뜻인데, 학생은 '관대한'으로 반대로 오해했음. (지문: 'inexorable campaign against the wrong-doers') → 처방: 단어 뜻을 정확히 알고, 문장 전체의 분위기를 파악해 반대 의미를 찾지 않도록 주의해야 함.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-25T16:58:51.660Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Cheating Destroys Fairness by Violating Rules",
+     "Breaking Rules Leads to Cheating Incidents",
+     "Covert Cheating Harms Academic Integrity",
+     "All Academic Dishonesty Undermines Fairness Universally",
+     "Cheating Always Ruins School Fairness Completely"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Cheating undermines fairness by breaking rules covertly'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘Breaking Rules Leads to Cheating Incidents’는 규칙을 어기는 것이 부정행위를 일으킨다는 인과관계로 오독했는데, 지문은 부정행위가 규칙을 어기는 ‘결과’로만 서술되어 인과관계가 반대이다. → 처방: ‘무엇’이 ‘결과’를 일으키는지가 아니라 ‘무엇’이 ‘결과’를 초래하는지 확인하기 위해 지문의 서술 구조를 주의 깊게 읽기.\n③ 진단: ‘Covert Cheating Harms Academic Integrity’는 ‘은밀한 부정행위’가 학문적 정직성을 해친다고 오독했는데, 지문은 ‘공공연한 부정행위’를 문제 삼고 있다. → 처방: 지문에 나온 ‘flagrant cheating’이 ‘은밀한’ 부정행위가 아니라 ‘공공연한’ 부정행위임을 확인하고, 단어의 의미를 정확히 짚기.\n④ 진단: ‘All Academic Dishonesty Undermines Fairness Universally’는 모든 부정행위가 공정성을 해친다고 오독했는데, 지문은 부정행위가 ‘공정성’을 파괴한다는 ‘특정 사례’에 초점을 맞추고 있다. → 처방: ‘전체’가 아니라 ‘특정 사례’에 주목하는지 확인하고, 지문의 범위를 정확히 파악하기.\n⑤ 진단: ‘Cheating Always Ruins School Fairness Completely’는 부정행위가 ‘항상’ ‘완전히’ 공정성을 파괴한다고 오독했는데, 지문은 부정행위가 ‘공정성’을 파괴한다는 ‘일반적 사실’을 서술한 것이지 ‘항상·완전히’를 강조하지 않는다. → 처방: ‘항상’이나 ‘완전히’ 같은 절대적 표현이 지문에 있는지 확인하고, 그런 표현이 없으면 오독하지 않기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Cheating undermines fairness by breaking rules covertly]"
+   }
+  },
+  {
+   "ts": "2026-08-25T17:02:35.254Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] He issued bulletins and began to admonish those teachers who did not proctor alertly.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 그는 게시판을 발행하고 주의 깊게 감독하지 않은 교사들에게 경고하기 시작했다. (구문 포인트: 관계사절(who did not proctor alertly) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-25T15:15:28.613Z",
    "type": "밑줄함의",
@@ -261,79 +351,6 @@
     ],
     "answer": 3,
     "explanation": "(A) deception / (B) consequences 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘evidence’를 ‘증거’가 아닌 ‘고통’으로 오해했으며, ‘pain’이 ‘relief’와 대조되는 뜻임을 몰라 ‘(A) evidence’와 ‘(B) pain’을 잘못 짝지음. 지문에서 ‘false evidence’가 ‘deceived’를 유도했음을 놓침. → 처방: 단어의 뜻을 정확히 기억하고, 문맥에서 ‘evidence’가 ‘증거’임을 확인한 뒤, ‘pain’과 ‘relief’를 ‘고통’과 ‘안도’로 구분해 짝짓기.\n② 진단: ‘fabricated’를 ‘만들어진’으로, ‘relief’를 ‘안도’가 아닌 ‘구제’로 오해해 ‘(A) fabricated’와 ‘(B) relief’를 잘못 짝지음. 지문에서 ‘fabricated evidence’가 ‘deceived’를 낳았음을 놓침. → 처방: ‘fabricated’는 ‘거짓된’, ‘relief’는 ‘고통 완화’임을 정확히 기억하고, 문맥에 맞게 짝짓기.\n④ 진단: ‘fabricated’를 ‘만들어진’으로, ‘innocence’를 ‘무죄’가 아닌 ‘결과’로 오해해 ‘(A) fabricated’와 ‘(B) innocence’를 잘못 짝지음. 지문에서 ‘fabricated evidence’가 ‘incorrect arrests’를 낳았음을 놓침. → 처방: ‘innocence’는 ‘무죄’임을 기억하고, 문맥에서 ‘incorrect arrests’가 ‘결과’임을 확인해 짝짓기.\n⑤ 진단: ‘fabrication’을 ‘거짓’으로, ‘arrests’를 ‘체포’가 아닌 ‘결과’로 오해해 ‘(A) fabrication’와 ‘(B) arrests’를 잘못 짝지음. 지문에서 ‘fabrication’이 ‘incorrect arrests’를 낳았음을 놓침. → 처방: ‘arrests’는 ‘체포’임을 기억하고, 문맥에서 ‘incorrect’라는 말이 ‘결과’임을 확인해 짝짓기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T08:01:08.545Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] They were completely deceived and they arrested the wrong person.\n\nPart II Contextual Analysis I . ( ① ) Explicit Cues Question No.1 Synonyms: Choose the correct answer : 1- The detectives were deluded by all the false evidence . ( ② ) Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony. ( ③ ) Excruciating means _____________ a) painful. ( ④ ) b) wonderful c) hurtful 3-Inveterate gamblers are habitual customers at the race track betting widows. ( ⑤ ) Inveterate means ____________ a) ancient b) regular c) casual 4- Our plane tickets were voided when the airline ticket agent declared that the airport was closed . Therefore , all reservations were cancelled . voided means ___________ a) reserved b) stolen c ) not valid 5-Although the insurrection began in the rural areas , the rebellion quickly spread throughout the cities . Insurrection means _________ a) elections b) revolt c) journey.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 2,
-    "explanation": "주어진 문장의 연결 단서가 ② 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘deluded’를 ‘convince(확신시키다)’로 오해한 이유는 ‘deceive(속이다)’와 ‘convince’의 의미를 혼동한 것 같다. ‘delude’는 ‘속이다’와 가까운 뜻이지만, ‘convince’는 ‘확신시키다’로 반대 의미에 가깝다. → 처방: ‘deceive(속이다)’와 ‘delude(속이다)’의 의미를 비교해 보고, 문맥에서 ‘delude’의 뜻을 ‘속이다’로 이해하도록 연습한다.\n③ 진단: ‘inveterate’를 ‘ancient(고대의)’로 오해한 이유는 ‘inveterate’의 ‘습관적인’이라는 뜻과 ‘고대의’라는 뜻이 비슷하다고 착각한 것 같다. ‘inveterate’는 ‘오랜 습관’과 관련이 있다. → 처방: ‘inveterate’의 ‘vet(오랜)’이라는 어원을 떠올리며, ‘습관적인’이라는 뜻임을 기억하도록 한다.\n④ 진단: ‘voided’를 ‘stolen(훔친)’으로 오해한 이유는 ‘void(무효로 하다)’와 ‘steal’의 의미를 혼동한 것 같다. ‘void’는 ‘무효로 하다’로, ‘stolen’은 ‘훔친’으로 의미가 다르다. → 처방: ‘void’의 뜻을 ‘무효로 하다’라고 기억하고, 문맥에서 ‘not valid(유효하지 않은)’과 연결 지어 이해하도록 연습한다.\n⑤ 진단: ‘insurrection’을 ‘elections(선거)’로 오해한 이유는 ‘rebellion(반란)’과 ‘elections’의 의미를 혼동한 것 같다. ‘insurrection’은 ‘반란’이라는 뜻으로, ‘elections’과는 전혀 다르다. → 처방: ‘insurrection’의 뜻을 ‘반란’으로 기억하고, ‘elections’과는 반대되는 개념임을 떠올리며 문맥을 확인하도록 한다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T08:01:29.214Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 11,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 망상은 자신을 속이는 상태를 의미합니다. (구문 포인트: 수동태(are prescribed) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T07:11:25.543Z",
-   "type": "혼합통합형",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
-    "passage": "The Grammar Geek 56 6. Lorsque nous rencontrerons des problèmes, nous vous le dirons. (encounter, tell) \b 7. Il arrivera quand il arrivera. (get here) \b 8. Voici l’itinéraire pour demain: on commence par le musée à 9h00. Après la visite guidée, on embarque dans l’autobus et on va au restaurant. (start, get on, go) \b \b 9. Annie vous fera signe au moment où vous entrerez dans la salle. (wave at, come in) \b 10. Je ne sais pas si Tony est dans son bureau. Je regarderai dès que j’aurai une minute. (check, get) \b EXERCISE 3: CONTEXTS Choose the correct answer. Then write contexts for each one. 1. In which one is the speaker on an organized group tour? a) We visit the Empire State Building tomorrow. b) We are visiting the Empire State Building tomorrow. 2. In which one does the speaker want to know about the person’s personal plans for after breakfast? a) What are you doing after breakfast? b) What do you do after breakfast?",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
