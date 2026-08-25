@@ -1,6 +1,25 @@
 {
- "updated": "2026-08-25T09:07:00.273Z",
+ "updated": "2026-08-25T09:59:59.714Z",
  "samples": [
+  {
+   "ts": "2026-08-25T09:59:25.249Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 아이는 기본 프라이머에서 읽는 법을 배웠습니다.\n주어진 단어: ( from / a / The / basic / child / read / primer / to / learned )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The child learned to read from a basic primer.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-25T09:02:08.276Z",
    "type": "요지",
@@ -331,41 +350,6 @@
     ],
     "answer": 1,
     "explanation": "빈칸에는 원문 'The overall sentence (10) Mary knows John'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: 지문에서 'John smokes'가 knows 의 보어로 쓰인 보문장(complement clause)임을 보지 못하고, 'knows' 다음에 관사가 없는 명사 'John'이 와서 문법적으로 틀렸다고 오해한 듯함. → 처방: 보문장이 보어로 쓰일 수 있는지 확인하고, 보어 자리에 오는 절의 구조를 정확히 분석하는 연습을 하세요. 예를 들어 'I know that he is kind'와 같은 예문을 보며 보문장의 역할을 익히세요.\n③ 진단: 지문에서 'knows'가 보문장(complement clause) 'John smokes'를 보어로 취한다는 사실을 무시하고, 'knows'가 보어를 취하지 않는다고 잘못 이해한 듯함. → 처방: 보어의 개념과 보문장의 역할을 다시 공부하고, 'knows'와 같은 동사가 보어를 취할 수 있는지 확인하는 연습을 하세요. 'She thinks he is smart' 같은 문장을 보며 보어의 종류를 구분해 보세요.\n④ 진단: 지문에서 'smokes'가 보문장이 아니라 주절의 술어(predicate)임을 보지 못하고, 두 술어 'knows'와 'smokes'가 모두 주절이라고 오해한 듯함. → 처방: 주절과 보문장을 구분하는 기준을 다시 공부하고, 'She said he left'와 같은 문장에서 주절과 보문장을 찾아내는 연습을 반복하세요.\n⑤ 진단: 지문에서 'Mary knows John'이 보문장이 아니라 주절임을 보지 못하고, 'Mary knows John'이 보문장이라고 잘못 이해한 듯함. 또한 보문장이 주어('Mary')를 수식한다는 오해도 보임. → 처방: 보문장의 역할과 위치를 정확히 이해하고, 'I believe he is honest'와 같은 문장에서 보문장이 어디에 위치하는지 확인하는 연습을 하세요.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T01:56:35.827Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버교정: 솔버 2/3 다수결 5번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "CLAUSES as SUBJECT-PREDICATE PREDICATION STRUCTURES",
-     "CLAUSES as SIMPLE SENTENCE FORMS",
-     "PREDICATION REQUIRES CLAUSE COMPLEMENTS",
-     "PREDICATION NEEDS TWO CLAUSES",
-     "CLAUSES OFTEN HAVE COMPLEX COMPLEMENTS"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Clauses are predication structures with subject-predicate relationships.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Clauses are predication structures with subject-predicate relationships.**]\n[오답 진단·처방]\n① 진단: ‘predication structure’가 ‘주어-서술어 구조’를 뜻한다는 점은 맞지만, 지문은 ‘clause’를 ‘predication structure’로 정의하며 ‘clause’가 ‘complement’나 ‘adjunct’를 포함할 수 있음을 설명하고 있으므로, ‘clause’를 ‘단순한 주어-서술어 구조’로만 한정해 오해한 듯함. → 처방: ‘clause’의 정의와 역할을 다시 확인하고, 지문에서 ‘complement clause’가 ‘clause’의 한 종류임을 기억할 것.\n② 진단: ‘simple sentence forms’가 ‘단순한 문장 형태’를 뜻한다는 점은 맞지만, 지문은 ‘clause’의 복잡한 구조(예: complement clause)를 설명하고 있으므로, ‘clause’를 ‘단순한 문장’으로만 오해한 듯함. → 처방: ‘clause’가 ‘단순한 문장’이 아니라 ‘predication structure’라는 점을 강조하고, 지문에서 ‘complement clause’가 포함된 예를 다시 읽어볼 것.\n③ 진단: ‘predication requires clause complements’는 지문에서 ‘knows’의 complement 가 ‘clause’임을 설명하지만, 지문은 ‘predication’이 ‘clause’를 구성하는 기본 요소임을 강조하고 있으므로, ‘complement’이 필수라는 오해를 한 듯함. → 처방: ‘predication’이 ‘clause’를 이루는 기본 요소임을 이해하고, ‘complement’이 항상 필요한 것은 아님을 기억할 것.\n④ 진단: ‘predication needs two clauses’는 지문에서 ‘knows’와 ‘smokes’가 각각 ‘clause’를 이룬다고 설명하지만, 이는 ‘clause’의 정의와 구조를 설명하기 위한 예시일 뿐, ‘predication’이 반드시 ‘두 clause’를 필요로 하는 것은 아님을 오해한 듯함. → 처방: ‘clause’의 정의와 예시를 다시 확인하고, ‘predication’이 ‘clause’를 이루는 기본 요소임을 기억할 것."
    }
   }
  ]
