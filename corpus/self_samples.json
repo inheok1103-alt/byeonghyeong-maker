@@ -1,6 +1,94 @@
 {
- "updated": "2026-08-25T07:24:31.569Z",
+ "updated": "2026-08-25T08:02:02.092Z",
  "samples": [
+  {
+   "ts": "2026-08-25T08:00:42.341Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Part II Contextual Analysis I . Explicit Cues Question No.1 Synonyms: Choose the correct answer : 1- The detectives were deluded by all the false evidence . They were completely deceived and they arrested the wrong person. Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony. Excruciating means _____________ a) painful. b) wonderful c) hurtful 3-Inveterate gamblers are habitual customers at the race track betting widows. Inveterate means ____________ a) ancient b) regular c) casual 4- Our plane tickets were voided when the airline ticket agent declared that the airport was closed . Therefore , all reservations were cancelled . voided means ___________ a) reserved b) stolen c ) not valid 5-Although the insurrection began in the rural areas , the rebellion quickly spread throughout the cities . Insurrection means _________ a) elections b) revolt c) journey.\n\n─────────\n[요약문] Detectives were misled by fabricated evidence, leading to incorrect arrests, though (A) deception and (B) consequences were severe.",
+    "choices": [
+     "(A) evidence … (B) pain",
+     "(A) fabricated … (B) relief",
+     "(A) deception … (B) consequences",
+     "(A) fabricated … (B) innocence",
+     "(A) fabrication … (B) arrests"
+    ],
+    "answer": 3,
+    "explanation": "(A) deception / (B) consequences 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘evidence’를 ‘증거’가 아닌 ‘고통’으로 오해했으며, ‘pain’이 ‘relief’와 대조되는 뜻임을 몰라 ‘(A) evidence’와 ‘(B) pain’을 잘못 짝지음. 지문에서 ‘false evidence’가 ‘deceived’를 유도했음을 놓침. → 처방: 단어의 뜻을 정확히 기억하고, 문맥에서 ‘evidence’가 ‘증거’임을 확인한 뒤, ‘pain’과 ‘relief’를 ‘고통’과 ‘안도’로 구분해 짝짓기.\n② 진단: ‘fabricated’를 ‘만들어진’으로, ‘relief’를 ‘안도’가 아닌 ‘구제’로 오해해 ‘(A) fabricated’와 ‘(B) relief’를 잘못 짝지음. 지문에서 ‘fabricated evidence’가 ‘deceived’를 낳았음을 놓침. → 처방: ‘fabricated’는 ‘거짓된’, ‘relief’는 ‘고통 완화’임을 정확히 기억하고, 문맥에 맞게 짝짓기.\n④ 진단: ‘fabricated’를 ‘만들어진’으로, ‘innocence’를 ‘무죄’가 아닌 ‘결과’로 오해해 ‘(A) fabricated’와 ‘(B) innocence’를 잘못 짝지음. 지문에서 ‘fabricated evidence’가 ‘incorrect arrests’를 낳았음을 놓침. → 처방: ‘innocence’는 ‘무죄’임을 기억하고, 문맥에서 ‘incorrect arrests’가 ‘결과’임을 확인해 짝짓기.\n⑤ 진단: ‘fabrication’을 ‘거짓’으로, ‘arrests’를 ‘체포’가 아닌 ‘결과’로 오해해 ‘(A) fabrication’와 ‘(B) arrests’를 잘못 짝지음. 지문에서 ‘fabrication’이 ‘incorrect arrests’를 낳았음을 놓침. → 처방: ‘arrests’는 ‘체포’임을 기억하고, 문맥에서 ‘incorrect’라는 말이 ‘결과’임을 확인해 짝짓기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-25T08:01:08.545Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] They were completely deceived and they arrested the wrong person.\n\nPart II Contextual Analysis I . ( ① ) Explicit Cues Question No.1 Synonyms: Choose the correct answer : 1- The detectives were deluded by all the false evidence . ( ② ) Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony. ( ③ ) Excruciating means _____________ a) painful. ( ④ ) b) wonderful c) hurtful 3-Inveterate gamblers are habitual customers at the race track betting widows. ( ⑤ ) Inveterate means ____________ a) ancient b) regular c) casual 4- Our plane tickets were voided when the airline ticket agent declared that the airport was closed . Therefore , all reservations were cancelled . voided means ___________ a) reserved b) stolen c ) not valid 5-Although the insurrection began in the rural areas , the rebellion quickly spread throughout the cities . Insurrection means _________ a) elections b) revolt c) journey.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 2,
+    "explanation": "주어진 문장의 연결 단서가 ② 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘deluded’를 ‘convince(확신시키다)’로 오해한 이유는 ‘deceive(속이다)’와 ‘convince’의 의미를 혼동한 것 같다. ‘delude’는 ‘속이다’와 가까운 뜻이지만, ‘convince’는 ‘확신시키다’로 반대 의미에 가깝다. → 처방: ‘deceive(속이다)’와 ‘delude(속이다)’의 의미를 비교해 보고, 문맥에서 ‘delude’의 뜻을 ‘속이다’로 이해하도록 연습한다.\n③ 진단: ‘inveterate’를 ‘ancient(고대의)’로 오해한 이유는 ‘inveterate’의 ‘습관적인’이라는 뜻과 ‘고대의’라는 뜻이 비슷하다고 착각한 것 같다. ‘inveterate’는 ‘오랜 습관’과 관련이 있다. → 처방: ‘inveterate’의 ‘vet(오랜)’이라는 어원을 떠올리며, ‘습관적인’이라는 뜻임을 기억하도록 한다.\n④ 진단: ‘voided’를 ‘stolen(훔친)’으로 오해한 이유는 ‘void(무효로 하다)’와 ‘steal’의 의미를 혼동한 것 같다. ‘void’는 ‘무효로 하다’로, ‘stolen’은 ‘훔친’으로 의미가 다르다. → 처방: ‘void’의 뜻을 ‘무효로 하다’라고 기억하고, 문맥에서 ‘not valid(유효하지 않은)’과 연결 지어 이해하도록 연습한다.\n⑤ 진단: ‘insurrection’을 ‘elections(선거)’로 오해한 이유는 ‘rebellion(반란)’과 ‘elections’의 의미를 혼동한 것 같다. ‘insurrection’은 ‘반란’이라는 뜻으로, ‘elections’과는 전혀 다르다. → 처방: ‘insurrection’의 뜻을 ‘반란’으로 기억하고, ‘elections’과는 반대되는 개념임을 떠올리며 문맥을 확인하도록 한다.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-25T08:01:29.214Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 11,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 망상은 자신을 속이는 상태를 의미합니다. (구문 포인트: 수동태(are prescribed) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-25T07:11:25.543Z",
    "type": "혼합통합형",
@@ -278,107 +366,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓑ의 풀이는 'alone'의 정의이다. 'german'의 올바른 풀이: A near relative.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘english’의 오독은 ‘회전 운동’을 뜻하는 ‘english’(스포츠 용어)와 ‘영어’를 뜻하는 ‘English’를 혼동한 것으로 보인다. 지문에서 ‘English’는 언어명을 가리키며, 선지①의 뜻은 전혀 관련이 없다. → 처방: ‘english’를 ‘영어’라는 언어명으로만 떠올리고, 지문에서 그 단어가 쓰인 맥락을 확인해 단어의 뜻을 정확히 짚어라.\n② 진단: ‘german’의 오독은 ‘혼자’라는 뜻의 ‘by oneself’를 ‘german’으로 오해한 것이다. 지문에서 ‘german’은 언어명을 가리키며, 선지②의 뜻은 ‘german’이라는 단어와 전혀 다르다. → 처방: ‘german’을 ‘독일어’라는 언어명으로만 생각하고, 지문에서 그 단어가 쓰인 문맥을 다시 한 번 확인해 뜻을 정확히 짚어라.\n④ 진단: ‘languages’의 오독은 ‘언어’를 뜻하는 ‘languages’를 ‘문법’이라는 뜻으로 오해한 것이다. 지문에서 ‘languages’는 ‘언어’를 가리키며, 선지④는 ‘언어’를 설명하는 부분과 일부 일치하지만 ‘문법’이라는 뜻은 포함하지 않는다. → 처방: ‘languages’를 ‘언어’라는 뜻으로만 생각하고, 지문에서 그 단어가 쓰인 문장을 다시 읽어 뜻을 정확히 짚어라.\n⑤ 진단: ‘version’의 오독은 ‘형태’를 뜻하는 ‘version’을 ‘언어’를 뜻하는 ‘languages’와 혼동한 것이다. 지문에서 ‘version’은 ‘형태’를 가리키며, 선지⑤는 ‘형태’를 설명하는 부분과 일치한다. → 처방: ‘version’을 ‘형태’라는 뜻으로만 생각하고, 지문에서 그 단어가 쓰인 문장을 다시 읽어 뜻을 정확히 짚어라."
-   }
-  },
-  {
-   "ts": "2026-08-24T22:47:05.725Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어 소유격 대명사는 소유의 의미를 나타내는 두 가지 형태로 나뉘지만, 두 형태 모두 같은 문법적 역할을 수행한다",
-     "영어 소유격 대명사의 형태가 문법적 역할을 결정하지 않으며, 오히려 문법적 역할이 형태를 결정한다는 사실은 잘못된 주장이다",
-     "영어 대명사 대부분이 소유격 대명사를 포함해 형용사적 기능과 대명사적 기능을 동시에 갖추는 것은 아니다",
-     "영어 소유격 대명사는 문장 내 위치에 따라 형용사적 기능과 대명사적 기능 중 하나를 임의로 선택할 수 있다",
-     "영어 소유격 대명사는 형용사처럼 쓰이는 형태와 대명사처럼 쓰이는 형태가 각각 달라, 각기 다른 문법적 역할을 수행한다"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Possessive pronouns in English have two distinct forms—adjectival and pronominal—each serving different grammatical functions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 핵심 조건·전제를 빠뜨림· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘두 형태 모두 같은 문법적 역할을 수행한다’는 문장에서 ‘형태’와 ‘문법적 역할’이 뒤섞였고, 지문은 ‘형태가 달라지면 역할도 달라진다’고 분명히 밝혔음에도 ‘같은 역할’을 주장하여 지문과 반대됨. → 처방: 형태가 문법적 역할을 결정한다는 지문의 내용을 정확히 읽고, 형태와 역할의 관계를 ‘서로 다르다’로 기억하기.\n② 진단: ‘문법적 역할이 형태를 결정한다’는 잘못된 주장이라고 오해했는데, 지문은 ‘형태가 문법적 역할을 결정한다’고 명시했으므로 이 선지는 지문의 핵심과 정반대임. → 처방: ‘결정한다’는 동사가 ‘형태→역할’ 방향임을 반드시 확인하고, 반대 방향은 없다고 기억하기.\n③ 진단: ‘대부분의 대명사가 형용사적 기능과 대명사적 기능을 동시에 갖추지 않는다’는 문장에서 ‘대부분’이란 단어를 오해해 지문의 ‘소유격 대명사만’ 해당된다는 한정적 의미를 무시했음. → 처방: ‘소유격 대명사’에만 초점을 맞추고, ‘대부분’이란 말은 이 지문에서는 해당되지 않는다는 점을 분명히 하기.\n④ 진단: ‘임의로 선택할 수 있다’는 표현에서 ‘위치’에 따라 기능이 바뀌는 것처럼 오해했는데, 지문은 ‘형태’에 따라 기능이 정해진다고 설명했으므로 이 선지는 지문과 무관한 주장임. → 처방: ‘형태’와 ‘기능’이 고정된 관계임을 기억하고, ‘위치’나 ‘선택’이라는 단어는 이 문제와 무관하다는 점을 분명히 하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Possessive pronouns in English have two distinct forms—adjectival and pronominal—each serving different grammatical functions.]"
-   }
-  },
-  {
-   "ts": "2026-08-24T22:52:04.336Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 3건 · 솔버교정: 솔버 2/3 다수결 1번(기록 2번 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the dual grammatical roles of possessive pronouns in English",
-     "distinct grammatical functions of possessive pronouns in English",
-     "how possessive determiners and pronouns overlap in English grammar",
-     "the necessity of two possessive forms for personal pronouns",
-     "common misconceptions about possessive pronouns in grammar"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Possessive pronouns in English have two distinct functions: adjectival (e.g., *my*) and pronominal (e.g., *mine*).'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 논지에서 어긋남· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 조건 누락· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Possessive pronouns in English have two distinct functions: adjectival (e.g., *my*) and pronominal (e.g., *mine*).]\n[오답 진단·처방]\n② 진단: ‘distinct grammatical functions’를 ‘dual roles’와 혼동하여, ‘distinct’는 ‘서로 다른’(구분된) 의미로 ‘dual’(이중의)과는 다르다는 점을 놓침. 지문은 ‘adjectival possessive pronouns’와 ‘pronominal possessive pronouns’를 구분하지만, ‘distinct’는 ‘서로 다른 기능’을 가리키는 반면 ‘dual’은 ‘두 가지 역할’을 가리킴. → 처방: ‘distinct’는 ‘서로 다른 기능’을, ‘dual’는 ‘이중 역할’을 뜻한다는 점을 기억하고, 지문에서 두 가지로 나뉜 possessive pronouns 의 ‘기능’을 정확히 짚어보기.\n③ 진단: ‘overlap’(겹침)을 오해하여, possessive determiners(‘my’, ‘your’)와 pronouns(‘mine’, ‘yours’)가 ‘겹치는’ 것이 아니라 ‘서로 다른 역할’을 한다는 점을 놓침. 지문은 ‘my’는 determiner 로, ‘mine’는 pronoun 으로 기능한다고 명확히 설명함. → 처방: ‘overlap’이 아니라 ‘서로 다른 역할’을 한다는 점을 확인하고, 지문에서 ‘my’는 ‘adjectival possessive pronoun’, ‘mine’는 ‘pronominal possessive pronoun’이라는 용어를 다시 한 번 읽어보기.\n④ 진단: ‘necessity’(필요성)를 강조하여, possessive pronouns 가 ‘두 가지 형태’가 있어야 한다는 ‘필요성’을 오해함. 지문은 ‘두 가지 형태가 있다’는 사실만 설명하고, 그 ‘필요성’을 언급하지 않음. → 처방: ‘필요성’이 아니라 ‘형태가 두 가지’라는 사실에 집중하고, 지문에서 ‘my’와 ‘mine’이 ‘서로 다른 기능’을 한다는 점을 다시 확인하기.\n⑤ 진단: ‘common misconceptions’(흔한 오해)를 오해하여, possessive pronouns 에 대한 ‘오해’를 다룬다는 점을 놓침. 지문은 ‘possessive pronouns’의 ‘두 가지 형태와 기능’을 설명하는 데 초점을 두고, ‘오해’를 다루지 않음. → 처방: ‘misconceptions’이 아니라 ‘possessive pronouns 의 두 가지 형태와 기능’을 정확히 짚어보기. 지문에서 ‘adjectival possessive pronouns’와 ‘pronominal possessive pronouns’를 구분하는 부분을 다시 읽기."
-   }
-  },
-  {
-   "ts": "2026-08-24T21:45:28.911Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the distinction between itinerant and itinerary",
-     "the pronunciation differences of 'itinerant' and 'itinerary",
-     "the negative effects of living an itinerant life",
-     "the common features shared by travel-related vocabulary",
-     "the spelling variations between 'itinerant' and 'itinerary"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The distinction between \"itinerant\" and \"itinerary'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 지문에서 'itinerant'과 'itinerary'의 뜻과 예문은 자세히 설명하지만 발음 차이는 언급하지 않음. 학생은 발음 차이를 중요하게 여겼거나, 지문을 제대로 읽지 않고 제목만 보고 판단했을 수 있음. → 처방: 지문 전체를 꼼꼼히 읽고, 각 단어의 뜻과 예문을 확인한 뒤 주제를 판단하기.\n③ 진단: 지문에서 'itinerant'의 예문은 '이동하는 삶'을 묘사하지만, 'negative effects(부정적 효과)'는 언급되지 않음. 학생은 단어의 뜻만 보고 주제를 과장하거나 추측했을 가능성 있음. → 처방: 지문의 예문이나 설명에 없는 내용은 주제로 삼지 말고, 제시된 정보만으로 판단하기.\n④ 진단: 지문은 'itinerant'과 'itinerary'의 뜻과 예문만 다루며, 'travel-related vocabulary(여행 관련 어휘)'의 공통점은 언급하지 않음. 학생은 단어의 연관성만 보고 주제를 넓게 해석했을 수 있음. → 처방: 지문에 직접 언급된 단어와 뜻, 예문에만 집중하고, 연관된 다른 단어는 고려하지 않기.\n⑤ 진단: 지문은 'itinerant'과 'itinerary'의 뜻과 예문만 다루며, 철자 차이는 언급하지 않음. 학생은 단어의 모양만 보고 주제를 판단했을 가능성 있음. → 처방: 단어의 뜻과 예문을 우선 확인하고, 철자나 발음은 부가적인 정보로만 생각하기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The distinction between \"itinerant\" and \"itinerary]"
    }
   }
  ]
