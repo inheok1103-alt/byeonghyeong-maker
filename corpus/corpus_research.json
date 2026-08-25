@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T10:53:26.046Z",
+ "updated": "2026-08-25T11:46:47.471Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-25T11:46:23.090Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스의 연어 패턴은 학술·문법 관련 용어와 시공간적 맥락(Old English, Middle English, New York 등)이 빈번히 결합됨을 보여준다. 특히 'old/new + noun' 구조가 학술적 문체에서 강조되는 경향을 보인다.",
+   "rule": "학술·문법 문장에서는 부정어(예: not, no)의 중복 사용을 금지하고, 'there + modal + be + any/no + noun' 구조로 부정의 의미를 명확히 표현하도록 한다. 예: 'There cannot be any bothering or hassle.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T10:52:55.436Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'so'나 'except that'와 같은 접속사 다음에 주어+동사 구조가 생략된 경우가 빈번히 관찰되었다. 이는 학습자들이 접속사 뒤의 절에서 주어와 조동사를 반복하는 오류를 범하는 주요 원인으로 작용한다.",
    "rule": "CEFR B1 수준의 내신 문항에서 접속사(so, but, except that 등) 뒤 절의 주어와 조동사를 생략하지 않도록 명시적으로 요구하는 문장을 출제하라. 예: 'The weather was bad, so (it) was canceled.' → 'The weather was bad, so it was canceled.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-22T17:45:25.802Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "대명사·동사 수 일치 오류와 문장부호(콤마) 누락이 다수 관찰된다. 특히 주격 대명사와 동사의 수 일치 오류가 빈번하며, 접속사 뒤 콤마 생략이 특징적이다.",
-   "rule": "'주어(대명사/명사)와 동사의 수 일치를 반드시 확인하라. 또한 접속사(and, so, therefore) 뒤에는 반드시 콤마를 삽입하라. 예: 'I think' → 'I thinks' (X) → 'I think' (O), 'So I' → 'So , I' (O).",
    "sample": [
     "old english",
     "university press",
