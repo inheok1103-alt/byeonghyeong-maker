@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-25T03:15:11.188Z",
+ "updated": "2026-08-25T04:10:20.695Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "원지문은 단일 괄호로 구성하되, 문장 구조를 단순화하여 수능/내신 수준에 맞게 재구성하고, 정답은 한 개의 괄호에 한 개의 동사/동명사 형태만 요구하도록 일관성 있게 설계하라.",
+   "src": "자가학습:어형변형(괄호)",
+   "score": 62,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-25T04:02:45.258Z"
+  },
+  {
+   "rule": "지문 내 모든 목차 항목(예: 'Contents', 'Preface', 하위 분류 포함)과 그 순서를 명시적으로 제시하여 선지의 논리적 흐름과 일치성을 보장하고, 발문의 조건을 구체화할 것.",
+   "src": "자가학습:글의순서",
+   "score": 84,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-25T04:02:57.760Z"
+  },
   {
    "rule": "모든 출제에서 필자의 주장(관찰·사실 제시 수준)을 의무·강제·과장되지 않은 중립적 표현으로 서술하고, 선지·발문이 필자의 주장 수준을 정확히 반영토록 해야 한다.",
    "src": "자가학습:필자주장",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-21T21:42:28.854Z"
-  },
-  {
-   "rule": "An itinerant lifestyle involves moving from place to place often.",
-   "src": "자가학습:조건영작",
-   "score": 83,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-21T21:42:56.820Z"
-  },
-  {
-   "rule": "모든 문항은 지문의 핵심 문법 구조(예: bare-stem vs. infinitive, informal passives)와 형식성 차이를 직접 반영한 선지들로만 구성되어야 하며, 핵심 내용의 90% 이상이 요지 선지에 포함되도록 하되, 세부 설명(예: 'predictable exception' 등)을 과도하게 일반화하거나 오용하지 않도록 엄격히 제한해야 한다.",
-   "src": "자가학습:요지",
-   "score": 76,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-21T20:42:58.356Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
