@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-26T15:56:36.145Z",
+ "updated": "2026-08-26T17:04:09.954Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T17:03:34.596Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "원서 코퍼스의 실제 오류 패턴에서 '명사구 내 한정사 생략'과 '동사구 내 조동사·원형동사 결합 오류'가 빈번함을 확인할 수 있다. 특히, 'the' 생략이나 조동사+원형동사 구조의 오류가 문법 오류로 자주 발생함을 알 수 있다.",
+   "rule": "'명사구 내 한정사(the/a/an) 생략 오류'와 '조동사(could/would/may 등)+원형동사(be/do 등) 결합 오류'를 문항으로 출제할 때는, 해당 오류가 자연스러운 문맥에서 발생할 수 있도록 '명사구(특히 고유명사·국가명·언어명)'와 '조동사+동사구'를 포함한 문장을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-26T15:56:11.919Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거형/현재형 시제 불일치, 전치사 오용, 관사 누락이 빈번한 오류로 나타나며, 특히 'kept from ~ing' 구문과 'with'의 부적절한 사용이 두드러진다.",
    "rule": "원서에서 빈발하는 'kept from ~ing', 'with'의 부적절한 사용, 관사 누락 패턴을 반영하여, 학생들이 'kept from ~ing' 구문에서 동사 형태(~ing) 오류, 'with'의 부적절한 사용, 관사 생략 오류를 범할 수 있도록 연어 기반 오답을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T19:40:04.135Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스의 실제 패턴에서 'of course', 'also', 'in fact'와 같은 부사구가 문장 맨 앞에 위치하는 경우가 많으며, 'as much as'나 'should be'와 같은 비교급/조동사 구문이 오류 발생 지점으로 자주 활용됨을 확인할 수 있다.",
-   "rule": "원서 코퍼스의 패턴을 반영하여, 'of course', 'also', 'in fact'와 같은 부사구가 문장 맨 앞에 오면, 해당 부사구 뒤에는 반드시 콤마(,)를 삽입하여 문장 구조를 명확히 한다. 또한 'as much as'와 같은 비교급 구문 뒤에는 'successful'과 같은 형용사가 아닌 'success'와 같은 명사가 오도록 오류 유도를 한다.",
    "sample": [
     "old english",
     "university press",

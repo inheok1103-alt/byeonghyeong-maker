@@ -1,6 +1,118 @@
 {
- "updated": "2026-08-26T15:56:36.149Z",
+ "updated": "2026-08-26T17:04:09.958Z",
  "samples": [
+  {
+   "ts": "2026-08-26T17:02:14.996Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "WORDSEARCH 28 Using the clues listed below, ⓐ<u>record separately</u> using one of the new words you learned this week for each blank in the following story. Clues 2nd Day 3rd Day 1st Day 4th Day 2nd Day Read My Lips For many years it has been the goal of computer specialists to perfect a machine that would understand human speech. The problem is that ⓑ<u>the speaker has to be alone</u> and in a quiet room. ⓒ<u>Noise will damages the computer’s ability</u>. In ⓓ<u>the of a special room</u>, the computer works well. Now, math wizards are trying to develop a computer that will read lips despite any surrounding . While some of us ⓔ<u>think it believing</u> that a computer can read lips, the experiments go on. And there has been some success. Progress in all aspects of computer science has been so remarkable that we hesitate to rule out any possibility. There is one rule about the world of computers: the seemingly impossible gets done more quickly than we ever imagined.",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 2,
+    "explanation": "틀린 곳은 ⓒ(Noise will damages the computer’s ability → Noise will the computer’s ability), ⓔ(think it believing → think it to believe) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘record separately’를 ‘따로따로 기록하다’로 해석해 ‘record’를 동사로 오인했으나, 문맥상 ‘기록하다’는 뜻이 없으며 ‘separately’는 부사로 ‘따로’로만 쓰였으므로 어법 오류가 아님. → 처방: ‘record’를 동사로 오인하지 말고, 문장 구조를 살피며 부사 ‘separately’의 역할(‘따로’)을 정확히 이해하기.\n③ 진단: ‘Noise will damages’를 ‘소음이 손상을 입힐 것이다’로 해석해 ‘damages’를 동사로 오인했으나, ‘damage’는 ‘손상시키다’로 동사이고 ‘damages’는 3인칭 단수 현재형이므로 ‘will’ 뒤에는 원형 동사가 와야 함. → 처방: ‘will’ 뒤에는 동사 원형이 오는지 확인하고, ‘damage’의 올바른 형태(‘damages’가 아님)를 기억하기.\n④ 진단: ‘the of a special room’을 ‘특별한 방의’이라는 뜻으로 오해해 ‘of’를 전치사로만 생각했으나, ‘in the of’는 ‘~의 경우’라는 관용구로 ‘in the case of’가 맞는 표현임. → 처방: ‘in the of’를 ‘~의 경우’라는 관용구로 인식하고, ‘case’를 넣어 ‘in the case of’가 되어야 함을 기억하기.\n⑤ 진단: ‘think it believing’을 ‘믿는다고 생각하다’로 해석해 ‘believing’을 동사로 오인했으나, ‘think that + 주어 + 동사’ 구조에서 ‘believing’는 현재분사로 잘못 쓰였음. ‘think it is believable’ 또는 ‘think that it is believable’이 옳음. → 처방: ‘think’ 다음에는 ‘that + 주어 + 동사’ 구조가 오는지 확인하고, 현재분사 대신 완전한 절을 쓰도록 연습하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T17:02:45.065Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.63,
+    "D": 0.5,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] In the of a special room, the computer works well.\n\nWORDSEARCH 28 Using the clues listed below, record separately using one of the new words you learned this week for each blank in the following story. Clues 2nd Day 3rd Day 1st Day 4th Day 2nd Day Read My Lips For many years it has been the goal of computer specialists to perfect a machine that would understand human speech. ( ① ) The problem is that the speaker has to be alone and in a quiet room. ( ② ) Noise will the computer’s ability. ( ③ ) Now, math wizards are trying to develop a computer that will read lips despite any surrounding . ( ④ ) While some of us think it to believe that a computer can read lips, the experiments go on. ( ⑤ ) And there has been some success. Progress in all aspects of computer science has been so remarkable that we hesitate to rule out any possibility. There is one rule about the world of computers: the seemingly impossible gets done more quickly than we ever imagined.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘Read My Lips’의 주제가 ‘컴퓨터가 말을 이해하는 기계’를 만드는 것이지, ‘특별한 방’이 아니라는 점을 오해한 듯하다. ①은 ‘목표’가 ‘말을 이해하는 기계’라는 설명으로 시작하므로, ‘특별한 방’이 먼저 나올 이유가 없다. → 처방: ‘Read My Lips’가 컴퓨터가 말을 이해하는 기계에 대한 설명임을 먼저 확인하고, 그 다음에 ‘특별한 방’이 등장하는지 확인하기.\n② 진단: ‘혼자 있고 조용한 방’이 필요하다는 설명이 ②에 이미 나와 있는데, 같은 내용을 또 넣는 것은 글의 흐름을 깨는 오류다. 학생은 ‘조용한 방’이 ‘특별한 방’을 대체하는 개념이라고 착각한 듯하다. → 처방: ‘Read My Lips’의 각 문단이 어떤 내용을 설명하는지 한 문장으로 요약해 본 뒤, 빈칸에 들어갈 단어가 그 문단의 주제와 맞는지 확인하기.\n④ 진단: ‘주변 소음’이 ④에 이미 언급되어 있는데, 같은 내용을 또 넣는 것은 중복이다. 학생은 ‘소음’이 ‘특별한 방’의 특징 중 하나라고 오해한 듯하다. → 처방: 빈칸에 들어갈 단어가 ‘특별한 방’의 특징(예: ‘고요함’, ‘격리’)을 설명하는지 확인하고, 이미 언급된 단어는 피하기.\n⑤ 진단: ‘실험이 진행 중’이라는 ⑤의 내용과 ‘특별한 방’이 필요하다는 내용은 직접적인 관련이 없다. 학생은 ‘컴퓨터가 잘 작동하는 조건’이 ‘실험 환경’이라는 점만 떠올린 듯하다. → 처방: 빈칸에 들어갈 단어가 ‘컴퓨터가 말을 이해하는 데 필요한 조건’을 설명하는지, 아니면 ‘실험의 진행 상황’을 설명하는지 명확히 구분하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T17:03:24.711Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "WORDSEARCH 28 Using the clues listed below, record separately using one of the new words you learned this week for each blank in the following story. Clues 2nd Day 3rd Day 1st Day 4th Day 2nd Day <u>Read My Lips</u> For many years it has been the goal of computer specialists to perfect a machine that would understand human speech. The problem is that the speaker has to be alone and in a quiet room. Noise will the computer’s ability. In the of a special room, the computer works well. Now, math wizards are trying to develop a computer that will read lips despite any surrounding . While some of us think it to believe that a computer can read lips, the experiments go on. And there has been some success. Progress in all aspects of computer science has been so remarkable that we hesitate to rule out any possibility. There is one rule about the world of computers: the seemingly impossible gets done more quickly than we ever imagined.",
+    "choices": [
+     "The phrase 'Read My Lips' literally means to pay close attention to someone's spoken words.",
+     "Lip-reading technology has already become widely accessible and no longer requires breakthroughs.",
+     "Lip-reading technology can only interpret a small fraction of spoken words, making it unreliable for most practical use.",
+     "Despite its initial impossibility, lip-reading technology has remained stagnant and failed to advance significantly.",
+     "Lip-reading technology, though seemingly impossible, can achieve breakthroughs faster than expected."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'Lip-reading technology, though seemingly impossible, can achieve breakthroughs faster than expected.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘Read My Lips’를 글의 제목으로만 보고 ‘입술을 읽어라’가 ‘말을 주의 깊게 듣는 것’을 뜻한다고 오해한 듯. 지문은 기술의 이름(입술 읽기 기술)을 제목으로 썼고, 내용은 기술이 입술을 읽는다는 뜻임을 보여줌. → 처방: 제목과 본문의 연결을 먼저 확인하고, 기술의 이름과 실제 기능이 같은지 확인하는 습관을 들인다.\n② 진단: ‘이미 널리 보급되어 breakthrough(획기적 발전)이 필요 없다’고 오해했는데, 지문은 ‘아직 실험 중’이거나 ‘성공 사례가 일부’라는 내용임. ‘no longer’라는 표현이 오해를 부추김. → 처방: ‘no longer’, ‘already’, ‘widely accessible’ 같은 단어가 나오면 지문의 시간적·기술적 상태를 꼼꼼히 확인한다.\n③ 진단: ‘소수만 해석할 수 있어 실용적이지 않다’는 내용으로 오독했는데, 지문은 ‘실험은 진행 중이지만 성공 사례도 있다’고만 언급하고, 신뢰성·실용성에 대한 평가는 없음. → 처방: 지문에 없는 ‘unreliable’ 같은 평가는 제외하고, 있는 사실만으로 선지를 판단하는 습관을 기른다.\n④ 진단: ‘기술이 정체되어 발전이 없다’고 오해했는데, 지문은 ‘획기적 발전이 예상보다 빠르다’고 반대로 말하고 있음. ‘stagnant’라는 단어가 오해를 유발한 듯. → 처방: ‘stagnant’, ‘failed’, ‘remained’ 같은 부정적 표현이 나와도 지문의 전체 흐름을 먼저 파악한 뒤 판단한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T17:03:31.546Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'environments', 'Computers', 'developed' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Computers are now being developed to read lips even in noisy environments.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-26T15:55:52.020Z",
    "type": "제목",
@@ -258,114 +370,6 @@
     ],
     "answer": 1,
     "explanation": "밑줄 친 부분은 'Reading allows one to imaginatively experience situations beyond their immediate reality.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘real-life adventure’와 ‘imaginative escape’를 혼동했으며, 지문은 ‘pretend’를 통한 상상 체험을 강조하지 현실 경험을 권장하지 않음. → 처방: ‘pretend’를 ‘상상’을 뜻하는 말로 정확히 해석하고, 지문의 핵심은 ‘상상 체험’임을 기억할 것.\n③ 진단: ‘pretend’를 ‘실제로 행동으로 옮기기’로 오해했으며, 지문은 ‘pretend’를 통한 상상 체험을 묘사함. → 처방: ‘pretend’는 ‘마치 ~인 것처럼 느끼기’를 뜻한다는 점을 떠올리며, 행동으로 옮기는지 여부를 먼저 확인할 것.\n④ 진단: ‘pretend’를 ‘다른 사람 흉내 내기’나 ‘문제 회피’로 오독했으며, 지문은 ‘pretend’를 통한 모험 체험을 말함. → 처방: ‘pretend’의 의미를 ‘상상’을 중심으로 해석하고, 지문의 주제가 ‘모험 체험’임을 떠올릴 것.\n⑤ 진단: ‘pretend’를 통한 모험 체험이 ‘실제 여행 관심 상실’로 이어진다고 오독했으며, 지문은 모험 체험을 장려하는 내용임. → 처방: ‘pretend’의 의미를 ‘상상’을 중심으로 해석하고, 지문이 ‘모험 체험’ 자체를 권장하는지 확인할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T09:05:34.889Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "Ray English 지문 전문 · 원문 그대로 29번 어법 [ 3 점] · G R A M M A R 문학의 힘 어법 ④ authors having → have: 주어 authors의 본동사가 없으므로 분사 having은 불가, have로 고친다. 소재 문학의 지속적 힘 The enduring power of literature 주제 문학은 시공을 초월해 인간 경험을 전하는 지속적 예술이다 Literature endures, conveying human experience across time 제목 문학 — 창의성의 지속적 힘 Literature: The Enduring Power of Creativity 한눈에 문학은 시공을 초월해 인간 경험을 전하는 ‘지속적 힘’을 지닌 예술이라는 글이다. 새 기술의 등장에도 의의를 잃지 않고, 인간 감정을 포착·전달 하며 우리 자신을 비춰 보게 한다. (어법상 주어 authors의 ‘본동사’ 자리가 핵심 포인트.) 지문 전문 — 시험지 원문 Literature, in its essence, is a testament to the enduring power of human creativity and expression. It transcends time and s____, ① connecting us with the thoughts and emotions of people from all walks of life, across centuries and cultures. ② Despite the rise of new technologies and the ever-changing landscape of media, literature has retained its relevance and significance as a timeless art form. One reason for literature’s enduring power is its ability to capture and ③ convey the complexities of the human experience. Through the written word, authors ④ having the unique ability to explore the depths of human emotion, the nuances of relationships, and the challenges and triumphs of the human spirit. Literature allows us to see ourselves characters different from ourselves, and to gain a deeper understanding of the human condition. * testament: 증거 ** transcend: 초월하다 *** nuance: 미묘한 차이 지문 전문 · 원문 그대로",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] space — 문단의 논지상 이 자리에는 'space'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T08:06:42.589Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Specific Processes of Argument Merging in Verb Phrases",
-     "Universal Principles of Grammatical Structure and Argument Realization",
-     "Syntactic Principles of Verb Phrase Structure and Argument Merging",
-     "Difficulties in Analyzing Verb Phrase Argument Structures",
-     "Verb Phrase Syntax Defined by Argument Properties"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The passage establishes general syntactic assumptions for the structure and argument realization of verb phrases.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·초점 이탈·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 정답 — 핵심 논지 반영· ④ 오답 — 소재는 같으나 논점에서 벗어남· ⑤ 오답 — 주체나 대상을 바꿔치기\n[오답 진단·처방]\n① 진단: 이 선지는 지문이 동사구의 '구조'에 대한 설명도 중요하게 다루고 있음을 간과하고, '논항 합쳐지기'라는 한 가지 과정에만 초점을 맞추어 지문의 범위를 좁게 이해했습니다. 지문은 '동사구는 쪼개진 구조를 가진다'와 같이 동사구의 전반적인 구조를 먼저 설명합니다. → 처방: 글의 제목을 고를 때는 지문이 다루는 모든 핵심 내용을 아우르는 가장 넓고 정확한 표현을 찾습니다.\n② 진단: 이 선지는 지문이 '전이 동사구와 비전이 동사구의 통사론에 대한 일반적인 가정'을 설명하고 있음에도 불구하고, '보편적인 원리'나 '문법 구조 전반'과 같이 지문의 범위를 지나치게 넓게 해석했습니다. → 처방: 지문이 다루는 내용의 구체적인 범위와 대상을 정확히 파악하여 제목의 포괄성을 조절합니다.\n④ 진단: 이 선지는 지문이 동사구 논항 구조를 '설명하고 가정하는' 글임에도 불구하고, '분석의 어려움'이라는 부정적인 측면을 언급하며 글의 목적을 완전히 오해했습니다. 지문은 분석의 어려움이 아닌 분석의 '방법'을 제시합니다. → 처방: 글의 내용이 '무엇을 설명하는지'와 '무엇을 주장하는지'를 구분하여 글의 목적을 정확히 파악합니다.\n⑤ 진단: 이 선지는 지문이 '동사구의 통사론적 구조가 논항의 합쳐지는 방식을 결정한다'는 내용을 설명함에도 불구하고, '논항의 속성이 통사론을 정의한다'는 식으로 인과 관계를 반대로 이해했습니다. 지문은 '동사구는 쪼개진 구조를 가진다'고 먼저 구조를 제시합니다. → 처방: 글에서 설명하는 개념들 사이의 인과 관계나 주종 관계를 명확히 파악하여 오해를 피합니다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The passage establishes general syntactic assumptions for the structure and argument realization of verb phrases.]"
-   }
-  },
-  {
-   "ts": "2026-08-26T07:11:12.747Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "There is a demand for a repeal of the inheritance tax. ✓ We demand that Congress repeal the inheritance tax. Clarity, Not Simplemindedness Your readers want you to write clearly, but not in Dick-and-Jane sentences. Some argue that all sentences should be short, no more than fifteen or twenty words. But many mature ideas are too ­complicated to express so compactly. In Lessons 10 and 11 we look at ways to revise too-short, too-simple sentences into a style that is readable but still complex enough to communicate ­complex ideas. In Your Own Words E xercise 3.8 Go through a page of your own writing. Underline whole ­subjects and bracket verbs. Now, think about the story you are telling. ­Circle the main characters and box their actions, wherever they ­appear. Look especially for actions hidden in nominalizations. What do you notice? How clear will a reader likely find your writing? If necessary, revise to align characters with subjects and specific actions with verbs.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T07:17:56.708Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "상속세를 유지하도록 의회에 설득하려고",
-     "상속세 폐지를 위한 글쓰기 기술을 가르치려고",
-     "모든 세금을 폐지하도록 정부에 요구하려고",
-     "상속세 폐지를 위한 글을 쓰려고",
-     "상속세를 폐지하도록 의회에 요구하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'to demand that Congress repeal the inheritance tax'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘상속세를 유지하도록 설득’은 지문의 ‘repeal(폐지)’와 반대 뜻을 오해한 것입니다. ‘We demand that Congress repeal the inheritance tax.’에서 repeal 은 폐지를 요구하는 내용임을 확인하지 못했습니다. → 처방: ‘repeal’이 ‘폐지’를 뜻하는지 사전을 찾아보고, 지문에서 요구하는 내용(폐지)을 정확히 파악하세요.\n② 진단: ‘글쓰기 기술을 가르치려고’는 지문의 ‘Go through a page of your own writing’ 부분만 보고 글쓰기 연습 자체를 목적으로 오해했습니다. 하지만 핵심은 상속세 폐지를 요구하는 글쓰기 기술이 아닙니다. → 처방: 지문의 첫 문장 ‘There is a demand for a repeal of the inheritance tax.’와 ‘We demand that Congress repeal the inheritance tax.’에서 요구하는 대상을 먼저 확인하세요.\n③ 진단: ‘모든 세금을 폐지하도록 요구’는 지문에서 ‘inheritance tax(상속세)’만 다루고 있음을 무시했습니다. ‘모든 세금’이 아니라 특정 세금(상속세)에 초점을 맞추고 있습니다. → 처방: 지문에서 언급된 ‘inheritance tax’를 정확히 찾고, ‘모든 세금’이 아니라는 점을 확인한 후 선지를 고르세요.\n④ 진단: ‘상속세 폐지를 위한 글을 쓰려고’는 ‘글을 쓰려고’만 보고 요구하는 대상이 의회인지 확인하지 못했습니다. 지문은 ‘We demand that Congress repeal...’로 의회에 직접 요구하는 내용입니다. → 처방: ‘We demand that Congress...’에서 Congress(의회)가 요구 대상임을 확인하고, 선지를 고를 때 요구 대상을 정확히 파악하세요.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to demand that Congress repeal the inheritance tax]"
    }
   }
  ]
