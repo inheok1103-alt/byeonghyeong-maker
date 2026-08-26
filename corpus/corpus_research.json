@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-26T13:29:00.839Z",
+ "updated": "2026-08-26T15:56:36.145Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T15:56:11.919Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "과거 시제와 현재 시제가 혼용된 문장에서 주어-동사 일치 오류와 시제 불일치가 빈번하다. 또한 전치사(‘to’, ‘on’)의 생략 또는 오용이 자주 발생한다.",
+   "rule": "‘travel to + 장소’, ‘help to + 동사원형’, ‘put the right price on + 복수명사’와 같이 전치사가 요구되는 고정 표현에서는 반드시 전치사를 포함하도록 오류 유도를 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-26T13:27:27.671Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스의 실제 패턴에서 'of course', 'also', 'in fact'와 같은 부사구가 문장 맨 앞에 위치하는 경우가 많으며, 'as much as'나 'should be'와 같은 비교급/조동사 구문이 오류 발생 지점으로 자주 활용됨을 확인할 수 있다.",
    "rule": "원서 코퍼스의 패턴을 반영하여, 'of course', 'also', 'in fact'와 같은 부사구가 문장 맨 앞에 오면, 해당 부사구 뒤에는 반드시 콤마(,)를 삽입하여 문장 구조를 명확히 한다. 또한 'as much as'와 같은 비교급 구문 뒤에는 'successful'과 같은 형용사가 아닌 'success'와 같은 명사가 오도록 오류 유도를 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T18:51:36.856Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스는 동사 활용(tense/aspect) 오류가 빈번하며, 특히 'give up'/'give it up', 'consider'/'should be considered' 등 기능어(modal/particle) 생략·대체 패턴이 두드러진다. 또한 'want to V' 구조의 'to' 생략 오류가 반복된다.",
-   "rule": "'want/need/try/start/stop + 동사' 구조에서 'to'가 필수일 경우, 반드시 'to'를 포함한 완전한 동사구로 출제하여 CEFR B1/B2 수준의 문법적 정확성을 평가하라.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-26T13:29:00.844Z",
+ "updated": "2026-08-26T15:56:36.149Z",
  "samples": [
+  {
+   "ts": "2026-08-26T15:55:52.020Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.67,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.67)",
+     "역변별(정답키 의심)",
+     "죽은오답 ⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The Search for Hope Remains Unfulfilled",
+     "Hope Fulfills the Search for Survivors",
+     "Every Hope of Finding Survivors Persists",
+     "The Elusive Nature of Hope in All Disaster Scenarios",
+     "Hope Often Fails to Aid the Search for Survivors"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'HOPE'S ELUSIVE SURVIVAL IN SEARCH'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: HOPE]\n[오답 진단·처방]\n① 진단: ‘The Search for Hope Remains Unfulfilled’의 ‘hope’는 지문에서 ‘every hope of finding survivors’(생존자 발견의 모든 희망)로 쓰였으므로 ‘희망을 찾는 행위’로 오해한 듯함. 지문은 ‘희망 자체가 남아있다’는 뜻으로, ‘search’를 ‘희망’으로 오독한 듯. → 처방: ‘hope’를 ‘희망 그 자체’로만 보지 말고, 지문에서 ‘hope of finding survivors’가 ‘생존자 발견의 희망’이라는 복합 명사구임을 확인할 것.\n② 진단: ‘Hope Fulfills the Search for Survivors’의 ‘fulfills’는 ‘희망이 찾기를 이룬다’로 해석했는데, 지문은 ‘희망이 남아있다’는 ‘persists’(계속되다)라는 의미를 담고 있어 ‘완료’의 뜻인 ‘fulfills’와는 맞지 않음. → 처방: ‘fulfills’를 ‘계속되다’나 ‘남아있다’로 해석하지 말고, 지문에서 ‘remain’이란 동사가 쓰였는지 확인할 것.\n④ 진단: ‘The Elusive Nature of Hope in All Disaster Scenarios’의 ‘elusive’는 ‘찾기 힘든’ 뜻인데, 지문은 ‘희망이 남아있다’는 긍정적 의미를 담고 있어 ‘찾기 힘든’과는 반대됨. ‘elusive’를 ‘희망의 실종’으로 오해한 듯. → 처방: ‘elusive’를 ‘실종’이나 ‘찾기 힘듦’으로 보지 말고, 지문에서 ‘remain every hope’(모든 희망이 남아있다)는 문구에 주목할 것.\n⑤ 진단: ‘Hope Often Fails to Aid the Search for Survivors’의 ‘fails to aid’는 ‘희망이 돕지 못한다’는 뜻인데, 지문은 ‘희망이 남아있다’는 ‘remain’이란 동사를 통해 ‘도움을 주는가’가 아니라 ‘존재’에 초점을 맞춤. → 처방: ‘fails to aid’를 ‘존재하지 않는다’로 해석하지 말고, 지문에서 ‘remain’이란 동사가 ‘계속되다’ 혹은 ‘남아있다’를 뜻하는지 확인할 것."
+   }
+  },
+  {
+   "ts": "2026-08-26T15:56:09.921Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 구조상 가장 높은 층위인 T가 불완전하고 해석 불가능한 인칭/수 특성을 지닌 채 비인칭 there를 찾아 kjer을 확장해 나가다가 비로소 완전한 인칭과 수를 지닌 QP에 도달한다\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-26T13:19:15.189Z",
    "type": "밑줄함의",
@@ -312,59 +366,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'to demand that Congress repeal the inheritance tax'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘상속세를 유지하도록 설득’은 지문의 ‘repeal(폐지)’와 반대 뜻을 오해한 것입니다. ‘We demand that Congress repeal the inheritance tax.’에서 repeal 은 폐지를 요구하는 내용임을 확인하지 못했습니다. → 처방: ‘repeal’이 ‘폐지’를 뜻하는지 사전을 찾아보고, 지문에서 요구하는 내용(폐지)을 정확히 파악하세요.\n② 진단: ‘글쓰기 기술을 가르치려고’는 지문의 ‘Go through a page of your own writing’ 부분만 보고 글쓰기 연습 자체를 목적으로 오해했습니다. 하지만 핵심은 상속세 폐지를 요구하는 글쓰기 기술이 아닙니다. → 처방: 지문의 첫 문장 ‘There is a demand for a repeal of the inheritance tax.’와 ‘We demand that Congress repeal the inheritance tax.’에서 요구하는 대상을 먼저 확인하세요.\n③ 진단: ‘모든 세금을 폐지하도록 요구’는 지문에서 ‘inheritance tax(상속세)’만 다루고 있음을 무시했습니다. ‘모든 세금’이 아니라 특정 세금(상속세)에 초점을 맞추고 있습니다. → 처방: 지문에서 언급된 ‘inheritance tax’를 정확히 찾고, ‘모든 세금’이 아니라는 점을 확인한 후 선지를 고르세요.\n④ 진단: ‘상속세 폐지를 위한 글을 쓰려고’는 ‘글을 쓰려고’만 보고 요구하는 대상이 의회인지 확인하지 못했습니다. 지문은 ‘We demand that Congress repeal...’로 의회에 직접 요구하는 내용입니다. → 처방: ‘We demand that Congress...’에서 Congress(의회)가 요구 대상임을 확인하고, 선지를 고를 때 요구 대상을 정확히 파악하세요.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to demand that Congress repeal the inheritance tax]"
-   }
-  },
-  {
-   "ts": "2026-08-26T05:51:53.017Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "This would mean that head movement applies in a successive-cyclic (two-step) fashion. Each of the two head movement operations in (52) – viz movement of care from V to NEG, and then from NEG to T – is local in the sense that it satisfies the Head Movement Constraint (31), since in each case movement is from one head position into the next highest head position in the structure. If head movement is driven by affixal properties of heads, and if both T and NEG contain a strong affix with a V-feature which can trigger movement of a main verb, the verb care will first move from V to NEG in order to attach to a null negative affix (in much the same way as the verb hath in (50) moves from V to Neg to attach to the overt negative affix ne), and the resulting complex NEG head (comprising a null negative affix with a verb attached to it) in turn will move from NEG to T in order to attach to a strong tense affix in T.",
-    "choices": [
-     "머리 이동은 두 단계로 이루어지는 연속 순환 방식으로 적용되지 않는다.",
-     "머리 이동은 'Head Movement Constraint'를 만족하는 국지적 동작이다.",
-     "동사 'care'는 먼저 부정(NEG)으로 이동하지 않고 시제(T)으로 바로 이동한다.",
-     "결과적으로 생긴 복합 부정(NEG) 머리는 다시 부정(NEG)으로 이동한다.",
-     "시제(T) 안의 강한 부정 접사(affix)가 머리 이동을 유발할 수 없다."
-    ],
-    "answer": 2,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 머리 이동은 'two-step' 방식(연속 순환)으로 적용된다고 명시했는데, 이를 '적용되지 않는다'로 오독한 듯함. 'This would mean that head movement applies in a successive-cyclic (two-step) fashion.'라는 문장이 있음. → 처방: 지문에서 머리 이동이 두 단계로 이루어진다는 설명을 정확히 읽고, '적용되지 않는다'는 선지가 틀렸다는 점을 기억할 것.\n③ 진단: 지문에서 'care'가 V 에서 NEG 로 먼저 이동한 뒤 NEG 에서 T 로 이동한다고 설명했는데, 이를 '부정(NEG)으로 이동하지 않고 시제(T)으로 바로 이동한다'로 오독한 듯함. 'the verb care will first move from V to NEG'라는 문장이 있음. → 처방: 동사의 이동 순서를 정확히 파악하고, 지문에서 설명하는 'V → NEG → T'의 흐름을 기억할 것.\n④ 진단: 지문에서 복합 NEG 머리가 'NEG 에서 T 로 이동한다'고 설명했는데, 이를 '다시 부정(NEG)으로 이동한다'로 오독한 듯함. 'the resulting complex NEG head... in turn will move from NEG to T'라는 문장이 있음. → 처방: 머리의 이동 방향을 정확히 읽고, 'NEG → T'의 흐름을 기억할 것.\n⑤ 진단: 지문에서 'T 와 NEG 가 모두 강한 V-특징을 가진 접사를 포함해 머리 이동을 유발할 수 있다'고 설명했는데, 이를 '시제(T) 안의 강한 부정 접사가 머리 이동을 유발할 수 없다'로 오독한 듯함. 'both T and NEG contain a strong affix with a V-feature which can trigger movement'라는 문장이 있음. → 처방: 지문에서 머리 이동의 원인이 되는 '강한 접사'의 존재를 정확히 읽고, 부정 접사가 아니라 V-특징을 가진 접사가 중요하다는 점을 기억할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T06:01:34.995Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 25 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'movement', 'proceeds', 'triggers' / 23~27단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Head movement proceeds in two local steps, first from V to NEG and then from NEG to T, due to affixal triggers in each head.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 23~27단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
