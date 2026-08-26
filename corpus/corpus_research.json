@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-26T11:53:52.515Z",
+ "updated": "2026-08-26T13:29:00.839Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T13:27:27.671Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'a/an'이나 복수형 오류가 빈번하며, 'other than' 구문에서 복수형 명사 사용이 누락되는 경향이 강하다. 또한 'know already'와 같은 어순 오류도 빈번하게 관찰된다.",
+   "rule": "'other than' 뒤에는 복수형 명사를 반드시 사용해야 하며, 'know already'는 'already know'로 어순을 수정해야 한다. (예: 'no major responsibility other than studying' → 'no major responsibilities other than studying')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-26T11:53:21.940Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "이 코퍼스는 동사 활용(tense/aspect) 오류가 빈번하며, 특히 'give up'/'give it up', 'consider'/'should be considered' 등 기능어(modal/particle) 생략·대체 패턴이 두드러진다. 또한 'want to V' 구조의 'to' 생략 오류가 반복된다.",
    "rule": "'want/need/try/start/stop + 동사' 구조에서 'to'가 필수일 경우, 반드시 'to'를 포함한 완전한 동사구로 출제하여 CEFR B1/B2 수준의 문법적 정확성을 평가하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T17:38:06.961Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구(noun phrase)에서 'a/an/the + 단수명사'가 누락되거나 잘못 사용되는 오류가 빈번하며, 특히 관사 생략이 주어-동사 일치 오류로 이어질 수 있다. 또한, 과거 시제와 현재 시제가 혼용되어 문맥 오류를 일으키는 경우가 많다.",
-   "rule": "단수 가산명사가 주어일 경우, 반드시 관사(a/an/the)나 지시사(determiner)를 필수적으로 포함하여 문장을 구성하라. 또한, 과거 시제와 현재 시제를 혼용하지 말고, 문맥에 맞는 시제를 일관되게 사용하라.",
    "sample": [
     "old english",
     "university press",

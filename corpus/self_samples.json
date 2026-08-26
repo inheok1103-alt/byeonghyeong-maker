@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-26T11:53:52.519Z",
+ "updated": "2026-08-26T13:29:00.844Z",
  "samples": [
+  {
+   "ts": "2026-08-26T13:19:15.189Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "LUGUBRIOUS (loo GOO bree us) adj exaggeratedly mournful <u>To be mournful is to be sad and sorrowful. To be lugubrious is to make a big show of being sad and sorrowful.</u> • Harry’s lugubrious eulogy at the funeral of his dog eventually made everyone start giggling. • The valedictorian suddenly turned lugubrious and began sobbing and tearing her hair at the thought of graduating from high school. Note carefully the pronunciation of this word. LUMINOUS (LOO muh nus) adj giving off light; glowing; bright • The moon was a luminous disk in the cloudy nighttime sky. • The snow on the ground appeared eerily luminous at night—it seemed to glow. • The dial on my watch is luminous; it casts a green glow in the dark. Quick Quiz #55 Match each word in the first column with its definition in the second column. Check your answers here. 1. libel a. giving off light 2. slander b. try in court 3. litigate c. exaggeratedly mournful 4. loquacious d. easy to understand 5. lucid e. written injurious falsehood 6. lugubrious f. spoken injurious falsehood 7. luminous g. talking a lot",
+    "choices": [
+     "The act of being lugubrious directly causes a person to feel genuine sadness and sorrow over time.",
+     "Lugubriousness is not genuine sorrow but an exaggerated performance of grief designed to draw attention or sympathy.",
+     "To be lugubrious means to feel a deep and authentic sadness that is impossible to conceal.",
+     "Lugubriousness occasionally occurs when someone experiences a slight disappointment rather than profound grief.",
+     "Lugubriousness arises when people who are truly sad and sorrowful feel the need to exaggerate their emotions."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'Lugubriousness is not genuine sorrow but an exaggerated performance of grief designed to draw attention or sympathy.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘지문에서 lugubrious 는 exaggeratedly mournful(과장된 슬픔)이라고 설명했는데, 이 선지는 genuine sadness(진짜 슬픔)를 유발한다고 잘못 이해한 것 같다. 지문은 ‘과장된 슬픔’을 강조하지 진짜 슬픔을 유발한다고 하지 않는다. → 처방: ‘과장된’이라는 뜻을 꼭 기억하고 genuine(진짜)라는 단어와 혼동하지 않도록 주의하자. lugubrious 는 ‘과장된 슬픔’이지 진짜 슬픔을 뜻하지 않는다.\n③ 진단: ‘지문에서 lugubrious 는 exaggeratedly mournful(과장된 슬픔)이라고 했는데, 이 선지는 deep and authentic sadness(깊은 진짜 슬픔)라고 설명하여 지문의 뜻을 잘못 해석했다. → 처방: ‘exaggeratedly’라는 단어를 꼭 확인하고, authentic(진짜)라는 단어와 혼동하지 않도록 주의하자. lugubrious 는 과장된 슬픔이지 진짜 슬픔이 아니다.\n④ 진단: ‘지문에서 lugubrious 는 exaggeratedly mournful(과장된 슬픔)이라고 했는데, 이 선지는 slight disappointment(약간의 실망)라고 설명하여 지문의 뜻을 완전히 잘못 이해한 것 같다. → 처방: ‘profound grief(깊은 슬픔)’과 같은 강한 슬픔이 있어야 한다고 생각하자. lugubrious 는 과장된 슬픔이지 가벼운 실망과는 관련이 없다.\n⑤ 진단: ‘지문에서 lugubrious 는 exaggeratedly mournful(과장된 슬픔)이라고 했는데, 이 선지는 truly sad(진짜 슬픔)를 exaggerate(과장)한다고 설명하여 지문의 뜻을 반대로 이해했다. → 처방: ‘과장된’이라는 뜻이 핵심임을 기억하고, ‘진짜 슬픔을 과장한다’는 말은 lugubrious 의 뜻을 반대로 설명한 것이다. 과장은 진짜 슬픔이 아니라 과장된 슬픔을 뜻한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T13:27:16.028Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "infrequent but excessive sadness",
+     "the genuine expression of grief",
+     "a momentary sadness in speech",
+     "an exaggerated display of sorrow",
+     "a universal emotion of mourning"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'lugubrious means exaggeratedly mournful'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정도·빈도를 왜곡· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: 학생은 'libel'과 'slander'의 의미를 혼동했을 가능성이 높습니다. 'libel'은 'written injurious falsehood'로 서면 명예훼손을, 'slander'는 'spoken injurious falsehood'로 구두 명예훼손을 뜻합니다. 'infrequent but excessive sadness'는 'lugubrious'의 정의와 전혀 관련이 없습니다. → 처방: 단어의 의미를 정확히 기억하고, 지문의 'Quick Quiz #55'를 다시 한 번 꼼꼼히 읽으면서 각 단어의 정의와 예시를 비교해 보세요.\n② 진단: 학생은 'lugubrious'가 '진짜 슬픔의 표현'을 뜻한다고 오해했습니다. 그러나 'lugubrious'는 '과장된 슬픔의 표현'을 의미하며, 지문에서도 'make a big show of being sad'라고 설명합니다. → 처방: 단어의 정의에서 'exaggerated(과장된)'라는 단어가 있는지 꼭 확인한 후, 지문의 예시 문장('eventually made everyone start giggling')을 다시 읽고 과장된 감정 표현임을 파악하세요.\n③ 진단: 학생은 'lugubrious'가 '일시적인 슬픔'을 뜻한다고 생각했습니다. 그러나 'lugubrious'는 지속적이고 과장된 슬픔을 표현하는 단어입니다. 'momentary sadness'는 '일시적인 슬픔'을 의미하며, 지문과는 맞지 않습니다. → 처방: 단어의 정의와 예시를 함께 보며, 'lugubrious'가 과장된 슬픔을 오랫동안 표현하는 단어임을 기억하세요.\n⑤ 진단: 학생은 'lugubrious'가 '보편적인 슬픔'을 뜻한다고 오해했습니다. 그러나 'lugubrious'는 개인이 과장해서 표현하는 슬픔을 뜻하며, 'universal emotion of mourning'은 보편적인 슬픔을 의미합니다. → 처방: 단어의 의미를 정확히 파악한 후, 지문의 예시 문장('made everyone start giggling')을 보며 과장된 표현임을 다시 한 번 확인하세요.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: lugubrious means exaggeratedly mournful]"
+   }
+  },
   {
    "ts": "2026-08-26T11:47:34.930Z",
    "type": "목적",
@@ -297,76 +365,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Head movement proceeds in two local steps, first from V to NEG and then from NEG to T, due to affixal triggers in each head.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 23~27단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-26T04:57:38.536Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "PROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. • The ⓐ<u>provident father</u> had long ago ⓑ<u>set aside money</u> for the college education of each of his children. To be improvident is to ⓒ<u>fail to provide</u> for the future. • It was improvident of the grasshopper not to store any food for the winter, ⓓ<u>unlike his acquaintance was</u> the ⓔ<u>provident ant</u>. Quick Quiz #68 Match each word in the first column with its definition in the second column. Check your answers here. 1. promulgate a. natural inclination 2. propensity b. good manners 3. propitious c. advocate 4. proponent d. prohibit 5. proprietary e. prolong 6. propriety f. leading character 7. prosaic g. constituting property 8. proscribe h. frugal 9. proselytize i. dull 10. protagonist j. marked by favorable signs 11. protract k. convert 12. provident l. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 4,
-    "explanation": "[어법: 수일치] 정답 ⓓ의 'unlike his acquaintance was'는 'unlike his acquaintance'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n① 진단: ⓐ 'provident father'는 문맥상 '미래를 준비하는 아버지'로 올바르지만, 학생은 'provident'가 '검소한' 뜻만 기억해 '검소한 아버지'로 오해했을 수 있음. 지문 첫 문장에 'frugal'과 함께 'preparing for the future'로 설명되어 있음. → 처방: 단어의 뜻을 문맥과 함께 정확히 암기하고, 예문 속 용법을 따라가며 연습하기.\n② 진단: ⓑ 'set aside money'는 '돈을 따로 떼어두다'로 문법적으로 옳으나, 학생은 'set aside'가 '제외하다'로만 기억해 '돈을 제외하다'로 오해했을 가능성 있음. 지문에서 'college education'을 위한 돈임을 유추해야 함. → 처방: 숙어의 의미를 문장 전체와 연결 지어 해석하고, 전치사나 부사구가 주는 뉘앙스를 주의 깊게 보기.\n③ 진단: ⓒ 'fail to provide'는 '미래를 준비하지 않다'로 문법적으로 맞으나, 학생은 'provide'가 '제공하다'로만 기억해 '돈을 제공하지 않다'로 오해했을 수 있음. 지문에서 'provide for the future'로 미래 준비를 강조함을 확인해야 함. → 처방: 단어의 의미를 문맥(특히 전치사나 목적어)과 함께 암기하고, 유사 단어(예: provide/provision)와 혼동하지 않기.\n⑤ 진단: ⓔ 'unlike his acquaintance was the provident ant'에서 'was'가 불필요한 비교 구조로 오용되었음. 학생은 비교 구문에서 'be 동사'의 생략 규칙을 몰라 'was'를 넣었을 수 있음. 비교 대상은 'the grasshopper'와 'the ant'로, 'unlike' 뒤에는 명사구가 와야 함. → 처방: 비교 구문(like/unlike/as ~ as)에서 'be 동사'의 생략 규칙을 익히고, 문장 구조를 정확히 분석하기. 예: 'Unlike his friend, he is tall.' (O) → 'Unlike his friend was, he is tall.' (X)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T04:58:01.100Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "PROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. ① • The provident father had long ago set aside money for the college education of each of his children. ② To be improvident is to fail to provide for the future. ③ • It was improvident of the grasshopper not to store any food for the winter, unlike his acquaintance the provident ant. ④ The provident use of resources often leads to economic growth, as seen in the industrial revolution when nations adopted prudent policies. ⑤ Quick Quiz #68 Match each word in the first column with its definition in the second column. Check your answers here. natural inclination 2. good manners 3. leading character 7. constituting property 8. marked by favorable signs 11. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘provident’의 뜻(미래를 준비하는, 검소한)을 정확히 이해하지 못하고 ‘자연적 성향’이라는 뜻으로 오해했을 가능성이 있다. 지문에서 ‘provident’의 정의와 예시가 나와 있지만, ‘natural inclination’이란 뜻의 단어는 따로 없기 때문이다. → 처방: ‘provident’의 뜻을 정확히 기억하고, 지문에서 제시된 정의와 예시를 다시 한 번 확인하며 뜻을 확실히 익히기.\n② 진단: ‘provident’의 뜻을 알지만, ‘good manners’(예의 바름)와 헷갈렸을 수 있다. 지문에서 ‘provident’의 예시로 ‘미래를 위해 돈을 마련하는 아버지’를 들었지만, ‘예의 바른’이라는 뜻은 전혀 연관되지 않는다. → 처방: 단어의 뜻을 정확히 암기할 때, 예문과 연관 지어 기억하고, 뜻이 겹치지 않는지 확인하기.\n③ 진단: ‘improvident’의 뜻을 ‘자연적 성향’으로 오해했을 가능성이 있다. ‘improvident’는 ‘미래를 준비하지 않는’이라는 뜻으로, ‘자연적 성향’이라는 뜻과는 전혀 다르다. → 처방: 단어의 뜻을 공부할 때, 반대말(antonym)도 함께 익히고, 뜻이 반대되는지 확인하기.\n⑤ 진단: ‘provident’의 뜻을 ‘좋은 징조가 있는’이라는 뜻으로 오해했을 수 있다. ‘provident’는 ‘미래를 준비하는’이지만, ‘marked by favorable signs’는 ‘좋은 징조가 있는’이라는 뜻으로, 뜻이 완전히 다르다. → 처방: 단어의 뜻을 공부할 때, 유사한 단어와 비교하지 말고, 지문 속 정의와 예시를 중심으로 정확히 암기하기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]
