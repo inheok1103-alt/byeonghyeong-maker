@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-26T17:04:09.954Z",
+ "updated": "2026-08-26T19:22:05.729Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T19:21:21.948Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'to not V' 구조는 드물며, 부정사 앞에 'to'가 누락되거나 'not'의 위치가 부정적 의미를 약화시키는 경우가 많다. 또한, 'dealed'는 과거분사 오류로 'dealt'가 표준이며, 'with everyone to see'는 'plain to see'로 고정 표현이 흔히 쓰인다.",
+   "rule": "'to not V' 구조는 부정적 의미를 강조할 때만 허용되며, 일반적으로는 'not to V'로 통일하여 사용해야 한다. (예: 'try to not pollute' → 'try not to pollute')",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-26T17:03:34.596Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구(noun phrase)나 동사구(verb phrase)의 생략·과도한 축약이 문법오류로 이어질 가능성이 높으며, 특히 'for + 기간' 구조가 '이유'로 오해될 수 있음을 확인했다.",
    "rule": "문장 내 동사구(verb phrase)나 명사구(noun phrase)의 생략·축약이 문맥상 필수적이지 않은지 점검하고, 'for + 기간' 구조가 '이유'를 나타내는 경우 'because + 절'로 명확히 대체하도록 출제한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T20:42:53.240Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거형/현재형 시제 불일치, 전치사 오용, 관사 누락이 빈번한 오류로 나타나며, 특히 'kept from ~ing' 구문과 'with'의 부적절한 사용이 두드러진다.",
-   "rule": "원서에서 빈발하는 'kept from ~ing', 'with'의 부적절한 사용, 관사 누락 패턴을 반영하여, 학생들이 'kept from ~ing' 구문에서 동사 형태(~ing) 오류, 'with'의 부적절한 사용, 관사 생략 오류를 범할 수 있도록 연어 기반 오답을 설계하라.",
    "sample": [
     "old english",
     "university press",

@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-26T17:04:09.958Z",
+ "updated": "2026-08-26T19:22:05.733Z",
  "samples": [
+  {
+   "ts": "2026-08-26T19:20:52.473Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답 재검토 권고 — 솔버 2/3가 5번 선택(기록 4번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "X-bar Theory 97 noun, we conclude that it is an NP. In (32c) however, the phrase following the determiner contains only an adjective and is ungrammatical. This clearly has a different distribution to the other two phrases, indicating that the adjective in (32a) is not the head of this phrase. It is also possible to conclude that the adjective is not a complement of the head noun as it does not follow the noun and as we have seen, in English, all complements follow their heads. The other possibility is that the adjective functions as a specifier within the NP and as specifiers precede their heads, this seems more likely. Yet there are properties of the adjective that make it an unlikely specifier. As we saw, specifiers of thematic heads tend to be arguments of those heads. [ ] Furthermore, specifiers are limited to a single occurrence and there cannot be more than one of them: (33) a the letter arrived",
+    "choices": [
+     "The adjective is clearly an argument of the noun as it bears a thematic role assigned by the noun.",
+     "Specifiers in X-bar Theory are always arguments of their heads, so the adjective must be one.",
+     "The adjective is a complement of the head noun because it follows the noun in English.",
+     "The adjective cannot be an argument of the noun because it does not receive a thematic role from the noun.",
+     "The adjective functions as a specifier within the NP since it precedes its head and fits the structural position."
+    ],
+    "answer": 4,
+    "explanation": "빈칸에는 원문 'The adjective is obviously not an argument of the noun as it does not bear a thematic role assigned by the noun.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: ‘명사 주어의 논항’이 ‘형용사가 명사에 주는 논항’이라는 뜻으로 오해했거나, ‘형용사가 명사의 논항 역할을 한다’는 오류를 범했음. 지문에서 ‘형용사가 명사의 논항이 아니다’는 근거(‘형용사가 명사 뒤에 오지 않는다’, ‘영어에서 보충어는 머리 뒤에 온다’)를 무시했음. → 처방: ‘논항’이란 머리(명사)가 부여하는 ‘의미역’을 받는 요소임을 기억하고, 지문에서 제시된 ‘형용사가 명사의 논항이 아니다’는 근거를 다시 한 번 확인할 것.\n② 진단: ‘X-bar Theory 에서 명사 머리의 논항은 반드시 specifiers(지정어)다’라는 오해로, ‘specifier = argument’라는 등식을 잘못 세웠음. 지문은 ‘specifier 는 thematic heads 의 argument 일 tendency 가 있다’는 점만 언급했을 뿐, 반드시 argument 라는 뜻은 아님을 유념하지 않음. → 처방: ‘tend to’라는 표현이 ‘반드시’라는 뜻이 아님을 기억하고, ‘specifier = argument’라는 등식은 틀렸다는 점을 분명히 인지할 것.\n③ 진단: ‘형용사가 명사 뒤에 오면 보충어’라는 오해로, ‘형용사가 명사 뒤에 오지 않는다’는 지문의 근거를 무시했음. 또한 영어에서 ‘보충어는 머리 뒤에 온다’는 X-bar Theory 의 기본 원칙을 잘못 적용했음. → 처방: ‘보충어’는 머리 뒤에 온다는 원칙을 정확히 기억하고, 지문에서 ‘형용사가 명사 뒤에 오지 않는다’는 사실을 다시 한 번 확인할 것.\n⑤ 진단: ‘형용사가 머리 앞에 오므로 specifier’라는 논리만 보고, ‘specifier 의 다른 속성(예: argument 일 tendency, 단일 발생)’을 고려하지 않았음. 지문에서 ‘specifier 는 argument 일 tendency 가 있다’는 점을 간과했음. → 처방: ‘specifier’의 정의와 특징(예: argument 일 tendency, 단일 발생)을 정확히 기억하고, 지문에서 제시된 모든 조건을 종합적으로 검토할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T19:21:10.086Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] This clearly has a different distribution to the other two phrases, indicating that the adjective in (32a) is not the head of this phrase.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 이것은 분명히 다른 두 구절과는 다른 분포를 보이며, 이는 (32a)의 형용사가 이 구절의 중심어(head)가 아님을 나타냅니다. (구문 포인트: 분사구문(indicating that...)의 기능과 역할 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-26T17:02:14.996Z",
    "type": "어법개수형",
@@ -302,74 +356,6 @@
     ],
     "answer": 4,
     "explanation": "정답 진술만 글과 일치한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T11:53:09.945Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.6,
-    "D": -1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] Over a millennium-and-a-half, this grammar had grammatical features from Celtic plugged into it Botox-style, while also being radically shorn of its complexities liposuction-style by adults learning it as a second language.\n\nAre We Dumb Anglo-Saxons? Try squaring the Sapir-Whorf hypothesis with, for example, the fact that today’s English was once Old English. ( ① ) As we have seen, the language I am writing in was not planted in one fell swoop from on high. ( ② ) Modern English is the current stage of what began as a very different grammar, much like German’s. ( ③ ) Now, let’s try to look at this language we speak as it is today through the eyes of the Sapir-Whorf hypothesis. ( ④ ) We English speakers “cut nature up, organize it into concepts, and ascribe significances as we do, largely because we are parties to an agreement to organize it in this way” and “cannot talk at all except by subscribing to the organization and classification of data which the agreement decrees. ( ⑤ ) ” Or, as an early Whorfian put it:",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘( ①)’ 앞 문장이 ‘이 언어는 한순간에 하늘에서 떨어지지 않았다’는 내용인데, 주어진 문장은 ‘오랜 세월에 걸쳐 문법이 복잡해지기도 하고 단순해지기도 했다’는 내용으로 연결이 부자연스러움. 학생은 ‘한순간에 하늘에서 떨어지지 않았다’는 말이 ‘복잡한 변화가 있었다’는 뜻으로 오해했을 가능성이 큼. → 처방: ‘한순간에 하늘에서 떨어지지 않았다’는 말은 ‘시간이 지나며 변화가 있었다’는 뜻이 아니라 ‘단번에 만들어진 것이 아니다’는 뜻임을 기억하기. 문맥상 연결되는지 꼼꼼히 확인하기.\n② 진단: ‘( ②)’ 앞 문장이 ‘내가 쓰고 있는 이 언어는 한순간에 하늘에서 떨어지지 않았다’는 내용인데, 주어진 문장은 ‘현대 영어가 오래전 다른 문법에서 시작되었다’는 내용으로 ‘시간의 흐름’을 강조하는 흐름에서 어색함. 학생은 ‘한순간에 하늘에서 떨어지지 않았다’가 ‘시간이 지나며 변화가 있었다’는 뜻으로만 받아들였을 수 있음. → 처방: ‘한순간에 하늘에서 떨어지지 않았다’는 말은 ‘시간이 지나며 변화가 있었다’는 뜻이 아니라 ‘단번에 만들어진 것이 아니다’는 뜻임을 분명히 하기. 문맥상 자연스러운 연결인지 다시 한번 점검하기.\n④ 진단: ‘( ④)’ 앞 문장이 ‘이 언어를 오늘 우리가 쓰는 모습으로 바라보자’는 내용인데, 주어진 문장은 ‘오랜 세월에 걸쳐 문법이 복잡해지기도 하고 단순해지기도 했다’는 과거 변화에 대한 설명으로, ‘오늘’이라는 현재 시점과 맞지 않음. 학생은 ‘오늘’이라는 말이 ‘과거 변화’를 포함한다고 오해했을 수 있음. → 처방: ‘오늘’이라는 말은 ‘현재’를 뜻한다는 점을 분명히 하고, 과거 변화와 현재 시점의 구분을 명확히 하기. 문맥상 시제가 맞는지 확인하기.\n⑤ 진단: ‘( ⑤)’ 앞 문장이 ‘우리는 영어 화자들로서 자연을 잘라내고 개념화하며 의미를 부여한다’는 내용인데, 주어진 문장은 ‘문법이 복잡해졌다가 단순해졌다’는 과거 변화에 대한 설명으로, ‘의미 부여’와 ‘문법 변화’라는 주제가 맞지 않음. 학생은 ‘의미’와 ‘문법’을 같은 범주로 오해했을 수 있음. → 처방: ‘의미 부여’와 ‘문법 변화’는 다른 주제라는 점을 분명히 하고, 문맥상 주제가 일치하는지 확인하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T10:53:12.612Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 2번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.63,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Books are your keys to knowledge, and there is no limit to the kinds of things you can learn from books. So don’t worry if the______ you’ve taken an interest in is ___. Only you seem to care about. ___ are written on almost every subject ______ person could hope to think of. _____ learn about new things , just visit favorite book store. When you buy ______ book , you read it whenever you _______. Read about a far-away place ________ <u>pretend you are having an adventure</u>, _________ study something you heard about in ______. You might wish to study a ________ or learn to cook different kinds _____ food. Reading a book can mean _______ differences between learning about things and _______ to wonder about them. It’s economical _____ convenient to read books. You have ________ freedom to study whenever you like. ________ from books is very easy because ______ can simply go back to a _________ if you forget something you’ve read.",
-    "choices": [
-     "Reading allows one to imaginatively experience situations beyond their immediate reality.",
-     "Reading should be treated as a real-life adventure rather than just an imaginative escape.",
-     "Readers should physically act out the events described in books to make the adventure feel real.",
-     "Reading often involves pretending to be someone else, which helps people avoid their problems in real life.",
-     "Because people pretend to have adventures while reading, they end up losing interest in actual travel."
-    ],
-    "answer": 1,
-    "explanation": "밑줄 친 부분은 'Reading allows one to imaginatively experience situations beyond their immediate reality.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘real-life adventure’와 ‘imaginative escape’를 혼동했으며, 지문은 ‘pretend’를 통한 상상 체험을 강조하지 현실 경험을 권장하지 않음. → 처방: ‘pretend’를 ‘상상’을 뜻하는 말로 정확히 해석하고, 지문의 핵심은 ‘상상 체험’임을 기억할 것.\n③ 진단: ‘pretend’를 ‘실제로 행동으로 옮기기’로 오해했으며, 지문은 ‘pretend’를 통한 상상 체험을 묘사함. → 처방: ‘pretend’는 ‘마치 ~인 것처럼 느끼기’를 뜻한다는 점을 떠올리며, 행동으로 옮기는지 여부를 먼저 확인할 것.\n④ 진단: ‘pretend’를 ‘다른 사람 흉내 내기’나 ‘문제 회피’로 오독했으며, 지문은 ‘pretend’를 통한 모험 체험을 말함. → 처방: ‘pretend’의 의미를 ‘상상’을 중심으로 해석하고, 지문의 주제가 ‘모험 체험’임을 떠올릴 것.\n⑤ 진단: ‘pretend’를 통한 모험 체험이 ‘실제 여행 관심 상실’로 이어진다고 오독했으며, 지문은 모험 체험을 장려하는 내용임. → 처방: ‘pretend’의 의미를 ‘상상’을 중심으로 해석하고, 지문이 ‘모험 체험’ 자체를 권장하는지 확인할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
