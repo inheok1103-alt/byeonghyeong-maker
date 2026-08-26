@@ -1,6 +1,110 @@
 {
- "updated": "2026-08-26T10:54:05.221Z",
+ "updated": "2026-08-26T11:53:52.519Z",
  "samples": [
+  {
+   "ts": "2026-08-26T11:47:34.930Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어의 역사적 변화가 사피어-워프 가설을 입증하려고",
+     "영어의 역사적 변화 중 문법적 복잡성 변화만을 사피어-워프 가설로 설명하려고",
+     "모든 언어의 변화가 사피어-워프 가설을 통해 이해되어야 한다고 주장하려고",
+     "영어의 역사적 변화가 사피어-워프 가설에 항상 적용된다고 설명하려고",
+     "영어의 역사적 변화 과정을 사피어-워프 가설을 통해 설명하려고"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'to understand Modern English's evolution through the Sapir-Whorf hypothesis.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘영어의 역사적 변화’를 ‘사피어-워프 가설을 입증하려고’로 오해했는데, 지문은 변화 과정을 설명하는 데 가설을 활용할 뿐 가설을 증명하려는 목적이 아님을 간과함. → 처방: ‘~하려고’의 목적 구문은 지문에서 사용된 목적(설명·제시)이 아니라 ‘증명·입증’을 뜻하는지 확인할 것. 지문은 ‘~를 설명하려고’로 읽어야 함.\n② 진단: ‘문법적 복잡성 변화만’을 강조했는데, 지문은 ‘켈트어의 특징 흡수’와 ‘성인 학습자의 단순화’라는 두 가지 변화 모두를 언급하며 전체 과정을 설명함을 놓침. → 처방: 지문에서 언급된 변화의 ‘범위’를 정확히 파악할 것. ‘복잡성 변화’뿐 아니라 ‘형태 변화(켈트어 특징 흡수)’도 포함됨을 기억.\n③ 진단: ‘모든 언어의 변화’를 주장으로 오해했는데, 지문은 ‘영어’라는 특정 언어의 역사적 변화에만 초점을 맞추고 있음을 간과함. → 처방: 지문에서 언급된 언어(‘English’)의 범위를 확인할 것. ‘모든 언어’로 확대 해석하지 말 것.\n④ 진단: ‘항상 적용된다고’로 과장했는데, 지문은 ‘사피어-워프 가설을 통해 설명하려고’(시도·제시)하는 수준임을 놓침. → 처방: ‘항상’이라는 절대적 표현이 있는지 확인할 것. 지문은 ‘~하려고’(시도·제시)의 의미로 읽어야 함.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to understand Modern English]"
+   }
+  },
+  {
+   "ts": "2026-08-26T11:52:42.727Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "Are We Dumb Anglo-Saxons? Try squaring the Sapir-Whorf hypothesis with, for example, the fact that today’s English was once Old English. As we have seen, the language I am writing in was not planted in one fell swoop from on high. Modern English is the current stage of what began as a very different grammar, much like German’s. Over a millennium-and-a-half, this grammar had grammatical features from Celtic plugged into it Botox-style, while also being radically shorn of its complexities liposuction-style by adults learning it as a second language. Now, let’s try to look at this language we speak as it is today through the eyes of the Sapir-Whorf hypothesis. We English speakers “cut nature up, organize it into concepts, and ascribe significances as we do, largely because we are parties to an agreement to organize it in this way” and “cannot talk at all except by subscribing to the organization and classification of data which the agreement decrees.” Or, as an early Whorfian put it:",
+    "choices": [
+     "영어는 고대 영어에서 서서히 변화한 현대 영어의 한 단계에 불과하지 않다",
+     "영어의 문법은 켈트어의 특징이 유입되면서 단순해졌다",
+     "영어의 복잡한 문법은 제1언어 사용자들에 의해 단순화되었다",
+     "사피어-워프 가설에 따르면 영어 화자들은 언어 체계에 따라 현실을 인식한다",
+     "사피어-워프 학파는 언어가 데이터의 조직과 분류를 따르지 않는다고 주장했다"
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T11:53:09.945Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.6,
+    "D": -1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] Over a millennium-and-a-half, this grammar had grammatical features from Celtic plugged into it Botox-style, while also being radically shorn of its complexities liposuction-style by adults learning it as a second language.\n\nAre We Dumb Anglo-Saxons? Try squaring the Sapir-Whorf hypothesis with, for example, the fact that today’s English was once Old English. ( ① ) As we have seen, the language I am writing in was not planted in one fell swoop from on high. ( ② ) Modern English is the current stage of what began as a very different grammar, much like German’s. ( ③ ) Now, let’s try to look at this language we speak as it is today through the eyes of the Sapir-Whorf hypothesis. ( ④ ) We English speakers “cut nature up, organize it into concepts, and ascribe significances as we do, largely because we are parties to an agreement to organize it in this way” and “cannot talk at all except by subscribing to the organization and classification of data which the agreement decrees. ( ⑤ ) ” Or, as an early Whorfian put it:",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘( ①)’ 앞 문장이 ‘이 언어는 한순간에 하늘에서 떨어지지 않았다’는 내용인데, 주어진 문장은 ‘오랜 세월에 걸쳐 문법이 복잡해지기도 하고 단순해지기도 했다’는 내용으로 연결이 부자연스러움. 학생은 ‘한순간에 하늘에서 떨어지지 않았다’는 말이 ‘복잡한 변화가 있었다’는 뜻으로 오해했을 가능성이 큼. → 처방: ‘한순간에 하늘에서 떨어지지 않았다’는 말은 ‘시간이 지나며 변화가 있었다’는 뜻이 아니라 ‘단번에 만들어진 것이 아니다’는 뜻임을 기억하기. 문맥상 연결되는지 꼼꼼히 확인하기.\n② 진단: ‘( ②)’ 앞 문장이 ‘내가 쓰고 있는 이 언어는 한순간에 하늘에서 떨어지지 않았다’는 내용인데, 주어진 문장은 ‘현대 영어가 오래전 다른 문법에서 시작되었다’는 내용으로 ‘시간의 흐름’을 강조하는 흐름에서 어색함. 학생은 ‘한순간에 하늘에서 떨어지지 않았다’가 ‘시간이 지나며 변화가 있었다’는 뜻으로만 받아들였을 수 있음. → 처방: ‘한순간에 하늘에서 떨어지지 않았다’는 말은 ‘시간이 지나며 변화가 있었다’는 뜻이 아니라 ‘단번에 만들어진 것이 아니다’는 뜻임을 분명히 하기. 문맥상 자연스러운 연결인지 다시 한번 점검하기.\n④ 진단: ‘( ④)’ 앞 문장이 ‘이 언어를 오늘 우리가 쓰는 모습으로 바라보자’는 내용인데, 주어진 문장은 ‘오랜 세월에 걸쳐 문법이 복잡해지기도 하고 단순해지기도 했다’는 과거 변화에 대한 설명으로, ‘오늘’이라는 현재 시점과 맞지 않음. 학생은 ‘오늘’이라는 말이 ‘과거 변화’를 포함한다고 오해했을 수 있음. → 처방: ‘오늘’이라는 말은 ‘현재’를 뜻한다는 점을 분명히 하고, 과거 변화와 현재 시점의 구분을 명확히 하기. 문맥상 시제가 맞는지 확인하기.\n⑤ 진단: ‘( ⑤)’ 앞 문장이 ‘우리는 영어 화자들로서 자연을 잘라내고 개념화하며 의미를 부여한다’는 내용인데, 주어진 문장은 ‘문법이 복잡해졌다가 단순해졌다’는 과거 변화에 대한 설명으로, ‘의미 부여’와 ‘문법 변화’라는 주제가 맞지 않음. 학생은 ‘의미’와 ‘문법’을 같은 범주로 오해했을 수 있음. → 처방: ‘의미 부여’와 ‘문법 변화’는 다른 주제라는 점을 분명히 하고, 문맥상 주제가 일치하는지 확인하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-26T10:53:12.612Z",
    "type": "밑줄함의",
@@ -263,79 +367,6 @@
     ],
     "answer": 4,
     "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘provident’의 뜻(미래를 준비하는, 검소한)을 정확히 이해하지 못하고 ‘자연적 성향’이라는 뜻으로 오해했을 가능성이 있다. 지문에서 ‘provident’의 정의와 예시가 나와 있지만, ‘natural inclination’이란 뜻의 단어는 따로 없기 때문이다. → 처방: ‘provident’의 뜻을 정확히 기억하고, 지문에서 제시된 정의와 예시를 다시 한 번 확인하며 뜻을 확실히 익히기.\n② 진단: ‘provident’의 뜻을 알지만, ‘good manners’(예의 바름)와 헷갈렸을 수 있다. 지문에서 ‘provident’의 예시로 ‘미래를 위해 돈을 마련하는 아버지’를 들었지만, ‘예의 바른’이라는 뜻은 전혀 연관되지 않는다. → 처방: 단어의 뜻을 정확히 암기할 때, 예문과 연관 지어 기억하고, 뜻이 겹치지 않는지 확인하기.\n③ 진단: ‘improvident’의 뜻을 ‘자연적 성향’으로 오해했을 가능성이 있다. ‘improvident’는 ‘미래를 준비하지 않는’이라는 뜻으로, ‘자연적 성향’이라는 뜻과는 전혀 다르다. → 처방: 단어의 뜻을 공부할 때, 반대말(antonym)도 함께 익히고, 뜻이 반대되는지 확인하기.\n⑤ 진단: ‘provident’의 뜻을 ‘좋은 징조가 있는’이라는 뜻으로 오해했을 수 있다. ‘provident’는 ‘미래를 준비하는’이지만, ‘marked by favorable signs’는 ‘좋은 징조가 있는’이라는 뜻으로, 뜻이 완전히 다르다. → 처방: 단어의 뜻을 공부할 때, 유사한 단어와 비교하지 말고, 지문 속 정의와 예시를 중심으로 정확히 암기하기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T05:00:36.598Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'immediately', 'everything', 'Provident' / 10~14단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Provident people wisely prepare for future needs instead of wasting everything immediately.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-26T03:20:14.269Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP.\n\nEcho questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as complements of the relevant verbs, and subsequently get moved to the front of the overall clause. ( ① ) But what position do they get moved into, in non-echoic questions like (1)? ( ② ) The answer is obviously that they are moved into some position preceding the inverted auxiliary. ( ③ ) Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP). ( ④ ) If so, a sentence like (2c) Who was she dating? ( ⑤ ) will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q):",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘echo questions’가 wh-표현의 원래 위치를 ‘보어’로 설명한다고 오해하여, 주어진 문장이 ‘echo questions’와 관련 있다고 잘못 판단했을 수 있음. 지문에서 (1)은 echo question 이 아님을 확인하지 못함. → 처방: ‘echo question’이란 무엇인지 정확히 짚고, 주어진 문장이 ‘non-echoic question’(1)에 대한 설명임을 확인할 것.\n② 진단: ‘non-echoic questions’에서 wh-표현의 이동 위치를 ‘inverted auxiliary 앞’으로만 알고 있어, 그 위치를 ‘spec-CP’로 구체화하는 과정이 필요하다는 점을 놓쳤음. 지문에서 (1)의 구조를 제대로 읽지 못함. → 처방: ‘non-echoic question’의 구조를 떠올리며, wh-표현이 ‘inverted auxiliary 앞’에 오면 ‘spec-CP’로 이동한다는 설명을 따라가 볼 것.\n④ 진단: ‘specifiers are positioned before heads’라는 설명을 듣고 ‘spec-CP’가 wh-표현의 이동 위치일 수 있음을 떠올렸지만, 주어진 문장이 ‘plausible suggestion’을 제시하는지 확인하지 못했음. 지문 흐름을 제대로 따라가지 못함. → 처방: ‘plausible suggestion’이라는 표현을 주의 깊게 읽고, 주어진 문장이 ‘이론적 제안’을 제시하는지 확인할 것.\n⑤ 진단: ‘movement operations’를 언급하는 부분에서 wh-표현의 이동을 떠올렸지만, 주어진 문장이 ‘movement into spec-CP’를 설명하는지 보지 못했음. 지문의 화살표(→) 설명과 겹쳐 오해했을 수 있음. → 처방: ‘movement operations’가 아니라 ‘movement into spec-CP’를 설명하는 문장인지 확인하고, 화살표(→)가 있는 문장과 구분할 것.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T03:23:10.107Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 15 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Wh-expressions', 'non-echoic', 'structural' / 13~17단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Wh-expressions likely move to the specifier position of CP in non-echoic questions for structural clarity.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
