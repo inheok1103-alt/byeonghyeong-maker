@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-26T10:04:07.665Z",
+ "updated": "2026-08-26T10:54:05.216Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 빈칸을 최소화한 자연스러운 삽입 위치와 통일된 ①~④ 번호의 선지를 제공하며, 문맥에 맞는 연결어(예: 'and', 'but', 'as well as')를 필수 삽입해야 한다.",
+   "src": "자가학습:문장삽입",
+   "score": 70,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-26T10:52:33.275Z"
+  },
+  {
+   "rule": "밑줄 친 부분은 문맥상 '~의 핵심/수단/비결'이라는 비유적 의미를 구체적으로 드러내야 하며, 선지는 동일한 길이·형태로 통일하되, 함의는 직접적이고 포괄적이면서도 과장이나 극단적 표현을 배제한 선택지로 구성해야 한다.",
+   "src": "자가학습:밑줄함의",
+   "score": 65,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-26T10:52:58.231Z"
+  },
   {
    "rule": "모든 출제에서 정답 선지의 부정적 표현은 구체적이고 문맥에 맞게 재구성하여 오해 가능성을 제거해야 한다.",
    "src": "자가학습:내용불일치",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-23T04:07:11.511Z"
-  },
-  {
-   "rule": "정답 설명에서 'they'의 지시 대상을 지문에서 직접 명시한 'kangaroos'로 구체화하고, 그 이유를 'highly unnatural beasts'와 'extraordinary high-speed bounding gait'로 명확히 제시하여 완결성과 자연스러움을 확보하라.",
-   "src": "자가학습:지칭명시",
-   "score": 65,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-23T04:07:34.751Z"
-  },
-  {
-   "rule": "지문은 핵심 주장(Levin claims...)을 중심으로 논리적 흐름을 유지하며, 불필요한 인용 삽입 설명(Four or Fewer Lines...)은 삭제하고, 제목textstyle(Using Quotations...)는 본문과 자연스럽게 통합하여 가독성을 높인다.",
-   "src": "자가학습:내용불일치",
-   "score": 83,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-23T03:16:58.706Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

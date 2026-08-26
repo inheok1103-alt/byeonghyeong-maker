@@ -1,6 +1,39 @@
 {
- "updated": "2026-08-26T10:04:07.671Z",
+ "updated": "2026-08-26T10:54:05.221Z",
  "samples": [
+  {
+   "ts": "2026-08-26T10:53:12.612Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 2/3가 2번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.63,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Books are your keys to knowledge, and there is no limit to the kinds of things you can learn from books. So don’t worry if the______ you’ve taken an interest in is ___. Only you seem to care about. ___ are written on almost every subject ______ person could hope to think of. _____ learn about new things , just visit favorite book store. When you buy ______ book , you read it whenever you _______. Read about a far-away place ________ <u>pretend you are having an adventure</u>, _________ study something you heard about in ______. You might wish to study a ________ or learn to cook different kinds _____ food. Reading a book can mean _______ differences between learning about things and _______ to wonder about them. It’s economical _____ convenient to read books. You have ________ freedom to study whenever you like. ________ from books is very easy because ______ can simply go back to a _________ if you forget something you’ve read.",
+    "choices": [
+     "Reading allows one to imaginatively experience situations beyond their immediate reality.",
+     "Reading should be treated as a real-life adventure rather than just an imaginative escape.",
+     "Readers should physically act out the events described in books to make the adventure feel real.",
+     "Reading often involves pretending to be someone else, which helps people avoid their problems in real life.",
+     "Because people pretend to have adventures while reading, they end up losing interest in actual travel."
+    ],
+    "answer": 1,
+    "explanation": "밑줄 친 부분은 'Reading allows one to imaginatively experience situations beyond their immediate reality.'을 함의한다.\n[오답 진단·처방]\n② 진단: ‘real-life adventure’와 ‘imaginative escape’를 혼동했으며, 지문은 ‘pretend’를 통한 상상 체험을 강조하지 현실 경험을 권장하지 않음. → 처방: ‘pretend’를 ‘상상’을 뜻하는 말로 정확히 해석하고, 지문의 핵심은 ‘상상 체험’임을 기억할 것.\n③ 진단: ‘pretend’를 ‘실제로 행동으로 옮기기’로 오해했으며, 지문은 ‘pretend’를 통한 상상 체험을 묘사함. → 처방: ‘pretend’는 ‘마치 ~인 것처럼 느끼기’를 뜻한다는 점을 떠올리며, 행동으로 옮기는지 여부를 먼저 확인할 것.\n④ 진단: ‘pretend’를 ‘다른 사람 흉내 내기’나 ‘문제 회피’로 오독했으며, 지문은 ‘pretend’를 통한 모험 체험을 말함. → 처방: ‘pretend’의 의미를 ‘상상’을 중심으로 해석하고, 지문의 주제가 ‘모험 체험’임을 떠올릴 것.\n⑤ 진단: ‘pretend’를 통한 모험 체험이 ‘실제 여행 관심 상실’로 이어진다고 오독했으며, 지문은 모험 체험을 장려하는 내용임. → 처방: ‘pretend’의 의미를 ‘상상’을 중심으로 해석하고, 지문이 ‘모험 체험’ 자체를 권장하는지 확인할 것.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-26T09:05:34.889Z",
    "type": "첫글자어휘",
@@ -303,41 +336,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Wh-expressions likely move to the specifier position of CP in non-echoic questions for structural clarity.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-26T02:00:47.497Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Context Overrides Fixed Capitalization Rules",
-     "Capitalization Depends on Context and Usage",
-     "Capitalization Rules Are Strictly Defined by Grammar Alone",
-     "Financial Capitalization Dictates All Writing Standards",
-     "Capitalization Consistency Is the Sole Priority in Formal Texts"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Capitalization rules vary by context: grammatical (word forms) vs. financial (investment systems).'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: ‘고정 규칙’이 아니라 ‘맥락’이 중요하다는 점은 맞지만, ‘고정’이라는 말이 ‘변하지 않는 규칙’을 뜻한다고 오해해 규칙 자체가 바뀌는 것처럼 읽은 듯함. (지문에서 ‘고정’은 ‘항상 적용되는’ 뜻이 아님) → 처방: ‘고정’이라는 단어를 버리고, 지문에서 ‘일반적으로’·‘보통’이라는 표현이 반복되는지 확인해 맥락의 중요성을 떠올리기.\n③ 진단: ‘문법 alone’이 오류라는 점은 맞지만, ‘문법이 규칙을 정하지 않는다’는 오해를 함. 지문은 문법이 기본 틀이지만 ‘사용법’에 따라 달라진다고 설명함. → 처방: ‘문법이 규칙을 정하지 않는다’는 생각을 버리고, 지문에서 ‘일반적으로’·‘보통’이라는 단어가 ‘예외’를 허용한다는 사실에 주목하기.\n④ 진단: ‘재정’(financial)이라는 단어를 보고 ‘자본’(capitalization)을 재정과 연관짓는 오류. 지문은 ‘capitalization’이 대문자 사용 규칙임을 몰라서 생긴 혼동. → 처방: ‘capitalization’이 ‘대문자 사용 규칙’이라는 뜻을 먼저 떠올리고, 지문에서 ‘capitalize’라는 단어가 반복되는지 확인하기.\n⑤ 진단: ‘일관성’이 중요하다는 점은 맞지만, ‘유일한 우선순위’라고 오해해 ‘형식적 글쓰기’에서만 중요하다고 생각한 듯. 지문은 ‘맥락’이 더 중요하다고 설명함. → 처방: ‘유일한’이라는 단어를 버리고, 지문에서 ‘보통’·‘일반적으로’라는 표현이 ‘예외’를 허용한다는 사실에 집중하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Capitalization rules vary by context: grammatical (word forms) vs. financial (investment systems).]"
    }
   }
  ]
