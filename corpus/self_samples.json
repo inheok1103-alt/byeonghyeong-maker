@@ -1,6 +1,95 @@
 {
- "updated": "2026-08-26T03:23:41.381Z",
+ "updated": "2026-08-26T05:01:02.287Z",
  "samples": [
+  {
+   "ts": "2026-08-26T04:57:38.536Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "PROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. • The ⓐ<u>provident father</u> had long ago ⓑ<u>set aside money</u> for the college education of each of his children. To be improvident is to ⓒ<u>fail to provide</u> for the future. • It was improvident of the grasshopper not to store any food for the winter, ⓓ<u>unlike his acquaintance was</u> the ⓔ<u>provident ant</u>. Quick Quiz #68 Match each word in the first column with its definition in the second column. Check your answers here. 1. promulgate a. natural inclination 2. propensity b. good manners 3. propitious c. advocate 4. proponent d. prohibit 5. proprietary e. prolong 6. propriety f. leading character 7. prosaic g. constituting property 8. proscribe h. frugal 9. proselytize i. dull 10. protagonist j. marked by favorable signs 11. protract k. convert 12. provident l. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 4,
+    "explanation": "[어법: 수일치] 정답 ⓓ의 'unlike his acquaintance was'는 'unlike his acquaintance'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n① 진단: ⓐ 'provident father'는 문맥상 '미래를 준비하는 아버지'로 올바르지만, 학생은 'provident'가 '검소한' 뜻만 기억해 '검소한 아버지'로 오해했을 수 있음. 지문 첫 문장에 'frugal'과 함께 'preparing for the future'로 설명되어 있음. → 처방: 단어의 뜻을 문맥과 함께 정확히 암기하고, 예문 속 용법을 따라가며 연습하기.\n② 진단: ⓑ 'set aside money'는 '돈을 따로 떼어두다'로 문법적으로 옳으나, 학생은 'set aside'가 '제외하다'로만 기억해 '돈을 제외하다'로 오해했을 가능성 있음. 지문에서 'college education'을 위한 돈임을 유추해야 함. → 처방: 숙어의 의미를 문장 전체와 연결 지어 해석하고, 전치사나 부사구가 주는 뉘앙스를 주의 깊게 보기.\n③ 진단: ⓒ 'fail to provide'는 '미래를 준비하지 않다'로 문법적으로 맞으나, 학생은 'provide'가 '제공하다'로만 기억해 '돈을 제공하지 않다'로 오해했을 수 있음. 지문에서 'provide for the future'로 미래 준비를 강조함을 확인해야 함. → 처방: 단어의 의미를 문맥(특히 전치사나 목적어)과 함께 암기하고, 유사 단어(예: provide/provision)와 혼동하지 않기.\n⑤ 진단: ⓔ 'unlike his acquaintance was the provident ant'에서 'was'가 불필요한 비교 구조로 오용되었음. 학생은 비교 구문에서 'be 동사'의 생략 규칙을 몰라 'was'를 넣었을 수 있음. 비교 대상은 'the grasshopper'와 'the ant'로, 'unlike' 뒤에는 명사구가 와야 함. → 처방: 비교 구문(like/unlike/as ~ as)에서 'be 동사'의 생략 규칙을 익히고, 문장 구조를 정확히 분석하기. 예: 'Unlike his friend, he is tall.' (O) → 'Unlike his friend was, he is tall.' (X)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T04:58:01.100Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "PROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold. ① • The provident father had long ago set aside money for the college education of each of his children. ② To be improvident is to fail to provide for the future. ③ • It was improvident of the grasshopper not to store any food for the winter, unlike his acquaintance the provident ant. ④ The provident use of resources often leads to economic growth, as seen in the industrial revolution when nations adopted prudent policies. ⑤ Quick Quiz #68 Match each word in the first column with its definition in the second column. Check your answers here. natural inclination 2. good manners 3. leading character 7. constituting property 8. marked by favorable signs 11. proclaim PROVINCIAL (pruh VIN shul) adj limited in outlook to one’s own small corner of the world; narrow",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ‘provident’의 뜻(미래를 준비하는, 검소한)을 정확히 이해하지 못하고 ‘자연적 성향’이라는 뜻으로 오해했을 가능성이 있다. 지문에서 ‘provident’의 정의와 예시가 나와 있지만, ‘natural inclination’이란 뜻의 단어는 따로 없기 때문이다. → 처방: ‘provident’의 뜻을 정확히 기억하고, 지문에서 제시된 정의와 예시를 다시 한 번 확인하며 뜻을 확실히 익히기.\n② 진단: ‘provident’의 뜻을 알지만, ‘good manners’(예의 바름)와 헷갈렸을 수 있다. 지문에서 ‘provident’의 예시로 ‘미래를 위해 돈을 마련하는 아버지’를 들었지만, ‘예의 바른’이라는 뜻은 전혀 연관되지 않는다. → 처방: 단어의 뜻을 정확히 암기할 때, 예문과 연관 지어 기억하고, 뜻이 겹치지 않는지 확인하기.\n③ 진단: ‘improvident’의 뜻을 ‘자연적 성향’으로 오해했을 가능성이 있다. ‘improvident’는 ‘미래를 준비하지 않는’이라는 뜻으로, ‘자연적 성향’이라는 뜻과는 전혀 다르다. → 처방: 단어의 뜻을 공부할 때, 반대말(antonym)도 함께 익히고, 뜻이 반대되는지 확인하기.\n⑤ 진단: ‘provident’의 뜻을 ‘좋은 징조가 있는’이라는 뜻으로 오해했을 수 있다. ‘provident’는 ‘미래를 준비하는’이지만, ‘marked by favorable signs’는 ‘좋은 징조가 있는’이라는 뜻으로, 뜻이 완전히 다르다. → 처방: 단어의 뜻을 공부할 때, 유사한 단어와 비교하지 말고, 지문 속 정의와 예시를 중심으로 정확히 암기하기.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T05:00:36.598Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 12 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'immediately', 'everything', 'Provident' / 10~14단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Provident people wisely prepare for future needs instead of wasting everything immediately.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-26T03:20:14.269Z",
    "type": "문장삽입",
@@ -250,75 +339,6 @@
     ],
     "answer": 1,
     "explanation": "[어법: 수일치] 정답 ⓐ의 'the actual worlds'는 'the actual world'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n② 진단: ⓑ에서 'not just an alternative version of Planet Earth'는 '지구라는 행성의 다른 버전이 아니다'라는 뜻인데, 'version'이 '지구'를 수식하는 구조가 되어 문법적으로 어색하다. 'alternative universe'가 '대체 우주'를 뜻하므로 'version' 대신 'alternative world'가 되어야 한다. → 처방: 지문에서 'possible world'는 '대체 우주'를 뜻하므로 'version' 대신 'world'를 써서 'not just an alternative world of Planet Earth'로 고치기.\n③ 진단: ⓒ에서 'which the word dog applies to'는 '그 단어가 적용되는'이라는 뜻인데, 관계대명사 'which'가 이끄는 절이 문법적으로 어색하다. 'which'는 선행사 'dogs'를 받아야 하는데, 'the word dog'가 선행사가 되어 문장이 꼬였다. → 처방: 관계대명사 절의 선행사를 'dogs'로 바로잡아 'Many possible worlds have dogs in them, to which the word dog applies'로 고치기.\n④ 진단: ⓓ에서 'this set is the extension'은 문법적으로 옳지만, 'extension'이 '확장'이라는 뜻으로 쓰였을 때 문맥상 어색하다. 'extension'은 집합의 '확장'이 아니라 '지시 대상'을 뜻하는 'denotation'으로 해석되어야 한다. → 처방: 'extension' 대신 'denotation'을 써서 'this set is the denotation of dog'로 고치기.\n⑤ 진단: ⓔ에서 'the full possible range of doghood'는 '개의 가능성 있는 모든 범위'라는 뜻인데, 'doghood'가 '개의 본질'을 뜻하는 추상명사라 문맥상 어색하다. 'possible range of dogs'가 되어야 한다. → 처방: 'doghood' 대신 'dogs'를 써서 'the full possible range of dogs'로 고치기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T21:47:16.767Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] This comprises the full possible range of doghood.\n\n2 Possible worlds, extension and intension The term possible worlds is used in semantics for hypothetical ways reality might be or might have been. The way things actually are is the actual world, and it is included in the possible worlds because it is obviously a possible reality. A possible world different from the actual world is a whole alternative universe, not just an alternative version of Planet Earth. There are infinitely many possible worlds. ( ① ) Many possible worlds have dogs in them, which the word dog applies to. ( ② ) We can collect together all the dogs in the real world to form the set of all real dogs – this set is the extension of dog. ( ③ ) To get closer to what we think of as the ‘real meaning’ of the word dog we need the intension, which is the set of all dogs in all possible worlds. ( ④ ) So there are two kinds of denotation for predicates: (12) word (noun): dog ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘①’ 앞 문장들은 ‘가능세계’가 무한하다는 사실만 설명하고 있어 ‘개’라는 단어가 적용되는 세계를 구체적으로 언급하지 않음. 학생은 ‘①’이 ‘개’라는 단어가 적용되는 세계를 설명하는 부분으로 오해했을 수 있음. → 처방: ‘가능세계’가 무한하다는 설명 뒤에 ‘개’라는 단어가 적용되는 세계가 언급되는지 확인하기 위해 앞뒤 문장을 꼼꼼히 읽기.\n② 진단: ‘②’는 ‘실제 세계의 개들’을 모아 ‘확장’을 설명하는 부분임. 학생은 ‘개’라는 단어가 적용되는 모든 세계를 설명하는 ‘내포’와 혼동했을 수 있음. → 처방: ‘확장’(extension)과 ‘내포’(intension)의 의미를 정확히 구분하고, 각 개념이 설명되는 위치를 다시 한 번 확인하기.\n③ 진단: ‘③’은 ‘내포’를 설명하는 부분으로, ‘모든 가능세계의 개들’을 모아 ‘개’라는 단어의 ‘진짜 의미’에 다가가는 과정임. 학생은 이 부분이 ‘개’라는 단어가 적용되는 모든 세계를 설명하는 부분으로 오해했을 수 있음. → 처방: ‘내포’가 ‘개’라는 단어의 ‘의미’를 설명하는 부분임을 기억하고, ‘확장’과 ‘내포’를 구분하여 읽기.\n⑤ 진단: ‘⑤’는 ‘개’라는 단어를 ‘명사’로 분류하는 부분으로, 학생은 문맥상 ‘개’라는 단어가 적용되는 세계를 설명하는 부분으로 오해했을 수 있음. → 처방: ‘단어의 종류’(명사, 동사 등)가 설명되는 부분과 ‘의미’가 설명되는 부분을 구분하여 읽기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T21:47:40.420Z",
-   "type": "어법수정",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
-    "passage": "INTRODUCTION 1.3.2 Possible worlds, extension and intension The term possible worlds is used in semantics for hypothetical ways reality might be or might have been. The way things actually are is the actual world, and it ⓐ<u>is including in</u> the possible worlds because it is obviously a possible reality. A possible world different from the actual world is a whole alternative universe, ⓑ<u>not just an</u> alternative version of Planet Earth. There are infinitely many possible worlds. Many possible worlds have dogs in them, ⓒ<u>which the word dog applies to</u>. We can collect together all the dogs in the real world ⓓ<u>to form the set of all real dogs</u> – ⓔ<u>this set is the extension of dog</u>. To get closer to what we think of as the ‘real meaning’ of the word dog we need the intension, which is the set of all dogs in all possible worlds. This comprises the full possible range of doghood. So there are two kinds of denotation for predicates: (12) word (noun): dog",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [준동사] ⓐ: 'is including in' → 'is included in' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T20:48:30.172Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "I like them . Other phrase types, and even clauses, can be replaced by proforms too, as the following sentences demonstrate: (66) Th ey say ⓐ<u>that Wayne is very unhappy and so he are</u>. (67) Our neighbours ⓑ<u>will go on holiday on Sunday , and we will leave then too</u>. (68) Tim sat on the couch and stayed there . (69) Janet ⓒ<u>drove her car too fast , and Sam rides his bike likewise</u> . (70) He believes that ⓓ<u>politics are a dirty game . We all believe that</u> . (71) He said that ⓔ<u>the operation will be successful . I certainly hope so</u> . In (66) the AP very unhappy has been replaced by so , whereas in (67) and (68) then and there replace the PPs on Sunday and on the couch , respectively. In (69) likewise replaces the AdvP too fast , and in (70) and (71) that and so replace clauses. VPs too can be replaced, as we will see in Section 12.2.2. EXERCISE Replace the noun phrase constituents in the following sentences with pronouns: (63) The boys saw six blue Rolls-Royces. (64) Harriet sold her computer to my friends from Edinburgh.",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓐ(that Wayne is very unhappy and so he are → that Wayne is very unhappy and so he is), ⓒ(drove her car too fast, and Sam rides his bike likewise → drove her car too fast, and Sam rode his bike likewise), ⓓ(politics are a dirty game. We all believe that → politics is a dirty game. We all believe that) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘that Wayne is very unhappy and so he are’를 ‘that Wayne is very unhappy and so he is’로 고쳐야 하는데, 학생은 ‘are’를 ‘is’로 바꾸는 오류를 보지 못하고 ‘that’ 절의 동사 일치 오류(he are)를 간과했을 수 있음. → 처방: ‘that’ 절 안의 주어와 동사의 수 일치를 꼼꼼히 확인할 것. ‘he’ 뒤에는 ‘is’가 와야 함을 기억할 것.\n② 진단: ‘Sam rides his bike likewise’를 ‘Sam rides his bike likewise’를 ‘Sam rides his bike too’라고 고쳐야 하는데, 학생은 ‘likewise’의 올바른 쓰임을 몰라 ‘too’를 선택했을 수 있음. 지문에서 ‘likewise’는 ‘마찬가지로’라는 뜻으로 ‘too’와는 다르다는 점을 놓쳤음. → 처방: ‘likewise’는 ‘마찬가지로’라는 뜻임을 기억하고, 문맥에 맞게 ‘likewise’를 ‘too’로 대체하지 않도록 주의할 것.\n④ 진단: ‘politics are a dirty game’를 ‘politics is a dirty game’로 고쳐야 하는데, 학생은 ‘politics’가 복수형이지만 단수 취급해야 한다는 점을 몰라 ‘are’를 선택했을 수 있음. 지문에서 ‘politics’는 단수 취급함을 암시하는 예문이 있음. → 처방: ‘politics’는 단수 취급한다는 사실을 기억하고, 동사를 ‘is’로 쓰는 습관을 들일 것.\n⑤ 진단: ‘We all believe that’를 ‘We all believe so’라고 고쳐야 하는데, 학생은 ‘that’ 절을 ‘so’로 대체하는 규칙을 몰라 ‘that’을 그대로 두었을 수 있음. 지문에서 ‘that’ 절이 ‘so’로 대체될 수 있음을 보여줌. → 처방: ‘that’ 절이 ‘so’로 대체될 수 있음을 기억하고, 문맥에 맞게 ‘so’를 사용하도록 연습할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

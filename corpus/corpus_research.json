@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-26T03:23:41.377Z",
+ "updated": "2026-08-26T05:01:02.283Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T05:00:39.082Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "이 코퍼스 패턴은 형용사/부사 오용(awkward/arkward), 시제 오류(try/tried), 품사 오류(harm/harmful) 등 오류가 빈번하게 발생하는 어휘적·문법적 영역을 보여준다. 특히 'more + 형용사' 구문, 'never + 과거형', 'very + 명사'의 잘못된 조합이 특징적이다.",
+   "rule": "'more + 형용사/부사' 구문에서 형용사/부사 원형 오용을 방지하기 위해, 'more + 형용사/부사' 뒤에는 반드시 원형(awkward, harmful 등)이 오도록 문항을 설계한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-26T03:23:12.005Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "성공/실패/변화 관련 동사(harder, risk, lose, yield, encourage, prove 등)가 명사구(successful person, speeding offense)와 결합할 때, 부정사(to risk)나 결과부사절(so that) 구조가 빈번하게 등장한다. 또한, 'could/would/might + 동사원형' 구문이 추측·가능성을 나타내는 패턴으로 자주 사용된다.",
    "rule": "'~하기 어렵다/위험하다/변화하다/증명하다' 등 결과·목적·추측을 나타내는 동사가 명사구와 결합할 경우, 부정사(to V)나 결과부사절(so that S V) 구조를 필수적으로 포함시켜 문장 완성도를 높인다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T09:45:43.174Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "복수 명사 오류(products→product)와 무관사 일반명사 오류(developed countries→developed countries)는 한국 수험생에게 빈번한 오류 유형으로, 명사의 수와 관사의 선택이 문맥적·문법적 근거에 따라 명확히 구분되어야 한다.",
-   "rule": "복수 명사나 무관사 일반명사의 사용 여부를 판단할 때는 문맥의 수량성(quantifiability)과 관사의 필수 여부를 확인하라. 예를 들어 'developed countries'는 복수 범용 명사이므로 관사 없이 쓰이며, 'a product'는 단수 가산 명사로 관사가 필수적이다.",
    "sample": [
     "old english",
     "university press",
