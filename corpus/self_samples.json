@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-26T19:22:05.733Z",
+ "updated": "2026-08-26T23:39:15.498Z",
  "samples": [
+  {
+   "ts": "2026-08-26T23:38:13.719Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "ANALOGY (uh NAL uh jee) n a comparison of one thing to another; similarity • To say having an allergy feels like being bitten by an alligator would be to make or draw an analogy between an allergy and an alligator bite.\n\n(A) Something similar in a particular respect to something else is its analog (AN uh lawg), sometimes spelled analogue. Quick Quiz #7 Match each word in the first column with its definition in the second column. Check your answers here. without moral feeling 5.\n\n(B) feeling loving 6. make better 7. politely friendly 9. official pardon 10.\n\n(C) Analogy usually refers to similarities between things that are not otherwise very similar. If you don’t think an allergy is at all like an alligator bite, you might say, “That analogy doesn’t hold up. ” To say that there is no analogy between an allergy and an alligator bite is to say that they are not analogous (uh NAL uh gus).",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 4,
+    "explanation": "원문 전개 순서는 (C) - (A) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 지문 (A)에서 'analog'의 뜻과 예시가 나오고 (C)에서 'analogy'와 'analogous'의 의미를 설명하는데, 학생은 (A)의 설명만 보고 (B)가 먼저 나올 거라고 오독했다. (B)는 정의를 나열하는 부분으로 (A)·(C)보다 뒤에 와야 한다. → 처방: 글의 흐름을 따라가며, 'analogy'의 정의와 예시가 먼저 나오면 그다음에 'analog'의 설명이, 마지막으로 관련 용어 'analogous'가 나온다는 점을 기억하고 풀어라.\n② 진단: 학생은 (B)가 단어 정의 목록으로 먼저 나와야 한다고 생각했지만, (B)는 'analogy'와 관련이 없는 단어 정의 목록(5~10번)으로, 지문의 흐름상 (A)·(C)가 먼저 나와야 한다. → 처방: 지문에서 'analogy'의 뜻과 예시가 먼저 나오고, 그다음에 'analog'의 뜻, 마지막으로 'analogous'의 설명이 나온다는 구조를 파악하고 순서를 정해라.\n③ 진단: 학생은 (B)가 단어 정의 목록이므로 먼저 나와야 한다고 오독했지만, (B)는 (A)·(C)와 직접 관련이 없는 부분이다. 지문은 'analogy'의 뜻과 예시 → 'analog'의 뜻 → 'analogous'의 설명 순서로 진행된다. → 처방: 지문의 핵심 주제인 'analogy'와 관련 있는 부분(A)·(C)을 먼저 찾고, 그다음에 관련 용어 'analog'와 'analogous'가 나오는 순서를 기억해라.\n⑤ 진단: 학생은 (C)가 먼저 나와야 한다고 생각했지만, (C)는 'analogy'의 의미를 더 깊이 설명하는 부분으로, (A)에서 'analogy'의 뜻과 예시가 먼저 나와야 한다. (B)는 아예 관련이 없는 단어 정의 목록이다. → 처방: 지문의 주제인 'analogy'의 정의와 예시가 먼저 나오는 (A)를 찾고, 그다음에 관련 용어 'analog'와 'analogous'가 나오는 (C)를 확인한 뒤, (B)는 제외하고 순서를 정해라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T23:38:44.270Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 13 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'unfamiliar', 'comparing', 'familiar' / 11~15단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] An analogy helps clarify unfamiliar ideas by comparing them to more familiar ones.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 11~15단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-26T19:20:52.473Z",
    "type": "빈칸(문장)",
@@ -287,75 +341,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'lugubrious means exaggeratedly mournful'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정도·빈도를 왜곡· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 정답 — 핵심 논지 반영· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: 학생은 'libel'과 'slander'의 의미를 혼동했을 가능성이 높습니다. 'libel'은 'written injurious falsehood'로 서면 명예훼손을, 'slander'는 'spoken injurious falsehood'로 구두 명예훼손을 뜻합니다. 'infrequent but excessive sadness'는 'lugubrious'의 정의와 전혀 관련이 없습니다. → 처방: 단어의 의미를 정확히 기억하고, 지문의 'Quick Quiz #55'를 다시 한 번 꼼꼼히 읽으면서 각 단어의 정의와 예시를 비교해 보세요.\n② 진단: 학생은 'lugubrious'가 '진짜 슬픔의 표현'을 뜻한다고 오해했습니다. 그러나 'lugubrious'는 '과장된 슬픔의 표현'을 의미하며, 지문에서도 'make a big show of being sad'라고 설명합니다. → 처방: 단어의 정의에서 'exaggerated(과장된)'라는 단어가 있는지 꼭 확인한 후, 지문의 예시 문장('eventually made everyone start giggling')을 다시 읽고 과장된 감정 표현임을 파악하세요.\n③ 진단: 학생은 'lugubrious'가 '일시적인 슬픔'을 뜻한다고 생각했습니다. 그러나 'lugubrious'는 지속적이고 과장된 슬픔을 표현하는 단어입니다. 'momentary sadness'는 '일시적인 슬픔'을 의미하며, 지문과는 맞지 않습니다. → 처방: 단어의 정의와 예시를 함께 보며, 'lugubrious'가 과장된 슬픔을 오랫동안 표현하는 단어임을 기억하세요.\n⑤ 진단: 학생은 'lugubrious'가 '보편적인 슬픔'을 뜻한다고 오해했습니다. 그러나 'lugubrious'는 개인이 과장해서 표현하는 슬픔을 뜻하며, 'universal emotion of mourning'은 보편적인 슬픔을 의미합니다. → 처방: 단어의 의미를 정확히 파악한 후, 지문의 예시 문장('made everyone start giggling')을 보며 과장된 표현임을 다시 한 번 확인하세요.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: lugubrious means exaggeratedly mournful]"
-   }
-  },
-  {
-   "ts": "2026-08-26T11:47:34.930Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어의 역사적 변화가 사피어-워프 가설을 입증하려고",
-     "영어의 역사적 변화 중 문법적 복잡성 변화만을 사피어-워프 가설로 설명하려고",
-     "모든 언어의 변화가 사피어-워프 가설을 통해 이해되어야 한다고 주장하려고",
-     "영어의 역사적 변화가 사피어-워프 가설에 항상 적용된다고 설명하려고",
-     "영어의 역사적 변화 과정을 사피어-워프 가설을 통해 설명하려고"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'to understand Modern English's evolution through the Sapir-Whorf hypothesis.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 지나치게 확대 해석· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘영어의 역사적 변화’를 ‘사피어-워프 가설을 입증하려고’로 오해했는데, 지문은 변화 과정을 설명하는 데 가설을 활용할 뿐 가설을 증명하려는 목적이 아님을 간과함. → 처방: ‘~하려고’의 목적 구문은 지문에서 사용된 목적(설명·제시)이 아니라 ‘증명·입증’을 뜻하는지 확인할 것. 지문은 ‘~를 설명하려고’로 읽어야 함.\n② 진단: ‘문법적 복잡성 변화만’을 강조했는데, 지문은 ‘켈트어의 특징 흡수’와 ‘성인 학습자의 단순화’라는 두 가지 변화 모두를 언급하며 전체 과정을 설명함을 놓침. → 처방: 지문에서 언급된 변화의 ‘범위’를 정확히 파악할 것. ‘복잡성 변화’뿐 아니라 ‘형태 변화(켈트어 특징 흡수)’도 포함됨을 기억.\n③ 진단: ‘모든 언어의 변화’를 주장으로 오해했는데, 지문은 ‘영어’라는 특정 언어의 역사적 변화에만 초점을 맞추고 있음을 간과함. → 처방: 지문에서 언급된 언어(‘English’)의 범위를 확인할 것. ‘모든 언어’로 확대 해석하지 말 것.\n④ 진단: ‘항상 적용된다고’로 과장했는데, 지문은 ‘사피어-워프 가설을 통해 설명하려고’(시도·제시)하는 수준임을 놓침. → 처방: ‘항상’이라는 절대적 표현이 있는지 확인할 것. 지문은 ‘~하려고’(시도·제시)의 의미로 읽어야 함.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: to understand Modern English]"
-   }
-  },
-  {
-   "ts": "2026-08-26T11:52:42.727Z",
-   "type": "내용일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용과 일치하는 것은?",
-    "passage": "Are We Dumb Anglo-Saxons? Try squaring the Sapir-Whorf hypothesis with, for example, the fact that today’s English was once Old English. As we have seen, the language I am writing in was not planted in one fell swoop from on high. Modern English is the current stage of what began as a very different grammar, much like German’s. Over a millennium-and-a-half, this grammar had grammatical features from Celtic plugged into it Botox-style, while also being radically shorn of its complexities liposuction-style by adults learning it as a second language. Now, let’s try to look at this language we speak as it is today through the eyes of the Sapir-Whorf hypothesis. We English speakers “cut nature up, organize it into concepts, and ascribe significances as we do, largely because we are parties to an agreement to organize it in this way” and “cannot talk at all except by subscribing to the organization and classification of data which the agreement decrees.” Or, as an early Whorfian put it:",
-    "choices": [
-     "영어는 고대 영어에서 서서히 변화한 현대 영어의 한 단계에 불과하지 않다",
-     "영어의 문법은 켈트어의 특징이 유입되면서 단순해졌다",
-     "영어의 복잡한 문법은 제1언어 사용자들에 의해 단순화되었다",
-     "사피어-워프 가설에 따르면 영어 화자들은 언어 체계에 따라 현실을 인식한다",
-     "사피어-워프 학파는 언어가 데이터의 조직과 분류를 따르지 않는다고 주장했다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]

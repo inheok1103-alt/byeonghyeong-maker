@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-26T19:22:05.729Z",
+ "updated": "2026-08-26T23:39:15.493Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T23:38:45.863Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'reason relations'와 'noun phrase'가 빈번하게 결합되어 'the reason is that...' 또는 'the reason is...' 형태로 논리적 설명을 도입한다는 점을 확인했다.",
+   "rule": "변형 문제에서 '원인/이유 제시' 문장은 반드시 'The reason is that S + V' 또는 'The other reason is that S + V'로 시작하도록 출제하며, 주어와 동사의 시제를 일치시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-26T19:21:21.948Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'as'를 '~로'라는 의미로 사용할 때, 'considered as'는 오류가 빈발하며 'considered' 단독 사용이 자연스럽다. 또한 'adds'는 '광고'가 아닌 '덧붙임'을 뜻하므로 'ads'로 수정해야 한다.",
    "rule": "'considered as'는 CEFR B1 수준에서 'considered'로 축약하여 사용하도록 문제를 출제하며, 'adds'는 'ads'로 오류를 유도하는 문항을 제작한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T21:38:28.601Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구(noun phrase)나 동사구(verb phrase)의 생략·과도한 축약이 문법오류로 이어질 가능성이 높으며, 특히 'for + 기간' 구조가 '이유'로 오해될 수 있음을 확인했다.",
-   "rule": "문장 내 동사구(verb phrase)나 명사구(noun phrase)의 생략·축약이 문맥상 필수적이지 않은지 점검하고, 'for + 기간' 구조가 '이유'를 나타내는 경우 'because + 절'로 명확히 대체하도록 출제한다.",
    "sample": [
     "old english",
     "university press",
