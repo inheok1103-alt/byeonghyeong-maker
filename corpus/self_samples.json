@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-26T02:02:12.887Z",
+ "updated": "2026-08-26T03:23:41.381Z",
  "samples": [
+  {
+   "ts": "2026-08-26T03:20:14.269Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP.\n\nEcho questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as complements of the relevant verbs, and subsequently get moved to the front of the overall clause. ( ① ) But what position do they get moved into, in non-echoic questions like (1)? ( ② ) The answer is obviously that they are moved into some position preceding the inverted auxiliary. ( ③ ) Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP). ( ④ ) If so, a sentence like (2c) Who was she dating? ( ⑤ ) will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q):",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘echo questions’가 wh-표현의 원래 위치를 ‘보어’로 설명한다고 오해하여, 주어진 문장이 ‘echo questions’와 관련 있다고 잘못 판단했을 수 있음. 지문에서 (1)은 echo question 이 아님을 확인하지 못함. → 처방: ‘echo question’이란 무엇인지 정확히 짚고, 주어진 문장이 ‘non-echoic question’(1)에 대한 설명임을 확인할 것.\n② 진단: ‘non-echoic questions’에서 wh-표현의 이동 위치를 ‘inverted auxiliary 앞’으로만 알고 있어, 그 위치를 ‘spec-CP’로 구체화하는 과정이 필요하다는 점을 놓쳤음. 지문에서 (1)의 구조를 제대로 읽지 못함. → 처방: ‘non-echoic question’의 구조를 떠올리며, wh-표현이 ‘inverted auxiliary 앞’에 오면 ‘spec-CP’로 이동한다는 설명을 따라가 볼 것.\n④ 진단: ‘specifiers are positioned before heads’라는 설명을 듣고 ‘spec-CP’가 wh-표현의 이동 위치일 수 있음을 떠올렸지만, 주어진 문장이 ‘plausible suggestion’을 제시하는지 확인하지 못했음. 지문 흐름을 제대로 따라가지 못함. → 처방: ‘plausible suggestion’이라는 표현을 주의 깊게 읽고, 주어진 문장이 ‘이론적 제안’을 제시하는지 확인할 것.\n⑤ 진단: ‘movement operations’를 언급하는 부분에서 wh-표현의 이동을 떠올렸지만, 주어진 문장이 ‘movement into spec-CP’를 설명하는지 보지 못했음. 지문의 화살표(→) 설명과 겹쳐 오해했을 수 있음. → 처방: ‘movement operations’가 아니라 ‘movement into spec-CP’를 설명하는 문장인지 확인하고, 화살표(→)가 있는 문장과 구분할 것.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T03:23:10.107Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 15 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Wh-expressions', 'non-echoic', 'structural' / 13~17단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Wh-expressions likely move to the specifier position of CP in non-echoic questions for structural clarity.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-26T02:00:47.497Z",
    "type": "제목",
@@ -265,75 +319,6 @@
     ],
     "answer": 3,
     "explanation": "틀린 곳은 ⓐ(that Wayne is very unhappy and so he are → that Wayne is very unhappy and so he is), ⓒ(drove her car too fast, and Sam rides his bike likewise → drove her car too fast, and Sam rode his bike likewise), ⓓ(politics are a dirty game. We all believe that → politics is a dirty game. We all believe that) — 총 3개.\n[오답 진단·처방]\n① 진단: ‘that Wayne is very unhappy and so he are’를 ‘that Wayne is very unhappy and so he is’로 고쳐야 하는데, 학생은 ‘are’를 ‘is’로 바꾸는 오류를 보지 못하고 ‘that’ 절의 동사 일치 오류(he are)를 간과했을 수 있음. → 처방: ‘that’ 절 안의 주어와 동사의 수 일치를 꼼꼼히 확인할 것. ‘he’ 뒤에는 ‘is’가 와야 함을 기억할 것.\n② 진단: ‘Sam rides his bike likewise’를 ‘Sam rides his bike likewise’를 ‘Sam rides his bike too’라고 고쳐야 하는데, 학생은 ‘likewise’의 올바른 쓰임을 몰라 ‘too’를 선택했을 수 있음. 지문에서 ‘likewise’는 ‘마찬가지로’라는 뜻으로 ‘too’와는 다르다는 점을 놓쳤음. → 처방: ‘likewise’는 ‘마찬가지로’라는 뜻임을 기억하고, 문맥에 맞게 ‘likewise’를 ‘too’로 대체하지 않도록 주의할 것.\n④ 진단: ‘politics are a dirty game’를 ‘politics is a dirty game’로 고쳐야 하는데, 학생은 ‘politics’가 복수형이지만 단수 취급해야 한다는 점을 몰라 ‘are’를 선택했을 수 있음. 지문에서 ‘politics’는 단수 취급함을 암시하는 예문이 있음. → 처방: ‘politics’는 단수 취급한다는 사실을 기억하고, 동사를 ‘is’로 쓰는 습관을 들일 것.\n⑤ 진단: ‘We all believe that’를 ‘We all believe so’라고 고쳐야 하는데, 학생은 ‘that’ 절을 ‘so’로 대체하는 규칙을 몰라 ‘that’을 그대로 두었을 수 있음. 지문에서 ‘that’ 절이 ‘so’로 대체될 수 있음을 보여줌. → 처방: ‘that’ 절이 ‘so’로 대체될 수 있음을 기억하고, 문맥에 맞게 ‘so’를 사용하도록 연습할 것.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T19:47:43.736Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 5번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Language Patterns Reveal Subtle Human Traits",
-     "Words Exactly Mirror People’s True Actions",
-     "Personality Dictates How Language Patterns Form",
-     "Collocations Completely Define Human Nature",
-     "Language Patterns Often Reflect Human Traits"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Collocations reveal nuanced human traits through language patterns.**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·조건 누락·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Collocations reveal nuanced human traits through language patterns.**]\n[오답 진단·처방]\n① 진단: ‘subtle human traits’를 오독해 ‘언어 패턴’이 ‘미묘한 성격’을 드러낸다고 착각했는데, 지문은 ‘collocations’가 ‘사람의 성격’을 반영한다고만 말하고 ‘subtle’이라는 표현은 없다. → 처방: ‘subtle’을 빼고 ‘언어 패턴이 사람의 성격(특징)을 반영한다’는 핵심만 남기기.\n② 진단: ‘mirror’를 ‘거울처럼 정확히’로 오해해 ‘단어들이 사람의 행동을 그대로 보여준다’고 생각했는데, 지문은 ‘reflect’(반영하다)라는 softer 한 표현을 쓴다. → 처방: ‘mirror’를 ‘reflect’로 바꿔 ‘완전히 반영한다’는 과장된 표현을 줄이기.\n③ 진단: ‘Personality Dictates’를 골랐는데, 지문은 ‘collocations’가 성격에 영향을 준다는 것이지 성격이 언어 패턴을 ‘결정짓는다’는 강한 인과관계를 말하지 않는다. → 처방: ‘dictates’를 ‘influence’나 ‘reflect’로 바꾸어 인과관계의 강도를 낮추기.\n④ 진단: ‘Collocations Completely Define’을 선택했는데, ‘completely’는 지문에 없으며 ‘정의한다’는 말은 너무 과장된 표현이다. 지문은 ‘reflect’(반영)만 사용했다. → 처방: ‘define’을 ‘reflect’로 바꾸고 ‘completely’를 빼어 과장된 표현 줄이기."
-   }
-  },
-  {
-   "ts": "2026-08-25T19:52:05.818Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "제시된 단어들로 관용구를 형성하려고",
-     "제시된 단어들로 새로운 단어를 만들려고",
-     "제시된 단어들로 관용구 의미를 분석하려고",
-     "제시된 단어들로 모든 문장을 해석하려고",
-     "제시된 단어들로 관용구를 반복해서 외우려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'To identify the core argument of the given text, we focus on the primary instructional purpose: **matching and forming collocations** to understand their meanings and usage. The key action is to **form collocations** from given words to match definitions and complete a conversation.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘제시된 단어들로 새로운 단어를 만들려고’에서 ‘새로운 단어’를 만드는 활동으로 오해했는데, 지문은 ‘관용구(collocations)’를 형성하라고 지시하고 있음. → 처방: ‘관용구’를 ‘새로운 단어’로 착각하지 말고, 지문에 나온 ‘collocations’를 정확히 이해한 뒤 풀기.\n③ 진단: ‘관용구 의미를 분석하려고’에서 ‘분석’을 ‘형성’으로 혼동했는데, 지문은 ‘형성(match)’과 ‘매치’를 요구하고 있음. → 처방: ‘match’를 ‘형성’으로 이해하고, 지시문을 꼼꼼히 읽어 ‘형성’과 ‘분석’의 차이를 분명히 하기.\n④ 진단: ‘제시된 단어들로 모든 문장을 해석하려고’에서 ‘해석’을 ‘형성’으로 오해했는데, 지문은 ‘관용구를 형성’하라고 지시하고 있음. → 처방: ‘해석’이 아니라 ‘형성’을 요구한다는 점을 기억하고, 지시문을 다시 한 번 읽어 오해 방지하기.\n⑤ 진단: ‘제시된 단어들로 관용구를 반복해서 외우려고’에서 ‘외우기’를 ‘형성’으로 오해했는데, 지문은 ‘형성’과 ‘매치’를 요구하고 있음. → 처방: ‘외우기’가 아니라 ‘형성’을 목표로 한다는 점을 깨닫고, 지시문을 다시 읽어 목표를 명확히 하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To identify the core argument of the given text, we focus on the primary instructional purpose: **matching and forming collocations** to understand their meanings and usage. The key action is to **form collocations** from given words to match definitions and complete a conversation.]"
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-26T02:02:12.883Z",
+ "updated": "2026-08-26T03:23:41.377Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T03:23:12.005Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 접속사(,)의 빈도와 위치가 문체의 자연스러움을 결정하는 핵심 요소임을 확인했다. 특히 'So'와 같은 접속사 앞뒤의 쉼표 사용 패턴이 문장 흐름의 유연성을 높인다.",
+   "rule": "원서 문체 패턴을 반영하여, 접속사('So', 'But', 'And' 등)가 문장 맨 앞에 나올 경우, 반드시 쉼표(,)를 삽입하여 문장 구조를 자연스럽게 만든다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-26T02:01:40.396Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "복수 명사 오류(products→product)와 무관사 일반명사 오류(developed countries→developed countries)는 한국 수험생에게 빈번한 오류 유형으로, 명사의 수와 관사의 선택이 문맥적·문법적 근거에 따라 명확히 구분되어야 한다.",
    "rule": "복수 명사나 무관사 일반명사의 사용 여부를 판단할 때는 문맥의 수량성(quantifiability)과 관사의 필수 여부를 확인하라. 예를 들어 'developed countries'는 복수 범용 명사이므로 관사 없이 쓰이며, 'a product'는 단수 가산 명사로 관사가 필수적이다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T08:55:01.789Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "이 코퍼스 패턴은 동사-명사 연어와 시제 일치, 그리고 전치사 오용이 빈번한 오류로 드러났다. 특히 'explain about'처럼 불필요한 전치사 삽입이 문법 오류의 주요 원인임을 확인할 수 있었다.",
-   "rule": "'explain'은 직접 목적어를 취하므로 'explain about'가 아닌 'explain + what/how' 또는 'explain + 명사' 형태로만 사용하도록 오답지를 설계하라.",
    "sample": [
     "old english",
     "university press",
