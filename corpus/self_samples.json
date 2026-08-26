@@ -1,6 +1,79 @@
 {
- "updated": "2026-08-25T23:42:16.723Z",
+ "updated": "2026-08-26T02:02:12.887Z",
  "samples": [
+  {
+   "ts": "2026-08-26T02:00:47.497Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Context Overrides Fixed Capitalization Rules",
+     "Capitalization Depends on Context and Usage",
+     "Capitalization Rules Are Strictly Defined by Grammar Alone",
+     "Financial Capitalization Dictates All Writing Standards",
+     "Capitalization Consistency Is the Sole Priority in Formal Texts"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Capitalization rules vary by context: grammatical (word forms) vs. financial (investment systems).'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 정답 — 핵심 논지 반영· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: ‘고정 규칙’이 아니라 ‘맥락’이 중요하다는 점은 맞지만, ‘고정’이라는 말이 ‘변하지 않는 규칙’을 뜻한다고 오해해 규칙 자체가 바뀌는 것처럼 읽은 듯함. (지문에서 ‘고정’은 ‘항상 적용되는’ 뜻이 아님) → 처방: ‘고정’이라는 단어를 버리고, 지문에서 ‘일반적으로’·‘보통’이라는 표현이 반복되는지 확인해 맥락의 중요성을 떠올리기.\n③ 진단: ‘문법 alone’이 오류라는 점은 맞지만, ‘문법이 규칙을 정하지 않는다’는 오해를 함. 지문은 문법이 기본 틀이지만 ‘사용법’에 따라 달라진다고 설명함. → 처방: ‘문법이 규칙을 정하지 않는다’는 생각을 버리고, 지문에서 ‘일반적으로’·‘보통’이라는 단어가 ‘예외’를 허용한다는 사실에 주목하기.\n④ 진단: ‘재정’(financial)이라는 단어를 보고 ‘자본’(capitalization)을 재정과 연관짓는 오류. 지문은 ‘capitalization’이 대문자 사용 규칙임을 몰라서 생긴 혼동. → 처방: ‘capitalization’이 ‘대문자 사용 규칙’이라는 뜻을 먼저 떠올리고, 지문에서 ‘capitalize’라는 단어가 반복되는지 확인하기.\n⑤ 진단: ‘일관성’이 중요하다는 점은 맞지만, ‘유일한 우선순위’라고 오해해 ‘형식적 글쓰기’에서만 중요하다고 생각한 듯. 지문은 ‘맥락’이 더 중요하다고 설명함. → 처방: ‘유일한’이라는 단어를 버리고, 지문에서 ‘보통’·‘일반적으로’라는 표현이 ‘예외’를 허용한다는 사실에 집중하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Capitalization rules vary by context: grammatical (word forms) vs. financial (investment systems).]"
+   }
+  },
+  {
+   "ts": "2026-08-26T02:01:24.182Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "Nouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks). For example: Badlands (South Dakota) Eastern Shore (Chesapeake Bay) Bay Area (California) Fertile Crescent Strangely enough, ⓐ<u>words deriving from geographical names</u> are generally not capitalized. For example: china (dishes) plaster of paris french fries venetian blinds ⓑ<u>Capitalization of Things</u>. The complete names of private and public organizations of all kinds are capitalized. For example: Cheney High School Peace Corps Green Bay Packers (football team) Xerox Corporation New York Philharmonic ⓒ<u>The names of historical, political, and economic events</u> are generally capitalized. For example: Boston Tea Party New Deal Great Depression The names of acts, treaties, laws, and government programs are generally capitalized. For example: Declaration of Independence Marshall Plan Federal Housing Act Monroe Doctrine ⓓ<u>The names of months and the days</u> of the week are capitalized, but not the names of the seasons. For example: fall summer February Wednesday ⓔ<u>spring winter</u>",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [준동사] ⓐ: 'words deriving from geographical names' → 'words derived from geographical names' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T02:01:38.180Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 지리적 명칭에서 파생된 단어는 일반적으로 대문자로 표시되지 않습니다.\n주어진 단어: ( capitalized / geographical / Words / names / generally / derived / are / from / not )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Words derived from geographical names are generally not capitalized.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-25T23:40:29.761Z",
    "type": "복합세트",
@@ -261,95 +334,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'To identify the core argument of the given text, we focus on the primary instructional purpose: **matching and forming collocations** to understand their meanings and usage. The key action is to **form collocations** from given words to match definitions and complete a conversation.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘제시된 단어들로 새로운 단어를 만들려고’에서 ‘새로운 단어’를 만드는 활동으로 오해했는데, 지문은 ‘관용구(collocations)’를 형성하라고 지시하고 있음. → 처방: ‘관용구’를 ‘새로운 단어’로 착각하지 말고, 지문에 나온 ‘collocations’를 정확히 이해한 뒤 풀기.\n③ 진단: ‘관용구 의미를 분석하려고’에서 ‘분석’을 ‘형성’으로 혼동했는데, 지문은 ‘형성(match)’과 ‘매치’를 요구하고 있음. → 처방: ‘match’를 ‘형성’으로 이해하고, 지시문을 꼼꼼히 읽어 ‘형성’과 ‘분석’의 차이를 분명히 하기.\n④ 진단: ‘제시된 단어들로 모든 문장을 해석하려고’에서 ‘해석’을 ‘형성’으로 오해했는데, 지문은 ‘관용구를 형성’하라고 지시하고 있음. → 처방: ‘해석’이 아니라 ‘형성’을 요구한다는 점을 기억하고, 지시문을 다시 한 번 읽어 오해 방지하기.\n⑤ 진단: ‘제시된 단어들로 관용구를 반복해서 외우려고’에서 ‘외우기’를 ‘형성’으로 오해했는데, 지문은 ‘형성’과 ‘매치’를 요구하고 있음. → 처방: ‘외우기’가 아니라 ‘형성’을 목표로 한다는 점을 깨닫고, 지시문을 다시 읽어 목표를 명확히 하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: To identify the core argument of the given text, we focus on the primary instructional purpose: **matching and forming collocations** to understand their meanings and usage. The key action is to **form collocations** from given words to match definitions and complete a conversation.]"
-   }
-  },
-  {
-   "ts": "2026-08-25T19:00:46.790Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "WEEK 18 DAY 5 ⓐ<u>REVIEW</u> While it is true that ⓑ<u>scientists</u> have had ⓒ<u>remarkable</u> success in teaching chimpanzees to communicate, we can be certain that even super-monkeys would have difficulty with any of the ⓓ<u>words</u> below. However, higher animals who apply themselves can master all of them. Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 8 and 9.) REVIEW WORDS DEFINITIONS 1.abortive a. not related to the subject 2.accommodate b. thin covering 3.barometer c. fruitless, failing 4.buff (n.) d. natural 5.conjugal e. polished, civilized 6.crave f. to make fit, adjust to 7.deem g. on the spur of the moment 8.inherent h. move in a lively manner 9.innate i. to desire 10.irrelevant j. instrument for measuring ⓔ<u>change</u> 11.itinerant k. winding 12.latent l. inborn 13.modify m. believe, to judge 14.myriad n. going from place to place 15.peregrination o. a fan, follower, enthusiast 16.romp p. travel (n.) 17.spontaneous q. relating to marriage, connubial* 18.tortuous r. countless number 19.urbane s. to change 20.veneer t. lying hidden",
-    "choices": [
-     "review: A second or subsequent reading of a text or artifact in an attempt to gain new i",
-     "scientists: One whose activities make use of the scientific method to answer questions regar",
-     "remarkable: (physical) An area; somewhere within an area.",
-     "words: The smallest unit of language that has a particular meaning and can be expressed",
-     "change: The process of becoming different."
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ의 풀이는 'place'의 정의이다. 'remarkable'의 올바른 풀이: Worthy of being remarked or noted; notable\n[오답 진단·처방]\n① 진단: ‘review’를 ‘다시 읽기’로만 이해하고 ‘새로운 통찰 얻기’를 보지 못했다. 지문에서 ‘REVIEW’는 ‘복습’이란 뜻이지만, 선지①는 ‘새로운 통찰’을 포함해 더 넓은 의미를 담은 영어 정의를 제시했다. → 처방: ‘review’의 영어 정의를 찾을 때는 사전뿐 아니라 지문 속 ‘복습’이라는 뜻도 떠올리며, 선지의 의미를 ‘이해의 깊이’를 기준으로 비교해본다.\n② 진단: ‘scientists’를 ‘과학자’로만 좁게 해석하고, ‘과학적 방법’을 활용한다는 넓은 의미를 놓쳤다. 지문에서 ‘과학적 방법’을 언급하지 않았지만, 선지②는 과학자의 정의에 ‘과학적 방법’을 포함했다. → 처방: ‘scientists’를 ‘과학을 연구하는 사람’으로 넓게 생각하고, 선지의 영어 정의를 ‘과학적 방법’의 포함 여부로 나누어본다.\n④ 진단: ‘words’를 ‘의미 있는 smallest unit’로만 해석하고, ‘표현될 수 있는’ 부분을 보지 못했다. 지문에서 ‘단어’는 ‘의미’를 지닌 ‘가장 작은 언어 단위’이지만, 선지④는 ‘표현될 수 있는’ 조건까지 포함했다. → 처방: ‘words’의 정의를 ‘의미’를 지닌 ‘단위’로만 보지 말고, ‘표현’이라는 기능까지 고려해 선지의 의미를 넓게 생각한다.\n⑤ 진단: ‘change’를 ‘다른 상태로 변하는 과정’으로만 이해하고, ‘becoming different’라는 영어 정의가 ‘과정’이라는 점을 놓쳤다. 지문에서 ‘change’는 ‘변화’라는 뜻이지만, 선지⑤는 ‘과정’이라는 뜻을 정확히 담았다. → 처방: ‘change’를 단순히 ‘변화’가 아닌 ‘어떻게 변하는지’를 뜻하는 ‘과정’으로도 생각하고, 영어 정의를 ‘과정’이라는 키워드로 찾아본다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T17:48:37.678Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 14 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'situations', 'discourse', 'coherent' / 12~16단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] We combine situations in discourse to create coherent texts, often implying links between them.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-25T16:58:12.439Z",
-   "type": "안내문일치",
-   "level": "중",
-   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": -0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 안내문의 내용과 일치하는 것은?",
-    "passage": "NEW WORDS flagrant flā´ grənt admonish ad mon´ ish duress d res´ culprit kul´ prit inexorable in ek´ sər ə bəl WEEK 5 DAY 2 CRACKING DOWN Mr. Dorsey, our new principal, determined to do something about the flagrant cheating at our high school. He issued bulletins and began to admonish those teachers who did not proctor alertly. Under duress, the faculty reported the names of the culprits. Several crib sheets were turned in as tangible* evidence of the cheating. Mr. Dorsey’s inexorable campaign against the wrong-doers seemed to be paying off. Sample Sentences Into which sentences do the new words fit best? 1.The ________________ was caught with his fingers in the cookie jar. 2.Television sleuths are ________________ in their pursuit of lawbreakers. 3.The confession was signed under ________________ , the attorney claimed. 4.I suspect that my father will ________________ me for coming home late. 5.Parking in front of a hydrant is a ________________ violation of the city’s law. Definitions Match the new words with their meanings. 6.flagrant a. inflexible, unrelenting 7.admonish b. compulsion, force 8.duress c. outrageous, glaringly bad",
-    "choices": [
-     "교장은 학생들의 노골적인 칭찬을 문제 삼아 단속을 시작했다",
-     "교장은 감독을 성실히 한 교사들을 꾸짖었다",
-     "교직원들은 자발적으로 부정행위의 가해자 이름을 신고했다",
-     "몇몇 쪽지가 부정행위의 증거로 제출되었다",
-     "교장은 부정행위자들에 대한 관대한 단속을 시작했다"
-    ],
-    "answer": 4,
-    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'flagrant'는 '노골적인(뻔한)' 부정행위를 뜻하는데, 학생은 '칭찬'으로 오해해 '칭찬'과 '부정행위'를 연결하지 못했음. (지문: 'flagrant cheating') → 처방: 새로운 단어 뜻을 정확히 외우고, 문장 속 단어가 어떤 상황인지 Context 를 먼저 떠올려야 함.\n② 진단: 지문에서 'admonish'는 '꾸짖다'는 뜻으로 쓰였지만, 학생은 '꾸짖은 대상'을 '감독을 잘한 교사'로 오해했음. (지문: 'admonish those teachers who did not proctor alertly') → 처방: 단어 뜻을 정확히 알고, 누가 누구를 꾸짖는지 문장 구조를 꼼꼼히 읽어야 함.\n③ 진단: 지문에서 'duress'는 '강제'를 뜻하는데, 학생은 '자발적'으로 오해해 '자발적으로 신고했다'로 연결했음. (지문: 'Under duress, the faculty reported the names') → 처방: 단어 뜻을 외우고, 문맥에서 '강제'가 어떤 상황인지 확인해야 함.\n⑤ 진단: 지문에서 'inexorable'은 '관대하지 않은(가혹한)' 뜻인데, 학생은 '관대한'으로 반대로 오해했음. (지문: 'inexorable campaign against the wrong-doers') → 처방: 단어 뜻을 정확히 알고, 문장 전체의 분위기를 파악해 반대 의미를 찾지 않도록 주의해야 함.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
    }
   }
  ]

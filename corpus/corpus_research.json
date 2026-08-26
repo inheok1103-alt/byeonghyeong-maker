@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-25T23:42:16.719Z",
+ "updated": "2026-08-26T02:02:12.883Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T02:01:40.396Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "영어에서 결과나 상태 변화 동사(become worse/worsen) 사용 시, 'to be + 형용사'보다 'to + 동사원형'이 자연스러운 경향이 강하다. 또한 '~하게 만들다' 표현은 'make + 목적어 + 형용사'가 아닌 'make + 목적어 + 동사원형' 구조를 선호한다.",
+   "rule": "CEFR B1 수준 내신 문제에서, '~하게 만들다' 표현을 쓸 경우 'make + 목적어 + 동사원형' 구조(예: make people happy)를 반드시 사용하도록 오답 선지로 제시하고, 'make + 목적어 + 형용사' 구조(예: make the people happy)를 정답으로 처리한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-25T23:41:50.015Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "이 코퍼스 패턴은 동사-명사 연어와 시제 일치, 그리고 전치사 오용이 빈번한 오류로 드러났다. 특히 'explain about'처럼 불필요한 전치사 삽입이 문법 오류의 주요 원인임을 확인할 수 있었다.",
    "rule": "'explain'은 직접 목적어를 취하므로 'explain about'가 아닌 'explain + what/how' 또는 'explain + 명사' 형태로만 사용하도록 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T07:53:07.301Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'long-term'과 같이 하이픈으로 연결된 복합형용사가 빈번히 등장하며, 특히 'long term'보다는 'long-term'이 표준어로 정착되어 있음을 확인할 수 있다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 'long term'이 복합형용사로 쓰일 경우 'long-term'으로 하이픈 연결을 반드시 적용하여 문장을 구성하라.",
    "sample": [
     "old english",
     "university press",
