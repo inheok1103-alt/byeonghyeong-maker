@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-26T05:01:02.287Z",
+ "updated": "2026-08-26T06:02:07.381Z",
  "samples": [
+  {
+   "ts": "2026-08-26T05:51:53.017Z",
+   "type": "내용일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용과 일치하는 것은?",
+    "passage": "This would mean that head movement applies in a successive-cyclic (two-step) fashion. Each of the two head movement operations in (52) – viz movement of care from V to NEG, and then from NEG to T – is local in the sense that it satisfies the Head Movement Constraint (31), since in each case movement is from one head position into the next highest head position in the structure. If head movement is driven by affixal properties of heads, and if both T and NEG contain a strong affix with a V-feature which can trigger movement of a main verb, the verb care will first move from V to NEG in order to attach to a null negative affix (in much the same way as the verb hath in (50) moves from V to Neg to attach to the overt negative affix ne), and the resulting complex NEG head (comprising a null negative affix with a verb attached to it) in turn will move from NEG to T in order to attach to a strong tense affix in T.",
+    "choices": [
+     "머리 이동은 두 단계로 이루어지는 연속 순환 방식으로 적용되지 않는다.",
+     "머리 이동은 'Head Movement Constraint'를 만족하는 국지적 동작이다.",
+     "동사 'care'는 먼저 부정(NEG)으로 이동하지 않고 시제(T)으로 바로 이동한다.",
+     "결과적으로 생긴 복합 부정(NEG) 머리는 다시 부정(NEG)으로 이동한다.",
+     "시제(T) 안의 강한 부정 접사(affix)가 머리 이동을 유발할 수 없다."
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 머리 이동은 'two-step' 방식(연속 순환)으로 적용된다고 명시했는데, 이를 '적용되지 않는다'로 오독한 듯함. 'This would mean that head movement applies in a successive-cyclic (two-step) fashion.'라는 문장이 있음. → 처방: 지문에서 머리 이동이 두 단계로 이루어진다는 설명을 정확히 읽고, '적용되지 않는다'는 선지가 틀렸다는 점을 기억할 것.\n③ 진단: 지문에서 'care'가 V 에서 NEG 로 먼저 이동한 뒤 NEG 에서 T 로 이동한다고 설명했는데, 이를 '부정(NEG)으로 이동하지 않고 시제(T)으로 바로 이동한다'로 오독한 듯함. 'the verb care will first move from V to NEG'라는 문장이 있음. → 처방: 동사의 이동 순서를 정확히 파악하고, 지문에서 설명하는 'V → NEG → T'의 흐름을 기억할 것.\n④ 진단: 지문에서 복합 NEG 머리가 'NEG 에서 T 로 이동한다'고 설명했는데, 이를 '다시 부정(NEG)으로 이동한다'로 오독한 듯함. 'the resulting complex NEG head... in turn will move from NEG to T'라는 문장이 있음. → 처방: 머리의 이동 방향을 정확히 읽고, 'NEG → T'의 흐름을 기억할 것.\n⑤ 진단: 지문에서 'T 와 NEG 가 모두 강한 V-특징을 가진 접사를 포함해 머리 이동을 유발할 수 있다'고 설명했는데, 이를 '시제(T) 안의 강한 부정 접사가 머리 이동을 유발할 수 없다'로 오독한 듯함. 'both T and NEG contain a strong affix with a V-feature which can trigger movement'라는 문장이 있음. → 처방: 지문에서 머리 이동의 원인이 되는 '강한 접사'의 존재를 정확히 읽고, 부정 접사가 아니라 V-특징을 가진 접사가 중요하다는 점을 기억할 것.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-26T06:01:34.995Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 25 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'movement', 'proceeds', 'triggers' / 23~27단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Head movement proceeds in two local steps, first from V to NEG and then from NEG to T, due to affixal triggers in each head.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 23~27단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-08-26T04:57:38.536Z",
    "type": "어법(밑줄)",
@@ -269,76 +322,6 @@
     ],
     "answer": 2,
     "explanation": "정답 진술만 글과 모순한다.\n[오답 진단·처방]\n① 진단: ‘provident’의 뜻이 ‘미래를 대비하는’임을 정확히 짚었지만, 지문에서 ‘We were provident with our limited food supplies’를 ‘제한된 식량을 아껴 썼다’로 해석한 것은 맞지만, ‘아껴 썼다’가 ‘아끼지 않았다’와 반대 의미라는 점까지는 생각하지 못한 듯하다. → 처방: ‘provident’의 뜻을 정확히 기억한 다음, 지문에서 ‘provident’의 반대말인 ‘improvident’를 떠올리며 ‘아껴 썼다’와 ‘아끼지 않았다’를 비교해 보기.\n③ 진단: ‘improvident’의 뜻을 ‘미래를 대비하지 못한’으로 이해했지만, 지문에서 ‘It was improvident of the grasshopper not to store any food for the winter’를 ‘메뚜기는 겨울을 대비한 식량을 전혀 저장하지 않았다’로 해석한 것은 맞지만, ‘not to store’를 ‘저장하지 않았다’로만 해석해 ‘전혀’라는 강조까지는 고려하지 못한 듯하다. → 처방: ‘not to store’를 ‘저장하지 않았다’로만 해석하지 말고, ‘전혀’라는 강조가 포함된 표현인지 확인해 보기.\n④ 진단: ‘provident’의 뜻을 ‘미래를 대비한’으로 이해했지만, 지문에서 ‘unlike his acquaintance the provident ant’를 ‘미래를 대비한 개미는 겨울을 대비해 식량을 저장한 반면 메뚜기는 그렇지 않았다’로 해석한 것은 맞지만, ‘unlike’를 ‘반면에’라는 대조로만 이해해 ‘provident’의 의미를 충분히 살리지 못한 듯하다. → 처방: ‘unlike’를 ‘~와는 달리’라는 대조로만 보지 말고, ‘provident’의 의미를 정확히 짚은 다음 비교해 보기.\n⑤ 진단: ‘improvident’를 ‘미래를 대비하지 못한 행동’이 ‘낭비적인’으로 불린다는 점은 지문에서 ‘To be improvident is to fail to provide for the future’라고 설명한 부분을 정확히 짚었지만, ‘낭비적인’이라는 단어가 ‘improvident’의 직접적인 뜻은 아니라는 점까지는 생각하지 못한 듯하다. → 처방: ‘improvident’의 뜻을 정확히 기억한 다음, 지문에서 ‘To be improvident is to fail to provide for the future’라고 설명한 부분을 다시 한 번 확인해 보기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하지 않는' 진술을 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T21:45:53.392Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "INTRODUCTION 1.3.2 Possible worlds, extension and intension The term possible worlds is used in semantics for hypothetical ways reality might be or might have been. The way things actually are is the ____, and it is included in the possible worlds because it is obviously a possible reality. A possible world different from the actual world is a whole alternative universe, not just an alternative version of Planet Earth. There are infinitely many possible worlds. Many possible worlds have dogs in them, which the word dog applies to. We can collect together all the dogs in the real world to form the set of all real dogs – this set is the extension of dog. To get closer to what we think of as the ‘real meaning’ of the word dog we need the intension, which is the set of all dogs in all possible worlds. This comprises the full possible range of doghood. So there are two kinds of denotation for predicates: (12) word (noun): dog",
-    "choices": [
-     "가상 세계",
-     "이상적 세계",
-     "현실 세계",
-     "과학적 세계",
-     "종교적 세계"
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 '현실 세계'가 들어가 글의 논지를 완성한다 (본문 'actual world'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 'the way things actually are'가 빈칸에 들어간다는 점(1~2문장)을 제대로 읽지 않고 '가상'이라는 단어만 보고 선택한 듯함. 'possible worlds'는 가상 세계를 뜻하지만, 빈칸은 '실제 현실'을 가리키는 말이어야 함. → 처방: 'the way things actually are'라는 구절을 먼저 찾고, 그 의미를 정확히 이해한 뒤에 빈칸을 채우기.\n② 진단: '이상적 세계'라는 단어는 지문에 'alternative universe'나 'possible reality'로 표현된다는 점에서 혼동한 듯함. '이상적'은 'perfect'를 뜻하지만, 지문은 '실제 현실'을 가리키는 말이 필요하다는 점을 놓침. → 처방: 빈칸 앞뒤 문장('the way things actually are', 'it is included in the possible worlds')을 꼼꼼히 읽고, '이상적'이라는 단어의 의미를 지문과 연결 지어 생각하기.\n④ 진단: '과학적 세계'는 지문에 'scientific'이라는 단어가 전혀 등장하지 않음에도 불구하고, '세계'라는 단어와 '현실'을 연관 지어 선택한 듯함. 과학적 세계는 'possible worlds'의 한 종류가 아님. → 처방: 지문에 등장하는 단어와 개념만으로 답을 정해야 하며, '과학적'이라는 단어는 지문에서 언급되지 않는다는 점을 기억하기.\n⑤ 진단: '종교적 세계'는 지문에 'religious'라는 단어가 없음에도 불구하고, '세계'라는 단어와 '현실'을 연관 지어 선택한 듯함. 종교적 세계는 'possible worlds'의 한 종류가 아님. → 처방: 지문에 등장하는 단어와 개념을 기준으로 답을 정하고, 지문에 없는 단어나 개념은 배제하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-25T21:46:53.981Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.25,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.25)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "INTRODUCTION 1.3.2 Possible worlds, extension and intension The term possible worlds is used in semantics for hypothetical ways reality might be or might have been. The way things actually are is ⓐ<u>the actual worlds</u>, and it is included in the possible worlds because it is obviously a possible reality. A possible world different from the actual world is a whole alternative universe, ⓑ<u>not just an alternative version</u> of Planet Earth. There are infinitely many possible worlds. Many possible worlds have dogs in them, ⓒ<u>which the word dog applies to</u>. We can collect together all the dogs in the real world to form the set of all real dogs – ⓓ<u>this set is the extension</u> of dog. To get closer to what we think of as the ‘real meaning’ of the word dog we need the intension, which is the set of all dogs in all possible worlds. This comprises ⓔ<u>the full possible range</u> of doghood. So there are two kinds of denotation for predicates: (12) word (noun): dog",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 1,
-    "explanation": "[어법: 수일치] 정답 ⓐ의 'the actual worlds'는 'the actual world'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n② 진단: ⓑ에서 'not just an alternative version of Planet Earth'는 '지구라는 행성의 다른 버전이 아니다'라는 뜻인데, 'version'이 '지구'를 수식하는 구조가 되어 문법적으로 어색하다. 'alternative universe'가 '대체 우주'를 뜻하므로 'version' 대신 'alternative world'가 되어야 한다. → 처방: 지문에서 'possible world'는 '대체 우주'를 뜻하므로 'version' 대신 'world'를 써서 'not just an alternative world of Planet Earth'로 고치기.\n③ 진단: ⓒ에서 'which the word dog applies to'는 '그 단어가 적용되는'이라는 뜻인데, 관계대명사 'which'가 이끄는 절이 문법적으로 어색하다. 'which'는 선행사 'dogs'를 받아야 하는데, 'the word dog'가 선행사가 되어 문장이 꼬였다. → 처방: 관계대명사 절의 선행사를 'dogs'로 바로잡아 'Many possible worlds have dogs in them, to which the word dog applies'로 고치기.\n④ 진단: ⓓ에서 'this set is the extension'은 문법적으로 옳지만, 'extension'이 '확장'이라는 뜻으로 쓰였을 때 문맥상 어색하다. 'extension'은 집합의 '확장'이 아니라 '지시 대상'을 뜻하는 'denotation'으로 해석되어야 한다. → 처방: 'extension' 대신 'denotation'을 써서 'this set is the denotation of dog'로 고치기.\n⑤ 진단: ⓔ에서 'the full possible range of doghood'는 '개의 가능성 있는 모든 범위'라는 뜻인데, 'doghood'가 '개의 본질'을 뜻하는 추상명사라 문맥상 어색하다. 'possible range of dogs'가 되어야 한다. → 처방: 'doghood' 대신 'dogs'를 써서 'the full possible range of dogs'로 고치기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
    }
   }
  ]

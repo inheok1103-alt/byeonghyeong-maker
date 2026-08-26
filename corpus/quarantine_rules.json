@@ -1,7 +1,23 @@
 {
- "updated": "2026-08-26T05:01:02.282Z",
+ "updated": "2026-08-26T06:02:07.375Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 지문의 핵심 논리 구조와 어휘 의미를 정확하게 반영하되, 부정 표현·수량·제약 조건 등 주요 개념은 오류 없이 서술하고, 필요 시 핵심 논리를 요약한 보조 설명을 추가하여 난이도를 조절해야 한다.",
+   "src": "자가학습:내용일치",
+   "score": 68,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-26T05:51:29.967Z"
+  },
+  {
+   "rule": "원문의 핵심 이론을 반영한 선택지 개발, 발문의 이론적 주장 구체화, 선택지의 길이·형태·난이도 균형 유지, 오답의 매력도와 비중복성 제고가 필수적이다.",
+   "src": "자가학습:장문세트",
+   "score": 62,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-08-26T05:54:37.882Z"
+  },
   {
    "rule": "모든 선택지 간 균형과 통일성을 위해 명령문 사용 여부를 통일하고, 필요 시 수동태나 재구성으로 자연스러운 어법을 적용할 것.",
    "src": "자가학습:어법(밑줄)",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-22T22:41:12.438Z"
-  },
-  {
-   "rule": "영영풀이의 정의는 'A form or version of something that differs slightly from the standard or another form of it'로 구체화하고, 발문에는 원지문의 'related variants'나 'different ways' 등 맥락을 명시하며, 첫 글자 'v' 외에 'vary', 'variable' 등 유사 단어군을 보조 조건으로 포함하라.",
-   "src": "자가학습:영영풀이단어쓰기",
-   "score": 63,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-22T22:41:34.582Z"
-  },
-  {
-   "rule": "정답 선지는 원문의 어휘를 정확히 인용하고, 오답 선지는 원문의 핵심 요소(주제·장소·출처)를 축약하지 않거나 혼합하지 않은 상태로 명시해야 한다.",
-   "src": "자가학습:주제",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-22T21:37:27.364Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
