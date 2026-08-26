@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-26T07:18:46.147Z",
+ "updated": "2026-08-26T08:07:43.285Z",
  "samples": [
+  {
+   "ts": "2026-08-26T08:06:42.589Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Specific Processes of Argument Merging in Verb Phrases",
+     "Universal Principles of Grammatical Structure and Argument Realization",
+     "Syntactic Principles of Verb Phrase Structure and Argument Merging",
+     "Difficulties in Analyzing Verb Phrase Argument Structures",
+     "Verb Phrase Syntax Defined by Argument Properties"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The passage establishes general syntactic assumptions for the structure and argument realization of verb phrases.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·초점 이탈·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 정답 — 핵심 논지 반영· ④ 오답 — 소재는 같으나 논점에서 벗어남· ⑤ 오답 — 주체나 대상을 바꿔치기\n[오답 진단·처방]\n① 진단: 이 선지는 지문이 동사구의 '구조'에 대한 설명도 중요하게 다루고 있음을 간과하고, '논항 합쳐지기'라는 한 가지 과정에만 초점을 맞추어 지문의 범위를 좁게 이해했습니다. 지문은 '동사구는 쪼개진 구조를 가진다'와 같이 동사구의 전반적인 구조를 먼저 설명합니다. → 처방: 글의 제목을 고를 때는 지문이 다루는 모든 핵심 내용을 아우르는 가장 넓고 정확한 표현을 찾습니다.\n② 진단: 이 선지는 지문이 '전이 동사구와 비전이 동사구의 통사론에 대한 일반적인 가정'을 설명하고 있음에도 불구하고, '보편적인 원리'나 '문법 구조 전반'과 같이 지문의 범위를 지나치게 넓게 해석했습니다. → 처방: 지문이 다루는 내용의 구체적인 범위와 대상을 정확히 파악하여 제목의 포괄성을 조절합니다.\n④ 진단: 이 선지는 지문이 동사구 논항 구조를 '설명하고 가정하는' 글임에도 불구하고, '분석의 어려움'이라는 부정적인 측면을 언급하며 글의 목적을 완전히 오해했습니다. 지문은 분석의 어려움이 아닌 분석의 '방법'을 제시합니다. → 처방: 글의 내용이 '무엇을 설명하는지'와 '무엇을 주장하는지'를 구분하여 글의 목적을 정확히 파악합니다.\n⑤ 진단: 이 선지는 지문이 '동사구의 통사론적 구조가 논항의 합쳐지는 방식을 결정한다'는 내용을 설명함에도 불구하고, '논항의 속성이 통사론을 정의한다'는 식으로 인과 관계를 반대로 이해했습니다. 지문은 '동사구는 쪼개진 구조를 가진다'고 먼저 구조를 제시합니다. → 처방: 글에서 설명하는 개념들 사이의 인과 관계나 주종 관계를 명확히 파악하여 오해를 피합니다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The passage establishes general syntactic assumptions for the structure and argument realization of verb phrases.]"
+   }
+  },
   {
    "ts": "2026-08-26T07:11:12.747Z",
    "type": "복합세트",
@@ -303,25 +338,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [준동사] ⓐ: 'words deriving from geographical names' → 'words derived from geographical names' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T02:01:38.180Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 지리적 명칭에서 파생된 단어는 일반적으로 대문자로 표시되지 않습니다.\n주어진 단어: ( capitalized / geographical / Words / names / generally / derived / are / from / not )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Words derived from geographical names are generally not capitalized.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

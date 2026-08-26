@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-26T07:18:46.143Z",
+ "updated": "2026-08-26T08:07:43.282Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-26T08:07:14.696Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'Only by V-ing S can V' 구조의 강제적 연어와 'more + sophisticated' 같은 최상급 형용사+명사 연어가 오답 설계에 유용하다. 또한 'create a fire break' vs 'create a fire escape plan'처럼 동사+명사 연어의 오용 패턴도 활용 가능하다.",
+   "rule": "'Only by [V-ing] can [S V]' 구조와 'more + [형용사] + [명사]' 연어 패턴을 반드시 포함하는 문장을 출제하여, 학생들이 동사 형태(원형 vs -ing) 오류와 최상급 연어 오류를 범하게 하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-26T07:18:13.050Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'명사 단수/복수 오류'가 빈번히 발생하며, 특히 'car/cars', 'guide/guides'와 같이 가산명사의 수 일치가 문맥에 맞지 않게 사용되는 경우가 많다. 또한, 'between two'와 같은 전치사구에서도 'two'의 수에 따라 명사가 복수형으로 사용되어야 한다.",
    "rule": "'가산명사의 수 일치' 오류를 테스트하기 위해, 문장 내 가산명사가 단수/복수 중 어느 형태로 쓰이는 것이 문맥상 자연스러운지 판단하도록 하는 문항을 설계하라. 예를 들어, '...instead of car'를 '...instead of cars'로, 또는 '...a good tour guide'를 '...find good tour guides'로 수정하는 선택지를 포함시켜라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T13:05:12.545Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'의미상 필수적 한정사(the) 누락'이 문법오류로 빈번하다는 패턴을 확인했다. 특히 대명사·관계대명사·수식어구 뒤의 명사구에서 the가 선택적으로 빠지거나 오용된다.",
-   "rule": "의미상 특정 대상을 가리키는 명사구(예: '장소', '사람들', '것들') 뒤에는 반드시 정관사 'the'를 첨가하여 문장을 완성하라. 단, 고유명사·불가산명사·복수명사 일반화는 제외한다.",
    "sample": [
     "old english",
     "university press",
