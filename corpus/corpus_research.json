@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-27T10:01:03.095Z",
+ "updated": "2026-08-27T20:35:24.081Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-27T20:34:55.944Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "'and' 구문에서 병렬 구조의 오류가 빈번히 발생하며, 특히 동사(does not exist vs. is)나 보어(just fiction vs. fiction)의 일치 오류가 두드러진다. 또한 접속사(as when)나 부사(clearly)의 위치 오류가 반복된다.",
+   "rule": "'A and B' 구조에서 A와 B는 문법적·의미적으로 일치해야 하며, 특히 동사(does not exist / is), 보어(fiction), 접속사(as when → when), 부사(clearly의 위치) 등을 점검하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-27T10:00:26.449Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'no matter whether ~ or not'는 구어체로, 'even if ~'로 대체하여 더 자연스러운 문장을 만들 수 있다. 또한 'give way to'는 'make way for'로, 'satisfies the transportation'은 'satisfied their transportation needs'로 구체화하여 문법적·의미적 정확성을 높인다.",
    "rule": "'no matter whether ~ or not'를 'even if ~'로, 'give way to'를 'make way for'로, 'satisfies the + 명사'를 'satisfied their + 복수명사'로 대체하여 문법적·의미적 자연스러움을 높이는 변형 문제를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-23T23:38:23.394Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "명사구(NP) 내 한정사(Determiner) 생략 오류가 빈번하며, 특히 'important'와 같은 형용사 중심의 NP에서 'thing' 또는 'aspect' 등 보완 명사가 필요하다는 패턴이 확인된다. 또한, 문장 종결부에서 동사구(VP) 생략이 흔하며, 이를 보완하기 위해 완전한 절 구조로 변환해야 한다.",
-   "rule": "'형용사/분사 + 명사' 구조에서 한정사가 생략된 경우, 반드시 'a/the + [명사] + thing/aspect' 등으로 보완하거나, 동사구를 추가하여 완전한 절로 변환하라. 예: 'The important is travel' → 'The important thing is traveling'.",
    "sample": [
     "old english",
     "university press",
