@@ -1,6 +1,94 @@
 {
- "updated": "2026-08-28T05:33:26.336Z",
+ "updated": "2026-08-28T18:50:01.739Z",
  "samples": [
+  {
+   "ts": "2026-08-28T18:46:26.811Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "This then is the heritage of the pioneer experience—a passionate belief that a democracy was possible which should leave the individual a part to play in a free society and not make him a cog in a machine operated from above; which trusted in the common man, in his ­tolerance, his ability to adjust differences with good humor, and to work out an American type from the contributions of all nations— a type for which he would fight against those who challenged it in arms, and for which in time of war he would make sacrifices, even the temporary sacrifice of his individual freedom and his life, lest that freedom be lost forever. Note the following: • the summative modifier in the opening segment: a passionate belief that . . . • the increased length and weight of the second element in each coordination, even the coordinations inside coordinations • the two resumptive modifiers beginning with type and sacrifice That may be over the top, especially the quadruple chiasmus in the last sixteen words:\n\n─────────\n[요약문] The pioneer experience fostered a (A) conviction that a (B) system prioritizing individual autonomy over centralized control could thrive through collective contributions and shared sacrifices.",
+    "choices": [
+     "(A) faith … (B) collectivism",
+     "(A) conviction … (B) hierarchy",
+     "(A) ideology … (B) system",
+     "(A) myth … (B) autonomy",
+     "(A) nostalgia … (B) system"
+    ],
+    "answer": 3,
+    "explanation": "(A) ideology / (B) system 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ①을 선택한 학생은 'passionate belief'와 'conviction'의 의미를 혼동했을 가능성이 크며, 'collectivism'은 지문의 'cog in a machine'와 반대되는 '개인의 자유'라는 핵심 내용을 무시한 오독임. ② → 처방: 지문의 핵심 주제인 '개인의 자유와 민주주의'를 정확히 파악하고, 'conviction'과 'system'이 문맥에 맞는지 확인할 것.\n② 진단: ②을 선택한 학생은 'hierarchy'라는 단어가 지문에 등장하지 않음에도 'operated from above'라는 구절에 주목해 오독했을 가능성이 큼. ② → 처방: 'operated from above'는 시스템의 권위적 운영을 비판하는 내용이므로, 'hierarchy'와는 무관하다는 점을 명확히 구분할 것.\n④ 진단: ④을 선택한 학생은 'myth'가 지문의 'passionate belief'와 유사하다고 오해했을 수 있으며, 'autonomy'는 'individual freedom'과 혼동되었을 가능성 있음. ② → 처방: 'myth'는 신화적·허구적 의미를 내포하므로, 지문의 '믿음'과는 성격이 다름을 인식할 것.\n⑤ 진단: ⑤를 선택한 학생은 'nostalgia'가 과거의 'pioneer experience'를 회상하는 내용과 연관되었다고 오독했을 수 있으나, 지문은 '믿음'과 '시스템'의 관계를 강조하므로 오류임. ② → 처방: 지문의 주제가 '믿음'과 '시스템'의 관계임을 정확히 파악하고, 'nostalgia'는 회상·추억의 의미를 내포함을 기억할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-28T18:49:24.061Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "This then is the heritage of the ⓐ<u>pioneer</u> experience—a passionate ⓑ<u>belief</u> that a democracy was ⓒ<u>possible</u> which should leave the ⓓ<u>individual</u> a part to play in a free society and not make him a cog in a machine operated from above; which trusted in the common man, in his ­tolerance, his ability to adjust differences with good humor, and to work out an American type from the contributions of all nations— a type for which he would fight against those who challenged it in arms, and for which in time of war he would make sacrifices, even the temporary sacrifice of his individual ⓔ<u>freedom</u> and his life, lest that freedom be lost forever. Note the following: • the summative modifier in the opening segment: a passionate belief that . . . • the increased length and weight of the second element in each coordination, even the coordinations inside coordinations • the two resumptive modifiers beginning with type and sacrifice That may be over the top, especially the quadruple chiasmus in the last sixteen words:",
+    "choices": [
+     "pioneer: One who goes before, as into the wilderness, preparing the way for others to fol",
+     "belief: Mental acceptance of a claim as true.",
+     "possible: The act of coordinating, making different people or things work together for a g",
+     "individual: A person considered alone, rather than as belonging to a group of people.",
+     "freedom: The state of being free, of not being imprisoned or enslaved."
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ의 풀이는 'coordinations'의 정의이다. 'possible'의 올바른 풀이: A possible one.\n[오답 진단·처방]\n① 진단: ①번은 pioneer 의 뜻을 '개척자'로 알고 있지만, 지문에서 pioneer 는 '개척의 경험'으로 쓰였으며, 영영풀이의 '미개척 땅을 먼저 가는 사람'은 pioneer 의 기본 뜻은 맞지만 지문의 맥락(민주주의의 가능성을 믿는 믿음)과는 맞지 않는다. pioneer 는 여기서는 '미래의 민주주의를 개척한 경험'을 뜻하는 metaphor 로 쓰였다. → 처방: pioneer 가 지문에서 어떤 뜻을 담고 있는지 먼저 확인하고, 영영풀이의 예시가 지문의 맥락에 맞는지 비교해 본다.\n② 진단: ②번 belief 는 '믿음'으로 알고 있지만, 지문에서 belief 는 '민주주의가 가능하다는 믿음'으로 쓰였으며, 영영풀이의 '주장이나 진술을 사실로 받아들이는 마음 상태'는 belief 의 뜻과 맞아도, 지문의 복잡한 구조(수식어와 중첩된 coordination)를 고려하지 않고 단순 뜻을 외운 경우다. → 처방: 단어의 뜻을 외우는 것보다 지문에서 그 단어가 어떤 역할을 하는지(예: belief 가 어떤 문장 구조 안에 있는지)를 먼저 분석해 본다.\n④ 진단: ④번 individual 은 '개인'으로 알고 있지만, 지문에서 individual 은 '자유로운 사회에서 개인이 맡아야 할 역할'을 뜻하며, 영영풀이의 '혼자 있는 사람'은 individual 의 기본 뜻은 맞지만 지문의 맥락(민주주의의 구성원)으로는 한정적이다. → 처방: individual 이 지문에서 어떤 역할을 하는지(예: democracy 의 구성원, cog 의 반대 개념) 먼저 확인하고, 영영풀이의 예시가 지문의 의미를 fully 담고 있는지 점검한다.\n⑤ 진단: ⑤번 freedom 은 '자유'로 알고 있지만, 지문에서 freedom 은 '영구적인 자유의 상실'을 막기 위해 '일시적으로 개인의 자유를 희생'하는 의미를 담고 있으며, 영영풀이의 '감옥이나 노예 상태가 아닌 상태'는 freedom 의 기본 뜻은 맞지만 지문의 복잡한 조건(전시의 희생)을 고려하지 않았다. → 처방: freedom 이 지문에서 어떤 조건이나 맥락에서 쓰였는지(예: '자유를 잃지 않기 위해 개인의 자유를 희생') 먼저 분석한 뒤, 영영풀이의 예시와 비교해 본다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-28T18:49:31.196Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "This then is the heritage of the pioneer experience—a passionate belief that a democracy was possible which should leave the individual a part to play in a free s______ and not make him a cog in a machine operated from above; which trusted in the common man, in his ­tolerance, his ability to adjust differences with good humor, and to work out an American type from the contributions of all nations— a type for which he would fight against those who challenged it in arms, and for which in time of war he would make sacrifices, even the temporary sacrifice of his individual freedom and his life, lest that freedom be lost forever. Note the following: • the summative modifier in the opening segment: a passionate belief that . . . • the increased length and weight of the second element in each coordination, even the coordinations inside coordinations • the two resumptive modifiers beginning with type and sacrifice That may be over the top, especially the quadruple chiasmus in the last sixteen words:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] society — 문단의 논지상 이 자리에는 'society'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-28T05:32:17.646Z",
    "type": "밑줄함의",
@@ -255,93 +343,6 @@
     ],
     "answer": 2,
     "explanation": "틀린 곳은 ⓒ(Noise will damages the computer’s ability → Noise will the computer’s ability), ⓔ(think it believing → think it to believe) — 총 2개.\n[오답 진단·처방]\n① 진단: ‘record separately’를 ‘따로따로 기록하다’로 해석해 ‘record’를 동사로 오인했으나, 문맥상 ‘기록하다’는 뜻이 없으며 ‘separately’는 부사로 ‘따로’로만 쓰였으므로 어법 오류가 아님. → 처방: ‘record’를 동사로 오인하지 말고, 문장 구조를 살피며 부사 ‘separately’의 역할(‘따로’)을 정확히 이해하기.\n③ 진단: ‘Noise will damages’를 ‘소음이 손상을 입힐 것이다’로 해석해 ‘damages’를 동사로 오인했으나, ‘damage’는 ‘손상시키다’로 동사이고 ‘damages’는 3인칭 단수 현재형이므로 ‘will’ 뒤에는 원형 동사가 와야 함. → 처방: ‘will’ 뒤에는 동사 원형이 오는지 확인하고, ‘damage’의 올바른 형태(‘damages’가 아님)를 기억하기.\n④ 진단: ‘the of a special room’을 ‘특별한 방의’이라는 뜻으로 오해해 ‘of’를 전치사로만 생각했으나, ‘in the of’는 ‘~의 경우’라는 관용구로 ‘in the case of’가 맞는 표현임. → 처방: ‘in the of’를 ‘~의 경우’라는 관용구로 인식하고, ‘case’를 넣어 ‘in the case of’가 되어야 함을 기억하기.\n⑤ 진단: ‘think it believing’을 ‘믿는다고 생각하다’로 해석해 ‘believing’을 동사로 오인했으나, ‘think that + 주어 + 동사’ 구조에서 ‘believing’는 현재분사로 잘못 쓰였음. ‘think it is believable’ 또는 ‘think that it is believable’이 옳음. → 처방: ‘think’ 다음에는 ‘that + 주어 + 동사’ 구조가 오는지 확인하고, 현재분사 대신 완전한 절을 쓰도록 연습하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T17:02:45.065Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.63,
-    "D": 0.5,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①⑤"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] In the of a special room, the computer works well.\n\nWORDSEARCH 28 Using the clues listed below, record separately using one of the new words you learned this week for each blank in the following story. Clues 2nd Day 3rd Day 1st Day 4th Day 2nd Day Read My Lips For many years it has been the goal of computer specialists to perfect a machine that would understand human speech. ( ① ) The problem is that the speaker has to be alone and in a quiet room. ( ② ) Noise will the computer’s ability. ( ③ ) Now, math wizards are trying to develop a computer that will read lips despite any surrounding . ( ④ ) While some of us think it to believe that a computer can read lips, the experiments go on. ( ⑤ ) And there has been some success. Progress in all aspects of computer science has been so remarkable that we hesitate to rule out any possibility. There is one rule about the world of computers: the seemingly impossible gets done more quickly than we ever imagined.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘Read My Lips’의 주제가 ‘컴퓨터가 말을 이해하는 기계’를 만드는 것이지, ‘특별한 방’이 아니라는 점을 오해한 듯하다. ①은 ‘목표’가 ‘말을 이해하는 기계’라는 설명으로 시작하므로, ‘특별한 방’이 먼저 나올 이유가 없다. → 처방: ‘Read My Lips’가 컴퓨터가 말을 이해하는 기계에 대한 설명임을 먼저 확인하고, 그 다음에 ‘특별한 방’이 등장하는지 확인하기.\n② 진단: ‘혼자 있고 조용한 방’이 필요하다는 설명이 ②에 이미 나와 있는데, 같은 내용을 또 넣는 것은 글의 흐름을 깨는 오류다. 학생은 ‘조용한 방’이 ‘특별한 방’을 대체하는 개념이라고 착각한 듯하다. → 처방: ‘Read My Lips’의 각 문단이 어떤 내용을 설명하는지 한 문장으로 요약해 본 뒤, 빈칸에 들어갈 단어가 그 문단의 주제와 맞는지 확인하기.\n④ 진단: ‘주변 소음’이 ④에 이미 언급되어 있는데, 같은 내용을 또 넣는 것은 중복이다. 학생은 ‘소음’이 ‘특별한 방’의 특징 중 하나라고 오해한 듯하다. → 처방: 빈칸에 들어갈 단어가 ‘특별한 방’의 특징(예: ‘고요함’, ‘격리’)을 설명하는지 확인하고, 이미 언급된 단어는 피하기.\n⑤ 진단: ‘실험이 진행 중’이라는 ⑤의 내용과 ‘특별한 방’이 필요하다는 내용은 직접적인 관련이 없다. 학생은 ‘컴퓨터가 잘 작동하는 조건’이 ‘실험 환경’이라는 점만 떠올린 듯하다. → 처방: 빈칸에 들어갈 단어가 ‘컴퓨터가 말을 이해하는 데 필요한 조건’을 설명하는지, 아니면 ‘실험의 진행 상황’을 설명하는지 명확히 구분하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T17:03:24.711Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "WORDSEARCH 28 Using the clues listed below, record separately using one of the new words you learned this week for each blank in the following story. Clues 2nd Day 3rd Day 1st Day 4th Day 2nd Day <u>Read My Lips</u> For many years it has been the goal of computer specialists to perfect a machine that would understand human speech. The problem is that the speaker has to be alone and in a quiet room. Noise will the computer’s ability. In the of a special room, the computer works well. Now, math wizards are trying to develop a computer that will read lips despite any surrounding . While some of us think it to believe that a computer can read lips, the experiments go on. And there has been some success. Progress in all aspects of computer science has been so remarkable that we hesitate to rule out any possibility. There is one rule about the world of computers: the seemingly impossible gets done more quickly than we ever imagined.",
-    "choices": [
-     "The phrase 'Read My Lips' literally means to pay close attention to someone's spoken words.",
-     "Lip-reading technology has already become widely accessible and no longer requires breakthroughs.",
-     "Lip-reading technology can only interpret a small fraction of spoken words, making it unreliable for most practical use.",
-     "Despite its initial impossibility, lip-reading technology has remained stagnant and failed to advance significantly.",
-     "Lip-reading technology, though seemingly impossible, can achieve breakthroughs faster than expected."
-    ],
-    "answer": 5,
-    "explanation": "밑줄 친 부분은 'Lip-reading technology, though seemingly impossible, can achieve breakthroughs faster than expected.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘Read My Lips’를 글의 제목으로만 보고 ‘입술을 읽어라’가 ‘말을 주의 깊게 듣는 것’을 뜻한다고 오해한 듯. 지문은 기술의 이름(입술 읽기 기술)을 제목으로 썼고, 내용은 기술이 입술을 읽는다는 뜻임을 보여줌. → 처방: 제목과 본문의 연결을 먼저 확인하고, 기술의 이름과 실제 기능이 같은지 확인하는 습관을 들인다.\n② 진단: ‘이미 널리 보급되어 breakthrough(획기적 발전)이 필요 없다’고 오해했는데, 지문은 ‘아직 실험 중’이거나 ‘성공 사례가 일부’라는 내용임. ‘no longer’라는 표현이 오해를 부추김. → 처방: ‘no longer’, ‘already’, ‘widely accessible’ 같은 단어가 나오면 지문의 시간적·기술적 상태를 꼼꼼히 확인한다.\n③ 진단: ‘소수만 해석할 수 있어 실용적이지 않다’는 내용으로 오독했는데, 지문은 ‘실험은 진행 중이지만 성공 사례도 있다’고만 언급하고, 신뢰성·실용성에 대한 평가는 없음. → 처방: 지문에 없는 ‘unreliable’ 같은 평가는 제외하고, 있는 사실만으로 선지를 판단하는 습관을 기른다.\n④ 진단: ‘기술이 정체되어 발전이 없다’고 오해했는데, 지문은 ‘획기적 발전이 예상보다 빠르다’고 반대로 말하고 있음. ‘stagnant’라는 단어가 오해를 유발한 듯. → 처방: ‘stagnant’, ‘failed’, ‘remained’ 같은 부정적 표현이 나와도 지문의 전체 흐름을 먼저 파악한 뒤 판단한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T17:03:31.546Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 5,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'environments', 'Computers', 'developed' / 10~14단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Computers are now being developed to read lips even in noisy environments.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-28T05:33:26.332Z",
+ "updated": "2026-08-28T18:50:01.735Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-28T18:49:33.782Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "'many/much' → 'a lot of'로의 교정은 가산·불가산 명사 구분에 대한 학습자 오류를 반영하며, 특히 'wood'와 같은 불가산 명사에서 빈번하게 나타난다. 'Therefore'로의 교정은 문맥상 인과관계 표시의 필요성을 보여준다.",
+   "rule": "'many/much + 불가산/가산 명사' 구문에서 'a lot of + 명사'로의 교체를 요구하는 문항을 내신 변형으로 제작할 때에는, 해당 명사의 가산/불가산 여부를 반드시 명시하고, 오류가 발생할 수 있는 불가산 명사(wood, fuel, information 등)를 우선적으로 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-28T05:33:00.632Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제 동사(hire, work)가 전치사 없이 직접 사용되는 오류가 빈번하며, 'when/if + 동사원형' 구조가 아니라 'when/if + -ing' 또는 'by + -ing'로 연결되어야 한다.",
    "rule": "문법 문항에서 'when/if + 주어 + 동사원형' 구조가 나올 경우, 해당 동사가 전치사 없이 사용되었다면 'by + -ing' 또는 '-ing' 형태로 수정하도록 오류 유형을 제시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T03:20:08.887Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'long-term'과 같은 복합형용사가 빈번히 등장하며, 특히 'long-term wastefulness'처럼 명사 수식 시 하이픈이 필수적으로 사용됨을 확인했다. 또한 'during normal conversation'과 같이 전치사 뒤 명사구는 관사 생략 없이 완전 형태가 일반적임을 확인했다.",
-   "rule": "원서 문체 패턴을 반영하여, 'long-term', 'well-known' 등 복합형용사가 명사를 수식할 때에는 반드시 하이픈을 삽입하고, 전치사 뒤 명사구는 관사 없이 완전 형태(예: 'during normal conversation')로 표기하도록 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",
