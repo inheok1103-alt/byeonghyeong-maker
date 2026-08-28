@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-27T20:35:24.081Z",
+ "updated": "2026-08-28T05:33:26.332Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-28T05:33:00.632Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'be + good/useful/bad' 등 형용사 뒤에 위치하는 명사(예: situation)가 불필요하게 동사원형(good situstion)으로 오용되는 패턴과, 'good to' 구문이 'good for'로 잘못 쓰이는 패턴이 빈번하다. 또한 'all'의 위치가 문법적으로 잘못 배치되어 의미가 모호해지는 경우가 많다.",
+   "rule": "'be + 형용사 + 명사' 구문에서 형용사와 명사 사이에 동사원형(예: good situstion)이 오면 오류로 처리하고, 'good to'는 'good for'로 수정하여 출제하라. 또한 'all'은 'good to all people'처럼 해당 대상을 직접 수식하는 위치에 오도록 강제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-27T20:34:55.944Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'long-term'과 같은 복합형용사가 빈번히 등장하며, 특히 'long-term wastefulness'처럼 명사 수식 시 하이픈이 필수적으로 사용됨을 확인했다. 또한 'during normal conversation'과 같이 전치사 뒤 명사구는 관사 생략 없이 완전 형태가 일반적임을 확인했다.",
    "rule": "원서 문체 패턴을 반영하여, 'long-term', 'well-known' 등 복합형용사가 명사를 수식할 때에는 반드시 하이픈을 삽입하고, 전치사 뒤 명사구는 관사 없이 완전 형태(예: 'during normal conversation')로 표기하도록 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T02:07:14.579Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'no matter whether ~ or not'는 구어체로, 'even if ~'로 대체하여 더 자연스러운 문장을 만들 수 있다. 또한 'give way to'는 'make way for'로, 'satisfies the transportation'은 'satisfied their transportation needs'로 구체화하여 문법적·의미적 정확성을 높인다.",
-   "rule": "'no matter whether ~ or not'를 'even if ~'로, 'give way to'를 'make way for'로, 'satisfies the + 명사'를 'satisfied their + 복수명사'로 대체하여 문법적·의미적 자연스러움을 높이는 변형 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",

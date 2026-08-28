@@ -1,6 +1,75 @@
 {
- "updated": "2026-08-27T20:35:24.085Z",
+ "updated": "2026-08-28T05:33:26.336Z",
  "samples": [
+  {
+   "ts": "2026-08-28T05:32:17.646Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버교정: 솔버 3/3 다수결 5번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": -0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Last year, <u>the number of employees on the first day of the year was equal to the number of employees on the last day of the year</u>. Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year.” We are also told that the labor turnover rate last year was 25%. To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
+    "choices": [
+     "The company maintained a perfectly stable workforce throughout the year, with no net change in employee numbers.",
+     "The company experienced frequent fluctuations in staffing, with employees leaving and new ones joining daily.",
+     "The company’s workforce size remained roughly the same for most of the year, though some turnover occurred.",
+     "Because the company maintained the same number of employees throughout the year, it achieved high productivity.",
+     "The company often fluctuated in employee numbers, yet the final count matched the initial one."
+    ],
+    "answer": 5,
+    "explanation": "밑줄 친 부분은 'The company maintained a perfectly stable workforce throughout the year, with no net change in employee numbers.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘perfectly stable workforce’라고 해석했는데, 지문은 ‘첫날과 마지막날의 직원 수가 같다’는 사실만 말하고 중간 변화는 고려하지 않았다는 점을 놓쳤다. ‘perfectly stable’이란 ‘변동이 전혀 없었다’는 뜻인데, 지문은 ‘변동이 있었더라도 최종 수가 같았다’는 뜻임을 혼동했다. → 처방: ‘첫날과 마지막날의 직원 수가 같다’는 사실만으로 ‘변동이 없었다’는 결론을 내리지 말고, 중간 변화 가능성을 염두에 두고 선지를 고르기.\n② 진단: ‘frequent fluctuations’라고 해석했는데, 지문은 ‘첫날과 마지막날의 수가 같다’는 사실만 말하고 ‘빈도’는 언급하지 않았다는 점을 놓쳤다. ‘fluctuations’이란 ‘자주 일어나는 변화’를 뜻하는데, 지문은 변화가 있었는지조차 알 수 없다. → 처방: ‘빈도’나 ‘규모’를 추측하지 말고, 지문에서 제공된 정보(첫날=마지막날)만으로 선지를 평가하기.\n③ 진단: ‘roughly the same for most of the year’라고 해석했는데, 지문은 ‘첫날과 마지막날의 수가 같다’는 사실만 말하고 ‘most of the year’에 대한 언급은 없다는 점을 놓쳤다. ‘roughly the same’이란 ‘대부분 기간 동안 비슷했다’는 뜻인데, 지문은 그런 정보가 없다. → 처방: ‘대부분 기간’이라는 표현은 지문에 없으므로, 그런 의미가 포함된 선지는 제외하고 고르기.\n④ 진단: ‘high productivity’라고 해석했는데, 지문은 ‘첫날과 마지막날의 직원 수가 같다’는 사실만 말하고 ‘생산성’에 대한 언급은 없다는 점을 놓쳤다. ‘high productivity’는 지문과 무관한 정보로, 오해한 것이다. → 처방: 지문에 없는 정보(생산성)는 고려하지 말고, 오직 제공된 정보(첫날=마지막날)만으로 선지를 판단하기."
+   }
+  },
+  {
+   "ts": "2026-08-28T05:32:44.658Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0.67,
+    "distractorEff": 75,
+    "pass": true,
+    "flags": [
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Last year, the number of employees on the first day of the year was equal to the number of employees on the last day of the year. Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year.” We are also told that the labor turnover rate last year was 25%. To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
+    "choices": [
+     "작년 초 직원 수가 연말 직원 수와 달랐다",
+     "작년 연 평균 직원 수는 초와 연말 직원 수의 평균이다",
+     "작년 이직률은 15퍼센트였다",
+     "이직률은 연간 퇴직한 직원 수를 연 평균 직원 수로 곱한 값이다",
+     "연 평균 직원 수는 초와 연말 직원 수의 합으로 계산된다"
+    ],
+    "answer": 2,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 '첫날 직원 수 = 마지막날 직원 수'라고 분명히 밝혔는데, 이를 '달랐다'로 오해하여 잘못 선택했을 가능성이 있다. → 처방: 지문을 다시 한 번 천천히 읽고, '같다'라는 단어를 정확히 확인한 후 답을 선택하기.\n③ 진단: 지문에서 이직률이 25%라고 명시했는데, 이를 15%로 잘못 읽거나 기억하여 선택했을 가능성이 있다. → 처방: 숫자를 꼼꼼히 확인하고, 지문에 있는 수치를 그대로 답안에 적용하기.\n④ 진단: '이직률 = 연간 퇴직한 직원 수 ÷ 연 평균 직원 수'인데, 이를 '곱한 값'으로 오해하여 잘못 선택했을 가능성이 있다. → 처방: 나눗셈과 곱셈을 헷갈리지 말고, 지문에서 제시된 공식대로 계산하기.\n⑤ 진단: 지문에서 '연 평균 직원 수 = (첫날 직원 수 + 마지막날 직원 수) ÷ 2'인데, 이를 '합으로 계산된다'고 오해하여 잘못 선택했을 가능성이 있다. → 처방: 연 평균을 구할 때는 '합을 2로 나누는 것'임을 기억하고, 지문에서 제시된 공식을 정확히 적용하기.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-27T20:34:53.786Z",
    "type": "영영풀이단어쓰기",
@@ -273,60 +342,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Computers are now being developed to read lips even in noisy environments.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 10~14단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-26T15:55:52.020Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 3/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.67,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The Search for Hope Remains Unfulfilled",
-     "Hope Fulfills the Search for Survivors",
-     "Every Hope of Finding Survivors Persists",
-     "The Elusive Nature of Hope in All Disaster Scenarios",
-     "Hope Often Fails to Aid the Search for Survivors"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'HOPE'S ELUSIVE SURVIVAL IN SEARCH'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: HOPE]\n[오답 진단·처방]\n① 진단: ‘The Search for Hope Remains Unfulfilled’의 ‘hope’는 지문에서 ‘every hope of finding survivors’(생존자 발견의 모든 희망)로 쓰였으므로 ‘희망을 찾는 행위’로 오해한 듯함. 지문은 ‘희망 자체가 남아있다’는 뜻으로, ‘search’를 ‘희망’으로 오독한 듯. → 처방: ‘hope’를 ‘희망 그 자체’로만 보지 말고, 지문에서 ‘hope of finding survivors’가 ‘생존자 발견의 희망’이라는 복합 명사구임을 확인할 것.\n② 진단: ‘Hope Fulfills the Search for Survivors’의 ‘fulfills’는 ‘희망이 찾기를 이룬다’로 해석했는데, 지문은 ‘희망이 남아있다’는 ‘persists’(계속되다)라는 의미를 담고 있어 ‘완료’의 뜻인 ‘fulfills’와는 맞지 않음. → 처방: ‘fulfills’를 ‘계속되다’나 ‘남아있다’로 해석하지 말고, 지문에서 ‘remain’이란 동사가 쓰였는지 확인할 것.\n④ 진단: ‘The Elusive Nature of Hope in All Disaster Scenarios’의 ‘elusive’는 ‘찾기 힘든’ 뜻인데, 지문은 ‘희망이 남아있다’는 긍정적 의미를 담고 있어 ‘찾기 힘든’과는 반대됨. ‘elusive’를 ‘희망의 실종’으로 오해한 듯. → 처방: ‘elusive’를 ‘실종’이나 ‘찾기 힘듦’으로 보지 말고, 지문에서 ‘remain every hope’(모든 희망이 남아있다)는 문구에 주목할 것.\n⑤ 진단: ‘Hope Often Fails to Aid the Search for Survivors’의 ‘fails to aid’는 ‘희망이 돕지 못한다’는 뜻인데, 지문은 ‘희망이 남아있다’는 ‘remain’이란 동사를 통해 ‘도움을 주는가’가 아니라 ‘존재’에 초점을 맞춤. → 처방: ‘fails to aid’를 ‘존재하지 않는다’로 해석하지 말고, 지문에서 ‘remain’이란 동사가 ‘계속되다’ 혹은 ‘남아있다’를 뜻하는지 확인할 것."
-   }
-  },
-  {
-   "ts": "2026-08-26T15:56:09.921Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 구조상 가장 높은 층위인 T가 불완전하고 해석 불가능한 인칭/수 특성을 지닌 채 비인칭 there를 찾아 kjer을 확장해 나가다가 비로소 완전한 인칭과 수를 지닌 QP에 도달한다\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
