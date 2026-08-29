@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-29T18:38:08.110Z",
+ "updated": "2026-08-29T21:49:05.305Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-29T21:48:32.172Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "원서 코퍼스에서 'be 동사 + 동사원형' 구문이 오류로 자주 나타나며, 특히 'are explain', 'are discuss'와 같은 형태에서 'be 동사'가 불필요하다는 패턴을 확인할 수 있다.",
+   "rule": "원문에서 'be 동사 + 동사원형' 구문이 나타나면, 'be 동사'를 생략하거나 'can/may/will' 등 조동사를 삽입하는 방식으로 문법 오류를 출제하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-29T18:37:37.741Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "이 코퍼스는 'a/an/the'와 같은 관사 오류가 빈번하며, 특히 'a'와 'an'의 구분이 필요한 경우와 관사가 생략되는 경우가 많다. 또한, 주어와 동사의 수 일치 오류가 두드러진다.",
    "rule": "'a/an' 사용 시 모음 소리로 시작하는 단어 앞에는 'an'을, 자음 소리로 시작하는 단어 앞에는 'a'를 반드시 사용하도록 문항을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T10:08:57.272Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'thinmg'→'something'과 같이 빈도 높은 오류는 관용적 표현(extra in it → something extra in it)의 어순 오류와 관련되며, 'told that do not cross'→'told not to cross'는 지시 동사+to 부정사 구조의 오류 패턴이 반복된다.",
-   "rule": "CEFR B1 수준에서 관용적 표현(형용사+명사, 지시 동사+to 부정사)의 어순과 구조를 직접 객관식으로 묻되, 오류 유형(어순/구조 오류)을 명시한 채 빈칸 채우기나 문장 수정 문제로 출제하라.",
    "sample": [
     "old english",
     "university press",
