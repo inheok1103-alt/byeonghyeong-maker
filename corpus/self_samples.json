@@ -1,6 +1,74 @@
 {
- "updated": "2026-08-29T02:19:11.666Z",
+ "updated": "2026-08-29T09:11:54.236Z",
  "samples": [
+  {
+   "ts": "2026-08-29T09:09:43.354Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": 1,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "파산은 채무를 변제할 수 없는 상태가 지속되는 현상을 말한다.",
+     "파산은 채무를 이행할 수 없게 된 개인의 법적 상태를 가리킨다.",
+     "파산은 만기 채무를 갚지 못하는 모든 경우를 포괄하는 개념이다.",
+     "파산은 채무 변제가 불가능하다는 사실 자체를 의미하는 것은 아니다.",
+     "파산은 만기 채무를 변제할 수 없는 지경에 처한 상태를 말한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'Insolvency refers to the state of being unable to pay debts at maturity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘지문에서 파산(insolvent)은 채무를 ‘변제할 수 없는 상태’를 뜻하지, ‘지속되는 현상’을 뜻하지 않는다.’ → 처방: ‘파산’의 뜻을 정확히 기억하고, ‘지속됨’이란 말이 없으면 제외하기.\n② 진단: ‘지문에서 파산(insolvent)은 개인이 아니라 ‘회사’의 법적 상태를 가리키는 예시만 있다. 개인을 가리키는 말은 없다.’ → 처방: ‘파산’이 개인을 가리키는지도 확인하고, 지문 예시가 회사인지 확인하기.\n③ 진단: ‘지문에서 파산(insolvent)은 ‘만기 채무를 갚지 못하는 모든 경우’를 포괄하지 않는다. ‘채무를 변제할 수 없는 상태’를 뜻한다.’ → 처방: ‘파산’의 뜻을 정확히 기억하고, ‘모든 경우’라는 말이 없으면 제외하기.\n④ 진단: ‘지문에서 파산(insolvent)은 ‘채무 변제가 불가능하다는 사실 자체’를 뜻하지, ‘상태’를 뜻한다.’ → 처방: ‘파산’이 ‘상태’를 뜻하는지 확인하고, ‘사실 자체’라는 말이 없으면 제외하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Insolvency refers to the state of being unable to pay debts at maturity.]"
+   }
+  },
+  {
+   "ts": "2026-08-29T09:11:12.665Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · 솔버교정: 솔버 3/3 다수결 5번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "definitions of financial states like insolvency",
+     "definitions of specific financial terms",
+     "concepts related to financial failure",
+     "conditions for becoming insolvent",
+     "vocabulary related to sleep and boredom"
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'State of insolvency and its definition**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: State of insolvency and its definition**]\n[오답 진단·처방]\n① 진단: ‘insolvency’가 재정 상태를 뜻한다는 점은 맞지만 지문은 ‘solvent’와 ‘insolvent’를 ‘파산·파산아님’으로 정의하는 데 그치지 않고 ‘soporific’ 같은 수면 관련 단어도 함께 소개하고 있다. 학생은 재정 용어만 집중해 지문의 전체 흐름을 놓쳤다. → 처방: 지문을 읽을 때 ‘solvent’와 ‘insolvent’뿐 아니라 ‘soporific’ 같은 다른 단어들도 함께 눈에 들어오도록 단어의 종류(형용사·명사 등)를 표시하며 읽기.\n② 진단: ‘financial terms’(재정 용어)라고만 보고 ‘solvent’와 ‘insolvent’를 재정 용어로만 한정했는데, 지문은 ‘serendipity’·‘servile’ 같은 일반 단어들도 포함하고 있다. 학생은 ‘financial’이라는 단어에만 집중해 지문의 범위를 좁혔다. → 처방: ‘financial’이라는 단어가 나오면 지문 전체에서 재정 관련 단어가 몇 개인지를 먼저 세어 본 뒤, 그렇지 않다면 ‘financial’이라는 단어를 무시하고 지문 전체를 읽기.\n③ 진단: ‘financial failure’(재정 실패)라고만 해석했는데, 지문은 ‘solvent’(파산아님)·‘insolvent’(파산) 같은 재정 상태를 설명하는 용어와 ‘soporific’(수면 유도) 같은 전혀 다른 뜻의 단어를 섞어 소개하고 있다. 학생은 ‘failure’라는 단어에만 집중해 지문의 주제를 잘못 짚었다. → 처방: ‘failure’라는 단어가 나오면 그 단어가 포함된 문장뿐 아니라 지문 전체의 주제를 한 번 더 확인한 뒤 답을 선택하기.\n④ 진단: ‘insolvent’의 조건을 물은 것처럼 보였지만 지문은 ‘insolvent’의 정의(‘파산’)만 설명하고 그 조건(예: 빚을 못 갚는 상황)을 설명하지 않는다. 학생은 ‘insolvent’라는 단어가 조건을 설명하는 것처럼 오해했다. → 처방: ‘insolvent’의 정의가 무엇인지 먼저 확인한 뒤, 그 단어가 조건을 설명하는지 여부를 따로 확인한 뒤 답을 선택하기."
+   }
+  },
   {
    "ts": "2026-08-29T02:17:22.481Z",
    "type": "목적",
@@ -312,60 +380,6 @@
     ],
     "answer": 4,
     "explanation": "원문 전개 순서는 (C) - (A) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 지문 (A)에서 'analog'의 뜻과 예시가 나오고 (C)에서 'analogy'와 'analogous'의 의미를 설명하는데, 학생은 (A)의 설명만 보고 (B)가 먼저 나올 거라고 오독했다. (B)는 정의를 나열하는 부분으로 (A)·(C)보다 뒤에 와야 한다. → 처방: 글의 흐름을 따라가며, 'analogy'의 정의와 예시가 먼저 나오면 그다음에 'analog'의 설명이, 마지막으로 관련 용어 'analogous'가 나온다는 점을 기억하고 풀어라.\n② 진단: 학생은 (B)가 단어 정의 목록으로 먼저 나와야 한다고 생각했지만, (B)는 'analogy'와 관련이 없는 단어 정의 목록(5~10번)으로, 지문의 흐름상 (A)·(C)가 먼저 나와야 한다. → 처방: 지문에서 'analogy'의 뜻과 예시가 먼저 나오고, 그다음에 'analog'의 뜻, 마지막으로 'analogous'의 설명이 나온다는 구조를 파악하고 순서를 정해라.\n③ 진단: 학생은 (B)가 단어 정의 목록이므로 먼저 나와야 한다고 오독했지만, (B)는 (A)·(C)와 직접 관련이 없는 부분이다. 지문은 'analogy'의 뜻과 예시 → 'analog'의 뜻 → 'analogous'의 설명 순서로 진행된다. → 처방: 지문의 핵심 주제인 'analogy'와 관련 있는 부분(A)·(C)을 먼저 찾고, 그다음에 관련 용어 'analog'와 'analogous'가 나오는 순서를 기억해라.\n⑤ 진단: 학생은 (C)가 먼저 나와야 한다고 생각했지만, (C)는 'analogy'의 의미를 더 깊이 설명하는 부분으로, (A)에서 'analogy'의 뜻과 예시가 먼저 나와야 한다. (B)는 아예 관련이 없는 단어 정의 목록이다. → 처방: 지문의 주제인 'analogy'의 정의와 예시가 먼저 나오는 (A)를 찾고, 그다음에 관련 용어 'analog'와 'analogous'가 나오는 (C)를 확인한 뒤, (B)는 제외하고 순서를 정해라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-26T23:38:44.270Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 13 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'unfamiliar', 'comparing', 'familiar' / 11~15단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] An analogy helps clarify unfamiliar ideas by comparing them to more familiar ones.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 11~15단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-08-26T19:20:52.473Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답 재검토 권고 — 솔버 2/3가 5번 선택(기록 4번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "X-bar Theory 97 noun, we conclude that it is an NP. In (32c) however, the phrase following the determiner contains only an adjective and is ungrammatical. This clearly has a different distribution to the other two phrases, indicating that the adjective in (32a) is not the head of this phrase. It is also possible to conclude that the adjective is not a complement of the head noun as it does not follow the noun and as we have seen, in English, all complements follow their heads. The other possibility is that the adjective functions as a specifier within the NP and as specifiers precede their heads, this seems more likely. Yet there are properties of the adjective that make it an unlikely specifier. As we saw, specifiers of thematic heads tend to be arguments of those heads. [ ] Furthermore, specifiers are limited to a single occurrence and there cannot be more than one of them: (33) a the letter arrived",
-    "choices": [
-     "The adjective is clearly an argument of the noun as it bears a thematic role assigned by the noun.",
-     "Specifiers in X-bar Theory are always arguments of their heads, so the adjective must be one.",
-     "The adjective is a complement of the head noun because it follows the noun in English.",
-     "The adjective cannot be an argument of the noun because it does not receive a thematic role from the noun.",
-     "The adjective functions as a specifier within the NP since it precedes its head and fits the structural position."
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 원문 'The adjective is obviously not an argument of the noun as it does not bear a thematic role assigned by the noun.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: ‘명사 주어의 논항’이 ‘형용사가 명사에 주는 논항’이라는 뜻으로 오해했거나, ‘형용사가 명사의 논항 역할을 한다’는 오류를 범했음. 지문에서 ‘형용사가 명사의 논항이 아니다’는 근거(‘형용사가 명사 뒤에 오지 않는다’, ‘영어에서 보충어는 머리 뒤에 온다’)를 무시했음. → 처방: ‘논항’이란 머리(명사)가 부여하는 ‘의미역’을 받는 요소임을 기억하고, 지문에서 제시된 ‘형용사가 명사의 논항이 아니다’는 근거를 다시 한 번 확인할 것.\n② 진단: ‘X-bar Theory 에서 명사 머리의 논항은 반드시 specifiers(지정어)다’라는 오해로, ‘specifier = argument’라는 등식을 잘못 세웠음. 지문은 ‘specifier 는 thematic heads 의 argument 일 tendency 가 있다’는 점만 언급했을 뿐, 반드시 argument 라는 뜻은 아님을 유념하지 않음. → 처방: ‘tend to’라는 표현이 ‘반드시’라는 뜻이 아님을 기억하고, ‘specifier = argument’라는 등식은 틀렸다는 점을 분명히 인지할 것.\n③ 진단: ‘형용사가 명사 뒤에 오면 보충어’라는 오해로, ‘형용사가 명사 뒤에 오지 않는다’는 지문의 근거를 무시했음. 또한 영어에서 ‘보충어는 머리 뒤에 온다’는 X-bar Theory 의 기본 원칙을 잘못 적용했음. → 처방: ‘보충어’는 머리 뒤에 온다는 원칙을 정확히 기억하고, 지문에서 ‘형용사가 명사 뒤에 오지 않는다’는 사실을 다시 한 번 확인할 것.\n⑤ 진단: ‘형용사가 머리 앞에 오므로 specifier’라는 논리만 보고, ‘specifier 의 다른 속성(예: argument 일 tendency, 단일 발생)’을 고려하지 않았음. 지문에서 ‘specifier 는 argument 일 tendency 가 있다’는 점을 간과했음. → 처방: ‘specifier’의 정의와 특징(예: argument 일 tendency, 단일 발생)을 정확히 기억하고, 지문에서 제시된 모든 조건을 종합적으로 검토할 것.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
