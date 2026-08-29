@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-29T09:11:54.236Z",
+ "updated": "2026-08-29T14:32:06.284Z",
  "samples": [
+  {
+   "ts": "2026-08-29T14:31:09.307Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 2/3 다수결 3번(기록 4번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.56,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "Word ⓐ<u>Categories</u> 5 two cats (if you ⓑ<u>think</u> about it this sentence ⓒ<u>might</u> mean that anything between two and six cats got bitten, which is not predictable from the ⓓ<u>meaning</u> of the ⓔ<u>words</u>). Let us assume that these different types of linguistic knowledge are separate. We can call the part of I-language which is to do with words the Lexicon. This might be imagined as a kind of mental dictionary in which we store specific information about all the words that we use: how they are pronounced, what they mean, etc. 2.2 Categories Lexical knowledge concerns more than the meaning and pronunciation of words, however. Consider the examples in (2) and (3) again. The word cat is not the only one that could possibly go in the positions in (2), so could the words dog, mouse and budgerigar: (4) a the dog slept",
+    "choices": [
+     "categories: A group, often named or numbered, to which items are assigned based on similarit",
+     "think: An act of thinking; consideration (of something).",
+     "might: Power, strength, force or influence held by a person or group.",
+     "meaning: The fact of knowing about something; general understanding or familiarity with a",
+     "words: The smallest unit of language that has a particular meaning and can be expressed"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓓ의 풀이는 'knowledge'의 정의이다. 'meaning'의 올바른 풀이: (of words or symbols) The entity, perception, feeling or concept thereby represe\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘categories’를 ‘A group, often named or numbered, to which items are assigned based on similarity’라고 풀이했는데, 이는 ‘범주’를 ‘유사한 항목이 묶인 집단’으로만 좁게 해석한 오류. 지문에서 ‘categories’는 ‘범주’(단어의 종류나 분류 체계)로 쓰였으므로, ‘명명되거나 번호가 매겨진 집단’이라는 뜻만으로는 부족하다. → 처방: ‘범주’의 뜻을 풀이할 때, 단순히 ‘집단’이 아니라 ‘단어나 개념을 분류하는 체계’임을 떠올리며 뜻을 찾아보기.\n② 진단: ‘think’를 ‘An act of thinking; consideration (of something)’로 풀이했는데, 이는 ‘생각’이라는 행위를 ‘고려’라는 좁은 뜻으로만 본 오류. 지문에서 ‘think’는 ‘~라고 여기다’(=believe)라는 뜻으로 쓰였으므로, ‘고려’보다는 ‘의견이나 판단’을 뜻하는 뜻풀이여야 한다. → 처방: ‘think’의 뜻을 풀이할 때, 문맥에서 ‘~라고 여기다’(=believe)라는 뜻이 쓰였는지 확인하고, 그런 뜻이 있다면 ‘고려’보다는 ‘의견이나 판단’이라는 뜻을 찾아보기.\n④ 진단: ‘words’를 ‘The smallest unit of language that has a particular meaning and can be expressed’라고 풀이했는데, 이는 ‘단어’를 ‘의미를 가진 가장 작은 언어 단위’로만 본 오류. 지문에서 ‘words’는 ‘단어’(의미를 지닌 언어의 기본 단위)로 쓰였으므로, ‘가장 작은 단위’라는 뜻은 맞지만, ‘표현될 수 있다’는 뜻은 이 문맥에서 필요하지 않다. → 처방: ‘단어’의 뜻을 풀이할 때, ‘의미를 지닌 언어의 기본 단위’라는 뜻에 집중하고, ‘표현될 수 있다’는 뜻은 제외하고 뜻을 찾아보기.\n⑤ 진단: ‘meaning’을 ‘The fact of knowing about something; general understanding or familiarity with a’라고 풀이했는데, 이는 ‘meaning’을 ‘알고 있음’이나 ‘친숙함’이라는 뜻으로 오해한 오류. 지문에서 ‘meaning’는 ‘의미’(단어나 문장이 지닌 뜻)로 쓰였으므로, ‘알고 있음’이 아니라 ‘의미’라는 뜻이어야 한다. → 처방: ‘meaning’의 뜻을 풀이할 때, ‘단어나 문장이 지닌 뜻’이라는 뜻에 집중하고, ‘알고 있음’이라는 뜻은 제외하고 뜻을 찾아보기."
+   }
+  },
   {
    "ts": "2026-08-29T09:09:43.354Z",
    "type": "요지",
@@ -345,41 +380,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'The core argument is that traditional grammatical labels like \"Direct Object\" often fail to capture the semantic roles of noun phrases in sentences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘문법 체계 개선’이란 말은 지문에서 언급되지 않음. 지문은 ‘기능 명칭’이 ‘명사구의 의미’를 온전히 설명하지 못하는 ‘경우’(예시)를 지적했을 뿐, 체계 개선까지 주장하지 않음. → 처방: ‘문법 체계 개선’이란 말은 지문에 없으므로 제외하고, ‘기능 명칭’이 ‘명사구의 의미’를 설명하지 못하는 ‘경우’가 있음을 지적한 ①번을 다시 확인하라.\n③ 진단: ‘Direct Object’라는 ‘특정 용어’에만 국한되었다고 오해했음. 지문은 ‘Direct Object’뿐 아니라 다른 기능 명칭들도 ‘명사구의 의미’를 온전히 설명하지 못하는 ‘경우’를 예로 들고 있음. → 처방: 지문 속 예시(weighs twenty kilograms, costs ten pence 등)를 보며, ‘Direct Object’뿐 아니라 다른 기능 명칭도 마찬가지라는 점을 확인하라.\n④ 진단: ‘보편적 문제’라고 단정했는데, 지문은 ‘예시’를 들어 ‘경우’를 지적했을 뿐, 모든 언어에서 ‘보편적’이라고 말하지 않음. → 처방: ‘보편적’이라는 말은 지문에 없으므로 제외하고, ‘경우’가 있음을 지적한 ①번을 다시 읽어보라.\n⑤ 진단: ‘드물게 발생하는 예외’라고 오해했는데, 지문은 ‘문법적 기능의 명칭’이 ‘명사구의 의미’를 설명하지 못하는 ‘경우’를 예시로 들고 있음. 이는 ‘예외’가 아니라 ‘일반적인 문제’로 볼 수 있음. → 처방: ‘드물다’라는 말은 지문에 없으므로 제외하고, ‘경우’가 있음을 지적한 ①번을 다시 확인하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The core argument is that traditional grammatical labels like \"Direct Object\" often fail to capture the semantic roles of noun phrases in sentences.]"
-   }
-  },
-  {
-   "ts": "2026-08-26T23:38:13.719Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "ANALOGY (uh NAL uh jee) n a comparison of one thing to another; similarity • To say having an allergy feels like being bitten by an alligator would be to make or draw an analogy between an allergy and an alligator bite.\n\n(A) Something similar in a particular respect to something else is its analog (AN uh lawg), sometimes spelled analogue. Quick Quiz #7 Match each word in the first column with its definition in the second column. Check your answers here. without moral feeling 5.\n\n(B) feeling loving 6. make better 7. politely friendly 9. official pardon 10.\n\n(C) Analogy usually refers to similarities between things that are not otherwise very similar. If you don’t think an allergy is at all like an alligator bite, you might say, “That analogy doesn’t hold up. ” To say that there is no analogy between an allergy and an alligator bite is to say that they are not analogous (uh NAL uh gus).",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 4,
-    "explanation": "원문 전개 순서는 (C) - (A) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 지문 (A)에서 'analog'의 뜻과 예시가 나오고 (C)에서 'analogy'와 'analogous'의 의미를 설명하는데, 학생은 (A)의 설명만 보고 (B)가 먼저 나올 거라고 오독했다. (B)는 정의를 나열하는 부분으로 (A)·(C)보다 뒤에 와야 한다. → 처방: 글의 흐름을 따라가며, 'analogy'의 정의와 예시가 먼저 나오면 그다음에 'analog'의 설명이, 마지막으로 관련 용어 'analogous'가 나온다는 점을 기억하고 풀어라.\n② 진단: 학생은 (B)가 단어 정의 목록으로 먼저 나와야 한다고 생각했지만, (B)는 'analogy'와 관련이 없는 단어 정의 목록(5~10번)으로, 지문의 흐름상 (A)·(C)가 먼저 나와야 한다. → 처방: 지문에서 'analogy'의 뜻과 예시가 먼저 나오고, 그다음에 'analog'의 뜻, 마지막으로 'analogous'의 설명이 나온다는 구조를 파악하고 순서를 정해라.\n③ 진단: 학생은 (B)가 단어 정의 목록이므로 먼저 나와야 한다고 오독했지만, (B)는 (A)·(C)와 직접 관련이 없는 부분이다. 지문은 'analogy'의 뜻과 예시 → 'analog'의 뜻 → 'analogous'의 설명 순서로 진행된다. → 처방: 지문의 핵심 주제인 'analogy'와 관련 있는 부분(A)·(C)을 먼저 찾고, 그다음에 관련 용어 'analog'와 'analogous'가 나오는 순서를 기억해라.\n⑤ 진단: 학생은 (C)가 먼저 나와야 한다고 생각했지만, (C)는 'analogy'의 의미를 더 깊이 설명하는 부분으로, (A)에서 'analogy'의 뜻과 예시가 먼저 나와야 한다. (B)는 아예 관련이 없는 단어 정의 목록이다. → 처방: 지문의 주제인 'analogy'의 정의와 예시가 먼저 나오는 (A)를 찾고, 그다음에 관련 용어 'analog'와 'analogous'가 나오는 (C)를 확인한 뒤, (B)는 제외하고 순서를 정해라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
