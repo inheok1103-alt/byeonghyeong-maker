@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-29T14:32:06.284Z",
+ "updated": "2026-08-29T18:38:08.114Z",
  "samples": [
+  {
+   "ts": "2026-08-29T18:36:37.713Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": -0.33,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=-0.33)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "ⓐ<u>Quick</u> Quiz #73 Match each word in the ⓑ<u>first</u> column with its definition in the ⓒ<u>second</u> column. ⓓ<u>Check</u> your ⓔ<u>answers</u> here. 1. reparation a. act of revenge 2. repercussion b. determined 3. replenish c. worthy of blame 4. replete d. consequence 5. reprehensible e. scold 6. reprisal f. completely filled 7. reproach g. paying back 8. reprove h. necessary 9. repudiate i. criticize mildly 10. requisite j. fill again 11. resolute k. reject RESPITE (RES pit) n a period of rest or relief • We worked without respite from five in the morning until five in the afternoon. • The new mother fell asleep when her baby stopped crying. However, the respite was brief; the baby started up again almost immediately. Note carefully the pronunciation of this word. RETICENT (RET uh sint) adj quiet; restrained; reluctant to speak, especially about oneself • Luther’s natural reticence made him an ideal speaker: his speeches never lasted more than a few minutes.",
+    "choices": [
+     "quick: Raw or sensitive flesh, especially that underneath finger and toe nails.",
+     "first: The person or thing in the first position.",
+     "second: Something that is number two in a series.",
+     "check: A situation in which the king is directly threatened by an opposing piece.",
+     "answers: A brief interval of rest or relief."
+    ],
+    "answer": 5,
+    "explanation": "정답 ⓔ의 풀이는 'respite'의 정의이다. 'answers'의 올바른 풀이: A response or reply; something said or done in reaction to a statement or questi\n[오답 진단·처방]\n① 진단: 학생은 'Quick Quiz'에서 'Quick'이 '빠른'이라는 뜻의 형용사로 쓰였음을 놓치고, 'Quick'의 다른 의미인 '살점'이나 '급소'를 나타내는 명사로 오해하여 이 선지를 적절하지 않다고 판단했습니다. 다른 선지들과 비교하여 가장 적절하지 않은 것을 고르는 데 실패했습니다. → 처방: 밑줄 친 단어의 문맥적 의미와 제시된 영영풀이를 정확히 비교하고, 다른 선지들과의 적절성 정도를 면밀히 따져야 합니다.\n② 진단: 학생은 'first column'에서 'first'가 '첫 번째의'라는 의미로 쓰였으며, 제시된 영영풀이 \"The person or thing in the first position\"이 이 의미와 정확히 일치함을 파악하지 못했습니다. → 처방: 단어의 사전적 의미와 문맥적 의미가 일치하는지 꼼꼼히 대조하는 습관을 들여야 합니다.\n③ 진단: 학생은 'second column'에서 'second'가 '두 번째의'라는 의미로 쓰였으며, 제시된 영영풀이 \"Something that is number two in a series\"가 이 의미와 정확히 일치함을 파악하지 못했습니다. → 처방: 단어의 사전적 의미와 문맥적 의미가 일치하는지 꼼꼼히 대조하는 습관을 들여야 합니다.\n④ 진단: 학생은 'Check your answers'에서 'Check'이 '확인하다'라는 뜻으로 쓰였음을 놓치고, 'Check'의 여러 의미 중 체스 용어인 '위협'이라는 뜻으로 오해하여 이 선지를 적절하지 않다고 판단했습니다. 다른 선지들과 비교하여 가장 적절하지 않은 것을 고르는 데 실패했습니다. → 처방: 밑줄 친 단어의 문맥적 의미와 제시된 영영풀이를 정확히 비교하고, 다른 선지들과의 적절성 정도를 면밀히 따져야 합니다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-29T14:31:09.307Z",
    "type": "영영풀이일치",
@@ -345,41 +380,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] distinction (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-27T10:00:07.808Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "문법적 기능의 명칭이 명사구의 의미를 온전히 설명하지 못하는 경우가 있음을 지적한다",
-     "문법적 기능의 명칭이 명사구의 의미를 설명하지 못하는 경우는 문법 체계를 개선해야 하는 직접적인 원인이 된다",
-     "문법적 기능의 명칭이 명사구의 의미를 설명하지 못하는 경우는 'Direct Object'라는 특정 용어에만 국한된다고 주장한다",
-     "문법적 기능의 명칭이 명사구의 의미를 설명하지 못하는 경우는 모든 언어에서 예외 없이 발생하는 보편적 문제라고 단정한다",
-     "문법적 기능의 명칭이 명사구의 의미를 설명하지 못하는 경우는 드물게 발생하는 예외적인 현상에 불과하다고 강조한다"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The core argument is that traditional grammatical labels like \"Direct Object\" often fail to capture the semantic roles of noun phrases in sentences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n② 진단: ‘문법 체계 개선’이란 말은 지문에서 언급되지 않음. 지문은 ‘기능 명칭’이 ‘명사구의 의미’를 온전히 설명하지 못하는 ‘경우’(예시)를 지적했을 뿐, 체계 개선까지 주장하지 않음. → 처방: ‘문법 체계 개선’이란 말은 지문에 없으므로 제외하고, ‘기능 명칭’이 ‘명사구의 의미’를 설명하지 못하는 ‘경우’가 있음을 지적한 ①번을 다시 확인하라.\n③ 진단: ‘Direct Object’라는 ‘특정 용어’에만 국한되었다고 오해했음. 지문은 ‘Direct Object’뿐 아니라 다른 기능 명칭들도 ‘명사구의 의미’를 온전히 설명하지 못하는 ‘경우’를 예로 들고 있음. → 처방: 지문 속 예시(weighs twenty kilograms, costs ten pence 등)를 보며, ‘Direct Object’뿐 아니라 다른 기능 명칭도 마찬가지라는 점을 확인하라.\n④ 진단: ‘보편적 문제’라고 단정했는데, 지문은 ‘예시’를 들어 ‘경우’를 지적했을 뿐, 모든 언어에서 ‘보편적’이라고 말하지 않음. → 처방: ‘보편적’이라는 말은 지문에 없으므로 제외하고, ‘경우’가 있음을 지적한 ①번을 다시 읽어보라.\n⑤ 진단: ‘드물게 발생하는 예외’라고 오해했는데, 지문은 ‘문법적 기능의 명칭’이 ‘명사구의 의미’를 설명하지 못하는 ‘경우’를 예시로 들고 있음. 이는 ‘예외’가 아니라 ‘일반적인 문제’로 볼 수 있음. → 처방: ‘드물다’라는 말은 지문에 없으므로 제외하고, ‘경우’가 있음을 지적한 ①번을 다시 확인하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The core argument is that traditional grammatical labels like \"Direct Object\" often fail to capture the semantic roles of noun phrases in sentences.]"
    }
   }
  ]
