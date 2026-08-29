@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-28T18:50:01.735Z",
+ "updated": "2026-08-29T02:19:11.663Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-29T02:18:43.890Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사 'reason'이 복수형으로 사용되지 않는 오류는 CEFR A2 수준에서 자주 나타나며, 동사 'sustain'의 병렬 구조 오류는 B1 수준에서 빈번하다. 대명사의 대문자 오류는 A1 수준에서 가장 흔한 오류 유형이다.",
+   "rule": "CEFR A2 수준의 문항에서는 복수형 명사 오류(예: reason → reasons)와 대명사의 대문자 오류(예: YOU → You)를 반드시 포함하여 문법적 정확성을 평가하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-28T18:49:33.782Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'직접목적어 + 전치사구' 구조에서 전치사구가 목적어 앞에 오면 오류가 발생하는 경향이 강하다. 또한, 'self-' 접두사가 붙은 복합명사에서 하이픈을 생략하는 오류가 빈번하다.",
    "rule": "'직접목적어 + 전치사구' 구조(예: enjoy in it → enjoy it)에서 전치사구를 생략하거나 목적어 뒤에 배치하도록 문장을 수정하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T05:06:12.955Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제 동사(hire, work)가 전치사 없이 직접 사용되는 오류가 빈번하며, 'when/if + 동사원형' 구조가 아니라 'when/if + -ing' 또는 'by + -ing'로 연결되어야 한다.",
-   "rule": "문법 문항에서 'when/if + 주어 + 동사원형' 구조가 나올 경우, 해당 동사가 전치사 없이 사용되었다면 'by + -ing' 또는 '-ing' 형태로 수정하도록 오류 유형을 제시하라.",
    "sample": [
     "old english",
     "university press",
