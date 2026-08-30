@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-30T00:24:15.213Z",
+ "updated": "2026-08-30T06:44:16.954Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-30T06:43:47.313Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'noun phrase'와 'reason relations'의 빈도수가 높아, 문장 구조의 복잡성과 논리적 연결을 중시하는 경향이 나타났다. 또한 'past tense'와 'present tense'의 혼용이 빈번하여 시제 일관성 검증이 중요함을 확인했다.",
+   "rule": "CEFR B1 수준 내신 변형문제에서는 'noun phrase'의 수량 일치(단/복수) 오류와 'reason relations'(예: 'other than')를 포함한 문장 구조의 정확성을 반드시 검증하라. 특히 'direct object'와 'noun phrase'의 수량 불일치(예: 'car' → 'cars')를 오류 유형으로 포함하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-30T00:23:43.679Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제와 3인칭 단수 동사 형태가 혼동된 오류가 빈번하며, 접속사 생략으로 인한 문맥 오해도 많다. 또한, 명사 복수형과 소유격 오류가 자주 발생한다.",
    "rule": "'3인칭 단수 주어 + 현재시제 동사'는 '-s' 또는 '-es'가 반드시 붙어야 하며, 접속사(and, but 등)는 문맥상 필수적일 경우 반드시 삽입하여 문장 구조를 명확히 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T11:50:49.529Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'on many subjects'와 같은 전치사구는 'knowledge'와 같은 추상명사와 빈번하게 결합하며, 오류는 관사 생략이나 불필요한 소유격('passage's')에서 발생한다.",
-   "rule": "원서 코퍼스 패턴을 반영하여 'knowledge on N' 구문에서 관사를 반드시 포함하고, 소유격 오류('s')는 'that절'로 대체하도록 변형 문제를 설계하라.",
    "sample": [
     "old english",
     "university press",
