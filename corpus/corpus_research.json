@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-30T21:14:57.553Z",
+ "updated": "2026-08-30T23:34:16.263Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-30T23:33:51.788Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'have + past participle' 구문과 'is + past participle' 수동태 구문이 빈번하며, 특히 불규칙 동사의 과거분사 형태 오용이 자주 발생함을 확인할 수 있다.",
+   "rule": "원서 코퍼스 패턴을 반영하여 'have/has + 과거분사' 또는 'is/are + 과거분사' 형태의 문장은, 불규칙 동사의 경우 반드시 표준 과거분사 형태(예: dealt, generated, known)를 사용하도록 오답 선택지를 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-30T21:14:28.951Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "이 패턴은 문장 내 불필요한 보어(예: 'much')나 구두점(예: 쉼표) 제거, 또는 동사 시제·형용사 오류(예: 'weatherrealted' → 'weather related')를 수정하는 오류가 빈번함을 보여준다.",
    "rule": "문장의 의미와 문법적 구조를 유지하면서 불필요한 보어(예: 'much')나 구두점(예: 쉼표) 또는 오류가 있는 동사·형용사를 제거·수정하여 자연스러운 문장으로 변환하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T16:05:18.333Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "복수형 오류가 빈번한 연어 패턴('suit our life' → 'suit our lives')과 인칭·수 일치 오류('every people thinks' → 'every person tries')가 한국어 학습자의 영어 구사에서 자주 발생함을 확인했다.",
-   "rule": "복수형 명사(예: 'lives', 'subjects')나 단수형 동사(예: 'tries')가 포함된 문장에서는, 오답 선택지로 단수형 명사(예: 'life')나 복수형 동사(예: 'think')를 제시하여 연어 오류 패턴을 테스트하라.",
    "sample": [
     "old english",
     "university press",
