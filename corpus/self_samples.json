@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-30T13:04:59.964Z",
+ "updated": "2026-08-30T17:34:29.594Z",
  "samples": [
+  {
+   "ts": "2026-08-30T17:32:49.689Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Acknowledgments Creating and publishing a reference guide and workbook that (A) [is popular / are popular], (B) [easy understanding / easy to understand], and (C) [tempted to use / tempting to use] requires the input of many. My thanks go to the following: my parents who, as immigrants to the United States, passed their meticulousness about speaking and writing well along to me; Gary Klehr for helping to name the book many years ago and for tireless structural editing; my husband, Lester Kaufman, for catching so many mistakes before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, help shape every rule, example, and quiz. xiii",
+    "choices": [
+     "(A) is popular - (B) easy to understand - (C) tempting to use",
+     "(A) are popular - (B) easy to understand - (C) tempted to use",
+     "(A) is popular - (B) easy understanding - (C) tempting to use",
+     "(A) is popular - (B) easy understanding - (C) tempted to use",
+     "(A) is popular - (B) easy to understand - (C) tempted to use"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) is popular - (B) easy to understand - (C) tempting to use. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n② 진단: ① (A)에서 'a reference guide and workbook'이 복합명사(단수)이므로 'are'가 아닌 'is'가 옳음. ② (C)에서 'tempting to use'는 '사용하기에 매력적인' 뜻으로 주어가 되는 책의 성질을 설명하는 형용사 역할이 맞음. 'tempted to use'는 '사용하고 싶어하는' 뜻으로 사람이 주체가 되어야 함. → 처방: 복합명사가 단수인지 확인하고 동사 수 일치시키기. 'tempting'과 'tempted'의 의미 차이를 정확히 이해하기.\n③ 진단: ① (B)에서 'easy to understand'는 '이해하기 쉬운' 뜻으로 맞는 표현. 'easy understanding'은 '이해하기 쉬운' 뜻이 아니라 '이해하는 것이 쉬운'으로 해석되어 어색함. → 처방: 형용사 + to 부정사 구조('easy to understand')와 명사 + ing 구조('easy understanding')의 차이를 구분하기.\n④ 진단: ① (C)에서 'tempted to use'는 '사용하고 싶어하는' 뜻으로 사람이 주체가 되어야 하는데, 여기서는 'a reference guide and workbook'이 주제이므로 'tempting to use'가 옳음. → 처방: 형용사 'tempting'과 'tempted'의 차이를 기억하고, 주어가 사물(책)인지 사람인지에 따라 알맞은 형용사 선택하기.\n⑤ 진단: ① (C)에서 'tempted to use'는 '사용하고 싶어하는' 뜻으로 사람이 주체가 되어야 하는데, 여기서는 'a reference guide and workbook'이 주제이므로 'tempting to use'가 옳음. → 처방: 형용사의 의미를 정확히 파악하고, 주어가 사물인지 사람인지에 따라 알맞은 형용사를 선택하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-30T17:33:55.332Z",
+   "type": "어법수정",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중 어법상 틀린 것을 모두 찾아 기호를 쓰고 바르게 고쳐 쓰시오.",
+    "passage": "Acknowledgments Creating and publishing a reference guide and workbook that is popular, easy to understand, and tempting to use requires the input of many. My thanks go to the following: my parents ⓐ<u>who</u>, as immigrants to the United States, ⓑ<u>passed their meticulousnesses</u> about speaking and writing well along to me; Gary Klehr for ⓒ<u>helping to name the book</u> many years ago and for tireless structural editing; my husband, Lester Kaufman, ⓓ<u>for catching so many mistakes</u> before they found their way into print; our daughter, Zoe, for her wise counsel about content and much more; my literary agent, Cathy Fowler, for her steadfast belief in the book’s value; Marjorie McAneny at Jossey-Bass Publishers for enthusiastically rolling out the red carpet; and the thousands of loyal readers and viewers of my Web site who, by offering valuable input daily, ⓔ<u>help shape every rule</u>, example, and quiz. xiii",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [수일치] ⓑ: 'passed their meticulousnesses' → 'passed their meticulousness' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-30T12:57:28.018Z",
    "type": "요지",
@@ -323,75 +377,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Writers should identify and reassemble the actual subjects and verbs, which are often obscured in nominalizations, to make their sentences clearer and more direct.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 주체나 대상을 바꿔치기\n[오답 진단·처방]\n② 진단: ‘명확하고 간결한 문장’을 ‘명사화된 주어와 동사’와 연결해 오해한 것으로 보임. 지문은 명사화로 인해 ‘주어와 동사가 모호해지는 문제’를 지적하며 이를 ‘재구성’해야 한다고 설명함. → 처방: ‘명사화된 주어·동사’를 ‘간결한 문장’과 혼동하지 말고, 지문의 핵심 문제를 ‘모호한 주어·동사 찾기’로 되짚어 읽기.\n③ 진단: ‘숨겨진 주어와 동사를 찾는 방법’을 ‘효과적으로 찾는 방법’으로 오독한 듯함. 지문은 단순히 ‘찾는 방법’을 넘어서 ‘재구성’까지 요구하며, 그 이유가 ‘모호한 문장’을 해결하기 위함임을 강조함. → 처방: ‘효과적으로 찾는 것’에만 초점을 맞추지 말고, 지문에서 ‘재구성’까지의 목적을 확인한 후 선지를 고르기.\n④ 진단: ‘모든 문법적 요소의 완벽한 사용’을 ‘주어와 동사’에 한정해 오해한 것으로 보임. 지문은 문법 전체가 아닌 ‘명사화로 인한 모호성’을 문제 삼고 있음. → 처방: ‘문법 전체’가 아닌 ‘명사화로 인한 모호성’에 집중해 지문을 다시 읽고 선지를 비교하기.\n⑤ 진단: ‘독해 전략’을 ‘주어와 동사를 쉽게 파악하도록 돕는 것’으로 오독한 듯함. 지문은 ‘글쓰기’ 관점에서 ‘문장 재구성’을 강조하며, 독해가 아닌 ‘작문’ 목적을 가짐. → 처방: ‘독해 전략’이 아니라 ‘글쓰기’ 목적을 확인한 후, 지문에서 ‘재구성’의 대상이 ‘주어와 동사’임을 다시 확인하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: Writers should identify and reassemble the actual subjects and verbs, which are often obscured in nominalizations, to make their sentences clearer and more direct.]"
-   }
-  },
-  {
-   "ts": "2026-08-29T02:18:31.036Z",
-   "type": "어법(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.89,
-    "D": 0.33,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=0.89)",
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
-    "passage": "In those first words, readers want to see characters ⓐ<u>not just in the whole subjects</u> of verbs, ⓑ<u>as government is implied</u> in governmental, but as their simple subjects. In that example, ­however, ⓒ<u>they wasn’t</u>. 2. Find the main characters. They may be possessive pronouns attached to nominalizations, objects of prepositions (particularly by and of), or only implied. In that sentence, ⓓ<u>one main character is in the adjective</u> governmental; the other, market, is in the object of a preposition: of market evolution. 3. Skim the passage for actions involving those characters, particularly actions buried in nominalizations. Ask Who is doing what? governmental intervention S  ✓ government intervenes distortion S  ✓ [government] distorts market evolution S  ✓ markets evolve interference S  ✓ [government] interferes development S  ✓ [market] develops \u0007To revise, ⓔ<u>reassemble those new subjects and verbs</u> into a ­sentence, using conjunctions such as if, although, because, when, how, and why: ✓ When a government intervenes in fast-changing technologies, it distorts how markets evolve and interferes with their ability to develop new products.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "[어법: 대명사] 정답 ⓒ의 'they wasn’t'는 'they aren’t'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-28T18:46:26.811Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "This then is the heritage of the pioneer experience—a passionate belief that a democracy was possible which should leave the individual a part to play in a free society and not make him a cog in a machine operated from above; which trusted in the common man, in his ­tolerance, his ability to adjust differences with good humor, and to work out an American type from the contributions of all nations— a type for which he would fight against those who challenged it in arms, and for which in time of war he would make sacrifices, even the temporary sacrifice of his individual freedom and his life, lest that freedom be lost forever. Note the following: • the summative modifier in the opening segment: a passionate belief that . . . • the increased length and weight of the second element in each coordination, even the coordinations inside coordinations • the two resumptive modifiers beginning with type and sacrifice That may be over the top, especially the quadruple chiasmus in the last sixteen words:\n\n─────────\n[요약문] The pioneer experience fostered a (A) conviction that a (B) system prioritizing individual autonomy over centralized control could thrive through collective contributions and shared sacrifices.",
-    "choices": [
-     "(A) faith … (B) collectivism",
-     "(A) conviction … (B) hierarchy",
-     "(A) ideology … (B) system",
-     "(A) myth … (B) autonomy",
-     "(A) nostalgia … (B) system"
-    ],
-    "answer": 3,
-    "explanation": "(A) ideology / (B) system 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ①을 선택한 학생은 'passionate belief'와 'conviction'의 의미를 혼동했을 가능성이 크며, 'collectivism'은 지문의 'cog in a machine'와 반대되는 '개인의 자유'라는 핵심 내용을 무시한 오독임. ② → 처방: 지문의 핵심 주제인 '개인의 자유와 민주주의'를 정확히 파악하고, 'conviction'과 'system'이 문맥에 맞는지 확인할 것.\n② 진단: ②을 선택한 학생은 'hierarchy'라는 단어가 지문에 등장하지 않음에도 'operated from above'라는 구절에 주목해 오독했을 가능성이 큼. ② → 처방: 'operated from above'는 시스템의 권위적 운영을 비판하는 내용이므로, 'hierarchy'와는 무관하다는 점을 명확히 구분할 것.\n④ 진단: ④을 선택한 학생은 'myth'가 지문의 'passionate belief'와 유사하다고 오해했을 수 있으며, 'autonomy'는 'individual freedom'과 혼동되었을 가능성 있음. ② → 처방: 'myth'는 신화적·허구적 의미를 내포하므로, 지문의 '믿음'과는 성격이 다름을 인식할 것.\n⑤ 진단: ⑤를 선택한 학생은 'nostalgia'가 과거의 'pioneer experience'를 회상하는 내용과 연관되었다고 오독했을 수 있으나, 지문은 '믿음'과 '시스템'의 관계를 강조하므로 오류임. ② → 처방: 지문의 주제가 '믿음'과 '시스템'의 관계임을 정확히 파악하고, 'nostalgia'는 회상·추억의 의미를 내포함을 기억할 것.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-30T13:04:59.961Z",
+ "updated": "2026-08-30T17:34:29.590Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-30T17:33:57.932Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구 내 관사(a/the) 생략 오류가 빈번하며, 특히 집합명사(holistic understanding)나 동명사구(Finding oil and petrol)에서 관사 오류가 자주 발생한다. 또한, 동명사구와 부정사구가 혼용될 때 문법적 일관성(parallelism) 오류가 두드러진다.",
+   "rule": "명사구 내 집합명사(holistic ~, broad knowledge 등)나 동명사구(Finding ~, digging ~)가 주어일 경우, 반드시 관사(a/the)를 포함하여 문장을 구성해야 하며, 동명사구와 부정사구가 혼용될 때에는 동형식(parallel structure)을 유지하여 일관된 형태(예: 동명사 vs 동명사)로 통일해야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-30T13:04:30.080Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "이 코퍼스에서는 전치사나 관사 사용의 오류가 빈번하며, 특히 'agree/disagree with'와 같은 전치사 동사의 결합이 누락되는 패턴이 두드러진다. 또한 소유격('s')이나 수식어의 정확한 배치도 오류의 주요 원인으로 나타났다.",
    "rule": "'agree/disagree'와 같은 전치사 동사를 사용할 때는 반드시 'with'를 포함하도록 하며, 소유격('s')이나 수식어는 명사 바로 앞에 배치하여 문법적 정확성을 확보하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T14:09:19.329Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "복수형 오류가 빈번하며, 특히 'a + 단수명사' 구조에서 단수명사가 복수형으로 수정되는 패턴이 두드러진다. 또한, 'be동사 + 과거분사' 구조가 'be동사 + 전치사구'로 오류 수정되는 경우가 많다.",
-   "rule": "영어 문장에서 'a + 단수명사' 또는 'be동사 + 과거분사' 구조가 등장할 경우, 해당 명사의 복수형 여부와 동사의 능동/수동태를 반드시 확인하여 오류를 점검하라.",
    "sample": [
     "old english",
     "university press",
