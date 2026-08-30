@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-29T21:49:05.305Z",
+ "updated": "2026-08-30T00:24:15.213Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-30T00:23:43.679Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "영어에서 'take upon oneself'는 고정적 연어로서 '~을 스스로 맡다'라는 의미로, 'take it upon oneself'가 표준 형태다. 또한 'all information'은 불특정한 정보일 때 'all the information'로 한정사(the)가 필수적이다.",
+   "rule": "연어 오답 설계 시, 'take upon oneself'와 같이 고정적 동사구는 'it'을 생략하거나 'the'를 누락한 형태로 오답을 구성하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-29T21:48:32.172Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'on many subjects'와 같은 전치사구는 'knowledge'와 같은 추상명사와 빈번하게 결합하며, 오류는 관사 생략이나 불필요한 소유격('passage's')에서 발생한다.",
    "rule": "원서 코퍼스 패턴을 반영하여 'knowledge on N' 구문에서 관사를 반드시 포함하고, 소유격 오류('s')는 'that절'로 대체하도록 변형 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T10:57:46.109Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스는 'a/an/the'와 같은 관사 오류가 빈번하며, 특히 'a'와 'an'의 구분이 필요한 경우와 관사가 생략되는 경우가 많다. 또한, 주어와 동사의 수 일치 오류가 두드러진다.",
-   "rule": "'a/an' 사용 시 모음 소리로 시작하는 단어 앞에는 'an'을, 자음 소리로 시작하는 단어 앞에는 'a'를 반드시 사용하도록 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",
