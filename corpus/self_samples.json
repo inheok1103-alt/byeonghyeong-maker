@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-30T17:34:29.594Z",
+ "updated": "2026-08-30T21:14:57.557Z",
  "samples": [
+  {
+   "ts": "2026-08-30T21:09:43.798Z",
+   "type": "연결어빈칸",
+   "level": "중",
+   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ④"
+    ]
+   },
+   "q": {
+    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Given that all hell can serve only as the subject of break loose in the relevant idiom in (iv), it is clear that we could not analyse tend as a control predicate in (iv) and claim that all hell originates as the subject of tend and PRO as the subject of break loose, since this would violate the requirement that all hell can occur only as the subject of break loose and conversely that break loose can only have the subject all hell (in the relevant idiom). ___(A)___, if tend is a raising predicate, we can claim that all hell originates as the subject of break loose and then raises up to become the subject of the (null T constituent in the) tend clause. ___(B)___, tend preserves truth-functional equivalence under passivisation, as we can see from the fact that (v) and (vi) are truth-functionally equivalent:",
+    "choices": [
+     "By contrast …… Furthermore",
+     "By contrast …… Therefore",
+     "By contrast …… Consequently",
+     "Indeed …… For instance",
+     "By contrast …… For instance"
+    ],
+    "answer": 1,
+    "explanation": "(A)는 앞 내용과 '대조' 관계로 By contrast, (B)는 '첨가' 관계로 Furthermore 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n[오답 진단·처방]\n② 진단: ‘Furthermore’는 ‘더불어’라는 뜻으로 앞뒤 논리 흐름이 자연스럽게 이어질 때 쓰이지만, 지문에서 (A) 뒤에는 ‘By contrast’로 대조를 먼저 보여준 다음에 추가 설명을 해야 하므로 ‘Furthermore’는 부적절하다. 학생은 ‘Furthermore’의 의미를 오해하고 ‘더불어’라는 느낌만으로 선택했을 가능성이 크다. → 처방: ‘Furthermore’는 ‘더불어’라는 뜻이 아니라 ‘더 나아가’라는 뜻으로, 앞뒤 논리 흐름이 자연스럽게 이어질 때만 쓰인다는 점을 기억하고, 대조가 먼저 필요한 경우 ‘Furthermore’를 쓰지 않도록 한다.\n③ 진단: ‘Consequently’는 ‘결과적으로’라는 뜻으로 인과관계가 명확할 때 쓰이지만, 지문에서 (A) 뒤는 대조를 보여주는 문맥이므로 ‘Consequently’는 문맥에 맞지 않다. 학생은 ‘결과’라는 단어에만 집중해 선택했을 가능성이 있다. → 처방: ‘Consequently’는 ‘결과적으로’라는 뜻으로, 인과관계가 명확한 경우에만 쓰인다는 점을 기억하고, 대조가 필요한 경우 ‘Consequently’를 쓰지 않도록 한다.\n④ 진단: ‘Indeed’는 ‘사실은’이라는 뜻으로 앞 문장의 내용을 강조할 때 쓰이지만, 지문에서 (A) 뒤는 대조를 보여주는 문맥이므로 ‘Indeed’는 문맥에 맞지 않다. 학생은 ‘사실은’이라는 단어에만 집중해 선택했을 가능성이 있다. → 처방: ‘Indeed’는 ‘사실은’이라는 뜻으로, 앞 문장의 내용을 강조할 때만 쓰인다는 점을 기억하고, 대조가 필요한 경우 ‘Indeed’를 쓰지 않도록 한다.\n⑤ 진단: ‘For instance’는 ‘예를 들어’라는 뜻으로 구체적인 예를 들 때 쓰이지만, 지문에서 (A) 뒤는 대조를 보여주는 문맥이므로 ‘For instance’는 문맥에 맞지 않다. 학생은 ‘예’라는 단어에만 집중해 선택했을 가능성이 있다. → 처방: ‘For instance’는 ‘예를 들어’라는 뜻으로, 구체적인 예를 들 때만 쓰인다는 점을 기억하고, 대조가 필요한 경우 ‘For instance’를 쓰지 않도록 한다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-30T17:32:49.689Z",
    "type": "네모어법ABC",
@@ -344,39 +379,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'State of insolvency and its definition**'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·조건 누락·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 조건 누락· ⑤ 정답 — 핵심 논지 반영\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: State of insolvency and its definition**]\n[오답 진단·처방]\n① 진단: ‘insolvency’가 재정 상태를 뜻한다는 점은 맞지만 지문은 ‘solvent’와 ‘insolvent’를 ‘파산·파산아님’으로 정의하는 데 그치지 않고 ‘soporific’ 같은 수면 관련 단어도 함께 소개하고 있다. 학생은 재정 용어만 집중해 지문의 전체 흐름을 놓쳤다. → 처방: 지문을 읽을 때 ‘solvent’와 ‘insolvent’뿐 아니라 ‘soporific’ 같은 다른 단어들도 함께 눈에 들어오도록 단어의 종류(형용사·명사 등)를 표시하며 읽기.\n② 진단: ‘financial terms’(재정 용어)라고만 보고 ‘solvent’와 ‘insolvent’를 재정 용어로만 한정했는데, 지문은 ‘serendipity’·‘servile’ 같은 일반 단어들도 포함하고 있다. 학생은 ‘financial’이라는 단어에만 집중해 지문의 범위를 좁혔다. → 처방: ‘financial’이라는 단어가 나오면 지문 전체에서 재정 관련 단어가 몇 개인지를 먼저 세어 본 뒤, 그렇지 않다면 ‘financial’이라는 단어를 무시하고 지문 전체를 읽기.\n③ 진단: ‘financial failure’(재정 실패)라고만 해석했는데, 지문은 ‘solvent’(파산아님)·‘insolvent’(파산) 같은 재정 상태를 설명하는 용어와 ‘soporific’(수면 유도) 같은 전혀 다른 뜻의 단어를 섞어 소개하고 있다. 학생은 ‘failure’라는 단어에만 집중해 지문의 주제를 잘못 짚었다. → 처방: ‘failure’라는 단어가 나오면 그 단어가 포함된 문장뿐 아니라 지문 전체의 주제를 한 번 더 확인한 뒤 답을 선택하기.\n④ 진단: ‘insolvent’의 조건을 물은 것처럼 보였지만 지문은 ‘insolvent’의 정의(‘파산’)만 설명하고 그 조건(예: 빚을 못 갚는 상황)을 설명하지 않는다. 학생은 ‘insolvent’라는 단어가 조건을 설명하는 것처럼 오해했다. → 처방: ‘insolvent’의 정의가 무엇인지 먼저 확인한 뒤, 그 단어가 조건을 설명하는지 여부를 따로 확인한 뒤 답을 선택하기."
-   }
-  },
-  {
-   "ts": "2026-08-29T02:17:22.481Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "명사화된 표현으로 인해 모호해진 문장의 주어와 동사를 찾아 명확하게 재구성하는 방법을 제시하려고",
-     "명확하고 간결한 문장 작성을 위해 명사화된 주어와 동사를 활용하는 방법을 권장하려고",
-     "문장에서 숨겨진 주어와 동사를 효과적으로 찾는 방법을 제시하려고",
-     "효과적인 글쓰기를 위해 모든 문법적 요소를 완벽하게 사용하는 중요성을 강조하려고",
-     "독자들이 복잡한 문장에서 주어와 동사를 쉽게 파악하도록 돕는 독해 전략을 소개하려고"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Writers should identify and reassemble the actual subjects and verbs, which are often obscured in nominalizations, to make their sentences clearer and more direct.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 주체나 대상을 바꿔치기\n[오답 진단·처방]\n② 진단: ‘명확하고 간결한 문장’을 ‘명사화된 주어와 동사’와 연결해 오해한 것으로 보임. 지문은 명사화로 인해 ‘주어와 동사가 모호해지는 문제’를 지적하며 이를 ‘재구성’해야 한다고 설명함. → 처방: ‘명사화된 주어·동사’를 ‘간결한 문장’과 혼동하지 말고, 지문의 핵심 문제를 ‘모호한 주어·동사 찾기’로 되짚어 읽기.\n③ 진단: ‘숨겨진 주어와 동사를 찾는 방법’을 ‘효과적으로 찾는 방법’으로 오독한 듯함. 지문은 단순히 ‘찾는 방법’을 넘어서 ‘재구성’까지 요구하며, 그 이유가 ‘모호한 문장’을 해결하기 위함임을 강조함. → 처방: ‘효과적으로 찾는 것’에만 초점을 맞추지 말고, 지문에서 ‘재구성’까지의 목적을 확인한 후 선지를 고르기.\n④ 진단: ‘모든 문법적 요소의 완벽한 사용’을 ‘주어와 동사’에 한정해 오해한 것으로 보임. 지문은 문법 전체가 아닌 ‘명사화로 인한 모호성’을 문제 삼고 있음. → 처방: ‘문법 전체’가 아닌 ‘명사화로 인한 모호성’에 집중해 지문을 다시 읽고 선지를 비교하기.\n⑤ 진단: ‘독해 전략’을 ‘주어와 동사를 쉽게 파악하도록 돕는 것’으로 오독한 듯함. 지문은 ‘글쓰기’ 관점에서 ‘문장 재구성’을 강조하며, 독해가 아닌 ‘작문’ 목적을 가짐. → 처방: ‘독해 전략’이 아니라 ‘글쓰기’ 목적을 확인한 후, 지문에서 ‘재구성’의 대상이 ‘주어와 동사’임을 다시 확인하기.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: Writers should identify and reassemble the actual subjects and verbs, which are often obscured in nominalizations, to make their sentences clearer and more direct.]"
    }
   }
  ]
