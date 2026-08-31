@@ -1,6 +1,60 @@
 {
- "updated": "2026-08-30T23:34:16.268Z",
+ "updated": "2026-08-31T05:46:25.898Z",
  "samples": [
+  {
+   "ts": "2026-08-31T05:40:33.314Z",
+   "type": "혼합통합형",
+   "level": "중",
+   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 6,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
+    "passage": "The ungrammaticality of sentences like *All hell wants to break loose can be attributed to the fact that want is a control predicate, and hence (in order to derive such a structure) it would be necessary to assume that all hell originates as the subject of want, and that break loose has a separate PRO subject of its own: but this would violate the requirement that (on its idiomatic use) all hell can only occur as the subject of break loose, and conversely break loose (in its idiomatic use) only allows all hell as its subject. By contrast, All hell seems to break loose is grammatical because seem is a raising predicate, and so all hell can originate as the subject of break loose and then be raised up to become the subject of the tense affix in T in the seem clause. A further property which differentiates the two types of predicate is that raising predicates like seem preserve truth-functional equivalence under passivisation, so that (89a) below is synonymous with (89b):",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-08-31T05:43:52.600Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "The ungrammaticality of sentences like *All hell wants to break loose can be attributed to the fact that want is a control predicate, and hence (in order to derive such a structure) it would be necessary to assume that all hell originates as the subject of want, and that break loose has a separate PRO subject of its own: but this would violate the requirement that (on its idiomatic use) all hell can only occur as the subject of break loose, and conversely break loose (in its idiomatic use) only allows all hell as its subject. By contrast, All hell seems to break loose is grammatical because seem is a raising predicate, and so all hell can originate as the subject of break loose and then be raised up to become the subject of the tense affix in T in the seem clause. A further property which differentiates the two types of predicate is that raising predicates like seem preserve truth-functional equivalence under passivisation, so that (89a) below is synonymous with (89b):",
+    "choices": [
+     "'want'는 통제 술어가 아니며 'all hell'은 'break loose'의 주어로만 쓰인다.",
+     "'want'를 사용한 문장은 문법적으로 적절하다는 특징이 있다.",
+     "'seem'은 상승 술어이므로 'all hell'이 'break loose'의 주어로 사용 가능하다.",
+     "'seem'을 사용한 문장은 수동태로 변환하면 의미가 달라진다.",
+     "'all hell'은 'break loose'의 관용적 사용에서 주어로 허용되지 않는다."
+    ],
+    "answer": 3,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: 지문에서 'want'는 통제 술어(control predicate)라고 분명히 밝혔으므로, 'want'가 통제 술어가 아니라는 오해는 지문의 핵심 용어와 정의를 제대로 읽지 않은 것이다. → 처방: 지문에서 'want'가 통제 술어임을 확인하고, 통제 술어의 특징을 따로 정리해 두어 혼동하지 않도록 한다.\n② 진단: 지문은 'want'를 사용한 문장이 문법적으로 부적절하다고 설명했는데, 이를 적절하다고 오독한 것은 문법적 적절성 여부를 판단하는 기준을 지문의 설명과 연결하지 못한 것이다. → 처방: 지문의 예문을 다시 읽고, 'want'와 'seem'의 문법적 특징을 비교해 가며 선지를 검토한다.\n④ 진단: 지문은 'seem'을 사용한 문장이 수동태로 변환해도 의미가 같다고 설명했는데, 이를 의미가 달라진다고 오독한 것은 지문의 동일성 보존 여부에 대한 설명을 놓친 것이다. → 처방: 지문의 (89a)와 (89b) 예문을 직접 확인하고, 수동태 변환 시 의미가 보존되는지 직접 확인해 본다.\n⑤ 진단: 지문은 'all hell'이 'break loose'의 관용적 사용에서 주어로만 허용된다고 설명했는데, 이를 허용되지 않는다고 오독한 것은 지문의 관용적 사용 제한 조건을 반대로 이해한 것이다. → 처방: 지문의 'idiomatic use' 부분과 'only occurs as the subject' 부분을 다시 읽고, 허용 범위를 정확히 파악한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-30T23:33:21.000Z",
    "type": "제목",
@@ -311,74 +365,6 @@
     ],
     "answer": 5,
     "explanation": "정답 ⓔ의 풀이는 'respite'의 정의이다. 'answers'의 올바른 풀이: A response or reply; something said or done in reaction to a statement or questi\n[오답 진단·처방]\n① 진단: 학생은 'Quick Quiz'에서 'Quick'이 '빠른'이라는 뜻의 형용사로 쓰였음을 놓치고, 'Quick'의 다른 의미인 '살점'이나 '급소'를 나타내는 명사로 오해하여 이 선지를 적절하지 않다고 판단했습니다. 다른 선지들과 비교하여 가장 적절하지 않은 것을 고르는 데 실패했습니다. → 처방: 밑줄 친 단어의 문맥적 의미와 제시된 영영풀이를 정확히 비교하고, 다른 선지들과의 적절성 정도를 면밀히 따져야 합니다.\n② 진단: 학생은 'first column'에서 'first'가 '첫 번째의'라는 의미로 쓰였으며, 제시된 영영풀이 \"The person or thing in the first position\"이 이 의미와 정확히 일치함을 파악하지 못했습니다. → 처방: 단어의 사전적 의미와 문맥적 의미가 일치하는지 꼼꼼히 대조하는 습관을 들여야 합니다.\n③ 진단: 학생은 'second column'에서 'second'가 '두 번째의'라는 의미로 쓰였으며, 제시된 영영풀이 \"Something that is number two in a series\"가 이 의미와 정확히 일치함을 파악하지 못했습니다. → 처방: 단어의 사전적 의미와 문맥적 의미가 일치하는지 꼼꼼히 대조하는 습관을 들여야 합니다.\n④ 진단: 학생은 'Check your answers'에서 'Check'이 '확인하다'라는 뜻으로 쓰였음을 놓치고, 'Check'의 여러 의미 중 체스 용어인 '위협'이라는 뜻으로 오해하여 이 선지를 적절하지 않다고 판단했습니다. 다른 선지들과 비교하여 가장 적절하지 않은 것을 고르는 데 실패했습니다. → 처방: 밑줄 친 단어의 문맥적 의미와 제시된 영영풀이를 정확히 비교하고, 다른 선지들과의 적절성 정도를 면밀히 따져야 합니다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-29T14:31:09.307Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 2/3 다수결 3번(기록 4번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "Word ⓐ<u>Categories</u> 5 two cats (if you ⓑ<u>think</u> about it this sentence ⓒ<u>might</u> mean that anything between two and six cats got bitten, which is not predictable from the ⓓ<u>meaning</u> of the ⓔ<u>words</u>). Let us assume that these different types of linguistic knowledge are separate. We can call the part of I-language which is to do with words the Lexicon. This might be imagined as a kind of mental dictionary in which we store specific information about all the words that we use: how they are pronounced, what they mean, etc. 2.2 Categories Lexical knowledge concerns more than the meaning and pronunciation of words, however. Consider the examples in (2) and (3) again. The word cat is not the only one that could possibly go in the positions in (2), so could the words dog, mouse and budgerigar: (4) a the dog slept",
-    "choices": [
-     "categories: A group, often named or numbered, to which items are assigned based on similarit",
-     "think: An act of thinking; consideration (of something).",
-     "might: Power, strength, force or influence held by a person or group.",
-     "meaning: The fact of knowing about something; general understanding or familiarity with a",
-     "words: The smallest unit of language that has a particular meaning and can be expressed"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓓ의 풀이는 'knowledge'의 정의이다. 'meaning'의 올바른 풀이: (of words or symbols) The entity, perception, feeling or concept thereby represe\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: ‘categories’를 ‘A group, often named or numbered, to which items are assigned based on similarity’라고 풀이했는데, 이는 ‘범주’를 ‘유사한 항목이 묶인 집단’으로만 좁게 해석한 오류. 지문에서 ‘categories’는 ‘범주’(단어의 종류나 분류 체계)로 쓰였으므로, ‘명명되거나 번호가 매겨진 집단’이라는 뜻만으로는 부족하다. → 처방: ‘범주’의 뜻을 풀이할 때, 단순히 ‘집단’이 아니라 ‘단어나 개념을 분류하는 체계’임을 떠올리며 뜻을 찾아보기.\n② 진단: ‘think’를 ‘An act of thinking; consideration (of something)’로 풀이했는데, 이는 ‘생각’이라는 행위를 ‘고려’라는 좁은 뜻으로만 본 오류. 지문에서 ‘think’는 ‘~라고 여기다’(=believe)라는 뜻으로 쓰였으므로, ‘고려’보다는 ‘의견이나 판단’을 뜻하는 뜻풀이여야 한다. → 처방: ‘think’의 뜻을 풀이할 때, 문맥에서 ‘~라고 여기다’(=believe)라는 뜻이 쓰였는지 확인하고, 그런 뜻이 있다면 ‘고려’보다는 ‘의견이나 판단’이라는 뜻을 찾아보기.\n④ 진단: ‘words’를 ‘The smallest unit of language that has a particular meaning and can be expressed’라고 풀이했는데, 이는 ‘단어’를 ‘의미를 가진 가장 작은 언어 단위’로만 본 오류. 지문에서 ‘words’는 ‘단어’(의미를 지닌 언어의 기본 단위)로 쓰였으므로, ‘가장 작은 단위’라는 뜻은 맞지만, ‘표현될 수 있다’는 뜻은 이 문맥에서 필요하지 않다. → 처방: ‘단어’의 뜻을 풀이할 때, ‘의미를 지닌 언어의 기본 단위’라는 뜻에 집중하고, ‘표현될 수 있다’는 뜻은 제외하고 뜻을 찾아보기.\n⑤ 진단: ‘meaning’을 ‘The fact of knowing about something; general understanding or familiarity with a’라고 풀이했는데, 이는 ‘meaning’을 ‘알고 있음’이나 ‘친숙함’이라는 뜻으로 오해한 오류. 지문에서 ‘meaning’는 ‘의미’(단어나 문장이 지닌 뜻)로 쓰였으므로, ‘알고 있음’이 아니라 ‘의미’라는 뜻이어야 한다. → 처방: ‘meaning’의 뜻을 풀이할 때, ‘단어나 문장이 지닌 뜻’이라는 뜻에 집중하고, ‘알고 있음’이라는 뜻은 제외하고 뜻을 찾아보기."
-   }
-  },
-  {
-   "ts": "2026-08-29T09:09:43.354Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.56,
-    "D": 1,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "파산은 채무를 변제할 수 없는 상태가 지속되는 현상을 말한다.",
-     "파산은 채무를 이행할 수 없게 된 개인의 법적 상태를 가리킨다.",
-     "파산은 만기 채무를 갚지 못하는 모든 경우를 포괄하는 개념이다.",
-     "파산은 채무 변제가 불가능하다는 사실 자체를 의미하는 것은 아니다.",
-     "파산은 만기 채무를 변제할 수 없는 지경에 처한 상태를 말한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Insolvency refers to the state of being unable to pay debts at maturity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도·빈도를 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘지문에서 파산(insolvent)은 채무를 ‘변제할 수 없는 상태’를 뜻하지, ‘지속되는 현상’을 뜻하지 않는다.’ → 처방: ‘파산’의 뜻을 정확히 기억하고, ‘지속됨’이란 말이 없으면 제외하기.\n② 진단: ‘지문에서 파산(insolvent)은 개인이 아니라 ‘회사’의 법적 상태를 가리키는 예시만 있다. 개인을 가리키는 말은 없다.’ → 처방: ‘파산’이 개인을 가리키는지도 확인하고, 지문 예시가 회사인지 확인하기.\n③ 진단: ‘지문에서 파산(insolvent)은 ‘만기 채무를 갚지 못하는 모든 경우’를 포괄하지 않는다. ‘채무를 변제할 수 없는 상태’를 뜻한다.’ → 처방: ‘파산’의 뜻을 정확히 기억하고, ‘모든 경우’라는 말이 없으면 제외하기.\n④ 진단: ‘지문에서 파산(insolvent)은 ‘채무 변제가 불가능하다는 사실 자체’를 뜻하지, ‘상태’를 뜻한다.’ → 처방: ‘파산’이 ‘상태’를 뜻하는지 확인하고, ‘사실 자체’라는 말이 없으면 제외하기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Insolvency refers to the state of being unable to pay debts at maturity.]"
    }
   }
  ]

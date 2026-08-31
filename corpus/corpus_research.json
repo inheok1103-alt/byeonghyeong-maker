@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-30T23:34:16.263Z",
+ "updated": "2026-08-31T05:46:25.894Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-31T05:46:02.399Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거 시제와 현재 시제가 혼용되어 발생하는 오류가 빈번하며, 명사구(noun phrase) 내 전치사나 관사의 생략, 또는 동사의 부정형(-ing, -ed) 오용이 두드러진다. 또한 'between two'와 같이 전치사구 구조가 잘못 구성되는 경우가 많다.",
+   "rule": "영어 문장에서 동사의 시제(과거/현재/미래)와 부정형(-ing, -ed)을 혼동하지 않도록 하며, 특히 'be + 형용사 + 명사' 구조에서는 명사 앞에 관사(a/the)를 반드시 포함시킨다. 또한 'between two'와 같은 전치사구는 'between two [명사]' 형태로만 사용하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-30T23:33:51.788Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'resource for ~ to be working'는 'resource that ~ need to run'으로 재구조화되는 경향이 강하며, 소유격 오류('failure's')는 복수형+'s'가 아닌 'their failures'로 교정되는 패턴이 반복됨.",
    "rule": "'X is the main resource for Y to be V-ing'라는 문장은 'X is the main resource that Y need(s) to V'로 변환하여 출제하라. (예: 'This book is the main resource for students to be learning.' → 'This book is the main resource that students need to learn.')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T17:49:26.047Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "이 패턴은 문장 내 불필요한 보어(예: 'much')나 구두점(예: 쉼표) 제거, 또는 동사 시제·형용사 오류(예: 'weatherrealted' → 'weather related')를 수정하는 오류가 빈번함을 보여준다.",
-   "rule": "문장의 의미와 문법적 구조를 유지하면서 불필요한 보어(예: 'much')나 구두점(예: 쉼표) 또는 오류가 있는 동사·형용사를 제거·수정하여 자연스러운 문장으로 변환하라.",
    "sample": [
     "old english",
     "university press",
