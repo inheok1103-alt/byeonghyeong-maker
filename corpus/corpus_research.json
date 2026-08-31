@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-31T14:14:29.956Z",
+ "updated": "2026-08-31T20:10:58.681Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-08-31T20:10:30.689Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "명사(advance/advanced, mater/matter, details/detail)와 동사(are explain → can explain)의 오류가 빈번하며, 특히 관사·조동사·단수/복수 형태의 오용이 두드러진다.",
+   "rule": "명사(단수/복수), 관사(a/the), 조동사(can/must/should) 및 형용사(advanced/detailed)의 올바른 형태와 조합을 반드시 검증하도록 문장을 설계하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-31T14:13:58.676Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'명사+전치사+형용사' 또는 '형용사+명사' 구조의 연어 패턴이 오류로 자주 나타나며, 특히 'unmeaningful subjects'처럼 명사+형용사 결합이 비표준인 경우가 많다. 또한 'ask me did I'와 같이 시제 오류와 함께 직접화법 구조가 잘못 사용되는 경향이 있다.",
    "rule": "'형용사+명사' 또는 '명사+형용사' 연어는 표준 영어에서 고정된 결합을 따르므로, 'unmeaningful subjects'는 'subjects that were not meaningful'로, 'meaningless subjects'로 수정하라. 또한 'ask me did I'와 같은 직접화법 구조는 'asked me if/whether I'로 전환하여 시제와 절 구조를 일치시켜야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T19:52:59.923Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 '명사 + 콤마 + was/were' 구문은 특정 명사(예: 'example')의 보충 설명을 위해 사용되며, 콤마 없이도 문법적으로 성립함을 확인할 수 있다. 또한, 'the + 명사'는 특정 대상을 지시할 때 필수적으로 사용되며, 관사 생략은 오류로 이어진다.",
-   "rule": "'A [명사] of [명사] was when ~' 패턴에서 [명사]가 고유명사(예: Real Politik)나 복수형이 아닌 경우, 관사(the)를 생략하지 말고 'of the [명사]'로 표기하도록 학생들에게 지시하라.",
    "sample": [
     "old english",
     "university press",

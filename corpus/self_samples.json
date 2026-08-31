@@ -1,6 +1,41 @@
 {
- "updated": "2026-08-31T14:14:29.960Z",
+ "updated": "2026-08-31T20:10:58.685Z",
  "samples": [
+  {
+   "ts": "2026-08-31T20:10:18.950Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The Gradual Blurring of Linguistic Boundaries",
+     "The Clear Division Between Free Combinations and Prepositions",
+     "All Linguistic Structures Exist in Binary Categories",
+     "Variability in Language Is Caused by Clear Borderlines",
+     "Fixed Meanings in Free Combinations and Prepositions"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Variability exists on a continuum without clear borders.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 정도 왜곡\n[오답 진단·처방]\n② 진단: ‘자유 결합’과 ‘복합 전치사’를 ‘분명한 경계’로 나눌 수 있다고 오해했는데, 지문은 ‘변이성은 정도 문제라서 뚜렷한 경계가 없다’고 밝히며 이 선지를 부정함. → 처방: ‘경계가 없다’는 지문의 핵심 내용을 먼저 확인하고, ‘분명한 경계’를 주장하는 선지는 오답임을 기억하기.\n③ 진단: ‘이분법적 범주’가 언어에 늘 적용된다고 오독했는데, 지문은 ‘경계가 흐려지는 경우’를 설명하며 이분법이 항상 옳지 않음을 보여줌. → 처방: ‘경계가 흐리다’는 표현에 주목하고, ‘항상 이분법’이라는 주장은 지문의 반례가 될 수 있음을 떠올리기.\n④ 진단: ‘변이성이 분명한 경계 때문에 생긴다’고 잘못 이해했는데, 지문은 ‘경계가 모호해서 변이가 생긴다’고 설명하며 이 선지의 인과관계를 반대로 오독함. → 처방: ‘변이성’과 ‘경계’의 관계를 반대로 생각하지 말고, 지문이 ‘경계가 없어서 변이가 생긴다’를 강조함을 기억하기.\n⑤ 진단: ‘자유 결합과 전치사가 고정된 의미를 가진다’고 오해했는데, 지문은 ‘자유 결합이 투명하고 변이가 크다’는 점을 강조하며 이 선지를 부정함. → 처방: ‘고정된 의미’를 주장하는 선지는 지문의 ‘변이성’을 떠올리며 배제하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Variability exists on a continuum without clear borders.]"
+   }
+  },
   {
    "ts": "2026-08-31T05:40:33.314Z",
    "type": "혼합통합형",
@@ -330,41 +365,6 @@
     ],
     "answer": 1,
     "explanation": "빈칸에는 원문 'Consequently, T searches for active goals, locating the expletive pronoun there, which is active by virtue of its uninterpretable person feature.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘there’가 ‘uninterpretable person feature’를 지니지 않으므로 ‘inactive goal’이 아니라 ‘active goal’이 아니라고 오해한 듯. 지문은 ‘there’가 ‘uninterpretable person feature’를 가지지 않지만, ‘uninterpretable number feature’를 지닌 QP 를 찾아간다고 설명함. → 처방: ‘there’의 ‘uninterpretable feature’를 정확히 확인하고, 지문에서 ‘there’가 ‘active goal’이 아니라는 점을 기억하기. ‘uninterpretable person feature’와 ‘uninterpretable number feature’를 구분해서 읽기.\n③ 진단: ‘there’의 ‘uninterpretable number feature’를 ‘uninterpretable person feature’로 혼동한 듯. 지문은 ‘there’가 ‘number feature’를 지니지 않으므로 ‘T’가 ‘QP’를 찾아간다고 설명함. → 처방: ‘there’의 ‘feature’를 꼼꼼히 확인하고, 지문에서 ‘there’가 ‘number feature’를 지니지 않는다는 점을 기억하기. ‘number’와 ‘person’을 혼동하지 않도록 주의하기.\n④ 진단: ‘there’가 ‘inactive’하다고 오해한 듯. 지문은 ‘there’가 ‘uninterpretable person feature’를 지니지 않지만, ‘T’가 ‘QP’를 찾아가기 위해 ‘there’를 건너뛰는 것은 아님을 설명함. → 처방: ‘there’의 ‘active/inactive’를 ‘uninterpretable feature’의 유무로 판단하지 말고, 지문에서 ‘T’가 ‘there’를 건너뛰지 않는다는 점을 기억하기. ‘there’의 역할을 정확히 이해하기.\n⑤ 진단: ‘there’가 ‘uninterpretable person feature’를 지니지 않기 때문에 ‘inactive’라고 오해한 듯. 지문은 ‘there’가 ‘uninterpretable person feature’를 지니지 않지만, ‘T’가 ‘QP’를 찾아가기 위해 ‘there’를 건너뛰는 것은 아니라는 점을 설명함. → 처방: ‘there’의 ‘active/inactive’를 ‘uninterpretable feature’의 유무로만 판단하지 말고, 지문에서 ‘T’가 ‘there’를 건너뛰지 않는다는 점을 기억하기. ‘there’의 역할을 전체 구조에서 이해하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-29T18:36:37.713Z",
-   "type": "영영풀이일치",
-   "level": "중",
-   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": -0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.33)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
-    "passage": "ⓐ<u>Quick</u> Quiz #73 Match each word in the ⓑ<u>first</u> column with its definition in the ⓒ<u>second</u> column. ⓓ<u>Check</u> your ⓔ<u>answers</u> here. 1. reparation a. act of revenge 2. repercussion b. determined 3. replenish c. worthy of blame 4. replete d. consequence 5. reprehensible e. scold 6. reprisal f. completely filled 7. reproach g. paying back 8. reprove h. necessary 9. repudiate i. criticize mildly 10. requisite j. fill again 11. resolute k. reject RESPITE (RES pit) n a period of rest or relief • We worked without respite from five in the morning until five in the afternoon. • The new mother fell asleep when her baby stopped crying. However, the respite was brief; the baby started up again almost immediately. Note carefully the pronunciation of this word. RETICENT (RET uh sint) adj quiet; restrained; reluctant to speak, especially about oneself • Luther’s natural reticence made him an ideal speaker: his speeches never lasted more than a few minutes.",
-    "choices": [
-     "quick: Raw or sensitive flesh, especially that underneath finger and toe nails.",
-     "first: The person or thing in the first position.",
-     "second: Something that is number two in a series.",
-     "check: A situation in which the king is directly threatened by an opposing piece.",
-     "answers: A brief interval of rest or relief."
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ의 풀이는 'respite'의 정의이다. 'answers'의 올바른 풀이: A response or reply; something said or done in reaction to a statement or questi\n[오답 진단·처방]\n① 진단: 학생은 'Quick Quiz'에서 'Quick'이 '빠른'이라는 뜻의 형용사로 쓰였음을 놓치고, 'Quick'의 다른 의미인 '살점'이나 '급소'를 나타내는 명사로 오해하여 이 선지를 적절하지 않다고 판단했습니다. 다른 선지들과 비교하여 가장 적절하지 않은 것을 고르는 데 실패했습니다. → 처방: 밑줄 친 단어의 문맥적 의미와 제시된 영영풀이를 정확히 비교하고, 다른 선지들과의 적절성 정도를 면밀히 따져야 합니다.\n② 진단: 학생은 'first column'에서 'first'가 '첫 번째의'라는 의미로 쓰였으며, 제시된 영영풀이 \"The person or thing in the first position\"이 이 의미와 정확히 일치함을 파악하지 못했습니다. → 처방: 단어의 사전적 의미와 문맥적 의미가 일치하는지 꼼꼼히 대조하는 습관을 들여야 합니다.\n③ 진단: 학생은 'second column'에서 'second'가 '두 번째의'라는 의미로 쓰였으며, 제시된 영영풀이 \"Something that is number two in a series\"가 이 의미와 정확히 일치함을 파악하지 못했습니다. → 처방: 단어의 사전적 의미와 문맥적 의미가 일치하는지 꼼꼼히 대조하는 습관을 들여야 합니다.\n④ 진단: 학생은 'Check your answers'에서 'Check'이 '확인하다'라는 뜻으로 쓰였음을 놓치고, 'Check'의 여러 의미 중 체스 용어인 '위협'이라는 뜻으로 오해하여 이 선지를 적절하지 않다고 판단했습니다. 다른 선지들과 비교하여 가장 적절하지 않은 것을 고르는 데 실패했습니다. → 처방: 밑줄 친 단어의 문맥적 의미와 제시된 영영풀이를 정확히 비교하고, 다른 선지들과의 적절성 정도를 면밀히 따져야 합니다.\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
