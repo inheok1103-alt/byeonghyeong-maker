@@ -1,6 +1,59 @@
 {
- "updated": "2026-08-31T20:10:58.685Z",
+ "updated": "2026-08-31T23:56:12.197Z",
  "samples": [
+  {
+   "ts": "2026-08-31T23:54:30.893Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어 시제 표현 분석은 보편적 시간 개념에 기반해야 한다.",
+     "영어 시제 표현은 과거·현재·미래 시제에 한정해서 분석해야 한다.",
+     "보편적 시간 개념이 영어 시제 표현 발달의 유일한 기준이 된다.",
+     "모든 언어의 시제 표현이 보편적 시간 개념에 따라 분석되어야 한다.",
+     "영어 시제 표현 분석에서 보편적 시간 개념은 고려 대상이 아니다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'We should examine time-expressions based on universal notions of time rather than linguistic features.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: 지문 26.92에서 'Principal Divisions of Time'을 설명하며 영어 시제 표현이 보편적 시간 개념에 기반함을 밝히는데, 학생은 '과거·현재·미래 시제에 한정해서 분석해야 한다'고 오해하여 시제 표현의 범위를 좁게 보았다. → 처방: 지문 26.91~26.92를 다시 읽고, 영어 시제 표현이 보편적 시간 개념을 어떻게 담아내고 있는지 전체 흐름을 파악한 뒤 문제를 풀어보기.\n③ 진단: 지문 26.92에서 보편적 시간 개념이 영어 시제 표현 발달의 '기준'이 아니라 '기반'임을 강조하는데, 학생은 '유일한 기준'으로 오해하여 지나치게 절대적으로 받아들였다. → 처방: 지문에서 '기반'과 '유일한 기준'의 차이를 비교해 보고, 영어 시제 표현이 보편적 시간 개념을 어떻게 활용하는지 구체적으로 살펴보기.\n④ 진단: 지문은 영어 시제 표현에 초점을 맞추고 있으나, 학생은 '모든 언어'로 범위를 넓혀 보편적 시간 개념이 모든 언어에 적용된다고 잘못 일반화했다. → 처방: 지문에서 다룬 영어 시제 표현의 특징에만 집중하고, 다른 언어의 시제 표현은 배제한 채 문제 풀이하기.\n⑤ 진단: 지문 26.91~26.92에서 영어 시제 표현 분석이 보편적 시간 개념에 기반해야 함을 명시하는데, 학생은 '고려 대상이 아니다'라고 오해하여 지문의 핵심 내용을 무시했다. → 처방: 지문의 첫 문장(26.91)과 26.92를 다시 읽고, 영어 시제 표현 분석에서 보편적 시간 개념의 중요성을 확실히 이해한 뒤 문제를 풀어보기.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: We should examine time-expressions based on universal notions of time rather than linguistic features.]"
+   }
+  },
+  {
+   "ts": "2026-08-31T23:55:29.666Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: e)\n[영영풀이] Spinning or rotary motion given to a ball around the vertical axis, as in billiards or bowling.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] english (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-31T20:10:18.950Z",
    "type": "제목",
@@ -297,74 +350,6 @@
     ],
     "answer": 2,
     "explanation": "글의 핵심 논지는 'Digital minimalism enhances mental well-being'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: ‘단독 보장’(guarantee)과 ‘진짜 행복’(true happiness)이라는 표현이 지문에서 다룬 ‘정신건강 개선’(mental health outcomes)보다 범위를 넓히고 추상화했다는 점을 오해했음. 지문은 ‘정신건강 개선’을 언급했지만 ‘행복 보장’이나 ‘진짜 행복’으로 확대 해석함. → 처방: 제목은 지문의 핵심 주제(‘디지털 미니멀리즘→정신건강 개선’)에 맞춰야 하므로, ‘행복’이나 ‘보장’이라는 단어를 쓰지 말고 지문에서 사용한 ‘정신 건강’(mental health)과 ‘개선’(improves)을 그대로 사용해라.\n③ 진단: ‘모든 디지털 기기 절단’(cutting all)과 ‘정신건강 문제 치료’(cures mental health issues)가 지문에서 다룬 ‘디지털 사용 줄이기’(limited use)나 ‘정신건강 개선’(improved mental health)보다 과장된 표현임을 오해했음. 지문은 ‘사용 줄이기’와 ‘개선’을 언급했지만 ‘절단’이나 ‘치료’로 과장해서 읽음. → 처방: 제목은 지문의 실제 주장(‘디지털 사용 줄이기→정신 건강 개선’)에 맞춰야 하므로, ‘절단’이나 ‘치료’라는 극단적인 단어를 쓰지 말고 ‘사용 줄이기’(reducing use)나 ‘개선’(improves)으로 구체화해라.\n④ 진단: ‘소셜 미디어 제한만으로’(restriction alone)와 ‘심리적 균형 회복’(fixes psychological balance)이라는 표현이 지문에서 다룬 ‘디지털 미니멀리즘’(의도적 사용 줄이기)의 범위를 좁히고 단순화했다는 점을 오해했음. 지문은 ‘소셜 미디어와 디지털 기기 사용 제한’을 언급했지만 ‘소셜 미디어만’으로 축소해 읽음. → 처방: 제목은 지문의 전체 주제(‘디지털 미니멀리즘→정신건강 개선’)를 담아야 하므로, ‘소셜 미디어’에만 초점을 맞추지 말고 ‘디지털 사용’(digital use)이나 ‘디지털 미니멀리즘’(digital minimalism)으로 범위를 넓혀라.\n⑤ 진단: ‘부실한 디지털 디톡스’(half-hearted detox)와 ‘이익’(benefits)이라는 표현이 지문에서 다룬 ‘의도적 사용 줄이기’(digital minimalism)의 의미를 약화시킨다는 점을 오해했음. 지문은 ‘의도적 사용 줄이기’를 강조했지만 ‘부실한’으로 약화시켜 읽음. → 처방: 제목은 지문의 핵심 주장(‘의도적 디지털 사용 줄이기→정신 건강 개선’)을 그대로 담아야 하므로, ‘부실한’이나 ‘아직’(still)이라는 부정적·약화 표현을 쓰지 말고 ‘의도적 사용 줄이기’(intentional reduction)나 ‘개선’(improves)으로 명확히 표현해라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Digital minimalism enhances mental well-being]"
-   }
-  },
-  {
-   "ts": "2026-08-29T21:46:46.375Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "어법 의심 3건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.33,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "structural constraints eliminated hope of finding survivors",
-     "hope remains only in the absence of expletive \"it",
-     "all structural constraints universally prevent reassessment of hope",
-     "hope occasionally persists despite structural barriers",
-     "hope lingers even when structural barriers block reassessment"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'Hope remains despite the inactivity condition preventing expletive \"it\" from merging with the V-bar.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정도 왜곡· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: ‘structural constraints eliminated hope’를 ‘제한 조건이 희망을 완전히 없앴다’로 오해했는데, 지문은 ‘제한 조건이 있더라도 희망이 남아 있을 수 있다’고 설명합니다. ‘eliminated’를 ‘제한’으로 혼동한 듯합니다. → 처방: ‘eliminated’ 같은 강한 표현이 나오면 지문에서 그와 반대되는 내용(‘remain’, ‘linger’)을 찾도록 주의하세요.\n② 진단: ‘hope remains only in the absence of expletive it’을 ‘it 이 없으면 희망이 남는다’로 오독했는데, 지문은 ‘it 이 아니라 there 가 쓰여야 하고, 그럼에도 희망이 남는다’고 말합니다. ‘only’의 범위를 잘못 해석한 듯합니다. → 처방: ‘only’가 포함된 선지는 ‘유일한 조건’을 강조한다는 점을 기억하고, 지문에서 그와 반대되는 상황을 찾으세요.\n③ 진단: ‘universally prevent reassessment’를 ‘모든 제한이 재평가를 막는다’로 읽었는데, 지문은 ‘일부 제한은 막지만 희망은 남는다’고 설명합니다. ‘universally’를 ‘완전히’로 잘못 이해한 듯합니다. → 처방: ‘universally’ 같은 단어가 나오면 ‘예외가 없는지’ 지문을 꼼꼼히 확인하세요.\n④ 진단: ‘hope occasionally persists’를 ‘희망이 가끔 남는다’로 오해했는데, 지문은 ‘구조적 장벽이 있더라도 희망이 지속된다’고 명확히 말합니다. ‘occasionally’를 ‘때때로’로만 해석한 듯합니다. → 처방: ‘occasionally’ 같은 부사를 ‘드물게’로만 해석하지 말고, 지문에서 ‘언제나’, ‘항상’ 같은 stronger 표현을 찾아 비교하세요.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Hope remains despite the inactivity condition preventing expletive \"it\" from merging with the V-bar.]"
-   }
-  },
-  {
-   "ts": "2026-08-29T21:48:14.940Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답-오답 근접(65%) — 복수정답 재검 권고 · 솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "T VP Af [Pres-Tns] PRN V' [u-Pers] there [u-Num] [3-Pers] V QP [EPP] remain every hope of finding survivors [3-Pers, Sg-Num, u-Case] (Note that expletive it could not be used in place of there here, because the Inactivity Condition would prevent it from being merged with a V-bar like that in (i) which contains a constituent with an active case feature, such as the QP every hope of ﬁnding survivors.) The afﬁxal T constituent serves as a probe because it is the highest head in the structure, and because its uninterpretable person/number features make it active. [ ] However, since there carries no number feature and so cannot value the number feature on T, the T head probes further until it locates the (person-and-number-speciﬁed) QP every hope of ﬁnding",
-    "choices": [
-     "As a result, T probes for active goals, identifying the expletive pronoun there, which gains its active status due to its uninterpretable person feature.",
-     "As a result, T locates active goals, ignoring the expletive pronoun there because it lacks an uninterpretable person feature.",
-     "Therefore, T searches for active goals, locating the expletive pronoun there, which is active because of its uninterpretable number feature.",
-     "Consequently, T avoids searching for active goals, instead focusing on the expletive pronoun there, which is inactive due to its uninterpretable person feature.",
-     "Thus, T probes for active goals, but the expletive pronoun there remains inactive since it carries no uninterpretable person feature."
-    ],
-    "answer": 1,
-    "explanation": "빈칸에는 원문 'Consequently, T searches for active goals, locating the expletive pronoun there, which is active by virtue of its uninterpretable person feature.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n② 진단: ‘there’가 ‘uninterpretable person feature’를 지니지 않으므로 ‘inactive goal’이 아니라 ‘active goal’이 아니라고 오해한 듯. 지문은 ‘there’가 ‘uninterpretable person feature’를 가지지 않지만, ‘uninterpretable number feature’를 지닌 QP 를 찾아간다고 설명함. → 처방: ‘there’의 ‘uninterpretable feature’를 정확히 확인하고, 지문에서 ‘there’가 ‘active goal’이 아니라는 점을 기억하기. ‘uninterpretable person feature’와 ‘uninterpretable number feature’를 구분해서 읽기.\n③ 진단: ‘there’의 ‘uninterpretable number feature’를 ‘uninterpretable person feature’로 혼동한 듯. 지문은 ‘there’가 ‘number feature’를 지니지 않으므로 ‘T’가 ‘QP’를 찾아간다고 설명함. → 처방: ‘there’의 ‘feature’를 꼼꼼히 확인하고, 지문에서 ‘there’가 ‘number feature’를 지니지 않는다는 점을 기억하기. ‘number’와 ‘person’을 혼동하지 않도록 주의하기.\n④ 진단: ‘there’가 ‘inactive’하다고 오해한 듯. 지문은 ‘there’가 ‘uninterpretable person feature’를 지니지 않지만, ‘T’가 ‘QP’를 찾아가기 위해 ‘there’를 건너뛰는 것은 아님을 설명함. → 처방: ‘there’의 ‘active/inactive’를 ‘uninterpretable feature’의 유무로 판단하지 말고, 지문에서 ‘T’가 ‘there’를 건너뛰지 않는다는 점을 기억하기. ‘there’의 역할을 정확히 이해하기.\n⑤ 진단: ‘there’가 ‘uninterpretable person feature’를 지니지 않기 때문에 ‘inactive’라고 오해한 듯. 지문은 ‘there’가 ‘uninterpretable person feature’를 지니지 않지만, ‘T’가 ‘QP’를 찾아가기 위해 ‘there’를 건너뛰는 것은 아니라는 점을 설명함. → 처방: ‘there’의 ‘active/inactive’를 ‘uninterpretable feature’의 유무로만 판단하지 말고, 지문에서 ‘T’가 ‘there’를 건너뛰지 않는다는 점을 기억하기. ‘there’의 역할을 전체 구조에서 이해하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
