@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-01T10:14:30.068Z",
+ "updated": "2026-09-01T15:04:15.346Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-01T15:03:45.338Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 코퍼스에서 'no matter how' 구문이 'may/might' 조동사와 결합해 양보·비교 관계를 나타내는 패턴이 빈번하다는 점을 확인했다. 또한 'how + 형용사 + 주어 + 동사' 구조가 원활한 문법적 구현을 위해 조동사 삽입 없이 사용되는 경우가 드물다는 점도 관찰되었다.",
+   "rule": "원서 코퍼스 패턴을 반영하여 'no matter how'가 포함된 문장은 반드시 'may/might/can' 등 조동사를 동반한 완전한 절 구조로 출제하라. 예: 'No matter how difficult the problem is, we may solve it.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-01T10:13:55.424Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "명사구(noun phrase)의 수식 구조에서 소유·소속 관계를 나타내는 'of' 구문 대신 동사적 구조(commitments men have to make)로 대체하여 문법적 정확성을 높이는 패턴이 빈번하다. 또한, 부정어(negation)의 중복 사용('can not be no')이 문법적으로 비정상적이며, 이를 'any'로 수정하는 오류 수정 패턴이 관찰된다.",
    "rule": "'of + 명사 + ing' 구조는 소유·소속 관계를 명확히 하기 위해 'to + 동사'나 'that + 동사' 구조로 대체하여 문법적 명확성을 높이는 규칙을 적용하라. 예: 'the requirement of men going to army' → 'the commitments men have to make to go to the army'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T23:39:50.211Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'old english'·'middle english'·'english grammar' 등 언어학적 용어가 빈번히 등장하며, 문법 오류 수정에선 '명사구(noun phrase)'와 '시제(tense)'의 오류가 두드러진다. 또한 'reason relations'(인과/결과 관계) 표현이 문맥상 필수적이다.",
-   "rule": "'~하면 어떨까?'라는 추측·제안 문장은 'what if + 주어 + 동사(현재시제)' 구조로 통일하여 출제하며, '~하는 것이 오류'는 '~wrong'/'~incorrectly'로 대체하도록 유도하라.",
    "sample": [
     "old english",
     "university press",
