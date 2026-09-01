@@ -1,6 +1,72 @@
 {
- "updated": "2026-08-31T23:56:12.197Z",
+ "updated": "2026-09-01T05:17:25.716Z",
  "samples": [
+  {
+   "ts": "2026-09-01T05:14:31.819Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 1/3 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.33,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어의 동사구는 목적어가 대명사일 때에는 분리할 수 없는 하나의 단위로 보아야 한다.",
+     "영어의 동사구는 목적어가 명사일 때에는 분리할 수 있도록 설계되어야 한다.",
+     "영어의 동사구는 목적어 유형에 상관없이 언제나 분리할 수 있는 단위로 보아야 한다.",
+     "영어의 동사구는 목적어가 대명사일 때에는 경우에 따라 분리할 수 있는 단위로 보아야 한다.",
+     "영어의 동사구는 목적어의 형태와 관계없이 항상 분리 가능한 구조로 변화시켜야 한다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Phrasal verbs in English should be treated as inseparable units when objects are pronouns.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘목적어가 명사일 때에는 분리할 수 있도록 설계되어야 한다’는 문장은 지문 EXERCISE 28b 의 1~5번 문장에서 목적어(명사)가 동사구 앞에 오는 경우(‘beefed up security’를 ‘security 을 beefed up’으로 쓸 수 없음)를 무시한 잘못된 주장이다. → 처방: ‘목적어(명사)’와 ‘동사구’의 관계를 예문으로 직접 확인하며, 동사구가 분리 가능한지 여부를 판단하는 연습을 반복하라.\n③ 진단: ‘목적어 유형에 상관없이 언제나 분리할 수 있는 단위로 보아야 한다’는 말은 지문 EXERCISE 28b 의 1~3번(‘beefed up security’, ‘breaking up the protest’)과 4~5번(‘gave away the money’, ‘messes up the bathroom’)의 차이를 무시한 오해다. → 처방: ‘대명사’와 ‘명사’가 동사구 뒤에 오는 경우와 앞에 오는 경우를 따로 정리하고, 각각의 패턴을 예문과 함께 외워라.\n④ 진단: ‘경우에 따라 분리할 수 있는 단위로 보아야 한다’는 말은 지문 EXERCISE 28b 의 6번 문장(‘stood up Heather’를 ‘stood Heather up’으로 쓸 수 없음)에서 대명사 ‘her’를 분리할 수 없다는 규칙을 무시한 잘못된 생각이다. → 처방: ‘대명사 목적어’가 왔을 때 동사구가 분리되지 않는다는 규칙을 예문과 함께 머릿속에 각인시켜라.\n⑤ 진단: ‘항상 분리 가능한 구조로 변화시켜야 한다’는 말은 동사구가 분리 가능한지 여부가 목적어의 형태(대명사/명사)에 따라 달라진다는 지문의 핵심 내용을 완전히 무시한 주장이다. → 처방: ‘목적어의 형태’에 따라 동사구의 분리 가능 여부가 달라진다는 점을 예문으로 반복해서 확인하고, 패턴을 암기하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Phrasal verbs in English should be treated as inseparable units when objects are pronouns.]"
+   }
+  },
+  {
+   "ts": "2026-09-01T05:15:02.995Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.78,
+    "D": 0.67,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "EXERCISE 28b — Write three sentences using ____. Be sure to put the objects in the right place. 1. The White House beefed up. (security, it) 2. The police are breaking up. (the protest, it) 3. A trained technician ought to carry out. (the experiment, it) 4. The foundation gave away. (the money, it) 5. Susie always messes up. (the bathroom, it) 6. Todd stood up. (Heather, her) EXERCISE 28c — Write answers to the questions using phrasal verbs and participle adjectives from this unit. Make all the phrasal verbs passive. 1. Dr. Wood will do the test of the new drug. What will happen to the test? 2. The statue was smashed by thieves. What happened to the gold statue? 3. The children made the house dirty and disorganized. What happened to the house? 4. In Question 3, how would you describe the house? 5. Mike’s friend promised to come to his house, but he didn’t. What happened to Mike? 6. Karen called Sarah, but Sarah was at school. Sarah didn’t call Karen later. What didn’t happen to Karen?",
+    "choices": [
+     "unrelated matters",
+     "things that are broken",
+     "적절한 위치에 있는 물건들",
+     "the last person standing",
+     "every single item in the house"
+    ],
+    "answer": 3,
+    "explanation": "빈칸에는 '적절한 위치에 있는 물건들'가 들어가 글의 논지를 완성한다 (본문 'the objects in parentheses'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘unrelated matters(관련 없는 일들)’는 28b 지문의 지시사항 ‘put the objects in the right place(물건들을 적절한 자리에 놓기)’와 전혀 관련이 없음에도, ‘objects’가 ‘물건’이 아니라 ‘일’로 오해했을 가능성이 큼. → 처방: ‘objects’를 ‘물건’이 아니라 ‘일’이라는 뜻으로 오해하지 말고, 지문에서 ‘objects’를 ‘물건’으로만 사용했다는 점을 기억하기.\n② 진단: ‘things that are broken(부서진 물건들)’은 28b 지문에서 ‘put the objects in the right place(물건들을 제자리에 놓기)’와는 전혀 다른 뜻으로, 학생이 ‘objects’를 ‘부서진 물건’으로만 오해했을 수 있음. → 처방: ‘objects’를 ‘물건’이란 뜻으로만 생각하고, ‘broken’이라는 뜻은 지문에 없음을 기억하기.\n④ 진단: ‘the last person standing(마지막까지 남은 사람)’은 28b 지문의 지시사항과 전혀 무관한 뜻으로, 학생이 ‘standing’이라는 단어에만 집중해 오해했을 수 있음. → 처방: ‘standing’이라는 단어가 지문에 있지만, 지시사항은 ‘put the objects in the right place(물건들을 제자리에 놓기)’임을 기억하기.\n⑤ 진단: ‘every single item in the house(집 안의 모든 물건)’은 28b 지문의 지시사항 ‘put the objects in the right place(물건들을 제자리에 놓기)’와는 다르며, 학생이 ‘objects’를 ‘집 안의 모든 물건’으로 과도하게 확장해 오해했을 수 있음. → 처방: ‘objects’를 ‘물건’으로만 생각하고, ‘every single item’이라는 뜻은 지문에 없음을 기억하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-08-31T23:54:30.893Z",
    "type": "요지",
@@ -298,58 +364,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 '학습 장소를 바꾸어 공부하면 기억력이 강화된다.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n② 진단: ‘기억력이 좋아지면 공부를 장소를 바꾸는 경우가 많다’를 오독한 이유는 지문에서 ‘장소를 바꾸면 기억력이 좋아진다’는 인과관계가 아니라 ‘기억력이 좋아지는 결과로 장소를 바꾸는 경우가 있다’는 역인과관계를 혼동했기 때문이다. → 처방: '장소 바꾸기 → 기억력 강화'가 지문의 핵심 논리이므로, 인과관계 방향을 반대로 생각하지 말고 원인과 결과를 정확히 짚어라.\n③ 진단: ‘단어 암기 효율’이란 표현이 지문의 핵심 주제인 ‘기억력 강화’(recall ability)를 좁게 해석한 오류다. 지문은 단어뿐 아니라 학습 전반의 기억력을 강조한다. → 처방: 지문의 핵심 개념인 '기억력 강화'를 '단어 암기'로 한정하지 말고, 학습 전체의 기억력 향상으로 넓게 이해하라.\n④ 진단: ‘모든 사람이’라는 절대적 표현을 오독한 이유는 지문이 '일반적으로' 장소를 바꾸면 기억력이 좋아진다고 서술한 반면, 개별 사례의 예외까지는 다루지 않았기 때문이다. → 처방: 지문의 주장이 '일반적 경향'임을 기억하고, 절대적 표현(‘모두’, ‘반드시’)이 들어간 선지를 주의하라.\n⑤ 진단: ‘반드시’라는 강제적 표현을 오독한 이유는 지문이 '장소를 바꾸면 기억력이 좋아질 가능성이 크다'는 경향을 보였을 뿐, '반드시'라는 필연성을 주장하지 않았기 때문이다. → 처방: 지문의 결론이 '강화된다', '더 잘된다'는 '확률적 경향'임을 기억하고, 절대적 표현이 들어간 선지를 배제하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: 학습 장소를 바꾸어 공부하면 기억력이 강화된다.]"
-   }
-  },
-  {
-   "ts": "2026-08-30T13:04:15.687Z",
-   "type": "장문세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] 다음 글을 읽고, 물음에 답하시오. (제목 / 어휘 2문항)",
-    "passage": "Ray English 지문 전문 · 원문 그대로 32번 빈칸 · B L A N K 장소를 바꿔 공부하기 빈칸 빈칸 = recall the material: 장소를 옮겨 공부한 쪽이 회상을 훨씬 잘함(실험 결론). 소재 장소를 바꿔 공부하기 Studying in different places 주제 장소를 바꿔 공부하면 기억이 강화된다 Varying study places strengthens memory 제목 장소를 바꾸면 더 잘 외운다 Study in Different Places to Remember Better 한눈에 장소를 바꿔 공부하면 다양성이 생겨 학습이 강화된다는 주장을 실험으로 뒷받침한다. 같은 방에서 두 번 공부한 집단보다 두 장소로 나눠 공부한 집단이 단어를 훨씬 잘 회상했다. 다양한 맥락이 풍부한 연상을 만들기 때문이다. 지문 전문 — 시험지 원문 Do you always study in the same spot? Don’t. If you study in different places, that helps create variety, and that rich experience can reinforce what you are learning. When several college students told us they did school work in different places rather than in some favorite nook, that habit reflected the research on learning. Numerous experiments have found that if learners simply study in at least two different places, they are more likely to ＿＿＿＿＿＿＿＿. In one of the first such trials, two different groups studied a list of words. Some students returned to the same room twice while their counterparts spent the same amount of time divided between two locations. When asked to recall as many words on the list as possible, those who had moved around did far better. Variety creates rich association, even when those connections form in the background, totally outside of what we are consciously thinking. * nook: 구석진 곳 ** counterpart: 상대 지문 전문 · 원문 그대로",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-08-30T00:23:28.796Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 1,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Does Digital Minimalism Alone Guarantee True Happiness?",
-     "Digital Minimalism Boosts Mental Well-Being",
-     "Cutting All Digital Devices Cures Mental Health Issues",
-     "Social Media Restriction Alone Fixes Psychological Balance",
-     "Half-Hearted Digital Detox Still Benefits Mental Health"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'Digital minimalism enhances mental well-being'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 조건 누락\n[오답 진단·처방]\n① 진단: ‘단독 보장’(guarantee)과 ‘진짜 행복’(true happiness)이라는 표현이 지문에서 다룬 ‘정신건강 개선’(mental health outcomes)보다 범위를 넓히고 추상화했다는 점을 오해했음. 지문은 ‘정신건강 개선’을 언급했지만 ‘행복 보장’이나 ‘진짜 행복’으로 확대 해석함. → 처방: 제목은 지문의 핵심 주제(‘디지털 미니멀리즘→정신건강 개선’)에 맞춰야 하므로, ‘행복’이나 ‘보장’이라는 단어를 쓰지 말고 지문에서 사용한 ‘정신 건강’(mental health)과 ‘개선’(improves)을 그대로 사용해라.\n③ 진단: ‘모든 디지털 기기 절단’(cutting all)과 ‘정신건강 문제 치료’(cures mental health issues)가 지문에서 다룬 ‘디지털 사용 줄이기’(limited use)나 ‘정신건강 개선’(improved mental health)보다 과장된 표현임을 오해했음. 지문은 ‘사용 줄이기’와 ‘개선’을 언급했지만 ‘절단’이나 ‘치료’로 과장해서 읽음. → 처방: 제목은 지문의 실제 주장(‘디지털 사용 줄이기→정신 건강 개선’)에 맞춰야 하므로, ‘절단’이나 ‘치료’라는 극단적인 단어를 쓰지 말고 ‘사용 줄이기’(reducing use)나 ‘개선’(improves)으로 구체화해라.\n④ 진단: ‘소셜 미디어 제한만으로’(restriction alone)와 ‘심리적 균형 회복’(fixes psychological balance)이라는 표현이 지문에서 다룬 ‘디지털 미니멀리즘’(의도적 사용 줄이기)의 범위를 좁히고 단순화했다는 점을 오해했음. 지문은 ‘소셜 미디어와 디지털 기기 사용 제한’을 언급했지만 ‘소셜 미디어만’으로 축소해 읽음. → 처방: 제목은 지문의 전체 주제(‘디지털 미니멀리즘→정신건강 개선’)를 담아야 하므로, ‘소셜 미디어’에만 초점을 맞추지 말고 ‘디지털 사용’(digital use)이나 ‘디지털 미니멀리즘’(digital minimalism)으로 범위를 넓혀라.\n⑤ 진단: ‘부실한 디지털 디톡스’(half-hearted detox)와 ‘이익’(benefits)이라는 표현이 지문에서 다룬 ‘의도적 사용 줄이기’(digital minimalism)의 의미를 약화시킨다는 점을 오해했음. 지문은 ‘의도적 사용 줄이기’를 강조했지만 ‘부실한’으로 약화시켜 읽음. → 처방: 제목은 지문의 핵심 주장(‘의도적 디지털 사용 줄이기→정신 건강 개선’)을 그대로 담아야 하므로, ‘부실한’이나 ‘아직’(still)이라는 부정적·약화 표현을 쓰지 말고 ‘의도적 사용 줄이기’(intentional reduction)나 ‘개선’(improves)으로 명확히 표현해라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Digital minimalism enhances mental well-being]"
    }
   }
  ]

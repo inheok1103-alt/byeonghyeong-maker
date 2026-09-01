@@ -1,8 +1,22 @@
 {
- "updated": "2026-08-31T23:56:12.193Z",
+ "updated": "2026-09-01T05:17:25.712Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-01T05:16:59.263Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "과거시제 동사와 수일치를 혼동하는 오류와 관계사절의 문법적 결합이 부자연스러운 경우가 빈번하다. 특히 'there is/are' 구문과 'when' 절의 사용 패턴에서 오류가 두드러진다.",
+   "rule": "'there is/are' 구문에서 단수/복수 수일치를 반드시 확인하고, 관계사절(which/that/is)는 선행사와 반드시 수일치를 시키며, 'when' 절은 문맥상 부사절로 기능할 때 콤마로 분리하여야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-08-31T23:55:44.800Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "과거 시제 동사의 인칭·수 일치 오류가 빈번하며, 비교급 구문에서 관사 생략 또는 대명사 오용이 자주 발생한다.",
    "rule": "비교급 문장에서는 'than' 뒤에 반드시 관사(a/the) 또는 대명사(he/she/they 등)를 사용해야 하며, 과거 시제 동사는 주어의 인칭·수에 맞춰 정확히 변형해야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T21:46:49.092Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제와 현재시제가 혼용된 문장에서 시제 일관성이 깨지는 오류가 빈번하며, 'a/an' 누락이나 불필요한 동사형태(예: 'need car' → 'needs a car')가 자주 발생한다.",
-   "rule": "'A and B' 구문에서 A와 B가 동일한 시제와 인칭을 공유하도록 통일하고, 가산명사 앞에는 관사를 반드시 첨가하라(예: 'she also need car' → 'she also needs a car').",
    "sample": [
     "old english",
     "university press",
