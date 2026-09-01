@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-01T05:17:25.712Z",
+ "updated": "2026-09-01T10:14:30.068Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-01T10:13:55.424Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "명사구(noun phrase) 내 사전적 의미가 중복되는 경우(예: 'earth's environment' → 'environment of the earth')는 축약형으로 통일하는 패턴이 빈번하다. 또한 관계대명사절에서 동사 수 일치 오류(예: 'who are' → 'who is')와 문맥상 불필요한 대명사(예: 'it' → 생략) 제거가 자연스러운 수정 경향이다.",
+   "rule": "'명사구 내 중복 의미를 축약한 형태(예: [N1 of N2] → [N1's N2])와 관계대명사절의 동사 수 일치(예: who/which + 단수동사)를 필수적으로 점검하며, 문맥상 불필요한 대명사(예: it, this)를 생략하는지 확인하라.'",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-01T05:16:59.263Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'old english'·'middle english'·'english grammar' 등 언어학적 용어가 빈번히 등장하며, 문법 오류 수정에선 '명사구(noun phrase)'와 '시제(tense)'의 오류가 두드러진다. 또한 'reason relations'(인과/결과 관계) 표현이 문맥상 필수적이다.",
    "rule": "'~하면 어떨까?'라는 추측·제안 문장은 'what if + 주어 + 동사(현재시제)' 구조로 통일하여 출제하며, '~하는 것이 오류'는 '~wrong'/'~incorrectly'로 대체하도록 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-24T22:52:17.768Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거 시제 동사의 인칭·수 일치 오류가 빈번하며, 비교급 구문에서 관사 생략 또는 대명사 오용이 자주 발생한다.",
-   "rule": "비교급 문장에서는 'than' 뒤에 반드시 관사(a/the) 또는 대명사(he/she/they 등)를 사용해야 하며, 과거 시제 동사는 주어의 인칭·수에 맞춰 정확히 변형해야 한다.",
    "sample": [
     "old english",
     "university press",
