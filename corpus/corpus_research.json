@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-01T15:04:15.346Z",
+ "updated": "2026-09-01T18:37:39.454Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-01T18:37:08.124Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'it'이 'he/she'로 잘못 대체된 경우(예: 'he has the risk' → 'it has the risk')가 빈번하며, 특히 추상적 주제(사업 실패 위험 등)에서 발생한다.",
+   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 추상적 주제(사업, 위험, 성공 등)의 경우 주어는 'it'으로 통일하되, 오답 선택지에는 인칭대명사(he/she/they)를 혼용하여 제시하여 문법적 오류를 유도하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-01T15:03:45.338Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'even if'나 'like'와 같은 접속사 뒤에는 주어가 생략되지 않으며, 문법적으로 완전한 절이 오는 경우가 많다. 또한 'be + 명사' 구문에서 형용사 오류('successfull'→'successful')가 빈번히 발생한다.",
    "rule": "'even if', 'like', 'but'와 같은 접속사 뒤에는 완전한 절(주어+동사)이 오도록 하며, 'be + 명사' 구문에서는 형용사 오류(예: successful/successfull)를 검토하도록 문제를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T01:56:57.085Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "명사구(noun phrase)의 수식 구조에서 소유·소속 관계를 나타내는 'of' 구문 대신 동사적 구조(commitments men have to make)로 대체하여 문법적 정확성을 높이는 패턴이 빈번하다. 또한, 부정어(negation)의 중복 사용('can not be no')이 문법적으로 비정상적이며, 이를 'any'로 수정하는 오류 수정 패턴이 관찰된다.",
-   "rule": "'of + 명사 + ing' 구조는 소유·소속 관계를 명확히 하기 위해 'to + 동사'나 'that + 동사' 구조로 대체하여 문법적 명확성을 높이는 규칙을 적용하라. 예: 'the requirement of men going to army' → 'the commitments men have to make to go to the army'.",
    "sample": [
     "old english",
     "university press",
