@@ -1,6 +1,39 @@
 {
- "updated": "2026-09-01T18:37:39.458Z",
+ "updated": "2026-09-01T21:55:31.725Z",
  "samples": [
+  {
+   "ts": "2026-09-01T21:49:09.094Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 2건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "LEXICAL TERM: MEANING or REFERENCE?",
+     "LEXICAL ITEMS: MORE THAN WORDS",
+     "Two Meanings of the Term 'Lexical",
+     "LEXICON'S DUAL NATURE in SEMANTICS",
+     "LEXICAL DEFINITIONS: ONE or TWO?"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'LEXICAL: TWO DISTINCT USAGES OF 'LEXICAL'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 지나치게 확대 해석· ③ 정답 — 핵심 논지 반영· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 정도·빈도를 왜곡\n[오답 진단·처방]\n① 진단: 지문에서 'lexical'의 두 가지 의미를 설명한 것이지 'meaning or reference'에 대한 비교가 아님을 오독. 'lexical term'이라는 표현 자체가 없음. → 처방: 'lexical'의 두 가지 의미를 찾으려면 제목에 'Two Meanings'가 포함된 선지를 우선 확인하라.\n② 진단: 'lexical items'가 '단어'를 넘어선다는 오해. 지문은 'lexical item'이 곧 'word'임을 분명히 설명함. → 처방: 'lexical item'의 정의가 지문에 어떻게 설명되어 있는지 정확히 읽고 넘어가라.\n④ 진단: 'lexicon'의 이중적 성격(사전 vs. 의미 있는 단어 분류)을 'semantics'에 한정지어 오해. 지문은 'lexical'의 두 가지 의미를 모두 다루고 있음. → 처방: 제목이 지문의 전체 내용을 담고 있는지 먼저 확인하라. 'semantics'라는 한정어가 있으면 안 됨.\n⑤ 진단: 'lexical definitions'가 '하나 or 둘'인지 오해. 지문은 'lexical'의 두 가지 의미를 설명한 것일 뿐 정의의 개수를 묻는 것이 아님. → 처방: 제목이 지문의 핵심 주제('lexical'의 두 가지 의미)와 일치하는지 먼저 점검하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: LEXICAL: TWO DISTINCT USAGES OF ]"
+   }
+  },
   {
    "ts": "2026-09-01T18:35:35.855Z",
    "type": "목적",
@@ -328,25 +361,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Variability exists on a continuum without clear borders.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·인과 전도·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 원인과 결과를 뒤바꿈· ⑤ 오답 — 정도 왜곡\n[오답 진단·처방]\n② 진단: ‘자유 결합’과 ‘복합 전치사’를 ‘분명한 경계’로 나눌 수 있다고 오해했는데, 지문은 ‘변이성은 정도 문제라서 뚜렷한 경계가 없다’고 밝히며 이 선지를 부정함. → 처방: ‘경계가 없다’는 지문의 핵심 내용을 먼저 확인하고, ‘분명한 경계’를 주장하는 선지는 오답임을 기억하기.\n③ 진단: ‘이분법적 범주’가 언어에 늘 적용된다고 오독했는데, 지문은 ‘경계가 흐려지는 경우’를 설명하며 이분법이 항상 옳지 않음을 보여줌. → 처방: ‘경계가 흐리다’는 표현에 주목하고, ‘항상 이분법’이라는 주장은 지문의 반례가 될 수 있음을 떠올리기.\n④ 진단: ‘변이성이 분명한 경계 때문에 생긴다’고 잘못 이해했는데, 지문은 ‘경계가 모호해서 변이가 생긴다’고 설명하며 이 선지의 인과관계를 반대로 오독함. → 처방: ‘변이성’과 ‘경계’의 관계를 반대로 생각하지 말고, 지문이 ‘경계가 없어서 변이가 생긴다’를 강조함을 기억하기.\n⑤ 진단: ‘자유 결합과 전치사가 고정된 의미를 가진다’고 오해했는데, 지문은 ‘자유 결합이 투명하고 변이가 크다’는 점을 강조하며 이 선지를 부정함. → 처방: ‘고정된 의미’를 주장하는 선지는 지문의 ‘변이성’을 떠올리며 배제하기.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Variability exists on a continuum without clear borders.]"
-   }
-  },
-  {
-   "ts": "2026-08-31T05:40:33.314Z",
-   "type": "혼합통합형",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 6,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
-    "passage": "The ungrammaticality of sentences like *All hell wants to break loose can be attributed to the fact that want is a control predicate, and hence (in order to derive such a structure) it would be necessary to assume that all hell originates as the subject of want, and that break loose has a separate PRO subject of its own: but this would violate the requirement that (on its idiomatic use) all hell can only occur as the subject of break loose, and conversely break loose (in its idiomatic use) only allows all hell as its subject. By contrast, All hell seems to break loose is grammatical because seem is a raising predicate, and so all hell can originate as the subject of break loose and then be raised up to become the subject of the tense affix in T in the seem clause. A further property which differentiates the two types of predicate is that raising predicates like seem preserve truth-functional equivalence under passivisation, so that (89a) below is synonymous with (89b):",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
