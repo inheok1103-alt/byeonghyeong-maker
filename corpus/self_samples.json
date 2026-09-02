@@ -1,6 +1,61 @@
 {
- "updated": "2026-09-02T05:04:44.194Z",
+ "updated": "2026-09-02T09:46:42.235Z",
  "samples": [
+  {
+   "ts": "2026-09-02T09:42:26.392Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": -1,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=-1.00)",
+     "역변별(정답키 의심)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "I like them . Other phrase types, and even clauses, can be (A) [retained / replaced] by proforms too, as the following sentences demonstrate: (66) Th ey say that Wayne is very (B) [happy / unhappy] and so he is. (67) Our neighbours will go on holiday on Sunday , and we will leave then too. (68) Tim sat on the couch and stayed there . (69) Janet drove her car too fast , and Sam rode his bike likewise . (70) He believes that politics is a dirty game . We all believe that . (71) He said that the operation will be (C) [unsuccessful / successful] . I certainly hope so . In (66) the AP very unhappy has been replaced by so , whereas in (67) and (68) then and there replace the PPs on Sunday and on the couch , respectively. In (69) likewise replaces the AdvP too fast , and in (70) and (71) that and so replace clauses. VPs too can be replaced, as we will see in Section 12.2.2. EXERCISE Replace the noun phrase constituents in the following sentences with pronouns: (63) The boys saw six blue Rolls-Royces. (64) Harriet sold her computer to my friends from Edinburgh.",
+    "choices": [
+     "(A) retained - (B) unhappy - (C) successful",
+     "(A) replaced - (B) happy - (C) unsuccessful",
+     "(A) replaced - (B) unhappy - (C) successful",
+     "(A) replaced - (B) happy - (C) successful",
+     "(A) retained - (B) unhappy - (C) unsuccessful"
+    ],
+    "answer": 3,
+    "explanation": "정답 조합: (A) replaced - (B) unhappy - (C) successful. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 대용어가 다른 구나 절을 '대체한다'고 명시한 부분을 간과하고, 대용어가 원래 형태를 '유지한다'고 잘못 이해했습니다. (근거: \"very unhappy has been replaced by so\") → 처방: 대용어의 기능이 무엇인지 지문의 설명을 정확히 파악하고 적용합니다.\n② 진단: (66)번 문장의 'so'가 대체하는 내용이 'very happy'라고 오해하여, 지문에서 'very unhappy'가 대체되었다고 명시한 부분을 놓쳤습니다. (근거: \"the AP very unhappy has been replaced by so\") → 처방: 지문에서 특정 단어가 무엇을 대체하는지 구체적으로 설명하는 부분을 주의 깊게 읽습니다.\n④ 진단: (66)번 문장의 'so'가 대체하는 내용이 'very happy'라고 오해하여, 지문에서 'very unhappy'가 대체되었다고 명시한 부분을 놓쳤습니다. (근거: \"the AP very unhappy has been replaced by so\") → 처방: 지문에서 특정 단어가 무엇을 대체하는지 구체적으로 설명하는 부분을 주의 깊게 읽습니다.\n⑤ 진단: (A)에 대해 대용어의 기능을 '대체'가 아닌 '유지'로 잘못 이해했고, (C)에 대해서는 'I certainly hope so'라는 희망 표현이 긍정적인 결과를 바라는 것임을 파악하지 못했습니다. (근거: \"can be (A) [retained / replaced] by proforms\", \"very unhappy has been replaced by so\", \"I certainly hope so\") → 처방: 지문에서 설명하는 핵심 개념의 정의를 정확히 이해하고, 문맥상 화자의 의도를 나타내는 표현을 주의 깊게 살핍니다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-09-02T09:45:30.793Z",
+   "type": "복합세트",
+   "level": "중",
+   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
+    "passage": "I like them . Other phrase types, and even clauses, can be replaced by proforms too, as the following sentences demonstrate: (66) Th ey say that Wayne is very unhappy and so he is. (67) Our neighbours will go on holiday on Sunday , and we will leave then too. (68) Tim sat on the couch and stayed there . (69) Janet drove her car too fast , and Sam rode his bike likewise . (70) He believes that politics is a dirty game . We all believe that . (71) He said that the operation will be successful . I certainly hope so . In (66) the AP very unhappy has been replaced by so , whereas in (67) and (68) then and there replace the PPs on Sunday and on the couch , respectively. In (69) likewise replaces the AdvP too fast , and in (70) and (71) that and so replace clauses. VPs too can be replaced, as we will see in Section 12.2.2. EXERCISE Replace the noun phrase constituents in the following sentences with pronouns: (63) The boys saw six blue Rolls-Royces. (64) Harriet sold her computer to my friends from Edinburgh.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-02T04:58:25.262Z",
    "type": "어휘(밑줄)",
@@ -308,58 +363,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘china(접시)’ 등은 지명 ‘China’에서 나온 말이지만 소문자로 쓰는 경우를 예로 든 곳인데, 이 문장은 ‘단어들이 대문자로 되는 경우’를 설명하는 흐름에 맞지 않는다. → 처방: ‘단어들이 대문자로 되는 경우’를 설명하는 문장인지 확인하고, 예시가 ‘소문자’ 규칙인지 ‘대문자’ 규칙인지 먼저 파악하라.\n② 진단: ‘Capitalization of Things.’는 문맥상 ‘사물들의 대문자 표기’에 대한 제목 같은 역할을 하는데, 이 문장은 ‘개인/공공 조직의 완전한 이름’을 설명하는 흐름에 맞지 않는다. → 처방: 제목이나 소제목 다음에 오는 문장이 그 제목을 설명하는지 확인하고, 문장의 내용이 소제목과 일치하는지 먼저 점검하라.\n④ 진단: ‘Declaration of Independence’ 등은 ‘역사적 사건’의 이름인데, 이 문장은 ‘법률/조약/정부 프로그램’의 이름을 예로 든 곳인데, 이 문장은 ‘법률/조약’ 관련 예시가 아니라 ‘역사적 사건’ 관련 예시가 와야 한다. → 처방: 예시가 어떤 ‘유형’의 이름인지 먼저 확인하고, 그 유형에 맞는 예시를 찾은 뒤 문장을 넣을 위치를 판단하라.\n⑤ 진단: ‘fall, summer’ 등은 ‘계절’의 이름인데, 이 문장은 ‘월/요일’의 이름을 예로 든 곳인데, 이 문장은 ‘월/요일’ 관련 예시가 아니라 ‘계절’의 이름을 예로 든 곳이다. → 처방: 예시가 ‘월/요일’인지 ‘계절’인지 먼저 구분하고, 그 유형에 맞는 문장을 넣을 위치를 찾으라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-01T10:13:52.206Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 지명의 대문자 표기는 특정한 경우에만 적용되며, 파생어는 소문자로 쓴다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-01T05:14:31.819Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 1/3 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.33,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어의 동사구는 목적어가 대명사일 때에는 분리할 수 없는 하나의 단위로 보아야 한다.",
-     "영어의 동사구는 목적어가 명사일 때에는 분리할 수 있도록 설계되어야 한다.",
-     "영어의 동사구는 목적어 유형에 상관없이 언제나 분리할 수 있는 단위로 보아야 한다.",
-     "영어의 동사구는 목적어가 대명사일 때에는 경우에 따라 분리할 수 있는 단위로 보아야 한다.",
-     "영어의 동사구는 목적어의 형태와 관계없이 항상 분리 가능한 구조로 변화시켜야 한다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Phrasal verbs in English should be treated as inseparable units when objects are pronouns.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘목적어가 명사일 때에는 분리할 수 있도록 설계되어야 한다’는 문장은 지문 EXERCISE 28b 의 1~5번 문장에서 목적어(명사)가 동사구 앞에 오는 경우(‘beefed up security’를 ‘security 을 beefed up’으로 쓸 수 없음)를 무시한 잘못된 주장이다. → 처방: ‘목적어(명사)’와 ‘동사구’의 관계를 예문으로 직접 확인하며, 동사구가 분리 가능한지 여부를 판단하는 연습을 반복하라.\n③ 진단: ‘목적어 유형에 상관없이 언제나 분리할 수 있는 단위로 보아야 한다’는 말은 지문 EXERCISE 28b 의 1~3번(‘beefed up security’, ‘breaking up the protest’)과 4~5번(‘gave away the money’, ‘messes up the bathroom’)의 차이를 무시한 오해다. → 처방: ‘대명사’와 ‘명사’가 동사구 뒤에 오는 경우와 앞에 오는 경우를 따로 정리하고, 각각의 패턴을 예문과 함께 외워라.\n④ 진단: ‘경우에 따라 분리할 수 있는 단위로 보아야 한다’는 말은 지문 EXERCISE 28b 의 6번 문장(‘stood up Heather’를 ‘stood Heather up’으로 쓸 수 없음)에서 대명사 ‘her’를 분리할 수 없다는 규칙을 무시한 잘못된 생각이다. → 처방: ‘대명사 목적어’가 왔을 때 동사구가 분리되지 않는다는 규칙을 예문과 함께 머릿속에 각인시켜라.\n⑤ 진단: ‘항상 분리 가능한 구조로 변화시켜야 한다’는 말은 동사구가 분리 가능한지 여부가 목적어의 형태(대명사/명사)에 따라 달라진다는 지문의 핵심 내용을 완전히 무시한 주장이다. → 처방: ‘목적어의 형태’에 따라 동사구의 분리 가능 여부가 달라진다는 점을 예문으로 반복해서 확인하고, 패턴을 암기하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Phrasal verbs in English should be treated as inseparable units when objects are pronouns.]"
    }
   }
  ]

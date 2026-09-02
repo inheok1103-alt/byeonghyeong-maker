@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-02T05:04:44.190Z",
+ "updated": "2026-09-02T09:46:42.231Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-02T09:46:10.511Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "명사구 내 동일 범주의 명사들이 병렬 구조로 연결될 때, 관사나 한정사가 반복되어야 한다. 또한, 조동사 뒤 동사는 원형이어야 하며, 수동태 표현은 조동사+동사원형으로 축약된다.",
+   "rule": "명사구 내 병렬 구조에서 두 번째 이상의 명사가 반복될 경우, 반드시 관사(a/the/my 등)나 한정사(-s, -'s 등)를 반복하여 명사구의 통일성을 유지하라. 또한, 조동사(would/can/may 등)가 수동태를 대신할 경우, 동사원형을 사용하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-02T05:04:16.653Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'of'를 포함하는 구문은 중복 사용(예: 'Most of the the things')이나 불필요한 조동사 사용(예: 'have to participate')이 오류로 자주 나타난다는 점을 확인했다.",
    "rule": "원서 코퍼스 패턴을 반영하여, 'of'를 포함한 구문에서 중복된 'of' 사용(예: 'Most of the the things')이나 조동사의 과도한 사용(예: 'have to participate' → 'participate')을 오류로 출제한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T05:50:51.421Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거 시제 동사(was/is)가 주제어와 조응하지 않거나, 복수 명사가 단수형으로 쓰이는 오류가 빈번하다. 또한, 'most + 명사'가 'most of the + 명사'로 확장되어야 하는 패턴이 자주 발생한다.",
-   "rule": "복수 명사나 복수 동사(are/were)가 필요한 문장에서 단수형(예: student/is/think)이 사용된 경우, 오류로 간주하고 복수형(예: students/are/thoughts)으로 수정하도록 문항을 설계하라.",
    "sample": [
     "old english",
     "university press",
