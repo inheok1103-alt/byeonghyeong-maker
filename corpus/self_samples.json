@@ -1,6 +1,93 @@
 {
- "updated": "2026-09-02T09:46:42.235Z",
+ "updated": "2026-09-02T14:40:42.623Z",
  "samples": [
+  {
+   "ts": "2026-09-02T14:33:15.428Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.89,
+    "D": 0.33,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=0.89)",
+     "죽은오답 ①②⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "ⓐ<u>ANALOGY (uh NAL uh jee)</u> ⓑ<u>n a comparison</u> of one thing to another; similarity • To say having an allergy feels like being bitten by an alligator would be to make or draw an analogy between an allergy and an alligator bite. ⓒ<u>Analogy usually referred</u> to similarities between things that are not otherwise very similar. If you don’t think an allergy is at all like an alligator bite, ⓓ<u>you might say</u>, “That analogy doesn’t hold up.” ⓔ<u>To say that there is no analogy</u> between an allergy and an alligator bite is to say that they are not analogous (uh NAL uh gus). Something similar in a particular respect to something else is its analog (AN uh lawg), sometimes spelled analogue. Quick Quiz #7 Match each word in the first column with its definition in the second column. Check your answers here. 1. ameliorate a. pleasantness 2. amenable b. comparison 3. amenity c. obedient 4. amiable d. without moral feeling 5. amicable e. feeling loving 6. amnesty f. make better 7. amoral g. shapeless 8. amorous h. politely friendly 9. amorphous i. official pardon 10. anachronism j. friendly 11. analogy k. incongruity",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "[어법: 시제] 정답 ⓒ의 'Analogy usually referred'는 'Analogy usually refers'로 고쳐야 어법상 옳다. (어법 오류 확인됨)\n[오답 진단·처방]\n① 진단: ⓐ 'ANALOGY'는 명사인데, 학생은 이를 동사로 오해했을 수 있음. 지문에서 ⓐ는 명사형으로 쓰였으므로 어법상 틀리지 않음. → 처방: 단어의 품사를 정확히 확인하고, 문장 속에서 어떤 역할을 하는지 먼저 살피기.\n② 진단: ⓑ 'n a comparison'은 'n'이 'noun'의 약자라는 사실을 몰라서 오독했을 가능성. 지문에서 ⓑ는 명사 'noun'의 약자로 쓰였으므로 어법상 틀리지 않음. → 처방: 'n' 같은 약어는 문맥에서 의미를 유추하기보다는 사전이나 참고 자료를 통해 정확한 뜻을 확인하기.\n④ 진단: ⓓ 'you might say'는 학생이 'say'를 동사로 오해했을 수 있으나, 지문에서 ⓓ는 올바른 동사 사용임. 학생은 'say'의 시제나 형태를 잘못 적용했을 가능성. → 처방: 동사의 기본형과 시제를 확인하고, 문장 속에서 동사가 올바르게 쓰였는지 점검하기.\n⑤ 진단: ⓔ 'To say that there is no analogy'는 학생이 'say'를 동사로 오해했을 수 있으나, 지문에서 ⓔ는 올바른 동사 사용임. 학생은 'say'가 이끄는 절의 구조를 잘못 이해했을 가능성. → 처방: 동사가 이끄는 절의 구조(주어+동사+목적어 등)를 정확히 분석하고, 문법 규칙에 맞게 해석하기.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-09-02T14:40:05.198Z",
+   "type": "영영풀이일치",
+   "level": "중",
+   "audit": "정답 코드생성됨(정의 스왑을 코드가 수행·Free Dictionary 검증) · 솔버교정: 솔버 2/3 다수결 3번(기록 2번 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.44,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 단어의 영영풀이로 적절하지 않은 것은?",
+    "passage": "ANALOGY (uh NAL uh jee) n a comparison of one ⓐ<u>thing</u> to another; similarity • To say having an allergy feels like being bitten by an alligator would be to make or draw an analogy between an allergy and an alligator bite. Analogy usually refers to similarities between things that are not otherwise very ⓑ<u>similar</u>. If you don’t think an allergy is at all like an alligator bite, you might say, “That analogy doesn’t hold up.” To say that there is no analogy between an allergy and an alligator bite is to say that they are not analogous (uh NAL uh gus). ⓒ<u>Something</u> similar in a particular respect to something else is its analog (AN uh lawg), sometimes spelled analogue. Quick Quiz #7 Match each word in the first ⓓ<u>column</u> with its definition in the second column. Check your answers here. 1. ameliorate a. pleasantness 2. amenable b. comparison 3. amenity c. obedient 4. amiable d. without moral ⓔ<u>feeling</u> 5. amicable e. feeling loving 6. amnesty f. make better 7. amoral g. shapeless 8. amorous h. politely friendly 9. amorphous i. official pardon 10. anachronism j. friendly 11. analogy k. incongruity",
+    "choices": [
+     "thing: Abbreviation of table header.",
+     "similar: A game which is of no consequence in terms of ranking, betting etc.",
+     "something: An object whose nature is yet to be defined.",
+     "column: A solid upright structure designed usually to support a larger structure above i",
+     "feeling: A quality of an object experienced by touch."
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓑ의 풀이는 'friendly'의 정의이다. 'similar'의 올바른 풀이: That which is similar to, or resembles, something else, as in quality, form, etc\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문에서 'thing'은 '사물·대상'을 뜻하는 일반 명사인데, 학생은 'table header 의 약자'로 오독하여 '표의 머리글'로 오해했다. 지문에서 'thing'은 'one thing to another'에서 'thing'으로 쓰였으므로, '표의 머리글'과는 전혀 관련이 없다. → 처방: 단어의 의미를 지문에서 찾기 전에, 우선 문맥(비교·유사성 설명)에서 'thing'이 '사물·대상'임을 떠올리고, 사전적 의미를 확인하기 전에 문맥으로 의미를 유추해 보자.\n② 진단: 학생은 'similar'을 '순위·베팅에 영향을 주지 않는 게임'으로 오독했는데, 이는 'similar'의 본래 뜻('비슷한')과는 전혀 다르며, 지문에서도 'similar'은 '비슷한'으로만 쓰였다. → 처방: 'similar'을 볼 때, '비슷한'이라는 뜻이 먼저 떠오르게 훈련하고, 다른 뜻(예: 게임 용어)은 문맥상 말이 되는지 확인하기.\n④ 진단: 학생은 'column'을 '기둥'으로만 오해했는데, 지문에서 'column'은 '표의 세로줄'로 쓰였다. 지문에서 'column'은 '표의 세로줄'을 가리키는 단어였다. → 처방: 지문에서 'column'이 쓰인 문장(Quick Quiz #7의 'first column')을 다시 읽고, '표의 세로줄'임을 떠올리자. '기둥'은 'pillar'로, 'column'은 '표의 세로줄'임을 기억하기.\n⑤ 진단: 학생은 'feeling'을 '촉감'으로 오독했는데, 지문에서 'feeling'은 '감정·느낌'을 뜻하는 일반적인 단어였다. 지문에서 'feeling'은 '감정'을 가리키는 단어였다. → 처방: 'feeling'을 볼 때, '촉감'보다는 '감정·느낌'을 먼저 떠올리고, 문맥상 말이 되는지 확인하기. 촉감은 'texture' 등으로 표현된다."
+   }
+  },
+  {
+   "ts": "2026-09-02T14:40:11.937Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "ANALOGY (uh NAL uh jee) n a comparison of one thing to another; similarity • To say having an allergy feels like being b_____ by an alligator would be to make or draw an analogy between an allergy and an alligator bite. Analogy usually refers to similarities between things that are not otherwise very similar. If you don’t think an allergy is at all like an alligator bite, you might say, “That analogy doesn’t hold up.” To say that there is no analogy between an allergy and an alligator bite is to say that they are not analogous (uh NAL uh gus). Something similar in a particular respect to something else is its analog (AN uh lawg), sometimes spelled analogue. Quick Quiz #7 Match each word in the first column with its definition in the second column. Check your answers here. 1. ameliorate a. pleasantness 2. amenable b. comparison 3. amenity c. obedient 4. amiable d. without moral feeling 5. amicable e. feeling loving 6. amnesty f. make better 7. amoral g. shapeless 8. amorous h. politely friendly 9. amorphous i. official pardon 10. anachronism j. friendly 11. analogy k. incongruity",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] bitten — 문단의 논지상 이 자리에는 'bitten'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-02T09:42:26.392Z",
    "type": "네모어휘ABC",
@@ -260,109 +347,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] [병렬] ⓒ: 'knowing several' → 'knowing many' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-01T15:03:05.732Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "Last year, the number of employees on the first day of the year was equal to the number of employees on the last day of the year. ① Answer Explanation: Evaluate Note that because Statement 1 and Statement 2 must be chosen by determining whether a certain relationship between them holds—namely, that if Statement 1 is true, then Statement 2 must be true, but if Statement 2 is true, Statement 1 can be false—the two answer selections must be chosen together. ② Statement 1 and Statement 2: We are told that a certain company “defines its annual labor turnover rate as the number of employees who left the company during the year divided by the average of the number of employees on the first day of the year and the number of employees on the last day of that year. ③ This turnover rate was calculated based on employees who resigned voluntarily rather than those who were dismissed or retired. ④ ” We are also told that the labor turnover rate last year was 25%. ⑤ To answer this question correctly, you must find two statements such that if one of them (Statement 1) is true, then the",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①을 선택한 학생은 'Statement 1과 Statement 2는 함께 선택해야 한다'는 설명이 전체 흐름과 무관한 설명임을 혼동했다. ②는 지문의 마지막 부분에서 '두 문장을 함께 선택해야 한다'는 조건을 설명하는 것이 아니라, 문제 풀이의 조건을 설명하는 것이다. → 처방: 문제를 풀 때는 '①, ②, ③, ④, ⑤'가 지문의 어디에 위치하는지 확인하고, 각 문장이 전체 흐름에 어떻게 기여하는지 파악하라.\n② 진단: ②를 선택한 학생은 '연간 노동 이직률 정의'가 전체 흐름에서 핵심이라는 점을 오해했다. ②는 지문의 핵심 설명이 아니라, 문제 풀이에 필요한 배경 설명의 일부일 뿐이다. → 처방: 지문의 핵심은 '지난해 이직률이 25%였다'는 사실과 이를 바탕으로 한 문제 풀이 조건임을 기억하라.\n④ 진단: ④를 선택한 학생은 '자발적 이직만 계산한다'는 설명이 전체 흐름에서 중요하다고 착각했다. ④는 이직률 계산 방식의 세부 조건일 뿐, 문제의 핵심 흐름과는 무관하다. → 처방: 이직률 계산 방식의 세부 조건은 문제 풀이에 영향을 주지 않으므로, 핵심 정보에 집중하라.\n⑤ 진단: ⑤를 선택한 학생은 '정확한 답을 찾기 위해 두 문장이 필요하다'는 설명이 전체 흐름과 무관하다고 오독했다. ⑤는 문제 풀이의 조건을 설명하는 것이 아니라, 문제의 핵심 흐름에서 벗어난 설명이다. → 처방: 문제 풀이의 조건은 지문의 핵심 흐름과 구별하여 이해하라. 핵심 흐름은 '지난해 이직률이 25%였다'는 사실이다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-01T10:11:31.006Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 2/3가 3번 선택(기록 4번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": -0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.67)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Nouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks). For example: Badlands (South Dakota) Eastern Shore (Chesapeake Bay) Bay Area (California) Fertile Crescent Strangely enough, words derived from geographical names are generally not capitalized. For example: china (dishes) plaster of paris french fries venetian blinds Capitalization of Things. The complete names of private and public organizations of all kinds are capitalized. For example: Cheney High School Peace Corps Green Bay Packers (football team) Xerox Corporation New York Philharmonic The names of historical, political, and economic events are generally capitalized. For example: Boston Tea Party New Deal Great Depression The names of acts, treaties, laws, and government programs are generally capitalized. For example: Declaration of Independence Marshall Plan Federal Housing Act Monroe Doctrine The names of months and the days of the week are capitalized, but not the names of the seasons. For example: fall summer February Wednesday spring winter\n\n─────────\n[요약문] Capitalization rules require (A) of specific categories such as geographical names, organizational entities, historical events, and legal documents, which consequently leads to (B) in derived terms and seasonal references.",
-    "choices": [
-     "(A) capitalization … (B) uniformity",
-     "(A) standardization … (B) capitalization",
-     "(A) uniformity … (B) capitalization",
-     "(A) standardization … (B) nonstandard usage",
-     "(A) capitalization … (B) standardization"
-    ],
-    "answer": 4,
-    "explanation": "(A) standardization / (B) nonstandard usage 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘capitalization’을 (A)에 넣으면 ‘uniformity(통일성)’가 (B)에 들어가는 이유를 지문에서 찾을 수 없음. 지문은 ‘capitalization rules’를 설명하지 ‘uniformity’를 언급하지 않음. → 처방: ‘capitalization rules’를 (A)에 넣고, (B)는 ‘nonstandard usage’를 넣어 ‘표준화’와 ‘비표준적 사용’을 짝지어야 함을 기억하기.\n② 진단: ‘standardization’을 (A)에 넣으면 (B)도 ‘capitalization’이 되어야 한다고 오해. 하지만 지문은 ‘capitalization rules’를 설명하는 것이지 ‘standardization’을 설명하는 것이 아님. → 처방: ‘standardization’을 (A)에 넣을 때는 (B)가 ‘nonstandard usage’가 되어야 한다는 점을 기억하고, 지문의 예시(‘china’ vs ‘China’)를 떠올리며 판단하기.\n③ 진단: ‘uniformity’를 (A)에 넣으면 (B)가 ‘capitalization’이 되어야 한다고 오해. 지문은 ‘capitalization rules’를 설명하는 것이지 ‘uniformity’를 설명하는 것이 아님. → 처방: ‘uniformity’는 ‘표준화’와 같은 뜻이므로 (A)에 넣을 때는 (B)가 ‘standardization’이 되어야 한다는 점을 기억하고, 지문의 예시(‘Boston Tea Party’ vs ‘french fries’)를 비교하며 판단하기.\n⑤ 진단: ‘capitalization’을 (A)에 넣으면 (B)가 ‘standardization’이 되어야 한다고 오해. 지문은 ‘capitalization rules’를 설명하는 것이지 ‘standardization’을 설명하는 것이 아님. → 처방: ‘capitalization’을 (A)에 넣을 때는 (B)가 ‘nonstandard usage’가 되어야 한다는 점을 기억하고, 지문에서 ‘china(도기)’와 ‘China(중국)’의 차이를 떠올리며 판단하기.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-01T10:13:40.592Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.6,
-    "D": -0.5,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.50)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] For example: Cheney High School Peace Corps Green Bay Packers (football team) Xerox Corporation New York Philharmonic The names of historical, political, and economic events are generally capitalized.\n\nNouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks). For example: Badlands (South Dakota) Eastern Shore (Chesapeake Bay) Bay Area (California) Fertile Crescent Strangely enough, words derived from geographical names are generally not capitalized. ( ① ) For example: china (dishes) plaster of paris french fries venetian blinds Capitalization of Things. ( ② ) The complete names of private and public organizations of all kinds are capitalized. ( ③ ) For example: Boston Tea Party New Deal Great Depression The names of acts, treaties, laws, and government programs are generally capitalized. ( ④ ) For example: Declaration of Independence Marshall Plan Federal Housing Act Monroe Doctrine The names of months and the days of the week are capitalized, but not the names of the seasons. ( ⑤ ) For example: fall summer February Wednesday spring winter",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: ‘china(접시)’ 등은 지명 ‘China’에서 나온 말이지만 소문자로 쓰는 경우를 예로 든 곳인데, 이 문장은 ‘단어들이 대문자로 되는 경우’를 설명하는 흐름에 맞지 않는다. → 처방: ‘단어들이 대문자로 되는 경우’를 설명하는 문장인지 확인하고, 예시가 ‘소문자’ 규칙인지 ‘대문자’ 규칙인지 먼저 파악하라.\n② 진단: ‘Capitalization of Things.’는 문맥상 ‘사물들의 대문자 표기’에 대한 제목 같은 역할을 하는데, 이 문장은 ‘개인/공공 조직의 완전한 이름’을 설명하는 흐름에 맞지 않는다. → 처방: 제목이나 소제목 다음에 오는 문장이 그 제목을 설명하는지 확인하고, 문장의 내용이 소제목과 일치하는지 먼저 점검하라.\n④ 진단: ‘Declaration of Independence’ 등은 ‘역사적 사건’의 이름인데, 이 문장은 ‘법률/조약/정부 프로그램’의 이름을 예로 든 곳인데, 이 문장은 ‘법률/조약’ 관련 예시가 아니라 ‘역사적 사건’ 관련 예시가 와야 한다. → 처방: 예시가 어떤 ‘유형’의 이름인지 먼저 확인하고, 그 유형에 맞는 예시를 찾은 뒤 문장을 넣을 위치를 판단하라.\n⑤ 진단: ‘fall, summer’ 등은 ‘계절’의 이름인데, 이 문장은 ‘월/요일’의 이름을 예로 든 곳인데, 이 문장은 ‘월/요일’ 관련 예시가 아니라 ‘계절’의 이름을 예로 든 곳이다. → 처방: 예시가 ‘월/요일’인지 ‘계절’인지 먼저 구분하고, 그 유형에 맞는 문장을 넣을 위치를 찾으라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
