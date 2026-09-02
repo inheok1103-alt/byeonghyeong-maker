@@ -1,6 +1,41 @@
 {
- "updated": "2026-09-02T00:28:25.280Z",
+ "updated": "2026-09-02T05:04:44.194Z",
  "samples": [
+  {
+   "ts": "2026-09-02T04:58:25.262Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.17,
+    "D": 0,
+    "distractorEff": 75,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.17)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "The CP in (61) is then merged as the ⓐ<u>complement</u> of the verb think, forming the VP think what that she is hiding what. The resulting VP is merged as the complement of the past-tense modal T-auxiliary ⓑ<u>might</u>, forming the T-bar ⓒ<u>might</u> think what that she is hiding what. This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and a ⓓ<u>center</u> feature, so forming the C-bar ø he might think what that she is hiding what. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so ⓔ<u>deriving</u> the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation):",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 4,
+    "explanation": "정답 ⓓ: 문맥상 'edge'가 와야 하는데 'center'가 쓰여 부적절하다 — 해당 문장 “The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so form”의 논리 흐름상 edge 가 맞고 center 는 방향이 어긋난다. [극성] 정답=attracts a specifier to the edge ↔ 오답=attracts toward the center\n[오답 진단·처방]\n① 진단: ⓐ'complement'는 동사 think 의 보충재(목적어)로 쓰였으므로 문맥상 적절하다. 학생이 'complement'가 문법 용어라는 점만 알고 실제 쓰임(목적어 역할)을 오해했을 가능성이 있다. → 처방: 문법 용어의 뜻을 정확히 알고, 문장에서 'complement'가 어떤 역할을 하는지 확인하는 연습을 한다.\n② 진단: ⓑ'might'는 과거 시제 조동사로 쓰였으므로 문맥상 적절하다. 학생이 'might'가 조동사라는 점은 알지만 시제(과거·현재·미래) 구분을 헷갈렸을 수 있다. → 처방: 각 조동사의 시제와 의미를 정확히 구분하고, 문장에서 시제 일치와 조동사의 역할을 확인하는 습관을 기른다.\n③ 진단: ⓒ'T-bar'는 구문론에서 T(시제층) 아래 층위를 가리키는 용어로, 문맥상 적절하다. 학생이 'T-bar'가 문법 기호라는 점만 알고 실제 의미를 오해했을 가능성이 있다. → 처방: 구문론의 기본 기호와 층위를 정리하고, 각 기호가 어떤 구조를 나타내는지 예문과 함께 학습한다.\n⑤ 진단: ⓔ'deriving'는 '파생하다'라는 뜻으로 문맥상 적절하다. 학생이 'deriving'이 동사라는 점은 알지만 문법 용어로서의 의미를 오해했을 수 있다. → 처방: 파생(derivation)과 같은 문법 용어의 뜻을 정확히 이해하고, 구문 분석에서 각 단계가 어떤 의미를 갖는지 확인하는 연습을 한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-02T00:26:48.532Z",
    "type": "목적",
@@ -325,39 +360,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Phrasal verbs in English should be treated as inseparable units when objects are pronouns.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 원인과 결과를 뒤바꿈· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n② 진단: ‘목적어가 명사일 때에는 분리할 수 있도록 설계되어야 한다’는 문장은 지문 EXERCISE 28b 의 1~5번 문장에서 목적어(명사)가 동사구 앞에 오는 경우(‘beefed up security’를 ‘security 을 beefed up’으로 쓸 수 없음)를 무시한 잘못된 주장이다. → 처방: ‘목적어(명사)’와 ‘동사구’의 관계를 예문으로 직접 확인하며, 동사구가 분리 가능한지 여부를 판단하는 연습을 반복하라.\n③ 진단: ‘목적어 유형에 상관없이 언제나 분리할 수 있는 단위로 보아야 한다’는 말은 지문 EXERCISE 28b 의 1~3번(‘beefed up security’, ‘breaking up the protest’)과 4~5번(‘gave away the money’, ‘messes up the bathroom’)의 차이를 무시한 오해다. → 처방: ‘대명사’와 ‘명사’가 동사구 뒤에 오는 경우와 앞에 오는 경우를 따로 정리하고, 각각의 패턴을 예문과 함께 외워라.\n④ 진단: ‘경우에 따라 분리할 수 있는 단위로 보아야 한다’는 말은 지문 EXERCISE 28b 의 6번 문장(‘stood up Heather’를 ‘stood Heather up’으로 쓸 수 없음)에서 대명사 ‘her’를 분리할 수 없다는 규칙을 무시한 잘못된 생각이다. → 처방: ‘대명사 목적어’가 왔을 때 동사구가 분리되지 않는다는 규칙을 예문과 함께 머릿속에 각인시켜라.\n⑤ 진단: ‘항상 분리 가능한 구조로 변화시켜야 한다’는 말은 동사구가 분리 가능한지 여부가 목적어의 형태(대명사/명사)에 따라 달라진다는 지문의 핵심 내용을 완전히 무시한 주장이다. → 처방: ‘목적어의 형태’에 따라 동사구의 분리 가능 여부가 달라진다는 점을 예문으로 반복해서 확인하고, 패턴을 암기하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Phrasal verbs in English should be treated as inseparable units when objects are pronouns.]"
-   }
-  },
-  {
-   "ts": "2026-09-01T05:15:02.995Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 2,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.78,
-    "D": 0.67,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "EXERCISE 28b — Write three sentences using ____. Be sure to put the objects in the right place. 1. The White House beefed up. (security, it) 2. The police are breaking up. (the protest, it) 3. A trained technician ought to carry out. (the experiment, it) 4. The foundation gave away. (the money, it) 5. Susie always messes up. (the bathroom, it) 6. Todd stood up. (Heather, her) EXERCISE 28c — Write answers to the questions using phrasal verbs and participle adjectives from this unit. Make all the phrasal verbs passive. 1. Dr. Wood will do the test of the new drug. What will happen to the test? 2. The statue was smashed by thieves. What happened to the gold statue? 3. The children made the house dirty and disorganized. What happened to the house? 4. In Question 3, how would you describe the house? 5. Mike’s friend promised to come to his house, but he didn’t. What happened to Mike? 6. Karen called Sarah, but Sarah was at school. Sarah didn’t call Karen later. What didn’t happen to Karen?",
-    "choices": [
-     "unrelated matters",
-     "things that are broken",
-     "적절한 위치에 있는 물건들",
-     "the last person standing",
-     "every single item in the house"
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 '적절한 위치에 있는 물건들'가 들어가 글의 논지를 완성한다 (본문 'the objects in parentheses'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘unrelated matters(관련 없는 일들)’는 28b 지문의 지시사항 ‘put the objects in the right place(물건들을 적절한 자리에 놓기)’와 전혀 관련이 없음에도, ‘objects’가 ‘물건’이 아니라 ‘일’로 오해했을 가능성이 큼. → 처방: ‘objects’를 ‘물건’이 아니라 ‘일’이라는 뜻으로 오해하지 말고, 지문에서 ‘objects’를 ‘물건’으로만 사용했다는 점을 기억하기.\n② 진단: ‘things that are broken(부서진 물건들)’은 28b 지문에서 ‘put the objects in the right place(물건들을 제자리에 놓기)’와는 전혀 다른 뜻으로, 학생이 ‘objects’를 ‘부서진 물건’으로만 오해했을 수 있음. → 처방: ‘objects’를 ‘물건’이란 뜻으로만 생각하고, ‘broken’이라는 뜻은 지문에 없음을 기억하기.\n④ 진단: ‘the last person standing(마지막까지 남은 사람)’은 28b 지문의 지시사항과 전혀 무관한 뜻으로, 학생이 ‘standing’이라는 단어에만 집중해 오해했을 수 있음. → 처방: ‘standing’이라는 단어가 지문에 있지만, 지시사항은 ‘put the objects in the right place(물건들을 제자리에 놓기)’임을 기억하기.\n⑤ 진단: ‘every single item in the house(집 안의 모든 물건)’은 28b 지문의 지시사항 ‘put the objects in the right place(물건들을 제자리에 놓기)’와는 다르며, 학생이 ‘objects’를 ‘집 안의 모든 물건’으로 과도하게 확장해 오해했을 수 있음. → 처방: ‘objects’를 ‘물건’으로만 생각하고, ‘every single item’이라는 뜻은 지문에 없음을 기억하기.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]

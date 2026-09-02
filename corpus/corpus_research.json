@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-02T00:28:25.276Z",
+ "updated": "2026-09-02T05:04:44.190Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-02T05:04:16.653Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'명사+명사' 구조에서 단수/복수 오류가 빈번하며, 특히 'Old Kingdom king'처럼 수식어가 포함된 경우 관사 생략 오류가 많다. 또한 'reason'과 같은 추상명사의 복수형 오류도 두드러진다.",
+   "rule": "'명사+명사' 구조(예: 'Old Kingdom king')에서 수식어가 포함된 경우, 반드시 관사(a/the)나 복수형(-s)을 확인하여 문법적 일치를 점검하라. 특히 'reason'은 복수형 'reasons'로 사용해야 할 때 '-s'를 누락하지 않도록 주의하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-02T00:27:58.754Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거 시제 동사(was/is)가 주제어와 조응하지 않거나, 복수 명사가 단수형으로 쓰이는 오류가 빈번하다. 또한, 'most + 명사'가 'most of the + 명사'로 확장되어야 하는 패턴이 자주 발생한다.",
    "rule": "복수 명사나 복수 동사(are/were)가 필요한 문장에서 단수형(예: student/is/think)이 사용된 경우, 오류로 간주하고 복수형(예: students/are/thoughts)으로 수정하도록 문항을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T04:56:51.383Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'old'와 'new'가 'English'와 결합하는 빈도가 높고, 'first important'는 'the first important'로 보정해야 하며, 'many people see'는 'some people see'로도 오용될 가능성이 있다. 또한 'as' 뒤의 명사구는 복수형이나 관사 수정이 필요한 경우가 많다.",
-   "rule": "'old/new + English'와 같이 관용적으로 굳어진 연어는 오답 선택지로 'old/new + English'를 제시하고, 'first important'는 'the first important'로, 'many people see'는 'some people see'로 오용된 문장을 오답으로 설계하라.",
    "sample": [
     "old english",
     "university press",
