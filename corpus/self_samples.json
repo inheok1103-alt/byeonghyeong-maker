@@ -1,6 +1,31 @@
 {
- "updated": "2026-09-03T11:35:46.049Z",
+ "updated": "2026-09-03T22:56:21.824Z",
  "samples": [
+  {
+   "ts": "2026-09-03T22:48:04.610Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 10건 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "frequent occurrence of the word \"olympian\" in modern sports commentary",
+     "how olympian athletes embody traits of ancient greek gods",
+     "evolution of the term \"olympian\" from its mythological origins to modern contexts",
+     "universal human tendency to describe powerful individuals as \"olympian",
+     "mythological and religious significance of mt. olympus in ancient greece"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Olympian's evolution as a term from Greek gods to modern athletes'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정도·빈도를 왜곡· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: ‘olympian’이 현대 스포츠 해설에서 ‘자주’ 언급된다는 내용이 지문에 없음. 지문은 ‘Olympian’이 현대에서는 주로 ‘올림픽 선수’를 가리킨다고만 설명함. → 처방: ‘olympian’이 현대에서 ‘올림픽 선수’를 뜻하는지 확인하려면 지문에서 ‘Olympic Games’와 ‘Olympic athletes’를 찾아 비교해보기.\n② 진단: ‘올림픽 선수’가 고대 그리스 신의 특징을 ‘구체적으로’ embody(구현)한다는 내용이 지문에 없음. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명할 뿐, 선수가 신의 traits 를 지닌다는 말은 없음. → 처방: ‘embody’라는 단어가 ‘구체적인 행동이나 특징’을 뜻하는지 확인하고, 지문에서 ‘Olympian’이 ‘의미 변화’를 설명하는지 다시 읽기.\n④ 진단: ‘powerful individuals’를 ‘olympian’으로 묘사하는 ‘보편적 경향’이 지문에 없음. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명할 뿐, ‘보편적 경향’을 다루지 않음. → 처방: ‘tendency’라는 단어가 ‘보편적 경향’을 뜻하는지 확인하고, 지문에서 ‘의미 변화’를 설명하는 부분을 다시 읽기.\n⑤ 진단: ‘Mt. Olympus’의 ‘신화적·종교적 중요성’이 지문의 주제가 아님. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명하는 데 집중하고, ‘Mt. Olympus’의 중요성을 다루지 않음. → 처방: ‘religious significance’라는 단어가 지문에 언급되는지 확인하고, 지문에서 ‘Olympian’이 ‘의미 변화’를 설명하는 부분을 다시 읽기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Olympian]"
+   }
+  },
   {
    "ts": "2026-09-03T11:20:18.898Z",
    "type": "무관문장",
@@ -307,41 +332,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-02T04:58:25.262Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.17,
-    "D": 0,
-    "distractorEff": 75,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.17)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "The CP in (61) is then merged as the ⓐ<u>complement</u> of the verb think, forming the VP think what that she is hiding what. The resulting VP is merged as the complement of the past-tense modal T-auxiliary ⓑ<u>might</u>, forming the T-bar ⓒ<u>might</u> think what that she is hiding what. This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and a ⓓ<u>center</u> feature, so forming the C-bar ø he might think what that she is hiding what. The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so ⓔ<u>deriving</u> the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation):",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓓ: 문맥상 'edge'가 와야 하는데 'center'가 쓰여 부적절하다 — 해당 문장 “The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so form”의 논리 흐름상 edge 가 맞고 center 는 방향이 어긋난다. [극성] 정답=attracts a specifier to the edge ↔ 오답=attracts toward the center\n[오답 진단·처방]\n① 진단: ⓐ'complement'는 동사 think 의 보충재(목적어)로 쓰였으므로 문맥상 적절하다. 학생이 'complement'가 문법 용어라는 점만 알고 실제 쓰임(목적어 역할)을 오해했을 가능성이 있다. → 처방: 문법 용어의 뜻을 정확히 알고, 문장에서 'complement'가 어떤 역할을 하는지 확인하는 연습을 한다.\n② 진단: ⓑ'might'는 과거 시제 조동사로 쓰였으므로 문맥상 적절하다. 학생이 'might'가 조동사라는 점은 알지만 시제(과거·현재·미래) 구분을 헷갈렸을 수 있다. → 처방: 각 조동사의 시제와 의미를 정확히 구분하고, 문장에서 시제 일치와 조동사의 역할을 확인하는 습관을 기른다.\n③ 진단: ⓒ'T-bar'는 구문론에서 T(시제층) 아래 층위를 가리키는 용어로, 문맥상 적절하다. 학생이 'T-bar'가 문법 기호라는 점만 알고 실제 의미를 오해했을 가능성이 있다. → 처방: 구문론의 기본 기호와 층위를 정리하고, 각 기호가 어떤 구조를 나타내는지 예문과 함께 학습한다.\n⑤ 진단: ⓔ'deriving'는 '파생하다'라는 뜻으로 문맥상 적절하다. 학생이 'deriving'이 동사라는 점은 알지만 문법 용어로서의 의미를 오해했을 수 있다. → 처방: 파생(derivation)과 같은 문법 용어의 뜻을 정확히 이해하고, 구문 분석에서 각 단계가 어떤 의미를 갖는지 확인하는 연습을 한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

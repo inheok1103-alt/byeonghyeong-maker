@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-03T11:35:46.045Z",
+ "updated": "2026-09-03T22:56:21.820Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-03T22:50:50.402Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "복수형 오류('points of views'→'point of view', 'text books'→'textbooks')와 부사 위치 오류('anyways'→'anyway')가 빈번히 관찰된다. 또한 문장 내 쉼표 오용('for example' 뒤 불필요한 쉼표)도 패턴화할 수 있다.",
+   "rule": "복수형 명사구는 단수형으로 통일하여 오용을 방지하며, 부사 'anyway'는 문장 끝에 위치시키고, 'for example'와 같은 삽입어는 쉼표로 명확히 구분하여 문법적 오류를 최소화하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-03T11:34:19.747Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'for' 뒤에 불특정한 명사구(an Old Kingdom king, new projects)가 오면 관사가 필수이며, 부정사 구조(For not use car → Not for use with a car)는 전치사구로 재구조화해야 자연스럽다.",
    "rule": "'for + 명사구'에서 명사구가 불특정일 경우 관사(a/the/zero)를 반드시 포함하도록 문장을 구성하라. 부정사 구조는 전치사구로 변환하거나 관사를 추가하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T11:46:23.090Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "이 코퍼스의 연어 패턴은 학술·문법 관련 용어와 시공간적 맥락(Old English, Middle English, New York 등)이 빈번히 결합됨을 보여준다. 특히 'old/new + noun' 구조가 학술적 문체에서 강조되는 경향을 보인다.",
-   "rule": "학술·문법 문장에서는 부정어(예: not, no)의 중복 사용을 금지하고, 'there + modal + be + any/no + noun' 구조로 부정의 의미를 명확히 표현하도록 한다. 예: 'There cannot be any bothering or hassle.'",
    "sample": [
     "old english",
     "university press",
