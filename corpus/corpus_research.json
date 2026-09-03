@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-03T00:34:24.584Z",
+ "updated": "2026-09-03T06:07:25.383Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-03T06:07:00.709Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "원서 코퍼스에서 'kind of'가 'these kinds of'로 구체화되는 패턴이 빈번히 관찰된다. 또한 'would like to do'가 'like to do the same thing'으로 명확한 지시와 동일성 강조로 대체되는 경향이 있다.",
+   "rule": "'kind of + 명사'는 'these kinds of + 복수명사'로, 'would like to do'는 'like to do the same thing'으로 대체하는 오류 유형을 내신 변형문제에 반드시 포함시킨다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-03T00:33:58.047Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'than' 비교구조에서 관사('the other')가 누락되거나, 부사('also')의 위치가 문장 끝으로 잘못 이동하는 패턴이 빈번하다. 또한 'such as' 구문에서 복수명사·관사('cars')와 철자오류('sathsh', 'tanmant', 'bisnes')가 결합된 경우가 많다.",
    "rule": "'than'을 포함한 비교문에서 비교대상이 복수/불특정 명사일 경우 'than the other(s)'로, 단수/특정 명사일 경우 'than the other'로 강제 표기하도록 오답 선택지에 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T09:59:27.508Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "시간 표현(never, been 등)과 시제(present perfect vs. past simple) 오류가 빈번하며, 문장 간 연결(and, because, when)이나 구두점(: ,) 사용도 부정확한 경우가 많다.",
-   "rule": "원서 코퍼스에서 'have/has + 과거분사' 구문(present perfect)과 '과거시제'가 혼용된 오류를 교정할 때, 'have/has + 과거분사'는 현재까지의 경험·결과를, '과거시제'는 특정 시점의 완료된 행위를 나타낸다는 규칙을 적용하여 문항을 출제하라.",
    "sample": [
     "old english",
     "university press",
