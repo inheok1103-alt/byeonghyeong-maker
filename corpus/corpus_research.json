@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-03T22:56:21.820Z",
+ "updated": "2026-09-04T01:11:34.691Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-04T01:09:29.181Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "'to the' + 명사구'가 불필요한 관사/전치사 오류가 반복적으로 나타나며, 특히 'the topic(s)'에서 'to the'가 삭제되는 패턴이 다수 관찰된다. 또한 'during noring normal'처럼 전치사+형용사+명사 구조에서 오류가 발생하는 경우가 많다.",
+   "rule": "'to the' + 복수/단수 명사구(예: topics, ideas, concepts, conversation, tour) 앞의 'to the'는 문법적으로 불필요하므로 삭제하는 것이 옳다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-03T22:50:50.402Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 관사·시제·구두점의 오류가 빈번하며, 특히 'and' 앞의 쉼표 사용 오류가 두드러진다. CEFR B1-B2 수준에서 직접 인용문과 접속사의 병렬 구조가 난이도 조절에 효과적임을 확인했다.",
    "rule": "CEFR B1-B2 수준의 내신 변형문제에서는 직접 인용문(예: \"Is this the right thing to do?\")의 구두점(쉼표, 대문자)을 오류로 제시하고, 접속사 'and' 앞의 쉼표(Oxford comma) 사용 여부를 오류로 포함하여 문법·의미적 일관성을 평가하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T13:17:19.501Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'for' 뒤에 불특정한 명사구(an Old Kingdom king, new projects)가 오면 관사가 필수이며, 부정사 구조(For not use car → Not for use with a car)는 전치사구로 재구조화해야 자연스럽다.",
-   "rule": "'for + 명사구'에서 명사구가 불특정일 경우 관사(a/the/zero)를 반드시 포함하도록 문장을 구성하라. 부정사 구조는 전치사구로 변환하거나 관사를 추가하라.",
    "sample": [
     "old english",
     "university press",

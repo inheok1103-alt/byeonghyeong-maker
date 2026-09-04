@@ -1,6 +1,78 @@
 {
- "updated": "2026-09-03T22:56:21.824Z",
+ "updated": "2026-09-04T01:11:34.695Z",
  "samples": [
+  {
+   "ts": "2026-09-04T01:02:30.954Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.67,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①④"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] It means filling in this form.\n\nI can remember posting the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. We use remember/forget doing for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. Regret doing something means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. Try doing something means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? ( ① ) Stop doing something means to end an action, to finish doing it. ( ② ) I'm applying for a visa. ( ③ ) Means doing something expresses the idea of one thing resulting in another. ( ④ ) The teacher told everyone to be quiet, but they just went on talking. ( ⑤ ) Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: stop talking 은 '말하는 행위를 멈추다'는 뜻으로, 소음을 끝내라는 요청에 맞지 않음. 지문에서 'stop doing'은 '행동을 끝내다'로 설명되어 있음. → 처방: 문맥이 '소음을 멈추라'는 요청인지 확인하고, 'stop doing'의 의미를 정확히 떠올리기.\n② 진단: means doing something 은 '~하는 것이 ~를 초래하다'는 뜻으로, 이 문맥에서는 '~하는 것이 ~를 의미하다'라는 뜻이 더 적절함. 지문에서 'means doing'은 결과로 이어지는 의미를 설명함. → 처방: means doing 의 두 가지 뜻을 구분하고, 문맥에 맞는 뜻을 선택하기.\n④ 진단: go on doing something 은 '계속 ~하다'라는 뜻으로, 선생님이 조용히 하라고 했지만 학생들이 계속 떠드는 상황과는 무관함. 지문에서 'go on doing'은 지속을 의미함. → 처방: go on doing 의 의미를 정확히 기억하고, 문맥이 지속을 나타내는지 확인하기.\n⑤ 진단: need cleaning 은 '청소될 필요가 있다'는 뜻으로, 신청서를 작성하는 상황과는 전혀 관련이 없음. 지문에서 'need doing'은 수동의 의미를 설명함. → 처방: need doing 이 수동의 의미를 나타내는지 확인하고, 문맥에 맞는 표현인지 점검하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-09-04T01:03:13.280Z",
+   "type": "틀린문장 고쳐쓰기",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 5,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
+    "passage": "ⓐ<u>I can remember to post</u> the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. ⓑ<u>We use remember/forget doing</u> for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. ⓒ<u>Regret doing something means to be sorry</u> because of something that happened in the past. I tried clicking on the box, but it doesn't work. ⓓ<u>Try doing something means to do something</u> which might solve a problem. There's too much noise. Can you all stop talking, please? Stop doing something means to end an action, to finish doing it. I'm applying for a visa. It means filling in this form. ⓔ<u>Means doing something expresses</u> the idea of one thing resulting in another. The teacher told everyone to be quiet, but they just went on talking. Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] [준동사] ⓐ: 'I can remember to post' → 'I can remember posting' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-09-04T01:09:27.461Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 10 실측·발문 동기화",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 4,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 제시문을 읽고, 밑줄 친 부분에서 알 수 있듯이 동명사 구문이 특정 의미를 전달할 때, 이를 활용하여 아래 문장을 자연스럽게 이어서 쓰시오. (단어 수: 15~20)\n\nI can remember ______ the letter. I posted it on Friday morning. (I remember ____-ing: 과거의 기억)\nI regret ______ all that money. I've got none left. (I regret ____-ing: 후회)\n\n→ Similarly, after realizing the importance of environmental conservation, people should start ______ plastic waste to protect our planet.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] people should start reducing plastic waste to protect our planet.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 지정 구문 사용(STRUCTURE) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-09-03T22:48:04.610Z",
    "type": "주제",
@@ -258,80 +330,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓑ의 풀이는 'friendly'의 정의이다. 'similar'의 올바른 풀이: That which is similar to, or resembles, something else, as in quality, form, etc\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다.\n[오답 진단·처방]\n① 진단: 지문에서 'thing'은 '사물·대상'을 뜻하는 일반 명사인데, 학생은 'table header 의 약자'로 오독하여 '표의 머리글'로 오해했다. 지문에서 'thing'은 'one thing to another'에서 'thing'으로 쓰였으므로, '표의 머리글'과는 전혀 관련이 없다. → 처방: 단어의 의미를 지문에서 찾기 전에, 우선 문맥(비교·유사성 설명)에서 'thing'이 '사물·대상'임을 떠올리고, 사전적 의미를 확인하기 전에 문맥으로 의미를 유추해 보자.\n② 진단: 학생은 'similar'을 '순위·베팅에 영향을 주지 않는 게임'으로 오독했는데, 이는 'similar'의 본래 뜻('비슷한')과는 전혀 다르며, 지문에서도 'similar'은 '비슷한'으로만 쓰였다. → 처방: 'similar'을 볼 때, '비슷한'이라는 뜻이 먼저 떠오르게 훈련하고, 다른 뜻(예: 게임 용어)은 문맥상 말이 되는지 확인하기.\n④ 진단: 학생은 'column'을 '기둥'으로만 오해했는데, 지문에서 'column'은 '표의 세로줄'로 쓰였다. 지문에서 'column'은 '표의 세로줄'을 가리키는 단어였다. → 처방: 지문에서 'column'이 쓰인 문장(Quick Quiz #7의 'first column')을 다시 읽고, '표의 세로줄'임을 떠올리자. '기둥'은 'pillar'로, 'column'은 '표의 세로줄'임을 기억하기.\n⑤ 진단: 학생은 'feeling'을 '촉감'으로 오독했는데, 지문에서 'feeling'은 '감정·느낌'을 뜻하는 일반적인 단어였다. 지문에서 'feeling'은 '감정'을 가리키는 단어였다. → 처방: 'feeling'을 볼 때, '촉감'보다는 '감정·느낌'을 먼저 떠올리고, 문맥상 말이 되는지 확인하기. 촉감은 'texture' 등으로 표현된다."
-   }
-  },
-  {
-   "ts": "2026-09-02T14:40:11.937Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "ANALOGY (uh NAL uh jee) n a comparison of one thing to another; similarity • To say having an allergy feels like being b_____ by an alligator would be to make or draw an analogy between an allergy and an alligator bite. Analogy usually refers to similarities between things that are not otherwise very similar. If you don’t think an allergy is at all like an alligator bite, you might say, “That analogy doesn’t hold up.” To say that there is no analogy between an allergy and an alligator bite is to say that they are not analogous (uh NAL uh gus). Something similar in a particular respect to something else is its analog (AN uh lawg), sometimes spelled analogue. Quick Quiz #7 Match each word in the first column with its definition in the second column. Check your answers here. 1. ameliorate a. pleasantness 2. amenable b. comparison 3. amenity c. obedient 4. amiable d. without moral feeling 5. amicable e. feeling loving 6. amnesty f. make better 7. amoral g. shapeless 8. amorous h. politely friendly 9. amorphous i. official pardon 10. anachronism j. friendly 11. analogy k. incongruity",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] bitten — 문단의 논지상 이 자리에는 'bitten'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-02T09:42:26.392Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": -1,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=-1.00)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "I like them . Other phrase types, and even clauses, can be (A) [retained / replaced] by proforms too, as the following sentences demonstrate: (66) Th ey say that Wayne is very (B) [happy / unhappy] and so he is. (67) Our neighbours will go on holiday on Sunday , and we will leave then too. (68) Tim sat on the couch and stayed there . (69) Janet drove her car too fast , and Sam rode his bike likewise . (70) He believes that politics is a dirty game . We all believe that . (71) He said that the operation will be (C) [unsuccessful / successful] . I certainly hope so . In (66) the AP very unhappy has been replaced by so , whereas in (67) and (68) then and there replace the PPs on Sunday and on the couch , respectively. In (69) likewise replaces the AdvP too fast , and in (70) and (71) that and so replace clauses. VPs too can be replaced, as we will see in Section 12.2.2. EXERCISE Replace the noun phrase constituents in the following sentences with pronouns: (63) The boys saw six blue Rolls-Royces. (64) Harriet sold her computer to my friends from Edinburgh.",
-    "choices": [
-     "(A) retained - (B) unhappy - (C) successful",
-     "(A) replaced - (B) happy - (C) unsuccessful",
-     "(A) replaced - (B) unhappy - (C) successful",
-     "(A) replaced - (B) happy - (C) successful",
-     "(A) retained - (B) unhappy - (C) unsuccessful"
-    ],
-    "answer": 3,
-    "explanation": "정답 조합: (A) replaced - (B) unhappy - (C) successful. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 대용어가 다른 구나 절을 '대체한다'고 명시한 부분을 간과하고, 대용어가 원래 형태를 '유지한다'고 잘못 이해했습니다. (근거: \"very unhappy has been replaced by so\") → 처방: 대용어의 기능이 무엇인지 지문의 설명을 정확히 파악하고 적용합니다.\n② 진단: (66)번 문장의 'so'가 대체하는 내용이 'very happy'라고 오해하여, 지문에서 'very unhappy'가 대체되었다고 명시한 부분을 놓쳤습니다. (근거: \"the AP very unhappy has been replaced by so\") → 처방: 지문에서 특정 단어가 무엇을 대체하는지 구체적으로 설명하는 부분을 주의 깊게 읽습니다.\n④ 진단: (66)번 문장의 'so'가 대체하는 내용이 'very happy'라고 오해하여, 지문에서 'very unhappy'가 대체되었다고 명시한 부분을 놓쳤습니다. (근거: \"the AP very unhappy has been replaced by so\") → 처방: 지문에서 특정 단어가 무엇을 대체하는지 구체적으로 설명하는 부분을 주의 깊게 읽습니다.\n⑤ 진단: (A)에 대해 대용어의 기능을 '대체'가 아닌 '유지'로 잘못 이해했고, (C)에 대해서는 'I certainly hope so'라는 희망 표현이 긍정적인 결과를 바라는 것임을 파악하지 못했습니다. (근거: \"can be (A) [retained / replaced] by proforms\", \"very unhappy has been replaced by so\", \"I certainly hope so\") → 처방: 지문에서 설명하는 핵심 개념의 정의를 정확히 이해하고, 문맥상 화자의 의도를 나타내는 표현을 주의 깊게 살핍니다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-02T09:45:30.793Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 3,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "I like them . Other phrase types, and even clauses, can be replaced by proforms too, as the following sentences demonstrate: (66) Th ey say that Wayne is very unhappy and so he is. (67) Our neighbours will go on holiday on Sunday , and we will leave then too. (68) Tim sat on the couch and stayed there . (69) Janet drove her car too fast , and Sam rode his bike likewise . (70) He believes that politics is a dirty game . We all believe that . (71) He said that the operation will be successful . I certainly hope so . In (66) the AP very unhappy has been replaced by so , whereas in (67) and (68) then and there replace the PPs on Sunday and on the couch , respectively. In (69) likewise replaces the AdvP too fast , and in (70) and (71) that and so replace clauses. VPs too can be replaced, as we will see in Section 12.2.2. EXERCISE Replace the noun phrase constituents in the following sentences with pronouns: (63) The boys saw six blue Rolls-Royces. (64) Harriet sold her computer to my friends from Edinburgh.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
