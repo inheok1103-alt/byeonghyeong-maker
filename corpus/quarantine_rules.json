@@ -1,7 +1,15 @@
 {
- "updated": "2026-09-12T19:36:32.173Z",
+ "updated": "2026-09-12T23:49:49.857Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:지칭명시",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-12T23:44:22.629Z"
+  },
   {
    "rule": "모든 출제 문항은 각 구성 요소가 완전하고 의미 있는 내용을 갖추고 불필요한 요소를 포함하지 않아야 하며, 문제 해결에 지장이 없도록 구성되어야 한다.**",
    "src": "자가학습:글의순서",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-24T22:52:14.413Z"
-  },
-  {
-   "rule": "모든 문장은 반드시 해당 단어의 핵심 의미를 직접적으로 드러내는 예시나 설명으로 구성되어야 하며, 간접적이거나 부수적인 주제로 흐름이 끊어지지 않도록 통일성 있게 설계해야 한다.",
-   "src": "자가학습:무관문장",
-   "score": 87,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-24T21:46:29.290Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

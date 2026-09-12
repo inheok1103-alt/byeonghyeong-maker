@@ -1,7 +1,49 @@
 {
- "updated": "2026-09-12T19:36:32.177Z",
+ "updated": "2026-09-12T23:49:49.860Z",
  "note": "자체 연구·학습 누적 기록 (관찰 전용). 연구 워크플로우/루틴이 출제방식을 연구할 때마다 누적됩니다.",
  "entries": [
+  {
+   "date": "2026-09-12",
+   "category": "자가학습",
+   "topic": "필자주장",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-12",
+   "category": "자가학습",
+   "topic": "목적",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-12",
+   "category": "자가학습",
+   "topic": "어법개수형",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-12",
+   "category": "자가학습",
+   "topic": "지칭명시",
+   "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again."
+  },
+  {
+   "date": "2026-09-12",
+   "category": "자동 연구 회의",
+   "topic": "검증: 솔버 게이트 3표 다수결의 온도·페르소나 다양화",
+   "summary": "판정 실패",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-12",
+   "category": "자동 연구 회의",
+   "topic": "검증: 유령 오류(지문 부재 근거) 자동 차단 규칙 고도화",
+   "summary": "판정 실패",
+   "rule": ""
+  },
   {
    "date": "2026-09-12",
    "category": "자가학습",
@@ -1395,48 +1437,6 @@
    "topic": "제목",
    "summary": "패널 점수 79 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
    "rule": "모든 선지는 동일한 길이(5~6단어)로 통일하며, 정답 선지는 지문 내용과 직접적 연결성을 강조하는 동사형(예: 'reflect'/'show')으로, 오답 선지는 균등한 매력도를 유지하도록 외부 조건이나 지나친 추상화를 배제하라."
-  },
-  {
-   "date": "2026-08-30",
-   "category": "측정검수",
-   "topic": "제목",
-   "summary": "측정 P̂=0.78 D̂=-0.67 오답효율25% ⚠변별도 낮음(D̂=-0.67),역변별(정답키 의심),죽은오답 ①②⑤",
-   "rule": ""
-  },
-  {
-   "date": "2026-08-30",
-   "category": "자가학습",
-   "topic": "전체문장배열",
-   "summary": "패널 점수 95 · 기준 통과",
-   "rule": ""
-  },
-  {
-   "date": "2026-08-30",
-   "category": "검수",
-   "topic": "전체문장배열",
-   "summary": "검수관 '사용 불가' → 샘플 폐기: 대화의 흐름과 문제 지시문의 논리를 고려하지 않은 배열",
-   "rule": ""
-  },
-  {
-   "date": "2026-08-30",
-   "category": "자가학습",
-   "topic": "서술형(자유)",
-   "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
-   "rule": "모든 서술형 문항은 정답을 제시하되, 응답의 완결성을 높이기 위해 최소 3문장 이상의 서술 범위를 명시하고, 무응답·백지 시 0점 처리 기준을 사전에 안내해야 한다."
-  },
-  {
-   "date": "2026-08-30",
-   "category": "검수",
-   "topic": "서술형(자유)",
-   "summary": "검수관 '사용 불가' → 샘플 폐기: ",
-   "rule": ""
-  },
-  {
-   "date": "2026-08-30",
-   "category": "코퍼스연구",
-   "topic": "원서 582권 · 원서 문체 패턴을 활용한 변형",
-   "summary": "원서 코퍼스에서 'have + past participle' 구문과 'is + past participle' 수동태 구문이 빈번하며, 특히 불규칙 동사의 과거분사 형태 오용이 자주 발생함을 확인할 수 있다.",
-   "rule": "원서 코퍼스 패턴을 반영하여 'have/has + 과거분사' 또는 'is/are + 과거분사' 형태의 문장은, 불규칙 동사의 경우 반드시 표준 과거분사 형태(예: dealt, generated, known)를 사용하도록 오답 선택지를 구성하라."
   }
  ]
 }
