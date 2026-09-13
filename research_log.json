@@ -1,7 +1,56 @@
 {
- "updated": "2026-09-12T23:49:49.860Z",
+ "updated": "2026-09-13T01:19:17.364Z",
  "note": "자체 연구·학습 누적 기록 (관찰 전용). 연구 워크플로우/루틴이 출제방식을 연구할 때마다 누적됩니다.",
  "entries": [
+  {
+   "date": "2026-09-13",
+   "category": "자가학습",
+   "topic": "목적",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-13",
+   "category": "자가학습",
+   "topic": "전체문장배열",
+   "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again."
+  },
+  {
+   "date": "2026-09-13",
+   "category": "검수",
+   "topic": "전체문장배열",
+   "summary": "검수관 '사용 불가' → 샘플 폐기: 독립 솔버 3/3표가 2번 선택(기록 4번) — 정답 키 오류 의심",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-13",
+   "category": "자가학습",
+   "topic": "제목",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-13",
+   "category": "자가학습",
+   "topic": "조건영작",
+   "summary": "패널 점수 0 · 규칙 1건 격리(eligible, 사람 승인 대기)",
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again."
+  },
+  {
+   "date": "2026-09-13",
+   "category": "자동 연구 회의",
+   "topic": "함의 유형: 축자 해석 오답과 과잉 확장 오답의 비율 설계",
+   "summary": "판정 실패",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-13",
+   "category": "자동 연구 회의",
+   "topic": "주제·제목: 소재(topic)와 주제(theme)의 구분 기준 명문화",
+   "summary": "판정 실패",
+   "rule": ""
+  },
   {
    "date": "2026-09-12",
    "category": "자가학습",
@@ -1376,67 +1425,6 @@
    "topic": "안내문일치",
    "summary": "측정 P̂=1.00 D̂=0.00 오답효율0% ⚠과다쉬움(P̂=1.00),변별도 낮음(D̂=0.00),죽은오답 ①②④⑤",
    "rule": ""
-  },
-  {
-   "date": "2026-08-31",
-   "category": "자가학습",
-   "topic": "영영풀이단어쓰기",
-   "summary": "패널 점수 57 · 기준 통과",
-   "rule": ""
-  },
-  {
-   "date": "2026-08-31",
-   "category": "검수",
-   "topic": "영영풀이단어쓰기",
-   "summary": "검수관 '사용 불가' → 샘플 폐기: 정답 어휘가 'subject'로 명확히 부적절(문맥상 'subject to'가 아닌 단순 'subject'는 '영향받기 쉬운' 의미로 부적절)",
-   "rule": ""
-  },
-  {
-   "date": "2026-08-31",
-   "category": "코퍼스연구",
-   "topic": "원서 582권 · 실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "summary": "과거 시제와 현재 시제가 혼용되어 발생하는 오류가 빈번하며, 명사구(noun phrase) 내 전치사나 관사의 생략, 또는 동사의 부정형(-ing, -ed) 오용이 두드러진다. 또한 'between two'와 같이 전치사구 구조가 잘못 구성되는 경우가 많다.",
-   "rule": "영어 문장에서 동사의 시제(과거/현재/미래)와 부정형(-ing, -ed)을 혼동하지 않도록 하며, 특히 'be + 형용사 + 명사' 구조에서는 명사 앞에 관사(a/the)를 반드시 포함시킨다. 또한 'between two'와 같은 전치사구는 'between two [명사]' 형태로만 사용하도록 한다."
-  },
-  {
-   "date": "2026-08-31",
-   "category": "자동 연구 회의",
-   "topic": "어휘 유형: CEFR C1 이상 교체어 사용 조건",
-   "summary": "C1 교체어의 문맥 비중립성과 오답 선지 악용 가능성은 공통된 우려로 인정되나, 도메인·장르별 제한과 lexical collocation·register 제어를 통한 통제 가능성은 인정되어 부분적 반영이 타당하다. 표준화된 난이도 유지 원칙은 유지하되, 보충자료·지문해설·contextual inferencing 훈련용으로 한정하는 방향으로 조정해야 한다.",
-   "rule": "1) 문제 선지에는 B2 이하의 어휘를 우선 배치하되, C1 교체어는 *context clue* 또는 *lexical collocation* 형태로만 제한적 허용(예: *meticulously prepared* vs *thoroughly prepared*). 2) C1 교체어는 academic/literary 텍스트에서만 *nuanced*한 대체를 허용하며, 교사#89486과 교사#37654의 *lexical collocation*·*register* 제어 원칙을 적용. 3) 지문해설·보충자료에 한정해 C1 교체어를 병기(예: *perplexed* → *bewildered* 병기)하여 학생의 어휘 확장 지원."
-  },
-  {
-   "date": "2026-08-31",
-   "category": "자동 연구 회의",
-   "topic": "내용일치: 수치 왜곡(R10) 오답의 왜곡 폭 표준(±얼마까지 교육적인가)",
-   "summary": "교육적 목적과 문맥별 민감도를 고려하여 ±15% 기준은 과도하다는 다수 의견이 도출됨. 특히 경제·통계·심화과학 분야의 수치민감도가 높은事实证明 필요.",
-   "rule": {
-    "기본_허용_오차": {
-     "허용_범위": "±12%",
-     "소수점_처리": "절사(예: 42.5→42, 57.5→58)"
-    },
-    "문맥별_차등_적용": {
-     "경제·통계·심화과학": "±10%",
-     "일반과학·사회": "±12%"
-    },
-    "예외_조건": {
-     "표/그래프_해제형_문제": "1%p 이하 차이는 즉시 R10 처리"
-    }
-   }
-  },
-  {
-   "date": "2026-08-30",
-   "category": "자가학습",
-   "topic": "어법(밑줄)",
-   "summary": "패널 점수 95 · 기준 통과",
-   "rule": ""
-  },
-  {
-   "date": "2026-08-30",
-   "category": "자가학습",
-   "topic": "제목",
-   "summary": "패널 점수 79 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
-   "rule": "모든 선지는 동일한 길이(5~6단어)로 통일하며, 정답 선지는 지문 내용과 직접적 연결성을 강조하는 동사형(예: 'reflect'/'show')으로, 오답 선지는 균등한 매력도를 유지하도록 외부 조건이나 지나친 추상화를 배제하라."
   }
  ]
 }
