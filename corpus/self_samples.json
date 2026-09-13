@@ -1,6 +1,41 @@
 {
- "updated": "2026-09-13T16:31:26.277Z",
+ "updated": "2026-09-13T19:48:43.131Z",
  "samples": [
+  {
+   "ts": "2026-09-13T19:41:00.283Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Unlike the basic existentials, these sentences have a near-paraphrase without the there BE construction, as in (36).\n② Task there BE takes strong and weak NPs.\n③ Examples with strong NPs are in (35).\n④ The other two kinds of there BE sentences allow strong NPs.\n⑤ 3 Task There BE The task there BE construction takes the form there BE NP to VP, as illustrated in (37).\n⑥ Sentences like these must have a weak NP.\n⑦ This is particularly clear in (34d, e) where the availability of the rooms and the sickness of the residents are the main information conveyed.\n⑧ Page 84 By comparison with type (i), these sentences do not simply assert the existence of the entities described, but also give information about the state of affairs in which the entities are involved.\n⑨ This construction presents a task or action which lies ahead of someone; someone has to prune and spray the fruit trees, notify Maria, Lee and Casey, and so on.",
+    "choices": [
+     "⑧-⑦-⑥-③-①-④-⑤-⑨-②",
+     "⑧-⑦-⑥-③-①-④-⑤-②-⑨",
+     "⑧-⑨-⑦-②-⑥-③-①-④-⑤",
+     "⑧-①-⑨-⑥-④-②-⑦-③-⑤",
+     "⑧-⑥-①-⑦-③-⑨-②-⑤-④"
+    ],
+    "answer": 2,
+    "explanation": "정답 배열은 ⑧-⑦-⑥-③-①-④-⑤-②-⑨. 흐름: ⑧ → ⑦(This) → ⑥ → ③ → ① → ④ → ⑤ → ② → ⑨(This) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-13T16:26:11.160Z",
    "type": "지칭명시",
@@ -251,31 +286,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 일부 작가는 문법가만이 설명할 수 있는 오류가 없을 때에만 글쓰기가 좋다는 생각에 사로잡혀서, 문체가 거칠고 조잡한 글을 씁니다. (구문 포인트: 관계사 that의 중첩(that only a grammarian can explain → 문법가만이 설명할 수 있는) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-03T06:01:32.914Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "(A) [ACRIMONIOUS / amicable] (ak ruh MOH nee us) adj full of spite; bitter; nasty • George and Elizabeth’s discussion turned acrimonious when Elizabeth introduced the subject of George’s perennial, incorrigible stupidity. • Relations between the competing candidates were so acrimonious that each refused to acknowledge the presence of the other. (B) [ACUMEN / ineptitude] (AK yoo mun) n keenness of judgment; mental sharpness • A woman who knows how to turn one dollar into a million overnight might be said to have a lot of business acumen. • Ernie’s lack of acumen led him to invest all his money in a company that had already gone out of business. Note carefully the pronunciation of this word. Quick Quiz #2 Match each word in the first column with its definition in the second column. Check your answers here. 1. abstinent a. hard to understand 2. abstract b. voluntarily avoiding 3. abstruse c. wretched 4. abysmal d. bitter 5. accolade e. comply 6. accost f. harsh 7. (C) [mild / acerbic] g. mental sharpness 8. acquiesce h. theoretical 9. acrid i. award",
-    "choices": [
-     "(A) amicable - (B) ACUMEN - (C) mild",
-     "(A) amicable - (B) ACUMEN - (C) acerbic",
-     "(A) amicable - (B) ineptitude - (C) acerbic",
-     "(A) ACRIMONIOUS - (B) ACUMEN - (C) acerbic",
-     "(A) amicable - (B) ineptitude - (C) mild"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) ACRIMONIOUS - (B) ACUMEN - (C) acerbic. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ① (A)에서 'amicable'을 선택했는데, 지문에서 'acrimonious'는 'full of spite; bitter; nasty(악의로 가득한; 원한이 있는; nasty)'라고 설명하고 있어 'amicable(우호적인)'과는 반대 뜻임을 몰라서 오독했음. ② (A)에서는 '원한·원망·싫음'의 뜻을 가진 단어를 찾아야 하므로, 지문에서 'acrimonious'의 뜻을 정확히 확인하고 반대 의미인 'amicable'을 고르지 않도록 주의할 것. → 처방: 지문에서 제시된 단어의 뜻을 정확히 읽고, 문맥에 맞는 단어를 고르기 위해 반대 의미가 아닌지를 한 번 더 확인하는 습관을 들일 것.\n② 진단: ① (B)에서 'ACUMEN'을 선택했는데, 지문에서 'acumen'은 'keenness of judgment; mental sharpness(판단의 예리함; 정신적 날카로움)'라고 설명하고 있어 'ineptitude(서투름)'과는 반대 뜻임을 몰라서 오독했음. ② (B)에서는 '예리한 판단력'의 뜻을 가진 단어를 찾아야 하므로, 지문에서 'acumen'의 뜻을 정확히 확인하고 반대 의미인 'ineptitude'를 고르지 않도록 주의할 것. → 처방: 지문에서 단어의 뜻을 정확히 이해하고, 문맥에 맞는 단어를 고르기 위해 반대 의미가 아닌지를 한 번 더 확인하는 습관을 들일 것.\n③ 진단: ① (A)에서 'amicable'을 선택했는데, 지문에서 'acrimonious'는 'full of spite; bitter; nasty(악의로 가득한; 원한이 있는; nasty)'라고 설명하고 있어 'amicable(우호적인)'과는 반대 뜻임을 몰라서 오독했음. 또한 (C)에서 'mild'를 선택했는데, 지문에서 'acerbic'은 'bitter(쓴; 신랄한)'라고 설명하고 있어 'mild(온화한)'과는 반대 뜻임을 몰라서 오독했음. ② (A)와 (C) 모두에서 반대 의미가 아닌지를 한 번 더 확인하고, 문맥에 맞는 단어를 고르도록 주의할 것. → 처방: 지문에서 제시된 단어의 뜻을 정확히 읽고, 문맥에 맞는 단어를 고르기 위해 반대 의미가 아닌지를 한 번 더 확인하는 습관을 들일 것.\n⑤ 진단: ① (B)에서 'ineptitude'를 선택했는데, 지문에서 'acumen'은 'keenness of judgment; mental sharpness(판단의 예리함; 정신적 날카로움)'라고 설명하고 있어 'ineptitude(서투름)'과는 반대 뜻임을 몰라서 오독했음. 또한 (C)에서 'mild'를 선택했는데, 지문에서 'acerbic'은 'bitter(쓴; 신랄한)'라고 설명하고 있어 'mild(온화한)'과는 반대 뜻임을 몰라서 오독했음. ② (B)와 (C) 모두에서 반대 의미가 아닌지를 한 번 더 확인하고, 문맥에 맞는 단어를 고르도록 주의할 것. → 처방: 지문에서 제시된 단어의 뜻을 정확히 읽고, 문맥에 맞는 단어를 고르기 위해 반대 의미가 아닌지를 한 번 더 확인하는 습관을 들일 것.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
