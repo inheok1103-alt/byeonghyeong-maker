@@ -1,6 +1,25 @@
 {
- "updated": "2026-09-13T12:12:50.327Z",
+ "updated": "2026-09-13T16:31:26.277Z",
  "samples": [
+  {
+   "ts": "2026-09-13T16:26:11.160Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "서술형 단어수 19 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'pollinations', 'edit-key', 'request' / 17~21단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-13T01:13:47.280Z",
    "type": "조건영작",
@@ -257,39 +276,6 @@
     ],
     "answer": 4,
     "explanation": "정답 조합: (A) ACRIMONIOUS - (B) ACUMEN - (C) acerbic. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ① (A)에서 'amicable'을 선택했는데, 지문에서 'acrimonious'는 'full of spite; bitter; nasty(악의로 가득한; 원한이 있는; nasty)'라고 설명하고 있어 'amicable(우호적인)'과는 반대 뜻임을 몰라서 오독했음. ② (A)에서는 '원한·원망·싫음'의 뜻을 가진 단어를 찾아야 하므로, 지문에서 'acrimonious'의 뜻을 정확히 확인하고 반대 의미인 'amicable'을 고르지 않도록 주의할 것. → 처방: 지문에서 제시된 단어의 뜻을 정확히 읽고, 문맥에 맞는 단어를 고르기 위해 반대 의미가 아닌지를 한 번 더 확인하는 습관을 들일 것.\n② 진단: ① (B)에서 'ACUMEN'을 선택했는데, 지문에서 'acumen'은 'keenness of judgment; mental sharpness(판단의 예리함; 정신적 날카로움)'라고 설명하고 있어 'ineptitude(서투름)'과는 반대 뜻임을 몰라서 오독했음. ② (B)에서는 '예리한 판단력'의 뜻을 가진 단어를 찾아야 하므로, 지문에서 'acumen'의 뜻을 정확히 확인하고 반대 의미인 'ineptitude'를 고르지 않도록 주의할 것. → 처방: 지문에서 단어의 뜻을 정확히 이해하고, 문맥에 맞는 단어를 고르기 위해 반대 의미가 아닌지를 한 번 더 확인하는 습관을 들일 것.\n③ 진단: ① (A)에서 'amicable'을 선택했는데, 지문에서 'acrimonious'는 'full of spite; bitter; nasty(악의로 가득한; 원한이 있는; nasty)'라고 설명하고 있어 'amicable(우호적인)'과는 반대 뜻임을 몰라서 오독했음. 또한 (C)에서 'mild'를 선택했는데, 지문에서 'acerbic'은 'bitter(쓴; 신랄한)'라고 설명하고 있어 'mild(온화한)'과는 반대 뜻임을 몰라서 오독했음. ② (A)와 (C) 모두에서 반대 의미가 아닌지를 한 번 더 확인하고, 문맥에 맞는 단어를 고르도록 주의할 것. → 처방: 지문에서 제시된 단어의 뜻을 정확히 읽고, 문맥에 맞는 단어를 고르기 위해 반대 의미가 아닌지를 한 번 더 확인하는 습관을 들일 것.\n⑤ 진단: ① (B)에서 'ineptitude'를 선택했는데, 지문에서 'acumen'은 'keenness of judgment; mental sharpness(판단의 예리함; 정신적 날카로움)'라고 설명하고 있어 'ineptitude(서투름)'과는 반대 뜻임을 몰라서 오독했음. 또한 (C)에서 'mild'를 선택했는데, 지문에서 'acerbic'은 'bitter(쓴; 신랄한)'라고 설명하고 있어 'mild(온화한)'과는 반대 뜻임을 몰라서 오독했음. ② (B)와 (C) 모두에서 반대 의미가 아닌지를 한 번 더 확인하고, 문맥에 맞는 단어를 고르도록 주의할 것. → 처방: 지문에서 제시된 단어의 뜻을 정확히 읽고, 문맥에 맞는 단어를 고르기 위해 반대 의미가 아닌지를 한 번 더 확인하는 습관을 들일 것.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-02T18:46:01.664Z",
-   "type": "지칭추론",
-   "level": "중",
-   "audit": "밑줄·정답 코드검증(대명사 구절 원문 매칭)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.44,
-    "D": 0.33,
-    "distractorEff": 75,
-    "pass": true,
-    "flags": [
-     "죽은오답 ②"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 (a)~(e) 중에서 가리키는 대상이 나머지 넷과 다른 것은?",
-    "passage": "In these sentences ⓐ<u>it may appear</u> to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated. This would suggest that these strings are constituents. However, ⓑ<u>this cannot be correct</u>, i.e. ⓒ<u>these strings cannot be</u> constituents, if the general structure ⓓ<u>we’ve posited</u> for sentences is correct. Why not? (Refer to tree structure (3) at the beginning of the chapter to answer this question.) Is there a way around ⓔ<u>this problem</u>? *6. In Section 13.7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65). We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an Adjunct. The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 5,
-    "explanation": "정답 ⓔ는 '이 문제(6. In Section)'를 가리키고, 나머지 넷은 '일반적인 문장 구조(we’ve posited for sentences)'를 가리킨다.\n[오답 진단·처방]\n① 진단: ⓐ는 'RNR(Resumptive Noun Phrase Reduction) 적용으로 새로운 구조가 생겨났을 때'라는 조건 아래에서 'Frank washed' 등이 구성체로 보일 수 있음을 설명하는 문장이다. 즉, ⓐ는 '구성체로 보일 수 있는 상황'을 가리킨다. → 처방: 문제에서 '나머지 넷과 다른 것'을 찾으려면, ⓐ가 '구성체로 보일 수 있는 상황'을 가리키는 반면, 다른 ⓑ~ⓔ는 '구성체가 아님을 주장하거나, 구조 자체를 가리키는' 내용을 담고 있음을 확인할 것.\n② 진단: ⓑ와 ⓒ는 '이것은 옳지 않다'와 '이 문자열들은 구성체가 아니다'로, ⓐ가 주장한 '구성체로 보임'을 부정하는 문장들이다. 즉, ⓑ~ⓒ는 '구성체가 아님을 주장하는 내용'을 담고 있다. → 처방: ⓐ가 '구성체로 보일 수 있는 상황'을 설명한다면, ⓑ~ⓒ는 그 반대 주장임을 구분할 것. 문제에서 '나머지 넷과 다른 것'은 '구성체로 보일 수 있는 상황'을 가리키는 ⓐ를 제외하고, 나머지는 모두 '구성체가 아님을 주장하거나 구조를 가리키는' 내용임을 기억할 것.\n③ 진단: ⓓ는 '우리가 가정했던 문장의 일반적인 구조'를 가리키는 문장으로, 구조 자체를 설명하는 내용이다. 즉, ⓓ는 '구조'를 가리키는 반면, ⓐ는 '구성체로 보일 수 있는 상황'을 가리킨다. → 처방: ⓓ는 '구조'를 가리키는 말이므로, ⓐ가 가리키는 '구성체로 보일 수 있는 상황'과 구분할 것. 문제에서 '나머지 넷과 다른 것'은 '구성체로 보일 수 있는 상황'을 가리키는 ⓐ임을 확인할 것.\n④ 진단: ⓔ는 '이 문제(구성체가 아님을 주장하는 문제)'를 가리키는 문장으로, ⓑ~ⓓ가 주장하는 내용을 가리키는 말이다. 즉, ⓔ는 '문제 자체'를 가리키는 반면, ⓐ는 '구성체로 보일 수 있는 상황'을 가리킨다. → 처방: ⓔ는 '이 문제'를 가리키는 말이므로, ⓐ가 가리키는 '구성체로 보일 수 있는 상황'과 구분할 것. 문제에서 '나머지 넷과 다른 것'은 '구성체로 보일 수 있는 상황'을 가리키는 ⓐ임을 확인할 것.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
