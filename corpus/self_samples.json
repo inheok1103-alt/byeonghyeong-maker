@@ -1,6 +1,25 @@
 {
- "updated": "2026-09-14T01:27:17.903Z",
+ "updated": "2026-09-14T06:30:59.862Z",
  "samples": [
+  {
+   "ts": "2026-09-14T06:30:22.194Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "서술형 단어수 19 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'pollinations', 'edit-key', 'request' / 17~21단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-14T01:19:50.908Z",
    "type": "문장삽입",
@@ -260,31 +279,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] people should start reducing plastic waste to protect our planet.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 지정 구문 사용(STRUCTURE) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-09-03T22:48:04.610Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 10건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "frequent occurrence of the word \"olympian\" in modern sports commentary",
-     "how olympian athletes embody traits of ancient greek gods",
-     "evolution of the term \"olympian\" from its mythological origins to modern contexts",
-     "universal human tendency to describe powerful individuals as \"olympian",
-     "mythological and religious significance of mt. olympus in ancient greece"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Olympian's evolution as a term from Greek gods to modern athletes'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정도·빈도를 왜곡· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: ‘olympian’이 현대 스포츠 해설에서 ‘자주’ 언급된다는 내용이 지문에 없음. 지문은 ‘Olympian’이 현대에서는 주로 ‘올림픽 선수’를 가리킨다고만 설명함. → 처방: ‘olympian’이 현대에서 ‘올림픽 선수’를 뜻하는지 확인하려면 지문에서 ‘Olympic Games’와 ‘Olympic athletes’를 찾아 비교해보기.\n② 진단: ‘올림픽 선수’가 고대 그리스 신의 특징을 ‘구체적으로’ embody(구현)한다는 내용이 지문에 없음. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명할 뿐, 선수가 신의 traits 를 지닌다는 말은 없음. → 처방: ‘embody’라는 단어가 ‘구체적인 행동이나 특징’을 뜻하는지 확인하고, 지문에서 ‘Olympian’이 ‘의미 변화’를 설명하는지 다시 읽기.\n④ 진단: ‘powerful individuals’를 ‘olympian’으로 묘사하는 ‘보편적 경향’이 지문에 없음. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명할 뿐, ‘보편적 경향’을 다루지 않음. → 처방: ‘tendency’라는 단어가 ‘보편적 경향’을 뜻하는지 확인하고, 지문에서 ‘의미 변화’를 설명하는 부분을 다시 읽기.\n⑤ 진단: ‘Mt. Olympus’의 ‘신화적·종교적 중요성’이 지문의 주제가 아님. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명하는 데 집중하고, ‘Mt. Olympus’의 중요성을 다루지 않음. → 처방: ‘religious significance’라는 단어가 지문에 언급되는지 확인하고, 지문에서 ‘Olympian’이 ‘의미 변화’를 설명하는 부분을 다시 읽기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Olympian]"
    }
   }
  ]
