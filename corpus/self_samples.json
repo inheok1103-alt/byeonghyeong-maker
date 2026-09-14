@@ -1,6 +1,40 @@
 {
- "updated": "2026-09-13T22:38:45.544Z",
+ "updated": "2026-09-14T01:27:17.903Z",
  "samples": [
+  {
+   "ts": "2026-09-14T01:19:50.908Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 1,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] Some chapters explore the socio-historical background of the period while others provide informa­ tion on prescriptivism, newspaper language, language contact and regional variation in British and American English.\n\nLate Modern English Syntax The Late Modern period is the first in the history of English for which an unprece­ dented wealth of textual material exists. ( ① ) Using increasingly sophisticated databases, the contributions in this volume explore grammatical usage from the period, spe­ cifically morphological and syntactic change, in a broad context. ( ② ) Internal processes of change are discussed against grammaticalisation theory and construction grammar and the rich body of textual evidence is used to draw inferences on the precise nature of historical change. ( ③ ) Exposing readers to a wealth of data that informs the description of a broad range of syntactic phenomena, this book is ideal for graduate students and researchers interested in historical linguistics, corpus linguistics and language development. ( ④ ) Marianne Hundt is Full Professor of English Linguistics in the English Department at the University of Zurich, Switzerland. ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 2,
+    "explanation": "주어진 문장의 연결 단서가 ② 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-13T22:35:07.372Z",
    "type": "이어쓰기영작",
@@ -251,41 +285,6 @@
     ],
     "answer": 3,
     "explanation": "글의 핵심 논지는 'Olympian's evolution as a term from Greek gods to modern athletes'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정도·빈도를 왜곡· ② 오답 — 원인과 결과를 뒤바꿈· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정답의 일부만 담아 지엽적\n[오답 진단·처방]\n① 진단: ‘olympian’이 현대 스포츠 해설에서 ‘자주’ 언급된다는 내용이 지문에 없음. 지문은 ‘Olympian’이 현대에서는 주로 ‘올림픽 선수’를 가리킨다고만 설명함. → 처방: ‘olympian’이 현대에서 ‘올림픽 선수’를 뜻하는지 확인하려면 지문에서 ‘Olympic Games’와 ‘Olympic athletes’를 찾아 비교해보기.\n② 진단: ‘올림픽 선수’가 고대 그리스 신의 특징을 ‘구체적으로’ embody(구현)한다는 내용이 지문에 없음. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명할 뿐, 선수가 신의 traits 를 지닌다는 말은 없음. → 처방: ‘embody’라는 단어가 ‘구체적인 행동이나 특징’을 뜻하는지 확인하고, 지문에서 ‘Olympian’이 ‘의미 변화’를 설명하는지 다시 읽기.\n④ 진단: ‘powerful individuals’를 ‘olympian’으로 묘사하는 ‘보편적 경향’이 지문에 없음. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명할 뿐, ‘보편적 경향’을 다루지 않음. → 처방: ‘tendency’라는 단어가 ‘보편적 경향’을 뜻하는지 확인하고, 지문에서 ‘의미 변화’를 설명하는 부분을 다시 읽기.\n⑤ 진단: ‘Mt. Olympus’의 ‘신화적·종교적 중요성’이 지문의 주제가 아님. 지문은 ‘Olympian’이 ‘고대 그리스 신의 traits’를 연상시키는 ‘의미 변화’를 설명하는 데 집중하고, ‘Mt. Olympus’의 중요성을 다루지 않음. → 처방: ‘religious significance’라는 단어가 지문에 언급되는지 확인하고, 지문에서 ‘Olympian’이 ‘의미 변화’를 설명하는 부분을 다시 읽기.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Olympian]"
-   }
-  },
-  {
-   "ts": "2026-09-03T11:20:18.898Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.75,
-    "D": -0.5,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=-0.50)",
-     "역변별(정답키 의심)",
-     "죽은오답 ①②"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. ① If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ Since our language seems to reflect our quality of mind, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. ② There are exceptions to this principle, but it’s generally sound. ③ “Use the relative pronoun that—not which—for ­restrictive clauses. ④ The historical development of English grammar, influenced by Latin and various linguistic shifts, has often led to prescriptive rules that do not always align with natural language use. ⑤ ” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: 학생은 글의 중심 내용인 '글쓰기 방식과 문법 조언'을 파악하지 못하고, 문장 ①이 핵심 주제를 설명하는 내용임을 간과했습니다. → 처방: 글 전체의 주제를 먼저 파악하고, 각 문장이 그 주제와 어떻게 연결되는지 생각하며 읽는 습관을 들여야 합니다.\n② 진단: 학생은 문장 ②가 앞 문장의 원칙이 '대체로 옳다'고 보충하며 글의 흐름을 이어가는 역할을 이해하지 못하고, 독립적인 내용으로 오해했습니다. → 처방: 앞뒤 문장의 내용이 서로 어떻게 연결되고 보완하는지 파악하며 글의 논리적 흐름을 따라가는 연습을 해야 합니다.\n③ 진단: 학생은 문장 ③이 '제한적 절에 that 을 사용하라'는 구체적인 글쓰기 지침을 제시하며 글의 핵심 주제를 이어가는 것을 파악하지 못했습니다. → 처방: 글의 중심 내용이 '글쓰기 지침'임을 명확히 인지하고, 각 문장이 어떤 지침을 제시하는지 주의 깊게 읽어야 합니다.\n⑤ 진단: 학생은 문장 ⑤가 앞선 문장 ③에서 언급된 'which' 사용 오류에 대한 구체적인 '잘못된 예시'를 제시하며 글의 흐름을 강화하는 역할을 놓쳤습니다. → 처방: 글에서 제시되는 규칙이나 조언 뒤에 이어지는 예시는 항상 앞선 내용과 밀접하게 연결된다는 점을 기억하고 확인해야 합니다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]
