@@ -1,7 +1,15 @@
 {
- "updated": "2026-09-14T19:34:59.433Z",
+ "updated": "2026-09-14T23:21:44.690Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제 지문은 고등학교 교육과정 범위 내의 일반적이고 보편적인 주제를 다루어, 특정 학문 분야의 전문 배경 지식 없이도 독해 및 추론이 가능하도록 구성해야 한다.",
+   "src": "자가학습:요약문AB",
+   "score": 73,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-14T23:12:07.563Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:이어쓰기영작",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-24T22:51:33.703Z"
-  },
-  {
-   "rule": "원문의 의미를 왜곡하지 않으면서도 문법적으로 정확하고 자연스러운 수동태 문장으로 전환할 때는 행위자를 명시하지 않거나, 행위자를 ‘by’를 통해 자연스럽게 연결하는 방식으로 통일하여야 한다.",
-   "src": "자가학습:문장전환",
-   "score": 47,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-24T22:52:14.413Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
