@@ -1,7 +1,15 @@
 {
- "updated": "2026-09-15T13:53:28.965Z",
+ "updated": "2026-09-15T18:28:05.802Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:전체문장배열",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-15T18:17:16.113Z"
+  },
   {
    "rule": "모든 출제 요소(지문, 발문, 선지)는 시험의 목적과 대상 학습자 수준에 부합하도록 내용적 일관성과 형식적 적절성을 갖추어야 한다.",
    "src": "자가학습:안내문일치",
@@ -9,14 +17,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-09-15T13:40:55.041Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:첫글자어휘",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-09-15T13:47:28.986Z"
   },
   {
    "rule": "모든 출제 지문은 고등학교 교육과정 범위 내의 일반적이고 보편적인 주제를 다루어, 특정 학문 분야의 전문 배경 지식 없이도 독해 및 추론이 가능하도록 구성해야 한다.",
