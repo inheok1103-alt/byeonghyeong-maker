@@ -1,6 +1,31 @@
 {
- "updated": "2026-09-14T23:21:44.695Z",
+ "updated": "2026-09-15T01:45:19.336Z",
  "samples": [
+  {
+   "ts": "2026-09-15T01:44:14.729Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "Look at these two sentences.\n\n(A) We say Bell invented the telephone because we are talking about Bell, and the new information is that he invented the telephone. When the subject is the person or thing doing the action (the agent), then we use an active verb. ACTIVE We say The telephone was invented by Bell because we are talking about the telephone, and the new information is that it was invented by Bell. When the subject is not the agent (is not doing the action), then we use a passive verb.\n\n(B) One sentence is about Bell, and the other is about the telephone. Each sentence begins with the subject. The subject is the startingpoint of the sentence, the thing we are talking about. The new information about the subject comes at the end of the sentence.\n\n(C) ACTIVE Bell invented the telephone. PASSIVE The telephone was invented by Bell. The two sentences have the same meaning, but they are about different things.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 5,
+    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-14T19:34:16.519Z",
    "type": "이어쓰기영작",
@@ -245,40 +270,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 84쪽 유형 (i) 과 비교하여, 이 문장들은 단순히 설명된 주체의 존재를 주장하는 것이 아니라 주체가 관여하는 상황에 대한 정보를 제공합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-04T01:02:30.954Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 4,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.67,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①④"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] It means filling in this form.\n\nI can remember posting the letter. I posted it on Friday morning. I'll never forget flying over the Grand Canyon. It was wonderful. We use remember/forget doing for memories of the past. The action is before the remembering. I regret spending all that money. I've got none left. Regret doing something means to be sorry because of something that happened in the past. I tried clicking on the box, but it doesn't work. Try doing something means to do something which might solve a problem. There's too much noise. Can you all stop talking, please? ( ① ) Stop doing something means to end an action, to finish doing it. ( ② ) I'm applying for a visa. ( ③ ) Means doing something expresses the idea of one thing resulting in another. ( ④ ) The teacher told everyone to be quiet, but they just went on talking. ( ⑤ ) Go on doing something means to continue doing it. My shoes need cleaning. This means that my shoes need to be cleaned (see Unit 59B).",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: stop talking 은 '말하는 행위를 멈추다'는 뜻으로, 소음을 끝내라는 요청에 맞지 않음. 지문에서 'stop doing'은 '행동을 끝내다'로 설명되어 있음. → 처방: 문맥이 '소음을 멈추라'는 요청인지 확인하고, 'stop doing'의 의미를 정확히 떠올리기.\n② 진단: means doing something 은 '~하는 것이 ~를 초래하다'는 뜻으로, 이 문맥에서는 '~하는 것이 ~를 의미하다'라는 뜻이 더 적절함. 지문에서 'means doing'은 결과로 이어지는 의미를 설명함. → 처방: means doing 의 두 가지 뜻을 구분하고, 문맥에 맞는 뜻을 선택하기.\n④ 진단: go on doing something 은 '계속 ~하다'라는 뜻으로, 선생님이 조용히 하라고 했지만 학생들이 계속 떠드는 상황과는 무관함. 지문에서 'go on doing'은 지속을 의미함. → 처방: go on doing 의 의미를 정확히 기억하고, 문맥이 지속을 나타내는지 확인하기.\n⑤ 진단: need cleaning 은 '청소될 필요가 있다'는 뜻으로, 신청서를 작성하는 상황과는 전혀 관련이 없음. 지문에서 'need doing'은 수동의 의미를 설명함. → 처방: need doing 이 수동의 의미를 나타내는지 확인하고, 문맥에 맞는 표현인지 점검하기.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
