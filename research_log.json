@@ -1,7 +1,49 @@
 {
- "updated": "2026-09-15T01:45:19.335Z",
+ "updated": "2026-09-15T08:01:20.283Z",
  "note": "자체 연구·학습 누적 기록 (관찰 전용). 연구 워크플로우/루틴이 출제방식을 연구할 때마다 누적됩니다.",
  "entries": [
+  {
+   "date": "2026-09-15",
+   "category": "자가학습",
+   "topic": "제목",
+   "summary": "패널 점수 32 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again."
+  },
+  {
+   "date": "2026-09-15",
+   "category": "자가학습",
+   "topic": "주제",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-15",
+   "category": "자가학습",
+   "topic": "내용일치",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-15",
+   "category": "자가학습",
+   "topic": "의견영작",
+   "summary": "패널 점수 0 · 규칙 1건 격리(eligible, 사람 승인 대기)",
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again."
+  },
+  {
+   "date": "2026-09-15",
+   "category": "자동 연구 회의",
+   "topic": "삽입 유형: 주어진 문장의 지시어 해소 위치 유일성 검증법",
+   "summary": "판정 실패",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-15",
+   "category": "자동 연구 회의",
+   "topic": "무관문장: 소재 동일·논지 이탈(T16) 문장의 창작 절차",
+   "summary": "판정 실패",
+   "rule": ""
+  },
   {
    "date": "2026-09-15",
    "category": "자가학습",
@@ -1383,48 +1425,6 @@
    "topic": "밑줄함의",
    "summary": "패널 점수 79 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
    "rule": "모든 출제 시, 정답 선지는 원문의 'functional vs. non-functional' 대조 구조를 정확히 반영하여 '비기능적(lexical/intrinsic meaning)' 개념을 명확히 드러내야 하며, 오답 선지는 해당 대조 구조를 오해할 여지를 없애기 위해 기능적/비기능적 측면을 혼동시키거나 중복되는 서술을 배제해야 한다."
-  },
-  {
-   "date": "2026-09-01",
-   "category": "검수",
-   "topic": "밑줄함의",
-   "summary": "검수관 '사용 불가' → 샘플 폐기: 정답 선지가 가장 긺(정답 노출 위험)",
-   "rule": ""
-  },
-  {
-   "date": "2026-09-01",
-   "category": "자가학습",
-   "topic": "의견영작",
-   "summary": "패널 점수 95 · 기준 통과",
-   "rule": ""
-  },
-  {
-   "date": "2026-09-01",
-   "category": "검수",
-   "topic": "의견영작",
-   "summary": "검수관 '사용 불가' → 샘플 폐기: 'individual', 'properties', 'mastering' 세 단어 모두 필수 포함 조건 미준수",
-   "rule": ""
-  },
-  {
-   "date": "2026-09-01",
-   "category": "코퍼스연구",
-   "topic": "원서 582권 · 실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "summary": "과거시제와 현재시제의 혼용, 부정사 구문의 오류, 관사의 누락이 빈번히 관찰된다. 특히 'told that do not' → 'told not to'와 같이 동사+that+절 구조의 오류가 반복된다.",
-   "rule": "원문에서 'told that + 부정어 + 동사원형' 패턴이 나타나면, 이를 'told not to + 동사원형'으로 수정하는 규칙을 기반으로 문항을 설계하라. 예: 'They are told that do not run' → 'They are told not to run'."
-  },
-  {
-   "date": "2026-09-01",
-   "category": "자동 연구 회의",
-   "topic": "난이도: 학년·시기별(1학기 중간~2학기 기말) 레버 프리셋",
-   "summary": "학년·시기별 난이도 곡선 설계는 학습 궤적과 실전 역량을 고려한 유용한 프레임이지만, 과도한 난이도 상승(90%)은 학습 동기·인지 안정성을 저해할 우려가 있음. 점진적 상승(60%→75%→85%)으로 조정할 필요가 있음.",
-   "rule": "1) 1학기 중간: 난이도 60% 유지(기본기 점검·오류 교정). 2) 2학기 중간: 난이도 75%로 상향(심화 분석·계단식 분산). 3) 2학기 기말: 난이도 85%로 조정(실전 시뮬레이션·압축 훈련). EBS 연계형 출제 원칙은 유지하되, 난이도 곡선 완화로 학습 동기·인지 안정성 균형."
-  },
-  {
-   "date": "2026-09-01",
-   "category": "자동 연구 회의",
-   "topic": "난이도: 킬러 문항의 상한(한 세트 내 1문항) 합의",
-   "summary": "킬러 문항의 난이도 상한(1문항)을 시스템화하되, 정의의 모호성과 창의성 훼손 우려를 해소하기 위한 객관화·예외 등급 시스템이 필요하다는 교사#65008과 #13176의 제안이 타당하다. 반면, 교사#22306의 우려는 시스템화로 인한 표준화 편법과 문제Bank 경직화 가능성으로, 이를 보완할 수 있는 메커니즘이 마련되어야 한다.",
-   "rule": "1) 킬러 문항 정의에 '복합 추론(3단계 이상) + 난이도 점수(6.0점 이상)' 등 수치화된 체크리스트를 도입해 객관화한다. 2) 기본 킬러(1문항)는 강제하되, '특수 등급 킬러'(예: EBS 연계·화용 함의·창의적 패러프레이즈)는 사전 심의를 통과한 경우 최대 2문항까지 허용하는 '예외 등급 시스템'을 도입한다. 3) 시스템은 출제자가 2문항 이상 입력 시 경고 및 강제 삭제하되, 예외 등급 통과 시에는 허용한다."
   }
  ]
 }
