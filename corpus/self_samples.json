@@ -1,6 +1,50 @@
 {
- "updated": "2026-09-16T11:54:53.973Z",
+ "updated": "2026-09-17T21:46:38.258Z",
  "samples": [
+  {
+   "ts": "2026-09-17T21:42:12.652Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "CASE DYNAMICS: Divergence of Nominative and Accusative",
+     "CASE DYNAMICS: Nominative Alignment in Case Assignment",
+     "CASE DYNAMICS: Accusative Dominance Over Nominative",
+     "CASE DYNAMICS: Role of Tense in Case",
+     "CASE DYNAMICS: Universal Case Assignment Across Languages"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Case assignment is driven by functional elements, yet nominative and accusative cases differ fundamentally, challenging the view that they are similar.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: ‘nominative’와 ‘accusative’가 비슷하거나 다르다고 언급했으나 ‘alignment’는 언급되지 않음 → 처방: 다음부터는 ‘alignment’라는 단어가 등장하지 않는 문장을 무시하고, ‘nominative’와 ‘accusative’의 관계에 집중하라.\n③ 진단: ‘accusative’가 ‘nominative’보다 우세하다고 해석했으나, 문장에서는 ‘accusative’가 ‘nominative’보다 우세하다는 내용이 없음 → 처방: ‘dominance’라는 표현이 없으므로, 우세 관계를 가정하지 말고 두 경우의 차이만 살펴라.\n④ 진단: ‘tense’라는 단어가 등장하지 않아 ‘Role of Tense’가 적절하지 않음 → 처방: ‘tense’가 언급되지 않은 문장은 제외하고, ‘Case’와 ‘assigner’에 초점을 맞추라.\n⑤ 진단: ‘universal’라는 개념이 없으며, 문장은 특정 언어적 위치를 다룸 → 처방: ‘universal’이라는 단어가 없으므로, 특정 언어적 위치에 초점을 맞추라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Case assignment is driven by functional elements, yet nominative and accusative cases differ fundamentally, challenging the view that they are similar.]"
+   }
+  },
+  {
+   "ts": "2026-09-17T21:45:37.072Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 케이스 배정은 지명적인 것과 비난적인 것에 따라 다르며, 뚜렷한 제한이 필요합니다.\n주어진 단어: ( assignment / differs / nominative )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Case assignment differs for nominative and accusative, requiring distinct restrictions. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-09-16T00:34:02.400Z",
    "type": "주제문완성",
@@ -210,60 +254,6 @@
     ],
     "answer": 2,
     "explanation": "주어진 문장의 연결 단서가 ② 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-13T22:35:07.372Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 19 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'pollinations', 'edit-key', 'request' / 17~21단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-09-13T19:41:00.283Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Unlike the basic existentials, these sentences have a near-paraphrase without the there BE construction, as in (36).\n② Task there BE takes strong and weak NPs.\n③ Examples with strong NPs are in (35).\n④ The other two kinds of there BE sentences allow strong NPs.\n⑤ 3 Task There BE The task there BE construction takes the form there BE NP to VP, as illustrated in (37).\n⑥ Sentences like these must have a weak NP.\n⑦ This is particularly clear in (34d, e) where the availability of the rooms and the sickness of the residents are the main information conveyed.\n⑧ Page 84 By comparison with type (i), these sentences do not simply assert the existence of the entities described, but also give information about the state of affairs in which the entities are involved.\n⑨ This construction presents a task or action which lies ahead of someone; someone has to prune and spray the fruit trees, notify Maria, Lee and Casey, and so on.",
-    "choices": [
-     "⑧-⑦-⑥-③-①-④-⑤-⑨-②",
-     "⑧-⑦-⑥-③-①-④-⑤-②-⑨",
-     "⑧-⑨-⑦-②-⑥-③-①-④-⑤",
-     "⑧-①-⑨-⑥-④-②-⑦-③-⑤",
-     "⑧-⑥-①-⑦-③-⑨-②-⑤-④"
-    ],
-    "answer": 2,
-    "explanation": "정답 배열은 ⑧-⑦-⑥-③-①-④-⑤-②-⑨. 흐름: ⑧ → ⑦(This) → ⑥ → ③ → ① → ④ → ⑤ → ② → ⑨(This) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
