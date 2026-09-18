@@ -1,6 +1,50 @@
 {
- "updated": "2026-09-17T21:46:38.258Z",
+ "updated": "2026-09-18T00:36:51.882Z",
  "samples": [
+  {
+   "ts": "2026-09-18T00:34:38.625Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "책은 인용을 자세히 하고, 핵심 정보를 한 문장에 넣는다.",
+     "책은 인용을 간결히 하고, 모든 정보를 한 곳에 제공한다.",
+     "책은 인용을 간결히 하고, 문장을 짧게 구성한다.",
+     "책은 인용을 간결히 사용한다.",
+     "책은 인용을 간결히 하고, 자세한 정보를 별도 섹션에 제공한다."
+    ],
+    "answer": 5,
+    "explanation": "글의 핵심 논지는 'The book uses abbreviated citations to streamline referencing, with full details supplied in a separate “Texts” section.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n① 진단: 인용을 자세히 한다고 잘못 해석했다. 본문은 인용을 간결하게 한다고 밝히고 있다. → 처방: ‘간결한 인용’이라는 문장을 놓치지 말고, 인용을 자세히 한다는 표현이 없음을 재확인하라.\n② 진단: 모든 정보를 한 곳에 제공한다는 해석이 잘못되었다. 본문은 ‘텍스트’ 섹션에 전체 정보를 별도로 제공한다는 점을 명시한다. → 처방: ‘별도 섹션에 제공’이라는 문장을 놓치지 말고, ‘모두 한 곳에’라는 표현이 없음을 재확인하라.\n③ 진단: 문장을 짧게 구성한다는 내용이 없다는 것을 놓쳤다. 본문은 인용 방식과 참고문헌 위치만 언급한다. → 처방: 문장 길이와는 무관한 내용이므로, 인용 방식과 참고문헌 위치에 초점을 맞추어 읽어라.\n④ 진단: 인용을 간결히 사용한다는 점은 맞지만, 핵심 정보가 별도 섹션에 제공된다는 점을 빠뜨렸다. → 처방: 선지에 ‘핵심 정보가 별도 섹션에 제공된다’는 사실을 포함하도록 완전성을 점검하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The book uses abbreviated citations to streamline referencing, with full details supplied in a separate “Texts” section.]"
+   }
+  },
+  {
+   "ts": "2026-09-18T00:36:26.597Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 이 책은 텍스트 간 참조를 간소화하기 위해 약식 인용을 사용합니다.\n주어진 단어: ( abbreviated / citations / streamline )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The book uses abbreviated citations to streamline referencing across texts. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-09-17T21:42:12.652Z",
    "type": "제목",
@@ -201,59 +245,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-09-14T06:30:22.194Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "서술형 단어수 19 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'pollinations', 'edit-key', 'request' / 17~21단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-14T01:19:50.908Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 1,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] Some chapters explore the socio-historical background of the period while others provide informa­ tion on prescriptivism, newspaper language, language contact and regional variation in British and American English.\n\nLate Modern English Syntax The Late Modern period is the first in the history of English for which an unprece­ dented wealth of textual material exists. ( ① ) Using increasingly sophisticated databases, the contributions in this volume explore grammatical usage from the period, spe­ cifically morphological and syntactic change, in a broad context. ( ② ) Internal processes of change are discussed against grammaticalisation theory and construction grammar and the rich body of textual evidence is used to draw inferences on the precise nature of historical change. ( ③ ) Exposing readers to a wealth of data that informs the description of a broad range of syntactic phenomena, this book is ideal for graduate students and researchers interested in historical linguistics, corpus linguistics and language development. ( ④ ) Marianne Hundt is Full Professor of English Linguistics in the English Department at the University of Zurich, Switzerland. ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 2,
-    "explanation": "주어진 문장의 연결 단서가 ② 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
