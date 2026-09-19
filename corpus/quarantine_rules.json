@@ -1,7 +1,15 @@
 {
- "updated": "2026-09-19T18:16:04.367Z",
+ "updated": "2026-09-19T21:00:56.136Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
+   "src": "자가학습:틀린문장 고쳐쓰기",
+   "score": 3,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-19T20:44:42.427Z"
+  },
   {
    "rule": "문제마다 객관적이고 측정 가능한 정답 기준을 명시하여 평가가 명확히 이루어질 수 있도록 한다.",
    "src": "자가학습:목적",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T01:54:39.031Z"
-  },
-  {
-   "rule": "정답과 영영풀이, 원문이 모두 문맥과 정의상 일치하도록 영영풀이를 원문의 의미와 동일하게 재구성하고, 발문 조건은 정답과 직접 연관된 명확한 단서로만 설정하라.",
-   "src": "자가학습:본문찾아쓰기",
-   "score": 60,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-24T23:38:30.797Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
