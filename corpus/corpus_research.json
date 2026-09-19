@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-18T00:36:51.880Z",
+ "updated": "2026-09-19T11:15:35.420Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-19T11:14:42.310Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "문장 안에서 명사구의 수 일치, 관사, 철자, 시제, 모달 동사, hyphenation 등 문법적 요소가 종합적으로 일관되도록 교정하는 패턴이 자주 나타난다.",
+   "rule": "문장을 제시할 때, 주어와 동사, 명사구의 수, 시제, 관사, 철자, 띄어쓰기, hyphenation, 모달 동사 등 모든 문법적 요소가 일관되도록 교정하도록 요구한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-18T00:36:44.701Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "이 코퍼스에서는 'old/new + English'와 'university + major/class' 등 복합명사 구조의 연어가 빈번하며, 문법 오류는 주로 'there is/are'의 수 일치, 동사 시제(present/past), 대명사(they/them) 오용에서 발생한다.",
    "rule": "'there is/are + not + anything/nothing' 구문에서 부정어와 동사의 수 일치를 반드시 확인하며, 'help + 목적어 + to-v' 구조에서는 동사 원형이 아닌 3인칭 단수 현재형('helps')을 사용하도록 오답지를 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T15:16:41.538Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'therefore', 'immediately' 등 부사나 접속사가 문장 맨 앞 또는 중간에서 문법적 오류 없이 사용되는 패턴이 빈번하며, 'teach'→'teaches', 'brought'→'brought'와 같이 시제 일치와 철자 오류가 동시에 발생하는 경우가 많다. 'between two'처럼 전치사구는 명사구와 결합되어 문장 구조를 복잡하게 만드는 경향이 있다.",
-   "rule": "원서 코퍼스 패턴을 반영하여, 문장 맨 앞 또는 중간에서 'therefore', 'however', 'immediately' 등 부사/접속사를 사용한 경우, 반드시 문장 구조(주어+동사+목적어) 일치와 철자(예: 'brought'→'brought')를 확인하는 문제를 출제하라.",
    "sample": [
     "old english",
     "university press",
