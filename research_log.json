@@ -1,7 +1,49 @@
 {
- "updated": "2026-09-19T21:00:56.139Z",
+ "updated": "2026-09-19T23:15:28.901Z",
  "note": "자체 연구·학습 누적 기록 (관찰 전용). 연구 워크플로우/루틴이 출제방식을 연구할 때마다 누적됩니다.",
  "entries": [
+  {
+   "date": "2026-09-19",
+   "category": "자가학습",
+   "topic": "필자주장",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-19",
+   "category": "자가학습",
+   "topic": "지칭추론",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-19",
+   "category": "자가학습",
+   "topic": "네모어휘ABC",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-19",
+   "category": "자가학습",
+   "topic": "서술형(자유)",
+   "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
+   "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again."
+  },
+  {
+   "date": "2026-09-19",
+   "category": "자동 연구 회의",
+   "topic": "검증: 솔버 게이트 3표 다수결의 온도·페르소나 다양화",
+   "summary": "판정 실패",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-19",
+   "category": "자동 연구 회의",
+   "topic": "검증: 유령 오류(지문 부재 근거) 자동 차단 규칙 고도화",
+   "summary": "판정 실패",
+   "rule": ""
+  },
   {
    "date": "2026-09-19",
    "category": "자가학습",
@@ -1359,48 +1401,6 @@
    "topic": "조건영작",
    "summary": "패널 점수 71 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
    "rule": "단어 내로 'superior'와 'treat...like a sport' 의미를 담아 \"They acted superior, treating others like a game.\"로 재작성하라."
-  },
-  {
-   "date": "2026-09-03",
-   "category": "검수",
-   "topic": "조건영작",
-   "summary": "검수관 '사용 불가' → 샘플 폐기: 'detached'가 사용되지 않음",
-   "rule": ""
-  },
-  {
-   "date": "2026-09-03",
-   "category": "코퍼스연구",
-   "topic": "원서 582권 · CEFR 밴드를 활용한 난이도 조정",
-   "summary": "복수형 오류('points of views'→'point of view', 'text books'→'textbooks')와 부사 위치 오류('anyways'→'anyway')가 빈번히 관찰된다. 또한 문장 내 쉼표 오용('for example' 뒤 불필요한 쉼표)도 패턴화할 수 있다.",
-   "rule": "복수형 명사구는 단수형으로 통일하여 오용을 방지하며, 부사 'anyway'는 문장 끝에 위치시키고, 'for example'와 같은 삽입어는 쉼표로 명확히 구분하여 문법적 오류를 최소화하라."
-  },
-  {
-   "date": "2026-09-03",
-   "category": "자동 연구 회의",
-   "topic": "통계: 오답 선택률 5% 미만 문항의 오답 교체 절차",
-   "summary": "판정 실패",
-   "rule": ""
-  },
-  {
-   "date": "2026-09-03",
-   "category": "자동 연구 회의",
-   "topic": "통계: rpb 0.25 미만 문항의 원인 분류(모호/상식정답/키오류)",
-   "summary": "rpb 0.25 기준은 집단 능력 분포(RPB 민감도)와 문항 특성(변별력·난이도)을 고려하지 않은 단순 분류로, 과잉 일반화의 위험이 있다. 반면, 3층 체계(집단 필터링 + 다변량 분석 + 전문가 검토)는 객관성과 신뢰성을 제고하는 합리적 대안이다.",
-   "rule": "1) **1차 필터**: rpb 범위를 0.15~0.35로 완화하고, 변별력(PPMCC ≥0.3) 조건을 추가해 우수한 문항 제외. 2) **2차 분류**: 남은 문항은 rpb + 왜곡 원인 + 난이도 편차를 다변량 분석으로 매핑. 3) **3차 수정**: 분류 결과는 문항 재작성·대체·난이도 재조정의 행동 지침으로 활용하며, 3인 이상의 전문가 검토 필수."
-  },
-  {
-   "date": "2026-09-03",
-   "category": "자가학습",
-   "topic": "무관문장",
-   "summary": "패널 점수 20 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
-   "rule": "모든 문항은 구성 요소 간의 상호 일관성, 내용의 명확성 및 간결성, 그리고 전체 주제와의 유기적 연결성을 반드시 확보하여 출제해야 한다."
-  },
-  {
-   "date": "2026-09-03",
-   "category": "측정검수",
-   "topic": "무관문장",
-   "summary": "측정 P̂=0.75 D̂=-0.50 오답효율50% ⚠변별도 낮음(D̂=-0.50),역변별(정답키 의심),죽은오답 ①②",
-   "rule": ""
   }
  ]
 }
