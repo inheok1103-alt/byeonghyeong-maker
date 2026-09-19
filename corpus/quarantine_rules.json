@@ -1,7 +1,23 @@
 {
- "updated": "2026-09-19T14:42:49.420Z",
+ "updated": "2026-09-19T18:16:04.367Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문제마다 객관적이고 측정 가능한 정답 기준을 명시하여 평가가 명확히 이루어질 수 있도록 한다.",
+   "src": "자가학습:목적",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-19T18:06:19.685Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:조건영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-19T18:13:19.703Z"
+  },
   {
    "rule": "답변은 질문의 핵심 내용과 요구 사항을 정확히 파악하고, 핵심 개념을 명확히 정의하며, 구체적 예시와 충분한 설명을 포함해 자연스러운 문장으로 완전하게 서술해야 한다.",
    "src": "자가학습:서술형(자유)",
@@ -17,14 +33,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-09-18T00:31:50.512Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 33,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-09-18T00:35:41.553Z"
   },
   {
    "rule": "각 객관식 문제에서 선택지는 중복되지 않으며, 길이와 형식을 통일하고, 정답이 유일하도록 명확히 구분되는 내용으로 구성한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-24T23:38:30.797Z"
-  },
-  {
-   "rule": "모든 출제에서 동일 문법 규칙(시제·단수/복수 일치 등)을 모든 선지에 동일하게 적용하여 일관성과 정확성을 확보해야 한다.",
-   "src": "자가학습:네모어법ABC",
-   "score": 83,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-24T23:38:44.005Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
