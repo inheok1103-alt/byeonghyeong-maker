@@ -1,7 +1,49 @@
 {
- "updated": "2026-09-20T01:25:39.696Z",
+ "updated": "2026-09-20T06:25:07.915Z",
  "note": "자체 연구·학습 누적 기록 (관찰 전용). 연구 워크플로우/루틴이 출제방식을 연구할 때마다 누적됩니다.",
  "entries": [
+  {
+   "date": "2026-09-20",
+   "category": "자가학습",
+   "topic": "글의순서",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-20",
+   "category": "자가학습",
+   "topic": "안내문불일치",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-20",
+   "category": "자가학습",
+   "topic": "밑줄함의",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-20",
+   "category": "자가학습",
+   "topic": "의견영작",
+   "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again."
+  },
+  {
+   "date": "2026-09-20",
+   "category": "자동 연구 회의",
+   "topic": "안내문: 예외 조항(단, ~제외) 기반 오답의 정형 패턴화",
+   "summary": "판정 실패",
+   "rule": ""
+  },
+  {
+   "date": "2026-09-20",
+   "category": "자동 연구 회의",
+   "topic": "순서 유형: 대명사 단서와 논리 단서의 이중 잠금 설계",
+   "summary": "판정 실패",
+   "rule": ""
+  },
   {
    "date": "2026-09-20",
    "category": "자가학습",
@@ -1359,48 +1401,6 @@
    "topic": "변형공학: 강도 4.5→6.5 상향 시 추가되는 기법 세트",
    "summary": "판정 실패",
    "rule": ""
-  },
-  {
-   "date": "2026-09-04",
-   "category": "자가학습",
-   "topic": "필자주장",
-   "summary": "생성 실패(키가드 폐기 포함)",
-   "rule": ""
-  },
-  {
-   "date": "2026-09-04",
-   "category": "자가학습",
-   "topic": "문장삽입",
-   "summary": "패널 점수 82 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
-   "rule": "모든 선지의 문장 길이를 균일하게 1문장으로 통일하고, 발문에서 ‘시간적·감정적·논리적 연결성’을 구체적으로 명시하며, 삽입문의 감정·어조가 정답 문장과 일치하도록 구성하라."
-  },
-  {
-   "date": "2026-09-04",
-   "category": "측정검수",
-   "topic": "문장삽입",
-   "summary": "측정 P̂=0.67 D̂=0.00 오답효율50% ⚠변별도 낮음(D̂=0.00),죽은오답 ①④",
-   "rule": ""
-  },
-  {
-   "date": "2026-09-04",
-   "category": "자가학습",
-   "topic": "틀린문장 고쳐쓰기",
-   "summary": "패널 점수 78 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
-   "rule": "모든 출제에서 시제와 문장 완결성을 엄격히 통일하여, 문맥에 맞는 정확한 시제(예: 과거형 'used/didn't work')와 완전한 문장 구조(불완전한 어휘→완전한 구문)로 통일성을 보장하라."
-  },
-  {
-   "date": "2026-09-04",
-   "category": "자가학습",
-   "topic": "이어쓰기영작",
-   "summary": "패널 점수 78 · 기준 통과",
-   "rule": ""
-  },
-  {
-   "date": "2026-09-04",
-   "category": "코퍼스연구",
-   "topic": "원서 582권 · 실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "summary": "'to the' + 명사구'가 불필요한 관사/전치사 오류가 반복적으로 나타나며, 특히 'the topic(s)'에서 'to the'가 삭제되는 패턴이 다수 관찰된다. 또한 'during noring normal'처럼 전치사+형용사+명사 구조에서 오류가 발생하는 경우가 많다.",
-   "rule": "'to the' + 복수/단수 명사구(예: topics, ideas, concepts, conversation, tour) 앞의 'to the'는 문법적으로 불필요하므로 삭제하는 것이 옳다."
   }
  ]
 }
