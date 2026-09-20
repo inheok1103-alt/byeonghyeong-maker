@@ -1,7 +1,15 @@
 {
- "updated": "2026-09-19T23:15:28.898Z",
+ "updated": "2026-09-20T01:25:39.693Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:전체문장배열",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-20T01:14:49.290Z"
+  },
   {
    "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
    "src": "자가학습:서술형(자유)",
@@ -17,14 +25,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-09-19T18:06:19.685Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-09-19T18:13:19.703Z"
   },
   {
    "rule": "답변은 질문의 핵심 내용과 요구 사항을 정확히 파악하고, 핵심 개념을 명확히 정의하며, 구체적 예시와 충분한 설명을 포함해 자연스러운 문장으로 완전하게 서술해야 한다.",
