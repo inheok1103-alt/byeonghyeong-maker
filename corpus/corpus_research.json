@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-20T19:43:52.300Z",
+ "updated": "2026-09-21T06:41:58.909Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-21T06:41:53.590Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "이 코퍼스에서 관사·전치사·수식어·문장 부호·대문자·시제 일치 등 기본 문법 요소의 오류가 빈번히 나타났으며, 특히 동사 형태와 시제 불일치가 두드러졌다.",
+   "rule": "문장 변형 문제를 만들 때, 원문에서 관사(a, an, the), 전치사, 수식어(형용사·부사), 문장 부호, 대문자 사용, 시제와 동사형 일치 등의 문법적 오류를 찾아서 정확한 형태로 교정하도록 요구한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-20T19:43:47.129Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'명사 + 명사' 또는 '형용사 + 명사' 구문에서 관사(an/the/a) 생략 오류가 빈번하며, 특히 'illusion'→'an illusion', 'placebo'→'a placebo'와 같이 가산명사 앞에 관사가 필수적인 경우가 많다. 또한 'decease'는 동사/명사 모두로 쓰이나, 'disease'가 명사로 정착된 경우가 많아 혼동 오류가 발생한다.",
    "rule": "'가산명사(특히 단수형)'가 문장에 등장할 경우, 반드시 관사(a/an/the)를 명사 앞에 첨가하도록 문항을 설계하라. 예: 'I need ___ advice' → 'I need __ advice' (정답: 'the' 또는 'some' 등).",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T17:02:37.387Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형/현재형 동사와 명사 수 일치 오류가 빈번하며, 'smaller'와 같은 비교급 형태 오류와 'sosiety'와 같은 철자 오류가 결합되어 나타난다.",
-   "rule": "비교급(-er) 또는 최상급(-est) 형용사가 사용된 문장에서는 해당 형용사가 수식하는 명사의 수와 동사의 시제(과거/현재)가 일치하는지 확인하라. 특히 'there was/were'와 같은 비인칭 구문에서 'less'가 사용될 경우, 명사 복수형 또는 불가산명사임을 확인하라.",
    "sample": [
     "old english",
     "university press",
