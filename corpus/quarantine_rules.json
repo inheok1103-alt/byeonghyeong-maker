@@ -1,7 +1,23 @@
 {
- "updated": "2026-09-21T06:41:58.908Z",
+ "updated": "2026-09-21T14:27:48.907Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "오답 선지들을 지문과 연관된 문법 개념으로 구성하고, 정답과 의미상 반대가 아닌 유사한 개념으로 설정하며, 빈칸 위치와 지문 설명을 조정해 추론을 요구하도록 하여 변별력을 강화한다.",
+   "src": "자가학습:빈칸(어구)",
+   "score": 53,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-21T14:15:00.988Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:조건영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-21T14:27:20.486Z"
+  },
   {
    "rule": "문단은 반드시 “I”를 포함한 일관된 서술로 재작성하고, 정답이 문장에 명시되며, 모든 선택지는 동일한 형식(예: 단어·단어)으로 통일하고 문법을 교정한 뒤, 문단과 직접 연결되는 명확한 질문을 제공하라.",
    "src": "자가학습:심경변화",
@@ -33,14 +49,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-09-20T19:42:05.347Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:의견영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-09-20T06:23:59.723Z"
   },
   {
    "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T03:13:38.252Z"
-  },
-  {
-   "rule": "빈칸 문항은 지문의 핵심 주제와 빈칸의 어구가 논리적·맥락적 연계성을 유지하도록 재구성하고, 빈칸은 지문의 주제어와 직접 연결되는 구체적·실행 가능한 표현으로 수정하라.",
-   "src": "자가학습:빈칸(어구)",
-   "score": 70,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T03:13:53.660Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
