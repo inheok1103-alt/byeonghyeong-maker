@@ -1,7 +1,15 @@
 {
- "updated": "2026-09-22T19:14:41.173Z",
+ "updated": "2026-09-24T19:30:47.945Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문항을 평가할 때는 사전에 명확한 채점 기준과 점수 배점을 정의하고, 채점자에게 이를 교육하여 평가 일관성을 확보한다.",
+   "src": "자가학습:조건영작",
+   "score": 32,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-24T19:29:30.578Z"
+  },
   {
    "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
    "src": "자가학습:장문세트",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T04:02:57.760Z"
-  },
-  {
-   "rule": "모든 출제에서 필자의 주장(관찰·사실 제시 수준)을 의무·강제·과장되지 않은 중립적 표현으로 서술하고, 선지·발문이 필자의 주장 수준을 정확히 반영토록 해야 한다.",
-   "src": "자가학습:필자주장",
-   "score": 70,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T03:13:38.252Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

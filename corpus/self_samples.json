@@ -1,6 +1,44 @@
 {
- "updated": "2026-09-22T19:14:41.177Z",
+ "updated": "2026-09-24T19:30:47.949Z",
  "samples": [
+  {
+   "ts": "2026-09-24T19:26:45.258Z",
+   "type": "혼합통합형",
+   "level": "중",
+   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
+    "passage": "Members of the jury No. Name Position 1 Prof. Dr. Zeinab Al Naggar Professor of Education and TEFL Methodology and Director of the Center for Developing English Language Teaching CDELT, Ain Shams Univeristy 2 Prof. Dr. David Eskey Professor of Education And Director of the Center for American Language, University of Southern California. 3 Prof. Dr. Eleanor Black Eskey Professor of Education and Director of Los Angeles- MA TESOL Program, California State University. 4 Prof. Dr. Hayat R. Ali Professor of Education and TEFL Methodology , Minia Faculty of Education. 5 Prof. Dr. Kawther Qutb Professor of Education and TEFL Methodology and Vice Dean of Minia Faculty of Education. 6 Dr. Ahmad Sokarno Associate Professor of Linguistics and Head of the English Department, Qena Faculty of Arts, South Valley University. 7 Dr. Mary Lou MacCloskey Adjunct professor , Dept. of Applied Linguistics and ESL , Georgia State University.",
+    "choices": [],
+    "answer": 0,
+    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-09-24T19:30:11.185Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 심사위원단은 교육 및 언어학 분야의 저명한 교수 및 학자 7명으로 구성됩니다.\n주어진 단어: ( comprises / seven / distinguished )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The jury comprises seven distinguished professors and scholars in education and linguistics. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-09-21T14:27:32.100Z",
    "type": "조건영작",
@@ -207,44 +245,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'It represents the authority that silences dissenting voices.'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-19T14:42:34.312Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Confusing Words and Homonyms 25 censor (verb, noun) disallow; person who disallows Example: The soldier’s letters were censored before mailing.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 혼란스러운 단어와 동음이의어 25, 검열(동사, 명사) 금지; 금지하는 사람 예시: 군인의 편지는 우편 발송 전에 검열되었습니다. (구문 포인트: 수동태 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-19T11:14:24.664Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 영어에서 수동태는 주어를 목적어로 바꾸고, 원래 주어를 'by'로 표시하며, 전치사와 함께 쓰인 문장도 수동형으로 변환할 수 있다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

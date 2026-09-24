@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-22T19:14:41.174Z",
+ "updated": "2026-09-24T19:30:47.946Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-24T19:30:43.668Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "주어-동사 일치 오류가 가장 흔하며, 대문자와 쉼표 부착 오류도 빈번히 나타난다.",
+   "rule": "문장 내부에서 주어가 복수형이면 동사는 복수형으로 일치시켜야 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-21T06:41:53.590Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원어민의 자연스러운 문장은 '명사 + 전치사 + 명사' 구조에서 전치사가 생략되지 않으며, 동사 시제와 수 일치, 대명사 일치, 관사 사용이 철저히 지켜진다.",
    "rule": "원서 코퍼스 패턴을 기반으로, 학생들이 작성한 문장에서 전치사 생략, 동사 시제/수 불일치, 대명사/관사 오용을 발견하면 즉시 오류로 채점하고, 올바른 형태(예: 'those energy sources' → 'those energy types', 'a lot of place' → 'a lot of space')로 수정하도록 지시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T17:48:40.503Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'명사 + 명사' 또는 '형용사 + 명사' 구문에서 관사(an/the/a) 생략 오류가 빈번하며, 특히 'illusion'→'an illusion', 'placebo'→'a placebo'와 같이 가산명사 앞에 관사가 필수적인 경우가 많다. 또한 'decease'는 동사/명사 모두로 쓰이나, 'disease'가 명사로 정착된 경우가 많아 혼동 오류가 발생한다.",
-   "rule": "'가산명사(특히 단수형)'가 문장에 등장할 경우, 반드시 관사(a/an/the)를 명사 앞에 첨가하도록 문항을 설계하라. 예: 'I need ___ advice' → 'I need __ advice' (정답: 'the' 또는 'some' 등).",
    "sample": [
     "old english",
     "university press",
