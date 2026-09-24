@@ -1,7 +1,23 @@
 {
- "updated": "2026-09-24T19:30:47.945Z",
+ "updated": "2026-09-24T22:44:42.379Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문제의 선택지는 지문에 실제로 언급된 항목만으로 구성하고, 각 선택지는 동일한 길이와 문장 구조를 유지하며, 정답이 유일하게 검증될 수 있도록 지문과 직접 연결되는 구체적 근거를 포함하고, 추론 단계와 패러프레이즈 거리를 적절히 조정해 명확한 순서 판단 기준을 제공한다.",
+   "src": "자가학습:글의순서",
+   "score": 22,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-24T22:38:11.472Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:우리말해석",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-24T22:41:48.807Z"
+  },
   {
    "rule": "문항을 평가할 때는 사전에 명확한 채점 기준과 점수 배점을 정의하고, 채점자에게 이를 교육하여 평가 일관성을 확보한다.",
    "src": "자가학습:조건영작",
@@ -25,14 +41,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-09-21T14:15:00.988Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-09-21T14:27:20.486Z"
   },
   {
    "rule": "문단은 반드시 “I”를 포함한 일관된 서술로 재작성하고, 정답이 문장에 명시되며, 모든 선택지는 동일한 형식(예: 단어·단어)으로 통일하고 문법을 교정한 뒤, 문단과 직접 연결되는 명확한 질문을 제공하라.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T04:02:45.258Z"
-  },
-  {
-   "rule": "지문 내 모든 목차 항목(예: 'Contents', 'Preface', 하위 분류 포함)과 그 순서를 명시적으로 제시하여 선지의 논리적 흐름과 일치성을 보장하고, 발문의 조건을 구체화할 것.",
-   "src": "자가학습:글의순서",
-   "score": 84,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T04:02:57.760Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
