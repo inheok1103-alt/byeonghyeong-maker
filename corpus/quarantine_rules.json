@@ -1,7 +1,15 @@
 {
- "updated": "2026-09-24T22:44:42.379Z",
+ "updated": "2026-09-25T01:39:51.554Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:첫글자어휘",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-25T01:38:45.327Z"
+  },
   {
    "rule": "문제의 선택지는 지문에 실제로 언급된 항목만으로 구성하고, 각 선택지는 동일한 길이와 문장 구조를 유지하며, 정답이 유일하게 검증될 수 있도록 지문과 직접 연결되는 구체적 근거를 포함하고, 추론 단계와 패러프레이즈 거리를 적절히 조정해 명확한 순서 판단 기준을 제공한다.",
    "src": "자가학습:글의순서",
@@ -9,14 +17,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-09-24T22:38:11.472Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:우리말해석",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-09-24T22:41:48.807Z"
   },
   {
    "rule": "문항을 평가할 때는 사전에 명확한 채점 기준과 점수 배점을 정의하고, 채점자에게 이를 교육하여 평가 일관성을 확보한다.",
