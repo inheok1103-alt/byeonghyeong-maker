@@ -1,7 +1,31 @@
 {
- "updated": "2026-09-25T01:39:51.554Z",
+ "updated": "2026-09-28T07:13:21.302Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문항은 반드시 명확히 정의된 주제와 구체적이며 길이와 형식이 통일된 선택지를 제공하고, ‘윗글’이 무엇인지 구체적으로 명시해야 한다.",
+   "src": "자가학습:혼합통합형",
+   "score": 57,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-28T07:04:58.554Z"
+  },
+  {
+   "rule": "문제 지문은 완전한 문장으로 구성된 일관된 한국어로 작성하고, 영어와 한글 혼재를 금지하며, 제목·메타데이터를 제외해 본문만으로 요지를 파악할 수 있도록 한다.",
+   "src": "자가학습:요지",
+   "score": 78,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-28T07:10:04.649Z"
+  },
+  {
+   "rule": "영작문에서 특정 개념이나 고유명사를 언급할 때는 반드시 정관사 **the**를 삽입하여 자연스러운 문장을 완성하라.",
+   "src": "자가학습:조건영작",
+   "score": 30,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-09-28T07:12:15.568Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:첫글자어휘",
@@ -1577,30 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T05:50:40.744Z"
-  },
-  {
-   "rule": "모든 선지는 지문의 핵심 의미를 paraphrase하여 오답으로서의 매력도를 높이고, 선지 간 비중복성을 확보하며, 원문의 의미적 관계를 정확히 반영해야 한다.",
-   "src": "자가학습:안내문불일치",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T04:55:42.118Z"
-  },
-  {
-   "rule": "지칭명시 오류를 방지하기 위해, 'it/this/that/they' 등 대명사가 가리키는 구체적 대상을 문맥상 필수적으로 명시하거나, 지문의 해당 부분(예: 제목, 소제목, 인용구)을 직접 인용하여 오류 가능성을 차단하라.\"**",
-   "src": "자가학습:지칭명시",
-   "score": 43,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T04:56:47.595Z"
-  },
-  {
-   "rule": "원지문은 단일 괄호로 구성하되, 문장 구조를 단순화하여 수능/내신 수준에 맞게 재구성하고, 정답은 한 개의 괄호에 한 개의 동사/동명사 형태만 요구하도록 일관성 있게 설계하라.",
-   "src": "자가학습:어형변형(괄호)",
-   "score": 62,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T04:02:45.258Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
