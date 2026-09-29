@@ -1,6 +1,75 @@
 {
- "updated": "2026-09-28T07:13:21.306Z",
+ "updated": "2026-09-29T21:03:16.351Z",
  "samples": [
+  {
+   "ts": "2026-09-29T20:56:30.680Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "You’ll learn even more if you use your imagination to make the backs of your flashcards a bit more elaborate.\n\n(A) Here’s one possibility. We’ve divided the word into two parts and written them on two different lines that are at an oblique angle to each other.\n\n(B) You’ll probably think of your own mental image, one that means something to you. You could even use the word itself to create a picture that conveys the meaning of the word and that will stick in your mind to help you remember it.\n\n(C) For example, you might decorate the back of this card with a diagram of oblique lines—that is, lines that are neither parallel nor perpendicular to each other. Back Your diagram now gives you a mental image that can help you remember the word.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 5,
+    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: (A)에서 ‘단어를 두 부분으로 나눠 두 줄에 쓰는 방법’을 먼저 설명하고, (C)에서 그 예시를 제시한다는 점을 놓고, (B)에서 ‘자신의 상상’에 대해 말한 뒤에 예시를 놓아야 한다는 순서를 헷갈렸다. → 처방: 문장마다 ‘어떤 내용이 먼저 제시되는지’에 주목해, 예시가 나오는 문장은 앞서 설명된 방법이나 제안 뒤에 와야 함을 기억하라.\n② 진단: (B)에서 ‘상상’에 대해 말한 뒤 바로 (A) ‘방법’이 나오고, (C) ‘예시’가 나오는 순서를 알지 못해, (A)를 두 번째에 놓았다. → 처방: ‘방법’이란 문장은 ‘상상’에 대한 제안이 나온 뒤에 와야 함을 인지하고, 순서를 정리할 때 ‘방법’이 먼저 오도록 조정하라.\n③ 진단: (C)에서 예시가 나오고 그 뒤에 (A) ‘방법’이 온다고 착각해, (B) ‘상상’이 가장 먼저 와야 함을 놓쳤다. → 처방: 각 문단이 ‘상상’→‘방법’→‘예시’ 순으로 진행되는 구조임을 명확히 파악하고, 예시가 마지막에 와야 함을 기억하라.\n④ 진단: (C) 예시를 가장 먼저 읽고, 그 뒤에 (A) ‘방법’과 (B) ‘상상’이 온다고 잘못 판단했다. → 처방: 문장 순서를 정리할 때 ‘상상’이 먼저, ‘방법’이 그 다음, ‘예시’가 마지막에 오는 패턴을 숙지하고, 각 문단이 어떤 역할을 하는지 구분하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-09-29T21:02:27.655Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "You’ll learn even more if you (A) [use your imagination / use your imaginations] to make the backs of your flashcards a bit more elaborate. For example, you might decorate the back of this card with a diagram of (B) [obliques lines / oblique lines]—that is, lines that are (C) [neither parallel nor perpendicular / neither parallels nor perpendiculars] to each other. Back Your diagram now gives you a mental image that can help you remember the word. You’ll probably think of your own mental image, one that means something to you. You could even use the word itself to create a picture that conveys the meaning of the word and that will stick in your mind to help you remember it. Here’s one possibility. We’ve divided the word into two parts and written them on two different lines that are at an oblique angle to each other. Back",
+    "choices": [
+     "(A) use your imagination - (B) oblique lines - (C) neither parallel nor perpendicular",
+     "(A) use your imaginations - (B) obliques lines - (C) neither parallel nor perpendicular",
+     "(A) use your imagination - (B) oblique lines - (C) neither parallels nor perpendiculars",
+     "(A) use your imaginations - (B) obliques lines - (C) neither parallels nor perpendiculars",
+     "(A) use your imagination - (B) obliques lines - (C) neither parallels nor perpendiculars"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) use your imagination - (B) oblique lines - (C) neither parallel nor perpendicular. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-09-29T21:03:00.944Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 9 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 9단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 상상력 넘치는 다이어그램으로 플래시 카드 뒷면을 강화하면 단어 리콜이 강화됩니다.\n주어진 단어: ( enhancing / flashcard / backs )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Enhancing flashcard backs with imaginative diagrams strengthens word recall. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-09-28T07:06:55.079Z",
    "type": "혼합통합형",
@@ -191,69 +260,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Pronouns agree in number with antecedents: plural antecedents require plural pronouns. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-09-21T06:38:45.956Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Ambiguity Precision",
-     "Misinterpretation Explanation",
-     "Confusion → Clarity",
-     "Uncertainty Insight",
-     "Chaos Order"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'The passage explains how to distinguish commonly confused English words and homonyms by giving clear definitions and illustrative examples.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The passage explains how to distinguish commonly confused English words and homonyms by giving clear definitions and illustrative examples.]"
-   }
-  },
-  {
-   "ts": "2026-09-21T06:41:23.349Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] core center or crucial part corps trained group corpse dead body cosign to sign along with cosine a trigonometry term council a group of people meeting for a purpose counsel (verb, noun) advise; advice, an attorney creak a sound creek a stream crews many groups cruise a trip or vacation by sea criteria plural of criterion criterion a standard for evaluating or testing something cue a hint; a stimulus queue a line of people waiting currant type of small berry current up to date curser someone who swears or wishes misfortune on another cursor a blinking symbol indicating position on a computer screen dam a barrier obstructing the ﬂow of liquid damn a swear word or curse dammed blocked from ﬂowing damned doomed",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-09-20T19:31:10.610Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: s)\n[영영풀이] Any of the manners by which living beings perceive the physical world: for humans sight, smell, hearing, touch, taste.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] sense (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
    }
   }
  ]
