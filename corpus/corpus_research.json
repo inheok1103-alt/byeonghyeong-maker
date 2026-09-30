@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-30T07:02:22.129Z",
+ "updated": "2026-09-30T14:03:53.711Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-30T14:03:46.641Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "이 코퍼스에서는 주어-동사 일치와 쉼표 사용이 가장 흔한 오류이며, CEFR A2–B1 수준에서 점진적으로 난이도를 높여야 한다.",
+   "rule": "문장별 주어-동사 일치와 쉼표 사용 오류를 중심으로, CEFR A2에서는 단순한 일치와 쉼표, B1에서는 복수형 동사 일치와 부사구 위치를 포함한 교정 문제를 출제한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-30T07:02:18.489Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'most of + 복수명사'는 'most + 복수명사'로 축약하는 것이 자연스럽고, 'be attracted to'는 'attractive to'보다 'attracted to'가 문법적으로 옳다. 또한 'prefer A rather than B'는 'prefer A to B' 또는 'prefer A rather than B'로 통일해야 한다.",
    "rule": "CEFR B1 수준 내신 문제에서 'most of + 복수명사'를 'most + 복수명사'로, 'be attracted to'를 'attracted to'로, 'prefer A rather than B'를 'prefer A to B'로 수정하는 오류를 반드시 포함하여 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T21:47:42.439Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "복수형 오류와 관사 오류가 혼재된 문장에서, 복수형 오류가 관사 오류로 일반화될 수 있음을 확인했다. 특히 'reasons' → 'these reasons' 변환에서 복수형과 관사의 일치 규칙이 두드러진다.",
-   "rule": "복수형 명사가 관사와 함께 쓰일 때, 복수형이 옳은지 여부를 판단하는 문제에서 'these/those + 복수명사' 구조가 오답으로 자주 등장하므로, 복수형과 관사의 일치를 엄밀히 검증하는 문항을 출제하라.",
    "sample": [
     "old english",
     "university press",

@@ -1,66 +1,66 @@
 {
- "updated": "2026-09-30T07:02:22.135Z",
+ "updated": "2026-09-30T14:03:53.719Z",
  "latest": {
-  "at": "2026-09-30T07:02:22.135Z",
-  "atKST": "2026-09-30 16:02 KST",
+  "at": "2026-09-30T14:03:53.718Z",
+  "atKST": "2026-09-30 23:03 KST",
   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 1개 · 검증샘플 1개 · 회의 2건",
   "newRules": [
    {
-    "rule": "문장 변형 시 시제 일관성을 유지하고, 주어와 동사의 수 일치, 전치사와 관사의 정확한 사용을 반드시 보정한다.",
-    "src": "코퍼스연구:원서 문체 패턴을 활용한 변형"
+    "rule": "문장별 주어-동사 일치와 쉼표 사용 오류를 중심으로, CEFR A2에서는 단순한 일치와 쉼표, B1에서는 복수형 동사 일치와 부사구 위치를 포함한 교정 문제를 출제한다.",
+    "src": "코퍼스연구:CEFR 밴드를 활용한 난이도 조정"
    }
   ],
   "research": [
    {
     "cat": "자가학습",
-    "topic": "어법(밑줄)",
+    "topic": "안내문일치",
+    "summary": "패널 점수 58 · 규칙 1건 격리(quarantined, 사람 승인 대기)"
+   },
+   {
+    "cat": "자가학습",
+    "topic": "어휘(밑줄)",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "틀린문장 고쳐쓰기",
+    "topic": "본문찾아쓰기",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "네모어법ABC",
-    "summary": "생성 실패(키가드 폐기 포함)"
-   },
-   {
-    "cat": "자가학습",
-    "topic": "문장전환",
+    "topic": "조건영작",
     "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)"
    },
    {
     "cat": "코퍼스연구",
-    "topic": "원서 582권 · 원서 문체 패턴을 활용한 변형",
-    "summary": "코퍼스에서 흔히 나타나는 오류는 시제 불일치, 주어-동사 일치, 전치사·관사 사용 부정확성 등이며, 이는 변형 문제를 만들 때 주의할 핵심 요소다."
+    "topic": "원서 582권 · CEFR 밴드를 활용한 난이도 조정",
+    "summary": "이 코퍼스에서는 주어-동사 일치와 쉼표 사용이 가장 흔한 오류이며, CEFR A2–B1 수준에서 점진적으로 난이도를 높여야 한다."
    },
    {
     "cat": "자동 연구 회의",
-    "topic": "삽입 유형: 주어진 문장의 지시어 해소 위치 유일성 검증법",
+    "topic": "서술형: 우리말 해석 채점에서 직역·의역 허용 범위",
     "summary": "판정 실패"
    },
    {
     "cat": "자동 연구 회의",
-    "topic": "무관문장: 소재 동일·논지 이탈(T16) 문장의 창작 절차",
+    "topic": "서술형: 문장전환(태·분사·관계사·가정법)별 필수 감점 포인트",
     "summary": "판정 실패"
    }
   ],
   "corpusResearch": [
    {
-    "focus": "원서 문체 패턴을 활용한 변형",
-    "rule": "문장 변형 시 시제 일관성을 유지하고, 주어와 동사의 수 일치, 전치사와 관사의 정확한 사용을 반드시 보정한다."
+    "focus": "CEFR 밴드를 활용한 난이도 조정",
+    "rule": "문장별 주어-동사 일치와 쉼표 사용 오류를 중심으로, CEFR A2에서는 단순한 일치와 쉼표, B1에서는 복수형 동사 일치와 부사구 위치를 포함한 교정 문제를 출제한다."
    }
   ],
   "meetings": [
    {
-    "topic": "삽입 유형: 주어진 문장의 지시어 해소 위치 유일성 검증법",
+    "topic": "서술형: 우리말 해석 채점에서 직역·의역 허용 범위",
     "verdict": "보류",
     "how": ""
    },
    {
-    "topic": "무관문장: 소재 동일·논지 이탈(T16) 문장의 창작 절차",
+    "topic": "서술형: 문장전환(태·분사·관계사·가정법)별 필수 감점 포인트",
     "verdict": "보류",
     "how": ""
    }
@@ -72,12 +72,16 @@
    "samplesStored": 12
   },
   "sample": {
-   "type": "문장전환",
-   "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+   "type": "조건영작",
+   "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: D-구조는 주제별 역할을 인코딩하여 서술어 파생 주체 및 개체 위치를 할당합니다.\n주어진 단어: ( structure / encodes / thematic )",
    "answer": 0
   }
  },
  "history": [
+  {
+   "at": "2026-09-30T14:03:53.718Z",
+   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 1개 · 검증샘플 1개 · 회의 2건"
+  },
   {
    "at": "2026-09-30T07:02:22.135Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 1개 · 검증샘플 1개 · 회의 2건"
@@ -745,10 +749,6 @@
   {
    "at": "2026-08-22T16:45:49.147Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 3개 · 검증샘플 3개 · 회의 2건"
-  },
-  {
-   "at": "2026-08-22T15:38:15.680Z",
-   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 3개 · 검증샘플 1개 · 회의 2건"
   }
  ]
 }
