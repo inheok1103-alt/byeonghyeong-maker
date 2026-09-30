@@ -1,51 +1,66 @@
 {
- "updated": "2026-09-30T00:37:04.681Z",
+ "updated": "2026-09-30T07:02:22.135Z",
  "latest": {
-  "at": "2026-09-30T00:37:04.680Z",
-  "atKST": "2026-09-30 09:37 KST",
-  "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 0개 · 회의 2건",
-  "newRules": [],
+  "at": "2026-09-30T07:02:22.135Z",
+  "atKST": "2026-09-30 16:02 KST",
+  "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 1개 · 검증샘플 1개 · 회의 2건",
+  "newRules": [
+   {
+    "rule": "문장 변형 시 시제 일관성을 유지하고, 주어와 동사의 수 일치, 전치사와 관사의 정확한 사용을 반드시 보정한다.",
+    "src": "코퍼스연구:원서 문체 패턴을 활용한 변형"
+   }
+  ],
   "research": [
    {
     "cat": "자가학습",
-    "topic": "주제",
+    "topic": "어법(밑줄)",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "필자주장",
+    "topic": "틀린문장 고쳐쓰기",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "문장삽입",
+    "topic": "네모어법ABC",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "배열영작",
-    "summary": "생성 실패(키가드 폐기 포함)"
+    "topic": "문장전환",
+    "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)"
+   },
+   {
+    "cat": "코퍼스연구",
+    "topic": "원서 582권 · 원서 문체 패턴을 활용한 변형",
+    "summary": "코퍼스에서 흔히 나타나는 오류는 시제 불일치, 주어-동사 일치, 전치사·관사 사용 부정확성 등이며, 이는 변형 문제를 만들 때 주의할 핵심 요소다."
    },
    {
     "cat": "자동 연구 회의",
-    "topic": "빈칸 유형: 결론부 어구 빈칸의 상위어 패러프레이즈 거리 기준 수립",
+    "topic": "삽입 유형: 주어진 문장의 지시어 해소 위치 유일성 검증법",
     "summary": "판정 실패"
    },
    {
     "cat": "자동 연구 회의",
-    "topic": "빈칸 유형: 본문 어휘 재활용 오답의 매력도-복수정답 위험 균형점",
+    "topic": "무관문장: 소재 동일·논지 이탈(T16) 문장의 창작 절차",
     "summary": "판정 실패"
    }
   ],
-  "corpusResearch": [],
+  "corpusResearch": [
+   {
+    "focus": "원서 문체 패턴을 활용한 변형",
+    "rule": "문장 변형 시 시제 일관성을 유지하고, 주어와 동사의 수 일치, 전치사와 관사의 정확한 사용을 반드시 보정한다."
+   }
+  ],
   "meetings": [
    {
-    "topic": "빈칸 유형: 결론부 어구 빈칸의 상위어 패러프레이즈 거리 기준 수립",
+    "topic": "삽입 유형: 주어진 문장의 지시어 해소 위치 유일성 검증법",
     "verdict": "보류",
     "how": ""
    },
    {
-    "topic": "빈칸 유형: 본문 어휘 재활용 오답의 매력도-복수정답 위험 균형점",
+    "topic": "무관문장: 소재 동일·논지 이탈(T16) 문장의 창작 절차",
     "verdict": "보류",
     "how": ""
    }
@@ -56,9 +71,17 @@
    "colloc": 4000,
    "samplesStored": 12
   },
-  "sample": null
+  "sample": {
+   "type": "문장전환",
+   "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+   "answer": 0
+  }
  },
  "history": [
+  {
+   "at": "2026-09-30T07:02:22.135Z",
+   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 1개 · 검증샘플 1개 · 회의 2건"
+  },
   {
    "at": "2026-09-30T00:37:04.680Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 0개 · 회의 2건"
@@ -726,10 +749,6 @@
   {
    "at": "2026-08-22T15:38:15.680Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 3개 · 검증샘플 1개 · 회의 2건"
-  },
-  {
-   "at": "2026-08-22T14:45:55.860Z",
-   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 3개 · 검증샘플 0개 · 회의 2건"
   }
  ]
 }

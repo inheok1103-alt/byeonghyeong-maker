@@ -1,8 +1,22 @@
 {
- "updated": "2026-09-30T00:37:04.674Z",
+ "updated": "2026-09-30T07:02:22.129Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-09-30T07:02:18.489Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "코퍼스에서 흔히 나타나는 오류는 시제 불일치, 주어-동사 일치, 전치사·관사 사용 부정확성 등이며, 이는 변형 문제를 만들 때 주의할 핵심 요소다.",
+   "rule": "문장 변형 시 시제 일관성을 유지하고, 주어와 동사의 수 일치, 전치사와 관사의 정확한 사용을 반드시 보정한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-28T07:13:17.473Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "복수형 오류와 관사 오류가 혼재된 문장에서, 복수형 오류가 관사 오류로 일반화될 수 있음을 확인했다. 특히 'reasons' → 'these reasons' 변환에서 복수형과 관사의 일치 규칙이 두드러진다.",
    "rule": "복수형 명사가 관사와 함께 쓰일 때, 복수형이 옳은지 여부를 판단하는 문제에서 'these/those + 복수명사' 구조가 오답으로 자주 등장하므로, 복수형과 관사의 일치를 엄밀히 검증하는 문항을 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T20:53:23.668Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'be + useful/possible + to V'와 같은 능동태+의무/가능성 조동사+to 부정사 구조가 빈번하며, 'one way or the other'가 'in way or the other one'으로 잘못 사용되는 패턴이 관찰된다. 또한 'broad knowledge'와 같은 연어가 'board'로 오용되는 경우가 많다.",
-   "rule": "'be + [형용사] + to V' 구조(예: useful/possible to acquire)에서 형용사가 'be' 뒤에 오도록 하며, 'one way or the other'는 절대 'in way or the other one'으로 쓰지 않도록 오답지 3지선다에 포함시킨다.",
    "sample": [
     "old english",
     "university press",
