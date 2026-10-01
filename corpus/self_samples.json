@@ -1,6 +1,41 @@
 {
- "updated": "2026-10-01T00:05:55.203Z",
+ "updated": "2026-10-01T13:37:27.852Z",
  "samples": [
+  {
+   "ts": "2026-10-01T13:31:31.422Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "민주주의가 번성하도록 개인이 자기 이익을 우선시하고 다양성을 배제하려고.",
+     "민주주의가 번성하도록 교육과 훈련을 강화하려고.",
+     "민주주의가 번성하도록 개인의 참여와 신뢰를 강조하려고.",
+     "민주주의가 번성하도록 개인의 적극적 참여와 신뢰, 다양성 수용, 자유를 위한 희생을 강조하려고.",
+     "민주주의가 번성하도록 개인의 다양한 행동을 증진하려고."
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'The pioneer heritage celebrates the conviction that democracy thrives when individuals actively participate, trust the common man, embrace diversity, and are willing to sacrifice personal freedom to safeguard liberty.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n① 진단: 지문에서 'leave the individual a part to play in a free society'는 개인이 자유로운 사회에서 역할을 하도록 한다는 뜻이며, '자기 이익을 우선시하고 다양성을 배제'와는 거리가 멀다. → 처방: 문장 주어와 목적어를 먼저 파악하고, 'part to play'를 '역할을 하다'로 해석하라.\n② 진단: 지문은 'trusted in the common man, in his tolerance, his ability to adjust differences'라 교육과 훈련이 아니라 신뢰와 관용을 강조한다. → 처방: 주요 키워드(신뢰, tolerance)를 중심으로 해석하라.\n③ 진단: 지문은 'and to work out an American type from the contributions of all nations'에서 다양성과 희생을 명시적으로 언급한다. → 처방: 문장 끝부분까지 읽고, 'diversity'와 'sacrifice'를 포함하라.\n⑤ 진단: 지문은 'even the temporary sacrifice of his individual freedom and his life'를 강조하며, 개인의 다양한 행동이 아니라 희생을 강조한다. → 처방: 문장 중 'sacrifice'를 '희생'으로 해석하고, 개인의 자유가 희생되는 상황을 파악하라.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: The pioneer heritage celebrates the conviction that democracy thrives when individuals actively participate, trust the common man, embrace diversity, and are willing to sacrifice personal freedom to safeguard liberty.]"
+   }
+  },
   {
    "ts": "2026-09-30T23:58:55.311Z",
    "type": "전체문장배열",
@@ -247,25 +282,6 @@
     ],
     "answer": 3,
     "explanation": "원문 전개 순서는 (B) - (C) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-24T22:42:05.895Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] In that sentence, one main character is in the adjective governmental; the other, market, is in the object of a preposition: of market evolution.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 그 문장에서는 한 주인공이 형용사 \"governmental\"에 속해 있고, 다른 주인공인 \"market\"은 전치사 \"of market evolution\"의 목적어에 있다. (구문 포인트: 전치사구의 목적어 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
