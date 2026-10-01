@@ -1,6 +1,31 @@
 {
- "updated": "2026-09-30T19:36:46.698Z",
+ "updated": "2026-10-01T00:05:55.203Z",
  "samples": [
+  {
+   "ts": "2026-09-30T23:58:55.311Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① 2- There are no statistically significant mean differences between the male subjects’ achievement and the female subjects’ achievement on the post-test.\n② Measuring the effect of a suggested reading program on developing primary stage prospective teachers’ basic reading skills.\n③ Hypotheses of the study 1- There are no statistically significant mean differences between the subjects’ achievement on the pre-test and that on the post-test.\n④ Measuring the difference, if any, between female and male subjects’ achievement in the test of basic reading skills.\n⑤ 3- There is no statistically significant correlation between the achievement of the subjects on the proficiency test and on the posttest of basic reading.\n⑥ Measuring the correlation, if any, between the language proficiency level of the subjects and their achievement level in the test of basic reading skills.\n⑦ The study aimed at: 1.\n⑧ Significance of the study For Primary Stage prrospective teachers of English, this study is of special importance for the following considerations:",
+    "choices": [
+     "⑦-②-④-⑥-③-①-⑤-⑧",
+     "⑦-②-④-⑥-①-③-⑤-⑧",
+     "②-⑦-④-⑥-③-①-⑤-⑧",
+     "⑦-④-②-⑥-③-①-⑤-⑧",
+     "⑦-③-②-⑤-⑥-①-④-⑧"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ⑦-②-④-⑥-③-①-⑤-⑧. 흐름: ⑦ → ② → ④ → ⑥ → ③ → ① → ⑤ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-09-30T14:03:22.496Z",
    "type": "조건영작",
@@ -241,25 +266,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 그 문장에서는 한 주인공이 형용사 \"governmental\"에 속해 있고, 다른 주인공인 \"market\"은 전치사 \"of market evolution\"의 목적어에 있다. (구문 포인트: 전치사구의 목적어 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-24T19:26:45.258Z",
-   "type": "혼합통합형",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
-    "passage": "Members of the jury No. Name Position 1 Prof. Dr. Zeinab Al Naggar Professor of Education and TEFL Methodology and Director of the Center for Developing English Language Teaching CDELT, Ain Shams Univeristy 2 Prof. Dr. David Eskey Professor of Education And Director of the Center for American Language, University of Southern California. 3 Prof. Dr. Eleanor Black Eskey Professor of Education and Director of Los Angeles- MA TESOL Program, California State University. 4 Prof. Dr. Hayat R. Ali Professor of Education and TEFL Methodology , Minia Faculty of Education. 5 Prof. Dr. Kawther Qutb Professor of Education and TEFL Methodology and Vice Dean of Minia Faculty of Education. 6 Dr. Ahmad Sokarno Associate Professor of Linguistics and Head of the English Department, Qena Faculty of Arts, South Valley University. 7 Dr. Mary Lou MacCloskey Adjunct professor , Dept. of Applied Linguistics and ESL , Georgia State University.",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
