@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-02T12:53:07.876Z",
+ "updated": "2026-10-02T18:40:19.580Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-02T18:40:14.349Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "코퍼스에서 흔히 나타나는 문법 오류는 주로 쉼표와 공백, 주어‑동사 일치, 단어 선택에 관한 것이며, CEFR 레벨에 맞춰 난이도를 조정할 때는 어휘와 구조를 간소화하고 오류를 교정해야 한다.",
+   "rule": "문장 안의 불필요한 쉼표와 공백을 정리하고, 어휘 수준을 CEFR B2 이하로 조정해 문법 오류를 교정한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-02T05:55:00.723Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "영어에서 결과나 상태 변화 동사(become worse/worsen) 사용 시, 'to be + 형용사'보다 'to + 동사원형'이 자연스러운 경향이 강하다. 또한 '~하게 만들다' 표현은 'make + 목적어 + 형용사'가 아닌 'make + 목적어 + 동사원형' 구조를 선호한다.",
    "rule": "CEFR B1 수준 내신 문제에서, '~하게 만들다' 표현을 쓸 경우 'make + 목적어 + 동사원형' 구조(예: make people happy)를 반드시 사용하도록 오답 선지로 제시하고, 'make + 목적어 + 형용사' 구조(예: make the people happy)를 정답으로 처리한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T23:41:50.015Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'old English'·'Middle English'·'English grammar' 등 명사구에 관사가 자주 생략되지 않음을 확인할 수 있다. 또한 'reason relations'·'direct object' 등 문법 용어에서도 관사 사용 패턴이 규칙적임을 알 수 있다.",
-   "rule": "명사구가 특정 언어(English)·시대(old, middle) 또는 문법 용어(reason relations, direct object)일 경우, 관사를 반드시 포함하도록 변형 문제를 설계하라. 예: 'He studied old English.' → 'He studied the old English.'로 오류 유도.",
    "sample": [
     "old english",
     "university press",

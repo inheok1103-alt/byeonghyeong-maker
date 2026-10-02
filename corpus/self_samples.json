@@ -1,6 +1,60 @@
 {
- "updated": "2026-10-02T12:53:07.879Z",
+ "updated": "2026-10-02T18:40:19.583Z",
  "samples": [
+  {
+   "ts": "2026-10-02T18:37:52.871Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Quick Quiz #26 Match each word in the first column with its definition in the second column. Check your answers here. 1. construe a. admitting guilt 2. consummate b. interpret 3. contentious c. perfect 4. contiguous d. labored 5. contingent e. dependent 6. contrite f. abundant 7. contrived g. adjoining 8. conventional h. argumentative 9. convivial i. festive 10. copious j. common COROLLARY (KOR uh ler ee) n something that follows; a natural consequence In mathematics, a corollary is a law that can be deduced without further proof from a law that has already been proven. • <u>Bloodshed and death are corollaries of any declaration of war.</u> • Higher prices were a corollary of the two companies’ agreement not to compete. CORROBORATE (kuh ROB uh rayt) v to confirm; to back up with evidence • I knew my statement was correct when my colleague corroborated it. • Henny Penny’s contention that the sky was falling could not be corroborated. That is, no one was able to find any fallen sky.",
+    "choices": [
+     "It asserts that all significant events produce profound changes in human experience over time.",
+     "It suggests that any act of war inevitably results in violence and loss of life.",
+     "It highlights that technology is advancing rapidly in the 21st century and its impact on societies.",
+     "It indicates that war frequently causes economic hardship for the affected regions and local communities.",
+     "It argues that war can bring about peace and stability to the region."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'It suggests that any act of war inevitably results in violence and loss of life.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘corollary’가 ‘모든 중요한 사건이 인간 경험에 깊은 변화를 가져온다’는 의미로 잘못 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 문맥에서 ‘corollary’가 ‘결과’임을 인식하고, ‘전쟁 선언’과 ‘피해’ 사이의 관계만을 파악하라.\n③ 진단: ‘corollary’를 ‘기술 발전’과 연결지어 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 정의와 문맥을 분리해 ‘corollary’가 ‘추가적 결과’임을 기억하고, 기술과 무관한 내용임을 확인하라.\n④ 진단: ‘corollary’를 ‘경제적 고난’과 연결지어 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: ‘corollary’가 ‘피해’라는 부정적 결과임을 인지하고, 경제적 고난이 언급되지 않았음을 주의하라.\n⑤ 진단: ‘corollary’를 ‘평화와 안정을 가져온다’는 긍정적 결과로 오해하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 문장에 나타난 ‘피해’와 ‘죽음’이 부정적 결과임을 인식하고, 긍정적 해석은 제외하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-02T18:40:02.055Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 추론은 자연스러운 결과이며 확증은 증거를 확인합니다.\n주어진 단어: ( corollary / natural / consequence )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] A corollary is a natural consequence, while corroborate confirms evidence. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-02T12:52:45.688Z",
    "type": "조건영작",
@@ -239,59 +293,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Enhancing flashcard backs with imaginative diagrams strengthens word recall. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-09-28T07:06:55.079Z",
-   "type": "혼합통합형",
-   "level": "중",
-   "audit": "세트 3문항(제목·요지·내용불일치) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "윗글의 내용과 일치하며 어법상 옳은 문장은?",
-    "passage": "Ray English 지문 전문 · 원문 그대로 24번 제목 · T I T L E 도파민의 시소 제목 스크롤로 급등한 도파민이 항상성 때문에 기준선 아래로 급락한다 — '도파민 시소' 소재 소셜미디어와 도파민 Social media and dopamine 주제 스크롤로 급등한 도파민은 항상성 때문에 기준선 아래로 급락한다 Dopamine spikes from scrolling crash below baseline 제목 도파민 시소 The Dopamine Seesaw: How Scrolling Makes You Feel 한눈에 소셜미디어를 스크롤하면 도파민이 급등해 기분이 좋아지지만, 뇌는 늘 균형(항상성)을 추구하므로 곧 기준선 ‘아래로’ 급락해 오 히려 더 우울해 진다. ‘오른 것은 내려온다’는 원리가 작동하는 ‘도파민 시소’가 글의 핵심이다. 지문 전문 — 시험지 원문 Let’s look at what is occurring in your brain when scrolling on social media, a quick dopamine activity. You open your social media apps and immediately you notice you feel really good, your dopamine levels increase incredibly fast and pleasure is experienced in your brain. The challenge this creates is as with everything in our universe: as the laws of physics explain, ‘what goes up, must come down’. Your brain and body are always seeking something called ‘homeostasis’, which simply means balance. With this in mind, when dopamine levels increase incredibly fast when scrolling social media, the brain then thinks, ‘Wow, how are my dopamine levels so high?’ In order to achieve homeostasis, or balance, the dopamine then has to quickly drop an equal amount below your baseline level in order to rebalance, making you feel even worse than before you started scrolling. 지문 전문 · 원문 그대로",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 3개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-28T07:10:39.986Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 1,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "소셜 미디어 스크롤은 일시적 쾌감 후 기분이 나빠지는 결과를 낳는다.",
-     "소셜 미디어 스크롤은 순간적인 즐거움을 주지만, 장기적으로는 생산성을 높인다.",
-     "소셜 미디어 스크롤은 모든 사람에게 기분을 나쁘게 만든다.",
-     "소셜 미디어 스크롤은 뇌의 도파민 분비를 증가시켜 학습 능력을 향상시킨다.",
-     "소셜 미디어 스크롤은 기분이 나빠지는 대신 에너지를 회복시킨다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Scrolling on social media triggers a rapid dopamine spike that, due to the brain’s homeostatic regulation, subsequently falls below baseline, leaving you feeling worse than before.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 선지 2를 고른 학생은 즐거움과 생산성의 연결을 착각했으며, 지문은 기분이 나빠지는 결과만 제시한다. → 처방: 문장 끝부분이 ‘기분이 나빠진다’는 점을 놓치지 말고, ‘생산성’ 언급이 없음을 확인하라.\n③ 진단: 선지 3을 고른 학생은 ‘모든 사람’이라는 일반화를 해석했으나, 지문은 개인 차이를 언급하지 않는다. → 처방: 전제와 결론을 구분해, ‘모든 사람’이 아니라 ‘일부’라는 표현을 찾아라.\n④ 진단: 선지 4를 고른 학생은 도파민이 학습에 도움이 된다고 착각했으나, 지문은 기분이 나빠지는 결과만 언급한다. → 처방: 도파민과 학습의 관계를 언급한 문장을 찾지 못했으니, 문장을 재확인하라.\n⑤ 진단: 선지 5를 고른 학생은 기분이 나빠지는 대신 에너지 회복을 연관지었으나, 지문은 에너지 회복에 대한 언급이 없다. → 처방: 에너지 회복이 언급된 문장을 찾지 못했으니, 문장을 다시 읽어라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Scrolling on social media triggers a rapid dopamine spike that, due to the brain’s homeostatic regulation, subsequently falls below baseline, leaving you feeling worse than before.]"
    }
   }
  ]
