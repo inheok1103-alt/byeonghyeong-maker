@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-02T05:56:43.268Z",
+ "updated": "2026-10-02T12:53:07.879Z",
  "samples": [
+  {
+   "ts": "2026-10-02T12:52:45.688Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 일관성과 집중력을 보장하기 위해 글을 쓰기 전에 명확하고 일관된 주제를 식별합니다.\n주어진 단어: ( identify / clear / consistent )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Identify clear, consistent topics before writing to ensure coherence and focus. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-02T05:51:29.620Z",
    "type": "주제",
@@ -273,25 +292,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Scrolling on social media triggers a rapid dopamine spike that, due to the brain’s homeostatic regulation, subsequently falls below baseline, leaving you feeling worse than before.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 선지 2를 고른 학생은 즐거움과 생산성의 연결을 착각했으며, 지문은 기분이 나빠지는 결과만 제시한다. → 처방: 문장 끝부분이 ‘기분이 나빠진다’는 점을 놓치지 말고, ‘생산성’ 언급이 없음을 확인하라.\n③ 진단: 선지 3을 고른 학생은 ‘모든 사람’이라는 일반화를 해석했으나, 지문은 개인 차이를 언급하지 않는다. → 처방: 전제와 결론을 구분해, ‘모든 사람’이 아니라 ‘일부’라는 표현을 찾아라.\n④ 진단: 선지 4를 고른 학생은 도파민이 학습에 도움이 된다고 착각했으나, 지문은 기분이 나빠지는 결과만 언급한다. → 처방: 도파민과 학습의 관계를 언급한 문장을 찾지 못했으니, 문장을 재확인하라.\n⑤ 진단: 선지 5를 고른 학생은 기분이 나빠지는 대신 에너지 회복을 연관지었으나, 지문은 에너지 회복에 대한 언급이 없다. → 처방: 에너지 회복이 언급된 문장을 찾지 못했으니, 문장을 다시 읽어라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Scrolling on social media triggers a rapid dopamine spike that, due to the brain’s homeostatic regulation, subsequently falls below baseline, leaving you feeling worse than before.]"
-   }
-  },
-  {
-   "ts": "2026-09-28T07:12:55.337Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 스크롤은 도파민을 스파이크한 다음 항상성을 유지하여 기준선 아래로 떨어뜨립니다.\n주어진 단어: ( scrolling / spikes / dopamine )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Scrolling spikes dopamine, then homeostasis forces a drop below baseline. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
