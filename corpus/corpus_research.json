@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-02T00:13:08.152Z",
+ "updated": "2026-10-02T05:56:43.265Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-02T05:55:00.723Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "이 코퍼스에서는 관사, 복수형, 동사 시제, 명사형 오류가 빈번히 나타난다.",
+   "rule": "문항을 만들 때 관사와 복수형 사용, 동사 시제와 주어 일치, 명사형 변형 등에서 흔히 발생하는 오류를 포함해 교정하도록 요구한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-09-30T14:03:46.641Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'old English'·'Middle English'·'English grammar' 등 명사구에 관사가 자주 생략되지 않음을 확인할 수 있다. 또한 'reason relations'·'direct object' 등 문법 용어에서도 관사 사용 패턴이 규칙적임을 알 수 있다.",
    "rule": "명사구가 특정 언어(English)·시대(old, middle) 또는 문법 용어(reason relations, direct object)일 경우, 관사를 반드시 포함하도록 변형 문제를 설계하라. 예: 'He studied old English.' → 'He studied the old English.'로 오류 유도.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-25T22:55:11.060Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'most of + 복수명사'는 'most + 복수명사'로 축약하는 것이 자연스럽고, 'be attracted to'는 'attractive to'보다 'attracted to'가 문법적으로 옳다. 또한 'prefer A rather than B'는 'prefer A to B' 또는 'prefer A rather than B'로 통일해야 한다.",
-   "rule": "CEFR B1 수준 내신 문제에서 'most of + 복수명사'를 'most + 복수명사'로, 'be attracted to'를 'attracted to'로, 'prefer A rather than B'를 'prefer A to B'로 수정하는 오류를 반드시 포함하여 출제하라.",
    "sample": [
     "old english",
     "university press",
