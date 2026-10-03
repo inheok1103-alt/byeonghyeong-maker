@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-02T23:14:34.766Z",
+ "updated": "2026-10-03T02:14:05.115Z",
  "samples": [
+  {
+   "ts": "2026-10-03T02:11:10.631Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP).\n\nEcho questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as complements of the relevant verbs, and subsequently get moved to the front of the overall clause. But what position do they get moved into, in non-echoic questions like (1)? ( ① ) The answer is obviously that they are moved into some position preceding the inverted auxiliary. ( ② ) Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP. ( ③ ) If so, a sentence like (2c) Who was she dating? ( ④ ) will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q): ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-02T18:37:52.871Z",
    "type": "밑줄함의",
@@ -274,25 +299,6 @@
     ],
     "answer": 1,
     "explanation": "정답 조합: (A) use your imagination - (B) oblique lines - (C) neither parallel nor perpendicular. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-29T21:03:00.944Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 9 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 9단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 상상력 넘치는 다이어그램으로 플래시 카드 뒷면을 강화하면 단어 리콜이 강화됩니다.\n주어진 단어: ( enhancing / flashcard / backs )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Enhancing flashcard backs with imaginative diagrams strengthens word recall. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
