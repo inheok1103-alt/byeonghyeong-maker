@@ -1,6 +1,83 @@
 {
- "updated": "2026-10-04T00:55:31.856Z",
+ "updated": "2026-10-04T07:15:44.940Z",
  "samples": [
+  {
+   "ts": "2026-10-04T07:04:56.473Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 5번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.5,
+    "D": 0.5,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ①②③"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "COUNTERFACTUALS 91 that by saying that the similarity criteria for this counterfactual include the laws of nature. Unfortunately, the kangaroos required to test the hypothesis are highly unnatural beasts. They have an extraordinary high-speed bounding gait, like a two-legged cheetah, and insufficient ways of keeping their balance. This scenario must presuppose very unusual patterns for the evolution of species. Given the laws of nature governing biology, a kangaroo like ours except for the tail would have evolved some way of not toppling over, by walking instead of leaping, or developing a four-footed gait, or some other dodge. The hypothetical kangaroo is a monster. Some laws of nature, but not others, are carried over to establish the similarity we want between the actual and hypothetical worlds. [ ] For example, consider the features that might hold in tailless kangaroo worlds listed in (28): (28) Kangaroos have no tails, and",
+    "choices": [
+     "Generally, the way we calculate what similarity requires depends on the color of the kangaroo.",
+     "Generally, the way we calculate what similarity requires does not depend on the understood nature of the hypothesis.",
+     "Generally, the way we calculate similarity is independent of the hypothesis.",
+     "Generally, the way we calculate what similarity requires depends on the entire universe's laws of physics.",
+     "In general, determining the necessary similarity depends on the assumed nature of the hypothesis."
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 원문 'Generally, the way we calculate what similarity requires depends on the understood nature of the hypothesis.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: ‘색깔’이라고 잘못 읽어 ‘kangaroo 의 색깔’이 비슷함을 결정한다고 착각, ‘laws of nature’라는 문장을 놓쳤음. → 처방: 문장 끝부분에 있는 ‘laws of nature’가 핵심임을 기억하고 색깔이 아닌 자연법칙을 주의 깊게 살펴보자.\n② 진단: ‘가설의 이해된 성질’이 필요 없다고 판단, ‘laws of nature’가 가설의 일부임을 간과함. → 처방: 가설이 포함하는 자연법칙이 비슷함 계산에 필수적임을 인식하고, 가설을 먼저 파악한 뒤 비슷함을 판단하자.\n③ 진단: ‘비슷함은 가설과 무관하다’라고 해석, 텍스트에서 ‘laws of nature’가 가설과 연결된 비슷함 기준임을 놓침. → 처방: 가설에 포함된 자연법칙이 비슷함을 결정한다는 점을 강조해 가설과 비슷함을 연결지어 생각하자.\n④ 진단: ‘전체 우주의 물리법칙’이 필요하다고 해석, 텍스트에서 ‘일부 자연법칙’만 언급되었음. → 처방: 필요한 자연법칙과 불필요한 법칙을 구분해, ‘일부’가 핵심임을 명확히 인지하자.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-04T07:14:50.187Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Conformity to natural laws in counterfactual similarity",
+     "Conformity to natural laws in counterfactual analysis",
+     "Divergence from natural laws in counterfactual similarity",
+     "Conformity to natural laws in theoretical models",
+     "Conformity to natural laws in all sciences"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Consistency with natural laws in counterfactual similarity'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: ‘counterfactual’을 ‘분석’과 혼동해 ‘analysis’라고 생각했다. → 처방: 문맥에서 ‘similarity’가 핵심임을 기억하고, ‘analysis’가 아닌 ‘similarity’에 초점을 맞추어 읽는다.\n③ 진단: ‘similarity’가 ‘laws of nature’를 포함한다고 읽지 못해 ‘divergence’라고 판단했다. → 처방: ‘similarity’와 ‘divergence’의 차이를 분명히 인식하고, ‘laws of nature’가 포함된다는 점을 재확인한다.\n④ 진단: 문단이 ‘counterfactual similarity’에 관한 것임을 놓고 ‘theoretical models’ 범위로 확대해 해석했다. → 처방: 문단의 핵심 주제인 ‘counterfactual similarity’에 집중하고, 일반 ‘theoretical models’와 구분한다.\n⑤ 진단: ‘laws of nature’가 모든 과학에 적용된다고 일반화해 ‘all sciences’를 선택했다. → 처방: 문단이 특정 주제(‘counterfactual similarity’)에 한정된 내용임을 인식하고, 과학 전반으로 확대하지 않는다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Consistency with natural laws in counterfactual similarity]"
+   }
+  },
+  {
+   "ts": "2026-10-04T07:15:30.011Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] COUNTERFACTUALS 91 that by saying that the similarity criteria for this counterfactual include the laws of nature.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] COUNTERFACTUALS 91은 이 가상 상황의 유사성 기준에 자연의 법칙이 포함된다고 말한다. (구문 포인트: 분사구문(부사절) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-03T13:32:28.280Z",
    "type": "글의순서",
@@ -244,69 +321,6 @@
     ],
     "answer": 1,
     "explanation": "정답 배열은 ⑦-②-④-⑥-③-①-⑤-⑧. 흐름: ⑦ → ② → ④ → ⑥ → ③ → ① → ⑤ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-09-30T14:03:22.496Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: D-구조는 주제별 역할을 인코딩하여 서술어 파생 주체 및 개체 위치를 할당합니다.\n주어진 단어: ( structure / encodes / thematic )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] D‑structure encodes thematic roles, assigning predicate‑derived subject and object positions. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-09-30T07:02:04.831Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] the colonists are constrained by necessity. (포인트: Active to passive transformation using by구)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-09-29T20:56:30.680Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "You’ll learn even more if you use your imagination to make the backs of your flashcards a bit more elaborate.\n\n(A) Here’s one possibility. We’ve divided the word into two parts and written them on two different lines that are at an oblique angle to each other.\n\n(B) You’ll probably think of your own mental image, one that means something to you. You could even use the word itself to create a picture that conveys the meaning of the word and that will stick in your mind to help you remember it.\n\n(C) For example, you might decorate the back of this card with a diagram of oblique lines—that is, lines that are neither parallel nor perpendicular to each other. Back Your diagram now gives you a mental image that can help you remember the word.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 5,
-    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: (A)에서 ‘단어를 두 부분으로 나눠 두 줄에 쓰는 방법’을 먼저 설명하고, (C)에서 그 예시를 제시한다는 점을 놓고, (B)에서 ‘자신의 상상’에 대해 말한 뒤에 예시를 놓아야 한다는 순서를 헷갈렸다. → 처방: 문장마다 ‘어떤 내용이 먼저 제시되는지’에 주목해, 예시가 나오는 문장은 앞서 설명된 방법이나 제안 뒤에 와야 함을 기억하라.\n② 진단: (B)에서 ‘상상’에 대해 말한 뒤 바로 (A) ‘방법’이 나오고, (C) ‘예시’가 나오는 순서를 알지 못해, (A)를 두 번째에 놓았다. → 처방: ‘방법’이란 문장은 ‘상상’에 대한 제안이 나온 뒤에 와야 함을 인지하고, 순서를 정리할 때 ‘방법’이 먼저 오도록 조정하라.\n③ 진단: (C)에서 예시가 나오고 그 뒤에 (A) ‘방법’이 온다고 착각해, (B) ‘상상’이 가장 먼저 와야 함을 놓쳤다. → 처방: 각 문단이 ‘상상’→‘방법’→‘예시’ 순으로 진행되는 구조임을 명확히 파악하고, 예시가 마지막에 와야 함을 기억하라.\n④ 진단: (C) 예시를 가장 먼저 읽고, 그 뒤에 (A) ‘방법’과 (B) ‘상상’이 온다고 잘못 판단했다. → 처방: 문장 순서를 정리할 때 ‘상상’이 먼저, ‘방법’이 그 다음, ‘예시’가 마지막에 오는 패턴을 숙지하고, 각 문단이 어떤 역할을 하는지 구분하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
