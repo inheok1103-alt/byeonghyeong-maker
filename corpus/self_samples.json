@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-05T07:22:17.521Z",
+ "updated": "2026-10-05T22:55:29.144Z",
  "samples": [
+  {
+   "ts": "2026-10-05T22:52:54.381Z",
+   "type": "본문찾아쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: c)\n[영영풀이] An option; a decision; an opportunity to choose or select something.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] choice (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-05T07:12:25.375Z",
    "type": "무관문장",
@@ -276,41 +295,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-02T18:37:52.871Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Quick Quiz #26 Match each word in the first column with its definition in the second column. Check your answers here. 1. construe a. admitting guilt 2. consummate b. interpret 3. contentious c. perfect 4. contiguous d. labored 5. contingent e. dependent 6. contrite f. abundant 7. contrived g. adjoining 8. conventional h. argumentative 9. convivial i. festive 10. copious j. common COROLLARY (KOR uh ler ee) n something that follows; a natural consequence In mathematics, a corollary is a law that can be deduced without further proof from a law that has already been proven. • <u>Bloodshed and death are corollaries of any declaration of war.</u> • Higher prices were a corollary of the two companies’ agreement not to compete. CORROBORATE (kuh ROB uh rayt) v to confirm; to back up with evidence • I knew my statement was correct when my colleague corroborated it. • Henny Penny’s contention that the sky was falling could not be corroborated. That is, no one was able to find any fallen sky.",
-    "choices": [
-     "It asserts that all significant events produce profound changes in human experience over time.",
-     "It suggests that any act of war inevitably results in violence and loss of life.",
-     "It highlights that technology is advancing rapidly in the 21st century and its impact on societies.",
-     "It indicates that war frequently causes economic hardship for the affected regions and local communities.",
-     "It argues that war can bring about peace and stability to the region."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'It suggests that any act of war inevitably results in violence and loss of life.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘corollary’가 ‘모든 중요한 사건이 인간 경험에 깊은 변화를 가져온다’는 의미로 잘못 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 문맥에서 ‘corollary’가 ‘결과’임을 인식하고, ‘전쟁 선언’과 ‘피해’ 사이의 관계만을 파악하라.\n③ 진단: ‘corollary’를 ‘기술 발전’과 연결지어 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 정의와 문맥을 분리해 ‘corollary’가 ‘추가적 결과’임을 기억하고, 기술과 무관한 내용임을 확인하라.\n④ 진단: ‘corollary’를 ‘경제적 고난’과 연결지어 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: ‘corollary’가 ‘피해’라는 부정적 결과임을 인지하고, 경제적 고난이 언급되지 않았음을 주의하라.\n⑤ 진단: ‘corollary’를 ‘평화와 안정을 가져온다’는 긍정적 결과로 오해하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 문장에 나타난 ‘피해’와 ‘죽음’이 부정적 결과임을 인식하고, 긍정적 해석은 제외하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
