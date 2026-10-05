@@ -1,6 +1,60 @@
 {
- "updated": "2026-10-05T01:13:59.526Z",
+ "updated": "2026-10-05T07:22:17.521Z",
  "samples": [
+  {
+   "ts": "2026-10-05T07:12:25.375Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "NEW WORDS laconic lə kon´ ik throng thrông intrepid in trep´ id accost ə kôst´ reticent ret´ ə sənt WEEK 2 DAY 1 TO THE POINT Calvin Coolidge, our thirtieth president, was named “Silent Cal” by reporters because of his laconic speech. ① One Sunday, after Mr. Coolidge had listened to an interminable* sermon, a throng of newsmen gathered around him. ② An intrepid reporter accosted the Chief Executive: “Mr. President, we know that the sermon was on the topic of sin. ③ What did the minister say? ④ ” “He was against it,” the reticent Coolidge replied. ⑤ The intrepid reporter, standing in the throng after the sermon on sin, asked Coolidge how the event would influence his upcoming campaign speeches. Sample Sentences Use the new words in the following sentences: 1. His speech was usually rambling, but this time I found it brief and ________________ . If a surly panhandler should ________________ you, keep on walking. Even under repeated questioning, the witness remained ________________ . A howling ________________ of teenage girls surrounded the rap artists. The corporal received the Silver Star for his ________________ deeds in combat. Definitions Match the new words with their dictionary meanings. expressing much in few words 7.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 5,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①번은 ‘침묵의 대통령’이 연설을 듣고 기자들이 모인 장면이므로 전체 흐름과 관련이 있다. 학생은 ‘연설이 끝난 후’라는 부분을 무시하고 부적절하다고 판단했다. → 처방: 문장마다 사건이 이어지는 순서를 따라가며 ‘누가, 언제, 어디서’가 연결되는지 확인하라.\n② 진단: ②번은 기자가 대통령에게 질문하는 장면으로, 대화가 진행되는 핵심이다. 학생은 ‘경험이 없는 기자’라는 표현을 무관하다고 착각했다. → 처방: 대화 속 인물과 행동을 ‘누가, 무엇을’으로 정리해 흐름을 파악하라.\n③ 진단: ③번은 ‘목사님이 뭐라고 했는가?’라는 질문이지만, 이는 대화의 전개를 위한 필수 요소다. 학생은 질문 자체를 부적절하다고 판단했다. → 처방: 질문이 대화의 전개를 돕는 역할임을 인식하고, 문맥 속에서 연결점을 찾으라.\n④ 진단: ④번은 대통령이 ‘그것에 반대했다’는 대답으로, 대화가 끝나지 않고 이어지는 부분이다. 학생은 ‘답변’이 흐름과 무관하다고 착각했다. → 처방: 대화의 흐름에서 ‘답변’이 다음 사건으로 이어지는 지점을 확인하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-05T07:22:05.228Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: w)\n[영영풀이] The smallest unit of language that has a particular meaning and can be expressed by itself; the smallest discrete, meaningful unit of language. (contrast morphe",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] words (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-04T17:44:30.792Z",
    "type": "전체문장배열",
@@ -257,44 +311,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'It suggests that any act of war inevitably results in violence and loss of life.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘corollary’가 ‘모든 중요한 사건이 인간 경험에 깊은 변화를 가져온다’는 의미로 잘못 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 문맥에서 ‘corollary’가 ‘결과’임을 인식하고, ‘전쟁 선언’과 ‘피해’ 사이의 관계만을 파악하라.\n③ 진단: ‘corollary’를 ‘기술 발전’과 연결지어 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 정의와 문맥을 분리해 ‘corollary’가 ‘추가적 결과’임을 기억하고, 기술과 무관한 내용임을 확인하라.\n④ 진단: ‘corollary’를 ‘경제적 고난’과 연결지어 해석하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: ‘corollary’가 ‘피해’라는 부정적 결과임을 인지하고, 경제적 고난이 언급되지 않았음을 주의하라.\n⑤ 진단: ‘corollary’를 ‘평화와 안정을 가져온다’는 긍정적 결과로 오해하였다. (문장: ‘Bloodshed and death are corollaries of any declaration of war.’) → 처방: 문장에 나타난 ‘피해’와 ‘죽음’이 부정적 결과임을 인식하고, 긍정적 해석은 제외하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-02T18:40:02.055Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 추론은 자연스러운 결과이며 확증은 증거를 확인합니다.\n주어진 단어: ( corollary / natural / consequence )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] A corollary is a natural consequence, while corroborate confirms evidence. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-02T12:52:45.688Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 일관성과 집중력을 보장하기 위해 글을 쓰기 전에 명확하고 일관된 주제를 식별합니다.\n주어진 단어: ( identify / clear / consistent )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Identify clear, consistent topics before writing to ensure coherence and focus. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
