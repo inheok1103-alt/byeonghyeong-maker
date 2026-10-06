@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-05T22:55:29.140Z",
+ "updated": "2026-10-06T03:16:30.116Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:전체문장배열",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-06T03:11:26.005Z"
+  },
+  {
+   "rule": "문제 출제 시 정답과 부정확한 답변을 명확히 구분하고, 평가 기준을 구체적으로 제시하여 자동 평가가 가능하도록 한다.",
+   "src": "자가학습:영영풀이단어쓰기",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-06T03:14:03.651Z"
+  },
   {
    "rule": "문제와 답안은 문법 오류를 없애고 용어를 일관성 있게 사용하며, 모든 선택지를 완전한 문장으로 동일한 길이와 형식으로 표기하고, 정답은 정확히 명시하도록 한다.",
    "src": "자가학습:무관문장",
@@ -25,14 +41,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-04T13:14:02.746Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-04T13:25:17.006Z"
   },
   {
    "rule": "문제의 지문은 모든 필수 정보를 포함하고, 빈칸이 문법적으로 완전한 문장을 이루도록 작성하며, 선택지는 내용적으로 의미가 다른 구체적 옵션을 제공해야 한다.",
@@ -209,14 +217,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-09-20T19:29:43.920Z"
-  },
-  {
-   "rule": "문제 출제 시 정답과 부정확한 답변을 명확히 구분하고, 평가 기준을 구체적으로 제시하여 자동 평가가 가능하도록 한다.",
-   "src": "자가학습:영영풀이단어쓰기",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-09-20T19:42:05.347Z"
   },
   {
    "rule": "문제마다 객관적이고 측정 가능한 정답 기준을 명시하여 평가가 명확히 이루어질 수 있도록 한다.",

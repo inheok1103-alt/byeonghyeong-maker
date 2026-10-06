@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-05T22:55:29.144Z",
+ "updated": "2026-10-06T03:16:30.121Z",
  "samples": [
+  {
+   "ts": "2026-10-06T03:13:52.992Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① you will probably not get a 'Yes' answer.\n② You can then ask 'How many fingers do you have?'\n③ Is language really so illogical?\n④ One day, John went shopping with his mother.\n⑤ and will almost certainly get an answer of 'Ten'.\n⑥ On the way their car was hit by a truck and his mother was killed.\n⑦ If you point to your thumb and ask 'Is this a finger?'\n⑧ CHAPTER 2 Markedness and Blocking Why is it odd to say *'a female nurse', while it is reasonable to say 'a male nurse'?\n⑨ Let us begin with a parody of a familiar puzzle.",
+    "choices": [
+     "⑦-⑧-①-②-⑤-③-⑨-④-⑥",
+     "⑧-①-⑦-②-⑤-③-⑨-④-⑥",
+     "⑧-⑦-①-②-⑤-③-⑨-④-⑥",
+     "⑧-①-⑤-③-⑨-⑦-②-④-⑥",
+     "⑧-⑦-①-②-③-⑤-⑨-④-⑥"
+    ],
+    "answer": 3,
+    "explanation": "정답 배열은 ⑧-⑦-①-②-⑤-③-⑨-④-⑥. 흐름: ⑧ → ⑦ → ① → ② → ⑤ → ③ → ⑨ → ④ → ⑥ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-06T03:14:20.326Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: m)\n[영영풀이] A (human) female who has given birth to a baby",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] mother (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-05T22:52:54.381Z",
    "type": "본문찾아쓰기",
@@ -237,64 +281,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] COUNTERFACTUALS 91은 이 가상 상황의 유사성 기준에 자연의 법칙이 포함된다고 말한다. (구문 포인트: 분사구문(부사절) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-03T13:32:28.280Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.6,
-    "D": 0.67,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②④"
-    ]
-   },
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "NP NP NP and the clowns the acrobats There’s a general point here, which I’ll approach by first asking you to judge which of the following are well-​formed phrases and which not.\n\n(A) And it’s clearly a co-​ordination on NPs. Now identify the category of phrases co-​ordinated within [26] and [28] and make a (reliable!) guess as to the category of the phrases as a whole.\n\n(B) Let’s look first at the well-​formed phrases. It passes all the tests for NP.\n\n(C) [23] Max and quite quickly [24] the acrobats and quite incomprehensible [25] the doctor I consulted and all your friends [26] in the foundations and under the rafters [27] to India and obviously intelligent [28] very funny but rather spiteful [29] very and inconsistent I hope you agree with the following judgements: [25], [26] and [28] are gram­ matical; [23], [24], [27] and [29] are ungrammatical. Can you explain the ungrammaticalities?",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 5,
-    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 지문에서 (C)가 먼저 나오며, 그 뒤에 (B)와 (A)가 순서대로 나오는 구조를 놓쳤음 → 처방: 문단의 첫 문장을 따라가며, 앞뒤 문맥을 주의 깊게 읽어 순서를 파악하라\n② 진단: (B)가 'Let’s look first'라며 시작한다고 착각해 앞부분을 놓친 것 → 처방: 문단의 실제 시작 문장을 확인하고, 문단 순서를 따라가며 읽어라\n③ 진단: (B)와 (C) 순서가 뒤바뀐 것으로 오해해, (A)가 마지막이라고 판단 → 처방: 각 문단의 주제와 전개를 비교해, 논리적 흐름을 따라가라\n④ 진단: (C) 뒤에 (A)가 온다고 착각해, (B)가 마지막이라고 판단 → 처방: 문단 전개를 한 줄씩 따라가며, 앞뒤 문맥을 비교해 순서를 확인하라\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-03T02:11:10.631Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] Given that specifiers are positioned before heads, a plausible suggestion to make is that preposed wh-expressions move into the specifier position within CP (= spec-CP).\n\nEcho questions such as that produced by speaker B in (3) suggest that the wh-expressions in (1) originate as complements of the relevant verbs, and subsequently get moved to the front of the overall clause. But what position do they get moved into, in non-echoic questions like (1)? ( ① ) The answer is obviously that they are moved into some position preceding the inverted auxiliary. ( ② ) Since inverted auxiliaries occupy the head C position of CP, let’s suppose that preposed wh-expressions are moved into a position preceding the head C of CP. ( ③ ) If so, a sentence like (2c) Who was she dating? ( ④ ) will involve the arrowed movement operations shown in (4) below (where who has been assigned to the category PRN – though it should be noted that interrogative pronouns like who are pronominal quantifiers and hence Q-pronouns, and so could alternatively be assigned to the category Q): ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
