@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-06T03:16:30.117Z",
+ "updated": "2026-10-06T10:40:16.295Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-06T10:39:30.799Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "이 코퍼스 패턴에서 주어와 동사의 일치, 관사 사용, 복수형/단수형 일관성, 철자 오류, 쉼표 삽입이 가장 흔한 문법 오류임을 확인했다.",
+   "rule": "문법 오류를 출제할 때는 CEFR 수준에 맞는 가장 흔한 오류 유형(주어-동사 일치, 관사, 복수형, 철자, 쉼표) 중 하나를 포함하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-04T17:52:17.090Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'the + 복수명사'가 'same'과 결합할 때 관사가 필수적으로 추가되며, 소유대명사는 'to + 목적격'으로 대체되어야 한다.",
    "rule": "'the + 복수명사 + are same' 구조에서 관사를 생략하지 않도록 하며, 소유대명사(ours/theirs 등)는 'to + 목적격(us/them 등)'으로 변환하도록 문제를 출제한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-26T05:00:39.082Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "이 코퍼스 패턴은 형용사/부사 오용(awkward/arkward), 시제 오류(try/tried), 품사 오류(harm/harmful) 등 오류가 빈번하게 발생하는 어휘적·문법적 영역을 보여준다. 특히 'more + 형용사' 구문, 'never + 과거형', 'very + 명사'의 잘못된 조합이 특징적이다.",
-   "rule": "'more + 형용사/부사' 구문에서 형용사/부사 원형 오용을 방지하기 위해, 'more + 형용사/부사' 뒤에는 반드시 원형(awkward, harmful 등)이 오도록 문항을 설계한다.",
    "sample": [
     "old english",
     "university press",

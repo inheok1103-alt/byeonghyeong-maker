@@ -1,6 +1,60 @@
 {
- "updated": "2026-10-06T03:16:30.121Z",
+ "updated": "2026-10-06T10:40:16.300Z",
  "samples": [
+  {
+   "ts": "2026-10-06T10:32:27.150Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 1/1가 5번 선택(기록 3번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "But if neither VP nor IP is a barrier to government, then we expect that the Case marking relationship depicted in (12) should be perfectly possible. There is no reason however to believe that any element can assign Case from outside a CP to any element within the CP and indeed it is a standard assumption that CP does count as a barrier to government. This supports the assumption that the non-finite complement clause of a verb like believe ____. Given that clauses are normally CPs, a clause which only has an IP status is an exception. Hence, such clauses are known as exceptional clauses and the verbs which take exceptional clauses as their complements, i.e. verbs like believe, are known as exceptional verbs. Finally the process of assigning Case to the subject of an exceptional clause is sometimes called Exceptional Case Marking, or ECM for short. Below are a few examples of exceptional verbs: (15) a the sheriff expects [the outlaws to be in hiding]",
+    "choices": [
+     "retains a complete clausal structure",
+     "conforms to general clause principles",
+     "exhibits a reduced clausal form",
+     "serves as an optional clausal complement",
+     "undergoes subject ellipsis"
+    ],
+    "answer": 3,
+    "explanation": "빈칸에는 'exhibits a reduced clausal form'가 들어가 글의 논지를 완성한다 (본문 'has an IP status and is not a full CP'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 예외 절은 완전한 절 구조를 갖는다고 언급되지 않았음 → 처방: 예외 절은 구조가 단축된 형태임을 기억하고 'complete clausal structure'는 부적절하다고 판단하라.\n② 진단: 지문에서 예외 절은 일반 절 원칙을 따르지 않는다고 명시됨 → 처방: 예외 절은 일반 절 원칙과 다르므로 'conforms'는 틀린 선택이다.\n④ 진단: 지문에서 예외 절은 동사의 보어로 필수적이라고 언급됨 → 처방: 예외 절은 필수적이므로 'optional'은 부적절하다고 판단하라.\n⑤ 진단: 지문에서 예외 절의 주어는 생략되지 않으며 명시적으로 존재함 → 처방: 주어가 생략되지 않으므로 'subject ellipsis'는 틀린 선택이다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-06T10:39:15.011Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: BELIEVE와 같은 동사의 유한하지 않은 보완 조항은 IP이므로 예외적입니다.\n주어진 단어: ( of / them / making / like / exceptional / verbs / Non-finite / complement / are / believe / IPs, / clauses )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Non-finite complement clauses of verbs like believe are IPs, making them exceptional.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-06T03:13:52.992Z",
    "type": "전체문장배열",
@@ -237,50 +291,6 @@
     ],
     "answer": 5,
     "explanation": "빈칸에는 원문 'Generally, the way we calculate what similarity requires depends on the understood nature of the hypothesis.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: ‘색깔’이라고 잘못 읽어 ‘kangaroo 의 색깔’이 비슷함을 결정한다고 착각, ‘laws of nature’라는 문장을 놓쳤음. → 처방: 문장 끝부분에 있는 ‘laws of nature’가 핵심임을 기억하고 색깔이 아닌 자연법칙을 주의 깊게 살펴보자.\n② 진단: ‘가설의 이해된 성질’이 필요 없다고 판단, ‘laws of nature’가 가설의 일부임을 간과함. → 처방: 가설이 포함하는 자연법칙이 비슷함 계산에 필수적임을 인식하고, 가설을 먼저 파악한 뒤 비슷함을 판단하자.\n③ 진단: ‘비슷함은 가설과 무관하다’라고 해석, 텍스트에서 ‘laws of nature’가 가설과 연결된 비슷함 기준임을 놓침. → 처방: 가설에 포함된 자연법칙이 비슷함을 결정한다는 점을 강조해 가설과 비슷함을 연결지어 생각하자.\n④ 진단: ‘전체 우주의 물리법칙’이 필요하다고 해석, 텍스트에서 ‘일부 자연법칙’만 언급되었음. → 처방: 필요한 자연법칙과 불필요한 법칙을 구분해, ‘일부’가 핵심임을 명확히 인지하자.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-04T07:14:50.187Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Conformity to natural laws in counterfactual similarity",
-     "Conformity to natural laws in counterfactual analysis",
-     "Divergence from natural laws in counterfactual similarity",
-     "Conformity to natural laws in theoretical models",
-     "Conformity to natural laws in all sciences"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Consistency with natural laws in counterfactual similarity'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: ‘counterfactual’을 ‘분석’과 혼동해 ‘analysis’라고 생각했다. → 처방: 문맥에서 ‘similarity’가 핵심임을 기억하고, ‘analysis’가 아닌 ‘similarity’에 초점을 맞추어 읽는다.\n③ 진단: ‘similarity’가 ‘laws of nature’를 포함한다고 읽지 못해 ‘divergence’라고 판단했다. → 처방: ‘similarity’와 ‘divergence’의 차이를 분명히 인식하고, ‘laws of nature’가 포함된다는 점을 재확인한다.\n④ 진단: 문단이 ‘counterfactual similarity’에 관한 것임을 놓고 ‘theoretical models’ 범위로 확대해 해석했다. → 처방: 문단의 핵심 주제인 ‘counterfactual similarity’에 집중하고, 일반 ‘theoretical models’와 구분한다.\n⑤ 진단: ‘laws of nature’가 모든 과학에 적용된다고 일반화해 ‘all sciences’를 선택했다. → 처방: 문단이 특정 주제(‘counterfactual similarity’)에 한정된 내용임을 인식하고, 과학 전반으로 확대하지 않는다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Consistency with natural laws in counterfactual similarity]"
-   }
-  },
-  {
-   "ts": "2026-10-04T07:15:30.011Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] COUNTERFACTUALS 91 that by saying that the similarity criteria for this counterfactual include the laws of nature.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] COUNTERFACTUALS 91은 이 가상 상황의 유사성 기준에 자연의 법칙이 포함된다고 말한다. (구문 포인트: 분사구문(부사절) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

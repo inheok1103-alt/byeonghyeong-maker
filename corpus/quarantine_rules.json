@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-06T03:16:30.116Z",
+ "updated": "2026-10-06T10:40:16.293Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 오답 선지는 지문 내용에 근거하여 명백히 틀리거나 정답 선지보다 현저히 덜 정확해야 하며, 정답은 다른 선지와의 의미적 중복이나 타당성 경합 없이 유일한 최적 답안으로 명확히 변별되어야 한다.**",
+   "src": "자가학습:빈칸(어구)",
+   "score": 60,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-06T10:27:05.682Z"
+  },
+  {
+   "rule": "각 문항마다 객관적 평가 기준과 채점 가이드라인을 명시하고, 예시 답안을 포함해 채점 기준을 구체화하여 평가자의 주관성을 최소화한다.",
+   "src": "자가학습:배열영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-06T10:39:03.470Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:전체문장배열",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T11:45:33.367Z"
-  },
-  {
-   "rule": "모든 선지는 동일한 패턴(예: \"The ostensible reason for ~ was ~\")으로 통일하되, 'ostensible'의 의미를 '겉으로 드러난 이유'로 정확히 반영하는 선지를 정답으로 채택하고, 선택 기준을 사전적 정의와 문맥적 일치로 명확히 해야 한다.",
-   "src": "자가학습:빈칸(문장)",
-   "score": 76,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T11:46:00.576Z"
-  },
-  {
-   "rule": "정답과 발문 조건을 '본문의 품사·시제와 동일한 형태로 통일하고, 문맥상 문법적·의미적 적합성을 엄밀히 검증하라'로 일반화하라.",
-   "src": "자가학습:첫글자어휘",
-   "score": 62,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T11:46:16.627Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
