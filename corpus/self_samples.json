@@ -1,6 +1,69 @@
 {
- "updated": "2026-10-07T01:48:31.088Z",
+ "updated": "2026-10-07T16:45:24.039Z",
  "samples": [
+  {
+   "ts": "2026-10-07T16:34:04.260Z",
+   "type": "어형변형(괄호)",
+   "level": "중",
+   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증 · ⚠ 지문 축소 의심(54%) — 정보 손실 여부 확인 권고",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
+    "passage": "We can account for how the subject all hell (1) (come) to (2) (separate) from its predicate break loose by positing that subjects originate internally within VP and from there raise to spec-T (via A-movement) across an intervening T constituent like will, so that the subject and predicate thereby come to be separated from each other – movement of the subject to spec-T (3) (drive) by an [EPP] feature carried by [T will] requiring will to have a subject with person/number features.",
+    "choices": [],
+    "answer": null,
+    "explanation": "1) come→comes [주어 'all hell'은 단수 취급되므로, 현재 시제에서 3인칭 단수 동사 형태인 'comes'가 되어야 함 (수일치).] · 2) separate→be separated ['all hell'이 분리되는 대상이므로 수동의 의미를 가져야 하며, 'comes to' 뒤에 이어지는 부정사 구문이므로 'to be p.p.' 형태인 'to be separated'가 되어야 함 (태, 준동사).] · 3) drive→being driven ['movement'가 [EPP] feature에 의해 '구동되는' 대상이므로 수동의 의미를 가져야 하며, 문맥상 이유를 설명하는 분사구문이므로 현재분사 수동 형태인 'being driven'이 되어야 함 (태, 준동사).]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
+  {
+   "ts": "2026-10-07T16:44:07.670Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "EPP‑governed subject raising in English",
+     "EPP‑driven object movement in English",
+     "Subject raising in English without EPP",
+     "EPP‑driven subject raising in Spanish",
+     "EPP‑driven subject raising in syntax"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Subject raising and EPP‑driven movement in English syntax.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: \"EPP\"이 객체 이동을 이끈다고 오해함 → 처방: 객체 이동이 아니라 주어 상승이 논의된 내용임을 확인하라.\n③ 진단: \"EPP\" 없이 주어 상승이 가능하다고 생각함 → 처방: \"EPP\"이 주어 상승을 요구함을 다시 읽어보라.\n④ 진단: 언어를 스페인어라고 잘못 판단함 → 처방: 문헌이 영어 문법을 다루고 있음을 인지하라.\n⑤ 진단: 주제와 언어를 혼동해 일반 문법이라고 판단함 → 처방: 문제의 주제는 \"영어에서 EPP 주어 상승\"임을 명확히 인식하라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Subject raising and EPP‑driven movement in English syntax.]"
+   }
+  },
+  {
+   "ts": "2026-10-07T16:45:04.636Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "서술형 단어수 14 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'break', 'loose', 'hell' / 12~16단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 주어 'all hell'은 VP 내부에서 출현해 spec‑T로 이동하며, EPP 기능에 의해 'break loose'와 분리된다.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-06T10:32:27.150Z",
    "type": "빈칸(어구)",
@@ -214,83 +277,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Never did the manager openly scoff at Mullins and belittle his fighting ability. (포인트: Negative inversion with ‘Never did’ to emphasize the manager’s scorn.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-04T13:20:30.133Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① 1 The Universal Quantifier The atomic propositions we have discussed so far have had individual arguments, referred to by names or noun phrases like the dog, with logical forms like these: < previous page page_41 next page >\n② In (42a) it seems that the new car, the source of Shirley’s pride, is the second argument of proud.\n③ In (42b, c) the embedded sentence also expresses the source of pride, the second argument of proud, and so the propositions can be represented as in (43).\n④ A sentential argument may also be the only argument of the main predicate in a sentence, for example: For a review of this section, see the exercises in Part B at the end of the chapter.\n⑤ Page 41 In (41b, c) the proposition expressed by the embedded sentence is the second argument of the main verb – the proposition is what is said or what is believed.\n⑥ (Sentences about thinking and believing are discussed in Section 5.\n⑦ The clearest examples of sentential arguments are found with verbs, but plausibly members of other word classes can also have sentential arguments.\n⑧ 4 THE LOGICAL QUANTIFIERS 2.",
-    "choices": [
-     "⑤-⑥-⑦-②-③-④-⑧-①",
-     "⑤-⑦-⑥-②-③-④-⑧-①",
-     "⑤-⑥-⑦-②-③-④-①-⑧",
-     "⑤-⑥-②-⑦-③-④-⑧-①",
-     "⑥-⑤-⑦-②-③-④-⑧-①"
-    ],
-    "answer": 1,
-    "explanation": "정답 배열은 ⑤-⑥-⑦-②-③-④-⑧-①. 흐름: ⑤ → ⑥ → ⑦ → ② → ③ → ④ → ⑧ → ① — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-04T13:25:29.559Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 문장 논증은 명제를 표현하는 주요 동사의 두 번째 논증 역할을 합니다.\n주어진 단어: ( sentential / arguments / serve )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Sentential arguments serve as the main verb's second argument, expressing propositions. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-04T07:04:56.473Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 5번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.5,
-    "D": 0.5,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ①②③"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "COUNTERFACTUALS 91 that by saying that the similarity criteria for this counterfactual include the laws of nature. Unfortunately, the kangaroos required to test the hypothesis are highly unnatural beasts. They have an extraordinary high-speed bounding gait, like a two-legged cheetah, and insufficient ways of keeping their balance. This scenario must presuppose very unusual patterns for the evolution of species. Given the laws of nature governing biology, a kangaroo like ours except for the tail would have evolved some way of not toppling over, by walking instead of leaping, or developing a four-footed gait, or some other dodge. The hypothetical kangaroo is a monster. Some laws of nature, but not others, are carried over to establish the similarity we want between the actual and hypothetical worlds. [ ] For example, consider the features that might hold in tailless kangaroo worlds listed in (28): (28) Kangaroos have no tails, and",
-    "choices": [
-     "Generally, the way we calculate what similarity requires depends on the color of the kangaroo.",
-     "Generally, the way we calculate what similarity requires does not depend on the understood nature of the hypothesis.",
-     "Generally, the way we calculate similarity is independent of the hypothesis.",
-     "Generally, the way we calculate what similarity requires depends on the entire universe's laws of physics.",
-     "In general, determining the necessary similarity depends on the assumed nature of the hypothesis."
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 원문 'Generally, the way we calculate what similarity requires depends on the understood nature of the hypothesis.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: ‘색깔’이라고 잘못 읽어 ‘kangaroo 의 색깔’이 비슷함을 결정한다고 착각, ‘laws of nature’라는 문장을 놓쳤음. → 처방: 문장 끝부분에 있는 ‘laws of nature’가 핵심임을 기억하고 색깔이 아닌 자연법칙을 주의 깊게 살펴보자.\n② 진단: ‘가설의 이해된 성질’이 필요 없다고 판단, ‘laws of nature’가 가설의 일부임을 간과함. → 처방: 가설이 포함하는 자연법칙이 비슷함 계산에 필수적임을 인식하고, 가설을 먼저 파악한 뒤 비슷함을 판단하자.\n③ 진단: ‘비슷함은 가설과 무관하다’라고 해석, 텍스트에서 ‘laws of nature’가 가설과 연결된 비슷함 기준임을 놓침. → 처방: 가설에 포함된 자연법칙이 비슷함을 결정한다는 점을 강조해 가설과 비슷함을 연결지어 생각하자.\n④ 진단: ‘전체 우주의 물리법칙’이 필요하다고 해석, 텍스트에서 ‘일부 자연법칙’만 언급되었음. → 처방: 필요한 자연법칙과 불필요한 법칙을 구분해, ‘일부’가 핵심임을 명확히 인지하자.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
