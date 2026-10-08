@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-07T22:07:34.779Z",
+ "updated": "2026-10-08T02:17:42.091Z",
  "samples": [
+  {
+   "ts": "2026-10-08T02:09:22.206Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① (Sharpen, cut and wrap are transitive verbs.)\n② Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs.\n③ The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as DIRECT OBJECT.\n④ Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP.\n⑤ ‘INtransitive’ means ‘has (and needs) no complement’.\n⑥ By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper.\n⑦ Intransitive VPs are the simplest VPs.\n⑧ Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right.\n⑨ The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them.",
+    "choices": [
+     "③-⑨-⑥-①-④-②-⑤-⑧-⑦",
+     "③-④-②-⑧-⑨-⑥-⑤-⑦-①",
+     "⑨-③-⑥-①-④-⑤-②-⑧-⑦",
+     "③-⑤-④-①-⑦-⑧-⑥-⑨-②",
+     "③-⑨-⑥-①-④-⑤-②-⑧-⑦"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ③-⑨-⑥-①-④-⑤-②-⑧-⑦. 흐름: ③ → ⑨ → ⑥ → ① → ④ → ⑤ → ② → ⑧ → ⑦ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-07T16:34:04.260Z",
    "type": "어형변형(괄호)",
@@ -258,25 +283,6 @@
     ],
     "answer": 3,
     "explanation": "정답 배열은 ②-①-⑨-⑤-⑦-⑥-③-④-⑧. 흐름: ② → ① → ⑨ → ⑤ → ⑦ → ⑥ → ③ → ④ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ②가 순서대로 나오지만, ⑤(관리자에게 부정적 반응)와 ⑨(공공선언) 순서를 뒤바꾸고, ④(상담 요청)를 ⑤ 뒤에 배치해 사건 전개를 뒤틀었다. → 처방: 문장마다 사건이 일어나는 시점을 따라가며, 앞선 내용이 뒤따르는 내용을 설명하도록 순서를 정리하라.\n② 진단: ②와 ① 다음에 ⑤(관리자 반응)와 ⑨(공공선언)를 서로 바꿔 놓아, 'brash'와 'promulgate'의 차이를 헷갈렸다. → 처방: 새 단어의 의미를 먼저 파악하고, 그 단어가 등장하는 문장을 찾은 뒤, 사건 흐름에 맞는 순서를 정하라.\n④ 진단: ② 뒤에 ⑧(성격)과 ③(샘플 문장)을 먼저 두어, 본문이 아닌 부가 내용이 앞서오도록 했다. → 처방: 본문의 핵심 사건이 끝난 뒤에 부가 설명이 오도록, ‘샘플 문장’은 마지막에 배치하라.\n⑤ 진단: ①(문장 ①)과 ②(문장 ②)를 뒤바꿔, ‘Mullins demanded a rematch’가 먼저 나오도록 했다. → 처방: 문장 번호가 주어지는 순서대로 읽고, ‘Mullins demanded a rematch’가 첫 번째 사건임을 기억하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-04T17:51:56.692Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '강조도치' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 강조(It ~ that) 또는 도치 구문으로 바꿔 쓰시오.\n[원문] The manager openly scoffed at Mullins and belittled his fighting ability.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Never did the manager openly scoff at Mullins and belittle his fighting ability. (포인트: Negative inversion with ‘Never did’ to emphasize the manager’s scorn.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
