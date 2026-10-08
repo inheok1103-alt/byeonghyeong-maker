@@ -1,14 +1,22 @@
 {
- "updated": "2026-10-08T02:17:42.085Z",
+ "updated": "2026-10-08T09:15:24.579Z",
  "count": 200,
  "rules": [
   {
+   "rule": "문제 출제 시, 정답과 보기가 문맥과 일치하도록 검증하고, 문장에 문법적 오류가 없도록 교정하며, 문장 구조를 단순하고 명료하게 구성해 추론 과정을 명확히 해야 한다.",
+   "src": "자가학습:네모어휘ABC",
+   "score": 71,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-08T09:02:54.264Z"
+  },
+  {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:전체문장배열",
+   "src": "자가학습:조건영작",
    "score": 0,
    "status": "quarantined",
    "hits": 1,
-   "ts": "2026-10-08T02:02:43.966Z"
+   "ts": "2026-10-08T09:13:00.752Z"
   },
   {
    "rule": "문제와 답안 선택지에서 동일한 용어를 사용하고, 지문과 문항 길이를 대상 학습 수준에 맞게 단순화·축소하여 난이도를 조절한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T13:13:22.853Z"
-  },
-  {
-   "rule": "원문의 시간적·능동적 뉘앙스를 살리면서도 번역의 유일성을 확보하기 위해, 관계사·시제·수식어 등 원문의 핵심 의미를 함축적으로 반영하는 구체적·선택적 번역을 우선 적용하고, 문맥에 따라 보완 설명을 추가할 수 있도록 한다.",
-   "src": "자가학습:우리말해석",
-   "score": 62,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T13:17:05.726Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

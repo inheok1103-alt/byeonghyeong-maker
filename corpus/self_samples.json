@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-08T02:17:42.091Z",
+ "updated": "2026-10-08T09:15:24.583Z",
  "samples": [
+  {
+   "ts": "2026-10-08T09:13:13.314Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 술어 변수는 교차 수식어를 공식화하여 술어 형용사와 수식어 형용사를 구별합니다.\n주어진 단어: ( predicate / variables / formalize )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Predicate variables formalize intersective modifiers, differentiating predicative and modifier adjectives. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-08T02:09:22.206Z",
    "type": "전체문장배열",
@@ -258,31 +277,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] words (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-04T17:44:30.792Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Mullins demanded a rematch.\n② NEW WORDS pugnacious pug nā´ shəs promulgate prom´ əl gāt brash brash scoff skof belittle bi lit´ l WEEK 4 DAY 2 MULLINS THROWS DOWN THE GAUNTLET* The pugnacious K.\n③ Sample Sentences Use the new words in the following sentences.\n④ We implored* the faculty advisor to ________________ the requirements for the presidency of the club.\n⑤ When the champ’s manager saw the brash announcement, he accosted* Mullins, who was surrounded by a throng* of newsmen.\n⑥ Mullins then lost his temper and fearlessly punched the manager, knocking him off of his crutches.\n⑦ The manager openly scoffed at Mullins and belittled his fighting ability.\n⑧ My mother liked the salesman’s ________________ personality, but he irritated most people.\n⑨ He took a full-page newspaper advertisement to promulgate his challenge.",
-    "choices": [
-     "②-①-⑨-⑦-⑥-④-⑤-⑧-③",
-     "②-①-⑤-⑨-⑦-⑥-③-④-⑧",
-     "②-①-⑨-⑤-⑦-⑥-③-④-⑧",
-     "②-⑧-⑦-③-⑤-⑨-①-⑥-④",
-     "①-②-⑨-⑤-⑦-⑥-③-④-⑧"
-    ],
-    "answer": 3,
-    "explanation": "정답 배열은 ②-①-⑨-⑤-⑦-⑥-③-④-⑧. 흐름: ② → ① → ⑨ → ⑤ → ⑦ → ⑥ → ③ → ④ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ②가 순서대로 나오지만, ⑤(관리자에게 부정적 반응)와 ⑨(공공선언) 순서를 뒤바꾸고, ④(상담 요청)를 ⑤ 뒤에 배치해 사건 전개를 뒤틀었다. → 처방: 문장마다 사건이 일어나는 시점을 따라가며, 앞선 내용이 뒤따르는 내용을 설명하도록 순서를 정리하라.\n② 진단: ②와 ① 다음에 ⑤(관리자 반응)와 ⑨(공공선언)를 서로 바꿔 놓아, 'brash'와 'promulgate'의 차이를 헷갈렸다. → 처방: 새 단어의 의미를 먼저 파악하고, 그 단어가 등장하는 문장을 찾은 뒤, 사건 흐름에 맞는 순서를 정하라.\n④ 진단: ② 뒤에 ⑧(성격)과 ③(샘플 문장)을 먼저 두어, 본문이 아닌 부가 내용이 앞서오도록 했다. → 처방: 본문의 핵심 사건이 끝난 뒤에 부가 설명이 오도록, ‘샘플 문장’은 마지막에 배치하라.\n⑤ 진단: ①(문장 ①)과 ②(문장 ②)를 뒤바꿔, ‘Mullins demanded a rematch’가 먼저 나오도록 했다. → 처방: 문장 번호가 주어지는 순서대로 읽고, ‘Mullins demanded a rematch’가 첫 번째 사건임을 기억하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
