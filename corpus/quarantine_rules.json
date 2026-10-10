@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-10T01:12:04.719Z",
+ "updated": "2026-10-10T07:29:48.876Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문제는 한 문장에 단일 빈칸을 포함하고, 그 빈칸이 질문과 정확히 일치하도록 지문을 구성하며, 부수적인 매칭이나 다른 형식의 문제를 포함하지 않고, 선택지는 같은 길이와 형식으로 표기하며 정답 번호를 명시한다.",
+   "src": "자가학습:빈칸(어구)",
+   "score": 33,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-10T07:14:53.759Z"
+  },
+  {
+   "rule": "문항은 평가 기준을 명확히 제시하고, 채점자가 주관적 판단 없이 객관적으로 평가할 수 있는 구체적 답변을 요구하도록 설계한다.",
+   "src": "자가학습:밑줄함의",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-10T07:26:02.915Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:주제문완성",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-10T07:29:10.449Z"
+  },
   {
    "rule": "문제는 반드시 정답(또는 채점 기준)을 명시하고, 평가자가 일관되게 채점할 수 있도록 구체적인 평가 지침을 제공해야 한다.",
    "src": "자가학습:제목",
@@ -17,14 +41,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-09T16:18:12.375Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:글의순서",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-09T02:23:33.566Z"
   },
   {
    "rule": "모든 문항은 정답이 문맥상 유일하게 정확하고, 오답은 문맥상 명확히 틀리면서도 변별력을 갖추도록 출제 및 검토되어야 한다.",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T15:08:49.192Z"
-  },
-  {
-   "rule": "모든 선지를 'Phrasal Verbs and Object Placement: [지문의 핵심 내용 직접 반영한 구체적 설명]' 형태로 통일하고, 정답 선지는 지문의 핵심 내용(예: 목적어 배치 연습)을 직접 반영하도록 수정하라.",
-   "src": "자가학습:제목",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T14:06:09.785Z"
-  },
-  {
-   "rule": "모든 선택지 선지는 'takeover'의 핵심 의미를 '명사형/동사형/과거형/수동태' 등으로 직접 반영하여, 지나친 패러프레이즈나 중복 표현 없이 간결하고 자연스러운 문장으로 구성해야 한다.",
-   "src": "자가학습:빈칸(문장)",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T14:06:46.551Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

@@ -1,6 +1,85 @@
 {
- "updated": "2026-10-10T01:12:04.723Z",
+ "updated": "2026-10-10T07:29:48.880Z",
  "samples": [
+  {
+   "ts": "2026-10-10T07:21:00.625Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 2/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Quick Quiz #22 Match each word in the first column with its definition in the second column. Check your answers here. 1. coalesce a. perceptive 2. coalition b. unite 3. coerce c. conversational 4. cogent d. force someone to do something 5. cognitive e. proportionate 6. cognizant f. making sense 7. coherent g. group with a purpose 8. colloquial h. powerfully convincing 9. collusion i. summary 10. commensurate j. forceful 11. compelling k. conspiracy 12. compendium l. dealing with how we know our environment COMPLACENT (kum PLAY sunt) adj self-satisfied; overly pleased with oneself; contented to a fault • The complacent camper paid no attention to the poison ivy around his campsite, and ended up going to the hospital. • The football team won so many games that it became complacent, and the worst team in the league won the game. To fall into complacency is to become ____.",
+    "choices": [
+     "deeply concerned with surroundings",
+     "indifferent to one's environment",
+     "aware of all things",
+     "mostly aware of surroundings",
+     "eager to explore horizons"
+    ],
+    "answer": 2,
+    "explanation": "빈칸에는 'indifferent to one's environment'가 들어가 글의 논지를 완성한다 (본문 'comfortably uncaring about the world around you'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘deeply concerned with surroundings’는 ‘complacent’가 ‘자기 만족’이라는 뜻이라 ‘관심이 많다’와 반대임을 놓친다. → 처방: ‘complacent’는 ‘자기 만족’이라고 기억하고, ‘concern’과 반대임을 체크한다.\n③ 진단: ‘aware of all things’를 ‘cognizant’와 혼동해 ‘complacent’와 비슷한 의미로 착각한다. → 처방: ‘complacent’는 ‘무관심’이며, ‘cognizant’는 ‘인지한’이므로 차이를 분명히 구분한다.\n④ 진단: ‘mostly aware of surroundings’는 ‘complacent’보다 ‘conscious’에 가까운 표현으로, ‘indifferent’와 반대라는 점을 놓친다. → 처방: ‘indifferent’와 ‘aware’의 반의어 관계를 명확히 기억한다.\n⑤ 진단: ‘eager to explore horizons’는 ‘adventurous’와 유사해 ‘complacent’와 상반된 뜻으로 착각한다. → 처방: ‘complacent’는 ‘자기 만족’이므로 ‘호기심’과 반대임을 재확인한다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-10T07:28:19.609Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 정답 재검토 권고 — 솔버 1/1가 1번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Quick Quiz #22 Match each word in the first column with its definition in the second column. Check your answers here. 1. coalesce a. perceptive 2. coalition b. unite 3. coerce c. conversational 4. cogent d. force someone to do something 5. cognitive e. proportionate 6. cognizant f. making sense 7. coherent g. group with a purpose 8. colloquial h. powerfully convincing 9. collusion i. summary 10. commensurate j. forceful 11. compelling k. conspiracy 12. compendium l. dealing with how we know our environment COMPLACENT (kum PLAY sunt) adj self-satisfied; overly pleased with oneself; contented to a fault • The complacent camper paid no attention to the poison ivy around his campsite, and ended up going to the hospital. • The football team won so many games that it became complacent, and the worst team in the league won the game. To fall into complacency is <u>to become comfortably uncaring about the world around you</u>.",
+    "choices": [
+     "It means to become comfortably uncaring about the world around you.",
+     "It implies that excessive self‑satisfaction can blind one to looming dangers.",
+     "It suggests that you may grow indifferent to the emotions of others.",
+     "It means you will always be unconcerned about the world around you.",
+     "It indicates that feeling uncaring can make you more aware of potential threats."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'It implies that excessive self‑satisfaction can blind one to looming dangers.'을 함의한다.\n[오답 진단·처방]\n① 진단: 선지는 문장을 그대로 해석했으나, 'complacent'이 자기만족으로 위험을 눈감아버리는 뜻을 담고 있다는 점을 놓쳤다. → 처방: 단어의 정의와 문맥을 함께 살펴, 단순 번역보다 의미를 파악하도록 연습하라.\n③ 진단: 선지는 'world around you'를 감정적 관계까지 확대해 해석했다. → 처방: 문맥에서 'world'가 물리적 환경인지, 감정적 관계인지 구분하도록 연습하라.\n④ 진단: 'to become'을 현재형으로 해석해 항상 그렇다고 판단했다. → 처방: 동사의 시제와 의미를 구분해 변화 과정을 파악하도록 연습하라.\n⑤ 진단: 'uncaring'이 경계심을 높인다고 잘못 해석했다. → 처방: 문장 구조를 따라가며 부정어와 결과를 정확히 파악하도록 연습하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-10T07:29:32.684Z",
+   "type": "주제문완성",
+   "level": "중",
+   "audit": "서술형 단어수 15 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Complacency', 'surrounding', 'satisfied' / 13~17단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Complacency, the self‑satisfied state of ignoring surrounding dangers, often leads to neglect and eventual failure.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-09T16:25:53.539Z",
    "type": "복합세트",
@@ -194,79 +273,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Subject raising and EPP‑driven movement in English syntax.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: \"EPP\"이 객체 이동을 이끈다고 오해함 → 처방: 객체 이동이 아니라 주어 상승이 논의된 내용임을 확인하라.\n③ 진단: \"EPP\" 없이 주어 상승이 가능하다고 생각함 → 처방: \"EPP\"이 주어 상승을 요구함을 다시 읽어보라.\n④ 진단: 언어를 스페인어라고 잘못 판단함 → 처방: 문헌이 영어 문법을 다루고 있음을 인지하라.\n⑤ 진단: 주제와 언어를 혼동해 일반 문법이라고 판단함 → 처방: 문제의 주제는 \"영어에서 EPP 주어 상승\"임을 명확히 인식하라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Subject raising and EPP‑driven movement in English syntax.]"
-   }
-  },
-  {
-   "ts": "2026-10-07T16:45:04.636Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "서술형 단어수 14 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'break', 'loose', 'hell' / 12~16단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 주어 'all hell'은 VP 내부에서 출현해 spec‑T로 이동하며, EPP 기능에 의해 'break loose'와 분리된다.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 12~16단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-06T10:32:27.150Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 1/1가 5번 선택(기록 3번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "But if neither VP nor IP is a barrier to government, then we expect that the Case marking relationship depicted in (12) should be perfectly possible. There is no reason however to believe that any element can assign Case from outside a CP to any element within the CP and indeed it is a standard assumption that CP does count as a barrier to government. This supports the assumption that the non-finite complement clause of a verb like believe ____. Given that clauses are normally CPs, a clause which only has an IP status is an exception. Hence, such clauses are known as exceptional clauses and the verbs which take exceptional clauses as their complements, i.e. verbs like believe, are known as exceptional verbs. Finally the process of assigning Case to the subject of an exceptional clause is sometimes called Exceptional Case Marking, or ECM for short. Below are a few examples of exceptional verbs: (15) a the sheriff expects [the outlaws to be in hiding]",
-    "choices": [
-     "retains a complete clausal structure",
-     "conforms to general clause principles",
-     "exhibits a reduced clausal form",
-     "serves as an optional clausal complement",
-     "undergoes subject ellipsis"
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 'exhibits a reduced clausal form'가 들어가 글의 논지를 완성한다 (본문 'has an IP status and is not a full CP'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 지문에서 예외 절은 완전한 절 구조를 갖는다고 언급되지 않았음 → 처방: 예외 절은 구조가 단축된 형태임을 기억하고 'complete clausal structure'는 부적절하다고 판단하라.\n② 진단: 지문에서 예외 절은 일반 절 원칙을 따르지 않는다고 명시됨 → 처방: 예외 절은 일반 절 원칙과 다르므로 'conforms'는 틀린 선택이다.\n④ 진단: 지문에서 예외 절은 동사의 보어로 필수적이라고 언급됨 → 처방: 예외 절은 필수적이므로 'optional'은 부적절하다고 판단하라.\n⑤ 진단: 지문에서 예외 절의 주어는 생략되지 않으며 명시적으로 존재함 → 처방: 주어가 생략되지 않으므로 'subject ellipsis'는 틀린 선택이다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-06T10:39:15.011Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: BELIEVE와 같은 동사의 유한하지 않은 보완 조항은 IP이므로 예외적입니다.\n주어진 단어: ( of / them / making / like / exceptional / verbs / Non-finite / complement / are / believe / IPs, / clauses )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Non-finite complement clauses of verbs like believe are IPs, making them exceptional.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
