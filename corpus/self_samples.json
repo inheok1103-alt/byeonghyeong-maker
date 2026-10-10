@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-10T07:29:48.880Z",
+ "updated": "2026-10-10T14:03:02.708Z",
  "samples": [
+  {
+   "ts": "2026-10-10T13:56:33.217Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "Confusing Words and Homonyms 27 consent (see assent) ⓐ<u>continual</u> repeated but with breaks in between; chronic Example: The continual ⓑ<u>problem</u> of our car not ⓒ<u>starting</u> ⓓ<u>allowed</u> us to ⓔ<u>sell</u> it. continuous without interruption in an unbroken stream of time or space Example: The continuous dripping of the faucet drove me crazy. core center or crucial part corps trained group corpse dead body cosign to sign along with cosine a trigonometry term council a group of people meeting for a purpose counsel (verb, noun) advise; advice, an attorney creak a sound creek a stream crews many groups cruise a trip or vacation by sea criteria plural of criterion criterion a standard for evaluating or testing something cue a hint; a stimulus queue a line of people waiting currant type of small berry current up to date curser someone who swears or wishes misfortune on another cursor a blinking symbol indicating position on a computer screen dam a barrier obstructing the ﬂow of liquid damn a swear word or curse dammed blocked from ﬂowing damned doomed",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 4,
+    "explanation": "정답 ⓓ: 문맥상 'forced'가 와야 하는데 'allowed'가 쓰여 부적절하다 — 해당 문장 “Confusing Words and Homonyms 27 consent (see assent) continual repeated but with breaks in between; chronic Example: The continual problem of our car ”의 논리 흐름상 forced 가 맞고 allowed 는 방향이 어긋난다. [극성] 정답=부정적 강제 ↔ 오답=긍정적 허용\n[오답 진단·처방]\n① 진단: 학생은 'continual' 낱말의 뜻을 정확히 이해하지 못했거나, 예문 속 낱말의 적절성 판단 기준을 혼동했습니다. → 처방: 낱말의 뜻을 정확히 파악하고, 예문이 그 낱말의 뜻을 설명하기 위해 쓰인 것임을 기억하며 문맥을 판단하세요.\n② 진단: 학생은 'continual'의 뜻인 \"반복되지만 중간에 끊김이 있는\" 상황에 'problem'이 어울리지 않는다고 오해했습니다. → 처방: 'continual'이 '문제'와 결합하여 \"계속 반복되는 문제\"라는 자연스러운 뜻을 이룸을 이해하고 문맥을 다시 살피세요.\n③ 진단: 학생은 'not starting'이 '차'와 '문제'라는 문맥에서 어색하다고 판단했거나, 'starting'의 동명사 쓰임을 혼동했습니다. → 처방: 'not starting'이 '시동이 걸리지 않는 것'이라는 뜻으로 '차의 문제점'을 정확히 나타냄을 파악하고 문맥을 다시 읽으세요.\n⑤ 진단: 학생은 차의 'continual problem'이 'sell'이라는 행동으로 이어지는 것이 문맥상 부적절하다고 오해했습니다. → 처방: 'continual problem'으로 인해 차를 '파는' 것은 자연스러운 결과임을 이해하고, 문맥 속 인과 관계를 다시 생각하세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-10T14:02:32.170Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] core center or crucial part corps trained group corpse dead body cosign to sign along with cosine a trigonometry term council a group of people meeting for a purpose counsel (verb, noun) advise; advice, an attorney creak a sound creek a stream crews many groups cruise a trip or vacation by sea criteria plural of criterion criterion a standard for evaluating or testing something cue a hint; a stimulus queue a line of people waiting currant type of small berry current up to date curser someone who swears or wishes misfortune on another cursor a blinking symbol indicating position on a computer screen dam a barrier obstructing the ﬂow of liquid damn a swear word or curse dammed blocked from ﬂowing damned doomed",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-10T07:21:00.625Z",
    "type": "빈칸(어구)",
@@ -229,50 +273,6 @@
     ],
     "answer": 5,
     "explanation": "정답 배열은 ③-⑨-⑥-①-④-⑤-②-⑧-⑦. 흐름: ③ → ⑨ → ⑥ → ① → ④ → ⑤ → ② → ⑧ → ⑦ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-07T16:34:04.260Z",
-   "type": "어형변형(괄호)",
-   "level": "중",
-   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증 · ⚠ 지문 축소 의심(54%) — 정보 손실 여부 확인 권고",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
-    "passage": "We can account for how the subject all hell (1) (come) to (2) (separate) from its predicate break loose by positing that subjects originate internally within VP and from there raise to spec-T (via A-movement) across an intervening T constituent like will, so that the subject and predicate thereby come to be separated from each other – movement of the subject to spec-T (3) (drive) by an [EPP] feature carried by [T will] requiring will to have a subject with person/number features.",
-    "choices": [],
-    "answer": null,
-    "explanation": "1) come→comes [주어 'all hell'은 단수 취급되므로, 현재 시제에서 3인칭 단수 동사 형태인 'comes'가 되어야 함 (수일치).] · 2) separate→be separated ['all hell'이 분리되는 대상이므로 수동의 의미를 가져야 하며, 'comes to' 뒤에 이어지는 부정사 구문이므로 'to be p.p.' 형태인 'to be separated'가 되어야 함 (태, 준동사).] · 3) drive→being driven ['movement'가 [EPP] feature에 의해 '구동되는' 대상이므로 수동의 의미를 가져야 하며, 문맥상 이유를 설명하는 분사구문이므로 현재분사 수동 형태인 'being driven'이 되어야 함 (태, 준동사).]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-07T16:44:07.670Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "EPP‑governed subject raising in English",
-     "EPP‑driven object movement in English",
-     "Subject raising in English without EPP",
-     "EPP‑driven subject raising in Spanish",
-     "EPP‑driven subject raising in syntax"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Subject raising and EPP‑driven movement in English syntax.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: \"EPP\"이 객체 이동을 이끈다고 오해함 → 처방: 객체 이동이 아니라 주어 상승이 논의된 내용임을 확인하라.\n③ 진단: \"EPP\" 없이 주어 상승이 가능하다고 생각함 → 처방: \"EPP\"이 주어 상승을 요구함을 다시 읽어보라.\n④ 진단: 언어를 스페인어라고 잘못 판단함 → 처방: 문헌이 영어 문법을 다루고 있음을 인지하라.\n⑤ 진단: 주제와 언어를 혼동해 일반 문법이라고 판단함 → 처방: 문제의 주제는 \"영어에서 EPP 주어 상승\"임을 명확히 인식하라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Subject raising and EPP‑driven movement in English syntax.]"
    }
   }
  ]
