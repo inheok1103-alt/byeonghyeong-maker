@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-11T15:59:47.278Z",
+ "updated": "2026-10-11T20:38:59.431Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문제는 반드시 정답(또는 채점 기준)을 명시하고, 평가자가 일관되게 채점할 수 있도록 구체적인 평가 지침을 제공해야 한다.",
+   "src": "자가학습:제목",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-11T20:23:57.933Z"
+  },
+  {
+   "rule": "빈칸(어구) 문항은 채워야 할 답이 명확히 정의되고, 평가자가 객관적으로 판단할 수 있는 구체적 단어나 어구로 제한되어야 한다.",
+   "src": "자가학습:빈칸(어구)",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-11T20:34:09.405Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:지칭명시",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-11T20:37:04.440Z"
+  },
   {
    "rule": "내용일치 문항은 하나의 일관된 주제와 논리적 흐름을 갖는 독해 지문을 사용하고, 각 선택지를 지문 전체의 내용과 연결된 질문으로 구성하여 독자의 종합적 이해와 추론 능력을 평가하도록 한다.",
    "src": "자가학습:내용일치",
@@ -65,22 +89,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-10T07:26:02.915Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:주제문완성",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-10T07:29:10.449Z"
-  },
-  {
-   "rule": "문제는 반드시 정답(또는 채점 기준)을 명시하고, 평가자가 일관되게 채점할 수 있도록 구체적인 평가 지침을 제공해야 한다.",
-   "src": "자가학습:제목",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-09T21:03:34.364Z"
   },
   {
    "rule": "장문세트 유형의 출제에서는 원지문을 최소 세 개(A, B, C)로 명확히 구분된 충분한 길이와 내용적 구성을 갖춘 단락으로 구성하여, 순서 배열·지칭 추론·내용 일치 세 가지 문항 유형을 모두 출제할 수 있도록 한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T17:02:32.778Z"
-  },
-  {
-   "rule": "모든 출제에서 선지는 문맥에 정확히 맞는 어휘를 사용하고, 선택지가 제시어의 의미를 직접 반영하며, 발문은 명확한 비교 기준으로 재구성해야 한다.",
-   "src": "자가학습:요약문AB",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T16:02:15.973Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

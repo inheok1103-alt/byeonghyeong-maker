@@ -1,6 +1,83 @@
 {
- "updated": "2026-10-11T15:59:47.283Z",
+ "updated": "2026-10-11T20:38:59.434Z",
  "samples": [
+  {
+   "ts": "2026-10-11T20:28:57.154Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 1번(기록 3번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0.8,
+    "D": 0.5,
+    "distractorEff": 25,
+    "pass": false,
+    "flags": [
+     "죽은오답 ②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "THE OLYMPIAN CONCEPT in MODERN SPORTS",
+     "ATHLETIC EXCELLENCE on the SUMMIT",
+     "BEYOND the SUMMIT: MODERN OLYMPIAN IDEAL",
+     "OLYMPIC ATHLETES and THEIR GODLIKE STATUS",
+     "MODERN OLYMPIAN IDEAL UNDER the SUMMIT"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The term “Olympian” conveys a lofty, detached perspective—originally the Greek gods’ view from Mt. Olympus, now the stature of athletes who embody that superiority.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The term “Olympian” conveys a lofty, detached perspective—originally the Greek gods’ view from Mt. Olympus, now the stature of athletes who embody that superiority.]\n[오답 진단·처방]\n② 진단: 지문에서 \"Olympian today actually most often refers to Olympic athletes\"라고 적혀 있지만, \"Olympian\"이란 단어가 \"athletic excellence\"를 의미한다는 착각이 있다. 또한 \"summit\"을 Mt. Olympus 로 해석해 \"athletic summit\"이라고 오해한다. → 처방: 문맥에서 \"Olympian\"이 \"높고 위엄 있는\"이라는 뜻임을 기억하고, \"summit\"은 \"위치\"를 의미한다는 점을 유의하라.\n③ 진단: 지문에서 \"Olympian describes someone who seems “lofty” and “above it all”\"이라고 했으므로 \"Olympian\"이 이상적 개념이 아니라 \"높은 위치\"를 뜻한다는 점을 놓쳤다. → 처방: 문장을 읽을 때 \"Olympian\"이 \"높은\"이라는 뜻임을 인식하고, \"summit\"은 \"위치\"를 의미한다는 점을 기억하라.\n④ 진단: 지문에서 \"Olympian today actually most often refers to Olympic athletes\"라고 했지만, \"Olympian\"과 \"Olympic\"을 혼동해 \"godlike status\"를 과도하게 부여했다. → 처방: \"Olympic\"과 \"Olympian\"의 차이를 구분하고, \"godlike status\"가 지문에 직접 언급되지 않았다는 점을 주의하라.\n⑤ 진단: 지문에서 \"Olympian describes someone who seems “lofty” and “above it all”\"이라 했으므로 \"under the summit\"이라는 표현이 부적절하며, \"Olympian\"이 이상적 개념이 아니라 \"높은\"이라는 뜻임을 놓쳤다. → 처방: \"above\"와 \"under\"를 구분하고, \"Olympian\"이 \"높은\"을 의미한다는 점을 기억하라."
+   }
+  },
+  {
+   "ts": "2026-10-11T20:35:42.326Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Olympian Lofty, superior, and detached. • Now 77, he moved slowly and spoke to the younger lawyers in Olympian tones, but his college friends could remember when he was a brash, crazy risk‑taker. The Greek gods lived high atop Mt. Olympus, which allowed them to watch what went on in the human realm below and intervene as they saw fit. They insisted on being properly worshipped by humans, but otherwise tended to treat the affairs of these weak and short‑lived creatures almost like a sport. So Olympian describes someone who seems ____ as if surveying a scene in which other people appear the size of ants. The Olympic Games were first celebrated in the 8th century B.C., at the religious site called Olympia (far from Mt. Olympus), and Olympian today actually most often refers to Olympic athletes.",
+    "choices": [
+     "vastly intense and powerful",
+     "brightly colored and small",
+     "lowly grounded and attached",
+     "moderately aware and involved",
+     "highly elevated and detached"
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 'highly elevated and detached'가 들어가 글의 논지를 완성한다 (본문 'lofty and above it all'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 학생이 'lofty'를 'intense'로 잘못 해석했다(예: 'lofty'는 높이를 의미). → 처방: 단어 뜻을 정확히 파악하고, 문맥에서 'lofty'가 높이를 뜻함을 기억하라.\n② 진단: 학생이 'Olympian'을 색다른 색을 가진 것으로 오해했다(예: 'Olympian'이 생동감 있는 색을 연상). → 처방: 문맥에서 'Olympian'이 높이와 거리를 의미함을 기억하라.\n③ 진단: 학생이 'lofty'를 'lowly'로 반의어를 뒤집어 생각했다. → 처방: '높음'과 '낮음'의 반의어를 구분하고, 'lofty'는 높음을 뜻함을 기억하라.\n④ 진단: 학생이 'detached'를 'involved'로 오해했다. → 처방: 단어의 부정형이 포함된 경우, 부정어가 의미를 뒤집는 점을 주의하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-11T20:37:30.764Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] ‘올림피안’은 고대 그리스 신들이 산 위에서 인간을 내려다보며 관망하던 태도를 뜻하며, 현재는 그와 같은 높은 자리를 상징하는 올림픽 선수들을 가리키는 말이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-11T15:55:58.470Z",
    "type": "심경변화",
@@ -210,75 +287,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-09T02:20:41.819Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: s)\n[영영풀이] An object whose nature is yet to be defined.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] something (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-09T02:25:06.850Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "Sa hun til dattera mi said she to daughter my at faren min er kommet alene that father my is come alone og føler sig bedre?\n\n(A) (Sa hun . , is come (er kommet), and “feeling yourself” (føler sig), plus gender: the my for my daughter is mi but the my for my father is min. That is, in a sense one “should” be able to say in English Said she to my daughter that my father alone come is and himself better feels?\n\n(B) and feels himself better Here we have many of the same sorts of things that motivated Twain to say, “A person who has not studied German can form no idea of what a perplexing language it is. ” The same Said she .\n\n(C) After all, you can say something similar in every other offshoot of Proto-Germanic but English. Only to English speakers does the sentence sound like something someone with brain damage would say. This shows that something was",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 2,
-    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-08T16:42:27.710Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Too uncertain: Some of my recent research seems to ­imply that there may be a risk that certain people with a gun in their homes could be more prone to use it to kill themselves or a ­family member than to protect themselves from ­possible intruders.\n② ✓ Totalitarianism prevents stable social relationships.\n③ My research indicates that people with a gun in their homes are more likely to use it to kill themselves or a family member than they are to protect themselves from an intruder.\n④ Too certain: In my research, I prove that people with a gun in their home use it to kill themselves or a family member instead of to protect themselves from an intruder.\n⑤ That’s little help, but this is a matter where you have to develop and then trust your ear.\n⑥ Hedges and intensifiers The only principle here is the Goldilocks rule: not too much, not too little, but just right.\n⑦ It is almost certainly the case that totalitarian systems cannot allow a society to have what we would define as stable social relationships.",
-    "choices": [
-     "⑦-③-②-④-⑥-⑤-①",
-     "②-⑦-⑥-⑤-④-①-③",
-     "⑦-②-⑥-⑤-①-④-③",
-     "⑦-②-⑥-⑤-④-①-③",
-     "⑦-②-⑥-⑤-④-③-①"
-    ],
-    "answer": 4,
-    "explanation": "정답 배열은 ⑦-②-⑥-⑤-④-①-③. 흐름: ⑦(It) → ② → ⑥ → ⑤ → ④ → ① → ③ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
