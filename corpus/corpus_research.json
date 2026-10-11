@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-11T02:14:04.902Z",
+ "updated": "2026-10-11T15:59:47.280Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-11T15:58:50.725Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "코퍼스에서 흔히 나타나는 오류는 비표준 어휘·형태(예: 'somethings', 'anyways')와 문법적 실수(복수형, 전치사, 하이픈 등)이며, 이를 교정하는 변형문제는 학술적 문체를 목표로 한다.",
+   "rule": "문장 변형 문제를 만들 때는 비표준 어휘·형태(예: 'somethings', 'anyways')와 문법적 오류(복수형, 전치사, 하이픈 등)를 찾아서 정확한 표준 표현으로 교정하도록 요구한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-09T16:28:48.181Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거 시제와 현재 시제의 혼용이 빈번한 오류로, 문맥상 시제 통일성이 중요하다는 점을 확인했다. 또한, 전치사 오용(‘trust on’이 아닌 ‘trust’를 직접 동사로 쓰는 패턴)과 관계대명사의 생략 가능성(‘something going on’이 아닌 ‘something that is going on’)도 빈번한 오류 유형임을 확인했다.",
    "rule": "시제 통일성과 전치사/관계대명사 사용 규칙을 반드시 점검하라: 문장의 시제가 일관되어야 하며, ‘trust’를 동사로 쓸 때는 전치사를 쓰지 말고, ‘something + that is’ 구조를 생략하지 말고 명시하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-26T08:07:14.696Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'Only by V-ing S can V' 구조의 강제적 연어와 'more + sophisticated' 같은 최상급 형용사+명사 연어가 오답 설계에 유용하다. 또한 'create a fire break' vs 'create a fire escape plan'처럼 동사+명사 연어의 오용 패턴도 활용 가능하다.",
-   "rule": "'Only by [V-ing] can [S V]' 구조와 'more + [형용사] + [명사]' 연어 패턴을 반드시 포함하는 문장을 출제하여, 학생들이 동사 형태(원형 vs -ing) 오류와 최상급 연어 오류를 범하게 하라.",
    "sample": [
     "old english",
     "university press",

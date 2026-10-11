@@ -1,6 +1,75 @@
 {
- "updated": "2026-10-11T02:14:04.905Z",
+ "updated": "2026-10-11T15:59:47.283Z",
  "samples": [
+  {
+   "ts": "2026-10-11T15:55:58.470Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Confusion → Insight",
+     "Doubt → Confidence",
+     "Uncertainty → Clarity",
+     "Ambiguity → Precision",
+     "Misunderstanding → Knowledge"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The passage defines what a vocabulary is and demonstrates its use through contextual word‑choice exercises.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n① 진단: ‘불확실성 → 명확성’ 을 ‘혼란 → 통찰’ 로 잘못 읽음 → 처방: 다음부터는 핵심 단어를 정확히 읽고, 의미를 비교해 보라\n② 진단: ‘불확실성 → 명확성’ 을 ‘의심 → 확신’ 으로 잘못 읽음 → 처방: 다음부터는 핵심 단어를 정확히 읽고, 의미를 비교해 보라\n④ 진단: ‘불확실성 → 명확성’ 을 ‘모호성 → 정밀성’ 으로 잘못 읽음 → 처방: 다음부터는 핵심 단어를 정확히 읽고, 의미를 비교해 보라\n⑤ 진단: ‘불확실성 → 명확성’ 을 ‘오해 → 지식’ 으로 잘못 읽음 → 처방: 다음부터는 핵심 단어를 정확히 읽고, 의미를 비교해 보라\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The passage defines what a vocabulary is and demonstrates its use through contextual word‑choice exercises.]"
+   }
+  },
+  {
+   "ts": "2026-10-11T15:57:57.976Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "SENSIBLE SENTENCES? (From Week 8) Choose the word that makes sense in each of the sentences below. 1.Eric was (ⓐ<u>afflicted</u>, besieged) with an inoperable ailment. 2.The octogenarian refused to (ⓑ<u>succumb</u>, surge) to pneumonia. 3.The (ⓒ<u>remote</u>, ubiquitous) mayor was photographed in four different parts of the city yesterday. 4.We were worried lest the hostages be suffering from (sanctuary, ⓓ<u>nutrition</u>). 5.The (ⓔ<u>tranquil</u>, sinister) tone of the spring morning was suddenly broken by the loud explosion. 6.I heard his voice (excruciating, reverberating) through the corridors. 7.The senator’s bid for a second term was (thwarted, respited) by the electorate. 8.After the king’s death, his son (ascended, succumbed) to the throne in the normal order of succession. 9.The (privations, harbingers) that the poor people endured in their ghetto apartments were reprehensible. 10.The children were (emaciated, fretful) when awakened from their nap. 11.We were asked to (swap horses in midstream, cool our heels) while waiting for the bus.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 4,
+    "explanation": "정답 ⓓ: 문맥상 'malnutrition'가 와야 하는데 'nutrition'가 쓰여 부적절하다 — 해당 문장 “We were worried lest the hostages be suffering from (sanctuary, malnutrition).”의 논리 흐름상 malnutrition 가 맞고 nutrition 는 방향이 어긋난다. [극성] correct=malnutrition (lack of nourishment) ↔ wrong=nutrition (adequate nourishment)\n[오답 진단·처방]\n① 진단: 학생은 'afflicted'를 골랐는데, 문장에서는 'besieged'가 더 자연스럽다. 'afflicted'는 질병을 가진 사람을 묘사하지만, 'besieged'는 압박받는 상황을 나타낸다. → 처방: 문맥에서 'besieged'가 적절한지 판단하려면, 'with an inoperable ailment'가 압박을 의미하는지 확인하고, 'afflicted'가 단순히 병에 걸린 상태만을 의미하므로 어울리지 않음을 인식하라.\n② 진단: 학생은 'surge'를 골랐는데, 'succumb'가 맞다. 'surge'는 증가를 뜻해 문맥과 맞지 않는다. → 처방: 'succumb'가 'to pneumonia'와 함께 사용되는 일반적 표현인지 확인하고, 'surge'가 의미하는 '증가'와 문장 의미가 맞지 않음을 인지하라.\n③ 진단: 학생은 'ubiquitous'를 골랐는데, 'remote'가 맞다. 'ubiquitous'는 어디에나 있는 것을 뜻해 문맥과 반대다. → 처방: 'remote'가 'mayor'와 함께 사용되는 상황인지, 'ubiquitous'가 반대 의미임을 기억하고, 문맥을 통해 적절한 단어를 선택하라.\n⑤ 진단: 학생은 'sinister'를 골랐는데, 'tranquil'이 맞다. 'sinister'는 불길한 느낌을 주어 문맥과 맞지 않는다. → 처방: 문장 앞뒤를 보고 'tranquil'이 평온한 분위기를 묘사하는지, 'sinister'가 부정적 의미를 가지는지 판단하도록 연습하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-11T15:58:31.408Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 각 문장에 맞는 단어를 골라 의미가 통하는 문장을 만드는 연습이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-10T13:56:33.217Z",
    "type": "어휘(밑줄)",
@@ -210,69 +279,6 @@
     ],
     "answer": 4,
     "explanation": "정답 배열은 ⑦-②-⑥-⑤-④-①-③. 흐름: ⑦(It) → ② → ⑥ → ⑤ → ④ → ① → ③ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-08T16:44:07.198Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] It is almost certainly the case that totalitarian systems cannot allow a society to have what we would define as stable social relationships.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 전체주의 시스템이 사회가 안정된 사회적 관계라고 정의하는 것을 허용할 수 없는 것은 거의 확실합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-08T09:13:13.314Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 술어 변수는 교차 수식어를 공식화하여 술어 형용사와 수식어 형용사를 구별합니다.\n주어진 단어: ( predicate / variables / formalize )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Predicate variables formalize intersective modifiers, differentiating predicative and modifier adjectives. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-08T02:09:22.206Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① (Sharpen, cut and wrap are transitive verbs.)\n② Sleep, die, laugh and sigh (and play on one interpretation) are intransitive verbs.\n③ The complements of lexical verbs 65 Thus: when an NP is the sister of a V bearing the [trans] feature, we know that the NP is functioning as DIRECT OBJECT.\n④ Intransitive verbs An intransitive verb is one that does not demand any further constituent in the VP.\n⑤ ‘INtransitive’ means ‘has (and needs) no complement’.\n⑥ By the way, if you hadn’t already noticed, it is the direct object that’s the loser in the game of Rock-​Scissors-​Paper.\n⑦ Intransitive VPs are the simplest VPs.\n⑧ Since an intransitive verb requires no further element to form a complete predicate, an intransitive verb counts as a complete VP in its own right.\n⑨ The point of this feature will become clearer when I deal with other sub-​categories of verb and the other functions associated with them.",
-    "choices": [
-     "③-⑨-⑥-①-④-②-⑤-⑧-⑦",
-     "③-④-②-⑧-⑨-⑥-⑤-⑦-①",
-     "⑨-③-⑥-①-④-⑤-②-⑧-⑦",
-     "③-⑤-④-①-⑦-⑧-⑥-⑨-②",
-     "③-⑨-⑥-①-④-⑤-②-⑧-⑦"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ③-⑨-⑥-①-④-⑤-②-⑧-⑦. 흐름: ③ → ⑨ → ⑥ → ① → ④ → ⑤ → ② → ⑧ → ⑦ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]

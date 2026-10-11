@@ -1,7 +1,39 @@
 {
- "updated": "2026-10-11T02:14:04.901Z",
+ "updated": "2026-10-11T15:59:47.278Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "내용일치 문항은 하나의 일관된 주제와 논리적 흐름을 갖는 독해 지문을 사용하고, 각 선택지를 지문 전체의 내용과 연결된 질문으로 구성하여 독자의 종합적 이해와 추론 능력을 평가하도록 한다.",
+   "src": "자가학습:내용일치",
+   "score": 23,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-11T15:45:51.674Z"
+  },
+  {
+   "rule": "질문이 요구하는 인물의 심경 변화를 지문에 명확히 제시하고, 정답과 선택지가 그 지문 내용에 근거하도록 하여, 지문과 질문이 내용적으로 일치하도록 한다.",
+   "src": "자가학습:심경변화",
+   "score": 23,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-11T15:53:49.734Z"
+  },
+  {
+   "rule": "모든 어휘(밑줄) 문항은 빈칸에 들어갈 정답을 한 가지로 제한하고, 그 정답을 명확히 정의하여 자동 평가가 가능하도록 한다.",
+   "src": "자가학습:어휘(밑줄)",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-11T15:57:08.741Z"
+  },
+  {
+   "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
+   "src": "자가학습:서술형(자유)",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-11T15:58:21.008Z"
+  },
   {
    "rule": "모든 어휘 문항은 일관된 맥락의 글로 지문을 구성하여, 밑줄 친 단어의 문맥상 적절한 쓰임을 판단하도록 출제해야 한다.",
    "src": "자가학습:어휘(밑줄)",
@@ -81,14 +113,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-07T16:41:25.415Z"
-  },
-  {
-   "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
-   "src": "자가학습:서술형(자유)",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-07T16:44:37.700Z"
   },
   {
    "rule": "모든 오답 선지는 지문 내용에 근거하여 명백히 틀리거나 정답 선지보다 현저히 덜 정확해야 하며, 정답은 다른 선지와의 의미적 중복이나 타당성 경합 없이 유일한 최적 답안으로 명확히 변별되어야 한다.**",
@@ -1577,30 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T16:02:15.973Z"
-  },
-  {
-   "rule": "정답 선지의 영영풀이는 문맥과 의미를 정확히 반영해야 하며, 모든 선지의 길이(10~12자)를 통일하고, 발문은 '가장 거리가 먼 것'으로 명확히 재구성하라.",
-   "src": "자가학습:영영풀이일치",
-   "score": 65,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T16:02:47.853Z"
-  },
-  {
-   "rule": "원문 핵심 의미를 유지하며 'which' 관계사절로 전환하고, 'nor' 포함 및 시제·조건을 정확히 반영한 한 문장으로 재구성하라.",
-   "src": "자가학습:문장전환",
-   "score": 57,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T16:03:21.730Z"
-  },
-  {
-   "rule": "모든 문항에는 '시제 일치/전환', '대명사 지칭', '장소/시간 전환' 등 구체적 평가 조건을 발문에 명시하고, 각 문항별 해설·난이도·채점 기준을 상세히 제시하여 객관성과 일관성을 확보하라.",
-   "src": "자가학습:복합세트",
-   "score": 63,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T15:08:02.126Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
