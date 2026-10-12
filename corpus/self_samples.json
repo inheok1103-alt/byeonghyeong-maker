@@ -1,6 +1,60 @@
 {
- "updated": "2026-10-11T20:38:59.434Z",
+ "updated": "2026-10-12T07:36:27.881Z",
  "samples": [
+  {
+   "ts": "2026-10-12T07:31:07.894Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "신호(단서)의 다양한 범주와 복잡한 상호작용, 그리고 유발 요인과 목표와의 관계를 통해 그 특성이 결정되는 과정을 전반적으로 설명한다.",
+     "신호(단서)의 범주를 나열하고 각 항목의 특징을 간단히 서술하는 것이 본문의 주된 내용이다.",
+     "모든 의사소통 상황에서 신호가 어떻게 작용하는지를 규정하고 그 일반적 원리를 제시하며, 적용 사례를 제공한다.",
+     "신호(단서)의 내재적 특성을 탐구하면서 외부 요인과의 관계를 무시하고, 단지 내부 메커니즘만을 강조한다.",
+     "신호(단서)의 복잡한 상호작용을 분석하지만, 유발 요인과 목표와의 관계를 고려하지 않고, 단지 상호작용 자체만을 중점으로 삼는다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'This document provides a comprehensive characterization of cues, encompassing their diverse categories, complex interactions, and determination in relation to triggers and various targets.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — 정답의 일부만 담아 지엽적 · ③ 오답 — 지나치게 확대 해석 · ④ 오답 — 지나치게 확대 해석 · ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: This document provides a comprehensive characterization of cues, encompassing their diverse categories, complex interactions, and determination in relation to triggers and various targets.]"
+   }
+  },
+  {
+   "ts": "2026-10-12T07:35:44.147Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 이 연구는 언어 상호작용에서 단서, 트리거 및 대상을 분류합니다.\n주어진 단어: ( The / cues, / study / targets / and / triggers, / in / interactions / speech / categorizes )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The study categorizes cues, triggers, and targets in speech interactions.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-11T20:28:57.154Z",
    "type": "제목",
@@ -249,44 +303,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'It implies that excessive self‑satisfaction can blind one to looming dangers.'을 함의한다.\n[오답 진단·처방]\n① 진단: 선지는 문장을 그대로 해석했으나, 'complacent'이 자기만족으로 위험을 눈감아버리는 뜻을 담고 있다는 점을 놓쳤다. → 처방: 단어의 정의와 문맥을 함께 살펴, 단순 번역보다 의미를 파악하도록 연습하라.\n③ 진단: 선지는 'world around you'를 감정적 관계까지 확대해 해석했다. → 처방: 문맥에서 'world'가 물리적 환경인지, 감정적 관계인지 구분하도록 연습하라.\n④ 진단: 'to become'을 현재형으로 해석해 항상 그렇다고 판단했다. → 처방: 동사의 시제와 의미를 구분해 변화 과정을 파악하도록 연습하라.\n⑤ 진단: 'uncaring'이 경계심을 높인다고 잘못 해석했다. → 처방: 문장 구조를 따라가며 부정어와 결과를 정확히 파악하도록 연습하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-10T07:29:32.684Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 15 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Complacency', 'surrounding', 'satisfied' / 13~17단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Complacency, the self‑satisfied state of ignoring surrounding dangers, often leads to neglect and eventual failure.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-09T16:25:53.539Z",
-   "type": "복합세트",
-   "level": "중",
-   "audit": "세트 2문항(제목·요지) · 공통지문 원문 보존",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "[세트] (A)~(C)를 읽고 물음에 답하시오. (순서/지칭/내용일치)",
-    "passage": "Lesson 5  Cohesion and Coherence 75 Here’s the point: Before you begin writing, name the things you are writing about. Those are your topics. They should be short, concrete, familiar words, and more often than not, they should name the main characters in your story. Most of your subjects should be topics. Most impor­ tant, be consistent: do not vary your subjects for the sake of variety. Your topics should tell your readers what a passage is globally “about.” Avoiding Distractions at the Beginning of a Sentence It is hard to begin a sentence well. Readers want to get to a ­subject/ topic quickly, but too often we begin sentences in ways that keep readers from getting there. It’s called throat-clearing. Throat-­ clearing typically begins with metadiscourse (review pp. 58–59) that connects a sentence to the previous one, with transitions such as and, but, therefore:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
    }
   }
  ]
