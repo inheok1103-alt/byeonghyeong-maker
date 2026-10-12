@@ -1,6 +1,41 @@
 {
- "updated": "2026-10-12T07:36:27.881Z",
+ "updated": "2026-10-12T18:10:06.883Z",
  "samples": [
+  {
+   "ts": "2026-10-12T18:04:18.707Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① If this gets deleted at this point, there will be inactivated at the end of the T-cycle, once it has moved to become the specifier of infinitival to: and this will wrongly predict that sentences such as the following should be grammatical:\n② Person agreement between the probe to and its two third-person goals (there and several prizes) results in the unvalued person feature on to being valued as third-person via (7) and deleted via (13).\n③ The unvalued case-feature on the goal several prizes cannot be valued or deleted by infinitival to, given our earlier assumption that to is a defective probe which cannot value or delete an unvalued case feature on a goal.\n④ But what about the uninterpretable person feature on expletive there?\n⑤ Infinitival to (by virtue of being the head of the overall structure and being active) serves as a probe and identifies both there and several prizes as active goals (there being active by virtue of its uninterpretable person feature, and several prizes by virtue of its uninterpretable case feature).",
+    "choices": [
+     "⑤-③-②-④-①",
+     "⑤-②-④-①-③",
+     "⑤-②-③-④-①",
+     "⑤-①-②-③-④",
+     "②-⑤-③-④-①"
+    ],
+    "answer": 3,
+    "explanation": "정답 배열은 ⑤-②-③-④-①. 흐름: ⑤ → ② → ③ → ④(But) → ① — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-12T07:31:07.894Z",
    "type": "요지",
@@ -278,31 +313,6 @@
     ],
     "answer": 2,
     "explanation": "빈칸에는 'indifferent to one's environment'가 들어가 글의 논지를 완성한다 (본문 'comfortably uncaring about the world around you'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘deeply concerned with surroundings’는 ‘complacent’가 ‘자기 만족’이라는 뜻이라 ‘관심이 많다’와 반대임을 놓친다. → 처방: ‘complacent’는 ‘자기 만족’이라고 기억하고, ‘concern’과 반대임을 체크한다.\n③ 진단: ‘aware of all things’를 ‘cognizant’와 혼동해 ‘complacent’와 비슷한 의미로 착각한다. → 처방: ‘complacent’는 ‘무관심’이며, ‘cognizant’는 ‘인지한’이므로 차이를 분명히 구분한다.\n④ 진단: ‘mostly aware of surroundings’는 ‘complacent’보다 ‘conscious’에 가까운 표현으로, ‘indifferent’와 반대라는 점을 놓친다. → 처방: ‘indifferent’와 ‘aware’의 반의어 관계를 명확히 기억한다.\n⑤ 진단: ‘eager to explore horizons’는 ‘adventurous’와 유사해 ‘complacent’와 상반된 뜻으로 착각한다. → 처방: ‘complacent’는 ‘자기 만족’이므로 ‘호기심’과 반대임을 재확인한다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-10T07:28:19.609Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 정답 재검토 권고 — 솔버 1/1가 1번 선택(기록 2번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Quick Quiz #22 Match each word in the first column with its definition in the second column. Check your answers here. 1. coalesce a. perceptive 2. coalition b. unite 3. coerce c. conversational 4. cogent d. force someone to do something 5. cognitive e. proportionate 6. cognizant f. making sense 7. coherent g. group with a purpose 8. colloquial h. powerfully convincing 9. collusion i. summary 10. commensurate j. forceful 11. compelling k. conspiracy 12. compendium l. dealing with how we know our environment COMPLACENT (kum PLAY sunt) adj self-satisfied; overly pleased with oneself; contented to a fault • The complacent camper paid no attention to the poison ivy around his campsite, and ended up going to the hospital. • The football team won so many games that it became complacent, and the worst team in the league won the game. To fall into complacency is <u>to become comfortably uncaring about the world around you</u>.",
-    "choices": [
-     "It means to become comfortably uncaring about the world around you.",
-     "It implies that excessive self‑satisfaction can blind one to looming dangers.",
-     "It suggests that you may grow indifferent to the emotions of others.",
-     "It means you will always be unconcerned about the world around you.",
-     "It indicates that feeling uncaring can make you more aware of potential threats."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'It implies that excessive self‑satisfaction can blind one to looming dangers.'을 함의한다.\n[오답 진단·처방]\n① 진단: 선지는 문장을 그대로 해석했으나, 'complacent'이 자기만족으로 위험을 눈감아버리는 뜻을 담고 있다는 점을 놓쳤다. → 처방: 단어의 정의와 문맥을 함께 살펴, 단순 번역보다 의미를 파악하도록 연습하라.\n③ 진단: 선지는 'world around you'를 감정적 관계까지 확대해 해석했다. → 처방: 문맥에서 'world'가 물리적 환경인지, 감정적 관계인지 구분하도록 연습하라.\n④ 진단: 'to become'을 현재형으로 해석해 항상 그렇다고 판단했다. → 처방: 동사의 시제와 의미를 구분해 변화 과정을 파악하도록 연습하라.\n⑤ 진단: 'uncaring'이 경계심을 높인다고 잘못 해석했다. → 처방: 문장 구조를 따라가며 부정어와 결과를 정확히 파악하도록 연습하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
