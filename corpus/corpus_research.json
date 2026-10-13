@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-12T18:10:06.880Z",
+ "updated": "2026-10-13T00:52:35.701Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-13T00:52:30.693Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "코퍼스에서 자주 등장하는 고정 collocation(예: ‘New York’, ‘old English’)을 한 요소만 바꾸어도 자연스러운 틀린 문장을 만들 수 있다는 점을 확인했다.",
+   "rule": "문제에서 빈번히 나타나는 collocation(‘New York’, ‘old English’ 등)을 활용해, 관사, 전치사, 수식어 중 하나만 바꾸어 틀린 선택지를 만든다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-12T07:36:22.706Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "관사(a/the)나 인칭·시제 일치 오류가 빈번하며, 특히 'most of + 복수명사'가 'most + 복수명사'로 단순화되는 경향이 강하다. 또한 접속사(that) 생략이나 too/very 같은 부사 오용도 두드러진다.",
    "rule": "CEFR B1-B2 수준의 내신 문항에서는 'most of + 복수명사' 구문 대신 'most + 복수명사'를 사용하도록 오류 유도를 하거나, 접속사 'that'을 생략하지 않도록 강제하는 문제를 30% 이상 포함하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-26T10:03:41.248Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'there is/are' 구문의 오류가 빈번하며, 특히 복수 주어와 단수 동사의 불일치가 두드러진다. 또한 문맥에 맞지 않는 시제 사용(현재→과거)이나 불필요한 접속사('and', 'also')의 남용이 특징적이다.",
-   "rule": "'There is/are' 구문에서 주어의 수에 따라 동사를 정확히 일치시키도록 빈칸 채우기 문제를 출제하라. 예: 'There ___ (is/are) several ways to solve the problem.'",
    "sample": [
     "old english",
     "university press",

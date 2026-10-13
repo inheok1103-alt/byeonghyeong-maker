@@ -1,7 +1,56 @@
 {
- "updated": "2026-10-12T18:10:06.883Z",
+ "updated": "2026-10-13T00:52:35.703Z",
  "note": "자체 연구·학습 누적 기록 (관찰 전용). 연구 워크플로우/루틴이 출제방식을 연구할 때마다 누적됩니다.",
  "entries": [
+  {
+   "date": "2026-10-13",
+   "category": "자가학습",
+   "topic": "목적",
+   "summary": "패널 점수 57 · 기준 통과",
+   "rule": ""
+  },
+  {
+   "date": "2026-10-13",
+   "category": "자가학습",
+   "topic": "빈칸(문장)",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-10-13",
+   "category": "자가학습",
+   "topic": "어형변형(괄호)",
+   "summary": "생성 실패(키가드 폐기 포함)",
+   "rule": ""
+  },
+  {
+   "date": "2026-10-13",
+   "category": "자가학습",
+   "topic": "이어쓰기영작",
+   "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)",
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again."
+  },
+  {
+   "date": "2026-10-13",
+   "category": "코퍼스연구",
+   "topic": "원서 582권 · 연어(collocation)를 활용한 오답 설계",
+   "summary": "코퍼스에서 자주 등장하는 고정 collocation(예: ‘New York’, ‘old English’)을 한 요소만 바꾸어도 자연스러운 틀린 문장을 만들 수 있다는 점을 확인했다.",
+   "rule": "문제에서 빈번히 나타나는 collocation(‘New York’, ‘old English’ 등)을 활용해, 관사, 전치사, 수식어 중 하나만 바꾸어 틀린 선택지를 만든다."
+  },
+  {
+   "date": "2026-10-13",
+   "category": "자동 연구 회의",
+   "topic": "빈칸 유형: 결론부 어구 빈칸의 상위어 패러프레이즈 거리 기준 수립",
+   "summary": "판정 실패",
+   "rule": ""
+  },
+  {
+   "date": "2026-10-13",
+   "category": "자동 연구 회의",
+   "topic": "빈칸 유형: 본문 어휘 재활용 오답의 매력도-복수정답 위험 균형점",
+   "summary": "판정 실패",
+   "rule": ""
+  },
   {
    "date": "2026-10-12",
    "category": "자가학습",
@@ -1351,55 +1400,6 @@
    "category": "자가학습",
    "topic": "조건영작",
    "summary": "생성 실패(키가드 폐기 포함)",
-   "rule": ""
-  },
-  {
-   "date": "2026-10-03",
-   "category": "자동 연구 회의",
-   "topic": "난이도: 학년·시기별(1학기 중간~2학기 기말) 레버 프리셋",
-   "summary": "판정 실패",
-   "rule": ""
-  },
-  {
-   "date": "2026-10-03",
-   "category": "자동 연구 회의",
-   "topic": "난이도: 킬러 문항의 상한(한 세트 내 1문항) 합의",
-   "summary": "판정 실패",
-   "rule": ""
-  },
-  {
-   "date": "2026-10-03",
-   "category": "자가학습",
-   "topic": "장문세트",
-   "summary": "생성 실패(키가드 폐기 포함)",
-   "rule": ""
-  },
-  {
-   "date": "2026-10-03",
-   "category": "자가학습",
-   "topic": "필자주장",
-   "summary": "생성 실패(키가드 폐기 포함)",
-   "rule": ""
-  },
-  {
-   "date": "2026-10-03",
-   "category": "자가학습",
-   "topic": "빈칸(어구)",
-   "summary": "생성 실패(키가드 폐기 포함)",
-   "rule": ""
-  },
-  {
-   "date": "2026-10-03",
-   "category": "자가학습",
-   "topic": "배열영작",
-   "summary": "생성 실패(키가드 폐기 포함)",
-   "rule": ""
-  },
-  {
-   "date": "2026-10-03",
-   "category": "자동 연구 회의",
-   "topic": "변형공학: 분사구문화 시 현수분사 자동 탐지 규칙",
-   "summary": "판정 실패",
    "rule": ""
   }
  ]

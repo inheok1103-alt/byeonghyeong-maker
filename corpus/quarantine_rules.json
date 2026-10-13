@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-12T18:10:06.879Z",
+ "updated": "2026-10-13T00:52:35.699Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:이어쓰기영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-13T00:52:02.787Z"
+  },
   {
    "rule": "모든 출제 문항은 문법적으로 완전해야 하며, 지문의 내용과 난이도는 대상 학습자의 수준 및 출제 범위에 부합하도록 구성되어야 한다.",
    "src": "자가학습:전체문장배열",
@@ -41,14 +49,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-11T20:34:09.405Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:지칭명시",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-11T20:37:04.440Z"
   },
   {
    "rule": "내용일치 문항은 하나의 일관된 주제와 논리적 흐름을 갖는 독해 지문을 사용하고, 각 선택지를 지문 전체의 내용과 연결된 질문으로 구성하여 독자의 종합적 이해와 추론 능력을 평가하도록 한다.",
