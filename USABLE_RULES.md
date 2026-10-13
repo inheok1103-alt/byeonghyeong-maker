@@ -4085,3 +4085,6 @@
 
 ## 2026-10-13T16:14:27.811Z 자동 반영 규칙
 - 문제에서 정답 문장에 사용된 collocation(예: 'raise the gas tax', 'decrease gas consumption')을 그대로 두고, 오답에서는 collocation 중 하나를 부적절한 단어(예: 'raise tax for the gas', 'decrease the use of gas')로 바꿔 문법 오류를 만든다.  _(출처: 코퍼스연구:연어(collocation)를 활용한 오답 설계)_
+
+## 2026-10-13T21:29:54.516Z 자동 반영 규칙
+- 문법 오류 쌍을 활용해 어법 문항을 만들 때는, 원문에서 오류가 있는 단어나 구를 빈칸으로 바꾸고, 정답으로 교정된 문장을 제공한다.  _(출처: 코퍼스연구:실제 문법오류쌍(gec)을 활용한 어법 문항)_

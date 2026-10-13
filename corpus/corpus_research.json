@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-13T16:14:27.480Z",
+ "updated": "2026-10-13T21:29:54.131Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-13T21:29:48.146Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "이 코퍼스에서는 단어 선택·구문·구조 오류가 빈번히 나타나며, 교정문이 명확한 정답을 제공한다.",
+   "rule": "문법 오류 쌍을 활용해 어법 문항을 만들 때는, 원문에서 오류가 있는 단어나 구를 빈칸으로 바꾸고, 정답으로 교정된 문장을 제공한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-13T16:14:20.814Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'a/an'이나 복수형 오류가 빈번하며, 'other than' 구문에서 복수형 명사 사용이 누락되는 경향이 강하다. 또한 'know already'와 같은 어순 오류도 빈번하게 관찰된다.",
    "rule": "'other than' 뒤에는 복수형 명사를 반드시 사용해야 하며, 'know already'는 'already know'로 어순을 수정해야 한다. (예: 'no major responsibility other than studying' → 'no major responsibilities other than studying')",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-26T11:53:21.940Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'old/new' 같은 형용사의 대용 표현(older/younger)이 'person' 같은 명사와 결합할 때 빈도 높음을 확인. 또한 'have something that is specialized in' 같은 복잡한 구문은 'that have something specialized in'으로 단순화되는 경향이 있음.",
-   "rule": "형용사(old/new) + 명사(person/book) 조합에서 'old'는 'older', 'new'는 'younger'로 대체하는 규칙을 적용하여 문장 단순화. 또한 'have something that is specialized in' → 'have something specialized in'으로 축약하는 패턴을 변형문제에 반영.",
    "sample": [
     "old english",
     "university press",
