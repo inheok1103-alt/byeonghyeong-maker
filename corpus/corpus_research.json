@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-13T07:58:13.157Z",
+ "updated": "2026-10-13T16:14:27.480Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-13T16:14:20.814Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "코퍼스에서 가장 빈번한 collocation을 분석해 문법적으로 부적절한 조합을 통해 오답을 만들 수 있다는 점을 배웠다. 특히 'raise the gas tax'와 같은 collocation을 변형해 'raise tax for the gas'처럼 어울리지 않는 표현을 만들면 문법 오류가 발생한다.",
+   "rule": "문제에서 정답 문장에 사용된 collocation(예: 'raise the gas tax', 'decrease gas consumption')을 그대로 두고, 오답에서는 collocation 중 하나를 부적절한 단어(예: 'raise tax for the gas', 'decrease the use of gas')로 바꿔 문법 오류를 만든다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-13T00:52:30.693Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "원서 코퍼스에서 'old/new' 같은 형용사의 대용 표현(older/younger)이 'person' 같은 명사와 결합할 때 빈도 높음을 확인. 또한 'have something that is specialized in' 같은 복잡한 구문은 'that have something specialized in'으로 단순화되는 경향이 있음.",
    "rule": "형용사(old/new) + 명사(person/book) 조합에서 'old'는 'older', 'new'는 'younger'로 대체하는 규칙을 적용하여 문장 단순화. 또한 'have something that is specialized in' → 'have something specialized in'으로 축약하는 패턴을 변형문제에 반영.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-26T10:53:22.244Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "관사(a/the)나 인칭·시제 일치 오류가 빈번하며, 특히 'most of + 복수명사'가 'most + 복수명사'로 단순화되는 경향이 강하다. 또한 접속사(that) 생략이나 too/very 같은 부사 오용도 두드러진다.",
-   "rule": "CEFR B1-B2 수준의 내신 문항에서는 'most of + 복수명사' 구문 대신 'most + 복수명사'를 사용하도록 오류 유도를 하거나, 접속사 'that'을 생략하지 않도록 강제하는 문제를 30% 이상 포함하라.",
    "sample": [
     "old english",
     "university press",

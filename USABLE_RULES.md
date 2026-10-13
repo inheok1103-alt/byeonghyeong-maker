@@ -4082,3 +4082,6 @@
 
 ## 2026-10-13T00:52:36.052Z 자동 반영 규칙
 - 문제에서 빈번히 나타나는 collocation(‘New York’, ‘old English’ 등)을 활용해, 관사, 전치사, 수식어 중 하나만 바꾸어 틀린 선택지를 만든다.  _(출처: 코퍼스연구:연어(collocation)를 활용한 오답 설계)_
+
+## 2026-10-13T16:14:27.811Z 자동 반영 규칙
+- 문제에서 정답 문장에 사용된 collocation(예: 'raise the gas tax', 'decrease gas consumption')을 그대로 두고, 오답에서는 collocation 중 하나를 부적절한 단어(예: 'raise tax for the gas', 'decrease the use of gas')로 바꿔 문법 오류를 만든다.  _(출처: 코퍼스연구:연어(collocation)를 활용한 오답 설계)_

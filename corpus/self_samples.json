@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-13T07:58:13.160Z",
+ "updated": "2026-10-13T16:14:27.483Z",
  "samples": [
+  {
+   "ts": "2026-10-13T16:13:53.882Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Baugh와 Cable의 'A History of the English Language'는 영어의 역사와 문화적 발전을 포괄적으로 다루고 최신 개정판을 통해 학생들에게 균형 잡힌 최신 개요를 제공하는 표준 교과서이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-13T07:56:42.715Z",
    "type": "빈칸(문장)",
@@ -278,31 +297,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 각 문장에 맞는 단어를 골라 의미가 통하는 문장을 만드는 연습이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-10T13:56:33.217Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "Confusing Words and Homonyms 27 consent (see assent) ⓐ<u>continual</u> repeated but with breaks in between; chronic Example: The continual ⓑ<u>problem</u> of our car not ⓒ<u>starting</u> ⓓ<u>allowed</u> us to ⓔ<u>sell</u> it. continuous without interruption in an unbroken stream of time or space Example: The continuous dripping of the faucet drove me crazy. core center or crucial part corps trained group corpse dead body cosign to sign along with cosine a trigonometry term council a group of people meeting for a purpose counsel (verb, noun) advise; advice, an attorney creak a sound creek a stream crews many groups cruise a trip or vacation by sea criteria plural of criterion criterion a standard for evaluating or testing something cue a hint; a stimulus queue a line of people waiting currant type of small berry current up to date curser someone who swears or wishes misfortune on another cursor a blinking symbol indicating position on a computer screen dam a barrier obstructing the ﬂow of liquid damn a swear word or curse dammed blocked from ﬂowing damned doomed",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 4,
-    "explanation": "정답 ⓓ: 문맥상 'forced'가 와야 하는데 'allowed'가 쓰여 부적절하다 — 해당 문장 “Confusing Words and Homonyms 27 consent (see assent) continual repeated but with breaks in between; chronic Example: The continual problem of our car ”의 논리 흐름상 forced 가 맞고 allowed 는 방향이 어긋난다. [극성] 정답=부정적 강제 ↔ 오답=긍정적 허용\n[오답 진단·처방]\n① 진단: 학생은 'continual' 낱말의 뜻을 정확히 이해하지 못했거나, 예문 속 낱말의 적절성 판단 기준을 혼동했습니다. → 처방: 낱말의 뜻을 정확히 파악하고, 예문이 그 낱말의 뜻을 설명하기 위해 쓰인 것임을 기억하며 문맥을 판단하세요.\n② 진단: 학생은 'continual'의 뜻인 \"반복되지만 중간에 끊김이 있는\" 상황에 'problem'이 어울리지 않는다고 오해했습니다. → 처방: 'continual'이 '문제'와 결합하여 \"계속 반복되는 문제\"라는 자연스러운 뜻을 이룸을 이해하고 문맥을 다시 살피세요.\n③ 진단: 학생은 'not starting'이 '차'와 '문제'라는 문맥에서 어색하다고 판단했거나, 'starting'의 동명사 쓰임을 혼동했습니다. → 처방: 'not starting'이 '시동이 걸리지 않는 것'이라는 뜻으로 '차의 문제점'을 정확히 나타냄을 파악하고 문맥을 다시 읽으세요.\n⑤ 진단: 학생은 차의 'continual problem'이 'sell'이라는 행동으로 이어지는 것이 문맥상 부적절하다고 오해했습니다. → 처방: 'continual problem'으로 인해 차를 '파는' 것은 자연스러운 결과임을 이해하고, 문맥 속 인과 관계를 다시 생각하세요.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
