@@ -1,6 +1,56 @@
 {
- "updated": "2026-10-14T17:31:38.539Z",
+ "updated": "2026-10-14T21:02:50.093Z",
  "samples": [
+  {
+   "ts": "2026-10-14T20:51:22.581Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Are We Dumb Anglo-Saxons? Try squaring the Sapir-Whorf hypothesis with, for example, the fact that today’s English was once Old English. As we have seen, the language I am writing in was not planted in one fell swoop from on high. Modern English is the current stage of what began as a very different grammar, much like German’s. Over a millennium-and-a-half, this grammar had grammatical features from Celtic plugged into it Botox-style, while also being radically shorn of its complexities liposuction-style by adults learning it as a second language. Now, let’s try to look at this language we speak as it is today through the eyes of the Sapir-Whorf hypothesis. We English speakers “cut nature up, organize it into concepts, and ascribe significances as we do, largely because we are parties to an agreement to organize it in this way” and “cannot talk at all except by subscribing to the organization and classification of data which the agreement decrees.” Or, as an early Whorfian put it:\n\n─────────\n[요약문] The transformation of English from Old English, shaped by Celtic influences and simplified by second‑language learners, demonstrates (A) conceptual organization, illustrating (B) perceptual shaping.",
+    "choices": [
+     "(A) cultural hegemony … (B) linguistic determinism",
+     "(A) conceptual organization … (B) perceptual shaping",
+     "(A) universal language evolution … (B) universal perception alteration",
+     "(A) linguistic fragmentation … (B) perceptual distortion",
+     "(A) syntactic simplification … (B) semantic reduction"
+    ],
+    "answer": 2,
+    "explanation": "(A) conceptual organization / (B) perceptual shaping 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘Sapir-Whorf hypothesis’를 ‘문화적 헤게모니’와 ‘언어 결정론’으로 오해해, ‘조직’이라는 단어를 ‘지배’로 읽음 → 처방: ‘Sapir-Whorf hypothesis’ 부분을 다시 읽으며 ‘organize’와 ‘classification’이 의미하는 ‘구조화’에 집중하라\n③ 진단: ‘모든 언어가 보편적으로 진화한다’는 의미로 읽어, ‘영어’가 아닌 ‘전 세계’를 가정함 → 처방: 문장 중 ‘English’가 언급되는 부분을 중심으로 ‘특정 언어의 변천’에 주목하라\n④ 진단: ‘문법이 분열되었다’는 의미로 ‘fragmentation’이라 해석, ‘감각이 왜곡된다’는 ‘perceptual distortion’으로 읽음 → 처방: ‘simplified’와 ‘shorn’이 ‘간소화’를 뜻함을 인지하고 ‘fragmentation’이 아닌 ‘simplification’에 주목하라\n⑤ 진단: ‘구문이 단순화되고 의미가 축소된다’는 듯 해석, ‘semantic reduction’에 초점을 맞춤 → 처방: 문장에서 ‘grammar’와 ‘complexities’가 ‘syntactic’에 관한 것임을 확인하고 ‘semantic’ 변화를 과대평가하지 말라\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-14T20:57:12.269Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 2번 유지)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "영어는 단순화가 아니라 복잡화와 내부 요인으로 발전했다.",
+     "영어는 수천년에 걸친 단순화와 외부 영향으로 발전해 왔으며, 이는 화자들의 개념적 조직이 언어를 형성한다는 사피어‑워프 가설을 입증한다.",
+     "영어는 시대를 거치며 다양한 문화와 사람들을 연결하는 세계 공통 언어가 되었다.",
+     "영어는 수천 년 동안 단순화와 외부 영향으로 발전해 왔다.",
+     "영어는 수천 년에 걸쳐 외부 문화와의 교류를 통해 새로운 어휘를 흡수해 왔다."
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Modern English has evolved over more than a millennium through simplification and external influences, illustrating how speakers’ conceptual organization of reality shapes language, as predicted by the Sapir‑Whorf hypothesis.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Modern English has evolved over more than a millennium through simplification and external influences, illustrating how speakers’ conceptual organization of reality shapes language, as predicted by the Sapir‑Whorf hypothesis.]"
+   }
+  },
   {
    "ts": "2026-10-14T12:10:50.797Z",
    "type": "제목",
@@ -225,76 +275,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Sentence [3] mirrors sentence [1] structurally, with identical constituent categories and syntactic functions, as shown by interchangeable word substitutions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-12T18:04:18.707Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① If this gets deleted at this point, there will be inactivated at the end of the T-cycle, once it has moved to become the specifier of infinitival to: and this will wrongly predict that sentences such as the following should be grammatical:\n② Person agreement between the probe to and its two third-person goals (there and several prizes) results in the unvalued person feature on to being valued as third-person via (7) and deleted via (13).\n③ The unvalued case-feature on the goal several prizes cannot be valued or deleted by infinitival to, given our earlier assumption that to is a defective probe which cannot value or delete an unvalued case feature on a goal.\n④ But what about the uninterpretable person feature on expletive there?\n⑤ Infinitival to (by virtue of being the head of the overall structure and being active) serves as a probe and identifies both there and several prizes as active goals (there being active by virtue of its uninterpretable person feature, and several prizes by virtue of its uninterpretable case feature).",
-    "choices": [
-     "⑤-③-②-④-①",
-     "⑤-②-④-①-③",
-     "⑤-②-③-④-①",
-     "⑤-①-②-③-④",
-     "②-⑤-③-④-①"
-    ],
-    "answer": 3,
-    "explanation": "정답 배열은 ⑤-②-③-④-①. 흐름: ⑤ → ② → ③ → ④(But) → ① — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-12T07:31:07.894Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "신호(단서)의 다양한 범주와 복잡한 상호작용, 그리고 유발 요인과 목표와의 관계를 통해 그 특성이 결정되는 과정을 전반적으로 설명한다.",
-     "신호(단서)의 범주를 나열하고 각 항목의 특징을 간단히 서술하는 것이 본문의 주된 내용이다.",
-     "모든 의사소통 상황에서 신호가 어떻게 작용하는지를 규정하고 그 일반적 원리를 제시하며, 적용 사례를 제공한다.",
-     "신호(단서)의 내재적 특성을 탐구하면서 외부 요인과의 관계를 무시하고, 단지 내부 메커니즘만을 강조한다.",
-     "신호(단서)의 복잡한 상호작용을 분석하지만, 유발 요인과 목표와의 관계를 고려하지 않고, 단지 상호작용 자체만을 중점으로 삼는다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'This document provides a comprehensive characterization of cues, encompassing their diverse categories, complex interactions, and determination in relation to triggers and various targets.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — 정답의 일부만 담아 지엽적 · ③ 오답 — 지나치게 확대 해석 · ④ 오답 — 지나치게 확대 해석 · ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: This document provides a comprehensive characterization of cues, encompassing their diverse categories, complex interactions, and determination in relation to triggers and various targets.]"
    }
   }
  ]
