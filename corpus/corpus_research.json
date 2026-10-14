@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-14T12:16:02.141Z",
+ "updated": "2026-10-14T17:31:38.536Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-14T17:31:25.893Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "코퍼스에서는 철자 오류와 문법 오류가 동시에 나타나는 문장을 자주 볼 수 있다. 교정 시에는 두 가지 오류를 모두 수정해야 한다.",
+   "rule": "문제 문장은 실제 코퍼스에서 발견된 철자 오류와 문법 오류를 동시에 포함하도록 구성하고, 정답은 두 오류를 모두 교정한 올바른 문장을 제시하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-13T21:29:48.146Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "원서 문체 패턴을 활용한 변형",
    "note": "과거 시제와 현재 시제가 혼용된 문장에서 주어-동사 일치 오류와 시제 불일치가 빈번하다. 또한 전치사(‘to’, ‘on’)의 생략 또는 오용이 자주 발생한다.",
    "rule": "‘travel to + 장소’, ‘help to + 동사원형’, ‘put the right price on + 복수명사’와 같이 전치사가 요구되는 고정 표현에서는 반드시 전치사를 포함하도록 오류 유도를 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-26T13:27:27.671Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'a/an'이나 복수형 오류가 빈번하며, 'other than' 구문에서 복수형 명사 사용이 누락되는 경향이 강하다. 또한 'know already'와 같은 어순 오류도 빈번하게 관찰된다.",
-   "rule": "'other than' 뒤에는 복수형 명사를 반드시 사용해야 하며, 'know already'는 'already know'로 어순을 수정해야 한다. (예: 'no major responsibility other than studying' → 'no major responsibilities other than studying')",
    "sample": [
     "old english",
     "university press",
