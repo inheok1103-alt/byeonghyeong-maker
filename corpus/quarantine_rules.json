@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-14T06:27:46.168Z",
+ "updated": "2026-10-14T12:16:02.141Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문제는 반드시 정답(또는 채점 기준)을 명시하고, 평가자가 일관되게 채점할 수 있도록 구체적인 평가 지침을 제공해야 한다.",
+   "src": "자가학습:제목",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-14T12:08:36.841Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:글의순서",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-14T12:11:28.210Z"
+  },
   {
    "rule": "문제의 정답은 주어진 문장 내용과 논리적으로 일치하도록 반드시 검증하고, 일치하지 않을 경우 정답을 수정하거나 교체한다.",
    "src": "자가학습:빈칸(문장)",
@@ -33,14 +49,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-13T21:20:24.475Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:주제문완성",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-13T21:29:16.564Z"
   },
   {
    "rule": "문제의 본문과 모든 선택지를 완전하게 제시하고, 충분한 문맥을 제공하여 정답이 유일하게 판단될 수 있도록 한다.",
@@ -89,14 +97,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-12T07:35:33.903Z"
-  },
-  {
-   "rule": "문제는 반드시 정답(또는 채점 기준)을 명시하고, 평가자가 일관되게 채점할 수 있도록 구체적인 평가 지침을 제공해야 한다.",
-   "src": "자가학습:제목",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-11T20:23:57.933Z"
   },
   {
    "rule": "빈칸(어구) 문항은 채워야 할 답이 명확히 정의되고, 평가자가 객관적으로 판단할 수 있는 구체적 단어나 어구로 제한되어야 한다.",

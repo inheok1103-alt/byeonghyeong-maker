@@ -1,6 +1,75 @@
 {
- "updated": "2026-10-14T06:27:46.172Z",
+ "updated": "2026-10-14T12:16:02.144Z",
  "samples": [
+  {
+   "ts": "2026-10-14T12:10:50.797Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Question Formation: Auxiliary Precedes Subject",
+     "Question Formation: Subject Precedes Verb",
+     "English Grammar: All Verbs Form Questions",
+     "Question Formation: Auxiliary Only Used",
+     "Statement Formation: Verb After Subject"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'In English, interrogative sentences are formed by placing the auxiliary before the subject, leaving the main verb in its base form.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 문장에 \"Where meet-people?\"와 \"How works-the-radio?\" 같은 예시가 보이는데, 이는 주어가 동사 앞에 와야 함을 강조하고 있어 주어가 동사보다 앞서는 구조가 아니라, 보조동사가 주어 앞에 와야 함을 보여준다. → 처방: 문제 문장을 읽을 때 ‘보조동사 + 주어 + 동사’ 순서를 기억하고, 주어가 동사 앞에 와야 한다는 점을 강조해 보세요.\n③ 진단: \"What did-the-guerrillas-said?\" 같은 예시가 보이지만, 모든 동사가 질문형을 만들 수 있다는 의미는 아니다. 동사는 보조동사 뒤에 와야 하고, 형태가 바뀌지 않는다. → 처방: ‘모든 동사가 질문형이 될 수 있다’는 편견을 버리고, 보조동사가 먼저 오는 구조를 중심으로 문장을 분석하세요.\n④ 진단: 문장에 \"How does the radio work?\"와 같이 보조동사와 주어가 먼저 나오는 예시가 많아, 보조동사만 사용된다고 오해할 수 있다. 실제로 보조동사 뒤에 주어와 동사가 따라온다. → 처방: 보조동사 이후에 주어와 동사가 반드시 이어져야 함을 기억하고, 보조동사만으로 문장을 완성한다는 착각을 피하세요.\n⑤ 진단: 문장 구조가 \"Where do people meet?\"처럼 질문형임에도 불구하고, 주어와 동사가 뒤따라오는 것이 문장 구성의 핵심임을 간과할 수 있다. 이는 진술문이 아니라 질문문임을 재확인해야 한다. → 처방: 문장을 읽을 때 질문형인지 진술형인지 구분하고, 질문형이라면 ‘보조동사 + 주어 + 동사’ 순서임을 명확히 인식하세요.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: In English, interrogative sentences are formed by placing the auxiliary before the subject, leaving the main verb in its base form.]"
+   }
+  },
+  {
+   "ts": "2026-10-14T12:13:05.747Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "QUESTION WORD AUXILIARY SUBJECT Where do people meet?\n\n(A) ~ About once a week, usually. How far is the beach? ~ Only five minutes walk How long will the meeting last? ~ An hour or so, I expect. How many televisions have you got? ~ Three How much money did you spend? ~ About a hundred pounds. Guerillas: For our freedom. We can help them Very soon.\n\n(B) What time is your friend arriving? ~ Half past eight. What colour is your toothbrush? What kind of/What sort of club is it? ~ A nightclub. How old is your sister? ~ She's twenty. How often do you go out?\n\n(C) How does the radio work? What did the guerrillas say? An ordinary verb such as meet, work or say cannot come before the subject. NOT Where meet-people? and NOT How works-the-radio? The verb after the subject does not end in s or ed. and NOT What did-the-guerrillas-said? Question phrases Look at these question phrases with what and how.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 5,
+    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 문장 구조 규칙을 무시하고 순서대로 나열했다. (예: A 가 먼저 와야 한다는 규칙을 놓침) → 처방: 문제에서 제시한 ‘문장 구조’ 규칙을 먼저 확인하고 그에 맞춰 순서를 정하라.\n② 진단: A 가 먼저 와야 한다는 규칙을 놓친 채 B 를 먼저 놓았다. (예: B 가 먼저 와야 한다는 판단) → 처방: 각 항목이 규칙에 맞는지 비교해 보며 순서를 정하라.\n③ 진단: 문제에서 요구하는 규칙이 아닌 알파벳 순으로 정렬했다. (예: B 가 먼저 와야 한다는 판단) → 처방: 문제의 규칙을 이해하고 그에 따라 순서를 정하라.\n④ 진단: C 가 먼저 와야 한다는 규칙을 놓친 채 C 를 먼저 놓았다. (예: C 가 먼저 와야 한다는 판단) → 처방: 문제에서 제시한 ‘문장 구조’ 규칙을 먼저 파악하고 그에 맞춰 순서를 정하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-14T12:15:28.656Z",
+   "type": "영영풀이단어쓰기",
+   "level": "중",
+   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: p)\n[영영풀이] Used as plural of person; a body of human beings considered generally or collectively; a group of two or more persons.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] people (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-14T06:22:02.226Z",
    "type": "빈칸(문장)",
@@ -226,83 +295,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'This document provides a comprehensive characterization of cues, encompassing their diverse categories, complex interactions, and determination in relation to triggers and various targets.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — 정답의 일부만 담아 지엽적 · ③ 오답 — 지나치게 확대 해석 · ④ 오답 — 지나치게 확대 해석 · ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: This document provides a comprehensive characterization of cues, encompassing their diverse categories, complex interactions, and determination in relation to triggers and various targets.]"
-   }
-  },
-  {
-   "ts": "2026-10-12T07:35:44.147Z",
-   "type": "배열영작",
-   "level": "중",
-   "audit": "어법 검증 통과",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 이 연구는 언어 상호작용에서 단서, 트리거 및 대상을 분류합니다.\n주어진 단어: ( The / cues, / study / targets / and / triggers, / in / interactions / speech / categorizes )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The study categorizes cues, triggers, and targets in speech interactions.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-11T20:28:57.154Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버교정: 솔버 3/3 다수결 1번(기록 3번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0.8,
-    "D": 0.5,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "죽은오답 ②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "THE OLYMPIAN CONCEPT in MODERN SPORTS",
-     "ATHLETIC EXCELLENCE on the SUMMIT",
-     "BEYOND the SUMMIT: MODERN OLYMPIAN IDEAL",
-     "OLYMPIC ATHLETES and THEIR GODLIKE STATUS",
-     "MODERN OLYMPIAN IDEAL UNDER the SUMMIT"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The term “Olympian” conveys a lofty, detached perspective—originally the Greek gods’ view from Mt. Olympus, now the stature of athletes who embody that superiority.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The term “Olympian” conveys a lofty, detached perspective—originally the Greek gods’ view from Mt. Olympus, now the stature of athletes who embody that superiority.]\n[오답 진단·처방]\n② 진단: 지문에서 \"Olympian today actually most often refers to Olympic athletes\"라고 적혀 있지만, \"Olympian\"이란 단어가 \"athletic excellence\"를 의미한다는 착각이 있다. 또한 \"summit\"을 Mt. Olympus 로 해석해 \"athletic summit\"이라고 오해한다. → 처방: 문맥에서 \"Olympian\"이 \"높고 위엄 있는\"이라는 뜻임을 기억하고, \"summit\"은 \"위치\"를 의미한다는 점을 유의하라.\n③ 진단: 지문에서 \"Olympian describes someone who seems “lofty” and “above it all”\"이라고 했으므로 \"Olympian\"이 이상적 개념이 아니라 \"높은 위치\"를 뜻한다는 점을 놓쳤다. → 처방: 문장을 읽을 때 \"Olympian\"이 \"높은\"이라는 뜻임을 인식하고, \"summit\"은 \"위치\"를 의미한다는 점을 기억하라.\n④ 진단: 지문에서 \"Olympian today actually most often refers to Olympic athletes\"라고 했지만, \"Olympian\"과 \"Olympic\"을 혼동해 \"godlike status\"를 과도하게 부여했다. → 처방: \"Olympic\"과 \"Olympian\"의 차이를 구분하고, \"godlike status\"가 지문에 직접 언급되지 않았다는 점을 주의하라.\n⑤ 진단: 지문에서 \"Olympian describes someone who seems “lofty” and “above it all”\"이라 했으므로 \"under the summit\"이라는 표현이 부적절하며, \"Olympian\"이 이상적 개념이 아니라 \"높은\"이라는 뜻임을 놓쳤다. → 처방: \"above\"와 \"under\"를 구분하고, \"Olympian\"이 \"높은\"을 의미한다는 점을 기억하라."
-   }
-  },
-  {
-   "ts": "2026-10-11T20:35:42.326Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Olympian Lofty, superior, and detached. • Now 77, he moved slowly and spoke to the younger lawyers in Olympian tones, but his college friends could remember when he was a brash, crazy risk‑taker. The Greek gods lived high atop Mt. Olympus, which allowed them to watch what went on in the human realm below and intervene as they saw fit. They insisted on being properly worshipped by humans, but otherwise tended to treat the affairs of these weak and short‑lived creatures almost like a sport. So Olympian describes someone who seems ____ as if surveying a scene in which other people appear the size of ants. The Olympic Games were first celebrated in the 8th century B.C., at the religious site called Olympia (far from Mt. Olympus), and Olympian today actually most often refers to Olympic athletes.",
-    "choices": [
-     "vastly intense and powerful",
-     "brightly colored and small",
-     "lowly grounded and attached",
-     "moderately aware and involved",
-     "highly elevated and detached"
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 'highly elevated and detached'가 들어가 글의 논지를 완성한다 (본문 'lofty and above it all'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 학생이 'lofty'를 'intense'로 잘못 해석했다(예: 'lofty'는 높이를 의미). → 처방: 단어 뜻을 정확히 파악하고, 문맥에서 'lofty'가 높이를 뜻함을 기억하라.\n② 진단: 학생이 'Olympian'을 색다른 색을 가진 것으로 오해했다(예: 'Olympian'이 생동감 있는 색을 연상). → 처방: 문맥에서 'Olympian'이 높이와 거리를 의미함을 기억하라.\n③ 진단: 학생이 'lofty'를 'lowly'로 반의어를 뒤집어 생각했다. → 처방: '높음'과 '낮음'의 반의어를 구분하고, 'lofty'는 높음을 뜻함을 기억하라.\n④ 진단: 학생이 'detached'를 'involved'로 오해했다. → 처방: 단어의 부정형이 포함된 경우, 부정어가 의미를 뒤집는 점을 주의하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
