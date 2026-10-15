@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-14T21:02:50.093Z",
+ "updated": "2026-10-15T00:10:26.936Z",
  "samples": [
+  {
+   "ts": "2026-10-15T00:10:14.250Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 13 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 13단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 형용사는 접두사를 사용하지 않거나 -ly로 부사를 구성하여 인식합니다.\n주어진 단어: ( adjectives / recognized / prefix )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Adjectives are recognized by an un‑ prefix or by forming adverbs with -ly. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-14T20:51:22.581Z",
    "type": "요약문AB",
@@ -256,25 +275,6 @@
     ],
     "answer": 3,
     "explanation": "빈칸에는 원문 'The car had its mirror pulled off.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'have something put in'은 설치를 의미하고, 'pulled up'은 올리는 뜻이므로 미러를 제거한 문장과 맞지 않는다. → 처방: 문제에서 'have'가 '무엇을 설치하거나 수리하도록 맡기다'는 뜻임을 기억하고, 'pulled up'이 아닌 'removed'를 고르라.\n② 진단: 학생은 'engine'이 교체될 수 있다고 생각했지만, 문제의 문장은 미러에 관한 것이므로 엔진은 관련이 없다. → 처방: 문제에서 주어진 대상(미러)을 기억하고, 'engine'이 아니라 'mirror'에 관한 문장을 고르라.\n④ 진단: 'put on'은 설치를 의미하지만, 문제에서는 미러가 제거된 상황이므로 맞지 않는다. → 처방: 문제에서 'have something done'은 '무엇을 설치하거나 수리하도록 맡기다'라는 뜻이므로, 'put on'이 아니라 'removed'를 고르라.\n⑤ 진단: 'body painted'는 미러가 아니라 차체를 다루는 문장으로, 문맥과 일치하지 않는다. → 처방: 문제에서 주어진 대상(미러)을 기억하고, 'body'가 아니라 'mirror'에 관한 문장을 고르라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-13T00:52:13.109Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 19 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'interchangeable', 'substitutions', 'structurally' / 17~21단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Sentence [3] mirrors sentence [1] structurally, with identical constituent categories and syntactic functions, as shown by interchangeable word substitutions.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 17~21단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

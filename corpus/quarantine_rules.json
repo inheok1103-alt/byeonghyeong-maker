@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-14T21:02:50.089Z",
+ "updated": "2026-10-15T00:10:26.933Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:조건영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-15T00:09:37.678Z"
+  },
   {
    "rule": "오답 선지는 지문에서 핵심 개념을 부분적으로 반영하면서도 정답의 포괄적 의미와 차별화되는 중간 수준의 모호성이나 제한적 범위를 포함하도록 정교하게 구성하여 변별력을 높인다.",
    "src": "자가학습:요약문AB",
@@ -17,14 +25,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-14T12:08:36.841Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:글의순서",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-14T12:11:28.210Z"
   },
   {
    "rule": "문제의 정답은 주어진 문장 내용과 논리적으로 일치하도록 반드시 검증하고, 일치하지 않을 경우 정답을 수정하거나 교체한다.",

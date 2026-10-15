@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-14T21:02:50.090Z",
+ "updated": "2026-10-15T00:10:26.934Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-15T00:10:23.720Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "코퍼스에서 자주 함께 등장하는 collocation(예: 'theory coming from', 'necessary to live', 'weather related')을 그대로 반영하면 자연스러운 문장을 만들 수 있고, 이와 다른 비표준 조합은 문법 오류로 인식된다.",
+   "rule": "오답 설계 시, 원서 코퍼스에 나타난 빈번한 collocation과 다른 조합(예: 'generating from', 'needed for alive', 'weatherrealted')을 고의적으로 삽입하여 문법 오류를 유발한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-14T17:31:25.893Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "원서 코퍼스의 실제 오류 패턴에서 '명사구 내 한정사 생략'과 '동사구 내 조동사·원형동사 결합 오류'가 빈번함을 확인할 수 있다. 특히, 'the' 생략이나 조동사+원형동사 구조의 오류가 문법 오류로 자주 발생함을 알 수 있다.",
    "rule": "'명사구 내 한정사(the/a/an) 생략 오류'와 '조동사(could/would/may 등)+원형동사(be/do 등) 결합 오류'를 문항으로 출제할 때는, 해당 오류가 자연스러운 문맥에서 발생할 수 있도록 '명사구(특히 고유명사·국가명·언어명)'와 '조동사+동사구'를 포함한 문장을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-26T15:56:11.919Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "과거 시제와 현재 시제가 혼용된 문장에서 주어-동사 일치 오류와 시제 불일치가 빈번하다. 또한 전치사(‘to’, ‘on’)의 생략 또는 오용이 자주 발생한다.",
-   "rule": "‘travel to + 장소’, ‘help to + 동사원형’, ‘put the right price on + 복수명사’와 같이 전치사가 요구되는 고정 표현에서는 반드시 전치사를 포함하도록 오류 유도를 한다.",
    "sample": [
     "old english",
     "university press",
