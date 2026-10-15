@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-15T00:10:26.936Z",
+ "updated": "2026-10-15T22:37:20.449Z",
  "samples": [
+  {
+   "ts": "2026-10-15T22:37:13.325Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Phrase marker (c) represents the sentence as having three immediate constituents, old Sam and sunbathed and beside a stream; it says that sunbathed forms a constituent neither with old Sam nor with beside a stream.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 구문 마커 (c) 는 세 개의 즉각적인 구성 요소, 즉 오래된 샘과 햇볕을 쬐고 개울 옆에 있는 문장을 나타냅니다. 그것은 햇볕을 쬐는 것이 오래된 샘이나 개울 옆에 있는 구성 요소를 형성한다고 말합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-15T00:10:14.250Z",
    "type": "조건영작",
@@ -250,31 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Baugh와 Cable의 'A History of the English Language'는 영어의 역사와 문화적 발전을 포괄적으로 다루고 최신 개정판을 통해 학생들에게 균형 잡힌 최신 개요를 제공하는 표준 교과서이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-13T07:56:42.715Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · ⚠ 정답 재검토 권고 — 솔버 1/1가 2번 선택(기록 3번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Is Melanie having a new cooker installed? Note that we can use the perfect or the continuous (have had, are having). In negatives and questions in simple tenses, we use a form of do. Mark doesn't have his suits cleaned at Fastclean. We didn't have new windows put in because it was too expensive. Do you have your car serviced regularly? Where did you have your hair cut? C Get something done We can also use get something done. We must have another key made. OR We must get another key made. The sentences have the same meaning, but get is more informal than have. Here are some more examples with get. Laura got her shoes repaired. We're getting the carpet cleaned. Where did you get your hair cut? Do you get your heating checked every year? D Have meaning 'experience' We can use have in this structure with the meaning 'experience something', often something unpleasant. We had all our money stolen. [ ]",
-    "choices": [
-     "The car's mirror was pulled up.",
-     "The car had its engine replaced.",
-     "The car's mirror was removed.",
-     "The car's mirror was put on.",
-     "The car had its body painted."
-    ],
-    "answer": 3,
-    "explanation": "빈칸에는 원문 'The car had its mirror pulled off.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 지문에서 'have something put in'은 설치를 의미하고, 'pulled up'은 올리는 뜻이므로 미러를 제거한 문장과 맞지 않는다. → 처방: 문제에서 'have'가 '무엇을 설치하거나 수리하도록 맡기다'는 뜻임을 기억하고, 'pulled up'이 아닌 'removed'를 고르라.\n② 진단: 학생은 'engine'이 교체될 수 있다고 생각했지만, 문제의 문장은 미러에 관한 것이므로 엔진은 관련이 없다. → 처방: 문제에서 주어진 대상(미러)을 기억하고, 'engine'이 아니라 'mirror'에 관한 문장을 고르라.\n④ 진단: 'put on'은 설치를 의미하지만, 문제에서는 미러가 제거된 상황이므로 맞지 않는다. → 처방: 문제에서 'have something done'은 '무엇을 설치하거나 수리하도록 맡기다'라는 뜻이므로, 'put on'이 아니라 'removed'를 고르라.\n⑤ 진단: 'body painted'는 미러가 아니라 차체를 다루는 문장으로, 문맥과 일치하지 않는다. → 처방: 문제에서 주어진 대상(미러)을 기억하고, 'body'가 아니라 'mirror'에 관한 문장을 고르라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
