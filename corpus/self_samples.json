@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-15T22:37:20.449Z",
+ "updated": "2026-10-16T01:34:53.569Z",
  "samples": [
+  {
+   "ts": "2026-10-16T01:34:48.702Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] If head movement is driven by affixal properties of heads, and if both T and NEG contain a strong affix with a V-feature which can trigger movement of a main verb, the verb care will first move from V to NEG in order to attach to a null negative affix (in much the same way as the verb hath in (50) moves from V to Neg to attach to the overt negative affix ne), and the resulting complex NEG head (comprising a null negative affix with a verb attached to it) in turn will move from NEG to T in order to attach to a strong tense affix in T.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 헤드 이동이 헤드의 접사적 특성에 의해 주도되고, T와 NEG가 모두 메인 동사의 이동을 유발할 수 있는 V-특성을 가진 강력한 접사를 포함하고 있다면, 동사 care는 먼저 V에서 NEG로 이동해 무의미한 부정 접사에 붙는다(동사 hath가 (50)에서 V에서 Neg로 이동해 명시적 부정 접사 ne에 붙는 것과 거의 같은 방식으로), 그리고 그 결과로 생긴 복합 NEG 헤드(무의미한 부정 접사와 붙은 동사로 구성된)는 다시 NEG에서 T로 이동해 T의 강력한 시제 접사에 붙게 된다. (구문 포인트: 접사에 의해 주도되는 헤드 이동 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-15T22:37:13.325Z",
    "type": "우리말해석",
@@ -250,25 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Dat­ives are interpreted as locative circumstanti­als under a one‑case‑per‑clause rule, and a prefix‑verb complex lexicalizes as a transitive verb governing an accusative.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 20~24단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-13T16:13:53.882Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Baugh와 Cable의 'A History of the English Language'는 영어의 역사와 문화적 발전을 포괄적으로 다루고 최신 개정판을 통해 학생들에게 균형 잡힌 최신 개요를 제공하는 표준 교과서이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
