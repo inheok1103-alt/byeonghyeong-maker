@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-16T01:34:53.565Z",
+ "updated": "2026-10-16T07:30:48.502Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 평가 기준을 명확히 정의하고, 객관적 척도와 점수 배분을 구체적으로 명시하여 평가자가 일관성 있게 판단할 수 있도록 한다.",
+   "src": "자가학습:심경변화",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-16T07:27:34.249Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:우리말해석",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T20:53:16.275Z"
-  },
-  {
-   "rule": "모든 출제에서 핵심 단어를 포함하여 지문의 구체적 내용을 제목에 반영해야 한다.",
-   "src": "자가학습:제목",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T19:47:18.330Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

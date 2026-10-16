@@ -1,51 +1,51 @@
 {
- "updated": "2026-10-16T01:34:53.573Z",
+ "updated": "2026-10-16T07:30:48.510Z",
  "latest": {
-  "at": "2026-10-16T01:34:53.572Z",
-  "atKST": "2026-10-16 10:34 KST",
-  "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 2건",
+  "at": "2026-10-16T07:30:48.510Z",
+  "atKST": "2026-10-16 16:30 KST",
+  "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 0개 · 회의 2건",
   "newRules": [],
   "research": [
    {
     "cat": "자가학습",
-    "topic": "내용불일치",
+    "topic": "안내문일치",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "요지",
-    "summary": "생성 실패(키가드 폐기 포함)"
-   },
-   {
-    "cat": "자가학습",
-    "topic": "연결어빈칸",
-    "summary": "생성 실패(키가드 폐기 포함)"
-   },
-   {
-    "cat": "자가학습",
-    "topic": "우리말해석",
+    "topic": "심경변화",
     "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)"
    },
    {
+    "cat": "자가학습",
+    "topic": "안내문불일치",
+    "summary": "생성 실패(키가드 폐기 포함)"
+   },
+   {
+    "cat": "자가학습",
+    "topic": "조건영작",
+    "summary": "생성 실패(키가드 폐기 포함)"
+   },
+   {
     "cat": "자동 연구 회의",
-    "topic": "함의 유형: 축자 해석 오답과 과잉 확장 오답의 비율 설계",
+    "topic": "삽입 유형: 주어진 문장의 지시어 해소 위치 유일성 검증법",
     "summary": "판정 실패"
    },
    {
     "cat": "자동 연구 회의",
-    "topic": "주제·제목: 소재(topic)와 주제(theme)의 구분 기준 명문화",
+    "topic": "무관문장: 소재 동일·논지 이탈(T16) 문장의 창작 절차",
     "summary": "판정 실패"
    }
   ],
   "corpusResearch": [],
   "meetings": [
    {
-    "topic": "함의 유형: 축자 해석 오답과 과잉 확장 오답의 비율 설계",
+    "topic": "삽입 유형: 주어진 문장의 지시어 해소 위치 유일성 검증법",
     "verdict": "보류",
     "how": ""
    },
    {
-    "topic": "주제·제목: 소재(topic)와 주제(theme)의 구분 기준 명문화",
+    "topic": "무관문장: 소재 동일·논지 이탈(T16) 문장의 창작 절차",
     "verdict": "보류",
     "how": ""
    }
@@ -56,13 +56,13 @@
    "colloc": 4000,
    "samplesStored": 12
   },
-  "sample": {
-   "type": "우리말해석",
-   "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] If head movement is driven by affixal properties of heads, and if both T and NEG contain a strong affix with a V-feature which can trigger movement of a main verb, the verb care will first move from V to NEG in order to attach to a null negative affix (in much the same way as the verb hath in (50) moves from V to Neg to attach to the overt negative affix ne), and the resulting complex NEG head (comprising a null negative affix with a verb attached to it) in turn will move from NEG to T in order to attach to a strong tense affix in T.",
-   "answer": 0
-  }
+  "sample": null
  },
  "history": [
+  {
+   "at": "2026-10-16T07:30:48.510Z",
+   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 0개 · 회의 2건"
+  },
   {
    "at": "2026-10-16T01:34:53.572Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 2건"
@@ -730,10 +730,6 @@
   {
    "at": "2026-08-25T04:57:21.637Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 3개 · 검증샘플 1개 · 회의 2건"
-  },
-  {
-   "at": "2026-08-25T04:10:20.704Z",
-   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 3개 · 검증샘플 0개 · 회의 2건"
   }
  ]
 }
