@@ -1,6 +1,41 @@
 {
- "updated": "2026-10-16T17:38:53.155Z",
+ "updated": "2026-10-16T21:31:27.805Z",
  "samples": [
+  {
+   "ts": "2026-10-16T21:19:01.993Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 0,
+    "D": 0,
+    "distractorEff": 50,
+    "pass": false,
+    "flags": [
+     "과다어려움(P̂=0.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① As noted in §4, useful techniques to identify and represent language universals without syntactic building blocks—the semantic map model and multidimensional scaling—have their origins in typology.\n② Finally, the nonuniversality of constructions is also a result from typological research; while research in constructional analysis, frame semantics, and verbalization processes are beginning to provide a framework for identifying constructions whose universal properties can be discovered in crosslinguistic comparison.\n③ The simplification of syntactic structure proposed in Radical Construction Grammar represents the marriage of a theoretical argument from construction grammar—the presence of symbolic relations in a grammatical construction—and empirical evidence challenging syntactic relations from typology.\n④ The rejection of the building-block model of syntactic structure is grounded in the pervasive mismatches of distributional patterns across constructions within a single language and with the same construction across languages.\n⑤ The remarkable diversity of morphosyntactic structures and of distributional patterns revealed in rigorous typological analysis underlies the basic tenets of Radical Construction Grammar.",
+    "choices": [
+     "⑤-①-④-③-②",
+     "④-⑤-①-③-②",
+     "⑤-④-③-①-②",
+     "⑤-④-①-②-③",
+     "⑤-④-①-③-②"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ⑤-④-①-③-②. 흐름: ⑤ → ④ → ① → ③ → ②(Finally) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-16T17:38:40.504Z",
    "type": "본문찾아쓰기",
@@ -244,31 +279,6 @@
     ],
     "answer": 5,
     "explanation": "(A) concord / (B) feature valuation 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: T 가 동사 보어와 일치한다는 점을 놓고 'discord'를 고르고, 'devaluation'을 'valuation'과 혼동했다. (T can agree with the complement, valuation 이 언급됨) → 처방: 문맥에서 'agree'와 'valuation'이 등장하는 부분을 찾아 'concord'와 'agreement'가 같은 뜻임을 기억하라.\n② 진단: ‘hinges on’이 ‘depends on’이라는 뜻이라서, T 의 능력이 'consequence'와 'cause'와 관련이 있다고 착각했다. (T’s ability to (A) hinges on (B)) → 처방: ‘hinges on’이 ‘depends on’이므로, (A)는 일치(agreement), (B)는 가치 부여(valuation)라는 점을 기억하라.\n③ 진단: ‘agreement’와 ‘valuation’은 맞지만, 문맥에서는 ‘concord’가 사용된다. (T can agree with the complement, valuation 이 언급됨) → 처방: ‘concord’와 ‘agreement’는 같은 의미이지만, 문장에서는 ‘concord’가 더 적합하므로, 선택 시 문맥을 주의하라.\n④ 진단: ‘alignment’과 ‘evaluation’을 선택해, T 가 일치(agreement)와 가치 부여(valuation)를 의미한다는 점을 놓쳤다. (T’s ability to (A) hinges on (B)) → 처방: ‘alignment’은 ‘agreement’와 다르므로, 문맥에서 ‘agreement’와 ‘valuation’이 핵심임을 기억하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-13T21:28:52.570Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] And these may be indirect evidence for lexicalisation of the complex as a transitive verb governing the accusative as its direct object, as represented in (50) and (51).\n\nWhat positions fit in? 93 (49) V loc Ν abs loc Ν Ν Him bij) fyr ongean The representations in (47) — (49) each contain two locative arguments, given that, unlike fram, which realises ablative, ongean realises locative. Given the \"one-case-per-clause\" constraint, then, as long as the datives me and him are interpreted as locative, they must be circumstantials. ( ① ) For (16) — (19), the datives might be taken as governed by prefixed verbs (e. ( ② ) cefterridan, aftercliopan), and therefore participant arguments thereof. ( ③ ) Although there is no direct evidence for lexicalisation of the prefix + verb complex, we may recall instances of accusative co-occurring with cefter + verb, only when the formative immediately precedes the verb (cf. above). ( ④ ) After (50) V erg abs/loc A Ν Ν Hig öa sona aefterridon ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: 문장 주제와 맞지 않는 내용 → 처방: 문장 주제와 연결되는 부분을 찾아라.\n② 진단: 주제와 거리가 먼 내용 → 처방: 문장 주제와 관련된 문장을 고르라.\n③ 진단: 내용이 부합하지 않음 → 처방: 주제와 일치하는 문장을 찾으라.\n⑤ 진단: 문맥과 부합하지 않음 → 처방: 문맥과 연관된 문장을 선택하라.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
