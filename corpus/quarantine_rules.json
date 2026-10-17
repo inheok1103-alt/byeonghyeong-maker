@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-17T09:40:49.398Z",
+ "updated": "2026-10-17T14:02:13.143Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "지문은 한 가지 명확한 목적을 중심으로 서론·본론·결론이 논리적으로 연결된 응집성 있는 구조를 갖추어야 하며, 모든 문장과 예시는 그 목적을 뒷받침하도록 일관되게 배치되어야 한다.",
+   "src": "자가학습:목적",
+   "score": 13,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-17T13:50:15.326Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:전체문장배열",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-17T13:57:39.983Z"
+  },
   {
    "rule": "모든 출제 지문은 주제 파악에 필요한 모든 정보와 자료를 포함하는 완전하고 독립적인 형태로 제공되어야 하며, 선지는 지문의 핵심 내용을 바탕으로 명확한 변별력을 갖추도록 구체적이고 적절하게 구성되어야 한다.",
    "src": "자가학습:주제",
@@ -57,14 +73,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-16T07:27:34.249Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:우리말해석",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-16T01:34:47.433Z"
   },
   {
    "rule": "오답 선지는 지문에서 핵심 개념을 부분적으로 반영하면서도 정답의 포괄적 의미와 차별화되는 중간 수준의 모호성이나 제한적 범위를 포함하도록 정교하게 구성하여 변별력을 높인다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T22:55:02.116Z"
-  },
-  {
-   "rule": "모든 출제에서 지문의 핵심 개념을 정답 선지가 정확히 반영하도록 정의하고, 선지 간 길이를 균일(5~7단어)하게 하며, 지문의 완결성을 확보하여 발문 조건을 충족시켜야 한다.",
-   "src": "자가학습:빈칸(어구)",
-   "score": 68,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T21:45:37.866Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
