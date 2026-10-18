@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-18T11:21:08.332Z",
+ "updated": "2026-10-18T14:47:11.113Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문장 작성 시 주어와 동사의 일치, 시제와 수의 일관성을 검토하고, 문맥에 부합하는 동사 형태를 선택해 문장 구조를 일관되게 유지하도록 한다.",
+   "src": "자가학습:어형변형(괄호)",
+   "score": 82,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-18T14:37:29.355Z"
+  },
+  {
+   "rule": "문제는 본문을 완전하게 제시하고, 각 문단의 내용을 명확히 기술한 뒤, 정답을 검증 가능한 순서대로 설정한다.",
+   "src": "자가학습:글의순서",
+   "score": 17,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-18T14:43:29.590Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:조건영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-18T14:46:35.507Z"
+  },
   {
    "rule": "내용일치 문항은 지문의 완전성과 정확성을 보장하고, 모든 선지 내용이 제시된 지문에 명확히 근거하도록 출제해야 한다.",
    "src": "자가학습:내용일치",
@@ -41,14 +65,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-17T13:50:15.326Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:전체문장배열",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-17T13:57:39.983Z"
   },
   {
    "rule": "모든 출제 지문은 주제 파악에 필요한 모든 정보와 자료를 포함하는 완전하고 독립적인 형태로 제공되어야 하며, 선지는 지문의 핵심 내용을 바탕으로 명확한 변별력을 갖추도록 구체적이고 적절하게 구성되어야 한다.",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-25T23:40:16.322Z"
-  },
-  {
-   "rule": "모든 문항에서 소유격+'s'는 복수명사에 쓰일 수 없으며, 전치사 'of'는 'in'으로 대체 가능한 경우 자연스러운 표현을 우선하며, 중복 수식어는 제거하여 간결한 구성을 유지하라.",
-   "src": "자가학습:어법(밑줄)",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T23:40:57.386Z"
-  },
-  {
-   "rule": "형용사의 배열 원칙(크기·새김·색·원산지·재료·목적·명사 수식 순)을 준수하고, 문제지의 선택지(ⓐ~ⓔ) 존재 여부를 문제 itself에 명시하라.",
-   "src": "자가학습:어법수정",
-   "score": 65,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-25T23:41:25.179Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
