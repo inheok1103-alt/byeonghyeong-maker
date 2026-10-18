@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-18T01:20:21.005Z",
+ "updated": "2026-10-18T11:21:08.336Z",
  "samples": [
+  {
+   "ts": "2026-10-18T11:20:25.198Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] Your brain and body are always seeking something called ‘homeostasis’, which simply means balance.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Something called ‘homeostasis’ is always being sought by your brain and body. (포인트: Active‑to‑passive conversion: subject ‘your brain and body’ becomes object ‘something called homeostasis’.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-17T19:39:39.084Z",
    "type": "서술형(자유)",
@@ -242,31 +261,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Adjectives are recognized by an un‑ prefix or by forming adverbs with -ly. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-14T20:51:22.581Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Are We Dumb Anglo-Saxons? Try squaring the Sapir-Whorf hypothesis with, for example, the fact that today’s English was once Old English. As we have seen, the language I am writing in was not planted in one fell swoop from on high. Modern English is the current stage of what began as a very different grammar, much like German’s. Over a millennium-and-a-half, this grammar had grammatical features from Celtic plugged into it Botox-style, while also being radically shorn of its complexities liposuction-style by adults learning it as a second language. Now, let’s try to look at this language we speak as it is today through the eyes of the Sapir-Whorf hypothesis. We English speakers “cut nature up, organize it into concepts, and ascribe significances as we do, largely because we are parties to an agreement to organize it in this way” and “cannot talk at all except by subscribing to the organization and classification of data which the agreement decrees.” Or, as an early Whorfian put it:\n\n─────────\n[요약문] The transformation of English from Old English, shaped by Celtic influences and simplified by second‑language learners, demonstrates (A) conceptual organization, illustrating (B) perceptual shaping.",
-    "choices": [
-     "(A) cultural hegemony … (B) linguistic determinism",
-     "(A) conceptual organization … (B) perceptual shaping",
-     "(A) universal language evolution … (B) universal perception alteration",
-     "(A) linguistic fragmentation … (B) perceptual distortion",
-     "(A) syntactic simplification … (B) semantic reduction"
-    ],
-    "answer": 2,
-    "explanation": "(A) conceptual organization / (B) perceptual shaping 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘Sapir-Whorf hypothesis’를 ‘문화적 헤게모니’와 ‘언어 결정론’으로 오해해, ‘조직’이라는 단어를 ‘지배’로 읽음 → 처방: ‘Sapir-Whorf hypothesis’ 부분을 다시 읽으며 ‘organize’와 ‘classification’이 의미하는 ‘구조화’에 집중하라\n③ 진단: ‘모든 언어가 보편적으로 진화한다’는 의미로 읽어, ‘영어’가 아닌 ‘전 세계’를 가정함 → 처방: 문장 중 ‘English’가 언급되는 부분을 중심으로 ‘특정 언어의 변천’에 주목하라\n④ 진단: ‘문법이 분열되었다’는 의미로 ‘fragmentation’이라 해석, ‘감각이 왜곡된다’는 ‘perceptual distortion’으로 읽음 → 처방: ‘simplified’와 ‘shorn’이 ‘간소화’를 뜻함을 인지하고 ‘fragmentation’이 아닌 ‘simplification’에 주목하라\n⑤ 진단: ‘구문이 단순화되고 의미가 축소된다’는 듯 해석, ‘semantic reduction’에 초점을 맞춤 → 처방: 문장에서 ‘grammar’와 ‘complexities’가 ‘syntactic’에 관한 것임을 확인하고 ‘semantic’ 변화를 과대평가하지 말라\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
