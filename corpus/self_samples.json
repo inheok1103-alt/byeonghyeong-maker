@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-18T18:17:42.988Z",
+ "updated": "2026-10-18T23:27:36.379Z",
  "samples": [
+  {
+   "ts": "2026-10-18T23:25:10.810Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "다양한 경험이 창의성의 핵심 동력으로 작용한다.",
+     "경험을 자주 쌓는 것이 창의성을 끌어올린다.",
+     "모든 분야의 경험이 창의성에 직결된다.",
+     "경험을 한 주제에 집중하는 것이 창의성의 핵심이다.",
+     "경험이 풍부할수록 문제 해결 능력이 향상된다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Broad experience is the key to creativity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — 정답의 일부만 담아 지엽적 · ③ 오답 — 지나치게 확대 해석 · ④ 오답 — 정도·빈도를 왜곡 · ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Broad experience is the key to creativity.]"
+   }
+  },
   {
    "ts": "2026-10-18T18:13:29.544Z",
    "type": "요지",
@@ -244,41 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] She hesitated to step onto the balcony that was supported by a single ___. (포인트: 문장을 관계사로 연결해 두 문장을 하나로 결합)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-16T21:19:01.993Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 50,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① As noted in §4, useful techniques to identify and represent language universals without syntactic building blocks—the semantic map model and multidimensional scaling—have their origins in typology.\n② Finally, the nonuniversality of constructions is also a result from typological research; while research in constructional analysis, frame semantics, and verbalization processes are beginning to provide a framework for identifying constructions whose universal properties can be discovered in crosslinguistic comparison.\n③ The simplification of syntactic structure proposed in Radical Construction Grammar represents the marriage of a theoretical argument from construction grammar—the presence of symbolic relations in a grammatical construction—and empirical evidence challenging syntactic relations from typology.\n④ The rejection of the building-block model of syntactic structure is grounded in the pervasive mismatches of distributional patterns across constructions within a single language and with the same construction across languages.\n⑤ The remarkable diversity of morphosyntactic structures and of distributional patterns revealed in rigorous typological analysis underlies the basic tenets of Radical Construction Grammar.",
-    "choices": [
-     "⑤-①-④-③-②",
-     "④-⑤-①-③-②",
-     "⑤-④-③-①-②",
-     "⑤-④-①-②-③",
-     "⑤-④-①-③-②"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ⑤-④-①-③-②. 흐름: ⑤ → ④ → ① → ③ → ②(Finally) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
