@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-19T08:01:02.548Z",
+ "updated": "2026-10-19T15:56:13.353Z",
  "samples": [
+  {
+   "ts": "2026-10-19T15:53:35.204Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Part II Contextual Analysis I . Explicit Cues Question No.1 Synonyms: Choose the correct answer : 1- The detectives were (A) [arrested / deluded] by all the false evidence . They were completely deceived and they arrested the wrong person. Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so (B) [excruciating / wonderful] that drugs are often prescribed to relieve the agony. Excruciating means _____________ a) painful. b) wonderful c) hurtful 3-(C) [Inveterate / casual] gamblers are habitual customers at the race track betting widows. Inveterate means ____________ a) ancient b) regular c) casual 4- Our plane tickets were voided when the airline ticket agent declared that the airport was closed . Therefore , all reservations were cancelled . voided means ___________ a) reserved b) stolen c ) not valid 5-Although the insurrection began in the rural areas , the rebellion quickly spread throughout the cities . Insurrection means _________ a) elections b) revolt c) journey.",
+    "choices": [
+     "(A) deluded - (B) excruciating - (C) Inveterate",
+     "(A) arrested - (B) excruciating - (C) Inveterate",
+     "(A) deluded - (B) wonderful - (C) Inveterate",
+     "(A) deluded - (B) excruciating - (C) casual",
+     "(A) arrested - (B) wonderful - (C) casual"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) deluded - (B) excruciating - (C) Inveterate. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-19T15:56:07.653Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 망상은 __________ a) 납득됨 b) 체포됨 c) 현혹됨 2 - 다리가 부러져서 겪는 불편함은 너무 극심할 수 있으므로 종종 고통을 완화하기 위해 약물을 처방합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-19T08:00:39.741Z",
    "type": "요약문AB",
@@ -219,50 +263,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 이 책은 구동사를 파티클로 단순히 분석하고, 흔히 쓰이는 세 가지 유형을 다룬 뒤, 네 번째 형태인 명사구 뒤 전치사구를 나중에 다룰 것이다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-17T13:47:49.028Z",
-   "type": "본문찾아쓰기",
-   "level": "중",
-   "audit": "정의 실제사전 확보·순환정의 차단·첫글자 코드조립",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오. (첫 글자: a)\n[영영풀이] At all times; throughout all time; since the beginning.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] always (본문에 쓰인 형태 그대로 인정, 굴절형은 채점 시 명시)\n【출제의도】 영어 정의로 어휘의 문맥 의미를 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-17T13:59:21.165Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① Notional Survey of Time-Expressions 26.\n② Principal Divisions of Time.\n③ They thought I should die.\n④ Eustacia’s dream had always been that, once married to Clyne, she would have the power of inducing him to return to Paris (Hardy).\n⑤ You (he) will (future) becomes I shall or I should because I will or I would would call up too strongly the idea of volition: Do you think I shall recover soon?\n⑥ She said I should please her much more if I would only press her hand and go away.\n⑦ These may be represented in the following diagram (23.\n⑧ It will now be expedient to look at the same subject-matter from the other side, starting from the notions of time that are universal, independent of any special linguistic features, and then asking ourselves in what different ways they find expression in the English verb.\n⑨ We have finished our examination of the tenses of the English verb and those auxiliaries which correspond more or less to the tenses of other languages (Chaps.",
-    "choices": [
-     "④-⑤-⑥-③-①-⑨-⑧-②-⑦",
-     "④-①-⑦-⑤-③-⑨-②-⑧-⑥",
-     "⑤-④-⑥-③-①-⑨-⑧-②-⑦",
-     "④-⑥-⑨-②-⑤-⑦-①-③-⑧",
-     "④-⑤-⑥-③-①-⑧-⑨-②-⑦"
-    ],
-    "answer": 1,
-    "explanation": "정답 배열은 ④-⑤-⑥-③-①-⑨-⑧-②-⑦. 흐름: ④ → ⑤ → ⑥ → ③(They) → ① → ⑨ → ⑧(It) → ② → ⑦(These) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ①과 ⑨의 위치를 혼동해 ①을 먼저 놓고, ⑨을 중간에 놓음으로써 시간 표현이 뒤죽박죽이 됨. → 처방: 문장 번호를 보고, 각 문장이 다루는 주제(시간 표현, 문법 등)를 먼저 파악한 뒤 순서를 정하라.\n③ 진단: ①과 ⑨를 뒤바꾸어 ⑤, ④, ⑥, ③, ①, ⑨ 순으로 놓음으로써 문장 흐름이 논리적이지 않음. → 처방: 각 문장이 다루는 내용(시간 개념, 문법, 예시)을 기준으로 앞뒤 관계를 정리하라.\n④ 진단: ①과 ⑨를 중간에 두고, ⑥와 ②를 앞에 배치해 문장 흐름이 어색함. → 처방: 문장마다 핵심 주제(시간 개념, 문법, 예시)를 파악하고, 그 주제의 발전 순서대로 배치하라.\n⑤ 진단: ①과 ⑨를 뒤에 두고, ⑧을 중간에 놓아 문장 흐름이 끊김. → 처방: 문장별로 다루는 내용이 시간 개념 → 문법 → 예시 순서임을 기억하고, 그 순서대로 배열하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]

@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-19T08:01:02.544Z",
+ "updated": "2026-10-19T15:56:13.349Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "선지 간의 의미적 변별력을 명확히 확보하여 정답이 지문의 내용을 유일하게 가장 적절하게 대표하도록 하고, 어떤 오답 선지도 정답보다 더 적절하거나 유사하게 느껴지지 않도록 구성한다.",
+   "src": "자가학습:제목",
+   "score": 53,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-19T15:40:19.741Z"
+  },
+  {
+   "rule": "모든 문항은 객관식 형식으로 구성하고, 정답과 평가 기준을 명확히 정의하여 자동 평가가 가능하도록 한다.",
+   "src": "자가학습:네모어휘ABC",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-19T15:50:38.342Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:우리말해석",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-19T15:54:33.678Z"
+  },
   {
    "rule": "문항은 평가 기준을 명확히 제시하고, 채점자가 주관적 판단 없이 객관적으로 평가할 수 있는 구체적 답변을 요구하도록 설계한다.",
    "src": "자가학습:밑줄함의",
@@ -17,14 +41,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-19T07:57:29.751Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-19T08:00:55.300Z"
   },
   {
    "rule": "지문은 하나의 일관된 주제와 논리적 흐름을 갖도록 재구성하고, 각 선지는 그 주제와 직접 연결되는 독특한 관점·사례를 제시해 명확히 구분되도록 한다.",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-26T01:59:50.242Z"
-  },
-  {
-   "rule": "지문은 완결된 내용으로 구성하고, 선지는 지문의 핵심 주제를 포괄하는 범위로 설정하며, 오답 선지의 매력도를 높이기 위해 예외나 일부 한계를 명시하라.",
-   "src": "자가학습:제목",
-   "score": 75,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-26T02:00:23.984Z"
-  },
-  {
-   "rule": "모든 문항 검토 시, 기호 오류 미발견(대문자·누락 등 문법/표기 규칙 오류)뿐 아니라 문맥·규칙성까지 종합적으로 확인한 후, 오류가 없더라도 '왜 정정되지 않았는지 이유'를 명기하라.",
-   "src": "자가학습:틀린문장 고쳐쓰기",
-   "score": 65,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-26T02:00:57.679Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
