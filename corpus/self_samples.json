@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-19T01:33:04.069Z",
+ "updated": "2026-10-19T08:01:02.548Z",
  "samples": [
+  {
+   "ts": "2026-10-19T08:00:39.741Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Olympian Lofty, superior, and detached. • Now 77, he moved slowly and spoke to the younger lawyers in Olympian tones, but his college friends could remember when he was a brash, crazy risk-taker. The Greek gods lived high atop Mt. Olympus, which allowed them to watch what went on in the human realm below and intervene as they saw fit. They insisted on being properly worshipped by humans, but otherwise tended to treat the affairs of these weak and short-lived creatures almost like a sport. So Olympian describes someone who seems “lofty” and “above it all,” as if surveying a scene in which other people appear the size of ants. The Olympic Games were first celebrated in the 8th century B.C., at the religious site called Olympia (far from Mt. Olympus), and Olympian today actually most often refers to Olympic athletes.\n\n─────────\n[요약문] The Olympian, an (A) figure that observes and (B) human affairs, is closely linked to the Olympic Games and athletes.",
+    "choices": [
+     "(A) elevated … (B) interference",
+     "(A) lowly … (B) observe",
+     "(A) high … (B) participate",
+     "(A) source … (B) consequence",
+     "(A) godlike … (B) control"
+    ],
+    "answer": 1,
+    "explanation": "(A) elevated / (B) interference 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 지문에서 ‘Olympian describes someone who seems “lofty”’이라서 ‘lowly’는 반의어이며, 그들은 관찰만 하는 것이 아니라 ‘intervene’한다. → 처방: 문제의 핵심 단어를 정확히 읽고, 반의어를 피하며, 관찰보다는 개입을 주의 깊게 살펴라.\n③ 진단: 지문에서 그들은 ‘intervene’한다는 점이 강조되므로 ‘participate’는 부적절하다. → 처방: 선택지를 고를 때, 동사의 의미가 문장과 일치하는지 반드시 확인하라.\n④ 진단: 지문에서 ‘observe’와 ‘intervene’이 핵심이며, ‘source’와 ‘consequence’는 문맥에 맞지 않는다. → 처방: 문장 구조를 따라가며, 주어와 동사의 관계를 중심으로 단어를 고르라.\n⑤ 진단: 지문에서 ‘Olympian’은 ‘lofty’이지만 ‘godlike’는 과장이며, ‘control’은 ‘intervene’과 차이가 있다. → 처방: 과장된 표현을 피하고, 실제 문장에서 사용된 동사를 그대로 반영하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-19T08:00:56.609Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 9 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 9단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 올림피아누스는 그리스 신들과 운동선수들을 울리는 고상한 초연함을 나타냅니다.\n주어진 단어: ( olympian / denotes / lofty )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Olympian denotes lofty detachment, echoing Greek gods and athletes. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-19T01:32:59.760Z",
    "type": "우리말해석",
@@ -219,60 +263,6 @@
     ],
     "answer": 1,
     "explanation": "정답 배열은 ④-⑤-⑥-③-①-⑨-⑧-②-⑦. 흐름: ④ → ⑤ → ⑥ → ③(They) → ① → ⑨ → ⑧(It) → ② → ⑦(These) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ①과 ⑨의 위치를 혼동해 ①을 먼저 놓고, ⑨을 중간에 놓음으로써 시간 표현이 뒤죽박죽이 됨. → 처방: 문장 번호를 보고, 각 문장이 다루는 주제(시간 표현, 문법 등)를 먼저 파악한 뒤 순서를 정하라.\n③ 진단: ①과 ⑨를 뒤바꾸어 ⑤, ④, ⑥, ③, ①, ⑨ 순으로 놓음으로써 문장 흐름이 논리적이지 않음. → 처방: 각 문장이 다루는 내용(시간 개념, 문법, 예시)을 기준으로 앞뒤 관계를 정리하라.\n④ 진단: ①과 ⑨를 중간에 두고, ⑥와 ②를 앞에 배치해 문장 흐름이 어색함. → 처방: 문장마다 핵심 주제(시간 개념, 문법, 예시)를 파악하고, 그 주제의 발전 순서대로 배치하라.\n⑤ 진단: ①과 ⑨를 뒤에 두고, ⑧을 중간에 놓아 문장 흐름이 끊김. → 처방: 문장별로 다루는 내용이 시간 개념 → 문법 → 예시 순서임을 기억하고, 그 순서대로 배열하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-17T14:02:09.249Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 20 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'Eustacia', 'marriage', 'reflects' / 18~22단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I believe that Eustacia's longing for control over her marriage reflects a broader theme of female agency in Hardy's work.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 18~22단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-16T23:45:42.259Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/1가 4번 선택(기록 1번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 0,
-    "D": 0,
-    "distractorEff": 25,
-    "pass": false,
-    "flags": [
-     "과다어려움(P̂=0.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "어휘와 용어집의 차이를 설명하려고 합니다.",
-     "어휘와 용어집의 정의를 제시하려고 합니다.",
-     "용어집에 포함된 단어를 나열하려고 합니다.",
-     "어휘에 대한 예시를 제공하려고 합니다.",
-     "어휘와 용어집을 같은 의미로 사용하려고 합니다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'A vocabulary is the set of words known or used in a language, while a glossary is an organized, field‑specific list of those terms.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 문제는 목적으로 묻는 것인데 정의를 묻는 듯 잘못 해석했다. → 처방: 목적 문항은 글이 무엇을 설명하려는지 고르는 것임을 기억하라.\n③ 진단: 어휘에 포함된 단어를 나열하라는 뜻으로 오독했다. → 처방: 목적이란 글이 전달하려는 핵심 의도를 파악하도록 하라.\n④ 진단: 예시를 제공하려는지로 혼동했다. → 처방: 예시가 아니라 글이 전하고자 하는 내용을 찾도록 주의하라.\n⑤ 진단: 같은 의미라고 생각해 선택했다. → 처방: 같은 의미라는 선택지를 제외하고 차이점을 묻는 문항인지 점검하라.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: A vocabulary is the set of words known or used in a language, while a glossary is an organized, field‑specific list of those terms.]"
    }
   }
  ]
