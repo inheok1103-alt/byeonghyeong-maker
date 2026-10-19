@@ -1,51 +1,51 @@
 {
- "updated": "2026-10-18T23:27:36.383Z",
+ "updated": "2026-10-19T01:33:04.073Z",
  "latest": {
-  "at": "2026-10-18T23:27:36.383Z",
-  "atKST": "2026-10-19 08:27 KST",
+  "at": "2026-10-19T01:33:04.072Z",
+  "atKST": "2026-10-19 10:33 KST",
   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 2건",
   "newRules": [],
   "research": [
    {
     "cat": "자가학습",
-    "topic": "요약문AB",
+    "topic": "틀린문장 고쳐쓰기",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "요지",
-    "summary": "패널 점수 31 · 기준 통과"
-   },
-   {
-    "cat": "자가학습",
-    "topic": "주제",
+    "topic": "연결어빈칸",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "서술형(자유)",
-    "summary": "생성 실패(키가드 폐기 포함)"
+    "topic": "밑줄함의",
+    "summary": "패널 점수 28 · 기준 통과"
+   },
+   {
+    "cat": "자가학습",
+    "topic": "우리말해석",
+    "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)"
    },
    {
     "cat": "자동 연구 회의",
-    "topic": "검증: 솔버 게이트 3표 다수결의 온도·페르소나 다양화",
+    "topic": "함의 유형: 축자 해석 오답과 과잉 확장 오답의 비율 설계",
     "summary": "판정 실패"
    },
    {
     "cat": "자동 연구 회의",
-    "topic": "검증: 유령 오류(지문 부재 근거) 자동 차단 규칙 고도화",
+    "topic": "주제·제목: 소재(topic)와 주제(theme)의 구분 기준 명문화",
     "summary": "판정 실패"
    }
   ],
   "corpusResearch": [],
   "meetings": [
    {
-    "topic": "검증: 솔버 게이트 3표 다수결의 온도·페르소나 다양화",
+    "topic": "함의 유형: 축자 해석 오답과 과잉 확장 오답의 비율 설계",
     "verdict": "보류",
     "how": ""
    },
    {
-    "topic": "검증: 유령 오류(지문 부재 근거) 자동 차단 규칙 고도화",
+    "topic": "주제·제목: 소재(topic)와 주제(theme)의 구분 기준 명문화",
     "verdict": "보류",
     "how": ""
    }
@@ -57,12 +57,16 @@
    "samplesStored": 12
   },
   "sample": {
-   "type": "요지",
-   "instruction": "다음 글의 요지로 가장 적절한 것은?",
-   "answer": 1
+   "type": "우리말해석",
+   "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] The disconnection between cultural development and grammar is also clear in that societies have turned upside down over time while the grammar stayed put.",
+   "answer": 0
   }
  },
  "history": [
+  {
+   "at": "2026-10-19T01:33:04.072Z",
+   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 2건"
+  },
   {
    "at": "2026-10-18T23:27:36.383Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 2건"
@@ -730,10 +734,6 @@
   {
    "at": "2026-08-25T20:53:47.942Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 3개 · 검증샘플 1개 · 회의 2건"
-  },
-  {
-   "at": "2026-08-25T19:53:02.644Z",
-   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 3개 · 검증샘플 2개 · 회의 2건"
   }
  ]
 }
