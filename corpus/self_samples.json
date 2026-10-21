@@ -1,6 +1,56 @@
 {
- "updated": "2026-10-20T20:50:40.734Z",
+ "updated": "2026-10-21T00:07:31.627Z",
  "samples": [
+  {
+   "ts": "2026-10-21T00:05:15.061Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① As in Old English, in Old Frisian we find third person personal pronouns beginning with h- throughout: 5.\n② In the younger, western dialects we find no -ar or -er, but -a and -an or -en.\n③ tham and thissem opposite Goth.\n④ Old Frisian has no reflexive pronoun, but does show sîn as a possessive form for the masculine and neuter singular: alle sîne sîthar ‘all his colleagues’.\n⑤ Possibly because of the texts in which it is transmitted, Old Frisian shows no dual pronouns, though modern North Frisian dialects have them.\n⑥ Like all the Germanic languages except Gothic, Old Frisian shows an intensified demonstrative pronoun: OF masc.\n⑦ þaim Verbs 1.\n⑧ Old Frisian does not distinguish the dative and accusative cases in the first and second person singular personal pronouns: 6.\n⑨ thi and this opposite Goth.",
+    "choices": [
+     "②-⑤-①-⑧-④-⑥-⑨-⑦-③",
+     "②-⑦-⑤-①-⑧-④-③-⑥-⑨",
+     "②-⑤-①-⑧-④-⑥-⑨-③-⑦",
+     "②-⑦-⑥-③-④-⑧-⑨-①-⑤",
+     "②-①-⑤-⑧-④-⑥-⑨-③-⑦"
+    ],
+    "answer": 3,
+    "explanation": "정답 배열은 ②-⑤-①-⑧-④-⑥-⑨-③-⑦. 흐름: ② → ⑤ → ① → ⑧ → ④ → ⑥ → ⑨ → ③ → ⑦ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-21T00:07:25.959Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "In the younger, western ⓐ<u>dialects</u> we find no -ar or -er, but -a and -an or -en. 3. Possibly because of the texts in which it is transmitted, Old Frisian shows no dual ⓑ<u>pronouns</u>, though modern North Frisian dialects have them. 4. As in Old English, in Old Frisian we find third person personal pronouns beginning with h- throughout: 5. Old Frisian does not distinguish the dative and accusative cases in the first and second person ⓒ<u>plural</u> personal pronouns: 6. Old Frisian has no ⓓ<u>reflexive</u> pronoun, but does show sîn as a possessive form for the masculine and neuter singular: alle sîne sîthar ‘all his colleagues’. 7. Like all the Germanic languages except Gothic, Old Frisian shows an intensified ⓔ<u>demonstrative</u> pronoun: OF masc. nom. sg. thi and this opposite Goth. sa dat. pl. tham and thissem opposite Goth. þaim Verbs 1. Old Frisian does not show a reduplicating class of verbs. Instead we find either a new vowel alternation, or reassignment to the weak class: OF Goth.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ: 문맥상 'singular'가 와야 하는데 'plural'가 쓰여 부적절하다 — 해당 문장 “Old Frisian does not distinguish the dative and accusative cases in the first and second person singular personal pronouns: 6.”의 논리 흐름상 singular가 맞고 plural는 방향이 어긋난다. [극성] singular (correct) ↔ plural (incorrect)\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-20T20:50:03.729Z",
    "type": "제목",
@@ -219,56 +269,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Broad experience is the key to creativity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — 정답의 일부만 담아 지엽적 · ③ 오답 — 지나치게 확대 해석 · ④ 오답 — 정도·빈도를 왜곡 · ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Broad experience is the key to creativity.]"
-   }
-  },
-  {
-   "ts": "2026-10-18T18:13:29.544Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(67%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "어휘의 정확한 이해가 소통의 기초를 이룬다.",
-     "어휘의 정확한 이해가 소통에 도움이 된다.",
-     "어휘의 정확한 이해가 소통의 장애가 된다.",
-     "어휘의 정확한 이해가 소통의 전부가 아니다.",
-     "어휘의 정확한 이해가 소통을 완전히 완성한다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'A vocabulary is the set of words known to an individual or used in a language, and understanding each word’s precise definition is essential for effective communication.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 문장에 '기초'를 '도움'으로 오해하거나, '소통에 도움이 된다'는 표현이 더 흔하게 느껴져서 선택한 것 → 처방: 문장 속 핵심 단어 '기초'를 주의 깊게 읽고, '기초'와 '도움'의 차이를 구분해라\n③ 진단: 소통의 장애가 된다는 표현이 문장에 없으므로, '오해'가 소통을 방해한다는 잘못된 해석으로 선택한 것 → 처방: 문장에 등장하는 단어를 그대로 해석하고, '장애'라는 단어가 없음을 확인하라\n④ 진단: 문장에 '전부가 아니다'라는 의미가 없으므로, '정확한 이해가 소통의 전부가 아니다'라는 해석을 잘못 적용한 것 → 처방: 문장을 읽을 때 '전부'라는 표현이 없음을 인식하고, 핵심 메시지를 파악하라\n⑤ 진단: 문장에 '완전히 완성한다'는 표현이 없으므로, '완전'이라는 단어를 과도하게 해석해 선택한 것 → 처방: 문장에 '완전히'라는 단어가 없음을 확인하고, '완전'이 아닌 '기초'라는 의미를 중점적으로 파악하라\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: A vocabulary is the set of words known to an individual or used in a language, and understanding each word’s precise definition is essential for effective communication.]"
-   }
-  },
-  {
-   "ts": "2026-10-18T18:17:42.562Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Quick Quiz #26 Match each word in the first column with its definition in the second column. Check your answers here. 1. construe a. admitting guilt 2. consummate b. interpret 3. contentious c. perfect 4. contiguous d. labored 5. contingent e. dependent 6. contrite f. abundant 7. contrived g. adjoining 8. conventional h. argumentative 9. convivial i. festive 10. copious j. common COROLLARY (KOR uh ler ee) n something that follows; ____ In mathematics, a corollary is a law that can be deduced without further proof from a law that has already been proven. • Bloodshed and death are corollaries of any declaration of war. • Higher prices were a corollary of the two companies’ agreement not to compete. CORROBORATE (kuh ROB uh rayt) v to confirm; to back up with evidence • I knew my statement was correct when my colleague corroborated it. • Henny Penny’s contention that the sky was falling could not be corroborated. That is, no one was able to find any fallen sky.",
-    "choices": [
-     "a natural cause",
-     "a natural event",
-     "a natural resource",
-     "a natural outcome",
-     "a natural phenomenon"
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 'a natural outcome'가 들어가 글의 논지를 완성한다 (본문 'a natural consequence'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: ‘cause’는 ‘발생 원인’이므로 ‘follows’와 반대 의미임. 예시: ‘Bloodshed and death are corollaries of any declaration of war.’에서 ‘corollary’는 ‘따라서 발생한 것’이므로 ‘cause’와 맞지 않음. → 처방: ‘follows’라는 단어가 ‘결과’를 뜻함을 기억하고, ‘cause’는 ‘원인’이므로 제외한다.\n② 진단: ‘event’는 ‘사건’이므로 ‘결과’와는 구분된다. ‘corollary’는 ‘결과’이므로 ‘event’는 부적합. → 처방: ‘event’가 ‘사건’임을 인식하고, ‘결과’와 혼동하지 않는다.\n③ 진단: ‘resource’는 ‘자원’이므로 ‘결과’와 의미가 다름. ‘corollary’는 ‘결과’이므로 ‘resource’는 틀림. → 처방: ‘resource’가 ‘자원’임을 기억하고, ‘결과’와 구분한다.\n⑤ 진단: ‘phenomenon’은 ‘현상’이지만 ‘corollary’는 ‘결과’이므로 ‘phenomenon’은 부적합. → 처방: ‘phenomenon’이 ‘현상’임을 인식하고, ‘결과’와 혼동하지 않는다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]

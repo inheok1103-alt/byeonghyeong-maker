@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-20T20:50:40.730Z",
+ "updated": "2026-10-21T00:07:31.624Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 어휘(밑줄) 문항은 빈칸에 들어갈 정답을 한 가지로 제한하고, 그 정답을 명확히 정의하여 자동 평가가 가능하도록 한다.",
+   "src": "자가학습:어휘(밑줄)",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-21T00:06:50.259Z"
+  },
   {
    "rule": "문제 지문은 완전하고 일관된 단락으로 재구성하고, 오타와 어색한 표현을 교정하며, 정답과 명확히 구분되는 구체적이고 차별화된 부정답을 제시한다.",
    "src": "자가학습:제목",
@@ -313,14 +321,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-11T15:53:49.734Z"
-  },
-  {
-   "rule": "모든 어휘(밑줄) 문항은 빈칸에 들어갈 정답을 한 가지로 제한하고, 그 정답을 명확히 정의하여 자동 평가가 가능하도록 한다.",
-   "src": "자가학습:어휘(밑줄)",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-11T15:57:08.741Z"
   },
   {
    "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
