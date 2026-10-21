@@ -1,6 +1,41 @@
 {
- "updated": "2026-10-21T00:07:31.627Z",
+ "updated": "2026-10-21T10:26:12.590Z",
  "samples": [
+  {
+   "ts": "2026-10-21T10:18:11.318Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 1건 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ②③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "the foundational principles and empirical insights of Radical Construction Grammar",
+     "the rejection of building-block models in Radical Construction Grammar",
+     "the universal principles underlying all grammatical theories",
+     "the historical development of typological analysis in linguistics",
+     "the practical applications of Radical Construction Grammar's insights"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Radical Construction Grammar's theoretical and empirical foundations'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·주체·대상 교체·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: 지문에서 'building-block model'이 언급되었지만, 글의 주제는 그보다 넓은 원리와 실증적 통찰에 관한 것 → 처방: 전체 문장을 읽고 주제 문장을 찾아 핵심을 파악하라\n③ 진단: 지문에서 'nonuniversality'가 강조되며, 모든 문법 이론의 보편적 원리를 주장하지 않음 → 처방: 보편성 여부를 판단할 때, 지문에서 'nonuniversality'라는 단어를 찾고 그 의미를 기억하라\n④ 진단: 지문은 현재의 연구 결과와 이론적 주장에 초점을 두고, 역사적 발전 과정은 언급하지 않음 → 처방: 역사적 배경이 언급된 부분이 있는지 확인하고, 없으면 해당 선택지를 제외하라\n⑤ 진단: 지문은 이론적 논의와 실증적 증거를 다루고, 실제 적용 사례는 제시하지 않음 → 처방: 실제 적용 사례가 있는지 여부를 판단하고, 없으면 선택지를 제외하라\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Radical Construction Grammar]"
+   }
+  },
   {
    "ts": "2026-10-21T00:05:15.061Z",
    "type": "전체문장배열",
@@ -244,31 +279,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 문법이 그대로 유지되는 동안 시간이 지남에 따라 사회가 뒤집어졌다는 점에서 문화 발전과 문법의 단절도 분명합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-18T23:25:10.810Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "다양한 경험이 창의성의 핵심 동력으로 작용한다.",
-     "경험을 자주 쌓는 것이 창의성을 끌어올린다.",
-     "모든 분야의 경험이 창의성에 직결된다.",
-     "경험을 한 주제에 집중하는 것이 창의성의 핵심이다.",
-     "경험이 풍부할수록 문제 해결 능력이 향상된다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Broad experience is the key to creativity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·정도·빈도 왜곡·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — 정답의 일부만 담아 지엽적 · ③ 오답 — 지나치게 확대 해석 · ④ 오답 — 정도·빈도를 왜곡 · ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Broad experience is the key to creativity.]"
    }
   }
  ]
