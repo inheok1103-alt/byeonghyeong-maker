@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-21T15:35:18.283Z",
+ "updated": "2026-10-21T20:22:52.165Z",
  "samples": [
+  {
+   "ts": "2026-10-21T20:22:45.104Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① (Up is a preposition connecting went and hill.)\n② or In the long jump, Adele could beat her rival Fern more often than she could beat her teammate Sherry.\n③ (In is a preposition connecting sat and corner.)\n④ Little Jack Horner sat in a corner.\n⑤ Take, for example, these short sentences: Jack and Jill went up the hill.\n⑥ When the sentence is constructed that way, it isn’t clear if the meaning is the following: In the long jump, Adele could beat her rival Fern more often than her teammate Sherry could.\n⑦ Prepositions A preposition is a word that links a noun or pronoun to some other word in a sentence.\n⑧ Because some comparisons can be interpreted more than one way, be sure that you include all the words necessary to give the meaning you intend.\n⑨ Read this sentence: In the long jump, Adele could beat her rival Fern more often than her teammate Sherry.",
+    "choices": [
+     "⑧-⑨-⑥-②-⑦-⑤-④-①-③",
+     "⑧-⑥-⑨-②-⑦-⑤-①-④-③",
+     "⑧-⑨-⑥-②-⑦-⑤-①-④-③",
+     "⑧-③-④-⑨-⑥-⑦-⑤-①-②",
+     "⑨-⑧-⑥-②-⑦-⑤-①-④-③"
+    ],
+    "answer": 3,
+    "explanation": "정답 배열은 ⑧-⑨-⑥-②-⑦-⑤-①-④-③. 흐름: ⑧ → ⑨ → ⑥ → ② → ⑦ → ⑤ → ① → ④ → ③ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ②를 뒤바꾸어 ②가 먼저 와야 할 위치를 놓쳤고, ⑥이 ②보다 앞서서 비교 문장을 먼저 제시해 혼란을 주었음(지문 ②, ⑥). → 처방: 문장 흐름을 따라가며, 비교 문장(②) 뒤에 해석(⑥)을 놓도록 연습하라.\n② 진단: ⑥을 먼저 두어 비교 문장(②)보다 먼저 해석을 제시했고, ①이 ④보다 앞서서 ‘up’ 예시를 잘못 배치했음(지문 ①, ④). → 처방: 예시 문장(①)은 ‘Jack and Jill went up the hill’(⑤) 이후에 놓아야 함을 기억하라.\n④ 진단: ③을 ④보다 앞서 배치해 ‘sat’와 ‘corner’의 관계를 먼저 설명하고, ①을 ②보다 앞서 ‘up’ 예시를 잘못 배치했음(지문 ③, ①, ②). → 처방: 예시 문장(③)은 예시 문장(④) 뒤에, ‘up’ 예시는 ⑤ 뒤에 두도록 순서를 점검하라.\n⑤ 진단: ⑨를 먼저 두어 문장을 먼저 제시하고, ①을 ④보다 앞서 ‘up’ 예시를 잘못 배치했음(지문 ⑨, ①, ④). → 처방: 문장(⑨)은 ⑧(설명) 뒤에 오고, ‘up’ 예시는 ⑤ 뒤에 두는 순서를 연습하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-21T15:30:28.132Z",
    "type": "주제",
@@ -260,31 +285,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 망상은 __________ a) 납득됨 b) 체포됨 c) 현혹됨 2 - 다리가 부러져서 겪는 불편함은 너무 극심할 수 있으므로 종종 고통을 완화하기 위해 약물을 처방합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-19T08:00:39.741Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Olympian Lofty, superior, and detached. • Now 77, he moved slowly and spoke to the younger lawyers in Olympian tones, but his college friends could remember when he was a brash, crazy risk-taker. The Greek gods lived high atop Mt. Olympus, which allowed them to watch what went on in the human realm below and intervene as they saw fit. They insisted on being properly worshipped by humans, but otherwise tended to treat the affairs of these weak and short-lived creatures almost like a sport. So Olympian describes someone who seems “lofty” and “above it all,” as if surveying a scene in which other people appear the size of ants. The Olympic Games were first celebrated in the 8th century B.C., at the religious site called Olympia (far from Mt. Olympus), and Olympian today actually most often refers to Olympic athletes.\n\n─────────\n[요약문] The Olympian, an (A) figure that observes and (B) human affairs, is closely linked to the Olympic Games and athletes.",
-    "choices": [
-     "(A) elevated … (B) interference",
-     "(A) lowly … (B) observe",
-     "(A) high … (B) participate",
-     "(A) source … (B) consequence",
-     "(A) godlike … (B) control"
-    ],
-    "answer": 1,
-    "explanation": "(A) elevated / (B) interference 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 지문에서 ‘Olympian describes someone who seems “lofty”’이라서 ‘lowly’는 반의어이며, 그들은 관찰만 하는 것이 아니라 ‘intervene’한다. → 처방: 문제의 핵심 단어를 정확히 읽고, 반의어를 피하며, 관찰보다는 개입을 주의 깊게 살펴라.\n③ 진단: 지문에서 그들은 ‘intervene’한다는 점이 강조되므로 ‘participate’는 부적절하다. → 처방: 선택지를 고를 때, 동사의 의미가 문장과 일치하는지 반드시 확인하라.\n④ 진단: 지문에서 ‘observe’와 ‘intervene’이 핵심이며, ‘source’와 ‘consequence’는 문맥에 맞지 않는다. → 처방: 문장 구조를 따라가며, 주어와 동사의 관계를 중심으로 단어를 고르라.\n⑤ 진단: 지문에서 ‘Olympian’은 ‘lofty’이지만 ‘godlike’는 과장이며, ‘control’은 ‘intervene’과 차이가 있다. → 처방: 과장된 표현을 피하고, 실제 문장에서 사용된 동사를 그대로 반영하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
