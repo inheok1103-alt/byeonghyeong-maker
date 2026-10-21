@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-21T20:22:52.165Z",
+ "updated": "2026-10-21T23:34:51.578Z",
  "samples": [
+  {
+   "ts": "2026-10-21T23:34:27.165Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 4번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "WEEK 31 DAY 5 REVIEW Once more it is time to review this week’s words. Always keep in mind that the use of the word, its context, determines its meaning. Used as a noun, a word has a different meaning than when it is used as an adjective or a verb. First, master the words as they appear in the daily stories. Next, look up other meanings in your dictionary. Try writing sentences with the additional meanings. REVIEW WORDS DEFINITIONS 1. agitation, turmoil, uproar 2. attending, accompanying 3. abnormality, irregularity 4. cautious, wise 5. protest, differ, disagree 6. rough, harsh, shrill 7. multiply, spread, produce 8. lack of faith, dissent, unbelief 9. morally required 10. power to produce an effect 11. setting, environment 12. counterfeit, false, specious* 13. harmful, bad 15. superabundance, excess 16. enthusiastic, passionate, intense 17. decreased, weakened, thinned 18. mild, innocent, harmless 19. fatigue, weariness 20. [ ]",
+    "choices": [
+     "It is a type of fruit commonly used in desserts.",
+     "It is genuine, real, internal, and truly authentic everywhere now.",
+     "It is a real, authentic, internal, and undeniable truth today.",
+     "It is only an appearance, a pretense, or something external.",
+     "It is an overwhelming, intense, all-encompassing reality that surpasses everywhere."
+    ],
+    "answer": 4,
+    "explanation": "빈칸에는 원문 'seeming, pretended, outward'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장에 'fruit' 같은 단어가 있어 과일과 연관된 의미를 착각했다. → 처방: 과일과 관련된 단어가 있는지 먼저 확인하고, 문맥에서 실제 의미를 찾아라.\n② 진단: 문장에 'genuine', 'real', 'authentic' 같은 단어가 있어 진짜라는 뜻으로 착각했다. → 처방: 진짜와 관련된 단어가 있는지 확인하고, 문맥에서 실제 의미를 찾아라.\n③ 진단: 문장에 'real', 'authentic', 'undeniable truth' 같은 단어가 있어 진실이라는 뜻으로 착각했다. → 처방: 진실과 관련된 단어가 있는지 확인하고, 문맥을 살펴보라.\n⑤ 진단: 문장에 'overwhelming', 'intense', 'all-encompassing reality' 같은 단어가 있어 강렬한 현실이라는 뜻으로 착각했다. → 처방: 강렬함과 관련된 단어가 있는지 확인하고, 문맥을 살펴보라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-21T23:34:45.330Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "WEEK 31 DAY 5 REVIEW Once more it is time to review this week’s words. A_____ keep in mind that the use of the word, its context, determines its meaning. Used as a noun, a word has a different meaning than when it is used as an adjective or a verb. First, master the words as they appear in the daily stories. Next, look up other meanings in your dictionary. Try writing sentences with the additional meanings. REVIEW WORDS DEFINITIONS 1.anomaly a. agitation, turmoil, uproar 2.arbiter b. attending, accompanying 3.attenuated c. abnormality, irregularity 4.concomitant d. cautious, wise 5.deleterious e. protest, differ, disagree 6.dissent f. rough, harsh, shrill 7.efficacy g. multiply, spread, produce 8.ferment h. lack of faith, dissent, unbelief 9.fervid i. morally required 10.heresy j. power to produce an effect 11.incumbent k. setting, environment 12.innocuous l. counterfeit, false, specious* 13.lassitude m. judge 14.milieu n. harmful, bad 15.ostensible o. superabundance, excess 16.propagate p. enthusiastic, passionate, intense 17.prudent q. decreased, weakened, thinned 18.spurious r. mild, innocent, harmless 19.strident s. fatigue, weariness 20.surfeit t. seeming, pretended, outward",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Always — 문단의 논지상 이 자리에는 'Always'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-21T20:22:45.104Z",
    "type": "전체문장배열",
@@ -241,50 +285,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "세트 문항 2개(각 문항 해설 참조).\n【출제의도】 한 지문을 대의·세부·구조 등 여러 관점에서 통합적으로 이해하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-19T15:53:35.204Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Part II Contextual Analysis I . Explicit Cues Question No.1 Synonyms: Choose the correct answer : 1- The detectives were (A) [arrested / deluded] by all the false evidence . They were completely deceived and they arrested the wrong person. Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so (B) [excruciating / wonderful] that drugs are often prescribed to relieve the agony. Excruciating means _____________ a) painful. b) wonderful c) hurtful 3-(C) [Inveterate / casual] gamblers are habitual customers at the race track betting widows. Inveterate means ____________ a) ancient b) regular c) casual 4- Our plane tickets were voided when the airline ticket agent declared that the airport was closed . Therefore , all reservations were cancelled . voided means ___________ a) reserved b) stolen c ) not valid 5-Although the insurrection began in the rural areas , the rebellion quickly spread throughout the cities . Insurrection means _________ a) elections b) revolt c) journey.",
-    "choices": [
-     "(A) deluded - (B) excruciating - (C) Inveterate",
-     "(A) arrested - (B) excruciating - (C) Inveterate",
-     "(A) deluded - (B) wonderful - (C) Inveterate",
-     "(A) deluded - (B) excruciating - (C) casual",
-     "(A) arrested - (B) wonderful - (C) casual"
-    ],
-    "answer": 1,
-    "explanation": "정답 조합: (A) deluded - (B) excruciating - (C) Inveterate. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-19T15:56:07.653Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Deluded means __________ a) convinced b) arrested c) misled 2-Discomfort suffered from a broken leg can be so excruciating that drugs are often prescribed to relieve the agony.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 망상은 __________ a) 납득됨 b) 체포됨 c) 현혹됨 2 - 다리가 부러져서 겪는 불편함은 너무 극심할 수 있으므로 종종 고통을 완화하기 위해 약물을 처방합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
