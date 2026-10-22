@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-22T15:35:04.502Z",
+ "updated": "2026-10-22T20:21:02.750Z",
  "samples": [
+  {
+   "ts": "2026-10-22T20:15:52.519Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "ⓐ<u>Revising</u> is part of writing, because few writers produce what they are after on the ⓑ<u>intermediate</u> try write perfect first drafts. If you use a word processor and find Often you will discover serious flaws in your arrangement, of the ⓒ<u>material</u>. When this is the case, a word processor can save time as you rearrange the manuscript. you can select material on the screen and move material to a more appropriate spot, or, if you cannot find one, the right spot, to the end of the manuscript ­until you decide whether to delete it. Some writers find that ­working with a printed manuscript helps them visualize change; others ­revise on screen. Above all, experiment. Save both the ⓓ<u>original</u> and the ­revised version; you can always go back to it restore the manuscript its ­original condition. Remember, It is no sign of weakness that your manuscript needs ⓔ<u>surgery</u>. This is common in all writing, and among the best writers. (99 words) And if we cut to the bone, we can reduce that in half:",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 2,
+    "explanation": "정답 ⓑ: 문맥상 'first'가 와야 하는데 'last'가 쓰여 부적절하다 — 해당 문장 “Revising is part of writing, because few writers produce what they are after on the first try write perfect first drafts.”의 논리 흐름상 first 가 맞고 last 는 방향이 어긋난다. [극성] 정답=first (initial) ↔ 오답=last (final)\n[오답 진단·처방]\n① 진단: 오해: 'Revising'을 동사로만 생각해 문맥에 맞지 않다고 판단 (지문: 'Revising is part of writing') → 처방: 다음부터는 단어가 문장 안에서 명사인지 동사인지 파악해 보라.\n③ 진단: 오해: 'material'을 물질이라 해석해 문맥과 맞지 않다고 판단 (지문: 'material') → 처방: 문맥에서 'material'이 내용인지 물질인지 확인하라.\n④ 진단: 오해: 'original'을 원래의로 해석해 문맥에 맞지 않다고 판단 (지문: 'original') → 처방: 문장 안에서 'original'이 원본인지 원래인지 구분해 보라.\n⑤ 진단: 오해: 'surgery'를 실제 수술이라 해석해 문맥에 맞지 않다고 판단 (지문: 'surgery') → 처방: 비유적 표현인지 실제 의미인지 구분해 보라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-22T15:34:58.050Z",
    "type": "우리말해석",
@@ -266,25 +291,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'The text argues that traditional word‑class distinctions and syntactic labels, such as Obligatory Predication Adjunct, are conceptually flawed and must be re‑examined in light of empirical evidence regarding the functional roles of words like “then,” “the,” and “every.”'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The text argues that traditional word‑class distinctions and syntactic labels, such as Obligatory Predication Adjunct, are conceptually flawed and must be re‑examined in light of empirical evidence regarding the functional roles of words like “then,” “the,” and “every.”]"
-   }
-  },
-  {
-   "ts": "2026-10-20T17:22:31.074Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 학생들은 예시를 통해 단어의 의미를 파악하고, 그룹·개인 활동과 숙제 독해를 통해 학습을 심화한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-22T15:35:04.499Z",
+ "updated": "2026-10-22T20:21:02.747Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-22T20:19:11.757Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "코퍼스에서 가장 빈번히 나타나는 collocation을 그대로 가져와 한 단어만 변형하거나 전치사·형용사의 순서를 바꾸면, 의미가 비슷하면서도 문법적으로 틀린 오답을 자연스럽게 만들 수 있다.",
+   "rule": "오답 선택지를 만들 때는 원서 코퍼스에서 자주 쓰이는 collocation을 그대로 사용하되, 한 단어만 바꾸거나 전치사·형용사의 순서를 바꾸어 문법적으로 틀린 형태를 만든다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-19T21:18:42.617Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "'and' 구문에서 병렬 구조의 오류가 빈번히 발생하며, 특히 동사(does not exist vs. is)나 보어(just fiction vs. fiction)의 일치 오류가 두드러진다. 또한 접속사(as when)나 부사(clearly)의 위치 오류가 반복된다.",
    "rule": "'A and B' 구조에서 A와 B는 문법적·의미적으로 일치해야 하며, 특히 동사(does not exist / is), 보어(fiction), 접속사(as when → when), 부사(clearly의 위치) 등을 점검하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-27T10:00:26.449Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "이 코퍼스에서 'and'를 활용한 병렬 구조와 접속사 오용 패턴이 빈번히 나타나며, 특히 'because'와 'and'의 병렬적 오용이 학습자의 문법적 오류를 유발하는 주요 원인임을 확인할 수 있다.",
-   "rule": "'because'와 'and'를 병렬로 사용하지 말고, 각각의 절을 독립적으로 연결하거나 'so', 'therefore' 등으로 대체하여 문법적 일관성을 유지하도록 출제할 것.",
    "sample": [
     "old english",
     "university press",
