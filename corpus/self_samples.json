@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-22T10:26:11.959Z",
+ "updated": "2026-10-22T15:35:04.502Z",
  "samples": [
+  {
+   "ts": "2026-10-22T15:34:58.050Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] PROVIDENT (PRAHV uh dunt) adj preparing for the future; providing for the future; frugal • We were provident with our limited food supplies, knowing that the winter ahead would be long and cold.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] PROVIDENT (PRAHV uh dunt) adj 미래를 준비하다; 미래를 제공하다; 검소하다 • 우리는 겨울이 길고 추울 것이라는 것을 알고 제한된 식량 공급을 제공했습니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-22T10:25:59.447Z",
    "type": "밑줄함의",
@@ -266,31 +285,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 학생들은 예시를 통해 단어의 의미를 파악하고, 그룹·개인 활동과 숙제 독해를 통해 학습을 심화한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-20T00:29:45.540Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Members of the jury No. Name Position 1 Prof. Dr. Zeinab Al Naggar Professor of Education and TEFL Methodology and Director of the Center for Developing English Language Teaching CDELT, Ain Shams Univeristy 2 Prof. Dr. David Eskey Professor of Education And Director of the Center for American Language, University of Southern California. 3 Prof. Dr. Eleanor Black Eskey Professor of Education and Director of Los Angeles- MA TESOL Program, California State University. 4 Prof. Dr. Hayat R. Ali Professor of Education and TEFL Methodology , Minia Faculty of Education. 5 Prof. Dr. Kawther Qutb Professor of Education and TEFL Methodology and Vice Dean of Minia Faculty of Education. 6 Dr. Ahmad Sokarno Associate Professor of Linguistics and Head of the English Department, Qena Faculty of Arts, South Valley University. 7 Dr. Mary Lou MacCloskey Adjunct professor , Dept. of Applied Linguistics and ESL , Georgia State University.\n\n─────────\n[요약문] The jury comprises (A) scholars and (B) institutions from diverse academic settings.",
-    "choices": [
-     "(A) researchers … (B) funding",
-     "(A) scholars … (B) institutions",
-     "(A) professors … (B) universities",
-     "(A) academics … (B) organizations",
-     "(A) students … (B) individuals"
-    ],
-    "answer": 2,
-    "explanation": "(A) scholars / (B) institutions 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]

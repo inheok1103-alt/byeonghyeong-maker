@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-22T10:26:11.954Z",
+ "updated": "2026-10-22T15:35:04.499Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:우리말해석",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-22T15:34:55.923Z"
+  },
   {
    "rule": "모든 문항은 발문, 지문, 선지 간의 내용적, 형식적 일관성을 확보하여, 발문이 요구하는 답이 지문에서 명확히 도출 가능하고 선지에서 타당하게 선택 가능하도록 구성해야 한다.",
    "src": "자가학습:심경변화",
@@ -33,14 +41,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-21T23:29:23.517Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:첫글자어휘",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-21T23:34:28.832Z"
   },
   {
    "rule": "모든 어휘(밑줄) 문항은 빈칸에 들어갈 정답을 한 가지로 제한하고, 그 정답을 명확히 정의하여 자동 평가가 가능하도록 한다.",
