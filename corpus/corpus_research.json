@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-22T20:21:02.747Z",
+ "updated": "2026-10-22T23:35:31.374Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-22T23:35:19.806Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 문체에서는 단수·복수 일치와 시제, 관사, 전치사, 형용사 순서가 핵심적인 패턴을 보인다. 변형문에서도 원문과 같은 문법 구조를 유지하면서 자연스러운 표현으로 바꾸는 것이 중요하다.",
+   "rule": "문장 변형 시 주어·동사·목적어의 수 일치와 시제 일치를 반드시 확인하고, 관사·전치사·형용사 순서를 원문과 동일하게 조정한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-22T20:19:11.757Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'be + good/useful/bad' 등 형용사 뒤에 위치하는 명사(예: situation)가 불필요하게 동사원형(good situstion)으로 오용되는 패턴과, 'good to' 구문이 'good for'로 잘못 쓰이는 패턴이 빈번하다. 또한 'all'의 위치가 문법적으로 잘못 배치되어 의미가 모호해지는 경우가 많다.",
    "rule": "'be + 형용사 + 명사' 구문에서 형용사와 명사 사이에 동사원형(예: good situstion)이 오면 오류로 처리하고, 'good to'는 'good for'로 수정하여 출제하라. 또한 'all'은 'good to all people'처럼 해당 대상을 직접 수식하는 위치에 오도록 강제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-27T20:34:55.944Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "'and' 구문에서 병렬 구조의 오류가 빈번히 발생하며, 특히 동사(does not exist vs. is)나 보어(just fiction vs. fiction)의 일치 오류가 두드러진다. 또한 접속사(as when)나 부사(clearly)의 위치 오류가 반복된다.",
-   "rule": "'A and B' 구조에서 A와 B는 문법적·의미적으로 일치해야 하며, 특히 동사(does not exist / is), 보어(fiction), 접속사(as when → when), 부사(clearly의 위치) 등을 점검하라.",
    "sample": [
     "old english",
     "university press",
