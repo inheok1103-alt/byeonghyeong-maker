@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-23T15:26:18.995Z",
+ "updated": "2026-10-23T19:26:44.431Z",
  "samples": [
+  {
+   "ts": "2026-10-23T19:26:28.226Z",
+   "type": "서술형(자유)",
+   "level": "중",
+   "audit": "",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 이 글은 단어와 정의를 매칭하고, corollary와 corroborate의 의미와 예시를 설명한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-23T15:12:12.341Z",
    "type": "문장삽입",
@@ -266,31 +285,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Radical Construction Grammar's theoretical and empirical foundations'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·주체·대상 교체·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: 지문에서 'building-block model'이 언급되었지만, 글의 주제는 그보다 넓은 원리와 실증적 통찰에 관한 것 → 처방: 전체 문장을 읽고 주제 문장을 찾아 핵심을 파악하라\n③ 진단: 지문에서 'nonuniversality'가 강조되며, 모든 문법 이론의 보편적 원리를 주장하지 않음 → 처방: 보편성 여부를 판단할 때, 지문에서 'nonuniversality'라는 단어를 찾고 그 의미를 기억하라\n④ 진단: 지문은 현재의 연구 결과와 이론적 주장에 초점을 두고, 역사적 발전 과정은 언급하지 않음 → 처방: 역사적 배경이 언급된 부분이 있는지 확인하고, 없으면 해당 선택지를 제외하라\n⑤ 진단: 지문은 이론적 논의와 실증적 증거를 다루고, 실제 적용 사례는 제시하지 않음 → 처방: 실제 적용 사례가 있는지 여부를 판단하고, 없으면 선택지를 제외하라\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Radical Construction Grammar]"
-   }
-  },
-  {
-   "ts": "2026-10-21T00:05:15.061Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① As in Old English, in Old Frisian we find third person personal pronouns beginning with h- throughout: 5.\n② In the younger, western dialects we find no -ar or -er, but -a and -an or -en.\n③ tham and thissem opposite Goth.\n④ Old Frisian has no reflexive pronoun, but does show sîn as a possessive form for the masculine and neuter singular: alle sîne sîthar ‘all his colleagues’.\n⑤ Possibly because of the texts in which it is transmitted, Old Frisian shows no dual pronouns, though modern North Frisian dialects have them.\n⑥ Like all the Germanic languages except Gothic, Old Frisian shows an intensified demonstrative pronoun: OF masc.\n⑦ þaim Verbs 1.\n⑧ Old Frisian does not distinguish the dative and accusative cases in the first and second person singular personal pronouns: 6.\n⑨ thi and this opposite Goth.",
-    "choices": [
-     "②-⑤-①-⑧-④-⑥-⑨-⑦-③",
-     "②-⑦-⑤-①-⑧-④-③-⑥-⑨",
-     "②-⑤-①-⑧-④-⑥-⑨-③-⑦",
-     "②-⑦-⑥-③-④-⑧-⑨-①-⑤",
-     "②-①-⑤-⑧-④-⑥-⑨-③-⑦"
-    ],
-    "answer": 3,
-    "explanation": "정답 배열은 ②-⑤-①-⑧-④-⑥-⑨-③-⑦. 흐름: ② → ⑤ → ① → ⑧ → ④ → ⑥ → ⑨ → ③ → ⑦ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
