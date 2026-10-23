@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-23T10:18:31.034Z",
+ "updated": "2026-10-23T15:26:18.995Z",
  "samples": [
+  {
+   "ts": "2026-10-23T15:12:12.341Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] It must be the case therefore that these \u0002-roles are given from the predicate to the argument.\n\nD-structure: was considered to be confused Ken In this example, although Ken is sitting in the subject position of the verb consider, this element is interpreted as the object of confused and thus is in the object position of this predicate at D-structure. D-structure then is a pure representation of thematic relations. Anything which is interpreted as the subject or object of a given predicate will be in the subject or object position of that predicate at D-structure no matter where it is found at S-structure. ( ① ) The principles that determine D-structure positions must therefore have something to do with thematic relationships. ( ② ) We saw in chapter 1 how \u0002-roles are encoded in the lexical entry of predicates. ( ③ ) Yet in a sentence it is the arguments that are interpreted as bearing these \u0002-roles. ( ④ ) We can refer to this process as \u0001-role assignment. ( ⑤ )",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-23T10:18:16.554Z",
    "type": "심경변화",
@@ -266,31 +291,6 @@
     ],
     "answer": 3,
     "explanation": "정답 배열은 ②-⑤-①-⑧-④-⑥-⑨-③-⑦. 흐름: ② → ⑤ → ① → ⑧ → ④ → ⑥ → ⑨ → ③ → ⑦ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-21T00:07:25.959Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "In the younger, western ⓐ<u>dialects</u> we find no -ar or -er, but -a and -an or -en. 3. Possibly because of the texts in which it is transmitted, Old Frisian shows no dual ⓑ<u>pronouns</u>, though modern North Frisian dialects have them. 4. As in Old English, in Old Frisian we find third person personal pronouns beginning with h- throughout: 5. Old Frisian does not distinguish the dative and accusative cases in the first and second person ⓒ<u>plural</u> personal pronouns: 6. Old Frisian has no ⓓ<u>reflexive</u> pronoun, but does show sîn as a possessive form for the masculine and neuter singular: alle sîne sîthar ‘all his colleagues’. 7. Like all the Germanic languages except Gothic, Old Frisian shows an intensified ⓔ<u>demonstrative</u> pronoun: OF masc. nom. sg. thi and this opposite Goth. sa dat. pl. tham and thissem opposite Goth. þaim Verbs 1. Old Frisian does not show a reduplicating class of verbs. Instead we find either a new vowel alternation, or reassignment to the weak class: OF Goth.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 3,
-    "explanation": "정답 ⓒ: 문맥상 'singular'가 와야 하는데 'plural'가 쓰여 부적절하다 — 해당 문장 “Old Frisian does not distinguish the dative and accusative cases in the first and second person singular personal pronouns: 6.”의 논리 흐름상 singular가 맞고 plural는 방향이 어긋난다. [극성] singular (correct) ↔ plural (incorrect)\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

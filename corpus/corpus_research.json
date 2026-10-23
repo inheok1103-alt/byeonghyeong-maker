@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-23T10:18:31.032Z",
+ "updated": "2026-10-23T15:26:18.993Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-23T15:26:06.258Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "코퍼스에서 ‘between’ 뒤에 두 명사구가 있을 때, 각 명사구 앞에 관사가 빠지는 경우가 많아 문법 오류가 자주 발생한다.",
+   "rule": "문장에 ‘between’으로 두 개의 명사구를 연결할 때는 각 명사구 앞에 반드시 정관사 ‘the’를 삽입한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-22T23:35:19.806Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'many/much' → 'a lot of'로의 교정은 가산·불가산 명사 구분에 대한 학습자 오류를 반영하며, 특히 'wood'와 같은 불가산 명사에서 빈번하게 나타난다. 'Therefore'로의 교정은 문맥상 인과관계 표시의 필요성을 보여준다.",
    "rule": "'many/much + 불가산/가산 명사' 구문에서 'a lot of + 명사'로의 교체를 요구하는 문항을 내신 변형으로 제작할 때에는, 해당 명사의 가산/불가산 여부를 반드시 명시하고, 오류가 발생할 수 있는 불가산 명사(wood, fuel, information 등)를 우선적으로 포함시킨다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-28T05:33:00.632Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "'be + good/useful/bad' 등 형용사 뒤에 위치하는 명사(예: situation)가 불필요하게 동사원형(good situstion)으로 오용되는 패턴과, 'good to' 구문이 'good for'로 잘못 쓰이는 패턴이 빈번하다. 또한 'all'의 위치가 문법적으로 잘못 배치되어 의미가 모호해지는 경우가 많다.",
-   "rule": "'be + 형용사 + 명사' 구문에서 형용사와 명사 사이에 동사원형(예: good situstion)이 오면 오류로 처리하고, 'good to'는 'good for'로 수정하여 출제하라. 또한 'all'은 'good to all people'처럼 해당 대상을 직접 수식하는 위치에 오도록 강제하라.",
    "sample": [
     "old english",
     "university press",
