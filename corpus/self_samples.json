@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-23T19:26:44.431Z",
+ "updated": "2026-10-23T22:34:53.130Z",
  "samples": [
+  {
+   "ts": "2026-10-23T22:34:25.501Z",
+   "type": "연결어빈칸",
+   "level": "중",
+   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "The remarkable diversity of morphosyntactic structures and of distributional patterns revealed in rigorous typological analysis underlies the basic tenets of Radical Construction Grammar. The rejection of the building-block model of syntactic structure is grounded in the pervasive mismatches of distributional patterns across constructions within a single language and with the same construction across languages. ___(A)___ useful techniques to identify and represent language universals without syntactic building blocks—the semantic map model and multidimensional scaling—have their origins in typology. The simplification of syntactic structure proposed in Radical Construction Grammar represents the marriage of a theoretical argument from construction grammar—the presence of symbolic relations in a grammatical construction—and empirical evidence challenging syntactic relations from typology. ___(B)___ the nonuniversality of constructions is also a result from typological research; while research in constructional analysis, frame semantics, and verbalization processes are beginning to provide a framework for identifying constructions whose universal properties can be discovered in crosslinguistic comparison.",
+    "choices": [
+     "As noted in §4, …… Finally,",
+     "As noted in §4, …… However",
+     "For instance …… Moreover",
+     "Therefore …… In contrast",
+     "As noted in §4, …… Moreover"
+    ],
+    "answer": 1,
+    "explanation": "(A)는 앞 내용과 '첨가' 관계로 As noted in §4,, (B)는 '강조' 관계로 Finally,가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n[오답 진단·처방]\n② 진단: 학생이 ‘그러나’가 대조를 나타내는 연결어라 생각하고, 뒤에 오는 문장이 반대되는 내용이라고 오해함 → 처방: 문장 연결어를 고를 때, 뒤 문장이 앞 문장과 반대되는지 여부를 먼저 판단하라\n③ 진단: 학생이 ‘예를 들어’가 예시를 제시하는 표현이라 착각하고, 뒤 문장이 예시인 줄 착각함 → 처방: 문장 연결어를 고를 때, 뒤 문장이 실제 예시인지, 아니면 일반적인 진술인지 구분하라\n④ 진단: 학생이 ‘따라서’가 결론을 이끌어내는 연결어라 생각하고, 뒤 문장이 결론이라고 착각함 → 처방: 문장 연결어를 고를 때, 뒤 문장이 앞 문장을 종합해 결론을 제시하는지 여부를 먼저 확인하라\n⑤ 진단: 학생이 ‘더욱이’가 덧붙이는 의미라고 착각하고, 뒤 문장이 추가 정보를 주는 것이라 생각함 → 처방: 문장 연결어를 고를 때, 뒤 문장이 앞 문장에 덧붙이는 내용인지, 아니면 별개의 진술인지 구분하라\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-23T19:26:28.226Z",
    "type": "서술형(자유)",
@@ -250,41 +275,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 한 가지 가능한 답은 그가 우리 혁명을 위한 것이 아니라 단지 혁명을 위한 철학적 근거를 세우고자 했다는 것이며, 이는 서구 정치 사상에서 깊이 불안정한 개념으로, 그들이 싫어하는 정부를 버리려는 식민주의자들의 단순한 욕구보다 더 많은 정당화가 필요한 아이디어다. (구문 포인트: 비교 구조(‘not … but …’ correlative conjunction) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-21T10:18:11.318Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "the foundational principles and empirical insights of Radical Construction Grammar",
-     "the rejection of building-block models in Radical Construction Grammar",
-     "the universal principles underlying all grammatical theories",
-     "the historical development of typological analysis in linguistics",
-     "the practical applications of Radical Construction Grammar's insights"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Radical Construction Grammar's theoretical and empirical foundations'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·주체·대상 교체·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 정답의 일부만 담아 지엽적· ③ 오답 — 지나치게 확대 해석· ④ 오답 — 주체나 대상을 바꿔치기· ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n[오답 진단·처방]\n② 진단: 지문에서 'building-block model'이 언급되었지만, 글의 주제는 그보다 넓은 원리와 실증적 통찰에 관한 것 → 처방: 전체 문장을 읽고 주제 문장을 찾아 핵심을 파악하라\n③ 진단: 지문에서 'nonuniversality'가 강조되며, 모든 문법 이론의 보편적 원리를 주장하지 않음 → 처방: 보편성 여부를 판단할 때, 지문에서 'nonuniversality'라는 단어를 찾고 그 의미를 기억하라\n④ 진단: 지문은 현재의 연구 결과와 이론적 주장에 초점을 두고, 역사적 발전 과정은 언급하지 않음 → 처방: 역사적 배경이 언급된 부분이 있는지 확인하고, 없으면 해당 선택지를 제외하라\n⑤ 진단: 지문은 이론적 논의와 실증적 증거를 다루고, 실제 적용 사례는 제시하지 않음 → 처방: 실제 적용 사례가 있는지 여부를 판단하고, 없으면 선택지를 제외하라\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Radical Construction Grammar]"
    }
   }
  ]
