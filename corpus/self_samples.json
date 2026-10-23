@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-22T23:35:31.378Z",
+ "updated": "2026-10-23T10:18:31.034Z",
  "samples": [
+  {
+   "ts": "2026-10-23T10:18:16.554Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The necessity of property-based word classification for nouns",
+     "The necessity of property-based labeling for word classification",
+     "The necessity of property-based word classification",
+     "The necessity of property-based word classification sometimes",
+     "The necessity of property-based word classification as a result of flawed labeling"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Words should be classified by their shared grammatical properties, and conventional labels such as “Obligatory Predication Adjunct” are conceptually flawed.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 주체나 대상을 바꿔치기· ③ 정답 — 핵심 논지 반영· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n① 진단: 지문에서 ‘품사 분류’가 모든 단어에 적용된다고 명시되어 있음에도, 학생은 ‘명사’에 한정해 해석했다. → 처방: 문장을 읽을 때 ‘품사 분류’가 전체 범위인지, 특정 품사인지 명확히 구분하도록 연습하라.\n② 진단: 학생은 ‘라벨 부여’와 ‘분류’의 차이를 혼동해 ‘라벨 부여’가 필요하다고 판단했다. → 처방: ‘라벨 부여’와 ‘분류’의 차이를 문맥에서 확인하고, 문장에 나타난 핵심 개념을 중심으로 선택하라.\n④ 진단: 학생은 조건부 표현을 보고 ‘때때로’라는 의미를 추가해 답을 선택했다. → 처방: 문장에는 조건부 표현이 없으니, ‘필요성’이 항상 적용된다는 점을 인식하라.\n⑤ 진단: 학생은 ‘라벨 부여 오류’가 원인이라고 해석해 ‘결과’를 추가했다. → 처방: 문장에서는 ‘라벨 부여 오류’가 언급되지 않으니, 원인과 결과를 구분해 답을 고르도록 하라.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Words should be classified by their shared grammatical properties, and conventional labels such as “Obligatory Predication Adjunct” are conceptually flawed.]"
+   }
+  },
   {
    "ts": "2026-10-22T20:15:52.519Z",
    "type": "어휘(밑줄)",
@@ -266,31 +291,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ: 문맥상 'singular'가 와야 하는데 'plural'가 쓰여 부적절하다 — 해당 문장 “Old Frisian does not distinguish the dative and accusative cases in the first and second person singular personal pronouns: 6.”의 논리 흐름상 singular가 맞고 plural는 방향이 어긋난다. [극성] singular (correct) ↔ plural (incorrect)\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-20T20:50:03.729Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 1건 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Investigating Language Syntax and Pragmatics",
-     "Confirming Traditional Word‑Class Distinctions Entirely",
-     "Examining Functional Roles of Words",
-     "Reexamining the Role of 'Then",
-     "Reexamining Traditional Word‑Class Distinctions"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The text argues that traditional word‑class distinctions and syntactic labels, such as Obligatory Predication Adjunct, are conceptually flawed and must be re‑examined in light of empirical evidence regarding the functional roles of words like “then,” “the,” and “every.”'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The text argues that traditional word‑class distinctions and syntactic labels, such as Obligatory Predication Adjunct, are conceptually flawed and must be re‑examined in light of empirical evidence regarding the functional roles of words like “then,” “the,” and “every.”]"
    }
   }
  ]
