@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-23T22:34:53.130Z",
+ "updated": "2026-10-24T12:59:04.072Z",
  "samples": [
+  {
+   "ts": "2026-10-24T12:57:58.014Z",
+   "type": "연결어빈칸",
+   "level": "중",
+   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "The dolphin is faster. 3. \u0007Motion is relative because it is always described in relation to a reference point. ___(A)___ we don’t see the earth rotating because everything around us is moving with it (including us). 4. The speed and the direction of motion 5. \u0007Your velocity changes four times (because you are walking in a different direction on each side of the block). You are going at the same pace the entire time, so your speed doesn’t change. 6. \u0007The driver’s velocity changed because the driver changed directions. The driver’s speed did not change. 7. \u0007Yes, the bee is accelerating. ___(B)___ acceleration is the change in velocity per unit of time, and the bee is constantly changing direction, the bee is also constantly changing velocity and is therefore accelerating. 8. \u0007When something speeds up, slows down, or changes direction change in distance change in time 56 m 8 s 30 m 6 s #3 has more than one correct answer.",
+    "choices": [
+     "For example, …… Similarly",
+     "For example, …… Because",
+     "For example, …… Nevertheless",
+     "In addition …… For example",
+     "In addition …… Indeed"
+    ],
+    "answer": 2,
+    "explanation": "(A)는 앞 내용과 '예시' 관계로 For example,, (B)는 '인과' 관계로 Because 가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n[오답 진단·처방]\n① 진단: 학생은 예시를 넣으려다 'For example'을 선택했고, 인과를 설명할 때는 'Because'가 필요함을 놓침 → 처방: 문장에 이유를 덧붙일 때는 반드시 'Because'를 쓰도록 연습한다.\n③ 진단: 학생은 대비를 잘못 판단해 'Nevertheless'를 선택했으며, 문장과 맞지 않음 → 처방: 비교·대조 연결어는 문장의 의미를 바꾸므로, 문맥과 어울리는 어휘를 찾아 사용한다.\n④ 진단: 학생은 두 개의 연결어를 동시에 쓰는 실수를 하며 'In addition'과 'For example'을 함께 넣음 → 처방: 한 문장에는 한 개의 연결어만 사용하고, 추가 설명은 이어지는 문장으로 구분한다.\n⑤ 진단: 학생은 강조를 위해 'Indeed'를 붙였으나 연결어가 중복되어 문장이 어색함 → 처방: 강조 표현은 'Indeed'만 쓰고 앞에 연결어는 생략하도록 연습한다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-23T22:34:25.501Z",
    "type": "연결어빈칸",
@@ -256,25 +281,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Jefferson’s indirect, impersonal style in Part 1 philosophically justifies revolution by attributing colonial action to necessity and higher forces rather than individual free will.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Jefferson’s indirect, impersonal style in Part 1 philosophically justifies revolution by attributing colonial action to necessity and higher forces rather than individual free will.]"
-   }
-  },
-  {
-   "ts": "2026-10-21T15:35:11.219Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 한 가지 가능한 답은 그가 우리 혁명을 위한 것이 아니라 단지 혁명을 위한 철학적 근거를 세우고자 했다는 것이며, 이는 서구 정치 사상에서 깊이 불안정한 개념으로, 그들이 싫어하는 정부를 버리려는 식민주의자들의 단순한 욕구보다 더 많은 정당화가 필요한 아이디어다. (구문 포인트: 비교 구조(‘not … but …’ correlative conjunction) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
