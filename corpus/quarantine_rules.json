@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-24T12:59:04.068Z",
+ "updated": "2026-10-24T16:52:30.824Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제 문항은 지문과 선지가 문법적, 의미적으로 완벽하게 구성되어야 하며, 빈칸을 채웠을 때 전체 문맥이 자연스럽고 출제 의도에 정확히 부합하도록 해야 한다.",
+   "src": "자가학습:연결어빈칸",
+   "score": 23,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-24T16:38:25.771Z"
+  },
+  {
+   "rule": "문제 유형과 지문, 선택지, 정답 번호를 일관되게 정리하고, 지문이 완전하며 선택지가 해당 유형(예: 심경변화)에 대해 평가할 수 있도록 구체적·실행가능한 내용을 제공한다.",
+   "src": "자가학습:심경변화",
+   "score": 30,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-24T16:48:48.523Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:첫글자어휘",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-24T16:52:23.809Z"
+  },
   {
    "rule": "각 선택지는 안내문과 일치하거나 일치하지 않도록 구분하고, 정확히 하나의 정답을 포함하며, 정답 번호는 실제 정답과 일치하도록 반드시 검증한다.",
    "src": "자가학습:안내문불일치",
@@ -57,14 +81,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-22T20:11:56.204Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:우리말해석",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-22T15:34:55.923Z"
   },
   {
    "rule": "모든 문항은 발문, 지문, 선지 간의 내용적, 형식적 일관성을 확보하여, 발문이 요구하는 답이 지문에서 명확히 도출 가능하고 선지에서 타당하게 선택 가능하도록 구성해야 한다.",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-26T10:02:52.664Z"
-  },
-  {
-   "rule": "영영풀이의 정의가 원지문의 실제 사용 맥락과 정확히 일치하도록 문맥화하고, 발문은 구체적인 문장 번호나 위치(예: \"(44) 문장\")를 명시하며, 선택지는 오답 선지의 매력도를 높이기 위해 원지문과 유사한 통사적·의미적 오류를 포함하도록 재구성하라.",
-   "src": "자가학습:영영풀이단어쓰기",
-   "score": 80,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-26T10:03:31.598Z"
-  },
-  {
-   "rule": "모든 선지는 원문의 핵심 주제를 왜곡하지 않으며, 과장·축소·역전 없이 객관적 사실에 근거해 작성되어야 한다.",
-   "src": "자가학습:요지",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-26T09:04:10.402Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

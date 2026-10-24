@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-24T12:59:04.072Z",
+ "updated": "2026-10-24T16:52:30.830Z",
  "samples": [
+  {
+   "ts": "2026-10-24T16:52:18.284Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 1번 유지)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The role of editing in refining written content.",
+     "The role of editing in causing textual errors.",
+     "The role of editing in correcting grammatical mistakes.",
+     "The role of editing in perfecting all communication.",
+     "The role of editing in occasionally correcting errors."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Editing corrects errors in text to produce a clear, accurate, and consistent final product.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도 (cause-effect reversed)·범위 축소 (scope narrowing)·과잉 일반화 (over-generalization)·정도·빈도 왜곡 (frequency distortion))로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 인과 전도 (cause-effect reversed)· ③ 오답 — 범위 축소 (scope narrowing)· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도 왜곡 (frequency distortion)\n[오답 진단·처방]\n② 진단: 문장 ‘They were having a great time, but after an intense night of partying, they sleep all day Sunday and didn’t made it back to McGill’에서 ‘didn’t made’ 같은 과거형 오류를 보며 편집이 오류를 만든다고 착각. → 처방: 다음부터는 시제와 동사형을 일관되게 확인하고, 편집은 오류를 고치는 과정임을 기억하라.\n③ 진단: 문제의 핵심이 ‘I’의 심경 변화인지, 편집의 목적인지를 구분하지 못해 ‘편집은 문법을 바로 잡는다’는 오해를 함. → 처방: 문제 문장을 읽을 때 ‘I’의 감정 변화를 찾는 것이 목적임을 명확히 하라.\n④ 진단: 편집이 모든 소통을 완벽하게 만든다고 해석해 ‘편집은 모든 커뮤니케이션을 완전하게 만든다’는 선택지를 고름. → 처방: 편집은 문맥과 목적에 맞게 개선하는 과정이며, 완벽을 보장하지 않음을 인식하라.\n⑤ 진단: 편집이 가끔만 오류를 고친다고 생각해 ‘편집은 가끔 오류를 고친다’는 선택지를 고름. → 처방: 편집은 지속적으로 오류를 찾아서 수정해야 한다는 점을 명심하라.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Editing corrects errors in text to produce a clear, accurate, and consistent final product.]"
+   }
+  },
+  {
+   "ts": "2026-10-24T16:52:24.232Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "The Grammar Geek 46 10. a) Everyone ate one. b) Everyone was eating one. \b \b \b \b \b \b EXERCISE 5: EDITING Edit the following p______ for past tense mistakes. You have to love this prof At McGill University, four second-year students took Organic Chemistry. Everything went so well for them on the quizzes, mid­ terms and labs, and they each were having an A so far in the course. They were so confident that on the weekend before their final exams, they decide to go to Ottawa University and party with some friends there. They were having a great time, but after an intense night of partying, they sleep all day Sunday and didn’t made it back to McGill until early Monday morning. Rather than taking the final then, they decided to track down their professor after the final and give him an explanation as to why they were missing it. They explained to him that they had gone to Ottawa for the weekend with the intention to come back in time",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] passage — 문단의 논지상 이 자리에는 'passage'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-24T12:57:58.014Z",
    "type": "연결어빈칸",
@@ -231,56 +275,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Always — 문단의 논지상 이 자리에는 'Always'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-21T20:22:45.104Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① (Up is a preposition connecting went and hill.)\n② or In the long jump, Adele could beat her rival Fern more often than she could beat her teammate Sherry.\n③ (In is a preposition connecting sat and corner.)\n④ Little Jack Horner sat in a corner.\n⑤ Take, for example, these short sentences: Jack and Jill went up the hill.\n⑥ When the sentence is constructed that way, it isn’t clear if the meaning is the following: In the long jump, Adele could beat her rival Fern more often than her teammate Sherry could.\n⑦ Prepositions A preposition is a word that links a noun or pronoun to some other word in a sentence.\n⑧ Because some comparisons can be interpreted more than one way, be sure that you include all the words necessary to give the meaning you intend.\n⑨ Read this sentence: In the long jump, Adele could beat her rival Fern more often than her teammate Sherry.",
-    "choices": [
-     "⑧-⑨-⑥-②-⑦-⑤-④-①-③",
-     "⑧-⑥-⑨-②-⑦-⑤-①-④-③",
-     "⑧-⑨-⑥-②-⑦-⑤-①-④-③",
-     "⑧-③-④-⑨-⑥-⑦-⑤-①-②",
-     "⑨-⑧-⑥-②-⑦-⑤-①-④-③"
-    ],
-    "answer": 3,
-    "explanation": "정답 배열은 ⑧-⑨-⑥-②-⑦-⑤-①-④-③. 흐름: ⑧ → ⑨ → ⑥ → ② → ⑦ → ⑤ → ① → ④ → ③ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ①과 ②를 뒤바꾸어 ②가 먼저 와야 할 위치를 놓쳤고, ⑥이 ②보다 앞서서 비교 문장을 먼저 제시해 혼란을 주었음(지문 ②, ⑥). → 처방: 문장 흐름을 따라가며, 비교 문장(②) 뒤에 해석(⑥)을 놓도록 연습하라.\n② 진단: ⑥을 먼저 두어 비교 문장(②)보다 먼저 해석을 제시했고, ①이 ④보다 앞서서 ‘up’ 예시를 잘못 배치했음(지문 ①, ④). → 처방: 예시 문장(①)은 ‘Jack and Jill went up the hill’(⑤) 이후에 놓아야 함을 기억하라.\n④ 진단: ③을 ④보다 앞서 배치해 ‘sat’와 ‘corner’의 관계를 먼저 설명하고, ①을 ②보다 앞서 ‘up’ 예시를 잘못 배치했음(지문 ③, ①, ②). → 처방: 예시 문장(③)은 예시 문장(④) 뒤에, ‘up’ 예시는 ⑤ 뒤에 두도록 순서를 점검하라.\n⑤ 진단: ⑨를 먼저 두어 문장을 먼저 제시하고, ①을 ④보다 앞서 ‘up’ 예시를 잘못 배치했음(지문 ⑨, ①, ④). → 처방: 문장(⑨)은 ⑧(설명) 뒤에 오고, ‘up’ 예시는 ⑤ 뒤에 두는 순서를 연습하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-21T15:30:28.132Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Philosophical justification of revolution via impersonal necessity.",
-     "Philosophical justification of revolution through necessity",
-     "Personal justification of revolution ignoring necessity",
-     "Jefferson’s personal justification of revolution via necessity",
-     "General philosophical theories supporting revolutionary action"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Jefferson’s indirect, impersonal style in Part 1 philosophically justifies revolution by attributing colonial action to necessity and higher forces rather than individual free will.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Jefferson’s indirect, impersonal style in Part 1 philosophically justifies revolution by attributing colonial action to necessity and higher forces rather than individual free will.]"
    }
   }
  ]
