@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-24T16:52:30.824Z",
+ "updated": "2026-10-24T19:47:04.265Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:문장삽입",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-24T19:32:21.289Z"
+  },
   {
    "rule": "모든 출제 문항은 지문과 선지가 문법적, 의미적으로 완벽하게 구성되어야 하며, 빈칸을 채웠을 때 전체 문맥이 자연스럽고 출제 의도에 정확히 부합하도록 해야 한다.",
    "src": "자가학습:연결어빈칸",
@@ -17,14 +25,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-24T16:48:48.523Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:첫글자어휘",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-24T16:52:23.809Z"
   },
   {
    "rule": "각 선택지는 안내문과 일치하거나 일치하지 않도록 구분하고, 정확히 하나의 정답을 포함하며, 정답 번호는 실제 정답과 일치하도록 반드시 검증한다.",

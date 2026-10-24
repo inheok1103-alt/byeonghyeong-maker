@@ -1,6 +1,56 @@
 {
- "updated": "2026-10-24T16:52:30.830Z",
+ "updated": "2026-10-24T19:47:04.268Z",
  "samples": [
+  {
+   "ts": "2026-10-24T19:43:45.262Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] (a) (b) (c) (a) represents sunbathed as forming a constituent with beside a stream, and divides the sentence into just two immediate constituents: old Sam and sunbathed beside a stream.\n\nCHAPTER 1 SENTENCE STRUCTURE: CONSTITUENTS There are other constituents in the (a) sentence, of course, and the constituents listed here themselves contain further phrases as constituents. ( ① ) Here are the three complete phrase markers. ( ② ) New bits are in bold. ( ③ ) (b) also divides the sentence into two, but this time the two parts are old Sam sunbathed and beside a stream. ( ④ ) Phrase marker (c) represents the sentence as having three immediate constituents, old Sam and sunbathed and beside a stream; it says that sunbathed forms a constituent neither with old Sam nor with beside a stream. ( ⑤ ) In attempting to represent what phrase marker (a) represents, you may have been tempted simply to draw an extra line out from the phrase node dominating beside a stream as (d): 22",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-24T19:46:46.625Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "CHAPTER 1 SENTENCE STRUCTURE: CONSTITUENTS There are other constituents in the (a) sentence, of course, and the constituents listed here themselves contain further phrases as constituents.\n\n(A) (a) (b) (c) (a) represents sunbathed as forming a constituent with beside a stream, and divides the sentence into just two immediate constituents: old Sam and sunbathed beside a stream. (b) also divides the sentence into two, but this time the two parts are old Sam sunbathed and beside a stream.\n\n(B) Here are the three complete phrase markers. New bits are in bold.\n\n(C) Phrase marker (c) represents the sentence as having three immediate constituents, old Sam and sunbathed and beside a stream; it says that sunbathed forms a constituent neither with old Sam nor with beside a stream. In attempting to represent what phrase marker (a) represents, you may have been tempted simply to draw an extra line out from the phrase node dominating beside a stream as (d): 22",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 2,
+    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-24T16:52:18.284Z",
    "type": "심경변화",
@@ -231,50 +281,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'to act overly dramatic about one's grief'을 함의한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-21T23:34:27.165Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 4번 유지, 코드파생형은 만장일치만 교정)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "WEEK 31 DAY 5 REVIEW Once more it is time to review this week’s words. Always keep in mind that the use of the word, its context, determines its meaning. Used as a noun, a word has a different meaning than when it is used as an adjective or a verb. First, master the words as they appear in the daily stories. Next, look up other meanings in your dictionary. Try writing sentences with the additional meanings. REVIEW WORDS DEFINITIONS 1. agitation, turmoil, uproar 2. attending, accompanying 3. abnormality, irregularity 4. cautious, wise 5. protest, differ, disagree 6. rough, harsh, shrill 7. multiply, spread, produce 8. lack of faith, dissent, unbelief 9. morally required 10. power to produce an effect 11. setting, environment 12. counterfeit, false, specious* 13. harmful, bad 15. superabundance, excess 16. enthusiastic, passionate, intense 17. decreased, weakened, thinned 18. mild, innocent, harmless 19. fatigue, weariness 20. [ ]",
-    "choices": [
-     "It is a type of fruit commonly used in desserts.",
-     "It is genuine, real, internal, and truly authentic everywhere now.",
-     "It is a real, authentic, internal, and undeniable truth today.",
-     "It is only an appearance, a pretense, or something external.",
-     "It is an overwhelming, intense, all-encompassing reality that surpasses everywhere."
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 원문 'seeming, pretended, outward'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장에 'fruit' 같은 단어가 있어 과일과 연관된 의미를 착각했다. → 처방: 과일과 관련된 단어가 있는지 먼저 확인하고, 문맥에서 실제 의미를 찾아라.\n② 진단: 문장에 'genuine', 'real', 'authentic' 같은 단어가 있어 진짜라는 뜻으로 착각했다. → 처방: 진짜와 관련된 단어가 있는지 확인하고, 문맥에서 실제 의미를 찾아라.\n③ 진단: 문장에 'real', 'authentic', 'undeniable truth' 같은 단어가 있어 진실이라는 뜻으로 착각했다. → 처방: 진실과 관련된 단어가 있는지 확인하고, 문맥을 살펴보라.\n⑤ 진단: 문장에 'overwhelming', 'intense', 'all-encompassing reality' 같은 단어가 있어 강렬한 현실이라는 뜻으로 착각했다. → 처방: 강렬함과 관련된 단어가 있는지 확인하고, 문맥을 살펴보라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-21T23:34:45.330Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "WEEK 31 DAY 5 REVIEW Once more it is time to review this week’s words. A_____ keep in mind that the use of the word, its context, determines its meaning. Used as a noun, a word has a different meaning than when it is used as an adjective or a verb. First, master the words as they appear in the daily stories. Next, look up other meanings in your dictionary. Try writing sentences with the additional meanings. REVIEW WORDS DEFINITIONS 1.anomaly a. agitation, turmoil, uproar 2.arbiter b. attending, accompanying 3.attenuated c. abnormality, irregularity 4.concomitant d. cautious, wise 5.deleterious e. protest, differ, disagree 6.dissent f. rough, harsh, shrill 7.efficacy g. multiply, spread, produce 8.ferment h. lack of faith, dissent, unbelief 9.fervid i. morally required 10.heresy j. power to produce an effect 11.incumbent k. setting, environment 12.innocuous l. counterfeit, false, specious* 13.lassitude m. judge 14.milieu n. harmful, bad 15.ostensible o. superabundance, excess 16.propagate p. enthusiastic, passionate, intense 17.prudent q. decreased, weakened, thinned 18.spurious r. mild, innocent, harmless 19.strident s. fatigue, weariness 20.surfeit t. seeming, pretended, outward",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Always — 문단의 논지상 이 자리에는 'Always'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
