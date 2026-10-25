@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-25T19:50:49.489Z",
+ "updated": "2026-10-25T22:48:42.076Z",
  "samples": [
+  {
+   "ts": "2026-10-25T22:46:28.206Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/2 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "WEEK 17 DAY 5 REVIEW Major Martin, if he had lived, would have used the word “bonnet” to refer to the hood of his auto, and he might have referred to a truck as a “lorry.” As you can see, there are differences between American and British English. But Major Martin, undoubtedly, would have known all the words below—do you? Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 13 and 20.) REVIEW WORDS DEFINITIONS 1.assiduous a. spread out in battle formation 2.attest b. a trick 3.component c. busy, attentive 4.concoct d. confirm as accurate, vouch for 5.consummate e. devise 6.deploy f. a riddle, puzzle 7.enigma g. element, part 8.evaluate h. able to meet any situation 9.exult i. perfect, complete 10.fallacious j. filled 11.fraught k. misleading, false 12.gullible l. rejoice greatly 13.hoax m. faultless 14.impeccable n. easily fooled 15.labyrinth o. winding passages 16.manifold p. find the value of, review 17.murky q. many 18.perpetrate r. deception 19.resourceful s. commit 20.subterfuge t. dark, obscure\n\n─────────\n[요약문] The passage presents a review of American and British English (A) differences, followed by a (B) exercise to reinforce word meanings.",
+    "choices": [
+     "(A) causes … (B) exercise",
+     "(A) identical … (B) exercise",
+     "(A) terminology … (B) matching",
+     "(A) differences … (B) lecture",
+     "(A) similarities … (B) exercise"
+    ],
+    "answer": 3,
+    "explanation": "(A) terminology / (B) matching 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘causes’가 차이의 원인이라고 착각했다. ‘There are differences between American and British English.’에서 ‘causes’는 언급되지 않음 → 처방: 문장에 실제로 쓰인 단어만 골라라.\n② 진단: ‘identical’이 차이와 모순된다고 생각해 선택했다. ‘There are differences…’에서 ‘identical’은 없음 → 처방: 차이와 동일성을 구분해라.\n④ 진단: ‘lecture’가 문장에 없다는 사실을 간과했다. ‘Match the twenty words with their meanings.’에서 ‘lecture’는 없음 → 처방: 문장에 등장하는 단어만 사용하라.\n⑤ 진단: ‘similarities’가 문장에 없다고 착각했다. ‘There are differences…’에서 ‘similarities’는 언급되지 않음 → 처방: 문장이 말하는 내용에 맞게 단어를 고르라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-25T22:48:36.605Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 29 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 지문은 미국식 영어와 영국식 영어의 차이를 언급하며, **Major Martin이 모든 단어를 알았을 것이라** 주장한다. 이 주장(‘Major Martin이 모든 단어를 알았을 것이라’)에 대해 당신은 동의하는가? 동의/반대하고 그 이유를 영어로 두 문장으로 작성하시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] I disagree with the claim that Major Martin would have known all the words below. This is unrealistic, as mastering such a large vocabulary requires extensive study and exposure.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 형식·표현 준수 · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내).\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-25T19:43:52.620Z",
    "type": "네모어법ABC",
@@ -251,50 +295,6 @@
     ],
     "answer": 2,
     "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-24T16:52:18.284Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 1번 유지)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The role of editing in refining written content.",
-     "The role of editing in causing textual errors.",
-     "The role of editing in correcting grammatical mistakes.",
-     "The role of editing in perfecting all communication.",
-     "The role of editing in occasionally correcting errors."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Editing corrects errors in text to produce a clear, accurate, and consistent final product.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도 (cause-effect reversed)·범위 축소 (scope narrowing)·과잉 일반화 (over-generalization)·정도·빈도 왜곡 (frequency distortion))로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 인과 전도 (cause-effect reversed)· ③ 오답 — 범위 축소 (scope narrowing)· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 정도·빈도 왜곡 (frequency distortion)\n[오답 진단·처방]\n② 진단: 문장 ‘They were having a great time, but after an intense night of partying, they sleep all day Sunday and didn’t made it back to McGill’에서 ‘didn’t made’ 같은 과거형 오류를 보며 편집이 오류를 만든다고 착각. → 처방: 다음부터는 시제와 동사형을 일관되게 확인하고, 편집은 오류를 고치는 과정임을 기억하라.\n③ 진단: 문제의 핵심이 ‘I’의 심경 변화인지, 편집의 목적인지를 구분하지 못해 ‘편집은 문법을 바로 잡는다’는 오해를 함. → 처방: 문제 문장을 읽을 때 ‘I’의 감정 변화를 찾는 것이 목적임을 명확히 하라.\n④ 진단: 편집이 모든 소통을 완벽하게 만든다고 해석해 ‘편집은 모든 커뮤니케이션을 완전하게 만든다’는 선택지를 고름. → 처방: 편집은 문맥과 목적에 맞게 개선하는 과정이며, 완벽을 보장하지 않음을 인식하라.\n⑤ 진단: 편집이 가끔만 오류를 고친다고 생각해 ‘편집은 가끔 오류를 고친다’는 선택지를 고름. → 처방: 편집은 지속적으로 오류를 찾아서 수정해야 한다는 점을 명심하라.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Editing corrects errors in text to produce a clear, accurate, and consistent final product.]"
-   }
-  },
-  {
-   "ts": "2026-10-24T16:52:24.232Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "The Grammar Geek 46 10. a) Everyone ate one. b) Everyone was eating one. \b \b \b \b \b \b EXERCISE 5: EDITING Edit the following p______ for past tense mistakes. You have to love this prof At McGill University, four second-year students took Organic Chemistry. Everything went so well for them on the quizzes, mid­ terms and labs, and they each were having an A so far in the course. They were so confident that on the weekend before their final exams, they decide to go to Ottawa University and party with some friends there. They were having a great time, but after an intense night of partying, they sleep all day Sunday and didn’t made it back to McGill until early Monday morning. Rather than taking the final then, they decided to track down their professor after the final and give him an explanation as to why they were missing it. They explained to him that they had gone to Ottawa for the weekend with the intention to come back in time",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] passage — 문단의 논지상 이 자리에는 'passage'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
