@@ -1,6 +1,85 @@
 {
- "updated": "2026-10-25T01:18:22.904Z",
+ "updated": "2026-10-25T06:22:33.569Z",
  "samples": [
+  {
+   "ts": "2026-10-25T06:16:01.020Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②③④"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what. ① The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think what that she is hiding what. ② This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. ③ The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think what that she is hiding what. ④ The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation): ⑤ The CP in the sentence was so intricate that it made the reader question the meaning of the text.",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 5,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-25T06:22:24.509Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "AUXILIARY MOVEMENT and PRONOUN PLACEMENT in the CP",
+     "STATEMENT CONSTRUCTION by DELETION of CP and TP",
+     "ALL SENTENCES FORMED by SUCCESSIVE MERGES and MOVEMENTS",
+     "Question Formation by Successive Merges and Movement",
+     "QUESTION FORMATION VIA MERGING of CP and TP"
+    ],
+    "answer": 4,
+    "explanation": "글의 핵심 논지는 'The derivation of a question involves successive merges of CP, VP, T‑bar, TP, and a null C, with feature‑driven movements of the auxiliary and the interrogative pronoun.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The derivation of a question involves successive merges of CP, VP, T‑bar, TP, and a null C, with feature‑driven movements of the auxiliary and the interrogative pronoun.]"
+   }
+  },
+  {
+   "ts": "2026-10-25T06:22:28.045Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] (61) 의 CP는 동사 think의 보체로 병합되어 VP가 무엇을 숨기고 있는지 생각합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-24T22:43:13.386Z",
    "type": "주제",
@@ -206,81 +285,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 이 글은 단어와 정의를 매칭하고, corollary와 corroborate의 의미와 예시를 설명한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-23T15:12:12.341Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] It must be the case therefore that these \u0002-roles are given from the predicate to the argument.\n\nD-structure: was considered to be confused Ken In this example, although Ken is sitting in the subject position of the verb consider, this element is interpreted as the object of confused and thus is in the object position of this predicate at D-structure. D-structure then is a pure representation of thematic relations. Anything which is interpreted as the subject or object of a given predicate will be in the subject or object position of that predicate at D-structure no matter where it is found at S-structure. ( ① ) The principles that determine D-structure positions must therefore have something to do with thematic relationships. ( ② ) We saw in chapter 1 how \u0002-roles are encoded in the lexical entry of predicates. ( ③ ) Yet in a sentence it is the arguments that are interpreted as bearing these \u0002-roles. ( ④ ) We can refer to this process as \u0001-role assignment. ( ⑤ )",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "주어진 문장의 연결 단서가 ④ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-23T10:18:16.554Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The necessity of property-based word classification for nouns",
-     "The necessity of property-based labeling for word classification",
-     "The necessity of property-based word classification",
-     "The necessity of property-based word classification sometimes",
-     "The necessity of property-based word classification as a result of flawed labeling"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Words should be classified by their shared grammatical properties, and conventional labels such as “Obligatory Predication Adjunct” are conceptually flawed.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·인과 전도·정도·빈도 왜곡·주체·대상 교체)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 정답의 일부만 담아 지엽적· ② 오답 — 주체나 대상을 바꿔치기· ③ 정답 — 핵심 논지 반영· ④ 오답 — 정도·빈도를 왜곡· ⑤ 오답 — 원인과 결과를 뒤바꿈\n[오답 진단·처방]\n① 진단: 지문에서 ‘품사 분류’가 모든 단어에 적용된다고 명시되어 있음에도, 학생은 ‘명사’에 한정해 해석했다. → 처방: 문장을 읽을 때 ‘품사 분류’가 전체 범위인지, 특정 품사인지 명확히 구분하도록 연습하라.\n② 진단: 학생은 ‘라벨 부여’와 ‘분류’의 차이를 혼동해 ‘라벨 부여’가 필요하다고 판단했다. → 처방: ‘라벨 부여’와 ‘분류’의 차이를 문맥에서 확인하고, 문장에 나타난 핵심 개념을 중심으로 선택하라.\n④ 진단: 학생은 조건부 표현을 보고 ‘때때로’라는 의미를 추가해 답을 선택했다. → 처방: 문장에는 조건부 표현이 없으니, ‘필요성’이 항상 적용된다는 점을 인식하라.\n⑤ 진단: 학생은 ‘라벨 부여 오류’가 원인이라고 해석해 ‘결과’를 추가했다. → 처방: 문장에서는 ‘라벨 부여 오류’가 언급되지 않으니, 원인과 결과를 구분해 답을 고르도록 하라.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Words should be classified by their shared grammatical properties, and conventional labels such as “Obligatory Predication Adjunct” are conceptually flawed.]"
-   }
-  },
-  {
-   "ts": "2026-10-22T20:15:52.519Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "ⓐ<u>Revising</u> is part of writing, because few writers produce what they are after on the ⓑ<u>intermediate</u> try write perfect first drafts. If you use a word processor and find Often you will discover serious flaws in your arrangement, of the ⓒ<u>material</u>. When this is the case, a word processor can save time as you rearrange the manuscript. you can select material on the screen and move material to a more appropriate spot, or, if you cannot find one, the right spot, to the end of the manuscript ­until you decide whether to delete it. Some writers find that ­working with a printed manuscript helps them visualize change; others ­revise on screen. Above all, experiment. Save both the ⓓ<u>original</u> and the ­revised version; you can always go back to it restore the manuscript its ­original condition. Remember, It is no sign of weakness that your manuscript needs ⓔ<u>surgery</u>. This is common in all writing, and among the best writers. (99 words) And if we cut to the bone, we can reduce that in half:",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 2,
-    "explanation": "정답 ⓑ: 문맥상 'first'가 와야 하는데 'last'가 쓰여 부적절하다 — 해당 문장 “Revising is part of writing, because few writers produce what they are after on the first try write perfect first drafts.”의 논리 흐름상 first 가 맞고 last 는 방향이 어긋난다. [극성] 정답=first (initial) ↔ 오답=last (final)\n[오답 진단·처방]\n① 진단: 오해: 'Revising'을 동사로만 생각해 문맥에 맞지 않다고 판단 (지문: 'Revising is part of writing') → 처방: 다음부터는 단어가 문장 안에서 명사인지 동사인지 파악해 보라.\n③ 진단: 오해: 'material'을 물질이라 해석해 문맥과 맞지 않다고 판단 (지문: 'material') → 처방: 문맥에서 'material'이 내용인지 물질인지 확인하라.\n④ 진단: 오해: 'original'을 원래의로 해석해 문맥에 맞지 않다고 판단 (지문: 'original') → 처방: 문장 안에서 'original'이 원본인지 원래인지 구분해 보라.\n⑤ 진단: 오해: 'surgery'를 실제 수술이라 해석해 문맥에 맞지 않다고 판단 (지문: 'surgery') → 처방: 비유적 표현인지 실제 의미인지 구분해 보라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
