@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-25T16:38:31.560Z",
+ "updated": "2026-10-25T19:50:49.486Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-25T19:50:40.886Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스에서는 주어와 동사의 수 일치가 흔히 오류가 되는 패턴과, 전치사·관사의 부정확한 사용이 두드러진다. 특히 ‘who are’ → ‘who is’와 같은 주어-동사 일치, ‘more ther lifestile’ → ‘more time on their lifestyles’와 같은 전치사·관사 오류가 빈번하게 나타난다.",
+   "rule": "문장 변형 시 주어가 단수일 때는 동사를 단수형으로, 복수일 때는 동사를 복수형으로 바꾸고, 전치사와 관사를 올바르게 사용하도록 반드시 점검한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-25T01:18:15.943Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "'because of' 다음에 동명사 구조가 오면 문법적으로 부자연스러우며, 'commitments to V'나 'requirements for N' 형태로 명사구로 재구조화해야 자연스러운 영어가 된다. 또한 'most time'은 한국어식 표현으로, 'most of the time'이거나 'usually' 등으로 대체해야 한다.",
    "rule": "'because of' 뒤에는 동명사(~ing) 대신 '명사구(commitments to V / requirements for N)'나 '명사절(that S V)'을 사용하도록 오답 선택지를 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-29T09:11:26.594Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거형 동사(transmit, explain 등)가 주어나 목적어의 특성을 반영하지 않고 사용되는 오류가 빈번하다. 특히 '~할 수 있다'의 의미가 필요한 경우, 조동사(can/may)나 능동태가 누락된다.",
-   "rule": "주어의 인칭·수·시제와 조동사/능동태 사용을 반드시 확인하라. 특히 '~할 수 있다'는 의미가 포함된 문장은 can/may + 동사원형 또는 능동태 시제 변경을 필수로 적용하라.",
    "sample": [
     "old english",
     "university press",
