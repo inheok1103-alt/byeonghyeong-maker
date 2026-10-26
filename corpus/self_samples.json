@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-26T01:26:53.481Z",
+ "updated": "2026-10-26T06:33:50.789Z",
  "samples": [
+  {
+   "ts": "2026-10-26T06:32:23.563Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① When the sentence is constructed that way, it isn’t clear if the meaning is the following: In the long jump, Adele could beat her rival Fern more often than her teammate Sherry could.\n② (In is a preposition connecting sat and corner.)\n③ Read this sentence: In the long jump, Adele could beat her rival Fern more often than her teammate Sherry.\n④ or In the long jump, Adele could beat her rival Fern more often than she could beat her teammate Sherry.\n⑤ Take, for example, these short sentences: Jack and Jill went up the hill.\n⑥ Prepositions A preposition is a word that links a noun or pronoun to some other word in a sentence.\n⑦ Because some comparisons can be interpreted more than one way, be sure that you include all the words necessary to give the meaning you intend.\n⑧ Little Jack Horner sat in a corner.\n⑨ (Up is a preposition connecting went and hill.)",
+    "choices": [
+     "⑦-④-②-⑥-①-⑧-⑨-⑤-③",
+     "⑦-③-④-⑨-⑧-⑤-②-①-⑥",
+     "⑦-③-①-④-⑥-⑤-⑨-⑧-②",
+     "⑦-③-①-④-⑥-⑤-⑧-⑨-②",
+     "③-⑦-①-④-⑥-⑤-⑨-⑧-②"
+    ],
+    "answer": 3,
+    "explanation": "정답 배열은 ⑦-③-①-④-⑥-⑤-⑨-⑧-②. 흐름: ⑦ → ③ → ① → ④ → ⑥ → ⑤ → ⑨ → ⑧ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-26T01:25:37.272Z",
    "type": "의견영작",
@@ -264,31 +289,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] results — 문단의 논지상 이 자리에는 'results'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-24T19:43:45.262Z",
-   "type": "문장삽입",
-   "level": "중",
-   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
-    "passage": "[주어진 문장] (a) (b) (c) (a) represents sunbathed as forming a constituent with beside a stream, and divides the sentence into just two immediate constituents: old Sam and sunbathed beside a stream.\n\nCHAPTER 1 SENTENCE STRUCTURE: CONSTITUENTS There are other constituents in the (a) sentence, of course, and the constituents listed here themselves contain further phrases as constituents. ( ① ) Here are the three complete phrase markers. ( ② ) New bits are in bold. ( ③ ) (b) also divides the sentence into two, but this time the two parts are old Sam sunbathed and beside a stream. ( ④ ) Phrase marker (c) represents the sentence as having three immediate constituents, old Sam and sunbathed and beside a stream; it says that sunbathed forms a constituent neither with old Sam nor with beside a stream. ( ⑤ ) In attempting to represent what phrase marker (a) represents, you may have been tempted simply to draw an extra line out from the phrase node dominating beside a stream as (d): 22",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 3,
-    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
    }
   }
  ]
