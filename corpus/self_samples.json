@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-26T14:36:45.026Z",
+ "updated": "2026-10-26T20:42:36.089Z",
  "samples": [
+  {
+   "ts": "2026-10-26T20:42:26.350Z",
+   "type": "제목",
+   "level": "중",
+   "audit": "어법 의심 1건 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Edge Feature Governs Wh‑Movement",
+     "Light Verb Determines Wh‑Movement",
+     "Wh‑Phrase Remains in Situ Without Edge",
+     "French Wh‑Questions Require Edge Feature",
+     "Edge Feature Is Irrelevant to Wh‑Movement"
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'Whether a wh‑phrase moves in French wh‑questions depends on the light verb’s edge feature: without it, the wh‑phrase stays in situ; with it, it moves to the vP specifier.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: ‘light verb’는 ‘wh‑in‑situ’에서 ‘edge feature’가 없다고 지문이 말하므로 ‘wh‑movement’를 결정한다는 해석이 틀렸다. ‘By hypothesis, the light verb has no edge feature in wh‑in‑situ questions.’ → 처방: 다음 문제에서는 ‘edge feature’가 있는지 여부를 먼저 확인하고, 그에 따라 wh‑movement 여부를 판단하라.\n③ 진단: ‘wh‑phrase’가 ‘edge feature’ 없으면 그대로 남아있다고 생각했으나, 지문은 ‘edge feature’가 있으면 wh‑phrase 가 이동한다는 것을 보여준다. ‘in a non‑echoic question, the light‑verb will have an edge feature which attracts the wh‑marked object… to move’ → 처방: wh‑phrase 가 이동했는지 여부를 판단하려면 ‘edge feature’의 존재를 확인하라.\n④ 진단: ‘French’가 요구한다는 해석은 ‘light‑verb’의 ‘edge feature’와 관련이 없으며, 지문은 ‘non‑echoic’ 질문에서만 edge feature 가 있다고 명시한다. ‘in a non‑echoic question’… → 처방: 언어적 배경(프랑스어)보다 ‘edge feature’의 유무에 초점을 맞추어 해석하라.\n⑤ 진단: ‘edge feature’가 ‘wh‑movement’에 무관하다는 판단은 지문과 반대다. ‘edge feature’가 이동을 유도한다는 내용이 명시되어 있다. ‘…which attracts the wh‑marked object…’ → 처방: ‘edge feature’가 ‘wh‑movement’를 이끄는 핵심 요소임을 기억하고, 이를 중심으로 선택지를 검토하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Whether a wh‑phrase moves in French wh‑questions depends on the light verb’s edge feature: without it, the wh‑phrase stays in situ; with it, it moves to the vP specifier.]"
+   }
+  },
   {
    "ts": "2026-10-26T14:36:38.194Z",
    "type": "문장전환",
@@ -264,31 +289,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] (61) 의 CP는 동사 think의 보체로 병합되어 VP가 무엇을 숨기고 있는지 생각합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-24T22:43:13.386Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 1건 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "necessity indicated by speaker judgment and external obligation",
-     "absence of necessity with lack of external obligation",
-     "necessity defined by internal belief and external rule",
-     "necessity expressed through speaker judgment versus external obligation",
-     "speaker judgment expressing necessity versus obligatory external conditions"
-    ],
-    "answer": 4,
-    "explanation": "글의 핵심 논지는 'Modal verbs “must” and “have to” express necessity, with “must” reflecting the speaker’s judgment and “have to” reflecting external obligation.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n① 진단: 선지 ①은 'speaker judgment'와 'external obligation'을 모두 포함하지만, 주제는 'expressed through'라는 표현이 필요하다. → 처방: 다음에는 주제 문장에 등장하는 핵심 표현을 정확히 찾아서 선택하라.\n② 진단: 선지 ②는 필요성 부재를 말하지만, 지문은 필요성에 대해 다루고 있다. → 처방: 문제의 핵심이 필요성인지 부재인지 먼저 판단하라.\n③ 진단: 선지 ③은 'internal belief'와 'external rule'을 필요성의 정의라고 해석했으나, 실제는 'speaker judgment'와 'external obligation'이 구분된다. → 처방: 내부 신념과 외부 규칙을 구분해 읽고, 주제와 일치하는지 확인하라.\n⑤ 진단: 선지 ⑤는 'speaker judgment'와 'obligatory external conditions'을 나열했지만, 주제는 'expressed through'라는 구문이 필요하다. → 처방: 주제 문장에 'expressed through'가 있는지 확인하고 선택하라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Modal verbs “must” and “have to” express necessity, with “must” reflecting the speaker’s judgment and “have to” reflecting external obligation.]"
    }
   }
  ]
