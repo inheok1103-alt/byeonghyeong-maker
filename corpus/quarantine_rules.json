@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-26T06:33:50.785Z",
+ "updated": "2026-10-26T14:36:45.022Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문항을 출제할 때는 반드시 선지를 포함한 완전한 문제를 제시하고, 장문 독해에 적합한 원지문으로 교체하며, 어휘 목록은 지문에 자연스럽게 녹아들어 추론적 이해를 유도하도록 설계한다.",
+   "src": "자가학습:혼합통합형",
+   "score": 7,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-26T14:21:44.794Z"
+  },
+  {
+   "rule": "문항을 설계할 때 정답과 평가 기준을 명확히 정의하고, 평가가 객관적이며 일관되게 수행될 수 있도록 구체적인 평가 지침을 제공한다.",
+   "src": "자가학습:문장전환",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-26T14:36:24.193Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:전체문장배열",
@@ -289,14 +305,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-18T11:13:24.275Z"
-  },
-  {
-   "rule": "문항을 설계할 때 정답과 평가 기준을 명확히 정의하고, 평가가 객관적이며 일관되게 수행될 수 있도록 구체적인 평가 지침을 제공한다.",
-   "src": "자가학습:문장전환",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-18T11:20:07.638Z"
   },
   {
    "rule": "각 문제마다 평가 기준과 점수 배분을 명확히 제시하고, 답안이 해당 기준을 충족하는지 판단할 수 있도록 구체적 지침을 제공한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-26T13:18:21.057Z"
-  },
-  {
-   "rule": "모든 문항에서 선지를 '과장된 슬픔의 표현(표시)'으로 통일하고, 중복을 제거하며, 지문 내 정보와 직접 연관된 조건만 포함하여 불필요한 추가 정보를 배제하라.",
-   "src": "자가학습:심경변화",
-   "score": 65,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-26T13:21:40.151Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

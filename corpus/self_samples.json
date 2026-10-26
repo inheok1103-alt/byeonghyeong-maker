@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-26T06:33:50.789Z",
+ "updated": "2026-10-26T14:36:45.026Z",
  "samples": [
+  {
+   "ts": "2026-10-26T14:36:38.194Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] reject RESPITE (RES pit) n a period of rest or relief • We worked without respite from five in the morning until five in the afternoon.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Work was done without respite from five in the morning until five in the afternoon. (포인트: 주어가 'We'에서 'Work'로 바뀌며 수동태로 변환.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-26T06:32:23.563Z",
    "type": "전체문장배열",
@@ -270,25 +289,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'Modal verbs “must” and “have to” express necessity, with “must” reflecting the speaker’s judgment and “have to” reflecting external obligation.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n① 진단: 선지 ①은 'speaker judgment'와 'external obligation'을 모두 포함하지만, 주제는 'expressed through'라는 표현이 필요하다. → 처방: 다음에는 주제 문장에 등장하는 핵심 표현을 정확히 찾아서 선택하라.\n② 진단: 선지 ②는 필요성 부재를 말하지만, 지문은 필요성에 대해 다루고 있다. → 처방: 문제의 핵심이 필요성인지 부재인지 먼저 판단하라.\n③ 진단: 선지 ③은 'internal belief'와 'external rule'을 필요성의 정의라고 해석했으나, 실제는 'speaker judgment'와 'external obligation'이 구분된다. → 처방: 내부 신념과 외부 규칙을 구분해 읽고, 주제와 일치하는지 확인하라.\n⑤ 진단: 선지 ⑤는 'speaker judgment'와 'obligatory external conditions'을 나열했지만, 주제는 'expressed through'라는 구문이 필요하다. → 처방: 주제 문장에 'expressed through'가 있는지 확인하고 선택하라.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Modal verbs “must” and “have to” express necessity, with “must” reflecting the speaker’s judgment and “have to” reflecting external obligation.]"
-   }
-  },
-  {
-   "ts": "2026-10-24T22:46:18.148Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "MUST We use must when the speaker feels that something is necessary. You must exercise. (I'm telling you.) We must be quiet. (I'm telling you.) I/we must can also express a wish. / must buy a newspaper. 1 want to see the racing r______. We must invite Claire. She's wonderful company. HAVE TO We use have to when the situation makes something necessary. I have to exercise. (The doctor told me.) We have to be quiet. (That's the rule.) 1 have to buy a newspaper. The boss asked melt get one. We have to invite Trevor and Laura. They invited us last time. Have got to Have got to means the same as have to, but have got to is informal. We use it mainly in the present. I have to/I've got to make my sandwiches. My father has to/has got to take these pills. Do we have to apply/Have we got to apply for a visa? 48 Mustn't and needn't",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] results — 문단의 논지상 이 자리에는 'results'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
