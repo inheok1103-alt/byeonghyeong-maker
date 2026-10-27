@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-26T20:42:36.089Z",
+ "updated": "2026-10-27T00:39:38.955Z",
  "samples": [
+  {
+   "ts": "2026-10-27T00:36:03.017Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "Word Categories 5 two cats (if you think about it this sentence might mean that anything between two and six cats got bitten, which is not predictable from the meaning of the words). ① Let us assume that these different types of linguistic knowledge are separate. ② We can call the part of I-language which is to do with words the Lexicon. ③ This might be imagined as a kind of mental dictionary in which we store specific information about all the words that we use: how they are pronounced, what they mean, etc. 2. ④ The cat, dog, and mouse were all invited to the garden party. ⑤ 2 Categories Lexical knowledge concerns more than the meaning and pronunciation of words, however. Consider the examples in (2) and (3) again. The word cat is not the only one that could possibly go in the positions in (2), so could the words dog, mouse and budgerigar: (4) a the dog slept",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 4,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-26T20:42:26.350Z",
    "type": "제목",
@@ -270,25 +295,6 @@
     ],
     "answer": 4,
     "explanation": "글의 핵심 논지는 'The derivation of a question involves successive merges of CP, VP, T‑bar, TP, and a null C, with feature‑driven movements of the auxiliary and the interrogative pronoun.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: The derivation of a question involves successive merges of CP, VP, T‑bar, TP, and a null C, with feature‑driven movements of the auxiliary and the interrogative pronoun.]"
-   }
-  },
-  {
-   "ts": "2026-10-25T06:22:28.045Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] (61) 의 CP는 동사 think의 보체로 병합되어 VP가 무엇을 숨기고 있는지 생각합니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
