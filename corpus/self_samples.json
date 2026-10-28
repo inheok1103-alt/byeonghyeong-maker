@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-27T23:07:46.527Z",
+ "updated": "2026-10-28T02:35:20.852Z",
  "samples": [
+  {
+   "ts": "2026-10-28T02:35:15.603Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 독해는 해독, 도식, 예측 및 목적을 결합하여 의미 있는 결과를 산출합니다.\n주어진 단어: ( reading / comprehension / combines )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Reading comprehension combines decoding, schemata, predictions, and purpose to produce meaningful outcomes. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-27T13:26:42.606Z",
    "type": "밑줄함의",
@@ -269,41 +288,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] hence — 문단의 논지상 이 자리에는 'hence'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-25T06:16:01.020Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③④"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "The CP in (61) is then merged as the complement of the verb think, forming the VP think what that she is hiding what. ① The resulting VP is merged as the complement of the past-tense modal T-auxiliary might, forming the T-bar might think what that she is hiding what. ② This T-bar is itself merged with the subject pronoun he, forming the TP he might think what that she is hiding what. ③ The TP thereby formed is merged with a null C constituent ø which (in main-clause questions) carries both a tense feature and an edge feature, so forming the C-bar ø he might think what that she is hiding what. ④ The tense feature of the null affixal complementiser attracts the T-auxiliary might to move from T to C, and the edge feature of the complementiser attracts a copy of the interrogative pronoun what to move to become the specifier of C, so deriving the structure shown in simplified form in (62) below (with arrows indicating movements which take place in the course of the derivation): ⑤ The CP in the sentence was so intricate that it made the reader question the meaning of the text.",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 5,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]

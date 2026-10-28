@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-27T23:07:46.523Z",
+ "updated": "2026-10-28T02:35:20.846Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:조건영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-28T02:35:14.198Z"
+  },
   {
    "rule": "문항을 작성할 때 지문이 완전하게 제공되고, 질문과 답변 선택지가 동일 언어(한국어)로 일관되게 제시되며, 평가 기준을 충족하도록 사전 검증을 수행해야 한다.",
    "src": "자가학습:주제",
@@ -33,14 +41,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-26T14:36:24.193Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:전체문장배열",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-26T06:28:58.975Z"
   },
   {
    "rule": "문제 출제 시, 지문과 모든 선택지를 완전한 문단 형태로 제공하고, 각 선택지의 길이와 문법을 일관되게 맞추어 정답이 유일하게 판단될 수 있도록 한다.",
