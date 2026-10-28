@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-28T16:51:10.672Z",
+ "updated": "2026-10-28T21:52:14.816Z",
  "samples": [
+  {
+   "ts": "2026-10-28T21:46:28.446Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The comprehensive scope of linguistic modality, covering counterfactuals and rule-based duties.",
+     "The non-epistemic interpretations of modality, especially regarding averted or counterfactual events.",
+     "The pragmatic determination of rules in deontic modality, influenced by context.",
+     "The universal application of modality in language, always expressing rules and possibilities.",
+     "The linguistic expression of possibilities and obligations through various grammatical forms."
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'Linguistic modality encompasses diverse interpretations, including non-epistemic possibilities about averted or counterfactual events and deontic expressions of rules-based obligations or permissions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·초점 이탈·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Linguistic modality encompasses diverse interpretations, including non-epistemic possibilities about averted or counterfactual events and deontic expressions of rules-based obligations or permissions.]\n[오답 진단·처방]\n① 진단: 지문에서 'deontic modality'와 'necessity'를 강조하고 있는데, 학생은 모달리티를 전체 범위로 해석해버렸다. → 처방: 문장 중 'deontic necessity'와 'deontic possibility'라는 키워드를 찾아서 그 부분에 집중하라.\n② 진단: 지문은 'non-epistemic'이 아니라 'deontic'에 관한 내용이므로, 학생은 epistemic 과 deontic 을 혼동했다. → 처방: 'deontic'이라는 단어를 기준으로 해당 문단을 분리해 읽어라.\n④ 진단: 지문은 모달리티가 항상 규칙과 가능성을 표현한다는 보편적 주장을 하지 않는다. → 처방: 모달리티가 표현하는 의미를 구분해보고, 이 문단이 규칙(Deontic)과 가능성(Deontic)만 다루는지 확인하라.\n⑤ 진단: 학생은 모달리티가 다양한 문법 형태를 통해 가능성과 의무를 표현한다고 일반화했다. → 처방: 문장에 등장하는 'deontic necessity'와 'deontic possibility'라는 구체적 표현을 찾아 그 의미를 파악하라."
+   }
+  },
   {
    "ts": "2026-10-28T02:35:15.603Z",
    "type": "조건영작",
@@ -269,25 +294,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'In English, the external argument of a verb must move to the auxiliary’s subject position to satisfy the EPP, yielding double‑subject structures such as “The police have the police arrested the suspect.”'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: In English, the external argument of a verb must move to the auxiliary’s subject position to satisfy the EPP, yielding double‑subject structures such as “The police have the police arrested the suspect.”]"
-   }
-  },
-  {
-   "ts": "2026-10-25T16:38:25.393Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "In a structure such as (15), the complement the suspect is said to be the internal argument of the verb arrested (in the sense that it is the argument contained within the immediate V-bar projection of the verb, and h____ is a sister of the verb), whereas the subject the police is the external argument of the verb arrested (in that it occupies a position external to the V-bar constituent which is the immediate projection of the verb arrested). The VP in (15) is then merged with the present tense auxiliary [T have], forming the T-bar have the police arrested the suspect. Since a finite T has an [EPP] feature requiring it to have a subject of its own, the DP the police moves from being the subject of arrested to becoming the subject of [T have], forming The police have the police arrested the suspect. Merging the resulting TP with a null declarative complementiser in turn derives the structure shown in simplified form in (16) below:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] hence — 문단의 논지상 이 자리에는 'hence'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

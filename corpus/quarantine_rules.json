@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-28T16:51:10.667Z",
+ "updated": "2026-10-28T21:52:14.811Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 발문 유형이 요구하는 목적과 형식에 맞춰 지문 내용과 선지 구성이 유기적인 정합성을 갖추어야 한다.",
+   "src": "자가학습:심경변화",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-28T21:41:42.868Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:조건영작",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-26T17:03:06.180Z"
-  },
-  {
-   "rule": "모든 선지는 지문의 핵심 주제(‘there’의 문법적 기능과 ‘hope’의 잔존 가능성)를 엄밀히 반영하며, 동일한 길이(예: 8~12단어)로 통일하고, 문법적·논리적 정확성을 담아야 한다.",
-   "src": "자가학습:제목",
-   "score": 61,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-26T15:55:26.385Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
