@@ -1,7 +1,15 @@
 {
- "updated": "2026-10-28T21:52:14.811Z",
+ "updated": "2026-10-29T02:03:34.349Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:전체문장배열",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-29T02:02:43.690Z"
+  },
   {
    "rule": "모든 문항은 발문 유형이 요구하는 목적과 형식에 맞춰 지문 내용과 선지 구성이 유기적인 정합성을 갖추어야 한다.",
    "src": "자가학습:심경변화",
@@ -9,14 +17,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-28T21:41:42.868Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-28T02:35:14.198Z"
   },
   {
    "rule": "문항을 작성할 때 지문이 완전하게 제공되고, 질문과 답변 선택지가 동일 언어(한국어)로 일관되게 제시되며, 평가 기준을 충족하도록 사전 검증을 수행해야 한다.",

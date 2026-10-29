@@ -1,6 +1,56 @@
 {
- "updated": "2026-10-28T21:52:14.816Z",
+ "updated": "2026-10-29T02:03:34.354Z",
  "samples": [
+  {
+   "ts": "2026-10-29T02:01:23.417Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "이러한 문자열은 구성요소가 될 수 없으므로 다른 구조 분석이 필요하다.",
+     "이러한 문자열은 문장 구성요소가 될 수 없으므로 다른 의미 분석이 필요하다.",
+     "모든 문자열은 문장 구성요소가 될 수 없으므로 다른 구조 분석이 필요하다.",
+     "이러한 문자열은 문장 구성요소가 될 수 없으므로 문장 구조를 그대로 유지해야 한다.",
+     "이러한 문자열은 문장 구성요소가 될 수 없으므로 주어진 구조를 그대로 적용해야 한다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The strings “Frank washed and Dick ironed” and “Frank will and but Dick won’t” cannot be constituents, because treating them as such would contradict the proposed sentence structure, so an alternative structural analysis is required.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 문장 구성요소가 의미적 요소라고 오해해, 의미 분석이 필요하다고 판단함. → 처방: 문법적 구조 분석에 집중하도록 하라.\n③ 진단: 모든 문자열이 구성요소가 될 수 없다고 과도하게 일반화함. → 처방: 특정 문자열만을 대상으로 판단하도록 하라.\n④ 진단: 구성요소가 될 수 없으므로 문장 구조를 그대로 유지해야 한다고 착각함. → 처방: 문장 구조를 재검토하고 대체 구조를 모색하도록 하라.\n⑤ 진단: 구성요소가 될 수 없으므로 주어진 구조를 그대로 적용해야 한다고 착각함. → 처방: 대안 구조를 찾아 적용하도록 하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The strings “Frank washed and Dick ironed” and “Frank will and but Dick won’t” cannot be constituents, because treating them as such would contradict the proposed sentence structure, so an alternative structural analysis is required.]"
+   }
+  },
+  {
+   "ts": "2026-10-29T02:03:27.094Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① However, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct.\n② We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an Adjunct.\n③ (Refer to tree structure (3) at the beginning of the chapter to answer this question.)\n④ In Section 13.\n⑤ Is there a way around this problem?\n⑥ This would suggest that these strings are constituents.\n⑦ 7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65).\n⑧ In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated.\n⑨ The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
+    "choices": [
+     "⑧-⑥-①-③-⑤-④-⑦-②-⑨",
+     "⑥-⑧-①-③-⑤-④-⑦-②-⑨",
+     "⑧-⑥-②-①-⑨-③-⑤-⑦-④",
+     "⑧-⑥-①-⑤-③-④-⑦-②-⑨",
+     "⑧-⑥-①-③-⑤-④-②-⑦-⑨"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ⑧-⑥-①-③-⑤-④-⑦-②-⑨. 흐름: ⑧ → ⑥(This) → ①(However) → ③ → ⑤ → ④ → ⑦ → ② → ⑨ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-28T21:46:28.446Z",
    "type": "심경변화",
@@ -234,66 +284,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] I disagree with the claim that Major Martin would have known all the words below. This is unrealistic, as mastering such a large vocabulary requires extensive study and exposure.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 형식·표현 준수 · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내).\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-25T19:43:52.620Z",
-   "type": "네모어법ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②③⑤"
-    ]
-   },
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
-    "passage": "X-bar Theory 97 noun, we conclude that (A) [it being an NP / it is an NP]. In (32c) however, the phrase (B) [followed the determiner / following the determiner] contains only an adjective and is ungrammatical. This clearly has a different distribution to the other two phrases, indicating that the adjective in (32a) is not the head of this phrase. It is also possible to conclude that the adjective is not a complement of the head noun as it (C) [does not following / does not follow] the noun and as we have seen, in English, all complements follow their heads. The other possibility is that the adjective functions as a specifier within the NP and as specifiers precede their heads, this seems more likely. Yet there are properties of the adjective that make it an unlikely specifier. As we saw, specifiers of thematic heads tend to be arguments of those heads. The adjective is obviously not an argument of the noun as it does not bear a thematic role assigned by the noun. Furthermore, specifiers are limited to a single occurrence and there cannot be more than one of them: (33) a the letter arrived",
-    "choices": [
-     "(A) it is an NP - (B) followed the determiner - (C) does not following",
-     "(A) it being an NP - (B) followed the determiner - (C) does not follow",
-     "(A) it is an NP - (B) following the determiner - (C) does not following",
-     "(A) it is an NP - (B) following the determiner - (C) does not follow",
-     "(A) it being an NP - (B) following the determiner - (C) does not following"
-    ],
-    "answer": 4,
-    "explanation": "정답 조합: (A) it is an NP - (B) following the determiner - (C) does not follow. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 학생은 (B)에서 'the phrase'를 수식하는 분사구가 필요함을 파악하지 못하고, 과거형 동사 'followed'를 선택하여 문장 구조를 잘못 이해했습니다. 또한 (C)에서는 'does not' 뒤에 동사 원형이 와야 한다는 기본 문법 규칙을 알지 못하고 'following'이라는 현재분사를 선택했습니다. → 처방: 문장에서 주어를 수식하는 분사 역할을 하는 부분과 동사 역할을 하는 부분을 명확히 구분하고, 'do/does/did not' 뒤에는 반드시 동사 원형이 온다는 규칙을 다시 익히세요.\n② 진단: 학생은 (A)에서 'we conclude that' 뒤에는 주어와 동사를 갖춘 완전한 절이 와야 함을 이해하지 못하고, 분사구 'it being an NP'를 선택하여 문장 구조를 잘못 파악했습니다. 또한 (B)에서는 'the phrase'를 수식하는 분사구가 필요함을 파악하지 못하고, 과거형 동사 'followed'를 선택하여 문장 구조를 잘못 이해했습니다. → 처방: 'that'이 이끄는 명사절은 주어와 동사를 갖춘 완전한 문장 형태여야 함을 기억하고, 문장에서 주어를 수식하는 분사 역할을 하는 부분을 명확히 구분하는 연습을 하세요.\n③ 진단: 학생은 (C)에서 'does not' 뒤에는 동사 원형이 와야 한다는 기본 문법 규칙을 알지 못하고 'following'이라는 현재분사를 선택했습니다. → 처방: 'do/does/did not' 뒤에는 반드시 동사 원형이 온다는 영어의 기본 문법 규칙을 다시 한번 정확히 익히고 적용하는 연습을 하세요.\n⑤ 진단: 학생은 (A)에서 'we conclude that' 뒤에는 주어와 동사를 갖춘 완전한 절이 와야 함을 이해하지 못하고, 분사구 'it being an NP'를 선택하여 문장 구조를 잘못 파악했습니다. 또한 (C)에서는 'does not' 뒤에 동사 원형이 와야 한다는 기본 문법 규칙을 알지 못하고 'following'이라는 현재분사를 선택했습니다. → 처방: 'that'이 이끄는 명사절은 주어와 동사를 갖춘 완전한 문장 형태여야 함을 기억하고, 'do/does/did not' 뒤에는 반드시 동사 원형이 온다는 규칙을 다시 익히세요.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-25T16:38:23.213Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "EPP Requires External Argument to Enter",
-     "EPP Allows Internal Argument to Stay",
-     "EPP Requires Subject Position for Verb",
-     "EPP Governs All Verb Argument Movements",
-     "EPP Forces External Argument to Subject"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'In English, the external argument of a verb must move to the auxiliary’s subject position to satisfy the EPP, yielding double‑subject structures such as “The police have the police arrested the suspect.”'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: In English, the external argument of a verb must move to the auxiliary’s subject position to satisfy the EPP, yielding double‑subject structures such as “The police have the police arrested the suspect.”]"
    }
   }
  ]
