@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-29T16:27:12.260Z",
+ "updated": "2026-10-29T21:22:16.992Z",
  "samples": [
+  {
+   "ts": "2026-10-29T21:19:07.755Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Fear → Confidence",
+     "Anger → Relief",
+     "Confusion → Understanding",
+     "Sadness → Joy",
+     "Boredom → Excitement"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'The passage explains that different phrase markers can group a sentence’s elements into distinct constituents, showing how the same words can form alternative structural units.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n① 진단: 문장은 문장 구조와 구성요소를 설명하는 내용이므로 감정 변화와 연결되지 않는다. (지문: '구성요소'와 '문장 구조'에 관한 내용) → 처방: 문장을 읽을 때 주제와 내용이 감정과 연결되는지 먼저 확인하고, 감정 변화가 명시되지 않은 경우 다른 선택지를 고려한다.\n② 진단: 문장은 문장 구조를 다루고 있어 감정 변화가 언급되지 않는다. (지문: '문장 구조'와 '구성요소'에 관한 설명) → 처방: 감정 변화가 언급된 부분이 있는지 찾아보고, 없으면 감정과 무관한 선택지를 배제한다.\n④ 진단: 문장은 문장 구조와 구성요소에 집중하고 있어 감정 변화와 무관하다. (지문: '구성요소'와 '문장 구조'에 대한 설명) → 처방: 문장 내용이 감정과 연결되는지 먼저 검토하고, 연결이 없으면 해당 선택지를 제외한다.\n⑤ 진단: 문장은 문장 구조와 구성요소를 다루며 감정 변화가 나타나지 않는다. (지문: '문장 구조'와 '구성요소'에 대한 기술) → 처방: 감정 변화가 언급된 부분이 있는지 확인하고, 없으면 감정과 무관한 선택지를 피한다.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: The passage explains that different phrase markers can group a sentence’s elements into distinct constituents, showing how the same words can form alternative structural units.]"
+   }
+  },
   {
    "ts": "2026-10-29T16:26:59.348Z",
    "type": "요지",
@@ -265,31 +290,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Work was done without respite from five in the morning until five in the afternoon. (포인트: 주어가 'We'에서 'Work'로 바뀌며 수동태로 변환.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-26T06:32:23.563Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① When the sentence is constructed that way, it isn’t clear if the meaning is the following: In the long jump, Adele could beat her rival Fern more often than her teammate Sherry could.\n② (In is a preposition connecting sat and corner.)\n③ Read this sentence: In the long jump, Adele could beat her rival Fern more often than her teammate Sherry.\n④ or In the long jump, Adele could beat her rival Fern more often than she could beat her teammate Sherry.\n⑤ Take, for example, these short sentences: Jack and Jill went up the hill.\n⑥ Prepositions A preposition is a word that links a noun or pronoun to some other word in a sentence.\n⑦ Because some comparisons can be interpreted more than one way, be sure that you include all the words necessary to give the meaning you intend.\n⑧ Little Jack Horner sat in a corner.\n⑨ (Up is a preposition connecting went and hill.)",
-    "choices": [
-     "⑦-④-②-⑥-①-⑧-⑨-⑤-③",
-     "⑦-③-④-⑨-⑧-⑤-②-①-⑥",
-     "⑦-③-①-④-⑥-⑤-⑨-⑧-②",
-     "⑦-③-①-④-⑥-⑤-⑧-⑨-②",
-     "③-⑦-①-④-⑥-⑤-⑨-⑧-②"
-    ],
-    "answer": 3,
-    "explanation": "정답 배열은 ⑦-③-①-④-⑥-⑤-⑨-⑧-②. 흐름: ⑦ → ③ → ① → ④ → ⑥ → ⑤ → ⑨ → ⑧ → ② — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
