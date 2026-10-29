@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-29T02:03:34.354Z",
+ "updated": "2026-10-29T08:43:58.433Z",
  "samples": [
+  {
+   "ts": "2026-10-29T08:37:02.046Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① The verbs are roughly grouped into semantic categories.\n② Independent subject of gerund: X I tried my friend’s rebooting the disk drive.\n③ Group 1: ask, beg, decline, demand, offer, promise, refuse, swear, undertake Group 2: attempt, begin, cease, continue, resume, start, stop, try Group 3: avoid, endeavor, fail, learn, manage, neglect, omit Group 4: admit, claim, confess, profess Verbs That Do Not Allow Gerunds as Objects Except for verbs that require concrete objects (for example, smash or paint), most verbs permit both gerunds and inﬁ nitives as objects.\n④ Following is a summary listing of the more common verbs that permit gerund objects with assigned subjects but do not permit gerunds with independent subjects of the gerunds.\n⑤ For example, the verb promise:\n⑥ However, there are some verbs that will accept inﬁ nitives as objects, but not gerunds.\n⑦ I tried rebooting the disk drive.",
+    "choices": [
+     "⑦-②-④-①-⑥-③-⑤",
+     "⑦-②-④-①-③-⑥-⑤",
+     "⑦-⑥-①-②-④-③-⑤",
+     "⑦-②-④-①-③-⑤-⑥",
+     "②-⑦-④-①-③-⑥-⑤"
+    ],
+    "answer": 2,
+    "explanation": "정답 배열은 ⑦-②-④-①-③-⑥-⑤. 흐름: ⑦ → ② → ④ → ① → ③ → ⑥(However) → ⑤(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-29T08:42:36.266Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 특정 동사는 gerund 객체를 허용하지만 의미적으로 그룹화 된 독립적 인 gerund는 허용하지 않습니다.\n주어진 단어: ( certain / verbs / permit )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Certain verbs permit gerund objects but disallow independent gerunds, grouped semantically. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-29T02:01:23.417Z",
    "type": "요지",
@@ -240,50 +284,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] I believe that intentional fragments can add a lively, conversational rhythm that enhances narrative voice.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 13~17단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-25T22:46:28.206Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "WEEK 17 DAY 5 REVIEW Major Martin, if he had lived, would have used the word “bonnet” to refer to the hood of his auto, and he might have referred to a truck as a “lorry.” As you can see, there are differences between American and British English. But Major Martin, undoubtedly, would have known all the words below—do you? Match the twenty words with their meanings. *Reminder: Record answers on a sheet of paper. (Note the similarity between numbers 13 and 20.) REVIEW WORDS DEFINITIONS 1.assiduous a. spread out in battle formation 2.attest b. a trick 3.component c. busy, attentive 4.concoct d. confirm as accurate, vouch for 5.consummate e. devise 6.deploy f. a riddle, puzzle 7.enigma g. element, part 8.evaluate h. able to meet any situation 9.exult i. perfect, complete 10.fallacious j. filled 11.fraught k. misleading, false 12.gullible l. rejoice greatly 13.hoax m. faultless 14.impeccable n. easily fooled 15.labyrinth o. winding passages 16.manifold p. find the value of, review 17.murky q. many 18.perpetrate r. deception 19.resourceful s. commit 20.subterfuge t. dark, obscure\n\n─────────\n[요약문] The passage presents a review of American and British English (A) differences, followed by a (B) exercise to reinforce word meanings.",
-    "choices": [
-     "(A) causes … (B) exercise",
-     "(A) identical … (B) exercise",
-     "(A) terminology … (B) matching",
-     "(A) differences … (B) lecture",
-     "(A) similarities … (B) exercise"
-    ],
-    "answer": 3,
-    "explanation": "(A) terminology / (B) matching 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: ‘causes’가 차이의 원인이라고 착각했다. ‘There are differences between American and British English.’에서 ‘causes’는 언급되지 않음 → 처방: 문장에 실제로 쓰인 단어만 골라라.\n② 진단: ‘identical’이 차이와 모순된다고 생각해 선택했다. ‘There are differences…’에서 ‘identical’은 없음 → 처방: 차이와 동일성을 구분해라.\n④ 진단: ‘lecture’가 문장에 없다는 사실을 간과했다. ‘Match the twenty words with their meanings.’에서 ‘lecture’는 없음 → 처방: 문장에 등장하는 단어만 사용하라.\n⑤ 진단: ‘similarities’가 문장에 없다고 착각했다. ‘There are differences…’에서 ‘similarities’는 언급되지 않음 → 처방: 문장이 말하는 내용에 맞게 단어를 고르라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-25T22:48:36.605Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 29 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 지문은 미국식 영어와 영국식 영어의 차이를 언급하며, **Major Martin이 모든 단어를 알았을 것이라** 주장한다. 이 주장(‘Major Martin이 모든 단어를 알았을 것이라’)에 대해 당신은 동의하는가? 동의/반대하고 그 이유를 영어로 두 문장으로 작성하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I disagree with the claim that Major Martin would have known all the words below. This is unrealistic, as mastering such a large vocabulary requires extensive study and exposure.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 형식·표현 준수 · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내).\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

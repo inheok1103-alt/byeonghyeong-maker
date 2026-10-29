@@ -1,14 +1,30 @@
 {
- "updated": "2026-10-29T02:03:34.349Z",
+ "updated": "2026-10-29T08:43:58.429Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제는 완결성 있는 하나의 글로 구성되어야 하며, 문항과 예시를 포함한 모든 보조 요소는 해당 지문의 내용과 유기적으로 연결되어 명확한 맥락을 제공해야 한다.",
+   "src": "자가학습:네모어법ABC",
+   "score": 39,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-29T08:33:20.948Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:전체문장배열",
    "score": 0,
    "status": "quarantined",
    "hits": 1,
-   "ts": "2026-10-29T02:02:43.690Z"
+   "ts": "2026-10-29T08:34:51.399Z"
+  },
+  {
+   "rule": "모든 출제 항목은 객관적이고 측정 가능한 평가 기준을 명시하여 평가가 명확히 가능하도록 설계한다.",
+   "src": "자가학습:조건영작",
+   "score": 33,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-29T08:42:34.393Z"
   },
   {
    "rule": "모든 문항은 발문 유형이 요구하는 목적과 형식에 맞춰 지문 내용과 선지 구성이 유기적인 정합성을 갖추어야 한다.",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-26T17:01:56.794Z"
-  },
-  {
-   "rule": "모든 문항은 선지 번호를 0~4번으로 통일하고, 정답 위치를 1-based 인덱스로 명시하며, 문법적으로 자연스러운 문장으로 수정하여 출제할 것.",
-   "src": "자가학습:문장삽입",
-   "score": 70,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-26T17:02:26.285Z"
-  },
-  {
-   "rule": "발문을 \"밑줄 친 제목/표현 'Read My Lips'가 글에서 기술적 의미를 담아 의미하는 바로 가장 적절한 것은?\"으로 명확히 수정하고, 지문에서 'Read My Lips'가 포함된 문장을 명시하여 '입술 움직임을 분석하는 기술'임을 구체적으로 설명하며, 선지 간 중복을 제거하여 차별성을 높인다.",
-   "src": "자가학습:밑줄함의",
-   "score": 73,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-26T17:03:06.180Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
