@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-30T01:14:48.536Z",
+ "updated": "2026-10-30T07:19:51.777Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-30T07:19:46.878Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "코퍼스에서 콤마 뒤 대문자와 시제 일관성, 단어 간 공백 오류가 빈번히 나타났으며, 이는 변형문제에서 자주 발생하는 실수 유형이다.",
+   "rule": "문장 변형 시 콤마 뒤에 오는 단어를 소문자로 바꾸고, 문장 전체의 시제를 일관되게 맞추도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-27T23:07:37.808Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "원서 코퍼스에서 'be 동사 + 동사원형' 구문이 오류로 자주 나타나며, 특히 'are explain', 'are discuss'와 같은 형태에서 'be 동사'가 불필요하다는 패턴을 확인할 수 있다.",
    "rule": "원문에서 'be 동사 + 동사원형' 구문이 나타나면, 'be 동사'를 생략하거나 'can/may/will' 등 조동사를 삽입하는 방식으로 문법 오류를 출제하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-29T18:37:37.741Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "'every + 복수명사'의 오류가 빈번하며, 'no + 단수명사'로 대체하는 패턴이 자연스럽다. 또한 'barrier to do'는 'barrier to ~ing'로, 'hobbies'는 단수 'hobby'로 교정해야 한다.",
-   "rule": "CEFR B1 수준의 내신 변형문제에서 'every + 복수명사' 오류를 'no + 단수명사'로, 'barrier to do'를 'barrier to ~ing'로, 그리고 복수형 오류(예: hobbies→hobby)를 반드시 포함하여 출제하라.",
    "sample": [
     "old english",
     "university press",

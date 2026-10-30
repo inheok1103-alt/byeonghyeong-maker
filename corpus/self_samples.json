@@ -1,6 +1,25 @@
 {
- "updated": "2026-10-30T01:14:48.539Z",
+ "updated": "2026-10-30T07:19:51.780Z",
  "samples": [
+  {
+   "ts": "2026-10-30T07:19:24.908Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: Have as a causative takes a noun ‑ phrase object and a bare verb\n주어진 단어: ( causative / takes / phrase )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Have as a causative takes a noun‑phrase object and a bare verb. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-29T21:19:07.755Z",
    "type": "심경변화",
@@ -271,25 +290,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Whether a wh‑phrase moves in French wh‑questions depends on the light verb’s edge feature: without it, the wh‑phrase stays in situ; with it, it moves to the vP specifier.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: ‘light verb’는 ‘wh‑in‑situ’에서 ‘edge feature’가 없다고 지문이 말하므로 ‘wh‑movement’를 결정한다는 해석이 틀렸다. ‘By hypothesis, the light verb has no edge feature in wh‑in‑situ questions.’ → 처방: 다음 문제에서는 ‘edge feature’가 있는지 여부를 먼저 확인하고, 그에 따라 wh‑movement 여부를 판단하라.\n③ 진단: ‘wh‑phrase’가 ‘edge feature’ 없으면 그대로 남아있다고 생각했으나, 지문은 ‘edge feature’가 있으면 wh‑phrase 가 이동한다는 것을 보여준다. ‘in a non‑echoic question, the light‑verb will have an edge feature which attracts the wh‑marked object… to move’ → 처방: wh‑phrase 가 이동했는지 여부를 판단하려면 ‘edge feature’의 존재를 확인하라.\n④ 진단: ‘French’가 요구한다는 해석은 ‘light‑verb’의 ‘edge feature’와 관련이 없으며, 지문은 ‘non‑echoic’ 질문에서만 edge feature 가 있다고 명시한다. ‘in a non‑echoic question’… → 처방: 언어적 배경(프랑스어)보다 ‘edge feature’의 유무에 초점을 맞추어 해석하라.\n⑤ 진단: ‘edge feature’가 ‘wh‑movement’에 무관하다는 판단은 지문과 반대다. ‘edge feature’가 이동을 유도한다는 내용이 명시되어 있다. ‘…which attracts the wh‑marked object…’ → 처방: ‘edge feature’가 ‘wh‑movement’를 이끄는 핵심 요소임을 기억하고, 이를 중심으로 선택지를 검토하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Whether a wh‑phrase moves in French wh‑questions depends on the light verb’s edge feature: without it, the wh‑phrase stays in situ; with it, it moves to the vP specifier.]"
-   }
-  },
-  {
-   "ts": "2026-10-26T14:36:38.194Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] reject RESPITE (RES pit) n a period of rest or relief • We worked without respite from five in the morning until five in the afternoon.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Work was done without respite from five in the morning until five in the afternoon. (포인트: 주어가 'We'에서 'Work'로 바뀌며 수동태로 변환.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
