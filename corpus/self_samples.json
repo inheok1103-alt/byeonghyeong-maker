@@ -1,6 +1,60 @@
 {
- "updated": "2026-10-30T14:25:04.216Z",
+ "updated": "2026-10-30T19:36:46.511Z",
  "samples": [
+  {
+   "ts": "2026-10-30T19:35:08.876Z",
+   "type": "심경변화",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버 2/2 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①②④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "The role of context in always resolving lexical ambiguity",
+     "The role of context in resolving all types of ambiguity",
+     "The role of context in resolving lexical ambiguity",
+     "The role of context in resolving ambiguity",
+     "The role of lexical ambiguity in creating contextual clarity"
+    ],
+    "answer": 3,
+    "explanation": "글의 핵심 논지는 'While words are fundamental units of language, their inherent ambiguity—illustrated by homonyms and confusing pairs—necessitates careful context to ensure clear communication.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(Cause-effect reversal·Scope reduction·Over-generalization·Degree/frequency distortion)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 지나치게 확대 해석· ③ 정답 — 핵심 논지 반영· ④ 오답 — Degree/frequency distortion· ⑤ 오답 — Cause-effect reversal\n[오답 진단·처방]\n① 진단: 정답 ①에서 'lexical ambiguity'를 '모든 유형의 모호성'으로 잘못 해석했다. → 처방: 옵션을 고를 때는 문장에 등장한 용어를 그대로 읽고, 그것이 요구하는 구체적 범위와 일치하는지 확인하라.\n② 진단: 정답 ②에서 'all types of ambiguity'를 'lexical ambiguity'와 동일하게 생각했다. → 처방: 문맥이 요구하는 구체적 범위에 주목하고, 옵션이 포함하는 범위가 정확한지 검토하라.\n④ 진단: 정답 ④에서 'ambiguity'를 광범위한 모호성으로 해석해 'lexical ambiguity'를 포함한다고 착각했다. → 처방: 옵션이 명시한 구체적 용어('lexical ambiguity')를 확인하고, 다른 의미와 혼동하지 않도록 하라.\n⑤ 진단: 정답 ⑤에서 'lexical ambiguity'가 문맥을 명확하게 만든다고 오해했다. → 처방: 문맥이 모호성을 해결하는 역할이 아니라 모호성을 만들어내는 역할이라는 점을 기억하고, 문장을 다시 검토하라.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: While words are fundamental units of language, their inherent ambiguity—illustrated by homonyms and confusing pairs—necessitates careful context to ensure clear communication.]"
+   }
+  },
+  {
+   "ts": "2026-10-30T19:36:16.938Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 22 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'emphasizing', 'highlights', 'confusing' / 20~24단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The passage highlights how easily confusing words and homonyms can be misused, emphasizing the need for careful attention to their distinct meanings.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 20~24단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-30T07:19:24.908Z",
    "type": "조건영작",
@@ -240,56 +294,6 @@
     ],
     "answer": 3,
     "explanation": "밑줄 친 부분은 'This illustrates the linguistic principle that a core element within a construction dictates its overall type and defining characteristics.'을 함의한다.\n[오답 진단·처방]\n① 진단: 학생은 밑줄 친 부분이 '도움'이라는 낱말의 품사와 구 안에서의 중심 역할을 설명한다고 정확히 이해했지만, 지문이 설명하는 '핵심어'의 더 넓은 의미, 즉 구 전체의 문법적·의미적 특성과 종류를 '결정'하는 역할까지는 파악하지 못했습니다. 지문은 \"구의 문법적 특성은 동사 '도움'에 의해 결정된다\"고 명확히 밝히고 있습니다. → 처방: 지문이 특정 개념을 설명할 때, 그 개념이 지닌 여러 측면과 그것이 미치는 영향까지 종합적으로 고려하여 가장 포괄적인 설명을 고르세요.\n② 진단: 학생은 지문이 단순히 '도움'이라는 낱말이 뒤따르는 '너'라는 대명사에 영향을 미치는 예시를 보여준다고 오해했습니다. 지문은 \"구 전체의 문법적 특성이 동사 '도움'에 의해 결정된다\"고 하며, '핵심어'라는 전문 용어를 사용하여 언어학적 원리를 설명하고 있습니다. → 처방: 지문이 특정 현상을 예시로 드는 것을 넘어, 그 현상을 통해 설명하려는 일반적인 원리나 개념이 무엇인지 파악하는 데 집중하세요.\n④ 진단: 학생은 지문의 내용을 정반대로 이해했습니다. 지문은 \"동사 '도움'이 '도움 너'라는 구의 핵심어이며, 따라서 '도움 너'가 동사구이다\"라고 설명하여, 핵심어가 구의 종류를 결정한다고 말하고 있습니다. → 처방: 지문에서 원인과 결과, 주체와 대상의 관계를 나타내는 문장 구조(\"A 가 B 를 결정한다\" 또는 \"B 는 A 에 의해 결정된다\")를 정확히 파악하여 혼동하지 않도록 주의하세요.\n⑤ 진단: 학생은 핵심어의 역할을 '영향을 미치는' 정도로 약하게 해석하여, 지문이 \"문법적 특성들이 동사 '도움'에 의해 결정된다\"고 명확히 밝히고 \"따라서 '도움 너'가 동사구이다\"라고 단정하는 결정적인 역할을 간과했습니다. → 처방: 지문에서 '결정하다', '확립하다'와 같이 강한 의미를 지닌 동사가 쓰였을 때, 그 의미를 약화시키지 않고 그대로 받아들여 핵심적인 역할을 정확히 이해하세요.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-27T00:36:03.017Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "Word Categories 5 two cats (if you think about it this sentence might mean that anything between two and six cats got bitten, which is not predictable from the meaning of the words). ① Let us assume that these different types of linguistic knowledge are separate. ② We can call the part of I-language which is to do with words the Lexicon. ③ This might be imagined as a kind of mental dictionary in which we store specific information about all the words that we use: how they are pronounced, what they mean, etc. 2. ④ The cat, dog, and mouse were all invited to the garden party. ⑤ 2 Categories Lexical knowledge concerns more than the meaning and pronunciation of words, however. Consider the examples in (2) and (3) again. The word cat is not the only one that could possibly go in the positions in (2), so could the words dog, mouse and budgerigar: (4) a the dog slept",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-26T20:42:26.350Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 1건 · ⚠ 정답-오답 근접(80%) — 복수정답 재검 권고 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Edge Feature Governs Wh‑Movement",
-     "Light Verb Determines Wh‑Movement",
-     "Wh‑Phrase Remains in Situ Without Edge",
-     "French Wh‑Questions Require Edge Feature",
-     "Edge Feature Is Irrelevant to Wh‑Movement"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Whether a wh‑phrase moves in French wh‑questions depends on the light verb’s edge feature: without it, the wh‑phrase stays in situ; with it, it moves to the vP specifier.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: ‘light verb’는 ‘wh‑in‑situ’에서 ‘edge feature’가 없다고 지문이 말하므로 ‘wh‑movement’를 결정한다는 해석이 틀렸다. ‘By hypothesis, the light verb has no edge feature in wh‑in‑situ questions.’ → 처방: 다음 문제에서는 ‘edge feature’가 있는지 여부를 먼저 확인하고, 그에 따라 wh‑movement 여부를 판단하라.\n③ 진단: ‘wh‑phrase’가 ‘edge feature’ 없으면 그대로 남아있다고 생각했으나, 지문은 ‘edge feature’가 있으면 wh‑phrase 가 이동한다는 것을 보여준다. ‘in a non‑echoic question, the light‑verb will have an edge feature which attracts the wh‑marked object… to move’ → 처방: wh‑phrase 가 이동했는지 여부를 판단하려면 ‘edge feature’의 존재를 확인하라.\n④ 진단: ‘French’가 요구한다는 해석은 ‘light‑verb’의 ‘edge feature’와 관련이 없으며, 지문은 ‘non‑echoic’ 질문에서만 edge feature 가 있다고 명시한다. ‘in a non‑echoic question’… → 처방: 언어적 배경(프랑스어)보다 ‘edge feature’의 유무에 초점을 맞추어 해석하라.\n⑤ 진단: ‘edge feature’가 ‘wh‑movement’에 무관하다는 판단은 지문과 반대다. ‘edge feature’가 이동을 유도한다는 내용이 명시되어 있다. ‘…which attracts the wh‑marked object…’ → 처방: ‘edge feature’가 ‘wh‑movement’를 이끄는 핵심 요소임을 기억하고, 이를 중심으로 선택지를 검토하라.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Whether a wh‑phrase moves in French wh‑questions depends on the light verb’s edge feature: without it, the wh‑phrase stays in situ; with it, it moves to the vP specifier.]"
    }
   }
  ]

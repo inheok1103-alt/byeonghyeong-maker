@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-30T14:25:04.212Z",
+ "updated": "2026-10-30T19:36:46.509Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-30T19:36:40.282Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "코퍼스 분석 결과, 부사나 부사구가 문장 앞에 올 때 쉼표를 놓지 않으면 문장 구조가 어색해지는 경향이 관찰되었습니다. 특히 'Finally', 'For example', 'Not for use' 등과 같은 표현 뒤에 쉼표가 빠지는 사례가 빈번했습니다.",
+   "rule": "문장 앞에 부사(또는 부사구)가 올 때는 반드시 쉼표를 넣어 구분한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-30T07:19:46.878Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "영어에서 'take upon oneself'는 고정적 연어로서 '~을 스스로 맡다'라는 의미로, 'take it upon oneself'가 표준 형태다. 또한 'all information'은 불특정한 정보일 때 'all the information'로 한정사(the)가 필수적이다.",
    "rule": "연어 오답 설계 시, 'take upon oneself'와 같이 고정적 동사구는 'it'을 생략하거나 'the'를 누락한 형태로 오답을 구성하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-29T21:48:32.172Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "원서 코퍼스에서 'be 동사 + 동사원형' 구문이 오류로 자주 나타나며, 특히 'are explain', 'are discuss'와 같은 형태에서 'be 동사'가 불필요하다는 패턴을 확인할 수 있다.",
-   "rule": "원문에서 'be 동사 + 동사원형' 구문이 나타나면, 'be 동사'를 생략하거나 'can/may/will' 등 조동사를 삽입하는 방식으로 문법 오류를 출제하라.",
    "sample": [
     "old english",
     "university press",
