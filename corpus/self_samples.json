@@ -1,6 +1,50 @@
 {
- "updated": "2026-10-30T23:54:58.548Z",
+ "updated": "2026-10-31T05:56:27.005Z",
  "samples": [
+  {
+   "ts": "2026-10-31T05:52:02.404Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① For example: fall summer February Wednesday spring winter\n② For example: Declaration of Independence Marshall Plan Federal Housing Act Monroe Doctrine The names of months and the days of the week are capitalized, but not the names of the seasons.\n③ The complete names of private and public organizations of all kinds are capitalized.\n④ For example: china (dishes) plaster of paris french fries venetian blinds Capitalization of Things.\n⑤ For example: Cheney High School Peace Corps Green Bay Packers (football team) Xerox Corporation New York Philharmonic The names of historical, political, and economic events are generally capitalized.\n⑥ For example: Badlands (South Dakota) Eastern Shore (Chesapeake Bay) Bay Area (California) Fertile Crescent Strangely enough, words derived from geographical names are generally not capitalized.\n⑦ For example: Boston Tea Party New Deal Great Depression The names of acts, treaties, laws, and government programs are generally capitalized.\n⑧ Nouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks).",
+    "choices": [
+     "⑧-⑥-④-③-⑤-⑦-②-①",
+     "⑧-⑥-③-④-⑤-⑦-②-①",
+     "⑧-⑤-③-④-⑥-⑦-①-②",
+     "⑧-⑥-②-③-④-①-⑦-⑤",
+     "⑧-②-⑤-①-⑥-④-③-⑦"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ⑧-⑥-④-③-⑤-⑦-②-①. 흐름: ⑧ → ⑥(For example) → ④(For example) → ③ → ⑤(For example) → ⑦(For example) → ②(For example) → ①(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-31T05:54:19.202Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] Nouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks).\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Popular names of places are usually capitalized by people (and are not enclosed in quotation marks). (포인트: Added explicit agent phrase with ‘by people’ to emphasize passive construction.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-30T23:54:42.215Z",
    "type": "지칭명시",
@@ -235,50 +279,6 @@
     ],
     "answer": 1,
     "explanation": "정답 배열은 ⑧-⑥-①-③-⑤-④-⑦-②-⑨. 흐름: ⑧ → ⑥(This) → ①(However) → ③ → ⑤ → ④ → ⑦ → ② → ⑨ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-28T21:46:28.446Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · 솔버교정: 솔버 2/3 다수결 3번(기록 1번 교정)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The comprehensive scope of linguistic modality, covering counterfactuals and rule-based duties.",
-     "The non-epistemic interpretations of modality, especially regarding averted or counterfactual events.",
-     "The pragmatic determination of rules in deontic modality, influenced by context.",
-     "The universal application of modality in language, always expressing rules and possibilities.",
-     "The linguistic expression of possibilities and obligations through various grammatical forms."
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'Linguistic modality encompasses diverse interpretations, including non-epistemic possibilities about averted or counterfactual events and deontic expressions of rules-based obligations or permissions.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·초점 이탈·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 논지에서 어긋남· ② 오답 — 정답의 일부만 담아 지엽적· ③ 정답 — 핵심 논지 반영· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: Linguistic modality encompasses diverse interpretations, including non-epistemic possibilities about averted or counterfactual events and deontic expressions of rules-based obligations or permissions.]\n[오답 진단·처방]\n① 진단: 지문에서 'deontic modality'와 'necessity'를 강조하고 있는데, 학생은 모달리티를 전체 범위로 해석해버렸다. → 처방: 문장 중 'deontic necessity'와 'deontic possibility'라는 키워드를 찾아서 그 부분에 집중하라.\n② 진단: 지문은 'non-epistemic'이 아니라 'deontic'에 관한 내용이므로, 학생은 epistemic 과 deontic 을 혼동했다. → 처방: 'deontic'이라는 단어를 기준으로 해당 문단을 분리해 읽어라.\n④ 진단: 지문은 모달리티가 항상 규칙과 가능성을 표현한다는 보편적 주장을 하지 않는다. → 처방: 모달리티가 표현하는 의미를 구분해보고, 이 문단이 규칙(Deontic)과 가능성(Deontic)만 다루는지 확인하라.\n⑤ 진단: 학생은 모달리티가 다양한 문법 형태를 통해 가능성과 의무를 표현한다고 일반화했다. → 처방: 문장에 등장하는 'deontic necessity'와 'deontic possibility'라는 구체적 표현을 찾아 그 의미를 파악하라."
-   }
-  },
-  {
-   "ts": "2026-10-28T02:35:15.603Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 독해는 해독, 도식, 예측 및 목적을 결합하여 의미 있는 결과를 산출합니다.\n주어진 단어: ( reading / comprehension / combines )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Reading comprehension combines decoding, schemata, predictions, and purpose to produce meaningful outcomes. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
