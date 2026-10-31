@@ -1,6 +1,46 @@
 {
- "updated": "2026-10-31T05:56:27.005Z",
+ "updated": "2026-10-31T12:44:43.332Z",
  "samples": [
+  {
+   "ts": "2026-10-31T12:43:49.460Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Confusing Words and Homonyms 19 (A) [explicitly mention / allude] to refer indirectly Example: He alluded to his past as a spy. elude avoid capture Example: The fugitive eluded the police for a month. illude mislead Example: He illuded her about his age. allusion an indirect mention of something illusion false perception (B) [clear / ambiguous] to have more than one meaning Example: The law was ambiguous. ambivalent to have mixed feelings Example: She is ambivalent about her wedding dress. amicable friendly (refers to things, not people) (C) [hostile / amiable] friendly (refers to people) Example: The amiable couple had an amicable divorce. among involves three or more Example: Who among us has not lied? between involves just two Example: She couldn’t decide between Chinese and Thai food. amount used for things not countable Example: We couldn’t handle that amount of ill will. number used for things that can be counted Example: The number of accidents increased by ten percent. ant a bug aunt the sister of a parent ante a bet placed before playing auntie affectionate term for a parent’s sister",
+    "choices": [
+     "(A) allude - (B) ambiguous - (C) amiable",
+     "(A) explicitly mention - (B) ambiguous - (C) hostile",
+     "(A) explicitly mention - (B) ambiguous - (C) amiable",
+     "(A) allude - (B) clear - (C) amiable",
+     "(A) allude - (B) clear - (C) hostile"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) allude - (B) ambiguous - (C) amiable. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-10-31T12:44:30.865Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": null,
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 혼란스러운 단어와 동음이의어를 이해하려면 맥락과 미묘한 차이에 주의를 기울여야 합니다.\n주어진 단어: ( subtle / requires / context / words / confusing / careful / attention / and / differences / to / and / homonyms / Understanding )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Understanding confusing words and homonyms requires careful attention to context and subtle differences.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-10-31T05:52:02.404Z",
    "type": "전체문장배열",
@@ -229,56 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Certain verbs permit gerund objects but disallow independent gerunds, grouped semantically. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-29T02:01:23.417Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(78%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "이러한 문자열은 구성요소가 될 수 없으므로 다른 구조 분석이 필요하다.",
-     "이러한 문자열은 문장 구성요소가 될 수 없으므로 다른 의미 분석이 필요하다.",
-     "모든 문자열은 문장 구성요소가 될 수 없으므로 다른 구조 분석이 필요하다.",
-     "이러한 문자열은 문장 구성요소가 될 수 없으므로 문장 구조를 그대로 유지해야 한다.",
-     "이러한 문자열은 문장 구성요소가 될 수 없으므로 주어진 구조를 그대로 적용해야 한다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The strings “Frank washed and Dick ironed” and “Frank will and but Dick won’t” cannot be constituents, because treating them as such would contradict the proposed sentence structure, so an alternative structural analysis is required.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 문장 구성요소가 의미적 요소라고 오해해, 의미 분석이 필요하다고 판단함. → 처방: 문법적 구조 분석에 집중하도록 하라.\n③ 진단: 모든 문자열이 구성요소가 될 수 없다고 과도하게 일반화함. → 처방: 특정 문자열만을 대상으로 판단하도록 하라.\n④ 진단: 구성요소가 될 수 없으므로 문장 구조를 그대로 유지해야 한다고 착각함. → 처방: 문장 구조를 재검토하고 대체 구조를 모색하도록 하라.\n⑤ 진단: 구성요소가 될 수 없으므로 주어진 구조를 그대로 적용해야 한다고 착각함. → 처방: 대안 구조를 찾아 적용하도록 하라.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The strings “Frank washed and Dick ironed” and “Frank will and but Dick won’t” cannot be constituents, because treating them as such would contradict the proposed sentence structure, so an alternative structural analysis is required.]"
-   }
-  },
-  {
-   "ts": "2026-10-29T02:03:27.094Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① However, this cannot be correct, i.e. these strings cannot be constituents, if the general structure we’ve posited for sentences is correct.\n② We can go further and ask whether the AP is a Complement of the lexical verb inside VP, or an Adjunct.\n③ (Refer to tree structure (3) at the beginning of the chapter to answer this question.)\n④ In Section 13.\n⑤ Is there a way around this problem?\n⑥ This would suggest that these strings are constituents.\n⑦ 7 on the NPEC we saw that Subject-related adjective phrases are inside the VP, as in (65).\n⑧ In these sentences it may appear to be the case that as a result of the application of RNR new structures come about in which the strings Frank washed and Dick ironed in (i)b, and Frank will and but Dick won’t in (ii)b and (iii)b are being coordinated.\n⑨ The two possible structures of the VP eat the pizza naked are shown in (i) and (ii) below: (i)",
-    "choices": [
-     "⑧-⑥-①-③-⑤-④-⑦-②-⑨",
-     "⑥-⑧-①-③-⑤-④-⑦-②-⑨",
-     "⑧-⑥-②-①-⑨-③-⑤-⑦-④",
-     "⑧-⑥-①-⑤-③-④-⑦-②-⑨",
-     "⑧-⑥-①-③-⑤-④-②-⑦-⑨"
-    ],
-    "answer": 1,
-    "explanation": "정답 배열은 ⑧-⑥-①-③-⑤-④-⑦-②-⑨. 흐름: ⑧ → ⑥(This) → ①(However) → ③ → ⑤ → ④ → ⑦ → ② → ⑨ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
