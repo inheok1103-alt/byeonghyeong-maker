@@ -1,7 +1,23 @@
 {
- "updated": "2026-10-31T12:44:43.329Z",
+ "updated": "2026-10-31T17:52:41.851Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문제에서 빈칸 앞에 제시된 예시가 둘 이상이면, 정답 선택지는 모든 예시의 의미를 동시에 반영하도록 설계하거나, 예시를 하나로 제한해 정답이 명확히 일치하도록 수정해야 한다.",
+   "src": "자가학습:빈칸(문장)",
+   "score": 66,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-31T17:47:04.015Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:이어쓰기영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-10-31T17:51:16.846Z"
+  },
   {
    "rule": "문제의 빈칸은 선지의 형식(문장형, 단어형 등)에 맞게 배치하고, 지문은 빈칸을 채우는 데 필요한 문맥적 단서와 선지 내용이 상호 연결되도록 재구성해야 한다.",
    "src": "자가학습:빈칸(문장)",
@@ -105,14 +121,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-29T08:33:20.948Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:전체문장배열",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-29T08:34:51.399Z"
   },
   {
    "rule": "모든 출제 항목은 객관적이고 측정 가능한 평가 기준을 명시하여 평가가 명확히 가능하도록 설계한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-27T20:34:40.317Z"
-  },
-  {
-   "rule": "원지문의 맥락과 영영풀이의 의미가 정확히 일치하는 단어를 선정하거나, 원지문에 해당 단어를 명시적으로 포함시켜 출제 오류를 방지하라.",
-   "src": "자가학습:영영풀이단어쓰기",
-   "score": 78,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-27T20:34:53.002Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

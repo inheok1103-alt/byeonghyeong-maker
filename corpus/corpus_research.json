@@ -1,8 +1,22 @@
 {
- "updated": "2026-10-31T12:44:43.330Z",
+ "updated": "2026-10-31T17:52:41.852Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-10-31T17:52:19.033Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "코퍼스에서는 부사(또는 전치사구) 뒤, 리스트 항목 사이, 형용사 뒤에 쉼표가 누락되는 경우가 흔히 발견되며, 형용사형 어휘가 잘못 쓰여지는 사례도 자주 나타난다.",
+   "rule": "문장에 부사(또는 전치사구) 뒤, 리스트 항목 사이, 형용사 뒤에 쉼표를 삽입하고, 형용사형 어휘를 올바르게 사용하도록 교정하라.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-10-31T05:54:41.494Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'much'가 부정어(not) 동사(like) 뒤 'wait'와 같은 동사원형과 결합하는 경우, 'much'는 삭제하는 것이 자연스러운 경향이 관찰된다. 또한, 'smaller'와 같은 비교급 형용사 뒤에는 'very'가 아닌 'less'가 오는 것이 문법적으로 옳은 패턴이다.",
    "rule": "'not + like + to V' 구조에서 'much'가 동사원형(V) 앞에 오면, 해당 'much'는 삭제하여 문법적으로 옳은 문장으로 변환한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-30T06:43:47.313Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'noun phrase'와 'reason relations'의 빈도수가 높아, 문장 구조의 복잡성과 논리적 연결을 중시하는 경향이 나타났다. 또한 'past tense'와 'present tense'의 혼용이 빈번하여 시제 일관성 검증이 중요함을 확인했다.",
-   "rule": "CEFR B1 수준 내신 변형문제에서는 'noun phrase'의 수량 일치(단/복수) 오류와 'reason relations'(예: 'other than')를 포함한 문장 구조의 정확성을 반드시 검증하라. 특히 'direct object'와 'noun phrase'의 수량 불일치(예: 'car' → 'cars')를 오류 유형으로 포함하라.",
    "sample": [
     "old english",
     "university press",
