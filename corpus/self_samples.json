@@ -1,6 +1,31 @@
 {
- "updated": "2026-10-31T21:45:10.757Z",
+ "updated": "2026-11-01T01:25:00.897Z",
  "samples": [
+  {
+   "ts": "2026-11-01T01:21:25.030Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "SENSIBLE SENTENCES? (From Week 12) Choose the word that makes sense in each of the sentences below. 1.The senator went into a lengthy (ⓐ<u>praise</u>, remuneration) about government waste in the military budget. 2.Most reformers are seeking to create a (ⓑ<u>schism</u>, utopia). 3.Lorraine was criticized sharply for the (ⓒ<u>ostentatious</u>, nominal) way in which she furnished her apartment. 4.Anyone so (ⓓ<u>ilk</u>, timorous) should not have been selected to guard the castle. 5.My brother was promoted to a (ⓔ<u>prestigious</u>, flamboyant) job in his company. 6.Although his speech was (anathema, jaunty) we were able to sense its underlying seriousness. 7.The failing grade was (expunged, truncated) from her record when she submitted the excellent term paper. 8.I got my job as a result of a (fractious, fortuitous) meeting with the director of personnel. 9.The bookkeeper is such an (integral, incoherent) part of our organization that we pay her a very high salary. 10.We marched in front of the embassy with (placards, inhibitions) held high. 11.Don’t (save face, wash your dirty linen in public) if you plan to run for office.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 1,
+    "explanation": "정답 ⓐ: 문맥상 'diatribe'가 와야 하는데 'praise'가 쓰여 부적절하다 — 해당 문장 “The senator went into a lengthy (diatribe, remuneration) about government waste in the military budget.”의 논리 흐름상 diatribe가 맞고 praise는 방향이 어긋난다. [극성] 비판적 ↔ 칭찬적\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-10-31T17:51:56.727Z",
    "type": "이어쓰기영작",
@@ -244,31 +269,6 @@
     ],
     "answer": 5,
     "explanation": "글의 핵심 논지는 'Mastering the correct use of present tense forms is essential for clear and accurate communication in English.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Mastering the correct use of present tense forms is essential for clear and accurate communication in English.]"
-   }
-  },
-  {
-   "ts": "2026-10-29T08:37:02.046Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① The verbs are roughly grouped into semantic categories.\n② Independent subject of gerund: X I tried my friend’s rebooting the disk drive.\n③ Group 1: ask, beg, decline, demand, offer, promise, refuse, swear, undertake Group 2: attempt, begin, cease, continue, resume, start, stop, try Group 3: avoid, endeavor, fail, learn, manage, neglect, omit Group 4: admit, claim, confess, profess Verbs That Do Not Allow Gerunds as Objects Except for verbs that require concrete objects (for example, smash or paint), most verbs permit both gerunds and inﬁ nitives as objects.\n④ Following is a summary listing of the more common verbs that permit gerund objects with assigned subjects but do not permit gerunds with independent subjects of the gerunds.\n⑤ For example, the verb promise:\n⑥ However, there are some verbs that will accept inﬁ nitives as objects, but not gerunds.\n⑦ I tried rebooting the disk drive.",
-    "choices": [
-     "⑦-②-④-①-⑥-③-⑤",
-     "⑦-②-④-①-③-⑥-⑤",
-     "⑦-⑥-①-②-④-③-⑤",
-     "⑦-②-④-①-③-⑤-⑥",
-     "②-⑦-④-①-③-⑥-⑤"
-    ],
-    "answer": 2,
-    "explanation": "정답 배열은 ⑦-②-④-①-③-⑥-⑤. 흐름: ⑦ → ② → ④ → ① → ③ → ⑥(However) → ⑤(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
