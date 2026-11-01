@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-01T01:25:00.893Z",
+ "updated": "2026-11-01T07:47:53.804Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:의견영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-01T07:47:46.870Z"
+  },
   {
    "rule": "출제 시 정답 표시 방식을 옵션과 동일하게 알파벳(ⓐ~ⓔ)으로 통일하고, 질문 범위와 옵션이 일치하도록 하며, 문항에 포함되지 않은 불필요한 문장은 삭제한다.",
    "src": "자가학습:어휘(밑줄)",
@@ -17,14 +25,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-31T17:47:04.015Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:이어쓰기영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-31T17:51:16.846Z"
   },
   {
    "rule": "문제의 빈칸은 선지의 형식(문장형, 단어형 등)에 맞게 배치하고, 지문은 빈칸을 채우는 데 필요한 문맥적 단서와 선지 내용이 상호 연결되도록 재구성해야 한다.",
