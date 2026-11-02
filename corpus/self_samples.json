@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-02T16:11:24.242Z",
+ "updated": "2026-11-02T23:44:20.437Z",
  "samples": [
+  {
+   "ts": "2026-11-02T23:43:15.215Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 정답 재검토 권고 — 솔버 1/1가 2번 선택(기록 1번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 2,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "ACTUAL MEANING OF PROPER NAMES 71 difference being one of degree rather than of kind. A name always connotes the quality or qualities by which the bearer or bearers of the name are known, i.e. distinguished from other beings or things. The more special or specific the thing denoted is, the more probable is it that the name is chosen arbitrarily, and SQ muoh the more does it approach to, or become, a. proper name. If a spf'.aker wants to call up the idea of some pe!'Son or thing, he has at his command in some cases a name specially applied to the individual concerned, that is, a name which in this particular situation will be understood as refeITing to it, or else he has to piece together by means of other words a composite denomination which is suffiClently precise for his purpose. The way in which this is done will be the subjeot of our oonsideration in the next chapter.\n\n─────────\n[요약문] The passage discusses how a (A) distinguishes an individual by its specific qualities, while a (B) is formed from other words when a direct name is unavailable.",
+    "choices": [
+     "(A) unique identifier … (B) assembled label",
+     "(A) identifying trait … (B) compound phrase",
+     "(A) generic label … (B) direct name",
+     "(A) cause … (B) consequence",
+     "(A) general designation … (B) generic label"
+    ],
+    "answer": 1,
+    "explanation": "(A) unique identifier / (B) assembled label 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 지문에서 \"name always connotes the quality or qualities\" 라고 했으므로 이름이 품질을 나타내는 것이 아니라 품질이 이름을 지칭한다는 점을 놓쳤다. (B) 부분은 \"piece together by means of other words a composite denomination\" 이라서 복합어가 아니라 조합어라는 뜻이다. → 처방: 문장 구조를 따라가며 ‘이름은 품질을 나타내는 것이 아니라 품질에 의해 정의된다’는 점을 기억하고, ‘다른 말로 조합된 명칭’이란 표현을 바로 잡아라.\n③ 진단: \"generic label\"이라고 생각한 것은 ‘name always connotes the quality’ 를 일반적 라벨이라 해석했기 때문이다. (B) 부분은 직접적인 이름이 없을 때 다른 말로 조합하는 것이므로 ‘direct name’이 아니라 ‘composite denomination’이다. → 처방: ‘direct name’이란 단어가 문장에 없음을 확인하고, ‘다른 말로 조합된 명칭’이라는 표현을 찾아서 기억하라.\n④ 진단: 문장을 원인과 결과 관계로 잘못 해석해 ‘cause’와 ‘consequence’로 보았다. 실제로는 이름이 무엇을 의미하는지 설명하는 내용이다. → 처방: 원인–결과 구조가 아니라 ‘어떤 개념이 무엇을 의미하는가’라는 설명 구조임을 인지하고 읽어라.\n⑤ 진단: ‘generic label’을 두 부분 모두에 넣은 것은 ‘proper name’과 ‘generic label’의 차이를 구분하지 못했기 때문이다. (A)는 ‘proper name’이 아니라 ‘unique identifier’이다. → 처방: ‘proper name’과 ‘generic label’의 차이를 명확히 구분하고, ‘unique identifier’라는 표현이 문장에 맞는지 확인하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-02T16:06:38.576Z",
    "type": "빈칸(어구)",
@@ -240,31 +265,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Understanding confusing words and homonyms requires careful attention to context and subtle differences.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-31T05:52:02.404Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① For example: fall summer February Wednesday spring winter\n② For example: Declaration of Independence Marshall Plan Federal Housing Act Monroe Doctrine The names of months and the days of the week are capitalized, but not the names of the seasons.\n③ The complete names of private and public organizations of all kinds are capitalized.\n④ For example: china (dishes) plaster of paris french fries venetian blinds Capitalization of Things.\n⑤ For example: Cheney High School Peace Corps Green Bay Packers (football team) Xerox Corporation New York Philharmonic The names of historical, political, and economic events are generally capitalized.\n⑥ For example: Badlands (South Dakota) Eastern Shore (Chesapeake Bay) Bay Area (California) Fertile Crescent Strangely enough, words derived from geographical names are generally not capitalized.\n⑦ For example: Boston Tea Party New Deal Great Depression The names of acts, treaties, laws, and government programs are generally capitalized.\n⑧ Nouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks).",
-    "choices": [
-     "⑧-⑥-④-③-⑤-⑦-②-①",
-     "⑧-⑥-③-④-⑤-⑦-②-①",
-     "⑧-⑤-③-④-⑥-⑦-①-②",
-     "⑧-⑥-②-③-④-①-⑦-⑤",
-     "⑧-②-⑤-①-⑥-④-③-⑦"
-    ],
-    "answer": 1,
-    "explanation": "정답 배열은 ⑧-⑥-④-③-⑤-⑦-②-①. 흐름: ⑧ → ⑥(For example) → ④(For example) → ③ → ⑤(For example) → ⑦(For example) → ②(For example) → ①(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]

@@ -1,8 +1,22 @@
 {
- "updated": "2026-11-02T16:11:24.239Z",
+ "updated": "2026-11-02T23:44:20.435Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-11-02T23:44:15.629Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "이 코퍼스에서는 전치사와 명사구의 순서, 형용사와 동사의 혼동, 그리고 고유명사의 표기 실수와 같은 문법적 오류가 빈번히 나타난다.",
+   "rule": "문장 내 전치사, 형용사, 동사 형태와 순서를 정확히 맞추도록 변형 문제를 제시한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-11-01T23:42:28.745Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거 시제와 현재 시제가 혼용되어 발생하는 오류가 빈번하며, 명사구(noun phrase) 내 전치사나 관사의 생략, 또는 동사의 부정형(-ing, -ed) 오용이 두드러진다. 또한 'between two'와 같이 전치사구 구조가 잘못 구성되는 경우가 많다.",
    "rule": "영어 문장에서 동사의 시제(과거/현재/미래)와 부정형(-ing, -ed)을 혼동하지 않도록 하며, 특히 'be + 형용사 + 명사' 구조에서는 명사 앞에 관사(a/the)를 반드시 포함시킨다. 또한 'between two'와 같은 전치사구는 'between two [명사]' 형태로만 사용하도록 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-30T23:33:51.788Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'have + past participle' 구문과 'is + past participle' 수동태 구문이 빈번하며, 특히 불규칙 동사의 과거분사 형태 오용이 자주 발생함을 확인할 수 있다.",
-   "rule": "원서 코퍼스 패턴을 반영하여 'have/has + 과거분사' 또는 'is/are + 과거분사' 형태의 문장은, 불규칙 동사의 경우 반드시 표준 과거분사 형태(예: dealt, generated, known)를 사용하도록 오답 선택지를 구성하라.",
    "sample": [
     "old english",
     "university press",
