@@ -1,6 +1,56 @@
 {
- "updated": "2026-11-02T06:18:49.090Z",
+ "updated": "2026-11-02T16:11:24.242Z",
  "samples": [
+  {
+   "ts": "2026-11-02T16:06:38.576Z",
+   "type": "빈칸(어구)",
+   "level": "중",
+   "audit": "솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Lesson 5: The Perfect 67 Geek: Ooh, very smooth! I’ve got to hand it to you Denis, you ____.\nA bit of a show‑off, but a fast learner indeed.\nDenis: Thank‑you. I will take that as a compliment. See youtomorrow? Geek: See you tomorrow.\nExercises, Lesson 5 EXERCISE 1: THE PRESENT TENSES Fill in the blank with the correct form of the verb in parentheses. Choose between the present perfect, the simple present, or the present progressive.\n1. We —————0— (study) French since kindergarten.\n2. Mr. Whitman —————0— (teach) at this school for the past six years.\n3. I hear footsteps. I —————0— (think) someone —————0— (come) up the stairs.\n4. My dad —————0— (deposit) money in my account at the beginning of each week. He —————0— (do) this until I find a full‑time job.\n5. I —————0— (travel) to New York many times in my life. I intend to go again.\n6. Every winter it —————0— (snow) in Quebec and —————0— (rain) in Vancouver.\n7. My cousins —————0— (be) in town for the past two days.\n8. You —————0— (make) great progress in your English skills since the beginning of the course.",
+    "choices": [
+     "lose quickly",
+     "stay still",
+     "think deeply",
+     "learn carefully",
+     "learn quickly"
+    ],
+    "answer": 5,
+    "explanation": "빈칸에는 'learn quickly'가 들어가 글의 논지를 완성한다 (본문 'are a fast learner'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-02T16:11:17.812Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "Lesson 5: The Perfect 67 Geek: Ooh, very ⓐ<u>rough</u>! I’ve got to hand it to you Denis, you are a ⓑ<u>fast</u> ⓒ<u>learner</u>. A bit of a show-off, but a fast learner indeed. Denis: Thank-you. I will take that as a ⓓ<u>compliment</u>. See youtomorrow? Geek: See you tomorrow. Exercises, Lesson 5 EXERCISE 1: THE PRESENT TENSES Fill in the blank with the correct form of the verb in parentheses. Choose between the present perfect, the simple present, or the present progressive. 1. We —————0— (study) French since kindergarten. 2. Mr. Whitman —————0— (teach) at this school for the past six years. 3. I hear footsteps. I —————0— (think) someone —————0— (come) up the stairs. 4. My dad —————0— (deposit) money in my account at the beginning of each week. He —————0— (do) this until I find a full-time job. 5. I —————0— (travel) to New York many times in my life. I intend to go again. 6. Every winter it —————0— (snow) in Quebec and —————0— (rain) in Vancouver. 7. My cousins —————0— (be) in town for the past two days. 8. You —————0— (make) great ⓔ<u>progress</u> in your English skills since the beginning of the course.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 1,
+    "explanation": "정답 ⓐ: 문맥상 'smooth'가 와야 하는데 'rough'가 쓰여 부적절하다 — 해당 문장 “Lesson 5: The Perfect 67 Geek: Ooh, very smooth!”의 논리 흐름상 smooth 가 맞고 rough 는 방향이 어긋난다. [극성] smooth (positive) ↔ rough (negative)\n[오답 진단·처방]\n② 진단: fast 를 '식사 금지'로 오해할 수 있다. → 처방: 문맥에서 학습 속도를 의미하는지 확인한다.\n③ 진단: learner 를 '가르치는 사람'으로 오해할 수 있다. → 처방: 문맥에서 '배우는 사람'인지 확인한다.\n④ 진단: compliment 를 '비난'으로 오해할 수 있다. → 처방: 문맥에서 긍정적 의미인지 확인한다.\n⑤ 진단: progress 를 '진행 중'으로 오해할 수 있다. → 처방: 문맥에서 '개선'을 의미하는지 확인한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-02T06:18:32.886Z",
    "type": "배열영작",
@@ -215,44 +265,6 @@
     ],
     "answer": 1,
     "explanation": "정답 배열은 ⑧-⑥-④-③-⑤-⑦-②-①. 흐름: ⑧ → ⑥(For example) → ④(For example) → ③ → ⑤(For example) → ⑦(For example) → ②(For example) → ①(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-31T05:54:19.202Z",
-   "type": "문장전환",
-   "level": "중",
-   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '태' 전환 자동 선택",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장을 수동태(또는 능동태) 바꿔 쓰시오.\n[원문] Nouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks).\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Popular names of places are usually capitalized by people (and are not enclosed in quotation marks). (포인트: Added explicit agent phrase with ‘by people’ to emphasize passive construction.)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-10-30T23:54:42.215Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 전치사는 명사와 동사와 다른 특성을 지닌 별도의 범주이며, 이 분류는 언어 구조를 이해하는 데 중요한 시사점을 제공한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
