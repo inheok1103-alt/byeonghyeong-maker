@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-01T23:42:34.260Z",
+ "updated": "2026-11-02T06:18:49.090Z",
  "samples": [
+  {
+   "ts": "2026-11-02T06:18:32.886Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: 학생들은 수업을 암기하지만 혼란스럽고 실제 텍스트가 부족하여 지루함을 유발합니다.\n주어진 단어: ( lacking / Students / texts, / but / remain / confused, / lessons / real-life / boredom / memorize / causing )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Students memorize lessons but remain confused, lacking real-life texts, causing boredom.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-01T19:50:58.155Z",
    "type": "심경변화",
@@ -234,41 +253,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 전치사는 명사와 동사와 다른 특성을 지닌 별도의 범주이며, 이 분류는 언어 구조를 이해하는 데 중요한 시사점을 제공한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-30T19:35:08.876Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ①②④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "The role of context in always resolving lexical ambiguity",
-     "The role of context in resolving all types of ambiguity",
-     "The role of context in resolving lexical ambiguity",
-     "The role of context in resolving ambiguity",
-     "The role of lexical ambiguity in creating contextual clarity"
-    ],
-    "answer": 3,
-    "explanation": "글의 핵심 논지는 'While words are fundamental units of language, their inherent ambiguity—illustrated by homonyms and confusing pairs—necessitates careful context to ensure clear communication.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(Cause-effect reversal·Scope reduction·Over-generalization·Degree/frequency distortion)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석· ② 오답 — 지나치게 확대 해석· ③ 정답 — 핵심 논지 반영· ④ 오답 — Degree/frequency distortion· ⑤ 오답 — Cause-effect reversal\n[오답 진단·처방]\n① 진단: 정답 ①에서 'lexical ambiguity'를 '모든 유형의 모호성'으로 잘못 해석했다. → 처방: 옵션을 고를 때는 문장에 등장한 용어를 그대로 읽고, 그것이 요구하는 구체적 범위와 일치하는지 확인하라.\n② 진단: 정답 ②에서 'all types of ambiguity'를 'lexical ambiguity'와 동일하게 생각했다. → 처방: 문맥이 요구하는 구체적 범위에 주목하고, 옵션이 포함하는 범위가 정확한지 검토하라.\n④ 진단: 정답 ④에서 'ambiguity'를 광범위한 모호성으로 해석해 'lexical ambiguity'를 포함한다고 착각했다. → 처방: 옵션이 명시한 구체적 용어('lexical ambiguity')를 확인하고, 다른 의미와 혼동하지 않도록 하라.\n⑤ 진단: 정답 ⑤에서 'lexical ambiguity'가 문맥을 명확하게 만든다고 오해했다. → 처방: 문맥이 모호성을 해결하는 역할이 아니라 모호성을 만들어내는 역할이라는 점을 기억하고, 문장을 다시 검토하라.\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: While words are fundamental units of language, their inherent ambiguity—illustrated by homonyms and confusing pairs—necessitates careful context to ensure clear communication.]"
    }
   }
  ]
