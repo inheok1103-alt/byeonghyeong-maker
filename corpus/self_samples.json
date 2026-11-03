@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-03T15:15:56.899Z",
+ "updated": "2026-11-03T21:10:54.596Z",
  "samples": [
+  {
+   "ts": "2026-11-03T21:10:19.287Z",
+   "type": "문장전환",
+   "level": "중",
+   "audit": "원문 실존·전환형태 코드검증됨 · 지문 분석으로 '가정법' 전환 자동 선택",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장을 가정법 문장으로 바꿔 쓰시오.\n[원문] She is functioning as the subject.\n〈조건〉 주어진 문장의 의미·시제를 유지할 것.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] If she were functioning as the subject. (포인트: 가정법에서 시제와 극성 반전: ‘is’ → ‘were’)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-03T15:15:09.996Z",
    "type": "의견영작",
@@ -244,25 +263,6 @@
     ],
     "answer": 1,
     "explanation": "정답 ⓐ: 문맥상 'diatribe'가 와야 하는데 'praise'가 쓰여 부적절하다 — 해당 문장 “The senator went into a lengthy (diatribe, remuneration) about government waste in the military budget.”의 논리 흐름상 diatribe가 맞고 praise는 방향이 어긋난다. [극성] 비판적 ↔ 칭찬적\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-10-31T17:51:56.727Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 12 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "(제시문) Infinitive: The infinitive form of a verb is the (uninflected) form which is used (inter alia) when the verb is the complement of a modal auxiliary like can, or of the infinitive particle to. Accordingly, the italicised verbs are infinitive forms in sentences like ‘He can speak French’, and ‘He’s trying to learn French.’ An infinitive clause is a clause which contains a verb in the infinitive form. Hence, the bracketed clauses are infinitive clauses in: ‘He is trying [to help her]’, and ‘Why not let [him help her]?’ (In both examples, help is an infinitive verb form, and to when used with an infinitive complement is said to be an infinitive particle.) Since clauses are analysed as phrases within the framework used here, the term infinitive phrase can be used interchangeably with infinitive clause, to denote a TP projection headed by the infinitive particle to (or by a null counterpart of the infinitive particle to). \n\n필수 어휘: infinitive, clause \n단어 수: 12",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Thus, understanding infinitive clauses is essential for mastering English grammar in students.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 형식·표현 준수 · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내).\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
