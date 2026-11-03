@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-02T23:44:20.434Z",
+ "updated": "2026-11-03T07:04:48.041Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:주제문완성",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-03T07:04:39.635Z"
+  },
   {
    "rule": "모든 지문은 내용의 완전성과 문법적, 표기적 정확성을 철저히 확보해야 한다.",
    "src": "자가학습:내용불일치",
@@ -49,14 +57,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-01T15:15:10.839Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:이어쓰기영작",
-   "score": 33,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-01T15:17:22.452Z"
   },
   {
    "rule": "출제 시 정답 표시 방식을 옵션과 동일하게 알파벳(ⓐ~ⓔ)으로 통일하고, 질문 범위와 옵션이 일치하도록 하며, 문항에 포함되지 않은 불필요한 문장은 삭제한다.",
