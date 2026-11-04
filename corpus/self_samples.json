@@ -1,6 +1,56 @@
 {
- "updated": "2026-11-04T18:10:58.888Z",
+ "updated": "2026-11-04T23:51:19.902Z",
  "samples": [
+  {
+   "ts": "2026-11-04T23:47:49.608Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · 솔버 1/1 일치",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "저자는 연구 과정에서 지원해 주신 이들에게 감사를 전한다.",
+     "저자는 연구 과정에서 동료에게 언제나 진심으로 감사를 전한다.",
+     "저자는 연구 과정에서 방해한 사람들에게 진심으로 감사를 전한다.",
+     "저자는 연구 과정에서 데이터를 제공한 이들에게 감사를 전한다.",
+     "저자는 연구 과정에서 모든 사람들에게 진심으로 감사를 전한다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'The author expresses gratitude to colleagues, reviewers, and personal supporters for their encouragement and assistance in completing the manuscript.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: ‘동료’라는 단어를 ‘지원해 주신 분들’과 같은 의미로 오해해, 모든 동료에게 감사를 전한다고 판단함. 지문에서는 특정 인물만 언급돼 있다. → 처방: 문장마다 ‘감사’가 언급되는 인물(예: Esther Roth, Anke de Looper, Ineke Elskamp 등)을 정확히 파악하고, ‘모두’라고 일반화하지 말 것.\n③ 진단: ‘비판’이 ‘방해’와 같은 부정적 행위로 오해돼, 방해한 사람들에게 감사를 전한다고 판단함. 지문에서는 비판이 ‘비판’이 아니라 ‘비판적 의견’으로 발전에 도움을 주었다고 밝힘. → 처방: ‘비판’이 부정적이 아니라 ‘건설적 비판’이라는 문맥을 인식하고, ‘방해’와 구분지어 읽는 연습을 함.\n④ 진단: ‘지원’과 ‘데이터 제공’이 같은 의미로 혼동돼, 데이터를 제공한 사람들에게 감사를 전한다고 판단함. 지문에서는 ‘encouragement’와 ‘support’가 언급돼 있다. → 처방: ‘support’와 ‘encouragement’ 같은 단어가 ‘데이터 제공’이 아니라 ‘도움’이라는 의미임을 주의 깊게 해석하도록 함.\n⑤ 진단: ‘모든 사람’이라는 표현을 ‘모든 인물’로 확대해 해석해, 모든 사람에게 감사를 전한다고 판단함. 지문은 특정 인물만을 언급한다. → 처방: 문장에서 ‘감사’가 언급되는 인물들을 하나하나 확인하고, ‘모두’라고 일반화하지 않도록 주의함.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The author expresses gratitude to colleagues, reviewers, and personal supporters for their encouragement and assistance in completing the manuscript.]"
+   }
+  },
+  {
+   "ts": "2026-11-04T23:51:19.617Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "Acknowledgments I wrote many of the ⓐ<u>drafts</u> while serving as Associate Provost and then Provost at Wayne State University in Detroit, although the ⓑ<u>manuscript</u> was finally completed when I stepped down into retirement with time to think more about language change and less about academic administration. I very much ⓒ<u>depreciate</u> the encouragement I have received from Esther Roth and Anke de Looper as well as the ⓓ<u>support</u> provided by Ineke Elskamp and her team, all at John Benjamins. I also appreciate the careful reading of parts of the manuscript by Kavya Davuluri. Anonymous readers have been of great help; the comments, suggestions, questions, and – perhaps even more – the ⓔ<u>criticisms</u> of earlier drafts have helped to shape my thinking and hence the development of this textbook. My husband Geoff Nathan has been a reader, reviewer of all things phonetic and phonological, cheerleader, and all-around support in this undertaking as in everything.",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ: 문맥상 'appreciate'가 와야 하는데 'depreciate'가 쓰여 부적절하다 — 해당 문장 “I very much appreciate the encouragement I have received from Esther Roth and Anke de Looper as well as the support provided by Ineke Elskamp and her ”의 논리 흐름상 appreciate가 맞고 depreciate는 방향이 어긋난다. [극성] appreciate (positive) ↔ depreciate (negative)\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-04T09:23:30.492Z",
    "type": "밑줄함의",
@@ -219,56 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Students memorize lessons but remain confused, lacking real-life texts, causing boredom.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-01T19:50:58.155Z",
-   "type": "심경변화",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에 드러난 'I'의 심경 변화로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Confused → Confident",
-     "Uncertain → Clear",
-     "Confused → Bewildered",
-     "Confused → Enlightened",
-     "Confused → Clear"
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'English wh‑questions are derived by successive merges of VP, T‑bar, TP, and a null interrogative complementiser that requires a specifier, thereby enforcing wh‑movement.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n① 진단: 문장에 'I'가 없는데도 'I'가 포함된 구문으로 오해했다 → 처방: 다음부터는 주어가 명시된 부분만 집중해서 읽고, 주어가 없으면 'I'를 포함하지 않도록 주의\n② 진단: 'Uncertain'과 'Clear'를 같은 의미로 착각했다 → 처방: 동사구와 형용사 구별을 명확히 하며, 'uncertain'는 모호함을, 'clear'는 분명함을 의미하는지 확인\n③ 진단: 'Bewildered'를 'Confused'와 같은 의미로 착각했다 → 처방: 비슷한 단어는 의미 차이를 정확히 파악하고, 예문을 통해 차이를 익히기\n④ 진단: 'Enlightened'를 'Clear'와 혼동했다 → 처방: 명확한 의미 차이를 비교표로 정리하고, 각 단어가 사용된 문맥을 기억하기\n【출제의도】 행동·신체 반응 단서로 인물의 심경(변화)을 추론하는 능력을 평가한다. [핵심 논지: English wh‑questions are derived by successive merges of VP, T‑bar, TP, and a null interrogative complementiser that requires a specifier, thereby enforcing wh‑movement.]"
-   }
-  },
-  {
-   "ts": "2026-11-01T19:53:53.585Z",
-   "type": "무관문장",
-   "level": "중",
-   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
-    "passage": "The bracketed wh-question clause in (26) is derived as follows. ① The verb going is merged with its complement where to form the VP going where. ② The present-tense T-auxiliary are is then merged with the resulting VP to form the T-bar are going where. ③ The pronoun you is in turn merged with this T-bar to form the TP you are going where. ④ In many English sentences, the verb 'going' appears in the VP, while the T-auxiliary 'are' is sometimes used in the T-bar to express present continuous, but this usage has no direct relation to the wh‑movement or the edge feature of the complementiser. ⑤ A null interrogative complementiser [C ø] is subsequently merged with the resulting TP. Since English (unlike Chinese) is the kind of language which requires wh-movement in non-echoic wh-questions, C also has an edge feature [EF] requiring it to have a specifier (with the specifier having to be interrogative in order for the resulting structure to be interpreted as a question). Accordingly, merging C with its TP complement will form the C-bar in (27) below (with the edge-feature on C being bracketed, following the convention that features are enclosed in square brackets):",
-    "choices": [
-     "①",
-     "②",
-     "③",
-     "④",
-     "⑤"
-    ],
-    "answer": 4,
-    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: 동사 going 과 보어를 합치는 과정이 질문과 무관하다고 잘못 판단함 → 처방: 모든 단계가 wh‑문을 만들기 위한 과정임을 인식하고, 동사 결합도 필수 단계임을 기억하라.\n② 진단: T‑보조동사 are 가 결합되는 과정이 질문과 연관이 없다고 착각함 → 처방: T‑보조동사 결합이 TP 를 완성하고 이후 wh‑이동에 필요한 구조를 만드는 단계임을 명심하라.\n③ 진단: 주어 you 가 합쳐지는 단계가 무관하다고 오해함 → 처방: 주어와 TP 결합이 wh‑문 구조를 완성하는 데 필수적임을 인지하라.\n⑤ 진단: C ø가 합쳐지는 과정이 질문과 무관하다고 판단함 → 처방: C ø가 TP 를 감싸는 C‑bar 를 형성해 질문임을 표시하는 핵심 단계임을 기억하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
    }
   }
  ]
