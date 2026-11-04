@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-04T01:38:12.517Z",
+ "updated": "2026-11-04T09:26:19.239Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:이어쓰기영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-04T09:24:50.356Z"
+  },
   {
    "rule": "모든 출제 지문은 고등학생의 영어 독해 능력 평가에 적합한 일반적인 주제와 난이도를 유지하며, 내용의 완결성과 문항 출제에 충분한 길이를 갖추어야 한다.",
    "src": "자가학습:장문세트",
@@ -25,14 +33,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-03T21:10:01.700Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:주제문완성",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-03T07:04:39.635Z"
   },
   {
    "rule": "모든 지문은 내용의 완전성과 문법적, 표기적 정확성을 철저히 확보해야 한다.",
