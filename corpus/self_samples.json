@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-05T15:39:30.180Z",
+ "updated": "2026-11-05T22:12:47.075Z",
  "samples": [
+  {
+   "ts": "2026-11-05T22:12:30.370Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "어법 의심 4건 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "clausal object test",
+     "clausal objecthood determination",
+     "clausal subjecthood determination",
+     "clausal objecthood evaluation",
+     "object clause identification"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'The phrase “Jim leaving the flat” functions as a constituent (direct object) of “see,” as confirmed by semantic and syntactic tests.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The phrase “Jim leaving the flat” functions as a constituent (direct object) of “see,” as confirmed by semantic and syntactic tests.]"
+   }
+  },
   {
    "ts": "2026-11-05T15:38:34.351Z",
    "type": "글의순서",
@@ -250,31 +275,6 @@
     ],
     "answer": 1,
     "explanation": "(A) unique identifier / (B) assembled label 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n② 진단: 지문에서 \"name always connotes the quality or qualities\" 라고 했으므로 이름이 품질을 나타내는 것이 아니라 품질이 이름을 지칭한다는 점을 놓쳤다. (B) 부분은 \"piece together by means of other words a composite denomination\" 이라서 복합어가 아니라 조합어라는 뜻이다. → 처방: 문장 구조를 따라가며 ‘이름은 품질을 나타내는 것이 아니라 품질에 의해 정의된다’는 점을 기억하고, ‘다른 말로 조합된 명칭’이란 표현을 바로 잡아라.\n③ 진단: \"generic label\"이라고 생각한 것은 ‘name always connotes the quality’ 를 일반적 라벨이라 해석했기 때문이다. (B) 부분은 직접적인 이름이 없을 때 다른 말로 조합하는 것이므로 ‘direct name’이 아니라 ‘composite denomination’이다. → 처방: ‘direct name’이란 단어가 문장에 없음을 확인하고, ‘다른 말로 조합된 명칭’이라는 표현을 찾아서 기억하라.\n④ 진단: 문장을 원인과 결과 관계로 잘못 해석해 ‘cause’와 ‘consequence’로 보았다. 실제로는 이름이 무엇을 의미하는지 설명하는 내용이다. → 처방: 원인–결과 구조가 아니라 ‘어떤 개념이 무엇을 의미하는가’라는 설명 구조임을 인지하고 읽어라.\n⑤ 진단: ‘generic label’을 두 부분 모두에 넣은 것은 ‘proper name’과 ‘generic label’의 차이를 구분하지 못했기 때문이다. (A)는 ‘proper name’이 아니라 ‘unique identifier’이다. → 처방: ‘proper name’과 ‘generic label’의 차이를 명확히 구분하고, ‘unique identifier’라는 표현이 문장에 맞는지 확인하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-02T16:06:38.576Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 1/1 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Lesson 5: The Perfect 67 Geek: Ooh, very smooth! I’ve got to hand it to you Denis, you ____.\nA bit of a show‑off, but a fast learner indeed.\nDenis: Thank‑you. I will take that as a compliment. See youtomorrow? Geek: See you tomorrow.\nExercises, Lesson 5 EXERCISE 1: THE PRESENT TENSES Fill in the blank with the correct form of the verb in parentheses. Choose between the present perfect, the simple present, or the present progressive.\n1. We —————0— (study) French since kindergarten.\n2. Mr. Whitman —————0— (teach) at this school for the past six years.\n3. I hear footsteps. I —————0— (think) someone —————0— (come) up the stairs.\n4. My dad —————0— (deposit) money in my account at the beginning of each week. He —————0— (do) this until I find a full‑time job.\n5. I —————0— (travel) to New York many times in my life. I intend to go again.\n6. Every winter it —————0— (snow) in Quebec and —————0— (rain) in Vancouver.\n7. My cousins —————0— (be) in town for the past two days.\n8. You —————0— (make) great progress in your English skills since the beginning of the course.",
-    "choices": [
-     "lose quickly",
-     "stay still",
-     "think deeply",
-     "learn carefully",
-     "learn quickly"
-    ],
-    "answer": 5,
-    "explanation": "빈칸에는 'learn quickly'가 들어가 글의 논지를 완성한다 (본문 'are a fast learner'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
