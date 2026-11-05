@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-05T07:04:17.674Z",
+ "updated": "2026-11-05T15:39:30.180Z",
  "samples": [
+  {
+   "ts": "2026-11-05T15:38:34.351Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "Cognitive English Grammar VIII us invaluable ideas, in particular Susannah Ewing Bölke, Elizabeth Matthis, Jane Oehlert, and Allan Turner.\n\n(A) We would also like to thank Birgit Smieja, Evgenia Sokolinskaja, Angela Heidemann, and Lukasz Tabakowska, who embellished the book with illustrations.\n\n(B) The student input gave us the satisfying impression that the book was written and re-written with its future users looking over our shoulders and somehow writing the book with us. Günter Radden and René Dirven\n\n(C) Our special thanks go to the instructors of many classes who worked with earlier versions of the book and gave us suggestions and constructive criticisms as well as tokens of empathy. We would especially like to express our thanks to the many students who toiled through the book manuscript at the universities of Hamburg, Kraków, Warsaw, Murcia, Budapest, Debrecen, and Bergen.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 1,
+    "explanation": "원문 전개 순서는 (A) - (C) - (B)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-05T07:03:51.898Z",
    "type": "연결어빈칸",
@@ -250,31 +275,6 @@
     ],
     "answer": 5,
     "explanation": "빈칸에는 'learn quickly'가 들어가 글의 논지를 완성한다 (본문 'are a fast learner'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-02T16:11:17.812Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "Lesson 5: The Perfect 67 Geek: Ooh, very ⓐ<u>rough</u>! I’ve got to hand it to you Denis, you are a ⓑ<u>fast</u> ⓒ<u>learner</u>. A bit of a show-off, but a fast learner indeed. Denis: Thank-you. I will take that as a ⓓ<u>compliment</u>. See youtomorrow? Geek: See you tomorrow. Exercises, Lesson 5 EXERCISE 1: THE PRESENT TENSES Fill in the blank with the correct form of the verb in parentheses. Choose between the present perfect, the simple present, or the present progressive. 1. We —————0— (study) French since kindergarten. 2. Mr. Whitman —————0— (teach) at this school for the past six years. 3. I hear footsteps. I —————0— (think) someone —————0— (come) up the stairs. 4. My dad —————0— (deposit) money in my account at the beginning of each week. He —————0— (do) this until I find a full-time job. 5. I —————0— (travel) to New York many times in my life. I intend to go again. 6. Every winter it —————0— (snow) in Quebec and —————0— (rain) in Vancouver. 7. My cousins —————0— (be) in town for the past two days. 8. You —————0— (make) great ⓔ<u>progress</u> in your English skills since the beginning of the course.",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 1,
-    "explanation": "정답 ⓐ: 문맥상 'smooth'가 와야 하는데 'rough'가 쓰여 부적절하다 — 해당 문장 “Lesson 5: The Perfect 67 Geek: Ooh, very smooth!”의 논리 흐름상 smooth 가 맞고 rough 는 방향이 어긋난다. [극성] smooth (positive) ↔ rough (negative)\n[오답 진단·처방]\n② 진단: fast 를 '식사 금지'로 오해할 수 있다. → 처방: 문맥에서 학습 속도를 의미하는지 확인한다.\n③ 진단: learner 를 '가르치는 사람'으로 오해할 수 있다. → 처방: 문맥에서 '배우는 사람'인지 확인한다.\n④ 진단: compliment 를 '비난'으로 오해할 수 있다. → 처방: 문맥에서 긍정적 의미인지 확인한다.\n⑤ 진단: progress 를 '진행 중'으로 오해할 수 있다. → 처방: 문맥에서 '개선'을 의미하는지 확인한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

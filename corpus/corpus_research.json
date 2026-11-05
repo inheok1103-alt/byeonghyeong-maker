@@ -1,8 +1,22 @@
 {
- "updated": "2026-11-05T07:04:17.672Z",
+ "updated": "2026-11-05T15:39:30.177Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-11-05T15:39:22.509Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "코퍼스에서 자주 나타나는 문장 구조는 부사구가 문장 앞에 위치하고, 시제 일관성 및 쉼표 사용에 대한 오류가 빈번하게 발생한다.",
+   "rule": "문장 앞에 부사구(또는 부사절)가 올 경우, 그 뒤에 쉼표를 반드시 넣어 구분한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-11-03T21:10:46.791Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "명사(advance/advanced, mater/matter, details/detail)와 동사(are explain → can explain)의 오류가 빈번하며, 특히 관사·조동사·단수/복수 형태의 오용이 두드러진다.",
    "rule": "명사(단수/복수), 관사(a/the), 조동사(can/must/should) 및 형용사(advanced/detailed)의 올바른 형태와 조합을 반드시 검증하도록 문장을 설계하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-31T14:13:58.676Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "과거시제 동사의 오용(choosed→chose)과 시제 일관성(present→past) 문제가 빈번하며, 명사구(noun phrase) 내 한정사(missing 'the')와 전치사구(prepositional phrase) 구조(‘in the oldage’→‘in old age’)의 오류가 두드러진다.",
-   "rule": "과거시제 문장에서 동사 원형(choosed)이나 현재완료(have leave) 사용을 금지하고, 시제 일관성(과거→과거)을 적용하며, 명사구 내 한정사('the', 'a')와 전치사구 구조('in the oldage'→'in old age')를 정확히 쓰도록 출제하라.",
    "sample": [
     "old english",
     "university press",
