@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-05T22:12:47.070Z",
+ "updated": "2026-11-06T02:40:34.330Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제 지문은 문법적으로 완전한 문장들로 구성되어야 하며, 문장 간의 연결이 논리적이고 자연스러워야 한다.**",
+   "src": "자가학습:무관문장",
+   "score": 15,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-06T02:30:26.604Z"
+  },
+  {
+   "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
+   "src": "자가학습:서술형(자유)",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-06T02:40:19.082Z"
+  },
   {
    "rule": "지문은 완전한 문장으로 구성하고 고등학생 수준에 맞게 과도한 전문 용어를 최소화해 간결하고 이해하기 쉬운 문장으로 재작성하며, 모든 보기는 동일한 길이와 형식으로 논리적으로 타당하고 비슷한 난이도를 제공하도록 조정한다.",
    "src": "자가학습:주제",
@@ -681,14 +697,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-10-11T15:53:49.734Z"
-  },
-  {
-   "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
-   "src": "자가학습:서술형(자유)",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-10-11T15:58:21.008Z"
   },
   {
    "rule": "모든 어휘 문항은 일관된 맥락의 글로 지문을 구성하여, 밑줄 친 단어의 문맥상 적절한 쓰임을 판단하도록 출제해야 한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-29T02:17:35.272Z"
-  },
-  {
-   "rule": "모든 문항은 어법적 오류가 아닌 '어법상 옳지 않거나 부적절한 표현'을 찾는 방향으로 발문을 개선하고, 선지는 5~15단어 내외로 통일성을 유지하며, 비유가 필요한 경우 명시적 비교 구문(예: \"as A is implied in B\")으로 대체해야 한다.",
-   "src": "자가학습:어법(밑줄)",
-   "score": 53,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-29T02:18:10.304Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
