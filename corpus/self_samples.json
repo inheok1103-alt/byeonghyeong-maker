@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-06T02:40:34.334Z",
+ "updated": "2026-11-06T11:06:06.383Z",
  "samples": [
+  {
+   "ts": "2026-11-06T11:03:40.062Z",
+   "type": "밑줄함의",
+   "level": "중",
+   "audit": "⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+    "passage": "Agreement between a transitive verb and its object is <u>invisible in English</u> (in the sense that it has no overt phonetic manifestation), but is visible in languages like Swahili with overt object-agreement morphology. Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.",
+    "choices": [
+     "This implies that written English frequently lacks sufficient punctuation or explicit textual cues, thereby obscuring the intended hierarchical organization of sentences and phrases.",
+     "This signifies that certain grammatical dependencies within the language operate without explicit surface markers, requiring abstract linguistic analysis to discern their presence and function.",
+     "This implies that some linguistic elements in English, when presented in textual form, are printed with such faintness or diminutive size that they evade direct visual apprehension by the observer.",
+     "This suggests that English grammatical structures consistently manifest through readily apparent and explicit surface markers, thereby ensuring complete clarity in all syntactic dependencies without exception.",
+     "This indicates that the inherent complexity of linguistic analysis itself leads to the erroneous perception that certain grammatical structures are entirely absent from the English language."
+    ],
+    "answer": 2,
+    "explanation": "밑줄 친 부분은 'This signifies that certain grammatical dependencies within the language operate without explicit surface markers, requiring abstract linguistic analysis to discern their presence and function.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘invisible’를 문장 부호가 없다는 의미로 잘못 해석함 → 처방: ‘invisible’이 표면에 나타나지 않는 문법적 의존성을 뜻함을 기억하라.\n③ 진단: ‘invisible’을 글자 크기가 작아 보이지 않는 것으로 오해함 → 처방: 문법적 의미에 초점을 맞추고 시각적 표현과 구분하라.\n④ 진단: 영어가 항상 명시적 표지로 나타난다고 착각함 → 처방: 표면에 나타나지 않는 문법적 관계가 존재함을 인지하라.\n⑤ 진단: 복잡성 때문에 구조가 없다고 오해함 → 처방: ‘invisible’은 존재하지만 표면에 드러나지 않는다는 점을 명확히 하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-06T11:05:40.401Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 영어는 객체 동의를 숨기므로 객체 동의가 삭제된 후의 값이 있습니다.\n주어진 단어: ( english / hides / object )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] English hides object agreement, so HAVE values he after them is deleted. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-06T02:40:33.914Z",
    "type": "서술형(자유)",
@@ -227,44 +271,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] If she were functioning as the subject. (포인트: 가정법에서 시제와 극성 반전: ‘is’ → ‘were’)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-03T15:15:09.996Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 20 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'infinitival', 'complexity', 'clarifies' / 18~22단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I believe that treating infinitival to as overt in passive contexts clarifies the syntactic complexity and supports the ECM analysis.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 18~22단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-03T07:04:41.665Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 26 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 지문을 읽고 주제문을 완성하시오. \n필수 포함 단어: infinitive, clause. \n주제문은 글의 요지를 한 문장으로 정리해야 하며, 두 개의 핵심 명제(대상 + 평)를 포함해야 한다.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Infinitive clauses are formed when infinitive verbs serve as complements of modal auxiliaries and the infinitive particle, illustrating the functional role of infinitives in sentence structure.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 형식·표현 준수 · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내).\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
