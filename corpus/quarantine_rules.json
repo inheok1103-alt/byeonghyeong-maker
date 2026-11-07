@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-07T03:02:56.462Z",
+ "updated": "2026-11-07T10:24:19.226Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 출제 지문은 원문의 완전성을 유지하고, 대상 학습자의 이해 수준 및 시험의 변별력 확보에 적합한 내용과 난이도로 구성해야 한다.",
+   "src": "자가학습:요지",
+   "score": 72,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-07T10:17:11.912Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:조건영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-07T10:23:03.346Z"
+  },
   {
    "rule": "모든 어법개수형 문항은 정답과 채점 기준을 명확히 정의하고, 채점 시 적용되는 점수 배분표를 사전에 공개하여 평가 실패를 방지한다.",
    "src": "자가학습:어법개수형",
@@ -41,14 +57,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-06T10:59:31.178Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-06T11:05:30.066Z"
   },
   {
    "rule": "모든 출제 지문은 문법적으로 완전한 문장들로 구성되어야 하며, 문장 간의 연결이 논리적이고 자연스러워야 한다.**",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-29T09:09:30.279Z"
-  },
-  {
-   "rule": "선지 작성 시 지문의 핵심 개념을 정확히 반영하되, 시간적·범위적·인과적 한정(예: '즉시', '만기 시', '원인')을 제거하여 지문의 정의와 완벽히 일치하는 선지를 정답으로 삼아야 한다.\"**",
-   "src": "자가학습:주제",
-   "score": 69,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-29T09:10:48.718Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

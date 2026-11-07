@@ -1,8 +1,22 @@
 {
- "updated": "2026-11-07T03:02:56.463Z",
+ "updated": "2026-11-07T10:24:19.227Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-11-07T10:24:02.381Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "코퍼스 분석 결과, 관사 누락, 주어와 동사의 일치 오류, 콤마 및 접속사 사용 부정확이 빈번히 나타났으며, 이는 CEFR B2 이상 난이도 문장에 주로 관찰된다.",
+   "rule": "문제 출제 시, 관사(‘a’, ‘an’, ‘the’) 사용, 주어-동사 일치, 복수형 명사, 콤마와 접속사 사용 등 기본 문법 항목을 반드시 포함하도록 설계한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-11-06T11:05:59.745Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제 동사와 수일치를 혼동하는 오류와 관계사절의 문법적 결합이 부자연스러운 경우가 빈번하다. 특히 'there is/are' 구문과 'when' 절의 사용 패턴에서 오류가 두드러진다.",
    "rule": "'there is/are' 구문에서 단수/복수 수일치를 반드시 확인하고, 관계사절(which/that/is)는 선행사와 반드시 수일치를 시키며, 'when' 절은 문맥상 부사절로 기능할 때 콤마로 분리하여야 한다.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-08-31T23:55:44.800Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "'명사 + 동사 + 목적어' 구조에서 목적어에 부정어(not, nothing) 또는 비교(than, other than)가 포함될 경우, 동사의 선택(encourage vs. push)과 구조적 재구성이 자연스러움을 확인했다. 또한 이유 제시 시 'for three reasons'가 아닌 'for three reasons: ...' 또는 'because ...'로 연결하는 것이 문법적으로 옳다.",
-   "rule": "목적어에 'not', 'nothing', 'than', 'other than' 등이 포함된 문장은 'encourage + 목적어 + to consider ways other than ...' 또는 '동사 + 목적어 + because ...' 형태로 재구성하여 문법적 오류를 방지하라.",
    "sample": [
     "old english",
     "university press",
