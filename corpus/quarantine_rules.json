@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-07T10:24:19.226Z",
+ "updated": "2026-11-07T16:38:46.672Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:의견영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-07T16:37:09.989Z"
+  },
   {
    "rule": "모든 출제 지문은 원문의 완전성을 유지하고, 대상 학습자의 이해 수준 및 시험의 변별력 확보에 적합한 내용과 난이도로 구성해야 한다.",
    "src": "자가학습:요지",
@@ -9,14 +17,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-07T10:17:11.912Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-07T10:23:03.346Z"
   },
   {
    "rule": "모든 어법개수형 문항은 정답과 채점 기준을 명확히 정의하고, 채점 시 적용되는 점수 배분표를 사전에 공개하여 평가 실패를 방지한다.",
