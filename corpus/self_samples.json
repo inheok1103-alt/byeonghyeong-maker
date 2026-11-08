@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-08T00:51:19.929Z",
+ "updated": "2026-11-08T07:35:55.541Z",
  "samples": [
+  {
+   "ts": "2026-11-08T07:35:50.916Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: Mary는 John이 주요 및 보완 조항을 포함하여 담배를 피운다는 것을 알고 있습니다.\n주어진 단어: ( clauses / that / smokes, / containing / Mary / main / knows / John / and / complement )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Mary knows that John smokes, containing main and complement clauses.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-08T00:51:13.757Z",
    "type": "전체문장배열",
@@ -250,21 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] English hides object agreement, so HAVE values he after them is deleted. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-06T02:40:33.914Z",
-   "type": "서술형(자유)",
-   "level": "중",
-   "audit": "",
-   "review": null,
-   "psychometric": null,
-   "q": {
-    "instruction": "〈조건〉에 따라 자신의 답을 영어(또는 우리말)로 서술하시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 영어 사용자는 다른 게르만어도 같은 어순을 가질 것이라 생각하지만, 네덜란드어는 독일어와 비슷하고 노르웨이어는 조금 다르다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]
