@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-08T15:26:57.318Z",
+ "updated": "2026-11-08T19:56:59.711Z",
  "samples": [
+  {
+   "ts": "2026-11-08T19:51:14.486Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① The complete names of private and public organizations of all kinds are capitalized.\n② For example: fall summer February Wednesday spring winter\n③ Nouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks).\n④ For example: Cheney High School Peace Corps Green Bay Packers (football team) Xerox Corporation New York Philharmonic The names of historical, political, and economic events are generally capitalized.\n⑤ For example: Declaration of Independence Marshall Plan Federal Housing Act Monroe Doctrine The names of months and the days of the week are capitalized, but not the names of the seasons.\n⑥ For example: Badlands (South Dakota) Eastern Shore (Chesapeake Bay) Bay Area (California) Fertile Crescent Strangely enough, words derived from geographical names are generally not capitalized.\n⑦ For example: china (dishes) plaster of paris french fries venetian blinds Capitalization of Things.\n⑧ For example: Boston Tea Party New Deal Great Depression The names of acts, treaties, laws, and government programs are generally capitalized.",
+    "choices": [
+     "③-⑥-①-⑦-④-⑧-⑤-②",
+     "③-⑤-①-⑧-⑥-⑦-④-②",
+     "③-⑤-⑦-⑥-④-②-①-⑧",
+     "③-⑥-⑦-①-④-⑧-⑤-②",
+     "⑥-③-⑦-①-④-⑧-⑤-②"
+    ],
+    "answer": 4,
+    "explanation": "정답 배열은 ③-⑥-⑦-①-④-⑧-⑤-②. 흐름: ③ → ⑥(For example) → ⑦(For example) → ① → ④(For example) → ⑧(For example) → ⑤(For example) → ②(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-08T15:26:53.097Z",
    "type": "조건영작",
@@ -244,31 +269,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Dat­ives are interpreted as locative circumstanti­als under a one‑case‑per‑clause rule, and a prefix‑verb complex lexicalizes as a transitive verb governing an accusative.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 20~24단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-06T11:03:40.062Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Agreement between a transitive verb and its object is <u>invisible in English</u> (in the sense that it has no overt phonetic manifestation), but is visible in languages like Swahili with overt object-agreement morphology. Given the Earliness Principle, the pronoun them in (44) will have had its case feature valued as accusative (and deleted) via agreement with the transitive verb arrested on the V-cycle, and so be inactive for subsequent case/agreement operations by the time we reach the T-cycle in (44) above. Consequently, when the T-probe HAVE searches for a goal in (44), the only active goal (with an unvalued case feature) which it locates is the pronoun he. Accordingly, HAVE agrees with, assigns nominative case to, and attracts movement of he to spec-T, so forming a TP whose overt constituents are He has arrested them. Merging the resulting TP with a null declarative complementiser derives the structure associated with (43) He has arrested them.",
-    "choices": [
-     "This implies that written English frequently lacks sufficient punctuation or explicit textual cues, thereby obscuring the intended hierarchical organization of sentences and phrases.",
-     "This signifies that certain grammatical dependencies within the language operate without explicit surface markers, requiring abstract linguistic analysis to discern their presence and function.",
-     "This implies that some linguistic elements in English, when presented in textual form, are printed with such faintness or diminutive size that they evade direct visual apprehension by the observer.",
-     "This suggests that English grammatical structures consistently manifest through readily apparent and explicit surface markers, thereby ensuring complete clarity in all syntactic dependencies without exception.",
-     "This indicates that the inherent complexity of linguistic analysis itself leads to the erroneous perception that certain grammatical structures are entirely absent from the English language."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'This signifies that certain grammatical dependencies within the language operate without explicit surface markers, requiring abstract linguistic analysis to discern their presence and function.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘invisible’를 문장 부호가 없다는 의미로 잘못 해석함 → 처방: ‘invisible’이 표면에 나타나지 않는 문법적 의존성을 뜻함을 기억하라.\n③ 진단: ‘invisible’을 글자 크기가 작아 보이지 않는 것으로 오해함 → 처방: 문법적 의미에 초점을 맞추고 시각적 표현과 구분하라.\n④ 진단: 영어가 항상 명시적 표지로 나타난다고 착각함 → 처방: 표면에 나타나지 않는 문법적 관계가 존재함을 인지하라.\n⑤ 진단: 복잡성 때문에 구조가 없다고 오해함 → 처방: ‘invisible’은 존재하지만 표면에 드러나지 않는다는 점을 명확히 하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
