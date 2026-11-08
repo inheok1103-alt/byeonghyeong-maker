@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-07T21:05:50.419Z",
+ "updated": "2026-11-08T00:51:19.929Z",
  "samples": [
+  {
+   "ts": "2026-11-08T00:51:13.757Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Fill in each blank with the correct letter: a.\n② According to official ___, the Ambassador from England ranks higher than the Canadian Consul.\n③ She was tempted to ___ the letter to make it seem that she had not forgotten to write it but only to mail it.\n④ There under the microscope we saw the cell's ___ in all its amazing complexity.\n⑤ The engineers have promised to have the ___ of the new sedan finished by March.\n⑥ The ___ of The Wizard of Oz is a Kansas farm girl named Dorothy.\n⑦ Quiz 5-2 A.\n⑧ Please step into the judge's ___; she'll be with you in a few minutes.\n⑨ A butterfly's antennae are located on the most ___ part of its body.",
+    "choices": [
+     "⑦-①-⑥-②-⑨-④-③-⑤-⑧",
+     "⑦-①-⑥-③-⑨-④-②-⑤-⑧",
+     "⑦-①-⑥-②-⑨-④-③-⑧-⑤",
+     "⑦-①-⑧-⑥-②-④-③-⑨-⑤",
+     "①-⑦-⑥-②-⑨-④-③-⑤-⑧"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ⑦-①-⑥-②-⑨-④-③-⑤-⑧. 흐름: ⑦ → ① → ⑥ → ② → ⑨ → ④ → ③ → ⑤ → ⑧ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-07T20:57:25.822Z",
    "type": "글의순서",
@@ -240,31 +265,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] 영어 사용자는 다른 게르만어도 같은 어순을 가질 것이라 생각하지만, 네덜란드어는 독일어와 비슷하고 노르웨이어는 조금 다르다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-05T22:12:30.370Z",
-   "type": "주제",
-   "level": "중",
-   "audit": "어법 의심 4건 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "clausal object test",
-     "clausal objecthood determination",
-     "clausal subjecthood determination",
-     "clausal objecthood evaluation",
-     "object clause identification"
-    ],
-    "answer": 2,
-    "explanation": "글의 핵심 논지는 'The phrase “Jim leaving the flat” functions as a constituent (direct object) of “see,” as confirmed by semantic and syntactic tests.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: The phrase “Jim leaving the flat” functions as a constituent (direct object) of “see,” as confirmed by semantic and syntactic tests.]"
    }
   }
  ]

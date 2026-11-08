@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-07T21:05:50.403Z",
+ "updated": "2026-11-08T00:51:19.925Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:전체문장배열",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-08T00:45:47.811Z"
+  },
   {
    "rule": "문항에 제시되는 텍스트는 문법적으로 완전하고 자연스럽게 끝나도록 하며, 대상 독자의 수준에 맞는 일반적이고 이해하기 쉬운 어휘와 표현을 사용하도록 한다.",
    "src": "자가학습:글의순서",
@@ -25,14 +33,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-07T21:05:47.848Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:의견영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-07T16:37:09.989Z"
   },
   {
    "rule": "모든 출제 지문은 원문의 완전성을 유지하고, 대상 학습자의 이해 수준 및 시험의 변별력 확보에 적합한 내용과 난이도로 구성해야 한다.",
