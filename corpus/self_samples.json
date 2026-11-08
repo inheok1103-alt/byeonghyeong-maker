@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-08T07:35:55.541Z",
+ "updated": "2026-11-08T15:26:57.318Z",
  "samples": [
+  {
+   "ts": "2026-11-08T15:26:53.097Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 9 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 9단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 최대 투영만 준비할 수 있습니다. 중간 투영은 준비할 수 없습니다.\n주어진 단어: ( maximal / projections / preposed )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Only maximal projections can be preposed; intermediate ones cannot. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-08T07:35:50.916Z",
    "type": "배열영작",
@@ -250,25 +269,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'This signifies that certain grammatical dependencies within the language operate without explicit surface markers, requiring abstract linguistic analysis to discern their presence and function.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘invisible’를 문장 부호가 없다는 의미로 잘못 해석함 → 처방: ‘invisible’이 표면에 나타나지 않는 문법적 의존성을 뜻함을 기억하라.\n③ 진단: ‘invisible’을 글자 크기가 작아 보이지 않는 것으로 오해함 → 처방: 문법적 의미에 초점을 맞추고 시각적 표현과 구분하라.\n④ 진단: 영어가 항상 명시적 표지로 나타난다고 착각함 → 처방: 표면에 나타나지 않는 문법적 관계가 존재함을 인지하라.\n⑤ 진단: 복잡성 때문에 구조가 없다고 오해함 → 처방: ‘invisible’은 존재하지만 표면에 드러나지 않는다는 점을 명확히 하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-06T11:05:40.401Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 12 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 12단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 영어는 객체 동의를 숨기므로 객체 동의가 삭제된 후의 값이 있습니다.\n주어진 단어: ( english / hides / object )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] English hides object agreement, so HAVE values he after them is deleted. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
