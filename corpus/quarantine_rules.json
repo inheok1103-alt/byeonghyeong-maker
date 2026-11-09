@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-08T23:56:29.577Z",
+ "updated": "2026-11-09T06:43:22.663Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문항마다 명확한 평가 기준을 제시하고, 채점자가 이를 일관되게 적용하도록 교육·검증 절차를 마련한다.",
+   "src": "자가학습:이어쓰기영작",
+   "score": 33,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-09T06:42:32.509Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:전체문장배열",
@@ -65,14 +73,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-06T18:01:43.011Z"
-  },
-  {
-   "rule": "문항마다 명확한 평가 기준을 제시하고, 채점자가 이를 일관되게 적용하도록 교육·검증 절차를 마련한다.",
-   "src": "자가학습:이어쓰기영작",
-   "score": 32,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-06T18:07:05.504Z"
   },
   {
    "rule": "모든 선지는 지문 내에서 명시된 개념의 **정확한 의미, 특정 조건 또는 한정된 범위**를 충실히 반영하여, 정답과 오답 간의 의미적 변별력이 **모호함 없이** 명확히 구분되도록 출제해야 한다.",

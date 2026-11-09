@@ -1,8 +1,22 @@
 {
- "updated": "2026-11-08T23:56:29.577Z",
+ "updated": "2026-11-09T06:43:22.664Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-11-09T06:43:16.465Z",
+   "focus": "CEFR 밴드를 활용한 난이도 조정",
+   "note": "코퍼스에서 자주 나타나는 문법 오류는 불필요한 복수형 접미사, 부정형 표현, 전치사+동사구 사용 오류 등이며, CEFR 레벨에 따라 난이도를 조정할 때 이러한 오류를 중심으로 문제를 구성하면 학습자에게 효과적이다.",
+   "rule": "문제 문장을 만들 때, CEFR 레벨에 맞게 난이도를 조정하기 위해 원서 코퍼스에서 가장 빈번한 문법 오류(불필요한 복수형 접미사, 부정형 표현, 전치사+동사구 등)를 선택해 교정 문장을 제공하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-11-07T10:24:02.381Z",
    "focus": "CEFR 밴드를 활용한 난이도 조정",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "명사구(noun phrase) 내 사전적 의미가 중복되는 경우(예: 'earth's environment' → 'environment of the earth')는 축약형으로 통일하는 패턴이 빈번하다. 또한 관계대명사절에서 동사 수 일치 오류(예: 'who are' → 'who is')와 문맥상 불필요한 대명사(예: 'it' → 생략) 제거가 자연스러운 수정 경향이다.",
    "rule": "'명사구 내 중복 의미를 축약한 형태(예: [N1 of N2] → [N1's N2])와 관계대명사절의 동사 수 일치(예: who/which + 단수동사)를 필수적으로 점검하며, 문맥상 불필요한 대명사(예: it, this)를 생략하는지 확인하라.'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-09-01T05:16:59.263Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제 동사와 수일치를 혼동하는 오류와 관계사절의 문법적 결합이 부자연스러운 경우가 빈번하다. 특히 'there is/are' 구문과 'when' 절의 사용 패턴에서 오류가 두드러진다.",
-   "rule": "'there is/are' 구문에서 단수/복수 수일치를 반드시 확인하고, 관계사절(which/that/is)는 선행사와 반드시 수일치를 시키며, 'when' 절은 문맥상 부사절로 기능할 때 콤마로 분리하여야 한다.",
    "sample": [
     "old english",
     "university press",
