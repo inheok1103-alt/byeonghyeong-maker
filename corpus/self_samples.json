@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-10T10:06:07.300Z",
+ "updated": "2026-11-10T18:04:11.149Z",
  "samples": [
+  {
+   "ts": "2026-11-10T18:04:01.325Z",
+   "type": "주제",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "Null auxiliary c-command constraint on attachment.",
+     "Null auxiliary c-command constraint on grammatical attachment.",
+     "Independent auxiliary c-command constraint on grammatical attachment.",
+     "Null auxiliary c-command constraint on cliticization.",
+     "Null auxiliary constraint on syntactic c-command."
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Null auxiliary blocking cliticization in c‑command relations.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글 전체를 관통하는 중심 생각을 파악하고, 지엽·정반대·무관·과잉일반화 오답과 변별하는 능력을 평가한다. [핵심 논지: Null auxiliary blocking cliticization in c‑command relations.]"
+   }
+  },
   {
    "ts": "2026-11-10T10:06:02.614Z",
    "type": "서술형(자유)",
@@ -240,31 +265,6 @@
     ],
     "answer": 5,
     "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-07T21:03:32.853Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 2/2 일치",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Then it follows from the UTAH that all themes in all structures will be assigned to the specifier of the verb that they are related to. We will see that this is a very (A) [expansive / restrictive] theory of \u0002-role assignment that will force certain analyses of structures which, while not at first obvious, turn out to have a number of (B) [positive / negative] features which go to support them and in turn this supports the assumption of the UTAH in the first place. There are other aspects of the assignment of \u0002-roles than those to do with where they are assigned. We saw in chapter 1 that for some predicates an argument that they select as a lexical property does not have to be realised as a syntactic entity but may be present only at a (C) [semantic / syntactic] level. Such an argument would be understood, but unable to play any role in a sentence such as licensing a reflexive pronoun: (72) a Paul ate the pie by itself",
-    "choices": [
-     "(A) restrictive - (B) negative - (C) syntactic",
-     "(A) expansive - (B) negative - (C) semantic",
-     "(A) expansive - (B) positive - (C) syntactic",
-     "(A) restrictive - (B) negative - (C) semantic",
-     "(A) restrictive - (B) positive - (C) semantic"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) restrictive - (B) positive - (C) semantic. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: A 는 맞았으나 B 와 C 에서 'positive features'와 'semantic level'을 'negative'와 'syntactic'으로 오해한 것. → 처방: 다음부터는 괄호 안의 두 단어를 모두 비교해 보며, 맞지 않는 단어를 제외하고 선택하라.\n② 진단: A 를 'expansive'로 잘못 읽었으며, B 에서도 'negative'를 선택하고, C 는 맞았음. → 처방: 문맥에서 'very' 뒤에 오는 단어가 'restrictive'인지 'expansive'인지 판단할 때, 논리적 의미를 먼저 파악하고 선택하라.\n③ 진단: A 를 'expansive', C 를 'syntactic'으로 잘못 선택; B 는 맞음. → 처방: 문장 전체를 읽고, 괄호 안의 두 단어 중 문맥에 맞는 것을 한 번에 골라라.\n④ 진단: B 를 'negative'로 잘못 선택했음; A 와 C 는 맞음. → 처방: 문장 안에서 'positive features'라는 표현을 주의 깊게 읽고, 부정형이 아닌 긍정형을 선택하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
