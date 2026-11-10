@@ -1,6 +1,71 @@
 {
- "updated": "2026-11-09T17:44:18.465Z",
+ "updated": "2026-11-10T01:44:28.065Z",
  "samples": [
+  {
+   "ts": "2026-11-10T01:39:08.346Z",
+   "type": "요지",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 요지로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "모든 어휘의 의미를 깊이 이해하는 것이 효과적인 언어생활을 위한 가장 중요한 요소이다.",
+     "혼동하기 쉬운 어휘의 정확한 의미를 파악하는 것이 명료한 의사소통의 핵심이다.",
+     "동음이의어의 의미를 정확히 아는 것이 글쓰기 오류를 줄이는 데 중요하다.",
+     "어휘의 유래와 변화 과정을 아는 것은 언어 학습의 흥미를 높이는 데 도움이 된다.",
+     "명료한 의사소통을 위해서는 혼동하기 쉬운 어휘 목록을 꾸준히 암기하는 노력이 필요하다."
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Understanding the distinct meanings of easily confused words and homonyms is crucial for precise communication.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(범위 축소·과잉 일반화·주체·대상 교체·초점 이탈)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 지나치게 확대 해석 · ② 정답 — 핵심 논지 반영 · ③ 오답 — 지나치게 확대 해석 · ④ 오답 — 주체나 대상을 바꿔치기 · ⑤ 오답 — 소재는 같으나 논점에서 벗어남\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: Understanding the distinct meanings of easily confused words and homonyms is crucial for precise communication.]"
+   }
+  },
+  {
+   "ts": "2026-11-10T01:42:38.169Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "Confusing Words and Homonyms 19 ⓐ<u>allude</u> to refer indirectly Example: He alluded to his past as a spy. ⓑ<u>elude</u> avoid capture Example: The fugitive eluded the police for a month. illude mislead Example: He illuded her about his age. allusion an indirect mention of something illusion false perception ⓒ<u>unequivocal</u> to have more than one meaning Example: The law was ambiguous. ambivalent to have mixed feelings Example: She is ambivalent about her wedding dress. ⓓ<u>amicable</u> friendly (refers to things, not people) amiable friendly (refers to people) Example: The amiable couple had an amicable divorce. ⓔ<u>among</u> involves three or more Example: Who among us has not lied? between involves just two Example: She couldn’t decide between Chinese and Thai food. amount used for things not countable Example: We couldn’t handle that amount of ill will. number used for things that can be counted Example: The number of accidents increased by ten percent. ant a bug aunt the sister of a parent ante a bet placed before playing auntie affectionate term for a parent’s sister",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "정답 ⓒ: 문맥상 'ambiguous'가 와야 하는데 'clear'가 쓰여 부적절하다 — 해당 문장 “allusion an indirect mention of something illusion false perception ambiguous to have more than one meaning Example: The law was ambiguous.”의 논리 흐름상 ambiguous 가 맞고 clear 는 방향이 어긋난다. [극성] ambiguous (multiple meanings) ↔ clear (single meaning)\n[오답 진단·처방]\n① 진단: ‘allude’가 ‘직접적으로 말하다’라는 뜻으로 오해되어 있음. 지문에서는 ‘간접적으로 언급하다’라는 뜻으로 쓰였음. → 처방: ‘allude’는 ‘간접적으로 언급하다’라는 동사임을 사전에서 확인하고, 문맥에서 ‘직접 언급’과 구분하도록 연습한다.\n② 진단: ‘elude’가 ‘포획되다’라는 오역으로 혼동됨. 지문에서는 ‘포획을 피하다’라는 뜻으로 사용됨. → 처방: ‘elude’는 ‘피하다, 도망치다’라는 의미임을 기억하고, ‘capture’와 같은 단어와 함께 쓰인 예문을 반복해서 학습한다.\n④ 진단: ‘amicable’이 ‘사람에게 친근하다’라는 잘못된 해석이 있음. 지문에서는 ‘사람이 아닌 사안에 친근하게 대하다’라는 뜻으로 쓰임. → 처방: ‘amicable’은 ‘상황이나 관계가 평화롭다’는 의미임을 명확히 하고, ‘amiable’(사람에 친근한)과 구분하도록 연습한다.\n⑤ 진단: ‘among’이 ‘두 개의 대상 사이’라는 오해가 있음. 지문에서는 ‘세 개 이상’에 사용된다고 명시. → 처방: ‘among’은 ‘세 개 이상’에 쓰이고 ‘between’은 ‘두 개’에 쓰인다는 규칙을 외우고, 예문을 통해 차이를 체득한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-10T01:44:27.656Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": null,
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] among involves three or more Example: Who among us has not lied?",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 우리 중 누가 거짓말을 하지 않았습니까? (구문 포인트: 현재완료 시제 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-09T06:42:41.888Z",
    "type": "이어쓰기영작",
@@ -196,79 +261,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] UTAH assigns all themes to verb specifiers, yet some arguments remain semantic only.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-07T16:37:19.321Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 18 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'intermediate', 'identifies', 'correctly' / 16~20단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I believe that the analysis correctly identifies the intermediate copy as the only viable source for the PP.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 16~20단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-07T10:19:10.957Z",
-   "type": "요지",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": {
-    "P": 1,
-    "D": 0,
-    "distractorEff": 0,
-    "pass": false,
-    "flags": [
-     "과다쉬움(P̂=1.00)",
-     "변별도 낮음(D̂=0.00)",
-     "죽은오답 ②③④⑤"
-    ]
-   },
-   "q": {
-    "instruction": "다음 글의 요지로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "영어 의문사 의문문의 구성은 특정 자질을 지닌 보문소가 의문사 이동을 유발하는 통사적 병합 과정에 의해 결정된다.",
-     "영어 의문사 의문문에서 의문사 이동은 보문소에 특정 자질을 부여함으로써 통사적 병합을 가능하게 한다.",
-     "영어 의문사 의문문의 형성에서 의문사 이동은 보문소 병합 과정의 단순한 결과일 뿐 필수적인 요소는 아니다.",
-     "모든 언어의 의문문은 특정 보문소의 자질이 의문사 이동을 유발하는 통사적 과정을 거쳐 형성된다.",
-     "영어 의문사 의문문은 보문소의 존재만으로 의문사 이동이 발생하며, 특정 자질은 필수적이지 않다."
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'The syntactic derivation of an English wh-question clause involves a merging process where an interrogative complementiser with an edge feature necessitates wh-movement.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 학생은 보문소의 특정 자질이 의문사 이동을 유발하는 원인임을 혼동하여, 의문사 이동이 보문소에 자질을 부여하는 것처럼 원인과 결과를 뒤바꿔 이해했습니다. 지문은 \"C also has an edge feature [EF] requiring it to have a specifier\"라고 명시하여 보문소의 자질이 의문사 이동의 선행 조건임을 밝힙니다. → 처방: 문장에서 원인과 결과를 나타내는 표현을 정확히 파악하여 사건의 선후 관계를 명확히 구분하는 연습을 해야 합니다.\n③ 진단: 학생은 지문에서 \"English... requires wh-movement\"라고 명시된 부분을 간과하여, 의문사 이동이 필수적인 요소가 아니라고 잘못 판단했습니다. 의문사 이동은 영어 의문사 의문문 구성에 있어 필수적인 과정입니다. → 처방: 지문에서 '필수', '요구', '반드시' 등 중요성을 강조하는 표현에 주의하며 핵심 내용을 파악하는 습관을 들여야 합니다.\n④ 진단: 학생은 지문에서 \"English (unlike Chinese)\"라는 표현을 통해 영어와 중국어의 차이점을 명확히 제시했음에도 불구하고, 해당 설명이 모든 언어에 적용된다고 일반화하는 오류를 범했습니다. 지문은 영어에 국한된 설명을 합니다. → 처방: 지문에서 특정 사례나 예외를 언급하는 부분에 주목하여 설명의 적용 범위를 정확하게 파악해야 합니다.\n⑤ 진단: 학생은 보문소의 존재 자체가 아닌, 보문소에 있는 \"edge feature [EF]\"라는 특정 자질이 의문사 이동을 유발한다는 지문의 핵심 내용을 잘못 이해했습니다. 지문은 이 자질이 이동을 '요구'한다고 명시합니다. → 처방: 핵심 개념을 설명하는 문장에서 주어와 서술어, 그리고 수식어의 관계를 정확히 파악하여 원동력이 무엇인지 명확히 구분해야 합니다.\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: The syntactic derivation of an English wh-question clause involves a merging process where an interrogative complementiser with an edge feature necessitates wh-movement.]"
-   }
-  },
-  {
-   "ts": "2026-11-07T10:23:28.846Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 11 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 11단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: Wh-절은 연속적인 병합에 의해 구축되며, C ‑ bar 지정자가 필요합니다.\n주어진 단어: ( wh-clause / built / successive )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The wh-clause is built by successive merges, requiring a C‑bar specifier. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
