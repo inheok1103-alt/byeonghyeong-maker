@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-10T01:44:28.060Z",
+ "updated": "2026-11-10T10:06:07.296Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 함의 추론 문항은 지문 내에 밑줄로 명확히 표시된 특정 구절을 포함해야 하며, 해당 구절은 단순한 어휘적 의미를 넘어선 함의를 추론할 수 있는 내용을 담고 있어야 한다.",
+   "src": "자가학습:밑줄함의",
+   "score": 3,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-10T09:55:48.130Z"
+  },
+  {
+   "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
+   "src": "자가학습:서술형(자유)",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-10T10:06:02.177Z"
+  },
   {
    "rule": "모든 지문은 문법적으로 완전하며, 논리적 흐름과 일관된 주제를 갖춰 요지 추론이 가능한 완성된 글로 제시되어야 한다.",
    "src": "자가학습:요지",
@@ -113,14 +129,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-06T02:30:26.604Z"
-  },
-  {
-   "rule": "The account behind this API key doesn't have enough credits. Please [top up](https://enter.pollinations.ai/top-up?ref=agent_low_balance_topup) or [complete a quest](https://enter.pollinations.ai/quests?ref=agent_low_balance_quests), then try again.",
-   "src": "자가학습:서술형(자유)",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-06T02:40:19.082Z"
   },
   {
    "rule": "지문은 완전한 문장으로 구성하고 고등학생 수준에 맞게 과도한 전문 용어를 최소화해 간결하고 이해하기 쉬운 문장으로 재작성하며, 모든 보기는 동일한 길이와 형식으로 논리적으로 타당하고 비슷한 난이도를 제공하도록 조정한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-29T18:36:47.856Z"
-  },
-  {
-   "rule": "RESPITE의 정의와 예문을 지문에 명시하고, 모든 선지를 '일시적 relief/안도'로 통일하여 문맥 연계성을 높일 것.",
-   "src": "자가학습:빈칸(어구)",
-   "score": 61,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-29T18:37:13.994Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
