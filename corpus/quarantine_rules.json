@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-11T06:40:05.213Z",
+ "updated": "2026-11-11T15:21:45.596Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:조건영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-11T15:20:36.316Z"
+  },
   {
    "rule": "문제는 반드시 정답(또는 채점 기준)을 명시하고, 평가자가 일관되게 채점할 수 있도록 구체적인 평가 지침을 제공해야 한다.",
    "src": "자가학습:제목",
@@ -9,14 +17,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-11T06:30:18.806Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:이어쓰기영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-11T06:39:59.487Z"
   },
   {
    "rule": "문항에서 본문과 직접 관련 없는 부가 항목(예: 단어 정의 리스트)을 제거하여 응시자가 핵심 내용에 집중하도록 한다.",
