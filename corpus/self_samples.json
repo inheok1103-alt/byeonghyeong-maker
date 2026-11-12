@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-12T03:12:55.023Z",
+ "updated": "2026-11-12T11:21:49.915Z",
  "samples": [
+  {
+   "ts": "2026-11-12T11:20:50.956Z",
+   "type": "어휘(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+    "passage": "So, it seems ⓐ<u>ambiguous</u> that the grammatical properties of a phrase like help you are ⓑ<u>determined</u> by the verb help, and not by the pronoun you. Much the same can be said about the ⓒ<u>semantic</u> properties of the expression, since the phrase help you ⓓ<u>describes</u> an act of help, not a kind of person. Using the ⓔ<u>appropriate</u> technical terminology, we can say that the verb help is the head of the phrase help you, and hence that help you is a verb phrase: and in the same way as we abbreviate category labels like verb to V, so too we can abbreviate the category label verb phrase to VP. If we use the traditional labelled bracketing technique to represent the category of the overall verb phrase help you and of its constituent words (the verb help and the pronoun you), we can represent the structure of the resulting phrase as in (4) below:",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 1,
+    "explanation": "정답 ⓐ: 문맥상 'clear'가 와야 하는데 'ambiguous'가 쓰여 부적절하다 — 글은 문법적 속성이 명확하다고 서술하며 논의를 시작하는데, 이는 이어지는 상세한 설명이 확고한 기반 위에 있음을 나타낸다. 만약 속성이 모호하다면, 글의 주된 목적(설명과 명확화)과 상충된다.. [극성] 정답=명확함/확실함 ↔ 오답=모호함/불확실함\n[오답 진단·처방]\n② 진단: 선지 2번은 ‘determined’가 ‘정해지다’라는 뜻으로 문맥에 맞게 쓰였는데, 학생이 이 단어를 ‘결정했다’는 의미로만 해석해 틀렸을 가능성이 있다. → 처방: 문장 안에서 ‘determined’가 ‘정해지다’라는 의미인지 확인하고, 같은 의미를 가진 다른 단어가 있는지 살펴보라.\n③ 진단: 선지 3번은 ‘semantic’이 ‘의미의’라는 뜻으로 문맥에 맞게 쓰였는데, 학생이 ‘의미적’이라는 단어가 부적절하다고 착각했을 수 있다. → 처방: ‘semantic’이 ‘의미의’라는 뜻임을 기억하고, 문장 안에서 ‘semantic properties’가 ‘의미적 특성’을 나타내는지 검토하라.\n④ 진단: 선지 4번은 ‘describes’가 ‘묘사하다’라는 뜻으로 문맥에 맞게 쓰였는데, 학생이 ‘설명하다’와 혼동해 틀렸을 가능성이 있다. → 처방: ‘describes’가 ‘묘사하다’라는 의미임을 인지하고, 문장에서 ‘help you’가 ‘행위’를 묘사한다는 점을 확인하라.\n⑤ 진단: 선지 5번은 ‘appropriate’가 ‘적절한’이라는 뜻으로 문맥에 맞게 쓰였는데, 학생이 ‘적합한’이 아니라 ‘적절한’이라고 오해했을 수 있다. → 처방: ‘appropriate’가 ‘적절한’이라는 의미임을 기억하고, 문장 안에서 ‘appropriate technical terminology’가 ‘적절한 기술 용어’임을 재확인하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-12T11:21:34.461Z",
+   "type": "배열영작",
+   "level": "중",
+   "audit": "어법 검증 통과",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 괄호 안에 주어진 단어를 모두 바르게 배열하여 영작하시오.\n〈조건〉 주어진 단어를 모두, 한 번씩만 사용하고 어형은 그대로 쓸 것.\n우리말: '당신을 돕다'는 동사 '돕다'가 이끄는 동사구입니다.\n주어진 단어: ( verb / governed / you / phrase / verb / by / is / help / the / Help / a )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] Help you is a verb phrase governed by the verb help.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-12T03:10:23.384Z",
    "type": "제목",
@@ -225,40 +269,6 @@
     ],
     "answer": 3,
     "explanation": "정답 ⓒ: 문맥상 'ambiguous'가 와야 하는데 'clear'가 쓰여 부적절하다 — 해당 문장 “allusion an indirect mention of something illusion false perception ambiguous to have more than one meaning Example: The law was ambiguous.”의 논리 흐름상 ambiguous 가 맞고 clear 는 방향이 어긋난다. [극성] ambiguous (multiple meanings) ↔ clear (single meaning)\n[오답 진단·처방]\n① 진단: ‘allude’가 ‘직접적으로 말하다’라는 뜻으로 오해되어 있음. 지문에서는 ‘간접적으로 언급하다’라는 뜻으로 쓰였음. → 처방: ‘allude’는 ‘간접적으로 언급하다’라는 동사임을 사전에서 확인하고, 문맥에서 ‘직접 언급’과 구분하도록 연습한다.\n② 진단: ‘elude’가 ‘포획되다’라는 오역으로 혼동됨. 지문에서는 ‘포획을 피하다’라는 뜻으로 사용됨. → 처방: ‘elude’는 ‘피하다, 도망치다’라는 의미임을 기억하고, ‘capture’와 같은 단어와 함께 쓰인 예문을 반복해서 학습한다.\n④ 진단: ‘amicable’이 ‘사람에게 친근하다’라는 잘못된 해석이 있음. 지문에서는 ‘사람이 아닌 사안에 친근하게 대하다’라는 뜻으로 쓰임. → 처방: ‘amicable’은 ‘상황이나 관계가 평화롭다’는 의미임을 명확히 하고, ‘amiable’(사람에 친근한)과 구분하도록 연습한다.\n⑤ 진단: ‘among’이 ‘두 개의 대상 사이’라는 오해가 있음. 지문에서는 ‘세 개 이상’에 사용된다고 명시. → 처방: ‘among’은 ‘세 개 이상’에 쓰이고 ‘between’은 ‘두 개’에 쓰인다는 규칙을 외우고, 예문을 통해 차이를 체득한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-10T01:44:27.656Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": null,
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] among involves three or more Example: Who among us has not lied?",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 우리 중 누가 거짓말을 하지 않았습니까? (구문 포인트: 현재완료 시제 — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-09T06:42:41.888Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 18 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'simplification', 'illustrating', 'centuries' / 16~20단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] English has evolved through centuries of simplification and Celtic influence, illustrating how language both shapes and reflects thought.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 16~20단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
