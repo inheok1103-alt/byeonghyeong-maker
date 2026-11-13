@@ -1,8 +1,22 @@
 {
- "updated": "2026-11-13T08:12:21.276Z",
+ "updated": "2026-11-13T16:36:08.948Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-11-13T16:35:59.760Z",
+   "focus": "연어(collocation)를 활용한 오답 설계",
+   "note": "이 코퍼스에서는 ‘old english’, ‘university press’ 등 자연스러운 collocation이 빈번히 등장하며, 오답 설계 시 이러한 collocation을 부정확하게 변형하면 학생이 올바른 형태를 인식하기 쉽다.",
+   "rule": "출제 시 정답 문장에 자연스러운 collocation을 포함시키고, 오답 문장에는 그 collocation을 부정확하게 변형(예: preposition, article, word order)하여 학생이 올바른 collocation을 선택하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-11-12T20:07:07.114Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "CEFR 밴드를 활용한 난이도 조정",
    "note": "원서 코퍼스에서 'it'이 'he/she'로 잘못 대체된 경우(예: 'he has the risk' → 'it has the risk')가 빈번하며, 특히 추상적 주제(사업 실패 위험 등)에서 발생한다.",
    "rule": "원서 코퍼스의 실제 패턴을 반영하여, 추상적 주제(사업, 위험, 성공 등)의 경우 주어는 'it'으로 통일하되, 오답 선택지에는 인칭대명사(he/she/they)를 혼용하여 제시하여 문법적 오류를 유도하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-09-01T15:03:45.338Z",
-   "focus": "원서 문체 패턴을 활용한 변형",
-   "note": "원서 코퍼스에서 'no matter how' 구문이 'may/might' 조동사와 결합해 양보·비교 관계를 나타내는 패턴이 빈번하다는 점을 확인했다. 또한 'how + 형용사 + 주어 + 동사' 구조가 원활한 문법적 구현을 위해 조동사 삽입 없이 사용되는 경우가 드물다는 점도 관찰되었다.",
-   "rule": "원서 코퍼스 패턴을 반영하여 'no matter how'가 포함된 문장은 반드시 'may/might/can' 등 조동사를 동반한 완전한 절 구조로 출제하라. 예: 'No matter how difficult the problem is, we may solve it.'",
    "sample": [
     "old english",
     "university press",
