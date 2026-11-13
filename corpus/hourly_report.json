@@ -1,55 +1,29 @@
 {
- "updated": "2026-11-13T01:12:33.576Z",
+ "updated": "2026-11-13T08:12:21.281Z",
  "latest": {
-  "at": "2026-11-13T01:12:33.575Z",
-  "atKST": "2026-11-13 10:12 KST",
-  "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 2건",
+  "at": "2026-11-13T08:12:21.281Z",
+  "atKST": "2026-11-13 17:12 KST",
+  "headline": "이번 시간: 유형 3개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 0건",
   "newRules": [],
   "research": [
    {
     "cat": "자가학습",
-    "topic": "요지",
+    "topic": "밑줄함의",
+    "summary": "패널 점수 28 · 기준 통과"
+   },
+   {
+    "cat": "자가학습",
+    "topic": "심경변화",
     "summary": "생성 실패(키가드 폐기 포함)"
    },
    {
     "cat": "자가학습",
-    "topic": "목적",
+    "topic": "혼합통합형",
     "summary": "생성 실패(키가드 폐기 포함)"
-   },
-   {
-    "cat": "자가학습",
-    "topic": "주제",
-    "summary": "생성 실패(키가드 폐기 포함)"
-   },
-   {
-    "cat": "자가학습",
-    "topic": "우리말해석",
-    "summary": "패널 점수 0 · 규칙 1건 격리(quarantined, 사람 승인 대기)"
-   },
-   {
-    "cat": "자동 연구 회의",
-    "topic": "함의 유형: 축자 해석 오답과 과잉 확장 오답의 비율 설계",
-    "summary": "판정 실패"
-   },
-   {
-    "cat": "자동 연구 회의",
-    "topic": "주제·제목: 소재(topic)와 주제(theme)의 구분 기준 명문화",
-    "summary": "판정 실패"
    }
   ],
   "corpusResearch": [],
-  "meetings": [
-   {
-    "topic": "함의 유형: 축자 해석 오답과 과잉 확장 오답의 비율 설계",
-    "verdict": "보류",
-    "how": ""
-   },
-   {
-    "topic": "주제·제목: 소재(topic)와 주제(theme)의 구분 기준 명문화",
-    "verdict": "보류",
-    "how": ""
-   }
-  ],
+  "meetings": [],
   "totals": {
    "rules": 60,
    "corpusBooks": 582,
@@ -57,12 +31,16 @@
    "samplesStored": 12
   },
   "sample": {
-   "type": "우리말해석",
-   "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Identifying constituents 9 we need to go beyond the idea that sentences simply consist of words strung together in a flat line.",
-   "answer": 0
+   "type": "밑줄함의",
+   "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
+   "answer": 2
   }
  },
  "history": [
+  {
+   "at": "2026-11-13T08:12:21.281Z",
+   "headline": "이번 시간: 유형 3개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 0건"
+  },
   {
    "at": "2026-11-13T01:12:33.575Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 2건"
@@ -730,10 +708,6 @@
   {
    "at": "2026-10-02T12:53:07.882Z",
    "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 0개 · 검증샘플 1개 · 회의 2건"
-  },
-  {
-   "at": "2026-10-02T05:56:43.270Z",
-   "headline": "이번 시간: 유형 4개 연습 · 신규 규칙 1개 · 검증샘플 2개 · 회의 2건"
   }
  ]
 }
