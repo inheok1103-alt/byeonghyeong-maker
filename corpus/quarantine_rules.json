@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-12T20:07:39.310Z",
+ "updated": "2026-11-13T01:12:33.568Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:우리말해석",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-13T01:11:47.732Z"
+  },
   {
    "rule": "모든 출제 지문은 문법적 정확성, 의미 명확성, 완결성을 필수적으로 확보하여 독해 및 문항 출제에 적합한 형태로 제공되어야 한다.",
    "src": "자가학습:요지",
@@ -33,14 +41,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-12T03:08:19.672Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:주제문완성",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-12T03:11:15.470Z"
   },
   {
    "rule": "문항에서 본문과 직접 관련 없는 부가 항목(예: 단어 정의 리스트)을 제거하여 응시자가 핵심 내용에 집중하도록 한다.",
