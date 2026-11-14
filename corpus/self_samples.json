@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-14T11:41:57.171Z",
+ "updated": "2026-11-14T18:19:57.879Z",
  "samples": [
+  {
+   "ts": "2026-11-14T18:11:28.211Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Match each word in the first column with its definition in the second column. Check your answers here. 1. categorical a. unconditional 2. (A) [catharsis / repression] b. relieving purification 3. (B) [exclusive / catholic] c. abstinence from sex 4. (C) [gentle / caustic] d. brainy 5. celibacy e. humiliation 6. censure f. magical attractiveness 7. cerebral g. corrosive 8. chagrin h. condemn severely 9. charisma i. universal CHARLATAN (SHAR luh tun) n fraud; quack; con man • Buck was selling what he claimed was a cure for cancer, but he was just a charlatan (the pills were jelly beans). • The flea market usually attracts a lot of charlatans who sell phony products that don’t do what they claim they will. CHASM (KAZ um) n a deep, gaping hole; a gorge • Mark was so stupid that his girlfriend wondered whether there wasn’t a chasm where his brain should be. • The bad guys were gaining, so the hero grabbed the heroine and swung across the chasm on a slender vine. Note carefully the pronunciation of this word. CHASTISE (chas TYZE) v to inflict punishment on; to discipline",
+    "choices": [
+     "(A) catharsis - (B) catholic - (C) caustic",
+     "(A) catharsis - (B) exclusive - (C) caustic",
+     "(A) catharsis - (B) exclusive - (C) gentle",
+     "(A) repression - (B) catholic - (C) caustic",
+     "(A) repression - (B) exclusive - (C) caustic"
+    ],
+    "answer": 1,
+    "explanation": "정답 조합: (A) catharsis - (B) catholic - (C) caustic. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-14T11:41:42.231Z",
    "type": "이어쓰기영작",
@@ -228,31 +253,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Homonyms can mislead; understanding context clarifies meaning. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-11T06:38:16.818Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "German’s Mixed Head‑Directionality Pattern",
-     "German Determiner Precedence Pattern",
-     "German Verb‑Preceding Head‑Position Pattern",
-     "German Prepositional Head‑Position Pattern",
-     "German Head‑Directionality Across Languages"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'German demonstrates a mixed head‑directionality pattern: prepositions, determiners and complementisers precede their complements, whereas verbs follow them, showing that the head‑position parameter can vary within a single language.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 학생은 \"determiner\"가 전부 앞에 놓인다는 부분만 보고, 동사와 다른 헤드의 위치를 무시했다. 지문에 \"prepositions, determiners and complementisers canonically precede their complements, but (auxiliary and main) verbs canonically follow their complements.\" 라고 명시되어 있다. → 처방: 문제에서 요구하는 것은 모든 헤드의 위치가 아니라, 동사와 다른 헤드가 뒤에 오는 패턴을 인식하는 것. 동사 위치를 꼭 확인하라.\n③ 진단: 학생은 \"verb‑preceding\"이라는 표현을 그대로 받아들여, 동사가 앞에 온다고 착각했다. 지문은 \"verbs canonically follow their complements\"라고 명시한다. → 처방: 동사가 보어 뒤에 오는지 여부를 문장 구조에서 직접 확인해라.\n④ 진단: 학생은 \"preposition\"이 앞에 놓인다는 부분만 보고, 전치사만이 헤드 방향성을 대표한다고 판단했다. 지문은 전치사, 관사, 보조사 등 여러 헤드가 앞에 놓인다고 언급하지만, 동사는 뒤에 놓는다. → 처방: 전치사뿐 아니라 다른 헤드들의 위치도 함께 살펴보라.\n⑤ 진단: 학생은 제목이 \"Across Languages\"라고 보아, 언어 간 비교를 요구한다고 오해했다. 지문은 독일어의 내부 패턴을 설명하고 있을 뿐이다. → 처방: 문제는 독일어 내부의 헤드 방향성에 관한 것이므로, 다른 언어와의 비교는 필요 없다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: German demonstrates a mixed head‑directionality pattern: prepositions, determiners and complementisers precede their complements, whereas verbs follow them, showing that the head‑position parameter can vary within a single language.]"
    }
   }
  ]
