@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-14T03:32:11.183Z",
+ "updated": "2026-11-14T11:41:57.167Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문항의 전문성과 완성도를 확보하기 위해, 지문의 모든 텍스트 구성 요소는 완전하고 정확하게 제시되어야 한다.",
+   "src": "자가학습:어법개수형",
+   "score": 72,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-14T11:31:45.005Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:이어쓰기영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-14T11:40:20.471Z"
+  },
   {
    "rule": "질문에서 밑줄 친 대명사의 전치어를 묻는 경우, 답변은 영어로 작성하고, 해당 대명사가 가리키는 정확한 명사를 명시하며, 질문에 직접적으로 답해야 한다.",
    "src": "자가학습:지칭명시",
@@ -9,14 +25,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-14T03:32:07.024Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:우리말해석",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-13T01:11:47.732Z"
   },
   {
    "rule": "모든 출제 지문은 문법적 정확성, 의미 명확성, 완결성을 필수적으로 확보하여 독해 및 문항 출제에 적합한 형태로 제공되어야 한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-29T21:46:30.483Z"
-  },
-  {
-   "rule": "모든 문항은 원지문을 수능/내신 수준에 맞게 재구성(이론 용어 최소화, 실용적 예문 도입)하고, 발문을 '내용 일치(대의·세부·구조)와 어법 정확성'을 기준으로 구체화하며, 정·오답의 근거를 명시적으로 제시해야 한다.",
-   "src": "자가학습:혼합통합형",
-   "score": 58,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-29T21:47:18.717Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

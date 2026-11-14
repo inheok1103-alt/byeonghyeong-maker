@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-14T03:32:11.187Z",
+ "updated": "2026-11-14T11:41:57.171Z",
  "samples": [
+  {
+   "ts": "2026-11-14T11:41:42.231Z",
+   "type": "이어쓰기영작",
+   "level": "중",
+   "audit": "서술형 단어수 21 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'interchangeability', 'activities', 'describes' / 19~23단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] The text describes using verbs like see or hear with -ing forms to observe ongoing actions, noting interchangeability for brief activities.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 19~23단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-14T03:32:07.307Z",
    "type": "지칭명시",
@@ -234,25 +253,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'German demonstrates a mixed head‑directionality pattern: prepositions, determiners and complementisers precede their complements, whereas verbs follow them, showing that the head‑position parameter can vary within a single language.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n[오답 진단·처방]\n② 진단: 학생은 \"determiner\"가 전부 앞에 놓인다는 부분만 보고, 동사와 다른 헤드의 위치를 무시했다. 지문에 \"prepositions, determiners and complementisers canonically precede their complements, but (auxiliary and main) verbs canonically follow their complements.\" 라고 명시되어 있다. → 처방: 문제에서 요구하는 것은 모든 헤드의 위치가 아니라, 동사와 다른 헤드가 뒤에 오는 패턴을 인식하는 것. 동사 위치를 꼭 확인하라.\n③ 진단: 학생은 \"verb‑preceding\"이라는 표현을 그대로 받아들여, 동사가 앞에 온다고 착각했다. 지문은 \"verbs canonically follow their complements\"라고 명시한다. → 처방: 동사가 보어 뒤에 오는지 여부를 문장 구조에서 직접 확인해라.\n④ 진단: 학생은 \"preposition\"이 앞에 놓인다는 부분만 보고, 전치사만이 헤드 방향성을 대표한다고 판단했다. 지문은 전치사, 관사, 보조사 등 여러 헤드가 앞에 놓인다고 언급하지만, 동사는 뒤에 놓는다. → 처방: 전치사뿐 아니라 다른 헤드들의 위치도 함께 살펴보라.\n⑤ 진단: 학생은 제목이 \"Across Languages\"라고 보아, 언어 간 비교를 요구한다고 오해했다. 지문은 독일어의 내부 패턴을 설명하고 있을 뿐이다. → 처방: 문제는 독일어 내부의 헤드 방향성에 관한 것이므로, 다른 언어와의 비교는 필요 없다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: German demonstrates a mixed head‑directionality pattern: prepositions, determiners and complementisers precede their complements, whereas verbs follow them, showing that the head‑position parameter can vary within a single language.]"
-   }
-  },
-  {
-   "ts": "2026-11-11T06:40:00.228Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 21 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'prepositions', 'determiners', 'complements' / 19~23단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] German displays a mixed head order, but certain sentences contradict the claim that prepositions and determiners precede while verbs follow complements.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 19~23단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
