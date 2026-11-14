@@ -1,6 +1,21 @@
 {
- "updated": "2026-11-13T16:36:08.950Z",
+ "updated": "2026-11-14T03:32:11.187Z",
  "samples": [
+  {
+   "ts": "2026-11-14T03:32:07.307Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "",
+   "review": null,
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 학생들은 예시를 통해 단어의 의미를 파악하고, 그룹·개인 활동과 숙제 독해를 통해 학습을 심화한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-13T08:08:22.597Z",
    "type": "밑줄함의",
@@ -238,31 +253,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] German displays a mixed head order, but certain sentences contradict the claim that prepositions and determiners precede while verbs follow complements.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 19~23단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-10T23:36:36.802Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "WEEK 30 DAY 5 REVIEW Because you are learning these new words in context, they will stay with you. It is the natural method for seeing new words. Your ability to master words as they appear in normal situations should carry over to your learning many other words as you read. REVIEW WORDS DEFINITIONS 1.candor a. arouse or excite to activity 2.charlatan b. humiliate, embarrass 3.condescend c. little known, newly developed 4.decorum d. in high spirits, joyful 5.encumbrance e. peaceful, simple 6.extinct f. honesty, frankness 7.fledgling g. unpolished, countrified 8.galvanize h. top, prime, summit 9.gaudy i. load, handicap, burden 10.idyllic j. merry, humorous 11.jocose k. correct behavior, politeness 12.jubilant l. unlimited in power or authority, almighty 13.malign m. no longer existing 14.mortify n. lower oneself, stoop 15.omnipotent o. persuade, coax, cajole* 16.peremptory p. binding, compulsory, absolute 17.precedent q. showy, flashy 18.rustic r. slander, abuse 19.wheedle s. fraud, pretender 20.zenith t. custom, model\n\n─────────\n[요약문] The passage emphasizes that the (A) of vocabulary through contextual exposure facilitates the (B) of new terms across diverse reading situations.",
-    "choices": [
-     "(A) knowledge … (B) application",
-     "(A) forgetting … (B) stagnation",
-     "(A) acquisition … (B) transfer",
-     "(A) exposure … (B) oblivion",
-     "(A) learning … (B) retention"
-    ],
-    "answer": 3,
-    "explanation": "(A) acquisition / (B) transfer 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n[오답 진단·처방]\n① 진단: 지문은 ‘새로운 단어를 문맥 속에서 배우는 것’이 핵심이라서 ‘지식’과 ‘적용’이 아니라 ‘획득’과 ‘이전’이 맞다고 판단했다. → 처방: 문맥에서 ‘배우는 것’이 ‘획득’임을 기억하고, ‘적용’이 아니라 ‘이전’이 옳은 연결임을 상기하라.\n② 진단: ‘잊어버리는 것’과 ‘정체’라는 단어를 연결해 지문이 강조하는 ‘지속적인 학습’과 혼동했다. → 처방: 지문이 ‘새로운 단어가 문맥 속에서 남는다’는 점을 주의 깊게 읽고, ‘정체’가 아니라 ‘이전’이 핵심임을 확인하라.\n④ 진단: ‘노출’과 ‘망각’이 연결되면서 지문이 말하는 ‘지속적인 기억’과 반대되는 의미를 선택했다. → 처방: 지문에서 ‘문맥 속에서 배우면 오래 남는다’는 부분을 찾아, ‘노출’이 아니라 ‘획득’이 중요함을 인지하라.\n⑤ 진단: ‘학습’과 ‘유지’라는 단어를 그대로 연결해 지문이 강조하는 ‘이전’과 ‘전이’의 개념을 놓쳤다. → 처방: ‘학습’이 ‘획득’과 ‘전이’와 같은 과정임을 기억하고, ‘유지’가 아니라 ‘전이’가 문맥에 맞는지 판단하라.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
    }
   }
  ]
