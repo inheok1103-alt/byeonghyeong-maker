@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-15T17:53:30.660Z",
+ "updated": "2026-11-15T23:03:19.755Z",
  "samples": [
+  {
+   "ts": "2026-11-15T23:03:15.101Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] ConjP Conj’ Conj NP NP N’ N N N’ and Kim Peter While this analysis is widely accepted, it’s not uncontroversial.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] 접속사구 접속사’ 명사구 명사구 명사’ 명사 명사 명사’ 및 김 피터 이 분석은 널리 받아들여지지만 논란이 없는 것은 아닙니다.\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-15T17:52:14.467Z",
    "type": "네모어휘ABC",
@@ -246,25 +265,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'D-structure is a pure representation of thematic relations, where positions are determined by the assignment of theta-roles from predicates to arguments.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — 지나치게 확대 해석 · ③ 오답 — 정답의 일부만 담아 지엽적 · ④ 오답 — 정답의 일부만 담아 지엽적 · ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n【출제의도】 필자의 주장을 한 문장으로 요약·판단하는 능력을 평가한다. [핵심 논지: D-structure is a pure representation of thematic relations, where positions are determined by the assignment of theta-roles from predicates to arguments.]"
-   }
-  },
-  {
-   "ts": "2026-11-12T20:06:49.602Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 10 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 10단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: D-구조는 서술어에서 파생된 주어와 목적어 위치를 할당하여 통사적 역할을 부호화합니다.\n주어진 단어: ( structure / encodes / thematic )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] D‑structure encodes thematic roles, assigning predicate‑derived subject and object positions. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]

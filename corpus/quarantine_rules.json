@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-15T17:53:30.657Z",
+ "updated": "2026-11-15T23:03:19.752Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 고등학교 교육과정에 부합하는 충분한 길이와 내용의 완전한 지문을 제공하고, 그 지문에 근거한 실제 질문과 모든 선지를 함께 제시하며, 난이도와 적합성을 사전에 검증해야 한다.",
+   "src": "자가학습:장문세트",
+   "score": 2,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-15T22:54:02.425Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:우리말해석",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-15T23:03:13.508Z"
+  },
   {
    "rule": "문항을 출제할 때는 정답이 문법적으로 정확하고, 모든 선택지가 완전한 문장 형태이며, 문법적 일관성과 유일성을 확보하도록 한다.",
    "src": "자가학습:네모어법ABC",
@@ -33,14 +49,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-15T11:09:51.864Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:첫글자어휘",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-15T11:11:22.008Z"
   },
   {
    "rule": "지문과 선택지를 한국어로 완전한 문장으로 작성하고, 선택지는 5개를 모두 제공하며, 전문 용어를 최소화하고 문장 길이와 형식을 통일시켜 고등학생 수준에 맞게 조정한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-30T12:56:40.667Z"
-  },
-  {
-   "rule": "발문은 '제목 1문항, 어휘(핵심어 2개) 2문항'으로 명확히 재정의하고, 지문 전문은 완결된 형태로 제공하며, '32번 빈칸(원문 그대로, 장소를 바꿔 공부하기 설명 포함)'으로 구체화하라.",
-   "src": "자가학습:장문세트",
-   "score": 75,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-30T12:57:49.299Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
