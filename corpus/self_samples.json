@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-15T11:11:25.842Z",
+ "updated": "2026-11-15T17:53:30.660Z",
  "samples": [
+  {
+   "ts": "2026-11-15T17:52:14.467Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "It is almost certainly the case that totalitarian systems cannot allow a society to have what we would define as (A) [unstable / stable] social relationships. ✓ Totalitarianism prevents stable social relationships. 9. Hedges and intensifiers The only principle here is the Goldilocks rule: not too much, not too little, but just right. That’s little help, but this is a matter where you have to develop and then trust your ear. Too certain: In my research, I prove that people with a gun in their home use it to (B) [save / kill] themselves or a family member instead of to (C) [harm / protect] themselves from an intruder. Too uncertain: Some of my recent research seems to ­imply that there may be a risk that certain people with a gun in their homes could be more prone to use it to kill themselves or a ­family member than to protect themselves from ­possible intruders. Just right? My research indicates that people with a gun in their homes are more likely to use it to kill themselves or a family member than they are to protect themselves from an intruder.",
+    "choices": [
+     "(A) stable - (B) save - (C) protect",
+     "(A) stable - (B) kill - (C) protect",
+     "(A) stable - (B) kill - (C) harm",
+     "(A) unstable - (B) save - (C) protect",
+     "(A) unstable - (B) save - (C) harm"
+    ],
+    "answer": 2,
+    "explanation": "정답 조합: (A) stable - (B) kill - (C) protect. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-15T11:03:49.971Z",
    "type": "문장삽입",
@@ -240,31 +265,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] D‑structure encodes thematic roles, assigning predicate‑derived subject and object positions. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-12T11:20:50.956Z",
-   "type": "어휘(밑줄)",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(치환·밑줄 코드처리·문장분산·담화근거 해설) · 어휘 위치검증 통과",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
-    "passage": "So, it seems ⓐ<u>ambiguous</u> that the grammatical properties of a phrase like help you are ⓑ<u>determined</u> by the verb help, and not by the pronoun you. Much the same can be said about the ⓒ<u>semantic</u> properties of the expression, since the phrase help you ⓓ<u>describes</u> an act of help, not a kind of person. Using the ⓔ<u>appropriate</u> technical terminology, we can say that the verb help is the head of the phrase help you, and hence that help you is a verb phrase: and in the same way as we abbreviate category labels like verb to V, so too we can abbreviate the category label verb phrase to VP. If we use the traditional labelled bracketing technique to represent the category of the overall verb phrase help you and of its constituent words (the verb help and the pronoun you), we can represent the structure of the resulting phrase as in (4) below:",
-    "choices": [
-     "ⓐ",
-     "ⓑ",
-     "ⓒ",
-     "ⓓ",
-     "ⓔ"
-    ],
-    "answer": 1,
-    "explanation": "정답 ⓐ: 문맥상 'clear'가 와야 하는데 'ambiguous'가 쓰여 부적절하다 — 글은 문법적 속성이 명확하다고 서술하며 논의를 시작하는데, 이는 이어지는 상세한 설명이 확고한 기반 위에 있음을 나타낸다. 만약 속성이 모호하다면, 글의 주된 목적(설명과 명확화)과 상충된다.. [극성] 정답=명확함/확실함 ↔ 오답=모호함/불확실함\n[오답 진단·처방]\n② 진단: 선지 2번은 ‘determined’가 ‘정해지다’라는 뜻으로 문맥에 맞게 쓰였는데, 학생이 이 단어를 ‘결정했다’는 의미로만 해석해 틀렸을 가능성이 있다. → 처방: 문장 안에서 ‘determined’가 ‘정해지다’라는 의미인지 확인하고, 같은 의미를 가진 다른 단어가 있는지 살펴보라.\n③ 진단: 선지 3번은 ‘semantic’이 ‘의미의’라는 뜻으로 문맥에 맞게 쓰였는데, 학생이 ‘의미적’이라는 단어가 부적절하다고 착각했을 수 있다. → 처방: ‘semantic’이 ‘의미의’라는 뜻임을 기억하고, 문장 안에서 ‘semantic properties’가 ‘의미적 특성’을 나타내는지 검토하라.\n④ 진단: 선지 4번은 ‘describes’가 ‘묘사하다’라는 뜻으로 문맥에 맞게 쓰였는데, 학생이 ‘설명하다’와 혼동해 틀렸을 가능성이 있다. → 처방: ‘describes’가 ‘묘사하다’라는 의미임을 인지하고, 문장에서 ‘help you’가 ‘행위’를 묘사한다는 점을 확인하라.\n⑤ 진단: 선지 5번은 ‘appropriate’가 ‘적절한’이라는 뜻으로 문맥에 맞게 쓰였는데, 학생이 ‘적합한’이 아니라 ‘적절한’이라고 오해했을 수 있다. → 처방: ‘appropriate’가 ‘적절한’이라는 의미임을 기억하고, 문장 안에서 ‘appropriate technical terminology’가 ‘적절한 기술 용어’임을 재확인하라.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

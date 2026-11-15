@@ -1,8 +1,22 @@
 {
- "updated": "2026-11-15T11:11:25.839Z",
+ "updated": "2026-11-15T17:53:30.658Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-11-15T17:53:13.263Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "이 코퍼스 예시에서 주어와 동사의 수 일치, 전치사·관사 사용, 시제·형태소 일관성, 철자·대소문자 오류가 빈번히 나타났음을 확인했다.",
+   "rule": "문항을 만들 때는 문장마다 주어와 동사의 수가 일치하도록, 전치사와 관사가 문맥에 맞게 사용되도록, 시제와 형태소가 일관되도록, 철자와 대소문자 오류가 없도록 교정한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-11-13T16:35:59.760Z",
    "focus": "연어(collocation)를 활용한 오답 설계",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "과거시제와 현재시제의 혼용, 부정사 구문의 오류, 관사의 누락이 빈번히 관찰된다. 특히 'told that do not' → 'told not to'와 같이 동사+that+절 구조의 오류가 반복된다.",
    "rule": "원문에서 'told that + 부정어 + 동사원형' 패턴이 나타나면, 이를 'told not to + 동사원형'으로 수정하는 규칙을 기반으로 문항을 설계하라. 예: 'They are told that do not run' → 'They are told not to run'.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-09-01T18:37:08.124Z",
-   "focus": "CEFR 밴드를 활용한 난이도 조정",
-   "note": "원서 코퍼스에서 'it'이 'he/she'로 잘못 대체된 경우(예: 'he has the risk' → 'it has the risk')가 빈번하며, 특히 추상적 주제(사업 실패 위험 등)에서 발생한다.",
-   "rule": "원서 코퍼스의 실제 패턴을 반영하여, 추상적 주제(사업, 위험, 성공 등)의 경우 주어는 'it'으로 통일하되, 오답 선택지에는 인칭대명사(he/she/they)를 혼용하여 제시하여 문법적 오류를 유도하라.",
    "sample": [
     "old english",
     "university press",
