@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-16T11:34:33.587Z",
+ "updated": "2026-11-16T22:16:57.734Z",
  "samples": [
+  {
+   "ts": "2026-11-16T22:15:51.252Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① The new information about the subject comes at the end of the sentence.\n② Look at these two sentences.\n③ We say Bell invented the telephone because we are talking about Bell, and the new information is that he invented the telephone.\n④ ACTIVE Bell invented the telephone.\n⑤ PASSIVE The telephone was invented by Bell.\n⑥ The two sentences have the same meaning, but they are about different things.\n⑦ One sentence is about Bell, and the other is about the telephone.\n⑧ Each sentence begins with the subject.\n⑨ The subject is the startingpoint of the sentence, the thing we are talking about.",
+    "choices": [
+     "②-⑨-⑧-⑤-⑥-①-④-③-⑦",
+     "②-④-⑤-⑥-⑦-⑨-⑧-①-③",
+     "④-②-⑤-⑥-⑦-⑧-⑨-①-③",
+     "②-④-⑤-⑦-⑥-⑧-⑨-①-③",
+     "②-④-⑤-⑥-⑦-⑧-⑨-①-③"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ②-④-⑤-⑥-⑦-⑧-⑨-①-③. 흐름: ② → ④ → ⑤ → ⑥ → ⑦ → ⑧ → ⑨ → ① → ③ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-16T11:33:32.572Z",
    "type": "어법(밑줄)",
@@ -246,25 +271,6 @@
     ],
     "answer": 2,
     "explanation": "밑줄 친 부분은 'The way one speaks reveals inner thoughts and moral character.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘reflect’를 ‘개인 배경과 경험을 반영한다’라고 잘못 해석함 → 처방: 문장에서 ‘reflect’가 ‘정신·도덕적 성향을 반영한다’는 의미임을 인식하고, 배경이 아니라 ‘정신적·도덕적’에 주목하라.\n③ 진단: ‘언어는 문화 간 소통 도구’라는 일반적 생각에 휩쓸려 핵심 문장을 놓침 → 처방: 문장 전반을 읽으며 ‘우리 언어가 우리의 마음의 질을 반영한다’는 구체적 표현에 집중하라.\n④ 진단: ‘말하는 방식이 내면 생각과 무관하다’라고 오해함 → 처방: ‘reflect’가 ‘내면의 성향을 보여준다’는 점을 기억하고, ‘무관하다’는 해석은 배제하라.\n⑤ 진단: ‘감정’과 ‘정신·도덕적 성향’을 혼동해 ‘오늘의 기분을 드러낸다’라고 판단함 → 처방: ‘quality of mind’가 ‘정신·도덕적 수준’을 가리키므로, ‘감정’이 아니라 ‘정신·도덕적’과 연결된다는 점을 인지하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-13T01:12:16.054Z",
-   "type": "우리말해석",
-   "level": "중",
-   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Identifying constituents 9 we need to go beyond the idea that sentences simply consist of words strung together in a flat line.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 구성 요소 식별 9: 우리는 문장이 단순히 평면적으로 연결된 단어들의 모음에 불과하다는 생각을 넘어야 한다. (구문 포인트: that절 (명사절) — 반영 여부가 채점 축)\n【출제의도】 지문의 핵심 내용을 우리말 한 문장으로 정확히 서술하는 이해·표현력을 평가한다."
    }
   }
  ]

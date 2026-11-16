@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-16T11:34:33.584Z",
+ "updated": "2026-11-16T22:16:57.730Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:전체문장배열",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-16T22:14:12.774Z"
+  },
   {
    "rule": "모든 어법 문항의 지문은 전문 지식 이해를 요구하지 않는 일반적인 수준의 내용으로 구성하여, 오직 어법 능력 평가에만 집중하도록 해야 한다.",
    "src": "자가학습:어법(밑줄)",
@@ -17,14 +25,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-15T22:54:02.425Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:우리말해석",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-15T23:03:13.508Z"
   },
   {
    "rule": "문항을 출제할 때는 정답이 문법적으로 정확하고, 모든 선택지가 완전한 문장 형태이며, 문법적 일관성과 유일성을 확보하도록 한다.",
