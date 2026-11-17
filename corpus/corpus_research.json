@@ -1,8 +1,22 @@
 {
- "updated": "2026-11-17T14:38:20.648Z",
+ "updated": "2026-11-17T23:02:37.255Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-11-17T23:02:28.780Z",
+   "focus": "원서 문체 패턴을 활용한 변형",
+   "note": "원서 문체에서는 전치사 구와 연결 부사절이 자주 사용되며, 주어와 동사의 시제 일치가 핵심이다.",
+   "rule": "문제 출제 시, 전치사 구(예: 'in writing', 'throughout our lives')와 연결 부사절(예: 'but when we are in possession')을 그대로 유지하고, 주어와 동사의 시제 일치를 검증하도록 한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-11-15T17:53:13.263Z",
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
@@ -820,20 +834,6 @@
    "focus": "연어(collocation)를 활용한 오답 설계",
    "note": "과거시제와 현재시제가 혼용된 문장에서 오류가 자주 발생하며, 특히 'when'이나 'if' 절에서 시간적·조건적 일관성이 깨지는 경우가 많다.",
    "rule": "시제 일관성(tense consistency)을 요구하는 문제에서, 'when', 'if', 'as' 등 시간·조건 접속사가 포함된 문장은 반드시 모든 동사가 동일한 시제(과거/현재/미래)로 통일되어야 한다. 예: 'When I started (과거) completing my homework on time, I gradually improved (과거).'",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-09-01T21:55:06.956Z",
-   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
-   "note": "과거시제와 현재시제의 혼용, 부정사 구문의 오류, 관사의 누락이 빈번히 관찰된다. 특히 'told that do not' → 'told not to'와 같이 동사+that+절 구조의 오류가 반복된다.",
-   "rule": "원문에서 'told that + 부정어 + 동사원형' 패턴이 나타나면, 이를 'told not to + 동사원형'으로 수정하는 규칙을 기반으로 문항을 설계하라. 예: 'They are told that do not run' → 'They are told not to run'.",
    "sample": [
     "old english",
     "university press",
