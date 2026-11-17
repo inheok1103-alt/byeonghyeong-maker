@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-17T04:37:59.655Z",
+ "updated": "2026-11-17T14:38:20.647Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문장은 문법적, 의미적으로 완전하고 독립적인 내용을 담아, 문장 배열 문제의 개별 단위로서 온전히 기능할 수 있도록 어떠한 불완전하거나 불필요한 요소도 포함하지 않아야 한다.",
+   "src": "자가학습:전체문장배열",
+   "score": 22,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-17T14:29:16.314Z"
+  },
+  {
+   "rule": "지문은 주제와 문맥이 일관되며, 문장 구조가 완전하고 자연스러워야 하므로, 모든 출제 자료를 처음부터 끝까지 통일성 있게 검토하고, 불필요하거나 부적절한 문장은 삭제하거나 적절한 대체 문장으로 교체한다.",
+   "src": "자가학습:내용불일치",
+   "score": 47,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-17T14:32:02.344Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:지칭명시",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-17T14:37:27.174Z"
+  },
   {
    "rule": "문항은 목적에 맞게 단일 정답 번호만 제시하고, 모든 선지는 길이와 문장 구조가 일관되며 의미가 명확하고 중립적으로 표현되어야 한다.",
    "src": "자가학습:목적",
@@ -17,14 +41,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-17T04:37:39.163Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:전체문장배열",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-16T22:14:12.774Z"
   },
   {
    "rule": "모든 어법 문항의 지문은 전문 지식 이해를 요구하지 않는 일반적인 수준의 내용으로 구성하여, 오직 어법 능력 평가에만 집중하도록 해야 한다.",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-30T21:09:27.893Z"
-  },
-  {
-   "rule": "원문의 논리적 조건과 시제를 엄격히 유지하면서 'where'를 활용한 관계절로 전환하고, 원문의 모든 핵심 요소(예: 'it is clear that', 'conversely', 'requirement' 등)를 누락 없이 포함하는 완전한 문장으로 재작성하라.",
-   "src": "자가학습:문장전환",
-   "score": 59,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-30T21:14:09.444Z"
-  },
-  {
-   "rule": "모든 출제에서 동사 수 일치·선지 통일성·문맥 완성도를 고려해, \"주어의 복수/단수에 관계없이 문맥과 자연스러움을 우선한 동사 선택과, 선지의 길이·구조·내용 중복을 제거한 균등한 난이도와 형식의 통일을 반드시 확보하라.",
-   "src": "자가학습:네모어법ABC",
-   "score": 35,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-30T17:32:29.325Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

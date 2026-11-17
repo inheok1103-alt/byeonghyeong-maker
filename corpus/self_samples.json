@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-17T04:37:59.659Z",
+ "updated": "2026-11-17T14:38:20.651Z",
  "samples": [
+  {
+   "ts": "2026-11-17T14:38:03.592Z",
+   "type": "지칭명시",
+   "level": "중",
+   "audit": "서술형 단어수 10 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 문장에서 ‘he’가 지칭하는 명사구를 찾아라. \n또한 그 명사구의 경계(한정사 포함 여부)를 명시하라. \n\n문장: *I saw him twitch the curtain entails I saw him.*",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] ‘he’는 “the curtain”를 지칭한다. \n명사구: **the curtain** (한정사 ‘the’ 포함)\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 형식·표현 준수 · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내).\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-17T04:34:11.490Z",
    "type": "글의순서",
@@ -258,25 +277,6 @@
     ],
     "answer": 1,
     "explanation": "정답 조합: (A) catharsis - (B) catholic - (C) caustic. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-14T11:41:42.231Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 21 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'interchangeability', 'activities', 'describes' / 19~23단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] The text describes using verbs like see or hear with -ing forms to observe ongoing actions, noting interchangeability for brief activities.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 19~23단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
