@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-16T22:16:57.730Z",
+ "updated": "2026-11-17T04:37:59.655Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문항은 목적에 맞게 단일 정답 번호만 제시하고, 모든 선지는 길이와 문장 구조가 일관되며 의미가 명확하고 중립적으로 표현되어야 한다.",
+   "src": "자가학습:목적",
+   "score": 18,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-17T04:36:19.693Z"
+  },
+  {
+   "rule": "모든 빈칸(문장) 문항은 평가자가 객관적으로 채점할 수 있도록, 문항과 정답이 명확히 일치하며, 주관적 해석이 필요 없는 구체적이고 측정 가능한 기준을 제공하도록 설계한다.",
+   "src": "자가학습:빈칸(문장)",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-17T04:37:39.163Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:전체문장배열",
@@ -1585,22 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-30T17:32:29.325Z"
-  },
-  {
-   "rule": "지문 내용의 뉘앙스를 정확히 반영하기 위해 선지에는 '필수적', '전혀', '없으면 ~ 없다'와 같은 절대적·극단적 표현을 배제하고, '기여한다', '영향을 미친다', '중요한 역할을 한다' 등 상대적·상대화된 표현을 사용하여야 한다.",
-   "src": "자가학습:요지",
-   "score": 61,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-30T17:33:10.447Z"
-  },
-  {
-   "rule": "모든 문항은 정답(ⓔ)과 수정안(예: 'helps' → 'help')을 명시하고, 오류 유형을 분석(수일치·시제·태·준동사·병렬 등)한 후 채점 루브릭에 따라 점수를 부여해야 한다.",
-   "src": "자가학습:어법수정",
-   "score": 22,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-30T17:33:44.101Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."

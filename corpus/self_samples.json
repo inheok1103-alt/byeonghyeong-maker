@@ -1,6 +1,52 @@
 {
- "updated": "2026-11-16T22:16:57.734Z",
+ "updated": "2026-11-17T04:37:59.659Z",
  "samples": [
+  {
+   "ts": "2026-11-17T04:34:11.490Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "Domestic wine is wine from this country, as opposed to wine imported from, say, France.\n\n(A) thin out 3. of the household 4. firmly held system of ideas 5. easily taught 6. arrogantly assertive 7.\n\n(B) The domestic steel industry is the steel industry in this country. A country that enjoys domestic tranquility is a happy country on the homefront. Quick Quiz #34 Match each word in the first column with its definition in the second column. Check your answers here. committed to a theory 2.\n\n(C) tell apart 9. spread seeds 11. disintegration DORMANT (DOR munt) adj inactive; as though asleep; asleep Dormant, like dormitory, comes from a root meaning sleep. • Mt. Vesuvius erupted violently and then fell dormant for several hundred years. Many plants remain dormant through the winter; that is, they stop growing until spring.",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 2,
+    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 문장 구조를 그대로 따라가려다 각 단락이 서로 다른 문맥을 갖는다는 점을 놓쳤다. → 처방: 각 단락의 주제어와 문맥을 먼저 파악하고, 그 뒤에 연결 순서를 정하라.\n③ 진단: ‘Domestic’가 ‘국내’라는 뜻이라 생각해 첫 단락이 가장 자연스럽다고 착각했다. → 처방: ‘Domestic’의 의미가 반복되는지 여부를 확인하고, 가장 유사한 문맥을 먼저 배치하라.\n④ 진단: ‘Dormant’이 ‘잠자는’ 뜻이라 생각해 세 번째 단락이 가장 적합하다고 판단했다. → 처방: 각 단락이 제시하는 예시나 설명이 서로 연관되는지 비교해 보라.\n⑤ 진단: ‘Domestic’이 두 번째 단락에만 등장한다는 사실을 간과했다. → 처방: 단락마다 등장하는 핵심 단어를 리스트업하고, 그 순서대로 연결해 보라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-17T04:37:59.448Z",
+   "type": "빈칸(문장)",
+   "level": "중",
+   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": null,
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
+    "passage": "Domestic wine is wine from this country, as opposed to wine imported from, say, France. The domestic steel industry is the steel industry in this country. A country that enjoys domestic tranquility is a happy country on the homefront. Quick Quiz #34 Match each word in the first column with its definition in the second column. Check your answers here. committed to a theory 2. thin out 3. of the household 4. firmly held system of ideas 5. easily taught 6. arrogantly assertive 7. tell apart 9. spread seeds 11. disintegration DORMANT (DOR munt) adj inactive; as though asleep; asleep Dormant, like dormitory, comes from a root meaning sleep. • Mt. Vesuvius erupted violently and then fell dormant for several hundred years. [ ]",
+    "choices": [
+     "Many plants continue to grow throughout the winter, never pausing until spring.",
+     "Many plants stay inactive during the winter, only beginning to grow again in spring.",
+     "The statement is unrelated to plant growth patterns during seasonal changes.",
+     "Many plants become dormant during the summer, starting to grow in winter.",
+     "All plants remain dormant year‑round, never resuming growth at any time."
+    ],
+    "answer": 2,
+    "explanation": "빈칸에는 원문 'Many plants remain dormant through the winter; that is, they stop growing until spring.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장에 \"grow\"가 계속 진행되는 의미라 생각해 \"계속 자라\"로 해석했음 → 처방: 동사 시제와 의미를 다시 확인하고, ‘grow’가 ‘계속 성장한다’는 뜻인지 ‘잠복한다’는 뜻인지 판단하라.\n③ 진단: 문장과 주제의 연관성을 무시하고 무관하다고 판단했음 → 처방: 문맥과 주제어를 먼저 파악하고, 질문이 무엇을 묻는지 명확히 파악하라.\n④ 진단: ‘dormant’가 여름에 잠복한다는 잘못된 해석을 했음 → 처방: ‘dormant’의 의미가 ‘잠복’이라면 언제 잠복하는지 문장에 명시된 계절을 확인하라.\n⑤ 진단: 모든 식물이 항상 잠복한다는 과도한 일반화로 판단했음 → 처방: 문장에 제시된 사실을 그대로 적용하고, ‘모든’이라는 일반화가 문장에 있는지 확인하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-16T22:15:51.252Z",
    "type": "전체문장배열",
@@ -231,46 +277,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] The text describes using verbs like see or hear with -ing forms to observe ongoing actions, noting interchangeability for brief activities.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 19~23단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-14T03:32:07.307Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": null,
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 학생들은 예시를 통해 단어의 의미를 파악하고, 그룹·개인 활동과 숙제 독해를 통해 학습을 심화한다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-13T08:08:22.597Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "Because some writers are seized by the idea that writing is good only when it’s free of errors that only a grammarian can explain, they write graceless prose. If you want to begin a sentence with a clause expressing ­familiar information about causation, introduce the clause with since, because since implies that the reader already knows what is in the clause: ✓ <u>Since our language seems to reflect our quality of mind</u>, it is easy for those inclined to look down on others to think that grammatical “errors” indicate mental or moral deficiency. There are exceptions to this principle, but it’s generally sound. 2. “Use the relative pronoun that—not which—for ­restrictive clauses.” Allegedly not this: ✓ Next is a typical situation which a practiced writer corrects “for style” virtually by reflex action. —Jacques Barzun, Simple and Direct Yet just a few sentences before, Barzun himself (one of our most eminent intellectual historians and critics of style) had asserted:",
-    "choices": [
-     "Everyone's words reflect their personal background and life experiences today.",
-     "The way one speaks reveals inner thoughts and moral character.",
-     "Language is a tool used for communication among diverse cultures.",
-     "The way we speak has no bearing on inner thoughts.",
-     "Our speech can sometimes show how we feel today."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'The way one speaks reveals inner thoughts and moral character.'을 함의한다.\n[오답 진단·처방]\n① 진단: ‘reflect’를 ‘개인 배경과 경험을 반영한다’라고 잘못 해석함 → 처방: 문장에서 ‘reflect’가 ‘정신·도덕적 성향을 반영한다’는 의미임을 인식하고, 배경이 아니라 ‘정신적·도덕적’에 주목하라.\n③ 진단: ‘언어는 문화 간 소통 도구’라는 일반적 생각에 휩쓸려 핵심 문장을 놓침 → 처방: 문장 전반을 읽으며 ‘우리 언어가 우리의 마음의 질을 반영한다’는 구체적 표현에 집중하라.\n④ 진단: ‘말하는 방식이 내면 생각과 무관하다’라고 오해함 → 처방: ‘reflect’가 ‘내면의 성향을 보여준다’는 점을 기억하고, ‘무관하다’는 해석은 배제하라.\n⑤ 진단: ‘감정’과 ‘정신·도덕적 성향’을 혼동해 ‘오늘의 기분을 드러낸다’라고 판단함 → 처방: ‘quality of mind’가 ‘정신·도덕적 수준’을 가리키므로, ‘감정’이 아니라 ‘정신·도덕적’과 연결된다는 점을 인지하라.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
    }
   }
  ]
