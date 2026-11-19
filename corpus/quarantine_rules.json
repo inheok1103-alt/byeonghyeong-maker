@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-19T13:22:26.716Z",
+ "updated": "2026-11-19T21:43:53.197Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:지칭명시",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-19T21:43:19.998Z"
+  },
   {
    "rule": "모든 출제 문항은 지문과 선택지 등 모든 구성 요소가 온전하게 완성되어야 하며, 문법적 정확성을 포함한 일체의 오류가 없어야 한다.",
    "src": "자가학습:네모어법ABC",
@@ -17,14 +25,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-19T13:20:03.411Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:이어쓰기영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-19T13:22:24.591Z"
   },
   {
    "rule": "문제의 핵심 개념을 정확히 파악하고, 그 개념을 바탕으로 한 문장씩 단계적으로 정리한 뒤, 각 단계에서 핵심 문장을 한 문장으로 재구성하도록 한다.",
