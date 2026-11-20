@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-19T21:43:53.201Z",
+ "updated": "2026-11-20T03:26:07.690Z",
  "samples": [
+  {
+   "ts": "2026-11-20T03:24:45.504Z",
+   "type": "의견영작",
+   "level": "중",
+   "audit": "서술형 단어수 13 실측·발문 동기화",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'constructions', 'mastering', 'essential' / 11~15단어로 쓸 것",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] I believe that mastering passive constructions is essential for clear, nuanced academic writing.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 11~15단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-19T21:42:57.716Z",
    "type": "글의순서",
@@ -236,31 +255,6 @@
     ],
     "answer": 2,
     "explanation": "빈칸에는 원문 'Many plants remain dormant through the winter; that is, they stop growing until spring.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장에 \"grow\"가 계속 진행되는 의미라 생각해 \"계속 자라\"로 해석했음 → 처방: 동사 시제와 의미를 다시 확인하고, ‘grow’가 ‘계속 성장한다’는 뜻인지 ‘잠복한다’는 뜻인지 판단하라.\n③ 진단: 문장과 주제의 연관성을 무시하고 무관하다고 판단했음 → 처방: 문맥과 주제어를 먼저 파악하고, 질문이 무엇을 묻는지 명확히 파악하라.\n④ 진단: ‘dormant’가 여름에 잠복한다는 잘못된 해석을 했음 → 처방: ‘dormant’의 의미가 ‘잠복’이라면 언제 잠복하는지 문장에 명시된 계절을 확인하라.\n⑤ 진단: 모든 식물이 항상 잠복한다는 과도한 일반화로 판단했음 → 처방: 문장에 제시된 사실을 그대로 적용하고, ‘모든’이라는 일반화가 문장에 있는지 확인하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-16T22:15:51.252Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① The new information about the subject comes at the end of the sentence.\n② Look at these two sentences.\n③ We say Bell invented the telephone because we are talking about Bell, and the new information is that he invented the telephone.\n④ ACTIVE Bell invented the telephone.\n⑤ PASSIVE The telephone was invented by Bell.\n⑥ The two sentences have the same meaning, but they are about different things.\n⑦ One sentence is about Bell, and the other is about the telephone.\n⑧ Each sentence begins with the subject.\n⑨ The subject is the startingpoint of the sentence, the thing we are talking about.",
-    "choices": [
-     "②-⑨-⑧-⑤-⑥-①-④-③-⑦",
-     "②-④-⑤-⑥-⑦-⑨-⑧-①-③",
-     "④-②-⑤-⑥-⑦-⑧-⑨-①-③",
-     "②-④-⑤-⑦-⑥-⑧-⑨-①-③",
-     "②-④-⑤-⑥-⑦-⑧-⑨-①-③"
-    ],
-    "answer": 5,
-    "explanation": "정답 배열은 ②-④-⑤-⑥-⑦-⑧-⑨-①-③. 흐름: ② → ④ → ⑤ → ⑥ → ⑦ → ⑧ → ⑨ → ① → ③ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
