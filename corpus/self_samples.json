@@ -1,6 +1,56 @@
 {
- "updated": "2026-11-20T03:26:07.690Z",
+ "updated": "2026-11-20T13:04:35.892Z",
  "samples": [
+  {
+   "ts": "2026-11-20T13:01:29.480Z",
+   "type": "필자주장",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 필자가 주장하는 바로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "시각 및 청각 동사는 다른 감각 동사와 달리 복합적인 기능적 차이를 보이므로, 이들을 별개의 동음이의어로 인식해야 한다.",
+     "시각 및 청각 동사를 동음이의어로 다루는 방식이 다른 감각 동사와의 기능적 차이를 발생시키므로, 그 사용법을 면밀히 검토해야 한다.",
+     "시각 및 청각 동사가 세 가지 의미로 모두 사용되지 않는다는 점에만 주목하여, 이들을 별개의 동음이의어로 분류해야 한다.",
+     "모든 동음이의어는 특정한 문법적 기능보다 개별적인 기능적 차이를 기준으로 분류하고 그 사용법을 명확히 정립해야 한다.",
+     "시각 및 청각 동사가 다른 감각 동사와 유사하게 세 가지 의미로 폭넓게 사용될 수 있도록 문법적 규칙을 재정립해야 한다."
+    ],
+    "answer": 1,
+    "explanation": "글의 핵심 논지는 'It is as well to treat SEE and HEAR as different homonymous verbs rather than to account for them in terms of grammatical function, given their functional differences and the fact that they are not used in all three senses like other sensory verbs.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·조건·전제 누락)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영· ② 오답 — 원인과 결과를 뒤바꿈· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 지나치게 확대 해석· ⑤ 오답 — 핵심 조건·전제를 빠뜨림\n[오답 진단·처방]\n② 진단: 학생은 ‘시각·청각 동사’가 ‘동음이의어’로 다뤄진다고 해석하면서, ‘기능적 차이’가 ‘사용법을 면밀히 검토해야 한다’는 의미로 잘못 연결했다. 지문에서는 ‘동음이의어’로 인식해야 한다고 명시하고 있다. → 처방: 동음이의어라는 용어가 의미하는 바를 먼저 파악하고, 그 뒤에 기능적 차이와 사용법을 구분해 읽어라.\n③ 진단: 학생은 ‘세 가지 의미로 모두 사용되지 않는다’는 점만을 강조해 ‘동음이의어’로 분류해야 한다고 해석했다. 지문은 ‘세 가지 의미로 모두 사용되지 않는다’는 사실을 언급하지만, 그 이유가 ‘동음이의어’로 인식해야 한다는 점이다. → 처방: ‘세 가지 의미로 모두 사용되지 않는다’는 사실을 한 가지 이유로만 보는 것이 아니라, 그 이유가 ‘동음이의어’인지 확인하라.\n④ 진단: 학생은 ‘모든 동음이의어’를 ‘특정 문법적 기능보다 개별적 기능적 차이’로 분류해야 한다고 해석했다. 지문은 시각·청각 동사에 한정하여 ‘동음이의어’로 인식해야 한다고 명시하고 있다. → 처방: 문제에서 요구되는 범위(시각·청각 동사)에 집중하고, ‘모든 동음이의어’라는 일반화는 제외하라.\n⑤ 진단: 학생은 ‘시각·청각 동사’가 ‘세 가지 의미로 폭넓게 사용될 수 있도록 문법적 규칙을 재정립해야 한다’고 해석했다. 지문은 오히려 ‘세 가지 의미로 모두 사용되지 않는다’는 점을 강조하며, 별개의 동음이의어로 인식해야 한다고 주장한다. → 처방: ‘재정립’이라는 적극적 변화를 요구하는 문장을 읽을 때, 지문이 실제로 ‘재정립’이 아니라 ‘인식’에 초점을 두고 있는지 확인하라.\n【출제의도】 필자의 당위 주장을 근거와 함께 파악하는 능력을 평가한다. [핵심 논지: It is as well to treat SEE and HEAR as different homonymous verbs rather than to account for them in terms of grammatical function, given their functional differences and the fact that they are not used in all three senses like other sensory verbs.]"
+   }
+  },
+  {
+   "ts": "2026-11-20T13:04:19.467Z",
+   "type": "연결어빈칸",
+   "level": "중",
+   "audit": "정답 코드생성됨(LLM 지정 연결어를 코드가 원문검증·빈칸화) · ⚠ 정답 재검토 권고 — 솔버 1/1가 3번 선택(기록 5번 유지, 코드파생형은 만장일치만 교정)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 3,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "I feel something rough. The cloth feels rough. I'm feeling the cloth. ASPECT The verbs SEE and HEAR are not similarly used in three senses. ___(A)___ different verbs are used: (LOOK) (LOOK AT) I see my brother. He looks well. I'm looking at my brother. I hear music. (SOUND) It sounds beautiful. (LISTEN TO) I'm listening to the music. Diagrammatically these can be displayed in three columns: SMELL SMELL SMELL TASTE TASTE TASTE FEEL FEEL FEEL SEE LOOK LOOK AT HEAR SOUND LISTEN TO (I) Lists private verbs with the sense of 'acquire the sensation', (2) verbs of state with the sense of 'produce the sensation', and (3) verbs that are not non-progressive and have the sense of 'act to acquire the sensation'. ___(B)___ in these functions and especially in view of the fact that SEE and HEAR are not used in all three senses, it is as well to treat them as different homonymous verbs rather than to account for them in terms of grammatical function.",
+    "choices": [
+     "Indeed …… Above all",
+     "In comparable senses …… Similarly",
+     "In other words …… In addition",
+     "In comparable senses …… That is",
+     "In comparable senses …… In view of the differences"
+    ],
+    "answer": 5,
+    "explanation": "(A)는 앞 내용과 '예시' 관계로 In comparable senses, (B)는 '인과' 관계로 In view of the differences가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-20T03:24:45.504Z",
    "type": "의견영작",
@@ -209,52 +259,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] ‘he’는 “the curtain”를 지칭한다. \n명사구: **the curtain** (한정사 ‘the’ 포함)\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 형식·표현 준수 · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내).\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-17T04:34:11.490Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "Domestic wine is wine from this country, as opposed to wine imported from, say, France.\n\n(A) thin out 3. of the household 4. firmly held system of ideas 5. easily taught 6. arrogantly assertive 7.\n\n(B) The domestic steel industry is the steel industry in this country. A country that enjoys domestic tranquility is a happy country on the homefront. Quick Quiz #34 Match each word in the first column with its definition in the second column. Check your answers here. committed to a theory 2.\n\n(C) tell apart 9. spread seeds 11. disintegration DORMANT (DOR munt) adj inactive; as though asleep; asleep Dormant, like dormitory, comes from a root meaning sleep. • Mt. Vesuvius erupted violently and then fell dormant for several hundred years. Many plants remain dormant through the winter; that is, they stop growing until spring.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 2,
-    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: 문장 구조를 그대로 따라가려다 각 단락이 서로 다른 문맥을 갖는다는 점을 놓쳤다. → 처방: 각 단락의 주제어와 문맥을 먼저 파악하고, 그 뒤에 연결 순서를 정하라.\n③ 진단: ‘Domestic’가 ‘국내’라는 뜻이라 생각해 첫 단락이 가장 자연스럽다고 착각했다. → 처방: ‘Domestic’의 의미가 반복되는지 여부를 확인하고, 가장 유사한 문맥을 먼저 배치하라.\n④ 진단: ‘Dormant’이 ‘잠자는’ 뜻이라 생각해 세 번째 단락이 가장 적합하다고 판단했다. → 처방: 각 단락이 제시하는 예시나 설명이 서로 연관되는지 비교해 보라.\n⑤ 진단: ‘Domestic’이 두 번째 단락에만 등장한다는 사실을 간과했다. → 처방: 단락마다 등장하는 핵심 단어를 리스트업하고, 그 순서대로 연결해 보라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-17T04:37:59.448Z",
-   "type": "빈칸(문장)",
-   "level": "중",
-   "audit": "빈칸 위치 코드선정(결론부)·정답 재진술 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": null,
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은? (문장형)",
-    "passage": "Domestic wine is wine from this country, as opposed to wine imported from, say, France. The domestic steel industry is the steel industry in this country. A country that enjoys domestic tranquility is a happy country on the homefront. Quick Quiz #34 Match each word in the first column with its definition in the second column. Check your answers here. committed to a theory 2. thin out 3. of the household 4. firmly held system of ideas 5. easily taught 6. arrogantly assertive 7. tell apart 9. spread seeds 11. disintegration DORMANT (DOR munt) adj inactive; as though asleep; asleep Dormant, like dormitory, comes from a root meaning sleep. • Mt. Vesuvius erupted violently and then fell dormant for several hundred years. [ ]",
-    "choices": [
-     "Many plants continue to grow throughout the winter, never pausing until spring.",
-     "Many plants stay inactive during the winter, only beginning to grow again in spring.",
-     "The statement is unrelated to plant growth patterns during seasonal changes.",
-     "Many plants become dormant during the summer, starting to grow in winter.",
-     "All plants remain dormant year‑round, never resuming growth at any time."
-    ],
-    "answer": 2,
-    "explanation": "빈칸에는 원문 'Many plants remain dormant through the winter; that is, they stop growing until spring.'의 재진술인 정답이 들어가야 글의 결론이 완성된다.\n[오답 진단·처방]\n① 진단: 문장에 \"grow\"가 계속 진행되는 의미라 생각해 \"계속 자라\"로 해석했음 → 처방: 동사 시제와 의미를 다시 확인하고, ‘grow’가 ‘계속 성장한다’는 뜻인지 ‘잠복한다’는 뜻인지 판단하라.\n③ 진단: 문장과 주제의 연관성을 무시하고 무관하다고 판단했음 → 처방: 문맥과 주제어를 먼저 파악하고, 질문이 무엇을 묻는지 명확히 파악하라.\n④ 진단: ‘dormant’가 여름에 잠복한다는 잘못된 해석을 했음 → 처방: ‘dormant’의 의미가 ‘잠복’이라면 언제 잠복하는지 문장에 명시된 계절을 확인하라.\n⑤ 진단: 모든 식물이 항상 잠복한다는 과도한 일반화로 판단했음 → 처방: 문장에 제시된 사실을 그대로 적용하고, ‘모든’이라는 일반화가 문장에 있는지 확인하라.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하는 능력을 평가한다."
    }
   }
  ]
