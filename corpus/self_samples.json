@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-20T21:14:48.934Z",
+ "updated": "2026-11-21T02:25:48.757Z",
  "samples": [
+  {
+   "ts": "2026-11-21T02:22:39.914Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Prepositional Phrase (A) [Both approaches / both approach] are perfectly logical and consistent. Both give exactly the same analysis of phrasal verbs. Longman’s Dictionary of Phrasal Verbs uses the second approach, with its distinction between adverbs and prepositions. In this book we will adopt the ﬁ rst approach and simply use the term particle. (B) [The only reason / the only reasons] for choosing this approach is that life is short and grammar books are long. There is actually a fourth use of phrasal verbs: as a prepositional phrase that follows a noun phrase. In keeping with the preceding diagram, this fourth type would look like this: verb + noun phrase + preposition + noun phrase. We will analyze this type after discussing the more common phrasal verbs (C) [given in the diagram / given in diagrams]. We now turn to a more detailed description of the three common types of phrasal verbs: intransitive, inseparable transitive, and separable transitive.",
+    "choices": [
+     "(A) Both approaches - (B) the only reasons - (C) given in diagrams",
+     "(A) both approach - (B) The only reason - (C) given in the diagram",
+     "(A) both approach - (B) the only reasons - (C) given in the diagram",
+     "(A) both approach - (B) the only reasons - (C) given in diagrams",
+     "(A) Both approaches - (B) The only reason - (C) given in the diagram"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) Both approaches - (B) The only reason - (C) given in the diagram. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: ‘Both approaches’가 복수형이므로 ‘both approaches’가 맞음. ‘the only reasons’는 ‘only reason’이 단수형이므로 틀림. ‘given in diagrams’는 ‘diagram’이 단수형이므로 ‘given in the diagram’이 맞음. → 처방: 문장 주어와 수를 맞추어 단수·복수형을 확인하라.\n② 진단: ‘both approach’는 ‘both approaches’가 맞음. ‘The only reason’은 ‘the only reason’이 맞음. ‘given in the diagram’은 ‘diagram’이 단수형이므로 맞음. 하지만 ‘both approach’가 틀리므로 전체가 틀림. → 처방: 주어와 동사의 일치, 대명사와 관사 사용을 주의하라.\n③ 진단: ‘both approach’는 ‘both approaches’가 맞음. ‘the only reasons’는 ‘only reason’이 단수형이므로 틀림. ‘given in the diagram’은 맞음. → 처방: 단수·복수형 일치를 다시 점검하라.\n④ 진단: ‘both approach’는 ‘both approaches’가 맞음. ‘the only reasons’는 ‘only reason’이 단수형이므로 틀림. ‘given in diagrams’는 ‘diagram’이 단수형이므로 ‘given in the diagram’이 맞음. → 처방: 관사와 단수·복수형을 일치시키는 연습을 하라.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-20T13:01:29.480Z",
    "type": "필자주장",
@@ -240,25 +265,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Adjuncts are optional, non‑essential modifiers that add supplementary information to a noun phrase without altering its core meaning.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Adjuncts are optional, non‑essential modifiers that add supplementary information to a noun phrase without altering its core meaning.]"
-   }
-  },
-  {
-   "ts": "2026-11-17T14:38:03.592Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "서술형 단어수 10 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 문장에서 ‘he’가 지칭하는 명사구를 찾아라. \n또한 그 명사구의 경계(한정사 포함 여부)를 명시하라. \n\n문장: *I saw him twitch the curtain entails I saw him.*",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] ‘he’는 “the curtain”를 지칭한다. \n명사구: **the curtain** (한정사 ‘the’ 포함)\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 형식·표현 준수 · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 철자·어형 오류 1개당 −1(형식점 내).\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
    }
   }
  ]
