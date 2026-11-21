@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-21T02:25:48.757Z",
+ "updated": "2026-11-21T11:16:47.782Z",
  "samples": [
+  {
+   "ts": "2026-11-21T11:15:37.005Z",
+   "type": "안내문일치",
+   "level": "중",
+   "audit": "정답 코드검증됨(모순 진술 정확히 1개 확인) · 솔버 1/1 일치",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 안내문의 내용과 일치하는 것은?",
+    "passage": "Ray English 지문 전문 · 원문 그대로 22번 요지 · M A I N P O I N T 경험의 폭과 창의성 요지 창의성을 높이려면 관심을 한 주제로 좁히지 말고 경험의 폭을 넓혀야 한다. 소재 창의성과 경험의 폭 Creativity and breadth of experience 주제 관심을 좁히지 말고 경험을 넓혀야 창의성이 자란다 Broad, not narrow, experience fuels creativity 제목 넓은 경험이 창의성을 키운다 Why Broad Experience Fuels Creativity 한눈에 어려운 문제의 창의적 해결책은 긴장을 푼 순간 떠오른다는 관찰에서 출발한다. 흔히 ‘한 주제로 관심을 좁히라’고 하지만, 글은 이를 뒤집어 ‘경험 의 폭 (breadth)을 넓히는 것이 창의성의 핵심’이라고 본다. 경험이 좁으면 상상력의 범위도 좁아져 해롭다는 것이다. 지문 전문 — 시험지 원문 Suppose you have been working on the solution to a challenging technological problem for many years. Let’s also suppose that you have been paying attention to whatever else you have encountered that might be related to the problem. In that case, chances are that creative solutions to the problem could suddenly pop up in your mind when you are relaxed. Such “eureka moments” (when great insights lead to discovery or invention) often take place at unexpected times. To enhance spontaneous creativity, therefore, one must pay attention to the things that could potentially lead to valuable outcomes. This does not mean that you must narrow down your interest to one specific topic. On the contrary, breadth of experience is the key to creativity. If your experience is limited to a narrow range of topics, then the scope of your imagination will likewise be narrow, which would be harmful to creativity. * spontaneous: 자연 발생적인 지문 전문 · 원문 그대로",
+    "choices": [
+     "경험이 좁을수록 상상력의 범위가 확대된다.",
+     "예상된 순간에 창의적 해결책이 떠오를 수 있다.",
+     "한 주제에만 관심을 좁히면 창의성에 유익할 수 있다.",
+     "다양한 경험을 주의 깊게 관찰하면 유레카 순간이 생길 가능성이 높아진다.",
+     "창의성은 경험의 폭이 넓을 때 가장 작게 증진된다."
+    ],
+    "answer": 4,
+    "explanation": "정답 진술만 글과 일치한다.\n[오답 진단·처방]\n① 진단: ‘경험이 좁을수록’과 ‘상상력의 범위가 확대된다’가 반대 의미임을 놓쳐서 오독 → 처방: ‘넓을수록’이 핵심 문장임을 기억하고 반대 의미를 확인하는 연습을 한다.\n② 진단: ‘예상된 순간에’가 아니라 ‘예상치 못한 순간에’라는 문장을 혼동 → 처방: ‘예상치 못한’이 핵심이므로 ‘예상된’이 아닌 ‘예상치 못한’을 찾아 문맥을 재검토한다.\n③ 진단: ‘한 주제에만 관심을 좁히면’이 ‘유익할 수 있다’는 잘못된 해석 → 처방: ‘좁히면’이 부정적이므로 ‘유익할 수 있다’와 반대인 ‘유익하지 않다’를 명확히 구분한다.\n⑤ 진단: ‘작게 증진된다’가 ‘작게’가 아닌 ‘가장 크게’라는 문장을 잘못 읽음 → 처방: ‘가장’이 핵심이므로 ‘작게’가 아니라 ‘가장’이 포함된 문장을 다시 읽어 핵심을 파악한다.\n【출제의도】 세부 정보를 지문과 대조해 '일치하는' 진술을 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-21T02:22:39.914Z",
    "type": "네모어법ABC",
@@ -240,31 +265,6 @@
     ],
     "answer": 2,
     "explanation": "빈칸에는 'accumulated knowledge'가 들어가 글의 논지를 완성한다 (본문 'accumulated and accumulating experience, the Weltanschauung'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-18T04:29:28.320Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "A. Optional Modifiers: Adding but Not Changing",
-     "B. Core Modifiers: Changing the Essence",
-     "C. Essential Modifiers: Removing the Core",
-     "D. Mandatory Modifiers: Expanding the Entire Phrase",
-     "E. Peripheral Modifiers: Supplementing Without Altering"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Adjuncts are optional, non‑essential modifiers that add supplementary information to a noun phrase without altering its core meaning.'이며, 정답 선지가 이를 정확히 반영한다. 나머지 선지는 지문의 일부만 담거나(부분), 논지와 반대이거나(전도), 초점이 벗어나(초점이탈) 오답이다.\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Adjuncts are optional, non‑essential modifiers that add supplementary information to a noun phrase without altering its core meaning.]"
    }
   }
  ]
