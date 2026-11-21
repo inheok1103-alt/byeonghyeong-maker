@@ -1,6 +1,52 @@
 {
- "updated": "2026-11-21T11:16:47.782Z",
+ "updated": "2026-11-21T18:06:16.336Z",
  "samples": [
+  {
+   "ts": "2026-11-21T18:04:14.699Z",
+   "type": "어법(밑줄)",
+   "level": "중",
+   "audit": "정답위치 코드생성됨(밑줄·오류주입 + 문법검사 대조) · 어법 오류어 실존·위치 검증 통과",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 밑줄 친 ⓐ~ⓔ 중, 어법상 틀린 것은?",
+    "passage": "As you ⓐ<u>carefully read</u> what you have written to improve wording and catch errors of spelling and punctuation, the thing to do before anything else is to see whether you could use sequences of subjects and verbs instead of the same ideas expressed in nouns. That is, ✓ As you edit, first replace nominalizations with clauses. I compressed five phrases into five words: carefully read what you have written S edit the thing to do before anything else S ⓑ<u>first use</u> X instead of Y S ⓒ<u>replace noun</u> instead of verbs S ⓓ<u>nominalizations</u> sequences of subjects and verbs S ⓔ<u>clauses</u> I can offer no principle that tells you when to replace a phrase with a word, much less give you the word. I can point out only that you often can, and that you should be alert for opportunities to do so—which is to say, try. Here are some common phrases (boldfaced) to watch for. Note that some of these let you turn a nominalization into a verb (both italicized):",
+    "choices": [
+     "ⓐ",
+     "ⓑ",
+     "ⓒ",
+     "ⓓ",
+     "ⓔ"
+    ],
+    "answer": 3,
+    "explanation": "[어법: 수일치] 정답 ⓒ의 'replace noun'는 'replace nouns'로 고쳐야 어법상 옳다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-21T18:06:16.038Z",
+   "type": "글의순서",
+   "level": "중",
+   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": null,
+   "psychometric": null,
+   "q": {
+    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+    "passage": "As you carefully read what you have written to improve wording and catch errors of spelling and punctuation, the thing to do before anything else is to see whether you could use sequences of subjects and verbs instead of the same ideas expressed in nouns.\n\n(A) I compressed five phrases into five words: carefully read what you have written S edit the thing to do before anything else S first use X instead of Y S replace nouns instead of verbs S nominalizations sequences of subjects and verbs S clauses I can offer no principle that tells you when to replace a phrase with a word, much less give you the word. I can point out only that you often can, and that you should be alert for opportunities to do so—which is to say, try.\n\n(B) That is, ✓ As you edit, first replace nominalizations with clauses.\n\n(C) Here are some common phrases (boldfaced) to watch for. Note that some of these let you turn a nominalization into a verb (both italicized):",
+    "choices": [
+     "(A) - (C) - (B)",
+     "(B) - (A) - (C)",
+     "(B) - (C) - (A)",
+     "(C) - (A) - (B)",
+     "(C) - (B) - (A)"
+    ],
+    "answer": 2,
+    "explanation": "원문 전개 순서는 (B) - (A) - (C)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-21T11:15:37.005Z",
    "type": "안내문일치",
@@ -221,50 +267,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Being provident means wisely preparing for the future, while being improvident is the failure to do so.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-18T14:11:39.078Z",
-   "type": "틀린문장 고쳐쓰기",
-   "level": "중",
-   "audit": "정답위치 코드생성됨(buildGrammar 검증경로 재사용)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.",
-    "passage": "ⓐ<u>The thought of the individual must run along its grooves</u>; ⓑ<u>but these grooves, themselves, are a heritage</u> from individuals who laid them down in an unconscious effort to express their attitude toward the world. Grammar contains in crystallized form the accumulated and accumulating experience, the Weltanschauung of a people. The problem is that according to this logic, ⓒ<u>must reflect difference</u> between Anglo-Saxon culture and life in modern New York or London. So first of all, we now have meaningless do. ⓓ<u>Unlike Old English speakers, we have to say I do not walk and Do I walk?</u> ⓔ<u>Thus, presumably, since AngloSaxon days, English speakers have become especially alert to negativity and uncertainty, such that we have to stress verbs with do in the relevant types of sentence</u>. Obviously that makes no sense—it’s simply that we snapped up meaningless do from Welsh and Cornish because speakers of those languages",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] [수일치] ⓒ: 'must reflect difference' → 'must reflect differences' (어법 오류 확인됨)\n[채점 루브릭] ① 오류 색출 정확 40% — 틀린 기호(ⓐ~ⓔ)를 정확히 지목 · ② 수정 정확 40% — 어법에 맞게 바르게 고침 · ③ 개수·철자 20% — 지정 개수 일치·철자·구두점 정확\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 오류 미발견 또는 오수정\n감점: 오지목 −2, 오수정 −2, 개수 불일치 −1.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-18T14:14:28.354Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "The thought of the individual must run along its grooves; but these grooves, themselves, are a heritage from individuals who laid them down in an unconscious effort to express their attitude toward the world. Grammar contains in crystallized form the ____ of a people. The problem is that according to this logic, the differences between Old English and Modern English grammar must reflect differences between Anglo-Saxon culture and life in modern New York or London. So first of all, we now have meaningless do. Unlike Old English speakers, we have to say I do not walk and Do I walk? Thus, presumably, since AngloSaxon days, English speakers have become especially alert to negativity and uncertainty, such that we have to stress verbs with do in the relevant types of sentence. Obviously that makes no sense—it’s simply that we snapped up meaningless do from Welsh and Cornish because speakers of those languages",
-    "choices": [
-     "historical events",
-     "accumulated knowledge",
-     "ignorance",
-     "gathered experience",
-     "broader understanding"
-    ],
-    "answer": 2,
-    "explanation": "빈칸에는 'accumulated knowledge'가 들어가 글의 논지를 완성한다 (본문 'accumulated and accumulating experience, the Weltanschauung'의 패러프레이즈).\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
