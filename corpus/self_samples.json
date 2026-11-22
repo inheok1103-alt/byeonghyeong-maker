@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-22T06:59:54.065Z",
+ "updated": "2026-11-22T15:27:37.718Z",
  "samples": [
+  {
+   "ts": "2026-11-22T15:25:51.927Z",
+   "type": "요약문AB",
+   "level": "중",
+   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
+    "passage": "Sa hun til dattera mi said she to daughter my at faren min er kommet alene that father my is come alone og føler sig bedre? and feels himself better Here we have many of the same sorts of things that motivated Twain to say, “A person who has not studied German can form no idea of what a perplexing language it is.” The same Said she . . . ? (Sa hun . . . ?), is come (er kommet), and “feeling yourself” (føler sig), plus gender: the my for my daughter is mi but the my for my father is min. That is, in a sense one “should” be able to say in English Said she to my daughter that my father alone come is and himself better feels? After all, you can say something similar in every other offshoot of Proto-Germanic but English. Only to English speakers does the sentence sound like something someone with brain damage would say. This shows that something was\n\n─────────\n[요약문] The passage illustrates how (A) can obscure meaning, as seen when a father's (B) is described in confusing language.",
+    "choices": [
+     "(A) syntactic ambiguity … (B) nonexistent interaction",
+     "(A) semantic overload … (B) spontaneous exchange",
+     "(A) linguistic complexity … (B) parental visitation",
+     "(A) literal clarity … (B) conventional communication",
+     "(A) communication simplicity … (B) formal discourse"
+    ],
+    "answer": 3,
+    "explanation": "(A) linguistic complexity / (B) parental visitation 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-22T15:26:52.038Z",
+   "type": "조건영작",
+   "level": "중",
+   "audit": "조건 3종 코드조립(단어 수 14 검산됨)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 14단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 어머니가 딸에게 아버지가 혼자 오셨고 기분이 나아졌다고 말합니다.\n주어진 단어: ( mother / tells / daughter )",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] A mother tells her daughter that her father has come alone and feels better. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-22T06:57:42.029Z",
    "type": "어법개수형",
@@ -233,50 +277,6 @@
     ],
     "answer": 5,
     "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: A 와 C 가 같은 이름이 아니라 서로 다른 인물임을 혼동해 A 를 먼저 두고 C 를 뒤에 놓음 → 처방: 각 그룹의 인물 수와 순서를 정확히 세어 순서대로 배치하기\n② 진단: B 를 먼저 두고 A, C 를 뒤에 놓으며, A 와 C 의 순서를 뒤바꿔서 읽음 → 처방: 그룹별 인물의 순서와 이름을 한 줄씩 읽으며 순서를 확인하기\n③ 진단: B, C, A 순으로 읽으며, A 와 C 를 뒤바꾸어 읽음 → 처방: 각 그룹의 인물 수를 세고, 그룹 번호를 기준으로 순서를 정렬하기\n④ 진단: C 를 먼저 두고 A, B 를 뒤에 놓으며, B 를 A 보다 먼저 두는 실수 → 처방: 그룹 번호와 인물 수를 비교하며 가장 작은 번호부터 차례대로 정리하기\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-19T21:43:37.410Z",
-   "type": "지칭명시",
-   "level": "중",
-   "audit": "",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 it(this/they)이 가리키는 것을 본문에서 찾아 단어 이내의 영어로 쓰시오.",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] 영어 교육과 TEFL 연구의 세계적 전문가들이 모인 심사위원단이 이 논문의 핵심 주제를 검증했다.\n[채점 루브릭] ① 정확성 60% — 우리말 뜻·핵심 정보 정확 · ② 완결성 40% — 표현 자연스러움\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관)\n감점: 오역·누락 부분점.\n【출제의도】 대명사가 가리키는 대상을 담화 추적으로 판별하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-19T13:21:54.745Z",
-   "type": "제목",
-   "level": "중",
-   "audit": "어법 의심 1건 · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · 솔버 1/1 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 제목으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "Functional Elements Dictate Case Assignment Distinctions",
-     "Functional Elements Cause Accusative Case Assignment",
-     "Functional Elements Dictate Nominative Case Assignment",
-     "All Case Assignments Depend on Functional Elements",
-     "Functional Elements Occasionally Dictate Case Assignment"
-    ],
-    "answer": 1,
-    "explanation": "글의 핵심 논지는 'Case assignment in language is governed by functional elements that differ fundamentally between nominative and accusative roles, requiring distinct restrictions to determine when and where case can be assigned.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(Cause-Effect Reversal·Scope Reduction·Overgeneralization·Frequency Distortion)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — Cause-Effect Reversal · ③ 오답 — Scope Reduction · ④ 오답 — 지나치게 확대 해석 · ⑤ 오답 — Frequency Distortion\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Case assignment in language is governed by functional elements that differ fundamentally between nominative and accusative roles, requiring distinct restrictions to determine when and where case can be assigned.]"
    }
   }
  ]

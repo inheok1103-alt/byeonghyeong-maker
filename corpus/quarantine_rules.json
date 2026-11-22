@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-22T06:59:54.061Z",
+ "updated": "2026-11-22T15:27:37.715Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:조건영작",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-22T15:26:41.648Z"
+  },
   {
    "rule": "모든 어법개수형 문항은 정답과 채점 기준을 명확히 정의하고, 채점 시 적용되는 점수 배분표를 사전에 공개하여 평가 실패를 방지한다.",
    "src": "자가학습:어법개수형",
@@ -41,14 +49,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-20T12:59:22.670Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:의견영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-20T03:24:35.601Z"
   },
   {
    "rule": "모든 출제 문항은 지문과 선택지 등 모든 구성 요소가 온전하게 완성되어야 하며, 문법적 정확성을 포함한 일체의 오류가 없어야 한다.",
