@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-22T15:27:37.718Z",
+ "updated": "2026-11-22T21:53:17.280Z",
  "samples": [
+  {
+   "ts": "2026-11-22T21:52:17.700Z",
+   "type": "네모어휘ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
+    "passage": "Given that all (A) [heaven / hell] can serve only as the subject of (B) [break loose / tightly bound] in the relevant idiom in (iv), it is clear that we could not analyse (C) [recede / tend] as a control predicate in (iv) and claim that all hell originates as the subject of tend and PRO as the subject of break loose, since this would violate the requirement that all hell can occur only as the subject of break loose and conversely that break loose can only have the subject all hell (in the relevant idiom). By contrast, if tend is a raising predicate, we can claim that all hell originates as the subject of break loose and then raises up to become the subject of the (null T constituent in the) tend clause. Furthermore, tend preserves truth-functional equivalence under passivisation, as we can see from the fact that (v) and (vi) are truth-functionally equivalent:",
+    "choices": [
+     "(A) heaven - (B) break loose - (C) tend",
+     "(A) heaven - (B) tightly bound - (C) tend",
+     "(A) hell - (B) tightly bound - (C) tend",
+     "(A) heaven - (B) break loose - (C) recede",
+     "(A) hell - (B) break loose - (C) tend"
+    ],
+    "answer": 5,
+    "explanation": "정답 조합: (A) hell - (B) break loose - (C) tend. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-22T21:53:02.551Z",
+   "type": "본문어변형빈칸",
+   "level": "중",
+   "audit": "서술형(괄호 어형변형) — 정답 유일성 검증 · ⚠ 지문 축소 의심(57%) — 정보 손실 여부 확인 권고",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "괄호 안에 주어진 단어를 어법에 맞게 고쳐 쓰시오.",
+    "passage": "Given that all hell (serve) only as the subject of break loose in the relevant idiom in (iv), it is clear that we could not analyse tend as a control predicate in (iv) and claim that all hell originates as the subject of tend and PRO as the subject of break loose, since this would violate the requirement that all hell (occur) only as the subject of break loose and conversely that break loose can only have the subject all hell (in the relevant idiom).",
+    "choices": [],
+    "answer": null,
+    "explanation": "1) serve→serves [주어 all hell 단수 – 수일치] · 2) occur→occurs [주어 all hell 단수 – 수일치]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-22T15:25:51.927Z",
    "type": "요약문AB",
@@ -233,50 +277,6 @@
     ],
     "answer": 5,
     "explanation": "(A)는 앞 내용과 '예시' 관계로 In comparable senses, (B)는 '인과' 관계로 In view of the differences가 알맞다. 나머지 선지는 논리 관계가 맞지 않는다.\n【출제의도】 앞뒤 문장의 담화 관계(인과·대조·예시·재진술)를 파악하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-20T03:24:45.504Z",
-   "type": "의견영작",
-   "level": "중",
-   "audit": "서술형 단어수 13 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 주제에 대한 자신의 의견을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'constructions', 'mastering', 'essential' / 11~15단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] I believe that mastering passive constructions is essential for clear, nuanced academic writing.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 11~15단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-19T21:42:57.716Z",
-   "type": "글의순서",
-   "level": "중",
-   "audit": "정답 코드생성됨(분할·셔플을 코드가 수행) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
-    "passage": "Members of the jury No. Name Position 1 Prof. Dr. Zeinab Al Naggar Professor of Education and TEFL Methodology and Director of the Center for Developing English Language Teaching CDELT, Ain Shams Univeristy 2 Prof. Dr. David Eskey Professor of Education And Director of the Center for American Language, University of Southern California.\n\n(A) 6 Dr. Ahmad Sokarno Associate Professor of Linguistics and Head of the English Department, Qena Faculty of Arts, South Valley University. 7 Dr. Mary Lou MacCloskey Adjunct professor , Dept. of Applied Linguistics and ESL , Georgia State University.\n\n(B) Ali Professor of Education and TEFL Methodology , Minia Faculty of Education. 5 Prof. Dr. Kawther Qutb Professor of Education and TEFL Methodology and Vice Dean of Minia Faculty of Education.\n\n(C) 3 Prof. Dr. Eleanor Black Eskey Professor of Education and Director of Los Angeles- MA TESOL Program, California State University. 4 Prof. Dr. Hayat R.",
-    "choices": [
-     "(A) - (C) - (B)",
-     "(B) - (A) - (C)",
-     "(B) - (C) - (A)",
-     "(C) - (A) - (B)",
-     "(C) - (B) - (A)"
-    ],
-    "answer": 5,
-    "explanation": "원문 전개 순서는 (C) - (B) - (A)이다. 각 단락의 지시어·연결어가 앞 내용을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: A 와 C 가 같은 이름이 아니라 서로 다른 인물임을 혼동해 A 를 먼저 두고 C 를 뒤에 놓음 → 처방: 각 그룹의 인물 수와 순서를 정확히 세어 순서대로 배치하기\n② 진단: B 를 먼저 두고 A, C 를 뒤에 놓으며, A 와 C 의 순서를 뒤바꿔서 읽음 → 처방: 그룹별 인물의 순서와 이름을 한 줄씩 읽으며 순서를 확인하기\n③ 진단: B, C, A 순으로 읽으며, A 와 C 를 뒤바꾸어 읽음 → 처방: 각 그룹의 인물 수를 세고, 그룹 번호를 기준으로 순서를 정렬하기\n④ 진단: C 를 먼저 두고 A, B 를 뒤에 놓으며, B 를 A 보다 먼저 두는 실수 → 처방: 그룹 번호와 인물 수를 비교하며 가장 작은 번호부터 차례대로 정리하기\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
