@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-21T23:26:31.584Z",
+ "updated": "2026-11-22T06:59:54.065Z",
  "samples": [
+  {
+   "ts": "2026-11-22T06:57:42.029Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "ⓐ<u>Sentences like (2a, b) are called expletive structures</u> because they contain the expletive pronoun there. (The fact that there is not a locative pronoun in this kind of use is shown by the impossibility of replacing it by locative here or questioning it by the interrogative locative where? or focussing it by assigning it contrastive stress.) For the time being, let’s focus on the derivation of Belfast English sentences like (2a, b) before turning to consider the derivation of Standard English sentences like (1a, b). One question to ask about the sentences in (2a, b) is where ⓑ<u>there is positioned</u>. ⓒ<u>Since there immediately precedes the tensed auxiliary should/have</u>, ⓓ<u>subject/specifier of should/have</u> and hence occupies the spec-T position. If this is so, we’d expect to find that ⓔ<u>auxiliary can move in front of the expletive subject</u> (via T-to-C movement) in questions – and this is indeed the case in Belfast English, as the sentences in (3) below illustrate:",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 3,
+    "explanation": "틀린 곳은 ⓑ(there is positioned → the expletive pronoun there is positioned), ⓓ(subject/specifier of should/have → a reasonable conjecture is that there is the subject/specifier of should/have), ⓔ(auxiliary can move in front of the expletive subject → the auxiliary can move in front of the expletive subject) — 총 3개.\n[오답 진단·처방]\n① 진단: 문장 구조를 ‘expletive’라고 부르는 부분이 맞는지 혼동해 ‘there’가 주어가 아니라 부사적 위치라고 오독. → 처방: ‘there’가 주어가 아니라 expletive pronoun 임을 기억하고, 문장 내 위치와 역할을 구분해 읽는다.\n② 진단: ‘there is positioned’에서 ‘is’가 동사라서 ‘there’가 주어라고 잘못 판단했다. → 처방: ‘there’가 expletive pronoun 이므로 ‘is’는 보조동사로 쓰인다는 점을 인식하고, 주어와 보어를 구분한다.\n④ 진단: ‘subject/specifier of should/have’가 ‘should/have’의 주어가 아니라 T 의 spec 이라 오해했다. → 처방: T 의 spec 위치를 이해하고, ‘subject/specifier’가 실제 주어가 아니라 T 에 배치된 expletive 임을 기억한다.\n⑤ 진단: ‘auxiliary can move in front of the expletive subject’를 ‘auxiliary 가 expletive 앞에 올 수 있다’로 해석해 문법적 오류를 찾지 못했다. → 처방: ‘auxiliary’가 ‘there’ 앞에 이동할 수 있다는 점을 문법 규칙으로 받아들이고, 질문형 문장에서의 위치 변화를 살펴본다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-22T06:59:39.382Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Sentences like (2a, b) are called expletive structures because they c______ the expletive pronoun there. (The fact that there is not a locative pronoun in this kind of use is shown by the impossibility of replacing it by locative here or questioning it by the interrogative locative where? or focussing it by assigning it contrastive stress.) For the time being, let’s focus on the derivation of Belfast English sentences like (2a, b) before turning to consider the derivation of Standard English sentences like (1a, b). One question to ask about the sentences in (2a, b) is where the expletive pronoun there is positioned. Since there immediately precedes the tensed auxiliary should/have, a reasonable conjecture is that there is the subject/specifier of should/have and hence occupies the spec-T position. If this is so, we’d expect to find that the auxiliary can move in front of the expletive subject (via T-to-C movement) in questions – and this is indeed the case in Belfast English, as the sentences in (3) below illustrate:",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] contain — 문단의 논지상 이 자리에는 'contain'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-21T18:04:14.699Z",
    "type": "어법(밑줄)",
@@ -233,40 +277,6 @@
     ],
     "answer": 1,
     "explanation": "글의 핵심 논지는 'Case assignment in language is governed by functional elements that differ fundamentally between nominative and accusative roles, requiring distinct restrictions to determine when and where case can be assigned.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(Cause-Effect Reversal·Scope Reduction·Overgeneralization·Frequency Distortion)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 정답 — 핵심 논지 반영 · ② 오답 — Cause-Effect Reversal · ③ 오답 — Scope Reduction · ④ 오답 — 지나치게 확대 해석 · ⑤ 오답 — Frequency Distortion\n【출제의도】 글의 핵심을 함축적으로 대표하는 제목을 고르는 능력을 평가한다. [핵심 논지: Case assignment in language is governed by functional elements that differ fundamentally between nominative and accusative roles, requiring distinct restrictions to determine when and where case can be assigned.]"
-   }
-  },
-  {
-   "ts": "2026-11-19T13:22:26.267Z",
-   "type": "이어쓰기영작",
-   "level": "중",
-   "audit": "서술형 단어수 41 실측·발문 동기화",
-   "review": null,
-   "psychometric": null,
-   "q": {
-    "instruction": "위 지문을 읽고, 문장 부호와 접속사를 적절히 사용하여 다음 문장을 완성하시오. \n**필수 포함 단어:** *specify* \n**단어 수:** 39~43단어 \n> \"From the first perspective the challenge is to come up with restrictions which define the conditions under which Case can be assigned generally, and one of the positions that requires the analyst to specify the structure is the complement position itself.\"",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] From the first perspective the challenge is to come up with restrictions which define the conditions under which Case can be assigned generally, and one of the positions that requires the analyst to specify the structure is the complement position itself.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 39~43단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-18T22:01:48.999Z",
-   "type": "주제문완성",
-   "level": "중",
-   "audit": "서술형 단어수 17 실측·발문 동기화",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 핵심 내용(필자의 주장·요지)을 영어 한 문장으로 서술하시오.\n〈조건〉 다음 단어를 반드시 포함할 것: 'improvident', 'provident', 'preparing' / 15~19단어로 쓸 것",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Being provident means wisely preparing for the future, while being improvident is the failure to do so.\n[채점 루브릭] ① 내용 정확성 40% — 지문 근거·핵심 정보를 정확히 반영 · ② 조건·형식 35% — 단어 수 15~19단어 충족(WORDLIMIT) · ③ 어법·철자 25% — 문법·철자·구두점 정확(오류 1개당 감점)\n[0점 트리거] 무응답·백지 / 주제 완전 이탈(지문 무관) / 단어 수 조건 심각 위반\n감점: 철자·어형 오류 1개당 −1(형식점 내), 조건 부분충족 −2, 단어 수 초과·미달 −2.\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
