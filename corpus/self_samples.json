@@ -1,6 +1,56 @@
 {
- "updated": "2026-11-24T11:05:16.112Z",
+ "updated": "2026-11-24T21:22:07.121Z",
  "samples": [
+  {
+   "ts": "2026-11-24T21:18:18.109Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Instead of writing as clearly and directly as he did in Parts 2 and 3, why in Part 1 did Jefferson choose to write in a style so indirect and impersonal?\n② constrains them to alter their former Systems of government.\n③ One ready answer is that he wanted to lay down a philosophical basis not for our revolution in particular, but for just revolution in general, a profoundly destabilizing idea in Western political thought and one that needed more justification than the colonists’ mere desire to throw off a government they disliked.\n④ ✓ We now must alter our former Systems of government.\n⑤ What is most striking about the style of Part 1 is not just its impersonal generality, but how relentlessly Jefferson uses that style to strip the colonists of any free will of their own and to invest agency in higher forces that coerce the colonists to act: • respect for opinion requires that [the colonists] explain their action • causes impel [the colonists] to separate • prudence dictates that [the colonists] not change government lightly • experience has shown [the colonists] • necessity constrains [the colonists]",
+    "choices": [
+     "②-④-①-③-⑤",
+     "④-②-①-③-⑤",
+     "②-④-③-①-⑤",
+     "②-①-④-③-⑤",
+     "②-④-⑤-①-③"
+    ],
+    "answer": 1,
+    "explanation": "정답 배열은 ②-④-①-③-⑤. 흐름: ② → ④ → ①(Instead) → ③ → ⑤ — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: 문장 순서에서 ②와 ④를 서로 바꾸어 놓아, ②가 앞에 와야 할 ‘제한’ 문장을 뒤로 밀어버려 흐름이 뒤틀렸다. → 처방: 각 문장을 읽을 때 ‘제한’이 앞에 와야 할지, ‘변경’이 뒤에 와야 할지 문맥을 먼저 파악하고 순서를 정하라.\n③ 진단: ①과 ③을 섞어 놓아 ①이 ‘간접적 스타일’에 대한 설명이 아니라 ③이 ‘철학적 기초’에 대한 설명인 줄로 착각했다. → 처방: 문장마다 주제어(‘스타일’, ‘기초’)를 먼저 확인하고, 같은 주제의 문장끼리 묶어 정렬하라.\n④ 진단: ①이 ‘간접적 스타일’에 대한 설명이고, ④가 ‘시스템 변경’에 관한 문장임을 뒤섞어 ①을 ② 뒤에 두었다. → 처방: 문장 번호가 아닌 내용의 흐름(스타일 → 제한 → 시스템)을 따라가며 순서를 재배치하라.\n⑤ 진단: ⑤가 ‘스타일과 영향’에 대한 설명임을 ③과 혼동해 ⑤를 ③ 앞에 놓았다. → 처방: 문장의 핵심 주제(스타일, 제한, 시스템, 영향)를 먼저 파악하고, 그에 맞는 순서를 정하라.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-24T21:21:25.511Z",
+   "type": "목적",
+   "level": "중",
+   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
+    "passage": "",
+    "choices": [
+     "혁명을 정당화하여 정부를 무조건 폐지하려고",
+     "혁명을 정당화하고 사회 변혁을 필요로 하는 철학적 근거를 제시하려고",
+     "혁명을 정당화하고 민중의 자율성을 강조하려고",
+     "가끔만 혁명을 정당화하고 그 외에는 변혁을 부정하려고",
+     "모든 국가가 폭력 없이 혁명을 일으키도록 설계하려고"
+    ],
+    "answer": 2,
+    "explanation": "글의 핵심 논지는 'Jefferson’s first part of the Declaration uses an indirect, impersonal style to philosophically justify revolution as a necessary, inevitable transformation of society, thereby delegating the colonists’ agency to higher forces and framing the overthrow of government as a rational, unavoidable necessity.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도·범위 축소·과잉 일반화·정도·빈도 왜곡)로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 원인과 결과를 뒤바꿈· ② 정답 — 핵심 논지 반영· ③ 오답 — 정답의 일부만 담아 지엽적· ④ 오답 — 정답의 일부만 담아 지엽적· ⑤ 오답 — 지나치게 확대 해석\n[오답 진단·처방]\n① 진단: ‘무조건 폐지’라고 해석해 혁명을 단순히 폭력적 파괴로만 보았음 → 처방: 문장 전반의 ‘필요성’과 ‘철학적 근거’에 주목해 폭력적 파괴가 아니라 정당화임을 인식하라.\n③ 진단: ‘자율성 강조’라고 오해해 민중이 스스로 결정한다고만 보았음 → 처방: ‘자율성’이 아닌 ‘제약과 인과관계’가 강조된 문장을 찾아, 민중의 자율성은 제한된 것으로 해석하라.\n④ 진단: ‘가끔만 정당화’라고 해석해 혁명이 일관되지 않다고 판단함 → 처방: 문장 전체가 혁명을 정당화하려는 일관된 논리임을 확인하고, ‘가끔만’이라는 표현을 무시하라.\n⑤ 진단: ‘폭력 없이’라는 조건을 과도하게 강조해 비폭력적 혁명을 추구한다고 보았음 → 처방: ‘폭력 없이’라는 표현이 문장에 없음을 인식하고, 혁명의 필요성에 초점을 맞추어 해석하라.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: Jefferson’s first part of the Declaration uses an indirect, impersonal style to philosophically justify revolution as a necessary, inevitable transformation of society, thereby delegating the colonists’ agency to higher forces and framing the overthrow of government as a rational, unavoidable necessity.]"
+   }
+  },
   {
    "ts": "2026-11-24T11:00:24.124Z",
    "type": "문장삽입",
@@ -227,50 +277,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] A mother tells her daughter that her father has come alone and feels better. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-22T06:57:42.029Z",
-   "type": "어법개수형",
-   "level": "중",
-   "audit": "정답 코드생성됨(오류 3개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
-    "passage": "ⓐ<u>Sentences like (2a, b) are called expletive structures</u> because they contain the expletive pronoun there. (The fact that there is not a locative pronoun in this kind of use is shown by the impossibility of replacing it by locative here or questioning it by the interrogative locative where? or focussing it by assigning it contrastive stress.) For the time being, let’s focus on the derivation of Belfast English sentences like (2a, b) before turning to consider the derivation of Standard English sentences like (1a, b). One question to ask about the sentences in (2a, b) is where ⓑ<u>there is positioned</u>. ⓒ<u>Since there immediately precedes the tensed auxiliary should/have</u>, ⓓ<u>subject/specifier of should/have</u> and hence occupies the spec-T position. If this is so, we’d expect to find that ⓔ<u>auxiliary can move in front of the expletive subject</u> (via T-to-C movement) in questions – and this is indeed the case in Belfast English, as the sentences in (3) below illustrate:",
-    "choices": [
-     "1개",
-     "2개",
-     "3개",
-     "4개",
-     "5개"
-    ],
-    "answer": 3,
-    "explanation": "틀린 곳은 ⓑ(there is positioned → the expletive pronoun there is positioned), ⓓ(subject/specifier of should/have → a reasonable conjecture is that there is the subject/specifier of should/have), ⓔ(auxiliary can move in front of the expletive subject → the auxiliary can move in front of the expletive subject) — 총 3개.\n[오답 진단·처방]\n① 진단: 문장 구조를 ‘expletive’라고 부르는 부분이 맞는지 혼동해 ‘there’가 주어가 아니라 부사적 위치라고 오독. → 처방: ‘there’가 주어가 아니라 expletive pronoun 임을 기억하고, 문장 내 위치와 역할을 구분해 읽는다.\n② 진단: ‘there is positioned’에서 ‘is’가 동사라서 ‘there’가 주어라고 잘못 판단했다. → 처방: ‘there’가 expletive pronoun 이므로 ‘is’는 보조동사로 쓰인다는 점을 인식하고, 주어와 보어를 구분한다.\n④ 진단: ‘subject/specifier of should/have’가 ‘should/have’의 주어가 아니라 T 의 spec 이라 오해했다. → 처방: T 의 spec 위치를 이해하고, ‘subject/specifier’가 실제 주어가 아니라 T 에 배치된 expletive 임을 기억한다.\n⑤ 진단: ‘auxiliary can move in front of the expletive subject’를 ‘auxiliary 가 expletive 앞에 올 수 있다’로 해석해 문법적 오류를 찾지 못했다. → 처방: ‘auxiliary’가 ‘there’ 앞에 이동할 수 있다는 점을 문법 규칙으로 받아들이고, 질문형 문장에서의 위치 변화를 살펴본다.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-22T06:59:39.382Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "Sentences like (2a, b) are called expletive structures because they c______ the expletive pronoun there. (The fact that there is not a locative pronoun in this kind of use is shown by the impossibility of replacing it by locative here or questioning it by the interrogative locative where? or focussing it by assigning it contrastive stress.) For the time being, let’s focus on the derivation of Belfast English sentences like (2a, b) before turning to consider the derivation of Standard English sentences like (1a, b). One question to ask about the sentences in (2a, b) is where the expletive pronoun there is positioned. Since there immediately precedes the tensed auxiliary should/have, a reasonable conjecture is that there is the subject/specifier of should/have and hence occupies the spec-T position. If this is so, we’d expect to find that the auxiliary can move in front of the expletive subject (via T-to-C movement) in questions – and this is indeed the case in Belfast English, as the sentences in (3) below illustrate:",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] contain — 문단의 논지상 이 자리에는 'contain'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
