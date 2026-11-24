@@ -1,8 +1,22 @@
 {
- "updated": "2026-11-23T13:01:09.300Z",
+ "updated": "2026-11-24T01:00:30.367Z",
  "note": "교사군집 코퍼스 연구 — 원서 197권 기반 규칙 지속 도출",
  "count": 60,
  "notes": [
+  {
+   "ts": "2026-11-24T01:00:23.399Z",
+   "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
+   "note": "이 코퍼스 패턴에서는 주로 시제 불일치, 전치사·조동사 사용 실수, 그리고 명사·형용사 형태 변형 오류가 빈번하게 나타난다.",
+   "rule": "문항을 만들 때는 ‘동사 시제 일관성’과 ‘전치사·조동사 정확성’ 및 ‘명사·형용사 형태 변형’에 초점을 맞추어, 원문과 교정문 사이의 차이를 명확히 드러내는 문장을 사용한다.",
+   "sample": [
+    "old english",
+    "university press",
+    "noun phrase",
+    "past tense",
+    "present tense",
+    "new york"
+   ]
+  },
   {
    "ts": "2026-11-17T23:02:28.780Z",
    "focus": "원서 문체 패턴을 활용한 변형",
@@ -820,20 +834,6 @@
    "focus": "실제 문법오류쌍(gec)을 활용한 어법 문항",
    "note": "'명사+명사' 구조에서 단수/복수 오류가 빈번하며, 특히 'Old Kingdom king'처럼 수식어가 포함된 경우 관사 생략 오류가 많다. 또한 'reason'과 같은 추상명사의 복수형 오류도 두드러진다.",
    "rule": "'명사+명사' 구조(예: 'Old Kingdom king')에서 수식어가 포함된 경우, 반드시 관사(a/the)나 복수형(-s)을 확인하여 문법적 일치를 점검하라. 특히 'reason'은 복수형 'reasons'로 사용해야 할 때 '-s'를 누락하지 않도록 주의하라.",
-   "sample": [
-    "old english",
-    "university press",
-    "noun phrase",
-    "past tense",
-    "present tense",
-    "new york"
-   ]
-  },
-  {
-   "ts": "2026-09-02T00:27:58.754Z",
-   "focus": "연어(collocation)를 활용한 오답 설계",
-   "note": "과거시제와 현재시제가 혼용된 문장에서 오류가 자주 발생하며, 특히 'when'이나 'if' 절에서 시간적·조건적 일관성이 깨지는 경우가 많다.",
-   "rule": "시제 일관성(tense consistency)을 요구하는 문제에서, 'when', 'if', 'as' 등 시간·조건 접속사가 포함된 문장은 반드시 모든 동사가 동일한 시제(과거/현재/미래)로 통일되어야 한다. 예: 'When I started (과거) completing my homework on time, I gradually improved (과거).'",
    "sample": [
     "old english",
     "university press",

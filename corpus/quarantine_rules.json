@@ -1,7 +1,23 @@
 {
- "updated": "2026-11-23T13:01:09.299Z",
+ "updated": "2026-11-24T01:00:30.366Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "문제의 정답이 명확히 정의되고, 평가 기준이 객관적이며, 학생이 정답을 도출할 수 있는 충분한 정보를 제공하도록 설계한다.",
+   "src": "자가학습:요지",
+   "score": 32,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-24T00:56:23.722Z"
+  },
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:전체문장배열",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-24T00:58:16.492Z"
+  },
   {
    "rule": "빈칸 문항은 통일된 주제와 유기적인 흐름을 가진 하나의 완성된 글로 구성하여, 빈칸이 전체 맥락 속에서 명확히 추론 가능한 의미를 가지도록 출제해야 한다.",
    "src": "자가학습:빈칸(어구)",
@@ -57,14 +73,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-22T21:52:53.597Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:조건영작",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-22T15:26:41.648Z"
   },
   {
    "rule": "모든 어법개수형 문항은 정답과 채점 기준을 명확히 정의하고, 채점 시 적용되는 점수 배분표를 사전에 공개하여 평가 실패를 방지한다.",
@@ -1593,14 +1601,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-08-31T23:54:11.531Z"
-  },
-  {
-   "rule": "모든 문제에서 영영풀이의 핵심 주제와 동일한 맥락을 지닌 어휘·개념이 반드시 원지문에 포함되도록 출제 범위와 발문을 재구성하라.",
-   "src": "자가학습:본문찾아쓰기",
-   "score": 58,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-08-31T23:55:00.880Z"
   }
  ],
  "note": "격리 규칙: 사람 검토 대기. 승인 시 learned_rules.json로 이동해야 활성화. 증거(hits)·status(quarantined/eligible) 참고."
