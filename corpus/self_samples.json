@@ -1,6 +1,66 @@
 {
- "updated": "2026-11-25T04:23:41.028Z",
+ "updated": "2026-11-25T15:45:41.781Z",
  "samples": [
+  {
+   "ts": "2026-11-25T15:41:58.285Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": {
+    "P": 1,
+    "D": 0,
+    "distractorEff": 0,
+    "pass": false,
+    "flags": [
+     "과다쉬움(P̂=1.00)",
+     "변별도 낮음(D̂=0.00)",
+     "죽은오답 ①③④⑤"
+    ]
+   },
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① ” Avoiding Distractions at the Beginning of a Sentence It is hard to begin a sentence well.\n② Readers want to get to a ­subject/ topic quickly, but too often we begin sentences in ways that keep readers from getting there.\n③ Your topics should tell your readers what a passage is globally “about.\n④ Most of your subjects should be topics.\n⑤ It’s called throat-clearing.\n⑥ Lesson 5 Cohesion and Coherence 75 Here’s the point: Before you begin writing, name the things you are writing about.\n⑦ Those are your topics.\n⑧ Most impor­ tant, be consistent: do not vary your subjects for the sake of variety.\n⑨ They should be short, concrete, familiar words, and more often than not, they should name the main characters in your story.",
+    "choices": [
+     "⑥-⑨-⑦-④-⑧-③-①-②-⑤",
+     "⑥-⑦-⑨-④-⑧-③-①-②-⑤",
+     "⑥-②-①-⑤-③-⑧-④-⑨-⑦",
+     "⑥-⑦-⑨-④-⑧-③-②-①-⑤",
+     "⑦-⑥-⑨-④-⑧-③-①-②-⑤"
+    ],
+    "answer": 2,
+    "explanation": "정답 배열은 ⑥-⑦-⑨-④-⑧-③-①-②-⑤. 흐름: ⑥ → ⑦ → ⑨(They) → ④ → ⑧ → ③ → ① → ② → ⑤(It) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ⑥에서 말한 '쓰려는 것들'을 ⑦에서 '주제'라고 바로 정의하는 연결을 놓치고, ⑨에서 주제의 특징을 먼저 설명하는 것으로 오해했습니다. → 처방: 대명사가 가리키는 대상을 정확히 파악하여 문장 간의 정의 관계를 먼저 연결하세요.\n③ 진단: 글의 도입부에서 제시된 핵심 조언(⑥)에 대한 구체적인 설명(⑦, ⑨)을 건너뛰고, 조언을 따르지 않았을 때 발생하는 문제점(②, ①, ⑤)으로 성급하게 넘어갔습니다. → 처방: 글의 흐름이 개념 정의와 설명에서 문제 제기로 넘어가는 전환점을 정확히 파악하세요.\n④ 진단: 문장 시작의 어려움(①)이라는 일반적인 문제 제기보다 독자들이 주제에 빨리 도달하고 싶어 한다는 구체적인 이유(②)를 먼저 제시하여 논리적 순서를 혼동했습니다. → 처방: 일반적인 진술이 먼저 나오고 그에 대한 구체적인 설명이나 원인이 뒤따르는 논리적 흐름을 따르세요.\n⑤ 진단: 대명사 'Those'로 시작하는 ⑦번 문장이 글의 첫 문장이 될 수 없음을 간과하고, 핵심 조언을 제시하는 ⑥번 문장보다 먼저 배치했습니다. → 처방: 대명사로 시작하는 문장은 앞 문장의 내용을 받아야 하므로 글의 첫 문장이 될 수 없음을 기억하세요.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-25T15:45:41.397Z",
+   "type": "무관문장",
+   "level": "중",
+   "audit": "정답 코드생성됨(삽입 위치를 코드가 결정) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글에서 전체 흐름과 관계 없는 문장은?",
+    "passage": "Lesson 5 Cohesion and Coherence 75 Here’s the point: Before you begin writing, name the things you are writing about. ① Those are your topics. ② They should be short, concrete, familiar words, and more often than not, they should name the main characters in your story. ③ The cat, which was perched on the windowsill, suddenly remembered the forgotten recipe for apple pie. ④ Most of your subjects should be topics. ⑤ Most impor­ tant, be consistent: do not vary your subjects for the sake of variety. Your topics should tell your readers what a passage is globally “about. ” Avoiding Distractions at the Beginning of a Sentence It is hard to begin a sentence well. Readers want to get to a ­subject/ topic quickly, but too often we begin sentences in ways that keep readers from getting there. It’s called throat-clearing. Throat-­ clearing typically begins with metadiscourse (review pp. 58–59) that connects a sentence to the previous one, with transitions such as and, but, therefore:",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "해당 문장은 소재는 같지만 글의 논지(주장 전개)에서 벗어난다. 제거하면 앞뒤가 자연스럽게 이어진다.\n[오답 진단·처방]\n① 진단: ①은 ‘주제’라는 뜻이 아니라 ‘주제와 같은 의미’를 가리키는 예시 문장이다. 학생은 ‘주제’라는 단어가 바로 ①이라고 착각했다. → 처방: 문장 전체를 읽고 ‘주제’가 등장하는 위치를 찾으라.\n② 진단: ②는 ‘주제’가 짧고 구체적이어야 한다는 설명이 아니라 ‘주제’가 주로 등장인물 이름이어야 한다는 조건이다. 학생은 ‘짧고 구체적’이라는 표현을 ②로 착각했다. → 처방: ‘짧고 구체적’이라는 문장을 찾아 그 위치를 확인하라.\n④ 진단: ④는 ‘주제’가 대부분 주어가 되어야 한다는 내용이 아니라 ‘대부분의 주어가 주제여야 한다’는 의미이다. 학생은 ‘주어가 주제’라는 문장을 ④로 오해했다. → 처방: ‘주어가 주제’라는 문장을 찾아 그 위치를 확인하라.\n⑤ 진단: ⑤는 ‘일관성’에 관한 설명이며, ‘주제’와 직접적으로 관련이 없다. 학생은 ‘일관성’이라는 단어를 ⑤로 착각했다. → 처방: ‘일관성’이라는 단어가 등장하는 문장을 찾아 그 위치를 확인하라.\n【출제의도】 글의 통일성을 해치는 문장을 판별하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-24T21:18:18.109Z",
    "type": "전체문장배열",
@@ -233,50 +293,6 @@
     "choices": [],
     "answer": null,
     "explanation": "1) serve→serves [주어 all hell 단수 – 수일치] · 2) occur→occurs [주어 all hell 단수 – 수일치]\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
-   }
-  },
-  {
-   "ts": "2026-11-22T15:25:51.927Z",
-   "type": "요약문AB",
-   "level": "중",
-   "audit": "정답 코드생성됨((A)(B) 쌍 코드 셔플) · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A), (B)에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Sa hun til dattera mi said she to daughter my at faren min er kommet alene that father my is come alone og føler sig bedre? and feels himself better Here we have many of the same sorts of things that motivated Twain to say, “A person who has not studied German can form no idea of what a perplexing language it is.” The same Said she . . . ? (Sa hun . . . ?), is come (er kommet), and “feeling yourself” (føler sig), plus gender: the my for my daughter is mi but the my for my father is min. That is, in a sense one “should” be able to say in English Said she to my daughter that my father alone come is and himself better feels? After all, you can say something similar in every other offshoot of Proto-Germanic but English. Only to English speakers does the sentence sound like something someone with brain damage would say. This shows that something was\n\n─────────\n[요약문] The passage illustrates how (A) can obscure meaning, as seen when a father's (B) is described in confusing language.",
-    "choices": [
-     "(A) syntactic ambiguity … (B) nonexistent interaction",
-     "(A) semantic overload … (B) spontaneous exchange",
-     "(A) linguistic complexity … (B) parental visitation",
-     "(A) literal clarity … (B) conventional communication",
-     "(A) communication simplicity … (B) formal discourse"
-    ],
-    "answer": 3,
-    "explanation": "(A) linguistic complexity / (B) parental visitation 가 글의 요지를 정확히 요약한다. 오답은 (A)나 (B) 중 하나 이상이 지문 논지와 어긋난다.\n【출제의도】 지문 이해를 바탕으로 유형이 요구하는 사고(파악·추론·적용)를 수행하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-22T15:26:52.038Z",
-   "type": "조건영작",
-   "level": "중",
-   "audit": "조건 3종 코드조립(단어 수 14 검산됨)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 우리말과 일치하도록 주어진 단어를 모두 활용하여 영작하시오.\n〈조건〉 ① 주어진 단어를 모두 사용할 것 (필요시 어형 변화 가능)\n〈조건〉 ② 총 14단어의 한 문장으로 쓸 것 (축약형은 한 단어로 계산)\n〈조건〉 ③ 다른 단어를 추가할 수 있음\n우리말: 어머니가 딸에게 아버지가 혼자 오셨고 기분이 나아졌다고 말합니다.\n주어진 단어: ( mother / tells / daughter )",
-    "passage": "",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] A mother tells her daughter that her father has come alone and feels better. (채점: 내용 40%+조건 준수 35%+어법·철자 25%, 조건 위반 1개당 감점 · 철자 감점 상한 1회)\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
    }
   }
  ]
