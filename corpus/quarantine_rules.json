@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-26T09:41:30.572Z",
+ "updated": "2026-11-26T19:44:06.182Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
+   "src": "자가학습:문장삽입",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-26T19:41:41.180Z"
+  },
   {
    "rule": "모든 빈칸(문장) 문항은 하나의 일관된 주제를 가진 지문 내에 문맥상 적절한 위치에 빈칸(문장)을 설정하고, 그 빈칸에 들어갈 내용으로 적합한 문장형 선지들을 제시해야 한다.",
    "src": "자가학습:빈칸(문장)",
@@ -65,14 +73,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-24T00:56:23.722Z"
-  },
-  {
-   "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
-   "src": "자가학습:전체문장배열",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-24T00:58:16.492Z"
   },
   {
    "rule": "빈칸 문항은 통일된 주제와 유기적인 흐름을 가진 하나의 완성된 글로 구성하여, 빈칸이 전체 맥락 속에서 명확히 추론 가능한 의미를 가지도록 출제해야 한다.",

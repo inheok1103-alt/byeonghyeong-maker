@@ -1,6 +1,31 @@
 {
- "updated": "2026-11-26T09:41:30.577Z",
+ "updated": "2026-11-26T19:44:06.186Z",
  "samples": [
+  {
+   "ts": "2026-11-26T19:43:06.026Z",
+   "type": "문장삽입",
+   "level": "중",
+   "audit": "정답 코드생성됨(추출·슬롯 배치를 코드가 수행) · 코드 생성 정답(위치표식형)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+    "passage": "[주어진 문장] 1 A puzzle in linguistics: the syntactic structure of coordination 42 3.\n\nContents Preface page vii Acknowledgments xiii 1 an adventure in ambiguity with one ﬁsh two ﬁsh 1 1. 1 How an 8-word title can have many interpretations 2 1. 2 Syntax and punctuation 5 Coda 12 2 exceptional students and teachers 13 2. 1 Syntactic structure in coordinate constructions 13 2. 2 Ambiguities with multiple coordination 21 Coda 23 3 Introduction to Language and Linguistics 25 3. 1 Ambiguity in the interpretation of conjuncts 25 3. 2 What a language is: the lexicon 29 3. 1 The mental lexicon 29 3. 2 Some structure in the mental lexicon 31 3. 3 What a language is: the computational procedure 34 3. ( ① ) 4 What is language? ( ② ) 5 What is linguistics? ( ③ ) 6 On the use and misuse of and 45 Coda 50 4 a review of a book by two philosophers 53 4. ( ④ ) 1 The syntactic structure of complex noun phrases 53 4. ( ⑤ ) 1 The syntax of prepositional phrase modiﬁers 54 4. 2 From prepositional phrase to clausal modiﬁers 56 4. 2 The syntactic analysis of (relative) clauses 60 4. 1 Syntactic variation in relative clauses 67 4. 3 Inﬁnitival clauses 69 4. 1 Ending a relative clause with a preposition 74 4. 4 Mental grammar vs. prescriptive rules 75 4. 1 The stranded preposition mistake 76 4. 2 The split inﬁnitive mistake 83 4. 3 that vs. which: restrictive vs. nonrestrictive relative clauses 88 Coda 92 v",
+    "choices": [
+     "①",
+     "②",
+     "③",
+     "④",
+     "⑤"
+    ],
+    "answer": 3,
+    "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-26T00:30:08.992Z",
    "type": "복합세트",
@@ -264,31 +289,6 @@
     "choices": [],
     "answer": 0,
     "explanation": "[모범답안] Condition — 문단의 논지상 이 자리에는 'Condition'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-22T21:52:17.700Z",
-   "type": "네모어휘ABC",
-   "level": "중",
-   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(75%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "(A), (B), (C)의 각 네모 안에서 문맥에 맞는 낱말로 가장 적절한 것은?",
-    "passage": "Given that all (A) [heaven / hell] can serve only as the subject of (B) [break loose / tightly bound] in the relevant idiom in (iv), it is clear that we could not analyse (C) [recede / tend] as a control predicate in (iv) and claim that all hell originates as the subject of tend and PRO as the subject of break loose, since this would violate the requirement that all hell can occur only as the subject of break loose and conversely that break loose can only have the subject all hell (in the relevant idiom). By contrast, if tend is a raising predicate, we can claim that all hell originates as the subject of break loose and then raises up to become the subject of the (null T constituent in the) tend clause. Furthermore, tend preserves truth-functional equivalence under passivisation, as we can see from the fact that (v) and (vi) are truth-functionally equivalent:",
-    "choices": [
-     "(A) heaven - (B) break loose - (C) tend",
-     "(A) heaven - (B) tightly bound - (C) tend",
-     "(A) hell - (B) tightly bound - (C) tend",
-     "(A) heaven - (B) break loose - (C) recede",
-     "(A) hell - (B) break loose - (C) tend"
-    ],
-    "answer": 5,
-    "explanation": "정답 조합: (A) hell - (B) break loose - (C) tend. 각 네모에서 문맥 극성상 원문 형태만 성립한다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]
