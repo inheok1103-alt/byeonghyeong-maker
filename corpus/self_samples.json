@@ -1,6 +1,50 @@
 {
- "updated": "2026-11-26T19:44:06.186Z",
+ "updated": "2026-11-27T02:57:56.725Z",
  "samples": [
+  {
+   "ts": "2026-11-27T02:55:44.375Z",
+   "type": "네모어법ABC",
+   "level": "중",
+   "audit": "정답 코드생성됨(네모·조합을 코드가 구성) · ⚠ 정답-오답 근접(83%) — 복수정답 재검 권고 · ⚠ 솔버 응답 없음(판정 보류)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?",
+    "passage": "Confusing Words and Homonyms 39 mood an emotional state mooed the sound (A) [a cow made / a cow make] moose an animal mousse type of dessert morning start of the day, between night and afternoon mourning sorrow over someone’s death muscle ﬁbrous tissue mussel edible marine bivalve mustard yellow condiment mustered assembled, gathered naval pertaining to ships navel belly button, umbilicus need (see knead) new (see knew) night (see knight) no (see know) none not one, not any nun female member of a religious order nose (see knows) not (see knot) number (see amount) oar a blade (B) [for row / for rowing] or conjunction ore metal-bearing mineral or rock odd (see awed) of (see have) on to vs. onto Use onto if you (C) [can add up / can adds up] before on. Examples: He climbed (up) onto the roof. She held on to her child in the crowd.",
+    "choices": [
+     "(A) a cow made - (B) for row - (C) can add up",
+     "(A) a cow make - (B) for rowing - (C) can adds up",
+     "(A) a cow make - (B) for rowing - (C) can add up",
+     "(A) a cow made - (B) for rowing - (C) can add up",
+     "(A) a cow make - (B) for row - (C) can adds up"
+    ],
+    "answer": 4,
+    "explanation": "정답 조합: (A) a cow made - (B) for rowing - (C) can add up. 각 네모에서 문법 규칙상 원문 형태만 성립한다.\n[오답 진단·처방]\n① 진단: 지문에서 소가 낸 소리를 가리키므로 과거형인 “a cow made”가 맞지만, “for row”를 골라 전치사 “for” 뒤에 동사원형을 쓸 수 있다고 혼동했어요. → 처방: 전치사 뒤에 동작을 나타내는 말이 오면 동사에 ‘-ing’를 붙였는지 확인하세요.\n② 진단: “for rowing”은 맞지만, “can” 뒤에는 동사원형이 와야 하는데 “can adds up”을 골랐어요. → 처방: 조동사 “can” 뒤의 동사는 주어의 수와 관계없이 동사원형인지 확인하세요.\n③ 진단: “for rowing”과 “can add up”은 맞지만, 소가 낸 소리를 가리키는 자리에 “a cow make”를 골라 과거형을 놓쳤어요. → 처방: 빈칸 앞뒤의 뜻을 살펴 동작이 이미 일어난 일인지 확인한 뒤 시제를 고르세요.\n⑤ 진단: “a cow make”로 소리가 이미 난 상황에 현재형을 썼고, “for row”로 전치사 뒤에 동사원형을 써도 된다고 혼동했어요. 또 “can adds up”으로 조동사 뒤에 ‘-s’를 붙였어요. → 처방: 각 빈칸을 따로 살펴 과거 시제, 전치사 뒤의 ‘-ing’, 조동사 뒤의 동사원형을 차례로 확인하세요.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-27T02:57:13.499Z",
+   "type": "우리말해석",
+   "level": "중",
+   "audit": "대상 문장 코드선정(복문 우선)·원문 발문 포함",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 밑줄 친 문장을 우리말로 해석하시오.\n[원문] Confusing Words and Homonyms 39 mood an emotional state mooed the sound a cow made moose an animal mousse type of dessert morning start of the day, between night and afternoon mourning sorrow over someone’s death muscle ﬁbrous tissue mussel edible marine bivalve mustard yellow condiment mustered assembled, gathered naval pertaining to ships navel belly button, umbilicus need (see knead) new (see knew) night (see knight) no (see know) none not one, not any nun female member of a religious order nose (see knows) not (see knot) number (see amount) oar a blade for rowing or conjunction ore metal-bearing mineral or rock odd (see awed) of (see have) on to vs. onto Use onto if you can add up before on.",
+    "passage": "",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS\n【출제의도】 지문의 핵심 내용을 조건에 맞게 영어로 산출하는 표현력·정확성을 평가한다(조건 준수 포함)."
+   }
+  },
   {
    "ts": "2026-11-26T19:43:06.026Z",
    "type": "문장삽입",
@@ -245,50 +289,6 @@
     ],
     "answer": 4,
     "explanation": "빈칸에는 'the main issue'가 들어가 글의 논지를 완성한다 (본문 'the most troubling aspect'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 학생은 'aspect'가 사건의 한 부분을 나타냄에도 불구하고, '전체 사건'이라는 표현에 이끌려 사건 전체를 아우르는 의미로 잘못 이해했습니다. 'public reaction'은 사건의 한 측면이지 전체를 뜻하지 않습니다. → 처방: 문장의 빈칸에 들어갈 낱말이 '전체'를 의미하는지 '부분'을 의미하는지 문맥을 통해 정확히 파악하는 연습을 합니다.\n② 진단: 학생은 'aspect'가 단순히 '측면'을 의미한다고만 생각하고, 'public reaction'의 중요도를 임의로 '사소한 문제'로 판단했습니다. 지문에는 중요도를 판단할 근거가 없습니다. → 처방: 지문에 없는 정보나 개인적인 추측으로 낱말의 의미나 중요도를 판단하지 않고, 주어진 문맥 안에서만 의미를 유추하는 습관을 들입니다.\n③ 진단: 학생은 'public reaction'이 '대중의 반응'이라는 의미임에도 불구하고, 'practice'의 뜻을 '반응'과 혼동하여 '흔한 관행'으로 잘못 해석했습니다. '반응'은 '관행'이 될 수 없습니다. → 처방: 낱말의 정확한 뜻을 모호하게 아는 경우, 사전에서 해당 낱말의 여러 의미와 용례를 찾아보고 문맥에 맞는 뜻을 구별하는 훈련을 합니다.\n⑤ 진단: 학생은 'public reaction'이 사건의 '결과'나 '측면'임에도 불구하고, 'cause'와 혼동하여 사건의 '즉각적인 원인'으로 잘못 이해했습니다. '대중의 반응'은 사건의 원인이 아니라 사건에 대한 결과입니다. → 처방: 사건의 흐름에서 '원인'과 '결과', '부분'과 '전체' 등 낱말이 나타내는 관계를 명확히 구분하는 연습을 합니다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-23T13:01:09.007Z",
-   "type": "목적",
-   "level": "중",
-   "audit": "검증 통과 · ⚠ 솔버 응답 없음(판정 보류)",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 목적으로 가장 적절한 것은?",
-    "passage": "",
-    "choices": [
-     "이 글은 독자가 문맥에 맞는 어휘를 고르지 못하도록 하려고 한다.",
-     "이 글은 모든 독자에게 문맥에 맞는 어휘를 고를 수 있도록 하려고 한다.",
-     "이 글은 독자에게 문맥에 맞는 어휘를 골라보라고 하려고 한다.",
-     "이 글은 독자에게 문맥에 맞는 어휘를 고르는 방법을 가르치려고 한다.",
-     "이 글은 독자가 문맥에 맞는 어휘를 고를 수 있는지를 평가하려고 한다."
-    ],
-    "answer": 5,
-    "explanation": "글의 핵심 논지는 'The passage tests the reader’s ability to select appropriate vocabulary words to complete contextually meaningful sentences.'이며, 정답 선지가 이를 정확히 반영한다. 오답은 서로 다른 논리 오류(인과 전도(원인↔결과를 뒤바꿈)·범위 축소(정답의 일부만 담음)·과잉 일반화(지나치게 확대)·조건·전제 누락(핵심 조건을 빼 성립 안 되게))로 설계되어, 각기 한 지점에서만 논지와 어긋난다.\n[선지 분석] ① 오답 — 인과 전도(원인↔결과를 뒤바꿈)· ② 오답 — 지나치게 확대 해석· ③ 오답 — 과잉 일반화(지나치게 확대)· ④ 오답 — 조건·전제 누락(핵심 조건을 빼 성립 안 되게)· ⑤ 정답 — 핵심 논지 반영\n[오답 진단·처방]\n① 진단: 문맥에 맞는 어휘를 고르지 못하도록 하려는 목적이라 해석했으나, 실제로는 평가 목적임을 놓쳤음 → 처방: 문장 전체를 읽고, 빈칸이 요구하는 의미를 파악한 뒤, 답안지에 있는 선택지를 비교해 보자.\n② 진단: 모든 독자에게 문맥에 맞는 어휘를 고를 수 있도록 하려는 목적이라 생각했으나, 실제로는 평가임을 인지하지 못함 → 처방: 정답이 '정답을 평가하려는' 것인지 확인하려면, 문제의 문장 구조와 선택지를 한 번씩 다시 살펴보자.\n③ 진단: 문맥에 맞는 어휘를 골라보라고 하려는 목적이라 판단했으나, 문제는 평가임을 놓침 → 처방: 문제의 마지막 문장을 보면 '정답'이 명시되어 있으니, 정답을 찾아서 그 이유를 분석해 보자.\n④ 진단: 문맥에 맞는 어휘를 고르는 방법을 가르치려는 목적이라 착각했으나, 실제로는 평가임 → 처방: 선지와 정답을 비교해 보며, 왜 5번이 정답인지 논리적으로 정리해 보는 연습을 하자.\n【출제의도】 글쓴이의 집필 의도(요청·안내·공지 등 화행)를 파악하는 능력을 평가한다. [핵심 논지: The passage tests the reader’s ability to select appropriate vocabulary words to complete contextually meaningful sentences.]"
-   }
-  },
-  {
-   "ts": "2026-11-23T02:54:40.910Z",
-   "type": "첫글자어휘",
-   "level": "중",
-   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
-   "review": {
-    "verdict": "수정 후 사용 가능",
-    "errors": 1,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
-    "passage": "T VP Af [Pres-Tns] PRN V' [u-Pers] there [u-Num] [3-Pers] V QP [EPP] remain every hope of finding survivors [3-Pers, Sg-Num, u-Case] (Note that expletive it could not be used in place of there here, because the Inactivity C________ would prevent it from being merged with a V-bar like that in (i) which contains a constituent with an active case feature, such as the QP every hope of ﬁnding survivors.) The afﬁxal T constituent serves as a probe because it is the highest head in the structure, and because its uninterpretable person/number features make it active. Consequently, T searches for active goals, locating the expletive pronoun there, which is active by virtue of its uninterpretable person feature. However, since there carries no number feature and so cannot value the number feature on T, the T head probes further until it locates the (person-and-number-speciﬁed) QP every hope of ﬁnding",
-    "choices": [],
-    "answer": 0,
-    "explanation": "[모범답안] Condition — 문단의 논지상 이 자리에는 'Condition'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
    }
   }
  ]

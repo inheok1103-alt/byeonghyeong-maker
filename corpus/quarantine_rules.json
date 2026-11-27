@@ -1,7 +1,15 @@
 {
- "updated": "2026-11-26T19:44:06.182Z",
+ "updated": "2026-11-27T02:57:56.721Z",
  "count": 200,
  "rules": [
+  {
+   "rule": "모든 문항은 평가자가 객관적으로 판단할 수 있도록 명확한 정답 기준과 채점 지침을 포함해야 한다.",
+   "src": "자가학습:네모어법ABC",
+   "score": 0,
+   "status": "quarantined",
+   "hits": 1,
+   "ts": "2026-11-27T02:54:16.510Z"
+  },
   {
    "rule": "The API key used for this request has reached its budget. Please [raise the key budget](https://enter.pollinations.ai/edit-key?id=89idjaTSg2hI4YwZDuO8ZME5Ma6GrFps&ref=agent_key_budget), then try again.",
    "src": "자가학습:문장삽입",
@@ -153,14 +161,6 @@
    "status": "quarantined",
    "hits": 1,
    "ts": "2026-11-21T11:12:11.353Z"
-  },
-  {
-   "rule": "모든 문항은 평가자가 객관적으로 판단할 수 있도록 명확한 정답 기준과 채점 지침을 포함해야 한다.",
-   "src": "자가학습:네모어법ABC",
-   "score": 0,
-   "status": "quarantined",
-   "hits": 1,
-   "ts": "2026-11-21T02:20:26.116Z"
   },
   {
    "rule": "모든 지문은 문법적 완결성을 갖추고, 수험생이 글의 핵심 주장이나 의도를 명확히 파악할 수 있도록 내용적 완결성과 이해 가능성을 확보해야 한다.",
