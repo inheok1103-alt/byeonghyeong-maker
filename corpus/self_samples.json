@@ -1,6 +1,56 @@
 {
- "updated": "2026-11-27T12:33:12.432Z",
+ "updated": "2026-11-27T22:05:47.171Z",
  "samples": [
+  {
+   "ts": "2026-11-27T22:03:32.733Z",
+   "type": "전체문장배열",
+   "level": "중",
+   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
+   "review": {
+    "verdict": "사용 가능",
+    "errors": 0,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
+    "passage": "① Hence the event structure is: (46) e = e1 → e2 : e1 = ‘the butler did something’\n② Unfortunately this is an entirely different set of \u0002-role assignments to what we have previously found.\n③ In the butler opened the door, there is an event involving the butler doing something and an event involving the door being open and clearly the first event causes the second.\n④ We concluded above that the theme \u0002-role is assigned to the specifier of a thematic verb, not its complement position.\n⑤ The agent, on the other hand, was assigned to the specifier of a light verb taking a VP complement.\n⑥ If we are to maintain the UTAH, either the structure in (45) is inaccurate, or our analyses of unaccusative and light verbs is.\n⑦ Yet the event structure expressed here is not simple.\n⑧ Moreover, the structure of the VP in (45) is simple, in comparison to that of verbal complexes involving light verbs, as in (32), for example.",
+    "choices": [
+     "④-②-⑤-⑥-⑧-⑦-③-①",
+     "②-④-⑤-⑧-⑥-⑦-③-①",
+     "②-④-⑤-⑥-⑧-⑦-①-③",
+     "②-④-⑤-⑥-⑧-③-⑦-①",
+     "②-④-⑤-⑥-⑧-⑦-③-①"
+    ],
+    "answer": 5,
+    "explanation": "정답 배열은 ②-④-⑤-⑥-⑧-⑦-③-①. 흐름: ② → ④ → ⑤ → ⑥ → ⑧(Moreover) → ⑦ → ③ → ① — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n① 진단: ④의 ‘앞에서 내린 결론’을 먼저 제시하고 ②의 ‘전혀 다른 배역 배정’을 뒤에 두어, 대조의 대상이 앞서 나왔다는 점을 놓쳤습니다. → 처방: ‘이전 결론과 다르다’처럼 앞 내용을 받아 가리키는 말을 찾아, 그 내용이 먼저 나오도록 배열하세요.\n② 진단: ⑧의 ‘더욱이’가 앞 내용을 보태는 말인데, ⑥보다 먼저 두어 구조가 부정확하다는 문제 제기보다 덧붙임이 앞서게 했습니다. → 처방: 덧붙임을 나타내는 말을 표시하고, 그 앞에 무엇을 보태는지 확인해 순서를 정하세요.\n③ 진단: ①의 사건 구조를 ③의 구체적인 사건 설명보다 먼저 두어, ‘the event structure is’가 뒤에서 풀어 설명할 내용을 앞질렀습니다. → 처방: ‘다음과 같다’처럼 뒤에 설명이나 풀이가 이어지는 표현은 그 풀이보다 앞에 놓으세요.\n④ 진단: ③의 ‘the butler opened the door’ 사례를 ⑦의 ‘여기에 표현된 사건 구조’를 소개하는 문장보다 앞세워, 사례가 가리키는 대상이 먼저 제시되어야 한다는 흐름을 놓쳤습니다. → 처방: ‘여기에’가 가리키는 사건 구조를 먼저 제시한 뒤 그 구조를 보여 주는 사례를 이어 붙이세요.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
+   }
+  },
+  {
+   "ts": "2026-11-27T22:05:40.223Z",
+   "type": "어법개수형",
+   "level": "중",
+   "audit": "정답 코드생성됨(오류 2개를 코드가 주입) · ⚠ 해설에서 오류어 추출 실패(수동 확인)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "밑줄 친 부분 중 어법상 틀린 것의 개수는? (①1개~⑤5개)",
+    "passage": "Unfortunately this is an entirely different set of \u0002-role assignments to what we have previously found. We concluded above that the theme \u0002-role is assigned to ⓐ<u>the specifier of a thematic verbs</u>, not its complement position. The agent, on the other hand, ⓑ<u>were assigned to the specifier</u> of a light verb ⓒ<u>taking a VP complement</u>. If we are to maintain the UTAH, either the structure in (45) is inaccurate, or ⓓ<u>our analyses of unaccusative</u> and light verbs is. Moreover, the structure of the VP in (45) is simple, in comparison to that of verbal complexes involving light verbs, as in (32), for example. Yet the event structure expressed here is not simple. In the butler opened the door, there is an event involving the butler doing something and an event involving ⓔ<u>the door being open</u> and clearly the first event causes the second. Hence the event structure is: (46) e = e1 → e2 : e1 = ‘the butler did something’",
+    "choices": [
+     "1개",
+     "2개",
+     "3개",
+     "4개",
+     "5개"
+    ],
+    "answer": 2,
+    "explanation": "틀린 곳은 ⓐ(the specifier of a thematic verbs → the specifier of a thematic verb), ⓑ(were assigned to the specifier → was assigned to the specifier) — 총 2개.\n【출제의도】 문장 구조 속 어법 요소(수일치·시제·태·준동사·병렬 등)의 정오를 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-27T12:32:57.066Z",
    "type": "첫글자어휘",
@@ -237,52 +287,6 @@
     ],
     "answer": 3,
     "explanation": "주어진 문장의 연결 단서가 ③ 앞뒤 문장과만 자연스럽게 이어진다(원문 위치).\n[오답 진단·처방]\n① 진단: 학생은 'However'가 문단 전체의 대조를 나타낸다고 오해하여, 긍정적인 내용이 시작되는 부분에 넣으려 했습니다. → 처방: 'However'와 같은 연결어는 바로 앞 문장과의 관계를 먼저 살피세요.\n② 진단: 학생은 주어진 문장이 '전쟁 전' 상황을 설명하는 문장 앞에 놓여야 한다고 착각하여, 문맥의 시간적 흐름을 혼동했습니다. → 처방: 문장의 시간적 배경(전쟁 전/후)을 명확히 구분하여 흐름을 파악하세요.\n④ 진단: 학생은 주어진 문장이 전쟁의 성공적인 결과에 대한 요약이라고 판단하여, 구체적인 승리 과정 뒤에 배치하려 했습니다. → 처방: 주어진 문장이 제시하는 '불가능을 가능으로 바꾼 교훈'이 구체적인 행동보다 먼저 제시되어야 함을 인지하세요.\n⑤ 진단: 학생은 주어진 문장이 '전쟁 후'의 내용을 담고 있으므로, 전쟁의 결과와 관련된 마지막 부분에 배치하려 했습니다. → 처방: 'However'가 이끄는 대조의 내용이 문단 내에서 어떤 '불가능'과 대비되는지 먼저 찾으세요.\n【출제의도】 주어진 문장의 지시어·연결어 단서로 흐름이 끊긴 위치를 찾는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-24T11:05:04.312Z",
-   "type": "밑줄함의",
-   "level": "중",
-   "audit": "⚠ 솔버 응답 없음(판정 보류)",
-   "review": null,
-   "psychometric": null,
-   "q": {
-    "instruction": "밑줄 친 부분이 다음 글에서 의미하는 바로 가장 적절한 것은?",
-    "passage": "If we compare life and thought in the periods of pre and post October war, we will find great contradictions. The legend of the unbeatable army of Isreal was broken. The whole hemisphere witnessed the greatness of the Egyptian army.In the pre war period , the press as well as the broadcast mediaused to spread a false saying about the noncrossable canal due to the enemy's defenses,such as the autodirected air craft known as the Phantom. However , the post war era showed the whole world that <u>deep faith and strong will can change the impossible into the possible</u>. The Egyptian army reorganized its forces . They co operated with most of the Arab countries using the weapon of the decrease of petrol.Soldiers as well as flying eagles in Egyptian planes showed a great bravery in the battle field . They ended the legend of the the undefeatable army. Still in the post war era , we celeberate the 6th of October as our liberation Day in which Sinai was restored , Egypt was rebuilt, and the Arab honour was regained.",
-    "choices": [
-     "It implies that steadfast faith and resolve might help achieve what appears difficult, though not always.",
-     "It suggests that unwavering belief and determination can transform seemingly unattainable goals into achievable realities",
-     "It proposes that any strong conviction can universally solve every major challenge in humanity.",
-     "It suggests that the weather forecast will change the economic trends in the next quarter.",
-     "It indicates that wavering doubt and lack of determination inevitably lead to impossible outcomes."
-    ],
-    "answer": 2,
-    "explanation": "밑줄 친 부분은 'It suggests that unwavering belief and determination can transform seemingly unattainable goals into achievable realities'을 함의한다.\n[오답 진단·처방]\n① 진단: 학생은 ‘might help achieve what appears difficult’를 ‘불가능을 가능으로 바꿀 수 있다’라고 오해해, ‘가능성’과 ‘가능’의 차이를 혼동했다. → 처방: 문장 핵심은 ‘불가능을 가능으로 바꾸다’는 의미이므로 ‘가능성’이 아니라 ‘가능’이 되는 결과를 고르도록 연습한다.\n③ 진단: ‘universal’라는 단어를 ‘모든’으로 해석해, ‘모든 문제를 해결한다’는 과장된 의미를 선택했다. → 처방: ‘transform’와 ‘unattainable’의 관계를 살펴, ‘가능한 현실’로 바꾸는 구체적 변화를 고르는 연습을 한다.\n④ 진단: ‘weather forecast’와 ‘economic trends’가 전혀 관련이 없다는 사실을 무시하고, 문장 구조만 보고 무작위로 선택했다. → 처방: 선지와 지문의 주제(전쟁과 군사)를 비교해, 전혀 연관이 없는 항목은 즉시 제외한다.\n⑤ 진단: ‘wavering doubt’와 ‘impossible outcomes’를 연결해 ‘불가능한 결과’를 초래한다는 의미로 해석했다. → 처방: ‘inevitably lead to impossible outcomes’가 ‘결과가 불가능해진다’는 부정적 의미임을 인식하고, ‘불가능을 가능으로 바꾸다’와 반대되는 문장을 피한다.\n【출제의도】 밑줄 친 표현의 표면 의미가 아닌 문맥상 함축을 추론하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-24T01:00:15.723Z",
-   "type": "전체문장배열",
-   "level": "중",
-   "audit": "정답 코드생성됨(셔플·선지·정답 전부 코드 제어) · 코드권위 정답(순서·배열형) — 솔버 교정 비활성",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 글의 모든 문장을 글의 흐름에 맞게 배열한 것으로 가장 적절한 것은?",
-    "passage": "① For example: fall summer February Wednesday spring winter\n② For example: Declaration of Independence Marshall Plan Federal Housing Act Monroe Doctrine The names of months and the days of the week are capitalized, but not the names of the seasons.\n③ For example: Boston Tea Party New Deal Great Depression The names of acts, treaties, laws, and government programs are generally capitalized.\n④ For example: Cheney High School Peace Corps Green Bay Packers (football team) Xerox Corporation New York Philharmonic The names of historical, political, and economic events are generally capitalized.\n⑤ The complete names of private and public organizations of all kinds are capitalized.\n⑥ For example: china (dishes) plaster of paris french fries venetian blinds Capitalization of Things.\n⑦ For example: Badlands (South Dakota) Eastern Shore (Chesapeake Bay) Bay Area (California) Fertile Crescent Strangely enough, words derived from geographical names are generally not capitalized.\n⑧ Nouns 5 Popular names of places are usually capitalized (and not enclosed in quotation marks).",
-    "choices": [
-     "⑧-⑦-⑥-⑤-④-③-②-①",
-     "⑧-⑥-⑦-②-⑤-③-④-①",
-     "⑧-②-⑤-⑦-⑥-③-①-④",
-     "⑧-⑤-①-⑥-②-④-③-⑦",
-     "⑧-⑦-⑥-⑤-④-③-①-②"
-    ],
-    "answer": 1,
-    "explanation": "정답 배열은 ⑧-⑦-⑥-⑤-④-③-②-①. 흐름: ⑧ → ⑦(For example) → ⑥(For example) → ⑤ → ④(For example) → ③(For example) → ②(For example) → ①(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ②와 ⑥이 같은 예시를 두 번 나열해 혼동을 일으켜 ②를 먼저 두는 실수 → 처방: 각 항목의 순서를 한 번만 확인하고 중복을 피하도록 체크리스트를 활용한다.\n③ 진단: ③과 ①이 뒤섞여 ①이 먼저 오도록 착오 → 처방: 주제와 예시를 구분해 놓고, 주제는 뒤에, 예시는 앞에 배치하도록 순서표를 만든다.\n④ 진단: ⑤와 ①이 뒤바뀌어 ①이 먼저 오도록 착오 → 처방: 각 항목의 핵심 키워드를 색깔별로 표시해 순서를 시각적으로 구분한다.\n⑤ 진단: ⑦과 ⑥이 뒤바뀌어 ⑥이 먼저 오도록 착오 → 처방: 비슷한 예시가 있을 때마다 번호와 내용이 일치하는지 두 번 확인한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
    }
   }
  ]
