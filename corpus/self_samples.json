@@ -1,6 +1,25 @@
 {
- "updated": "2026-11-27T02:57:56.725Z",
+ "updated": "2026-11-27T12:33:12.432Z",
  "samples": [
+  {
+   "ts": "2026-11-27T12:32:57.066Z",
+   "type": "첫글자어휘",
+   "level": "중",
+   "audit": "정답 코드생성됨(빈칸·첫글자 힌트, 동일어 전수 빈칸으로 노출 차단)",
+   "review": {
+    "verdict": "수정 후 사용 가능",
+    "errors": 1,
+    "multi": ""
+   },
+   "psychometric": null,
+   "q": {
+    "instruction": "다음 글의 빈칸에 들어갈 단어를 주어진 첫 글자로 시작하여 쓰시오. (본문에 쓰인 형태 그대로)",
+    "passage": "Ray English 지문 전문 · 원문 그대로 24번 제목 · T I T L E 도파민의 시소 제목 스크롤로 급등한 도파민이 항상성 때문에 기준선 아래로 급락한다 — '도파민 시소' 소재 소셜미디어와 도파민 Social media and dopamine 주제 스크롤로 급등한 도파민은 항상성 때문에 기준선 아래로 급락한다 Dopamine spikes from scrolling crash below baseline 제목 도파민 시소 The Dopamine Seesaw: How Scrolling Makes You Feel 한눈에 소셜미디어를 스크롤하면 도파민이 급등해 기분이 좋아지지만, 뇌는 늘 균형(항상성)을 추구하므로 곧 기준선 ‘아래로’ 급락해 오 히려 더 우울해 진다. ‘오른 것은 내려온다’는 원리가 작동하는 ‘도파민 시소’가 글의 핵심이다. 지문 전문 — 시험지 원문 Let’s look at what is o________ in your brain when scrolling on social media, a quick dopamine activity. You open your social media apps and immediately you notice you feel really good, your dopamine levels increase incredibly fast and pleasure is experienced in your brain. The challenge this creates is as with everything in our universe: as the laws of physics explain, ‘what goes up, must come down’. Your brain and body are always seeking something called ‘homeostasis’, which simply means balance. With this in mind, when dopamine levels increase incredibly fast when scrolling social media, the brain then thinks, ‘Wow, how are my dopamine levels so high?’ In order to achieve homeostasis, or balance, the dopamine then has to quickly drop an equal amount below your baseline level in order to rebalance, making you feel even worse than before you started scrolling. 지문 전문 · 원문 그대로",
+    "choices": [],
+    "answer": 0,
+    "explanation": "[모범답안] occurring — 문단의 논지상 이 자리에는 'occurring'가 유일하게 자연스럽다.\n【출제의도】 문맥상 적절한 낱말 쓰임(반의·유의 혼동)을 판단하는 능력을 평가한다."
+   }
+  },
   {
    "ts": "2026-11-27T02:55:44.375Z",
    "type": "네모어법ABC",
@@ -264,31 +283,6 @@
     ],
     "answer": 1,
     "explanation": "정답 배열은 ⑧-⑦-⑥-⑤-④-③-②-①. 흐름: ⑧ → ⑦(For example) → ⑥(For example) → ⑤ → ④(For example) → ③(For example) → ②(For example) → ①(For example) — 문두 연결어·지시어가 바로 앞 문장을 받아 이 순서로만 논리가 이어진다.\n[오답 진단·처방]\n② 진단: ②와 ⑥이 같은 예시를 두 번 나열해 혼동을 일으켜 ②를 먼저 두는 실수 → 처방: 각 항목의 순서를 한 번만 확인하고 중복을 피하도록 체크리스트를 활용한다.\n③ 진단: ③과 ①이 뒤섞여 ①이 먼저 오도록 착오 → 처방: 주제와 예시를 구분해 놓고, 주제는 뒤에, 예시는 앞에 배치하도록 순서표를 만든다.\n④ 진단: ⑤와 ①이 뒤바뀌어 ①이 먼저 오도록 착오 → 처방: 각 항목의 핵심 키워드를 색깔별로 표시해 순서를 시각적으로 구분한다.\n⑤ 진단: ⑦과 ⑥이 뒤바뀌어 ⑥이 먼저 오도록 착오 → 처방: 비슷한 예시가 있을 때마다 번호와 내용이 일치하는지 두 번 확인한다.\n【출제의도】 응집 장치(지시어·연결어·정관사)로 글의 논리 순서를 재구성하는 능력을 평가한다."
-   }
-  },
-  {
-   "ts": "2026-11-23T12:57:34.023Z",
-   "type": "빈칸(어구)",
-   "level": "중",
-   "audit": "솔버 2/2 일치",
-   "review": {
-    "verdict": "사용 가능",
-    "errors": 0,
-    "multi": ""
-   },
-   "psychometric": null,
-   "q": {
-    "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
-    "passage": "Quiz 7-1 A. Fill in each blank with the correct letter: a. perspective b. vis-à-vis c. prospectus d. prospect e. envisage f. aspect g. visionary h. vista 1. When she considered Cleveland vis-à-vis other cities where she might have to live, she always chose Cleveland. 2. The prospect of spending an evening with such an unhappy couple was just depressing. 3. His ambitious plans for the city marked him as a true visionary. 4. The ____ of the whole incident was the public reaction. 5. The prospectus for the new development was full of glowing descriptions that made both of us suspicious. 6. Turning a corner, they found themselves gazing out on the broad vista of the river valley. 7. Some judges only look at crimes like these from the perspective of the police. 8. Her therapist keeps asking her if she could envisage getting back together with her husband. Answers",
-    "choices": [
-     "the broader picture",
-     "a minor concern",
-     "a common practice",
-     "the main issue",
-     "the immediate cause"
-    ],
-    "answer": 4,
-    "explanation": "빈칸에는 'the main issue'가 들어가 글의 논지를 완성한다 (본문 'the most troubling aspect'의 패러프레이즈).\n[오답 진단·처방]\n① 진단: 학생은 'aspect'가 사건의 한 부분을 나타냄에도 불구하고, '전체 사건'이라는 표현에 이끌려 사건 전체를 아우르는 의미로 잘못 이해했습니다. 'public reaction'은 사건의 한 측면이지 전체를 뜻하지 않습니다. → 처방: 문장의 빈칸에 들어갈 낱말이 '전체'를 의미하는지 '부분'을 의미하는지 문맥을 통해 정확히 파악하는 연습을 합니다.\n② 진단: 학생은 'aspect'가 단순히 '측면'을 의미한다고만 생각하고, 'public reaction'의 중요도를 임의로 '사소한 문제'로 판단했습니다. 지문에는 중요도를 판단할 근거가 없습니다. → 처방: 지문에 없는 정보나 개인적인 추측으로 낱말의 의미나 중요도를 판단하지 않고, 주어진 문맥 안에서만 의미를 유추하는 습관을 들입니다.\n③ 진단: 학생은 'public reaction'이 '대중의 반응'이라는 의미임에도 불구하고, 'practice'의 뜻을 '반응'과 혼동하여 '흔한 관행'으로 잘못 해석했습니다. '반응'은 '관행'이 될 수 없습니다. → 처방: 낱말의 정확한 뜻을 모호하게 아는 경우, 사전에서 해당 낱말의 여러 의미와 용례를 찾아보고 문맥에 맞는 뜻을 구별하는 훈련을 합니다.\n⑤ 진단: 학생은 'public reaction'이 사건의 '결과'나 '측면'임에도 불구하고, 'cause'와 혼동하여 사건의 '즉각적인 원인'으로 잘못 이해했습니다. '대중의 반응'은 사건의 원인이 아니라 사건에 대한 결과입니다. → 처방: 사건의 흐름에서 '원인'과 '결과', '부분'과 '전체' 등 낱말이 나타내는 관계를 명확히 구분하는 연습을 합니다.\n【출제의도】 문맥의 논리적 흐름으로 핵심 어구를 추론하고, 형태 단서가 아닌 의미로 정답을 고르는 능력을 평가한다."
    }
   }
  ]
